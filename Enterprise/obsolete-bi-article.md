@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-bi-article"></a>Veralteter BI-Artikel
+# <a name="obsolete-bi-article"></a><span data-ttu-id="376d3-104">Veralteter BI-Artikel</span><span class="sxs-lookup"><span data-stu-id="376d3-104">OBSOLETE BI article</span></span>
 
-Dieser Artikel ist veraltet 7 März 2014. Finden Sie unter [Content Roadmap: Einrichten und Konfigurieren von SharePoint und SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).
+<span data-ttu-id="376d3-p102">Dieser Artikel ist veraltet 7 März 2014. Finden Sie unter [Content Roadmap: Einrichten und Konfigurieren von SharePoint und SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).</span><span class="sxs-lookup"><span data-stu-id="376d3-p102">This article is obsolete as of March 7, 2014. See [Content Roadmap: Setup and Configure SharePoint and SQL BI](http://technet.microsoft.com/library/a470e75a-2817-42b3-85fd-c76060c13406.aspx).</span></span>
   
 

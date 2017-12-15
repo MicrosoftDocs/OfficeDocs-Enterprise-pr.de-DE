@@ -20,27 +20,27 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Enterprise-Szenarien für die Contoso Corporation
+# <a name="enterprise-scenarios-for-the-contoso-corporation"></a><span data-ttu-id="2ad52-103">Enterprise-Szenarien für die Contoso Corporation</span><span class="sxs-lookup"><span data-stu-id="2ad52-103">Enterprise scenarios for the Contoso Corporation</span></span>
 
- **Zusammenfassung:** Lesen Sie nach, wie ein fiktives, aber repräsentatives globales Unternehmen mit Enterprise Cloud-Szenarien seine Geschäftsanforderungen erfüllt.
+ <span data-ttu-id="2ad52-104">**Zusammenfassung:** Lesen Sie nach, wie ein fiktives, aber repräsentatives globales Unternehmen mit Enterprise Cloud-Szenarien seine Geschäftsanforderungen erfüllt.</span><span class="sxs-lookup"><span data-stu-id="2ad52-104">**Summary:** How a fictional but representative global organization is addressing its business needs with enterprise cloud scenarios.</span></span>
   
-Nach der Implementierung einer Netzwerk-, Identitäts- und Sicherheitsinfrastruktur stellte Contoso die folgenden Enterprise Cloud-Szenarien bereit:
+<span data-ttu-id="2ad52-105">Nach der Implementierung einer Netzwerk-, Identitäts- und Sicherheitsinfrastruktur stellte Contoso die folgenden Enterprise Cloud-Szenarien bereit:</span><span class="sxs-lookup"><span data-stu-id="2ad52-105">With the networking, identity, and security infrastructure in place, Contoso deployed the following enterprise cloud scenarios:</span></span>
   
-- [Verschieben von historischen Transaktionsdaten in die Cloud](moving-historical-transaction-data-to-the-cloud.md)
+- [<span data-ttu-id="2ad52-106">Verschieben von historischen Transaktionsdaten in die Cloud</span><span class="sxs-lookup"><span data-stu-id="2ad52-106">Moving historical transaction data to the cloud</span></span>](moving-historical-transaction-data-to-the-cloud.md)
     
-    Contoso implementierte eine Stretch-Datenbank, um seinen Bedarf an lokalem Datenspeicher sowie seine täglichen laufenden Kosten zu reduzieren.
+    <span data-ttu-id="2ad52-107">Contoso implementierte eine Stretch-Datenbank, um seinen Bedarf an lokalem Datenspeicher sowie seine täglichen laufenden Kosten zu reduzieren.</span><span class="sxs-lookup"><span data-stu-id="2ad52-107">Contoso implemented stretch database to reduce its on-premises data storage needs and daily running costs.</span></span>
     
-- [Sichere SharePoint Online-Teamwebsites für sensible und streng vertrauliche Daten](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
+- [<span data-ttu-id="2ad52-108">Sichere SharePoint Online-Teamwebsites für sensible und streng vertrauliche Daten</span><span class="sxs-lookup"><span data-stu-id="2ad52-108">Secure SharePoint Online team sites for sensitive and highly confidential assets</span></span>](secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets.md)
     
-    Contoso implementierte den Schutz sensibler Daten und streng vertrauliche SharePoint Online-Teamwebsites für die einfachere, aber dennoch sichere Zusammenarbeit von Führungskräften und Forschungszentren.
+    <span data-ttu-id="2ad52-109">Contoso implementierte den Schutz sensibler Daten und streng vertrauliche SharePoint Online-Teamwebsites für die einfachere, aber dennoch sichere Zusammenarbeit von Führungskräften und Forschungszentren.</span><span class="sxs-lookup"><span data-stu-id="2ad52-109">Contoso implemented sensitive protection and highly confidential SharePoint Online team sites for easier, yet secure, collaboration for its executives and research centers.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="2ad52-110">See Also</span><span class="sxs-lookup"><span data-stu-id="2ad52-110">See Also</span></span>
 
-[Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
+[<span data-ttu-id="2ad52-111">Contoso in der Microsoft-Cloud</span><span class="sxs-lookup"><span data-stu-id="2ad52-111">Contoso in the Microsoft Cloud</span></span>](contoso-in-the-microsoft-cloud.md)
   
-[Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="2ad52-112">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="2ad52-112">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[<span data-ttu-id="2ad52-113">Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger</span><span class="sxs-lookup"><span data-stu-id="2ad52-113">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

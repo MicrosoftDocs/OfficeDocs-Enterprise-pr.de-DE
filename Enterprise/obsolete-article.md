@@ -16,8 +16,8 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="obsolete-article"></a>Veralteter Artikel
+# <a name="obsolete-article"></a><span data-ttu-id="21eed-104">Veralteter Artikel</span><span class="sxs-lookup"><span data-stu-id="21eed-104">Obsolete article</span></span>
 
-In diesem Artikel ist veraltet. Aktuelle Informationen finden Sie in der [Cloud-Übernahme- und hybridlösungen](cloud-adoption-and-hybrid-solutions.md) .
+<span data-ttu-id="21eed-p102">In diesem Artikel ist veraltet. Aktuelle Informationen finden Sie in der [Cloud-Übernahme- und hybridlösungen](cloud-adoption-and-hybrid-solutions.md) .</span><span class="sxs-lookup"><span data-stu-id="21eed-p102">This article is obsolete. See [Cloud adoption and hybrid solutions](cloud-adoption-and-hybrid-solutions.md) for current information.</span></span>
   
 

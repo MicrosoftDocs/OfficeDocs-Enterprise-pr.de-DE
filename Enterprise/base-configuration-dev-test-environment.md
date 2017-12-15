@@ -22,92 +22,92 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="base-configuration-devtest-environment"></a>Basiskonfiguration der Entwicklungs-/Testumgebung
+# <a name="base-configuration-devtest-environment"></a><span data-ttu-id="f21eb-103">Basiskonfiguration der Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="f21eb-103">Base Configuration dev/test environment</span></span>
 
- **Zusammenfassung:** Erstellen Sie eine vereinfachte Intranet als einer Test-/-Umgebung in Microsoft Azure.
+ <span data-ttu-id="f21eb-104">**Zusammenfassung:** Erstellen Sie eine vereinfachte Intranet als einer Test-/-Umgebung in Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="f21eb-104">**Summary:** Create a simplified intranet as a dev/test environment in Microsoft Azure.</span></span>
   
-Dieser Artikel enthält eine schrittweise Anleitung zum Erstellen der folgenden Basiskonfiguration der Entwicklungs-/Testumgebung in Azure:
+<span data-ttu-id="f21eb-105">Dieser Artikel enthält eine schrittweise Anleitung zum Erstellen der folgenden Basiskonfiguration der Entwicklungs-/Testumgebung in Azure:</span><span class="sxs-lookup"><span data-stu-id="f21eb-105">This article provides you with step-by-step instructions to create the following Base Configuration dev/test environment in Azure:</span></span>
   
-**Abbildung 1: Basiskonfiguration Test-/Umgebung**
+<span data-ttu-id="f21eb-106">**Abbildung 1: Basiskonfiguration Test-/Umgebung**</span><span class="sxs-lookup"><span data-stu-id="f21eb-106">**Figure 1: The Base Configuration dev/test environment**</span></span>
 
 ![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-Die Basiskonfiguration der Entwicklungs-/Testumgebung in Abbildung 1 besteht aus dem Unternehmensnetzwerk-Subnetz in einem auf die Cloud beschränkten virtuellen Azure-Netzwerk namens TestLab, das ein vereinfachtes privates Intranet simuliert, das mit dem Internet verbunden ist. Es enthält drei virtuelle Azure-Computer unter Windows Server 2016:
+<span data-ttu-id="f21eb-p101">Die Basiskonfiguration der Entwicklungs-/Testumgebung in Abbildung 1 besteht aus dem Unternehmensnetzwerk-Subnetz in einem auf die Cloud beschränkten virtuellen Azure-Netzwerk namens TestLab, das ein vereinfachtes privates Intranet simuliert, das mit dem Internet verbunden ist. Es enthält drei virtuelle Azure-Computer unter Windows Server 2016:</span><span class="sxs-lookup"><span data-stu-id="f21eb-p101">The Base Configuration dev/test environment in Figure 1 consists of the Corpnet subnet in a cloud-only Azure virtual network named TestLab that simulates a simplified, private intranet connected to the Internet. It contains three Azure virtual machines running Windows Server 2016:</span></span>
   
-- DC1 ist als Intranet-Domänencontroller und DNS-Server (Domain Name System) konfiguriert.
+- <span data-ttu-id="f21eb-110">DC1 ist als Intranet-Domänencontroller und DNS-Server (Domain Name System) konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="f21eb-110">DC1 is configured as an intranet domain controller and Domain Name System (DNS) server</span></span>
     
-- App1 ist als allgemeiner Anwendungs- und Webserver konfiguriert.
+- <span data-ttu-id="f21eb-111">App1 ist als allgemeiner Anwendungs- und Webserver konfiguriert.</span><span class="sxs-lookup"><span data-stu-id="f21eb-111">APP1 is configured as a general application and web server</span></span>
     
-- 	CLIENT1 fungiert als Intranetclient.
+- <span data-ttu-id="f21eb-112">	CLIENT1 fungiert als Intranetclient.</span><span class="sxs-lookup"><span data-stu-id="f21eb-112">CLIENT1 acts as an intranet client</span></span>
     
-Diese Konfiguration ermöglicht DC1, APP1, CLIENT1 und weiteren Computern im Unternehmensnetzwerk-Subnetz Folgendes:  
+<span data-ttu-id="f21eb-113">Diese Konfiguration ermöglicht DC1, APP1, CLIENT1 und weiteren Computern im Unternehmensnetzwerk-Subnetz Folgendes: </span><span class="sxs-lookup"><span data-stu-id="f21eb-113">This configuration allows DC1, APP1, CLIENT1, and additional Corpnet subnet computers to be:</span></span> 
   
-- Verbunden mit dem Internet Updates installiert, Zugriff auf Ressourcen im Internet in Echtzeit und öffentliche Cloud-Technologien wie Microsoft Office 365 und Azure-Diensten teilnehmen.
+- <span data-ttu-id="f21eb-114">Verbunden mit dem Internet Updates installiert, Zugriff auf Ressourcen im Internet in Echtzeit und öffentliche Cloud-Technologien wie Microsoft Office 365 und Azure-Diensten teilnehmen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-114">Connected to the Internet to install updates, access Internet resources in real time, and participate in public cloud technologies such as Microsoft Office 365 and other Azure services.</span></span>
     
-- 	Remoteverwaltung über Remotedesktopverbindungen von Ihrem Computer, der mit dem Internet oder dem Netzwerk Ihrer Organisation verbunden ist.
+- <span data-ttu-id="f21eb-115">	Remoteverwaltung über Remotedesktopverbindungen von Ihrem Computer, der mit dem Internet oder dem Netzwerk Ihrer Organisation verbunden ist.</span><span class="sxs-lookup"><span data-stu-id="f21eb-115">Remotely managed using Remote Desktop connections from your computer that is connected to the Internet or your organization network.</span></span>
     
-Sie können die resultierende Testumgebung zu folgenden Zwecken verwenden:
+<span data-ttu-id="f21eb-116">Sie können die resultierende Testumgebung zu folgenden Zwecken verwenden:</span><span class="sxs-lookup"><span data-stu-id="f21eb-116">You can use the resulting test environment:</span></span>
   
-- Zur Anwendungsentwicklung und zum Testen.
+- <span data-ttu-id="f21eb-117">Zur Anwendungsentwicklung und zum Testen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-117">For application development and testing.</span></span>
     
-- Die Erstkonfiguration eigener Entwurf einer erweiterten Test-Umgebung umfasst, die zusätzlicher virtueller Computer, Azure-Diensten oder andere Microsoft-Cloud-Angeboten wie etwa Office 365 und Sicherheit in Unternehmen + Mobilität.
+- <span data-ttu-id="f21eb-118">Die Erstkonfiguration eigener Entwurf einer erweiterten Test-Umgebung umfasst, die zusätzlicher virtueller Computer, Azure-Diensten oder andere Microsoft-Cloud-Angeboten wie etwa Office 365 und Sicherheit in Unternehmen + Mobilität.</span><span class="sxs-lookup"><span data-stu-id="f21eb-118">As the initial configuration of an extended test environment of your own design that includes additional virtual machines, Azure services, or other Microsoft cloud offerings such as Office 365 and Enterprise Security + Mobility.</span></span>
     
-Es gibt vier Phasen bei der Einrichtung der Basiskonfiguration für die Testumgebung in Azure:
+<span data-ttu-id="f21eb-119">Es gibt vier Phasen bei der Einrichtung der Basiskonfiguration für die Testumgebung in Azure:</span><span class="sxs-lookup"><span data-stu-id="f21eb-119">There are four phases to setting up the Base Configuration test environment in Azure:</span></span>
   
-1. 	Erstellen des virtuellen Netzwerks
+1. <span data-ttu-id="f21eb-120">	Erstellen des virtuellen Netzwerks</span><span class="sxs-lookup"><span data-stu-id="f21eb-120">Create the virtual network.</span></span>
     
-2. 	Konfigurieren von DC1
+2. <span data-ttu-id="f21eb-121">	Konfigurieren von DC1</span><span class="sxs-lookup"><span data-stu-id="f21eb-121">Configure DC1.</span></span>
     
-3. 	Konfigurieren von APP1
+3. <span data-ttu-id="f21eb-122">	Konfigurieren von APP1</span><span class="sxs-lookup"><span data-stu-id="f21eb-122">Configure APP1.</span></span>
     
-4. 	Konfigurieren von CLIENT1
+4. <span data-ttu-id="f21eb-123">	Konfigurieren von CLIENT1</span><span class="sxs-lookup"><span data-stu-id="f21eb-123">Configure CLIENT1.</span></span>
     
-Wenn Sie nicht bereits über ein Azure-Abonnement verfügen, können Sie sich für eine kostenlose Testversion auf [Azure testen](https://azure.microsoft.com/pricing/free-trial/)signieren. Wenn Sie ein MSDN oder Visual Studio-Abonnement haben, finden Sie unter [monatliche Azure Credit für Abonnenten von Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
+<span data-ttu-id="f21eb-p102">Wenn Sie nicht bereits über ein Azure-Abonnement verfügen, können Sie sich für eine kostenlose Testversion auf [Azure testen](https://azure.microsoft.com/pricing/free-trial/)signieren. Wenn Sie ein MSDN oder Visual Studio-Abonnement haben, finden Sie unter [monatliche Azure Credit für Abonnenten von Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).</span><span class="sxs-lookup"><span data-stu-id="f21eb-p102">If you do not already have an Azure subscription, you can sign up for a free trial at [Try Azure](https://azure.microsoft.com/pricing/free-trial/). If you have an MSDN or Visual Studio subscription, see [Monthly Azure credit for Visual Studio subscribers](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).</span></span>
   
 > [!NOTE]
-> Virtuelle Computer in Azure ein einer laufenden Kosten entstehen, wenn sie ausgeführt werden. Diese Kosten für kostenlose Testversion, MSDN-Abonnement abgerechnet oder kostenpflichtiges Abonnement. Weitere Informationen zu den Kosten der Ausführung von Azure-virtuelle Computer finden Sie unter [Virtuelle Computer Preise Details](https://azure.microsoft.com/pricing/details/virtual-machines/) und [Azure Preise Rechner](https://azure.microsoft.com/pricing/calculator/). Um Kosten zu minimieren, finden Sie unter [Minimierung der Kosten für die Test Environment virtuellen Computern in Azure](base-configuration-dev-test-environment.md#mincost). 
+> <span data-ttu-id="f21eb-p103">Virtuelle Computer in Azure ein einer laufenden Kosten entstehen, wenn sie ausgeführt werden. Diese Kosten für kostenlose Testversion, MSDN-Abonnement abgerechnet oder kostenpflichtiges Abonnement. Weitere Informationen zu den Kosten der Ausführung von Azure-virtuelle Computer finden Sie unter [Virtuelle Computer Preise Details](https://azure.microsoft.com/pricing/details/virtual-machines/) und [Azure Preise Rechner](https://azure.microsoft.com/pricing/calculator/). Um Kosten zu minimieren, finden Sie unter [Minimierung der Kosten für die Test Environment virtuellen Computern in Azure](base-configuration-dev-test-environment.md#mincost).</span><span class="sxs-lookup"><span data-stu-id="f21eb-p103">Virtual machines in Azure incur an ongoing monetary cost when they are running. This cost is billed against your free trial, MSDN subscription, or paid subscription. For more information about the costs of running Azure virtual machines, see [Virtual Machines Pricing Details](https://azure.microsoft.com/pricing/details/virtual-machines/) and [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/). To keep costs down, see [Minimizing the costs of test environment virtual machines in Azure](base-configuration-dev-test-environment.md#mincost).</span></span> 
   
 ![Testumgebungsanleitungen in der Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> <span data-ttu-id="f21eb-131">Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="f21eb-131">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="phase-1-create-the-virtual-network"></a>Phase 1: Erstellen des virtuellen Netzwerks
+## <a name="phase-1-create-the-virtual-network"></a><span data-ttu-id="f21eb-132">Phase 1: Erstellen des virtuellen Netzwerks</span><span class="sxs-lookup"><span data-stu-id="f21eb-132">Phase 1: Create the virtual network</span></span>
 
-Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung.
+<span data-ttu-id="f21eb-133">Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung.</span><span class="sxs-lookup"><span data-stu-id="f21eb-133">First, start an Azure PowerShell prompt.</span></span>
   
 > [!NOTE]
-> Verwenden Sie den folgenden Befehl wird die neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> <span data-ttu-id="f21eb-p104">Verwenden Sie den folgenden Befehl wird die neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="f21eb-p104">The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/).</span></span> 
   
-Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.
+<span data-ttu-id="f21eb-136">Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.</span><span class="sxs-lookup"><span data-stu-id="f21eb-136">Sign in to your Azure account with the following command.</span></span>
   
 ```
 Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.
+> <span data-ttu-id="f21eb-137">Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.</span><span class="sxs-lookup"><span data-stu-id="f21eb-137">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that contains all the PowerShell commands in this article.</span></span>
   
-Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
+<span data-ttu-id="f21eb-138">Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.</span><span class="sxs-lookup"><span data-stu-id="f21eb-138">Get your subscription name using the following command.</span></span>
   
 ```
 Get-AzureRMSubscription | Sort Name | Select Name
 ```
 
-Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „<“ und „>“, durch den entsprechenden Namen.
+<span data-ttu-id="f21eb-p105">Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „<“ und „>“, durch den entsprechenden Namen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p105">Set your Azure subscription. Replace everything within the quotes, including the < and > characters, with the correct name.</span></span>
   
 ```
 $subscr="<subscription name>"
 Get-AzureRmSubscription -SubscriptionName $subscr | Select-AzureRmSubscription
 ```
 
-Im nächsten Schritt wird eine neue Ressourcengruppe für Ihre Basiskonfiguration des Testlabors erstellt. Verwenden Sie zum Ermitteln eines eindeutigen Ressourcengruppennamens diesen Befehl, mit dem die vorhandenen Ressourcengruppen aufgeführt werden.
+<span data-ttu-id="f21eb-p106">Im nächsten Schritt wird eine neue Ressourcengruppe für Ihre Basiskonfiguration des Testlabors erstellt. Verwenden Sie zum Ermitteln eines eindeutigen Ressourcengruppennamens diesen Befehl, mit dem die vorhandenen Ressourcengruppen aufgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p106">Next, create a new resource group for your Base Configuration test lab. To determine a unique resource group name, use this command to list your existing resource groups.</span></span>
   
 ```
 Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-Erstellen Sie die neue Ressourcengruppe mit diesen Befehlen. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „<“ und „>“, durch die entsprechenden Namen.
+<span data-ttu-id="f21eb-p107">Erstellen Sie die neue Ressourcengruppe mit diesen Befehlen. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „<“ und „>“, durch die entsprechenden Namen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p107">Create your new resource group with these commands. Replace everything within the quotes, including the < and > characters, with the correct names.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -115,7 +115,7 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-Im nächsten Schritt erstellen Sie das virtuelle Netzwerk „TestLab“, das das Unternehmensnetzwerk-Subnetz der Basiskonfiguration hostet, und schützen es mit einer Netzwerksicherheitsgruppe.
+<span data-ttu-id="f21eb-145">Im nächsten Schritt erstellen Sie das virtuelle Netzwerk „TestLab“, das das Unternehmensnetzwerk-Subnetz der Basiskonfiguration hostet, und schützen es mit einer Netzwerksicherheitsgruppe.</span><span class="sxs-lookup"><span data-stu-id="f21eb-145">Next, you create the TestLab virtual network that will host the Corpnet subnet of the base configuration and protect it with a network security group.</span></span>
   
 ```
 $rgName="<name of your new resource group>"
@@ -129,15 +129,15 @@ $nsg=Get-AzureRMNetworkSecurityGroup -Name Corpnet -ResourceGroupName $rgName
 Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -AddressPrefix "10.0.0.0/24" -NetworkSecurityGroup $nsg
 ```
 
-Dies ist Ihre aktuelle Konfiguration.
+<span data-ttu-id="f21eb-146">Dies ist Ihre aktuelle Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f21eb-146">This is your current configuration.</span></span>
   
 ![Phase 1 der Basiskonfiguration in Azure mit dem virtuellen Netzwerk und Subnetz](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
-## <a name="phase-2-configure-dc1"></a>Phase 2: Konfigurieren von DC1
+## <a name="phase-2-configure-dc1"></a><span data-ttu-id="f21eb-148">Phase 2: Konfigurieren von DC1</span><span class="sxs-lookup"><span data-stu-id="f21eb-148">Phase 2: Configure DC1</span></span>
 
-In dieser Phase erstellen Sie den virtuellen Computer DC1 und konfigurieren diesen als Domänencontroller für die Windows Server Active Directory-Domäne „corp.contoso.com“ sowie einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab.
+<span data-ttu-id="f21eb-149">In dieser Phase erstellen Sie den virtuellen Computer DC1 und konfigurieren diesen als Domänencontroller für die Windows Server Active Directory-Domäne „corp.contoso.com“ sowie einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab.</span><span class="sxs-lookup"><span data-stu-id="f21eb-149">In this phase, we create the DC1 virtual machine and configure it as a domain controller for the corp.contoso.com Windows Server Active Directory (AD) domain and a DNS server for the virtual machines of the TestLab virtual network.</span></span>
   
-Zum Erstellen eines Azure-virtueller Computers für DC1 Geben Sie den Namen der Ressourcengruppe, und führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
+<span data-ttu-id="f21eb-150">Zum Erstellen eines Azure-virtueller Computers für DC1 Geben Sie den Namen der Ressourcengruppe, und führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.</span><span class="sxs-lookup"><span data-stu-id="f21eb-150">To create an Azure virtual machine for DC1, fill in the name of your resource group and run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -157,92 +157,92 @@ $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC1-DataDisk1" -CreateOption Attach -Ma
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Sie werden nach einem Benutzernamen und Kennwort für das lokale Administratorkonto auf DC1 gefragt. Verwenden Sie ein sicheres Kennwort, und notieren Sie den Namen und das Kennwort an einem sicheren Ort.
+<span data-ttu-id="f21eb-p108">Sie werden nach einem Benutzernamen und Kennwort für das lokale Administratorkonto auf DC1 gefragt. Verwenden Sie ein sicheres Kennwort, und notieren Sie den Namen und das Kennwort an einem sicheren Ort.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p108">You will be prompted for a user name and password for the local administrator account on DC1. Use a strong password and record both the name and password in a secure location.</span></span>
   
-Stellen Sie dann eine Verbindung mit dem virtuellen Computer DC1 her.
+<span data-ttu-id="f21eb-153">Stellen Sie dann eine Verbindung mit dem virtuellen Computer DC1 her.</span><span class="sxs-lookup"><span data-stu-id="f21eb-153">Next, connect to the DC1 virtual machine.</span></span>
   
-### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Herstellen einer Verbindung mit DC1 mithilfe von Anmeldeinformationen für das lokale Administratorkonto
+### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a><span data-ttu-id="f21eb-154">Herstellen einer Verbindung mit DC1 mithilfe von Anmeldeinformationen für das lokale Administratorkonto</span><span class="sxs-lookup"><span data-stu-id="f21eb-154">Connect to DC1 using local administrator account credentials</span></span>
 
-1. Klicken Sie in der [Azure-Portal](https://portal.azure.com)auf **Ressourcengruppen >** <the name of your new resource group> **> DC1 > Connect**.
+1. <span data-ttu-id="f21eb-155">Klicken Sie in der [Azure-Portal](https://portal.azure.com)auf **Ressourcengruppen >** <the name of your new resource group> **> DC1 > Connect**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-155">In the [Azure portal](https://portal.azure.com), click **Resource Groups >** <the name of your new resource group> **> DC1 > Connect**.</span></span>
     
-2. Öffnen Sie die DC1.rdp-Datei, die heruntergeladen wird, und klicken Sie auf **Verbinden**.
+2. <span data-ttu-id="f21eb-156">Öffnen Sie die DC1.rdp-Datei, die heruntergeladen wird, und klicken Sie auf **Verbinden**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-156">Open the DC1.rdp file that is downloaded, and then click **Connect**.</span></span>
     
-3. Geben Sie den Namen des DC1 lokalen Administratorkontos:
+3. <span data-ttu-id="f21eb-157">Geben Sie den Namen des DC1 lokalen Administratorkontos:</span><span class="sxs-lookup"><span data-stu-id="f21eb-157">Specify the DC1 local administrator account name:</span></span>
     
-  - Für Windows 7:
+  - <span data-ttu-id="f21eb-158">Für Windows 7:</span><span class="sxs-lookup"><span data-stu-id="f21eb-158">For Windows 7:</span></span>
     
-    Klicken Sie auf **ein anderes Konto verwenden**, klicken Sie im Dialogfeld **Windows-Sicherheit** . Geben Sie im Feld **Benutzername** **DC1\\**[lokaler Administratorkontonamen].
+    <span data-ttu-id="f21eb-p109">Klicken Sie auf **ein anderes Konto verwenden**, klicken Sie im Dialogfeld **Windows-Sicherheit** . Geben Sie im Feld **Benutzername** **DC1\\**[lokaler Administratorkontonamen].</span><span class="sxs-lookup"><span data-stu-id="f21eb-p109">In the **Windows Security** dialog box, click **Use another account**. In **User name**, type **DC1\\**[Local administrator account name].</span></span>
     
-  - Für Windows 8 oder Windows 10:
+  - <span data-ttu-id="f21eb-161">Für Windows 8 oder Windows 10:</span><span class="sxs-lookup"><span data-stu-id="f21eb-161">For Windows 8 or Windows 10:</span></span>
     
-    Klicken Sie auf **Weitere Optionen**, und klicken Sie dann auf **ein anderes Konto verwenden**, klicken Sie im Dialogfeld **Windows-Sicherheit** . Geben Sie im Feld **Benutzername** **DC1\\**[lokaler Administratorkontonamen].
+    <span data-ttu-id="f21eb-p110">Klicken Sie auf **Weitere Optionen**, und klicken Sie dann auf **ein anderes Konto verwenden**, klicken Sie im Dialogfeld **Windows-Sicherheit** . Geben Sie im Feld **Benutzername** **DC1\\**[lokaler Administratorkontonamen].</span><span class="sxs-lookup"><span data-stu-id="f21eb-p110">In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**. In **User name**, type **DC1\\**[Local administrator account name].</span></span>
     
-4. Geben Sie im Feld **Kennwort**das Kennwort für das lokale Administratorkonto ein, und klicken Sie dann auf **OK**.
+4. <span data-ttu-id="f21eb-164">Geben Sie im Feld **Kennwort**das Kennwort für das lokale Administratorkonto ein, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-164">In **Password**, type the password of the local administrator account, and then click **OK**.</span></span>
     
-5. Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.
+5. <span data-ttu-id="f21eb-165">Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-165">When prompted, click **Yes**.</span></span>
     
-Im nächsten Schritt fügen Sie eine zusätzliche Datenträger als ein neues Volume mit dem Laufwerkbuchstaben F: mit diesem Befehl an einer Administratorebene Windows PowerShell-Eingabeaufforderung auf DC1 hinzu.
+<span data-ttu-id="f21eb-166">Im nächsten Schritt fügen Sie eine zusätzliche Datenträger als ein neues Volume mit dem Laufwerkbuchstaben F: mit diesem Befehl an einer Administratorebene Windows PowerShell-Eingabeaufforderung auf DC1 hinzu.</span><span class="sxs-lookup"><span data-stu-id="f21eb-166">Next, add an extra data disk as a new volume with the drive letter F: with this command at an administrator-level Windows PowerShell command prompt on DC1.</span></span>
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-Konfigurieren Sie als Nächstes DC1 als Domänencontroller und DNS-Server für die Domäne „corp.contoso.com“. Führen Sie diese Befehle an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.
+<span data-ttu-id="f21eb-p111">Konfigurieren Sie als Nächstes DC1 als Domänencontroller und DNS-Server für die Domäne „corp.contoso.com“. Führen Sie diese Befehle an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p111">Next, configure DC1 as a domain controller and DNS server for the corp.contoso.com domain. Run these commands at an administrator-level Windows PowerShell command prompt.</span></span>
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\\NTDS" -SysvolPath "F:\\SYSVOL" -LogPath "F:\\Logs"
 ```
 
-Sie müssen ein Administratorkennwort für den abgesicherten Modus angeben. Bewahren Sie das Kennwort an einem sicheren Ort auf.
+<span data-ttu-id="f21eb-p112">Sie müssen ein Administratorkennwort für den abgesicherten Modus angeben. Bewahren Sie das Kennwort an einem sicheren Ort auf.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p112">You will need to specify a safe mode administrator password. Store this password in a secure location.</span></span>
   
-Beachten Sie, dass der Abschluss dieser Befehle ein paar Minuten in Anspruch nehmen kann.
+<span data-ttu-id="f21eb-171">Beachten Sie, dass der Abschluss dieser Befehle ein paar Minuten in Anspruch nehmen kann.</span><span class="sxs-lookup"><span data-stu-id="f21eb-171">Note that these commands can take a few minutes to complete.</span></span>
   
-Stellen Sie nach dem Neustart von DC1 wieder eine Verbindung zum virtuellen DC1-Computer her.
+<span data-ttu-id="f21eb-172">Stellen Sie nach dem Neustart von DC1 wieder eine Verbindung zum virtuellen DC1-Computer her.</span><span class="sxs-lookup"><span data-stu-id="f21eb-172">After DC1 restarts, reconnect to the DC1 virtual machine.</span></span>
   
-### <a name="connect-to-dc1-using-domain-credentials"></a>Herstellen einer Verbindung mit DC1 mithilfe von Domänenanmeldeinformationen
+### <a name="connect-to-dc1-using-domain-credentials"></a><span data-ttu-id="f21eb-173">Herstellen einer Verbindung mit DC1 mithilfe von Domänenanmeldeinformationen</span><span class="sxs-lookup"><span data-stu-id="f21eb-173">Connect to DC1 using domain credentials</span></span>
 
-1. Klicken Sie in der [Azure-Portal](https://portal.azure.com)auf **Ressourcengruppen >** <your resource group name> **> DC1 > Connect**.
+1. <span data-ttu-id="f21eb-174">Klicken Sie in der [Azure-Portal](https://portal.azure.com)auf **Ressourcengruppen >** <your resource group name> **> DC1 > Connect**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-174">In the [Azure portal](https://portal.azure.com), click **Resource Groups >** <your resource group name> **> DC1 > Connect**.</span></span>
     
-2. Führen Sie die DC1.rdp-Datei, die heruntergeladen wird, und klicken Sie auf **Verbinden**.
+2. <span data-ttu-id="f21eb-175">Führen Sie die DC1.rdp-Datei, die heruntergeladen wird, und klicken Sie auf **Verbinden**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-175">Run the DC1.rdp file that is downloaded, and then click **Connect**.</span></span>
     
-3. Klicken Sie in der **Windows-Sicherheit**auf **ein anderes Konto verwenden**. Geben Sie im Feld **Benutzername** **CORP\\**[lokaler Administratorkontonamen].
+3. <span data-ttu-id="f21eb-p113">Klicken Sie in der **Windows-Sicherheit**auf **ein anderes Konto verwenden**. Geben Sie im Feld **Benutzername** **CORP\\**[lokaler Administratorkontonamen].</span><span class="sxs-lookup"><span data-stu-id="f21eb-p113">In **Windows Security**, click **Use another account**. In **User name**, type **CORP\\**[Local administrator account name].</span></span>
     
-4. Geben Sie im Feld **Kennwort**das Kennwort für das lokale Administratorkonto ein, und klicken Sie dann auf **OK**.
+4. <span data-ttu-id="f21eb-178">Geben Sie im Feld **Kennwort**das Kennwort für das lokale Administratorkonto ein, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-178">In **Password**, type the password of the local administrator account, and then click **OK**.</span></span>
     
-5. Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.
+5. <span data-ttu-id="f21eb-179">Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-179">When prompted, click **Yes**.</span></span>
     
-Im nächsten Schritt erstellen Sie ein Benutzerkonto in Active Directory, das bei der Anmeldung an Mitgliedscomputern der Domäne CORP verwendet wird. Führen Sie diesen Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.
+<span data-ttu-id="f21eb-p114">Im nächsten Schritt erstellen Sie ein Benutzerkonto in Active Directory, das bei der Anmeldung an Mitgliedscomputern der Domäne CORP verwendet wird. Führen Sie diesen Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p114">Next, create a user account in Active Directory that will be used when logging in to CORP domain member computers. Run this command at an administrator-level Windows PowerShell command prompt.</span></span>
   
 ```
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
-Beachten Sie, dass Sie von dem Befehl aufgefordert werden, das Kennwort des Kontos „User1“ anzugeben. Da dieses Konto für Remotedesktopverbindungen für alle Mitgliedscomputer der Domäne CORP verwendet wird, sollten Sie ein sicheres Kennwort wählen. Notieren Sie das Kennwort des Kontos „User1“, und bewahren Sie es an einem sicheren Ort auf.
+<span data-ttu-id="f21eb-p115">Beachten Sie, dass Sie von dem Befehl aufgefordert werden, das Kennwort des Kontos „User1“ anzugeben. Da dieses Konto für Remotedesktopverbindungen für alle Mitgliedscomputer der Domäne CORP verwendet wird, sollten Sie ein sicheres Kennwort wählen. Notieren Sie das Kennwort des Kontos „User1“, und bewahren Sie es an einem sicheren Ort auf.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p115">Note that this command prompts you to supply the User1 account password. Because this account will be used for remote desktop connections for all CORP domain member computers, choose a strong password. Record the User1 account password and store it in a secured location.</span></span>
   
-Konfigurieren Sie als Nächstes das neue Konto „User1“ als Unternehmensadministrator. Führen Sie diesen Befehl an der Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.
+<span data-ttu-id="f21eb-p116">Konfigurieren Sie als Nächstes das neue Konto „User1“ als Unternehmensadministrator. Führen Sie diesen Befehl an der Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p116">Next, configure the new User1 account as an Enterprise Administrator. Run this command at the administrator-level Windows PowerShell command prompt.</span></span>
   
 ```
 Add-ADPrincipalGroupMembership -Identity "CN=User1,CN=Users,DC=corp,DC=contoso,DC=com" -MemberOf "CN=Enterprise Admins,CN=Users,DC=corp,DC=contoso,DC=com","CN=Domain Admins,CN=Users,DC=corp,DC=contoso,DC=com","CN=Schema Admins,CN=Users,DC=corp,DC=contoso,DC=com"
 ```
 
-Schließen Sie die Remotedesktopsitzung mit DC1 und dann erneut eine Verbindung mit der CORP\\Konto User1 an.
+<span data-ttu-id="f21eb-187">Schließen Sie die Remotedesktopsitzung mit DC1 und dann erneut eine Verbindung mit der CORP\\Konto User1 an.</span><span class="sxs-lookup"><span data-stu-id="f21eb-187">Close the Remote Desktop session with DC1 and then reconnect using the CORP\\User1 account.</span></span>
   
-Führen Sie als Nächstes den folgenden Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus, um Datenverkehr für das Tool Ping zuzulassen.
+<span data-ttu-id="f21eb-188">Führen Sie als Nächstes den folgenden Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus, um Datenverkehr für das Tool Ping zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-188">Next, to allow traffic for the Ping tool, run this command at an administrator-level Windows PowerShell command prompt.</span></span>
   
 ```
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
-Dies ist Ihre aktuelle Konfiguration.
+<span data-ttu-id="f21eb-189">Dies ist Ihre aktuelle Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f21eb-189">This is your current configuration.</span></span>
   
 ![Phase 2 der Basiskonfiguration in Azure mit dem virtuellen Computer DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
   
-## <a name="phase-3-configure-app1"></a>Phase 3: Konfigurieren von APP1
+## <a name="phase-3-configure-app1"></a><span data-ttu-id="f21eb-191">Phase 3: Konfigurieren von APP1</span><span class="sxs-lookup"><span data-stu-id="f21eb-191">Phase 3: Configure APP1</span></span>
 
-APP1 bietet Web- und Dateifreigabedienste.
+<span data-ttu-id="f21eb-192">APP1 bietet Web- und Dateifreigabedienste.</span><span class="sxs-lookup"><span data-stu-id="f21eb-192">APP1 provides web and file sharing services.</span></span>
   
-Um einen virtuellen Azure-Computer für APP1 zu erstellen, geben Sie den Namen Ihrer Ressourcengruppe, den Azure-Speicherort und den Speicherkontonamen ein und führen diese Befehle in der Azure PowerShell-Befehlszeile auf Ihrem lokalen Computer aus.
+<span data-ttu-id="f21eb-193">Um einen virtuellen Azure-Computer für APP1 zu erstellen, geben Sie den Namen Ihrer Ressourcengruppe, den Azure-Speicherort und den Speicherkontonamen ein und führen diese Befehle in der Azure PowerShell-Befehlszeile auf Ihrem lokalen Computer aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-193">To create an Azure Virtual Machine for APP1, fill in the name of your resource group, Azure location, and storage account name and run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -259,28 +259,28 @@ $vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption 
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Im nächsten Schritt stellen Sie eine Verbindung mit dem virtuellen Computer APP1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von APP1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung.
+<span data-ttu-id="f21eb-194">Im nächsten Schritt stellen Sie eine Verbindung mit dem virtuellen Computer APP1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von APP1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung.</span><span class="sxs-lookup"><span data-stu-id="f21eb-194">Next, connect to the APP1 virtual machine using the APP1 local administrator account name and password, and then open a Windows PowerShell command prompt.</span></span>
   
-Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen APP1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** , und stellen Sie sicher, dass es vier Antworten gibt.
+<span data-ttu-id="f21eb-195">Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen APP1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** , und stellen Sie sicher, dass es vier Antworten gibt.</span><span class="sxs-lookup"><span data-stu-id="f21eb-195">To check name resolution and network communication between APP1 and DC1, run the **ping dc1.corp.contoso.com** command and verify that there are four replies.</span></span>
   
-Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer APP1 mit der Domäne CORP.
+<span data-ttu-id="f21eb-196">Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer APP1 mit der Domäne CORP.</span><span class="sxs-lookup"><span data-stu-id="f21eb-196">Next, join the APP1 virtual machine to the CORP domain with these commands at the Windows PowerShell prompt.</span></span>
   
 ```
 Add-Computer -DomainName corp.contoso.com
 Restart-Computer
 ```
 
-Beachten Sie, dass Sie die CORP angeben müssen\\User1 Domänenanmeldeinformationen Konto nach dem Ausführen des Befehls **Computer hinzufügen** .
+<span data-ttu-id="f21eb-197">Beachten Sie, dass Sie die CORP angeben müssen\\User1 Domänenanmeldeinformationen Konto nach dem Ausführen des Befehls **Computer hinzufügen** .</span><span class="sxs-lookup"><span data-stu-id="f21eb-197">Note that you must supply the CORP\\User1 domain account credentials after running the **Add-Computer** command.</span></span>
   
-Nach dem Neustart APP1 Herstellen einer Verbindung mit der CORP mit\\Konto User1 an, und öffnen Sie dann eine Administratorebene Windows PowerShell command Prompt.
+<span data-ttu-id="f21eb-198">Nach dem Neustart APP1 Herstellen einer Verbindung mit der CORP mit\\Konto User1 an, und öffnen Sie dann eine Administratorebene Windows PowerShell command Prompt.</span><span class="sxs-lookup"><span data-stu-id="f21eb-198">After APP1 restarts, connect to it using the CORP\\User1 account, and then open an administrator-level Windows PowerShell command prompt.</span></span>
   
-Im nächsten Schritt richten Sie APP1 mit dem folgenden Befehl in der Windows PowerShell-Eingabeaufforderung auf APP1 als Webserver ein.
+<span data-ttu-id="f21eb-199">Im nächsten Schritt richten Sie APP1 mit dem folgenden Befehl in der Windows PowerShell-Eingabeaufforderung auf APP1 als Webserver ein.</span><span class="sxs-lookup"><span data-stu-id="f21eb-199">Next, make APP1 a web server with this command at the Windows PowerShell command prompt on APP1.</span></span>
   
 ```
 Install-WindowsFeature Web-WebServer -IncludeManagementTools
 ```
 
-Erstellen Sie als Nächstes einen freigegebenen Ordner und eine Textdatei innerhalb des Ordners auf APP1 mit diesen PowerShell-Befehlen.
+<span data-ttu-id="f21eb-200">Erstellen Sie als Nächstes einen freigegebenen Ordner und eine Textdatei innerhalb des Ordners auf APP1 mit diesen PowerShell-Befehlen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-200">Next, create a shared folder and a text file within the folder on APP1 with these PowerShell commands.</span></span>
   
 ```
 New-Item -path c:\\files -type directory
@@ -288,18 +288,18 @@ Write-Output "This is a shared file." | out-file c:\\files\\example.txt
 New-SmbShare -name files -path c:\\files -changeaccess CORP\\User1
 ```
 
-Dies ist Ihre aktuelle Konfiguration.
+<span data-ttu-id="f21eb-201">Dies ist Ihre aktuelle Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f21eb-201">This is your current configuration.</span></span>
   
 ![Phase 3 der Basiskonfiguration in Azure mit dem virtuellen Computer APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
-## <a name="phase-4-configure-client1"></a>Phase 4: Konfigurieren von CLIENT1
+## <a name="phase-4-configure-client1"></a><span data-ttu-id="f21eb-203">Phase 4: Konfigurieren von CLIENT1</span><span class="sxs-lookup"><span data-stu-id="f21eb-203">Phase 4: Configure CLIENT1</span></span>
 
-CLIENT1 fungiert als normaler Laptop-, Tablet- oder Desktopcomputer im Intranet von Contoso.
+<span data-ttu-id="f21eb-204">CLIENT1 fungiert als normaler Laptop-, Tablet- oder Desktopcomputer im Intranet von Contoso.</span><span class="sxs-lookup"><span data-stu-id="f21eb-204">CLIENT1 acts as a typical laptop, tablet, or desktop computer on the Contoso intranet.</span></span>
   
 > [!NOTE]
-> Der folgende Befehl Set erstellt CLIENT1 mit Windows Server 2016 Datacenter, für alle Arten von Azure-Abonnements durchgeführt werden kann. Wenn Sie ein Visual Studio-basierte Azure-Abonnement verfügen, können Sie CLIENT1 ausgeführten Windows 10, Windows 8 oder Windows 7 mit dem [Azure-Portal](https://portal.azure.com)erstellen. 
+> <span data-ttu-id="f21eb-p117">Der folgende Befehl Set erstellt CLIENT1 mit Windows Server 2016 Datacenter, für alle Arten von Azure-Abonnements durchgeführt werden kann. Wenn Sie ein Visual Studio-basierte Azure-Abonnement verfügen, können Sie CLIENT1 ausgeführten Windows 10, Windows 8 oder Windows 7 mit dem [Azure-Portal](https://portal.azure.com)erstellen.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p117">The following command set creates CLIENT1 running Windows Server 2016 Datacenter, which can be done for all types of Azure subscriptions. If you have an Visual Studio-based Azure subscription, you can create CLIENT1 running Windows 10, Windows 8, or Windows 7 with the [Azure portal](https://portal.azure.com).</span></span> 
   
-Um einen virtuellen Azure-Computer für CLIENT1 zu erstellen, geben Sie den Namen Ihrer Ressourcengruppe, den Azure-Speicherort und den Speicherkontonamen ein und führen diese Befehle in der Azure PowerShell-Befehlszeile auf Ihrem lokalen Computer aus.
+<span data-ttu-id="f21eb-207">Um einen virtuellen Azure-Computer für CLIENT1 zu erstellen, geben Sie den Namen Ihrer Ressourcengruppe, den Azure-Speicherort und den Speicherkontonamen ein und führen diese Befehle in der Azure PowerShell-Befehlszeile auf Ihrem lokalen Computer aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-207">To create an Azure Virtual Machine for CLIENT1, fill in the name of your resource group, Azure location, and storage account name and run these commands at the Azure PowerShell command prompt on your local computer.</span></span>
   
 ```
 $rgName="<resource group name>"
@@ -316,62 +316,62 @@ $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOpti
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-Im nächsten Schritt stellen Sie eine Verbindung mit dem virtuellen Computer CLIENT1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von CLIENT1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
+<span data-ttu-id="f21eb-208">Im nächsten Schritt stellen Sie eine Verbindung mit dem virtuellen Computer CLIENT1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von CLIENT1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.</span><span class="sxs-lookup"><span data-stu-id="f21eb-208">Next, connect to the CLIENT1 virtual machine using the CLIENT1 local administrator account name and password, and then open an administrator-level Windows PowerShell command prompt.</span></span>
   
-Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen CLIENT1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** an einer Windows PowerShell-Eingabeaufforderung, und stellen Sie sicher, dass es vier Antworten gibt.
+<span data-ttu-id="f21eb-209">Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen CLIENT1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** an einer Windows PowerShell-Eingabeaufforderung, und stellen Sie sicher, dass es vier Antworten gibt.</span><span class="sxs-lookup"><span data-stu-id="f21eb-209">To check name resolution and network communication between CLIENT1 and DC1, run the **ping dc1.corp.contoso.com** command at a Windows PowerShell command prompt and verify that there are four replies.</span></span>
   
-Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer CLIENT1 mit der Domäne CORP.
+<span data-ttu-id="f21eb-210">Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer CLIENT1 mit der Domäne CORP.</span><span class="sxs-lookup"><span data-stu-id="f21eb-210">Next, join the CLIENT1 virtual machine to the CORP domain with these commands at the Windows PowerShell prompt.</span></span>
   
 ```
 Add-Computer -DomainName corp.contoso.com
 Restart-Computer
 ```
 
-Beachten Sie, dass Sie Ihre CORP angeben müssen\\User1 Domänenanmeldeinformationen Konto nach dem Ausführen des Befehls **Computer hinzufügen** .
+<span data-ttu-id="f21eb-211">Beachten Sie, dass Sie Ihre CORP angeben müssen\\User1 Domänenanmeldeinformationen Konto nach dem Ausführen des Befehls **Computer hinzufügen** .</span><span class="sxs-lookup"><span data-stu-id="f21eb-211">Note that you must supply your CORP\\User1 domain account credentials after running the **Add-Computer** command.</span></span>
   
-Nach dem Neustart CLIENT1 Herstellen einer Verbindung mit der CORP mit\\User1 Kontoname und Kennwort, und öffnen Sie eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
+<span data-ttu-id="f21eb-212">Nach dem Neustart CLIENT1 Herstellen einer Verbindung mit der CORP mit\\User1 Kontoname und Kennwort, und öffnen Sie eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.</span><span class="sxs-lookup"><span data-stu-id="f21eb-212">After CLIENT1 restarts, connect to it using the CORP\\User1 account name and password, and then open an administrator-level Windows PowerShell command prompt.</span></span>
   
-Überprüfen Sie im nächsten Schritt, ob Sie von CLIENT1 aus auf Web- und Dateifreigaberessourcen auf APP1 zugreifen können.
+<span data-ttu-id="f21eb-213">Überprüfen Sie im nächsten Schritt, ob Sie von CLIENT1 aus auf Web- und Dateifreigaberessourcen auf APP1 zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="f21eb-213">Next, verify that you can access web and file share resources on APP1 from CLIENT1.</span></span>
   
-### <a name="verify-client-access-to-app1"></a>Überprüfen des Clientzugriffs auf APP1
+### <a name="verify-client-access-to-app1"></a><span data-ttu-id="f21eb-214">Überprüfen des Clientzugriffs auf APP1</span><span class="sxs-lookup"><span data-stu-id="f21eb-214">Verify CLIENT access to APP1</span></span>
 
-1. Klicken Sie im Server-Manager im Strukturbereich auf **Lokalen Server**.
+1. <span data-ttu-id="f21eb-215">Klicken Sie im Server-Manager im Strukturbereich auf **Lokalen Server**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-215">In Server Manager, in the tree pane, click **Local Server**.</span></span>
     
-2. Klicken Sie in den **Eigenschaften für CLIENT1** **auf** neben **Verstärkte Sicherheitskonfiguration für Internet Explorer**.
+2. <span data-ttu-id="f21eb-216">Klicken Sie in den **Eigenschaften für CLIENT1** **auf** neben **Verstärkte Sicherheitskonfiguration für Internet Explorer**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-216">In **Properties for CLIENT1**, click **On** next to **IE Enhanced Security Configuration**.</span></span>
     
-3. Klicken Sie in **Verstärkte Sicherheitskonfiguration für Internet Explorer**auf **aus** für **Administratoren** und **Benutzern**, und klicken Sie dann auf **OK**.
+3. <span data-ttu-id="f21eb-217">Klicken Sie in **Verstärkte Sicherheitskonfiguration für Internet Explorer**auf **aus** für **Administratoren** und **Benutzern**, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-217">In **Internet Explorer Enhanced Security Configuration**, click **Off** for **Administrators** and **Users**, and then click **OK**.</span></span>
     
-4. Klicken Sie auf der Startseite auf **Internet Explorer**, und klicken Sie dann auf **OK**.
+4. <span data-ttu-id="f21eb-218">Klicken Sie auf der Startseite auf **Internet Explorer**, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="f21eb-218">From the Start screen, click **Internet Explorer**, and then click **OK**.</span></span>
     
-5. Klicken Sie in der Adressleiste Geben Sie **http://app1.corp.contoso.com/**, und drücken Sie die EINGABETASTE. Sie sollten die standardmäßige Internet-Informationsdienste Webseite APP1 finden Sie unter.
+5. <span data-ttu-id="f21eb-p118">Klicken Sie in der Adressleiste Geben Sie **http://app1.corp.contoso.com/**, und drücken Sie die EINGABETASTE. Sie sollten die standardmäßige Internet-Informationsdienste Webseite APP1 finden Sie unter.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p118">In the Address bar, type **http://app1.corp.contoso.com/**, and then press ENTER. You should see the default Internet Information Services web page for APP1.</span></span>
     
-6. Klicken Sie auf der Desktop-Taskleiste auf das Symbol für den Datei-Explorer.
+6. <span data-ttu-id="f21eb-221">Klicken Sie auf der Desktop-Taskleiste auf das Symbol für den Datei-Explorer.</span><span class="sxs-lookup"><span data-stu-id="f21eb-221">From the desktop taskbar, click the File Explorer icon.</span></span>
     
-7. Geben Sie in der Adressleiste ** \\ \\app1\\Dateien**, und drücken Sie dann die EINGABETASTE. Eine Ordneransicht mit dem Inhalt des freigegebenen Ordners sollte angezeigt werden.
+7. <span data-ttu-id="f21eb-p119">Geben Sie in der Adressleiste ** \\ \\app1\\Dateien**, und drücken Sie dann die EINGABETASTE. Eine Ordneransicht mit dem Inhalt des freigegebenen Ordners sollte angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p119">In the address bar, type **\\\\app1\\Files**, and then press ENTER. You should see a folder window with the contents of the Files shared folder.</span></span>
     
-8. Klicken Sie im freigegebenen Ordner **Dateien** Doppelklicken Sie auf die Datei **Example.txt** . Der Inhalt der Datei Example.txt sollte angezeigt werden.
+8. <span data-ttu-id="f21eb-p120">Klicken Sie im freigegebenen Ordner **Dateien** Doppelklicken Sie auf die Datei **Example.txt** . Der Inhalt der Datei Example.txt sollte angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p120">In the **Files** shared folder window, double-click the **Example.txt** file. You should see the contents of the Example.txt file.</span></span>
     
-9. Schließen Sie die **example.txt - Editor** und die **Dateien** freigegebene Ordner Windows.
+9. <span data-ttu-id="f21eb-226">Schließen Sie die **example.txt - Editor** und die **Dateien** freigegebene Ordner Windows.</span><span class="sxs-lookup"><span data-stu-id="f21eb-226">Close the **example.txt - Notepad** and the **Files** shared folder windows.</span></span>
     
-Dies ist Ihre endgültige Konfiguration.
+<span data-ttu-id="f21eb-227">Dies ist Ihre endgültige Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f21eb-227">This is your final configuration.</span></span>
   
 ![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-Die Basiskonfiguration in Azure kann nun für die Anwendungsentwicklung und zum Testen oder für die Erstellung zusätzlicher Testumgebungen verwendet werden. 
+<span data-ttu-id="f21eb-229">Die Basiskonfiguration in Azure kann nun für die Anwendungsentwicklung und zum Testen oder für die Erstellung zusätzlicher Testumgebungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="f21eb-229">Your Base Configuration in Azure is now ready for application development and testing or for building additional test environments.</span></span> 
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) für eine visuelle Darstellung aller die Artikel in einer Microsoft Cloud Test Lab Guide-Stapel.
+> <span data-ttu-id="f21eb-230">Klicken Sie [hier](http://aka.ms/catlgstack) für eine visuelle Darstellung aller die Artikel in einer Microsoft Cloud Test Lab Guide-Stapel.</span><span class="sxs-lookup"><span data-stu-id="f21eb-230">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
-## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a>Minimierung der Kosten für virtuelle Computer der Testumgebung in Azure
-<a name="mincost"> </a>
+## <a name="minimizing-the-costs-of-test-environment-virtual-machines-in-azure"></a><span data-ttu-id="f21eb-231">Minimierung der Kosten für virtuelle Computer der Testumgebung in Azure</span><span class="sxs-lookup"><span data-stu-id="f21eb-231">Minimizing the costs of test environment virtual machines in Azure</span></span>
+<span data-ttu-id="f21eb-232"><a name="mincost"> </a></span><span class="sxs-lookup"><span data-stu-id="f21eb-232"></span></span>
 
-Um die Kosten für die Ausführung der virtuellen Computer der Testumgebung zu minimieren, können Sie eine der folgenden Aktionen ausführen:
+<span data-ttu-id="f21eb-233">Um die Kosten für die Ausführung der virtuellen Computer der Testumgebung zu minimieren, können Sie eine der folgenden Aktionen ausführen:</span><span class="sxs-lookup"><span data-stu-id="f21eb-233">To minimize the cost of running the test environment virtual machines, you can do one of the following:</span></span>
   
-- Erstellen Sie die Testumgebung, und führen Sie Ihre benötigten Tests und Demonstrationen so schnell wie möglich aus. Nach Abschluss des Vorgangs löschen Sie die Ressourcengruppe für die Testumgebung.
+- <span data-ttu-id="f21eb-p121">Erstellen Sie die Testumgebung, und führen Sie Ihre benötigten Tests und Demonstrationen so schnell wie möglich aus. Nach Abschluss des Vorgangs löschen Sie die Ressourcengruppe für die Testumgebung.</span><span class="sxs-lookup"><span data-stu-id="f21eb-p121">Create the test environment and perform your needed testing and demonstration as quickly as possible. When complete, delete the resource group for the test environment.</span></span>
     
-- 	Fahren Sie die virtuellen Computer der Testumgebung in den Zustand der aufgehobenen Zuordnung herunter.
+- <span data-ttu-id="f21eb-236">	Fahren Sie die virtuellen Computer der Testumgebung in den Zustand der aufgehobenen Zuordnung herunter.</span><span class="sxs-lookup"><span data-stu-id="f21eb-236">Shut down your test environment virtual machines into a deallocated state.</span></span>
     
-Um die virtuellen Computer mit Azure PowerShell herunterzufahren, geben Sie den Ressourcengruppennamen ein und führen die folgenden Befehle aus.
+<span data-ttu-id="f21eb-237">Um die virtuellen Computer mit Azure PowerShell herunterzufahren, geben Sie den Ressourcengruppennamen ein und führen die folgenden Befehle aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-237">To shut down the virtual machines with Azure PowerShell, fill in the resource group name and run these commands.</span></span>
   
 ```
 $rgName="<your resource group name>"
@@ -380,15 +380,15 @@ Stop-AzureRMVM -ResourceGroupName $rgName -Name "APP1" -Force
 Stop-AzureRMVM -ResourceGroupName $rgName -Name "DC1" -Force
 ```
 
-Damit Ihre virtuellen Computer einwandfrei funktionieren, wenn alle aus dem beendeten Zustand (Zuordnung aufgehoben) gestartet werden, sollten Sie sie in der folgenden Reihenfolge starten:
+<span data-ttu-id="f21eb-238">Damit Ihre virtuellen Computer einwandfrei funktionieren, wenn alle aus dem beendeten Zustand (Zuordnung aufgehoben) gestartet werden, sollten Sie sie in der folgenden Reihenfolge starten:</span><span class="sxs-lookup"><span data-stu-id="f21eb-238">To ensure that your virtual machines work properly when starting all of them from the Stopped (Deallocated) state, you should start them in the following order:</span></span>
   
-1. DC1
+1. <span data-ttu-id="f21eb-239">DC1</span><span class="sxs-lookup"><span data-stu-id="f21eb-239">DC1</span></span>
     
-2. APP1
+2. <span data-ttu-id="f21eb-240">APP1</span><span class="sxs-lookup"><span data-stu-id="f21eb-240">APP1</span></span>
     
-3. CLIENT1
+3. <span data-ttu-id="f21eb-241">CLIENT1</span><span class="sxs-lookup"><span data-stu-id="f21eb-241">CLIENT1</span></span>
     
-Um die virtuellen Computer in der richtigen Reihenfolge mit Azure PowerShell zu starten, geben Sie den Ressourcengruppennamen ein und führen die folgenden Befehle aus.
+<span data-ttu-id="f21eb-242">Um die virtuellen Computer in der richtigen Reihenfolge mit Azure PowerShell zu starten, geben Sie den Ressourcengruppennamen ein und führen die folgenden Befehle aus.</span><span class="sxs-lookup"><span data-stu-id="f21eb-242">To start the virtual machines in order with Azure PowerShell, fill in the resource group name and run these commands.</span></span>
   
 ```
 $rgName="<your resource group name>"
@@ -397,18 +397,18 @@ Start-AzureRMVM -ResourceGroupName $rgName -Name "APP1"
 Start-AzureRMVM -ResourceGroupName $rgName -Name "CLIENT1"
 ```
 
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="f21eb-243">See Also</span><span class="sxs-lookup"><span data-stu-id="f21eb-243">See Also</span></span>
 
-<a name="mincost"> </a>
+<span data-ttu-id="f21eb-244"><a name="mincost"> </a></span><span class="sxs-lookup"><span data-stu-id="f21eb-244"></span></span>
 
-[Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
+[<span data-ttu-id="f21eb-245">Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="f21eb-245">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="f21eb-246">DirSync für die Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="f21eb-246">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
   
-[Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung](cloud-app-security-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="f21eb-247">Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="f21eb-247">Cloud App Security for your Office 365 dev/test environment</span></span>](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
-[Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="f21eb-248">Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="f21eb-248">Advanced Threat Protection for your Office 365 dev/test environment</span></span>](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
   
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="f21eb-249">Cloudakzeptanz und Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="f21eb-249">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
 
 

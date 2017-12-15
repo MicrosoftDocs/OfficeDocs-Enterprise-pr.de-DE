@@ -25,102 +25,102 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung
+# <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a><span data-ttu-id="014f6-103">Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="014f6-103">Exchange Online integration for your Office 365 and Dynamics 365 dev/test environment</span></span>
 
- **Zusammenfassung:** Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren.
+ <span data-ttu-id="014f6-104">**Zusammenfassung:** Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren.</span><span class="sxs-lookup"><span data-stu-id="014f6-104">**Summary:** Use this Test Lab Guide to enable Dynamics 365 integration for Exchange Online in your Office 365 trial subscription.</span></span>
   
-Ein nützlicher Vorteil von Microsoft Dynamics 365 besteht darin, dass die gesamte Kundenkommunikation an einem zentralen Ort gespeichert wird, damit jeder Benutzer mit den entsprechenden Berechtigungen auf alle relevanten Kundendatensätze zugreifen kann. Sie können beispielsweise alle E-Mail-Nachrichten anzeigen, die mit einem bestimmten Kontakt, einem Konto, einer Verkaufschance oder einem Falls verknüpft sind.
+<span data-ttu-id="014f6-p101">Ein nützlicher Vorteil von Microsoft Dynamics 365 besteht darin, dass die gesamte Kundenkommunikation an einem zentralen Ort gespeichert wird, damit jeder Benutzer mit den entsprechenden Berechtigungen auf alle relevanten Kundendatensätze zugreifen kann. Sie können beispielsweise alle E-Mail-Nachrichten anzeigen, die mit einem bestimmten Kontakt, einem Konto, einer Verkaufschance oder einem Falls verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="014f6-p101">A valuable use of Microsoft Dynamics 365 is to store all customer communications in one place, so anyone with the appropriate permissions can see all relevant customer records. For example, view all email associated with a particular contact, account, opportunity, or case.</span></span>
   
-Um E-Mail-Nachrichten und andere Messagingdatensätze in Dynamics 365 zu speichern, müssen Sie das E-Mail-System mit Dynamics 365 synchronisieren. Die serverseitige Synchronisierung ist die bevorzugte Methode für die E-Mail-Synchronisierung.
+<span data-ttu-id="014f6-p102">Um E-Mail-Nachrichten und andere Messagingdatensätze in Dynamics 365 zu speichern, müssen Sie das E-Mail-System mit Dynamics 365 synchronisieren. Die serverseitige Synchronisierung ist die bevorzugte Methode für die E-Mail-Synchronisierung.</span><span class="sxs-lookup"><span data-stu-id="014f6-p102">To store email and other messaging records in Dynamics 365, you need to synchronize your email system with Dynamics 365. Server-side synchronization is the method of choice for email synchronization.</span></span>
   
-Verwenden Sie diese Testumgebungsanleitung, um Exchange Online und den Outlook Online-Client für Dynamics 365 zu konfigurieren und zu demonstrieren, wie sie die in Dynamics 356 gespeicherten Informationen nutzen können. 
+<span data-ttu-id="014f6-109">Verwenden Sie diese Testumgebungsanleitung, um Exchange Online und den Outlook Online-Client für Dynamics 365 zu konfigurieren und zu demonstrieren, wie sie die in Dynamics 356 gespeicherten Informationen nutzen können.</span><span class="sxs-lookup"><span data-stu-id="014f6-109">Use this Test Lab Guide to configure and demonstrate how Exchange Online and the Outlook Online client can leverage the information stored in Dynamics 365.</span></span> 
   
-## <a name="phase-1-build-out-the-office-365-and-dynamics-365-devtest-environment"></a>Phase 1: Erstellen der Office 365- und Dynamics 365-Entwicklungs-/Testumgebung
+## <a name="phase-1-build-out-the-office-365-and-dynamics-365-devtest-environment"></a><span data-ttu-id="014f6-110">Phase 1: Erstellen der Office 365- und Dynamics 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="014f6-110">Phase 1: Build out the Office 365 and Dynamics 365 dev/test environment</span></span>
 
-Folgen Sie den Anweisungen in der Testumgebungsanleitung [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md) zum Erstellen einer einfachen oder simulierten Unternehmensversion einer Office 365- und Dynamics 365-Entwicklungs-/Testumgebung.
+<span data-ttu-id="014f6-111">Folgen Sie den Anweisungen in der Testumgebungsanleitung [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md) zum Erstellen einer einfachen oder simulierten Unternehmensversion einer Office 365- und Dynamics 365-Entwicklungs-/Testumgebung.</span><span class="sxs-lookup"><span data-stu-id="014f6-111">Use the instructions in [Office 365 and Dynamics 365 dev/test environment](office-365-and-dynamics-365-dev-test-environment.md) to create either a lightweight or simulated enterprise version of an Office 365 and Dynamics 365 dev/test environment.</span></span>
   
 > [!NOTE]
-> Für die Konfiguration in diesem Artikel ist keine simulierte Unternehmensentwicklungs-/-testumgebung erforderlich, die ein simuliertes Intranet, das mit dem Internet verbunden ist, und die Verzeichnissynchronisierung für eine Windows Server Active Directory-Gesamtstruktur (AD) umfasst. Dies wird hier als Option bereitgestellt, damit Sie mit Office 365 und Dynamics 365 in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
+> <span data-ttu-id="014f6-p103">Für die Konfiguration in diesem Artikel ist keine simulierte Unternehmensentwicklungs-/-testumgebung erforderlich, die ein simuliertes Intranet, das mit dem Internet verbunden ist, und die Verzeichnissynchronisierung für eine Windows Server Active Directory-Gesamtstruktur (AD) umfasst. Dies wird hier als Option bereitgestellt, damit Sie mit Office 365 und Dynamics 365 in einer Umgebung, die eine typische Organisation darstellt, experimentieren können.</span><span class="sxs-lookup"><span data-stu-id="014f6-p103">The configuration in this article does not require the simulated enterprise dev/test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Windows Server Active Directory (AD) forest. It is provided here as an option so that you can experiment with Office 365 and Dynamics 365 in an environment that represents a typical organization</span></span> 
   
-## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a>Phase 2: Konfigurieren und Demonstrieren der Exchange Online-Integration in Dynamics 365
+## <a name="phase-2-configure-and-demonstrate-dynamics-365-integration-in-exchange-online"></a><span data-ttu-id="014f6-114">Phase 2: Konfigurieren und Demonstrieren der Exchange Online-Integration in Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="014f6-114">Phase 2: Configure and demonstrate Dynamics 365 integration in Exchange Online</span></span>
 
-Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die Integration von Dynamics 365 und Exchange Online zu konfigurieren:
+<span data-ttu-id="014f6-115">Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die Integration von Dynamics 365 und Exchange Online zu konfigurieren:</span><span class="sxs-lookup"><span data-stu-id="014f6-115">Use these steps to configure the global administrator's mailbox for Dynamics 365 and Exchange Online integration:</span></span>
   
-1. Verwendung einer privaten Sitzung Ihres Browsers, wechseln Sie zu [http://portal.office.com](http://portal.office.com) und melden Sie sich mit Ihrem Office 365 globaler Administrator-Konto.
+1. <span data-ttu-id="014f6-116">Verwendung einer privaten Sitzung Ihres Browsers, wechseln Sie zu [http://portal.office.com](http://portal.office.com) und melden Sie sich mit Ihrem Office 365 globaler Administrator-Konto.</span><span class="sxs-lookup"><span data-stu-id="014f6-116">Using a private session of your browser, go to [http://portal.office.com](http://portal.office.com) and sign in using your Office 365 global administrator account.</span></span>
     
-2. Klicken Sie auf der **Microsoft Office-Homepage** auf die Kachel **E-Mail**.
+2. <span data-ttu-id="014f6-117">Klicken Sie auf der **Microsoft Office-Homepage** auf die Kachel **E-Mail**.</span><span class="sxs-lookup"><span data-stu-id="014f6-117">On the **Microsoft Office Home** page, click the **Mail** tile.</span></span>
     
-3. Klicken Sie auf der neuen Registerkarte **E-Mail** in Ihrem Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Fensters unterhalb des Felds zum Eingeben der Nachricht jetzt ein Symbol für „Meine Vorlagen" angezeigt wird.
+3. <span data-ttu-id="014f6-118">Klicken Sie auf der neuen Registerkarte **E-Mail** in Ihrem Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Fensters unterhalb des Felds zum Eingeben der Nachricht jetzt ein Symbol für „Meine Vorlagen" angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="014f6-118">On the new **Mail** tab in your browser, click **New** and notice how the bottom corner of the pane below the box for typing a message contains an icon for My Templates.</span></span>
     
      ![Leere neue E-Mail-Nachricht ohne Integration mit Dynamics 365](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
-4. Klicken Sie auf **verwerfen**, und lassen Sie die Registerkarte **E-Mail** geöffnet.
+4. <span data-ttu-id="014f6-120">Klicken Sie auf **verwerfen**, und lassen Sie die Registerkarte **E-Mail** geöffnet.</span><span class="sxs-lookup"><span data-stu-id="014f6-120">Click **Discard** and leave the **Mail** tab open.</span></span>
     
-5. Klicken Sie auf die Registerkarte **Microsoft Office Home** in Ihrem Browser, und klicken Sie dann auf die Kachel **Admin**.
+5. <span data-ttu-id="014f6-121">Klicken Sie auf die Registerkarte **Microsoft Office Home** in Ihrem Browser, und klicken Sie dann auf die Kachel **Admin**.</span><span class="sxs-lookup"><span data-stu-id="014f6-121">Click the **Microsoft Office Home** tab in your browser, and then click the **Admin** tile.</span></span>
     
-6. Klicken Sie im linken Navigationsbereich der Registerkarte **Office Admin Center** auf **Admin Center > Dynamics 365**.
+6. <span data-ttu-id="014f6-122">Klicken Sie im linken Navigationsbereich der Registerkarte **Office Admin Center** auf **Admin Center > Dynamics 365**.</span><span class="sxs-lookup"><span data-stu-id="014f6-122">In the left navigation of the **Office Admin center** tab, click **Admin centers > Dynamics 365**.</span></span>
     
-7. Klicken Sie auf der neuen Registerkarte **Dynamics 365** in Ihrem Browser in der Liste mit den Dynamics 365-Instanzen auf **Öffnen**.
+7. <span data-ttu-id="014f6-123">Klicken Sie auf der neuen Registerkarte **Dynamics 365** in Ihrem Browser in der Liste mit den Dynamics 365-Instanzen auf **Öffnen**.</span><span class="sxs-lookup"><span data-stu-id="014f6-123">On the new **Dynamics 365** tab in your browser, in the list of Dynamics 365 instances, click **Open**.</span></span>
     
-8. Klicken Sie auf der neuen Registerkarte **Administration** in Ihrem Browser auf der Navigationsleiste auf den Abwärtspfeil neben **Einstellungen**, und klicken Sie dann auf **E-Mail-Konfiguration** unter **System**.
+8. <span data-ttu-id="014f6-124">Klicken Sie auf der neuen Registerkarte **Administration** in Ihrem Browser auf der Navigationsleiste auf den Abwärtspfeil neben **Einstellungen**, und klicken Sie dann auf **E-Mail-Konfiguration** unter **System**.</span><span class="sxs-lookup"><span data-stu-id="014f6-124">On the new **Administration** tab in your browser, on the navigation bar, click the down arrow next to **Settings**, and then click **Email Configuration** under **System**.</span></span>
     
-9.  Klicken Sie auf der Seite **E-Mail-Konfiguration** auf **E-Mail-Konfigurationseinstellungen**.
+9.  <span data-ttu-id="014f6-125">Klicken Sie auf der Seite **E-Mail-Konfiguration** auf **E-Mail-Konfigurationseinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="014f6-125">On the **Email Configuration** page, click **Email Configuration Settings**.</span></span>
     
-10. Ändern Sie auf der Registerkarte **E-Mail** im Dialogfeld **Systemeinstellungen** die Option **Termine, Kontakte und Aufgaben** in **Serverseitige Synchronisierung**, und klicken Sie dann auf **OK**.
+10. <span data-ttu-id="014f6-126">Ändern Sie auf der Registerkarte **E-Mail** im Dialogfeld **Systemeinstellungen** die Option **Termine, Kontakte und Aufgaben** in **Serverseitige Synchronisierung**, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="014f6-126">In the **Email** tab on the **System Settings** dialog box, change **Appointments, Contacts, and Tasks** to **Server-Side Synchronization**, and then click **OK**.</span></span>
     
-11. Klicken Sie auf der Seite **E-Mail-Konfiguration** auf **Postfächer**.
+11. <span data-ttu-id="014f6-127">Klicken Sie auf der Seite **E-Mail-Konfiguration** auf **Postfächer**.</span><span class="sxs-lookup"><span data-stu-id="014f6-127">On the **Email Configuration** page, click **Mailboxes**.</span></span>
     
-12. Wählen Sie den Namen des globalen Administrator für Office 365 in der linken Spalte aus, klicken Sie in der Symbolleiste auf **Standard-E-Mail-Einstellungen anwenden**, und klicken Sie dann auf **OK**.
+12. <span data-ttu-id="014f6-128">Wählen Sie den Namen des globalen Administrator für Office 365 in der linken Spalte aus, klicken Sie in der Symbolleiste auf **Standard-E-Mail-Einstellungen anwenden**, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="014f6-128">Select the Office 365 global administrator name in the left check mark column, click **Apply Default Email Settings** in the tool bar, and then click **OK**.</span></span>
     
-13. Klicken Sie in der Symbolleiste auf **E-Mail genehmigen**, und klicken Sie dann auf **OK**.
+13. <span data-ttu-id="014f6-129">Klicken Sie in der Symbolleiste auf **E-Mail genehmigen**, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="014f6-129">Click **Approve Email** in the tool bar, and then click **OK**.</span></span>
     
-14. Wählen Sie den Namen der Office 365 globaler Administrator in der linken Häkchen Spalte aus, klicken Sie auf **Test &amp; Postfächer aktivieren** im Tool Balken, und klicken Sie dann auf **OK**.
+14. <span data-ttu-id="014f6-130">Wählen Sie den Namen der Office 365 globaler Administrator in der linken Häkchen Spalte aus, klicken Sie auf **Test &amp; Postfächer aktivieren** im Tool Balken, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="014f6-130">Select the Office 365 global administrator name in the left check mark column, click **Test &amp; Enable Mailboxes** in the tool bar, and then click **OK**.</span></span>
     
-15. Klicken Sie auf die geöffnete Registerkarte **E-Mail**, und überprüfen Sie, ob der globale Administrator eine Testnachricht erhalten hat.
+15. <span data-ttu-id="014f6-131">Klicken Sie auf die geöffnete Registerkarte **E-Mail**, und überprüfen Sie, ob der globale Administrator eine Testnachricht erhalten hat.</span><span class="sxs-lookup"><span data-stu-id="014f6-131">Click the open **Mail** tab and confirm that the global administrator received a test message.</span></span>
     
-16. Wechseln Sie im Browser zurück zur Registerkarte **Postfächer > Meine aktiven Postfächer**, und aktualisieren Sie die Seite. Die Spalten **Status eingehender E-Mails** und **Status ausgehender E-Mails** müssen für den Namen des globalen Administrators auf **Erfolgt** festgelegt sein. Beachten Sie, dass es bis zu 15 Minuten dauern kann, bis beide Tests durchgeführt sind.
+16. <span data-ttu-id="014f6-p104">Wechseln Sie im Browser zurück zur Registerkarte **Postfächer > Meine aktiven Postfächer**, und aktualisieren Sie die Seite. Die Spalten **Status eingehender E-Mails** und **Status ausgehender E-Mails** müssen für den Namen des globalen Administrators auf **Erfolgt** festgelegt sein. Beachten Sie, dass es bis zu 15 Minuten dauern kann, bis beide Tests durchgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="014f6-p104">Return to the **Mailboxes My Active Mailboxes** tab in your browser and refresh the page. The **Incoming Email Status** and **Outgoing Email Status** columns should be set to **Success** for the global administrator account name. Note that it can take up to 15 minutes to complete both tests.</span></span>
     
-Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren und die Funktionen von Dynamics 365 im Postfach des globalen Administrators zu demonstrieren:
+<span data-ttu-id="014f6-135">Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren und die Funktionen von Dynamics 365 im Postfach des globalen Administrators zu demonstrieren:</span><span class="sxs-lookup"><span data-stu-id="014f6-135">Use these steps to install the Dynamics 365 App for Outlook and demonstrate Dynamics 365 features within the global administrator's mailbox:</span></span>
   
-1. Klicken Sie in Ihrem Browser auf der Registerkarte **Postfächer > Meine aktiven Postfächer** auf den Abwärtspfeil neben **Einstellungen**, und klicken Sie dann auf **Dynamics 365-App für Outlook** unter **System**.
+1. <span data-ttu-id="014f6-136">Klicken Sie in Ihrem Browser auf der Registerkarte **Postfächer > Meine aktiven Postfächer** auf den Abwärtspfeil neben **Einstellungen**, und klicken Sie dann auf **Dynamics 365-App für Outlook** unter **System**.</span><span class="sxs-lookup"><span data-stu-id="014f6-136">On the **Mailboxes My Active Mailboxes** tab in your browser, click the down arrow next to **Settings**, and then click **Dynamics 365 App for Outlook** under **System**.</span></span>
     
-2. Klicken Sie auf der Seite **Erste Schritte mit der Microsoft Dynamics 365-App für Outlook** auf den Namen des globalen Administrators, und klicken Sie dann auf **App zu Outlook hinzufügen**. Die Spalte **Status** ändert sich in **Ausstehend**.
+2. <span data-ttu-id="014f6-p105">Klicken Sie auf der Seite **Erste Schritte mit der Microsoft Dynamics 365-App für Outlook** auf den Namen des globalen Administrators, und klicken Sie dann auf **App zu Outlook hinzufügen**. Die Spalte **Status** ändert sich in **Ausstehend**.</span><span class="sxs-lookup"><span data-stu-id="014f6-p105">On the **Getting Started with Microsoft Dynamics 365 App for Outlook** page, click the global administrator name, and then click **Add App to Outlook**. The **Status** column changes to **Pending**.</span></span>
     
-3. Aktualisieren Sie die Seite, bis der Status sich in **Zu Outlook hinzugefügt** geändert hat. Beachten Sie, dass es bis zu 15 Minuten dauern kann, bis diese Konfiguration durchgeführt ist.
+3. <span data-ttu-id="014f6-p106">Aktualisieren Sie die Seite, bis der Status sich in **Zu Outlook hinzugefügt** geändert hat. Beachten Sie, dass es bis zu 15 Minuten dauern kann, bis diese Konfiguration durchgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="014f6-p106">Refresh the page until the status changes to **Added to Outlook**. Note that it can take up to 15 minutes to complete this configuration.</span></span>
     
-4. Klicken Sie im Browser auf die Registerkarte **E-Mail**, und schließen Sie den Browser dann.
+4. <span data-ttu-id="014f6-141">Klicken Sie im Browser auf die Registerkarte **E-Mail**, und schließen Sie den Browser dann.</span><span class="sxs-lookup"><span data-stu-id="014f6-141">Click on the **Mail** tab in your browser and then close it.</span></span>
     
-5. Klicken Sie auf die Registerkarte **Microsoft Office Home** in Ihrem Browser, und klicken Sie dann auf die Kachel **E-Mail**.
+5. <span data-ttu-id="014f6-142">Klicken Sie auf die Registerkarte **Microsoft Office Home** in Ihrem Browser, und klicken Sie dann auf die Kachel **E-Mail**.</span><span class="sxs-lookup"><span data-stu-id="014f6-142">Click the **Microsoft Office Home** tab in your browser, and then click the **Mail** tile.</span></span>
     
-6. Klicken Sie auf der neuen Registerkarte **E-Mail** im Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Bereichs unterhalb des Felds für die Eingabe einer Nachricht nun ein Symbol für Dynamics 365 angezeigt wird.
+6. <span data-ttu-id="014f6-p107">Klicken Sie auf der neuen Registerkarte **E-Mail** im Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Bereichs unterhalb des Felds für die Eingabe einer Nachricht nun ein Symbol für Dynamics 365 angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="014f6-p107">On the new **Mail** tab in your browser, click **New**. Notice that the bottom corner of the pane below the box for typing a message now contains an icon for Dynamics 365.</span></span>
     
      ![Leere neue E-Mail-Nachricht bei Integration mit Dynamics 365 (neues Symbol sichtbar)](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
-7. Klicken Sie auf das Symbol für Dynamics 365. Es sollte ein **Dynamics 365**-Fenster angezeigt werden, in dem Sie diese E-Mail verfolgen oder auf Vorlagen, Vertriebsdokumentation oder Artikel zugreifen können.
+7. <span data-ttu-id="014f6-p108">Klicken Sie auf das Symbol für Dynamics 365. Es sollte ein **Dynamics 365**-Fenster angezeigt werden, in dem Sie diese E-Mail verfolgen oder auf Vorlagen, Vertriebsdokumentation oder Artikel zugreifen können.</span><span class="sxs-lookup"><span data-stu-id="014f6-p108">Click the Dynamics 365 icon. You should see a **Dynamics 365** pane, from which you can track this email or access templates, sales literature, or articles.</span></span>
     
-8. Geben Sie im Feld **An** der E-Mail-Nachricht **alex.y.wu@outlook.com** ein, und klicken Sie dann auf **Wiederholen** im Fenster **Dynamics 365**. Es sollte der Abschnitt **Empfänger** im Fenster **Dynamics 365** mit Informationen über Alex Wu angezeigt werden, der ein Kontakt in der Vertriebsanwendung ist, die in den Beispieldaten für das Testabonnement enthalten ist.
+8. <span data-ttu-id="014f6-p109">Geben Sie im Feld **An** der E-Mail-Nachricht **alex.y.wu@outlook.com** ein, und klicken Sie dann auf **Wiederholen** im Fenster **Dynamics 365**. Es sollte der Abschnitt **Empfänger** im Fenster **Dynamics 365** mit Informationen über Alex Wu angezeigt werden, der ein Kontakt in der Vertriebsanwendung ist, die in den Beispieldaten für das Testabonnement enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="014f6-p109">In the **To** field of the email message, type **alex.y.wu@outlook.com**, and then click **Retry** in the **Dynamics 365** pane. You should see a **Recipients** section in the **Dynamics 365** pane with information on Alex Wu, a contact from the sales application that was provided with the sample data for your trial subscription.</span></span>
     
      ![Dynamics 365-Informationsbereich für einen in Dynamics 365 gespeicherten Vertriebskontakt](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
-9. Klicken Sie auf **Verwerfen**.
+9. <span data-ttu-id="014f6-151">Klicken Sie auf **Verwerfen**.</span><span class="sxs-lookup"><span data-stu-id="014f6-151">Click **Discard**.</span></span>
 
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) für eine visuelle Darstellung aller die Artikel in einer Microsoft Cloud Test Lab Guide-Stapel.
+> <span data-ttu-id="014f6-152">Klicken Sie [hier](http://aka.ms/catlgstack) für eine visuelle Darstellung aller die Artikel in einer Microsoft Cloud Test Lab Guide-Stapel.</span><span class="sxs-lookup"><span data-stu-id="014f6-152">Click [here](http://aka.ms/catlgstack) for a visual map to all of the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a><span data-ttu-id="014f6-153">See Also</span><span class="sxs-lookup"><span data-stu-id="014f6-153">See Also</span></span>
 
-[Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
+[<span data-ttu-id="014f6-154">Office 365- und Dynamics 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="014f6-154">Office 365 and Dynamics 365 dev/test environment</span></span>](office-365-and-dynamics-365-dev-test-environment.md)
   
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="014f6-155">Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz</span><span class="sxs-lookup"><span data-stu-id="014f6-155">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[Basiskonfiguration der Entwicklungs-/Testumgebung](base-configuration-dev-test-environment.md)
+[<span data-ttu-id="014f6-156">Basiskonfiguration der Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="014f6-156">Base Configuration dev/test environment</span></span>](base-configuration-dev-test-environment.md)
   
-[Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
+[<span data-ttu-id="014f6-157">Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="014f6-157">Office 365 dev/test environment</span></span>](office-365-dev-test-environment.md)
   
-[DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="014f6-158">DirSync für die Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="014f6-158">DirSync for your Office 365 dev/test environment</span></span>](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Abonnement-Verwaltung für Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
+[<span data-ttu-id="014f6-159">Abonnement-Verwaltung für Dynamics 365 (online)</span><span class="sxs-lookup"><span data-stu-id="014f6-159">Subscription Management for Dynamics 365 (online)</span></span>](https://technet.microsoft.com/library/jj679903.aspx)
   
-[Verwalten von Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
+[<span data-ttu-id="014f6-160">Verwalten von Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="014f6-160">Administering Dynamics 365</span></span>](https://technet.microsoft.com/library/dn531101.aspx)
 
 
