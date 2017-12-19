@@ -18,7 +18,7 @@ ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Zusammenfassung: Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.'
 ms.openlocfilehash: 9ece0f2e09384c0b9e6d9042b899d782be6327b5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -44,7 +44,7 @@ Microsoft Hybrid Cloud besteht aus Geschäftsszenarien, in denen eine Microsoft-
   
 Abbildung 1 zeigt die Komponenten der Microsoft Hybrid Cloud, vom lokalen Netzwerk bis zum Satz aus Office 365-, Azure PaaS- und Azure IaaS-Diensten, die über das Internet oder eine ExpressRoute-Verbindung verfügbar sind.
   
-Da Microsoft die umfassendste auf dem Markt erhältliche Cloudlösung hat - einschließlich Software as a Service (SaaS), Platform as a Service (PaaS) und Infrastructure as a Service (IaaS) - haben Sie folgende Möglichkeiten:
+Da Microsoft die umfassendste auf dem Markt erhältliche Cloudlösung hat – einschließlich Software as a Service (SaaS), Platform as a Service (PaaS) und Infrastructure as a Service (IaaS) – haben Sie folgende Möglichkeiten:
   
 - Nutzen Ihrer vorhandenen lokalen Investitionen, wenn Sie Arbeitslasten und Anwendungen in die Cloud migrieren
     
@@ -86,7 +86,7 @@ Sie müssen die folgenden Elemente berücksichtigen, wenn Sie Hybridcloudszenari
     
     Verwaltung für Hybridcloudszenarien umfasst die Möglichkeit, Einstellungen, Daten, Konten, Richtlinien und Berechtigungen zu verwalten sowie den gegenwärtigen Status der Elemente aus dem Szenario und dessen Leistung zu überwachen. Sie können auch das gleiche Toolset, etwa Systems Management Server, für die Verwaltung von virtuellen Computern in Azure IaaS verwenden.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

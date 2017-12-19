@@ -16,7 +16,7 @@ ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: "Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können."
 ms.openlocfilehash: 69120d3237518be5d77716a106d2e75b64a4860e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,7 +32,7 @@ Nachfolgend finden Sie den Netzwerkpfad zur Microsoft-Cloud ohne ExpressRoute-Ve
   
 **Abbildung 1: Der Netzwerkpfad ohne ExpressRoute**
 
-![Abbildung 1: Der Netzwerkpfad ohne ExpressRoute](images/Network_Poster/ExpressRoute.png)
+![Abbildung 1: Der Netzwerkpfad ohne ExpressRoute](images/Network_Poster/ExpressRoute.png)
   
 Abbildung 1 zeigt den typischen Pfad zwischen einem lokalen Netzwerk und der Microsoft Cloud. Das lokale Netzwerk-Edge stellt über einen WAN-Link zu einem Internetdienstanbieter eine Verbindung zum Internet her. Der Datenverkehr bewegt dann sich über das Internet an den Rand der Microsoft Cloud. Cloud-Angebote innerhalb der Microsoft Cloud umfassen Office 365, Microsoft Azure, Microsoft Intune und Dynamics 365. Benutzer einer Organisation können sich im lokalen Netzwerk oder im Internet befinden.
   
@@ -163,7 +163,7 @@ Wenn der Proxyserver die IP-Adresse von SharePoint Online gefunden hat, wird der
   
 Abbildung 6 zeigt, wie der Datenverkehr zwischen dem Anwendungsserver und SharePoint Online in Office 365 über die private Peeringbeziehung vom Anwendungsserver an den Rand des lokalen Netzwerks und dann vom Rand über die Microsoft-Peeringbeziehung zu Office 365 fließt.
   
-Das Ergebnis ist das so genannte „Hair Pinning", eine Konsequenz des Routing- und Anwendungsverhaltens.
+Das Ergebnis ist das so genannte „Hair Pinning“, eine Konsequenz des Routing- und Anwendungsverhaltens.
   
 ## <a name="expressroute-and-microsofts-cloud-network"></a>ExpressRoute und Microsoft Cloud-Netzwerk
 
@@ -241,7 +241,7 @@ Weitere Informationen finden Sie unter:
     
 - [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune)
     
-- [Office 365-Leistungsverwaltung](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
+- [Office 365-Leistungsverwaltung](https://mva.microsoft.com/de-DE/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>ExpressRoute-Optionen
 
@@ -263,7 +263,7 @@ Weitere Informationen finden Sie in den folgenden Ressourcen:
     
 - [ExpressRoute für Azure](https://azure.microsoft.com/services/expressroute/)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   

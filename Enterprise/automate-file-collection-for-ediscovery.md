@@ -14,7 +14,7 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 description: "Zusammenfassung: Erfahren Sie, wie Sie die Dateisammlung von Benutzercomputern für eDiscovery automatisieren."
 ms.openlocfilehash: 2c2a3d5d217203bb608fcb48f9cc1da8d4b49213
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -106,15 +106,15 @@ Nachdem nun die Basiskonfiguration steht, können Sie mit der Konfiguration der 
     
   - **Leseberechtigungen**
     
-6. Testen Sie den Zugriff auf die Dateifreigabe „Cases$" folgendermaßen:
+6. Testen Sie den Zugriff auf die Dateifreigabe „Cases$“ folgendermaßen:
     
-1. Fügen Sie der Gruppe „Verwalter" einen Benutzer hinzu.
+1. Fügen Sie der Gruppe „Verwalter“ einen Benutzer hinzu.
     
-2. Platzieren Sie eine Datei im Ordner „Cases$".
+2. Platzieren Sie eine Datei im Ordner „Cases$“.
     
 3. Navigieren Sie als Benutzer zu dem Stagingserver, beispielsweise zur Freigabe \\\\Staging, um zu sehen, welche Freigaben verfügbar sind. Die Freigabe **Cases$** sollte nicht aufgeführt sein.
     
-4. Geben Sie manuell den vollständigen Pfad zu der Freigabe „Cases$" in Explorer ein. Dadurch sollte die Freigabe „Cases$" geöffnet werden.
+4. Geben Sie manuell den vollständigen Pfad zu der Freigabe „Cases$“ in Explorer ein. Dadurch sollte die Freigabe „Cases$“ geöffnet werden.
     
 5. Versuchen Sie, die Datei zu öffnen, die Sie zuvor in der Freigabe platziert haben. Dies sollte fehlschlagen.
     
@@ -264,7 +264,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. Speichern Sie das Skript unter CollectionScript.ps1 an einem für Sie leicht auffindbaren Speicherort, z. B. C:\\AFCScripts.
     
-3. Verwenden Sie die Funktion „Gehe zu..." in Editor, und nehmen Sie bei Bedarf die folgenden Änderungen vor:
+3. Verwenden Sie die Funktion „Gehe zu...“ in Editor, und nehmen Sie bei Bedarf die folgenden Änderungen vor:
     
 |**Zeilennummer**|**Zu änderndes Element**|**Erforderlich/optional**|
 |:-----|:-----|:-----|
@@ -272,7 +272,7 @@ Write-Host -ForegroundColor Cyan "Finished."
 |76 und 77  <br/> |Ändern Sie die Auslegung der **$CaseNo** -Variable entsprechend Ihren Anforderungen. Das Skript erfasst das aktuelle Datum und die aktuelle Uhrzeit und fügt den Benutzernamen an.<br/> |Optional  <br/> |
 |80  <br/> |Die **$CaseRootLocation** -Variable muss auf die Sammlungsdateifreigabe Ihrer Stagingserver festgelegt werden. Beispielsweise **\\\\Staging\\Cases$**.  <br/> |Erforderlich  <br/> |
    
-4. Platzieren Sie die Datei „CollectionScript.ps1" in die Netlogon-Dateifreigabe auf einem Domänencontroller. 
+4. Platzieren Sie die Datei „CollectionScript.ps1“ in die Netlogon-Dateifreigabe auf einem Domänencontroller. 
     
 ### <a name="configure-gpo-for-the-logon-script-and-custodians-group"></a>Konfigurieren des Gruppenrichtlinienobjekts für das Anmeldeskript und die Verwaltergruppe
 
@@ -322,7 +322,7 @@ $AllFiles | ForEach-Object {
 
 2. Speichern Sie das Skript unter PSTImportScript.ps1 an einem für Sie leicht auffindbaren Speicherort. Erstellen Sie beispielsweise der Einfachheit halber einen Ordner auf Ihrem Stagingserver mit dem Namen\\\\Staging\\AFCScripts, und speichern Sie es dort.
     
-3. Verwenden Sie die Funktion „Gehe zu..." in Editor, und nehmen Sie bei Bedarf die folgenden Änderungen vor:
+3. Verwenden Sie die Funktion „Gehe zu...“ in Editor, und nehmen Sie bei Bedarf die folgenden Änderungen vor:
     
 |**Zeilennummer**|**Zu änderndes Element**|**Erforderlich/optional**|
 |:-----|:-----|:-----|
@@ -371,7 +371,7 @@ $AllFiles | ForEach-Object {
     
 7. Stellen Sie das Runbook **MoveToColdStorage** anhand der Verfahren unter[Bereitstellen von Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615120) bereit.
     
-### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Lokale SharePoint-Suche für Cold Storage
+### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Lokale SharePoint-Suche für Cold Storage
 
 1. Erstellen Sie eine neue Inhaltsquelle in Ihrer SharePoint 2013-Farm für die Cold Storage-Freigabe in Azure, z. B. \\\\AZFile1\\ContentColdStorage. Weitere Informationen zum Verwalten von Inhaltsquellen finden Sie unter [Hinzufügen, Bearbeiten oder Löschen einer Inhaltsquelle in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004).
     
@@ -387,7 +387,7 @@ Es gibt fünf wichtige Schritte bei der Verwendung dieser Lösung, vorausgesetzt
     
 3. Verwalten des PST-Importvorgangs.
     
-4. Verschieben der Sammlungsdateien in Cold Storage.
+4. Verschieben der Sammlungsdateien in Cold Storage.
     
 Alle anderen Schritte sind nicht spezifisch für diese Lösung. Sie sind standardmäßige administrative Aufgaben, die Sie für SharePoint 2013, Office 365 und Azure ausführen. Es gibt Elemente, für die diese Lösung keine Anleitung bietet und die Sie basierend auf den Anforderungen Ihres Unternehmens ausarbeiten müssen. Dazu gehören Folgende:
   
@@ -395,7 +395,7 @@ Alle anderen Schritte sind nicht spezifisch für diese Lösung. Sie sind standar
     
 2. Nachverfolgen, welche Gruppen von Dateisammlungen welchem eDiscovery-Fall zugeordnet sind.
     
-3. Koordinieren des Timings des Imports und der Schritte für das Verschieben in Cold Storage.
+3. Koordinieren des Timings des Imports und der Schritte für das Verschieben in Cold Storage.
     
 4. Verwalten des in Azure verbrauchten Dateispeicherplatzes.
     
@@ -436,7 +436,7 @@ Alle anderen Schritte sind nicht spezifisch für diese Lösung. Sie sind standar
 
 - Um die gesammelten PST-Dateien in Exchange Online zu platzieren, befolgen Sie die Verfahren im Abschnitt „Importieren von Dateien in Office 365 über den Netzwerkupload" unter [Office 365-Importdienst](https://go.microsoft.com/fwlink/p/?LinkId=614938).
     
-### <a name="move-to-cold-storage"></a>Verschieben in Cold Storage
+### <a name="move-to-cold-storage"></a>Verschieben in Cold Storage
 
 1. Führen Sie das Runbook **MoveToColdStorage** anhand der Verfahren unter[Bereitstellen von Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615123) aus.
     

@@ -16,7 +16,7 @@ ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Zusammenfassung: Informationen zu gemeinsamen Elementen der Netzwerkinfrastruktur und zu Vorbereitungen des Netzwerks.'
 ms.openlocfilehash: 27a83217e94d6a0f882825c57346b58ea1834443
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -24,7 +24,7 @@ ms.lasthandoff: 12/15/2017
 
  **Zusammenfassung:** Informationen zu gemeinsamen Elementen der Netzwerkinfrastruktur und zu Vorbereitungen des Netzwerks.
   
-Die Integration Ihres Netzwerks in die Microsoft-Cloud bietet optimalen Zugriff auf eine Vielzahl von Diensten.
+Die Integration Ihres Netzwerk in die Microsoft-Cloud bietet optimalen Zugriff auf eine Vielzahl von Diensten.
   
 ## <a name="steps-to-prepare-your-network-for-microsoft-cloud-services"></a>Schritte zum Vorbereiten Ihres Netzwerks für Microsoft Cloud-Dienste
 <a name="steps"> </a>
@@ -50,7 +50,7 @@ Verwenden Sie Ihre vorhandene Internetpipe oder eine ExpressRoute-Verbindung mit
   
 **Abbildung 1: Optionen für Microsoft-Cloudkonnektivität**
 
-![Abbildung 1:  Optionen für Microsoft-Cloudkonnektivität](images/Network_Poster/CommonElements.png)
+![Abbildung 1:  Optionen für Microsoft-Cloudkonnektivität](images/Network_Poster/CommonElements.png)
 
   
 In Abbildung 1 wird gezeigt, wie ein lokales Netzwerk mithilfe der vorhandenen Internetpipe oder ExpressRoute mit Microsoft-Cloudangeboten verbunden werden kann. Die Internetpipe stellt ein Umkreisnetzwerk dar und kann die folgenden Komponenten aufweisen:
@@ -78,7 +78,7 @@ Sie müssen diese Netzwerkbereiche berücksichtigen, wenn Sie einen der Clouddie
     
 - **Internet-DNS:** A-, AAAA-, CNAME-, MX-, PTR- und andere Datensätze, um die Microsoft-Cloud oder die in der Cloud gehosteten Dienste zu suchen. Beispielsweise benötigen Sie möglicherweise einen CNAME-Eintrag für Ihre in Azure PaaS gehostete App.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 <a name="steps"> </a>
 

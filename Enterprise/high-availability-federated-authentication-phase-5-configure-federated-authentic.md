@@ -19,7 +19,7 @@ ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure."
 ms.openlocfilehash: 8340058dc93389d4b2b1e843726bc7e8ef30cdde
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -37,7 +37,7 @@ Rufen Sie ein digitales Zertifikat von einer öffentlichen Zertifizierungsstelle
   
 - Ein X.509-Zertifikat, das zum Erstellen von SSL-Verbindungen geeignet ist.
     
-- Die erweiterte Eigenschaft „Alternativer Antragstellername (SAN)" ist auf den FQDN des Verbunddiensts festgelegt (z. B. „fs.contoso.com")
+- Die erweiterte Eigenschaft „Alternativer Antragstellername (SAN)“ ist auf den FQDN des Verbunddiensts festgelegt (z. B. „fs.contoso.com“)
     
 - Das Zertifikat muss über den privaten Schlüssel verfügen und im PFX-Format gespeichert sein.
     
@@ -143,7 +143,7 @@ Nachfolgend sehen Sie die finale Konfiguration mit Platzhalternamen für die Ser
   
 Die Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit für Office 365 in Azure ist abgeschlossen
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

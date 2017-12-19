@@ -19,7 +19,7 @@ ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: "Zusammenfassung: Informationen zu Verwendungszwecken für isolierte SharePoint Online-Teamwebsites."
 ms.openlocfilehash: 3de60bb19498d9f84c18e51181a3fedda9846bdf
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -53,7 +53,7 @@ Eine isolierte Website kann mit anderen Features wie z. B. den folgenden verwend
   
 - Information Rights Management, um sicherzustellen, dass die Ressourcen auf der Website verschlüsselt bleiben, auch wenn sie lokal heruntergeladen und auf eine andere Website hochgeladen werden, die der gesamten Organisation zur Verfügung steht.
     
-- Verhinderung von Datenverlust, um Benutzer daran zu hindern, die Ressourcen der Website (z. B. Dateien) per E-Mail zu senden.
+- Verhinderung von Datenverlust, um Benutzer daran zu hindern, die Ressourcen der Website (z. B. Dateien) per E-Mail zu senden.
     
 ## <a name="next-steps"></a>Nächste Schritte
 
@@ -61,7 +61,7 @@ Wenn Sie eine isolierte SharePoint Online-Teamwebsite in einem Testabonnement au
   
 Wenn Sie eine isolierte SharePoint Online-Teamwebsite in der Produktion bereitstellen möchten, lesen Sie die schrittweisen Überlegungen zum Entwurf unter [Entwerfen einer isolierten SharePoint Online-Teamwebsite](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Entwerfen einer isolierten SharePoint Online-Teamwebsite](design-an-isolated-sharepoint-online-team-site.md)
   

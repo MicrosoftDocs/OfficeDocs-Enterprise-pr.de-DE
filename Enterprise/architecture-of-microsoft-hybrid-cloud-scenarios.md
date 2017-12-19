@@ -18,7 +18,7 @@ ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: "Zusammenfassung: Informationen über die Architektur von Microsoft-Hybridcloudangeboten."
 ms.openlocfilehash: 0909964421cecec455ed3c45c965a330501d361c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -64,7 +64,7 @@ Viele Unternehmen, so auch Microsoft, verwenden eine dreiphasige Herangehensweis
     
     Für Aufnehmen-und-Verlagern- sowie Erstellen-in-der-Cloud-Szenarien bieten serverbasierte Anwendungen, die auf virtuellen Azure-Computern ausgeführt werden, einfache Bereitstellung und Skalierung.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

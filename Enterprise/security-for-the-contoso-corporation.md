@@ -16,7 +16,7 @@ ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "Zusammenfassung: Erfahren Sie, wie Contoso seine Sicherheitsanforderungen bestimmten Features in den Cloudangeboten von Microsoft zuordnete und einen Weg zur Bereitschaft für Cloudsicherheit ermittelte."
 ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,22 +29,30 @@ Contoso nimmt die Sicherheit und den Schutz seiner Informationen sehr ernst. Fü
 ## <a name="contosos-security-requirements-in-the-cloud"></a>Contosos Sicherheitsanforderungen in der Cloud
 
 Nachfolgend finden Sie die Sicherheitsanforderungen von Contoso in der Cloud:
+
   
 - Strenge Authentifizierung bei Cloudressourcen
+
     
     Zugriff auf Cloudressourcen muss authentifiziert werden, und dafür sollte nach Möglichkeit mehrstufige Authentifizierung verwendet werden.
+
     
 - Verschlüsselung für Datenverkehr über das Internet
+
     
     Daten, die über das Internet gesendet werden, dürfen nicht das Nur-Text-Format aufweisen. Verwenden Sie immer HTTPS-Verbindungen, IPsec oder andere End-to-End-Datenverschlüsselungsmethoden.
     
 - Verschlüsselung für Daten, die in der Cloud gespeichert sind
+
     
     Alle Daten, die auf Datenträgern oder an anderer Stelle in der Cloud gespeichert sind, müssen in verschlüsselter Form vorliegen.
+
     
 - Zugriffssteuerungslisten für Zugriff mit geringsten Rechten
+
     
     Kontoberechtigungen für Zugriff auf Ressourcen in der Cloud und die zugehörigen Ausführungsrechte müssen den Richtlinien der geringsten Rechte entsprechen.
+
     
 ## <a name="contosos-data-sensitivity-classification"></a>Contosos Klassifizierung der Vertraulichkeit von Daten
 
@@ -52,7 +60,10 @@ Anhand der Informationen aus Microsofts Data Classification Toolkit (Toolkit zur
   
 |**Stufe 1: Geringer Geschäftswert**|**Stufe 2: Mittlerer Geschäftswert**|**Stufe 3: Hoher Geschäftswert**|
 |:-----|:-----|:-----|
-|Daten sind verschlüsselt und nur für authentifizierte Benutzer verfügbar  <br/> Dies gilt für alle Daten, die lokal und in cloudbasierten Speichern und Arbeitslasten gespeichert sind, z. B. Office 365. Daten werden verschlüsselt, während sie sich im Dienst und im Übergang zwischen dem Dienst und Clientgeräten befinden.  <br/> Beispiele für die Daten der Stufe 1 sind normale Geschäftskommunikation (E-Mail) und Dateien für Mitarbeiter in der Verwaltung, im Vertrieb oder im Kundendienst.  <br/> |Stufe 1 plus strenger Authentifizierung und Schutz vor Datenverlust  <br/> Eine starke Authentifizierung umfasst eine mehrstufige Authentifizierung mit SMS-Validierung. Durch eine Verhinderung von Datenverlust wird sichergestellt, dass vertrauliche oder kritische Informationen das lokale Netzwerk nicht verlassen.  <br/> Beispiele für Daten der Stufe 2 sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte.  <br/> |Stufe 2 plus höchstmöglicher Verschlüsselung, Authentifizierung und Überwachung  <br/> Die höchstmögliche, den regionalen Regelungen entsprechende Verschlüsselung für gespeicherte Daten oder Daten in der Cloud kombiniert mit mehrstufiger Authentifizierung über Smartcards und präzise Überwachung und Benachrichtigung.  <br/> Beispiele für Daten der Stufe 3 sind personenbezogene Kunden- und Partnerdaten sowie technische Produktspezifikationen und proprietäre Fertigungsverfahren.  <br/> |
+|Daten sind verschlüsselt und nur für authentifizierte Benutzer verfügbar  <br/> Dies gilt für alle Daten, die lokal und in cloudbasierten Speichern und Arbeitslasten gespeichert sind, z. B. Office 365. Daten werden verschlüsselt, während sie sich im Dienst und im Übergang zwischen dem Dienst und Clientgeräten befinden.  <br/> Beispiele für die Daten der Stufe 1 sind normale Geschäftskommunikation (E-Mail) und Dateien für Mitarbeiter in der Verwaltung, im Vertrieb oder im Kundendienst.
+  <br/> |Stufe 1 plus strenger Authentifizierung und Schutz vor Datenverlust  <br/> Eine starke Authentifizierung umfasst eine mehrstufige Authentifizierung mit SMS-Validierung. Durch eine Verhinderung von Datenverlust wird sichergestellt, dass vertrauliche oder kritische Informationen das lokale Netzwerk nicht verlassen.  <br/> Beispiele für Daten der Stufe 2 sind Finanz- und rechtliche Informationen sowie Forschungs- und Entwicklungsdaten für neue Produkte.
+  <br/> |Stufe 2 plus höchstmöglicher Verschlüsselung, Authentifizierung und Überwachung  <br/> Die höchstmögliche, den regionalen Regelungen entsprechende Verschlüsselung für gespeicherte Daten oder Daten in der Cloud kombiniert mit mehrstufiger Authentifizierung über Smartcards und präzise Überwachung und Benachrichtigung.  <br/> Beispiele für Daten der Stufe 3 sind personenbezogene Kunden- und Partnerdaten sowie technische Produktspezifikationen und proprietäre Fertigungsverfahren.
+  <br/> |
    
 ## <a name="mapping-microsoft-cloud-offerings-and-features-to-contosos-data-levels"></a>Zuordnung von Microsoft-Cloudangeboten und -Features zu Contosos Datenstufen
 
@@ -60,19 +71,38 @@ Die folgende Tabelle zeigt die Zuordnung der Datenstufen von Contoso zu Features
   
 ||**SaaS**|**Azure PaaS**|**Azure IaaS**|
 |:-----|:-----|:-----|:-----|
-|Stufe 1: Geringer Geschäftswert  <br/> | HTTPS für alle Verbindungen <br/>  Verschlüsselung im Ruhezustand <br/> | Nur HTTPS-Verbindungen zulässig <br/>  Dateien verschlüsseln, die in Azure gespeichert sind <br/> | HTTPS oder IPsec für Serverzugriff erfordern <br/>  Azure Disk Encryption <br/> |
-|Stufe 2: Mittlerer Geschäftswert  <br/> | Mehrstufige Azure AD-Authentifizierung (MFA) mit SMS <br/> | Azure Key Vault für Verschlüsselungsschlüssel verwenden <br/>  Azure AD-MFA mit SMS <br/> | MFA (Multi-Factor Authentication) mit SMS <br/> |
-|Stufe 3: Hoher Geschäftswert  <br/> | Azure RMS (Rights Management Service) <br/>  Azure AD-MFA mit Smartcards <br/>  Bedingter Intune-Zugriff <br/> | Azure RMS <br/>  Azure AD-MFA mit Smartcards <br/> | MFA mit Smartcards <br/> |
+|Stufe 1: Geringer Geschäftswert
+  <br/> | HTTPS für alle Verbindungen <br/>  Verschlüsselung im Ruhezustand <br/> | Nur HTTPS-Verbindungen zulässig <br/>  Dateien verschlüsseln, die in Azure gespeichert sind
+ <br/> | HTTPS oder IPsec für Serverzugriff erfordern <br/>  Azure Disk Encryption
+ <br/> |
+|Stufe 2: Mittlerer Geschäftswert
+  <br/> | Mehrstufige Azure AD-Authentifizierung (MFA) mit SMS
+ <br/> | Azure Key Vault für Verschlüsselungsschlüssel verwenden <br/>  Azure AD-MFA mit SMS
+ <br/> | MFA (Multi-Factor Authentication) mit SMS
+ <br/> |
+|Stufe 3: Hoher Geschäftswert
+  <br/> | Azure RMS (Rights Management Service) <br/>  Azure AD-MFA mit Smartcards <br/>  Bedingter Intune-Zugriff
+ <br/> | Azure RMS <br/>  Azure AD-MFA mit Smartcards <br/> | MFA mit Smartcards
+ <br/> |
    
 ## <a name="contosos-information-policies"></a>Contosos Datenrichtlinien
 
 In der folgenden Tabelle sind die Informationsrichtlinien von Contoso aufgeführt.
   
-||**Zugriff**|**Datenaufbewahrung**|**Schutz von Daten**|
+||**Access**|**Datenaufbewahrung**|**Schutz von Daten**|
 |:-----|:-----|:-----|:-----|
-|Stufe 1: Geringer Geschäftswert  <br/> | Zugriff auf alles zulassen <br/> |6 Monate  <br/> |Verschlüsselung verwenden  <br/> |
-|Stufe 2: Mittlerer Geschäftswert  <br/> | Zugriff für Mitarbeiter, Subunternehmer und Partner von Contoso zulassen <br/>  MFA, TLS und MAM verwenden <br/> |2 Jahre  <br/> |Hashwerte für Datenintegrität verwenden  <br/> |
-|Stufe 3: Hoher Geschäftswert  <br/> | Zugriff für Manager und Führungskräfte in Technik und Fertigung zulassen <br/>  RMS nur mit verwalteten Netzwerkgeräten <br/> |7 Jahre  <br/> |Digitale Signaturen für Nachweisbarkeit (Unleugbarkeit) verwenden  <br/> |
+|Stufe 1: Geringer Geschäftswert
+  <br/> | Zugriff auf alles zulassen
+ <br/> |6 Monate  <br/> |Verschlüsselung verwenden  <br/> |
+|Stufe 2: Mittlerer Geschäftswert
+  <br/> | Zugriff für Mitarbeiter, Subunternehmer und Partner von Contoso zulassen <br/>  MFA, TLS und MAM verwenden
+ <br/> |2 Jahre  <br/> |Hashwerte für Datenintegrität verwenden
+  <br/> |
+|Stufe 3: Hoher Geschäftswert
+  <br/> | Zugriff für Manager und Führungskräfte in Technik und Fertigung zulassen <br/>  RMS nur mit verwalteten Netzwerkgeräten
+ <br/> |7 Jahre
+  <br/> |Digitale Signaturen für Nachweisbarkeit (Unleugbarkeit) verwenden
+  <br/> |
    
 ## <a name="contosos-path-to-cloud-security-readiness"></a>Contosos Weg zur Cloudsicherheit
 
@@ -81,6 +111,7 @@ Contoso verwendet die folgenden Schritte, um seine Sicherheit für die Microsoft
 1. Optimieren der Administratorkonten für die Cloud
     
     Bei Contoso wurde eine umfassende Überprüfung der vorhandenen Windows Server AD-Administratorkonten vorgenommen und eine Reihe von Cloud-Administratorkonten und -gruppen eingerichtet.
+
     
 2. Ausführen der Analyse für Datenklassifizierung in drei Stufen
     
@@ -89,6 +120,7 @@ Contoso verwendet die folgenden Schritte, um seine Sicherheit für die Microsoft
 3. Bestimmen von Zugriffs-, Aufbewahrungs- und Datensicherungsrichtlinien für Datenstufen
     
     Auf Basis der Datenstufen hat Contoso ausführliche Anforderungen festgelegt, die dazu verwendet werden, zukünftige IT-Arbeitslasten zu qualifizieren, die in die Cloud verschoben werden.
+
     
 ## <a name="contosos-use-of-office-365-security-best-practices"></a>Verwenden von bewährten Methoden für die Sicherheit in Office 365 bei Contoso
 
@@ -134,7 +166,7 @@ Gemäß den bewährten Methoden für die Sicherheit in Office 365 haben Sicherhe
     
     Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

@@ -16,7 +16,7 @@ ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Zusammenfassung: In diesem Artikel erfahren Sie, wie Contoso eine SQL Server Stretch-Datenbank implementiert hat, um seinen Bedarf an lokalem Datenspeicher sowie seine täglichen laufenden Kosten zu reduzieren."
 ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,9 +30,9 @@ Contoso erkannte die geschäftliche Notwendigkeit einer Konsolidierung seiner Re
   
 **Abbildung 1: SQL Server Stretch-Datenbank**
 
-![SQL Server Stretch-Datenbank als Hybriddatenlösung](images/Contoso_Poster/StretchDB01.png)
+![SQL Server Stretch-Datenbank als Hybriddatenlösung](images/Contoso_Poster/StretchDB01.png)
   
-Abbildung 1 zeigt, wie ein SQL-Client T-SQL-Abfragen an einen Server sendet, auf dem SQL Server 2016 ausgeführt wird. Dieser Server leitet die Abfragen anschließend an eine Azure SQL Stretch-Datenbank in Azure-PaaS weiter.
+Abbildung 1 zeigt, wie ein SQL-Client T-SQL-Abfragen an einen Server sendet, auf dem SQL Server 2016 ausgeführt wird. Dieser Server leitet die Abfragen anschließend an eine Azure SQL Stretch-Datenbank in Azure-PaaS weiter.
   
 Weitere Informationen finden Sie unter [Stretch-Datenbank](https://msdn.microsoft.com/library/dn935011.aspx).
   
@@ -44,32 +44,32 @@ Zur Verschiebung der historischen Daten in die Cloud ging Contoso wie folgt vor:
     
 2. Upgrade
     
-    Contoso aktualisierte die SQL-Server im Rechenzentrum seines Pariser Hauptsitzes auf SQL Server 2016.
+    Contoso aktualisierte die SQL-Server im Rechenzentrum seines Pariser Hauptsitzes auf SQL Server 2016.
     
 3. Migration kalter Daten in die Cloud
     
     Contoso identifizierte mithilfe von SQL Management Studio alle Datenbanken, die auf die Stretch-Datenbank ausgeweitet werden sollten, sowie alle Tabellen, die zu Instanzen der Stretch-Datenbank in Azure migriert werden sollten. Anschließend verschob SQL Server2016 die historischen Daten im Hintergrund nach und nach in die Stretch-Datenbanken in Azure.
     
-Unten sehen Sie die finale Konfiguration für einen einzelnen Server im Pariser Hauptsitz, auf dem SQL Server 2016 ausgeführt wird.
+Unten sehen Sie die finale Konfiguration für einen einzelnen Server im Pariser Hauptsitz, auf dem SQL Server 2016 ausgeführt wird.
   
 **Abbildung 2: Implementierung einer Stretch-Datenbank für einen Server im Contoso-Rechenzentrum**
 
-![Contoso-Konfiguration: SQL Server Stretch-Datenbank für einen einzelnen Computer, auf dem SQL Server ausgeführt wird](images/Contoso_Poster/StretchDB02.png)
+![Contoso-Konfiguration: SQL Server Stretch-Datenbank für einen einzelnen Computer, auf dem SQL Server ausgeführt wird](images/Contoso_Poster/StretchDB02.png)
 
   
-Abbildung 2 zeigt, wie Benutzerabfragen an einen Anwendungsserver im Contoso-Rechenzentrum in SQL-Abfragen umgewandelt und an eine Azure SQL Stretch-Datenbank in Azure-PaaS weitergeleitet werden.
+Abbildung 2 zeigt, wie Benutzerabfragen an einen Anwendungsserver im Contoso-Rechenzentrum in SQL-Abfragen umgewandelt und an eine Azure SQL Stretch-Datenbank in Azure-PaaS weitergeleitet werden.
   
 Die Benutzer greifen über die bereits vorhandenen Apps und Abfragen auf die Daten zu. Alle Zugriffsrichtlinien bleiben unverändert. Bandsicherungen wird Contoso zukünftig nicht mehr durchführen müssen. Der Wartungsprozess besteht aus der Sicherung der heißen Daten und, wenn nötig, deren Wiederherstellung.
   
 Die Vorteile für Contoso nach der Implementierung einer Stretch-Datenbank:
   
-- Reduzierung des Bedarfs an lokalem Datenspeicher um 85 %
+- Reduzierung des Bedarfs an lokalem Datenspeicher um 85 %
     
 - Wegfall der Notwendigkeit für eine Aktualisierung des Unternehmensspeichersystems sowie für eine Archivierung auf magnetischen Bändern
     
 - Reduzierung der täglichen laufenden Kosten in signifikantem Umfang
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Enterprise-Szenarien für die Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   

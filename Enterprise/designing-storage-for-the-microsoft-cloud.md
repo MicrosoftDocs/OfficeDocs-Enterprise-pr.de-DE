@@ -18,7 +18,7 @@ ms.assetid: 7e511118-1b75-413a-b959-ad0d3ffc9516
 description: "Zusammenfassung: Erfahren Sie, warum Sie Cloudspeicher benötigen, und lernen Sie die Cloudspeicheroptionen von Microsoft und die wichtigsten Speicherszenarios kennen."
 ms.openlocfilehash: 3501f6a39498276d02fe4178f701a06dfb6a3e93
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -118,7 +118,7 @@ Verwenden Sie diese Speicherbausteine in Kombination mit Codeerstellung, um von 
     
 Details zu den einzelnen Cloudspeicheroptionen finden Sie unter [Von Grund auf neu aufgebaut](build-from-the-ground-up.md).
   
-## <a name="key-storage-scenarios"></a>Die wichtigsten Speicherszenarios
+## <a name="key-storage-scenarios"></a>Grundlegende Speicherszenarien
 
 Dies sind die wichtigen Szenarios, die cloudbasierten Speicher benötigen:
   
@@ -142,7 +142,7 @@ Dies sind die wichtigen Szenarios, die cloudbasierten Speicher benötigen:
     
     Speichern Sie Kopien von internen oder externen Daten an mehreren Cloudspeicherorten.
     
-- Veröffentlichen von Unternehmenskommunikation
+- Veröffentlichen von  Unternehmenskommunikation
     
     Erstellen Sie einen zentralen Ort für die Veröffentlichung von internen oder externen Nachrichten.
     
@@ -158,7 +158,7 @@ Dies sind die wichtigen Szenarios, die cloudbasierten Speicher benötigen:
 
 Sehen Sie sich die Cloudspeicheroptionen vom Typ „[Schlüsselfertig](move-in-ready.md)" an.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloud-Speicher für Enterprise-Architekten](microsoft-cloud-storage-for-enterprise-architects.md)
   

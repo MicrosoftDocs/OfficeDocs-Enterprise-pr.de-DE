@@ -19,7 +19,7 @@ ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Advanced Threat Protection in der Office 365-Entwicklungs-/Testumgebung'
 ms.openlocfilehash: 00b1fc8fea930346f082d3d2302a14dea7ad4309
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -31,7 +31,7 @@ Office 365 Advanced Threat Protection (ATP) ist ein Feature von Exchange Online 
   
 Mit den Anweisungen in diesem Artikel konfigurieren und testen Sie ATP in Ihrem Office 365-Testabonnement.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
 Wenn Sie ATP nur auf einfache Weise mit den Mindestanforderungen testen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 von [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md).
   
@@ -158,7 +158,7 @@ Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

@@ -1,7 +1,7 @@
 ---
-title: SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure
+title: "SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,13 +16,13 @@ ms.custom:
 - Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung."
-ms.openlocfilehash: 79469b862dbc18a34b09d638879e199869de880a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
-# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure
+# <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 
  **Zusammenfassung:** Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.
   
@@ -191,9 +191,9 @@ Inhalt dieses Diagramms:
   
 - Es sind zwei Umgebungen nebeneinander dargestellt: die lokale SharePoint-Farm und die betriebsbereite Standby-Farm in Azure.
     
-- Jede Umgebung enthält eine Dateifreigabe.
+- Jede Umgebung umfasst eine Dateifreigabe.
     
-- Jede Farm hat vier Ebenen. Um Hochverfügbarkeit zu erreichen, enthält jede Ebene zwei Server oder virtuelle Computer, die für eine bestimmte Rolle, z. B. Front-End-Dienste, verteilter Cache, Back-End-Dienste und Datenbanken, identisch konfiguriert sind. Es ist nicht wichtig, in dieser Abbildung bestimmte Komponenten hervorzuheben. Die beiden Farmen sind identisch konfiguriert.
+- Jede Farm hat vier Ebenen. Um Hochverfügbarkeit zu erreichen, enthält jede Ebene zwei Server oder virtuelle Computer, die für eine bestimmte Rolle, z. B. Front-End-Dienste, verteilter Cache, Back-End-Dienste und Datenbanken, identisch konfiguriert sind. Es ist nicht wichtig, in dieser Abbildung bestimmte Komponenten hervorzuheben. Die beiden Farmen sind identisch konfiguriert.
     
 - Die vierte Ebene ist die Datenbankebene. Der Protokollversand dient zum Kopieren von Protokollen vom sekundären Datenbankserver, der sich in der lokale Umgebung befindet, in die Dateifreigabe in derselben Umgebung.
     
@@ -276,7 +276,7 @@ Zur Unterstützung des Protokollversands in eine Lösung für die Notfallwiederh
 
 ![Zeigt eine Dateifreigabe-VM, die demselben Clouddienst hinzugefügt wurde, der die SharePoint-Datenbankserverrollen enthält.](images/AZenv_FSforDFSRandWSFC.png)
   
-In diesem Diagramm wird ein virtueller Computer mit einer Dateifreigabe demselben Subnetz in Azure hinzugefügt, das die Datenbankserverrollen enthält. Fügen Sie den virtuellen Computer mit der Dateifreigabe keinem Verfügbarkeitssatz mit anderen Serverrollen hinzu, z. B. den SQL Server-Rollen.
+In diesem Diagramm wird ein virtueller Computer mit einer Dateifreigabe demselben Subnetz in Azure hinzugefügt, das die Datenbankserverrollen enthält. Fügen Sie den virtuellen Computer mit der Dateifreigabe keinem Verfügbarkeitssatz mit anderen Serverrollen hinzu, z. B. den SQL Server-Rollen.
   
 Wenn Sie um die Hochverfügbarkeit der Protokolle besorgt sind, erwägen Sie eine andere Herangehensweise mit [SQL Server-Sicherung und -Wiederherstellung mit dem Azure-BLOB-Speicherdienst](https://go.microsoft.com/fwlink/p/?LinkId=393113). Dies ist ein neues Feature in Azure, das Protokolle direkt in der BLOB-Speicher-URL speichert. Diese Lösung bietet keine Anleitungen zur Verwendung dieses Features.
   
@@ -688,7 +688,7 @@ Ipconfig /flushdns
   
 [Konfigurieren von SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen für SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=393122)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 <a name="Troubleshooting"> </a>
 

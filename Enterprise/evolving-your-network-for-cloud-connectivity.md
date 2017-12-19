@@ -16,7 +16,7 @@ ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Zusammenfassung: Grundlegende Informationen dar체ber, warum f체r die Cloudakzeptanz ein neuer Ansatz f체r Investitionen in die Netzwerkinfrastruktur erforderlich ist."
 ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -83,7 +83,7 @@ Der Umfang von Netzwerkinvestitionen ist von der Kategorie des Clouddiensts abh�
 |Entwerfen und Implementieren eines Lastenausgleich f체r interne Arbeitslasten und Arbeitslasten im Internet  <br/> |||Trifft zu  <br/> |
 |Behandeln von Problemen mit der Konnektivit채t virtueller Computer und dem Durchsatz  <br/> |||Trifft zu  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloudnetzwerke f체r Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   
