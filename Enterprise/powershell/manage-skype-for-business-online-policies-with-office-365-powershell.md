@@ -14,13 +14,13 @@ ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um die Eigenschaften von Skype for Business Online-Benutzerkonten mithilfe von Richtlinien zu verwalten.'
 ms.openlocfilehash: 9b3877d2680b2b36d155cb5dd2a69fa21c972fe3
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell
 
- **Zusammenfassung:** Verwenden Sie Office 365 PowerShell, um Ihre Skype für Business Online Benutzerkontoeigenschaften mit Richtlinien verwalten.
+ **Zusammenfassung:** Verwenden Sie Office 365 PowerShell, um die Eigenschaften von Skype for Business Online-Benutzerkonten mithilfe von Richtlinien zu verwalten.
   
 Um viele Eigenschaften eines Benutzerkontos für Skype for Business Online zu verwalten, müssen Sie diese als Eigenschaften von Richtlinien mit Office 365 PowerShell angeben.
   
@@ -30,7 +30,7 @@ Bereiten Sie sich mithilfe dieser Anweisungen auf die Ausführung der Befehle vo
   
 1. Laden Sie das [Connector-Modul für Skype for Business Online](https://www.microsoft.com/en-us/download/details.aspx?id=39366) herunter, und installieren Sie es.
     
-2. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
+2. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
     
 ```
 Import-Module LyncOnlineConnector
@@ -49,7 +49,7 @@ Viele Eigenschaften von Skype for Business Online-Benutzerkonten werden mithilfe
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
 ```
 
-Sie sollte wiederum wieder dann in etwa so aussehen:
+Die Rückmeldung sollte in etwa so aussehen:
   
 ```
 Identity                          : Tag:FederationAndPICDefault
@@ -61,13 +61,13 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-In diesem Beispiel legen die Werte in der Richtlinie fest, welche Aktionen ein Benutzer bei der Kommunikation mit Partnerbenutzern ausführen darf bzw. nicht ausführen darf. Beispielsweise muss die Eigenschaft „EnableOutsideAccess" für einen Benutzer auf „true" festgelegt werden, damit er mit Personen außerhalb der Organisation kommunizieren darf. Beachten Sie, dass diese Eigenschaft nicht im Office 365 Admin Center angezeigt wird. Stattdessen wird die Eigenschaft anhand der anderen von Ihnen getroffenen Auswahlvorgänge automatisch auf „true" oder „false" festgelegt. Die beiden anderen relevanten Eigenschaften sind:
+In diesem Beispiel legen die Werte in der Richtlinie fest, welche Aktionen ein Benutzer bei der Kommunikation mit Partnerbenutzern ausführen darf bzw. nicht ausführen darf. Beispielsweise muss die Eigenschaft „EnableOutsideAccess“ für einen Benutzer auf „true“ festgelegt werden, damit er mit Personen außerhalb der Organisation kommunizieren darf. Beachten Sie, dass diese Eigenschaft nicht im Office 365 Admin Center angezeigt wird. Stattdessen wird die Eigenschaft anhand der anderen von Ihnen getroffenen Auswahlvorgänge automatisch auf „true“ oder „false“ festgelegt. Die beiden anderen relevanten Eigenschaften sind:
   
 - **EnableFederationAccess** gibt an, ob der Benutzer mit Personen von Verbunddomänen kommunizieren darf.
     
 - **EnablePublicCloudAccess** gibt an, ob der Benutzer mit Windows Live-Benutzern kommunizieren darf.
     
-Aus diesem Grund ändern nicht Sie direkt Verbund-bezogene Eigenschaften von Benutzerkonten (z. B. **Set-CsUser-EnableFederationAccess $True**). Stattdessen weisen Sie einem Konto an eine externe Zugriffsrichtlinie, die die gewünschte Eigenschaftswerte vorkonfiguriert ist. Wenn Sie einen Benutzer, Verbundbenutzer und mit Windows Live-Benutzern kommunizieren können möchten, muss mit dem Benutzerkonto eine Richtlinie zugewiesen werden, die diese Arten der Kommunikation ermöglicht.
+Sie ändern somit die partnerbezogenen Eigenschaften von Benutzerkonten (Beispiel: **Set-CsUser -EnableFederationAccess $True**) nicht direkt. Stattdessen weisen Sie einem Konto eine externe Zugriffsrichtlinie mit den gewünschten Eigenschaftswerten zu, die vorkonfiguriert wurden. Wenn ein Benutzer mit Partnerbenutzern und Windows Live-Benutzern kommunizieren können soll, muss diesem Benutzerkonto eine Richtlinie zugewiesen werden, die diese Arten der Kommunikation zulässt.
   
 Wenn Sie wissen möchten, ob jemand mit Benutzern außerhalb der Organisation kommunizieren kann, müssen Sie Folgendes tun:
   
@@ -103,7 +103,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Eine Liste aller verfügbaren VoIP-Richtlinien zurückgibt für Sie. Behalten Sie im Hinterkopf, allerdings, die nicht alle Richtlinien für alle Benutzer zugewiesen werden können. Dies ist aufgrund von verschiedenen Einschränkungen im Zusammenhang mit Lizenzierung und geografischen Standort. (So genannte "[Usage Speicherort](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx).") Wenn Sie möchten wissen, Richtlinien für den externen Zugriff und konferenzrichtlinien, die einem bestimmten Benutzer zugewiesen werden können, verwenden Sie die Befehle, die etwa wie folgt: 
+> Hiermit wird eine Liste mit den für Sie verfügbaren VoIP-Richtlinien zurückgegeben. Beachten Sie aber, dass nicht alle Richtlinien auch allen Benutzern zugewiesen werden können, da zahlreiche Beschränkungen hinsichtlich Lizenzierung und Region bestehen. (Der so genannte „[Verwendungsstandort]((https://msdn.microsoft.com/de-DE/library/azure/dn194136.aspx))".) Wenn Sie die externen Zugriffsrichtlinien und die Konferenzrichtlinien ermitteln möchten, die einem bestimmten Benutzer zugewiesen werden können, verwenden Sie Befehle ähnlich den folgenden: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -120,7 +120,7 @@ Bei Skype for Business Online müssen Benutzer über eine Richtlinie verwaltet w
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

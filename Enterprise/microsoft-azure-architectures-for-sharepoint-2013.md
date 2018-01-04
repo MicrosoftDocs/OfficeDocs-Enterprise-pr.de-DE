@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Azure-Architekturen für SharePoint 2013"
 ms.author: bcarter
-author: bcarter
+author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
@@ -16,11 +16,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
 description: "Zusammenfassung: SharePoint 2013-Lösungen können auf virtuellen Microsoft Azure-Computern gehostet werden. Erfahren Sie, welche Art von Lösungen hierfür geeignet sind und wie Microsoft Azure zum Hosten einer Lösung konfiguriert wird."
-ms.openlocfilehash: b21e40351b3d4ae304e0268ad75462c8592e3a69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.openlocfilehash: ee157ef81101cd51090fff50c972edd37562a179
+ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure-Architekturen für SharePoint 2013
 
@@ -57,9 +57,9 @@ Berücksichtigen Sie für Intranet- und Zusammenarbeitslösungen und Arbeitslast
 
 Auch wenn in diesem Artikels Beispieltopologien für SharePoint verwendet werden, können Sie diese Entwurfskonzepte auf alle anderen SharePoint-Farmtopologien übertragen. Befolgen Sie vor dem Entwurf der Azure-Umgebung die folgenden Anleitungen zu Topologie, Architektur, Kapazität und Leistung, um die SharePoint-Farm zu entwerfen.
   
-- [Technische Diagramme für SharePoint 2013](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
+- [Technische Diagramme für SharePoint 2013]((http://technet.microsoft.com/de-DE/sharepoint/fp123594.aspx))
     
-- [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
+- [Plan for performance and capacity management in SharePoint Server 2013]((http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx))
     
 ## <a name="determine-the-active-directory-domain-type"></a>Bestimmen des Active Directory-Domänentyps
 
@@ -123,8 +123,8 @@ Die folgende Tabelle enthält Empfehlungen für diese virtuellen Computer in Azu
 |**Element**|**Konfiguration**|
 |:-----|:-----|
 |Größe des virtuellen Computers in Azure  <br/> |A1- oder A2-Größe in der Standardebene  <br/> |
-|Betriebssystem  <br/> |Windows Server 2012 R2  <br/> |
-|Active Directory-Rolle  <br/> |Als globaler Katalogserver fungierender AD DS-Domänencontroller. Diese Konfiguration verringert den ausgehenden Datenverkehr über die standortübergreifende Verbindung.  <br/> Konfigurieren Sie in einer Umgebung mit mehreren Domänen mit hohen Änderungsraten (die es nicht häufig gibt) die lokalen Domänencontroller nicht für die Synchronisierung mit den globalen Katalogservern in Azure, um den Replikationsdatenverkehr zu reduzieren.  <br/> |
+|Betriebssystem   <br/> |Windows Server 2012 R2  <br/> |
+|Active Directory-Rolle  <br/> |Als globaler Katalogserver fungierender AD DS-Domänencontroller. Diese Konfiguration verringert den ausgehenden Datenverkehr über die standortübergreifende Verbindung.  <br/> Konfigurieren Sie in einer Umgebung mit mehreren Domänen mit hohen Änderungsraten (die es nicht häufig gibt) die lokalen Domänencontroller nicht für die Synchronisierung mit den globalen Katalogservern in Azure, um den Replikationsdatenverkehr zu reduzieren.  <br/> |
 |DNS-Rolle  <br/> |Installieren und konfigurieren Sie den DNS-Serverdienst auf den Domänencontrollern.  <br/> |
 |Datenträger  <br/> |Platzieren Sie die Active Directory-Datenbank, Protokolle und SYSVOL auf zusätzlichen Azure-Datenträgern. Platzieren Sie sie nicht auf dem Datenträger mit dem Betriebssystem oder den temporären Datenträgern, die von Azure bereitgestellt werden.  <br/> |
 |IP-Adressen  <br/> |Verwenden Sie statische IP-Adressen und konfigurieren Sie das virtuelle Netzwerk, um diese Adressen den virtuellen Computern im virtuellen Netzwerk zuzuweisen, nachdem die Domänencontroller konfiguriert wurden.  <br/> |
@@ -178,7 +178,7 @@ Es folgt ein Beispiel einer Standardarchitektur von Internetwebsites, die bestim
   
 Inhalt dieses Diagramms:
   
-- Eine Farm mit drei Ebenen - Webserver, Anwendungsserver und Datenbankserver - wird gezeigt.
+- Eine Farm mit drei Ebenen – Webserver, Anwendungsserver und Datenbankserver – wird gezeigt.
     
 - Die drei Webserver sind mit mehreren Komponenten identisch konfiguriert.
     
@@ -223,10 +223,10 @@ Dieses Diagramm zeigt die in Azure-Infrastrukturdiensten implementierte SharePoi
 |**Kontakt**|**Beschreibung**|
 |:-----|:-----|
 |**Welche Lösungen benötigen Sie?** <br/> |Wir entwickeln Inhalte für Lösungen auf Grundlage mehrerer Microsoft-Produkte und -Dienste. Lassen Sie uns wissen, was Sie von unseren serverübergreifenden Lösungen halten, oder fordern Sie spezifische Lösungen an, indem Sie eine E-Mail an [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) senden.<br/> |
-|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie über Cloud-basierte Lösungen engagierten sind, sollten Sie die Teilnahme an der Cloud Annahme Advisory Board (CAAB) für die Verbindung mit einer größeren, kräftige Community von Microsoft Entwickler von Inhalten, aus dem Gesundheitswesen Experten und Kunden aus der ganzen Welt. Um teilzunehmen, fügen Sie sich als Mitglied der [CAAB (Cloud Annahme Advisory Board) Speicherplatz](https://aka.ms/caab) der Community Tech Center für Microsoft hinzu, und senden Sie uns eine kurze e-Mail unter[CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Alle Benutzer können Community-bezogenen Inhalte im [CAAB Blog](https://blogs.technet.com/b/solutions_advisory_board/)lesen. CAAB Mitglieder erhalten jedoch Einladungen an private Webinare, in denen neue Cloud-Migrationsressourcen und Lösungen beschrieben.<br/> |
-|**Die hier gezeigte Grafik abrufen** <br/> |Wenn Sie eine bearbeitbare Kopie der Grafik, die Sie in diesem Artikel sehen möchten, werden wir freuen an Sie gesendet werden. Ihre Anfrage, einschließlich der URL und der Titel der Art [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)per e-Mail.<br/> |
+|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie sich für Cloud-basierte Lösungen interessieren, werden Sie Teil des Cloud Adoption Advisory Board (CAAB), um Zugriff auf eine größere, dynamische Community aus Microsoft-Inhaltsentwicklern, Branchenexperten und Kunden aus aller Welt zu haben. Um beizutreten, fügen Sie sich selbst als Mitglied des [CAAB (Cloud Adoption Advisory Board)-Bereichs]((https://aka.ms/caab)) der Microsoft Tech Community hinzu, und senden Sie uns eine E-Mail an [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Communityinhalte stehen allen Personen im [CAAB-Blog]((https://blogs.technet.com/b/solutions_advisory_board/)) zur Verfügung. CAAB-Mitglieder erhalten jedoch Einladungen zu privaten Webinaren, die neue Ressourcen und Lösungen für den Cloud-Einsatz beschreiben.<br/> |
+|**Die hier gezeigte Grafik abrufen** <br/> |Wenn Sie eine bearbeitbare Kopie der Grafik wünschen, die Sie in disem Artikel sehen, senden wir Sie Ihnen gerne zu. Senden Sie eine E-Mail mit der Anforderung einschließlich der URL und dem Titel der Grafik an [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
   

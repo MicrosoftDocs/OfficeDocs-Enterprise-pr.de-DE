@@ -17,13 +17,13 @@ ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: "Zusammenfassung: Dieser Artikel erläutert die Bedeutung der Office 365 PowerShell, beschreibt die Anbindung an Office 365-Mandanten und nennt Hilferessourcen."
 ms.openlocfilehash: 16df86ef7f2fe75fd6bc3e384d01329de545ae11
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Erste Schritte mit Office 365 PowerShell
 
- **Zusammenfassung:** Die Bedeutung der Office 365 PowerShell, verbinden Sie sich mit Ihrem Office 365-Mandanten und Hilfe erhalten.
+ **Zusammenfassung:** Dieser Artikel erläutert die Bedeutung der Office 365 PowerShell, beschreibt die Anbindung an Office 365-Mandanten und nennt Hilferessourcen.
   
 Mit Office 365 PowerShell können Sie Office 365 mit Befehlen und Skripts verwalten, um Ihre tägliche Arbeit zu optimieren. Hier erfahren Sie, warum Office 365 PowerShell-Kenntnisse für die Verwaltung von Office 365 entscheidend sind, wie Sie eine Verbindung mit Ihrem Office 365-Abonnement herstellen und wie Sie Berichte erstellen. Des Weiteren finden Sie hier weitere Informationen und Hilfe von der Office 365-Community.
   
@@ -53,7 +53,7 @@ Wählen Sie den Artikel basierend auf Ihren Anforderungen aus:
     
     Unter diesem Link finden Sie die verschiedenen Foren der PowerShell-Community sowie Hilfestellung und aktuelle Informationen zur Verwendung der Office 365 PowerShell.
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

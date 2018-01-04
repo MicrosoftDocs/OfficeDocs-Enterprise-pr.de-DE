@@ -18,7 +18,7 @@ ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "Zusammenfassung: Informieren Sie sich über die verschiedenen Cloudspeicheroptionen, die in die Microsoft-Cloudangebote integriert sind."
 ms.openlocfilehash: 341b530f3b4348a4111cdd8e9741d0e5696e652e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -66,9 +66,9 @@ In den folgenden Abschnitten werden die Details der einzelnen schlüsselfertigen
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
+Weitere Informationen finden Sie [hier]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).
   
-Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
+Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
   
 ## <a name="exchange-online-in-office-365"></a>Exchange Online in Office 365
 
@@ -88,15 +88,15 @@ Informationen zu den Kosten finden Sie [hier](https://products.office.com/busine
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+Weitere Informationen finden Sie [hier]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).
   
-Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
+Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
   
 ## <a name="onedrive-for-business"></a>OneDrive for Business
 
 ### <a name="features"></a>Features
 
-- Der Speicher ist sicher und zuverlässig von jedem Ort von verschiedenen Geräten aus zugänglich jedem Ort von verschiedenen Geräten aus zugänglich
+- Der Speicher ist sicher und zuverlässig von jedem Ort von verschiedenen Geräten aus zugänglich jedem Ort von verschiedenen Geräten aus zugänglich 
     
 - Inhalte können vom Benutzer leicht mithilfe der Suchfunktion gefunden werden
     
@@ -116,9 +116,9 @@ Informationen zu den Kosten finden Sie [hier](https://products.office.com/busine
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).
+Weitere Informationen finden Sie [hier]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).
   
-Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
+Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
   
 ## <a name="visual-studio-team-services"></a>Visual Studio Team Services
 
@@ -142,9 +142,9 @@ Informationen zu den Kosten finden Sie [hier](https://products.office.com/busine
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).
+Weitere Informationen finden Sie [hier]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).
   
-Informationen zu den Kosten finden Sie [hier](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).
+Informationen zu den Kosten finden Sie [hier]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).
   
 ## <a name="yammer-file-sharing"></a>Yammer-Dateifreigabe
 
@@ -170,9 +170,9 @@ Informationen zu den Kosten finden Sie [hier](https://www.visualstudio.com/produ
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](https://products.office.com/yammer/yammer-overview).
+Weitere Informationen finden Sie [hier]((https://products.office.com/yammer/yammer-overview)).
   
-Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
+Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
   
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -200,9 +200,9 @@ Weitere Informationen finden Sie [hier](http://www.microsoft.com/dynamics/defaul
 
 ### <a name="features"></a>Features
 
-- Alle Software, die Sie bereitstellen wird verpackt und auf Microsoft Intune cloudspeicher hochgeladen.
+- Sämtliche von Ihnen bereitgestellte Software wird in einem Paket zusammengefasst und in Microsoft Intune-Cloudspeicher hochgeladen.
     
-- Abonnement umfasst 20 GB an Speicher mit der Option zusätzlicher Speicherplatz, verschiedene Software und Hardware Inventarberichte, Gruppenrichtlinien-Verwaltungskonsole, mobile app veröffentlichen, Benachrichtigungen, monitoring und 99,99 % Betriebszeit SLA erwerben.
+- Das Abonnement beinhaltet 20 GB Speicher mit der Option zum Erwerb von weiterem Speicher, verschiedene Software- und Hardwarebestandsberichte, Richtlinienverwaltung, Veröffentlichung mobiler Apps, Warnungen, Überwachung und eine Betriebszeit von 99,99 % gemäß SLA.
     
 ### <a name="common-uses"></a>Häufige Verwendungsweisen
 
@@ -214,9 +214,9 @@ Weitere Informationen finden Sie [hier](http://www.microsoft.com/dynamics/defaul
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+Weitere Informationen finden Sie [hier]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).
   
-Informationen zu den Kosten finden Sie [hier](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
+Informationen zu den Kosten finden Sie [hier]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).
   
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -244,7 +244,7 @@ Informationen zu den Kosten finden Sie [hier](https://www.microsoft.com/cloud-pl
 
 Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).
   
-Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/site-recovery/).
+Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/site-recovery/)).
   
 ## <a name="azure-backup"></a>Azure Backup
 
@@ -268,21 +268,21 @@ Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/backup/).
+Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/backup/)).
   
-Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/backup/).
+Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/backup/)).
   
 ## <a name="next-step"></a>Nächster Schritt
 
 Sehen Sie sich die [Assemblierung in Maßen erforderlich](some-assembly-required.md)-Cloudspeicheroptionen an.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloud-Speicher für Enterprise-Architekten](microsoft-cloud-storage-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

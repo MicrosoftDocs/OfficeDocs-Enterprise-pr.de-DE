@@ -18,7 +18,7 @@ ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft SaaS-Dienste, einschließlich Office 365, Microsoft Intune und Dynamics 365, optimieren."
 ms.openlocfilehash: 432789d03f5208a379dc2ab4f17f38f95223e10d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -32,7 +32,7 @@ Für die Optimierung Ihres Netzwerks für Microsoft-SaaS-Dienste ist eine sorgf�
 
 Befolgen Sie diese Schritte, um Ihr Netzwerk für Microsoft SaaS-Dienste zu optimieren:
   
-1. Durchlaufen Sie die **Schritte zum Vorbereiten von Ihr Netzwerks für Microsoft Cloud Services** -Abschnitt in [Allgemeine Elemente von Microsoft-Cloud-Diensten](common-elements-of-microsoft-cloud-connectivity.md).
+1. Durchlaufen Sie die **Schritte zum Vorbereiten Ihres Netzwerks für Microsoft Cloud Services** in [Gemeinsame Elemente der Microsoft-Cloudkonnektivität](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Optimieren Sie Ihren Internetausgang für Microsoft SaaS-Dienste mithilfe der Proxyserverempfehlungen.
     
@@ -48,7 +48,7 @@ Nachfolgend finden Sie einige Punkte, die Sie bei der Optimierung Ihres Internet
   
 **Abbildung 1: Verbindungsoptionen für Microsoft SaaS-Dienste**
 
-![Abbildung 1: Verbindungsoptionen für Microsoft SaaS-Dienste](images/Network_Poster/SaaS1.png)
+![Abbildung 1: Verbindungsoptionen für Microsoft SaaS-Dienste](images/Network_Poster/SaaS1.png)
   
 In Abbildung 1 ist ein lokales Netzwerk dargestellt, das über eine Internetpipe oder ExpressRoute eine Verbindung zu Microsoft SaaS-Diensten herstellt.
   
@@ -86,13 +86,13 @@ Nachfolgend finden Sie die ausgehenden Ports, die für Office 365-Datenverkehr e
   
 - TCP 80 (für CRL/OCSP-Überprüfungen)
     
-- TCP 443
+- TCP 443
     
 - UDP 3478
     
-- TCP 5223
+- TCP 5223
     
-- TCP 50000-59999
+- TCP 50000-59999
     
 - UDP 50000-59999
     
@@ -128,7 +128,7 @@ Ermitteln Sie für die Clientcomputer Folgendes:
     
 Prüfen Sie für jeden Typ von Client (PC, Smartphone, Tablet), die aktuelle Version von Folgendem:
   
-- Betriebssystem
+- Betriebssystem 
     
 - Internetbrowser
     
@@ -142,9 +142,9 @@ Prüfen Sie für jeden Typ von Client (PC, Smartphone, Tablet), die aktuelle Ver
     
 Optimieren Sie außerdem den Durchsatz der Intranetverbindung (kabelgestützt, kabellos oder VPN).
   
-Weitere Informationen finden Sie unter [NAT-Unterstützung für Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
+Weitere Informationen finden Sie unter [NAT-Unterstützung für Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).
   
-Die neuesten Empfehlungen zur Verwendung von ExpressRoute mit Office 365 finden Sie unter [ExpressRoute für Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
+Die neuesten Empfehlungen zur Verwendung von ExpressRoute mit Office 365 finden Sie unter [ExpressRoute für Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
   
 Gehen Sie folgendermaßen Sie vor, um die Intranetleistung zu optimieren:
   
@@ -154,7 +154,7 @@ Gehen Sie folgendermaßen Sie vor, um die Intranetleistung zu optimieren:
     
 - Führen Sie Analysen für Zwischengeräte (Alter, Gesundheit usw.) durch.
     
-Weitere Informationen finden Sie unter der [PsPing-Tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).
+Weitere Informationen finden Sie unter der [PsPing-Tool]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).
   
 ## <a name="it-operations-considerations"></a>Überlegungen zu IT-Abläufen
 
@@ -184,19 +184,19 @@ So optimieren Sie Ihr Netzwerk für laufende Synchronisierungen:
     
 Weitere Informationen finden Sie unter:
   
-- [Netzwerk- und Migrationsplanung für Office 365](https://aka.ms/tune)
+- [Netzwerk- und Migrationsplanung für Office 365]((https://aka.ms/tune))
     
-- [Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung](https://aka.ms/o365perf)
+- [Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung]((https://aka.ms/o365perf))
     
-- [ExpressRoute für Office 365](https://aka.ms/expressrouteoffice365)
+- [ExpressRoute für Office 365]((https://aka.ms/expressrouteoffice365))
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

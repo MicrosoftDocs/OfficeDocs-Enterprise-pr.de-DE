@@ -15,24 +15,24 @@ ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: "Hier erfahren Sie, wie Sie mithilfe von Office 365 PowerShell löschen und Wiederherstellen von Office 365-Benutzerkonten."
+description: "Informationen zur Verwendung von Office 365 PowerShell zum Löschen und Wiederherstellen von Office 365-Benutzerkonten"
 ms.openlocfilehash: 8404395ea9594cea1a2e772cecbeb011756b7754
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Löschen und Wiederherstellen von Benutzerkonten mit Office 365 PowerShell
 
-**Zusammenfassung:**  Hier erfahren Sie, wie Sie mithilfe von Office 365 PowerShell löschen und Wiederherstellen von Office 365-Benutzerkonten.
+**Zusammenfassung:** Informationen zur Verwendung von Office 365 PowerShell zum Löschen und Wiederherstellen von Office 365-Benutzerkonten.
   
 Wenn Sie Office 365 PowerShell zum Löschen eines Benutzerkontos verwenden, wird das Konto nicht endgültig gelöscht. Sie können das gelöschte Benutzerkonto innerhalb von 30 Tagen wiederherstellen.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- Wenn Sie das Cmdlet **Get-MsolUser** ohne Verwenden der _-Alle_ Parameter, der nur die ersten 500 Konten werden zurückgegeben.
+- Bei Verwendung des **Get-MsolUser**-Cmdlets ohne den _-All_-Parameter werden nur die ersten 500 Konten zurückgegeben.
     
 ## <a name="use-office-365-powershell-to-block-access-to-individual-user-accounts"></a>Sie können den Zugriff auf einzelne Benutzerkonten mit Office 365 PowerShell blockieren.
 <a name="ShortVersion"> </a>
@@ -43,7 +43,7 @@ Wenn Sie ein Benutzerkonto löschen möchten, verwenden Sie die folgende Syntax:
 Remove-MsolUser -UserPrincipalName <Account>
 ```
 
-In diesem Beispiel wird das Benutzerkonto „BelindaN@litwareinc.com" gelöscht.
+In diesem Beispiel wird das Benutzerkonto „BelindaN@litwareinc.com“ gelöscht.
   
 ```
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -55,7 +55,7 @@ Wenn Sie ein gelöschtes Benutzerkonto innerhalb der Nachfrist von 30 Tagen wied
 Restore-MsolUser -UserPrincipalName <Account>
 ```
 
-In diesem Beispiel wird das gelöschte Benutzerkonto „BelindaN@litwareinc.com" wiederhergestellt.
+In diesem Beispiel wird das gelöschte Benutzerkonto „BelindaN@litwareinc.com“ wiederhergestellt.
   
 ```
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
@@ -74,7 +74,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>Entfernen eines Benutzerkontos mit dem Azure Active Directory V2 PowerShell-Modul
 <a name="ShortVersion"> </a>
 
-Wenn Sie das Cmdlet **Remove-AzureADUser** aus dem Azure Active Directory V2 PowerShell-Modul verwenden, müssen Sie zunächst Ihr Abonnement verbinden. Die Anweisungen finden Sie unter [Verbinden mit dem Azure Active Directory V2 PowerShell-Modul](https://go.microsoft.com/fwlink/?linkid=842218).
+Um das Cmdlet **Remove-AzureADUser** aus dem Azure Active Directory V2 PowerShell-Modul zu verwenden, müssen Sie zunächst eine Verbindung zu Ihrem Abonnement herstellen. Die Anweisungen finden Sie unter[Verbinden mit dem Azure Active Directory V2 PowerShell-Modul](https://go.microsoft.com/fwlink/?linkid=842218).
   
 Nachdem Sie eine Verbindung hergestellt haben, verwenden Sie die folgende Syntax, um ein einzelnes Benutzerkonto zu entfernen:
   
@@ -82,7 +82,7 @@ Nachdem Sie eine Verbindung hergestellt haben, verwenden Sie die folgende Syntax
 Remove-AzureADUser -ObjectID <Account>
 ```
 
-In diesem Beispiel wird das Benutzerkonto „fabricec@litwareinc.com" entfernt.
+In diesem Beispiel wird das Benutzerkonto „fabricec@litwareinc.com“ entfernt.
   
 ```
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
@@ -115,7 +115,7 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 ## <a name="see-also"></a>Siehe auch
 <a name="SeeAlso"> </a>
 
-Finden Sie diese zusätzlichen Themen zum Verwalten von Benutzern mit Office 365 PowerShell:
+In den folgenden zusätzlichen Themen finden Sie weitere Informationen zum Verwalten von Benutzern mit Office 365 PowerShell:
   
 - [Erstellen von Benutzerkonten mit Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md)
     

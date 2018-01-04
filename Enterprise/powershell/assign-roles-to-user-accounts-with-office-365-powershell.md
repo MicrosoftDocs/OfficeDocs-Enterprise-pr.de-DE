@@ -18,15 +18,15 @@ ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Zusammenfassung: Informationen zum Verwenden von Office 365 PowerShell und des Add-MsolRoleMember -Cmdlets zum Zuweisen von Rollen zu Benutzerkonten.'
 ms.openlocfilehash: 673a71fb2f85515276e94767ed3f9dd40655dfea
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Zuweisen von Rollen zu Benutzerkonten mit Office 365 PowerShell
 
- **Zusammenfassung:** Verwenden Sie Office 365 PowerShell und das Cmdlet **Add-MsolRoleMember** Benutzerkonten Rollen zugewiesen.
+ **Zusammenfassung:** Informationen zum Verwenden von Office 365 PowerShell und des **Add-MsolRoleMember**-Cmdlets zum Zuweisen von Rollen zu Benutzerkonten.
   
-Sie können schnell und einfach Rollen-Benutzerkonten mit Office 365 PowerShell durch das Identifizieren von Anzeigename den Namen des Benutzerkontos und den Namen des Rollen zuweisen.
+Sie können schnell und einfach mit Office 365 PowerShell Benutzerkonten Rollen zuweisen, indem Sie den Anzeigenamen des Benutzerkontos und den Namen für die Rolle bestimmen.
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
@@ -38,7 +38,7 @@ Legen Sie Folgendes fest:
   
 - Das Benutzerkonto, das Sie konfigurieren möchten.
     
-    Um das Benutzerkonto angeben, müssen Sie den Anzeigenamen ermitteln. Wenn Sie eine vollständige Liste Konten erhalten möchten, verwenden Sie diesen Befehl aus:
+    Beim Angeben des Benutzerkontos müssen Sie seinen Anzeigenamen bestimmen. Verwenden Sie den folgenden Befehl, um eine vollständige Liste der Konten abzurufen:
     
   ```
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
@@ -50,7 +50,7 @@ Legen Sie Folgendes fest:
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    Mit diesem Befehl werden nur die Benutzerkonten angezeigt, deren Anzeigename mit „John" beginnt.
+    Mit diesem Befehl werden nur die Benutzerkonten angezeigt, deren Anzeigename mit „John“ beginnt.
     
 - Die Rolle, die Sie zuweisen möchten.
     
@@ -68,7 +68,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
-Kopieren Sie die Befehle aus, und fügen sie in Notepad ein. Ersetzen Sie den Text der Beschreibung für die Variablen **$dispName** und **$roleName** mit ihren Werten, entfernen Sie die \< und > Zeichen, und lassen Sie die Anführungszeichen. Kopieren Sie die geänderten Zeilen, und fügen Sie sie in das Windows Azure Active Directory-Modul für Windows PowerShell-Fenster ausführen. Alternativ können Sie die Windows PowerShell Integrated Skript Environment (ISE).
+Kopieren Sie die Befehle, und fügen Sie sie in Editor ein. Ersetzen Sie in den **$dispName**- und **$roleName**-Variablen die Beschreibung durch die entsprechenden Werte, entfernen Sie die Zeichen „\<" und „>", und lassen Sie die Anführungszeichen stehen. Kopieren Sie die geänderten Zeilen, und fügen Sie sie in das Fenster „Windows Azure Active Directory-Modul für Windows PowerShell", um sie auszuführen. Alternativ können Sie die Windows PowerShell ISE (Integrated Script Environment) verwenden.
   
 Hier ein Beispiel für einen abgeschlossenen Befehlssatz:
   
@@ -90,13 +90,13 @@ Legen Sie Folgendes fest:
   Get-MsolUser -All | Sort DisplayName | Select DisplayName | More
   ```
 
-    Mit diesem Befehl wird der Anzeigename des alle Ihre Benutzerkonten, sortiert nach den Anzeigenamen, ein Fenster zu einem Zeitpunkt aufgeführt. Sie können die Liste auf einer kleineren Gruppe mithilfe des Cmdlets **, in dem** filtern. Es folgt ein Beispiel:
+    Mit diesem Befehl wird der Anzeigename der Benutzerkonten nach Anzeigename sortiert angezeigt, jeweils einer auf einem Bildschirm. Sie können die Liste mit dem **Where**-Cmdlets weiter eingrenzen. Hier ein Beispiel:
     
   ```
   Get-MsolUser | Where DisplayName -like "John*" | Sort DisplayName | Select DisplayName | More
   ```
 
-    Mit diesem Befehl werden nur die Benutzerkonten angezeigt, deren Anzeigename mit „John" beginnt.
+    Mit diesem Befehl werden nur die Benutzerkonten angezeigt, deren Anzeigename mit „John“ beginnt.
     
 - Rollen, die Sie jedem Benutzerkonto zuweisen möchten.
     
@@ -123,7 +123,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 
@@ -134,5 +134,5 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 [Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 #### 
 
-[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
+[Add-MsolRoleMember]((https://msdn.microsoft.com/library/dn194120.aspx))
 

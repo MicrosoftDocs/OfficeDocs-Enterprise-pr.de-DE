@@ -14,18 +14,18 @@ ms.assetid: 0f946b46-200a-4bdd-9b1b-019a554ddcc6
 description: "Zusammenfassung: Verwenden Sie Windows PowerShell für Office 365 zum Abrufen von Berichten zu allen Kundenmandanten, und aggregieren Sie die Daten an einem zentralen Speicherort."
 ms.openlocfilehash: 89651971424d1b9a494335572d2654d8402ec146
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-permission-dap-partners"></a>Aggregieren von Kundenberichtsdaten über Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
 
- **Zusammenfassung:** Verwenden von Windows PowerShell für Office 365 zum Abrufen von Berichten auf alle Kunden Mandanten und Aggregieren von Daten in einem einzigen Standort.
+ **Zusammenfassung:** Verwenden Sie Windows PowerShell für Office 365 zum Abrufen von Berichten zu allen Kundenmandanten, und aggregieren Sie die Daten an einem zentralen Speicherort.
   
 Standardmäßig verfügt Windows PowerShell für Office 365 nicht über eine integrierte Aggregation von Berichtsdaten mehrerer Kundenmandanten. Sie können jedoch dieses Beispielskript für Windows PowerShell für Office 365 verwenden, um alle Kundenmandanten zu durchlaufen und einzelne Berichte für jeden Kunden abrufen, sodass Sie die Berichtsdaten dann an einem zentralen Speicherort aggregieren können. Als Ergebnis verfügen Sie anschließend über einen einzigen Bericht für alle Ihre Kundenmandanten. 
   
 DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP). Häufig handelt es sich um Netzwerk- oder Telekom-Anbieter für andere Unternehmen. Sie bündeln Office 365-Abonnements in Serviceangeboten für ihre Kunden. Wenn sie ein Office 365-Abonnement verkaufen, erhalten sie automatisch AOBO-Berechtigungen (Administer On Behalf Of, Verwalten im Namen von) für dieKundenmandanten, damit sie diese verwalten und Berichte darüber erstellen können.
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Um dieses Skript verwenden zu können, müssen Sie für die folgenden Variablen Ihre eigenen Werte festlegen:
   
@@ -135,9 +135,9 @@ foreach ($c in $contracts) {
   &amp; "C:\\O365 Scripts\\GetMailboxActivityReport.ps1"
   ```
 
-Dieses Beispielskript fügt den aggregierten Bericht in die Datei „ReportOutput.csv" ein.
+Dieses Beispielskript fügt den aggregierten Bericht in die Datei „ReportOutput.csv“ ein.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

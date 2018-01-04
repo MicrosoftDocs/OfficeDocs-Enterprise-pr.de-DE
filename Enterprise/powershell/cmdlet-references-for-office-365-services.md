@@ -16,15 +16,15 @@ ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: "Zusammenfassung: Suchen Sie nach Office 365 PowerShell-Cmdlet-Referenzthemen für Azure Active Directory, Exchange Online, SharePoint Online und Skype for Business Online."
 ms.openlocfilehash: 86975e7c0729429d771a9a316dad4b8c73d28010
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Cmdlet-Referenzen für Office 365-Dienste
 
- **Zusammenfassung:** Hier finden Sie Referenzthemen für Office 365 PowerShell-Cmdlets für Azure Active Directory, Exchange Online, SharePoint Online und Skype Business Online.
+ **Zusammenfassung:** Suchen Sie nach Office 365 PowerShell-Cmdlet-Referenzthemen für Azure Active Directory, Exchange Online, SharePoint Online und Skype for Business Online.
   
-Cmdlet-Referenzthemen für die verschiedenen Office 365-Diensten finden Sie ausführliche Informationen und Anweisungen zum jedes-Cmdlet verwenden. Addiitonally, erfordert jede Office 365-Dienst, der PowerShell unterstützen verfügt über andere Verbindung Anweisungen.
+Cmdlet-Referenzthemen für die unterschiedlichen Office 365-Dienste enthalten ausführliche Informationen und Anweisungen zur Verwendung der einzelnen Cmdlets. Außerdem sind für jeden Office 365-Dienst, der über PowerShell-Unterstützung verfügt, unterschiedlichen Verbindungsanweisungen erforderlich.
   
 > [!NOTE]
 > Informationen dazu, wie Sie sich mit allen Diensten gleichzeitig verbinden, finden Sie unter [Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md). 
@@ -62,7 +62,7 @@ Referenzthemen für Skype for Business Online-Cmdlets befinden sich im Skype for
   
 Verbindungsanweisungen für Skype for Business Online-PowerShell finden Sie unter [Herstellen der Verbindung zu Lync Online mit Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=691607).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

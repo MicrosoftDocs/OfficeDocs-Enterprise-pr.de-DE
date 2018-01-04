@@ -21,7 +21,7 @@ ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren."
 ms.openlocfilehash: 9cecd13f0ffc3c2822ac6c66a3bde9c9e6a3c798
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -46,13 +46,13 @@ Folgen Sie den Anweisungen in der Testumgebungsanleitung [Office 365- und Dynami
 
 Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die Integration von Dynamics 365 und Exchange Online zu konfigurieren:
   
-1. Verwendung einer privaten Sitzung Ihres Browsers, wechseln Sie zu [http://portal.office.com](http://portal.office.com) und melden Sie sich mit Ihrem Office 365 globaler Administrator-Konto.
+1. Verwenden Sie eine private Sitzung in Ihrem Browser, und wechseln Sie zu [(http://portal.office.com)]((http://portal.office.com)). Melden Sie sich mit dem globalen Administratorkonto für Office 365 an.
     
 2. Klicken Sie auf der **Microsoft Office-Homepage** auf die Kachel **E-Mail**.
     
 3. Klicken Sie auf der neuen Registerkarte **E-Mail** in Ihrem Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Fensters unterhalb des Felds zum Eingeben der Nachricht jetzt ein Symbol für „Meine Vorlagen" angezeigt wird.
     
-     ![Leere neue E-Mail-Nachricht ohne Integration mit Dynamics 365](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Leere neue E-Mail-Nachricht ohne Integration mit Dynamics 365](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Klicken Sie auf **verwerfen**, und lassen Sie die Registerkarte **E-Mail** geöffnet.
     
@@ -74,7 +74,7 @@ Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die In
     
 13. Klicken Sie in der Symbolleiste auf **E-Mail genehmigen**, und klicken Sie dann auf **OK**.
     
-14. Wählen Sie den Namen der Office 365 globaler Administrator in der linken Häkchen Spalte aus, klicken Sie auf **Test &amp; Postfächer aktivieren** im Tool Balken, und klicken Sie dann auf **OK**.
+14. Wählen Sie den Namen des globalen Administrator für Office 365 in der linken Spalte aus, klicken Sie in der Symbolleiste auf **Postfächer testen&amp; und aktivieren**, und klicken Sie dann auf **OK**.
     
 15. Klicken Sie auf die geöffnete Registerkarte **E-Mail**, und überprüfen Sie, ob der globale Administrator eine Testnachricht erhalten hat.
     
@@ -94,20 +94,20 @@ Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren un
     
 6. Klicken Sie auf der neuen Registerkarte **E-Mail** im Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Bereichs unterhalb des Felds für die Eingabe einer Nachricht nun ein Symbol für Dynamics 365 angezeigt wird.
     
-     ![Leere neue E-Mail-Nachricht bei Integration mit Dynamics 365 (neues Symbol sichtbar)](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Leere neue E-Mail-Nachricht bei Integration mit Dynamics 365 (neues Symbol sichtbar)](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Klicken Sie auf das Symbol für Dynamics 365. Es sollte ein **Dynamics 365**-Fenster angezeigt werden, in dem Sie diese E-Mail verfolgen oder auf Vorlagen, Vertriebsdokumentation oder Artikel zugreifen können.
     
 8. Geben Sie im Feld **An** der E-Mail-Nachricht **alex.y.wu@outlook.com** ein, und klicken Sie dann auf **Wiederholen** im Fenster **Dynamics 365**. Es sollte der Abschnitt **Empfänger** im Fenster **Dynamics 365** mit Informationen über Alex Wu angezeigt werden, der ein Kontakt in der Vertriebsanwendung ist, die in den Beispieldaten für das Testabonnement enthalten ist.
     
-     ![Dynamics 365-Informationsbereich für einen in Dynamics 365 gespeicherten Vertriebskontakt](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Dynamics 365-Informationsbereich für einen in Dynamics 365 gespeicherten Vertriebskontakt](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Klicken Sie auf **Verwerfen**.
 
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) für eine visuelle Darstellung aller die Artikel in einer Microsoft Cloud Test Lab Guide-Stapel.
+> Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
   
@@ -119,8 +119,8 @@ Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren un
   
 [DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Abonnement-Verwaltung für Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
+[Abonnement-Verwaltung für Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))
   
-[Verwalten von Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
+[Verwalten von Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
 
 

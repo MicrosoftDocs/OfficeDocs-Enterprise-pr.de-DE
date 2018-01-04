@@ -19,7 +19,7 @@ ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Zusammenfassung: Entwickeln Sie Ihr Netzwerk für Microsoft Cloud-Dienste und -Plattformen."
 ms.openlocfilehash: 304a04313eb763352f0b9e8a5b264290be6d4fd5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,12 +29,12 @@ ms.lasthandoff: 12/15/2017
   
 Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten über das Entwerfen von Netzwerken für Organisationen wissen müssen, die Microsoft Cloud-Dienste und -Plattformen verwenden. Sie können diese Informationen auch als 12-seitiges Poster anzeigen und im Tabloid-Format (auch bekannt als Ledger, 11 x 17 oder A3) drucken.
   
-[![Thumb-Bild für Netzwerke Microsoft Cloud-Modell](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
+[![Miniaturbild für Microsoft-Cloud-Netzwerkmodell](images/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)  
 ](https://go.microsoft.com/fwlink/p/?linkid=842073)
   
 ![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Können Sie auch finden Sie alle Modelle in die [Microsoft-Cloud-IT-Architektur-Ressourcen](microsoft-cloud-it-architecture-resources.md) und führen Sie über [von Microsoft Enterprise Cloud Roadmap: Ressourcen für IT-Entscheidungsträgern](https://aka.ms/cloudarchitecture).
+Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)) durchsuchen.
   
 Lesen Sie die folgenden Abschnitte:
   
@@ -62,16 +62,16 @@ Lesen Sie die folgenden Abschnitte:
     
     Durchlaufen Sie schrittweise den Entwurfsprozess zum Erstellen eines optimalen virtuellen Azure-Netzwerks (VNet) für das Hosting von serverbasierten IT-Arbeitslasten, einschließlich Subnetzen, Adressräumen, Routing, DNS, Lastenausgleich und der Verbindung zu Ihrem lokalen Netzwerk, anderen VNets und dem Internet.
     
-Eine 30-minütigen Zusammenfassung der wichtigsten Punkte dieses Poster finden Sie unter [Optimieren des Netzwerks für Microsoft-Cloud-angeboten](https://mva.microsoft.com/en-US/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743) Microsoft Virtual Academy Kurs.
+Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden Sie im Microsoft Virtual Academy-Kurs über das [Optimieren von Netzwerken für Microsoft Cloud-Angebote]((https://mva.microsoft.com/de-DE/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)).
   
 > [!NOTE]
-> Die folgenden Artikel geben die Version vom **Juni 2017** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten" wieder.
+> Die folgenden Artikel geben die Version vom **Juni 2017** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten“ wieder.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

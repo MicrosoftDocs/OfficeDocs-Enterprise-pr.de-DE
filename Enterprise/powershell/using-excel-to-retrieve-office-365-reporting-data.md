@@ -17,17 +17,17 @@ ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Zusammenfassung: Verwenden Sie das oData-Feature in Microsoft Excel, um detaillierte Berichtsinformationen für Ihre Bereitstellung von Office 365 abzurufen."
 ms.openlocfilehash: 72c0fce0a70f5cc3136ab01b48bb178d32a8f64d
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Verwenden von Excel zum Abrufen von Office 365-Berichterstellungsdaten
 
- **Zusammenfassung:** Verwenden Sie das oData-Feature in Microsoft Excel, um ausführliche Berichte Informationen für die Bereitstellung von Office 365 abzurufen
+ **Zusammenfassung:** Verwenden Sie das oData-Feature in Microsoft Excel, um detaillierte Berichtsinformationen für Ihre Bereitstellung von Office 365 abzurufen.
   
 Die Berichterstellung ist ein wichtiger Bestandteil der Systemverwaltung. Das Office 365 Admin Center enthält eine Reihe an vordefinierten Berichten, auf die Sie im linken Navigationsbereich im Abschnitt **Berichte** zugreifen können. Es stehen Verwendungsberichte und Sicherheits- und Kompatibilitätsberichte zur Verfügung.
   
-Die Berichte, die Ihnen zur Verfügung stehen, sind davon abhängig, welche Version von Office 365 Sie verwenden und welche Office 365-Dienste Sie aktiviert haben. Weitere Informationen finden Sie unter [Berichte](https://technet.microsoft.com/en-us/library/office-365-reports.aspx).
+Die Berichte, die Ihnen zur Verfügung stehen, sind davon abhängig, welche Version von Office 365 Sie verwenden und welche Office 365-Dienste Sie aktiviert haben. Weitere Informationen finden Sie unter [Berichte]((https://technet.microsoft.com/de-DE/library/office-365-reports.aspx)).
   
 Die vordefinierten Admin Center-Berichte sind eine exzellente Ressource, mit der sich solche Dinge wie die Postfachnutzung oder die Anzahl an Minuten, die Ihre Benutzer in Onlinekonferenzen verbracht haben, einfach prüfen lassen. Bei der detaillierten Analyse Ihrer Office 365-Domäne haben die Berichte jedoch ihre Beschränkungen.
   
@@ -45,7 +45,7 @@ Um einen Office 365-direkt in Excel zu öffnen, gehen Sie folgendermaßen vor:
   
 1. Öffnen Sie zunächst ein neues Arbeitsblatt in Excel. Klicken Sie in diesem Arbeitsblatt auf **Daten**, auf **Aus anderen Quellen** und dann auf **Aus OData-Datenfeed**. Dadurch wird das Dialogfeld **Datenverbindungs-Assistent** angezeigt:
     
-     ![Beispiel für das Dialogfeld „Datenfeld' im Datenverbindungs-Assistenten.](images/o365_reporting_connect_data_feed.png)
+     ![Beispiel für das Dialogfeld „Datenfeld“ im Datenverbindungs-Assistenten.](images/o365_reporting_connect_data_feed.png)
   
 2. Geben Sie auf der Seite **Verbindung mit einem Datenfeed herstellen** **https://reports.office365.com/ecp/reportingwebservice/reporting.svc/** als den Speicherort des Datenfeeds ein. Beachten Sie, dass Sie nur die Basis-URL wie angezeigt eingeben können. Sie können keine „Select"-, „Filter"- oder „Format"-Anweisungen hinzufügen. Wenn Sie etwas eingeben, was von der Basis-URL abweicht, werden keine Daten zurückgegeben. Es wird nur folgende Fehlermeldung angezeigt:
     
@@ -55,7 +55,7 @@ Um einen Office 365-direkt in Excel zu öffnen, gehen Sie folgendermaßen vor:
     
 4. Nach der Authentifizierung wird die Seite **Tabellen auswählen** angezeigt. Wählen Sie den anzuzeigenden Bericht aus (beispielsweise **MailTrafficTop** ), und klicken Sie dann auf **Weiter**:
     
-     ![Beispiel der Seite „Tabellen auswählen' des Datenverbindungs-Assistenten.](images/o365_reporting_select_tables.png)
+     ![Beispiel der Seite „Tabellen auswählen“ des Datenverbindungs-Assistenten.](images/o365_reporting_select_tables.png)
   
     > [!NOTE]
     > Es ist möglich, mehrere Berichte auszuwählen, was zur Folge hat, dass mehrere Tabellen/Diagramme zu Ihrer Excel-Tabelle hinzugefügt werden. Es ist sogar möglich, eine einzelne Tabelle bzw. ein einzelnes Diagramm zu erstellen, die bzw. das Daten aus mehreren Berichten kombiniert. Dies wird in diesem Einführungsartikel jedoch nicht erläutert. 
@@ -66,7 +66,7 @@ Um einen Office 365-direkt in Excel zu öffnen, gehen Sie folgendermaßen vor:
   
     Hier müssen Sie keine Informationen eingeben. Sie müssen nur auf **Fertig stellen** klicken, um Ihre Daten abzurufen. Beachten Sie jedoch, dass Excel Informationen über jede von Ihnen vorgenommene Datenverbindung speichert. Diese Daten werden in Ihrem Ordner **Meine Datenquellen** gespeichert:
     
-     ![Beispiel für das Dialogfeld „Datei speichern', für den Ordner „Meine Datenquellen'.](images/o365_reporting_save_data_source.png)
+     ![Beispiel für das Dialogfeld „Datei speichern“, für den Ordner „Meine Datenquellen“.](images/o365_reporting_save_data_source.png)
   
     Daher umfasst das Dialogfeld Textfelder mit Bezeichnungen wie **Anzeigename** und **Stichwörter der Suche**. Diese Optionen geben Ihnen die Möglichkeit, diese Datenverbindungen anzupassen. So müssen Sie sich nicht mit einer ganzen Reihe an Datenquellen herumschlagen, die so aussehen:
     
@@ -81,19 +81,19 @@ DataFeed_3_reports-office365-com ClientSoftwareBrowserDetail.odc
 
 Wenn Sie das Kontrollkästchen **Kennwort in Datei speichern** aktivieren, können Sie diese Datenfeeds erneut verwenden. Angenommen, Sie speichern eine Datenverbindung als **Clientbrowserbericht**. Wenn Sie das nächste Mal Informationen über den für den Zugriff auf Ihre Office 365-Domäne verwendeten Webbrowser benötigen, müssen Sie den Datenverbindungs-Assistenten nicht durchlaufen. Vielmehr müssen Sie nur Excel öffnen, auf **Daten** und dann auf **Vorhandene Quellen** klicken. Wählen Sie die gewünschte Datenverbindung im Dialogfeld **Vorhandene Verbindungen** aus, und klicken Sie dann auf **OK**:
     
-![Beispiel für das Auswählen der gewünschten Datenverbindung im Dialogfeld „Vorhandene Verbindungen'.](images/o365_reporting_select_connection.png)
+![Beispiel für das Auswählen der gewünschten Datenverbindung im Dialogfeld „Vorhandene Verbindungen“.](images/o365_reporting_select_connection.png)
   
 Nun stellt Excel die Verbindung her, um die Daten abzurufen.
     
 Beachten Sie, dass es sich bei diesen ODC-Dateien um Nur-Text-XML-Dateien handelt. In diesen Dateien sind Ihr Office 365-Benutzername und Kennwort enthalten:
     
-\<ODC:ConnectionString > Data Source = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/; Namespaces Einbeziehung = *; Maximale Nachrichtengröße empfangen = 4398046511104; Integrated Security = Basic; **Benutzer ID=admin@litwareinc.onmicrosoft.com; Kennwort = MYpassw0rd!**; Sicherheitsinformationen = False; Dienst Dokument Url = https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString >
+\<odc:ConnectionString>Data Source=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/;Namespaces to Include=*;Max Received Message Size=4398046511104;Integrated Security=Basic; **User ID=admin@litwareinc.onmicrosoft.com;Password=MYpassw0rd!**;Persist Security Info=false;Service Document Url=https://reports.office365.com/ecp/reportingwebservice/reporting.svc/\</odc:ConnectionString>
     
 Sie sollten das Kontrollkästchen **Kennwort in Datei speichern** nicht aktivieren, wenn Sie nicht möchten, dass Ihr Name und Ihr Kennwort in einer Nur-Text-Datei gespeichert werden. Wenn Sie dies vornehmen, müssen Sie jedoch berücksichtigen, dass Sie diese Datenverbindungen nicht wiederverwenden können. Ohne Benutzername und Kennwort kann Office 365 Ihren Anmeldeversuch bei dem Dienst nicht authentifizieren.
     
 6. Klicken Sie auf **Fertig stellen** auf der Seite **Datenverbindungsdatei speichern und fertig stellen**. Das Dialogfeld **Daten importieren** wird angezeigt:
     
-     ![Beispiel des Dialogfelds „Daten importieren'.](images/o365_reporting_import_data.png)
+     ![Beispiel des Dialogfelds „Daten importieren“.](images/o365_reporting_import_data.png)
   
 7. Wählen Sie Ihre Anzeigeoptionen aus (beispielsweise **PivotTable-Bericht** ), und klicken Sie dann auf **OK**. Wenn alles normal läuft, werden Ihre Daten importiert und anhand der von Ihnen ausgewählten Anzeigeoption dargestellt:
     
@@ -101,7 +101,7 @@ Sie sollten das Kontrollkästchen **Kennwort in Datei speichern** nicht aktivier
   
 Was Sie mit diesen Daten machen, ist Ihnen überlassen. Einige Empfehlungen finden Sie im Artikel [Erstellen eines Excel Services-Dashboards mithilfe eines OData-Datenfeeds](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx). Auch wenn in diesem Artikel der Office 365-Berichterstellungsdienst nicht verwendet wird, bietet er einige praktische Hinweise für das Erledigen von Dingen wie das Hinzufügen von Filtern und Slicern zu Ihrem neuen Dashboard.
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

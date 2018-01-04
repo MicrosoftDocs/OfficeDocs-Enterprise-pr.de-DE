@@ -1,5 +1,5 @@
 ---
-title: "Zugängliches Diagramm - Yammer-Features auf mobilen Geräten"
+title: "Zugängliches Diagramm – Yammer-Features auf mobilen Geräten"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b18f4ae4-cd83-4a66-8e33-a7d5a4c06659
-description: "Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Yammer-Features auf mobilen Geräten."
+description: "Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Yammer-Features auf mobilen Geräten“."
 ms.openlocfilehash: 82b73d245264018cd4d0ce17075930682ca2effa
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
-# <a name="accessible-diagram---yammer-features-on-mobile-devices"></a>Zugängliches Diagramm - Yammer-Features auf mobilen Geräten
+# <a name="accessible-diagram---yammer-features-on-mobile-devices"></a>Zugängliches Diagramm – Yammer-Features auf mobilen Geräten
 
-**Zusammenfassung:** Dieser Artikel ist eine Version verfügbaren Text des Diagramms mit dem Namen Yammer-Features auf mobilen Geräten.
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Yammer-Features auf mobilen Geräten“.
   
 Yammer bietet eine herausragende soziale Erfahrung auf mehreren Geräteplattformen. Dieses Diagramm zeigt einen Überblick über die Optionen von Yammer, Yammer auf mobilen Geräte und die mobile Yammer-App.
   
@@ -46,7 +46,7 @@ Die Benutzeroberfläche dieser Features kann auf den verschiedenen mobilen Gerä
   
 Auf dem Poster werden fünf Yammer-Features beschrieben, die in den folgenden Abschnitten angeordnet sind: 
   
-1. Messaging 
+1. Messaging  
     
 2. Gruppen 
     
@@ -60,7 +60,7 @@ Auf dem Poster werden fünf Yammer-Features beschrieben, die in den folgenden Ab
 
 In Yammer bestehen alle Gespräche und die gesamte Kommunikation aus Nachrichten. Benutzer erstellen und beantworten Nachrichten, die im Posteingang des Benutzers oder in den von ihm gefolgten Gruppen angezeigt werden. 
   
-Der begleitende Screenshot zeigt das Messaging in Yammer auf Windows Phone 8, und die folgenden Aufgaben und Features werden beschrieben. 
+Der begleitende Screenshot zeigt das Messaging in Yammer auf Windows Phone 8, und die folgenden Aufgaben und Features werden beschrieben. 
   
 - Verwenden Sie den Posteingang zum Überwachen und Verwalten der wichtigsten Gespräche in Yammer. Der Posteingang fasst Ihre @mentions, Gruppenankündigungen, Gespräche und privaten Nachrichten automatisch zusammen. 
     
@@ -138,7 +138,7 @@ Der begleitende Screenshot zeigt die lokalisierte Yammer-Benutzeroberfläche auf
   
 - Die unterstützten Dateitypen umfassen Office-Dokumente, PDF-Dateien, Bilder und Notizen.
     
-- Verwenden Sie das Feature „Anzeige durch Arbeitskollegen", um Dateien zu erkennen, die von Ihren Arbeitskollegen angezeigt werden.
+- Verwenden Sie das Feature „Anzeige durch Arbeitskollegen“, um Dateien zu erkennen, die von Ihren Arbeitskollegen angezeigt werden.
     
 - Öffnen und bearbeiten Sie Dateien mit Office Web Apps (wird in einem Webbrowser geöffnet, und Sie müssen sich eventuell anmelden).
     

@@ -18,7 +18,7 @@ ms.assetid: bef810a4-53f6-4962-878e-e20b5019baeb
 description: 'Zusammenfassung: Erfahren Sie, wie den Azure Access Control Service verwenden, um SharePoint Server 2013-Benutzer mit Azure Active Directory zu authentifizieren.'
 ms.openlocfilehash: 85db8376aeb06ef6f291b563410c991ea24351d5
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -121,9 +121,9 @@ Führen Sie die folgenden Schritte aus, um SharePoint als Anwendung der vertraue
   
 Weitere Informationen zu den Einstellungen der Anwendung der vertrauenden Seite finden Sie unter [Anwendungen der vertrauenden Seite](https://go.microsoft.com/fwlink/p/?LinkId=393125).
   
-1. Klicken Sie über das Portal Azure Access Control auf **Anwendungen vertrauenden Seite**, und klicken Sie dann auf **Hinzufügen**, wie in der folgenden Abbildung dargestellt.
+1. Klicken Sie im Azure Access Control-Portal auf **Anwendungen der vertrauenden Seite** > **Hinzufügen**, wie in der folgenden Abbildung dargestellt.
     
-     ![Relying Party-Anwendungseinstellungen](images/RelyingPartyApplications.jpg)
+     ![Anwendungseinstellungen der vertrauenden Seite](images/RelyingPartyApplications.jpg)
   
 ## <a name="create-a-self-signed-certificate-to-use-for-ssl"></a>Erstellen eines selbstsignierten für SSL zu verwendenden Zertifikats.
 
@@ -208,7 +208,7 @@ Führen Sie die folgenden Schritte zum Konfigurieren des X.509-Zertifikats aus, 
 
 Gehen Sie folgendermaßen vor, um eine Anspruchszuordnung mithilfe von Windows PowerShell zu erstellen.
   
-Stellen Sie sicher, dass Sie über die folgenden Mitgliedschaften verfügen:
+Vergewissern Sie sich, dass Sie über die folgenden Mitgliedschaften verfügen:
   
 1. Feste Serverrolle **securityadmin** auf der SQL Server-Instanz.
     
@@ -219,7 +219,7 @@ Stellen Sie sicher, dass Sie über die folgenden Mitgliedschaften verfügen:
 Ein Administrator kann mithilfe des **Add-SPShellAdmin** -Cmdlets Berechtigungen zur Verwendung des SharePoint 2013-Cmdlets gewähren.
   
 > [!NOTE]
-> Wenn Sie über keine Berechtigungen verfügen, kontaktieren Sie Ihren Setup-Administrator oder SQL Server-Administrator, um die Berechtigungen anzufordern. Weitere Informationen zu Windows PowerShell-Berechtigungen finden Sie unter [Add-SPShellAdmin](http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx). 
+> Wenn Sie über keine Berechtigungen verfügen, kontaktieren Sie Ihren Setup-Administrator oder SQL Server-Administrator, um die Berechtigungen anzufordern. Weitere Informationen zu Windows PowerShell-Berechtigungen finden Sie unter [Add-SPShellAdmin]((http://technet.microsoft.com/library/2ddfad84-7ca8-409e-878b-d09cb35ed4aa.aspx)). 
   
 1. Klicken Sie im **Startmenü** auf **Alle Programme**.
     
@@ -261,7 +261,7 @@ Ein Administrator kann mithilfe des **Add-SPShellAdmin** -Cmdlets Berechtigungen
 
 Gehen Sie zum Konfigurieren der SharePoint-Installation für den neuen Identitätsanbieter für Azure AD wie folgt vor.
   
-1. Vergewissern Sie sich, dass das Benutzerkonto, mit dem dieses Verfahren ausgeführt wird, Mitglied der SharePoint-Gruppe "Farmadministratoren" ist.
+1. Vergewissern Sie sich, dass das Benutzerkonto, mit dem dieses Verfahren ausgeführt wird, Mitglied der SharePoint-Gruppe Farmadministratoren ist.
     
 2. Klicken Sie in Zentraladministration auf der Startseite auf **Anwendungsverwaltung**.
     
@@ -322,7 +322,7 @@ Führen Sie die folgenden Schritte aus, um zu prüfen, ob der neuen Identitätsa
 |**Kontakt**|**Beschreibung**|
 |:-----|:-----|
 |**Welche Lösungen benötigen Sie?** <br/> |Wir entwickeln Inhalte für Lösungen auf Grundlage mehrerer Microsoft-Produkte und -Dienste. Lassen Sie uns wissen, was Sie von unseren serverübergreifenden Lösungen halten, oder fordern Sie spezifische Lösungen an, indem Sie eine E-Mail an [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) senden.<br/> |
-|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie über Cloud-basierte Lösungen engagierten sind, sollten Sie die Teilnahme an der Cloud Annahme Advisory Board (CAAB) für die Verbindung mit einer größeren, kräftige Community von Microsoft Entwickler von Inhalten, aus dem Gesundheitswesen Experten und Kunden aus der ganzen Welt. Um teilzunehmen, fügen Sie sich als Mitglied der [CAAB (Cloud Annahme Advisory Board) Speicherplatz](https://aka.ms/caab) der Community Tech Center für Microsoft hinzu, und senden Sie uns eine kurze e-Mail unter [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Alle Benutzer können Community-bezogenen Inhalte im [CAAB Blog](https://blogs.technet.com/b/solutions_advisory_board/)lesen. CAAB Mitglieder erhalten jedoch Einladungen an private Webinare, in denen neue Cloud-Migrationsressourcen und Lösungen beschrieben.<br/> |
-|**Die hier gezeigte Grafik abrufen** <br/> |Wenn Sie eine bearbeitbare Kopie der Grafik, die Sie in diesem Artikel sehen möchten, werden wir freuen an Sie gesendet werden. Ihre Anfrage, einschließlich der URL und der Titel der Art [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20)per e-Mail.<br/> |
+|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie sich für Cloud-basierte Lösungen interessieren, werden Sie Teil des Cloud Adoption Advisory Board (CAAB), um Zugriff auf eine größere, dynamische Community aus Microsoft-Inhaltsentwicklern, Branchenexperten und Kunden aus aller Welt zu haben. Um beizutreten, fügen Sie sich selbst als Mitglied des [CAAB (Cloud Adoption Advisory Board)-Bereichs]((https://aka.ms/caab)) der Microsoft Tech Community hinzu, und senden Sie uns eine E-Mail an [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Communityinhalte stehen allen Personen im [CAAB-Blog]((https://blogs.technet.com/b/solutions_advisory_board/)) zur Verfügung. CAAB-Mitglieder erhalten jedoch Einladungen zu privaten Webinaren, die neue Ressourcen und Lösungen für den Cloud-Einsatz beschreiben.<br/> |
+|**Die hier gezeigte Grafik abrufen** <br/> |Wenn Sie eine bearbeitbare Kopie der Grafik wünschen, die Sie in disem Artikel sehen, senden wir Sie Ihnen gerne zu. Senden Sie eine E-Mail mit der Anforderung einschließlich der URL und dem Titel der Grafik an [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
 

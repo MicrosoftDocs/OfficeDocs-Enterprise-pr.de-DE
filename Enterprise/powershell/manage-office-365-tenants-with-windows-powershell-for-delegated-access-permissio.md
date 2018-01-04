@@ -14,13 +14,13 @@ ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: "Zusammenfassung: Verwenden Sie Windows PowerShell für Office 365 zum Verwalten von Kundenmandanten."
 ms.openlocfilehash: 6001a6b40d2851d13e8fb74da615a2b8137f17ec
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten von Office 365-Mandanten mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)
 
- **Zusammenfassung:** Verwenden Sie Windows PowerShell für Office 365, um Ihre Kunden-Mandanten zu verwalten.
+ **Zusammenfassung:** Verwenden Sie Windows PowerShell für Office 365 zum Verwalten von Kundenmandanten.
   
 Windows PowerShell ermöglicht Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP) die einfache Verwaltung von Kundenmandanteneinstellungen sowie die Berichterstellung dazu. Dies ist in der Office 365 Admin Center nicht verfügbar. Beachten Sie, dass die Berechtigungen „Verwalten im Namen von" (Administer On Behalf Of, AOBO) für das Administratorkonto des Partners notwendig sind, um eine Verbindung mit seinem Kundenmandanten herstellen zu können.
   
@@ -56,7 +56,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### <a name="list-all-domains-for-a-tenant"></a>Auflisten aller Domänen für einen Mandanten
 
-Wenn Sie alle Domänen für alle Mandanten einen Kunden erhalten möchten, führen Sie diesen Befehl aus. Ersetzen Sie _<customer TenantId value>_ durch den tatsächlichen Wert.
+Um alle Domänen für einen einzigen Kundenmandanten aufzurufen, führen Sie den folgenden Befehl aus. Ersetzen Sie  _<customer TenantId value>_ durch den eigentlichen Wert.
   
 ```
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -74,7 +74,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### <a name="get-all-users-for-a-tenant"></a>Abrufen aller Benutzer für einen Mandanten
 
-Dadurch wird die **UserPrincipalName**, **DisplayName**und den Status " **IsLicensed** " für alle Benutzer für einen bestimmten Mandanten angezeigt. Ersetzen Sie _<customer TenantId value>_ durch den tatsächlichen Wert.
+Hierdurch werden der **UserPrincipalName**, der **DisplayName** und der Status **isLicensed** für alle Benutzer eines bestimmten Mandanten angezeigt. Ersetzen Sie _<customer TenantId value>_ durch den eigentlichen Wert.
   
 ```
 Get-MsolUser -TenantID <customer TenantId value>
@@ -82,7 +82,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### <a name="get-all-details-about-a-user"></a>Abrufen aller Details eines Benutzers
 
-Wenn Sie alle Eigenschaften eines bestimmten Benutzers anzeigen möchten, führen Sie diesen Befehl. Ersetzen Sie _<customer TenantId value>_ und _<user principal name value>_ mit den tatsächlichen Werten.
+Wenn Sie alle Eigenschaften eines bestimmten Benutzers anzeigen möchten, führen Sie den folgenden Befehl aus:  Ersetzen Sie _<customer TenantId value>_ und _<user principal name value>_ durch die eigentlichen Werte.
   
 ```
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>
@@ -98,7 +98,7 @@ Erstellen Sie eine CSV-Datei anhand dieses Formats:
   
 -  `UserPrincipalName,FirstName,LastName,DisplayName,Password,TenantId,UsageLocation,LicenseAssignment`
     
-Erläuterung:
+Dabei gilt:
   
 - **UsageLocation**: Der Wert hierfür ist der zweistellige ISO-Länder-/Regionscode des Benutzers. Die Länder-/Regioinscodes finden Sie auf der[ISO-Online-Browserplattform](https://go.microsoft.com/fwlink/p/?LinkId=532703). Der Code für die Vereinigten Staaten lautet z. B. „US", der Code für Brasilien „BR". 
     
@@ -112,7 +112,7 @@ Nachdem Sie die CSV-Datei erstellt haben, führen Sie den folgenden Befehl zum E
 Import-Csv .\\FILENAME.CSV | foreach {New-MsolUser -UserPrincipalName $_.UserPrincipalName -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -Password $_.Password -UsageLocation $_.UsageLocation -LicenseAssignment $_.LicenseAssignment -ForceChangePassword:$true -PasswordNeverExpires:$true -TenantId $_.TenantId}
 ```
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

@@ -14,21 +14,21 @@ ms.assetid: ae5f1a87-8b77-4f93-a1b8-56f800aeb283
 description: 'Zusammenfassung: Verwenden Sie eine Remotesitzung von Windows PowerShell, um eine Verbindung mit Exchange Online anhand des DelegatedOrg-Parameters herzustellen.'
 ms.openlocfilehash: 9bb6a5a316f4bc23c6586da825b8755cf755f484
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verbinden mit Exchange Online-Mandanten über eine Remotesitzung von Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)
 
- **Zusammenfassung:** Verwenden Sie remote Windows PowerShell für die Verbindung zu Exchange Online mithilfe des Parameters _DelegatedOrg_ .
+ **Zusammenfassung:** Verwenden Sie eine Remotesitzung von Windows PowerShell, um eine Verbindung mit Exchange Online anhand des _DelegatedOrg_-Parameters herzustellen.
   
 Mit Remote-Windows PowerShell können Sie die Exchange Online-Einstellungen über die Befehlszeile verwalten. Sie verwenden Windows PowerShell auf dem lokalen Computer und stellen eine Remotesitzung mit Exchange Online her. Dies ist ein Verfahren mit drei Schritten: Zuerst geben Sie Ihre Exchange Online-Anmeldeinformationen ein, dann geben Sie die erforderlichen Verbindungseinstellungen an, und zum Schluss importieren Sie die Exchange Online-Cmdlets in Ihre lokale Windows PowerShell-Sitzung, um Sie dafür verwenden zu können.
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
+- Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
     
-- Sie können folgende Windows-Versionen verwenden:
+- Sie können folgende Versionen von Windows verwenden:
     
   - Windows 10
     
@@ -57,7 +57,7 @@ DAP-Partner sind Syndication- und Cloudlösungsanbieter-Partner (CSP-Partner). H
   
 ## <a name="connect-to-exchange-online"></a>Herstellen einer Verbindung mit Exchange Online
 
-1. Öffnen Sie Windows PowerShell auf dem lokalen Computer, und führen Sie dann den folgenden Befehl aus.
+1. Öffnen Sie auf Ihrem lokalen Computer Windows PowerShell, und führen Sie dann den folgenden Befehl aus.
     
   ```
   $UserCredential = Get-Credential
@@ -65,7 +65,7 @@ DAP-Partner sind Syndication- und Cloudlösungsanbieter-Partner (CSP-Partner). H
 
     Geben Sie im Dialogfeld **Bei Windows PowerShell anmelden** Ihren DAP-Administratorbenutzernamen und das Kennwort ein, und klicken Sie dann auf **OK**.
     
-2. Führen Sie den folgenden Befehl, ersetzen _<customer tenant domain name>_ durch den Namen des Mandanten Domäne ein, die Sie mit verbinden möchten.
+2. Führen Sie den folgenden Befehl aus, wobei Sie _<customer tenant domain name>_ durch den Namen der Mandantendomäne ersetzen, mit der Sie eine Verbindung herstellen möchten.
     
   ```
   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid?DelegatedOrg=<customer tenant domain name>-Credential $UserCredential -Authentication Basic -AllowRedirection

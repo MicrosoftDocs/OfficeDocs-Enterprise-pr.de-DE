@@ -19,7 +19,7 @@ ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
 ms.openlocfilehash: a5e36060ed54213f555ab75a1d4ace7300b7667c
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -37,7 +37,7 @@ Der Zugriff auf SharePoint Online-Teamwebsites und die Aktionen, die Benutzer au
     
 - **Besucher**, die Ressourcen auf der Website nur anzeigen können.
     
-In diesem Artikel Schritte mit der Sie durch die Konfiguration von einer isolierten SharePoint Online-Teamwebsite für einen geheimen Forschungsprojekt ProjektX. Access Anforderungen müssen erfüllt sein:
+In diesem Artikel werden Sie durch die Konfiguration einer isolierten SharePoint Online-Teamwebsite für ein geheimes Forschungsprojekt mit dem Namen „ProjectX“ geführt. Die Zugriffsanforderungen sehen folgendermaßen aus:
   
 - Nur Mitglieder des Projekts können auf die Website und deren Inhalte (Dokumente, OneNote-Notizbuch, Seiten) über SharePoint-Berechtigungsstufen zum Bearbeiten und Anzeigen zugreifen, die über die Gruppenmitgliedschaft gesteuert werden.
     
@@ -45,16 +45,16 @@ In diesem Artikel Schritte mit der Sie durch die Konfiguration von einer isolier
     
 Das Einrichten einer isolierten SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung umfasst drei Phasen:
   
-1. Erstellen der Office 365-Entwicklungs-/Testumgebung.
+1. Erstellen der Office 365-Entwicklungs-/Testumgebung
     
 2. Erstellen der Benutzer und Gruppen für ProjectX.
     
 3. Erstellen einer neuen SharePoint Online-Teamwebsite für ProjectX und Isolieren der Website.
     
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
 Wenn Sie lediglich auf einfache Weise eine isolierte SharePoint Online-Teamwebsite mit den Mindestanforderungen erstellen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 unter [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md).
   
@@ -65,7 +65,7 @@ Wenn Sie eine isolierte SharePoint Online-Teamwebsite in einer simulierten Unter
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2: Erstellen von Benutzerkonten und Zugriffsgruppen
 
-Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:
+Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell]((https://technet.microsoft.com/library/dn975125.aspx)), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:
   
 - Ihrem Computer aus (für die einfache Office 365-Entwicklungs-/Testunternehmensumgebung).
     
@@ -86,9 +86,9 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
 > [!TIP]
-> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.
+> Klicken Sie [hier]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.
   
-Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany") und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:
+Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“) und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:
   
 ```
 $orgName="<organization name>"
@@ -100,7 +100,7 @@ New-MsolUser -DisplayName "Lead Designer" -FirstName Lead -LastName Designer -Us
 
 Notieren Sie aus der **New-MsolUser** -Befehlsanzeige das Kennwort, das für das Lead Designer-Konto generiert wurde, und bewahren Sie es an einem sicheren Ort auf.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "researcher@" + $orgName + ".onmicrosoft.com"
@@ -109,7 +109,7 @@ New-MsolUser -DisplayName "Lead Researcher" -FirstName Lead -LastName Researcher
 
 Notieren Sie aus der **New-MsolUser** -Befehlsanzeige das Kennwort, das für das Lead Researcher-Konto generiert wurde, und bewahren Sie es an einem sicheren Ort auf.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "devvp@" + $orgName + ".onmicrosoft.com"
@@ -135,11 +135,11 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 Ergebnisse:
   
-- Die Zugriffsgruppe „ProjectX-Members" enthält die Benutzerkonten „Lead Designer" und „Lead Researcher".
+- Die Zugriffsgruppe „ProjectX-Members“ enthält die Benutzerkonten „Lead Designer“ und „Lead Researcher“.
     
-- Die Zugriffsgruppe „ProjectX-Admins" enthält das globale Administratorkonto für das Testabonnement.
+- Die Zugriffsgruppe „ProjectX-Admins“ enthält das globale Administratorkonto für das Testabonnement.
     
-- Die Zugriffsgruppe „ProjectX-Viewers" enthält das Benutzerkonto „Development VP".
+- Die Zugriffsgruppe „ProjectX-Viewers“ enthält das Benutzerkonto „Development VP“.
     
 Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
   
@@ -151,7 +151,7 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
   
-1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [https://portal.office.com](https://portal.office.com) unter Verwendung des globalen Administratorkontos an.
+1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [(https://portal.office.com)]((https://portal.office.com)) unter Verwendung des globalen Administratorkontos an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -177,7 +177,7 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
     
 13. Geben Sie im Dialogfeld **Freigeben** **ProjectX-Members** ein, wählen Sie die Option aus, und klicken Sie dann auf **Freigeben**.
     
-14. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+14. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 15. Klicken Sie in der Liste auf **ProjectX-Owners**.
     
@@ -185,7 +185,7 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
     
 17. Geben Sie im Dialogfeld **Freigeben** **ProjectX-Admins** ein, wählen Sie die Option aus, und klicken Sie dann auf **Freigeben**.
     
-18. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+18. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 19. Klicken Sie in der Liste auf **ProjectX-Visitors**.
     
@@ -195,15 +195,15 @@ Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für Pr
     
 22. Schließen Sie die Registerkarte **Benutzer und Gruppen** in Ihrem Browser, klicken Sie auf die Registerkarte **ProjectX-Home** in Ihrem Browser, und schließen Sie dann den Bereich **Websiteberechtigungen**.
     
-Nachfolgend finden Sie die Ergebnisse der Konfiguration von Berechtigungen:
+Ergebnisse der Konfiguration von Berechtigungen:
   
-- Die SharePoint-Gruppe „ProjectX Members" enthält nur die Zugriffsgruppe „ProjectX-Members" (die nur die Benutzerkonten „Lead Designer" und „Lead Researcher" enthält) und die Gruppe „ProjectX" (die nur das Benutzerkonto des globalen Administrators enthält).
+- Die SharePoint-Gruppe „ProjectX Members“ enthält nur die Zugriffsgruppe „ProjectX-Members“ (die nur die Benutzerkonten „Lead Designer“ und „Lead Researcher“ enthält) und die Gruppe „ProjectX“ (die nur das Benutzerkonto des globalen Administrators enthält).
     
-- Die SharePoint-Gruppe „ProjectX Owners" enthält nur die Zugriffsgruppe „ProjectX-Admins" (die nur das Benutzerkonto des globalen Administrators enthält).
+- Die SharePoint-Gruppe „ProjectX Owners“ enthält nur die Zugriffsgruppe „ProjectX-Admins“ (die nur das Benutzerkonto des globalen Administrators enthält).
     
-- Die SharePoint-Gruppe „ProjectX Visitors" enthält nur die Zugriffsgruppe „ProjectX-Viewers" (die nur das Benutzerkonto „Development VP" enthält).
+- Die SharePoint-Gruppe „ProjectX Visitors“ enthält nur die Zugriffsgruppe „ProjectX-Viewers“ (die nur das Benutzerkonto „Development VP“ enthält).
     
-- Mitglieder können keine Berechtigungen auf Websiteebene ändern (dies kann nur von Mitgliedern der Gruppe „ProjectX-Admins" ausgeführt werden).
+- Mitglieder können keine Berechtigungen auf Websiteebene ändern (dies kann nur von Mitgliedern der Gruppe „ProjectX-Admins“ ausgeführt werden).
     
 - Andere Benutzerkonten können nicht auf die Website oder ihre Ressourcen zugreifen oder Zugriff auf die Website anfordern.
     
@@ -219,7 +219,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
     
-3. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit dem Kontonamen und Kennwort des Lead Designers an.
+3. Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort des Lead Designers an.
     
 4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -249,7 +249,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
   
-1. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit dem Kontonamen und Kennwort des Development VP an.
+1. Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort des Development VP an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -265,7 +265,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
     
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
   
-1. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit dem Kontonamen und Kennwort von Benutzer 3 an.
+1. Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort von Benutzer 3 an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -279,13 +279,13 @@ Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veransc
     
 7. Schließen Sie die Registerkarte **SharePoint** in Ihrem Browser, klicken Sie auf die Registerkarte **Microsoft Office Home**, klicken Sie auf den Namen **Benutzer 3**, und klicken Sie dann auf **Abmelden**.
     
-Ihre isolierten SharePoint Online-Website ist jetzt für die weitere Versuche bereit.
+Sie können nun weiter mit der isolierten SharePoint Online-Website experimentieren.
   
-## <a name="next-step"></a>Als Nächstes
+## <a name="next-step"></a>Nächster Schritt
 
 Wenn Sie eine isolierte SharePoint Online-Teamwebsite in der Produktion bereitstellen möchten, lesen Sie die schrittweisen Überlegungen zum Entwurf unter [Entwerfen einer isolierten SharePoint Online-Teamwebsite](design-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
   

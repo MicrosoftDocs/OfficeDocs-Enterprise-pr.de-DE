@@ -20,7 +20,7 @@ ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Zusammenfassung: Entwerfen Sie Ihre Identitätslösung für Microsoft Cloud-Dienste und -Plattformen."
 ms.openlocfilehash: f581711345b043d61de503360d101fbcc09de82e
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,15 +30,15 @@ ms.lasthandoff: 12/15/2017
   
 Dieser Artikel beschreibt, was IT-Architekten über das Entwerfen der Identität für Organisationen wissen müssen, die Microsoft Cloud-Dienste und -Plattformen verwenden. Sie können diesen Artikel auch als fünfseitiges Poster anzeigen und im Tabloid-Format (auch bekannt als Ledger, 11 x 17 oder A3) drucken.
   
-[![Ziehpunkt Bild für Microsoft Cloud Identitätsmodell](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
+[![Miniaturbild für Microsoft-Cloud-Identitätsmodell](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54431)
+![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54431)
   
-Können Sie auch finden Sie alle Modelle in die [Microsoft-Cloud-IT-Architektur-Ressourcen](microsoft-cloud-it-architecture-resources.md) und führen Sie über [von Microsoft Enterprise Cloud Roadmap: Ressourcen für IT-Entscheidungsträgern](https://aka.ms/cloudarchitecture).
+Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)) durchsuchen.
   
 > [!NOTE]
-> In diesem Artikel werden die Januar 2016-Version des Posters zur **Microsoft-Cloud-Identität für Enterprise-konstruiert** wiedergibt. Es enthält nicht die Änderungen für die April 2016 oder höhere Versionen des Posters zur.
+> Dieser Artikel spiegelt die Version vom Januar 2016 des Posters **Microsoft-Cloud-Identität für Enterprise-Architekten** wider. Er enthält nicht die Änderungen für die Posterversion vom April 2016 oder spätere Versionen des Posters.
   
 ## <a name="designing-identity-for-the-microsoft-cloud"></a>Entwerfen von Identität für die Microsoft-Cloud
 
@@ -66,11 +66,11 @@ Es gibt drei Azure AD-Editionen: Kostenlos, Basic und Premium.
 ||||
 |:-----|:-----|:-----|
 |**Kostenlos** <br/> |**Basic** <br/> |**Premium** <br/> |
-| Verwalten von Benutzerkonten <br/>  Synchronisieren mit lokalen Verzeichnissen <br/>  Einmaliges Anmelden in Azure, Office 365 und Tausenden von anderen gängigen SaaS-Anwendungen, z. B. Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox und mehr <br/> | Enthält alle Features der kostenlosen Edition plus: <br/>  Unternehmensbranding <br/>  Gruppenbasierter Anwendungszugriff <br/>  Zurücksetzen von Kennwörtern durch den Benutzer <br/>  Unternehmens-SLA von 99,9 % <br/> | Enthält alle Features der kostenlosen und der Basic-Edition plus: <br/>  Gruppenverwaltung durch den Benutzer <br/>  Erweiterte Sicherheitsberichte und Warnungen <br/>  Mehrstufige Authentifizierung <br/>  Zurücksetzen von Kennwörtern mit Write-Back in lokale AD DS <br/>  Bidirektionale Synchronisierung mit dem Azure AD Connect-Tool <br/>  Azure AD-Anwendungsproxy <br/>  Microsoft Forefront Identity Manager (MIM) <br/> |
+| Verwalten von Benutzerkonten <br/>  Synchronisieren mit lokalen Verzeichnissen <br/>  Einmaliges Anmelden in Azure, Office 365 und Tausenden von anderen gängigen SaaS-Anwendungen, z. B. Salesforce, Workday, Concur, DocuSign, Google Apps, Box, ServiceNow, Dropbox und mehr <br/> | Enthält alle Features der kostenlosen Edition plus: <br/>  Unternehmensbranding <br/>  Gruppenbasierter Anwendungszugriff <br/>  Zurücksetzen von Kennwörtern durch den Benutzer <br/>  Unternehmens-SLA von 99,9 % <br/> | Enthält alle Features der kostenlosen und der Basic-Edition plus: <br/>  Gruppenverwaltung durch den Benutzer <br/>  	Erweiterte Sicherheitsberichte und Warnungen <br/>  	Mehrstufige Authentifizierung <br/>  Zurücksetzen von Kennwörtern mit Write-Back in lokale AD DS <br/>  Bidirektionale Synchronisierung mit dem Azure AD Connect-Tool  <br/>  Azure AD-Anwendungsproxy <br/>  	Microsoft Forefront Identity Manager (MIM) <br/> |
    
 Weitere Informationen zu Versionen finden Sie unter [Azure Active Directory-Editionen](https://go.microsoft.com/fwlink/p/?LinkId=524280).
   
-### <a name="option-1-integrate-with-azure-active-directory"></a>Option 1: Integration in Azure Active Directory
+### <a name="option-1-integrate-with-azure-active-directory"></a>Option 1: Integration in Azure Active Directory
 
 Die meisten Organisationen synchronisieren einen Standardsatz aus Objekten und Attributen mit ihrem Azure AD-Mandanten. Das Azure AD Connect-Tool synchronisiert Ihre Konten zwischen den lokalen AD DS und einem Azure AD-Mandanten.
   
@@ -339,7 +339,7 @@ Abbildung 9 zeigt eine Reihe von lokalen Domänencontrollern, die AD DS-Informat
     
 - Alle Microsoft SaaS-Dienste
     
-- Anwendungen in Azure, die das Internet nutzen
+- Anwendungen in Azure, die Internetzugang haben
     
 - Anwendungen in Azure IaaS oder PaaS, die Authentifizierung mit einer Gruppe von Konten in den AD DS Ihrer Organisation erfordern
     
@@ -363,11 +363,11 @@ Abbildung 10 zeigt ein virtuelles Azure-Netzwerk, das eine Reihe von AD DS-Serve
     
 Weitere Informationen finden Sie unter [Integrieren Ihrer lokalen Identitäten in Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=524307).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

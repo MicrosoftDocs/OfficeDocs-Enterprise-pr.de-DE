@@ -11,13 +11,13 @@ ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: "Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namensMicrosoft Exchange 2013-Plattformoptionen, das unter Technische Diagramme verfügbar ist."
 ms.openlocfilehash: d81fe9947feee64d1dd75278738262d10c802ecc
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Verfügbares Diagramm - Microsoft Exchange 2013-Plattformoptionen
 
-**Zusammenfassung:** Dieser Artikel ist eine Version verfügbaren Text des Diagramms mit dem Namen Microsoft Exchange 2013-Plattformoptionen, die unter [Technical Diagrams](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409)verfügbar ist.
+**Zusammenfassung:** Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter [Technische Diagramme](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409) verfügbar ist.
   
 Dieses Poster beschreibt, was Unternehmensentscheidungsträger (Business Decision Makers, BDMs) und -architekten über Exchange Online- und Exchange Server-Bereitstellungen wissen müssen. Es umfasst Folgendes: 
   
@@ -47,7 +47,7 @@ Sie gewinnen Effizienz und senken die Kosten mit Office 365.
   
 Das begleitende Diagramm zeigt Exchange Online mit einem Azure Active Directory-Mandanten, der Kontonamen und Kennwörter zwischen der lokalen Active Directory-Domänendienste (AD DS)-Umgebung und dem Azure Active Directory-Mandanten synchronisiert. Active Directory-Verbunddienste (AD FS) ist für einmaliges Anmelden (Single Sign-On) erforderlich. 
   
-Beschreibung der Features und Funktionen:
+Beschreibung von Features und Funktionen:
   
 - Der Betrieb von Servern und Serversoftware erfolgt durch Microsoft.
     
@@ -254,29 +254,29 @@ Die Verantwortlichkeiten der IT-Mitarbeiter Ihrer Organisation umfassen das Erst
 
 Weitere Informationen zu Exchange Online (Office 365) finden Sie hier:
   
-- [Exchange Online-Dienstbeschreibung](https://aka.ms/EXOSD)
+- [Exchange Online-Dienstbeschreibung](((https://aka.ms/EXO)SD))
     
-- [Exchange Online-Bibliothek auf TechNet](https://aka.ms/EXOTN)
+- [Exchange Online-Bibliothek auf TechNet](((https://aka.ms/EXO)TN))
     
-- [Exchange Online-Portal](https://aka.ms/EXO)
+- [Exchange Online-Portal]((https://aka.ms/EXO))
     
 Weitere Informationen zu Exchange Hybrid finden Sie hier:
   
-- [Exchange 2013-Hybridbereitstellungen](https://aka.ms/ExchangeHybrid). Beachten Sie, dass die Hybrid-Serverlizenz nur für die folgenden Szenarios erforderlich ist: Exchange 2010-Organisation mit Exchange 2013-Hybridserver und Exchange 2007-Organisation mit Exchange 2013- oder Exchange 2010-Hybridserver.
+- [Exchange 2013-Hybridbereitstellungen]((https://aka.ms/ExchangeHybrid)). Beachten Sie, dass die Hybrid-Serverlizenz nur für die folgenden Szenarios erforderlich ist: Exchange 2010-Organisation mit Exchange 2013-Hybridserver und Exchange 2007-Organisation mit Exchange 2013- oder Exchange 2010-Hybridserver.
     
-- [Office 365-Anmeldung](https://aka.ms/HybridKey)
+- [Office 365-Anmeldung]((https://aka.ms/HybridKey))
     
 Weitere Informationen zu Exchange Server (lokal) finden Sie hier:
   
-- [Exchange Server 2013-Bibliothek auf TechNet](https://aka.ms/Ex2013TN)
+- [Exchange Server 2013-Bibliothek auf TechNet]((https://aka.ms/Ex2013TN))
     
-- [Exchange Server 2013-Portal](https://aka.ms/Exchange2013)
+- [Exchange Server 2013-Portal]((https://aka.ms/Exchange2013))
     
-- [Exchange Server 2013-Architektur](https://aka.ms/Ex2013SP1ArchPoster)
+- [Exchange Server 2013-Architektur]((https://aka.ms/Ex2013SP1ArchPoster))
     
 Weitere Informationen zu Provider-Hosted Exchange finden Sie hier:
   
-[Exchange Server 2013-Hosting und Lösungen mit mehreren Mandanten sowie Anleitungen](https://aka.ms/Ex2013Hosting)
+[Exchange Server 2013-Hosting und Lösungen mit mehreren Mandanten sowie Anleitungen]((https://aka.ms/Ex2013Hosting))
   
 ## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a>Beschreibung von drei neuen oder aktualisierten Features in Exchange 2013
 

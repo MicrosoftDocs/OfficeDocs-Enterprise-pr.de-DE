@@ -17,13 +17,13 @@ ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 'Zusammenfassung: Erfahren Sie, wie Sie Benutzerkonten und Lizenzen mit Office 365 PowerShell verwalten.'
 ms.openlocfilehash: 860fec08199d8897d7caee90d077f2956600972a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Verwalten von Benutzerkonten und Lizenzen mit Office 365 PowerShell
 
- **Zusammenfassung:** Informationen Sie zum Verwalten von Benutzerkonten und-Lizenzen mit Office 365 PowerShell.
+ **Zusammenfassung:** Erfahren Sie, wie Sie Benutzerkonten und Lizenzen mit Office 365 PowerShell verwalten.
   
 Eine der Hauptaufgaben jedes Office 365-Administrators besteht darin, Benutzerkonten und -lizenzen zu verwalten. Obwohl Sie einige dieser Aufgaben in Office 365 Admin Center bewältigen können, sind andere Vorgänge mit Office 365 PowerShell viel schneller und einfacher durchzuführen. Weitere Informationen hierzu finden Sie in den folgenden Themen:
   

@@ -14,13 +14,13 @@ ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Zusammenfassung: Verwenden Sie Windows PowerShell für Office 365 zum Hinzufügen eines alternativen Domänennamens zu einem vorhandenen Kundenmandanten."
 ms.openlocfilehash: 182750a5706dbb23c6207c6bd63334cbf2a2a795
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Hinzufügen einer Domäne zu einem Kundenmandanten mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
 
- **Zusammenfassung:** Verwenden von Windows PowerShell für Office 365 hinzufügen einen alternativen Domänennamen zu einem vorhandenen Kunden-Mandanten.
+ **Zusammenfassung:** Verwenden Sie Windows PowerShell für Office 365 zum Hinzufügen eines alternativen Domänennamens zu einem vorhandenen Kundenmandanten.
   
 Mit Windows PowerShell für Office 365 können Sie schneller als mit der Office 365 Admin Center neue Domänen erstellen und sie einem Kundenmandanten zuweisen.
   
@@ -112,7 +112,7 @@ Dadurch wird in etwa Folgendes zurückgegeben
 | `Name` <br/> | `Status` <br/> | `Authentication` <br/> |
 | `FQDN of new domain` <br/> | `Verified` <br/> | `Managed` <br/> |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

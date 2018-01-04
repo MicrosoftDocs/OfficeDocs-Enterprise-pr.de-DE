@@ -18,21 +18,21 @@ ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Erläutert das Verwenden von Office 365 PowerShell zum Anzeigen von lizenzierten und nicht lizenzierten Benutzerkonten."
 ms.openlocfilehash: aa8c38864f3abf98f1aa5c8149db08506c6f7668
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Anzeigen lizenzierter und nicht lizenzierter Benutzer mit Office 365 PowerShell
 
-**Zusammenfassung:** Erläutert, wie Office 365 PowerShell verwenden, um die lizenzierte und nicht lizenzierter Benutzerkonten anzuzeigen.
+**Zusammenfassung:** Erläutert das Verwenden von Office 365 PowerShell zum Anzeigen von lizenzierten und nicht lizenzierten Benutzerkonten.
   
 Benutzerkonten in Ihrer Office 365-Organisation sind möglicherweise einige, alle oder keine der verfügbaren Lizenzen aus den Lizenzierungsplänen zugewiesen, die in Ihrer Organisation verfügbar sind. Mit Office 365 PowerShell können Sie lizenzierte und nicht lizenzierte Benutzer in Ihrer Organisation schnell finden.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 - Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
     
-- Wenn Sie das Cmdlet **Get-MsolUser** ohne Verwenden der _-Alle_ Parameter, der nur die ersten 500 Konten werden zurückgegeben.
+- Bei Verwendung des **Get-MsolUser**-Cmdlets ohne den _-All_-Parameter werden nur die ersten 500 Konten zurückgegeben.
     
 ## <a name="the-short-version-instructions-without-explanations"></a>Die Kurzfassung (Anweisungen ohne Erläuterungen)
 
@@ -58,9 +58,9 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="the-long-version-instructions-with-detailed-explanations"></a>Die Langfassung (Anweisungen mit detaillierten Erläuterungen)
 
-Office 365-Benutzerkonten und Lizenzen für Office 365 müssen keine 1: 1-Beziehung aufweisen: Es ist möglich, die Office 365-Benutzer haben, die nicht über Office 365-Lizenz verfügen, und es ist möglich, dass Office 365-Lizenzen, die einem Benutzer zugewiesen wurden noch nicht. (Tatsächlich kann ein einzelnes Benutzerkonto auch *mehrere* Office 365 Lizenzen haben.) Beim Erstellen ein neues Office 365-Benutzers beifügen (Siehe Weitere Informationen im Artikel [Lizenz Office 365-Benutzer mit Windows PowerShell](http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx) ) Sie keinen der Benutzer eine Lizenz zuweisen: der neue Benutzer muss ein gültiges Konto, aber er nicht möglich, zur Anmeldung bei problemlos bewältigen lassen CE 365. Wenn sie versuchen, melden Sie sich, sehen sie dann in etwa so:
+Office 365-Benutzerkonten und Office 365-Lizenzen müssen sich nicht eins zu eins entsprechen: Es ist möglich, Office 365-Benutzer ohne Office 365-Lizenz zu haben, und ebenso können Sie Office 365-Lizenzen haben, die keinem Benutzer zugewiesen wurden. (Tatsächlich kann ein einzelnes Benutzerkonto sogar über *mehrere* Office 365-Lizenzen verfügen.) Wenn Sie ein neues Office 365-Benutzerkonto erstellen (wie im Artikel[Lizenzieren von Office 365-Benutzern mit Windows PowerShell]((http://technet.microsoft.com/library/0ab9fcac-e5ea-4b5b-b72c-8c92c55565ac.aspx)) beschrieben), müssen Sie dem Benutzer keine Lizenz zuweisen: Der neue Benutzer hat dann ein gültiges Konto, kann sich aber nicht bei Office 365 anmelden. Wenn er versucht sich anzumelden, wird in etwa Folgendes angezeigt:
   
-![Benutzer ohne gültige Office 365-Lizenz.](images/o365_powershell_no_license.png)
+![Benutzer ohne gültige Office 365-Lizenz.](images/o365_powershell_no_license.png)
   
 Ebenso können Sie einen Benutzer haben, der sich längere Zeit frei nimmt, beispielsweise für ein Sabbatjahr oder die Elternzeit. In einem solchen Fall könnten Sie die Lizenz des Benutzers entfernen, das Benutzerkonto aber intakt lassen (das heißt, alle Eigenschaftswerte wie Adresse und Telefonnummer beibehalten). So können Sie dessen Lizenz einem anderen Benutzer zuweisen (beispielsweise dem temporären Mitarbeiter, der die Aufgaben des abwesenden Mitarbeiters übernimmt). Wenn der Benutzer an seinen Arbeitsplatz zurückkehrt, können Sie ihm eine neue Lizenz ausstellen, und dann kann er seine Arbeit wieder aufnehmen, als wäre er nie fort gewesen.
   

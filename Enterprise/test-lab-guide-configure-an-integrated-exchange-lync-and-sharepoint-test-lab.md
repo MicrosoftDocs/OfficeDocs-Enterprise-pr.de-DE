@@ -12,13 +12,13 @@ ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: "Zusammenfassung: Erfahren Sie, wie Sie eine integrierte Testumgebung erstellen, in der ein Server mit Exchange Server 2013, ein Server mit Lync Server 2013 und ein Server mit SharePoint Server 2013 ausgeführt werden."
 ms.openlocfilehash: 6fc3bc05db0d28bc4de2be77671ccf5e8fc55926
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Testumgebungsanleitung: Konfigurieren einer integrierten Exchange-, Lync- und SharePoint-Testumgebung
 
- **Zusammenfassung:** Erfahren Sie, wie eine integrierte Testlabor erstellen, enthält einen Server, der Exchange Server 2013 ausgeführt wird, einem Server mit Lync Server 2013 und einem Server mit SharePoint Server 2013.
+ **Zusammenfassung: ** Erfahren Sie, wie Sie eine integrierte Testumgebung erstellen, in der ein Server mit Exchange Server 2013, ein Server mit Lync Server 2013 und ein Server mit SharePoint Server 2013 ausgeführt werden.
   
 Die Testumgebung, die aus dieser Konfiguration resultiert und die Server-zu-Server-Authentifizierung zwischen allen drei Servertypen vorsieht, kann verwendet werden, um Szenarien und Lösungen mit mehreren Produkten zu erstellen und zu veranschaulichen, in denen ein Server mit Exchange Server 2013, ein Server mit Lync Server 2013 und ein Server mit SharePoint Server 2013 ausgeführt werden.
   
@@ -26,7 +26,7 @@ Dieses Dokument enthält Anleitungen zu den folgenden Punkten:
   
 1. Konfigurieren der Testumgebung "Windows Server 2012-Basiskonfiguration"
     
-2. Installieren und Konfigurieren eines neuen Servers mit dem Namen SQL1
+2. Installieren und Konfigurieren des neuen Servers SQL1
     
 3. Installieren von SQL Server 2012 auf dem Server SQL1
     
@@ -46,13 +46,13 @@ Dieses Dokument enthält Anleitungen zu den folgenden Punkten:
 
 ![Videosymbol (Wiedergabetaste)](images/mod_icon_video_M.png)
   
-Weitere Informationen zum Konfigurieren dieser Testumgebung in Hyper-V finden Sie unter [Hosten der integrierten Exchange-, Lync- und SharePoint-Testumgebung mit Windows Server 2012 Hyper-V](https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx).
+Weitere Informationen zum Konfigurieren dieser Testumgebung in Hyper-V finden Sie unter [Hosten der integrierten Exchange-, Lync- und SharePoint-Testumgebung mit Windows Server 2012 Hyper-V]((https://social.technet.microsoft.com/wiki/contents/articles/18483.hosting-the-integrated-exchange-lync-and-sharepoint-test-lab-with-windows-server-2012-hyper-v.aspx)).
   
 ## <a name="download-the-test-lab-guide"></a>Die Testumgebungsanleitung herunterladen
 
 [Testumgebungsanleitung: Konfigurieren einer integrierten Exchange-, Lync- und SharePoint-Testumgebung ](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Testumgebungsanleitungen](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

@@ -20,7 +20,7 @@ ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Zusammenfassung: Wie in einer fiktiven, aber repräsentativen globalen Organisation mithilfe der Cloudangebote von Microsoft eine cloudeinschließende IT-Infrastruktur eingeführt wurde."
 ms.openlocfilehash: 17ee633c13f50db4c1de630a5c006506d9d79ece
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/15/2017
   
 Dieser Artikel enthält Links zu einer Reihe von Artikeln, in denen beschrieben wird, wie die Contoso Corporation, ein globaler Mischkonzern im Fertigungsbereich mit Firmensitz in Paris, eine IT-Infrastruktur inklusive Cloud umsetzt und dabei wichtige Designentscheidungen in puncto Netzwerk, Identität und Sicherheit getroffen hat. Außerdem ist darin die Implementierung von Unternehmenscloud-Szenarios und die Lösung von Geschäftsproblemen erläutert. Sie können diesen Artikel auch als zehnseitiges Poster anzeigen und im Tabloid-Format ausdrucken (auch bekannt als Ledger, 11 × 17 oder A3).
   
-[![Ziehpunkt Bild die "Contoso" in der Microsoft-Cloud-Poster.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
+[![Miniaturbild von Contoso im Microsoft Cloud-Poster.](images/Contoso_Poster/Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54427)
   
 ![PDF-Datei](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842085)  | ![Visio-Datei](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842086)  | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/Common_Images/GlobeIcon.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54427)
   
@@ -38,11 +38,12 @@ Lesen Sie die folgenden Abschnitte:
   
 - [Hybrid Cloud-Übersicht](hybrid-cloud-overview.md)
     
-    Die Contoso Corporation ist ein globaler Mischkonzern im Bereich Fertigung, Vertrieb und Support mit einem Portfolio aus über 100.000 Produkten.
+    Die Contoso Corporation ist ein globaler Mischkonzern im Bereich Fertigung, Vertrieb und Support mit einem Portfolio aus über 100.000 Produkten.
     
 - [Contosos IT-Infrastruktur und -Anforderungen](contoso-it-infrastructure-and-needs.md)
     
     Contoso ist dabei, von der lokalen zentralen IT-Infrastruktur auf eine cloudeinschließende Infrastruktur umzustellen, die aus cloudbasierten persönlichen Produktivitätsarbeitslasten, Anwendungen und Hybridszenarien besteht.
+
     
 - [Netzwerkfunktionen für die Contoso Corporation](networking-for-the-contoso-corporation.md)
     
@@ -54,7 +55,7 @@ Lesen Sie die folgenden Abschnitte:
     
 - [Abonnements, Lizenzen und Benutzerkonten für die Contoso Corporation](subscriptions-licenses-and-user-accounts-for-the-contoso-corporation.md)
     
-    Contoso verwendet die Hierarchie „Organisation/Abonnements/Lizenzen/Benutzerkonten", um auf die Cloudangebote von Microsoft zuzugreifen.
+    Contoso verwendet die Hierarchie „Organisation/Abonnements/Lizenzen/Benutzerkonten“, um auf die Cloudangebote von Microsoft zuzugreifen.
     
 - [Sicherheit für die Contoso Corporation](security-for-the-contoso-corporation.md)
     
@@ -67,11 +68,11 @@ Lesen Sie die folgenden Abschnitte:
 > [!NOTE]
 > In diesen Artikeln wird die Version vom **September 2017** des Posters „Contoso in der Microsoft-Cloud" widergespiegelt.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

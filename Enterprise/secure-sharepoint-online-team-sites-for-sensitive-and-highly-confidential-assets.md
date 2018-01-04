@@ -15,16 +15,16 @@ ms.custom:
 - DecEntMigration
 - Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
-description: "Zusammenfassung: Wie Contoso vertrauliche Schutz und streng vertraulich SharePoint Online Teamwebsites für einfachere implementiert, zentriert noch sichere Zusammenarbeit für die Führungskräfte und seine Research."
+description: "Zusammenfassung: Wie Contoso den Schutz sensibler Daten und streng vertrauliche SharePoint Online-Teamwebsites für die einfachere, aber dennoch sichere Zusammenarbeit von Führungskräften und Forschungszentren implementierte hat."
 ms.openlocfilehash: 1574babb54bfcb3fd74fb8ce4f31c364bb96b14a
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sichere SharePoint Online-Teamwebsites für sensible und streng vertrauliche Daten
 
- **Zusammenfassung:** Wie Teamwebsites vertrauliche Protection Contoso implementiert und streng vertraulich SharePoint Online für die Zusammenarbeit mit einfacher, doch sicherer, für die Führungskräfte und seine Research Center.
+ **Zusammenfassung:** Wie Contoso den Schutz sensibler Daten und streng vertrauliche SharePoint Online-Teamwebsites für die einfachere, aber dennoch sichere Zusammenarbeit von Führungskräften und Forschungszentren implementierte hat.
   
 Die Führungsebene von Contoso möchte Office 365 nutzen und ihre Dateien an einem zentralen Ort speichern, sodass Zusammenarbeit unabhängig vom Aufenthaltsort einer Führungskraft möglich ist. Entsprechend möchten die Forschungsabteilungen von Contoso - mit Vertretungen in Paris, Moskau, New York, Peking und Bangalore - ihre lokalen digitalen Bestände in die Cloud überführen, um leichter darauf zugreifen zu können und eine offenere Zusammenarbeit zwischen Teams zu ermöglichen.
   
@@ -40,7 +40,7 @@ Contoso hat die folgenden Schritte ausgeführt, um sichere SharePoint Online-Tea
   
 1. Erstellen einer vertraulichen SharePoint Online-Teamwebsite für **Führungskräfte**
     
-    Die neue Teamwebsite verwendet vorhandene Azure Active Directory (AD)-Gruppen für Führungskräfte als Mitglieder mit der SharePoint-Berechtigungsstufe „Bearbeiten" und eine kleine Gruppe von SharePoint-Administratorkonten als Besitzer mit der Berechtigungsstufe „Vollzugriff".
+    Die neue Teamwebsite verwendet vorhandene Azure Active Directory (AD)-Gruppen für Führungskräfte als Mitglieder mit der SharePoint-Berechtigungsstufe „Bearbeiten“ und eine kleine Gruppe von SharePoint-Administratorkonten als Besitzer mit der Berechtigungsstufe „Vollzugriff“.
     
 2. Migrieren der Dateien der Führungskräfte
     
@@ -56,11 +56,11 @@ Contoso hat die folgenden Schritte ausgeführt, um sichere SharePoint Online-Tea
     
 Das Ergebnis sind zwei Zusammenarbeitswebsites, deren Zugriff von Sicherheits- und SharePoint-Administratoren streng kontrolliert wird. Dateien mit dem AIP-Bezeichnung „Streng vertraulich" werden auch dann verschlüsselt, wenn sie außerhalb der Forschungs-Teamwebsite verteilt werden, und können nur von einem Mitglied eines Forschungsteams geöffnet werden.
   
-Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
+Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).
   
- Um diese für Demo, Nachweis der Machbarkeit oder Test-/einzurichten, finden Sie unter [Secure SharePoint Online-Websites in einer Test-/-Umgebung](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
+ Informationen zum Einrichten dieses Szenarios für eine Demonstration, Machbarkeitsstudie oder zu Entwicklungs-/Testzwecken finden Sie unter[SharePoint Online-Websites in einer Dev/Test-Umgebung]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Enterprise-Szenarien für die Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   
@@ -68,9 +68,9 @@ Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites u
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch-Datenbank](https://msdn.microsoft.com/library/dn935011.aspx)
+[Stretch-Datenbank]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

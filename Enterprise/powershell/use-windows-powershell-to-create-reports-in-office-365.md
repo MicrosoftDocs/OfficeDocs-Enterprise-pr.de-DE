@@ -16,13 +16,13 @@ ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: "Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Erstellen von Berichten, die Sie im Office 365 Admin Center nicht erzeugen können."
 ms.openlocfilehash: b1cbbbef73a266a62a417d2714fefcd630c604c4
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Verwenden der Windows PowerShell zum Erstellen von Berichten in Office 365
 
- **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Erstellen von Berichten, die Sie in der Office 365-Verwaltungskonsole erzeugen können.
+ **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Erstellen von Berichten, die Sie im Office 365 Admin Center nicht erzeugen können.
   
 Im Office 365 Admin Center stehen zahlreiche Berichte zur Verfügung. Allerdings sind die Informationen in diesen Berichten in einigen Fällen nicht ausreichend. In diesen Fällen benötigen Sie Office 365 PowerShell.
   
@@ -46,19 +46,19 @@ In den folgenden Artikeln wird beschrieben, wie Sie mit Office 365 PowerShell In
     
   - [Anzeigen von Benutzerkonten mit Office 365 PowerShell](view-user-accounts-with-office-365-powershell.md)
     
-- Berichte für SharePoint Online:
+- Berichte für SharePoint Online:
     
-  - [Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)
+  - [Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 PowerShell]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))
     
-  - [Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)
+  - [Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))
     
-- Berichte für Exchange Online:
+- Berichte für Exchange Online:
     
-  - [Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)
+  - [Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx))
     
-  - [Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)
+  - [Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx))
     
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

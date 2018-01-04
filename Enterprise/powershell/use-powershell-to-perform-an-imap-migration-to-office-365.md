@@ -14,13 +14,13 @@ ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: "Zusammenfassung: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine IMAP-Migration zu Office 365 auszuführen."
 ms.openlocfilehash: 6187207d57723c9c69fa6fdc7885c91de6d5080f
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer IMAP-Migration zu Office 365
 
- **Zusammenfassung:** Hier erfahren Sie, wie Sie mithilfe von Windows PowerShell zum Ausführen einer IMAP-Migrations zu Office 365.
+ **Zusammenfassung**: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine IMAP-Migration zu Office 365 auszuführen.
   
 Als Teil des Bereitstellungsprozesses von Office 365 können Sie auswählen, ob Sie die Inhalte von Benutzerpostfächern aus Ihrem IMAP-E-Mail-Dienst (Internet Mail Access Protocol) zu Office 365 migrieren möchten. Dieser Artikel führt Sie durch die Aufgaben für eine IMAP-Migration mithilfe von Exchange Online PowerShell. 
   
@@ -43,11 +43,11 @@ Folgende Einschränkungen gelten für IMAP-Migrationen:
     
 - Maximal 500.000 Elemente können aus dem Postfach eines Benutzers migriert werden.
     
-- Die maximale Nachrichtengröße, die migriert werden kann, beträgt 35 MB.
+- Die maximale Nachrichtengröße, die migriert werden kann, beträgt 35 MB.
     
 ## <a name="migration-steps"></a>Migrationsschritte
 
-### <a name="step-1-prepare-for-an-imap-migration"></a>Schritt 1: IMAP-Migration vorbereiten
+### <a name="step-1-prepare-for-an-imap-migration"></a>Schritt 1: IMAP-Migration vorbereiten
 <a name="BK_Step1"> </a>
 
 - **Wenn Sie eine Domäne für die IMAP-Organisation haben, fügen Sie sie als akzeptierte Domäne Ihrer Office 365-Organisation hinzu.** Wenn Sie dieselbe Domäne verwenden möchten, die Sie bereits für Ihre Office 365-Postfächer besitzen, müssen Sie sie zunächst als akzeptierte Domäne zu Office 365 hinzufügen. Nach dem Hinzufügen können Sie Ihre Benutzer in Office 365 erstellen. Weitere Informationen finden Sie unter[Überprüfen Ihrer Domäne in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
@@ -72,7 +72,7 @@ Folgende Einschränkungen gelten für IMAP-Migrationen:
 
     Normalerweise wird für den **Port** -Parameter der Wert 143 für unverschlüsselte oder TLS-Verbindungen (Transport Layer Security) verwendet und der Wert 993 für SSL-Verbindungen.
     
-### <a name="step-2-create-a-csv-file-for-an-imap-migration-batch"></a>Schritt 2: CSV-Datei für einen IMAP-Migrationsbatch erstellen
+### <a name="step-2-create-a-csv-file-for-an-imap-migration-batch"></a>Schritt 2: CSV-Datei für einen IMAP-Migrationsbatch erstellen
 <a name="BK_Step2"> </a>
 
 Identifizieren Sie die Gruppe der Benutzer, deren Postfächer Sie in einem IMAP-Migrationsbatch migrieren möchten. Jede Zeile in der CSV-Datei enthält Informationen, die zum Herstellen einer Verbindung mit einem Postfach im IMAP-Messaging-System erforderlich sind.
@@ -85,7 +85,7 @@ Die folgenden Attribute sind für jeden Benutzer erforderlich:
     
 - **Password** gibt das Kennwort für das Konto in der Spalte UserName **UserName** an.
     
-Das folgende Beispiel zeigt das Format der CSV-Datei. In diesem Beispiel werden drei Postfächer migriert:
+Das folgende Beispiel zeigt das Format der CSV-Datei. In diesem Beispiel werden drei Postfächer migriert:
   
 ```
 EmailAddress,UserName,Password
@@ -144,14 +144,14 @@ annb@contoso.edu,mailadmin,P@ssw0rd,/users/ann.beebe
 paulc@contoso.edu,mailadmin,P@ssw0rd,/users/paul.cannon
 ```
 
-### <a name="step-3-create-an-imap-migration-endpoint"></a>Schritt 3: IMAP-Migrationsendpunkt erstellen
+### <a name="step-3-create-an-imap-migration-endpoint"></a>Schritt 3: IMAP-Migrationsendpunkt erstellen
 <a name="BK_Step3"> </a>
 
 Um E-Mails erfolgreich zu migrieren, muss Office 365 eine Verbindung zum E-Mail-Quellsystem herstellen und mit ihm kommunizieren. Zu diesem Zweck verwendet Office 365 einen Migrationsendpunkt. Der Migrationsendpunkt definiert außerdem die Anzahl der Postfächer, die gleichzeitig migriert werden, sowie die Anzahl der Postfächer, die gleichzeitig während einer inkrementellen Synchronisierung synchronisiert werden, die alle 24 Stunden auftritt. Um einen Migrationsendpunkt für die IMAP-Migration zu erstellen, [stellen Sie zunächst eine Verbindung mit Exchange Online her](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- und Migrations-Cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
-Zum Erstellen eines IMAP-Migrationsendpunkts namens „IMAPEndpoint" in Exchange Online PowerShell, führen Sie den folgenden Befehl aus:
+Zum Erstellen eines IMAP-Migrationsendpunkts namens „IMAPEndpoint“ in Exchange Online PowerShell, führen Sie den folgenden Befehl aus:
   
 ```
 New-MigrationEndpoint -IMAP -Name IMAPEndpoint -RemoteServer imap.contoso.com -Port 993 -Security Ssl
@@ -169,18 +169,18 @@ Weitere Informationen zu den **New-MigrationEndpoint** -Cmdlets finden Sie unter
   
 #### <a name="verify-it-worked"></a>Stellen Sie die Funktion sicher
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um Informationen über den „IMAPEndpoint" anzuzeigen:
+Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um Informationen über den „IMAPEndpoint“ anzuzeigen:
   
 ```
 Get-MigrationEndpoint IMAPEndpoint | Format-List EndpointType,RemoteServer,Port,Security,Max*
 ```
 
-### <a name="step-4-create-and-start-an-imap-migration-batch"></a>Schritt 4: Erstellen und Starten eines IMAP-Migrationsbatches
+### <a name="step-4-create-and-start-an-imap-migration-batch"></a>Schritt 4: Erstellen und Starten eines IMAP-Migrationsbatches
 <a name="BK_Step4"> </a>
 
 Sie können das [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536439)-Cmdlet verwenden, um einen Migrationsbatch für eine IMAP-Migration zu erstellen. Sie können einen Migrationsbatch erstellen und automatisch durch Einschließen des  _AutoStart_-Parameters starten. Alternativ können Sie den Migrationsbatch erstellen und danach mithilfe des [Start-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536440)-Cmdlets starten.
   
-Der folgende Exchange Online PowerShell-Befehl startet automatisch den Migrationsbatch namens „IMAPBatch1" mit den IMAP-Endpunkt namens „IMAPEndpoint":
+Der folgende Exchange Online PowerShell-Befehl startet automatisch den Migrationsbatch namens „IMAPBatch1“ mit den IMAP-Endpunkt namens „IMAPEndpoint“:
   
 ```
 New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\\Users\\Administrator\\Desktop\\IMAPmigration_1.csv")) -AutoStart
@@ -200,16 +200,16 @@ Sie können auch überprüfen, ob der Batch gestartet wurde, indem Sie den folge
 Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>Schritt 5: Weiterleiten Ihrer E-Mails zu Office 365
+### <a name="step-5-route-your-email-to-office-365"></a>Schritt 5: Weiterleiten Ihrer E-Mails zu Office 365
 <a name="BK_Step5"> </a>
 
 E-Mail-Systeme verwenden einen DNS-Eintrag namens MX-Eintrag, um zu bestimmen, wohin E-Mail-Nachrichten übermittelt werden sollen. Während der Migration von E-Mails hat der MX-Eintrag auf Ihr E-Mail-Quellsystem verwiesen. Da die E-Mail-Migration zu Office 365 jetzt abgeschlossen ist, sollte der MX-Eintrag nun auf Office 365 verweisen. Dadurch wird sichergestellt, dass E-Mails an Ihre Office 365-Postfächer übermittelt werden. Durch Verschieben des MX-Eintrags können Sie Ihr altes E-Mail-System ggf. auch deaktivieren. 
   
 Für viele DNS-Anbieter gibt es bestimmte Anweisungen zum [Ändern des MX-Eintrags](https://go.microsoft.com/fwlink/p/?LinkId=279163). Wenn Ihr DNS-Anbieter nicht enthalten ist oder wenn Sie allgemeine Anweisungen erhalten möchten, finden Sie entsprechende Informationen unter [Erstellen und Konfigurieren eines DNS-Eintrags für Office 365](https://go.microsoft.com/fwlink/?LinkId=397449).
   
-Es kann bis zu 72 Stunden dauern, bis die E-Mail-Systeme der Kunden und Partnern den geänderten MX-Eintrag erkennen. Warten Sie mindestens 72 Stunden, bevor Sie mit dem nächsten Schritt fortfahren: Schritt 6: IMAP-Migrationsbatch löschen. 
+Es kann bis zu 72 Stunden dauern, bis die E-Mail-Systeme der Kunden und Partnern den geänderten MX-Eintrag erkennen. Warten Sie mindestens 72 Stunden, bevor Sie mit dem nächsten Schritt fortfahren: Schritt 6: IMAP-Migrationsbatch löschen. 
   
-### <a name="step-6-delete-imap-migration-batch"></a>Schritt 6: IMAP-Migrationsbatch löschen
+### <a name="step-6-delete-imap-migration-batch"></a>Schritt 6: IMAP-Migrationsbatch löschen
 <a name="BK_Step6"> </a>
 
 Nachdem Sie den MX-Eintrag geändert und sichergestellt haben, dass alle E-Mails an die Office 365-Postfächer weitergeleitet werden, benachrichtigen Sie die Benutzer, dass ihre E-Mails zu Office 365 geleitet werden. Danach können Sie den IMAP-Migrationsbatch löschen. Überprüfen Sie Folgendes, bevor Sie den Migrationsbatch löschen.
@@ -218,7 +218,8 @@ Nachdem Sie den MX-Eintrag geändert und sichergestellt haben, dass alle E-Mails
     
 - Office 365-Postfächer wurden mindestens einmal nach dem Start des direkten E-Mail-Versands synchronisiert. Stellen Sie hierzu sicher, dass der Wert im Feld „Zeit der letzten Synchronisierung" für den Migrationsbatch jünger als das Datum und die Uhrzeit ist, zu denen das direkte Weiterleiten von E-Mails an Office 365-Postfächer begonnen hat.
     
-Führen Sie den folgenden Befehl aus, um den Migrationsbatch „IMAPBatch1" in Exchange Online PowerShell zu löschen:
+Führen Sie den folgenden Befehl aus, um den Migrationsbatch „IMAPBatch1“ in Exchange Online PowerShell zu löschen:
+
   
 ```
 Remove-MigrationBatch -Identity IMAPBatch1
@@ -238,7 +239,7 @@ Der Befehl gibt entweder den Migrationsbatch mit dem Status **Removing** zurück
   
 Weitere Informationen zu den **Get-MigrationBatch** -Cmdlets finden Sie unter[Get-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=536441).
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

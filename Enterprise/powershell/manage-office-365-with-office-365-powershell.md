@@ -18,13 +18,13 @@ ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Zusammenfassung: Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, und Microsoft Exchange Online.'
 ms.openlocfilehash: aaea1d5aa83bd01bc1646a11778397936bdb14c9
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Verwalten von Office 365 mit Office 365 PowerShell
 
- **Zusammenfassung:** Erfahren Sie, wie von Office 365 PowerShell mit Office 365-Benutzer und Lizenzen, Skype für Business Online, SharePoint Online und Microsoft Exchange Online.
+ **Zusammenfassung:** Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, und Microsoft Exchange Online.
   
 Office 365 PowerShell ist ein leistungsstarkes Verwaltungstool in Ergänzung zum Office 365-Admin Center. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. Erfahren Sie, wie Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online und Microsoft Exchange Online verwendet wird. 
   
@@ -38,7 +38,7 @@ Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
     
     Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und mehr über die Verwendung von Automatisierungsbefehlen zur Verwaltung von Benutzerkonten und Lizenzen erfahren möchten.
     
-- [Office 365-PowerShell für SharePoint Online](https://technet.microsoft.com/en-us/library/fp161362.aspx)
+- [Office 365-PowerShell für SharePoint Online]((https://technet.microsoft.com/de-DE/library/fp161362.aspx))
     
     Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und die Automatisierungsbefehle zum Verwalten von SharePoint Online verwenden möchten.
     
@@ -58,7 +58,7 @@ Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
     
     Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und die Automatisierungsbefehle zum Verwalten von Skype for Business Online verwenden möchten.
     
-- [Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)
+- [Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))
     
     Beginnen Sie hier, wenn Sie sich sehr gut mit Office 365 PowerShell auskennen und mehr über spezifische Befehle erfahren möchten, um Einwahlkonferenzen, Cloud-PBX und PSTN-Anrufeinstellungen für Ihre Organisation verwalten und die Berichterstellungsfunktionen verwenden möchten, um die Verwendung von Skype for Business Online zu überwachen und Berichte darüber zu erstellen.
     

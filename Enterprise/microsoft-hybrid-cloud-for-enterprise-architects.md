@@ -19,7 +19,7 @@ ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Zusammenfassung: Was IT-Architekten über Hybridszenarien wissen müssen, in denen Microsoft-Clouddienste und -plattformen verwendet werden."
 ms.openlocfilehash: 46e9a6cead44f5392d3ae228dbb5e7f9285bf891
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -29,13 +29,13 @@ ms.lasthandoff: 12/15/2017
   
 Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten über Hybridarchitekturen und Konfigurationen mit Microsoft-Clouddiensten und -Plattformen wissen müssen. Sie können diesen Artikel auch als 7-seitiges Poster anzeigen und im Tabloid-Format (auch bekannt als Ledger, 11 x 17 oder A3) drucken.
   
-[![Bild der Ziehpunkt für das Microsoft Cloud Hybridmodell](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
+[![Miniaturbild für das Microsoft-Cloud-Hybridmodell](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-![PDF-Datei](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio-Datei](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![finden Sie eine Seite mit Versionen in zusätzliche Sprachen](images/Common_Images/GlobeIcon.png)
+![PDF-Datei](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio-Datei](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/Common_Images/GlobeIcon.png)
 [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54424)
   
-Können Sie auch finden Sie alle Modelle in die [Microsoft-Cloud-IT-Architektur-Ressourcen](microsoft-cloud-it-architecture-resources.md) und führen Sie über [von Microsoft Enterprise Cloud Roadmap: Ressourcen für IT-Entscheidungsträgern](https://aka.ms/cloudarchitecture).
+Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)) durchsuchen.
   
 Lesen Sie die folgenden Abschnitte:
   
@@ -62,11 +62,11 @@ Lesen Sie die folgenden Abschnitte:
 > [!NOTE]
 > Diese Artikel beziehen sich auf die **Juni 2017-Version** des Posters „Microsoft Hybrid Cloud für Enterprise-Architekten".
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

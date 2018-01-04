@@ -16,7 +16,7 @@ ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft Azure PaaS optimieren."
 ms.openlocfilehash: d63a7a20d4648b0044a24ea86ad4e9125779a027
 ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/15/2017
 ---
@@ -30,9 +30,9 @@ Für die Optimierung Ihrer Netzwerke für Azure PaaS-Apps ist eine ausreichende 
 
 Abschnittstext hier einfügen.
   
-1. Durchlaufen Sie die **Schritte zum Vorbereiten von Ihr Netzwerks für Microsoft Cloud Services** -Abschnitt in [Allgemeine Elemente von Microsoft-Cloud-Diensten](common-elements-of-microsoft-cloud-connectivity.md).
+1. Durchlaufen Sie die **Schritte zum Vorbereiten Ihres Netzwerks für Microsoft Cloud Services** in [Gemeinsame Elemente der Microsoft-Cloudkonnektivität](common-elements-of-microsoft-cloud-connectivity.md).
     
-2. Optimieren Sie die Schritte 2 bis 4 des Abschnitts **Schritte zum Vorbereiten von Ihr Netzwerks für Microsoft SaaS Services** [Netzwerkfunktionen für Microsoft SaaS](designing-networking-for-microsoft-saas.md)Entwerfen von Internetbandbreite.
+2. Optimieren Sie die Internetbandbreite mithilfe der Schritte 2 bis 4 der **Schritte zum Vorbereiten Ihres Netzwerks für Microsoft SaaS-Dienste** in [Designing networking for Microsoft SaaS](designing-networking-for-microsoft-saas.md).
     
 3. Ermitteln Sie, ob Sie eine ExpressRoute-Verbindung mit Azure benötigen.
     
@@ -50,7 +50,7 @@ Für Organisationsanwendungen, die in Azure PaaS gehostet sind, ist eine Interne
     
 **Abbildung 1: Verbindungsoptionen zum Verbinden der Azure PaaS-Dienste**
 
-![Abbildung 1: Verbindungsoptionen für Azure PaaS-Dienste](images/Network_Poster/PaaS1.png)
+![Abbildung 1: Verbindungsoptionen für Azure PaaS-Dienste](images/Network_Poster/PaaS1.png)
   
 In Abbildung 1 ist ein lokales Netzwerk dargestellt, das über eine Internetpipe oder ExpressRoute eine Verbindung zu Azure PaaS-Diensten herstellt.
   
@@ -72,7 +72,7 @@ Das Anwendungsgateway unterstützt derzeit Ebene 7 Anwendungsübermittlung für 
     
 - SSL-Verschiebungen
     
-Weitere Informationen finden Sie unter [Anwendungsgateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).
+Weitere Informationen finden Sie unter [Anwendungsgateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).
   
 ## <a name="azure-traffic-manager"></a>Azure Traffic Manager
 
@@ -98,15 +98,15 @@ In Abbildung 3 ist der grundlegende Prozess dargestellt, den Traffic Manager zum
     
 2. Der Benutzer initiiert den Datenverkehr mit der regionalen Web-App in Europa.
     
-Weitere Informationen finden Sie unter [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+Weitere Informationen finden Sie unter [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 
