@@ -26,13 +26,13 @@ ms.lasthandoff: 01/11/2018
   
 - [<span data-ttu-id="a8f6e-106">PowerShell für die Office 365-Gruppe von Office 365 Yammer-Netzwerk</span><span class="sxs-lookup"><span data-stu-id="a8f6e-106">PowerShell for Office 365 group of the Office 365 Yammer Network</span></span>](https://www.yammer.com/itpronetwork/#/threads/inGroup?type=in_group&amp;feedId=4632269)
     
-- <span data-ttu-id="a8f6e-107">[Verwalten von Office 365-Communityforen]((https://community.office365.com/de-DE/f/148.aspx))</span><span class="sxs-lookup"><span data-stu-id="a8f6e-107">[Manage Office 365 community forum]((https://community.office365.com/de-DE/f/148.aspx))</span></span>
+- <span data-ttu-id="a8f6e-107">[Verwalten von Office 365-Communityforen](https://community.office365.com/de-DE/f/148.aspx)</span><span class="sxs-lookup"><span data-stu-id="a8f6e-107">[Manage Office 365 community forum](https://community.office365.com/de-DE/f/148.aspx)</span></span>
     
 - [<span data-ttu-id="a8f6e-108">Exchange TechCenter - Communityforum</span><span class="sxs-lookup"><span data-stu-id="a8f6e-108">Exchange TechCenter community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     
-- <span data-ttu-id="a8f6e-109">[Office-Blogs]((https://blogs.office.com/))</span><span class="sxs-lookup"><span data-stu-id="a8f6e-109">[Office Blogs]((https://blogs.office.com/))</span></span>
+- <span data-ttu-id="a8f6e-109">[Office-Blogs](https://blogs.office.com/)</span><span class="sxs-lookup"><span data-stu-id="a8f6e-109">[Office Blogs](https://blogs.office.com/)</span></span>
     
-- <span data-ttu-id="a8f6e-110">[Verwalten von Office 3665-Wiki]((https://community.office365.com/de-DE/w/manage/default.aspx))</span><span class="sxs-lookup"><span data-stu-id="a8f6e-110">[Manage Office 365 Wiki]((https://community.office365.com/de-DE/w/manage/default.aspx))</span></span>
+- <span data-ttu-id="a8f6e-110">[Verwalten von Office 3665-Wiki](https://community.office365.com/de-DE/w/manage/default.aspx)</span><span class="sxs-lookup"><span data-stu-id="a8f6e-110">[Manage Office 365 Wiki](https://community.office365.com/de-DE/w/manage/default.aspx)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="a8f6e-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a8f6e-111">See also</span></span>
 

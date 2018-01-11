@@ -46,15 +46,15 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="a58db-118">Berichte für SharePoint Online:</span><span class="sxs-lookup"><span data-stu-id="a58db-118">Reports for SharePoint Online:</span></span>
     
-  - <span data-ttu-id="a58db-119">[Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 PowerShell]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))</span><span class="sxs-lookup"><span data-stu-id="a58db-119">[Manage SharePoint Online users and groups with Office 365 PowerShell]((http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx))</span></span>
+  - <span data-ttu-id="a58db-119">[Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)</span><span class="sxs-lookup"><span data-stu-id="a58db-119">[Manage SharePoint Online users and groups with Office 365 PowerShell](http://technet.microsoft.com/library/9680af2e-a965-4e62-92ee-da72105c7800.aspx)</span></span>
     
-  - <span data-ttu-id="a58db-120">[Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))</span><span class="sxs-lookup"><span data-stu-id="a58db-120">[Manage SharePoint Online site groups with Office 365 PowerShell]((http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx))</span></span>
+  - <span data-ttu-id="a58db-120">[Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)</span><span class="sxs-lookup"><span data-stu-id="a58db-120">[Manage SharePoint Online site groups with Office 365 PowerShell](http://technet.microsoft.com/library/122f4099-c78d-4cce-bab0-4343b04596ae.aspx)</span></span>
     
 - <span data-ttu-id="a58db-121">Berichte für Exchange Online:</span><span class="sxs-lookup"><span data-stu-id="a58db-121">Reports for Exchange Online:</span></span>
     
-  - <span data-ttu-id="a58db-122">[Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx))</span><span class="sxs-lookup"><span data-stu-id="a58db-122">[Display Exchange Online mailbox information with Office 365 PowerShell]((http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx))</span></span>
+  - <span data-ttu-id="a58db-122">[Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)</span><span class="sxs-lookup"><span data-stu-id="a58db-122">[Display Exchange Online mailbox information with Office 365 PowerShell](http://technet.microsoft.com/library/13843002-56ca-4b75-81c5-84386522b01b.aspx)</span></span>
     
-  - <span data-ttu-id="a58db-123">[Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx))</span><span class="sxs-lookup"><span data-stu-id="a58db-123">[Display Exchange Online reports with Office 365 PowerShell]((http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx))</span></span>
+  - <span data-ttu-id="a58db-123">[Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)</span><span class="sxs-lookup"><span data-stu-id="a58db-123">[Display Exchange Online reports with Office 365 PowerShell](http://technet.microsoft.com/library/4873a063-9fc4-4ed9-826a-6e935fef61d4.aspx)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="a58db-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a58db-124">See also</span></span>
 

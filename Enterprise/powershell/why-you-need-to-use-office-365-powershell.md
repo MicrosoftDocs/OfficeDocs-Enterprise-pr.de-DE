@@ -92,7 +92,7 @@ Get-MsolUser | Select DisplayName, UsageLocation
 ```
 
 > [!NOTE]
-> <span data-ttu-id="f9345-146">Für diesen Befehl müssen Sie das [Windows Azure Active Directory-Modul]((https://technet.microsoft.com/de-DE/library/jj151815.aspx)) installieren.</span><span class="sxs-lookup"><span data-stu-id="f9345-146">This command requires you to install the [Windows Azure Active Directory module]((https://technet.microsoft.com/de-DE/library/jj151815.aspx)).</span></span> 
+> <span data-ttu-id="f9345-146">Für diesen Befehl müssen Sie das [Windows Azure Active Directory-Modul](https://technet.microsoft.com/de-DE/library/jj151815.aspx) installieren.</span><span class="sxs-lookup"><span data-stu-id="f9345-146">This command requires you to install the [Windows Azure Active Directory module](https://technet.microsoft.com/de-DE/library/jj151815.aspx).</span></span> 
   
 <span data-ttu-id="f9345-147">Nachfolgend sehen Sie ein Beispiel der Anzeige:</span><span class="sxs-lookup"><span data-stu-id="f9345-147">Here is an example of the display:</span></span>
   
@@ -241,7 +241,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 ```
 
 > [!NOTE]
-> <span data-ttu-id="f9345-207">Für diesen Befehl müssen Sie [eine Verbindung mit SharePoint Online PowerShell herstellen]((https://technet.microsoft.com/library/fp161372.aspx)).</span><span class="sxs-lookup"><span data-stu-id="f9345-207">This command requires that you install the [Connect to SharePoint Online PowerShell]((https://technet.microsoft.com/library/fp161372.aspx)).</span></span> 
+> <span data-ttu-id="f9345-207">Für diesen Befehl müssen Sie [eine Verbindung mit SharePoint Online PowerShell herstellen](https://technet.microsoft.com/library/fp161372.aspx).</span><span class="sxs-lookup"><span data-stu-id="f9345-207">This command requires that you install the [Connect to SharePoint Online PowerShell](https://technet.microsoft.com/library/fp161372.aspx).</span></span> 
   
 > [!TIP]
 >  <span data-ttu-id="f9345-208">Die Interpretation dieses Office 365 PowerShell-Befehls ist: Alle SharePoint-Websites im aktuellen Office 365-Abonnement abrufen (**Get-SPOSite**) und Ken Meyer für jede Website aus der Liste der Benutzer mit Zugriffsberechtigung entfernen (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)</span><span class="sxs-lookup"><span data-stu-id="f9345-208">The interpretation of this Office 365 PowerShell command is:  Get all of the SharePoint sites in the current Office 365 subscription ( **Get-SPOSite** ) and for each site, remove Ken Meyer from the list of users who can access it ( **ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}** ).</span></span>

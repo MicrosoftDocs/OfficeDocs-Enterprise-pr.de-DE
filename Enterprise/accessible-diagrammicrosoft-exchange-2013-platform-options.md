@@ -258,25 +258,25 @@ ms.lasthandoff: 12/15/2017
     
 - <span data-ttu-id="fefdb-237">[Exchange Online-Bibliothek auf TechNet](((https://aka.ms/EXO)TN))</span><span class="sxs-lookup"><span data-stu-id="fefdb-237">[Exchange Online library on TechNet](((https://aka.ms/EXO)TN))</span></span>
     
-- <span data-ttu-id="fefdb-238">[Exchange Online-Portal]((https://aka.ms/EXO))</span><span class="sxs-lookup"><span data-stu-id="fefdb-238">[Exchange Online portal]((https://aka.ms/EXO))</span></span>
+- <span data-ttu-id="fefdb-238">[Exchange Online-Portal](https://aka.ms/EXO)</span><span class="sxs-lookup"><span data-stu-id="fefdb-238">[Exchange Online portal](https://aka.ms/EXO)</span></span>
     
 <span data-ttu-id="fefdb-239">Weitere Informationen zu Exchange Hybrid finden Sie hier:</span><span class="sxs-lookup"><span data-stu-id="fefdb-239">To learn more about Exchange Hybrid, see the following:</span></span>
   
-- <span data-ttu-id="fefdb-p104">[Exchange 2013-Hybridbereitstellungen]((https://aka.ms/ExchangeHybrid)). Beachten Sie, dass die Hybrid-Serverlizenz nur für die folgenden Szenarios erforderlich ist: Exchange 2010-Organisation mit Exchange 2013-Hybridserver und Exchange 2007-Organisation mit Exchange 2013- oder Exchange 2010-Hybridserver.</span><span class="sxs-lookup"><span data-stu-id="fefdb-p104">[Exchange 2013 hybrid deployments]((https://aka.ms/ExchangeHybrid)). You should note that the Hybrid server license is only required for the following scenarios: Exchange 2010 organization with Exchange 2013 hybrid server and Exchange 2007 organization with Exchange 2013 or Exchange 2010 hybrid server.</span></span>
+- <span data-ttu-id="fefdb-p104">[Exchange 2013-Hybridbereitstellungen](https://aka.ms/ExchangeHybrid). Beachten Sie, dass die Hybrid-Serverlizenz nur für die folgenden Szenarios erforderlich ist: Exchange 2010-Organisation mit Exchange 2013-Hybridserver und Exchange 2007-Organisation mit Exchange 2013- oder Exchange 2010-Hybridserver.</span><span class="sxs-lookup"><span data-stu-id="fefdb-p104">[Exchange 2013 hybrid deployments](https://aka.ms/ExchangeHybrid). You should note that the Hybrid server license is only required for the following scenarios: Exchange 2010 organization with Exchange 2013 hybrid server and Exchange 2007 organization with Exchange 2013 or Exchange 2010 hybrid server.</span></span>
     
-- <span data-ttu-id="fefdb-242">[Office 365-Anmeldung]((https://aka.ms/HybridKey))</span><span class="sxs-lookup"><span data-stu-id="fefdb-242">[Office 365 Sign in]((https://aka.ms/HybridKey))</span></span>
+- <span data-ttu-id="fefdb-242">[Office 365-Anmeldung](https://aka.ms/HybridKey)</span><span class="sxs-lookup"><span data-stu-id="fefdb-242">[Office 365 Sign in](https://aka.ms/HybridKey)</span></span>
     
 <span data-ttu-id="fefdb-243">Weitere Informationen zu Exchange Server (lokal) finden Sie hier:</span><span class="sxs-lookup"><span data-stu-id="fefdb-243">To learn more about Exchange Server on-premises, see the following:</span></span>
   
-- <span data-ttu-id="fefdb-244">[Exchange Server 2013-Bibliothek auf TechNet]((https://aka.ms/Ex2013TN))</span><span class="sxs-lookup"><span data-stu-id="fefdb-244">[Exchange Server 2013 library on TechNet]((https://aka.ms/Ex2013TN))</span></span>
+- <span data-ttu-id="fefdb-244">[Exchange Server 2013-Bibliothek auf TechNet](https://aka.ms/Ex2013TN)</span><span class="sxs-lookup"><span data-stu-id="fefdb-244">[Exchange Server 2013 library on TechNet](https://aka.ms/Ex2013TN)</span></span>
     
-- <span data-ttu-id="fefdb-245">[Exchange Server 2013-Portal]((https://aka.ms/Exchange2013))</span><span class="sxs-lookup"><span data-stu-id="fefdb-245">[Exchange Server 2013 portal]((https://aka.ms/Exchange2013))</span></span>
+- <span data-ttu-id="fefdb-245">[Exchange Server 2013-Portal](https://aka.ms/Exchange2013)</span><span class="sxs-lookup"><span data-stu-id="fefdb-245">[Exchange Server 2013 portal](https://aka.ms/Exchange2013)</span></span>
     
-- <span data-ttu-id="fefdb-246">[Exchange Server 2013-Architektur]((https://aka.ms/Ex2013SP1ArchPoster))</span><span class="sxs-lookup"><span data-stu-id="fefdb-246">[Exchange Server 2013 architecture]((https://aka.ms/Ex2013SP1ArchPoster))</span></span>
+- <span data-ttu-id="fefdb-246">[Exchange Server 2013-Architektur](https://aka.ms/Ex2013SP1ArchPoster)</span><span class="sxs-lookup"><span data-stu-id="fefdb-246">[Exchange Server 2013 architecture](https://aka.ms/Ex2013SP1ArchPoster)</span></span>
     
 <span data-ttu-id="fefdb-247">Weitere Informationen zu Provider-Hosted Exchange finden Sie hier:</span><span class="sxs-lookup"><span data-stu-id="fefdb-247">To learn more about Provider-Hosted Exchange, see the following:</span></span>
   
-<span data-ttu-id="fefdb-248">[Exchange Server 2013-Hosting und Lösungen mit mehreren Mandanten sowie Anleitungen]((https://aka.ms/Ex2013Hosting))</span><span class="sxs-lookup"><span data-stu-id="fefdb-248">[Exchange Server 2013 hosting and multi-tenancy solutions and guidance]((https://aka.ms/Ex2013Hosting))</span></span>
+<span data-ttu-id="fefdb-248">[Exchange Server 2013-Hosting und Lösungen mit mehreren Mandanten sowie Anleitungen](https://aka.ms/Ex2013Hosting)</span><span class="sxs-lookup"><span data-stu-id="fefdb-248">[Exchange Server 2013 hosting and multi-tenancy solutions and guidance](https://aka.ms/Ex2013Hosting)</span></span>
   
 ## <a name="descriptions-of-three-new-or-updated-features-in-exchange-2013"></a><span data-ttu-id="fefdb-249">Beschreibung von drei neuen oder aktualisierten Features in Exchange 2013</span><span class="sxs-lookup"><span data-stu-id="fefdb-249">Descriptions of three new or updated features in Exchange 2013</span></span>
 

@@ -45,7 +45,7 @@ ms.lasthandoff: 01/11/2018
     
   - <span data-ttu-id="623e5-117">Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung von Internet Explorer, und melden Sie sich von Ihrem lokalen Computer aus an.</span><span class="sxs-lookup"><span data-stu-id="623e5-117">If you are using the lightweight Office 365 dev/test environment, open a private session of Internet Explorer and sign in from your local computer.</span></span>
     
-  - <span data-ttu-id="623e5-118">Wenn Sie die simulierte Office 365-Unternehmensentwicklungs-/-testumgebung verwenden, verwenden Sie das [Azure-Portal]((https://portal.azure.com)), um sich mit dem virtuellen Computer CLIENT1 zu verbinden, und melden Sie sich dann von CLIENT1 aus an.</span><span class="sxs-lookup"><span data-stu-id="623e5-118">If you are using the simulated enterprise Office 365 dev/test environment, use the [Azure portal]((https://portal.azure.com)) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
+  - <span data-ttu-id="623e5-118">Wenn Sie die simulierte Office 365-Unternehmensentwicklungs-/-testumgebung verwenden, verwenden Sie das [Azure-Portal](https://portal.azure.com), um sich mit dem virtuellen Computer CLIENT1 zu verbinden, und melden Sie sich dann von CLIENT1 aus an.</span><span class="sxs-lookup"><span data-stu-id="623e5-118">If you are using the simulated enterprise Office 365 dev/test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.</span></span>
     
 2. <span data-ttu-id="623e5-119">Öffnen Sie Editor, und geben Sie einen Text ein.</span><span class="sxs-lookup"><span data-stu-id="623e5-119">Run Notepad and enter some text.</span></span>
     
@@ -73,7 +73,7 @@ ms.lasthandoff: 01/11/2018
     
 14. <span data-ttu-id="623e5-131">Geben Sie in **URL** den Text **http://www.spamlink.contoso.com/** ein, klicken Sie auf **OK** und dann auf **Senden**.</span><span class="sxs-lookup"><span data-stu-id="623e5-131">In **URL**, type **http://www.spamlink.contoso.com/**, click **OK**, and then click **Send**.</span></span>
     
-15. <span data-ttu-id="623e5-132">Öffnen Sie eine getrennte Instanz von Internet Explorer für das InPrivate-Browsen, wechseln Sie zum Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))), und melden Sie sich bei Ihrem Office 365-Testabonnement mit Ihrem globalen Administratorkonto an.</span><span class="sxs-lookup"><span data-stu-id="623e5-132">Open a separate instance of Internet Explorer in private browsing mode, go to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))), and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
+15. <span data-ttu-id="623e5-132">Öffnen Sie eine getrennte Instanz von Internet Explorer für das InPrivate-Browsen, wechseln Sie zum Office 365-Portal ([(https://portal.office.com)](https://portal.office.com)), und melden Sie sich bei Ihrem Office 365-Testabonnement mit Ihrem globalen Administratorkonto an.</span><span class="sxs-lookup"><span data-stu-id="623e5-132">Open a separate instance of Internet Explorer in private browsing mode, go to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)), and sign in to your Office 365 trial subscription with your global administrator account.</span></span>
     
 16. <span data-ttu-id="623e5-133">Klicken Sie auf der Hauptportalseite auf die Kachel „apps" und dann auf **E-Mail**.</span><span class="sxs-lookup"><span data-stu-id="623e5-133">From the main portal page, click the apps tile, and then click **Mail**.</span></span>
     
@@ -153,7 +153,7 @@ ms.lasthandoff: 01/11/2018
 <span data-ttu-id="623e5-193">Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und mit ATP zu experimentieren.</span><span class="sxs-lookup"><span data-stu-id="623e5-193">You can now use this environment to create new policies and experiment with ATP.</span></span>
   
 > [!TIP]
-> <span data-ttu-id="623e5-194">Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="623e5-194">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="623e5-194">Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="623e5-194">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="623e5-195">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="623e5-195">See Also</span></span>
 
@@ -169,6 +169,6 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="623e5-201">Cloudakzeptanz und Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="623e5-201">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md) 
 
-<span data-ttu-id="623e5-202">[Advanced Threat Protection für Safe Attachments und Safe Links]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))</span><span class="sxs-lookup"><span data-stu-id="623e5-202">[Advanced threat protection for safe attachments and safe links]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))</span></span>
+<span data-ttu-id="623e5-202">[Advanced Threat Protection für Safe Attachments und Safe Links](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)</span><span class="sxs-lookup"><span data-stu-id="623e5-202">[Advanced threat protection for safe attachments and safe links](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)</span></span>
 
 

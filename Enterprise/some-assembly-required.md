@@ -58,9 +58,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="60acd-122">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-122">Resources</span></span>
 
-<span data-ttu-id="60acd-123">Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/cdn/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-123">For additional information, click [here]((https://azure.microsoft.com/services/cdn/)).</span></span>
+<span data-ttu-id="60acd-123">Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/cdn/).</span><span class="sxs-lookup"><span data-stu-id="60acd-123">For additional information, click [here](https://azure.microsoft.com/services/cdn/).</span></span>
   
-<span data-ttu-id="60acd-124">Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/cdn/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-124">For cost information, click [here]((https://azure.microsoft.com/pricing/details/cdn/)).</span></span>
+<span data-ttu-id="60acd-124">Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/cdn/).</span><span class="sxs-lookup"><span data-stu-id="60acd-124">For cost information, click [here](https://azure.microsoft.com/pricing/details/cdn/).</span></span>
   
 ## <a name="hdinsight"></a><span data-ttu-id="60acd-125">HdInsight</span><span class="sxs-lookup"><span data-stu-id="60acd-125">HdInsight</span></span>
 
@@ -94,9 +94,9 @@ ms.lasthandoff: 01/11/2018
     
 ### <a name="resources"></a><span data-ttu-id="60acd-140">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-140">Resources</span></span>
 
-<span data-ttu-id="60acd-141">Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/hdinsight/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-141">For additional information, click [here]((https://azure.microsoft.com/services/hdinsight/)).</span></span>
+<span data-ttu-id="60acd-141">Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/hdinsight/).</span><span class="sxs-lookup"><span data-stu-id="60acd-141">For additional information, click [here](https://azure.microsoft.com/services/hdinsight/).</span></span>
   
-<span data-ttu-id="60acd-142">Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-142">For cost information, click [here]((https://azure.microsoft.com/pricing/details/hdinsight/)).</span></span>
+<span data-ttu-id="60acd-142">Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/hdinsight/).</span><span class="sxs-lookup"><span data-stu-id="60acd-142">For cost information, click [here](https://azure.microsoft.com/pricing/details/hdinsight/).</span></span>
   
 ## <a name="azure-sql-database"></a><span data-ttu-id="60acd-143">Azure SQL-Datenbank</span><span class="sxs-lookup"><span data-stu-id="60acd-143">Azure SQL Database</span></span>
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 01/11/2018
   
 ![Horizontale Skalierung, bereitgestellt von Azure SQL Database.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-<span data-ttu-id="60acd-166">Klicken Sie [hier]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)), um weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="60acd-166">Click [here]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)) for more information.</span></span>
+<span data-ttu-id="60acd-166">Klicken Sie [hier](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction), um weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="60acd-166">Click [here](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction) for more information.</span></span>
   
 ### <a name="stretch-database-with-sql-server-2016"></a><span data-ttu-id="60acd-167">Stretch-Datenbank mit SQL Server 2016</span><span class="sxs-lookup"><span data-stu-id="60acd-167">Stretch Database with SQL Server 2016</span></span>
 
@@ -160,13 +160,13 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
   
 <span data-ttu-id="60acd-p103">Stretch-Datenbank stellt eine kostengünstige Möglichkeit für langfristige Speicherung und transparenten Zugriff auf Verlaufsdaten. Außerdem können hiermit Leistungs- und Verfügbarkeitsprobleme behoben werden, die auftreten, wenn die Tabellen sehr umfangreich sind.</span><span class="sxs-lookup"><span data-stu-id="60acd-p103">Stretch database provides a cost-effective option for long-term storage and transparent access to historical data. It also solves performance and availability problems that arise when tables become very large.</span></span>
   
-<span data-ttu-id="60acd-176">Klicken Sie [hier]((https://msdn.microsoft.com/library/dn935011.aspx)), um weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="60acd-176">Click [here]((https://msdn.microsoft.com/library/dn935011.aspx)) for more information.</span></span>
+<span data-ttu-id="60acd-176">Klicken Sie [hier](https://msdn.microsoft.com/library/dn935011.aspx), um weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="60acd-176">Click [here](https://msdn.microsoft.com/library/dn935011.aspx) for more information.</span></span>
   
 ### <a name="resources"></a><span data-ttu-id="60acd-177">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-177">Resources</span></span>
 
-<span data-ttu-id="60acd-178">Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/sql-database/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-178">For additional information, click [here]((http://azure.microsoft.com/services/sql-database/)).</span></span>
+<span data-ttu-id="60acd-178">Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/sql-database/).</span><span class="sxs-lookup"><span data-stu-id="60acd-178">For additional information, click [here](http://azure.microsoft.com/services/sql-database/).</span></span>
   
-<span data-ttu-id="60acd-179">Informationen zu Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/sql-database/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-179">For cost information, click [here]((http://azure.microsoft.com/pricing/details/sql-database/)).</span></span>
+<span data-ttu-id="60acd-179">Informationen zu Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/sql-database/).</span><span class="sxs-lookup"><span data-stu-id="60acd-179">For cost information, click [here](http://azure.microsoft.com/pricing/details/sql-database/).</span></span>
   
 ## <a name="azure-cosmos-db"></a><span data-ttu-id="60acd-180">Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="60acd-180">Azure Cosmos DB</span></span>
 
@@ -210,9 +210,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
   
 ### <a name="resources"></a><span data-ttu-id="60acd-200">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-200">Resources</span></span>
 
-<span data-ttu-id="60acd-201">Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/documentdb/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-201">For additional information, click [here]((http://azure.microsoft.com/services/documentdb/)).</span></span>
+<span data-ttu-id="60acd-201">Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/documentdb/).</span><span class="sxs-lookup"><span data-stu-id="60acd-201">For additional information, click [here](http://azure.microsoft.com/services/documentdb/).</span></span>
   
-<span data-ttu-id="60acd-202">Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/documentdb/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-202">For cost information, click [here]((http://azure.microsoft.com/pricing/details/documentdb/)).</span></span>
+<span data-ttu-id="60acd-202">Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/documentdb/).</span><span class="sxs-lookup"><span data-stu-id="60acd-202">For cost information, click [here](http://azure.microsoft.com/pricing/details/documentdb/).</span></span>
   
 ## <a name="azure-media-services"></a><span data-ttu-id="60acd-203">Azure Media Services</span><span class="sxs-lookup"><span data-stu-id="60acd-203">Azure Media Services</span></span>
 
@@ -244,9 +244,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
     
 ### <a name="resources"></a><span data-ttu-id="60acd-217">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-217">Resources</span></span>
 
-<span data-ttu-id="60acd-218">Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/media-services/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-218">For additional information, click [here]((https://azure.microsoft.com/services/media-services/)).</span></span>
+<span data-ttu-id="60acd-218">Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/media-services/).</span><span class="sxs-lookup"><span data-stu-id="60acd-218">For additional information, click [here](https://azure.microsoft.com/services/media-services/).</span></span>
   
-<span data-ttu-id="60acd-219">Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/media-services/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-219">For cost information, click [here]((http://azure.microsoft.com/pricing/details/media-services/)).</span></span>
+<span data-ttu-id="60acd-219">Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/media-services/).</span><span class="sxs-lookup"><span data-stu-id="60acd-219">For cost information, click [here](http://azure.microsoft.com/pricing/details/media-services/).</span></span>
   
 ## <a name="azure-redis-cache"></a><span data-ttu-id="60acd-220">Azure Redis Cache</span><span class="sxs-lookup"><span data-stu-id="60acd-220">Azure Redis Cache</span></span>
 
@@ -278,9 +278,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
     
 ### <a name="resources"></a><span data-ttu-id="60acd-234">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-234">Resources</span></span>
 
-<span data-ttu-id="60acd-235">Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/cache/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-235">For additional information, click [here]((http://azure.microsoft.com/services/cache/)).</span></span>
+<span data-ttu-id="60acd-235">Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/cache/).</span><span class="sxs-lookup"><span data-stu-id="60acd-235">For additional information, click [here](http://azure.microsoft.com/services/cache/).</span></span>
   
-<span data-ttu-id="60acd-236">Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/cache/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-236">For cost information, click [here]((http://azure.microsoft.com/pricing/details/cache/)).</span></span>
+<span data-ttu-id="60acd-236">Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/cache/).</span><span class="sxs-lookup"><span data-stu-id="60acd-236">For cost information, click [here](http://azure.microsoft.com/pricing/details/cache/).</span></span>
   
 ## <a name="sql-server-on-an-azure-vm"></a><span data-ttu-id="60acd-237">SQL Server auf einer Azure-VM</span><span class="sxs-lookup"><span data-stu-id="60acd-237">SQL Server on an Azure VM</span></span>
 
@@ -300,9 +300,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
     
 ### <a name="resources"></a><span data-ttu-id="60acd-245">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-245">Resources</span></span>
 
-<span data-ttu-id="60acd-246">Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/virtual-machines/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-246">For additional information, click [here]((http://azure.microsoft.com/services/virtual-machines/)).</span></span>
+<span data-ttu-id="60acd-246">Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="60acd-246">For additional information, click [here](http://azure.microsoft.com/services/virtual-machines/).</span></span>
   
-<span data-ttu-id="60acd-247">Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-247">For cost information, click [here]((http://azure.microsoft.com/pricing/details/virtual-machines/)).</span></span>
+<span data-ttu-id="60acd-247">Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/virtual-machines/).</span><span class="sxs-lookup"><span data-stu-id="60acd-247">For cost information, click [here](http://azure.microsoft.com/pricing/details/virtual-machines/).</span></span>
   
 ## <a name="storsimple"></a><span data-ttu-id="60acd-248">StorSimple</span><span class="sxs-lookup"><span data-stu-id="60acd-248">StorSimple</span></span>
 
@@ -334,9 +334,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
     
 ### <a name="resources"></a><span data-ttu-id="60acd-262">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-262">Resources</span></span>
 
-<span data-ttu-id="60acd-263">Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/storsimple/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-263">For additional information, click [here]((http://azure.microsoft.com/services/storsimple/)).</span></span>
+<span data-ttu-id="60acd-263">Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/storsimple/).</span><span class="sxs-lookup"><span data-stu-id="60acd-263">For additional information, click [here](http://azure.microsoft.com/services/storsimple/).</span></span>
   
-<span data-ttu-id="60acd-264">Informationen zu Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/storsimple/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-264">For cost information, click [here]((http://azure.microsoft.com/pricing/details/storsimple/)).</span></span>
+<span data-ttu-id="60acd-264">Informationen zu Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/storsimple/).</span><span class="sxs-lookup"><span data-stu-id="60acd-264">For cost information, click [here](http://azure.microsoft.com/pricing/details/storsimple/).</span></span>
   
 ## <a name="azure-sql-data-warehouse"></a><span data-ttu-id="60acd-265">Azure SQL Data Warehouse</span><span class="sxs-lookup"><span data-stu-id="60acd-265">Azure SQL Data Warehouse</span></span>
 
@@ -364,9 +364,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
     
 ### <a name="resources"></a><span data-ttu-id="60acd-277">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-277">Resources</span></span>
 
-<span data-ttu-id="60acd-278">Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-278">For additional information, click [here]((https://azure.microsoft.com/services/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="60acd-278">Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/sql-data-warehouse/).</span><span class="sxs-lookup"><span data-stu-id="60acd-278">For additional information, click [here](https://azure.microsoft.com/services/sql-data-warehouse/).</span></span>
   
-<span data-ttu-id="60acd-279">Informationen zu Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-279">For cost information, click [here]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).</span></span>
+<span data-ttu-id="60acd-279">Informationen zu Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span><span class="sxs-lookup"><span data-stu-id="60acd-279">For cost information, click [here](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).</span></span>
   
 ## <a name="azure-data-lake-store"></a><span data-ttu-id="60acd-280">Azure Data Lake Store</span><span class="sxs-lookup"><span data-stu-id="60acd-280">Azure Data Lake Store</span></span>
 
@@ -398,9 +398,9 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
     
 ### <a name="resources"></a><span data-ttu-id="60acd-294">Ressourcen</span><span class="sxs-lookup"><span data-stu-id="60acd-294">Resources</span></span>
 
-<span data-ttu-id="60acd-295">Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/data-lake-store/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-295">For additional information, click [here]((https://azure.microsoft.com/services/data-lake-store/)).</span></span>
+<span data-ttu-id="60acd-295">Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/data-lake-store/).</span><span class="sxs-lookup"><span data-stu-id="60acd-295">For additional information, click [here](https://azure.microsoft.com/services/data-lake-store/).</span></span>
   
-<span data-ttu-id="60acd-296">Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span><span class="sxs-lookup"><span data-stu-id="60acd-296">For cost information, click [here]((https://azure.microsoft.com/pricing/details/data-lake-store/)).</span></span>
+<span data-ttu-id="60acd-296">Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/data-lake-store/).</span><span class="sxs-lookup"><span data-stu-id="60acd-296">For cost information, click [here](https://azure.microsoft.com/pricing/details/data-lake-store/).</span></span>
   
 ## <a name="next-step"></a><span data-ttu-id="60acd-297">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="60acd-297">Next step</span></span>
 
@@ -412,7 +412,7 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
   
 [<span data-ttu-id="60acd-301">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="60acd-301">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="60acd-302">[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="60acd-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="60acd-302">[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="60acd-302">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

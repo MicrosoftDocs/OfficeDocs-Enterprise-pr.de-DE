@@ -49,7 +49,7 @@ ms.lasthandoff: 01/11/2018
 3. <span data-ttu-id="48bc1-120">Erstellen einer neuen SharePoint Online-Teamwebsite für ProjectX und Isolieren der Website.</span><span class="sxs-lookup"><span data-stu-id="48bc1-120">Create a new ProjectX SharePoint Online team site and isolate it.</span></span>
     
 > [!TIP]
-> <span data-ttu-id="48bc1-121">Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="48bc1-121">Click [here]((http://aka.ms/catlgstack)) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
+> <span data-ttu-id="48bc1-121">Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="48bc1-121">Click [here](http://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.</span></span>
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a><span data-ttu-id="48bc1-122">Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung</span><span class="sxs-lookup"><span data-stu-id="48bc1-122">Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment</span></span>
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/11/2018
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a><span data-ttu-id="48bc1-127">Phase 2: Erstellen von Benutzerkonten und Zugriffsgruppen</span><span class="sxs-lookup"><span data-stu-id="48bc1-127">Phase 2: Create user accounts and access groups</span></span>
 
-<span data-ttu-id="48bc1-128">Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell]((https://technet.microsoft.com/library/dn975125.aspx)), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:</span><span class="sxs-lookup"><span data-stu-id="48bc1-128">Use the instructions in [Connect to Office 365 PowerShell]((https://technet.microsoft.com/library/dn975125.aspx)) to connect to your Office 365 trail subscription with your global administrator account from:</span></span>
+<span data-ttu-id="48bc1-128">Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:</span><span class="sxs-lookup"><span data-stu-id="48bc1-128">Use the instructions in [Connect to Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) to connect to your Office 365 trail subscription with your global administrator account from:</span></span>
   
 - <span data-ttu-id="48bc1-129">Ihrem Computer aus (für die einfache Office 365-Entwicklungs-/Testunternehmensumgebung).</span><span class="sxs-lookup"><span data-stu-id="48bc1-129">Your computer (for the lightweight Office 365 dev/test environment).</span></span>
     
@@ -83,7 +83,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
 > [!TIP]
-> <span data-ttu-id="48bc1-132">Klicken Sie [hier]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.</span><span class="sxs-lookup"><span data-stu-id="48bc1-132">Click [here]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)) for a text file that contains all of the PowerShell commands in this article.</span></span>
+> <span data-ttu-id="48bc1-132">Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.</span><span class="sxs-lookup"><span data-stu-id="48bc1-132">Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1) for a text file that contains all of the PowerShell commands in this article.</span></span>
   
 <span data-ttu-id="48bc1-133">Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“) und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="48bc1-133">Fill in your organization name (example: contosotoycompany), the two-character country code for your location, and then run the following commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:</span></span>
   
@@ -148,7 +148,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 <span data-ttu-id="48bc1-148">Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:</span><span class="sxs-lookup"><span data-stu-id="48bc1-148">To create a SharePoint Online team site for ProjectX, do the following:</span></span>
   
-1. <span data-ttu-id="48bc1-149">Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [(https://portal.office.com)]((https://portal.office.com)) unter Verwendung des globalen Administratorkontos an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-149">Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using your global administrator account.</span></span>
+1. <span data-ttu-id="48bc1-149">Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [(https://portal.office.com)](https://portal.office.com) unter Verwendung des globalen Administratorkontos an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-149">Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using your global administrator account.</span></span>
     
 2. <span data-ttu-id="48bc1-150">Klicken Sie in der Liste von Kacheln auf **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="48bc1-150">In the list of tiles, click **SharePoint**.</span></span>
     
@@ -216,7 +216,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 2. <span data-ttu-id="48bc1-183">Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.</span><span class="sxs-lookup"><span data-stu-id="48bc1-183">Click the name of your global administrator, and then click **Sign out**.</span></span>
     
-3. <span data-ttu-id="48bc1-184">Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort des Lead Designers an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-184">Sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using the Lead Designer account name and its password.</span></span>
+3. <span data-ttu-id="48bc1-184">Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)](https://portal.office.com)) mit dem Kontonamen und Kennwort des Lead Designers an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-184">Sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using the Lead Designer account name and its password.</span></span>
     
 4. <span data-ttu-id="48bc1-185">Klicken Sie in der Liste von Kacheln auf **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="48bc1-185">In the list of tiles, click **SharePoint**.</span></span>
     
@@ -246,7 +246,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 <span data-ttu-id="48bc1-202">Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:</span><span class="sxs-lookup"><span data-stu-id="48bc1-202">Now let's demonstrate access using the Development VP user account:</span></span>
   
-1. <span data-ttu-id="48bc1-203">Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort des Development VP an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-203">Sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using the Development VP account name and its password.</span></span>
+1. <span data-ttu-id="48bc1-203">Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)](https://portal.office.com)) mit dem Kontonamen und Kennwort des Development VP an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-203">Sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using the Development VP account name and its password.</span></span>
     
 2. <span data-ttu-id="48bc1-204">Klicken Sie in der Liste von Kacheln auf **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="48bc1-204">In the list of tiles, click **SharePoint**.</span></span>
     
@@ -262,7 +262,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
     
 <span data-ttu-id="48bc1-213">Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:</span><span class="sxs-lookup"><span data-stu-id="48bc1-213">Now let's demonstrate access with a user account that has no permissions:</span></span>
   
-1. <span data-ttu-id="48bc1-214">Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort von Benutzer 3 an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-214">Sign in to the Office 365 portal ([(https://portal.office.com)]((https://portal.office.com))) using the User 3 account name and its password.</span></span>
+1. <span data-ttu-id="48bc1-214">Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)](https://portal.office.com)) mit dem Kontonamen und Kennwort von Benutzer 3 an.</span><span class="sxs-lookup"><span data-stu-id="48bc1-214">Sign in to the Office 365 portal ([(https://portal.office.com)](https://portal.office.com)) using the User 3 account name and its password.</span></span>
     
 2. <span data-ttu-id="48bc1-215">Klicken Sie in der Liste von Kacheln auf **SharePoint**.</span><span class="sxs-lookup"><span data-stu-id="48bc1-215">In the list of tiles, click **SharePoint**.</span></span>
     

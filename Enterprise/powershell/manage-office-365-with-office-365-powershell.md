@@ -37,7 +37,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="7c798-112">Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und mehr über die Verwendung von Automatisierungsbefehlen zur Verwaltung von Benutzerkonten und Lizenzen erfahren möchten.</span><span class="sxs-lookup"><span data-stu-id="7c798-112">Start here if you have installed the Office 365 PowerShell modules and want to learn more about using automation commands to manage user accounts and licenses.</span></span>
     
-- <span data-ttu-id="7c798-113">[Office 365-PowerShell für SharePoint Online]((https://technet.microsoft.com/de-DE/library/fp161362.aspx))</span><span class="sxs-lookup"><span data-stu-id="7c798-113">[Office 365 PowerShell for SharePoint Online]((https://technet.microsoft.com/de-DE/library/fp161362.aspx))</span></span>
+- <span data-ttu-id="7c798-113">[Office 365-PowerShell für SharePoint Online](https://technet.microsoft.com/de-DE/library/fp161362.aspx)</span><span class="sxs-lookup"><span data-stu-id="7c798-113">[Office 365 PowerShell for SharePoint Online](https://technet.microsoft.com/de-DE/library/fp161362.aspx)</span></span>
     
     <span data-ttu-id="7c798-114">Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und die Automatisierungsbefehle zum Verwalten von SharePoint Online verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="7c798-114">Start here if you have installed the Office 365 PowerShell modules and want to use automation commands to perform management of SharePoint Online.</span></span>
     
@@ -57,7 +57,7 @@ ms.lasthandoff: 01/11/2018
     
     <span data-ttu-id="7c798-122">Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und die Automatisierungsbefehle zum Verwalten von Skype for Business Online verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="7c798-122">Start here if you have installed the Office 365 PowerShell modules and want to use automation commands to perform management of Skype for Business Online.</span></span>
     
-- <span data-ttu-id="7c798-123">[Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))</span><span class="sxs-lookup"><span data-stu-id="7c798-123">[Skype for Business Online cmdlets]((http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx))</span></span>
+- <span data-ttu-id="7c798-123">[Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)</span><span class="sxs-lookup"><span data-stu-id="7c798-123">[Skype for Business Online cmdlets](http://technet.microsoft.com/library/141fbda3-992a-4eeb-9352-c6b0ffd760f6.aspx)</span></span>
     
     <span data-ttu-id="7c798-124">Beginnen Sie hier, wenn Sie sich sehr gut mit Office 365 PowerShell auskennen und mehr über spezifische Befehle erfahren möchten, um Einwahlkonferenzen, Cloud-PBX und PSTN-Anrufeinstellungen für Ihre Organisation verwalten und die Berichterstellungsfunktionen verwenden möchten, um die Verwendung von Skype for Business Online zu überwachen und Berichte darüber zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="7c798-124">Start here if you are very comfortable with Office 365 PowerShell and want to learn more about specific commands to manage dial-in conferencing, Cloud PBX, and PSTN calling settings for your organization, and use the reporting features to monitor and report on Skype for Business Online usage.</span></span>
     

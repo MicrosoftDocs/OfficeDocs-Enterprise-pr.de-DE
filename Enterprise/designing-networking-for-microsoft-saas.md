@@ -138,9 +138,9 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="26b6f-162">Optimieren Sie außerdem den Durchsatz der Intranetverbindung (kabelgestützt, kabellos oder VPN).</span><span class="sxs-lookup"><span data-stu-id="26b6f-162">Additionally, optimize intranet connection throughput (wired, wireless, or VPN).</span></span>
   
-<span data-ttu-id="26b6f-163">Weitere Informationen finden Sie unter [NAT-Unterstützung für Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).</span><span class="sxs-lookup"><span data-stu-id="26b6f-163">For more information, see [NAT support with Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).</span></span>
+<span data-ttu-id="26b6f-163">Weitere Informationen finden Sie unter [NAT-Unterstützung für Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).</span><span class="sxs-lookup"><span data-stu-id="26b6f-163">For more information, see [NAT support with Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).</span></span>
   
-<span data-ttu-id="26b6f-164">Die neuesten Empfehlungen zur Verwendung von ExpressRoute mit Office 365 finden Sie unter [ExpressRoute für Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span><span class="sxs-lookup"><span data-stu-id="26b6f-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).</span></span>
+<span data-ttu-id="26b6f-164">Die neuesten Empfehlungen zur Verwendung von ExpressRoute mit Office 365 finden Sie unter [ExpressRoute für Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span><span class="sxs-lookup"><span data-stu-id="26b6f-164">For the latest recommendations for using ExpressRoute with Office 365, see [ExpressRoute for Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).</span></span>
   
 <span data-ttu-id="26b6f-165">Gehen Sie folgendermaßen Sie vor, um die Intranetleistung zu optimieren:</span><span class="sxs-lookup"><span data-stu-id="26b6f-165">To optimize your intranet performance, do the following:</span></span>
   
@@ -150,7 +150,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="26b6f-168">Führen Sie Analysen für Zwischengeräte (Alter, Gesundheit usw.) durch.</span><span class="sxs-lookup"><span data-stu-id="26b6f-168">Perform analysis of intermediate devices (age, health, etc.)</span></span>
     
-<span data-ttu-id="26b6f-169">Weitere Informationen finden Sie unter der [PsPing-Tool]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).</span><span class="sxs-lookup"><span data-stu-id="26b6f-169">For more information, see the [PsPing tool]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).</span></span>
+<span data-ttu-id="26b6f-169">Weitere Informationen finden Sie unter der [PsPing-Tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).</span><span class="sxs-lookup"><span data-stu-id="26b6f-169">For more information, see the [PsPing tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).</span></span>
   
 ## <a name="it-operations-considerations"></a><span data-ttu-id="26b6f-170">Überlegungen zu IT-Abläufen</span><span class="sxs-lookup"><span data-stu-id="26b6f-170">IT operations considerations</span></span>
 
@@ -180,11 +180,11 @@ ms.lasthandoff: 01/11/2018
     
 <span data-ttu-id="26b6f-183">Weitere Informationen finden Sie unter:</span><span class="sxs-lookup"><span data-stu-id="26b6f-183">For more information, see:</span></span>
   
-- <span data-ttu-id="26b6f-184">[Netzwerk- und Migrationsplanung für Office 365]((https://aka.ms/tune))</span><span class="sxs-lookup"><span data-stu-id="26b6f-184">[Network and migration planning for Office 365]((https://aka.ms/tune))</span></span>
+- <span data-ttu-id="26b6f-184">[Netzwerk- und Migrationsplanung für Office 365](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="26b6f-184">[Network and migration planning for Office 365](https://aka.ms/tune)</span></span>
     
-- <span data-ttu-id="26b6f-185">[Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung]((https://aka.ms/o365perf))</span><span class="sxs-lookup"><span data-stu-id="26b6f-185">[Office 365 Performance Management Microsoft Virtual Academy course]((https://aka.ms/o365perf))</span></span>
+- <span data-ttu-id="26b6f-185">[Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung](https://aka.ms/o365perf)</span><span class="sxs-lookup"><span data-stu-id="26b6f-185">[Office 365 Performance Management Microsoft Virtual Academy course](https://aka.ms/o365perf)</span></span>
     
-- <span data-ttu-id="26b6f-186">[ExpressRoute für Office 365]((https://aka.ms/expressrouteoffice365))</span><span class="sxs-lookup"><span data-stu-id="26b6f-186">[ExpressRoute for Office 365]((https://aka.ms/expressrouteoffice365))</span></span>
+- <span data-ttu-id="26b6f-186">[ExpressRoute für Office 365](https://aka.ms/expressrouteoffice365)</span><span class="sxs-lookup"><span data-stu-id="26b6f-186">[ExpressRoute for Office 365](https://aka.ms/expressrouteoffice365)</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="26b6f-187">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="26b6f-187">See Also</span></span>
 
@@ -192,7 +192,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="26b6f-189">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="26b6f-189">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="26b6f-190">[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="26b6f-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="26b6f-190">[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="26b6f-190">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 

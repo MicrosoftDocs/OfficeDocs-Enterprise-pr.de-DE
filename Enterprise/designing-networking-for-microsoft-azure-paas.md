@@ -70,7 +70,7 @@ ms.lasthandoff: 01/11/2018
     
 - <span data-ttu-id="05cdc-130">SSL-Verschiebungen</span><span class="sxs-lookup"><span data-stu-id="05cdc-130">SSL offload</span></span>
     
-<span data-ttu-id="05cdc-131">Weitere Informationen finden Sie unter [Anwendungsgateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).</span><span class="sxs-lookup"><span data-stu-id="05cdc-131">For more information, see [Application Gateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).</span></span>
+<span data-ttu-id="05cdc-131">Weitere Informationen finden Sie unter [Anwendungsgateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span><span class="sxs-lookup"><span data-stu-id="05cdc-131">For more information, see [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).</span></span>
   
 ## <a name="azure-traffic-manager"></a><span data-ttu-id="05cdc-132">Azure Traffic Manager</span><span class="sxs-lookup"><span data-stu-id="05cdc-132">Azure Traffic Manager</span></span>
 
@@ -96,7 +96,7 @@ ms.lasthandoff: 01/11/2018
     
 2. <span data-ttu-id="05cdc-144">Der Benutzer initiiert den Datenverkehr mit der regionalen Web-App in Europa.</span><span class="sxs-lookup"><span data-stu-id="05cdc-144">The user initiates traffic with the regional web app in Europe.</span></span>
     
-<span data-ttu-id="05cdc-145">Weitere Informationen finden Sie unter [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).</span><span class="sxs-lookup"><span data-stu-id="05cdc-145">For more information, see [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).</span></span>
+<span data-ttu-id="05cdc-145">Weitere Informationen finden Sie unter [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span><span class="sxs-lookup"><span data-stu-id="05cdc-145">For more information, see [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="05cdc-146">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="05cdc-146">See Also</span></span>
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/11/2018
   
 [<span data-ttu-id="05cdc-148">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="05cdc-148">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-<span data-ttu-id="05cdc-149">[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))</span><span class="sxs-lookup"><span data-stu-id="05cdc-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://sway.com/FJ2xsyWtkJc2taRD))</span></span>
+<span data-ttu-id="05cdc-149">[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)</span><span class="sxs-lookup"><span data-stu-id="05cdc-149">[Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://sway.com/FJ2xsyWtkJc2taRD)</span></span>
 
 
 
