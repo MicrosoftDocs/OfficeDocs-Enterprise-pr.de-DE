@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: "Zusammenfassung: Schritt über den Entwurfsprozess für SharePoint Online Teamwebsites isoliert."
-ms.openlocfilehash: 343872ef7a41b40a87454da27ddccc4530ffe2eb
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7b2e8f0bc06a7901c52187ec6e63a056a11fa5e1
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
@@ -45,8 +41,7 @@ Der Satz von spezifischen Berechtigungen, der bestimmt, welche Aktionen ein Mitg
 |**SharePoint-Gruppe**|**Berechtigungsstufe**|
 |:-----|:-----|
 |\<Websitename > Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Websitename > Besucher  <br/> |
-            Lesen  <br/> |
+|\<Websitename > Besucher  <br/> |Lesen  <br/> |
 |\<Websitename > Besitzer  <br/> |Vollzugriff  <br/> |
    
  **Bewährte Methode:** Sie können zusätzliche SharePoint-Gruppen und Berechtigungsstufen erstellen. Wir empfehlen jedoch mit dem SharePoint-Standardgruppen und Berechtigungsstufen für Ihre isolierten SharePoint Online-Website.
@@ -86,8 +81,7 @@ Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstrukt
 |**SharePoint-Gruppe**|**Azure AD-basierte Zugriffsgruppe**|**Berechtigungsstufe**|
 |:-----|:-----|:-----|
 |\<Websitename > Mitglieder  <br/> |\<Websitename > Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Websitename > Besucher  <br/> |\<Websitename > Leser von Berichten  <br/> |
-            Lesen  <br/> |
+|\<Websitename > Besucher  <br/> |\<Websitename > Leser von Berichten  <br/> |Lesen  <br/> |
 |\<Websitename > Besitzer  <br/> |\<Websitename > Admins  <br/> |Vollzugriff  <br/> |
    
  **Bewährte Methode:** Obwohl Sie Office 365 oder Azure Active Directory-Gruppen als Mitglieder der SharePoint-Gruppen verwenden können, wird empfohlen, Azure AD-Gruppen zu verwenden. Azure AD-Gruppen, verwaltete entweder über Windows Azure AD oder Office 365, bieten Ihnen mehr Flexibilität, geschachtelte Gruppen verwenden, um Berechtigungen zuzuweisen.
@@ -135,7 +129,7 @@ Da alle Benutzerkonten in der Research, Engineering und Project leads Teams Webs
 
 Wenn Sie zum Erstellen und Konfigurieren einer isolierten-Website in der Produktion bereit sind, finden Sie unter [Bereitstellen einer isolierten SharePoint Online-Teamwebsite](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
   
