@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.collection: Ent_O365
+ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
 description: "Zusammenfassung: Informieren Sie sich auf dem Satz von Cloud Speicher Bausteine, zu denen Sie zum Erstellen Ihrer eigenen Speicherdienst oder eine bestimmte Lösung verwenden können."
-ms.openlocfilehash: 18aa8cb7fa0dda05302a88487dcc69bdbcb174d5
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eabf38e0ccef3335b2d198a33f5622d0d449589a
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="build-from-the-ground-up"></a>Von Grund auf neu aufgebaut
 
@@ -194,7 +190,7 @@ Beachten Sie beim Entwerfen Ihrer benutzerdefinierten Speicherlösung mit Azure 
     
 - Partitionieren Sie die Daten entweder vertikal (nach Tabellen) oder horizontal (über mehrere Shards segmentierte Tabellen), um die Auslastung auf mehrere Datenbanken zu verteilen.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Cloud-Speicher für Enterprise-Architekten](microsoft-cloud-storage-for-enterprise-architects.md)
   

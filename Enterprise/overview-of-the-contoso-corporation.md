@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: "Zusammenfassung: Verstehen der Contoso Corporation als ein Unternehmen und die stufenweise seiner weltweit Büros."
-ms.openlocfilehash: 6243f6d6e5c08342cae7650d0b4e75de27ed3527
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: c00e7fd75f580b82f8f920b9f74551a5e5e1b328
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Übersicht über die Contoso Corporation
 
@@ -93,7 +91,7 @@ Contoso IT-konstruiert haben die folgenden Elemente identifiziert, bei der Planu
     Die Verwaltung für cloudbasierte Apps und SaaS-Arbeitslasten erfordert, dass Einstellungen, Daten, Konten, Richtlinien und Berechtigungen verwaltet sowie der gegenwärtige Zustand und die gegenwärtige Leistung überwacht werden können.
  Vorhandene Serververwaltungstools werden dazu verwendet, virtuelle Computer in Azure IaaS zu verwalten.
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

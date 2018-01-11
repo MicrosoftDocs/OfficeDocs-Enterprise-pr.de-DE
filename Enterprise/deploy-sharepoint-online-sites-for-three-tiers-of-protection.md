@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: "Zusammenfassung: Erstellen und Konfigurieren von SharePoint Online Teamwebsites für verschiedene Ebenen der Schutz von Informationen."
-ms.openlocfilehash: 1023eff2542ab1bf41a8261d85d70c06718497cf
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 7aa0107222454383abe0c1284b66ec0c4b808595
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Bereitstellen von SharePoint Online-Websites für drei Ebenen des Schutzes
 
@@ -106,8 +103,7 @@ Die empfohlene Gruppenstruktur und die Berechtigungsstufen sehen z. B. wie folgt
 |**SharePoint-Gruppe**|**Berechtigungsstufe**|**Zugriffsgruppe (Beispiele)**|
 |:-----|:-----|:-----|
 |[Websitename] Elemente des Objekts  <br/> |Bearbeiten  <br/> |[Websitename] Elemente des Objekts  <br/> |
-|[Websitename] Besucher  <br/> |
-            Lesen  <br/> |[Websitename] Leser von Berichten  <br/> |
+|[Websitename] Besucher  <br/> |Lesen  <br/> |[Websitename] Leser von Berichten  <br/> |
 |[Websitename] Besitzer  <br/> |Vollzugriff  <br/> |[Websitename] Administratoren  <br/> |
    
 Die SharePoint-Gruppen und -Berechtigungsstufen werden standardmäßig für eine Teamwebsite erstellt. Sie müssen die Namen der Zugriffsgruppen ermitteln.
@@ -166,7 +162,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
     
 8. Klicken Sie im Dialogfeld **Freigeben** Geben Sie den Namen der Gruppe Ihrer Website Zugriff für diese Website, wählen Sie sie aus, und klicken Sie auf **Freigeben**.
     
-9. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+9. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 10. Klicken Sie in der Liste **[Websitename] Besitzer** auf.
     
@@ -174,7 +170,7 @@ Konfigurieren Sie als Nächstes auf der neuen SharePoint Online-Teamwebsite die 
     
 12. Klicken Sie im Dialogfeld **Freigeben** Geben Sie den Namen der Gruppe der Administratoren-Zugriff für diese Website, wählen Sie sie aus, und klicken Sie auf **Freigeben**.
     
-13. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+13. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 14. Klicken Sie in der Liste auf **Besucher [Websitename]** .
     
@@ -225,8 +221,7 @@ Die empfohlene Gruppenstruktur und die Berechtigungsstufen sehen z. B. wie folgt
 |**SharePoint-Gruppe**|**Berechtigungsstufe**|**Zugriffsgruppe (Beispiele)**|
 |:-----|:-----|:-----|
 |[Websitename] Elemente des Objekts  <br/> |Bearbeiten  <br/> |[Websitename] Elemente des Objekts  <br/> |
-|[Websitename] Besucher  <br/> |
-            Lesen  <br/> |[Websitename] Leser von Berichten  <br/> |
+|[Websitename] Besucher  <br/> |Lesen  <br/> |[Websitename] Leser von Berichten  <br/> |
 |[Websitename] Besitzer  <br/> |Vollzugriff  <br/> |[Websitename] Administratoren  <br/> |
    
 Die SharePoint-Gruppen und -Berechtigungsstufen werden standardmäßig für eine Teamwebsite erstellt. Sie müssen die Namen der Zugriffsgruppen ermitteln.
@@ -267,7 +262,7 @@ Jetzt können die Mitglieder der Website über die Gruppenmitgliedschaft in eine
 
 [Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md)
   

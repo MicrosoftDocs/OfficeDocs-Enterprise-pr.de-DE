@@ -8,21 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
-- jan17entnews
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: "Zusammenfassung: Konfigurieren Sie und veranschaulichen Sie, wie Office 365 Information Rights Management sensiblen Dateien schützt, auch wenn sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden."
-ms.openlocfilehash: a6547cf4327980e3909323d5bda4455dfffd37f4
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eb456c86b118556abde6a887fe8b9ab68300740b
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen
 
@@ -71,7 +67,7 @@ New-MsolUser -DisplayName "CEO" -FirstName "Chief" -LastName "Executive Officer"
 
 Beachten Sie aus der Anzeige des Befehls **New-MsolUser** das generierte Kennwort für das Konto CEO, und tragen sie Sie an einem sicheren Ort.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "cfo@" + $orgName + ".onmicrosoft.com"
@@ -81,7 +77,7 @@ New-MsolUser -DisplayName "CFO" -FirstName "Chief" -LastName "Financial Officer"
 
 Beachten Sie aus der Anzeige des Befehls **New-MsolUser** das generierte Kennwort für das Konto Leiter der Finanzabteilung, und tragen sie Sie an einem sicheren Ort.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "coo@" + $orgName + ".onmicrosoft.com"
@@ -331,7 +327,7 @@ Im nächsten Schritt versuchen fungiert als normaler Benutzer, das **SensitiveDa
     
 Eine andere Möglichkeit, finden in der IRM-Schutz ist betrachten Sie die Dateien im lokalen Ordner. Die **SensitiveData AfterIRM.docx** sollte wesentlich größer als die **SensitiveData-BeforeIRM.docx** -Datei. Die Datei **SensitiveData AfterIRM.docx** wird verschlüsselt, und die IRM-Schutz Informationen hinzugefügt.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

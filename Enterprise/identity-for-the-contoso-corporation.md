@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 78a407e4-2d8b-4561-b308-b22c95f60eeb
 description: "Zusammenfassung: Grundlegendes zu wie Contoso nutzt IDaaS und bietet geografisch verteilten und redundante Authentifizierung für Benutzer."
-ms.openlocfilehash: a0de29ac7e73216e04fe02c680f2557e9f402883
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: d9aee05d36061433398cd8ce913a03bce65cc103
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identität für die Contoso Corporation
 
@@ -130,17 +128,17 @@ Damit das Hin- und Zurückschalten funktioniert, aktualisiert Contoso das Azure 
 - Wenn die DMZ-Authentifizierungsserver nicht verfügbar sind, werden die IP-Adressen der Server in Azure IaaS verwendet.
 
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Microsoft-Cloud-Identität für Enterprise-konstruiert](http://aka.ms/cloudarchidentity)
+[Microsoft-Cloud-Identität für Enterprise-Architekten](http://aka.ms/cloudarchidentity)
   
 [Identität- und Geräteschutz für Office 365](http://aka.ms/o365protect_device)
   
-[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

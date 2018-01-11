@@ -12,16 +12,15 @@ ms.collection: Ent_O365
 ms.custom:
 - Ent_Office_Other
 - O365ITProTrain
-- DecEntMigration
 - LIL_Placement
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Erläutert, wie Sie Office 365 PowerShell, zum Anzeigen von Informationen zu Lizenzierung Pläne, Dienste und Lizenzen, die in Office 365-Organisation verfügbar sind."
-ms.openlocfilehash: dc9ea5ad5077062a05c0070ffecbf580d3aacc49
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell
 
@@ -35,7 +34,7 @@ Jeder Office 365-Abonnement umfasst die folgenden Elemente:
 - **Lizenzen** Jede Lizenzierungsplan enthält die Anzahl der Lizenzen, die Sie erworben haben. Sie zuweisen Benutzern Lizenzen, sodass diese Office 365-Dienste verwenden können, die durch den Lizenzierungsplan definiert sind. Jedes Benutzerkonto erfordert mindestens eine Lizenz von einem Lizenzierungsplan, damit sie melden Sie sich bei Office 365 und die Dienste verwenden können.
     
 Office 365 PowerShell können Sie Details zu den verfügbaren lizenzierungspläne, Lizenzen und Dienste in Office 365-Organisation anzeigen. Weitere Informationen zu den Produkten, Features und Dienste, die in verschiedenen Office 365-Abonnements verfügbar sind, finden Sie unter [Planen der Office 365-Produkten](https://go.microsoft.com/fwlink/p/?LinkId=691147).
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 <a name="RTT"> </a>
 
 - Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
@@ -100,7 +99,7 @@ Dieses Beispiel zeigt die Office 365-Dienste, die in den Lizenzierungsplan litwa
 |:-----|
 |![Das kurze Symbol für LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **neu zu Office 365?**         Entdecken Sie kostenlose video Kurse für [Office 365-Administratoren und IT-Experten](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), bereitgestellt von LinkedIn Learning. |
    
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 <a name="ShortVersion"> </a>
 
 #### 

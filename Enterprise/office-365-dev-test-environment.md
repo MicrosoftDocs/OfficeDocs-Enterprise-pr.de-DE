@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: "Zusammenfassung: Verwenden dieser Test Lab Guide an um eine Testversion Office 365-Abonnement für Test- oder Test-/zu erstellen."
-ms.openlocfilehash: 1864043513fc7502ada332ab3b3043ff20a13736
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 60ac59f8b6af81ff18a4c41c0ce5d2376bc161e7
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 
@@ -154,7 +151,7 @@ Verwenden Sie die Anweisungen in [Verbindung mit Office 365 PowerShell herstelle
     
  Geben Sie im Dialogfeld Windows PowerShell anmelden den Namen der Office 365 globaler Administrator (Beispiel: jdoe@contosotoycompany.onmicrosoft.com) und das Kennwort ein.
   
-Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany") und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:
+Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“) und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:
   
 ```
 $orgName="<organization name>"
@@ -166,7 +163,7 @@ New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalNam
 
 Beachten Sie aus der Anzeige des Befehls **New-MsolUser** das generierte Kennwort für das Konto des Benutzers 2, und tragen sie Sie an einem sicheren Ort.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "user3@" + $orgName + ".onmicrosoft.com"
@@ -175,7 +172,7 @@ New-MsolUser -DisplayName "User 3" -FirstName User -LastName 3 -UserPrincipalNam
 
 Beachten Sie aus der Anzeige des Befehls **New-MsolUser** das generierte Kennwort für das Konto des Benutzers 3, und tragen sie Sie an einem sicheren Ort.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "user4@" + $orgName + ".onmicrosoft.com"
@@ -184,7 +181,7 @@ New-MsolUser -DisplayName "User 4" -FirstName User -LastName 4 -UserPrincipalNam
 
 Beachten Sie aus der Anzeige des Befehls **New-MsolUser** das generierte Kennwort für das Konto des Benutzers 4, und tragen sie Sie an einem sicheren Ort.
   
-Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell"-Eingabeaufforderung die folgenden Befehle aus:
+Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
 ```
 $userName= "user5@" + $orgName + ".onmicrosoft.com"
@@ -298,7 +295,7 @@ Erweitern Sie Ihre Office 365-Entwicklungs-/Testumgebung um zusätzliche Microso
     
 - [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

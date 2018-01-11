@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Zusammenfassung: Erstellen Sie öffentliche, private, vertrauliche und streng vertraulich SharePoint Online Teamwebsites in Ihrer politischen Kampagne Test-/-Umgebung."
-ms.openlocfilehash: 82e671af271508dfdecac6169a7892a8a12b7865
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4f89fd29103756a33aa15e8e5e2976c521d69baa
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
 
@@ -173,7 +171,7 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 16. Wiederholen Sie die Schritte 14 und 15 für die Gruppe **Analytics Personal** und das Benutzerkonto **Regular1** .
     
-17. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+17. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 18. Klicken Sie in der Liste auf **Besitzer marketing-Kampagnen** .
     
@@ -181,7 +179,7 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 20. Geben Sie im Dialogfeld **Freigeben** **IT-Mitarbeiter** ein, wählen Sie die Option aus, und klicken Sie dann auf **Freigeben**.
     
-21. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+21. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 22. Schließen Sie die Registerkarte **Personen und Gruppen** in Ihrem Browser, klicken Sie auf der Registerkarte **Kampagne Marketing-Startseite** in Ihrem Browser, und schließen Sie den Bereich für die **Projektwebsite-Berechtigungen** .
     
@@ -239,7 +237,7 @@ Konfigurieren Sie anschließend eine Data Loss Prevention (DLP) Richtlinie, die 
     
 15. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
     
-  - Wenn Sie eine Datei für einen Benutzer außerhalb der Organisation freigeben möchten, laden Sie die Datei herunter, und öffnen Sie sie. Klicken Sie auf „Datei" > „Dokument schützen" > „Mit Kennwort verschlüsseln", und geben Sie dann ein sicheres Kennwort ein. Senden Sie das Kennwort in einer separaten E-Mail oder auf andere Weise.
+  - Wenn Sie eine Datei für einen Benutzer außerhalb der Organisation freigeben möchten, laden Sie die Datei herunter, und öffnen Sie sie. Klicken Sie auf „Datei“ > „Dokument schützen“ > „Mit Kennwort verschlüsseln“, und geben Sie dann ein sicheres Kennwort ein. Senden Sie das Kennwort in einer separaten E-Mail oder auf andere Weise.
     
 16. Klicken Sie auf **OK**.
     
@@ -289,7 +287,7 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche
     
 18. Geben Sie im Dialogfeld **Freigeben** **IT-Mitarbeiter** ein, wählen Sie die Option aus, und klicken Sie dann auf **Freigeben**.
     
-19. Klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser.
+19. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
 20. Schließen Sie die Registerkarte **Personen und Gruppen** in Ihrem Browser, klicken Sie auf der Registerkarte **Kampagne Strategie-Startseite** in Ihrem Browser, und schließen Sie den Bereich für die **Projektwebsite-Berechtigungen** .
     
@@ -349,7 +347,7 @@ Im nächsten Schritt Konfigurieren einer DLP-Richtlinie, Blöcke der Benutzer, w
     
 16. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
     
-  - Wenn Sie eine Datei für einen Benutzer außerhalb der Organisation freigeben möchten, laden Sie die Datei herunter, und öffnen Sie sie. Klicken Sie auf „Datei" > „Dokument schützen" > „Mit Kennwort verschlüsseln", und geben Sie dann ein sicheres Kennwort ein. Senden Sie das Kennwort in einer separaten E-Mail oder auf andere Weise.
+  - Wenn Sie eine Datei für einen Benutzer außerhalb der Organisation freigeben möchten, laden Sie die Datei herunter, und öffnen Sie sie. Klicken Sie auf „Datei“ > „Dokument schützen“ > „Mit Kennwort verschlüsseln“, und geben Sie dann ein sicheres Kennwort ein. Senden Sie das Kennwort in einer separaten E-Mail oder auf andere Weise.
     
 17. Klicken Sie auf **OK**.
     
@@ -407,7 +405,7 @@ Sie können jetzt mit dem Erstellen von Dokumenten in diesen vier Websites begin
   
 Um ein Dokument mit Azure Information Protection und dieser neuen Bezeichnung zu schützen, müssen Sie auf einem Testcomputer [Installieren Sie den Client Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) , Installieren von Office über das Office 365-Portal und melden Sie sich von Microsoft Word mit einem Konto in der ** Senior und strategische Mitarbeiter** Gruppe von Test-Abonnement.
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

@@ -8,16 +8,14 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: None
-ms.custom:
-- DecEntMigration
-- Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Zusammenfassung: Erstellen Sie Office 365 und Enterprise-Mobilität + Testabonnements Sicherheit (zur Abstimmung) mit Benutzern und Gruppen für eine politischen Kampagne Test-/-Umgebung."
-ms.openlocfilehash: 7faf428fc2225d3f31297ba6bf83a10a7682009a
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e876c8770651c3f23c06c9c499bdaabca52da353
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -29,7 +27,7 @@ Verwenden Sie die Anweisungen in diesem Artikel, um einer Test-/Umgebung erstell
 
 In dieser Phase erhalten Sie Testabonnements für Office 365 E5 und Enterprise-Mobilität + Sicherheit (zur Abstimmung) E5 für fiktive Organisation, die eine politische Kampagne darstellt.
   
-Zuerst, befolgen Sie die Anweisungen in **Phase 2** der [Office 365 Dev/Test Environment](office-365-dev-test-environment.md).
+Folgen Sie zunächst den Anweisungen in **Phase 2** des Artikels [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md).
   
 Im nächsten Schritt für den Test zur Abstimmung E5-Abonnement registrieren und die derselben Organisation wie Test Office 365-Abonnement hinzugefügt.
   
@@ -195,7 +193,7 @@ Notieren Sie diese Werte für die Arbeit mit Office 365- und EMS-Testabonnements
 
 Erstellen Sie die vier verschiedenen Typen von SharePoint Online Teamwebsites in dieser Umgebung Test-/und [Teamwebsites in einer politischen Kampagne Test-/Umgebung erstellen](create-team-sites-in-a-political-campaign-dev-test-environment.md).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
