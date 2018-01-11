@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
 description: "Zusammenfassung: In diesem Artikel erfahren Sie, wie Contoso eine SQL Server Stretch-Datenbank implementiert hat, um seinen Bedarf an lokalem Datenspeicher sowie seine täglichen laufenden Kosten zu reduzieren."
-ms.openlocfilehash: f1a44a14da49c394974755f7c557013717c4ccef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: ef21b00f54fcc6efda2e83cb5952a99c7b8c8f28
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Verschieben von historischen Transaktionsdaten in die Cloud
 
@@ -34,7 +32,7 @@ Contoso erkannte die geschäftliche Notwendigkeit einer Konsolidierung seiner Re
   
 Abbildung 1 zeigt, wie ein SQL-Client T-SQL-Abfragen an einen Server sendet, auf dem SQL Server 2016 ausgeführt wird. Dieser Server leitet die Abfragen anschließend an eine Azure SQL Stretch-Datenbank in Azure-PaaS weiter.
   
-Weitere Informationen finden Sie unter [Stretch-Datenbank](https://msdn.microsoft.com/library/dn935011.aspx).
+Weitere Informationen finden Sie unter [Stretch-Datenbank]((https://msdn.microsoft.com/library/dn935011.aspx)).
   
 Zur Verschiebung der historischen Daten in die Cloud ging Contoso wie folgt vor:
   
@@ -77,9 +75,9 @@ Die Vorteile für Contoso nach der Implementierung einer Stretch-Datenbank:
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch-Datenbank](https://msdn.microsoft.com/library/dn935011.aspx)
+[Stretch-Datenbank]((https://msdn.microsoft.com/library/dn935011.aspx))
   
-[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

@@ -10,18 +10,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - O365ITProTrain
 - Ent_Office_Other
 - PowerShell
-- apr17entnews
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Zusammenfassung: Informationen zum Verwenden von Office 365 PowerShell zum Konfigurieren der Eigenschaften für einzelne oder mehrere Benutzerkonten in Ihrem Office 365-Mandanten."
-ms.openlocfilehash: d9e817530f3b1554cb757720f01afec5ed3b63ef
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: eac568d20d1b33e06c37e920f9fd31582c8bb648
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell
 
@@ -210,7 +208,7 @@ Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
 - Liste der Benutzerprinzipalnamen alphabetisch sortieren (**Sort-Object UserPrincipalName**) und an den nächsten Befehl senden (**|**).
     
 - Nur die UserPrincipalName-Eigenschaft für jedes Konto anzeigen ( **Select-Object UserPrincipalName** ).
-- Jeweils auf einem Bildschirm anzeigen (**More**).
+- Jeweils auf einem Bildschirm anzeigen ( **More** ).
     
 Mit diesem Befehl werden alle Ihre Konten aufgelistet. Wenn der Benutzerprinzipalname für ein Konto basierend auf dem Anzeigenamen (Vor- und Nachname) angezeigt werden soll, geben Sie die **$userName**-Variable unten ein (entfernen Sie die Zeichen „\<" und „>"), und führen Sie die folgenden Befehle aus:
   

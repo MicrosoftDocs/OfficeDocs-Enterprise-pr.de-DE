@@ -8,20 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-ms.custom:
-- DecEntMigration
-- Ent_Solutions
+ms.collection: Ent_O365
+ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure."
-ms.openlocfilehash: 8340058dc93389d4b2b1e843726bc7e8ef30cdde
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 92e579c325d2cfa18e404d15d6add56fc225eedd
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365
 
@@ -77,7 +72,7 @@ Das Tool Azure AD Connect konfiguriert die AD FS-Server, die Webanwendungsproxy-
   
 1. Erstellen Sie eine Remotedesktopverbindung mit Ihrem DirSync-Server über ein Domänenkonto, das über lokale Administratorberechtigungen verfügt.
     
-2. Öffnen Sie über den Desktop des DirSync-Servers Internet Explorer, und wechseln Sie zu [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+2. Öffnen Sie über den Desktop des DirSync-Servers Internet Explorer, und wechseln Sie zu [(https://aka.ms/aadconnect)]((https://aka.ms/aadconnect)).
     
 3. Klicken Sie auf der Seite **Microsoft Azure Active Directory Connect** auf **Herunterladen** und dann auf **Ausführen**.
     

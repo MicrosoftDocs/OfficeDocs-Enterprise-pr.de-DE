@@ -8,19 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Visuals
-ms.custom:
-- DecEntMigration
-- Ent_Deployment
+ms.collection: Ent_O365
+ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: "Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung."
-ms.openlocfilehash: 38fe5adb6cac099f6f8014e7535e92e7b841d0bd
-ms.sourcegitcommit: 4a347cfb16405d5213b28f332d80e244fca0fb8f
+ms.openlocfilehash: be1a369bb87a5a63d9c266977c32c64fc55f3630
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 
@@ -185,7 +181,7 @@ Die folgende Abbildung zeigt eine Notfallwiederherstellungslösung aus einer lok
   
 **Abbildung: Topologie und zentrale Elemente einer Produktionsfarm und einer betriebsbereiten Standby-Wiederherstellungsfarm**
 
-![Zeigt die Topologie und die zentralen Elemente einer SharePoint-Produktionsfarm und einer Standby-Wiederherstellungsfarm.](images/AZarch_TopWarmStndby.gif)
+![Zeigt die Topologie und die zentralen Elemente einer SharePoint-Produktionsfarm und einer Standby-Wiederherstellungsfarm.](images/AZarchWarmStndby.gif)
   
 Inhalt dieses Diagramms:
   
@@ -371,7 +367,7 @@ Die folgende Tabelle enthält Links zu DFSR-Referenzartikeln und -Blogbeiträgen
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Phase 6: Einrichten des Protokollversands zur Wiederherstellungsfarm
 <a name="Phase6"> </a>
 
-Der Protokollversand ist eine wichtige Komponente für die Einrichtung der Notfallwiederherstellung in dieser Umgebung. Sie können mithilfe des Protokollversands Transaktionsprotokolldateien für Datenbanken aus einer primären Datenbankserverinstanz automatisch an eine sekundäre Datenbankserverinstanz senden. Informationen zum Einrichten des Protokollversands finden Sie unter [Configure log shipping in SharePoint 2013](http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx). 
+Der Protokollversand ist eine wichtige Komponente für die Einrichtung der Notfallwiederherstellung in dieser Umgebung. Sie können mithilfe des Protokollversands Transaktionsprotokolldateien für Datenbanken aus einer primären Datenbankserverinstanz automatisch an eine sekundäre Datenbankserverinstanz senden. Informationen zum Einrichten des Protokollversands finden Sie unter [Configure log shipping in SharePoint 2013]((http://technet.microsoft.com/library/482aeb81-e2aa-419f-a269-5b349a6c4721.aspx)). 
   
 > [!IMPORTANT]
 > Die Unterstützung des Protokollversands in SharePoint Server ist auf bestimmte Datenbanken beschränkt. Weitere Informationen finden Sie unter [Unterstützte Hochverfügbarkeits- und Notfallwiederherstellungsoptionen für SharePoint-Datenbanken (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 

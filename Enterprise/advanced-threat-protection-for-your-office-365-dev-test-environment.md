@@ -8,20 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection:
-- Ent_O365
-- Ent_O365_Top
+ms.collection: Ent_O365
 ms.custom:
-- DecEntMigration
 - TLG
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Advanced Threat Protection in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 00b1fc8fea930346f082d3d2302a14dea7ad4309
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 3af5255d038f5cea40242162e149a873f347203f
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung
 
@@ -48,7 +45,7 @@ In dieser Phase führen Sie vor, dass vor dem Konfigurieren von ATP-Richtlinien 
     
   - Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung von Internet Explorer, und melden Sie sich von Ihrem lokalen Computer aus an.
     
-  - Wenn Sie die simulierte Office 365-Unternehmensentwicklungs-/-testumgebung verwenden, verwenden Sie das [Azure-Portal](https://portal.azure.com), um sich mit dem virtuellen Computer CLIENT1 zu verbinden, und melden Sie sich dann von CLIENT1 aus an.
+  - Wenn Sie die simulierte Office 365-Unternehmensentwicklungs-/-testumgebung verwenden, verwenden Sie das [Azure-Portal]((https://portal.azure.com)), um sich mit dem virtuellen Computer CLIENT1 zu verbinden, und melden Sie sich dann von CLIENT1 aus an.
     
 2. Öffnen Sie Editor, und geben Sie einen Text ein.
     
@@ -76,7 +73,7 @@ In dieser Phase führen Sie vor, dass vor dem Konfigurieren von ATP-Richtlinien 
     
 14. Geben Sie in **URL** den Text **http://www.spamlink.contoso.com/** ein, klicken Sie auf **OK** und dann auf **Senden**.
     
-15. Öffnen Sie eine getrennte Instanz von Internet Explorer für das InPrivate-Browsen, wechseln Sie zum Office 365-Portal ([https://portal.office.com](https://portal.office.com)), und melden Sie sich bei Ihrem Office 365-Testabonnement mit Ihrem globalen Administratorkonto an.
+15. Öffnen Sie eine getrennte Instanz von Internet Explorer für das InPrivate-Browsen, wechseln Sie zum Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))), und melden Sie sich bei Ihrem Office 365-Testabonnement mit Ihrem globalen Administratorkonto an.
     
 16. Klicken Sie auf der Hauptportalseite auf die Kachel „apps" und dann auf **E-Mail**.
     
@@ -156,7 +153,7 @@ In dieser Phase führen Sie vor, wie ATP potenziell schädliche E-Mails behandel
 Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und mit ATP zu experimentieren.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
 ## <a name="see-also"></a>Weitere Artikel
 
@@ -172,6 +169,6 @@ Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md) 
 
-[Advanced Threat Protection für Safe Attachments und Safe Links](https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653)
+[Advanced Threat Protection für Safe Attachments und Safe Links]((https://support.office.com/article/Office-365-Advanced-Threat-Protection-E100FE7C-F2A1-4B7D-9E08-622330B83653))
 
 

@@ -5,20 +5,18 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
-ms.topic: concetpual
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: "Zusammenfassung: Grundlegende Informationen dar체ber, warum f체r die Cloudakzeptanz ein neuer Ansatz f체r Investitionen in die Netzwerkinfrastruktur erforderlich ist."
-ms.openlocfilehash: 810640ab3b870759424af2f88392bbaf0b0e11c7
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 18b4e5e10094a43f0d2b10cd0f01684f2352a0a8
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Weiterentwickeln Ihres Netzwerks f체r Cloudkonnektivit채t
 
@@ -91,7 +89,7 @@ Der Umfang von Netzwerkinvestitionen ist von der Kategorie des Clouddiensts abh�
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen f체r IT-Entscheidungstr채ger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen f체r IT-Entscheidungstr채ger]((https://sway.com/FJ2xsyWtkJc2taRD))
 
 
 

@@ -9,16 +9,14 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 8f6f9894-5394-4110-8b0a-b8765028c10b
 description: "Zusammenfassung: Erfahren Sie, wie Contoso seine Sicherheitsanforderungen bestimmten Features in den Cloudangeboten von Microsoft zuordnete und einen Weg zur Bereitschaft für Cloudsicherheit ermittelte."
-ms.openlocfilehash: f7c6667ce96a01771ce4f18339daf4c62173e4d9
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 4d38f58595f0043e1a02106b6428b92dabad2e17
+ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="security-for-the-contoso-corporation"></a>Sicherheit für die Contoso Corporation
 
@@ -56,7 +54,7 @@ Nachfolgend finden Sie die Sicherheitsanforderungen von Contoso in der Cloud:
     
 ## <a name="contosos-data-sensitivity-classification"></a>Contosos Klassifizierung der Vertraulichkeit von Daten
 
-Anhand der Informationen aus Microsofts Data Classification Toolkit (Toolkit zur Datenklassifizierung) [Data Classification Toolkit](https://msdn.microsoft.com/library/hh204743.aspx) hat Contoso seine Daten analysiert und die folgenden Stufen festgelegt.
+Anhand der Informationen aus Microsofts Data Classification Toolkit (Toolkit zur Datenklassifizierung) [Data Classification Toolkit]((https://msdn.microsoft.com/library/hh204743.aspx)) hat Contoso seine Daten analysiert und die folgenden Stufen festgelegt.
   
 |**Stufe 1: Geringer Geschäftswert**|**Stufe 2: Mittlerer Geschäftswert**|**Stufe 3: Hoher Geschäftswert**|
 |:-----|:-----|:-----|
@@ -130,7 +128,7 @@ Gemäß den bewährten Methoden für die Sicherheit in Office 365 haben Sicherhe
     
     Statt die globale Administratorrolle Standardbenutzerkonten zuzuweisen, wurden bei Contoso drei, dedizierte globale Administratorkonten mit sicheren Kennwörtern erstellt. Das Anmelden mit einem globalen Administratorkonto wird nur für bestimmte Verwaltungsaufgaben ausgeführt, und die Kennwörter sind nur festgelegten Mitarbeitern bekannt. Die Contoso-Sicherheitsadministratoren haben die Administratorrollen entsprechend der Position und dem Verantwortungsbereich des IT-Mitarbeiters den jeweiligen Konten zugewiesen.
     
-    Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+    Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen]((https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)).
     
 - **Mehrstufige Authentifizierung für wichtige Benutzerkonten**
     
@@ -140,13 +138,13 @@ Gemäß den bewährten Methoden für die Sicherheit in Office 365 haben Sicherhe
     
   - Zum Schutz vor Phishingangriffen, bei denen die Anmeldeinformationen einer vertrauenswürdigen Person in der Organisation kompromittiert und böswillige E-Mails gesendet werden, wurde bei Contoso die mehrstufige Authentifizierung für alle Benutzerkonten für Manager aktiviert, einschließlich Führungskräfte.
     
-    Weitere Informationen finden Sie unter [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba).
+    Weitere Informationen finden Sie unter [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen]((https://support.office.com/article/Plan-for-multifactor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)).
     
 - **Advanced Security Management (ASM)**
     
     ASM verwendet konfigurierte Richtlinien für die Überwachung abweichender Aktivitäten. Contoso-Sicherheitsadministratoren richten Benachrichtigungen mit ASM ein, sodass IT-Administratoren bei anomalen oder riskanten Benutzeraktivitäten benachrichtigt werden, z. B. beim Download von großen Datenmengen, mehreren nicht erfolgreichen Anmeldeversuchen oder Anmeldungen von unbekannten oder gefährlichen IP-Adressen.
     
-    Weitere Informationen finden Sie unter [Übersicht über Advanced Security Management in Office 365 ](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+    Weitere Informationen finden Sie unter [Übersicht über Advanced Security Management in Office 365 ]((https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)).
     
 - **Sicherer E-Mail-Fluss und Postfachüberwachungsprotokollierung**
     
@@ -154,9 +152,9 @@ Gemäß den bewährten Methoden für die Sicherheit in Office 365 haben Sicherhe
     
     Weitere Informationen finden Sie unter: 
     
-  - [Antispamschutz für Office 365-E-Mails](https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586)
+  - [Antispamschutz für Office 365-E-Mails]((https://support.office.com/article/Office-365-Email-AntiSpam-Protection-6a601501-a6a8-4559-b2e7-56b59c96a586))
     
-  - [Advanced Threat Protection für sichere Anlagen und sichere Links](https://technet.microsoft.com/library/mt148491.aspx)
+  - [Advanced Threat Protection für sichere Anlagen und sichere Links]((https://technet.microsoft.com/library/mt148491.aspx))
     
   - [Aktivieren der Postfachüberwachung in Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109)
     
@@ -164,7 +162,7 @@ Gemäß den bewährten Methoden für die Sicherheit in Office 365 haben Sicherhe
     
     Bei Contoso wurden vertrauliche Daten identifiziert und Richtlinien zur Verhinderung von Datenverlust für Exchange Online, SharePoint Online und OneDrive konfiguriert, um zu verhindern, dass Benutzer versehentlich oder absichtlich die Daten freigeben können. 
     
-    Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
+    Weitere Informationen finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust]((https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)).
     
 ## <a name="see-also"></a>Weitere Artikel
 
@@ -172,9 +170,9 @@ Gemäß den bewährten Methoden für die Sicherheit in Office 365 haben Sicherhe
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
   
-[Bewährte Methoden für die Sicherheit in Office 365](https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3)
+[Bewährte Methoden für die Sicherheit in Office 365]((https://support.office.com/article/Security-best-practices-for-Office-365-9295e396-e53d-49b9-ae9b-0b5828cdedc3))
 
 
 
