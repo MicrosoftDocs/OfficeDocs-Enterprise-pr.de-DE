@@ -7,6 +7,18 @@
       "locale": "de-DE",
       "monikers": [],
       "open_to_public_contributors": false,
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "OfficeDocs-O365Enterprise",
+      "build_source_folder": "Enterprise",
+      "build_output_subfolder": "OfficeDocs-O365Enterprise",
+      "locale": "de-de",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
