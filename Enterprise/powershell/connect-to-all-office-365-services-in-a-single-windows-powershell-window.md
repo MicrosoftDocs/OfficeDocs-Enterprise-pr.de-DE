@@ -16,11 +16,11 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Verbinden Sie Windows PowerShell mit allen Office 365-Diensten in einem einzelnen Windows PowerShell-Fenster.'
-ms.openlocfilehash: 2dccfc73b016cbe97436c822432331ee30ba4bcd
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5f97924d141afa4319c761fee86b13cb2b0705fb
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster
 
@@ -195,15 +195,15 @@ $credential = Get-Credential
 > [!NOTE]
 >  `$credential`ist eine Variable, die das Anmeldeinformationsobjekt gespeichert werden. Sie müssen keine nennen Sie die Variable `$credential`, aber dies vereinfacht das merken, welche Variable das Anmeldeinformationsobjekt enthält. (Und das ist wichtig, weil wir diese Variable mehrmals wieder verwendet werden.) Die auch erleichtert die für Sie unsere Beispiele, da in diesem Artikel immer verwendet `$credential` zur Darstellung des Anmeldeinformationenobjekts.
   
-Windows PowerShell will then display a dialog box that looks like this.
+Windows PowerShell wird anschließend ein Dialogfeld angezeigt, die folgendermaßen aussieht.
   
 ![Leeres Dialogfeld mit Aufforderung zu Anmeldeinformationen.](images/o365_powershell_empty_credentials_box.png)
   
-Type your work or school account user name in the **User name** box, using the format _username@domainname_ (for example, kenmyer@litwareinc.onmicrosoft.com); type your password in the **Password** box; and then click **OK**:
+Geben Sie Ihre Arbeit oder Schule Konto Benutzernamen in das Feld **Benutzername** das Format _username@domainname_ (beispielsweise kenmyer@litwareinc.onmicrosoft.com); Geben Sie im Feld **Kennwort** Ihr Kennwort ein; und klicken Sie dann auf **OK**:
   
 ![Ausgefülltes Dialogfeld mit Aufforderung zu Anmeldeinformationen.](images/o365_powershell_completed_credentials_box.png)
   
-Note that, as is often the case, you won't see any sort of confirmation that the credentials object was created. (Windows PowerShell typically tells you when things go wrong but doesn't always tell you when things go right.) If you want to verify that the credentials object was created, type the following in Windows PowerShell and then press Enter.
+Beachten Sie, wie häufig der Fall ist, Sie jede Art von Bestätigung nicht sehen, dass das Anmeldeinformationsobjekt erstellt wurde. (Windows PowerShell wird in der Regel bei Dinge Fehler auftreten, aber nicht immer informiert Sie Wenn Dinge rechten wechseln.) Wenn Sie möchten, um sicherzustellen, dass das Anmeldeinformationsobjekt erstellt wurde, geben Sie Folgendes in Windows PowerShell, und drücken Sie dann die EINGABETASTE.
   
 ```
 $credential
@@ -291,7 +291,7 @@ Mit anderen Worten:
   
  `https://` + `litwareinc` + `-admin.sharepoint.com` = `https://litwareinc-admin.sharepoint.com`
   
-After you've constructed the URL, you can then use that URL and your credentials object to connect to SharePoint Online. Just call the [Connect-SPOService](https://go.microsoft.com/fwlink/p/?LinkId=532436) cmdlet, using a command similar to this one.
+Nachdem Sie die URL erstellt haben, klicken Sie dann können die URL und Ihre Anmeldeinformationenobjekt Sie mit SharePoint Online herstellen. Rufen Sie einfach das [Connect-SPOService](https://go.microsoft.com/fwlink/p/?LinkId=532436) -Cmdlet, mit einem Befehl wie den folgenden.
   
 ```
 Connect-SPOService -Url https://litwareinc-admin.sharepoint.com -credential $credential
@@ -364,7 +364,7 @@ Script     1.0        tmp_swc5mp4v.1ck  {Copy-CsVoicePolicy, Disabl...
 ### <a name="step-6-connect-to-exchange-online"></a>Schritt 6: Herstellen einer Verbindung mit Exchange Online
 <a name="Step6"> </a>
 
-Run this command, which creates a remote Windows PowerShell session with Exchange Online.
+Führen Sie diesen Befehl, der eine remote Windows PowerShell-Sitzung mit Exchange Online erstellt wird.
   
 ```
 $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $credential -Authentication "Basic" -AllowRedirection
@@ -393,7 +393,7 @@ Versuchen Sie nun, diesen Befehl auszuführen.
 Get-AcceptedDomain
 ```
 
-In return, you should see information about your Office 365 domains that are configured for email addresses in Exchange Online.
+Wiederum sollte finden Sie Informationen über Ihre Office 365-Domänen, die in Exchange Online für e-Mail-Adressen konfiguriert sind.
   
 ```
 Name            DomainName          DomainType      Default
@@ -401,7 +401,7 @@ Name            DomainName          DomainType      Default
 litwareinc.com  litwareinc.com      Authoritative   True
 ```
 
-### <a name="step-7-connect-to-the-security-amp-compliance-center"></a>Step 7: Connect to the Security &amp; Compliance Center
+### <a name="step-7-connect-to-the-security-amp-compliance-center"></a>Schritt 7: Verbinden mit der Sicherheit &amp; Compliance Center
 <a name="Step7"> </a>
 
 Die Sicherheit &amp; Compliance Center ist ein Dienst in Office 365, die Sie zum Verwalten von Compliance-Funktionen von einem Speicherort können. Weitere Informationen finden Sie unter [Office 365 Compliance Center](http://technet.microsoft.com/library/fde83656-f136-448d-b250-6fa17b503e4e.aspx).
@@ -438,12 +438,12 @@ ModuleType Version  Name             ExportedCommands
 Script     1.0      tmp_xbbx5exr.ehm {Add-ccRoleGroupMember, Get-ccAdminAuditLogConfig, Get-ccA...
 ```
 
-Now you are free to manage all Office 365 services in a single Windows PowerShell session.
+Nun können Sie alle Office 365-Diensten in einer einzigen Windows PowerShell-Sitzung zu verwalten.
   
 ### <a name="step-8-gracefully-end-your-powershell-sessions"></a>Schritt 8: Problemloses Beenden Ihrer PowerShell-Sitzungen
 <a name="Step8"> </a>
 
-If you just close the Windows PowerShell window, your Skype for Business Online remote connection will remain active for the next 15 minutes or so. Because Skype for Business Online limits the number of simultaneous connections that any one person or any one domain can have open, that could be a problem. With Skype for Business Online, an individual administrator can have, at most, three open connections at one time, and a domain can have a maximum of nine open connections. If you sign in to Skype for Business Online and then exit without properly closing the session, that session remains open for the next 15 minutes or so. As a result, that's one fewer connection available to you or to other administrators in your domain.
+Wenn Sie nur das Windows PowerShell-Fenster schließen, wird Ihre Skype für Business Online Remoteverbindung für die nächsten 15 Minuten aktiv bleiben. Da Skype für Business Online einer Person oder einer beliebigen eine Domäne geöffnet haben, kann die Anzahl gleichzeitiger Verbindungen beschränkt ist, konnte die ein Problem sein. Mit Skype für Business Online kann ein einzelner Administrator, höchstens drei offene Verbindungen gleichzeitig, und eine Domäne kann maximal neun offenen Verbindungen haben. Wenn Sie bei Skype für Business Online anmelden, und klicken Sie dann zu beenden, ohne die Sitzung ordnungsgemäß schließen, bleibt dieser Sitzung für die nächsten 15 Minuten geöffnet. Daher ist eine weniger Verbindung können Sie oder andere Administratoren in Ihrer Domäne.
   
 Stattdessen für Skype für Business Online, Exchange Online und die Sicherheit die remote-Sitzungen wir schließen &amp; Compliance Center ordnungsgemäß. Bevor wir dies tun, führen Sie diesen Befehl aus.
   
@@ -469,12 +469,12 @@ Remove-PSSession $exchangeSession
 Remove-PSSession $ccSession
 ```
 
-If you now run the **Get-PSSession** cmdlet, you should see nothing at all (unless you have other remote sessions up and running).
+Wenn Sie nun das **Get-PSSession** -Cmdlet ausführen, sollte Sie nichts überhaupt angezeigt werden (es sei denn, Sie andere Remotesitzungen dargelegten verwenden).
   
 ![Windows PowerShell-Konsole ohne Remotesitzungen](images/o365_powershell_no_remote_sessions.png)
   
 > [!NOTE]
-> If you'd prefer to close all your remote sessions at the same time, you can use this command: >  `Get-PSSession | Remove-PSSession`
+> Wenn Sie alle remote-Sitzungen gleichzeitig schließen möchten, können Sie diesen Befehl verwenden: >`Get-PSSession | Remove-PSSession`
   
 Wenn Sie jetzt versuchen, das ein Cmdlet aus einer dieser geschlossen Sitzungen (beispielsweise **Get-CsMeetingConfiguration** in Skype für Business Online) erhalten Sie eine Fehlermeldung, die diese ähnlich ist.
   
@@ -484,29 +484,27 @@ Get-CsMeetingConfiguration : The term 'Get-CsMeetingConfiguration' is not recogn
 
 Wir erhalten diese Fehlermeldung, da die Cmdlets für Skype für Business Online, Exchange Online und die Sicherheit &amp; Compliance Center gelöscht wurden, wenn wir die remote-Sitzungen geschlossen.
   
-To close the SharePoint Online session, type this command.
+Geben Sie folgenden Befehl, um die SharePoint Online-Sitzung zu schließen.
   
 ```
 Disconnect-SPOService
 ```
 
-If you now try to run the **Get-SPOSite** cmdlet, you'll get an error message like this.
+Wenn Sie versuchen Sie nun das **Get-SPOSite** -Cmdlet ausführen, erhalten Sie eine Fehlermeldung wie folgt.
   
 ```
 get-sposite : No connection available. Use Connect-SPOService before running this CmdLet.
 ```
 
-You can't retrieve site information because you're no longer connected to SharePoint Online.
+Sie können keine Websiteinformationen abrufen, da Sie nicht mehr mit SharePoint Online verbunden sind.
   
-As for your connection to Office 365, although there's a **Connect-MsolService** cmdlet, there's no corresponding **Disconnect-MsolService** cmdlet. So for Office 365, just close the Windows PowerShell window. Nevertheless, it's still a good idea to do this last so you can properly disconnect from SharePoint Online, Skype for Business Online, Exchange Online, and the Security &amp; Compliance Center.
+Wie bei der Verbindung zu Office 365 Obwohl es ein **Connect-MsolService** -Cmdlet ist besteht keine entsprechende **Disconnect-MsolService** -Cmdlet. So für Office 365, schließen Sie einfach das Windows PowerShell-Fenster. Dennoch ist weiterhin empfiehlt sich, diese Schritte durchführen, damit Sie ordnungsgemäß von SharePoint Online, Skype für Business Online, Exchange Online und die Sicherheit zu trennen können der letzten &amp; Compliance Center.
   
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 <a name="LongVersion"> </a>
 
-||
-|:-----|
-|![The short icon for LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **New to Office 365?**         Discover free video courses for [Office 365 admins and IT pros](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), brought to you by LinkedIn Learning. |
-   
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+
 ## <a name="see-also"></a>Siehe auch
 
 #### 

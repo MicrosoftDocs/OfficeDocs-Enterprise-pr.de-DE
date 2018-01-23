@@ -16,11 +16,11 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: "Erläutert, wie Sie Office 365 PowerShell, zum Anzeigen von Informationen zu Lizenzierung Pläne, Dienste und Lizenzen, die in Office 365-Organisation verfügbar sind."
-ms.openlocfilehash: f43a1c20be157d26ec9cd1d98df2f5e17517b1d6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7564da2093bdc9de45e239be8196a626214871ba
+ms.sourcegitcommit: f10e47df0dca4a241659f33061db5217ebc3401e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell
 
@@ -73,7 +73,7 @@ Die folgende Tabelle zeigt die Office 365-Dienstplänen und ihren Anzeigenamen f
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
@@ -95,9 +95,7 @@ Dieses Beispiel zeigt die Office 365-Dienste, die in den Lizenzierungsplan litwa
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 <a name="ShortVersion"> </a>
 
-||
-|:-----|
-|![Das kurze Symbol für LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **neu zu Office 365?**         Entdecken Sie kostenlose video Kurse für [Office 365-Administratoren und IT-Experten](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), bereitgestellt von LinkedIn Learning. |
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
 ## <a name="see-also"></a>Siehe auch
 <a name="ShortVersion"> </a>
