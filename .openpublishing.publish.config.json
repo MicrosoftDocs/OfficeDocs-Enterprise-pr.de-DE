@@ -43,6 +43,12 @@
       "branch": "master",
       "branch_mapping": {}
     },
+        {
+      "path_to_root": "enterprise/common",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr.de-de",
+      "branch": "live",
+      "branch_mapping": {}
+    },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/OfficeDocs-Enterprise-pr",
