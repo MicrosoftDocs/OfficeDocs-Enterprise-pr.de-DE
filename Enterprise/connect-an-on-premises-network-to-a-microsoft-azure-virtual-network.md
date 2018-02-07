@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: "Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten."
-ms.openlocfilehash: 28afcc083218e7e50fe41ddc8505c9283b15d83d
-ms.sourcegitcommit: b3d44b30b6e60df85ea9b404692db64ba54a16c7
+ms.openlocfilehash: 2b9176172d0ce82975fd9faea8ecb7664eabe8f1
+ms.sourcegitcommit: ca96830b425b3ec5a6387eaae47cdc23c8384456
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
@@ -130,11 +130,11 @@ Füllen Sie für die Einstellungen des virtuellen Netzwerks Tabelle V aus.
   
 |**Element**|**Configuration-Element**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Name des virtuellen Netzwerks  <br/> |Ein Name, der dem virtuellen Azure-Netzwerk zugewiesen wird (z. B. DirSyncNet)  <br/> |_ _ _ _ _ _ _ _ _ <br/> |
-|2.  <br/> |Adresse des virtuellen Netzwerks  <br/> |Das Azure-Rechenzentrum, das das virtuelle Netzwerk enthalten soll (z. B. USA (Westen)).  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet. Fragen Sie Ihre IT-Abteilung nach dieser Adresse.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|4.  <br/> |Adressraum des virtuellen Netzwerks  <br/> |Der Adressraum (in einem einzigen privaten Adresspräfix definiert) für das virtuelle Netzwerk. Fragen Sie Ihre IT-Abteilung nach diesem Adressraum. Der Adressraum sollte im CIDR-Format (Classless Interdomain Routing, klassenloses domänenübergreifendes Routing) angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird. Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert, und bewahren Sie diesen an einem sicheren Ort auf. Alternativ finden Sie weitere Informationen dazu unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |Name des virtuellen Netzwerks  <br/> |Ein Name, der dem virtuellen Azure-Netzwerk zugewiesen wird (z. B. DirSyncNet)  <br/> |![](./images/Common_Images/TableLine.png) |
+|2.  <br/> |Adresse des virtuellen Netzwerks  <br/> |Das Azure-Rechenzentrum, das das virtuelle Netzwerk enthalten soll (z. B. USA (Westen)).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet. Fragen Sie Ihre IT-Abteilung nach dieser Adresse.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|4.  <br/> |Adressraum des virtuellen Netzwerks  <br/> |Der Adressraum (in einem einzigen privaten Adresspräfix definiert) für das virtuelle Netzwerk. Fragen Sie Ihre IT-Abteilung nach diesem Adressraum. Der Adressraum sollte im CIDR-Format (Classless Interdomain Routing, klassenloses domänenübergreifendes Routing) angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
+|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird. Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert, und bewahren Sie diesen an einem sicheren Ort auf. Alternativ finden Sie weitere Informationen dazu unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png) <br/> |
    
 Füllen Sie für die Subnetze dieser Lösung Tabelle S aus.
   
@@ -148,8 +148,8 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen, die aus dem Adressraum d
   
 |**Element**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |_ _ _ _ _ _ _ _ _  <br/> |Das vm Azure-Gateway verwendete Subnetz.  <br/> |
-|2.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Das von dem Azure-Gateway verwendete Subnetz.  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
 Füllen Sie für die lokalen DNS-Server, die von den virtuellen Computern im virtuellen Netzwerk verwendet werden sollen, Tabelle D aus. Geben Sie jedem DNS-Server einen Anzeigenamen und eine einzelne IP-Adresse. Der Anzeigename muss nicht mit dem Hostnamen oder dem Computernamen des DNS-Servers übereinstimmen.  Auch wenn hierfür nur zwei Einträge vorgesehen sind, können Sie noch weitere hinzufügen. Erarbeiten Sie diese Liste gemeinsam mit Ihrer IT-Abteilung.
   
@@ -157,8 +157,8 @@ Füllen Sie für die lokalen DNS-Server, die von den virtuellen Computern im vir
   
 |**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
-|1.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|2.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
 Um Pakete aus dem virtuellen Azure-Netzwerk an das Organisationsnetzwerk über die Standort-zu-Standort-VPN-Verbindung weiterzuleiten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren. Dieses lokale Netzwerk enthält eine Liste der Adressräume (im CIDR-Format) für alle Standorte in Ihrem lokalen Organisationsnetzwerk, die die virtuellen Computer im virtuellen Netzwerk erreichen müssen. Dies können alle Standorte im lokalen Netzwerk oder nur eine Teilmenge sein. Die Liste der Adressräume, die Ihr lokales Netzwerk definiert, muss eindeutig sein und darf nicht mit den für andere virtuelle Netzwerke verwendeten Adressräumen überlappen.
   
@@ -168,9 +168,9 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
   
 |**Element**|**Adressraum des lokalen Netzwerks**|
 |:-----|:-----|
-|1.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|2.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
-|3.  <br/> |_ _ _ _ _ _ _ _ _  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>Roadmap für die Bereitstellung
 <a name="DeploymentRoadmap"> </a>
