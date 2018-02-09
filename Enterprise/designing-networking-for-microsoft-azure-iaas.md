@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: "Zusammenfassung: Informationen Sie zum Entwerfen optimierte Netzwerke für Arbeitslasten in Microsoft Azure IaaS."
-ms.openlocfilehash: 6f431eb2d87a4420e6e0ba7f48bfc3ef836c0cbe
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 2430b62e04392ddd4266d37797b18ae7e890c092
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Entwerfen von Netzwerken für Microsoft Azure-IaaS
 
@@ -196,8 +196,7 @@ In Tabelle 5 sind die Methoden zum Filtern oder Prüfen von unangefordert eingeh
 |1. Endpunkte und ACLs, für Clouddienste konfiguriert  <br/> |Klassisch  <br/> |
 |2. Netzwerksicherheitsgruppen  <br/> |Ressourcenmanager und klassisch  <br/> |
 |3. Dem Internet zugewandter Lastenausgleich mit NAT-Eingangsregeln  <br/> |Ressourcenmanager  <br/> |
-|4. Sicherheit Netzwerkgeräte in der Azure 
- Marketplace (nicht dargestellt)  <br/> |Ressourcenmanager und klassisch  <br/> |
+|4. Sicherheit Netzwerkgeräte in Azure Marketplace (nicht dargestellt)  <br/> |Ressourcenmanager und klassisch  <br/> |
    
  **Tabelle 5: Herstellen einer Verbindung mit virtuellen Computern und ihre entsprechenden Azure Bereitstellungsmodelle Methoden**
   
@@ -379,10 +378,8 @@ In Tabelle 7 sind die Schritte und die resultierenden Präfixe aufgeführt, die 
 |**Schritt**|**Ergebnisse**|
 |:-----|:-----|
 |1. Auflisten der Präfixe, die nicht der Stammraum für den VNet-Adressraum sind.  <br/> |172.16.0.0/12 und 192.168.0.0/16  <br/> |
-|2. die übereinander Präfixe für Variablen Bytes bis zu aufgelistet, aber nicht einschließlich des letzten verwendet 
- Oktett im VNet-Adressraum.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16 10.255.0.0/16 (255 Präfixe 10.100.0.0/16 überspringen)  <br/> |
-|3. Liste der übereinander innerhalb Präfixen der 
- zuletzt verwendete Oktett des Adressraums VNet.  <br/> | 10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24 10.100.0.255.0/24 (255 Präfixe 10.100.100.0/24 überspringen)  <br/> |
+|2. die übereinander Präfixe für Variablen Bytes bis zum, aber nicht das letzte verwendete Oktett im Adressraum VNet einschließlich aufgelistet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16 10.255.0.0/16 (255 Präfixe 10.100.0.0/16 überspringen)  <br/> |
+|3. das letzte verwendete Oktett des Adressraums VNet Präfixe übereinander aufgelistet.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24 10.100.0.255.0/24 (255 Präfixe 10.100.100.0/24 überspringen)  <br/> |
    
  **Tabelle 7: Beispiel lokalen Netzwerk Adressraum**
   
@@ -413,7 +410,7 @@ Abbildung 18 zeigt eine standortübergreifende VNet mit einer benutzerdefinierte
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>SharePoint Server 2016-Farm in Azure
 <a name="cross_prem"> </a>
 
-Ein Beispiel für eine in Azure IaaS gehostete intranetbasierte IT-Workload ist eine hoch verfügbare SharePoint Server 2016-Farm mit mehreren Stufen, wie sie in Abbildung 19 dargestellt ist.
+Ein Beispiel eines Intranets IT-Arbeitslast in Azure IaaS gehostet ist eine hoch verfügbare und mit mehreren Ebenen 2016 für SharePoint Server-Farm.
   
 **Abbildung 19: Eine hochverfügbar 2016 für SharePoint Server-intranetfarm in Azure IaaS**
 
@@ -426,7 +423,7 @@ Abbildung 19 zeigt die neun Server einer 2016 für SharePoint Server-Farm bereit
   
 Weitere Beispiele für IT-Arbeitslasten auf virtuellen Computern in einer standortübergreifenden Azure virtual bereitgestellten Netzwerk, finden Sie unter [Hybrid-Cloud-Szenarien für Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 <a name="cross_prem"> </a>
 

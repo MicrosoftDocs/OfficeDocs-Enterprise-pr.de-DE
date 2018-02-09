@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: "Zusammenfassung: Hier erhalten Sie die IT-Poster, in denen die Modelle Architektur, Bereitstellung und -Plattformoptionen für SharePoint, Exchange, Skype für Unternehmen und Lync beschrieben."
-ms.openlocfilehash: c2d1e5d921409554a326d900afe3368aa9717eaf
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c751e4375b18067a4834787c3ee8f0a5f28480d7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync
 
