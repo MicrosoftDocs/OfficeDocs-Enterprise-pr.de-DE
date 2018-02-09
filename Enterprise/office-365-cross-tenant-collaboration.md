@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: "Erfahren Sie, wie Organisationen auf sichere Weise über Office 365-Mandanten hinweg zusammenarbeiten können."
-ms.openlocfilehash: a4de2d6c755b3edd64d835636c59b7cf5d003bf8
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 24f8c52021dea073022be237474853335e5c81d3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="office-365-cross-tenant-collaboration"></a><span data-ttu-id="09b0e-103">Mandantenübergreifende Zusammenarbeit in Office 365</span><span class="sxs-lookup"><span data-stu-id="09b0e-103">Office 365 cross-tenant collaboration</span></span>
+# <a name="office-365-cross-tenant-collaboration"></a><span data-ttu-id="1ca64-103">Mandantenübergreifende Zusammenarbeit in Office 365</span><span class="sxs-lookup"><span data-stu-id="1ca64-103">Office 365 cross-tenant collaboration</span></span>
 
-<span data-ttu-id="09b0e-104">Erfahren Sie, wie Organisationen auf sichere Weise über Office 365-Mandanten hinweg zusammenarbeiten können.</span><span class="sxs-lookup"><span data-stu-id="09b0e-104">Learn how organizations can collaborate in a secure manner across Office 365 tenants.</span></span>
+<span data-ttu-id="1ca64-104">Erfahren Sie, wie Organisationen auf sichere Weise über Office 365-Mandanten hinweg zusammenarbeiten können.</span><span class="sxs-lookup"><span data-stu-id="1ca64-104">Learn how organizations can collaborate in a secure manner across Office 365 tenants.</span></span>
   
-<span data-ttu-id="09b0e-p101">Organisationen können Office 365 verwenden, um an Projekten zusammenzuarbeiten. Beispielsweise können Personen mithilfe von Skype for Business Onlinebesprechungen abhalten, Dateien freigeben und chatten. Oder sie können Office 365-Gruppen verwenden, um Unterhaltungen, Dateien und Kalenderelemente an einem zentralen Ort zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="09b0e-p101">Organizations can use Office 365 to collaborate on projects. For example, Skype for Business enables people to meet online, share files, and chat via instant messaging. Or, people can use Office 365 groups to have conversations, files, and calendar items all in one place.</span></span>
+<span data-ttu-id="1ca64-p101">Organisationen können Office 365 verwenden, um an Projekten zusammenzuarbeiten. Beispielsweise können Personen mithilfe von Skype for Business Onlinebesprechungen abhalten, Dateien freigeben und chatten. Oder sie können Office 365-Gruppen verwenden, um Unterhaltungen, Dateien und Kalenderelemente an einem zentralen Ort zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="1ca64-p101">Organizations can use Office 365 to collaborate on projects. For example, Skype for Business enables people to meet online, share files, and chat via instant messaging. Or, people can use Office 365 groups to have conversations, files, and calendar items all in one place.</span></span>
   
-<span data-ttu-id="09b0e-p102">In manchen Fällen muss eine Unternehmensorganisation aus geschäftlichen Gründen mit einer anderen Organisation zusammenarbeiten, die einen anderen Office 365-Mandanten verwendet. Beispiele sind: ___</span><span class="sxs-lookup"><span data-stu-id="09b0e-p102">Sometimes, an enterprise organization has a business need to collaborate with another organization using a different Office 365 tenant. Examples include: ___</span></span>
+<span data-ttu-id="1ca64-p102">In manchen Fällen muss eine Unternehmensorganisation aus geschäftlichen Gründen mit einer anderen Organisation zusammenarbeiten, die einen anderen Office 365-Mandanten verwendet. Beispiele sind: ___</span><span class="sxs-lookup"><span data-stu-id="1ca64-p102">Sometimes, an enterprise organization has a business need to collaborate with another organization using a different Office 365 tenant. Examples include: ___</span></span>
   
-## <a name="what-is-office-365-cross-tenant-collaboration"></a><span data-ttu-id="09b0e-110">Was bedeutet mandantenübergreifende Zusammenarbeit in Office 365?</span><span class="sxs-lookup"><span data-stu-id="09b0e-110">What is Office 365 cross-tenant collaboration?</span></span>
-<span data-ttu-id="09b0e-111"><a name="whatisctc"> </a></span><span class="sxs-lookup"><span data-stu-id="09b0e-111"><a name="whatisctc"> </a></span></span>
+## <a name="what-is-office-365-cross-tenant-collaboration"></a><span data-ttu-id="1ca64-110">Was bedeutet mandantenübergreifende Zusammenarbeit in Office 365?</span><span class="sxs-lookup"><span data-stu-id="1ca64-110">What is Office 365 cross-tenant collaboration?</span></span>
+<span data-ttu-id="1ca64-111"><a name="whatisctc"> </a></span><span class="sxs-lookup"><span data-stu-id="1ca64-111"><a name="whatisctc"> </a></span></span>
 
-<span data-ttu-id="09b0e-p103">Mandantenübergreifende Zusammenarbeit in Office 365 bedeutet, dass Personen, die einen Office 365-Mandanten verwenden, in der Lage sind, auf sichere Weise mit anderen Personen zusammenzuarbeiten, die einen anderen Office 365-Mandanten verwenden. Nehmen wir beispielsweise an,</span><span class="sxs-lookup"><span data-stu-id="09b0e-p103">Office 365 cross-tenant collaboration refers to people who are using one Office 365 tenant being able to collaborate in a secure manner with others who are using a different Office 365 tenant. For example, suppose</span></span> 
+<span data-ttu-id="1ca64-p103">Mandantenübergreifende Zusammenarbeit in Office 365 bedeutet, dass Personen, die einen Office 365-Mandanten verwenden, in der Lage sind, auf sichere Weise mit anderen Personen zusammenzuarbeiten, die einen anderen Office 365-Mandanten verwenden. Nehmen wir beispielsweise an,</span><span class="sxs-lookup"><span data-stu-id="1ca64-p103">Office 365 cross-tenant collaboration refers to people who are using one Office 365 tenant being able to collaborate in a secure manner with others who are using a different Office 365 tenant. For example, suppose</span></span> 
   
 
