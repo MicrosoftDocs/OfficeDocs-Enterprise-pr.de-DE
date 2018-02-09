@@ -6,16 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
+ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: "Zusammenfassung: Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung."
-ms.openlocfilehash: 4878eb201fa32fbeb34be755a22e329fe45d5885
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 55adc5f7cdbf197acf3ca68623139c01912c602f
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung
 
@@ -27,7 +28,7 @@ In diesem Artikel finden Sie Schritt-für-Schritt-Anleitungen zum Erstellen eine
   
 Verwenden Sie diese Entwicklungs-/Testumgebung zum Experimentieren mit den Verhaltensweisen beim Schutz von Informationen und zur Feinabstimmung der Einstellungen für Ihre spezifischen Anforderungen vor der Bereitstellung von SharePoint Online-Teamwebsites in der Produktion.
   
-## <a name="phase-1-create-your-devtest-environment"></a>Phase 1: Erstellen Ihrer Entwicklungs-/Testumgebung
+## <a name="phase-1-create-your-devtest-environment"></a>Phase 1: Erstellen Ihrer Dev/Test-Umgebung
 
 In dieser Phase erhalten Sie Testabonnements für Office 365 und Enterprise Mobility + Security für eine fiktive Organisation.
   
@@ -35,7 +36,7 @@ Folgen Sie zunächst den Anweisungen in **Phase 2** des Artikels [Office 365-Ent
   
 Als Nächstes registrieren Sie sich für das EMS-Testabonnement und fügen es derselben Organisation wie Ihr Office 365-Testabonnement hinzu.
   
-1. Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Testabonnement beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Testabonnement beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie auf die Kachel **Admin**.
     
@@ -47,7 +48,7 @@ Als Nächstes registrieren Sie sich für das EMS-Testabonnement und fügen es de
     
 6. Klicken Sie auf der Seite **Bestellbestätigung** auf **Weiter**.
     
-Als Nächstes aktivieren Sie die Enterprise Mobility + Security E5-Lizenz für Ihr globales Administratorkonto.
+Aktivieren Sie als Nächstes die Enterprise Mobility + Security E5-Lizenz für Ihr globales Administratorkonto.
   
 1. Klicken Sie auf der Registerkarte **Office 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
@@ -57,11 +58,11 @@ Als Nächstes aktivieren Sie die Enterprise Mobility + Security E5-Lizenz für I
     
 ## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-groups-and-users"></a>Phase 2: Erstellen und Konfigurieren der Azure Active Directory(AD)-Gruppen und -Benutzer
 
-In dieser Phase werden die Azure AD-Gruppen und -Benutzer für Ihre fiktionale Organisation erstellt und konfiguriert.
+In dieser Phase erstellen und konfigurieren Sie die Azure AD-Gruppen und -Benutzer für eine fiktive Organisation.
   
 Erstellen Sie zuerst eine Reihe von Gruppen für eine typische Organisation mit dem Azure-Portal.
   
-1. Erstellen Sie eine neue Registerkarte im Browser, und wechseln Sie dann zum Azure-Portal unter [(https://portal.azure.com)]((https://portal.azure.com)). Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Office 365 E5-Testabonnement an.
+1. Erstellen Sie eine neue Registerkarte im Browser, und wechseln Sie dann zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com). Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Office 365 E5-Testabonnement an.
     
 2. Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.
     
@@ -83,7 +84,7 @@ Erstellen Sie zuerst eine Reihe von Gruppen für eine typische Organisation mit 
     
   - Forschungsmitarbeiter
     
-  - Normale Mitarbeiter
+  - Reguläre Mitarbeiter
     
   - Marketingmitarbeiter
     
@@ -107,7 +108,7 @@ Im nächsten Schritt wird die automatische Lizenzierung konfiguriert, sodass Mit
     
   - Forschungsmitarbeiter
     
-  - Normale Mitarbeiter
+  - Reguläre Mitarbeiter
     
   - Marketingmitarbeiter
     
@@ -180,17 +181,17 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die gruppenbasierte Lize
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office Home** in Ihrem Browser auf die Kachel **Admin**.
     
-2. Klicken Sie auf der Registerkarte **Office Admin Center** im Browser auf **Benutzer**.
+2. Klicken Sie auf der neuen Registerkarte **Office Admin Center** des Browsers auf **Benutzer**.
     
-3. Klicken Sie in der Benutzerliste auf **CEO**.
+3. Klicken Sie in der Liste der Benutzer auf **CEO**.
     
-4. Stellen Sie im Bereich mit den Eigenschaften des Benutzerkontos **CEO** sicher, dass es den Lizenzen **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** zugewiesen wurde (bei **Produktlizenzen**).
+4. Stellen Sie im Bereich, der die Eigenschaften des Benutzerkontos **CEO** anzeigt, sicher, dass ihm die Lizenzen **Enterprise Mobility + Security E5** und **Office 365 Enterprise E5** zugewiesen wurden (in **Produktlizenzen**).
     
 ## <a name="phase-3-create-office-365-labels"></a>Phase 3: Erstellen von Office 365-Bezeichnungen
 
 In dieser Phase erstellen Sie die Bezeichnungen für die verschiedenen Sicherheitsstufen für Dokumentordner für SharePoint Online-Teamwebsites.
   
-1. Melden Sie sich bei Bedarf mithilfe einer privaten Instanz Ihres Internetbrowsers mit dem globalen Administratorkonto Ihres Office 365 E5-Testabonnements beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Melden Sie sich bei Bedarf mithilfe einer privaten Instanz Ihres Internetbrowsers mit dem globalen Administratorkonto Ihres Office 365 E5-Testabonnements beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie auf der Registerkarte **Microsoft Office Home** auf die Kachel **Admin**.
     
@@ -208,17 +209,17 @@ In dieser Phase erstellen Sie die Bezeichnungen für die verschiedenen Sicherhei
     
 9. Wiederholen Sie die Schritte 5 bis 8 für diese zusätzlichen Bezeichnungen:
     
-  - Privat
+  - Private
     
   - Vertraulich
     
   - Streng vertraulich
     
-10. Klicken Sie im Bereich **Start > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
+10. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
     
 11. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
     
-12. Klicken Sie im Bereich **Bezeichnungen wählen** auf **Hinzufügen**, und wählen Sie alle vier Bezeichnungen aus.
+12. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
     
 13. Klicken Sie auf **Fertig**.
     
@@ -232,21 +233,21 @@ In dieser Phase erstellen Sie die Bezeichnungen für die verschiedenen Sicherhei
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Phase 4: Erstellen von SharePoint Online-Teamwebsites
 
-In dieser Phase werden die vier Typen von SharePoint Online-Teamwebsites für Ihre Beispielorganisation erstellt und konfiguriert.
+In dieser Phase erstellen und konfigurieren Sie die vier Typen von SharePoint Online-Teamwebsites für Ihre Beispielorganisation.
   
 ### <a name="organization-wide-team-site"></a>Organisationsweite Teamwebsite
 
 Führen Sie folgende Schritte aus, um eine öffentliche SharePoint Online-Basis-Teamwebsite zu erstellen:
   
-1. Verwenden Sie, falls erforderlich, einen Browser auf Ihrem lokalen Computer, und melden Sie sich mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Verwenden Sie, falls erforderlich, einen Browser auf Ihrem lokalen Computer, und melden Sie sich mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie unter **Websitename** den Namen **Organisationsweit** ein. 
+5. Geben Sie in **Standortname** **Organisationsweit** ein. 
     
 6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für die gesamte Organisation** ein.
     
@@ -272,11 +273,11 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 
 Führen Sie die folgenden Schritte durch, um eine private SharePoint Online-Basis-Teamwebsite für ein Projekt innerhalb der Organisation zu erstellen:
   
-1. Verwenden Sie, falls erforderlich, einen Browser auf Ihrem lokalen Computer, und melden Sie sich mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Verwenden Sie, falls erforderlich, einen Browser auf Ihrem lokalen Computer, und melden Sie sich mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
@@ -288,7 +289,7 @@ Führen Sie die folgenden Schritte durch, um eine private SharePoint Online-Basi
     
 8. Klicken Sie im Bereich **Wer soll hinzugefügt werden?** auf **Fertig stellen**.
     
-Konfigurieren Sie anschließend den Ordner „Dokumente“ der Teamwebsite für Projekt 1 für die Bezeichnung „Privat“.
+Als Nächstes konfigurieren Sie den Ordner „Dokumente“ für die Teamwebsite des Projekts 1 für die private Bezeichnung.
   
 1. Klicken Sie auf der Registerkarte **Projekt 1 - Startseite** in Ihrem Browser auf **Dokumente**.
     
@@ -306,15 +307,15 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 
 Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche SharePoint Online-Teamwebsite für Marketingkampagnenressourcen zu erstellen:
   
-1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Melden Sie sich über einen Browser auf Ihrem lokalen Computer mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie unter **Name der Teamwebsite** den Namen **Marketingkampagnen** ein.
+5. Geben Sie unter **Name der Teamwebsite** **Marketingkampagnen** ein.
     
 6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für Marketingkampagnenressourcen (vertraulich)** ein.
     
@@ -352,11 +353,11 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 Ergebnisse der Konfiguration von Berechtigungen:
   
-- Die SharePoint-Gruppe **Marketingkampagnen - Mitglieder** enthält nur die Gruppe **Marketingkampagnen** (mit dem globalen Administratorkonto), die Gruppe **Marketing-Mitarbeiter** (mit den Benutzerkonten Marketing1 und Marketing2 und das Benutzerkonto **Researcher1**.
+- Die SharePoint-Gruppe **Marketingkampagnen – Mitglieder** enthält nur die Gruppe **Marketingkampagnen** (die das globale Administratorkonto des Benutzers enthält), die Gruppe **Marketingmitarbeiter** (die die Benutzerkonten Marketing1 und Marketing2 enthält), und das Benutzerkonto **Forscher1**.
     
-- Die SharePoint-Gruppe **Marketingkampagnen - Besitzer** enthält nur die Gruppe **IT-Mitarbeiter** (nur mit den ITAdmin1- und ITAdmin2-Benutzerkonten).
+- Die SharePoint-Gruppe **Marketingkampagnen – Eigentümer** enthält nur die Gruppe **IT-Mitarbeiter** (die nur die Benutzerkonten ITAdmin1 und ITAdmin2 enthält).
     
-- Die SharePoint-Gruppe **Marketingkampagnen - Besucher** enthält keine Gruppen oder Benutzerkonten.
+- Die SharePoint-Gruppe **Marketingkampagnen – Besucher** enthält keine Gruppen oder Benutzerkonten.
     
 - Mitglieder können keine Berechtigungen auf Websiteebene ändern (dies kann nur von Mitgliedern der Gruppe **Marketingkampagnen - Besitzer** ausgeführt werden).
     
@@ -396,11 +397,11 @@ Konfigurieren Sie als Nächstes eine Richtlinie zur Verhinderung von Datenverlus
     
 11. Klicken Sie im Bereich **Typen des zu schützenden Inhalts auswählen** auf **Speichern**.
     
-12. Klicken Sie im Bereich **Typen von vertraulichen Informationen anpassen, die geschützt werden sollen** auf **Weiter**.
+12. Klicken Sie im Bereich **Customize the types of sensitive info you want to protect** (Anpassen der Typen an vertraulichen Informationen, die Sie schützen möchten) auf **Weiter**.
     
-13. Klicken Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** auf **Richtlinientipptext anpassen**.
+13. Klicken Sie im Bereich **What do you want to do if we detect sensitive info?** (Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?) auf **Customize the tip and email** (Den Tipp und die E-Mail anpassen).
     
-14. Klicken Sie im Fenster **Richtlinientipps und E-Mail-Benachrichtigungen anpassen** auf **Richtlinientipptext anpassen**.
+14. Klicken Sie im Bereich **Customize policy tips and email notifications** (Anpassen der Richtlinientipps und der E-Mail-Benachrichtigungen) auf **Customize the policy tip text** (Den Tipptext der Richtlinie als nächstes anpassen).
     
 15. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
     
@@ -422,15 +423,15 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 
 Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche SharePoint Online-Teamwebsite für strategische Unternehmensressourcen der Geschäftsführer der Organisation zu erstellen:
   
-1. Verwenden Sie, falls erforderlich, einen Browser auf Ihrem lokalen Computer, und melden Sie sich mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Verwenden Sie, falls erforderlich, einen Browser auf Ihrem lokalen Computer, und melden Sie sich mit Ihrem globalen Administratorkonto beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie unter **Name der Teamwebsite** den Namen **Unternehmensstrategie** ein.
+5. Geben Sie in **Name der Teamwebsite** **Unternehmensstrategie** ein.
     
 6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für Unternehmensstrategie (streng vertraulich)** ein.
     
@@ -486,7 +487,7 @@ Konfigurieren Sie anschließend den Ordner „Dokumente“ der Unternehmensstrat
     
 Konfigurieren Sie als Nächstes eine DLP-Richtlinie, die Benutzer blockiert, wenn sie ein Dokument auf einer SharePoint Online-Teamwebsite mit der Bezeichnung „Streng vertraulich" freigeben, die die Unternehmensstrategiewebsite enthält (außerhalb der Organisation).
   
-1. Falls erforderlich, verwenden Sie einen Browser auf Ihrem lokalen Computer und melden Sie sich mit einem Konto beim Office 365-Portal an, das über die Rolle „Sicherheitsadministrator" oder Unternehmensadministrator" verfügt. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Falls erforderlich, verwenden Sie einen Browser auf Ihrem lokalen Computer und melden Sie sich mit einem Konto beim Office 365-Portal an, das über die Rolle „Sicherheitsadministrator" oder Unternehmensadministrator" verfügt. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Klicken Sie auf der Registerkarte **Microsoft Office-Homepage** im Browser auf die Kachel **Security &amp; Compliance**.
     
@@ -510,11 +511,11 @@ Konfigurieren Sie als Nächstes eine DLP-Richtlinie, die Benutzer blockiert, wen
     
 12. Klicken Sie im Bereich **Typen des zu schützenden Inhalts auswählen** auf **Speichern**.
     
-13. Klicken Sie im Bereich **Typen von vertraulichen Informationen anpassen, die geschützt werden sollen** auf **Weiter**.
+13. Klicken Sie im Bereich **Customize the types of sensitive info you want to protect** (Anpassen der Typen an vertraulichen Informationen, die Sie schützen möchten) auf **Weiter**.
     
-14. Klicken Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** auf **Richtlinientipptext anpassen**.
+14. Klicken Sie im Bereich **What do you want to do if we detect sensitive info?** (Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?) auf **Customize the tip and email** (Den Tipp und die E-Mail anpassen).
     
-15. Klicken Sie im Fenster **Richtlinientipps und E-Mail-Benachrichtigungen anpassen** auf **Richtlinientipptext anpassen**.
+15. Klicken Sie im Bereich **Customize policy tips and email notifications** (Anpassen der Richtlinientipps und der E-Mail-Benachrichtigungen) auf **Customize the policy tip text** (Den Tipptext der Richtlinie als nächstes anpassen).
     
 16. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
     
@@ -528,13 +529,13 @@ Konfigurieren Sie als Nächstes eine DLP-Richtlinie, die Benutzer blockiert, wen
     
 20. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Erstellen**, und klicken Sie dann auf **Schließen**.
     
-Befolgen Sie als Nächstes die Anweisungen unter [Aktivieren von Azure Rights Management über Office 365 Admin Center]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365)).
+Befolgen Sie als Nächstes die Anweisungen unter [Aktivieren von Azure Rights Management über Office 365 Admin Center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen bereichsbezogenen Richtlinie und einer untergeordneten Bezeichnung für Schutz und Berechtigungen, indem Sie die folgenden Schritte ausführen:
   
-1. Melden Sie sich mit einem Konto beim Office 365-Portal an, das über die Rolle „Sicherheitsadministrator" oder Unternehmensadministrator" verfügt. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Melden Sie sich mit einem Konto beim Office 365-Portal an, das über die Rolle „Sicherheitsadministrator" oder Unternehmensadministrator" verfügt. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Wechseln Sie auf einer separaten Registerkarte im Browser zum Azure-Portal unter [(https://portal.azure.com)]((https://portal.azure.com)).
+2. Wechseln Sie auf einer separaten Registerkarte im Browser zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com).
     
 3. Wenn Sie Azure Information Protection zum ersten Mal konfigurieren, befolgen Sie diese [Anweisungen](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
@@ -556,7 +557,7 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen ber
     
 12. Klicken Sie im Abschnitt **Schutz** auf **Azure (Cloudschlüssel)**.
     
-13. Klicken Sie auf dem Blatt **Schutz** unter **Schutzeinstellungen** auf **+ Berechtigungen hinzufügen**.
+13. Klicken Sie im Blatt **Schützen** unter **Schutzeinstellungen** auf **+ Berechtigungen hinzufügen**.
     
 14. Klicken Sie auf dem Blatt **Berechtigungen hinzufügen** unter **Benutzer und Gruppen angeben** auf **+ Verzeichnis durchsuchen**.
     
@@ -572,7 +573,7 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen ber
     
 20. Klicken Sie auf dem Blatt **Azure Information Protection - Bereichsbezogene Richtlinien** auf **Veröffentlichen** und dann auf **Ja**.
     
-Um ein Dokument mit Azure Information Protection und mit dieser neuen Bezeichnung zu schützen, müssen Sie [den Azure Information Protection-Client]((https://docs.microsoft.com/information-protection/rms-client/install-client-app)) auf einem Testcomputer installieren, Office vom Office 365-Portal installieren und sich dann aus Microsoft Word mit einem Konto in der Gruppe **C-Suite** Ihres Testabonnements anmelden.
+Um ein Dokument mit Azure Information Protection und mit dieser neuen Bezeichnung zu schützen, müssen Sie [den Azure Information Protection-Client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) auf einem Testcomputer installieren, Office vom Office 365-Portal installieren und sich dann aus Microsoft Word mit einem Konto in der Gruppe **C-Suite** Ihres Testabonnements anmelden.
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   

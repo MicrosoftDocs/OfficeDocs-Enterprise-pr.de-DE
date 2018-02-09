@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: c27d9a45-92f4-4d14-affc-9a4c459910be
 description: "Zusammenfassung: Informieren Sie sich über die verschiedenen Cloudspeicheroptionen, die in die Microsoft-Cloudangebote integriert sind."
-ms.openlocfilehash: 8c97742c5538acb73fe9dd6491ce85049990ecc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 174e5a5a9827a1f8a7f8f1640e1987ceaa965968
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="move-in-ready"></a>Schlüsselfertig
 
@@ -62,9 +62,9 @@ In den folgenden Abschnitten werden die Details der einzelnen schlüsselfertigen
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498)).
+Weitere Informationen finden Sie [hier](https://support.office.com/article/SharePoint-Online-and-OneDrive-for-Business-software-boundaries-and-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
   
-Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="exchange-online-in-office-365"></a>Exchange Online in Office 365
 
@@ -84,9 +84,9 @@ Informationen zu den Kosten finden Sie [hier]((https://products.office.com/busin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://technet.microsoft.com/library/exchange-online-limits.aspx)).
+Weitere Informationen finden Sie [hier](https://technet.microsoft.com/library/exchange-online-limits.aspx).
   
-Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -112,9 +112,9 @@ Informationen zu den Kosten finden Sie [hier]((https://products.office.com/busin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)).
+Weitere Informationen finden Sie [hier](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2).
   
-Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="visual-studio-team-services"></a>Visual Studio Team Services
 
@@ -138,9 +138,9 @@ Informationen zu den Kosten finden Sie [hier]((https://products.office.com/busin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx)).
+Weitere Informationen finden Sie [hier](https://www.visualstudio.com/products/what-is-visual-studio-online-vs.aspx).
   
-Informationen zu den Kosten finden Sie [hier]((https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx)).
+Informationen zu den Kosten finden Sie [hier](https://www.visualstudio.com/products/visual-studio-online-pricing-vs.aspx).
   
 ## <a name="yammer-file-sharing"></a>Yammer-Dateifreigabe
 
@@ -166,9 +166,9 @@ Informationen zu den Kosten finden Sie [hier]((https://www.visualstudio.com/prod
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://products.office.com/yammer/yammer-overview)).
+Weitere Informationen finden Sie [hier](https://products.office.com/yammer/yammer-overview).
   
-Informationen zu den Kosten finden Sie [hier]((https://products.office.com/business/compare-office-365-for-business-plans)).
+Informationen zu den Kosten finden Sie [hier](https://products.office.com/business/compare-office-365-for-business-plans).
   
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -210,9 +210,9 @@ Weitere Informationen finden Sie [hier](http://www.microsoft.com/dynamics/defaul
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://www.microsoft.com/server-cloud/products/microsoft-intune/)).
+Weitere Informationen finden Sie [hier](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
   
-Informationen zu den Kosten finden Sie [hier]((https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)).
+Informationen zu den Kosten finden Sie [hier](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
   
 ## <a name="azure-site-recovery"></a>Azure Site Recovery
 
@@ -240,7 +240,7 @@ Informationen zu den Kosten finden Sie [hier]((https://www.microsoft.com/cloud-p
 
 Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/site-recovery/?WT.srch=1&amp;WT.mc_ID=kn0iWCHA).
   
-Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/site-recovery/)).
+Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/site-recovery/).
   
 ## <a name="azure-backup"></a>Azure Backup
 
@@ -264,9 +264,9 @@ Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/backup/)).
+Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/backup/).
   
-Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/backup/)).
+Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/backup/).
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -278,7 +278,7 @@ Sehen Sie sich die [Assemblierung in Maßen erforderlich](some-assembly-required
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

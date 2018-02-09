@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: e54edb0111fd3285030a3074b5ec66a0c9224d29
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 997c5cf236a795f4846718cc8864997799a1d966
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -49,7 +49,7 @@ Das Einrichten einer isolierten SharePoint Online-Teamwebsite in Ihrer Office 36
 3. Erstellen einer neuen SharePoint Online-Teamwebsite für ProjectX und Isolieren der Website.
     
 > [!TIP]
-> Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
@@ -62,7 +62,7 @@ Wenn Sie eine isolierte SharePoint Online-Teamwebsite in einer simulierten Unter
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Phase 2: Erstellen von Benutzerkonten und Zugriffsgruppen
 
-Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell]((https://technet.microsoft.com/library/dn975125.aspx)), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:
+Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx), um eine Verbindung zu Ihrem Office 365-Testabonnement über Ihr globales Administratorkonto von folgender Stelle aus herzustellen:
   
 - Ihrem Computer aus (für die einfache Office 365-Entwicklungs-/Testunternehmensumgebung).
     
@@ -83,7 +83,7 @@ New-MsolGroup -DisplayName $groupName -Description $groupDesc
 ```
 
 > [!TIP]
-> Klicken Sie [hier]((https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1)), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.
+> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-an-b2608df1), um eine Textdatei herunterzuladen, die alle PowerShell-Befehle in diesem Artikel enthält.
   
 Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“) und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die Eingabeaufforderung des Windows Azure Active Directory-Moduls für Windows PowerShell die folgenden Befehle aus:
   
@@ -148,7 +148,7 @@ Abbildung 1 zeigt die Zugriffsgruppen und ihre Mitgliedschaft.
 
 Führen Sie folgende Schritte aus, um eine SharePoint Online-Teamwebsite für ProjectX zu erstellen:
   
-1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [(https://portal.office.com)]((https://portal.office.com)) unter Verwendung des globalen Administratorkontos an.
+1. Melden Sie sich über einen Browser auf dem lokalen Computer (kompakte Konfiguration) oder über CLIENT1 (simulierte Unternehmensumgebung) beim Office 365-Portal [https://portal.office.com](https://portal.office.com) unter Verwendung des globalen Administratorkontos an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -216,7 +216,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 2. Klicken Sie auf den Namen des globalen Administrators, und klicken Sie dann auf **Abmelden**.
     
-3. Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort des Lead Designers an.
+3. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit dem Kontonamen und Kennwort des Lead Designers an.
     
 4. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -246,7 +246,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos veranschaulicht:
   
-1. Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort des Development VP an.
+1. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit dem Kontonamen und Kennwort des Development VP an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -262,7 +262,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Development VP-Benutzerkontos 
     
 Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veranschaulicht:
   
-1. Melden Sie sich beim Office 365-Portal ([(https://portal.office.com)]((https://portal.office.com))) mit dem Kontonamen und Kennwort von Benutzer 3 an.
+1. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit dem Kontonamen und Kennwort von Benutzer 3 an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     

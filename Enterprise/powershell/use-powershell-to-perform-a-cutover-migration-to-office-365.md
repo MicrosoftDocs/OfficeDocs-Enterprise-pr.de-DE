@@ -2,7 +2,7 @@
 title: "Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Office 365"
 ms.author: sirkkuw
 author: sirkkuw
-manager: scotv
+manager: laurawi
 ms.date: 12/15/2017
 ms.audience: Admin
 ms.topic: article
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: 
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: "Zusammenfassung: Verwenden Sie Windows PowerShell zum Ausführen einer Übernahmemigration zu Office 365."
-ms.openlocfilehash: c690789e64af297d2ffc20505bc1a296148d9f1c
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 8181d59f53464034a584724dcb53956976c917dd
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Office 365
 
@@ -63,7 +63,7 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
     
   - Verwenden Sie Microsoft Outlook von außerhalb Ihre Firmennetzwerks, um eine Verbindung mit Ihrem lokalen Exchange-Postfach herzustellen.
     
-  - Verwenden Sie die Microsoft [Exchange-Remoteverbindungsuntersuchung]((https://www.testexchangeconnectivity.com/)) zum Testen der Verbindungseinstellungen. Verwenden Sie die Outlook Anywhere- (RPC über HTTP)- oder Outlook-AutoErmittlungs-Tests.
+  - Verwenden Sie die Microsoft [Exchange-Remoteverbindungsuntersuchung](https://www.testexchangeconnectivity.com/) zum Testen der Verbindungseinstellungen. Verwenden Sie die Outlook Anywhere- (RPC über HTTP)- oder Outlook-AutoErmittlungs-Tests.
     
   - Führen Sie die folgenden Befehle in Exchange Online PowerShell aus:
     

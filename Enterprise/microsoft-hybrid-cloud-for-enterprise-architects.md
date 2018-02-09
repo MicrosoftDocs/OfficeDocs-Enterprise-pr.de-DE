@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Zusammenfassung: Was IT-Architekten über Hybridszenarien wissen müssen, in denen Microsoft-Clouddienste und -plattformen verwendet werden."
-ms.openlocfilehash: 0a2d9e097d976a729492748aa2672146cb8681a7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 9972241d5e7291a2cecf8c72811f34115dcf116a
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud für Enterprise-Architekten
 
@@ -32,7 +32,7 @@ Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten übe
 ![PDF-Datei](images/Common_Images/PDFIcon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | ![Visio-Datei](images/Common_Images/VisioIcon.png)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/Common_Images/GlobeIcon.png)
 [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54424)
   
-Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)) durchsuchen.
+Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture) durchsuchen.
   
 Lesen Sie die folgenden Abschnitte:
   
@@ -63,7 +63,7 @@ Lesen Sie die folgenden Abschnitte:
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

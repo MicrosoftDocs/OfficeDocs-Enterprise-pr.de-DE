@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: "Zusammenfassung: Verwenden Sie Azure Information Protection zum Schützen von Dateien auf einer streng vertraulichen SharePoint Online-Teamwebsite."
-ms.openlocfilehash: 03a10c5d856c4c5518f18b9d02ffe76f2c8d2e7a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 5beba188cadc88c15ec75ed2adb4899d9b41b8ec
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Schützen von SharePoint Online-Dateien mit Azure Information Protection
 
@@ -29,13 +29,13 @@ Konfigurieren Sie anhand der Schritte in diesem Artikel Azure Information Protec
 > [!NOTE]
 > Wenn Azure Information Protection-Verschlüsselung auf Dateien in Office 365 angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur auf die Metadaten (einschließlich Office 365-Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien). 
   
-Befolgen Sie zuerst die Anweisungen unter [Aktivieren von Azure Rights Management über Office 365 Admin Center]((https://docs.microsoft.com/information-protection/deploy-use/activate-office365)) für Ihr Office 365-Abonnement.
+Befolgen Sie zuerst die Anweisungen unter [Aktivieren von Azure Rights Management über Office 365 Admin Center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) für Ihr Office 365-Abonnement.
   
 Konfigurieren Sie anschließend Azure Information Protection mit einer neuen bereichsbezogenen Richtlinie und einer untergeordneten Bezeichnung mit dem Schutz und den Berechtigungen für die streng vertrauliche SharePoint Online-Teamwebsite.
   
-1. Melden Sie sich mit einem Konto beim Office 365-Portal an, das über die Rolle „Sicherheitsadministrator" oder Unternehmensadministrator" verfügt. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?]((https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)).
+1. Melden Sie sich mit einem Konto beim Office 365-Portal an, das über die Rolle „Sicherheitsadministrator" oder Unternehmensadministrator" verfügt. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Wechseln Sie auf einer separaten Registerkarte im Browser zum Azure-Portal unter [(https://portal.azure.com)]((https://portal.azure.com)).
+2. Wechseln Sie auf einer separaten Registerkarte im Browser zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com).
     
 3. Wenn Sie Azure Information Protection zum ersten Mal konfigurieren, befolgen Sie diese [Anweisungen](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
     
@@ -57,7 +57,7 @@ Konfigurieren Sie anschließend Azure Information Protection mit einer neuen ber
     
 12. Klicken Sie im Abschnitt **Schutz** auf **Azure (Cloudschlüssel)**.
     
-13. Klicken Sie auf dem Blatt **Schutz** unter **Schutzeinstellungen** auf **+ Berechtigungen hinzufügen**.
+13. Klicken Sie im Blatt **Schützen** unter **Schutzeinstellungen** auf **+ Berechtigungen hinzufügen**.
     
 14. Klicken Sie auf dem Blatt **Berechtigungen hinzufügen** unter **Benutzer und Gruppen angeben** auf **+ Verzeichnis durchsuchen**.
     
@@ -79,11 +79,11 @@ Dies ist die resultierende Konfiguration für Ihre streng vertrauliche SharePoin
   
 Sie können jetzt damit beginnen, Dokumente zu erstellen und diese mit Azure Information Protection und der neuen Bezeichnung zu schützen.
   
-Sie müssen den [Azure Information Protection-Client]((https://docs.microsoft.com/information-protection/rms-client/install-client-app)) auf Ihrem Gerät oder Ihrem Windows-Computer installieren. Sie können ein Skript erstellen und die Installation automatisieren, oder Benutzer können den Client manuell installieren. Informationen finden Sie in den folgenden Ressourcen:
+Sie müssen den [Azure Information Protection-Client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) auf Ihrem Gerät oder Ihrem Windows-Computer installieren. Sie können ein Skript erstellen und die Installation automatisieren, oder Benutzer können den Client manuell installieren. Informationen finden Sie in den folgenden Ressourcen:
   
-- [Die Clientseite von Azure Information Protection]((https://docs.microsoft.com/information-protection/rms-client/use-client))
+- [Die Clientseite von Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/use-client)
     
-- [Installieren des Azure Information Protection-Clients]((https://docs.microsoft.com/information-protection/rms-client/client-admin-guide))
+- [Installieren des Azure Information Protection-Clients](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide)
     
 - [Downloadseite für die manuelle Installation](https://www.microsoft.com/download/details.aspx?id=53018)
     

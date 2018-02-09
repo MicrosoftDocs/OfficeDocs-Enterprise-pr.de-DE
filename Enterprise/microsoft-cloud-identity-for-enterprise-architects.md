@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: d27b5085-7325-4ab9-9d9a-438908a65d2c
 description: "Zusammenfassung: Entwerfen Sie Ihre Identitätslösung für Microsoft Cloud-Dienste und -Plattformen."
-ms.openlocfilehash: 601d449937d0b21299f4653aa872e0a3d4bc5337
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 78a975a9d4f22ce6e624983db21dae1a762a3c09
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-identity-for-enterprise-architects"></a>Microsoft-Cloud-Identität für Enterprise-Architekten
 
@@ -30,9 +30,9 @@ Dieser Artikel beschreibt, was IT-Architekten über das Entwerfen der Identität
 [![Miniaturbild für Microsoft-Cloud-Identitätsmodell](images/ffa145a1-97e6-4c36-b08b-01c4a4ae8b9b.png) 
 ](https://www.microsoft.com/download/details.aspx?id=54431)
   
-![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio]((https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54431)
+![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586) | ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54431)
   
-Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)) durchsuchen.
+Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture) durchsuchen.
   
 > [!NOTE]
 > Dieser Artikel spiegelt die Version vom Januar 2016 des Posters **Microsoft-Cloud-Identität für Enterprise-Architekten** wider. Er enthält nicht die Änderungen für die Posterversion vom April 2016 oder spätere Versionen des Posters.
@@ -364,7 +364,7 @@ Weitere Informationen finden Sie unter [Integrieren Ihrer lokalen Identitäten i
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: "Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365."
-ms.openlocfilehash: a8ba632d9bc24e272a649f5790824323f889bdc0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 78e29b12bad2d9ba91524fecf4fa66b8729715ae
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -28,13 +28,13 @@ Dieser Artikel enthält Empfehlungen, wie Sie SharePoint Online-Teamwebsites und
   
 Die Konfigurationen in diesem Artikel sind auf die Microsoft-Empfehlungen für drei Schutzebenen für Daten, Identitäten und Geräte ausgerichtet:
   
-- Basisschutz
+- Grundlegender Schutz
     
 - Schutz sensibler Daten
     
-- Schutz streng vertraulicher Daten
+- Schutz von streng vertraulichen Daten
     
-Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfohlen werden, finden Sie in den folgenden Ressourcen. 
+Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfohlen werden, finden Sie in den folgenden Ressourcen: 
   
 - [Identität- und Geräteschutz für Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     
@@ -58,7 +58,7 @@ Erläuterung der Abbildung:
     
 - Richtlinien zur Verhinderung von Datenverlust sind für die Office 365-Bezeichnungen „Sensibel“ und „Streng vertraulich“ konfiguriert, um zu warnen oder Benutzer daran zu hindern, diese Dateitypen außerhalb der Organisation zu senden.
     
-- Für Websites, die mit streng vertraulichem Schutz konfiguriert sind, verschlüsselt und erteilt Azure Information Protection  Berechtigungen für Dateien.
+- Für Websites, die mit streng vertraulichem Schutz konfiguriert sind, übernimmt Azure Information Protection die Verschlüsselung von und erteilt Berechtigungen für Dateien.
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Mandantenweite Einstellungen für SharePoint Online und OneDrive for Business
 
@@ -68,7 +68,7 @@ SharePoint Online und OneDrive for Business enthalten mandantenweite Einstellung
 
 Für diese Lösung empfehlen wir die folgenden mandantenweiten Einstellungen:
   
-- Beibehalten der Standardfreigaberichtlinie, die alle Freigabetypen für alle Arten von Konten zulässt, einschließlich anonymer Freigabe.
+- Behalten Sie die Standardfreigaberichtlinie bei, die alle Freigabetypen für alle Arten von Konten zulässt, einschließlich der anonymen Freigabe.
     
 - Festlegen eines Ablaufdatums für anonyme Links, falls gewünscht.
     
@@ -84,13 +84,13 @@ Außerdem stehen Ihnen Kontrollfunktionen zur Verfügung, mit denen Sie die exte
   
 - Deaktivieren eines anonymen Gastlinks
     
-- Widerrufen des Benutzerzugriffs auf eine Website
+- Widerrufen des Benutzerzugriffs auf eine Website.
     
-- Anzeigen, wer Zugriff auf eine bestimmte Website oder ein Dokument hat
+- Anzeigen lassen, wer Zugriff auf eine bestimmte Website oder ein Dokument hat.
     
-- Festlegen eines Ablaufdatums für anonyme Freigabelinks (Mandanteneinstellung)
+- Festlegen eines Ablaufdatums für anonyme Freigabelinks (Mandanteneinstellung).
     
-- Einschränken, wer außerhalb Ihrer Organisation freigeben kann (Mandanteneinstellung)
+- Einschränken, wer außerhalb Ihrer Organisation zur Freigabe berechtigt ist (Mandanteneinstellung).
     
 ### <a name="use-external-sharing-together-with-data-loss-prevention-dlp"></a>Verwenden von externer Freigabe zusammen mit Verhinderung von Datenverlust (DLP)
 
@@ -100,7 +100,7 @@ Wenn Sie die externe Freigabe nicht zulassen, stehen Benutzern mit einer Geschä
 
 Mithilfe von Gerätezugriffseinstellungen für SharePoint Online und OneDrive for Business können Sie bestimmen, ob der Zugriff auf den Browser beschränkt ist (die Dateien können nicht heruntergeladen werden) oder ob der Zugriff ganz blockiert ist. Diese Einstellungen stehen derzeit in der First Release zur Verfügung und gelten mandantenweit. In Kürze wird die Möglichkeit verfügbar sein, Gerätezugriffsrichtlinien auf Websiteebene zu konfigurieren. Für diese Lösung wird empfohlen, keine mandantenweit geltenden Gerätezugriffseinstellungen zu verwenden.
   
-Informationen zum Verwenden von Gerätezugriffseinstellungen in der First Release finden Sie hier: [Einrichten der Standard- oder First Release-Optionen in Office 365]((https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47)).
+Informationen zum Verwenden von Gerätezugriffseinstellungen in der First Release finden Sie hier: [Einrichten der Standard- oder First Release-Optionen in Office 365](https://support.office.com/article/Set-up-the-Standard-or-First-Release-options-in-Office-365-3B3ADFA4-1777-4FF0-B606-FB8732101F47).
   
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -112,14 +112,14 @@ In der folgenden Tabelle wird die Konfiguration für jede der zuvor in diesem Ar
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Basisschutz 1** <br/> |**Basisschutz 2** <br/> |**Schutz sensibler Daten** <br/> |**Streng vertraulich** <br/> |
+||**Basisschutz 1** <br/> |**Grundlegender Schutz #2** <br/> |**Schutz sensibler Daten** <br/> |**Streng vertraulich** <br/> |
 |Beschreibung  <br/> |Offene Ermittlung und Zusammenarbeit innerhalb der Organisation.  <br/> |Private Website und Gruppe, Freigabe außerhalb der Gruppe zulässig.  <br/> |Isolierte Website, für die Zugriffsebenen durch Mitgliedschaft in bestimmten Gruppen definiert sind. Die Freigabe ist nur für Mitglieder dieser Website zulässig. Die DLP warnt Benutzer bei dem Versuch, Dateien außerhalb der Organisation zu senden.  <br/> |Isolierte Website + Dateiverschlüsselung und Berechtigungen mit Azure Information Protection. Die DLP verhindert, dass Benutzer Dateien außerhalb der Organisation senden.  <br/> |
-|Private oder öffentliche Teamwebsite  <br/> |Öffentlich  <br/> |Privat  <br/> |Privat  <br/> |Privat  <br/> |
+|Private oder öffentliche Teamwebsite  <br/> |Public (Öffentlich)  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |Wer hat Zugriff?  <br/> |Alle Benutzer in der Organisation, einschließlich B2B-Benutzer und Gäste.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder der Website. Andere Personen können Zugriff anfordern.  <br/> |Nur Mitglieder. Andere Personen können keinen Zugriff anfordern.  <br/> |
-|Freigabekontrollen auf Websiteebene  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website anfordern, aber diese Anforderungen müssen von einem Websiteadministrator bearbeitet werden.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können keinen Zugriff auf die Website oder Inhalte anfordern.  <br/> |
-|Gerätezugriffssteuerungen auf Websiteebene  <br/> |Keine zusätzlichen Steuerungen.  <br/> |Keine zusätzlichen Steuerungen.  <br/> |In Kürze sind Steuerungen auf Websiteebene verfügbar, die verhindern, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen. Von allen anderen Geräten aus ist nur Browserzugriff zulässig.  <br/> |In Kürze sind Steuerelemente auf Websiteebene verfügbar, die blockieren, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen.  <br/> |
-|Office 365-Bezeichnungen  <br/> |Intern öffentlich  <br/> |Privat  <br/> |Vertraulich  <br/> |Streng vertraulich  <br/> |
-|DLP-Richtlinien  <br/> |||Benutzer werden gewarnt, wenn sie Dateien mit der Bezeichnung „Sensibel“ an Empfänger außerhalb der Organisation senden.  <br/> Um die externe Freigabe von sensiblen Datentypen wie z. B. Kreditkartennummern oder anderen persönlichen Daten zu blockieren, können Sie zusätzliche DLP-Richtlinien für diese Datentypen konfigurieren (einschließlich benutzerdefinierter Datentypen, die Sie selbst konfigurieren).  <br/> |Benutzer werden daran gehindert, Dateien mit der Bezeichnung „Streng vertraulich“ an Empfänger außerhalb der Organisation zu senden. Sie können es Benutzern ermöglichen, dies durch Angabe einer Rechtfertigung zu überschreiben, einschließlich der Person, für die sie die Datei freigeben.  <br/> |
+|Freigabekontrollen auf Websiteebene  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Freigabe für beliebige Personen zulässig. Standardeinstellungen.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website anfordern, aber diese Anforderungen müssen von einem Websiteadministrator bearbeitet werden.  <br/> |Mitglieder können den Zugriff auf die Website nicht freigeben.  <br/> Nichtmitglieder können den Zugriff auf die Website oder die Inhalte nicht anfordern.  <br/> |
+|Gerätezugriffssteuerungen auf Websiteebene  <br/> |Keine zusätzlichen Steuerelemente.  <br/> |Keine zusätzlichen Steuerungen.  <br/> |In Kürze sind Steuerungen auf Websiteebene verfügbar, die verhindern, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen. Von allen anderen Geräten aus ist nur Browserzugriff zulässig.  <br/> |In Kürze sind Steuerelemente auf Websiteebene verfügbar, die blockieren, dass Benutzer Dateien auf nicht kompatible oder nicht der Domäne beigetretene Geräte herunterladen.  <br/> |
+|Office 365-Bezeichnungen  <br/> |Intern Öffentlich  <br/> |Private  <br/> |Vertraulich  <br/> |Streng vertraulich  <br/> |
+|DLP-Richtlinien  <br/> |||Warnen Benutzer beim Senden von Dateien mit der Bezeichnung „Vertraulich“ außerhalb der Organisation.  <br/> Um die externe Freigabe von sensiblen Datentypen wie z. B. Kreditkartennummern oder anderen persönlichen Daten zu blockieren, können Sie zusätzliche DLP-Richtlinien für diese Datentypen konfigurieren (einschließlich benutzerdefinierter Datentypen, die Sie selbst konfigurieren).  <br/> |Benutzer werden daran gehindert, Dateien mit der Bezeichnung „Streng vertraulich“ an Empfänger außerhalb der Organisation zu senden. Sie können es Benutzern ermöglichen, dies durch Angabe einer Rechtfertigung zu überschreiben, einschließlich der Person, für die sie die Datei freigeben.  <br/> |
 |Azure Information Protection  <br/> ||||Azure Information Protection wird zum automatischen Verschlüsseln von Dateien und zum Erteilen von Berechtigungen für diese verwendet. Dieser Schutz ist mit den Dateien verbunden und bleibt auch dann erhalten, falls sie verloren gehen.  <br/> Office 365 kann keine Dateien lesen, die mit Azure Information Protection verschlüsselt wurden. Darüber hinaus können DLP-Richtlinien nur auf die Metadaten (einschließlich Bezeichnungen) angewendet werden, aber nicht auf den Inhalt dieser Dateien (z. B. Kreditkartennummern in Dateien).  <br/> |
    
 Die Schritte zum Bereitstellen der vier verschiedenen Typen von SharePoint Online-Teamwebsites in dieser Lösung finden Sie unter [Bereitstellen von Websites für den Schutz auf drei Ebenen](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). Die Schritte zur Erstellung einer Entwicklungs-/Testumgebung finden Sie unter [Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung](secure-sharepoint-online-sites-in-a-dev-test-environment.md). 
@@ -144,7 +144,7 @@ Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Bezeichnunge
     
 - Vertraulich
     
-- Privat
+- Private
     
 - Intern öffentlich
     
@@ -168,7 +168,7 @@ Erläuterung der Abbildung:
     
 ### <a name="adding-permissions-for-external-users"></a>Hinzufügen von Berechtigungen für externe Benutzer
 
-Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gewähren können, die mit Azure Information Protection geschützt sind. In beiden Fällen benötigen die externen Benutzer ein Azure AD-Konto. Wenn externe Benutzer kein Mitglied einer Organisation sind, die Azure Active Directory verwendet, können sie auf dieser Registrierungsseite ein Azure AD-Konto als Einzelperson beantragen: [(https://aka.ms/aip-signup)]((https://aka.ms/aip-signup)).
+Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gewähren können, die mit Azure Information Protection geschützt sind. In beiden Fällen benötigen die externen Benutzer ein Azure AD-Konto. Wenn externe Benutzer kein Mitglied einer Organisation sind, die Azure Active Directory verwendet, können sie auf dieser Registrierungsseite ein Azure AD-Konto als Einzelperson beantragen: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
   
 - Hinzufügen von externen Benutzern zu einer Azure AD-Gruppe, die zum Konfigurieren des Schutzes für eine Bezeichnung verwendet wird
     

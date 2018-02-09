@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
 description: "Zusammenfassung: Informieren Sie sich über die Details der Cloudspeicheroptionen, die Sie verwenden können, um eine benutzerdefinierte Speicherlösung zu erstellen."
-ms.openlocfilehash: bcfc5d851a3f3b0d987214c4ea22e669db3a53ee
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="some-assembly-required"></a>Assemblierung in Maßen erforderlich
 
@@ -58,9 +58,9 @@ In den folgenden Abschnitten werden die Details der einzelnen Speicheroptionen v
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/cdn/)).
+Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/cdn/).
   
-Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/cdn/)).
+Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/cdn/).
   
 ## <a name="hdinsight"></a>HdInsight
 
@@ -94,9 +94,9 @@ Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/prici
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/hdinsight/)).
+Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/hdinsight/).
   
-Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/hdinsight/)).
+Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/hdinsight/).
   
 ## <a name="azure-sql-database"></a>Azure SQL-Datenbank
 
@@ -144,7 +144,7 @@ Bei horizontaler Skalierung können Sie bei Bedarf neue Datenbanken hinzufügen.
   
 ![Horizontale Skalierung, bereitgestellt von Azure SQL Database.](images/Storage_Poster/CloudStor-HorizScale.png)
   
-Klicken Sie [hier]((https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction)), um weitere Informationen zu erhalten.
+Klicken Sie [hier](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction), um weitere Informationen zu erhalten.
   
 ### <a name="stretch-database-with-sql-server-2016"></a>Stretch-Datenbank mit SQL Server 2016
 
@@ -160,13 +160,13 @@ Benutzerabfragen, die Verlaufsdaten enthalten, werden transparent an die Azure S
   
 Stretch-Datenbank stellt eine kostengünstige Möglichkeit für langfristige Speicherung und transparenten Zugriff auf Verlaufsdaten. Außerdem können hiermit Leistungs- und Verfügbarkeitsprobleme behoben werden, die auftreten, wenn die Tabellen sehr umfangreich sind.
   
-Klicken Sie [hier]((https://msdn.microsoft.com/library/dn935011.aspx)), um weitere Informationen zu erhalten.
+Klicken Sie [hier](https://msdn.microsoft.com/library/dn935011.aspx), um weitere Informationen zu erhalten.
   
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/sql-database/)).
+Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/sql-database/).
   
-Informationen zu Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/sql-database/)).
+Informationen zu Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/sql-database/).
   
 ## <a name="azure-cosmos-db"></a>Azure Cosmos DB
 
@@ -210,9 +210,9 @@ Die folgende Tabelle enthält die unterschiedlichen Attribute von Azure Cosmos D
   
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/documentdb/)).
+Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/documentdb/).
   
-Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/documentdb/)).
+Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/documentdb/).
   
 ## <a name="azure-media-services"></a>Azure Media Services
 
@@ -244,9 +244,9 @@ Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/media-services/)).
+Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/media-services/).
   
-Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/media-services/)).
+Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/media-services/).
   
 ## <a name="azure-redis-cache"></a>Azure Redis Cache
 
@@ -278,9 +278,9 @@ Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/cache/)).
+Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/cache/).
   
-Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/cache/)).
+Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/cache/).
   
 ## <a name="sql-server-on-an-azure-vm"></a>SQL Server auf einer Azure-VM
 
@@ -300,9 +300,9 @@ Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/virtual-machines/)).
+Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/virtual-machines/).
   
-Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/virtual-machines/)).
+Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/virtual-machines/).
   
 ## <a name="storsimple"></a>StorSimple
 
@@ -334,9 +334,9 @@ Informationen zu den Kosten finden Sie [hier]((http://azure.microsoft.com/pricin
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((http://azure.microsoft.com/services/storsimple/)).
+Weitere Informationen finden Sie [hier](http://azure.microsoft.com/services/storsimple/).
   
-Informationen zu Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/details/storsimple/)).
+Informationen zu Kosten finden Sie [hier](http://azure.microsoft.com/pricing/details/storsimple/).
   
 ## <a name="azure-sql-data-warehouse"></a>Azure SQL Data Warehouse
 
@@ -364,9 +364,9 @@ Informationen zu Kosten finden Sie [hier]((http://azure.microsoft.com/pricing/de
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/sql-data-warehouse/)).
+Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/sql-data-warehouse/).
   
-Informationen zu Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/sql-data-warehouse/)).
+Informationen zu Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/sql-data-warehouse/).
   
 ## <a name="azure-data-lake-store"></a>Azure Data Lake Store
 
@@ -398,9 +398,9 @@ Informationen zu Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/d
     
 ### <a name="resources"></a>Ressourcen
 
-Weitere Informationen finden Sie [hier]((https://azure.microsoft.com/services/data-lake-store/)).
+Weitere Informationen finden Sie [hier](https://azure.microsoft.com/services/data-lake-store/).
   
-Informationen zu den Kosten finden Sie [hier]((https://azure.microsoft.com/pricing/details/data-lake-store/)).
+Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricing/details/data-lake-store/).
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -412,7 +412,7 @@ Sehen Sie sich die Cloudspeicheroptionen vom Typ „[Von Grund auf neu aufgebaut
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

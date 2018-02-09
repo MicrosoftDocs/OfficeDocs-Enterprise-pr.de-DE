@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: "Zusammenfassung: Entwickeln Sie Ihr Netzwerk für Microsoft Cloud-Dienste und -Plattformen."
-ms.openlocfilehash: 155e40bfe769a8d8771d71e570cab418d4a6b2a0
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 7fe7fc71825ddbdf485fedece890c87be914d4fc
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft-Cloudnetzwerke für Enterprise-Architekten
 
@@ -31,7 +31,7 @@ Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten übe
   
 ![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers]((https://aka.ms/cloudarchitecture)) durchsuchen.
+Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture) durchsuchen.
   
 Lesen Sie die folgenden Abschnitte:
   
@@ -59,7 +59,7 @@ Lesen Sie die folgenden Abschnitte:
     
     Durchlaufen Sie schrittweise den Entwurfsprozess zum Erstellen eines optimalen virtuellen Azure-Netzwerks (VNet) für das Hosting von serverbasierten IT-Arbeitslasten, einschließlich Subnetzen, Adressräumen, Routing, DNS, Lastenausgleich und der Verbindung zu Ihrem lokalen Netzwerk, anderen VNets und dem Internet.
     
-Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden Sie im Microsoft Virtual Academy-Kurs über das [Optimieren von Netzwerken für Microsoft Cloud-Angebote]((https://mva.microsoft.com/de-DE/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743)).
+Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden Sie im Microsoft Virtual Academy-Kurs über das [Optimieren von Netzwerken für Microsoft Cloud-Angebote](https://mva.microsoft.com/de-DE/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743).
   
 > [!NOTE]
 > Die folgenden Artikel geben die Version vom **Juni 2017** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten“ wieder.
@@ -68,7 +68,7 @@ Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden S
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: "Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren."
-ms.openlocfilehash: b297c3e461b5695b323c619145df64524989d58a
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung
 
@@ -39,7 +39,7 @@ Folgen Sie den Anweisungen in der Testumgebungsanleitung [Office 365- und Dynami
 
 Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die Integration von Dynamics 365 und Exchange Online zu konfigurieren:
   
-1. Verwenden Sie eine private Sitzung in Ihrem Browser, und wechseln Sie zu [(http://portal.office.com)]((http://portal.office.com)). Melden Sie sich mit dem globalen Administratorkonto für Office 365 an.
+1. Verwenden Sie eine private Sitzung in Ihrem Browser, und wechseln Sie zu [http://portal.office.com](http://portal.office.com). Melden Sie sich mit dem globalen Administratorkonto für Office 365 an.
     
 2. Klicken Sie auf der **Microsoft Office-Homepage** auf die Kachel **E-Mail**.
     
@@ -98,7 +98,7 @@ Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren un
 9. Klicken Sie auf **Verwerfen**.
 
 > [!TIP]
-> Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
     
 ## <a name="see-also"></a>Weitere Artikel
 
@@ -112,8 +112,8 @@ Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren un
   
 [DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
 
-[Abonnement-Verwaltung für Dynamics 365 (online)]((https://technet.microsoft.com/library/jj679903.aspx))
+[Abonnement-Verwaltung für Dynamics 365 (online)](https://technet.microsoft.com/library/jj679903.aspx)
   
-[Verwalten von Dynamics 365]((https://technet.microsoft.com/library/dn531101.aspx))
+[Verwalten von Dynamics 365](https://technet.microsoft.com/library/dn531101.aspx)
 
 

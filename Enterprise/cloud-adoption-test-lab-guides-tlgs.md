@@ -14,11 +14,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 und Office Server-Produkte einzurichten."
-ms.openlocfilehash: 2c533129b88783d8ff39dbc5753bdeb26eeafe81
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d13012ebbee05eea903d3ae2d6198b503ad2bf39
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
@@ -34,7 +34,7 @@ Sehen Sie sich diese zusätzlichen Ressourcen an, bevor Sie loslegen:
   
 - Sehen Sie sich die Microsoft Virtual Academy-Sitzung [Experience the Microsoft Cloud with Cloud Adoption Test Lab Guides](https://mva.microsoft.com/en-US/training-courses/experience-the-microsoft-cloud-with-cloud-adoption-test-lab-guides-17960?l=LXNRdhSLE_1000115881 ) an (nur 22 Minuten).
     
-- Klicken Sie [hier]((http://aka.ms/catlgstack)), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+- Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
     
 ## <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 <a name="O365"> </a>
@@ -90,7 +90,7 @@ Verwenden Sie die folgenden Artikel für Ihre Office 365-Entwicklungs-/Testumgeb
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung
 <a name="O365"> </a>
 
-Erstellen Sie anhand der folgenden Artikel eine Entwicklungs-/Testumgebung für [Microsoft 365 Enterprise]((https://docs.microsoft.com/microsoft-365-enterprise/))-Szenarien:
+Erstellen Sie anhand der folgenden Artikel eine Entwicklungs-/Testumgebung für [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)-Szenarien:
   
 - [Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung](the-microsoft-365-enterprise-dev-test-environment.md)
     
@@ -140,7 +140,7 @@ Unter Verwendung der folgenden Artikel können Sie eine standortübergreifende E
 
 In den folgenden Themen finden Sie zusätzliche cloudbasierte Entwicklungs-/Testumgebungen, die Sie in Azure-Infrastrukturdiensten erstellen können:
   
-- [SharePoint Server 2016-Entwicklungs-/Testumgebung in Azure]((https://technet.microsoft.com/library/mt723354.aspx))
+- [SharePoint Server 2016-Entwicklungs-/Testumgebung in Azure](https://technet.microsoft.com/library/mt723354.aspx)
     
     Erstellen einer SharePoint Server 2016-Farm mit einem einzigen Server in Azure-Infrastrukturdiensten.
     
@@ -148,7 +148,7 @@ In den folgenden Themen finden Sie zusätzliche cloudbasierte Entwicklungs-/Test
     
     Erstellen eines einzelnen Exchange 2016-Servers in Azure-Infrastrukturdiensten.
     
-- [SharePoint Server 2013 dev/test environments in Azure]((http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx))
+- [SharePoint Server 2013 dev/test environments in Azure](http://technet.microsoft.com/library/165de4d5-8fe6-4fbb-a15b-39a8b0a0eb23.aspx)
     
     Erstellen von einfachen und hochverfügbaren SharePoint Server 2013-Farmen in Azure-Infrastrukturdiensten.
     
@@ -157,7 +157,7 @@ In den folgenden Themen finden Sie zusätzliche cloudbasierte Entwicklungs-/Test
 |**Kontakt**|**Beschreibung**|
 |:-----|:-----|
 |**Welche Lösungen benötigen Sie?** <br/> |Wir entwickeln Inhalte für Lösungen auf Grundlage mehrerer Microsoft-Produkte und -Dienste. Lassen Sie uns wissen, was Sie von unseren serverübergreifenden Lösungen halten, oder fordern Sie spezifische Lösungen an, indem Sie eine E-Mail an [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) senden.<br/> |
-|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie sich für Cloud-basierte Lösungen interessieren, werden Sie Teil des Cloud Adoption Advisory Board (CAAB), um Zugriff auf eine größere, dynamische Community aus Microsoft-Inhaltsentwicklern, Branchenexperten und Kunden aus aller Welt zu haben. Um beizutreten, fügen Sie sich selbst als Mitglied des [CAAB (Cloud Adoption Advisory Board)-Bereichs]((https://aka.ms/caab)) der Microsoft Tech Community hinzu, und senden Sie uns eine E-Mail an [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Communityinhalte stehen allen Personen im [CAAB-Blog]((https://blogs.technet.com/b/solutions_advisory_board/)) zur Verfügung. CAAB-Mitglieder erhalten jedoch Einladungen zu privaten Webinaren, die neue Ressourcen und Lösungen für den Cloud-Einsatz beschreiben.<br/> |
+|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie sich für Cloud-basierte Lösungen interessieren, werden Sie Teil des Cloud Adoption Advisory Board (CAAB), um Zugriff auf eine größere, dynamische Community aus Microsoft-Inhaltsentwicklern, Branchenexperten und Kunden aus aller Welt zu haben. Um beizutreten, fügen Sie sich selbst als Mitglied des [CAAB (Cloud Adoption Advisory Board)-Bereichs](https://aka.ms/caab) der Microsoft Tech Community hinzu, und senden Sie uns eine E-Mail an [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Communityinhalte stehen allen Personen im [CAAB-Blog](https://blogs.technet.com/b/solutions_advisory_board/) zur Verfügung. CAAB-Mitglieder erhalten jedoch Einladungen zu privaten Webinaren, die neue Ressourcen und Lösungen für den Cloud-Einsatz beschreiben.<br/> |
 |**Die hier gezeigte Grafik abrufen** <br/> |Wenn Sie eine bearbeitbare Kopie der Grafik wünschen, die Sie in disem Artikel sehen, senden wir Sie Ihnen gerne zu. Senden Sie eine E-Mail mit der Anforderung einschließlich der URL und dem Titel der Grafik an [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
    
 ## <a name="see-also"></a>Weitere Artikel

@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Zusammenfassung: Bereitstellen von Azure AD Connect (DirSync) auf einem virtuellen Computer in Azure, um Konten zwischen dem lokalen Verzeichnis und dem Azure AD-Mandanten Ihres Office 365-Abonnements zu synchronisieren.'
-ms.openlocfilehash: 4160c8b0f1d38c53fdbc1052cc0bc30793cc8ba2
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 496dca01d8478c693cb983adefe9e663d2285279
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure"></a>Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure
 
@@ -126,7 +126,7 @@ Das Bereitstellen von Azure AD Connect auf einem virtuellen Computer in Azure um
 Nach der Bereitstellung müssen Sie auch Orte und Lizenzen für die neuen Benutzerkonten in Office 365 zuweisen.
   
 > [!TIP]
-> Der [DirSync-Server im Azure Deployment Kit]((https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)) enthält alle Azure PowerShell-Blöcke zum Erstellen dieser Lösung, die Diagramme im Microsoft PowerPoint- und Visio-Format sowie eine Microsoft Excel-Konfigurationsarbeitsmappe, die Azure PowerShell-Befehlsblöcke erstellt, die an Ihre Einstellungen angepasst sind.
+> Der [DirSync-Server im Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded) enthält alle Azure PowerShell-Blöcke zum Erstellen dieser Lösung, die Diagramme im Microsoft PowerPoint- und Visio-Format sowie eine Microsoft Excel-Konfigurationsarbeitsmappe, die Azure PowerShell-Befehlsblöcke erstellt, die an Ihre Einstellungen angepasst sind.
   
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Phase 1: Erstellen und Konfigurieren des virtuellen Azure-Netzwerks
 
@@ -166,7 +166,7 @@ Gehen Sie wie folgt vor:
   
 1. Stellen Sie mithilfe einer Remotedesktopverbindung mit einem Windows Server AD-Domänenkonto, das über lokale Administratorberechtigungen verfügt, eine Verbindung mit dem DirSync-Server her. Siehe [Herstellen einer Verbindung mit dem virtuellen Computer und Anmelden](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hero-tutorial?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json#connect-to-the-virtual-machine-and-sign-on).
     
-2. Öffnen Sie auf dem DirSync-Server den Artikel [Einrichten der Verzeichnissynchronisierung in Office 365]((https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)), und führen Sie die dort beschriebenen Schritte für die Verzeichnissynchronisierung mit Kennwortsynchronisierung aus.
+2. Öffnen Sie auf dem DirSync-Server den Artikel [Einrichten der Verzeichnissynchronisierung in Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846), und führen Sie die dort beschriebenen Schritte für die Verzeichnissynchronisierung mit Kennwortsynchronisierung aus.
     
 > [!CAUTION]
 > Setup erstellt das Konto **AAD_xxxxxxxxxxxx** in der Organisationseinheit (OU) Lokale Benutzer. Verschieben oder entfernen Sie dieses Konto nicht, da dann die Synchronisierung misslingt.
@@ -181,7 +181,7 @@ Diese Abbildung zeigt den DirSync-Server mit Azure AD Connect im lokalen virtuel
 
 Azure AD Connect fügt Ihrem Office 365-Abonnement Konten vom lokalen Windows Server AD hinzu. Damit sich Benutzer jedoch bei Office 365 anmelden und die Dienste verwenden können, müssen die Konten mit einem Speicherort und Lizenzen konfiguriert werden. Befolgen Sie diese Schritte, um den entsprechenden Benutzerkonten den Ort hinzuzufügen und die Lizenzen für sie zu aktivieren:
   
-1. Melden Sie sich auf der [Office 365-Portalseite]((https://portal.office.com)) an, und klicken Sie dann auf **Administrator**.
+1. Melden Sie sich auf der [Office 365-Portalseite](https://portal.office.com) an, und klicken Sie dann auf **Administrator**.
     
 2. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
@@ -205,9 +205,9 @@ Azure AD Connect fügt Ihrem Office 365-Abonnement Konten vom lokalen Windows Se
 
 [Herunterladen von Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)
   
-[Einrichten der Verzeichnissynchronisierung in Office 365]((https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846))
+[Einrichten der Verzeichnissynchronisierung in Office 365](https://support.office.com/article/Set-up-directory-synchronization-in-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846)
   
-[DirSync-Server im Azure Deployment Kit]((https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded))
+[DirSync-Server im Azure Deployment Kit](https://gallery.technet.microsoft.com/DirSync-Server-in-Azure-32cb2ded)
 
 
 

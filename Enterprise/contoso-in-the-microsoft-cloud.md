@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c4a6d625-4938-42cc-87e1-56b7a13c63ef
 description: "Zusammenfassung: Wie in einer fiktiven, aber repräsentativen globalen Organisation mithilfe der Cloudangebote von Microsoft eine cloudeinschließende IT-Infrastruktur eingeführt wurde."
-ms.openlocfilehash: 4c0969e929851c97c62a3099ff90ce311297413d
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: d1d17a307f7f13668897343b69dcaebbedb4a7a4
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="contoso-in-the-microsoft-cloud"></a>Contoso in der Microsoft-Cloud
 
@@ -68,7 +68,7 @@ Lesen Sie die folgenden Abschnitte:
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

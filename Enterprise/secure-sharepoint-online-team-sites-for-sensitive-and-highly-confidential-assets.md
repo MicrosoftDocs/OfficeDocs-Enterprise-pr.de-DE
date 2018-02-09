@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8c088e88-a9ba-4044-bced-722196f4496d
 description: "Zusammenfassung: Wie Contoso den Schutz sensibler Daten und streng vertrauliche SharePoint Online-Teamwebsites für die einfachere, aber dennoch sichere Zusammenarbeit von Führungskräften und Forschungszentren implementierte hat."
-ms.openlocfilehash: 062238bd301200e388ba9d4f6d24503d33046f50
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: c615280d39117f68515fb13d4ba83428d73e4fd3
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="secure-sharepoint-online-team-sites-for-sensitive-and-highly-confidential-assets"></a>Sichere SharePoint Online-Teamwebsites für sensible und streng vertrauliche Daten
 
@@ -52,9 +52,9 @@ Contoso hat die folgenden Schritte ausgeführt, um sichere SharePoint Online-Tea
     
 Das Ergebnis sind zwei Zusammenarbeitswebsites, deren Zugriff von Sicherheits- und SharePoint-Administratoren streng kontrolliert wird. Dateien mit dem AIP-Bezeichnung „Streng vertraulich" werden auch dann verschlüsselt, wenn sie außerhalb der Forschungs-Teamwebsite verteilt werden, und können nur von einem Mitglied eines Forschungsteams geöffnet werden.
   
-Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files)).
+Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-and-files).
   
- Informationen zum Einrichten dieses Szenarios für eine Demonstration, Machbarkeitsstudie oder zu Entwicklungs-/Testzwecken finden Sie unter[SharePoint Online-Websites in einer Dev/Test-Umgebung]((https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test)).
+ Informationen zum Einrichten dieses Szenarios für eine Demonstration, Machbarkeitsstudie oder zu Entwicklungs-/Testzwecken finden Sie unter[SharePoint Online-Websites in einer Dev/Test-Umgebung](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
 ## <a name="see-also"></a>Weitere Artikel
 
@@ -64,9 +64,9 @@ Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites u
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Stretch-Datenbank]((https://msdn.microsoft.com/library/dn935011.aspx))
+[Stretch-Datenbank](https://msdn.microsoft.com/library/dn935011.aspx)
   
-[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Microsoft-Roadmap Enterprise Cloud: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
