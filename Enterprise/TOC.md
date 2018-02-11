@@ -64,7 +64,6 @@
 #### [Hoher Verfügbarkeit federated Authentifizierung Phase 5: Konfigurieren von Verbundauthentifizierung für Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 ### [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 ### [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
-### [Verwenden von Microsoft Azure Active Directory für die SharePoint 2013-Authentifizierung](using-microsoft-azure-active-directory-for-sharepoint-2013-authentication.md)
 ### [Automatisieren von Dateisammlung für eDiscovery](automate-file-collection-for-ediscovery.md)
 ## [Sicherheitslösungen](security-solutions.md)
 ### [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
