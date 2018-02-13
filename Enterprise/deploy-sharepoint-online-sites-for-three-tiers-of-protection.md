@@ -8,17 +8,15 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365
-ms.custom:
-- Strat_O365_Enterprise
-- Ent_Solutions
+ms.collection: Ent_O365, Strat_O365_Enterprise
+ms.custom: Strat_O365_Enterprise, Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: "Zusammenfassung: Erstellen und Konfigurieren von SharePoint Online Teamwebsites für verschiedene Ebenen der Schutz von Informationen."
-ms.openlocfilehash: 0b0c6541f05499526dc472e4e724472d943607ef
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: 4e6e70377f27bcd3cf367aefa1a640188abefc50
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Bereitstellen von SharePoint Online-Websites für drei Ebenen des Schutzes
 
@@ -38,7 +36,7 @@ Um eine SharePoint Online-Teamwebsite mit Basisschutz für den öffentlichen Zug
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
@@ -62,7 +60,7 @@ Um eine SharePoint Online-Teamwebsite mit Basisschutz für den privaten Zugriff 
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     

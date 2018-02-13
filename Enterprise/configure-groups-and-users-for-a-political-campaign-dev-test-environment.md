@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Zusammenfassung: Erstellen Sie Office 365 und Enterprise-Mobilität + Testabonnements Sicherheit (zur Abstimmung) mit Benutzern und Gruppen für eine politischen Kampagne Test-/-Umgebung."
-ms.openlocfilehash: adc5cdfe6d5c0c039ceb1c9068032fe2dae20114
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: d079c3acec588be865f55a864bb1d81d1e84842e
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -166,7 +166,7 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die dynamische Gruppenmi
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office Home** in Ihrem Browser auf die Kachel **Admin**.
     
-2. Klicken Sie auf der Registerkarte **Office Admin Center** im Browser auf **Benutzer**.
+2. Klicken Sie auf der neuen Registerkarte **Office Admin Center** des Browsers auf **Benutzer**.
     
 3. Klicken Sie in der Liste der Benutzer auf **Candidate**.
     

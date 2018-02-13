@@ -9,17 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- LIL_Placement
-- O365ITProTrain
-- Ent_Office_Other
+ms.custom: LIL_Placement, O365ITProTrain, Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Zusammenfassung: Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Aufgaben in Office 365 Admin Center über die Befehlszeile ausführen."
-ms.openlocfilehash: 2f51c68acf55239c7d47f9b617a8a72965ead79d
-ms.sourcegitcommit: 7ed9108846227ca883cb5113543a165704d9bbc8
+ms.openlocfilehash: 62d080e81668b6eabc7e308fae0e236002cd5949
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 

@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
-ms.collection: Ent_O365
+ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: None
 ms.custom: Strat_O365_Enterprise
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Zusammenfassung: Erstellen Sie öffentliche, private, vertrauliche und streng vertraulich SharePoint Online Teamwebsites in Ihrer politischen Kampagne Test-/-Umgebung."
-ms.openlocfilehash: cc410dc98e37ca6fc0e96f00f413e57ba1958d50
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: d1515d2534713de41c16640d0008b1f8146ab300
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
 
@@ -50,17 +50,17 @@ In dieser Phase erstellen Sie die Beschriftungen für unterschiedlichen Sicherhe
     
 9. Wiederholen Sie die Schritte 5 bis 8 für diese zusätzlichen Bezeichnungen:
     
-  - Privat
+  - Private
     
   - Vertraulich
     
   - Streng vertraulich
     
-10. Klicken Sie im Bereich **Start > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
+10. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
     
 11. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
     
-12. Klicken Sie im Bereich **Bezeichnungen wählen** auf **Hinzufügen**, und wählen Sie alle vier Bezeichnungen aus.
+12. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
     
 13. Klicken Sie auf **Fertig**.
     
@@ -84,7 +84,7 @@ Führen Sie folgende Schritte aus, um eine öffentliche SharePoint Online-Basis-
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
@@ -114,7 +114,7 @@ Führen Sie die folgenden Schritte durch, um eine private SharePoint Online-Basi
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
@@ -144,7 +144,7 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
@@ -230,11 +230,11 @@ Konfigurieren Sie anschließend eine Data Loss Prevention (DLP) Richtlinie, die 
     
 11. Klicken Sie im Bereich **Typen des zu schützenden Inhalts auswählen** auf **Speichern**.
     
-12. Klicken Sie im Bereich **Typen von vertraulichen Informationen anpassen, die geschützt werden sollen** auf **Weiter**.
+12. Klicken Sie im Bereich **Customize the types of sensitive info you want to protect** (Anpassen der Typen an vertraulichen Informationen, die Sie schützen möchten) auf **Weiter**.
     
-13. Klicken Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** auf **Richtlinientipptext anpassen**.
+13. Klicken Sie im Bereich **What do you want to do if we detect sensitive info?** (Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?) auf **Customize the tip and email** (Den Tipp und die E-Mail anpassen).
     
-14. Klicken Sie im Fenster **Richtlinientipps und E-Mail-Benachrichtigungen anpassen** auf **Richtlinientipptext anpassen**.
+14. Klicken Sie im Bereich **Customize policy tips and email notifications** (Anpassen der Richtlinientipps und der E-Mail-Benachrichtigungen) auf **Customize the policy tip text** (Den Tipptext der Richtlinie als nächstes anpassen).
     
 15. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
     
@@ -256,7 +256,7 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
-3. Klicken Sie auf der neuen **SharePoint**-Registerkarte in Ihrem Browser auf **+ Website erstellen**.
+3. Klicken Sie in der neuen Registerkarte **SharePoint** in Ihrem Browser auf **+ Website erstellen**.
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
@@ -340,11 +340,11 @@ Im nächsten Schritt Konfigurieren einer DLP-Richtlinie, Blöcke der Benutzer, w
     
 12. Klicken Sie im Bereich **Typen des zu schützenden Inhalts auswählen** auf **Speichern**.
     
-13. Klicken Sie im Bereich **Typen von vertraulichen Informationen anpassen, die geschützt werden sollen** auf **Weiter**.
+13. Klicken Sie im Bereich **Customize the types of sensitive info you want to protect** (Anpassen der Typen an vertraulichen Informationen, die Sie schützen möchten) auf **Weiter**.
     
-14. Klicken Sie im Bereich **Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?** auf **Richtlinientipptext anpassen**.
+14. Klicken Sie im Bereich **What do you want to do if we detect sensitive info?** (Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?) auf **Customize the tip and email** (Den Tipp und die E-Mail anpassen).
     
-15. Klicken Sie im Fenster **Richtlinientipps und E-Mail-Benachrichtigungen anpassen** auf **Richtlinientipptext anpassen**.
+15. Klicken Sie im Bereich **Customize policy tips and email notifications** (Anpassen der Richtlinientipps und der E-Mail-Benachrichtigungen) auf **Customize the policy tip text** (Den Tipptext der Richtlinie als nächstes anpassen).
     
 16. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
     
@@ -386,7 +386,7 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen ber
     
 12. Klicken Sie im Abschnitt **Schutz** auf **Azure (Cloudschlüssel)**.
     
-13. Klicken Sie auf dem Blatt **Schutz** unter **Schutzeinstellungen** auf **+ Berechtigungen hinzufügen**.
+13. Klicken Sie im Blatt **Schützen** unter **Schutzeinstellungen** auf **+ Berechtigungen hinzufügen**.
     
 14. Klicken Sie auf dem Blatt **Berechtigungen hinzufügen** unter **Benutzer und Gruppen angeben** auf **+ Verzeichnis durchsuchen**.
     
