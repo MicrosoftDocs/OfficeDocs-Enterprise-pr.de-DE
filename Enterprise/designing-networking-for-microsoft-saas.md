@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: "Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft SaaS-Dienste, einschließlich Office 365, Microsoft Intune und Dynamics 365, optimieren."
-ms.openlocfilehash: 970d27e50e06f4d872de67589295c490aaa6e0e7
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Entwerfen von Netzwerken für Microsoft-SaaS
 
@@ -138,9 +138,9 @@ Prüfen Sie für jeden Typ von Client (PC, Smartphone, Tablet), die aktuelle Ver
     
 Optimieren Sie außerdem den Durchsatz der Intranetverbindung (kabelgestützt, kabellos oder VPN).
   
-Weitere Informationen finden Sie unter [NAT-Unterstützung für Office 365]((https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9)).
+Weitere Informationen finden Sie unter [NAT-Unterstützung für Office 365](https://support.office.com/article/NAT-support-with-Office-365-170e96ea-d65d-4e51-acac-1de56abe39b9).
   
-Die neuesten Empfehlungen zur Verwendung von ExpressRoute mit Office 365 finden Sie unter [ExpressRoute für Office 365]((https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)).
+Die neuesten Empfehlungen zur Verwendung von ExpressRoute mit Office 365 finden Sie unter [ExpressRoute für Office 365](https://support.office.com/article/Azure-ExpressRoute-for-Office-365-6d2534a2-c19c-4a99-be5e-33a0cee5d3bd).
   
 Gehen Sie folgendermaßen Sie vor, um die Intranetleistung zu optimieren:
   
@@ -150,7 +150,7 @@ Gehen Sie folgendermaßen Sie vor, um die Intranetleistung zu optimieren:
     
 - Führen Sie Analysen für Zwischengeräte (Alter, Gesundheit usw.) durch.
     
-Weitere Informationen finden Sie unter der [PsPing-Tool]((https://technet.microsoft.com/sysinternals/jj729731.aspx)).
+Weitere Informationen finden Sie unter der [PsPing-Tool](https://technet.microsoft.com/sysinternals/jj729731.aspx).
   
 ## <a name="it-operations-considerations"></a>Überlegungen zu IT-Abläufen
 
@@ -180,19 +180,23 @@ So optimieren Sie Ihr Netzwerk für laufende Synchronisierungen:
     
 Weitere Informationen finden Sie unter:
   
-- [Netzwerk- und Migrationsplanung für Office 365]((https://aka.ms/tune))
+- [Netzwerk- und Migrationsplanung für Office 365](https://aka.ms/tune)
     
-- [Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung]((https://aka.ms/o365perf))
+- [Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung](https://aka.ms/o365perf)
     
-- [ExpressRoute für Office 365]((https://aka.ms/expressrouteoffice365))
+- [ExpressRoute für Office 365](https://aka.ms/expressrouteoffice365)
+
+## <a name="next-step"></a>Nächster Schritt
+
+[Entwerfen von Netzwerken für Microsoft-PaaS](designing-networking-for-microsoft-azure-paas.md)
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 

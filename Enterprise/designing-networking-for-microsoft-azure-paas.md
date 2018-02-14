@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
 description: "Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft Azure PaaS optimieren."
-ms.openlocfilehash: 8ea344b5c18f9224b1a939a05c6e5a4eda2eeec5
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Entwerfen von Netzwerken für Microsoft-PaaS
 
@@ -26,8 +26,6 @@ Für die Optimierung Ihrer Netzwerke für Azure PaaS-Apps ist eine ausreichende 
   
 ## <a name="planning-steps-for-hosting-organization-paas-applications-in-azure"></a>Planen von Schritten zum Hosten der PaaS-Anwendungen der Organisation in Azure
 
-Abschnittstext hier einfügen.
-  
 1. Durchlaufen Sie die **Schritte zum Vorbereiten Ihres Netzwerks für Microsoft Cloud Services** in [Gemeinsame Elemente der Microsoft-Cloudkonnektivität](common-elements-of-microsoft-cloud-connectivity.md).
     
 2. Optimieren Sie die Internetbandbreite mithilfe der Schritte 2 bis 4 der **Schritte zum Vorbereiten Ihres Netzwerks für Microsoft SaaS-Dienste** in [Designing networking for Microsoft SaaS](designing-networking-for-microsoft-saas.md).
@@ -70,7 +68,7 @@ Das Anwendungsgateway unterstützt derzeit Ebene 7 Anwendungsübermittlung für 
     
 - SSL-Verschiebungen
     
-Weitere Informationen finden Sie unter [Anwendungsgateway]((https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)).
+Weitere Informationen finden Sie unter [Anwendungsgateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction).
   
 ## <a name="azure-traffic-manager"></a>Azure Traffic Manager
 
@@ -96,15 +94,19 @@ In Abbildung 3 ist der grundlegende Prozess dargestellt, den Traffic Manager zum
     
 2. Der Benutzer initiiert den Datenverkehr mit der regionalen Web-App in Europa.
     
-Weitere Informationen finden Sie unter [Traffic Manager]((https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)).
-  
-## <a name="see-also"></a>Weitere Artikel
+Weitere Informationen finden Sie unter [Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview).
+
+## <a name="next-step"></a>Nächster Schritt
+
+[Entwerfen von Netzwerken für Microsoft Azure-IaaS](designing-networking-for-microsoft-azure-iaas.md)
+ 
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger]((https://sway.com/FJ2xsyWtkJc2taRD))
+[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
