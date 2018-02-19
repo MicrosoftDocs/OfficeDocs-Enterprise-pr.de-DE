@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: 'Zusammenfassung: Informationen zu Microsoft-Clouddiensten und -Plattformen. Lesen Sie unsere Enterprise-Cloud-Roadmap, erkunden Sie unsere Cloud-Architekturreihe usw.'
-ms.openlocfilehash: 202e7f837275474694a37060803a272c9aa5bdc4
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -47,7 +51,7 @@ In diesen Architekturtools- und -postern finden Sie Informationen zu Microsoft-C
 > [!TIP]
 > Die meisten der Poster auf dieser Seite sind in mehreren Sprachen erhältlich, darunter Chinesisch, Englisch, Französisch, Deutsch, Italienisch, Japanisch, Koreanisch, Portugiesisch, Russisch und Spanisch. Um ein Poster in einer dieser Sprachen herunterzuladen, klicken Sie auf den Link **Weitere Sprachen** für dieses Poster.
   
-Geben Sie uns Feedback, indem Sie eine E-Mail senden an [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
+Geben Sie uns Feedback, indem Sie eien E-Mail senden an [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com). 
   
 <a name="roadmap"> </a>
 ## <a name="microsofts-enterprise-cloud-roadmap"></a>Enterprise-Cloud-Roadmap von Microsoft
