@@ -10,18 +10,17 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - Ent_O365
-- Ent_O365_Visuals
+- Strat_O365_Enterprise
 ms.custom:
-- DecEntMigration
 - Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: "Zusammenfassung: Grundlegendes zu den Beziehungen zwischen Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über Microsoft Cloud-angeboten."
-ms.openlocfilehash: 0c416efe1bfff6a3e6c979af165df8eb951b879c
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft Cloud-angeboten
 
@@ -169,7 +168,7 @@ So fügen Sie ein Azure-Abonnement mit derselben Organisation und demselben Azur
     
 Wenn Sie Azure und Office 365-Abonnements separat erworben und den Office 365 Azure AD-Mandanten aus dem Azure-Abonnement aufrufen möchten, finden Sie in [einem Office 365-Mandanten mit einem Azure-Abonnement zuordnen](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
   
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
   

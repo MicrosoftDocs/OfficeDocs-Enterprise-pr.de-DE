@@ -1,5 +1,5 @@
 ---
-title: Contoso IT-Infrastruktur und muss
+title: IT-Infrastruktur und Anforderungen von Contoso
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,18 +9,16 @@ ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- DecEntMigration
-- Ent_Architecture
+ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
 description: "Zusammenfassung: Hier erfahren Sie die grundlegende Struktur des Contoso lokale IT-Infrastruktur und wie die Geschäftsabläufe durch Cloudlösungen von Microsoft erfüllt werden können muss."
-ms.openlocfilehash: 98ead7ffa3164c3cd57ec50def836b690881ba63
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
+ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="contosos-it-infrastructure-and-needs"></a>Contoso IT-Infrastruktur und muss
+# <a name="contosos-it-infrastructure-and-needs"></a>IT-Infrastruktur und Anforderungen von Contoso
 
  **Zusammenfassung:** Verstehen der grundlegenden Struktur des Contoso lokale IT-Infrastruktur und wie die Geschäftsabläufe durch Cloudlösungen von Microsoft erfüllt werden können muss.
   
@@ -93,7 +91,7 @@ Basierend auf einer Analyse der Microsoft-Cloudangebote hat die IT-Abteilung von
 |**Intune/zur Abstimmung:** Verwalten von iOS und Android-Geräte. <br/> Geschäftliche Anforderung: 3  <br/> ||Hinzufügen von temporären Servern und temporärem Speicher für Anforderungen aus einem Quartalsabschluss.
   <br/> Geschäftliche Anforderung: 6  <br/> |
    
-## <a name="see-also"></a>See Also
+## <a name="see-also"></a>Weitere Artikel
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

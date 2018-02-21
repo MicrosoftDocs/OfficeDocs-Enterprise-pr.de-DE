@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- Ent_Office_Other
-- PowerShell
+ms.custom: Ent_Office_Other, PowerShell
 ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Zusammenfassung: Verwenden Sie das oData-Feature in Microsoft Excel, um detaillierte Berichtsinformationen für Ihre Bereitstellung von Office 365 abzurufen."
-ms.openlocfilehash: a4245029c337450f5f5ac3655e0b60a301ea80ec
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: 4347aad28e1e197c03eb986663ef7e59849493d1
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Verwenden von Excel zum Abrufen von Office 365-Berichterstellungsdaten
 
@@ -26,7 +24,7 @@ ms.lasthandoff: 01/11/2018
   
 Die Berichterstellung ist ein wichtiger Bestandteil der Systemverwaltung. Das Office 365 Admin Center enthält eine Reihe an vordefinierten Berichten, auf die Sie im linken Navigationsbereich im Abschnitt **Berichte** zugreifen können. Es stehen Verwendungsberichte und Sicherheits- und Kompatibilitätsberichte zur Verfügung.
   
-Die Berichte, die Ihnen zur Verfügung stehen, sind davon abhängig, welche Version von Office 365 Sie verwenden und welche Office 365-Dienste Sie aktiviert haben. Weitere Informationen finden Sie unter [Berichte]((https://technet.microsoft.com/de-DE/library/office-365-reports.aspx)).
+Die Berichte, die Ihnen zur Verfügung stehen, sind davon abhängig, welche Version von Office 365 Sie verwenden und welche Office 365-Dienste Sie aktiviert haben. Weitere Informationen finden Sie unter [Berichte](https://technet.microsoft.com/de-DE/library/office-365-reports.aspx).
   
 Die vordefinierten Admin Center-Berichte sind eine exzellente Ressource, mit der sich solche Dinge wie die Postfachnutzung oder die Anzahl an Minuten, die Ihre Benutzer in Onlinekonferenzen verbracht haben, einfach prüfen lassen. Bei der detaillierten Analyse Ihrer Office 365-Domäne haben die Berichte jedoch ihre Beschränkungen.
   
@@ -34,7 +32,7 @@ Eine Problemumgehung in Bezug auf diese Beschränkungen besteht darin, die Windo
   
 Zusätzlich ermöglichen Ihnen benutzerdefinierte Skripts/Anwendungen, auf Berichte zuzugreifen, die im Office 365 Admin Center nicht verfügbar sind. Beispielsweise kann das Admin Center anzeigen, über wie viele "alte" Postfächer Sie verfügen, aber es kann nicht anzeigen, auf welche Postfächer in den letzten 30 Tagen zugegriffen wurde. Ein benutzerdefiniertes PowerShell-Skript kann Ihnen jedoch genau dies anzeigen. In Anbetracht des Schreibens eines kurzen und relativ einfachen Windows PowerShell-Skripts stellt dies zusammen eine Menge an Flexibilität dar.
   
-> [!VISUAL BASIC NOTE] Weitere Informationen über den Office 365-Berichterstellungsdienst finden Sie unter [Office 365-Berichterstattungswebdienst](https://msdn.microsoft.com/en-us/library/office/jj984325%28v=office.15%29.aspx).
+> [!VISUAL BASIC NOTE] Weitere Informationen über den Office 365-Berichterstellungsdienst finden Sie unter [Office 365-Berichterstattungswebdienst](https://msdn.microsoft.com/de-DE/library/office/jj984325%28v=office.15%29.aspx).
   
 Zum Abrufen dieser Daten müssen Sie allerdings einigen Code schreiben. Das ist es wert, wenn Sie eine größere Organisation sind, die die Menge und den Typ der Informationen begrenzen muss, die zurückgegeben werden. Wenn Sie jedoch eine kleinere Organisation sind und die Menge und den Typ der Informationen, die zurückgegeben werden, nicht begrenzen müssen, sollten Sie in Erwägung ziehen, die Office 365-Berichte direkt in Excel zu öffnen.
   
@@ -98,7 +96,7 @@ Sie sollten das Kontrollkästchen **Kennwort in Datei speichern** nicht aktivier
     
      ![Beispiele für Daten, die erfolgreich in ein Excel-Arbeitsblatt importiert wurden.](images/o365_reporting_sample_spreadsheet.png)
   
-Was Sie mit diesen Daten machen, ist Ihnen überlassen. Einige Empfehlungen finden Sie im Artikel [Erstellen eines Excel Services-Dashboards mithilfe eines OData-Datenfeeds](https://technet.microsoft.com/en-us/library/jj873965%28v=office.15%29.aspx). Auch wenn in diesem Artikel der Office 365-Berichterstellungsdienst nicht verwendet wird, bietet er einige praktische Hinweise für das Erledigen von Dingen wie das Hinzufügen von Filtern und Slicern zu Ihrem neuen Dashboard.
+Was Sie mit diesen Daten machen, ist Ihnen überlassen. Einige Empfehlungen finden Sie im Artikel [Erstellen eines Excel Services-Dashboards mithilfe eines OData-Datenfeeds](https://technet.microsoft.com/de-DE/library/jj873965%28v=office.15%29.aspx). Auch wenn in diesem Artikel der Office 365-Berichterstellungsdienst nicht verwendet wird, bietet er einige praktische Hinweise für das Erledigen von Dingen wie das Hinzufügen von Filtern und Slicern zu Ihrem neuen Dashboard.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,16 +12,14 @@ ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
 - PowerShell
-- apr17entnews
 - Ent_Office_Other
-- DecEntMigration
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Zusammenfassung: Anzeigen, Liste oder Ihre Benutzerkonten auf verschiedene Arten mit Office 365 PowerShell anzuzeigen.'
-ms.openlocfilehash: b27f9045d26d4dabd3ada70766491f722d822a91
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: e9ffa439c1840cbbbd8a47c2835d9427330804be
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Anzeigen von Benutzerkonten mit Office 365 PowerShell
 
@@ -79,7 +77,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null}
 
 Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
   
-- Alle Informationen für die Benutzerkonten ( **Get-MsolUser** ) abrufen und senden Sie sie an den nächsten Befehl ( **|** ).
+- Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
     
 - Hier finden Sie alle Benutzerkonten, die einen Verwendungsspeicherort nicht angegeben haben ( **Where-Object {$\_. Usagelocation-Wert angegeben - Eq $Null}** ). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell nur die Gruppe von Konten, die in dem für das usagelocation-Wert angegeben Benutzerkonto Eigenschaft suchen ( ** $ \_. Usagelocation-Wert angegeben** ) ist nicht angegebenen ( **-Eq $Null** ).
     
@@ -132,7 +130,7 @@ Get-MsolUser | Select-Object DisplayName, Department, UsageLocation
 
 Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
   
-- Alle Informationen für die Benutzerkonten ( **Get-MsolUser** ) abrufen und senden Sie sie an den nächsten Befehl ( **|** ).
+- Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
     
 - Zeigt nur den Benutzer Konto Name, Abteilung und Verwendung Speicherort ( **Select-Object DisplayName, Abteilung, usagelocation-Wert angegeben** ).
     
@@ -165,7 +163,7 @@ Get-MsolUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object Display
 
 Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
   
-- Alle Informationen für die Benutzerkonten ( **Get-MsolUser** ) abrufen und senden Sie sie an den nächsten Befehl ( **|** ).
+- Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
     
 - Hier finden Sie alle Benutzerkonten, die einen Verwendungsspeicherort nicht angegeben haben ( **Where-Object {$\_. Usagelocation-Wert angegeben - Eq $Null}** ) und die resultierende Daten mit dem nächsten Befehl senden ( **|** ). In die geschweiften Klammern sein, der Befehl fordert Office 365 PowerShell nur die Gruppe von Konten, die in dem für das usagelocation-Wert angegeben Benutzerkonto Eigenschaft suchen ( ** $ \_. Usagelocation-Wert angegeben** ) ist nicht angegebenen ( **-Eq $Null** ).
     
@@ -206,9 +204,9 @@ Um weitere werden selektive zu der Liste der Konten für die Anzeige das **Where
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null}
 ```
 
-Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
+Dieser Befehl gibt Office 365 Powershell die folgenden Anweisungen:
   
-- Alle Informationen für die Benutzerkonten ( **Get-AzureADUser** ) abrufen und senden Sie sie an den nächsten Befehl ( **|** ).
+- Alle Informationen der Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden (**|**).
     
 - Hier finden Sie alle Benutzerkonten, die einen Verwendungsspeicherort nicht angegeben haben ( **Where-Object {$\_. Usagelocation-Wert angegeben - Eq $Null}** ). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell nur die Gruppe von Konten, die in dem für das usagelocation-Wert angegeben Benutzerkonto Eigenschaft suchen ( ** $ \_. Usagelocation-Wert angegeben** ) ist nicht angegebenen ( **-Eq $Null** ).
     
@@ -235,9 +233,9 @@ Das Cmdlet **Get-AzureADUser** Standardmäßig werden die ObjectID, DisplayName 
 Get-AzureADUser | Select-Object DisplayName,Department,UsageLocation
 ```
 
-Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
+Dieser Befehl gibt Office 365 Powershell die folgenden Anweisungen:
   
-- Alle Informationen für die Benutzerkonten ( **Get-AzureADUser** ) abrufen und senden Sie sie an den nächsten Befehl ( **|** ).
+- Alle Informationen der Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden (**|**).
     
 - Zeigt nur den Benutzer Konto Name, Abteilung und Verwendung Speicherort ( **Select-Object DisplayName, Abteilung, usagelocation-Wert angegeben** ).
     
@@ -247,9 +245,9 @@ Um weitere werden zu der Liste der Konten, die für die Anzeige von selektive au
 Get-AzureADUser | Where-Object {$_.UsageLocation -eq $Null} | Select-Object DisplayName, Department, UsageLocation
 ```
 
-Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
+Dieser Befehl gibt Office 365 Powershell die folgenden Anweisungen:
   
-- Alle Informationen für die Benutzerkonten ( **Get-AzureADUser** ) abrufen und senden Sie sie an den nächsten Befehl ( **|** ).
+- Alle Informationen der Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden (**|**).
     
 - Hier finden Sie alle Benutzerkonten, die einen Verwendungsspeicherort nicht angegeben haben ( **Where-Object {$\_. Usagelocation-Wert angegeben - Eq $Null}** ) und die resultierende Daten mit dem nächsten Befehl senden ( **|** ). In die geschweiften Klammern sein, der Befehl fordert Office 365 PowerShell nur die Gruppe von Konten, die in dem für das usagelocation-Wert angegeben Benutzerkonto Eigenschaft suchen ( ** $ \_. Usagelocation-Wert angegeben** ) ist nicht angegebenen ( **-Eq $Null** ).
     
@@ -257,11 +255,9 @@ Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
     
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 
-||
-|:-----|
-|![Das kurze Symbol für LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **neu zu Office 365?**         Entdecken Sie kostenlose video Kurse für [Office 365-Administratoren und IT-Experten](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), bereitgestellt von LinkedIn Learning. |
-   
-## <a name="see-also"></a>See also
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
+  
+## <a name="see-also"></a>Siehe auch
 
 #### 
 

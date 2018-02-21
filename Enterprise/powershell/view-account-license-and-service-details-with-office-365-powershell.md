@@ -13,14 +13,13 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - LIL_Placement
-- DecEntMigration
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: "Erläutert, wie Office 365 PowerShell verwenden, um die Office 365-Dienste zu ermitteln, die Benutzern zugewiesen wurden."
-ms.openlocfilehash: 59a6444e0f6618fd837e8eae567661499e795c69
-ms.sourcegitcommit: d31cf57295e8f3d798ab971d405baf3bd3eb7a45
+ms.openlocfilehash: 69784b43e6e2b24f776d07a937877e5ae0c74888
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Anzeigen von Lizenz- und Dienstdetails für Konten mit Office 365 PowerShell
 
@@ -130,7 +129,7 @@ Und klicken Sie dann durch die Erweiterung der **"Servicestatus"** -Eigenschaft 
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
@@ -168,7 +167,7 @@ Und betrachten wir auch einen Blick auf die Tabelle, die erklärt, was diese sel
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
@@ -196,7 +195,7 @@ Es wurden möchte, dass eine Person, die stellen würde. Um diese Frage zu beant
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
-| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office Online  <br/> |
@@ -292,7 +291,7 @@ Get-MsolUser | Select-Object DisplayName, @{Name="Sway";Expression={$_.Licenses[
 Und Ja, das einen Befehl sehr seltsam professionell gestalteten ist. Aber erstellt eine CSV-Datei, die alle Benutzer und alle ihre Service Status angezeigt.
 
   
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 <a name="SeeAlso"> </a>
 
 In den folgenden zusätzlichen Themen finden Sie weitere Informationen zum Verwalten von Benutzern mit Office 365 PowerShell:
@@ -324,8 +323,4 @@ Weitere Informationen zu den in diesen Verfahren Thema verwendeten Cmdlets finde
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 
 
-||
-|:-----|
-|![Das kurze Symbol für LinkedIn Learning](images/d547e1cb-7c66-422b-85be-7e7db2a9cf97.png) **neu zu Office 365?**         Entdecken Sie kostenlose video Kurse für [Office 365-Administratoren und IT-Experten](https://support.office.com/article/Office-365-admin-and-IT-pro-courses-68cc9b95-0bdc-491e-a81f-ee70b3ec63c5), bereitgestellt von LinkedIn Learning. |
-   
-
+[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
