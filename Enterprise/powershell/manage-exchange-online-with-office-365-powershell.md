@@ -9,20 +9,22 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Other, PowerShell
+ms.custom:
+- Ent_Office_Other
+- PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: "Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte."
-ms.openlocfilehash: 16237660b727df04656b3525c8e26f7a132ec4e3
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Verwalten von Exchange Online mit Office 365 PowerShell
 
  **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte.
   
-Eine der Hauptaufgaben jedes Microsoft Exchange Online-Administrators ist die Verwaltung von Postfächern und Abrufen von Berichten für diese. Obwohl Sie einige dieser Aufgaben in Office 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShell wesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie unter den folgenden Themen:
+Eine der Hauptaufgaben jedes Microsoft Exchange Online-Administrators ist die Verwaltung von Postfächern und Abrufen von Berichten für diese. Obwohl Sie einige dieser Aufgaben in Office 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShellwesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie unter den folgenden Themen:
   
 - [Anzeigen von Exchange Online-Postfachinformationen mit Office 365 PowerShell](https://technet.microsoft.com/de-DE/library/mt771881%28v=exchg.160%29.aspx)
     

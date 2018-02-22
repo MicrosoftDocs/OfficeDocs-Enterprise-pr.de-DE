@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Office_Other, PowerShell
+ms.custom:
+- Ent_Office_Other
+- PowerShell
 ms.assetid: 510d5528-ac00-4f54-9d38-75fa043d0a06
 description: "Zusammenfassung: Verwenden Sie das oData-Feature in Microsoft Excel, um detaillierte Berichtsinformationen für Ihre Bereitstellung von Office 365 abzurufen."
-ms.openlocfilehash: 4347aad28e1e197c03eb986663ef7e59849493d1
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 0749160e1d9bf5e8e0b6ee73aa1baa5ae826ba49
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-excel-to-retrieve-office-365-reporting-data"></a>Verwenden von Excel zum Abrufen von Office 365-Berichterstellungsdaten
 

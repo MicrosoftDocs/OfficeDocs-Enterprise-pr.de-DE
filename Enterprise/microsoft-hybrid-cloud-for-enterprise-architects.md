@@ -8,21 +8,25 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_Architecture
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom:
+- Strat_O365_Enterprise
+- Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: "Zusammenfassung: Was IT-Architekten über Hybridszenarien wissen müssen, in denen Microsoft-Clouddienste und -plattformen verwendet werden."
-ms.openlocfilehash: e31981c87d7b1ca350eff0acc3a63092092c8567
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: d6bb757ff18bd8251e660fbd76afa71893c9bc77
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud für Enterprise-Architekten
 
  **Zusammenfassung:** Was IT-Architekten über Hybridszenarien wissen müssen, in denen Microsoft-Clouddienste und -plattformen verwendet werden.
   
-Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten über Hybridarchitekturen und Konfigurationen mit Clouddiensten und -plattformen von Microsoft wissen müssen. Sie können diesen Artikel auch als 7-seitiges Poster anzeigen und im Tabloid-Format (auch bekannt als Ledger, 11 x 17 oder A3) drucken.
+Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten über Hybridarchitekturen und Konfigurationen mit Microsoft-Clouddiensten und -Plattformen wissen müssen. Sie können diesen Artikel auch als 7-seitiges Poster anzeigen und im Tabloid-Format (auch bekannt als Ledger, 11 x 17 oder A3) drucken.
   
 [![Miniaturbild für das Microsoft-Cloud-Hybridmodell](images/Hybrid_Poster/Hybrid_Cloud_Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )

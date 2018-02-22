@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other, O365ITProTrain
+ms.custom:
+- PowerShell
+- Ent_Office_Other
+- O365ITProTrain
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: "Informationen zur Verwendung von Office 365 PowerShell zum Löschen und Wiederherstellen von Office 365-Benutzerkonten"
-ms.openlocfilehash: 1f1212de342894f6ca9f478a0830c45458d27511
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 09f3595ed7cd5434efb2897a43ba1bbca5286c25
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="delete-and-restore-user-accounts-with-office-365-powershell"></a>Löschen und Wiederherstellen von Benutzerkonten mit Office 365 PowerShell
 
@@ -70,7 +73,7 @@ Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ## <a name="use-the-azure-active-directory-v2-powershell-module-to-remove-a-user-account"></a>Entfernen eines Benutzerkontos mit dem Azure Active Directory V2 PowerShell-Modul
 <a name="ShortVersion"> </a>
 
-Um das Cmdlet **Remove-AzureADUser** aus dem Azure Active Directory V2 PowerShell-Modul zu verwenden, müssen Sie zunächst eine Verbindung zu Ihrem Abonnement herstellen. Die Anweisungen finden Sie unter [Verbinden mit dem Azure Active Directory V2 PowerShell-Modul](https://go.microsoft.com/fwlink/?linkid=842218).
+Um das Cmdlet **Remove-AzureADUser** aus dem Azure Active Directory V2 PowerShell-Modul zu verwenden, müssen Sie zunächst eine Verbindung zu Ihrem Abonnement herstellen. Die Anweisungen finden Sie unter[Verbinden mit dem Azure Active Directory V2 PowerShell-Modul](https://go.microsoft.com/fwlink/?linkid=842218).
   
 Nachdem Sie eine Verbindung hergestellt haben, verwenden Sie die folgende Syntax, um ein einzelnes Benutzerkonto zu entfernen:
   

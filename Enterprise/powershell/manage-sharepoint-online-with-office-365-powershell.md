@@ -9,20 +9,22 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Benutzern, -Gruppen und -Websitegruppen.'
-ms.openlocfilehash: 4ebe4fb5b4824a0333a4220f81ee37510d164bd2
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: d92ddfa82c0d21b9de16439ef1d0108eed6ab63f
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Verwalten von SharePoint Online mit Office 365 PowerShell
 
  **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Benutzern, -Gruppen und -Websitegruppen.
   
-Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung von Websites, Websitegruppen und Benutzern. Obwohl Sie einige dieser Aufgaben in Office 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShell wesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie unter den folgenden Themen:
+Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung von Websites, Websitegruppen und Benutzern. Obwohl Sie einige dieser Aufgaben in Office 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShellwesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie unter den folgenden Themen:
   
 - [Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern mit Office 365 PowerShell](http://technet.microsoft.com/library/c55d4ccf-ab36-481a-a285-c40234e11abd.aspx)
     

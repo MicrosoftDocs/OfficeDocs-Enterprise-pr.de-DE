@@ -9,14 +9,16 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, Ent_Office_Other
+ms.custom:
+- PowerShell
+- Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 'Zusammenfassung: Erfahren Sie, wie Sie Benutzerkonten und Lizenzen mit Office 365 PowerShell verwalten.'
-ms.openlocfilehash: 6a8403c03733a5b604a8da1503ed98537bc15edb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 27bf709fc0daca5c56d9a1c57d3723a09ff49fdc
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-user-accounts-and-licenses-with-office-365-powershell"></a>Verwalten von Benutzerkonten und Lizenzen mit Office 365 PowerShell
 

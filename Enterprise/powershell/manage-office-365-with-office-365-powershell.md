@@ -9,20 +9,23 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: PowerShell, O365ITProTrain, Ent_Office_Other
+ms.custom:
+- PowerShell
+- O365ITProTrain
+- Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Zusammenfassung: Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, und Microsoft Exchange Online.'
-ms.openlocfilehash: 2561c9f94d589ee58f35ac701d1c0f5ef6b9e63b
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: fd794066703c89ceb7f0c81c78d6e69b9d608dd0
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Verwalten von Office 365 mit Office 365 PowerShell
 
  **Zusammenfassung:** Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, und Microsoft Exchange Online.
   
-Office 365 PowerShell ist ein leistungsstarkes Verwaltungstool in Ergänzung zum Office 365 Admin Center. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. Erfahren Sie, wie Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online und Microsoft Exchange Online verwendet wird. 
+Office 365 PowerShell ist ein leistungsstarkes Verwaltungstool in Ergänzung zum Office 365-Admin Center. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. Erfahren Sie, wie Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online und Microsoft Exchange Online verwendet wird. 
   
 Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
   
