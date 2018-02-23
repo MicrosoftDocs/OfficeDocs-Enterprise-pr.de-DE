@@ -9,16 +9,14 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom:
-- TLG
-- Ent_TLGs
+ms.custom: TLG, Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: b13931ca21b440188563feef9236cd70e6df084b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: a1a7269b5ac9bff949d9f7d31775bdaa2c4d3d3a
+ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -64,7 +62,7 @@ In diesem Verfahren demonstrieren Sie, dass das Ändern einer Benutzerrolle vor 
     
 7. Wählen Sie oben links das App-Startsymbol und dann **Admin** aus.
     
-8. Warten Sie 30 Minuten. Beachten Sie, dass es im Posteingang keine E-Mail-Nachricht gibt, die Sie über die Änderung der Rolle von Benutzers 4 als globaler Administrator informiert.
+8. Warten Sie 30 Minuten. Beachten Sie, dass es im Posteingang keine E-Mail-Nachricht gibt, die Sie über die Änderung der Rolle von Benutzer 4 als globaler Administrator informiert.
     
 ## <a name="phase-3-enable-cloud-app-security-and-create-a-policy"></a>Phase 3: Aktivieren von Cloud App Security und Erstellen einer Richtlinie
 
@@ -152,7 +150,7 @@ In diesem Verfahren demonstrieren Sie, wie Cloud App Security Warnungen erstellt
     
     Im Posteingang sollten zwei neue E-Mail-Nachrichten mit dem Titel **Microsoft Azure AD-Benachrichtigungsdienst** angezeigt werden. Eine Nachricht besagt, dass das Konto von Benutzer 5 der Rolle **Kennwortadministrator** hinzugefügt wurde. Die andere Nachricht gibt an, dass das Konto von Benutzer 5 der Rolle **Benutzeradministrator** hinzugefügt wurde (entspricht der Rolle „Benutzerverwaltungsadministrator" im Office 365 Admin Center).
     
-Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und weiter mit Office 365 Cloud App Security zu experimentieren. Unter [Erste Schritte mit Advanced Security Management](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) finden Sie Links zu zusätzlichen Konfigurationsartikeln.
+Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und weiter mit Office 365 Cloud App Security zu experimentieren. Unter [Erste Schritte mit Office 365 Cloud App Security](https://support.office.com/article/Get-ready-for-Office-365-Cloud-App-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a) finden Sie Links zu zusätzlichen Konfigurationsartikeln.
   
 ## <a name="see-also"></a>Weitere Artikel
 
