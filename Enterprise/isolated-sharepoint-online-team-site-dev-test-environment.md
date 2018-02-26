@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG
+- Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Zusammenfassung: Konfigurieren einer SharePoint Online-Teamwebsite, die vom Rest der Organisation in Ihrer Office 365-Entwicklungs-/Testumgebung isoliert ist.'
-ms.openlocfilehash: 75a469b50603d5eb398d1e15d37c6745bc0a48b8
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: c6115e48f1b2453aaf173b384a30c1cc34ce7b5a
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Isolierte SharePoint Online-Teamwebsite in Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -220,7 +222,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 5. Geben Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser **ProjectX** in das Suchfeld ein, aktivieren Sie die Suche, und klicken Sie dann auf die Teamwebsite **ProjectX**. Für die ProjectX-Teamwebsite sollte nun eine neue Registerkarte im Browser angezeigt werden.
     
-6. Klicken Sie auf das Symbol „Einstellungen“. Beachten Sie, dass keine Option für **Websiteberechtigungen** vorhanden ist. Dies ist richtig, da nur die Mitglieder der Gruppe „ProjectX-Admins“ Berechtigungen für die Website ändern können.
+6. Klicken Sie auf das Symbol „Einstellungen". Beachten Sie, dass keine Option für **Websiteberechtigungen** vorhanden ist. Dies ist richtig, da nur die Mitglieder der Gruppe „ProjectX-Admins" Berechtigungen für die Website ändern können.
     
 7. Öffnen Sie Editor oder einen anderen Text-Editor Ihrer Wahl.
     
@@ -232,7 +234,7 @@ Nachfolgend wird der Zugriff unter Verwendung des Lead Designer-Benutzerkontos v
     
 11. Klicken Sie auf der neuen Registerkarte **ProjectX-Dokumente** im Browser auf **Neu > Word-Dokument**.
     
-12. Geben Sie auf der Seite **Word Online** etwas Text ein, warten Sie, bis der Status **Gespeichert** lautet, klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser, und aktualisieren Sie dann die Seite. Im Ordner **Dokumente** sollte nun ein neues Dokument **Document.docx** angezeigt werden.
+12. Geben Sie auf der Seite **Word Online** etwas Text ein, warten Sie, bis der Status **Gespeichert** lautet, klicken Sie auf die Schaltfläche „Zurück" in Ihrem Browser, und aktualisieren Sie dann die Seite. Im Ordner **Dokumente** sollte nun ein neues Dokument **Document.docx** angezeigt werden.
     
 13. Klicken Sie auf die Auslassungspunkte für das Dokument **Document.docx**, und klicken Sie dann auf **Link abrufen**.
     
@@ -270,7 +272,7 @@ Nachfolgend wird der Zugriff mit einem Benutzerkonto ohne Berechtigungen veransc
     
 5. Kopieren Sie aus Editor oder aus Ihrem Text-Editor die URL für den ProjectX-Dokumenteordner in die Adressleiste Ihres Browsers, und drücken Sie die **EINGABETASTE**. Die Seite **Zugriff verweigert** sollte angezeigt werden.
     
-6. Kopieren Sie aus Editor oder aus Ihrem Text-Editor die URL für die Datei „Documents.docx“ in die Adressleiste Ihres Browsers, und drücken Sie die **EINGABETASTE**. Die Seite **Zugriff verweigert** sollte angezeigt werden.
+6. Kopieren Sie aus Editor oder aus Ihrem Text-Editor die URL für die Datei „Documents.docx" in die Adressleiste Ihres Browsers, und drücken Sie die **EINGABETASTE**. Die Seite **Zugriff verweigert** sollte angezeigt werden.
     
 7. Schließen Sie die Registerkarte **SharePoint** in Ihrem Browser, klicken Sie auf die Registerkarte **Microsoft Office Home**, klicken Sie auf den Namen **Benutzer 3**, und klicken Sie dann auf **Abmelden**.
     

@@ -15,11 +15,11 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Informationen zur Verwendung von Office 365 PowerShell zum Erstellen von Benutzerkonten in Office 365.
-ms.openlocfilehash: 97830f8158f84e6978cf3f2d168aa83d9fc551e6
-ms.sourcegitcommit: 9f1fe023f7e2924477d6e9003fdc805e3cb6e2be
+ms.openlocfilehash: e5fed572d0b835a42071e77b4aeaf8714f2178bd
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-user-accounts-with-office-365-powershell"></a>Erstellen von Benutzerkonten mit Office 365 PowerShell
 
@@ -121,7 +121,7 @@ Weitere Informationen zu den in diesen Verfahren Thema verwendeten Cmdlets finde
   
 - [Export-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113299)
     
-- [Import-Csv]((https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv))
+- [Import-Csv](https://msdn.microsoft.com/powershell/reference/5.1/microsoft.powershell.utility/import-csv)
     
 - [New-MsolUser](https://go.microsoft.com/fwlink/p/?LinkId=691547)
     
