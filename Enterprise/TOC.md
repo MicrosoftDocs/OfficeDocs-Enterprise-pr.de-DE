@@ -65,6 +65,7 @@
 ### [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
 ### [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
 ### [Automatisieren von Dateisammlung für eDiscovery](automate-file-collection-for-ediscovery.md)
+## [Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
 ## [Sicherheitslösungen](security-solutions.md)
 ### [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
 #### [Übersicht: Office 365 Information Protection für GDPR](office-365-info-protection-for-gdpr-overview.md)
