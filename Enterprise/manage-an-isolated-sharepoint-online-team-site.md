@@ -181,7 +181,7 @@ Gehen Sie zum Erstellen eines Dokumentunterordners mit benutzerdefinierten Berec
     
 17. Schließen Sie die Registerkarte **Benutzer und Gruppen** im Browser.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
   

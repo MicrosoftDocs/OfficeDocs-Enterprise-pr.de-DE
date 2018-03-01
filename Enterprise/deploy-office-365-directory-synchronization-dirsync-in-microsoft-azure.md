@@ -197,7 +197,7 @@ Azure AD Connect fügt Ihrem Office 365-Abonnement Konten vom lokalen Windows Se
     
 7. Kehren Sie zu Schritt 3 zurück, um weitere Benutzer zu bearbeiten.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 <a name="DeploymentRoadmap"> </a>
 

@@ -9,14 +9,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: O365ITProTrain, Ent_Office_Other, PowerShell
+ms.custom:
+- O365ITProTrain
+- Ent_Office_Other
+- PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: "Erläutert das Verwenden von Office 365 PowerShell zum Anzeigen von lizenzierten und nicht lizenzierten Benutzerkonten."
-ms.openlocfilehash: e691ba7db96b34166f03ccd90d87fee0d2ee09f8
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: b26c98c1c294e2f1369d4368d0b1415702580a83
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Anzeigen lizenzierter und nicht lizenzierter Benutzer mit Office 365 PowerShell
 
@@ -70,7 +73,7 @@ Wie Sie vielleicht wissen, gibt das **Get-MsolUser** -Cmdlet Informationen über
 Get-MsolUser
 ```
 
-„Get-MsolUser“ gibt wiederum Daten wie die folgenden zurück:
+"Get-MsolUser" gibt wiederum Daten wie die folgenden zurück:
   
 ```
 UserPrincipalName           DisplayName                     isLicensed
@@ -101,7 +104,7 @@ UserPrincipalName           DisplayName                     isLicensed
 BelindaN@litwareinc.com     Belinda Newman                  False
 ```
 
-Wie Sie sehen können, haben wir einen nicht lizenzierten Benutzer. Und was würden wir tun, wenn wir nur eine Liste der  *lizenzierten* Benutzer haben wollten? Das ist etwas komplizierter, aber nur ein wenig:
+Wie Sie sehen können, haben wir einen nicht lizenzierten Benutzer. Und was würden wir tun, wenn wir nur eine Liste der  *lizenzierten*  Benutzer haben wollten? Das ist etwas komplizierter, aber nur ein wenig:
   
 ```
 Get-MsolUser | Where-Object {$_.isLicensed -eq $true}

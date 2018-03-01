@@ -82,7 +82,7 @@ Sie müssen die folgenden Elemente berücksichtigen, wenn Sie Hybridcloudszenari
     
     Verwaltung für Hybridcloudszenarien umfasst die Möglichkeit, Einstellungen, Daten, Konten, Richtlinien und Berechtigungen zu verwalten sowie den gegenwärtigen Status der Elemente aus dem Szenario und dessen Leistung zu überwachen. Sie können auch das gleiche Toolset, etwa Systems Management Server, für die Verwaltung von virtuellen Computern in Azure IaaS verwenden.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   

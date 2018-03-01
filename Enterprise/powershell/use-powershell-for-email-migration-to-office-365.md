@@ -47,9 +47,9 @@ Verwenden Sie Windows PowerShell, um E-Mails zu Office 365 zu migrieren.
 [Verwenden der Windows PowerShell zum Erstellen von Berichten in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
 #### 
 
-[Vorteile durch die Verwendung der Windows PowerShell zum Verwalten von Office 365]((http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx))
+[Vorteile durch die Verwendung der Windows PowerShell zum Verwalten von Office 365](http://technet.microsoft.com/library/15144a50-453e-4cd5-befd-bc6736697967.aspx)
   
-[Technische Referenz zur Windows PowerShell in Office 365]((http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx))
+[Technische Referenz zur Windows PowerShell in Office 365](http://technet.microsoft.com/library/10d5c66a-7579-4319-aaa5-7a5e21d49cea.aspx)
   
-[Office 365-Lizenzierung und Windows PowerShell]((http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx))
+[Office 365-Lizenzierung und Windows PowerShell](http://technet.microsoft.com/library/6ca0e430-f7ba-4184-becf-14c6c5c8dde5.aspx)
 

@@ -61,7 +61,7 @@ Lesen Sie die folgenden Abschnitte:
 > [!NOTE]
 > Diese Artikel beziehen sich auf die **Juni 2017-Version** des Posters „Microsoft Hybrid Cloud für Enterprise-Architekten".
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 

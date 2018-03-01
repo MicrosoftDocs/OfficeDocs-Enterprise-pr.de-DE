@@ -56,7 +56,7 @@ Lesen Sie die folgenden Abschnitte:
 > [!NOTE]
 > Die folgenden Artikel geben die Version vom **September 2017** des Posters „Microsoft-Cloudspeicher für Enterprise-Architekten" wieder.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 

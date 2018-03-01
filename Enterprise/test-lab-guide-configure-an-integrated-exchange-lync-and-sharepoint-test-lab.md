@@ -53,7 +53,7 @@ Weitere Informationen zum Konfigurieren dieser Testumgebung in Hyper-V finden Si
 
 [Testumgebungsanleitung: Konfigurieren einer integrierten Exchange-, Lync- und SharePoint-Testumgebung ](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen](https://go.microsoft.com/fwlink/p/?LinkId=202817)
 

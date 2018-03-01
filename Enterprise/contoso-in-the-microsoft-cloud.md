@@ -66,7 +66,7 @@ Lesen Sie die folgenden Abschnitte:
 > [!NOTE]
 > In diesen Artikeln wird die Version vom **September 2017** des Posters „Contoso in der Microsoft-Cloud" widergespiegelt.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 

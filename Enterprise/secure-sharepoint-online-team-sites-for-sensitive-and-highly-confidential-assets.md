@@ -56,7 +56,7 @@ Weitere Informationen finden Sie unter [Sichern von SharePoint Online-Websites u
   
  Informationen zum Einrichten dieses Szenarios für eine Demonstration, Machbarkeitsstudie oder zu Entwicklungs-/Testzwecken finden Sie unter[SharePoint Online-Websites in einer Dev/Test-Umgebung](https://docs.microsoft.com/microsoft-365-enterprise/secure-sharepoint-online-sites-dev-test).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Enterprise-Szenarien für die Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   

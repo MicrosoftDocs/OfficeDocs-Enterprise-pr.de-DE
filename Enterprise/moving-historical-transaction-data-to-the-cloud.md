@@ -67,7 +67,7 @@ Die Vorteile für Contoso nach der Implementierung einer Stretch-Datenbank:
     
 - Reduzierung der täglichen laufenden Kosten in signifikantem Umfang
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Enterprise-Szenarien für die Contoso Corporation](enterprise-scenarios-for-the-contoso-corporation.md)
   

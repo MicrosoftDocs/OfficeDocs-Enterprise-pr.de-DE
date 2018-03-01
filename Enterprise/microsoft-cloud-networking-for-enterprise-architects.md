@@ -66,7 +66,7 @@ Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden S
 > [!NOTE]
 > Die folgenden Artikel geben die Version vom **Juni 2017** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten“ wieder.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
 

@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: TLG, Ent_TLGs
+ms.custom:
+- TLG
+- Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Advanced Threat Protection in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 2715e2722ab2826d4a4e05db0f9bd4cd9035fb98
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+ms.openlocfilehash: 6266960287d06ffafdf7ed1f6690396fd4cda9d5
+ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung
 
@@ -77,7 +79,7 @@ In dieser Phase führen Sie vor, dass vor dem Konfigurieren von ATP-Richtlinien 
     
 17. Klicken Sie im Posteingang auf die Nachricht mit dem Betreff **Ihre neuen Schlüssel**.
     
-18. Klicken Sie im Ordner „Junk-E-Mail“ auf die Nachricht mit dem Betreff **Neue Reisewebsite**. Klicken Sie in der Nachricht auf den Link **diese Website**. Sie sollten in etwa folgende Seite sehen: „Fehler! spamlink.contoso.com konnte nicht gefunden werden“. Dies ist das richtige Ergebnis, da es keine Webseite an dieser Position gibt.
+18. Klicken Sie im Ordner „Junk-E-Mail" auf die Nachricht mit dem Betreff **Neue Reisewebsite**. Klicken Sie in der Nachricht auf den Link **diese Website**. Sie sollten in etwa folgende Seite sehen: „Fehler! spamlink.contoso.com konnte nicht gefunden werden". Dies ist das richtige Ergebnis, da es keine Webseite an dieser Position gibt.
     
 Beachten Sie, dass beide dieser potenziell schädlichen E-Mails erfolgreich übermittelt wurden. Die E-Mail **Ihre neuen Schlüssel** könnte nicht erkannte Schadsoftware enthalten, und es wird nicht verhindert, dass der Benutzer auf den potenziell bösartigen Link in der E-Mail **Neue Reisewebsite** klickt.
   
@@ -125,13 +127,13 @@ In dieser Phase führen Sie vor, wie ATP potenziell schädliche E-Mails behandel
     
 4. Klicken Sie auf die E-Mail mit dem Titel **Neue Reisewebsite**, klicken Sie auf auf den Dropdownpfeil, klicken Sie auf **Allen antworten**, und klicken Sie dann auf **Senden**.
     
-5. Klicken Sie in der Instanz von Internet Explorer, die Sie in Phase 3 zum Konfigurieren von ATP-Richtlinien verwendet haben, auf die Admin Center-Registerkarte für Exchange, dann auf die Kachel „Apps“ und dann auf **E-Mail**. Im Posteingang sollten zwei neue E-Mail-Nachrichten angezeigt werden:
+5. Klicken Sie in der Instanz von Internet Explorer, die Sie in Phase 3 zum Konfigurieren von ATP-Richtlinien verwendet haben, auf die Admin Center-Registerkarte für Exchange, dann auf die Kachel „apps" und dann auf **E-Mail**. Im Posteingang sollten zwei neue E-Mail-Nachrichten angezeigt werden:
     
   - Eine mit dem Titel **WG: Ihre neuen Schlüssel**
     
   - Eine mit dem Titel **WG: Neue Reisewebsite**
     
-6. Öffnen Sie die E-Mail-Nachricht mit dem Titel **WG: Neue Reisewebsite**, und klicken Sie auf den Link **diese Website**. Es sollte eine Seite „Diese Website wurde als böswillig klassifiziert“ angezeigt werden. Dies zeigt, dass ATP den Zugriff auf die potenziell bösartige Website verhindert.
+6. Öffnen Sie die E-Mail-Nachricht mit dem Titel **WG: Neue Reisewebsite**, und klicken Sie auf den Link **diese Website**. Es sollte eine Seite „Diese Website wurde als böswillig klassifiziert" angezeigt werden. Dies zeigt, dass ATP den Zugriff auf die potenziell bösartige Website verhindert.
     
 7. Klicken Sie auf der Admin Center-Registerkarte für Exchange von Internet Explorer im linken Navigationsbereich auf **E-Mail-Fluss**.
     
@@ -144,7 +146,7 @@ In dieser Phase führen Sie vor, wie ATP potenziell schädliche E-Mails behandel
 11. Doppelklicken Sie auf die Nachricht mit dem Betreff **WG: Ihre neuen Schlüssel**. Beachten Sie, wie diese Nachricht von ATP verarbeitet und dann in den Posteingang übermittelt wurde. Schließen Sie dieses Fenster.
     
     > [!NOTE]
-    > Der Zweck der Richtlinie für sichere Anlagen war es, Anlagen auf bösartigen Code zu scannen. Die Anlage „getKeys.js“ wurde zugelassen, da nicht festgestellt wurde, dass sie bösartig ist. Dieser Schritt zeigt, dass ATP eine Überprüfung der Anlage durchgeführt hat. 
+    > Der Zweck der Richtlinie für sichere Anlagen war es, Anlagen auf bösartigen Code zu scannen. Die Anlage "getKeys.js" wurde zugelassen, da nicht festgestellt wurde, dass sie bösartig ist. Dieser Schritt zeigt, dass ATP eine Überprüfung der Anlage durchgeführt hat. 
   
 12. Doppelklicken Sie auf die Nachricht mit dem Betreff **WG: Neue Reisewebsite**. Beachten Sie, dass diese Nachricht erfolgreich in den Posteingang übermittelt wurde.
     
@@ -153,7 +155,7 @@ Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

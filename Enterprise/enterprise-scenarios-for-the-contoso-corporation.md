@@ -32,7 +32,7 @@ Nach der Implementierung einer Netzwerk-, Identitäts- und Sicherheitsinfrastruk
     
     Contoso implementierte den Schutz sensibler Daten und streng vertrauliche SharePoint Online-Teamwebsites für die einfachere, aber dennoch sichere Zusammenarbeit von Führungskräften und Forschungszentren.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

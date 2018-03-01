@@ -184,7 +184,7 @@ Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gew�
 
 Die Schritte zum Konfigurieren von Azure Information Protection in dieser Lösung finden Sie unter [Schützen von SharePoint Online-Dateien mit Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   

@@ -406,7 +406,7 @@ Informationen zu den Kosten finden Sie [hier](https://azure.microsoft.com/pricin
 
 Sehen Sie sich die Cloudspeicheroptionen vom Typ „[Von Grund auf neu aufgebaut](build-from-the-ground-up.md)" an.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft-Cloud-Speicher für Enterprise-Architekten](microsoft-cloud-storage-for-enterprise-architects.md)
   
