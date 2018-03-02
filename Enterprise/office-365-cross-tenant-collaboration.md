@@ -2,8 +2,9 @@
 title: "Mandantenübergreifende Zusammenarbeit in Office 365"
 ms.author: deniseb
 author: denisebmsft
+ms.reviewer: chrfox
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -11,11 +12,11 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: 48a24184-2868-4bb2-866c-1907d1bad505
 description: "Erfahren Sie, wie Organisationen auf sichere Weise über Office 365-Mandanten hinweg zusammenarbeiten können."
-ms.openlocfilehash: 24f8c52021dea073022be237474853335e5c81d3
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: b06435be6ad6b12c25dd49e42b5330125f993ffd
+ms.sourcegitcommit: fb14e6dd6ce36a7af32edadeba7e5f7251a72b39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="office-365-cross-tenant-collaboration"></a>Mandantenübergreifende Zusammenarbeit in Office 365
 
@@ -23,11 +24,6 @@ Erfahren Sie, wie Organisationen auf sichere Weise über Office 365-Mandanten h
   
 Organisationen können Office 365 verwenden, um an Projekten zusammenzuarbeiten. Beispielsweise können Personen mithilfe von Skype for Business Onlinebesprechungen abhalten, Dateien freigeben und chatten. Oder sie können Office 365-Gruppen verwenden, um Unterhaltungen, Dateien und Kalenderelemente an einem zentralen Ort zu verwalten.
   
-In manchen Fällen muss eine Unternehmensorganisation aus geschäftlichen Gründen mit einer anderen Organisation zusammenarbeiten, die einen anderen Office 365-Mandanten verwendet. Beispiele sind: ___
+In manchen Fällen muss eine Unternehmensorganisation mit einer anderen Organisation unter Verwendung eines anderen Office 365-Mandanten zusammenarbeiten. Beispiele hierfür umfassen das Freigeben von Kalendern für eine andere Organisation, Freigeben von Websites und Dokumenten für externe Benutzer und die Zusammenarbeit in Yammer.
   
-## <a name="what-is-office-365-cross-tenant-collaboration"></a>Was bedeutet mandantenübergreifende Zusammenarbeit in Office 365?
-<a name="whatisctc"> </a>
-
-Mandantenübergreifende Zusammenarbeit in Office 365 bedeutet, dass Personen, die einen Office 365-Mandanten verwenden, in der Lage sind, auf sichere Weise mit anderen Personen zusammenzuarbeiten, die einen anderen Office 365-Mandanten verwenden. Nehmen wir beispielsweise an, 
-  
-
+Weitere Informationen finden Sie unter [Zusammenarbeit zwischen Office 365-Mandanten](https://support.office.com/de-DE/article/Office-365-inter-tenant-collaboration-eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d).
