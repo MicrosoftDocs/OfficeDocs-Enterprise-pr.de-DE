@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Zusammenfassung: Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Aufgaben in Office 365 Admin Center über die Befehlszeile ausführen."
-ms.openlocfilehash: 9c653b2cbe5cd05ee8b0ae23ce84c2805d82e6f2
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
+ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -57,7 +57,7 @@ Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal,
   
 1.  Installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmeldeassistenten: [Microsoft Online Services - Anmeldeassistenten für IT-Experten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
-2. Installieren Sie die die Microsoft Azure Active Directory-Modul für Windows PowerShell mit der folgenden Schritte aus:
+2. Installieren Sie die Microsoft Azure Active Directory-Modul für Windows PowerShell mit der folgenden Schritte aus:
     
   - Öffnen Sie eine PowerShell-Eingabeaufforderung auf Administratorebene.
   - Führen Sie den Befehl **MSOnline Modul installieren** .
