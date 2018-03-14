@@ -3,7 +3,7 @@ title: "Hybridlösungen"
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Zusammenfassung: Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.'
-ms.openlocfilehash: 0bc47f8f9b10d51d801973c719625247be39fa9b
-ms.sourcegitcommit: 38001ca323a60126fcf31667393c31322044cedc
+ms.openlocfilehash: 37294a80217b5aa99aa4589fe464ca92d2f2ab23
+ms.sourcegitcommit: b1cb876c8a8fca1c2d67b2bc8282f1361066962c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="hybrid-solutions"></a>Hybridlösungen
 
@@ -25,10 +25,12 @@ ms.lasthandoff: 02/11/2018
 Mit Microsoft Azure können Sie nun einige Office Server-Arbeitslasten bereitstellen, die in der Regel lokal auf Azure-Infrastrukturdiensten bereitgestellt wurden.
   
 Für Office 365-Identitätsinfrastruktur in Azure:
+
+- [Verwenden von Azure AD für die SharePoint Server-Authentifizierung](using-azure-ad-for-sharepoint-server-authentication.md)
+
+- [Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
 - [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
-    
-- [Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
     
 - [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
