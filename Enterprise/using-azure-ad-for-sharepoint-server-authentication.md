@@ -18,11 +18,11 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: 
 description: 'Zusammenfassung: Erfahren Sie, wie die Azure Access Control Service umgehen und SAML 1.1 Ihrer SharePoint Server-Benutzer mit Azure Active Directory authentifiziert zu verwenden.'
-ms.openlocfilehash: 1e8ce1aad43e110311c1f5fcceca816871c07e9e
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
+ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Verwenden von Azure AD für SharePoint Server-Authentifizierung
 
@@ -67,7 +67,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie zum Ausführen dieser Auf
 
 ## <a name="step-1-create-a-new-azure-ad-directory-or-use-your-existing-directory"></a>Schritt 1: Erstellen Sie eine neue Azure AD-Verzeichnis oder Ihr vorhandene Verzeichnis verwenden
 
-Erstellen Sie ein neues Verzeichnis, in der Azure-Verwaltungsportal ([https://portal.azure.com](https://portal.azure.com)). Geben Sie den Namen der Organisation, ersten Domänennamen und Land oder Region.
+In der Azure-Verwaltungsportal ([https://portal.azure.com](https://portal.azure.com)), erstellen Sie ein neues Verzeichnis. Geben Sie den Namen der Organisation, ersten Domänennamen und Land oder Region.
 
 ![Erstellen eines Verzeichnisses](images/SAML11/fig2-createdirectory.png) 
 
@@ -89,7 +89,7 @@ Jeder Front-End-Webserver in der SharePoint-Farm ist erforderlich, konfigurieren
 
 ## <a name="step-3-create-a-new-enterprise-application-in-azure-ad"></a>Schritt 3: Erstellen einer neuen enterpriseanwendung in Azure AD
 
-1. Öffnen Sie in der Azure-Verwaltungsportal ([https://portal.azure.com](https://portal.azure.com)) Ihr Azure AD-Verzeichnis. Klicken Sie auf **Enterpriseanwendungen**, und klicken Sie auf **neue Anwendung**. Wählen Sie **nicht-Galerie für die Anwendung**. Geben Sie einen Namen wie beispielsweise *SharePoint SAML-Integration* , und klicken Sie auf **Hinzufügen**.</br>![Hinzufügen einer neuen nicht Gallery-Anwendung](images/SAML11/fig5-addnongalleryapp.png)</br>
+1. In der Azure-Verwaltungsportal ([https://portal.azure.com](https://portal.azure.com)), öffnen Sie Ihre Azure AD-Verzeichnis. Klicken Sie auf **Enterpriseanwendungen**, und klicken Sie auf **neue Anwendung**. Wählen Sie **nicht-Galerie für die Anwendung**. Geben Sie einen Namen wie beispielsweise *SharePoint SAML-Integration* , und klicken Sie auf **Hinzufügen**.</br>![Hinzufügen einer neuen nicht Gallery-Anwendung](images/SAML11/fig5-addnongalleryapp.png)</br>
 2. Klicken Sie auf den einzelnen anmelden Link im Navigationsbereich, um die Anwendung zu konfigurieren. Ändern der Dropdownliste **Single Sign-on-Mode** auf **SAML-basierten anmelden** um die Konfigurationseigenschaften SAML für die Anwendung anzuzeigen. Mit den folgenden Eigenschaften konfigurieren:</br>
     - Bezeichner:`urn:sharepoint:portal.contoso.local`
     - Antwort-URL:`https://portal.contoso.local/_trust/default.aspx`
@@ -172,7 +172,7 @@ Der Benutzer in Azure AD Berechtigung erteilt wurde, aber auch muss die Berechti
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Schritt 6: Hinzufügen einer SAML 1.1 tokenausstellung Richtlinie in Azure AD
 
-Wenn die Azure AD-Anwendung im Portal erstellt wird, wird standardmäßig mit SAML 2.0. SharePoint Server 2016 erfordert das token SAML 1.1-Format. Das folgende Skript entfernt die Standardrichtlinie SAML 2.0 und Hinzufügen einer neuen Richtlinie mit Problem SAML 1.1-Token verwendet. Dieser Code erfordert die zugehörige [Beispiele Interaktion mit Azure Active Directory-Diagramm](https://github.com/kaevans/spsaml11/tree/master/scripts)herunterladen.
+Wenn die Azure AD-Anwendung im Portal erstellt wird, wird standardmäßig mit SAML 2.0. SharePoint Server 2016 erfordert das token SAML 1.1-Format. Das folgende Skript entfernt die Standardrichtlinie SAML 2.0 und Hinzufügen einer neuen Richtlinie mit Problem SAML 1.1-Token verwendet. Dieser Code erfordert die zugehörige [Beispiele Interaktion mit Azure Active Directory-Diagramm](https://github.com/kaevans/spsaml11/tree/master/scripts)herunterladen. 
 
 
 ```
@@ -183,8 +183,9 @@ Remove-PolicyFromServicePrincipal -policyId $saml2policyid -servicePrincipalId $
 $policy = Add-TokenIssuancePolicy -DisplayName SPSAML11 -SigningAlgorithm "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" -TokenResponseSigningPolicy TokenOnly -SamlTokenVersion "1.1"
 Set-PolicyToServicePrincipal -policyId $policy.objectId -servicePrincipalId $objectid
 ```
+> Beachten Sie, dass es wichtig ist, führen Sie die `Import-Module` Befehl wie im folgenden Beispiel dargestellt. Dadurch wird ein abhängigen Modul zu laden, das mit den Befehlen enthält. Möglicherweise müssen Sie eine Eingabeaufforderung mit erhöhten Rechten, damit Sie diese Befehle erfolgreich ausgeführt zu öffnen.
 
-Weitere Informationen zu Token ausgegebenen Richtlinien mit Azure AD finden Sie unter den [Diagramm-API-Referenz für Vorgänge auf Richtlinie](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
+Diese Beispiel PowerShell-Befehle sind Beispiele dafür, wie Sie Abfragen für das Diagramm-API ausführen. Weitere Informationen zu Token ausgegebenen Richtlinien mit Azure AD finden Sie unter den [Diagramm-API-Referenz für Vorgänge auf Richtlinie](https://msdn.microsoft.com/en-us/library/azure/ad/graph/api/policy-operations#create-a-policy).
 
 ## <a name="step-7-verify-the-new-provider"></a>Schritt 7: Überprüfen des neuen Anbieters
 
@@ -210,7 +211,14 @@ New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
 
+## <a name="fixing-people-picker"></a>Beheben von der Personenauswahl
+Benutzer können jetzt melden Sie sich von Identitäten von Azure AD SharePoint 2016, aber es sind noch Möglichkeiten zur Verbesserung der benutzerfreundlichkeit. Suchen nach einem Benutzer werden beispielsweise mehrere Suchergebnisse in der Personenauswahl. Es ist ein Suchergebnis für jede der 3 Anspruchstypen, die in der forderungszuordnung erstellt wurden. Um einen Benutzer mithilfe der Personenauswahl auszuwählen, müssen Sie genau Geben Sie ihren Benutzernamen und wählen Sie den **Namen** dem Anspruch das Ergebnis.
 
+![Ergebnisse der Suche nach Ansprüchen](images/SAML11/fig16-claimssearchresults.png)
+
+Es ist keine Validierung auf den Werten die Suche nach, was zu Rechtschreibfehlern führen kann oder der Forderung Benutzer versehentlich auswählen die falsche Anspruchstyp wie die **SurName** zuweisen. Dadurch kann verhindern, dass Benutzer erfolgreich auf Ressourcen zugreifen.
+
+Zur Erleichterung der in diesem Szenario ist eine Open-Source-Lösung bezeichnet [AzureCP](https://yvand.github.io/AzureCP/) , die einen benutzerdefinierten Anspruchsanbieter für SharePoint 2016 bereitstellt. Es werden im Azure AD-Diagramm verwenden, um zu beheben, was Benutzer eingeben, und führen Sie Überprüfung. Weitere Informationen finden Sie unter [AzureCP](https://yvand.github.io/AzureCP/). 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
