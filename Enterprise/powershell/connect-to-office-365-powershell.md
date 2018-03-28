@@ -14,12 +14,12 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: "Zusammenfassung: Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Aufgaben in Office 365 Admin Center über die Befehlszeile ausführen."
-ms.openlocfilehash: a13fcc401a4d00f49dcc4eec2a5acba36075233f
-ms.sourcegitcommit: 2cfb30dd7c7a6bc9fa97a98f56ab8fe008504f41
+description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Aufgaben in Office 365 Admin Center über die Befehlszeile ausführen.'
+ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
+ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -30,7 +30,7 @@ Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehl
 Beachten Sie, dass diese Verbindung Anweisungen die gleichen, die im Thema [Azure ActiveDirectory (MSOnline sind)](https://go.microsoft.com/fwlink/p/?LinkId=528113).
   
 > [!TIP]
-> **Neue PowerShell?** Finden Sie ein [video Overview of PowerShell](http://technet.microsoft.com/library/https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), bereitgestellt von LinkedIn Learning. 
+> **Neue PowerShell?** Finden Sie ein [video Overview of PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), bereitgestellt von LinkedIn Learning. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
