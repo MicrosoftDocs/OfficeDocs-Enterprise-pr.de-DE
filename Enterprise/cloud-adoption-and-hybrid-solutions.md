@@ -1,11 +1,11 @@
 ---
-title: "Enterprise Cloudlösungen"
-description: "Lösen von geschäftlichen Problemen mit der Microsoft Cloud. Erfahren Sie mehr über die neuesten Hybrid- und Cloudsicherheitslösungen, die Cloudakzeptanz und vieles mehr."
+title: Enterprise Cloudlösungen
+description: Lösen von geschäftlichen Problemen mit der Microsoft Cloud. Erfahren Sie mehr über die neuesten Hybrid- und Cloudsicherheitslösungen, die Cloudakzeptanz und vieles mehr.
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
 layout: LandingPage
-ms.assetid: 
+ms.assetid: ''
 ms.service: o365-solutions
 ms.topic: hub-page
 localization_priority: Normal

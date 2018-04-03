@@ -13,7 +13,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
-description: "Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte."
+description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte.'
 ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT

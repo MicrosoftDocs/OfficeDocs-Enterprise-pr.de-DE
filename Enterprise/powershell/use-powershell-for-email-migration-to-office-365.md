@@ -1,5 +1,5 @@
 ---
-title: "Verwenden von PowerShell für die E-Mail-Migration zu Office 365"
+title: Verwenden von PowerShell für die E-Mail-Migration zu Office 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -9,7 +9,7 @@ ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
 description: 'Zusammenfassung: Informationen dazu, wie Sie E-Mails mithilfe von Windows PowerShell zu Office 365 migrieren.'
 ms.openlocfilehash: 5c982e795a39faed1c3837f86c74413a3413d59e

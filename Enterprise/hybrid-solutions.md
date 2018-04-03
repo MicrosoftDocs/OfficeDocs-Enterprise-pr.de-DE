@@ -1,5 +1,5 @@
 ---
-title: "Hybridlösungen"
+title: Hybridlösungen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
