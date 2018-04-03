@@ -13,7 +13,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: "Zusammenfassung: Dieser Artikel erläutert die Bedeutung der Office 365 PowerShell, beschreibt die Anbindung an Office 365-Mandanten und nennt Hilferessourcen."
+description: 'Zusammenfassung: Dieser Artikel erläutert die Bedeutung der Office 365 PowerShell, beschreibt die Anbindung an Office 365-Mandanten und nennt Hilferessourcen.'
 ms.openlocfilehash: cc9583fcfeb0822cc9fe1b7a39b090c37442169e
 ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
 ms.translationtype: HT
