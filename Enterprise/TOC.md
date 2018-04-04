@@ -73,7 +73,6 @@
 #### [Löschen eines Geo-Speicherorts](delete-a-geo-location.md)
 #### [Benutzererfahrung in einer Umgebung mit mehreren geografisch](multi-geo-user-experience.md)
 ### [Konfigurieren von OneDrive für Unternehmen Multi-Geo](multi-geo-tenant-configuration.md)
-### [Konfigurieren der Suche für OneDrive für Unternehmen Multi-Geo](configure-search-for-multi-geo.md)
 ### [Verschieben einer Bibliothek OneDrive an einem anderen Geo-Speicherort](move-onedrive-between-geo-locations.md)
 ## [Sicherheitslösungen](security-solutions.md)
 ### [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)
