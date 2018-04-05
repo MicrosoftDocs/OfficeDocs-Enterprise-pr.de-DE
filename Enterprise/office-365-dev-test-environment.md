@@ -3,7 +3,7 @@ title: Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365, Strat_O365_Enterprise
 ms.custom: Strat_O365_Enterprise, Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
-description: "Zusammenfassung: Verwenden dieser Test Lab Guide an um eine Testversion Office 365-Abonnement für Test- oder Test-/zu erstellen."
-ms.openlocfilehash: b3c9e83dfab3aaf02ad598021e11965657e877bb
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Zusammenfassung: Verwenden dieser Test Lab Guide an um eine Testversion Office 365-Abonnement für Test- oder Test-/zu erstellen.'
+ms.openlocfilehash: 70a316f89078305b52e27348dce8a133d7f6de7d
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 
@@ -56,17 +56,17 @@ Diese Konfiguration besteht aus virtuellen DC1-, APP1- und CLIENT1-Computern in 
 
 Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Unternehmensnamen und ein neues Microsoft-Konto.
   
-1. Es wird empfohlen, dass Sie einen Variant-Wert des Unternehmens namens "Contoso" für den Namen Ihres Unternehmens, die ein fiktives Unternehmen verwenden, die in Microsoft Beispielinhalte verwendet wird, aber es ist nicht erforderlich. Notieren Sie den Namen Ihres fiktiven Unternehmens hier: ___
+1. Es wird empfohlen, dass Sie einen Variant-Wert des Unternehmens namens "Contoso" für den Namen Ihres Unternehmens, die ein fiktives Unternehmen verwenden, die in Microsoft Beispielinhalte verwendet wird, aber es ist nicht erforderlich. Notieren Sie den Namen Ihres fiktiven Unternehmens hier: ___.
     
-2. Wenn Sie für ein neues Microsoft-Konto anmelden, besuchen Sie [https://outlook.com](https://outlook.com) , und erstellen Sie ein Konto mit einer neuen e-Mail-Konto und die Adresse. Sie verwenden dieses Konto für Office 365 anmelden.
+2. Um für ein neues Microsoft-Konto anmelden, wechseln Sie zur [https://outlook.com](https://outlook.com) und erstellen Sie ein Konto mit einer neuen e-Mail-Konto und die Adresse. Sie verwenden dieses Konto für Office 365 anmelden.
     
-  - Notieren Sie hier den Vor- und Nachnamen des Kontos: _______________________________
+  - Zeichnen Sie den ersten und letzten Namen Ihres neuen Kontos hier: ___.
     
   - Notieren Sie hier die neue E-Mail-Kontoadresse: _____________________________@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrieren für ein Office 365 E5-Testabonnement
 
-1. Öffnen Sie für die einfache Office 365 Test-/Umgebung den Browser Internet auf Ihrem Computer, und wechseln Sie zur [https://aka.ms/e5trial](https://aka.ms/e5trial). 
+1. Für die einfache Office 365 Dev/Test-Umgebung, öffnen Sie auf Ihrem Computer den Internetbrowser, und wechseln Sie zum [https://aka.ms/e5trial](https://aka.ms/e5trial). 
     
     Für die Test-/simulierten Enterprise Office 365-Umgebung:
     
@@ -83,7 +83,7 @@ Stop-Process -Name Explorer -Force
     > [!TIP]
     > Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.
   
-  - Klicken Sie auf der Startseite auf **Internet Explorer** , und wechseln Sie zur [https://aka.ms/e5trial](https://aka.ms/e5trial).
+  - Klicken Sie auf der Startseite, klicken Sie auf **Internet Explorer** , und gehen Sie zu [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. Geben Sie auf der Seite **Willkommen, fangen Sie wissen** :
     
@@ -105,7 +105,7 @@ Stop-Process -Name Explorer -Force
     
     Notieren Sie das verwendete Kennwort, und bewahren Sie es an einem sicheren Ort auf.
     
-    Notieren Sie den fiktiven Firmennamen an, die als **Name der Organisation**, hier verwiesen werden: ___
+    Notieren Sie den fiktiven Firmennamen an, die als **Name der Organisation**, hier verwiesen werden: ___.
     
 5. Klicken Sie auf **Mein Konto erstellen**.
     
@@ -113,7 +113,7 @@ Stop-Process -Name Explorer -Force
     
 7. Geben Sie den Überprüfungscode aus der der empfangenen Textnachricht ein, und klicken Sie dann auf **Weiter**.
     
-8. Notieren Sie hier die URL der Anmeldeseite (auswählen und kopieren): ___________________________________________
+8. Tragen Sie die Anmeldeseite URL hier (aktivieren und Kopie): ___.
     
 9. Notieren Sie hier die Benutzer-ID (auswählen und kopieren): __________________________________.onmicrosoft.com
     
@@ -259,17 +259,17 @@ Notieren Sie die folgenden Werte für die Arbeit mit oder Bereitstellen von zus�
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - Produktions-Website-URL: https://___.sharepoint.com/sites/production
+  - Produktions-Website-URL:https://______________________________________________.sharepoint.com/sites/production
     
-  - URL der Website „Sales“: https://______________________________________________.sharepoint.com/sites/sales
+  - Sales Website-URL:https://______________________________________________.sharepoint.com/sites/sales
     
-  - URL der Website „Support“: https://______________________________________________.sharepoint.com/sites/support
+  - Support-Website-URL:https://______________________________________________.sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Nächste Schritte
 
 Verwenden Sie die folgenden zusätzlichen Artikel in Ihrer Office 365-Entwicklungs-/Testumgebung:
   
-- [DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
+- [Directory-Synchronisierung für Ihre Office 365 Dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md)
     
 - [Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
     
@@ -293,7 +293,7 @@ Erweitern Sie Ihre Office 365-Entwicklungs-/Testumgebung um zusätzliche Microso
     
 - [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

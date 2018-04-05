@@ -3,7 +3,7 @@ title: Verbinden mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/02/2018
+ms.date: 04/04/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Aufgaben in Office 365 Admin Center über die Befehlszeile ausführen.'
-ms.openlocfilehash: 7a76b0968ea5c3f214bf4e6c5b8e2e6f995386d6
-ms.sourcegitcommit: 5b194d3d1c1fffe9c33747dd0118298326970ce7
+ms.openlocfilehash: 1ba14628d765022309353fa8cecbeb56667bcf87
+ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -102,7 +102,7 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
   
 - **Ein allgemeines Problem ist ein ungültiges Kennwort**. Führen Sie Schritt 3 erneut aus. und achten Sie besonders auf den Benutzernamen und das Kennwort, die Sie eingeben.
     
-- **Die Microsoft Azure Active Directory-Modul für Windows PowerShell erfordert, dass Microsoft .NET Framework 3.5. _X_ -Funktion ist auf Ihrem Computer aktiviert**. Es ist wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert (beispielsweise 4 oder 4.5. hat ( _X_), aber rückwärts Kompatibilität mit älteren Versionen von .NET Framework aktiviert oder deaktiviert werden kann. Weitere Informationen finden Sie unter den folgenden Themen:
+- * *Der Microsoft Azure Active Directory-Modul für Windows PowerShell erfordert, dass Microsoft .NET Framework 3.5.* X * Feature wird auf Ihrem Computer ** aktiviert. Ist es wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert ist (beispielsweise 4 oder 4.5.* X *), aber rückwärts Kompatibilität mit älteren Versionen von .NET Framework aktiviert oder deaktiviert werden kann. Weitere Informationen finden Sie unter den folgenden Themen:
     
   - Windows Server 2012 oder Windows Server 2012 R2 finden Sie unter [.NET Framework 3.5 mithilfe der Rollen hinzufügen und den Assistenten Features aktivieren](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
@@ -125,7 +125,11 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
 
 Befehle im Azure Active Directory V2 PowerShell-Modul enthalten "AzureAD" in ihrem Cmdlet-Namen.
 
-Verwenden Sie für Prozeduren, die die neuen Cmdlets im [Azure Active Directory V2 PowerShell-Modul](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)erfordern diese Schritte zum Installieren des Moduls und Verbinden mit Office 365-Abonnements.
+Verwenden Sie für Prozeduren, die die neuen Cmdlets im Azure Active Directory V2 PowerShell-Modul erfordern diese Schritte zum Installieren des Moduls und Verbinden mit Office 365-Abonnements.
+
+>[!Note]
+>Finden Sie Informationen über die Unterstützung für verschiedene Versionen von Microsoft Windows [Azure Active Directory V2 PowerShell-Modul](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
+>
 
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
 
@@ -168,13 +172,9 @@ Nach dem anschließen, können Sie die neuen Cmdlets für die [Azure Active Dire
   
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
-  
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-  
-[Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
-
-[Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-  
-[Verbinden-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+- [Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+- [Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
+- [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
+- [Verbinden-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 
