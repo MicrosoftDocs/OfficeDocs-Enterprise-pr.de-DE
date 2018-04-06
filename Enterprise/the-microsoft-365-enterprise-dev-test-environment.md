@@ -15,12 +15,12 @@ ms.custom:
 - Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: "Zusammenfassung: Mit diesem Test Lab Guide können eine Test-/Umgebung erstellen, die Office 365 E5, Enterprise Mobilität + Sicherheit (zur Abstimmung) E5 und einem Computer mit Windows 10 Enterprise enthält."
-ms.openlocfilehash: c31c9a86a6918ee0a68e64cf3edfa7e2e4d2e93a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Mit diesem Test Lab Guide können eine Test-/Umgebung erstellen, die Office 365 E5, Enterprise Mobilität + Sicherheit (zur Abstimmung) E5 und einem Computer mit Windows 10 Enterprise enthält.'
+ms.openlocfilehash: f4100a870191f03f82e7af5e79e710ee1403e8c7
+ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung
 
@@ -63,12 +63,11 @@ Zunächst fügen Sie Test zur Abstimmung E5-Abonnement hinzu, und weisen Sie ein
 > [!NOTE]
 > Das Testabonnement für Enterprise Mobility + Security E5 ist 90 Tage gültig. Für eine dauerhafte Entwicklungs-/Testumgebung erstellen Sie ein neues bezahltes Abonnement mit einer kleinen Anzahl von Lizenzen. 
   
- ***Wenn Sie mit Phase 3 des abgeschlossen*** [Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md) , wiederholen Sie die Schritte 8 und 9 des vorherigen Verfahrens für alle anderen Konten (Benutzer 2, 3 für Benutzer, Benutzer 4 und 5 Benutzer).
+ ***Wenn Sie die Phase 3 des abgeschlossen die*** [Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md), wiederholen Sie die Schritte 8 und 9 des vorherigen Verfahrens für alle anderen Konten (Benutzer 2, 3 für Benutzer, Benutzer 4 und 5 Benutzer).
   
 Ihre Entwicklungs-/Testumgebung verfügt nun über Folgendes:
   
 - Office 365 E5 Enterprise- und EMS-Testabonnements mit derselben Organisation und demselben Azure AD-Mandanten mit Ihrer Liste von Benutzerkonten.
-    
 - Alle Ihre entsprechenden Benutzerkonten (globaler Administrator oder alle fünf Benutzerkonten) werden von Office 365 E5 und zur Abstimmung E5 aktiviert.
     
 Abbildung 2 zeigt die Konfiguration nach dem Hinzufügen von EMS.
@@ -91,7 +90,7 @@ Erstellen Sie einen virtuellen Computer mit dem Hypervisor Ihrer Wahl, und insta
   
 ### <a name="virtual-machine-in-azure"></a>Virtueller Computer in Azure
 
-Zum Erstellen eines virtuellen Computers von Windows 10 in Microsoft Azure, ***benötigen Sie ein Visual Studio-basierte Abonnement***, die Zugriff auf das Bild für Windows 10 Enterprise hat. Andere Arten von Azure-Abonnements, wie etwa Testversionen und kostenpflichtigen Abonnements keinen Zugriff auf dieses Bild.
+Erstellen eines virtuellen Computers von Windows 10 in Microsoft Azure mithilfe des Azure Gallery-Bildes.
   
 > [!NOTE]
 > Im folgenden Befehl wird verwenden Te neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). Dieser Befehl legt Build einen Windows 10 Enterprise virtuellen Computer mit dem Namen WIN10 und alle seine notwendige Infrastruktur, einschließlich einer Ressourcengruppe, Speicher-Konto und ein virtuelles Netzwerk. Wenn Sie bereits mit Azure Infrastructure Services vertraut sind, wenden Sie sich passen Sie diese Anweisungen der aktuell bereitgestellten Infrastruktur entsprechend an. 
@@ -131,27 +130,6 @@ $locName="<location name, such as West US>"
 New-AzureRMResourceGroup -Name $rgName -Location $locName
 ```
 
-Ressourcen-Manager-basierten virtuellen Maschinen erfordern eine Ressourcen-Manager-basierten Speicher-Konto. Sie müssen einen global eindeutigen Namen für Ihre Speicher Dienstkonto *, enthält nur Kleinbuchstaben und Zahlen* auswählen. Sie können diesen Befehl verwenden, um die vorhandenen Speicherkonten aufzulisten.
-  
-```
-Get-AzureRMStorageAccount | Sort StorageAccountName | Select StorageAccountName
-```
-
-Verwenden Sie diesen Befehl, um zu testen, ob ein vorgeschlagener Speicherkontoname eindeutig ist.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-Erstellen Sie ein neues Speicherkonto für Ihre neue Testumgebung mit diesen Befehlen.
-  
-```
-$rgName="<your new resource group name>"
-$saName="<storage account name>"
-$locName=(Get-AzureRmResourceGroup -Name $rgName).Location
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 Im nächsten Schritt erstellen Sie ein neues virtuelles Netzwerk und den virtuellen WIN10-Computer mit den folgenden Befehlen. Wenn Sie dazu aufgefordert werden, geben Sie den Namen und das Kennwort des lokalen Administratorkontos für WIN10 an, und bewahren Sie dieses an einem sicheren Ort auf.
   
 ```
@@ -165,19 +143,17 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 $pip=New-AzureRMPublicIpAddress -Name WIN10-PIP -ResourceGroupName $rgName -Location $locName -AllocationMethod Dynamic
 $nic=New-AzureRMNetworkInterface -Name WIN10-NIC -ResourceGroupName $rgName -Location $locName -SubnetId $vnet.Subnets[0].Id -PublicIpAddressId $pip.Id
 $vm=New-AzureRMVMConfig -VMName WIN10 -VMSize Standard_D1_V2
-$storageAcc=Get-AzureRMStorageAccount -ResourceGroupName $rgName -Name $saName
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for WIN10."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName WIN10 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftVisualStudio -Offer Windows -Skus Windows-10-N-x64 -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$osDiskUri=$storageAcc.PrimaryEndpoints.Blob.ToString() + "vhds/WIN10-TestLab-OSDisk.vhd"
-$vm=Set-AzureRMVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -VhdUri $osDiskUri -CreateOption fromImage
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 ## <a name="phase-4-join-your-windows-10-computer-to-azure-ad"></a>Phase 4: Einbinden des Windows 10-Computers in Azure AD
 
-Nachdem Sie den physischen oder virtuellen Computer erstellt und mit Windows 10 Enterprise konfiguriert haben und er ausgeführt wird, melden Sie sich mit einem lokalen Administratorkonto an.
+Nach dem Erstellen der physischen oder virtuellen Computer mit Windows 10 Enterprise melden Sie sich über ein lokales Administratorkonto.
   
 > [!NOTE]
 > Für einen virtuellen Computer in Azure eine Verbindung damit herzustellen Sie anhand der [folgenden Schritte](https://docs.microsoft.com/azure/virtual-machines/windows/connect-logon). Melden Sie sich mit den Anmeldeinformationen des lokalen Administratorkontos. 
@@ -196,7 +172,7 @@ Als Nächstes fügen Sie den WIN10-Computer dem Azure AD-Mandanten Ihrer Office 
     
 6. Schließen Sie das Fenster mit den Einstellungen.
     
-Installieren Sie im nächsten Schritt Office 2016 auf dem WIN10-Computer.
+Installieren Sie anschließend Office 2016 auf dem Computer WIN10.
   
 1. Öffnen Sie den Microsoft-Edge-Browser, und melden Sie sich mit den Anmeldeinformationen Ihres globaler Administrator Office 365-Portal. Hilfe finden Sie unter [Where zur Anmeldung bei Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -226,12 +202,10 @@ Anhand der folgenden weiteren Artikel erfahren Sie mehr über die Funktionen von
     
 - [Konfigurieren und Testen der erweiterte Schutz](https://technet.microsoft.com/library/mt490479.aspx)
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
-[Eine Microsoft-Cloud Dev/testumgebung](the-one-microsoft-cloud-dev-test-environment.md)
+- [Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 
-[Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+ - [Bereitstellen von Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 
-
-
-
+- [Eine Microsoft-Cloud Dev/testumgebung](the-one-microsoft-cloud-dev-test-environment.md)
