@@ -1,9 +1,9 @@
 ---
-title: "Hoher Verfügbarkeit federated Authentifizierung Phase 2 Konfigurieren von Domänencontrollern"
+title: Hoher Verfügbarkeit federated Authentifizierung Phase 2 Konfigurieren von Domänencontrollern
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: "Zusammenfassung: Konfigurieren der Domänencontroller und Dirsync-Server für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Microsoft Azure."
-ms.openlocfilehash: 5e2cc8b5c750b5b2cf48ff0c594a5bd716d5bcf2
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Konfigurieren der Domänencontroller und Dirsync-Server für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Microsoft Azure.'
+ms.openlocfilehash: 80846025af82810f63087aafd1a3b3a1213212d1
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern
 
@@ -35,13 +35,13 @@ Zunächst müssen Sie der **Name des virtuellen Computers** -Spalte der Tabelle 
   
 |**Element**|**Name des virtuellen Computers**|**Bild aus der Galerie**|**Speichertyp**|**Mindestgröße**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |______________ (erster Domänencontroller, Beispiel DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |______________ (zweiter Domänencontroller, Beispiel DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |___ (DirSync-Server, Beispiel DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |___ (erster AD FS-Server, Beispiel ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |___ (zweiter AD FS-Server, Beispiel ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |______________ (erster Webanwendungsproxy-Server, Beispiel WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |______________ (zweiter Webanwendungsproxy-Server, Beispiel WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png)(ersten Domänencontroller, Beispiel DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png)(zweite Domänencontroller, Beispiel DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)(Dirsync-Server, Beispiel DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./images/Common_Images/TableLine.png)(ersten AD FS-Server Beispiel ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./images/Common_Images/TableLine.png)(zweite AD FS-Server Beispiel ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./images/Common_Images/TableLine.png)(erste Web Application Proxyserver, Beispiel WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./images/Common_Images/TableLine.png)(zweite Anwendung Webproxyserver, Beispiel WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
    
  **Tabelle M - virtueller Computer für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Azure**
   
@@ -250,7 +250,7 @@ Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration w
 
 Verwendung [hoher Verfügbarkeit federated Authentifizierung Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) Konfiguration von Arbeitslast fortzufahren.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   

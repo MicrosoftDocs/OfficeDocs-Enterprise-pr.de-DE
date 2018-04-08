@@ -1,5 +1,5 @@
 ---
-title: "Hochverfügbarkeit der Verbundauthentifizierung, Phase 5 Konfigurieren der Verbundauthentifizierung für Office 365"
+title: Hochverfügbarkeit der Verbundauthentifizierung, Phase 5 Konfigurieren der Verbundauthentifizierung für Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,22 +11,22 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: "Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure."
-ms.openlocfilehash: 2c23ffa2e9f033018c5cc1fd016fb4ed76535605
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
+ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365
 
  **Zusammenfassung:** Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.
  
-In dieser Phase der Bereitstellung der hohen Verfügbarkeit für Verbundauthentifizierung für Office 365 in Azure-Infrastrukturdiensten rufen Sie ein Zertifikat, das von einer öffentlichen Zertifizierungsstelle ausgestellt wurde, ab, installieren das Zertifikat. Dann überprüfen Sie Ihre Konfiguration und installieren Azure AD Connect auf dem DirSync-Server und führen es aus. Azure AD Connect konfiguriert Ihr Office 365-Abonnement und Ihre AD FS- und Webanwendungsproxy-Server für die Verbundauthentifizierung.
+In diesem letzten Phase des Verbundauthentifizierung hohe Verfügbarkeit für Office 365 in Azure Infrastructure Services bereitstellen abrufen und installieren Sie ein Zertifikat von einer öffentlichen Zertifizierungsstelle ausgestellt, überprüfen Sie die Konfiguration, und klicken Sie dann Installation und Ausführung Azure AD Klicken Sie auf den Dirsync-Server verbinden. Azure Active Directory verbinden konfiguriert Ihres Office 365-Abonnements und Ihre Active Directory-Verbunddienste (AD FS) und Web Application Proxy-Server für Verbundauthentifizierung.
   
 Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
-## <a name="get-a-public-certificate-and-copy-it-to-the-dirsync-server"></a>Abrufen eines öffentlichen Zertifikats und kopieren des Zertifikats auf den DirSync-Server
+## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Möchten Sie ein öffentliches Zertifikat erhalten, und kopieren Sie sie in den Verzeichnissynchronisierungsserver
 
 Rufen Sie ein digitales Zertifikat von einer öffentlichen Zertifizierungsstelle mit den folgenden Eigenschaften ab:
   
@@ -40,7 +40,7 @@ Außerdem müssen die Computer und Geräte Ihrer Organisation der öffentlichen 
   
 Weitere Informationen zu Zertifikatanforderungen für die Verbundauthentifizierung finden Sie unter [Voraussetzungen für die Verbundinstallation und -konfiguration](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
-Wenn Sie das Zertifikat erhalten, kopieren Sie es in den Ordner auf Laufwerk C: des DirSync-Servers. Geben Sie der Datei z. B. den Namen „SSL.pfx", und speichern Sie sie im Ordner „C:\\Certs" auf dem DirSync-Server.
+Wenn Sie das Zertifikat erhalten haben, kopieren Sie sie in einen Ordner auf dem Laufwerk C: des Synchronisierungsservers Directory. Angenommen, nennen Sie die Datei SSL.pfx, und speichern Sie sie in das Laufwerk C:\\Zertifikate Ordner auf dem Synchronisierungsserver Directory.
   
 ## <a name="verify-your-configuration"></a>Überprüfen Ihrer Konfiguration
 
@@ -56,7 +56,7 @@ Jetzt sollten Sie bereit sein, Azure AD Connect und die Verbundauthentifizierung
     
 - Ein privater DNS-A-Eintrag für den FQDN Ihres Verbunddiensts zeigt auf die private IP-Adresse des internen Azure-Lastenausgleichs für die AD FS-Server.
     
-- Ein von einer öffentlichen Zertifizierungsstelle ausgestelltes digitales Zertifikat, das für SSL-Verbindungen mit dem SAN geeignet ist, das auf den FQDN des Verbunddiensts festgelegt ist, ist eine PFX-Datei, die auf dem DirSync-Server gespeichert ist.
+- Ein öffentlichen Zertifizierungsstelle Behörde Isssued digitales Zertifikat für SSL-Verbindungen mit dem SAN auf Ihrem Verbunddienst festgelegt, dass FQDN eine PFX-Datei auf Ihrem Verzeichnissynchronisierungsserver gespeichert ist.
     
 - Das Stammzertifikat für die öffentliche Zertifizierungsstelle wird im Speicher der vertrauenswürdigen Stammzertifizierungsstellen auf Ihren Computern und Geräten installiert.
     
@@ -70,9 +70,9 @@ Nachfolgend finden Sie ein Beispiel für die Contoso-Organisation:
 
 Das Tool Azure AD Connect konfiguriert die AD FS-Server, die Webanwendungsproxy-Server und Office 365 über die folgenden Schritte für die Verbundauthentifizierung:
   
-1. Erstellen Sie eine Remotedesktopverbindung mit Ihrem DirSync-Server über ein Domänenkonto, das über lokale Administratorberechtigungen verfügt.
+1. Erstellen Sie eine Remotedesktopverbindung an Ihre Verzeichnissynchronisierungsserver mit einem Domänenkonto an, die Berechtigungen eines lokalen Administrators verfügt.
     
-2. Öffnen Sie über den Desktop des DirSync-Servers Internet Explorer, und wechseln Sie zu [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+2. Über den Desktop des den Verzeichnissynchronisierungsserver, öffnen Sie Internet Explorer, und wechseln Sie zur [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
     
 3. Klicken Sie auf der Seite **Microsoft Azure Active Directory Connect** auf **Herunterladen** und dann auf **Ausführen**.
     

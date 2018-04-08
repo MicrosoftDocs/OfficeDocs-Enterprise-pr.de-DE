@@ -1,9 +1,9 @@
 ---
-title: "Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung"
+title: Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: "Zusammenfassung: Konfigurieren Sie Verbundauthentifizierung für Ihre Office 365 Dev/Test-Umgebung."
-ms.openlocfilehash: 8458e8e11547c14e479a64d037707d5292afcc02
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Konfigurieren Sie Verbundauthentifizierung für Ihre Office 365 Dev/Test-Umgebung.'
+ms.openlocfilehash: 8841e203587f4582396db172ff5f4626eacbcdc7
+ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -63,7 +63,7 @@ Um eine Bereitstellung in der Produktion über die Verbundauthentifizierung für
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1: Erstellen der simulierten Office 365-Entwicklungs-/Testumgebung mit DirSync
 
-Befolgen Sie die Anweisungen in [DirSync für Ihre Office 365 Dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md) zum Erstellen der simulierten Enterprise Office 365-Test-/-Umgebung mit APP1 als Dirsync-Server und synchronisierte Identität zwischen Office 365 und Windows Azure AD Konten auf DC1.
+Befolgen Sie die Anweisungen in [Directory-Synchronisierung für Ihre Office 365 Dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md) zum Erstellen der simulierten Enterprise Office 365-Test-/-Umgebung mit APP1 als Dirsync-Server und Identity zwischen Office 365 synchronisiert und die Windows Server Active Directory-Konten auf DC1.
   
 Im nächsten Schritt erstellen Sie einen neuen öffentlichen DNS-Domänennamen basierend auf Ihren aktuellen Domänennamen und Ihrem Office 365-Abonnement hinzugefügt. Es wird empfohlen, mit dem Namen **Testlabor.** \<Ihrer öffentlichen Domäne >. Wenn der öffentlichen Domäne "contoso.com" lautet, fügen Sie beispielsweise der öffentlichen Domäne Name testlab.contoso.com.
   
@@ -71,11 +71,11 @@ Anweisungen zum Erstellen der richtigen DNS-Einträge im DNS-Anbieter und die Do
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-**Abbildung 2: DirSync für Office 365 Dev/Test-Umgebung**
+**Abbildung 2: Directory-Synchronisierung für Test-/Office 365-Umgebung**
 
-![Die Office 365-Entwicklungs-/Testumgebung mit DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Office 365-Umgebung Test-/mit Directory-Synchronisierung](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-In Abbildung 2 ist die DirSync für die Office 365-Entwicklungs-/Testumgebung dargestellt, die Office 365 sowie die virtuellen Computer CLIENT1, APP1 und DC1 in einem virtuellen Azure-Netzwerk umfasst.
+Abbildung 2 zeigt die Synchronizationc Directory für Office 365 Dev/Test-Umgebung, die Office 365 und CLIENT1, APP1 und DC1 virtuellen Computern in einer Azure-virtuelles Netzwerk enthält.
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2: Erstellen des AD FS-Servers
 
@@ -103,7 +103,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.
+> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) für eine Textdatei mit der PowerShell-Befehlen in diesem Artikel.
   
 Im nächsten Schritt mit der [Azure-Portal](http://portal.azure.com) ADFS1 virtuellen Computer mit dem ADFS1 lokaler Administrator Kontoname und Kennwort hergestellt werden soll, und öffnen Sie eine Windows PowerShell-Eingabeaufforderung.
   
@@ -112,7 +112,7 @@ Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen ADFS1 
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung auf ADFS1 den virtuellen Computer ADFS1 mit der Domäne CORP.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -164,7 +164,7 @@ Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen PROXY1
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung auf PROXY1 den virtuellen Computer PROXY1 mit der Domäne CORP.
   
 ```
-$cred=Get-Credential -UserName "CORP\\User1" -Message "Type the User1 account password."
+$cred=Get-Credential -UserName "CORP\User1" -Message "Type the User1 account password."
 Add-Computer -DomainName corp.contoso.com -Credential $cred
 Restart-Computer
 ```
@@ -214,9 +214,9 @@ Verwendung des [Azure Portal](http://portal.azure.com) Verbindung mit dem ADFS1 
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
-New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\\LocalMachine\\My"
-New-Item -path c:\\Certs -type directory
-New-SmbShare -name Certs -path c:\\Certs -changeaccess CORP\\User1
+New-SelfSignedCertificate -DnsName $fedServiceFQDN -CertStoreLocation "cert:\LocalMachine\My"
+New-Item -path c:\Certs -type directory
+New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 ```
 
 Gehen Sie dann folgendermaßen vor, um das neue selbstsignierte Zertifikat als Datei zu speichern.
@@ -401,7 +401,7 @@ Verwenden Sie diese Schritte, um Azure AD Connect und Ihr Office 365-Abonnement 
     
 Gehen Sie folgendermaßen vor, um zu zeigen, dass die Verbundauthentifizierung funktioniert:
   
-1. Öffnen Sie eine neue private Instanz des Browsers auf Ihrem lokalen Computer, und wechseln Sie zur [https://portal.office.com](https://portal.office.com).
+1. Öffnen Sie eine neue private Instanz des Browsers auf Ihrem lokalen Computer, und gehen Sie zu [https://portal.office.com](https://portal.office.com).
     
 2. Geben Sie für die Anmeldeinformationen, **user1 @**\<die in Phase 1 erstellte Domäne >. 
     
@@ -439,7 +439,7 @@ Ihr Office 365-Testabonnement ist nun für die Verbundauthentifizierung konfigur
 
 Wenn Sie sofort in der Produktion bereitstellen möchten, Verbundauthentifizierung hohe Verfügbarkeit für Office 365 in Azure, finden Sie unter [Deploy hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   
