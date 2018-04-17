@@ -1,5 +1,5 @@
 ---
-title: "Übersicht über Office 365 Information Protection für die DSGVO"
+title: Übersicht über Office 365 Information Protection für die DSGVO
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
-description: "Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können."
-ms.openlocfilehash: b3af91608d545b221694b9e4a18db07b85d7541a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Hier erhalten Sie eine Übersicht über Office 365 Information Protection für die DSGVO. Erfahren Sie, wie Sie personenbezogene Daten ermitteln, klassifizieren, schützen und überwachen können.
+ms.openlocfilehash: 0b5021fbe90c894e72f252494c07c5a4e3dbdad8
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Übersicht über Office 365 Information Protection für die DSGVO
 

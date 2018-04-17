@@ -9,18 +9,17 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- GDPR
 ms.service: o365-solutions
 localization_priority: Priority
-ms.custom:
-- Strat_O365_Enterprise
-- GDPR
-ms.assetid: 
-description: "Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können."
-ms.openlocfilehash: be09afa8efa19d48d6bed2ad818adbcaf2aafcda
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.custom: ''
+ms.assetid: ''
+description: Erfahren Sie, wie Sie Office-Bezeichnungen im Rahmen Ihres DSGVO-Schutzplans verwenden können.
+ms.openlocfilehash: 3ad329c061a1bd21002ca2f75c185d11d690e290
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Anwenden von Bezeichnungen auf personenbezogene Daten in Office 365
 
