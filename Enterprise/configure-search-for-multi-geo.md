@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Informationen Sie zum Konfigurieren der Suche in einer Umgebung mit mehreren geografisch.
-ms.openlocfilehash: 5aa1e9eb189e00dbed8f575e88046b661341bf52
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 5cf155c2c5bd2e27a54d84c4d5411e5b1afce568
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Konfigurieren der Suche für OneDrive für Unternehmen Multi-Geo
 
@@ -27,7 +28,7 @@ Beispielsweise kann ein Benutzer in einem Geo Speicherort suchen für Inhalte, d
 
 Diese Clients können aus allen Speicherorten von Geo Ergebnisse zurückgegeben:
 
--   OneDrive für Unternehmen
+-   OneDrive for Business
 
 -   Delve
 
@@ -37,7 +38,7 @@ Diese Clients können aus allen Speicherorten von Geo Ergebnisse zurückgegeben:
 
 -   Benutzerdefinierte suchanwendungen, die die SharePoint-Suche-API verwenden
 
-### <a name="onedrive-for-business"></a>OneDrive für Unternehmen
+### <a name="onedrive-for-business"></a>OneDrive for Business
 
 Als Multi-Geo-Umgebung eingerichtet wurde, erhalten Benutzer, die in OneDrive durchsuchen Ergebnisse aus allen geografisch Speicherorten.
 

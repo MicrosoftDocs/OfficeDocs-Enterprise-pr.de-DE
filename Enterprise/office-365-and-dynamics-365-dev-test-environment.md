@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: Ent_O365, Strat_O365_Enterprise
-ms.custom: Strat_O365_Enterprise, Ent_TLGs
+ms.collection:
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
-description: "Zusammenfassung: Verwenden dieser Test Lab Guide für Ihre Office 365-Umgebung Test-/Dynamics 365 hinzufügen."
-ms.openlocfilehash: f13cf81f989867e543439e1ccb6ecd7f8ba55cb6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Zusammenfassung: Verwenden dieser Test Lab Guide für Ihre Office 365-Umgebung Test-/Dynamics 365 hinzufügen.'
+ms.openlocfilehash: 24f121c9e5f8a25bae61ce4a59b42d528ffbda17
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365- und Dynamics 365-Entwicklungs-/Testumgebung
 
@@ -130,7 +132,7 @@ Ihre Office 365- und Dynamics 365-Entwicklungs-/Testumgebung umfasst nun Folgend
 
 Konfigurieren Sie, und führen Sie dann vor, wie Office 365 und Dynamics 365 in der Exchange Online-Postfächer mit [Exchange Online-Integration für Ihre Umgebung für Office 365 und Dynamics 365](exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro.md)Test-/zusammenarbeiten.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

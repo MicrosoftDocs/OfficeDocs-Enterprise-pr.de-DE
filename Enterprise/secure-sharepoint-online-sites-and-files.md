@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365."
-ms.openlocfilehash: 035c3e69a430269b382ab032387a44cc3cbbbfd6
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
+ms.openlocfilehash: 800d81d657164b2a936b95764d57fd092cfa21cc
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -170,7 +169,7 @@ Erläuterung der Abbildung:
     
 ### <a name="adding-permissions-for-external-users"></a>Hinzufügen von Berechtigungen für externe Benutzer
 
-Es gibt zwei Möglichkeiten, wie Sie externen Benutzern Zugriff auf Dateien gewähren können, die mit Azure Information Protection geschützt sind. In beiden Fällen benötigen die externen Benutzer ein Azure AD-Konto. Wenn externe Benutzer kein Mitglied einer Organisation sind, die Azure Active Directory verwendet, können sie auf dieser Registrierungsseite ein Azure AD-Konto als Einzelperson beantragen: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
+Es gibt zwei Methoden, die Sie externen Benutzern Zugriff auf Dateien mit Azure Information Protection geschützt gewähren können. In beiden Fällen müssen externe Benutzer ein Azure AD-Konto verfügen. Wenn externe Benutzer einer Organisation keine, die die Azure AD verwendet Gruppenmitglieder, erhalten sie diese Anmeldeseite ein Azure AD-Konto als eine einzelne Person: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
   
 - Hinzufügen von externen Benutzern zu einer Azure AD-Gruppe, die zum Konfigurieren des Schutzes für eine Bezeichnung verwendet wird
     

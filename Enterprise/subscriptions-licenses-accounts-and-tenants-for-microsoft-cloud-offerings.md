@@ -1,5 +1,5 @@
 ---
-title: "Abonnements, Lizenzen, Konten und Mandanten für Microsoft Cloud-angeboten"
+title: Abonnements, Lizenzen, Konten und Mandanten für Microsoft Cloud-angeboten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: "Zusammenfassung: Grundlegendes zu den Beziehungen zwischen Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über Microsoft Cloud-angeboten."
-ms.openlocfilehash: a1bcc040d046e4e5674f16432aeffb0a34b9031b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Grundlegendes zu den Beziehungen zwischen Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über Microsoft Cloud-angeboten.'
+ms.openlocfilehash: ff4854bc66f9a500715bbcd2da696b9a4519aa82
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft Cloud-angeboten
 
@@ -150,7 +149,7 @@ Die folgende Tabelle beschreibt, wie Sie mehrere Microsoft-Cloudangebote basiere
    
 Eine einfache Möglichkeit zum Hinzufügen von Abonnements zu Ihrer Organisation für Microsoft SaaS-basierte Dienste erfolgt über das Office 365 Admin Center:
   
-1. Melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit der globale Administratorkonto ein, und klicken Sie dann auf **Admin**.
+1. Melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit der globale Administrator berücksichtigt werden, und klicken Sie dann auf **Admin**.
     
 2. Klicken Sie im linken Navigationsbereich der Homepage der **Verwaltungskonsole** auf **Abrechnung**und klicken Sie dann auf **Dienste erwerben**.
     
@@ -160,7 +159,7 @@ Das Office 365 Admin Center ordnet die Organisation und den Azure AD-Mandanten I
   
 So fügen Sie ein Azure-Abonnement mit derselben Organisation und demselben Azure AD-Mandanten wie das Office 365-Abonnement hinzu
   
-1. Melden Sie sich bei des Azure-Portals ([https://portal.azure.com](https://portal.azure.com)) mit Ihrem Office 365 globaler Administrator-Konto.
+1. Melden Sie sich bei der Azure-Portal ([https://portal.azure.com](https://portal.azure.com)) mit Ihrem Office 365 globaler Administrator-Konto.
     
 2. Klicken Sie im linken Navigationsbereich auf **Abonnements**und klicken Sie dann auf **Hinzufügen**.
     
@@ -168,7 +167,7 @@ So fügen Sie ein Azure-Abonnement mit derselben Organisation und demselben Azur
     
 Wenn Sie Azure und Office 365-Abonnements separat erworben und den Office 365 Azure AD-Mandanten aus dem Azure-Abonnement aufrufen möchten, finden Sie in [einem Office 365-Mandanten mit einem Azure-Abonnement zuordnen](https://channel9.msdn.com/Series/Microsoft-Azure-Tutorials/Associate-an-Office-365-tenant-with-an-Azure-subscription).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
   

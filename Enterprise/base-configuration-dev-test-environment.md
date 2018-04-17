@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Zusammenfassung: Erstellen einer vereinfachten Intranet als Test-/Umgebung in Microsoft Azure.'
-ms.openlocfilehash: b2bd1c7bb2b0cd100326867fc3603b6afb6cd8db
-ms.sourcegitcommit: 1db536d09343bdf6b4eb695ab07890164c047bd3
+ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="base-configuration-devtest-environment"></a>Basiskonfiguration der Entwicklungs-/Testumgebung
 
@@ -32,7 +31,7 @@ Dieser Artikel enthält eine schrittweise Anleitung zum Erstellen der folgenden 
 
 ![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-Die Basiskonfiguration Test-/Umgebung in Abbildung 1 besteht aus dem Subnetz Corpnet in einer Cloud-only Azure-virtuelles Netzwerk mit dem Namen Testlabor, die simuliert eine vereinfachte, privaten Intranet mit dem Internet verbunden. Dieser Abschnitt enthält drei Azure-virtuelle Computer:
+Die Basiskonfiguration Test-/Umgebung in Abbildung 1 besteht aus dem Subnetz Corpnet in einer Cloud-only Azure-virtuelles Netzwerk mit dem Namen Testlabor, die simuliert eine vereinfachte, privaten Intranet mit dem Internet verbunden. Dieser Abschnitt enthält drei Azure-virtuelle Computer unter WIndows Server 2016:
   
 - DC1 ist als Intranet-Domänencontroller und DNS-Server (Domain Name System) konfiguriert.
     
@@ -241,7 +240,10 @@ Dies ist Ihre aktuelle Konfiguration.
 ## <a name="phase-3-configure-app1"></a>Phase 3: Konfigurieren von APP1
 
 APP1 bietet Web- und Dateifreigabedienste.
-  
+
+-> [!NOTE]  
+Die folgenden -> Befehlssatz erstellt CLIENT1 mit Windows Server 2016 Datacenter, für alle Arten von Azure-Abonnements durchgeführt werden kann. Wenn Sie ein Visual Studio-basierte Azure-Abonnement verfügen, können Sie CLIENT1 erstellen Windows 10 mit der [Azure-](https://portal.azure.com)Portal/Admin ausführen. 
+
 Zum Erstellen einer Azure Virtual Machine für APP1 Geben Sie den Namen der Ressourcengruppe, und führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
   
 ```
@@ -307,7 +309,7 @@ $nic=New-AzureRMNetworkInterface -Name CLIENT1-NIC -ResourceGroupName $rgName -L
 $vm=New-AzureRMVMConfig -VMName CLIENT1 -VMSize Standard_A1
 $cred=Get-Credential -Message "Type the name and password of the local administrator account for CLIENT1."
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
-$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsDesktop -Offer Windows-10 -Skus RS3-Pro -Version "latest"
+$vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
 $vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm

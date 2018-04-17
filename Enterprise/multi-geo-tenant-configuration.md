@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Informationen Sie zum Konfigurieren von OneDrive für Unternehmen Multi-Geo.
-ms.openlocfilehash: 4ef31df802eeaedf2eecbdd295d2e359816e4909
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 56268acd319684ecb713e674b8accbe311d08dce
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>OneDrive for Business Multi-Geo Mandantenkonfiguration
 
@@ -23,7 +24,7 @@ Bevor Sie Ihrem Mandanten für OneDrive for Business Multi-Geo konfigurieren, so
 
 Um OneDrive for Business Multi-Geo verwenden, benötigen Sie den _Multi-Geo-Funktionen in Office 365_ -Plan. Arbeiten Sie mit Ihrem Team Konto Ihres Mandanten diesem Plan hinzugefügt. Ihr Kundenteam wird verbinden Sie mit der entsprechenden Lizenzierung Spezialist und Abrufen von Ihrem Mandanten konfiguriert.
 
-Beachten Sie, dass der _Multi-Geo-Funktionen in Office 365_ -Plan eine auf Benutzerebene Dienstplan ist. Sie benötigen eine Lizenz für jeden Benutzer, die Sie an einem Speicherort Setellite hosten möchten. Sie können weitere Lizenzen über einen Zeitraum beim Hinzufügen von Benutzern in Satelliten Speicherorte hinzufügen.
+Beachten Sie, dass der _Multi-Geo-Funktionen in Office 365_ -Plan eine auf Benutzerebene Dienstplan ist. Sie benötigen eine Lizenz für jeden Benutzer, die Sie an einem Speicherort Satelliten hosten möchten. Sie können weitere Lizenzen über einen Zeitraum beim Hinzufügen von Benutzern in Satelliten Speicherorte hinzufügen.
 
 Nach Ihrem Mandanten mit der _Multi-Geo-Funktionen in Office 365_ -Plan bereitgestellt wurde, wird in der [OneDrive-Verwaltungskonsole](https://admin.onedrive.com)auf der Registerkarte **Geo Speicherorte** verfügbar.
 
@@ -88,7 +89,7 @@ So fügen Sie einen Satelliten Geo-Speicherort hinzu
 
 6. Klicken Sie auf **Schließen**.
 
-Nach der Bereitstellung von einem Speicherort Satelliten abgeschlossen wurde, erhalten Sie eine e-Mail-Bestätigung. Wenn am neuen Speicherort Geo Blau auf der Karte auf der Registerkarte **Geo Speicherorte** in der OneDrive-Verwaltungskonsole angezeigt wird, können Sie fortfahren, bevorzugte Datenspeicherort Benutzer auf diesen Geo-Speicherort festgelegt. 
+Bereitstellung kann von ein paar Stunden bis 72 Stunden, je nach der Größe Ihres Mandanten dauern, bis. Nach der Bereitstellung von einem Speicherort Satelliten abgeschlossen wurde, erhalten Sie eine e-Mail-Bestätigung. Wenn am neuen Speicherort Geo Blau auf der Karte auf der Registerkarte **Geo Speicherorte** in der OneDrive-Verwaltungskonsole angezeigt wird, können Sie fortfahren, bevorzugte Datenspeicherort Benutzer auf diesen Geo-Speicherort festgelegt. 
 
 > [!IMPORTANT]
 > Ihre neuen Satelliten Geo Speicherort wird mit den Standardeinstellungen festgelegt. Dadurch können Sie diesen Speicherort Geo entsprechend Ihren lokalen Compliance-Anforderungen konfigurieren.

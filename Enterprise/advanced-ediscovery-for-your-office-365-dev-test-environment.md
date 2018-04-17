@@ -1,5 +1,5 @@
 ---
-title: "Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung"
+title: Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
-- TLG-
+- TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren Sie und veranschaulichen Sie der Office 365 erweiterte eDiscovery mit Beispieldaten in Ihrer Office 365 Dev/Test-Umgebung.'
-ms.openlocfilehash: a118ec2753d04afb60d13890b7d5da8c07701721
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
@@ -44,11 +44,11 @@ Wenn Sie erweiterte eDiscovery in einer simulierten Enterprise testen möchten, 
 
 In diesem Verfahren erstellen Sie E-Mail-Nachrichten, die Sie später in einem erweiterten eDiscovery-Fall analysieren werden.
   
-1. Öffnen Sie Internet Explorer, und melden Sie sich unter [https://outlook.com](https://outlook.com) auf das Outlook-Konto in Phase 2 des[Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md)erstellten.
+1. Öffnen Sie Internet Explorer, und melden Sie sich unter [https://outlook.com](https://outlook.com) auf das Outlook-Konto, das Sie in Phase 2 des[Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md)erstellt haben.
     
   - Wenn Sie die einfache Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung von Internet Explorer, und melden Sie sich von Ihrem lokalen Computer aus an.
     
-  - Wenn Sie den simulierten Test-/unternehmensumgebung verwenden, verwenden Sie das Azure-Portal ([https://portal.azure.com](https://portal.azure.com)) so virtuellen Computer CLIENT1 her, und melden Sie sich von CLIENT1.
+  - Wenn Sie den simulierten Test-/unternehmensumgebung verwenden, verwenden Sie das Azure-Portal ([https://portal.azure.com](https://portal.azure.com)) zum Verbinden mit dem virtuellen Computer CLIENT1, und melden Sie sich von CLIENT1 aus.
     
 2. Klicken Sie auf der Registerkarte **Outlook E-Mail** auf **neu**.
     
@@ -180,7 +180,7 @@ In diesem Verfahren erstellen Sie einen neuen Fall für die erweiterte eDiscover
     
 Sie können diese Umgebung jetzt verwenden, um neue Inhalte, neue Suchvorgänge und neue Fälle zu erstellen und um weiter mit der erweiterten eDiscovery in Office 365 zu experimentieren.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

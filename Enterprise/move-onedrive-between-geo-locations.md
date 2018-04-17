@@ -7,13 +7,14 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
+ms.custom: Strat_SP_gtc
 localization_priority: Normal
 description: Erfahren Sie, wie eine OneDrive-Website an einem anderen Geo-Speicherort zu verschieben.
-ms.openlocfilehash: a31f683170fdb83dac90e9d09884c3020d1a47b1
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7ce9106fa7d8d144f0f8935713b4df926a73fb6b
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einem anderen Geo-Speicherort 
 
@@ -76,9 +77,9 @@ Angenommen, um die OneDrive des matt@contosoenergy.onmicrosoft.com von EUR in AU
 
 Um eine Geo-Verschiebung für einen späteren Zeitpunkt planen, verwenden Sie einen der folgenden Parameter:
 
--   _PreferredMoveBeginDate_ – wahrscheinlich Move beginnen zu diesem angegebenen Zeitpunkt.
+-   _PreferredMoveBeginDate_ – wahrscheinlich Move beginnen zu diesem angegebenen Zeitpunkt. Uhrzeit muss in koordinierter Weltzeit (UTC) angegeben werden.
 
--   _PreferredMoveEndDate_ – wahrscheinlich Move sein diesmal angegebenen für einzelne best Effort abgeschlossen.
+-   _PreferredMoveEndDate_ – wahrscheinlich Move sein diesmal angegebenen für einzelne best Effort abgeschlossen. Uhrzeit muss in koordinierter Weltzeit (UTC) angegeben werden. 
 
 ## <a name="cancel-a-onedrive-geo-move"></a>Abbrechen einer OneDrive Geo-Verschiebung 
 
@@ -135,7 +136,7 @@ Sie können auch hinzufügen der `-Verbose` Parameter ausführlichere Beschreibu
 
 Benutzer OneDrive sollte minimalen Unterbrechung bemerken, wenn ihre OneDrive in einen anderen Geo Speicherort verschoben wird. Neben dem eine kurze schreibgeschützten Zustand beim Verschieben bleiben vorhandene Verknüpfungen und Berechtigungen ordnungsgemäß ausgeführt, wenn die Verschiebung abgeschlossen ist.
 
-### <a name="onedrive-for-business"></a>OneDrive für Unternehmen
+### <a name="onedrive-for-business"></a>OneDrive for Business
 
 Während der Verschiebevorgang ausgeführt wird ist OneDrive für den Benutzer schreibgeschützt festgelegt. Wenn die Verschiebung abgeschlossen ist, wird der Benutzer auf ihre OneDrive am neuen Speicherort Geo umgeleitet, wenn sie das Startprogramm für Office 365-app oder einem Webbrowser zu OneDrive navigieren.
 

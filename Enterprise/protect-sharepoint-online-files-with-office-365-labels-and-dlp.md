@@ -1,5 +1,5 @@
 ---
-title: "Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP"
+title: Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
-description: "Zusammenfassung: Anwenden von Office 365 Etiketten und Daten Loss Prevention (DLP) Richtlinien für SharePoint Online Teamwebsites mit verschiedenen Ebenen Schutz von Informationen."
-ms.openlocfilehash: 808c884818a15dbc4feb8d2e3b0249926bf90b52
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Anwenden von Office 365 Etiketten und Daten Loss Prevention (DLP) Richtlinien für SharePoint Online Teamwebsites mit verschiedenen Ebenen Schutz von Informationen.'
+ms.openlocfilehash: a6413ac556cf63cbe7491180d65b4425cd0dba3d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP
 
@@ -34,18 +33,18 @@ Es gibt drei Phasen beim Erstellen und anschließenden Zuweisen von Office 365-B
   
 ### <a name="phase-1-determine-the-office-365-label-names"></a>Phase 1: Festlegen der Office 365-Bezeichnungsnamen
 
-In dieser Phase legen Sie die Namen der Office 365-Bezeichnungen für die vier Ebenen des Informationsschutzes fest, der auf SharePoint Online-Teamwebsites angewendet werden soll. In der folgenden Tabelle sind die vier empfohlenen Bezeichnungen für die einzelnen Ebenen aufgeführt.
+In dieser Phase bestimmen Sie die Namen Ihrer Office 365-Bezeichnungen für die vier Ebenen des Informationsschutzes, der auf SharePoint Online-Teamwebsites angewendet wird. Die folgende Tabelle listet die empfohlenen Namen für jede Ebene auf.
   
-|**SharePoint Online Team Site-Schutzstufe**|**Bezeichnungsname**|
+|**Schutzebene der SharePoint Online-Teamwebsite**|**Bezeichnungsname**|
 |:-----|:-----|
-|Basisschutz-Öffentlich  <br/> |Intern öffentlich  <br/> |
-|Basisschutz-Privat  <br/> |Privat  <br/> |
+|Grundlegend-Öffentlich  <br/> |Intern Öffentlich  <br/> |
+|Grundlegend-Privat  <br/> |Privat  <br/> |
 |Vertraulich  <br/> |Vertraulich  <br/> |
 |Streng vertraulich  <br/> |Streng vertraulich  <br/> |
    
 ### <a name="phase-2-create-the-office-365-labels"></a>Phase 2: Erstellen von Office 365-Bezeichnungen
 
-In dieser Phase erstellen Sie die von Ihnen festgelegten Bezeichnungen für die verschiedenen Ebenen des Informationsschutzes und veröffentlichen sie.
+In dieser Phase erstellen und veröffentlichen Sie Ihre bestimmten Bezeichnungen für die unterschiedlichen Ebenen des Informationsschutzes.
   
 Zum Erstellen der Bezeichnungen können Sie das Office 365 Admin Center oder Microsoft PowerShell.
   
@@ -73,14 +72,14 @@ Zum Erstellen der Bezeichnungen können Sie das Office 365 Admin Center oder Mic
 
 1. [Verbinden auf die Office 365-Sicherheit &amp; Compliance Center mit remote-PowerShell](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409) und geben Sie die Anmeldeinformationen eines Kontos, das die Rolle Sicherheitsadministrator oder Unternehmensadministrator hat.
     
-2. Füllen Sie die Liste der Bezeichnungsnamen aus, und führen Sie dann die folgenden Befehle in der PowerShell-Eingabeaufforderung aus:
+2. Füllen Sie die Liste der Bezeichnungsnamen aus, und führen Sie dann diese Befehle an der PowerShell-Eingabeaufforderung aus:
     
   ```
   $labelNames=@(<list of label names, each enclosed in quotes and separated by commas>)
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
-Gehen Sie als Nächstes wie folgt vor, um die neuen Office 365 Bezeichnungen zu veröffentlichen.
+Führen Sie dann diese Schritte aus, um die neuen Office 365-Bezeichnungen zu veröffentlichen.
   
 1. Aus der **Home > Etiketten** im Bereich der Sicherheit &amp; Compliance Center, klicken Sie auf **Veröffentlichen Etiketten**.
     
@@ -98,33 +97,33 @@ Gehen Sie als Nächstes wie folgt vor, um die neuen Office 365 Bezeichnungen zu 
     
 8. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
     
-### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Phase 3: Anwenden der Office 365-Bezeichnungen auf SharePoint Online-Websites
+### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Phase 3: Anwenden von Office 365-Bezeichnungen auf Ihre SharePoint-Websites
 
-Gehen Sie wie folgt vor, um die Office 365-Bezeichnungen auf die Dokumentenordner der SharePoint Online-Teamwebsites anzuwenden.
+Verwenden Sie die Schritte, um die Office 365-Bezeichnungen auf die Dokumentordner Ihrer SharePoint Online-Teamwebsites anzuwenden.
   
-1. Klicken Sie auf die Kachel " **SharePoint** ", aus der **Microsoft Office Home** Registerkarte Ihres Browsers.
+1. Klicken Sie auf der Registerkarte **Microsoft Office Home** des Browsers auf die Kachel **SharePoint**.
     
-2. Klicken Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser auf einer Website, die eine Office 365-Beschriftung zugewiesen.
+2. Klicken Sie auf der neuen Registerkarte **SharePoint** in Ihrem Browser auf eine Website, der eine Office 365-Bezeichnung zugewiesen werden muss.
     
-3. Klicken Sie in der neuen SharePoint-Website Registerkarte Ihres Browsers auf **Dokumente**.
+3. Klicken Sie auf der Registerkarte für die SharePoint-Website Ihres Browsers auf **Dokumente**.
     
-4. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
+4. Klicken Sie auf das Symbol „Einstellungen“, und klicken Sie dann auf **Bibliothekseinstellungen**.
     
 5. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
 6. **Bezeichnung Einstellungen anwenden**wählen Sie die entsprechende Beschriftung, und klicken Sie dann auf **Speichern**.
     
-7. Schließen Sie die Registerkarte für die SharePoint Online-Website.
+7. Schließen Sie die Registerkarte für die SharePoint-Website.
     
-8. Wiederholen Sie die Schritte 3 bis 8, um weiteren SharePoint Online-Websites Office 365-Bezeichnungen zuzuweisen.
+8. Wiederholen Sie die Schritte 3 bis 8, um Ihren zusätzlichen SharePoint Online-Websites Office 365-Bezeichnungen hinzuzufügen.
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ![Office 365-Bezeichnungen für die vier Arten von SharePoint Online-Teamwebsites.](images/e0a4fdd2-1c30-4d93-8af4-a6f0c6c29966.png)
   
-## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>DLP-Richtlinien für SharePoint Online-Websites
+## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>DLP-Richtlinien für Ihre SharePoint Online-Websites
 
-Verwenden Sie folgende Schritte aus, um einer DLP-Richtlinie konfigurieren, die Benutzer darüber informiert werden, wenn sie ein Dokument auf einer SharePoint Online vertrauliche Teamwebsite außerhalb der Organisation freigeben.
+Verwenden Sie diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benutzer benachrichtigt, wenn sie ein Dokument auf einer vertraulichen SharePoint Online-Teamwebsite außerhalb einer Organisation freigeben.
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office-Homepage** im Browser auf die Kachel **Security &amp; Compliance**.
     
@@ -168,11 +167,11 @@ Verwenden Sie folgende Schritte aus, um einer DLP-Richtlinie konfigurieren, die 
     
 19. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Erstellen**, und klicken Sie dann auf **Schließen**.
     
-Nachfolgend ist die hieraus resultierende Konfiguration für vertrauliche SharePoint Online-Teamwebsites aufgeführt.
+Hier sehen Sie die sich ergebende Konfiguration für vertrauliche SharePoint Online-Teamwebsites.
   
 ![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Office 365-Bezeichnung „Vertraulich“.](images/2ff4cc53-87a8-43e3-b637-3068d88409f3.png)
   
-Gehen Sie als Nächstes wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, die Benutzer blockiert, wenn sie ein Dokument auf einer streng vertraulichen SharePoint Online-Teamwebsite mit Benutzern außerhalb der Organisation teilen.
+Verwenden Sie anschließend diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benutzer blockiert, wenn sie ein Dokument auf einer vertraulichen SharePoint Online-Teamwebsite außerhalb einer Organisation freigeben.
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office-Homepage** im Browser auf die Kachel **Security &amp; Compliance**.
     
@@ -216,7 +215,7 @@ Gehen Sie als Nächstes wie folgt vor, um eine DLP-Richtlinie zu konfigurieren, 
     
 19. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Erstellen**, und klicken Sie dann auf **Schließen**.
     
-Nachfolgend ist die hieraus resultierende Konfiguration für streng vertrauliche SharePoint Online-Teamwebsites aufgeführt.
+Hier sehen Sie die sich ergebende Konfiguration für streng vertrauliche SharePoint Online-Teamwebsites.
   
 ![DLP-Richtlinie für eine isolierte SharePoint Online-Teamwebsite mit der Office 365-Bezeichnung „Streng vertraulich“.](images/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
@@ -224,7 +223,7 @@ Nachfolgend ist die hieraus resultierende Konfiguration für streng vertrauliche
 
 [Schützen von SharePoint Online-Dateien mit Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md)
   

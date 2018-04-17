@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: "Zusammenfassung: Mithilfe dieser Test Lab Guide eine Test-/Umgebung erstellen, die alle Cloudlösungen von Microsoft enthält."
-ms.openlocfilehash: 90f93b1050ec0c2b82f4ed42c76413d68b314b7c
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Mithilfe dieser Test Lab Guide eine Test-/Umgebung erstellen, die alle Cloudlösungen von Microsoft enthält.'
+ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Die One Microsoft Cloud-Entwicklungs-/Testumgebung
 
@@ -184,7 +183,7 @@ Sie können jetzt mit Ihrer One Microsoft Cloud-Entwicklungs-/Testumgebung exper
     
 - [Erstellen Sie ein Netzwerk simulierten standortübergreifenden in Azure Infrastructure Services für das Hosten von Server-basierten Arbeitslasten](https://technet.microsoft.com/library/mt745150.aspx)
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

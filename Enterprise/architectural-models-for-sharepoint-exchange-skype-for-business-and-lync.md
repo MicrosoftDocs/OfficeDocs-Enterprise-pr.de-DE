@@ -1,5 +1,5 @@
 ---
-title: "Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync"
+title: Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
-description: "Zusammenfassung: Hier erhalten Sie die IT-Poster, in denen die Modelle Architektur, Bereitstellung und -Plattformoptionen für SharePoint, Exchange, Skype für Unternehmen und Lync beschrieben."
-ms.openlocfilehash: 94f33ec4460758276cfada3ef9fcc4a444e9133a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Hier erhalten Sie die IT-Poster, in denen die Modelle Architektur, Bereitstellung und -Plattformoptionen für SharePoint, Exchange, Skype für Unternehmen und Lync beschrieben.'
+ms.openlocfilehash: be889a6d16dbe9c7ac4efb21174ee720bf200714
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync
 
@@ -177,7 +176,7 @@ Diese IT-Poster anzeigen Azure-basierter Lösungen mithilfe von SharePoint Serve
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Bild des Entwurfsbeispiels: Internetwebsites in Microsoft Azure für SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Verwenden Sie dieses Designbeispiel als Ausgangspunkt für Ihre eigene Architektur Internet bereitgestellte Website in Azure mit SharePoint Server 2013. Eine Version verfügbaren Text dieses Poster, finden Sie unter [zugänglich Diagramm - Entwurfsbeispiel: Websites in Microsoft Azure für SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Weitere Informationen finden Sie in den folgenden Artikeln:  <br/><br/> - [Internetsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|[![Abbildung des Entwurfsbeispiels: Internetwebsites in Microsoft Azure für SharePoint 2013](images/MS_AZ_InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> ![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |Verwenden Sie dieses Designbeispiel als Ausgangspunkt für Ihre eigene Architektur Internet bereitgestellte Website in Azure mit SharePoint Server 2013. Eine Version verfügbaren Text dieses Poster, finden Sie unter [zugänglich Diagramm - Entwurfsbeispiel: Websites in Microsoft Azure für SharePoint 2013](accessible-diagramdesign-sample-internet-sites-in-microsoft-azure-for-sharepoint.md).<br/><br/> Weitere Informationen finden Sie in den folgenden Artikeln:  <br/><br/> - [Internetsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>SharePoint-Notfallwiederherstellung in Microsoft Azure
 <a name="sharepoint_recovery_Azure"> </a>
@@ -188,7 +187,7 @@ Diese IT-Poster anzeigen Azure-basierter Lösungen mithilfe von SharePoint Serve
 |:-----|:-----|
 |[![SharePoint-Disaster Recovery-Prozess in Azure](images/SP_DR_Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> ![PDF-Datei](images/ITPro_Other_PDFicon.png)[PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| ![Visio-Datei](images/ITPro_Other_VisioIcon.jpg)[Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| ![Seite mit Versionen in zusätzlichen Sprachen anzeigen](images/e16c992d-b0f8-48ae-bf44-db7a9fcaab9e.png)[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |Dieses IT-Poster veranschaulicht Architekturprinzipien für eine notfallwiederherstellungsumgebung in Azure. Dieses Poster, eine Version verfügbaren Text finden Sie unter [zugänglich Diagramm - SharePoint Disaster Recovery in Microsoft Azure](accessible-diagramsharepoint-disaster-recovery-to-microsoft-azure.md).<br/><br/> Weitere Informationen finden Sie in den folgenden Artikeln:  <br/><br/> - [SharePoint Server 2013 Disaster Recovery in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
    
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 <a name="Lync2013_Options"> </a>
 
