@@ -3,7 +3,7 @@ title: Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
+ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,15 +11,15 @@ ms.custom: Strat_SP_gtc
 localization_priority: Normal
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Erweitern Sie Ihre Office 365-Anwesenheit auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive und SharePoint Online.
-ms.openlocfilehash: 2c5de533aaaace68e51b747cd62a53b9572bcaec
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 3f72158fe05aadfe8a08a5520bf65cd2d0aaa1c6
+ms.sourcegitcommit: a81d08c7e8771cb2c232435971e3169d4f7428dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
 
-Mit Multi-Geo-Funktionen in OneDrive und SharePoint Online kann Ihr Unternehmen seine Office 365-Präsenz auf mehrere geografische Regionen und/oder Länder innerhalb des vorhandenen Mandanten erweitern. Dieses Feature ist derzeit in der Vorschau. Wenden Sie sich an Ihr Microsoft-Kontoteam, um Ihr multinationales Unternehmen für die OneDrive Multi-Geo-Vorschau anzumelden.
+Mit Multi-Geo-Funktionen in OneDrive und SharePoint Online kann Ihrer Organisation die Office 365-Präsenz auf mehreren geografischen Regionen und/oder Ländern innerhalb Ihres vorhandenen Mandanten erweitern. Treten Sie Ihr Microsoft-Konto Team Ihres Unternehmens mit mehreren National für OneDrive for Business Multi-Geo registrieren.
   
 Mit OneDrive Multi-Geo, können Sie bereitstellen und Speichern von Daten im Ruhezustand in die Geo-Speicherorte, die Sie ausgewählt haben, um Daten vor-Ort-Anforderungen erfüllen und entsperren gleichzeitig Ihre globalen Roll nicht genügend moderne Produktivität Erfahrungen Ihrer Mitarbeiter.
   
