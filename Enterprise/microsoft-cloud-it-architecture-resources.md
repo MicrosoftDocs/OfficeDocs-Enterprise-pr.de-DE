@@ -12,15 +12,14 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-- Strat_O365_Enterprise
 - Ent_Architecture
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 description: 'Zusammenfassung: Informationen zu Microsoft-Clouddiensten und -Plattformen. Lesen Sie unsere Enterprise-Cloud-Roadmap, erkunden Sie unsere Cloud-Architekturreihe usw.'
-ms.openlocfilehash: bf8015d1a3876276a5a7f15be7e289d1984e9193
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: ccc10e2ba369d711c26936a88385fdb3c1cae3ac
+ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -60,7 +59,7 @@ Hier finden Sie Poster, Symbolsätze, Community-Ressourcen und andere Ressourcen
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht für den Enterprise-Cloud-Roadmap](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Microsoft's Enterprise Cloud Roadmap](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Blättern Sie durch die einzelnen Sway-Anzeigen, um auf Ressourcen zuzugreifen, die die umfassendste Cloudlösung der Branche beschreiben.  <br/> |
+|[![Miniaturansicht für den Enterprise-Cloud-Roadmap](images/c8b293b9-5992-4d29-b579-a6bbbd59d8d6.png)          ](https://aka.ms/cloudarchitecture) <br/> [Enterprise-Cloud-Roadmap von Microsoft](https://aka.ms/cloudarchitecture) (https://aka.ms/cloudarchitecture) <br/> |Blättern Sie durch die einzelnen Sway-Anzeigen, um auf Ressourcen zuzugreifen, die die umfassendste Cloudlösung der Branche beschreiben.  <br/> |
    
 <a name="cloudarch"> </a>
 ## <a name="microsoft-cloud-for-enterprise-architects-series"></a>Ressourcen zu Microsoft Cloud für Enterprise-Architekten
