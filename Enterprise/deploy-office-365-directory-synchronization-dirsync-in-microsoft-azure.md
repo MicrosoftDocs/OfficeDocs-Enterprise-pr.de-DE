@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
 description: 'Zusammenfassung: Bereitstellen von Azure AD Connect auf einem virtuellen Computer in Azure, um Konten zwischen dem lokalen Verzeichnis und dem Azure AD-Mandanten Ihres Office 365-Abonnements zu synchronisieren.'
-ms.openlocfilehash: af0c837ead0ddfce31d7f3635f3283f118d26dca
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 31a72d027acd274c9908a7e63e83843bce9cec71
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploy-office-365-directory-synchronization-in-microsoft-azure"></a>Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure
 
@@ -105,7 +105,7 @@ In der folgenden Liste werden die für diese Lösung getroffenen Design-Entschei
     
 - Im lokalen Netzwerk sind ein Domänencontroller und DNS-Server vorhanden.
     
-- Azure AD Connect wird für die Kennworthashsynchronisierung anstatt für das einmalige Anmelden verwendet. Sie müssen keine Infrastruktur für Active Directory-Verbunddienste (AD FS) bereitstellen. Weitere Informationen zu Optionen für einmaliges Anmelden und Kennworthashsynchronisierung finden Sie unter [Ermitteln des zu verwendenden Verzeichnisintegrationsszenarios](https://go.microsoft.com/fwlink/p/?LinkId=393094).
+- Azure Active Directory verbinden führt Hash kennwortsynchronisierung anstelle von einmaliges Anmelden. Sie müssen keinen für die Bereitstellung einer Active Directory-Verbunddienste (AD FS)-Infrastruktur. Finden Sie unter [auswählen die richtige Authentifizierungsmethode für Ihre Azure Active Directory-Identität hybridlösung](http://aka.ms/auth-options), um weitere Informationen über kennwortsynchronisierung Hash und Optionen für einmaliges Anmelden.
     
 Es folgen einige weitere Entwurfsoptionen, die Sie berücksichtigen sollten, wenn Sie diese Lösung in Ihrer Umgebung bereitstellen:
   

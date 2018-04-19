@@ -3,7 +3,7 @@ title: Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 'Zusammenfassung: Mit diesem Test Lab Guide können eine Test-/Umgebung erstellen, die Office 365 E5, Enterprise Mobilität + Sicherheit (zur Abstimmung) E5 und einem Computer mit Windows 10 Enterprise enthält.'
-ms.openlocfilehash: 47557b7d7bdb09e2ce2731a17d6e4b35ddcd063d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 9ef1c13d7ae194ff4ba31abaf379529220ffa14f
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="the-microsoft-365-enterprise-devtest-environment"></a>Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung
 
@@ -29,11 +29,14 @@ Dieser Artikel enthält eine schrittweise Anleitung zum Erstellen einer vereinfa
   
 ## <a name="phase-1-create-your-office-365-e5-subscription"></a>Phase 1: Erstellen des Office 365 E5-Abonnements
 
-Führen Sie die Schritte in Phase 2 und Phase 3 des [Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md) von einer Test-/Lightweight Office 365-Umgebung erstellen, wie in Abbildung 1 dargestellt.
+Führen Sie die Schritte in Phase 2 und Phase 3 der [Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md) zu eine Test-/Lightweight Office 365-Umgebung erstellen, wie in Abbildung 1 dargestellt.
   
 **Abbildung 1: Ihr Office 365 E5-Abonnement mit der Mandanten und Benutzerkonten von Azure Active Directory (AD)**
 
 ![Phase 1 der Microsoft 3656 Enterprise-Entwicklungs-/Testumgebung](images/65bb027b-fb59-46eb-aec2-38c0af425168.png)
+
+> [!NOTE]
+> Das Test-Abonnement von Office 365 E5 ist 30 Tage bis 60 Tage auf einfache Weise erweitert werden kann. Erstellen Sie für eine permanente Test-/-Umgebung ein neues kostenpflichtiges Abonnement mit einer kleinen Anzahl von Lizenzen. 
   
 ## <a name="phase-2-add-ems"></a>Phase 2: Hinzufügen von EMS
 
@@ -66,7 +69,7 @@ Zunächst fügen Sie Test zur Abstimmung E5-Abonnement hinzu, und weisen Sie ein
   
 Ihre Entwicklungs-/Testumgebung verfügt nun über Folgendes:
   
-- Office 365 E5 Enterprise- und EMS-Testabonnements mit derselben Organisation und demselben Azure AD-Mandanten mit Ihrer Liste von Benutzerkonten.
+- Office 365 E5 Unternehmen und zur Abstimmung E5 Testabonnements Freigabe den gleichen Azure AD-Mandanten mit der Liste der Benutzerkonten.
 - Alle Ihre entsprechenden Benutzerkonten (globaler Administrator oder alle fünf Benutzerkonten) werden von Office 365 E5 und zur Abstimmung E5 aktiviert.
     
 Abbildung 2 zeigt die Konfiguration nach dem Hinzufügen von EMS.
@@ -206,3 +209,4 @@ Anhand der folgenden weiteren Artikel erfahren Sie mehr über die Funktionen von
 - [Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
 - [Bereitstellen von Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise)
 - [Eine Microsoft-Cloud Dev/testumgebung](the-one-microsoft-cloud-dev-test-environment.md)
+- [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)

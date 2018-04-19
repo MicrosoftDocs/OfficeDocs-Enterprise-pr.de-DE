@@ -3,7 +3,7 @@ title: Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/04/2018
+ms.date: 04/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Zusammenfassung: Verwenden dieser Test Lab Guide an um eine Testversion Office 365-Abonnement für Test- oder Test-/zu erstellen.'
-ms.openlocfilehash: 12de8b5dbd468d292e824e5ed3245fc2141cc65c
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 61c1fc5a997eaa0a524d49e7806fc8bb102ee281
+ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 
@@ -71,22 +71,9 @@ Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Un
 
 1. Für die einfache Office 365 Dev/Test-Umgebung, öffnen Sie auf Ihrem Computer den Internetbrowser, und wechseln Sie zum [https://aka.ms/e5trial](https://aka.ms/e5trial). 
     
-    Für die Test-/simulierten Enterprise Office 365-Umgebung:
-    
-  - Über das [Portal Azure](https://portal.azure.com)Herstellen einer Verbindung mit der CORP CLIENT1 mit\\Konto User1 an.
-    
-  - Öffnen Sie eine Windows PowerShell-Eingabeaufforderung auf Administratorebene, und führen Sie die folgenden Befehle aus:
-    
-  ```
-  Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Set-ItemProperty -Path "HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
-Stop-Process -Name Explorer -Force
-  ```
+    Verbinden Sie für die simulierten Enterprise Office 365 Dev/Test-Umgebung CLIENT1 mit dem Konto corp\user1 an über das Portal Azure.
 
-    > [!TIP]
-    > Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.
-  
-  - Klicken Sie auf der Startseite, klicken Sie auf **Internet Explorer** , und gehen Sie zu [https://aka.ms/e5trial](https://aka.ms/e5trial).
+    Führen Sie auf der Startseite Microsoft Edge, und wechseln Sie zu [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
 2. Geben Sie auf der Seite **Willkommen, fangen Sie wissen** :
     
@@ -161,6 +148,8 @@ $licAssignment= $orgName + ":ENTERPRISEPREMIUM"
 $userName= "user2@" + $orgName + ".onmicrosoft.com"
 New-MsolUser -DisplayName "User 2" -FirstName User -LastName 2 -UserPrincipalName $userName -UsageLocation $loc -LicenseAssignment $licAssignment
 ```
+> [!TIP]
+> Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-fe3d7a34) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.
 
 Beachten Sie aus der Anzeige des Befehls **New-MsolUser** das generierte Kennwort für das Konto des Benutzers 2, und tragen sie Sie an einem sicheren Ort.
   
@@ -302,6 +291,6 @@ Erweitern Sie Ihre Office 365-Entwicklungs-/Testumgebung um zusätzliche Microso
   
 - [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
   
- - [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+- [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
 
 
