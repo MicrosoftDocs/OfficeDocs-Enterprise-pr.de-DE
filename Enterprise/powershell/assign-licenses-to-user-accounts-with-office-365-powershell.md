@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
-description: "Erläutert, wie Office 365 PowerShell zuweisen eine Office 365-Lizenz nicht lizenzierten Benutzern."
-ms.openlocfilehash: 688e2775e7a028cd9dbe0c8ea27a7f3a453b5279
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Erläutert, wie Office 365 PowerShell zuweisen eine Office 365-Lizenz nicht lizenzierten Benutzern.
+ms.openlocfilehash: ce8e8c26e929132a8d4beb0f71e18c127064acbe
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell
 
@@ -66,7 +66,7 @@ Wenn Sie mehreren nicht lizenzierten Benutzern eine Lizenz zuweisen möchten, ve
 $x = Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>]; $x | foreach {Set-MsolUserLicense -AddLicenses "<AccountSkuId>"}
 ```
 
- **Notizen**
+ **Anmerkungen**
   
 - Sie können einem Benutzer nicht mehrere Lizenzen aus dem gleichen Lizenzierungsplan zuweisen.
     
@@ -139,7 +139,7 @@ Ist Sie Schritte: Rufen Sie einfach das **Set-MsolUserLicense** -Cmdlet, um sich
   
 Wenn **Set-MsolUserLicense** abgeschlossen ist, wird etwa Folgendes sehen Sie auf dem Bildschirm angezeigt:
   
- `PS C:\\windows\\system32>`
+ `PS C:\windows\system32>`
   
 Es wird nicht mit anderen Worten, aussehen wie etwas geschehen ist. Zum bestätigen, dass der Benutzer eine Lizenz zugewiesen wurde, führen Sie einen Befehl ähnlich dem folgenden:
   
@@ -224,7 +224,7 @@ Get-MsolUser -All | Where-Object {$_.UsageLocation -eq $null}
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 <a name="SeeAlso"> </a>
 
 In den folgenden zusätzlichen Themen finden Sie weitere Informationen zum Verwalten von Benutzern mit Office 365 PowerShell:

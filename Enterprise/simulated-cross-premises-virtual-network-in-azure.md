@@ -15,11 +15,11 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 0a3555dc-6f96-49a5-b9e2-7760e16630b3
 description: 'Zusammenfassung: Erstellen eines virtuellen Netzwerks simulierten standort체bergreifenden in Microsoft Azure als Test-/Umgebung.'
-ms.openlocfilehash: 41988e8201e896a7c1900b645e6c38357d0bfcd0
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+ms.openlocfilehash: 775c5b19de75ac63cbc3da7fb4e6dc21cb10212c
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="simulated-cross-premises-virtual-network-in-azure"></a>Simuliertes standort체bergreifendes virtuelles Netzwerk in Azure
 
@@ -76,7 +76,7 @@ In dieser Phase erstellen und konfigurieren Sie das neue virtuelle XPrem-Netzwer
 Starten Sie zun채chst eine Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
   
 > [!NOTE]
-> Verwenden Sie den folgenden Befehl wird die neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!HINWEIS] In den folgenden Befehlss채tzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.
   
@@ -85,7 +85,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0) zum Abrufen einer Textdatei, die alle von PowerShell-Befehlen in diesem Artikel enth채lt.
+> [!TIPP] Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-7844edd0), um eine Textdatei zu erhalten, die alle PowerShell-Befehle in diesem Artikel enth채lt.
   
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
@@ -173,7 +173,7 @@ Konfigurieren Sie als N채chstes DC2 als Replikatdom채nencontroller f체r die Dom�
   
 ```
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
-Install-ADDSDomainController -Credential (Get-Credential CORP\\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\\NTDS" -LogPath "F:\\Logs" -SysvolPath "F:\\SYSVOL"
+Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName "corp.contoso.com" -InstallDns:$true -DatabasePath "F:\NTDS" -LogPath "F:\Logs" -SysvolPath "F:\SYSVOL"
 ```
 
 Beachten Sie, dass Sie aufgefordert werden, geben Sie sowohl die CORP\\User1 Kennwort und Kennwort Directory Services wiederherstellen Modus (Verzeichnisdienst-Wiederherstellungsmodus) und DC2 neu zu starten. 
