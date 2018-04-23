@@ -1,5 +1,5 @@
 ---
-title: "Verwenden von PowerShell zum Ausführen einer IMAP-Migration zu Office 365"
+title: Verwenden von PowerShell zum Ausführen einer IMAP-Migration zu Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,14 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
-description: "Zusammenfassung: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine IMAP-Migration zu Office 365 auszuführen."
-ms.openlocfilehash: 50f97d858b7e7f00ac3cb1e0a239928badca215a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine IMAP-Migration zu Office 365 auszuführen.'
+ms.openlocfilehash: 7f50097cc918d0c334ab34ba48624df8c43c5d1e
+ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer IMAP-Migration zu Office 365
 
@@ -183,7 +183,7 @@ Sie können das [New-MigrationBatch](https://go.microsoft.com/fwlink/p/?LinkId=5
 Der folgende Exchange Online PowerShell-Befehl startet automatisch den Migrationsbatch namens „IMAPBatch1“ mit den IMAP-Endpunkt namens „IMAPEndpoint“:
   
 ```
-New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\\Users\\Administrator\\Desktop\\IMAPmigration_1.csv")) -AutoStart
+New-MigrationBatch -Name IMAPBatch1 -SourceEndpoint IMAPEndpoint -CSVData ([System.IO.File]::ReadAllBytes("C:\Users\Administrator\Desktop\IMAPmigration_1.csv")) -AutoStart
 ```
 
 #### <a name="verify-it-worked"></a>Stellen Sie die Funktion sicher
