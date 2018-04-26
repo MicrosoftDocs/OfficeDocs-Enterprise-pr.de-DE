@@ -14,16 +14,16 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Aufgaben in Office 365 Admin Center über die Befehlszeile ausführen.'
-ms.openlocfilehash: 71b8c8d61a914fa7fd036fadb7e17ca3f66cd639
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mithilfe von PowerShell für Office 365 Admin Center Aufgaben über die Befehlszeile ausführen.'
+ms.openlocfilehash: 65ddb3c66d2cd69ad1ecb468ec762667a0b07a84
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
- **Zusammenfassung:** Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Office 365-Verwaltungsaufgaben über die Befehlszeile ausführen.
+ **Zusammenfassung:** Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Verwaltungsaufgaben über die Befehlszeile ausführen.
   
 Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehlszeile zu verwalten. Herstellen einer Verbindung mit Office 365 PowerShell ist ein einfacher dreistufiger Prozess, in dem Sie Installieren der erforderlichen Software, die erforderliche Software ausführen und dann verbinden mit Office 365-Organisation. 
 
@@ -64,8 +64,7 @@ Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal,
   - Wenn Sie aufgefordert werden, installieren Sie das Modul aus PSGallery, geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
   - Schließen Sie nach der Installation das PowerShell-Befehlsfenster.
     
-### <a name="step-2-connect-to-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Office 365-Abonnements
-<a name="step3"> </a>
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
 
 So verbinden Sie mit nur einem *Kontonamen und das Kennwort*:
   
@@ -93,7 +92,6 @@ Connect-MsolService
 4. Befolgen Sie die Anweisungen im Dialogfeld **Azure Active Directory PowerShell** zusätzliche Authentifizierungsinformationen, beispielsweise einen Überprüfungscode bereitstellen, und klicken Sie dann auf **Anmelden**.
     
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
-<a name="step3"> </a>
 
 Wenn Sie keine Fehler erhalten, verbunden Sie erfolgreich. Ein schneller Test ein Office 365-Cmdlet ausgeführt wird – beispielsweise **Get-MsolUser** – und die Ergebnisse anzuzeigen.
   
@@ -119,10 +117,10 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
     
 - **Wenn Sie eine Verbindung Fehlermeldung angezeigt wird, finden Sie unter in diesem Thema:** ["Connect-MsolService: Ausnahme vom Typ ausgelöst wurde" Fehler](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Kontaktaufnahme mit Azure Active Directory PowerShell Graph-Modul
 <a name="ConnectV2"> </a>
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Kontaktaufnahme mit Azure Active Directory PowerShell Graph-Modul
 
-Befehle in Azure Active Directory PowerShell für Diagramm Modul enthalten "AzureAD" in ihrem Cmdlet-Namen.
+Befehle im Modul [Azure Active Directory-PowerShell-Modul Diagramm](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) enthalten "AzureAD" in ihrem Cmdlet-Namen.
 
 Verwenden Sie für Prozeduren, die die neuen in Azure Active Directory PowerShell-Cmdlets für Diagramm Modul erforderlich ist diese Schritte zum Installieren des Moduls und Verbinden mit Office 365-Abonnements.
 
@@ -146,7 +144,7 @@ Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal,
 Wenn Sie aufgefordert werden, zum Installieren eines Moduls aus einer nicht vertrauenswürdigen Repository, geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
 
 
-### <a name="step-2-connect-to-office-365"></a>Schritt 2: Verbinden Sie mit Office 365
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
 
 Die Verbindung zum Office 365-Abonnement mit einem *Kontonamen und das Kennwort*:
     

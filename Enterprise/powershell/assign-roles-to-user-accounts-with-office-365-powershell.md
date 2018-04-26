@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Zusammenfassung: Informationen zum Verwenden von Office 365 PowerShell und des Add-MsolRoleMember -Cmdlets zum Zuweisen von Rollen zu Benutzerkonten.'
-ms.openlocfilehash: 97ecf29e10d14843322f3062ef16da14f16f7a2a
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 2af4409020cc4a4e3dd6ff3b8bfcf5f1138f26cd
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Zuweisen von Rollen zu Benutzerkonten mit Office 365 PowerShell
 
@@ -124,14 +124,7 @@ $roleChanges=Import-Csv $fileName | ForEach {Add-MsolRoleMember -RoleMemberEmail
 
 ## <a name="see-also"></a>Siehe auch
 
-#### 
-
-[Verwalten von Benutzerkonten und Lizenzen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-  
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
-  
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-#### 
-
-[Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)
-
+- [Verwalten von Benutzerkonten und Lizenzen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+- [Add-MsolRoleMember](https://msdn.microsoft.com/library/dn194120.aspx)

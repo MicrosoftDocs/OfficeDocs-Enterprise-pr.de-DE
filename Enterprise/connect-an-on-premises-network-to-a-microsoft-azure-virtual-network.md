@@ -3,7 +3,7 @@ title: Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Ne
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/23/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,18 +14,20 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
-description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten.'
-ms.openlocfilehash: 559c1330c3f39ea52b1cf5c3127782dddf37f95b
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: 'Zusammenfassung: Informationen zum Konfigurieren einer standortübergreifenden Azure virtuelles Netzwerk für Office Server-arbeitsauslastungen mit einer Standort-zu-Standort-VPN-Verbindung.'
+ms.openlocfilehash: 818e709c8177c6533bfa02da00170bf7fdb5a0ac
+ms.sourcegitcommit: 3b474e0b9f0c12bb02f8439fb42b80c2f4798ce1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
  **Zusammenfassung:** Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten.
   
-Ein standortübergreifendes virtuelles Azure-Netzwerk ist mit Ihrem lokalen Netzwerk verbunden, sodass Ihr Netzwerk durch Subnetze und virtuelle Computer, die in Azure-Infrastrukturdiensten gehostet werden, erweitert wird. Durch diese Verbindung können Computer in Ihrem lokalen Netzwerk direkt auf virtuelle Computer in Azure zugreifen und umgekehrt. Ein DirSync-Server beispielsweise, der auf einem virtuellen Azure-Computer ausgeführt wird, muss Kontenänderungen von lokalen Domänencontrollern abfragen und diese Änderungen mit dem Office 365-Abonnement synchronisieren. In diesem Artikel wird gezeigt, wie Sie ein standortübergreifendes virtuelles Azure-Netzwerk einrichten, das virtuelle Azure-Computer hosten kann.
+Eine standortübergreifende, lokalen Netzwerk, erweitern Ihr Netzwerk zum Einschließen von Subnetze und gehosteten virtuellen Computer in Azure Infrastructure Services Azure-virtuelles Netzwerk verbunden ist. Diese Verbindung kann Computer in Ihrem lokalen Netzwerk für virtuelle Computer in Azure und umgekehrt direkten Zugriff auf. 
+
+Muss beispielsweise Abfragen Ihrer lokalen Domänencontroller für Änderungen an Konten und synchronisiert diese Änderungen mit Ihrem Office 365-Abonnement ein Verzeichnissynchronisierungsservers auf einer Azure-virtueller Computer ausgeführt. Dieser Artikel beschreibt, wie Sie eine standortübergreifende Azure virtual einrichten Netzwerk mithilfe einer Standort-zu-Standort virtuelles privates Netzwerk (VPN) Verbindung, die zum Hosten von Azure-virtuelle Computer bereit ist.
 
 ## <a name="overview"></a>Übersicht
 
@@ -33,13 +35,22 @@ Die virtuellen Computer in Azure müssen nicht von Ihrer lokalen Umgebung isolie
   
 ![Lokales Netzwerk, das über eine Standort-zu-Standort-VPN-Verbindung mit Microsoft Azure verbunden ist](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
   
-In diesem Diagramm sind zwei Netzwerke über ein Standort-zu-Standort-VPN (virtuelles privates Netzwerk) verbunden: das lokale Netzwerk und das virtuelle Azure-Netzwerk. Die Standort-zu-Standort-VPN-Verbindung wird von einem VPN-Gerät im lokalen Netzwerk und einem Azure-VPN-Gateway im virtuellen Azure-Netzwerk beendet. Das virtuelle Azure-Netzwerk weist virtuelle Computer auf. Von den virtuellen Computern im virtuellen Azure-Netzwerk ausgehender Netzwerkdatenverkehr wird an das VPN-Gateway weitergeleitet, das dann den Datenverkehr über die Standort-zu-Standort-VPN-Verbindung zum VPN-Gerät im lokalen Netzwerk weiterleitet. Anschließend leitet die Routinginfrastruktur des lokalen Netzwerks den Datenverkehr an sein Ziel.
+In der Abbildung sind zwei Netzwerke über eine Standort-zu-Standort-VPN-Verbindung verbunden sind: das lokale Netzwerk und der Azure-virtuelles Netzwerk. Die Standort-zu-Standort-VPN-Verbindung ist:
+
+- Zwischen zwei Endpunkte, die adressierbar und auf das öffentliche Internet gespeichert sind.
+- Durch eine VPN-Gerät im lokalen Netzwerk und ein Azure VPN-Gateway auf der Azure-virtuelles Netzwerk beendet.
+
+Das Azure-virtuelle Netzwerk hostet virtuellen Computern. Netzwerkdatenverkehr vom virtuellen Computer in der Azure-virtuelles Netzwerk ruft an das VPN-Gateway weitergeleitet, das leitet den Datenverkehr über die Standort-zu-Standort-VPN-Verbindung mit dem VPN-Gerät im lokalen Netzwerk. Die routing-Infrastruktur des lokalen Netzwerks leitet den Datenverkehr an den Empfänger weiter.
+
+>[!Note]
+>Sie können auch, [ExpressRoute](https://azure.microsoft.com/services/expressroute/), also eine direkte Verbindung zwischen Ihrer Organisation und Microsoft Netzwerk. Datenverkehr über ExpressRoute nicht über das öffentliche Internet übertragen. In diesem Artikel wird die Verwendung von ExpressRoute nicht beschrieben.
+>
   
 Um die VPN-Verbindung zwischen dem virtuellen Azure-Netzwerk und Ihrem lokalen Netzwerk einzurichten, führen Sie die folgenden Schritte aus: 
   
 1. **Lokal:** Definieren und erstellen Sie eine lokale Netzwerkroute für den Adressraum des virtuellen Azure-Netzwerks, die auf das lokale VPN-Gerät verweist.
     
-2. **Microsoft Azure:** Richten Sie ein virtuelles Azure-Netzwerk mit einer Standort-zu-Standort-VPN-Verbindung ein. Dieser Artikel beschreibt nicht die Verwendung von[ExpressRoute](https://azure.microsoft.com/services/expressroute/).
+2. **Microsoft Azure:** Erstellen eines Azure-virtuellen Netzwerks mit einer Standort-zu-Standort-VPN-Verbindung. 
     
 3. **Lokal:** Konfigurieren Sie Ihr lokales VPN-Gerät auf Hardware- oder Softwarebasis zum Beenden der VPN-Verbindung, die IPsec (Internet Protocol Security) verwendet.
     
@@ -51,7 +62,7 @@ Nachdem Sie die Standort-zu-Standort VPN-Verbindung hergestellt haben, fügen Si
 ### <a name="prerequisites"></a>Voraussetzungen
 <a name="Prerequisites"></a>
 
-- Ein Azure-Abonnement. Informationen zu Azure-Abonnements finden Sie auf der [Seite zu Microsoft Azure-Abonnements](https://azure.microsoft.com/pricing/purchase-options/).
+- Ein Azure-Abonnement. Informationen zu Azure-Abonnements wechseln Sie zur [Seite wie zum Erwerben von Azure](https://azure.microsoft.com/pricing/purchase-options/).
     
 - Ein verfügbarer privater IPv4-Adressraum, der dem virtuellen Netzwerk und den Subnetzen zugewiesen wird, der über ausreichende Wachstumskapazität zur Unterstützung der jetzt und künftig benötigten virtuellen Computer verfügt.
     
@@ -328,7 +339,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Phase 3 (optional): Hinzufügen virtueller Computer
 
-Erstellen Sie die virtuellen Computer, die Sie in Azure benötigen. Weitere Informationen finden Sie unter [Erstellen Ihres ersten virtuellen Windows-Computers im Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
+Erstellen Sie die virtuellen Computer benötigten in Azure. Weitere Informationen finden Sie unter [Erstellen eines virtuellen Computers Windows, mit dem Azure-Portal](https://go.microsoft.com/fwlink/p/?LinkId=393098).
   
 Verwenden Sie die folgenden Einstellungen:
   
@@ -347,6 +358,4 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 ## <a name="next-step"></a>Nächster Schritt
   
 [Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
- 
-
 
