@@ -7,7 +7,7 @@ ms.date: 04/11/2017
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +15,11 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 description: 'Zusammenfassung: Hier erhalten Sie die IT-Poster, in denen die Modelle Architektur, Bereitstellung und -Plattformoptionen für SharePoint, Exchange, Skype für Unternehmen und Lync beschrieben.'
-ms.openlocfilehash: ac3ba3f8a0786ec28c9aa6099f288811802bd92d
-ms.sourcegitcommit: 62c0630cc0d2611710e73e0592bddfe093e00783
+ms.openlocfilehash: 79831116df486e1a0ae87c07c01070a5ecd1c4b0
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync
 
