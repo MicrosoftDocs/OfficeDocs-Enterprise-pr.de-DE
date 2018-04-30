@@ -3,17 +3,16 @@ title: Hinzufügen oder Entfernen einer Geo-Administrators
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Informationen Sie zum Hinzufügen oder Entfernen von Geo-Administrator in OneDrive for Business Multi-Geo.
-ms.openlocfilehash: 0007f1ac3c73fa7a2ada562f8da65215f80744ca
-ms.sourcegitcommit: 3f3d2de6c0c5225156cfba01bc980994cd9ae848
+ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
+ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/30/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Hinzufügen oder Entfernen von ein Administrator Geo in OneDrive für Busniess Multi-Geo
 
@@ -29,11 +28,27 @@ Konfigurieren von Geo-Admins ist SharePoint Online-PowerShell-Modul erforderlich
 
 Verwenden Sie die [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) für die Verbindung der Verwaltungskonsole des Speicherorts Geo, wo Sie den Geo-Administrator hinzufügen möchten (Z. B. Connect-SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
 
+Führen Sie zum Anzeigen der vorhandenen Geo-Admins eines Standorts`Get-SPOGeoAdministrator`
+
+### <a name="adding-a-user-as-a-geo-admin"></a>Hinzufügen eines Benutzers als ein Geo-Administrator
+
 Führen Sie zum Hinzufügen eines Benutzers als eine Geo-admin`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
 
-Führen Sie zum Anzeigen der vorhandenen Geo-Admins eines Standorts`Get-SPOGeoAdministrators`
-
 Führen Sie zum Entfernen eines Benutzers als eine Geo Admin eines Standorts`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+
+### <a name="adding-a-group-as-a-geo-admin"></a>Hinzufügen einer Gruppe als eine Geo-admin
+
+Sie können eine Sicherheitsgruppe oder eine e-Mail-aktivierte Sicherheitsgruppe als eine Geo-Portals hinzufügen. (Verteilergruppen und Office 365-Gruppen werden nicht unterstützt.)
+
+Führen Sie zum Hinzufügen einer Gruppe als eine Geo-admin`Add-SPOGeoAdministrator -GroupAlias <alias>`
+
+Führen Sie zum Entfernen einer Gruppe als eine Geo-admin`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+
+Beachten Sie, dass nicht alle Sicherheitsgruppen einen Gruppen-Alias verfügen. Wenn Sie eine Sicherheitsgruppe hinzu, die nicht über einen Alias, und führen Sie [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) zum Abrufen einer Liste von Gruppen verfügt möchten, suchen Sie nach der Sicherheitsgruppe ObjectID, und führen Sie:
+
+`Add-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+Führen Sie zum Entfernen einer Gruppe mithilfe der ObjectID`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 ## <a name="see-also"></a>Siehe auch
 
@@ -42,3 +57,5 @@ Führen Sie zum Entfernen eines Benutzers als eine Geo Admin eines Standorts`Rem
 [Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
+
+[Legen Sie einen Alias (MailNickName) für eine Sicherheitsgruppe](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
