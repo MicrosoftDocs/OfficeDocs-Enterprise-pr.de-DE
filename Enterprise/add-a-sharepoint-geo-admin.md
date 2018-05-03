@@ -8,11 +8,11 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 description: Informationen Sie zum Hinzufügen oder Entfernen von Geo-Administrator in OneDrive for Business Multi-Geo.
-ms.openlocfilehash: 7630597654df9ad78619b94fedc9e18d5b0b721e
-ms.sourcegitcommit: 886b23f590f6187f7a98c1083a3b49359ec2a5c3
+ms.openlocfilehash: b88467cf2f33ec3a3a8bf6c2d6927e69e9f7af65
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Hinzufügen oder Entfernen von ein Administrator Geo in OneDrive für Busniess Multi-Geo
 
@@ -49,6 +49,14 @@ Beachten Sie, dass nicht alle Sicherheitsgruppen einen Gruppen-Alias verfügen. 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 Führen Sie zum Entfernen einer Gruppe mithilfe der ObjectID`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
+
+### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Zugreifen auf das Administrationscenter für einen bestimmten Geo-Speicherort
+
+Zum Verwalten von Einstellungen für OneDrive für ihre Geo-Speicherort müssen Administratoren die OneDrive-Verwaltungskonsole direkt mit der folgenden URL-Format zugreifen:
+
+https://admin.onedrive.com/?geo=<*Geo*>
+
+Beispielsweise ist der OneDrive-Verwaltungskonsole für Kanada finden Sie unter: https://admin.onedrive.com/?geo=CAN.
 
 ## <a name="see-also"></a>Siehe auch
 

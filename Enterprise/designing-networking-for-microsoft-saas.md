@@ -1,5 +1,5 @@
 ---
-title: "Entwerfen von Netzwerken für Microsoft-SaaS"
+title: Entwerfen von Netzwerken für Microsoft-SaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
-description: "Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft SaaS-Dienste, einschließlich Office 365, Microsoft Intune und Dynamics 365, optimieren."
-ms.openlocfilehash: e4d83f9ab88408b3eb5ca98379bbc709ec8f31a7
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft SaaS-Dienste, einschließlich Office 365, Microsoft Intune und Dynamics 365, optimieren.'
+ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Entwerfen von Netzwerken für Microsoft-SaaS
 
@@ -181,8 +181,6 @@ So optimieren Sie Ihr Netzwerk für laufende Synchronisierungen:
 Weitere Informationen finden Sie unter:
   
 - [Netzwerk- und Migrationsplanung für Office 365](https://aka.ms/tune)
-    
-- [Microsoft Virtual Academy-Kurs für die Office 365-Leistungsverwaltung](https://aka.ms/o365perf)
     
 - [ExpressRoute für Office 365](https://aka.ms/expressrouteoffice365)
 

@@ -12,11 +12,11 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren Sie die Microsoft Azure-Infrastruktur Host hohe Verfügbarkeit Verbundauthentifizierung für Office 365.'
-ms.openlocfilehash: aea4fb5b8645f18381b9b9391b91925ffed00aab
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 465c53efe8464ac823ebb3cd0e847a854eed82bb
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -38,17 +38,17 @@ Azure muss diese grundlegenden Komponenten bereitgestellt werden:
 
 Vor dem Konfigurieren der Azure-Komponenten, füllen Sie in den folgenden Tabellen. Hilft Ihnen bei der die Verfahren zum Konfigurieren von Azure, in diesem Abschnitt Drucken und notieren Sie die benötigten Informationen oder Kopieren in diesem Abschnitt in ein Dokument und füllen Sie es aus. Füllen Sie für den Einstellungen der VNet Tabelle V aus.
   
-|**Element**|**Einstellung für die Konfiguration**|**Beschreibung**|**Wert**|
+|**Element**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet Speicherort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet-Adressraum  <br/> |Der Adressraum für das virtuelle Netzwerk (Fragen Sie Ihre IT-Abteilung nach diesem Adressraum.)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine 32 Zeichen zufällige, alphanumerische Zeichenfolge, die verwendet wird, um beide Seiten der Website-zu-Standort-VPN-Verbindung zu authentifizieren. Arbeiten mit Ihrer IT- oder jede Abteilung Sicherheit dieser Schlüsselwert bestimmen. Alternativ finden Sie unter [Erstellen einer zufälligen Zeichenfolge für einen vorinstallierten IPsec-Schlüssel](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird (Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert. Alternativ finden Sie weitere Informationen unter [Create a random string for an IPsec preshared key](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
  **Tabelle V: Konfiguration eines standortübergreifenden virtuellen Netzwerks**
   
-Füllen Sie nun Tabelle S für die Subnetze dieser Lösung aus. Alle Adressräume sollten im CIDR (Classless Inter-Domain Routing)-Format angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.
+Füllen Sie nun Tabelle S für die Subnetze dieser Lösung aus. Alle Adressräume sollten im CIDR (Classless Inter-Domain Routing)-Format angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.
   
 Geben Sie für die ersten drei Subnetze einen Namen und einen einzigen IP-Adressraum aus dem Adressraum des virtuellen Netzwerks an. Gehen Sie wie folgt vor, um den 27-Bit-Adressraum (mit Präfixlänge „/27“) für das Azure-Gatewaysubnetz zu ermitteln:
   
@@ -69,12 +69,12 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
    
  **Tabelle S: Subnetze im virtuellen Netzwerk**
   
-Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
+Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
 |**Element**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |Statische IP-Adresse des DirSync-Servers  <br/> |Die sechste mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |4.  <br/> |Statische IP-Adresse des internen Lastenausgleichs für die AD FS-Server  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |5.  <br/> |Statische IP-Adresse des ersten AD FS-Servers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
@@ -84,7 +84,7 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen 
 |8.  <br/> |Statische IP-Adresse des zweiten Webanwendungsproxy-Servers
   <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 3 definierten Subnetzes  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **Tabelle I: statische IP-Adressen in das virtuelle Netzwerk**
+ **Tabelle I: Statische IP-Adressen im virtuellen Netzwerk**
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
@@ -110,9 +110,9 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
 Jetzt können Sie mit dem Erstellen der Azure-Infrastruktur beginnen, die die Verbundauthentifizierung für Office 365 hosten soll.
   
 > [!NOTE]
-> Verwenden Sie den folgenden Befehl wird die neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
-Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung, und melden Sie sich bei Ihrem Konto an.
+Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung, und melden Sie sich bei Ihrem Konto an.
   
 ```
 Login-AzureRMAccount
@@ -148,7 +148,7 @@ Get-AzureRMResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 
 Tragen Sie die eindeutigen Ressourcengruppennamen in die folgende Tabelle ein.
   
-|**Element**|**Gruppe Ressourcenname**|**Zweck**|
+|**Element**|**Ressourcengruppenname**|**Zweck**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Domänencontroller  <br/> |
 |2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |AD FS-Server  <br/> |
@@ -200,7 +200,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-Im nächsten Schritt erstellen Sie Sicherheitsgruppen für jedes Subnetz, das virtuelle Netzwerk. Informationen zum Subnetz Isolation ausführen, können Sie Regeln für bestimmten Arten von Datenverkehr erteilt oder verweigert eines Subnetzes Netzwerk-Sicherheitsgruppe hinzufügen.
+Nun erstellen Sie Netzwerksicherheitsgruppen für jedes Subnetz, das virtuelle Computer enthält. Um die Isolierung der Subnetze durchzuführen, können Sie Regeln für den jeweiligen Typ von Datenverkehr hinzufügen, der für die Netzwerksicherheitsgruppe eines Subnetzes erlaubt oder zurückgewiesen werden soll.
   
 ```
 # Create network security groups
@@ -261,27 +261,27 @@ Notieren Sie sich jetzt die öffentliche IPv4-Adresse des Azure-VPN-Gateways fü
 Get-AzureRMPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Konfigurieren Sie anschließend Ihre lokale VPN-Gerät an das Gateway Azure VPN-Verbindung. Weitere Informationen finden Sie unter [Configure VPN-Gerät](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Konfigurieren Sie im nächsten Schritt die Verbindung zwischen dem lokalen VPN-Gerät und dem Azure-VPN-Gateway. Weitere Informationen finden Sie im Artikel zum Thema [Konfigurieren von VPN-Geräten](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Sie benötigen folgende Informationen zum Konfigurieren Ihres lokalen VPN-Geräts:
   
 - Die öffentliche IPv4-Adresse des Azure-VPN-Gateways
     
-- Der IPSec-vorinstallierten Schlüssel für die Standort-zu-Standort-VPN-Verbindung (Tabelle V - Element 5 - Wert-Spalte).
+- Den vorinstallierten IPsec-Schlüssel für die Standort-zu-Standort-VPN-Verbindung (Tabelle V, Element 5, Spalte „Wert")
     
 Vergewissern Sie sich im nächsten Schritt, dass der Adressraum des virtuellen Netzwerks aus Ihrem lokalen Netzwerk erreichbar ist. In der Regel fügen Sie dazu Ihrem VPN-Gerät eine dem Adressraum des virtuellen Netzwerks entsprechende Route hinzu und senden diese Route anschließend an die restliche Weiterleitungsinfrastruktur Ihres Organisationsnetzwerks. Erkundigen Sie sich bei Ihrer IT-Abteilung, wie Sie vorgehen sollen.
   
 Definieren Sie nun die Namen von drei Verfügbarkeitsgruppen. Füllen Sie Tabelle A aus.  
   
-|**Element**|**Zweck**|**Verfügbarkeit des Namens**|
+|**Element**|**Zweck**|**Name der Verfügbarkeitsgruppe**|
 |:-----|:-----|:-----|
 |1.  <br/> |Domänencontroller  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |2.  <br/> |AD FS-Server  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
 |3.  <br/> |Webanwendungsproxy-Server  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
    
- **Tabelle A: verfügbarkeitssätze**
+ **Tabelle A: Verfügbarkeitsgruppen**
   
-Sie benötigen diese Namen bei der Erstellung der virtuellen Computer in den Phasen 2, 3 und 4.
+Sie benötigen diese Namen bei der Erstellung der virtuellen Computer in den Phasen 2, 3 und 4.
   
 Erstellen Sie die neuen Verfügbarkeitsgruppen mithilfe der folgenden Azure PowerShell-Befehle.
   
@@ -289,13 +289,13 @@ Erstellen Sie die neuen Verfügbarkeitsgruppen mithilfe der folgenden Azure Pow
 $locName="<the Azure location for your new resource group>"
 $rgName="<Table R - Item 1 - Resource group name column>"
 $avName="<Table A - Item 1 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 2 - Resource group name column>"
 $avName="<Table A - Item 2 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 $rgName="<Table R - Item 3 - Resource group name column>"
 $avName="<Table A - Item 3 - Availability set name column>"
-New-AzureRMAvailabilitySet -Name $avName -ResourceGroupName $rgName -Location $locName
+New-AzureRMAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locName -Sku Aligned  -PlatformUpdateDomainCount 5 -PlatformFaultDomainCount 2
 ```
 
 Haben Sie diese Phase erfolgreich abgeschlossen, sieht Ihre Konfiguration wie folgt aus.
