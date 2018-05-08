@@ -14,11 +14,11 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Benutzern, -Gruppen und -Websitegruppen.'
-ms.openlocfilehash: 752c7d24ee6d0e77ee1cc4a65322957324767531
-ms.sourcegitcommit: 74cdb2534bce376abc9cf4fef85ff039c46ee790
+ms.openlocfilehash: 77b589ea036ecb7d7a47b7ba6c442047529c19cf
+ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Verwalten von SharePoint Online mit Office 365 PowerShell
 
@@ -36,9 +36,7 @@ Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung
     
 ## <a name="see-also"></a>Siehe auch
 
-#### 
+- [Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
-  
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+- [Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 
