@@ -4,21 +4,24 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 ms.date: 5/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Normal
-ms.collection: ''
-ms.custom: ''
-ms.assetid: ''
+ms.service: Office 365 Administration
+localization_priority: None
+ms.collection: Strat_O365_Enterprise
 description: 'Zusammenfassung: Grundlegendes zu Office 365-Clientrichtlinien, die von Android, Browser, iOS, Mac OS X, Windows und Windows Mobile unterstützt werden.'
-ms.openlocfilehash: 1da917ec40fb40d7a13dc5fb426f640b178877f4
-ms.sourcegitcommit: 5c5489db5d1000296945c9774198bd911bee4f14
+ms.openlocfilehash: 663d2e2a127b03524f7f402acee3d6249870321a
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="office-365-client-policies---client-and-app-view"></a>Office 365-Clientrichtlinien - Client und App-Ansicht
+**Ändern der Ansicht dieser Informationen möchten? Wählen Sie aus einer anderen Ansicht unten:**
+> [!div class="op_single_selector"] 
+> - [Client & App-Ansicht](office-365-client-policies-app-view.md)
+> - [Richtlinie anzeigen](office-365-client-policies-policy-view.md)
+
 Verwenden Sie die folgenden Listen, um zu bestimmen, welche Office 365-Client-Richtlinien für die einzelnen Microsoft-Clientanwendungen unterstützt werden.
 
 ## <a name="delve"></a>Delve

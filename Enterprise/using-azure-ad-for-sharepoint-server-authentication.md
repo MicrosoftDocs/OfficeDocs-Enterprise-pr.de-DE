@@ -1,5 +1,5 @@
 ---
-title: "Verwenden von Azure AD für SharePoint Server-Authentifizierung"
+title: Verwenden von Azure AD für SharePoint Server-Authentifizierung
 ms.author: tracyp
 author: MSFTTracyP
 ms.reviewer:
@@ -16,13 +16,13 @@ ms.collection:
 - Ent_O365
 - Ent_O365_Hybrid
 ms.custom: Ent_Solutions
-ms.assetid: 
+ms.assetid: ''
 description: 'Zusammenfassung: Erfahren Sie, wie die Azure Access Control Service umgehen und SAML 1.1 Ihrer SharePoint Server-Benutzer mit Azure Active Directory authentifiziert zu verwenden.'
-ms.openlocfilehash: e57414c3ed5af5c02b719d0c3639542e154be5bf
-ms.sourcegitcommit: fbf33e74fd74c4ad6d60b2214329a3bbbdb3cc7c
+ms.openlocfilehash: 1ab0bb3215531ca8b2d0fda8d70874f966438759
+ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="using-azure-ad-for-sharepoint-server-authentication"></a>Verwenden von Azure AD für SharePoint Server-Authentifizierung
 
@@ -168,7 +168,7 @@ Der Benutzer in Azure AD Berechtigung erteilt wurde, aber auch muss die Berechti
 7. Geben Sie in das Textfeld **Suchen** den Namen-Anmeldung für einen Benutzer in Ihrem Verzeichnis aus, und klicken Sie auf **Suchen**. </br>Beispiel: *demouser@blueskyabove.onmicrosoft.com*.
 8. Unter der Überschrift AzureAD in der Listenansicht die Name-Eigenschaft, und klicken Sie auf **Hinzufügen** klicken Sie auf **OK** , um das Dialogfeld zu schließen.
 9. Klicken Sie unter Berechtigungen auf **Vollzugriff**.</br>![Erteilen von Vollzugriff, die einem Benutzer Ansprüche](images/SAML11/fig12-grantfullcontrol.png)</br>
-10. Klicken Sie auf **Fertig stellen**, und klicken Sie dann auf **OK**.
+10. Klicken Sie auf **Fertig stellen** und anschließend auf **OK**.
 
 ## <a name="step-6-add-a-saml-11-token-issuance-policy-in-azure-ad"></a>Schritt 6: Hinzufügen einer SAML 1.1 tokenausstellung Richtlinie in Azure AD
 
@@ -210,6 +210,22 @@ $cert= New-Object System.Security.Cryptography.X509Certificates.X509Certificate2
 New-SPTrustedRootAuthority -Name "AzureAD" -Certificate $cert
 Get-SPTrustedIdentityTokenIssuer "AzureAD" | Set-SPTrustedIdentityTokenIssuer -ImportTrustCertificate $cert
 ```
+## <a name="configuring-one-trusted-identity-provider-for-multiple-web-applications"></a>Konfigurieren von einem vertrauenswürdigen Identitätsanbieter für mehrere Webanwendungen
+Die Konfiguration für eine einzelne Webanwendung funktioniert, aber zusätzliche Konfiguration erforderlich, wenn Sie den gleichen vertrauenswürdigen Identitätsanbieter für mehrere Webanwendungen verwenden möchten. Nehmen wir beispielsweise an, die wir hatte erweiterte so verwenden Sie die URL eine Webanwendung `https://portal.contoso.local` und möchten nun die Benutzer zu authentifizieren `https://sales.contoso.local` sowie. Zu diesem Zweck müssen wir aktualisieren den Identitätsanbieter Parameters WReply berücksichtigt und aktualisieren die Registrierung der Anwendung in Azure Active Directory eine Antwort-URL hinzufügen.
+
+1. Öffnen Sie in der Azure-Verwaltungsportal das Azure AD-Verzeichnis. Klicken Sie auf **App Registrierungen**und dann auf **Alle Programme anzeigen**. Klicken Sie auf die Anwendung, die Sie zuvor erstellt haben (SharePoint SAML-Integration).
+2. Klicken Sie auf **Einstellungen**.
+3. Klicken Sie in das Blade Einstellungen auf **Antwort URLs**. 
+4. Hinzufügen der URL für die zusätzlichen Webservern-Anwendung (z. B. `https://sales.contoso.local`), und klicken Sie auf **Speichern**. 
+5. Öffnen Sie die **SharePoint 2016-Verwaltungsshell** und führen Sie die folgenden Befehle, mit dem Namen eines der vertrauenswürdigen identitätstokenherausgeber, die Sie zuvor verwendet, auf dem SharePoint-Server.
+
+```
+$t = Get-SPTrustedIdentityTokenIssuer "AzureAD"
+$t.UseWReplyParameter=$true
+$t.Update()
+```
+6. In der Zentraladministration wechseln Sie zu der Anwendung, und aktivieren Sie den vorhandenen vertrauenswürdigen Identitätsanbieter. Denken Sie daran, konfigurieren die URL der Anmeldeseite auch als einer benutzerdefinierten Anmeldeseite `/_trust/`.
+7. Klicken Sie in der Zentraladministration klicken Sie auf die Webanwendung aus, und wählen Sie **Benutzerrichtlinie**. Hinzufügen eines Benutzers mit den entsprechenden Berechtigungen an, wie zuvor in diesem Artikel veranschaulicht.
 
 ## <a name="fixing-people-picker"></a>Beheben von der Personenauswahl
 Benutzer können jetzt melden Sie sich von Identitäten von Azure AD SharePoint 2016, aber es sind noch Möglichkeiten zur Verbesserung der benutzerfreundlichkeit. Suchen nach einem Benutzer werden beispielsweise mehrere Suchergebnisse in der Personenauswahl. Es ist ein Suchergebnis für jede der 3 Anspruchstypen, die in der forderungszuordnung erstellt wurden. Um einen Benutzer mithilfe der Personenauswahl auszuwählen, müssen Sie genau Geben Sie ihren Benutzernamen und wählen Sie den **Namen** dem Anspruch das Ergebnis.
