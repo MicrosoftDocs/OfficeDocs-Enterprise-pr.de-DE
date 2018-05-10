@@ -11,11 +11,11 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Erweitern Sie Ihre Office 365-Anwesenheit auf mehrere geografische Regionen mit Multi-Geo-Funktionen in Exchange Online.
-ms.openlocfilehash: 6378f8a010b790674f07150aa39cbbc38c60b7fe
-ms.sourcegitcommit: 63e2844daa2863dddcd84819966a708c434e8580
+ms.openlocfilehash: ea00ab52142e92e122273ab4ba718e98bd94b572
+ms.sourcegitcommit: 12d3223cc2d6bf39a8960409a923254e1790fd2f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -65,7 +65,7 @@ Exchange Online synchronisiert die **PreferredDataLocation** -Eigenschaft aus de
 
 - Wenn keine Geo angegeben ist, wird das Postfach in der standardmäßigen Geo platziert werden.
 
-**Hinweis**: Multi-Geo-Funktionen und Skype für Business Online gehostet Regional Besprechungen, verwenden Sie die **PreferredDataLocation** -Eigenschaft auf User-Objekte, um Dienste zu suchen. Wenn Sie **PreferredDataLocation** Werte für Benutzerobjekte Regional gehosteten Besprechungen konfigurieren, wird das Postfach und OneDrive für diese Benutzer automatisch nach der angegebenen Geo verschoben, nachdem Multi-Geo auf dem Office 365-Mandanten aktiviert ist.
+**Hinweis**: Multi-Geo-Funktionen und Skype für Business Online gehostet Regional Besprechungen, verwenden Sie die **PreferredDataLocation** -Eigenschaft auf User-Objekte, um Dienste zu suchen. Wenn Sie **PreferredDataLocation** Werte für Benutzerobjekte Regional gehosteten Besprechungen konfigurieren, wird das Postfach für diesen Benutzer automatisch nach der angegebenen Geo verschoben, nachdem Multi-Geo auf dem Office 365-Mandanten aktiviert ist.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Einschränkungen für Multi-Geo in Exchange Online
 1. Nur Benutzerpostfächer, Ressourcenpostfächer (Raum- und Equipment Mailboxes) und freigegebene Postfächer Multi-Geo-Features nicht unterstützt. Sie können nur Postfächer für Öffentliche Ordner und Office 365-Gruppen in der Kunde home Geo platzieren.
