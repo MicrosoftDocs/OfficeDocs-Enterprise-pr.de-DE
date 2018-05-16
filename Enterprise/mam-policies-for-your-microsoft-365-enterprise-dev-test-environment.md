@@ -1,5 +1,5 @@
 ---
-title: "Richtlinien für die Microsoft 365 Enterprise Test-/Umgebung MAM"
+title: Richtlinien für die Microsoft 365 Enterprise Test-/Umgebung MAM
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: "Zusammenfassung: Verwenden dieser Test Lab Guide Ihrer Microsoft 365 Test-/Umgebung zur Abstimmung mobilen Anwendung Informationsverwaltungsrichtlinien (MAM) hinzufügen."
-ms.openlocfilehash: 9eb636fe14b2fbd1fe45fb7dac528a0d4e31be36
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Verwenden dieser Test Lab Guide Ihrer Microsoft 365 Test-/Umgebung zur Abstimmung mobilen Anwendung Informationsverwaltungsrichtlinien (MAM) hinzufügen.'
+ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Richtlinien für die Microsoft 365 Enterprise Test-/Umgebung MAM
 
@@ -34,25 +34,25 @@ Befolgen Sie die Anweisungen in [The Microsoft 365 Enterprise Test-/Umgebung](th
 
 In dieser Phase werden zwei verschiedene MAM-Richtlinien erstellt und bereitgestellt: eine für iOS-Geräte und eine für Android-Geräte.
   
-1. Wechseln Sie zum Office 365-Portal ([https://portal.office.com](https://portal.office.com)), und melden Sie sich bei Ihrem Office 365-Testabonnement mit Ihrem globalen Administratorkonto an.
+1. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
     
-2. Öffnen Sie auf einer neuen Registerkarte Ihres Browsers das Azure Portal ([https://azure.portal.com](https://azure.portal.com)), und melden Sie sich mit Ihrem Office 365 globaler Administrator-Konto.
+2. Öffnen Sie auf einer neuen Registerkarte des Browsers, das Azure-Portal ([https://azure.portal.com](https://azure.portal.com)), und melden Sie sich mit Ihrem Office 365 globale Administratorkonto ein.
     
-3. Klicken Sie auf der Azure Portal Registerkarte in Internet Explorer im Navigationsbereich klicken Sie auf **Weitere Dienste** (oder auf den Pfeil nach rechts), geben Sie **Intune**, und klicken Sie dann auf **Intune**.
+3. Klicken Sie auf der Azure Portal Registerkarte in Internet Explorer im Navigationsbereich klicken Sie auf **alle Dienste**, geben Sie **Intune**, und klicken Sie dann auf **Intune**.
     
 4. Klicken Sie im linken Navigationsbereich auf **Gruppen**.
     
-5. Klicken Sie auf der Blade **-Benutzer und Gruppen alle Gruppen** auf **Hinzufügen**.
+5. Klicken Sie auf das Blade **Gruppen alle Gruppen** auf **+ neue Gruppe**.
     
-6. In der **Gruppe** Blade, geben Sie im Feld **Name** **iOS Gerätebenutzer verwaltete** **zugewiesen** **Mitgliedschaft geben**Sie in wählen, wählen Sie **Ja** für **Aktivieren von Office-Features?**, und klicken Sie dann auf **Erstellen**. 
+6. Wählen Sie in der **Gruppe** Blade, **Office 365** für **Gruppentyp?**, geben Sie im Feld **Name** **iOS Gerätebenutzer verwaltet** , wählen Sie in **die Mitgliedschaft Typ** **zugewiesen** und dann auf **Erstellen**. 
     
 7. Schließen Sie das **Gruppe** Blade.
     
-8. Klicken Sie auf der Blade **-Benutzer und Gruppen alle Gruppen** auf **Hinzufügen**.
+8. Klicken Sie auf das Blade **Gruppen alle Gruppen** auf **Hinzufügen**.
     
-9. In der **Gruppe** Blade, geben Sie im Feld **Name** **Android verwaltete Gerätebenutzer** **zugewiesen** **Mitgliedschaft geben**Sie in wählen, wählen Sie **Ja** für **Aktivieren von Office-Features?**, und klicken Sie dann auf **Erstellen**.
+9. Wählen Sie in der **Gruppe** Blade, **Office 365** für **Gruppentyp?**, geben Sie im Feld **Name** **Android verwaltete Benutzer des Geräts** , wählen Sie in **die Mitgliedschaft Typ** **zugewiesen** und dann auf **Erstellen**.
     
-10. Schließen Sie das Blade **-Benutzer und Gruppen alle Gruppen** .
+10. Schließen Sie das Blade **Gruppen alle Gruppen** .
     
 11. Klicken Sie auf der Blade **Intune** in der Liste **schnell Aufgaben** **Erstellen einer Compliance-Richtlinie**.
     
@@ -139,7 +139,7 @@ Sie nun verfügen über zwei MAM-Richtlinien, eine für iOS-Geräte und eine fü
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung](the-microsoft-365-enterprise-dev-test-environment.md)
   
