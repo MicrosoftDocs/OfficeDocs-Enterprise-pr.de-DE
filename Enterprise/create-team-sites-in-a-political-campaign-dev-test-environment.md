@@ -1,5 +1,5 @@
 ---
-title: "Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne"
+title: Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,29 +10,29 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.service: o365-solutions
-localization_priority: None
-ms.custom: Strat_O365_Enterprise
+localization_priority: Priority
+ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
-description: "Zusammenfassung: Erstellen Sie öffentliche, private, vertrauliche und streng vertraulich SharePoint Online Teamwebsites in Ihrer politischen Kampagne Test-/-Umgebung."
-ms.openlocfilehash: 3a2e507d17a558452fe0c2f0a062098e7c9c6407
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: MT
+description: 'Zusammenfassung: Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne.'
+ms.openlocfilehash: 146632ede567be4bf412304960605e6d87de7657
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
 
- **Zusammenfassung:** Erstellen Sie in der Umgebung der politischen Kampagne Test-/öffentliche, private, vertrauliche und streng vertraulich SharePoint Online Teamwebsites. 
+ **Zusammenfassung:** Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne. 
   
-Verwenden Sie die Anweisungen in diesem Artikel eine Test-/Umgebung erstellen, die vier verschiedenen Typen von SharePoint Online Teamwebsites für die [Microsoft Security Guidance for politischen Kampagnen, gemeinnützige Organisationen, und andere Agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) enthält Lösung. Diese Websites werden auf Thema 10, mit dem Titel **SharePoint- und OneDrive für Unternehmen**ausführlich beschrieben.
+Verwenden Sie die Schritte in diesem Artikel zum Erstellen einer Entwicklungs-/Testumgebung mit vier verschiedenen Typen von SharePoint Online-Teamwebsites für die Lösung [Microsoft-Sicherheitsanleitungen für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen ](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Diese Websites werden im Thema 10 **SharePoint und OneDrive for Business** detailliert erläutert.
   
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Phase 1: Erstellen der Entwicklungs-/Testumgebung für eine politische Kampagne
 
-Führen Sie zunächst die Anweisungen in [Configure Gruppen und Benutzer für eine politischen Kampagne Test-/Umgebung](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) zum Erstellen von Ihrer Abonnements, Benutzer und Gruppen.
+Befolgen Sie zunächst die Anweisungen unter [Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md), um Ihre Abonnements, Benutzer und Gruppen zu erstellen.
   
 ## <a name="phase-2-create-office-365-labels"></a>Phase 2: Erstellen von Office 365-Bezeichnungen
 
-In dieser Phase erstellen Sie die Beschriftungen für unterschiedlichen Sicherheitsebenen für SharePoint Online Team Websiteordner Dokument.
+In dieser Phase erstellen Sie die Bezeichnungen für die verschiedenen Sicherheitsstufen für Dokumentordner für SharePoint Online-Teamwebsites.
   
 1. Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Testabonnement beim Office 365-Portal an. Hilfe finden Sie unter [Wo kann ich mich bei Office 365 Business anmelden?](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -44,7 +44,7 @@ In dieser Phase erstellen Sie die Beschriftungen für unterschiedlichen Sicherhe
     
 5. Klicken Sie im Bereich **Start > Bezeichnungen** auf **Bezeichnung erstellen**.
     
-6. Klicken Sie im Bereich **Name die Bezeichnung** Geben Sie **Internal**, und klicken Sie dann auf **Weiter**.
+6. Geben Sie im Bereich **Name für Bezeichnung****Intern** ein, und klicken Sie dann auf **Weiter**.
     
 7. Klicken Sie im Bereich **Bezeichnungseinstellungen** auf **Weiter**.
     
@@ -70,7 +70,7 @@ In dieser Phase erstellen Sie die Beschriftungen für unterschiedlichen Sicherhe
     
 15. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
     
-16. Klicken Sie im Bereich **Name der Richtlinie** geben **Kampagne** im **Feld Name**ein, und klicken Sie dann auf **Weiter**.
+16. Geben Sie im Bereich **Richtlinie benennen****Kampagne** unter **Name** ein, und klicken Sie dann auf **Weiter**.
     
 17. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
     
@@ -82,7 +82,7 @@ In dieser Phase werden SharePoint Online-Teamwebsites für Ihre politische Kampa
 
 Führen Sie folgende Schritte aus, um eine öffentliche SharePoint Online-Basis-Teamwebsite zu erstellen:
   
-1. Falls erforderlich, verwenden Sie einen Browser auf dem lokalen Computer, und melden Sie sich mit Ihrem Konto globaler Administrator Office 365-Portal ([https://portal.office.com](https://portal.office.com)).
+1. Verwenden Sie bei Bedarf einen Browser auf dem lokalen Computer, und melden Sie sich im Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit Ihrem globalen Administratorkonto an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -90,9 +90,9 @@ Führen Sie folgende Schritte aus, um eine öffentliche SharePoint Online-Basis-
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie in das Feld **Websitename** **Kampagne breit**. 
+5. Geben Sie unter **Websitename** den Namen **Kampagne** ein.  
     
-6. Geben Sie im Feld **websitebeschreibung Team** **SharePoint-Website für die gesamte Kampagne**.
+6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für die gesamte Kampagne** ein.
     
 7. Wählen Sie unter **Datenschutzeinstellungen** die Option **Öffentlich - Alle Benutzer in der Organisation können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
@@ -100,19 +100,19 @@ Führen Sie folgende Schritte aus, um eine öffentliche SharePoint Online-Basis-
     
 Konfigurieren Sie anschließend den Ordner „Dokumente“ der Kampagnen-Teamwebsite für die Bezeichnung „Intern“.
   
-1. Klicken Sie auf der Registerkarte **Kampagne Wide-Home** Ihres Browsers auf **Dokumente**.
+1. Klicken Sie auf der Registerkarte **Kampagne – Startseite** in Ihrem Browser auf **Dokumente**.
     
 2. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
     
 3. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
-4. Wählen Sie **intern**im Feld **Bezeichnung Einstellungen anwenden**, und klicken Sie dann auf **Speichern**.
+4. Wählen Sie unter **Einstellungen –Bezeichnung anwenden** die Option **Intern**, und klicken Sie dann auf **Speichern**.
     
 ### <a name="campaign-project-1-team-site"></a>Teamwebsite für Kampagnenprojekt 1
 
 Führen Sie die folgenden Schritte durch, um eine private SharePoint Online-Basis-Teamwebsite für ein Projekt innerhalb der Kampagne zu erstellen:
   
-1. Falls erforderlich, verwenden Sie einen Browser auf dem lokalen Computer, und melden Sie sich mit Ihrem Konto globaler Administrator Office 365-Portal ([https://portal.office.com](https://portal.office.com)).
+1. Verwenden Sie bei Bedarf einen Browser auf dem lokalen Computer, und melden Sie sich im Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit Ihrem globalen Administratorkonto an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -120,9 +120,9 @@ Führen Sie die folgenden Schritte durch, um eine private SharePoint Online-Basi
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie in das Feld **Websitename** **Kampagne Projekt 1**. 
+5. Geben Sie unter **Websitename** den Namen **Kampagnenprojekt 1** ein.  
     
-6. Geben Sie im Feld **Team Site Beschreibung** **SharePoint-Website für Kampagne Projekt 1**.
+6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für das Kampagnenprojekt 1** ein.
     
 7. Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
@@ -130,19 +130,19 @@ Führen Sie die folgenden Schritte durch, um eine private SharePoint Online-Basi
     
 Konfigurieren Sie anschließend den Ordner „Dokumente“ der Teamwebsite für Kampagnenprojekt 1 für die Bezeichnung „Privat“.
   
-1. Klicken Sie auf der Registerkarte **Project-1-Startseite Kampagne** Ihres Browsers auf **Dokumente**.
+1. Klicken Sie auf der Registerkarte **Kampagnenprojekt 1 – Startseite** in Ihrem Browser auf **Dokumente**.
     
 2. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
     
 3. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
-4. Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Privat**, und klicken Sie dann auf **Speichern**.
+4. Wählen Sie unter **Einstellungen – Bezeichnung anwenden** die Option **Privat**, und klicken Sie dann auf **Speichern**.
     
 ### <a name="campaign-marketing-team-site"></a>Kampagnenmarketing-Teamwebsite
 
 Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche SharePoint-Teamwebsite für Kampagnenmarketingressourcen zu erstellen:
   
-1. Melden Sie sich mit einem Browser auf dem lokalen Computer an, in das globale Administratorkonto mit Office 365-Portal ([https://portal.office.com](https://portal.office.com)).
+1. Verwenden Sie einen Browser auf dem lokalen Computer, und melden Sie sich im Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit Ihrem globalen Administratorkonto an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -150,15 +150,15 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie in das Feld **Teamname Website** **Kampagne Marketing**.
+5. Geben Sie unter **Name der Teamwebsite** den Namen **Kampagnenmarketing** ein.
     
-6. Geben Sie im Feld **websitebeschreibung Team** **SharePoint-Website für Kampagne marketing (/ Kleinschreibung beachten)**.
+6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für Kampagnenmarketing (vertraulich)** ein.
     
 7.  Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
 8. Klicken Sie im Bereich **Wer soll hinzugefügt werden?** auf **Fertig stellen**.
     
-9. Klicken Sie auf das einstellungssymbol auf der neuen Registerkarte **Kampagne Marketing** in Ihrem Browser in der Symbolleiste, und klicken Sie dann auf **Websiteberechtigungen**.
+9. Klicken Sie auf der neuen Registerkarte **Kampagnenmarketing** in Ihrem Browser auf der Symbolleiste auf das Symbol „Einstellungen“, und klicken Sie dann auf **Websiteberechtigungen**.
     
 10. Klicken Sie im Bereich **Websiteberechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
     
@@ -166,17 +166,17 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 12. Deaktivieren Sie im Dialogfeld **Einstellungen für Zugriffsrechteanforderungen** die Kontrollkästchen **Mitgliedern das Freigeben der Website sowie einzelner Dateien und Ordner erlauben** und **Mitgliedern das Einladen von anderen zur Websitemitglieder-Gruppe erlauben**, geben Sie **ITAdmin1@**<your organization name> **.onmicrosoft.com** unter **Alle Zugriffsanforderungen an die folgende E-Mail-Adresse senden:**, und klicken Sie dann auf **OK**.
     
-13. Klicken Sie in der Liste **Mitglieder marketing-Kampagnen** auf.
+13. Klicken Sie in der Liste auf **Kampagnenmarketingmitglieder**.
     
 14. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-15. Klicken Sie im Dialogfeld **Freigeben** Geben Sie, **Senior und strategische Personal**, wählen Sie sie aus und klicken Sie dann auf **Freigeben**.
+15. Geben Sie im Dialogfeld **Freigeben** **Senior-Mitarbeiter und strategische Mitarbeiter** ein, wählen Sie die Option aus, und klicken Sie dann auf **Freigeben**.
     
-16. Wiederholen Sie die Schritte 14 und 15 für die Gruppe **Analytics Personal** und das Benutzerkonto **Regular1** .
+16. Wiederholen Sie die Schritte 14 und 15 für die Gruppe **Analytiker** und das Benutzerkonto **Regular1**.
     
 17. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-18. Klicken Sie in der Liste auf **Besitzer marketing-Kampagnen** .
+18. Klicken Sie in der Liste auf **Kampagnenmarketingbesitzer**.
     
 19. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
@@ -184,31 +184,31 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, vertrauliche ShareP
     
 21. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-22. Schließen Sie die Registerkarte **Personen und Gruppen** in Ihrem Browser, klicken Sie auf der Registerkarte **Kampagne Marketing-Startseite** in Ihrem Browser, und schließen Sie den Bereich für die **Projektwebsite-Berechtigungen** .
+22. Schließen Sie die Registerkarte **Benutzer und Gruppen** in Ihrem Browser, klicken Sie auf die Registerkarte **Kampagnenmarketing – Startseite** in Ihrem Browser, und schließen Sie dann den Bereich **Websiteberechtigungen**.
     
-Ergebnisse der Konfiguration von Berechtigungen:
+Nachfolgend finden Sie die Ergebnisse der Konfiguration von Berechtigungen:
   
-- Die Kampagne Marketing - SharePoint-Gruppe **Mitglieder** enthält nur die **Senior und strategische Mitarbeiter** Gruppe (die Benutzerkonten Candidate, ChiefOfStaff und Strategic1 enthält), die **Kampagne** Marketinggruppe (: Dieser Abschnitt enthält die Globaler Administratorbenutzerkonto), der Gruppe der **Analytics Staff** (der das Benutzerkonto DataScientist1 enthält), und das Benutzerkonto **Regular1** .
+- Die SharePoint-Gruppe **Kampagnenmarketingmitglieder** enthält nur die Gruppen **Senior-Mitarbeiter und strategische Mitarbeiter** (mit den Candidate-, ChiefOfStaff- und die Strategic1-Benutzerkonten), **Kampagnenmarketing** (mit dem globalen Administratorkonto), **Analytiker** (mit dem DataScientist1-Benutzerkonto), und das **Regular1**-Benutzerkonto.
     
-- SharePoint-Gruppe der **Kampagne Marketing-Besitzer** enthält nur die **IT-Mitarbeiter** -Gruppe (die nur die Benutzerkonten ITAdmin1 und ITAdmin2 enthält).
+- Die SharePoint-Gruppe **Kampagnenmarketing – Besitzer** enthält nur die Gruppe **IT-Mitarbeiter** (nur mit den ITAdmin1- und ITAdmin2-Benutzerkonten).
     
-- SharePoint-Gruppe der **Kampagne Marketing-Besucher** enthält keine Gruppen oder Benutzerkonten.
+- Die SharePoint-Gruppe **Kampagnenmarketing – Besucher** enthält keine Gruppen oder Benutzerkonten.
     
-- Mitglieder können nicht auf Standortebene Berechtigungen ändern (Dies kann nur durch ein Mitglied der Gruppe der **Kampagne Marketing-Besitzer** erfolgen).
+- Mitglieder können keine Berechtigungen auf Websiteebene ändern (dies kann nur von Mitgliedern der Gruppe **Kampagnenmarketing – Besitzer** ausgeführt werden).
     
 - Andere Benutzerkonten können nicht auf die Website oder die zugehörigen Ressourcen zugreifen, Sie können jedoch Zugriff auf die Website anfordern. Dabei wird eine E-Mail an das Postfach des ITAdmin1-Benutzerkontos gesendet.
     
 Konfigurieren Sie anschließend den Ordner „Dokumente“ der Kampagnenmarketing-Teamwebsite für die Bezeichnung „Vertraulich“.
   
-1. Klicken Sie in der Registerkarte **Kampagne Marketing-Start** des Browsers auf **Dokumente**.
+1. Klicken Sie auf der Registerkarte **Kampagnenmarketing – Startseite** in Ihrem Browser auf **Dokumente**.
     
 2. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
     
 3. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
-4. Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Vertraulich**, und klicken Sie dann auf **Speichern**.
+4. Wählen Sie unter **Einstellungen – Bezeichnung anwenden** die Option **Vertraulich**, und klicken Sie dann auf **Speichern**.
     
-Konfigurieren Sie anschließend eine Data Loss Prevention (DLP) Richtlinie, die Benutzer mitgeteilt wird, wenn sie ein Dokument auf einer SharePoint Online-Teamwebsite mit der Bezeichnung vertrauliche außerhalb der Organisation freigeben. In diesem DLP-Richtlinie gilt für Ressourcen in der Kampagne marketing-Website.
+Konfigurieren Sie als Nächstes eine Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP), die Benutzer benachrichtigt, wenn sie ein Dokument auf einer SharePoint Online-Teamwebsite mit der Bezeichnung „Vertraulich“ außerhalb der Organisation freigeben. Diese DLP-Richtlinie gilt für Ressourcen auf der Kampagnenmarketingwebsite.
   
 1. Klicken Sie auf der Registerkarte **Microsoft Office-Homepage** im Browser auf die Kachel **Security &amp; Compliance**.
     
@@ -254,7 +254,7 @@ Konfigurieren Sie anschließend eine Data Loss Prevention (DLP) Richtlinie, die 
 
 Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche SharePoint Online-Teamwebsite für Kampagnenstrategieressourcen zu erstellen:
   
-1. Falls erforderlich, verwenden Sie einen Browser auf dem lokalen Computer, und melden Sie sich mit Ihrem Konto globaler Administrator Office 365-Portal ([https://portal.office.com](https://portal.office.com)).
+1. Verwenden Sie bei Bedarf einen Browser auf dem lokalen Computer, und melden Sie sich im Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit Ihrem globalen Administratorkonto an.
     
 2. Klicken Sie in der Liste von Kacheln auf **SharePoint**.
     
@@ -262,15 +262,15 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche
     
 4. Klicken Sie auf der Seite **Website erstellen** auf **Teamwebsite**.
     
-5. Geben Sie in das Feld **Teamname für die Website** **Kampagne Strategie**.
+5. Geben Sie unter **Name der Teamwebsite** den Namen **Kampagnenstrategie** ein.
     
-6. Geben Sie im Feld **websitebeschreibung Team** **SharePoint-Website für Kampagne Strategie (streng vertraulich)**.
+6. Geben Sie unter **Beschreibung der Teamwebsite** den Text **SharePoint-Website für Kampagnenstrategie (streng vertraulich)** ein.
     
 7.  Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
 8. Klicken Sie im Bereich **Wer soll hinzugefügt werden?** auf **Fertig stellen**.
     
-9. Klicken Sie auf das einstellungssymbol auf der neuen Registerkarte **Kampagne Strategie** in Ihrem Browser in der Symbolleiste, und klicken Sie dann auf **Websiteberechtigungen**.
+9. Klicken Sie auf der neuen Registerkarte **Kampagnenstrategie** in Ihrem Browser auf der Symbolleiste auf das Symbol „Einstellungen“, und klicken Sie dann auf **Websiteberechtigungen**.
     
 10. Klicken Sie im Bereich **Websiteberechtigungen** auf **Erweiterte Berechtigungseinstellungen**.
     
@@ -278,13 +278,13 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche
     
 12. Deaktivieren Sie im Dialogfeld **Einstellungen für Zugriffsrechteanforderungen** die Optionen **Mitgliedern das Freigeben der Website sowie einzelner Dateien und Ordner erlauben** und **Mitgliedern das Einladen von anderen zur Websitemitglieder-Gruppe erlauben** (sodass alle drei Kontrollkästchen deaktiviert sind), und klicken Sie dann auf **OK**.
     
-13. Klicken Sie auf **Kampagne Strategie für die Elemente** in der Liste.
+13. Klicken Sie in der Liste auf **Kampagnenstrategiemitglieder**.
     
 14. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-15. Klicken Sie im Dialogfeld **Freigeben** Geben Sie, **Senior und strategische Personal**, wählen Sie sie aus und klicken Sie dann auf **Freigeben**.
+15. Geben Sie im Dialogfeld **Freigeben** **Senior-Mitarbeiter und strategische Mitarbeiter** ein, wählen Sie die Option aus, und klicken Sie dann auf **Freigeben**.
     
-16. Klicken Sie in der Liste auf **Kampagne Strategie Besitzer** .
+16. Klicken Sie in der Liste auf **Kampagnenstrategiebesitzer**.
     
 17. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
@@ -292,33 +292,34 @@ Führen Sie die folgenden Schritte durch, um eine isolierte, streng vertrauliche
     
 19. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-20. Schließen Sie die Registerkarte **Personen und Gruppen** in Ihrem Browser, klicken Sie auf der Registerkarte **Kampagne Strategie-Startseite** in Ihrem Browser, und schließen Sie den Bereich für die **Projektwebsite-Berechtigungen** .
+20. Schließen Sie die Registerkarte **Benutzer und Gruppen** in Ihrem Browser, klicken Sie auf die Registerkarte **Kampagnenstrategie – Startseite** in Ihrem Browser, und schließen Sie dann den Bereich **Websiteberechtigungen**.
     
-Ergebnisse der Konfiguration von Berechtigungen:
+Nachfolgend finden Sie die Ergebnisse der Konfiguration von Berechtigungen:
   
-- Die Kampagne Strategie - SharePoint-Gruppe **Mitglieder** enthält nur die **Senior und strategische Mitarbeiter** Gruppe (die nur die Benutzerkonten Candidate, ChiefOfStaff und Strategic1 enthält) und der **Kampagne Strategie** -Gruppe (die enthält nur der globale Administrator-Benutzerkonto).
+- Die SharePoint-Gruppe **Kampagnenstrategiemitglieder** enthält nur die Gruppen **Senior-Mitarbeiter und strategische Mitarbeiter** (mit den Candidate-, ChiefOfStaff- und die Strategic1-Benutzerkonten) und **Kampagnenstrategie** (nur mit dem globalen Administratorkonto).
+
     
-- SharePoint-Gruppe der **Kampagne Strategie-Besitzer** enthält nur die **IT-Mitarbeiter** -Gruppe (die nur die Benutzerkonten ITAdmin1 und ITAdmin2 enthält).
+- Die SharePoint-Gruppe **Kampagnenstrategie – Besitzer** enthält nur die Gruppe **IT-Mitarbeiter** (nur mit den ITAdmin1- und ITAdmin2-Benutzerkonten).
     
-- SharePoint-Gruppe der **Kampagne Strategie-Besucher** enthält keine Gruppen oder Benutzerkonten.
+- Die SharePoint-Gruppe **Kampagnenstrategie – Besucher** enthält keine Gruppen oder Benutzerkonten.
     
-- Mitglieder können nicht auf Standortebene Berechtigungen ändern (Dies kann nur durch ein Mitglied der Gruppe der **Kampagne Strategie-Besitzer** erfolgen).
+- Mitglieder können keine Berechtigungen auf Websiteebene ändern (dies kann nur von Mitgliedern der Gruppe **Kampagnenstrategie – Besitzer** ausgeführt werden).
     
-- Andere Benutzerkonten nicht Zugriff auf die Website oder seiner Ressourcen oder Zugriff auf die Website anfordern. Zusätzliche Berechtigungen für die Website müssen der globale Administrator oder ein Mitglied der Gruppe der **Kampagne Strategie-Besitzer** erfolgen.
+- Andere Benutzerkonten können nicht auf die Website oder ihre Ressourcen zugreifen oder Zugriff auf die Website anfordern. Zusätzliche Berechtigungen für die Website müssen vom globalen Administrator oder von einem Mitglied der Gruppe **Kampagnenstrategie – Besitzer** gewährt werden.
     
 Konfigurieren Sie anschließend den Ordner „Dokumente“ der Kampagnenstrategie-Teamwebsite für die Bezeichnung „Streng vertraulich“.
   
-1. Klicken Sie auf der Registerkarte **Kampagne Strategie für die Startseite** des Browsers auf **Dokumente**.
+1. Klicken Sie auf der Registerkarte **Kampagnenstrategie – Startseite** in Ihrem Browser auf **Dokumente**.
     
 2. Klicken Sie auf das Symbol für Einstellungen und anschließend auf **Bibliothekeinstellungen**.
     
 3. Klicken Sie unter **Berechtigungen und Verwaltung** auf **Bezeichnung auf Elemente in dieser Bibliothek anwenden**.
     
-4. Wählen Sie unter **Einstellungen -Bezeichnung anwenden** die Option **Streng vertraulich**, und klicken Sie dann auf **Speichern**.
+4. Wählen Sie unter **Einstellungen – Bezeichnung anwenden** die Option **Streng vertraulich**, und klicken Sie dann auf **Speichern**.
     
-Im nächsten Schritt Konfigurieren einer DLP-Richtlinie, Blöcke der Benutzer, wenn sie ein Dokument auf einer SharePoint Online-Teamwebsite mit der Bezeichnung streng vertraulich außerhalb der Organisation freigeben. In diesem DLP-Richtlinie gilt für Ressourcen in der Kampagne Strategie für die Website.
+Konfigurieren Sie als Nächstes eine DLP-Richtlinie, die Benutzer blockiert, wenn sie ein Dokument auf einer SharePoint Online-Teamwebsite mit der Bezeichnung „Streng vertraulich“ außerhalb der Organisation freigeben. Diese DLP-Richtlinie gilt für Ressourcen auf der Kampagnenstrategiewebsite.
   
-1. Bei Bedarf, verwenden Sie einen Browser auf dem lokalen Computer, und melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit einem Konto an, die die Rolle Sicherheitsadministrator oder Unternehmensadministrator hat.
+1. Falls erforderlich, verwenden Sie einen Browser auf Ihrem lokalen Computer, und melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit einem Konto an, das die Rolle des Sicherheits- oder Unternehmensadministrators hat.
     
 2. Klicken Sie auf der Registerkarte **Microsoft Office-Homepage** im Browser auf die Kachel **Security &amp; Compliance**.
     
@@ -360,7 +361,7 @@ Im nächsten Schritt Konfigurieren einer DLP-Richtlinie, Blöcke der Benutzer, w
     
 20. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Erstellen**, und klicken Sie dann auf **Schließen**.
     
-Verwenden Sie die Anweisungen in [Azure-RMS mit Office 365 Administrationscenter aktivieren](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Befolgen Sie die Anweisungen unter [Aktivieren von Azure Rights Management über Office 365 Admin Center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen bereichsbezogenen Richtlinie und einer untergeordneten Bezeichnung für Schutz und Berechtigungen, indem Sie die folgenden Schritte ausführen:
   
@@ -374,9 +375,9 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen ber
     
 5. Klicken Sie auf dem Blatt **Azure Information Protection** auf **Bereichsbezogene Richtlinien > + Neue Richtlinie hinzufügen**.
     
-6. Geben Sie **CampaignStrategy** **Richtliniennamen** und die **Beschriftung für Dokumente in der Kampagne Strategie für die SharePoint-Teamwebsite** im Feld **Beschreibung**ein.
+6. Geben Sie unter **Richtlinienname** **Kampagnenstrategie** und unter **Beschreibung** **Bezeichnung für Dokumente in der Teamwebsite für Kampagnenstrategie** ein.
     
-7. Klicken Sie auf **auswählen, welche Benutzer oder Gruppen diese Richtlinie erhalten > Benutzer/Gruppen**, und wählen Sie dann **Senior und strategische Personal**.
+7. Klicken Sie auf **Wählen Sie aus, welche Benutzer oder Gruppen diese Richtlinie erhalten. > Benutzer/Gruppen** und wählen Sie dann **Senior-Mitarbeiter und strategische Mitarbeiter**.
     
 8. Klicken Sie auf **Auswählen > OK**.
     
@@ -392,7 +393,7 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen ber
     
 14. Klicken Sie auf dem Blatt **Berechtigungen hinzufügen** unter **Benutzer und Gruppen angeben** auf **+ Verzeichnis durchsuchen**.
     
-15. Klicken Sie im Bereich **AAD Benutzer und Gruppen** wählen Sie aus, **Senior und strategische Mitarbeiter**, und klicken Sie dann auf **auswählen**.
+15. Wählen Sie im Bereich **AAD-Benutzer und -Gruppen** die Option **Senior-Mitarbeiter und strategische Mitarbeiter**, und klicken Sie dann auf **Auswählen**.
     
 16. Deaktivieren Sie unter **Aus voreingestellten Berechtigungen wählen** die Kontrollkästchen **Drucken**, **Inhalte kopieren und extrahieren** und **Weiterleiten**.
     
@@ -402,17 +403,17 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen ber
     
 19. Schließen Sie das Blatt für die neue bereichsbezogene Richtlinie.
     
-20. Klicken Sie auf dem Blatt **Azure Information Protection - Bereichsbezogene Richtlinien** auf **Veröffentlichen** und dann auf **Ja**.
+20. Klicken Sie auf dem Blatt **Azure Information Protection – Bereichsbezogene Richtlinien** auf **Veröffentlichen** und dann auf **Ja**.
     
 Sie können jetzt mit dem Erstellen von Dokumenten in diesen vier Websites beginnen und den Zugriff mit verschiedenen Benutzerkonten in Ihrem Testabonnement testen. 
   
-Um ein Dokument mit Azure Information Protection und dieser neuen Bezeichnung zu schützen, müssen Sie auf einem Testcomputer [Installieren Sie den Client Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) , Installieren von Office über das Office 365-Portal und melden Sie sich von Microsoft Word mit einem Konto in der ** Senior und strategische Mitarbeiter** Gruppe von Test-Abonnement.
+Um ein Dokument mit Azure Information Protection und mit dieser neuen Bezeichnung zu schützen, müssen Sie [den Azure Information Protection-Client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) auf einem Testcomputer installieren, Office vom Office 365-Portal installieren und sich dann aus Microsoft Word mit einem Konto in der Gruppe **Senior-Mitarbeiter und strategische Mitarbeiter** Ihres Testabonnements anmelden.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
-[Konfigurieren von Gruppen und Benutzer für eine politischen Kampagne Test-/-Umgebung](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
+[Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
   
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

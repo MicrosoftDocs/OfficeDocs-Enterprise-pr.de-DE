@@ -1,5 +1,5 @@
 ---
-title: Planen von OneDrive for Business Multi-Geo
+title: Planen von Multi-Geo in OneDrive for Business
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,52 +7,53 @@ ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Informationen Sie zu OneDrive für Business Multi-Geo, Multi-Geo Funktionsweise und welche Geo-Speicherorte für die Speicherung von Daten zur Verfügung stehen.
-ms.openlocfilehash: d7d6cfbbff4cf0ec2516f2506946c2832d96b3f2
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Informationen zu Multi-Geo in OneDrive for Business, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
+ms.openlocfilehash: 54efc6092338e505ef44344f9c3d3a7efe9ae498
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="plan-for-onedrive-for-business-multi-geo"></a>Planen von OneDrive for Business Multi-Geo
+# <a name="plan-for-onedrive-for-business-multi-geo"></a>Planen von Multi-Geo in OneDrive for Business
 
-Diese Anleitung ist für Administratoren von multinationale Unternehmen (MNCs) entwickelt, die Vorbereiten ihrer SharePoint Online-Mandanten auf zusätzliche Regionen gemäß des Unternehmens Anwesenheit Daten vor-Ort-Anforderungen erfüllt erweitert werden.
+Dieser Leitfaden wurde für Administratoren von multinationalen Unternehmen (MNCs) entwickelt, die den SharePoint Online-Mandanten für die Erweiterung auf weitere geografische Standorte entsprechend den Unternehmensanforderungen in Bezug auf die Datenaufbewahrung vorbereiten.
 
-In einer Konfiguration OneDrive Multi-Geo besteht aus Ihrem Office 365-Mandanten einen zentralen Speicherort (auch bekannt als dem Standardspeicherort) und einen oder mehrere Satelliten Geo-Speicherorte. Hierbei handelt es sich um einen einzelnen Mandanten, der sich über mehrere Geo-Standorte erstreckt. In OneDrive Multi-Geo ist Ihre Mandanten Informationen, einschließlich Geo-Standorten in Azure Active Directory (AAD) gesteuert. 
+In einer Multi-Geo-Konfiguration von OneDrive besteht der Office 365-Mandant aus einem zentralen Standort (auch Standardstandort genannt) und einem oder mehreren Satellitenstandorten. Dies ist ein einzelner Mandanten, der mehrere geografische Standorte umfasst. In Multi-Geo in OneDrive werden Ihre Mandanteninformationen, darunter die geografischen Standorte, in Azure Active Directory (AAD) verwaltet. 
 
-Es folgen einige wichtige Multi-Geo Begriffe, die Ihnen das Verständnis der grundlegenden Konzepte von der Konfiguration unterstützen:
+Im Folgenden werden einige wichtige Begriffe in Bezug auf Multi-Geo erläutert, die beim Verständnis der grundlegenden Konzepte der Konfiguration hilfreich sind:
 
--   **Mandanten** – eines Unternehmens Darstellung in der Office 365-Cloud, die in der Regel eine oder mehrere Domänen mit ihm verbundenes hat (beispielsweise http://contoso.sharepoint.com). 
+-   **Mandant** – Darstellung einer Organisation in der Office 365-Cloud, mit der in der Regel eine oder mehrere Domänen verknüpft sind (zum Beispiel http://contoso.sharepoint.com). 
 
--   **Geo-Speicherorte** – die geografische Standorte hinweg, in Ihrem Mandanten Daten gehostet wird. Multi-Geo Mandanten Zeitspanne mehr als einem Geo-Standort, beispielsweise Nordamerika und Europa.
+-   **Geografische Standorte** – Die geografischen Standorte, an denen die Daten Ihres Mandanten gehostet werden. Multi-Geo-Mandanten umfassen mehr als einen geografischen Standort, zum Beispiel Nordamerika und Europa.
 
--   **Zulässige Daten Speicherorte (ADL)** – die Geo Speicherorte für den Host von OneDrive und SharePoint-Daten Ihres Mandanten konfiguriert wurde.
+-   **Zugelassene Datenspeicherorte (Allowed Data Locations, ADL)** – Die geografischen Standorte, für die Ihr Mandant zum Hosten von OneDrive- und SharePoint-Daten konfiguriert wurde.
 
--   **Bevorzugte Daten Speicherort (Verteilerliste)** – die Geo Speicherort eines einzelnen Benutzers OneDrive Daten. Dies kann vom Administrator in eines der zulässigen Datenspeicherorte festgelegt werden, die für den Mandanten konfiguriert wurden. Beachten Sie, wenn Sie der persönlichen Verteilerliste für einen Benutzer, die bereits über eine OneDrive-Website verfügt ändern, ihre OneDrive Daten nicht am neuen Speicherort Geo automatisch bewegt werden. Weitere Informationen finden Sie unter [einer OneDrive-Bibliothek mit einem anderen Geo-Speicherort zu verschieben](move-onedrive-between-geo-locations.md) .
+-   **Bevorzugter Datenspeicherort (Preferred Data Location, PDL)** – Der geografische Standort, an dem OneDrive-Daten eines einzelnen Benutzers gespeichert sind. Dieser kann vom Administrator auf jeden zugelassenen Datenspeicherort festgelegt werden, der für den Mandanten konfiguriert wurde. Wenn Sie den bevorzugten Datenspeicherort für einen Benutzer ändern, der bereits über eine OneDrive-Website verfügt, werden seine OneDrive-Daten nicht automatisch an den neuen geografischen Standort verschoben. Weitere Informationen finden Sie unter [Verschieben einer OneDrive-Bibliothek an einen anderen geografischen Standort](move-onedrive-between-geo-locations.md).
 
-Multi-Geo aktivieren sind vier wichtige Schritte erforderlich:
+Für die Aktivierung von Multi-Geo müssen Sie die folgenden Schritte durchführen:
 
-1.  Arbeiten Sie mit Ihr Kundenteam, die Dienstplan _Multi-Geo-Funktionen in Office 365_ hinzufügen möchten.
+1.  Arbeiten Sie mit Ihrem Kontoteam, um den Serviceplan für _Multi-Geo-Funktionen in Office 365_ hinzuzufügen.
 
-2.  Wählen Sie die gewünschten Satellitenassemblys Geo Speicherorte und Ihres Mandanten hinzugefügt werden.
+2.  Wählen Sie die gewünschten Satellitenstandorte, und fügen Sie sie Ihrem Mandanten hinzu.
 
-3.  Bevorzugte Datenspeicherort Ihrer Benutzer auf den gewünschten Satelliten Geo Speicherort festgelegt. Wenn eine neue Website OneDrive für einen Benutzer bereitgestellt wird, ist es zu ihrer Verteilerliste bereitgestellt.
+3.  Legen Sie den bevorzugten Datenspeicherort und den gewünschten Satellitenstandort für Ihre Benutzer fest. Wenn eine neue OneDrive-Website für einen Benutzer bereitgestellt wird, wird sie an dem bevorzugten Datenspeicherort bereitgestellt.
 
-4.  Migrieren von vorhandenen OneDrive-Websites der Benutzer aus dem Hauptstandort zu ihren bevorzugten Datenspeicherort nach Bedarf.
+4.  Migrieren Sie bei Bedarf vorhandene OneDrive-Websites der Benutzer von dem Standardort zu dem bevorzugten Datenspeicherort.
 
-Details für jeden dieser Schritte finden Sie unter [Konfigurieren von OneDrive für Unternehmen Multi-Geo](multi-geo-tenant-configuration.md) .
+Weitere Informationen zu den einzelnen Schritten finden Sie unter [Konfigurieren von Multi-Geo in OneDrive for Business](multi-geo-tenant-configuration.md).
 
 > [!IMPORTANT]
-> Beachten Sie, dass die Multi-Geo-Features von Office 365 sind nicht für die Optimierung Fälle Leistung ausgelegt, dafür entwickelt, Daten vor-Ort-Anforderungen erfüllen. Informationen zur leistungsoptimierung für Office 365 finden Sie unter [netzwerkplanung und leistungsoptimierung für Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848) , oder wenden Sie sich an Ihrem Supportpersonal.
+> Beachten Sie, dass Multi-Geo-Funktionen von Office 365 nicht auf Leistungsoptimierung ausgelegt sind, sie dienen lediglich dazu, die jeweiligen Datenaufbewahrungsanforderungen zu erfüllen. Informationen zur Leistungsoptimierung für Office 365 finden Sie unter [Netzwerkplanung und Leistungsoptimierung für Office 365](https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848), oder wenden Sie sich hierzu an Ihre Supportgruppe.
 
-Sie können konfigurieren einen der folgenden Speicherorte Satelliten Geo Speicherorte sein, auf dem Sie Dateien OneDrive hosten können. Wie Sie Multi-Geo planen möchten, stellen Sie eine Liste der Speicherorte, die Sie Ihrem Office 365-Mandanten hinzufügen möchten. Es wird empfohlen beginnend mit einem oder zwei Satellitenstandorten und schrittweise auf Weitere Geo-Speicherorte erweitert bei Bedarf.
+Sie können einen der folgenden Standorte als Satellitenstandorte festlegen, an denen OneDrive-Dateien gehostet werden können. Erstellen Sie bei der Planung von Multi-Geo eine Liste der Orte, die Sie Ihrem Office 365-Mandanten hinzufügen möchten. Es wird empfohlen, mit einem oder zwei Satellitenstandorten zu beginnen und dann bei Bedarf schrittweise weitere geografische Standorte hinzuzufügen.
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Speicherort</strong></th>
+<th align="left"><strong>Standort</strong></th>
 <th align="left"><strong>Code</strong></th>
 </tr>
 </thead>
@@ -62,12 +63,12 @@ Sie können konfigurieren einen der folgenden Speicherorte Satelliten Geo Speich
 <td align="left">APC</td>
 </tr>
 <tr class="even">
-<td align="left">Europa / Mittlerer Osten / Afrika</td>
+<td align="left">Europa/Naher Osten/Afrika</td>
 <td align="left">EUR</td>
 </tr>
 <tr class="odd">
 <td align="left">Nordamerika</td>
-<td align="left">NAME</td>
+<td align="left">NAM</td>
 </tr>
 <tr class="even">
 <td align="left">Australien</td>
@@ -75,15 +76,15 @@ Sie können konfigurieren einen der folgenden Speicherorte Satelliten Geo Speich
 </tr>
 <tr class="odd">
 <td align="left">Kanada</td>
-<td align="left">KÖNNEN</td>
+<td align="left">CAN</td>
 </tr>
 <tr class="odd">
 <td align="left">Japan</td>
-<td align="left">JAPANISCHE</td>
+<td align="left">JPN</td>
 </tr>
 <tr class="even">
 <td align="left">Korea</td>
-<td align="left">KOREANISCHE</td>
+<td align="left">KOR</td>
 </tr>
 <tr class="odd">
 <td align="left">Vereinigtes Königreich</td>
@@ -97,24 +98,24 @@ Zukünftige geografische Speicherorte:
 - Frankreich
 - Indien
 
-Wenn Sie mehrere Geo konfigurieren, nehmen Sie die Möglichkeit, Ihre lokale Infrastruktur konsolidieren während der Migration zu Office 365. Beispielsweise wenn Sie lokale-Farmen in Singapur und Malaysia verfügen, können klicken Sie dann Sie diese an die APC Satelliten Position konsolidieren bereitgestellten Daten vor-Ort-Anforderungen Sie dies tun, können.
+Beim Konfigurieren von Multi-Geo sollten Sie auch eine Konsolidierung der lokalen Infrastruktur während der Migration zu Office 365 berücksichtigen. Wenn Sie zum Beispiel über lokale Farmen in Singapur und Malaysia verfügen, können Sie sie an dem Satellitenstandort APC zusammenführen, wenn dies entsprechend den Datenaufbewahrungsanforderungen möglich ist.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Es wird empfohlen, dass die Erstellung eines Testbenutzers in Office 365 ersten Tests durchführen. Wir werde durchgehen einige Schritte Tests und Überprüfungen mit diesen Benutzer bevor Sie mit integrierten produktionsbenutzern in das Feature OneDrive Multi-Geo fortfahren.
+Es wird empfohlen, einen Testbenutzer in Office 365 zu anfänglichen Testzwecken zu erstellen. Es werden einige Test- und Überprüfungsschritte für diesen Benutzer durchgeführt, bevor mit der Multi-Geo-Funktion in OneDrive für Produktionsbenutzer fortzufahren.
 
-Wenn Sie mit dem Testbenutzer Tests abgeschlossen haben, wählen Sie eine Pilotgruppe – vielleicht aus Ihre IT-Abteilung – zuerst OneDrive in einen neuen Geo-Speicherort verwendet werden. Wählen Sie für diese Gruppe ersten Benutzer, die noch nicht über eine OneDrive verfügen. Es wird empfohlen nicht mehr als fünf Personen in dieser ersten Gruppe und schrittweise erweitern einen Ansatz im Batchmodus Einführung folgen.
+Nach Abschluss der Tests mit dem Testbenutzer, wählen Sie eine Pilotgruppe, vielleicht von Ihrer IT-Abteilung, die zunächst OneDrive an dem neuen geografischen Standort verwenden soll. Wählen Sie für diese erste Gruppe Benutzer, die noch nicht über OneDrive verfügen. Es wird empfohlen, nicht mehr als fünf Personen zu dieser ersten Gruppe hinzuzufügen und sie schrittweise zu erweitern und schließlich einen Rollout im Batch durchzuführen.
 
-Jeder Benutzer muss eine *bevorzugte Datenspeicherort* (Verteilerliste) so festgelegt, dass Office 365, welche Geo-Speicherort zum Bereitstellen ihrer OneDrive ermitteln können verfügen. Bevorzugte Datenspeicherort des Benutzers muss eine der gewählten Satellitenstandorten oder den zentralen Standort übereinstimmen. Während das Verteilerliste Feld nicht obligatorisch ist, wird empfohlen, eine Verteilerliste für alle Benutzer festgelegt werden. Arbeitslasten eines Benutzers ohne eine Verteilerliste werden am zentralen Standort auf der Grundlage der Logik Multi-Geo bereitgestellt werden.   
+Für jeden Benutzer muss ein *bevorzugter Datenspeicherort* festgelegt werden, damit Office 365 den geografischen Standort für die Bereitstellung von OneDrive ermitteln kann. Der bevorzugte Datenspeicherort des Benutzers muss mit einem der ausgewählten Satellitenstandorte oder dem zentralen Standort übereinstimmen. Obwohl das Feld für den bevorzugten Datenspeicherort kein Pflichtfeld ist, wird empfohlen, einen bevorzugten Datenspeicherort für alle Benutzer festzulegen. Workloads eines Benutzers ohne bevorzugten Datenspeicherort werden basierend auf der Multi-Geo-Logik an dem zentralen Standort bereitgestellt.   
 
-Erstellen Sie eine Liste der Benutzer, und umfassen Sie ihren Benutzerprinzipalnamen (UPN) und den Speicherort Code für den Speicherort der entsprechenden bevorzugten Daten. Test-Benutzer und der anfänglichen Pilotgruppe zu enthalten. Für die Konfigurationsverfahren benötigen Sie dieser Liste.
+Erstellen Sie eine Liste Ihrer Benutzer mit den entsprechenden Benutzerprinzipalnamen und den Codes für die entsprechenden bevorzugten Datenspeicherorte. Fügen Sie Ihren Testbenutzer und die erste Pilotgruppe hinzu. Sie benötigen diese Liste für die Konfigurationsverfahren.
 
-Wenn Ihre Benutzer von einem lokalen Active Directory (AD) System Azure Active Directory (AAD) synchronisiert sind, müssen Sie den Speicherort der bevorzugten Daten synchronisierten Benutzer mithilfe von Azure Active Directory verbinden festlegen. Speicherort der bevorzugten Daten von Azure AD-PowerShell synchronisierten Benutzer können nicht direkt konfiguriert werden. Die Schritte zum Einrichten der Verteilerliste in Active Directory und synchronisieren fallen [Azure Active Directory verbinden Sync: Konfigurieren des bevorzugten Datenspeicherort für Office 365-Ressourcen](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Wenn für Ihre Benutzer eine Synchronisierung zwischen dem lokalen Active Directory (AD)-System und Azure Active Directory (AAD) erfolgt, müssen Sie den bevorzugten Datenspeicherort für die synchronisierten Benutzer mithilfe von Azure Active Directory Connect festlegen. Sie können den bevorzugten Datenspeicherort für synchronisierte Benutzer nicht direkt mithilfe von Azure AD PowerShell konfigurieren. Die Schritte zum Einrichten der bevorzugten Datenspeicherorte in AD und zum Synchronisieren dieser Liste finden Sie unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenspeicherorts für Office 365-Ressourcen](https://docs.microsoft.com/de-DE/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
-Die Verwaltung von einem Mandanten Multi-Geo kann unterscheiden sich von einem Multi-Geo-Mandanten, so viele der Einstellungen für SharePoint und OneDrive und Dienste sind Multi-Geo berücksichtigen. Es wird empfohlen, dass Sie [Verwalten einer Umgebung mit mehreren geografisch](administering-a-multi-geo-environment.md) , ehe Sie mit der Konfiguration fortzufahren.
+Die Verwaltung eines Multi-Geo-Mandanten kann von der eines Nicht-Multi-Geo-Mandanten abweichen, da viele SharePoint- und OneDrive-Einstellungen und -Dienste über Multi-Geo-Funktionen verfügen. Es wird empfohlen, den Artikel [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) zu lesen, bevor Sie mit der Konfiguration fortfahren.
 
-Lesen Sie ausführliche Informationen über Ihre Endbenutzer Erfahrung in einer Umgebung mit mehreren geografisch [Benutzerinteraktion in einer Multgeo Umgebung](multi-geo-user-experience.md) .
+Informationen zur Endbenutzererfahrung in einer Multi-Geo-Umgebung finden Sie unter [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md).
 
-Um die ersten Schritte beim Konfigurieren von OneDrive für Unternehmen Multi-Geo, finden Sie unter [Konfigurieren von OneDrive für Unternehmen Multi-Geo](multi-geo-tenant-configuration.md).
+Informationen zu den ersten Schritten beim Konfigurieren von Multi-Geo in OneDrive for Business finden Sie unter [Konfigurieren von Multi-Geo in OneDrive for Business](multi-geo-tenant-configuration.md).
 
-Wenn Sie die Konfiguration abgeschlossen haben, denken Sie daran, [Migrieren Ihrer Benutzer OneDrive Bibliotheken](move-onedrive-between-geo-locations.md) Bedarf Ihrer Benutzer arbeiten von zu ihren bevorzugten Datenspeicherorte erhalten.
+Denken Sie nach Abschluss der Konfiguration daran, [die OneDrive-Bibliotheken Ihrer Benutzer](move-onedrive-between-geo-locations.md) bei Bedarf zu migrieren, damit Benutzer an ihren bevorzugten Datenspeicherorten arbeiten können.

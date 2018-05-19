@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von SharePoint Online-Websites für drei Ebenen des Schutzes
+title: Bereitstellen von SharePoint Online-Websites für drei Schutzebenen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
-description: 'Zusammenfassung: Erstellen und Konfigurieren von SharePoint Online Teamwebsites für verschiedene Ebenen der Schutz von Informationen.'
-ms.openlocfilehash: ddeb1885cbc74be6e7098660eb1d9906d43739fd
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Zusammenfassung: Erstellen und Konfigurieren von SharePoint Online-Teamwebsites für verschiedene Ebenen des Informationsschutzes.'
+ms.openlocfilehash: 7349616f130c5fc01108fb85ed172e9bc6bba05e
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
-# <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Bereitstellen von SharePoint Online-Websites für drei Ebenen des Schutzes
+# <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Bereitstellen von SharePoint Online-Websites für drei Schutzebenen
 
- **Zusammenfassung:** Erstellen und Konfigurieren von SharePoint Online Teamwebsites für verschiedene Ebenen der Schutz von Informationen.
+ **Zusammenfassung:** Erstellen und Konfigurieren von SharePoint Online-Teamwebsites für verschiedene Ebenen des Informationsschutzes.
   
 Verwenden Sie die Schritte in diesem Artikel, um Richtlinien für grundlegende, vertrauliche und streng vertrauliche SharePoint Online-Teamwebsites zu entwerfen. Weitere Informationen zu diesen drei Schutzebenen finden Sie unter [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md).
   
@@ -31,7 +31,7 @@ Verwenden Sie die Schritte in diesem Artikel, um Richtlinien für grundlegende, 
 
 Der grundlegende Schutz enthält jeweils öffentliche und private Teamwebsites. Öffentliche Teamwebsites können von allen Benutzern in der Organisation ermittelt werden und alle haben Zugriff auf diese. Nur Mitglieder der Office 365-Gruppe, die mit der Teamwebsite verknüpft sind, können die privaten Websites ermitteln und auf diese zugreifen. Diese beiden Arten von Teamwebsites erlauben Mitgliedern, die Website für andere Personen freizugeben.
   
-### <a name="public"></a>Public (Öffentlich)
+### <a name="public"></a>Öffentlich
 
 Um eine grundlegende SharePoint Online-Teamwebsite mit öffentlichem Zugriff und Berechtigungen zu erstellen, tun Sie Folgendes:
   
@@ -45,7 +45,7 @@ Um eine grundlegende SharePoint Online-Teamwebsite mit öffentlichem Zugriff und
     
 5. Geben Sie unter **Name der Website** einen Namen für die öffentliche Teamwebsite ein. 
     
-6. Geben Sie im Feld **Team site description** (Beschreibung der Teamwebsite) eine Beschreibung der Website ein.
+6. Geben Sie im Feld **Beschreibung der Teamwebsite** eine Beschreibung der Website ein.
     
 7. Wählen Sie unter **Datenschutzeinstellungen** die Option **Öffentlich - Alle Benutzer in der Organisation können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
@@ -55,7 +55,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ![Grundschutz für eine öffentliche SharePoint Online-Teamwebsite.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
-### <a name="private"></a>Privat
+### <a name="private"></a>Private
 
 Um eine grundlegende SharePoint Online-Teamwebsite mit privatem Zugriff und Berechtigungen zu erstellen, tun Sie Folgendes:
   
@@ -69,33 +69,33 @@ Um eine grundlegende SharePoint Online-Teamwebsite mit privatem Zugriff und Bere
     
 5. Geben Sie unter **Name der Website** einen Namen für die private Teamwebsite ein. 
     
-6. Geben Sie Team Site in **Beschreibung eine Beschreibung des Zwecks der Website.**
+6. Geben Sie unter **Beschreibung der Teamwebsite** eine Beschreibung des Zwecks der Website ein.
     
 7. Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
 8. Geben Sie im Bereich **Who do you want to add?** (Wen möchten Sie hinzufügen?) unter **Mitglieder hinzufügen** die Namen der Benutzerkonten ein, die über Zugriff auf diese private Teamwebsite verfügen.
     
-9. Wenn Sie fertig sind hinzufügen den ersten Satz von Elementen zu der Website, klicken Sie auf **Fertig stellen**
+9. Wenn Sie mit dem Hinzufügen der ersten Gruppe von Mitgliedern zur Website fertig sind, klicken Sie auf **Fertig stellen**.
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ![Grundschutz für eine private SharePoint Online-Teamwebsite.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
-## <a name="sensitive-sharepoint-online-team-sites"></a>Vertrauliche grundlegende SharePoint Online-Teamwebsites
+## <a name="sensitive-sharepoint-online-team-sites"></a>Vertrauliche SharePoint Online-Teamwebsites
 
 Eine vertrauliche SharePoint Online-Teamwebsite ist eine isolierte Teamwebsite. Das heißt, dass die Berechtigungen über die Mitgliedschaft in SharePoint-Gruppen statt der Mitgliedschaft in der Office 365-Gruppe, die der Teamwebsite zugeordnet ist, gesteuert werden.
   
 Beim Erstellen einer isolierten Teamwebsite gibt es zwei Hauptschritte.
   
-### <a name="step-1-design-your-isolated-site"></a>Schritt 1: Entwerfen der isolierten Website
+### <a name="step-1-design-your-isolated-site"></a>Schritt 1: Entwerfen Ihrer isolierten Website
 
 Um eine isolierte Teamwebsite zu erstellen, müssen Sie Folgendes festlegen:
   
-- Die SharePoint-Gruppen und Berechtigungsstufen.
+- Ihre SharePoint-Gruppen und -Berechtigungsstufen.
     
-- Den Satz von Zugriffsgruppen, die Mitglieder der SharePoint-Gruppen sein sollen.
+- Der Satz der Zugriffsgruppen, die Mitglieder Ihrer SharePoint-Gruppen sein werden.
     
-     Der empfohlene Satz von Access Gruppen ist eine für Websitemitglieder, Website und Websiteadministratoren.
+     Der empfohlene Satz von Zugriffsgruppen ist einer für Websitemitglieder, einer für Website-Viewer und einer für Websiteadministratoren.
     
 - Ob Sie verschachtelte Gruppen innerhalb Ihrer Zugriffsgruppen verwenden.
     
@@ -133,7 +133,7 @@ Erstellen Sie als Nächstes mit den folgenden Schritten die SharePoint Online-Te
     
 5. Geben Sie unter **Name der Website** einen Namen für die private Teamwebsite ein.
     
-6. Geben Sie im Feld **Team Site Beschreibung**eine optionale Beschreibung ein.
+6. Geben Sie in der Beschreibung für die **Teamwebsite** eine optionale Beschreibung ein.
     
 7. Wählen Sie unter **Datenschutzeinstellungen** die Option **Privat - nur Mitglieder können auf diese Website zugreifen** aus, und klicken Sie dann auf **Weiter**.
     
@@ -159,31 +159,31 @@ Konfigurieren Sie dann auf der neuen SharePoint Online-Teamwebsite die Berechtig
     
 6. Klicken Sie auf der Registerkarte **Berechtigungen** Ihres Browsers auf **[Websitename] Mitglieder** in der Liste.
     
-7. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
+7. Klicken Sie unter **Benutzer und Gruppen** auf **Neu**.
     
-8. Klicken Sie im Dialogfeld **Freigeben** Geben Sie den Namen der Gruppe Ihrer Website Zugriff für diese Website, wählen Sie sie aus, und klicken Sie auf **Freigeben**.
+8. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe Ihrer Websitemitglieder für diese Website an, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
     
 9. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-10. Klicken Sie in der Liste **[Websitename] Besitzer** auf.
+10. Klicken Sie auf **Besitzer von [Websitename]** in der Liste.
     
 11. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-12. Klicken Sie im Dialogfeld **Freigeben** Geben Sie den Namen der Gruppe der Administratoren-Zugriff für diese Website, wählen Sie sie aus, und klicken Sie auf **Freigeben**.
+12. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe des Websiteadministrators für diese Website an, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
     
 13. Klicken Sie auf die Schaltfläche „Zurück“ in Ihrem Browser.
     
-14. Klicken Sie in der Liste auf **Besucher [Websitename]** .
+14. Klicken Sie auf **Besucher von [Websitename]** in der Liste.
     
 15. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-16. Klicken Sie im Dialogfeld **Freigeben** Geben Sie den Namen der Websitegruppe Leser von Berichten Zugriff für diese Website, wählen Sie sie aus, und klicken Sie auf **Freigeben**.
+16. Geben Sie im Dialogfeld **Freigeben** den Namen der Zugriffsgruppe der Websiteviewer für diese Website an, wählen Sie ihn aus, und klicken Sie dann auf **Freigeben**.
     
 17. Schließen Sie die Registerkarte **Berechtigungen** Ihres Browsers.
     
 Die Ergebnisse dieser Berechtigungseinstellungen sehen folgendermaßen aus:
   
-- Die SharePoint-Gruppe **[Websitename] Besitzer** enthält die Zugriffsgruppe des Websiteadministrators, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
+- Die SharePoint-Gruppe **Besitzer von [Websitename]** enthält die Zugriffsgruppe des Websiteadministrators, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
     
 - Die SharePoint-Gruppe **[Websitename] Mitglieder** enthält die Zugriffsgruppe der Websitemitglieder, in der alle Mitglieder über die Berechtigungsstufe **Bearbeiten** verfügen.
     
@@ -209,11 +209,11 @@ Für die Erstellung einer isolierten Teamwebsite für streng vertrauliche Inform
 
 Um eine isolierte Teamwebsite zu erstellen, müssen Sie Folgendes festlegen:
   
-- Die SharePoint-Gruppen und Berechtigungsstufen.
+- Ihre SharePoint-Gruppen und -Berechtigungsstufen.
     
-- Den Satz von Zugriffsgruppen, die Mitglieder der SharePoint-Gruppen sein sollen.
+- Der Satz der Zugriffsgruppen, die Mitglieder Ihrer SharePoint-Gruppen sein werden.
     
-     Der empfohlene Satz von Access Gruppen ist eine für Websitemitglieder, Website und Websiteadministratoren.
+     Der empfohlene Satz von Zugriffsgruppen ist einer für Websitemitglieder, einer für Website-Viewer und einer für Websiteadministratoren.
     
 - Ob Sie verschachtelte Gruppen innerhalb Ihrer Zugriffsgruppen verwenden.
     
@@ -231,19 +231,19 @@ Informationen zum Entwurfsprozess finden Sie unter [Entwerfen einer isolierten S
   
 ### <a name="step-2-deploy-your-isolated-site"></a>Schritt 2: Bereitstellen Ihrer isolierten Website
 
-Um Ihre isolierte Website bereitzustellen, müssen Sie zuerst Folgendes durchführen:
+Um Ihre isolierte Website bereitzustellen, müssen Sie zunächst Folgendes tun:
   
 - Ermitteln Sie die Benutzer und Gruppenmitglieder der einzelnen Zugriffsgruppen.
     
 - Erstellen Sie die Zugriffsgruppen, und fügen Sie die Benutzer und Gruppenmitglieder hinzu.
     
-- Erstellen Sie eine isolierte Teamwebsite, die Ihre Zugriffsgruppen verwendet.
+- Erstellen einer isoliertem Teamwebsite, die Ihre Zugriffsgruppen verwendet
     
 Detaillierte Schritte finden Sie unter [Bereitstellen einer isolierten SharePoint Online-Teamwebsite](deploy-an-isolated-sharepoint-online-team-site.md).
   
 Nachfolgend sind die Ergebnisse dieser Berechtigungseinstellungen aufgeführt:
   
-- Die SharePoint-Gruppe **[Websitename] Besitzer** enthält die Zugriffsgruppe des Websiteadministrators, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
+- Die SharePoint-Gruppe **Besitzer von [Websitename]** enthält die Zugriffsgruppe des Websiteadministrators, in der alle Mitglieder über die Berechtigungsstufe **Vollzugriff** verfügen.
     
 - Die SharePoint-Gruppe **[Websitename] Mitglieder** enthält die Zugriffsgruppe der Websitemitglieder, in der alle Mitglieder über die Berechtigungsstufe **Bearbeiten** verfügen.
     
@@ -253,15 +253,15 @@ Nachfolgend sind die Ergebnisse dieser Berechtigungseinstellungen aufgeführt:
     
 - Die Möglichkeit, dass Nicht-Mitglieder Zugriff anfordern, ist deaktiviert.
     
-Im Folgenden sehen Sie die resultierende Konfiguration.
+Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ![Schutzebene „Streng vertraulich“ für eine isolierte SharePoint Online-Teamwebsite.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
-Jetzt können die Mitglieder der Website über die Gruppenmitgliedschaft in einer der Zugriffsgruppen sicher zusammenarbeiten und die Ressourcen der Website nutzen.
+Die Mitglieder der Website können nun über Gruppenmitgliedschaft in einer der Zugriffsgruppen sicher an den Ressourcen der Website zusammenarbeiten.
   
 ## <a name="next-step"></a>Nächster Schritt
 
-[Schützen von SharePoint Online-Dateien mit Office 365 Etiketten und DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,23 +7,23 @@ ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
-description: 'Zusammenfassung: Mithilfe dieser Test Lab Guide eine Test-/Umgebung erstellen, die alle Cloudlösungen von Microsoft enthält.'
-ms.openlocfilehash: c1d0e190e6d7e3871cf4289729b53cc0b4b5d04d
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um eine Entwicklungs-/Testumgebung zu erstellen, die alle Microsoft-Cloudangebote enthält.'
+ms.openlocfilehash: 29fcb1108ceac6aa488ca71d723789a7a2e6c409
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Die One Microsoft Cloud-Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Verwenden Sie diese Test Lab Guide eine Test-/Umgebung erstellen, die alle Cloudlösungen von Microsoft enthält.
+ **Zusammenfassung**: Verwenden Sie diese Testumgebungsanleitung, um eine Entwicklungs-/Testumgebung zu erstellen, die alle Microsoft-Cloudangebote enthält.
   
 Mit den Anweisungen in diesem Artikel erstellen Sie ein simuliertes Intranet in Microsoft Azure-Infrastrukturdiensten und fügen dann Abonnements für Microsoft Office 365, Microsoft Enterprise Mobility + Security (EMS) und Microsoft Dynamics 365 hinzu. Das Ergebnis ist eine vereinfachte Organisation, die alle Microsoft-Cloudangebote gleichzeitig in einer einzigen Entwicklungs-/Testumgebung nutzt.  
   
@@ -39,24 +39,24 @@ Die daraus resultierende Konfiguration bietet Ihnen die folgenden Möglichkeiten
     
 - Bauen Sie Ihre Qualifikation in Bezug auf die Microsoft Cloud zur beruflichen Weiterentwicklung aus.
     
-## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a>Phase 1: Erstellen eines simulierten Intranets und Hinzufügen von Office 365
+## <a name="phase-1-create-a-simulated-intranet-and-add-office-365"></a>Phase 1: Erstellen eines simulierten Intranets und Hinzufügen von Office 365
 
-Befolgen Sie die Anweisungen in [DirSync für Ihre Office 365 Dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md).
+Folgen Sie den Anweisungen unter [DirSync für Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md).
   
-Abbildung 1 zeigt die resultierende Konfiguration, einschließlich Office 365 und einem simulierten Intranet in Azure Infrastructure Services und verzeichnissynchronisierung aus einer lokalen Windows Server Active Directory (AD)-Gesamtstruktur ausgeführt.
+Abbildung 1 zeigt die resultierende Konfiguration, die Office 365 und ein simuliertes Intranet enthält, das in Azure-Infrastrukturdiensten ausgeführt wird, und für die die Verzeichnissynchronisierung von einer lokalen Windows Server Active Directory (AD)-Gesamtstruktur aus erfolgt.
   
-**Abbildung 1: Die simulierten Intranet in Azure mit Office 365**
+**Abbildung 1: Das simulierte Intranet in Azure mit Office 365**
 
 ![Die Office 365-Entwicklungs-/Testumgebung mit DirSync](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 > [!NOTE]
-> Die Azure-Testversion beträgt 30 Tage. Das Abonnement E5 Testversion von Office 365 Enterprise ist 30 Tagen auf einfache Weise für weitere 30 Tage verlängert werden können. Erstellen Sie für eine permanente Test-/-Umgebung ein neues bezahlt Azure-Abonnement und ein neues kostenpflichtigen Office 365 Enterprise E5 Abonnement mit einer kleinen Anzahl von Lizenzen. 
+> Die Azure-Testversion ist 30 Tage gültig. Das Testabonnement für Office 365 Enterprise E5 hat eine Laufzeit von 30 Tagen, die problemlos um weitere 30 Tage verlängert werden kann. Für eine dauerhafte Entwicklungs-/Testumgebung erstellen Sie ein neues kostenpflichtiges Azure-Abonnement und ein neues kostenpflichtiges Office 365 Enterprise E5-Abonnement mit einer kleinen Anzahl von Lizenzen. 
   
 ## <a name="phase-2-add-ems"></a>Phase 2: Hinzufügen von EMS
 
 In dieser Phase registrieren Sie sich für das EMS-Testabonnement und fügen es derselben Organisation wie Ihr Office 365-Testabonnement hinzu.
   
-1. Mit einem Browser auf einem Desktopcomputer oder von CLIENT1, melden Sie sich bei Office 365-Portal unter [https://portal.office.com](https://portal.office.com) mit den Anmeldeinformationen Ihres Kontos globaler Administrator.
+1. Melden Sie sich über einen Browser auf Ihrem Desktopcomputer oder von CLIENT1 aus beim Office 365-Portal unter [https://portal.office.com](https://portal.office.com) an. Verwenden Sie die Anmeldeinformationen Ihres globalen Administratorkontos.
     
 2. Klicken Sie auf die Kachel **Admin**.
     
@@ -89,23 +89,23 @@ Ihre Entwicklungs-/Testumgebung verfügt nun über Folgendes:
     
 - Alle Ihre Benutzerkonten, aktiviert für die Verwendung von Office 365 E5 Enterprise und EMS.
     
-Abbildung 2 zeigt die resultierende Konfiguration nach dem Hinzufügen von EMS.
+Abbildung 2 zeigt die Konfiguration nach dem Hinzufügen von EMS.
   
-**Abbildung 2: Die simulierten Intranet in Azure mit Office 365 und zur Abstimmung**
+**Abbildung 2: Das simulierte Intranet in Azure mit Office 365 und EMS**
 
 ![Phase 2 der One Microsoft Cloud-Entwicklungs-/Testumgebung mit Azure, Office 365 und EMS](images/fdb520fe-ebbd-4681-a80e-b60df52f07c5.png)
   
-## <a name="phase-3-add-dynamics-365"></a>Phase 3: Hinzufügen des Dynamics 365
+## <a name="phase-3-add-dynamics-365"></a>Phase 3: Hinzufügen von Dynamics 365
 
 In dieser Phase registrieren Sie sich für das Dynamics 365-Testabonnement und fügen es derselben Organisation wie Ihre Office 365- und EMS-Testabonnements hinzu.
   
-1. Mithilfe eines Browsers auf einem Desktopcomputer oder von CLIENT1, melden Sie sich bei Office 365-Portal unter [https://portal.office.com](https://portal.office.com) mit den Anmeldeinformationen Ihres Kontos globaler Administrator.
+1. Melden Sie sich über einen Browser auf Ihrem Desktopcomputer oder von CLIENT1 aus beim Office 365-Portal unter [https://portal.office.com](https://portal.office.com) an. Verwenden Sie die Anmeldeinformationen Ihres globalen Administratorkontos.
     
 2. Klicken Sie auf die Kachel **Admin**.
     
-3. Klicken Sie auf der Registerkarte **Office-Verwaltungskonsole** im linken Navigationsbereich auf **Abrechnung > Dienste erwerben**.
+3. Klicken Sie auf der Registerkarte **Office 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.
     
-4. Suchen Sie auf der Seite **Dienste erwerben** des **Dynamics 365 planen 1 Enterprise Edition** -Elements. Bewegen Sie den Mauszeiger über dieses, und klicken Sie auf **Start kostenlose Testversion**.
+4. Suchen Sie auf der Seite **Dienste kaufen** den Artikel **Dynamics 365 Plan 1 Enterprise Edition**. Platzieren Sie den Mauszeiger auf dem Artikelnamen, und klicken Sie auf **Start free trial**.
     
 5. Klicken Sie auf der Seite für die **Bestätigung Ihrer Bestellung** auf **Jetzt versuchen**.
     
@@ -116,43 +116,43 @@ In dieser Phase registrieren Sie sich für das Dynamics 365-Testabonnement und f
   
 Führen Sie diese Schritte aus, um den Konten des globalen Administrators sowie den Konten von Benutzer 2 und Benutzer 3 Dynamics 365-Lizenzen zuzuweisen und sie zu Systemadministratoren zu machen.
   
-1. Klicken Sie auf die Registerkarte **Office Administrationscenter** auf **Benutzer > aktive Benutzer**.
+1. Klicken Sie auf der Registerkarte **Office 365 Admin Center** auf **Benutzer > Aktive Benutzer**.
     
-2. Klicken Sie in der Liste der aktiven Benutzer auf die globale Administratorkonto ein, und klicken Sie dann auf **Bearbeiten** , für die **Lizenzen**.
+2. Klicken Sie in der Liste der aktiven Benutzer auf Ihr globales Administratorkonto, und klicken Sie dann auf **Bearbeiten** für **Produktlizenzen**.
     
-3. Klicken Sie im Bereich **Lizenzen** deaktivieren Sie die-Lizenz für **Dynamics 365 planen 1 Enterprise Edition** können Sie **auf**, klicken Sie auf **Speichern,** und klicken Sie dann zweimal auf **Schließen** .
+3. 	Setzen Sie im Bereich **Product licenses** die Produktlizenz für **Dynamics 365 Plan 1 Enterprise Edition** auf **On**. Klicken Sie auf **Speichern** und anschließend zweimal auf **Schließen**.
     
 4. Führen Sie die Schritte 2 und 3 für Benutzer 2- und Benutzer 3-Konten durch.
     
-5. Schließen Sie die Registerkarte **Office-Verwaltungskonsole** .
+5. Schließen Sie die Registerkarte **Office Admin Center**.
     
 Konfigurieren Sie anhand dieser Schritte die Benutzer 2- und Benutzer 3-Konten als Dynamics 365-Systemadministratoren.
   
-1. Klicken Sie auf der Registerkarte **Office Admin Center** in Ihrem Browser im linken Navigationsbereich klicken Sie auf **Admin centers**, und klicken Sie dann auf **Dynamics 365**.
+1. Klicken Sie auf der Registerkarte **Office Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Admin Center** und dann auf **Dynamics 365**.
     
     Möglicherweise müssen Sie warten, bis die Bereitstellung von Dynamics 365 abgeschlossen ist, damit Dynamics 365 im Menü angezeigt wird.
     
-2. Klicken Sie auf der Registerkarte Dynamics 365 klicken Sie auf **Alle diese**, und klicken Sie dann auf **Setup abzuschließen.**
+2. Klicken Sie auf der Registerkarte „Dynamics 365“ auf **Alle** und dann auf **Einrichtung abschließen**.
     
     Warten Sie, bis die Einrichtung abgeschlossen ist.
     
-    Wenn Setup abgeschlossen ist, wird ein Sales Aktivität Dashboard basierend auf Beispieldaten, die Teil des Abonnements im Überwachungsprotokoll ist. Nehmen Sie einen Moment, zum Anzeigen der **Willkommen bei der Testversion** video. Schließen Sie das Videofenster nach Abschluss des Vorgangs.
+    Sobald die Einrichtung abgeschlossen ist, wird ein Vertriebsaktivitäts-Dashboard mit Beispieldaten angezeigt, die zum Testabonnement gehören. Nehmen Sie sich kurz Zeit, um sich das **Willkommensvideo** anzusehen. Schließen Sie das Videofenster, sobald das Video zu Ende ist.
     
-3. Klicken Sie auf der Symbolleiste oben klicken Sie auf den Pfeil nach unten neben **Sales**, klicken Sie auf **Einstellungen**, und klicken Sie dann auf **Sicherheit**.
+3. Klicken Sie auf der Symbolleiste oben auf den Nach-unten-Pfeil neben **Vertrieb**. Klicken Sie auf **Einstellungen** und dann auf **Sicherheit**.
     
 4. Klicken Sie auf der Seite **Sicherheit** auf **Benutzer**.
     
-5. Klicken Sie in der Liste der Benutzer auf **Benutzer 2**.
+5. Klicken Sie in der Benutzerliste auf **Benutzer 2**.
     
-6. Klicken Sie auf der Symbolleiste auf **Rollen verwalten**.
+6. Klicken Sie in der Symbolleiste auf **Rollen verwalten**.
     
-7. Klicken Sie auf **Systemadministrator** **Rollen verwalten**und klicken Sie dann auf **OK**.
+7. Klicken Sie unter **Rollen verwalten** auf **Systemadministrator** und dann auf **OK**.
     
-8. Klicken Sie auf der Symbolleiste oben auf **Sicherheit**.
+8. Klicken Sie auf der Symbolleisten oben auf **Sicherheit**.
     
 9. Wiederholen Sie die Schritte 5 bis 8 für das Konto „Benutzer 3“.
     
-10. Schließen der **Benutzer: User3** Registerkarte.
+10. Schließen Sie die Registerkarte **Benutzer: Benutzer 3**.
     
 > [!NOTE]
 > Ihrem globalen Office 365-Administratorkonto wurde automatisch die Rolle des Dynamics 365-Systemadministrators zugewiesen. 
@@ -169,7 +169,7 @@ Ihre Entwicklungs-/Testumgebung verfügt nun über Folgendes:
     
 Abbildung 3 zeigt die resultierende Konfiguration.
   
-**Abbildung 3: Simulierten Intranet in Azure mit Office 365 und zur Abstimmung Dynamics 365**
+**Abbildung 3: Das simulierte Intranet in Azure mit Office 365, EMS und Dynamics 365**
 
 ![Phase 3 der One Microsoft Cloud-Entwicklungs-/Testumgebung mit Azure, Office 365, EMS und Dynamics 365](images/31714fcc-0c7d-411f-bcd1-c62d9be090ee.png)
   
@@ -177,11 +177,11 @@ Abbildung 3 zeigt die resultierende Konfiguration.
 
 Sie können jetzt mit Ihrer One Microsoft Cloud-Entwicklungs-/Testumgebung experimentieren. Hier sind einige Ideen zum Ausprobieren mit Anleitung:
   
-- [Konfigurieren von Informationsverwaltungsrichtlinien (MAM) für die mobile Anwendung in zur Abstimmung für Office 365-Anwendungen](https://technet.microsoft.com/library/mt764059.aspx)
+- [Konfigurieren von MAM-Richtlinien in EMS für Office 365-Anwendungen](https://technet.microsoft.com/library/mt764059.aspx)
     
-- [Führen Sie vor, Exchange Online in Office 365-Integration in Dynamics 365 Kontakte](https://technet.microsoft.com/library/mt798313.aspx)
+- [Demonstrieren von Exchange Online in einer Office 365-Integration mit Dynamics 365-Kontakten](https://technet.microsoft.com/library/mt798313.aspx)
     
-- [Erstellen Sie ein Netzwerk simulierten standortübergreifenden in Azure Infrastructure Services für das Hosten von Server-basierten Arbeitslasten](https://technet.microsoft.com/library/mt745150.aspx)
+- [Erstellen eines simulierten standortübergreifenden Netzwerks in Azure-Infrastrukturdiensten zum Hosten serverbasierter Arbeitsauslastungen](https://technet.microsoft.com/library/mt745150.aspx)
     
 ## <a name="see-also"></a>Siehe auch
 
