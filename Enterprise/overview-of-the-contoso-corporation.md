@@ -1,5 +1,5 @@
 ---
-title: "Übersicht über die Contoso Corporation"
+title: Übersicht über die Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
-description: "Zusammenfassung: Verstehen der Contoso Corporation als ein Unternehmen und die stufenweise seiner weltweit Büros."
-ms.openlocfilehash: 7dcbefc82591c4baf65a2b64127d547020109c59
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Verstehen der Contoso Corporation als ein Unternehmen und die stufenweise seiner weltweit Büros.'
+ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Übersicht über die Contoso Corporation
 
@@ -77,7 +77,7 @@ Contoso IT-konstruiert haben die folgenden Elemente identifiziert, bei der Planu
     
     Contoso verwendet eine Windows Server Active Directory-Gesamtstruktur für die interne Identitätsanbieter und auch die Verbindung mit Drittanbietern für Kunden und Partnern. Contoso muss den internen Satz von Konten für die Microsoft Cloud-angeboten nutzen. Zugriff auf die Cloud-basierten apps für Kunden und Partner muss Drittanbieter-Identitätsanbieter sowie nutzen.
     
-    Weitere Informationen finden Sie unter Details des Posters [Microsoft Cloudidentität für Enterprise-konstruiert](microsoft-cloud-identity-for-enterprise-architects.md) .
+    Weitere Informationen finden Sie unter Details des Posters [Microsoft Cloudidentität für Enterprise-konstruiert](microsoft-cloud-it-architecture-resources.md#identity) .
     
 - Sicherheit
     
@@ -91,7 +91,7 @@ Contoso IT-konstruiert haben die folgenden Elemente identifiziert, bei der Planu
     Die Verwaltung für cloudbasierte Apps und SaaS-Arbeitslasten erfordert, dass Einstellungen, Daten, Konten, Richtlinien und Berechtigungen verwaltet sowie der gegenwärtige Zustand und die gegenwärtige Leistung überwacht werden können.
  Vorhandene Serververwaltungstools werden dazu verwendet, virtuelle Computer in Azure IaaS zu verwalten.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   
