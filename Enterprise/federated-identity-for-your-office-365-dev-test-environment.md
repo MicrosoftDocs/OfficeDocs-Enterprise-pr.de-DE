@@ -7,7 +7,7 @@ ms.date: 04/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,26 +15,26 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
-description: 'Zusammenfassung: Konfigurieren Sie Verbundauthentifizierung für Ihre Office 365 Dev/Test-Umgebung.'
-ms.openlocfilehash: e1a2e4096dc14c2853af33a36b24d7b6ac9784bd
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung.'
+ms.openlocfilehash: 70e5eb3561432b47921b4baba31d613e3b6135a9
+ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Konfigurieren Sie Verbundauthentifizierung für Ihre Office 365 Dev/Test-Umgebung.
+ **Zusammenfassung:** Konfigurieren der Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung.
   
-Office 365 unterstützt Identitätsverbund. Dies bedeutet, dass nicht durch die Überprüfung von Anmeldeinformationen selbst, Office 365 verbindenden Benutzers auf einem Server Verbundauthentifizierung verweist, die Office 365 vertraut. Wenn die Anmeldeinformationen des Benutzers korrekt sind, sendet der Verbundauthentifizierung-Server ein Sicherheitstoken, die der Client dann an Office 365 als Authentifizierungsbeweis sendet. Identitätsverbund ermöglicht die Verschiebung und Skalieren der Authentifizierung für ein Office 365-Abonnement und erweiterte Szenarien für Authentifizierung und Sicherheit.
+Office 365 unterstützt Verbundidentität. Dies bedeutet, dass Office 365, anstatt die Prüfung von Anmeldeinformationen selbst durchzuführen, den Benutzer, der eine Verbindung herstellt, auf einen Verbundauthentifizierungsserver verweist, der für Office 365 vertrauenswürdig ist. Wenn die Anmeldeinformationen des Benutzers korrekt sind, gibt der Verbundauthentifizierungsserver ein Sicherheitstoken aus, das der Client als Nachweis der Authentifizierung an Office 365 sendet. Verbundidentität ermöglicht das Abladen und zentrale Skalieren der Authentifizierung für ein Office 365-Abonnement sowie erweiterte Authentifizierungs- und Sicherheitsszenarien.
   
 In diesem Artikel wird beschrieben, wie Sie die Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung konfigurieren können, die zu Folgendem führt:
   
-**Abbildung 1: Die Verbundauthentifizierung für Office 365 Dev/Test-Umgebung**
+**Abbildung 1: Die Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung**
 
 ![Der Webanwendungs-Proxyserver, der der DirSync für die Office 365-Entwicklungs-/Testumgebung hinzugefügt wurde](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
-Die in Abbildung 1 gezeigte Konfiguration besteht aus:  
+Die in Abbildung 1 gezeigte Konfiguration besteht aus: 
   
 - Einem Office 365 E5-Testabonnement, das 30 Tage nach Erstellung abläuft.
     
@@ -52,7 +52,7 @@ Das Einrichten dieser Entwicklungs-/Testumgebung besteht aus fünf Phasen:
     
 5. Konfigurieren von Office 365 für Verbundidentität.
     
-Um eine Bereitstellung in der Produktion über die Verbundauthentifizierung für Office 365 in Azure schrittweise, finden Sie unter [Deploy hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Eine schrittweise Anleitung zur Produktionsbereitstellung einer Verbundauthentifizierung für Office 365 in Azure finden Sie unter [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 > [!NOTE]
 > Sie können diese Entwicklungs-/Testumgebung nicht mit einem Azure-Testabonnement konfigurieren. 
@@ -60,27 +60,27 @@ Um eine Bereitstellung in der Produktion über die Verbundauthentifizierung für
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
   
-## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1: Erstellen der simulierten Office 365-Entwicklungs-/Testumgebung mit DirSync
+## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1: Erstellen der simulierten Office 365-Entwicklungs-/Testumgebung mit DirSync
 
-Befolgen Sie die Anweisungen in [Directory-Synchronisierung für Ihre Office 365 Dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md) zum Erstellen der simulierten Enterprise Office 365-Test-/-Umgebung mit APP1 als Dirsync-Server und Identity zwischen Office 365 synchronisiert und die Windows Server Active Directory-Konten auf DC1.
+Befolgen Sie die Anweisungen in [Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md), um die simulierte Office 365-Entwicklungs-/Testumgebung mit APP1 als DirSync-Server und synchronisierter Identität zwischen Office 365 und den Windows Server AD-Konten auf DC1 zu erstellen.
   
-Im nächsten Schritt erstellen Sie einen neuen öffentlichen DNS-Domänennamen basierend auf Ihren aktuellen Domänennamen und Ihrem Office 365-Abonnement hinzugefügt. Es wird empfohlen, mit dem Namen **Testlabor.** \<Ihrer öffentlichen Domäne >. Wenn der öffentlichen Domäne "contoso.com" lautet, fügen Sie beispielsweise der öffentlichen Domäne Name testlab.contoso.com.
+Im nächsten Schritt erstellen Sie einen neuen öffentlichen DNS-Domänennamen basierend auf Ihrem aktuellen Domänennamen und fügen diesen Ihrem Office 365-Abonnement hinzu. Es wird empfohlen, dass Sie den Namen **testlab.**\<Ihre öffentliche Domäne> verwenden. Wenn Ihre öffentliche Domänenname beispielsweise „contoso.com“ ist, fügen Sie den öffentlichen Domänennamen „testlab.contoso.com“ hinzu.
   
-Anweisungen zum Erstellen der richtigen DNS-Einträge im DNS-Anbieter und die Domäne hinzufügen, um Ihre Testversion Office 365-Abonnements finden Sie unter [Hinzufügen von Benutzern und Domäne zu Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
+Weitere Informationen zum Erstellen der richtigen DNS-Einträge in Ihrem DNS-Anbieter und zum Hinzufügen der Domäne zu Ihrem Office 365-Testabonnement finden Sie unter [Hinzufügen von Benutzern und der Domäne zu Office 365](https://support.office.com/article/Add-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611). 
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-**Abbildung 2: Directory-Synchronisierung für Test-/Office 365-Umgebung**
+**Abbildung 2: Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung**
 
-![Office 365-Umgebung Test-/mit Directory-Synchronisierung](images/be5b37b0-f832-4878-b153-436c31546e21.png)
+![Die Office 365-Entwicklungs-/Testumgebung mit Verzeichnissynchronisierung](images/be5b37b0-f832-4878-b153-436c31546e21.png)
   
-Abbildung 2 zeigt die Synchronizationc Directory für Office 365 Dev/Test-Umgebung, die Office 365 und CLIENT1, APP1 und DC1 virtuellen Computern in einer Azure-virtuelles Netzwerk enthält.
+In Abbildung 2 ist die Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung dargestellt, die Office 365 sowie die virtuellen Computer CLIENT1, APP1 und DC1 in einem virtuellen Azure-Netzwerk umfasst.
   
 ## <a name="phase-2-create-the-ad-fs-server"></a>Phase 2: Erstellen des AD FS-Servers
 
 Ein AD FS-Server bietet Verbundauthentifizierung zwischen Office 365 und den Konten in der Domäne „corp.contoso.com“, die auf DC1 gehostet wird.
   
-Klicken Sie zum Erstellen eines Azure-virtueller Computers für ADFS1 Geben Sie den Namen Ihres Abonnements und die Ressourcengruppe und Azure Speicherort für Ihre Konfiguration Base, und führen Sie diese Befehle an der Befehlszeile Azure PowerShell auf dem lokalen Computer.
+Um einen virtuellen Azure-Computer für ADFS1 zu erstellen, geben Sie den Namen Ihres Abonnements und der Ressourcengruppe sowie den Azure-Speicherort für Ihre Basiskonfiguration ein, und führen Sie diese Befehle in der Azure PowerShell-Befehlszeile auf Ihrem lokalen Computer aus.
   
 ```
 $subscr="<your Azure subscription name>"
@@ -102,11 +102,11 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) für eine Textdatei mit der PowerShell-Befehlen in diesem Artikel.
+> [Hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) finden Sie eine Textdatei, die alle PowerShell-Befehle in diesem Artikel enthält.
   
-Im nächsten Schritt mit der [Azure-Portal](http://portal.azure.com) ADFS1 virtuellen Computer mit dem ADFS1 lokaler Administrator Kontoname und Kennwort hergestellt werden soll, und öffnen Sie eine Windows PowerShell-Eingabeaufforderung.
+Im nächsten Schritt stellen Sie über das [Azure-Portal](http://portal.azure.com) eine Verbindung mit dem virtuellen Computer ADFS1 mit dem Namen und Kennwort des lokalen Administratorkontos von ADFS1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung.
   
-Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen ADFS1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** , und stellen Sie sicher, dass es vier Antworten gibt.
+Führen Sie zum Überprüfen der Namensauflösung und der Netzwerkkommunikation zwischen ADFS1 und DC1 den Befehl **ping dc1.corp.contoso.com** aus, und vergewissern Sie sich, dass vier Antworten vorhanden sind.
   
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung auf ADFS1 den virtuellen Computer ADFS1 mit der Domäne CORP.
   
@@ -118,7 +118,7 @@ Restart-Computer
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-**Abbildung 3: Hinzufügen von AD FS-server**
+**Abbildung 3: Hinzufügen des AD FS-Servers**
 
 ![Der AD FS-Server, der der DirSync für die Office 365-Entwicklungs-/Testumgebung hinzugefügt wurde](images/da82f39e-426d-41e2-842a-c13b382d63d5.png)
   
@@ -149,16 +149,16 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 > [!NOTE]
 > PROXY1 wird einer statischen öffentlichen IP-Adresse zugewiesen, da Sie einen öffentlichen DNS-Eintrag erstellen, der darauf verweist, und der nicht geändert werden muss, wenn Sie den virtuellen PROXY1-Computer neu starten. 
   
-Fügen Sie eine Regel zur Netzwerksicherheitsgruppe des Subnetzes CorpNet um unaufgeforderten eingehenden Verkehr PROXY1s privaten IP-Adresse und TCP-Port 443 über das Internet zu ermöglichen. Führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
+Fügen Sie als Nächstes eine Regel zu der Netzwerksicherheitsgruppe für das CorpNet-Subnetz hinzu, um unerwünschten eingehenden Verkehr aus dem Internet an die private IP-Adresse von PROXY1 und den TCP-Port 443 zuzulassen. Führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer aus.
   
 ```
 $rgName="<the resource group name of your Base Configuration>"
 Get-AzureRmNetworkSecurityGroup -Name CorpNet -ResourceGroupName $rgName | Add-AzureRmNetworkSecurityRuleConfig -Name "HTTPS-to-PROXY1" -Description "Allow TCP 443 to PROXY1" -Access "Allow" -Protocol "Tcp" -Direction "Inbound" -Priority 101 -SourceAddressPrefix "Internet" -SourcePortRange "*" -DestinationAddressPrefix "10.0.0.101" -DestinationPortRange "443" | Set-AzureRmNetworkSecurityGroup
 ```
 
-Im nächsten Schritt mit der [Azure-Portal](http://portal.azure.com) PROXY1 virtuellen Computer mit dem PROXY1 lokaler Administrator Kontoname und Kennwort hergestellt werden soll, und öffnen Sie eine Windows PowerShell-Eingabeaufforderung auf PROXY1.
+Im nächsten Schritt stellen Sie über das [Azure-Portal](http://portal.azure.com) eine Verbindung mit dem virtuellen Computer PROXY1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von PROXY1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung auf PROXY1.
   
-Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen PROXY1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** , und stellen Sie sicher, dass es vier Antworten gibt.
+Führen Sie zum Überprüfen der Namensauflösung und der Netzwerkkommunikation zwischen PROXY1 und DC1 den Befehl **ping dc1.corp.contoso.com** aus, und vergewissern Sie sich, dass vier Antworten vorhanden sind.
   
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung auf PROXY1 den virtuellen Computer PROXY1 mit der Domäne CORP.
   
@@ -174,9 +174,9 @@ Zeigen Sie die öffentliche IP-Adresse von PROXY1 mit den folgenden Azure PowerS
 Write-Host (Get-AzureRMPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-Im nächsten Schritt arbeiten mit Ihrem öffentlichen DNS-Anbieter und erstellen einen neuen öffentlichen DNS-A-Datensatz für **fs.testlab.** \<des DNS-Domänennamens >, aufgelöst wird, um die IP-Adresse mit dem Befehl **Write-Host** angezeigt. Die **fs.testlab.** \<des DNS-Domänennamens > ist nachstehend der *Verbunddienst FQDN* .
+Im nächsten Schritt arbeiten Sie mit Ihrem öffentlichen DNS-Anbieter und erstellen einen neuen öffentlichen DNS A-Eintrag für **fs.testlab.**\<Ihr DNS-Domänenname>, der in die IP-Adresse aufgelöst wird, die vom Befehl **Write-Host** angezeigt wird. Auf **fs.testlab.**\<Ihr DNS-Domänenname> wird nachfolgend als *FQDN des Verbunddiensts* verwiesen.
   
-Im nächsten Schritt der [Azure-Portal](http://portal.azure.com) verwenden, um am virtuellen Computer DC1 mithilfe der CORP verbinden\\User1 Anmeldeinformationen, und führen Sie dann die folgenden Befehle an einer Administratorebene Windows PowerShell-Eingabeaufforderung:
+Im nächsten Schritt stellen Sie über das [Azure-Portal](http://portal.azure.com) eine Verbindung mit dem virtuellen Computer DC1 unter Verwendung der Anmeldeinformationen „CORP\\User1“ her und führen dann die folgenden Befehle an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus:
   
 ```
 $testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
@@ -189,7 +189,7 @@ Diese Befehle erstellen einen DNS-A-Eintrag für den FQDN des Verbunddiensts, de
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-**Abbildung 4: Hinzufügen der Web Application Proxy-server**
+**Abbildung 4: Hinzufügen des Webanwendungs-Proxyservers**
 
 ![Der Webanwendungs-Proxyserver, der der DirSync für die Office 365-Entwicklungs-/Testumgebung hinzugefügt wurde](images/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -199,7 +199,7 @@ Abbildung 4 zeigt das Hinzufügen des PROXY1-Servers.
 
 In dieser Phase erstellen Sie ein selbstsigniertes digitales Zertifikat für den FQDN des Verbunddiensts und konfigurieren ADFS1 und PROXY1 als AD FS-Farm.
   
-Zunächst, mit dem das [Azure Portal](http://portal.azure.com) -Verbindung mit dem virtuellen Computer DC1 mithilfe der CORP\\User1 Anmeldeinformationen, und öffnen Sie dann eine Administratorebene Windows PowerShell command Prompt.
+Im nächsten Schritt stellen Sie über das [Azure-Portal](http://portal.azure.com) eine Verbindung mit dem virtuellen Computer DC1 unter Verwendung der Anmeldeinformationen „CORP\\User1“ her und öffnen dann eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
   
 Im nächsten Schritt erstellen Sie das AD FS-Dienstkonto mit dem folgenden Befehl an der Windows PowerShell-Eingabeaufforderung auf DC1:
   
@@ -209,7 +209,7 @@ New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user pa
 
 Beachten Sie, dass Sie von dem Befehl aufgefordert werden, das Kontokennwort anzugeben. Verwenden Sie ein sicheres Kennwort, und notieren Sie es an einem sicheren Ort. Sie benötigen es für diese Phase und für Phase 5.
   
-Verwendung des [Azure Portal](http://portal.azure.com) Verbindung mit dem ADFS1 virtuellen Computer mithilfe der CORP\\User1 Anmeldeinformationen. Öffnen Sie eine Administratorebene Windows PowerShell-Eingabeaufforderung auf ADFS1, füllen Sie Ihre Verbunddienst FQDN, und führen Sie dann die folgenden Befehle aus, um ein selbstsigniertes Zertifikat erstellen aus:
+Verwenden Sie das [Azure-Portal](http://portal.azure.com), um eine Verbindung zu dem virtuellen Computer ADFS1 unter Verwendung der Anmeldeinformationen „CORP\\User1“ herzustellen. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung auf Administratorebene auf ADFS1, geben Sie den FQDN des Verbunddiensts ein, und führen Sie dann die folgenden Befehle aus, um ein selbstsigniertes Zertifikat zu erstellen:
   
 ```
 $fedServiceFQDN="<federation service FQDN>"
@@ -220,33 +220,33 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
 
 Gehen Sie dann folgendermaßen vor, um das neue selbstsignierte Zertifikat als Datei zu speichern.
   
-1. Klicken Sie auf **Start**, geben Sie **mmc.exe**, und drücken Sie die **EINGABETASTE**.
+1. Klicken Sie auf **Start**, geben Sie **mmc.exe** ein, und drücken Sie dann die  **EINGABETASTE**.
     
 2. Klicken Sie auf **Datei > Snap-In hinzufügen/entfernen**.
     
-3. **Hinzufügen oder Entfernen von-Snap-ins**Doppelklicken Sie in der Liste der verfügbaren Snap-Ins auf **Zertifikate** , klicken Sie auf **Computerkonto**, und klicken Sie dann auf **Weiter**.
+3. Doppelklicken Sie unter **Snap-In hinzufügen/entfernen** in der Liste verfügbarer Snap-Ins auf **Zertifikate**, klicken Sie auf **Computerkonto**, und klicken Sie dann auf **Weiter**.
     
-4. Klicken Sie im **Dialogfeld Computer auswählen**auf **Fertig stellen**, und klicken Sie dann auf **OK**.
+4. Klicken Sie unter **Computer auswählen** auf **Fertig stellen**, und klicken Sie dann auf **OK**.
     
-5. Öffnen Sie im Strukturbereich **Zertifikate (lokaler Computer) > persönlich > Zertifikate**.
+5. Öffnen Sie im Strukturbereich **Zertifikate (Lokaler Computer) > Persönlich > Zertifikate**.
     
-6. Mit der rechten Maustaste in des Zertifikats mit Ihrem Verbunddienst FQDN, klicken Sie auf **Alle Tasks**, und klicken Sie dann auf **Exportieren**.
+6. Klicken Sie mit der rechten Maustaste auf das Zertifikat mit dem FQDN des Verbunddiensts, klicken Sie auf **Alle Vorgänge**, und klicken Sie dann auf **Exportieren**.
     
 7. Klicken Sie auf der Seite **Willkommen** auf **Weiter**.
     
-8. Klicken Sie auf der Seite **Privatschlüssel exportieren** klicken Sie auf **Ja**, und klicken Sie dann auf **Weiter**.
+8. Klicken Sie auf der Seite **Privaten Schlüssel exportieren** auf **Ja** und dann auf **Weiter**.
     
-9. Klicken Sie auf der Seite **Exportdateiformat** klicken Sie auf **alle erweiterten Eigenschaften exportieren**, und klicken Sie dann auf **Weiter**.
+9. Klicken Sie auf der Seite **Dateiformat exportieren** auf **Alle erweiterten Eigenschaften exportieren**, und klicken Sie dann auf **Weiter**.
     
-10. Klicken Sie auf der Seite **Sicherheit** , klicken Sie auf **Kennwort** , und geben Sie im Feld **Kennwort** ein Kennwort ein und **Kennwort bestätigen.**
+10. Klicken Sie auf der Seite **Sicherheit** auf **Kennwort**, und geben Sie unter **Kennwort** und **Kennwort bestätigen** ein Kennwort ein.
     
-11. Klicken Sie auf der Seite **zu exportierende Datei** auf **Durchsuchen**.
+11. Klicken Sie auf der Seite **Zu exportierende Datei** auf **Durchsuchen**.
     
-12. Navigieren Sie zu der **C:\\Zertifikate** Ordner, geben Sie **SSL** im Feld **Dateiname**ein, und klicken Sie dann auf **zu speichern.**
+12. Navigieren Sie zum Ordner **C:\\Certs**, geben Sie **SSL** unter **Dateiname** ein, und klicken Sie dann auf **Speichern**.
     
-13. Klicken Sie auf der Seite **zu exportierende Datei** auf **Weiter**.
+13. Klicken Sie auf der Seite **Zu exportierende Datei** auf **Weiter**.
     
-14. Klicken Sie auf der Seite **Fertigstellen des Zertifikatexport-Assistenten** auf **Fertig stellen**. Wenn Sie aufgefordert werden, klicken Sie auf **OK**.
+14. Klicken Sie auf der Seite **Fertigstellen des Assistenten** auf **Fertig stellen**. Wenn Sie dazu aufgefordert werden, klicken Sie auf **OK**.
     
 Im nächsten Schritt erstellen Sie den AD FS-Dienst mit dem folgenden Befehl an der Windows PowerShell-Eingabeaufforderung auf ADFS1:
   
@@ -258,77 +258,77 @@ Warten Sie, bis die Installation abgeschlossen ist.
   
 Konfigurieren Sie als Nächstes den AD FS-Dienst mit den folgenden Schritten:
   
-1. Klicken Sie auf **Start**, und klicken Sie dann auf das Symbol für **Server-Manager** .
+1. Klicken Sie auf **Start** und dann auf das Symbol **Server-Manager**.
     
-2. Klicken Sie im Strukturbereich von Server-Manager auf **AD FS**.
+2. Klicken Sie im Strukturbereich des Server-Managers auf **Features**.
     
-3. Klicken Sie in der Symbolleiste oben auf das Symbol orange Vorsicht, und klicken Sie auf **der Verbunddienst auf diesem Server konfigurieren**.
+3. Klicken Sie in der Symbolleiste oben auf das orange Warnsymbol, und klicken Sie dann auf **Verbunddienst auf diesem Server konfigurieren**.
     
-4. Klicken Sie auf der Seite **Willkommen** des Active Directory Federation Services Konfigurations-Assistenten auf **Weiter**.
+4. Klicken Sie auf der **Willkommensseite** des Assistenten zum Konfigurieren von Active Directory-Verbunddiensten auf **Weiter**.
     
-5. Klicken Sie auf der Seite **Verbindung mit AD DS** auf **Weiter**.
+5. Klicken Sie auf der Seite **Mit AD DS verbinden** auf **Weiter**.
     
-6. Auf der Seite **Diensteigenschaften angeben** :
+6. Auf der Seite **Diensteigenschaften angeben**:
     
-  - Klicken Sie für **SSL-Zertifikat**auf den Pfeil nach unten, und klicken Sie dann auf das Zertifikat mit dem Namen von Ihrem Verbunddienst FQDN.
+  - Klicken Sie für **SSL-Zertifikat** auf den Pfeil nach unten, und klicken Sie dann auf das Zertifikat mit dem Namen des FQDN des Verbunddiensts.
     
-  - Geben Sie im Feld **Anzeigename für den Verbund Dienst**den Namen des fiktiven Unternehmens.
+  - Geben Sie unter **Anzeigename des Verbunddiensts** den Namen Ihrer fiktiven Organisation ein.
     
   - Klicken Sie auf **Weiter**.
     
-7. Klicken Sie auf der Seite **Dienstkonto angeben** für **Kontonamen**auf **auswählen** .
+7. Klicken Sie auf der Seite **Dienstkonto angeben** auf **Auswählen** für **Kontoname**.
     
-8. **Wählen Sie Benutzer oder -Dienstkonto**Geben Sie ein **AD FS-Dienst**, klicken Sie auf **Namen überprüfen**und klicken Sie dann auf **OK**.
+8. Geben Sie unter **Benutzer oder Dienstkonto auswählen** den Text **ADFS-Service** ein, klicken Sie auf **Namen überprüfen**, und klicken Sie dann auf **OK**.
     
-9. Geben Sie im Feld **Kennwort**das Kennwort für das AD FS-Dienstkonto ein, und klicken Sie dann auf **Weiter**.
+9. Geben Sie unter **Kontokennwort** das Kennwort für das ADFS-Dienstkonto ein, und klicken Sie dann auf **Weiter**.
     
 10. Klicken Sie auf der Seite **Konfigurationsdatenbank angeben** auf **Weiter**.
     
-11. Klicken Sie auf der Seite **Optionen überprüfen** auf **Weiter**.
+11. Klicken Sie auf der Seite **Optionen prüfen** auf **Weiter**.
     
-12. Klicken Sie auf der Seite **Voraussetzung überprüft** auf **Konfigurieren**.
+12. Klicken Sie auf der Seite **Voraussetzungsprüfungen** auf **Konfigurieren**.
     
 13. Klicken Sie auf der Seite **Ergebnisse** auf **Schließen**.
     
-14. Klicken Sie auf **Start**, klicken Sie auf das Symbol Power, klicken Sie auf **neu**, und klicken Sie dann auf **Weiter**.
+14. Klicken Sie auf **Start**, klicken Sie auf das Ein-/Ausschaltsymbol, klicken Sie auf **Neu starten**, und klicken Sie dann auf **Weiter**.
     
-Über das [Portal Azure](http://portal.azure.com)Herstellen einer Verbindung mit der CORP PROXY1 mit\\User1 Kontoanmeldeinformationen.
+Melden Sie sich über das [Azure-Portal](http://portal.azure.com) mit dem CORP\\User1-Konto bei PROXY1 an.
   
 Gehen Sie dann folgendermaßen vor, um das selbstsignierte Zertifikat zu installieren und PROXY1 zu konfigurieren.
   
-1. Klicken Sie auf **Start**, geben Sie **mmc.exe**, und drücken Sie die **EINGABETASTE**.
+1. Klicken Sie auf **Start**, geben Sie **mmc.exe** ein, und drücken Sie dann die  **EINGABETASTE**.
     
 2. Klicken Sie auf **Datei > Snap-In hinzufügen/entfernen**.
     
-3. **Hinzufügen oder Entfernen von-Snap-ins**Doppelklicken Sie in der Liste der verfügbaren Snap-Ins auf **Zertifikate** , klicken Sie auf **Computerkonto**, und klicken Sie dann auf **Weiter**.
+3. Doppelklicken Sie unter **Snap-In hinzufügen/entfernen** in der Liste verfügbarer Snap-Ins auf **Zertifikate**, klicken Sie auf **Computerkonto**, und klicken Sie dann auf **Weiter**.
     
-4. Klicken Sie im **Dialogfeld Computer auswählen**auf **Fertig stellen**, und klicken Sie dann auf **OK**.
+4. Klicken Sie unter **Computer auswählen** auf **Fertig stellen**, und klicken Sie dann auf **OK**.
     
-5. Öffnen Sie im Strukturbereich **Zertifikate (lokaler Computer) > persönlich > Zertifikate**.
+5. Öffnen Sie im Strukturbereich **Zertifikate (Lokaler Computer) > Persönlich > Zertifikate**.
     
-6. Mit der rechten Maustaste **Persönliche**, klicken Sie auf **Alle Tasks**, und klicken Sie dann auf **Importieren**.
+6. Klicken Sie mit der rechten Maustaste auf **Persönlich**, wählen Sie **Alle Tasks** aus, und klicken Sie dann auf **Importieren**.
     
 7. Klicken Sie auf der Seite **Willkommen** auf **Weiter**.
     
-8. Geben Sie auf der Seite **zu importierende Datei** ** \\ \\adfs1\\Zertifikate\\ssl.pfx**, und klicken Sie dann auf **Weiter**.
+8. Geben Sie auf der Seite **Zu importierende Datei** den Namen **\\\\adfs1\\certs\\ssl.pfx** ein, und klicken Sie dann auf **Weiter**.
     
-9. Geben Sie auf der Seite **Schutz des privaten Schlüssels** das Kennwort des Zertifikats im Feld **Kennwort**, und klicken Sie dann auf **nächsten.**
+9. Geben Sie auf der Seite **Schutz durch privaten Schlüssel** das Kennwort des Zertifikats unter **Kennwort** ein, und klicken Sie dann auf **Weiter**.
     
-10. Klicken Sie auf der Seite **Zertifikatspeicher** auf **nächsten.**
+10. Klicken Sie auf der Seite **Zertifikatspeicher** auf **Weiter**.
     
-11. Klicken Sie auf der Seite **Fertigstellen des Assistenten** auf **Fertig stellen**.
+11. Klicken Sie auf der Seite **Fertigstellung** auf **Fertig stellen**.
     
 12. Klicken Sie auf der Seite **Zertifikatspeicher** auf **Weiter**.
     
-13. Wenn Sie aufgefordert werden, klicken Sie auf **OK**.
+13. Klicken Sie auf **OK**, wenn Sie dazu aufgefordert werden.
     
-14. Klicken Sie im Strukturbereich auf **Zertifikate** .
+14. Klicken Sie in der Strukturansicht auf **Zertifikate**.
     
-15. Mit der rechten Maustaste in des Zertifikats, und klicken Sie dann auf **Kopieren**.
+15. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und klicken Sie dann auf **Kopieren**.
     
-16. Öffnen Sie im Strukturbereich **Vertrauenswürdige Stammzertifizierungsstellen > Zertifikate**.
+16. Öffnen Sie im Strukturbereich **Vertrauenswürdige Stammzertifizierungsstellen > Zertifizierungsstellen**.
     
-17. Verschieben Sie den Mauszeiger unterhalb der Liste der installierten Zertifikate, mit der rechten Maustaste, und klicken Sie dann auf **Einfügen**.
+17. Verschieben Sie den Mauszeiger unter die Liste der installierten Zertifikate, klicken Sie mit der rechten Maustaste, und klicken Sie dann auf **Einfügen**.
     
 Öffnen Sie eine PowerShell-Eingabeaufforderung auf Administratorebene, und führen Sie den folgenden Befehl aus:
   
@@ -340,59 +340,59 @@ Warten Sie, bis die Installation abgeschlossen ist.
   
 Verwenden Sie die folgenden Schritte, um den Webanwendungs-Proxydienst so zu konfigurieren, dass ADFS1 als Verbundserver verwendet wird:
   
-1. Klicken Sie auf **Start**, und klicken Sie dann auf **Server-Manager**.
+1. Klicken Sie auf **Start** und dann auf **Server-Manager**.
     
-2. Klicken Sie im Strukturbereich **Remotezugriff**auf.
+2. Klicken Sie in der Strukturansicht auf **Remotezugriff**.
     
-3. Klicken Sie in der Symbolleiste oben auf das Symbol orange Vorsicht, und klicken Sie dann auf **den Web Application Proxy-Assistenten zu öffnen**.
+3. Klicken Sie in der Symbolleiste oben auf das orange Warnsymbol, und klicken Sie dann auf **Assistent für Webanwendungsproxy öffnen**.
     
-4. Klicken Sie auf der Seite **Willkommen** des Web Application Proxy Konfigurations-Assistenten auf **Weiter**.
+4. Klicken Sie auf der **Willkommensseite** des Assistenten zum Konfigurieren des Webanwendungsproxys auf **Weiter**.
     
-5. Auf der Seite **Verbundserver** :
+5. Auf der Seite **Verbundserver**:
     
-  - Geben Sie Ihre Verbunddienst FQDN im **Verbund Dienstname**.
+  - Geben Sie unter **Verbunddienstname** den FQDN des Verbunddiensts ein.
     
-  - Typ **CORP\\User1** im **Feld Benutzername**.
+  - Geben Sie **CORP\\User1** unter **Benutzername** ein.
     
-  - Geben Sie im Feld **Kennwort**das Kennwort für das Konto User1 an.
+  - Geben Sie das Kennwort des User1-Kontos unter **Kennwort** ein.
     
   - Klicken Sie auf **Weiter**.
     
-6. Klicken Sie auf der Seite **AD FS-Proxy-Zertifikat** klicken Sie auf den Pfeil nach unten, klicken Sie auf das Zertifikat mit Ihrem Verbunddienst FQDN, und klicken Sie dann auf **Weiter**.
+6. Klicken Sie auf der Seite **AD FS-Proxyzertifikat** auf den Pfeil nach unten, klicken Sie dann auf das Zertifikat mit dem FQDN des Verbunddiensts, und klicken Sie dann auf **Weiter**.
     
-7. Klicken Sie auf **der Bestätigungsseite** auf **Konfigurieren**.
+7. Klicken Sie auf der Seite **Bestätigung** auf **Konfigurieren**.
     
 8. Klicken Sie auf der Seite **Ergebnisse** auf **Schließen**.
     
 ## <a name="phase-5-configure-office-365-for-federated-identity"></a>Phase 5: Konfigurieren von Office 365 für Verbundidentität
 
-Verwendung des [Azure Portal](http://portal.azure.com) zum Herstellen einer Verbindung mit der CORP am virtuellen Computer APP1\\User1 Kontoanmeldeinformationen.
+Verwenden Sie das [Azure-Portal](http://portal.azure.com), um eine Verbindung zu dem virtuellen Computer APP1 unter Verwendung der Kontoanmeldeinformationen „CORP\\User1“ herzustellen.
   
 Verwenden Sie diese Schritte, um Azure AD Connect und Ihr Office 365-Abonnement für die Verbundauthentifizierung zu konfigurieren:
   
-1. Doppelklicken Sie vom Desktop auf **Azure Active Directory verbinden**.
+1. Doppelklicken Sie auf dem Desktop auf **Azure AD Connect**.
     
-2. Klicken Sie auf der Seite **Willkommen auf Azure AD-verbinden** auf **Konfigurieren**.
+2. Klicken Sie auf der Seite **Willkommen bei Azure AD Connect** auf **Konfigurieren**.
     
-3. Auf der Seite **zusätzliche Aufgaben** **ändern Benutzer - Anmeldung**auf, und klicken Sie dann auf **Weiter**.
+3. Klicken Sie auf der Seite **Weitere Aufgaben** auf **Benutzeranmeldung ändern**, und klicken Sie dann auf **Weiter**.
     
-4. Geben Sie auf der Seite **Verbindung mit Azure Active Directory herstellen** Ihre Office 365 globaler Administrator-Kontonamen und das Kennwort ein, und klicken Sie dann auf **Weiter**.
+4. Geben Sie auf der Seite **Mit Azure AD verbinden** den Namen und das Kennwort für das globale Office 365-Administratorkonto ein, und klicken Sie dann auf **Weiter**.
     
 5. Klicken Sie auf der Seite **Benutzeranmeldung** auf **Verbund mit AD FS**, und klicken Sie dann auf **Weiter**.
     
-6. Klicken Sie auf der Seite **AD FS-Farm** auf **einer vorhandenen AD FS-Farm verwenden**, geben Sie im Feld **Servername** **ADFS1** ein, und klicken Sie dann auf **Weiter**.
+6. Klicken Sie auf der Seite **AD FS-Farm** auf **Vorhandene AD FS-Farm verwenden**, geben Sie **ADFS1** unter **Servername** ein, und klicken Sie dann auf **Weiter**.
     
-7. Wenn Sie für Server-Anmeldeinformationen aufgefordert werden, geben Sie die Anmeldeinformationen der corp\\User1 berücksichtigt werden, und klicken Sie dann auf **OK**.
+7. Wenn Sie aufgefordert werden, Serveranmeldeinformationen einzugeben, geben Sie die Anmeldeinformationen des Kontos „CORP\\User1“ ein, und klicken Sie dann auf **OK**.
     
-8. Geben Sie auf der Seite Anmeldeinformationen für **Domänenadministrator** **CORP\\User1** **Benutzernamen** und das Kontokennwort im Feld **Kennwort ein**, und klicken Sie dann auf **Weiter**.
+8. Geben Sie auf der Seite mit den Anmeldeinformationen für den **Domänenadministrator** unter **Benutzername** den Namen **CORP\\User1** und unter **Kennwort** das Kontokennwort ein, und klicken Sie dann auf **Weiter**.
     
-9. Geben Sie auf der Seite **AD FS-Dienstkonto** **CORP\\AD FS-Dienst** in **Benutzername** und das Kontokennwort in **Domänenkennwort für Benutzer**, und klicken Sie dann auf **Weiter**.
+9. Geben Sie auf der Seite **AD FS-Dienstkonto** den Namen **CORP\\ADFS-Service** unter **Domänenbenutzername** und das Kontokennwort unter **Domänenbenutzerkennwort** ein, und klicken Sie dann auf **Weiter**.
     
-10. Klicken Sie auf der Seite **Azure AD-Domäne** in der **Domäne**wählen Sie den Namen der Domäne, die Sie zuvor erstellt und Ihr Office 365-Abonnement in Phase 1 hinzugefügt, und klicken Sie dann auf **Weiter**.
+10. Wählen Sie auf der Seite **Azure AD-Domäne** unter **Domäne** den Namen der Domäne aus, die Sie zuvor in Phase 1 erstellt und zu Ihrem Office 365-Abonnement hinzugefügt haben, und klicken Sie dann auf **Weiter**.
     
-11. Klicken Sie auf der Seite **bereit zum Konfigurieren** klicken Sie auf **Konfigurieren**.
+11. Klicken Sie auf der Seite **Bereit zur Konfiguration** auf **Konfigurieren**.
     
-12. Klicken Sie auf der Seite **Installation abgeschlossen** auf **Überprüfen**.
+12. Klicken Sie auf der Seite **Installation ist abgeschlossen** auf **Überprüfen**.
     
     Nun sollten Meldungen angezeigt werden, aus denen hervorgeht, dass sowohl die Intranet- als auch die Internetkonfiguration überprüft wurde.
     
@@ -400,43 +400,43 @@ Verwenden Sie diese Schritte, um Azure AD Connect und Ihr Office 365-Abonnement 
     
 Gehen Sie folgendermaßen vor, um zu zeigen, dass die Verbundauthentifizierung funktioniert:
   
-1. Öffnen Sie eine neue private Instanz des Browsers auf Ihrem lokalen Computer, und gehen Sie zu [https://portal.office.com](https://portal.office.com).
+1. Öffnen Sie eine neue private Instanz Ihres Browsers auf Ihrem lokalen Computer, und wechseln Sie zu [https://portal.office.com](https://portal.office.com).
     
-2. Geben Sie für die Anmeldeinformationen, **user1 @**\<die in Phase 1 erstellte Domäne >. 
+2. Geben Sie als Anmeldeinformationen **user1@**\<die in Phase 1 erstellte Domäne> ein.  
     
-    Wenn der Testdomäne **testlab.contoso.com**ist, würden Sie beispielsweise **user1@testlab.contoso.com**eingeben. Drücken Sie TAB oder zulassen Sie Office 365 automatisch Sie umleiten.
+    Wenn Ihre Testdomäne beispielsweise **testlab.contoso.com** ist, geben Sie **user1@testlab.contoso.com** ein. Drücken Sie die TAB-TASTE, oder lassen Sie sich von Office 365 automatisch weiterleiten.
     
-    Nun sollte eine Seite **die Verbindung ist nicht privat** angezeigt werden. Sie sehen dies, da Sie ein selbstsigniertes Zertifikat auf ADFS1 installiert, die dem Desktopcomputer nicht überprüfen kann. In einer Bereitstellung in der Produktion über die Verbundauthentifizierung verwenden Sie ein Zertifikat von einer vertrauenswürdigen Zertifizierungsstelle, und Ihre Benutzer nicht auf dieser Seite angezeigt.
+    Jetzt sollten Sie die Seite **Die Verbindung ist nicht privat** sehen. Dies wird angezeigt, weil Sie ein selbstsigniertes Zertifikat auf ADFS1 installiert haben, das der Desktopcomputer nicht überprüfen kann. In einer Produktionsbereitstellung der Verbundauthentifizierung würden Sie ein Zertifikat von einer vertrauenswürdigen Zertifizierungsstelle verwenden, und Ihre Benutzer würden diese Seite nicht sehen.
     
-3. Klicken Sie auf der Seite **Ihre Verbindung ist nicht privat** , klicken Sie auf **Erweitert**, und klicken Sie dann auf **fahren Sie mit \<Ihrer Verbunddienst FQDN >**. 
+3. Klicken Sie auf der Seite **Die Verbindung ist nicht privat** auf **Erweitert**, und klicken Sie dann auf **Fortfahren mit \<FQDN des Verbunddiensts>**. 
     
 4. Melden Sie sich auf der Seite mit dem Namen Ihrer fiktiven Organisation mit den folgenden Informationen an:
     
-  - **CORP\\User1** für den Namen
+  - **CORP\\User1** als Name
     
   - Das Kennwort für das Konto „User1“
     
-    **Microsoft Office** -Startseite sollte angezeigt werden.
+    Die **Microsoft Office-Homepage** sollte angezeigt werden.
     
-In diesem Verfahren wird veranschaulicht, dass der Test Office 365-Abonnement mit der Windows Azure AD "corp.contoso.com" Domäne gehostet auf DC1 im Verbund befindet. Hier werden die Grundlagen der Authentifizierungsprozess:
+In diesem Verfahren wird veranschaulicht, dass Ihr Office 365-Testabonnement im Verbund mit der Windows Server AD-Domäne „corp.contoso.com“ steht, die auf DC1 gehostet wird. Nachfolgend finden Sie die Grundlagen des Authentifizierungsprozesses:
   
 1. Wenn Sie die Verbunddomäne verwenden, die Sie in Phase 1 mit dem Anmeldekontonamen erstellt haben, wird Ihr Browser von Office 365 an den FQDN des Verbunddiensts und PROXY1 umgeleitet.
     
 2. PROXY1 sendet dem lokalen Computer die Anmeldeseite des fiktiven Unternehmens.
     
-3. Wenn Sie CORP senden\\User1 und das Kennwort zum PROXY1, es an weiterleitet ADFS1.
+3. Wenn Sie „CORP\\User1“ und das Kennwort an PROXY1 senden, werden diese Informationen an ADFS1 weitergeleitet.
     
-4. ADFS1 überprüft CORP\\User1 und das Kennwort mit DC1 und dem lokalen Computer ein Sicherheitstoken sendet.
+4. ADFS1 überprüft CORP\\User1 und das Kennwort mit DC1 und sendet dem lokalen Computer ein Sicherheitstoken.
     
 5. Der lokale Computer sendet das Sicherheitstoken an Office 365.
     
 6. Office 365 überprüft, dass das Sicherheitstoken von ADFS1 erstellt wurde und erlaubt den Zugriff.
     
-Ihr Office 365-Testabonnement ist nun für die Verbundauthentifizierung konfiguriert. Sie können diese Entwicklungs-/Testumgebung für erweiterte Authentifizierungsszenarien verwenden.
+Ihr Office 365-Testabonnement ist jetzt mit Verbundauthentifizierung konfiguriert. Sie können diese Entwicklungs-/Testumgebung für erweiterte Authentifizierungsszenarien verwenden.
   
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie sofort in der Produktion bereitstellen möchten, Verbundauthentifizierung hohe Verfügbarkeit für Office 365 in Azure, finden Sie unter [Deploy hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Wenn Sie bereit sind, die produktionsbereite, hochverfügbare Verbundauthentifizierung für Office 365 in Azure bereitzustellen, finden Sie weitere Informationen unter [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
 ## <a name="see-also"></a>Siehe auch
 
