@@ -1,130 +1,130 @@
 ---
-title: Verwalten einer Umgebung mit mehreren geografisch
+title: Verwalten einer Multi-Geo-Umgebung
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.custom: Strat_SP_gtc
-localization_priority: Normal
-description: Informationen Sie zum Verwalten von SharePoint und OneDrive-Dienste in einer Umgebung mit mehreren geografisch.
-ms.openlocfilehash: 5d423fedc25b6e58ee84a51b01eb3858e6f198bb
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+ms.custom: ''
+ms.collection: Strat_SP_gtc
+localization_priority: Priority
+description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
+ms.openlocfilehash: 596db0e2cffedc74a4840ae4427a3350ba1e27d8
+ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="administering-a-multi-geo-environment"></a>Verwalten einer Umgebung mit mehreren geografisch
+# <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
-Es folgt eine Aufstellung der Funktionsweise von OneDrive und SharePoint-Dienste in einer Umgebung mit mehreren geografisch.
+In diesem Artikel wird die Funktionsweise von OneDrive- und SharePoint-Diensten in einer Multi-Geo-Umgebung erläutert.
 
-#### <a name="onedrive-administrator-experience"></a>OneDrive Administratorbenutzeroberfläche
+#### <a name="onedrive-administrator-experience"></a>OneDrive-Administratorumgebung
 
-Der [OneDrive-Verwaltungskonsole](https://admin.onedrive.com) hat eine Registerkarte **Geo Speicherorte** im linken Navigationsbereich, welche Features, in dem Sie anzeigen und Verwalten von Speicherorten für Ihre Geo können ein Geo-Standorte zuordnen. Verwenden Sie diese Seite zum Hinzufügen oder Löschen von Geo Speicherorte für Ihre Mandanten.
+Das [OneDrive Admin Center](https://admin.onedrive.com) verfügt im linken Navigationsbereich über die Registerkarte **Geografische Standorte**, die eine Karte mit geografischen Standorten enthält, auf der Sie Ihre geografischen Standorte anzeigen und verwalten können. Verwenden Sie diese Seite zum Hinzufügen oder Löschen von geografischen Standorten für Ihren Mandanten.
 
 #### <a name="taxonomy"></a>Taxonomie
 
-Wir unterstützen eine einheitliche [Taxonomie](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) für verwaltete Metadaten von Unternehmen über Geo-Standorte mit das Master-Shape in der zentralen Speicherort für Ihr Unternehmen gehostet wird. Es wird empfohlen, dass Sie der globalen Taxonomie vom zentralen Speicherort verwalten und nur Satelliten Geo Speicherort Taxonomie standortspezifische Begriffe hinzugefügt. Globale Taxonomie Begriffe werden an den Satelliten Geo Orten synchronisiert.
+Wir unterstützen eine einheitliche [Taxonomie](https://support.office.com/article/A180FA28-6405-4679-9EC3-81D2028C4EFC) für verwaltete Unternehmensdaten für alle geografischen Standorte. Die Gestaltungsvorlage wird an einem zentralen Ort für das Unternehmen gehostet. Es wird empfohlen, die globale Taxonomie von einem zentralen Ort aus zu verwalten und nur der Taxonomie der Satellitenstandorte standortspezifische Ausdrücke hinzuzufügen. Globale Taxonomieausdrücke werden mit den Satellitenstandorten synchronisiert.
 
 #### <a name="sharing"></a>Freigabe
 
-Administratoren können festlegen und Verwalten von Freigaberichtlinien für jede ihrer Standorte. Die Websites OneDrive an jedem Standort Geo berücksichtigt nur die entsprechenden Geo bestimmte sharing Einstellungen. Beispielsweise können Sie [externe Freigabe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) für den zentralen Standort, jedoch nicht für Ihre Satelliten Speicherort umgekehrt gestatten. OneDrive Multi-Geo müssen Sie Ihre Freigabe Einstellungen an jedem Standort Geo verwalten, wie diese über den Mandanten nicht synchronisiert sind.
+Administratoren können die Freigabe von Richtlinien für jeden Standort einrichten und verwalten. OneDrive-Websites an den einzelnen geografischen Standorten berücksichtigen nur die entsprechenden Freigabeeinstellungen des geografischen Standorts. (Sie können z. B. [externe Freigabe](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) für Ihren zentralen Standort und nicht für den Satellitenstandort zulassen, und umgekehrt.) Beachten Sie, dass die Freigabeeinstellungen keine Konfiguration von Freigabeeinschränkungen zwischen den geografischen Standorten zulassen.
 
-Verwalten von sharing Besuch der Seite [freigabeeinstellungen OneDrive-Verwaltungskonsole](https://admin.onedrive.com/?v=SharingSettings) . Externe Freigabe wird mit jeder an jedem Satellitenstandort standardmäßig aktiviert.
+Für Multi-Geo in OneDrive müssen Sie Ihre Freigabeeinstellungen für jeden geografischen Standort verwalten, da diese nicht innerhalb des Mandanten synchronisiert werden. Die Einstellungen für die Freigabe können auf der Seite für die [Freigabeeinstellungen im OneDrive Admin Center](https://admin.onedrive.com/?v=SharingSettings) verwalten. Externe Freigabe ist standardmäßig für alle Benutzer an den einzelnen Satellitenstandorten aktiviert.
 
-#### <a name="user-profile-application"></a>Benutzer Benutzerprofildienst-Anwendung
+#### <a name="user-profile-application"></a>Benutzerprofilanwendung
 
-An jedem Standort Geo ist ein [Benutzer Benutzerprofildienst-Anwendung](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723) . Profilinformationen des Benutzers gehostet wird in ihrem Standort Geo und an den Administrator für diesen Speicherort Geo verfügbar.
+Es gibt eine [Benutzerprofilanwendung](https://support.office.com/article/494bec9c-6654-41f0-920f-f7f937ea9723) an jedem geografischen Standort. Profilinformationen der Benutzer werden an dem jeweiligen geografischen Standort gehostet und stehen dem Administrator für diesen geografischen Standort zur Verfügung.
 
-Wenn Sie benutzerdefinierte Eigenschaften, und es wird empfohlen, die Sie verwenden das gleiche Profilschema verschiedenen Standorten und füllen Sie Ihre benutzerdefinierte Profileigenschaften entweder an allen Speicherorten von Geo oder bei Bedarf.
+Wenn Sie über benutzerdefinierte Profileigenschaften verfügen, wird empfohlen, dasselbe Profilschema für alle geografischen Standorte zu verwenden und die benutzerdefinierten Profileigenschaften entweder für alle oder bestimmte geografischen Standorte aufzufüllen. Eine Anleitung dazu, wie Sie Benutzerprofildaten programmgesteuert auffüllen, finden Sie unter [API für die Massenaktualisierung von Benutzerprofilen](https://docs.microsoft.com/de-DE/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
 
-#### <a name="bcs-secure-store-apps"></a>BCS, Secure Store-Apps
+#### <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
-BCS, einmaliges Anmelden und Apps verfügen über separate Geo-Instanzen, daher der SharePoint Online-Administrator verwalten und konfigurieren Sie diese Dienste von jeder Geo-Instanz, in dem sie vorhanden sein sollen, sollten.
+BCS, Secure Store und Apps verfügen über separate geografische Instanzen. Daher sollte der SharePoint Online-Administrator diese Dienste von dem jeweiligen geografischen Standort aus verwalten und konfigurieren, an dem diese vorhanden sein sollen.
 
-#### <a name="security-and-compliance-admin-center"></a>Sicherheit und Compliance-Verwaltungskonsole
+#### <a name="security-and-compliance-admin-center"></a>Security & Compliance Center
 
-Es ist eine zentrale Compliance Center für den Mandanten mit mehreren geografisch: [Office 365-Sicherheit und Compliance Center](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Es gibt ein zentrales Compliance Center für den Multi-Geo-Mandanten: [Office 365 Security & Compliance Center](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
-#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>Schutz (IP) Data Loss Prevention (DLP) Informationsrichtlinien
+#### <a name="information-protection-ip-data-loss-prevention-dlp-policy"></a>DLP-Richtlinie in Information Protection
 
-Sie können Ihre IP DLP Richtlinien für OneDrive for Business in der Mitte Sicherheit und Richtlinientreue festlegen Bereichsdefinierung Richtlinien Bedarf für den gesamten Mandanten oder für Benutzer. Beispiel: Wenn Sie eine Richtlinie für einen Benutzer OneDrive an einem Speicherort Satelliten auswählen möchten, wenden Sie die Richtlinie zu einem bestimmten OneDrive und geben den Benutzer auswählen der OneDrive-Url. Allgemeine Richtlinien bei der Erstellung von DLP-Richtlinien finden Sie unter [Übersicht über Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) .
+Sie können Ihre DLP-Richtlinien in Information Protection für OneDrive for Business im Security & Compliance Center festlegen und den Geltungsbereich je nach Bedarf auf den gesamten Mandanten oder einzelne Benutzer festlegen. Beispiel: Wenn Sie eine Richtlinie für einen OneDrive-Benutzer an einem Satellitenstandort auswählen möchten, wenden Sie die Richtlinie für eine bestimmte OneDrive-Umgebung an, und geben Sie die URL der OneDrive-Benutzerumgebung ein. Eine allgemeine Anleitung für das Erstellen von DLP-Richtlinien finden Sie unter [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
-Die DLP-Richtlinien werden automatisch basierend auf ihren Anwendungsbereich an jedem Standort Geo synchronisiert.
+Die DLP-Richtlinien werden automatisch basierend auf ihrer Anwendbarkeit auf den jeweiligen geografischen Standort synchronisiert.
 
-Implementieren von Information Protection and Data Loss Prevention-Richtlinien für alle Benutzer an einem Speicherort Geo ist keine Option in der Benutzeroberfläche verfügbar, stattdessen müssen Sie wählen Sie die entsprechenden OneDrive-Konten für die Richtlinie oder gelten die Richtlinie global für alle OneDrive-Konten.
+Die Implementierung von IP- (Information Protection) und DLP-Richtlinien für alle Benutzer an einem geografischen Standort steht nicht als Option auf der Benutzeroberfläche zur Verfügung. Sie müssen stattdessen die entsprechenden OneDrive-Konten für die Richtlinie auswählen oder die Richtlinie global auf alle OneDrive-Konten anwenden.
 
 #### <a name="ediscovery"></a>eDiscovery 
 
-Standardmäßig wird eine eDiscovery-Manager oder Administrator der einen Mandanten Multi-Geo eDiscovery nur in der zentralen Speicherort, Mandanten durchführen können. Um die Möglichkeit zum Durchführen von eDiscovery für Satelliten Speicherorte zu unterstützen, ist ein neuer Sicherheitsfilter Compliance-Parameter "Region" aufgerufen über PowerShell verfügbar.
+Standardmäßig kann ein eDiscovery-Manager oder Administrator eines Multi-Geo-Mandaten eDiscovery nur an der zentralen Stelle dieses Mandanten durchführen. Um eDiscovery für Satellitenstandorte durchführen zu können, steht ein neuer Parameter des Compliancesicherheitsfilters namens „Region“ über PowerShell zur Verfügung.
 
-Office 365 globale Administrator muss eDiscovery-Manager-Berechtigungen zu anderen Benutzern gestatten, Ausführen von eDiscovery, und weisen Sie einen Parameter "Region" in ihren entsprechenden Compliance Sicherheitsfilter an die Region für die Durchführung von eDiscovery als Satelliten zuweisen Speicherort, andernfalls keine eDiscovery für den Speicherort der Satelliten durchgeführt werden soll.
+Der globale Office 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen „Region“-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden.
 
-Wenn die eDiscovery-Manager oder Administrator-Rolle für einen bestimmten Geo-Speicherort festgelegt ist, wird die eDiscovery-Manager oder Administrator nur eDiscovery-Suche Aktionen für die SharePoint-Websites und OneDrive Standorte in diesen Geo-Speicherort ausführen können. Wenn ein eDiscovery-Manager oder Administrator versucht, SharePoint oder OneDrive Websites außerhalb des angegebenen Bereichs suchen, werden keine Ergebnisse zurückgegeben. Wenn nach Exportieren von eDiscovery-Manager oder Administrator für einen Bereich ausgelöst wird, werden Daten an die Azure Instanz dieser Region exportiert. Dadurch Organisationen in Compliance bleiben, indem nicht zulassen Inhalte über gesteuerte Grenzen hinweg exportiert werden sollen.
+Wenn die eDiscovery-Manager- oder Administratorrolle für einen bestimmten geografischen Standort festgelegt ist, kann der eDiscovery-Manager oder Administrator nur eDiscovery-Suchaktionen für die SharePoint-Websites und OneDrive-Websites an diesem geografischen Standort durchführen. Wenn ein eDiscovery-Manager oder Administrator versucht, SharePoint- oder OneDrive-Websites außerhalb der angegebenen Region zu durchsuchen, werden keine Ergebnisse zurückgegeben. Wenn der eDiscovery-Manager oder Administrator für eine Region einen Export auslöst, werden Daten in der Azure-Instanz dieses Bereichs exportiert. So können Organisationen Compliance gewährleisten, indem nicht zugelassen wird, dass Inhalte über den kontrollierten Rahmen hinaus exportiert werden.
 
 > [!NOTE]
-> Wenn es für ein eDiscovery-Suche über mehrere SharePoint-Regionen Manager erforderlich ist, müssen eines anderen Benutzerkontos für die eDiscovery-Manager erstellt werden, der die alternative Region angibt, wo sich die OneDrive oder SharePoint-Websites befinden.
+> Wenn ein eDiscovery-Manager mehrere SharePoint-Regionen durchsuchen möchte, muss ein anderes Benutzerkonto für den eDiscovery-Manager erstellt werden, das die alternative Region angibt, in der sich OneDrive- oder SharePoint-Websites befinden.
 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Multi-Geo unterstützt Geo Speicherorte</strong></th>
-<th align="left"><strong>eDiscovery für SharePoint exportiert Daten werden in diesem Speicherort der Azure Blob-Daten...</strong></th>
+<th align="left"><strong>Von Multi-Geo unterstützte geografischen Standorte</strong></th>
+<th align="left"><strong>eDiscovery für exportierte SharePoint-Daten erfolgt an diesem Azure Blob-Datenspeicherort...</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><strong>NAME</strong></td>
-<td align="left">US-Rechenzentren</td>
+<td align="left"><strong>NAM</strong></td>
+<td align="left">Rechenzentren in den USA</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>EUR</strong></td>
-<td align="left">Europa Rechenzentren</td>
+<td align="left">Rechenzentren in Europa</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>APC</strong></td>
-<td align="left">Südost oder East Asien-Rechenzentren</td>
+<td align="left">Rechenzentren in Südost- oder Ostasien</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>KÖNNEN</strong></td>
-<td align="left">US-Rechenzentren</td>
+<td align="left"><strong>CAN</strong></td>
+<td align="left">Rechenzentren in den USA</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>AUS</strong></td>
-<td align="left">Südost oder East Asien-Rechenzentren</td>
+<td align="left">Rechenzentren in Südost- oder Ostasien</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>KOREANISCHE</strong></td>
-<td align="left">Mandanten Standardspeicherort Daten</td>
+<td align="left"><strong>KOR</strong></td>
+<td align="left">Standardspeicherort für Daten des Mandanten</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>GBR</strong></td>
-<td align="left">Europa Rechenzentren</td>
+<td align="left">Rechenzentren in Europa</td>
 </tr>
 <tr class="even">
-<td align="left"><strong>JAPANISCHE</strong></td>
-<td align="left">Südost oder East Asien-Rechenzentren</td>
+<td align="left"><strong>JPN </strong></td>
+<td align="left">Rechenzentren in Südost- oder Ostasien</td>
 </tr>
 </tbody>
 </table>
 
-Die Einhaltung von Bestimmungen Sicherheitsfilter für einen Bereich festlegen:
+So legen Sie den Compliancesicherheitsfilter für eine Region fest
 
-1.  Öffnen von Windows PowerShell
+1.  Öffnen Sie Windows PowerShell.
 
-2.  die EINGABETASTE  
-    $s = New-PSSession - ConfigurationName Microsoft.Exchange - ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Anmeldeinformationen $cred-Authentifizierung grundlegende - AllowRedirection - SessionOption (New-PSSessionOption - SkipCACheck - SkipCNCheck - SkipRevocationCheck)
+2.  Geben Sie Folgendes ein:  
+    $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $eine = $s Import-PSSession - AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
-3.  **Neue ComplianceSecurityFilter** **-Aktion** ALLE **FilterName -** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Benutzer** EnterTheUserPrincipalName
+3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
-    Beispiel: **neue ComplianceSecurityFilter-Aktion** alle **FilterName -** NAMEDISCOVERYMANAGERS **-Region** Name **-Benutzer** adwood@contosodemosx.onmicrosoft.com
+    Beispiel: **New-ComplianceSecurityFilter -Action** ALL **-FilterName** NAMEDISCOVERYMANAGERS **-Region** NAM **-Users** adwood@contosodemosx.onmicrosoft.com
 
-Finden Sie im Artikel [Neu ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx) für zusätzliche Parameter und syntax
+Informationen zu weiteren Parametern und zur Syntax finden Sie im Artikel [New-ComplianceSecurityFilter](https://technet.microsoft.com/library/mt210915(v=exchg.160).aspx).
 
 #### <a name="audit-log-search"></a>Überwachungsprotokollsuche
 
-Eine einheitliche [Überwachungsprotokoll](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) für alle Standorte Ihrer Geo ist über die Office 365 Audit Log Suchseite verfügbar. Sehen Sie alle Überwachungsprotokolleinträge aus über Geos, beispielsweise Name & EUR Geo Benutzeraktivitäten in einer einzigen Org-Ansicht angezeigt werden, und klicken Sie dann können Sie vorhandene Filter an, um bestimmte Benutzer Aktivitäten finden Sie unter anwenden.
+Ein einheitliches [Überwachungsprotokoll](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) für alle Ihre geografischen Standorte ist auf der Seite für die Office 365-Überwachungsprotokollsuche verfügbar. Sie können alle Überwachungsprotokolleinträge für alle geografischen Standorte anzeigen. Beispiel: Sie können Benutzeraktivitäten für die geografischen Standorte NAM und EUR in einer Organisationsansicht anzeigen und dann vorhandene Filter anwenden, um bestimmte Benutzeraktivitäten anzuzeigen.
