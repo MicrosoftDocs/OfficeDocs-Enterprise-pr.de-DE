@@ -3,7 +3,7 @@ title: Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/14/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: "Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen."
-ms.openlocfilehash: 297681b688b43eb02ee4f99f983a0f796312e599
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
+description: 'Zusammenfassung: Mithilfe dieser schrittweisen Anleitung können Sie eine neue isolierte SharePoint Online-Teamwebsite bereitstellen.'
+ms.openlocfilehash: c4bb272cc96ca86fc8bffc99f7c3e50033c06755
+ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/16/2018
+ms.locfileid: "19168549"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Bereitstellen einer isolierten SharePoint Online-Teamwebsite
 
@@ -63,17 +64,19 @@ Sie müssen die folgenden Zugriffsgruppen in Azure AD erstellen:
     
 1. Wechseln Sie in Ihrem Browser zum Azure-Portal unter [https://portal.azure.com](https://portal.azure.com), und melden Sie sich mit den Anmeldeinformationen eines Kontos an, dem die Rolle „Unternehmensadministrator" oder „Benutzerverwaltungsadministrator" zugewiesen wurde.
     
-2. Klicken Sie im Azure-Portal auf **Azure Active Directory > Benutzer und Gruppen > Alle Gruppen**.
+2. Klicken Sie im Azure-Portal auf **Azure Active Directory > Gruppen**.
     
-3. Klicken Sie auf dem Blatt **Alle Gruppen** auf **+ Neue Gruppe**.
+3. Klicken Sie auf dem Blatt **Gruppen - Alle Gruppen** auf **+ Neue Gruppe**.
     
 4. Auf dem Blatt **Gruppe**:
     
+  - Wählen Sie **Office 365** unter **Gruppentyp** aus.
+    
   - Geben Sie den Gruppennamen unter **Name** ein.
     
-  - Wählen Sie **Zugewiesen** unter **Mitgliedschaft** aus.
+  - Geben Sie unter **Gruppenbeschreibung** eine Beschreibung der Gruppe ein.
     
-  - Klicken Sie auf **Ja** für **Office-Features aktivieren**.
+  - Wählen Sie **Zugewiesen** unter **Mitgliedschaftstyp** aus.
     
 5. Klicken Sie auf **Erstellen**, und schließen Sie dann das Blatt **Gruppe**.
     

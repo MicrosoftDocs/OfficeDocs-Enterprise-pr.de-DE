@@ -7,64 +7,65 @@ ms.date: 04/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
-description: 'Zusammenfassung: Erstellen einer vereinfachten Intranet als Test-/Umgebung in Microsoft Azure.'
-ms.openlocfilehash: a874260510b2825fae0f0fd9154912d35e555d19
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
-ms.translationtype: MT
+description: 'Zusammenfassung: Erstellen Sie ein vereinfachtes Intranet als Entwicklungs-/Testumgebung in Microsoft Azure.'
+ms.openlocfilehash: a6c0610531482d5d264b582f7a3550b57f21841d
+ms.sourcegitcommit: ac7a37049e3c96e32ea91a4d97105028b0dbb2c5
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/04/2018
+ms.locfileid: "19023030"
 ---
 # <a name="base-configuration-devtest-environment"></a>Basiskonfiguration der Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Erstellen Sie eine vereinfachte Intranet als einer Test-/-Umgebung in Microsoft Azure.
+ **Zusammenfassung:** Erstellen Sie ein vereinfachtes Intranet als Entwicklungs-/Testumgebung in Microsoft Azure.
   
 Dieser Artikel enthält eine schrittweise Anleitung zum Erstellen der folgenden Basiskonfiguration der Entwicklungs-/Testumgebung in Azure:
   
-**Abbildung 1: Basiskonfiguration Test-/Umgebung**
+**Abbildung 1: Die Basiskonfiguration der Entwicklungs-/Testumgebung**
 
 ![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
-Die Basiskonfiguration Test-/Umgebung in Abbildung 1 besteht aus dem Subnetz Corpnet in einer Cloud-only Azure-virtuelles Netzwerk mit dem Namen Testlabor, die simuliert eine vereinfachte, privaten Intranet mit dem Internet verbunden. Dieser Abschnitt enthält drei Azure-virtuelle Computer unter WIndows Server 2016:
+Die Basiskonfiguration der Entwicklungs-/Testumgebung in Abbildung 1 besteht aus dem Unternehmensnetzwerk-Subnetz in einem auf die Cloud beschränkten virtuellen Azure-Netzwerk namens TestLab, das ein vereinfachtes privates Intranet simuliert, das mit dem Internet verbunden ist. Es enthält drei virtuelle Azure-Computer unter Windows Server 2016:
   
 - DC1 ist als Intranet-Domänencontroller und DNS-Server (Domain Name System) konfiguriert.
     
 - App1 ist als allgemeiner Anwendungs- und Webserver konfiguriert.
     
-- 	CLIENT1 fungiert als Intranetclient.
+- CLIENT1 fungiert als Intranetclient.
     
-Diese Konfiguration ermöglicht DC1, APP1, CLIENT1 und weiteren Computern im Unternehmensnetzwerk-Subnetz Folgendes:  
+Diese Konfiguration ermöglicht DC1, APP1, CLIENT1 und weiteren Computern im Unternehmensnetzwerk-Subnetz Folgendes: 
   
-- Verbunden mit dem Internet Updates installiert, Zugriff auf Ressourcen im Internet in Echtzeit und öffentliche Cloud-Technologien wie Microsoft Office 365 und Azure-Diensten teilnehmen.
+- Verbindung mit dem Internet zum Installieren von Updates, Zugriff auf Internetressourcen in Echtzeit und Teilnahme an öffentlichen Cloud-Technologien wie z. B. Microsoft Office 365 und anderen Azure-Diensten.
     
-- 	Remoteverwaltung über Remotedesktopverbindungen von Ihrem Computer, der mit dem Internet oder dem Netzwerk Ihrer Organisation verbunden ist.
+- Remoteverwaltung über Remotedesktopverbindungen von Ihrem Computer, der mit dem Internet oder dem Netzwerk Ihrer Organisation verbunden ist.
     
 Sie können die resultierende Testumgebung zu folgenden Zwecken verwenden:
   
 - Zur Anwendungsentwicklung und zum Testen.
     
-- Die Erstkonfiguration eigener Entwurf einer erweiterten Test-Umgebung umfasst, die zusätzlicher virtueller Computer, Azure-Diensten oder andere Microsoft-Cloud-Angeboten wie etwa Office 365 und Sicherheit in Unternehmen + Mobilität (zur Abstimmung).
+- Als anfängliche Konfiguration einer erweiterten Testumgebung mit Ihrem eigenen Design, die zusätzliche virtuelle Computer, Azure-Dienste oder andere Cloud-Angebote von Microsoft enthält, z. B. Office 365 and Enterprise Security + Mobility (EMS).
     
 Es gibt vier Phasen bei der Einrichtung der Basiskonfiguration für die Testumgebung in Azure:
   
-1. 	Erstellen des virtuellen Netzwerks
+1. Erstellen des virtuellen Netzwerks
     
-2. 	Konfigurieren von DC1
+2. Konfigurieren von DC1
     
-3. 	Konfigurieren von APP1
+3. Konfigurieren von APP1
     
-4. 	Konfigurieren von CLIENT1
+4. Konfigurieren von CLIENT1
     
-Wenn Sie nicht bereits über ein Azure-Abonnement verfügen, können Sie sich für eine kostenlose Testversion auf [Azure testen](https://azure.microsoft.com/pricing/free-trial/)signieren. Wenn Sie ein MSDN oder Visual Studio-Abonnement haben, finden Sie unter [monatliche Azure Credit für Abonnenten von Visual Studio](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
+Wenn Sie noch kein Azure-Abonnement haben, können Sie sich für eine kostenlose Testversion unter [Testen von Azure](https://azure.microsoft.com/pricing/free-trial/) registrieren. Wenn Sie über ein MSDN- oder Visual Studio-Abonnement verfügen, lesen Sie die Informationen unter [Monatliche Azure-Gutschrift für Visual Studio-Abonnenten](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/).
   
 > [!NOTE]
-> Virtuelle Computer in Azure ein einer laufenden Kosten entstehen, wenn sie ausgeführt werden. Diese Kosten für kostenlose Testversion, MSDN-Abonnement abgerechnet oder kostenpflichtiges Abonnement. Weitere Informationen zu den Kosten der Ausführung von Azure-virtuelle Computer finden Sie unter [Virtuelle Computer Preise Details](https://azure.microsoft.com/pricing/details/virtual-machines/) und [Azure Preise Rechner](https://azure.microsoft.com/pricing/calculator/). Um Kosten zu minimieren, finden Sie unter [Minimierung der Kosten für die Test Environment virtuellen Computern in Azure](base-configuration-dev-test-environment.md#mincost). 
+> Für virtuelle Computer in Azure entstehen laufende finanzielle Kosten, wenn sie ausgeführt werden. Diese Kosten werden gegen Ihre kostenlose Testversion, Ihr MSDN-Abonnement oder Ihr kostenpflichtiges Abonnement berechnet. Weitere Informationen zu den Kosten der Ausführung virtueller Azure-Computer finden Sie unter [Preisdetails für virtuelle Computer](https://azure.microsoft.com/pricing/details/virtual-machines/) und [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator/). Informationen dazu, wie Sie die Kosten niedrig halten, finden Sie unter [Minimierung der Kosten für virtuelle Computer der Testumgebung in Azure](base-configuration-dev-test-environment.md#mincost). 
   
 ![Testumgebungsanleitungen in der Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
@@ -76,7 +77,7 @@ Wenn Sie nicht bereits über ein Azure-Abonnement verfügen, können Sie sich f�
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung.
   
 > [!NOTE]
-> Verwenden Sie den folgenden Befehl wird die neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/de-DE/powershell/azureps-cmdlets-docs/). 
   
 Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.
   
@@ -85,7 +86,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Klicken Sie auf [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) eine Textdatei ab, die PowerShell-Befehle in diesem Artikel enthält.
+> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d), um eine Textdatei zu erhalten, die alle PowerShell-Befehle in diesem Artikel enthält.
   
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
@@ -136,7 +137,7 @@ Dies ist Ihre aktuelle Konfiguration.
 
 In dieser Phase erstellen Sie den virtuellen Computer DC1 und konfigurieren diesen als Domänencontroller für die Windows Server Active Directory-Domäne „corp.contoso.com“ sowie einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab.
   
-Zum Erstellen eines Azure-virtueller Computers für DC1 Geben Sie den Namen der Ressourcengruppe, und führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
+Geben Sie zum Erstellen eines virtuellen Azure-Computers für DC1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die Azure PowerShell-Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
 ```
 $rgName="<resource group name>"
@@ -149,8 +150,8 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName DC1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "DC1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
-$diskConfig=New-AzureRmDiskConfig -AccountType "StandardLRS" -Location $locName -CreateOption Empty -DiskSizeGB 20
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "DC1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
+$diskConfig=New-AzureRmDiskConfig -AccountType StandardLRS -Location $locName -CreateOption Empty -DiskSizeGB 20
 $dataDisk1=New-AzureRmDisk -DiskName "DC1-DataDisk1" -Disk $diskConfig -ResourceGroupName $rgName
 $vm=Add-AzureRmVMDataDisk -VM $vm -Name "DC1-DataDisk1" -CreateOption Attach -ManagedDiskId $dataDisk1.Id -Lun 1
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
@@ -162,25 +163,25 @@ Stellen Sie dann eine Verbindung mit dem virtuellen Computer DC1 her.
   
 ### <a name="connect-to-dc1-using-local-administrator-account-credentials"></a>Herstellen einer Verbindung mit DC1 mithilfe von Anmeldeinformationen für das lokale Administratorkonto
 
-1. Klicken Sie in der [Azure-Portal](https://portal.azure.com)auf **Ressourcengruppen >** [den Namen der neuen Ressourcengruppe] **> DC1 > Connect**.
+1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Ressourcengruppen >** [Name der neuen Ressourcengruppe] **> DC1 > Verbinden**.
     
-2. Öffnen Sie die DC1.rdp-Datei, die heruntergeladen wird, und klicken Sie auf **Verbinden**.
+2. Öffnen Sie die Datei „DC1.rdp“, die heruntergeladen wurde, und klicken Sie dann auf **Verbinden**.
     
-3. Geben Sie den Namen des DC1 lokalen Administratorkontos:
+3. Geben Sie den Namen des lokalen DC1-Administratorkontos an:
     
   - Für Windows 7:
     
-    Klicken Sie auf **ein anderes Konto verwenden**, klicken Sie im Dialogfeld **Windows-Sicherheit** . Geben Sie im Feld **Benutzername** **DC1\\**[lokaler Administratorkontonamen].
+    Klicken Sie im Dialogfeld **Windows-Sicherheit** auf **Anderes Konto verwenden**. Geben Sie unter **Benutzername** den Namen **DC1\\**[Kontoname des lokalen Administrators] ein.
     
   - Für Windows 8 oder Windows 10:
     
-    Klicken Sie auf **Weitere Optionen**, und klicken Sie dann auf **ein anderes Konto verwenden**, klicken Sie im Dialogfeld **Windows-Sicherheit** . Geben Sie im Feld **Benutzername** **DC1\\**[lokaler Administratorkontonamen].
+    Klicken Sie im Dialogfeld **Windows-Sicherheit** auf **Weitere Optionen**, und klicken Sie dann auf **Anderes Konto verwenden**. Geben Sie unter **Benutzername** den Namen **DC1\\**[Kontoname des lokalen Administrators] ein.
     
-4. Geben Sie im Feld **Kennwort**das Kennwort für das lokale Administratorkonto ein, und klicken Sie dann auf **OK**.
+4. Geben Sie unter **Kennwort** das Kennwort des lokalen Administratorkontos ein, und klicken Sie dann auf **OK**.
     
-5. Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.
+5. Klicken Sie auf **Ja**, wenn Sie dazu aufgefordert werden.
     
-Im nächsten Schritt fügen Sie eine zusätzliche Datenträger als ein neues Volume mit dem Laufwerkbuchstaben F: mit diesem Befehl an einer Administratorebene Windows PowerShell-Eingabeaufforderung auf DC1 hinzu.
+Im nächsten Schritt führen Sie diesen Befehl über eine Windows PowerShell-Eingabeaufforderung mit Administratorrechten auf DC1 aus, um ein zusätzliches Datenlaufwerk als neues Volume mit dem Laufwerkbuchstaben „F:" hinzuzufügen.
   
 ```
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -201,15 +202,15 @@ Stellen Sie nach dem Neustart von DC1 wieder eine Verbindung zum virtuellen DC1-
   
 ### <a name="connect-to-dc1-using-domain-credentials"></a>Herstellen einer Verbindung mit DC1 mithilfe von Domänenanmeldeinformationen
 
-1. Klicken Sie in der [Azure-Portal](https://portal.azure.com)auf **Ressourcengruppen >** [Ihre Gruppe Ressourcenname] **> DC1 > Connect**.
+1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Ressourcengruppen >** [Ihre Ressourcengruppe] **> DC1 > Verbinden**.
     
-2. Führen Sie die DC1.rdp-Datei, die heruntergeladen wird, und klicken Sie auf **Verbinden**.
+2. Führen Sie die Datei „DC1.rdp“ aus, die heruntergeladen wurde, und klicken Sie dann auf **Verbinden**.
     
-3. Klicken Sie in der **Windows-Sicherheit**auf **ein anderes Konto verwenden**. Geben Sie im Feld **Benutzername** **CORP\\**[lokaler Administratorkontonamen].
+3. Klicken Sie unter **Windows-Sicherheit** auf **Anderes Konto verwenden**. Geben Sie unter **Benutzername** den Namen **CORP\\**[Kontoname des lokalen Administrators] ein.
     
-4. Geben Sie im Feld **Kennwort**das Kennwort für das lokale Administratorkonto ein, und klicken Sie dann auf **OK**.
+4. Geben Sie unter **Kennwort** das Kennwort des lokalen Administratorkontos ein, und klicken Sie dann auf **OK**.
     
-5. Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.
+5. Klicken Sie auf **Ja**, wenn Sie dazu aufgefordert werden.
     
 Im nächsten Schritt erstellen Sie ein Benutzerkonto in Active Directory, das bei der Anmeldung an Mitgliedscomputern der Domäne CORP verwendet wird. Führen Sie diesen Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus.
   
@@ -225,7 +226,7 @@ Konfigurieren Sie als Nächstes das neue Konto „User1“ als Unternehmensadmin
 Add-ADPrincipalGroupMembership -Identity "CN=User1,CN=Users,DC=corp,DC=contoso,DC=com" -MemberOf "CN=Enterprise Admins,CN=Users,DC=corp,DC=contoso,DC=com","CN=Domain Admins,CN=Users,DC=corp,DC=contoso,DC=com","CN=Schema Admins,CN=Users,DC=corp,DC=contoso,DC=com"
 ```
 
-Schließen Sie die Remotedesktopsitzung mit DC1 und dann erneut eine Verbindung mit der CORP\\Konto User1 an.
+Schließen Sie die Remotedesktopsitzung mit DC1, und stellen Sie dann mit dem Konto „CORP\\User1“ wieder eine Verbindung her.
   
 Führen Sie als Nächstes den folgenden Befehl an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus, um Datenverkehr für das Tool Ping zuzulassen.
   
@@ -242,9 +243,9 @@ Dies ist Ihre aktuelle Konfiguration.
 APP1 bietet Web- und Dateifreigabedienste.
 
 -> [!NOTE]  
-Die folgenden -> Befehlssatz erstellt CLIENT1 mit Windows Server 2016 Datacenter, für alle Arten von Azure-Abonnements durchgeführt werden kann. Wenn Sie ein Visual Studio-basierte Azure-Abonnement verfügen, können Sie CLIENT1 erstellen Windows 10 mit der [Azure-](https://portal.azure.com)Portal/Admin ausführen. 
+-> Der folgenden Befehlssatz erstellt CLIENT1 unter Windows Server 2016 Datacenter. Er gilt für alle Arten von Azure-Abonnements. Wenn Sie über ein Visual Studio-basiertes Azure-Abonnement verfügen, können Sie CLIENT1 unter Windows 10 mit dem [Azure-Portal](https://portal.azure.com) erstellen. 
 
-Zum Erstellen einer Azure Virtual Machine für APP1 Geben Sie den Namen der Ressourcengruppe, und führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
+Geben Sie zum Erstellen eines virtuellen Azure-Computers für APP1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die Azure PowerShell-Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
 ```
 $rgName="<resource group name>"
@@ -263,7 +264,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Im nächsten Schritt stellen Sie eine Verbindung mit dem virtuellen Computer APP1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von APP1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung.
   
-Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen APP1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** , und stellen Sie sicher, dass es vier Antworten gibt.
+Führen Sie zum Überprüfen der Namensauflösung und der Netzwerkkommunikation zwischen APP1 und DC1 den Befehl **ping dc1.corp.contoso.com** aus, und vergewissern Sie sich, dass vier Antworten vorhanden sind.
   
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer APP1 mit der Domäne CORP.
   
@@ -272,9 +273,9 @@ Add-Computer -DomainName corp.contoso.com
 Restart-Computer
 ```
 
-Beachten Sie, dass Sie die CORP angeben müssen\\User1 Domänenanmeldeinformationen Konto nach dem Ausführen des Befehls **Computer hinzufügen** .
+Beachten Sie, dass Sie nach der Ausführung des Befehls **Add-Computer** die Anmeldeinformationen für das Domänenkonto „CORP\\User1“ eingeben müssen.
   
-Nach dem Neustart APP1 Herstellen einer Verbindung mit der CORP mit\\Konto User1 an, und öffnen Sie dann eine Administratorebene Windows PowerShell command Prompt.
+Stellen Sie nach dem Neustart von APP1 eine Verbindung über das Konto „CORP\\User1“ damit her, und öffnen Sie dann eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
   
 Im nächsten Schritt richten Sie APP1 mit dem folgenden Befehl in der Windows PowerShell-Eingabeaufforderung auf APP1 als Webserver ein.
   
@@ -298,7 +299,7 @@ Dies ist Ihre aktuelle Konfiguration.
 
 CLIENT1 fungiert als normaler Laptop-, Tablet- oder Desktopcomputer im Intranet von Contoso.
   
-Um eine Azure Virtual Machine für CLIENT1 zu erstellen, geben Sie den Namen der Ressourcengruppe und führen Sie diese Befehle an der Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
+Geben Sie zum Erstellen eines virtuellen Azure-Computers für CLIENT1 den Namen Ihrer Ressourcengruppe ein, und führen Sie über die Azure PowerShell-Eingabeaufforderung auf Ihrem lokalen Computer die nachfolgenden Befehle aus.
   
 ```
 $rgName="<resource group name>"
@@ -317,7 +318,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 Im nächsten Schritt stellen Sie eine Verbindung mit dem virtuellen Computer CLIENT1 mit dem Kontonamen und Kennwort des lokalen Administratorkontos von CLIENT1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
   
-Zum Überprüfen der Namen Auflösung und Netzwerk-Kommunikation zwischen CLIENT1 und DC1 führen Sie den Befehl **Ping dc1.corp.contoso.com** an einer Windows PowerShell-Eingabeaufforderung, und stellen Sie sicher, dass es vier Antworten gibt.
+Führen Sie zum Überprüfen der Namensauflösung und der Netzwerkkommunikation zwischen CLIENT1 und DC1 den Befehl **ping dc1.corp.contoso.com** an einer Windows PowerShell-Eingabeaufforderung aus, und vergewissern Sie sich, dass vier Antworten vorhanden sind.
   
 Verknüpfen Sie als Nächstes unter Verwendung der folgenden Befehle an der Windows PowerShell-Eingabeaufforderung den virtuellen Computer CLIENT1 mit der Domäne CORP.
   
@@ -326,31 +327,31 @@ Add-Computer -DomainName corp.contoso.com
 Restart-Computer
 ```
 
-Beachten Sie, dass Sie Ihre CORP angeben müssen\\User1 Domänenanmeldeinformationen Konto nach dem Ausführen des Befehls **Computer hinzufügen** .
+Beachten Sie, dass Sie nach der Ausführung des Befehls **Add-Computer** Ihre Anmeldeinformationen für das Domänenkonto „CORP\\User1“ eingeben müssen.
   
-Nach dem Neustart CLIENT1 Herstellen einer Verbindung mit der CORP mit\\User1 Kontoname und Kennwort, und öffnen Sie eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
+Stellen Sie nach dem Neustart von CLIENT1 eine Verbindung über den Kontonamen und das Kennwort von „CORP\\User1“ damit her, und öffnen Sie dann eine Windows PowerShell-Eingabeaufforderung auf Administratorebene.
   
 Überprüfen Sie im nächsten Schritt, ob Sie von CLIENT1 aus auf Web- und Dateifreigaberessourcen auf APP1 zugreifen können.
   
 ### <a name="verify-client-access-to-app1"></a>Überprüfen des Clientzugriffs auf APP1
 
-1. Klicken Sie im Server-Manager im Strukturbereich auf **Lokalen Server**.
+1. Klicken Sie im Server-Manager im Strukturbereich auf **Lokaler Server**.
     
-2. Klicken Sie in den **Eigenschaften für CLIENT1** **auf** neben **Verstärkte Sicherheitskonfiguration für Internet Explorer**.
+2. Klicken Sie in **Eigenschaften für CLIENT1** neben **Verstärkte Sicherheitskonfiguration für IE** auf **Ein**.
     
-3. Klicken Sie in **Verstärkte Sicherheitskonfiguration für Internet Explorer**auf **aus** für **Administratoren** und **Benutzern**, und klicken Sie dann auf **OK**.
+3. Klicken Sie unter **Verstärkte Sicherheitskonfiguration für Internet Explorer** für **Administratoren** und für **Benutzer** auf **Aus**, und klicken Sie dann auf **OK**.
     
-4. Klicken Sie auf der Startseite auf **Internet Explorer**, und klicken Sie dann auf **OK**.
+4. Klicken Sie auf dem Startbildschirm auf **Internet Explorer** und dann auf **OK**.
     
-5. Geben Sie in der Adressleiste **http://app1.corp.contoso.com/**, und drücken Sie dann die EINGABETASTE. Sie sollten die standardmäßige Internet-Informationsdienste Webseite APP1 finden Sie unter.
+5. Geben Sie in der Adressleiste **http://app1.corp.contoso.com/** ein, und drücken Sie dann die EINGABETASTE. Nun sollte die standardmäßige Internetinformationsdienste-Webseite für APP1 angezeigt werden.
     
 6. Klicken Sie auf der Desktop-Taskleiste auf das Symbol für den Datei-Explorer.
     
-7. Geben Sie in der Adressleiste ** \\ \\app1\\Dateien**, und drücken Sie dann die EINGABETASTE. Eine Ordneransicht mit dem Inhalt des freigegebenen Ordners sollte angezeigt werden.
+7. Geben Sie in der Adressleiste **\\\\app1\\Files** ein, und drücken Sie dann die EINGABETASTE. Nun sollte ein Ordnerfenster mit dem Inhalt des freigegebenen Ordners „Files“ angezeigt werden.
     
-8. Klicken Sie im freigegebenen Ordner **Dateien** Doppelklicken Sie auf die Datei **Example.txt** . Der Inhalt der Datei Example.txt sollte angezeigt werden.
+8. Doppelklicken Sie im Fenster des freigegebenen Ordners **Files** auf die Datei **Example.txt**. Nun sollte der Inhalt der Datei „Example.txt“ angezeigt werden.
     
-9. Schließen Sie die **example.txt - Editor** und die **Dateien** freigegebene Ordner Windows.
+9. Schließen Sie das Fenster **example.txt - Editor** und das Fenster des freigegebenen Ordners **Files**.
     
 Dies ist Ihre endgültige Konfiguration.
   
@@ -368,7 +369,7 @@ Um die Kosten für die Ausführung der virtuellen Computer der Testumgebung zu m
   
 - Erstellen Sie die Testumgebung, und führen Sie Ihre benötigten Tests und Demonstrationen so schnell wie möglich aus. Nach Abschluss des Vorgangs löschen Sie die Ressourcengruppe für die Testumgebung.
     
-- 	Fahren Sie die virtuellen Computer der Testumgebung in den Zustand der aufgehobenen Zuordnung herunter.
+- Fahren Sie die virtuellen Computer der Testumgebung in den Zustand der aufgehobenen Zuordnung herunter.
     
 Um die virtuellen Computer mit Azure PowerShell herunterzufahren, geben Sie den Ressourcengruppennamen ein und führen die folgenden Befehle aus.
   
