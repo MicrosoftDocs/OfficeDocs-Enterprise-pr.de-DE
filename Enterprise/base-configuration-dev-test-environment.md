@@ -3,7 +3,7 @@ title: Basiskonfiguration der Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/05/2018
+ms.date: 05/18/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Zusammenfassung: Erstellen Sie ein vereinfachtes Intranet als Entwicklungs-/Testumgebung in Microsoft Azure.'
-ms.openlocfilehash: a6c0610531482d5d264b582f7a3550b57f21841d
-ms.sourcegitcommit: ac7a37049e3c96e32ea91a4d97105028b0dbb2c5
+ms.openlocfilehash: 6d53bb61ea7d325b15590c8aabe0740df3b92750
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "19023030"
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193755"
 ---
 # <a name="base-configuration-devtest-environment"></a>Basiskonfiguration der Entwicklungs-/Testumgebung
 
@@ -165,7 +165,7 @@ Stellen Sie dann eine Verbindung mit dem virtuellen Computer DC1 her.
 
 1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Ressourcengruppen >** [Name der neuen Ressourcengruppe] **> DC1 > Verbinden**.
     
-2. Öffnen Sie die Datei „DC1.rdp“, die heruntergeladen wurde, und klicken Sie dann auf **Verbinden**.
+2. Klicken Sie im Bereich „Öffnen“ auf  **RDP-Datei herunterladen**. Öffnen Sie die Datei „DC1.rdp“, die heruntergeladen wird, und klicken Sie dann auf **Verbinden**.
     
 3. Geben Sie den Namen des lokalen DC1-Administratorkontos an:
     
@@ -193,7 +193,6 @@ Konfigurieren Sie als Nächstes DC1 als Domänencontroller und DNS-Server für d
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName corp.contoso.com -DatabasePath "F:\NTDS" -SysvolPath "F:\SYSVOL" -LogPath "F:\Logs"
 ```
-
 Sie müssen ein Administratorkennwort für den abgesicherten Modus angeben. Bewahren Sie das Kennwort an einem sicheren Ort auf.
   
 Beachten Sie, dass der Abschluss dieser Befehle ein paar Minuten in Anspruch nehmen kann.
@@ -258,7 +257,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName APP1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "APP1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -312,7 +311,7 @@ $cred=Get-Credential -Message "Type the name and password of the local administr
 $vm=Set-AzureRMVMOperatingSystem -VM $vm -Windows -ComputerName CLIENT1 -Credential $cred -ProvisionVMAgent -EnableAutoUpdate
 $vm=Set-AzureRMVMSourceImage -VM $vm -PublisherName MicrosoftWindowsServer -Offer WindowsServer -Skus 2016-Datacenter -Version "latest"
 $vm=Add-AzureRMVMNetworkInterface -VM $vm -Id $nic.Id
-$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType "StandardLRS"
+$vm=Set-AzureRmVMOSDisk -VM $vm -Name "CLIENT1-OS" -DiskSizeInGB 128 -CreateOption FromImage -StorageAccountType StandardLRS
 New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
@@ -343,7 +342,7 @@ Stellen Sie nach dem Neustart von CLIENT1 eine Verbindung über den Kontonamen u
     
 4. Klicken Sie auf dem Startbildschirm auf **Internet Explorer** und dann auf **OK**.
     
-5. Geben Sie in der Adressleiste **http://app1.corp.contoso.com/** ein, und drücken Sie dann die EINGABETASTE. Nun sollte die standardmäßige Internetinformationsdienste-Webseite für APP1 angezeigt werden.
+5. Geben Sie in der Adressleiste **http:\///app1.corp.contoso.com/** ein, und drücken Sie dann die EINGABETASTE. Nun sollte die standardmäßige Internetinformationsdienste-Webseite für APP1 angezeigt werden.
     
 6. Klicken Sie auf der Desktop-Taskleiste auf das Symbol für den Datei-Explorer.
     
