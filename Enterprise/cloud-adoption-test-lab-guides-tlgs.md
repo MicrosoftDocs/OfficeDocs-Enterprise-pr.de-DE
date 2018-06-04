@@ -15,11 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 und Office Server-Produkte einzurichten.'
-ms.openlocfilehash: 87e9be912b7e53dea07915ae236b057273285718
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
+ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193675"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
@@ -38,7 +39,6 @@ Sehen Sie sich diese zusätzlichen Ressourcen an, bevor Sie loslegen:
 - Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
     
 ## <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
-<a name="O365"> </a>
 
 Verwenden Sie die folgenden Artikel zum Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung:
   
@@ -89,7 +89,6 @@ Verwenden Sie die folgenden Artikel für Ihre Office 365-Entwicklungs-/Testumgeb
     Veranschaulichen, wie eine SharePoint Online-Teamwebsite erstellt wird, die aufgrund von vertraulichen oder streng vertraulichen Ressourcen vom Rest der Organisation isoliert ist.
     
 ## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung
-<a name="O365"> </a>
 
 Erstellen Sie anhand der folgenden Artikel eine Entwicklungs-/Testumgebung für [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)-Szenarien:
   
@@ -106,7 +105,6 @@ Erstellen Sie anhand der folgenden Artikel eine Entwicklungs-/Testumgebung für 
     Registrieren von iOS- oder Android-Geräten und Remoteverwaltung.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365- und Dynamics 365-Entwicklungs-/Testumgebung
-<a name="O365_D365"> </a>
 
 Hinzufügen eines Dynamics 365-Testabonnements und Testen von Office 365- und integrierten Dynamics 365-Unternehmensfeatures und -Szenarien mit den folgenden Artikeln:
   
@@ -119,12 +117,10 @@ Hinzufügen eines Dynamics 365-Testabonnements und Testen von Office 365- und in
     Nehmen Sie die Konfiguration vor, und demonstrieren Sie dann, wie Office 365 und Dynamics 365 in Exchange Online-Postfächern zusammenarbeiten.
     
 ## <a name="the-one-microsoft-cloud-devtest-environment"></a>Die One Microsoft Cloud-Entwicklungs-/Testumgebung
-<a name="O365_D365"> </a>
 
 Erstellen Sie eine Entwicklungs-/Testumgebung, die alle Microsoft-Cloudangebote enthält: Office 365, Azure, EMS und Dynamics 365. Schrittweise Anweisungen finden Sie unter [Die One Microsoft Cloud-Entwicklungs-/Testumgebung](the-one-microsoft-cloud-dev-test-environment.md).
   
 ## <a name="simulated-cross-premises-devtest-environments"></a>Simulierte standortübergreifende Entwicklungs-/Testumgebung
-<a name="O365_D365"> </a>
 
 Unter Verwendung der folgenden Artikel können Sie eine standortübergreifende Entwicklungs-/Testumgebung erstellen, die ein virtuelles Azure-Netzwerk und ein simuliertes standortübergreifendes Netzwerk umfasst.
   
@@ -137,7 +133,6 @@ Unter Verwendung der folgenden Artikel können Sie eine standortübergreifende E
     Erstellen Sie eine SharePoint Server 2016-Farm mit einem einzigen Server im virtuellen Azure-Netzwerk, und testen Sie die Konnektivität und Verwaltung vom simulierten standortübergreifenden Netzwerk aus.
     
 ## <a name="additional-cloud-based-devtest-environments"></a>Zusätzliche cloudbasierte Entwicklungs-/Testumgebungen
-<a name="ADD_TLGs"> </a>
 
 In den folgenden Themen finden Sie zusätzliche cloudbasierte Entwicklungs-/Testumgebungen, die Sie in Azure-Infrastrukturdiensten erstellen können:
   
