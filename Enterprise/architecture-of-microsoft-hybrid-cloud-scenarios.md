@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
-description: "Zusammenfassung: Informationen über die Architektur von Microsoft-Hybridcloudangeboten."
-ms.openlocfilehash: 33d98d88a10b18cdd357250f46c5414f1c1b6a75
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+description: 'Zusammenfassung: Informationen über die Architektur von Microsoft-Hybridcloudangeboten.'
+ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
+ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "19631386"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architektur von Microsoft Hybrid Cloud-Szenarien
 
@@ -38,7 +39,7 @@ Die Schicht „Apps und Szenarien" enthält die spezifischen Hybridcloudszenarie
     
 - Netzwerk
     
-    Es gibt zwei Optionen für die Verbindung zu Microsoft-Cloudplattformen und -Diensten: der vorhandene Internetzugang oder ExpressRoute. Verwenden Sie eine ExpressRoute-Verbindung, wenn vorhersehbare Leistung wichtig ist. Sie können eine ExpressRoute-Verbindung verwenden, um eine direkte Verbindung mit Microsoft SaaS-Diensten (Office 365 und Dynamics 365), Azure PaaS-Diensten und Azure PaaS-Diensten herzustellen.
+    Es gibt zwei Optionen für die Verbindung mit Microsoft-Cloud-Plattformen und Dienste: Ihre vorhandenen Internet Pipe und ExpressRoute. Verwenden Sie eine ExpressRoute-Verbindung, wenn vorhersehbare Leistung wichtig ist. Eine Verbindung als ExpressRoute können Sie direkt an Microsoft SaaS-Dienste (Office 365 und Dynamics 365), Azure PaaS-Dienste und Azure IaaS-Dienste eine Verbindung herstellen.
     
 - Identität
     
