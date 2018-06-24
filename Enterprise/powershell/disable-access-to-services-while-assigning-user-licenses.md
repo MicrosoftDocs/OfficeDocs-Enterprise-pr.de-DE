@@ -3,7 +3,6 @@ title: Deaktivieren des Zugriffs auf Dienste während des Zuweisens von Benutzer
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/07/2018
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -14,11 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: In diesem Artikel erfahren Sie, wie Sie Benutzerkonten Lizenzen zuweisen und gleichzeitig bestimmte Servicepläne mit Office 365 PowerShell deaktivieren.
-ms.openlocfilehash: 7567d84490cdb3db7c149a51c4f2f04d39cad9ce
-ms.sourcegitcommit: def3e311db9322e469753bac59ff03624349b140
+ms.openlocfilehash: 40abaa37b5a88eb69b01779894e851068a6454ee
+ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "20017401"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deaktivieren des Zugriffs auf Dienste während des Zuweisens von Benutzerlizenzen
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/09/2018
   
 Im Lieferumfang von Office 365-Abonnements sind Servicepläne für einzelne Dienste enthalten. Office 365-Administratoren müssen häufig bestimmte Pläne deaktivieren, wenn Sie Benutzern Lizenzen zuweisen. Mit den Anweisungen in diesem Artikel können Sie eine Office 365-Lizenz zuweisen und gleichzeitig bestimmte Servicepläne mithilfe der PowerShell für ein bestimmtes Benutzerkonto oder mehrere Benutzerkonten deaktivieren.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
   
@@ -131,7 +131,7 @@ ForEach ($user in $users)
 $user.Userprincipalname
 $upn=$user.UserPrincipalName
 $usageLocation=$user.UsageLocation
-Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $AccountSkuId -ErrorAction SilentlyContinue
+Set-MsolUserLicense -UserPrincipalName $upn -AddLicenses $accountSkuId -ErrorAction SilentlyContinue
 sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $upn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 Set-MsolUser -UserPrincipalName $upn -UsageLocation $usageLocation
