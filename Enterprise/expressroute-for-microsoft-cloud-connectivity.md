@@ -1,9 +1,9 @@
 ---
-title: "ExpressRoute für Microsoft-Cloudkonnektivität"
+title: ExpressRoute für Microsoft-Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/03/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
-description: "Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können."
-ms.openlocfilehash: 40cde8753a5e6de6a76a04198fe90d510ee9a315
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können.'
+ms.openlocfilehash: 55ac09e3c3cf65649d24d67ea79e185808d83cdb
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188113"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute für Microsoft-Cloudkonnektivität
 
@@ -48,7 +49,7 @@ Nachfolgend finden Sie die Netzwerkpfade zur Microsoft Cloud mit ExpressRoute-Ve
   
 Abbildung 2 zeigt zwei Netzwerkpfade. Der Datenverkehr zu Microsoft Intune bewegt sich über denselben Pfad wie normaler Internetverkehr. Datenverkehr zu Office 365, Microsoft Azure und Dynamics 365 bewegt sich über die ExpressRoute-Verbindung, ein dedizierter Pfad zwischen dem Rand des lokalen Netzwerks und dem Rand der Microsoft Cloud.
   
-Mit einer ExpressRoute-Verbindung haben Sie dank der Beziehung zu Ihrem Dienstanbieter nun die Kontrolle über den gesamten Datenverkehrpfad von Ihrem Edge zum Rand der Microsoft-Cloud Diese Verbindung bietet eine vorhersehbare Leistung und eine SLA-Verfügbarkeit von 99,9 %.
+Eine Verbindung ExpressRoute Sie jetzt-Steuerelements über eine Beziehung mit Ihrem Dienstanbieter haben, über den gesamten Datenverkehr Pfad von der Kante des Microsoft cloud Edge. Diese Verbindung kann vorhersehbare Leistung und einen [99,95 % Betriebszeit SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)anbieten.
   
 Sie können sich nun auf vorhersehbaren Durchsatz und planbare Wartezeit basierend auf der Verbindung Ihres Dienstanbieters für Office 365-, Azure- und Dynamics 365-Dienste verlassen. ExpressRoute-Verbindungen mit Microsoft Intune werden derzeit nicht unterstützt.
   
@@ -239,7 +240,7 @@ Weitere Informationen finden Sie unter:
     
 - [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune)
     
-- [Office 365-Leistungsverwaltung](https://mva.microsoft.com/de-DE/training-courses/office-365-performance-management-8416)
+- [Office 365-Leistungsverwaltung](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
     
 ## <a name="expressroute-options"></a>ExpressRoute-Optionen
 

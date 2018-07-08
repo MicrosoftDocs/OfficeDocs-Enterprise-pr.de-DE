@@ -1,5 +1,5 @@
 ---
-title: Registrieren Sie iOS und Android-Geräte in Ihrer Microsoft Enterprise 365 Dev/Test-Umgebung
+title: Registrieren von iOS- und Android-Geräten in Ihrer Entwicklungs-/Testumgebung für Microsoft 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,13 +12,14 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 'Zusammenfassung: Mit diesem Test Lab Guide können Geräte in Ihrer Microsoft 365 Dev/Test-Umgebung zu registrieren und Remote zu verwalten.'
-ms.openlocfilehash: 8765a7ffb1bff1f257d7cd1ce5181561c2cf0080
-ms.sourcegitcommit: 771f227d3049498fcbd7cfbeaf649e3d77e73c86
+ms.openlocfilehash: a5d43a0ef3ed090f84c8415de3ac26f53fdafe0a
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188103"
 ---
-# <a name="enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-devtest-environment"></a>Registrieren Sie iOS und Android-Geräte in Ihrer Microsoft Enterprise 365 Dev/Test-Umgebung
+# <a name="enroll-ios-and-android-devices-in-your-microsoft-365-enterprise-devtest-environment"></a>Registrieren von iOS- und Android-Geräten in Ihrer Entwicklungs-/Testumgebung für Microsoft 365 Enterprise
 
  **Zusammenfassung:** Verwenden Sie diese Test Lab Guide zum Registrieren von Geräten in Ihrer Microsoft 365 Dev/Test-Umgebung und Remote zu verwalten.
   
@@ -50,37 +51,37 @@ So sperren Sie ein iOS-Gerät remote
 
 2.  Der Microsoft Intune-Verwaltungskonsole des Browsers klicken Sie im linken Navigationsbereich auf **Gruppen** .
 
-3. Öffnen Sie im Bereich **Gruppen** **alle Geräte > alle Mobile Geräte > alle direkten verwalteten Geräten**.
+3. Öffnen Sie im Bereich **Gruppen****Alle Geräte > Alle mobilen Geräte > Alle direkt verwalteten Geräte**.
     
-4. Klicken Sie im Bereich **Alle direkten verwalteten Geräten,** klicken Sie auf der Registerkarte **Geräte** .
+4. Klicken Sie im Bereich **Alle direkt verwalteten Geräte** auf die Registerkarte **Geräte**.
     
 5. Klicken Sie in der Liste der Geräte auf Ihr iOS-Gerät.  
     
 6. Stellen Sie auf dem iOS-Gerät sicher, dass der Hauptbildschirm angezeigt wird.  
     
-7. Klicken Sie auf Ihrem Verwaltungscomputer, klicken Sie auf der Taskleiste auf **Remoteaufgaben > Remote Sperre**. Folgen Sie Ihr Gerät iOS, bei der es auf dem Bildschirm Sperrung umgeschaltet.
+7. Klicken Sie auf dem Verwaltungscomputer auf der Taskleiste auf **Remoteaufgaben > Remotesperre**. Beobachten Sie das iOS-Gerät, wie es zum Sperrbildschirm wechselt.
     
 So entfernen Sie den Zugangscode
   
-1. Klicken Sie auf der Registerkarte **Geräte** , auf Ihrem Verwaltungscomputer, klicken Sie im Bereich **Alle direkten verwalteten Geräten** .
+1. Klicken Sie auf dem Verwaltungscomputer im Bereich **Alle direkt verwalteten Geräte** auf die Registerkarte **Geräte**.
     
-2. Klicken Sie in der Liste auf dem Gerät iOS. Klicken Sie auf der Taskleiste auf **Remoteaufgaben > Kennung zurücksetzen**. Warten Sie eine Minute.
+2. Klicken Sie in der Liste auf Ihr iOS-Gerät. Klicken Sie auf der Taskleiste auf **Remoteaufgaben > Kennungsrückstellung**. Warten Sie eine Minute.
     
-3. Vom Gerät iOS entsperren Sie, und beachten Sie, dass eine Kennung nicht mehr vorhanden ist. Um die Kennung wieder zu ändern, wechseln Sie in den **Einstellungen**, und klicken Sie dann die **Kennung**.
+3. Entsperren Sie das iOS-Gerät, und beachten Sie, dass keine Kennung mehr vorhanden ist. Um die Kennung wieder einzurichten, gehen Sie zu **Einstellungen** und dann zu **Kennung**.
     
 So sperren Sie ein Android-Gerät remote
   
 1. Der Microsoft Intune-Verwaltungskonsole des Browsers klicken Sie im linken Navigationsbereich auf **Gruppen** .
     
-2. Öffnen Sie im Bereich **Gruppen** **alle Geräte > alle Mobile Geräte > alle direkten verwalteten Geräten**.
+2. Öffnen Sie im Bereich **Gruppen****Alle Geräte > Alle mobilen Geräte > Alle direkt verwalteten Geräte**.
     
-3. Klicken Sie im Bereich **Alle direkten verwalteten Geräten,** klicken Sie auf der Registerkarte **Geräte** .
+3. Klicken Sie im Bereich **Alle direkt verwalteten Geräte** auf die Registerkarte **Geräte**.
     
 4. Klicken Sie in der Liste der Geräte auf Ihr Android-Gerät.  
     
 5. Stellen Sie auf dem Auf-Gerät sicher, dass der Hauptbildschirm angezeigt wird.  
     
-6. Klicken Sie auf Ihrem Verwaltungscomputer, klicken Sie auf der Taskleiste auf **Remoteaufgaben > Remote Sperre**. Wenn Sie aufgefordert werden, klicken Sie auf **Ja**.
+6. Klicken Sie auf dem Verwaltungscomputer auf der Taskleiste auf **Remoteaufgaben > Remotesperre**. Klicken Sie auf **Ja**, wenn Sie dazu aufgefordert werden.
     
 7. Beobachten Sie das Android-Gerät, wie es zum Sperrbildschirm wechselt.
     
@@ -88,19 +89,19 @@ Wenn Sie die Kennung für Android-Geräte zurücksetzen, Verwaltungsportal Intun
   
 So setzen Sie den Zugangscode remote zurück
   
-1. Klicken Sie auf Ihrem Computer Administration, auf der Registerkarte Microsoft Intune Verwaltungskonsole Ihres Browsers, klicken Sie im Bereich **Alle direkten verwalteten Geräten** auf Android-Gerät.
+1. Klicken Sie auf Ihrem Verwaltungscomputer auf der Registerkarte der Microsoft Intune-Verwaltungskonsole Ihres Browsers im Bereich **Alle direkt verwalteten Geräte** auf Ihr Android-Gerät.
     
-2. Klicken Sie auf der Taskleiste auf **Remoteaufgaben > Kennung zurücksetzen**.
+2. Klicken Sie auf der Taskleiste auf **Remoteaufgaben > Kennungsrückstellung**.
     
-3. Klicken Sie auf der **Remote-Task: Kennung zurücksetzen** dazu aufgefordert werden, klicken Sie auf **Ja**. Warten Sie eine Minute.
+3. Klicken Sie in der Aufforderung **Remoteaufgabe: Kennungsrückstellung** auf **Ja**. Warten Sie eine Minute.
     
-4. Klicken Sie im Bereich **Alle direkten verwalteten Geräten,** klicken Sie auf **Eigenschaften anzeigen**.
+4. Klicken Sie im Bereich **Alle direkt verwalteten Geräte** auf die Registerkarte **Eigenschaften anzeigen**.
     
-5. Notieren Sie unter **Kennung zurücksetzen**und die Kennung für die neue.
+5. Beachten Sie unter **Kennungsrückstellung** die neue Kennung.
     
 6. Geben Sie auf Ihrem Android-Gerät die neue Kennung auf dem Sperrbildschirm ein.  
     
-7. Um die Kennung wieder zu ändern, wechseln Sie in den **Einstellungen**, tippen Sie auf **Gerät**, tippen Sie auf **Sperren des Bildschirms**, geben Sie die neue Kennung erneut, tippen Sie zweimal auf **Bildschirm sperren**und Ihrer Wahl für die Kennung.
+7. Um die Kennung wieder zurück zu ändern, gehen Sie zu **Einstellungen**, tippen Sie auf **Gerät**, auf **Sperrbildschirm**, geben Sie die Kennung erneut ein, tippen Sie auf **Bildschirmsperre**, und legen Sie dann eine Auswahl für die Kennung fest.
     
 
 > [!TIP]

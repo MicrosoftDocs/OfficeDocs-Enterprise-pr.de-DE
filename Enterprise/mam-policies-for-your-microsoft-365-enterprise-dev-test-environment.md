@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 'Zusammenfassung: Verwenden dieser Test Lab Guide Ihrer Microsoft 365 Test-/Umgebung zur Abstimmung mobilen Anwendung Informationsverwaltungsrichtlinien (MAM) hinzufügen.'
-ms.openlocfilehash: 1d4ede9b5757d4adce8909586790bcad51f7433f
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: 0a5c81665edf06631b8cebc57c9e715c78d3d85e
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188153"
 ---
 # <a name="mam-policies-for-your-microsoft-365-enterprise-devtest-environment"></a>Richtlinien für die Microsoft 365 Enterprise Test-/Umgebung MAM
 
@@ -46,7 +47,7 @@ In dieser Phase werden zwei verschiedene MAM-Richtlinien erstellt und bereitgest
     
 6. Wählen Sie in der **Gruppe** Blade, **Office 365** für **Gruppentyp?**, geben Sie im Feld **Name** **iOS Gerätebenutzer verwaltet** , wählen Sie in **die Mitgliedschaft Typ** **zugewiesen** und dann auf **Erstellen**. 
     
-7. Schließen Sie das **Gruppe** Blade.
+7. Schließen Sie das Blatt **Gruppe**.
     
 8. Klicken Sie auf das Blade **Gruppen alle Gruppen** auf **Hinzufügen**.
     
@@ -54,41 +55,41 @@ In dieser Phase werden zwei verschiedene MAM-Richtlinien erstellt und bereitgest
     
 10. Schließen Sie das Blade **Gruppen alle Gruppen** .
     
-11. Klicken Sie auf der Blade **Intune** in der Liste **schnell Aufgaben** **Erstellen einer Compliance-Richtlinie**.
+11. Klicken Sie auf dem Blatt **Intune** in der Liste **Schnelle Aufgaben** auf **Erstellen Sie eine Konformitätsrichtlinie**.
     
-12. Klicken Sie auf das **Compliance-Richtlinienprofilen** Blade **-Richtlinie erstellen**.
+12. Klicken Sie auf dem Blatt **Kompatibilitätsrichtlinienprofile** auf **Richtlinie erstellen**.
     
-13. Geben Sie auf der Blade **-Richtlinie erstellen** im Feld **Name** **iOS**. **Plattform**wählen Sie **iOS aus**, klicken Sie auf **OK** , auf das Blade **iOS Compliance-Richtlinie** und klicken Sie dann auf **Erstellen**.
+13. Geben Sie auf dem Blatt **Richtlinie erstellen** im Feld **Name**, den Text **iOS** ein. Wählen Sie für **Plattform** die Option **iOS** aus, klicken Sie auf dem Blatt ** 	iOS-Kompatibilitätsrichtlinie** auf **OK**, und klicken Sie dann auf **Erstellen**.
     
-14. Klicken Sie auf das **Compliance-Richtlinienprofilen** Blade **-Richtlinie erstellen**.
+14. Klicken Sie auf dem Blatt **Kompatibilitätsrichtlinienprofile** auf **Richtlinie erstellen**.
     
-15. Das Blade **-Richtlinie erstellen** im Feld **Name**Geben Sie auf **Android**. **Plattform**wählen Sie **Android**, klicken Sie auf **OK** , auf das Blade **Android Compliance-Richtlinien** und klicken Sie dann auf **Erstellen**.
+15. Geben Sie auf dem Blatt **Richtlinie erstellen** im Feld **Name**, den Text **Android** ein. Wählen Sie für **Plattform** die Option **Android** aus, klicken Sie auf dem Blatt **Android-Kompatibilitätsrichtlinie** auf **OK**, und klicken Sie dann auf **Erstellen**.
     
-16. Klicken Sie auf das Blade **Richtlinienprofilen Compliance** auf den Namen der Richtlinie **Android** .
+16. Klicken Sie auf dem Blatt **Kompatibilitätsrichtlinienprofile** auf den Richtliniennamen **Android**.
     
-17. Im linken Navigationsbereich dem Blade **Android - Eigenschaften** klicken Sie auf **Aufgaben**, und klicken Sie dann auf **Gruppen auswählen**.
+17. Klicken Sie im linken Navigationsbereich des Blatts **Android - Eigenschaften** auf **Zuweisungen**, und klicken Sie dann auf **Gruppen auswählen**.
     
-18. Klicken Sie in der Blade **Gruppen auswählen** auf der **verwalteten Android-Gerät** Benutzergruppe, und klicken Sie dann auf **auswählen**.
+18. Klicken Sie auf dem Blatt **Gruppen auswählen** auf die Gruppe **Verwaltete Android-Gerätebenutzer**, und klicken Sie dann auf **Auswählen**.
     
 19. Klicken Sie auf **Speichern**, und schließen Sie das Blade **Android - Zuordnungen** .
     
-20. Klicken Sie auf das Blade **Compliance Richtlinienprofilen** auf den Namen der Richtlinie **iOS** .
+20. Klicken Sie auf dem Blatt **Kompatibilitätsrichtlinienprofile** auf den Richtliniennamen **iOS**.
     
-21. Im linken Navigationsbereich dem Blade **iOS - Eigenschaften** klicken Sie auf **Aufgaben**, und klicken Sie dann auf **Gruppen auswählen**.
+21. Klicken Sie im linken Navigationsbereich des Blatts **iOS - Eigenschaften** auf **Zuweisungen**, und klicken Sie dann auf **Gruppen auswählen**.
     
-22. Klicken Sie in der Blade **Gruppen auswählen** auf die Gruppe **verwaltete iOS Gerätebenutzer** , und klicken Sie dann auf **auswählen**.
+22. Klicken Sie auf dem Blatt **Gruppen auswählen** auf die Gruppe **Verwaltete iOS-Gerätebenutzer**, und klicken Sie dann auf **Auswählen**.
     
 23. Klicken Sie auf **Speichern**, und schließen Sie das Blade **iOS - Zuordnungen** .
     
-24. Schließen Sie das **Compliance-Richtlinienprofilen** Blade.
+24. Schließen Sie das Blatt **Kompatibilitätsrichtlinienprofile**.
     
-25. Klicken Sie auf das Blade **Intune** im linken Navigationsbereich auf **apps verwalten** .
+25. Klicken Sie auf dem Blatt **Intune** im linken Navigationsbereich auf **Apps verwalten**.
     
-26. Klicken Sie auf das Blade **Mobile Apps** auf **Apps**.
+26. Klicken Sie auf dem Blatt **Mobile Apps** auf **Apps**.
     
-27. Klicken Sie in der Liste der apps **PowerPoint**, 
+27. Klicken Sie in der Liste der Apps auf **PowerPoint**.  
     
-28. Klicken Sie auf die **PowerPoint-Übersicht** Blade auf **Zuordnungen > Gruppen auswählen > verwaltete iOS-Geräte > Wählen Sie**. Wählen Sie **Geben**Sie in **verfügbar**, und klicken Sie dann auf **Speichern**.
+28. Klicken Sie auf dem Blatt **PowerPoint-Übersicht** auf **Zuweisungen > Gruppen auswählen > Verwaltete iOS-Geräte > Auswählen**. Wählen Sie im Feld **Typ** die Option **Verfügbar** aus, und klicken Sie dann auf **Speichern**.
     
 29. Wiederholen Sie Schritt 28 für die folgenden Apps:
     
@@ -114,25 +115,25 @@ In dieser Phase werden zwei verschiedene MAM-Richtlinien erstellt und bereitgest
     
   - OneNote für iOS
     
-30. Schließen Sie das **Mobile Apps – Apps** Blade.
+30. Schließen Sie das Blatt **Mobile Apps - Apps**.
     
-31. Klicken Sie auf das Blade **Mobile Apps** auf **App-Richtlinien**.
+31. Klicken Sie auf dem Blatt **Mobile Apps** auf **App-Schutzrichtlinien**.
     
-32. Klicken Sie auf das **App-Richtlinien** Blade auf **eine Richtlinie hinzufügen**.
+32. Klicken Sie auf dem Blatt **App-Schutzrichtlinien** auf **Richtlinie hinzufügen**.
     
-33. Geben Sie auf das **Hinzufügen einer Richtlinie** Blade **iOS**, und klicken Sie dann auf **Wählen Sie apps erforderlich**.
+33. Geben Sie auf dem Blatt **Richtlinie hinzufügen** den Namen **iOS** ein, und klicken Sie dann auf **Erforderliche Apps auswählen**.
     
-34. Klicken Sie in der Blade **Apps** auf **PowerPoint**, **Microsoft Dynamics CRM auf iPhone**, **Excel**, **Microsoft Dynamics CRM auf iPhone**, **Word**, **OneNote**und **Outlook**, und klicken Sie dann auf **auswählen**.
+34. Klicken Sie auf dem Blatt **Apps** auf **PowerPoint**, **Microsoft Dynamics CRM auf iPhone**, **Excel**, **Microsoft Dynamics CRM auf iPhone**, **Word**, **OneNote** und **Outlook**, und klicken Sie dann auf **Auswählen**.
     
-35. Klicken Sie auf das Blade **Hinzufügen einer Richtlinie** auf **Erstellen**.
+35. Klicken Sie auf dem Blatt **Richtlinie hinzufügen** auf **Erstellen**.
     
-36. Klicken Sie auf das **App-Richtlinien** Blade auf **eine Richtlinie hinzufügen**.
+36. Klicken Sie auf dem Blatt **App-Schutzrichtlinien** auf **Richtlinie hinzufügen**.
     
-37. Geben Sie auf das **Hinzufügen einer Richtlinie** Blade **Android**, wählen Sie **Android** **-Plattform**und klicken Sie dann auf **Wählen Sie apps erforderlich**.
+37. Geben Sie auf dem Blatt **Richtlinie hinzufügen** den Namen **Android** ein, wählen Sie unter **Plattform** die Option **Android** aus, und klicken Sie dann auf **Erforderliche Apps auswählen**.
     
-38. Klicken Sie in der Blade **Apps** auf **PowerPoint**, **Dynamics CRM für Tablets**, **Excel**, **Word**, **Outlook**und **Dynamics CRM für Telefone**, und klicken Sie dann auf **auswählen**.
+38. Klicken Sie auf dem Blatt **Apps** auf **PowerPoint**, **Dynamics CRM für Tablets**, **Excel**, **Word**, **Outlook** und **Dynamics CRM für Smartphones**, und klicken Sie dann auf **Auswählen**.
     
-39. Klicken Sie auf das Blade **Hinzufügen einer Richtlinie** auf **Erstellen**.
+39. Klicken Sie auf dem Blatt **Richtlinie hinzufügen** auf **Erstellen**.
     
 Sie nun verfügen über zwei MAM-Richtlinien, eine für iOS-Geräte und eine für Android-Geräte, und können nun mit verschiedenen Einstellungen für die ausgewählten Apps experimentieren.
   
@@ -143,7 +144,7 @@ Sie nun verfügen über zwei MAM-Richtlinien, eine für iOS-Geräte und eine fü
 
 [Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung](the-microsoft-365-enterprise-dev-test-environment.md)
   
-[Registrieren Sie iOS und Android-Geräte in Ihrer Microsoft Enterprise 365 Dev/Test-Umgebung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+[Registrieren von iOS- und Android-Geräten in Ihrer Entwicklungs-/Testumgebung für Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
   
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
 
