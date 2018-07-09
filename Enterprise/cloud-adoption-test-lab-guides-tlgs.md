@@ -15,12 +15,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 und Office Server-Produkte einzurichten.'
-ms.openlocfilehash: 1ca74f7fdb83cf730c4f6d003c9f9e325299f33d
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
+ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193675"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "20188163"
 ---
 # <a name="cloud-adoption-test-lab-guides-tlgs"></a>Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
@@ -100,9 +100,9 @@ Erstellen Sie anhand der folgenden Artikel eine Entwicklungs-/Testumgebung für 
     
     Erstellen von Richtlinien für Benutzergruppen und die mobile Anwendung (MAM) für ioS- und Android-Geräte.
     
-- [Registrieren Sie iOS und Android-Geräte in Ihrer Microsoft Enterprise 365 Dev/Test-Umgebung](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
+- [Registrieren von iOS- und Android-Geräten in Ihrer Entwicklungs-/Testumgebung für Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
     
-    Registrieren von iOS- oder Android-Geräten und Remoteverwaltung.
+    Registrieren Sie iOS- oder Android-Geräte, und verwalten Sie sie remote.
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365- und Dynamics 365-Entwicklungs-/Testumgebung
 
