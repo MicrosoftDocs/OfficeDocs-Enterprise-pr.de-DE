@@ -3,7 +3,7 @@ title: Hoher Verfügbarkeit federated Authentifizierung Phase 2 Konfigurieren vo
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 07/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: 'Zusammenfassung: Konfigurieren der Domänencontroller und Dirsync-Server für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 9713e6b0f5241ece4e0f90aa5e0343582e38cdaa
-ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
+description: 'Zusammenfassung: Konfigurieren Sie die Domänencontroller und DirSync-Server für die Verbundauthentifzierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
+ms.openlocfilehash: 3f898fea8fc92d4f7ea392bfe854425beafb1eb4
+ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "20215867"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern
 
- **Zusammenfassung:** Konfigurieren Sie die Domänencontroller und Dirsync-Server für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Microsoft Azure.
+ **Zusammenfassung:** Konfigurieren Sie die Domänencontroller und DirSync-Server für die Verbundauthentifzierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.
   
 In dieser Phase der Bereitstellung einer hohen Verfügbarkeit für die Office 365-Verbundauthentifizierung in den Azure-Infrastrukturdiensten konfigurieren Sie die beiden Domänencontroller und den DirSync-Server im virtuellen Azure-Netzwerk. Clientwebanforderungen für die Authentifizierung können dann im virtuellen Azure-Netzwerk authentifiziert werden, anstatt diesen Authentifizierungsverkehr über das VPN zwischen Standorten an Ihr lokales Netzwerk zu senden.
   
@@ -35,13 +36,13 @@ Zunächst müssen Sie die Spalte **Name des virtuellen Computers** in Tabelle M 
   
 |**Element**|**Name des virtuellen Computers**|**Katalogbild**|**Speichertyp**|**Mindestgröße**|
 |:-----|:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)(ersten Domänencontroller, Beispiel DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)(zweite Domänencontroller, Beispiel DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)(Dirsync-Server, Beispiel DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|4.  <br/> |![](./images/Common_Images/TableLine.png)(ersten AD FS-Server Beispiel ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|5.  <br/> |![](./images/Common_Images/TableLine.png)(zweite AD FS-Server Beispiel ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|6.  <br/> |![](./images/Common_Images/TableLine.png)(erste Web Application Proxyserver, Beispiel WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./images/Common_Images/TableLine.png)(zweite Anwendung Webproxyserver, Beispiel WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |StandardLRS  <br/> |Standard_D2  <br/> |
+|1.  <br/> |![](./images/Common_Images/TableLine.png) (erster Domänencontroller, Beispiel DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2.  <br/> |![](./images/Common_Images/TableLine.png) (zweiter Domänencontroller, Beispiel DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./images/Common_Images/TableLine.png)(Dirsync-Server, Beispiel DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|4.  <br/> |![](./images/Common_Images/TableLine.png)(ersten AD FS-Server Beispiel ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|5.  <br/> |![](./images/Common_Images/TableLine.png)(zweite AD FS-Server Beispiel ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|6.  <br/> |![](./images/Common_Images/TableLine.png)(erste Web Application Proxyserver, Beispiel WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./images/Common_Images/TableLine.png)(zweite Anwendung Webproxyserver, Beispiel WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Tabelle M - virtueller Computer für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Azure**
   
@@ -49,24 +50,24 @@ Eine vollständige Liste der Größen der virtuellen Computer finden Sie unter [
   
 Der folgende Azure PowerShell-Befehlsblock erstellt die virtuellen Computer für die beiden Domänencontroller. Geben Sie die Werte für die Variablen, entfernen die \< und > Zeichen. Beachten Sie, dass dieser Befehl-Block von Azure PowerShell Werte aus den folgenden Tabellen verwendet wird:
   
-- Tabelle M (für die virtuellen Computer)
+- Tabelle M (für die virtuellen Computer)
     
-- Tabelle R (für die Ressourcengruppen)
+- Tabelle R (für die Ressourcengruppen)
     
-- Tabelle V (für die Einstellungen des virtuellen Netzwerks)
+- Tabelle V (für die Einstellungen des virtuellen Netzwerks)
     
-- Tabelle S (für das Subnetz)
+- Tabelle S (für das Subnetz)
     
-- Tabelle I (für die statischen IP-Adressen)
+- Tabelle I (für die statischen IP-Adressen)
     
-- Tabelle A (für die Verfügbarkeitsgruppen)
+- Tabelle A (für die Verfügbarkeitsgruppen)
     
 Denken Sie daran, dass Sie definierten Tabellen R, V, S, ich und in eine [hoher Verfügbarkeit federated Authentifizierung Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
-Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE (Integrated Script Environment) auf Ihrem lokalen Computer aus.
+Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE (Integrated Script Environment) auf Ihrem lokalen Computer aus.
   
 > [!TIP]
 > Eine Textdatei, die alle von PowerShell-Befehlen in diesem Artikel und Konfiguration Microsoft Excel-Arbeitsmappen, die generiert Ready-und-Los-PowerShell-Befehl Blöcke basierend auf Ihrer benutzerdefinierten Einstellungen enthält, finden Sie unter der [Federated-Authentifizierung für Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
@@ -157,7 +158,7 @@ Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR 
 
 Im nächsten Schritt testen Sie die Verbindung des ersten Domänencontrollers mit Standorten im Netzwerk Ihrer Organisation mithilfe des Befehls **ping** aus, um einen Ping an die Namen und IP-Adressen von Ressourcen innerhalb des Netzwerks Ihrer Organisation zu senden.
   
-Gleichzeitig stellen Sie damit sicher, dass die DNS-Namensauflösung korrekt funktioniert (d. h., dass der virtuelle Computer korrekt mit denlokalen DNS-Servern konfiguriert ist) und dass Pakete sowohl an das standortübergreifende Netzwerk als auch aus ihm gesendet werden können. Wenn bei diesem grundlegenden Test ein Fehler auftritt, wenden Sie sich an Ihre IT-Abteilung, um die Probleme mit der DNS-Namensauflösung und der Paketzustellung zu lösen.
+Gleichzeitig stellen Sie damit sicher, dass die DNS-Namensauflösung korrekt funktioniert (d. h., dass der virtuelle Computer korrekt mit denlokalen DNS-Servern konfiguriert ist) und dass Pakete sowohl an das standortübergreifende Netzwerk als auch aus ihm gesendet werden können. Wenn bei diesem grundlegenden Test ein Fehler auftritt, wenden Sie sich an Ihre IT-Abteilung, um die Probleme mit der DNS-Namensauflösung und der Paketzustellung zu lösen.
   
 Führen Sie im nächsten Schritt an der Windows PowerShell-Eingabeaufforderung auf dem ersten Domänencontroller die folgenden Befehle aus:
   
@@ -242,13 +243,13 @@ Restart-Computer
 
 Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration wie folgt aus. Für die Computernamen werden hier Platzhalter verwendet.
   
-**Phase 2: Die Domänencontroller und Dirsync-Server für eine hohe Verfügbarkeit Verbundauthentifizierung-Infrastruktur in Azure**
+**Phase 2: Die Domänencontroller und der DirSync-Server für die Verbundauthentifzierungsinfrastruktur mit hoher Verfügbarkeit in Azure**
 
 ![Phase 2 der hochverfügbaren Office 365-Verbundauthentifizierungsinfrastruktur in Azure mit Domänencontrollern](images/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
-Verwendung [hoher Verfügbarkeit federated Authentifizierung Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md) Konfiguration von Arbeitslast fortzufahren.
+Gehen Sie weiter zu [High availability federated authentication Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md), um mit der Konfiguration dieser Arbeitslast fortzufahren.
   
 ## <a name="see-also"></a>Siehe auch
 
