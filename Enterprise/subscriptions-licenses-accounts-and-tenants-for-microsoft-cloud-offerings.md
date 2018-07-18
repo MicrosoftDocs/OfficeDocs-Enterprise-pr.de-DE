@@ -3,7 +3,7 @@ title: Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 07/12/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Zusammenfassung: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.'
-ms.openlocfilehash: 889dbc376d3eb90af46bb281715ba391d7ee7712
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 53d2f7f32402d8c05d22c0661a0f625c756da6d4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319216"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 
@@ -47,9 +48,9 @@ Microsoft stellt eine Hierarchie von Organisationen, Abonnements, Lizenzen und B
 
 Dies sind die Elemente der Hierarchie:
   
-### <a name="organization"></a>Organisation
+### <a name="organization"></a>Organization (Organisation)
 
-Eine Organisation stellt eine Wirtschaftseinheit dar, die Microsoft-Cloudangebote verwendet und in der Regel von einem öffentlichen DNS-Domänennamen (Domain Name System) identifiziert wird, z. B. contoso.com. Die Organisation ist ein Container für Abonnements.
+Eine Organisation stellt eine Wirtschaftseinheit dar, die Microsoft-Cloudangebote verwendet und in der Regel von einem oder mehreren öffentlichen DNS-Domänennamen (Domain Name System) identifiziert wird, z. B. contoso.com. Die Organisation ist ein Container für Abonnements.
   
 ### <a name="subscriptions"></a>Abonnements
 

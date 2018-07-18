@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Zusammenfassung: Wenden Sie Richtlinien von Office 365-Bezeichnungen und der Verhinderung von Datenverlust (DLP) für SharePoint Online-Teamwebsites mit unterschiedlichen Ebenen des Informationsschutzes an.'
-ms.openlocfilehash: 52617e43f5c1bcb2ab958e751734a2f948ceba37
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 439f59f683090d39ea98730854aa1ca5dc8db482
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319266"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Schützen von SharePoint Online-Dateien mit Office 365-Bezeichnungen und Verhindern von Datenverlust
 
@@ -27,6 +28,13 @@ ms.lasthandoff: 04/27/2018
   
 Führen Sie die in diesem Artikel aufgeführten Schritte durch, um Office 365-Bezeichnungen und DLP-Richtlinien für SharePoint Online-Teamwebsites mit Basisschutz, Schutz vertraulicher und streng vertraulicher Daten zu entwerfen und bereitzustellen. Weitere Informationen zu diesen drei Ebenen des Schutzes finden Sie unter [Secure SharePoint Online sites and files](secure-sharepoint-online-sites-and-files.md).
   
+## <a name="how-this-works"></a>Funktionsweise
+1. Erstellen Sie die gewünschten Bezeichnungen und veröffentlichen Sie sie. Es kann bis zu 12 Stunden dauern, bis die Bezeichnungen veröffentlicht werden.
+2. Bearbeiten Sie für die gewünschten SharePoint-Websites die Einstellungen für die Dokumentbibliothek, um eine Bezeichnung auf Elemente in der Bibliothek anzuwenden.
+3. Erstellen Sie DLP-Richtlinien, um Aktionen basierend auf den Bezeichnungen auszuführen.
+
+Wenn Benutzer ein Dokument zur Bibliothek hinzufügen, erhält das Dokument standardmäßig die zugewiesene Bezeichnung. Benutzer können die Bezeichnung bei Bedarf ändern. Wenn ein Benutzer ein Dokument außerhalb der Organisation freigibt, überprüft DLP, ob eine Bezeichnung zugewiesen ist, und ergreift entsprechende Maßnahmen, wenn eine DLP-Richtlinie der Bezeichnung entspricht. DLP prüft auch auf andere Richtlinienübereinstimmungen, wie z. B. den Schutz von Dateien mit Kreditkartennummern, wenn diese Art von Richtlinie konfiguriert ist. 
+
 ## <a name="office-365-labels-for-your-sharepoint-online-sites"></a>Office 365-Bezeichnungen für Ihre SharePoint Online-Websites
 
 Es gibt drei Phasen beim Erstellen und anschließenden Zuweisen von Office 365-Bezeichnungen zu SharePoint Online-Teamwebsites.
@@ -151,13 +159,14 @@ Verwenden Sie diese Schritte, um eine DLP-Richtlinie zu konfigurieren, die Benut
     
 13. Klicken Sie im Bereich **What do you want to do if we detect sensitive info?** (Was möchten Sie tun, wenn vertrauliche Informationen erkannt werden?) auf **Customize the tip and email** (Den Tipp und die E-Mail anpassen).
     
-14. Klicken Sie im Bereich **Customize policy tips and email notifications** (Anpassen der Richtlinientipps und der E-Mail-Benachrichtigungen) auf **Customize the policy tip text** (Den Tipptext der Richtlinie als nächstes anpassen).
+14. Klicken Sie im Bereich **Richtlinentipps und E-Mail-Benachrichtigungen anpassen** auf **Richtlinientipptext anpassen**.
     
-15. Geben Sie Folgendes in das Textfeld ein, oder fügen Sie es ein:
+15. Geben oder fügen Sie in das Textfeld einen der folgenden Tipps ein, abhängig davon, ob Sie Azure Information Protection zum Schutz streng vertraulicher Dateien implementiert haben:
     
   - Wenn Sie eine Datei für einen Benutzer außerhalb der Organisation freigeben möchten, laden Sie die Datei herunter, und öffnen Sie sie. Klicken Sie auf „Datei“ > „Dokument schützen“ > „Mit Kennwort verschlüsseln“, und geben Sie dann ein sicheres Kennwort ein. Senden Sie das Kennwort in einer separaten E-Mail oder auf andere Weise.
+  - Streng vertrauliche Dateien werden durch Verschlüsselung geschützt. Nur externe Benutzer, die Berechtigungen für diese Dateien von Ihrer IT-Abteilung erhalten haben, können diese lesen.
     
-    Sie können auch einen eigenen Tipp in Bezug auf die Richtlinie eingeben oder einfügen, der den Benutzern erläutert, wie sie Dateien außerhalb der Organisation freigeben.
+    Alternativ können Sie Ihren eigenen Richtlinientipp eingeben oder einfügen, der Benutzer anweist, wie eine Datei außerhalb Ihrer Organisation geteilt wird. Weitere Informationen zur Erteilung von Berechtigungen an mit Azure Information Protection geschützten Dateien für externe Benutzer finden Sie unter Hinzufügen von Berechtigungen für externe Benutzer.
     
 16. Klicken Sie auf **OK**.
     

@@ -15,11 +15,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: 88ad010e10949c9ef4e761dbca95b7afd0e1f901
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
+ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "20319226"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -46,9 +47,9 @@ Weitere Informationen zu diesen Ebenen und Funktionen, die für jede Ebene empfo
 Empfehlungen für SharePoint Online-Teamwebsites greifen auf eine Vielzahl von Office 365-Funktionen zurück. Für streng vertrauliche Websites wird Azure Information Protection empfohlen. Dieser Dienst ist in Enterprise Mobility + Security (EMS) enthalten. 
   
 Die folgende Abbildung zeigt die empfohlenen Konfigurationen für vier SharePoint Online-Teamwebsites.
-  
-![Empfohlene Konfiguration für die SharePoint-Websites](images/ad0dcd70-f6f5-465c-8d16-1889481ca07a.png)
-  
+
+![Empfohlene Konfiguration für die SharePoint-Websites](Media/SharePoint-site-configuration-v2.png)
+
 Erläuterung der Abbildung:
   
 - Basisschutz umfasst zwei Optionen für SharePoint Online-Teamwebsites: eine öffentliche Website und eine private Website. Öffentliche Websites können von allen Benutzern in einer Organisation ermittelt werden, und alle haben Zugriff darauf. Private Websites können nur von Mitgliedern der Website ermittelt werden, und nur diese haben Zugriff darauf. Beide Websitekonfigurationen lassen die Freigabe für Personen außerhalb der Gruppe zu. 
@@ -59,7 +60,7 @@ Erläuterung der Abbildung:
     
 - Richtlinien zur Verhinderung von Datenverlust sind für die Office 365-Bezeichnungen „Sensibel“ und „Streng vertraulich“ konfiguriert, um zu warnen oder Benutzer daran zu hindern, diese Dateitypen außerhalb der Organisation zu senden.
     
-- Für Websites, die mit streng vertraulichem Schutz konfiguriert sind, übernimmt Azure Information Protection die Verschlüsselung von und erteilt Berechtigungen für Dateien.
+- Falls dies für Ihr Szenario erforderlich sein sollte, können Sie Azure Information Protection verwenden, um Dateien zu verschlüsseln und Berechtigungen für Dateien zu gewähren, die hochgradig vertraulich sind. Dies wird nicht für alle Kunden empfohlen.
     
 ## <a name="tenant-wide-settings-for-sharepoint-online-and-onedrive-for-business"></a>Mandantenweite Einstellungen für SharePoint Online und OneDrive for Business
 
@@ -155,7 +156,7 @@ Die Schritte zum Konfigurieren von Office 365-Bezeichnungen und DLP-Richtlinien 
   
 ## <a name="azure-information-protection"></a>Azure Information Protection
 
-Verwenden Sie Azure Information Protection zum Anwenden von Bezeichnungen und Schutzfunktionen, die die Dateien unabhängig von ihrem Standort begleiten. Für diese Lösung empfehlen wir, eine bereichsbezogene Azure Information Protection-Richtlinie und die Bezeichnung „Streng vertraulich“ zu verwenden, um Dateien, die Schutz der höchsten Ebene benötigen, zu verschlüsseln und Berechtigungen für sie zu erteilen. 
+Falls dies für Ihr Sicherheitsszenario erforderlich sein sollte, können Sie Azure Information Protection verwenden, um Bezeichnungen und Schutzfunktionen anzuwenden, die die Dateien unabhängig von ihrem Standort begleiten. Die Bezeichnungen in Azure Information Protection sind anders als in Office 365. Für diese Lösung empfehlen wir, eine bereichsbezogene Azure Information Protection-Richtlinie und die Bezeichnung „Streng vertraulich“ zu verwenden, um Dateien, die Schutz der höchsten Ebene benötigen, zu verschlüsseln und Berechtigungen für sie zu erteilen. 
   
 Beachten Sie Folgendes: Wenn Azure Information Protection-Verschlüsselung auf Dateien in Office 365 angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur mit den Metadaten (einschließlich Office 365-Bezeichnungen) funktionieren, aber nicht mit den Inhalten dieser Dateien (wie Kreditkartennummern in Dateien).
   
