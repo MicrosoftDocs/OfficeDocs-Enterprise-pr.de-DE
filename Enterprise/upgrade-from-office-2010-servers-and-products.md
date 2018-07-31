@@ -10,7 +10,6 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
 search.appverid:
-- MET150
 - LCC120
 - OFF120
 - OFF140
@@ -21,12 +20,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Support für Office 2010-Servern und -Clientanwendungen bald beendet wird und benutzerdefinierte Support Agreements sind nicht verfügbar. Verwenden Sie diesen Artikel zum Planen der Aktualisierung jetzt starten.
-ms.openlocfilehash: dd2d8d3a5ad629dcdbddab07cf9209a305a3024c
-ms.sourcegitcommit: a9c84d02e94c99ff6b1099b4a9ae695be08210e2
+ms.openlocfilehash: deca71195aec15370d10003b979e7222dead7418
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "21169777"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549976"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen zum upgrade von Office 2010-Servern und clients
 
@@ -39,22 +38,21 @@ Wenn Sie Office 2010-Produkte und Dienste verwenden, ist jetzt der ideale Zeitpu
 |Office 2010 (einschließlich Word 2010, Excel 2010, PowerPoint 2010 und Outlook 2010)  <br/> |[Office 2010 Ende Unterstützung-Wegweiser](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Exchange 2010 Ende Unterstützung-Wegweiser](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 oder SharePoint Server 2010  <br/> |[Upgrade von SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-   
-> [!TIP]
-> Planung Roadmaps werden in Kürze zur Verfügung! Achten Sie darauf, dass Sie auf dieser Seite für die zukünftige Lesezeichen. 
-  
+|Project Server 2010 </br> | [Planen von Projektserver und Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) </br> |
+|Lync Server 2010 </br> | [Planen eines Upgrades auf Skype für Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) </br> |
+    
 Mit Office 2010-Produkte und Dienste, deren Ablauf des Supports abgelaufen ist dies der ideale Zeitpunkt, sollten in Office 365 verschieben. Sie erhalten die neuesten Features, Sicherheitsupdates und Zugriff auf Ihre Inhalte für eine Vielzahl von Geräten.
 
 Wählen Sie eine der folgenden Optionen aus:
 - **Verschieben nach Office 365**: viele Kunden ist dies eine effiziente und kostengünstige Lösung. Finden Sie unter [wie wir verschieben nach Office 365 für Unternehmen?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)
     
-- **Upgrade Ihrer lokalen Servern und Anwendungen.** Finden Sie unter der [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange 2010](exchange-2010-end-of-support.md)und [SharePoint 2010](upgrade-from-sharepoint-2010.md) -Planungstool Roadmaps. 
+- **Upgrade Ihrer lokalen Servern und Anwendungen.** Finden Sie unter der [Office](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap), [Exchange](exchange-2010-end-of-support.md), [SharePoint](upgrade-from-sharepoint-2010.md), [Project Server und Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers)und [Skype für Unternehmen](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) planen Inhalte. 
     
 - **Implementieren einer Hybrid-Lösung, einschließlich Office 365** und Ihrer lokalen Servern und Anwendungen. Finden Sie unter [Übersicht über Office 365 Hybriden Cloud-Lösungen.](https://support.office.com/article/59616fab-acdb-40e9-b414-cf0c965c80b7.aspx)
     
 **Benötigen Sie Hilfe?** Berücksichtigen Sie arbeiten mit einem Partner oder Volume licensing Specialist. **[Hier finden Sie Ihre Office 365-Partner oder Händler](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx)**. 
 > [!TIP]
-> Wenn Ihre Organisation 50 oder mehr Office 365-Lizenzen erwirbt, kann Ihnen unser Team schnelle durch den Prozess zum Einrichten von Office 365 helfen. Besuchen Sie [FastTrack.Microsoft.com](https://fasttrack.microsoft.com).
+> Wenn Ihre Organisation 50 oder mehr Office 365-Lizenzen erwirbt, kann Ihnen unser Team schnelle durch den Prozess zum Einrichten von Office 365 helfen. Besuchen Sie [FastTrack.Microsoft.com](https://www.microsoft.com/fasttrack/microsoft-365/office-365).
   
 Wenn Ihre Organisation über weniger als 50 Office 365-Lizenzen erwirbt, finden Sie unter [Admins: Aktualisieren Sie Ihre Benutzer auf den neuesten Office-Client mithilfe von Office 365 für Unternehmen](https://support.office.com/article/f6b00895-b5fd-4af6-a656-b7788ea20cbb.aspx). 
   
@@ -80,11 +78,9 @@ Office 365 ist ein Angebot von Software-as-a-Service (SaaS), die Teil der Micros
   
 |**Ressource**|**Beschreibung**|
 |:-----|:-----|
-|**[Video: Was ist Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)** <br/> |Sehen Sie sich dieses Video an, um eine Übersicht über Office 365 erhalten.  <br/> |
-|**[Wie Verschieben wir zu Office 365 für Unternehmen?](https://support.office.com/article/62084652-f051-4b0b-87b3-f766418386bf.aspx)** <br/> |Lesen Sie diesen Artikel, wenn Sie möchten einen allgemeinen Überblick darüber, wie Unternehmen zu Office 365 verschoben werden können.  <br/> |
 |**[Wählen Sie einen plan](https://aka.ms/viirjv)** <br/> |Finden Sie auf dieser Seite können Sie Informationen zu Office 365 Geschäftspläne zu erhalten  <br/> |
 |**[Systemanforderungen für Office](https://aka.ms/o365sysrequirements)** <br/> |Details zu den Systemanforderungen für **Office 365-Pläne für Unternehmensrichtlinien, Education, und** im Abschnitt anzeigen.  <br/> |
-|**[Microsoft-Cloud-Plattformoptionen](https://www.microsoft.com/download/details.aspx?id=54432)** <br/> |Laden Sie dieses Poster Weitere Informationen zu Office 365 und den Microsoft-Cloud-Stapel. Sie lernen Kernfunktionen der Microsoft-Cloud-Stapel, einschließlich Office 365 und Bereiche der Verantwortung für Sie, unsere Kunden und Microsoft. Sie können das Poster im PDF-Format herunterladen oder Visio formatiert.  <br/> |
+|**[Ressourcen für Microsoft Cloud IT-Architektur](microsoft-cloud-it-architecture-resources.md)** <br/> |Laden Sie eine oder mehrere Poster erfahren Sie mehr über die Optionen für Microsoft Cloud und Server-Plattform. Sie können Poster im PDF-Format herunterladen oder Visio formatiert.  <br/> |
 |**[Häufig gestellte Fragen zu Office 365](https://aka.ms/office365faqs)** <br/> |Besuchen Sie diese Seite, um eine Liste der häufig gestellte Fragen zu Office 365 mit Links zu weiteren Informationen finden Sie unter.  <br/> |
    
 ## <a name="what-is-microsoft-365"></a>Was ist Microsoft 365?
