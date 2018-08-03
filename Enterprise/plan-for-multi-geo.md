@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informationen zu Multi-Geo in OneDrive for Business, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: 54efc6092338e505ef44344f9c3d3a7efe9ae498
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 26dc9d1b0f0f78e1740088036be4b77bea3ce176
+ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "21549986"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Planen von Multi-Geo in OneDrive for Business
 
@@ -63,20 +64,20 @@ Sie können einen der folgenden Standorte als Satellitenstandorte festlegen, an 
 <td align="left">APC</td>
 </tr>
 <tr class="even">
-<td align="left">Europa/Naher Osten/Afrika</td>
-<td align="left">EUR</td>
-</tr>
-<tr class="odd">
-<td align="left">Nordamerika</td>
-<td align="left">NAM</td>
-</tr>
-<tr class="even">
 <td align="left">Australien</td>
 <td align="left">AUS</td>
 </tr>
 <tr class="odd">
 <td align="left">Kanada</td>
 <td align="left">CAN</td>
+</tr>
+<tr class="even">
+<td align="left">Europa/Naher Osten/Afrika</td>
+<td align="left">EUR</td>
+</tr>
+<tr class="odd">
+<td align="left">Frankreich</td>
+<td align="left">FRA</td>
 </tr>
 <tr class="odd">
 <td align="left">Japan</td>
@@ -87,6 +88,10 @@ Sie können einen der folgenden Standorte als Satellitenstandorte festlegen, an 
 <td align="left">KOR</td>
 </tr>
 <tr class="odd">
+<td align="left">Nordamerika</td>
+<td align="left">NAM</td>
+</tr>
+<tr class="odd">
 <td align="left">Vereinigtes Königreich</td>
 <td align="left">GBR</td>
 </tr>
@@ -95,7 +100,6 @@ Sie können einen der folgenden Standorte als Satellitenstandorte festlegen, an 
 
 Zukünftige geografische Speicherorte:
   
-- Frankreich
 - Indien
 
 Beim Konfigurieren von Multi-Geo sollten Sie auch eine Konsolidierung der lokalen Infrastruktur während der Migration zu Office 365 berücksichtigen. Wenn Sie zum Beispiel über lokale Farmen in Singapur und Malaysia verfügen, können Sie sie an dem Satellitenstandort APC zusammenführen, wenn dies entsprechend den Datenaufbewahrungsanforderungen möglich ist.
