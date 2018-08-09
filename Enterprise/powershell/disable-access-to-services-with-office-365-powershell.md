@@ -3,7 +3,7 @@ title: Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2018
+ms.date: 08/08/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,13 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: "Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren."
-ms.openlocfilehash: 61d92a1a0c55a381f10fedbb43403dd099fcb69b
-ms.sourcegitcommit: 07416472be80566370c30631aff740177b37b24c
+description: Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren.
+ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
+ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "22196822"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 
@@ -62,7 +63,7 @@ Um eine bestimmte Gruppe von Office 365-Diensten für Benutzer aus einer einzeln
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
-2. Verwenden Sie das **LicenseOptions** -Objekt aus Schritt 1 auf einen oder mehrere Benutzer.
+2. Verwenden Sie das **LicenseOptions**-Objekt aus Schritt 1 für einen oder mehrere Benutzer.
     
   - Wenn Sie ein neues Konto zu erstellen möchten, für das die Dienste deaktiviert sind, verwenden Sie die folgende Syntax:
     
@@ -151,9 +152,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 
 2. Passen Sie die folgenden Werte für Ihre Umgebung an:
     
-  -  _<UndesirableService>_In diesem Beispiel werden wir Office Online und SharePoint Online verwenden.
+  -  _<UndesirableService>_ In diesem Beispiel werden wir Office Online und SharePoint Online verwenden.
     
-  -  _<Account>_In diesem Beispiel verwenden wir belindan@litwareinc.com.
+  -  _<Account>_ In diesem Beispiel verwenden wir belindan@litwareinc.com.
     
     Das angepasste Skript sieht wie folgt aus:
     
@@ -177,20 +178,9 @@ for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
 > [!NOTE]
 > Um die Effekte eines dieser Verfahren rückgängig zu machen (d. h., die deaktivierten Dienste erneut aktivieren), führen Sie das Verfahren erneut aus, aber verwenden Sie den Wert `$null` für den Parameter _DisabledPlans_ .
   
-[Zurück zum Seitenanfang](disable-access-to-services-with-office-365-powershell.md#RTT)
+[Nach oben](disable-access-to-services-with-office-365-powershell.md#RTT)
 
 
-## <a name="all-office-365-services-for-all-users-for-a-single-licensing-plan"></a>Alle Office 365-Dienste für alle Benutzer für einen einzelnen Lizenzierungsplan
- 
-Klicken Sie zum Deaktivieren aller Office 365-Dienste für alle Benutzer in einer bestimmten Lizenzierungsplan Geben Sie den licensing Plan für $acctSKU (beispielsweise **litwareinc: enterprisepack**), und führen Sie diese Befehle im Befehlsfenster PowerShell:
-
-```
-$acctSKU="<AccountSkuId>"
-$servicesList=(Get-MsolAccountSku | Select -ExpandProperty ServiceStatus).ServicePlan.ServiceName
-$lo = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans $servicesList
-$AllLicensed = Get-MsolUser -All | Where {$_.isLicensed -eq $true -and $_.licenses[0].AccountSku.SkuPartNumber -eq ($acctSKU).Substring($acctSKU.IndexOf(":")+1, $acctSKU.Length-$acctSKU.IndexOf(":")-1)}
-$AllLicensed | ForEach {Set-MsolUserLicense -ObjectID $_.ObjectID -LicenseOptions $lo}
-```
 
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 <a name="LinkedIn"> </a>
