@@ -1,36 +1,38 @@
 ---
-title: Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
+title: Testen von Office 365 mit Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 08/23/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 und Office Server-Produkte einzurichten.'
-ms.openlocfilehash: ac48a9d3d0941b1152aa2bc22a8d9aa5dde7ad77
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Dynamics 365 und Office Server-Produkte einzurichten.'
+ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
+ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188163"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "23041499"
 ---
-# <a name="cloud-adoption-test-lab-guides-tlgs"></a>Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
+# <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testen von Office 365 mit Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
- **Zusammenfassung:** Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Enterprise Mobility + Security (EMS), Dynamics 365 und Office Server-Produkte einzurichten.
+ **Zusammenfassung:** Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Dynamics 365 und Office Server-Produkte einzurichten.
   
 Mithilfe von Testumgebungsanleitungen können Sie sich schnell mit Microsoft-Produkten vertraut machen. Sie eignen sich besonders für Situationen, in denen Sie eine Technologie oder Konfiguration bewerten müssen, bevor Sie entscheiden, ob sie die richtige für Sie ist oder bevor Sie sie für Ihre Benutzer einführen. Diese praktische Erfahrung erweitert Ihre Kenntnisse der Bereitstellungsanforderungen neuer Produkte oder Lösungen, sodass Sie besser planen können, wie diese in der Produktionsumgebung gehostet werden sollen.
   
 Leitfäden zu Test Lab (Test Lab Guides, TLG) ermöglichen auch die Erstellung repräsentativer Umgebungen zum Entwickeln und Testen von Anwendungen, auch als Entwicklungs-/Testumgebungen bezeichnet.
   
-![Testumgebungsanleitungen in der Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Testumgebungsanleitungen in der Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 Sehen Sie sich diese zusätzlichen Ressourcen an, bevor Sie loslegen:
   
@@ -88,21 +90,10 @@ Verwenden Sie die folgenden Artikel für Ihre Office 365-Entwicklungs-/Testumgeb
     
     Veranschaulichen, wie eine SharePoint Online-Teamwebsite erstellt wird, die aufgrund von vertraulichen oder streng vertraulichen Ressourcen vom Rest der Organisation isoliert ist.
     
-## <a name="the-microsoft-365-enterprise-devtest-environment"></a>Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung
+## <a name="the-microsoft-365-enterprise-test-environment"></a>Die Microsoft 365 Enterprise-Testumgebung
 
-Erstellen Sie anhand der folgenden Artikel eine Entwicklungs-/Testumgebung für [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)-Szenarien:
-  
-- [Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Erstellen Sie die anfängliche Umgebung, die Office 365 E5, EMS E5 und einen Computer, auf dem Windows 10 Enterprise ausgeführt wird, umfasst.
-    
-- [Richtlinien für die Microsoft 365 Enterprise Test-/Umgebung MAM](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
-    
-    Erstellen von Richtlinien für Benutzergruppen und die mobile Anwendung (MAM) für ioS- und Android-Geräte.
-    
-- [Registrieren von iOS- und Android-Geräten in Ihrer Entwicklungs-/Testumgebung für Microsoft 365 Enterprise](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
-    
-    Registrieren Sie iOS- oder Android-Geräte, und verwalten Sie sie remote.
+Erstellen Sie anhand der [folgenden Artikel](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides) eine Testumgebung für [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/).
+ 
     
 ## <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365- und Dynamics 365-Entwicklungs-/Testumgebung
 
@@ -148,17 +139,7 @@ In den folgenden Themen finden Sie zusätzliche cloudbasierte Entwicklungs-/Test
     
     Erstellen von einfachen und hochverfügbaren SharePoint Server 2013-Farmen in Azure-Infrastrukturdiensten.
     
-**An der Diskussion teilnehmen**
-
-|**Kontakt**|**Beschreibung**|
-|:-----|:-----|
-|**Welche Lösungen benötigen Sie?** <br/> |Wir entwickeln Inhalte für Lösungen auf Grundlage mehrerer Microsoft-Produkte und -Dienste. Lassen Sie uns wissen, was Sie von unseren serverübergreifenden Lösungen halten, oder fordern Sie spezifische Lösungen an, indem Sie eine E-Mail an [MODAcontent@microsoft.com](mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20) senden.<br/> |
-|**An der Diskussion über Lösungen teilnehmen** <br/> |Wenn Sie sich für Cloud-basierte Lösungen interessieren, werden Sie Teil des Cloud Adoption Advisory Board (CAAB), um Zugriff auf eine größere, dynamische Community aus Microsoft-Inhaltsentwicklern, Branchenexperten und Kunden aus aller Welt zu haben. Um beizutreten, fügen Sie sich selbst als Mitglied des [CAAB (Cloud Adoption Advisory Board)-Bereichs](https://aka.ms/caab) der Microsoft Tech Community hinzu, und senden Sie uns eine E-Mail an [CAAB@microsoft.com](mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!). Communityinhalte stehen allen Personen im [CAAB-Blog](https://blogs.technet.com/b/solutions_advisory_board/) zur Verfügung. CAAB-Mitglieder erhalten jedoch Einladungen zu privaten Webinaren, die neue Ressourcen und Lösungen für den Cloud-Einsatz beschreiben.<br/> |
-|**Die hier gezeigte Grafik abrufen** <br/> |Wenn Sie eine bearbeitbare Kopie der Grafik wünschen, die Sie in disem Artikel sehen, senden wir Sie Ihnen gerne zu. Senden Sie eine E-Mail mit der Anforderung einschließlich der URL und dem Titel der Grafik an [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20).  <br/> |
-   
 ## <a name="see-also"></a>Siehe auch
-
-<a name="ADD_TLGs"> </a>
 
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
   
