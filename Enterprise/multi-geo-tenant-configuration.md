@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Konfigurieren von Multi-Geo in OneDrive for Business.
-ms.openlocfilehash: 561025efc38199f3a92e228d5414a28df6eb12f0
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 1817eee1bb2ceefa0e2e167e327af417dd0c517d
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21549966"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915250"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Konfiguration des Mandanten für Multi-Geo in OneDrive for Business
 
@@ -112,7 +112,7 @@ In AAD gibt es zwei Typen von Benutzerobjekten: Nur-Cloud-Benutzer und synchroni
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Synchronisieren der bevorzugten Datenspeicherorte für Benutzer mithilfe von AD Connect 
 
-Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory (AD)-System und Azure Active Directory (AAD) durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure AD Connect-Synchronisierung: Ändern der Standardkonfiguration](https://docs.microsoft.com/de-DE/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem AD und AAD zu konfigurieren.
+Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory (AD)-System und Azure Active Directory (AAD) durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure AD Connect-Synchronisierung: Ändern der Standardkonfiguration](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem AD und AAD zu konfigurieren.
 
 Es wird empfohlen, die Einstellung des bevorzugten Datenspeicherorts des Benutzers im Rahmen des Standardworkflows für das Erstellen von Benutzern hinzuzufügen.
 
@@ -129,7 +129,7 @@ Für die Vorgehensweisen in diesem Abschnitt ist das [Microsoft Azure Active Dir
 
 2.  Führen Sie `Connect-MsolService` aus, und geben Sie die Anmeldeinformationen des globalen Administrators für Ihren Mandanten ein.
 
-3.  Verwenden Sie das [Set-MsolUser](https://docs.microsoft.com/de-DE/powershell/msonline/v1/set-msoluser)-Cmdlet zum Festlegen des bevorzugten Datenspeicherorts für jeden Benutzer. Zum Beispiel:
+3.  Verwenden Sie das [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser)-Cmdlet zum Festlegen des bevorzugten Datenspeicherorts für jeden Benutzer. Zum Beispiel:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -137,7 +137,7 @@ Für die Vorgehensweisen in diesem Abschnitt ist das [Microsoft Azure Active Dir
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![](media/multi-geo-tenant-configuration_image3.png)
+![](media/multi-geo-tenant-configuration-image3.png)
 
 Es wird empfohlen, die Einstellung des bevorzugten Datenspeicherorts des Benutzers im Rahmen des Standardworkflows für das Erstellen von Benutzern hinzuzufügen.
 

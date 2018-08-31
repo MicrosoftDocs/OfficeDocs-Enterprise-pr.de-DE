@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Zusammenfassung: Konfigurationsempfehlungen für den Schutz von Dateien in SharePoint Online und Office 365.'
-ms.openlocfilehash: 806f9880347a5fa4aff29206651d86b0e18da3a4
-ms.sourcegitcommit: b39b8ae3b4268d6475b54e2fdb62982b2c7d9943
+ms.openlocfilehash: 5ee7ce0f5d52076ec27a3478a39b998a96e0e270
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "20319226"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915080"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Sichern von SharePoint Online-Websites und -Dateien
 
@@ -138,7 +140,7 @@ Die Verwendung von Office 365-Bezeichnungen wird für Umgebungen mit sensiblen D
     
 - Personen in Ihrer Organisation können eine Bezeichnung manuell auf Inhalte in Outlook im Web, Outlook 2010 und höher, OneDrive for Business, SharePoint Online und Office 365-Gruppen anwenden. Benutzer wissen häufig am besten, mit welcher Art von Inhalten sie arbeiten, sodass sie sie klassifizieren und die entsprechende DLP-Richtlinie anwenden lassen können.
     
-![Empfohlene Konfiguration für die SharePoint-Websites](images/7fed0126-ab4a-4480-922c-681970642339.png)
+![Empfohlene Konfiguration für die SharePoint-Websites](media/7fed0126-ab4a-4480-922c-681970642339.png)
   
 Wie dargestellt, umfasst diese Lösung die Erstellung der folgenden Bezeichnungen:
   
@@ -160,7 +162,7 @@ Falls dies für Ihr Sicherheitsszenario erforderlich sein sollte, können Sie Az
   
 Beachten Sie Folgendes: Wenn Azure Information Protection-Verschlüsselung auf Dateien in Office 365 angewendet wird, kann der Dienst den Inhalt dieser Dateien nicht verarbeiten. Gemeinsame Dokumenterstellung, eDiscovery, Suche, Delve und andere Features für die Zusammenarbeit funktionieren nicht. DLP-Richtlinien können nur mit den Metadaten (einschließlich Office 365-Bezeichnungen) funktionieren, aber nicht mit den Inhalten dieser Dateien (wie Kreditkartennummern in Dateien).
   
-![Azure Information Protection ist in Azure konfiguriert, und es werden Beschriftungen in der Client-Symbolleiste angezeigt](images/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
+![Azure Information Protection ist in Azure konfiguriert, und es werden Beschriftungen in der Client-Symbolleiste angezeigt](media/1266a7a0-5078-49ab-bbf1-b0cf41451f62.png)
   
 Erläuterung der Abbildung:
   

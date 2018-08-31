@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Zusammenfassung: Erstellen und Konfigurieren von SharePoint Online-Teamwebsites für verschiedene Ebenen des Informationsschutzes.'
-ms.openlocfilehash: 84b455809e210fb40d4a92396b2d8c4eb18245b1
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 6103675941802fcdee50c06ac3212d90f95c6d35
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631396"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915620"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Bereitstellen von SharePoint Online-Websites für drei Schutzebenen
 
@@ -54,7 +56,7 @@ Um eine grundlegende SharePoint Online-Teamwebsite mit öffentlichem Zugriff und
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Grundschutz für eine öffentliche SharePoint Online-Teamwebsite.](images/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
+![Grundschutz für eine öffentliche SharePoint Online-Teamwebsite.](media/bcd46b8d-3f89-4398-80ce-4da17ee85e03.png)
   
 ### <a name="private"></a>Private
 
@@ -80,7 +82,7 @@ Um eine grundlegende SharePoint Online-Teamwebsite mit privatem Zugriff und Bere
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Grundschutz für eine private SharePoint Online-Teamwebsite.](images/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
+![Grundschutz für eine private SharePoint Online-Teamwebsite.](media/91769026-37e3-4383-ac3c-dbf7aca98e41.png)
   
 ## <a name="sensitive-sharepoint-online-team-sites"></a>Vertrauliche SharePoint Online-Teamwebsites
 
@@ -142,7 +144,7 @@ Erstellen Sie als Nächstes mit den folgenden Schritten die SharePoint Online-Te
     
 Konfigurieren Sie dann auf der neuen SharePoint Online-Teamwebsite die Berechtigungen mithilfe folgender Schritte.
   
-1. Ermitteln Sie den UPN (User Principal Name) des IT-Administrators oder der anderen Person, die für das Beantworten und Bearbeiten von Anfragen hinsichtlich des Zugriffs auf die Website zuständig ist (Beispiel für einen UPN: belindan@contoso.com). Notieren Sie den UPN hier: ![](./images/Common_Images/TableLine.png).
+1. Ermitteln Sie den UPN (User Principal Name) des IT-Administrators oder der anderen Person, die für das Beantworten und Bearbeiten von Anfragen hinsichtlich des Zugriffs auf die Website zuständig ist (Beispiel für einen UPN: belindan@contoso.com). Notieren Sie den UPN hier: ![](./media/Common-Images/TableLine.png).
     
 2. Klicken Sie in der Symbolleiste auf das Symbol „Einstellungen“ und anschließend auf **Websiteberechtigungen**.
     
@@ -196,7 +198,7 @@ Die Ergebnisse dieser Berechtigungseinstellungen sehen folgendermaßen aus:
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Schutzebene „Vertraulich“ für eine isolierte SharePoint Online-Teamwebsite.](images/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
+![Schutzebene „Vertraulich“ für eine isolierte SharePoint Online-Teamwebsite.](media/7a6ab9c6-560a-4674-ac39-8175644dbe6f.png)
   
 Die Mitglieder der Website können nun über Gruppenmitgliedschaft in einer der Zugriffsgruppen sicher an den Ressourcen der Website zusammenarbeiten.
   
@@ -256,7 +258,7 @@ Nachfolgend sind die Ergebnisse dieser Berechtigungseinstellungen aufgeführt:
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Schutzebene „Streng vertraulich“ für eine isolierte SharePoint Online-Teamwebsite.](images/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
+![Schutzebene „Streng vertraulich“ für eine isolierte SharePoint Online-Teamwebsite.](media/196359ab-d7ed-4fcf-97b4-61820a74aca4.png)
   
 Die Mitglieder der Website können nun über Gruppenmitgliedschaft in einer der Zugriffsgruppen sicher an den Ressourcen der Website zusammenarbeiten.
   

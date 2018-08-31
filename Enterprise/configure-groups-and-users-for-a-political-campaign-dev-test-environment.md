@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Zusammenfassung: Informationen zum Erstellen von Office 365- und Enterprise Mobility + Security-Testabonnements (EMS) mit Benutzern und Gruppen für eine Entwicklungs-/Testumgebung für eine politische Kampagne.'
-ms.openlocfilehash: df737e3f745ba0fa4ab4752609e09e8af64ce6b0
-ms.sourcegitcommit: 29c8571ca4912549bac55ec9d1642d21eba5b0e4
+ms.openlocfilehash: c58782185d0638f7a6a9e14ee7e4516f1852908b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "19168509"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915690"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Konfigurieren von Gruppen und Benutzern für eine politische Kampagne in einer Entwicklungs-/Testumgebung
 
@@ -185,11 +187,11 @@ Gehen Sie folgendermaßen vor, um sicherzustellen, dass die dynamische Gruppenmi
 
 Notieren Sie diese Werte für die Arbeit mit Office 365- und EMS-Testabonnements für diese Entwicklung-/Testumgebung:
   
-- Organisationsname für das Testabonnement: ![](./images/Common_Images/TableLine.png) 
+- Organisationsname für das Testabonnement: ![](./media/Common-Images/TableLine.png) 
     
     Für den Domänennamen contoso.onmicrosoft.com des Testabonnements lautet der Name der Organisation zum Beispiel „contoso“.
     
-- Der Name des globalen Office 365-Administrators: ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+- Der Name des globalen Office 365-Administrators: ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Notieren Sie sich das Kennwort für dieses Konto und das gemeinsame ursprüngliche Kennwort für die anderen Benutzerkonten, und bewahren Sie diese an einem sicheren Ort auf.
     

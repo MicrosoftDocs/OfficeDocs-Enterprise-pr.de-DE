@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft SaaS-Dienste, einschließlich Office 365, Microsoft Intune und Dynamics 365, optimieren.'
-ms.openlocfilehash: 4cfbeab3d90703e17c86e707988a8a62c937df9a
-ms.sourcegitcommit: a4322cac992ce64b92f0335bf005a7420195d9be
+ms.openlocfilehash: 94118022b86a5e732467599632e30c058827468f
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915470"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Entwerfen von Netzwerken für Microsoft-SaaS
 
@@ -44,7 +47,7 @@ Nachfolgend finden Sie einige Punkte, die Sie bei der Optimierung Ihres Internet
   
 **Abbildung 1: Verbindungsoptionen für Microsoft SaaS-Dienste**
 
-![Abbildung 1: Verbindungsoptionen für Microsoft SaaS-Dienste](images/Network_Poster/SaaS1.png)
+![Abbildung 1: Verbindungsoptionen für Microsoft SaaS-Dienste](media/Network-Poster/SaaS1.png)
   
 In Abbildung 1 ist ein lokales Netzwerk dargestellt, das über eine Internetpipe oder ExpressRoute eine Verbindung zu Microsoft SaaS-Diensten herstellt.
   

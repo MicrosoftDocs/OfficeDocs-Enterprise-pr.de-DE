@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Zusammenfassung: Erstellen Sie ein vereinfachtes Intranet als Entwicklungs-/Testumgebung in Microsoft Azure.'
-ms.openlocfilehash: 03e729e2211320cac1adc88258e59b18b3ff0719
-ms.sourcegitcommit: 3a4ab28f3f4172d596426f0da40bcab8c46ef74d
+ms.openlocfilehash: f065f9fa31b6793933dc4eec0d840bd1320a8891
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "20215847"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915280"
 ---
 # <a name="base-configuration-devtest-environment"></a>Basiskonfiguration der Entwicklungs-/Testumgebung
 
@@ -30,7 +32,7 @@ Dieser Artikel enthält eine schrittweise Anleitung zum Erstellen der folgenden 
   
 **Abbildung 1: Die Basiskonfiguration der Entwicklungs-/Testumgebung**
 
-![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Die Basiskonfiguration der Entwicklungs-/Testumgebung in Abbildung 1 besteht aus dem Unternehmensnetzwerk-Subnetz in einem auf die Cloud beschränkten virtuellen Azure-Netzwerk namens TestLab, das ein vereinfachtes privates Intranet simuliert, das mit dem Internet verbunden ist. Es enthält drei virtuelle Azure-Computer unter Windows Server 2016:
   
@@ -67,7 +69,7 @@ Wenn Sie noch kein Azure-Abonnement haben, können Sie sich für eine kostenlose
 > [!NOTE]
 > Für virtuelle Computer in Azure entstehen laufende finanzielle Kosten, wenn sie ausgeführt werden. Diese Kosten werden gegen Ihre kostenlose Testversion, Ihr MSDN-Abonnement oder Ihr kostenpflichtiges Abonnement berechnet. Weitere Informationen zu den Kosten der Ausführung virtueller Azure-Computer finden Sie unter [Preisdetails für virtuelle Computer](https://azure.microsoft.com/pricing/details/virtual-machines/) und [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator/). Informationen dazu, wie Sie die Kosten niedrig halten, finden Sie unter [Minimierung der Kosten für virtuelle Computer der Testumgebung in Azure](base-configuration-dev-test-environment.md#mincost). 
   
-![Testumgebungsanleitungen in der Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Testumgebungsanleitungen in der Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
@@ -131,7 +133,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name Corpnet -Addre
 
 Dies ist Ihre aktuelle Konfiguration.
   
-![Phase 1 der Basiskonfiguration in Azure mit dem virtuellen Netzwerk und Subnetz](images/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
+![Phase 1 der Basiskonfiguration in Azure mit dem virtuellen Netzwerk und Subnetz](media/0b5634fc-4e1c-469d-873d-97ed7e587411.png)
   
 ## <a name="phase-2-configure-dc1"></a>Phase 2: Konfigurieren von DC1
 
@@ -235,7 +237,7 @@ Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv
 
 Dies ist Ihre aktuelle Konfiguration.
   
-![Phase 2 der Basiskonfiguration in Azure mit dem virtuellen Computer DC1](images/49069908-29c3-4d73-87f7-debbea067261.png)
+![Phase 2 der Basiskonfiguration in Azure mit dem virtuellen Computer DC1](media/49069908-29c3-4d73-87f7-debbea067261.png)
   
 ## <a name="phase-3-configure-app1"></a>Phase 3: Konfigurieren von APP1
 
@@ -289,7 +291,7 @@ New-SmbShare -name files -path c:\files -changeaccess CORP\User1
 
 Dies ist Ihre aktuelle Konfiguration.
   
-![Phase 3 der Basiskonfiguration in Azure mit dem virtuellen Computer APP1](images/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
+![Phase 3 der Basiskonfiguration in Azure mit dem virtuellen Computer APP1](media/92cfabb0-7f9d-4291-964d-ac32d52748d7.png)
   
 ## <a name="phase-4-configure-client1"></a>Phase 4: Konfigurieren von CLIENT1
 
@@ -354,7 +356,7 @@ Stellen Sie nach dem Neustart von CLIENT1 eine Verbindung über den Kontonamen u
     
 Dies ist Ihre endgültige Konfiguration.
   
-![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Phase 4 der Basiskonfiguration in Azure mit dem virtuellen Computer CLIENT1](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
   
 Die Basiskonfiguration in Azure kann nun für die Anwendungsentwicklung und zum Testen oder für die Erstellung zusätzlicher Testumgebungen verwendet werden. 
   
