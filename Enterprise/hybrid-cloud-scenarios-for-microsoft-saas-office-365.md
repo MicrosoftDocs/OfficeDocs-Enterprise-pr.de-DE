@@ -1,5 +1,5 @@
 ---
-title: "Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)"
+title: Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,160 +11,164 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: "Zusammenfassung: Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365)."
-ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365).'
+ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915590"
 ---
-# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a><span data-ttu-id="49657-103">Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)</span><span class="sxs-lookup"><span data-stu-id="49657-103">Hybrid cloud scenarios for Microsoft SaaS (Office 365)</span></span>
+# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a><span data-ttu-id="2deaf-103">Hybrid Cloud-Szenarien für Microsoft-SaaS (Office 365)</span><span class="sxs-lookup"><span data-stu-id="2deaf-103">Hybrid cloud scenarios for Microsoft SaaS (Office 365)</span></span>
 
- <span data-ttu-id="49657-104">**Zusammenfassung:** Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365).</span><span class="sxs-lookup"><span data-stu-id="49657-104">**Summary:** Understand the hybrid architecture and scenarios for Microsoft's SaaS-based cloud offerings (Office 365).</span></span>
+ <span data-ttu-id="2deaf-104">**Zusammenfassung:** Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365).</span><span class="sxs-lookup"><span data-stu-id="2deaf-104">**Summary:** Understand the hybrid architecture and scenarios for Microsoft's SaaS-based cloud offerings (Office 365).</span></span>
   
-<span data-ttu-id="49657-105">Kombinieren Sie lokale Bereitstellungen von Exchange, SharePoint oder Skype for Business mit ihren Gegenstücken in Office 365 als Bestandteile einer Cloudmigrations- oder langfristigen Integrationsstrategie.</span><span class="sxs-lookup"><span data-stu-id="49657-105">Combine on-premises deployments of Exchange, SharePoint, or Skype for Business with their counterparts in Office 365 as part of a cloud migration or long-term integration strategy.</span></span>
+<span data-ttu-id="2deaf-105">Kombinieren Sie lokale Bereitstellungen von Exchange, SharePoint oder Skype for Business mit ihren Gegenstücken in Office 365 als Bestandteile einer Cloudmigrations- oder langfristigen Integrationsstrategie.</span><span class="sxs-lookup"><span data-stu-id="2deaf-105">Combine on-premises deployments of Exchange, SharePoint, or Skype for Business with their counterparts in Office 365 as part of a cloud migration or long-term integration strategy.</span></span>
   
-## <a name="microsoft-saas-hybrid-scenario-architecture"></a><span data-ttu-id="49657-106">Architektur für Microsoft SaaS-Hybridszenarien</span><span class="sxs-lookup"><span data-stu-id="49657-106">Microsoft SaaS hybrid scenario architecture</span></span>
+## <a name="microsoft-saas-hybrid-scenario-architecture"></a><span data-ttu-id="2deaf-106">Architektur für Microsoft SaaS-Hybridszenarien</span><span class="sxs-lookup"><span data-stu-id="2deaf-106">Microsoft SaaS hybrid scenario architecture</span></span>
 
-<span data-ttu-id="49657-107">Abbildung 1 zeigt die Architektur der SaaS-basierten Hybridszenarien von Microsoft für Office 365.</span><span class="sxs-lookup"><span data-stu-id="49657-107">Figure 1 shows the architecture of Microsoft SaaS-based hybrid scenarios for Office 365.</span></span>
+<span data-ttu-id="2deaf-107">Abbildung 1 zeigt die Architektur der SaaS-basierten Hybridszenarien von Microsoft für Office 365.</span><span class="sxs-lookup"><span data-stu-id="2deaf-107">Figure 1 shows the architecture of Microsoft SaaS-based hybrid scenarios for Office 365.</span></span>
   
-<span data-ttu-id="49657-108">**Abbildung 1: Microsoft SaaS-basierte hybridszenarien für Office 365**</span><span class="sxs-lookup"><span data-stu-id="49657-108">**Figure 1: Microsoft SaaS-based hybrid scenarios for Office 365**</span></span>
+<span data-ttu-id="2deaf-108">**Abbildung 1: Microsoft SaaS-basierte Hybridszenarien für Office 365**</span><span class="sxs-lookup"><span data-stu-id="2deaf-108">**Figure 1: Microsoft SaaS-based hybrid scenarios for Office 365**</span></span>
 
-![Microsoft SaaS-basierte Hybridszenarien für Office 365](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
+![Microsoft SaaS-basierte Hybridszenarien für Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
-<span data-ttu-id="49657-110">Für jede Schicht der Architektur:</span><span class="sxs-lookup"><span data-stu-id="49657-110">For each layer of the architecture:</span></span>
+<span data-ttu-id="2deaf-110">Für jede Schicht der Architektur:</span><span class="sxs-lookup"><span data-stu-id="2deaf-110">For each layer of the architecture:</span></span>
   
-- <span data-ttu-id="49657-111">Apps und Szenarien</span><span class="sxs-lookup"><span data-stu-id="49657-111">Apps and scenarios</span></span>
+- <span data-ttu-id="2deaf-111">Apps und Szenarien</span><span class="sxs-lookup"><span data-stu-id="2deaf-111">Apps and scenarios</span></span>
     
-    <span data-ttu-id="49657-112">Es gibt eine Vielzahl von SaaS-basierten Hybridszenarien, in denen es sich um Office-Serverprodukte und deren Office 365-Gegenstücke dreht:</span><span class="sxs-lookup"><span data-stu-id="49657-112">There are a variety of SaaS-based hybrid scenarios, aligning around Office Server products and their Office 365 counterparts:</span></span>
+    <span data-ttu-id="2deaf-112">Es gibt eine Vielzahl von SaaS-basierten Hybridszenarien, in denen es sich um Office-Serverprodukte und deren Office 365-Gegenstücke dreht:</span><span class="sxs-lookup"><span data-stu-id="2deaf-112">There are a variety of SaaS-based hybrid scenarios, aligning around Office Server products and their Office 365 counterparts:</span></span>
     
-  - <span data-ttu-id="49657-113">Exchange-Server in Kombination mit Exchange Online (Exchange Server-Hybridbereitstellung)</span><span class="sxs-lookup"><span data-stu-id="49657-113">Exchange Server combined with Exchange Online (Exchange Server hybrid)</span></span>
+  - <span data-ttu-id="2deaf-113">Exchange-Server in Kombination mit Exchange Online (Exchange Server-Hybridbereitstellung)</span><span class="sxs-lookup"><span data-stu-id="2deaf-113">Exchange Server combined with Exchange Online (Exchange Server hybrid)</span></span>
     
-  - <span data-ttu-id="49657-114">Skype for Business Server in Kombination mit Skype for Business Online und den neuen Cloud-PBX- und Cloud Connector Edition-Szenarien</span><span class="sxs-lookup"><span data-stu-id="49657-114">Skype for Business Server combined with Skype for Business Online and the new Cloud PBX and Cloud Connector Edition scenarios</span></span>
+  - <span data-ttu-id="2deaf-114">Skype for Business Server in Kombination mit Skype for Business Online und den neuen Cloud-PBX- und Cloud Connector Edition-Szenarien</span><span class="sxs-lookup"><span data-stu-id="2deaf-114">Skype for Business Server combined with Skype for Business Online and the new Cloud PBX and Cloud Connector Edition scenarios</span></span>
     
-  - <span data-ttu-id="49657-115">SharePoint Server 2016 oder SharePoint Server 2013 in Kombination mit SharePoint Online (mehrere Szenarien)</span><span class="sxs-lookup"><span data-stu-id="49657-115">SharePoint Server 2016 or SharePoint Server 2013 combined with SharePoint Online (multiple scenarios)</span></span>
+  - <span data-ttu-id="2deaf-115">SharePoint Server 2016 oder SharePoint Server 2013 in Kombination mit SharePoint Online (mehrere Szenarien)</span><span class="sxs-lookup"><span data-stu-id="2deaf-115">SharePoint Server 2016 or SharePoint Server 2013 combined with SharePoint Online (multiple scenarios)</span></span>
     
-    <span data-ttu-id="49657-116">Es gibt auch Exchange Online mit lokaler Skype for Business Server-Bereitstellung, ein produktübergreifendes Hybridszenario.</span><span class="sxs-lookup"><span data-stu-id="49657-116">There is also Exchange Online with Skype for Business Server on-premises, a cross-product hybrid scenario.</span></span>
+    <span data-ttu-id="2deaf-116">Es gibt auch Exchange Online mit lokaler Skype for Business Server-Bereitstellung, ein produktübergreifendes Hybridszenario.</span><span class="sxs-lookup"><span data-stu-id="2deaf-116">There is also Exchange Online with Skype for Business Server on-premises, a cross-product hybrid scenario.</span></span>
     
-- <span data-ttu-id="49657-117">Identität</span><span class="sxs-lookup"><span data-stu-id="49657-117">Identity</span></span>
+- <span data-ttu-id="2deaf-117">Identität</span><span class="sxs-lookup"><span data-stu-id="2deaf-117">Identity</span></span>
     
-    <span data-ttu-id="49657-p101">Kann Verzeichnissynchronisierung mit lokaler Windows Server AD-Umgebung enthalten. Alternativ können Sie Azure AD für einen Verbund mit einem Drittanbieter-Identitätsdrittanbieter konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="49657-p101">Can include directory synchronization with your on-premises Windows Server AD. Alternately, you can configure Azure AD to federate with a third-party identity provider.</span></span>
+    <span data-ttu-id="2deaf-p101">Kann Verzeichnissynchronisierung mit lokaler Windows Server AD-Umgebung enthalten. Alternativ können Sie Azure AD für einen Verbund mit einem Drittanbieter-Identitätsdrittanbieter konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="2deaf-p101">Can include directory synchronization with your on-premises Windows Server AD. Alternately, you can configure Azure AD to federate with a third-party identity provider.</span></span>
     
-- <span data-ttu-id="49657-120">Netzwerk</span><span class="sxs-lookup"><span data-stu-id="49657-120">Network</span></span>
+- <span data-ttu-id="2deaf-120">Netzwerk</span><span class="sxs-lookup"><span data-stu-id="2deaf-120">Network</span></span>
     
-    <span data-ttu-id="49657-121">Besteht aus Ihrem vorhandenen Internetzugang oder einer ExpressRoute-Verbindung mit Microsoft-Peering für Office 365 oder Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="49657-121">Consists of either your existing Internet pipe or an ExpressRoute connection with Microsoft peering for Office 365 or Dynamics 365.</span></span>
+    <span data-ttu-id="2deaf-121">Besteht aus Ihrem vorhandenen Internetzugang oder einer ExpressRoute-Verbindung mit Microsoft-Peering für Office 365 oder Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="2deaf-121">Consists of either your existing Internet pipe or an ExpressRoute connection with Microsoft peering for Office 365 or Dynamics 365.</span></span>
     
-- <span data-ttu-id="49657-122">Lokal</span><span class="sxs-lookup"><span data-stu-id="49657-122">On-premises</span></span>
+- <span data-ttu-id="2deaf-122">Lokal</span><span class="sxs-lookup"><span data-stu-id="2deaf-122">On-premises</span></span>
     
-    <span data-ttu-id="49657-p102">Kann aus vorhandenen Servern für Exchange, SharePoint und Skype for Business bestehen, die auf ihre neuesten Versionen aktualisiert sein sollten. Sie können diese dann für Hybridszenarien mit ihren Office 365-Gegenstücken kombinieren.</span><span class="sxs-lookup"><span data-stu-id="49657-p102">Can consist of existing servers for Exchange, SharePoint, and Skype for Business, which should be updated to their latest versions. You can then combine them with their Office 365 counterparts for hybrid scenarios.</span></span>
+    <span data-ttu-id="2deaf-p102">Kann aus vorhandenen Servern für Exchange, SharePoint und Skype for Business bestehen, die auf ihre neuesten Versionen aktualisiert sein sollten. Sie können diese dann für Hybridszenarien mit ihren Office 365-Gegenstücken kombinieren.</span><span class="sxs-lookup"><span data-stu-id="2deaf-p102">Can consist of existing servers for Exchange, SharePoint, and Skype for Business, which should be updated to their latest versions. You can then combine them with their Office 365 counterparts for hybrid scenarios.</span></span>
     
-<span data-ttu-id="49657-125">Richten Sie Ihre eigene [Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md).</span><span class="sxs-lookup"><span data-stu-id="49657-125">Set up your own [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
+<span data-ttu-id="2deaf-125">Richten Sie Ihre [Office 365 dev/test environment](office-365-dev-test-environment.md) ein.</span><span class="sxs-lookup"><span data-stu-id="2deaf-125">Set up your own [Office 365 dev/test environment](office-365-dev-test-environment.md).</span></span>
   
-## <a name="skype-for-business-2015-hybrid"></a><span data-ttu-id="49657-126">Skype for Business 2015 Hybrid</span><span class="sxs-lookup"><span data-stu-id="49657-126">Skype for Business 2015 Hybrid</span></span>
+## <a name="skype-for-business-2015-hybrid"></a><span data-ttu-id="2deaf-126">Skype for Business 2015 Hybrid</span><span class="sxs-lookup"><span data-stu-id="2deaf-126">Skype for Business 2015 Hybrid</span></span>
 
-<span data-ttu-id="49657-p103">Skype für Business 2015 hybride können Sie eine vorhandene lokale Bereitstellung mit Skype für Business Online zu kombinieren. Einige Benutzer werden lokal und einige Benutzer online verwaltet werden, aber die Benutzer freigeben Session Initiation Protocol (SIP) derselben Domäne, z. B. "contoso.com". Diese hybridkonfiguration können Sie lokal Migration zu Office 365 im Laufe der Zeit im Terminplan. Skype für Business 2015 kann auch mit Exchange Online integriert werden.</span><span class="sxs-lookup"><span data-stu-id="49657-p103">Skype for Business 2015 Hybrid allows you to combine an existing on-premises deployment with Skype for Business Online. Some users are homed on-premises and some users are homed online, but the users share the same Session Initiation Protocol (SIP) domain, such as contoso.com. You can use this hybrid configuration to migrate from on-premises to Office 365 over time, on your schedule. Skype for Business 2015 can also be integrated with Exchange Online.</span></span>
+<span data-ttu-id="2deaf-p103">Skype für Business 2015 hybride können Sie eine vorhandene lokale Bereitstellung mit Skype für Business Online zu kombinieren. Einige Benutzer werden lokal und einige Benutzer online verwaltet werden, aber die Benutzer freigeben Session Initiation Protocol (SIP) derselben Domäne, z. B. "contoso.com". Diese hybridkonfiguration können Sie lokal Migration zu Office 365 im Laufe der Zeit im Terminplan. Skype für Business 2015 kann auch mit Exchange Online integriert werden.</span><span class="sxs-lookup"><span data-stu-id="2deaf-p103">Skype for Business 2015 Hybrid allows you to combine an existing on-premises deployment with Skype for Business Online. Some users are homed on-premises and some users are homed online, but the users share the same Session Initiation Protocol (SIP) domain, such as contoso.com. You can use this hybrid configuration to migrate from on-premises to Office 365 over time, on your schedule. Skype for Business 2015 can also be integrated with Exchange Online.</span></span>
   
-<span data-ttu-id="49657-130">**Abbildung 2: Skype Business 2015 hybridkonfiguration**</span><span class="sxs-lookup"><span data-stu-id="49657-130">**Figure 2: The Skype for Business 2015 hybrid configuration**</span></span>
+<span data-ttu-id="2deaf-131">**Abbildung 2: Die Skype for Business 2015-Hybridkonfiguration**</span><span class="sxs-lookup"><span data-stu-id="2deaf-131">**Figure 2: The Skype for Business 2015 hybrid configuration**</span></span>
 
-![Die Skype for Business 2015-Hybridkonfiguration](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB.png)
+![Die Skype for Business 2015-Hybridkonfiguration](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
-<span data-ttu-id="49657-132">Abbildung 2 zeigt die Skype hybridkonfiguration Business 2015, bestehend aus einer lokalen Skype für Business 2015 Front-End-Pool und Edge Server zum Kommunizieren mit Skype für Business Online in Office 365.</span><span class="sxs-lookup"><span data-stu-id="49657-132">Figure 2 shows the Skype for Business 2015 hybrid configuration, consisting of an on-premises Skype for Business 2015 front end pool and edge server communicating with Skype for Business Online in Office 365.</span></span>
+<span data-ttu-id="2deaf-133">Abbildung 2 zeigt die Skype hybridkonfiguration Business 2015, bestehend aus einer lokalen Skype für Business 2015 Front-End-Pool und Edge Server zum Kommunizieren mit Skype für Business Online in Office 365.</span><span class="sxs-lookup"><span data-stu-id="2deaf-133">Figure 2 shows the Skype for Business 2015 hybrid configuration, consisting of an on-premises Skype for Business 2015 front end pool and edge server communicating with Skype for Business Online in Office 365.</span></span>
   
-<span data-ttu-id="49657-133">Weitere Informationen finden Sie unter:</span><span class="sxs-lookup"><span data-stu-id="49657-133">For more information, see:</span></span>
+<span data-ttu-id="2deaf-134">Weitere Informationen finden Sie unter:</span><span class="sxs-lookup"><span data-stu-id="2deaf-134">For more information, see:</span></span>
   
-- [<span data-ttu-id="49657-134">Planen von hybridkonnektivität zwischen Skype für Business Server und Skype für Business Online</span><span class="sxs-lookup"><span data-stu-id="49657-134">Plan hybrid connectivity between Skype for Business Server and Skype for Business Online</span></span>](https://technet.microsoft.com/library/jj205403.aspx)
+- [<span data-ttu-id="2deaf-135">Planen von hybridkonnektivität zwischen Skype für Business Server und Skype für Business Online</span><span class="sxs-lookup"><span data-stu-id="2deaf-135">Plan hybrid connectivity between Skype for Business Server and Skype for Business Online</span></span>](https://technet.microsoft.com/library/jj205403.aspx)
     
-- [<span data-ttu-id="49657-135">Unterstützte hybridkonfigurationen für Skype für Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="49657-135">Supported hybrid configurations for Skype for Business Server 2015</span></span>](https://technet.microsoft.com/library/jj945633.aspx)
+- [<span data-ttu-id="2deaf-136">Unterstützte hybridkonfigurationen für Skype für Business Server 2015</span><span class="sxs-lookup"><span data-stu-id="2deaf-136">Supported hybrid configurations for Skype for Business Server 2015</span></span>](https://technet.microsoft.com/library/jj945633.aspx)
     
-- [<span data-ttu-id="49657-136">Skype für hybride Business</span><span class="sxs-lookup"><span data-stu-id="49657-136">Skype for Business Hybrid</span></span>](http://hybrid.office.com/skype-for-business/)
+- [<span data-ttu-id="2deaf-137">Skype für hybride Business</span><span class="sxs-lookup"><span data-stu-id="2deaf-137">Skype for Business Hybrid</span></span>](http://hybrid.office.com/skype-for-business/)
     
-## <a name="cloud-pbx-with-skype-for-business-server"></a><span data-ttu-id="49657-137">Cloud-PBX mit Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="49657-137">Cloud PBX with Skype for Business Server</span></span>
+## <a name="cloud-pbx-with-skype-for-business-server"></a><span data-ttu-id="2deaf-138">Cloud-PBX mit Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="2deaf-138">Cloud PBX with Skype for Business Server</span></span>
 
-<span data-ttu-id="49657-138">Cloud-PBX mit Skype for Business Server ermöglicht es Ihnen, eine vorhandene lokale Skype for Business Server-Bereitstellung in eine Topologie mit lokaler PSTN-Konnektivität (Public Switched Telephone Network) zu überführen. </span><span class="sxs-lookup"><span data-stu-id="49657-138">Cloud PBX with Skype for Business Server allows you to transition an existing Skype for Business Server on-premises deployment to a topology with on-premises Public Switched Telephone Network (PSTN) connectivity.</span></span> 
+<span data-ttu-id="2deaf-139">Cloud-PBX mit Skype for Business Server ermöglicht es Ihnen, eine vorhandene lokale Skype for Business Server-Bereitstellung in eine Topologie mit lokaler PSTN-Konnektivität (Public Switched Telephone Network) zu überführen. </span><span class="sxs-lookup"><span data-stu-id="2deaf-139">Cloud PBX with Skype for Business Server allows you to transition an existing Skype for Business Server on-premises deployment to a topology with on-premises Public Switched Telephone Network (PSTN) connectivity.</span></span> 
   
-<span data-ttu-id="49657-139">**Abbildung 3: Cloud Nebenstellenanlage mit Skype für Business Server**</span><span class="sxs-lookup"><span data-stu-id="49657-139">**Figure 3: Cloud PBX with Skype for Business Server**</span></span>
+<span data-ttu-id="2deaf-140">**Abbildung 3: Cloud-PBX mit Skype for Business Server**</span><span class="sxs-lookup"><span data-stu-id="2deaf-140">**Figure 3: Cloud PBX with Skype for Business Server**</span></span>
 
-![Cloud-PBX mit Skype for Business Server](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB_CloudPBX.png)
+![Cloud-PBX mit Skype for Business Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
-<span data-ttu-id="49657-141">Abbildung 3 zeigt die Cloud-Nebenstellenanlage mit Skype für Business Server-Konfiguration, bestehend aus einem lokalen, vorhandene PBX oder Telekommunikation Gateway, einen Skype für Business Server und dem PSTN der Microsoft-Cloud-Nebenstellenanlage in Office 365, einschließlich Skype für Unternehmen verbunden Online.</span><span class="sxs-lookup"><span data-stu-id="49657-141">Figure 3 shows the Cloud PBX with Skype for Business Server configuration, consisting of an on-premises existing PBX or Telco gateway, a Skype for Business Server, and the PSTN connected to the Microsoft Cloud PBX in Office 365, which includes Skype for Business Online.</span></span>
+<span data-ttu-id="2deaf-142">Abbildung 3 zeigt die Cloud-Nebenstellenanlage mit Skype für Business Server-Konfiguration, bestehend aus einem lokalen, vorhandene PBX oder Telekommunikation Gateway, einen Skype für Business Server und dem PSTN der Microsoft-Cloud-Nebenstellenanlage in Office 365, einschließlich Skype für Unternehmen verbunden Online.</span><span class="sxs-lookup"><span data-stu-id="2deaf-142">Figure 3 shows the Cloud PBX with Skype for Business Server configuration, consisting of an on-premises existing PBX or Telco gateway, a Skype for Business Server, and the PSTN connected to the Microsoft Cloud PBX in Office 365, which includes Skype for Business Online.</span></span>
   
-<span data-ttu-id="49657-142">Benutzer im Unternehmen, die in der Cloud gehostet werden, können private PBX-Dienste (Private Branch Exchange, Nebenstellenanlage) aus der Microsoft-Cloud empfangen, wozu Signalisierung und Voicemail gehören, aber Festnetzanbindung (Freizeichen) wird über Enterprise-VoIP aus Ihrer lokalen Skype for Business Server-Bereitstellung bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="49657-142">Users in the organization who are homed in the cloud can receive private branch exchange (PBX) services from the Microsoft cloud that include signaling and voicemail, but PSTN connectivity (dial tone) is provided through Enterprise Voice from your on-premises Skype for Business Server deployment.</span></span>
+<span data-ttu-id="2deaf-143">Benutzer im Unternehmen, die in der Cloud gehostet werden, können private PBX-Dienste (Private Branch Exchange, Nebenstellenanlage) aus der Microsoft-Cloud empfangen, wozu Signalisierung und Voicemail gehören, aber Festnetzanbindung (Freizeichen) wird über Enterprise-VoIP aus Ihrer lokalen Skype for Business Server-Bereitstellung bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="2deaf-143">Users in the organization who are homed in the cloud can receive private branch exchange (PBX) services from the Microsoft cloud that include signaling and voicemail, but PSTN connectivity (dial tone) is provided through Enterprise Voice from your on-premises Skype for Business Server deployment.</span></span>
   
-<span data-ttu-id="49657-p104">Dies ist ein gutes Beispiel für eine Hybridkonfiguration, die Ihnen eine schrittweise Migration zu einem cloudbasierten Dienst ermöglicht. Sie können die Sprachfunktionen der Benutzer beibehalten, wenn Sie diese zu Skype for Business Online verschieben. Sie können Ihre Benutzer in Ihrem eigenen Tempo verschieben. Die Sprachfunktionen werden unabhängig davon, wo die Benutzer gehostet sind, beibhelaten. </span><span class="sxs-lookup"><span data-stu-id="49657-p104">This is a great example of a hybrid configuration that allows you to gradually migrate to a cloud-based service. You can retain your users' voice capabilities as you begin to move them to Skype for Business Online. You can move your users at your own pace, knowing that their voice features will continue no matter where they are homed.</span></span> 
+<span data-ttu-id="2deaf-p104">Dies ist ein gutes Beispiel für eine Hybridkonfiguration, die Ihnen eine schrittweise Migration zu einem cloudbasierten Dienst ermöglicht. Sie können die Sprachfunktionen der Benutzer beibehalten, wenn Sie diese zu Skype for Business Online verschieben. Sie können Ihre Benutzer in Ihrem eigenen Tempo verschieben. Die Sprachfunktionen werden unabhängig davon, wo die Benutzer gehostet sind, beibhelaten. </span><span class="sxs-lookup"><span data-stu-id="2deaf-p104">This is a great example of a hybrid configuration that allows you to gradually migrate to a cloud-based service. You can retain your users' voice capabilities as you begin to move them to Skype for Business Online. You can move your users at your own pace, knowing that their voice features will continue no matter where they are homed.</span></span> 
   
-<span data-ttu-id="49657-146">Weitere Informationen finden Sie unter [Planen der hybridkonnektivität zwischen Skype für Business Server und Skype für Business Online oder Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).</span><span class="sxs-lookup"><span data-stu-id="49657-146">For more information, see [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online or Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).</span></span>
+<span data-ttu-id="2deaf-147">Weitere Informationen finden Sie unter [Planen der hybridkonnektivität zwischen Skype für Business Server und Skype für Business Online oder Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).</span><span class="sxs-lookup"><span data-stu-id="2deaf-147">For more information, see [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online or Lync Server 2013](https://technet.microsoft.com/library/jj205403.aspx).</span></span>
   
-<span data-ttu-id="49657-147">Wenn Sie noch keine Lync Server- oder Skype for Business Server-Bereitstellung haben, können Sie Skype for Business Cloud Connector Edition verwenden. Dies ist eine Gruppe von konfektionierten virtuellen Computern, in denen lokale Festnetzanbindung (PSTN-Konnektivität) mit Cloud-PBX implementiert ist.</span><span class="sxs-lookup"><span data-stu-id="49657-147">If you do not already have an existing Lync Server or Skype for Business Server deployment, you can use Skype for Business Cloud Connector Edition, a set of packaged virtual machines (VMs) that implement on-premises PSTN connectivity with Cloud PBX.</span></span>
+<span data-ttu-id="2deaf-148">Wenn Sie noch keine Lync Server- oder Skype for Business Server-Bereitstellung haben, können Sie Skype for Business Cloud Connector Edition verwenden. Dies ist eine Gruppe von konfektionierten virtuellen Computern, in denen lokale Festnetzanbindung (PSTN-Konnektivität) mit Cloud-PBX implementiert ist.</span><span class="sxs-lookup"><span data-stu-id="2deaf-148">If you do not already have an existing Lync Server or Skype for Business Server deployment, you can use Skype for Business Cloud Connector Edition, a set of packaged virtual machines (VMs) that implement on-premises PSTN connectivity with Cloud PBX.</span></span>
   
-<span data-ttu-id="49657-148">Weitere Informationen finden Sie unter [Planen von Skype für Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).</span><span class="sxs-lookup"><span data-stu-id="49657-148">For more information, see [Plan for Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).</span></span>
+<span data-ttu-id="2deaf-149">Weitere Informationen finden Sie unter [Planen von Skype für Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).</span><span class="sxs-lookup"><span data-stu-id="2deaf-149">For more information, see [Plan for Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605227.aspx).</span></span>
   
-## <a name="sharepoint-hybrid"></a><span data-ttu-id="49657-149">SharePoint-Hybridlösung</span><span class="sxs-lookup"><span data-stu-id="49657-149">SharePoint Hybrid</span></span>
+## <a name="sharepoint-hybrid"></a><span data-ttu-id="2deaf-150">SharePoint-Hybridlösung</span><span class="sxs-lookup"><span data-stu-id="2deaf-150">SharePoint Hybrid</span></span>
 
-<span data-ttu-id="49657-150">In einer SharePoint-Hybridlösung wird SharePoint Online in Office 365 mit Ihrer lokalen SharePoint-Farm kombiniert, um das Beste aus beiden zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="49657-150">SharePoint hybrid combines SharePoint Online in Office 365 with your on-premises SharePoint farm for a best of both worlds, connected experience.</span></span>
+<span data-ttu-id="2deaf-151">In einer SharePoint-Hybridlösung wird SharePoint Online in Office 365 mit Ihrer lokalen SharePoint-Farm kombiniert, um das Beste aus beiden zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="2deaf-151">SharePoint hybrid combines SharePoint Online in Office 365 with your on-premises SharePoint farm for a best of both worlds, connected experience.</span></span>
   
-<span data-ttu-id="49657-151">**Abbildung 4: Die SharePoint-hybridkonfiguration**</span><span class="sxs-lookup"><span data-stu-id="49657-151">**Figure 4: The SharePoint hybrid configuration**</span></span>
+<span data-ttu-id="2deaf-152">**Abbildung 4: Die SharePoint-Hybridkonfiguration**</span><span class="sxs-lookup"><span data-stu-id="2deaf-152">**Figure 4: The SharePoint hybrid configuration**</span></span>
 
-![Die SharePoint-Hybridkonfiguration](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SP.png)
+![Die SharePoint-Hybridkonfiguration](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
-<span data-ttu-id="49657-153">Abbildung 4 zeigt die SharePoint-hybridkonfiguration, bestehend aus einer lokalen SharePoint-Farm zum Kommunizieren mit SharePoint Online in Office 365.</span><span class="sxs-lookup"><span data-stu-id="49657-153">Figure 4 shows the SharePoint hybrid configuration, consisting of an on-premises SharePoint farm communicating with SharePoint Online in Office 365.</span></span>
+<span data-ttu-id="2deaf-154">Abbildung 4 zeigt die SharePoint-hybridkonfiguration, bestehend aus einer lokalen SharePoint-Farm zum Kommunizieren mit SharePoint Online in Office 365.</span><span class="sxs-lookup"><span data-stu-id="2deaf-154">Figure 4 shows the SharePoint hybrid configuration, consisting of an on-premises SharePoint farm communicating with SharePoint Online in Office 365.</span></span>
   
-<span data-ttu-id="49657-154">SharePoint-Hybridszenarien:</span><span class="sxs-lookup"><span data-stu-id="49657-154">SharePoint hybrid scenarios:</span></span>
+<span data-ttu-id="2deaf-155">SharePoint-Hybridszenarien:</span><span class="sxs-lookup"><span data-stu-id="2deaf-155">SharePoint hybrid scenarios:</span></span>
   
-- [<span data-ttu-id="49657-155">Hybrid-OneDrive für Unternehmen</span><span class="sxs-lookup"><span data-stu-id="49657-155">Hybrid OneDrive for Business</span></span>](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
+- [<span data-ttu-id="2deaf-156">OneDrive for Business-Hybridbereitstellung</span><span class="sxs-lookup"><span data-stu-id="2deaf-156">Hybrid OneDrive for Business</span></span>](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
     
-- [<span data-ttu-id="49657-156">Hybrid-Teamwebsites</span><span class="sxs-lookup"><span data-stu-id="49657-156">Hybrid team sites</span></span>](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
+- [<span data-ttu-id="2deaf-157">Hybrid-Teamwebsites</span><span class="sxs-lookup"><span data-stu-id="2deaf-157">Hybrid team sites</span></span>](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
-- [<span data-ttu-id="49657-157">Hybride Extranet B2B</span><span class="sxs-lookup"><span data-stu-id="49657-157">Hybrid Extranet B2B</span></span>](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)
+- [<span data-ttu-id="2deaf-158">Hybride Extranet B2B</span><span class="sxs-lookup"><span data-stu-id="2deaf-158">Hybrid Extranet B2B</span></span>](https://support.office.com/article/SharePoint-Business-to-Business-Collaboration-Extranet-for-Partners-with-Office-365-7b087413-165a-4e94-8871-4393e0b9c037)
     
-- [<span data-ttu-id="49657-158">Hybridsuche</span><span class="sxs-lookup"><span data-stu-id="49657-158">Hybrid search</span></span>](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
+- [<span data-ttu-id="2deaf-159">Hybridsuche</span><span class="sxs-lookup"><span data-stu-id="2deaf-159">Hybrid search</span></span>](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
     
-- [<span data-ttu-id="49657-159">Hybrid-Profile</span><span class="sxs-lookup"><span data-stu-id="49657-159">Hybrid profiles</span></span>](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
+- [<span data-ttu-id="2deaf-160">Hybridprofile</span><span class="sxs-lookup"><span data-stu-id="2deaf-160">Hybrid profiles</span></span>](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
     
-- [<span data-ttu-id="49657-160">Hybride Personenauswahl</span><span class="sxs-lookup"><span data-stu-id="49657-160">Hybrid Picker</span></span>](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
+- [<span data-ttu-id="2deaf-161">Hybride Personenauswahl</span><span class="sxs-lookup"><span data-stu-id="2deaf-161">Hybrid Picker</span></span>](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
     
-    <span data-ttu-id="49657-161">Es ist einfach, Hybridszenarien mit den Assistenten zu aktivieren, mit denen die Hybridkonfiguration automatisiert wird und die aus dem SharePoint Online Admin Center in Office 365 verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="49657-161">It is easy to enable hybrid scenarios using the wizards that automate hybrid configuration, available from the SharePoint Online admin center in Office 365.</span></span>
+    <span data-ttu-id="2deaf-162">Es ist einfach, Hybridszenarien mit den Assistenten zu aktivieren, mit denen die Hybridkonfiguration automatisiert wird und die aus dem SharePoint Online Admin Center in Office 365 verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="2deaf-162">It is easy to enable hybrid scenarios using the wizards that automate hybrid configuration, available from the SharePoint Online admin center in Office 365.</span></span>
     
-- [<span data-ttu-id="49657-162">Startprogramm für Extensible Hybrid-app</span><span class="sxs-lookup"><span data-stu-id="49657-162">Extensible hybrid app launcher</span></span>](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [<span data-ttu-id="2deaf-163">Das erweiterbare Hybrid-App-Startfeld</span><span class="sxs-lookup"><span data-stu-id="2deaf-163">Extensible hybrid app launcher</span></span>](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
     
-    <span data-ttu-id="49657-163">Ermöglicht es Benutzern, Office 365-Video- und Delve-Apps und -Oberflächen auf den Seiten ihrer lokalen SharePoint-Farm anzuzeigen und zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="49657-163">Allows users to view and use Office 365 video and Delve apps and experiences within the pages of their on-premises SharePoint farm.</span></span>
+    <span data-ttu-id="2deaf-164">Ermöglicht es Benutzern, Office 365-Video- und Delve-Apps und -Oberflächen auf den Seiten ihrer lokalen SharePoint-Farm anzuzeigen und zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="2deaf-164">Allows users to view and use Office 365 video and Delve apps and experiences within the pages of their on-premises SharePoint farm.</span></span>
     
-<span data-ttu-id="49657-164">Diese SharePoint-Hybridszenarien sind mit Ausnahme von „Das erweiterbare Hybrid-Startprogramm für Apps“ alle sowohl für SharePoint 2016- als auch für SharePoint 2013-Benutzer verfügbar.</span><span class="sxs-lookup"><span data-stu-id="49657-164">All of these SharePoint hybrid scenarios, except the Extensible hybrid app launcher, are available for both SharePoint 2016 and SharePoint 2013 users.</span></span>
+<span data-ttu-id="2deaf-165">Diese SharePoint-Hybridszenarien sind mit Ausnahme von „Das erweiterbare Hybrid-Startprogramm für Apps“ alle sowohl für SharePoint 2016- als auch für SharePoint 2013-Benutzer verfügbar.</span><span class="sxs-lookup"><span data-stu-id="2deaf-165">All of these SharePoint hybrid scenarios, except the Extensible hybrid app launcher, are available for both SharePoint 2016 and SharePoint 2013 users.</span></span>
   
-<span data-ttu-id="49657-165">Weitere Informationen finden Sie unter [SharePoint-Hybridlösung](http://hybrid.office.com/sharepoint/).</span><span class="sxs-lookup"><span data-stu-id="49657-165">For more information, see [SharePoint Hybrid](http://hybrid.office.com/sharepoint/).</span></span>
+<span data-ttu-id="2deaf-166">Weitere Informationen finden Sie unter [SharePoint-Hybridlösung](http://hybrid.office.com/sharepoint/).</span><span class="sxs-lookup"><span data-stu-id="2deaf-166">For more information, see [SharePoint Hybrid](http://hybrid.office.com/sharepoint/).</span></span>
   
-## <a name="exchange-server-2016-hybrid"></a><span data-ttu-id="49657-166">Exchange Server 2016 Hybrid</span><span class="sxs-lookup"><span data-stu-id="49657-166">Exchange Server 2016 Hybrid</span></span>
+## <a name="exchange-server-2016-hybrid"></a><span data-ttu-id="2deaf-167">Exchange Server 2016 Hybrid</span><span class="sxs-lookup"><span data-stu-id="2deaf-167">Exchange Server 2016 Hybrid</span></span>
 
-<span data-ttu-id="49657-167">Mit Exchange Server 2016 Hybrid können Sie von den Vorteilen von Exchange Online in Office 365 für Onlinebenutzer profitieren, während lokale Benutzer weiterhin die vorhandene Exchange Server-Infrastruktur nutzen. </span><span class="sxs-lookup"><span data-stu-id="49657-167">With Exchange Server 2016 Hybrid, you can realize the benefits of Exchange Online in Office 365 for online users while on-premises users continue to use existing Exchange Server infrastructure.</span></span> 
+<span data-ttu-id="2deaf-168">Mit Exchange Server 2016 Hybrid können Sie von den Vorteilen von Exchange Online in Office 365 für Onlinebenutzer profitieren, während lokale Benutzer weiterhin die vorhandene Exchange Server-Infrastruktur nutzen. </span><span class="sxs-lookup"><span data-stu-id="2deaf-168">With Exchange Server 2016 Hybrid, you can realize the benefits of Exchange Online in Office 365 for online users while on-premises users continue to use existing Exchange Server infrastructure.</span></span> 
   
-<span data-ttu-id="49657-168">**Abbildung 5: Die hybridkonfiguration Exchange 2016**</span><span class="sxs-lookup"><span data-stu-id="49657-168">**Figure 5: The Exchange 2016 hybrid configuration**</span></span>
+<span data-ttu-id="2deaf-169">**Abbildung 5: Die Exchange 2016-Hybridkonfiguration**</span><span class="sxs-lookup"><span data-stu-id="2deaf-169">**Figure 5: The Exchange 2016 hybrid configuration**</span></span>
 
-![Die Exchange 2016-Hybridkonfiguration](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_EX.png)
+![Die Exchange 2016-Hybridkonfiguration](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
-<span data-ttu-id="49657-170">Abbildung 5 zeigt die Exchange-2016 hybridkonfiguration bestehend aus lokalen Exchange-Postfachserver mit Exchange Online Protection und Postfächer in Office 365 kommunizieren.</span><span class="sxs-lookup"><span data-stu-id="49657-170">Figure 5 shows the Exchange 2016 hybrid configuration, consisting of on-premises Exchange mailbox servers communicating with Exchange Online Protection and mailboxes in Office 365.</span></span>
+<span data-ttu-id="2deaf-171">Abbildung 5 zeigt die Exchange-2016 hybridkonfiguration bestehend aus lokalen Exchange-Postfachserver mit Exchange Online Protection und Postfächer in Office 365 kommunizieren.</span><span class="sxs-lookup"><span data-stu-id="2deaf-171">Figure 5 shows the Exchange 2016 hybrid configuration, consisting of on-premises Exchange mailbox servers communicating with Exchange Online Protection and mailboxes in Office 365.</span></span>
   
-<span data-ttu-id="49657-171">Einige Benutzer haben einen lokalen E-Mail-Server, und einige Benutzer verwenden Exchange Online, aber für alle Benutzer wird derselbe E-Mail-Adressraum genutzt. </span><span class="sxs-lookup"><span data-stu-id="49657-171">Some users have an on-premises email server and some users use Exchange Online, but all users share the same e-mail address space.</span></span> 
+<span data-ttu-id="2deaf-172">Einige Benutzer haben einen lokalen E-Mail-Server, und einige Benutzer verwenden Exchange Online, aber für alle Benutzer wird derselbe E-Mail-Adressraum genutzt. </span><span class="sxs-lookup"><span data-stu-id="2deaf-172">Some users have an on-premises email server and some users use Exchange Online, but all users share the same e-mail address space.</span></span> 
   
-<span data-ttu-id="49657-172">Diese Hybridkonfiguration ermöglicht Folgendes:</span><span class="sxs-lookup"><span data-stu-id="49657-172">This hybrid configuration:</span></span>
+<span data-ttu-id="2deaf-173">Diese Hybridkonfiguration ermöglicht Folgendes:</span><span class="sxs-lookup"><span data-stu-id="2deaf-173">This hybrid configuration:</span></span>
   
-- <span data-ttu-id="49657-173">Nutzt Ihre vorhandene Exchange Server-Infrastruktur, während Sie zu Exchange Online über einen Zeitraum, nach Ihrem Zeitplan Migration.</span><span class="sxs-lookup"><span data-stu-id="49657-173">Leverages your existing Exchange Server infrastructure while you migrate to Exchange Online over time, on your schedule.</span></span>
-    
-- <span data-ttu-id="49657-174">Sie können Remotestandorte unterstützen, ohne in eine Zweigstelleninfrastruktur zu investieren.</span><span class="sxs-lookup"><span data-stu-id="49657-174">Allows you to support remote sites without investing in branch office infrastructure.</span></span>
-    
-- <span data-ttu-id="49657-175">Sie können aus dem Internet eingehende E-Mails über Exchange Online Protection in Office 365 weiterleiten.</span><span class="sxs-lookup"><span data-stu-id="49657-175">Allows you to route incoming Internet email through Exchange Online Protection in Office 365.</span></span>
-    
-- <span data-ttu-id="49657-176">Es können die Anforderungen von multinationalen Unternehmen erfüllt werden, die Filialen haben, für die lokales Speichern von Daten erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="49657-176">Serves the needs of multinational organizations with subsidiaries that require data to reside on-premises.</span></span>
-    
-<span data-ttu-id="49657-177">Sie können diese Hybridkonfiguration auch mit anderen Microsoft Office 365-Anwendungen kombinieren, einschließlich Skype for Business Online und SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="49657-177">You can also integrate this hybrid configuration with other Microsoft Office 365 applications, including Skype for Business Online and SharePoint Online.</span></span>
-  
-<span data-ttu-id="49657-178">Weitere Informationen finden Sie unter [Hybridbereitstellungen in Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) und [Exchange Hybrid](http://hybrid.office.com/exchange/).</span><span class="sxs-lookup"><span data-stu-id="49657-178">For more information, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) and [Exchange Hybrid](http://hybrid.office.com/exchange/).</span></span>
-  
-## <a name="see-also"></a><span data-ttu-id="49657-179">Weitere Artikel</span><span class="sxs-lookup"><span data-stu-id="49657-179">See Also</span></span>
+- <span data-ttu-id="2deaf-174">Sie können Ihre vorhandene Exchange Server-Infrastruktur nutzen, während Sie nach und nach gemäß Ihrem Zeitplan zu Exchange Online migrieren.
 
-[<span data-ttu-id="49657-180">Microsoft Hybrid Cloud für Enterprise-Architekten</span><span class="sxs-lookup"><span data-stu-id="49657-180">Microsoft Hybrid Cloud for Enterprise Architects</span></span>](microsoft-hybrid-cloud-for-enterprise-architects.md)
-  
-[<span data-ttu-id="49657-181">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="49657-181">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
 
-[<span data-ttu-id="49657-182">Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger</span><span class="sxs-lookup"><span data-stu-id="49657-182">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
+</span><span class="sxs-lookup"><span data-stu-id="2deaf-174">Leverages your existing Exchange Server infrastructure while you migrate to Exchange Online over time, on your schedule.</span></span>
+    
+- <span data-ttu-id="2deaf-175">Sie können Remotestandorte unterstützen, ohne in eine Zweigstelleninfrastruktur zu investieren.</span><span class="sxs-lookup"><span data-stu-id="2deaf-175">Allows you to support remote sites without investing in branch office infrastructure.</span></span>
+    
+- <span data-ttu-id="2deaf-176">Sie können aus dem Internet eingehende E-Mails über Exchange Online Protection in Office 365 weiterleiten.</span><span class="sxs-lookup"><span data-stu-id="2deaf-176">Allows you to route incoming Internet email through Exchange Online Protection in Office 365.</span></span>
+    
+- <span data-ttu-id="2deaf-177">Es können die Anforderungen von multinationalen Unternehmen erfüllt werden, die Filialen haben, für die lokales Speichern von Daten erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="2deaf-177">Serves the needs of multinational organizations with subsidiaries that require data to reside on-premises.</span></span>
+    
+<span data-ttu-id="2deaf-178">Sie können diese Hybridkonfiguration auch mit anderen Microsoft Office 365-Anwendungen kombinieren, einschließlich Skype for Business Online und SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="2deaf-178">You can also integrate this hybrid configuration with other Microsoft Office 365 applications, including Skype for Business Online and SharePoint Online.</span></span>
+  
+<span data-ttu-id="2deaf-179">Weitere Informationen finden Sie unter [Hybridbereitstellungen in Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) und [Exchange Hybrid](http://hybrid.office.com/exchange/).</span><span class="sxs-lookup"><span data-stu-id="2deaf-179">For more information, see [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) and [Exchange Hybrid](http://hybrid.office.com/exchange/).</span></span>
+  
+## <a name="see-also"></a><span data-ttu-id="2deaf-180">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2deaf-180">See Also</span></span>
+
+[<span data-ttu-id="2deaf-181">Microsoft Hybrid Cloud für Enterprise-Architekten</span><span class="sxs-lookup"><span data-stu-id="2deaf-181">Microsoft Hybrid Cloud for Enterprise Architects</span></span>](microsoft-hybrid-cloud-for-enterprise-architects.md)
+  
+[<span data-ttu-id="2deaf-182">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="2deaf-182">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+
+[<span data-ttu-id="2deaf-183">Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger</span><span class="sxs-lookup"><span data-stu-id="2deaf-183">Microsoft's Enterprise Cloud Roadmap: Resources for IT Decision Makers</span></span>](https://sway.com/FJ2xsyWtkJc2taRD)
 
 
 
