@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 93e872098b31326de67fb0557354e9f4fc1de9ed
-ms.sourcegitcommit: a337ac253054f571a8304e18e426f74bcd385857
+ms.openlocfilehash: 797429e508a0a0c2b91d837e5475e840ca26b3d8
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915360"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365
 
@@ -64,7 +65,7 @@ Nachfolgend finden Sie ein Beispiel für die Contoso-Organisation:
   
 **Eine Beispielkonfiguration für die Verbundauthentifizierung mit Hochverfügbarkeit in Azure**
 
-![Eine Beispielkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierung in Azure](images/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Eine Beispielkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierung in Azure](media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Ausführen von Azure AD Connect zum Konfigurieren der Verbundauthentifizierung
 
@@ -134,7 +135,7 @@ Nachfolgend sehen Sie die finale Konfiguration mit Platzhalternamen für die Ser
   
 **Phase 5: Die finale Konfiguration für die Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit in Azure**
 
-![Die Endkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierungsinfrastruktur in Azure](images/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Die Endkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierungsinfrastruktur in Azure](media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Die Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit für Office 365 in Azure ist abgeschlossen
   

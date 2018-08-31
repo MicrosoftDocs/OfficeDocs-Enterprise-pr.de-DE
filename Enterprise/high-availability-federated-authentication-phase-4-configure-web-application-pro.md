@@ -1,5 +1,5 @@
 ---
-title: "Hoher Verfügbarkeit federated Authentifizierung Phase 4 Konfigurieren Web-Anwendungsproxys"
+title: Hoher Verfügbarkeit federated Authentifizierung Phase 4 Konfigurieren Web-Anwendungsproxys
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
-description: "Zusammenfassung: Konfigurieren der Web Application Proxy-Server für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Microsoft Azure."
-ms.openlocfilehash: 3465281c6ba27c52cc7a991e400fb4f4a892b244
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Konfigurieren der Web Application Proxy-Server für die hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Microsoft Azure.'
+ms.openlocfilehash: 0f0299fe8fecdea608330eebc12aea01098f8cec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915810"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 4: Konfigurieren von Webanwendungsproxys
 
@@ -31,7 +32,7 @@ Müssen Sie vor dem Verschieben auf in dieser Phase [hoher Verfügbarkeit federa
 Sie müssen einen Lastenausgleich mit Internetzugriff erstellen, damit Azure den eingehenden Clientauthentifizierungsverkehr aus dem Internet gleichmäßig unter den beiden Webanwendungsproxy-Servern verteilt.
   
 > [!NOTE]
-> Verwenden Sie den folgenden Befehl wird die neueste Version von Azure PowerShell. Finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Sobald Sie die Werte für Speicherort und Ressourcengruppe korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.
   
@@ -65,7 +66,7 @@ Nachdem Sie den FQDN des Verbunddiensts ermittelt haben, erstellen Sie einen öf
   
 |**Name**|**Typ**|**TTL**|**Wert**|
 |:-----|:-----|:-----|:-----|
-|FQDN des Verbunddiensts  <br/> |A  <br/> |3600  <br/> |öffentliche IP-Adresse des Lastenausgleichssystems Azure Internetzugriff (mit dem Befehl **Write-Host** im vorherigen Abschnitt angezeigt) <br/> |
+|FQDN des Verbunddiensts  <br/> |A  <br/> |3600  <br/> |Öffentliche IP-Adresse des Azure-Lastenausgleich mit Internetzugriff (angezeigt durch den **Write-Host**-Befehl im vorherigen Abschnitt) <br/> |
    
 Hier ein Beispiel:
   
@@ -149,19 +150,19 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> Da diese virtuellen Maschinen für eine Intranetanwendung sind, sind keine öffentliche IP-Adresse oder eine Bezeichnung für DNS-Domäne zugewiesen und im Internet verfügbar gemacht. Dies bedeutet jedoch auch, dass Sie über das Portal Azure eine Verbindung ist nicht möglich. Die Option **Verbinden** ist nicht verfügbar, wenn Sie die Eigenschaften des virtuellen Computers anzeigen. Verwenden Sie die Remotedesktopverbindung Zubehör oder ein anderes Remotedesktop-Tool für die Verbindung mit ihrem privaten IP-Adresse oder Intranet DNS-Namen und die Anmeldeinformationen des lokalen Administratorkontos am virtuellen Computer.
+> Da diese virtuellen Computer für eine Intranetanwendung gedacht sind, wird ihnen weder eine öffentliche IP-Adresse noch eine DNS-Domänennamenbezeichnung zugewiesen. Sie sind also nicht über das Internet erreichbar. Das bedeutet allerdings, dass Sie auch nicht über das Azure-Portal auf sie zugreifen können. Wenn Sie die Eigenschaften eines der virtuellen Computer aufrufen, ist die Option **Verbinden** nicht verfügbar. Verwenden Sie eine Remotedesktopverbindung oder ein anderes Remotedesktoptool, um eine Verbindung über die private IP-Adresse des betreffenden virtuellen Computers oder seinen Intranet-DNS-Namen und die Anmeldedaten des lokalen Administratorkontos herzustellen.
   
 Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration wie folgt aus. Für die Computernamen werden hier Platzhalter verwendet.
   
-**Phase 4: Internet verbundenen laden zum Lastenausgleich und Web Application Proxy-Server für eine hohe Verfügbarkeit Verbundauthentifizierung-Infrastruktur in Azure**
+**Phase 4: Der Lastenausgleich mit Internetzugriff und die Webanwendungsproxy-Server für Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit in Azure**
 
-![Phase 4 der hochverfügbaren Office 365-Verbundauthentifizierungsinfrastruktur in Azure mit Proxyservern der Webanwendung](images/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Phase 4 der hochverfügbaren Office 365-Verbundauthentifizierungsinfrastruktur in Azure mit Proxyservern der Webanwendung](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
-Verwendung [hoher Verfügbarkeit federated Authentifizierung Phase 5: Konfigurieren von Verbundauthentifizierung für Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) um den Vorgang fortzusetzen, konfigurieren diese Arbeitslast.
+Gehen Sie weiter zu [High availability federated authentication Phase 5: Configure federated authentication for Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md), um mit der Konfiguration dieser Arbeitslast fortzufahren.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
@@ -169,6 +170,6 @@ Verwendung [hoher Verfügbarkeit federated Authentifizierung Phase 5: Konfigurie
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
 
-[Verbundidentität für Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
+[Optionen für Verbundauthentifizierung](about-office-365-identity.md#federated-authentication-options)
 
 

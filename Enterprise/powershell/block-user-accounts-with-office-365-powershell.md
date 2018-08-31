@@ -13,12 +13,13 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: "Erläutert, wie mithilfe von Office 365 PowerShell blockieren und zulassen einzelner Zugriff auf Office 365-Konten."
-ms.openlocfilehash: 34d144c982210ddc9d557b6094f71706f8edbb7f
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: Erläutert, wie mithilfe von Office 365 PowerShell blockieren und zulassen einzelner Zugriff auf Office 365-Konten.
+ms.openlocfilehash: 748d24f95f9dca651158dae2fe15e9c655eb021e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915410"
 ---
 # <a name="block-user-accounts-with-office-365-powershell"></a>Blockieren von Benutzerkonten mit Office 365 PowerShell
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/14/2018
   
 Zugriff auf Office 365-Konto blockiert verhindert, dass jeder Benutzer mit dem Konto anzumelden und Zugriff auf die Dienste und Daten in Office 365-Organisation. Wenn Sie Zugriff auf das Konto blockieren, erhält der Benutzer die folgende Fehlermeldung angezeigt, wenn sie versuchen, melden Sie sich:
   
-![Gesperrtes Office 365-Konto.](images/o365_powershell_account_blocked.png)
+![Gesperrtes Office 365-Konto.](media/o365-powershell-account-blocked.png)
   
 Office 365 PowerShell können Sie um Zugriff auf einzelne und mehrere Benutzerkonten zu blockieren.
   
@@ -161,7 +162,6 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 ```
 
 ## <a name="see-also"></a>Siehe auch
-<a name="SeeAlso"> </a>
 
 In den folgenden zusätzlichen Themen finden Sie weitere Informationen zum Verwalten von Benutzern mit Office 365 PowerShell:
   

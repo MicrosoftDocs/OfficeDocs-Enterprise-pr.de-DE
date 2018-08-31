@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Azure-Architekturen für SharePoint 2013"
+title: Microsoft Azure-Architekturen für SharePoint 2013
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -11,12 +11,13 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: "Zusammenfassung: SharePoint 2013-Lösungen können auf virtuellen Microsoft Azure-Computern gehostet werden. Erfahren Sie, welche Art von Lösungen hierfür geeignet sind und wie Microsoft Azure zum Hosten einer Lösung konfiguriert wird."
-ms.openlocfilehash: 5156f3e8cabb3acabc7ad23a680a016c200c676e
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: SharePoint 2013-Lösungen können auf virtuellen Microsoft Azure-Computern gehostet werden. Erfahren Sie, welche Art von Lösungen hierfür geeignet sind und wie Microsoft Azure zum Hosten einer Lösung konfiguriert wird.'
+ms.openlocfilehash: f7d34f5f9640a8f404265433806ccc39a35c8fd5
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915380"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Microsoft Azure-Architekturen für SharePoint 2013
 
@@ -53,7 +54,7 @@ Berücksichtigen Sie für Intranet- und Zusammenarbeitslösungen und Arbeitslast
 
 Auch wenn in diesem Artikels Beispieltopologien für SharePoint verwendet werden, können Sie diese Entwurfskonzepte auf alle anderen SharePoint-Farmtopologien übertragen. Befolgen Sie vor dem Entwurf der Azure-Umgebung die folgenden Anleitungen zu Topologie, Architektur, Kapazität und Leistung, um die SharePoint-Farm zu entwerfen.
   
-- [Technische Diagramme für SharePoint 2013](http://technet.microsoft.com/de-DE/sharepoint/fp123594.aspx)
+- [Technische Diagramme für SharePoint 2013](http://technet.microsoft.com/en-us/sharepoint/fp123594.aspx)
     
 - [Plan for performance and capacity management in SharePoint Server 2013](http://technet.microsoft.com/library/8dd52916-f77d-4444-b593-1f7d6f330e5f.aspx)
     
@@ -76,7 +77,7 @@ Wenn Sie Ihr lokales Netzwerk auf Azure über eine standortübergreifende Verbin
   
 **Abbildung 1: Lokale Umgebung mit einem virtuellen Netzwerk in Azure**
 
-![Design eines virtuellen Microsoft Azure-Netzwerks für eine SharePoint-Lösung. Ein Subnetz für das Azure-Gateway. Ein Subnetz für die virtuellen Computer.](images/OPrrasconWA_AZarch.png)
+![Design eines virtuellen Microsoft Azure-Netzwerks für eine SharePoint-Lösung. Ein Subnetz für das Azure-Gateway. Ein Subnetz für die virtuellen Computer.](media/OPrrasconWA-AZarch.png)
   
 Inhalt dieses Diagramms:
   
@@ -92,7 +93,7 @@ Bei der Planung für eine standortübergreifende Verbindung definieren und erste
   
 **Abbildung 2: Verwenden eines Azure-Gateways und eines lokalen Gatewaygeräts zum Bereitstellen einer Standort-zu-Standort-Verbindung zwischen der lokalen Umgebung und Azure**
 
-![Die lokale Umgebung wird mit einem virtuellen Azure-Netzwerk durch eine standortübergreifende Verbindung verbunden. Dabei kann es sich um eine Standort-zu-Standort-VPN-Verbindung oder um ExpressRoute handeln.](images/AZarch_VPNgtwyconnct.png)
+![Die lokale Umgebung wird mit einem virtuellen Azure-Netzwerk durch eine standortübergreifende Verbindung verbunden. Dabei kann es sich um eine Standort-zu-Standort-VPN-Verbindung oder um ExpressRoute handeln.](media/AZarch-VPNgtwyconnct.png)
   
 Inhalt dieses Diagramms:
   
@@ -110,7 +111,7 @@ Für die Notfallwiederherstellung in Azure stellen Sie Windows Server AD und DNS
   
 **Abbildung 3: Hybride Active Directory-Domänenkonfiguration**
 
-![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk bereitgestellt sind, und das SharePoint-Farm-Subnetz sind replizierte Domänencontroller und DNS-Server](images/AZarch_HyADdomainConfig.png)
+![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk bereitgestellt sind, und das SharePoint-Farm-Subnetz sind replizierte Domänencontroller und DNS-Server](media/AZarch-HyADdomainConfig.png)
   
 Dieses Diagramm basiert auf den vorherigen Diagrammen und enthält zwei weitere virtuelle Computer für ein Windows Server AD- und DNS-Subnetz. Diese virtuellen Computer sind Replikat-Domänencontroller und DNS-Server. Sie dienen als Erweiterung der lokalen Windows Server AD-Umgebung. 
   
@@ -134,7 +135,7 @@ Platzieren Sie diese virtuellen Computer der SharePoint-Farm in Ebenen der entsp
   
 **Abbildung 4: Platzierung der virtuellen SharePoint-Computer**
 
-![Datenbankserver und SharePoint Server-Rollen, die dem virtuellen Azure-Netzwerk innerhalb des SharePoint-Farm-Subnetzes hinzugefügt wurden](images/AZarch_SPVMsinCloudSer.png)
+![Datenbankserver und SharePoint Server-Rollen, die dem virtuellen Azure-Netzwerk innerhalb des SharePoint-Farm-Subnetzes hinzugefügt wurden](media/AZarch-SPVMsinCloudSer.png)
   
 Dieses Diagramm basiert auf den vorherigen Abbildungen und enthält die beiden SharePoint-Farmserverrollen in ihren entsprechenden Ebenen.
   
@@ -150,7 +151,7 @@ Konfigurieren Sie beim Entwerfen der Azure-Architektur einer SharePoint-Farm im 
   
 **Abbildung 5: Verwenden von Azure-Verfügbarkeitssätzen zum Bereitstellen hoher Verfügbarkeit für die SharePoint-Farmebenen**
 
-![Konfiguration von Verfügbarkeitssätzen in der Azure-Infrastruktur für eine SharePoint 2013-Lösung.](images/AZenv_WinAzureAvailSetsHA.png)
+![Konfiguration von Verfügbarkeitssätzen in der Azure-Infrastruktur für eine SharePoint 2013-Lösung.](media/AZenv-WinAzureAvailSetsHA.png)
   
 Dieses Diagramm zeigt die Konfiguration der Verfügbarkeitssätze innerhalb der Azure-Infrastruktur. Jede der folgenden Rollen teilt sich einen eigenen Verfügbarkeitssatz:
   
@@ -170,7 +171,7 @@ Es folgt ein Beispiel einer Standardarchitektur von Internetwebsites, die bestim
   
 **Abbildung 6: Beispiel der Planung der Kapazitäts- und Leistungsziele in einer Farm mit drei Ebenen**
 
-![Standardmäßige SharePoint 2013-Internetwebsites-Architektur mit Komponentenzuordnungen, die bestimmten Kapazitäts- und Leistungszielen entsprechen](images/AZarch_CapPerfexmpArch.png)
+![Standardmäßige SharePoint 2013-Internetwebsites-Architektur mit Komponentenzuordnungen, die bestimmten Kapazitäts- und Leistungszielen entsprechen](media/AZarch-CapPerfexmpArch.png)
   
 Inhalt dieses Diagramms:
   
@@ -186,7 +187,7 @@ Die Ebene der Anwendungsserver wollen wir uns genauer ansehen.
   
 **Abbildung 7: Anwendungsserverebene vor der Optimierung**
 
-![Beispiel für SharePoint 2013-Anwendungsserverebene vor Optimierung für Microsoft Azure-Verfügbarkeitssätze](images/AZarch_AppServtierBefore.png)
+![Beispiel für SharePoint 2013-Anwendungsserverebene vor Optimierung für Microsoft Azure-Verfügbarkeitssätze](media/AZarch-AppServtierBefore.png)
   
 Inhalt dieses Diagramms:
   
@@ -202,7 +203,7 @@ Sie bestimmen die Anzahl der Komponenten anhand der Leistungs- und Kapazitätsvo
   
 **Abbildung 8: Anwendungsserverebene nach der Optimierung**
 
-![Beispiel für SharePoint 2013-Anwendungsserverebene nach Optimierung für Microsoft Azure-Verfügbarkeitssätze](images/AZarch_AppServtierAfter.png)
+![Beispiel für SharePoint 2013-Anwendungsserverebene nach Optimierung für Microsoft Azure-Verfügbarkeitssätze](media/AZarch-AppServtierAfter.png)
   
 Zeigt alle drei Anwendungsserver, die mit den gleichen vier Komponenten identisch konfiguriert sind.
   
@@ -210,7 +211,7 @@ Wenn wir den Ebenen der SharePoint-Farm Verfügbarkeitssätze hinzufügen, ist d
   
 **Abbildung 9: Die fertige SharePoint-Farm in Azure-Infrastrukturdiensten**
 
-![Beispiel für SharePoint 2013-Farm in Azure-Infrastrukturdiensten mit virtuellem Netzwerk, standortübergreifender Konnektivität, Subnetzen, virtuellen Computern und Verfügbarkeitssätzen.](images/7256292f-bf11-485b-8917-41ba206153ee.png)
+![Beispiel für SharePoint 2013-Farm in Azure-Infrastrukturdiensten mit virtuellem Netzwerk, standortübergreifender Konnektivität, Subnetzen, virtuellen Computern und Verfügbarkeitssätzen.](media/7256292f-bf11-485b-8917-41ba206153ee.png)
   
 Dieses Diagramm zeigt die in Azure-Infrastrukturdiensten implementierte SharePoint-Farm mit Verfügbarkeitssätzen zum Bereitstellen von Fehlerdomänen für die Server in den einzelnen Ebenen.
   

@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 1de16e29-ac2e-40b5-bf13-9301a51e16a8
 description: 'Zusammenfassung: Verstehen der Contoso Corporation als ein Unternehmen und die stufenweise seiner weltweit Büros.'
-ms.openlocfilehash: 30a6dd23271fbbd5599053b934e6a1af9dc14d12
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 66171ee872f9b526860ae1436b0e8cb51de119de
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915860"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Übersicht über die Contoso Corporation
 
@@ -31,7 +32,7 @@ Contoso weltweit Unternehmen verfügt über Büros in den folgenden Speicherorte
   
 **Abbildung 1: Contoso Büros auf der ganzen Welt**
 
-![Die weltweiten Büros der Contoso Corporation](images/Contoso_Poster/Contoso_WW_Org.png)
+![Die weltweiten Büros der Contoso Corporation](media/Contoso-Poster/Contoso-WW-Org.png)
 
   
 Abbildung 1 zeigt die Unternehmenszentrale in Paris und Regionalstellen und Zweigstellen auf unterschiedlichen Kontinenten.
@@ -56,7 +57,9 @@ Contoso Büros auf der ganzen Welt führen Sie einen Entwurf für eine dreistufi
 - Zweigstellen
 
     
-    Zweigstellen 80 % Sales enthalten und support-Mitarbeiter und physische und vor-Ort-Anwesenheitsstatus für Contoso-Kunden in wichtigen Städte oder Sub Regionen. Jede Zweigstelle ist mit einem regionalen Hub mit einer WAN-Verbindung hoher Bandbreite verbunden.
+    Eine Zweigstelle hat jeweils 80 % Verkaufs- und Supportmitarbeiter und fungiert als physische Präsenz für Contoso-Kunden in einer wichtigen Stadt oder Unterregion. Jede Zweigstelle ist über eine WAN-Verbindung mit hoher Bandbreite mit einer Regionalstelle verbunden.
+
+
     
     Jede Zweigstelle hat im Durchschnitt 250 Mitarbeiter.
 
@@ -71,13 +74,13 @@ Contoso IT-konstruiert haben die folgenden Elemente identifiziert, bei der Planu
     
     Netzwerke enthält die Verbindung mit Microsoft Cloud-angeboten und genügend Bandbreite für leistungsfähige unter belasungsspitzen abgefangen werden. Einige Connectivity ist über lokale internetverbindungen und andere werden in der Contoso VPN-Infrastruktur.
     
-    Weitere Informationen finden Sie unter Details des Posters [Microsoft Cloud Networking für Enterprise-konstruiert](microsoft-cloud-networking-for-enterprise-architects.md) .
+    Weitere Informationen finden Sie auf dem Poster [Microsoft Cloud Networking for Enterprise Architects](microsoft-cloud-networking-for-enterprise-architects.md).
    
 - Identität
     
     Contoso verwendet eine Windows Server Active Directory-Gesamtstruktur für die interne Identitätsanbieter und auch die Verbindung mit Drittanbietern für Kunden und Partnern. Contoso muss den internen Satz von Konten für die Microsoft Cloud-angeboten nutzen. Zugriff auf die Cloud-basierten apps für Kunden und Partner muss Drittanbieter-Identitätsanbieter sowie nutzen.
     
-    Weitere Informationen finden Sie unter Details des Posters [Microsoft Cloudidentität für Enterprise-konstruiert](microsoft-cloud-it-architecture-resources.md#identity) .
+    Weitere Informationen finden Sie auf dem Poster [Microsoft Cloud Identity for Enterprise Architects](microsoft-cloud-it-architecture-resources.md#identity).
     
 - Sicherheit
     

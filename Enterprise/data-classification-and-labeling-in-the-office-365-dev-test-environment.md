@@ -8,18 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Zusammenfassung: Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.'
-ms.openlocfilehash: f9674f5e2bac804f5bd23b5f67e733580c50450f
-ms.sourcegitcommit: c23b95d32a865e45be7843f38a1f23b5693ba76d
+ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "20188093"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914850"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen
 

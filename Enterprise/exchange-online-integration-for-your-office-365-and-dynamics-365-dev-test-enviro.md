@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung"
+title: Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
-description: "Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren."
-ms.openlocfilehash: 4acfc4c676482131160ca82b5e8e405cca938cac
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren.'
+ms.openlocfilehash: 320a59043ab2a8810f9bfc03fdcf896241ec6b20
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915500"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung
 
@@ -39,13 +42,13 @@ Folgen Sie den Anweisungen in der Testumgebungsanleitung [Office 365- und Dynami
 
 Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die Integration von Dynamics 365 und Exchange Online zu konfigurieren:
   
-1. Verwenden Sie eine private Sitzung in Ihrem Browser, und wechseln Sie zu [http://portal.office.com](http://portal.office.com). Melden Sie sich mit dem globalen Administratorkonto für Office 365 an.
+1. Wechseln Sie mit der Verwendung einer privaten Sitzung Ihres Browsers zu [http://portal.office.com](http://portal.office.com) und melden Sie sich mit Ihrem Office 365 globaler Administrator-Konto.
     
 2. Klicken Sie auf der **Microsoft Office-Homepage** auf die Kachel **E-Mail**.
     
 3. Klicken Sie auf der neuen Registerkarte **E-Mail** in Ihrem Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Fensters unterhalb des Felds zum Eingeben der Nachricht jetzt ein Symbol für „Meine Vorlagen" angezeigt wird.
     
-     ![Leere neue E-Mail-Nachricht ohne Integration mit Dynamics 365](images/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
+     ![Leere neue E-Mail-Nachricht ohne Integration mit Dynamics 365](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
 4. Klicken Sie auf **verwerfen**, und lassen Sie die Registerkarte **E-Mail** geöffnet.
     
@@ -87,13 +90,13 @@ Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren un
     
 6. Klicken Sie auf der neuen Registerkarte **E-Mail** im Browser auf **Neu**. Beachten Sie, dass in der unteren Ecke des Bereichs unterhalb des Felds für die Eingabe einer Nachricht nun ein Symbol für Dynamics 365 angezeigt wird.
     
-     ![Leere neue E-Mail-Nachricht bei Integration mit Dynamics 365 (neues Symbol sichtbar)](images/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
+     ![Leere neue E-Mail-Nachricht bei Integration mit Dynamics 365 (neues Symbol sichtbar)](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   
 7. Klicken Sie auf das Symbol für Dynamics 365. Es sollte ein **Dynamics 365**-Fenster angezeigt werden, in dem Sie diese E-Mail verfolgen oder auf Vorlagen, Vertriebsdokumentation oder Artikel zugreifen können.
     
 8. Geben Sie im Feld **An** der E-Mail-Nachricht **alex.y.wu@outlook.com** ein, und klicken Sie dann auf **Wiederholen** im Fenster **Dynamics 365**. Es sollte der Abschnitt **Empfänger** im Fenster **Dynamics 365** mit Informationen über Alex Wu angezeigt werden, der ein Kontakt in der Vertriebsanwendung ist, die in den Beispieldaten für das Testabonnement enthalten ist.
     
-     ![Dynamics 365-Informationsbereich für einen in Dynamics 365 gespeicherten Vertriebskontakt](images/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
+     ![Dynamics 365-Informationsbereich für einen in Dynamics 365 gespeicherten Vertriebskontakt](media/a010fa5f-3f1b-47d4-ab5e-d00d85a24a3f.png)
   
 9. Klicken Sie auf **Verwerfen**.
 

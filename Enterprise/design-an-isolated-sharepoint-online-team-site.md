@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: "Zusammenfassung: Schritt über den Entwurfsprozess für SharePoint Online Teamwebsites isoliert."
-ms.openlocfilehash: efd55ce780cf2951bfafd31215201459965c0e78
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.'
+ms.openlocfilehash: 4807b7cef0a401901eb5abec3d683ca67b2193db
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914840"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Entwerfen einer isolierten SharePoint Online-Teamwebsite
 
- **Zusammenfassung:** Führen Sie durch den Entwurfsprozess für SharePoint Online Teamwebsites isoliert.
+ **Zusammenfassung:** Lernen Sie die Schritte zum Entwerfen von isolierten SharePoint Online-Teamwebsites kennen.
   
 In diesem Artikel werden die wichtigsten Entwurfsentscheidungen erläutert, die Sie vor der Erstellung einer isolierten SharePoint Online-Teamwebsite treffen müssen.
   
@@ -41,14 +44,14 @@ Der Satz von spezifischen Berechtigungen, der bestimmt, welche Aktionen ein Mitg
 |**SharePoint-Gruppe**|**Berechtigungsstufe**|
 |:-----|:-----|
 |\<Websitename > Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Websitename > Besucher  <br/> |Lesen  <br/> |
+|\<Websitename > Besucher  <br/> |Überwachungsdaten  <br/> |
 |\<Websitename > Besitzer  <br/> |Vollzugriff  <br/> |
    
- **Bewährte Methode:** Sie können zusätzliche SharePoint-Gruppen und Berechtigungsstufen erstellen. Wir empfehlen jedoch mit dem SharePoint-Standardgruppen und Berechtigungsstufen für Ihre isolierten SharePoint Online-Website.
+ **Bewährte Methode:** Sie können weitere SharePoint-Gruppen und Berechtigungsstufen erstellen. Allerdings wird empfohlen, die SharePoint-Standardgruppen und die Berechtigungsstufen für die isolierte SharePoint Online-Website zu verwenden.
   
 Hier sind die SharePoint-Gruppen und Berechtigungsstufen.
   
-![Die standardmäßigen SharePoint-Gruppen und -Berechtigungsstufen für eine SharePoint Online-Website.](images/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Die standardmäßigen SharePoint-Gruppen und -Berechtigungsstufen für eine SharePoint Online-Website.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Phase 2: Zuweisen von Berechtigungen zu Benutzern mit Zugriffsgruppen
 
@@ -62,33 +65,33 @@ Am Beispiel der SharePoint-Standardgruppen bedeutet dies:
     
 - Mitglieder der ** \<Websitename > Besitzer** SharePoint-Gruppe, die Benutzerkonten und Gruppen enthalten können, werden die Berechtigungsstufe **Vollzugriff** zugewiesen
     
- **Bewährte Methode:** Obwohl Sie Berechtigungen über die einzelnen Benutzerkonten verwalten können, es wird empfohlen, dass Sie ein einzelnes verwenden Azure Active Directory-Gruppe, stattdessen als eine Zugriffsgruppe bezeichnet. Dies vereinfacht die Verwaltung von Berechtigungen über die Mitgliedschaft in der Zugriffsgruppe statt Verwalten der Liste der Benutzer von für jede SharePoint-Gruppe Konten.
+ **Bewährte Methode:** Obwohl Sie Berechtigungen über einzelne Benutzerkonten verwalten können, empfehlen wir stattdessen die Verwendung einer einzelnen Azure AD-Gruppe, die als Zugriffsgruppe bezeichnet wird. Dadurch wird die Verwaltung von Berechtigungen über Mitgliedschaft in der Zugriffsgruppe anstelle der Verwaltung der Liste von Benutzerkonten für jede SharePoint-Gruppe erleichtert.
   
-Azure Active Directory-Gruppen für Office 365 unterscheiden sich von Office 365-Gruppen. Azure Active Directory-Gruppen werden in der Office-Verwaltungskonsole mit ihren **Typ** zu **Sicherheit** und keine e-Mail-Adresse. Azure Active Directory-Gruppen verwaltet werden können:
+Azure AD-Gruppen für Office 365 unterscheiden sich von Office 365-Gruppen. Azure AD-Gruppen werden im Office Admin Center mit dem **Typ****Sicherheit** angezeigt und haben keine E-Mail-Adresse. Azure AD-Gruppen können verwaltet werden in:
   
 - Windows Server Active Directory (AD)
     
-    Dies sind Gruppen, die in Ihrer lokalen Windows Azure AD-Infrastruktur erstellt und mit Office 365-Abonnement synchronisiert wurden. In der Office-Verwaltungskonsole haben diese Gruppen **Status** **Synched mit active Directory**.
+    Hierbei handelt es sich um Gruppen, die in Ihrer lokalen Windows Server AD-Infrastruktur erstellt und mit Ihrem Office 365-Abonnement synchronisiert wurden. Im Office Admin Center haben diese Gruppen den **Status****Mit Active Directory synchronisiert**.
     
 - Office 365
     
-    Dies sind Gruppen, die mit der Office-Verwaltungskonsole, der Azure-Portal oder Microsoft PowerShell erstellt wurden. In der Office-Verwaltungskonsole haben diese Gruppen **Status** **Cloud**.
+    Hierbei handelt es sich um Gruppen, die mit dem Office Admin Center, dem Azure-Portal oder Microsoft PowerShell erstellt wurden. Im Office Admin Center haben diese Gruppen den **Status****Cloud**.
     
- **Bewährte Methode:** Wenn Sie mithilfe von Windows Server AD lokal und Synchronisierung mit Office 365-Abonnements, führen Sie die gruppenverwaltung von Benutzern und mit Windows Azure AD.
+ **Bewährte Methode:** Wenn Sie Windows Server AD lokal verwenden und mit Ihrem Office 365-Abonnement synchronisieren, führen Sie die Benutzer- und Gruppenverwaltung mit Windows Server AD durch.
   
 Für isolierte SharePoint Online-Teamwebsites sieht die empfohlene Gruppenstruktur wie folgt aus:
   
 |**SharePoint-Gruppe**|**Azure AD-basierte Zugriffsgruppe**|**Berechtigungsstufe**|
 |:-----|:-----|:-----|
 |\<Websitename > Mitglieder  <br/> |\<Websitename > Mitglieder  <br/> |Bearbeiten  <br/> |
-|\<Websitename > Besucher  <br/> |\<Websitename > Leser von Berichten  <br/> |Lesen  <br/> |
+|\<Websitename > Besucher  <br/> |\<Websitename > Leser von Berichten  <br/> |Überwachungsdaten  <br/> |
 |\<Websitename > Besitzer  <br/> |\<Websitename > Admins  <br/> |Vollzugriff  <br/> |
    
- **Bewährte Methode:** Obwohl Sie Office 365 oder Azure Active Directory-Gruppen als Mitglieder der SharePoint-Gruppen verwenden können, wird empfohlen, Azure AD-Gruppen zu verwenden. Azure AD-Gruppen, verwaltete entweder über Windows Azure AD oder Office 365, bieten Ihnen mehr Flexibilität, geschachtelte Gruppen verwenden, um Berechtigungen zuzuweisen.
+ **Bewährte Methode:** Sie können zwar sowohl Office 365- als auch Azure AD-Gruppen als Mitglieder von SharePoint-Gruppen verwenden, wir empfehlen jedoch die Verwendung von Azure AD-Gruppen. Azure AD-Gruppen, die über Windows Server AD oder Office 365 verwaltet werden, bieten Ihnen größere Flexibilität bei der Verwendung geschachtelter Gruppen zum Zuweisen von Berechtigungen.
   
 Hier sind die standardmäßige SharePoint-Gruppen für die Verwendung von Azure AD-based Access Gruppen konfiguriert.
   
-![Verwenden von Access Gruppen als Mitglieder von Standardgruppen SharePoint Online-Website.](images/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
+![Verwenden von Access Gruppen als Mitglieder von Standardgruppen SharePoint Online-Website.](media/50a76328-ae69-483e-9029-ac4e7357b5ef.png)
   
 Beachten Sie beim Entwerfen der drei Zugriffsgruppen die folgenden Punkte:
   
@@ -98,7 +101,7 @@ Beachten Sie beim Entwerfen der drei Zugriffsgruppen die folgenden Punkte:
     
 Hier ist ein Beispiel für die SharePoint-Gruppen und Access-Gruppen für eine isolierte Website mit dem Namen ProjektX.
   
-![Ein Beispiel für die Verwendung von Zugriffsgruppen für eine SharePoint Online-Website mit dem Namen „ProjectX“.](images/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Ein Beispiel für die Verwendung von Zugriffsgruppen für eine SharePoint Online-Website mit dem Namen „ProjectX“.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Phase 3: Verwenden von geschachtelten Azure AD-Gruppen
 
@@ -121,15 +124,15 @@ So verwenden Sie geschachtelte Azure AD-Gruppen:
   
 Es folgt ein Beispiel für geschachtelte Azure AD-Gruppen für die Mitgliedergruppe Access ProjektX.
   
-![Ein Beispiel für geschachtelte Zugriffsgruppen für die Mitglieder der Zugriffsgruppe auf der ProjektX-Website.](images/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Ein Beispiel für geschachtelte Zugriffsgruppen für die Mitglieder der Zugriffsgruppe auf der ProjektX-Website.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Da alle Benutzerkonten in der Research, Engineering und Project leads Teams Websitemitglieder werden sollen, ist es einfacher, ihren Azure Active Directory-Gruppen zur Gruppe Zugriff ProjektX Mitglieder hinzufügen möchten.
   
 ## <a name="next-step"></a>Nächster Schritt
 
-Wenn Sie zum Erstellen und Konfigurieren einer isolierten-Website in der Produktion bereit sind, finden Sie unter [Bereitstellen einer isolierten SharePoint Online-Teamwebsite](deploy-an-isolated-sharepoint-online-team-site.md).
+Wenn Sie eine isolierte Website in der Produktion erstellen und konfigurieren möchten, finden Sie entsprechende Informationen unter [Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Isolierte SharePoint Online-Teamwebsites](isolated-sharepoint-online-team-sites.md)
   

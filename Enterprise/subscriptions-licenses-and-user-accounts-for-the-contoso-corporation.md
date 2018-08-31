@@ -1,5 +1,5 @@
 ---
-title: "Abonnements, Lizenzen und Benutzerkonten für die Contoso Corporation"
+title: Abonnements, Lizenzen und Benutzerkonten für die Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ec3b08f0-288c-4ba3-b822-dbf6352fa761
 description: 'Zusammenfassung: Verstehen der Struktur der Contoso Cloud-Abonnements, Lizenzen, Benutzerkonten und Mandanten.'
-ms.openlocfilehash: 6e62fbbc0f52019e5d233fc73992b000952344f5
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.openlocfilehash: cd196e0800f6a39973f4c5c82001ed3e9c330fee
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915510"
 ---
 # <a name="subscriptions-licenses-and-user-accounts-for-the-contoso-corporation"></a>Abonnements, Lizenzen und Benutzerkonten für die Contoso Corporation
 
@@ -46,9 +49,9 @@ Um eine durchgängige Verwendung von Identitäten und Abrechnung für alle Cloud
 
 Contoso hat die folgende Struktur für die Organisation und ihre Abonnements, Lizenzen, Konten und Mandanten bestimmt:
   
-**Abbildung 1: Contoso Organisation, Abonnements, Lizenzen, Benutzerkonten und Mandanten**
+**Abbildung 1: Organisation, Abonnements, Lizenzen, Benutzerkonten und Mandanten von Contoso**
 
-![Organisation, Abonnements, Lizenzen, Benutzerkonten und Mandanten von Contoso](images/Contoso_Poster/Subscriptions.png)
+![Organisation, Abonnements, Lizenzen, Benutzerkonten und Mandanten von Contoso](media/Contoso-Poster/Subscriptions.png)
   
 Abbildung 1 zeigt, wie die Contoso-Organisation mehrere Abonnements umfasst und an einen allgemeinen Azure AD-Mandanten gebunden ist, der die aus der Windows Server Active Directory-Gesamtstruktur "contoso.com" synchronisierten Benutzerkonten enthält.
   
@@ -63,6 +66,7 @@ Abbildung 1 zeigt, wie die Contoso-Organisation mehrere Abonnements umfasst und 
   - Das Produkt zur Abstimmung mit 5.000 Lizenzen
     
   - Das Produkt Dynamics 365 mit 100 Lizenzen
+
     
   - Mehrere Azure-Abonnements auf Basis von Regionen
     
@@ -70,7 +74,7 @@ Abbildung 1 zeigt, wie die Contoso-Organisation mehrere Abonnements umfasst und 
     
 Für Contoso-Mandanten:
   
-- Für SaaS Cloud-angeboten wird der Mandanten der regionalen Standort, an die Bereitstellung von Clouddiensten Server befinden. Contoso ausgewählt haben, die Europäische Region zum Hosten der Office 365 und zur Abstimmung Dynamics 365-Mandanten. 
+- Für SaaS-Cloudangebote ist der Mandant der regionale Standort, an dem sich die Server befinden, von denen Clouddienste bereitgestellt werden. Contoso hat entschieden, dass seine Office 365-, EMS- und Dynamics-365-Mandanten in der Region Europa gehostet werden sollen. 
     
 - Azure PaaS-Diensten und apps und IaaS IT Arbeitslasten können Mandanten in Azure-Rechenzentrum auf der ganzen Welt haben. Ein Azure AD-Mandanten ist eine bestimmte Instanz von Azure Active Directory-Konten und Gruppen enthält.
     
@@ -80,11 +84,14 @@ Weitere Informationen finden Sie unter [Abonnements, Lizenzen, Konten, und Manda
   
 ## <a name="contosos-azure-subscriptions"></a>Contoso Azure-Abonnements
 
-Abbildung 2 zeigt den hierarchischen Entwurf Contosos Azure-Abonnements:
-  
-**Abbildung 2: Contoso Struktur für Azure-Abonnements**
+Abbildung 2 zeigt den hierarchischen Entwurf der Azure-Abonnements von Contoso 
 
-![Struktur für Azure-Abonnements von Contoso](images/Contoso_Poster/Subscriptions_Nested.png)
+
+
+  
+**Abbildung 2: Struktur für Azure-Abonnements von Contoso**
+
+![Struktur für Azure-Abonnements von Contoso](media/Contoso-Poster/Subscriptions-Nested.png)
   
 - Contoso nimmt die oberste Position ein, basierend auf seinem Enterprise Agreement mit Microsoft.
     
@@ -95,7 +102,7 @@ Abbildung 2 zeigt den hierarchischen Entwurf Contosos Azure-Abonnements:
 Jedes Azure-Abonnement kann einem einzelnen Azure AD-Mandanten zugeordnet werden, der Benutzerkonten und Gruppen für die Authentifizierung und Autorisierung bei Azure-Diensten enthält.
  Für Produktionsabonnements wird der allgemeine Contoso Azure AD-Mandant verwendet.
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

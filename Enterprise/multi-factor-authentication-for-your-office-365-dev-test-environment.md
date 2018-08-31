@@ -1,28 +1,31 @@
 ---
-title: "Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung"
+title: Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 05/22/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
-description: 'Zusammenfassung: Konfigurieren von an einem Smartphone in einer Office 365-Umgebung Test-/gesendete Textnachrichten mehrstufige Authentifizierung.'
-ms.openlocfilehash: 23c5aa4e205937899cac813b3b39780c989a1073
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+description: 'Zusammenfassung: Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.'
+ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915660"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Konfigurieren Sie die mehrstufige Authentifizierung mithilfe von an einem Smartphone in einer Office 365-Umgebung Test-/gesendete Textnachrichten.
+ **Zusammenfassung:** Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.
   
 Als zusätzliche Sicherheitsmaßnahme für die Anmeldung bei einem Office 365-Abonnement können Sie Azure Multi-Factor Authentication aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort erfordert, um ein Konto zu überprüfen. Mit Multi-Factor Authentication für Office 365 müssen Benutzer auf ihrem Smartphone einen Telefonanruf bestätigen, einen Verifizierungscode eingeben, der ihnen in einer Textnachricht zugesendet wurde, oder ein App-Kennwort auf ihrem Smartphone angeben, nachdem sie ihr Kennwort korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde.  
   
@@ -50,23 +53,23 @@ Wenn Sie in einer simulierten Enterprise mehrstufige Authentifizierung testen m�
 
 Aktivieren Sie Multi-Factor Authentication für das Konto „Benutzer 2“ mit den folgenden Schritten:
   
-1. Öffnen Sie eine separate Instanz des Browsers, wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und dann Test Office 365-Abonnement mit Ihrem globaler Administrator-Konto anmelden.
+1. Öffnen Sie eine separate Instanz des Browsers, fahren Sie mit Office 365-Portal ([https://portal.office.com](https://portal.office.com)), und klicken Sie dann auf Test Office 365-Abonnement mit Ihrem Konto globaler Administrator anmelden.
     
 2. Klicken Sie auf der Hauptportalseite auf **Admin**.
     
 3. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
-4. Klicken Sie im Bereich aktive Benutzer klicken Sie auf **mehr > Setup Azure Multi-Factor Auth**.
+4. Klicken Sie im Bereich „Aktive Benutzer“ auf **Mehr > Azure Multi-Factor Authentication einrichten**.
     
-5. Klicken Sie in der Liste auf das Konto für **Benutzer 2** .
+5. Wählen Sie in der Liste der **Benutzer 2** -Konto aus.
     
-6. Klicken Sie im Abschnitt **Benutzer 2** unter **QuickSteps**, auf **Aktivieren**.
+6. Klicken Sie im Abschnitt **Benutzer 2** unter **QuickSteps** auf **Aktivieren**.
     
-7. Klicken Sie im Dialogfeld **zum Aktivieren der mehrstufigen Authentifizierung** auf **mehrstufige Authentifizierung aktivieren**.
+7. Klicken Sie im Dialogfeld **Informationen zum Aktivieren von mehrstufiger Aktualisierung** auf **Multi-Factor Authentication aktivieren**.
     
 8. Klicken Sie im Dialogfeld **Update erfolgreich** auf **Schließen**.
     
-9. Klicken Sie auf das Symbol des Benutzer-Konto in der oberen rechten Ecke auf der Registerkarte **Microsoft Office Home** , und klicken Sie dann auf **Abmelden**.
+9. Klicken Sie auf der Registerkarte **Microsoft Office-Starts** auf das Benutzerkontosymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
 10. Schließen Sie Ihre Browserinstanz.
     
@@ -74,33 +77,29 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
   
 1. Öffnen Sie eine neue Instanz Ihres Browsers.
     
-2. Wechseln Sie zu der Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich mit dem Konto Benutzer 2 (Benutzer2 @\<Organisationsname >. onmicrosoft.com) und das Kennwort ein.
+2. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich mit dem Konto Benutzer 2 (Benutzer2 @\<Organisationsname >. onmicrosoft.com) und das Kennwort ein.
     
-3. Nach der Anmeldung werden Sie aufgefordert, das Konto für die zusätzlichen sicherheitsüberprüfung einrichten. Klicken Sie auf **jetzt einrichten**.
+3. Nach der Anmeldung werden Sie aufgefordert, eine zusätzliche Sicherheitsüberprüfung für das Konto einzurichten. Klicken Sie auf **Jetzt einrichten**.
     
-4. Auf der Seite **zusätzliche Sicherheit Überprüfung** :
+4. Führen Sie auf der Seite **Zusätzliche Sicherheitsüberprüfung** die folgenden Schritte aus: 
     
   - Wählen Sie Ihr Land oder Ihre Region aus.
     
   - Geben Sie die Telefonnummer des Smartphones ein, das Textnachrichten erhalten soll.
     
-  - Wählen Sie **mich senden einen Code über Textnachricht**.
+  - Klicken Sie in- **Methode**auf **mich senden einen Code über Textnachricht**.
     
-5. Klicken Sie auf **Kontakt**.
+5. Klicken Sie auf **Weiter**.
     
-6. Geben Sie den Überprüfungscode aus der Textnachricht auf Ihrem Smartphone empfangen, und klicken Sie dann auf **Verify**.
+6. Geben Sie den Verifizierungscode aus der Textnachricht ein, die an Ihr Smartphone gesendet wurde, und klicken Sie dann auf **Überprüfen**.
     
-7. Klicken Sie auf die **Schritt 3: vorhandenen dauerhafte** Seite, tragen Sie das angezeigten app-Kennwort für das Konto des Benutzers 2 an einem sicheren Ort, und klicken Sie dann auf **Fertig**.
+7. Zeichnen Sie das auf der Seite **Schritt 3: Keep your existing applications** angezeigte App-Kennwort für das Konto „Benutzer 2“ an einem sicheren Ort auf, und klicken Sie dann auf **Fertig**.
     
-8. Wieder auf der Seite Anmeldung Geben Sie das Kennwort für das Konto des Benutzers 2, und klicken Sie auf **Anmelden**.
+8. Wenn dies das erste Mal ist, dass Sie sich mit dem Konto „Benutzer 2“ angemeldet haben, werden Sie aufgefordert, das Kennwort zu ändern. Geben Sie das ursprüngliche Kennwort und dann zwei Mal ein neues Kennwort ein, und klicken Sie dann auf **Kennwort ändern und anmelden**. Zeichnen Sie das neue Kennwort an einem sicheren Ort auf.
     
-9. Geben Sie den Überprüfungscode aus der Textnachricht auf Ihrem Smartphone empfangen, und klicken Sie dann auf **Anmelden**.
+    Office 365-Portal sollte für Benutzer 2 auf der Registerkarte **Microsoft Office Home** des Browsers angezeigt werden.
     
-10. Wenn hierbei handelt es sich beim ersten signiert Sie sich mit dem Konto Benutzer 2 Aufforderung zum Ändern des Kennworts. Geben Sie das ursprüngliche Kennwort und das neue Kennwort zweimal ein, und klicken Sie dann auf **Kennwort aktualisieren, und melden Sie sich**. Notieren Sie das neue Kennwort ein, an einem sicheren Ort.
-    
-    Das Office 365-Portal für Benutzer 2 sollte angezeigt werden.
-    
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
   

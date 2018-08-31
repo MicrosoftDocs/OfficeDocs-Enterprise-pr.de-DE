@@ -1,5 +1,5 @@
 ---
-title: "Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)"
+title: Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
-description: "Zusammenfassung: Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365)."
-ms.openlocfilehash: 65b1841a155e286af8862c2fb7c37d0bfb61e1e8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365).'
+ms.openlocfilehash: 53187d53b55eedf1fca4f0b98e34accf454c67df
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915590"
 ---
-# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)
+# <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Hybrid Cloud-Szenarien für Microsoft-SaaS (Office 365)
 
  **Zusammenfassung:** Grundlegendes zur Hybrid-Architektur und Szenarien für Microsofts SaaS-basierte cloud-angeboten (Office 365).
   
@@ -28,9 +29,9 @@ Kombinieren Sie lokale Bereitstellungen von Exchange, SharePoint oder Skype for 
 
 Abbildung 1 zeigt die Architektur der SaaS-basierten Hybridszenarien von Microsoft für Office 365.
   
-**Abbildung 1: Microsoft SaaS-basierte hybridszenarien für Office 365**
+**Abbildung 1: Microsoft SaaS-basierte Hybridszenarien für Office 365**
 
-![Microsoft SaaS-basierte Hybridszenarien für Office 365](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS.png)
+![Microsoft SaaS-basierte Hybridszenarien für Office 365](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS.png)
   
 Für jede Schicht der Architektur:
   
@@ -58,15 +59,15 @@ Für jede Schicht der Architektur:
     
     Kann aus vorhandenen Servern für Exchange, SharePoint und Skype for Business bestehen, die auf ihre neuesten Versionen aktualisiert sein sollten. Sie können diese dann für Hybridszenarien mit ihren Office 365-Gegenstücken kombinieren.
     
-Richten Sie Ihre eigene [Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md).
+Richten Sie Ihre [Office 365 dev/test environment](office-365-dev-test-environment.md) ein.
   
 ## <a name="skype-for-business-2015-hybrid"></a>Skype for Business 2015 Hybrid
 
 Skype für Business 2015 hybride können Sie eine vorhandene lokale Bereitstellung mit Skype für Business Online zu kombinieren. Einige Benutzer werden lokal und einige Benutzer online verwaltet werden, aber die Benutzer freigeben Session Initiation Protocol (SIP) derselben Domäne, z. B. "contoso.com". Diese hybridkonfiguration können Sie lokal Migration zu Office 365 im Laufe der Zeit im Terminplan. Skype für Business 2015 kann auch mit Exchange Online integriert werden.
   
-**Abbildung 2: Skype Business 2015 hybridkonfiguration**
+**Abbildung 2: Die Skype for Business 2015-Hybridkonfiguration**
 
-![Die Skype for Business 2015-Hybridkonfiguration](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB.png)
+![Die Skype for Business 2015-Hybridkonfiguration](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB.png)
   
 Abbildung 2 zeigt die Skype hybridkonfiguration Business 2015, bestehend aus einer lokalen Skype für Business 2015 Front-End-Pool und Edge Server zum Kommunizieren mit Skype für Business Online in Office 365.
   
@@ -82,9 +83,9 @@ Weitere Informationen finden Sie unter:
 
 Cloud-PBX mit Skype for Business Server ermöglicht es Ihnen, eine vorhandene lokale Skype for Business Server-Bereitstellung in eine Topologie mit lokaler PSTN-Konnektivität (Public Switched Telephone Network) zu überführen.  
   
-**Abbildung 3: Cloud Nebenstellenanlage mit Skype für Business Server**
+**Abbildung 3: Cloud-PBX mit Skype for Business Server**
 
-![Cloud-PBX mit Skype for Business Server](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SfB_CloudPBX.png)
+![Cloud-PBX mit Skype for Business Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
 Abbildung 3 zeigt die Cloud-Nebenstellenanlage mit Skype für Business Server-Konfiguration, bestehend aus einem lokalen, vorhandene PBX oder Telekommunikation Gateway, einen Skype für Business Server und dem PSTN der Microsoft-Cloud-Nebenstellenanlage in Office 365, einschließlich Skype für Unternehmen verbunden Online.
   
@@ -102,15 +103,15 @@ Weitere Informationen finden Sie unter [Planen von Skype für Business Cloud Con
 
 In einer SharePoint-Hybridlösung wird SharePoint Online in Office 365 mit Ihrer lokalen SharePoint-Farm kombiniert, um das Beste aus beiden zu verbinden.
   
-**Abbildung 4: Die SharePoint-hybridkonfiguration**
+**Abbildung 4: Die SharePoint-Hybridkonfiguration**
 
-![Die SharePoint-Hybridkonfiguration](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_SP.png)
+![Die SharePoint-Hybridkonfiguration](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SP.png)
   
 Abbildung 4 zeigt die SharePoint-hybridkonfiguration, bestehend aus einer lokalen SharePoint-Farm zum Kommunizieren mit SharePoint Online in Office 365.
   
 SharePoint-Hybridszenarien:
   
-- [Hybrid-OneDrive für Unternehmen](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
+- [OneDrive for Business-Hybridbereitstellung](https://technet.microsoft.com/library/mt147425%28v=office.16%29.aspx)
     
 - [Hybrid-Teamwebsites](https://technet.microsoft.com/library/mt346110%28v=office.16%29.aspx)
     
@@ -118,13 +119,13 @@ SharePoint-Hybridszenarien:
     
 - [Hybridsuche](https://technet.microsoft.com/library/dn720906%28v=office.16%29.aspx)
     
-- [Hybrid-Profile](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
+- [Hybridprofile](https://support.office.com/article/Plan-hybrid-profiles-96d1eaf0-94eb-40c5-ab76-c82907777db4)
     
 - [Hybride Personenauswahl](https://support.office.com/article/Hybrid-picker-in-the-SharePoint-Online-admin-center-efce8417-c9bc-4a2c-ac9d-cce6c4e84a9c)
     
     Es ist einfach, Hybridszenarien mit den Assistenten zu aktivieren, mit denen die Hybridkonfiguration automatisiert wird und die aus dem SharePoint Online Admin Center in Office 365 verfügbar sind.
     
-- [Startprogramm für Extensible Hybrid-app](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
+- [Das erweiterbare Hybrid-App-Startfeld](https://support.office.com/article/The-extensible-hybrid-app-launcher-617a7cb5-53da-4128-961a-64a840c0ab91)
     
     Ermöglicht es Benutzern, Office 365-Video- und Delve-Apps und -Oberflächen auf den Seiten ihrer lokalen SharePoint-Farm anzuzeigen und zu verwenden.
     
@@ -136,9 +137,9 @@ Weitere Informationen finden Sie unter [SharePoint-Hybridlösung](http://hybrid.
 
 Mit Exchange Server 2016 Hybrid können Sie von den Vorteilen von Exchange Online in Office 365 für Onlinebenutzer profitieren, während lokale Benutzer weiterhin die vorhandene Exchange Server-Infrastruktur nutzen.  
   
-**Abbildung 5: Die hybridkonfiguration Exchange 2016**
+**Abbildung 5: Die Exchange 2016-Hybridkonfiguration**
 
-![Die Exchange 2016-Hybridkonfiguration](images/Hybrid_Poster/Hybrid_Cloud_Stack_SaaS_EX.png)
+![Die Exchange 2016-Hybridkonfiguration](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-EX.png)
   
 Abbildung 5 zeigt die Exchange-2016 hybridkonfiguration bestehend aus lokalen Exchange-Postfachserver mit Exchange Online Protection und Postfächer in Office 365 kommunizieren.
   
@@ -146,7 +147,10 @@ Einige Benutzer haben einen lokalen E-Mail-Server, und einige Benutzer verwenden
   
 Diese Hybridkonfiguration ermöglicht Folgendes:
   
-- Nutzt Ihre vorhandene Exchange Server-Infrastruktur, während Sie zu Exchange Online über einen Zeitraum, nach Ihrem Zeitplan Migration.
+- Sie können Ihre vorhandene Exchange Server-Infrastruktur nutzen, während Sie nach und nach gemäß Ihrem Zeitplan zu Exchange Online migrieren.
+
+
+
     
 - Sie können Remotestandorte unterstützen, ohne in eine Zweigstelleninfrastruktur zu investieren.
     
@@ -158,7 +162,7 @@ Sie können diese Hybridkonfiguration auch mit anderen Microsoft Office 365-Anwe
   
 Weitere Informationen finden Sie unter [Hybridbereitstellungen in Exchange Server](https://technet.microsoft.com/library/jj200581%28v=exchg.150%29.aspx) und [Exchange Hybrid](http://hybrid.office.com/exchange/).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
