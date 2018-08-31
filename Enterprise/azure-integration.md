@@ -3,24 +3,25 @@ title: Azure-Integration mit Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 8/21/2018
 ms.audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
 search.appverid:
+- MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Ihr Office 365-Abonnement umfasst ein Abonnement für Azure Active Directory. Integrieren Sie Office 365 mit Azure AD, wenn Sie mit Ihrer lokalen Umgebung kennwortsynchronisierung oder einmaliges Anmelden möchten.
-ms.openlocfilehash: abeda5eb915ac4ff9e395ab3b28f1e0cb7a68163
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
+ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550079"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "23531838"
 ---
 # <a name="azure-integration-with-office-365"></a>Azure-Integration mit Office 365
 
@@ -28,18 +29,22 @@ Office 365 verwendet Azure Active Directory (AD Azure) zur Verwaltung von Benutz
   
 Azure bietet auch andere Funktionen, wie das Verwalten von integrierten-apps, die Sie erweitern und Anpassen Ihrer Office 365-Abonnements verwenden können.
   
-Sie können auch die Azure AD-Berater: der [Azure AD-Connect Advisor](https://aka.ms/aadconnectpwsync), den [AD FS-Bereitstellung Advisor](https://aka.ms/adfsguidance), der [Azure RMS Deploymnet Assistenten](https://aka.ms/azuremsguidance)und [Azure AD Premium Handbuch](https://aka.ms/aadpguidance).
+Die Berater Azure AD-Bereitstellung können eine geführte Einrichtung und Konfiguration wünschen:
+ - [Azure Active Directory verbinden advisor](https://aka.ms/aadconnectpwsync)
+ - [AD FS-Bereitstellung advisor](https://aka.ms/adfsguidance)
+ - [Azure RMS-Bereitstellungs-Assistenten](https://aka.ms/azuremsguidance)
+ - [Handbuch für Azure AD-Premium](https://aka.ms/aadpguidance)
   
 ## <a name="azure-ad-editions-and-office-365-identity-management"></a>Azure AD-Editionen und Office 365 Identitätsmanagement
 
 Wenn Sie über ein kostenpflichtiges Abonnement zu Office 365 verfügen, müssen Sie auch ein kostenloses Abonnement von Azure AD. Azure AD können zum Erstellen und Verwalten von Benutzer- und Gruppenkonten. Um dieses Abonnement zu aktivieren, müssen Sie eine einmalige Anmeldung abzuschließen. Anschließend können Sie von Ihrem Office 365-Verwaltungsportal Azure AD zugreifen. Anweisungen finden Sie unter [Registrieren Ihrer kostenlose Azure AD-Abonnement](https://go.microsoft.com/fwlink/p/?LinkId=617127). 
   
 > [!TIP]
-> Befolgen Sie die Anweisungen oben zum Lieferumfang Ihres Abonnements zu Office 365 registrieren Sie das kostenlose Azure AD-Abonnement. Nicht direkt Azure.Microsoft.com sich registrieren, oder Sie daran ein Test- oder kostenpflichtiges Abonnement für Microsoft Azure, die von Ihrer kostenlose einen für Office 365 getrennt ist. 
+> Befolgen Sie die Anweisungen oben zum Lieferumfang Ihres Abonnements zu Office 365 registrieren Sie das kostenlose Azure AD-Abonnement. Nicht direkt azure.microsoft.com sich registrieren, oder Sie daran ein Test- oder kostenpflichtiges Abonnement für Microsoft Azure, die von Ihrer kostenlose einen für Office 365 getrennt ist. 
   
 Mit dem kostenlosen Abonnement können Sie synchronisieren mit lokalen Verzeichnisse, richten Sie einmaliges Anmelden und Synchronisieren mit vielen Software als dienstanwendungen wie Vertriebs, Ablage und viele weitere.
   
-Wenn Sie erweiterte Funktionalität von AD DS, bidirektionale Synchronisierung und andere Verwaltungsfunktionen möchten, können Sie Ihr kostenlose Abonnement in ein kostenpflichtiges Premium-Abonnement aktualisieren. Weitere Informationen finden Sie in [Azure Active Directory-Editionen](https://go.microsoft.com/fwlink/p/?LinkId=524280).
+Wenn Sie erweiterte Funktionalität von AD DS, bidirektionale Synchronisierung und andere Verwaltungsfunktionen möchten, können Sie Ihr kostenlose Abonnement in ein kostenpflichtiges Premium-Abonnement aktualisieren. Weitere Informationen finden Sie in [Azure Active Directory-Editionen](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
   
 Weitere Informationen zu Office 365 und Azure AD finden Sie unter [Grundlegendes zu Office 365-Identität und Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
   
@@ -57,3 +62,7 @@ Andere Ressourcen zu den Microsoft-Cloud und Office 365 finden Sie unter folgend
 - [Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
 
+Weitere Informationen finden Sie unter [integrierte Apps und Azure Active Directory für Office 365-Administratoren](integrated-apps-and-azure-ads.md) und [Azure AD-Anwendung Gallery und Single-Sign-on](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on).
+
+### <a name="power-apps"></a>Power-Apps
+Power-apps sind fokussierte apps für mobile Geräte, die mit den vorhandenen Daten Datenquellen wie SharePoint-Listen verbinden können und andere Daten apps. Weitere Informationen finden Sie unter [Erstellen einer PowerApp für eine Liste in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) und [PowerApps Seite](https://powerapps.microsoft.com/) .

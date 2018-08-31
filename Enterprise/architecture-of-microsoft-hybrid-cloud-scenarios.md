@@ -8,16 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Zusammenfassung: Informationen über die Architektur von Microsoft-Hybridcloudangeboten.'
-ms.openlocfilehash: bb5f72ee8fe6f1d5ffd81822edbf0e9f931b70dd
-ms.sourcegitcommit: b2058b34196022668eac15e723962fefd82d6774
+ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "19631386"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914920"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architektur von Microsoft Hybrid Cloud-Szenarien
 
@@ -27,7 +29,7 @@ Verwenden Sie eine architekturbezogene Herangehensweise, wenn Sie Hybridcloudsze
   
 **Abbildung 1: Microsoft-Hybridcloudstack**
 
-![Microsoft Hybridcloudstack](images/Hybrid_Poster/Hybrid_Cloud_Stack.png)
+![Microsoft Hybridcloudstack](media/Hybrid-Poster/Hybrid-Cloud-Stack.png)
   
 Abbildung 1 zeigt den Microsoft-Hybridcloudstack und die Schicht, die lokal, Netzwerk, Identität, Apps, Szenarien und die Kategorie des Clouddiensts (Microsoft SaaS, Azure PaaS und Azure PaaS) enthält.
   

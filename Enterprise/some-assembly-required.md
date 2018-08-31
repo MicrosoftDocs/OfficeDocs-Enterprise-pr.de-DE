@@ -1,5 +1,5 @@
 ---
-title: "Assemblierung in Maßen erforderlich"
+title: Assemblierung in Maßen erforderlich
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: ccf1b8b3-0d50-4c66-b314-f480245fad5e
-description: "Zusammenfassung: Informieren Sie sich über die Details der Cloudspeicheroptionen, die Sie verwenden können, um eine benutzerdefinierte Speicherlösung zu erstellen."
-ms.openlocfilehash: 7cff1c80f1b210ee8906cf9703ba6400181f2e9d
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Informieren Sie sich über die Details der Cloudspeicheroptionen, die Sie verwenden können, um eine benutzerdefinierte Speicherlösung zu erstellen.'
+ms.openlocfilehash: 2c80b0cdf0829e80a7916133ee51a45c91b96efa
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915520"
 ---
 # <a name="some-assembly-required"></a>Assemblierung in Maßen erforderlich
 
@@ -138,11 +141,11 @@ Verwenden Sie die praktisch unbegrenzten Ressourcen von Azure SQL-Datenbank in f
     
 Bei vertikaler Skalierung können Sie die Leistung einer Azure-Datenbank über die Stufe/Edition oder durch die Verwendung von elastischen Datenbankpools ändern.
   
-![Vertikale Skalierung, bereitgestellt von Azure SQL Database.](images/Storage_Poster/CloudStor-VertScale.png)
+![Vertikale Skalierung, bereitgestellt von Azure SQL Database.](media/Storage-Poster/CloudStor-VertScale.png)
   
 Bei horizontaler Skalierung können Sie bei Bedarf neue Datenbanken hinzufügen.
   
-![Horizontale Skalierung, bereitgestellt von Azure SQL Database.](images/Storage_Poster/CloudStor-HorizScale.png)
+![Horizontale Skalierung, bereitgestellt von Azure SQL Database.](media/Storage-Poster/CloudStor-HorizScale.png)
   
 Klicken Sie [hier](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction), um weitere Informationen zu erhalten.
   
@@ -150,7 +153,7 @@ Klicken Sie [hier](https://docs.microsoft.com/azure/sql-database/sql-database-el
 
 Stretch-Datenbank ist ein Feature von SQL Server-2016, das es Ihnen ermöglicht, archivierte („kalte") Daten, z. B. abgeschlossene Geschäftsdaten in einer umfangreichen Tabelle, die Kundenbestellinformationen enthält, transparent und sicher in eine SQL Stretch-Datenbank in Azure zu verschieben. Wird der Inhalt einer SQL Server-Instanz, einer Datenbank oder sogar einer einzelnen Tabelle in einer Stretch-Datenbank verwendet, ist er eine Kombination aus lokalen Daten auf dem Server mit SQL Server 2016 und Remotedaten in Azure. Daten, die zur Verwendung in einer Stretch-Datenbank auswählbar geworden sind, werden von SQL Server 2016 automatisch in Azure verschoben.
   
-![Stretch-Datenbank mit SQL Server 2016.](images/Storage_Poster/CloudStor-Stretch.png)
+![Stretch-Datenbank mit SQL Server 2016.](media/Storage-Poster/CloudStor-Stretch.png)
   
  
 
@@ -206,7 +209,7 @@ Gemeinsame Attribute von Cosmos DB, Table Storage und Azure SQL-Datenbank
     
 Die folgende Tabelle enthält die unterschiedlichen Attribute von Azure Cosmos DB, Table Storage und Azure SQL-Datenbank
   
-![Seltene Attribute der Cosmos DB im Vergleich zu Azure Tables im Vergleich zu Azure SQL-Datenbank](images/Storage_Poster/CloudStor-Table.png)
+![Seltene Attribute der Cosmos DB im Vergleich zu Azure Tables im Vergleich zu Azure SQL-Datenbank](media/Storage-Poster/CloudStor-Table.png)
   
 ### <a name="resources"></a>Ressourcen
 

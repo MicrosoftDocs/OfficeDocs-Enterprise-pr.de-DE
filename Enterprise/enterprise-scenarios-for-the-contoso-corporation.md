@@ -1,5 +1,5 @@
 ---
-title: "Enterprise-Szenarien für die Contoso Corporation"
+title: Enterprise-Szenarien für die Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 8f004c92-773e-4eb0-8bb5-24494ca538d3
-description: "Zusammenfassung: Lesen Sie nach, wie ein fiktives, aber repräsentatives globales Unternehmen mit Enterprise Cloud-Szenarien seine Geschäftsanforderungen erfüllt."
-ms.openlocfilehash: 3964ed03e8437ce50aab10f1209a7afb6e06bc8b
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Lesen Sie nach, wie ein fiktives, aber repräsentatives globales Unternehmen mit Enterprise Cloud-Szenarien seine Geschäftsanforderungen erfüllt.'
+ms.openlocfilehash: d258b9b37b1d9399cce159c72c4d7599ff37d5d4
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915130"
 ---
 # <a name="enterprise-scenarios-for-the-contoso-corporation"></a>Enterprise-Szenarien für die Contoso Corporation
 

@@ -1,5 +1,5 @@
 ---
-title: "Gemeinsame Elemente der Microsoft-Cloudkonnektivität"
+title: Gemeinsame Elemente der Microsoft-Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Zusammenfassung: Informationen zu gemeinsamen Elementen der Netzwerkinfrastruktur und zu Vorbereitungen des Netzwerks.'
-ms.openlocfilehash: b630daad3292976245c8cb5d3f493c32ad5be8a6
-ms.sourcegitcommit: c16db80a2be81db876566c578bb04f3747dbd50c
-ms.translationtype: HT
+ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915650"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Gemeinsame Elemente der Microsoft-Cloudkonnektivität
 
@@ -48,7 +51,7 @@ Verwenden Sie Ihre vorhandene Internetpipe oder eine ExpressRoute-Verbindung mit
   
 **Abbildung 1: Optionen für Microsoft-Cloudkonnektivität**
 
-![Abbildung 1:  Optionen für Microsoft-Cloudkonnektivität](images/Network_Poster/CommonElements.png)
+![Abbildung 1:  Optionen für Microsoft-Cloudkonnektivität](media/Network-Poster/CommonElements.png)
 
   
 In Abbildung 1 wird gezeigt, wie ein lokales Netzwerk mithilfe der vorhandenen Internetpipe oder ExpressRoute mit Microsoft-Cloudangeboten verbunden werden kann. Die Internetpipe stellt ein Umkreisnetzwerk dar und kann die folgenden Komponenten aufweisen:

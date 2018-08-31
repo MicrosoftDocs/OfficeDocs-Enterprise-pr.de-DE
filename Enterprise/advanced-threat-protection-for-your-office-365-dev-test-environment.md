@@ -1,5 +1,5 @@
 ---
-title: "Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung"
+title: Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,17 +8,20 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Advanced Threat Protection in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 6266960287d06ffafdf7ed1f6690396fd4cda9d5
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
-ms.translationtype: HT
+ms.openlocfilehash: 07411600db11c8eea825c0ef5b82ea1206d20e11
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914960"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung
 
@@ -71,9 +74,9 @@ In dieser Phase führen Sie vor, dass vor dem Konfigurieren von ATP-Richtlinien 
     
 13. Markieren Sie im Textbereich den Text **diese Website**, und klicken Sie auf der Symbolleiste auf das Linksymbol.
     
-14. Geben Sie in **URL** den Text **http://www.spamlink.contoso.com/** ein, klicken Sie auf **OK** und dann auf **Senden**.
+14. Geben Sie unter **URL** **http://www.spamlink.contoso.com/**, klicken Sie auf **OK**, und klicken Sie dann auf **Senden**.
     
-15. Öffnen Sie eine getrennte Instanz von Internet Explorer für das InPrivate-Browsen, wechseln Sie zum Office 365-Portal ([https://portal.office.com](https://portal.office.com)), und melden Sie sich bei Ihrem Office 365-Testabonnement mit Ihrem globalen Administratorkonto an.
+15. Öffnen eine separate Instanz von Internet Explorer im Modus für private durchsuchen, wechseln Sie Office 365-Portal ([https://portal.office.com](https://portal.office.com)), und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
     
 16. Klicken Sie auf der Hauptportalseite auf die Kachel „apps" und dann auf **E-Mail**.
     

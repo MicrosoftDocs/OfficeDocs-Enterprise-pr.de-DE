@@ -1,5 +1,5 @@
 ---
-title: "Entwerfen von Netzwerken für Microsoft-PaaS"
+title: Entwerfen von Netzwerken für Microsoft-PaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 19568184-705b-493b-b713-b484367adba9
-description: "Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft Azure PaaS optimieren."
-ms.openlocfilehash: 151701223c6cf21890fcd961c5dc3acda8de4915
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft Azure PaaS optimieren.'
+ms.openlocfilehash: d20bb5adb46592363926a2926752ed345823c26e
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915110"
 ---
 # <a name="designing-networking-for-microsoft-azure-paas"></a>Entwerfen von Netzwerken für Microsoft-PaaS
 
@@ -46,7 +49,7 @@ Für Organisationsanwendungen, die in Azure PaaS gehostet sind, ist eine Interne
     
 **Abbildung 1: Verbindungsoptionen zum Verbinden der Azure PaaS-Dienste**
 
-![Abbildung 1: Verbindungsoptionen für Azure PaaS-Dienste](images/Network_Poster/PaaS1.png)
+![Abbildung 1: Verbindungsoptionen für Azure PaaS-Dienste](media/Network-Poster/PaaS1.png)
   
 In Abbildung 1 ist ein lokales Netzwerk dargestellt, das über eine Internetpipe oder ExpressRoute eine Verbindung zu Azure PaaS-Diensten herstellt.
   
@@ -56,7 +59,7 @@ Dienste für Routing auf Anwendungsebene und Lastenausgleich, mit denen Sie ein 
   
 **Abbildung 2: Azure-Anwendungsgateway**
 
-![Abbildung 2: Azure-Anwendungsgatewaydienst](images/Network_Poster/PaaS2.png)
+![Abbildung 2: Azure-Anwendungsgatewaydienst](media/Network-Poster/PaaS2.png)
   
 In Abbildung 2 ist das Azure-Anwendungsgateway dargestellt und wie Benutzeranforderungen aus dem Internet an Azure-Web-Apps, Clouddienste oder virtuelle Computer umgeleitet werden können.
   
@@ -86,7 +89,7 @@ Nachfolgend finden Sie ein Beispiel für drei geografisch verteilte Web-Apps.
   
 **Abbildung 3: Azure Traffic Manager**
 
-![Abbildung 3: Azure Traffic Manager](images/Network_Poster/PaaS3.png)
+![Abbildung 3: Azure Traffic Manager](media/Network-Poster/PaaS3.png)
   
 In Abbildung 3 ist der grundlegende Prozess dargestellt, den Traffic Manager zum Umleiten von Anforderungen an drei unterschiedliche Azure-Web-Apps in den USA, in Europa und in Asien verwendet. Im Beispiel:
   

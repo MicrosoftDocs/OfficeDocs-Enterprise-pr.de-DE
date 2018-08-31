@@ -1,5 +1,6 @@
 ---
-title: IT-Infrastruktur und Anforderungen von Contoso
+title: >
+  Contosos IT-Infrastruktur und -Anforderungen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,14 +12,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5d6a58b8-bec3-4629-9737-8733c7b7ec92
-description: "Zusammenfassung: Hier erfahren Sie die grundlegende Struktur des Contoso lokale IT-Infrastruktur und wie die Geschäftsabläufe durch Cloudlösungen von Microsoft erfüllt werden können muss."
-ms.openlocfilehash: b8282c4bd04448266bc68e65f95aaaff0a7a5db8
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Hier erfahren Sie die grundlegende Struktur des Contoso lokale IT-Infrastruktur und wie die Geschäftsabläufe durch Cloudlösungen von Microsoft erfüllt werden können muss.'
+ms.openlocfilehash: e500aa1f3105c1e605d0d3c1d5f66651acb82b34
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915730"
 ---
-# <a name="contosos-it-infrastructure-and-needs"></a>IT-Infrastruktur und Anforderungen von Contoso
+# <a name="contosos-it-infrastructure-and-needs"></a>Contosos IT-Infrastruktur und -Anforderungen
+
 
  **Zusammenfassung:** Verstehen der grundlegenden Struktur des Contoso lokale IT-Infrastruktur und wie die Geschäftsabläufe durch Cloudlösungen von Microsoft erfüllt werden können muss.
   
@@ -31,10 +34,11 @@ Contoso ist dabei, von der lokalen zentralen IT-Infrastruktur auf eine cloudeins
 Contoso nutzt eine weitestgehend zentrale lokale IT-Infrastruktur mit Anwendungsrechenzentren in der Pariser Zentrale.
 
   
-**Abbildung 1: Contoso vorhandenen IT-Infrastruktur**
+**Abbildung 1: Contosos vorhandene IT-Infrastruktur
+**
 
 ![Contosos vorhandene IT-Infrastruktur
-](images/Contoso_Poster/Existing_IT.png)
+](media/Contoso-Poster/Existing-IT.png)
   
 Abbildung 1 zeigt eine Unternehmenszentrale mit Anwendungsrechenzentren, einer DMZ und Internet.
   
@@ -55,26 +59,32 @@ Nachfolgend sehen Sie die Geschäftsanforderungen von Contoso in der Reihenfolge
     Um Strafen zu verhindern und gute Beziehungen zu lokalen Behörden beizubehalten, muss Contoso die Einhaltung von Vorschriften zur Datenspeicherung- und -verschlüsselung sicherstellen.
 
     
-2. Verbessern der Verwaltung von Lieferanten und partner
+2. Verbessern der Verwaltung von Lieferanten und Partnern
+
     
     Das Partnerextranet ist in die Jahre gekommen und teuer in der Wartung. Contoso möchte es durch eine cloudbasierte Lösung ersetzen, für die Verbundauthentifizierung verwendet wird.
 
     
-3. Verbessern der Produktivität der mobilen Mitarbeiter, Gerätemanagement und access
+3. Verbessern von Produktivität, Geräteverwaltung und Zugriff für Mobilmitarbeiter
+
     
     Contoso Mobile-only Belegschaft wird erweitert und benötigt Gerätemanagement zum Schutz des geistigen Eigentums und effizienter Zugriff auf Ressourcen zu gewährleisten.
     
-4. RAS-Infrastruktur reduzieren
+4. Verkleinern der Remotezugriffsinfrastruktur
+
     
     Durch Verschieben von Ressourcen, auf die häufig von Remotearbeitskräften zugegriffen wird, in die Cloud spart Contoso Geld, indem die Kosten für Wartung und Support der Remotezugriffslösung verringert werden.
 
     
-5. Lokale Rechenzentren verkleinern
+5. Verkleinern von lokalen Rechenzentren
+
+
     
     Die Contoso-Rechenzentren umfassen Hunderte von Servern, von denen einige für ältere oder Archivierungsfunktionen genutzt werden, was dazu führt, dass IT-Mitarbeiter davon abgehalten werden, Arbeitslasten mit hohem Geschäftswert zu betreuen.
 
     
-6. Vertikales Skalieren Netzwerke und der Speicherung Ressourcen für die Verarbeitung Ende des Quartal
+6. Vergrößern der Berechnungs- und Speicherressourcen für Quartalsabschlüsse
+
     
     Quartalsabschlüsse und Prognoseverarbeitung zusammen mit Bestandsverwaltung erfordern kurzfristig mehr Server und Speicher.
 
@@ -85,13 +95,23 @@ Basierend auf einer Analyse der Microsoft-Cloudangebote hat die IT-Abteilung von
   
 |**Software as a Service (SaaS)**|**Plattform als Dienst (Azure PaaS)**|**Infrastructure as a Service (Azure IaaS)**|
 |:-----|:-----|:-----|
-|**Office 365:** Primäre persönliche und Gruppe produktivitätsanwendungen in der Cloud. <br/> Geschäftsanforderungen: 1 3 5  <br/> |Hosten von Sales und Dokumente und Informationssysteme mithilfe von Cloud-basierten apps unterstützen.  <br/> Geschäftliche Anforderung: 3  <br/> |Verschieben Sie Archivierung sowie älterer Systeme zu Cloud-basierten Servern.  <br/> Geschäftliche Anforderung: 5  <br/> |
-|**Dynamics 365:** Verwenden Sie die Cloud-basierten Kunden und Hersteller-Verwaltung. In der DMZ extranet Partner zu entfernen.<br/> Geschäftliche Anforderung: 2  <br/> |Mobile Anwendungen sind cloudbasiert, statt von Pariser Datenzentren bereitgestellt zu werden.
+|**Office 365:** Hauptanwendungen für persönliche und Gruppenproduktivität in der Cloud. <br/> Geschäftsanforderungen: 1 3 5  <br/> |Hosten von Verkaufs- und Supportdokumenten sowie Informationssystemen mit cloudbasierten Apps.
+
+
+
+  <br/> Geschäftliche Anforderung: 3  <br/> |Verschieben von Archivierungs und Legacysystemen auf cloudbasierte Server.
+
+
+
+
+
+  <br/> Geschäftliche Anforderung: 5  <br/> |
+|**Dynamics 365:** Verwenden einer cloudbasierten Kunden- und Lieferantenverwaltung. Entfernen des Partnerextranets aus der DMZ.<br/> Geschäftliche Anforderung: 2  <br/> |Mobile Anwendungen sind cloudbasiert, statt von Pariser Datenzentren bereitgestellt zu werden.
   <br/> Geschäftliche Anforderungen: 3 4  <br/> |Migrieren von wenig verwendeten Apps und Daten aus lokalen Rechenzentren.  <br/> Geschäftliche Anforderung: 5  <br/> |
 |**Intune/zur Abstimmung:** Verwalten von iOS und Android-Geräte. <br/> Geschäftliche Anforderung: 3  <br/> ||Hinzufügen von temporären Servern und temporärem Speicher für Anforderungen aus einem Quartalsabschluss.
   <br/> Geschäftliche Anforderung: 6  <br/> |
    
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

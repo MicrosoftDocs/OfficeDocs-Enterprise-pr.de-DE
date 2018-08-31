@@ -12,11 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Zusammenfassung: Grundlegendes zu den Hybrid-Architektur und Szenarien für Microsoft Infrastruktur als Dienst (IaaS)-Cloud-angeboten in Azure basiert.'
-ms.openlocfilehash: e64d20987946e05afa7afc4d64e071112ef58d10
-ms.sourcegitcommit: 21cc62118b78b76d16ef12e2c3eff2c0c789e3d0
+ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915030"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Hybrid Cloud-Szenarien für Azure-IaaS
 
@@ -28,9 +29,9 @@ Erweitern Sie Ihre lokale Computing- und Identitätsinfrastruktur in die Cloud, 
 
 Abbildung 1 zeigt die Architektur der IaaS-basierten Hybridszenarien von Microsoft in Azure.
   
-**Abbildung 1: Microsoft IaaS-basierte Hybrid-Szenarien in Azure**
+**Abbildung 1: Microsoft IaaS-basierte Hybridszenarien in Azure**
 
-![Microsoft IaaS-basierte Hybridszenarien in Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS.png)
+![Microsoft IaaS-basierte Hybridszenarien in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS.png)
   
 Für jede Schicht der Architektur:
   
@@ -54,9 +55,9 @@ Für jede Schicht der Architektur:
 
 Ein Beispiel für die Ausweitung Ihrer Computing- und Identitätsinfrastruktur auf die Cloud ist die Ausführung Ihres Verzeichnissynchronisierungsservers (DirSync-Server) in einem Azure-VNet wie in Abbildung 2 dargestellt.
   
-**Abbildung 2: Dirsync-Server für Office 365 in Azure IaaS**
+**Abbildung 2: DirSync-Server für Office 365 in Azure IaaS**
 
-![DirSync-Server für Office 365 in Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_DirSync.png)
+![DirSync-Server für Office 365 in Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
 In Abbildung 2 hostet einer lokalen Netzwerk eine Windows Azure AD-Infrastruktur mit einer Proxyserver und Router den Rand. Der Router eine Verbindung mit einer Azure Gateway am Rand eines Azure VNet mit einer Standort-zu-Standort-VPN- oder ExpressRoute-Verbindung. Innerhalb der VNet führt ein Dirsync-Server Azure Active Directory verbinden.
   
@@ -66,19 +67,22 @@ DirSync-Server sind Windows-basierte Server, auf denen Azure AD Connect ausgef
   
 Der DirSync-Server fragt regelmäßig Änderungen von Windows Server AD ab und synchronisiert diese Änderungen mit dem Office 365-Abonnement
   
-Weitere Informationen finden Sie unter [Bereitstellen von Office 365 DirSync in Azure](https://technet.microsoft.com/library/dn635310.aspx).
+Weitere Informationen finden Sie unter [Einrichten von verzeichnissynchronisierung für Office 365](set-up-directory-synchronization.md).
   
 ## <a name="line-of-business-lob-application"></a>Branchenanwendung
 
 Abbildung 3 zeigt die Konfiguration einer serverbasierten Branchenanwendung, die in Azure IaaS ausgeführt wird.
   
-**Abbildung 3: LOB-Anwendung in Azure IaaS**
+**Abbildung 3: Branchenanwendung in Azure IaaS**
 
-![Serverbasierte Branchenanwendung in Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_Ex.png)
+![Serverbasierte Branchenanwendung in Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-Ex.png)
   
 In Abbildung 3 sehen Sie ein lokales Netzwerk, das eine Identitätsinfrastruktur und Benutzer hostet. Das Netzwerk ist über ein Standort-zu-Standort-VPN oder eine ExpressRoute-Verbindung mit einem Azure IaaS-Gateway verbunden. Azure IaaS hostet ein virtuelles Netzwerk mit den Servern der Branchenanwendung.
   
-Sie können erstellen LOB-Anwendungen, die auf Azure VMs, die sich auf Subnetze mit einer Azure-VNet in einer Azure-Rechenzentrum (auch bekannt als Speicherort) befinden.
+Sie können Branchenanwendungen erstellen, die auf virtuellen Azure-Computern ausgeführt werden, die sich in Subnetzen eines virtuellen Azure-Netzwerks in einem Azure-Rechenzentrum (auch als Standort bezeichnet) befinden. 
+
+
+
   
 Da Sie im Grundsatz Ihre lokale Infrastruktur auf Azure erweitern, müssen Sie Ihren virtuellen Netzwerken (VNets) einen eindeutigen privaten Adressraum zuweisen und Ihre lokalen Routingtabellen aktualisieren, damit Erreichbarkeit jedes VNets sichergestellt ist.
   
@@ -86,7 +90,7 @@ Sobald es Verbindungen mit diesen virtuellen Computern gibt, können diese über
   
 Durch Konfigurieren von öffentlich verfügbar gemachten Ports können auch mobile oder Remotebenutzer über das Internet auf diese virtuellen Computer zugreifen.
   
-Eine Konfiguration Nachweis der Machbarkeit finden Sie unter [simulierten standortübergreifenden virtuelles Netzwerk in Azure](simulated-cross-premises-virtual-network-in-azure.md).
+Informationen zur Konfiguration einer Machbarkeitsstudie finden Sie unter [Simulated cross-premises virtual network in Azure](simulated-cross-premises-virtual-network-in-azure.md).
   
 Attribute von Branchenanwendungen, die auf virtuellen Azure-Computern gehostet werden, sind folgende:
   
@@ -110,9 +114,9 @@ Attribute von Branchenanwendungen, die auf virtuellen Azure-Computern gehostet w
 
 Ein Beispiel für eine hoch verfügbare Multi-Tier-Branchenanwendung in Azure ist eine SharePoint Server 2016-Farm wie in Abbildung 4 dargestellt.
   
-**Abbildung 4: Eine hohe Verfügbarkeit 2016 für SharePoint Server-Farm in Azure IaaS**
+**Abbildung 4: Hoch verfügbare SharePoint Server 2016-Farm in Azure IaaS**
 
-![Hoch verfügbare SharePoint Server 2016-Farm in Azure IaaS](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_SP2016.png)
+![Hoch verfügbare SharePoint Server 2016-Farm in Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-SP2016.png)
   
 In Abbildung 4 hostet ein lokales Netzwerk eine Identitätsinfrastruktur und Benutzer. Das Netzwerk ist über ein Standort-zu-Standort-VPN oder eine ExpressRoute-Verbindung mit einem Azure IaaS-Gateway verbunden. Das Azure-VNet enthält die Server der SharePoint Server 2016-Farm. Dabei sind die Front-End-Server, die Anwendungsserver, der SQL Server-Cluster und die Domänencontroller jeweils auf unterschiedlichen Stufen (Tiers) platziert.
   
@@ -120,7 +124,8 @@ In einer solchen Konfiguration haben die Branchenanwendungen in Azure die folgen
   
 - Stufen
     
-    Server mit verschiedenen Rollen innerhalb der Farm Erstellen der Ebenen und jede Ebene hat ein eigenen Subnetz.
+    Die verschiedenen Stufen stehen für die verschiedenen Server mit ihren jeweils eigenen Rollen innerhalb der Farm. Jede Stufe hat ein eigenes Subnetz.
+
     
 - Hohe Verfügbarkeit
     
@@ -138,17 +143,17 @@ Gehen Sie für eine erfolgreiche Implementierung wie folgt vor:
   
 1. Evaluieren und experimentieren
     
-    Finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx) zu verstehen, die Vorteile der Ausführung von SharePoint Server 2016 in Azure.
+    Finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) zu verstehen, die Vorteile der Ausführung von SharePoint Server 2016 in Azure.
     
-    Finden Sie unter [Intranet SharePoint Server 2016 in Azure Test-/Umgebung](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx) zum Erstellen einer simulierten Test-/-Umgebung
+    Finden Sie unter [Intranet SharePoint Server 2016 in Azure Test-/Umgebung](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) zum Erstellen einer simulierten Test-/-Umgebung
     
 2. Entwerfen
     
-    Finden Sie unter [Entwerfen einer SharePoint Server 2016 Farm in Azure](https://technet.microsoft.com/library/mt779108%28v=office.16%29.aspx) , um einen Vorgang zum Bestimmen des Satz von Azure IaaS-Netzwerke, Compute und Storage-Elemente zum Hosten Ihrer Farm und ihrer Einstellungen für die schrittweise.
+    Finden Sie unter [Entwerfen einer SharePoint Server 2016 Farm in Azure](https://docs.microsoft.com/SharePoint/administration/designing-a-sharepoint-server-2016-farm-in-azure) , um einen Vorgang zum Bestimmen des Satz von Azure IaaS-Netzwerke, Compute und Storage-Elemente zum Hosten Ihrer Farm und ihrer Einstellungen für die schrittweise.
     
 3. Bereitstellen
     
-    Finden Sie unter [Bereitstellen von SharePoint Server 2016 mit SQL Server AlwaysOn Availability Groups in Azure](https://technet.microsoft.com/library/mt793552%28v=office.16%29.aspx) schrittweise durchlaufen die End-to-End-Konfiguration der Farm, die hohe Verfügbarkeit in fünf Phasen.
+    Finden Sie unter [Bereitstellen von SharePoint Server 2016 mit SQL Server AlwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) schrittweise durchlaufen die End-to-End-Konfiguration der Farm, die hohe Verfügbarkeit in fünf Phasen.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Identitätsverbund für Office 365 in Azure
 
@@ -156,7 +161,7 @@ Ein weiteres Beispiel für eine mehrstufige, hochverfügbar LOB-Anwendung in Azu
   
 **Abbildung 5: Eine hohe Verfügbarkeit Identitätsverbund-Infrastruktur für Office 365 in Azure IaaS**
 
-![Die Endkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierungsinfrastruktur in Azure](images/Hybrid_Poster/Hybrid_Cloud_Stack_IaaS_ADFS.png)
+![Die Endkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierungsinfrastruktur in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 In Abbildung 5 hostet einer lokalen Netzwerk eine Identitätsinfrastruktur und Benutzer. Es ist mit einem Azure IaaS-Gateway mit einer Standort-zu-Standort-VPN- oder ExpressRoute Verbindung verbunden. Der Azure-VNet enthält Web Proxy-Server, Active Directory-Verbunddienste (AD FS) Server und Windows Server Active Directory (AD)-Domänencontroller.
   

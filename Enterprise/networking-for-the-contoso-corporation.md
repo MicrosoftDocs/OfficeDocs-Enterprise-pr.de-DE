@@ -1,5 +1,5 @@
 ---
-title: "Netzwerkfunktionen für die Contoso Corporation"
+title: Netzwerkfunktionen für die Contoso Corporation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 014b3710-e6e9-485c-8550-975d510eb2fc
-description: 'Zusammenfassung: Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.'
-ms.openlocfilehash: 1f023364c4b2e9c64af954ec9ba63a6197ebc01a
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Hier erfahren Sie die Contoso-Netzwerkinfrastruktur und wie es ExpressRoute für optimierte (RBAC) zu Microsoft Cloud-angeboten verwenden können.'
+ms.openlocfilehash: 89d4182d8a5ef44f936977ec51cc002b51f4b379
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915220"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Netzwerkfunktionen für die Contoso Corporation
 
- **Zusammenfassung:** Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.
+ **Zusammenfassung:** Verstehen der Contoso-Netzwerkinfrastruktur und wie es ExpressRoute für optimierte (RBAC) zu Microsoft Cloud-angeboten verwenden können.
   
 Wenn Sie eine Cloud-inklusive Infrastruktur einführen, realisiert Netzwerktechniker Contoso die Verschiebung in die Möglichkeit, die Netzwerkverkehr zu cloudbasierten Diensten Reisen. Anstatt nur optimieren Datenverkehr auf lokalen Servern und Rechenzentren, muss gleich Aufmerksamkeit für die Optimierung der Datenverkehr von der Kante Internet und über das Internet.
   
@@ -29,9 +30,9 @@ Wenn Sie eine Cloud-inklusive Infrastruktur einführen, realisiert Netzwerktechn
 Contoso hat die folgende Netzwerkinfrastruktur, die in Abbildung 1 dargestellt ist.
 
   
-**Abbildung 1: Contoso WAN-Infrastruktur**
+**Abbildung 1: WAN-Infrastruktur von Contoso**
 
-![WAN-Infrastruktur von Contoso, die Zentralen, Regionalstellen und Zweigstellen verknüpft](images/Contoso_Poster/Contoso_WW_Net.png)
+![WAN-Infrastruktur von Contoso, die Zentralen, Regionalstellen und Zweigstellen verknüpft](media/Contoso-Poster/Contoso-WW-Net.png)
   
 Abbildung 1 zeigt die weltweiten Contoso-Niederlassungen sowie die WAN-Verbindungen der Regional- und Zweigstellen dazwischen.
   
@@ -51,15 +52,20 @@ Weitere Elemente des Netzwerks sind wie folgt:
     
 ## <a name="contosos-app-infrastructure"></a>Contoso app-Infrastruktur
 
-Contoso wurde so konzipiert, die Anwendung und Server-Infrastruktur für Folgendes:
-  
-**Abbildung 2: Contoso Infrastruktur für interne Anwendungen**
+Contoso hat seine Anwendungs- und Serverinfrastruktur für Folgendes konzipiert:
 
-![Contosos Infrastruktur für die interne Anwendung](images/Contoso_Poster/App_Infra.png)
+
+
+
+  
+**Abbildung 2: Contoso Infrastruktur für die interne Anwendung**
+
+![Contosos Infrastruktur für die interne Anwendung](media/Contoso-Poster/App-Infra.png)
   
 - Zweigstellen verwenden lokale Cacheserver, um Dokumente und interne Websites zu speichern, auf die häufig zugegriffen wird.
     
-- Regionale Hubs verwenden regionale Anwendungsserver für die Regions- und Zweigstellen. Diese Server synchronisieren mit Servern in der Unternehmenszentrale Paris.
+- 
+Regionalstellen verwenden regionale Anwendungsserver für die Regional- und Zweigstellenbüros. Diese Server werden mit Servern in der Pariser Zentrale synchronisiert.
     
 - Auf dem Pariser Campus befinden sich die Rechenzentren mit den zentralen-Anwendungsservern, die das gesamte Unternehmen bedienen.
     
@@ -72,7 +78,16 @@ Hier sind die Ergebnisse der Contoso Analyse der Änderungen in ihrem Netzwerk s
   
 |**SaaS cloud-angeboten: Office 365 und zur Abstimmung Dynamics 365**|**Azure PaaS: Mobile Anwendungen**|**Azure IaaS: Serverbasierte Arbeitslasten**|
 |:-----|:-----|:-----|
-|Erfolgreiche Akzeptanz SaaS-Dienste durch Benutzer hängt von hoher Verfügbarkeit und leistungsfähige Konnektivität mit dem Internet oder direkt an Microsoft Cloud Services.  <br/> Für mobile Benutzer wird angenommen, dass ihre aktuellen Internetzugang ausreichen.  <br/> Für Benutzer im Intranet Contoso muss jede Niederlassung analysiert und für den Durchsatz, mit dem Internet und Zeitangaben in Europa-Rechenzentrum von Microsoft Office 365 und zur Abstimmung Dynamics 365-Mandanten hosten optimiert werden.  <br/> |Damit Contoso seine Mobil- und Remotemitarbeiter besser unterstützen kann, werden Legacy-Apps und einige Dateifreigabewebsites überarbeitet und als Azure PaaS-Apps bereitgestellt. Für eine optimale Leistung plant Contoso die Bereitstellung der neuen Apps auf mehreren Azure-Rechenzentren weltweit. Azure Traffic Manager zum Senden von Client-App-Anforderungen (unabhängig davon, ob diese von einem mobilen Benutzer oder einem Computer in dem Büro stammen) an das nächste Azure-Rechenzentrum, das die App hostet.  <br/>  Die IT-Abteilung müssen ihre Netzwerk Health monitoring-Lösung PaaS Anwendung Leistung und der Datenverkehr Verteilergruppe hinzufügen. <br/> |Zum Verschieben einige Server Archivierung und der Vorversion aus den Datencentern Paris Campus und Hinzufügen von Servern zur Verarbeitung Ende Quartals nach Bedarf, plant Contoso virtuellen Maschinen mit in Azure Infrastructure Services verwenden.  <br/> Der Azure-virtuelle Netzwerke, die diesen Servern enthalten müssen für nicht überlappende Adressräume, DNS-routing und integrierte konzipiert.  <br/> Die IT-Abteilung muss diese neuen Server in ihr Netzwerkverwaltungs- und -überwachungssystem einbeziehen.
+|Die erfolgreiche Akzeptanz von SaaS-Diensten durch Benutzer ist von einer hochverfügbaren und leistungsfähigen Konnektivität mit dem Internet oder direkt von Microsoft-Clouddiensten abhängig.
+  <br/> Für mobile Benutzer werden deren aktuelle Internetzugänge als ausreichend angenommen.
+  <br/> Für Benutzer im Intranet Contoso muss jede Niederlassung analysiert und für den Durchsatz, mit dem Internet und Zeitangaben in Europa-Rechenzentrum von Microsoft Office 365 und zur Abstimmung Dynamics 365-Mandanten hosten optimiert werden.  <br/> |Damit Contoso seine Mobil- und Remotemitarbeiter besser unterstützen kann, werden Legacy-Apps und einige Dateifreigabewebsites überarbeitet und als Azure PaaS-Apps bereitgestellt. Für eine optimale Leistung plant Contoso die Bereitstellung der neuen Apps auf mehreren Azure-Rechenzentren weltweit. Azure Traffic Manager zum Senden von Client-App-Anforderungen (unabhängig davon, ob diese von einem mobilen Benutzer oder einem Computer in dem Büro stammen) an das nächste Azure-Rechenzentrum, das die App hostet.  <br/>   
+
+Die IT-Abteilung muss PaaS-Anwendungsleistung und -Datenverkehrsverteilung zu ihrer Lösung für die Überwachung der Netzwerkintegrität hinzufügen.
+ <br/> |Um einige ältere und Archivierungsserver aus den Rechenzentren auf dem Pariser Campus zu entfernen und Server für einen Quartalsabschluss nach Bedarf hinzuzufügen, plant Contoso die Verwendung von virtuellen Computern, die in Azure-Infrastrukturdiensten ausgeführt werden.  
+
+  <br/> Die virtuellen Azure-Netzwerke, zu denen diese Server gehören, müssen für nicht überlappende Adressbereiche, Routing und integriertes DNS ausgelegt werden.
+
+  <br/> Die IT-Abteilung muss diese neuen Server in ihr Netzwerkverwaltungs- und -überwachungssystem einbeziehen.
   <br/> |
    
 ## <a name="contosos-use-of-expressroute"></a>Contoso Verwendung von ExpressRoute
@@ -81,9 +96,9 @@ ExpressRoute ist eine dedizierte WAN-Verbindung von Ihrem Standort an einen Micr
   
 Sie sind mit einer ExpressRoute-Verbindung mit dem Microsoft-Cloud-Netzwerk und allen Microsoft Datacenter Speicherorten in der gleichen Kontinent verbunden. Der Datenverkehr zwischen den Peers Cloud-Speicherort und dem Ziel-Microsoft-Rechenzentrum wird über das Microsoft Cloud-Netzwerk übertragen.
   
-**Abbildung 3: Microsoft Cloud Network weltweit**
+**Abbildung 3: Das weltweite Microsoft Cloud-Netzwerk**
 
-![Das weltweite Microsoft Cloud-Netzwerk](images/Contoso_Poster/MS_WW_Cloud.png)
+![Das weltweite Microsoft Cloud-Netzwerk](media/Contoso-Poster/MS-WW-Cloud.png)
   
 Abbildung 3 zeigt das miteinander verbundene Microsoft Cloud-Netzwerk für die unterschiedlichen Regionen weltweit. 
   
@@ -107,16 +122,20 @@ Diese Verbindung bedeutet für die IT-Abteilung von Contoso:
 
 Contoso verwendet die folgenden Schritte, um sein Netzwerk für die Microsoft-Cloud vorzubereiten:
   
-1. Optimieren der Computer der Mitarbeiter für den Internetzugriff
+1. Optimieren von Mitarbeitercomputern für Internetzugriff
+
     
     Einzelne Computer werden überprüft werden, um sicherzustellen, dass Folgendes in neuester Version installiert ist: TCP/IP-Stapel, Browser, NIC-Treiber sowie Sicherheits- und Betriebssystemupdates.
 
     
 2. Analysieren der Internetnutzung in jedem Büro und ggf. mehr Bandbreite
     
-    Jeder Office wird für die aktuelle Internet-Nutzung analysiert werden und Bandbreite der WAN-Verbindung wird erhöht, wenn 70 % oder höher Auslastung betrieben.
     
-3. Analysieren der DMZ Systeme unter jedem Office für eine optimale Leistung
+Jedes Büro wird hinsichtlich seiner aktuellen Internetnutzung analysiert, und die Bandbreite der WAN-Verbindung wird erhöht, wenn die Auslastung bei 70 % oder darüber liegt.
+
+    
+3. Analysieren der DMZ-Systeme in jedem Büro hinsichtlich optimaler Leistung
+
     
     Firewalls, Angriffserkennungssysteme und andere Systeme im Internetpfad werden hinsichtlich optimaler Leistung analysiert.
  Proxyserver werden nach Bedarf aktualisiert (Update oder Upgrade).
@@ -130,12 +149,13 @@ Contoso verwendet die folgenden Schritte, um sein Netzwerk für die Microsoft-Cl
     Es wird ein Azure Traffic Manager-Profil getestet, in dem die Leistungsroutingmethode verwendet wird, um Kenntnisse zur Verteilung von Internetdatenverkehr an regionale Standorte zu erlangen.
 
     
-6. Reservieren von privaten Adressraum für Azure VNets
+6. Reservieren von privatem Adressraum für virtuelle Azure-Netzwerke
+
     
     Reservieren Sie entsprechend der Anzahl von prognostizierten kurz- und langfristigen Servern in Azure IaaS privaten Adressraum für virtuelle Azure-Netzwerke und deren Subnetze.
 
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Contoso in der Microsoft-Cloud](contoso-in-the-microsoft-cloud.md)
   

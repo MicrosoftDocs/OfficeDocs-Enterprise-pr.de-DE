@@ -8,19 +8,22 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 84348d0c-d9d1-4a98-9b99-8433f9b70e45
-description: "Zusammenfassung: Informieren Sie sich auf dem Satz von Cloud Speicher Bausteine, zu denen Sie zum Erstellen Ihrer eigenen Speicherdienst oder eine bestimmte Lösung verwenden können."
-ms.openlocfilehash: be7ea3e7526115f1a983ec89f2afeb5d130daee1
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Informieren Sie sich über die Details der Cloudspeicher-Bausteine, die Sie verwenden können, um einen eigenen Speicherdienst oder eine Speicherlösung zu erstellen.'
+ms.openlocfilehash: 8ef5d7a99c4e82d9a4fc3eb281a4af505887b792
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915680"
 ---
 # <a name="build-from-the-ground-up"></a>Von Grund auf neu aufgebaut
 
- **Zusammenfassung:** Rufen Sie die Details zu den Satz von Cloud Speicher Bausteine, zu denen Sie zum Erstellen Ihrer eigenen Speicherdienst oder eine bestimmte Lösung verwenden können.
+ **Zusammenfassung:** Informieren Sie sich über die Details der Cloudspeicher-Bausteine, die Sie verwenden können, um einen eigenen Speicherdienst oder eine Speicherlösung zu erstellen.
   
 Speicherlösungen vom Typ „Von Grund auf neu aufgebaut“ haben folgende Eigenschaften:
   
@@ -70,7 +73,12 @@ Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing
 
 ### <a name="features"></a>Features
 
-- Jedes Storage-Konto kann bis zu 500 TB enthalten (ein Abonnement kann mehrere Speicherkonten müssen)
+- Jedes Speicherkonto kann bis zu 500 TB umfassen (ein Abonnement kann über mehrere Speicherkonten verfügen)
+
+
+
+
+
     
 - Speicherkonten sind in Containern organisiert, die Blobs enthalten können und auf die Sicherheit angewendet werden kann
     
@@ -144,7 +152,8 @@ Informationen zu den Kosten finden Sie [hier](http://azure.microsoft.com/pricing
     
 - Normalerweise geringere Kosten als traditionelles SQL
     
-- Sehr schnell, wenn Abfragen für Schlüssel beeinträchtigt, wenn Wert Abfragen
+- Sehr schnell bei Abfragen nach dem Schlüssel, langsam bei Abfragen nach dem Wert
+
     
 - Hochgradig skalierbar; beliebige Mengen von Tabellen bis zur Grenze des Speicherkontos
     
@@ -190,7 +199,7 @@ Beachten Sie beim Entwerfen Ihrer benutzerdefinierten Speicherlösung mit Azure 
     
 - Partitionieren Sie die Daten entweder vertikal (nach Tabellen) oder horizontal (über mehrere Shards segmentierte Tabellen), um die Auslastung auf mehrere Datenbanken zu verteilen.
     
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Microsoft-Cloud-Speicher für Enterprise-Architekten](microsoft-cloud-storage-for-enterprise-architects.md)
   

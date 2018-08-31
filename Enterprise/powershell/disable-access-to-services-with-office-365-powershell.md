@@ -3,7 +3,7 @@ title: Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/08/2018
+ms.date: 08/20/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren.
-ms.openlocfilehash: 44b0ed84bb8fd098412c69258834194b2b1eeb2f
-ms.sourcegitcommit: f42ca73d23beb5770981e7a93995ef3be5e341bb
+ms.openlocfilehash: d65308746ac5c2b60f4749588455fa66471069e3
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "22196822"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22914990"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 
 **Zusammenfassung:** Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren.
   
-Wenn ein Office 365-Konto eine Lizenz von einem Lizenzierungsplan zugeordnet ist, sind Office 365-Dienste für den Benutzer über diese Lizenz verfügbar. Sie können jedoch die Office 365-Dienste steuern, die der Benutzer zugreifen kann. Obwohl die Lizenz Zugriff auf SharePoint Online ermöglicht, können Sie beispielsweise Zugriff darauf deaktivieren. Office 365 PowerShell können Sie tatsächlich den Zugriff auf eine beliebige Anzahl von Diensten für deaktivieren:
+Wenn ein Office 365-Konto eine Lizenz von einem Lizenzierungsplan zugeordnet ist, sind Office 365-Dienste für den Benutzer über diese Lizenz verfügbar. Sie können jedoch die Office 365-Dienste steuern, die der Benutzer zugreifen kann. Obwohl die Lizenz Zugriff auf die SharePoint Online-Dienst ermöglicht, können Sie Zugriff darauf deaktivieren. Office 365 PowerShell können Sie um Zugriff auf eine beliebige Anzahl von Diensten für eine bestimmte Lizenzierungsplan für zu deaktivieren:
 
 - ein einzelnes Konto
     
@@ -47,9 +47,9 @@ Wenn ein Office 365-Konto eine Lizenz von einem Lizenzierungsplan zugeordnet ist
     
 - Wenn Sie das Cmdlet **Get-MsolUser** ohne mit dem _Alle_ Parameter verwenden, werden nur die ersten 500 Benutzerkonten zurückgegeben.
     
-## <a name="specific-office-365-services-for-specific-users-for-a-single-licensing-plan"></a>Planen von bestimmte Office 365-Diensten für bestimmte Benutzer für die einzelnen Lizenzierung
+## <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a>Deaktivieren von bestimmten Office 365-Diensten für bestimmte Benutzer für einen bestimmten licensing plan
   
-Um eine bestimmte Gruppe von Office 365-Diensten für Benutzer aus einer einzelnen Lizenzierungsplan deaktivieren möchten, führen Sie die folgenden Schritte aus:
+Um eine bestimmte Gruppe von Office 365-Diensten für Benutzer, für eine bestimmte Lizenzierungsplan deaktivieren möchten, führen Sie die folgenden Schritte aus:
   
 1. Identifizieren Sie die unerwünschten Dienste in den Lizenzierungsplan mithilfe der folgenden Syntax:
     
@@ -133,53 +133,12 @@ Um eine bestimmte Gruppe von Office 365-Diensten für Benutzer aus einer einzeln
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
+Wenn Sie Zugriff auf Dienste für mehrere lizenzierungspläne deaktivieren möchten, wiederholen Sie für jede Lizenzierungsplan, die sicherstellen, dass der obigen Anleitung:
+
+- Die Benutzerkonten haben den Lizenzierungsplan zugewiesen wurde.
+- So deaktivieren Sie die Dienste sind in den Lizenzierungsplan verfügbar.
+
 Um Office 365-Diensten für Benutzer zu deaktivieren, während Sie sie an einer Lizenzierungsplan zuweisen, finden Sie unter [Zugriff auf Dienste beim Zuweisen von Benutzerlizenzen deaktivieren](disable-access-to-services-while-assigning-user-licenses.md).
-  
-## <a name="specific-office-365-services-for-users-from-all-licensing-plans"></a>Bestimmten Office 365-Diensten für Benutzer aus allen lizenzierungspläne
-  
-Führen Sie die folgenden Schritte, um Office 365-Diensten für Benutzer in allen verfügbaren lizenzierungspläne zu deaktivieren:
-  
-1. Kopieren Sie dieses Skript, und fügen Sie es in Editor ein.
-    
-  ```
-  $AllLicensingPlans = Get-MsolAccountSku
-for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
-{
-    $O365Licences = New-MsolLicenseOptions -AccountSkuId $AllLicensingPlans[$i].AccountSkuId -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
-    Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $O365Licences
-}
-  ```
-
-2. Passen Sie die folgenden Werte für Ihre Umgebung an:
-    
-  -  _<UndesirableService>_ In diesem Beispiel werden wir Office Online und SharePoint Online verwenden.
-    
-  -  _<Account>_ In diesem Beispiel verwenden wir belindan@litwareinc.com.
-    
-    Das angepasste Skript sieht wie folgt aus:
-    
-  ```
-  $AllLicensingPlans = Get-MsolAccountSku
-for($i = 0; $i -lt $AllLicensingPlans.Count; $i++)
-{
-    $O365Licences = New-MsolLicenseOptions -AccountSkuId $AllLicensingPlans[$i].AccountSkuId -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
-    Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $O365Licences
-}
-  ```
-
-3. Speichern Sie das Skript als `RemoveO365Services.ps1` an einem Speicherort, die Sie leicht zu finden. In diesem Beispiel werden wir speichern Sie die Datei in `C:\\O365 Scripts`.
-    
-4. Führen Sie das Skript in Office 365 PowerShell mithilfe des folgenden Befehls.
-    
-  ```
-  & "C:\O365 Scripts\RemoveO365Services.ps1"
-  ```
-
-> [!NOTE]
-> Um die Effekte eines dieser Verfahren rückgängig zu machen (d. h., die deaktivierten Dienste erneut aktivieren), führen Sie das Verfahren erneut aus, aber verwenden Sie den Wert `$null` für den Parameter _DisabledPlans_ .
-  
-[Nach oben](disable-access-to-services-with-office-365-powershell.md#RTT)
-
 
 
 ## <a name="new-to-office-365"></a>Neu bei Office 365?

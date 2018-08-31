@@ -8,15 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3e9c405a-415b-4584-aa7e-f2489299c457
-description: "Zusammenfassung: In diesem Artikel erfahren Sie, wie Contoso eine SQL Server Stretch-Datenbank implementiert hat, um seinen Bedarf an lokalem Datenspeicher sowie seine täglichen laufenden Kosten zu reduzieren."
-ms.openlocfilehash: 9d8d51aa1bc7a304d1148111aedd54916d9e8052
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+description: 'Zusammenfassung: In diesem Artikel erfahren Sie, wie Contoso eine SQL Server Stretch-Datenbank implementiert hat, um seinen Bedarf an lokalem Datenspeicher sowie seine täglichen laufenden Kosten zu reduzieren.'
+ms.openlocfilehash: 791b5d4f14ba7246221cf9b459c31c9ba1b54099
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915720"
 ---
 # <a name="moving-historical-transaction-data-to-the-cloud"></a>Verschieben von historischen Transaktionsdaten in die Cloud
 
@@ -28,7 +31,7 @@ Contoso erkannte die geschäftliche Notwendigkeit einer Konsolidierung seiner Re
   
 **Abbildung 1: SQL Server Stretch-Datenbank**
 
-![SQL Server Stretch-Datenbank als Hybriddatenlösung](images/Contoso_Poster/StretchDB01.png)
+![SQL Server Stretch-Datenbank als Hybriddatenlösung](media/Contoso-Poster/StretchDB01.png)
   
 Abbildung 1 zeigt, wie ein SQL-Client T-SQL-Abfragen an einen Server sendet, auf dem SQL Server 2016 ausgeführt wird. Dieser Server leitet die Abfragen anschließend an eine Azure SQL Stretch-Datenbank in Azure-PaaS weiter.
   
@@ -52,7 +55,7 @@ Unten sehen Sie die finale Konfiguration für einen einzelnen Server im Pariser 
   
 **Abbildung 2: Implementierung einer Stretch-Datenbank für einen Server im Contoso-Rechenzentrum**
 
-![Contoso-Konfiguration: SQL Server Stretch-Datenbank für einen einzelnen Computer, auf dem SQL Server ausgeführt wird](images/Contoso_Poster/StretchDB02.png)
+![Contoso-Konfiguration: SQL Server Stretch-Datenbank für einen einzelnen Computer, auf dem SQL Server ausgeführt wird](media/Contoso-Poster/StretchDB02.png)
 
   
 Abbildung 2 zeigt, wie Benutzerabfragen an einen Anwendungsserver im Contoso-Rechenzentrum in SQL-Abfragen umgewandelt und an eine Azure SQL Stretch-Datenbank in Azure-PaaS weitergeleitet werden.
