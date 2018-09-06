@@ -1,9 +1,9 @@
 ---
-title: Während und nach der Daten verschoben
+title: Während und nach der Datenverschiebung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,14 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Verschiebt Daten werden mit minimaler Beeinträchtigung für Endbenutzer an einen Back-End-Vorgang. Während Microsoft alle Dienste und die zugehörigen Daten für Ihre Mandanten zu einer neuen Datacenter Geo verschiebt ist keine Aktion erforderlich. Die Datenübertragung und Validierung auftreten im Hintergrund im voraus mit minimaler Beeinträchtigung Benutzern.
-ms.openlocfilehash: 8813e73dcbce7b6ea24e497929ca6b8e0928e4e7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540877"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839603"
 ---
-# <a name="during-and-after-your-data-move"></a>Während und nach der Daten verschoben
+# <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
 Verschiebt Daten werden mit minimaler Beeinträchtigung für Endbenutzer an einen Back-End-Vorgang. Während Microsoft alle Dienste und die zugehörigen Daten für Ihre Mandanten zu einer neuen Datacenter Geo verschiebt ist keine Aktion erforderlich. Die Datenübertragung und Validierung auftreten im Hintergrund im voraus mit minimaler Beeinträchtigung Benutzern.
   
@@ -94,7 +94,7 @@ Die eDiscovery- und Überwachungsfunktionen in die Office 365-Sicherheit &amp; C
   
 Die folgende Tabelle zeigt, wie eDiscovery und Überwachung über die Exchange-Verwaltungskonsole und die Sicherheit zugreifen &amp; Compliance Center.
   
-||**Exchange-Verwaltungskonsole**|**Sicherheit &amp; Compliance Center**|
+||**Exchange Admin Center**|**Sicherheit &amp; Compliance Center**|
 |:-----|:-----|:-----|
 |eDiscovery  <br/> | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel " **Admin** ". </br> Klicken Sie auf **Admin zentriert** \> **Exchange**. </br> Wählen Sie die **Verwaltung der Richtlinientreue** \> **Compliance-eDiscovery &amp; halten**. | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel "Admin". </br> Klicken Sie auf **Admin zentriert** \> **Security &amp; Compliance**. </br> Wählen Sie **Search &amp; Untersuchung** \> **eDiscovery**.|
 |Überwachung  <br/> | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel " **Admin** ". </br> Klicken Sie auf **Admin zentriert** \> **Exchange**. Wählen Sie die **Verwaltung der Richtlinientreue** \> **Überwachung**. | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel "Admin". </br> Klicken Sie auf **Admin zentriert** \> **Security &amp; Compliance**. </br> Wählen Sie **Search &amp; Untersuchung** \> **Audit Log suchen**. |
@@ -165,4 +165,13 @@ Alle Benutzer werden aus der Skype für Business-Clientsoftware während Abnahme
 
 Wir fortfahren nur Kundendaten für Exchange Online, SharePoint Online und Skype für Unternehmen. Wir werden die Daten für andere Dienste nicht verschoben. Es ist keine Änderung oder Einfluss auf die Sie als ein Kunde oder eine andere Dienste. Des Verschiebens nicht beeinflussen, und der Speicherort der ihre Kundendaten bleibt unverändert.
   
+## <a name="related-topics"></a>Verwandte Themen 
+ 
+[Anfordern der Datenverschiebung](request-your-data-move.md)
+    
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
+  
+[Neue Datacenter Geos für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure-Diensten nach region](https://azure.microsoft.com/en-us/regions/)
 

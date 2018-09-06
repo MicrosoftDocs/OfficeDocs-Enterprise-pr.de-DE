@@ -3,7 +3,7 @@ title: Verschieben von Core Daten zur neuen Office 365 Datacenter geos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Neue Datacenter Geos Hinzufügen von Kapazität und Ressourcen zur Unterstützung der unsere laufenden Kunden bei Bedarf und Verwendungsanalyse Wachstum zu berechnen. Darüber hinaus bieten die neuen Datacenter Geos in geografisch Daten vor-Ort-für Core Kundendaten. Core Kundendaten ist ein Begriff, auf eine Teilmenge von Kundendaten in die Microsoft Online Services-Begriffe definiert bezieht: Exchange Online Inhalt von Postfächern (e-Mail-Body, Kalendereinträge und den Inhalt von e-Mail-Anlagen) und SharePoint Online site Inhalt und die Dateien an diesem Standort gespeichert und Dateien zu OneDrive for Business hochgeladen.'
-ms.openlocfilehash: 1f3af15852b1221daf2e2d994653c8bb9cf697e4
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 362cb257f2098c1acaf08541f34278ed9b4987d2
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540973"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839583"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben von Core Daten zur neuen Office 365 Datacenter geos
 
@@ -65,9 +65,9 @@ Kunden benötigen, in die neue Geo verschoben ihre Hauptdaten:
     
 ## <a name="related-topics"></a>Verwandte Themen 
  
-[Wie Sie Ihre Daten verschieben anfordern](request-your-data-move.md)
+[Anfordern der Datenverschiebung](request-your-data-move.md)
     
-[Allgemeine häufig gestellte Fragen zum Verschieben von Daten](data-move-faq.md)
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
 [Neue Datacenter Geos für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

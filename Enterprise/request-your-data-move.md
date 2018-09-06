@@ -1,9 +1,9 @@
 ---
-title: Wie Sie Ihre Daten verschieben anfordern
+title: Anfordern der Datenverschiebung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Office 365-Kunden müssen vor dem Termin für ihres Landes beantragen, um die Kundendaten ihrer teilnehmenden Office 365-Dienste in ihre neuen Geo verschoben haben.
-ms.openlocfilehash: 850a3a81b7e0405d47e36726e328ea078ae3f55c
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
+ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23222977"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839573"
 ---
-# <a name="how-to-request-your-data-move"></a>Wie Sie Ihre Daten verschieben anfordern
+# <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
 > [!NOTE]
 > Die Informationen auf dieser Seite betrifft nur Kunden, die vorhandenen Office 365-Mandanten vor die neuen Rechenzentren in ihre Geo gestartet. 
@@ -109,5 +109,15 @@ Studien Mandanten kann nicht mit Ihren vorhandenen Mandanten kombiniert werden:
 ### <a name="notify-users-to-update-out-of-date-exchange-settings-on-mobile-devices"></a>Benachrichtigen Sie Benutzer zum Aktualisieren von veralteter Exchange-Einstellungen auf mobilen Geräten
 
 Wenn Benutzer ein mobiles Geräts mit dem Exchange-Server auf **m.outlook.com** oder **podxxxxx.outlook.com**festgelegt haben, wird empfohlen, dass Benutzer **outlook.office365.com**, umschalten Befolgen der Anweisungen in [Set up ein mobiles Gerät synchronisieren mit Ihrem Konto](https://support.office.com/article/c9139caf-01ab-41a0-827c-3c06ee569ed3).
+
+## <a name="related-topics"></a>Verwandte Themen
+
+[Verschieben von Core Daten zur neuen Office 365 Datacenter geos](moving-data-to-new-datacenter-geos.md)
+
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
+
+[Neue Datacenter Geos für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+  
+[Azure-Diensten nach region](https://azure.microsoft.com/en-us/regions/)
   
 
