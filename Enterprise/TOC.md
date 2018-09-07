@@ -1,4 +1,4 @@
-# Modelle einer Cloudarchitektur
+# [Modelle einer Cloudarchitektur](microsoft-cloud-it-architecture-resources.md)
 ## [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
 ### [Weiterentwickeln Ihres Netzwerks für Cloudkonnektivität](evolving-your-network-for-cloud-connectivity.md)
 ### [Gemeinsame Elemente der Microsoft-Cloudkonnektivität](common-elements-of-microsoft-cloud-connectivity.md)
@@ -66,7 +66,7 @@
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
 
-# Testen von Office 365
+# [Testen von Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Basiskonfiguration der Entwicklungs-/Testumgebung](base-configuration-dev-test-environment.md)
 ## [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
 ### [Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
