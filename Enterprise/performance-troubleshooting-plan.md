@@ -1,5 +1,5 @@
 ---
-title: Leistungsbezogene Problembehandlung Plan für Office 365
+title: Plan zur Problembehandlung für Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: Müssen Sie wissen, die Schritte zum Identifizieren und Beheben von Problemen fällt ab, hängt und langsam zwischen SharePoint Online, OneDrive for Business, Exchange Online oder Skype für Business Online und Ihrer Clientcomputer? Vor dem Aufruf der Unterstützung kann in diesem Artikel Behebung von Leistungsproblemen Office 365 und auch einige der gängigsten Probleme beheben.
-ms.openlocfilehash: c7eed9498920c601b3b345e8d1879ddbb16c56c3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
+ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540883"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849368"
 ---
-# <a name="performance-troubleshooting-plan-for-office-365"></a>Leistungsbezogene Problembehandlung Plan für Office 365
+# <a name="performance-troubleshooting-plan-for-office-365"></a>Plan zur Problembehandlung für Office 365
 
 Müssen Sie wissen, die Schritte zum Identifizieren und Beheben von Problemen fällt ab, hängt und langsam zwischen SharePoint Online, OneDrive for Business, Exchange Online oder Skype für Business Online und Ihrer Clientcomputer? Vor dem Aufruf der Unterstützung kann in diesem Artikel Behebung von Leistungsproblemen Office 365 und auch einige der gängigsten Probleme beheben.
   
@@ -120,14 +120,14 @@ Nach der Installation von Netmon 3.4 Öffnen Sie das Tool, und gehen Sie folgend
   
  **Führen Sie HTTPWatch und reproduzieren Sie das Problem**
   
-1. HTTPWatch ist ein Browser-Plug-in, das Tool im Browser Verfügbarmachen geringfügig für die einzelnen Versionen von Internet Explorer. Im Browser Internet Explorer finden Sie in der Regel HTTPWatch unter der Leiste Befehle.</br></br>Wenn Sie die HTTPWatch-Plug-in im Browserfenster sehen, die Version des Browsers Kontrollkästchen durch Klicken Sie auf Hilfe \> zu, oder klicken Sie in späteren Versionen von Internet Explorer auf die Zahnrad-Symbol und zu Internet Explorer. Um die **Befehle** Leiste zu starten, mit der rechten Maustaste in der Menüleiste in Internet Explorer, und klicken Sie auf **Befehle Leiste**. In der Vergangenheit HTTPWatch wurde verknüpft mit den Befehlen und das Explorer-Leisten, also einmal Sie installieren, wenn das Symbol (auch nach dem Neustart) Überprüfen von **Tools**und Ihrer Symbolleisten für das Symbol nicht sofort angezeigt. Denken Sie daran, dass Symbolleisten angepasst werden können und Optionen für diese hinzugefügt werden können.</br>
+1. HTTPWatch ist ein Browser-Plug-in, das Tool im Browser Verfügbarmachen geringfügig für die einzelnen Versionen von Internet Explorer. Im Browser Internet Explorer finden Sie in der Regel HTTPWatch unter der Leiste Befehle.</br>Wenn Sie die HTTPWatch-Plug-in im Browserfenster sehen, die Version des Browsers Kontrollkästchen durch Klicken Sie auf Hilfe \> zu, oder klicken Sie in späteren Versionen von Internet Explorer auf die Zahnrad-Symbol und zu Internet Explorer. Um die **Befehle** Leiste zu starten, mit der rechten Maustaste in der Menüleiste in Internet Explorer, und klicken Sie auf **Befehle Leiste**. In der Vergangenheit HTTPWatch wurde verknüpft mit den Befehlen und das Explorer-Leisten, also einmal Sie installieren, wenn das Symbol (auch nach dem Neustart) Überprüfen von **Tools**und Ihrer Symbolleisten für das Symbol nicht sofort angezeigt. Denken Sie daran, dass Symbolleisten angepasst werden können und Optionen für diese hinzugefügt werden können.</br>
     ![Internet Explorer Befehl Symbolleiste HTTPWatch Symbol angezeigt.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. Starten Sie HTTPWatch in einer Internet Explorer-Browserfenster. Es wird an den Browser am unteren Rand das Fenster verankert angezeigt. Klicken Sie auf **Aufzeichnen**.
     
 3. Reproduzieren Sie die genauen Schritte das Leistungsproblem beteiligt. Klicken Sie auf die Schaltfläche **Beenden** in HTTPWatch. 
     
-4. **Speichern Sie** die HTTPWatch oder **per E-Mail senden**. Denken Sie daran, nennen Sie die Datei so, dass es enthält Datums-und Uhrzeitinformationen und der Angabe, ob Ihr Video veranschaulicht die Leistung gut oder schlecht enthält.</br></br>![HTTPWatch mit der Netzwerk-Registerkarte für eine Seitenladung der Office 365-Homepage.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br></br>
+4. **Speichern Sie** die HTTPWatch oder **per E-Mail senden**. Denken Sie daran, nennen Sie die Datei so, dass es enthält Datums-und Uhrzeitinformationen und der Angabe, ob Ihr Video veranschaulicht die Leistung gut oder schlecht enthält.</br>![HTTPWatch mit der Netzwerk-Registerkarte für eine Seitenladung der Office 365-Homepage.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
     Dieser Screenshot hat ihren Ursprung die Professional-Version von HTTPWatch. Sie können in der Basisversion auf einem Computer mit einem Professional-Version übernommen Spuren öffnen und Lesen sie es. Zusätzlicher Informationen kann in die durch diese Methode verfolgen verfügbar sein.
     
 ## <a name="problem-steps-recorder"></a>Problem Schritte Aufzeichnung
