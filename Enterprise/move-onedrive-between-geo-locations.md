@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: In diesem Artikel finden Sie Informationen zum Verschieben einer OneDrive-Website an einen anderen geografischen Standort.
-ms.openlocfilehash: 80768d0838d1d5d072d3e221c4c2b4b1af78dae6
-ms.sourcegitcommit: aabd369fc8b397f9e738374d42d8afd18b96d469
+ms.openlocfilehash: d951e42ba1881483438383719390c35d0227da7b
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "19174901"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915330"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einen anderen geografischen Standort 
 
@@ -39,6 +39,14 @@ Beim Verschieben von OneDrive-Websites zwischen geografischen Standorten, ist es
 
 Vergessen Sie nicht, Ihren Benutzer eine E-Mail zu schicken, wenn die Verschiebung erfolgreich abgeschlossen wurde, um sie darüber zu informieren, dass sie ihre Arbeit in OneDrive fortsetzen können.
 
+## <a name="scheduling-onedrive-site-moves"></a>Planen der Verschiebung von OneDrive-Sites
+
+Sie können die Verschiebung von OneDrive-Sites im Voraus planen (weiter unten in diesem Artikel beschrieben). Wir empfehlen, zunächst mit einer kleinen Anzahl Benutzer zu beginnen, um die Arbeitsabläufe und Kommunikationsstrategien zu überprüfen. Sobald Sie mit dem Prozess vertraut sind, können Sie die Verschiebungen wie folgt planen:
+
+- Sie können bis zu 4.000 Verschiebungen zugleich planen.
+- Wenn mit dem Verschieben begonnen wird, können Sie weitere planen, bis zu maximal jeweils 4.000 ausstehenden Verschiebungen in der Warteschlange.
+- Es wird empfohlen, nicht mehr als 4.000 Verschiebungen pro Monat zu planen.
+
 ## <a name="moving-a-onedrive-site"></a>Verschieben einer OneDrive-Website
 
 Um geografische Standorte in OneDrive zu verschieben, muss der Mandantenadministrator zunächst den bevorzugten Datenspeicherort für den Benutzer auf den entsprechenden geografischen Standort festlegen. Warten Sie nach Festlegung des bevorzugten Datenspeicherorts mindestens 24 Stunden, bis der bevorzugte Datenspeicherort mit allen geografischen Standorten synchronisiert wird, bevor Sie mit dem Verschieben von geografischen Standorten in OneDrive beginnen.
@@ -51,7 +59,7 @@ Beispiel: Um die OneDrive-Umgebung des Benutzers „Matt@contosoenergy.onmicroso
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations_image1.png)
+![](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Überprüfen der Umgebung
 
@@ -86,7 +94,7 @@ Führen Sie zum Beispiel zum Verschieben von OneDrive von matt@contosoenergy.onm
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations_image2.png)
+![](media/move-onedrive-between-geo-locations-image2.png)
 
 Wenn Sie die Verschiebung eines geografischen Standorts zu einem späteren Zeitpunkt durchführen möchten, verwenden Sie einen der folgenden Parameter:
 

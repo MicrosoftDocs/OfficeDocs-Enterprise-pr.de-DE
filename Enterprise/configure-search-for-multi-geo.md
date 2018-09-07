@@ -11,11 +11,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen zum Konfigurieren der Suche in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: d7e9109eaa7afcf36ea047d00c0bba8f16dd0fde
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915060"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Konfigurieren der Suche für Multi-Geo in OneDrive for Business
 
@@ -81,7 +82,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 </tr>
 <tr class="even">
 <td align="left">Sucheinschränkungen</td>
-<td align="left">Die Suche gibt Einschränkungen aus allen geografischen Standorten eines Mandanten zurück und aggregiert diese dann. Die Aggregation ist die beste Bemühung und bedeutet, dass die Anzahl der Einschränkungen nicht exakt 100%ig ist. Für die meisten suchgesteuerten Szenarien ist diese Genauigkeit ausreichend.</td>
+<td align="left">Die Suche gibt Einschränkungen aus allen geografischen Standorten eines Mandanten zurück und aggregiert diese dann. Die Aggregation ist die beste Bemühung und bedeutet, dass die Anzahl der Einschränkungen nicht exakt 100%ig ist. Für die meisten suchgesteuerten Szenarien ist diese Genauigkeit ausreichend. </td>
 <td align="left">Führen Sie für suchgesteuerte Anwendungen, die von der Vollständigkeit der Einschränkungen abhängig sind, eine Abfrage für jeden geografischen Standort getrennt voneinander durch, ohne die Multi-Geo-Auffächerung zu verwenden.</td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,8 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, werden in einer M
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Wie funktioniert die Suche in einer Multi-Geo-Umgebung?
 
 **Alle** Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
-<img src="media/configure-search-for-multi-geo_image1-1.png" />
+
+<img src="media/configure-search-for-multi-geo-image1-1.png" />
 
 1. Ein Suchclient ruft den REST-Endpunkt für die Suche mit der Abfrageeigenschaft „EnableMultiGeoSearch= true“ auf.
 2. Die Abfrage wird an alle geografischen Standorte im Mandanten gesendet.
@@ -150,8 +152,8 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 
 3.  Wählen Sie die Sparte, die Sie einrichten möchten, klicken Sie in der oberen rechten Ecke auf das Zahnradsymbol für **Einstellungen**, und klicken Sie auf **Seite bearbeiten**. Die Seite mit den Suchergebnissen wird im Bearbeitungsmodus geöffnet.
 
-     ![](media/configure-search-for-multi-geo_image2.png)
-1.  Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet. ![](media/configure-search-for-multi-geo_image3.png)
+     ![](media/configure-search-for-multi-geo-image2.png)
+1.  Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Wählen Sie im Webpart-Toolbereich im Abschnitt **Einstellungen** unter **Einstellungen für das Ergebnissteuerelement** die Option **Multi-Geo-Ergebnisse anzeigen**, damit das Suchergebnisse-Webpart Ergebnisse von allen geografischen Standorten anzeigt.
 
@@ -227,6 +229,7 @@ MultiGeoSearchStatus – Dies ist eine Eigenschaft, die die SharePoint-Suche-API
 
 Mit einer GET-Anforderung geben Sie die Abfrageparameter in der URL an. Mit einer POST-Anforderung übergeben Sie die Abfrageparameter im Text im JSON-Format.
 
+
 #### <a name="request-headers"></a>Anforderungsheader
 
 <table>
@@ -250,7 +253,10 @@ https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='Enable
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Beispiel für eine GET-Anforderung, die für **einige** geografischen Standorte aufgefächert wird
 
-https:// <tenant>/_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\:"NAM"\,Endpoint\:"https\://contosoNAM.sharepoint.com"\,SourceId\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\,{DataLocation\:"CAN"\,Endpoint\:"https\://contosoCAN.sharepoint-df.com"}]'
+https:// \<Mandant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+
+> [!NOTE]
+> Kommas und Doppelpunkten in der Liste der geografischen Standorte für die Eigenschaft MultiGeoSearchConfiguration wird ein **umgekehrtes Schrägstrichzeichen** vorangestellt. Dies hat den Grund, dass in GET-Anforderungen Doppelpunkte zum Trennen von Eigenschaften und Kommas zum Trennen von Argumenten von Eigenschaften verwendet werden. Ohne den umgekehrten Schrägstrich als Escapezeichen würde die MultiGeoSearchConfiguration-Eigenschaft falsch interpretiert.
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>Beispiel für eine POST-Anforderung, die für **alle** geografischen Standorte aufgefächert wird
 

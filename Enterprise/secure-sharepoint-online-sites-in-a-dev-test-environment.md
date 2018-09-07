@@ -11,15 +11,17 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.custom: ''
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Zusammenfassung: Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: fecb725999c7958dca1278c1236fcf251adc33cd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 49153a5c4256e7aa0e5ba5f6d2ac53c4e56b5bdc
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "19193725"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915770"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Sichern von SharePoint Online-Websites in einer Entwicklungs-/Testumgebung
 
@@ -27,7 +29,7 @@ ms.locfileid: "19193725"
   
 In diesem Artikel finden Sie Schritt-für-Schritt-Anleitungen zum Erstellen einer Entwicklungs-/Testumgebung, die vier verschiedene Typen von SharePoint Online-Teamwebsites für die [Sichern von SharePoint Online-Websites und -Dateien](secure-sharepoint-online-sites-and-files.md)-Lösung enthält.
   
-![Alle vier Teamwebsites in der sicheren Entwicklungs-/Testumgebung von SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Alle vier Teamwebsites in der sicheren Entwicklungs-/Testumgebung von SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 Verwenden Sie diese Entwicklungs-/Testumgebung zum Experimentieren mit den Verhaltensweisen beim Schutz von Informationen und zur Feinabstimmung der Einstellungen für Ihre spezifischen Anforderungen vor der Bereitstellung von SharePoint Online-Teamwebsites in der Produktion.
   
@@ -270,7 +272,7 @@ Konfigurieren Sie anschließend den Ordner „Dokumente“ der organisationsweit
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Grundschutz für die organisationsweite öffentliche SharePoint Online-Teamwebsite.](images/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
+![Grundschutz für die organisationsweite öffentliche SharePoint Online-Teamwebsite.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
   
 ### <a name="project-1-team-site"></a>Teamwebsite für Projekt 1
 
@@ -304,7 +306,7 @@ Als Nächstes konfigurieren Sie den Ordner „Dokumente“ für die Teamwebsite 
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Grundschutz für die private SharePoint Online-Teamwebsite von Projekt1.](images/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
+![Grundschutz für die private SharePoint Online-Teamwebsite von Projekt1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
   
 ### <a name="marketing-campaigns-team-site"></a>Marketingkampagnen – Teamwebsite
 
@@ -420,7 +422,7 @@ Konfigurieren Sie als Nächstes eine Richtlinie zur Verhinderung von Datenverlus
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Schutzebene „Vertraulich“ für die isolierte SharePoint Online-Teamwebsite mit Marketingkampagnen.](images/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
+![Schutzebene „Vertraulich“ für die isolierte SharePoint Online-Teamwebsite mit Marketingkampagnen.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Teamwebsite für Unternehmensstrategie
 
@@ -568,9 +570,9 @@ Konfigurieren Sie als Nächstes Azure Information Protection mit einer neuen Ric
 
 16. Klicken Sie auf dem Blatt **Azure Information Protection** auf **Richtlinien > + Neue Richtlinie hinzufügen**.
     
-17. Geben Sie unter **Richtlinienname****CompanyStrategy** und unter **Beschreibung****Bezeichnung für Dokumente in der Teamwebsite für Kampagnenstrategie** ein.
+17. Geben Sie unter **Richtlinienname****CompanyStrategy** und unter **Beschreibung****Dokumente in der Teamwebsite für Kampagnenstrategie** ein.
     
-18. Klicken Sie auf **Wählen Sie aus, welche Benutzer oder Gruppen diese Richtlinie erhalten. > Benutzer/Gruppen** und wählen Sie dann **C-Suite**.
+18. Klicken Sie auf **Wählen Sie aus, welche Benutzer oder Gruppen diese Richtlinie erhalten. > Benutzer/Gruppen**, und wählen Sie dann **C-Suite** aus.
     
 19. Klicken Sie auf **Auswählen > OK**.
 
@@ -582,13 +584,13 @@ Um ein Dokument mit Azure Information Protection und mit dieser neuen Bezeichnun
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Schutzebene „Streng vertraulich“ für eine isolierte SharePoint Online-Teamwebsite mit der Unternehmensstrategie.](images/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
+![Schutzebene „Streng vertraulich“ für eine isolierte SharePoint Online-Teamwebsite mit der Unternehmensstrategie.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 Sie können jetzt mit dem Erstellen von Dokumenten in diesen vier Websites beginnen und den Zugriff mit verschiedenen Benutzerkonten in Ihrem Testabonnement testen.
   
 Nachfolgend sehen Sie die gesamte Konfiguration für alle vier SharePoint Online-Teamwebsites.
   
-![Alle vier Teamwebsites in der sicheren Entwicklungs-/Testumgebung von SharePoint Online.](images/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
+![Alle vier Teamwebsites in der sicheren Entwicklungs-/Testumgebung von SharePoint Online.](media/b0fea489-359c-4c85-a0ad-e4efb4a1e47f.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 

@@ -8,6 +8,8 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten mit einer Standort-zu-Standort-VPN-Verbindung.'
-ms.openlocfilehash: de61603781009149c284701f749f42cfdd0881f6
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
+ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "22915320"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
@@ -33,7 +36,7 @@ Beispiel: Ein Verzeichnissynchronisierungsserver auf einem virtuellen Azure-Comp
 
 Die virtuellen Computer in Azure müssen nicht von Ihrer lokalen Umgebung isoliert sein. Um virtuelle Azure-Computer mit Ihren lokalen Netzwerkressourcen zu verbinden, müssen Sie ein standortübergreifendes virtuelles Azure-Netzwerk konfigurieren. Das folgende Diagramm zeigt die erforderlichen Komponenten zum Bereitstellen eines standortübergreifenden virtuellen Azure-Netzwerks mit einem virtuellen Computer in Azure.
   
-![Lokales Netzwerk, das über eine Standort-zu-Standort-VPN-Verbindung mit Microsoft Azure verbunden ist](images/CP_ConnectOnPremisesNetworkToAzureVPN.png)
+![Lokales Netzwerk, das über eine Standort-zu-Standort-VPN-Verbindung mit Microsoft Azure verbunden ist](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
   
 In diesem Diagramm sind zwei Netzwerke über eine Standort-zu-Standort-VPN-Verbindung verbunden: das lokale Netzwerk und das virtuelle Azure-Netzwerk. Für die Standort-zu-Standort-VPN-Verbindung gilt Folgendes:
 
@@ -141,11 +144,11 @@ Füllen Sie für die Einstellungen des virtuellen Netzwerks Tabelle V aus.
   
 |**Element**|**Configuration-Element**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Name des virtuellen Netzwerks  <br/> |Ein Name, der dem virtuellen Azure-Netzwerk zugewiesen wird (z. B. DirSyncNet)  <br/> |![](./images/Common_Images/TableLine.png) |
-|2.  <br/> |Adresse des virtuellen Netzwerks  <br/> |Das Azure-Rechenzentrum, das das virtuelle Netzwerk enthalten soll (z. B. USA (Westen)).  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet. Fragen Sie Ihre IT-Abteilung nach dieser Adresse.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|4.  <br/> |Adressraum des virtuellen Netzwerks  <br/> |Der Adressraum (in einem einzigen privaten Adresspräfix definiert) für das virtuelle Netzwerk. Fragen Sie Ihre IT-Abteilung nach diesem Adressraum. Der Adressraum sollte im CIDR-Format (Classless Interdomain Routing, klassenloses domänenübergreifendes Routing) angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.  <br/> |![](./images/Common_Images/TableLine.png) <br/> |
-|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird. Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert, und bewahren Sie diesen an einem sicheren Ort auf. Alternativ finden Sie weitere Informationen dazu unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./images/Common_Images/TableLine.png) <br/> |
+|1.  <br/> |Name des virtuellen Netzwerks  <br/> |Ein Name, der dem virtuellen Azure-Netzwerk zugewiesen wird (z. B. DirSyncNet)  <br/> |![](./media/Common-Images/TableLine.png) |
+|2.  <br/> |Adresse des virtuellen Netzwerks  <br/> |Das Azure-Rechenzentrum, das das virtuelle Netzwerk enthalten soll (z. B. USA (Westen)).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet. Fragen Sie Ihre IT-Abteilung nach dieser Adresse.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Adressraum des virtuellen Netzwerks  <br/> |Der Adressraum (in einem einzigen privaten Adresspräfix definiert) für das virtuelle Netzwerk. Fragen Sie Ihre IT-Abteilung nach diesem Adressraum. Der Adressraum sollte im CIDR-Format (Classless Interdomain Routing, klassenloses domänenübergreifendes Routing) angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.  <br/> |![](./media/Common-Images/TableLine.png) <br/> |
+|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird. Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert, und bewahren Sie diesen an einem sicheren Ort auf. Alternativ finden Sie weitere Informationen dazu unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).<br/> |![](./media/Common-Images/TableLine.png) <br/> |
    
 Füllen Sie für die Subnetze dieser Lösung Tabelle S aus.
   
@@ -159,8 +162,8 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen, die aus dem Adressraum d
   
 |**Element**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |GatewaySubnet  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |Das von dem Azure-Gateway verwendete Subnetz.  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das von dem Azure-Gateway verwendete Subnetz.  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 Füllen Sie für die lokalen DNS-Server, die von den virtuellen Computern im virtuellen Netzwerk verwendet werden sollen, Tabelle D aus. Geben Sie jedem DNS-Server einen Anzeigenamen und eine einzelne IP-Adresse. Der Anzeigename muss nicht mit dem Hostnamen oder dem Computernamen des DNS-Servers übereinstimmen.  Auch wenn hierfür nur zwei Einträge vorgesehen sind, können Sie noch weitere hinzufügen. Erarbeiten Sie diese Liste gemeinsam mit Ihrer IT-Abteilung.
   
@@ -168,8 +171,8 @@ Füllen Sie für die lokalen DNS-Server, die von den virtuellen Computern im vir
   
 |**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 Um Pakete aus dem virtuellen Azure-Netzwerk an das Organisationsnetzwerk über die Standort-zu-Standort-VPN-Verbindung weiterzuleiten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren. Dieses lokale Netzwerk enthält eine Liste der Adressräume (im CIDR-Format) für alle Standorte in Ihrem lokalen Organisationsnetzwerk, die die virtuellen Computer im virtuellen Netzwerk erreichen müssen. Dies können alle Standorte im lokalen Netzwerk oder nur eine Teilmenge sein. Die Liste der Adressräume, die Ihr lokales Netzwerk definiert, muss eindeutig sein und darf nicht mit den für andere virtuelle Netzwerke verwendeten Adressräumen überlappen.
   
@@ -179,9 +182,9 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
   
 |**Element**|**Adressraum des lokalen Netzwerks**|
 |:-----|:-----|
-|1.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|2.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
-|3.  <br/> |![](./images/Common_Images/TableLine.png)  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
 ## <a name="deployment-roadmap"></a>Roadmap für die Bereitstellung
 <a name="DeploymentRoadmap"> </a>
@@ -201,7 +204,7 @@ Sie müssen Ihr lokales Netzwerk mit einer Route konfigurieren, die auf den Rout
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Das lokale Netzwerk muss über eine Route für den Adressraum des virtuellen Netzwerks verfügen, der auf das VPN-Gerät zeigt.](images/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
+![Das lokale Netzwerk muss über eine Route für den Adressraum des virtuellen Netzwerks verfügen, der auf das VPN-Gerät zeigt.](media/90bab36b-cb60-4ea5-81d5-4737b696d41c.png)
   
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Phase 2: Erstellen des standortübergreifenden virtuellen Netzwerks in Azure
 <a name="Phase2"></a>
@@ -293,7 +296,7 @@ Set-AzureRMVirtualNetworkSubnetConfig -VirtualNetwork $vnet -Name $SubnetName -A
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Das virtuelle Netzwerk ist noch nicht mit dem lokalen Netzwerk verbunden.](images/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
+![Das virtuelle Netzwerk ist noch nicht mit dem lokalen Netzwerk verbunden.](media/54a37782-a6cc-4d48-b38d-73e128b44a82.png)
   
 Verwenden Sie anschließend diese Befehle zum Erstellen der Gateways für die Standort-zu-Standort-VPN-Verbindung.
   
@@ -323,7 +326,7 @@ $vnetConnection=New-AzureRMVirtualNetworkGatewayConnection -Name $vnetConnection
 
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Das virtuelle Netzwerk verfügt jetzt über ein Gateway.](images/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
+![Das virtuelle Netzwerk verfügt jetzt über ein Gateway.](media/82dd66b2-a4b7-48f6-a89b-cfdd94630980.png)
   
 Konfigurieren Sie im nächsten Schritt das lokale VPN-Gerät zum Herstellen einer Verbindung mit dem Azure-VPN-Gateway. Weitere Informationen finden Sie unter [Informationen zu VPN-Geräten für Standort-zu-Standort-Verbindungen im virtuellen Azure-Netzwerk](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
@@ -335,7 +338,7 @@ Zum Konfigurieren Ihres VPN-Geräts benötigen Sie Folgendes:
     
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Das virtuelle Netzwerk ist nun mit dem lokalen Netzwerk verbunden.](images/6379c423-4f22-4453-941b-7ff32484a0a5.png)
+![Das virtuelle Netzwerk ist nun mit dem lokalen Netzwerk verbunden.](media/6379c423-4f22-4453-941b-7ff32484a0a5.png)
   
 ### <a name="phase-3-optional-add-virtual-machines"></a>Phase 3 (optional): Hinzufügen virtueller Computer
 
@@ -353,9 +356,8 @@ Verwenden Sie die folgenden Einstellungen:
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Das virtuelle Netzwerk hostet jetzt virtuelle Computer, auf die vom lokalen Netzwerk zugegriffen werden kann.](images/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+![Das virtuelle Netzwerk hostet jetzt virtuelle Computer, auf die vom lokalen Netzwerk zugegriffen werden kann.](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
   
 ## <a name="next-step"></a>Nächster Schritt
   
-[Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-
+[Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
