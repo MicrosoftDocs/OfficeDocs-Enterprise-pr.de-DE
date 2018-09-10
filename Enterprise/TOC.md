@@ -92,7 +92,7 @@
 ### [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisation](prepare-a-non-routable-domain-for-directory-synchronization.md)
 ### [Netzwerkplanung mit ExpressRoute für Office 365](network-planning-with-expressroute.md)
 ### [Routing mit ExpressRoute für Office 365](routing-with-expressroute.md)
-### [Prinzipien von Office 365-Netzwerkverbindungen](network-connectivity.md)
+### [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
 ### Office 365-Endpunkte
 #### [Weltweite Endpunkte](urls-and-ip-address-ranges.md)
 #### [DoD-Endpunkte für US Government](office-365-u-s-government-dod-endpoints.md)
