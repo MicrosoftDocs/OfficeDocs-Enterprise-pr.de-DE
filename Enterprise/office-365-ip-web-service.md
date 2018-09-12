@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Damit Sie Office 365-Netzwerkdatenverkehr besser erkennen und unterscheiden können, veröffentlicht ein neuer Webdienst Office 365-Endpunkte, sodass Sie Änderungen einfacher bewerten, konfigurieren und mit diesen auf dem Laufenden bleiben können. Dieser neue Webdienst ersetzt die herunterladbaren XML-Dateien, die derzeit verfügbar sind.
-ms.openlocfilehash: 3abd6a0692ae4d66c76f8c0d65653b83646c6e23
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 21222f4c1c2010517bdfe1a425b47c8f4fde8b0e
+ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23830888"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "23831900"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365-IP-Adress- und -URL-Webdienst**
 
@@ -65,14 +65,16 @@ Microsoft aktualisiert die Office 365-IP-Adress- und -FQDN-Einträge am Ende jed
 Es gibt einen Parameter für die Versionswebmethode:
 
 - **AllVersions = "true"** – Abfragezeichenfolgeparameter. Standardmäßig ist die zurückgegebene Version die neueste Version. Fügen Sie diesen optionalen Parameter ein, um alle veröffentlichten Versionen anzufordern.
-- **Format = JSON** | **CSV** | **RSS** – zusätzlich zu den JSON- und CSV-Formaten unterstützt die Versionswebmethode auch RSS. Sie können diese Option zusammen mit dem Parameter allVersions=true verwenden, um einen RSS-Feed anzufordern, der mit Outlook oder anderen RSS-Readern verwendet werden kann.
-- **Instanz** – Weiterleitungsparameter. Dieser optionale Parameter gibt die Instanz an, für die die Version zurückgegeben werden soll. Wenn nicht angegeben, werden alle Instanzen zurückgegeben. Gültige Instanzen sind: weltweit, China, Deutschland, USGovDoD, USGovGCCHigh
+- **Format = JSON** | **CSV** | **RSS** – zusätzlich zu den JSON- und CSV-Formaten unterstützt die Versionswebmethode auch RSS. Sie können diese Option zusammen mit dem Parameter „allVersions=true“ verwenden, um einen RSS-Feed anzufordern, der mit Outlook oder anderen RSS-Readern verwendet werden kann.
+- **Instanz** – Weiterleitungsparameter. Dieser optionale Parameter gibt die Instanz an, für die die Version zurückgegeben werden soll. Wenn nicht angegeben, werden alle Instanzen zurückgegeben. Gültige Instanzen sind: weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
 
-Das Ergebnis der Webversionsmethode kann ein einzelner Datensatz oder ein Datensatz-Array sein. Die Elemente der einzelnen Datensätze sind:
+Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Datensatzarray sein. Die Elemente der einzelnen Datensätze sind:
 
 - instance – der kurze Name der Office 365-Serviceinstanz.
 - latest – die neueste Version für Endpunkte der angegebenen Instanz.
 - versions – eine Liste aller vorherigen Versionen für die angegebene Instanz. Dieses Element ist nur enthalten, wenn der Parameter „AllVersions“ „true“ ist.
+
+Sie können Microsoft Flow verwenden, um E-Mail-Benachrichtigungen über Änderungen an den IP-Adressen und URLs zu erhalten. Weitere Informationen finden Sie unter [Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 
 ### <a name="examples"></a>**Beispiele:**
 
@@ -487,24 +489,10 @@ In der Zukunft sind möglicherweise Updates für die Parameter oder die Ergebnis
 
 [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
   
-[Azure ExpressRoute für Office 365](azure-expressroute.md)
-  
-[Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
-  
-[Routing mit ExpressRoute für Office 365](routing-with-expressroute.md)
-  
-[Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
-  
-[Verwenden von BGP-Communitys in ExpressRoute für Office 365-Szenarien (Vorschau)](bgp-communities-in-expressroute.md)
-  
 [Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Optimieren Ihres Netzwerks für Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
-  
-[ExpressRoute und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
-  
-[Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
-  
+
 [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
