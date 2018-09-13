@@ -3,7 +3,6 @@ title: Navigationsoptionen für SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/27/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,445 +11,457 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In diesem Artikel wird beschrieben, wie die Seitenladezeiten für SharePoint Online zu verbessern, verwaltete Navigation oder suchgesteuerte Navigation im klassischen Veröffentlichung verwenden.
-ms.openlocfilehash: 6b2ee613d0cc6a6df92eb9b53374087a0ac2e5b7
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Dieser Artikel beschreibt die Navigation Optionen Websites mit SharePoint-Veröffentlichung in SharePoint Online aktiviert. Die Auswahl und Konfiguration der Navigation erheblich beeinträchtigt die Leistung und Skalierbarkeit von Websites in SharePoint Online.
+ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
+ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540988"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23957450"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
-In diesem Artikel wird beschrieben, wie die Seitenladezeiten für SharePoint Online zu verbessern, verwaltete Navigation oder suchgesteuerte Navigation im klassischen Veröffentlichung verwenden.
+Dieser Artikel beschreibt die Navigation Optionen Websites mit SharePoint-Veröffentlichung in SharePoint Online aktiviert. Die Auswahl und Konfiguration der Navigation erheblich beeinträchtigt die Leistung und Skalierbarkeit von Websites in SharePoint Online.
+
+## <a name="overview"></a>Übersicht
+
+Navigation Anbieterkonfiguration kann die Leistung für die gesamte Website erheblich beeinträchtigen und sorgfältige auswählen eine Navigationsanbieter und die Konfiguration, die für die Anforderungen der SharePoint-Website effektiv skaliert geschaltet werden muss. Es gibt zwei Out-of-Box-Navigationsanbieter als auch benutzerdefinierte Navigation Implementierungen.
+
+Die erste Option [**(Metadaten) verwaltete Navigation**](#using-managed-navigation-and-metadata-in-sharepoint-online), wird empfohlen und ist eine der Standardoptionen in SharePoint Online. jedoch wird empfohlen, dass die Einschränkung aus Sicherheitsgründen deaktiviert werden, sofern nicht erforderlich. Aus Sicherheitsgründen ist für diesen Navigationsanbieter als Einstellung secure standardmäßig aktiviert. Viele Websites ist jedoch nicht erforderlich des Verarbeitungsaufwands Security trimming, da Navigationselemente häufig für alle Benutzer der Website sind. Mit der empfohlenen Konfiguration aus Sicherheitsgründen deaktivieren diese Navigationsanbieter erfordert keine Aufzählen der Websitestruktur und hochskalierbare akzeptable Leistung beeinträchtigt wird.
+
+Die zweite Option [**strukturelle Navigation**](#using-structural-navigation-in-sharepoint-online), **nicht die Navigationsoption empfohlene in SharePoint Online ist**. Diese Navigationsanbieter wurde entwickelt, für eine lokale-Topologie nur unterstützt in SharePoint Online eingeschränkt. Während sie einige zusätzliche Funktionen im Vergleich zu anderen Navigationsoptionen bietet, diese Features, einschließlich der Einschränkung aus Sicherheitsgründen und Website-Struktur-Aufzählung, Ihren Preis aufgrund einer Anrufe und Auswirkungen Skalierbarkeit und Leistung bei Verwendung. Websites mit Structed Navigation, die übermäßig viele Ressourcen beanspruchen können Drosselung werden.
+
+Zusätzlich zu den Out-of-Box-Navigationsanbieter haben viele Kunden alternative benutzerdefinierte Navigation Implementierungen erfolgreich implementiert. Eine allgemeine Klasse der benutzerdefinierten Navigation Implementierungen standardbasierten Client gerendert Entwurfsmuster, die einen lokalen Cache der Navigationsknoten zu speichern. (Siehe **[suchbasierte clientseitiges Skripting](#using-search-driven-client-side-scripting)** in diesem Artikel.)
+
+Diese Navigationsanbieter gibt es mehrere wichtige Vorteile: 
+- Sie können im Allgemeinen auch mit Entwürfe schnell Seite.
+- Sie sind äußerst skalierbar und leistungsfähige, da gerendert werden können ohne die Kosten Ressource (und die Aktualisierung im Hintergrund nach einem Timeout). 
+- Diese Navigationsanbieter können mit verschiedenen Strategien, zwischen verschiedenen dynamic Data-Anbieter-einfache statische Konfigurationen Navigationsdaten abrufen. 
+
+Ein Beispiel eines Datenanbieters ist eine **suchgesteuerte Navigation**, mit dessen Hilfe Sie Flexibilität für Navigationsknoten aufzählen und Einschränkung aus Sicherheitsgründen effizient behandeln können. 
+
+Andere beliebten Optionen zum Erstellen von **benutzerdefinierten Navigationsanbieter**sind vorhanden. Überprüfen Sie [Lösungen für SharePoint Online-Portale Navigation](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) zu weiteren Anleitung zum Erstellen einer benutzerdefinierten Navigationsanbieter.
   
-SharePoint Online mit klassischen Veröffentlichung aktiviert hat zwei Navigationsbereiche. Globale Navigation und aktuelle Navigation.
-  
-Globale Navigation ist im Menü der oberen Navigationsleiste während aktuelle Navigation auf der Seite oder im Kontext links/rechts Navigation hängt von der Sprachkonfiguration und Gestaltungsvorlage verwendet wird.
-  
-Navigation kann für das gesamte Portal Leistung beeinträchtigen, wie es häufig für die gesamte Portal Verwendung konfiguriert ist und daher ein wichtiger Bestandteil einer SharePoint-Website ist.
-  
-Strukturelle Navigation ist nicht die Navigationsoption empfohlene in SharePoint Online, wie es für eine lokalen-Topologie mit Einschränkung aus Sicherheitsgründen entwickelt wurde und Design bewirkt, dass aufgrund einer Anrufe und wirkt sich auf Leistung, wenn sie verwendet wird.
-  
-Dass Entwurf geändert hat, mit der Einführung von modernen SharePoint-Websites, in denen modernen verfügt über eine vereinfachte vereinfachte Websitehierarchie. Dies wurde mit einer vereinfachten Hierarchie Navigation vereinfacht, die Leistungsprobleme im Zusammenhang mit der Navigation gelöscht wurde.
-  
-Es gibt zwei Optionen für die wichtigsten Out-of-Box Websitenavigation in SharePoint als auch eine dritte, benutzerdefinierte, suchbasierte Ansatz. Alternativ ist auch häufig Option und eine vierte eine benutzerdefinierte Navigation-Datenanbieter erstellen. Überprüfen Sie [Navigation Lösungen für SharePoint Online-Portale](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/portal-navigation) Hinweise auf eine benutzerdefinierte Navigationsanbieter. 
-  
-Jede Option hat vor- und Nachteile, wie in der folgenden Tabelle beschrieben.
-  
-|**Strukturelle Navigation**|**Verwaltete Navigation**|**Suchgesteuerte Navigation**||**Benutzerdefinierte Navigation-Anbieter**|
-|:-----|:-----|:-----|:-----|:-----|
-| Vorteile:  <br/>  Einfach zu konfigurieren  <br/>  Sicherheitskürzung  <br/>  Automatische Aktualisierung beim Hinzufügen von Websites  <br/> | Vorteile:  <br/>  Einfach zu verwalten  <br/>  Empfohlene option  <br/> | Vorteile:  <br/>  Sicherheitskürzung  <br/>  Automatische Aktualisierung beim Hinzufügen von Websites  <br/>  Schnelle Ladezeiten und lokal zwischengespeicherte Navigationsstruktur  <br/> || Vorteile  <br/>    <br/>  Größere Auswahl / Optionen zur Verfügung  <br/>  Laden von fast beim Zwischenspeichern wird ordnungsgemäß verwendet.  <br/> |
-| Nachteile:  <br/> **Nicht empfohlen** <br/> **Auf die Leistung auswirkt** <br/> | Nachteile:  <br/>  Keine automatische Aktualisierung zur Abbildung der Websitestruktur  <br/>  Leistung auswirkt, wenn die Einschränkung aus Sicherheitsgründen aktiviert ist  <br/> | Nachteile:  <br/>  Keine Möglichkeit, Websites einfach anzuordnen  <br/>  Erfordert die Anpassung der Masterseite (technische Kenntnisse erforderlich)  <br/> || Nachteile:  <br/>  Benutzerdefinierte Entwicklung ist erforderlich  <br/>  Externe Datenquelle / Cache gespeichert ist erforderlich, z. B. Azure  <br/> |
-   
-Die am besten geeignete Option für Ihre Website hängen auf Ihren Anforderungen Website und auf Ihrer Eignung. Wenn Sie eine benutzerdefinierte Gestaltungsvorlage mit vertraut sind und einige Funktionen in der Organisation, um die Änderungen zu verwalten, die die Standardgestaltungsvorlage für SharePoint Online auftreten, erzeugt die Option suchbasierte die beste benutzerumgebung. Wenn Sie einen einfachen Kompromiss zwischen die strukturelle Out-of-Box-Navigation und Suche möchten, ist die verwaltete Navigation eine sehr gute Wahl. Die Option verwaltete Navigation über verwaltet Konfiguration umfassen nicht Anpassungsdateien Code, und es ist wesentlich schneller als die strukturelle Out-of-Box-Navigation.
-  
-Die allgemeine Struktur der klassische Portal ähnlich wie in modernem vereinfachen, unterstützt die allgemeine Leistung und Skalierung sowie. Dies bedeutet, der anstelle einer einzelnen Websitesammlung mit Hunderten / Tausende von Standorten (Unterwebsites), einen besseren Ansatz besteht darin, zahlreiche Websitesammlungen mit sehr wenige Unterwebsites (Unterwebsites).
-  
-Dies bietet zusätzliche Optionen für die Skalierung im Dienst, vermeidet eine große Datenbank Inbetriebnahme alle Inhalte und letztlich größere Flexibilität für Navigation und größerer Sicherheit.
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vor- und von SharePoint Online Nachteile Navigationsoptionen
+
+In der folgenden Tabelle werden die vor- und Nachteile jeder Option zusammengefasst. 
+
+
+|Verwaltete Navigation  |Strukturelle Navigation  |Suchgesteuerte Navigation  |Benutzerdefinierte Navigation-Anbieter  |
+|---------|---------|---------|---------|
+|Vorteile:<br/><br/>Einfach zu verwalten<br/>Empfohlene option<br/>     |Vorteile:<br/><br/>Einfach zu konfigurieren<br/>Sicherheitsoptimiert<br/>Automatisch aktualisiert, sobald Inhalt hinzugefügt wird<br/>|Vorteile<br/><br/>Sicherheitsoptimiert<br/>Automatische Aktualisierung beim Hinzufügen von Websites<br/>Schnelle Ladezeiten und lokal zwischengespeicherte Navigationsstruktur<br/>|Vorteile<br/><br/>Größere Auswahl bei der verfügbaren Optionen<br/>Laden von fast beim Zwischenspeichern wird ordnungsgemäß verwendet.<br/>Viele Optionen können auch mit schnell Seitenentwurf<br/>|
+|Nachteile:<br/><br/>Keine automatische Aktualisierung zur Abbildung der Websitestruktur<br/>Leistung auswirkt, wenn die Einschränkung aus Sicherheitsgründen aktiviert ist<br/>|Nachteile:<br/><br/>**Nicht empfohlen**<br/>**Wirkt sich auf Leistung und Skalierbarkeit**<br/>**Unterliegen-Einschränkung**<br/>|Nachteile:<br/><br/>Keine Möglichkeit, Websites einfach anzuordnen<br/>Erfordert die Anpassung der Masterseite (technische Kenntnisse erforderlich)<br/>|Nachteile:<br/><br/>Benutzerdefinierte Entwicklung ist erforderlich<br/>Externe Datenquelle / Cache gespeichert ist erforderlich, z. B. Azure<br/>|
+
+Die am besten geeignete Option für Ihre Website hängen auf Ihren Anforderungen Website und auf Ihrer Eignung. Wenn Sie eine skalierbare Out-of-Box-Navigationsanbieter möchten, ist verwaltete Navigation mit Einschränkung aus Sicherheitsgründen deaktiviert eine sehr gute Wahl. 
+
+Die verwaltete Navigationsoption verwaltet werden kann Konfiguration umfassen nicht Anpassungsdateien Code, und es ist wesentlich schneller als strukturelle Navigation. Wenn Sie aus Sicherheitsgründen erfordern und mit einer benutzerdefinierten Gestaltungsvorlage vertraut sind und einige Funktionen in der Organisation, um die Änderungen zu verwalten, die in der Standardmasterseite für SharePoint Online auftreten können, kann dann die Option suchbasierte als bessere liefern Benutzer wünschen. Wenn Sie komplexere Bestimmungen unterliegen, möglicherweise eine benutzerdefinierte Navigationsanbieter die richtige Wahl. Strukturelle Navigation wird nicht empfohlen.
+
+Schließlich ist es wichtig zu beachten, dass SharePoint Hinzufügen von zusätzlichen Navigationsanbieter und Funktionen für moderne SharePoint-websitearchitekturen einer Hierarchie von mehr vereinfachte und einem Hub-and-Spoke-Modell mit SharePoint Hubstandorte nutzen. Auf diese Weise können viele Szenarien erzielt werden muss, die keine die Verwendung des Features für SharePoint-Veröffentlichung erfordern, und diese Navigation Konfigurationen für Skalierbarkeit und Wartezeit in SharePoint Online optimiert sind. Beachten Sie, dass dasselbe Prinzip - vereinfachen die allgemeine Struktur Ihrer Website SharePoint-Veröffentlichung auf eine flacher Struktur, anwenden häufig mit Leistungseinbußen hilft und sowie skaliert werden. Dies bedeutet, dass anstelle einer einzelnen Websitesammlung mit Hunderten von Websites (Unterwebsites) ein besserer Ansatz ist viele Websitesammlungen mit sehr wenige Unterwebsites (Unterwebsites).
+
+
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Verwenden von verwalteten Navigation und Metadaten in SharePoint Online
+
+Verwalteter Navigation ist eine andere Out-of-Box-Option, mit denen Sie die meisten dieselbe Funktionalität wie strukturelle Navigation neu erstellen. Verwalteter Metadaten kann konfiguriert werden, um die Einschränkung aus Sicherheitsgründen aktiviert oder deaktiviert haben. Bei der Konfiguration mit Einschränkung aus Sicherheitsgründen deaktiviert, ist verwalteter Navigation relativ effizient wie die Navigationslinks mit einer Konstante Anzahl von Serveranrufen geladen. Aktivieren der Security trimming, jedoch einige der Vorteile der verwalteten Navigation negiert und Kunden können auswählen, um eine benutzerdefinierte Navigation Lösungen für eine optimale Leistung und Skalierbarkeit zu erkunden.
+
+Viele Websites erfordern keinen aus Sicherheitsgründen, wie oft die Navigationsstruktur für alle Benutzer der Website konsistent ist. Wenn die Einschränkung aus Sicherheitsgründen ist deaktiviert, und eine Verknüpfung zur Navigation, die nicht alle Benutzer Zugriff haben hinzugefügt wird, der Link zeigt immer noch jedoch führt zum Zugriff verweigert. Es ist kein Risiko des unbeabsichtigten Zugriff auf die Inhalte.
+
+### <a name="how-to-implement-managed-navigation-and-the-results"></a>So implementieren Sie die verwaltete Navigation und die Ergebnisse
+
+Es gibt mehrere Artikel auf Docs.Microsoft.com zu den Details der verwalteten Navigation, zum Beispiel, finden Sie unter [Übersicht über die verwaltete Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
+
+Um die verwalteten Navigation zu implementieren, richten Sie Begriffe mit URLs, die die Navigationsstruktur der Website entspricht. Verwalteter Navigation kann auch manuell curated werden, um strukturelle Navigation in vielen Fällen zu ersetzen. Zum Beispiel:
+
+![SharePoint Online Websitestruktur](media/SPONavOptionsListOfSites.png)
+
+Das folgende Beispiel zeigt die Leistung der komplexen Navigation bei Verwendung der verwalteten Navigation.
+
+![Leistung von komplexen Navigation mithilfe der verwalteten navigation](media/SPONavOptionsComplexNavPerf.png)
+
+Verwalteten Navigation konsistent verwenden verbessert die Leistung im Vergleich zu den Ansatz strukturelle Navigation.
   
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Verwenden der strukturellen Navigation in SharePoint Online
 
-Die Out-of-Box-Navigation standardmäßig verwendet und ist die einfachste Lösung Dies ist ein Kompromiss teurer Leistung als solche hat. Es muss keine Anpassung und einen technischen Benutzer kann auch problemlos Elemente hinzufügen, Ausblenden von Elementen und verwalten die Navigation auf der Seite Einstellungen. Hierbei handelt es sich jedoch auch True für die verwaltete Navigation, daher wird empfohlen, verwaltete Navigation als, kann auch auf einfache Weise werden verwaltet und gesteuert sowie.
+Die Out-of-Box-Navigation standardmäßig verwendet und ist die einfachste Lösung Dies ist ein Kompromiss teurer Leistung als solche hat. Es muss keine Anpassung und einen technischen Benutzer kann auch problemlos Elemente hinzufügen, Ausblenden von Elementen und verwalten die Navigation auf der Seite Einstellungen. Dies ist jedoch auch True für die verwaltete Navigation, empfiehlt es verwaltete Navigation als verwenden, die auch auf einfache Weise verwaltet und gesteuert werden kann auch mit die Leistung verbessert.
+
+![Strukturelle Navigation mit anzeigen Unterwebsites ausgewählt](media/SPONavOptionsStructuredShowSubsites.png)
   
 ### <a name="turning-on-structural-navigation-in-sharepoint-online"></a>Aktivieren der strukturellen Navigation in SharePoint Online
 
-Erläutern, wie die Leistung in einer standard-SharePoint Online-Lösung mit strukturellen Navigation und anzeigen die Option Unterwebsites aktiviert. Im folgenden ist ein Screenshot Einstellungen finden Sie auf der Seite **Websiteeinstellungen** \> **Navigation**.
+Erläutern, wie die Leistung in einer standard-SharePoint Online-Lösung mit strukturellen Navigation und anzeigen die Option Unterwebsites aktiviert. Es folgt ein Screenshot des Einstellungen finden Sie auf der Seite **Websiteeinstellungen** \> **Navigation**.
   
 ![Screenshot mit Unterwebsites](media/5b6a8841-34ed-4f61-b6d3-9d3e78d393e7.png)
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analysieren der Leistung der strukturellen Navigation in SharePoint Online
 
-Zum Analysieren der Leistung einer SharePoint-Seite verwenden Sie die Registerkarte **Netzwerk** der F12-Entwicklertools in Internet Explorer. 
+Verwenden Sie die Leistung einer SharePoint-Seite zu analysieren, der Registerkarte **Netzwerks** die F12-Entwicklertools in Internet Explorer. 
   
-![Screenshot mit Registerkarte "F12 Dev Tools-Netzwerk"](media/e2aed8af-0843-487a-8b68-4f5260a2685e.png)
+![Screenshot mit Registerkarte "F12 Dev Tools-Netzwerk"](media/SPONavOptionsNetworks.png)
   
-Klicken Sie auf der Registerkarte **Netzwerk** auf die ASPX-Seite, die geladen wird, und klicken Sie dann auf die Registerkarte **Details**. 
+1. Klicken Sie auf der Registerkarte **Netzwerk** auf die ASPX-Seite, die geladen wird, und klicken Sie dann auf die Registerkarte **Details**.<br/> ![Screenshot der Detailregisterkarte](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)<br/>
+2. Klicken Sie auf **Antwortheader**. <br/>![Screenshot der Registerkarte "Details"](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)<br/>SharePoint gibt einige nützliche Diagnoseinformationen in seiner Antwortheader zurück. 
+3. Eine der nützlichsten Teile der Informationen ist **SPRequestDuration** , der Wert ist, der eine Anforderung an den Prozess auf dem Server die Zeitdauer in Millisekunden. Im folgenden Screenshot ist die **Unterwebsites anzeigen** für die strukturelle Navigation nicht aktiviert. Dies bedeutet, dass nur die Site Collection Verknüpfung in der globalen Navigation vorhanden ist:<br/>![Screenshot mit Ladezeiten als Anforderungsdauer](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)<br/>
+4. Der Schlüssel für **SPRequestDuration** hat einen Wert von 245 Millisekunden. Dies ist die Zeit die Anforderung zurückgegeben. Da nur ein Navigationselement auf der Website vorhanden ist, ist dies eine gute Richtlinie für ohne extra fette Navigation wie SharePoint Online ausführt. Der nächste Screenshot zeigt, wie in Unterwebsites Hinzufügen dieser Schlüssel auswirkt.<br/>![Screenshot mit einer Anforderungsdauer von 2.502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)<br/>
   
-![Screenshot der Detailregisterkarte](media/ad85cefb-7bc5-4932-b29c-25f61b4ceeb2.png)
-  
-Klicken Sie auf **Antwortheader**.
-  
-![Screenshot der Registerkarte "Details"](media/c47770ac-5b2b-4941-9830-c57565dec4cc.png)
-  
-SharePoint gibt einige nützliche Diagnoseinformationen in seinen Antwortheadern zurück. Einer der nützlichsten Werte ist **SPRequestDuration**. Er gibt in Millisekunden an, wie lange die Verarbeitung einer Anforderung auf dem Server dauerte. 
-  
-Im folgenden Screenshot **Unterwebsites anzeigen** ist für die strukturelle Navigation nicht aktiviert. Dies bedeutet, dass nur die Site Collection Verknüpfung in der globalen Navigation vorhanden ist: 
-  
-![Screenshot mit Ladezeiten als Anforderungsdauer](media/3422b2e8-15ec-4bb9-ba86-0965b6b49b01.png)
-  
-Der Schlüssel für **SPRequestDuration** hat einen Wert von 245 Millisekunden. Dies ist die Zeit die Anforderung zurückgegeben. Da nur ein Navigationselement auf der Website vorhanden ist, ist dies eine gute Richtlinie für ohne extra fette Navigation wie SharePoint Online ausführt. Der nächste Screenshot zeigt, wie in Unterwebsites Hinzufügen dieser Schlüssel auswirkt. 
-  
-![Screenshot mit einer Anforderungsdauer von 2.502 ms](media/618ee4e9-2ffa-4a22-b638-fa77b72292b8.png)
-  
-Das Hinzufügen von Unterwebsites hat die für die Rückgabe der Seitenanforderung benötigte Zeit deutlich erhöht.
-  
-Die Vorteile der Verwendung der regulären strukturierten Navigation ist, dass Sie auf einfache Weise organisieren Sie die Reihenfolge, Ausblenden von Websites, Seiten hinzufügen können, die Ergebnisse werden Sicherheit verkürzt und Sie werden nicht aus der unterstützten Gestaltungsvorlagen in SharePoint Online verwendeten abweichen.
-  
-## <a name="using-managed-navigation-and-managed-metadata-in-sharepoint-online"></a>Verwenden der verwalteten Navigation und verwalteter Metadaten in SharePoint Online
+Hinzufügen von Unterwebsites wurde die Zeit Zeitaufwand für die angeforderte Seite für dieses Beispiel relativ einfach zurückzugebenden stark erweitert. Komplexe websitehierarchien, einschließlich der Seiten im Navigationsbereich und andere Konfiguration und Topologieoptionen können diese Auswirkung noch weiter drastisch erhöhen.
 
-Die verwaltete Navigation ist eine weitere sofort nutzbare Option, die Sie verwenden können, um die gleiche Art von Funktionalität wie bei der strukturellen Navigation neu zu erstellen.
-  
-Die Vorteile der Verwendung verwalteter Metadaten ist wesentlich schneller als die Verwendung von Inhalt nach Abfrage zum Erstellen der Websitenavigation Datenabfrage werden kann. Es handelt sich um viel schneller besteht keine Möglichkeit trim Sicherheit auf die Ergebnisse also wenn ein Benutzer Zugriff auf eine bestimmte Website, nicht der Link zeigt immer noch Obgleich wird dazu führen, dass eine Fehlermeldung angezeigt.
-  
- **So implementieren Sie die verwaltete Navigation und die Ergebnisse**
-  
-Es gibt mehrere Artikel auf TechNet zu den Details der verwalteten Navigation beispielsweise, finden Sie unter [Übersicht über die verwaltete Navigation in SharePoint Server 2013](https://go.microsoft.com/fwlink/?LinkId=708689).
-  
-Um die verwaltete Navigation implementieren zu können, benötigen Sie Administratorberechtigungen für den Terminologiespeicher. Durch Einrichten von Begriffen mit URLs, die der Struktur einer Websitesammlung entsprechen, kann die verwaltete Navigation anstatt einer strukturellen Navigation verwendet werden. Beispiel:
-  
-![Screenshot von Subsite1-Beispiel](media/4155b4da-ccff-4e2a-92de-7803ac62982b.png)
-  
-Das folgende Beispiel zeigt die Leistung der komplexen Navigation bei Verwendung der verwalteten Navigation.
-  
-![Screenshot von SPRequestDuration-Beispiel](media/72257528-0ec6-48b0-85a5-efeb7432db5b.png)
-  
-Mithilfe der verwalteten Navigation lässt sich die Leistung im Vergleich zum Ansatz der strukturellen Navigation "Inhalt von Abfrage" konsistent verbessern.
-  
 ## <a name="using-search-driven-client-side-scripting"></a>Verwenden einer suchbasierten, clientseitigen Skripterstellung
 
-Mithilfe der Suchfunktion können Sie die Indizes nutzen, die im Hintergrund mithilfe der kontinuierlichen Durchforstung aufgebaut werden. Dies bedeutet, dass es keine übermäßig vielen Inhaltsabfragen gibt. Die Suchergebnisse werden aus dem Suchindex abgerufen, und die Ergebnisse werden sicherheitsgekürzt. Dies geht schneller als die Verwendung regulärer Inhaltsabfragen. Wenn Sie die Suche für strukturelle Navigation verwenden, insbesondere dann, wenn Sie über eine komplexe Websitestruktur verfügen, lässt sich das Laden von Seiten erheblich beschleunigen. Der Hauptvorteil dieser überverwalteten Navigation ist, dass Sie von der Sicherheitskürzung profitieren.
-  
-Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Masterseite und die Ersetzung sofort nutzbaren Navigationscodes durch benutzerdefiniertes HTML. Gehen Sie folgendermaßen vor, um den Navigationscode in der Datei "seattle.html" zu ersetzen.
-  
-In diesem Beispiel wird öffnen Sie die Datei seattle.html und ersetzt das gesamte Element **Id = "DeltaTopNavigation"** mit der benutzerdefinierten HTML-Code. 
-  
- **Beispiel: So ersetzen Sie den sofort nutzbaren Navigationscode auf einer Masterseite**
-  
-1. Navigieren Sie zur Seite **Websiteeinstellungen**. 
-    
-2. Öffnen Sie durch Klicken auf **Masterseiten** den Masterseitenkatalog.
-    
-3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei **seattle.master** herunterladen.
-    
-4. Bearbeiten Sie den Code mit einem Texteditor, und löschen Sie den Codeblock im folgenden Screenshot.
-    
-    ![Screenshot von zu löschendem DeltaTopNavigation-Code](media/70db2cd2-660d-4e0d-9d5c-a5df331c73b4.png)
-  
-5. Entfernen Sie den Code zwischen den \<SharePoint:AjaxDelta Id = "DeltaTopNavigation"\> und \<\SharePoint:AjaxDelta\> tags und ersetzt ihn durch den folgenden Codeausschnitt:
-    
-  ```
-  <div id="loading">
-    <!--Replace with path to loading image.-->
-    <div style="background-image: url(''); height: 22px; width: 22px; ">
-    </div>
+Verwenden der Suchfunktion von können Sie die Indizes nutzen, die in den Hintergrund mit kontinuierliche Durchforstung basieren. Die Suchergebnisse werden aus dem Suchindex abgerufen, und die Ergebnisse sind Sicherheit gekürzt. Dies ist im Allgemeinen schneller als Out-of-Box Navigationsanbieter, wenn aus Sicherheitsgründen erforderlich ist. Mithilfe der Suche für die strukturelle Navigation, insbesondere dann, wenn eine komplexe Websitestruktur beschleunigt Seite Ladezeit erheblich. Der Hauptvorteil dieses über verwaltete Navigation ist, dass Sie aus Sicherheitsgründen profitieren.
+
+Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage und ersetzen den Navigationscode Out-of-Box-mit benutzerdefinierten HTML-Code. Folgen Sie dieses Verfahren im folgenden Beispiel ersetzen den Navigationscode in der Datei `seattle.html`. In diesem Beispiel wird, öffnen Sie die `seattle.html` Datei, und Ersetzen Sie das ganze Element `id=”DeltaTopNavigation”` mit benutzerdefiniertem HTML-Code.
+
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Beispiel: Ersetzen Sie den Out-of-Box-Navigationscode in eine Gestaltungsvorlage
+
+1.  Navigieren Sie zur Seite Websiteeinstellungen.
+2.  Öffnen Sie durch Klicken auf **Masterseiten** den Masterseitenkatalog.
+3.  Von hier aus können Sie über die Bibliotheks-navigieren und Laden Sie die Datei `seattle.master`.
+4.  Bearbeiten Sie den Code mit einem Texteditor, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen Sie den Codeblock dargestellt](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. Entfernen Sie den Code zwischen den `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` und `<\SharePoint:AjaxDelta>` tags und ersetzt ihn durch den folgenden Codeausschnitt:<br/>
+
+```
+<div id="loading">
+  <!--Replace with path to loading image.-->
+  <div style="background-image: url(''); height: 22px; width: 22px; ">
   </div>
-  <!-- Main Content-->
-  <div id="navContainer" style="display:none">
-      <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
-          <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
-              <span class="menu-item-text" data-bind="text: item.Title">
-              </span>
-          </a>
-          <ul id="menu" data-bind="foreach: $data.children" style="padding-left:20px">
-              <li class="static dynamic-children level1">
-                  <a class="static dynamic-children menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
-                 
-                   <!-- ko if: children.length > 0-->
-                      <span aria-haspopup="true" class="additional-background ms-navedit-flyoutArrow dynamic-children">
-                          <span class="menu-item-text" data-bind="text: item.Title">
-                          </span>
-                      </span>
-                  <!-- /ko -->
-                  <!-- ko if: children.length == 0-->   
-                      <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
-                          <span class="menu-item-text" data-bind="text: item.Title">
-                          </span>
-                      </span>
-                  <!-- /ko -->   
-                  </a>
-                 
-                  <!-- ko if: children.length > 0-->                                                       
-                  <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
-                      <li class="dynamic level2">
-                          <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
-           
-            <!-- ko if: children.length > 0-->
-            <span aria-haspopup="true" class="additional-background ms-navedit-flyoutArrow dynamic-children">
-             <span class="menu-item-text" data-bind="text: item.Title">
-             </span>
+</div>
+<!-- Main Content-->
+<div id="navContainer" style="display:none">
+    <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
+        <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
+            <span class="menu-item-text" data-bind="text: item.Title">
             </span>
-             <!-- /ko -->
-            <!-- ko if: children.length == 0-->
-            <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
-             <span class="menu-item-text" data-bind="text: item.Title">
-             </span>
-            </span>                 
-            <!-- /ko -->   
-                          </a>
-            <!-- ko if: children.length > 0-->
-           <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
-            <li class="dynamic level3">
-             <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
-              <span class="menu-item-text" data-bind="text: item.Title">
-              </span>
-             </a>
+        </a>
+        <ul id="menu" data-bind="foreach: $data.children" style="padding-left:20px">
+            <li class="static dynamic-children level1">
+                <a class="static dynamic-children menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
+               
+                 <!-- ko if: children.length > 0-->
+                    <span aria-haspopup="true" class="additional-background ms-navedit-flyoutArrow dynamic-children">
+                        <span class="menu-item-text" data-bind="text: item.Title">
+                        </span>
+                    </span>
+                <!-- /ko -->
+                <!-- ko if: children.length == 0-->   
+                    <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
+                        <span class="menu-item-text" data-bind="text: item.Title">
+                        </span>
+                    </span>
+                <!-- /ko -->   
+                </a>
+               
+                <!-- ko if: children.length > 0-->                                                       
+                <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
+                    <li class="dynamic level2">
+                        <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
+         
+          <!-- ko if: children.length > 0-->
+          <span aria-haspopup="true" class="additional-background ms-navedit-flyoutArrow dynamic-children">
+           <span class="menu-item-text" data-bind="text: item.Title">
+           </span>
+          </span>
+           <!-- /ko -->
+          <!-- ko if: children.length == 0-->
+          <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
+           <span class="menu-item-text" data-bind="text: item.Title">
+           </span>
+          </span>                 
+          <!-- /ko -->   
+                        </a>
+          <!-- ko if: children.length > 0-->
+         <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
+          <li class="dynamic level3">
+           <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
+            <span class="menu-item-text" data-bind="text: item.Title">
+            </span>
+           </a>
+          </li>
+         </ul>
+           <!-- /ko -->
+                    </li>
+                </ul>
+                <!-- /ko -->
             </li>
-           </ul>
-             <!-- /ko -->
-                      </li>
-                  </ul>
-                  <!-- /ko -->
-              </li>
-          </ul>
-      </div>
-  </div>
-  ```
+        </ul>
+    </div>
+</div>
+```
+<br/>
+6. Ersetzen Sie die URL in das Laden image Anchortag am Anfang, mit einem Link zu einem Bild laden in Ihrer Websitesammlung. Nachdem Sie die Änderungen vorgenommen haben, benennen Sie die Datei, und klicken Sie dann auf den Gestaltungsvorlagenkatalog hochladen. Dadurch wird eine neue Master-Datei generiert.<br/>
+7. Dieser HTML-Code wird die grundlegende Markup, das von der Suchergebnisse aus JavaScript-Code aufgefüllt wird. Sie müssen den Code zum Ändern des Werts für Var Stamm bearbeiten = "site Websitesammlungs-URL", wie im folgenden Codeausschnitt veranschaulicht:<br/>
 
-6. Ersetzen Sie die URL in das Laden image Anchortag am Anfang, mit einem Link zu einem Bild laden in Ihrer Websitesammlung. Nachdem Sie die Änderungen vorgenommen haben, benennen Sie die Datei, und klicken Sie dann auf den Gestaltungsvorlagenkatalog hochladen. Dadurch wird eine neue Master-Datei generiert.
-    
-7. Dieser HTML-Code wird die grundlegende Markup, das von der Suchergebnisse aus JavaScript-Code aufgefüllt wird. Sie müssen so bearbeiten Sie den folgenden Code zum Ändern des Werts für die `var root = "site collection URL"` wie im folgenden Codeausschnitt veranschaulicht: 
-    
-  ```
-  var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
-  ```
+```
+var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
+```
+<br/>
+8. Die Ergebnisse werden in das Array self.nodes zugewiesen und eine Hierarchie der Objekte mit linq.js zuweisen die Ausgabe zu einem Array self.heirarchy basiert. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies in der Funktion toggleView() erfolgt, indem Sie das Self-Objekt an die Funktion ko.applyBinding() übergeben.<br/>Dies führt dann Hierarchie Array folgenden HTML-Code gebunden werden:<br/>
 
-    Die gesamte JavaScript-Datei sieht wie folgt aus:
-    
-  ```
-  //Models and Namespaces
-  var SPOCustom = SPOCustom || {};
-  SPOCustom.Models = SPOCustom.Models || {}
-  SPOCustom.Models.NavigationNode = function () {
-      this.Url = ko.observable("");
-      this.Title = ko.observable("");
-      this.Parent = ko.observable("");
-  };
-  var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
-  var baseUrl = root + "/_api/search/query?querytext=";
-  var query = baseUrl + "'contentClass=\"STS_Web\"+path:" + root + "'&amp;trimduplicates=false&amp;rowlimit=300";
-  var baseRequest = {
-      url: "",
-      type: ""
-  };
-  //Parses a local object from JSON search result.
-  function getNavigationFromDto(dto) {
-      var item = new SPOCustom.Models.NavigationNode();
-      if (dto != undefined) {
-          var webTemplate = getSearchResultsValue(dto.Cells.results, 'WebTemplate');
-          if (webTemplate != "APP") {
-              item.Title(getSearchResultsValue(dto.Cells.results, 'Title')); //Key = Title
-              item.Url(getSearchResultsValue(dto.Cells.results, 'Path')); //Key = Path
-              item.Parent(getSearchResultsValue(dto.Cells.results, 'ParentLink')); //Key = ParentLink
-          }
-      }
-      return item;
-  }
-  function getSearchResultsValue(results, key) {
-      for (i = 0; i < results.length; i++) {
-          if (results[i].Key == key) {
-              return results[i].Value;
-          }
-      }
-      return null;
-  }
-  //Parse a local object from the serialized cache.
-  function getNavigationFromCache(dto) {
-      var item = new SPOCustom.Models.NavigationNode();
-      if (dto != undefined) {
-          item.Title(dto.Title);
-          item.Url(dto.Url);
-          item.Parent(dto.Parent);
-      }
-      return item;
-  }
-  /* create a new OData request for JSON response */
-  function getRequest(endpoint) {
-      var request = baseRequest;
-      request.type = "GET";
-      request.url = endpoint;
-      request.headers = { ACCEPT: "application/json;odata=verbose" };
-      return request;
-  };
-  /* Navigation Module*/
-  function NavigationViewModel() {
-      "use strict";
-      var self = this;
-      self.nodes = ko.observableArray([]);
-      self.hierarchy = ko.observableArray([]);;
-      self.loadNavigatioNodes = function () {
-          //Check local storage for cached navigation datasource.
-          var fromStorage = localStorage["nodesCache"];
-          if (false) {
-              var cachedNodes = JSON.parse(localStorage["nodesCache"]);
-              if (cachedNodes &amp;&amp; timeStamp) {
-                  //Check for cache expiration. Currently set to 3 hrs.
-                  var now = new Date();
-                  var diff = now.getTime() - timeStamp;
-                  if (Math.round(diff / (1000 * 60 * 60)) < 3) {
-                      //return from cache.
-                      var cacheResults = [];
-                      $.each(cachedNodes, function (i, item) {
-                          var nodeitem = getNavigationFromCache(item, true);
-                          cacheResults.push(nodeitem);
-                      });
-                      self.buildHierarchy(cacheResults);
-                      self.toggleView();
-                      addEventsToElements();
-                      return;
-                  }
-              }
-          }
-          //No cache hit, REST call required.
-          self.queryRemoteInterface();
-      };
-      //Executes a REST call and builds the navigation hierarchy.
-      self.queryRemoteInterface = function () {
-          var oDataRequest = getRequest(query);
-          $.ajax(oDataRequest).done(function (data) {
-              var results = [];
-              $.each(data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows.results, function (i, item) {
-                  if (i == 0) {
-                      //Add root element.
-                      var rootItem = new SPOCustom.Models.NavigationNode();
-                      rootItem.Title("Root");
-                      rootItem.Url(root);
-                      rootItem.Parent(null);
-                      results.push(rootItem);
-                  }
-                  var navItem = getNavigationFromDto(item);
-                  results.push(navItem);
-              });
-              //Add to local cache
-              localStorage["nodesCache"] = ko.toJSON(results);
-              localStorage["nodesCachedAt"] = new Date().getTime();
-              self.nodes(results);
-              if (self.nodes().length > 0) {
-                  var unsortedArray = self.nodes();
-                  var sortedArray = unsortedArray.sort(self.sortObjectsInArray);
-                  self.buildHierarchy(sortedArray);
-                  self.toggleView();
-                  addEventsToElements();
-              }
-          }).fail(function () {
-              //Handle error here!!
-              $("#loading").hide();
-              $("#error").show();
-          });
-      };
-      self.toggleView = function () {
-          var navContainer = document.getElementById("navContainer");
-          ko.applyBindings(self, navContainer);
-          $("#loading").hide();
-          $("#navContainer").show();
-      };
-      //Uses linq.js to build the navigation tree.
-      self.buildHierarchy = function (enumerable) {
-          self.hierarchy(Enumerable.From(enumerable).ByHierarchy(function (d) {
-              return d.Parent() == null;
-          }, function (parent, child) {
-              if (parent.Url() == null || child.Parent() == null)
-                  return false;
-              return parent.Url().toUpperCase() == child.Parent().toUpperCase();
-          }).ToArray());
-          self.sortChildren(self.hierarchy()[0]);
-      };
-      self.sortChildren = function (parent) {
-          // sjip processing if no children
-          if (!parent || !parent.children || parent.children.length === 0) {
-              return;
-          }
-          parent.children = parent.children.sort(self.sortObjectsInArray2);
-          for (var i = 0; i < parent.children.length; i++) {
-              var elem = parent.children[i];
-              if (elem.children &amp;&amp; elem.children.length > 0) {
-                  self.sortChildren(elem);
-              }
-          }
-      };
-      // ByHierarchy method breaks the sorting in chrome and firefix 
-      // we need to resort  as ascending
-      self.sortObjectsInArray2 = function (a, b) {
-          if (a.item.Title() > b.item.Title())
-              return 1;
-          if (a.item.Title() < b.item.Title())
-              return -1;
-          return 0;
-      };
-      self.sortObjectsInArray = function (a, b) {
-          if (a.Title() > b.Title())
-              return -1;
-          if (a.Title() < b.Title())
-              return 1;
-          return 0;
-      }
-  }
-  //Loads the navigation on load and binds the event handlers for mouse interaction.
-  function InitCustomNav() {
-      var viewModel = new NavigationViewModel();
-      viewModel.loadNavigatioNodes();
-  }
-  function addEventsToElements() {
-      //events.
-  
-  ```
+```
+<div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
+```
 
-     $("li.level1").mouseover (Funktion {) 
-  
-Var Position = $(this).position();
-  
-$(this).find("ul.level2").css ({Breite: 100; Links: top-position.left + 10: 50});
-    
-     }) 
-  
-.MouseOut (Funktion {)
-  
-$(this).find("ul.level2").css ({linken:-99999, Top: 0});
-  
-});
-  
-$("li.level2").mouseover (Funktion {)
-  
-Var Position = $(this).position();
-  
-Console.log(JSON.stringify(Position));
-  
-$(this).find("ul.level3").css ({Breite: 100; Links: position.left + 95, top: position.top});
-    
-     }) 
-  
-.MouseOut (Funktion {)
-  
-$(this).find("ul.level3").css ({linken:-99999, Top: 0});
-  
-});
-    
-    } _spBodyOnLoadFunctionNames.push("InitCustomNav");
-    
-    To summarize the code shown above in the jQuery **[$(document).ready]** function there is a **[viewModel]** object created and then the **[loadNavigationNodes()]** function on that object is called. This function either loads the previously built navigation hierarchy stored in the HTML5 local storage of the client browser or it calls the function **[queryRemoteInterface()]**. 
-    
-    **[QueryRemoteInterface()]** builds a request using the **[getRequest()]** function with the query parameter defined earlier in the script and then returns data from the server. This data is essentially an array of all the sites in the site collection represented as data transfer objects with various properties. This data is then parsed into the previously defined **[SPO.Models.NavigationNode]** objects which use Knockout.js to create observable properties for use by data binding the values into the HTML that we defined earlier. The objects are then put into a results array. This array is parsed into JSON using Knockout and stored in the local browser storage for improved performance on future page loads. 
-    
-8. Im nächsten Schritt die Ergebnisse werden in das Array **[self.nodes]** zugewiesen und eine Hierarchie basiert der Objekte mit linq.js ein Array **[self.heirarchy]** die Ausgabe zuweisen. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies in der Funktion **[toggleView()]** erfolgt, indem Sie das Self-Objekt an die Funktion **[ko.applyBinding()]** übergeben. Dies führt dann Hierarchie Array folgenden HTML-Code gebunden werden: 
-    
-  ```
-  <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
-  ```
+Der Ereignishandler für `mouseenter` und `mouseexit` werden hinzugefügt, um die Navigation auf oberster Ebene zum Verarbeiten der Unterwebsite Dropdownmenüs ausgeführt wird, in der `addEventsToElements()` Funktion.
 
-    Schließlich werden die Ereignishandler für **[Mouseenter]** und **[Mouseexit]** zum der Navigation auf oberster Ebene der Unterwebsite Dropdownmenüs behandeln hinzugefügt, die in der Funktion **[addEventsToElements()]** erfolgt. 
-    
-    Im folgenden Screenshot können die Ergebnisse der Navigation angezeigt werden:
-    
-    ![Screenshot der Ergebnisse der navigation](media/020d34d2-942a-431b-9b26-6d2c8a6fde30.png)
-  
-    In unserem komplexen Navigationsbeispiel zeigt das Laden einer leeren Seite ohne lokales Zwischenspeichern, dass die Zeit auf dem Server von der strukturellen Benchmarknavigation auf ein ähnliches Ergebnis reduziert wurde wie beim Ansatz der verwalteten Navigation.
-    
-    ![Screenshot von SPRequestDuration 301](media/307d7caf-e83a-40d9-a551-91d842521d03.png)
-  
-    Ein wesentlicher Vorteil dieses Ansatzes ist, dass durch Verwendung des lokalen HTML5-Speichers die Navigation lokal für den Benutzer gespeichert wird, wenn er die Seite das nächste Mal lädt.
-    
-Wir profitieren von einer wesentlichen Leistungssteigerung, wenn wir die Such-API für die strukturelle Navigation verwenden, allerdings müssen dafür technische Funktionen ausgeführt und angepasst werden. Bei der Beispielimplementierung werden die Websites auf die gleiche Weise angeordnet wie bei der sofort nutzbaren strukturellen Navigation, nämlich in alphabetischer Reihenfolge. Wenn Sie von dieser Reihenfolge abweichen möchten, ist dies komplizierter zu entwickeln und zu verwalten. Außerdem müssen Sie dann auch von den unterstützten Masterseiten abweichen. Wenn die benutzerdefinierte Masterseite nicht verwaltet wird, verpassen Sie für Ihre Website Updates und Verbesserungen, die Microsoft an den Masterseiten vornimmt.
-  
-Im oben stehenden Code gelten die folgenden Abhängigkeiten:
-  
-- jQuery-[http://jquery.com/](http://jquery.com/)
-    
-- KnockoutJS-[http://knockoutjs.com/](http://knockoutjs.com/)
-    
-- Linq.js - [http://linqjs.codeplex.com/](http://linqjs.codeplex.com/), oder [github.com/neuecc/linq.js](https://github.com/neuecc/linq.js/)
-    
-Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode verwendet, die im obigen Code und unterbricht den Navigationscode. Um dieses Problem zu beheben, fügen Sie die folgende Methode zur Datei Linq.js vor der Zeile "Flatten: Funktion ()".
-  
+In unserem Beispiel komplexen Navigation eine leere Seite laden, ohne das lokale Zwischenspeichern zeigt der Zeitaufwand für den Server aus der Vergleichstest strukturelle Navigation ein ähnliches Ergebnis als die verwaltete Navigation Ansatz abzurufenden verringern wurde.
+
+### <a name="about-the-javascript-file"></a>Über die JavaScript-Datei...
+
+Die gesamte JavaScript-Datei sieht wie folgt aus:
+
+```
+//Models and Namespaces
+var SPOCustom = SPOCustom || {};
+SPOCustom.Models = SPOCustom.Models || {}
+SPOCustom.Models.NavigationNode = function () {
+
+    this.Url = ko.observable("");
+    this.Title = ko.observable("");
+    this.Parent = ko.observable("");
+
+};
+
+var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
+var baseUrl = root + "/_api/search/query?querytext=";
+var query = baseUrl + "'contentClass=\"STS_Web\"+path:" + root + "'&trimduplicates=false&rowlimit=300";
+
+var baseRequest = {
+    url: "",
+    type: ""
+};
+
+
+//Parses a local object from JSON search result.
+function getNavigationFromDto(dto) {
+    var item = new SPOCustom.Models.NavigationNode();
+    if (dto != undefined) {
+
+        var webTemplate = getSearchResultsValue(dto.Cells.results, 'WebTemplate');
+
+        if (webTemplate != "APP") {
+            item.Title(getSearchResultsValue(dto.Cells.results, 'Title')); //Key = Title
+            item.Url(getSearchResultsValue(dto.Cells.results, 'Path')); //Key = Path
+            item.Parent(getSearchResultsValue(dto.Cells.results, 'ParentLink')); //Key = ParentLink
+        }
+
+    }
+    return item;
+}
+
+function getSearchResultsValue(results, key) {
+
+    for (i = 0; i < results.length; i++) {
+        if (results[i].Key == key) {
+            return results[i].Value;
+        }
+    }
+    return null;
+}
+
+//Parse a local object from the serialized cache.
+function getNavigationFromCache(dto) {
+    var item = new SPOCustom.Models.NavigationNode();
+
+    if (dto != undefined) {
+
+        item.Title(dto.Title);
+        item.Url(dto.Url);
+        item.Parent(dto.Parent);
+    }
+
+    return item;
+}
+
+/* create a new OData request for JSON response */
+function getRequest(endpoint) {
+    var request = baseRequest;
+    request.type = "GET";
+    request.url = endpoint;
+    request.headers = { ACCEPT: "application/json;odata=verbose" };
+    return request;
+};
+
+/* Navigation Module*/
+function NavigationViewModel() {
+    "use strict";
+    var self = this;
+    self.nodes = ko.observableArray([]);
+    self.hierarchy = ko.observableArray([]);;
+    self.loadNavigatioNodes = function () {
+        //Check local storage for cached navigation datasource.
+        var fromStorage = localStorage["nodesCache"];
+        if (false) {
+            var cachedNodes = JSON.parse(localStorage["nodesCache"]);
+
+            if (cachedNodes && timeStamp) {
+                //Check for cache expiration. Currently set to 3 hrs.
+                var now = new Date();
+                var diff = now.getTime() - timeStamp;
+                if (Math.round(diff / (1000 * 60 * 60)) < 3) {
+
+                    //return from cache.
+                    var cacheResults = [];
+                    $.each(cachedNodes, function (i, item) {
+                        var nodeitem = getNavigationFromCache(item, true);
+                        cacheResults.push(nodeitem);
+                    });
+
+                    self.buildHierarchy(cacheResults);
+                    self.toggleView();
+                    addEventsToElements();
+                    return;
+                }
+            }
+        }
+        //No cache hit, REST call required.
+        self.queryRemoteInterface();
+    };
+
+    //Executes a REST call and builds the navigation hierarchy.
+    self.queryRemoteInterface = function () {
+        var oDataRequest = getRequest(query);
+        $.ajax(oDataRequest).done(function (data) {
+            var results = [];
+            $.each(data.d.query.PrimaryQueryResult.RelevantResults.Table.Rows.results, function (i, item) {
+
+                if (i == 0) {
+                    //Add root element.
+                    var rootItem = new SPOCustom.Models.NavigationNode();
+                    rootItem.Title("Root");
+                    rootItem.Url(root);
+                    rootItem.Parent(null);
+                    results.push(rootItem);
+                }
+                var navItem = getNavigationFromDto(item);
+                results.push(navItem);
+            });
+            //Add to local cache
+            localStorage["nodesCache"] = ko.toJSON(results);
+
+            localStorage["nodesCachedAt"] = new Date().getTime();
+            self.nodes(results);
+            if (self.nodes().length > 0) {
+                var unsortedArray = self.nodes();
+                var sortedArray = unsortedArray.sort(self.sortObjectsInArray);
+
+                self.buildHierarchy(sortedArray);
+                self.toggleView();
+                addEventsToElements();
+            }
+        }).fail(function () {
+            //Handle error here!!
+            $("#loading").hide();
+            $("#error").show();
+        });
+    };
+    self.toggleView = function () {
+        var navContainer = document.getElementById("navContainer");
+        ko.applyBindings(self, navContainer);
+        $("#loading").hide();
+        $("#navContainer").show();
+
+    };
+    //Uses linq.js to build the navigation tree.
+    self.buildHierarchy = function (enumerable) {
+        self.hierarchy(Enumerable.From(enumerable).ByHierarchy(function (d) {
+            return d.Parent() == null;
+        }, function (parent, child) {
+            if (parent.Url() == null || child.Parent() == null)
+                return false;
+            return parent.Url().toUpperCase() == child.Parent().toUpperCase();
+        }).ToArray());
+
+        self.sortChildren(self.hierarchy()[0]);
+    };
+
+
+    self.sortChildren = function (parent) {
+
+        // sjip processing if no children
+        if (!parent || !parent.children || parent.children.length === 0) {
+            return;
+        }
+
+        parent.children = parent.children.sort(self.sortObjectsInArray2);
+
+        for (var i = 0; i < parent.children.length; i++) {
+            var elem = parent.children[i];
+
+            if (elem.children && elem.children.length > 0) {
+                self.sortChildren(elem);
+            }
+        }
+    };
+
+    // ByHierarchy method breaks the sorting in chrome and firefix 
+    // we need to resort  as ascending
+    self.sortObjectsInArray2 = function (a, b) {
+        if (a.item.Title() > b.item.Title())
+            return 1;
+        if (a.item.Title() < b.item.Title())
+            return -1;
+        return 0;
+    };
+
+
+    self.sortObjectsInArray = function (a, b) {
+        if (a.Title() > b.Title())
+            return -1;
+        if (a.Title() < b.Title())
+            return 1;
+        return 0;
+    }
+}
+
+//Loads the navigation on load and binds the event handlers for mouse interaction.
+function InitCustomNav() {
+    var viewModel = new NavigationViewModel();
+    viewModel.loadNavigatioNodes();
+}
+
+function addEventsToElements() {
+    //events.
+      $("li.level1").mouseover(function () {
+          var position = $(this).position();
+          $(this).find("ul.level2").css({ width: 100, left: position.left + 10, top: 50 });
+      })
+   .mouseout(function () {
+     $(this).find("ul.level2").css({  left: -99999, top: 0 });
+   
+    });
+   
+     $("li.level2").mouseover(function () {
+          var position = $(this).position();
+          console.log(JSON.stringify(position));
+          $(this).find("ul.level3").css({ width: 100, left: position.left + 95, top:  position.top});
+      })
+   .mouseout(function () {
+     $(this).find("ul.level3").css({  left: -99999, top: 0 });
+    });
+} _spBodyOnLoadFunctionNames.push("InitCustomNav");
+
+``` 
+
+Den oben aufgeführten Code Zusammenfassen der `jQuery $(document).ready` Funktion vorhanden ist ein `viewModel object` erstellt und dann die `loadNavigationNodes()` Funktion für dieses Objekt aufgerufen wird. Diese Funktion lädt entweder der zuvor erstellten Navigationshierarchie im lokalen Speicher des Clientbrowsers HTML5 gespeichert oder die Funktion ruft `queryRemoteInterface()`.
+
+`QueryRemoteInterface()`erstellt eine Anforderung mithilfe der `getRequest()` -Funktion mit dem Abfragezeichenfolgen-Parameter weiter oben in das Skript definiert, und klicken Sie dann die Daten vom Server zurückgegeben. Diese Daten ist im Wesentlichen ein Array aller Websites in der Websitesammlung als Objekte zum Übertragen von Daten mit verschiedenen Eigenschaften dargestellt. 
+
+Werden diese Daten analysiert in der zuvor definierten `SPO.Models.NavigationNode` Objekte, die verwenden `Knockout.js` sichtbare Eigenschaften für die Verwendung durch die Werte in der HTML-Code, die wir zuvor definierten Binden von Daten erstellen. 
+
+Die Objekte sind, platzieren Sie dann in ein Ergebnisarray. Dieses Array wird in JSON mit Knockout analysiert und in den lokalen Browser Speicher für verbesserte Leistung auf zukünftige Seite Lasten gespeichert.
+
+### <a name="benefits-of-this-approach"></a>Vorteile dieses Ansatzes
+
+Ein wesentlicher Nutzen von [diesem Ansatz](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) ist mithilfe von HTML5 lokalen Speicher, die Navigation lokal für den Benutzer das nächste Mal gespeichert wird die Seite zu laden. Wir erhalten Haupt-Leistungssteigerungen aus mithilfe der API für die Suche für die strukturelle Navigation. Allerdings dauert es einige Eignung ausführen und diese Funktionalität anpassen. 
+
+In der [Beispiel-Implementierung](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)werden die Websites in die gleiche Weise wie die strukturelle Out-of-Box-Navigation geordnet; alphabetischer Reihenfolge. Wenn Sie von dieser Reihenfolge abweichen, wäre es schwieriger zu entwickeln und zu verwalten. Darüber hinaus müssen diesem Ansatz Sie von der unterstützten Gestaltungsvorlagen abweichen. Wenn die benutzerdefinierte Gestaltungsvorlage nicht verwaltet werden, Ihrer Website wird verpassen out auf der Updates und Verbesserungen, die Microsoft die Gestaltungsvorlagen gemacht werden.
+
+Die [über Code](#about-the-javascript-file) gelten die folgenden Abhängigkeiten:
+
+- jQuery-http://jquery.com/
+- KnockoutJS-http://knockoutjs.com/
+- Linq.js - http://linqjs.codeplex.com/, oder github.com/neuecc/linq.js
+
+Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode verwendet, die im obigen Code und unterbricht den Navigationscode. Um dieses Problem zu beheben, fügen Sie die folgende Methode zur Datei Linq.js vor der Zeile `Flatten: function ()`.
+
 ```
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
      ascending = ascending == undefined ? true : ascending;
@@ -462,9 +473,11 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
     
      //Initiate or increase level
      var level = parent === undefined ? 1 : parent.level + 1;
+
     return new Enumerable(function() {
          var enumerator;
          var index = 0;
+
         var createLevel = function() {
                  var obj = {
                      item: enumerator.Current(),
@@ -484,7 +497,9 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
                  });
                  return obj;
              };
+
         return new IEnumerator(
+
         function() {
              enumerator = source.GetEnumerator();
          }, function() {
@@ -494,6 +509,7 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
                      if (firstLevel(enumerator.Current(), index++)) {
                          return this.Yield(createLevel());
                      }
+
                 } else {
                      if (connectBy(parent.item, enumerator.Current(), index++)) {
                          return this.Yield(createLevel());
@@ -508,5 +524,8 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
  },
 
 ```
+  
+## <a name="related-topics"></a>Verwandte Themen
 
+[Übersicht über die verwaltete Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
 
