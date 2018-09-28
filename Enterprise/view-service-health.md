@@ -1,9 +1,8 @@
 ---
 title: 'Gewusst wie: Überprüfen von Office 365-Dienststatus'
-ms.author: kfollis
-author: kfollis
-manager: scotv
-ms.date: 6/15/2018
+ms.author: robmazz
+author: robmazz
+manager: laurawi
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -21,16 +20,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Status des Office 365-Dienste vor dem Aufruf von Support, um herauszufinden, ob es eine Unterbrechung Active-Dienst ist
-ms.openlocfilehash: d01fe8e269ace922ab92cca779d6f8fea8b6802e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: f4bdc0f4b6faa7a3ae86580596e28e6391167340
+ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540783"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24976565"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Gewusst wie: Überprüfen von Office 365-Dienststatus
 
-Sie können die Integrität der Office 365, Yammer, Microsoft Dynamics CRM und Intune Microsoft Cloud Services anzeigen, klicken Sie auf der Office 365 ** Health Service ** Seite in der Verwaltungskonsole. Wenn Sie Probleme mit einer Cloud-Dienst sind, können Sie den Dienststatus, um zu bestimmen, ob dies ein bekanntes Problem mit einer Auflösung ausgeführt, ist bevor Sie Support anrufen oder Zeit zur Problembehandlung ausgeben überprüfen. 
+Sie können die Integrität der Office 365, Yammer, Microsoft Dynamics CRM und Microsoft Intune Cloud-Dienste auf der Seite Office 365 **Dienststatus** im Administrationscenter anzeigen. Wenn Sie Probleme mit einer Cloud-Dienst sind, können Sie den Dienststatus, um zu bestimmen, ob dies ein bekanntes Problem mit einer Auflösung ausgeführt, ist bevor Sie Support anrufen oder Zeit zur Problembehandlung ausgeben überprüfen. 
   
 ### <a name="how-to-check-service-health"></a>Gewusst wie: Überprüfen des Dienststatus
 
@@ -39,7 +38,7 @@ Sie können die Integrität der Office 365, Yammer, Microsoft Dynamics CRM und I
     > [!NOTE]
     > Personen, die der Administratorrolle oder globaler Administrator zugewiesen sind, können Dienststatus anzeigen. Damit Exchange, SharePoint und Skype für Business-Admins Dienststatus anzeigen können, müssen sie auch die Dienst-Administratorrolle zugewiesen werden. 
   
-2. Um Dienststatus, im Administrationscenter zu öffnen, wechseln Sie zur **Integrität** \> **Dienststatus**, oder klicken Sie auf den Dienststatus auf das Dashboard Home Karte. Die Karte Dashboard gibt an, ob es ein Problem Active-Dienst und Links zu der Seite Detaillierte Health ist.
+2. Um Dienststatus, im Administrationscenter zu öffnen, wechseln Sie zur **Integrität** > **Dienststatus**, oder klicken Sie auf den **Dienst Health Karte** im **Home-Dashboard**. Die Karte Dashboard gibt an, ob es ein Problem Active-Dienst und Links zu der Seite Detaillierte Health ist.
     
     ![Dashboard-Karte finden Sie Dienststatus](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -94,16 +93,16 @@ Die meisten Dienste Zeit werden ohne weitere Informationen wie fehlerfrei angeze
    
 ### <a name="status-definitions"></a>Statusdefinitionen
 
-| |
 |**Status**|**Definition**|
 |:-----|:-----|
-|Untersuchen von  <br/> |Wir wissen, ein potenzielles Problem und Weitere Informationen über was passiert, und der Bereich der Auswirkungen gesammelt werden.  <br/> |
-|Dienstbeeinträchtigung  <br/> |Wir haben bestätigt, dass ein Problem, die Verwendung des Diensts oder einer Funktion beeinflussen können. Dieser Status wird möglicherweise angezeigt, wenn ein Dienst langsamer als gewöhnlich durchführt, stehen Ihnen zeitweilige unterbrochen wird, oder wenn ein Feature funktionsfähig ist.  <br/> |
-|Unterbrechung des Dienstes  <br/> |Dieser Status wird angezeigt, wenn Sie also feststellen, dass ein Problem wirkt sich die Möglichkeit für Benutzer den Zugriff auf Dienste auf. In diesem Fall das Problem ist von Bedeutung und durchgängig reproduzieren kann.  <br/> |
-|Wiederherstellen von Diensten  <br/> |Die Ursache des Problems wurde erkannt, wir wissen, welche Maßnahmen zum Erfassen, und es werden gerade verwenden aus der Dienst wieder in einem fehlerfreien Status befinden.  <br/> |
-|Erweiterte Wiederherstellung  <br/> |Dieser Status gibt an, dass die Maßnahme ist noch in Arbeit wiederherstellen Service für die meisten Benutzer jedoch dauert einige Zeit in allen betroffenen Systemen zu erreichen. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Auswirkungen verringern, während eine endgültige Lösung anwenden gewartet beheben vorgenommen haben.  <br/> |
-|Untersuchung angehalten  <br/> |Wenn eine Anforderung für zusätzliche Informationen von Kunden an uns weiter untersuchen ermöglichen die detaillierte Untersuchung auf ein potenzielles Problem führt, wird dieser Status wird angezeigt. Wenn wir fungieren sollen, müssen wir Sie wissen, welche Daten oder Protokolle wir benötigen lassen.  <br/> |
-|Dienst wiederhergestellt  <br/> |Wir haben bestätigt, dass Maßnahme aufgelöst wurde das zugrunde liegende Problem und den Dienst in einem fehlerfreien Zustand wiederhergestellt wurde. Um herauszufinden, welche Fehler aufgetreten sind, können zeigen Sie das Problemdetails an.  <br/> |
+|**Untersuchen von** | Wir wissen, ein potenzielles Problem und Weitere Informationen über was passiert, und der Bereich der Auswirkungen gesammelt werden. |
+|**Dienstbeeinträchtigung** | Wir haben bestätigt, dass ein Problem, die Verwendung des Diensts oder einer Funktion beeinflussen können. Dieser Status wird möglicherweise angezeigt, wenn ein Dienst langsamer als gewöhnlich durchführt, stehen Ihnen zeitweilige unterbrochen wird, oder wenn ein Feature funktionsfähig ist. |
+|**Unterbrechung des Dienstes** | Dieser Status wird angezeigt, wenn Sie also feststellen, dass ein Problem wirkt sich die Möglichkeit für Benutzer den Zugriff auf Dienste auf. In diesem Fall das Problem ist von Bedeutung und durchgängig reproduzieren kann. |
+|**Wiederherstellen von Diensten** | Die Ursache des Problems wurde erkannt, wir wissen, welche Maßnahmen zum Erfassen, und es werden gerade verwenden aus der Dienst wieder in einem fehlerfreien Status befinden. |
+|**Erweiterte Wiederherstellung** | Dieser Status gibt an, dass die Maßnahme ist noch in Arbeit wiederherstellen Service für die meisten Benutzer jedoch dauert einige Zeit in allen betroffenen Systemen zu erreichen. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Auswirkungen verringern, während eine endgültige Lösung anwenden gewartet beheben vorgenommen haben. |
+|**Untersuchung angehalten** | Wenn eine Anforderung für zusätzliche Informationen von Kunden an uns weiter untersuchen ermöglichen die detaillierte Untersuchung auf ein potenzielles Problem führt, wird dieser Status wird angezeigt. Wenn wir fungieren sollen, müssen wir Sie wissen, welche Daten oder Protokolle wir benötigen lassen. |
+|**Dienst wiederhergestellt** | Wir haben bestätigt, dass Maßnahme aufgelöst wurde das zugrunde liegende Problem und den Dienst in einem fehlerfreien Zustand wiederhergestellt wurde. Um herauszufinden, welche Fehler aufgetreten sind, können zeigen Sie das Problemdetails an. |
+|**Nach dem schadensbericht veröffentlicht** | Wir haben einen Post Vorfall-Bericht nach einem bestimmten Problem veröffentlicht, die umfasst Stamm Ursache Informationen und nächste Schritte, um sicherzustellen, dass ein ähnliches Problem nicht mehr auftritt. |
    
 ## <a name="history"></a>„Verlauf“
 

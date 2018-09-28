@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Verschiebt Daten werden mit minimaler Beeinträchtigung für Endbenutzer an einen Back-End-Vorgang. Während Microsoft alle Dienste und die zugehörigen Daten für Ihre Mandanten zu einer neuen Datacenter Geo verschiebt ist keine Aktion erforderlich. Die Datenübertragung und Validierung auftreten im Hintergrund im voraus mit minimaler Beeinträchtigung Benutzern.
-ms.openlocfilehash: 7b012a8cbf1eb3756cc5b06660e414a327c2ae76
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839603"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975173"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -96,8 +96,8 @@ Die folgende Tabelle zeigt, wie eDiscovery und Überwachung über die Exchange-V
   
 ||**Exchange Admin Center**|**Sicherheit &amp; Compliance Center**|
 |:-----|:-----|:-----|
-|eDiscovery  <br/> | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel " **Admin** ". </br> Klicken Sie auf **Admin zentriert** \> **Exchange**. </br> Wählen Sie die **Verwaltung der Richtlinientreue** \> **Compliance-eDiscovery &amp; halten**. | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel "Admin". </br> Klicken Sie auf **Admin zentriert** \> **Security &amp; Compliance**. </br> Wählen Sie **Search &amp; Untersuchung** \> **eDiscovery**.|
-|Überwachung  <br/> | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel " **Admin** ". </br> Klicken Sie auf **Admin zentriert** \> **Exchange**. Wählen Sie die **Verwaltung der Richtlinientreue** \> **Überwachung**. | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel "Admin". </br> Klicken Sie auf **Admin zentriert** \> **Security &amp; Compliance**. </br> Wählen Sie **Search &amp; Untersuchung** \> **Audit Log suchen**. |
+|eDiscovery  <br/> | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel " **Admin** ". <br/> Klicken Sie auf **Admin zentriert** \> **Exchange**. <br/> Wählen Sie die **Verwaltung der Richtlinientreue** \> **Compliance-eDiscovery &amp; halten**. | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel "Admin". <br/> Klicken Sie auf **Admin zentriert** \> **Security &amp; Compliance**. <br/> Wählen Sie **Search &amp; Untersuchung** \> **eDiscovery**.|
+|Überwachung  <br/> | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel " **Admin** ". <br/> Klicken Sie auf **Admin zentriert** \> **Exchange**. Wählen Sie die **Verwaltung der Richtlinientreue** \> **Überwachung**. | Wechseln Sie zu https://portal.office.com, und klicken Sie dann auf die Kachel "Admin". <br/> Klicken Sie auf **Admin zentriert** \> **Security &amp; Compliance**. <br/> Wählen Sie **Search &amp; Untersuchung** \> **Audit Log suchen**. |
    
 ### <a name="mailbox-migration"></a>Postfachmigration
 

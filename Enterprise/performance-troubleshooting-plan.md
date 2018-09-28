@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 description: Müssen Sie wissen, die Schritte zum Identifizieren und Beheben von Problemen fällt ab, hängt und langsam zwischen SharePoint Online, OneDrive for Business, Exchange Online oder Skype für Business Online und Ihrer Clientcomputer? Vor dem Aufruf der Unterstützung kann in diesem Artikel Behebung von Leistungsproblemen Office 365 und auch einige der gängigsten Probleme beheben.
-ms.openlocfilehash: 629e65fe6d35237f33ae06fdeec380c670cd5e62
-ms.sourcegitcommit: 0466a88133a42e2db4245f972cecb371721c9b5d
+ms.openlocfilehash: 0e588d35ff6caaa0796092bb2f964bced15f4e47
+ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849368"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23975183"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Plan zur Problembehandlung für Office 365
 
@@ -120,14 +120,14 @@ Nach der Installation von Netmon 3.4 Öffnen Sie das Tool, und gehen Sie folgend
   
  **Führen Sie HTTPWatch und reproduzieren Sie das Problem**
   
-1. HTTPWatch ist ein Browser-Plug-in, das Tool im Browser Verfügbarmachen geringfügig für die einzelnen Versionen von Internet Explorer. Im Browser Internet Explorer finden Sie in der Regel HTTPWatch unter der Leiste Befehle.</br>Wenn Sie die HTTPWatch-Plug-in im Browserfenster sehen, die Version des Browsers Kontrollkästchen durch Klicken Sie auf Hilfe \> zu, oder klicken Sie in späteren Versionen von Internet Explorer auf die Zahnrad-Symbol und zu Internet Explorer. Um die **Befehle** Leiste zu starten, mit der rechten Maustaste in der Menüleiste in Internet Explorer, und klicken Sie auf **Befehle Leiste**. In der Vergangenheit HTTPWatch wurde verknüpft mit den Befehlen und das Explorer-Leisten, also einmal Sie installieren, wenn das Symbol (auch nach dem Neustart) Überprüfen von **Tools**und Ihrer Symbolleisten für das Symbol nicht sofort angezeigt. Denken Sie daran, dass Symbolleisten angepasst werden können und Optionen für diese hinzugefügt werden können.</br>
+1. HTTPWatch ist ein Browser-Plug-in, das Tool im Browser Verfügbarmachen geringfügig für die einzelnen Versionen von Internet Explorer. Im Browser Internet Explorer finden Sie in der Regel HTTPWatch unter der Leiste Befehle.<br/>Wenn Sie die HTTPWatch-Plug-in im Browserfenster sehen, die Version des Browsers Kontrollkästchen durch Klicken Sie auf Hilfe \> zu, oder klicken Sie in späteren Versionen von Internet Explorer auf die Zahnrad-Symbol und zu Internet Explorer. Um die **Befehle** Leiste zu starten, mit der rechten Maustaste in der Menüleiste in Internet Explorer, und klicken Sie auf **Befehle Leiste**. In der Vergangenheit HTTPWatch wurde verknüpft mit den Befehlen und das Explorer-Leisten, also einmal Sie installieren, wenn das Symbol (auch nach dem Neustart) Überprüfen von **Tools**und Ihrer Symbolleisten für das Symbol nicht sofort angezeigt. Denken Sie daran, dass Symbolleisten angepasst werden können und Optionen für diese hinzugefügt werden können.<br/>
     ![Internet Explorer Befehl Symbolleiste HTTPWatch Symbol angezeigt.](media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
   
 2. Starten Sie HTTPWatch in einer Internet Explorer-Browserfenster. Es wird an den Browser am unteren Rand das Fenster verankert angezeigt. Klicken Sie auf **Aufzeichnen**.
     
 3. Reproduzieren Sie die genauen Schritte das Leistungsproblem beteiligt. Klicken Sie auf die Schaltfläche **Beenden** in HTTPWatch. 
     
-4. **Speichern Sie** die HTTPWatch oder **per E-Mail senden**. Denken Sie daran, nennen Sie die Datei so, dass es enthält Datums-und Uhrzeitinformationen und der Angabe, ob Ihr Video veranschaulicht die Leistung gut oder schlecht enthält.</br>![HTTPWatch mit der Netzwerk-Registerkarte für eine Seitenladung der Office 365-Homepage.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)</br>
+4. **Speichern Sie** die HTTPWatch oder **per E-Mail senden**. Denken Sie daran, nennen Sie die Datei so, dass es enthält Datums-und Uhrzeitinformationen und der Angabe, ob Ihr Video veranschaulicht die Leistung gut oder schlecht enthält.<br/>![HTTPWatch mit der Netzwerk-Registerkarte für eine Seitenladung der Office 365-Homepage.](media/021a2c64-d581-49fd-adf4-4c364f589d75.PNG)<br/>
     Dieser Screenshot hat ihren Ursprung die Professional-Version von HTTPWatch. Sie können in der Basisversion auf einem Computer mit einem Professional-Version übernommen Spuren öffnen und Lesen sie es. Zusätzlicher Informationen kann in die durch diese Methode verfolgen verfügbar sein.
     
 ## <a name="problem-steps-recorder"></a>Problem Schritte Aufzeichnung
@@ -279,11 +279,11 @@ Hier sind die Schritte durchführen, um Ihre Netmon, um die IP-Adresse (und betr
 
 1. Pingen Sie die URL `ping outlook.office365.com` und in den Ergebnissen, notieren Sie sich den Namen und die IP-Adresse des DNS-Servers an die Ping-Anforderung gesendet. 
 2. Netzwerk Spur Öffnen der Seite oder erhalten Sie wie folgt der Aktion, die das Leistungsproblem oder, wenn der Ping-Befehl, selbst einen hohen Wartezeit angezeigt Netzwerk verfolgen sie. 
-3. Öffnen Sie die Ablaufverfolgung in Netmon und Filter für DNS (dieser Filter auch in Wireshark, ist jedoch zu Fall vertrauliche `-- dns`). Da Sie den Namen des DNS-Servers aus Ihrer Ping kennen können Sie auch weitere statt in Netmon wie folgt filtern: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , welche sieht wie dies im Wireshark Dns und Rahmen "Namnorthwest" enthält.</br>Öffnen Sie das Antwortpaket, und klicken Sie im Fenster des Netmon Frame Details auf DNS, um weitere Informationen zu erweitern. In der DNS-Informationen, die Sie die IP-Adresse des DNS-Servers, die die Anforderung zum in Office 365 – hinausgehen finden benötigen Sie diese IP-Adresse für den nächsten Schritt (das PsPing-Tool). Entfernen Sie den Filter, mit der rechten Maustaste auf die DNS-Antwort Netmons Frame sagen \> Unterhaltungen suchen \> DNS, um die DNS-Abfrage und Antwort Side-by-Side finden Sie unter. 
+3. Öffnen Sie die Ablaufverfolgung in Netmon und Filter für DNS (dieser Filter auch in Wireshark, ist jedoch zu Fall vertrauliche `-- dns`). Da Sie den Namen des DNS-Servers aus Ihrer Ping kennen können Sie auch weitere statt in Netmon wie folgt filtern: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , welche sieht wie dies im Wireshark Dns und Rahmen "Namnorthwest" enthält.<br/>Öffnen Sie das Antwortpaket, und klicken Sie im Fenster des Netmon Frame Details auf DNS, um weitere Informationen zu erweitern. In der DNS-Informationen, die Sie die IP-Adresse des DNS-Servers, die die Anforderung zum in Office 365 – hinausgehen finden benötigen Sie diese IP-Adresse für den nächsten Schritt (das PsPing-Tool). Entfernen Sie den Filter, mit der rechten Maustaste auf die DNS-Antwort Netmons Frame sagen \> Unterhaltungen suchen \> DNS, um die DNS-Abfrage und Antwort Side-by-Side finden Sie unter. 
 4. Beachten Sie außerdem in Netmon der Uhrzeit-Offset Spalte zwischen dem DNS-Anforderung und Antwort. Im nächsten Schritt, leicht zu installieren und verwenden [PsPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) kommt Tool in äußerst praktisch, da ICMP häufig auf Firewalls blockiert ist und da PsPing elegante Wartezeit in Millisekunden nachverfolgt werden. PsPing schließt eine TCP-Verbindung mit einer Adresse und Port (in unseren Groß-/Kleinschreibung open Port 443) ab. 
 5. Installieren Sie PsPing. 
 6. Öffnen Sie ein Eingabeaufforderungsfenster (Starten \> ausführen \> Geben Sie cmd ein, oder Windows-Taste \> Geben Sie cmd ein), und wechseln Sie zu dem Verzeichnis, in dem Sie zum Ausführen des Befehls PsPing PsPing installiert. In meiner Beispielen können Sie sehen, dass ich einen Ordner 'Korrektur' auf der Stammebene der C. vorgenommen Sie können auch für den Schnellzugriff vornehmen. 
-7. Geben Sie den Befehl ein, sodass Sie Ihre PsPing für die IP-Adresse des Office 365 DNS-Servers aus der früheren Netzwerkmonitor tätigen – Denken Sie daran, die Portnummer hinzufügen. </br>Anders ausgedrückt, `psping -n 20 132.245.24.82:445`. Dadurch Sie eine Auswahl von 20 Ping und durchschnittliche Wartezeit bei PsPing beendet. 
+7. Geben Sie den Befehl ein, sodass Sie Ihre PsPing für die IP-Adresse des Office 365 DNS-Servers aus der früheren Netzwerkmonitor tätigen – Denken Sie daran, die Portnummer hinzufügen. <br/>Anders ausgedrückt, `psping -n 20 132.245.24.82:445`. Dadurch Sie eine Auswahl von 20 Ping und durchschnittliche Wartezeit bei PsPing beendet. 
 
 Wenn Sie über einen Proxyserver zu Office 365 Vorhaben, sind die Schritte etwas unterschiedlich. Würden Sie ersten PsPing auf den Proxyserver eine durchschnittliche Wartezeit in Millisekunden an Proxy/Ausgang und nutzen, und führen Sie dann entweder PsPing für den Proxy, oder auf einem Computer mit einer direkten Internetverbindung, um den fehlenden Wert (eine zu Office 365 und Back) abzurufen.  
 
