@@ -3,7 +3,7 @@ title: Zusätzliche Office 365-IP-Adressen und -URLs, die nicht in den Webdienst
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/22/2018
+ms.date: 9/13/2018
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: b40fb1a40d2a815bfc6e02fa11204d10dde2af73
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 4711f9b9560b0fab6d18700fcf3e933150861946
+ms.sourcegitcommit: 0f98c342f80ffa21ec35bbf4ae5619b5e3271da5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22600509"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977350"
 ---
 # <a name="additional-office-365-ip-addresses-and-urls-not-included-in-the-web-services"></a>Zusätzliche Office 365-IP-Adressen und -URLs, die nicht in den Webdiensten enthalten sind
 
@@ -52,10 +52,11 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 | 6  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant)-Funktionen für Koexistenz, wie etwa Teilen der Frei/Gebucht-Informationen. | Lokale Exchange-Kundenserver | Eingehender Serverdatenverkehr |
 | 7  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant)-Proxyauthentifizierung | Lokaler STS von Kunden | Eingehender Serverdatenverkehr |
 | 8  | Zum Konfigurieren von [Exchange-Hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit dem Exchange-Hybridkonfigurations-Assistenten verwendet. <br> Hinweis: Diese Endpunkte sind nur für die Konfiguration von Exchange-Hybridbereitstellungen erforderlich  | ```domains.live.com``` an den TCP-Ports 80 und 443, nur für den Exchange 2010 SP3-Hybridkonfigurations-Assistenten erforderlich. | Nur ausgehender Serverdatenverkehr |
-| 9  | **FQDNs für Authentifizierung und Identität** <br> Für ordnungsgemäße Funktion muss sich der FQDN ```secure.aadcdn.microsoftonline-p.com``` in der Zone "Vertrauenswürdige Sites" von Internet Explorer (IE) oder Edge des Clients befinden. |  | Vertrauenswürdige Sites |
-| 10  |  **FQDNs für Microsoft Teams** <br> Wenn Sie Internet Explorer oder Microsoft Edge verwenden, müssen Sie Cookies von Erst- und Drittanbietern aktivieren und die FQDNs für Teams zu Ihren vertrauenswürdigen Sites hinzufügen. Dies muss zusätzlich zu den oben aufgeführten Werten für FQDNs, CDNs und Telemetrie für die gesamte Suite erfolgen. Weitere Informationen finden Sie unter [Bekannte Probleme bei Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Vertrauenswürdige Sites |
-| 11  |  **FQDNs für Sharepoint Online- und OneDrive for Business** <br> Für eine ordnungsgemäße Funktion müssen sich alle FQDNs von ".sharepoint.com" mit "\<tenant>" im FQDN in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. Sie müssen diese Endpunkte über die oben aufgelisteten, für die gesamte Suite gültigen FQDNs, CDNs und Telemetriewerte hinaus hinzufügen. |  | Vertrauenswürdige Sites |
-| 12  | **Yammer**  <br> Yammer steht nur im Browser zur Verfügung und erfordert die Übergabe des authentifizierten Benutzers durch einen Proxy. Alle Yammer-FQDNs müssen sich für eine ordnungsgemäße Funktion in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. |  | Vertrauenswürdige Sites |
+| 9  | Der AutoDetect-Dienst wird in[Exchange-Hybridszenarien](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit [der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) verwendet. <BR> <BR> ```*.acompli.net``` <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Lokale Exchange-Kundenserver an TCP-Port 443 | Eingehender Serverdatenverkehr |
+| 10  | **FQDNs für Authentifizierung und Identität** <br> Für ordnungsgemäße Funktion muss sich der FQDN ```secure.aadcdn.microsoftonline-p.com``` in der Zone "Vertrauenswürdige Sites" von Internet Explorer (IE) oder Edge des Clients befinden. |  | Vertrauenswürdige Sites |
+| 11  |  **FQDNs für Microsoft Teams** <br> Wenn Sie Internet Explorer oder Microsoft Edge verwenden, müssen Sie Cookies von Erst- und Drittanbietern aktivieren und die FQDNs für Teams zu Ihren vertrauenswürdigen Sites hinzufügen. Dies muss zusätzlich zu den oben aufgeführten Werten für FQDNs, CDNs und Telemetrie für die gesamte Suite erfolgen. Weitere Informationen finden Sie unter [Bekannte Probleme bei Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Vertrauenswürdige Sites |
+| 12  |  **FQDNs für SharePoint Online und OneDrive for Business** <br> Für eine ordnungsgemäße Funktion müssen sich alle FQDNs von ".sharepoint.com" mit "\<tenant>" im FQDN in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. Sie müssen diese Endpunkte über die oben aufgelisteten, für die gesamte Suite gültigen FQDNs, CDNs und Telemetriewerte hinaus hinzufügen. |  | Vertrauenswürdige Sites |
+| 13  | **Yammer**  <br> Yammer steht nur im Browser zur Verfügung und erfordert die Übergabe des authentifizierten Benutzers durch einen Proxy. Alle Yammer-FQDNs müssen sich für eine ordnungsgemäße Funktion in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. |  | Vertrauenswürdige Sites |
 
 ## <a name="related-topics"></a>Verwandte Themen
 

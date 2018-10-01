@@ -12,11 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive und SharePoint Online.
-ms.openlocfilehash: 939c12790c30172dc87f89fc1a91a92a40b1c219
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
+ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24012735"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
 
@@ -69,6 +70,8 @@ OneDrive Multi-Geo wird derzeit in diesen Regionen und Ländern angeboten:
 - Kanada
     
 - Europäische Union (EMEA)
+
+- Frankreich
     
 - Japan
     
@@ -80,7 +83,6 @@ OneDrive Multi-Geo wird derzeit in diesen Regionen und Ländern angeboten:
       
 Zukünftige geografische Speicherorte:
   
-- Frankreich
 - Indien
     
 ## <a name="getting-started"></a>Erste Schritte
