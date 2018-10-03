@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Netzwerke dienen zum Einschränken des Zugriffs auf das Internet, um sicherzustellen, dass die Liste der Office 365-Endpunkten Computern Netzwerke wie diese Office 365 zugreifen können, die Netzwerk- und Proxyeinstellungen Administratoren zum Verwalten der Liste der FQDNs, URLs müssen und IP-Adressen, bilden. Erreichen von Office 365 können diese Notwendigkeit, Proxyserver oder der Firewall-Regeln und PAC-Dateien, um die Netzwerkanfragen wird sichergestellt hinzugefügt werden soll.
-ms.openlocfilehash: 42613b45b8395c3f81064bbc2171866bc922a657
-ms.sourcegitcommit: ca4d3ec34300d7d39f1a42dc6f29a34915de5c87
+ms.openlocfilehash: a1a658ff04bc7306cb953477798d3e32d894d695
+ms.sourcegitcommit: 854653f927c9515024a1c9e0a86fd5f2fadb92f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "23831920"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25359497"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -42,7 +42,7 @@ ms.locfileid: "23831920"
   
 ## <a name="update-your-firewalls-outbound-allow-lists"></a>Update die Firewall des ausgehenden Listen zulassen
 
-Sie können Ihr Netzwerk optimieren, indem alle vertrauenswürdigen Netzwerk-Anforderungen für Office 365 direkt über die Firewall senden, und alle zusätzlichen Ebene Paketinspektion umgehen oder in Bearbeitung. Dies reduziert langsam von Wartezeit sowie Ihrer kapazitätsanforderungen Umkreisnetzwerk. Am einfachsten auswählen, welche Netzwerk fordert als vertrauenswürdig ist unsere vordefinierte PAC Dateien auf der Registerkarte **Proxies** oben verwenden. 
+Sie können Ihr Netzwerk optimieren, indem alle vertrauenswürdigen Netzwerk-Anforderungen für Office 365 direkt über die Firewall senden, und alle zusätzlichen Ebene Paketinspektion umgehen oder in Bearbeitung. Dies reduziert langsam von Wartezeit sowie Ihrer kapazitätsanforderungen Umkreisnetzwerk. Am einfachsten auswählen, welche Netzwerk fordert als vertrauenswürdig ist unsere [vordefinierte PAC-Dateien](managing-office-365-endpoints.md#pacfiles)zu verwenden. 
   
 Wenn Ihre Firewall ausgehenden Datenverkehr blockiert, Sie alle IP-sicherzustellen möchten und FQDNs als **erforderlich** , in der [XML-Datei](https://go.microsoft.com/fwlink/?LinkId=533185) aufgelistet sind in der Zulassungsliste enthalten. Erkennen Sie, dass alle Dienste erfordern die Verwendung von einige 3. Party-Dienste. Wir nicht IP-Adressen für diese 3. Partei-Diensten wie etwa Zertifikat Anbietern von Content Delivery Networks DNS-Anbieter bereitgestellt und so weiter. Für vollständige Funktionalität von Office 365 müssen Sie möglicherweise alle vom Office 365 angefordert werden, unabhängig davon wie viele Informationen wir veröffentlichen das Ziel Ziele zu erreichen. 
   
@@ -888,17 +888,17 @@ Beachten Sie, dass Blockieren des Zugriffs auf die Microsoft Consumer Services a
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365-IP-Adresse und URL-Web service](office-365-ip-web-service.md)
+[Office 365-IP-Adress- und -URL-Webdienst](office-365-ip-web-service.md)
 
-[Microsoft Azure-Rechenzentrum IP-Adressbereiche](https://www.microsoft.com/download/details.aspx?id=41653)
+[IP-Bereiche von Microsoft Azure-Rechenzentren](https://www.microsoft.com/download/details.aspx?id=41653)
   
-[Microsoft öffentliche IP-Speicherplatz](https://www.microsoft.com/download/details.aspx?id=53602)
+[Öffentlicher Microsoft IP-Bereich](https://www.microsoft.com/download/details.aspx?id=53602)
   
 [Anforderungen an die Netzwerkinfrastruktur für Microsoft Intune](https://docs.microsoft.com/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
   
 [Power BI und ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[URLs und IP-Adressbereiche von Office 365](urls-and-ip-address-ranges.md)
+[URLs und IP-Adressbereiche für Office 365](urls-and-ip-address-ranges.md)
   
 [Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
   
