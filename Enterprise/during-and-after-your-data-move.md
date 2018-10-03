@@ -3,7 +3,7 @@ title: Während und nach der Datenverschiebung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/02/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Verschiebt Daten werden mit minimaler Beeinträchtigung für Endbenutzer an einen Back-End-Vorgang. Während Microsoft alle Dienste und die zugehörigen Daten für Ihre Mandanten zu einer neuen Datacenter Geo verschiebt ist keine Aktion erforderlich. Die Datenübertragung und Validierung auftreten im Hintergrund im voraus mit minimaler Beeinträchtigung Benutzern.
-ms.openlocfilehash: 0c715e80acbac126626c73a75fac1bbc809367e2
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 6975a2ea4a1f2b2ebabe5f64b12ae58657180903
+ms.sourcegitcommit: b745d570fd6691606d226f6232cfaafd2d875a2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975173"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25361503"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -34,7 +34,7 @@ Verschiebt Daten werden mit minimaler Beeinträchtigung für Endbenutzer an eine
 |Australien, Neuseeland, Fidschi  <br/> |31 Oktober 2017  <br/> |
 |Japan  <br/> |31 Oktober 2018  <br/> |
 |Indien  <br/> |31 Oktober 2018  <br/> |
-|Kanada  <br/> |31 Oktober 2018  <br/> |
+|Kanada  <br/> |30 Juni 2019  <br/> |
 |Südkorea  <br/> |31 Oktober 2018  <br/> |
 |Vereinigtes Königreich  <br/> |15 September 2019  <br/> |
 |Frankreich  <br/> |15 September 2020  <br/> |
