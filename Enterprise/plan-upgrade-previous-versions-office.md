@@ -3,7 +3,7 @@ title: Planen des Upgrades von Office 2007 oder 2010-Servern und clients
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 10/03/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,13 +12,13 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Es wird die Zeit zum Planen des Upgrades von älteren Versionen von Office-Produkte und -Servern. Verwenden Sie diese Ressourcen zum Einstieg in den Plan.
-ms.openlocfilehash: ea5af6a91a0977016eb9c90f7b1acb2def1dbd2f
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es Zeit zum Planen des Upgrades. Verwenden Sie diese Ressourcen zum Einstieg in den Plan.
+ms.openlocfilehash: a8d3c0aad4499e37e4fc0c36412c6830d5df4941
+ms.sourcegitcommit: 57deed1be7cd66528f39eb2504b9a271d3f6dfb4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915160"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363168"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007 oder Office 2010-Servern und clients
 
@@ -54,9 +54,11 @@ Es wird empfohlen, Abrufen von Hilfe bei der Planung des Upgrades.
 
 Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, berücksichtigen Sie die folgenden Optionen:
 
+- **Office Online verwenden für frei**. Erstellen, anzeigen und Bearbeiten von Office-Dateien in Ihrem Browser und haben Zugriff auf diese Dateien von praktisch jedem Gerät mit Internetzugang. [Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664), [Online Excel](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint Online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [E-Mail](http://go.microsoft.com/fwlink/p/?linkid=746676), [Kalender](http://go.microsoft.com/fwlink/p/?linkid=746678)und [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679), beinhaltet [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) . Zum Einstieg finden Sie auf [office.com](https://office.com) , und melden Sie sich mit Ihrem Microsoft-Konto. (Wenn Sie nicht über ein Microsoft-Konto verfügen, können Sie jeweils office.com erstellen.)
+
 - **Testen Sie Office 365 für die private Nutzung**. Entscheiden Sie, ob ein [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) oder [Persönliche von Office 365](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) -Abonnement. und melden Sie sich für eine Testversion. Melden Sie sich, und installieren Sie die neueste Version von Office auf Ihrer Windows oder Mac Computer, Ihre iOS oder Android Smartphone und Ihre IOS- oder Android Tablet. Mit Office 365 Ihnen eine Cloud-Speicher mit OneDrive, erhalten Sie 60 Minuten Skype-Aufrufe für mobile und Festnetz Zahlen jeden Monat und erhalten Sie viele andere großartige Features. [Finden Sie unter Office 365-Pläne und zu Preisen für privat-](https://products.office.com/explore-office-for-home).
     
-- **Office-Startseite Purchase &amp; Student 2016**. Wenn Sie diese Option auswählen, Sie stellen einen einmaligen Kauf und installieren Sie dann Office 2016 auf Ihrem [Windows-PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) oder [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). 
+- **Office-Startseite Purchase &amp; Student 2016**. Wenn Sie diese Option auswählen, Sie stellen einen einmaligen Kauf und installieren Sie dann Office 2016 auf Ihrem [Windows-PC](https://www.microsoft.com/p/office-home-student-2016-for-pc/cfq7ttc0k5fc) oder [Mac](https://products.office.com/buy/compare-microsoft-office-products-for-mac). Dies ist ein Abonnement nicht. Es ist eine einmalige unbefristete Nutzungslizenz für einen Computer.
 
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>Was geschieht, wenn ich nicht aktualisieren?
