@@ -1,5 +1,5 @@
 ---
-title: Beheben von Problemen mit der verzeichnissynchronisierung für Office 365
+title: Beheben von Problemen bei der Verzeichnissynchronisierung für Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Beschreibt häufige Ursachen von Problemen mit der verzeichnissynchronisierung in Office 365 und bietet eine Reihe neuer Methoden Problembehebung und beheben Sie diese.
-ms.openlocfilehash: ad3b6e27439354a2ede9b1a4b100e0f9e06148d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: a1ccf7aa8c6d450cdd3d658ef0bc8d9ed6d25753
+ms.sourcegitcommit: 6a4611bb474c783efd361890fe6f41c26c5aeeb3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540792"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405128"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Beheben von Problemen mit der verzeichnissynchronisierung für Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Beheben von Problemen bei der Verzeichnissynchronisierung für Office 365
 
 Mit der verzeichnissynchronisierung können Sie weiterhin Verwalten von Benutzern und Gruppen: lokal und Ergänzungen hinzufügen, löschen und Änderungen in die Cloud zu synchronisieren. Aber Setup ein wenig kompliziert wird, und es manchmal schwierig sein kann, die Quelle der Probleme zu identifizieren. Wir haben die Ressourcen, die Ihnen bei der Ermittlung möglicher Probleme zu identifizieren und beheben Sie sie.
   
@@ -63,7 +63,7 @@ Um auf Azure AD-Verbinden von Azure Active Directory-Synchronisierung zu aktuali
 - [Directory-Synchronisierung mit Azure Active Directory reagiert oder Sie sind darauf hingewiesen, dass Sync in mehr als einen Tag registriert noch nicht](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Kennworthashes sind nicht synchronisiert, oder eine Warnung im Office 365 Administrationscenter, dass eine zuletzt verwendete Kennwort Hash Synchronisierung wurde nicht immer unerwünschte**
-- [Implementieren von Hash kennwortsynchronisierung mit Azure AD-Connect-Synchronisierung](https://go.microsoft.com/fwlink/p/?LinkId=820600)
+- [Implementieren von Hash kennwortsynchronisierung mit Azure AD-Connect-Synchronisierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Ich bin eine Benachrichtigung angezeigt, die Objekt-Kontingent überschritten**
 - Wir haben ein Kontingent integrierten-Objekts zum Schutz des Diensts. Wenn Sie zu viele Objekte in Ihrem Verzeichnis aus, die mit Office 365 synchronisiert werden müssen haben, müssen Sie auf [Kontakt für Business-Produkte unterstützen](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) Ihr Kontingent zu erhöhen.
