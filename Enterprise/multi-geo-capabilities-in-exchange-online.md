@@ -10,12 +10,12 @@ ms.custom: ''
 localization_priority: Normal
 ms.assetid: ''
 description: Erweitern Sie Ihre Office 365-Anwesenheit auf mehrere geografische Regionen mit Multi-Geo-Funktionen in Exchange Online.
-ms.openlocfilehash: 9834b102365f11623a1decc00460f85f36552ccb
-ms.sourcegitcommit: d88307a32fd3439a09a87b260e0c0cf9074ebeb0
+ms.openlocfilehash: aa83b5040cdc98a1c651388fa82d746b852c2313
+ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "22914780"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498225"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -52,7 +52,7 @@ Die folgenden Geos stehen für die Verwendung in einer Serverfarm mit mehreren G
 - Vereinigte Staaten
 
 ## <a name="prerequisite-configuration"></a>Erforderliche Konfiguration
-Bevor Sie mit der Verwendung von Multi-Geo-Funktionen in Exchange Online beginnen können, muss Microsoft Ihren Exchange Online-Mandanten für die Unterstützung von Multi-Geo konfigurieren. Diese einmalige Konfigurationsprozess wird ausgelöst, nachdem Sie anordnen, dass Multi-Geo und die Lizenzen in unseren Mandanten angezeigt. Diese einmalige Konfigurationsprozess sollte in der Regel weniger als 30 Tage dauern.
+Bevor Sie mit der Verwendung von Multi-Geo-Funktionen in Exchange Online beginnen können, muss Microsoft Ihren Exchange Online-Mandanten für die Unterstützung von Multi-Geo konfigurieren. In diesem einmaligen Konfigurationsprozess wird ausgelöst, nachdem Sie anordnen, dass Multi-Geo und die Lizenzen in Ihrem Mandanten angezeigt. Diese einmalige Konfigurationsprozess sollte in der Regel weniger als 30 Tage dauern. Reihenfolge Multi-Geo wenden Sie sich an Ihrem Microsoft-Partner. Weitere Informationen finden Sie unter https://aka.ms/Multi-Geo.
 
 Sie erhalten Benachrichtigungen im [Office 365 Nachrichtencenter](https://support.office.com/article/Message-center-in-Office-365-38FB3333-BFCC-4340-A37B-DEDA509C2093) nach Abschluss die Konfiguration. Konfiguration wird automatisch ausgelöst, wenn Ihre Multi-Geo-Lizenzen in Ihrem Mandanten angezeigt.
 
