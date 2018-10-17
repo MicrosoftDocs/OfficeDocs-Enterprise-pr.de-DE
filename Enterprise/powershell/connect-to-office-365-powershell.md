@@ -3,7 +3,7 @@ title: Verbinden mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2018
+ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,26 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mithilfe von PowerShell für Office 365 Admin Center Aufgaben über die Befehlszeile ausführen.'
-ms.openlocfilehash: 96406fbc23adadbf77a3cd02f8c167081f908977
-ms.sourcegitcommit: c3869a332512dd1cc25cd5a92a340050f1da0418
+ms.openlocfilehash: e35dfd48f86cd4767f2e87786c4a6d1ea3aa608b
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "20720401"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575279"
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
  **Zusammenfassung:** Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Verwaltungsaufgaben über die Befehlszeile ausführen.
   
-Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehlszeile zu verwalten. Herstellen einer Verbindung mit Office 365 PowerShell ist ein einfacher dreistufiger Prozess, in dem Sie Installieren der erforderlichen Software, die erforderliche Software ausführen und dann verbinden mit Office 365-Organisation. 
+Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehlszeile zu verwalten. Herstellen einer Verbindung mit Office 365 PowerShell ist ein einfacher Vorgang, in dem Sie die erforderliche Software installieren und dann verbinden mit Office 365-Organisation. 
 
-  
+Es gibt zwei Versionen von PowerShell-Modul, mit denen Sie eine Verbindung mit Office 365 sowie zur Verwaltung von Benutzerkonten, Gruppen und Lizenzen:
+
+- Azure Active Directory-PowerShell für Diagramm (Cmdlets include **AzureAD** in ihrem Namen) 
+- Microsoft Azure Active Directory-Modul für Windows PowerShell (Cmdlets include **MSol** in ihrem Namen) 
+
+Ab dem Datum des Artikels ersetzen Azure Active Directory PowerShell Graph-Modul nicht vollständig in die Microsoft Azure Active Directory-Modul für Windows PowerShell-Modul für Benutzer-, Gruppen- und Lizenz Verwaltung-Cmdlets die Funktionalität . In vielen Fällen müssen Sie beide Versionen verwenden. Sie können beide Versionen sicher auf demselben Computer installieren.
+
 > [!TIP]
 > **Neue PowerShell?** Finden Sie ein [video Overview of PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), bereitgestellt von LinkedIn Learning. 
   
@@ -38,14 +44,15 @@ Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehl
     
 - Sie können folgende Versionen von Windows verwenden:
     
-  - 10 Windows, Windows 8.1, Windows 8 oder Windows 7 Service Pack 1 (SP1) 
+  - 10 Windows, Windows 8.1, Windows 8 oder Windows 7 Servicepack 1 (SP1) 
     
-  - WindowsServer 2016, Windows Server 2012 R2, WindowsServer 2012 oder Windows Server 2008 R2 SP1
+  - WindowsServer 2019, WindowsServer 2016, Windows Server 2012 R2, WindowsServer 2012 oder Windows Server 2008 R2 SP1
     
     > [!NOTE]
     >Verwenden Sie eine 64-Bit-Version von Windows. Unterstützung für 32-Bit-Version, die Microsoft Azure Active Directory-Modul für Windows PowerShell wurde im Oktober des 2014 eingestellt.
     
 -  Diese Verfahren sind für Benutzer vorgesehen, die ein Office 365-Administratorrolle angehören. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Kontaktaufnahme mit Azure Active Directory PowerShell Graph-Modul
 
@@ -73,7 +80,7 @@ Falls Sie gefragt werden, ob Sie ein Modul aus einem nicht vertrauenswürdigen R
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
 
-Führen Sie eine Verbindung mit Azure AD für Ihre Office 365 Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)* diesen Befehl von einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten):
+Führen Sie diesen Befehl von einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten), zum Verbinden mit Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)*:
     
 ```
 Connect-AzureAD
@@ -127,8 +134,6 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
 - * *Der Microsoft Azure Active Directory-Modul für Windows PowerShell erfordert, dass Microsoft .NET Framework 3.5.* X * Feature wird auf Ihrem Computer ** aktiviert. Ist es wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert ist (beispielsweise 4 oder 4.5.* X *), aber rückwärts Kompatibilität mit älteren Versionen von .NET Framework aktiviert oder deaktiviert werden kann. Weitere Informationen finden Sie unter den folgenden Themen:
     
   - Windows Server 2012 oder Windows Server 2012 R2 finden Sie unter [.NET Framework 3.5 mithilfe der Rollen hinzufügen und den Assistenten Features aktivieren](https://go.microsoft.com/fwlink/p/?LinkId=532368)
-    
-  - Windows 8 oder Windows 8.1 finden Sie unter [Installieren von .NET Framework 3.5 unter Windows 8 oder 8.1](https://go.microsoft.com/fwlink/p/?LinkId=532369)
     
   - Windows 7 oder Windows Server 2008 R2 finden Sie unter [der Azure Active Directory Modul für Windows PowerShell kann nicht geöffnet werden](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 

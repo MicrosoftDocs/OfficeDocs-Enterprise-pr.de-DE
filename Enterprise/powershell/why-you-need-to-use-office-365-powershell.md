@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Zusammenfassung: Verstehen Sie, warum Sie aus Effizienzgründen oder aus Notwendigkeit Office 365 PowerShell zum Verwalten von Office 365 verwenden müssen.'
-ms.openlocfilehash: 7149478efcbffcec56423a6c8ade5377992f3352
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
+ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915040"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575269"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Warum Sie Office 365 PowerShell verwenden müssen
 
@@ -43,12 +43,6 @@ Bevor Sie beginnen, müssen Sie verstehen, dass es sich bei Office 365 PowerShel
   
 ```
 Get-Mailbox
-```
-
-Sie können diesen Befehl auch ausführen, um die Anzahl von Elementen in allen Listen für alle Standorte für alle Web-Apps in SharePoint Online zu berechnen:
-  
-```
-Get-SPOSite -Limit All | Get-SPWeb -Limit All | % {$_.Lists} | ? {$_ -is [Microsoft.SharePoint.SPDocumentLibrary]} | % {$total+= $_.ItemCount}; $total
 ```
 
 Das Abrufen der Liste von Postfächern kann mithilfe des Office 365 Admin Center auch problemlos ausgeführt werden, das Zählen der Anzahl von Elementen in allen Listen für alle Standorte für alle Web-Apps ist jedoch nicht so einfach.
