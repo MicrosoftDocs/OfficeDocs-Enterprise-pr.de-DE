@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Office 365-Identität und Azure Active Directory
+title: Grundlegendes zu Office 365-Identitäten und Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Hier erfahren Sie, wie die Identität des Benutzers in Office 365 verwaltet wird.
-ms.openlocfilehash: 0fb6e77aef4495b2284256c13cb21320e6292746
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 14d1ec8a3ebc4620a72f831c0ec80253f7b3072c
+ms.sourcegitcommit: dcb57859ad40090cf70586ac350472eb0fc8d9c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914980"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25639634"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Grundlegendes zu Office 365-Identität und Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Grundlegendes zu Office 365-Identitäten und Azure Active Directory
 
 Office 365 verwendet Cloud-basierten Benutzer Identität und Authentifizierung Service Azure Active Directory (AD Azure) zum Verwalten von Benutzern. Auswählen ist zwischen der lokalen Organisation und Office 365 Identitätsmanagement konfiguriert ist eine frühe Entscheidung, die eine der Grundlagen der Cloud-Infrastruktur ist. Ändern diese Konfiguration später schwierig sein kann, sorgfältige Planung der Optionen, um festzulegen, was für die Anforderungen Ihrer Organisation am besten geeignet. Sie können auswählen, aus zwei Hauptfenster Authentifizierungsmodelle in Office 365 zum Einrichten und Verwalten von Benutzerkonten. **Cloud-Authentifizierung** und **Verbundauthentifizierung**.
   
@@ -53,7 +53,7 @@ Weitere Informationen zur [Auswahl Hash kennwortsynchronisierung](https://docs.m
   
 ### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>Pass-Through-Authentifizierung mit nahtlos einmaliges Anmelden
 
-Ein einfaches Kennwort Geschäftstyp für Azure AD-Authentifizierungsdienste die Überprüfung der Benutzer direkt mit Ihrem lokalen Active Directory mithilfe eines Software-Agents auf einem oder mehreren lokalen Servern ausgeführt. Mit Pass-Through-Authentifizierung (PTA) lokalen Active Directory User Account-Objekten mit Office 365 synchronisieren und Ihre lokalen Benutzer verwalten. Können Benutzer anmelden bei lokalen und Office 365-Ressourcen und Anwendungen, die die lokale Konto und Kennwort verwenden. Diese Konfiguration überprüft die Kennwörter der Benutzer direkt für die lokale Active Directory unbeantwortet Kennworthashes zu Office 365. Unternehmen mit Sicherheit erforderlich zum Erzwingen von lokalen Benutzerkonto sofort besagt Kennwortrichtlinien und Anmeldezeit diese Authentifizierungsmethode verwenden würden. Mit nahtlos einmaliges Anmelden werden Benutzer automatisch Azure AD angemeldet wann sie auf ihren Geräten im Unternehmen werden und mit dem Unternehmensnetzwerk verbunden ist.
+Ein einfaches Kennwort Geschäftstyp für Azure AD-Authentifizierungsdienste die Überprüfung der Benutzer direkt mit Ihrem lokalen Active Directory mithilfe eines Software-Agents auf einem oder mehreren lokalen Servern ausgeführt. Mit Pass-Through-Authentifizierung (PTA) lokalen Active Directory User Account-Objekten mit Office 365 synchronisieren und Ihre lokalen Benutzer verwalten. Können Benutzer anmelden bei lokalen und Office 365-Ressourcen und Anwendungen, die die lokale Konto und Kennwort verwenden. Diese Konfiguration überprüft Kennwörter direkt für die lokale Active Directory-Benutzer ohne Kennworthashes zu Office 365 senden. Unternehmen mit Sicherheit erforderlich zum Erzwingen von lokalen Benutzerkonto sofort besagt Kennwortrichtlinien und Anmeldezeit diese Authentifizierungsmethode verwenden würden. Mit nahtlos einmaliges Anmelden werden Benutzer automatisch Azure AD angemeldet wann sie auf ihren Geräten im Unternehmen werden und mit dem Unternehmensnetzwerk verbunden ist.
   
 Weitere Informationen zur [Auswahl von Pass-Through-Authentifizierung](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) und [nahtlos einmaliges Anmelden](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso).
   
