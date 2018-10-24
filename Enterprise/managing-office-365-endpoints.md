@@ -15,18 +15,18 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Unternehmensnetzwerken Einschränken des Zugriffs auf generische Internetspeicherorte oder erhebliche Sonderinformationen oder Verarbeitung des Datenverkehrs im Netzwerk. So stellen Sie sicher, dass die Liste der Office 365-Endpunkten Computern Netzwerke wie diese Office 365 zugreifen können, Netzwerk- und Proxyeinstellungen Administratoren zum Verwalten der Liste der FQDNs, URLs müssen und IP-Adressen, bilden. Diese direkte Route, Proxy-Umgehung und/oder Firewall-Regeln und PAC-Dateien, um sicherzustellen, dass Netzwerk-Anfragen Office 365 zu erreichen sind hinzugefügt werden müssen.
-ms.openlocfilehash: a240e3deea512dacd70b377b3d47a7b6f49a235c
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 480d2fa1b55507187f9150d02907849178a451b5
+ms.sourcegitcommit: d93f7a51e8cdefdfc9933cdf1f9e413b013bb367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719019"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
-Die meisten Unternehmen, die mehreren Standorten und eine WAN-Verbindung aufweisen müssen müssen Konfiguration für Office 365-Netzwerkkonnektivität verfügen. Sie können Ihr Netzwerk optimieren, indem alle vertrauenswürdigen Netzwerk-Anforderungen für Office 365 direkt über die Firewall senden, und alle zusätzlichen Ebene Paketinspektion umgehen oder in Bearbeitung. Dadurch werden Wartezeit und Ihrer kapazitätsanforderungen Umkreisnetzwerk reduziert. Identifizieren von Office 365 Netzwerkdatenverkehr ist der erste Schritt bei der Bereitstellung eine optimale Leistung für Ihre Office 365-Benutzer. Weitere Informationen zu Office 365-Netzwerkkonnektivität finden Sie unter [Office 365 Network Connectivity Prinzipien](office-365-network-connectivity-principles.md)
+Die meisten Unternehmen, die mehreren Standorten und eine WAN-Verbindung aufweisen müssen für Office 365-Netzwerkkonnektivität Konfiguration erforderlich. Sie können Ihr Netzwerk optimieren, indem alle vertrauenswürdigen Netzwerk-Anforderungen für Office 365 direkt über die Firewall senden, und alle zusätzlichen Ebene Paketinspektion umgehen oder in Bearbeitung. Dies reduziert die Latenz und Ihrer kapazitätsanforderungen Umkreisnetzwerk. Identifizieren von Office 365 Netzwerkdatenverkehr ist der erste Schritt bei der Bereitstellung eine optimale Leistung für Ihre Benutzer. Weitere Informationen zu Office 365-Netzwerkkonnektivität finden Sie unter [Office 365 Network Connectivity Prinzipien](office-365-network-connectivity-principles.md)
 
-Microsoft empfiehlt, dass Sie die Office 365-Netzwerk-Endpunkten und Änderungen, die Sie mit der [Office 365-IP-Adresse und URL-Webdienste](office-365-ip-web-service.md) zugreifen.
+Microsoft empfiehlt, dass Sie die Office 365-Netzwerk-Endpunkten und Änderungen, die Sie mit der [Office 365-IP-Adresse und URL-Webdienst](office-365-ip-web-service.md) zugreifen.
 
 Unabhängig davon, wie Sie wichtige Netzwerkdatenverkehr für Office 365 verwalten ist Office 365 Internetkonnektivität erforderlich. Andere Netzwerkendpunkte, Konnektivität erforderlich ist, werden am [zusätzliche Endpunkte, die nicht in Office 365-IP-Adresse und URL-Webdienst enthalten](additional-office365-ip-addresses-and-urls.md) aufgeführt.
 
@@ -34,33 +34,33 @@ Verwendung von Office 365-Netzwerk-Endpunkten hängt Ihre Netzwerkarchitektur f�
 
 ## <a name="sdwan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SDWAN für lokale Branch Ausgang von wichtiger Netzwerkdatenverkehr für Office 365
 
-Bei jeder Zweigstellenstandort können Sie ein SDWAN-Gerät konfiguriert ist für Route IP-Adressen für Office 365 optimieren Kategorie oder optimieren bereitstellen und Kategorien, direkt auf die Microsoft Netzwerk zulassen. Andere Netzwerkdatenverkehr einschließlich lokalen Datacenter Datenverkehr, generische Datenverkehr im Internet-Websites und Office 365 Default Kategorie Datenverkehr wird an einen anderen Speicherort gesendet, in denen Sie über eine grundlegendere Umkreisnetzwerk. 
+Bei jeder Zweigstellenstandort können Sie ein Gerät SDWAN bereitstellen, die für Office 365 optimieren Kategorie von Endpunkten oder optimieren Datenverkehr weiterleiten und Kategorien, direkt auf die Microsoft Netzwerk zulassen konfiguriert ist. Andere einschließlich lokalen Datacenter Datenverkehr, allgemeine Datenverkehr im Internet-Websites und Datenverkehr zu Office 365 Default Kategorie Endpunkte Netzwerkdatenverkehr wird an einen anderen Speicherort gesendet, in denen Sie über eine grundlegendere Umkreisnetzwerk.
 
-Microsoft arbeitet mit SDWAN Anbietern, um die automatische Konfiguration zu ermöglichen. Sie erhalten weitere Informationen zum [Office 365 Networking Partner-Programm](office-365-networking-partner-program.md)
+Microsoft arbeitet mit SDWAN Anbietern, um die automatische Konfiguration zu ermöglichen. Weitere Informationen finden Sie unter [Office 365 Networking Partner-Programm](office-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
-## <a name="use-of-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Verwenden einer PAC-Datei zum direkten weiterleiten wichtiger Office 365-Datenverkehr
+## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Verwenden Sie eine PAC-Datei zum direkten weiterleiten wichtiger Office 365-Datenverkehr
 
-Verwenden Sie PAC oder WPAD-Dateien zum Verwalten von Netzwerk-Anfragen, die mit Office 365 zugeordnet sind, jedoch nicht über ein IP-Adresse verfügen. Typische Netzwerk-Anforderungen, die über ein Proxy oder zum Umkreisnetzwerk-Gerät gesendet werden, ein zusätzlichen Latenz entstehen. Während SSL unterbrechen und Inspect anfallen der größten Tax, können andere Dienste wie Proxy-Authentifizierung und Reputation Lookup benutzerfreundlich verursachen. Darüber hinaus benötigen diese Perimeter Network Geräte genügend Kapazität, um alle Anfragen Verbindung Netzwerk zu verarbeiten. Es wird empfohlen, die Proxy oder Prüfung Infrastruktur für die direkte Anforderungen von Office 365-Netzwerk zu umgehen.
+Verwenden Sie PAC oder WPAD-Dateien zum Verwalten von Netzwerk-Anfragen, die mit Office 365 zugeordnet sind, jedoch nicht über eine IP-Adresse verfügen. Wartezeit wird erhöht normalen Netzwerk-Anforderungen, die über ein Proxy oder zum Umkreisnetzwerk-Gerät gesendet werden. Während SSL unterbrechen und Inspect erstellt die größte Wartezeit, Dienstleistungen andere wie Proxy-Authentifizierung und Reputation Lookup schlechten Leistung und eine falsche benutzererfahrung verursachen kann. Darüber hinaus benötigen diese Perimeter Network Geräte genügend Kapazität, um alle Anfragen Verbindung Netzwerk zu verarbeiten. Es wird empfohlen, Proxy oder Prüfung Geräte für direkte Anforderungen von Office 365-Netzwerk zu umgehen.
   
-[PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) ist ein Powershellskript, liest die neuesten Netzwerkendpunkte aus der Webdienste und erstellt eine Beispieldatei PAC. 
+[PowerShell Gallery Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) ist ein Powershellskript, liest die neuesten Netzwerkendpunkte aus der Office 365-IP-Adresse und URL-Web-Dienst und eine Beispieldatei PAC erstellt. Sie können das Skript ändern, sodass es mit der Verwaltung Ihrer vorhandenen PAC-Datei integriert ist. 
 
-Nachdem Sie dieses Skript heruntergeladen haben, können Sie es zum Generieren einer PAC-Datei verwenden. Sie können auch das Skript ändern, damit es mit der Verwaltung Ihrer vorhandenen PAC-Datei integriert ist. 
+![Herstellen einer Verbindung mit Office 365, durch Firewalls und Proxys.](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
-![Herstellen einer Verbindung mit Office 365, durch Firewalls und Proxys. ](media/34d402f3-f502-42a0-8156-24a7c4273fa5.png) Abbildung 1: einfache Enterprise-Umkreisnetzwerk
+**Abbildung 1: einfache Enterprise-Umkreisnetzwerk**
 
-Auf Computern unter Punkt (1) in Abbildung 1 wird die PAC-Datei bereitgestellt. Wenn Sie eine PAC-Datei für direkte Ausgang von wichtiger Netzwerkdatenverkehr für Office 365 verwenden, müssen Sie auch Konnektivität mit der IP-Adressen hinter dieser URLs auf Ihrer Firewall im Umkreisnetzwerk zu ermöglichen. Dies wird durch die IP-Adressen für die gleichen Office 365 Endpunkt Kategorien wie angegeben in der Datei PAC abruft und Erstellen von Firewall ACLs basierend auf diesen Adressen. Die Firewall wird gezeigt, wie in Abbildung 1 (3) zeigen. 
+Webbrowser an Punkt 1 in Abbildung 1 wird die PAC-Datei bereitgestellt. Wenn Sie eine PAC-Datei für direkte Ausgang von wichtiger Netzwerkdatenverkehr für Office 365 verwenden, müssen Sie auch Konnektivität mit der IP-Adressen hinter dieser URLs auf Ihrer Firewall im Umkreisnetzwerk zu ermöglichen. Dies wird durch die IP-Adressen für die gleichen Office 365 Endpunkt Kategorien wie angegeben in der Datei PAC abruft und Erstellen von Firewall ACLs basierend auf diesen Adressen. Die Firewall ist Nummer 3 in Abbildung 1. 
 
-Getrennt, wenn Sie auswählen, nur direktes routing für die Route Netzwerkdatenverkehr für die optimieren Kategorie Endpunkte alle erforderlichen zulassen Kategorie Endpunkte, die an den Proxyserver gesendet müssen in der Proxyserver umgangen werden weitere Verarbeitung aufgeführt werden. Beispielsweise sind SSL Umbruch und Inspect und Proxy-Authentifizierung mit der optimieren und die zulassen Kategorie Endpunkten nicht kompatibel. Der Proxyserver wird gezeigt, wie in Abbildung 1 (2) zeigen.
+Getrennt, wenn Sie auswählen, nur direktes routing für die optimieren Kategorie Endpunkte alle erforderlichen zulassen Kategorie Endpunkte, die an den Proxyserver gesendet müssen in der Proxyserver umgangen werden weitere Verarbeitung aufgeführt werden. Beispielsweise sind SSL Umbruch und Inspect und Proxy-Authentifizierung mit der optimieren und die zulassen Kategorie Endpunkten nicht kompatibel. Der Proxyserver ist Nummer 2 in Abbildung 1.
 
-Die gemeinsame Konfiguration werden alle ausgehenden Datenverkehr vom Proxyserver zulassen, dass Ziel-IP-Adressen für Office 365 Netzwerkdatenverkehr, die den Proxyserver erreicht ist nicht erforderlich. Informieren Sie sich über Probleme mit SSL unterbrechen und Inspect unter [Using Drittanbieter - Netzwerkgeräte oder Lösungen auf Office 365-Datenverkehr](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+Die gemeinsame Konfiguration ist gestatten ohne Verarbeitung des gesamten ausgehenden Datenverkehr vom Proxy-Server für die Ziel-IP-Adressen für Office 365 Netzwerkdatenverkehr, die den Proxyserver erreicht. Informationen zu Problemen mit SSL unterbrechen und Inspect finden Sie unter [Using Drittanbieter - Netzwerkgeräte oder Lösungen auf Office 365-Datenverkehr](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Es gibt zwei Arten von PAC-Dateien, die vom Get-PacFile Skript generiert wird.
 
 |**Typ**|**Beschreibung**|
 |:-----|:-----|
-|**1** <br/> |Senden Sie die Endpunkt-Datenverkehr optimieren direkte und alle anderen an den Proxyserver. <br/> |
-|**2** <br/> |Senden Sie optimieren und die lassen Sie direkte und alle anderen an den Proxyserver Endpunkt Datenverkehr zu. Kann auch zum Senden von, dass alle ExpressRoute für Office 365-Datenverkehr auf ExpressRoute Netzwerksegmente und alle anderen an den Proxyserver unterstützten verwendet werden. <br/> |
+|**1** <br/> |Senden Sie optimieren Endpunkt Datenverkehr direkte und alle anderen an den Proxyserver. <br/> |
+|**2** <br/> |Senden Sie optimieren und zulassen Endpunkt Datenverkehr direkte und alle anderen an den Proxyserver. Dieses Typs kann auch verwendet werden, zu senden, dass alle ExpressRoute für Office 365-Datenverkehr an ExpressRoute Netzwerksegmente und alle anderen an den Proxyserver unterstützt. <br/> |
 
 Hier ist ein einfaches Beispiel für den Aufruf des PowerShell-Skripts aus:
 
@@ -72,12 +72,12 @@ Es gibt eine Reihe von Parametern, die an das Skript übergeben werden können:
 
 |**Parameter**|**Beschreibung**|
 |:-----|:-----|
-|**ClientRequestId** <br/> |Dies ist erforderlich und wird an den Webdienst, der dem Aufrufen den Clientcomputer stellt eine GUID übergeben <br/> |
-|**Instance** <br/> |Die Office 365-Dienstinstanz die standardmäßig über Worldwide verfügt. Auch übergeben an den Webdienst. <br/> |
-|**TenantName** <br/> |Name Ihrer Office 365-Mandanten. Übergeben an den Webdienst, und als ersetzbaren Parameter einige Office 365-URLs <br/> |
-|**Type** <br/> |Der Typ der PAC-Proxydatei, die Sie erstellen möchten <br/> |
+|**ClientRequestId** <br/> |Dies ist erforderlich und wird an den Webdienst, der dem Aufrufen den Clientcomputer stellt eine GUID übergeben. <br/> |
+|**Instance** <br/> |Die Office 365-Dienstinstanz die standardmäßig über Worldwide verfügt. Auch an den Webdienst übergeben werden. <br/> |
+|**TenantName** <br/> |Name Ihrer Office 365-Mandanten. An den Webdienst übergeben und als ersetzbaren Parameter einige Office 365-URLs verwendet. <br/> |
+|**Type** <br/> |Der Typ der PAC-Proxydatei, die Sie erstellen möchten. <br/> |
 
-Hier ist ein weiteres Beispiel für den Aufruf des PowerShell-Skripts zusätzliche Parameter:
+Hier ist ein weiteres Beispiel für das PowerShell-Skript mit zusätzlichen Parametern aufrufen.
 
 ```
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 
@@ -85,32 +85,34 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 ## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>Proxyserver umgangen Verarbeitung des Netzwerkverkehrs für Office 365 
 
-PAC-Dateien nicht für direkte ausgehenden Datenverkehr verwendet werden, sollten Sie weiterhin Verarbeitungsaufwand auf das Umkreisnetzwerk zu umgehen, indem Sie den Proxyserver konfigurieren. Manche Serverhersteller Proxy haben automatisierte Konfiguration dieses aktiviert, wie beschrieben in das [Office 365 Networking Partner-Programm](office-365-networking-partner-program.md). Wenn Sie dies manuell durchführen müssen Sie erhalten die optimieren und Endpunkt Kategorie Endpunktdaten von Office 365-IP-Adresse und URL-Webdienste zulassen, und konfigurieren den Proxyserver für die Umgehung Verarbeitung für diese. Es ist wichtig, zu vermeiden SSL unterbrechen und Inspect und Proxy-Authentifizierung für die optimieren und Kategorie Endpunkte zulassen. 
+PAC-Dateien nicht für direkte ausgehenden Datenverkehr verwendet werden, möchten Sie weiterhin Verarbeitungsaufwand auf das Umkreisnetzwerk zu umgehen, indem Sie den Proxyserver konfigurieren. Manche Serverhersteller Proxy haben automatisierte Konfiguration dieses aktiviert, wie beschrieben in das [Office 365 Networking Partner-Programm](office-365-networking-partner-program.md). 
+
+Wenn Sie dies manuell durchführen müssen Sie erhalten die optimieren und Endpunkt Kategoriedaten von Office 365-IP-Adresse und URL-Webdienst zulassen, und konfigurieren den Proxyserver für die Umgehung Verarbeitung für diese. Es ist wichtig, zu vermeiden SSL unterbrechen und Inspect und Proxy-Authentifizierung für die optimieren und Kategorie Endpunkte zulassen. 
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Änderungsmanagement für Office 365-IP-Adressen und URLs
 
-Zusätzlich zur Auswahl von entsprechenden Konfiguration für Umkreisnetzwerk, ist es wichtig, dass Sie eine Änderungsmanagementprozesses für Office 365-Endpunkten übernehmen. Diese Endpunkte regelmäßig ändern, und wenn die Änderungen nicht verwaltet werden mit Benutzern blockiert landen können oder mit einer schlechten Leistung nach einer neuen IP-Adresse oder URL wird hinzugefügt. 
+Zusätzlich zur Auswahl von entsprechenden Konfiguration für Umkreisnetzwerk, ist es wichtig, dass Sie eine Änderungsmanagementprozesses für Office 365-Endpunkten übernehmen. Diese Endpunkte regelmäßig ändern, und wenn die Änderungen nicht verwaltet werden, mit Benutzern blockiert landen können oder mit einer schlechten Leistung nach einer neuen IP-Adresse oder URL wird hinzugefügt. 
 
 Zum Ändern der Office 365-IP-Adressen und URLs werden in der Regel in der Nähe der letzte Tag des Monats veröffentlicht. In einigen Fällen wird eine Änderung außerhalb dieses Zeitplan aufgrund von betrieblichen, Support oder sicherheitsanforderungen veröffentlicht werden.
 
-Wenn eine Änderung, die Sie ergreifen veröffentlicht wird, da eine IP-Adresse oder URL hinzugefügt wurde erforderlich sind, sollten Sie erwarten, um 30 Tage ab dem Zeitpunkt erhalten wir die Änderung veröffentlicht, bis live Office 365-Dienst auf diesem Endpunkt vorhanden ist. Obwohl Microsoft für diesen Benachrichtigungszeitraum Ziel ist es, es immer möglich aufgrund von betrieblichen, Support oder sicherheitsanforderungen möglicherweise nicht. Änderungen, die keine sofortige Aktion zum Aufrechterhalten der Konnektivität erfordern, wie IP-Adressen oder URLs entfernt oder weniger wurden keine bedeutenden Änderungen enthalten keine voraus. Unabhängig davon, welche Benachrichtigung bereitgestellt wird werden wir das erwartete Service aktive Datum für jede Änderung aufgelistet.
+Wenn eine Änderung, die erfordert, dass Sie fungieren veröffentlicht wird, da eine IP-Adresse oder URL hinzugefügt wurde, sollten Sie erwarten, um 30 Tage ab dem Zeitpunkt erhalten wir die Änderung veröffentlichen, bis ein Office 365-Dienst auf diesem Endpunkt vorhanden ist. Obwohl wir für diesen Benachrichtigungszeitraum Ziel, es immer möglich aufgrund von betrieblichen, Support oder sicherheitsanforderungen möglicherweise nicht. Änderungen, die keine sofortige Aktion zum Aufrechterhalten der Konnektivität erfordern, wie IP-Adressen oder URLs entfernt oder weniger wurden keine bedeutenden Änderungen enthalten keine voraus. Unabhängig davon, welche Benachrichtigung bereitgestellt wird Listen wir das erwartete Service aktive Datum für jede Änderung an.
 
-### <a name="change-notification-using-web-services"></a>Benachrichtigung über Webdienste
+### <a name="change-notification-using-the-web-service"></a>Änderungsbenachrichtigung mithilfe des Webdiensts
 
-Sie können die Office 365-IP-Adresse verwenden und änderungsbenachrichtigung für URL-Webdienste zum Abrufen. Es wird empfohlen, dass Sie die Webmethode/Version einmal pro Stunde aufrufen, um die Version der Endpunkte zu prüfen, die Sie für die Verbindung zu Office 365 verwenden. Wenn diese Version beim Vergleich mit der Version, die Sie verwendet haben ändert, sollten Sie get-mit den neuesten Endpunktdaten aus der /endpoints Webmethode und optional rufen die Unterschiede aus der /changes-Webmethode. Es ist nicht erforderlich, die Webmethoden /endpoints oder /changes aufzurufen, wenn wurde, keine Änderungen auf die Version, die Sie gefunden. 
+Die Office 365-IP-Adresse und den Webdienst-URL können Sie eine Benachrichtigung erhalten möchten. Es wird empfohlen, dass Sie die **Webmethode/Version** einmal pro Stunde aufrufen, um die Version der Endpunkte zu prüfen, die Sie für die Verbindung zu Office 365 verwenden. Wenn diese Version beim Vergleich mit der Version, die Sie verwendet haben ändert, sollten Sie mit die neuesten Endpunktdaten aus der **/endpoints** -Webmethode abrufen und optional die Unterschiede aus der **/changes** -Webmethode abrufen. Es ist nicht erforderlich, die **/endpoints** oder **/changes** Webmethoden aufzurufen, wenn wurde, keine Änderungen auf die Version, die Sie gefunden. 
 
 Weitere Informationen finden Sie unter [Office 365-IP-Adresse und URL-Webdienst](office-365-ip-web-service.md).
 
 ### <a name="change-notification-using-rss-feeds"></a>Verwenden von RSS-Feeds Benachrichtigung
 
-Die Office 365-IP-Adresse und URL-Webdienste bieten einen RSS-feed, dass Sie in Outlook abonnieren können. Links zu den RSS-URLs auf jedem der Office 365-Dienst Instanz bestimmten Seiten für die IP-Adressen und URLs sind vorhanden. RSS-Feeds wird in [Office 365-IP-Adresse und URL-Webdienst](office-365-ip-web-service.md)näher beschrieben.
+Office 365-IP-Adresse und URL-Webdienst bietet einen RSS-Feed, den Sie in Outlook abonnieren können. Links zu den RSS-URLs auf allen Seiten in Office 365-Dienst Instanz-spezifischen für die IP-Adressen und URLs sind vorhanden. Weitere Informationen finden Sie unter [Office 365-IP-Adresse und URL-Webdienst](office-365-ip-web-service.md).
 
 ### <a name="change-notification-and-approval-review-using-microsoft-flow"></a>Benachrichtigung und Genehmigung Überprüfen von Microsoft Flow
 
 Wir wissen, dass Sie weiterhin manuelle Verarbeitung für netzwerkänderungen Endpunkt erfordern möglicherweise, die über jeden Monat stammen. Microsoft Flow können Sie um einen Fluss zu erstellen, der Sie per e-Mail benachrichtigt und ein Genehmigungsprozesses, damit die Änderungen optional ausgeführt, wenn es sich bei Office 365-Netzwerk-Endpunkten geändert wurden. Nach der Überprüfung abgeschlossen ist, können Sie den automatisch die Änderungen an Ihrem Firewall- und Proxy-Server-Management-Team e-Mail-Fluss haben. 
 
-Informieren Sie sich über die Microsoft-Flow Beispiel und die Vorlage unter [Verwendung der Microsoft Flow empfangen eine e-Mail, damit die Änderungen in Office 365-IP-Adressen und URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
+Informationen über einen Microsoft Flow Beispiel und eine Vorlage finden Sie unter [Verwendung der Microsoft Flow empfangen eine e-Mail, damit die Änderungen in Office 365-IP-Adressen und URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651)
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365 Netzwerkendpunkte – häufig gestellte Fragen
@@ -204,7 +206,7 @@ Beachten Sie, dass Blockieren des Zugriffs auf die Microsoft Consumer Services a
   
 [Power BI und ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
-[URLs und IP-Adressbereiche von Office 365](urls-and-ip-address-ranges.md)
+[URLs und IP-Adressbereiche für Office 365](urls-and-ip-address-ranges.md)
   
 [Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
   
