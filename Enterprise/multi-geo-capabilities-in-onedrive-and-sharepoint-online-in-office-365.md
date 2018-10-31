@@ -12,12 +12,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive und SharePoint Online.
-ms.openlocfilehash: c6648dc8a0b225105e408fc082f6bb4d1a1b4930
-ms.sourcegitcommit: 2f138e0733266ab4b179bbe882c734500118dde1
+ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24012735"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849821"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
 
@@ -43,7 +43,7 @@ Vorteile von Multi-Geo-Funktionen für Ihre Organisation:
     
 - Konsolidieren Sie Ihre regionalen lokalen Daten in Ihrem Office 365-Multi-Geo-Mandanten.
     
-In einer Multi-Geo-Konfiguration besteht Ihr Office 365-Mandant aus einem zentralen Standort (auch Standardstandort genannt) und einem oder mehreren Geo-Satellitenstandorten. Das Hauptkonzept von Multi-Geo besteht darin, dass ein einziger Mandant mehrere geografische Standorte umfasst. Die Informationen über geografische Standorte, Gruppen und Benutzer eines Multi-Geo-Mandanten werden in Azure Active Directory (AAD) verwaltet. Da Ihre Mandanteninformationen zentral verwaltet und an jedem geografischen Standort synchronisiert werden, wird das globale Bewusstsein durch das Teilen von Informationen und Erfahrungen im gesamten Unternehmen erhöht.
+In einer Multi-Geo-Konfiguration besteht Ihr Office 365-Mandant aus einem zentralen Standort (an dem das Office 365-Abonnement ursprünglich bereitgestellt wurde) und einem oder mehreren Geo-Satellitenstandorten. Das Hauptkonzept von Multi-Geo besteht darin, dass ein einziger Mandant mehrere geografische Standorte umfasst. Die Informationen über geografische Standorte, Gruppen und Benutzer eines Multi-Geo-Mandanten werden in Azure Active Directory (AAD) verwaltet. Da Ihre Mandanteninformationen zentral verwaltet und an jedem geografischen Standort synchronisiert werden, wird das globale Bewusstsein durch das Teilen von Informationen und Erfahrungen im gesamten Unternehmen erhöht.
 
 ## <a name="video-introducing-office-365-multi-geo"></a>Video: Einführung in Multi-Geo in Office 365
 
