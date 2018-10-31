@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: Ent_O365
 ms.custom:
 - LIL_Placement
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mithilfe von PowerShell für Office 365 Admin Center Aufgaben über die Befehlszeile ausführen.'
-ms.openlocfilehash: 2ea9c3eaa9a589bed6bf7ac575ffd241b7a72f01
-ms.sourcegitcommit: 8cacedcba4627042d4bd17f1a94fddcfd87f77b2
+ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25601639"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849891"
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -80,20 +80,22 @@ Falls Sie gefragt werden, ob Sie ein Modul aus einem nicht vertrauenswürdigen R
 
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
 
-Führen Sie diesen Befehl von einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten), zum Verbinden mit Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)*:
-    
-```
-Connect-AzureAD
-```
+Zum Verbinden von Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)* führen Sie einen der folgenden Befehle aus einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten).
+
+|||
+|:-------|:-----|
+| **Office 365-cloud** | **Befehl** |
+| Office 365 weltweit (+ GCC) | `Connect-AzureAD` |
+| Office 365, die vom Dienst 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Deutschland | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 US-Regierung Verteidigungsministeriums oder Office 365 US-Regierung GCC hoch | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+|||
 
 Klicken Sie im Dialogfeld **Anmeldung bei Ihrem Konto** Geben Sie Ihren Office 365 Arbeit oder Schule Benutzernamen und Ihr Kennwort ein, und klicken Sie dann auf **OK**.
 
 Wenn Sie mit mehrstufiger Authentifizierung das nutzen, befolgen Sie die Anweisungen in den Dialogfeldern zusätzliche Weitere Authentifizierungsinformationen, beispielsweise einen Überprüfungscode bereitstellen.
 
->[!Tip]
->Zum Verbinden mit Office 365 Deutschland finden Sie unter [Connect to Azure Deutschland mithilfe von PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
->
-    
+
 Nach dem anschließen, können Sie die neuen Cmdlets für die [Azure Active Directory PowerShell Graph-Modul](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)verwenden.
   
 
@@ -116,27 +118,28 @@ Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal,
     
 ### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
 
-Führen Sie diesen Befehl von einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten), zum Verbinden mit Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)*:
-    
-```
-Connect-MsolService
-```
+Zum Verbinden von Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)* führen Sie einen der folgenden Befehle aus einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten).
+
+|||
+|:-------|:-----|
+| **Office 365-cloud** | **Befehl** |
+| Office 365 weltweit (+ GCC) | `Connect-MsolService` |
+| Office 365, die vom Dienst 21 Vianet | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
+| Office 365 Deutschland | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
+| Office 365 US-Regierung Verteidigungsministeriums oder Office 365 US-Regierung GCC hoch | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+|||
 
 Klicken Sie im Dialogfeld **Anmeldung bei Ihrem Konto** Geben Sie Ihren Office 365 Arbeit oder Schule Benutzernamen und Ihr Kennwort ein, und klicken Sie dann auf **OK**.
 
 Wenn Sie mit mehrstufiger Authentifizierung das nutzen, befolgen Sie die Anweisungen in den Dialogfeldern zusätzliche Weitere Authentifizierungsinformationen, beispielsweise einen Überprüfungscode bereitstellen.
 
->[!Tip]
->Zum Verbinden mit Office 365 Deutschland finden Sie unter [Connect to Azure Deutschland mithilfe von PowerShell](https://docs.microsoft.com/azure/germany/germany-get-started-connect-with-ps).
->
-    
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
 Wenn Sie keine Fehler erhalten, verbunden Sie erfolgreich. Ein schneller Test ein Office 365-Cmdlet ausgeführt wird – beispielsweise **Get-MsolUser** – und die Ergebnisse anzuzeigen.
   
 Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
   
-- **Ein häufig auftretendes Problem ist ein falsches Kennwort**. Führen Sie Schritt 3 erneut durch, und achten Sie besonders auf die korrekte Eingabe des Benutzernamens und Kennworts.
+- **Ein allgemeines Problem ist ein ungültiges Kennwort**. Führen Sie Schritt2 erneut aus. und achten Sie besonders auf den Benutzernamen und das Kennwort, die Sie eingeben.
     
 - * *Der Microsoft Azure Active Directory-Modul für Windows PowerShell erfordert, dass Microsoft .NET Framework 3.5.* X * Feature wird auf Ihrem Computer ** aktiviert. Ist es wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert ist (beispielsweise 4 oder 4.5.* X *), aber rückwärts Kompatibilität mit älteren Versionen von .NET Framework aktiviert oder deaktiviert werden kann. Weitere Informationen finden Sie unter den folgenden Themen:
     
