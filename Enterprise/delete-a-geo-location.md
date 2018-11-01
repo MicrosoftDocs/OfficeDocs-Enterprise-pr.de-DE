@@ -1,5 +1,5 @@
 ---
-title: Löschen eines geografischen Standorts
+title: Löschen eines Satellitenstandorts
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,23 +10,24 @@ ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Dieser Artikel enthält Informationen zum Löschen eines geografischen Standorts bei Multi-Geo in OneDrive for Business.
-ms.openlocfilehash: f1da3d2e849d7ee931ef3a115502498743cc23bb
-ms.sourcegitcommit: 75842294e1ba7973728e984f5654a85d5d6172cf
+description: Dieser Artikel enthält Informationen zum Löschen eines Satellitenstandorts bei Multi-Geo in OneDrive for Business.
+ms.openlocfilehash: d13de1b10cfc087337d22f9103afc33057bc40c1
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849841"
 ---
-# <a name="delete-a-geo-location-in-onedrive-for-business-multi-geo"></a>Löschen eines geografischen Standorts bei Multi-Geo in OneDrive for Business
+# <a name="delete-a-satellite-location-in-onedrive-for-business-multi-geo"></a>Löschen eines Satellitenstandorts bei Multi-Geo in OneDrive for Business
 
-Wenn Sie einen geografischen Standort nicht mehr benötigen, können Sie diesen von Ihrem Mandanten über das [OneDrive Admin Center](https://admin.onedrive.com) löschen.
+Wenn Sie einen Satellitenstandort nicht mehr benötigen, können Sie diesen von Ihrem Mandanten über das [OneDrive Admin Center](https://admin.onedrive.com) löschen.
 
 > [!WARNING]
-> Alle Benutzerdaten an dem geografischen Standort werden dauerhaft gelöscht. Die Daten umfassen alle OneDrive for Business-Inhalte, SharePoint-Websites und Gruppenwebsites. Sie müssen alle Daten zu einem anderen Ort migrieren, bevor Sie den Standort löschen. Diese Aktion kann nicht rückgängig gemacht werden.
+> Alle Benutzerdaten an dem Satellitenstandort werden dauerhaft gelöscht. Die Daten umfassen alle OneDrive for Business-Inhalte, SharePoint-Websites und Gruppenwebsites. Sie müssen alle Daten zu einem Satellitenstandort migrieren, bevor Sie den Satellitenstandort löschen. Diese Aktion kann nicht rückgängig gemacht werden.
 
-Nur globale Administratoren können geografische Standorte löschen.
+Nur globale Administratoren können Satellitenstandorte löschen.
 
-So löschen Sie einen geografischen Standort
+So löschen Sie einen Satellitenstandort
 
 1. Öffnen Sie das [OneDrive Admin Center](https://admin.onedrive.com).
 

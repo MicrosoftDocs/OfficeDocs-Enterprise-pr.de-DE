@@ -11,18 +11,18 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen zum Konfigurieren der Suche in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: c1cf057383015c35e0dd75c8100f66ce35871878
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ca2a35385ab2c246b78dc8811e8435bbdec25c7
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915060"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849911"
 ---
 # <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Konfigurieren der Suche für Multi-Geo in OneDrive for Business
 
-In einer Share Point Online-Umgebung mit Multi-Geo kann eine Organisation über einen Office 365-Mandanten verfügen, ihre SharePoint-Inhalte jedoch an mehreren geografischen Standorten speichern – einem zentralen Standort und einem oder mehreren Satellitenstandorten.
+In einer OneDrive for Business-Umgebung mit Multi-Geo kann eine Organisation über einen Office 365-Mandanten verfügen, ihre OneDrive for Business-Inhalte jedoch an mehreren geografischen Standorten speichern – einem zentralen Standort und einem oder mehreren Satellitenstandorten.
 
-Jeder geografischen Standort verfügt über einen eigenen Suchindex und ein Suchcenter. Wenn ein Benutzer eine Suche durchführt, wird die Abfrage in alle Indizes aufgefächert, und die zurückgegebenen Ergebnisse werden zusammengeführt.
+Jeder geografische Standort verfügt über einen eigenen Suchindex und ein Suchcenter. Wenn ein Benutzer eine Suche durchführt, wird die Abfrage in alle Indizes aufgefächert, und die zurückgegebenen Ergebnisse werden zusammengeführt.
 
 Ein Benutzer an einem geografischen Standort kann zum Beispiel nach Inhalten an einem anderen Standort oder auf einer SharePoint-Website suchen, die auf einen anderen geografischen Standort eingeschränkt ist. Wenn der Benutzer Zugriff auf diese Inhalte hat, wird das Suchergebnis angezeigt.
 
@@ -56,7 +56,7 @@ Sobald die Multi-Geo-Umgebung eingerichtet wurde, werden Benutzern Neuigkeiten, 
 
 ### <a name="the-search-center"></a>Das Suchcenter
 
-Sobald die Multi-Geo-Umgebung eingerichtet wurde, zeigt jedes Suchcenter weiterhin nur die Ergebnisse vom eigenen geografischen Standort an. Administratoren müssen [die Einstellungen für jedes Suchcenter ändern](#_Set_up_a_1), um Ergebnisse aus allen geografischen Speicherorte zu erhalten. Anschließend erhalten Benutzer, die eine Suche im Suchcenter durchführen, Ergebnisse aus allen geografischen Standorten.
+Sobald die Multi-Geo-Umgebung eingerichtet wurde, zeigt jedes Suchcenter weiterhin nur die Ergebnisse vom eigenen geografischen Standort an. Administratoren müssen [die Einstellungen für jedes Suchcenter ändern](#_Set_up_a_1), um Ergebnisse aus allen geografischen Standorten zu erhalten. Anschließend erhalten Benutzer, die eine Suche im Suchcenter durchführen, Ergebnisse aus allen geografischen Standorten.
 
 ### <a name="custom-search-applications"></a>Benutzerdefinierte Suchanwendungen
 

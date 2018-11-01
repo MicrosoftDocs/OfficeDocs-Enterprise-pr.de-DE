@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 12da695b44c5102c985a8d64960b1d20e092c8cd
-ms.sourcegitcommit: 92d16c0926e4be3fd493fe9b4eb317fb54996bca
+ms.openlocfilehash: 0113c20eab59e4d0a3122344346d31ae9f0a35a8
+ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "21550058"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25849881"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
@@ -43,7 +43,7 @@ Wenn Sie über benutzerdefinierte Profileigenschaften verfügen, wird empfohlen,
 
 #### <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
-BCS, Secure Store und Apps verfügen über separate geografische Instanzen. Daher sollte der SharePoint Online-Administrator diese Dienste von dem jeweiligen geografischen Standort aus verwalten und konfigurieren, an dem diese vorhanden sein sollen.
+BCS, Secure Store und Apps verfügen über separate Instanzen. Daher sollte der SharePoint Online-Administrator diese Dienste von dem jeweiligen Satellitenstandort aus separat verwalten und konfigurieren.
 
 #### <a name="security-and-compliance-admin-center"></a>Security & Compliance Center
 
@@ -63,10 +63,10 @@ Standardmäßig kann ein eDiscovery-Manager oder Administrator eines Multi-Geo-M
 
 Der globale Office 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen „Region“-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden.
 
-Wenn die eDiscovery-Manager- oder Administratorrolle für einen bestimmten geografischen Standort festgelegt ist, kann der eDiscovery-Manager oder Administrator nur eDiscovery-Suchaktionen für die SharePoint-Websites und OneDrive-Websites an diesem geografischen Standort durchführen. Wenn ein eDiscovery-Manager oder Administrator versucht, SharePoint- oder OneDrive-Websites außerhalb der angegebenen Region zu durchsuchen, werden keine Ergebnisse zurückgegeben. Wenn der eDiscovery-Manager oder Administrator für eine Region einen Export auslöst, werden Daten in der Azure-Instanz dieses Bereichs exportiert. So können Organisationen Compliance gewährleisten, indem nicht zugelassen wird, dass Inhalte über den kontrollierten Rahmen hinaus exportiert werden.
+Wenn die eDiscovery-Manager- oder Administratorrolle für einen bestimmten Satellitenstandort festgelegt ist, kann der eDiscovery-Manager oder Administrator nur eDiscovery-Suchaktionen für die SharePoint-Websites und OneDrive-Websites an diesem Satellitenstandort durchführen. Wenn ein eDiscovery-Manager oder Administrator versucht, SharePoint- oder OneDrive-Websites außerhalb des angegebenen Satellitenstandorts zu durchsuchen, werden keine Ergebnisse zurückgegeben. Wenn der eDiscovery-Manager oder Administrator für einen Satellitenstandort einen Export auslöst, werden Daten in der Azure-Instanz dieses Bereichs exportiert. So können Organisationen Compliance gewährleisten, indem nicht zugelassen wird, dass Inhalte über den kontrollierten Rahmen hinaus exportiert werden.
 
 > [!NOTE]
-> Wenn ein eDiscovery-Manager mehrere SharePoint-Regionen durchsuchen möchte, muss ein anderes Benutzerkonto für den eDiscovery-Manager erstellt werden, das die alternative Region angibt, in der sich OneDrive- oder SharePoint-Websites befinden.
+> Wenn ein eDiscovery-Manager mehrere SharePoint-Satellitenstandorte durchsuchen möchte, muss ein anderes Benutzerkonto für den eDiscovery-Manager erstellt werden, das den alternativen Satellitenstandort angibt, in dem sich OneDrive- oder SharePoint-Websites befinden.
 
 <table>
 <thead>
@@ -122,7 +122,7 @@ So legen Sie den Compliancesicherheitsfilter für eine Region fest
 2.  Geben Sie Folgendes ein:  
     $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri <https://ps.compliance.protection.outlook.com/powershell-liveid> -Credential $cred -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
 
-    $a = Import-PSSession $s -AllowClobber  
+    $a = Import-PSSession $s -AllowClobber  
 
 3.  **New-ComplianceSecurityFilter** **-Action** ALL **-FilterName** EnterTheNameYouWantToAssign **-Region** EnterTheRegionParameter **-Users** EnterTheUserPrincipalName
 
@@ -132,4 +132,4 @@ Informationen zu weiteren Parametern und zur Syntax finden Sie im Artikel [New-C
 
 #### <a name="audit-log-search"></a>Überwachungsprotokollsuche
 
-Ein einheitliches [Überwachungsprotokoll](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) für alle Ihre geografischen Standorte ist auf der Seite für die Office 365-Überwachungsprotokollsuche verfügbar. Sie können alle Überwachungsprotokolleinträge für alle geografischen Standorte anzeigen. Beispiel: Sie können Benutzeraktivitäten für die geografischen Standorte NAM und EUR in einer Organisationsansicht anzeigen und dann vorhandene Filter anwenden, um bestimmte Benutzeraktivitäten anzuzeigen.
+Ein einheitliches [Überwachungsprotokoll](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) für alle Ihre Satellitenstandorte ist auf der Seite für die Office 365-Überwachungsprotokollsuche verfügbar. Sie können alle Überwachungsprotokolleinträge für alle geografischen Standorte anzeigen. Beispiel: Sie können Benutzeraktivitäten für die geografischen Standorte NAM und EUR in einer Organisationsansicht anzeigen und dann vorhandene Filter anwenden, um bestimmte Benutzeraktivitäten anzuzeigen.
