@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Zusammenfassung: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die für die Herstellung einer Verbindung zu Office 365 verwendet werden.'
-ms.openlocfilehash: c384ba043e64ec83eda74b234937efaf72f29815
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 023eb3f5ed4d81d1d49d18c69ef8c81032fd5851
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223067"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933122"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen
 
@@ -37,7 +37,7 @@ In der lokalen ausgehende Internet-Proxyeinstellungen auch Konnektivität mit Of
   
 Die folgenden Skype für Artikel zu Business-Hilfe wurden weitere Informationen zu Skype für Unternehmen:
   
-- [Problembehandlung bei Skype für Business Anmeldefehlern (Administratoren)](https://go.microsoft.com/fwlink/p/?LinkID=243624)
+- [Problembehandlung bei Skype für Business Online Anmeldefehlern für Administratoren](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/troubleshooting-sign-in-errors-for-admins)
 
 - [Sie können keine Verbindung mit Skype für Unternehmen oder bestimmte Features funktionieren nicht, da eine lokale Firewall die Verbindung blockiert](https://go.microsoft.com/fwlink/p/?LinkID=243625)
 
@@ -70,4 +70,4 @@ Weitere Informationen zum Konfigurieren von Firewalls und Proxys für die Verbin
   
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellung Berater für Office 365-Dienste](deployment-advisors-for-office-365.md)
+[Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)

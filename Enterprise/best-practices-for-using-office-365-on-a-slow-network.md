@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 description: Wäre es noch etwas, wenn Ihre Internet-Verbindung wurde immer schneller und nie nach-unten? Möglicherweise wird dieses Tages stammen. Aber in der Zwischenzeit praktische Dinge, die Sie tun können, um ein balky Netzwerk zu umgehen und weiterhin Erledigung Ihrer tägliche Arbeit vorhanden sind.
-ms.openlocfilehash: 52c3bde04aa58f9e24a49d2034e6b6433c44f21c
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 2287de562672f5ceb1ab32949168e8dfdeb31585
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540977"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933142"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Bewährte Methoden für die Verwendung von Office 365 bei langsamen Netzwerken
 
@@ -162,7 +162,7 @@ Weitere Informationen finden Sie im Abschnitt "Weitere Informationen zu umfangre
 
 Wenn Sie eine Webseite anpassen, können Sie versehentlich schlechten Leistung mit der Seite führen. Eine Reihe von Faktoren kann auswirken, wie die Komplexität und Größe der Seite, wie viele Liste oder Bibliothek Elemente Anfangs angezeigt werden, wie viele Webparts hinzugefügt, und die Möglichkeit, die Sie auf die Seite code.
   
-Weitere Informationen finden Sie unter [SharePoint Online Optimieren der Leistung](https://technet.microsoft.com/library/f97c2f06-0426-443d-8a16-d98abb0da252#TuneSharePoint).
+Weitere Informationen finden Sie unter [SharePoint Online Optimieren der Leistung](https://docs.microsoft.com/office365/enterprise/tune-sharepoint-online-performance).
   
 ## <a name="best-practices-for-using-project-online"></a>Bewährte Methoden für die Verwendung von Project Online
 
