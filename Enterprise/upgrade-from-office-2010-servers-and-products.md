@@ -3,7 +3,7 @@ title: Ressourcen zum upgrade von Office 2010-Servern und clients
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/8/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,16 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Support für Office 2010-Servern und -Clientanwendungen bald beendet wird und benutzerdefinierte Support Agreements sind nicht verfügbar. Verwenden Sie diesen Artikel zum Planen der Aktualisierung jetzt starten.
-ms.openlocfilehash: d358cfc2e9fbc0ecc829995698b32801e4c55c9f
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 10ec20fea5cd40c5ed24d1a24a7f4e4a1a2875d7
+ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975153"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25933072"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen zum upgrade von Office 2010-Servern und clients
 
-Wenn Sie Office 2010-Produkte und Dienste verwenden, ist jetzt der ideale Zeitpunkt, sollten in der Microsoft-Cloud, beginnend mit Office 365 verschieben. Office 2010-Produkte und Dienste sind Ablauf des Supports fast erreicht. Verwenden Sie diesen Artikel als Ausgangspunkt, um zu prüfen Ihre Optionen und Planen des Upgrades.
+Wenn Sie Office 2010-Produkte und Dienste verwenden, können Sie wahrscheinlich Beachten Sie, dass Office 2010-Produkten und Diensten deren Ablauf des Supports fast ausgeschöpft ist. Während des Upgrades vorab, ist dies der ideale Zeitpunkt, sollten in der Microsoft-Cloud, beginnend mit Office 365 verschieben. Verwenden Sie diesen Artikel als Ausgangspunkt, um die Installationsoptionen zu überprüfen.
       
 ## <a name="office-2010-planning-content"></a>Planung Inhalte zu Office 2010
   
@@ -39,10 +39,10 @@ Wenn Sie Office 2010-Produkte und Dienste verwenden, ist jetzt der ideale Zeitpu
 |Office 2010 (einschließlich Word 2010, Excel 2010, PowerPoint 2010 und Outlook 2010)  <br/> |[Office 2010 Ende Unterstützung-Wegweiser](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> |[Exchange 2010 Ende Unterstützung-Wegweiser](exchange-2010-end-of-support.md) <br/> |
 |SharePoint 2010 oder SharePoint Server 2010  <br/> |[Upgrade von SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | [Planen von Projektserver und Project Online](https://docs.microsoft.com/project/planning-project-server-and-project-online-for-technical-decision-makers) <br/> |
+|Project Server 2010 <br/> | [Project Server 2010 Ende Unterstützung-Wegweiser](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | [Planen eines Upgrades auf Skype für Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
-## <a name="what-if-im-a-home-user-what-do-i-do"></a>Was geschieht, wenn ich eine Privatbenutzer bin? Was soll ich tun?
+## <a name="im-a-home-user-what-do-i-do"></a>Ich habe ein privat. Was soll ich tun?
 
 Wenn Sie Office 2010-Produkten und Anwendungen zu Hause arbeiten, finden Sie unter [diese Informationen](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 

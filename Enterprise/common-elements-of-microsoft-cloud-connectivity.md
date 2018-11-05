@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Zusammenfassung: Informationen zu gemeinsamen Elementen der Netzwerkinfrastruktur und zu Vorbereitungen des Netzwerks.'
-ms.openlocfilehash: 492d13a2a62425201c727c039e45db2750202da6
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
+ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915650"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25897028"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Gemeinsame Elemente der Microsoft-Cloudkonnektivität
 
@@ -60,7 +60,7 @@ In Abbildung 1 wird gezeigt, wie ein lokales Netzwerk mithilfe der vorhandenen I
     
 - **Externe Arbeitslast:** Websites oder andere Arbeitslasten, die externen Benutzern im Internet zur Verfügung gestellt werden.
     
-- **Proxyserver:** Dienstanforderungen für Webinhalte im Auftrag von Intranetbenutzern. Ein Reverse-Proxy lässt unerwünschte eingehende Anfragen zu.
+- **Proxy-Server:** Anforderungen für Webinhalte im Namen von Intranetbenutzern-Dienste. Ein Reverseproxy ermöglicht unerwünschte eingehende Anfragen an.
     
 - **Externe Firewall:** Lässt ausgehenden Datenverkehr und angegebenen eingehenden Datenverkehr zu. Kann eine Adressübersetzung durchführen.
     
