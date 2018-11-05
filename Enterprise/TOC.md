@@ -45,7 +45,7 @@
 ### [Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird](configure-exchange-server-for-hybrid-modern-authentication.md)
 ### [Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
 ### [Entfernen oder Deaktivieren der modernen Hybridauthentifizierung aus Skype for Business und Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [Planen des Upgrades von Office 2007- oder 2010-Produkten](plan-upgrade-previous-versions-office.md)
+## [Office upgraden](plan-upgrade-previous-versions-office.md)
 ### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
 #### [Office 2010-Desktop](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 #### [Exchange 2010](exchange-2010-end-of-support.md)
