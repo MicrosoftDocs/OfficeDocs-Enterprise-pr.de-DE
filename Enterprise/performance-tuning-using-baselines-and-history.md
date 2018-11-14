@@ -1,5 +1,5 @@
 ---
-title: Office 365 Performance tuning mit Baselines und Leistungsverlauf
+title: Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 1492cb94-bd62-43e6-b8d0-2a61ed88ebae
 description: Es gibt einige auf einfache Weise überprüfen Sie die Leistung der Verbindung zwischen Office 365 und Ihr Unternehmen, mit denen Sie eine grobe Baseline für die Verbindung festgelegt werden kann. Den Verlauf der Ihrer Client-Computer Verbindungen wissen kann Ihnen neu auftretender Probleme früh erkennen, identifizieren und Vorhersagen Probleme.
-ms.openlocfilehash: bb1fe1e1450798e43c15a07610e27450bce6ea5b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 30a0903d95ccfcd2018d8971c74c7f80223c005d
+ms.sourcegitcommit: e334616f1b357365b380990eda63f6e63d52ec5b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540879"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "26024687"
 ---
-# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365 Performance tuning mit Baselines und Leistungsverlauf
+# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf
 
 Es gibt einige auf einfache Weise überprüfen Sie die Leistung der Verbindung zwischen Office 365 und Ihr Unternehmen, mit denen Sie eine grobe Baseline für die Verbindung festgelegt werden kann. Den Verlauf der Ihrer Client-Computer Verbindungen wissen kann Ihnen neu auftretender Probleme früh erkennen, identifizieren und Vorhersagen Probleme.
   
@@ -196,7 +196,7 @@ Das Ziel dieser einfachen Methoden ist um machen, zu verstehen, und speichern ei
 ![Standard-Netzwerk mit Client, Proxy, Cloud und Tools Vorschläge PSPing, TraceTCP, bei der Netzwerkkonfiguration Spuren.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> In diesem Screenshot, da es hilfreich ist für angezeigt, in Millisekunden an, wie lange eine Anforderung an den Prozess, und wie viele Netzwerkhops oder Verbindungen von einem Computer, auf die nächste benötigt, dass die Anforderung akzeptiert ein Ziel erreicht ist TraceTCP enthalten. TraceTCP kann auch Geben Sie den Namen der Server verwendet, während der Hops, die für ein Microsoft Office 365-Problembehandlung im Support nützlich sein können. > TraceTCP Befehle kann sehr einfache, z. B.: > `tracetcp.exe outlook.office365.com:443`> Denken Sie daran, die Portnummer in den Befehl! > [TraceTCP](https://simulatedsimian.github.io/tracetcp.mdl) ist kostenlos, aber Wincap nutzt. Wincap ist ein Tool, das auch verwendet werden und von Netmon installiert. Wir werden auch Netmon im Abschnitt Erweiterte Methoden verwenden. 
+> In diesem Screenshot, da es hilfreich ist für angezeigt, in Millisekunden an, wie lange eine Anforderung an den Prozess, und wie viele Netzwerkhops oder Verbindungen von einem Computer, auf die nächste benötigt, dass die Anforderung akzeptiert ein Ziel erreicht ist TraceTCP enthalten. TraceTCP kann auch Geben Sie den Namen der Server verwendet, während der Hops, die für ein Microsoft Office 365-Problembehandlung im Support nützlich sein können. > TraceTCP Befehle kann sehr einfache, z. B.: > `tracetcp.exe outlook.office365.com:443`> Denken Sie daran, die Portnummer in den Befehl! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) ist kostenlos, aber Wincap nutzt. Wincap ist ein Tool, das auch verwendet werden und von Netmon installiert. Wir werden auch Netmon im Abschnitt Erweiterte Methoden verwenden. 
   
  Wenn Sie mehrere Büros verfügen, müssen Sie einen Satz von Daten von einem Client in jeder der beiden Speicherorte sowie beibehalten. Dieser Test misst Wartezeit, die in diesem Fall einen Zahlenwert ist, der die Dauer zwischen einem Client Senden einer Anforderung an den Office 365 und auf die Anforderung reagiert Office 365 beschreibt. Die Tests innerhalb Ihrer Domäne auf einem Clientcomputer stammt und sieht eine Schleife von innerhalb des Netzwerks über einen Punkt, der Ausgang, über das Internet zu Office 365, out messen und wieder. 
   

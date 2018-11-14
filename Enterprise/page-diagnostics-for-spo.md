@@ -15,21 +15,23 @@ search.appverid:
 - BSA160
 ms.assetid: dbab2593-dc6a-40f7-adfe-031b9baa620f
 description: Verwenden Sie die Seite Diagnose für SharePoint-Tool, um die klassischen Seiten mit empfohlenen best Practices für SharePoint Online zu analysieren.
-ms.openlocfilehash: 0fc2e16867b54e644d00c57fbfc41d4f7d042f88
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 1524befc0003006cfab9100aafc7d3deda2a37d2
+ms.sourcegitcommit: 5be99683fb2de87f723264c8a1123451d31ea43b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975163"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26253616"
 ---
 # <a name="use-the-page-diagnostics-tool-for-sharepoint-online"></a>Verwenden Sie das Seite-Diagnosetool für SharePoint Online
 
 In diesem Artikel wird beschrieben, wie Sie das Seite Diagnose-Tool verwenden können, um den klassischen Veröffentlichungsseiten und Seiten auf klassische Teamwebsites, gegen eine Teilmenge der empfohlenen Vorgehensweisen in **SharePoint Online**analysieren. 
   
 Teamwebsites, die Veröffentlichung aktiviert nicht aufweisen können CDNs verwenden, aber alle verbleibenden Regeln gelten. Veröffentlichung fügt zusätzlichen Aufwand damit nicht aktivieren auf veröffentlichen, um die CDN-Funktionalität zu erhalten, wie er sich negativ auf die Seitenladezeiten auswirkt.
+
+**Bitte beachten Sie, dass V1.05 freigegeben wurde so Bitte aktualisieren Sie die Erweiterung, wenn Sie bereits installiert ist**. Wenn Sie nicht sicher sind, welche Version Sie haben dann klicken Sie auf den Link "Info" zu überprüfen.
   
 > [!IMPORTANT]
-> Das Seite-Diagnosetool wird nicht für Dokumentbibliotheken oder, Systemseiten anzeigen, ausführen, wie das Tool zum Überprüfen von SharePoint-Websiteseiten vorgesehen ist. Ein *allitems.aspx* ist eine Seite System. Wenn Sie versuchen, das Tool auf einer Seite System auszuführen, erhalten Sie eine Meldung angezeigt, "diese Anwendung sollte nur ausgeführt werden auf SharePoint-Seiten."<br/> ![Muss auf einer SharePoint-Seite ausgeführt werden](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Dies ist ein Fehler im Tool nicht, wie bei der Bewertung von Bibliotheken oder Systemseiten kein Wert vorhanden ist. Navigieren Sie zu einer anderen als dem SharePoint-Seite mit dem Tool. Sie Feedback zu erteilen möchten, sollte das Tool Bitte klicken Sie auf der Registerkarte Info und führen Sie den [Feedbacklink geben](https://go.microsoft.com/fwlink/?linkid=874109). 
+> Das Seite-Diagnosetool wird nicht für Dokumentbibliotheken oder, Systemseiten anzeigen, ausführen, wie das Tool zum Überprüfen von SharePoint-Websiteseiten vorgesehen ist. Ein *allitems.aspx* ist eine Seite System. Wenn Sie versuchen, das Tool auf einer Seite System auszuführen, erhalten Sie eine Meldung angezeigt, "diese Anwendung sollte nur ausgeführt werden auf SharePoint-Seiten."<br/> ![Muss auf einer SharePoint-Seite ausgeführt werden](media/34aadfff-1009-496b-9c87-4fc2780e017c.png)<br/>Dies ist ein Fehler im Tool nicht, wie bei der Bewertung von Bibliotheken oder Systemseiten kein Wert vorhanden ist. Navigieren Sie zu einer anderen als dem SharePoint-Seite mit dem Tool. Wenn dies auf einer SharePoint-Seite erfolgt, klicken Sie dann überprüfen Sie die MasterPage wie gesehen haben Kunden Entfernen der SharePoint MetaTags, und klicken Sie dann die Seite ist nicht mehr einer SharePoint-Seite. Sie Feedback zu erteilen möchten, sollte das Tool Bitte klicken Sie auf der Registerkarte Info und führen Sie den [Feedbacklink geben](https://go.microsoft.com/fwlink/?linkid=874109). 
   
 ## <a name="install-the-page-diagnostic-tool"></a>Installieren Sie das Tool Seite Diagnose
 

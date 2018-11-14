@@ -1,9 +1,9 @@
 ---
-title: Netzwerkanfragen 2016 von Office für Mac
+title: Netzwerk-Anforderungen in Office für Mac
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/9/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -12,17 +12,18 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: 2016 von Office für Mac Applikationen bieten eine systemeigene app-Benutzeroberfläche auf der Mac OS-Plattform. Jede app ist darauf ausgelegt, funktioniert in einer Vielzahl von Szenarien, einschließlich Zustände, wenn kein Netzwerkzugriff verfügbar ist. Bei ein Computer mit einem Netzwerk verbunden ist, werden die Anwendungen automatisch zu einer Reihe von webbasierten Diensten eine erweiterte Funktionalität verbunden. In diesem Whitepaper wird beschrieben, welche Endpunkte und URLs, die Anwendungen versuchen zu erreichen, und die bereitgestellten Dienste. Diese Informationen ist nützlich, wenn die Problembehandlung von Netzwerk-Konfigurationsprobleme und Festlegen einer Richtlinie für die Netzwerk-Proxy-Server. Der Konfigurationsdetails in diesem Artikel sind für die direkte Verwendung der Office 365-URL und die Adressbereiche Artikel zu unterstützen.
-ms.openlocfilehash: b94b77a0ff8cd37b0fa1c881ba590853615bfe93
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Office für Mac Applikationen bieten eine systemeigene app-Benutzeroberfläche auf der Mac OS-Plattform. Jede app ist darauf ausgelegt, funktioniert in einer Vielzahl von Szenarien, einschließlich Zustände, wenn kein Netzwerkzugriff verfügbar ist. Bei ein Computer mit einem Netzwerk verbunden ist, werden die Anwendungen automatisch zu einer Reihe von webbasierten Diensten eine erweiterte Funktionalität verbunden. In diesem Whitepaper wird beschrieben, welche Endpunkte und URLs, die Anwendungen versuchen, zu erreichen, und die bereitgestellten Dienste. Diese Informationen ist nützlich, wenn die Problembehandlung von Netzwerk-Konfigurationsprobleme und Festlegen einer Richtlinie für die Netzwerk-Proxy-Server. Der Konfigurationsdetails in diesem Artikel sind für die direkte Verwendung der Office 365-URL und die Adressbereiche Artikel zu unterstützen.
+ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
+ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540975"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26219895"
 ---
-# <a name="network-requests-in-office-2016-for-mac"></a>Netzwerkanfragen 2016 von Office für Mac
+# <a name="network-requests-in-office-for-mac"></a>Netzwerk-Anforderungen in Office für Mac
 
-2016 von Office für Mac Applikationen bieten eine systemeigene app-Benutzeroberfläche auf der Mac OS-Plattform. Jede app ist darauf ausgelegt, funktioniert in einer Vielzahl von Szenarien, einschließlich Zustände, wenn kein Netzwerkzugriff verfügbar ist. Bei ein Computer mit einem Netzwerk verbunden ist, werden die Anwendungen automatisch zu einer Reihe von webbasierten Diensten eine erweiterte Funktionalität verbunden. In diesem Whitepaper wird beschrieben, welche Endpunkte und URLs, die Anwendungen versuchen zu erreichen, und die bereitgestellten Dienste. Diese Informationen sind hilfreich, wenn Behandlung von Netzwerkproblemen Konfiguration und Festlegen von Richtlinien für die Netzwerk-Proxy-Server. Die Informationen in diesem Artikel sind für die direkte Verwendung im [Artikel zu Office 365-URL und Adresse Bereiche](urls-and-ip-address-ranges.md)unterstützen die Endpunkte für Computer mit Microsoft Windows enthält.
+Office für Mac Applikationen bieten eine systemeigene app-Benutzeroberfläche auf der Mac OS-Plattform. Jede app ist darauf ausgelegt, funktioniert in einer Vielzahl von Szenarien, einschließlich Zustände, wenn kein Netzwerkzugriff verfügbar ist. Bei ein Computer mit einem Netzwerk verbunden ist, werden die Anwendungen automatisch zu einer Reihe von webbasierten Diensten eine erweiterte Funktionalität verbunden. Die folgende Informationen beschrieben, die bereitgestellten Dienste, welche Endpunkte und URLs, die Anwendungen versuchen, zu erreichen. Diese Informationen sind hilfreich, wenn Behandlung von Netzwerkproblemen Konfiguration und Festlegen von Richtlinien für die Netzwerk-Proxy-Server. Der Konfigurationsdetails in diesem Artikel sind für die direkte Verwendung im [Artikel zu Office 365-URL und Adresse Bereiche](urls-and-ip-address-ranges.md)ergänzen die Endpunkte für Computer mit Microsoft Windows enthält. Sofern nicht angegeben, beziehen sich die Informationen in diesem Artikel auch 2019 von Office für Mac und Office 2016 für Mac, die als Kauf anbieten im Einzelhandel oder über einen Volumenlizenzvertrag verfügbar sind. 
+
   
 Die meisten der in diesem Artikel wird die Tabellen mit ausführlichen Informationen zu Netzwerk-URLs, Typ und Beschreibung des Dienstes oder Features, die von diesem Endpunkt bereitgestellt. Jedes von Office-apps kann im Dienst und Endpunkt Verwendungsmöglichkeit abweichen. In den folgenden Tabellen sind die folgenden apps definiert:
   
@@ -39,12 +40,13 @@ Der URL-Typ ist wie folgt definiert:
 - SS: Semikolons statisch – der URL wird als Teil einer Webseite oder Redirector codiert.
     
 - CS: Config Service - wird die URL als Teil der Office-Konfigurationsdienst zurückgegeben.
+
     
-## <a name="office-2016-for-mac-default-configuration"></a>2016 von Office für Mac Standardkonfiguration
+## <a name="office-for-mac-default-configuration"></a>Office für Mac Standardkonfiguration
 
  **Installation und updates**
   
-Die folgenden Netzwerkendpunkte werden verwendet, um die 2016 Office für Mac-Installationsprogramm von Microsoft Content Delivery Network (CDN) herunterladen.
+Die folgenden Netzwerkendpunkte werden verwendet, um die Office für Mac-Installationsprogramm von Microsoft Content Delivery Network (CDN) herunterladen.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -127,7 +129,7 @@ Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
    
  **Recherche**
   
-Die folgenden Netzwerkendpunkte gelten für beide Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -171,7 +173,7 @@ Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhan
 |:-----|:-----|:-----|:-----|
 |```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Senden Sie eine Smiley Service  <br/> |
    
- **wenden Sie sich an den Support,**
+ **Kontaktieren des Supports**
   
 Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen.
   
@@ -220,7 +222,7 @@ Die folgenden Netzwerkendpunkte gelten für Office 365-Abonnement und Einzelhand
    
  **Sichere Links**
   
-Endpunkt des folgenden gilt für 2016 Office-Clientanwendungen.
+Der folgenden Endpunkt gilt für alle Office-Anwendungen für Office 365-Abonnement nur.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -228,7 +230,7 @@ Endpunkt des folgenden gilt für 2016 Office-Clientanwendungen.
    
  **Reporting abstürzen**
   
-Der folgenden Endpunkt gilt für alle Office 2016 Applications und Lizenztypen. Wenn ein Prozess unerwartet abstürzt, wird ein Bericht generiert und an die Watson-Dienst gesendet.
+Der folgenden Endpunkt gilt für alle Office-Clientanwendungen für Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen. Wenn ein Prozess unerwartet abstürzt, wird ein Bericht generiert und an die Watson-Dienst gesendet.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -237,7 +239,7 @@ Der folgenden Endpunkt gilt für alle Office 2016 Applications und Lizenztypen. 
    
 ## <a name="options-for-reducing-network-requests-and-traffic"></a>Optionen zum Reduzieren der Netzwerk-Anfragen und Datenverkehr
 
-Die Standardkonfiguration der 2016 Office für Mac bietet die beste benutzerumgebung, sowohl im Hinblick auf die Funktionalität und den Computer auf dem aktuellen Stand zu halten. In einigen Szenarien möchten Sie möglicherweise Applications Kontaktaufnahme Netzwerkendpunkte zu verhindern. In diesem Abschnitt werden die Optionen zur Folge.
+Die Standardkonfiguration von Office für Mac bietet die beste benutzerumgebung, sowohl im Hinblick auf die Funktionalität und den Computer auf dem aktuellen Stand zu halten. In einigen Szenarien möchten Sie möglicherweise Applications Kontaktaufnahme Netzwerkendpunkte zu verhindern. In diesem Abschnitt werden die Optionen zur Folge.
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Cloud-Anmeldung und Office-Add-Ins deaktivieren
   
@@ -266,11 +268,11 @@ Wenn Benutzer versuchen, die Anmeldung-Funktion zugreifen, wird einen Fehler ang
 Um wieder mit vollem Funktionsumfang für den Benutzer arbeiten, legen Sie die Einstellung auf "2" oder zu entfernen.
   
 > [!NOTE]
-> Diese Einstellung erfordert 2016 Office für Mac Build 15.25 [160726] oder höher. 
+> Diese Einstellung erfordert Office für Mac Build 15.25 [160726] oder höher. 
   
 ### <a name="telemetry"></a>Telemetrie
   
-2016 von Office für Mac sendet Telemetriedaten an Microsoft in regelmäßigen Abständen. Daten werden an den Endpunkt 'Nexus' hochgeladen. Die Telemetriedaten hilft bei der Bewertung der Integrität und unerwarteten Verhaltensweisen der einzelnen Office-app-Entwicklungsteam. Es gibt zwei Kategorien von Telemetrie:
+Office für Mac sendet Telemetriedaten an Microsoft in regelmäßigen Abständen. Daten werden an den Endpunkt 'Nexus' hochgeladen. Die Telemetriedaten hilft bei der Bewertung der Integrität und unerwarteten Verhaltensweisen der einzelnen Office-app-Entwicklungsteam. Es gibt zwei Kategorien von Telemetrie:
   
 - **Heartbeat** enthält Angaben zu Version und der Lizenz. Diese Daten werden beim Start der app sofort gesendet. 
     
@@ -307,7 +309,7 @@ In einigen Fällen werden der Inhalt eines Dokuments zum Absturz die Anwendung f
   
 ### <a name="updates"></a>Updates
   
-Microsoft stellt 2016 Office für Mac-Updates in regelmäßigen Abständen (normalerweise einmal im Monat). Wir empfehlen dringend, Benutzern und Computern um sicherzustellen, dass die neuesten Sicherheitspatches Stand IT-Administratoren installiert sind. In Fällen, in der IT-Administratoren eng steuern und Verwalten von Updates Machine möchten, kann die folgenden Vorgabe zum Verhindern des AutoUpdate-Prozesses automatisch erkannt und bietet Produktupdates festgelegt werden:
+Microsoft stellt Office für Mac-Updates in regelmäßigen Abständen (normalerweise einmal im Monat). Wir empfehlen dringend, Benutzern und Computern um sicherzustellen, dass die neuesten Sicherheitspatches Stand IT-Administratoren installiert sind. In Fällen, in der IT-Administratoren eng steuern und Verwalten von Updates Machine möchten, kann die folgenden Vorgabe zum Verhindern des AutoUpdate-Prozesses automatisch erkannt und bietet Produktupdates festgelegt werden:
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
@@ -315,7 +317,7 @@ Microsoft stellt 2016 Office für Mac-Updates in regelmäßigen Abständen (norm
   
 Wenn Ihre Organisation Blöcke fordert zu URLs über eine Firewall oder der Proxy-Server müssen Sie konfigurieren die in diesem Dokument als entweder zulässig aufgeführten URLs oder blockieren mit 40 X Antwort (403 oder 404) aufgeführt. 40 X Antwort ansetzt, kann die Office-Clientanwendungen, der Fehler beim Zugriff auf die Ressource ordnungsgemäß zu akzeptieren, und bietet eine schnellere Benutzer wünschen, als einfach löschen der Verbindungs, wodurch den Client wiederholt wird.
   
-Wenn der Proxyserver Authentifizierung erfordert, wird eine 407 Antwort an den Client zurückgegeben werden soll. Für optimale Leistung stellen Sie sicher, dass Sie Office 2016 Builds 15.27 oder höher, verwenden, wie sie bestimmte Updates für die Arbeit mit NTLM und Kerberos-Servern enthalten sind.
+Wenn der Proxyserver Authentifizierung erfordert, wird eine 407 Antwort an den Client zurückgegeben werden soll. Die beste wünschen stellen Sie sicher, dass Sie Office für Mac-Builds 15.27 oder höher, nutzen wie sie bestimmte Updates für die Arbeit mit NTLM und Kerberos-Servern enthalten.
   
   
 ## <a name="see-also"></a>Siehe auch
