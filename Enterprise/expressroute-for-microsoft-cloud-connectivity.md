@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können.'
-ms.openlocfilehash: d3a19dcd3ce8732b3349c5cacce5b64159850682
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 1cd78372d37e40a53ba7725ff3653ef01daa48b0
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915490"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525836"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute für Microsoft-Cloudkonnektivität
 
@@ -102,7 +102,7 @@ Eine einzelne ExpressRoute-Verbindung unterstützt bis zu drei verschiedene BGP-
 
 ![Abbildung 3: Die drei verschiedenen BGP-Beziehungen in einer einzigen ExpressRoute-Verbindung](media/Network-Poster/ERPeering.png)
   
-Abbildung 3 zeigt eine ExpressRoute-Verbindung aus einem lokalen Netzwerk. Die ExpressRoute-Verbindung enthält drei logische Peeringbeziehungen. Eine Microsoft-Peeringbeziehung besteht zu Microsoft SaaS-Diensten, einschließlich Office 365 und Dynamcs CRM Online. Eine öffentliche Peeringbeziehung besteht zu Azure PaaS-Diensten. Eine private Peeringbeziehung besteht zu Azure IaaS und zu einem virtuellen Netzwerkgateway, auf dem virtuelle Computer gehostet werden.
+Abbildung 3 zeigt eine ExpressRoute Verbindung von einem lokalen Netzwerk. Die Verbindung ExpressRoute hat drei logische Peers Beziehungen. Eine Microsoft Peers Beziehung wechselt zu Microsoft SaaS-Dienste, einschließlich Office 365 und Dynamcs CRM Online. Eine öffentliche Peers Beziehung wechselt zu Azure PaaS-Dienste. Eine private Beziehung Peers geht Azure IaaS und ein virtuelles Netzwerk-Gateway, die virtuellen Computern gehostet wird.
   
 Die Microsoft-BGP-Peeringbeziehung: 
   
@@ -186,9 +186,9 @@ Wenn Sie eine ExpressRoute-Verbindung mit einem Microsoft Cloud-Peeringstandort 
   
 Dies kann zu einer nicht optimalen Übermittlung an lokale Microsoft-Rechenzentren für das n:n-Verbindungsmodell führen.
   
-**Abbildung 7: Beispiel für ein geografisch verteiltes Unternehmen, das eine einzelne ExpressRoute-Verbindung verwendet.**
+**Abbildung 7: Beispiel für ein geografisch verteilten Unternehmen, das eine einzelne ExpressRoute-Verbindung verwendet**
 
-![Abbildung 7: Beispiel für ein geografisch verteiltes Unternehmen, das eine einzelne ExpressRoute-Verbindung verwendet.](media/Network-Poster/MSNet1.png)
+![Abbildung 7: Beispiel für ein geografisch verteilten Unternehmen, das eine einzelne ExpressRoute-Verbindung verwendet](media/Network-Poster/MSNet1.png)
   
 Abbildung 7 zeigt eine Organisation mit zwei Standorten, Standort 1 im Nordwesten der USA, und Standort 2 im Nordosten. Diese sind durch einen n: n-WAN-Anbieter verbunden. Diese Organisation verfügt auch über eine ExpressRoute-Verbindung zu einem Microsoft-Peeringstandort an der Westküste. Datenverkehr von Standort 2 im Nordosten, der an ein Rechenzentrum an der Ostküste gerichtet ist, muss den gesamten Weg über das WAN der Organisation an die Westküste, an den Microsoft-Peeringstandort und dann zurück über das gesamte Land über das Microsoft Cloud-Netzwerk an das Rechenzentrum an der Ostküste zurücklegen.
   
