@@ -94,7 +94,7 @@
 #### [GCC High-Endpunkte für US Government](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Endpunkte von Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md)
 #### [Endpunkte für Office 365 Deutschland](office-365-germany-endpoints.md)
-#### [Netzwerkanforderungen in Office 2016 für Mac](network-requests-in-office-2016-for-mac.md)
+#### [Netzwerkanforderungen in Office für Mac](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
 #### [Zusätzliche, nicht in den Webdiensten enthaltene Endpunkte](additional-office365-ip-addresses-and-urls.md)
 ### [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
@@ -191,5 +191,5 @@
 ### [Clientkonnektivität](client-connectivity.md)
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Sicherheit & Compliance](https://docs.microsoft.com/Office365/SecurityCompliance)
-# [Office 365 for Business](https://support.office.com/office365admin)
+# [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
   
