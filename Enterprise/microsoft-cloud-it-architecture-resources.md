@@ -3,7 +3,7 @@ title: Ressourcen zur Cloud-IT-Architektur von Microsoft
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 05/18/2018
+ms.date: 11/13/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Informationen zu Microsoft-Clouddiensten und -Plattformen. Lesen Sie unsere Enterprise-Cloud-Roadmap, erkunden Sie unsere Cloud-Architekturreihe usw.'
-ms.openlocfilehash: 32d56908ebed809b0a1acb327e42eea559f6fe82
-ms.sourcegitcommit: d0f1f34b1702e304fec85ca72f1f660e9b328dd5
+ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
+ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24022094"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26525846"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -38,7 +38,6 @@ In diesen Architekturtools- und -postern finden Sie Informationen zu Microsoft-C
     - [Microsoft-Cloud-Sicherheit für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#security)
     - [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#networking)
     - [Microsoft-Mobilität und -Sicherheit für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#mobility)
-    - [Microsoft-Cloud-Speicher für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#storage)
     - [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
@@ -112,15 +111,6 @@ Was IT-Architekten über die Mobilität in Microsoft-Cloud-Diensten und -Plattfo
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild des Office 365 Information Protection-Posters](media/b3c3554f-3ce1-4610-86c7-032e9054ca8b.png)          ](https://www.microsoft.com/download/details.aspx?id=55023) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842076)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842077)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55023) <br/> | Dieses Modell enthält Folgendes: <ul><li>Top Mobile Apps für Unternehmen </li><li>Plattform, Dienste und Ressourcen für die Entwicklung von Mobile Apps </li><li>Verwalten des Zugriffs auf cloudbasierte Anwendungen und Daten von mobilen Geräten </li><li>Vergleich der Funktions- und Plattformunterstützung für Office 365 MDM, Azure Active Directory Premium und Intune. </li></ul><br/> |
-   
-<a name="storage"> </a>
-### <a name="microsoft-cloud-storage-for-enterprise-architects"></a>Microsoft-Cloud-Speicher für Enterprise-Architekten
-
-Was IT-Architekten über Speicheroptionen in Microsoft-Cloud-Diensten und -Plattformen von Microsoft
-  
-|**Element**|**Beschreibung**|
-|:-----|:-----|
-|[![Miniaturbild für Microsoft-Cloud-Speichermodell](media/0d4e2eb9-1109-4b3b-bf9e-2f3eff2e2cc4.png)          ](https://www.microsoft.com/download/details.aspx?id=49552) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842079)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842080)           \| [Artikel](hhttps://technet.microsoft.com/library/mt842597.aspx) <br/>[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=49552) <br/> | Dieses Modell enthält Folgendes: <ul><li>Gründe für die Verwendung von Cloudspeichern und die wichtigsten Szenarios </li><li>Cloudspeicheroptionen, die mit vorhandenen Diensten gebündelt sind. </li><li>Speicheroptionen, die Sie als Einstiegspunkt für Ihre Speicherlösung verwenden können. </li><li>Speicherbausteine zum Erstellen eigener Speicherlösungen oder Speicher für Apps.</li></ul><br/>|
    
 <a name="hybrid"> </a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud für Enterprise-Architekten
