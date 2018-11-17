@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: Dieser Artikel beschreibt die Navigation Optionen Websites mit SharePoint-Veröffentlichung in SharePoint Online aktiviert. Die Auswahl und Konfiguration der Navigation erheblich beeinträchtigt die Leistung und Skalierbarkeit von Websites in SharePoint Online.
-ms.openlocfilehash: 08790dcee343e9e69bbaab149cce8a390470e7d6
-ms.sourcegitcommit: 5731dce2440e5a7a261f6360e8e2e9639d339d4e
+ms.openlocfilehash: 5a190ca643c20b6644ca1eecdac2a4a2e281a09e
+ms.sourcegitcommit: 45633b7034ee98d0cd833db9743f283b638237f4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23957450"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "26547177"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
@@ -193,7 +193,7 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
-8. Die Ergebnisse werden in das Array self.nodes zugewiesen und eine Hierarchie der Objekte mit linq.js zuweisen die Ausgabe zu einem Array self.heirarchy basiert. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies in der Funktion toggleView() erfolgt, indem Sie das Self-Objekt an die Funktion ko.applyBinding() übergeben.<br/>Dies führt dann Hierarchie Array folgenden HTML-Code gebunden werden:<br/>
+8. Die Ergebnisse werden in das Array self.nodes zugewiesen und eine Hierarchie der Objekte mit linq.js zuweisen die Ausgabe zu einem Array self.hierarchy basiert. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies in der Funktion toggleView() erfolgt, indem Sie das Self-Objekt an die Funktion ko.applyBinding() übergeben.<br/>Dies führt dann Hierarchie Array folgenden HTML-Code gebunden werden:<br/>
 
 ```
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
