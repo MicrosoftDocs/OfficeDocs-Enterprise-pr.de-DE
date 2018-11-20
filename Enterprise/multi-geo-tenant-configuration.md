@@ -11,12 +11,12 @@ ms.custom: ''
 localization_priority: Priority
 ms.collection: Strat_SP_gtc
 description: Konfigurieren von Multi-Geo in OneDrive for Business.
-ms.openlocfilehash: 6c4a1012f3f26265ef88d82c55bb3ac11cc82da4
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: e6a4ee9bd933b3f0db278ca2a7b04661bf123184
+ms.sourcegitcommit: 444efa9e5ea6c0102bb7611d2a9a6b9e072e8a48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849871"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539137"
 ---
 # <a name="onedrive-for-business-multi-geo-tenant-configuration"></a>Konfiguration des Mandanten für Multi-Geo in OneDrive for Business
 
@@ -112,7 +112,7 @@ In AAD gibt es zwei Typen von Benutzerobjekten: Nur-Cloud-Benutzer und synchroni
 
 ### <a name="synchronize-users-preferred-data-location-using-ad-connect"></a>Synchronisieren der bevorzugten Datenspeicherorte für Benutzer mithilfe von AD Connect 
 
-Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory-System und Azure Active Directory durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure AD Connect-Synchronisierung: Ändern der Standardkonfiguration](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-change-the-configuration), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem Active Directory und Azure Active Directory zu konfigurieren.
+Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory-System und Azure Active Directory durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenspeicherorts für Office 365-Ressourcen](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem Active Directory und Azure Active Directory zu konfigurieren.
 
 Es wird empfohlen, die Einstellung des bevorzugten Datenspeicherorts des Benutzers im Rahmen des Standardworkflows für das Erstellen von Benutzern hinzuzufügen.
 
