@@ -3,7 +3,6 @@ title: Vorbereiten von Domänen nicht-routingfähigen für Directory-Synchronisi
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Hier erfahren Sie, wie Sie vorgehen, wenn Sie verfügen über eine nicht Routale Domäne Ihre lokalen Benutzer zugeordnet ist, bevor Sie mit Office 365 synchronisieren.
-ms.openlocfilehash: 62779ba879522177ba15a491644ab42f5961ece0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540991"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674439"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Vorbereiten von Domänen nicht-routingfähigen für Directory-Synchronisierung
 Wenn Sie Ihr lokales Verzeichnis mit Office 365 synchronisieren eine überprüfte Domäne in Azure Active Directory haben. Nur die User Principal Names (UPN), die mit der lokalen Domäne verknüpft sind, werden synchronisiert. Allerdings werden alle UPN, die eine nicht-routingfähigen Domäne, z. B. Local (wie billa@contoso.local), enthält zu synchronisiert eine. Domäne "onmicrosoft.com" (wie billa@contoso.onmicrosoft.com). 
@@ -32,7 +31,7 @@ Wenn Sie bereits eine Local-Domäne für Ihre Benutzerkonten in Active Directory
   
 ## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Was geschieht, wenn nur eine Local lokale Domäne ist vorhanden?
 
-Das neueste Tool, das Sie verwenden können, für die Synchronisierung Ihrer Active Directory und Azure Active Directory heißt Azure Active Directory verbinden. Weitere Informationen finden Sie unter [Integration von Ihrer lokalen Identitäten mit Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=624168).
+Das neueste Tool, das Sie verwenden können, für die Synchronisierung Ihrer Active Directory und Azure Active Directory heißt Azure Active Directory verbinden. Weitere Informationen finden Sie unter [Integration von Ihrer lokalen Identitäten mit Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
 Verbinden von Azure Active Directory synchronisiert UPN und das Kennwort des Benutzers, damit Benutzer sich anmelden können sich mit denselben Anmeldeinformationen lokalen Verwendung. Azure Active Directory verbinden synchronisiert jedoch nur Benutzer auf Domänen, die von Office 365 überprüft werden. Dies bedeutet, dass die Domäne auch von Azure Active Directory überprüft worden ist, da Office 365 Identitäten von Azure Active Directory verwaltet werden. Anders ausgedrückt, muss die Domäne einen gültigen Internet-Domänennamen (z. B. .com, org, .net, US usw.) sein. Wenn der internen Active Directory nur eine nicht-routingfähigen Domäne (beispielsweise Local) verwendet wird, darf nicht dies möglicherweise die überprüfte Domäne übereinstimmen, die Sie in Office 365. Sie können dieses Problem beheben, indem Sie entweder die primäre Domäne in Ihre lokale Active Directory ändern oder durch eine oder mehrere UPN-Suffixe hinzufügen.
   

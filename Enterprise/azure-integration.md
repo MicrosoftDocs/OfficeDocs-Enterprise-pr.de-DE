@@ -1,9 +1,8 @@
 ---
-title: Azure-Integration mit Office 365
+title: Azure-Integration in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -16,14 +15,14 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Ihr Office 365-Abonnement umfasst ein Abonnement für Azure Active Directory. Integrieren Sie Office 365 mit Azure AD, wenn Sie mit Ihrer lokalen Umgebung kennwortsynchronisierung oder einmaliges Anmelden möchten.
-ms.openlocfilehash: 276243b953d18953ef3ea8f1189d1af8292dca6a
-ms.sourcegitcommit: b1cd20300a616ebef2f00668f42ba14e8aa5fcab
+ms.openlocfilehash: 8b7af5ba8d5106900384369a3e6548af40f9e201
+ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531838"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "26674419"
 ---
-# <a name="azure-integration-with-office-365"></a>Azure-Integration mit Office 365
+# <a name="azure-integration-with-office-365"></a>Azure-Integration in Office 365
 
 Office 365 verwendet Azure Active Directory (AD Azure) zur Verwaltung von Benutzeridentitäten im Hintergrund. Ihr Office 365-Abonnement umfasst ein kostenloses Abonnement von Azure AD, damit Sie Office 365 mit Azure AD integrieren können, wenn Sie Synchronisieren von Kennwörtern oder einmaliges Anmelden mit Ihrer lokalen Umgebung einrichten möchten. Sie können auch erweiterte Funktionen, um Ihre Konten besser zu verwalten.
   
@@ -50,14 +49,14 @@ Weitere Informationen zu Office 365 und Azure AD finden Sie unter [Grundlegendes
   
 ## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Erweitern der Funktionen von Office 365-Mandanten
 
-|**Feature**|**Beschreibung**|
+|**Funktion**|**Beschreibung**|
 |:-----|:-----|
 |Integrierte apps  <br/> |Sie können einzelne apps Zugriff auf Ihre Office 365-Daten, wie e-Mail, Kalender, Kontakte, Benutzer, Gruppen, Dateien und Ordner erteilen. Sie können auch diese apps auf globaler Administrator Ebene autorisieren und zur Verfügung stellen der im gesamten Unternehmens durch die Registrierung von apps in Azure AD. Weitere Informationen finden Sie unter [integrierte Apps und Azure Active Directory für Office 365-Administratoren](https://support.office.com/article/cb2250e3-451e-416f-bf4e-363549652c2a).<br/> Siehe auch [Azure AD-Anwendung Gallery und Single-Sign-on](https://go.microsoft.com/fwlink/p/?LinkId=698604).  <br/> |
 |PowerApps  <br/> | Power-apps sind fokussierte apps für mobile Geräte, die mit den vorhandenen Daten Datenquellen wie SharePoint-Listen verbinden können und andere Daten apps. Weitere Informationen finden Sie unter [Erstellen einer PowerApp für eine Liste in SharePoint Online](https://support.office.com/article/9338b2d2-67ac-4b81-8e67-97da27e5e9ab) und [PowerApps Seite](https://powerapps.microsoft.com/) .<br/> |
    
 Andere Ressourcen zu den Microsoft-Cloud und Office 365 finden Sie unter folgenden Ressourcen:
   
-- [Microsoft-Cloud-Identität für Enterprise-Architekten](https://go.microsoft.com/fwlink/p/?LinkId=828642)
+- [Microsoft-Cloud-Identität für Enterprise-Architekten](https://go.microsoft.com/fwlink/p/?LinkId=524586)
     
 - [Bereitstellen der Office 365-Verzeichnissynchronisierung (DirSync) in Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=517887)
     
