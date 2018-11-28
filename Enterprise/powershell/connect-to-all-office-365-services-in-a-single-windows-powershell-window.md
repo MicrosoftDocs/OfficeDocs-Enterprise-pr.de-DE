@@ -3,7 +3,7 @@ title: Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerSh
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/11/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Verbinden Sie Windows PowerShell mit allen Office 365-Diensten in einem einzelnen Windows PowerShell-Fenster.'
-ms.openlocfilehash: 44f00364d1f81633e06663770f32e0c9f9e99ed8
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 5635cf8b03490c2b2f811f22c231c271d5204552
+ms.sourcegitcommit: 65de707bd1c389eea48767a68c31032dd5198359
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575259"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706689"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster
 
@@ -33,7 +33,11 @@ Wenn Sie zum Verwalten von Office 365 PowerShell verwenden, ist es möglich, bis
   
 Dies ist nicht für die Verwaltung von Office 365, da Sie Daten zwischen diesen fünf Windows for Cross-Service-Management austauschen können nicht optimal. In diesem Thema wird beschrieben, wie eine einzelne Instanz von Windows PowerShell verwenden, Sie können aus dem Office 365, Skype für Business Online, Exchange Online, SharePoint Online und die Sicherheit verwalten &amp; Compliance Center.
 
-## <a name="before-you-begin"></a>Vorbemerkung
+>[!Note]
+>Dieser Artikel enthält derzeit nur die Befehle, um die Verbindung mit der Office 365 weltweit (+ GCC) Cloud. Zusätzliche Hinweise enthalten Links zu Artikeln mit Informationen zum Herstellen einer Verbindung mit anderen Office 365 Wolken.
+>
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie alle von Office 365 von einer einzigen Instanz von Windows PowerShell verwalten können, sollten Sie die folgenden erforderlichen Komponenten:
   
@@ -117,12 +121,20 @@ Hier sind die Schritte zum Herstellen einer Verbindung alle Dienste in einem ein
   Import-PSSession $exchangeSession
   ```
 
+>[!Note]
+>Für eine Verbindung zu Exchange Online für Office 365 Wolken als Worldwide, finden Sie unter [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+>
+
 7. Führen Sie diese Befehle für die Verbindung für die Sicherheit &amp; Compliance Center.
     
   ```
   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
   Import-PSSession $SccSession -Prefix cc
   ```
+
+>[!Note]
+>Verbindung mit der Sicherheit &amp; Compliance Center für Office 365 Wolken als Worldwide, finden Sie unter [Connect to Office 365-Sicherheit und Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+>
 
 Hier sind alle Befehle in einem Block, bei Verwendung von Azure Active Directory PowerShell Graph-Modul. Geben Sie den Namen des Domänenhosts, und klicken Sie dann führen Sie alle gleichzeitig aus.
   
