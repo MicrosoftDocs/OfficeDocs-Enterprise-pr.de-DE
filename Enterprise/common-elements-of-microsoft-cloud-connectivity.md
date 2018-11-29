@@ -3,7 +3,7 @@ title: Gemeinsame Elemente der Microsoft-Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 061d4507-7360-4029-8f4b-3d4bc6b4ade0
 description: 'Zusammenfassung: Informationen zu gemeinsamen Elementen der Netzwerkinfrastruktur und zu Vorbereitungen des Netzwerks.'
-ms.openlocfilehash: 1bd56da2b3ede08a8ef6be3834b246200970a690
-ms.sourcegitcommit: 236bf086f0596de8b612a9d8f40df4f3ce199146
+ms.openlocfilehash: e00ad8820ef37c818c270323cf2aa036bb86a804
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25897028"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872216"
 ---
 # <a name="common-elements-of-microsoft-cloud-connectivity"></a>Gemeinsame Elemente der Microsoft-Cloudkonnektivität
 
@@ -62,7 +62,7 @@ In Abbildung 1 wird gezeigt, wie ein lokales Netzwerk mithilfe der vorhandenen I
     
 - **Proxy-Server:** Anforderungen für Webinhalte im Namen von Intranetbenutzern-Dienste. Ein Reverseproxy ermöglicht unerwünschte eingehende Anfragen an.
     
-- **Externe Firewall:** Lässt ausgehenden Datenverkehr und angegebenen eingehenden Datenverkehr zu. Kann eine Adressübersetzung durchführen.
+- **Externe Firewall:** Ermöglicht die ausgehenden Datenverkehr und angegebenen eingehenden Datenverkehr. Können Adressübersetzung, Paketinspektion, SSL unterbrechen und Inspect oder Verhinderung von Datenverlust führen.
     
 - **WAN-Verbindung zum Internetdienstanbieter:** Eine anbieterbasierte Verbindung zu einem ISP, der mit dem Internet für Konnektivität und Routing auf der gleichen Ebene steht.
     

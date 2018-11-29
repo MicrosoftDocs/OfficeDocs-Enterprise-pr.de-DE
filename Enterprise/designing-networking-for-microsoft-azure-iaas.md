@@ -3,7 +3,7 @@ title: Entwerfen von Netzwerken für Microsoft Azure-IaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Zusammenfassung: Informationen Sie zum Entwerfen optimierte Netzwerke für Arbeitslasten in Microsoft Azure IaaS.'
-ms.openlocfilehash: 0e7af14768aa1a21548b25a20a465b644b749f3e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915120"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872336"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Entwerfen von Netzwerken für Microsoft Azure-IaaS
 
@@ -92,11 +92,11 @@ Es gibt zwei Arten von Subnetzen in einem VNet: ein Gatewaysubnetz und ein Hosti
 
 ![Abbildung 3: Die zwei Arten von Subnetzen in Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-Abbildung 3 zeigt ein VNet mit einem Gatewaysubnetz, das ein Azure-Gateway und eine Reihe von Hostingsubnetzen mit virtuellen Computern enthält.
+Abbildung 3 zeigt eine VNet, enthält ein Gateway-Subnetz, die ein Azure-Gateway und einen Satz von virtuellen Computer-hosting Subnetze mit virtuellen Computern verfügt.
   
 Azure benötigt das Azure-Gatewaysubnetz zum Hosten der beiden virtuellen Computer Ihres Azure-Gateways. Angeben eines Adressraums mit einer Präfixlänge von mindestens 29 Bit (Beispiel: 192.168.15.248/29). Es wird ein Präfixlänge von 28 Bit oder weniger empfohlen, insbesondere dann, wenn Sie beabsichtigen, ExpressRoute zu verwenden.
   
-Nachfolgend ist eine bewährte Methode zum Ermitteln des Adressraums eines Azure-Gatewaysubnetzes aufgeführt:
+Bewährte Methode für die Bestimmung des Adressraums des Subnetzes Azure Gateway ist:
   
 1. Legen Sie die Größe des Gatewaysubnetzes fest.
     
@@ -123,11 +123,11 @@ Azure verwendet die ersten 3 Adressen in jedem Subnetz. Aus diesem Grund ist die
   
 |**Erforderliche virtuelle Computer**|**Hostbits**|**Subnetzgröße**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3  <br/> |/29  <br/> |
-|4-11  <br/> |4  <br/> |/28  <br/> |
-|12-27  <br/> |5  <br/> |/27  <br/> |
-|28-59  <br/> |6  <br/> |/26  <br/> |
-|60-123  <br/> |7  <br/> |/25  <br/> |
+|1-3  <br/> |3   <br/> |/29  <br/> |
+|4-11  <br/> |4   <br/> |/28  <br/> |
+|12-27  <br/> |5   <br/> |/27  <br/> |
+|28-59  <br/> |6   <br/> |/26  <br/> |
+|60-123  <br/> |7   <br/> |/25  <br/> |
    
  **Tabelle 3: Anforderungen der virtuellen Computer und ihre Subnetzgrößen**
   
@@ -358,7 +358,7 @@ Beim Routing zu lokalen oder anderen VNets von einem VNet leitet Azure den Daten
   
 Abbildung 15 zeigt eine standortübergreifendes VNet und den Adressraum des lokalen Netzwerks auf dem Azure-Gateway, der den erreichbaren Adressraum im lokalen Netzwerk darstellt.  
   
-Sie können den Adressraum des lokalen Netzwerks wie folgt definieren:
+Sie können den lokalen Netzwerk-Adressraum auf diese Weise definieren:
   
 - Option 1: Die Liste der Präfixe für den gerade benötigten oder verwendeten Adressraum (Aktualisierungen können erforderlich sein, wenn Sie neue Subnetzen hinzufügen).
     
@@ -419,22 +419,17 @@ Ein Beispiel eines Intranets IT-Arbeitslast in Azure IaaS gehostet ist eine hoch
 
 ![Hoch verfügbare SharePoint Server 2016-Farm in Azure IaaS](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-Abbildung 19 zeigt die neun Server einer 2016 für SharePoint Server-Farm bereitgestellt, die in einer standortübergreifenden VNet, die die internen Systeme zum Lastenausgleich für die Front-End- und Daten Ebenen verwendet. Weitere Informationen, einschließlich schrittweise Entwurf und Bereitstellung-Anweisungen finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://technet.microsoft.com/library/mt779107%28v=office.16%29.aspx).
+Abbildung 19 zeigt die neun Server einer 2016 für SharePoint Server-Farm bereitgestellt, die in einer standortübergreifenden VNet, die die internen Systeme zum Lastenausgleich für die Front-End- und Daten Ebenen verwendet. Weitere Informationen, einschließlich schrittweise Entwurf und Bereitstellung-Anweisungen finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
   
 > [!TIP]
-> Zum Erstellen einer 2016 für SharePoint Server-Farm in einer standortübergreifenden simulierten VNet finden Sie unter [Intranet SharePoint Server 2016 in Azure Test-/-Umgebung](https://technet.microsoft.com/library/mt806351%28v=office.16%29.aspx). 
+> Zum Erstellen einer 2016 für SharePoint Server-Farm in einer standortübergreifenden simulierten VNet finden Sie unter [Intranet SharePoint Server 2016 in Azure Test-/-Umgebung](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
   
-Weitere Beispiele für IT-Arbeitslasten auf virtuellen Computern in einer standortübergreifenden Azure virtual bereitgestellten Netzwerk, finden Sie unter [Hybrid-Cloud-Szenarien für Azure IaaS](https://technet.microsoft.com/library/mt750502.aspx).
+Weitere Beispiele für IT-Arbeitslasten auf virtuellen Computern in einer standortübergreifenden Azure virtual bereitgestellten Netzwerk, finden Sie unter [Hybrid-Cloud-Szenarien für Azure IaaS](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
   
 ## <a name="see-also"></a>Siehe auch
-
-<a name="cross_prem"> </a>
 
 [Microsoft-Cloudnetzwerke für Enterprise-Architekten](microsoft-cloud-networking-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 
