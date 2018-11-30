@@ -3,7 +3,7 @@ title: Microsoft-Cloudnetzwerke für Enterprise-Architekten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Zusammenfassung: Entwickeln Sie Ihr Netzwerk für Microsoft Cloud-Dienste und -Plattformen.'
-ms.openlocfilehash: ac499dde3db65d3594704d13e40aad6e6bd45f94
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 5ee0df6442795a8ec440a0c56fa23dfd10448e0d
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915400"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872226"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft-Cloudnetzwerke für Enterprise-Architekten
 
@@ -35,7 +35,7 @@ Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten übe
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074) | [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54425)
   
-Sie sehen auch alle Modelle der [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md) und können[Microsoft Enterprise Cloud Roadmap: Resources for IT Decision Makers](https://aka.ms/cloudarchitecture) durchsuchen.
+Sie können die Modelle auch in den [Microsoft Cloud-IT-Architektur Ressourcen](microsoft-cloud-it-architecture-resources.md) sehen.
   
 Lesen Sie die folgenden Abschnitte:
   
@@ -53,7 +53,7 @@ Lesen Sie die folgenden Abschnitte:
     
 - [Entwerfen von Netzwerken für Microsoft-SaaS](designing-networking-for-microsoft-saas.md)
     
-    Für die Optimierung Ihres Netzwerks für Microsoft-SaaS-Dienste ist eine sorgfältige Analyse von Internet-Edge, Ihrer Clientgeräte und IT-Standardvorgänge erforderlich.
+    Die Optimierung Ihres Microsoft SaaS-Services erfordert die Konfiguration von internen und Edge-Geräten, um die verschiedenen Traffickategorien für Microsoft SaaS-Services zu ermitteln.
     
 - [Entwerfen von Netzwerken für Microsoft-PaaS](designing-networking-for-microsoft-azure-paas.md)
     
@@ -66,13 +66,9 @@ Lesen Sie die folgenden Abschnitte:
 Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden Sie im Microsoft Virtual Academy-Kurs über das [Optimieren von Netzwerken für Microsoft Cloud-Angebote](https://mva.microsoft.com/de-DE/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743).
   
 > [!NOTE]
-> Die folgenden Artikel geben die Version vom **Juni 2017** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten“ wieder.
+> Die folgenden Artikel geben die Version vom **Dezember 2018** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten“ wieder.
   
 ## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
