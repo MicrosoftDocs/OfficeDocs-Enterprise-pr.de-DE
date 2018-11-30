@@ -3,7 +3,7 @@ title: URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/13/2018
+ms.date: 11/28/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 description: Dieser Artikel bezieht sich auf Office 365, betrieben von 21Vianet in China. In diesem Artikel sind die URLs und IP-Adressbereiche aufgelistet, die von Office 365, betrieben von 21Vianet, verwendet werden.
 hideEdit: true
-ms.openlocfilehash: 83147b27a3237bb7fbb3c63b739a0f3fcb401b92
-ms.sourcegitcommit: d07feeba2e886febc6a57a5c33b0df02b3db5631
+ms.openlocfilehash: 0e07d8d1d4163bcb2e6cf11daceb3349444cabfe
+ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827183"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26872286"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet
 
@@ -29,13 +29,13 @@ ms.locfileid: "23827183"
 **Zusammenfassung**: Die folgenden Endpunkte (FQDNs, Ports, URLs, IPv4- und IPv6-Präfixe) gelten für Office 365, betrieben von 21Vianet, und sind für die Bereitstellung von Produktivitätsdiensten nur im Rahmen der genannten Pläne ausgelegt.
   
 > [!NOTE]
-> Microsoft entwickelt einen REST-basierten Webdienst für die IP-Adress- und FQDN-Einträge auf dieser Seite. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B. Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können heruntergeladen werden. Dieser Dienst soll zu einem späteren Zeitpunkt das XML-Dokument auf dieser Seite ersetzen. Um diesen neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](office-365-ip-web-service.md). 
+> Microsoft hat einen REST-basierten Webdienst für die IP-Adress- und FQDN-Einträge auf dieser Seite veröffentlicht. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B. Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können heruntergeladen werden. Dieser Dienst ersetzt das mit dieser Seite verknüpfte XML-Dokument, dessen Unterstützung am 2. Oktober 2018 endete. Um diesem neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](office-365-ip-web-service.md).
   
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md)  | *Office 365, betrieben von 21Vianet* | [Office 365 Deutschland](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 01.08.2018 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](http://go.microsoft.com/fwlink/?LinkId=536386)||
+|**Letzte Aktualisierung:** 28.11.2018 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen für das Verwalten der Netzwerkkonnektivität unter Nutzung dieser Daten nachzuvollziehen. Die Endpunktdaten werden am Anfang jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor ihrem Inkrafttreten veröffentlicht werden. Dies gibt Kunden, die ihre Updates noch nicht automatisiert haben, die Möglichkeit, ihre Prozesse abzuschließen, bevor neue Verbindungsinformationen erforderlich sind. Endpunkte können darüber hinaus bei Bedarf auch innerhalb eines Monats aktualisiert werden, wenn dies erforderlich ist, um Supporteskalationen, Sicherheitsvorfällen oder sonstigen unmittelbaren Betriebserfordernissen Rechnung zu tragen. Die unten auf dieser Seite dargestellten Daten wurden alle von den REST-basierten Webdiensten generiert. Wenn Sie ein Skript oder ein Netzwerkgerät für den Zugriff auf diese Daten verwenden, sollten Sie direkt zum [Webdienst](office-365-ip-web-service.md) navigieren.
 
