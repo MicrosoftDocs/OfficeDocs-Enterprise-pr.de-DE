@@ -3,7 +3,7 @@ title: Hybrid Cloud-Szenarien für Azure IaaS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Zusammenfassung: Grundlegendes zu den Hybrid-Architektur und Szenarien für Microsoft Infrastruktur als Dienst (IaaS)-Cloud-angeboten in Azure basiert.'
-ms.openlocfilehash: 4aecca0c4ac189af7048c712dbdf277aa0ef0dec
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bb6611f51cc346273438e879d957597fe3299c58
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915030"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123242"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Hybrid Cloud-Szenarien für Azure-IaaS
 
@@ -67,7 +67,7 @@ DirSync-Server sind Windows-basierte Server, auf denen Azure AD Connect ausgef
   
 Der DirSync-Server fragt regelmäßig Änderungen von Windows Server AD ab und synchronisiert diese Änderungen mit dem Office 365-Abonnement
   
-Weitere Informationen finden Sie unter [Einrichten von verzeichnissynchronisierung für Office 365](set-up-directory-synchronization.md).
+Weitere Informationen finden Sie unter [Bereitstellen von Office 365 Directory-Synchronisierung in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
 ## <a name="line-of-business-lob-application"></a>Branchenanwendung
 
@@ -161,7 +161,7 @@ Ein weiteres Beispiel für eine mehrstufige, hochverfügbar LOB-Anwendung in Azu
   
 **Abbildung 5: Eine hohe Verfügbarkeit Identitätsverbund-Infrastruktur für Office 365 in Azure IaaS**
 
-![Die Endkonfiguration für die hochverfügbare Office 365-Verbundauthentifizierungsinfrastruktur in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
+![Ein hoher Verfügbarkeit von Office 365 federated Authentifizierungsinfrastruktur in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
 In Abbildung 5 hostet einer lokalen Netzwerk eine Identitätsinfrastruktur und Benutzer. Es ist mit einem Azure IaaS-Gateway mit einer Standort-zu-Standort-VPN- oder ExpressRoute Verbindung verbunden. Der Azure-VNet enthält Web Proxy-Server, Active Directory-Verbunddienste (AD FS) Server und Windows Server Active Directory (AD)-Domänencontroller.
   
@@ -181,19 +181,11 @@ Gehen Sie für eine erfolgreiche Implementierung wie folgt vor:
     
     Finden Sie unter [Deploy hohe Verfügbarkeit Verbundauthentifizierung für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) schrittweise durchlaufen die End-to-End-Konfiguration die hohe Verfügbarkeit AD FS-Infrastruktur in fünf Phasen.
     
-Weitere Informationsquellen:
-  
-- [Architektur von Cloud-Hybridumgebungen](https://gallery.technet.microsoft.com/Architecting-Hybrid-Cloud-a7dc9f24/file/147475/1/Architecting%20Hybrid%20Cloud%20Environments%20V1.docx)
-    
-- [Entwerfen und Erstellen einer LOB-Anwendung in Azure](https://techcommunity.microsoft.com/t5/CAAB-Cloud-Adoption-Advisory/EXTRA-November-2016-Webinar/m-p/30058#M41)
     
 ## <a name="see-also"></a>Siehe auch
 
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
-
 
 

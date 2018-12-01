@@ -3,7 +3,7 @@ title: Architektur von Microsoft Hybrid Cloud-Szenarien
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Zusammenfassung: Informationen über die Architektur von Microsoft-Hybridcloudangeboten.'
-ms.openlocfilehash: 8a0c5c37c2e0dfd0c6641128b1cee89c89e16441
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914920"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123392"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architektur von Microsoft Hybrid Cloud-Szenarien
 
@@ -33,7 +33,7 @@ Verwenden Sie eine architekturbezogene Herangehensweise, wenn Sie Hybridcloudsze
   
 Abbildung 1 zeigt den Microsoft-Hybridcloudstack und die Schicht, die lokal, Netzwerk, Identität, Apps, Szenarien und die Kategorie des Clouddiensts (Microsoft SaaS, Azure PaaS und Azure PaaS) enthält.
   
-Die Schicht „Apps und Szenarien" enthält die spezifischen Hybridcloudszenarien, die in den zusätzlichen Artikeln dieses Modells detailliert erläutert werden. Die Schichten „Identität", „Netzwerk" und „Lokal" können sich über die Kategorien des Clouddiensts (SaaS, PaaS oder PaaS) erstrecken.
+Ebene der Apps und Szenarien hat die bestimmte Hybrid-Cloud-Szenarien, die detailliert sind in den Artikeln dieses Modells. Die Identität, Netzwerk und lokalen Ebenen können gemeinsam die Kategorien von Cloud-Dienst (SaaS, PaaS oder PaaS) sein.
   
 - Lokal
     
@@ -68,8 +68,4 @@ Viele Unternehmen, so auch Microsoft, verwenden eine dreiphasige Herangehensweis
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 

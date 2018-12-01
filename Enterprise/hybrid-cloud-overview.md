@@ -3,7 +3,7 @@ title: Hybrid Cloud-Übersicht
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Zusammenfassung: Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.'
-ms.openlocfilehash: b77df519dc89a5ab97d965c16dc9f54955614903
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915820"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123312"
 ---
 # <a name="hybrid-cloud-overview"></a>Hybrid Cloud-Übersicht
 
@@ -55,7 +55,7 @@ Szenarien für Hybrid Cloud mit Microsoft-Clouddiensten unterscheiden sich je na
   
 - SaaS
     
-    Microsoft SaaS-Dienste umfassen Office 365, Microsoft Intune und Microsoft Dynamics 365. In Hybridcloudszenarien mit Microsoft SaaS werden diese Dienste mit lokalen Diensten und Anwendungen kombiniert. Beispielsweise kann Exchange Online, in Office 365 ausgeführt, in lokale Skype for Business 2015-Bereitstellungen integriert werden.
+    SaaS Microsoft Services umfassen Office 365, Microsoft Intune und Microsoft Dynamics 365. Cloud hybridszenarien mit Microsoft SaaS kombinieren Sie diese Dienste mit lokalen Diensten oder Anwendungen. Beispielsweise können Exchange Online in Office 365 mit Skype für Business 2019 integriert werden, die lokal bereitgestellt ist.
     
 - Azure PaaS
     
@@ -90,8 +90,4 @@ Sie müssen die folgenden Elemente berücksichtigen, wenn Sie Hybridcloudszenari
 [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-hybrid-cloud-for-enterprise-architects.md)
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
- 
-
 
