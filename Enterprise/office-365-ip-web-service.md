@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Damit Sie Office 365-Netzwerkdatenverkehr besser erkennen und unterscheiden können, veröffentlicht ein neuer Webdienst Office 365-Endpunkte, sodass Sie Änderungen einfacher bewerten, konfigurieren und mit diesen auf dem Laufenden bleiben können. Dieser neue Webdienst ersetzt die herunterladbaren XML-Dateien, die derzeit verfügbar sind.
-ms.openlocfilehash: 1765a35e961d6aa3da42c36e5a04333e57ae010b
-ms.sourcegitcommit: 7f1e19fb2d7a448a2dec73d8b2b4b82f851fb5f7
+ms.openlocfilehash: 8a9b3981f833705b0d77e87a6f0588730b9fb170
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25697981"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985770"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>**Office 365-IP-Adress- und -URL-Webdienst**
 
@@ -68,7 +68,7 @@ Es gibt einen Parameter für die Versionswebmethode:
 - **Format = JSON** | **CSV** | **RSS** – zusätzlich zu den JSON- und CSV-Formaten unterstützt die Versionswebmethode auch RSS. Sie können diese Option zusammen mit dem Parameter „allVersions=true“ verwenden, um einen RSS-Feed anzufordern, der mit Outlook oder anderen RSS-Readern verwendet werden kann.
 - **Instanz** – Weiterleitungsparameter. Dieser optionale Parameter gibt die Instanz an, für die die Version zurückgegeben werden soll. Wenn nicht angegeben, werden alle Instanzen zurückgegeben. Gültige Instanzen sind: weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
 
-Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Datensatzarray sein. Die Elemente der einzelnen Datensätze sind:
+Die Versionswebmethode ist nicht beschränkt und gibt nie die HTTP-Antwortcodes 429 zurück. Das Ergebnis der Versionswebmethode umfasst keinen Cache-Control-Header, der empfiehlt, die Daten eine Stunde lang zwischenzuspeichern. Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Datensatzarray sein. Die Elemente der einzelnen Datensätze sind:
 
 - instance – der kurze Name der Office 365-Serviceinstanz.
 - latest – die neueste Version für Endpunkte der angegebenen Instanz.
@@ -168,12 +168,14 @@ Dieser URI zeigt einen RSS-Feed der veröffentlichten Versionen, die Links zu de
 
 ## <a name="endpoints-web-method"></a>**Endpunktwebmethode**
 
-Die Endpunktwebmethode gibt alle Datensätze für IP-Adressbereiche und URLs wieder, die den Office 365-Dienst bilden. Sie sollten die neuesten Daten der Endpunktwebmethode für die Konfiguration von Netzwerkgeräten verwenden. Die Daten können jedoch bis zu 30 Tage nach der Veröffentlichung aufgrund der im Vorfeld für Ergänzungen bereitgestellten Ankündigung zwischengespeichert werden. Parameter für die Endpunktwebmethode sind:
+Die Endpunktwebmethode gibt alle Datensätze für IP-Adressbereiche und URLs wieder, die den Office 365-Dienst bilden. Sie sollten die neuesten Daten der Endpunktwebmethode für die Konfiguration von Netzwerkgeräten verwenden. Die Daten können jedoch bis zu 30 Tage nach der Veröffentlichung aufgrund der im Vorfeld für Ergänzungen bereitgestellten Ankündigung zwischengespeichert werden. Es wird empfohlen, dass Sie die Endpunktwebmethode nur erneut aufrufen, wenn die Versionswebmethode angibt, dass eine neue Version der Daten verfügbar ist. Parameter für die Endpunktwebmethode sind:
 
 - **ServiceAreas** – Abfragezeichenfolgeparameter. Eine kommagetrennte Liste der Dienstbereiche. Gültige Elemente sind Common, Exchange, SharePoint, Skype. Da Common-Dienstbereichselemente eine Voraussetzung für alle anderen Dienstbereiche sind, sind sie immer in den Webdiensten enthalten. Wenn Sie diesen Parameter nicht einfügen, werden alle Dienstbereiche zurückgegeben.
 - **TenantName** – Abfragezeichenfolgeparameter. Ihr Office 365-Mandantenname. Der Webdienst übernimmt Ihren angegebenen Namen und fügt ihn in Teile von URLs ein, die den Mandantennamen enthalten. Wenn Sie keinen Mandantennamen bereitstellen, enthalten diese Teile der URLs das Platzhalterzeichen (\*).
 - **NoIPv6** – Abfragezeichenfolgeparameter. Legen Sie diese Option auf „true“ fest, um IPv6-Adressen von der Ausgabe auszuschließen, z. B. wenn Sie iPv6 in Ihrem Netzwerk nicht verwenden.
 - **Instanz** – Weiterleitungsparameter. Dieser erforderliche Parameter gibt die Instanz an, für die die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
+
+Wenn Sie die Endpunktwebmethode unangemessen oft von derselben Client-IP-Adresse aufrufen, wird möglicherweise der HTTP-Antwortcode 429 („Zu viele Anfragen“) angezeigt. Bei den meisten Benutzern tritt dies nie ein. Wenn dieser Antwortcode bei Ihnen angezeigt wird, warten Sie eine Stunde, bis Sie die Methode erneut aufrufen. Planen Sie, die Endpunktwebmethode nur dann aufzurufen, wenn die Versionswebmethode angibt, dass eine neue Version verfügbar ist. 
 
 Das Ergebnis der Endpunktwebmethode ist ein Datensatz-Array, bei dem jeder Datensatz einen Endpunktsatz darstellt. Die Elemente für jeden Datensatz lauten:
 
@@ -239,11 +241,22 @@ Die Parameter für die Änderungswebmethode sind:
 
 - **Version** – erforderlicher URL-Weiterleitungsparameter. Die Version, die Sie derzeit implementiert haben, und Sie möchten die Änderungen seit dieser Version anzeigen. Das Format ist _JJJJMMDDNN_.
 
+Die Änderungswebmethode ist auf die gleiche Weise beschränkt wie die Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, sollten Sie eine Stunde warten, bevor Sie die Methode erneut aufrufen. 
+
 Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Datensatz eine Änderung in einer speziellen Version des Endpunkts darstellt. Die Elemente für jeden Datensatz lauten:
 
 - id – die unveränderliche ID des Änderungsdatensatzes.
 - endpointSetId – die ID des Endpunktsatz-Datensatzes, der geändert wird. Erforderlich.
-- disposition – entweder Änderung, Hinzufügen oder Entfernen. Beschreibt, welche Auswirkungen die Änderung auf den Endpunktsatz-Datensatz hatte. Erforderlich.
+- disposition – Entweder Änderung, Hinzufügen oder Entfernen. Beschreibt, welche Auswirkungen die Änderung auf den Endpunktsatz-Datensatz hatte. Erforderlich.
+- Impact – Nicht alle Änderungen sind für jede Umgebung gleich wichtig. Hier werden die erwarteten Auswirkungen auf eine Netzwerkumkreisumgebung in einem Unternehmen als Ergebnis dieser Änderung beschrieben. Dieses Attribut ist nur in Änderungsdatensätzen der Version 2018112800 und höher enthalten. Optionen für die Auswirkungen sind:
+  - AddedIp – Zu Office 365 wurde eine IP-Adresse hinzugefügt, die in diesem Dienst in Kürze live gehen wird. Dies stellt eine Änderung dar, die Sie in einer Firewall oder in einem anderen Netzwerkumkreisgerät der Ebene 3 vornehmen müssen. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
+  - AddedUrl – Zu Office 365 wurde eine URL hinzugefügt, die in diesem Dienst in Kürze live gehen wird. Dies stellt eine Änderung dar, die Sie auf einem Proxyserver oder in einem Netzwerkumkreisgerät vornehmen müssen, das URLs analysiert. Wenn Sie diese URL nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
+  - AddedIpAndUrl – Sowohl eine IP-Adresse als auch eine URL wurden hinzugefügt. Dies stellt eine Änderung, die Sie auf einem Firewallgerät der Ebene 3, auf einem Proxyserver oder auf einem Gerät vornehmen müssen, das URLs analysiert. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
+  - RemovedIpOrUrl – Mindestens eine IP-Adresse oder URL wurde aus Office 365 entfernt. Sie sollten die Netzwerkendpunkte von Ihren Umkreisgeräten entfernen, hierfür gibt es jedoch keinen Stichtag.
+  - ChangedIsExpressRoute – Das Attribut „ExpressRoute Support“ wurde geändert. Wenn Sie ExpressRoute verwenden, müssen Sie je nach Konfiguration möglicherweise entsprechende Maßnahmen ergreifen.
+  - MovedIpOrUrl – Eine IP-Adresse oder URL wurde zwischen diesem Endpunktsatz und einem anderen verschoben. Im Allgemeinen ist keine Aktion erforderlich.
+  - RemovedDuplicateIpOrUrl – Es wurde eine doppelte IP-Adresse oder URL entfernt, diese ist aber immer noch auf Office 365 veröffentlicht. Im Allgemeinen ist keine Aktion erforderlich.
+  - OtherNonPriorityChanges – Es wurde etwas weniger wichtiges als all die anderen Optionen geändert, z. B. ein Notizfeld.
 - version – die Version des veröffentlichten Endpunktsatzes, in dem die Änderung eingeführt wurde. Versionsnummern werden im Format _JJJJMMTTNN_ angegeben, wobei NN eine natürliche Zahl ist, die erhöht wird, wenn mehrere Versionen an einem einzigen Tag veröffentlicht werden müssen.
 - previous – eine Unterstruktur, die vorherige Werte geänderter Elemente auf dem Endpunktsatz angibt. Diese ist nicht für neu hinzugefügte Endpunktsätze enthalten. Enthält tcpPorts, udpPorts, ExpressRoute, Kategorie, erforderlich, Notizen.
 - current – eine Unterstruktur, die aktualisierte Werte geänderter Elemente auf dem Endpunktsatz angibt. Enthält tcpPorts, udpPorts, ExpressRoute, Kategorie, erforderlich, Notizen.
