@@ -17,12 +17,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Informationen zu Microsoft-Clouddiensten und -Plattformen. Lesen Sie unsere Enterprise-Cloud-Roadmap, erkunden Sie unsere Cloud-Architekturreihe usw.'
-ms.openlocfilehash: c7fb024492ad77155f8d375d9f4f90f14f9682d2
-ms.sourcegitcommit: 9da69a749ba557a4c4ae80070ce57e606148521f
+ms.openlocfilehash: 8a95cb5904907984b393c5e4c67840bd7c0b0311
+ms.sourcegitcommit: 7db45f3c81f38908ac2d6f64ceb79a4f334ec3cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26525846"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "26985760"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -137,7 +137,7 @@ Wie der Weihnachtsmann und seine Elfen die Cloud-Angebote von Microsoft nutzen, 
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht des Weihnachtsmann-Cloud-Posters](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)          ](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Um zu bestimmen, wer brav und wer böse war und welche Geschenke am 24. Dezember auszuliefern sind, verwenden der Weihnachtsmann und seine elfische IT-Abteilung Office 365, Azure, Dynamics 365 und Intune.  <br/>|
+|[![Miniaturansicht des Weihnachtsmann-Cloud-Posters](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [Online anzeigen](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Um zu bestimmen, wer brav oder wer böse war und welche Geschenke am 24. Dezember auszuliefern sind, verwendet der Weihnachtsmann und seine elfische IT-Abteilung Office 365, Azure, Dynamics 365 und Intune.   <br/>|
    
 <a name="BKMK_o365solutions"> </a>
 ## <a name="office-365-enterprise-solution-series"></a>Reihe: Office 365 Enterprise-Lösungen
