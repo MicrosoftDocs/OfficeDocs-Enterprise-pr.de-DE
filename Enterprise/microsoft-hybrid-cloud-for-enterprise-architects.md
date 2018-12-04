@@ -3,7 +3,7 @@ title: Microsoft Hybrid Cloud für Enterprise-Architekten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 11/30/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 54deae50-9442-4b6a-bd86-e5edb0ec6d74
 description: 'Zusammenfassung: Was IT-Architekten über Hybridszenarien wissen müssen, in denen Microsoft-Clouddienste und -plattformen verwendet werden.'
-ms.openlocfilehash: 06400dd4f49c51bc3f4712701d9fe6a387de5cff
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: 40a46c6d289011a0e0c6065573a5b67a3ac66756
+ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872246"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "27123372"
 ---
 # <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud für Enterprise-Architekten
 
@@ -33,8 +33,7 @@ Dieser Artikel enthält einige Artikel, die beschreiben, was IT-Architekten übe
 [![Miniaturbild für das Microsoft-Cloud-Hybridmodell](media/Hybrid-Poster/Hybrid-Cloud-Thumbnail.png)](https://www.microsoft.com/download/details.aspx?id=54424
 )
   
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083) | 
-[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54424)
+[PDF](https://go.microsoft.com/fwlink/p/?linkid=842082) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)
   
 Sie können die Modelle auch in den [Microsoft Cloud-IT-Architektur Ressourcen](microsoft-cloud-it-architecture-resources.md) sehen.
   
@@ -61,13 +60,9 @@ Lesen Sie die folgenden Abschnitte:
     Architektur des Azure IaaS-Hybridszenarios und Beschreibung einer in Azure IaaS gehosteten Branchenanwendung.
     
 > [!NOTE]
-> Diese Artikel beziehen sich auf die **Juni 2017-Version** des Posters „Microsoft Hybrid Cloud für Enterprise-Architekten".
+> Die folgenden Artikel geben die Version vom **Dezember 2018** des Posters „Microsoft-Hybridcloud für Enterprise-Architekten“ wieder.
   
 ## <a name="see-also"></a>Siehe auch
 
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
-
-[Enterprise-Cloud-Roadmap von Microsoft: Ressourcen für IT-Entscheidungsträger](https://sway.com/FJ2xsyWtkJc2taRD)
-
-
 
