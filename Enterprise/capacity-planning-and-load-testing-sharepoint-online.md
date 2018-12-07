@@ -13,16 +13,16 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: Dieser Artikel beschreibt, wie Sie bereitstellen können mit SharePoint Online ohne herkömmlichen Auslastungstests, da es nicht zulässig ist.
-ms.openlocfilehash: 490d05598c42cd5d94f61dd21ee5a11701d4b4a7
-ms.sourcegitcommit: 033156d46ac0fb5f05d2b1a594d5ef368b93b893
+ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
+ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "27134670"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27181026"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Capacity planning und Auslastungstests SharePoint Online
 
-Dieser Artikel beschreibt, wie Sie bereitstellen können mit SharePoint Online ohne herkömmlichen Auslastungstests, da es abgeraten.
+Dieser Artikel beschreibt, wie Sie bereitstellen, können mit SharePoint Online ohne herkömmlichen Auslastungstests, da Auslastungstests abgeraten wird.
   
 Obwohl active Auslastungstests SharePoint Online wird nicht empfohlen, es einige andere Möglichkeiten, den, die Sie Folgendes sicherstellen können, erzeugt eine Website nicht benutzerfreundlich beim Starten der Website. 
   
