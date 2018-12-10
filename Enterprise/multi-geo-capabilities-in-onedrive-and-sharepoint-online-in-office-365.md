@@ -3,7 +3,6 @@ title: Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/16/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive und SharePoint Online.
-ms.openlocfilehash: 725a7a88e3459f73ff00554b14afc740db1244b3
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849821"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200728"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
 
@@ -64,27 +63,25 @@ Die Konfiguration von Multi-Geo ist ganz einfach:
 OneDrive Multi-Geo wird derzeit in diesen Regionen und Ländern angeboten:
   
 - Asien-Pazifik
-    
+
 - Australien
-    
+
 - Kanada
-    
+
 - Europäische Union (EMEA)
 
 - Frankreich
-    
-- Japan
-    
-- Vereinigtes Königreich
-    
-- Vereinigte Staaten (Nordamerika)
-    
-- Korea
-      
-Zukünftige geografische Speicherorte:
-  
+
 - Indien
-    
+
+- Japan
+
+- Vereinigtes Königreich
+
+- Vereinigte Staaten (Nordamerika)
+
+- Korea
+
 ## <a name="getting-started"></a>Erste Schritte
 
 Der erste Schritt bei Multi-Geo in OneDrive for Business besteht in der [Planung der Multi-Geo-Umgebung in OneDrive for Business](plan-for-multi-geo.md). Informieren Sie sich als Nächstes [über die Verwaltung einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) und [die Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md). Wenn Sie zum Einrichten von Multi-Geo in OneDrive for Business sind, [konfigurieren Sie Ihren Mandanten für Multi-Geo](multi-geo-tenant-configuration.md), [verschieben Sie dann alle vorhandenen OneDrive-Websites an die neuen geografischen Standorte](move-onedrive-between-geo-locations.md), und [richten Sie die Suche ein](configure-search-for-multi-geo.md).
