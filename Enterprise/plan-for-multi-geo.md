@@ -3,7 +3,6 @@ title: Planen von Multi-Geo in OneDrive for Business
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informationen zu Multi-Geo in OneDrive for Business, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: d40f84ea3636b4eca2711a48bd9d70c73a242cfd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: de856bdeb0c0f1ca8e718439ddb98d738843bc5a
+ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849861"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27200718"
 ---
 # <a name="plan-for-onedrive-for-business-multi-geo"></a>Planen von Multi-Geo in OneDrive for Business
 
@@ -80,6 +79,10 @@ Sie können einen der folgenden Standorte als Satellitenstandorte festlegen, an 
 <td align="left">FRA</td>
 </tr>
 <tr class="odd">
+<td align="left">Indien</td>
+<td align="left">IND</td>
+</tr>
+<tr class="odd">
 <td align="left">Japan</td>
 <td align="left">JPN</td>
 </tr>
@@ -97,10 +100,6 @@ Sie können einen der folgenden Standorte als Satellitenstandorte festlegen, an 
 </tr>
 </tbody>
 </table>
-
-Zukünftige geografische Speicherorte:
-  
-- Indien
 
 Beim Konfigurieren von Multi-Geo sollten Sie auch eine Konsolidierung der lokalen Infrastruktur während der Migration zu Office 365 berücksichtigen. Wenn Sie zum Beispiel über lokale Farmen in Singapur und Malaysia verfügen, können Sie sie an dem Satellitenstandort APC zusammenführen, wenn dies entsprechend den Datenaufbewahrungsanforderungen möglich ist.
 
