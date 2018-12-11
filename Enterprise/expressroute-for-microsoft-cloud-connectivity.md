@@ -3,7 +3,7 @@ title: ExpressRoute für Microsoft-Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 12/05/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können.'
-ms.openlocfilehash: 3ac8d52f50ff6df612de68ea51136fc16d5c9169
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872326"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213972"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute für Microsoft-Cloudkonnektivität
 
@@ -222,7 +222,7 @@ Vorteile mehrerer ExpressRoute Premium-Verbindungen:
     
 - Höhere Verfügbarkeit in der globalen Microsoft Cloud, wenn eine lokale ExpressRoute-Verbindung nicht mehr verfügbar ist.
     
-ExpressRoute Premium ist für Office 365-basierte ExpressRoute-Verbindungen erforderlich. Für Unternehmen mit mindestens 500 lizenzierten Benutzern fallen jedoch keine zusätzlichen Kosten an.
+ExpressRoute Premium ist für Office 365-basierten ExpressRoute Verbindungen erforderlich.
   
 **Abbildung 9: Das weltweite Microsoft Cloud-Netzwerk**
 

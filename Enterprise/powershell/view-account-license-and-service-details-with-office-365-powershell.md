@@ -3,7 +3,7 @@ title: Anzeigen von Lizenz- und Dienstdetails für Konten mit Office 365 PowerSh
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/27/2018
+ms.date: 12/10/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Erläutert, wie Office 365 PowerShell verwenden, um die Office 365-Dienste zu ermitteln, die Benutzern zugewiesen wurden.
-ms.openlocfilehash: 78608c3a52151c115eaf80b5315bb71b61e62356
-ms.sourcegitcommit: ad5bdc53ca67ee6a663c27648511c1ad768a76d4
+ms.openlocfilehash: 5d575ea9e0b45ddc453b3b1c73bd53bf73adab2e
+ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23223107"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "27213952"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Anzeigen von Lizenz- und Dienstdetails für Konten mit Office 365 PowerShell
 
@@ -63,30 +63,6 @@ Dieses Beispiel zeigt die Dienste, auf die der Benutzer „BelindaN@litwareinc.c
   
 ```
 (Get-MsolUser -UserPrincipalName belindan@litwareinc.com).Licenses[0].ServiceStatus
-```
-
-Um alle lizenzierten Benutzer zu suchen, die für bestimmte Dienste aktiviert oder deaktiviert wurden, verwenden Sie die folgende Syntax:
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled" -and $_.Licenses[<LicenseIndexNumber> ].ServiceStatus[<ServiceIndexNumber> ].ProvisioningStatus <-eq | -ne> "Disabled"...}
-```
-
-In diesen Beispielen werden folgende Informationen verwendet:
-  
-- Die Lizenz, die den Zugriff auf die Office 365-Dienste bereitstellt, die wir interessiert sind ist die erste, das alle Benutzer zugeordnet ist (die Indexnummer ist 0).
-    
-- Office 365-Dienste, denen wir interessiert sind Skype für Business Online und Exchange Online. Für die Lizenzen, die den Lizenzierungsplan zugeordnet sind, Skype für Business Online der 6. Dienst aufgeführt ist (die Indexnummer ist 5), und Exchange Online ist der 9. Dienst aufgeführten (die Indexnummer ist 8).
-    
-Dieses Beispiel gibt alle lizenzierten Benutzer, die für Skype für Business Online und Exchange Online aktiviert sind.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -ne "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -ne "Disabled"}
-```
-
-Dieses Beispiel gibt alle lizenzierten Benutzer, die für Skype für Business Online oder Exchange Online nicht aktiviert ist.
-  
-```
-Get-MsolUser -All | where {$_.isLicensed -eq $true -and $_.Licenses[0].ServiceStatus[5].ProvisioningStatus -eq "Disabled" -and $_.Licenses[0].ServiceStatus[8].ProvisioningStatus -eq "Disabled"}
 ```
 
 Um alle Dienste für einen Benutzer anzuzeigen, die *mehrere Lizenzen*zugewiesen wurde, verwenden Sie die folgende Syntax:
