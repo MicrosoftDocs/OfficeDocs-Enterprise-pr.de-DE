@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/19/2018
+ms.locfileid: "19193605"
 ---
 # <a name="cmdlet-references-for-office-365-services"></a>Cmdlet-Referenzen für Office 365-Dienste
 

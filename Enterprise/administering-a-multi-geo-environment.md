@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 09f8816fc0ba748ced5bd104710677829d893198
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+ms.openlocfilehash: 823b3a4c1d063a4d398b7f734c2171e856ee1244
+ms.sourcegitcommit: 4a1d6c43da44b559136f2bf422a531bea5f48dbb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200699"
+ms.lasthandoff: 12/09/2018
+ms.locfileid: "27210123"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
@@ -102,7 +102,7 @@ Wenn die eDiscovery-Manager- oder Administratorrolle für einen bestimmten Satel
 </tr>
 <tr class="even">
 <td align="left"><strong>IND</strong></td>
-<td align="left">Rechenzentren in Südost- oder Ostasien</td>
+<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>KOR</strong></td>

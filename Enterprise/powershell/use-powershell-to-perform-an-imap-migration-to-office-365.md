@@ -17,6 +17,7 @@ ms.sourcegitcommit: 8ff1cd7733dba438697b68f90189d4da72bbbefd
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "18812206"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer IMAP-Migration zu Office 365
 
