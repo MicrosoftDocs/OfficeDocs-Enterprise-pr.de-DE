@@ -3,25 +3,6 @@
 
 
 
-## <a name="week-of-november-05-2018"></a>Woche vom 05. November 2018
-
-
-| Veröffentlicht am |Titel des Themas | Änderung |
-|------|------------|--------|
-| 05.11.2018 | [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](/Office365/Enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network) | Geändert |
-| 05.11.2018 | [Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | Geändert |
-| 05.11.2018 | [Einrichten Ihres Netzwerks für Office 365](/Office365/Enterprise/set-up-network-for-office-365) | hinzugefügt |
-| 11/6/2018 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
-| 11/6/2018 | [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](/Office365/Enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure) | Geändert |
-| 11/6/2018 | [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](/Office365/Enterprise/performance-tuning-using-baselines-and-history) | Geändert |
-| 11/7/2018 | [Office 365-Endpunkte](/Office365/Enterprise/office-365-endpoints) | hinzugefügt |
-| 11/7/2018 | [Einrichten Ihres Netzwerks für Office 365](/Office365/Enterprise/set-up-network-for-office-365) | Geändert |
-| 11/8/2018 | [Netzwerkanforderungen in Office für Mac](/Office365/Enterprise/network-requests-in-office-2016-for-mac) | Geändert |
-| 11/8/2018 | [Zusammenarbeit zwischen Mandanten in Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | Geändert |
-| 11/8/2018 | [Einführung in die Leistungsoptimierung für SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | Geändert |
-| 11/9/2018 | [Verwenden Sie das Seite-Diagnosetool für SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | Geändert |
-
-
 ## <a name="week-of-november-12-2018"></a>Woche vom 12. November 2018
 
 
@@ -104,3 +85,12 @@
 | 7/12/2018 | [Multi-Geo-Funktionen in Exchange Online](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | Geändert |
 | 7/12/2018 | [Konfiguration des Mandanten für Multi-Geo in OneDrive for Business](/Office365/Enterprise/multi-geo-tenant-configuration) | Geändert |
 | 7/12/2018 | [Planen von Multi-Geo in OneDrive for Business](/Office365/Enterprise/plan-for-multi-geo) | Geändert |
+
+
+## <a name="week-of-december-10-2018"></a>Woche vom 10 Dezember 2018
+
+
+| Veröffentlicht am |Titel des Themas | Änderung |
+|------|------------|--------|
+| 12/10/2018 | [ExpressRoute für Microsoft-Cloudkonnektivität](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Geändert |
+| 12/10/2018 | [Anzeigen von Lizenz- und Dienstdetails für Konten mit Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | Geändert |
