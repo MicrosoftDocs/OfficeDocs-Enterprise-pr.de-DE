@@ -21,12 +21,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Vorbereiten der Bereitstellung von Benutzern zu Office 365 mithilfe von verzeichnissynchronisierung und der langfristigen Vorteile dieser Methode beschrieben.
-ms.openlocfilehash: 78636fd3ec7aaaac8fa06ba8a0f2c37d76d1b045
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 8e84f4602b79ce321cd9a71e6c35331baf40f7f0
+ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540986"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27371119"
 ---
 # <a name="prepare-to-provision-users-through-directory-synchronization-to-office-365"></a>Vorbereiten der Bereitstellung von Benutzern über die Verzeichnissynchronisierung in Office 365
 
@@ -44,7 +44,7 @@ Um zu bestimmen, welches Szenario der für Ihre Organisation am besten geeignet 
 
 Bevor Sie die Synchronisierung Ihres Verzeichnisses beginnen, müssen Sie Ihr Verzeichnis bereinigen.
   
-Überprüfen Sie die [Attribute mit Azure Active Directory von Azure Active Directory verbinden synchronisiert](https://go.microsoft.com/fwlink/p/?LinkId=746480)auch.
+Überprüfen Sie die [Attribute mit Azure Active Directory von Azure Active Directory verbinden synchronisiert](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)auch.
   
 > [!IMPORTANT]
 > Wenn Sie vor der Synchronisierung verzeichnisbereinigung nicht ausführen, kann sich erheblich auf den Bereitstellungsprozess negativ sein. Es kann Tage dauern oder sogar Wochen, den Lebenszyklus von verzeichnissynchronisierung, Identifizieren von Fehlern und erneute Synchronisierung durchlaufen. 
@@ -95,7 +95,7 @@ Die Attribute, die Sie vorbereiten müssen sind hier aufgeführt:
   - Wenn das Attribut im Benutzerobjekt vorhanden ist, wird es mit Office 365 synchronisiert. Es wird von Office 365 aber benötigt oder verwendet.
   - Maximale Anzahl der Zeichen: 64
     
-- **e-Mail-Nachrichten**
+- **mail**
     
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
     
