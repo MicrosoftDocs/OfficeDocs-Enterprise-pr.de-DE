@@ -1,7 +1,7 @@
 ---
 title: So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 8/1/2017
 ms.audience: Admin
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 description: Hier erfahren Sie, wie modernen Office 365-Authentifizierung für Office 2013 und Clientanwendungen 2016 unterschiedlich funktioniert.
-ms.openlocfilehash: 78df8c12ab008922592516cf1d3cda10c594e552
-ms.sourcegitcommit: 7a12a46019970fcd45a6461f4f4cbcd1f76c9b4e
+ms.openlocfilehash: 2a5e218ca751f341e2a3a0ffd164f000ee503279
+ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25436083"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "27378501"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps
 
@@ -54,8 +54,7 @@ Klicken Sie auf die unten aufgeführten Links, finden Sie unter Funktionsweise v
     
 - [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
-- 
-  [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
+- [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -97,7 +96,7 @@ In der folgenden Tabelle werden das Verhalten der Authentifizierung für Office 
    
 ## <a name="see-also"></a>Siehe auch
 
-[Aktivieren Sie auf Windows-Geräten modernen Authentifizierung für Office 2013](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 
 [Plan für die mehrstufige Authentifizierung für Office 365-Bereitstellungen (für Office 365-Administratoren)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
