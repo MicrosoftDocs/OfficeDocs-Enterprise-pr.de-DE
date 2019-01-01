@@ -3,17 +3,7 @@
 
 
 
-## <a name="week-of-november-19-2018"></a>Woche vom 19 November 2018
-
-
-| Veröffentlicht am |Titel des Themas | Änderung |
-|------|------------|--------|
-| 11/19/2018 | [Ende der Unterstützung für PerformancePoint Server 2007 – Roadmap](/Office365/Enterprise/pps-2007-end-of-support) | Geändert |
-| 11/19/2018 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
-| 11/19/2018 | [Integrierte Apps und Azure AD für Office 365-Administratoren](/Office365/Enterprise/integrated-apps-and-azure-ads) | Geändert |
-
-
-## <a name="week-of-november-26-2018"></a>Woche vom 26 November 2018
+## <a name="week-of-november-26-2018"></a>Woche vom 26. November 2018
 
 
 | Veröffentlicht am |Titel des Themas | Änderung |
@@ -25,19 +15,19 @@
 | 11/26/2018 | [Vorbereiten von Domänen nicht-routingfähigen für Directory-Synchronisierung](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | Geändert |
 | 11/27/2018 | [Konfigurieren der Suche für Multi-Geo in OneDrive for Business](/Office365/Enterprise/configure-search-for-multi-geo) | Geändert |
 | 11/27/2018 | [Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster](/Office365/Enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window) | Geändert |
-| 11/28/2018 | [Gemeinsame Elemente der Microsoft-Cloudkonnektivität](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | Geändert |
-| 11/28/2018 | [Entwerfen von Netzwerken für Microsoft Azure-IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | Geändert |
-| 11/28/2018 | [Entwerfen von Netzwerken für Microsoft-PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | Geändert |
-| 11/28/2018 | [Entwerfen von Netzwerken für Microsoft-SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | Geändert |
-| 11/28/2018 | [Weiterentwickeln Ihres Netzwerks für Cloudkonnektivität](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | Geändert |
-| 11/28/2018 | [ExpressRoute für Microsoft-Cloudkonnektivität](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Geändert |
-| 11/28/2018 | [Microsoft-Cloudnetzwerke für Enterprise-Architekten](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | Geändert |
-| 11/28/2018 | [Microsoft Hybrid Cloud für Enterprise-Architekten](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | Geändert |
-| 11/28/2018 | [Endpunkte für Office 365 Deutschland](/Office365/Enterprise/office-365-germany-endpoints) | Geändert |
-| 11/28/2018 | [Office 365 US-Regierung DoD Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
-| 11/28/2018 | [US-Regierung GCC hohe Office 365-Endpunkten](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
-| 11/28/2018 | [URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Geändert |
-| 11/28/2018 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
+| 28.11.2018 | [Gemeinsame Elemente der Microsoft-Cloudkonnektivität](/Office365/Enterprise/common-elements-of-microsoft-cloud-connectivity) | Geändert |
+| 28.11.2018 | [Entwerfen von Netzwerken für Microsoft Azure-IaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-iaas) | Geändert |
+| 28.11.2018 | [Entwerfen von Netzwerken für Microsoft-PaaS](/Office365/Enterprise/designing-networking-for-microsoft-azure-paas) | Geändert |
+| 28.11.2018 | [Entwerfen von Netzwerken für Microsoft-SaaS](/Office365/Enterprise/designing-networking-for-microsoft-saas) | Geändert |
+| 28.11.2018 | [Weiterentwickeln Ihres Netzwerks für Cloudkonnektivität](/Office365/Enterprise/evolving-your-network-for-cloud-connectivity) | Geändert |
+| 28.11.2018 | [ExpressRoute für Microsoft-Cloudkonnektivität](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Geändert |
+| 28.11.2018 | [Microsoft-Cloudnetzwerke für Enterprise-Architekten](/Office365/Enterprise/microsoft-cloud-networking-for-enterprise-architects) | Geändert |
+| 28.11.2018 | [Microsoft Hybrid Cloud für Enterprise-Architekten](/Office365/Enterprise/microsoft-hybrid-cloud-for-enterprise-architects) | Geändert |
+| 28.11.2018 | [Endpunkte für Office 365 Deutschland](/Office365/Enterprise/office-365-germany-endpoints) | Geändert |
+| 28.11.2018 | [Office 365 US-Regierung DoD Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
+| 28.11.2018 | [US-Regierung GCC hohe Office 365-Endpunkten](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
+| 28.11.2018 | [URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Geändert |
+| 28.11.2018 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
 | 11/29/2018 | [Ressourcen zur Cloud-IT-Architektur von Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Geändert |
 | 11/29/2018 | [Office 365-IP-Adress- und -URL-Webdienst](/Office365/Enterprise/office-365-ip-web-service) | Geändert |
 | 11/30/2018 | [Ressourcen zur Cloud-IT-Architektur von Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Geändert |
@@ -90,3 +80,10 @@
 | 12/19/2018 | [So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Geändert |
 | 12/19/2018 | [Sitzungstimeouts für Office 365](/Office365/Enterprise/session-timeouts) | Geändert |
 | 12/20/2018 | [Exchange 2010 Ende Unterstützung-Wegweiser](/Office365/Enterprise/exchange-2010-end-of-support) | Geändert |
+
+
+## <a name="week-of-december-24-2018"></a>Woche vom 24 Dezember 2018
+
+
+| Veröffentlicht am |Titel des Themas | Änderung |
+|------|------------|--------|
