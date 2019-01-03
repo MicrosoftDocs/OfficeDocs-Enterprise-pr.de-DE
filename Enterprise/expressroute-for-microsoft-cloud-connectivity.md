@@ -3,7 +3,7 @@ title: ExpressRoute für Microsoft-Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 01/02/2018
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können.'
-ms.openlocfilehash: a72533673618af01fc2ce6dcc44f84cf94afc215
-ms.sourcegitcommit: 16806849f373196797d65e63ced825d547aef956
+ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
+ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "27213972"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27470167"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute für Microsoft-Cloudkonnektivität
 
@@ -96,25 +96,19 @@ Tabelle 1 zeigt die drei primären Verbindungsmodelle für ExpressRoute-Verbindu
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>ExpressRoute-Peeringbeziehungen zu Microsoft-Clouddiensten
 
-Eine einzelne ExpressRoute-Verbindung unterstützt bis zu drei verschiedene BGP-Peeringbeziehungen (Border Gateway Protocol) zu unterschiedlichen Teilen der Microsoft Cloud. BPG verwendet Peeringbeziehungen, um Vertrauensstellungen einzurichten und Routinginformationen auszutauschen.
+Eine einzelne ExpressRoute Verbindung unterstützt bis zu zwei verschiedenen Border Gateway Protocol (BGP) Peers Beziehungen mit verschiedenen Teilen eines Microsoft-Cloud. BPG wird Peers Beziehungen verwendet, um eine Vertrauensstellung und exchange-Routinginformationen.
   
-**Abbildung 3: Die drei verschiedenen BGP-Beziehungen in einer einzigen ExpressRoute-Verbindung**
+**Abbildung 3: Die zwei verschiedenen BGP Beziehungen in einer einzigen ExpressRoute-Verbindung**
 
-![Abbildung 3: Die drei verschiedenen BGP-Beziehungen in einer einzigen ExpressRoute-Verbindung](media/Network-Poster/ERPeering.png)
+![Abbildung 3: Die zwei verschiedenen BGP Beziehungen in einer einzigen ExpressRoute-Verbindung](media/Network-Poster/ERPeering.png)
   
-Abbildung 3 zeigt eine ExpressRoute Verbindung von einem lokalen Netzwerk. Die Verbindung ExpressRoute hat drei logische Peers Beziehungen. Eine Microsoft Peers Beziehung wechselt zu Microsoft SaaS-Dienste, einschließlich Office 365 und Dynamcs CRM Online. Eine öffentliche Peers Beziehung wechselt zu Azure PaaS-Dienste. Eine private Beziehung Peers geht Azure IaaS und ein virtuelles Netzwerk-Gateway, die virtuellen Computern gehostet wird.
+Abbildung 3 zeigt eine ExpressRoute Verbindung von einem lokalen Netzwerk. Die ExpressRoute Verbindung verfügt über zwei logische Peers Beziehungen. Eine Microsoft Peers Beziehung wechselt zu Microsoft SaaS-Dienste, einschließlich Office 365, Dynamcs 365 und Azure PaaS-Dienste. Eine private Beziehung Peers geht Azure IaaS und ein virtuelles Netzwerk-Gateway, die virtuellen Computern gehostet wird.
   
 Die Microsoft-BGP-Peeringbeziehung: 
   
-- Besteht zwischen einem Router in Ihrem Ukreisnetzwerk und den öffentlichen Adressen von Office 365 und Dynamics 365-Diensten. 
+- Wird von einem Router in Ihrer DMZ in die öffentlichen Adressen von Office 365, Dynamics 365 und Azure-Diensten. 
     
 - Unterstützt die bidirektional initiierte Kommunikation.
-    
-Die öffentliche BGP-Beziehung:
-  
-- Besteht zwischen einem Router in Ihrem Umkreisnetzwerk und den öffentlichen IP-Adressen von Azure-Diensten.
-    
-- Unterstützt nur die unidirektional initiierte Kommunikation von lokalen Systemen. Die Peeringbeziehung unterstützt keine Kommunikation, die von Azure PaaS-Diensten initiiert wird.
     
 Die private BGP-Peeringbeziehung:
   
@@ -123,6 +117,10 @@ Die private BGP-Peeringbeziehung:
 - Unterstützt die bidirektional initiierte Kommunikation.
     
 - Ist eine Erweiterung Ihres Organisationsnetzwerks in die Microsoft Cloud, die über eine intern konsistente Adresse und Routing verfügt.
+
+>[!Note]
+>Die öffentliche Peers BGP-Beziehung, die in früheren Versionen von in diesem Artikel beschriebenen ist veraltet.
+>
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Beispiel der Anwendungsbereitstellung und für den Fluss des Datenverkehrs mit ExpressRoute
 
@@ -250,7 +248,7 @@ Sie können auch die folgenden Optionen in Ihre ExpressRoute-Bereitstellung inte
   
 - **Sicherheit an Ihrem Edge:** Um erweiterte Sicherheit für den Datenverkehr bereitzustellen, der über die ExpressRoute-Verbindung gesendet und empfangen wird, z. B. die Überprüfung von Datenverkehr oder Angriffserkennung/Schadsoftwareerkennung, platzieren Sie Ihre Sicherheitsgeräte im Datenverkehrpfad innerhalb Ihres Umkreisnetzwerks oder an der Grenze Ihres Intranets.
     
-    Internetverkehr für virtuelle Computer Um zu verhindern, dass virtuelle Azure-Computer Datenverkehr direkt mit Internetstandorten initiieren, kündigen Sie die Standardroute zu Microsoft an. Datenverkehr an das Internet wird über die ExpressRoute-Verbindung und über Ihre lokalen Proxyserver geleitet. Datenverkehr von virtuellen Azure-Computern an Azure PaaS-Dienste oder Office 365 wird zurück über die ExpressRoute-Verbindung geleitet.
+- **Internet-Datenverkehr für virtuelle Computer:** Um zu verhindern, dass virtuellen Azure-Computern Initiierung von Datenverkehr direkt mit dem Internet stattfindet, kündigen Sie die Standardroute an Microsoft an. Mit dem Internet-Datenverkehr wird über die Verbindung ExpressRoute und über Ihre lokale-Proxy-Server weitergeleitet. Datenverkehr von Azure VMs Azure PaaS-Dienste oder Office 365 wird über die ExpressRoute Verbindung zurück weitergeleitet.
     
 - **WAN-Optimierungen:** Sie können WAN-Optimierungen auf beiden Seiten einer privaten Peeringverbindung für ein standortübergreifendes virtuelles Azure-Netzwerk (VNet) bereitstellen. Verwenden Sie innerhalb des Azure VNet ein Netzwerkgerät für die WAN-Optimierung aus dem Azure Marketplace sowie benutzerdefiniertes Routing, um den Verkehr über das Gerät zu leiten.
     
