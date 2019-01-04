@@ -3,7 +3,7 @@ title: Anzeigen von Benutzerkonten mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/30/2018
+ms.date: 01/03/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Zusammenfassung: Anzeigen, Liste oder Ihre Benutzerkonten auf verschiedene Arten mit Office 365 PowerShell anzuzeigen.'
-ms.openlocfilehash: f2743197456cc56f654e99e682108230420384c9
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123252"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546526"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Anzeigen von Benutzerkonten mit Office 365 PowerShell
 
@@ -28,15 +28,11 @@ ms.locfileid: "27123252"
   
 Obwohl Sie das Office 365 Admin Center zum Anzeigen von Konten für Ihre Office 365-Mandanten verwenden können, können Sie auch mithilfe von Office 365 PowerShell und führen Sie einige Dinge, die die Office 365-Verwaltungskonsole kann nicht.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden von Azure Active Directory PowerShell Graph-Modul
 
-Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
+Zuerst [eine Verbindung mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
-## <a name="display-office-365-user-account-information-with-azure-active-directory-powershell-for-graph"></a>Office 365 Benutzerkontoinformationen mit Azure Active Directory PowerShell für Diagramm anzeigen 
-
-In den folgenden Abschnitten wird beschrieben, wie Benutzerkontoinformationen angezeigt.
-
-### <a name="all-accounts"></a>Alle Konten
+### <a name="view-all-accounts"></a>Zeigen Sie aller Konten an
 
 Um die vollständige Liste der Benutzerkonten anzuzeigen, führen Sie diesen Befehl aus:
   
@@ -57,7 +53,7 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 40722671-e520-4a5f-97d4-0bc9e9b2dc0f Debra Berger                                          DebraB@litwareinc.OnMicr...
 ```
 
-### <a name="a-specific-account"></a>Ein bestimmtes Konto
+### <a name="view-a-specific-account"></a>Anzeigen eines bestimmten Kontos
 
 Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Benutzerprinzipalnamen (UPN) des Benutzerkontos, entfernen Sie die "<" und ">" Zeichen, und führen Sie diesen Befehl:
   
@@ -65,7 +61,7 @@ Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Benutzerprinzipalnamen
 Get-AzureADUser -ObjectID <UPN of user account>
 ```
 
-### <a name="additional-property-values-for-a-specific-account"></a>Zusätzliche Eigenschaftswerte für ein bestimmtes Konto
+### <a name="view-additional-property-values-for-a-specific-account"></a>Zusätzliche Eigenschaftswerte für ein bestimmtes Konto anzeigen
 
 Standardmäßig zeigt das Cmdlet **Get-AzureADUser** nur die ObjectID, DisplayName und UserPrincipalName Eigenschaften von Konten.
 
@@ -93,7 +89,7 @@ Als weiteres Beispiel können Sie den Aktivierungsstatus eines bestimmten Benutz
 Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>Einige Benutzerkonten basierend auf einer gemeinsamen Eigenschaft
+### <a name="view-some-accounts-based-on-a-common-property"></a>Zeigen Sie einige Benutzerkonten basierend auf einer gemeinsamen Eigenschaft an
 
 Um weitere werden selektive zu der Liste der Konten für die Anzeige das **Where-Object** -Cmdlet in Kombination mit dem Cmdlet **Get-AzureADUser** können Sie. Um die zwei Cmdlets zu kombinieren, verwenden wir das Pipe-Zeichen "|", weist Azure Active Directory PowerShell für die Ergebnisse eines Befehls und senden Sie sie an den nächsten Befehl Grafik. Hier ist ein Beispielbefehl, der nur die Benutzerkonten angezeigt werden, die einen Verwendungsspeicherort nicht angegeben ist:
   
@@ -123,11 +119,11 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 >  Die Syntax für die **Where-Object** -Cmdlet in diesen Beispielen dargestellt ist **Where-Object {$\_.** [-Eigenschaft Benutzerkontonamen] [Vergleichsoperator] [Wert] **}**. > [Vergleichsoperator] **-Eq** für gleich, **-Ne** für nicht gleich, **-Lt** kleiner als **-Gt** für größer als und anderen ist.  [Wert] wird in der Regel eine Zeichenfolge (eine Sequenz von Buchstaben, Zahlen und andere Zeichen), einen numerischen Wert oder **$Null** für nicht spezifizierte > Weitere Informationen finden Sie in [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) .
   
 
-## <a name="display-office-365-user-account-information-with-microsoft-azure-active-directory-module-for-windows-powershell"></a>Anzeigen von Office 365 Benutzerkontoinformationen mit Microsoft Azure Active Directory-Modul für Windows PowerShell
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden Sie die Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-In den folgenden Abschnitten wird beschrieben, wie Benutzerkontoinformationen angezeigt.
+Zuerst [eine Verbindung mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-### <a name="all-accounts"></a>Alle Konten
+### <a name="view-all-accounts"></a>Zeigen Sie aller Konten an
 
 Um die vollständige Liste der Benutzerkonten anzuzeigen, führen Sie diesen Befehl aus:
   
@@ -166,7 +162,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Weitere Informationen zu weiteren Parametern zum Filtern der Anzeige der Satz von Benutzerkonten angezeigt wird, finden Sie unter [Get-MsolUser](https://docs.microsoft.com/previous-versions/azure/dn194133(v=azure.100)).
   
 
-### <a name="a-specific-account"></a>Ein bestimmtes Konto
+### <a name="view-a-specific-account"></a>Anzeigen eines bestimmten Kontos
 
 Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Benutzerprinzipalnamen (UPN) des Benutzerkontos, entfernen Sie die "<" und ">" Zeichen, und führen Sie diesen Befehl:
   
@@ -174,7 +170,7 @@ Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Benutzerprinzipalnamen
 Get-MsolUser -UserPrincipalName <UPN of user account>
 ```
 
-### <a name="some-accounts-based-on-a-common-property"></a>Einige Benutzerkonten basierend auf einer gemeinsamen Eigenschaft
+### <a name="view-some-accounts-based-on-a-common-property"></a>Zeigen Sie einige Benutzerkonten basierend auf einer gemeinsamen Eigenschaft an
 
 Um weitere werden selektive zu der Liste der Konten für die Anzeige das **Where-Object** -Cmdlet in Kombination mit dem Cmdlet **Get-MsolUser** können Sie. Um die zwei Cmdlets zu kombinieren, verwenden wir das Pipe-Zeichen "|", Office 365 PowerShell die Ergebnisse eines Befehls und senden Sie sie an den nächsten Befehl weist. Hier ist ein Beispielbefehl, der nur die Benutzerkonten angezeigt werden, die einen Verwendungsspeicherort nicht angegeben ist:
   
@@ -219,7 +215,7 @@ Sie können den blockierten Status eines Benutzerkontos mit dem folgenden Befehl
 Get-MolUser -UserPrincipalName <UPN of user account> | Select-Object DisplayName,BlockCredential
 ```
 
-### <a name="additional-property-values-for-accounts"></a>Zusätzliche Eigenschaftswerte für Konten
+### <a name="view-additional-property-values-for-accounts"></a>Zusätzliche Eigenschaftswerte für Konten anzeigen
 
 Das Cmdlet **Get-MsolUser** Standardmäßig zeigt drei Eigenschaften von Benutzerkonten:
   
@@ -291,10 +287,6 @@ Wenn Sie zum Erstellen und Verwalten von Office 365-Benutzer verzeichnissynchron
 ```
 
     
-## <a name="new-to-office-365"></a>Neu bei Office 365?
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-  
 ## <a name="see-also"></a>Siehe auch
 
 [Verwalten von Benutzerkonten und Lizenzen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)

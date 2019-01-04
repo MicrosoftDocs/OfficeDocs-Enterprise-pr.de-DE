@@ -16,18 +16,18 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Zusammenfassung: Beschreibung der SSL-Zertifikate, die für lokale und hybride Exchange-Bereitstellungen, Einmaliges Anmelden mit AD FS, Exchange Online-Dienste und Exchange-Webdienste benötigt werden.'
-ms.openlocfilehash: 82e37ebb058b8a6b4b618649bea31a4137897690
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
+ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975213"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27546516"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planen von Drittanbieter-SSL-Zertifikaten für Office 365
 
  **Zusammenfassung:** Beschreibt die SSL-Zertifikate erforderlich für lokale Exchange-Organisation und hybride SSO mit AD FS, Exchange Online-Dienste und Exchange-Webdienste. 
   
-Zum Zwecke der Verschlüsselung der Kommunikation zwischen Ihren Clients und Menüschaltfläche 365Office 365-Umgebung müssen Drittanbieter-Secure Socket Layer (SSL) Zertifikate auf Ihren Infrastrukturservern installiert sein.
+Zum Zwecke der Verschlüsselung der Kommunikation zwischen Ihren Clients und Office 365-Umgebung müssen Drittanbieter-Secure Socket Layer (SSL) Zertifikate auf Ihren Infrastrukturservern installiert sein.
 
 ||
 |:-----|
