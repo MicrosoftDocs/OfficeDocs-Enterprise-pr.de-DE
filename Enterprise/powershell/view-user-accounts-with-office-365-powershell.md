@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Zusammenfassung: Anzeigen, Liste oder Ihre Benutzerkonten auf verschiedene Arten mit Office 365 PowerShell anzuzeigen.'
-ms.openlocfilehash: dc33b64207341576968867fbeea6f211034eeca6
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: e95353602b96babe5c80f7d57462370636dd26fa
+ms.sourcegitcommit: a39d15b7cf758dfb262d2724bcfd283bba3d2ce1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546526"
+ms.locfileid: "27730320"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Anzeigen von Benutzerkonten mit Office 365 PowerShell
 
@@ -55,10 +55,16 @@ be4bdddd-c790-424c-9f96-a0cf609b7815 Allan Deyoung                              
 
 ### <a name="view-a-specific-account"></a>Anzeigen eines bestimmten Kontos
 
-Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Benutzerprinzipalnamen (UPN) des Benutzerkontos, entfernen Sie die "<" und ">" Zeichen, und führen Sie diesen Befehl:
+Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Kontonamen Anmeldenamen des Benutzerkontos, auch bekannt als den Benutzerprinzipalnamen (UPN), entfernen die "<" und ">" Zeichen, und führen Sie diesen Befehl:
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account>
+Get-AzureADUser -ObjectID <sign-in name of the user account>
+```
+
+Hier ein Beispiel:
+  
+```
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com
 ```
 
 ### <a name="view-additional-property-values-for-a-specific-account"></a>Zusätzliche Eigenschaftswerte für ein bestimmtes Konto anzeigen
@@ -80,13 +86,13 @@ Dieser Befehl gibt Office 365 Powershell die folgenden Anweisungen:
 Um alle Eigenschaften für Benutzerkonten angezeigt wird, verwenden Sie das **Select-Object** -Cmdlet und das Platzhalterzeichen (*) an alle für ein bestimmtes Benutzerkonto. Es folgt ein Beispiel:
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Als weiteres Beispiel können Sie den Aktivierungsstatus eines bestimmten Benutzerkontos mit dem folgenden Befehl überprüfen:
   
 ```
-Get-AzureADUser -ObjectID <UPN of user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
+Get-AzureADUser -ObjectID <sign-in name of the user account> | Select-Object DisplayName,UserPrincipalName,AccountEnabled
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Zeigen Sie einige Benutzerkonten basierend auf einer gemeinsamen Eigenschaft an
@@ -106,7 +112,7 @@ Dieser Befehl weist Azure Active Directory PowerShell für Diagramm an:
 Die **usagelocation-Wert angegeben** -Eigenschaft ist nur eine viele Eigenschaften mit einem Benutzerkonto verknüpft. Um alle Eigenschaften für Benutzerkonten angezeigt wird, verwenden Sie das **Select-Object** -Cmdlet und das Platzhalterzeichen (*) an alle für ein bestimmtes Benutzerkonto. Es folgt ein Beispiel:
   
 ```
-Get-AzureADUser -ObjectID "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 In dieser Liste steht das **City**-Objekt für den Namen einer Benutzerkontoeigenschaft. Dies bedeutet, dass Sie mit dem folgenden Befehl eine Liste aller Benutzerkonten für Benutzer, die in London leben, anzeigen können:
@@ -164,10 +170,10 @@ Weitere Informationen zu weiteren Parametern zum Filtern der Anzeige der Satz vo
 
 ### <a name="view-a-specific-account"></a>Anzeigen eines bestimmten Kontos
 
-Um ein bestimmtes Benutzerkonto anzuzeigen, geben Sie den Benutzerprinzipalnamen (UPN) des Benutzerkontos, entfernen Sie die "<" und ">" Zeichen, und führen Sie diesen Befehl:
+Um ein bestimmtes Benutzerkonto anzuzeigen, Füllen der Anmeldename des Benutzerkontos des Benutzerkontos, auch bekannt als den Benutzerprinzipalnamen (UPN), entfernen Sie die "<" und ">" Zeichen, und führen Sie diesen Befehl:
   
 ```
-Get-MsolUser -UserPrincipalName <UPN of user account>
+Get-MsolUser -UserPrincipalName <sign-in name of the user account>
 ```
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>Zeigen Sie einige Benutzerkonten basierend auf einer gemeinsamen Eigenschaft an
@@ -197,7 +203,7 @@ ScottW@litwareinc.onmicrosoft.com     Scott Wallace         False
 Die **usagelocation-Wert angegeben** -Eigenschaft ist nur eine viele Eigenschaften mit einem Benutzerkonto verknüpft. Um alle Eigenschaften für Benutzerkonten angezeigt wird, verwenden Sie das **Select-Object** -Cmdlet und das Platzhalterzeichen (*) an alle für ein bestimmtes Benutzerkonto. Es folgt ein Beispiel:
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 In dieser Liste steht das **City**-Objekt für den Namen einer Benutzerkontoeigenschaft. Dies bedeutet, dass Sie mit dem folgenden Befehl eine Liste aller Benutzerkonten für Benutzer, die in London leben, anzeigen können:
@@ -254,7 +260,7 @@ Scott Wallace           Operations
 Das **Select-Object** -Cmdlet können Sie die Eigenschaften wählen, die Sie einen Befehl anzeigen möchten. Um alle Eigenschaften für Benutzerkonten angezeigt wird, verwenden Sie das Platzhalterzeichen (*) für ein bestimmtes Benutzerkonto alle anzeigen. Es folgt ein Beispiel:
   
 ```
-Get-MsolUser -UserPrincipalName "BelindaN@litwareinc.onmicosoft.com" | Select-Object *
+Get-MsolUser -UserPrincipalName BelindaN@litwareinc.onmicosoft.com | Select-Object *
 ```
 
 Um die Liste der anzuzeigenden Konten noch weiter einzuschränken, können Sie auch das **Where-Object**-Cmdlet verwenden. Nachfolgend ist ein Beispielbefehl aufgeführt, mit dem nur die Benutzerkonten angezeigt werden, die über einen nicht angegebenen Verwendungsstandort verfügen:
