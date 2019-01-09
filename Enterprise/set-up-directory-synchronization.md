@@ -1,9 +1,8 @@
 ---
-title: Einrichten von verzeichnissynchronisierung für Office 365
+title: Planen der Verzeichnissynchronisierung für Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -12,19 +11,19 @@ ms.custom: Adm_O365
 search.appverid:
 - MET150
 - MOE150
-- MED150
+- MED15
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Informationen Sie zum Einrichten der verzeichnissynchronisierung zwischen Office 365 und die lokale Active Directory.
-ms.openlocfilehash: e406eec08b34a694602c756235533f8b1ff6651e
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 95f138a0a11f14a1036d7d48983f4c88bc965fd0
+ms.sourcegitcommit: 0fdb6e470342a98ba164db627fe3dd02cfe8aa0b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540753"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27768824"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Einrichten von verzeichnissynchronisierung für Office 365
+# <a name="set-up-directory-synchronization-for-office-365"></a>Planen der Verzeichnissynchronisierung für Office 365
 Office 365 verwendet Benutzer Cloud-basierten Identity Management Service Azure Active Directory zum Verwalten von Benutzern. Sie können auch die lokale Active Directory mit Azure AD integrieren, durch die Synchronisierung Ihrer lokalen Umgebung mit Office 365. Nach dem Synchronisierung einrichten können Sie haben ihre Benutzerauthentifizierung in Azure AD oder in Ihrem lokalen Verzeichnis stattfinden soll.
   
 ## <a name="office-365-directory-synchronization"></a>Office 365 Directory-Synchronisierung
@@ -62,57 +61,7 @@ Sie können ferner den Azure AD-Connect [Version Versionsgeschichte](https://go.
     
     ![Wählen Sie im Menü Weitere Directory-Synchronisierung](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-3. Klicken Sie auf die ** Directory-Synchronisierung für Sie ist? ** Sie auf der Seite der ersten beiden Optionen von **1 bis 10**und **11 bis 50** Ergebnisse im "sollten auf der Grundlage der Größe Ihrer Organisation erstellen und Verwalten von Benutzern in der Cloud. Verzeichnissynchronisierung wird die Installation komplexer gestalten. Wechseln Sie zur aktiven Benutzer Ihre Benutzer hinzufügen." 
-    
-    - Sie können, jedoch Directory-Synchronisierung einrichten weiterhin durch Auswählen von **hier weiter** am unteren Rand der Seite. 
-    
-    - Bei Auswahl von zwei letzteren Auswahlmöglichkeiten **51-250** oder **251 oder höher**, wird die Einrichtung der Synchronisierung Directory-Synchronisierung empfohlen. Wählen Sie auf **Weiter** . 
-    
-    ![Wählen Sie weiter, um den Vorgang fortzusetzen Directory-Synchronisierung einrichten](media/359a1eb9-99ae-4b5b-a413-4de53037cceb.png)
-  
-4. Klicken Sie auf die **Synchronisierung Ihrer lokalen Verzeichnis mit der Cloud**, lesen Sie die Informationen und wenn Sie weitere Informationen wünschen, wählen Sie die hier finden Sie weitere Hyperlink, um verweist: [Vorbereiten der Bereitstellung von Benutzern über Directory-Synchronisierung mit Office 365](prepare-for-directory-synchronization.md), und wählen Sie dann weiter ** **. 
-    
-5. Überprüfen Sie auf der Seite **prüfen wir Ihr Verzeichnis** die Anforderungen für die Überprüfung automatisch Ihr Verzeichnis. Wenn Sie die Anforderungen erfüllen, wählen Sie **Weiter** \> **Suche starten**. Wenn Sie die Anforderungen erfüllen können nicht können Sie weiterhin von einem **Datenträger manuell**.
-    
-    ![Wählen Sie weiter oder weiterhin manuell auf die prüfen wir Ihre Seite Verzeichnis](media/af4a6bd5-13aa-4bfa-9751-4464a32ca8db.png)
-  
-6. Wenn Sie Ihre Verzeichnisse Scannen auswählen, wählen Sie auf der Seite **Auswerten Directory Synchronization Setup** **Suche starten** . 
-    
-    Befolgen Sie die Anweisungen zum Herunterladen und Ausführen der Überprüfung.
-    
-7. Nach Abschluss die Überprüfung zurück zu den Setup-Assistenten, und wählen Sie **Weiter** auf die Überprüfungsergebnisse finden Sie unter. 
-    
-8. Überprüfen Sie Ihre Domänen wie auf der Seite **Überprüfen Besitzrechte für Ihre Domänen** beschrieben. Weitere Informationen finden Sie unter [Erstellen von DNS-Einträge für Office 365 beim Verwalten Ihrer DNS-Einträge](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
-    
-    > [!IMPORTANT]
-    > Nachdem Sie eine TXT-Eintrag, um sicherzustellen, dass Sie Ihre Domäne besitzen hinzugefügt haben, gehen Sie nicht mit dem nächsten Schritt im Assistenten Domänen hinzufügen von Benutzern. Directory-Synchronisierung wird für Benutzer hinzufügen. 
-  
-    Kehren Sie zur Seite **Office 365 Setup** aus, und wählen Sie **Aktualisieren**
-    
-    ![Nachdem Sie Ihre Domänen überprüft haben, wählen Sie aktualisieren](media/9b5fb593-5ff7-49f0-80d0-18e36d39d669.png)
-  
-9. Wählen Sie auf der Seite **Ihre Domänen können** **Weiter**.
-    
-10. Klicken Sie auf der Seite **Bereinigen der Umgebung** optional, befolgen Sie die Anweisungen zum Herunterladen von IDFix, um die Active Directory überprüfen. Wählen Sie auf **Weiter** . 
-    
-11. Klicken Sie auf die ** ausführen Azure Active Directory verbinden ** Seite, und wählen Sie **herunterladen** Azure AD-Connect-Assistenten installieren. 
-    
-    > [!NOTE]
-    > An dieser Stelle können Sie im Assistenten Azure Active Directory verbinden. Stellen Sie sicher, dass Sie die Directory Synchronization Assistentenseite lassen, den, die Sie zuletzt wurden beim Öffnen in Ihrem Browser, damit Sie es zurückgeben können, nachdem die Azure AD-Connect Schritte durchgeführt werden. 
-  
-    Nach dem Verbinden von Azure AD-Assistent installiert hat, wird es automatisch geöffnet. Sie können auch auf dem Desktop das Install-Standardwebsite öffnen. Führen Sie die Anweisungen des Assistenten je nach Szenario:
-    
-  - Verwenden Sie für Directory-Synchronisierung mit kennwortsynchronisierung Hash [Azure AD-Verbinden mit den express-Einstellungen](https://go.microsoft.com/fwlink/p/?LinkID=698537).
-    
-  - Verwenden Sie für mehrere Gesamtstrukturen, Pass-Through-Authentifizierung, Identitätsverbund und SSO-Optionen die [benutzerdefinierte Installation von Azure Active Directory verbinden](https://go.microsoft.com/fwlink/p/?LinkId=698430).
-    
-    Wählen Sie auf der Seite **Einstellungen Express** dieser Optionen **Anpassen** . 
-    
-12. Nach Abschluss des Assistenten Azure AD-Connect zum **Office 365 Setup** -Assistenten zurückzukehren Sie, und befolgen Sie die Anweisungen auf **Stellen Sie sicher, dass Sync als erwartete Seite gearbeitet**. Wählen Sie auf **Weiter** . 
-    
-13. Lesen die Anweisungen auf dem ** Aktivieren Benutzer ** Seite, und wählen Sie dann auf **Weiter**.
-    
-14. Wählen Sie auf der Seite **Sie sind alle Setup** **Fertig stellen** . 
+3. Wählen Sie auf der Seite **Vorbereitung von Active Directory** **Tool herunterladen Microsoft Azure Active Directory Connect** -Link für den Einstieg. Weitere Informationen zu den Installationsvorgang Azure Active Directory verbinden finden Sie unter [Azure AD-Connect und Azure Active Directory verbinden Health Installationsübersicht](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
     
 ## <a name="assign-licences-to-synchronized-users"></a>Synchronisierte Benutzern Lizenzen zuweisen
 Nachdem Sie Ihre Benutzer zu Office 365 synchronisiert haben, sie erstellt werden, aber Sie müssen für diese Lizenzen zuweisen, sodass diese Office 365-Features, wie Mail verwenden können. Anweisungen finden Sie unter [Zuweisen von Lizenzen für Benutzer in Office 365 für Unternehmen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
