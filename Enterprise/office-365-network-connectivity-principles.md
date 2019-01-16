@@ -1,5 +1,5 @@
 ---
-title: Office 365 Network Connectivity Prinzipien
+title: Prinzipien von Office 365-Netzwerkverbindungen
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,14 +14,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Bevor Sie beginnen, Ihr Netzwerk für die Office 365-Netzwerkkonnektivität planen, ist es wichtig zu verstehen, die Konnektivität Grundsätze für sichere Verwaltung von Office 365-Datenverkehr und erste die bestmögliche Leistung. In diesem Artikel helfen Ihnen das Verständnis der neuesten Anleitung zur Optimierung von Office 365-Netzwerkkonnektivität sicher.
-ms.openlocfilehash: be41162833a7442ac65af1e973a00923841fca6b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: d319d99cdd413fe1df9e8f88d18742ad464bbb3b
+ms.sourcegitcommit: f0ba0d8c62f802447bc9d07f5d877067156fbed5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540885"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28021806"
 ---
-# <a name="office-365-network-connectivity-principles"></a>Office 365 Network Connectivity Prinzipien
+# <a name="office-365-network-connectivity-principles"></a>Prinzipien von Office 365-Netzwerkverbindungen
 
 Bevor Sie beginnen, Ihr Netzwerk für die Office 365-Netzwerkkonnektivität planen, ist es wichtig zu verstehen, die Konnektivität Grundsätze für sichere Verwaltung von Office 365-Datenverkehr und erste die bestmögliche Leistung. In diesem Artikel helfen Ihnen das Verständnis der neuesten Anleitung zur Optimierung von Office 365-Netzwerkkonnektivität sicher.
   
@@ -54,8 +54,8 @@ Microsoft empfiehlt die folgenden Grundsätze um eine optimale Office 365-Dienst
   
 Das primäre Ziel des Entwurfs sollte Wartezeit zu minimieren, durch die Reduzierung der Roundtripzeit (Zeit) aus dem Netzwerk, in das Microsoft Global Network Microsofts öffentliche Netzwerkbackbone, die alle Microsoft Rechenzentren mit geringer Latenz sind und cloud-Anwendung Einstiegspunkte auf der ganzen Welt verteilt. Erfahren Sie mehr über das Microsoft Global Network unter [wie Microsoft erstellt das schnelle und verlässliche globale Netzwerk](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
   
-### <a name="identify-and-differentiate-office-365-traffic"></a>Identifizieren und Abgrenzen von Office 365-Datenverkehr
 <a name="BKMK_P1"> </a>
+### <a name="identify-and-differentiate-office-365-traffic"></a>Identifizieren und Abgrenzen von Office 365-Datenverkehr
 
 ![Identifizieren von Office 365-Datenverkehr](media/621aaec9-971d-4f19-907a-1ae2ef6d72fc.png)
   
@@ -67,10 +67,10 @@ Weitere Informationen zu Office 365 Endpunkt Kategorien und Methoden zur Optimie
   
 Microsoft veröffentlicht alle Office 365-Endpunkten als Webdienst jetzt sowie Anleitungen zur optimalen diese Daten verwenden. Weitere Informationen zum Abrufen von und Arbeiten mit Office 365-Endpunkten finden Sie im Artikel [Office 365-URLs und IP-Adressbereiche](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
-### <a name="egress-network-connections-locally"></a>Netzwerkverbindungen lokal Ausgang
 <a name="BKMK_P2"> </a>
+### <a name="egress-network-connections-locally"></a>Lokaler Ausgang von Netzwerkverbindungen
 
-![Netzwerkverbindungen lokal Ausgang](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
+![Lokaler Ausgang von Netzwerkverbindungen](media/b42a45be-1ab4-4073-a7dc-fbdfb4aedd24.png)
   
 Lokalen DNS und Internet Ausgang ist besonders wichtig für reduziert die Verbindungslatenz und sicherstellen, dass benutzerverbindungen am nächsten Punkt des Eintrags zu Office 365-Diensten vorgenommen werden. In einer komplexen Netzwerktopologie ist es wichtig zu lokalen DNS und lokalen Internet Ausgang zusammen implementieren. Weitere Informationen dazu, wie Office 365 Clientverbindungen am nächsten Punkt des Eintrags weiterleitet finden Sie im Artikel [Clientkonnektivität](https://support.office.com/en-us/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
@@ -102,8 +102,8 @@ Die lokale Ausgang Architektur bietet die folgenden Vorteile über das herkömml
 - Reduziert die Belastung Unternehmensnetzwerk-Infrastruktur durch Zulassen der lokalen Ausgang.
 - Sichert Verbindungen an beiden Enden Endpunkt Clientsicherheit und Cloud-Sicherheitsfeatures werden genutzt.
 
-### <a name="avoid-network-hairpins"></a>Vermeiden Sie Netzwerk hairpins
 <a name="BKMK_P3"> </a>
+### <a name="avoid-network-hairpins"></a>Vermeiden von Spitzkehren für Netzwerke
 
 ![Vermeiden Sie hairpins](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
@@ -115,8 +115,8 @@ Bei Verwendung von Cloud-basierten Netzwerk oder Sicherheitsdienste für Ihre Of
   
 Aufgrund der großen Anzahl von verteilten Standorten mit Office 365-Einstiegspunkte und ihre Endbenutzer in der Nähe kann routing Office 365-Datenverkehr an eine beliebige Netzwerk- oder Drittanbieter negative auf Office 365-Verbindungen auswirken ist das anbieternetzwerk nicht für eine optimale Office 365 peering konfiguriert.
   
-### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Proxies umgehen, Datenverkehr Prüfung Geräte und doppelte sicherheitstechnologien
 <a name="BKMK_P4"> </a>
+### <a name="bypass-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Proxies umgehen, Datenverkehr Prüfung Geräte und doppelte sicherheitstechnologien
 
 ![Proxies umgehen, Datenverkehr Prüfung Geräte und doppelte sicherheitstechnologien](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
@@ -124,8 +124,8 @@ Unternehmenskunden, die ihre Netzwerksicherheit und Überwachungsrichtlinien Ris
   
 Die meisten Unternehmensnetzwerken Erzwingen der Netzwerksicherheit für Datenverkehr im Internet mithilfe von Technologien wie Proxys, SSL-Überprüfung, Paketinspektion und Data Loss Prevention-Systeme. Diese Technologien können bieten wichtige Risikominderung für generische Internet Anforderungen jedoch erheblich reduzieren Leistung, Skalierbarkeit und die Qualität des Endbenutzers auf Office 365-Endpunkten angewendet.
   
-#### <a name="office-365-endpoints-web-service"></a>Office 365-Endpunkten-Webdienst
 <a name="BKMK_WebSvc"> </a>
+#### <a name="office-365-endpoints-web-service"></a>Office 365-Endpunkten-Webdienst
 
 Office 365-Administratoren können ein Skript verwenden oder REST-Aufruf an eine strukturierte Liste der Endpunkte aus der Office 365-Endpunkten nutzen-Webdienst, und aktualisieren Sie die Konfiguration des Umkreisnetzwerks Firewalls und andere Netzwerkgeräte. Dadurch wird sichergestellt, dass-Datenverkehr für Office 365 identifiziert, entsprechend behandelt und anders aus Netzwerkdatenverkehr für generische und häufig unbekannten Websites im Internet gebunden verwaltete. Weitere Informationen zur Verwendung der Office 365-Endpunkten-Webdienst, finden Sie im Artikel [Office 365-URLs und IP-Adressbereiche](https://support.office.com/en-us/article/office-365-urls-and-ip-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US).
   
@@ -151,7 +151,7 @@ Office 365-Endpunkte stellen einen unterschiedlichen Satz von Netzwerkadressen u
   
 In unserem vorherigen Anleitung für die Verwaltung von Office 365-Datenverkehr wurden in zwei Kategorien unterteilt werden, **erforderlich** und **Optional**Endpunkte organisiert. Endpunkte in jeder Kategorie erforderlichen unterschiedliche Optimierungen je nach der Wichtigkeit des Diensts, und viele Kunden konfrontiert Probleme in der Anwendung der gleichen Netzwerk Optimierungen auf die vollständige Liste der Office 365-URLs und IP-Adressen zu rechtfertigen. 
   
-Im neuen Modell Endpunkten in drei Kategorien **Optimieren**, **erforderlich** und **Default**, Bereitstellen eines Priorität-basierte pivots an, wo Sie den Fokus Netzwerk-Optimierung bietet die besten leistungsverbesserungen getrennt werden und Rendite. Die Endpunkte werden in den oben genannten Kategorien basierend auf die Vertraulichkeit der effektiven Benutzerinteraktion zu Netzwerk Qualität, Volume und Leistung Umschlag Szenarien und einfache Implementierung konsolidiert. Empfohlene Optimierungen können die gleiche Weise an alle Endpunkte in einer bestimmten Kategorie angewendet werden.
+Im neuen Modell werden Endpunkte in drei Kategorien **Optimieren**, **Zulassen** und **Default**, Bereitstellen eines Priorität-basierte pivots an, wo Sie den Fokus Netzwerk-Optimierung Realisierung von die besten leistungsverbesserungen und zurückgeben getrennt. ROI. Die Endpunkte werden in den oben genannten Kategorien basierend auf die Vertraulichkeit der effektiven Benutzerinteraktion zu Netzwerk Qualität, Volume und Leistung Umschlag Szenarien und einfache Implementierung konsolidiert. Empfohlene Optimierungen können die gleiche Weise an alle Endpunkte in einer bestimmten Kategorie angewendet werden.
   
 - **Optimieren** Endpunkte für die Verbindung mit jedem Office 365-Dienst sind erforderlich, und stellen über 75 % der Office 365-Bandbreite, Verbindungen und Menge der Daten dar. Diese Endpunkte darstellen Office 365-Bereitstellungsszenarios, die die am häufigsten Beachtung von Netzwerk-Leistung, Wartezeit und Verfügbarkeit sind. Alle Endpunkte, die in Microsoft-Rechenzentren gehostet werden. Wird erwartet, dass die Änderungsrate an die Endpunkte in dieser Kategorie wesentlich niedriger als für die Endpunkte in der anderen zwei Kategorien sein. Diese Kategorie umfasst eine (der Reihenfolge der ~ 10) sehr kleine Gruppe von URLs und einem definierten Satz von IP-Subnetze Core Office 365-Arbeitslasten wie Exchange Online, SharePoint Online, Skype für Business Online und Microsoft-Teams dedizierte Schlüssel.
 
