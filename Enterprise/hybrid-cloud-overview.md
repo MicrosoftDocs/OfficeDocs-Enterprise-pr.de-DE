@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Zusammenfassung: Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.'
-ms.openlocfilehash: 04c1a80009b1136ae4575ea4d454cebdb26bed3c
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 21f107c9f096e90cd0eb1dfc17f14431dec54a73
+ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123312"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28327347"
 ---
 # <a name="hybrid-cloud-overview"></a>Hybrid Cloud-Übersicht
 
@@ -79,7 +79,7 @@ Sie müssen die folgenden Elemente berücksichtigen, wenn Sie Hybridcloudszenari
     
 - Sicherheit
     
-    Sicherheit für Hybridcloudszenarien umfasst Schutz und Verwaltung Ihrer Identitäten, Schutz von Daten, Verwaltung mit Administratorrechten, Berücksichtigung von Bedrohungen und die Implementierung von Governance und Sicherheitsrichtlinien. Weitere Informationen finden Sie unter [Microsoft Cloudsicherheit für Enterprise-Architekten](https://technet.microsoft.com/library/dn919927.aspx#security).
+    Sicherheit für Hybridcloudszenarien umfasst Schutz und Verwaltung Ihrer Identitäten, Schutz von Daten, Verwaltung mit Administratorrechten, Berücksichtigung von Bedrohungen und die Implementierung von Governance und Sicherheitsrichtlinien. Weitere Informationen finden Sie unter [Microsoft Cloudsicherheit für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#security).
     
 - Verwaltung
     
