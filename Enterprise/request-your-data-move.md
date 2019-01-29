@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Office 365-Kunden müssen vor dem Termin für ihres Landes beantragen, um die Kundendaten ihrer teilnehmenden Office 365-Dienste in ihre neuen Geo verschoben haben.
-ms.openlocfilehash: d66818590a7972dc67832f55a3fdb3f2a9adf99c
-ms.sourcegitcommit: 75ad9af1fa8adc73611fc6140546222b001861d5
+ms.openlocfilehash: 15edbb41c14a1b3061d0d1923eeec4defab58a7b
+ms.sourcegitcommit: 792fe2ccc860517fe3dcbc9c668bae97f39ae7c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839573"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604506"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -80,7 +80,7 @@ Nach Anforderung einer Verschiebung, ist es nicht möglich, Ihre Auswahl zu änd
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft-Teams unterstützt noch keine Migration von Kunden Inhalt im Ruhezustand von in Region Rechenzentren in Land, in dem Daten vor-Ort-für Microsoft-Teams zur Verfügung steht.  Aus diesem Grund müssen nur neue Kunden alle ihre Daten in die neue Regionen unterstützt, auf dem Microsoft-Teams, die Daten vor-Ort-Land gespeichert.  Erfahren Sie mehr über Office 365 Daten vor-Ort-für Ihren Standort Unternehmen unter [, wo wird Ihre Daten befinden?](https://office/com/datamaps)   
+Microsoft-Teams unterstützt noch keine Migration von Kunden Inhalt im Ruhezustand von in Region Rechenzentren in Land, in dem Daten vor-Ort-für Microsoft-Teams zur Verfügung steht.  Aus diesem Grund müssen nur neue Kunden alle ihre Daten in die neue Regionen unterstützt, auf dem Microsoft-Teams, die Daten vor-Ort-Land gespeichert.  Erfahren Sie mehr über Office 365 Daten vor-Ort-für Ihren Standort Unternehmen unter [, wo wird Ihre Daten befinden?](https://products.office.com/where-is-your-data-located)   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Optionale Vorgänge, bevor Sie eine Verschiebung anfordern
 
