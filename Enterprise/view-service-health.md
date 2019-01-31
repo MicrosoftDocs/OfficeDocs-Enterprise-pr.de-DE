@@ -1,5 +1,5 @@
 ---
-title: 'Gewusst wie: Überprüfen von Office 365-Dienststatus'
+title: Überprüfen des Office 365-Dienststatus
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,111 +20,113 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Status des Office 365-Dienste vor dem Aufruf von Support, um herauszufinden, ob es eine Unterbrechung Active-Dienst ist
-ms.openlocfilehash: f4bdc0f4b6faa7a3ae86580596e28e6391167340
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 7e04e1309c990ccced67663576285f7276603ccc
+ms.sourcegitcommit: 6826e0ea4a777f7d98500209a9d3bc75e89f8d15
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24976565"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29651188"
 ---
-# <a name="how-to-check-office-365-service-health"></a>Gewusst wie: Überprüfen von Office 365-Dienststatus
+# <a name="how-to-check-office-365-service-health"></a>Überprüfen des Office 365-Dienststatus
 
 Sie können die Integrität der Office 365, Yammer, Microsoft Dynamics CRM und Microsoft Intune Cloud-Dienste auf der Seite Office 365 **Dienststatus** im Administrationscenter anzeigen. Wenn Sie Probleme mit einer Cloud-Dienst sind, können Sie den Dienststatus, um zu bestimmen, ob dies ein bekanntes Problem mit einer Auflösung ausgeführt, ist bevor Sie Support anrufen oder Zeit zur Problembehandlung ausgeben überprüfen. 
-  
-### <a name="how-to-check-service-health"></a>Gewusst wie: Überprüfen des Dienststatus
 
-1. Wechseln Sie zu [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home#/homepage) und melden Sie sich mit einem Konto des Farmadministrators ein. 
+Wenn Sie nicht das ServicePortal anmelden können, können Sie die [Statusseite Dienst](https://status.office365.com) verwenden, um Informationen zu bekannten Problemen, die verhindern, dass Sie die Protokollierung in Ihrem Mandanten zu überprüfen.
+  
+### <a name="how-to-check-service-health"></a>Überprüfen des Dienststatus
+
+1. Wechseln Sie zu [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home#/homepage), und melden Sie sich mit einem Administratorkonto an. 
     
     > [!NOTE]
-    > Personen, die der Administratorrolle oder globaler Administrator zugewiesen sind, können Dienststatus anzeigen. Damit Exchange, SharePoint und Skype für Business-Admins Dienststatus anzeigen können, müssen sie auch die Dienst-Administratorrolle zugewiesen werden. 
+    > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein.
   
 2. Um Dienststatus, im Administrationscenter zu öffnen, wechseln Sie zur **Integrität** > **Dienststatus**, oder klicken Sie auf den **Dienst Health Karte** im **Home-Dashboard**. Die Karte Dashboard gibt an, ob es ein Problem Active-Dienst und Links zu der Seite Detaillierte Health ist.
     
-    ![Dashboard-Karte finden Sie Dienststatus](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
+    ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
-3. Der Zustand der einzelnen Cloud-Dienste wird in einem Tabellenformat mit einem Symbol an, dass möglichen Zuständen angezeigt.
+3. Der Status der einzelnen Clouddienste wird in einem Tabellenformat mit einem Symbol zur Angabe möglicher Status angezeigt.
     
 > [!TIP]
-> Sie können auch die [Office 365 Admin app](https://go.microsoft.com/fwlink/p/?linkid=627216) auf dem mobilen Gerät Dienststatus, anzeigen, eine hervorragende Möglichkeit zum mit Push-Benachrichtigungen auf dem laufenden ist. 
+> Sie können den Dienststatus auch mithilfe der [Office 365 Admin-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät anzeigen. Dies ist eine hervorragende Möglichkeit, mit Pushbenachrichtigungen auf dem Laufenden zu bleiben. 
   
-### <a name="view-details-of-posted-service-health"></a>Anzeigen der Details gebuchten Dienststatus
+### <a name="view-details-of-posted-service-health"></a>Anzeigen von Details des veröffentlichten Dienststatus
 
 In der Standardansicht werden alle Dienste und deren aktuellem Integritätsanalyse Status angezeigt. Wählen Sie zum Filtern der Ansicht zu Diensten, die derzeit einen Vorfall auftritt **Vorfälle** aus der schattierten häufig verwendete Hyperlinks auf der linken Seite. Auswählen von **Ratschläge** werden nur die Dienste angezeigt, die derzeit eine Empfehlung veröffentlicht haben. Aus der Ansicht **alle Dienste** wird durch Klicken auf den angezeigten Dienststatus eine Zusammenfassungsansicht der Empfehlung oder Vorfall geöffnet. 
   
-![Anzeigen der aktuellen Probleme in Dienststatus](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
+![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
-Die Empfehlung oder Zusammenfassung des Vorfalls bietet die folgende Informationen: 
+Die Empfehlungs- oder Vorfallzusammenfassung enthält folgende Informationen: 
   
 ![Ein Screenshot Beschriften der Felder in einem Dienst Empfehlung](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
   
-1. Ein Problem-ID und Zusammenfassung-Anweisung des Problems.
+1. Eine Problem-ID und eine zusammenfassende Beschreibung des Problems.
     
-2. Der aktuelle Status. Finden Sie unter Statusdefinitionen in diesem Artikel finden Sie eine Erläuterung der einzelnen möglichen Status.
+2. Der aktuelle Status. Eine Erläuterung der einzelnen möglichen Statusarten finden Sie unter den Statusdefinitionen in diesem Artikel.
     
-3. Eine Beschreibung des wie dieses Problem Benutzer auswirken kann.
+3. Eine Beschreibung, wie sich dieses Problem auf Benutzer auswirken kann.
     
-4. Die Zeit, die das Problem gestartet wurde und dem Zeitpunkt der letzten, die die Dienst Health Nachricht aktualisiert wurde. Im Verlauf des ein Problem bereitstellen wir häufige Nachrichten, damit Sie den Fortschritt zu wissen, den wir vornehmen, bei der Anwendung einer Lösung.
+4. Der Zeitpunkt, zu dem das Problem begonnen hat, und der Zeitpunkt der letzten Aktualisierung der Nachricht zum Dienststatus. Während der gesamten Dauer eines Problems werden häufig Nachrichten veröffentlicht, um Sie über die Fortschritte beim Anwenden einer Lösung zu informieren.
     
-5. Wählen Sie den Link **Details anzeigen** , finden weitere Informationen zu dem Problem, einschließlich des Verlaufs aller Nachrichten veröffentlicht wurden, während wir an einer Lösung arbeiten. 
+5. Klicken Sie auf den Link **Details anzeigen**, um weitere Details zum Problem anzuzeigen, einschließlich des Verlaufs aller veröffentlichten Nachrichten während des Arbeitens an einer Lösung. 
     
-### <a name="translate-service-health-details"></a>Übersetzen von Dienstdetails Integrität
+### <a name="translate-service-health-details"></a>Übersetzen von Dienststatusdetails
 
-Da Service Health Erklärungen in Echtzeit gebucht, sie werden nicht automatisch in Ihrer Sprache übersetzt, und die Details eines Ereignisses Service nur in Englisch sind. Um die Erklärung zu übersetzen, gehen Sie folgendermaßen vor:
+Da Erläuterungen zum Dienststatus in Echtzeit veröffentlicht werden, sind sie nicht automatisch in Ihre Sprache übersetzt, und die Details eines Dienstereignisses sind nur in Englisch angegeben. Zum Übersetzen der Erläuterung führen Sie die folgenden Schritte aus:
   
-1. Wechseln Sie zur [Übersetzer](https://www.bing.com/translator/).
+1. Wechseln Sie zu [Translator](https://www.bing.com/translator/).
     
-2. Wählen Sie auf der Seite **Dienststatus** eine Vorfall oder Empfehlung aus. Kopieren Sie den Text zu dem Problem, klicken Sie unter **Details anzeigen**.
+2. Wählen Sie auf der Seite **Dienststatus** einen Vorfall oder eine Empfehlung aus. Kopieren Sie unter **Details anzeigen** den Text zum Problem.
     
-3. Klicken Sie im Translator fügen Sie den Text, und wählen Sie **Übersetzen**.
+3. Fügen Sie den Text in Translator ein, und klicken Sie auf **Übersetzen**.
     
 ### <a name="definitions"></a>Definitionen
 
-Die meisten Dienste Zeit werden ohne weitere Informationen wie fehlerfrei angezeigt. Wenn ein Dienst ein Problem aufgetreten ist, wird das Problem wird als eine Empfehlung oder ein Vorfall identifiziert und zeigt den aktuellen Status.
+Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen angezeigt. Wenn bei einem Dienst ein Problem vorliegt, wird das Problem entweder als eine Empfehlung oder als ein Vorfall angegeben, und der aktuelle Status wird angezeigt.
   
 > [!TIP]
-> Geplante Wartung Ereignisse in Dienststatus nicht angezeigt werden. Sie können geplante Wartung Ereignisse verfolgen, indem Sie mit der **Nachrichtencenter**Stand bleiben. Filtern von Nachrichten als Änderung planen, um zu ermitteln, wann die Änderung erfolgen soll, dessen Effekt und wie es bei der Vorbereitung kategorisiert. Einzelheiten finden Sie unter [Nachrichtencenter in Office 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) . 
+> Geplante Wartungsereignisse werden im Dienststatus nicht angezeigt. Sie können geplante Wartungsereignisse verfolgen, indem Sie sich mit dem **Nachrichtencenter** auf dem neuesten Stand halten. Filtern Sie nach Nachrichten, für dieeine geplante Änderung als Kategorie angegeben ist, um herauszufinden, wann die Änderung stattfinden soll, welche Auswirkungen sie hat und wie Sie Vorbereitungen dafür treffen können. Weitere Details finden Sie unter [Nachrichtencenter in Office 365](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093). 
   
-### <a name="incidents-and-advisories"></a>Vorfälle und Ratschläge
+### <a name="incidents-and-advisories"></a>Vorfälle und Empfehlungen
 
 |||
 |:-----|:-----|
-|![Informationssymbol für Empfehlung](media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Wenn ein Dienst eine Empfehlung angezeigt wurde, sollten Sie ein Problem, das einige Benutzer beeinflusst werden, aber der Dienst ist weiterhin verfügbar. In einer Empfehlung ist häufig eine Abhilfe für dieses Problem, und das Problem möglicherweise zeitweilig oder wird im Bereich und Benutzer Auswirkungen begrenzt.  <br/> |
-|![Symbol für Vorfall Ausrufezeichen](media/a636db57-6083-44dc-bbd5-556850804f17.png)|Weist ein Dienst auf einen aktiven Vorfall dargestellt, es ist ein kritisches Problem, und der Dienst oder eine der Hauptfunktionen des Diensts ist nicht verfügbar. Beispielsweise Benutzer möglicherweise keine e-Mails senden und empfangen oder -Anmeldung nicht möglich Vorfälle müssen bedeutende Auswirkung auf Benutzer. Wenn ein Vorfall in Bearbeitung vorhanden ist, bieten wir Updates bezüglich der Untersuchung, Abhilfemaßnahmen und Bestätigung der Lösung im Dashboard Health Service.  <br/> |
+|![Information icon for advisory](media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|Wenn für einen Dienst eine Empfehlung angezeigt wird, wissen wir von einem Problem, das sich auf einige Benutzer auswirkt, doch ist der Dienst weiterhin verfügbar. Bei einer Empfehlung gibt es häufig eine Umgehung für das Problem und das Problem tritt ggf. nur zeitweilig auf oder ist in Hinsicht auf Umfang und Auswirkungen auf Benutzer eingeschränkt.  <br/> |
+|![Exclamation point icon for incident](media/a636db57-6083-44dc-bbd5-556850804f17.png)|Wenn für einen Dienst ein aktiver Vorfall angezeigt wird, handelt es sich ein kritisches Problem und der Dienst oder eine wichtige Funktion des Diensts ist nicht verfügbar. Beispielsweise können Benutzer keine E-Mails senden und empfangen oder sich nicht anmelden. Vorfälle haben erkennbare Auswirkungen für die Benutzer. Tritt ein Vorfall ein, stellen wir Updates zur Untersuchung, Abhilfemaßnahmen und Lösungsbestätigungen im Dashboard zur Dienstintegrität bereit.  <br/> |
    
 ### <a name="status-definitions"></a>Statusdefinitionen
 
 |**Status**|**Definition**|
 |:-----|:-----|
-|**Untersuchen von** | Wir wissen, ein potenzielles Problem und Weitere Informationen über was passiert, und der Bereich der Auswirkungen gesammelt werden. |
-|**Dienstbeeinträchtigung** | Wir haben bestätigt, dass ein Problem, die Verwendung des Diensts oder einer Funktion beeinflussen können. Dieser Status wird möglicherweise angezeigt, wenn ein Dienst langsamer als gewöhnlich durchführt, stehen Ihnen zeitweilige unterbrochen wird, oder wenn ein Feature funktionsfähig ist. |
-|**Unterbrechung des Dienstes** | Dieser Status wird angezeigt, wenn Sie also feststellen, dass ein Problem wirkt sich die Möglichkeit für Benutzer den Zugriff auf Dienste auf. In diesem Fall das Problem ist von Bedeutung und durchgängig reproduzieren kann. |
-|**Wiederherstellen von Diensten** | Die Ursache des Problems wurde erkannt, wir wissen, welche Maßnahmen zum Erfassen, und es werden gerade verwenden aus der Dienst wieder in einem fehlerfreien Status befinden. |
-|**Erweiterte Wiederherstellung** | Dieser Status gibt an, dass die Maßnahme ist noch in Arbeit wiederherstellen Service für die meisten Benutzer jedoch dauert einige Zeit in allen betroffenen Systemen zu erreichen. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Auswirkungen verringern, während eine endgültige Lösung anwenden gewartet beheben vorgenommen haben. |
-|**Untersuchung angehalten** | Wenn eine Anforderung für zusätzliche Informationen von Kunden an uns weiter untersuchen ermöglichen die detaillierte Untersuchung auf ein potenzielles Problem führt, wird dieser Status wird angezeigt. Wenn wir fungieren sollen, müssen wir Sie wissen, welche Daten oder Protokolle wir benötigen lassen. |
-|**Dienst wiederhergestellt** | Wir haben bestätigt, dass Maßnahme aufgelöst wurde das zugrunde liegende Problem und den Dienst in einem fehlerfreien Zustand wiederhergestellt wurde. Um herauszufinden, welche Fehler aufgetreten sind, können zeigen Sie das Problemdetails an. |
+|**Untersuchung läuft** | Uns ist ein potenzielles Problem bekannt, und wir sammeln weitere Informationen dazu, was vor sich geht und welche Auswirkungen es hat. |
+|**Dienstbeeinträchtigung** | Wir haben bestätigt, dass ein Problem vorliegt, das eine Auswirkung auf die Verwendung eines Diensts oder Features haben kann. Dieser Status wird möglicherweise angezeigt, wenn ein Dienst langsamer als gewöhnlich ausgeführt wird, zeitweilige Unterbrechungen auftreten oder ein Feature nicht funktioniert. |
+|**Dienstunterbrechung** | Dieser Status wird angezeigt, wenn wir feststellen, dass sich ein Problem auf den Zugriff der Benutzer auf den Dienst auswirkt. In diesem Fall ist das Problem schwerwiegend und kann konsistent reproduziert werden. |
+|**Dienst wird wiederhergestellt** | Die Ursache des Problems wurde erkannt, wir wissen, welche Behebungsmaßnahme zu ergreifen ist, und sind dabei, den Dienst wieder in einen fehlerfreien Zustand zu versetzen. |
+|**Erweiterte Wiederherstellung** | Dieser Status gibt an, dass eine Behebungsmaßnahme durchgeführt wird, um den Dienst für die Mehrzahl der Benutzer wiederherzustellen, es dauert jedoch einige Zeit, bis alle betroffenen Systeme erreicht sind. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Korrektur vorgenommen haben, um die Auswirkungen zu verringern, während wir an der Bereitstellung einer dauerhaften Lösung arbeiten. |
+|**Untersuchung angehalten** | Dieser Status wird angezeigt, wenn unsere detaillierte Untersuchung eines potenziellen Problems dazu führt, dass Kunden um Angabe zusätzlicher Informationen für eine weitere Untersuchung gebeten werden. Wenn Ihre Unterstützung erforderlich ist, informieren wir Sie, welche Daten oder Protokolle wir benötigen. |
+|**Dienst wiederhergestellt** | Wir haben bestätigt, dass durch die Behebungsmaßnahme das zugrunde liegende Problem gelöst und der Dienst wieder in einen fehlerfreien Zustand versetzt wurde. Informationen zur Fehlerursache finden Sie unter den Problemdetails. |
 |**Nach dem schadensbericht veröffentlicht** | Wir haben einen Post Vorfall-Bericht nach einem bestimmten Problem veröffentlicht, die umfasst Stamm Ursache Informationen und nächste Schritte, um sicherzustellen, dass ein ähnliches Problem nicht mehr auftritt. |
    
 ## <a name="history"></a>„Verlauf“
 
-Dienststatus können Sie sehen Sie sich den aktuellen Status und Anzeigen des Verlaufs von Dienst Ratschläge und Vorfälle in den letzten 30 Tagen. Um die letzten Integrität aller Dienste anzuzeigen, wählen Sie auf der Seite **Dienststatus** **Historie anzeigen** aus. 
+Der Dienststatus zeigt den aktuellen Status sowie den Verlauf aller Empfehlungen und Vorfälle für Dienste in den letzten 30 Tagen. Zum Anzeigen des früheren Status aller Dienste wählen Sie auf der Seite **Dienststatus** die Option **Verlauf anzeigen** aus. 
   
-![Link zum Gesundheitsdaten anzeigen](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
+![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
-Eine Liste aller Service Health Nachrichten in der ausgewählten Zeitrahmen gebucht wird angezeigt, wie unten dargestellt:
+Es wird eine Liste aller Nachrichten zum Dienststatus angezeigt, die im ausgewählten Zeitraum veröffentlicht wurden (siehe unten).
   
-![Ansicht Service Gesundheitsdaten](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
+![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
 Sie können die Gesundheitsdaten für die letzten 7 Tage oder der letzten 30 Tagen anzeigen. Wählen Sie eine Zeile aus, um weitere Informationen zu diesem Problem anzuzeigen.
   
 Weitere Informationen zu unserem Engagement für Betriebszeit finden Sie unter [Transparent Vorgänge von Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
-## <a name="leave-feedback"></a>Lassen Sie feedback
+## <a name="leave-feedback"></a>Feedback geben
 
-Unser Ziel besteht darin, sicherzustellen, dass die Informationen, die wir Ihnen zu einer laufenden Problem bereitstellen rechtzeitige, genauer und hilfreicher ist. Um uns mitzuteilen wie wir tun, wählen Sie eine Bewertung Stern. Nachdem Sie uns eine Bewertung von 1 auf 5 Sterne gewähren möchten, können Sie auf eine beliebige spezifische Details Feedback. Ihr Feedback verwenden wir um unser Service Health System zu optimieren.
+Unser Ziel ist es sicherzustellen, dass die Informationen, die wir Ihnen zu einem laufenden Problem geben, aktuell, präzise und nützlich sind. Wenn Sie uns mitteilen möchten, inwieweit wir dieses Ziel erreichen, wählen Sie eine Sternebewertung aus. Nachdem Sie eine Bewertung mit 1 bis 5 Sternen abgegeben haben, können Sie uns Feedback zu bestimmten Details geben. Anhand Ihres Feedbacks können wir unser Dienststatussystem weiter optimieren.
   
-![Feedbackformular für Health Dienstproblemen](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
+![Feedback form for service health issues](media/fd083fdb-fde8-47b4-9136-b90d1d003864.png)
   
 ## <a name="see-also"></a>Siehe auch
 
-[Berichte im Office 365 Administrationscenter](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Aktivitätsberichte im Office 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 
