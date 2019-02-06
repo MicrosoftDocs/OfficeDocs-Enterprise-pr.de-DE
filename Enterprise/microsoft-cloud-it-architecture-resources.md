@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.'
-ms.openlocfilehash: 88ff136002ea1a5a580d5d03e4e64aa7dd81d368
-ms.sourcegitcommit: bd50d505b134da4e46606c9580d67f34f6199ecb
+ms.openlocfilehash: a32b73facd54da98d7c5df84223237d857883cfe
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "27118168"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741238"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -38,9 +38,12 @@ In diesen Architekturtools- und -postern finden Sie Informationen zu Microsoft-C
     - [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     
-- **[Reihe: Office 365 Enterprise-Lösungen](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**: <!--- [Information Protection for Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_infoprotect) --->
+- **[Reihe: Microsoft 365 Enterprise-Lösungen](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Identität- und Geräteschutz für Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Lösungen zum Schutz von Dateien in Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
+    - [Schutz von Informationen in Office 365 für die DSGVO](#office-365-information-protection-for-gdpr)
+    - [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](#microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations)
+    - [Microsoft-Telefonielösungen](#microsoft-telephony-solutions) 
     - [Bereitstellen eines modernen und sicheren Desktops mit Microsoft](microsoft-cloud-it-architecture-resources.md#msd)
     
 
@@ -91,7 +94,7 @@ Was IT-Architekten über die Sicherheit in Microsoft-Cloud-Diensten und -Plattfo
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für Microsoft-Cloud-Sicherheitsmodell](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Dieses Modell enthält Folgendes: <ul><li>Die Rolle von Microsoft bei der Bereitstellung sicherer Dienste und Plattformen</li><li>Die Verantwortung des Kunden, Sicherheitsrisiken zu minimieren</li><li>Zertifizierungen der höchsten Sicherheit </li><li>Sicherheitsangebote, die von Microsoft Consulting Services bereitgestellt werden </ul></li>Arbeiten Sie den Kurs [Sicherheit in einer cloudfähigen Welt](https://mva.microsoft.com/training-courses/security-in-a-cloudenabled-world-12725?l=CfLHobAcB_3904300474) durch, ein Kurs der Microsoft Virtual Academy, der auf diesem Architekturposter basiert. <br/>|
+|[![Miniaturbild für Microsoft-Cloud-Sicherheitsmodell](media/5dc26f80-8888-4572-8ed9-a120d711e0f0.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=48121) <br/> | Dieses Modell enthält Folgendes: <ul><li>Die Rolle von Microsoft bei der Bereitstellung sicherer Dienste und Plattformen</li><li>Die Verantwortung des Kunden, Sicherheitsrisiken zu minimieren</li><li>Zertifizierungen der höchsten Sicherheit </li><li>Sicherheitsangebote, die von Microsoft Consulting Services bereitgestellt werden </ul> <br/>|
    
 <a name="networking"> </a>
 ### <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft-Cloudnetzwerke für Enterprise-Architekten
@@ -121,19 +124,21 @@ Erfahren Sie mehr über die häufigsten Cyberangriffe und wie Microsoft Ihrer Or
 |[![Miniaturbild des Posters zu häufigen Angriffen.](media/common%20attacks-thumb3.png) ](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](http://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> | Dieses Poster veranschaulicht den Weg häufiger Angriffe und beschreibt, welche Funktionen dabei helfen können, Angreifer in jeder Phase des Angriffs zu stoppen. <br/>|
 
 
-<a name="santa"> </a>
-### <a name="the-santa-cloud"></a>Die Weihnachtsmann-Cloud
+<!---<a name="santa"> </a>
+### The Santa cloud
 
-Wie der Weihnachtsmann und seine Elfen die Cloud-Angebote von Microsoft nutzen, um ihre jährlichen Lieferungen zu bewerkstelligen.
+How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
   
-|**Element**|**Beschreibung**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Miniaturansicht des Weihnachtsmann-Cloud-Posters](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [Online anzeigen](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |Um zu bestimmen, wer brav oder wer böse war und welche Geschenke am 24. Dezember auszuliefern sind, verwendet der Weihnachtsmann und seine elfische IT-Abteilung Office 365, Azure, Dynamics 365 und Intune.   <br/>|
+|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| --->
    
-<a name="BKMK_o365solutions"> </a>
-## <a name="office-365-enterprise-solution-series"></a>Reihe: Office 365 Enterprise-Lösungen
+<a name="BKMK_o365solutions">
 
-Die Reihe der Office 365 Enterprise-Lösungen bietet Hilfestellung zum Implementieren von Office 365-Funktionen, insbesondere bei technologieübergreifenden Funktionen.
+ </a>
+## Reihe: Microsoft 365 Enterprise-Lösungen
+
+Die Reihe der Microsoft 365 Enterprise-Lösungen bietet Hilfestellung zum Implementieren von Microsoft 365-Funktionen, insbesondere bei technologieübergreifenden Funktionen.
 
 <!---  
 <a name="BKMK_infoprotect"> </a>
@@ -146,8 +151,9 @@ Capabilities for enterprise organizations to protect corporate assets.
 |[![Information protection capabilities for Office 365](media/51bf70b4-029c-4189-9425-7ed34038d4dc.png)          ](https://www.microsoft.com/download/details.aspx?id=54429) <br/> [PDF](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf)  \| [Visio](http://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=54429) <br/> |Microsoft provides the most complete set of capabilities to protect your corporate assets. This model helps organizations take a methodical approach when planning which capabilities to implement.  <br/>|
 --->
    
-<a name="BKMK_O365IDP"> </a>
-###Identität- und Geräteschutz für Office 365
+<a name="BKMK_O365IDP">
+ </a>
+### Identität- und Geräteschutz für Office 365
 
 Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Office 365, andere SaaS-Dienste und lokale Anwendungen zugreifen, die mit dem Azure AD-Anwendungsproxy veröffentlicht werden.
   
@@ -164,7 +170,36 @@ Empfohlene Funktionen zum Schutz von Dateien in Office 365 basierend auf drei un
 |:-----|:-----|
 |[![Mini-Posterset mit Miniaturansicht für Lösungen zum Schutz von Dateien in Office 365](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. In diesem Dokument wird gezeigt, welche Funktionen mit weiteren Informationen über die Funktionen zum Schutz von Dateien in Office 365 vergleichbar sind.  <br/> |
    
-   
+
+### <a name="office-365-information-protection-for-gdpr"></a>Schutz von Informationen in Office 365 für die DSGVO
+
+Empfehlungen zum Ermitteln, Klassifizieren, Schützen und Überwachen von personenbezogenen Daten. Dabei wird die Datenschutz-Grundverordnung (DSGVO) als Beispiel verwendet, Sie können das Verfahren jedoch auch für die Einhaltung vieler anderer Bestimmungen nutzen.
+
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|![Miniaturansicht für Office 365 Information Protection für die DSGVO](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |Um diesen Inhalt im Artikelformat anzuzeigen, siehe [Office 365 Information Protection für die DSGVO](https://docs.microsoft.com/de-DE/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
+
+### <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen 
+
+In diesem Leitfaden wird die Implementierung einer sicheren Cloudumgebung beschrieben. Der Leitfaden für die Lösung kann von jeder beliebigen Organisation verwendet werden. Er umfasst zusätzliche Hilfe für agile Organisationen mit BYOD-Zugriff und Gastkonten. Sie können diesen Leitfaden als Grundlage zum Planen Ihrer eigenen Umgebung verwenden.
+
+
+|**Element**|**Beschreibung**|
+|:-----|:-----|
+|**Microsoft-Sicherheitsanleitungen von Microsoft für politische Kampagnen** <br/> [![Miniaturansicht für Miniposter festgelegt.](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](http://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |Dieser Leitfaden verwendet eine Organisation für politische Kampagnen als Beispiel. Verwenden Sie diesen Leitfaden als Grundlage für eine beliebige Umgebung.  <br/> |
+|**Sicherheitsanleitungen von Microsoft für gemeinnützige Organisationen** <br/> [![Miniaturbild für eine herunterladbare Datei](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](http://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |Dieser Leitfaden wurde für gemeinnützige Organisationen geringfügig überarbeitet. Er verweist beispielsweise auf Office 365-Pläne für gemeinnützige Organisation. Die technische Anleitung ist identisch wie im Leitfaden für politische Kampagnen.  <br/> |
+
+Dieser Leitfaden enthält Testumgebungsanleitungen. Weitere Informationen finden Sie unter [Microsoft-Sicherheitsleitfaden für politische Kampagnen, gemeinnützigen Organisationen und andere agile Organisationen](https://docs.microsoft.com/de-DE/Office365/SecurityCompliance/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o).
+
+### <a name="microsoft-telephony-solutions"></a>Microsoft-Telefonielösungen
+
+Microsoft unterstützt mehrere Optionen, wenn Sie mit der Einführung von Teams in der Microsoft-Cloud beginnen. Dieses Poster hilft Ihnen zu entscheiden, welche Microsoft-Telefonielösung (Telefonsystem in der Cloud oder Enterprise-VoIP, lokal) für die Benutzer in Ihrer Organisation geeignet ist und wie Ihre Organisation die Telefonfestnetzanbindung (Public Switched Telephone Network, PSTN) herstellen kann.
+
+![Miniaturansicht für das Poster der Microsoft-Telefonielösungen](media/microsoft-telephony-solutions-thumb.png) <br/>
+[PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) 
+
+Weitere Informationen finden Sie im Artikel zu diesem Poster: [Microsoft-Telefonielösungen](https://docs.microsoft.com/de-DE/SkypeForBusiness/hybrid/msft-telephony-solutions).
+  
 <a name="msd"> </a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Bereitstellen eines modernen und sicheren Desktops mit Microsoft
 
