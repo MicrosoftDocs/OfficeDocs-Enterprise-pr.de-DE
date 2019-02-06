@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Office 365-Gruppen mit PowerShell
-ms.author: dianef
-author: dianef77
-manager: scotv
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: In diesem Artikel werden die Schritte für allgemeine Verwaltungsaufgaben für Gruppen in Microsoft PowerShell ausführen.
-ms.openlocfilehash: 23dfb7f871496b33bf9c34937977b98dc13cea6d
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 83b7340cea1fd8d38bba073353b61f0b17fad8a0
+ms.sourcegitcommit: e56f830ccff8d74d9edbff4a46a9ee1d613291ed
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540961"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741228"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Verwalten von Office 365-Gruppen mit PowerShell
 
@@ -35,9 +35,9 @@ In diesem Artikel werden die Schritte für allgemeine Verwaltungsaufgaben für G
 
 - [Upgrade Verteilerlisten zu Office 365-Gruppen](https://support.office.com/article/787d7a75-e201-46f3-a242-f698162ff09f.aspx)
     
-- [Verwalten von Benutzer, die Office 365 Gruppen erstellen können](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
+- [Verwalten von Personen, die Office 365-Gruppen erstellen können](https://support.office.com/article/4c46c8cb-17d0-44b5-9776-005fced8e618.aspx)
     
-- [Verwalten von Gastzugriff auf Office 365-Gruppen](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+- [Verwalten des Gastzugriffs auf Office 365-Gruppen](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
     
 - [Verwalten von Gruppen dynamisch in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632)
     
@@ -126,7 +126,7 @@ Oder erstellen Sie eine neue Gruppe mit einer Klassifikation.
 New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
 ```
 
-[Verwenden von PowerShell mit Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) und [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) ausführliche Informationen zur Verwendung von Exchange Online PowerShell Auschecken. 
+Weitere Informationen zur Verwendung von Exchange Online PowerShell finden Sie unter [Verwenden von PowerShell mit Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) und [Herstellen einer Verbindung mit Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415). 
   
 Nachdem diese Einstellungen aktiviert sind, werden den Besitzer der Gruppe wählen eine Klassifizierung aus dem Dropdown-Menü in Outlook im Web und Outlook, und speichern Sie es von der Gruppenseite **Bearbeiten** können. 
   
@@ -204,7 +204,7 @@ Weitere Informationen finden Sie unter [Set-OrganizationConfig](https://go.micro
   
 ## <a name="office-365-groups-cmdlets"></a>Cmdlets für Office 365-Gruppen
 
-Die folgenden Cmdlets wurden kürzlich Office 365 Gruppen zur Verfügung gestellt. Wenn Sie diese verwenden können nicht, hat Ihr Office 365-Abonnement mit dieser Funktionalität noch nicht aktualisiert wurden. Überprüfen Sie Ihre Nachrichtencenter und die [Wegweiser für Office 365](http://roadmap.office.com/en-us).
+Die folgenden Cmdlets wurden kürzlich Office 365 Gruppen zur Verfügung gestellt. Wenn Sie diese verwenden können nicht, hat Ihr Office 365-Abonnement mit dieser Funktionalität noch nicht aktualisiert wurden. Überprüfen Sie Ihre Nachrichtencenter und die [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
   
 |**Name des Cmdlets**|**Beschreibung**|
 |:-----|:-----|

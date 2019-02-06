@@ -3,13 +3,6 @@
 
 
 
-## <a name="week-of-december-24-2018"></a>Woche vom 24 Dezember 2018
-
-
-| Veröffentlicht am |Titel des Themas | Änderung |
-|------|------------|--------|
-
-
 ## <a name="week-of-december-31-2018"></a>Woche vom 31 Dezember 2018
 
 
@@ -47,7 +40,7 @@
 | 1/11/2019 | [Office 365 US-Regierung DoD Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
 
 
-## <a name="week-of-january-14-2019"></a>Woche vom 14 Januar 2019
+## <a name="week-of-january-14-2019"></a>Woche vom 14. Januar 2019
 
 
 | Veröffentlicht am |Titel des Themas | Änderung |
@@ -73,3 +66,23 @@
 | 1/25/2019 | [Verschieben einer OneDrive-Website an einen anderen geografischen Standort](/Office365/Enterprise/move-onedrive-between-geo-locations) | Geändert |
 | 1/25/2019 | [Verwenden Sie die Office 365 Content Delivery Networks mit SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | Geändert |
 | 1/25/2019 | [Planen der Verzeichnissynchronisierung für Office 365](/Office365/Enterprise/set-up-directory-synchronization) | Geändert |
+
+
+## <a name="week-of-january-28-2019"></a>Woche vom 28. Januar 2019
+
+
+| Veröffentlicht am |Titel des Themas | Änderung |
+|------|------------|--------|
+| 1/28/2019 | [Bereitstellungsratgeber für Office 365-Dienste](/Office365/Enterprise/deployment-advisors-for-office-365) | Geändert |
+| 1/28/2019 | [Anfordern der Datenverschiebung](/Office365/Enterprise/request-your-data-move) | Geändert |
+| 1/28/2019 | [Ende der Unterstützung für SharePoint Server 2007 – Roadmap](/Office365/Enterprise/sharepoint-2007-end-of-support) | Geändert |
+| 1/29/2019 | [Office 365 US-Regierung DoD Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
+| 1/29/2019 | [US-Regierung GCC hohe Office 365-Endpunkten](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
+| 1/29/2019 | [URLs und IP-Adressbereiche von Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
+| 1/30/2019 | [Vorbereiten Ihrer Organisation für Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | Geändert |
+| 1/30/2019 | [Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Geändert |
+| 1/30/2019 | [Entfernen von Lizenzen von Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | Geändert |
+| 1/30/2019 | [Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell](/Office365/Enterprise/powershell/view-licenses-and-services-with-office-365-powershell) | Geändert |
+| 1/30/2019 | [Überprüfen des Office 365-Dienststatus](/Office365/Enterprise/view-service-health) | Geändert |
+| 1/31/2019 | [Zuweisen von Rollen zu Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Geändert |
+| 2/1/2019 | [Überprüfen des Office 365-Dienststatus](/Office365/Enterprise/view-service-health) | Geändert |
