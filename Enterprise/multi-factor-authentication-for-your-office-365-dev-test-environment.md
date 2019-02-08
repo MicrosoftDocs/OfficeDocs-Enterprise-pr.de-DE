@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Zusammenfassung: Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.'
-ms.openlocfilehash: 12458e2dd41518deb0b540e809a08c4df865a3df
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 6e2aefa9309e7e268c937055f7fe59600f8c87da
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915660"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897448"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung
 
  **Zusammenfassung:** Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.
   
-Als zusätzliche Sicherheitsmaßnahme für die Anmeldung bei einem Office 365-Abonnement können Sie Azure Multi-Factor Authentication aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort erfordert, um ein Konto zu überprüfen. Mit Multi-Factor Authentication für Office 365 müssen Benutzer auf ihrem Smartphone einen Telefonanruf bestätigen, einen Verifizierungscode eingeben, der ihnen in einer Textnachricht zugesendet wurde, oder ein App-Kennwort auf ihrem Smartphone angeben, nachdem sie ihr Kennwort korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde.  
+Für eine zusätzliche Sicherheitsebene für die Anmeldung bei Ihrem Office 365-Abonnement können Sie Azure Multi-Factor Authentication, die mehr als nur einen Benutzernamen und ein Kennwort zur Authentifizierung ein Konto erforderlich sind. Mit Multi-Factor Authentication für Office 365 müssen Benutzer ein Telefonanrufs zu bestätigen, geben Sie einen Überprüfungscode in einer Textnachricht gesendet oder geben Sie ein app-Kennwort in ihrer Smartphones nach Eingabe der Kennwörter, ordnungsgemäß. Sie können erst nach diesem zweiten Authentifizierung Faktor erfüllt wurden anmelden. 
   
 In diesem Artikel wird beschrieben, wie die Authentifizierung auf Basis einer Textnachricht für ein bestimmtes Office 365-Konto aktiviert und getestet wird.
   
@@ -38,9 +38,9 @@ Es gibt zwei Phasen bei der Einrichtung von Multi-Factor Authentication für Off
 2. Aktivieren und Testen von Multi-Factor Authentication für das Konto „Benutzer 2“
     
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
 Wenn Sie auf einfache Weise mit den Mindestanforderungen mehrstufige Authentifizierung testen möchten, befolgen Sie die Anweisungen in Phasen 2 und 3 von [Office 365 Dev/Test Environment](office-365-dev-test-environment.md).
   
@@ -77,7 +77,7 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
   
 1. Öffnen Sie eine neue Instanz Ihres Browsers.
     
-2. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich mit dem Konto Benutzer 2 (Benutzer2 @\<Organisationsname >. onmicrosoft.com) und das Kennwort ein.
+2. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich mit dem Konto Benutzer 2 (Benutzer2 @\<Organisation name>.onmicrosoft.com) und das Kennwort ein.
     
 3. Nach der Anmeldung werden Sie aufgefordert, eine zusätzliche Sicherheitsüberprüfung für das Konto einzurichten. Klicken Sie auf **Jetzt einrichten**.
     
@@ -109,5 +109,5 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
 
-[Plan für die mehrstufige Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 

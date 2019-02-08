@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: In diesem Artikel finden Sie Informationen zum Verschieben einer OneDrive-Website an einen anderen geografischen Standort.
-ms.openlocfilehash: 258c562343875ff4ad115b81dba5338c79641dfc
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: 4d55ce087b475b9364a4e1584a1ac4947cc1ba85
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849851"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29547133"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einen anderen geografischen Standort 
 
@@ -67,7 +67,7 @@ Bevor Sie mit dem Verschieben von geografischen Standorten in OneDrive beginnen,
 
 Um sicherzustellen, dass alle geografischen Standorte kompatibel sind, führen Sie den folgenden Befehl aus:
 
-`Get-SPOGeoMoveCompatibilityStatus -AllLocations 1`
+`Get-SPOGeoMoveCrossCompatibilityStatus`
 
 Wenn die gesetzliche Aufbewahrungspflicht für eine OneDrive-Umgebung aktiviert ist oder diese eine Unterwebsite enthält, kann die Umgebung nicht verschoben werden. Sie können das Start-SPOUserAndContentMove-Cmdlet mit dem -ValidationOnly-Parameter verwenden, um zu prüfen, ob die OneDrive-Umgebung verschoben werden kann:
 

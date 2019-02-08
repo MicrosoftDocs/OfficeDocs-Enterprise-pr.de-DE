@@ -13,12 +13,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden von Office 365 PowerShell, erstellen Sie neue SharePoint Online-Websites, und fügen Sie Benutzer und Gruppen auf diese Websites.'
-ms.openlocfilehash: 41ca26249bd494d5603a425689e47f9fe6809f1a
-ms.sourcegitcommit: 82219b5f8038ae066405dfb7933c40bd1f598bd0
+ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23975203"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897168"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern mit Office 365 PowerShell
 
@@ -26,13 +26,13 @@ ms.locfileid: "23975203"
 
 Wenn Sie Office 365 PowerShell zum Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern verwenden, können Sie schnell und wiederholt Aufgaben ausführen viel schneller als Sie in der Office-356-Verwaltungskonsole können. Sie können auch Aufgaben ausführen, die nicht möglich, in der Verwaltungskonsole Office 356 auszuführen sind. 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
 Die Verfahren in diesem Thema müssen Sie mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online-PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Schritt 1: Erstellen neuer Websitesammlungen mithilfe von Office 365 PowerShell
 
-Erstellen Sie mehrere Websites mithilfe von Office 365 PowerShell und einer CSV-Datei, die Sie mithilfe des gelieferten Beispielcodes und Notepad erstellen. Hierzu ersetzen Sie die in Klammern stehende Platzhalter-Information durch Ihre eigenen Website- und Mandant-spezifischen Informationen. Auf diese Weise können Sie eine einzelne Datei erstellen und einen einzigen Office 365 PowerShell-Befehl ausführen, der diese Datei verwendet. Die durchgeführten Maßnahmen sind sowohl wiederholbar als auch tragbar und es werden viele, wenn nicht alle Fehler vermieden, die durch die Eingabe der Befehle in die SharePoint Online-Verwaltungsshell entstehen können. Dieses Verfahren lässt sich in zwei Teile aufteilen. Sie erstellen zuerst eine .csv-Datei, danach referenzieren Sie diese CSV-Datei mithilfe von Office 365 PowerShell, das mithilfe deren Inhalte die Websites erstellt.
+Erstellen Sie mehrere Websites mithilfe von Office 365 PowerShell und eine CSV-Datei, die Sie mit den bereitgestellten Beispielcode und im Editor erstellen. Für dieses Verfahren benötigen Sie die für Platzhalterinformationen in Klammern mit eigenen Website und Mandanten-spezifische Informationen ersetzen. Dieser Vorgang können Sie eine einzelne Datei zu erstellen, und führen Sie einen einzelnen Office 365 PowerShell-Befehl, der diese Datei verwendet. Dadurch wird die Aktionen wiederholbare und tragbaren und viele, wenn nicht alle Fehler, die lange Befehle in SharePoint Online-Verwaltungsshell eingeben stammen kann entfällt. Es gibt zwei Teile dieser Prozedur. Zuerst erstellen Sie eine CSV-Datei, und Sie werden von Office 365 PowerShell, der seinen Inhalt verwendet wird, um die Websites erstellen, CSV-Datei verweisen.
 
 Das Office 365 PowerShell-Cmdlet importiert die CSV-Datei und leitet sie so, dass sie in die Schleife in den runden Klammern passt, die die erste Zeile der Datei als Spaltenkopf liest. Das Office 365 PowerShell-Cmdlet arbeitet sich dann durch die restlichen Datensätze, erstellt eine neue Websitesammlung für jeden Datensatz und weist Eigenschaften der Websitesammlung gemäß den Spaltenköpfen zu.
 

@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mithilfe von PowerShell für Office 365 Admin Center Aufgaben über die Befehlszeile ausführen.'
-ms.openlocfilehash: d9bee7060f599120d2d6036c45b44e485ea9a0bd
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849891"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897198"
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -40,7 +40,7 @@ Ab dem Datum des Artikels ersetzen Azure Active Directory PowerShell Graph-Modul
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
+- Geschätzte Zeit bis zum Abschließen des Vorgangs: 5 Minuten
     
 - Sie können folgende Versionen von Windows verwenden:
     

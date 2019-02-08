@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Zusammenfassung: Erfahren Sie, wie Sie eine integrierte Testumgebung erstellen, in der ein Server mit Exchange Server 2013, ein Server mit Lync Server 2013 und ein Server mit SharePoint Server 2013 ausgeführt werden.'
-ms.openlocfilehash: bb668dcaff53f37127f43551cb4b108589a39def
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915600"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897048"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Testumgebungsanleitung: Konfigurieren einer integrierten Exchange-, Lync- und SharePoint-Testumgebung
 
@@ -30,7 +30,7 @@ ms.locfileid: "22915600"
  
 Die Testumgebung, die aus dieser Konfiguration resultiert und die Server-zu-Server-Authentifizierung zwischen allen drei Servertypen vorsieht, kann verwendet werden, um Szenarien und Lösungen mit mehreren Produkten zu erstellen und zu veranschaulichen, in denen ein Server mit Exchange Server 2013, ein Server mit Lync Server 2013 und ein Server mit SharePoint Server 2013 ausgeführt werden.
   
-Dieses Dokument enthält Anleitungen zu den folgenden Punkten:
+Dieses Dokument enthält Anweisungen für:
   
 1. Konfigurieren der Testumgebung "Windows Server 2012-Basiskonfiguration"
     

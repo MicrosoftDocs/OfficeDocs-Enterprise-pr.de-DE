@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren.
-ms.openlocfilehash: 3bab553bd23d6179eb60ff61ae3edb56c528946d
-ms.sourcegitcommit: 5cb4dbdd10ab399af414503cb518a9f530919ef5
+ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498235"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897418"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 
@@ -34,7 +34,7 @@ Wenn ein Office 365-Konto eine Lizenz von einem Lizenzierungsplan zugeordnet ist
     
 - Alle Konten in Ihrer Organisation.
     
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen:
 <a name="RTT"> </a>
 
 - Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
@@ -43,7 +43,7 @@ Wenn ein Office 365-Konto eine Lizenz von einem Lizenzierungsplan zugeordnet ist
     
 - Anzeigen der vor und nach der Ergebnisse der Verfahren in diesem Thema finden Sie unter [Anzeigen von Kontodetails Lizenz und den Dienst mit Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).
     
-- Ein PowerShell-Skript ist verfügbar, die die in diesem Thema beschriebenen Verfahren automatisiert. Insbesondere ermöglicht das Skript anzeigen und Deaktivieren von Diensten in Office 365-Organisation, einschließlich Schlingern. Weitere Informationen finden Sie unter [Deaktivieren des Zugriffs auf Schlingern mit Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
+- Ein PowerShell-Skript steht zur Verfügung, das die in diesem Thema erläuterten Verfahren automatisiert. Insbesondere ermöglicht das Skript Ihnen das Anzeigen und Deaktivieren von Diensten in Ihrer Office 365-Organisation, einschließlich Sway. Weitere Informationen finden Sie unter [Deaktivieren des Zugriffs auf Sway mit Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).
     
 - Wenn Sie das Cmdlet **Get-MsolUser** ohne mit dem _Alle_ Parameter verwenden, werden nur die ersten 500 Benutzerkonten zurückgegeben.
     

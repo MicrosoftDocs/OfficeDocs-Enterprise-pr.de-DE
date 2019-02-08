@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: e88204d7f69c56c951f5d6ebd4d978c96e4c52ba
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bbaefffb6bfa55d9af11e08c2011c7333cefe46e
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915460"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897478"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -96,7 +96,7 @@ Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus,
    
  **Tabelle D: Lokale DNS-Server**
   
-Um Pakete über die Standort-zu-Standort-VPN-Verbindung aus dem standortübergreifenden Netzwerk an das Organisationsnetzwerk weiterleiten zu können, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren. Dieses lokale Netzwerk muss eine Liste der Adressräume (im CIDR-Format) für alle erreichbaren Standorte in Ihrem lokalen Organisationsnetzwerk enthalten. Die Liste der Adressräume, die Ihr lokales Netzwerk definieren, muss eindeutig sein und darf nicht mit den für andere virtuelle oder lokale Netzwerke verwendeten Adressräumen überlappen.
+Wenn Pakete vom Netzwerk standortübergreifenden auf das Netzwerk Ihrer Organisation über die Standort-zu-Standort-VPN-Verbindung weiterleiten möchten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren, die eine Liste der die Adressräume (in CIDR-Notation) für alle der erreichbar ist Speicherorte auf die lokalen Netzwerk Ihrer Organisation. Die Liste der Adressräume, die Ihr lokale Netzwerk definieren muss eindeutig sein und dürfen nicht überlappen mit dem Adressraum für andere virtuelle Netzwerke oder andere lokale Netzwerke verwendet.
   
 Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle L aus. Auch wenn hierfür nur drei Einträge vorgesehen sind, können Sie noch weitere hinzufügen. Erarbeiten Sie diese Liste der Adressräume gemeinsam mit Ihrer IT-Abteilung.
   
@@ -111,7 +111,7 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
 Jetzt können Sie mit dem Erstellen der Azure-Infrastruktur beginnen, die die Verbundauthentifizierung für Office 365 hosten soll.
   
 > [!NOTE]
-> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung, und melden Sie sich bei Ihrem Konto an.
   
@@ -120,7 +120,7 @@ Login-AzureRMAccount
 ```
 
 > [!TIP]
-> Eine Textdatei, die alle von PowerShell-Befehlen in diesem Artikel und Konfiguration Microsoft Excel-Arbeitsmappen, die generiert Ready-und-Los-PowerShell-Befehl Blöcke basierend auf Ihrer benutzerdefinierten Einstellungen enthält, finden Sie unter der [Federated-Authentifizierung für Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
+> Eine Textdatei, bei dem alle von PowerShell-Befehlen in diesem Artikel und Konfiguration Microsoft Excel-Arbeitsmappen, die Ready-und-Los-PowerShell-Befehl Blöcke basierend auf Ihrer benutzerdefinierten Einstellungen generiert, finden Sie unter der [Federated-Authentifizierung für Office 365 in Azure Deployment Kit](https://gallery.technet.microsoft.com/Federated-Authentication-8a9f1664). 
   
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
@@ -201,7 +201,7 @@ New-AzureRMVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $
 
 ```
 
-Nun erstellen Sie Netzwerksicherheitsgruppen für jedes Subnetz, das virtuelle Computer enthält. Um die Isolierung der Subnetze durchzuführen, können Sie Regeln für den jeweiligen Typ von Datenverkehr hinzufügen, der für die Netzwerksicherheitsgruppe eines Subnetzes erlaubt oder zurückgewiesen werden soll.
+Im nächsten Schritt erstellen Sie Sicherheitsgruppen für jedes Subnetz, das virtuelle Netzwerk. Informationen zum Subnetz Isolation ausführen, können Sie Regeln für bestimmten Arten von Datenverkehr erteilt oder verweigert eines Subnetzes Netzwerk-Sicherheitsgruppe hinzufügen.
   
 ```
 # Create network security groups
@@ -317,6 +317,6 @@ Gehen Sie zu [High availability federated authentication Phase 2: Configure doma
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
 
-[Grundlegendes zu Office 365-Identität und Azure Active Directory](about-office-365-identity.md)
+[Grundlegendes zur Office 365-Identität und zu Azure Active Directory](about-office-365-identity.md)
 
 

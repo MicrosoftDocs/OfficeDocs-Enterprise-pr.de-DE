@@ -1,5 +1,5 @@
 ---
-title: Schützen Sie Ihre Office 365 globaler Administrator-Konten
+title: Schützen Ihrer globalen Office 365-Administratorkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Globaler Administratorzugriff auf Ihre Office 365-Abonnements mit dieser drei Schritte zu schützen.
-ms.openlocfilehash: 7260e903ea007735c87ab8aa826e3b97e7bd28c1
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540974"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897518"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Sie Ihre Office 365 globaler Administrator-Konten
+# <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Ihrer globalen Office 365-Administratorkonten
 
  **Zusammenfassung:** Schützen Sie Ihre Office 365-Abonnements vor Angriffen, die basierend auf die Gefährdung als globaler Administrator an. 
   
@@ -92,13 +92,13 @@ Aus ab diesem Zeitpunkt melden Sie sich mit den dedizierten globalen Administrat
 
 Mehrstufige Authentifizierung (mehrstufiger Authentifizierung das) für Ihre globalen Administratorkonten benötigt zusätzliche Informationen über den Kontonamen und das Kennwort. Office 365 unterstützt die folgenden Überprüfungsmethoden:
   
-- Eines Telefonanrufs
+- Ein Telefonanruf
     
-- Einen willkürlich generierten code
+- Ein zufällig generierter Passcode
     
-- Eine Smartcard (virtuellen oder physischen)
+- Eine Smartcard (virtuell oder physisch)
     
-- Biometrisches Gerät
+- Ein biometrisches Gerät
     
 Wenn Sie ein kleines Unternehmen, das mithilfe von Benutzerkonten in der Cloud (Identitätsmodell Cloud) gespeichert sind, verwenden Sie folgende Schritte aus, um mithilfe eines Telefonanrufs oder einen Text-Nachricht gesendet, um ein Smartphone Überprüfungscode mehrstufiger Authentifizierung das konfigurieren:
   
@@ -120,7 +120,7 @@ Zum Verbinden mit Office 365-Diensten mit mehrstufiger Authentifizierung das und
   
 ## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>Schritt 3. Monitor für Kontoaktivitäten verdächtigen globaler administrator
 
-Office 365-Cloud-App-Sicherheit können Sie Richtlinien erstellen, um Sie verdächtige Verhalten, das im Rahmen Ihres Abonnements zu benachrichtigen. Cloud App-Sicherheit in Office 365 E5 integriert ist, aber es ist auch als separater Dienst verfügbar. Wenn Sie nicht über Office 365 E5 verfügen, können Sie beispielsweise einzelne Cloud App-Sicherheit Lizenzen für die Benutzerkonten erwerben, die die globaler Administrator Sicherheitsadministrator und Compliance-Administratorrollen zugewiesen sind.
+Office 365-Cloud-App-Sicherheit können Sie die Richtlinien erstellen, um Sie verdächtige Verhalten, das im Rahmen Ihres Abonnements zu benachrichtigen. Cloud App-Sicherheit in Office 365 E5 integriert ist, aber es ist auch als separater Dienst verfügbar. Wenn Sie nicht über Office 365 E5 verfügen, können Sie beispielsweise einzelne Cloud App-Sicherheit Lizenzen für die Benutzerkonten erwerben, die die globaler Administrator Sicherheitsadministrator und Compliance-Administratorrollen zugewiesen sind.
   
 Wenn Sie Cloud App-Sicherheit in Office 365-Abonnement haben, verwenden Sie folgende Schritte aus:
   

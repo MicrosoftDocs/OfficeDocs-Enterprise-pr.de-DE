@@ -1,5 +1,5 @@
 ---
-title: Implementieren von ExpressRoute für Office 365
+title: Implementierung von ExpressRoute für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: ExpressRoute für Office 365 bietet einen alternativen Pfad routing mit vielen Internet facing Office 365-Dienste. Die Architektur von ExpressRoute für Office 365 basiert auf Office 365-Diensten, die bereits zugänglich über das Internet in den bereitgestellten ExpressRoute Stromkreisen für nachfolgende Redistribution diese IP-Präfixe in sind öffentliche IP-Präfixen Werbung Ihr Netzwerk. Mit ExpressRoute können Sie effektiv mehrere verschiedene routing Pfade, über das Internet und über ExpressRoute, für viele Office 365-Dienste. Diesen Zustand in Ihrem Netzwerk weiterleiten kann eine erhebliche Änderung zum Aufbau der internen Netzwerktopologie darstellen.
-ms.openlocfilehash: c4479a236d1419293dbd433e8d3c10a11ea5fb45
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: e535135557f7f2f64077c1d926f120fff78dbd42
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22541076"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25715871"
 ---
-# <a name="implementing-expressroute-for-office-365"></a>Implementieren von ExpressRoute für Office 365
+# <a name="implementing-expressroute-for-office-365"></a>Implementierung von ExpressRoute für Office 365
 
 ExpressRoute für Office 365 bietet einen alternativen Pfad routing mit vielen Internet facing Office 365-Dienste. Die Architektur von ExpressRoute für Office 365 basiert auf Office 365-Diensten, die bereits zugänglich über das Internet in den bereitgestellten ExpressRoute Stromkreisen für nachfolgende Redistribution diese IP-Präfixe in sind öffentliche IP-Präfixen Werbung Ihr Netzwerk. Mit ExpressRoute können Sie effektiv mehrere verschiedene routing Pfade, über das Internet und über ExpressRoute, für viele Office 365-Dienste. Diesen Zustand in Ihrem Netzwerk weiterleiten kann eine erhebliche Änderung zum Aufbau der internen Netzwerktopologie darstellen.
   
@@ -115,6 +115,7 @@ Es folgt ein Beispiel für die Detailebene erforderlich. In diesem Fall weiterge
 |**Pfad Symmetrie-Steuerelement** <br/> |**Methode**: Quell-NAT  <br/> **Internet Pfad**: Quell-NAT eingehende Verbindungen mit 192.168.5.5  <br/> |**ExpressRoute Pfad**: Quell-NAT-Verbindungen für 192.168.1.0 (Chicago) und 192.168.2.0 (Dallas)  <br/> |
 
 Es folgt ein Beispiel für einen Dienst, der nur ausgehende ist:
+
 |**Connection-Eigenschaft**|**Wert**|
 |:-----|:-----|
 |**Richtung der Netzwerk-Datenverkehr** <br/> |Ausgehend  <br/> |
@@ -563,34 +564,34 @@ PSPing mit einer Netzwerk-Trace auf jeden Endpunkt Kunden ausgeführt werden, un
   
 Denken Sie daran, die beim Bereitstellen von Office 365 mit einer ExpressRoute-Verbindung, die Sie benötigen, um sicherzustellen, dass sowohl die Netzwerkkonfiguration für ExpressRoute optimal entwickelt wurde, und Sie haben auch die anderen Komponenten in Ihrem Netzwerk wie Clientcomputer optimiert. Zusätzlich zur Verwendung von diesem Planungshandbuch die Schritte behoben werden, die verpassten, haben wir auch einen [Plan für Office 365 Behandlung von Leistungsproblemen](https://support.office.com/article/Performance-troubleshooting-plan-for-Office-365-e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c) geschrieben.
   
-Nachfolgend finden Sie ein kurzer Link, zurückkehren verwendet werden können:[https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
+Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/implementexpressroute365](https://aka.ms/implementexpressroute365)
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Netzwerkkonnektivität zu Office 365](network-connectivity.md)
+[Netzwerkkonnektivität mit Office 365](network-connectivity.md)
   
 [Azure ExpressRoute für Office 365](azure-expressroute.md)
   
-[Verwalten von ExpressRoute für Office 365-Diensten](managing-expressroute-for-connectivity.md)
+[Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
   
 [Routing mit ExpressRoute für Office 365](routing-with-expressroute.md)
   
 [Netzwerkplanung mit ExpressRoute für Office 365](network-planning-with-expressroute.md)
   
-[Verwenden von BGP Communitys in ExpressRoute für Office 365-Bereitstellungsszenarios (Preview)](bgp-communities-in-expressroute.md)
+[Verwenden von BGP-Communitys in ExpressRoute für Office 365-Szenarien (Vorschau)](bgp-communities-in-expressroute.md)
   
-[Medienqualität und Konnektivität Leistung des Netzwerks in Skype für Unternehmen Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[Optimieren Ihr Netzwerk für Skype für Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
+[Optimieren Ihres Netzwerks für Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute und QoS in Skype für Unternehmen Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
 [Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
-[Office 365 Performance tuning mit Baselines und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
+[Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
   
-[Leistungsbezogene Problembehandlung Plan für Office 365](performance-troubleshooting-plan.md)
+[Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
 [URLs und IP-Adressbereiche von Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
-[Office 365 Netzwerk- und Optimieren der Leistung](network-planning-and-performance.md)
+[Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)

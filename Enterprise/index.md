@@ -14,12 +14,12 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
-ms.openlocfilehash: ce79b11ccd298a35c23a3ffcd5dd9daa1b594204
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22915020"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "27745319"
 ---
 <h1>Office 365 Enterprise</h1>
 <p>Microsoft Office&nbsp;365 bietet leistungsstarke online-Cloud-Dienste, die für die Zusammenarbeit, Sicherheit und Compliance, Mobilität, und Intellgence und Analytics zu ermöglichen. Diese Seite enthält Links zu Anleitungen für Administratoren und IT-Experten, die Bereitstellung, Konfiguration und Verwaltung von Office&nbsp;365-Dienste in Unternehmen.</p>
@@ -169,7 +169,7 @@ ms.locfileid: "22915020"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://support.office.com/article/sharepoint-online-–-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a?ui=en-US&rs=en-US&ad=US">SharePoint Online</a></h3>
+                        <h3><a href="https://support.office.com/article/sharepoint-online-–-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a?ui=en-US&rs=en-US&ad=US">SharePoint Online</a></h3>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@ ms.locfileid: "22915020"
 </ul>
 
 <hr>
-<h2>Community und Support</h2>
+<h2>Weitere Ressourcen</h2>
 
 <ul class="panelContent cardsF">
     <li>
@@ -273,8 +273,25 @@ ms.locfileid: "22915020"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Einholen von Hilfeinformationen</h3>
+                        <h3>Anfordern von Support</h3>
                         <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Kontaktieren des Supports bei Hilfe zu Office&nbsp;365.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="Microsoft 365 Caret image" data-linktype="external">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Microsoft 365</h3>
+                        <p><a href="https://docs.microsoft.com/microsoft-365">Erfahren Sie mehr über Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>

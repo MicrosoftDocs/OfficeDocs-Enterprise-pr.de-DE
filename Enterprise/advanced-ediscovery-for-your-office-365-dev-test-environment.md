@@ -13,23 +13,24 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
-description: 'Zusammenfassung: Konfigurieren Sie und veranschaulichen Sie der Office 365 erweiterte eDiscovery mit Beispieldaten in Ihrer Office 365 Dev/Test-Umgebung.'
-ms.openlocfilehash: e850cf7ebab806d8ff51176a3e88077a692c41ef
-ms.sourcegitcommit: fa8a42f093abff9759c33c0902878128f30cafe2
+description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
+ms.openlocfilehash: c93900e07b8b9adbe0f1120eca77019b9dcc1eda
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897508"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
- **Zusammenfassung:** Konfigurieren Sie und veranschaulichen Sie der Office 365 erweiterte eDiscovery mit Beispieldaten in Ihrer Office 365 Dev/Test-Umgebung.
+ **Zusammenfassung:** Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.
   
 Office 365 erweiterte eDiscovery können Sie schnell zu finden und Analysieren der relevanten Informationen über die Daten, die in Office 365, einschließlich e-Mails und Dokumente gespeichert ist. Dies kann große Datenmengen Zeit und Kosten, insbesondere in Situationen Rechtsstreitigkeiten sparen. Weitere Informationen finden Sie unter [Office 365 erweiterte eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
   
 Mit den Anweisungen in diesem Artikel erstellen Sie eine kleine Gruppe von Daten für eine fiktive Vertragsstreitigkeit und analysieren diese mit der Erweiterten eDiscovery.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -50,59 +51,59 @@ In diesem Verfahren erstellen Sie E-Mail-Nachrichten, die Sie später in einem e
     
   - Wenn Sie den simulierten Test-/unternehmensumgebung verwenden, verwenden Sie das Azure-Portal ([https://portal.azure.com](https://portal.azure.com)) zum Verbinden mit dem virtuellen Computer CLIENT1, und melden Sie sich von CLIENT1 aus.
     
-2. Klicken Sie auf der Registerkarte **Outlook E-Mail** auf **neu**.
+2. Klicken Sie auf der Registerkarte **Outlook-Mail** auf **Neu**.
     
 3. Geben Sie im Feld **an**die e-Mail-Adresse des Kontos User6 des Test-Abonnement ( **user6 @.** <organization name> **. onmicrosoft.com**).
     
-4. Geben Sie für den Betreff **e-Mail testen 1**.
+4. Geben Sie für den Betreff **Test-E-Mail 1** ein.
     
-5. Klicken Sie im Textkörper Geben Sie **Tailspin Vertragsentwurf**, und klicken Sie dann auf **Senden**.
+5. Geben Sie in den Textbereich **Tailspin Vertragsentwurf** ein, und klicken Sie dann auf **Senden**.
     
-6. Klicken Sie auf der Registerkarte **Outlook E-Mail** auf **neu**.
+6. Klicken Sie auf der Registerkarte **Outlook-Mail** auf **Neu**.
     
-7. Geben Sie im Feld **an**die e-Mail-Adresse des Kontos User6 des Test-Abonnement.
+7. Geben Sie unter **An** die E-Mail-Adresse des user6-Kontos Ihres Testabonnements ein.
     
-8. Geben Sie für den Betreff **e-Mail testen 2**ein.
+8. Geben Sie für den Betreff **Test-E-Mail 2** ein.
     
-9. Klicken Sie im Textkörper Geben Sie **Tailspin Lunch Besprechung**, und klicken Sie dann auf **Senden**.
+9. Geben Sie in den Textbereich **Tailspin Geschäftsessen** ein, und klicken Sie dann auf **Senden**.
     
-10. Klicken Sie auf der Registerkarte **Outlook E-Mail** auf **neu**.
+10. Klicken Sie auf der Registerkarte **Outlook-Mail** auf **Neu**.
     
-11. Geben Sie im Feld **an**die e-Mail-Adresse des Kontos User6 des Test-Abonnement.
+11. Geben Sie unter **An** die E-Mail-Adresse des user6-Kontos Ihres Testabonnements ein.
     
-12. Geben Sie für den Betreff **Test e-Mail 3**.
+12. Geben Sie für den Betreff **Test-E-Mail 3** ein.
     
-13. Klicken Sie im Textkörper Geben Sie **Tailspin Vertrag nicht einverstanden**, und klicken Sie dann auf **Senden**.
+13. Geben Sie in den Textbereich **Tailspin vertragliche Unstimmigkeiten** ein, und klicken Sie dann auf **Senden**.
     
 14. Klicken Sie auf das Symbol für Benutzer in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
 15. Öffnen Sie eine neue Registerkarte, und melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit den Kontonamen und das Kennwort des Kontos User6 des Test-Abonnement.
     
-16. Klicken Sie auf der Registerkarte **Office 365-Portal** auf **Mail**.
+16. Klicken Sie auf der Registerkarte **Office 365-Portal** auf **E-Mail**.
     
-17. Klicken Sie auf der Registerkarte **E-Mail - User6 - Outlook** stellen Sie sicher, dass User6 alle drei e-Mails von Outlook-e-Mail-Kontos empfangen.
+17. Überprüfen Sie auf der Registerkarte **E-Mail - User6 - Outlook** , User6 alle drei e-Mails von Outlook-e-Mail-Kontos empfangen.
     
-18. Wechseln Sie zu der **Office 365-Portal-Registerkarte** für User6.
+18. Wechseln Sie zurück zu Registerkarte **Office 365-Portal** für User6.
     
-19. Klicken Sie auf das Symbol für Benutzer in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden.**
+19. Klicken Sie oben rechts auf das Benutzersymbol, und klicken Sie dann auf **Abmelden**.
     
 In diesem Verfahren erstellen Sie zwei Word-Dokumente, die Sie später in einem erweiterten eDiscovery-Fall analysieren werden.
   
-1. Klicken Sie auf der Seite **Office** auf **anmelden,** melden Sie sich mit den Anmeldeinformationen Ihres Kontos globaler Administrator.
+1. Klicken Sie auf der Seite **Office** auf **Anmelden**, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos an.
     
 2. Klicken Sie auf eine neue Registerkarte Zugriff auf die URL der Produktion SharePoint-Website: **https://** <fictional organization name> **.sharepoint.com/sites/production**
     
-3. Klicken Sie auf der Registerkarte **produktionswebsitesammlung** unter **Dokumente**auf **Neu > Word-Dokument**.
+3. Klicken Sie auf der Registerkarte **Produktions-Websitesammlung** unter **Dokumente** auf **Neu > Word-Dokument**.
     
-4. Geben Sie auf der Seite **Word Online** **Tailspin Vertragsentwurf**, warten Sie, bis es **Saved** im Titel anzeigt, und schließen Sie dann das **Word Online** Seitenregister.
+4. Geben Sie auf der Seite **Word Online****Tailspin-Vertrangsentwurf** ein, warten Sie, bis **Gespeichert** im Titel angezeigt wird, und schließen Sie dann die Seite **Word Online**.
     
-5. Klicken Sie auf der Registerkarte **produktionswebsitesammlung** unter **Dokumente**auf **Neu > Word-Dokument**.
+5. Klicken Sie auf der Registerkarte **Produktions-Websitesammlung** unter **Dokumente** auf **Neu > Word-Dokument**.
     
-6. Klicken Sie auf der Registerkarte **Word Online** Geben Sie **Tailspin Vertrag Fall Notizen**, warten Sie, bis es **Saved** im Titel anzeigt, und schließen Sie dann die Registerkarte **Word Online** .
+6. 	Geben Sie auf der Seite **Word Online****Tailspin-Vertrangsentwurf** ein, warten Sie, bis **Gespeichert** im Titel angezeigt wird, und schließen Sie dann die Seite **Word Online**.
     
-7. Klicken Sie auf der Registerkarte **produktionswebsitesammlung** sollte **Dokument-** und **Document1** in der Liste der Dokumente angezeigt werden.
+7. Auf der Registerkarte **Produktions-Websitesammlung** sollte nun **Dokument** und **Dokument1** in der Liste der Dokumente angezeigt werden.
     
-8. Schließen Sie die Registerkarte **produktionswebsitesammlung** .
+8. Schließen Sie die Registerkarte **Produktions-Websitesammlung**.
     
 ## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a>Phase 3: Verwenden Sie erweiterte eDiscovery gemeldet werden, rechtliche
 
@@ -118,23 +119,23 @@ In diesem Verfahren erstellen Sie eine Suche in das Wertpapier &amp; Compliance 
   
 1. Klicken Sie auf der Registerkarte **Office 365-Portal** auf **Admin**.
     
-2. Klicken Sie im linken Navigationsbereich der Registerkarte Admin Center auf **Zentriert Admin > Compliance**.
+2. Klicken Sie im linken Navigationsbereich der Admin Center-Registerkarte auf **Admin Center > Compliance**.
     
 3. Klicken Sie auf die **Sicherheit &amp; Compliance** Registerkarte, klicken Sie auf **Berechtigungen**.
     
-4. Doppelklicken Sie in der Liste **Berechtigungen** auf **Organization Management**.
+4. Doppelklicken Sie in der Liste **Berechtigungen** auf **Organisationsverwaltung**.
     
-5. Klicken Sie im Fenster **Rollengruppe** unter **Mitglieder**auf das Pluszeichen (+).
+5. Klicken Sie im Fenster **Rollengruppe** unter **Mitglieder** auf das Pluszeichen (+).
     
-6. Klicken Sie im Fenster **Elemente auswählen** Doppelklicken auf den Namen des Administratorkontos, und klicken Sie dann auf **OK**.
+6. Doppelklicken Sie im Fenster **Auswählen von Mitgliedern** auf den Namen Ihres Administratorkontos, und klicken Sie dann auf **OK**.
     
 7. Klicken Sie im Fenster **Rollengruppe** auf **Speichern**.
     
 8. Doppelklicken Sie in der Liste **Berechtigungen** auf **eDiscovery-Manager**.
     
-9. Klicken Sie im Fenster **Rollengruppe** unter **eDiscovery-Administrator**, auf das plus-Symbol.
+9. Klicken Sie im Fenster **Rollengruppe** unter **eDiscovery-Administrator** auf das Pluszeichen.
     
-10. Klicken Sie im Fenster **Elemente auswählen** Doppelklicken auf den Namen des Administratorkontos, und klicken Sie dann auf **OK**.
+10. Doppelklicken Sie im Fenster **Auswählen von Mitgliedern** auf den Namen Ihres Administratorkontos, und klicken Sie dann auf **OK**.
     
 11. Klicken Sie im Fenster **Rollengruppe** auf **Speichern**.
     
@@ -142,39 +143,39 @@ In diesem Verfahren erstellen Sie eine Suche in das Wertpapier &amp; Compliance 
     
 13. Klicken Sie auf das Pluszeichen, um eine Suche hinzuzufügen.
     
-14. Geben Sie im Fenster **neue Suche** **Tailspin Vertrag suchen** im **Feld Name**ein.
+14. Geben Sie im Fenster **Neue Suche** den Text **Tailspin Vertragsuche** unter **Name** ein.
     
-15. In **Wo möchten Sie uns aussehen?**, klicken Sie auf **Suchen überall,** wählen Sie **Exchange**, **SharePoint**und **Öffentliche Ordner**, und klicken Sie dann auf **nächsten.**
+15. Klicken Sie unter **Wo sollen wir suchen?** auf **Überall suchen**, wählen Sie **Exchange**, **SharePoint** und **Öffentliche Ordner** aus, und klicken Sie dann auf **Weiter**.
     
-16. In **Was möchten Sie uns suchen?**, geben Sie **Tailspin Vertrag**, und klicken Sie auf **Suchen**.
+16. Geben Sie unter **Wonach sollen wir suchen?** den Text **Tailspin Vertrag** ein, und klicken Sie dann auf **Suche**.
     
-17. Klicken Sie in der Liste der Suchvorgänge auf den Namen **Tailspin Vertrag suchen** .
+17. Klicken Sie in der Liste von Suchvorgängen auf den Namen **Tailspin Vertragsuche**.
     
 18. Klicken Sie im Bereich **Tailspin Vertrag Suche** unter **Ergebnisse**auf **Vorschau der Suchergebnisse** . Ein Fenster mit den beiden Dokumenten in der Produktion SharePoint-Website ( **Dokument** und **Document1**) und die **e-Mail testen 1** und **Test e-Mail 3** e-Mails an User6 sollte angezeigt werden. Schließen Sie das Fenster.
     
-19. Klicken Sie im Bereich **Inhaltssuche** unter **Analyze Ergebnisse mit erweiterten eDiscovery**auf **Vorschau Ergebnisse für die Analyse**.
+19. Klicken Sie im Bereich **Inhaltssuche** unter **Analysieren der Ergebnisse mit der erweiterten eDiscovery** auf **Ergebnisse für Analyse in Vorschau anzeigen**.
     
-20. Klicken Sie im Fenster **Vorbereiten der Suche Ergebnisse für die Tailspin Vertrag Suche** klicken Sie auf **die Freigabe vorbereiten** , und warten, bis er abgeschlossen.
+20. Klicken Sie im Fenster **Vorbereiten der Suchergebnisse für Tailspin Vertragsuche** auf **Vorbereiten** und warten Sie, bis der Vorgang abgeschlossen ist.
     
 In diesem Verfahren erstellen Sie einen neuen Fall für die erweiterte eDiscovery und analysieren die Ergebnisse der Tailspin-Vertragsuche.
   
 1. Klicken Sie im linken Navigationsbereich auf **eDiscovery** unter **Suche &amp; Untersuchung**.
     
-2. Klicken Sie im Bereich **eDiscovery** klicken Sie auf **Erweiterte eDiscovery**.
+2. Klicken Sie im Bereich **eDiscovery** auf **Zur erweiterten eDiscovery wechseln**.
     
-3. Klicken Sie in der Registerkarte **Erweitert eDiscovery** auf das plus-Symbol, um eine neue Anfrage hinzuzufügen.
+3. Klicken Sie auf der Registerkarte **Erweiterte eDiscovery** auf das Pluszeichen, um einen neuen Fall hinzuzufügen.
     
-4. Klicken Sie im Bereich **Hinzufügen Groß-/Kleinschreibung** Geben Sie **Tailspin Vertrag Fall** im **Feld Name**ein, und klicken Sie dann auf **OK**. Warten Sie die Groß-/Kleinschreibung erstellt werden soll.
+4. 	Geben Sie im Bereich **Fall hinzufügen** den Text **Tailspin vertragliche Unstimmigkeit** unter **Name** ein, und klicken Sie dann auf **OK**. Warten Sie, bis der Fall erstellt wurde.
     
-5. Doppelklicken Sie in der Liste den Fall **Tailspin Vertrag Fall** .
+5. Doppelklicken Sie auf den Fall **Tailspin vertragliche Unstimmigkeit** in der Liste. 
     
 6. Klicken Sie auf den Container **Tailspin Vertrag Suche** in der Liste **Container** , und klicken Sie dann auf **Prozess**. Warten Sie, bis die Verarbeitung für die Durchführung.
     
-7. Wenn **Prozess: abgeschlossen** angezeigt wird am unteren Rand des Fensters, klicken Sie auf **Prozess Zusammenfassung** im linken Navigationsbereich auf eine Zusammenfassung anzuzeigen.
+7. Wenn am unteren Rand des Fensters **Verarbeitung abgeschlossen** angezeigt wird, klicken Sie in der linken Navigation auf **Prozesszusammenfassung**, um eine Zusammenfassung anzuzeigen.
     
-8. Klicken Sie in der oberen Navigationsleiste auf **Analysieren**.
+8. Klicken Sie auf der oberen Navigationsleiste auf **Analysieren**.
     
-9. Geben Sie auf der Seite **Setup** unter **Designs** **3** in **maximale Anzahl von Designs**.
+9. Geben Sie auf der Seite **Setup** unter **Designs** die Zahl **3** in **Maximale Anzahl von Designs** ein.
     
 10. Klicken Sie auf **Analysieren** , und warten Sie für die Analyse abgeschlossen. Eine Reihe von Kreis-Diagrammen mit Analyse der Zielgruppe, Dokumente, e-Mail-Nachrichten und Anlagen sollte angezeigt werden. Weitere Informationen finden Sie unter [Ergebnisse anzeigen analysieren](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
     
@@ -194,6 +195,6 @@ Sie können diese Umgebung jetzt verwenden, um neue Inhalte, neue Suchvorgänge 
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
 
-[Office 365 erweiterte eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
+[Office 365 Advanced eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4)
 
 

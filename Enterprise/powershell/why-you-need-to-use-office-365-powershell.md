@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Zusammenfassung: Verstehen Sie, warum Sie aus Effizienzgründen oder aus Notwendigkeit Office 365 PowerShell zum Verwalten von Office 365 verwenden müssen.'
-ms.openlocfilehash: 4dd10db4c27e6d9f28c3638bd8c732701c9dfeac
-ms.sourcegitcommit: 22db89d5b13f7d85e03f35f21f25fa288aadf1b4
+ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575269"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897468"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Warum Sie Office 365 PowerShell verwenden müssen
 
@@ -65,7 +65,7 @@ Im Office 365 Admin Center werden zahlreiche hilfreiche Informationen angezeigt,
   
 ![Beispiel für die Anzeige von Benutzern und Gruppen im Office 365 Admin Center](media/o365-powershell-users-and-groups.png)
   
-Hier werden für zahlreiche Zwecke die benötigten Informationen angezeigt. Es kann jedoch vorkommen, dass Sie mehr benötigen. Die Office 365-Lizenzierung (und auch die für einen Benutzer verfügbaren Office 365-Features) sind teilweise vom geografischen Standort dieses Benutzers abhängig. Die Richtlinien und Features, die Sie auf einen Benutzer erweitern können, der in den USA lebt, sind möglicherweise nicht die gleichen Richtlinien und Features, die Sie auf einen Benutzer erweitern können der in Indien oder in Belgien lebt. Sie können das Office 365 Admin Center verwenden, um den geografischen Standort eines Benutzers mit den folgenden Schritten zu bestimmen:
+Für viele Zwecke zeigt diese Informationen, die Sie wissen müssen. Es gibt jedoch vorkommen, dass mehr benötigen. Beispielsweise hängen von Office 365-Lizenzierung (und die Office 365-Features für einen Benutzer verfügbar) teilweise geografischen Standort des Benutzers. Die Richtlinien und Features, die Sie einem Benutzer erweitern können, die in den USA befindet ist möglicherweise nicht dieselbe wie die Richtlinien und Features, die Sie einem Benutzer, die in Indien oder in Belgien befindet sich erweitern können. Office 365 Administrationscenter können Sie bestimmen eines Benutzers geografischen Standort, an dem diese Schritte:
   
 1. Doppelklicken Sie auf den **Anzeigenamen** des Benutzers.
     
@@ -329,7 +329,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell erleichtert das Drucken oder Speichern von Daten
 
-Im Office 365 Admin Center können Sie Datenlisten anzeigen. Nachfolgend sehen Sie ein Beispiel im Skype for Business Online Admin Center, bei dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.
+Office 365 Administrationscenter können Sie eine Liste von Daten anzeigen. Es folgt ein Beispiel für die Skype für Business Online Admin Center Anzeigen einer Liste von Benutzern, die für die Skype für Business Online aktiviert wurden:
   
 ![Beispiel für das Skype for Business Online Admin Center, in dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.](media/o365-powershell-lync-users.png)
   

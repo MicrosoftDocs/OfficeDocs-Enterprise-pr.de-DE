@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Erläutert, warum Netzwerk Optimierung für SaaS Dienste, die das Ziel der Office 365-Netzwerke, wichtig ist und wie SaaS unterschiedliche Netzwerke aus anderen Arbeitslasten erfordert.
-ms.openlocfilehash: ebd7410ec5fe421561543f1223e455377e99e625
-ms.sourcegitcommit: 09985cb7894725289ef1fc8ddd90b569c285c09e
+ms.openlocfilehash: 4acaee86136c88e5ac5b3c795f594fb056d15204
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25002354"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897208"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Übersicht über Office 365 Netzwerk-Konnektivität
 
@@ -84,7 +84,7 @@ Die lokale Ausgang Architektur bietet folgende Vorteile für Office 365 Netzwerk
 > [!NOTE]
 > Die _verteilte Service vorne Tür_ -Infrastruktur ist das Microsoft Global Network hochverfügbar und skalierbare Netzwerkgrenze mit geografisch verteilten Standorten. Endbenutzer Verbindungen beendet, und leitet sie effizient innerhalb des globalen Microsoft-Netzwerks. Erfahren Sie mehr über das Microsoft Global Network unter [wie Microsoft erstellt das schnelle und verlässliche globale Netzwerk](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
-Weitere Informationen zum verstehen und Anwenden von Office 365 Network Connectivity Prinzipien finden Sie unter [Office 365 Network Connectivity Prinzipien](office-365-network-connectivity-principles#office-365-connectivity-principles).
+Weitere Informationen zum verstehen und Anwenden von Office 365 Network Connectivity Prinzipien finden Sie unter [Office 365 Network Connectivity Prinzipien](office-365-network-connectivity-principles.md).
 
 ## <a name="conclusion"></a>Schlussbemerkung
 
@@ -94,11 +94,11 @@ Optimieren der Leistung von Office 365 Netzwerk kommt wirklich nach unten zum En
 
 [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
 
-[Office 365-IP-Adress- und -URL-Webdienst](office-365-ip-web-service.md)
+[Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
 
 [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
 
-[Office 365-IP-Adress- und -URL-Webdienst](office-365-ip-web-service.md)
+[Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
 
 [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
 

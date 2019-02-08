@@ -16,21 +16,21 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Zusammenfassung: Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.'
-ms.openlocfilehash: 91d3b40f43eed750bd33065faa1c57d74179cf58
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914850"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897438"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen
 
  **Zusammenfassung:** Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.
   
-Der Client Azure Information Protection können Sie ein Dokument klassifizieren, bevor Sie ihn in einen Ordner SharePoint Online in Office 365 hochladen. Mit den Anweisungen in diesem Artikel installieren Sie den Client Azure Information Protection und veranschaulichen der Datenklassifikation. Weitere Informationen finden Sie unter [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Die Azure Information Protection-Clients können ein Dokument klassifizieren, bevor Sie ihn in einen Ordner SharePoint Online in Office 365 hochladen. Mit den Anweisungen in diesem Artikel installieren Sie den Client Azure Information Protection und veranschaulichen der Datenklassifikation. Weitere Informationen finden Sie unter [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -126,7 +126,7 @@ Als Nächstes veranschaulichen Sie die Klassifizierung von Dokumenten.
     
 9. Klicken Sie in der Taskleiste auf **Datei-Explorer**, und öffnen Sie dann den **Dokumente**-Ordner.
     
-    Beachten Sie die verschiedenen Dateigrößen der Dokumente **VorAIP** und **NachAIP**. Das Dokument „NachAIP“ ist größer, da es die Klassifizierungsinformationen enthält.
+    Beachten Sie die verschiedenen Dateigröße der Dokumente **BeforeAIP** und **AfterAIP** . Das Dokument AfterAIP ist größer, da er die Klassifizierungsinformationen besitzt.
     
 Im nächsten Schritt erlauben Sie jedem, auf die Websitesammlung „Support“ zuzugreifen.
   

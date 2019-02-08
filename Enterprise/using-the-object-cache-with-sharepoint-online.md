@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 38bc9c14-3826-449c-beb6-b1003bcbeaaf
 description: In diesem Artikel erläutert den Unterschied zwischen der Verwendung des Objektcaches in SharePoint Server 2013 lokal und SharePoint Online.
-ms.openlocfilehash: 8aa505645bb5f39c65684412ddebbd2b02baa13f
-ms.sourcegitcommit: 7cd210c44622ea2de5fb0e8e91c7be4839c80205
+ms.openlocfilehash: 59f3a69199893cb367d4d28c0c545ebd9dfd1236
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24056164"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25769854"
 ---
 # <a name="using-the-object-cache-with-sharepoint-online"></a>Verwenden des Objektcaches mit SharePoint Online
 
@@ -34,7 +34,7 @@ Wenn SharePoint Server 2013 gehosteten lokalen ist, kann der Kunde auf private F
   
 Wenn ein Benutzer also eine Seite zum zweiten Mal besucht, verbessert sich die Ladezeit der Seite. Nach mindestens vier Ladevorgängen der gleichen Seite wird die Seite auf allen Front-End-Webservern zwischengespeichert.
   
-Im Gegensatz dazu in SharePoint Online sind viele weitere Server jedoch auch viele weitere Websites. Jeder Benutzer kann auf einen anderen Front-End-Webserver verbinden, für das die Clientcache gefüllt ist. Oder vielleicht der Cache für einen Server aufgefüllt erhalten möchten, aber die fordert eine Seite an des nächsten Benutzers an diesen Front-End-Webserver aus einer anderen Website. Oder, selbst wenn der nächste Benutzer die gleiche Seite wie bei ihrer vorherigen Besuch anfordert, sie sind mit Lastenausgleich an einem anderen Front-End-Webserver, der diese Seite nicht in seinem Cache enthalten ist. In diesem Fall helfen nicht Zwischenspeichern der Benutzer in allen.
+Im Gegensatz dazu in SharePoint Online sind viele weitere Server jedoch auch viele weitere Websites. Jeder Benutzer kann auf einen anderen Front-End-Webserver verbinden, für das die Clientcache gefüllt ist. Oder, vielleicht Cache abrufen gefüllt für einen Server, jedoch den nächsten Benutzer auf eine Seite, Front-End-Server-Anforderungen aus einer anderen Website. Oder, selbst wenn der nächste Benutzer die gleiche Seite wie bei ihrer vorherigen Besuch anfordert, sie sind mit Lastenausgleich an einem anderen Front-End-Webserver, der diese Seite nicht in seinem Cache enthalten ist. In diesem Fall helfen nicht Zwischenspeichern der Benutzer in allen.
   
 In der folgenden Abbildung stellt jeder Punkt eine Seite dar, die ein Benutzer anfordert, und gibt an, wo sie zwischengespeichert ist. Die verschiedenen Farben stehen für die unterschiedlichen Kunden, die die SaaS-Infrastruktur gemeinsam nutzen.
   
