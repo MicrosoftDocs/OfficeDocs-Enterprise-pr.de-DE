@@ -17,12 +17,12 @@ ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Rufen Sie IT-Poster ab, auf denen die Architekturmodelle, die Bereitstellung und Plattformoptionen für SharePoint, Exchange, Skype for Business und Lync beschrieben werden.'
-ms.openlocfilehash: 0965a4389ef61c981e30aeec8dd3b3dcff90d20e
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 28cfc1073d54a46976224f115cce43315c7c43fb
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915540"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897528"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync
 
@@ -108,7 +108,7 @@ Diese neuen IT-Poster für SharePoint 2016 und Skype for Business 2015 bieten ei
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht des SharePoint Server 2016-Datenbankposters](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Dieses IT-Poster ist eine Kurzübersicht für SharePoint Server 2016-Datenbanken. Jede Datenbank weist die folgenden Details auf: <br/><br/> – Größe <br/> – Hilfestellung zur Skalierung <br/> – E/A-Muster <br/> – Anforderungen <br/><br/>  Die erste Seite enthält die SharePoint-Systemdatenbanken und die Dienstanwendungen, die mehrere Datenbanken aufweisen. Auf der zweiten Seite sind alle Dienstanwendungen verzeichnet, die über Einzeldatenbanken verfügen. <br/><br/>  Weitere Informationen zu den SharePoint Server 2016-Datenbanken finden Sie unter [Datenbanktypen und -beschreibungen in SharePoint Server 2016](https://technet.microsoft.com/de-DE/library/cc678868%28v=office.16%29.aspx). <br/> |
+|[![Miniaturansicht des SharePoint Server 2016-Datenbankposters](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Dieses IT-Poster ist eine Kurzübersicht für SharePoint Server 2016-Datenbanken. Jede Datenbank weist die folgenden Details auf: <br/><br/> – Größe <br/> – Hilfestellung zur Skalierung <br/> – E/A-Muster <br/> – Anforderungen <br/><br/>  Die erste Seite enthält die SharePoint-Systemdatenbanken und die Dienstanwendungen, die mehrere Datenbanken aufweisen. Auf der zweiten Seite sind alle Dienstanwendungen verzeichnet, die über Einzeldatenbanken verfügen.<br/><br/>  Weitere Informationen zu den SharePoint Server 2016-Datenbanken finden Sie unter [Datenbanktypen und -beschreibungen in SharePoint Server 2016](https://technet.microsoft.com/de-DE/library/cc678868%28v=office.16%29.aspx). <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Architekturmodelle für Microsoft Skype for Business 2015

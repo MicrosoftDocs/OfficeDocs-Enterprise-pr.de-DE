@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: f028acb99d0687bb3fcfbc1c66bdd8885850565b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: d22f23d2c5c36f45cff7fde3185e1de3e4961ef9
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915240"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897548"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -105,7 +105,7 @@ New-AzureRMVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!TIP]
-> [Hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0) finden Sie eine Textdatei, die alle PowerShell-Befehle in diesem Artikel enthält.
+> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-f79bc2c2?redir=0), um eine Textdatei zu erhalten, die alle PowerShell-Befehle in diesem Artikel enthält.
   
 Im nächsten Schritt stellen Sie über das [Azure-Portal](http://portal.azure.com) eine Verbindung mit dem virtuellen Computer ADFS1 mit dem Namen und Kennwort des lokalen Administratorkontos von ADFS1 her und öffnen dann eine Windows PowerShell-Eingabeaufforderung.
   

@@ -3,11 +3,13 @@ title: Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/11/2018
+ms.date: 08/09/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -15,11 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um ein Office 365-Testabonnement für Analysen oder Entwicklungs-/Testumgebungen zu erstellen.'
-ms.openlocfilehash: 57fdf66f11d9c71faf81e2a88482093f8f17dfbd
-ms.sourcegitcommit: 8fcf6fd9f0c45a5445654ef811410fca3f4f5512
+ms.openlocfilehash: 1606f30e28a482e60610d15b2f1643b9dd5b3240
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897268"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 
@@ -38,7 +41,7 @@ Sie können ein Office 365-Testabonnement verwenden und eine Office 365-Entwickl
 > [!NOTE]
 > Sie können diesen Artikel auch ausdrucken, um die bestimmten Werte zu notieren, die Sie für diese Umgebung in den kommenden 30 Tage des Office 365-Testabonnements benötigen. Sie können das Testabonnement einfach um weitere 30 Tage verlängern. Für eine dauerhafte Entwicklungs-/Testumgebung erstellen Sie ein neues bezahltes Abonnement mit einer kleinen Anzahl von Lizenzen. 
   
-![Testumgebungsanleitungen in der Microsoft Cloud](images/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Testumgebungsanleitungen in der Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
@@ -51,7 +54,7 @@ Sie benötigen ein Azure-Abonnement. Sie können die [kostenlose Testversion von
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Die Basiskonfiguration der Entwicklungs-/ Testumgebung in Azure](images/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
+![Die Basiskonfiguration der Entwicklungs-/ Testumgebung in Azure](media/25a010a6-c870-4690-b8f3-84421f8bc5c7.png)
 
 
   
@@ -61,13 +64,13 @@ Diese Konfiguration besteht aus virtuellen DC1-, APP1- und CLIENT1-Computern in 
 
 Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Unternehmensnamen und ein neues Microsoft-Konto.
   
-1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: ![](./images/Common_Images/TableLine.png).
+1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: ![](./media/Common-Images/TableLine.png).
     
 2. Wenn Sie sich für ein neues Microsoft-Konto registrieren möchten, wechseln Sie zu [https://outlook.com](https://outlook.com), und erstellen Sie ein Konto mit neuem E-Mail-Konto und neuer E-Mail-Adresse. Dieses Konto wird für die Registrierung für Office 365 verwendet.
     
-  - Notieren Sie hier den Vor- und Nachnamen des Kontos: ![](./images/Common_Images/TableLine.png)
+  - Notieren Sie hier den Vor- und Nachnamen des Kontos: ![](./media/Common-Images/TableLine.png)
     
-  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![](./images/Common_Images/TableLine.png)@outlook.com
+  - Notieren Sie hier die neue E-Mail-Kontoadresse: ![](./media/Common-Images/TableLine.png)@outlook.com
     
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Registrieren für ein Office 365 E5-Testabonnement
 
@@ -97,7 +100,7 @@ Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Un
     
     Notieren Sie das verwendete Kennwort, und bewahren Sie es an einem sicheren Ort auf.
     
-    Notieren Sie hier den fiktiven Unternehmensnamen, der im Folgenden **Organisationsname** genannt wird: ![](./images/Common_Images/TableLine.png)
+    Notieren Sie hier den fiktiven Unternehmensnamen, der im Folgenden **Organisationsname** genannt wird: ![](./media/Common-Images/TableLine.png)
     
 5. Klicken Sie auf **Mein Konto erstellen**.
     
@@ -105,9 +108,9 @@ Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Un
     
 7. Geben Sie den Verifizierungscode ein, den Sie per SMS erhalten haben, und klicken Sie dann auf **Weiter**.
     
-8. Notieren Sie hier die URL der Anmeldeseite (auswählen und kopieren): ![](./images/Common_Images/TableLine.png)
+8. Notieren Sie hier die URL der Anmeldeseite (auswählen und kopieren): ![](./media/Common-Images/TableLine.png)
     
-9. Notieren Sie hier die Benutzer-ID (auswählen und kopieren): ![](./images/Common_Images/TableLine.png).onmicrosoft.com
+9. Notieren Sie hier die Benutzer-ID (auswählen und kopieren): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Dieser Wert wird **Name des globalen Office 365-Administrators** genannt.
     
@@ -119,7 +122,7 @@ Nun sollte die Hauptseite des Office 365-Portals angezeigt werden, über die Si
   
 So sieht die resultierende Konfiguration für die simulierte Office 365-Entwicklungs-/Testunternehmensumgebung aus.
   
-![Die Office 365-Entwicklungs-/Testumgebung](images/48fb91aa-09b0-4020-a496-a8253920c45d.png)
+![Die Office 365-Entwicklungs-/Testumgebung](media/48fb91aa-09b0-4020-a496-a8253920c45d.png)
   
 Diese Konfiguration besteht aus:  
   
@@ -184,8 +187,10 @@ Notieren Sie das generierte Kennwort für das Konto „Benutzer 5“ aus der **N
   
 Im nächsten Schritt erstellen Sie drei neue SharePoint Online-Teamwebsites für die Abteilungen Sales, Produktion und Support.
   
-### <a name="create-three-new-sharepoint-online-team-sites"></a>Erstellen von drei neuen SharePoint Online-Teamwebsites
+## <a name="phase-4-create-three-new-sharepoint-online-team-sites-optional"></a>Phase 4: Erstellen von drei neuen SharePoint Online-Teamwebsites (optional)
 
+In dieser Phase konfigurieren Sie eine Reihe von SharePoint Online-Teamwebsites.
+  
 1. Installieren Sie die [SharePoint Online-Verwaltungsshell](https://go.microsoft.com/fwlink/p/?LinkId=255251) (die x64-Version).
     
 2. Klicken Sie auf **Start**, geben Sie **sharepoint** ein, und klicken Sie dann auf **SharePoint Online-Verwaltungsshell**.
@@ -223,11 +228,11 @@ New-SPOSite -Url $siteURL -Owner $owner -StorageQuota 1000 -Title "Support site 
 
 Notieren Sie die folgenden Werte für die Arbeit mit oder Bereitstellen von zusätzlichen Leitfäden für Test Lab in dieser Testumgebung:
   
-- Name des globalen Office 365-Administrators: ![](./images/Common_Images/TableLine.png).onmicrosoft.com (aus Schritt 9 von Phase 2)
+- Name des globalen Office 365-Administrators: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (aus Schritt 9 von Phase 2)
     
     Notieren Sie auch das Kennwort für dieses Konto, und bewahren Sie es an einem sicheren Ort auf.
     
-- Organisationsname für das Testabonnement: ![](./images/Common_Images/TableLine.png) (aus Schritt 4 von Phase 2)
+- Organisationsname für das Testabonnement: ![](./media/Common-Images/TableLine.png) (aus Schritt 4 von Phase 2)
     
 - Führen Sie über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung den folgenden Befehl aus, um die Konten für Benutzer 2, Benutzer 3, Benutzer 4 und Benutzer 5 anzuzeigen:
     
@@ -237,27 +242,27 @@ Notieren Sie die folgenden Werte für die Arbeit mit oder Bereitstellen von zus�
 
     Notieren Sie hier die Kontonamen:
     
-  - Kontoname für Benutzer 2: benutzer2@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Kontoname für Benutzer 2: benutzer2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Kontoname für Benutzer 3: benutzer3@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Kontoname für Benutzer 3: benutzer3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Kontoname für Benutzer 4: benutzer4@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Kontoname für Benutzer 4: benutzer4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - Kontoname für Benutzer 5: benutzer5@![](./images/Common_Images/TableLine.png).onmicrosoft.com
+  - Kontoname für Benutzer 5: benutzer5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
     
     Notieren Sie auch die Kennwörter für diese Konten, und bewahren Sie sie an einem sicheren Ort auf.
     
-- Führen Sie über die Eingabeaufforderung der SharePoint Online-Verwaltungsshell den folgenden Befehl aus, um die URLs für die Teamwebsites „Sales“, „Produktion“ und „Support“ anzuzeigen:
+- (Optional) Führen Sie über die Eingabeaufforderung der SharePoint Online-Verwaltungsshell den folgenden Befehl aus, um die URLs für die Teamwebsites „Sales“, „Produktion“ und „Support“ anzuzeigen:
     
   ```
   Get-SPOSite | Where URL -like "*/sites/*" | Sort URL | Select URL
   ```
 
-  - URL der Website „Produktion“: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/produktion
+  - URL der Website „Produktion“: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/produktion
     
-  - URL der Website „Sales“: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/sales
+  - URL der Website „Sales“: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/sales
     
-  - URL der Website „Support“: https://![](./images/Common_Images/TableLine.png).sharepoint.com/sites/support
+  - URL der Website „Support“: https://![](./media/Common-Images/TableLine.png).sharepoint.com/sites/support
     
 ## <a name="next-steps"></a>Nächste Schritte
 
