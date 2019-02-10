@@ -3,7 +3,7 @@ title: Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Ne
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/23/2018
+ms.date: 11/05/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten mit einer Standort-zu-Standort-VPN-Verbindung.'
-ms.openlocfilehash: 640db506ec49d468dcb09ce3804c76c1f4562f13
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 145c7a082aff436ee3c3bb873f299f9706db72df
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915320"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25976711"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
@@ -36,8 +36,8 @@ Beispiel: Ein Verzeichnissynchronisierungsserver auf einem virtuellen Azure-Comp
 
 Die virtuellen Computer in Azure müssen nicht von Ihrer lokalen Umgebung isoliert sein. Um virtuelle Azure-Computer mit Ihren lokalen Netzwerkressourcen zu verbinden, müssen Sie ein standortübergreifendes virtuelles Azure-Netzwerk konfigurieren. Das folgende Diagramm zeigt die erforderlichen Komponenten zum Bereitstellen eines standortübergreifenden virtuellen Azure-Netzwerks mit einem virtuellen Computer in Azure.
   
-![Lokales Netzwerk, das über eine Standort-zu-Standort-VPN-Verbindung mit Microsoft Azure verbunden ist](media/CP-ConnectOnPremisesNetworkToAzureVPN.png)
-  
+![Lokales Netzwerk, das über eine Standort-zu-Standort-VPN-Verbindung mit Microsoft Azure verbunden ist](media/86ab63a6-bfae-4f75-8470-bd40dff123ac.png)
+ 
 In diesem Diagramm sind zwei Netzwerke über eine Standort-zu-Standort-VPN-Verbindung verbunden: das lokale Netzwerk und das virtuelle Azure-Netzwerk. Für die Standort-zu-Standort-VPN-Verbindung gilt Folgendes:
 
 - Sie besteht zwischen zwei Endpunkten, die adressierbar sind und sich im öffentlichen Internet befinden.
@@ -248,27 +248,6 @@ New-AzureRMResourceGroup -Name $rgName -Location $locName
 
 ```
 
-Für Ressourcen-Manager-basierte virtuelle Computer ist ein Ressourcen-Manager-basiertes Speicherkonto erforderlich. Sie müssen einen global eindeutigen Namen für Ihr Speicherkonto auswählen, der nur Kleinbuchstaben und Ziffern enthält. Sie können diesen Befehl zum Auflisten vorhandener Speicherkonten verwenden.
-  
-```
-Get-AzureRMStorageAccount | Sort Name | Select Name
-```
-
-Verwenden Sie diesen Befehl, um zu testen, ob ein vorgeschlagener Speicherkontoname eindeutig ist.
-  
-```
-Get-AzureRmStorageAccountNameAvailability "<proposed name>"
-```
-
-Führen Sie zum Erstellen eines neuen Speicherkontos diese Befehle aus.
-  
-```
-$rgName="<your new resource group name>"
-$locName="<the location of your new resource group>"
-$saName="<unique storage account name>"
-New-AzureRMStorageAccount -Name $saName -ResourceGroupName $rgName -Type Standard_LRS -Location $locName
-```
-
 Erstellen Sie als Nächstes das virtuelle Azure-Netzwerk.
   
 ```
@@ -346,11 +325,9 @@ Erstellen Sie die virtuellen Computer, die Sie in Azure benötigen. Weitere Info
   
 Verwenden Sie die folgenden Einstellungen:
   
-- Wählen Sie im Bereich **Grundlagen** das gleiche Abonnement und die Ressourcengruppe als virtuelles Netzwerk aus. Bewahren Sie den Benutzernamen und das Kennwort an einem sicheren Ort auf. Sie benötigen diese Informationen später für die Anmeldung auf dem virtuellen Computer.
+- Wählen Sie auf der Registerkarte **Grundlagen** das gleiche Abonnement und die Ressourcengruppe als virtuelles Netzwerk aus. Sie benötigen diese Informationen später für die Anmeldung auf dem virtuellen Computer. Wählen Sie im Abschnitt **Instanzdetails** die entsprechende Größe des virtuellen Computers aus. Bewahren Sie den Benutzernamen des Administratorkontos und das Kennwort an einem sicheren Ort auf. 
     
-- Wählen Sie im Bereich **Größe** die gewünschte Größe aus.
-    
-- Wählen Sie im Bereich **Einstellungen** im Abschnitt **Speicher** den Speichertyp **Standard** und das mit Ihrem virtuellen Netzwerk eingerichtete Speicherkonto aus. Wählen Sie im Abschnitt **Netzwerk** den Namen des virtuellen Netzwerks und das Subnetz zum Hosten virtueller Computer (nicht das Gateway-Subnetz). Alle anderen Einstellungen bleiben bei ihren Standardwerten.
+- Wählen Sie auf der Registerkarte **Netzwerk** den Namen des virtuellen Netzwerks und das Subnetz zum Hosten virtueller Computer (nicht das Gateway-Subnetz) aus. Alle anderen Einstellungen bleiben bei ihren Standardwerten.
     
 Überprüfen Sie, ob der virtuelle Computer das DNS korrekt verwendet, indem Sie Ihr internes DNS prüfen, um sicherzustellen, dass die Adresse (A)-Einträge für Ihren neuen virtuellen Computer hinzugefügt wurden. Für den Zugriff auf das Internet müssen Ihre virtuellen Azure-Computer für die Verwendung des Proxyservers Ihres lokalen Netzwerks konfiguriert werden. Fragen Sie den Netzwerkadministrator nach zusätzlichen Konfigurationsschritten, die auf dem Server erfolgen müssen.
   
