@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365, Dynamics 365 und Office Server-Produkte einzurichten.'
-ms.openlocfilehash: 796d34294ef92702214df30ca5553759554996d3
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.openlocfilehash: df4729c93f3665bdfe072102f2952d7432ad22f0
+ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "23041499"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "25897238"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testen von Office 365 mit Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
@@ -76,7 +76,7 @@ Verwenden Sie die folgenden Artikel für Ihre Office 365-Entwicklungs-/Testumgeb
     
 - [Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
     
-    Hinzufügen von Beispieldaten und Vorführen von erweitertem eDiscovery, das Ihnen ermöglicht, die in Office 365 gespeicherten Daten schnell zu suchen und zu analysieren, einschließlich E-Mails und Dokumente.
+    Hinzufügen von Beispieldaten und Vorführen von Advanced eDiscovery, das Ihnen ermöglicht, die in Office 365 gespeicherten Daten schnell zu suchen und zu analysieren, einschließlich E-Mails und Dokumente.
     
 - [Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
     
