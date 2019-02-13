@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Zusammenfassung: Beschreibung der SSL-Zertifikate, die für lokale und hybride Exchange-Bereitstellungen, Einmaliges Anmelden mit AD FS, Exchange Online-Dienste und Exchange-Webdienste benötigt werden.'
-ms.openlocfilehash: c9e968ef7ec9015be398b4eef9184451dd316bea
-ms.sourcegitcommit: 15db0f1e5f8036e46063662d7df22387906f8ba7
+ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
+ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "27546516"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29952471"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planen von Drittanbieter-SSL-Zertifikaten für Office 365
 
@@ -49,7 +49,7 @@ Eine Übersicht über die Verwendung von digitaler Zertifikaten zum Erhöhen der
   
 ## <a name="certificates-for-single-sign-on"></a>Zertifikate für einmaliges Anmelden (SSO)
 
-Um Ihren Benutzern mit eine vereinfachte single Sign-on-Erfahrung bereitstellen bereitzustellen, die robusten Sicherheit aufweist, sind die in der folgenden Tabelle aufgeführten Zertifikate auf den Verbundservern oder den Verbundserverproxys erforderlich. In der folgenden Tabelle liegt der Schwerpunkt auf Active Directory-Verbunddienste (AD FS), wir auch weitere Informationen zur [Verwendung von Drittanbieter - Identitätsanbieter](https://go.microsoft.com/fwlink/?LinkId=532869).
+Um Ihren Benutzern mit eine vereinfachte single Sign-on-Erfahrung bereitstellen bereitzustellen, die robusten Sicherheit aufweist, sind die in der folgenden Tabelle aufgeführten Zertifikate auf den Verbundservern oder den Verbundserverproxys erforderlich. In der folgenden Tabelle liegt der Schwerpunkt auf Active Directory-Verbunddienste (AD FS), wir auch weitere Informationen zur [Verwendung von Drittanbieter - Identitätsanbieter](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 ||||
 |:-----|:-----|:-----|
