@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
+title: Multi-Geo-Funktionen in OneDrive in Office 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -10,17 +10,17 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
-description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive und SharePoint Online.
-ms.openlocfilehash: b62603759caf7a285896c1c87199a9bf59c546e3
-ms.sourcegitcommit: 03bb9edd52b1b7cd49791baf90645828b89b32b5
+description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive Online.
+ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
+ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27200728"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30052989"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365
+# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Multi-Geo-Funktionen in OneDrive in Office 365
 
-Mit Multi-Geo-Funktionen in OneDrive und SharePoint Online kann Ihr Unternehmen seine Office 365-Präsenz auf mehrere geografische Regionen und/oder Länder innerhalb des vorhandenen Mandanten erweitern. Wenden Sie sich an Ihr Microsoft-Kontoteam, um Ihr multinationales Unternehmen für Multi-Geo in OneDrive for Business anzumelden.
+Mit Multi-Geo-Funktionen in OneDrive Online kann Ihr Unternehmen seine Office 365-Präsenz auf mehrere geografische Regionen und/oder Länder innerhalb des vorhandenen Mandanten erweitern. Wenden Sie sich an Ihr Microsoft-Kontoteam, um Ihr multinationales Unternehmen für Multi-Geo in OneDrive for Business anzumelden.
   
 Mit Multi-Geo in OneDrive können Sie ruhende Daten an den Datenaufbewahrungsanforderungen entsprechenden geografischen Standorten bereitstellen und speichern und gleichzeitig die globale Bereitstellung moderner Produktivitätserfahrungen für Ihre Mitarbeiter in Gang setzen.
   
