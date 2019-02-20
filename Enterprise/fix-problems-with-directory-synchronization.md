@@ -8,92 +8,95 @@ ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
-description: Beschreibt häufige Ursachen von Problemen mit der verzeichnissynchronisierung in Office 365 und bietet eine Reihe neuer Methoden Problembehebung und beheben Sie diese.
-ms.openlocfilehash: 2d567daa370d651a6eb9180db2f729d09b380226
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Beschreibt häufige Ursachen von Problemen mit der Verzeichnissynchronisierung in Office 365 und bietet einige Methoden zur Problembehandlung und-Lösung.
+ms.openlocfilehash: e83ca495ca96ac41fb2f79775c3d5970a6b538fb
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897308"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085394"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Beheben von Problemen bei der Verzeichnissynchronisierung für Office 365
 
-Mit der verzeichnissynchronisierung können Sie weiterhin Verwalten von Benutzern und Gruppen: lokal und Ergänzungen hinzufügen, löschen und Änderungen in die Cloud zu synchronisieren. Aber Setup ein wenig kompliziert wird, und es manchmal schwierig sein kann, die Quelle der Probleme zu identifizieren. Wir haben die Ressourcen, die Ihnen bei der Ermittlung möglicher Probleme zu identifizieren und beheben Sie sie.
+Mit der Verzeichnissynchronisierung können Sie weiterhin Benutzer und Gruppen lokal verwalten und Hinzufügungen, Löschungen und Änderungen an der Cloud synchronisieren. Das Setup ist jedoch etwas komplizierter, und es kann manchmal schwierig sein, die Ursache für Probleme zu identifizieren. Wir haben Ressourcen, die Ihnen helfen, potenzielle Probleme zu identifizieren und zu beheben.
   
-## <a name="how-do-i-know-if-something-is-wrong"></a>Wie weiß ich, wenn etwas falsch ist?
+## <a name="how-do-i-know-if-something-is-wrong"></a>Woran erkenne ich, ob etwas falsch ist?
 
-Der erste Hinweis darauf, dass etwas falsch ist ist, wenn die Kachel Dirsync-Status in Office 365 Administrationscenter gibt an, dass ein Fehler auftritt:
+Der erste Hinweis darauf, dass etwas falsch ist, ist, wenn die dirSync-Status Kachel im Office 365 Admin Center ein Problem angibt:
   
-![Der Status der Dirsync-Kachel im Admin Center – Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+![Die dirSync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-Sie erhalten auch eine e-Mail-Nachrichten (um die alternative e-Mail und Ihre e-Mails Admin) von Office 365, die angibt, dass es sich bei Ihrem Mandanten verzeichnissynchronisierungsfehlern festgestellt wurden. Weitere Informationen finden Sie unter [Identifizieren von verzeichnissynchronisierungsfehlern in Office 365](identify-directory-synchronization-errors.md).
+Sie erhalten auch eine e-Mail (an die Alternative e-Mail und an Ihre Administrator-e-Mail) von Office 365, die angibt, dass Ihr Mandant Verzeichnis Synchronisierungsfehler festgestellt hat. Weitere Informationen finden Sie unter [Identifizieren von Verzeichnis Synchronisierungsfehlern in Office 365](identify-directory-synchronization-errors.md).
   
-## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Wie erhalte ich das Tool Azure Active Directory verbinden?
+## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Wie erhalte ich das Azure Active Directory Connect-Tool?
 
-Navigieren Sie in der Office 365-Verwaltungskonsole zu ** Benutzer ** \> **aktive Benutzer**. Klicken Sie auf das Menü **mehr** und aktivieren Sie **verzeichnissynchronisierung**. 
+navigieren sie im Office 365 admin center zu * * users * * \> **Active users**. Klicken Sie auf das Menü **Weitere** , und wählen Sie **Verzeichnissynchronisierung**aus. 
   
-![Wählen Sie im Menü Weitere Directory-Synchronisierung](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+![Wählen Sie im Menü mehr die Option Verzeichnissynchronisierung aus.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-Navigieren Sie in der alten Office 365-Verwaltungskonsole zu **Benutzer** \> **Aktive Benutzer**, und wählen **Einrichten** , klicken Sie neben **Active Directory-Synchronisierung**. 
+navigieren sie im alten Office 365 admin center zu **benutzer** \> , die **aktive benutzer**sind, und wählen sie neben **active Directory-synchronisierung** **einrichten** aus. 
   
-![Wählen Sie Set up neben Active Directory-Synchronisierung](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
+![Wählen Sie einrichten neben Active Directory-Synchronisierung](media/bd95492b-d65e-4072-a6ee-e562f5f566c3.png)
   
-Befolgen Sie die [Anweisungen des Assistenten](set-up-directory-synchronization.md) zum Herunterladen des Azure Active Directory verbinden. 
+Folgen Sie den [Anweisungen des Assistenten](set-up-directory-synchronization.md) , um Azure AD Connect herunterzuladen. 
   
-Wenn Sie noch Azure Active Directory-Synchronisierung (DirSync) verwenden, sehen Sie sich [Behandlung von Azure Active Directory-Synchronisierungstool Installations- und Fehlermeldungen in Office 365 Konfigurations-Assistenten für](https://go.microsoft.com/fwlink/p/?LinkId=396717) Informationen zu den Systemanforderungen installieren Dirsync, den dazu benötigten Berechtigungen und wie häufige Fehler behoben. 
+Wenn Sie weiterhin Azure Active Directory-Synchronisierung (dirSync) verwenden, sehen Sie sich die [Problembehandlung bei Azure Active Directory Sync Tool-Installations-und Konfigurations-Assistenten Fehlermeldungen in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) an, um Informationen zu den Systemanforderungen für die Installation zu erhalten. Dirsync, die erforderlichen Berechtigungen und die Behandlung häufig auftretender Fehler. 
   
-Um auf Azure AD-Verbinden von Azure Active Directory-Synchronisierung zu aktualisieren, finden Sie unter [den Upgradeanweisungen](https://go.microsoft.com/fwlink/p/?LinkId=733240).
+Informationen zum Aktualisieren von Azure Active Directory-Synchronisierung mit Azure AD Connect finden Sie in [den Anweisungen zum Upgrade](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
-## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Beheben von allgemeinen Ursachen für Probleme mit der verzeichnissynchronisierung in Office 365
+## <a name="resolving-common-causes-of-problems-with-directory-synchronization-in-office-365"></a>Beheben häufiger Ursachen von Problemen mit der Verzeichnissynchronisierung in Office 365
 
-### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Synchronisierte Objekte werden nicht angezeigt oder Aktualisieren von online, oder ich erhalte Synchronisierung Fehlerberichte aus dem Dienst.**
+### <a name="synchronized-objects-arent-appearing-or-updating-online-or-im-getting-synchronization-error-reports-from-the-service"></a>**Synchronisierte Objekte werden nicht online angezeigt oder aktualisiert, oder ich erhalte Synchronisierungsfehler Berichte vom Dienst.**
 
-- [Identität Synchronisierung und Duplikat Attribut resiliency](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
+- [Identitätssynchronisierung und doppelte Attribut Ausfallsicherheit](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
-### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Ich haben eine Benachrichtigung in Office 365 Administrationscenter oder erhalte automatisierten e-Mails, dass ein aktueller Synchronisierungsereignis wurde nicht**
-- [Behandeln von Verbindungsproblemen mit Azure Active Directory verbinden](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
-- [Azure Active Directory verbinden Konten und Berechtigungen](https://go.microsoft.com/fwlink/p/?LinkId=820598)
-- [Azure Active Directory verbinden Sync: Gewusst wie: Verwalten des Azure AD-Dienstkontos](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
-- [Directory-Synchronisierung mit Azure Active Directory reagiert oder Sie sind darauf hingewiesen, dass Sync in mehr als einen Tag registriert noch nicht](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
+### <a name="i-have-an-alert-in-the-office-365-admin-center-or-am-receiving-automated-emails-that-there-hasnt-been-a-recent-synchronization-event"></a>**Ich habe eine Warnung im Office 365 Admin Center oder erhalte automatisierte e-Mails, dass kein neues Synchronisierungsereignis vorliegt.**
+- [Beheben von Verbindungsproblemen mit Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity)
+- [Azure AD Connect-Konten und-Berechtigungen](https://go.microsoft.com/fwlink/p/?LinkId=820598)
+- [Azure AD Connect Sync: Verwalten des Azure AD-Dienstkontos](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-azureadaccount)
+- [Die Verzeichnissynchronisierung mit Azure Active Directory wird angehalten, oder Sie werden gewarnt, dass die Synchronisierung seit mehr als einem Tag nicht registriert ist.](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
-### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Kennworthashes sind nicht synchronisiert, oder eine Warnung im Office 365 Administrationscenter, dass eine zuletzt verwendete Kennwort Hash Synchronisierung wurde nicht immer unerwünschte**
-- [Implementieren von Hash kennwortsynchronisierung mit Azure AD-Connect-Synchronisierung](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
+### <a name="password-hashes-arent-synchronizing-or-im-seeing-an-alert-in-the-office-365-admin-center-that-there-hasnt-been-a-recent-password-hash-synchronization"></a>**Kenn Wort Hashes werden nicht synchronisiert, oder es wird eine Warnung im Office 365 Admin Center angezeigt, dass es keine aktuelle Kennworthash Synchronisierung gab.**
+- [Implementieren der Kennworthash Synchronisierung mit Azure AD Connect Sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
-### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Ich bin eine Benachrichtigung angezeigt, die Objekt-Kontingent überschritten**
-- Wir haben ein Kontingent integrierten-Objekts zum Schutz des Diensts. Wenn Sie zu viele Objekte in Ihrem Verzeichnis aus, die mit Office 365 synchronisiert werden müssen haben, müssen Sie auf [Kontakt für Business-Produkte unterstützen](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) Ihr Kontingent zu erhöhen.
+### <a name="im-seeing-an-alert-that-object-quota-exceeded"></a>**Es wurde eine Warnung angezeigt, dass das Objekt Kontingent überschritten wurde.**
+- Wir verfügen über ein integriertes Objekt Kontingent, um den Dienst zu schützen. Wenn Sie zu viele Objekte in Ihrem Verzeichnis haben, die mit Office 365 synchronisiert werden müssen, müssen Sie sich an den [Support für Geschäftsprodukte wenden](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) , um Ihr Kontingent zu verlängern.
 
 ### <a name="i-need-to-know-which-attributes-are-synchronized"></a>**Ich möchte wissen, welche Attribute synchronisiert sind**
-- Finden Sie eine Liste aller Attribute, die zwischen lokalen und Cloud [hier rechts](https://go.microsoft.com/fwlink/p/?LinkId=396719)synchronisiert werden.
+- Eine Liste aller Attribute, die zwischen lokal und der Cloud synchronisiert werden, finden Sie [hier](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
-### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Ich kann nicht verwalten oder Entfernen von Objekten, die in der Cloud synchronisiert wurden**
-- Sind Sie bereit, die Objekte in der Cloud nur verwalten? Oder ein Objekt, das lokale gelöscht wurde, aber in der Cloud steckt? Sehen Sie sich diese [Problembehandlung bei Fehlern während der Synchronisierung](https://go.microsoft.com/fwlink/p/?linkid=842044) und [Artikel zu unterstützen](https://go.microsoft.com/fwlink/p/?LinkId=396720) , Hinweise zum Beheben dieser Probleme an.
+### <a name="i-cant-manage-or-remove-objects-that-were-synchronized-to-the-cloud"></a>**Ich kann Objekte, die mit der Cloud synchronisiert wurden, nicht verwalten oder entfernen**
+- Sind Sie bereit, Objekte nur in der Cloud zu verwalten? Oder gibt es ein Objekt, das lokal gelöscht wurde, aber in der Cloud steckt? Sehen Sie sich diese [Problem Behandlungsfehler während der Synchronisierung](https://go.microsoft.com/fwlink/p/?linkid=842044) und den [Support Artikel](https://go.microsoft.com/fwlink/p/?LinkId=396720) an, um Anleitungen zur Lösung dieser Probleme zu erhalten.
 
 ### <a name="i-got-an-error-message-that-my-company-has-exceeded-the-number-of-objects-that-can-be-synchronized"></a>**Ich habe die Fehlermeldung bekommen, dass mein Unternehmen die Anzahl der synchronisierbaren Objekte überschritten hat**
-- Weitere Informationen zu diesem Thema [hier](https://go.microsoft.com/fwlink/p/?LinkId=396721).
+- Weitere Informationen zu diesem Thema finden Sie [hier](https://go.microsoft.com/fwlink/p/?LinkId=396721).
    
 ## <a name="other-resources"></a>Weitere Ressourcen
 
 - [Skript zum Beheben von doppelten Benutzerprinzipalnamen (User Principal Name, UPN)](https://go.microsoft.com/fwlink/p/?LinkId=396725)
     
-- [Vorbereiten eine nicht-routingfähigen Domäne (beispielsweise Local Domäne) für die verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md)
+- [Vorbereiten einer nicht routingfähigen Domäne (wie. lokale Domäne) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
-- [Skript zum zählen insgesamt synchronisierte Objekte](https://go.microsoft.com/fwlink/p/?LinkId=396726)
+- [Skript zum zählen der Gesamtzahl der synchronisierten Objekte](https://go.microsoft.com/fwlink/p/?LinkId=396726)
     
-- [Problembehebung AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=396727)
+- [Problembehandlung bei AD FS 2,0](https://go.microsoft.com/fwlink/p/?LinkId=396727)
     
-- [Verwenden von PowerShell, DisplayName-Attribute für e-Mail-aktivierte Gruppen zu beheben.](https://go.microsoft.com/fwlink/p/?LinkId=396728)
+- [Verwenden von PowerShell zum Korrigieren von leeren DisplayName-Attributen für e-Mail-aktivierte Gruppen](https://go.microsoft.com/fwlink/p/?LinkId=396728)
     
-- [Verwenden von PowerShell doppelte UPN beheben](https://go.microsoft.com/fwlink/p/?LinkId=396730)
+- [Verwenden von PowerShell zum Beheben von doppeltem UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     
-- [Verwenden von PowerShell, doppelte e-Mail-Adressen zu beheben.](https://go.microsoft.com/fwlink/p/?LinkId=396731)
+- [Verwenden von PowerShell zum Beheben doppelter e-Mail-Adressen](https://go.microsoft.com/fwlink/p/?LinkId=396731)
     
 ## <a name="diagnostic-tools"></a>Diagnosetools
 
-[IDFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md) wird verwendet, um die Suche und Wartung der Identitätsobjekten und der zugehörigen Attribute in einer lokalen Active Directory-Umgebung im Rahmen der Vorbereitung für die Migration zu Office 365 ausführen. IDFix ist für die Active Directory-Administratoren für DirSync mit Office 365-Dienst verantwortlich vorgesehen. 
+[IDFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md) dient zur Ermittlung und Behebung von Identitätsobjekten und deren Attributen in einer lokalen Active Directory-Umgebung zur Vorbereitung der Migration zu Office 365. IDFix ist für die für dirSync Verantwortlichen Active Directory-Administratoren mit dem Office 365-Dienst vorgesehen. 
 
-[Laden Sie das IDFix-Tool](https://go.microsoft.com/fwlink/p/?LinkId=396718) , aus dem Microsoft Downloadcenter.
+[Laden Sie das IDFix-Tool](https://go.microsoft.com/fwlink/p/?LinkId=396718) aus dem Microsoft Download Center herunter.

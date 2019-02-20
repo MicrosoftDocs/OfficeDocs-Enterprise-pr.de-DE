@@ -1,5 +1,5 @@
 ---
-title: Deaktivieren der verzeichnissynchronisierung für Office 365
+title: Deaktivieren der Verzeichnissynchronisierung für Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,30 +9,33 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
-description: Hier erfahren Sie, wie Sie mithilfe von PowerShell für Office 365 verzeichnissynchronisierung deaktivieren
-ms.openlocfilehash: f47209dd8b6be47b7ae7a4b63a9fae38c5cb498f
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Informationen zur Verwendung von PowerShell zum Deaktivieren der Verzeichnissynchronisierung für Office 365
+ms.openlocfilehash: 4fbfb6b9e3fcb1512fc4aa9c3d8ee6c37682e58a
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540955"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085074"
 ---
-# <a name="turn-off-directory-synchronization-for-office-365"></a>Deaktivieren der verzeichnissynchronisierung für Office 365
-PowerShell können Sie um die verzeichnissynchronisierung zu deaktivieren. Es ist jedoch nicht empfohlen, dass Sie die verzeichnissynchronisierung im Rahmen der Problembehandlung zu deaktivieren. Wenn Sie Hilfe bei der Problembehandlung Directory-Synchronisierung benötigen, finden Sie im Artikel [behoben Probleme mit der verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) . 
+# <a name="turn-off-directory-synchronization-for-office-365"></a>Deaktivieren der Verzeichnissynchronisierung für Office 365
+Sie können die Verzeichnissynchronisierung mithilfe von PowerShell deaktivieren. Es wird jedoch nicht empfohlen, die Verzeichnissynchronisierung als Schritt zur Problembehandlung zu deaktivieren. Wenn Sie Unterstützung bei der Problembehandlung bei der Verzeichnissynchronisierung benötigen, lesen Sie den Artikel [Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) . 
   
-Der [Kontakt support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) für Business-Produkte bei Bedarf.
+[Wenden Sie sich](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) bei Bedarf an den Support für Business-Produkte.
   
-## <a name="turn-off-directory-synchronization"></a>Deaktivieren der verzeichnissynchronisierung  
-So deaktivieren Sie die verzeichnissynchronisierung:
+## <a name="turn-off-directory-synchronization"></a>Deaktivieren der Verzeichnissynchronisierung  
+So deaktivieren Sie die Verzeichnissynchronisierung
   
-1. Erstens Installieren der erforderlichen Software und Verbinden mit Office 365-Abonnements. Anweisungen für beide finden Sie unter [Verbinden mit Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=821938).
+1. Installieren Sie zunächst die erforderliche Software, und stellen Sie eine Verbindung mit Ihrem Office 365-Abonnement her. Anweisungen für beide finden Sie unter [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=821938).
     
-2. Verwenden Sie [Set-MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939) Directory-Synchronisierung zu deaktivieren: 
+2. Verwenden Sie [Set-MsolDirSyncEnabled](https://go.microsoft.com/fwlink/p/?LinkId=821939) , um die Verzeichnissynchronisierung zu deaktivieren: 
     
   ```
   Set-MsolDirSyncEnabled -EnableDirSync $false

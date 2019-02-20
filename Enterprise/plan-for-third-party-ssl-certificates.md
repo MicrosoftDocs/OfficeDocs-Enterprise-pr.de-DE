@@ -8,7 +8,9 @@ ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,22 +18,22 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Zusammenfassung: Beschreibung der SSL-Zertifikate, die für lokale und hybride Exchange-Bereitstellungen, Einmaliges Anmelden mit AD FS, Exchange Online-Dienste und Exchange-Webdienste benötigt werden.'
-ms.openlocfilehash: 1746cf5059ba83e225e4a2d55c8eebc082366362
-ms.sourcegitcommit: bdd0083dc9dc62994de29421a1f4056ebe27f15f
+ms.openlocfilehash: 3c22daa2315e36c45b5b5dd6271842168c90726d
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29952471"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085324"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planen von Drittanbieter-SSL-Zertifikaten für Office 365
 
- **Zusammenfassung:** Beschreibt die SSL-Zertifikate erforderlich für lokale Exchange-Organisation und hybride SSO mit AD FS, Exchange Online-Dienste und Exchange-Webdienste. 
+ **Zusammenfassung:** Beschreibt die SSL-Zertifikate, die für Exchange lokal und Hybrid, SSO mit AD FS, Exchange Online Services und Exchange-webDiensten erforderlich sind. 
   
-Zum Zwecke der Verschlüsselung der Kommunikation zwischen Ihren Clients und Office 365-Umgebung müssen Drittanbieter-Secure Socket Layer (SSL) Zertifikate auf Ihren Infrastrukturservern installiert sein.
+Zum Verschlüsseln der Kommunikation zwischen ihren Clients und der Office 365-Umgebung müssen SSL-Zertifikate (Secure Socket Layer) von Drittanbietern auf Ihren Infrastrukturservern installiert sein.
 
 ||
 |:-----|
-| Dieser Artikel ist Teil der [Planung von Netzwerk und zur leistungsoptimierung für Office 365](https://aka.ms/tune).|
+| Dieser Artikel ist Teil der [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune).|
    
 Zertifikate werden für die folgenden Office 365-Komponenten benötigt:
   
@@ -39,41 +41,41 @@ Zertifikate werden für die folgenden Office 365-Komponenten benötigt:
     
 - Einmaliges Anmelden (SSO) (bei den Verbundservern der Active Directory-Verbunddienste (AD FS) und bei den Verbundserverproxys der AD FS)
     
-- Exchange Online-Dienste, wie die AutoErmittlung, Outlook Anywhere und Exchange-Webdienste
+- Exchange Online-Dienste wie AutoErmittlung, Outlook Anywhere und Exchange-webDienste
     
 - Hybrider Exchange-Server
     
 ## <a name="certificates-for-exchange-on-premises"></a>Zertifikate für die lokale Exchange-Organisation
 
-Eine Übersicht über die Verwendung von digitaler Zertifikaten zum Erhöhen der Sicherheit der Kommunikation zwischen der lokalen Exchange-Organisation und Exchange Online finden im TechNet-Artikel [Grundlegendes zu Zertifikatanforderungen](https://go.microsoft.com/fwlink/p/?LinkID=243657).
+Eine Übersicht über die Verwendung digitaler Zertifikate für die Kommunikation zwischen der lokalen Exchange-Organisation und Exchange Online Secure finden Sie im TechNet-Artikel [understandIng Certificate Requirements](https://go.microsoft.com/fwlink/p/?LinkID=243657).
   
 ## <a name="certificates-for-single-sign-on"></a>Zertifikate für einmaliges Anmelden (SSO)
 
-Um Ihren Benutzern mit eine vereinfachte single Sign-on-Erfahrung bereitstellen bereitzustellen, die robusten Sicherheit aufweist, sind die in der folgenden Tabelle aufgeführten Zertifikate auf den Verbundservern oder den Verbundserverproxys erforderlich. In der folgenden Tabelle liegt der Schwerpunkt auf Active Directory-Verbunddienste (AD FS), wir auch weitere Informationen zur [Verwendung von Drittanbieter - Identitätsanbieter](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
+Um Ihren Benutzern eine vereinfachte Single Sign-on-Erfahrung mit robuster Sicherheit bereitzustellen, sind die in der folgenden Tabelle aufgeführten Zertifikate auf den Verbundservern oder den Verbundserverproxys erforderlich. In der folgenden Tabelle werden die Active Directory-Verbunddienste (AD FS) behandelt, weitere Informationen zur [Verwendung von Drittanbieter-Identitätsanbietern](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-fed-compatibility).
   
 ||||
 |:-----|:-----|:-----|
 |**Zertifikattyp** <br/> |**Beschreibung** <br/> |**Was sollten Sie wissen, bevor Sie mit der Bereitstellung beginnen?** <br/> |
-|**SSL-Zertifikat (auch Serverauthentifizierungszertifikat genannt)** <br/> |Dieses Standard-SSL-Zertifikat macht die Kommunikation zwischen Verbundservern, Clients und Verbundserverproxys sicher.  <br/> |AD FS ist ein SSL-Zertifikat erforderlich. Standardmäßig verwendet AD FS das SSL-Zertifikat, das konfiguriert ist, für die Standardwebsite in Internetinformationsdienste (Internet Information Services, IIS).<br/> Der Antragstellername des dieses SSL-Zertifikat wird der Name der Verbund-Dienst (FS) für jede Instanz von AD FS bestimmt, die Sie bereitstellen. Wählen Sie einen Antragstellernamen für alle neuen Zertifizierungsstelle (CA)-ausgestellte Zertifikate, die am besten den Namen Ihrer Firma oder Organisation zu Office 365 darstellt. Dieser Name muss routbare sein.<br/>**Vorsicht:** AD FS erfordert, dass dieses SSL-Zertifikat keinen Punkt (Kurzname) Antragstellernamen aufweisen.          <br/> **Empfehlung:** Da dieses Zertifikat vom Clients von AD FS als vertrauenswürdig sein muss, wird empfohlen, dass Sie ein SSL-Zertifikat von einer öffentlichen Zertifizierungsstelle (Drittanbieter) oder von einer Zertifizierungsstelle, die eine öffentlich vertrauenswürdigen Stammzertifizierungsstellen untergeordnet ist ausgestellt verwenden; beispielsweise VeriSign oder Thawte.  <br/> |
-|**Tokensignaturzertifikat** <br/> |Dies ist ein standardmäßiges x. 509-Zertifikat, das verwendet wird, für die sichere Signierung aller Token, die der Verbundserver ausstellt und die Office 365 akzeptiert und validiert.  <br/> |Das Tokensignaturzertifikat muss einen privaten Schlüssel enthalten, der eine vertrauenswürdige Stammzertifizierungsstelle in der FS untergeordnet ist. AD FS erstellt standardmäßig ein selbstsigniertes Zertifikat. Jedoch können je nach den Anforderungen Ihrer Organisation, Sie dieses Zertifikat einer Zertifizierungsstelle ausgestellten Zertifikat ändern mithilfe der AD FS-Verwaltungs-Snap-in.<br/>**Vorsicht:** Das Tokensignaturzertifikat ist entscheidend für die Stabilität von der FS. Wenn das Zertifikat geändert wird, muss die Änderung Office 365 benachrichtigt werden. Wenn die Benachrichtigung nicht angegeben ist, können Benutzer auf ihre Office 365-Dienstangebote anmelden.<br/>**Empfehlung:** Es wird empfohlen, dass Sie selbstsignierte Tokensignaturzertifikat verwenden, die von AD FS generiert wird. Auf diese Weise wird er dieses Zertifikat für Sie standardmäßig verwaltet. Angenommen, wenn dieses Zertifikat ist der Testzeitraum AD FS ein neues selbstsigniertes Zertifikats generiert.<br/> |
+|**SSL-Zertifikat (auch Serverauthentifizierungszertifikat genannt)** <br/> |Dieses Standard-SSL-Zertifikat macht die Kommunikation zwischen Verbundservern, Clients und Verbundserverproxys sicher.  <br/> |AD FS erfordert ein SSL-Zertifikat. Standardmäßig verwendet AD FS das SSL-Zertifikat, das für die Standardwebsite in Internet Informationsdienste (IIS) konfiguriert ist.<br/> Der Antragstellername dieses SSL-Zertifikats wird verwendet, um den Verbunddienst Namen für jede AD FS-Instanz zu bestimmen, die Sie bereitstellen. Erwägen Sie die Auswahl eines Antragstellernamens für alle neuen Zertifizierungsstellenzertifikate, die am besten für den Namen Ihres Unternehmens oder Ihrer Organisation in Office 365 stehen. Dieser Name muss Internet routingfähig sein.<br/>**Achtung:** AD FS erfordert, dass dieses SSL-Zertifikat keinen punktlosen-Antragstellernamen (Short-Name) hat.          <br/> **Empfehlung:** Da dieses Zertifikat von Clients von AD FS als vertrauenswürdig eingestuft werden muss, wird empfohlen, ein SSL-Zertifikat zu verwenden, das von einer öffentlichen (Drittanbieter-) ZERTIFIZIERUNGsSTELLE oder von einer ZERTIFIZIERUNGsSTELLE ausgestellt wurde, die einem öffentlich vertrauenswürdigen Stamm untergeordnet ist. zum Beispiel VeriSign oder Thawte.  <br/> |
+|**Tokensignaturzertifikat** <br/> |Hierbei handelt es sich um ein Standardmäßiges X. 509-Zertifikat, das für die sichere Signierung aller Token verwendet wird, die der Verbundserver ausstellt und die von Office 365 akzeptiert und validiert werden.  <br/> |Das Token-Signaturzertifikat muss einen privaten Schlüssel enthalten, der zu einem vertrauenswürdigen Stamm in der FS verkettet ist. Standardmäßig erstellt AD FS ein selbstsigniertes Zertifikat. Je nach den Anforderungen Ihrer Organisation können Sie dieses Zertifikat jedoch mithilfe des AD FS-Verwaltungs-Snap-Ins in ein Zertifikat von einer ZERTIFIZIERUNGsSTELLE ändern.<br/>**Achtung:** Das Token-Signaturzertifikat ist für die Stabilität der FS entscheidend. Wenn das Zertifikat geändert wird, muss Office 365 über die Änderung benachrichtigt werden. Wenn keine Benachrichtigung bereitgestellt wird, können sich Benutzer nicht bei Ihren Office 365-Dienst angeboten anmelden.<br/>**Empfehlung:** Es wird empfohlen, dass Sie das selbstsignierte Token signieren, das von AD FS generiert wird. Auf diese Weise verwaltet Sie dieses Zertifikat standardmäßig für Sie. Wenn dieses Zertifikat beispielsweise demnächst abläuft, generiert AD FS ein neues selbstsigniertes Zertifikat.<br/> |
    
 Verbundserverproxys fordern dieses Zertifikat, das in der folgenden Tabelle beschrieben ist.
   
 ||||
 |:-----|:-----|:-----|
 |**Zertifikattyp** <br/> |**Beschreibung** <br/> |**Was sollten Sie wissen, bevor Sie mit der Bereitstellung beginnen?** <br/> |
-|SSL-Zertifikat  <br/> |Dieses Standard-SSL-Zertifikat macht die Kommunikation zwischen Verbundservern, Verbundserverproxys und Internetclientcomputern sicher.  <br/> |Bevor Sie den AD FS Verbund Verbundserverproxy-Konfigurationsassistenten erfolgreich ausführen können, muss dieses SSL-Zertifikat an die Standardwebsite in IIS gebunden werden.  <br/> Dieses Zertifikat muss denselben Antragstellernamen wie das SSL-Zertifikat haben, das auf dem Verbundserver im Unternehmensnetzwerk konfiguriert wurde.  <br/> **Empfehlung:** Unsere Empfehlung lautet, dass Sie dasselbe Serverauthentifizierungszertifikat verwenden, das auf dem Verbundserver konfiguriert wurde, mit dem dieser Verbundserverproxy verbunden ist.  <br/> |
+|SSL-Zertifikat  <br/> |Dieses Standard-SSL-Zertifikat macht die Kommunikation zwischen Verbundservern, Verbundserverproxys und Internetclientcomputern sicher.  <br/> |Dieses SSL-Zertifikat muss an die Standardwebsite in IIS gebunden werden, bevor Sie den Konfigurations-Assistenten für den AD FS-Verbund Server Proxy ausführen können.  <br/> Dieses Zertifikat muss denselben Antragstellernamen wie das SSL-Zertifikat haben, das auf dem Verbundserver im Unternehmensnetzwerk konfiguriert wurde.  <br/> **Empfehlung:** Unsere Empfehlung lautet, dass Sie dasselbe Serverauthentifizierungszertifikat verwenden, das auf dem Verbundserver konfiguriert wurde, mit dem dieser Verbundserverproxy verbunden ist.  <br/> |
    
-## <a name="certificates-for-autodiscover-outlook-anywhere-and-active-directory-synchronization"></a>Zertifikate für AutoErmittlung, Outlook Anywhere und Active Directory-Synchronisierung
+## <a name="certificates-for-autodiscover-outlook-anywhere-and-active-directory-synchronization"></a>Zertifikate für die AutoErmittlung, Outlook Anywhere und die Active Directory-Synchronisierung
 
-Die externen Exchange 2013, Exchange 2010, Exchange 2007 und Exchange 2003 Client Access Server (CASs) ist ein Drittanbieter-SSL-Zertifikat für sichere Verbindungen für AutoErmittlung, Outlook Anywhere und Active Directory Synchronization Services erforderlich. Dieses Zertifikat in Ihrer lokalen Umgebung installiert möglicherweise bereits müssen.
+Ihre externen Exchange 2013-, Exchange 2010-, Exchange 2007-und Exchange 2003-Client Zugriffsserver (CASs) erfordern ein SSL-Zertifikat eines Drittanbieters für sichere Verbindungen für AutoErmittlung, Outlook Anywhere und Active Directory-Synchronisierungsdienste. Möglicherweise ist dieses Zertifikat bereits in Ihrer lokalen Umgebung installiert.
   
 ## <a name="certificate-for-an-exchange-hybrid-server"></a>Zertifikat für einen Exchange-Hybridserver
 
-Die externen hybride Exchange-Server oder Server ist ein Drittanbieter-SSL-Zertifikat für sichere Konnektivität mit dem Exchange Online-Dienst erforderlich. Sie müssen dieses Zertifikat von Ihrem Drittanbieter-SSL-Anbieter abzurufen.
+Ihre externen Exchange-hybridserver oder-Server benötigen ein SSL-Zertifikat eines Drittanbieters für eine sichere Verbindung mit dem Exchange Online-Dienst. Sie müssen dieses Zertifikat von Ihrem Drittanbieter-SSL-Anbieter abrufen.
   
-## <a name="office-365-certificate-chains"></a>Office 365 Zertifikatketten
+## <a name="office-365-certificate-chains"></a>Office 365-Zertifikatketten
 
-In diesem Artikel wird beschrieben, die Zertifikate, die Sie möglicherweise auf Ihrer Infrastruktur installieren müssen. Weitere Informationen über die Zertifikate auf unsere Office 365-Server installiert sind finden Sie unter [Office 365 Zertifikatketten](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
+In diesem Artikel werden die Zertifikate beschrieben, die Sie möglicherweise für Ihre Infrastruktur installieren müssen. Weitere Informationen zu den auf unseren Office 365-Servern installierten Zertifikaten finden Sie unter [office 365 Certificate Chains](https://support.office.com/article/0c03e6b3-e73f-4316-9e2b-bf4091ae96bb).
   
 

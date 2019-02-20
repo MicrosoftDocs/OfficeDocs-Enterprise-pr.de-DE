@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten von Domänen nicht-routingfähigen für Directory-Synchronisierung
+title: Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,84 +10,87 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
 - MED150
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
-description: Hier erfahren Sie, wie Sie vorgehen, wenn Sie verfügen über eine nicht Routale Domäne Ihre lokalen Benutzer zugeordnet ist, bevor Sie mit Office 365 synchronisieren.
-ms.openlocfilehash: 9ec96c34e1dc4a6c755ea97fce3f5f2a5ba21bb3
-ms.sourcegitcommit: 9c493c4e18e83491d106c5e9bab55d1a89298879
+description: Erfahren Sie, was Sie tun müssen, wenn Sie über eine nicht-routale-Domäne verfügen, die Ihren lokalen Benutzern zugeordnet ist, bevor Sie mit Office 365 synchronisieren.
+ms.openlocfilehash: 150e670e58419cda0f8ba08a5fb1e375478a27b1
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "26674439"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085314"
 ---
-# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Vorbereiten von Domänen nicht-routingfähigen für Directory-Synchronisierung
-Wenn Sie Ihr lokales Verzeichnis mit Office 365 synchronisieren eine überprüfte Domäne in Azure Active Directory haben. Nur die User Principal Names (UPN), die mit der lokalen Domäne verknüpft sind, werden synchronisiert. Allerdings werden alle UPN, die eine nicht-routingfähigen Domäne, z. B. Local (wie billa@contoso.local), enthält zu synchronisiert eine. Domäne "onmicrosoft.com" (wie billa@contoso.onmicrosoft.com). 
+# <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung
+Wenn Sie Ihr lokales Verzeichnis mit Office 365 synchronisieren, müssen Sie über eine verifizierte Domäne in Azure Active Directory verfügen. Nur die Benutzerprinzipalnamen (UPN), die der lokalen Domäne zugeordnet sind, werden synchronisiert. Jeder UPN, der eine nicht Routingfähige Domäne enthält, beispielsweise. local (wie Billa @ contoso. local), wird mit einer. onmicrosoft.com-Domäne (wie billa@contoso.onmicrosoft.com) synchronisiert. 
 
-Wenn Sie bereits eine Local-Domäne für Ihre Benutzerkonten in Active Directory wird empfohlen, dass Sie diese, um eine überprüften Domäne (wie billa@contoso.com) verwenden, um ordnungsgemäß Synchronisierung mit Office 365-Domäne ändern.
+Wenn Sie derzeit eine lokale Domäne für ihre Benutzerkonten in Active Directory verwenden, wird empfohlen, diese so zu ändern, dass Sie eine verifizierte Domäne (wie billa@contoso.com) verwenden, um ordnungsgemäß mit Ihrer Office 365-Domäne zu synchronisieren.
   
-## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Was geschieht, wenn nur eine Local lokale Domäne ist vorhanden?
+## <a name="what-if-i-only-have-a-local-on-premises-domain"></a>Was geschieht, wenn ich nur eine lokale lokalen Domäne habe?
 
-Das neueste Tool, das Sie verwenden können, für die Synchronisierung Ihrer Active Directory und Azure Active Directory heißt Azure Active Directory verbinden. Weitere Informationen finden Sie unter [Integration von Ihrer lokalen Identitäten mit Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
+Das neueste Tool zum Synchronisieren von Active Directory mit Azure Active Directory heißt Azure AD Connect. Weitere Informationen finden Sie unter [integrieren Ihrer lokalen Identitäten in Azure Active Directory](https://docs.microsoft.com/azure/architecture/reference-architectures/identity/azure-ad).
   
-Verbinden von Azure Active Directory synchronisiert UPN und das Kennwort des Benutzers, damit Benutzer sich anmelden können sich mit denselben Anmeldeinformationen lokalen Verwendung. Azure Active Directory verbinden synchronisiert jedoch nur Benutzer auf Domänen, die von Office 365 überprüft werden. Dies bedeutet, dass die Domäne auch von Azure Active Directory überprüft worden ist, da Office 365 Identitäten von Azure Active Directory verwaltet werden. Anders ausgedrückt, muss die Domäne einen gültigen Internet-Domänennamen (z. B. .com, org, .net, US usw.) sein. Wenn der internen Active Directory nur eine nicht-routingfähigen Domäne (beispielsweise Local) verwendet wird, darf nicht dies möglicherweise die überprüfte Domäne übereinstimmen, die Sie in Office 365. Sie können dieses Problem beheben, indem Sie entweder die primäre Domäne in Ihre lokale Active Directory ändern oder durch eine oder mehrere UPN-Suffixe hinzufügen.
+Azure AD Connect synchronisiert den UPN und das Kennwort Ihrer Benutzer, sodass sich Benutzer mit denselben Anmeldeinformationen anmelden können, die Sie lokal verwenden. Azure AD Connect synchronisiert jedoch nur Benutzer mit Domänen, die von Office 365 überprüft wurden. Dies bedeutet, dass die Domäne auch von Azure Active Directory überprüft wird, da Office 365-Identitäten von Azure Active Directory verwaltet werden. Das heißt, die Domäne muss eine gültige Internet Domäne (beispielsweise. com,. org, .net,. US usw.) sein. Wenn Ihr internes Active Directory nur eine nicht Routingfähige Domäne verwendet (beispielsweise local), kann dies nicht mit der überprüften Domäne übereinstimmen, die Sie in Office 365 haben. Sie können dieses Problem beheben, indem Sie entweder Ihre primäre Domäne in Ihrem lokalen Active Directory ändern oder ein oder mehrere UPN-Suffixe hinzufügen.
   
-### <a name="change-your-primary-domain"></a>**Ändern Sie Ihre primäre Domäne**
+### <a name="change-your-primary-domain"></a>**Ändern der primären Domäne**
 
-Ändern Sie Ihre primäre Domäne in einer Domäne, die Sie in Office 365, beispielsweise "contoso.com" überprüft haben. Jeder Benutzer mit der Domäne contoso.local klicken Sie dann auf "contoso.com" aktualisiert. Weitere Informationen finden Sie unter [Domäne umbenennen Funktionsweise](https://go.microsoft.com/fwlink/p/?LinkId=624174). Dies ist ein sehr Vorgang, jedoch und eine einfachere Lösung [Hinzufügen UPN Suffixe und Aktualisieren von Benutzern für diese](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), wie im folgenden Abschnitt dargestellt.
+Ändern Sie Ihre primäre Domäne in eine Domäne, die Sie in Office 365 überprüft haben, beispielsweise contoso.com. Jeder Benutzer mit der Domäne "contoso. local" wird dann auf contoso.com aktualisiert. Anweisungen hierzu finden Sie unter [Funktionsweise der Domänenumbenennung](https://go.microsoft.com/fwlink/p/?LinkId=624174). Dies ist ein sehr beteiligter Prozess, und eine einfachere Lösung besteht darin, [UPN-Suffixe hinzuzufügen und die Benutzer auf diese zu aktualisieren](prepare-a-non-routable-domain-for-directory-synchronization.md#bk_register), wie im folgenden Abschnitt dargestellt.
   
-### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN-Suffixen hinzufügen und Aktualisieren von Benutzern für diese**
+### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**Hinzufügen von UPN-Suffixen und Aktualisieren der Benutzer**
 
-Sie können das Local Problem lösen durch die Registrierung neue UPN-Suffix oder Suffixe in Active Directory und die Domäne (oder Domänen) übereinstimmen, die Sie in Office 365 überprüft. Nachdem Sie das neue Suffix registrieren, aktualisieren Sie den Benutzer UPNs der Local mit den neuen Domänennamen für Beispiel ersetzen, damit ein Benutzerkonto billa@contoso.com aussieht.
+Sie können das. local-Problem beheben, indem Sie neue UPN-Suffixe oder Suffixe in Active Directory registrieren, um die in Office 365 überprüfte Domäne (oder Domänen) zu erfüllen. Nachdem Sie das neue Suffix registriert haben, aktualisieren Sie die Benutzer UPNs so, dass die. local-Datei durch den neuen Domänennamen ersetzt wird, sodass ein Benutzerkonto wie billa@contoso.com aussieht.
   
-Nachdem Sie die Verwendung die überprüfte Domäne UPNs aktualisiert haben, können Sie Ihre lokale Active Directory mit Office 365 synchronisieren.
+Nachdem Sie die UPNs für die Verwendung der verifizierte Domäne aktualisiert haben, können Sie Ihr lokales Active Directory mit Office 365 synchronisieren.
   
- **Schritt 1: Fügen Sie das neue UPN-Suffix hinzu**
+ **Schritt 1: Hinzufügen des neuen UPN-Suffixes**
   
-1. Auf dem Server, die auf Active Directory-Domänendienste (AD DS) ausgeführt wird, wählen Sie im Server-Manager **Tools** \> **Active Directory-Domänen und -Vertrauensstellungen**.
+1. Wählen Sie auf dem Server, auf dem die Active Directory-Domänendienste (AD DS) ausgeführt werden, im Server-Manager die Option **Tools** \> **Active Directory-Domänen und-Vertrauensstellungen**aus.
     
-    **Oder, falls Sie nicht über Windows Server 2012 verfügen**
+    **Oder, wenn Sie nicht über Windows Server 2012**
     
-    Drücken Sie die **Windows-Taste + R** , öffnen Sie das Dialogfeld **Ausführen** , und geben Sie in Domain.msc, und wählen Sie dann auf **OK**.
+    Drücken Sie die **Windows-Taste + R** , um das Dialogfeld **Ausführen** zu öffnen, und geben Sie dann in Domain. msc ein, und klicken Sie dann auf **OK**.
     
-    ![Wählen Sie Active Directory-Domänen und -Vertrauensstellungen.](media/46b6e007-9741-44af-8517-6f682e0ac974.png)
+    ![Wählen Sie Active Directory-Domänen und-Vertrauensstellungen aus.](media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. Das Fenster **Active Directory-Domänen und-Vertrauensstellungen** Maustaste auf **Active Directory-Domänen und -Vertrauensstellungen**, und wählen Sie dann auf **Eigenschaften**.
+2. Klicken Sie im Fenster **Active Directory-Domänen und-Vertrauensstellungen** mit der rechten Maustaste auf **Active Directory-Domänen und-Vertrauensstellungen**, und wählen Sie dann **Eigenschaften**aus.
     
-    ![Mit der rechten Maustaste Active Directory-Domänen und -Vertrauensstellungen, und wählen Sie Eigenschaften](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
+    ![Klicken Sie mit der rechten Maustaste auf ActiveDirectory-Domänen und-Vertrauensstellungen, und wählen Sie Eigenschaften](media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. Klicken Sie auf der Registerkarte **Benutzerprinzipalnamen-Suffixe** im Feld **Alternative UPN-Suffixe** Geben Sie Ihre neue UPN-Suffix oder Suffixe, und wählen Sie dann **Hinzufügen** \> **Übernehmen**.
+3. Geben Sie auf der Registerkarte **UPN** -Suffixe im Feld **alternative UPN** -Suffixe Ihr neues UPN-Suffix oder Suffixe ein, und wählen Sie dann **Apply** **Hinzufügen** \> aus.
     
     ![Hinzufügen eines neuen UPN-Suffixes](media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
-    Wählen Sie **OK** , wenn Sie das Hinzufügen von Suffixe fertig sind. 
+    Klicken Sie auf **OK** , wenn Sie mit dem Hinzufügen von Suffixen fertig sind. 
     
- **Schritt 2: Ändern Sie das UPN-Suffix für vorhandene Benutzer**
+ **Schritt 2: Ändern des UPN-Suffixes für vorhandene Benutzer**
   
-1. Auf dem Server, die auf Active Directory-Domänendienste (AD DS) ausgeführt wird, wählen Sie im Server-Manager **Tools** \> **Active Directory Active Directory-Benutzer und-Computer**.
+1. Wählen Sie auf dem Server, auf dem Active Directory-Domänendienste (AD DS) ausgeführt werden, im Server-Manager die Option **Tools** \> **Active Directory Active Directory-Benutzer und-Computer**aus.
     
-    **Oder, falls Sie nicht über Windows Server 2012 verfügen**
+    **Oder, wenn Sie nicht über Windows Server 2012**
     
-    Drücken Sie die **Windows-Taste + R** , öffnen Sie das Dialogfeld **Ausführen** , und geben Sie in den Befehl DSA.msc ein, und klicken Sie dann auf **OK**
+    Drücken Sie die **Windows-Taste + R** , um das Dialogfeld **Ausführen** zu öffnen, und geben Sie dann DSA. msc ein, und klicken Sie dann auf **OK** .
     
-2. Wählen Sie einen Benutzer mit der rechten Maustaste, und wählen Sie dann auf **Eigenschaften**.
+2. Wählen Sie einen Benutzer aus, klicken Sie mit der rechten Maustaste, und wählen Sie dann **Eigenschaften**aus.
     
-3. Klicken Sie auf der Registerkarte **Konto** in der Dropdownliste UPN-Suffix wählen Sie das neue UPN-Suffix, und wählen Sie dann auf **OK**.
+3. Wählen Sie auf der Registerkarte **Konto** in der Dropdownliste UPN-Suffix das neue UPN-Suffix aus, und wählen Sie dann **OK**aus.
     
-    ![Fügen Sie neue UPN-Suffix für einen Benutzer hinzu](media/54876751-49f0-48cc-b864-2623c4835563.png)
+    ![Hinzufügen eines neuen UPN-Suffixes für einen Benutzer](media/54876751-49f0-48cc-b864-2623c4835563.png)
   
-4. Führen Sie diese Schritte für jeden Benutzer.
+4. Führen Sie diese Schritte für jeden Benutzer aus.
     
-    Alternativ können Sie gleichzeitig aktualisieren des UPN Suffixe [können Sie auch Windows PowerShell, um das UPN-Suffix für alle Benutzer zu ändern](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).
+    Alternativ können Sie die UPN-Suffixe Massenaktualisieren [, indem Sie auch Windows PowerShell verwenden, um das UPN-Suffix für alle Benutzer zu ändern](prepare-a-non-routable-domain-for-directory-synchronization.md#BK_Posh).
     
-### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Sie können Windows PowerShell auch so ändern Sie das UPN-Suffix für alle Benutzer verwenden.**
+### <a name="you-can-also-use-windows-powershell-to-change-the-upn-suffix-for-all-users"></a>**Sie können auch Windows PowerShell verwenden, um das UPN-Suffix für alle Benutzer zu ändern.**
 
-Wenn Sie viele Benutzer aktualisiert haben, ist es einfacher, Windows PowerShell verwenden. Das folgende Beispiel verwendet die Cmdlets [Get-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624312) und [Set-ADUser](https://go.microsoft.com/fwlink/p/?LinkId=624313) , um alle contoso.local Suffixe in "contoso.com" zu ändern. 
+Wenn Sie viele Benutzer aktualisieren müssen, ist es einfacher, Windows PowerShell zu verwenden. Das folgende Beispiel verwendet die Cmdlets [Get-inuser](https://go.microsoft.com/fwlink/p/?LinkId=624312) und [Set-inuser](https://go.microsoft.com/fwlink/p/?LinkId=624313) , um alle contoso. local-Suffixe in contoso.com zu ändern. 
 
-Führen Sie die folgenden Windows PowerShell-Befehle, um alle contoso.local Suffixe auf "contoso.com" zu aktualisieren:
+Führen Sie die folgenden Windows PowerShell-Befehle aus, um alle contoso. local-Suffixe auf contoso.com zu aktualisieren:
     
   ```
   $LocalUsers = Get-ADUser -Filter {UserPrincipalName -like '*contoso.local'} -Properties userPrincipalName -ResultSetSize $null
@@ -96,5 +99,5 @@ Führen Sie die folgenden Windows PowerShell-Befehle, um alle contoso.local Suff
   ```
   $LocalUsers | foreach {$newUpn = $_.UserPrincipalName.Replace("contoso.local","contoso.com"); $_ | Set-ADUser -UserPrincipalName $newUpn}
   ```
-Finden Sie unter [Active Directory Windows PowerShell-Modul](https://go.microsoft.com/fwlink/p/?LinkId=624314) erhalten Sie weitere Informationen zum Verwenden von Windows PowerShell in Active Directory. 
+Weitere Informationen zur Verwendung von Windows PowerShell in Active Directory finden Sie unter [Active Directory Windows PowerShell-Modul](https://go.microsoft.com/fwlink/p/?LinkId=624314) . 
 

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von verzeichnissynchronisierungsfehlern in Office 365
+title: Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -8,6 +8,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
@@ -15,43 +18,43 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Hier erfahren Sie, wie Sie zum Anzeigen von verzeichnissynchronisierungsfehlern in Office 365 Administrationscenter.
-ms.openlocfilehash: 8beeeebbb24936abd7c93f4c04c0fa4e27c85c12
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+description: Informationen zum Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365 Admin Center.
+ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327337"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085034"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>Anzeigen von verzeichnissynchronisierungsfehlern in Office 365
+# <a name="view-directory-synchronization-errors-in-office-365"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
 
-Sie können verzeichnissynchronisierungsfehlern in Office 365 Administrationscenter anzeigen. Nur die Benutzer Objekt-Fehler werden angezeigt. Fehler mithilfe von PowerShell finden Sie unter [identifizieren Objekte mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Sie können Verzeichnis Synchronisierungsfehler im Office 365 Admin Center anzeigen. Nur die Fehler des Benutzerobjekts werden angezeigt. Informationen zum Anzeigen von Fehlern mithilfe von PowerShell finden Sie unter [Identifizieren von Objekten mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-Nach der Wiedergabe, finden Sie unter [Beheben von Problemen mit der verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) , um identifizierten Probleme zu beheben.
+Weitere Informationen finden Sie unter [Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) , um erkannte Probleme zu beheben.
   
-## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Anzeigen von verzeichnissynchronisierungsfehlern in der Verwaltungskonsole
+## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern im Admin Center
 
-Zum Anzeigen von Fehlern in der Verwaltungskonsole:
+So zeigen Sie Fehler im Admin Center an:
   
 1. Melden Sie sich bei Office 365 mit Ihrem Geschäfts, Schul- oder Unikonto an. 
     
-2. Öffnen Sie die [zu Office 365 Administrationscenter](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+2. Wechseln Sie zum [Office 365 Admin Center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
-3. Auf **der Homepage** finden Sie die Kachel **Dirsync-Status** . 
+3. Auf der **Start** Seite sehen Sie die Dirsync- **Status** Kachel. 
     
-    ![Der Status der Dirsync-Kachel im Admin Center – Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Die dirSync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-4. Wählen Sie auf die Kachel **Dirsync-Status** So wechseln zur der Seite **Directory Sync Status** . 
+4. Wählen Sie auf der Kachel **Dirsync Status** aus, um zur Seite **Verzeichnis Synchronisierungsstatus** zu wechseln. 
     
-    Am unteren Rand der Seite können Sie sehen, wenn Dirsync-Fehler aufgetreten sind.
+    Am unteren Rand der Seite sehen Sie, ob es dirSync-Fehler gibt.
     
-    ![Auf der Seite Directory Sync Status können Sie sehen, wenn Dirsync-Objekt Fehler aufgetreten sind](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![Auf der Seite Verzeichnis Synchronisierungs Status wird angezeigt, ob dirSync-Objekt Fehler vorliegen.](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
   
-    Wählen Sie, **wir Dirsync-Objekt Fehler gefunden** , um eine detaillierte Ansicht Synchronisierungsfehler Verzeichnis zu wechseln. 
+    Wählen Sie "dirSync- **Objekt Fehler** " aus, um zu einer detaillierten Ansicht der Verzeichnis Synchronisierungsfehler zu wechseln. 
     
     > [!NOTE]
-    > Sie können auch auf der Seite **Dirsync-Fehler** wechseln, wenn Sie auf die Kachel **Dirsync-Status** **wir Dirsync-Objekt Fehler gefunden wählen** . 
+    > Sie können auch auf die Seite **Dirsync Errors** wechseln, wenn Sie sich für Dirsync- **Objekt Fehler** auf der Dirsync- **Status** Kachel entschieden haben. 
   
-![Dirsync-Fehler-Seite](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+![Seite "dirSync-Fehler"](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-5. Wählen Sie auf der Seite **Dirsync-Fehler** der Fehler aus, um die im Detailbereich mit Informationen zu dem Fehler und Tipps zur Problembehebung anzuzeigen. 
+5. Wählen Sie auf der Seite dirSync- **Fehler** einen der aufgeführten Fehler aus, um den Detailbereich mit Informationen zu dem Fehler anzuzeigen, und Tipps zur Problembehebung. 

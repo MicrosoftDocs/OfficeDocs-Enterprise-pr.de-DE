@@ -13,25 +13,28 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-subscription-management
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Zeigen Sie den Status des Office 365-Dienste vor dem Aufruf von Support, um herauszufinden, ob es eine Unterbrechung Active-Dienst ist
-ms.openlocfilehash: 52a7b762b8e86c3e538579f7c1e1611515469389
-ms.sourcegitcommit: c7ad181394a8a3ee261dc44e7a1e70f6ebe7cbcf
+description: Anzeigen des Integritätsstatus von Office 365-Diensten vor dem Aufruf des Supports, um festzustellen, ob eine aktive Dienstunterbrechung vorliegt
+ms.openlocfilehash: 7a8d6c028caa72d332a51123233b2d0642311da0
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29696352"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085294"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Überprüfen des Office 365-Dienststatus
 
-Sie können die Integrität der Office 365, Yammer, Microsoft Dynamics CRM und Microsoft Intune Cloud-Dienste auf der Seite Office 365 **Dienststatus** im Administrationscenter anzeigen. Wenn Sie Probleme mit einer Cloud-Dienst sind, können Sie den Dienststatus, um zu bestimmen, ob dies ein bekanntes Problem mit einer Auflösung ausgeführt, ist bevor Sie Support anrufen oder Zeit zur Problembehandlung ausgeben überprüfen. 
+Sie können die Integrität von Office 365, jammern, Microsoft Dynamics CRM und Microsoft InTune-Cloud-Diensten auf der Office 365- **Dienststatus** Seite im Admin Center anzeigen. Wenn Probleme mit einem clouddienst auftreten, können Sie den Dienststatus überprüfen, um zu ermitteln, ob es sich um ein bekanntes Problem mit einer laufenden Lösung handelt, bevor Sie den Support aufrufen oder Zeit für die Problembehandlung verwenden. 
 
-Wenn Sie nicht das ServicePortal anmelden können, können Sie die [Statusseite Dienst](https://status.office365.com) verwenden, um Informationen zu bekannten Problemen, die verhindern, dass Sie die Protokollierung in Ihrem Mandanten zu überprüfen.
+Wenn Sie sich nicht beim Dienstportal anmelden können, müssen Sie auf der [Seite Dienststatus](https://status.office365.com) nach bekannten Problemen suchen, die das Anmelden an Ihrem Mandanten verhindern.
   
 ### <a name="how-to-check-service-health"></a>Überprüfen des Dienststatus
 
@@ -40,7 +43,7 @@ Wenn Sie nicht das ServicePortal anmelden können, können Sie die [Statusseite 
     > [!NOTE]
     > Personen, denen die Rolle eines globalen Administrators oder Serviceadministrators zugewiesen ist, können den Dienststatus anzeigen. Damit Exchange-, SharePoint- und Skype for Business-Administratoren den Dienststatus anzeigen können, muss ihnen auch die Rolle des Dienstadministrators zugewiesen sein.
   
-2. Um Dienststatus, im Administrationscenter zu öffnen, wechseln Sie zur **Integrität** > **Dienststatus**, oder klicken Sie auf den **Dienst Health Karte** im **Home-Dashboard**. Die Karte Dashboard gibt an, ob es ein Problem Active-Dienst und Links zu der Seite Detaillierte Health ist.
+2. Um den Dienststatus zu öffnen, wechseln Sie im Admin Center zur Integrität des **Integritäts** > **Diensts**, oder klicken Sie auf der **Startseite**auf die **Dienst Integritäts Karte** . Die dashboardkarte gibt an, ob ein aktives Dienst Problem vorliegt, und verweist auf die Seite Detaillierte Dienst Integrität.
     
     ![Dashboard card for service health](media/8ae3de43-7bd5-4ee9-90ed-8b5ba5f9b474.png)
   
@@ -51,13 +54,13 @@ Wenn Sie nicht das ServicePortal anmelden können, können Sie die [Statusseite 
   
 ### <a name="view-details-of-posted-service-health"></a>Anzeigen von Details des veröffentlichten Dienststatus
 
-In der Standardansicht werden alle Dienste und deren aktuellem Integritätsanalyse Status angezeigt. Wählen Sie zum Filtern der Ansicht zu Diensten, die derzeit einen Vorfall auftritt **Vorfälle** aus der schattierten häufig verwendete Hyperlinks auf der linken Seite. Auswählen von **Ratschläge** werden nur die Dienste angezeigt, die derzeit eine Empfehlung veröffentlicht haben. Aus der Ansicht **alle Dienste** wird durch Klicken auf den angezeigten Dienststatus eine Zusammenfassungsansicht der Empfehlung oder Vorfall geöffnet. 
+In der Standardansicht werden alle Dienste und Ihr aktueller Integritätsstatus angezeigt. Wenn Sie Ihre Ansicht auf Dienste filtern möchten, die derzeit einen **** Vorfall erleben, wählen Sie in der schattierten Leiste auf der linken Seite Vorfälle aus. Bei **** Auswahl von "Advisories" werden nur Dienste angezeigt, die derzeit eine Empfehlung veröffentlicht haben. Klicken Sie in der Ansicht **alle Dienste** auf den angezeigten Dienststatus, um eine Zusammenfassungsansicht der Empfehlung oder des Vorfalls zu öffnen. 
   
 ![View of current issues in service health](media/f829a3af-1aca-4dc2-97eb-15d805349b24.png)
   
 Die Empfehlungs- oder Vorfallzusammenfassung enthält folgende Informationen: 
   
-![Ein Screenshot Beschriften der Felder in einem Dienst Empfehlung](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
+![Ein Screenshot, der die Felder in einer Dienst Empfehlung kennzeichnen](media/0dd6065c-1381-4a5c-8ca0-854c3e043a5c.png)
   
 1. Eine Problem-ID und eine zusammenfassende Beschreibung des Problems.
     
@@ -104,11 +107,11 @@ Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen ang
 |**Erweiterte Wiederherstellung** | Dieser Status gibt an, dass eine Behebungsmaßnahme durchgeführt wird, um den Dienst für die Mehrzahl der Benutzer wiederherzustellen, es dauert jedoch einige Zeit, bis alle betroffenen Systeme erreicht sind. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Korrektur vorgenommen haben, um die Auswirkungen zu verringern, während wir an der Bereitstellung einer dauerhaften Lösung arbeiten. |
 |**Untersuchung angehalten** | Dieser Status wird angezeigt, wenn unsere detaillierte Untersuchung eines potenziellen Problems dazu führt, dass Kunden um Angabe zusätzlicher Informationen für eine weitere Untersuchung gebeten werden. Wenn Ihre Unterstützung erforderlich ist, informieren wir Sie, welche Daten oder Protokolle wir benötigen. |
 |**Dienst wiederhergestellt** | Wir haben bestätigt, dass durch die Behebungsmaßnahme das zugrunde liegende Problem gelöst und der Dienst wieder in einen fehlerfreien Zustand versetzt wurde. Informationen zur Fehlerursache finden Sie unter den Problemdetails. |
-|**Nach dem schadensbericht veröffentlicht** | Wir haben einen Post Vorfall-Bericht nach einem bestimmten Problem veröffentlicht, die umfasst Stamm Ursache Informationen und nächste Schritte, um sicherzustellen, dass ein ähnliches Problem nicht mehr auftritt. |
+|**Veröffentlichter Bericht nach Vorfall** | Wir haben einen Vorfall Bericht für ein bestimmtes Problem veröffentlicht, das Ursachen Informationen und die nächsten Schritte enthält, um sicherzustellen, dass ein ähnliches Problem nicht erneut auftritt. |
    
 ## <a name="history"></a>„Verlauf“
 
-Dienststatus können Sie sehen Sie sich den aktuellen Status und Anzeigen des Verlaufs von Dienst Ratschläge und Vorfälle, die in den letzten 30 Tagen Ihres Mandanten ausgewirkt haben. Um die letzten Integrität aller Dienste anzuzeigen, wählen Sie auf der Seite **Dienststatus** **Historie anzeigen** aus. 
+Mit der Dienst Integrität können Sie sich den aktuellen Integritätsstatus ansehen und den Verlauf aller Dienst Hinweise und Vorfälle anzeigen, die ihren Mandanten in den letzten 30 Tagen beeinflusst haben. Zum Anzeigen der letzten Integrität aller Dienste wählen Sie auf der Seite **Dienst Integrität** die Option **Verlauf anzeigen** aus. 
   
 ![Show link to health history](media/12a3e484-1eb4-497f-8cab-8064bccc2ef5.png)
   
@@ -116,9 +119,9 @@ Es wird eine Liste aller Nachrichten zum Dienststatus angezeigt, die im ausgewä
   
 ![View service health history](media/5ed20247-121c-4abe-9fe7-9025e26a2d0e.png)
   
-Sie können die Gesundheitsdaten für die letzten 7 Tage oder der letzten 30 Tagen anzeigen. Wählen Sie eine Zeile aus, um weitere Informationen zu diesem Problem anzuzeigen.
+Sie können den Integritäts Verlauf für die letzten 7 Tage oder letzten 30 Tage anzeigen. Wählen Sie eine beliebige Zeile aus, um weitere Details zu diesem Problem anzuzeigen.
   
-Weitere Informationen zu unserem Engagement für Betriebszeit finden Sie unter [Transparent Vorgänge von Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
+Weitere Informationen zu unserer Verpflichtung zur Verfügbarkeit finden Sie unter [transparente Vorgänge von Office 365](https://go.microsoft.com/fwlink/?linkid=848695).
   
 ## <a name="leave-feedback"></a>Feedback geben
 

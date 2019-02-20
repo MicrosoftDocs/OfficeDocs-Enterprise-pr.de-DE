@@ -14,48 +14,51 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOP150
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Vorbereiten der Bereitstellung von Benutzern zu Office 365 mithilfe von verzeichnissynchronisierung und der langfristigen Vorteile dieser Methode beschrieben.
-ms.openlocfilehash: 8e84f4602b79ce321cd9a71e6c35331baf40f7f0
-ms.sourcegitcommit: c5761d3c41aa2d26815f0d24c73dbcd53ab37957
+description: Beschreibt die Vorbereitung der Bereitstellung von Benutzern auf Office 365 mithilfe der Verzeichnissynchronisierung und der langfristigen Vorteile der Verwendung dieser Methode.
+ms.openlocfilehash: af402950b3681285898d0d87b897d363a693bf98
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27371119"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085104"
 ---
 # <a name="prepare-to-provision-users-through-directory-synchronization-to-office-365"></a>Vorbereiten der Bereitstellung von Benutzern über die Verzeichnissynchronisierung in Office 365
 
-Einrichten von Benutzern mithilfe von verzeichnissynchronisierung erfordert weitere Planung und Vorbereitung als einfach verwalten Ihres Kontos arbeiten oder Schule direkt in Office 365. Zusätzlichen Planung und Vorbereitung Aufgaben sind erforderlich, um sicherzustellen, dass Ihre lokalen Active Directory ordnungsgemäß zu Azure Active Directory synchronisiert. Die hinzugefügten organisationsinterne bietet folgende Vorteile:
+Das Bereitstellen von Benutzern mit der Verzeichnissynchronisierung erfordert mehr Planung und Vorbereitung, als nur das geschäftliche oder schulische Konto direkt in Office 365 zu verwalten. Die zusätzlichen Planungs-und Vorbereitungsaufgaben sind erforderlich, um sicherzustellen, dass Ihr lokales Active Directory ordnungsgemäß mit Azure Active Directory synchronisiert wird. Zu den Vorteilen für Ihre Organisation gehört Folgendes:
   
 - Verringern der Anzahl der Verwaltungsprogramme in Ihrer Organisation
-- Aktivieren optional Szenario für einmaliges Anmelden
+- Optionales Aktivieren des Szenarios für einmaliges Anmelden
 - Automatisieren von Kontoänderungen in Office 365
     
-Weitere Informationen zu den Vorteilen der Verwendung von verzeichnissynchronisierung finden Sie unter [Directory Synchronization Roadmap]( https://go.microsoft.com/fwlink/p/?LinkId=525398) und [Grundlegendes zu Office 365-Identität und Azure Active Directory](about-office-365-identity.md).
+Weitere Informationen zu den Vorteilen der Verwendung der Verzeichnissynchronisierung finden Sie unter Übersicht über die [Verzeichnissynchronisierung]( https://go.microsoft.com/fwlink/p/?LinkId=525398) und [Grundlegendes zu Office 365 Identity und Azure Active Directory](about-office-365-identity.md).
   
-Um zu bestimmen, welches Szenario der für Ihre Organisation am besten geeignet ist, überprüfen Sie den [Directory Integration Tools Comparison](https://go.microsoft.com/fwlink/p/?LinkId=525320).
+Um zu bestimmen, welches Szenario am besten für Ihre Organisation geeignet ist, lesen Sie den [Vergleich der Verzeichnis Integrationstools](https://go.microsoft.com/fwlink/p/?LinkId=525320).
   
-## <a name="directory-cleanup-tasks"></a>Verzeichnis Bereinigungsaufgaben
+## <a name="directory-cleanup-tasks"></a>Aufgaben zur Verzeichnisbereinigung
 
-Bevor Sie die Synchronisierung Ihres Verzeichnisses beginnen, müssen Sie Ihr Verzeichnis bereinigen.
+Bevor Sie mit der Synchronisierung Ihres Verzeichnisses beginnen, müssen Sie Ihr Verzeichnis bereinigen.
   
-Überprüfen Sie die [Attribute mit Azure Active Directory von Azure Active Directory verbinden synchronisiert](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)auch.
+Lesen Sie auch die [Attribute, die von Azure AD Connect mit Azure Active Directory synchronisiert wurden](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized).
   
 > [!IMPORTANT]
-> Wenn Sie vor der Synchronisierung verzeichnisbereinigung nicht ausführen, kann sich erheblich auf den Bereitstellungsprozess negativ sein. Es kann Tage dauern oder sogar Wochen, den Lebenszyklus von verzeichnissynchronisierung, Identifizieren von Fehlern und erneute Synchronisierung durchlaufen. 
+> Wenn Sie vor der Synchronisierung keine Verzeichnisbereinigung durchführen, kann sich dies negativ auf den Bereitstellungsprozess auswirken. Es kann Tage oder sogar Wochen dauern, bis der Zyklus der Verzeichnissynchronisierung durchlaufen wird, Fehler identifiziert und erneut synchronisiert werden. 
   
-Führen Sie die folgenden Bereinigungsschritte in Ihrem lokalen Verzeichnis:
+Führen Sie im lokalen Verzeichnis die folgenden Bereinigungsaufgaben aus:
   
 1. Stellen Sie sicher, dass jeder Benutzer, der die Office 365-Dienstangebote nutzen darf, eine gültige und eindeutige E-Mail-Adresse im **proxyAddresses**-Attribut besitzt. 
     
 2. Entfernen Sie alle doppelten Werte im **ProxyAddresses**-Attribut. 
     
-3.  Wenn möglich, stellen Sie sicher, dass jeder Benutzer, die Office 365-Dienstangebote zugewiesen wird einen gültigen und eindeutigen Wert für das **UserPrincipalName** -Attribut im **Benutzerobjekt des Benutzers** vorhanden ist. Bewährte Synchronisierung wünschen stellen Sie sicher, dass die lokale Active Directory-UPN die Cloud UPN übereinstimmt. Wenn ein Benutzer einen Wert für das **UserPrincipalName** -Attribut nicht verfügt, muss **das Benutzerobjekt** einen gültigen und eindeutigen Wert für das **sAMAccountName** -Attribut enthalten. Entfernen Sie keine doppelten Werte im Attribut **UserPrincipalName** . 
+3.  Stellen Sie nach Möglichkeit sicher, dass jeder Benutzer, dem Office 365-Dienstangebote zugewiesen werden, einen gültigen und eindeutigen Wert für das **userPrincipalName** -Attribut im **Benutzer** Objekt des Benutzers hat. Stellen Sie für eine optimale Synchronisierung sicher, dass der UPN des lokalen Active Directory mit dem Cloud-UPN übereinstimmt. Wenn ein Benutzer keinen Wert für das **userPrincipalName** -Attribut hat, muss das **User** -Objekt einen gültigen und eindeutigen Wert für das **sAMAccountName** -Attribut enthalten. Entfernen Sie alle doppelten Werte im **userPrincipalName** -Attribut. 
     
 4. Überprüfen Sie die Richtigkeit der folgenden Attribute, um die globale Adressliste (GAL) sinnvoll einsetzen zu können:
     
@@ -76,13 +79,13 @@ Führen Sie die folgenden Bereinigungsschritte in Ihrem lokalen Verzeichnis:
     
 ## <a name="directory-object-and-attribute-preparation"></a>Verzeichnisobjekt- und Attributsvorbereitung
 
-Erfolgreiche verzeichnissynchronisierung zwischen Ihrer lokalen Verzeichnis und Office 365 erfordert, dass Ihre lokalen Verzeichnisattributen ordnungsgemäß vorbereitet sind. Beispielsweise müssen Sie sicherstellen, dass bestimmte Zeichen nicht in bestimmte Attribute verwendet werden, die mit Office 365-Umgebung synchronisiert werden. Unerwartete Zeichen bewirken keine Synchronisierung fehlschlägt, aber möglicherweise eine Warnung zurück. Ungültige Zeichen verursacht Directory-Synchronisierung ein Fehler auftritt.
+Für die erfolgreiche Verzeichnissynchronisierung zwischen dem lokalen Verzeichnis und Office 365 müssen die lokalen Verzeichnisattribute ordnungsgemäß vorbereitet werden. Sie müssen beispielsweise sicherstellen, dass bestimmte Zeichen nicht in bestimmten Attributen verwendet werden, die mit der Office 365-Umgebung synchronisiert werden. Unerwartete Zeichen führen nicht dazu, dass die Verzeichnissynchronisierung fehlschlägt, aber möglicherweise eine Warnung zurückgibt. Ungültige Zeichen führen zu einem Fehler bei der Verzeichnissynchronisierung.
   
-Directory-Synchronisierung schlägt ebenfalls fehl, wenn einige Ihrer Active Directory-Benutzer ein oder mehrere doppelter Attribute verfügen. Jeder Benutzer muss eindeutige Attribute verfügen.
+Die Verzeichnissynchronisierung schlägt ebenfalls fehl, wenn einige Ihrer Active Directory-Benutzer über ein oder mehrere doppelte Attribute verfügen. Jeder Benutzer muss über eindeutige Attribute verfügen.
   
-Die Attribute, die Sie vorbereiten müssen sind hier aufgeführt:
+Die Attribute, die Sie vorbereiten müssen, sind hier aufgeführt:
   
- **Hinweis:** Das [IdFix-Tool](install-and-run-idfix.md) können auch diesen Prozess viel leichter machen. 
+ **Hinweis:** Sie können dieses Verfahren auch mit dem [IdFix-Tool](install-and-run-idfix.md) vereinfachen. 
   
 - **displayName**
     
@@ -100,7 +103,7 @@ Die Attribute, die Sie vorbereiten müssen sind hier aufgeführt:
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
     
     > [!NOTE]
-    > Wenn doppelte Werte vorhanden sind, wird mit dem Wert der erste Benutzer synchronisiert. Nachfolgende Benutzer werden in Office 365 nicht angezeigt. Sie müssen entweder den Wert in Office 365 ändern oder Ändern einer der Werte in das lokale Verzeichnis damit beide Benutzer in Office 365 angezeigt werden. 
+    > Wenn doppelte Werte vorhanden sind, wird der erste Benutzer mit dem Wert synchronisiert. Nachfolgende Benutzer werden nicht in Office 365 angezeigt. Sie müssen entweder den Wert in Office 365 ändern oder beide Werte im lokalen Verzeichnis ändern, damit beide Benutzer in Office 365 angezeigt werden. 
   
 - **mailNickname** (Exchange-Alias) 
     
@@ -111,22 +114,22 @@ Die Attribute, die Sie vorbereiten müssen sind hier aufgeführt:
     
   - Attribut mit mehreren Werten
   - Maximale Anzahl von Zeichen pro Wert: 256
-  - Der Attributwert darf keine Leerzeichen enthalten.
+  - Der Attributwert darf kein Leerzeichen enthalten.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: \< \> (;) , [ ] "
+  - Ungültige Zeichen: \< \> (); , [ ] "
     
-    Beachten Sie, dass die ungültigen Zeichen für Zeichen als Trennzeichen Typ hinter gelten und ":", sodass SMTP:User@contso.com ist zulässig, SMTP:user:M@contoso.com ist jedoch nicht.
+    Beachten Sie, dass die ungültigen Zeichen auf die Zeichen nach dem typtrennzeichen und ":" angewendet werden, sodass SMTP:User@contso.com zulässig ist, aber SMTP:user:M@contoso.com nicht.
     
     > [!IMPORTANT]
-    > Alle Simple Mail Transport Protocol (SMTP)-Adressen sollten e-Mail-messaging-Standards entsprechen. Wenn doppelte oder unerwünschte Adressen vorhanden sind, finden Sie unter dem Hilfethema [Entfernen doppelter und unerwünschte Proxy Adressen in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860). 
+    > Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den Standards für e-Mail-Messaging entsprechen. Wenn doppelte oder unerwünschte Adressen vorhanden sind, finden Sie weitere Informationen im Hilfethema [Entfernen von doppelten und unerwünschten Proxyadressen in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860). 
   
 - **sAMAccountName**
     
   - Maximale Anzahl von Zeichen: 20
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: [\ "|, /: \< \> + =;? \* ]
+  - Ungültige Zeichen: [\ "|,/: \< \> + =;? \* ]
   - Wenn ein Benutzer ein ungültiges Attribut **sAMAccountName**, aber ein gültiges Attribut **userPrincipalName** hat, wird das Benutzerkonto in Office 365 erstellt. 
-  - Wenn beide **Attribute, sAMAccountName** und **UserPrincipalName** , ungültig sind, muss das lokalen Active Directory-Attribut **UserPrincipalName** aktualisiert werden. 
+  - Wenn sowohl **sAMAccountName** als auch **userPrincipalName** ungültig sind, muss das **userPrincipalName** -Attribut des lokalen Active Directory-Attributs aktualisiert werden. 
     
 - **sn** (Nachname) 
     
@@ -134,54 +137,54 @@ Die Attribute, die Sie vorbereiten müssen sind hier aufgeführt:
     
 - **targetAddress**
     
-    Es ist erforderlich, dass das **TargetAddress** -Attribut (beispielsweise SMTP:tom@contoso.com), das für den Benutzer aufgefüllt wird in der Office 365 GAL vorhanden sein muss. Dies würde in Drittanbieter-messaging Migrationsszenarien die Office 365-Schema-Erweiterung für das lokale Verzeichnis erfordern. Die Erweiterung der Office 365-Schema würde auch zum Verwalten von Office 365-Objekten, die mithilfe einer verzeichnissynchronisierungstool aus lokalen Verzeichnis aufgefüllt werden andere nützliche Attribute hinzufügen. Beispielsweise würde das **MsExchHideFromAddressLists** -Attribut für die Verwaltung ausgeblendete Postfächer oder Verteilergruppen hinzugefügt werden. 
+    Es ist erforderlich, dass das **targetAddress** -Attribut (beispielsweise SMTP:Tom@contoso.com), das für den Benutzer aufgefüllt wird, in der Office 365 GAL angezeigt werden muss. In Drittanbieter-Messaging-Migrationsszenarien würde dies die Office 365-Schemaerweiterung für das lokale Verzeichnis erfordern. Die Office 365-Schemaerweiterung würde außerdem weitere nützliche Attribute zum Verwalten von Office 365-Objekten hinzufügen, die mit einem Verzeichnissynchronisierungstool vom lokalen Verzeichnis aufgefüllt werden. Beispielsweise würde das **msExchHideFromAddressLists** -Attribut zum Verwalten von ausgeblendeten Postfächern oder Verteilergruppen hinzugefügt. 
    
   - Maximale Anzahl der Zeichen: 256
-  - Der Attributwert darf keine Leerzeichen enthalten.
+  - Der Attributwert darf kein Leerzeichen enthalten.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: \ \< \> (;) , [ ] "
+  - Ungültige Zeichen: \ \< \> (); , [ ] "
   - Alle SMTP-Adressen (Simple Mail Transport Protocol) müssen mit E-Mail-Messaging-Standards kompatibel sein.
     
 - **userPrincipalName**
     
-  - Das **UserPrincipalName** -Attribut muss im Internet-Anmeldung Format, in dem der Benutzername gefolgt wird, das @-Zeichen (@) und einem Domänennamen: beispielsweise user@contoso.com. Alle Simple Mail Transport Protocol (SMTP)-Adressen sollten e-Mail-messaging-Standards entsprechen.
+  - Das **userPrincipalName** -Attribut muss im Internet-Stil-Anmeldeformat vorliegen, in dem der Benutzername vom @-Zeichen und einem Domänennamen gefolgt wird, beispielsweise user@contoso.com. Alle SMTP-Adressen (Simple Mail Transport Protocol) sollten den Standards für e-Mail-Messaging entsprechen.
   - Die maximale Anzahl von Zeichen für das **userPrincipalName**-Attribut beträgt 113. Vor und nach dem at-Zeichen (@) ist eine bestimmte Anzahl von Zeichen zulässig: 
   - Maximale Anzahl von Zeichen für den Benutzerdomänennamen vor dem @-Zeichen: 64
   - Maximale Anzahl der Zeichen für den Domänennamen hinter dem @-Zeichen: 48
-  - Ungültige Zeichen: \ % &amp; \* + / =? { } | \< \> ( ) ; : , [ ] "
-  - Ä ist auch ein ungültiges Zeichen.
-  - Das @-Zeichen ist in jedem **UserPrincipalName** -Wert erforderlich. 
+  - Ungültige Zeichen: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] "
+  - Ein Umlaut ist auch ein ungültiges Zeichen.
+  - Das @-Zeichen ist in jedem **userPrincipalName** -Wert erforderlich. 
   - Das @-Zeichen darf nie das erste Zeichen in einem **userPrincipalName**-Wert sein. 
-  - Der Benutzername darf nicht mit einem Punkt (.), einem kaufmännischen und-Zeichen enden (&amp;), ein Leerzeichen oder ein at-Zeichen (@).
+  - Der Benutzername darf nicht mit einem Punkt (.), einem kaufmännischem&amp;und-Zeichen (), einer Leertaste oder einem @-Symbol enden.
   - Der Benutzername darf keine Leerzeichen enthalten.
-  - Es müssen routingfähige Domänen verwendet werden. Beispielsweise können local oder interne Domänen verwendet werden.
+  - Routingfähige Domänen müssen verwendet werden; Beispielsweise können lokale oder interne Domänen nicht verwendet werden.
   - Unicode-Zeichen werden in Unterstriche umgewandelt.
   - **userPrincipalName** darf keine doppelten Werte im Verzeichnis enthalten. 
     
 ## <a name="prepare-the-userprincipalname-attribute"></a>Vorbereiten des Attributs userPrincipalName
 
-Active Directory ist darauf ausgelegt, um die Endbenutzer in Ihrer Organisation zur Anmeldung bei Ihrem Verzeichnis mithilfe von **sAMAccountName** oder **UserPrincipalName**zu ermöglichen. Endbenutzer können auf ähnliche Weise, melden Sie sich bei Office 365 mithilfe der Benutzerprinzipalname (UPN) ihrer Arbeit oder Schule Konto. Directory-Synchronisierung versucht, erstellen neue Benutzer in Azure Active Directory mit dem gleichen UPN, die in Ihrem lokalen Verzeichnis ist. Der Benutzerprinzipalname ist wie eine e-Mail-Adresse formatiert. 
+Active Directory soll es den Endbenutzern in Ihrer Organisation ermöglichen, sich über **sAMAccountName** oder **userPrincipalName**bei Ihrem Verzeichnis anzumelden. Entsprechend können Endbenutzer sich mit dem Benutzerprinzipalnamen (UPN) Ihres Geschäfts-oder Schul Kontos bei Office 365 anmelden. Die Verzeichnissynchronisierung versucht, neue Benutzer in Azure Active Directory mithilfe desselben UPN zu erstellen, der sich in Ihrem lokalen Verzeichnis befindet. Der UPN ist wie eine e-Mail-Adresse formatiert. 
 
-In Office 365 wird der UPN das Standardattribut, das verwendet wird, um die e-Mail-Adresse zu generieren. Es ist einfach, **UserPrincipalName** abrufen (: lokal und in Azure Active Directory) und die primäre e-Mail-Adresse im **ProxyAddresses** auf unterschiedliche Werte festgelegt. Wenn sie auf unterschiedliche Werte festgelegt sind, können Verwirrung für Administratoren und Endbenutzer vorhanden sein. 
+In Office 365 ist der UPN das Standardattribut, mit dem die e-Mail-Adresse generiert wird. Es ist ganz einfach, **userPrincipalName** (lokal und in Azure Active Directory) abzurufen, und die primäre e-Mail-Adresse in **proxyAddresses** wird auf unterschiedliche Werte festgelegt. Wenn Sie auf unterschiedliche Werte festgelegt werden, kann es zu Verwirrung für Administratoren und Endbenutzer kommen. 
   
-Es wird empfohlen, diese Attribute, um Verwechslungen zu vermeiden ausrichten. Die Anforderungen für einmaliges Anmelden mit Active Directory-Verbunddienste (AD FS) erfüllen 2.0, müssen Sie sicherstellen, dass die UPNs in Azure Active Directory und die lokale Active Directory übereinstimmen und einen gültigen Domänennamespace verwenden.
+Am besten richten Sie diese Attribute aus, um Verwirrung zu vermeiden. Um die Anforderungen der einmaligen Anmeldung mit Active Directory-Verbunddiensten (AD FS) 2,0 zu erfüllen, müssen Sie sicherstellen, dass die UPNs in Azure Active Directory und Ihr lokales Active Directory übereinstimmen und einen gültigen Domänennamespace verwenden.
   
 ## <a name="add-an-alternative-upn-suffix-to-ad-ds"></a>Hinzufügen eines alternativen UPN-Suffixes zu AD DS
 
-Sie müssen möglicherweise ein alternatives UPN-Suffix zum Zuordnen der Anmeldeinformationen des Benutzers im Unternehmen mit Office 365-Umgebung hinzufügen. Ein UPN-Suffix ist der Teil des UPN rechts neben dem @-Zeichen. UPNs, die für einmaliges Anmelden verwendet werden können Buchstaben, Zahlen, Punkte, Bindestriche und Unterstriche jedoch keine anderen Arten von Zeichen enthalten.
+Möglicherweise müssen Sie ein alternatives UPN-Suffix hinzufügen, um die Unternehmensanmeldeinformationen des Benutzers mit der Office 365-Umgebung zu verknüpfen. Ein UPN-Suffix ist der Teil eines UPN rechts neben dem @-Zeichen. UPNs, die für einmaliges Anmelden verwendet werden, können Buchstaben, Zahlen, Punkte, Striche und Unterstriche enthalten, jedoch keine anderen Zeichentypen.
   
-Weitere Informationen zum Hinzufügen eines alternativen UPN-Suffixes zu Active Directory finden Sie unter [Vorbereiten der verzeichnissynchronisierung]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+Weitere Informationen zum Hinzufügen eines alternativen UPN-Suffix zu Active Directory finden Sie unter [Prepare for Directory Synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
   
-## <a name="match-the-on-premises-upn-with-the-office-365-upn"></a>Abgleichen der lokalen UPNS mit dem Office 365 UPN
+## <a name="match-the-on-premises-upn-with-the-office-365-upn"></a>Übereinstimmung mit dem lokalen UPN mit dem Office 365 UPN
 
-Wenn Sie bereits verzeichnissynchronisierung eingerichtet haben, kann des Benutzers UPN für Office 365 nicht die lokalen UPN des Benutzers übereinstimmen, die in Ihren lokalen Verzeichnisdienst definiert ist. Dies kann vorkommen, wenn ein Benutzer eine Lizenz zugewiesen wurde, bevor die Domäne überprüft wurde. Um dieses Problem zu beheben, mithilfe von [PowerShell doppelte UPN beheben](https://go.microsoft.com/fwlink/p/?LinkId=396730) aktualisieren UPN des Benutzers, um sicherzustellen, dass der Office 365 UPN corporate Benutzername und Domäne übereinstimmt. Wenn Sie den UPN in der lokalen Verzeichnisdienst aktualisieren und es mit Azure Active Directory-Identität synchronisieren möchten, müssen Sie die Lizenz des Benutzers in Office 365 zu entfernen, bevor Sie Änderungen lokale. 
+Wenn Sie die Verzeichnissynchronisierung bereits eingerichtet haben, stimmt der UPN des Benutzers für Office 365 möglicherweise nicht mit dem lokalen UPN des Benutzers überein, der im lokalen Verzeichnisdienst definiert ist. Dies kann vorkommen, wenn einem Benutzer eine Lizenz zugewiesen wurde, bevor die Domäne überprüft wurde. Um dies zu beheben, verwenden Sie [PowerShell, um doppelte UPN zu beheben](https://go.microsoft.com/fwlink/p/?LinkId=396730) , um den UPN des Benutzers zu aktualisieren, um sicherzustellen, dass der Office 365 UPN mit dem Unternehmensbenutzer Namen und der Domäne übereinstimmt. Wenn Sie den UPN im lokalen Verzeichnisdienst aktualisieren und ihn mit der Azure Active Directory-Identität synchronisieren möchten, müssen Sie die Benutzerlizenz in Office 365 entfernen, bevor Sie die Änderungen lokal vornehmen. 
   
-Siehe auch [wie eine nicht-routingfähigen Domäne (beispielsweise Local Domäne) für die verzeichnissynchronisierung vorbereiten](prepare-a-non-routable-domain-for-directory-synchronization.md).
+Weitere Informationen finden Sie unter [Vorbereiten einer nicht routingfähigen Domäne (beispielsweise. Local Domain) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md).
   
-## <a name="directory-integration-tools"></a>Tools für die Directory-integration
+## <a name="directory-integration-tools"></a>Verzeichnis Integrationstools
 
-Directory-Synchronisierung wird die Directory-Objekte (Benutzer, Gruppen und Kontakte) aus der lokalen Active Directory-Umgebung mit der Office 365 Directory-Infrastruktur Azure Active Directory-Synchronisierung. Eine Liste der verfügbaren Tools und ihre Funktionalität finden Sie unter [Directory Integration Tools](https://go.microsoft.com/fwlink/p/?LinkID=510956) . Das empfohlene Tool ist [Microsoft Azure Active Directory verbinden](https://go.microsoft.com/fwlink/p/?LinkID=510956). Weitere Informationen zu Azure Active Directory verbinden finden Sie unter [Integration von Ihrer lokalen Identitäten mit Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=527969).
+Bei der Verzeichnissynchronisierung handelt es sich um die Synchronisierung von Verzeichnisobjekten (Benutzern, Gruppen und Kontakten) von Ihrer lokalen Active Directory-Umgebung zur Office 365-Verzeichnisinfrastruktur, Azure Active Directory. Eine Liste der verfügbaren Tools und deren Funktionen finden Sie unter [Directory-Integrationstools](https://go.microsoft.com/fwlink/p/?LinkID=510956) . Das empfohlene Tool ist [Microsoft Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkID=510956). Weitere Informationen zu Azure Active Directory Connect finden Sie unter [integrieren Ihrer lokalen Identitäten in Azure Active](https://go.microsoft.com/fwlink/p/?LinkId=527969)Directory.
   
-Wenn Benutzerkonten mit Office 365-Verzeichnis zum ersten Mal synchronisiert werden, werden diese markiert als nicht aktiviert. Nicht senden oder Empfangen von e-Mails, und sie nicht Abonnementlizenzen belegen. Wenn Sie Office 365-Abonnements auf bestimmte Benutzer zuweisen möchten, müssen Sie wählen und durch [Zuweisen von Lizenzen für Benutzer in Office 365 für Unternehmen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)zu aktivieren.
+Wenn Benutzerkonten zum ersten Mal mit dem Office 365-Verzeichnis synchronisiert werden, werden Sie als nicht aktiviert gekennzeichnet. Sie können keine e-Mails senden oder empfangen, und Sie nutzen keine Abonnementlizenzen. Wenn Sie bereit sind, Office 365-Abonnements bestimmten Benutzern zuzuweisen, müssen Sie diese aktivieren und aktivieren, indem Sie [Benutzern in Office 365 for Business Lizenzen zuweisen](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
   
-[PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=613097) können auch Lizenzen zuweisen. Informationen Sie [zum Verwenden von PowerShell, automatisch Lizenzen an die Office 365-Benutzer](https://go.microsoft.com/fwlink/p?LinkID=329805) eine automatisierte Lösung.
+Sie können auch [PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=613097) verwenden, um Lizenzen zuzuweisen. Weitere Informationen finden Sie unter [Verwenden von PowerShell zum automatischen Zuweisen von Lizenzen zu Ihren Office 365-Benutzern](https://go.microsoft.com/fwlink/p?LinkID=329805) für eine automatisierte Lösung.
