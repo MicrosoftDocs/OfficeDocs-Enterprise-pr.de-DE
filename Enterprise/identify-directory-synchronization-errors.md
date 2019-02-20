@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von verzeichnissynchronisierungsfehlern in Office 365
+title: Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -8,6 +8,9 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
+ms.collection:
+- Ent_O365
+- M365-identity-device-management
 search.appverid:
 - MET150
 - MOE150
@@ -15,43 +18,43 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Hier erfahren Sie, wie Sie zum Anzeigen von verzeichnissynchronisierungsfehlern in Office 365 Administrationscenter.
-ms.openlocfilehash: 8beeeebbb24936abd7c93f4c04c0fa4e27c85c12
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+description: Informationen zum Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365 Admin Center.
+ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
+ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327337"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30085034"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a><span data-ttu-id="71dd8-103">Anzeigen von verzeichnissynchronisierungsfehlern in Office 365</span><span class="sxs-lookup"><span data-stu-id="71dd8-103">View directory synchronization errors in Office 365</span></span>
+# <a name="view-directory-synchronization-errors-in-office-365"></a><span data-ttu-id="b28be-103">Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365</span><span class="sxs-lookup"><span data-stu-id="b28be-103">View directory synchronization errors in Office 365</span></span>
 
-<span data-ttu-id="71dd8-p101">Sie können verzeichnissynchronisierungsfehlern in Office 365 Administrationscenter anzeigen. Nur die Benutzer Objekt-Fehler werden angezeigt. Fehler mithilfe von PowerShell finden Sie unter [identifizieren Objekte mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span><span class="sxs-lookup"><span data-stu-id="71dd8-p101">You can view directory synchronization errors in the Office 365 admin center. Only the User object errors are displayed. To view errors by using PowerShell, see [Identify objects with DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span></span>
+<span data-ttu-id="b28be-p101">Sie können Verzeichnis Synchronisierungsfehler im Office 365 Admin Center anzeigen. Nur die Fehler des Benutzerobjekts werden angezeigt. Informationen zum Anzeigen von Fehlern mithilfe von PowerShell finden Sie unter [Identifizieren von Objekten mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span><span class="sxs-lookup"><span data-stu-id="b28be-p101">You can view directory synchronization errors in the Office 365 admin center. Only the User object errors are displayed. To view errors by using PowerShell, see [Identify objects with DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).</span></span>
 
-<span data-ttu-id="71dd8-107">Nach der Wiedergabe, finden Sie unter [Beheben von Problemen mit der verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) , um identifizierten Probleme zu beheben.</span><span class="sxs-lookup"><span data-stu-id="71dd8-107">After viewing, see [fixing problems with directory synchronization for Office 365](fix-problems-with-directory-synchronization.md) to correct any identified issues.</span></span>
+<span data-ttu-id="b28be-107">Weitere Informationen finden Sie unter [Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) , um erkannte Probleme zu beheben.</span><span class="sxs-lookup"><span data-stu-id="b28be-107">After viewing, see [fixing problems with directory synchronization for Office 365](fix-problems-with-directory-synchronization.md) to correct any identified issues.</span></span>
   
-## <a name="view-directory-synchronization-errors-in-the-admin-center"></a><span data-ttu-id="71dd8-108">Anzeigen von verzeichnissynchronisierungsfehlern in der Verwaltungskonsole</span><span class="sxs-lookup"><span data-stu-id="71dd8-108">View directory synchronization errors in the admin center</span></span>
+## <a name="view-directory-synchronization-errors-in-the-admin-center"></a><span data-ttu-id="b28be-108">Anzeigen von Verzeichnis Synchronisierungsfehlern im Admin Center</span><span class="sxs-lookup"><span data-stu-id="b28be-108">View directory synchronization errors in the admin center</span></span>
 
-<span data-ttu-id="71dd8-109">Zum Anzeigen von Fehlern in der Verwaltungskonsole:</span><span class="sxs-lookup"><span data-stu-id="71dd8-109">To view any errors in the admin center:</span></span>
+<span data-ttu-id="b28be-109">So zeigen Sie Fehler im Admin Center an:</span><span class="sxs-lookup"><span data-stu-id="b28be-109">To view any errors in the admin center:</span></span>
   
-1. <span data-ttu-id="71dd8-110">Melden Sie sich bei Office 365 mit Ihrem Geschäfts, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="71dd8-110">Sign in to Office 365 with your work or school account.</span></span> 
+1. <span data-ttu-id="b28be-110">Melden Sie sich bei Office 365 mit Ihrem Geschäfts, Schul- oder Unikonto an.</span><span class="sxs-lookup"><span data-stu-id="b28be-110">Sign in to Office 365 with your work or school account.</span></span> 
     
-2. <span data-ttu-id="71dd8-111">Öffnen Sie die [zu Office 365 Administrationscenter](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).</span><span class="sxs-lookup"><span data-stu-id="71dd8-111">Go to the [About the Office 365 admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).</span></span>
+2. <span data-ttu-id="b28be-111">Wechseln Sie zum [Office 365 Admin Center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).</span><span class="sxs-lookup"><span data-stu-id="b28be-111">Go to the [About the Office 365 admin center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).</span></span>
     
-3. <span data-ttu-id="71dd8-112">Auf **der Homepage** finden Sie die Kachel **Dirsync-Status** .</span><span class="sxs-lookup"><span data-stu-id="71dd8-112">On the **Home** page you will see the **DirSync Status** tile.</span></span> 
+3. <span data-ttu-id="b28be-112">Auf der **Start** Seite sehen Sie die Dirsync- **Status** Kachel.</span><span class="sxs-lookup"><span data-stu-id="b28be-112">On the **Home** page you will see the **DirSync Status** tile.</span></span> 
     
-    ![Der Status der Dirsync-Kachel im Admin Center – Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Die dirSync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
-4. <span data-ttu-id="71dd8-114">Wählen Sie auf die Kachel **Dirsync-Status** So wechseln zur der Seite **Directory Sync Status** .</span><span class="sxs-lookup"><span data-stu-id="71dd8-114">On the tile, choose **DirSync Status** to go to the **Directory Sync Status** page.</span></span> 
+4. <span data-ttu-id="b28be-114">Wählen Sie auf der Kachel **Dirsync Status** aus, um zur Seite **Verzeichnis Synchronisierungsstatus** zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="b28be-114">On the tile, choose **DirSync Status** to go to the **Directory Sync Status** page.</span></span> 
     
-    <span data-ttu-id="71dd8-115">Am unteren Rand der Seite können Sie sehen, wenn Dirsync-Fehler aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="71dd8-115">On the bottom of the page you can see if there are DirSync errors.</span></span>
+    <span data-ttu-id="b28be-115">Am unteren Rand der Seite sehen Sie, ob es dirSync-Fehler gibt.</span><span class="sxs-lookup"><span data-stu-id="b28be-115">On the bottom of the page you can see if there are DirSync errors.</span></span>
     
-    ![Auf der Seite Directory Sync Status können Sie sehen, wenn Dirsync-Objekt Fehler aufgetreten sind](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![Auf der Seite Verzeichnis Synchronisierungs Status wird angezeigt, ob dirSync-Objekt Fehler vorliegen.](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
   
-    <span data-ttu-id="71dd8-117">Wählen Sie, **wir Dirsync-Objekt Fehler gefunden** , um eine detaillierte Ansicht Synchronisierungsfehler Verzeichnis zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="71dd8-117">Choose **We found DirSync object errors** to go to a detailed view of the directory synchronization errors.</span></span> 
+    <span data-ttu-id="b28be-117">Wählen Sie "dirSync- **Objekt Fehler** " aus, um zu einer detaillierten Ansicht der Verzeichnis Synchronisierungsfehler zu wechseln.</span><span class="sxs-lookup"><span data-stu-id="b28be-117">Choose **We found DirSync object errors** to go to a detailed view of the directory synchronization errors.</span></span> 
     
     > [!NOTE]
-    > <span data-ttu-id="71dd8-118">Sie können auch auf der Seite **Dirsync-Fehler** wechseln, wenn Sie auf die Kachel **Dirsync-Status** **wir Dirsync-Objekt Fehler gefunden wählen** .</span><span class="sxs-lookup"><span data-stu-id="71dd8-118">You can also go to the **DirSync errors** page if you choose **We found DirSync object errors** on the **DirSync status** tile.</span></span> 
+    > <span data-ttu-id="b28be-118">Sie können auch auf die Seite **Dirsync Errors** wechseln, wenn Sie sich für Dirsync- **Objekt Fehler** auf der Dirsync- **Status** Kachel entschieden haben.</span><span class="sxs-lookup"><span data-stu-id="b28be-118">You can also go to the **DirSync errors** page if you choose **We found DirSync object errors** on the **DirSync status** tile.</span></span> 
   
-![Dirsync-Fehler-Seite](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+![Seite "dirSync-Fehler"](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-5. <span data-ttu-id="71dd8-120">Wählen Sie auf der Seite **Dirsync-Fehler** der Fehler aus, um die im Detailbereich mit Informationen zu dem Fehler und Tipps zur Problembehebung anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="71dd8-120">On the **DirSync errors** page, choose any of the errors listed to display the details pane with information about the error and tips on how to fix it.</span></span> 
+5. <span data-ttu-id="b28be-120">Wählen Sie auf der Seite dirSync- **Fehler** einen der aufgeführten Fehler aus, um den Detailbereich mit Informationen zu dem Fehler anzuzeigen, und Tipps zur Problembehebung.</span><span class="sxs-lookup"><span data-stu-id="b28be-120">On the **DirSync errors** page, choose any of the errors listed to display the details pane with information about the error and tips on how to fix it.</span></span> 
