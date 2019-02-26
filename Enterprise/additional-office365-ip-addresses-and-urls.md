@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: 2e25ed32a6e88654f583b4bdca2ff04e6a4c96ff
-ms.sourcegitcommit: 0c4f50aa55699b8390038efbb8b50dbe10f3eefe
+ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
+ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723372"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242087"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
 
@@ -56,7 +56,7 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 | 10  | Der AutoDetect-Dienst wird in [Exchange-Hybridszenarien](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit [der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) verwendet. <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Lokale Exchange-Kundenserver an TCP-Port 443 | Eingehender Serverdatenverkehr |
 | 11  | Skype for Business in Office 2016 umfasst eine videobasierte Bildschirmübertragung, die UDP-Ports verwendet. Vor Skype for Business-Clients in Office 2013 und früher wurde RDP-über-TCP-Port 443 verwendet. | TCP-Port 443 geöffnet bis 52.112.0.0/14 | Altere Clientversionen von Skype for Business in Office 2013 und früheren Versionen |
 | 12  | Lokale Serververbindung für Skype für Business-Hybridbereitstellung mit Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14 UDP-Ports 50.000-59.999 <BR>  TCP-Ports: 50.000-59.999 | Skype for Business auf lokale Server ausgehende Verbindungen |
-| 13  | Für ein Cloud-Telefonfestnetz mit lokaler Hybridverbindung muss die Netzwerkverbindung für die lokalen Hosts geöffnet sein. Weitere Informationen zu Skype for Business Online-Hybridbereitstellungen finden Sie  | unter [Skype für Business-Hybridbereitstellung](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/skype-for-business-hybrid-solutions). | Lokale Skype for Business-Hybridbereitstellung (eingehend) |
+| 13  | Für ein Cloud-Telefonfestnetz mit lokaler Hybridverbindung muss die Netzwerkverbindung für die lokalen Hosts geöffnet sein. Weitere Informationen zu Skype for Business Online-Hybridbereitstellungen finden Sie  | Siehe [Planen der Hybridkonnektivität zwischen Skype for Business Server und Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) | Lokale Skype for Business-Hybridbereitstellung (eingehend) |
 | 14  | **FQDNs für Authentifizierung und Identität** <br> Für ordnungsgemäße Funktion muss sich der FQDN ```secure.aadcdn.microsoftonline-p.com``` in der Zone "Vertrauenswürdige Sites" von Internet Explorer (IE) oder Edge des Clients befinden. |  | Vertrauenswürdige Sites |
 | 15  |  **FQDNs für Microsoft Teams** <br> Wenn Sie Internet Explorer oder Microsoft Edge verwenden, müssen Sie Cookies von Erst- und Drittanbietern aktivieren und die FQDNs für Teams zu Ihren vertrauenswürdigen Sites hinzufügen. Dies muss zusätzlich zu den in Zeile 14 aufgeführten Werten für FQDNs, CDNs und Telemetrie für die gesamte Suite erfolgen. Weitere Informationen finden Sie unter [Bekannte Probleme bei Microsoft Teams](https://docs.microsoft.com/microsoftteams/known-issues). |  | Vertrauenswürdige Sites |
 | 16  |  **FQDNs für SharePoint Online und OneDrive for Business** <br> Für eine ordnungsgemäße Funktion müssen sich alle FQDNs von ".sharepoint.com" mit "\<tenant>" im FQDN in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. Sie müssen diese Endpunkte über die in Zeile 14 aufgelisteten, für die gesamte Suite gültigen FQDNs, CDNs und Telemetriewerte hinaus hinzufügen. |  | Vertrauenswürdige Sites |
