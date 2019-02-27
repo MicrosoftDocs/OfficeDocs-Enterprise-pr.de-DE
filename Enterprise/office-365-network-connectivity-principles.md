@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid: MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Bevor Sie mit der Planung Ihres Netzwerks für die Netzwerkkonnektivität von Office 365 beginnen, sollten Sie sich mit den grundlegenden Prinzipien für die sichere Verwaltung von Office 365-Datenverkehr und optimale Leistung vertraut machen. Dieser Artikel hilft Ihnen, die neuesten Richtlinien für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen.
-ms.openlocfilehash: 16086af6a77409dcbb126af3b3b9f0853a3dce8c
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 3dfb0732ff15c7d8f3c20ac659f94b8d807afa07
+ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30053009"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303619"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Prinzipien von Office 365-Netzwerkverbindungen
 

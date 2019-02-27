@@ -7,16 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
 localization_priority: Normal
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- Strat_O365_Enterprise
+- M365-subscription-management
 search.appverid:
 - MET150
 description: Office 365-Client-App-Unterstützung für moderne Authentifizierung.
-ms.openlocfilehash: 8118ab6c9a7f62f01cede259b5b38c3242106102
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: f4eb3282140bd1b722698ec0fa4a4f3f51366c2e
+ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085354"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30303609"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Office 365-Client-App-Unterstützung – moderne Authentifizierung
 
