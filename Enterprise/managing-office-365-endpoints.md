@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- Ent_O365
+- M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Enterprise-Netzwerke schränken den Zugriff auf generische Internetstandorte oder umfangreiche Backhaul oder die Verarbeitung des Netzwerkdatenverkehrs ein. Um sicherzustellen, dass Computer in Netzwerken wie diesen auf Office 365 zugreifen können, müssen Netzwerk-und Proxy Administratoren die Liste der FQDNs, URLs und IP-Adressen verwalten, die die Liste der Office 365-Endpunkte bilden. Diese müssen zu Direct Route, Proxy Bypass und/oder Firewallregeln und PAC-Dateien hinzugefügt werden, um sicherzustellen, dass Netzwerkanforderungen in der Lage sind, Office 365 zu erreichen.
-ms.openlocfilehash: 469c1fa91fc2695c4175a4eccea26a0ffc46c52a
-ms.sourcegitcommit: bc565081b64d374d43b1bf3bb3d92edaaa24e4c2
+ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
+ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30176745"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341986"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
