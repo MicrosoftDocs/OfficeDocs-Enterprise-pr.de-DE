@@ -3,7 +3,7 @@ title: Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/16/2019
+ms.date: 03/04/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: 02deeb06f73b836d95a738ca8566bc2554010aa4
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: f226e48fa6512e32e505d7ca1a35ab1fec390488
+ms.sourcegitcommit: c0d3007e51950b041569c28a495ee16d51783f28
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242087"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30374408"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
 
@@ -52,7 +52,7 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 | 6  | Migration von Postfächern. Wenn die Migration von Postfächern aus dem lokalen [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant) in Office 365 initiiert wird, stellt Office 365 eine Verbindung zu Ihrem öffentlichen Exchange-Webdienste (EWS)/Postfach Replikationsdienste (MRS)-Server her. Wenn Sie die von den Exchange Online-Servern verwendeten, NAT IP-Adressen benötigen, um eingehende Verbindungen von bestimmten IP-Qualladressenbereichen einzuschränken, finden Sie diese in der Liste [Office 365 URL & IP-Bereiche](urls-and-ip-address-ranges.md) im Bereich „Exchange Online“. Es sollte beachtet werden, dass der Zugriff auf veröffentlichte EWS-Endpunkte wie OWA nicht beeinträchtigt wird, wenn der MRS-Proxy in einen separaten FQDN und eine öffentliche IP-Adresse aufgelöst wird, bevor TCP 443-Verbindungen von bestimmten Quell-IP-Bereichen eingeschränkt werden. | Lokaler EWS/MRS-Proxy von Kunden<br> TCP-Port 443 | Eingehender Serverdatenverkehr |
 | 7  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant)-Funktionen für Koexistenz, wie etwa Teilen der Frei/Gebucht-Informationen. | Lokale Exchange-Kundenserver | Eingehender Serverdatenverkehr |
 | 8  | [Exchange Hybrid](https://docs.microsoft.com/exchange/exchange-deployment-assistant)-Proxyauthentifizierung | Lokaler STS von Kunden | Eingehender Serverdatenverkehr |
-| 9  | Zum Konfigurieren von [Exchange-Hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit dem Exchange-Hybridkonfigurations-Assistenten verwendet. <br> Hinweis: Diese Endpunkte sind nur für die Konfiguration von Exchange-Hybridbereitstellungen erforderlich  | ```domains.live.com``` an den TCP-Ports 80 und 443, nur für den Exchange 2010 SP3-Hybridkonfigurations-Assistenten erforderlich. | Nur ausgehender Serverdatenverkehr |
+| 9  | Zum Konfigurieren von [Exchange-Hybridbereitstellungen](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit dem [Exchange-Hybridkonfigurations-Assistenten](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) verwendet. <br> Hinweis: Diese Endpunkte sind nur für die Konfiguration von Exchange-Hybridbereitstellungen erforderlich  | domains.live.com an den TCP-Ports 80 und 443, nur für den Exchange 2010 SP3-Hybridkonfigurations-Assistenten erforderlich.<BR> <BR> GCC High, DoD-IP-Adressen: 40.118.209.192/32; 168.62.190.41/32 <BR> <BR> Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | Nur ausgehender Serverdatenverkehr |
 | 10  | Der AutoDetect-Dienst wird in [Exchange-Hybridszenarien](https://docs.microsoft.com/exchange/exchange-deployment-assistant) mit [der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) verwendet. <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Lokale Exchange-Kundenserver an TCP-Port 443 | Eingehender Serverdatenverkehr |
 | 11  | Skype for Business in Office 2016 umfasst eine videobasierte Bildschirmübertragung, die UDP-Ports verwendet. Vor Skype for Business-Clients in Office 2013 und früher wurde RDP-über-TCP-Port 443 verwendet. | TCP-Port 443 geöffnet bis 52.112.0.0/14 | Altere Clientversionen von Skype for Business in Office 2013 und früheren Versionen |
 | 12  | Lokale Serververbindung für Skype für Business-Hybridbereitstellung mit Skype for Business Online | 13.107.64.0/18, 52.112.0.0/14 UDP-Ports 50.000-59.999 <BR>  TCP-Ports: 50.000-59.999 | Skype for Business auf lokale Server ausgehende Verbindungen |
