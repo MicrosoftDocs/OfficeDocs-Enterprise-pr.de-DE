@@ -15,20 +15,20 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Enterprise-Netzwerke schränken den Zugriff auf generische Internetstandorte oder umfangreiche Backhaul oder die Verarbeitung des Netzwerkdatenverkehrs ein. Um sicherzustellen, dass Computer in Netzwerken wie diesen auf Office 365 zugreifen können, müssen Netzwerk-und Proxy Administratoren die Liste der FQDNs, URLs und IP-Adressen verwalten, die die Liste der Office 365-Endpunkte bilden. Diese müssen zu Direct Route, Proxy Bypass und/oder Firewallregeln und PAC-Dateien hinzugefügt werden, um sicherzustellen, dass Netzwerkanforderungen in der Lage sind, Office 365 zu erreichen.
-ms.openlocfilehash: d9138dd5d583b684c82d525001faee4d06e0fbe5
-ms.sourcegitcommit: eb52922c0ee34791fd71ae78338ab203f7761eec
+ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
+ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341986"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30458355"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
-Die meisten Unternehmensorganisationen mit mehreren Office-Standorten und einem Verbindungs-WAN benötigen die Konfiguration für die Office 365-Netzwerkkonnektivität. Sie können Ihr Netzwerk optimieren, indem Sie alle vertrauenswürdigen Office 365-Netzwerkanforderungen direkt über Ihre Firewall senden, um alle zusätzlichen Überprüfungen auf Paketebene zu umgehen. Dadurch werden die Wartezeit und die Kapazitätsanforderungen für Perimeter reduziert. Die Identifizierung von Office 365-Netzwerkdatenverkehr ist der erste Schritt bei der Bereitstellung einer optimalen Leistung für Ihre Benutzer. Weitere Informationen zur Netzwerkkonnektivität von Office 365 finden Sie unter [office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md)
+Die meisten Unternehmensorganisationen mit mehreren Office-Standorten und einem Verbindungs-WAN benötigen die Konfiguration für die Office 365-Netzwerkkonnektivität. Sie können Ihr Netzwerk optimieren, indem Sie alle vertrauenswürdigen Office 365-Netzwerkanforderungen direkt über Ihre Firewall senden, um alle zusätzlichen Überprüfungen auf Paketebene zu umgehen. Dadurch werden die Wartezeit und die Kapazitätsanforderungen für Perimeter reduziert. Die Identifizierung von Office 365-Netzwerkdatenverkehr ist der erste Schritt bei der Bereitstellung einer optimalen Leistung für Ihre Benutzer. Weitere Informationen zur Netzwerkkonnektivität von Office 365 finden Sie unter [office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
 
-Microsoft empfiehlt, dass Sie auf die Office 365-Netzwerkendpunkte zugreifen und diese mithilfe des [office 365-IP-Adress-und URL](office-365-ip-web-service.md) -Webdiensts ändern.
+Microsoft empfiehlt, dass Sie auf die Office 365-Netzwerkendpunkte zugreifen und diese mithilfe des [office 365-IP-Adress-und URL](office-365-ip-web-service.md)-Webdiensts ändern.
 
-Unabhängig davon, wie Sie den wichtigen Office 365-Netzwerkdatenverkehr verwalten, erfordert Office 365 eine Internet Verbindung. Weitere Netzwerkendpunkte, bei denen Konnektivität erforderlich ist, werden an zusätzlichen Endpunkten aufgeführt, [die nicht im Office 365 IP-Adress-und URL-Webdienst enthalten](additional-office365-ip-addresses-and-urls.md) sind.
+Unabhängig davon, wie Sie den wichtigen Office 365-Netzwerkdatenverkehr verwalten, erfordert Office 365 eine Internet Verbindung. Weitere Netzwerkendpunkte, bei denen Konnektivität erforderlich ist, werden an zusätzlichen Endpunkten aufgeführt, [die nicht im Office 365-IP-Adress-und-URL](additional-office365-ip-addresses-and-urls.md)-Webdienst enthalten sind.
 
 Die Verwendung der Office 365-Netzwerkendpunkte hängt von der Netzwerkarchitektur ihrer Unternehmensorganisation ab. In diesem Artikel werden verschiedene Möglichkeiten beschrieben, wie Unternehmensnetzwerk Architekturen in Office 365-IP-Adressen und-URLs integriert werden können. Am einfachsten können Sie auswählen, welche Netzwerkanforderungen vertrauenswürdig sind, indem Sie SDWAN-Geräte verwenden, die die automatisierte Office 365-Konfiguration an jedem Ihrer Office-Standorte unterstützen.
 
@@ -73,11 +73,11 @@ Es gibt eine Reihe von Parametern, die Sie an das Skript übergeben können:
 |**Parameter**|**Beschreibung**|
 |:-----|:-----|
 |**ClientRequestId** <br/> |Dies ist erforderlich und ist eine GUID, die an den Webdienst übergeben wird, der den Clientcomputer darstellt, der den Anruf tätigt. <br/> |
-|**Instance** <br/> |Die Office 365-Dienstinstanz, die standardmäßig weltweit verwendet wird. Wird auch an den Webdienst übergeben. <br/> |
+|**Instanz** <br/> |Die Office 365-Dienstinstanz, die standardmäßig weltweit verwendet wird. Wird auch an den Webdienst übergeben. <br/> |
 |**TenantName** <br/> |Ihr Office 365-Mandantenname. Wird an den Webdienst übergeben und in einigen Office 365-URLs als austauschbarer Parameter verwendet. <br/> |
 |**Typ** <br/> |Der Typ der Proxy-PAC-Datei, die Sie generieren möchten. <br/> |
 
-Nachfolgend finden Sie ein weiteres Beispiel für das Aufrufen des PowerShell-Skripts mit zusätzlichen Parametern.
+Nachfolgend finden Sie ein weiteres Beispiel für das Aufrufen des PowerShell-Skripts mit zusätzlichen Parametern:
 
 ```powershell
 Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7
@@ -112,7 +112,7 @@ Der Office 365-IP-Adress-und-URL-Webdienst stellt einen RSS-Feed bereit, den Sie
 
 Wir sind uns bewusst, dass Sie möglicherweise weiterhin manuelle Verarbeitung für Netzwerkendpunkt Änderungen benötigen, die jeden Monat durchlaufen. Sie können Microsoft Flow zum Erstellen eines Flusses verwenden, der Sie per e-Mail benachrichtigt und optional einen Genehmigungsprozess für Änderungen ausführt, wenn Office 365-Netzwerkendpunkte Änderungen aufweisen. Nach Abschluss der Überprüfungen können Sie die Änderungen automatisch an Ihr Firewall-und Proxy Server-Verwaltungsteam senden.
 
-Informationen zu einem Microsoft Flow-Beispiel und einer Vorlage finden Sie unter [Verwenden von Microsoft Flow, um eine e-Mail für Änderungen an Office 365-IP-Adressen und-URLs zu erhalten](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651) .
+Informationen zu einem Microsoft Flow-Beispiel und einer Vorlage finden Sie unter [Verwenden von Microsoft Flow, um eine e-Mail für Änderungen an Office 365-IP-Adressen und-URLs zu erhalten](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Office 365-Netzwerkendpunkte – häufig gestellte Fragen
@@ -185,7 +185,7 @@ Office 365 und andere Microsoft-Dienste verwenden mehrere Drittanbieterdienste w
 ### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Ich muss die minimale Konnektivität für Office 365
 <a name="bkmk_thirdparty"> </a>
 
-Office 365 ist eine Reihe von Diensten, die über das Internet funktionieren, die Zuverlässigkeits-und Verfügbarkeits Zusagen basieren auf vielen verfügbaren Standard-Internetdiensten. Beispielsweise müssen Standard-Internetdienste wie DNS, CRL und CDNs für die Verwendung von Office 365 zugänglich sein, ebenso wie Sie für die Verwendung der meisten modernen Internetdienste erreichbar sein müssen.
+Da Office 365 eine Reihe von Diensten ist, die über das Internet funktionieren, basieren die Zuverlässigkeits-und Verfügbarkeits Zusagen auf vielen standardmäßigen Internetdiensten. Beispielsweise müssen Standard-Internetdienste wie DNS, CRL und CDNs für die Verwendung von Office 365 zugänglich sein, ebenso wie Sie für die Verwendung der meisten modernen Internetdienste erreichbar sein müssen.
 
 Die Office 365-Suite ist in die wichtigsten Dienstbereiche unterteilt. Diese können selektiv für Konnektivität aktiviert werden, und es gibt einen gemeinsamen Bereich, der eine Abhängigkeit für alle ist und immer erforderlich ist.
 
@@ -194,7 +194,7 @@ Die Office 365-Suite ist in die wichtigsten Dienstbereiche unterteilt. Diese kö
 |**Exchange** <br/> |Exchange Online und Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online und OneDrive for Business <br/> |
 |**Skype for Business Online und Microsoft Teams** <br/> |Skype for Business und Microsoft Teams <br/> |
-|**Common** <br/> |Office 365 pro Plus, Office Online, Azure AD und andere gängige Netzwerkendpunkte <br/> |
+|**Standard** <br/> |Office 365 pro Plus, Office Online, Azure AD und andere gängige Netzwerkendpunkte <br/> |
 
 Neben den grundlegenden Internetdiensten gibt es Dienste von Drittanbietern, die nur zum Integrieren von Funktionen verwendet werden. Während diese für die Integration erforderlich sind, werden Sie im Office 365-Endpunkte-Artikel als optional gekennzeichnet, was bedeutet, dass die Kernfunktionalität des Diensts weiterhin funktioniert, wenn auf den Endpunkt nicht zugegriffen werden kann. Jeder erforderliche Netzwerkendpunkt hat das erforderliche Attribut auf true festgelegt. Jeder Netzwerkendpunkt, der optional ist, hat das erforderliche Attribut auf false festgelegt, und das Attribut Notes enthält Details zur fehlenden Funktionalität, die Sie bei blockierter Konnektivität erwarten sollten.
   
@@ -203,13 +203,13 @@ Wenn Sie versuchen, Office 365 zu verwenden und keine Dienste von Drittanbietern
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Wie kann ich den Zugriff auf die Consumer-Dienste von Microsoft blockieren?
 <a name="bkmk_consumer"> </a>
 
-Das Einschränken des Zugriffs auf unsere Consumer-Services sollte auf Ihr eigenes Risiko erfolgen, die einzige zuverlässige Möglichkeit zum Blockieren von Consumer-Services besteht darin, den Zugriff auf den *Login.Live.com* -FQDN zu beschränken. Dieser FQDN wird von einer breiten Palette von Diensten einschließlich nicht-Consumer-Diensten wie MSDN, TechNet und anderen verwendet. Dieser FQDN wird auch vom Secure File Exchange-Programm von Microsoft Support verwendet und muss Dateien übertragen, um die Problembehandlung für Microsoft-Produkte zu erleichtern.  Das Einschränken des Zugriffs auf diesen FQDN kann dazu führen, dass auch Ausnahmen von der Regel für Netzwerkanforderungen mit diesen Diensten eingeschlossen werden müssen.
+Das Einschränken des Zugriffs auf unsere Consumer-Services sollte auf Ihr eigenes Risiko erfolgen. Die einzige zuverlässige Möglichkeit zum Blockieren von Consumer-Services besteht darin, den Zugriff auf den *Login.Live.com* -FQDN einzuschränken. Dieser FQDN wird von einer breiten Palette von Diensten einschließlich nicht-Consumer-Diensten wie MSDN, TechNet und anderen verwendet. Dieser FQDN wird auch vom Secure File Exchange-Programm von Microsoft Support verwendet und muss Dateien übertragen, um die Problembehandlung für Microsoft-Produkte zu erleichtern.  Das Einschränken des Zugriffs auf diesen FQDN kann dazu führen, dass auch Ausnahmen von der Regel für Netzwerkanforderungen mit diesen Diensten eingeschlossen werden müssen.
   
 Denken Sie daran, dass das Blockieren des Zugriffs auf die Microsoft-Consumer-Dienste allein nicht verhindert, dass jemand in Ihrem Netzwerkinformationen mit einem Office 365-Mandanten oder einem anderen Dienst exfiltrieren.
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
+[Office 365-IP-Adress- und -URL-Webdienst](office-365-ip-web-service.md)
 
 [IP-Bereiche von Microsoft Azure-Rechenzentren](https://www.microsoft.com/download/details.aspx?id=41653)
   
@@ -221,6 +221,6 @@ Denken Sie daran, dass das Blockieren des Zugriffs auf die Microsoft-Consumer-Di
   
 [URLs und IP-Adressbereiche von Office 365](urls-and-ip-address-ranges.md)
   
-[Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
+[Verwalten der Express Route für Office 365-Konnektivität](managing-expressroute-for-connectivity.md)
   
 [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
