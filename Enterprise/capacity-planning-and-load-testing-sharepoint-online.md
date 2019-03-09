@@ -1,5 +1,5 @@
 ---
-title: Capacity planning und Auslastungstests SharePoint Online
+title: Capacity planning and load testing SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,58 +12,47 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
-description: Dieser Artikel beschreibt, wie Sie bereitstellen können mit SharePoint Online ohne herkömmlichen Auslastungstests, da es nicht zulässig ist.
-ms.openlocfilehash: 6a22ee089adc0817f5c52bbfee5f2b41d7e5d80c
-ms.sourcegitcommit: 82c8fe6393457f0271d1737a09402a420a81c986
+description: In diesem Artikel wird beschrieben, wie Sie in SharePoint Online bereitstellen können, ohne herkömmliche Auslastungstests durchzuführen, da dies nicht zulässig ist.
+ms.openlocfilehash: ef5d6c043b4be2e8c5358a9c060459b4c6a92156
+ms.sourcegitcommit: 468c8e8d2f951e08cf50301445ad650ef17328aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27181026"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512720"
 ---
-# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Capacity planning und Auslastungstests SharePoint Online
+# <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Kapazitätsplanung und Auslastungstests für SharePoint Online.
 
-Dieser Artikel beschreibt, wie Sie bereitstellen, können mit SharePoint Online ohne herkömmlichen Auslastungstests, da Auslastungstests abgeraten wird.
+In diesem Artikel wird beschrieben, wie Sie SharePoint Online ohne herkömmliche Auslastungstests bereitstellen können, da Auslastungstests in SharePoint Online nicht zulässig sind. SharePoint Online ist ein clouddienst, der die Auslastungs-, Integritäts-und Gesamtlasten Verteilung im Dienst von Microsoft verwaltet.
   
-Obwohl active Auslastungstests SharePoint Online wird nicht empfohlen, es einige andere Möglichkeiten, den, die Sie Folgendes sicherstellen können, erzeugt eine Website nicht benutzerfreundlich beim Starten der Website. 
+Der beste Ansatz zur Sicherstellung des Erfolgs der Einführung Ihrer Website besteht darin, grundlegende Prinzipien, Praktiken und Empfehlungen zu befolgen, die unten hervorgehoben werden.
   
-Mit SharePoint Online müssen Sie kapazitätsplanung, wie dies für Sie als Teil des unser Serviceangebot. Mit lokalen Umgebungen Auslastungstests wird horizontal Annahme überprüfen und letztlich suchen die neueste Punkt einer Farm. durch eine es mit Last. Mit SharePoint Online muss anders Dinge. Wird eine Umgebung mit mehreren Mandanten, haben wir schützen Sie alle Mandanten in der gleichen Farm aus, damit es keine Auslastungstests automatisch gedrosselt wird. Dies bedeutet, dass Sie erhalten enttäuschend und potenziell irreführende Ergebnisse, wenn Sie versuchen, laden Testen Ihrer Umgebung.
+Bei lokalen Umgebungen werden Auslastungstests verwendet, um die Skalierungs Annahme zu überprüfen und schließlich den Endpunkt einer Farm zu finden. durch Sättigung mit Belastung. Bei SharePoint Online müssen wir die Dinge anders machen. Da es sich um eine Umgebung mit mehreren Mandanten handelt, müssen alle Mandanten in derselben Farm geschützt werden, sodass Auslastungstests automatisch eingeschränkt werden. Dies führt zu enttäuschenden und potenziell irreführenden Ergebnissen, wenn Sie versuchen, Ihre Umgebung zu laden.
   
-Eines der wichtigsten Vorteile von SharePoint Online über eine lokale Bereitstellung ist der Elastizität der Cloud. Unsere großen Umgebung eingerichtet ist mit Millionen von Benutzern auf täglicher Basis-Dienst so wichtig ist, dass wir Kapazität effektiv behandeln, indem Sie die Farmen, automatisch angepasst wird, wie und, falls erforderlich. In diesem Artikel wird erläutert, wie wir für Kapazitätswachstum und einem festen Maßstab planen Out vorhanden. Der Artikel behandelt auch Ansätze für die Verwendung von, an denen Auslastungstests nicht beteiligt.
+Einer der Hauptvorteile von SharePoint Online über eine lokale Bereitstellung ist die Elastizität der Cloud. Unsere großflächige Umgebung ist so eingerichtet, dass Millionen von Benutzern täglich gewartet werden, daher ist es wichtig, dass wir die Kapazität effektiv bewältigen, indem Sie Farmen ausbalancieren und erweitern. Der Artikel behandelt auch Vorgehensweisen für Sie zu verwenden, die keine Auslastungstests beinhalten, aber die folgenden Richtlinien enthalten, die Sie für einen erfolgreichen Start einrichten. 
   
-## <a name="how-office-365-predicts-load-and-expands-capacity"></a>Wie Office 365 prognostiziert laden und erweitert Kapazität
+Während das Wachstum für jeden einzelnen Mandanten in einer Farm unvorhersehbar ist, ist die aggregierte Summe der Anforderungen im Laufe der Zeit vorhersehbar. Durch die Ermittlung der Wachstumstrends in SharePoint Online können wir zukünftige Erweiterungen planen.
+  
+Um die Kapazität effizient zu nutzen und unerwartete Zuwächse zu bewältigen, haben wir in jeder Farm Automatisierung, die das Front-End-laden überwacht und bei Bedarf skaliert. Es gibt mehrere Metriken, die bei einer der wichtigsten CPU-Auslastung verwendet werden, die als Signal zum Skalieren von Front-End-Servern dient. Darüber hinaus empfehlen wir einen phasenweisen/Wave-Ansatz, da SQL-Umgebungen entsprechend der Auslastung und der Nachfrage skaliert werden und die Phasen und Wellen die korrekte Verteilung der Auslastung und des Wachstums ermöglichen. 
+  
+## <a name="how-do-i-plan-for-a-site-launch"></a>Wie plane ich einen Website Start?
 
-SharePoint Online Server Capacity Management Arbeit erfolgt über zwei Methoden:
-  
-- Kapazität-Planung
-    
-- Netzwerklastenausgleich auf einzelnen Serverfarmen
-    
-Anders als bei der Planung einer lokalen Umgebung für die Kapazität in SharePoint Online-Planung können wir Statistiken sowie grafisch potenzielle Anforderungen in keiner bestimmten Server-Gruppe. Der aggregierte bei Bedarf sieht etwa die Anforderungen in der Zone (wobei für eine Zone ist eine Gruppe von SharePoint-Farmen) Wachstum Zeile in der folgenden Abbildung:
-  
-![Diagramm der vorhergesagten Kapazität: Prognose](media/ca800cb6-cc59-451f-98bd-55e035489af3.png)
-  
-Während das Wachstum in jeder Farm eine unvorhersehbare befindet, ist die aggregierte Summe von Anforderungen in einer Zone vorhersehbar. Durch die Ermittlung der geometrischen Trends in SharePoint Online, können wir für die zukünftige Erweiterung planen.
-  
-Um effizient Kapazität verwenden und befassen sich mit der unerwartete Zunahme jede Farm haben wir die Automatisierung, Front-End-System verfolgt und bei Bedarf von direkten, skaliert. Die wichtigste Metrik, die wir verwenden, wie ein Signal zum Skalieren von Front-ends ist CPU-Auslastung. Unser Ziel ist es, die CPU-Belastung weniger als 40 % zu halten. Dies ist, um genügend Puffer zu unerwarteten Spitzen kompensieren zu lassen. Load Ansätze 40 % im stabilen Zustand fügen wir front-Ends Farmen hinzu.
-  
-![Diagramm der vorhergesagten Kapazität: Verwalten von Farmen](media/6b2a8c63-24c1-4504-b7a3-3d3b3be2583a.png)
-  
-Zusätzliche Server können schnell zu einer Farm, mit denen, die zuvor durch die Planung Syntax der Zone hinzugefügt wurden hinzugefügt werden. 
-  
-## <a name="how-do-i-plan-for-a-site-launch"></a>Wie plane ich für eine Website starten?
+### <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimieren von Seiten anhand der empfohlenen Richtlinien
+Seiten aus einer lokalen Bereitstellung sollten nicht einfach in SharePoint Online übernommen werden, ohne Sie anhand der empfohlenen Richtlinien für SharePoint Online zu überprüfen.
 
-Sie sollten erwarten, dass die Farm, auf der die neue Website startet, automatisch überwacht werden, sodass neue Front-End-Server hinzugefügt werden, wie oben beschrieben. Aus diesem Grund benötigen nicht wir keine Benachrichtigung für die neue Website starten.
-  
-Weitere bewährten Methoden für eine einzelne Seite auf SharePoint Online ist es unwahrscheinlich, dass eine neue Website zu öffnen, auch 100.000 Benutzer alle in der Farm auswirken.
-  
-Es gibt einige Strategien zum Planen einer Version einer neuen SharePoint Online-Website. Wie in der folgenden Abbildung gezeigt, ist die Anzahl von Benutzern, die eingeladen werden häufig deutlich höher ist als die, die die Website zu verwenden. Diese Abbildung zeigt eine Strategie zur Verwendung einer Version Rollout. Diese Methode ist nicht nur nützlich, um zu Leistung beim Laden jedoch auch kann identifizieren Möglichkeiten zur Verbesserung der SharePoint-Website, bevor die Mehrzahl der Benutzer angezeigt wird.
-  
-![Diagramm der eingeladenen und aktiven Benutzer](media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
-  
-In der Pilotphase Geschäftsobjekts Feedback von Benutzern zu erhalten, dass die Organisation vertraut und weiß anderweitig werden sollen. Auf diese Weise ist es möglich, wie das System verwendet wird und wie es ausgeführt wird, zu ermitteln.
-  
-Danach beginnt für alle Benutzer in hochrangige Rollout; Einholen von Feedback und die Leistung regelmäßig zu überprüfen. Dies hat den Vorteil langsam Einführung in das System und bei dessen Verbesserung, wenn das System Weitere verwendet wird. Dadurch können auch auf die erhöhte Last zu reagieren, wie die Website für mehr Benutzer eingeführt.
-  
-Schließlich während Auslastungstests nicht zulässig sind, können Kunden regelmäßige Ping an den Dienst Measure Verfügbarkeit und Latenz einrichten möchten. Identifizieren dieses Grundlinie für ihre Website. Allerdings müssen diese geringe Häufigkeit Drosselung zuvor beschriebenen Probleme vermieden aufbewahrt werden.
-  
+Einige wichtige Faktoren sollten berücksichtigt werden:
+- Lokale Bereitstellungen können herkömmliche serverseitige Caches wie Objektcache nutzen, aber mit den Unterschieden in der Topologie in der Cloud stehen diese Optionen nicht zur Verfügung.
+- Alle Seiten/Features/Anpassungen, die für die Cloud-Nutzung verwendet werden, sollten für mehrere Standorte optimiert werden, sodass Benutzer in unterschiedlichen Bereichen oder Regionen über eine konsistente Erfahrung verfügen. Cloud bietet Optimierungen wie Content Delivery Networks (CDN) zur Optimierung für eine verteilte Benutzerbasis.
 
+Bei klassischen Veröffentlichungsseiten in SharePoint Online können Sie die Chrome-Erweiterung für das [Seiten Diagnosetool](https://aka.ms/perftool) verwenden, die bei der Analyse der von Benutzern verwendeten Hauptzielseiten behilflich ist.
+F12-Entwicklertools im Browser oder [Fiddler](https://www.telerik.com/download/fiddler) können verwendet werden, um die Gewichtung der Seite zu überprüfen, und die Anzahl der Aufrufe und Elemente, die sich auf die gesamte Seitenlast auswirken, sollte überprüft und optimiert werden. Eine Liste mit Empfehlungen, einschließlich der Verwendung von Inhalts Bereitstellungs Netzwerken und anderen Optimierungen, können Sie im Artikel [Tune SharePoint Online-Leistung](https://aka.ms/spoperformance) durchführen.
+
+### <a name="wave--phase-approach"></a>Wave/Phase-Ansatz
+Der herkömmliche Big Bang-Ansatz für Website Starts ermöglicht nicht effektiv die Überprüfung, ob Anpassungen, externe Quellen, Dienste oder Prozesse im richtigen Umfang getestet wurden. SharePoint as a Service skaliert ihre Kapazität auch basierend auf der Nutzung und der vorhergesagten Nutzung, und während wir Sie nicht über Ihren Website Start informieren müssen, sollten Sie die folgenden Richtlinien befolgen, um den Erfolg sicherzustellen.
+  
+Wie in der folgenden Abbildung dargestellt, ist die Anzahl der Benutzer, die eingeladen werden, deutlich höher als die, die die Website tatsächlich verwenden. Dieses Bild zeigt eine Strategie zum Rollout einer Freigabe. Diese Methode hilft bei der Identifizierung von Möglichkeiten zur Verbesserung der SharePoint-Website, bevor die Mehrheit der Benutzer Sie sehen. Außerdem kann ein Rollout angehalten werden, wenn Probleme in einer der Phasen/Wellen auftreten, wodurch die potenzielle Anzahl betroffener Benutzer eingeschränkt wird.
+  
+![Diagramm mit eingeladenen und aktiven Benutzern](media/0bc14a20-9420-4986-b9b9-fbcd2c6e0fb9.png)
+  
+In der Pilotphase empfiehlt es sich, Feedback von Benutzern zu erhalten, die von der Organisation als vertrauenswürdig eingestuft werden. Auf diese Weise kann gemessen werden, wie das System verwendet wird und wie es ausgeführt wird.
+  
+Sammeln Sie während jeder der Wellen ein Feedback der Benutzer zu den Features und zur Leistung bei jeder Bereitstellungs Welle. Dies hat den Vorteil, dass Sie das System langsam einführen und Verbesserungen vornehmen, wenn das System mehr nutzt. Dies ermöglicht es uns auch, auf die erhöhte Auslastung zu reagieren, da die Website für immer mehr Benutzer eingeführt wird.
