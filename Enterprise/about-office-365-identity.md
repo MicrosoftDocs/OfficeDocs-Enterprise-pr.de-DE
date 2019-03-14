@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zur Office 365-Identität und zu Azure Active Directory
+title: Grundlegendes zu Office 365 Identity und Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,6 +10,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
+- M365-security-compliance
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -17,14 +18,14 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Erfahren Sie, wie die Benutzeridentität in Office 365 verwaltet wird.
-ms.openlocfilehash: 0b0dd133979a5f94f7f8322c532c61fd24719359
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 7b9a95d7d9c7fb19163518ad68409a22790d4c6e
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085424"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372892"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Grundlegendes zur Office 365-Identität und zu Azure Active Directory
+# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Grundlegendes zu Office 365 Identity und Azure Active Directory
 
 Office 365 verwendet die Cloud-basierte Benutzeridentität und den Authentifizierungsdienst Azure Active Directory (Azure AD), um Benutzer zu verwalten. Die Auswahl, ob die Identitätsverwaltung zwischen Ihrer lokalen Organisation und Office 365 konfiguriert ist, ist eine frühe Entscheidung, die eine der Grundlagen ihrer Cloud-Infrastruktur darstellt. Da eine spätere Änderung dieser Konfiguration schwierig sein kann, sollten Sie die Optionen sorgfältig prüfen, um zu bestimmen, welche Anforderungen für Ihre Organisation am besten geeignet sind. Sie können zwischen zwei Haupt Authentifizierungsmodellen in Office 365 wählen, um Benutzerkonten einzurichten und zu verwalten. **Cloud-Authentifizierung** und **Verbundauthentifizierung**.
   
@@ -34,7 +35,7 @@ Es ist wichtig, sorgfältig zu überlegen, welche Authentifizierungs-und Identit
 
 Je nachdem, ob Sie über eine lokale Active Directory-Umgebung verfügen oder nicht, haben Sie mehrere Möglichkeiten, Authentifizierungs-und Identitätsdienste für Ihre Benutzer mit Office 365 zu verwalten.
   
-### <a name="cloud-only"></a>Reine Cloudbereitstellung
+### <a name="cloud-only"></a>Rein cloudbasiert
 
 Mit dem reinen Cloud-Modell verwalten Sie Ihre Benutzerkonten nur in Office 365. Es sind keine lokalen Server erforderlich; Es wird in der Cloud von Azure AD behandelt. Sie erstellen und verwalten Benutzer im Office 365 Admin Center oder mithilfe von [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) -Cmdlets von Windows PowerShell, und Identität und Authentifizierung werden vollständig in der Cloud von Azure AD behandelt. Das Cloud-Modell ist in der Regel eine gute Wahl, wenn: 
   

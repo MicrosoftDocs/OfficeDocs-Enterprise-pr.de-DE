@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Office 365 und Ihrem lokalen Active Directory einrichten.
-ms.openlocfilehash: 5f6e5be2a2137ee183a7d592d9a3e6b086e5be9a
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085264"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492945"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Planen der Verzeichnissynchronisierung für Office 365
 
@@ -52,13 +52,13 @@ Für den lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen S
 |**Server Betriebssystem**|**Weitere Software**|
 |:-----|:-----|
 |**Windows Server 2012 R2** | -PowerShell wird standardmäßig installiert, es ist keine Aktion erforderlich.  <br> -NET 4.5.1 und späteren Versionen werden über Windows Update angeboten. Stellen Sie sicher, dass Sie die neuesten Updates für Windows Server in der Systemsteuerung installiert haben. |
-|**Windows server 2008 R2 mit Service Pack 1 (SP1)** oder **Windows Server 2012** | -Die neueste Version von PowerShell ist in Windows Management Framework 4,0 verfügbar. Suchen Sie im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)danach.<br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
+|**Windows server 2008 R2 mit Service Pack 1 (SP1)** oder **Windows Server 2012** | -Die neueste Version von PowerShell ist in Windows Management Framework 4,0 verfügbar. Suchen Sie im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)danach.  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
 |**Windows Server 2008** | -Die neueste unterstützte Version von PowerShell ist in Windows Management Framework 3,0 verfügbar, verfügbar im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
 
 > [!NOTE]
 > Wenn Sie Azure Active Directory dirSync verwenden, beträgt die maximale Anzahl von Verteilergruppenmitgliedern, die Sie von Ihrem lokalen Active Directory mit Azure Active Directory synchronisieren können, 15.000. Für Azure AD Connect ist diese Nummer 50.000. 
   
-Lesen Sie die [vorausSetzungen für Azure Active Directory Connect](https://go.microsoft.com/fwlink/p/?LinkId=716896), um die Anforderungen an Hardware, Software, Konten und Berechtigungen, SSL-Zertifikatanforderungen und Objekt Grenzwerte für Azure AD Connect genauer zu prüfen.
+Lesen Sie die [vorausSetzungen für Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), um die Anforderungen an Hardware, Software, Konten und Berechtigungen, SSL-Zertifikatanforderungen und Objekt Grenzwerte für Azure AD Connect genauer zu prüfen.
   
 Sie können auch den [Versionsverlauf](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) der Azure AD Connect-Version überprüfen, um zu sehen, was in jeder Version enthalten und korrigiert wurde.
 

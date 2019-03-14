@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Anhand dieser Informationen erfahren Sie mehr über Content subNetze (CDNs) und wie Office 365 Sie nutzt. CDNs helfen, Office 365 für Endbenutzer schnell und zuverlässig zu halten. Mit CDNs können Cloud-Dienste wie Office 365 schnell generische Inhalte wie Symbole in den Browser Ihrer Benutzer herunterladen, wenn Sie den Dienst über einen Webclient verwenden.
-ms.openlocfilehash: c38b4c1fae2a40ff702c4d2222ed534e11fa2fc3
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 0c44cb1a17b64f1b2f14cc34e1207f450dbd5bbf
+ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458335"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492955"
 ---
 # <a name="content-delivery-networks"></a>Netzwerke für die Inhaltsübermittlung
 
@@ -77,7 +77,7 @@ Wir suchen ständig nach neuen Möglichkeiten, um die Anforderungen unserer Kund
   
 ## <a name="is-my-data-safe"></a>Sind meine Daten sicher?
 
-Wir unterstützen Sie dabei, sicherzustellen, dass wir die Daten schützen, die Ihr Unternehmen ausführen. Kundenspezifische Daten, die in CDNs gespeichert sind, werden sowohl während der Übertragung als auch im Rest verschlüsselt und durch die gleichen Berechtigungen auf Dateiebene geschützt wie Daten, die nicht in einem CDN gespeichert sind.
+Wir unterstützen Sie dabei, sicherzustellen, dass wir die Daten schützen, die Ihr Unternehmen ausführen. Kundenspezifische Daten, die in CDNs gespeichert sind, werden sowohl während der Übertragung als auch im Rest verschlüsselt.
 
 CDN-Anbieter haben möglicherweise Datenschutz-und Konformitätsstandards, die von den vom Office 365 Trust Center beschriebenen Verpflichtungen abweichen. Daten, die über den CDN-Dienst zwischengespeichert werden, sind möglicherweise nicht mit den Microsoft-datenVerarbeitungsBedingungen kompatibel und können außerhalb der Kompatibilitäts Grenzen von Office 365 Trust Center liegen.
 
@@ -89,7 +89,7 @@ Ausführliche Informationen zum Datenschutz und zur Sicherheit für Office 365 C
 
 ## <a name="how-can-i-secure-my-network-with-all-these-3rd-party-services"></a>Wie kann ich mein Netzwerk mit all diesen 3rd-Party-Diensten sichern?
 
-Die Nutzung einer umfangreichen Reihe von Partnerdiensten ermöglicht Office 365 die Skalierung und Erfüllung der Verfügbarkeitsanforderungen sowie die Verbesserung der Benutzerfreundlichkeit bei der Verwendung von Office 365. Die 3rd Party Services Office 365 leverages umfasst beide Zertifikatssperrlisten; wie crl.microsoft.com oder sa.symcb.com und CDNs; wie R3.res.Outlook.com. Jeder CDN-FQDN, den Office 365 verwendet, ist ein benutzerdefinierter FQDN für Office 365, wenn Sie auf Anforderung von Office 365 an einen FQDN gesendet werden, können Sie sicher sein, dass wir den FQDN und den zugrunde liegenden Inhalt an diesem Speicherort steuern.
+Die Nutzung einer umfangreichen Reihe von Partnerdiensten ermöglicht Office 365 die Skalierung und Erfüllung der Verfügbarkeitsanforderungen sowie die Verbesserung der Benutzerfreundlichkeit bei der Verwendung von Office 365. Die 3rd Party Services Office 365 leverages umfasst beide Zertifikatssperrlisten; wie crl.microsoft.com oder sa.symcb.com und CDNs; wie R3.res.Outlook.com. Jeder CDN-FQDN, den Office 365 verwendet, ist ein benutzerdefinierter FQDN für Office 365. Wenn Sie auf Anforderung von Office 365 an einen FQDN gesendet werden, können Sie sicher sein, dass der CDN-Anbieter den FQDN und den zugrunde liegenden Inhalt an diesem Speicherort steuert.
   
 Für Kunden, die Anforderungen für ein Microsoft-oder Office 365-Datencenter aus Anforderungen abtrennen möchten, die für einen Drittanbieter bestimmt sind, haben wir Anweisungen zur [Verwaltung von Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)-Endpunkten verfasst.
   
@@ -99,6 +99,6 @@ Für Kunden, die Anforderungen für ein Microsoft-oder Office 365-Datencenter au
   
 Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Häufig gestellte Fragen zu Office 365-Endpunkten](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

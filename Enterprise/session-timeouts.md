@@ -16,31 +16,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
-description: Sitzungstimeouts werden verwendet, um Securtiy und erleichterte in Office 365-Clientanwendungen auszugleichen.
-ms.openlocfilehash: 4ef50b876fd97e2de2449d324464b466243a6691
-ms.sourcegitcommit: fd7a56f38ba2c2d2e7fcd6e165ec58b31be299d9
+ms.collection:
+- M365-security-compliance
+description: Sitzungstimeouts werden verwendet, um Securtiy und den einfachen Zugriff in Office 365-Client-apps auszugleichen.
+ms.openlocfilehash: 05e0ddbfb569f476986567e55bbf93428125b3af
+ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "27378491"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30372882"
 ---
 # <a name="session-timeouts-for-office-365"></a>Sitzungstimeouts für Office 365
 
-Sitzungsdauer sind ein wichtiger Teil der Authentifizierung für Office 365 und Ausgleichen von Sicherheit und wie oft, Benutzer aufgefordert werden, ihre Anmeldeinformationen für eine wichtige Komponente.
+Sitzungszeiten sind ein wichtiger Bestandteil der Authentifizierung für Office 365 und sind eine wichtige Komponente beim Ausgleich der Sicherheit und der Häufigkeit, mit der Benutzer zur Eingabe Ihrer Anmeldeinformationen aufgefordert werden.
   
-## <a name="session-times-for-office-365-services"></a>Sitzungsdauer für Office 365-Dienste
+## <a name="session-times-for-office-365-services"></a>Sitzungszeiten für Office 365-Dienste
 
-Beim Authentifizieren von Benutzern in Office 365 Web apps oder mobiler apps wird eine Sitzung eingerichtet. Benutzer müssen nicht für die Dauer der Sitzung Ihre Anmeldeinformationen erneut eingeben. Sitzungen können ablaufen, wenn Benutzer sind inaktiv, wenn sie den Browser oder die Registerkarte schließen oder nach Ablauf ihrer Authentifizierungstoken aus anderen Gründen, z. B., wenn ihr Kennwort zurückgesetzt wurde. Office 365-Dienste haben verschiedene Sitzungstimeouts mit der standardmäßige Verwendung für jeden Dienst übereinstimmen.
+Wenn sich Benutzer in einer der Office 365 Web Apps oder mobilen apps authentifizieren, wird eine Sitzung eingerichtet. Für die Dauer der Sitzung müssen sich die Benutzer nicht erneut authentifizieren. Sitzungen können ablaufen, wenn Benutzer inaktiv sind, wenn Sie den Browser oder die Registerkarte beenden oder wenn Ihr Authentifizierungstoken aus anderen Gründen abläuft, beispielsweise wenn Ihr Kennwort zurückgesetzt wurde. Die Office 365-Dienste weisen unterschiedliche Sitzungstimeouts auf, die mit der typischen Verwendung der einzelnen Dienste übereinstimmen.
   
-Die folgende Tabelle enthält die Sitzungsdauer für Office 365-Dienste:
+In der folgenden Tabelle sind die Sitzungszeiten für Office 365-Dienste aufgeführt:
   
 |**Office 365-Dienste**|**Sitzungstimeout**|
 |:-----|:-----|
-|Office 365 Admin Center  <br/> |Sie werden aufgefordert, Anmeldeinformationen für das Administrationscenter alle 8 Stunden angeben.  <br/> |
-|SharePoint Online  <br/> |5 Tage wählt Inaktivität, solange der Benutzer **angemeldet bleiben**. Wenn der Benutzer von SharePoint Online erneut greift auf nach Ablauf von 24 oder mehrere Stunden aus der vorherigen Anmeldung, wird der Timeoutwert auf 5 Tage zurückgesetzt.<br/> |
-|Outlook Web App  <br/> |6 Stunden.  <br/> Sie können diesen Wert ändern, mit dem _ActivityBasedAuthenticationTimeoutInterval_ -Parameter im Cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) .  <br/> |
-|Azure Active Directory  <br/> (Verwendet von Office 2013-Windows-Clients mit modernen Authentifizierung aktiviert)  <br/> | Moderne Authentifizierung verwendet Zugriffstoken und Aktualisierungstoken gewähren des Benutzerzugriffs auf Office 365-Ressourcen mit Azure Active Directory. Ein Zugriffstoken ist ein JSON Web Token nach einer erfolgreichen Authentifizierung bereitgestellt und gilt für 1 Stunde. Ein Aktualisierungstoken mit Lebensdauer wird auch bereitgestellt. Nach Ablauf der Zugriffstoken verwenden Office-Clients eine gültige Aktualisierungstoken, um ein neues Zugriffstoken abzurufen. Diese Exchange erfolgreich, wenn die Authentifizierung des Benutzers anfänglichen noch gültig ist.  <br/>  Aktualisierungstoken 90 Tage lang gültig sind, und mit kontinuierlichen verwenden, können sie erst gesperrt gültig sein.  <br/>  Aktualisieren von Token können ungültig gemacht werden durch verschiedene Ereignisse wie etwa:  <br/>  Das Kennwort des Benutzers wurde seit der Aktualisierungstoken ausgestellt wurde geändert.  <br/>  Ein Administrator kann bedingte Zugriffsrichtlinien anwenden, die Zugriff auf die Ressource zu beschränken, die der Benutzer zugreifen möchte.  <br/> |
-|SharePoint- und OneDrive mobilen apps für Android-, IOS- und Windows-10  <br/> |Die standardmäßige Lebensdauer für das Zugriffstoken ist 1 Stunde. Die Standardeinstellung von der Aktualisierungstoken für inaktive Zeitraum max ist 90 Tage.<br/> [Erfahren Sie mehr über Token und zum Konfigurieren von token Lebensdauer](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Um die Aktualisierung sperren können token, Sie das Kennwort des Benutzers Office 365 zurücksetzen  <br/> |
-|Yammer mit Office 365-Anmeldung  <br/> |Lebensdauer des Browsers. Wenn Benutzer schließen Sie den Browser und Yammer in einem neuen Browserfenster zugreifen, authentifiziert Yammer diese mit Office 365 erneut. Wenn Benutzer drittanbieterbrowsern dieser Cache Cookies zu verwenden, müssen sie möglicherweise nicht erneut zu authentifizieren, wenn sie den Browser erneut zu öffnen.<br/> > [!NOTE]> Dies gilt nur für Netzwerke mit Office 365-Anmeldung für Yammer.           |
+|Office 365 Admin Center  <br/> |Sie werden aufgefordert, alle 8 Stunden Anmeldeinformationen für das Admin Center bereitzustellen.  <br/> |
+|SharePoint Online  <br/> |5 Tage Inaktivität, solange die Benutzer **mich für angemeldet halten**. Wenn der Benutzer nach Ablauf von 24 oder mehr Stunden von der vorherigen Anmeldung erneut auf SharePoint Online zugreift, wird der Timeoutwert auf 5 Tage zurückgesetzt.  <br/> |
+|Outlook Web App  <br/> |6 Stunden.  <br/> Sie können diesen Wert ändern, indem Sie den Parameter _ActivityBasedAuthenticationTimeoutInterval_ im Cmdlet [Set-OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) verwenden.  <br/> |
+|Azure Active Directory  <br/> (Von Office 2013 Windows-Clients mit aktivierter moderner Authentifizierung)  <br/> | Die moderne Authentifizierung verwendet Zugriffstoken und Aktualisierungstoken, um Benutzer Zugriff auf Office 365-Ressourcen mithilfe von Azure Active Directory zu gewähren. Ein Zugriffstoken ist ein JSON-webToken, das nach erfolgreicher Authentifizierung bereitgestellt wird und eine Stunde lang gültig ist. Außerdem wird ein Aktualisierungstoken mit einer längeren Lebensdauer bereitgestellt. Wenn Zugriffstoken ablaufen, verwenden Office-Clients ein gültiges Aktualisierungstoken, um ein neues Zugriffstoken abzurufen. Dieser Exchange-Server ist erfolgreich, wenn die anfängliche Authentifizierung des Benutzers noch gültig ist.  <br/>  Aktualisierungstoken sind 90 Tage lang gültig, und bei fortlaufender Verwendung können Sie bis zur Sperrung gültig sein.  <br/>  Aktualisierungstoken können durch mehrere Ereignisse wie:  <br/>  Das Kennwort des Benutzers wurde geändert, seit das Aktualisierungstoken ausgestellt wurde.  <br/>  Ein Administrator kann Richtlinien für den bedingten Zugriff anwenden, die den Zugriff auf die Ressource einschränken, auf die der Benutzer zugreifen möchte.  <br/> |
+|Mobile Apps für SharePoint und OneDrive für Android, iOS und Windows 10  <br/> |Die Standardlebensdauer für das Zugriffstoken beträgt 1 Stunde. Die standardmäßige maximale inaktive Zeit des Aktualisierungs Tokens beträgt 90 Tage.  <br/> [Weitere Informationen zu Token und zum Konfigurieren von Token-Gültigkeitsdauer](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> Zum Widerrufen des Aktualisierungs Tokens können Sie das Office 365-Kennwort des Benutzers zurücksetzen.  <br/> |
+|Jammern mit Office 365-Anmeldung  <br/> |Lebensdauer des Browsers. Wenn Benutzer den Browser beenden und in einem neuen Browser auf jammern zugreifen, wird Sie von jammern erneut mit Office 365 authentifiziert. Wenn Benutzer Drittanbieter-Browser verwenden, die Cookies Zwischenspeichern, müssen Sie sich möglicherweise nicht erneut authentifizieren, wenn Sie den Browser erneut öffnen.  <br/> > [!NOTE]> Dies gilt nur für Netzwerke, die Office 365-Anmeldung für jammern verwenden.           |
    
 

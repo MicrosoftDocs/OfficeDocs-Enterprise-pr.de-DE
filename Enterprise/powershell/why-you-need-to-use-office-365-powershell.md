@@ -3,7 +3,7 @@ title: Warum Sie Office 365 PowerShell verwenden müssen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 03/11/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Zusammenfassung: Verstehen Sie, warum Sie aus Effizienzgründen oder aus Notwendigkeit Office 365 PowerShell zum Verwalten von Office 365 verwenden müssen.'
-ms.openlocfilehash: 9909d9665817646f7c70c66012af4b8762cceaa1
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
+ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897468"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30538993"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Warum Sie Office 365 PowerShell verwenden müssen
 
@@ -33,9 +33,9 @@ In diesem Artikel werden die Möglichkeiten erläutert, die Sie bei der Verwendu
     
 - Office 365 PowerShell eignet sich hervorragend zum Ausführen von Massenvorgängen.
     
-- Office 365 PowerShell eignet sich bestens zum Filtern von Daten
+- Office 365 PowerShell eignet sich hervorragend zum Filtern von Daten
     
-- Office 365 PowerShell erleichtert das Drucken oder Speichern von Daten
+- Office 365 PowerShell erleichtert das Drucken oder Speichern von Daten.
     
 - Office 365 PowerShell ermöglicht eine Verwaltung über Serverprodukte hinweg
     
@@ -65,7 +65,7 @@ Im Office 365 Admin Center werden zahlreiche hilfreiche Informationen angezeigt,
   
 ![Beispiel für die Anzeige von Benutzern und Gruppen im Office 365 Admin Center](media/o365-powershell-users-and-groups.png)
   
-Für viele Zwecke zeigt diese Informationen, die Sie wissen müssen. Es gibt jedoch vorkommen, dass mehr benötigen. Beispielsweise hängen von Office 365-Lizenzierung (und die Office 365-Features für einen Benutzer verfügbar) teilweise geografischen Standort des Benutzers. Die Richtlinien und Features, die Sie einem Benutzer erweitern können, die in den USA befindet ist möglicherweise nicht dieselbe wie die Richtlinien und Features, die Sie einem Benutzer, die in Indien oder in Belgien befindet sich erweitern können. Office 365 Administrationscenter können Sie bestimmen eines Benutzers geografischen Standort, an dem diese Schritte:
+Hier werden für zahlreiche Zwecke die benötigten Informationen angezeigt. Es kann jedoch vorkommen, dass Sie mehr benötigen. Beispielsweise hängen die Office 365-Lizenzierung (und die für einen Benutzer verfügbaren Office 365-Features) teilweise vom geografischen Standort dieses Benutzers ab. Die Richtlinien und Features, die Sie auf einen Benutzer erweitern können, der in den USA lebt, sind möglicherweise nicht die gleichen Richtlinien und Features, die Sie auf einen Benutzer erweitern können der in Indien oder in Belgien lebt. Sie können das Office 365 Admin Center verwenden, um den geografischen Standort eines Benutzers mit den folgenden Schritten zu bestimmen:
   
 1. Doppelklicken Sie auf den **Anzeigenamen** des Benutzers.
     
@@ -93,7 +93,6 @@ Nachfolgend sehen Sie ein Beispiel der Anzeige:
 ```
 DisplayName                               UsageLocation
 -----------                               -------------
-Zrinka Makovac                            US
 Bonnie Kearney                            GB
 Fabrice Canel                             BR
 Brian Johnson (TAILSPIN)                  US
@@ -122,7 +121,6 @@ Bonnie Kearney                              GB
 Alex Darrow                                 US
 Anne Wallace                                US
 Brian Johnson (TAILSPIN)                    US
-Zrinka Makovac                              US
 ```
 
 > [!TIP]
@@ -274,7 +272,6 @@ Alex Darrow                              San Diego
 Bonnie Kearney                           San Diego
 Julian Isla                              Bloomington
 Rob Young                                Bloomington
-Zrinka Makovac                           San Diego
 ```
 
 > [!TIP]
@@ -329,7 +326,7 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell erleichtert das Drucken oder Speichern von Daten
 
-Office 365 Administrationscenter können Sie eine Liste von Daten anzeigen. Es folgt ein Beispiel für die Skype für Business Online Admin Center Anzeigen einer Liste von Benutzern, die für die Skype für Business Online aktiviert wurden:
+Im Office 365 Admin Center können Sie Datenlisten anzeigen. Nachfolgend sehen Sie ein Beispiel im Skype for Business Online Admin Center, bei dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.
   
 ![Beispiel für das Skype for Business Online Admin Center, in dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.](media/o365-powershell-lync-users.png)
   
@@ -407,7 +404,6 @@ Nachfolgend sehen Sie ein Beispiel der Anzeige:
 ```
 DisplayName             IsLicensed   IsMailboxEnabled   EnabledForSfB
 -----------             ----------   ----------------   --------------
-Zrinka Makovac          True         True               True
 Bonnie Kearney          True         True               True
 Fabrice Canel           True         True               True
 Brian Johnson           False        True               False
