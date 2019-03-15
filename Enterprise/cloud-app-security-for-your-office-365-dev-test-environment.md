@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 2c29e650233348e44bf72adcb8b18580e1de8802
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: f8630f1666286c2f3cced9323eccbe1f73203fdb
+ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897058"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573679"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
  **Zusammenfassung:** Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung
   
-Office 365 Cloud App-Sicherheit, früher bekannt als Office 365 Advanced Security Management, können Sie Richtlinien erstellen, die für überwachen und informieren Sie verdächtige Aktivitäten in Ihrem Office 365-Abonnement, damit Sie untersuchen und mögliche Remediation übernehmen können Aktion. Weitere Informationen finden Sie unter [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 Cloud App Security, bisher bekannt als Office 365 Advanced Security Management, ermöglicht Ihnen das Erstellen von Richtlinien, mit denen Sie verdächtige Aktivitäten in Ihrem Office 365-Abonnement überwachen und darüber informiert werden, damit Sie untersuchen und mögliche Korrekturen durchführen können. Aktion. Weitere Informationen finden Sie unter [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Mit den Anweisungen in diesem Artikel aktivieren und testen Sie Cloud App Security in Ihrem Office 365-Testabonnement.
   
@@ -49,7 +49,7 @@ In diesem Verfahren demonstrieren Sie, dass das Ändern einer Benutzerrolle vor 
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Testen des Standardbenachrichtigungsverhaltens von Office 365
 
-1. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
+1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
   - Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, melden Sie sich von Ihrem lokalen Computer aus an.
     
@@ -79,9 +79,9 @@ In diesem Verfahren aktivieren Sie Cloud App Security und erstellen eine neue Ri
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Aktivieren und Konfigurieren von Cloud App Security
 
-1. Wechseln Sie zu Office 365-Portal ([https://portal.office.com](https://portal.office.com)) und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
+1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
-2. Klicken Sie auf die Kachel " **Admin** ". Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin zentriert > Security & Compliance**.
+2. Klicken Sie auf die Kachel **Admin**. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin Center _GT_ Security & Compliance**.
     
 3. Klicken Sie im linken Navigationsbereich auf **Warnungen > Erweiterte Warnungen verwalten**.
     
@@ -111,7 +111,7 @@ In diesem Verfahren demonstrieren Sie, wie Cloud App Security Warnungen erstellt
 
 1. Klicken Sie oben rechts auf das Benutzersymbol, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [https://portal.office.com](https://portal.office.com).
+2. Wechseln Sie zu [https://www.office.com](https://www.office.com).
     
 3. Klicken Sie auf der Office 365-Anmeldeseite auf **Ein anderes Konto verwenden**.
     
@@ -135,13 +135,13 @@ In diesem Verfahren demonstrieren Sie, wie Cloud App Security Warnungen erstellt
     
 13. Klicken Sie oben rechts auf das Benutzersymbol, und klicken Sie dann auf **Abmelden**. 
     
-14. Wechseln Sie zu [https://portal.office.com](https://portal.office.com).
+14. Wechseln Sie zu [https://www.office.com](https://www.office.com).
     
 15. Klicken Sie auf der Seite **Office 365-Anmeldung** auf den Kontonamen Ihres globalen Administrators.
     
 16. Geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     
-17. Klicken Sie auf der Hauptportalseite auf **Admin**.
+17. Klicken Sie auf der Office 365-Portalseite auf **Admin**.
     
 18. Klicken Sie auf die Kachel **Security &amp; Compliance**.
     
