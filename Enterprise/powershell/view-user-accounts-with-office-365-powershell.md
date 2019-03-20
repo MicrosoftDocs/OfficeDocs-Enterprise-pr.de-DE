@@ -3,7 +3,7 @@ title: Anzeigen von Benutzerkonten mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/11/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Zusammenfassung: anzeigen, auflisten oder Anzeigen Ihrer Benutzerkonten mit Office 365 PowerShell.'
-ms.openlocfilehash: 10b6d209e76f94b8b001718abd35368f9d1bc29c
-ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
+ms.openlocfilehash: 717a7c11f4e7f6d2e5e0c452854df7d4c419007e
+ms.sourcegitcommit: 1dc7b4731cf9899c5ae867624ed142dbab0c517f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30539013"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30683702"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Anzeigen von Benutzerkonten mit Office 365 PowerShell
 
@@ -287,7 +287,7 @@ Scott Wallace            Operations
 Wenn Sie die Verzeichnissynchronisierung zum Erstellen und Verwalten Ihrer Office 365-Benutzer verwenden, können Sie anzeigen, aus welchem lokalen Konto ein Office 365-Benutzer stammt. Es wird davon ausgegangen, dass Azure AD Connect für die Verwendung des standardmäßigen Quell Ankers von objectGUID konfiguriert wurde (Weitere Informationen zum Konfigurieren eines Quell Ankers finden Sie unter [Azure AD Connect: Design Concepts](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-design-concepts)), und es wird davon ausgegangen, dass das Active Directory-Modul für PowerShell installiert (siehe [Remote-Tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)):
 
 ```
-(Get-ADUser [guid][system.convert]::frombase64string((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).Guid
+Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
     
