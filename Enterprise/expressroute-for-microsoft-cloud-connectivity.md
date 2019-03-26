@@ -3,7 +3,7 @@ title: ExpressRoute für Microsoft-Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/02/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können.'
-ms.openlocfilehash: b0f47278a94b2926cd540ce759ced9b2418aa598
-ms.sourcegitcommit: 6e3bfe55a173a733d6696790b88efa39853ebdb9
+ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "27470167"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574009"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute für Microsoft-Cloudkonnektivität
 
@@ -33,7 +33,7 @@ Nachfolgend finden Sie den Netzwerkpfad zur Microsoft-Cloud ohne ExpressRoute-Ve
   
 **Abbildung 1: Der Netzwerkpfad ohne ExpressRoute**
 
-![Abbildung 1: Der Netzwerkpfad ohne ExpressRoute](media/Network-Poster/ExpressRoute.png)
+![Abbildung 1: Der Netzwerkpfad ohne ExpressRoute](media/Network-Poster/ExpressRoute.png)
   
 Abbildung 1 zeigt den typischen Pfad zwischen einem lokalen Netzwerk und der Microsoft Cloud. Das lokale Netzwerk-Edge stellt über einen WAN-Link zu einem Internetdienstanbieter eine Verbindung zum Internet her. Der Datenverkehr bewegt dann sich über das Internet an den Rand der Microsoft Cloud. Cloud-Angebote innerhalb der Microsoft Cloud umfassen Office 365, Microsoft Azure, Microsoft Intune und Dynamics 365. Benutzer einer Organisation können sich im lokalen Netzwerk oder im Internet befinden.
   
@@ -51,7 +51,7 @@ Nachfolgend finden Sie die Netzwerkpfade zur Microsoft Cloud mit ExpressRoute-Ve
   
 Abbildung 2 zeigt zwei Netzwerkpfade. Der Datenverkehr zu Microsoft Intune bewegt sich über denselben Pfad wie normaler Internetverkehr. Datenverkehr zu Office 365, Microsoft Azure und Dynamics 365 bewegt sich über die ExpressRoute-Verbindung, ein dedizierter Pfad zwischen dem Rand des lokalen Netzwerks und dem Rand der Microsoft Cloud.
   
-Eine Verbindung ExpressRoute Sie jetzt-Steuerelements über eine Beziehung mit Ihrem Dienstanbieter haben, über den gesamten Datenverkehr Pfad von der Kante des Microsoft cloud Edge. Diese Verbindung kann vorhersehbare Leistung und einen [99,95 % Betriebszeit SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)anbieten.
+Mit einer Express Route-Verbindung haben Sie jetzt über eine Beziehung mit Ihrem Dienstanbieter die Kontrolle über den gesamten Datenverkehrs Pfad zwischen Ihrem Edgeserver und dem Microsoft Cloud Edge. Diese Verbindung kann eine vorhersagbare Leistung und eine [SLA von 99,95%](https://azure.microsoft.com/support/legal/sla/expressroute/v1_3/)zur Verfügung stehen.
   
 Sie können sich nun auf vorhersehbaren Durchsatz und planbare Wartezeit basierend auf der Verbindung Ihres Dienstanbieters für Office 365-, Azure- und Dynamics 365-Dienste verlassen. ExpressRoute-Verbindungen mit Microsoft Intune werden derzeit nicht unterstützt.
   
@@ -96,30 +96,30 @@ Tabelle 1 zeigt die drei primären Verbindungsmodelle für ExpressRoute-Verbindu
   
 ## <a name="expressroute-peering-relationships-to-microsoft-cloud-services"></a>ExpressRoute-Peeringbeziehungen zu Microsoft-Clouddiensten
 
-Eine einzelne ExpressRoute Verbindung unterstützt bis zu zwei verschiedenen Border Gateway Protocol (BGP) Peers Beziehungen mit verschiedenen Teilen eines Microsoft-Cloud. BPG wird Peers Beziehungen verwendet, um eine Vertrauensstellung und exchange-Routinginformationen.
+Eine einzelne Express Route-Verbindung unterstützt bis zu zwei verschiedene BGP-Peering-Beziehungen zu verschiedenen Teilen der Microsoft-Cloud. BPG verwendet Peeringbeziehungen, um Vertrauensstellungen einzurichten und Routinginformationen auszutauschen.
   
-**Abbildung 3: Die zwei verschiedenen BGP Beziehungen in einer einzigen ExpressRoute-Verbindung**
+**Abbildung 3: die beiden verschiedenen BGP-Beziehungen in einer einzelnen Express Route-Verbindung**
 
-![Abbildung 3: Die zwei verschiedenen BGP Beziehungen in einer einzigen ExpressRoute-Verbindung](media/Network-Poster/ERPeering.png)
+![Abbildung 3: die beiden verschiedenen BGP-Beziehungen in einer einzelnen Express Route-Verbindung](media/Network-Poster/ERPeering.png)
   
-Abbildung 3 zeigt eine ExpressRoute Verbindung von einem lokalen Netzwerk. Die ExpressRoute Verbindung verfügt über zwei logische Peers Beziehungen. Eine Microsoft Peers Beziehung wechselt zu Microsoft SaaS-Dienste, einschließlich Office 365, Dynamcs 365 und Azure PaaS-Dienste. Eine private Beziehung Peers geht Azure IaaS und ein virtuelles Netzwerk-Gateway, die virtuellen Computern gehostet wird.
+Abbildung 3 zeigt eine ExpressRoute-Verbindung aus einem lokalen Netzwerk. Die Express Route-Verbindung hat zwei logische Peering-Beziehungen. Eine Microsoft-Peering-Beziehung geht an Microsoft-SaaS-Dienste, einschließlich Office 365, Dynamcs 365 und Azure PaaS-Dienste. Eine private Peeringbeziehung besteht zu Azure IaaS und zu einem virtuellen Netzwerkgateway, auf dem virtuelle Computer gehostet werden.
   
-Die Microsoft-BGP-Peeringbeziehung: 
+Die Microsoft-BGP-Peeringbeziehung:  
   
-- Wird von einem Router in Ihrer DMZ in die öffentlichen Adressen von Office 365, Dynamics 365 und Azure-Diensten. 
+- Stammt von einem Router in ihrer DMZ zu den öffentlichen Adressen von Office 365, Dynamics 365 und Azure Services. 
     
-- Unterstützt die bidirektional initiierte Kommunikation.
+- 	Unterstützt die bidirektional initiierte Kommunikation.
     
 Die private BGP-Peeringbeziehung:
   
-- Besteht zwischen einem Router am Rand des Unternehmensnetzwerks und den privaten IP-Adressen, die Ihren Azure VNets zugewiesen sind.
+- 	Besteht zwischen einem Router am Rand des Unternehmensnetzwerks und den privaten IP-Adressen, die Ihren Azure VNets zugewiesen sind.
     
-- Unterstützt die bidirektional initiierte Kommunikation.
+- 	Unterstützt die bidirektional initiierte Kommunikation.
     
-- Ist eine Erweiterung Ihres Organisationsnetzwerks in die Microsoft Cloud, die über eine intern konsistente Adresse und Routing verfügt.
+- 	Ist eine Erweiterung Ihres Organisationsnetzwerks in die Microsoft Cloud, die über eine intern konsistente Adresse und Routing verfügt.
 
 >[!Note]
->Die öffentliche Peers BGP-Beziehung, die in früheren Versionen von in diesem Artikel beschriebenen ist veraltet.
+>Die in früheren Versionen dieses Artikels beschriebene Public Peering BGP-Beziehung ist veraltet.
 >
     
 ## <a name="example-of-application-deployment-and-traffic-flow-with-expressroute"></a>Beispiel der Anwendungsbereitstellung und für den Fluss des Datenverkehrs mit ExpressRoute
@@ -151,7 +151,7 @@ Mit der Microsoft-Peeringbeziehung und der privaten Peeringbeziehung:
     
 - vom Rand des lokalen Netzwerks stehen die privaten IP-Adressen von Azure VNet und die öffentlichen IP-Adressen von Office 365 über die ExpressRoute-Verbindung zur Verfügung.
     
-Wenn die Anwendung auf die URLs von SharePoint Online zugreift, wird der Datenverkehr über die ExpressRoute-Verbindung an einen Proxyserver am Rand weitergeleitet. 
+Wenn die Anwendung auf die URLs von SharePoint Online zugreift, wird der Datenverkehr über die ExpressRoute-Verbindung an einen Proxyserver am Rand weitergeleitet.  
   
 Wenn der Proxyserver die IP-Adresse von SharePoint Online gefunden hat, wird der Datenverkehr wieder über die ExpressRoute-Verbindung zurückgeleitet. Antwortdatenverkehr wird über den umgekehrten Pfad übermittelt.
   
@@ -184,9 +184,9 @@ Wenn Sie eine ExpressRoute-Verbindung mit einem Microsoft Cloud-Peeringstandort 
   
 Dies kann zu einer nicht optimalen Übermittlung an lokale Microsoft-Rechenzentren für das n:n-Verbindungsmodell führen.
   
-**Abbildung 7: Beispiel für ein geografisch verteilten Unternehmen, das eine einzelne ExpressRoute-Verbindung verwendet**
+**Abbildung 7: Beispiel für eine geografisch verteilte Organisation, die eine einzelne Express Route-Verbindung verwendet**
 
-![Abbildung 7: Beispiel für ein geografisch verteilten Unternehmen, das eine einzelne ExpressRoute-Verbindung verwendet](media/Network-Poster/MSNet1.png)
+![Abbildung 7: Beispiel für eine geografisch verteilte Organisation, die eine einzelne Express Route-Verbindung verwendet](media/Network-Poster/MSNet1.png)
   
 Abbildung 7 zeigt eine Organisation mit zwei Standorten, Standort 1 im Nordwesten der USA, und Standort 2 im Nordosten. Diese sind durch einen n: n-WAN-Anbieter verbunden. Diese Organisation verfügt auch über eine ExpressRoute-Verbindung zu einem Microsoft-Peeringstandort an der Westküste. Datenverkehr von Standort 2 im Nordosten, der an ein Rechenzentrum an der Ostküste gerichtet ist, muss den gesamten Weg über das WAN der Organisation an die Westküste, an den Microsoft-Peeringstandort und dann zurück über das gesamte Land über das Microsoft Cloud-Netzwerk an das Rechenzentrum an der Ostküste zurücklegen.
   
@@ -200,7 +200,7 @@ Abbildung 8 zeigt dieselbe Organisation mit zwei ExpressRoute-Verbindungen, eine
   
 Vorteile mehrerer ExpressRoute-Verbindungen:
   
-- Eine bessere Leistung für regional lokale Microsoft-Rechenzentrumsstandorte.
+- 	Eine bessere Leistung für regional lokale Microsoft-Rechenzentrumsstandorte.
     
 - Höhere Verfügbarkeit in der Microsoft Cloud, wenn eine lokale ExpressRoute-Verbindung nicht mehr verfügbar ist.
     
@@ -210,17 +210,17 @@ Für interkontinentalen Datenverkehr über das Microsoft Cloud-Netzwerk müssen 
   
 ### <a name="expressroute-premium"></a>ExpressRoute Premium
 
-Für Organisationen, die global über Kontinente verteilt sind, können Sie ExpressRoute Premium verwenden. 
+Für Organisationen, die global über Kontinente verteilt sind, können Sie ExpressRoute Premium verwenden.  
   
 Mit ExpressRoute Premium können Sie alle Microsoft-Rechenzentren auf allen Kontinenten von einem beliebigen Microsoft-Peeringstandort auf einem beliebigen Kontinent erreichen. Der Datenverkehr zwischen Kontinenten erfolgt über das Microsoft Cloud-Netzwerk.
   
 Vorteile mehrerer ExpressRoute Premium-Verbindungen:
   
-- Eine bessere Leistung für kontinental lokale Microsoft-Rechenzentrumsstandorte.
+- 	Eine bessere Leistung für kontinental lokale Microsoft-Rechenzentrumsstandorte.
     
 - Höhere Verfügbarkeit in der globalen Microsoft Cloud, wenn eine lokale ExpressRoute-Verbindung nicht mehr verfügbar ist.
     
-ExpressRoute Premium ist für Office 365-basierten ExpressRoute Verbindungen erforderlich.
+ExpressRoute Premium ist für Office 365-basierte ExpressRoute-Verbindungen erforderlich.
   
 **Abbildung 9: Das weltweite Microsoft Cloud-Netzwerk**
 
@@ -232,7 +232,7 @@ Bei einer regionalen Niederlassung bewegt sich entsprechender Office 365-Datenve
   
 - Datenverkehr an kontinentale Office 365-Rechenzentren bewegt sich über das Microsoft Cloud-Netzwerk innerhalb des Kontinents.
     
-- Datenverkehr an Office 365-Rechenzentren auf einem anderen Kontinent bewegt sich über das interkontinentale Microsoft Cloud-Netzwerk.
+- 	Datenverkehr an Office 365-Rechenzentren auf einem anderen Kontinent bewegt sich über das interkontinentale Microsoft Cloud-Netzwerk.
     
 Weitere Informationen finden Sie unter:
   
@@ -240,15 +240,13 @@ Weitere Informationen finden Sie unter:
     
 - [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune)
     
-- [Office 365-Leistungsverwaltung](https://mva.microsoft.com/en-US/training-courses/office-365-performance-management-8416)
-    
 ## <a name="expressroute-options"></a>ExpressRoute-Optionen
 
 Sie können auch die folgenden Optionen in Ihre ExpressRoute-Bereitstellung integrieren:
   
 - **Sicherheit an Ihrem Edge:** Um erweiterte Sicherheit für den Datenverkehr bereitzustellen, der über die ExpressRoute-Verbindung gesendet und empfangen wird, z. B. die Überprüfung von Datenverkehr oder Angriffserkennung/Schadsoftwareerkennung, platzieren Sie Ihre Sicherheitsgeräte im Datenverkehrpfad innerhalb Ihres Umkreisnetzwerks oder an der Grenze Ihres Intranets.
     
-- **Internet-Datenverkehr für virtuelle Computer:** Um zu verhindern, dass virtuellen Azure-Computern Initiierung von Datenverkehr direkt mit dem Internet stattfindet, kündigen Sie die Standardroute an Microsoft an. Mit dem Internet-Datenverkehr wird über die Verbindung ExpressRoute und über Ihre lokale-Proxy-Server weitergeleitet. Datenverkehr von Azure VMs Azure PaaS-Dienste oder Office 365 wird über die ExpressRoute Verbindung zurück weitergeleitet.
+- **Internet Datenverkehr für VMS:** Um zu verhindern, dass Azure-VMs Datenverkehr direkt mit Internet Standorten initiieren, werben Sie die Standardroute an Microsoft. Datenverkehr an das Internet wird über die ExpressRoute-Verbindung und über Ihre lokalen Proxyserver geleitet. Datenverkehr von virtuellen Azure-Computern an Azure PaaS-Dienste oder Office 365 wird zurück über die ExpressRoute-Verbindung geleitet.
     
 - **WAN-Optimierungen:** Sie können WAN-Optimierungen auf beiden Seiten einer privaten Peeringverbindung für ein standortübergreifendes virtuelles Azure-Netzwerk (VNet) bereitstellen. Verwenden Sie innerhalb des Azure VNet ein Netzwerkgerät für die WAN-Optimierung aus dem Azure Marketplace sowie benutzerdefiniertes Routing, um den Verkehr über das Gerät zu leiten.
     

@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_TLGs
 ms.assetid: 499c5823-427a-4ba2-8fc1-9553bc2ff2d3
 description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um die Dynamics 365-Integration für Exchange Online für Ihr Office 365-Testabonnement zu aktivieren.'
-ms.openlocfilehash: 97e480bd148092f8e8e5ab610f0aed0a5eb2e20e
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: be79f58f448799bba9c4a9ee51350f198d721e0d
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897118"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574019"
 ---
 # <a name="exchange-online-integration-for-your-office-365-and-dynamics-365-devtest-environment"></a>Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung
 
@@ -42,11 +42,11 @@ Folgen Sie den Anweisungen in der Testumgebungsanleitung [Office 365- und Dynami
 
 Gehen Sie wie folgt vor, um das Postfach des globalen Administrators für die Integration von Dynamics 365 und Exchange Online zu konfigurieren:
   
-1. Wechseln Sie mit der Verwendung einer privaten Sitzung Ihres Browsers zu [http://portal.office.com](http://portal.office.com) und melden Sie sich mit Ihrem Office 365 globaler Administrator-Konto.
+1. Navigieren Sie in einer privaten Sitzung Ihres Browsers zu und [http://admin.microsoft.com](http://admin.microsoft.com) melden Sie sich mit ihrem globalen Office 365-Administratorkonto an.
     
 2. Klicken Sie auf der **Microsoft Office-Homepage** auf die Kachel **E-Mail**.
     
-3. Klicken Sie auf der neuen Registerkarte **E-Mail** in Ihrem Browser auf **neu** , und beachten Sie, wie unten im Bereich unterhalb des Felds für eine Nachricht eingeben ein Symbol für Meine Vorlagen verfügt.
+3. Klicken Sie auf der Registerkarte neue **e-Mail** in Ihrem Browser auf **neu** , und beachten Sie, dass die untere Ecke des Bereichs unterhalb des Felds zum Eingeben einer Nachricht ein Symbol für meine Vorlagen aufweist.
     
      ![Leere neue E-Mail-Nachricht ohne Integration mit Dynamics 365](media/879b54fd-a68f-4581-9f89-d5050df6f4de.png)
   
@@ -88,7 +88,7 @@ Gehen Sie wie folgt vor, um die Dynamics 365-App für Outlook zu installieren un
     
 5. Klicken Sie auf die Registerkarte **Microsoft Office Home** in Ihrem Browser, und klicken Sie dann auf die Kachel **E-Mail**.
     
-6. Klicken Sie auf der neuen Registerkarte **E-Mail** in Ihrem Browser auf **neu**. Beachten Sie, dass die untere Ecke des Bereichs unterhalb des Felds für die Eingabe einer Nachricht jetzt ein Symbol für Dynamics 365 verfügt.
+6. Klicken Sie auf der neuen Registerkarte **E-Mail** im Browser auf **Neu**. Beachten Sie, dass die untere Ecke des Bereichs unterhalb des Felds zum Eingeben einer Nachricht jetzt ein Symbol für Dynamics 365 hat.
     
      ![Leere neue E-Mail-Nachricht bei Integration mit Dynamics 365 (neues Symbol sichtbar)](media/ecb822e1-45fe-4481-99a1-294317d1d2de.png)
   

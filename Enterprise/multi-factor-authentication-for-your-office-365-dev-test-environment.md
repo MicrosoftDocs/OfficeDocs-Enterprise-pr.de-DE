@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Zusammenfassung: Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.'
-ms.openlocfilehash: 453dbc6bda3cfbc6806159d53c9a805c4c6cac97
-ms.sourcegitcommit: 8e2760cbcaf564923595147ccf6da468edaed364
+ms.openlocfilehash: 13dc02cc23d12f6eb6e2898d34271685badd9f5a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242077"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573979"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung
 
  **Zusammenfassung:** Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.
   
-Um eine zusätzliche Sicherheitsstufe für die Anmeldung bei Ihrem Office 365-Abonnement zu erhalten, können Sie die Azure Multi-Factor Authentication aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort zur Authentifizierung eines Kontos erfordert. Bei der mehrstufigen Authentifizierung für Office 365 müssen Benutzer einen Telefonanruf bestätigen, einen in einer Textnachricht gesendeten Verifizierungscode eingeben oder ein App-Kennwort auf ihren Smartphones angeben, nachdem Sie Ihre Kennwörter richtig eingegeben haben. Sie können sich nur anmelden, nachdem dieser zweite Authentifizierungs Faktor erfüllt wurde. 
+Um eine zusätzliche Sicherheitsstufe für die Anmeldung bei Ihrem Office 365-Abonnement zu erhalten, können Sie die Azure Multi-Factor Authentication aktivieren, die mehr als nur einen Benutzernamen und ein Kennwort zur Authentifizierung eines Kontos erfordert. Mit Multi-Factor Authentication für Office 365 müssen Benutzer auf ihrem Smartphone einen Telefonanruf bestätigen, einen Verifizierungscode eingeben, der ihnen in einer Textnachricht zugesendet wurde, oder ein App-Kennwort auf ihrem Smartphone angeben, nachdem sie ihr Kennwort korrekt eingegeben haben. Eine Anmeldung ist nur möglich, nachdem diese zweite Authentifizierungsstufe passiert wurde. 
   
 In diesem Artikel wird beschrieben, wie die Authentifizierung auf Basis einer Textnachricht für ein bestimmtes Office 365-Konto aktiviert und getestet wird.
   
@@ -53,7 +53,7 @@ Wenn Sie die mehrstufige Authentifizierung in einem simulierten Unternehmen test
 
 Aktivieren Sie Multi-Factor Authentication für das Konto „Benutzer 2“ mit den folgenden Schritten:
   
-1. Öffnen Sie eine separate Instanz Ihres Browsers, wechseln Sie zum Office 365-Portal[https://portal.office.com](https://portal.office.com)(), und melden Sie sich dann mit ihrem globalen Administratorkonto bei ihrem Office 365-Testabonnement an.
+1. Öffnen Sie eine separate Instanz Ihres Browsers, wechseln Sie zum Office 365-Portal[https://www.office.com](https://www.office.com)(), und melden Sie sich dann mit ihrem globalen Administratorkonto bei ihrem Office 365-Testabonnement an.
     
 2. Klicken Sie auf der Hauptportalseite auf **Admin**.
     
@@ -77,7 +77,7 @@ Schließen Sie die Konfiguration des Kontos „Benutzer 2“ für die Verwendung
   
 1. Öffnen Sie eine neue Instanz Ihres Browsers.
     
-2. Wechseln Sie zum Office 365-Portal[https://portal.office.com](https://portal.office.com)(), und melden Sie sich mit dem Konto "Benutzer\<2" (User2 @ Organization name>. onmicrosoft. com) und Kennwort an.
+2. Wechseln Sie zum Office 365-Portal[https://www.office.com](https://www.office.com)(), und melden Sie sich mit dem Konto "Benutzer\<2" (User2 @ Organization name>. onmicrosoft. com) und Kennwort an.
     
 3. Nach der Anmeldung werden Sie aufgefordert, eine zusätzliche Sicherheitsüberprüfung für das Konto einzurichten. Klicken Sie auf **Jetzt einrichten**.
     

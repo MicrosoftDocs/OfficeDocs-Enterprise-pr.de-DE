@@ -16,18 +16,18 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Verbinden Sie Windows PowerShell mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster.'
-ms.openlocfilehash: 38221a2c9b50aaeab217016336cf4d020abd706a
-ms.sourcegitcommit: 2e5e2c65a1b785e229f1f7fd5b219f1b3de96f97
+ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30339513"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573969"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster
 
  **Zusammenfassung:** Anstatt verschiedene Office 365-Dienste in separaten PowerShell-Konsolenfenstern zu verwalten, können Sie eine Verbindung mit allen Office 365-Diensten herstellen und diese über ein einzelnes Konsolenfenster verwalten.
   
-Wenn Sie PowerShell zum Verwalten von Office 365 verwenden, können bis zu fünf verschiedene Windows PowerShell-Sitzungen gleichzeitig geöffnet sein, entsprechend dem Office 365 Admin Center, SharePoint Online, Exchange Online, Skype for Business Online und der Sicherheits &amp;Compliance Center. Mit fünf verschiedenen Verbindungsmethoden in separaten Windows PowerShell-Sitzungen könnte Ihr Desktop wie folgt aussehen:
+Wenn Sie PowerShell zum Verwalten von Office 365 verwenden, können bis zu fünf verschiedene Windows PowerShell-Sitzungen gleichzeitig geöffnet sein, entsprechend dem Microsoft 365 Admin Center, SharePoint Online, Exchange Online, Skype for Business Online und der Sicherheits &amp; Compliance Center. Mit fünf verschiedenen Verbindungsmethoden in separaten Windows PowerShell-Sitzungen könnte Ihr Desktop wie folgt aussehen:
   
 ![Fünf Windows PowerShell-Konsolen, die gleichzeitig ausgeführt werden](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   

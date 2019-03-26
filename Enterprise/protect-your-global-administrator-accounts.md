@@ -1,5 +1,5 @@
 ---
-title: Schützen Ihrer globalen Office 365-Administratorkonten
+title: Schützen der globalen Administratorkonten für Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,66 +16,66 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Globaler Administratorzugriff auf Ihre Office 365-Abonnements mit dieser drei Schritte zu schützen.
-ms.openlocfilehash: 41168643fb8867017865860624c8b436460fa0b8
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Schützen Sie den globalen Administratorzugriff auf Ihr Office 365-Abonnement mit diesen drei Schritten.
+ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897518"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573919"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Ihrer globalen Office 365-Administratorkonten
+# <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen der globalen Administratorkonten für Office 365
 
- **Zusammenfassung:** Schützen Sie Ihre Office 365-Abonnements vor Angriffen, die basierend auf die Gefährdung als globaler Administrator an. 
+ **Zusammenfassung:** Schützen Sie Ihr Office 365-Abonnement vor Angriffen, die auf der Gefährdung durch ein globales Administratorkonto basieren. 
   
-Sicherheitsverstößen gegen ein Office 365-Abonnement, einschließlich Informationen zu sammeln und Phishing-Angriffe erfolgen in der Regel durch die Anmeldeinformationen des Office 365-Konto globaler Administrator gefährden. Sicherheit in der Cloud ist eine Partnerschaft zwischen Ihnen und Microsoft:
+Sicherheitsverstöße gegen ein Office 365-Abonnement, einschließlich Informationen zum Sammeln und Phishing-Angriffen, werden in der Regel durch Kompromittierung der Anmeldeinformationen eines globalen Administratorkontos von Office 365 durchgeführt. Sicherheit in der Cloud ist eine Partnerschaft zwischen Ihnen und Microsoft:
   
-- Microsoft Cloud-Dienste werden auf Grundlage von vertrauen und Sicherheit erstellt. Microsoft bietet Sie Sicherheitssteuerelemente und Funktionen, mit denen Sie Ihre Daten und Anwendungen zu schützen.
+- Microsoft Cloud Services basieren auf der Grundlage von Vertrauen und Sicherheit. Microsoft stellt Sicherheitskontrollen und-Funktionen zur Verfügung, mit denen Sie Ihre Daten und Anwendungen schützen können.
     
-- Sie besitzen die Daten und Identitäten und die Verantwortung für den Schutz von ihnen, die Sicherheit Ihrer lokalen Ressourcen und die Sicherheit der Cloud-Komponenten, die Sie steuern.
+- Sie besitzen Ihre Daten und Identitäten und die Verantwortung für den Schutz, die Sicherheit Ihrer lokalen Ressourcen und die Sicherheit von Cloud-Komponenten, die Sie steuern.
     
-Microsoft bietet Funktionen zum Schutz Ihrer Organisation, aber sie sind nur wirksam, wenn Sie diese verwenden. Wenn Sie sie nicht verwenden, können Sie anfällig sein. Um Ihre globalen Administratorkonten zu schützen, ist Microsoft hier Sie nähere Informationen zum zu unterstützen:
+Microsoft bietet Funktionen zum Schutz Ihrer Organisation, Sie sind jedoch nur dann wirksam, wenn Sie Sie verwenden. Wenn Sie Sie nicht verwenden, sind Sie möglicherweise anfällig für Angriffe. Um Ihre globalen Administratorkonten zu schützen, steht Ihnen Microsoft mit detaillierten Anweisungen zur Verfügung:
   
-1. Erstellen Sie dedizierte Office 365 globaler Administrator Benutzerkonten und verwenden sie bei Bedarf.
+1. Erstellen Sie dedizierte globale Administratorkonten für Office 365, und verwenden Sie Sie nur bei Bedarf.
     
-2. Konfigurieren Sie mehrstufige Authentifizierung für Ihre dedizierten Office 365 globaler Administratorkonten und verwenden Sie die sicherste sekundäre Authentifizierung.
+2. Konfigurieren Sie die mehrstufige Authentifizierung für ihre dedizierten Office 365-globalen Administratorkonten, und verwenden Sie die stärkste Form der sekundären Authentifizierung.
     
-3. Aktivieren und Konfigurieren von Office 365-Cloud-App-Sicherheit zum Überwachen von Kontoaktivitäten verdächtigen globaler Administrator.
+3. Aktivieren und konfigurieren Sie die Office 365 Cloud App Security, um die Aktivität verdächtiger globaler Administratorkonten zu überwachen.
     
 > [!NOTE]
-> Obwohl in diesem Artikel auf globale Administratorkonten gerichtet ist, berücksichtigen Sie auch, ob zusätzliche Konten mit umfassende Berechtigungen für den Datenzugriff im Rahmen Ihres Abonnements, wie eDiscovery-Administrator oder Sicherheits- oder kompatibilitätsanforderungen Administratorkonten, sollte die gleiche Weise geschützt werden. 
+> Obwohl dieser Artikel auf globale Administratorkonten ausgerichtet ist, sollten Sie auch berücksichtigen, ob zusätzliche Konten mit weit reichenden Berechtigungen für den Zugriff auf die Daten in Ihrem Abonnement wie eDiscovery-Administrator oder Sicherheit oder Compliance Administratorkonten sollten auf die gleiche Weise geschützt werden. 
   
-## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1. Erstellen Sie dedizierte Office 365 globaler Administrator Benutzerkonten und verwenden sie bei Bedarf
+## <a name="step-1-create-dedicated-office-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1: Erstellen Sie dedizierte globale Administratorkonten für Office 365, und verwenden Sie Sie nur bei Bedarf.
 
-Relativ wenige administrative Aufgaben wie das Zuweisen von Rollen zu Benutzerkonten, die globale Administratorrechte erforderlich sind. Aus diesem Grund statt alltägliche Benutzerkonten, die die globalen Administratorrolle zugewiesen wurden, führen Sie diese Schritte:
+Es gibt relativ wenige Verwaltungsaufgaben, wie das Zuweisen von Rollen zu Benutzerkonten, die globale Administratorrechte erfordern. Führen Sie daher anstelle der täglichen Benutzerkonten, denen die Rolle "globaler Administrator" zugewiesen wurde, die folgenden Schritte aus:
   
-1. Ermitteln der Benutzerkonten, die die globalen Administratorrolle zugewiesen wurden. Hierzu können Sie mit diesem Befehl an der Microsoft Azure Active Directory-Modul für Windows PowerShell-Eingabeaufforderung:
+1. Bestimmen Sie den Satz von Benutzerkonten, denen die Rolle globaler Administrator zugewiesen wurde. Sie können dies mit diesem Befehl an der Microsoft Azure Active Directory-Modul für Windows PowerShell-Eingabeaufforderungen tun:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
   ```
 
-2. Melden Sie sich bei Ihrem Office 365-Abonnement mit einem Benutzerkonto, das die globalen Administratorrolle zugewiesen wurde.
+2. Melden Sie sich bei Ihrem Office 365-Abonnement mit einem Benutzerkonto an, dem die Rolle "globaler Administrator" zugewiesen wurde.
     
-3. Erstellen Sie mindestens einen und bis zu fünf dedizierte Benutzerkonten globaler Administrator. **Verwendung sicherer Kennwörter mindestens 12 Zeichen lang.** Weitere Informationen finden Sie unter [Erstellen eines sicheren Kennworts](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) . Speichern Sie die Kennwörter für das neue Konto an einem sicheren Ort. 
+3. Erstellen Sie mindestens eine und maximal fünf dedizierte globale Administrator-Benutzerkonten. **Verwenden Sie sichere Kennwörter, die mindestens 12 Zeichen lang sind.** Weitere Informationen finden Sie unter [Erstellen eines sicheren Kennworts](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) . Speichern Sie die Kennwörter für die neuen Konten an einem sicheren Ort. 
     
-4. Weisen Sie der globalen Administratorrolle für jeden der neue dedizierte globaler Administratorbenutzerkonten.
+4. Weisen Sie die globale Administratorrolle jedem der neuen dedizierten Benutzerkonten für globale Administratoren zu.
     
-5. Melden Sie bei Office 365 ab.
+5. AbMelden von Office 365.
     
-6. Melden Sie sich mit einer neuen dedizierten globaler Administrator Benutzerkonten.
+6. Melden Sie sich mit einem der neuen dedizierten globalen Administrator-Benutzerkonten an.
     
-7. Für alle vorhandenen Benutzerkonten, die die globalen Administratorrolle aus Schritt 1 zugewiesen wurde:
+7. Für jedes vorhandene Benutzerkonto, dem die Rolle "globaler Administrator" aus Schritt 1 zugewiesen wurde:
     
-  - Entfernen der globalen Administratorrolle.
+  - Entfernen Sie die Rolle globaler Administrator.
     
-  - Zuweisen von Administratorrollen für das Konto, das für dieses Benutzers Funktion und Verantwortung geeignet sind. Weitere Informationen zu verschiedenen Administratorrollen in Office 365 finden Sie unter [Informationen zu Office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).
+  - Weisen Sie dem Konto Administratorrollen zu, die für die Aufgaben Funktion und Verantwortlichkeit dieses Benutzers geeignet sind. Weitere Informationen zu den verschiedenen Administratorrollen in Office 365 finden Sie unter Informationen [zu office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).
     
-8. Melden Sie bei Office 365 ab.
+8. AbMelden von Office 365.
     
-Das Ergebnis sollte wie folgt lauten:
+Das Ergebnis sollte:
   
-- Die einzige Benutzerkonten im Rahmen Ihres Abonnements mit der globalen Administratorrolle sind die neuen Satz von dedizierten globalen Administratorkonten. Überprüfen Sie dies mit dem folgenden PowerShell-Befehl aus:
+- Die einzigen Benutzerkonten in Ihrem Abonnement, die über die globale Administratorrolle verfügen, sind die neuen globalen Administratorenkonten. Überprüfen Sie dies mit dem folgenden PowerShell-Befehl:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
@@ -83,14 +83,14 @@ Das Ergebnis sollte wie folgt lauten:
 
 - Alle anderen normalen Benutzerkonten für die Verwaltung Ihres Abonnements verfügen über Administratorrollen, die ihren beruflichen Zuständigkeiten zugewiesen sind.
     
-Aus ab diesem Zeitpunkt melden Sie sich mit den dedizierten globalen Administratorkonten nur für Aufgaben vorgestellt, die globale Administratorrechte erforderlich. Alle anderen Office 365-Verwaltung muss durch Zuweisen von anderen Administratorrollen zu Benutzerkonten erfolgen.
+Ab diesem Moment melden Sie sich mit den dedizierten globalen Administratorkonten nur für Aufgaben an, die globale Administratorrechte erfordern. Alle anderen Office 365-Administration müssen durch Zuweisen von anderen Administratorrollen zu Benutzerkonten erfolgen.
   
 > [!NOTE]
-> Ja, dies ist erforderlich, zusätzliche Schritte zum als Ihr Benutzerkonto alltägliche abmelden und melden Sie sich mit einem dedizierten globale Administratorkonto ein. Aber dies nur gelegentlich für globaler Administrator Vorgänge ausgeführt werden soll. Erwägen Sie, Ihre Office 365-Abonnements wiederherstellen, nachdem eine globaler Administrator Konto Verletzung viel weitere Schritte erforderlich sind. 
+> Ja, dies erfordert zusätzliche Schritte, um sich als alltägliches Benutzerkonto abzumelden und sich mit einem dedizierten globalen Administratorkonto anzumelden. Dies muss jedoch nur gelegentlich für globale Administrator Vorgänge erfolgen. Bedenken Sie, dass das Wiederherstellen Ihres Office 365-Abonnements nach einer Verletzung globaler Administratorkonten viele weitere Schritte erfordert. 
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>Schritt 2. Konfigurieren Sie mehrstufige Authentifizierung für Ihre dedizierten Office 365 globaler Administratorkonten und verwenden Sie die sicherste sekundäre Authentifizierung
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-office-365-global-administrator-accounts-and-use-the-strongest-form-of-secondary-authentication"></a>Schritt 2: Konfigurieren Sie die mehrstufige Authentifizierung für ihre dedizierten Office 365-globalen Administratorkonten, und verwenden Sie die stärkste Form der sekundären Authentifizierung.
 
-Mehrstufige Authentifizierung (mehrstufiger Authentifizierung das) für Ihre globalen Administratorkonten benötigt zusätzliche Informationen über den Kontonamen und das Kennwort. Office 365 unterstützt die folgenden Überprüfungsmethoden:
+Multi-Factor Authentication (MFA) für Ihre globalen Administratorkonten erfordert zusätzliche Informationen über den Kontonamen und das Kennwort hinaus. Office 365 unterstützt diese Überprüfungsmethoden:
   
 - Ein Telefonanruf
     
@@ -100,87 +100,87 @@ Mehrstufige Authentifizierung (mehrstufiger Authentifizierung das) für Ihre glo
     
 - Ein biometrisches Gerät
     
-Wenn Sie ein kleines Unternehmen, das mithilfe von Benutzerkonten in der Cloud (Identitätsmodell Cloud) gespeichert sind, verwenden Sie folgende Schritte aus, um mithilfe eines Telefonanrufs oder einen Text-Nachricht gesendet, um ein Smartphone Überprüfungscode mehrstufiger Authentifizierung das konfigurieren:
+Wenn Sie ein kleines Unternehmen sind, das Benutzerkonten verwendet, die nur in der Cloud gespeichert sind (das Cloud-Identitätsmodell), verwenden Sie die folgenden Schritte zum Konfigurieren von MFA mithilfe eines Telefonanrufs oder eines Textnachrichten-Überprüfungscodes, der an ein Smartphone gesendet wird:
   
-1. [Mehrstufiger Authentifizierung das Aktivieren](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+1. [Aktivieren Sie MFA](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
     
-2. [Einrichten der Überprüfung für Office 365 – Schritt 2](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) zum Konfigurieren der einzelnen dediziert globale Administratorkonto ein Telefonanruf oder Textnachricht als die Überprüfungsmethode. 
+2. Richten Sie die Überprüfung in [zwei Schritten für Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) ein, um jedes dedizierte globale Administratorkonto für Telefonanrufe oder Textnachrichten als Überprüfungsmethode zu konfigurieren. 
     
-Wenn Sie einer größeren Organisation, die ein Office 365-Identität Hybridmodell verwendet wird sind, müssen Sie weitere Überprüfungsoptionen für die. Wenn Sie die Sicherheitsinfrastruktur für sekundäre stärkere Authentifizierungsmethode vorhanden, verwenden Sie folgende Schritte aus:
+Wenn Sie eine größere Organisation sind, die ein Office 365-Hybrid Identitätsmodell verwendet, haben Sie weitere Überprüfungsoptionen. Wenn die Sicherheitsinfrastruktur für eine stärkere sekundäre Authentifizierungsmethode bereits vorhanden ist, führen Sie die folgenden Schritte aus:
   
-1. [Mehrstufiger Authentifizierung das Aktivieren](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+1. [Aktivieren Sie MFA](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
     
-2. [Einrichten der Überprüfung für Office 365 – Schritt 2](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) zum Konfigurieren der einzelnen dediziert globalen Administratorkonto für die entsprechenden Überprüfungsmethode. 
+2. [Richten Sie die Überprüfung in zwei Schritten für Office 365](https://support.office.com/article/Set-up-2-step-verification-for-Office-365-ace1d096-61e5-449b-a875-58eb3d74de14) ein, um jedes dedizierte globale Administratorkonto für die entsprechende Überprüfungsmethode zu konfigurieren. 
     
-Wenn die Sicherheitsinfrastruktur für die gewünschte stärkere Überprüfungsmethode nicht und Funktionsweise von Office 365 mehrstufiger Authentifizierung das ist, wird dringend empfohlen, Sie dedizierte globale Administratorkonten mit mehrstufiger Authentifizierung das Konfigurieren mithilfe eines Telefongesprächs oder einer Textnachricht Überprüfungscode an einem Smartphone für Ihre globalen Administratorkonten als Sicherheitsmaßnahme vorläufige gesendet. Lassen Sie Ihre dedizierten globalen Administratorkonten nicht ohne zusätzliche Schutz von mehrstufiger Authentifizierung das bereitgestellt.
+Wenn die Sicherheitsinfrastruktur für die gewünschte stärkere Überprüfungsmethode nicht vorhanden und für Office 365 MFA funktioniert, wird dringend empfohlen, dass Sie dedizierte globale Administratorkonten mit MFA mithilfe eines Telefonanrufs oder einer Textnachricht konfigurieren. Überprüfungscode, der für Ihre globalen Administratorkonten an ein Smartphone gesendet wird, als vorläufige Sicherheitsmaßnahme. Lassen Sie Ihre dedizierten globalen Administratorkonten nicht ohne zusätzlichen Schutz durch MFA.
   
 Weitere Informationen finden Sie unter [Planen der mehrstufigen Authentifizierung für Office 365-Bereitstellungen](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba).
   
-Zum Verbinden mit Office 365-Diensten mit mehrstufiger Authentifizierung das und PowerShell finden Sie unter [in diesem Artikel](https://blogs.technet.microsoft.com/solutions_advisory_board/2017/04/27/connect-to-office-365-services-with-multifactor-authentication-mfa-and-powershell/).
+Informationen zum Herstellen einer Verbindung mit Office 365-Diensten mit MFA und PowerShell finden Sie in [diesem Artikel](https://blogs.technet.microsoft.com/solutions_advisory_board/2017/04/27/connect-to-office-365-services-with-multifactor-authentication-mfa-and-powershell/).
   
-## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>Schritt 3. Monitor für Kontoaktivitäten verdächtigen globaler administrator
+## <a name="step-3-monitor-for-suspicious-global-administrator-account-activity"></a>Schritt 3: Überwachung der Aktivität verdächtiger globaler Administratorkonten
 
-Office 365-Cloud-App-Sicherheit können Sie die Richtlinien erstellen, um Sie verdächtige Verhalten, das im Rahmen Ihres Abonnements zu benachrichtigen. Cloud App-Sicherheit in Office 365 E5 integriert ist, aber es ist auch als separater Dienst verfügbar. Wenn Sie nicht über Office 365 E5 verfügen, können Sie beispielsweise einzelne Cloud App-Sicherheit Lizenzen für die Benutzerkonten erwerben, die die globaler Administrator Sicherheitsadministrator und Compliance-Administratorrollen zugewiesen sind.
+Mit Office 365 Cloud App Security können Sie Richtlinien erstellen, die Sie über verdächtiges Verhalten in Ihrem Abonnement informieren. Cloud App Security ist in Office 365 E5 integriert, steht aber auch als separater Dienst zur Verfügung. Wenn Sie beispielsweise nicht über Office 365 E5 verfügen, können Sie einzelne Cloud-App-Sicherheits Lizenzen für die Benutzerkonten erwerben, denen die Rollen "globaler Administrator", "Sicherheitsadministrator" und "Compliance-Administrator" zugewiesen sind.
   
-Wenn Sie Cloud App-Sicherheit in Office 365-Abonnement haben, verwenden Sie folgende Schritte aus:
+Wenn Sie über Cloud-App-Sicherheit in Ihrem Office 365-Abonnement verfügen, führen Sie die folgenden Schritte aus:
   
-1. Melden Sie sich bei Office 365-Portal mit einem Konto an, die Rolle des Security-Administrator oder Compliance-Administrator zugewiesen ist.
+1. Melden Sie sich beim Microsoft 365 Admin Center mit einem Konto an, dem die Rolle "Sicherheitsadministrator" oder "Compliance-Administrator" zugewiesen ist.
     
-2. [Sicherheit in Office 365-Cloud-App zu aktivieren](https://support.office.com/article/ba919c73-d021-404d-9850-eec57e78678c).
+2. [Aktivieren Sie Office 365 Cloud App Security](https://support.office.com/article/ba919c73-d021-404d-9850-eec57e78678c).
     
-3. Überprüfen Sie Ihre [Anomalie Erkennungsrichtlinien in Office 365-Cloud-App-Sicherheit](https://support.office.com/article/88935b4e-dcb1-47f1-8aca-1bf8fb069db6) Sie per e-Mail abweichenden Muster privilegierten administrative Aktivität benachrichtigt. 
+3. Überprüfung der [Anomalie-Erkennungsrichtlinien in Office 365 Cloud App Security](https://support.office.com/article/88935b4e-dcb1-47f1-8aca-1bf8fb069db6) , um Sie per e-Mail über anomale Muster der privilegierten Verwaltungsaktivität zu informieren. 
     
-Um ein Benutzerkonto hinzuzufügen, die Sicherheitsadministrator-Rolle, die mit einem dedizierten globalen Administratorkonto und mehrstufiger Authentifizierung das [Office 365 PowerShell eine Verbindung herstellen](https://technet.microsoft.com/library/dn975125.aspx#step3) , geben Sie den Benutzerprinzipalnamen des Benutzerkontos, und führen Sie diese Befehle: 
+Wenn Sie der Sicherheits Administrator Rolle ein Benutzerkonto hinzufügen möchten, stellen Sie eine [Verbindung mit Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx#step3) mit einem dedizierten globalen Administrator Konto und MFA her, geben Sie den Benutzerprinzipalnamen des Benutzerkontos ein, und führen Sie dann die folgenden Befehle aus: 
   
 ```
 $upn="<User principal name of the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upn -RoleName "Security Administrator"
 ```
 
-Um die Compliance-Administratorrolle ein Benutzerkonto hinzuzufügen, geben Sie den Benutzerprinzipalnamen des Benutzerkontos, und führen Sie diese Befehle:
+Geben Sie zum Hinzufügen eines Benutzerkontos zur Rolle "Compliance-Administrator" den Benutzerprinzipalnamen des Benutzerkontos ein, und führen Sie dann die folgenden Befehle aus:
   
 ```
 $upn="<User principal name of the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress  $upn -RoleName "Compliance Administrator"
 ```
 
-## <a name="additional-protections-for-enterprise-organizations"></a>Zusätzliche Schutzebenen für Unternehmen
+## <a name="additional-protections-for-enterprise-organizations"></a>Zusätzliche Schutzmaßnahmen für Unternehmensorganisationen
 
-Nachdem die Schritte 1 bis 3, um sicherzustellen, dass Ihre globale Administratorkonto ein, und die Konfiguration, die Sie ausführen, verwenden sie diese zusätzlichen Methoden verwenden, sind so sicher wie möglich.
+Nach den Schritten 1-3, verwenden Sie diese zusätzlichen Methoden, um sicherzustellen, dass ihr globales Administratorkonto und die Konfiguration, die Sie verwenden, so sicher wie möglich sind.
   
-### <a name="privileged-access-workstation-paw"></a>Systemzugriff Arbeitsstation (KRALLE)
+### <a name="privileged-access-workstation-paw"></a>Workstation mit privilegiertem Zugriff (PAW)
 
-Um sicherzustellen, dass die Ausführung von umfangreichen Tasks so sicher wie möglich ist, verwenden Sie eine KRALLE. Eine KRALLE ist einem fest zugeordneten Computer, der nur für vertrauliche Konfigurationsaufgaben, wie etwa Office 365-Konfiguration verwendet wird, die ein globales Administratorkonto erforderlich sind. Da diese Computer nicht täglich für die Suche im Internet oder per e-Mail verwendet wird, ist es besser von Internetangriffen und Bedrohungen geschützt.
+Um sicherzustellen, dass die Ausführung hoch privilegierter Aufgaben so sicher wie möglich ist, verwenden Sie eine PAW. Eine PFOTE ist ein dedizierter Computer, der nur für vertrauliche Konfigurationsaufgaben wie Office 365-Konfiguration verwendet wird, die ein globales Administratorkonto erfordert. Da dieser Computer nicht täglich für das Surfen im Internet oder per e-Mail verwendet wird, ist er besser vor Internetangriffen und-Bedrohungen geschützt.
   
-Informationen dazu, wie Sie eine KRALLE einrichten, finden Sie unter [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
+Anweisungen zum Einrichten einer PFOTE finden Sie unter [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
   
-### <a name="azure-ad-privileged-identity-management-pim"></a>Identitätsmanagement Azure AD-Berechtigungen (PIM)
+### <a name="azure-ad-privileged-identity-management-pim"></a>Azure AD Privileged Identity Management (PIM)
 
-Azure AD PIM können Sie statt der globalen Administratorkonten dauerhaft die globalen Administratorrolle zugewiesen werden bei Bedarf, Just-in-Time-Zuweisung von der globalen Administratorrolle aktivieren, wenn es erforderlich ist.
+Anstatt ihren globalen Administratorkonten die globale Administratorrolle dauerhaft zuzuweisen, können Sie Azure AD PIM verwenden, um die bedarfsgerechte Zuweisung der globalen Administratorrolle bei Bedarf zu aktivieren.
   
-Anstatt Ihre globalen Administratorkonten, wird eine permanente Admin werden sie zu auswählbaren Administratoren. Die globalen Administratorrolle ist inaktiv, bis jemand benötigen. Sie führen dann Aktivierungsprozess um das globale Administratorkonto die globalen Administratorrolle für einen festgelegten Zeitraum hinzuzufügen. Nach Ablauf die Zeit entfernt PIM die globalen Administratorrolle aus das globale Administratorkonto ein.
+Statt der globalen Administratorkonten, die ein permanenter admin sind, werden Sie zu geeigneten Administratoren. Die globale Administratorrolle ist inaktiv, bis jemand Sie benötigt. Anschließend führen Sie einen Aktivierungsprozess aus, um die globale Administratorrolle für eine festgelegte Zeitdauer dem globalen Administratorkonto hinzuzufügen. Wenn die Zeit abgelaufen ist, entfernt PIM die globale Administratorrolle aus dem globalen Administratorkonto.
   
-PIM verwenden und dabei erheblich verringert die Zeitdauer, die Ihre globalen Administratorkonten anfällig sind für Angriffe auf und Verwenden von böswilligen Benutzern.
+Durch die Verwendung von PIM und diesem Prozess wird der Zeitraum, in dem Ihre globalen Administratorkonten anfällig für Angriffe und die Verwendung durch böswillige Benutzer sind, deutlich reduziert.
   
-Weitere Informationen finden Sie unter [Konfigurieren von Azure AD privilegierten Identitätsmanagement](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+Weitere Informationen finden Sie unter [configure Azure AD privilegEd Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 > [!NOTE]
-> PIM steht mit Azure Active Directory Premium P2, das mit Enterprise-Mobilität + E5 Sicherheit (zur Abstimmung) enthalten ist, oder Sie können einzelne Lizenzen erwerben, für Ihre globalen Administratorkonten. 
+> PIM ist mit Azure Active Directory Premium P2 verfügbar, das in Enterprise Mobility + Security (EMS) E5 enthalten ist, oder Sie können einzelne Lizenzen für Ihre globalen Administratorkonten erwerben. 
   
-### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Sicherheit und Ereignissen (SIEM) Verwaltungssoftware für Office 365-Protokollierung
+### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Security Information and Event Management (SIEM)-Software für Office 365-Protokollierung
 
-SIEM-Software auf einem Server ausführen Führt in Echtzeit Analyse der Sicherheitswarnungen und Ereignisse, die von Anwendungen und Netzwerkhardware erstellt. Damit Ihre SIEM Server Sicherheitshinweise für Office 365 und Ereignisse in der Analyse und Berichtsfunktionen enthalten kann, integrieren Sie diese in Ihrem System SIEM:
+SIEM-Software, die auf einem Server ausgeführt wird, führt eine Echtzeitanalyse von Sicherheitswarnungen und Ereignissen aus, die von Anwendungen und Netzwerkhardware erstellt wurden. Damit Ihr SIEM-Server Office 365-Sicherheitswarnungen und-Ereignisse in seine Analyse-und Berichtfunktionen einbinden kann, integrieren Sie diese in Ihr SIEM-System:
   
 - Azure AD
     
-    Weitere Informationen finden Sie unter [integrieren Protokolle von Azure Ressourcen in Ihre SIEM-Systeme](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
+    Weitere Informationen finden Sie unter [integrieren von Protokollen aus Azure-Ressourcen in Ihre Siem-Systeme](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview).
     
 - Office 365 Cloud App Security
     
-    Weitere Informationen finden Sie unter [Integrieren Ihrer SIEM Server mit Office 365-Cloud-App-Sicherheit](https://support.office.com/article/dd6d2417-49c4-4de6-9294-67fdabbf8532).
+    Weitere Informationen finden Sie unter [integrieren Ihres Siem-Servers in Office 365 Cloud App Security](https://support.office.com/article/dd6d2417-49c4-4de6-9294-67fdabbf8532).
     
 ## <a name="next-step"></a>Nächster Schritt
 
-Finden Sie unter [bewährte Methoden für Office 365-Sicherheit](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
+Weitere Informationen finden Sie unter [bewährte Methoden für die Sicherheit für Office 365](https://support.office.com/article/9295e396-e53d-49b9-ae9b-0b5828cdedc3).
   
 

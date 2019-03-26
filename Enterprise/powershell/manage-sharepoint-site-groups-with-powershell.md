@@ -13,33 +13,33 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Zusammenfassung: Verwenden von Office 365 PowerShell zum Verwalten von SharePoint Online-Websitegruppen.'
-ms.openlocfilehash: 62643cabb2377c07117299dc25314cd515a06791
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Websitegruppen.'
+ms.openlocfilehash: 04df780732913eaaf80d9bca64db5174089ed80b
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897158"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573909"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Verwalten von SharePoint Online-Websitegruppen mit Office 365 PowerShell
 
  **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Websitegruppen.
   
-Obwohl Sie das Office 365 Administrationscenter verwenden können, können Sie auch Office 365 PowerShell zum Verwalten von Ihrer SharePoint Online-Website verwenden.
+Obwohl Sie das Microsoft 365 Admin Center verwenden können, können Sie auch Office 365 PowerShell verwenden, um Ihre SharePoint Online-Websitegruppen zu verwalten.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Die Verfahren in diesem Artikel müssen Sie mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online-PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Bei den Verfahren in diesem Artikel müssen Sie eine Verbindung mit SharePoint Online herstellen. Weitere Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
-## <a name="view-sharepoint-online-with-office-365-powershell"></a>Ansicht SharePoint Online mit Office 365 PowerShell
+## <a name="view-sharepoint-online-with-office-365-powershell"></a>Anzeigen von SharePoint Online mit Office 365 PowerShell
 
-Die SharePoint Online-Verwaltungskonsole enthält einige leicht zu bedienende-Methoden zum Verwalten von Websitegruppen. Nehmen wir beispielsweise an, die Sie an die Gruppen und Mitglieder der Gruppe suchen möchten die `https://litwareinc.sharepoint.com/sites/finance` Website. Nachfolgend finden Sie müssen Aufgaben:
+Das SharePoint Online Admin Center verfügt über einige benutzerfreundliche Methoden zum Verwalten von Websitegruppen. Angenommen, Sie möchten die Gruppen und die Gruppenmitglieder für die `https://litwareinc.sharepoint.com/sites/finance` Website ansehen. Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie im Office 365 Admin Center auf **Ressourcen** > **Websites**, und klicken Sie dann auf die URL der Website.
+1. klicken sie im Microsoft 365 admin center auf **ressourcen** > **websites**, und klicken sie dann auf die URL der website.
 2. Klicken Sie im Dialogfeld -Websitesammlung auf **Zu dieser Website wechseln**.
 3. Klicken Sie auf dieser Seite auf das Symbol **Einstellungen** (oben rechts auf der Seite) und dann auf **Websiteeinstellungen**:<br/>
-![SharePoint Online-websiteeinstellungen](media/spo-site-settings.png)<br/>
-4. Klicken Sie auf der Seite Websiteeinstellungen unter **Benutzer und Berechtigungen**auf **Berechtigungen für Websites** .
+![SharePoint Online-Websiteeinstellungen](media/spo-site-settings.png)<br/>
+4. Klicken Sie auf der Seite Websiteeinstellungen**Benutzer und Berechtigungen** auf **Websiteberechtigungen**.
 
 Wiederholen Sie dieses Verfahren für die nächste gewünschte Website.
 
@@ -56,10 +56,10 @@ foreach ($y in $x)
     }
 ```
 
-Es gibt zwei Methoden zum Ausführen dieses Befehls in der Befehlszeile SharePoint Online-Verwaltungsshell festgelegt:
+Es gibt zwei Möglichkeiten zum Ausführen dieses Befehlssatzes in der SharePoint Online-Verwaltungsshell-Eingabeaufforderung:
 
-- Kopieren Sie die Befehle in Notepad (oder einem anderen Texteditor), ändern Sie den Wert der Variablen **$siteURL** , wählen Sie die Befehle aus, und fügen Sie sie in der Befehlszeile SharePoint Online-Verwaltungsshell. Wenn Sie dies tun, PowerShell stoppt bei einer **>>** Aufforderung. Drücken Sie die EINGABETASTE, um den **Foreach** -Befehl ausführen.<br/>
-- Kopieren Sie die Befehle in Notepad (oder einem anderen Texteditor), ändern Sie den Wert der Variablen **$siteURL** , und speichern Sie diese Datei mit dem Namen und die Erweiterung. ps1 in einem geeigneten Ordner. Führen Sie im nächsten Schritt das Skript über die Befehlszeile SharePoint Online-Verwaltungsshell durch Angeben des Namens Pfad und den Dateinamen. Hier ist ein Beispielbefehl:
+- Kopieren Sie die Befehle in Notepad (oder einen anderen Text-Editor), ändern Sie den Wert der **$SiteUrl** -Variablen, wählen Sie die Befehle aus, und fügen Sie Sie in die SharePoint Online-Verwaltungsshell-Eingabeaufforderung ein. Wenn Sie dies tun, wird PowerShell an einer **>>** Ansage angehalten. Drücken Sie die EINGABETASTE, um den **Foreach**-Befehl auszuführen.<br/>
+- Kopieren Sie die Befehle in Editor (oder einen anderen Text-Editor), ändern Sie den Wert der **$siteURL**Variable, und speichern Sie dann diese Textdatei mit einem Namen und der Erweiterung „.ps1“ in einem geeigneten Ordner. Führen Sie als nächstes das Skript über die Eingabeaufforderung der SharePoint Online-Verwaltungsshell aus, indem Sie den Pfad und den Dateinamen angeben. Nachfolgend sehen Sie einen Beispielbefehl:
 
 ```
 C:\Scripts\SiteGroupsAndUsers.ps1
@@ -69,9 +69,9 @@ In beiden Fällen wird Folgendes angezeigt.
 
 ![SharePoint Online-Websitegruppen](media/SPO-site-groups.png)
 
-Dies sind alle Gruppen, die für die Website erstellt wurden `https://litwareinc.sharepoint.com/sites/finance`, und alle Benutzer, die diesen Gruppen zugewiesen. Gruppennamen sind separate Gruppennamen in ihrer Elemente Gelb, die Sie unterstützen.
+Hierbei handelt es sich um alle Gruppen, die für die Website `https://litwareinc.sharepoint.com/sites/finance`erstellt wurden, und alle Benutzer, die diesen Gruppen zugewiesen sind. Die Gruppennamen werden in gelb dargestellt, damit Sie die Gruppennamen von den Mitgliedern leicht unterscheiden können.
 
-Als weiteres Beispiel ist hier ein Befehl, der die Gruppen und alle Gruppenmitgliedschaften für alle Ihre SharePoint Online-Websites aufgeführt sind.
+Ein weiteres Beispiel ist ein Befehlssatz, in dem die Gruppen und alle Gruppenmitgliedschaften für alle SharePoint Online-Websites aufgelistet werden.
 
 ```
 $x = Get-SPOSite

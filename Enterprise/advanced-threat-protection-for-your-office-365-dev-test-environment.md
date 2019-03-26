@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Advanced Threat Protection in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 07411600db11c8eea825c0ef5b82ea1206d20e11
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9870f666a979d00ce6621e9459a1f9ad236f9799
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22914960"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573829"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung
 
@@ -74,9 +74,9 @@ In dieser Phase führen Sie vor, dass vor dem Konfigurieren von ATP-Richtlinien 
     
 13. Markieren Sie im Textbereich den Text **diese Website**, und klicken Sie auf der Symbolleiste auf das Linksymbol.
     
-14. Geben Sie unter **URL** **http://www.spamlink.contoso.com/**, klicken Sie auf **OK**, und klicken Sie dann auf **Senden**.
+14. Geben Sie in **URL** den Text **http://www.spamlink.contoso.com/** ein, klicken Sie auf **OK** und dann auf **Senden**.
     
-15. Öffnen eine separate Instanz von Internet Explorer im Modus für private durchsuchen, wechseln Sie Office 365-Portal ([https://portal.office.com](https://portal.office.com)), und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
+15. Öffnen Sie im privaten Modus eine separate Instanz von Internet Explorer, wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich mit ihrem globalen Administratorkonto bei ihrem Office 365-Testabonnement an.
     
 16. Klicken Sie auf der Hauptportalseite auf die Kachel „apps" und dann auf **E-Mail**.
     

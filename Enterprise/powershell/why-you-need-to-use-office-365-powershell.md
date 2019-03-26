@@ -12,22 +12,22 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: 'Zusammenfassung: Verstehen Sie, warum Sie aus Effizienzgründen oder aus Notwendigkeit Office 365 PowerShell zum Verwalten von Office 365 verwenden müssen.'
-ms.openlocfilehash: 32110b56f1123e404b1eb7996a9af5d244874377
-ms.sourcegitcommit: ae4b3c1e2859991f3b94690f2eb3b2838d7db2d4
+ms.openlocfilehash: f63f1a2361b225eed5d771b06b07f00bba26c392
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30538993"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574099"
 ---
 # <a name="why-you-need-to-use-office-365-powershell"></a>Warum Sie Office 365 PowerShell verwenden müssen
 
  **Zusammenfassung:** Verstehen Sie, warum Sie aus Effizienzgründen oder aus Notwendigkeit Office 365 PowerShell zum Verwalten von Office 365 verwenden müssen.
   
-Mit dem Office 365 Admin Center können Sie nicht nur Ihre Office 365-Benutzerkonten und -lizenzen, sondern auch Ihre Office 365-Serverprodukte verwalten: Exchange, Skype for Business Online und SharePoint Online. Sie können diese Elemente jedoch auch mit Office 365 PowerShell-Befehlen verwalten, die eine Befehlszeilen- und Skriptsprachenumgebung für Geschwindigkeit, Automatisierung und zusätzliche Funktionen nutzen.
+Mit dem Microsoft 365 Admin Center können Sie nicht nur Ihre Office 365-Benutzerkonten und-Lizenzen verwalten, sondern auch Ihre Office 365-Serverprodukte verwalten: Exchange, Skype for Business Online und SharePoint Online. Sie können diese Elemente jedoch auch mit Office 365 PowerShell-Befehlen verwalten, die eine Befehlszeilen- und Skriptsprachenumgebung für Geschwindigkeit, Automatisierung und zusätzliche Funktionen nutzen.
   
 In diesem Artikel werden die Möglichkeiten erläutert, die Sie bei der Verwendung von Office 365 PowerShell zum Verwalten von Office 365 haben.
   
-- Office 365 PowerShell kann zusätzliche Informationen aufdecken, die Sie mit dem Office 365 Admin Center nicht sehen können.
+- Office 365 PowerShell kann zusätzliche Informationen aufdecken, die Sie mit dem Microsoft 365 Admin Center nicht sehen können.
     
 - Office 365 weist Features auf, die Sie nur mithilfe von Office 365 PowerShell konfigurieren können
     
@@ -45,9 +45,9 @@ Bevor Sie beginnen, müssen Sie verstehen, dass es sich bei Office 365 PowerShel
 Get-Mailbox
 ```
 
-Das Abrufen der Liste von Postfächern kann mithilfe des Office 365 Admin Center auch problemlos ausgeführt werden, das Zählen der Anzahl von Elementen in allen Listen für alle Standorte für alle Web-Apps ist jedoch nicht so einfach.
+Das erhalten der Liste der Postfächer kann auch problemlos mit dem Microsoft 365 Admin Center erfolgen, aber die Anzahl der Elemente in allen Listen für alle Websites für alle Ihre Web-Apps kann nicht einfach erledigt werden.
   
-Beachten Sie, dass Office 365 PowerShell so konzipiert ist, dass die Verwaltung von Office 365 verbessert wird. Es soll nicht als Ersatz für das Office 365 Admin Center dienen. Als Office 365-Administrator müssen Sie sich zumindest mit der Verwendung von Office 365 PowerShell vertraut machen, da es einige Konfigurationsvorgehensweisen gibt, die nur mit Office 365 PowerShell-Befehlen ausgeführt werden können. In diesen Fällen müssen Sie Folgendes verstehen:
+Beachten Sie, dass Office 365 PowerShell so konzipiert wurde, dass Sie Ihre Möglichkeiten zur Verwaltung von Office 365 erweitern und verbessern und nicht das Microsoft 365 Admin Center ersetzen kann. Als Office 365-Administrator müssen Sie sich zumindest komfortabel mit der Verwendung von Office 365 PowerShell befassen, da es einige Konfigurationsverfahren gibt, die nur mit Office 365 PowerShell-Befehlen ausgeführt werden können. In diesen Fällen müssen Sie Folgendes verstehen:
   
 - Installation der Office 365 PowerShell-Module (nur einmal pro Administratorcomputer).
     
@@ -59,13 +59,13 @@ Beachten Sie, dass Office 365 PowerShell so konzipiert ist, dass die Verwaltung 
     
 Nachdem Sie diese grundlegenden Fähigkeiten erlernt haben, müssen Sie Ihre Postfachbenutzer nicht mit dem Befehl **Get-Mailbox** auflisten, und Sie müssen nicht verstehen, wie ein neuer Befehl wie der vorherige erstellt wird, um alle Elemente in allen Listen für alle Standorte für alle Web-Apps zu zählen. Microsoft und die Community von Office 365-Administratoren können Ihnen bei Bedarf dabei behilflich sein.
   
-## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-office-365-admin-center"></a>Office 365 PowerShell kann zusätzliche Informationen aufdecken, die Sie mit dem Office 365 Admin Center nicht sehen können
+## <a name="office-365-powershell-can-reveal-additional-information-that-you-cannot-see-with-the-microsoft-365-admin-center"></a>Office 365 PowerShell kann zusätzliche Informationen aufdecken, die Sie mit dem Microsoft 365 Admin Center nicht sehen können.
 
-Im Office 365 Admin Center werden zahlreiche hilfreiche Informationen angezeigt, dies bedeutet aber nicht, dass alle möglichen Informationen angezeigt werden, die Office 365 zu Benutzern, Lizenzen, Postfächern und Standorten speichert. Nachfolgend sehen Sie ein Beispiel für **Benutzer und Gruppen** im Office 365 Admin Center:
+Das Microsoft 365 Admin Center zeigt viele nützliche Informationen an, aber das bedeutet nicht, dass alle möglichen Informationen angezeigt werden, die Office 365 auf Benutzern, Lizenzen, Postfächern und Websites speichert. Im folgenden finden Sie ein Beispiel für **Benutzer und Gruppen** im Microsoft 365 Admin Center:
   
-![Beispiel für die Anzeige von Benutzern und Gruppen im Office 365 Admin Center](media/o365-powershell-users-and-groups.png)
+![Beispiel für die Anzeige von Benutzern und Gruppen im Microsoft 365 Admin Center.](media/o365-powershell-users-and-groups.png)
   
-Hier werden für zahlreiche Zwecke die benötigten Informationen angezeigt. Es kann jedoch vorkommen, dass Sie mehr benötigen. Beispielsweise hängen die Office 365-Lizenzierung (und die für einen Benutzer verfügbaren Office 365-Features) teilweise vom geografischen Standort dieses Benutzers ab. Die Richtlinien und Features, die Sie auf einen Benutzer erweitern können, der in den USA lebt, sind möglicherweise nicht die gleichen Richtlinien und Features, die Sie auf einen Benutzer erweitern können der in Indien oder in Belgien lebt. Sie können das Office 365 Admin Center verwenden, um den geografischen Standort eines Benutzers mit den folgenden Schritten zu bestimmen:
+Hier werden für zahlreiche Zwecke die benötigten Informationen angezeigt. Es kann jedoch vorkommen, dass Sie mehr benötigen. Beispielsweise hängen die Office 365-Lizenzierung (und die für einen Benutzer verfügbaren Office 365-Features) teilweise vom geografischen Standort dieses Benutzers ab. Die Richtlinien und Features, die Sie auf einen Benutzer erweitern können, der in den USA lebt, sind möglicherweise nicht die gleichen Richtlinien und Features, die Sie auf einen Benutzer erweitern können der in Indien oder in Belgien lebt. Mit den folgenden Schritten können Sie das Microsoft 365 Admin Center verwenden, um den geografischen Standort eines Benutzers zu ermitteln:
   
 1. Doppelklicken Sie auf den **Anzeigenamen** des Benutzers.
     
@@ -75,7 +75,7 @@ Hier werden für zahlreiche Zwecke die benötigten Informationen angezeigt. Es k
     
 4. Führen Sie einen Bildlauf nach unten bis zu **Land oder Region** aus.
     
-     ![Beispiel für die Regionsinformationen für einen Benutzer im Office 365 Admin Center](media/o365-powershell-usage-location.png)
+     ![Beispiel für die Regionsinformationen für einen Benutzer im Microsoft 365 Admin Center.](media/o365-powershell-usage-location.png)
   
 5. Notieren Sie den Anzeigenamen des Benutzers auf einem Blatt Papier, oder kopieren ihn in Editor. 
     
@@ -166,7 +166,7 @@ Die Interpretation dieses Satzes von Office 365 PowerShell-Befehlen ist:
   
 ## <a name="office-365-has-features-that-you-can-only-configure-with-office-365-powershell"></a>Office 365 weist Features auf, die Sie nur mithilfe von Office 365 PowerShell konfigurieren können
 
-Das Office 365 Admin Centersoll Zugriff auf die häufigsten oder wichtigsten administrativen Aufgaben für die meisten Personen liefern. In anderen Worten: Das Office 365 Admin Center wurde so entwickelt, dass der typische Administrator das Tool verwenden könnte, um die gängigsten Verwaltungsaufgaben auszuführen. Definitionsgemäß bedeutet das, dass es Aufgaben gibt, die nicht mithilfe des Office 365 Admin Center ausgeführt werden können.
+Das Microsoft 365 Admin Center bietet Zugriff auf die gängigsten oder bedeutungsvollsten administrativen Aufgaben, die für die meisten Benutzer gelten. Mit anderen Worten: das Microsoft 365 Admin Center wurde so konzipiert, dass der typische Administrator das Tool verwenden kann, um die gängigsten Verwaltungsaufgaben auszuführen. Mit dieser Definition ist dies der Fall, dass es einige Aufgaben gibt, die nicht mit dem Microsoft 365 Admin Center abgeschlossen werden können.
   
 Das Skype for Business Online Admin Center bietet beispielsweise ein paar Optionen zum Erstellen benutzerdefinierter Besprechungseinladungen:
   
@@ -202,11 +202,11 @@ Dies ist nur ein Beispiel. Es gibt weitere Beispiele, deshalb müssen Sie, als O
   
 ## <a name="office-365-powershell-is-great-at-carrying-out-bulk-operations"></a>Office 365 PowerShell überzeugt beim Ausführen von Massenoperationen
 
-In der Vergangenheit haben grafische Benutzeroberflächen wie das Office 365 Admin Center beste Leistungen erbracht, wenn ein einzelner Vorgang durchgeführt werden musste. Wenn Sie beispielsweise ein Benutzerkonto deaktivieren müssen, können Sie das Office 365 Admin Center verwenden, um ein Kontrollkästchen schnell zu suchen und zu deaktivieren. Dies kann einfacher sein als einen ähnlichen Vorgang in Office 365 PowerShell durchzuführen.
+Historisch gesehen sind visuelle Schnittstellen wie das Microsoft 365 Admin Center besonders wertvoll, wenn Sie einen einzelnen Vorgang ausführen müssen. Wenn Sie beispielsweise ein Benutzerkonto deaktivieren müssen, können Sie das Microsoft 365 Admin Center verwenden, um ein Kontrollkästchen schnell zu suchen und zu deaktivieren. Dies kann einfacher sein als einen ähnlichen Vorgang in Office 365 PowerShell durchzuführen.
   
-Wenn Sie jedoch viele Dinge oder einige ausgewählte Dinge innerhalb eines größeren Satzes ändern müssen, ist das Office 365 Admin Center jedoch möglicherweise nicht die beste Wahl. Wenn Sie beispielsweise das Präfix von Tausenden von Telefonnummern ändern oder den Benutzer Ken Myer von allen SharePoint Online-Standorten entfernen müssten, wie würden Sie dies im Office 365 Admin Center?
+Wenn Sie jedoch viele Dinge oder einige ausgewählte Elemente in einer großen Reihe anderer Dinge ändern müssen, ist das Microsoft 365 Admin Center möglicherweise nicht die beste Zeit. Wenn Sie beispielsweise das Präfix für Tausende von Telefonnummern ändern oder einen bestimmten Benutzer, Ken Myers, von allen SharePoint Online-Websites entfernen müssen, wie würden Sie das im Microsoft 365 Admin Center tun?
   
-Beim zweiten Beispiel haben Sie mehrere Hundert SharePoint Online-Standorte und wissen nicht einmal, bei welchen Ken Meyer ein Mitglied ist. Dies bedeutet, dass Sie beim Office 365 Admin Center beginnen müssten und dann die folgende Vorgehensweise für jeden Standort ausführen:
+Beim zweiten Beispiel haben Sie mehrere Hundert SharePoint Online-Standorte und wissen nicht einmal, bei welchen Ken Meyer ein Mitglied ist. Das führt dazu, dass Sie im Microsoft 365 Admin Center starten müssen und dann dieses Verfahren für jede Website ausführen:
   
 1. Klicken Sie auf die **URL** des Standorts.
     
@@ -236,7 +236,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!TIP]
 >  Die Interpretation dieses Office 365 PowerShell-Befehls ist: Alle SharePoint-Websites im aktuellen Office 365-Abonnement abrufen (**Get-SPOSite**) und Ken Meyer für jede Website aus der Liste der Benutzer mit Zugriffsberechtigung entfernen (**ForEach {Remove-SPOUser -Site $\_.Url -LoginName "kenmyer@litwareinc.com"}**)
   
-Da Office 365 angewiesen wird, Ken Meyer von jedem Standort, einschließlich derer, in denen er keinen Zugriff hat, zu entfernen, werden für die Standorte, an denen er derzeit nicht über Zugriff verfügt, Fehlermeldungen angezeigt. Wir können eine zusätzliche Bedingung für diesen Befehl verwenden, um Ken Meyer nur von den Standorten zu entfernen, an denen er in der Anmeldeliste vorhanden ist, die aufgeführten Fehler richten jedoch an den Standorten selbst keinen Schaden an. Die Ausführung dieses Befehls dauert für die zahlreichen Standorte möglicherweise ein paar Minuten und nicht ein paar Stunden, wie im Falle des Office 365 Admin Center.
+Da Office 365 angewiesen wird, Ken Meyer von jedem Standort, einschließlich derer, in denen er keinen Zugriff hat, zu entfernen, werden für die Standorte, an denen er derzeit nicht über Zugriff verfügt, Fehlermeldungen angezeigt. Wir können eine zusätzliche Bedingung für diesen Befehl verwenden, um Ken Meyer nur von den Standorten zu entfernen, an denen er in der Anmeldeliste vorhanden ist, die aufgeführten Fehler richten jedoch an den Standorten selbst keinen Schaden an. Dieser Befehl kann einige Minuten dauern, bis Hunderte von Websites ausgeführt werden, statt die Arbeitszeiten im Microsoft 365 Admin Center zu überschreiten.
   
 Nachfolgend finden Sie ein weiteres Beispiel für eine Massenoperation. Verwenden Sie diesen Befehl, um Bonnie Kearney, einen neuen SharePoint-Administrator, zu allen Standorten in der Organisation hinzuzufügen:
   
@@ -249,9 +249,9 @@ Get-SPOSite | ForEach {Add-SPOUser -Site $_.Url -LoginName "bkearney@litwareinc.
   
 ## <a name="office-365-powershell-is-great-at-filtering-data"></a>Office 365 PowerShell eignet sich bestens zum Filtern von Daten
 
-Das Office 365 Admin Center stellt verschiedene Möglichkeiten zum Filtern Ihrer Daten bereit, um eine gezielten Teilmenge an Informationen zu ermitteln. Mit Exchange können Sie beispielsweise leicht nach praktisch jeder Eigenschaft eines Benutzerpostfachs filtern. Nachfolgend sehen Sie beispielsweise die Liste der Postfächer aller Benutzer, die in Bloomington wohnen:
+Das Microsoft 365 Admin Center bietet verschiedene Möglichkeiten zum Filtern Ihrer Daten, um eine gezielte Teilmenge von Informationen schnell und einfach zu finden. Mit Exchange können Sie beispielsweise leicht nach praktisch jeder Eigenschaft eines Benutzerpostfachs filtern. Nachfolgend sehen Sie beispielsweise die Liste der Postfächer aller Benutzer, die in Bloomington wohnen:
   
-![Beispiel für eine erweiterte Suche im Office 365 Admin Center für die Liste der Postfächer für alle Benutzer, die in der Stadt Bloomington leben.](media/o365-powershell-advanced-search.png)
+![Beispiel für eine erweiterte Suche im Microsoft 365 Admin Center für die Liste der Postfächer für alle Benutzer, die in der Stadt Bloomington Leben.](media/o365-powershell-advanced-search.png)
   
 Im Exchange Admin Center können Sie auch Filterkriterien kombinieren. Sie können beispielsweise nach den Postfächern aller in Bloomington lebenden Personen suchen, die zudem in der Finanzabteilung arbeiten. 
   
@@ -307,7 +307,7 @@ Janet Schorr                              Bellevue
   
 Sie können auch Platzhalterzeichen in Ihren Office 365 PowerShell-Filtern verwenden, um eine Übereinstimmung mit einem Teil eines Namens zu suchen. Angenommen, Sie suchen nach einem Benutzerkonto, und Sie können sich nur daran erinnern, dass der Nachname Anderson oder vielleicht Henderson oder vielleicht aber auch Jorgenson war.
   
-Sie könnten diesen Benutzer im Office 365 Admin Center suchen, indem Sie das Suchtool verwenden und drei unterschiedliche Suchen ausführen:
+Sie können diesen Benutzer im Microsoft 365 Admin Center nachverfolgen, indem Sie das Such Tool verwenden und drei verschiedene Suchvorgänge durchführen:
   
 - Eine für  *Anderson* 
     
@@ -326,11 +326,11 @@ Get-User -Filter '{LastName -like "*son"}'
   
 ## <a name="office-365-powershell-makes-it-easy-to-print-or-save-data"></a>Office 365 PowerShell erleichtert das Drucken oder Speichern von Daten
 
-Im Office 365 Admin Center können Sie Datenlisten anzeigen. Nachfolgend sehen Sie ein Beispiel im Skype for Business Online Admin Center, bei dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.
+Mit dem Microsoft 365 Admin Center können Sie Datenlisten anzeigen. Nachfolgend sehen Sie ein Beispiel im Skype for Business Online Admin Center, bei dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.
   
 ![Beispiel für das Skype for Business Online Admin Center, in dem eine Liste von Benutzern angezeigt wird, die für Skype for Business Online aktiviert wurden.](media/o365-powershell-lync-users.png)
   
-Um diese Informationen in einer Datei zu speichern, müssen Sie sie kopieren und in ein Dokument oder in Excel einfügen. Für das Kopieren ist auf jeden Fall eine zusätzliche Formatierung erforderlich. Außerdem bietet das Office 365 Admin Center keine Möglichkeit, die angezeigte Liste direkt zu drucken.
+Um diese Informationen in einer Datei zu speichern, müssen Sie sie kopieren und in ein Dokument oder in Excel einfügen. Für das Kopieren ist auf jeden Fall eine zusätzliche Formatierung erforderlich. Darüber hinaus bietet das Microsoft 365 Admin Center keine Möglichkeit, die angezeigte Liste direkt zu drucken.
   
 Glücklicherweise können Sie Office 365 PowerShell verwenden, um die Liste nicht nur anzuzeigen, sondern sie auch in einer Datei zu speichern, damit sie problemlos in Excel importiert werden kann. Nachfolgend sehen Sie einen Beispielbefehl, um Skype for Business Online-Benutzerdaten in einer CSV-Datei (durch Trennzeichen getrennte Datei) zu speichern, die einfach als Tabelle in ein Excel-Arbeitsblatt importiert werden kann.
   
@@ -378,7 +378,7 @@ Angenommen, Sie möchten einen Bericht erstellen, in dem die folgenden Informati
     
 - Ob der Benutzer für Skype for Business Online aktiviert ist
     
-Das Office 365 Admin Center kann derzeit nicht verwendet werde, um einen solchen Bericht zu erstellen. Stattdessen müssen Sie ein separates Dokument zum Speichern der Informationen erstellen, z. B. eine Excel-Arbeitsmappe, und alle Benutzernamen und Lizenzierungsinformationen aus dem Office 365 Admin Center abrufen; anschließend können Sie die Postfachinformationen aus dem Exchange Admin Center abrufen, danach die Skype for Business Online-Informationen aus dem Skype for Business Online Admin Center abrufen und diese Informationen abschließend sortieren und kombinieren.
+Sie können derzeit nicht das Microsoft 365 Admin Center verwenden, um einen solchen Bericht problemlos zu erstellen. Stattdessen müssen Sie ein separates Dokument erstellen, um die Informationen wie ein Excel-Arbeitsblatt zu speichern und alle Benutzernamen und Lizenzierungsinformationen aus dem Microsoft 365 Admin Center abzurufen, Postfachinformationen aus der Exchange-Verwaltungskonsole abzurufen, Skype for Business Online-Informationen aus dem Skype for Business Online Admin Center, und Sortieren und kombinieren Sie diese Informationen.
   
 Die Alternative besteht darin, ein Office 365 PowerShell-Skript zu verwenden, das diesen Bericht für Sie kompiliert.
   

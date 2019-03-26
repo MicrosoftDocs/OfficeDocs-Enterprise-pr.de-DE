@@ -16,18 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Zusammenfassung: Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.'
-ms.openlocfilehash: 69526f8bf0ae0b6cc7509653cfaa72581e10dbfe
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: ff8533cc6f1a5a34335f6ea469f7a8ec0a6be4da
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897438"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573959"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen
 
  **Zusammenfassung:** Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.
   
-Die Azure Information Protection-Clients können ein Dokument klassifizieren, bevor Sie ihn in einen Ordner SharePoint Online in Office 365 hochladen. Mit den Anweisungen in diesem Artikel installieren Sie den Client Azure Information Protection und veranschaulichen der Datenklassifikation. Weitere Informationen finden Sie unter [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Mit dem Azure Information Protection-Client können Sie ein Dokument klassifizieren, bevor Sie es in einen SharePoint Online-Ordner in Office 365 hochladen. Mithilfe der Anleitungen in diesem Artikel können Sie den Azure Information Protection-Client installieren und die Datenklassifizierung veranschaulichen. Weitere Informationen finden Sie unter [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
 > Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
@@ -44,7 +44,7 @@ Melden Sie sich zunächst für ein Azure Information Protection-Testabonnement a
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Anmelden für ein Azure Information Protection-Testabonnement
 
-1. Wechseln Sie in Internet Explorer oder Ihren Browser zu [http://portal.office.com](http://portal.office.com) und melden Sie sich mit Ihrem Office 365 globale Administratorkonto ein.
+1. Wechseln Sie in Internet Explorer oder in Ihrem Browser [http://admin.microsoft.com](http://admin.microsoft.com) zu, und melden Sie sich mit ihrem globalen Office 365-Administratorkonto an.
     
 2. Klicken Sie auf die Registerkarte **Microsoft Office Home** auf **Admin**.
     
@@ -58,7 +58,7 @@ Melden Sie sich zunächst für ein Azure Information Protection-Testabonnement a
     
 Im nächsten Schritt können Sie die Azure Information Protection-Lizenz für alle Benutzerkonten aktivieren.
   
-1. 	Klicken Sie auf der Registerkarte Office 365 Admin Center auf **Benutzer**.
+1. Klicken Sie auf der Registerkarte Microsoft 365 Admin Center auf **Benutzer**.
     
 2.   Wählen Sie in der Liste der Benutzerkonten Ihr globales Administratorkonto, und klicken Sie dann auf **earbeiten** für **Produktlizenzen**.
     
@@ -78,11 +78,11 @@ In dieser Phase veranschaulichen Sie die Datenklassifizierung mit dem Azure Info
   
 Wenn Sie die Unternehmenssimulation in der Office 365- Entwicklungs-/-Testumgebung verwenden, müssen Sie zuerst Office 2016 auf CLIENT1 installieren.
   
-1. Verwenden Sie den Browser, und wechseln Sie zu der [Azure-Portal](http://portal.azure.com).
+1. Verwenden Sie Ihren Browser, und wechseln Sie zum [Azure-Portal](http://portal.azure.com).
     
 2. 	Klicken Sie auf **Ressourcengruppen >** [Ihr Ressourcengruppenname] **> CLIENT1 > Verbinden**.
     
-3. Führen Sie auf CLIENT1 Internet Explorer, fahren Sie mit der Office-Portal unter [http://portal.office.com](http://portal.office.com), und melden Sie sich mit den User5 Kontonamen und das Kennwort.
+3. Führen Sie in CLIENT1 Internet Explorer aus, wechseln Sie zum Office- [http://admin.microsoft.com](http://admin.microsoft.com)Portal unter, und melden Sie sich mit dem Namen-Kontonamen und-Kennwort an.
     
 4. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf **Office 2016 installieren**.
     
@@ -90,7 +90,7 @@ Wenn Sie die Unternehmenssimulation in der Office 365- Entwicklungs-/-Testumgebu
     
 Als Nächstes installieren Sie den Azure Information Protection-Client.
   
-1. Wechseln Sie in Ihrem Browser oder Internet Explorer um die [Microsoft Azure Information Protection-Downloadseite](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Wechseln Sie in Ihrem Browser oder Internet Explorer zur [Microsoft Azure Information Protection-Download Seite](https://www.microsoft.com/download/details.aspx?id=53018).
     
   - Wenn Sie die einfache Version der Office 365-Entwicklungs-/Testumgebung verwenden, nutzen Sie den Browser auf dem lokalen Computer.
     
@@ -126,7 +126,7 @@ Als Nächstes veranschaulichen Sie die Klassifizierung von Dokumenten.
     
 9. Klicken Sie in der Taskleiste auf **Datei-Explorer**, und öffnen Sie dann den **Dokumente**-Ordner.
     
-    Beachten Sie die verschiedenen Dateigröße der Dokumente **BeforeAIP** und **AfterAIP** . Das Dokument AfterAIP ist größer, da er die Klassifizierungsinformationen besitzt.
+    Beachten Sie die verschiedenen Dateigrößen der Dokumente **VorAIP** und **NachAIP**. Das Nachaip-Dokument ist größer, da es über die Klassifizierungsinformationen verfügt.
     
 Im nächsten Schritt erlauben Sie jedem, auf die Websitesammlung „Support“ zuzugreifen.
   
@@ -136,13 +136,13 @@ Im nächsten Schritt erlauben Sie jedem, auf die Websitesammlung „Support“ z
     
 3. Klicken Sie in der oberen rechten Ecke auf das **Einstellungen**-Symbol, und klicken Sie dann auf **Freigegeben für**.
     
-4. **Freigeben "Support Site Collection"** klicken Sie auf **Erweitert**.
+4. Klicken Sie unter **Share ' Support Site Collection '** auf **erweitert**.
     
 5. Klicken Sie in der Liste der SharePoint-Gruppen auf **Mitglieder der Websitesammlung „Support“**.
     
 6. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-7. Geben Sie im **"Support Site Collection" Freigeben**, **jeder**, klicken Sie auf **alle Benutzer mit Ausnahme von externen Benutzern**und klicken Sie dann auf **freigeben.**
+7. Geben Sie unter **"Websitesammlung für Support freigeben"** die Einstellung **jeder**ein, klicken Sie auf **jeder außer externen Benutzern**, und klicken Sie dann auf **freigeben.**
     
 8. Schließen Sie die Registerkarte **Benutzer und Gruppen**.
     
@@ -150,9 +150,9 @@ Im nächsten Schritt melden Sie sich mit dem Benutzerkonto von Benutzer 5 an un
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://portal.office.com](http://portal.office.com).
+2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Klicken Sie auf der Seite **Office 365 anmelden** klicken Sie auf den Kontonamen User5, und melden Sie sich bei.
+3. Klicken Sie auf der **Office 365-Anmelde** Seite auf den Namen-Kontonamen, und melden Sie sich an.
     
 4. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf **SharePoint > Websitesammlung „Support“**.
     

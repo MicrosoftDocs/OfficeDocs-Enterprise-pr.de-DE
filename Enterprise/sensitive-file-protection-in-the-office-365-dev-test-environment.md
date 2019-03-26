@@ -15,24 +15,24 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
-description: 'Zusammenfassung: Konfigurieren Sie und veranschaulichen Sie, wie Office 365 Information Rights Management sensiblen Dateien schützt, auch wenn sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden.'
-ms.openlocfilehash: d866c8ef9d81ec3a80c466040dab34de8af2c1de
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+description: 'Zusammenfassung: Konfigurieren und veranschaulichen, wie Office 365 Information Rights Management Ihre vertraulichen Dateien schützt, auch wenn Sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden.'
+ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915700"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574069"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen
 
- **Zusammenfassung:** Konfigurieren Sie und veranschaulichen Sie, wie Office 365 Information Rights Management sensiblen Dateien schützt, auch wenn sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden.
+ **Zusammenfassung:** Konfigurieren und veranschaulichen Sie, wie Office 365 Information Rights Management Ihre vertraulichen Dateien schützt, auch wenn Sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden.
   
 Information Rights Management (IRM) in Office 365 umfasst eine Reihe von Funktionen zum Schutz von Dokumenten, die aus SharePoint Online-Bibliotheken und -Listen heruntergeladen werden. Heruntergeladene Dateien sind verschlüsselt und verfügen über die Berechtigungen zum Öffnen, Kopieren, Speichern und Drucken, welche der SharePoint Online-Bibliothek entsprechen, in der sie gespeichert sind.
   
 Mithilfe der Anleitungen in diesem Artikel können Sie IRM in Office 365 für Dateien aktivieren und testen, die in Ihrem Office 365-Testabonnement möglicherweise vertrauliche Informationen enthalten.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -49,7 +49,7 @@ In dieser Phase demonstrieren Sie, wie jemand ein Dokument von einer Website, di
   
 Sie fügen zuerst drei neue Benutzerkonten für Führungskräfte hinzu und weisen diesen Office 365 E5-Lizenzen zu.
   
-Verwenden Sie die Anweisungen in [Verbindung mit Office 365 PowerShell herstellen](https://technet.microsoft.com/library/dn975125.aspx) , installieren Sie die PowerShell-Module (falls erforderlich) und eine Verbindung herstellen, um das neue Office 365-Abonnement aus:
+Verwenden Sie die Anweisungen unter [Connect to Office 365 PowerShell](https://technet.microsoft.com/library/dn975125.aspx) , um die PowerShell-Module zu installieren (falls erforderlich), und stellen Sie eine Verbindung mit Ihrem neuen Office 365-Abonnement her:
   
 - Ihrem Computer aus (für die einfache Office 365-Entwicklungs-/Testunternehmensumgebung).
     
@@ -92,7 +92,7 @@ Notieren Sie aus der **New-MsolUser**-Befehlsanzeige das Kennwort, das für das 
   
 Im nächsten Schritt erstellen Sie eine private Führungskräftegruppe und fügen dieser die neuen Führungskräftekonten hinzu.
   
-1. Wechseln Sie in Ihrem Browser zur Office-Portal unter [http://portal.office.com](http://portal.office.com) und melden Sie sich Test Office 365-Abonnement mit Ihrer globalen Administratorkonto an.
+1. Wechseln Sie in Ihrem Browser zum Office-Portal unter [http://admin.microsoft.com](http://admin.microsoft.com) , und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
   - Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung in Internet Explorer bzw. in dem von Ihnen bevorzugten Browser, und melden Sie sich von Ihrem lokalen Computer aus an.
     
@@ -108,7 +108,7 @@ Im nächsten Schritt erstellen Sie eine private Führungskräftegruppe und füge
     
 6. Klicken Sie in der Gruppenliste auf **Führungskräfte**.
     
-7. Klicken Sie auf **Bearbeiten der Mitglieder**.
+7. Klicken Sie auf die Option zum Bearbeiten der Mitglieder****.
     
 8. Klicken Sie auf **Mitglieder hinzufügen**. Wählen Sie in der Mitgliederliste die folgenden Benutzerkonten aus:
     
@@ -120,45 +120,45 @@ Im nächsten Schritt erstellen Sie eine private Führungskräftegruppe und füge
     
 9. Klicken Sie auf **Speichern** und dann auf **Schließen**.
     
-10. Schließen Sie die Registerkarte **Office-Verwaltungskonsole** .
+10. Schließen Sie die Registerkarte des Office Admin Centers****.
     
 Im nächsten Schritt erstellen Sie eine Websitesammlung für Führungskräfte und erlauben nur den Mitgliedern der Führungskräftegruppe den Zugriff darauf.
   
 1. Klicken Sie auf die Registerkarte **Microsoft Office Home** auf **Admin**.
     
-2. Klicken Sie auf die Registerkarte **Office Admin Center** auf **Zentriert Admin > SharePoint**.
+2. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin Center > SharePoint**.
     
-3. Klicken Sie auf der Registerkarte **SharePoint Administrationscenter** auf **Neu > Private Websitesammlung**.
+3. Klicken Sie auf der Registerkarte **SharePoint Admin Center** auf **neue > private Websitesammlung**.
     
-4. Im Bereich Auflistung neue Website geben **Führungskräfte** **Titel**, Führungskräfte in das Feld URL Geben Sie den Namen des globalen Administratorkontos in **Administrator**aus, und klicken Sie dann auf **OK**.
+4. Geben Sie im Bereich neue Websitesammlung unter **** **Titel**, Führungskräfte im Feld URL den Namen des globalen Administratorkontos in **Administrator**ein, und klicken Sie dann auf **OK**.
     
-5. Warten Sie, bis die neue Websitesammlung erstellt wurde. Nach Abschluss des Vorgangs, kopieren Sie die URL der neuen Websitesammlung Führungskräfte, und fügen Sie ihn in eine neue Registerkarte Ihres Browsers.
+5. Warten Sie, bis die neue Websitesammlung erstellt wurde. Kopieren Sie nach Abschluss des Vorgangs die URL der neuen Führungskräfte-Websitesammlung, und fügen Sie Sie in eine neue Registerkarte Ihres Browsers ein.
     
 6. Klicken Sie in der oberen rechten Ecke der Websitesammlung **Führungskräfte** auf das Einstellungssymbol, und klicken Sie dann auf **Freigegeben für**.
     
-7. **Freigeben "Executives"** klicken Sie auf **Erweitert**.
+7. Klicken Sie in **share "Führungskräfte"** auf **erweitert**.
     
 8. Klicken Sie in der Liste der SharePoint-Gruppen auf **Mitglieder von „Führungskräfte“**.
     
 9. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-10. Geben Sie im **freigeben "Executives"** **Führungskräfte**, klicken Sie auf die Gruppe **Führungskräfte** und klicken Sie dann auf **Freigeben**.
+10. Geben Sie in **share "** Führungskräfte" den Text **Führungskräfte**ein, klicken Sie auf die Gruppe **Führungskräfte** , und klicken Sie dann auf **Freigeben**.
     
-11. Schließen Sie die Registerkarte **Personen und Gruppen** .
+11. Schließt die Registerkarte **Personen und Gruppen** .
     
 Im nächsten Schritt erlauben Sie allen Gruppenmitgliedern, auf die Websitesammlung „Vertrieb“ zuzugreifen.
   
-1. Kopieren Sie über die Registerkarte **SharePoint Administrationscenter** die URL der Websitesammlung Sales, und fügen Sie ihn in eine neue Registerkarte Ihres Browsers.
+1. Kopieren Sie auf der Registerkarte **SharePoint Admin Center** die URL der websiteSammlung "Vertrieb", und fügen Sie Sie in eine neue Registerkarte Ihres Browsers ein.
     
-2. Klicken Sie in der oberen rechten Ecke klicken Sie auf das einstellungssymbol, und klicken Sie dann auf **freigegeben für**.
+2. Klicken Sie in der oberen rechten Ecke auf das Einstellungssymbol, und klicken Sie dann auf **Freigegeben für**.
     
-3. **Freigeben "Websitesammlung des Vertriebs"** klicken Sie auf **Erweitert**.
+3. Klicken Sie unter **Share ' Sales Site Collection '** auf **erweitert**.
     
 4. Klicken Sie in der Liste der SharePoint-Gruppen auf **Mitglieder der Websitesammlung „Vertrieb“**.
     
 5. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-6. Geben Sie im **freigeben 'Websitesammlung des Vertriebs'** **jeder** **Person mit Ausnahme von externen Benutzern**auf, und klicken Sie dann auf **Freigeben**.
+6. Geben Sie unter **Share ' Sales Site Collection '** **alle**ein, klicken Sie auf **jeder außer externen Benutzern**, und klicken Sie dann auf **Freigeben**.
     
 7. Schließen Sie die **Websitesammlung „Vertrieb“** und die Registerkarten von **SharePoint**.
     
@@ -166,15 +166,15 @@ Als Nächstes melden Sie sich mit einem Führungskräftekonto an und erstellen e
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://portal.office.com](http://portal.office.com).
+2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Klicken Sie auf der Seite **Office 365 anmelden** auf **ein anderes Konto verwenden**.
+3. Klicken Sie auf der **Office 365-Anmeldeseite** auf **Anderes Konto verwenden**.
     
 4. Geben Sie den Kontonamen **CEO** sowie das entsprechende Kennwort ein, und klicken Sie auf **Anmelden**.
     
-5. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung Führungskräfte ( **https://**\<Name der Organisation >**.sharepoint.com/sites/executives**).
+5. geben sie auf einer neuen registerkarte ihres browsers die URL zur websitesammlung "executives" ein ( **https://**\<organization name>**. sharepoint.com/sites/executives**).
     
-6. Klicken Sie auf **Dokumente**, klicken Sie auf **neu,** und klicken Sie dann auf **Word-Dokument**.
+6. Klicken Sie auf **Dokumente**, dann auf **neu** und anschließend auf **Word-Dokument**.
     
 7. Klicken Sie in die Titelleiste, und geben Sie **VertraulicheDaten-VorIRM** ein.
     
@@ -184,13 +184,13 @@ Als Nächstes melden Sie sich mit einem Führungskräftekonto an und erstellen e
     
 Im nächsten Schritt laden Sie eine lokale Kopie des Dokuments „VertraulicheDaten-VorIRM.docx“ herunter und veröffentlichen diese versehentlich in der Websitesammlung „Vertrieb“.
   
-1. Erstellen Sie einen neuen Ordner auf Ihrem lokalen Computer (z. B. C:\\TLGs\\SensitiveDataTestFiles).
+1. Erstellen Sie auf dem lokalen Computer einen neuen Ordner (beispielsweise C:\\TLGs\\SensitiveDataTestFiles).
     
 2. Wählen Sie auf der Registerkarte **Dokumente** in Ihrem Browser das Dokument **VertraulicheDaten-VorIRM.docx** aus, klicken Sie auf die drei Punkte (Ellipse), und klicken Sie dann auf **Herunterladen**.
     
 3. Speichern Sie das Dokument **VertraulicheDaten-VorIRM.docx** in dem Ordner, den Sie in Schritt 1 erstellt haben.
     
-4. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung des Vertriebs ( **https://**\<Name der Organisation >**.sharepoint.com/sites/sales**).
+4. geben sie auf einer neuen registerkarte ihres browsers die URL der websitesammlung "Sales" ( **https://**\<organization name>**. sharepoint.com/sites/sales**) ein.
     
 5. Klicken Sie auf den Ordner **Dokumente** der **Websitesammlung „Vertrieb“**.
     
@@ -204,13 +204,13 @@ Als Nächstes melden Sie sich als Benutzer5 an und versuchen, das Dokument „Ve
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://portal.office.com](http://portal.office.com).
+2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Klicken Sie auf der Seite **Office 365 anmelden** auf **ein anderes Konto verwenden**.
+3. Klicken Sie auf der **Office 365-Anmeldeseite** auf **Anderes Konto verwenden**.
     
 4. Geben Sie den Benutzernamen und das Kennwort von Benutzer 5 ein, und klicken Sie dann auf **Anmelden**.
     
-5. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung des Vertriebs.
+5. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL der Websitesammlung "Vertrieb" ein.
     
 6. Klicken Sie im Ordner **Dokumente** der **Websitesammlung „Vertrieb“** auf das Dokument **VertraulicheDaten-VorIRM.docx**. 
     
@@ -224,7 +224,7 @@ Um Office 365 für die Phasen 3 und 4 vorzubereiten, aktivieren Sie IRM für Sh
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://portal.office.com](http://portal.office.com).
+2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
     
 3. Klicken Sie auf der **Office 365-Anmeldeseite** auf den Namen des globalen Administratorkontos, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     
@@ -242,7 +242,7 @@ In dieser Phase verwenden Sie SharePoint Information Rights Management mit einer
   
 Als Erstes aktivieren und konfigurieren Sie IRM für die Dokumentbibliothek der Websitesammlung „Führungskräfte“.  
   
-1. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung "Executives".
+1. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL der Websitesammlung "Führungskräfte" ein.
     
 2. Klicken Sie auf **Dokumente**.
     
@@ -276,15 +276,15 @@ Im nächsten Schritt fungieren Sie als CEO und laden ein neues Dokument in den D
     
 3. Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie dann auf **Einfügen**.
     
-4. Benennen Sie die neue Datei **SensitiveData-BeforeIRM - Copy.docx** in **SensitiveData AfterIRM.docx**.
+4. Benennen Sie die neue Datei **vertraulichedaten-BeforeIRM-Copy. docx** in **Dokument vertraulichedaten-nachirm. docx**um.
     
 5. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** in Ihrem Browser auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-6. Wechseln Sie zu [http://portal.office.com](http://portal.office.com).
+6. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
     
 7. Klicken Sie auf der **Office 365-Anmeldeseite** auf den Namen des CEO-Kontos, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     
-8. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung "Executives".
+8. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL der Websitesammlung "Führungskräfte" ein.
     
 9. Klicken Sie auf der Seite **Dokumente** auf **Hochladen**, geben Sie das Dokument **VertraulicheDaten-NachIRM.docx** im lokalen Ordner an, und klicken Sie dann auf **Öffnen**.
     
@@ -294,7 +294,7 @@ Im nächsten Schritt fungieren Sie als CEO und laden ein neues Dokument in den D
     
 12. Schließen Sie die Registerkarte der Seite **Dokumente**.
     
-13. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung des Vertriebs.
+13. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL der Websitesammlung "Vertrieb" ein.
     
 14. Klicken Sie auf **Dokumente**.
     
@@ -306,11 +306,11 @@ Als Nächstes fungieren Sie als normaler Benutzer und versuchen, auf das Dokumen
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** in Ihrem Browser auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://portal.office.com](http://portal.office.com).
+2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
     
-3. Klicken Sie auf der Seite **Office 365 anmelden** klicken Sie auf den Kontonamen User5, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
+3. Klicken Sie auf der **Office 365-Anmelde** Seite auf den Namen des Namen-Kontos, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     
-4. Geben Sie auf einer neuen Registerkarte des Browsers die URL der Websitesammlung des Vertriebs.
+4. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL der Websitesammlung "Vertrieb" ein.
     
 5. Klicken Sie auf **Dokumente**.
     

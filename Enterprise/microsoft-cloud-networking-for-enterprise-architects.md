@@ -3,7 +3,7 @@ title: Microsoft-Cloudnetzwerke für Enterprise-Architekten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/28/2018
+ms.date: 03/12/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 13c71689-59a9-4cdf-8175-808a20c1e879
 description: 'Zusammenfassung: Entwickeln Sie Ihr Netzwerk für Microsoft Cloud-Dienste und -Plattformen.'
-ms.openlocfilehash: 4864e92fd9a916c1aa15a8b921b9e64b486486fb
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: 6b224ce2db0d247c553428a2e4bfd6ba475fc89a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123352"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573899"
 ---
 # <a name="microsoft-cloud-networking-for-enterprise-architects"></a>Microsoft-Cloudnetzwerke für Enterprise-Architekten
 
@@ -63,8 +63,6 @@ Lesen Sie die folgenden Abschnitte:
     
     Durchlaufen Sie schrittweise den Entwurfsprozess zum Erstellen eines optimalen virtuellen Azure-Netzwerks (VNet) für das Hosting von serverbasierten IT-Arbeitslasten, einschließlich Subnetzen, Adressräumen, Routing, DNS, Lastenausgleich und der Verbindung zu Ihrem lokalen Netzwerk, anderen VNets und dem Internet.
     
-Eine 30-minütige Zusammenfassung der wichtigsten Punkte dieses Posters finden Sie im Microsoft Virtual Academy-Kurs über das [Optimieren von Netzwerken für Microsoft Cloud-Angebote](https://mva.microsoft.com/de-DE/training-courses/optimize-your-network-for-microsoft-cloud-offerings-17743).
-  
 > [!NOTE]
 > Die folgenden Artikel geben die Version vom **Dezember 2018** des Posters „Microsoft-Cloudnetzwerke für Enterprise-Architekten“ wieder.
   

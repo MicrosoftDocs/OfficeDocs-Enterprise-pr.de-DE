@@ -14,18 +14,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: c93900e07b8b9adbe0f1120eca77019b9dcc1eda
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897508"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573819"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
  **Zusammenfassung:** Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.
   
-Office 365 erweiterte eDiscovery können Sie schnell zu finden und Analysieren der relevanten Informationen über die Daten, die in Office 365, einschließlich e-Mails und Dokumente gespeichert ist. Dies kann große Datenmengen Zeit und Kosten, insbesondere in Situationen Rechtsstreitigkeiten sparen. Weitere Informationen finden Sie unter [Office 365 erweiterte eDiscovery](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
+Mit Office 365 Advanced eDiscovery können Sie wichtige Informationen über die in Office 365 gespeicherten Daten schnell finden und analysieren, einschließlich e-Mails und Dokumente. Auf diese Weise können, insbesondere bei Rechtsstreitigkeiten, enorme Zeit- und Geldmengen gespart werden. Weitere Informationen finden Sie unter [Erweiterte eDisvocery in Office 365](https://support.office.com/article/Office-365-Advanced-eDiscovery-fd53438a-a760-45f6-9df4-861b50161ae4).
   
 Mit den Anweisungen in diesem Artikel erstellen Sie eine kleine Gruppe von Daten für eine fiktive Vertragsstreitigkeit und analysieren diese mit der Erweiterten eDiscovery.
   
@@ -34,26 +34,26 @@ Mit den Anweisungen in diesem Artikel erstellen Sie eine kleine Gruppe von Daten
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
-Wenn Sie erweiterte eDiscovery auf einfache Weise mit den Mindestanforderungen testen möchten, befolgen Sie die Anweisungen in Phase 2 und Phase 3 des [Office 365 Dev/Test Environment](office-365-dev-test-environment.md).
+Wenn Sie Advanced eDiscovery auf einfache Weise mit den Mindestanforderungen testen möchten, befolgen Sie die Anweisungen in Phase 2 und Phase 3 von [Office 365 dev/Test Environment](office-365-dev-test-environment.md).
   
-Wenn Sie erweiterte eDiscovery in einer simulierten Enterprise testen möchten, befolgen Sie die Anweisungen in [DirSync für Ihre Office 365 Dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md).
+Wenn Sie die erweiterte eDiscovery in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Dirsync für Ihre Office 365 dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Testen erweiterter eDiscovery erfordert keinen die simulierten Enterprise-Umgebung, einschließlich einer simulierten Intranet mit dem Internet verbunden und Directory-Synchronisierung für eine Windows Server Active Directory-Gesamtstruktur. Erfolgt hier als eine Option, damit Sie testen und experimentieren in einer Umgebung ausführen können, die eine typische Organisation darstellt. 
+> Für das Testen der Erweiterten eDiscovery ist keine simulierte Unternehmensumgebung erforderlich, die ein simuliertes Intranet, das mit dem Internet verbunden ist, und die Verzeichnissynchronisierung für eine Windows Server AD-Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Tests und experimentieren in einer Umgebung ausführen können, die eine typische Organisation darstellt. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Phase 2: Erstellen von Beispieldaten für die Erweiterte eDiscovery
 
 In diesem Verfahren erstellen Sie E-Mail-Nachrichten, die Sie später in einem erweiterten eDiscovery-Fall analysieren werden.
   
-1. Öffnen Sie Internet Explorer, und melden Sie sich unter [https://outlook.com](https://outlook.com) auf das Outlook-Konto, das Sie in Phase 2 des[Office 365 Dev/Test-Umgebung](office-365-dev-test-environment.md)erstellt haben.
+1. Öffnen Sie Internet Explorer, und melden [https://outlook.com](https://outlook.com) Sie sich bei dem Outlook-Konto an, das Sie in Phase 2 von[Office 365 dev/Test Environment](office-365-dev-test-environment.md)erstellt haben.
     
   - Wenn Sie die einfache Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung von Internet Explorer, und melden Sie sich von Ihrem lokalen Computer aus an.
     
-  - Wenn Sie den simulierten Test-/unternehmensumgebung verwenden, verwenden Sie das Azure-Portal ([https://portal.azure.com](https://portal.azure.com)) zum Verbinden mit dem virtuellen Computer CLIENT1, und melden Sie sich von CLIENT1 aus.
+  - Wenn Sie die simulierte Enterprise-dev/Test-Umgebung verwenden, verwenden Sie[https://portal.azure.com](https://portal.azure.com)das Azure-Portal (), um eine Verbindung mit dem virtuellen Computer Client1 herzustellen, und melden Sie sich dann bei CLIENT1 an.
     
 2. Klicken Sie auf der Registerkarte **Outlook-Mail** auf **Neu**.
     
-3. Geben Sie im Feld **an**die e-Mail-Adresse des Kontos User6 des Test-Abonnement ( **user6 @.** <organization name> **. onmicrosoft.com**).
+3. Geben **Sie unter an**die e-Mail-Adresse des User6-Kontos Ihres Testabonnements ein ( **User6 @.**<organization name> **. onmicrosoft.com**).
     
 4. Geben Sie für den Betreff **Test-E-Mail 1** ein.
     
@@ -75,13 +75,13 @@ In diesem Verfahren erstellen Sie E-Mail-Nachrichten, die Sie später in einem e
     
 13. Geben Sie in den Textbereich **Tailspin vertragliche Unstimmigkeiten** ein, und klicken Sie dann auf **Senden**.
     
-14. Klicken Sie auf das Symbol für Benutzer in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
+14. Klicken Sie oben rechts auf das Benutzersymbol, und klicken Sie dann auf **Abmelden**.
     
-15. Öffnen Sie eine neue Registerkarte, und melden Sie sich bei Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit den Kontonamen und das Kennwort des Kontos User6 des Test-Abonnement.
+15. Öffnen Sie eine neue Registerkarte, und melden Sie sich beim Office[https://www.office.com](https://www.office.com)365-Portal () mit dem Kontonamen und dem Kennwort des User6-Kontos Ihres Testabonnements an.
     
 16. Klicken Sie auf der Registerkarte **Office 365-Portal** auf **E-Mail**.
     
-17. Überprüfen Sie auf der Registerkarte **E-Mail - User6 - Outlook** , User6 alle drei e-Mails von Outlook-e-Mail-Kontos empfangen.
+17. Überprüfen Sie auf der Registerkarte **Mail-User6-Outlook** , ob User6 alle drei e-Mails aus dem Outlook-e-Mail-Konto erhalten hat.
     
 18. Wechseln Sie zurück zu Registerkarte **Office 365-Portal** für User6.
     
@@ -91,7 +91,7 @@ In diesem Verfahren erstellen Sie zwei Word-Dokumente, die Sie später in einem 
   
 1. Klicken Sie auf der Seite **Office** auf **Anmelden**, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos an.
     
-2. Klicken Sie auf eine neue Registerkarte Zugriff auf die URL der Produktion SharePoint-Website: **https://** <fictional organization name> **.sharepoint.com/sites/production**
+2. greifen sie auf einer neuen registerkarte auf die URL ihrer produktions-sharepoint-website zu: **https://** <fictional organization name> **. sharepoint.com/sites/production**
     
 3. Klicken Sie auf der Registerkarte **Produktions-Websitesammlung** unter **Dokumente** auf **Neu > Word-Dokument**.
     
@@ -105,23 +105,23 @@ In diesem Verfahren erstellen Sie zwei Word-Dokumente, die Sie später in einem 
     
 8. Schließen Sie die Registerkarte **Produktions-Websitesammlung**.
     
-## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a>Phase 3: Verwenden Sie erweiterte eDiscovery gemeldet werden, rechtliche
+## <a name="phase-3-use-advanced-ediscovery-for-a-legal-dispute"></a>Phase 3: Verwenden von Advanced eDiscovery für eine Rechtsstreitigkeit
 
-Leider hat Beilegung eines Vertrag zwischen Ihrer Organisation und Tailspin Toys Zeitpunkt des rechtlichen erreicht. In diesem Verfahren erstellen und konfigurieren eine erweiterte eDiscovery-Fall zum Suchen und Analysieren von e-Mails und Dokumente, die den Text "Tailspin Vertrag" enthalten.
+Leider ist es bei einer vertraglichen Streitigkeit zwischen Ihrer Organisation und Tailspin Toys zu einem Gerichtsverfahren gekommen. In diesem Verfahren erstellen und konfigurieren Sie einen erweiterten eDiscovery-Fall, um e-Mails und Dokumente zu suchen und zu analysieren, die den Text "Tailspin Contract" enthalten.
   
 Der Prozess für die Verwendung der erweiterten eDiscovery ist wie folgt:
   
-- Erstellen Sie eine Suche in das Wertpapier &amp; Compliance Center, analysieren Sie die Ergebnisse, und klicken Sie dann die Ergebnisse für erweiterte eDiscovery vorbereiten.
+- Erstellen Sie eine Suche im Security &amp; Compliance Center, analysieren Sie die Ergebnisse, und bereiten Sie die Ergebnisse für die erweiterte eDiscovery vor.
     
 - Erstellen Sie und konfigurieren Sie einen Fall in der erweiterten eDiscovery, und analysieren Sie die Suchergebnisse.
     
-In diesem Verfahren erstellen Sie eine Suche in das Wertpapier &amp; Compliance center für "Tailspin Vertrag", sehen die Ergebnisse, und bereiten Sie die Ergebnisse für erweiterte eDiscovery.
+In diesem Verfahren erstellen Sie eine Suche im Security &amp; Compliance Center für "Tailspin Contract", schauen Sie sich die Ergebnisse an, und bereiten Sie dann die Ergebnisse für Advanced eDiscovery vor.
   
 1. Klicken Sie auf der Registerkarte **Office 365-Portal** auf **Admin**.
     
 2. Klicken Sie im linken Navigationsbereich der Admin Center-Registerkarte auf **Admin Center > Compliance**.
     
-3. Klicken Sie auf die **Sicherheit &amp; Compliance** Registerkarte, klicken Sie auf **Berechtigungen**.
+3. Klicken Sie auf der Registerkarte ** &amp; Sicherheitskonformität** auf **Berechtigungen**.
     
 4. Doppelklicken Sie in der Liste **Berechtigungen** auf **Organisationsverwaltung**.
     
@@ -139,7 +139,7 @@ In diesem Verfahren erstellen Sie eine Suche in das Wertpapier &amp; Compliance 
     
 11. Klicken Sie im Fenster **Rollengruppe** auf **Speichern**.
     
-12. Klicken Sie im linken Navigationsbereich auf **Suche &amp; Untersuchung > Inhaltssuche**.
+12. Klicken Sie im linken Navigationsbereich auf Such ** &amp; Untersuchung > Inhaltssuche**.
     
 13. Klicken Sie auf das Pluszeichen, um eine Suche hinzuzufügen.
     
@@ -151,7 +151,7 @@ In diesem Verfahren erstellen Sie eine Suche in das Wertpapier &amp; Compliance 
     
 17. Klicken Sie in der Liste von Suchvorgängen auf den Namen **Tailspin Vertragsuche**.
     
-18. Klicken Sie im Bereich **Tailspin Vertrag Suche** unter **Ergebnisse**auf **Vorschau der Suchergebnisse** . Ein Fenster mit den beiden Dokumenten in der Produktion SharePoint-Website ( **Dokument** und **Document1**) und die **e-Mail testen 1** und **Test e-Mail 3** e-Mails an User6 sollte angezeigt werden. Schließen Sie das Fenster.
+18. Klicken Sie im Bereich **Tailspin Vertragsuche** auf **Vorschau der Suchergebnisse** unter **Ergebnisse**. Es sollte ein Fenster mit den beiden Dokumenten auf der Produktions-SharePoint-Website ( **Dokument** und **document1**) und der **Test-e-Mail 1** und **e-Mail-** Nachrichten mit e-Mails an User6 angezeigt werden. Schließen Sie das Fenster.
     
 19. Klicken Sie im Bereich **Inhaltssuche** unter **Analysieren der Ergebnisse mit der erweiterten eDiscovery** auf **Ergebnisse für Analyse in Vorschau anzeigen**.
     
@@ -159,7 +159,7 @@ In diesem Verfahren erstellen Sie eine Suche in das Wertpapier &amp; Compliance 
     
 In diesem Verfahren erstellen Sie einen neuen Fall für die erweiterte eDiscovery und analysieren die Ergebnisse der Tailspin-Vertragsuche.
   
-1. Klicken Sie im linken Navigationsbereich auf **eDiscovery** unter **Suche &amp; Untersuchung**.
+1. Klicken Sie im linken Navigationsbereich unter ** &amp; Such Prüfung**auf **eDiscovery** .
     
 2. Klicken Sie im Bereich **eDiscovery** auf **Zur erweiterten eDiscovery wechseln**.
     
@@ -169,7 +169,7 @@ In diesem Verfahren erstellen Sie einen neuen Fall für die erweiterte eDiscover
     
 5. Doppelklicken Sie auf den Fall **Tailspin vertragliche Unstimmigkeit** in der Liste. 
     
-6. Klicken Sie auf den Container **Tailspin Vertrag Suche** in der Liste **Container** , und klicken Sie dann auf **Prozess**. Warten Sie, bis die Verarbeitung für die Durchführung.
+6. Klicken Sie in der Liste **Container** auf den **Suchcontainer Tailspin Contract** , und klicken Sie dann auf **verarbeiten**. Warten Sie, bis die Bearbeitung abgeschlossen ist.
     
 7. Wenn am unteren Rand des Fensters **Verarbeitung abgeschlossen** angezeigt wird, klicken Sie in der linken Navigation auf **Prozesszusammenfassung**, um eine Zusammenfassung anzuzeigen.
     
@@ -177,7 +177,7 @@ In diesem Verfahren erstellen Sie einen neuen Fall für die erweiterte eDiscover
     
 9. Geben Sie auf der Seite **Setup** unter **Designs** die Zahl **3** in **Maximale Anzahl von Designs** ein.
     
-10. Klicken Sie auf **Analysieren** , und warten Sie für die Analyse abgeschlossen. Eine Reihe von Kreis-Diagrammen mit Analyse der Zielgruppe, Dokumente, e-Mail-Nachrichten und Anlagen sollte angezeigt werden. Weitere Informationen finden Sie unter [Ergebnisse anzeigen analysieren](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
+10. Klicken Sie auf **Analysieren** und warten Sie, bis die Analyse abgeschlossen ist. Es sollte eine Reihe von Kreisdiagrammen mit der Analyse der Zielgruppe, Dokumenten, E-Mails und Anlagen angezeigt werden. Weitere Informationen finden Sie unter [Anzeigen von Analyseergebnissen](https://support.office.com/article/Viewing-Analyze-results-5974f3c2-89fe-4c5f-ac7b-57f214437f7e).
     
 Sie können diese Umgebung jetzt verwenden, um neue Inhalte, neue Suchvorgänge und neue Fälle zu erstellen und um weiter mit der erweiterten eDiscovery in Office 365 zu experimentieren.
   
