@@ -14,17 +14,18 @@ ms.custom:
 - PowerShell
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte.'
-ms.openlocfilehash: 5a4853a8dc5c597b8cdee5a1fbfe1ad130feff4b
-ms.sourcegitcommit: 07be28bd96826e61b893b9bacbf64ba936400229
+ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30573929"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Verwalten von Exchange Online mit Office 365 PowerShell
 
  **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte.
   
-Eine der Hauptaufgaben jedes Microsoft Exchange Online-Administrators ist die Verwaltung von Postfächern und Abrufen von Berichten für diese. Obwohl Sie einige dieser Aufgaben in Office 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShellwesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie unter den folgenden Themen:
+Eine der Hauptaufgaben jedes Microsoft Exchange Online-Administrators ist die Verwaltung von Postfächern und Abrufen von Berichten für diese. Obwohl Sie einige dieser Aufgaben in Microsoft 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShell wesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie in den folgenden Themen:
   
 - [Anzeigen von Exchange Online-Postfachinformationen mit Office 365 PowerShell](https://technet.microsoft.com/de-DE/library/mt771881%28v=exchg.160%29.aspx)
     
