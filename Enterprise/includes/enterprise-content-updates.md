@@ -3,7 +3,7 @@
 
 
 
-## <a name="week-of-march-04-2019"></a>Woche vom 2019
+## <a name="week-of-march-04-2019"></a>Woche vom 4. März 2019
 
 
 | Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
@@ -19,10 +19,10 @@
 | 3/4/2019 | [Sitzungstimeouts für Office 365](/Office365/Enterprise/session-timeouts) | Geändert |
 | 3/4/2019 | [Optimieren der Leistung von Exchange Online](/Office365/Enterprise/tune-exchange-online-performance) | Geändert |
 | 3/4/2019 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
-| 3/6/2019 | [Netzwerke für die Inhaltsübermittlung](/Office365/Enterprise/content-delivery-networks) | Geändert |
-| 3/6/2019 | [Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern](/Office365/Enterprise/hybrid-modern-auth-overview) | Geändert |
-| 3/6/2019 | [Verwalten von Office 365-Endpunkten](/Office365/Enterprise/managing-office-365-endpoints) | Geändert |
-| 3/6/2019 | [Verschieben einer OneDrive-Website an einen anderen geografischen Standort](/Office365/Enterprise/move-onedrive-between-geo-locations) | Geändert |
+| 6.3.2019 | [Netzwerke für die Inhaltsübermittlung](/Office365/Enterprise/content-delivery-networks) | Geändert |
+| 6.3.2019 | [Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern](/Office365/Enterprise/hybrid-modern-auth-overview) | Geändert |
+| 6.3.2019 | [Verwalten von Office 365-Endpunkten](/Office365/Enterprise/managing-office-365-endpoints) | Geändert |
+| 6.3.2019 | [Verschieben einer OneDrive-Website an einen anderen geografischen Standort](/Office365/Enterprise/move-onedrive-between-geo-locations) | Geändert |
 | 3/7/2019 | [Entfernen von Lizenzen von Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell) | Geändert |
 | 3/8/2019 | [Planen der Verzeichnissynchronisierung für Office 365](/Office365/Enterprise/set-up-directory-synchronization) | Geändert |
 | 3/8/2019 | [Optimieren der Leistung von SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Geändert |
@@ -44,7 +44,7 @@
 | 3/13/2019 | [Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/cloud-app-security-for-your-office-365-dev-test-environment) | Geändert |
 | 3/13/2019 | [Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen](/Office365/Enterprise/data-classification-and-labeling-in-the-office-365-dev-test-environment) | Geändert |
 | 3/13/2019 | [Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure](/Office365/Enterprise/deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure) | Geändert |
-| 3/13/2019 | [Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | Geändert |
+| 3/13/2019 | [Verzeichnissynchronisierung für Ihre Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/dirsync-for-your-office-365-dev-test-environment) | Geändert |
 | 3/13/2019 | [Exchange Online-Integration für Ihre Office 365 und Dynamics 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/exchange-online-integration-for-your-office-365-and-dynamics-365-dev-test-enviro) | Geändert |
 | 3/13/2019 | [ExpressRoute für Microsoft-Cloudkonnektivität](/Office365/Enterprise/expressroute-for-microsoft-cloud-connectivity) | Geändert |
 | 3/13/2019 | [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/federated-identity-for-your-office-365-dev-test-environment) | Geändert |
@@ -84,19 +84,16 @@
 | 3/15/2019 | [Simuliertes standortübergreifendes virtuelles Netzwerk in Azure](/Office365/Enterprise/simulated-cross-premises-virtual-network-in-azure) | Geändert |
 
 
-## <a name="week-of-february-11-2019"></a>Woche vom 11. Februar 2019
+## <a name="week-of-march-18-2019"></a>Woche vom 2019
 
 
 | Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
 |------|------------|--------|
-| 2/11/2019 | [Office 365-Client-App-Unterstützung-bedingter Zugriff](/Office365/Enterprise/office-365-client-support-conditional-access) | Geändert |
-| 2/11/2019 | [Office 365-Client-App-Unterstützung – Verwaltung mobiler Anwendungen](/Office365/Enterprise/office-365-client-support-mobile-application-management) | Geändert |
-| 2/11/2019 | [Office 365-Client-App-Unterstützung – moderne Authentifizierung](/Office365/Enterprise/office-365-client-support-modern-authentication) | Geändert |
-| 2/12/2019 | [Planen von Drittanbieter-SSL-Zertifikaten für Office 365](/Office365/Enterprise/plan-for-third-party-ssl-certificates) | Geändert |
-| 2/14/2019 | [Verwalten von Office 365-Endpunkten](/Office365/Enterprise/managing-office-365-endpoints) | Geändert |
-| 2/14/2019 | [Multi-Geo-Funktionen in OneDrive in Office 365](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | Geändert |
-| 2/14/2019 | [Prinzipien von Office 365-Netzwerkverbindungen](/Office365/Enterprise/office-365-network-connectivity-principles) | Geändert |
-| 2/14/2019 | [Anzeigen von Lizenz- und Dienstdetails für Konten mit Office 365 PowerShell](/Office365/Enterprise/powershell/view-account-license-and-service-details-with-office-365-powershell) | Geändert |
+| 3/18/2019 | [Allgemeine häufig gestellte Fragen zu Datenverschiebung](/Office365/Enterprise/data-move-faq) | Geändert |
+| 3/18/2019 | [Während und nach der Datenverschiebung](/Office365/Enterprise/during-and-after-your-data-move) | Geändert |
+| 3/18/2019 | [Capacity planning and load testing SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | Geändert |
+| 3/18/2019 | [Office 365-Mandantenübergreifende Zusammenarbeit](/Office365/Enterprise/office-365-inter-tenant-collaboration) | Geändert |
+| 3/19/2019 | [Anzeigen von Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | Geändert |
 
 
 ## <a name="week-of-february-18-2019"></a>Woche vom 18. Februar 2019
