@@ -6,65 +6,57 @@ manager: pamgreen
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
-description: Informationen Sie zum Hinzufügen oder Entfernen von Geo-Administrator in OneDrive for Business Multi-Geo.
-ms.openlocfilehash: 4e8c8bec148d5a4e7e55ffa2b08a49cd2ea6aa0a
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
-ms.translationtype: MT
+localization_priority: Priority
+description: So fügen Sie eine Geo-Administrator in Office 365 Multi-Geo hinzu oder entfernen ihn.
+ms.openlocfilehash: 28af776f3afe4e3cc666817eb2d5faff846aa1af
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849811"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931664"
 ---
-# <a name="add-or-remove-a-geo-administrator-in-onedrive-for-busniess-multi-geo"></a>Hinzufügen oder Entfernen von ein Administrator Geo in OneDrive für Busniess Multi-Geo
+# <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Fügen Sie einen Geo-Administrator in Office 365 Multi-Geo hinzu oder entfernen Sie ihn.
 
-Sie können verschiedene Administratoren für jeden Standort Geo konfigurieren, die Ihnen in Ihrem Mandanten. Diese Administratoren haben Zugriff auf die SharePoint Online und OneDrive-Einstellungen, die an ihre Position Geo spezifisch sind.
+Sie können für jeden geographischen Standort in Ihrem Mandanten einen eigenen Administrator festlegen. Dieser Administrator hat Zugriff auf SharePoint Online- und OneDrive-Einstellungen, die für seinen geographischen Standort gelten.
 
-Einige Dienste - wie der Laufzeitspeicher - werden vom zentralen Speicherort verwaltet und auf Satelliten Speicherorte repliziert. Der Administrator Geo für den zentralen Standort hat Zugriff auf diese, während Geo-Admins für Satelliten Speicherorte nicht.
+Einige Dienste – wie Terminologiespeicher – werden an einem zentralen Standort verwaltet und an Satellitenstandorten repliziert. Der Geo-Administrator des zentralen Standorts hat Zugriff auf diese, was für Administratoren von Satellitenstandorten nicht gilt.
 
-Globale Administratoren und SharePoint Online-Administratoren weiterhin auf Einstellungen in der zentralen Standort und alle Satelliten Speicherorte zugreifen.
+Globale Administratoren und SharePoint-Onlineadministratoren haben weiterhin Zugriff auf Einstellungen am zentralen Standort und allen Satellitenstandorten.
 
 ## <a name="configuring-geo-administrators"></a>Konfigurieren von Geo-Administratoren
 
-Konfigurieren von Geo-Admins ist SharePoint Online-PowerShell-Modul erforderlich.
+Für das Konfigurieren von Geo-Administratoren ist das SharePoint Online-PowerShell-Modul erforderlich.
 
-Verwenden Sie die [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService) für die Verbindung der Verwaltungskonsole des Speicherorts Geo, wo Sie den Geo-Administrator hinzufügen möchten (Z. B. Connect-SPOServicehttps://ContosoEUR-admin.sharepoint.com.)
+Verwenden Sie [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/Connect-SPOService), um eine Verbindung zum Administrationscenter des geographischen Standorts herzustellen, an dem Sie den Geo-Administrator hinzufügen möchten (zum Beispiel Connect-SPOService https://ContosoEUR-admin.sharepoint.com.))
 
-Führen Sie zum Anzeigen der vorhandenen Geo-Admins eines Standorts`Get-SPOGeoAdministrator`
+Führen Sie `Get-SPOGeoAdministrator` aus, um die vorhandenen Geo-Administratoren eines Standorts anzuzeigen.
 
-### <a name="adding-a-user-as-a-geo-admin"></a>Hinzufügen eines Benutzers als ein Geo-Administrator
+### <a name="adding-a-user-as-a-geo-admin"></a>Einen Benutzer als Geo-Administrator hinzufügen
 
-Führen Sie zum Hinzufügen eines Benutzers als eine Geo-admin`Add-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Führen Sie `Add-SPOGeoAdministrator -UserPrincipalName <UPN>` aus, um einen Benutzer als Geo-Administrator hinzuzufügen.
 
-Führen Sie zum Entfernen eines Benutzers als eine Geo Admin eines Standorts`Remove-SPOGeoAdministrator -UserPrincipalName <UPN>`
+Führen Sie `Remove-SPOGeoAdministrator -UserPrincipalName <UPN>` aus, um einen Benutzer als Geo-Administrator zu entfernen
 
-### <a name="adding-a-group-as-a-geo-admin"></a>Hinzufügen einer Gruppe als eine Geo-admin
+### <a name="adding-a-group-as-a-geo-admin"></a>Eine Gruppe als Geo-Administrator hinzufügen
 
-Sie können eine Sicherheitsgruppe oder eine e-Mail-aktivierte Sicherheitsgruppe als eine Geo-Portals hinzufügen. (Verteilergruppen und Office 365-Gruppen werden nicht unterstützt.)
+Sie können eine Sicherheitsgruppe oder eine E-Mail-aktivierte Sicherheitsgruppeals Geo-Administrator hinzufügen. (Verteilergruppen und Office 365-Gruppen werden nicht unterstützt.)
 
-Führen Sie zum Hinzufügen einer Gruppe als Geo-administrator`Add-SPOGeoAdministrator -GroupAlias <alias>`
+Führen Sie `Add-SPOGeoAdministrator -GroupAlias <alias>` aus, um eine Gruppe als Geo-Administrator hinzuzufügen.
 
-Führen Sie zum Entfernen einer Gruppe als Geo-administrator`Remove-SPOGeoAdministrator -GroupAlias <alias>`
+Führen Sie `Remove-SPOGeoAdministrator -GroupAlias <alias>` aus, um eine Gruppe als Geo-Administrator zu entfernen.
 
-Beachten Sie, dass nicht alle Sicherheitsgruppen einen Gruppen-Alias verfügen. Wenn Sie eine Sicherheitsgruppe hinzu, die nicht über einen Alias, und führen Sie [Get-MsolGroup](https://docs.microsoft.com/en-us/powershell/module/msonline/get-msolgroup) zum Abrufen einer Liste von Gruppen verfügt möchten, suchen Sie nach der Sicherheitsgruppe ObjectID, und führen Sie:
+Beachten Sie, dass nicht alle Sicherheitsgruppen einen Gruppenalias besitzen. Wenn Sie eine Sicherheitsgruppe hinzufügen möchten, die keinen Alias besitzt, führen Sie [Get-MsolGroup](https://docs.microsoft.com/de-DE/powershell/module/msonline/get-msolgroup) aus, um eine Liste der Gruppen anzurufen. Suchen Sie nach der ObjectID Ihrer Sicherheitsgruppe Sie dann Folgendes aus:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-Führen Sie zum Entfernen einer Gruppe mithilfe der ObjectID`Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
-
-### <a name="accessing-the-admin-center-for-a-specific-geo-location"></a>Zugreifen auf das Administrationscenter für einen bestimmten Geo-Speicherort
-
-Zum Verwalten von OneDrive-Einstellungen für ihre Geo-Speicherort müssen Administratoren die OneDrive-Verwaltungskonsole direkt mit der folgenden URL-Format zugreifen:
-
-https://admin.onedrive.com/?geo=<*Geo*>
-
-Beispielsweise ist der OneDrive-Verwaltungskonsole für Kanada finden Sie unter: https://admin.onedrive.com/?geo=CAN.
+Führen Sie `Remove-SPOGeoAdministrator -ObjectID <ObjectID>` aus, um eine Gruppe anhand der ObjectID zu entfernen.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Hinzufügen von SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
+[Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 
 [Get-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spogeoadministrator)
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Legen Sie einen Alias (MailNickName) für eine Sicherheitsgruppe](https://docs.microsoft.com/en-us/powershell/module/azuread/set-azureadgroup)
+[Legen Sie einen Alias ("MailNickName") für eine Sicherheitsgruppe fest](https://docs.microsoft.com/de-DE/powershell/module/azuread/set-azureadgroup)
