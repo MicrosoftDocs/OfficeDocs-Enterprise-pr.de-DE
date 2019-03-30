@@ -3,11 +3,10 @@ title: Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 ms.audience: ITPro
 ms.topic: deployment
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -17,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 description: Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise
-ms.openlocfilehash: cc94d8ee39611f01e2058273e92b845cdcc0c6d8
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
-ms.translationtype: HT
+ms.openlocfilehash: 2782d4501eb1e0b9d9d6fc40c251e1db065c86be
+ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085454"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004362"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise
 
@@ -39,7 +38,7 @@ Hilfe bei der Einrichtung von Office 365 finden Sie in **[FastTrack](https://fas
 |**Websites** <br> (SharePoint Online) | - Konfigurieren von Hybridfunktionalität zwischen [SharePoint Server 2013](https://technet.microsoft.com/library/jj838715) und Office 365 <br> - [Erstellen und Verwenden von Websitevorlagen](https://support.office.com/article/Create-and-use-site-templates-60371B0F-00E0-4C49-A844-34759EBDD989) zum Anpassen von Aussehen und Verhalten von SharePoint Online <br> - Verwenden des [SharePoint Online-Planungshandbuchs](https://support.office.com/article/SharePoint-Online-Planning-Guide-for-Office-365-for-business-d5089cdf-3fd2-4230-acbd-20ecda2f9bb8) oder des [SharePoint Online-Bereitstellungs-Ratgebers](https://aka.ms/spoguidance) zum Planen und Konfigurieren zusätzlicher Funktionen <br> - Verwalten Ihres [Office 365-Videoportals](https://support.office.com/article/Manage-your-Office-365-Video-portal-c059465b-eba9-44e1-b8c7-8ff7793ff5da) |
 |**Chat und Onlinebesprechungen** <br> (Skype for Business Online) | - Konfigurieren von Hybridfunktionalität zwischen Ihrer vorhandenen [Lync Server 2013-](https://technet.microsoft.com/library/jj204805) oder [Skype for Business 2015-](https://technet.microsoft.com/library/jj205403)Umgebung und Office 365  <br> - [Einrichten von Skype for Business Online](https://support.office.com/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e) und Konfigurieren häufig verwendeter Funktionen, wie etwa Anrufweiterleitung, Telefonkonferenzen und Teilen  <br> - Verwenden Sie den [Skype for Business-Bereitstellungsratgeber](https://aka.ms/skypeguidance), um angepasste Hilfestellung zur Einrichtung einzuholen |
 | **Dateispeicherung und -freigabe** <br> (OneDrive for Business und SharePoint Online) | - [Einrichten von Office 365-Dateispeicherung und -freigabe](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_WhatDif): Erfahren Sie, wann Sie OneDrive for Business zum Speichern von Dateien und wann Sie Office 365-Teamwebsites verwenden sollten <br> - [Einrichten von Dateispeicherung und -freigabe in Office 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_MoveDocsVideo): Erfahren Sie, wie einfach das Hochladen von Dateien in OneDrive for Business und auf Ihre Office 365-Teamwebsite ist <br> - [Einrichten von Dateispeicherung und -freigabe in Office 365](https://support.office.com/article/7aa9cdc8-2245-4218-81ee-86fa7c35f1de#BKMK_Store): Rufen Sie alle Schritte zum Hochladen von Dateien in OneDrive for Business und auf Ihre Office 365-Teamwebsite ab. Lernen Sie Tipps für das Teilen von Dateien kennen <br> - Verwenden des [OneDrive for Business-Setuphandbuchs](https://aka.ms/OD4Bguidance) zum Einholen von angepasster Hilfestellung beim Setup |
-|**Office 365-Anwendungen** | - Office 365-Administratoren sollten das [Office 2016-Bereitstellungshandbuch für Mac, PC oder mobile Geräte](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx) verwenden, um Hilfe beim Planen einer Office 365 ProPlus-Bereitstellung oder eines -Upgrades im Unternehmen zu erhalten.  <br> - [Power BI for Office 365 Admin Center](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve für Office 365-Administratoren](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Häufig gestellte Fragen zu Sway](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Erste Schritte mit Project Online](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11).  <br> - [Bereitstellungsratgeber für Microsoft Intune](https://aka.ms/intuneguidance) |
+|**Office 365-Anwendungen** | - Office 365-Administratoren sollten das [Office 2016-Bereitstellungshandbuch für Mac, PC oder mobile Geräte](https://technet.microsoft.com/library/cc303401%28v=office.16%29.aspx) verwenden, um Hilfe beim Planen einer Office 365 ProPlus-Bereitstellung oder eines -Upgrades im Unternehmen zu erhalten.  <br> - [Power BI für Microsoft 365 Admin Center](https://support.office.com/article/Power-BI-for-Office-365-Admin-Center-Help-5e391ecb-500c-47a3-bd0f-a6173b541044) <br> - [Office Delve für Office 365-Administratoren](https://support.office.com/article/Office-Delve-for-Office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b) <br> - [Häufig gestellte Fragen zu Sway](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075) <br> - [Erste Schritte mit Project Online](https://support.office.com/article/Get-started-with-Project-Online-e3e5f64f-ada5-4f9d-a578-130b2d4e5f11).  <br> - [Bereitstellungsratgeber für Microsoft Intune](https://aka.ms/intuneguidance) |
 |**Enterprise Social** <br> (Yammer) | - [Verwenden von Yammer mit Office 365](https://support.office.com/article/Plan-for-Yammer-integration-with-Office-365-4086681f-6de1-4d39-aa72-752b2af1cbd7)  <br> - Verwenden des [Yammer Enterprise-Setuphandbuchs](https://aka.ms/yammerdeploy) zum Einholen von angepasster Hilfestellung beim Setup |
    
 ## <a name="were-here-to-help"></a>Wir helfen Ihnen gerne!

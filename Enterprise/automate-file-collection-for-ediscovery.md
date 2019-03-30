@@ -3,7 +3,6 @@ title: Automatisieren der Dateisammlung für eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 12/15/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +13,12 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie, wie Sie die Dateisammlung von Benutzercomputern für eDiscovery automatisieren.'
-ms.openlocfilehash: 12d61d2c43a297001eecf463991654afbcfccb1a
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915750"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001608"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatisieren der Dateisammlung für eDiscovery
 
