@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo-Funktionen in OneDrive in Office 365
+title: Multi-Geo-Funktionen in OneDrive und SharePoint Online
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -11,77 +11,45 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive Online.
-ms.openlocfilehash: f89bfe7cb9a287200591746dc6d22430cd6eed1b
-ms.sourcegitcommit: a8aedcfe0d6a6047a622fb3f68278c81c1e413bb
+ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
+ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30052989"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30948586"
 ---
-# <a name="multi-geo-capabilities-in-onedrive-in-office-365"></a>Multi-Geo-Funktionen in OneDrive in Office 365
+# <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online
 
-Mit Multi-Geo-Funktionen in OneDrive Online kann Ihr Unternehmen seine Office 365-Präsenz auf mehrere geografische Regionen und/oder Länder innerhalb des vorhandenen Mandanten erweitern. Wenden Sie sich an Ihr Microsoft-Kontoteam, um Ihr multinationales Unternehmen für Multi-Geo in OneDrive for Business anzumelden.
-  
-Mit Multi-Geo in OneDrive können Sie ruhende Daten an den Datenaufbewahrungsanforderungen entsprechenden geografischen Standorten bereitstellen und speichern und gleichzeitig die globale Bereitstellung moderner Produktivitätserfahrungen für Ihre Mitarbeiter in Gang setzen.
-  
-Vorteile von Multi-Geo-Funktionen für Ihre Organisation:
-  
-- Arbeiten Sie als eine weltweit verbundene Organisation mit einem einzigen Office 365-Mandanten, der mehrere geografische Standorte umfasst.
-    
-- Erfüllen Sie die Datenresistenz-Anforderungen, indem Sie Daten im Ruhezustand an einem angegebenen geografischen Standort erstellen und hosten.
-    
-- Statten Sie Ihre Satellitenbenutzer mit der gleichen modernen Produktivität aus wie Ihre Benutzer an einem zentralen Ort.
-    
-- Bieten Sie Ihren Benutzern die Möglichkeit, den geografischen Standort zu wechseln, während der Zugriff auf ihre Inhalte erhalten bleibt. 
-    
-- Passen Sie Ihre Freigaberichtlinien dem  jeweiligen geografischen Standort und Ihre Richtlinien zur Verhinderung von Datenlecks dem jeweiligen Unternehmensstandort an.
-    
-- Legen Sie für jeden geografischen Speicherort eDiscovery-Manager fest und genehmigen Sie die auf Ihren geografischen Speicherort zugeschnittene Regelung von Rechtsfällen.
-    
-- Wählen Sie einmalige URL-Namespaces (z.B. ContosoEUR.sharepoint.com) für Ihre zusätzlichen geografischen Speicherorte. 
-    
-- Konsolidieren Sie Ihre regionalen lokalen Daten in Ihrem Office 365-Multi-Geo-Mandanten.
-    
-In einer Multi-Geo-Konfiguration besteht Ihr Office 365-Mandant aus einem zentralen Standort (an dem das Office 365-Abonnement ursprünglich bereitgestellt wurde) und einem oder mehreren Geo-Satellitenstandorten. Das Hauptkonzept von Multi-Geo besteht darin, dass ein einziger Mandant mehrere geografische Standorte umfasst. Die Informationen über geografische Standorte, Gruppen und Benutzer eines Multi-Geo-Mandanten werden in Azure Active Directory (AAD) verwaltet. Da Ihre Mandanteninformationen zentral verwaltet und an jedem geografischen Standort synchronisiert werden, wird das globale Bewusstsein durch das Teilen von Informationen und Erfahrungen im gesamten Unternehmen erhöht.
+Multi-Geo-Funktionen in OneDrive und SharePoint Online bieten Kontrolle über das Land oder die Region, in dem/der freigegebene Ressourcen wie SharePoint-Teamsites und Office 365-Gruppenpostfächer gespeichert sind.
 
-## <a name="video-introducing-office-365-multi-geo"></a>Video: Einführung in Multi-Geo in Office 365
+Benutzer, Gruppenpostfächer und SharePoint-Sites haben Preferred Data Locations (PDLs), die den geografischen Ort für die verknüpften Daten angeben. Die personenbezogenen Daten von Benutzern (Exchange-Posteingang und OneDrive) können zusammen mit beliebigen Office 365-Gruppen oder SharePoint-Sites, die sie erstellen, am angegebenen geografischen Ort gespeichert werden, um Datenaufbewahrungsanforderungen zu erfüllen. Sie können [verschiedene Administratoren für jeden geografischen Ort angeben](add-a-sharepoint-geo-admin.md).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
-  
-## <a name="get-multi-geo-features-in-three-simple-steps"></a>Multi-Geo-Funktionen in drei einfachen Schritten
+Benutzer erhalten die vertraute Oberfläche bei Verwendung von Office 365-Diensten, einschließlich Office-Anwendungen, OneDrive und Suche. Details finden Sie unter [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md).
 
-Die Konfiguration von Multi-Geo ist ganz einfach:
-  
-1. Arbeiten Sie mit Ihrem Kontoteam zusammen, um den Serviceplan für _Multi-Geo-Funktionen in Office 365_ hinzuzufügen. Das Team unterstützt Sie beim Hinzufügen der benötigten Lizenzen.
-    
-2. Fügen Sie Ihre Satellitenstandorte hinzu.
-    
-3. Konfigurieren Sie Ihre Benutzerkonten für den entsprechenden Speicherort.
-    
-## <a name="multi-geo-status-and-availability"></a>Multi-Geo-Status und -Verfügbarkeit
+## <a name="onedrive"></a>OneDrive
 
-OneDrive Multi-Geo wird derzeit in diesen Regionen und Ländern angeboten:
-  
-- Asien-Pazifik
+Das OneDrive jedes Benutzers kann in Einklang mit der PDL an einem Satellitenort bereitgestellt oder [von einem Administrator dorthin verschoben werden](move-onedrive-between-geo-locations.md). Persönliche Dateien verbleiben an diesem geografischen Ort, obwohl sie mit Benutzern an anderen geografischen Orten geteilt werden können.
 
-- Australien
+## <a name="sites-and-groups"></a>Sites und Gruppen
 
-- Kanada
+Wenn ein Benutzer eine mit einer SharePoint-Gruppe verbundene Site erstellt, wird ihre PDL verwendet, um den geografischen Ort zu bestimmen, an dem die Site und ihr zugehöriges Gruppenpostfach erstellt werden. (Wenn der PDL-Wert des Benutzers nicht festgelegt oder auf den geografischen Ort festgelegt wurde, der nicht als Satellitenort konfiguriert wurde, werden Site und Postfach am zentralen Ort erstellt.)
 
-- Europäische Union (EMEA)
+Andere Office 365-Dienste als Exchange, OneDrive und SharePoint sind nicht Multi-Geo. Office 365-Gruppen, die jedoch von diesen Diensten erstellt werden, erhalten die PDL des Erstellers. Exchange-Gruppenpostfach und SharePoint O365-Gruppensite werden am entsprechenden geografischen Ort bereitgestellt. 
 
-- Frankreich
+## <a name="managing-the-multi-geo-environment"></a>Verwalten der Multi-Geo-Umgebung
 
-- Indien
+Das Einrichten und Verwalten Ihrer Multi-Geo-Umgebung erfolgt über das SharePoint-Admin Center. 
 
-- Japan
+![Screenshot der Seite mit geografischen Orten im SharePoint-Admin Center](media/sharepoint-multi-geo-admin-center.png)
 
-- Vereinigtes Königreich
+(Für einige Aktionen wie das Verschieben einer SharePoint- oder OneDrive-Site ist Microsoft PowerShell erforderlich.)
 
-- Vereinigte Staaten (Nordamerika)
+## <a name="see-also"></a>Siehe auch
 
-- Korea
+[Aka.ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
 
-## <a name="getting-started"></a>Erste Schritte
+[Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md)
 
-Der erste Schritt bei Multi-Geo in OneDrive for Business besteht in der [Planung der Multi-Geo-Umgebung in OneDrive for Business](plan-for-multi-geo.md). Informieren Sie sich als Nächstes [über die Verwaltung einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) und [die Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md). Wenn Sie zum Einrichten von Multi-Geo in OneDrive for Business sind, [konfigurieren Sie Ihren Mandanten für Multi-Geo](multi-geo-tenant-configuration.md), [verschieben Sie dann alle vorhandenen OneDrive-Websites an die neuen geografischen Standorte](move-onedrive-between-geo-locations.md), und [richten Sie die Suche ein](configure-search-for-multi-geo.md).
+[SharePoint-Speicherkontingente in Multi-Geo-Umgebungen](sharepoint-multi-geo-storage-quota.md)
+
+[Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung](administering-exchange-online-multi-geo.md)
