@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Ent_TLGs
 ms.assetid: 098c1a1d-83a1-40eb-bbc9-47de7af8bb23
 description: 'Zusammenfassung: Verwenden Sie dieses Testlaborhandbuch, um Ihrer Office 365-Entwicklungs-/Testumgebung Dynamics 365 hinzuzufügen.'
-ms.openlocfilehash: 195e5ab4fd96d1f238c96d47cc7406a45e0e02b1
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: 9e4c98129c68ab5d2f0d9fc486ab62740c625af5
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915210"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574059"
 ---
 # <a name="office-365-and-dynamics-365-devtest-environment"></a>Office 365- und Dynamics 365-Entwicklungs-/Testumgebung
 
@@ -66,11 +66,11 @@ In dieser Phase registrieren Sie sich für das Dynamics 365-Testabonnement und f
   
 ### <a name="sign-up-for-a-dynamics-365-trial-subscription"></a>Registrieren für ein Dynamics 365-Testabonnement
 
-1. Melden Sie sich über einen Browser auf Ihrem Desktopcomputer (einfach) oder von CLIENT1 aus beim Office 365-Portal (simuliertes Unternehmen) unter [https://portal.office.com](https://portal.office.com) an. Verwenden Sie die Anmeldeinformationen Ihres globalen Administratorkontos.
+1. Melden Sie sich über einen Browser auf Ihrem Desktopcomputer (einfach) oder von CLIENT1 aus beim Microsoft 365 Admin Center (simuliertes Unternehmen) unter [https://admin.microsoft.com](https://admin.microsoft.com) an. Verwenden Sie die Anmeldeinformationen Ihres globalen Administratorkontos.
     
 2. Klicken Sie auf die Kachel **Admin**.
     
-3. Klicken Sie auf der Registerkarte **Office 365 Admin Center** in Ihrem Browser im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.
+3. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** im linken Navigationsbereich auf **Abrechnung > Dienste kaufen**.
     
 4. Suchen Sie auf der Seite **Dienste kaufen** den Artikel **Dynamics 365 Plan 1 Enterprise Edition**. Platzieren Sie den Mauszeiger auf dem Artikelnamen, und klicken Sie auf **Start free trial**.
     
@@ -89,7 +89,7 @@ In dieser Phase weisen den Konten des globalen Administrators, von Benutzer 2 un
   
 Gehen Sie folgendermaßen vor, um Dynamics-365-Lizenzen zuzuweisen.
   
-1. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Benutzer > Aktive Benutzer**.
+1. Klicken Sie auf der Registerkarte **Microsoft 365 Admin Center** auf **Benutzer > Aktive Benutzer**.
     
 2. Klicken Sie in der Liste der aktiven Benutzer auf Ihr globales Administratorkonto, und klicken Sie dann auf **Bearbeiten** für **Produktlizenzen**.
     
@@ -97,7 +97,7 @@ Gehen Sie folgendermaßen vor, um Dynamics-365-Lizenzen zuzuweisen.
     
 4. Führen Sie die Schritte 2 und 3 für Benutzer 2- und Benutzer 3-Konten durch.
     
-5. Schließen Sie die Registerkarte **Office Admin Center**.
+5. Schließen Sie die Registerkarte **Microsoft 365 Admin Center**.
     
 Konfigurieren Sie anhand dieser Schritte die Benutzer 2- und Benutzer 3-Konten als Dynamics 365-Systemadministratoren.
   

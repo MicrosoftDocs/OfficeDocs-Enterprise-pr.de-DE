@@ -1,5 +1,5 @@
 ---
-title: "Verwenden von PowerShell zum Ausführen einer mehrstufigen Migration zu Office 365"
+title: Verwenden von PowerShell zum Ausführen einer mehrstufigen Migration zu Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -9,14 +9,15 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: 
+ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: "Zusammenfassung: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine mehrstufige Migration zu Office 365 auszuführen."
-ms.openlocfilehash: d30bb27700199379ea96b157051110af49bf95fa
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+description: 'Zusammenfassung: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine mehrstufige Migration zu Office 365 auszuführen.'
+ms.openlocfilehash: 3e390502e239573f1b3c93f5e3d46c0aa0f4579a
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574109"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer mehrstufigen Migration zu Office 365
 
@@ -235,7 +236,7 @@ Weitere Informationen zu den **Get-MigrationBatch** -Cmdlets finden Sie unter[Ge
 ### <a name="step7-assign-licenses-to-office-365-users"></a>Schritt 7: Zuweisen von Lizenzen zu Office 365-Benutzern
 <a name="BK_Endpoint"> </a>
 
-Aktivieren von Office 365 Benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen. Wenn Sie keine Lizenz zuweisen, wird das Postfach nach Ablauf der Kulanzzeit (30 Tage) deaktiviert. Weitere Informationen zum Zuweisen von Lizenzen im Office 365 Admin Center finden Sie unter [Zuweisen von Lizenzen und Aufheben der Zuweisung von Lizenzen für Office 365 für Unternehmen](https://go.microsoft.com/fwlink/?LinkId=536681).
+Aktivieren von Office 365 Benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen. Wenn Sie keine Lizenz zuweisen, wird das Postfach deaktiviert, sobald die Karenzzeit (30 Tage) endet. Weitere Informationen zum Zuweisen von Lizenzen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Lizenzen und Aufheben der Zuweisung von Lizenzen für Office 365 für Unternehmen](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Schritt 8: Aufgaben nach der Migration abschließen
 <a name="BK_Postmigration"> </a>

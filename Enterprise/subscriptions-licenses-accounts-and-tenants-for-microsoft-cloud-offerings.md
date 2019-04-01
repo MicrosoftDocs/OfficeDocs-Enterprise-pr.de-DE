@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Zusammenfassung: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.'
-ms.openlocfilehash: 4705e8315b2ff0943749518034d63bad58ba178f
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
+ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897318"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30574049"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 
@@ -145,14 +145,14 @@ Die folgende Tabelle beschreibt, wie Sie mehrere Microsoft-Cloudangebote basiere
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |–  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation aus dem Office 365-Portal hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation aus dem Office 365-Portal hinzu.  <br/> |
+|**Office 365** <br/> |–  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |
 |**Azure** <br/> |Sie fügen ein Office 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |–  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |
 |**Intune/EMS** <br/> |Sie fügen ein Office 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |–  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |
 |**Dynamics 365** <br/> |Sie fügen ein Office 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation hinzu.  <br/> |–  <br/> |
    
 Eine einfache Möglichkeit zum Hinzufügen von Abonnements zu Ihrer Organisation für Microsoft SaaS-basierte Dienste erfolgt über das Office 365 Admin Center:
   
-1. Melden Sie sich beim Office 365-Portal ([https://portal.office.com](https://portal.office.com)) mit Ihrem globalen Administratorkonto an, und klicken Sie dann auf **Admin**.
+1. Melden Sie sich mit Ihrem globalen Administratorkonto beim Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)) an.
     
 2. Klicken Sie im linken Navigationsbereich der **Admin Center**-Startseite auf **Abrechnung** und dann auf **Dienste kaufen**.
     
