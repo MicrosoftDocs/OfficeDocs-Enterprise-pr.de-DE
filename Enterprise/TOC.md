@@ -143,6 +143,7 @@
 #### [Konfigurieren von Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md)
 #### [Erstellen einer Gruppe mit einem bestimmten PLD](multi-geo-add-group-with-pdl.md)
 #### [Löschen eines geografischen Standorts](delete-a-geo-location.md)
+#### [Aktivieren von SharePoint Multi-Geo am Satellitenstandort](enabling-SP-multigeo-satellite-geolocation.md)
 #### [Verwalten von Exchange Multi-Geo](administering-exchange-online-multi-geo.md)
 
 ## [Wechseln zu einer neuen Office 365-Rechenzentrum-Geo](moving-data-to-new-datacenter-geos.md)
