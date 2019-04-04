@@ -3,7 +3,7 @@ title: Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint On
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 4/3/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Beschreibt, wie das Office 365 Content Delivery Network (CDN) verwendet wird, um die Bereitstellen Ihrer SharePoint Online-Objekte für alle Ihre Benutzer zu beschleunigen, unabhängig davon, wo Sie sich befinden oder wie Sie auf Ihre Inhalte zugreifen.
-ms.openlocfilehash: a718c30a40209a8ee0c8e78700ed3eae72c8347c
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
+ms.sourcegitcommit: 100ae697304427dab5ad494a06323656b498c57e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039502"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31396923"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
@@ -288,7 +288,7 @@ Verwenden Sie das Cmdlet **Add-SPOTenantCdnOrigin** , um einen Ursprung zu defin
 Add-SPOTenantCdnOrigin -CdnType <Public | Private> -OriginUrl <path>
 ```
 
-Der Wert von _path_ ist der Pfad zu der Bibliothek oder dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden. Origins unterstützen Platzhalter, die der URL vorangestellt werden. Auf diese Weise können Sie Ursprünge erstellen, die sich über mehrere Standorte erstrecken. Geben Sie beispielsweise den folgenden Befehl ein, um alle Objekte im Ordner MasterPages für alle Websites als öffentlichen Ursprung innerhalb des CDN einzuschließen:
+Der Wert von _path_ ist der relative Pfad zu der Bibliothek oder dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden. Origins unterstützen Platzhalter, die der URL vorangestellt werden. Auf diese Weise können Sie Ursprünge erstellen, die sich über mehrere Standorte erstrecken. Geben Sie beispielsweise den folgenden Befehl ein, um alle Objekte im Ordner MasterPages für alle Websites als öffentlichen Ursprung innerhalb des CDN einzuschließen:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
@@ -297,18 +297,18 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 - Der Platzhalter-**/** Modifizierer * kann nur am Anfang des Pfads verwendet werden und entspricht allen URL-Segmenten unter der angegebenen URL.
 - Der Pfad kann auf eine Dokumentbibliothek, einen Ordner oder eine Website verweisen. Beispielsweise entspricht der Pfad _*/site1_ allen Dokumentbibliotheken unter der Website.
 
-Sie können einen Ursprung mit einem bestimmten Pfad mit einem relativen Pfad oder einem vollständigen Pfad hinzufügen.
+Sie können einen Ursprung mit einem bestimmten relativen Pfad hinzufügen. Sie können keinen Ursprung unter Verwendung des vollständigen Pfads hinzufügen.
 
-In diesem Beispiel wird ein privater Ursprung der SiteAssets-Bibliothek auf einer bestimmten Website mithilfe eines relativen Pfads hinzugefügt:
+In diesem Beispiel wird ein privater Ursprung der SiteAssets-Bibliothek auf einer bestimmten Website hinzugefügt:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-In diesem Beispiel wird ein privater Ursprung des Ordners _Folder1_ in der Bibliothek Website Objekte der Websitesammlung unter Verwendung des vollständigen Pfads hinzugefügt:
+In diesem Beispiel wird ein privater Ursprung des Ordners _Folder1_ in der Bibliothek Website Objekte der Websitesammlung hinzugefügt:
 
 ``` powershell
-Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “https://contoso.sharepoint.com/sites/test/siteassets/folder1”
+Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl “/sites/test/siteassets/folder1”
 ```
 
 Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
@@ -469,7 +469,7 @@ Informationen zu den Ursprüngen, die standardmäßig bereitgestellt werden, wen
 
 ### <a name="add-an-office-365-cdn-origin"></a>Hinzufügen eines Office 365 CDN-Ursprungs
 
-> [!NOTE]
+> [!IMPORTANT]
 > Sie sollten niemals Ressourcen, die für Ihre Organisation als vertraulich gelten, in einer SharePoint-Dokumentbibliothek platzieren, die als öffentlicher Ursprung konfiguriert ist.
 
 Verwenden Sie den Befehl [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) zum Definieren eines CDN-Ursprungs. Sie können mehrere Ursprünge definieren. Der Ursprung ist eine URL, die auf eine SharePoint-Bibliothek oder einen Ordner mit den Objekten verweist, die vom CDN gehostet werden sollen.
@@ -478,7 +478,7 @@ Verwenden Sie den Befehl [spo cdn origin add](https://pnp.github.io/office365-cl
 spo cdn origin add --type [Public | Private] --origin <path>
 ```
 
-Dabei ist `path` der Pfad zu dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden.
+Dabei `path` ist der relative Pfad zu dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden.
 
 Um alle Objekte im **Gestaltungsvorlagenkatalog** aller Websites als öffentlichen Ursprung einzuschließen, führen Sie Folgendes aus:
 
