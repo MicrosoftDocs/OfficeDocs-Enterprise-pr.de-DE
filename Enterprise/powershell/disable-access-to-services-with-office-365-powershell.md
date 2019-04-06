@@ -3,7 +3,7 @@ title: Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 03/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,84 +14,88 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
-description: Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren.
-ms.openlocfilehash: 66f6c04c1488f14d5752974a5475e7ef11279406
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Verwenden Sie Office 365 PowerShell, um den Zugriff auf Office 365-Dienste für Benutzer zu deaktivieren.
+ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897418"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001818"
 ---
-# <a name="disable-access-to-services-with-office-365-powershell"></a><span data-ttu-id="3b09c-103">Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3b09c-103">Disable access to services with Office 365 PowerShell</span></span>
+# <a name="disable-access-to-services-with-office-365-powershell"></a><span data-ttu-id="3ae9b-103">Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-103">Disable access to services with Office 365 PowerShell</span></span>
 
-<span data-ttu-id="3b09c-104">**Zusammenfassung:** Erläutert, wie Office 365 PowerShell verwenden, um Zugriff auf Office 365-Diensten für Benutzer in Ihrer Organisation zu deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="3b09c-104">**Summary:** Explains how to use Office 365 PowerShell to disable access to Office 365 services for users in your organization.</span></span>
+<span data-ttu-id="3ae9b-104">**Zusammenfassung:** Erläutert, wie Office 365 PowerShell zum Deaktivieren des Zugriffs auf Office 365-Dienste für Benutzer in Ihrer Organisation verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-104">**Summary:** Explains how to use Office 365 PowerShell to disable access to Office 365 services for users in your organization.</span></span>
   
-<span data-ttu-id="3b09c-p101">Wenn ein Office 365-Konto eine Lizenz von einem Lizenzierungsplan zugeordnet ist, sind Office 365-Dienste für den Benutzer über diese Lizenz verfügbar. Sie können jedoch die Office 365-Dienste steuern, die der Benutzer zugreifen kann. Obwohl die Lizenz Zugriff auf die SharePoint Online-Dienst ermöglicht, können Sie Zugriff darauf deaktivieren. Office 365 PowerShell können Sie um Zugriff auf eine beliebige Anzahl von Diensten für eine bestimmte Lizenzierungsplan für zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="3b09c-p101">When an Office 365 account is assigned a license from a licensing plan, Office 365 services are made available to the user from that license. However, you can control the Office 365 services that the user can access. For example, even though the license allows access to the SharePoint Online service, you can disable access to it. You can use Office 365 PowerShell to disable access to any number of services for a specific licensing plan for:</span></span>
+<span data-ttu-id="3ae9b-105">Wenn einem Office 365-Konto eine Lizenz aus einem Lizenzierungs Plan zugewiesen wird, werden die Office 365-Dienste dem Benutzer über diese Lizenz zur Verfügung gestellt.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-105">When an Office 365 account is assigned a license from a licensing plan, Office 365 services are made available to the user from that license.</span></span> <span data-ttu-id="3ae9b-106">Sie können jedoch die Office 365-Dienste steuern, auf die der Benutzer zugreifen kann.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-106">However, you can control the Office 365 services that the user can access.</span></span> <span data-ttu-id="3ae9b-107">Obwohl die Lizenz beispielsweise Zugriff auf den SharePoint Online-Dienst zulässt, können Sie den Zugriff darauf deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-107">For example, even though the license allows access to the SharePoint Online service, you can disable access to it.</span></span> <span data-ttu-id="3ae9b-108">Sie können PowerShell verwenden, um den Zugriff auf eine beliebige Anzahl von Diensten für einen bestimmten Lizenzierungs Plan zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-108">You can use PowerShell to disable access to any number of services for a specific licensing plan for:</span></span>
 
-- <span data-ttu-id="3b09c-109">ein einzelnes Konto</span><span class="sxs-lookup"><span data-stu-id="3b09c-109">An individual account.</span></span>
+- <span data-ttu-id="3ae9b-109">ein einzelnes Konto</span><span class="sxs-lookup"><span data-stu-id="3ae9b-109">An individual account.</span></span>
     
-- <span data-ttu-id="3b09c-110">eine Gruppe von Konten</span><span class="sxs-lookup"><span data-stu-id="3b09c-110">A group of accounts.</span></span>
+- <span data-ttu-id="3ae9b-110">eine Gruppe von Konten</span><span class="sxs-lookup"><span data-stu-id="3ae9b-110">A group of accounts.</span></span>
     
-- <span data-ttu-id="3b09c-111">Alle Konten in Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="3b09c-111">All accounts in your organization.</span></span>
-    
-## <a name="before-you-begin"></a><span data-ttu-id="3b09c-112">Bevor Sie beginnen:</span><span class="sxs-lookup"><span data-stu-id="3b09c-112">Before you begin</span></span>
-<span data-ttu-id="3b09c-113"><a name="RTT"> </a></span><span class="sxs-lookup"><span data-stu-id="3b09c-113"></span></span>
+- <span data-ttu-id="3ae9b-111">Alle Konten in Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-111">All accounts in your organization.</span></span>
 
-- <span data-ttu-id="3b09c-p102">Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3b09c-p102">The procedures in this topic require you to connect to Office 365 PowerShell. For instructions, see [Connect to Office 365 PowerShell](connect-to-office-365-powershell.md).</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="3ae9b-112">Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-112">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+
+<span data-ttu-id="3ae9b-113">Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="3ae9b-113">First, [connect to your Office 365 tenant](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+
+<span data-ttu-id="3ae9b-114">Verwenden Sie dann diesen Befehl, um die verfügbaren Lizenzierungs Pläne anzuzeigen, die auch als AccountSkuIds bezeichnet werden:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-114">Next, use this command to view your available licensing plans, also known as AccountSkuIds:</span></span>
+
+```
+Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
+```
+
+<span data-ttu-id="3ae9b-115">Weitere Informationen finden Sie unter [Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3ae9b-115">For more information, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
     
-- <span data-ttu-id="3b09c-p103">Verwenden Sie das Cmdlet " **Get-MsolAccountSku** ", um anzuzeigen, Ihrer verfügbaren lizenzierungspläne und die Office 365-Dienste, die in dieser Pläne zur Verfügung stehen. Weitere Informationen finden Sie unter [Lizenzen anzeigen und-Dienste mit Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3b09c-p103">You use the **Get-MsolAccountSku** cmdlet to view your available licensing plans, and the Office 365 services that are available in those plans. For more information, see [View licenses and services with Office 365 PowerShell](view-licenses-and-services-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="3ae9b-116">Informationen zu den vor-und nach Ergebnissen der Verfahren in diesem Thema finden Sie unter [Anzeigen von Konto Lizenz-und Servicedetails mit Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3ae9b-116">To see the before and after results of the procedures in this topic, see [View account license and service details with Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span></span>
     
-- <span data-ttu-id="3b09c-118">Anzeigen der vor und nach der Ergebnisse der Verfahren in diesem Thema finden Sie unter [Anzeigen von Kontodetails Lizenz und den Dienst mit Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3b09c-118">To see the before and after results of the procedures in this topic, see [View account license and service details with Office 365 PowerShell](view-account-license-and-service-details-with-office-365-powershell.md).</span></span>
+<span data-ttu-id="3ae9b-p102">Ein PowerShell-Skript steht zur Verfügung, das die in diesem Thema erläuterten Verfahren automatisiert. Insbesondere ermöglicht das Skript Ihnen das Anzeigen und Deaktivieren von Diensten in Ihrer Office 365-Organisation, einschließlich Sway. Weitere Informationen finden Sie unter [Deaktivieren des Zugriffs auf Sway mit Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3ae9b-p102">A PowerShell script is available that automates the procedures described in this topic. Specifically, the script lets you view and disable services in your Office 365 organization, including Sway. For more information, see [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span></span>
     
-- <span data-ttu-id="3b09c-p104">Ein PowerShell-Skript steht zur Verfügung, das die in diesem Thema erläuterten Verfahren automatisiert. Insbesondere ermöglicht das Skript Ihnen das Anzeigen und Deaktivieren von Diensten in Ihrer Office 365-Organisation, einschließlich Sway. Weitere Informationen finden Sie unter [Deaktivieren des Zugriffs auf Sway mit Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3b09c-p104">A PowerShell script is available that automates the procedures described in this topic. Specifically, the script lets you view and disable services in your Office 365 organization, including Sway. For more information, see [Disable access to Sway with Office 365 PowerShell](disable-access-to-sway-with-office-365-powershell.md).</span></span>
     
-- <span data-ttu-id="3b09c-122">Wenn Sie das Cmdlet **Get-MsolUser** ohne mit dem _Alle_ Parameter verwenden, werden nur die ersten 500 Benutzerkonten zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3b09c-122">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 user accounts are returned.</span></span>
-    
-## <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a><span data-ttu-id="3b09c-123">Deaktivieren von bestimmten Office 365-Diensten für bestimmte Benutzer für einen bestimmten licensing plan</span><span class="sxs-lookup"><span data-stu-id="3b09c-123">Disable specific Office 365 services for specific users for a specific licensing plan</span></span>
+### <a name="disable-specific-office-365-services-for-specific-users-for-a-specific-licensing-plan"></a><span data-ttu-id="3ae9b-120">Deaktivieren bestimmter Office 365-Dienste für bestimmte Benutzer für einen bestimmten Lizenzierungs Plan</span><span class="sxs-lookup"><span data-stu-id="3ae9b-120">Disable specific Office 365 services for specific users for a specific licensing plan</span></span>
   
-<span data-ttu-id="3b09c-124">Um eine bestimmte Gruppe von Office 365-Diensten für Benutzer, für eine bestimmte Lizenzierungsplan deaktivieren möchten, führen Sie die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="3b09c-124">To disable a specific set of Office 365 services for users for a specific licensing plan, perform the following steps:</span></span>
+<span data-ttu-id="3ae9b-121">Führen Sie die folgenden Schritte aus, um einen bestimmten Satz von Office 365-Diensten für Benutzer für einen bestimmten Lizenzierungs Plan zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-121">To disable a specific set of Office 365 services for users for a specific licensing plan, perform the following steps:</span></span>
   
-1. <span data-ttu-id="3b09c-125">Identifizieren Sie die unerwünschten Dienste in den Lizenzierungsplan mithilfe der folgenden Syntax:</span><span class="sxs-lookup"><span data-stu-id="3b09c-125">Identify the undesirable services in the licensing plan by using the following syntax:</span></span>
+1. <span data-ttu-id="3ae9b-122">Identifizieren Sie die unerwünschten Dienste im Lizenzierungs Plan, indem Sie die folgende Syntax verwenden:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-122">Identify the undesirable services in the licensing plan by using the following syntax:</span></span>
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  <span data-ttu-id="3b09c-126">Das folgende Beispiel erstellt ein **LicenseOptions** -Objekt, das in den Lizenzierungsplan mit dem Namen der Office Online und SharePoint Online-Dienste deaktiviert `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span><span class="sxs-lookup"><span data-stu-id="3b09c-126">The following example creates a **LicenseOptions** object that disables the Office Online and SharePoint Online services in the licensing plan named `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span></span>
+  <span data-ttu-id="3ae9b-123">Im folgenden Beispiel wird ein **licenseoptions** -Objekt erstellt, das die Office Online-und SharePoint Online-Dienste im Lizenz `litwareinc:ENTERPRISEPACK` plan namens (Office 365 Enterprise E3) deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-123">The following example creates a **LicenseOptions** object that disables the Office Online and SharePoint Online services in the licensing plan named `litwareinc:ENTERPRISEPACK` (Office 365 Enterprise E3).</span></span>
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
   ```
 
-2. <span data-ttu-id="3b09c-127">Verwenden Sie das **LicenseOptions**-Objekt aus Schritt 1 für einen oder mehrere Benutzer.</span><span class="sxs-lookup"><span data-stu-id="3b09c-127">Use the **LicenseOptions** object from Step 1 on one or more users.</span></span>
+2. <span data-ttu-id="3ae9b-124">Verwenden Sie das **LicenseOptions**-Objekt aus Schritt 1 für einen oder mehrere Benutzer.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-124">Use the **LicenseOptions** object from Step 1 on one or more users.</span></span>
     
-  - <span data-ttu-id="3b09c-128">Wenn Sie ein neues Konto zu erstellen möchten, für das die Dienste deaktiviert sind, verwenden Sie die folgende Syntax:</span><span class="sxs-lookup"><span data-stu-id="3b09c-128">To create a new account that has the services disabled, use the following syntax:</span></span>
+  - <span data-ttu-id="3ae9b-125">Wenn Sie ein neues Konto zu erstellen möchten, für das die Dienste deaktiviert sind, verwenden Sie die folgende Syntax:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-125">To create a new account that has the services disabled, use the following syntax:</span></span>
     
   ```
   New-MsolUser -UserPrincipalName <Account> -DisplayName <DisplayName> -FirstName <FirstName> -LastName <LastName> -LicenseAssignment <AccountSkuId> -LicenseOptions $LO -UsageLocation <CountryCode>
   ```
 
-  <span data-ttu-id="3b09c-129">Das folgende Beispiel erstellt ein neues Konto für Allie Bellew, die die Lizenz zugewiesen und deaktiviert die Dienste, die in Schritt 1 beschrieben.</span><span class="sxs-lookup"><span data-stu-id="3b09c-129">The following example creates a new account for Allie Bellew that assigns the license and disables the services described in Step 1.</span></span>
+  <span data-ttu-id="3ae9b-126">Das folgende Beispiel erstellt ein neues Konto für Allie Bellew, das die Lizenz zuweist und die in Schritt 1 beschriebenen Dienste deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-126">The following example creates a new account for Allie Bellew that assigns the license and disables the services described in Step 1.</span></span>
     
   ```
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  <span data-ttu-id="3b09c-130">Weitere Informationen zum Erstellen von Benutzerkonten in Office 365 PowerShell finden Sie unter [Erstellen von Benutzerkonten mit Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3b09c-130">For more information about creating user accounts in Office 365 PowerShell, see [Create user accounts with Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span></span>
+  <span data-ttu-id="3ae9b-127">Weitere Informationen zum Erstellen von Benutzerkonten in Office 365 PowerShell finden Sie unter [Create User Accounts with office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3ae9b-127">For more information about creating user accounts in Office 365 PowerShell, see [Create user accounts with Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).</span></span>
     
-  - <span data-ttu-id="3b09c-131">Verwenden Sie die folgende Syntax, um die Dienste für einen vorhandenen lizenzierten Benutzer zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="3b09c-131">To disable the services for an existing licensed user, use the following syntax:</span></span>
+  - <span data-ttu-id="3ae9b-128">Verwenden Sie die folgende Syntax, um die Dienste für einen vorhandenen lizenzierten Benutzer zu deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-128">To disable the services for an existing licensed user, use the following syntax:</span></span>
     
   ```
   Set-MsolUserLicense -UserPrincipalName <Account> -LicenseOptions $LO
   ```
 
-  <span data-ttu-id="3b09c-132">In diesem Beispiel werden die Dienste für den Benutzer „BelindaN@litwareinc.com“ deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="3b09c-132">This example disables the services for the user BelindaN@litwareinc.com.</span></span>
+  <span data-ttu-id="3ae9b-129">In diesem Beispiel werden die Dienste für den Benutzer „BelindaN@litwareinc.com“ deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-129">This example disables the services for the user BelindaN@litwareinc.com.</span></span>
     
   ```
   Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -LicenseOptions $LO
   ```
 
-  - <span data-ttu-id="3b09c-133">Um die Dienste beschrieben in Schritt 1 für alle vorhandenen lizenzierten Benutzer zu deaktivieren, geben Sie den Namen Ihres Office 365 Plans aus der Anzeige des Cmdlets **Get-MsolAccountSku** (beispielsweise **litwareinc: enterprisepack**), und führen Sie dann die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="3b09c-133">To disable the services described in Step 1 for all existing licensed users, specify the name of your Office 365 plan from the display of the **Get-MsolAccountSku** cmdlet (such as **litwareinc:ENTERPRISEPACK**), and then run the following commands:</span></span>
+  - <span data-ttu-id="3ae9b-130">Um die in Schritt 1 beschriebenen Dienste für alle vorhandenen lizenzierten Benutzer zu deaktivieren, geben Sie den Namen Ihres Office 365-Plans aus der Anzeige des Cmdlets **Get-MsolAccountSku** (beispielsweise **litwareinc: ENTERPRISEPACK**) an, und führen Sie dann die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-130">To disable the services described in Step 1 for all existing licensed users, specify the name of your Office 365 plan from the display of the **Get-MsolAccountSku** cmdlet (such as **litwareinc:ENTERPRISEPACK**), and then run the following commands:</span></span>
     
   ```
   $acctSKU="<AccountSkuId>"
@@ -99,25 +103,28 @@ ms.locfileid: "25897418"
   $AllLicensed | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  - <span data-ttu-id="3b09c-134">Verwenden Sie eine der folgenden Methoden, um die Dienste für eine Gruppe von vorhandenen Benutzern zu deaktivieren und die Benutzer zu identifizieren:</span><span class="sxs-lookup"><span data-stu-id="3b09c-134">To disable the services for a group of existing users, use either of the following methods to identify the users:</span></span>
+  <span data-ttu-id="3ae9b-131">Wenn Sie das Cmdlet **Get-MsolUser** ohne den Parameter _all_ verwenden, werden nur die ersten 500-Benutzerkonten zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-131">If you use the **Get-MsolUser** cmdlet without using the _All_ parameter, only the first 500 user accounts are returned.</span></span>
+
+
+  - <span data-ttu-id="3ae9b-132">Verwenden Sie eine der folgenden Methoden, um die Dienste für eine Gruppe von vorhandenen Benutzern zu deaktivieren und die Benutzer zu identifizieren:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-132">To disable the services for a group of existing users, use either of the following methods to identify the users:</span></span>
     
-  - <span data-ttu-id="3b09c-135">**Filtern die anhand eines vorhandenen Attributs Konto Konten** Verwenden Sie dazu die folgende Syntax:</span><span class="sxs-lookup"><span data-stu-id="3b09c-135">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
+  - <span data-ttu-id="3ae9b-133">**Filtern der Konten basierend auf einem vorhandenen Kontoattribut** Verwenden Sie dazu die folgende Syntax:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-133">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
     
   ```
   $x = Get-MsolUser -All <FilterableAttributes>
   $x | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  <span data-ttu-id="3b09c-136">Das folgende Beispiel deaktiviert die Dienste für Benutzer in der Abteilung "Sales" in den USA.</span><span class="sxs-lookup"><span data-stu-id="3b09c-136">The following example disables the services for users in the Sales department in the United States.</span></span>
+  <span data-ttu-id="3ae9b-134">Im folgenden Beispiel werden die Dienste für Benutzer in der Vertriebsabteilung in den USA deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-134">The following example disables the services for users in the Sales department in the United States.</span></span>
     
   ```
   $USSales = Get-MsolUser -All -Department "Sales" -UsageLocation "US"
   $USSales | ForEach {Set-MsolUserLicense -UserPrincipalName $_.UserPrincipalName -LicenseOptions $LO}
   ```
 
-  - <span data-ttu-id="3b09c-137">**Verwenden einer Liste spezieller Konten** Führen Sie dazu die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="3b09c-137">**Use a list of specific accounts** To do this, perform the following steps:</span></span>
+  - <span data-ttu-id="3ae9b-135">**Verwenden einer Liste bestimmter Konten** Führen Sie dazu die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-135">**Use a list of specific accounts** To do this, perform the following steps:</span></span>
     
-1. <span data-ttu-id="3b09c-138">Erstellen Sie eine Textdatei wie die folgende, die in jeder Zeile ein Konto enthält:</span><span class="sxs-lookup"><span data-stu-id="3b09c-138">Create a text file that contains one account on each line like this:</span></span>
+1. <span data-ttu-id="3ae9b-136">Erstellen Sie eine Textdatei wie die folgende, die in jeder Zeile ein Konto enthält:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-136">Create a text file that contains one account on each line like this:</span></span>
     
   ```
   akol@contoso.com
@@ -125,59 +132,39 @@ ms.locfileid: "25897418"
   kakers@contoso.com
   ```
 
-  <span data-ttu-id="3b09c-139">In diesem Beispiel wird die Textdatei C:\\eigene\\Accounts.txt.</span><span class="sxs-lookup"><span data-stu-id="3b09c-139">In this example, the text file is C:\\My Documents\\Accounts.txt.</span></span>
+  <span data-ttu-id="3ae9b-137">In diesem Beispiel lautet die Textdatei "C:\\My Documents\\Accounts. txt".</span><span class="sxs-lookup"><span data-stu-id="3ae9b-137">In this example, the text file is C:\\My Documents\\Accounts.txt.</span></span>
     
-2. <span data-ttu-id="3b09c-140">Führen Sie den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="3b09c-140">Run the following command:</span></span>
+2. <span data-ttu-id="3ae9b-138">Führen Sie den folgenden Befehl aus:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-138">Run the following command:</span></span>
     
   ```
   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
   ```
 
-<span data-ttu-id="3b09c-141">Wenn Sie Zugriff auf Dienste für mehrere lizenzierungspläne deaktivieren möchten, wiederholen Sie für jede Lizenzierungsplan, die sicherstellen, dass der obigen Anleitung:</span><span class="sxs-lookup"><span data-stu-id="3b09c-141">If you want to disable access to services for multiple licensing plans, repeat the above instructions for each licensing plan, ensuring that:</span></span>
+<span data-ttu-id="3ae9b-139">Wenn Sie den Zugriff auf Dienste für mehrere Lizenzierungs Pläne deaktivieren möchten, wiederholen Sie die obigen Anweisungen für jeden Lizenzierungs Plan, und stellen Sie sicher, dass:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-139">If you want to disable access to services for multiple licensing plans, repeat the above instructions for each licensing plan, ensuring that:</span></span>
 
-- <span data-ttu-id="3b09c-142">Die Benutzerkonten haben den Lizenzierungsplan zugewiesen wurde.</span><span class="sxs-lookup"><span data-stu-id="3b09c-142">The user accounts have been assigned the licensing plan.</span></span>
-- <span data-ttu-id="3b09c-143">So deaktivieren Sie die Dienste sind in den Lizenzierungsplan verfügbar.</span><span class="sxs-lookup"><span data-stu-id="3b09c-143">The services to disable are available in the licensing plan.</span></span>
+- <span data-ttu-id="3ae9b-140">Dem Lizenzplan wurden die Benutzerkonten zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-140">The user accounts have been assigned the licensing plan.</span></span>
+- <span data-ttu-id="3ae9b-141">Die zu deaktivierenden Dienste sind im Lizenzierungs Plan verfügbar.</span><span class="sxs-lookup"><span data-stu-id="3ae9b-141">The services to disable are available in the licensing plan.</span></span>
 
-<span data-ttu-id="3b09c-144">Um Office 365-Diensten für Benutzer zu deaktivieren, während Sie sie an einer Lizenzierungsplan zuweisen, finden Sie unter [Zugriff auf Dienste beim Zuweisen von Benutzerlizenzen deaktivieren](disable-access-to-services-while-assigning-user-licenses.md).</span><span class="sxs-lookup"><span data-stu-id="3b09c-144">To disable Office 365 services for users while you are assigning them to a licensing plan, see [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</span></span>
+<span data-ttu-id="3ae9b-142">Informationen zum Deaktivieren von Office 365-Diensten für Benutzer, während Sie Sie einem Lizenzierungs Plan zuweisen, finden Sie unter [Deaktivieren des Zugriffs auf Dienste beim Zuweisen von Benutzerlizenzen](disable-access-to-services-while-assigning-user-licenses.md).</span><span class="sxs-lookup"><span data-stu-id="3ae9b-142">To disable Office 365 services for users while you are assigning them to a licensing plan, see [Disable access to services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</span></span>
 
 
-## <a name="new-to-office-365"></a><span data-ttu-id="3b09c-145">Neu bei Office 365?</span><span class="sxs-lookup"><span data-stu-id="3b09c-145">New to Office 365?</span></span>
-<span data-ttu-id="3b09c-146"><a name="LinkedIn"> </a></span><span class="sxs-lookup"><span data-stu-id="3b09c-146"></span></span>
+## <a name="new-to-office-365"></a><span data-ttu-id="3ae9b-143">Neu bei Office 365?</span><span class="sxs-lookup"><span data-stu-id="3ae9b-143">New to Office 365?</span></span>
+<span data-ttu-id="3ae9b-144"><a name="LinkedIn"> </a></span><span class="sxs-lookup"><span data-stu-id="3ae9b-144"></span></span>
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
    
-## <a name="see-also"></a><span data-ttu-id="3b09c-147">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3b09c-147">See also</span></span>
-<span data-ttu-id="3b09c-148"><a name="SeeAlso"> </a></span><span class="sxs-lookup"><span data-stu-id="3b09c-148"></span></span>
+## <a name="see-also"></a><span data-ttu-id="3ae9b-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3ae9b-145">See also</span></span>
+<span data-ttu-id="3ae9b-146"><a name="SeeAlso"> </a></span><span class="sxs-lookup"><span data-stu-id="3ae9b-146"></span></span>
 
-<span data-ttu-id="3b09c-149">In den folgenden zusätzlichen Themen finden Sie weitere Informationen zum Verwalten von Benutzern mit Office 365 PowerShell:</span><span class="sxs-lookup"><span data-stu-id="3b09c-149">See the following additional topics about managing users with Office 365 PowerShell:</span></span>
+<span data-ttu-id="3ae9b-147">In den folgenden zusätzlichen Themen finden Sie weitere Informationen zum Verwalten von Benutzern mit Office 365 PowerShell:</span><span class="sxs-lookup"><span data-stu-id="3ae9b-147">See the following additional topics about managing users with Office 365 PowerShell:</span></span>
   
-- [<span data-ttu-id="3b09c-150">Löschen und Wiederherstellen von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3b09c-150">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="3ae9b-148">Löschen und Wiederherstellen von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-148">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3b09c-151">Löschen und Wiederherstellen von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3b09c-151">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="3ae9b-149">Löschen und Wiederherstellen von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-149">Delete and restore user accounts with Office 365 PowerShell</span></span>](delete-and-restore-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3b09c-152">Blockieren von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3b09c-152">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="3ae9b-150">Blockieren von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-150">Block user accounts with Office 365 PowerShell</span></span>](block-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3b09c-153">Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3b09c-153">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="3ae9b-151">Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-151">Assign licenses to user accounts with Office 365 PowerShell</span></span>](assign-licenses-to-user-accounts-with-office-365-powershell.md)
     
-- [<span data-ttu-id="3b09c-154">Erstellen von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3b09c-154">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
+- [<span data-ttu-id="3ae9b-152">Erstellen von Benutzerkonten mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3ae9b-152">Create user accounts with Office 365 PowerShell</span></span>](create-user-accounts-with-office-365-powershell.md)
     
-<span data-ttu-id="3b09c-155">Weitere Informationen zu den in diesen Verfahren Thema verwendeten Cmdlets finden Sie unter den folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="3b09c-155">For more information about the cmdlets that are used in these procedures, see the following topics:</span></span>
-  
-- [<span data-ttu-id="3b09c-156">Get-Content</span><span class="sxs-lookup"><span data-stu-id="3b09c-156">Get-Content</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=289917)
-    
-- [<span data-ttu-id="3b09c-157">Get-MsolAccountSku</span><span class="sxs-lookup"><span data-stu-id="3b09c-157">Get-MsolAccountSku</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691549)
-    
-- [<span data-ttu-id="3b09c-158">Neue MsolLicenseOptions</span><span class="sxs-lookup"><span data-stu-id="3b09c-158">New-MsolLicenseOptions</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691546)
-    
-- [<span data-ttu-id="3b09c-159">Get-MsolUser</span><span class="sxs-lookup"><span data-stu-id="3b09c-159">Get-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691543)
-    
-- [<span data-ttu-id="3b09c-160">New-MsolUser</span><span class="sxs-lookup"><span data-stu-id="3b09c-160">New-MsolUser</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691547)
-    
-- [<span data-ttu-id="3b09c-161">Set-MsolUserLicense</span><span class="sxs-lookup"><span data-stu-id="3b09c-161">Set-MsolUserLicense</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691548)
-    
-- [<span data-ttu-id="3b09c-162">ForEach-Object</span><span class="sxs-lookup"><span data-stu-id="3b09c-162">ForEach-Object</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113300)
-    
-- [<span data-ttu-id="3b09c-163">Where-Object</span><span class="sxs-lookup"><span data-stu-id="3b09c-163">Where-Object</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=113423)
-    
-  
-
