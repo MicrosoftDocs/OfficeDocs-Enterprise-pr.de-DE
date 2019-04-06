@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: 6c52c7c7fdc31616e58f186484d2d8c4506b7ea6
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: b9c12a132eb83f0317503a736313b547dfe475e7
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573819"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038019"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
@@ -39,7 +39,7 @@ Wenn Sie Advanced eDiscovery auf einfache Weise mit den Mindestanforderungen tes
 Wenn Sie die erweiterte eDiscovery in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen unter [Dirsync für Ihre Office 365 dev/Test-Umgebung](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Für das Testen der Erweiterten eDiscovery ist keine simulierte Unternehmensumgebung erforderlich, die ein simuliertes Intranet, das mit dem Internet verbunden ist, und die Verzeichnissynchronisierung für eine Windows Server AD-Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Tests und experimentieren in einer Umgebung ausführen können, die eine typische Organisation darstellt. 
+> Das Testen von Advanced eDiscovery erfordert nicht die simulierte Unternehmensumgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) verbunden ist. Sie wird hier als Option bereitgestellt, damit Sie Tests und experimentieren in einer Umgebung ausführen können, die eine typische Organisation darstellt. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Phase 2: Erstellen von Beispieldaten für die Erweiterte eDiscovery
 

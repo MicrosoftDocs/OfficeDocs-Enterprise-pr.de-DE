@@ -3,7 +3,7 @@ title: Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 04/01/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Zusammenfassung: Konfigurieren und veranschaulichen, wie Office 365 Information Rights Management Ihre vertraulichen Dateien schützt, auch wenn Sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden.'
-ms.openlocfilehash: 59d4cf56113f8b787f0caeaefddae135ad8e6249
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: daed3b87983de79268b45dc4f92578c7c8bc59cb
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574069"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037969"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen
 
@@ -232,7 +232,7 @@ Um Office 365 für die Phasen 3 und 4 vorzubereiten, aktivieren Sie IRM für Sh
     
 5. Klicken Sie auf der Registerkarte **SharePoint Admin Center** auf **Einstellungen**.
     
-6. Wählen Sie auf der Seite **Einstellungen** im Abschnitt **Information Rights Management (IRM)** die Option **Den in der Konfiguration angegebenen IRM-Dienst verwenden** aus, und wählen Sie dann **IRM-Einstellungen aktualisieren**.
+6. Wählen Sie auf der Seite im Abschnitt **Verwaltung von Informationsrechten (IRM)** **den in der Konfiguration angegebenen IRM-Dienst verwenden**aus, und wählen Sie dann IRM- **Einstellungen aktualisieren**aus.
     
 7. Schließen Sie die Registerkarte **SharePoint Admin Center**.
     
@@ -264,7 +264,7 @@ Als Erstes aktivieren und konfigurieren Sie IRM für die Dokumentbibliothek der 
     
 8. Wählen Sie unter **Dokumentzugriffsrechte konfigurieren** die Optionen **Drucken durch anzeigende Benutzer zulassen** und **Anzeigenden Benutzern das Schreiben in einer Kopie des heruntergeladenen Dokuments gestatten**.
     
-9. Wählen Sie unter **Gruppenschutz und Intervall für Anmeldeinformationen festlegen** die Option **Gruppenschutz zulassen**, und geben Sie unter **Standardgruppe** den Text **Führungskräfte** ein.
+9. Wählen Sie unter **Gruppen Schutz und Anmeldeinformationen Intervall festlegen**die Option **Gruppen Schutz zulassen aus. Standardgruppe**, und geben Sie dann **Führungskräfte**ein.
     
 10. Klicken Sie auf **OK**.
     

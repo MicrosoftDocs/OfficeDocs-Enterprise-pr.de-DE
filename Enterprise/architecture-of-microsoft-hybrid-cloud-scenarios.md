@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 06d8c959-39e5-4150-b1ae-aaf0eee4c058
 description: 'Zusammenfassung: Informationen über die Architektur von Microsoft-Hybridcloudangeboten.'
-ms.openlocfilehash: 74fc046d1f60b29338e7f12184dec018538ba9da
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f5493c0f008b22af412ee95ccb8b7581eee71476
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123392"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31038009"
 ---
 # <a name="architecture-of-microsoft-hybrid-cloud-scenarios"></a>Architektur von Microsoft Hybrid Cloud-Szenarien
 
@@ -33,7 +33,7 @@ Verwenden Sie eine architekturbezogene Herangehensweise, wenn Sie Hybridcloudsze
   
 Abbildung 1 zeigt den Microsoft-Hybridcloudstack und die Schicht, die lokal, Netzwerk, Identität, Apps, Szenarien und die Kategorie des Clouddiensts (Microsoft SaaS, Azure PaaS und Azure PaaS) enthält.
   
-Ebene der Apps und Szenarien hat die bestimmte Hybrid-Cloud-Szenarien, die detailliert sind in den Artikeln dieses Modells. Die Identität, Netzwerk und lokalen Ebenen können gemeinsam die Kategorien von Cloud-Dienst (SaaS, PaaS oder PaaS) sein.
+Die Ebene apps und Szenarien hat die spezifischen Hybrid Cloud-Szenarien, die in den zusätzlichen Artikeln dieses Modells ausführlich erläutert werden. Die Schichten „Identität", „Netzwerk" und „Lokal" können sich über die Kategorien des Clouddiensts (SaaS, PaaS oder PaaS) erstrecken.
   
 - Lokal
     
@@ -41,11 +41,11 @@ Ebene der Apps und Szenarien hat die bestimmte Hybrid-Cloud-Szenarien, die detai
     
 - Netzwerk
     
-    Es gibt zwei Optionen für die Verbindung mit Microsoft-Cloud-Plattformen und Dienste: Ihre vorhandenen Internet Pipe und ExpressRoute. Verwenden Sie eine ExpressRoute-Verbindung, wenn vorhersehbare Leistung wichtig ist. Eine Verbindung als ExpressRoute können Sie direkt an Microsoft SaaS-Dienste (Office 365 und Dynamics 365), Azure PaaS-Dienste und Azure IaaS-Dienste eine Verbindung herstellen.
+    Es gibt zwei Optionen für die Verbindung zu Microsoft-Cloudplattformen und -Diensten: der vorhandene Internetzugang oder ExpressRoute. Verwenden Sie eine ExpressRoute-Verbindung, wenn vorhersehbare Leistung wichtig ist. Sie können eine Express Route-Verbindung verwenden, um eine direkte Verbindung zu Microsoft SaaS-Diensten (Office 365 und Dynamics 365), Azure PaaS-Diensten und Azure IaaS-Diensten herzustellen.
     
 - Identität
     
-    Je nach Microsoft-Cloudplattform gibt es zwei Möglichkeiten für die Cloudidentitätsinfrastruktur. Integrieren Sie für SaaS und Azure PaaS Ihre lokale Identitätsinfrastruktur in Azure AD oder einen Verbund mit Ihrer lokalen Infrastruktur oder Drittanbieter-Identitätsanbietern. Für in Azure ausgeführte virtuelle Computer können Sie Ihre lokale Identitätsinfrastruktur, z. B. Windows Server AD, auf virtuelle Netzwerke (VNets) erweitern, in denen sich ihre virtuellen Computer befinden.
+    Je nach Microsoft-Cloudplattform gibt es zwei Möglichkeiten für die Cloudidentitätsinfrastruktur. Integrieren Sie für SaaS und Azure PaaS Ihre lokale Identitätsinfrastruktur in Azure AD oder einen Verbund mit Ihrer lokalen Infrastruktur oder Drittanbieter-Identitätsanbietern. Für VMs, die in Azure laufen, können Sie Ihre lokale Identitätsinfrastruktur, wie etwa Active Directory-Domänendienste (AD DS), auf die virtuellen Netzwerke (VNets) erweitern, in denen sich ihre VMs befinden.
     
 ## <a name="hybrid-cloud-scenarios-for-the-three-phase-cloud-adoption-process"></a>Hybridcloudszenarien für den dreiphasigen Prozess der Cloudeinführung
 

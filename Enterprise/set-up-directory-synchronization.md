@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Office 365 und Ihrem lokalen Active Directory einrichten.
-ms.openlocfilehash: 03f824da6feb41791e12818d8da2e298dc633f4e
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492945"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001748"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Planen der Verzeichnissynchronisierung für Office 365
 
@@ -56,7 +56,7 @@ Für den lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen S
 |**Windows Server 2008** | -Die neueste unterstützte Version von PowerShell ist in Windows Management Framework 3,0 verfügbar, verfügbar im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
 
 > [!NOTE]
-> Wenn Sie Azure Active Directory dirSync verwenden, beträgt die maximale Anzahl von Verteilergruppenmitgliedern, die Sie von Ihrem lokalen Active Directory mit Azure Active Directory synchronisieren können, 15.000. Für Azure AD Connect ist diese Nummer 50.000. 
+> Wenn Sie Azure Active Directory dirSync verwenden, beträgt die maximale Anzahl von Verteilergruppenmitgliedern, die Sie von Ihrem lokalen Active Directory mit Azure Active Directory synchronisieren können, 15.000. Für Azure AD Connect ist diese Nummer 50.000.
   
 Lesen Sie die [vorausSetzungen für Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), um die Anforderungen an Hardware, Software, Konten und Berechtigungen, SSL-Zertifikatanforderungen und Objekt Grenzwerte für Azure AD Connect genauer zu prüfen.
   
@@ -64,8 +64,8 @@ Sie können auch den [Versionsverlauf](https://docs.microsoft.com/azure/active-d
 
 ## <a name="to-set-up-directory-synchronization"></a>So richten Sie die Verzeichnissynchronisierung ein
 
-1. melden sie sich beim Office 365 admin center an, und wählen sie im linken navigationsbereich **benutzer** \> **aktive benutzer** aus.
-2. wählen sie im Office 365 admin center auf der seite **aktive benutzer** **mehr** \> **verzeichnissynchronisierung**aus.
+1. melden sie sich beim [Microsoft 365 admin center](https://admin.microsoft.com) an, und wählen sie im linken navigationsbereich **benutzer** \> **aktive benutzer** aus.
+2. Wählen Sie im Admin Center auf der Seite **aktive Benutzer** **mehr** \> **Verzeichnissynchronisierung**aus.
 
     ![Wählen Sie im Menü mehr die Option Verzeichnissynchronisierung aus.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   

@@ -18,17 +18,17 @@ search.appverid:
 - MBS150
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
-description: Informationen zum Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365 Admin Center.
-ms.openlocfilehash: 8b7bb16aeddbf1765426c3725cd1f670524ef6d1
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+description: Informationen zum Anzeigen von Verzeichnis Synchronisierungsfehlern in Microsoft 365 Admin Center.
+ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085034"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001808"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
 
-Sie können Verzeichnis Synchronisierungsfehler im Office 365 Admin Center anzeigen. Nur die Fehler des Benutzerobjekts werden angezeigt. Informationen zum Anzeigen von Fehlern mithilfe von PowerShell finden Sie unter [Identifizieren von Objekten mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
+Verzeichnis Synchronisierungsfehler können im [Microsoft 365 Admin Center](https://admin.microsoft.com)angezeigt werden. Nur die Fehler des Benutzerobjekts werden angezeigt. Informationen zum Anzeigen von Fehlern mithilfe von PowerShell finden Sie unter [Identifizieren von Objekten mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
 Weitere Informationen finden Sie unter [Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) , um erkannte Probleme zu beheben.
   
@@ -36,9 +36,9 @@ Weitere Informationen finden Sie unter [Beheben von Problemen mit der Verzeichni
 
 So zeigen Sie Fehler im Admin Center an:
   
-1. Melden Sie sich bei Office 365 mit Ihrem Geschäfts, Schul- oder Unikonto an. 
+1. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an. 
     
-2. Wechseln Sie zum [Office 365 Admin Center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
+2. Wechseln Sie zum [Admin Center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     
 3. Auf der **Start** Seite sehen Sie die Dirsync- **Status** Kachel. 
     

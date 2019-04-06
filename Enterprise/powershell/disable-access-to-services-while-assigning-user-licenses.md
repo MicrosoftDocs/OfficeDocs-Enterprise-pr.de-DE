@@ -3,6 +3,7 @@ title: Deaktivieren des Zugriffs auf Dienste während des Zuweisens von Benutzer
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 04/01/2019
 ms.audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
@@ -13,26 +14,25 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: In diesem Artikel erfahren Sie, wie Sie Benutzerkonten Lizenzen zuweisen und gleichzeitig bestimmte Servicepläne mit Office 365 PowerShell deaktivieren.
-ms.openlocfilehash: 40abaa37b5a88eb69b01779894e851068a6454ee
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: c93f54fcd5716a0ea53290c24a2594b8bc63cecf
+ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "20017401"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001848"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deaktivieren des Zugriffs auf Dienste während des Zuweisens von Benutzerlizenzen
 
 **Zusammenfassung:** In diesem Artikel erfahren Sie, wie Sie Benutzerkonten Lizenzen zuweisen und gleichzeitig bestimmte Servicepläne mit Office 365 PowerShell deaktivieren.
   
 Im Lieferumfang von Office 365-Abonnements sind Servicepläne für einzelne Dienste enthalten. Office 365-Administratoren müssen häufig bestimmte Pläne deaktivieren, wenn Sie Benutzern Lizenzen zuweisen. Mit den Anweisungen in diesem Artikel können Sie eine Office 365-Lizenz zuweisen und gleichzeitig bestimmte Servicepläne mithilfe der PowerShell für ein bestimmtes Benutzerkonto oder mehrere Benutzerkonten deaktivieren.
-  
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Office 365 PowerShell herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
-  
-## <a name="collect-information-about-subscriptions-and-service-plans"></a>Erfassen von Informationen über Abonnements und Servicepläne
 
-Führen Sie diesen Befehl aus, um Ihre aktuellen Abonnements abzurufen:
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
+
+Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+
+Führen Sie als nächstes den folgenden Befehl aus, um Ihre aktuellen Abonnements anzuzeigen:
   
 ```
 Get-MsolAccountSku
@@ -59,22 +59,26 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 Anhand der vom Befehl zurückgegebenen Ausgabe können Sie bestimmen, welche Servicepläne Sie beim Zuweisen von Lizenzen an Benutzer deaktivieren möchten.
   
 Hier ist eine unvollständige Liste der Servicepläne und der entsprechenden Office 365-Dienste.
+
+In der folgenden Tabelle sind die Office 365-Servicepläne und Anzeigenamen der beliebtesten Dienste aufgeführt. Ihre individuelle Serviceplanliste sieht möglicherweise anders aus. 
   
 |**Dienstplan**|**Beschreibung**|
 |:-----|:-----|
-|SWAY  <br/> |Sway  <br/> |
-|INTUNE_O365  <br/> |Verwaltung mobiler Geräte in Office 365  <br/> |
-|YAMMER_ENTERPRISE  <br/> |Yammer  <br/> |
-|RMS_S_ENTERPRISE  <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
-|OFFICESUBSCRIPTION  <br/> |Office Professional Plus  <br/> |
-|MCOSTANDARD  <br/> |Skype for Business Online  <br/> |
-|SHAREPOINTWAC  <br/> |Office Online  <br/> |
-|SHAREPOINTENTERPRISE  <br/> |SharePoint Online  <br/> |
-|EXCHANGE_S_ENTERPRISE  <br/> |Exchange Online Plan 2  <br/> |
+| `SWAY` <br/> |Sway  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
+| `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
+| `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
+   
+Eine vollständige Liste von Lizenzplänen (auch bezeichnet als Produktnamen), deren enthaltenen Serviceplänen und die entsprechenden Anzeigenamen finden Sie unter [Produktnamen und Serviceplanbezeichner für die Lizenzierung](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
    
 Nachdem Sie festgelegt haben, dass AccountSkuId und die Servicepläne deaktiviert werden sollen, können Sie einem einzelnen oder mehreren Benutzern Lizenzen zuweisen.
   
-## <a name="for-a-single-user"></a>Für einen einzelnen Benutzer
+### <a name="for-a-single-user"></a>Für einen einzelnen Benutzer
 
 Geben Sie für einen einzelnen Benutzer den Benutzerprinzipalnamen des Bneutzerkontos, die AccountSkuId und die Liste der zu deaktivierenden Servicepläne ein, und entfernen Sie den erläuternden Text sowie die Zeichen „\<" und „>". Führen Sie anschließend die resultierenden Befehle in der PowerShell-Eingabeaufforderung aus.
   
@@ -106,7 +110,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 Set-MsolUser -UserPrincipalName $userUpn -UsageLocation $UsageLocation
 ```
 
-## <a name="for-multiple-users"></a>Für mehrere Benutzer
+### <a name="for-multiple-users"></a>Für mehrere Benutzer
 
 Erstellen Sie zum Ausführen dieser Aufgabe eine CSV-Textdatei mit den UserPrincipalName- und UsageLocation-Feldern. Hier ein Beispiel:
   
