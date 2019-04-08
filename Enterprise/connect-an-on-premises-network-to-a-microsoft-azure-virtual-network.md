@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten mit einer Standort-zu-Standort-VPN-Verbindung.'
-ms.openlocfilehash: ea5ecf6e44c11f8381a8fa75f523a765ce1669f6
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f6ee25d7e1564ce5770bada709934e68dd6888ee
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948626"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037989"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
@@ -83,7 +83,7 @@ Die folgende Liste enthält die Entwurfsentscheidungen, die für diese Lösungsa
     
 - Sie können RRAS (Routing- und RAS-Dienst) in Windows Server 2016 oder Windows Server 2012 verwenden, um eine IPsec-Standort-zu-Standort-VPN-Verbindung zwischen dem lokalen Netzwerk und dem virtuellen Azure-Netzwerk herzustellen. Sie können auch andere Optionen wie Cisco- und Juniper Networks-VPN-Geräte wählen.
     
-- Das lokale Netzwerk kann weiterhin Netzwerkdienste wie Windows Server Active Directory (AD), Domain Name System (DNS) und Proxy-Server enthalten. Je nach Ihren Anforderungen kann es von Vorteil sein, einige der Netzwerkressourcen in dem virtuellen Azure-Netzwerk zu betreiben.
+- Das lokale Netzwerk kann weiterhin Netzwerkdienste wie Active Directory Domain Services (AD DS), Domain Name System (DNS) und Proxy-Server enthalten. Je nach Ihren Anforderungen kann es von Vorteil sein, einige der Netzwerkressourcen in dem virtuellen Azure-Netzwerk zu betreiben.
     
 Bestimmen Sie bei einem vorhandenen virtuellen Azure-Netzwerk mit einem oder mehreren Subnetzen, ob es genügend Adressraum für ein weiteres Subnetz zum Hosten Ihrer erforderlichen virtuellen Computer den Anforderungen entsprechend gibt. Wenn Sie keinen verbleibenden Adressraum für ein weiteres Subnetz haben, erstellen Sie ein zusätzliches virtuelles Netzwerk, das über eine eigene Standort-zu-Standort-zu-Standort-VPN-Verbindung verfügt.
   
@@ -211,10 +211,8 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 
 Öffnen Sie zunächst eine Azure PowerShell-Eingabeaufforderung. Informationen zum Vorgehen, wenn Sie Azure PowerShell nicht installiert haben, finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
 
-<!--  
-> [!NOTE]
-> These commands are for Azure PowerShell 1.0 and above. For a text file that has all the PowerShell commands in this article, click [here](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
--->
+> [!TIP]
+> Eine Textdatei mit allen PowerShell-Befehlen aus diesem Artikel finden Sie [hier](https://gallery.technet.microsoft.com/scriptcenter/PowerShell-commands-for-5c5a7c19). 
   
 Melden Sie sich dann bei Ihrem Azure-Konto mit diesem Befehl an.
   

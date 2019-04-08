@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 6fcbb50c-ac68-4be7-9fc5-dd0f275c1e3d
 description: 'Zusammenfassung: Erstellen Sie ein vereinfachtes Intranet als Entwicklungs-/Testumgebung in Microsoft Azure.'
-ms.openlocfilehash: a38fc04ffe4ffa9a76430cf44543174570d398bc
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: b232372654d6244589bf1f10c3d76d4b7558aa23
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948616"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037979"
 ---
 # <a name="base-configuration-devtest-environment"></a>Basiskonfiguration der Entwicklungs-/Testumgebung
 
@@ -121,10 +121,8 @@ Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.
 Connect-AzAccount
 ```
 
-<!--
 > [!TIP]
-> Click [here](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d) to get a text file that has all the PowerShell commands in this article.
--->
+> Klicken Sie [hier](https://gallery.technet.microsoft.com/PowerShell-commands-for-ba957d3d), um eine Textdatei zu erhalten, die alle PowerShell-Befehle in diesem Artikel enthält.
 
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
@@ -173,7 +171,7 @@ Dies ist Ihre aktuelle Konfiguration.
   
 ### <a name="step-2-configure-dc1"></a>Schritt 2: Konfigurieren von DC1
 
-In diesem Schritt erstellen Sie den virtuellen Computer DC1 und konfigurieren diesen als Domänencontroller für die Windows Server Active Directory-Domäne „corp.contoso.com“ sowie einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab.
+In diesem Schritt erstellen Sie den virtuellen Computer DC1 und konfigurieren diesen als Domänencontroller für die AD DS-Domäne (Active Directory Domain Services) „corp.contoso.com“ sowie einen DNS-Server für die virtuellen Computer des virtuellen Netzwerks TestLab.
 
 > [!NOTE]
 > Stellen Sie vor dem Ausführen des folgenden Befehlsblocks sicher, dass die Azure-Region (Standort), die Sie ausgewählt haben, die Größe der Azure-VM unterstützt, die standardmäßig auf Standard_A1 festgelegt ist. Klicken Sie [hier](https://azure.microsoft.com/global-infrastructure/services/?products=virtual-machines), um die neuesten Informationen zu den Größen und Standorten von Azure-VMs anzuzeigen.

@@ -1,9 +1,8 @@
 ---
-title: Konfigurieren der Suche für Multi-Geo in OneDrive for Business
+title: Konfigurieren der Suche für Office 365 Multi-Geo
 ms.author: tlarsen
 author: tklarsen
 manager: arnek
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -11,20 +10,18 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen zum Konfigurieren der Suche in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: c56e7d310dd6ece53fdea36df4ad94e2ebbc64cb
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 5a06b30e7850a23ff6443eb8b5b2e9e14850a7db
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "26705459"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931834"
 ---
-# <a name="configure-search-for-onedrive-for-business-multi-geo"></a>Konfigurieren der Suche für Multi-Geo in OneDrive for Business
+# <a name="configure-search-for-office-365-multi-geo"></a>Konfigurieren der Suche für Office 365 Multi-Geo
 
-In einer OneDrive for Business-Umgebung mit Multi-Geo kann eine Organisation über einen Office 365-Mandanten verfügen, ihre OneDrive for Business-Inhalte jedoch an mehreren geografischen Standorten speichern – einem zentralen Standort und einem oder mehreren Satellitenstandorten.
+In einer Multi-Geo-Umgebung besitzt jeder geografische Standort einen eigenen Suchindex und ein Suchcenter. Wenn ein Benutzer eine Suche durchführt, wird die Abfrage in alle Indizes aufgefächert, und die zurückgegebenen Ergebnisse werden zusammengeführt.
 
-Jeder geografische Standort verfügt über einen eigenen Suchindex und ein Suchcenter. Wenn ein Benutzer eine Suche durchführt, wird die Abfrage in alle Indizes aufgefächert, und die zurückgegebenen Ergebnisse werden zusammengeführt.
-
-Ein Benutzer an einem geografischen Standort kann zum Beispiel nach Inhalten an einem anderen Standort oder auf einer SharePoint-Website suchen, die auf einen anderen geografischen Standort eingeschränkt ist. Wenn der Benutzer Zugriff auf diese Inhalte hat, wird das Suchergebnis angezeigt.
+Ein Benutzer an einem geografischen Standort kann zum Beispiel nach Inhalten an einem anderen Standort oder auf einer SharePoint-Website suchen, die auf einen anderen geografischen Standort eingeschränkt ist. Wenn der Benutzer Zugriff auf diese Inhalte hat, liefert die Suche das Ergebnis.
 
 ## <a name="which-search-clients-work-in-a-multi-geo-environment"></a>Welche Suchclients können in einer Multi-Geo-Umgebung verwendet werden?
 
@@ -48,7 +45,7 @@ Sobald die Multi-Geo-Umgebung eingerichtet wurde, erhalten Benutzer, die eine Su
 
 Sobald die Multi-Geo-Umgebung eingerichtet wurde, erhalten Benutzer, die eine Suche in Delve durchführen, Ergebnisse aus allen geografischen Standorten.
 
-Der Delve-Feed und die Profilkarte zeigen nur eine Vorschau der Dateien an, die sich an dem **zentralen** Standort befinden. Für Dateien, die sich an Satellitenstandorten befinden, wird stattdessen das Symbol für den Dateityp angezeigt.
+Der Delve-Feed und die Profilkarte zeigen nur eine Vorschau der Dateien an, die an dem zentralen Standort gespeichert sind. Für Dateien, die sich an Satellitenstandorten befinden, wird stattdessen das Symbol für den Dateityp angezeigt.
 
 ### <a name="the-sharepoint-home-page"></a>Die SharePoint-Homepage
 
@@ -69,7 +66,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 <table>
 <thead>
 <tr class="header">
-<th align="left"><strong>Funktion</strong></th>
+<th align="left"><strong>Feature</strong></th>
 <th align="left"><strong>Funktionsweise</strong></th>
 <th align="left"><strong>Problemumgehung</strong></th>
 </tr>
@@ -77,13 +74,13 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 <tbody>
 <tr class="odd">
 <td align="left">Höhergestufte Ergebnisse</td>
-<td align="left">Sie können Abfrageregeln mit höhergestuften Ergebnissen auf verschiedenen Ebenen erstellen: für den gesamten Mandanten, für eine Websitesammlung oder für eine Website. Definieren Sie in einer Multi-Geo-Umgebung höhergestufte Ergebnisse auf der <strong>Mandantenebene</strong>, wenn die Ergebnisse in den Suchcentern an <strong>allen</strong> geografischen Standorten höhergestuft werden sollen. Wenn Sie <strong>nur</strong> Ergebnisse im Suchcenter, das sich an einem geografischen Standort der Websitesammlung oder Website befindet, höherstufen möchten, definieren Sie die Ergebnisse auf der <strong>Websitesammlungs</strong>- oder <strong>Website</strong>ebene.</td>
-<td align="left">Wenn Sie keine anderen höhergestuften Ergebnisse pro geografischem Standort benötigen, zum Beispiel verschiedene Regeln für Reisen, wird empfohlen, höhergestufte Ergebnisse auf Mandantenebene zu definieren.</td>
+<td align="left">Sie können Abfrageregeln mit höhergestuften Ergebnissen auf verschiedenen Ebenen erstellen: für den gesamten Mandanten, für eine Websitesammlung oder für eine Website. Definieren Sie in einer Multi-Geo-Umgebung höhergestufte Ergebnisse auf der Mandantenebene, wenn die Ergebnisse in den Suchcentern an allen geografischen Standorten höhergestuft werden sollen. Wenn Sie nur Ergebnisse im Suchcenter, das sich am geografischen Standort der Websitesammlung oder Website befindet, höherstufen möchten, definieren Sie die höhergestuften Ergebnisse auf der Websitesammlungs- oder Websiteebene. Diese Ergebnisse werden nicht an anderen geografischen Standorten höhergestuft.</td>
+<td align="left">Wenn Sie keine unterschiedlichen höhergestuften Ergebnisse pro geografischem Standort benötigen, zum Beispiel verschiedene Regeln für Reisen, wird empfohlen, höhergestufte Ergebnisse auf Mandantenebene zu definieren.</td>
 </tr>
 <tr class="even">
 <td align="left">Sucheinschränkungen</td>
 <td align="left">Die Suche gibt Einschränkungen aus allen geografischen Standorten eines Mandanten zurück und aggregiert diese dann. Die Aggregation ist die beste Bemühung und bedeutet, dass die Anzahl der Einschränkungen nicht exakt 100%ig ist. Für die meisten suchgesteuerten Szenarien ist diese Genauigkeit ausreichend. </td>
-<td align="left">Führen Sie für suchgesteuerte Anwendungen, die von der Vollständigkeit der Einschränkungen abhängig sind, eine Abfrage für jeden geografischen Standort getrennt voneinander durch, ohne die Multi-Geo-Auffächerung zu verwenden.</td>
+<td align="left">Führen Sie für suchgesteuerte Anwendungen, die von der Vollständigkeit der Einschränkungen abhängig sind, eine Abfrage für jeden geografischen Standort getrennt voneinander durch.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -93,11 +90,16 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 <tr class="even">
 <td align="left">Dokument-IDs</td>
 <td align="left">Wenn Sie eine suchgesteuerte Anwendung entwickeln, die von Dokument-IDs abhängig ist, müssen Sie beachten, dass die Dokument-IDs in einer Multi-Geo-Umgebung nicht standortübergreifend eindeutig sind, sie sind jeweils pro Standort eindeutig.</td>
-<td align="left">Es wurde eine Spalte hinzugefügt, die den geografischen Standort identifiziert. Verwenden Sie diese Spalte, um Eindeutigkeit zu erreichen. Diese Spalte trägt den Namen „GeoLocationSource“.</td>
+<td align="left">Es wurde eine Spalte hinzugefügt, die den geografischen Standort identifiziert. Verwenden Sie diese Spalte, um Eindeutigkeit zu erreichen. Die Spalte hat den Namen „GeoLocationSource“.</td>
 </tr>
 <tr class="odd">
 <td align="left">Anzahl der Ergebnisse</td>
 <td align="left">Auf der Seite mit den Suchergebnissen werden die kombinierten Ergebnisse von den geografischen Standorten angezeigt, die Seite darf jedoch 500 Ergebnisse nicht überschreiten.</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Hybridsuche</td>
+<td align="left">In einer SharePoint-Hybridumgebung mit <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Cloudhybridsuche</a> werden lokale Inhalte dem Office 365-Index des zentralen Standorts hinzugefügt.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -128,7 +130,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, werden in einer M
 
 ## <a name="how-does-search-work-in-a-multi-geo-environment"></a>Wie funktioniert die Suche in einer Multi-Geo-Umgebung?
 
-**Alle** Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
+Alle Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
 
 <img src="media/configure-search-for-multi-geo-image1-1.png" />
 
@@ -153,7 +155,7 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 3.  Wählen Sie die Sparte, die Sie einrichten möchten, klicken Sie in der oberen rechten Ecke auf das Zahnradsymbol für **Einstellungen**, und klicken Sie auf **Seite bearbeiten**. Die Seite mit den Suchergebnissen wird im Bearbeitungsmodus geöffnet.
 
      ![](media/configure-search-for-multi-geo-image2.png)
-1.  Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet. ![](media/configure-search-for-multi-geo-image3.png)
+1.  Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, klicken Sie auf den Pfeil, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet. ![](media/configure-search-for-multi-geo-image3.png)
 
 1.  Wählen Sie im Webpart-Toolbereich im Abschnitt **Einstellungen** unter **Einstellungen für das Ergebnissteuerelement** die Option **Multi-Geo-Ergebnisse anzeigen**, damit das Suchergebnisse-Webpart Ergebnisse von allen geografischen Standorten anzeigt.
 
@@ -168,16 +170,17 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 
 Benutzerdefinierte Anwendungen rufen Ergebnisse von allen oder einigen geografischen Standorten ab, indem Sie Abfrageparameter mit der Anforderung an die SharePoint-Suche-REST-API angeben. Je nach Abfrageparameter wird die Abfrage in alle geografischen Standorte oder in einige geografischen Standorte aufgefächert. Wenn nur einige geografischen Standorte abgefragt werden sollen, können Sie die Auffächerung nur für diese einschränken. Wenn die Anforderung erfolgreich ist, gibt die SharePoint-Suche-REST-API die Antwortdaten zurück.
 
-#### <a name="requirement"></a>Anforderung #### 
+**Anforderung**
+
 Sie müssen für jeden geografischen Standort sicherstellen, dass allen Benutzer in der Organisation die Berechtigungsstufe **Lesen** für die Stammwebsite erteilt wurde (z. B. contoso**APAC**.sharepoint.com/ und contoso**EU**.sharepoint.com/). [Weitere Informationen zu Berechtigungen](https://support.office.com/de-DE/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Abfrageparameter
 
-EnableMultiGeoSearch – Dies ist ein boolescher Wert, der angibt, ob die Abfrage in Indizes anderer geografischer Standorte des Multi-Geo-Mandanten aufgefächert werden soll. Legen Sie diesen Wert auf **true** fest, um die Abfrage aufzufächern, oder auf **false**, wenn die Abfrage nicht aufgefächert werden soll. Standardwert ist **false**. Wenn dieser Parameter nicht enthalten ist, wird die Abfrage **nicht** in andere geografischen Standorte aufgefächert. Wenn Sie den Parameter in einer Nicht-Multi-Geo-Umgebung verwenden, wird der Parameter ignoriert.
+EnableMultiGeoSearch – Dies ist ein boolescher Wert, der angibt, ob die Abfrage in Indizes anderer geografischer Standorte des Multi-Geo-Mandanten aufgefächert werden soll. Legen Sie ihn auf **true** fest, um die Abfrage aufzufächern, oder auf **false**, wenn die Abfrage nicht aufgefächert werden soll. Der Standardwert ist **false**. Wenn Sie diesen Parameter nicht angeben, wird die Abfrage nicht in andere geografische Standorte aufgefächert. Wenn Sie den Parameter in einer Nicht-Multi-Geo-Umgebung verwenden, wird der Parameter ignoriert.
 
-ClientType – Dies ist eine Zeichenfolge. Geben Sie einen eindeutigen Clientnamen für jede Suchanwendung an. Wenn Sie diesen Parameter nicht hinzufügen, wird die Abfrage **nicht** in andere geografischen Standorte aufgefächert.
+ClientType – Dies ist eine Zeichenfolge. Geben Sie einen eindeutigen Clientnamen für jede Suchanwendung ein. Wenn Sie diesen Parameter nicht angeben, wird die Abfrage nicht in andere geografische Standorte aufgefächert.
 
-MultiGeoSearchConfiguration – Dies ist eine optionale Liste mit geografischen Standorten im Multi-Geo-Mandanten, für die die Auffächerung der Abfrage erfolgen soll, wenn **EnableMultiGeoSearch** auf **true** festgelegt ist. Wenn Sie nicht diesen Parameter angeben oder leer lassen, wird die Abfrage für alle geografischen Standorte aufgefächert. Geben Sie für jeden geografischen Standort die folgenden Elemente im JSON-Format an:
+MultiGeoSearchConfiguration – Dies ist eine optionale Liste mit geografischen Standorten im Multi-Geo-Mandanten, für die die Abfrage aufgefächert werden soll, wenn **EnableMultiGeoSearch** auf **true** festgelegt ist. Wenn Sie diesen Parameter nicht angeben oder leer lassen, wird die Abfrage für alle geografischen Speicherorte aufgefächert. Geben Sie für jeden geografischen Standort die folgenden Elemente im JSON-Format an:
 
 <table>
 <thead>
@@ -285,7 +288,7 @@ https:// \<Mandant\>/\_api/search/query?querytext='site'&ClientType='my_client_i
     }
 
 
-#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Beispiel für eine POST-Anforderung, die für **einige** geografischen Standorte aufgefächert wird
+#### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>Beispiel für eine POST-Anforderung, die für **einige** geografische Standorte aufgefächert wird
 
 
     {

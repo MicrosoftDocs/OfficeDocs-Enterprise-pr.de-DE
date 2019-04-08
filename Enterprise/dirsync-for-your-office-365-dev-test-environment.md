@@ -18,25 +18,25 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Zusammenfassung: Konfigurieren der Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 374d99bc2433f539451882e1c2affe7bd41290db
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573949"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037909"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung
 
  **Zusammenfassung:** Konfigurieren der Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung
   
-Viele Organisationen verwenden Azure AD Connect und Verzeichnissynchronisierung, um den Kontensatz in ihrer lokalen Windows Server Active Directory (AD)-Gesamtstruktur mit dem Kontensatz in Office 365 zu synchronisieren. In diesem Artikel wird beschrieben, wie Sie die Verzeichnissynchronisierung mit Kennworthashsynchronisierung in der Office 365-Entwicklungs-/Testumgebung verwenden können, woraus die folgende Konfiguration resultiert:
+Viele Organisationen verwenden Azure AD Connect und Verzeichnissynchronisierung, um den Kontensatz in ihrer lokalen AD DS-Gesamtstruktur (Active Directory Domain Services) mit dem Kontensatz in Office 365 zu synchronisieren. In diesem Artikel wird beschrieben, wie Sie die Verzeichnissynchronisierung mit Kennworthashsynchronisierung in der Office 365-Entwicklungs-/Testumgebung verwenden können, woraus die folgende Konfiguration resultiert:
   
 ![Die Office 365-Entwicklungs-/Testumgebung mit Verzeichnissynchronisierung](media/be5b37b0-f832-4878-b153-436c31546e21.png)
   
 Diese Konfiguration besteht aus:  
   
 - Einem Office 365 E5-Testabonnement, das 30 Tage nach Erstellung abläuft.
-- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus drei virtuellen Computern in einem Subnetz eines virtuellen Azure-Netzwerks (DC1, APP1 und CLIENT1) besteht. Azure AD Connect wird auf APP1 für die Synchronisierung der Windows Server Active Directory-Domäne mit Office 365 ausgeführt.
+- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus drei virtuellen Computern in einem Subnetz eines virtuellen Azure-Netzwerks (DC1, APP1 und CLIENT1) besteht. Azure AD Connect wird auf APP1 für die Synchronisierung der AD DS-Domäne mit Office 365 ausgeführt.
     
 Es gibt zwei Hauptphasen bei der Einrichtung dieser Entwicklungs-/Testumgebung:
   
@@ -59,7 +59,7 @@ Diese Konfiguration besteht aus:
     
 ## <a name="phase-2-install-azure-ad-connect-on-app1"></a>Phase 2: Installieren von Azure AD Connect auf APP1
 
-Nach Abschluss der Installation und Konfiguration synchronisiert Azure AD Connect den Kontensatz in der CORP Windows Server AD-Domäne mit dem Kontensatz im Office 365-Testabonnement. Das folgende Verfahren führt Sie durch die Installation von Azure AD Connect auf APP1 und die Sicherstellung der ordnungsgemäßen Funktionsweise.
+Nach Abschluss der Installation und Konfiguration synchronisiert Azure AD Connect den Kontensatz in der CORP AD DS-Domäne mit dem Kontensatz im Office 365-Testabonnement. Das folgende Verfahren führt Sie durch die Installation von Azure AD Connect auf APP1 und die Sicherstellung der ordnungsgemäßen Funktionsweise.
   
 ### <a name="install-and-configure-azure-ad-connect-on-app1"></a>Installieren und Konfigurieren von Azure AD Connect auf APP1
 
@@ -98,7 +98,7 @@ Stop-Process -Name Explorer -Force
     
 14. Klicken Sie im linken Navigationsbereich auf **Benutzer > Aktive Benutzer**.
     
-    Sie sehen das Konto **Benutzer1**. Dieses Konto gehört zur Windows Server AD-Domäne „CORP“. Dass es angezeigt wird, belegt, dass die Verzeichnissynchronisierung erfolgreich war.
+    Sie sehen das Konto **Benutzer1**. Dieses Konto gehört zur AD DS-Domäne „CORP“. Dass es angezeigt wird, belegt, dass die Verzeichnissynchronisierung erfolgreich war.
     
 15. Klicken Sie auf das Konto**Benutzer1**. Für Produktlizenzen klicken Sie auf **Bearbeiten**.
     
@@ -111,7 +111,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 Diese Konfiguration besteht aus:  
   
 - Einem Office 365 E5-Testabonnement
-- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. Azure AD Connect wird auf APP1 ausgeführt, um die CORP Windows Server Active Directory-Domäne mit Office 365 alle 30 Minuten zu synchronisieren.
+- Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. Azure AD Connect wird auf APP1 ausgeführt, um die CORP AD DS-Domäne mit Office 365 alle 30 Minuten zu synchronisieren.
     
 ## <a name="next-step"></a>Nächster Schritt
 

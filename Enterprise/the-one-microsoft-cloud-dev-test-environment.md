@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: a1370fe4-2fd6-4fea-ad1d-3555433d6d2e
 description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um eine Entwicklungs-/Testumgebung zu erstellen, die alle Microsoft-Cloudangebote enthält.'
-ms.openlocfilehash: 0ccea58e86f2e105704aac01ba4379c21a174e3a
-ms.sourcegitcommit: e5598a1220316122b5ed206c2607092ea1eac65c
+ms.openlocfilehash: b8ffd01c9d129d4537c82f0e1f74bd7c1be1388b
+ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573659"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31037949"
 ---
 # <a name="the-one-microsoft-cloud-devtest-environment"></a>Die One Microsoft Cloud-Entwicklungs-/Testumgebung
 
@@ -46,7 +46,7 @@ Die daraus resultierende Konfiguration bietet Ihnen die folgenden Möglichkeiten
 
 Folgen Sie den Anweisungen unter [DirSync für Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md).
   
-Abbildung 1 zeigt die resultierende Konfiguration, die Office 365 und ein simuliertes Intranet enthält, das in Azure-Infrastrukturdiensten ausgeführt wird, und für die die Verzeichnissynchronisierung von einer lokalen Windows Server Active Directory (AD)-Gesamtstruktur aus erfolgt.
+Abbildung 1 zeigt die resultierende Konfiguration, die Office 365 und ein simuliertes Intranet enthält, das in Azure-Infrastrukturdiensten ausgeführt wird, und für die die Verzeichnissynchronisierung von einer lokalen AD DS-Gesamtstruktur (Active Directory Domain Services) aus erfolgt.
   
 **Abbildung 1: Das simulierte Intranet in Azure mit Office 365**
 
