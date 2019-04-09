@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: GrundLegendes zu Office 365-Client-App-Unterstützung für Mobile Anwendungsverwaltung
-ms.openlocfilehash: 6f8461a9a0cdb49123c2a0fc2b55c2c27b74ca5b
-ms.sourcegitcommit: fd137a68c516379a9f09e06987e8d45d92de7ed6
+ms.openlocfilehash: b75b992bf45ff1a899e71a9f6b7903e3f78a34d4
+ms.sourcegitcommit: 80bc767a9c88a259facb3894b9a168c85d35eb70
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30303589"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31517549"
 ---
 # <a name="office-365-client-app-support---mobile-application-management"></a>Office 365-Client-App-Unterstützung – Verwaltung mobiler Anwendungen
 
@@ -39,10 +39,11 @@ Die neuesten Versionen der folgenden Clients unterstützen die Verwaltung mobile
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Dynamics 365-Symbol](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Kantensymbol](media/o365-edge-64x64.png) <br> [Flanke](https://www.microsoft.com/windows/microsoft-edge) | ![Excel-Symbol](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Kaizala-Symbol](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![OneDrive for Business (Symbol)](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage)
-| ![OneNote-Symbol](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook-Symbol](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner-Symbol](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerBI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![PowerPoint-Symbol](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) |
-| ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) | ![Skype for Business-Symbol](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![StaffHub-Symbol](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) | ![Stream (Symbol)](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway<sup>1</sup>](https://sway.com)
-| ![Teams (Symbol)](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Visio-Symbol](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Word-Symbol](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) |![Jammern-Symbol](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
+| ![Dynamics 365-Symbol](media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) | ![Kantensymbol](media/o365-edge-64x64.png) <br> [Rand](https://www.microsoft.com/windows/microsoft-edge) | ![Excel-Symbol](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Fluss Symbol](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Kaizala-Symbol](media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) 
+| ![OneDrive for Business (Symbol)](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![OneNote-Symbol](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook-Symbol](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner-Symbol](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps-Symbol](media/o365-powerapps-64x64.png) <br> [PowerApps ](https://powerapps.microsoft.com) 
+| ![PowerBI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![PowerPoint-Symbol](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) | ![Skype for Business-Symbol](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![StaffHub-Symbol](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software) 
+| ![Stream (Symbol)](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway<sup>1</sup>](https://sway.com) | ![Teams (Symbol)](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Aufgaben Symbol](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com) | ![Visio-Symbol](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) 
+| ![Word-Symbol](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Jammern-Symbol](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 > [!NOTE]
 > <sup>1</sup> Unterstützung für Sway on IOS in Kürze verfügbar.
