@@ -3,56 +3,59 @@ title: Benutzererfahrung in einer Multi-Geo-Umgebung
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 4/3/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
-description: Dieser Artikel enthält Informationen über die SharePoint- und OneDrive-Benutzererfahrung in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 951efb636ce00f59393f624687d44a406fcf3fc0
-ms.sourcegitcommit: a3e2b2e58c328238c15d3f9daf042ea3de9d66be
+description: Dieser Artikel enthält Informationen über die SharePoint-, OneDrive- und Exchange- Benutzererfahrung in einer Multi-Geo-Umgebung.
+ms.openlocfilehash: 05eec668c7b9a13bf93ec8b0bf1f29ce1f0eeba6
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25849831"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931804"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>Benutzererfahrung in einer Multi-Geo-Umgebung
 
 Im Folgenden wird erläutert, was Benutzern in einer Multi-Geo-Konfiguration in OneDrive angezeigt wird:
 
-#### <a name="users-onedrive-for-business-location"></a>OneDrive for Business-Standort des Benutzers
+## <a name="exchange-mailbox"></a>Exchange-Postfach
+
+Das Exchange-Postfach eines Benutzers wird an dessen bevorzugten Datenspeicherort bereitgestellt und automatisch verschoben, wenn die PDL-Einstellungen geändert werden. Benutzer können Outlook und Outlook im Web in Multi-Geo-Umgebungen wie gewohnt und ohne Auswirkungen auf die Benutzererfahrung verwenden.
+
+## <a name="hub-sites"></a>Hubwebsites
+
+SharePoint-Hubwebsites verbessern den Discovery- und Engagement-Prozess mit Inhalten für Mitarbeiter und gewährleisten eine vollständige und einheitliche Darstellung von Projekten, Abteilungen oder Regionen. In einer Multi-Geo-Umgebung können Satellitenstandort-Websites ganz einfach mit einer Hubwebsite verknüpft werden, unabhängig vom geografischen Standort der Hubwebsite. Über eine zentrale Suchoberfläche können Benutzer unabhängig vom geografischen Standort der Websites den gesamten Hub durchsuchen und entsprechende Ergebnisse erhalten.
+
+## <a name="office-365-app-launcher"></a>App-Startfeld für Office 365
+
+Mit jeder Kachel wird an den entsprechenden geografischen Standort des Workloads weitergeleitet. Die SharePoint- und OneDrive-Kacheln verweisen auf den Standort, der dem bereitgestellten geografischen Standort des Benutzers entspricht. Dies bedeutet, dass SharePoint-Kacheln im Falle von Benutzern mit einer OneDrive-Umgebung am zentralen Standort auf die SharePoint-Homepage verweisen, während die Gruppenwebsites solcher Benutzer an den als PDL festgelegten Standort bereitgestellt werden. 
+
+## <a name="office-applications"></a>Office-Anwendungen
+
+Office-Anwendungen wie Word, Excel und PowerPoint erkennen bei Anmeldung automatisch den richtigen geografischen OneDrive for Business-Standort für jeden Benutzer. Benutzer müssen nicht die für den geografischen OneDrive-oder SharePoint-Standort spezifische URL eingeben.
+
+## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business-Synchronisierungsclient
+
+Der OneDrive for Business-Synchronisierungsclient (Version 17.3.6943.0625 und höher) erkennt automatisch den richtigen geografischen OneDrive for Business-Standort für den Benutzer. Die Synchronisierungs-Clientunterstützung bietet die Möglichkeit, gruppenbasierte Websites unabhängig von ihrem geografischen Standort zu synchronisieren. Beachten Sie, dass der Groove-Synchronisierungsclient nicht für Multi-Geo-Umgebungen unterstützt wird. 
+
+## <a name="onedrive-for-business-location"></a>OneDrive for Business-Standort
 
 OneDrive for Business wird Benutzern an dem jeweiligen bevorzugten Datenspeicherort bereitgestellt. Wenn ein Benutzer zu einer OneDrive-URL navigiert, die einen falschen geografischen Strandort enthält (zum Beispiel ein Lesezeichen von einem vorherigen geografischen Standort), werden sie automatisch zur OneDrive-Umgebung an dem entsprechenden geografischen Standort umgeleitet.
 
-#### <a name="sharing"></a>Freigabe
+## <a name="onedrive-ios-and-android"></a>OneDrive unter IOS und Android 
 
-Die Personenauswahl enthält alle Benutzer unabhängig von ihrem geografischen Standort. So kann ein Benutzer Inhalte für einen Benutzer an dem gleichen geografischen Standort oder an allen anderen geografischen Standorten Ihres Mandanten freigeben. Inhalte von anderen geografischen Standorten werden in der Ansicht **Für mich freigegeben** in OneDrive for Business angezeigt, und mit einmaligem Anmelden kann unabhängig von dem geografischen Standort, an dem sie gehostet werden, auf diese zugegriffen werden.
+In den mobilen OneDrive-Apps für iOS und Android werden Ihre OneDrive-Dateien und für Sie freigegebene Dateien unabhängig vom geografischen Standort angezeigt. Die Suche in den mobilen OneDrive-Apps geben relevante Ergebnisse von allen geografischen Standorten zurück. Laden Sie die neueste Version dieser Apps herunter.
 
-#### <a name="office-applications"></a>Office-Anwendungen
+Weitere Informationen finden Sie unter Verwenden von [OneDrive unter iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) und [OneDrive unter Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36).
 
-Office-Anwendungen wie Word, Excel und PowerPoint erkennen bei Anmeldung automatisch den richtigen geografischen OneDrive for Business-Standort für jeden Benutzer. Benutzer müssen nicht die für den geografischen OneDrive-Standort spezifische URL eingeben.
+## <a name="onedrive-mobile-client"></a>OneDrive Mobile-Client 
 
-#### <a name="onedrive-for-business-sync-client"></a>OneDrive for Business-Synchronisierungsclient
+Der OneDrive Mobile-Client ist Multi-Geo-fähig und zeigt relevante Inhalte und Ergebnisse von allen geografischen Standorten an.
 
-Der OneDrive for Business-Synchronisierungsclient (Version 17.3.6943.0625 und höher) erkennt automatisch den richtigen geografischen OneDrive for Business-Standort für den Benutzer.
-
-#### <a name="office-365-app-launcher"></a>App-Startfeld für Office 365
-
-Das App-Startfeld ist Multi-Geo-fähig. Mit jeder Kachel wird an den entsprechenden geografischen Standort des Workloads weitergeleitet. Die OneDrive-Kachel verweist auf den richtigen geografischen Standort, an dem die OneDrive-Bibliothek des Benutzers gehostet wird, während die SharePoint-Kachel bei allen Benutzern auf den zentralen Standort verweist, da Teamwebsites weiterhin dort gehostet werden.
-
-#### <a name="delve-user-profiles"></a>Delve-Benutzerprofile
-
-Benutzerprofilinformationen werden an dem geografischen Standort des Benutzers verwaltet. Beim Auswählen eines Benutzers werden Sie an den entsprechenden geografischen Standort des Benutzers weitergeleitet, wo vollständige Profilinformationen angezeigt werden.
-
-Wenn Delve deaktiviert ist, sehen Sie das klassische Profil in SharePoint, welches nicht Multi-Geo-fähig ist.
-
-#### <a name="delve"></a>Delve
-
-Für Office 365-Benutzer an den Satellitenstandorten wird Multi-Geo in Delve mit der Einschränkung unterstützt, dass keine Verknüpfung zu SharePoint-Blogbeiträgen von Benutzern in anderen Regionen vorhanden ist, sondern lediglich eine Verknüpfung zu deren SharePoint-Blogwebsites.
-
-#### <a name="search"></a>Suche
+## <a name="search"></a>Suchen
 
 Jeder geografische Standort verfügt über einen eigenen Suchindex und ein Suchcenter. Wenn ein Benutzer eine Suche durchführt, wird die Abfrage an alle geografischen Standorte gesendet, und die zurückgegebenen Ergebnisse werden zusammengeführt und bewertet, sodass der Benutzer einheitliche Ergebnisse erhält. Benutzer erhalten unabhängig von ihrem geografischen Standort Ergebnisse von allen geografischen Standorten. Weitere Informationen dazu finden Sie unter [Konfigurieren der Suche für Multi-Geo in OneDrive for Business](configure-search-for-multi-geo.md).
 
@@ -68,12 +71,34 @@ Die folgenden Suchclients werden unterstützt:
 
 -   Benutzerdefinierte Suchanwendungen, die die SharePoint-Suche-API verwenden
 
-#### <a name="onedrive-ios-and-android"></a>OneDrive unter IOS und Android 
+## <a name="sharepoint-home"></a>SharePoint-Homepage 
 
-In den mobilen OneDrive-Apps für iOS und Android werden Ihre OneDrive-Dateien und für Sie freigegebene Dateien unabhängig vom geografischen Standort angezeigt. Die Suche in den mobilen OneDrive-Apps geben relevante Ergebnisse von allen geografischen Standorten zurück. Laden Sie die neueste Version dieser Apps herunter.
+In SharePoint Multi-Geo wird Ihre SharePoint-Homepage am Standort des Benutzers gehostet. Dieser wird anhand des entsprechenden OneDrive for Business-Standorts ermittelt. Wenn die OneDrive-Umgebung eines Benutzers zum Beispiel über einen europäischen Satellitenstandort gehostet wird, wird dessen SharePoint-Homepage in Europa gerendert. Die SharePoint-Homepage enthält unabhängig von ihrem geografischen Standort alle für den Benutzer relevanten Inhalte. 
 
-Weitere Informationen finden Sie unter Verwenden von [OneDrive unter iOS](https://support.office.com/article/08d5c5b2-ccc6-40eb-a244-fe3597a3c247) und [OneDrive unter Android](https://support.office.com/article/eee1d31c-792d-41d4-8132-f9621b39eb36).
+**Gefolgte Websites, Neuigkeiten von Websites, Zuletzt geöffnete Websites, Häufig verwendete Websites, und Empfohlene Websites**
 
-#### <a name="teams-experience"></a>Teams-Erfahrung
+All diese Komponenten werden dem Benutzer unabhängig von dem geografischen Standort, an dem die Inhalte gehostet werden, unter der Bedingung angezeigt, dass der Benutzer über entsprechende Berechtigungen verfügt. 
 
-Teams sind Multi-Geo-fähig. OneDrive-Dateien und zuletzt verwendete Dateien werden unabhängig vom geografischen Standort des Benutzers angezeigt. @-Erwähnungen funktionieren mit Benutzern von allen geografischen Standorten.
+**Wichtige Links**
+
+Administratoren können abhängig vom jeweiligen geografischen Standort wichtige Links auf der SharePoint-Homepage einrichten. So kann der Administrator für Benutzer in jeder Region jeweils wichtige Links auf der SharePoint-Homepage hervorheben. 
+
+## <a name="sharepoint-mobile-client"></a>SharePoint Mobile-Client 
+
+Der SharePoint Mobile-Client ist Multi-Geo-fähig und zeigt relevante Inhalte und Ergebnisse von allen geografischen Standorten an.
+
+## <a name="sharing"></a>Freigabe
+
+Die Personenauswahl-Ansicht zeigt sämtliche Benutzer unabhängig von ihrem geografischen Standort an. Dadurch hat ein Benutzer die Möglichkeit, Inhalte mit anderen Benutzern am selben oder an einem anderen Ihrem Mandanten zugewiesenen geografischen Standort zu teilen. Inhalte von anderen geografischen Standorten werden unabhängig vom geografischen Standort, an dem sie gehostet werden, in der Ansicht **Für mich freigegeben** in der OneDrive for Business-Umgebung des Benutzers angezeigt und können über eine einmalige Anmeldung eingesehen werden.
+
+## <a name="teams-experience"></a>Teams-Erfahrung
+
+Teams ist Multi-Geo-fähig. OneDrive- und zuletzt angezeigte Dateien werden unabhängig vom geografischen Standort des Benutzers angezeigt. @-Erwähnungen funktionieren mit Benutzern von allen geografischen Standorten.
+
+## <a name="user-profiles"></a>Benutzerprofile
+
+Benutzerprofilinformationen werden an dem geografischen Standort des Benutzers verwaltet. Beim Auswählen eines Benutzers werden Sie an den entsprechenden geografischen Standort des Benutzers weitergeleitet, wo vollständige Profilinformationen angezeigt werden.
+
+Wenn Delve deaktiviert ist, sehen Sie das klassische Profil in SharePoint, welches nicht Multi-Geo-fähig ist.
+
+

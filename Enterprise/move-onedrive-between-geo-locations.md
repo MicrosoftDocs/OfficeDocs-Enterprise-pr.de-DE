@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: In diesem Artikel finden Sie Informationen zum Verschieben einer OneDrive-Website an einen anderen geografischen Standort.
-ms.openlocfilehash: 13210d354c45c2d4927ac3de34512bc75a09c14b
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: 1197d23bdf94fe38ba24138ddde7c1f1fb92b41f
+ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458325"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30931824"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einen anderen geografischen Standort 
 
@@ -59,7 +59,7 @@ Beispiel: Um die OneDrive-Umgebung des Benutzers „Matt@contosoenergy.onmicroso
 
 `connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![](media/move-onedrive-between-geo-locations-image1.png)
+![Screenshot des PowerShell-Fensters mit Connect-SPOService-Cmdlet](media/move-onedrive-between-geo-locations-image1.png)
 
 ## <a name="validating-the-environment"></a>Überprüfen der Umgebung
 
@@ -69,9 +69,9 @@ Um sicherzustellen, dass alle geografischen Standorte kompatibel sind, führen S
 
 `Get-SPOGeoMoveCrossCompatibilityStatus`
 
-Angezeigt wird eine Liste Ihrer geografischen Standorte und Informationen dazu, ob Inhalte zwischen diesen verschoben werden können, indem die entsprechenden Standorte als "kompatibel" bezeichnet werden. Wenn der Befehl "Nicht kompatibel" zurückgibt, versuchen Sie zu einem späteren Zeitpunkt erneut, den Status zu überprüfen.
+Angezeigt wird eine Liste Ihrer geografischen Standorte und Informationen dazu, ob Inhalte zwischen diesen verschoben werden können, indem die entsprechenden Standorte als "kompatibel" bezeichnet werden. Wenn der Befehl „Nicht kompatibel“ zurückgibt, versuchen Sie zu einem späteren Zeitpunkt erneut, den Status zu überprüfen.
 
-Wenn die gesetzliche Aufbewahrungspflicht für eine OneDrive-Umgebung aktiviert ist oder diese eine Unterwebsite enthält, kann die Umgebung nicht verschoben werden. Sie können das Start-SPOUserAndContentMove-Cmdlet mit dem -ValidationOnly-Parameter verwenden, um zu prüfen, ob die OneDrive-Umgebung verschoben werden kann:
+Wenn eine OneDrive-Umgebung beispielsweise eine Unterwebsite umfasst, kann sie nicht verschoben werden. Sie können das Start-SPOUserAndContentMove-Cmdlet mit dem -ValidationOnly-Parameter verwenden, um zu überprüfen, ob die OneDrive-Umgebung verschoben werden kann:
 
 `Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly`
 
@@ -96,7 +96,7 @@ Führen Sie zum Beispiel zum Verschieben von OneDrive von matt@contosoenergy.onm
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![](media/move-onedrive-between-geo-locations-image2.png)
+![Screenshot des PowerShell-Fensters mit dem Start-SPOUserAndContentMove-Cmdlet](media/move-onedrive-between-geo-locations-image2.png)
 
 Wenn Sie die Verschiebung eines geografischen Standorts zu einem späteren Zeitpunkt durchführen möchten, verwenden Sie einen der folgenden Parameter:
 
