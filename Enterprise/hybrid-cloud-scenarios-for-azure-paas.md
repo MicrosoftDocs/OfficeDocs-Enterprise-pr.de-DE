@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 5f4f5d0d-4638-48e8-a517-bd804856b617
 description: 'Zusammenfassung: Grundlegende Informationen zur Hybrid-Architektur und -szenarien für PaaS-basierte Cloudangebote von Microsoft in Azure.'
-ms.openlocfilehash: e536d81b6b14b05bef49d7c91b0404faec64303b
-ms.sourcegitcommit: 943d58b89459cd1edfc82e249c141d42dcf69641
+ms.openlocfilehash: f4d90d51a7627063fae6fd168681bdf96cb4d6bc
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "27123332"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741371"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-paas"></a>Hybrid Cloud-Szenarien für Azure PaaS
 
@@ -69,7 +69,7 @@ Eine Organisation kann seine Compute- oder Speicherressourcen wie folgt für die
     
 Die Azure-App kann Anmeldeinformationen verwenden von:
   
-- Azure AD, das mit Ihrem lokalen Identitätsanbieter, z. B. Windows Server Active Directory, synchronisiert werden kann
+- Azure AD, die mit Ihrem lokalen Identitätsanbieter synchronisiert werden kann, beispielsweise Active Directory-Domänendienste (AD DS).
     
 - Einem Drittanbieter-Identitätsanbieter
     

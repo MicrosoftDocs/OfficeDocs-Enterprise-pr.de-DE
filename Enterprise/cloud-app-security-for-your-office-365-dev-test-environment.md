@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 7b77c383eb521c51aa03208aae8c1636c7935821
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038038"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741261"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -32,9 +32,9 @@ Office 365 Cloud App Security, bisher bekannt als Office 365 Advanced Security M
 Mit den Anweisungen in diesem Artikel aktivieren und testen Sie Cloud App Security in Ihrem Office 365-Testabonnement.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der One Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack) , um eine visuelle Darstellung aller Artikel im Office 365 Test Lab Guide-Stapel zu erhalten.
   
-## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
+## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
 Wenn Sie Cloud App Security nur auf einfache Weise mit den Mindestanforderungen testen möchten, befolgen Sie die Anweisungen in den Phasen 2 und 3 von [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md).
   
@@ -63,7 +63,7 @@ In diesem Verfahren demonstrieren Sie, dass das Ändern einer Benutzerrolle vor 
     
 5. Klicken Sie auf der Seite **Benutzer 4** auf **Bearbeiten** für die Zeile **Rollen**.
     
-6. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **Globaler Administrator**, geben Sie **user4@contoso.com** unter **Alternative E-Mail-Adresse** ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
+6. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **globaler Administrator**, **user4@contoso.com** geben Sie die **Alternative e-Mail-Adresse**ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
     
 7. Wählen Sie oben links das App-Startsymbol und dann **Admin** aus.
     
@@ -81,7 +81,7 @@ In diesem Verfahren aktivieren Sie Cloud App Security und erstellen eine neue Ri
 
 1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
-2. Wählen Sie die **Administrator**-Kachel aus. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin Center _GT_ Security & Compliance**.
+2. Klicken Sie auf die Kachel **Admin**. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin Center _GT_ Security & Compliance**.
     
 3. Klicken Sie im linken Navigationsbereich auf **Warnungen > Erweiterte Warnungen verwalten**.
     
@@ -131,7 +131,7 @@ In diesem Verfahren demonstrieren Sie, wie Cloud App Security Warnungen erstellt
     
 11. Klicken Sie auf der Seite **Benutzer 5** auf **Bearbeiten** für die Zeile **Rollen**.
     
-12. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **Angepasster Administrator**, klicken Sie auf **Kennwortadministrator** und **Benutzerverwaltungsadministrator**, geben Sie **user5@contoso.com** unter **Alternative E-Mail-Adresse** ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
+12. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **angepasster Administrator**, klicken Sie auf **Kennwort-Administrator** und **user5@contoso.com** **Benutzer Verwaltungs Administrator**, geben Sie die **Alternative e-Mail-Adresse**ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
     
 13. Klicken Sie oben rechts auf das Benutzersymbol, und klicken Sie dann auf **Abmelden**. 
     

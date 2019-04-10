@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Zusammenfassung: Grundlegendes zur Hybrid Architektur und den Szenarien für die Infrastruktur von Microsoft als Service-(IaaS) Cloud-Angebot in Azure.'
-ms.openlocfilehash: 5d125780e8baf3dbbe71b0878f6bf57cbeb5740f
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037929"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741361"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Hybrid Cloud-Szenarien für Azure-IaaS
 
@@ -41,7 +41,7 @@ Für jede Schicht der Architektur:
     
 - Identität
     
-    Fügen Sie Identitäts Server wie Windows Server AD-Domänencontroller zu der Gruppe von Servern hinzu, die in Azure VNets für die lokale Authentifizierung verwendet werden.
+    Fügen Sie Identitäts Server, wie Active Directory-domänenDienste (AD DS), zu der Gruppe von Servern hinzu, die in Azure VNets für die lokale Authentifizierung verwendet werden.
     
 - Netzwerk
     
@@ -59,13 +59,13 @@ Die Verwendung des Verzeichnissynchronisierungsservers von einem Azure-VNet, wie
 
 ![Verzeichnissynchronisierungsserver für Office 365 in Azure IaaS](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-DirSync.png)
   
-In Abbildung 2 hostet ein lokales Netzwerk eine Windows Server AD-Infrastruktur mit einem Proxy Server und einem Router an seinem Edgeserver. Der Router stellt eine Verbindung mit einem Azure-Gateway am Rand eines Azure-VNet mit einer Standort-zu-Standort-VPN-oder Express Route-Verbindung her. Innerhalb des VNet führt ein Verzeichnissynchronisierungsserver Azure AD Connect aus.
+In Abbildung 2 hostet ein lokales Netzwerk eine AD DS-Infrastruktur mit einem Proxy Server und einem Router an seinem Edgeserver. Der Router stellt eine Verbindung mit einem Azure-Gateway am Rand eines Azure-VNet mit einer Standort-zu-Standort-VPN-oder Express Route-Verbindung her. Innerhalb des VNet führt ein Verzeichnissynchronisierungsserver Azure AD Connect aus.
   
-Ein Verzeichnissynchronisierungsserver für Office 365 synchronisiert die Liste der Konten in Windows Server AD mit dem Azure AD-Mandanten eines Office 365-Abonnements.
+Ein Verzeichnissynchronisierungsserver für Office 365 synchronisiert die Liste der Konten in AD DS mit dem Azure AD-Mandanten eines Office 365-Abonnements.
   
 Ein Verzeichnissynchronisierungsserver ist ein Windows-basierter Server, auf dem Azure AD Connect ausgeführt wird. Für eine schnellere Bereitstellung oder zur Verringerung der Anzahl von lokalen Servern in Ihrer Organisation stellen Sie den Verzeichnissynchronisierungsserver in einem virtuellen Netzwerk (VNet) in Azure IaaS.
   
-Der Verzeichnissynchronisierungsserver fragt Windows Server AD nach Änderungen ab und synchronisiert diese dann mit dem Office 365-Abonnement.
+Der Verzeichnissynchronisierungsserver fragt AD DS nach Änderungen ab und synchronisiert diese dann mit dem Office 365-Abonnement.
   
 Weitere Informationen finden Sie unter [Deploy Office 365 Directory Synchronization in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md).
   
@@ -163,7 +163,7 @@ In Abbildung 5 hostet ein lokales Netzwerk eine Identitätsinfrastruktur und Ben
   
 Diese Konfiguration weist die folgenden Attribute von Branchenanwendungen in Azure auf:
   
-- **Ebenen:** Es gibt Ebenen für Webproxyserver, AD FS-Server und Windows Server AD-Domänencontroller.
+- **Ebenen:** Es gibt Ebenen für Webproxyserver, AD FS-Server und AD DS-Domänencontroller.
     
 - **Lastenverteilung:** Ein externes Azure-Lastenausgleichsmodul verteilt die eingehenden Clientauthentifizierungsanforderungen an die Webproxys, und ein internes Azure-Lastenausgleichsmodul verteilt Authentifizierungsanforderungen an die AD FS-Server.
     

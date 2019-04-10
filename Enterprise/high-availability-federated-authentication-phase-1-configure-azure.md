@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: 1c9cfeaf930997c30671e5bbaed92d7dde2542e1
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 937f22c4e54fa4ccc81a1770a3c924e1d9d07a91
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037959"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741311"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -39,7 +39,7 @@ Azure muss mit den folgenden grundlegenden Komponenten eingerichtet werden:
 
 Bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen, füllen Sie die folgenden Tabellen aus. Um Sie bei den Verfahren zum Konfigurieren von Azure zu unterstützen, Drucken Sie diesen Abschnitt, und notieren Sie sich die benötigten Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie es aus. Füllen Sie für die Einstellungen des VNet die Tabelle V aus.
   
-|**Item**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Element**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Siehe [Adressraum Rechner für Azure-Gateway](https://gallery.technet.microsoft.
   
 Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des virtuellen Netzwerks.
   
-|**Item**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
+|**Element**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das Subnetz, das von den Domänencontrollern der Active Directory-Domänendienste (AD DS) und den virtuellen Computern des dirSync-Servers (VMs) verwendet wird.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern von AD FS verwendete Subnetz.  <br/> |
@@ -70,9 +70,9 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
    
  **Tabelle S: Subnetze im virtuellen Netzwerk**
   
-Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
+Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Item**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Element**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -89,7 +89,7 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen C
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Item**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -158,7 +158,7 @@ Tragen Sie die eindeutigen Ressourcengruppennamen in die folgende Tabelle ein.
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Webanwendungsproxy-Server  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Infrastrukturelemente  <br/> |
    
- **Tabelle R: Ressourcengruppen**
+ **Tabelle R: Ressourcengruppen**
   
 Erstellen Sie die neuen Ressourcengruppen mit den folgenden Befehlen.
   
@@ -256,7 +256,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> Für die Verbundauthentifizierung einzelner Benutzer ist kein Rückgriff auf lokale Ressourcen erforderlich. Wenn diese Standort-zu-Standort-VPN-Verbindung jedoch nicht mehr verfügbar ist, erhalten die Domänencontroller in der VNet keine Aktualisierungen an Benutzerkonten und Gruppen, die in der lokalen Windows Server AD-Anzeige vorgenommen wurden. Um sicherzustellen, dass dies nicht der Fall ist, können Sie hohe Verfügbarkeit für die Standort-zu-Standort-VPN-Verbindung konfigurieren. Weitere Informationen finden Sie unter [hoch verfügbare standortübergreifende und VNet-zu-VNet-Konnektivität](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Für die Verbundauthentifizierung einzelner Benutzer ist kein Rückgriff auf lokale Ressourcen erforderlich. Wenn diese Standort-zu-Standort-VPN-Verbindung jedoch nicht mehr verfügbar ist, erhalten die Domänencontroller in der VNet keine Aktualisierungen an Benutzerkonten und Gruppen, die in den lokalen Active Directory-Domänendiensten vorgenommen wurden. Um sicherzustellen, dass dies nicht der Fall ist, können Sie hohe Verfügbarkeit für die Standort-zu-Standort-VPN-Verbindung konfigurieren. Weitere Informationen finden Sie unter [hoch verfügbare standortübergreifende und VNet-zu-VNet-Konnektivität](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Notieren Sie sich jetzt die öffentliche IPv4-Adresse des Azure-VPN-Gateways für Ihr virtuelles Netzwerk aus der Ausgabe des folgenden Befehls:
   
@@ -282,7 +282,7 @@ Definieren Sie nun die Namen von drei Verfügbarkeitsgruppen. Füllen Sie Tabell
 |2.  <br/> |AD FS-Server  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |Webanwendungsproxy-Server  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
- **Tabelle A: Verfügbarkeitsgruppen**
+ **Tabelle A: Verfügbarkeitsgruppen**
   
 Sie benötigen diese Namen bei der Erstellung der virtuellen Computer in den Phasen 2, 3 und 4.
   
