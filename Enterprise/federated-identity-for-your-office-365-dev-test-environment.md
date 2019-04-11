@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: b016e168ac1bfcf180c1c4ba04846416dbd098f4
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948636"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741421"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -41,7 +41,7 @@ Die in Abbildung 1 gezeigte Konfiguration besteht aus:
   
 - Einem Office 365 E5-Testabonnement, das 30 Tage nach Erstellung abläuft.
     
-- Einem vereinfachten Unternehmensintranet, das mit dem Internet verbunden ist, bestehend aus fünf virtuellen Computern in einem Subnetz eines virtuellen Azure-Netzwerks (DC1, APP1, CLIENT1, ADFS1 und PROXY1). Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten in der Windows Server AD-Domäne mit Office 365 zu synchronisieren. PROXY1 erhält die eingehenden Authentifizierungsanfragen. ADFS1 überprüft Anmeldeinformationen mit DC1 und gibt Sicherheitstoken aus.
+- Einem vereinfachten Unternehmensintranet, das mit dem Internet verbunden ist, bestehend aus fünf virtuellen Computern in einem Subnetz eines virtuellen Azure-Netzwerks (DC1, APP1, CLIENT1, ADFS1 und PROXY1). Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten in der Active Directory Domain Services-Domäne mit Office 365 zu synchronisieren. PROXY1 erhält die eingehenden Authentifizierungsanfragen. ADFS1 überprüft Anmeldeinformationen mit DC1 und gibt Sicherheitstoken aus.
     
 Das Einrichten dieser Entwicklungs-/Testumgebung besteht aus fünf Phasen:
   
@@ -61,11 +61,11 @@ Eine schrittweise Anleitung zur Produktionsbereitstellung einer Verbundauthentif
 > Sie können diese Entwicklungs-/Testumgebung nicht mit einem Azure-Testabonnement konfigurieren. 
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-create-the-simulated-enterprise-office-365-devtest-environment-with-dirsync"></a>Phase 1: Erstellen der simulierten Office 365-Entwicklungs-/Testumgebung mit DirSync
 
-Befolgen Sie die Anweisungen in [Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md), um die simulierte Office 365-Entwicklungs-/Testumgebung mit APP1 als DirSync-Server und synchronisierter Identität zwischen Office 365 und den Windows Server AD-Konten auf DC1 zu erstellen.
+Befolgen Sie die Anweisungen in [Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md), um die simulierte Office 365-Entwicklungs-/Testumgebung mit APP1 als DirSync-Server und synchronisierter Identität zwischen Office 365 und den AD DS-Konten auf DC1 zu erstellen.
   
 Im nächsten Schritt erstellen Sie einen neuen öffentlichen DNS-Domänennamen basierend auf Ihrem aktuellen Domänennamen und fügen diesen Ihrem Office 365-Abonnement hinzu. Es wird empfohlen, dass Sie den Namen **testlab.**\<Ihre öffentliche Domäne> verwenden. Wenn Ihre öffentliche Domänenname beispielsweise „contoso.com“ ist, fügen Sie den öffentlichen Domänennamen „testlab.contoso.com“ hinzu.
   
@@ -193,7 +193,8 @@ Diese Befehle erstellen einen DNS-A-Eintrag für den FQDN des Verbunddiensts, de
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-**Abbildung 4: Hinzufügen des Webanwendungs-Proxyservers**
+**Abbildung 4: Hinzufügen des Webanwendungs-Proxyservers
+**
 
 ![Der Webanwendungs-Proxyserver, der der DirSync für die Office 365-Entwicklungs-/Testumgebung hinzugefügt wurde](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
@@ -422,7 +423,7 @@ Gehen Sie folgendermaßen vor, um zu zeigen, dass die Verbundauthentifizierung f
     
     Die **Microsoft Office-Homepage** sollte angezeigt werden.
     
-In diesem Verfahren wird veranschaulicht, dass Ihr Office 365-Testabonnement im Verbund mit der Windows Server AD-Domäne „corp.contoso.com“ steht, die auf DC1 gehostet wird. Nachfolgend finden Sie die Grundlagen des Authentifizierungsprozesses:
+In diesem Verfahren wird veranschaulicht, dass Ihr Office 365-Testabonnement im Verbund mit der AD DS-Domäne „corp.contoso.com“ steht, die auf DC1 gehostet wird. Nachfolgend finden Sie die Grundlagen des Authentifizierungsprozesses:
   
 1. Wenn Sie die Verbunddomäne verwenden, die Sie in Phase 1 mit dem Anmeldekontonamen erstellt haben, wird Ihr Browser von Office 365 an den FQDN des Verbunddiensts und PROXY1 umgeleitet.
     
