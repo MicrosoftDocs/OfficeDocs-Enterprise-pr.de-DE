@@ -1,9 +1,9 @@
 ---
 title: Capacity planning and load testing SharePoint Online
-ms.author: krowley
-author: kccross
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/14/2019
+ms.date: 04/10/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In diesem Artikel wird beschrieben, wie Sie in SharePoint Online bereitstellen können, ohne herkömmliche Auslastungstests durchzuführen, da dies nicht zulässig ist.
-ms.openlocfilehash: 16525e461d9c6e04b03ffc19376f9a7d93c6aab1
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
+ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665188"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31765057"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Kapazitätsplanung und Auslastungstests für SharePoint Online.
 
@@ -44,7 +44,7 @@ Einige wichtige Faktoren sollten berücksichtigt werden:
 - Alle Seiten/Features/Anpassungen, die für die Cloud-Nutzung verwendet werden, sollten für mehrere Standorte optimiert werden, sodass Benutzer in unterschiedlichen Bereichen oder Regionen über eine konsistente Erfahrung verfügen. Cloud bietet Optimierungen wie Content Delivery Networks (CDN) zur Optimierung für eine verteilte Benutzerbasis.
 
 Bei klassischen Veröffentlichungsseiten in SharePoint Online können Sie die Chrome-Erweiterung für das [Seiten Diagnosetool](https://aka.ms/perftool) verwenden, die bei der Analyse der von Benutzern verwendeten Hauptzielseiten behilflich ist.
-F12-Entwicklertools im Browser oder [Fiddler](https://www.telerik.com/download/fiddler) können verwendet werden, um die Gewichtung der Seite zu überprüfen, und die Anzahl der Aufrufe und Elemente, die sich auf die gesamte Seitenlast auswirken, sollte überprüft und optimiert werden. Eine Liste mit Empfehlungen, einschließlich der Verwendung von Inhalts Bereitstellungs Netzwerken und anderen Optimierungen, können Sie im Artikel [Tune SharePoint Online-Leistung](https://aka.ms/spoperformance) durchführen.
+F12-Entwicklertools im Browser oder [Fiddler](https://www.telerik.com/download/fiddler) können verwendet werden, um die Gewichtung der Seite zu überprüfen, und die Anzahl der Aufrufe und Elemente, die sich auf die gesamte Seitenlast auswirken, sollte überprüft und optimiert werden. Eine Liste mit Empfehlungen, einschließlich der Verwendung von Inhalts Bereitstellungs Netzwerken und anderen Optimierungen, können Sie im Artikel [Tune SharePoint Online-Leistung](https://aka.ms/tuneSPO) durchführen.
 
 ### <a name="wave--phase-approach"></a>Wave/Phase-Ansatz
 Der herkömmliche Big Bang-Ansatz für Website Starts ermöglicht nicht effektiv die Überprüfung, ob Anpassungen, externe Quellen, Dienste oder Prozesse im richtigen Umfang getestet wurden. SharePoint as a Service skaliert ihre Kapazität auch basierend auf der Nutzung und der vorhergesagten Nutzung, und während wir Sie nicht über Ihren Website Start informieren müssen, sollten Sie die folgenden Richtlinien befolgen, um den Erfolg sicherzustellen.
