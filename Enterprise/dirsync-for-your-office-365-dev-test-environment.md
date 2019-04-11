@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e6b27e25-74ae-4b54-9421-c8e911aef543
 description: 'Zusammenfassung: Konfigurieren der Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: d5aff42837d3cf4789cf8785383ad213f98d35a3
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 74457cca2d199fe7bfa8839908b0f6a413890f8a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037909"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741231"
 ---
 # <a name="directory-synchronization-for-your-office-365-devtest-environment"></a>Verzeichnissynchronisierung für die Office 365-Entwicklungs-/Testumgebung
 
@@ -44,7 +44,7 @@ Es gibt zwei Hauptphasen bei der Einrichtung dieser Entwicklungs-/Testumgebung:
 2. Installieren und Konfigurieren von Azure AD Connect auf APP1
     
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-create-an-office-365-devtest-environment"></a>Phase 1: Erstellen einer Office 365-Entwicklungs-/Testumgebung
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um ein Office 365-Testabonnement für Analysen oder Entwicklungs-/Testumgebungen zu erstellen.'
-ms.openlocfilehash: a49ba10ab9ddded36f21ca9cc92f0482cbe7a4fb
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: 3e7aafc847b28ad7a81373539c2ea30ce304725a
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31038030"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741241"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 
@@ -44,7 +44,7 @@ Sie können ein Office 365-Testabonnement verwenden und eine Office 365-Entwickl
 ![Testumgebungsanleitungen in der Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in der Microsoft Cloud zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Phase 1: Erstellen der Basiskonfiguration in Azure
 
@@ -64,11 +64,11 @@ Diese Konfiguration besteht aus virtuellen DC1-, APP1- und CLIENT1-Computern in 
 
 Für das Office 365 E5-Testabonnement benötigen Sie zunächst einen fiktiven Unternehmensnamen und ein neues Microsoft-Konto.
   
-1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: ![](./media/Common-Images/TableLine.png).
+1. Es wird empfohlen, eine Variante von „Contoso“ als Unternehmensnamen zu verwenden. Dies ist ein fiktives Unternehmen, das von Microsoft in Beispielen verwendet wird. Notieren Sie hier Ihren fiktiven Unternehmensnamen: .![](./media/Common-Images/TableLine.png)
     
 2. Wenn Sie sich für ein neues Microsoft-Konto registrieren möchten, wechseln Sie zu [https://outlook.com](https://outlook.com), und erstellen Sie ein Konto mit neuem E-Mail-Konto und neuer E-Mail-Adresse. Dieses Konto wird für die Registrierung für Office 365 verwendet.
     
-  - Notieren Sie hier den Vor- und Nachnamen des Kontos: ![](./media/Common-Images/TableLine.png)
+  - Notieren Sie hier den Vor- und Nachnamen des Kontos:  ![](./media/Common-Images/TableLine.png)
     
   - Notieren Sie hier die neue E-Mail-Kontoadresse: ![](./media/Common-Images/TableLine.png)@outlook.com
     
@@ -140,7 +140,7 @@ Befolgen Sie die Anweisungen unter [Verbinden mit Office 365 PowerShell](https:/
     
 - Dem virtuellen Computer CLIENT1 aus (für die simulierte Office 365-Entwicklungs-/Testumgebung).
     
- Geben Sie in das Dialogfeld „Windows PowerShell Credential Request“ den Namen des globalen Office 365-Administrators (z. B. „jdoe@contosotoycompany.onmicrosoft.com“) und sein Kennwort ein.
+ Geben Sie in das Dialogfeld „Windows PowerShell Credential Request“ den Namen des globalen Office 365-Administrators (z. B. jdoe@contosotoycompany.onmicrosoft.com) und sein Kennwort ein.
   
 Geben Sie den Namen Ihrer Organisation (z. B. „contosotoycompany“), den zweistelligen Ländercode für Ihren Standort und ein gemeinsames Kontokennwort ein, und führen Sie dann die folgenden Befehle von der PowerShell-Eingabeaufforderung aus:
 
@@ -197,7 +197,7 @@ $spURL="https://" + $orgName + "-admin.sharepoint.com"
 Connect-SPOService -Url $spURL
 ```
 
-4. Geben Sie in das Dialogfeld **Microsoft SharePoint Online Management Shell** den Namen des globalen Office 365-Administrators (z. B. „jdoe@contosotoycompany.onmicrosoft.com“) und sein Kennwort ein, und klicken Sie auf **Anmelden**.
+4. Geben Sie in das Dialogfeld **Microsoft SharePoint Online Management Shell** den Namen des globalen Office 365-Administrators (z. B. jdoe@contosotoycompany.onmicrosoft.com) und sein Kennwort ein, und klicken Sie auf **Anmelden**.
     
 5. Geben Sie zum Erstellen von drei neuen Teamwebsites (Sales, Produktion und Support) den Namen des globalen Office 365-Administrators ein, und führen dann über die Eingabeaufforderung der SharePoint Online-Verwaltungsshell die folgenden Befehle aus:
     
@@ -281,17 +281,9 @@ Verwenden Sie die folgenden zusätzlichen Artikel in Ihrer Office 365-Entwicklun
     
 - [Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
     
-Erweitern Sie Ihre Office 365-Entwicklungs-/Testumgebung um zusätzliche Microsoft-Cloudangebote:
-  
-- [Die Microsoft 365 Enterprise-Entwicklungs-/Testumgebung](the-microsoft-365-enterprise-dev-test-environment.md)
-    
-- [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
-    
 ## <a name="see-also"></a>Siehe auch
 
 - [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
-  
-- [Office 365- und Dynamics 365-Entwicklungs-/Testumgebung](office-365-and-dynamics-365-dev-test-environment.md)
   
 - [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
 
