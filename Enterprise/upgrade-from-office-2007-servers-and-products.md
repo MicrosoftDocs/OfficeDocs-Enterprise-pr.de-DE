@@ -1,5 +1,5 @@
 ---
-title: Ressourcen zum upgrade von Office 2007-Servern und clients
+title: Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -20,45 +20,46 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
-description: Unterstützung für Office 2007-Servern und -Clientanwendungen bald beendet wird und benutzerdefinierte Support Agreements sind nicht verfügbar. Verwenden Sie diesen Artikel zum Planen der Aktualisierung jetzt starten.
-ms.openlocfilehash: 1a8747e15c9b4051a457deb75e61d02c0c6d73f6
-ms.sourcegitcommit: 317c2753be2aedb60698e94606ba59b63c962328
+description: Der Support wird bald für Office 2007-Server und Clientanwendungen beendet, und benutzerdefinierte Support Vereinbarungen sind nicht verfügbar. Verwenden Sie diesen Artikel, um mit der Planung Ihres Upgrades zu beginnen.
+ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
+ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25933082"
+ms.lasthandoff: 04/13/2019
+ms.locfileid: "31838207"
 ---
-# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen zum upgrade von Office 2007-Servern und clients
+# <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
-Wenn Sie Office 2007-Produkte und Dienste nutzen, die Unterstützung für diese Anwendungen beendet wurde. Während des Upgrades vorab, ist dies der ideale Zeitpunkt, sollten in der Microsoft-Cloud, beginnend mit Office 365 verschieben. Verwenden Sie diesen Artikel als Ausgangspunkt, um zu prüfen Ihre Optionen und Planen des Upgrades.
+Wenn Sie Office 2007-Produkte und-Dienste verwenden, wurde die Unterstützung für diese Anwendungen beendet. Während der Planung Ihres Upgrades empfiehlt es sich, in Erwägung zu ziehen, in die Microsoft-Cloud zu wechseln, beginnend mit Office 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überarbeiten und Ihr Upgrade zu planen.
       
-## <a name="office-2007-planning-roadmaps"></a>Office 2007 Planung roadmaps
+## <a name="office-2007-planning-roadmaps"></a>Office 2007-Planungs Pläne
   
-Unterstützung wurde für Office 2007-Produkte und Dienste beendet. Die folgenden Übersichten helfen Ihnen die jetzt Planen des Upgrades.
+Die Unterstützung für Office 2007-Produkte und-Dienste wurde beendet. Die folgenden Roadmaps helfen Ihnen bei der Planung Ihres Upgrades.
 
-|**Planen von Inhalten**|**Unterstützung von Datum beendet**|
+|**Planen von Inhalten**|**Datum der Unterstützung wurde beendet**|
 |:-----|:-----|
-|[Office 2007 Ende Unterstützung-Wegweiser](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10. Oktober 2017  <br/> |
+|[Office 2007-Roadmap für Ende des Supports](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10. Oktober 2017  <br/> |
 |[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |11. April 2017  <br/> |
-|[Ende der Unterstützung für SharePoint Server 2007 – Roadmap](sharepoint-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
+|
+  [Ende der Unterstützung für SharePoint Server 2007 – Roadmap](sharepoint-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
 |[Ende der Unterstützung für Project Server 2007 – Roadmap](project-server-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
-|[Upgrade von Office communicationsserver](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8 Januar 2018  <br/> |
+|[Upgrade von Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8. Januar 2018  <br/> |
 |[Ende der Unterstützung für PerformancePoint Server 2007 – Roadmap](pps-2007-end-of-support.md) <br/> |09. Januar 2018  <br/> |
    
-Wenn für ein Microsoft-Produkt Unterstützung endet am, sind keine neuen Sicherheitsupdates, nicht sicherheitsrelevante Updates, kostenlos oder kostenpflichtig unterstützten Support-Optionen (einschließlich benutzerdefinierte Support Agreement) oder online technischen Inhaltsupdates. Ob Sie eine Enterprise-Organisation oder eine einzelne Privatbenutzer sind, haben Sie mehrere Optionen zu berücksichtigen sind:
+Wenn die Unterstützung für ein Microsoft-Produkt beendet wird, gibt es keine neuen Sicherheitsupdates, nicht sicherheitsrelevante Updates, kostenpflichtige Supportoptionen (einschließlich benutzerdefinierter Support Vereinbarungen) oder Online technische Inhaltsaktualisierungen. Unabhängig davon, ob Sie eine Unternehmensorganisation oder ein einzelner Privatbenutzer sind, haben Sie mehrere Möglichkeiten, die Sie berücksichtigen sollten:
 
-## <a name="im-a-home-user-what-do-i-do"></a>Ich habe ein privat. Was soll ich tun?
+## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein Privatbenutzer. What do I do?
 
-Wenn Sie Office 2010-Produkten und Anwendungen zu Hause arbeiten, finden Sie unter [diese Informationen](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Wenn Sie Office 2007-Produkte und-Anwendungen zu Hause verwenden, lesen Sie [diese Informationen](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
      
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office Stilllegung Gruppe (Tech Center für Microsoft-Community)](https://go.microsoft.com/fwlink/?linkid=842065)
+[Office-Ruhestands Gruppe (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
   
 [Video: Was ist Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft-Lebenszyklusrichtlinie](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Planen des Upgrades von Office 2007 oder Office 2010-Servern und clients](plan-upgrade-previous-versions-office.md)
+[Planen des Upgrades von Office 2007-oder Office 2010-Servern und-Clients](plan-upgrade-previous-versions-office.md)
   
 
