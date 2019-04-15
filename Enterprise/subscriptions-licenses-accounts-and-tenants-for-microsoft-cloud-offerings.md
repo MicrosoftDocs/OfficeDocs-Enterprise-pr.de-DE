@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
 description: 'Zusammenfassung: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.'
-ms.openlocfilehash: 58b7505e0745ccdfe3e131f543c37f92385877f2
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 55d13e55b597f398189efbafb6b3426609f2d41d
+ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574049"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31741321"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 
@@ -85,7 +85,7 @@ Einige virtuelle Computerabbilder verfügen über Testversionen von installierte
   
 ### <a name="user-accounts"></a>Benutzerkonten
 
-Benutzerkonten für alle Microsoft-Cloudangebote werden in einem Azure AD-Mandanten (Active Directory) gespeichert, der Benutzerkonten und -gruppen enthält. Ein Azure AD-Mandant kann mit Ihren vorhandenen Windows Server AD-Konten mithilfe von Azure AD Connect, einem Windows Server-basierten Dienst, synchronisiert werden. Dies wird als Verzeichnissynchronisierung oder DirSync bezeichnet.
+Benutzerkonten für alle Microsoft-Cloudangebote werden in einem Azure AD-Mandanten (Active Directory) gespeichert, der Benutzerkonten und -gruppen enthält. Ein Azure AD-Mandant kann mit Ihren vorhandenen Active Directory Domain Services-Konten (AD DS) mithilfe von Azure AD Connect, einem Windows Server-basierten Dienst, synchronisiert werden. Dies wird als Verzeichnissynchronisierung oder DirSync bezeichnet.
   
 Abbildung 3 zeigt ein Beispiel für mehrere Abonnements einer Organisation, die einen allgemeinen Azure AD-Mandanten verwendet, der die Konten der Organisation enthält.
   
@@ -129,13 +129,13 @@ Im Folgenden finden Sie ein Beispiel für die Beziehung von Organisationen, Abon
     
   - Die Benutzerkonten der Organisation in einem gemeinsamen Azure AD-Mandanten.
     
-Mehrere Abonnements für Cloudangebote von Microsoft können denselben Azure AD-Mandanten verwenden, der als gemeinsamer Identitätsanbieter fungiert. Ein zentraler Azure AD-Mandant, der die synchronisierten Konten Ihres lokalen Windows Server AD enthält, stellt eine cloudbasierte IDaaS (Identity-as-a-Service) für Ihre Organisation bereit. Dies ist in Abbildung 4 dargestellt.
+Mehrere Abonnements für Cloudangebote von Microsoft können denselben Azure AD-Mandanten verwenden, der als gemeinsamer Identitätsanbieter fungiert. Ein zentraler Azure AD-Mandant, der die synchronisierten Konten Ihrer lokalen AD DS enthält, stellt eine cloudbasierte IDaaS (Identity-as-a-Service) für Ihre Organisation bereit. Dies ist in Abbildung 4 dargestellt.
   
 **Abbildung 4: Synchronisierte lokale Konten und IDaaS für eine Organisation**
 
 ![IDaaS (Identity as a Service) für Ihre Organisation.](media/Subscriptions/Subscriptions-Fig4.png)
   
-In Abbildung 4 wird gezeigt, wie ein gemeinsamer Azure AD-Mandant von Microsoft-SaaS-Cloudangeboten, Azure PaaS-Apps und virtuellen Computern in Azure IaaS verwendet wird, die Azure AD-Domänendienste verwenden. Die lokale Windows Server AD-Gesamtstruktur wird mithilfe von Azure AD Connect mit dem Azure AD-Mandanten synchronisiert.
+In Abbildung 4 wird gezeigt, wie ein gemeinsamer Azure AD-Mandant von Microsoft-SaaS-Cloudangeboten, Azure PaaS-Apps und virtuellen Computern in Azure IaaS verwendet wird, die Azure AD-Domänendienste verwenden. Die lokale AD DS-Gesamtstruktur wird mithilfe von Azure AD Connect mit dem Azure AD-Mandanten synchronisiert.
   
 Weitere Informationen zur Identitätsintegration über die Microsoft-Cloudangebote hinweg finden Sie unter [Microsoft-Cloud-Identität für Enterprise-Architekten](https://aka.ms/cloudarchidentity).
   
@@ -145,7 +145,7 @@ Die folgende Tabelle beschreibt, wie Sie mehrere Microsoft-Cloudangebote basiere
   
 ||**Office 365**|**Azure**|**Intune/EMS**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Office 365** <br/> |–  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |
+|**Office 365** <br/> |NV  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |
 |**Azure** <br/> |Sie fügen ein Office 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |–  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |
 |**Intune/EMS** <br/> |Sie fügen ein Office 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |–  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |
 |**Dynamics 365** <br/> |Sie fügen ein Office 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Intune/EMS-Abonnement zu Ihrer Organisation hinzu.  <br/> |–  <br/> |
