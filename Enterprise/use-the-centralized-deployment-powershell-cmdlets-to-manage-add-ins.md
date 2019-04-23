@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie die zentrale Bereitstellung PowerShell-Cmdlets zum Verwalten von-add-ins
+title: Verwenden der PowerShell-Cmdlets für zentrale Bereitstellung zum Verwalten von Add-Ins
 ms.author: twerner
 author: twernermsft
 manager: scotv
@@ -15,33 +15,33 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
-description: Verwenden Sie die zentrale Bereitstellung PowerShell-Cmdlets, mit denen Sie die Bereitstellung und Verwaltung von Office-add-ins für Office 365-Organisation.
-ms.openlocfilehash: 6199ad2d37a11166155b898b52d52304836599d0
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: Verwenden Sie die PowerShell-Cmdlets der zentralisierten Bereitstellung, um Sie beim Bereitstellen und Verwalten von Office-Add-Ins für Ihre Office 365-Organisation zu unterstützen.
+ms.openlocfilehash: ec851fc85273e9f871c20d5075b16cb97472f975
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957636"
 ---
-# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Verwenden Sie die zentrale Bereitstellung PowerShell-Cmdlets zum Verwalten von-add-ins
+# <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Verwenden der PowerShell-Cmdlets für zentrale Bereitstellung zum Verwalten von Add-Ins
 
-Sie können Office-add-ins für Benutzer über die zentrale Bereitstellung bereitstellen, als ein Office 365-Admin-Funktion (siehe [Bereitstellen von Office-Add-ins im Office 365 Admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)). Zusätzlich zur Bereitstellung von Office-add-ins über das Office 365 Administrationscenter, können Sie auch Microsoft PowerShell verwenden. [Laden Sie](https://go.microsoft.com/fwlink/p/?linkid=850850) die zentrale Bereitstellung PowerShell-Cmdlets aus dem Microsoft Download Center. 
+Als Office 365-Administrator können Sie Office-Add-Ins über das zentralisierte Bereitstellungsfeature für Benutzer bereitstellen (Weitere Informationen finden Sie unter [Deploy Office Add-Ins in office 365 Admin Center](https://support.office.com/article/737e8c86-be63-44d7-bf02-492fa7cd9c3f.aspx)). Zusätzlich zur Bereitstellung von Office-Add-Ins über das Office 365 Admin Center können Sie auch Microsoft PowerShell verwenden. Installieren [Sie das zentralisierte O365-Add-in-Bereitstellungsmodul für Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
     
-## <a name="connect-using-your-admin-credentials"></a>Verbindung mit Ihren Administratoranmeldeinformationen
+## <a name="connect-using-your-admin-credentials"></a>Herstellen einer Verbindung mit Ihren Administratoranmeldeinformationen
 
-Bevor Sie die Cmdlets zentralisierte Bereitstellung verwenden können, müssen Sie anmelden.
+Bevor Sie die zentralisierten Bereitstellungs-Cmdlets verwenden können, müssen Sie sich anmelden.
   
 1. Starten Sie PowerShell.
     
-2. Eine Verbindung zu PowerShell mit Ihren Administratoranmeldeinformationen Unternehmen. Führen Sie das folgende Cmdlet aus.
+2. Stellen Sie mithilfe der Anmeldeinformationen Ihres Unternehmens eine Verbindung zu PowerShell her. Führen Sie das folgende Cmdlet aus.
     
   ```
   Connect-OrganizationAddInService
   ```
 
-3. Geben Sie Ihre Office 365 globaler Administrator-Anmeldeinformationen auf der Seite **Anmeldeinformationen eingeben** . Alternativ können Sie direkt in das Cmdlet Ihre Anmeldeinformationen eingeben. 
+3. Geben Sie auf der Seite **Anmeldeinformationen eingeben** ihre Office 365-Anmeldeinformationen für den globalen Administrator ein. Alternativ können Sie Ihre Anmeldeinformationen direkt in das Cmdlet eingeben. 
     
-    Führen Sie das folgende Cmdlet angeben von Ihrem Unternehmen Administratorinformationen als ein PSCredential-Objekt.
+    Führen Sie das folgende Cmdlet aus, um die Anmeldeinformationen Ihres Unternehmens als PSCredential-Objekt anzugeben.
     
   ```
   $secpasswd = ConvertTo-SecureString "MyPassword" -AsPlainText -Force
@@ -50,121 +50,121 @@ Bevor Sie die Cmdlets zentralisierte Bereitstellung verwenden können, müssen S
   ```
 
 > [!NOTE]
-> Weitere Informationen zum Verwenden von PowerShell finden Sie unter [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585). 
+> Weitere Informationen zur Verwendung von PowerShell finden Sie unter [Connect to Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=848585). 
   
-## <a name="upload-an-add-in-manifest"></a>Hochladen einer Manifest-Add-in
+## <a name="upload-an-add-in-manifest"></a>Hochladen eines Add-in-Manifests
 
-Führen Sie das Cmdlet New-OrganizationAdd-In, um ein Manifest-Add-in aus einem Pfad hochzuladen, einen Dateispeicherort oder eine URL sein kann. Das folgende Beispiel zeigt einen Dateispeicherort für den Wert des Parameters _ManifestPath_ . 
+Führen Sie das Cmdlet New-Organisationadd-in aus, um ein Add-in-Manifest aus einem Pfad hochzuladen, der entweder ein Dateispeicherort oder eine URL sein kann. Das folgende Beispiel zeigt einen Dateispeicherort für den Wert des _ManifestPath_ -Parameters. 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
-Sie können auch das Cmdlet New-OrganizationAdd-In, um ein Add-in hochzuladen, und weisen Sie es Benutzern oder Gruppen direkt mithilfe des _Member_ -Parameters, wie im folgenden Beispiel dargestellt ausführen. Trennen Sie die e-Mail-Adressen der Elemente durch ein Komma. 
+Sie können auch das Cmdlet New-Organisationadd-in ausführen, um ein Add-in hochzuladen und es Benutzern oder Gruppen direkt zuzuweisen, indem Sie den Parameter _Members_ verwenden, wie im folgenden Beispiel gezeigt. Trennen Sie die e-Mail-Adressen der Mitglieder durch ein Komma. 
   
 ```
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Ein Add-in aus dem Office Store hochladen
+## <a name="upload-an-add-in-from-the-office-store"></a>Hochladen eines Add-Ins aus dem Office Store
 
-Führen Sie das Cmdlet New-OrganizationAddIn hochladen eine Manifestdatei aus dem Office Store aus.
+Führen Sie das Cmdlet New-OrganizationAddIn aus, um ein Manifest aus dem Office Store hochzuladen.
   
-Im folgenden Beispiel gibt das Cmdlet New-OrganizationAddIn das Hilfethema für ein Add-In für einen Markt USA, Speicherort und Inhalt.
+Im folgenden Beispiel gibt das Cmdlet New-OrganizationAddIn die Ressourcen-Nr. für ein Add-in für einen US-Standort-und-Inhalts Markt an.
   
 ```
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Um den Wert für den Parameter _Hilfethema_ zu bestimmen, können Sie kopieren es aus der URL der im Office Store-Webseite für das Add-in AssetIds immer beginnen mit "WA" gefolgt von einer Zahl. Die Quelle für den Wert Hilfethema WA104099688 ist beispielsweise im vorherigen Beispiel die URL des Office Store-Webseite für das Add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
+Um den Wert für den Parameter _Asset_ -Nr zu bestimmen, können Sie ihn aus der URL der Office Store-Webseite für das Add-in kopieren. AssetIds beginnen immer mit "WA" gefolgt von einer Zahl. Im vorherigen Beispiel ist die Quelle für den Asset-Wert von WA104099688 die Office Store-Webseiten-URL für das Add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
   
-Die Werte für den Parameter _Locale_ und der _ContentMarket_ -Parameter sind identisch, und geben Sie an, das Land/Region, der Sie das Add-in aus installieren möchten. Das Format ist En-US, fr-FR und So weiter. 
+Die Werte für den __ Parameter Locale und den Parameter _ContentMarket_ sind identisch und geben das Land/die Region an, in der Sie das Add-in installieren möchten. Das Format lautet en-US, fr-FR. usw. 
   
 > [!NOTE]
-> -Add-ins aus dem Office Store hochgeladen wird innerhalb einiger Tage der letzten Aktualisierung nicht verfügbar sein, auf dem Office Store automatisch aktualisiert. 
+> Vom Office Store hochgeladene Add-Ins werden automatisch innerhalb von wenigen Tagen aktualisiert, nachdem das neueste Update im Office Store verfügbar ist. 
   
-## <a name="get-details-of-an-add-in"></a>Hier erhalten Sie von einem Add-in
+## <a name="get-details-of-an-add-in"></a>Abrufen von Details eines Add-ins
 
-Führen Sie das Cmdlet Get-OrganizationAddIn wie unten dargestellt enthalten, um die Details der alle Add-Ins, die dem Mandanten hochgeladen abrufen ein Add-in Produkt-ID
+Führen Sie das Get-OrganizationAddIn-Cmdlet wie unten gezeigt aus, um Details zu allen Add-Ins abzurufen, die an den Mandanten hochgeladen wurden, und enthalten die Produkt-ID des Add-Ins.
   
 ```
 Get-OrganizationAddIn
 ```
 
-Führen Sie das Cmdlet Get-OrganizationAddIn mit einem Wert für den Parameter _ProductId_ an die add-Ins, dass Details für abgerufen werden soll. 
+Führen Sie das Cmdlet Get-OrganizationAddIn mit einem Wert für den Parameter _ProductID_ aus, um anzugeben, für welches Add-in Details abgerufen werden sollen. 
   
 ```
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-Wenn Sie alle Details der alle Add-Ins plus zugewiesene Benutzer und Gruppen erhalten möchten, leiten Sie die Ausgabe des Cmdlets Get-OrganizationAddIn an das Cmdlet Format-List wie im folgenden Beispiel dargestellt.
+Wenn Sie alle Informationen zu allen Add-Ins sowie den zugewiesenen Benutzern und Gruppen erhalten möchten, übergeben Sie die Ausgabe des Cmdlets Get-OrganizationAddIn an das Cmdlet Format-List, wie im folgenden Beispiel gezeigt.
   
 ```
 Get-OrganizationAddIn |Format-List
 ```
 
-## <a name="turn-on-or-turn-off-an-add-in"></a>Aktivieren Sie oder deaktivieren Sie eines Add-Ins
+## <a name="turn-on-or-turn-off-an-add-in"></a>Aktivieren oder Deaktivieren eines Add-ins
 
-Um ein Add-in zu deaktivieren, damit Benutzer und Gruppen, die ihm zugewiesen sind nicht mehr Zugriff haben, führen Sie das Cmdlet Set-OrganizationAddIn mit der _ProductId_ -Parameter und der Parameter _Enabled_ legen Sie auf `$false`, wie im folgenden Beispiel gezeigt.
+Zum Deaktivieren eines Add-Ins, damit Benutzer und Gruppen, die ihm zugewiesen sind, keinen Zugriff mehr haben, führen Sie das Cmdlet Set-OrganizationAddIn mit dem Parameter _ProductID_ und dem Parameter _Enabled_ auf `$false`auf, wie im folgenden Beispiel gezeigt.
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $false
 ```
 
-Um ein Add-in wieder zu aktivieren, führen Sie das gleiche Cmdlet mit der Parameter _Enabled_ legen Sie auf `$true`.
+Wenn Sie ein Add-in wieder aktivieren möchten, führen Sie dasselbe Cmdlet aus __ , wobei der Parameter `$true`Enabled auf festgelegt ist.
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Enabled $true
 ```
 
-## <a name="add-or-remove-users-from-an-add-in"></a>Hinzufügen oder Entfernen von Benutzern aus einer-Add-in
+## <a name="add-or-remove-users-from-an-add-in"></a>Hinzufügen oder Entfernen von Benutzern aus einem Add-in
 
-Zum Hinzufügen von Benutzern und Gruppen zu einer bestimmten Add-in führen Sie das Set-OrganizationAddInAssignments-Cmdlet mit den Parametern _ProductId_, _Hinzufügen_und _Mitglieder_ . Trennen Sie die e-Mail-Adressen der Elemente durch ein Komma. 
+Zum Hinzufügen von Benutzern und Gruppen zu einem bestimmten Add-in führen Sie das Cmdlet Set-OrganizationAddInAssignments mit den Parametern _ProductID_, _Add_und _Members_ aus. Trennen Sie die e-Mail-Adressen der Mitglieder durch ein Komma. 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Add -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Führen Sie zum Entfernen von Benutzern und Gruppen mit dem gleiche-Cmdlet mit dem Parameter _Entfernen_ . 
+Um Benutzer und Gruppen zu entfernen, führen Sie dasselbe Cmdlet mit dem Parameter _Remove_ aus. 
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -Remove -Members 'KathyBonner@contoso.com','sales@contoso.com'
 ```
 
-Führen Sie ein Add-in, um alle Benutzer auf dem Mandanten zuzuweisen, mit dem gleiche-Cmdlet mit dem _AssignToEveryone_ -Parameter mit dem Wert `$true`.
+Um allen Benutzern des Mandanten ein Add-in zuzuweisen, führen Sie dasselbe Cmdlet mit dem Parameter _AssignToEveryone_ mit dem Wert auf `$true`.
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-Um kein Add-In für alle Benutzer zuweisen und Zurücksetzen der zuvor zugewiesene Benutzer und Gruppen, können Sie mit dem gleiche-Cmdlet ausführen und der Parameter _AssignToEveryone_ deaktivieren, indem Sie seinen Wert auf `$false`.
+Sie können dasselbe Cmdlet ausführen und den _AssignToEveryone_ -Parameter deaktivieren, indem Sie seinen Wert auf `$false`festlegen, um keinem Benutzer ein Add-in zuzuweisen und zu den zuvor zugewiesenen Benutzern und Gruppen zurückzukehren.
   
 ```
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
 ```
 
-## <a name="update-an-add-in"></a>Aktualisieren eines Add-Ins
+## <a name="update-an-add-in"></a>Aktualisieren eines Add-ins
 
-Um ein Add-in aus einem Manifest zu aktualisieren, führen Sie das Cmdlet Set-OrganizationAddIn mit _ProductId_, _ManifestPath_und _Gebietsschema_ -Parameter, wie im folgenden Beispiel dargestellt. 
+Um ein Add-in aus einem Manifest zu aktualisieren, führen Sie das Cmdlet Set-OrganizationAddIn mit den Parametern _ProductID_, _ManifestPath_und _locale_ aus, wie im folgenden Beispiel gezeigt. 
   
 ```
 Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
 ```
 
 > [!NOTE]
-> -Add-ins aus dem Office Store hochgeladen wird innerhalb einiger Tage der letzten Aktualisierung nicht verfügbar sein, auf dem Office Store automatisch aktualisiert. 
+> Vom Office Store hochgeladene Add-Ins werden automatisch innerhalb von wenigen Tagen aktualisiert, nachdem das neueste Update im Office Store verfügbar ist. 
   
-## <a name="delete-an-add-in"></a>Löschen eines Add-Ins
+## <a name="delete-an-add-in"></a>Löschen eines Add-ins
 
-Um ein Add-in zu löschen, führen Sie das Cmdlet Remove-OrganizationAddIn mit dem Parameter _ProductID-Wert_ fest, wie im folgenden Beispiel dargestellt. 
+Um ein Add-in zu löschen, führen Sie das Cmdlet Remove-OrganizationAddIn mit dem Parameter _ProductID_ aus, wie im folgenden Beispiel dargestellt. 
   
 ```
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-## <a name="get-detailed-help-for-each-cmdlet"></a>Für jedes Cmdlet detaillierte Hilfe erhalten
+## <a name="get-detailed-help-for-each-cmdlet"></a>Ausführliche Hilfe zu den einzelnen Cmdlets
 
-Sie können mit dem Cmdlet Get-Help detaillierte Hilfe für alle Cmdlets anzeigen. Beispielsweise enthält das folgende Cmdlet detaillierte Informationen zum Cmdlet Remove-OrganizationAddIn.
+Ausführliche Hilfe zu den einzelnen Cmdlets finden Sie unter Verwendung des Cmdlets Get-Help. Das folgende Cmdlet enthält beispielsweise detaillierte Informationen zum Cmdlet Remove-OrganizationAddIn.
   
 ```
 Get-help Remove-OrganizationAddIn -Full

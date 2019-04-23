@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: Zusammenfassung:Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP) können Windows PowerShell zum Verwalten von Office 365-Kundenmandanten verwenden.
-ms.openlocfilehash: cab32f5c38e09a2c4407eb0831f4b67ccc3940f1
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: 93b323d8de7016008ba7e4f75ff4b1c011adb9f2
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992815"
 ---
 # <a name="manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten von Office 365 mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)
 
@@ -36,6 +36,6 @@ DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind 
     
 - [Abrufen von Kundenberichtsdaten über Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
     
-- [Aggregieren von Kundenberichtsdaten über Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)](aggregate-customer-reporting-data-via-windows-powershell-for-delegated-access-pe.md)
+
     
 

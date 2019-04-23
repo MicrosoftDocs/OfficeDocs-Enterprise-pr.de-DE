@@ -1,5 +1,5 @@
 ---
-title: Funktionsweise der modernen Authentifizierung für Office 2013-und Office 2016-Client-apps
+title: Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -21,17 +21,20 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die moderne Authentifizierung von Office 365 für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: 0e7b1a91a13fdd1ea5bb5fd3b42fcda60c704d6f
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: 5e42ec2fcf8f27990af187e4ad26ba65909ac709
+ms.sourcegitcommit: 51f9e89e4b9d54f92ef5c70468bda96e664b8a6b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31957696"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung für Office 2013-und Office 2016-Client-apps
+# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
 
 Lesen Sie diesen Artikel, um zu erfahren, wie Office 2013-und Office 2016-Client-apps moderne Authentifizierungsfeatures basierend auf der Authentifizierungskonfiguration im Office 365-Mandanten für Exchange Online, SharePoint Online und Skype for Business Online verwenden.
-  
+
+> [!NOTE]
+> Ältere Client-apps wie Office 2010 und Office für Mac 2011 unterstützen keine moderne Authentifizierung und können nur mit der Standardauthentifizierung verwendet werden.
+
 ## <a name="availability-of-modern-authentication-for-office-365-services"></a>Verfügbarkeit moderner Authentifizierung für Office 365-Dienste
 
 Für die Office 365-Dienste lautet der Standardstatus der modernen Authentifizierung wie folgt:
@@ -54,7 +57,7 @@ Klicken Sie auf die Links unten, um zu sehen, wie die Office 2013-und Office 201
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
-- [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
+- [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
 - [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
