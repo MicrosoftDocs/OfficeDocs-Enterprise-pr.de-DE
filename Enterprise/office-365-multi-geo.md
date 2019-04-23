@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Office 365 Multi-Geo.
-ms.openlocfilehash: e216f61806ea5d648519ac7217acf7dbaddd1419
-ms.sourcegitcommit: 8ba20f1b1839630a199585da0c83aaebd1ceb9fc
+ms.openlocfilehash: eb5c28131b7ac629d9acc607c777756b8825549c
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30934006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992835"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -55,7 +55,7 @@ Office 365 Multi-Geo wird derzeit in diesen Regionen und Ländern angeboten:
 
 Gehen Sie folgendermaßen vor, um mit Multi-Geo loszulegen:
 
-1. Arbeiten Sie mit Ihrem Kontoteam zusammen, um den Serviceplan für _Multi-Geo-Funktionen in Office 365_ hinzuzufügen. Das Team unterstützt Sie beim Hinzufügen der benötigten Lizenzen.
+1. Arbeiten Sie mit Ihrem Kontoteam, um den Serviceplan für _Multi-Geo-Funktionen in Office 365_ hinzuzufügen. Sie werden angeleitet, die benötigten Lizenzen hinzuzufügen. Multi-Geo ist für Kunden mit mindestens 2.500 Office 365-Abonnements verfügbar.
 
    Bevor Sie mit der Verwendung von Office 365 Muli-Geo beginnen können, muss Ihr Exchange Online-Mandant durch Microsoft für die Unterstützung von Multi-Geo konfiguriert werden. Dieser einmalige Konfigurationsprozess wird ausgelöst, nach dem Sie den Service-Plan für *Multi-Geo Capabilities in Office 365* bestellt haben und die Lizenzen in Ihrem Mandanten angezeigt werden. Sie erhalten im [Office 365-Nachrichtencenter](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) Benachrichtigungen, sobald Ihre Multi-Geo-Lizenzen angewendet werden und können dann mit dem Konfigurieren und Verwenden Ihrer Office 365 Multi-Geo-Funktionen beginnen.
 
@@ -69,8 +69,8 @@ Gehen Sie folgendermaßen vor, um mit Multi-Geo loszulegen:
 
 ## <a name="see-also"></a>Siehe auch
 
-[Aka.ms/GoMultiGeo ](https://Aka.ms/GoMultiGeo)
+[Multi-Geo in Exchange Online und OneDrive](https://Aka.ms/GoMultiGeo)
 
-[Multi-Geo-Funktionen in OneDrive und SharePoint Online](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+[Multi-Geo-Funktionen in OneDrive und SharePoint Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
-[Multi-Geo-Funktionen in Exchange Online](multi-geo-capabilities-in-exchange-online.md)
+[Multi-Geo-Funktionen in Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)

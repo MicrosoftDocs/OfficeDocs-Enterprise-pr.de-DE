@@ -11,12 +11,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Priority
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Multi-Geo-Funktionen in OneDrive Online.
-ms.openlocfilehash: 15dcb44943fa1bf331ef6260946f7c3a632d3c4a
-ms.sourcegitcommit: dffbcfb1cbc9776a29229a787c1eab4192e55cff
+ms.openlocfilehash: ce5a846391fd62daafd174baea4144ac1d1aba37
+ms.sourcegitcommit: 509bcf92580d7a0bcebbf6f1d10311d6b0014984
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30948586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "31992845"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online
 
@@ -30,7 +30,9 @@ Benutzer erhalten die vertraute Oberfläche bei Verwendung von Office 365-Dienst
 
 Das OneDrive jedes Benutzers kann in Einklang mit der PDL an einem Satellitenort bereitgestellt oder [von einem Administrator dorthin verschoben werden](move-onedrive-between-geo-locations.md). Persönliche Dateien verbleiben an diesem geografischen Ort, obwohl sie mit Benutzern an anderen geografischen Orten geteilt werden können.
 
-## <a name="sites-and-groups"></a>Sites und Gruppen
+## <a name="sharepoint-sites-and-groups"></a>SharePoint-Websites und -Gruppen
+
+Die Verwaltung des Features "Multi-Geo" steht über das SharePoint Admin Center zur Verfügung. Ausführliche Informationen finden Sie im [entsprechenden Blogbeitrag](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302).
 
 Wenn ein Benutzer eine mit einer SharePoint-Gruppe verbundene Site erstellt, wird ihre PDL verwendet, um den geografischen Ort zu bestimmen, an dem die Site und ihr zugehöriges Gruppenpostfach erstellt werden. (Wenn der PDL-Wert des Benutzers nicht festgelegt oder auf den geografischen Ort festgelegt wurde, der nicht als Satellitenort konfiguriert wurde, werden Site und Postfach am zentralen Ort erstellt.)
 
@@ -46,7 +48,7 @@ Das Einrichten und Verwalten Ihrer Multi-Geo-Umgebung erfolgt über das SharePoi
 
 ## <a name="see-also"></a>Siehe auch
 
-[Aka.ms/GetMultiGeo ](https://Aka.ms/GetMultiGeo)
+[Multi-Geo in SharePoint- und Office 365-Gruppen](https://techcommunity.microsoft.com/t5/Office-365-Blog/Now-available-Multi-Geo-in-SharePoint-and-Office-365-Groups/ba-p/263302)
 
 [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md)
 
