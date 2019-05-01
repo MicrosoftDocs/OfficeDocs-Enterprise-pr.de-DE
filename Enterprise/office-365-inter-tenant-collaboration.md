@@ -1,5 +1,5 @@
 ---
-title: Office 365-Mandantenübergreifende Zusammenarbeit
+title: Zusammenarbeit zwischen Office 365-Mandanten
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Erfahren Sie, wie Office 365 Collaboration über Mandanten und Organisationen hinweg funktioniert.
 ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "30665248"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492091"
 ---
-# <a name="office-365-inter-tenant-collaboration"></a>Office 365-Mandantenübergreifende Zusammenarbeit
+# <a name="office-365-inter-tenant-collaboration"></a>Zusammenarbeit zwischen Office 365-Mandanten
 
 In diesem Artikel werden verschiedene Möglichkeiten zur Zusammenarbeit zwischen zwei Office 365-Mandanten beschrieben. Sie ist für Office 365-Administratoren vorgesehen.
   

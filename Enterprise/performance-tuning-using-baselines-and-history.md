@@ -1,5 +1,5 @@
 ---
-title: Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf
+title: 'Office 365-Leistung optimieren mit Basisplänen und Leistungsverlauf '
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -19,13 +19,13 @@ ms.collection:
 - Ent_O365
 description: Es gibt einige einfache Methoden zum Überprüfen der Verbindungsleistung zwischen Office 365 und Ihrem Unternehmen, mit denen Sie eine grobe Basis ihrer Konnektivität einrichten können. Wenn Sie den Leistungsverlauf ihrer Clientcomputerverbindungen kennen, können Sie Probleme frühzeitig erkennen, erkennen und Vorhersagen.
 ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372942"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491836"
 ---
-# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf
+# <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365-Leistung optimieren mit Basisplänen und Leistungsverlauf 
 
 Es gibt einige einfache Methoden zum Überprüfen der Verbindungsleistung zwischen Office 365 und Ihrem Unternehmen, mit denen Sie eine grobe Basis ihrer Konnektivität einrichten können. Wenn Sie den Leistungsverlauf ihrer Clientcomputerverbindungen kennen, können Sie Probleme frühzeitig erkennen, erkennen und Vorhersagen.
   

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen des Status der Verzeichnissynchronisierung in Office 365
+title: Anzeigen des Status der Verzeichnissynchronisierung in Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: Erfahren Sie, wie Sie die Verzeichnissynchronisierung deaktivieren. Sie können den Status auch anzeigen.
 ms.openlocfilehash: a38b723db6f5bafe246e774972ca89c65bc9c846
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001568"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33492101"
 ---
-# <a name="view-directory-synchronization-status-in-office-365"></a>Anzeigen des Status der Verzeichnissynchronisierung in Office 365
+# <a name="view-directory-synchronization-status-in-office-365"></a>Anzeigen des Status der Verzeichnissynchronisierung in Office 365
 
 Wenn Sie Ihr lokales Active Directory mit Azure AD integriert haben, indem Sie Ihre lokale Umgebung mit Office 365 synchronisieren, können Sie auch den Status Ihrer Synchronisierung überprüfen.
   
@@ -39,7 +39,7 @@ In der folgenden Tabelle sind die Features aufgeführt, auf die Sie auf der Seit
   
 Wenn ein Problem mit der Verzeichnissynchronisierung auftritt, werden die Fehler auch auf dieser Seite aufgeführt. Weitere Informationen zu unterschiedlichen Fehlern, die auftreten können, finden Sie unter [Identifizieren von Verzeichnis Synchronisierungsfehlern in Office 365](identify-directory-synchronization-errors.md).
   
-|**Element**|**Zweck**|
+|**Item**|**Zweck**|
 |:-----|:-----|
 |**Domänen überprüft** | Die Anzahl der Domänen in Ihrem Office 365-Mandanten, die Sie überprüft haben. |
 |**Domänen wurden nicht überprüft** | Domänen, die Sie hinzugefügt, jedoch nicht überprüft haben. |
