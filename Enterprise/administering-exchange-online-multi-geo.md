@@ -10,11 +10,11 @@ ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie, wie Sie Exchange Online Multi-Geo-Einstellungen mit Microsoft PowerShell verwalten.
 ms.openlocfilehash: cc8adecda26073f588b63af12c13209720f9bc98
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765047"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490881"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung
 
@@ -42,7 +42,7 @@ Um eine Verbindung zu einem bestimmten geografischen Standort herzustellen, unte
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
    ```
 
-   Wenn olga@contoso.onmicrosoft.com beispielsweise die E-Mail-Adresse eines gültigen Postfachs an dem geografischen Standort ist, den Sie verbinden möchten, führen Sie den folgenden Befehl aus:
+   Wenn beispielsweise olga@contoso.onmicrosoft.com die E-Mail-Adresse eines gültigen Postfachs an dem geografischen Standort ist, den Sie verbinden möchten, führen Sie den folgenden Befehl aus:
 
    ```powershell
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
@@ -86,7 +86,7 @@ Um diese Eigenschaften für ein Postfach anzuzeigen, verwenden Sie die folgende 
 Get-Mailbox -Identity <MailboxIdentity> | Format-List Database,MailboxRegion*
 ```
 
-Um z. B. die geografische Information für das Postfach chris@contoso.onmicrosoft.com anzuzeigen, führen Sie den folgenden Befehl aus:
+Um beispielsweise die geografische Information für das Postfach chris@contoso.onmicrosoft.com anzuzeigen, führen Sie den folgenden Befehl aus:
 
 ```powershell
 Get-Mailbox -Identity chris@contoso.onmicrosoft.com | Format-List Database, MailboxRegion*
@@ -124,7 +124,7 @@ Um den **PreferredDataLocation**-Wert für ein Nur-Cloud-Benutzerobjekt zu ände
 Set-MsolUser -UserPrincipalName <UserPrincipalName> -PreferredDataLocation <GeoLocationCode>
 ```
 
-Um z. B. den **PreferredDataLocation**-Wert auf die Geodaten der Europäischen Union (EUR) für den Benutzer michelle@contoso.onmicrosoft.com festzulegen, führen Sie den folgenden Befehl aus:
+Um z. B. den **PreferredDataLocation**-Wert auf die Geodaten der  Europäischen Union (EUR) für den Benutzer michelle@contoso.onmicrosoft.com festzulegen, führen Sie den folgenden Befehl aus:
 
 ```powershell
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
