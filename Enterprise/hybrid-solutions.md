@@ -15,45 +15,45 @@ ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Zusammenfassung: Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.'
 ms.openlocfilehash: c648ecb7df1a4604960a5b0445ce3de7a74c9acf
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915870"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487191"
 ---
-# <a name="hybrid-solutions"></a><span data-ttu-id="98c39-103">Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="98c39-103">Hybrid solutions</span></span>
+# <a name="hybrid-solutions"></a><span data-ttu-id="887c5-103">Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="887c5-103">Hybrid solutions</span></span>
 
- <span data-ttu-id="98c39-104">**Zusammenfassung:** Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="98c39-104">**Summary:** Use these articles to deploy Office Server workloads in Microsoft Azure.</span></span>
+ <span data-ttu-id="887c5-104">**Zusammenfassung:** Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="887c5-104">**Summary:** Use these articles to deploy Office Server workloads in Microsoft Azure.</span></span>
   
-<span data-ttu-id="98c39-105">Mit Microsoft Azure können Sie nun einige Office Server-Arbeitslasten bereitstellen, die in der Regel lokal auf Azure-Infrastrukturdiensten bereitgestellt wurden.</span><span class="sxs-lookup"><span data-stu-id="98c39-105">With Microsoft Azure, you can now deploy some Office Server workloads that were typically deployed on-premises in Azure infrastructure services.</span></span>
+<span data-ttu-id="887c5-105">Mit Microsoft Azure können Sie nun einige Office Server-Arbeitslasten bereitstellen, die in der Regel lokal auf Azure-Infrastrukturdiensten bereitgestellt wurden.</span><span class="sxs-lookup"><span data-stu-id="887c5-105">With Microsoft Azure, you can now deploy some Office Server workloads that were typically deployed on-premises in Azure infrastructure services.</span></span>
   
-<span data-ttu-id="98c39-106">Für Office 365-Identitätsinfrastruktur in Azure:</span><span class="sxs-lookup"><span data-stu-id="98c39-106">For Office 365 identity infrastructure in Azure:</span></span>
+<span data-ttu-id="887c5-106">Für Office 365-Identitätsinfrastruktur in Azure:</span><span class="sxs-lookup"><span data-stu-id="887c5-106">For Office 365 identity infrastructure in Azure:</span></span>
 
-- [<span data-ttu-id="98c39-107">Verwenden von Azure AD für die SharePoint Server-Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="98c39-107">Using Azure AD for SharePoint Server Authentication</span></span>](using-azure-ad-for-sharepoint-server-authentication.md)
+- [<span data-ttu-id="887c5-107">Verwenden von Azure AD für die SharePoint Server-Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="887c5-107">Using Azure AD for SharePoint Server Authentication</span></span>](using-azure-ad-for-sharepoint-server-authentication.md)
 
-- [<span data-ttu-id="98c39-108">Bereitstellen von Office 365 Directory-Synchronisierung in Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="98c39-108">Deploy Office 365 Directory Synchronization in Microsoft Azure</span></span>](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+- [<span data-ttu-id="887c5-108">Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="887c5-108">Deploy Office 365 Directory Synchronization in Microsoft Azure</span></span>](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
-- [<span data-ttu-id="98c39-109">Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk</span><span class="sxs-lookup"><span data-stu-id="98c39-109">Connect an on-premises network to a Microsoft Azure virtual network</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+- [<span data-ttu-id="887c5-109">Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk</span><span class="sxs-lookup"><span data-stu-id="887c5-109">Connect an on-premises network to a Microsoft Azure virtual network</span></span>](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [<span data-ttu-id="98c39-110">Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure</span><span class="sxs-lookup"><span data-stu-id="98c39-110">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [<span data-ttu-id="887c5-110">Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure</span><span class="sxs-lookup"><span data-stu-id="887c5-110">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
-<span data-ttu-id="98c39-111">Für SharePoint Server 2013-Arbeitslasten in Azure:</span><span class="sxs-lookup"><span data-stu-id="98c39-111">For SharePoint Server 2013 workloads in Azure:</span></span>
+<span data-ttu-id="887c5-111">Für SharePoint Server 2013-Arbeitslasten in Azure:</span><span class="sxs-lookup"><span data-stu-id="887c5-111">For SharePoint Server 2013 workloads in Azure:</span></span>
   
-- [<span data-ttu-id="98c39-112">Microsoft Azure-Architekturen für SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="98c39-112">Microsoft Azure Architectures for SharePoint 2013</span></span>](microsoft-azure-architectures-for-sharepoint-2013.md)
+- [<span data-ttu-id="887c5-112">Microsoft Azure-Architekturen für SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="887c5-112">Microsoft Azure Architectures for SharePoint 2013</span></span>](microsoft-azure-architectures-for-sharepoint-2013.md)
     
-- [<span data-ttu-id="98c39-113">SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="98c39-113">SharePoint Server 2013 Disaster Recovery in Microsoft Azure</span></span>](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
+- [<span data-ttu-id="887c5-113">SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure</span><span class="sxs-lookup"><span data-stu-id="887c5-113">SharePoint Server 2013 Disaster Recovery in Microsoft Azure</span></span>](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
-- [<span data-ttu-id="98c39-114">Internetwebsites in Microsoft Azure mit SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="98c39-114">Internet Sites in Microsoft Azure using SharePoint Server 2013</span></span>](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
+- [<span data-ttu-id="887c5-114">Internetwebsites in Microsoft Azure mit SharePoint Server 2013</span><span class="sxs-lookup"><span data-stu-id="887c5-114">Internet Sites in Microsoft Azure using SharePoint Server 2013</span></span>](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md)
   
   
-## <a name="see-also"></a><span data-ttu-id="98c39-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="98c39-115">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="887c5-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="887c5-115">See Also</span></span>
 
-[<span data-ttu-id="98c39-116">Cloudakzeptanz und Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="98c39-116">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
+[<span data-ttu-id="887c5-116">Cloudakzeptanz und Hybridlösungen</span><span class="sxs-lookup"><span data-stu-id="887c5-116">Cloud adoption and hybrid solutions</span></span>](cloud-adoption-and-hybrid-solutions.md)
   
-[<span data-ttu-id="98c39-117">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="98c39-117">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
+[<span data-ttu-id="887c5-117">Ressourcen zur Cloud-IT-Architektur von Microsoft</span><span class="sxs-lookup"><span data-stu-id="887c5-117">Microsoft Cloud IT architecture resources</span></span>](microsoft-cloud-it-architecture-resources.md)
   
-[<span data-ttu-id="98c39-118">Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz</span><span class="sxs-lookup"><span data-stu-id="98c39-118">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
+[<span data-ttu-id="887c5-118">Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz</span><span class="sxs-lookup"><span data-stu-id="887c5-118">Cloud adoption Test Lab Guides (TLGs)</span></span>](cloud-adoption-test-lab-guides-tlgs.md)
   
-[<span data-ttu-id="98c39-119">Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync</span><span class="sxs-lookup"><span data-stu-id="98c39-119">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
+[<span data-ttu-id="887c5-119">Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync</span><span class="sxs-lookup"><span data-stu-id="887c5-119">Architectural models for SharePoint, Exchange, Skype for Business, and Lync</span></span>](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 
