@@ -1,5 +1,5 @@
 ---
-title: Inhalts Bereitstellungs Netzwerke
+title: Netzwerke für die Inhaltsübermittlung
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Verwenden Sie diese Informationen, um zu erfahren, wie Office 365 CDNs (Content subNetz) verwendet, um die Leistung zu verbessern.
 ms.openlocfilehash: 5d02b28fad0e47473cc6a75948c9dd27e6728bb5
-ms.sourcegitcommit: 43d2b7e1d9932182c6cca5164d4d9096dcf4ed36
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31039482"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490431"
 ---
 # <a name="content-delivery-networks-cdns"></a>Inhalts Bereitstellungs Netzwerke (CDNs)
 
@@ -186,8 +186,8 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365
 
 [Verwalten von Office 365-Endpunkten](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
-[URLs und IP-Adressbereiche für Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
+[URLs und IP-Adressbereiche von Office 365](https://go.microsoft.com/fwlink/p/?LinkID=293744)
 
 [Verwenden des Office 365 Content Delivery Network mit SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
-[Microsoft Trust Center](https://www.microsoft.com/trustcenter)
+[Microsoft Trust Center](https://www.microsoft.com/trustcenter)

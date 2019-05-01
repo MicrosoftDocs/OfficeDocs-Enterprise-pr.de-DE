@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Installieren und Ausführen des Office 365-IdFix-Tools zum Bereinigen Ihres Active Directory, bevor Sie es mit Office 365 synchronisieren.
 ms.openlocfilehash: a35b2a476f2b30eccc955b980eda6315b146af27
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085404"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33488001"
 ---
 # <a name="install-and-run-the-office-365-idfix-tool"></a>Installieren und Ausführen des Office 365 IdFix-Tools
 
@@ -31,12 +31,12 @@ IdFix identifiziert Fehler wie Duplikate und Formatierungsprobleme in Ihrem Verz
   
 Damit Sie diese Aufgabe erfolgreich abschließen können, sollten Sie sich mit Benutzer-, Gruppen-und Kontaktobjekten in Active Directory vertraut machen.
   
-Wenn Sie diese Aufgabe nicht abschließen können, gibt es einige andere Möglichkeiten. Diese Methoden sind möglicherweise einfacher, aber Sie können auch länger dauern oder andere Nachteile haben. Sie sind:
+Wenn Sie diese Aufgabe nicht abschließen können, gibt es einige andere Möglichkeiten. Diese Methoden sind möglicherweise einfacher, aber Sie können auch länger dauern oder andere Nachteile haben. Dies sind:
   
 - **Führen Sie die Verzeichnissynchronisierung ohne Ausführen von IdFix aus.** Sie können Ihr Verzeichnis synchronisieren, ohne das IdFix-Tool auszuführen, es wird jedoch nicht empfohlen. Das Beheben von Fehlern vor der Synchronisierung dauert schneller und bietet häufig einen reibungsloseren Übergang zur Cloud. 
-- **Stellen Sie einen Berater ein.** Durch Expertenhilfe können Ihre Benutzer schnell loslegen, und Ihr Verzeichnis wird synchronisiert. 
+- **Mieten Sie einen Berater.** Wenn Sie Experten helfen, können Sie Ihre Benutzer schnell einrichten, und Ihr Verzeichnis wird synchronisiert. 
     
-## <a name="what-you-need-to-run-idfix"></a>Voraussetzungen für das Ausführen von IdFix
+## <a name="what-you-need-to-run-idfix"></a>Was Sie zum Ausführen von IdFix benötigen
 
 Am einfachsten können Sie IdFix auf einem Computer installieren, der mit Ihrer Domäne verbunden ist. Sie können es auf dem Domänencontroller ausführen, aber es ist nicht erforderlich.
   
@@ -44,7 +44,7 @@ Am einfachsten können Sie IdFix auf einem Computer installieren, der mit Ihrer 
 
 Der Computer, auf dem Sie IdFix installieren, muss diese minimalen Hardwareanforderungen erfüllen:
   
-- 4 GB RAM
+- 4 GB RAM 
 - 2 GB Festplattenspeicherplatz
     
 ### <a name="idfix-software-requirements"></a>IdFix-Softwareanforderungen
@@ -55,7 +55,7 @@ Wenn Sie Windows Server 2008 oder Windows Server 2012, ist .NET Framework wahrsc
   
 ### <a name="idfix-permissions-requirements"></a>IdFix-Berechtigungsanforderungen
 
-Das Benutzerkonto, das Sie zum Ausführen von IdFix verwenden, muss über Lese-/Schreibzugriff auf das Verzeichnis verfügen.
+Das Benutzerkonto, mit dem Sie IdFix ausführen, muss Lese-/Schreibzugriff auf das Verzeichnis haben.
   
 Wenn Sie nicht sicher sind, ob Ihr Benutzerkonto diese Anforderungen erfüllt, und Sie nicht sicher sind, wie Sie überprüfen, können Sie IdFix installieren und ausführen. Wenn Ihr Benutzerkonto nicht über die richtigen Berechtigungen verfügt, wird bei der Ausführung von IdFix nur ein Fehler angezeigt.
   
@@ -63,7 +63,7 @@ Wenn Sie nicht sicher sind, ob Ihr Benutzerkonto diese Anforderungen erfüllt, u
 
 Zum Installieren von IdFix können Sie **IdFix. exe**herunterladen und entpacken: 
   
-1. Melden Sie sich am Computer an, auf dem Sie das IdFix-Tool installieren möchten.
+1. Melden Sie sich an dem Computer an, auf dem Sie das IdFix-Tool installieren möchten.
     
 2. Wechseln Sie zur Microsoft-Download Website für das [IdFix Dirsync Error Remediation Tool](https://go.microsoft.com/fwlink/?linkid=867219).
     
@@ -75,15 +75,15 @@ Zum Installieren von IdFix können Sie **IdFix. exe**herunterladen und entpacken
     
 6. Wählen Sie **unzip**aus.
     
-## <a name="run-the-idfix-tool"></a>Führen Sie das IdFix-Tool aus.
+## <a name="run-the-idfix-tool"></a>Ausführen des IdFix-Tools
 
-Führen Sie nach dem Installieren von IdFix das Tool zur Problemsuche in Ihrem Verzeichnis aus:
+Führen Sie nach der Installation von IdFix das Tool aus, um nach Problemen in Ihrem Verzeichnis zu suchen:
   
-1. Melden Sie sich unter Verwendung eines Kontos mit Lese-/Schreibzugriff auf das Verzeichnis am Computer an, auf dem Sie IdFix installiert haben.
+1. Melden Sie sich mit einem Konto mit Lese-/Schreibzugriff auf das Verzeichnis an dem Computer an, auf dem Sie IdFix installiert haben.
     
 2. Wechseln Sie im Datei-Explorer zu dem Speicherort, an dem Sie IdFix installiert haben. Wenn Sie während der Installation den Standardordner ausgewählt haben, `C:\Deployment Tools\IdFix`wechseln Sie zu.
     
-3. Doppelklicken Sie auf **IdFix.exe**. 
+3. Doppelklicken Sie auf **IdFix. exe**. 
     
     ![Wählen Sie die Datei IdFix. exe aus.](media/a9387bbc-991f-41c2-a500-45e3ce574285.JPG)
   
@@ -93,7 +93,7 @@ Führen Sie nach dem Installieren von IdFix das Tool zur Problemsuche in Ihrem V
     
     ![Wählen Sie Query in IdFix aus.](media/a07a7aa7-d0ac-4817-8757-946019813a57.JPG)
   
-6. IdFix überprüft das gesamte Verzeichnis standardmäßig auf Fehler.
+6. Standardmäßig durchsucht IdFix das gesamte Verzeichnis auf Fehler.
     
     Abhängig von der Größe des Verzeichnisses kann das Ausführen der Abfrage eine Weile dauern. Sie können den Fortschritt am unteren Rand des Hauptfensters des Tools ansehen. Wenn Sie auf **Abbrechen**klicken, müssen Sie von vorn beginnen.
     
@@ -101,11 +101,11 @@ Führen Sie nach dem Installieren von IdFix das Tool zur Problemsuche in Ihrem V
   
 7. Nachdem IdFix die Abfrage abgeschlossen hat, können Sie mit der Synchronisierung des Verzeichnisses fortfahren, falls keine Fehler vorliegen. Wenn Ihr Verzeichnis fehlerhaft ist, sollten Sie diese vor der Synchronisierung korrigieren. Wenn Sie genauere Informationen zu Fehlertypen und Empfehlungen zur bestmöglichen Möglichkeit zum Beheben von Fehlern benötigen, lesen Sie die Links am Ende dieses Themas. 
     
-    Obwohl es nicht obligatorisch ist, die Fehler vor der Synchronisierung zu beheben, empfehlen wir ausdrücklich, dass Sie wenigstens alle durch IdFix zurückgegebenen Fehler überprüfen.
+    Es ist zwar nicht zwingend erforderlich, die Fehler vor der Synchronisierung zu beheben, es wird jedoch dringend empfohlen, dass Sie zumindest alle von IdFix zurückgegebenen Fehler überarbeiten.
     
     Jeder Fehler wird in einer separaten Zeile im Hauptfenster des Tools angezeigt. 
     
-8. Wenn Sie mit der vorgeschlagenen Änderung in der Spalte **UPDATE** einverstanden sind, wählen Sie in der Spalte **ACTION**, was IdFix vornehmen soll, um die Änderung zu implementieren. Klicken Sie dann auf **Übernehmen**. Wenn Sie auf **Übernehmen** klicken, nimmt das Tool die Änderungen im Verzeichnis vor.
+8. Wenn Sie der vorgeschlagenen Änderung in der Spalte **Update** zustimmen, wählen Sie in der Spalte **Aktion** aus, was IdFix tun soll, um die Änderung zu implementieren, und klicken Sie dann auf über **nehmen**. Wenn Sie auf über **nehmen**klicken, nimmt das Tool die Änderungen im Verzeichnis vor.
     
     Sie müssen nach jeder Aktualisierung nicht auf **anwenden** klicken. Stattdessen können Sie mehrere Fehler beheben, bevor Sie auf **anwenden** klicken, und IdFix wird Sie alle gleichzeitig ändern. Sie können die Fehler nach Fehlertyp sortieren, indem Sie oben in der Spalte, in der die Fehlertypen aufgelistet werden, auf **Fehler** klicken. 
     
@@ -115,9 +115,9 @@ Führen Sie nach dem Installieren von IdFix das Tool zur Problemsuche in Ihrem V
   
 9. Nachdem alle Änderungen am Verzeichnis vorgenommen wurden, führen Sie IdFix erneut aus, um sicherzustellen, dass die von Ihnen vorgenommenen Korrekturen keine neuen Fehler einführten. Sie können diese Schritte beliebig oft wiederholen. Es empfiehlt sich, den Prozess einige Male zu durchlaufen, bevor Sie synchronisieren.
     
-## <a name="i-want-to-refine-my-search-or-dig-deeper-into-the-errors-what-else-can-i-do-with-idfix"></a>Ich möchte meine Suche eingrenzen oder Fehler detaillierter ansehen. Was kann ich sonst noch mit IdFix anfangen?
+## <a name="i-want-to-refine-my-search-or-dig-deeper-into-the-errors-what-else-can-i-do-with-idfix"></a>Ich möchte meine Suche verfeinern oder tiefer in die Fehler eingraben, was kann ich sonst noch mit IdFix tun?
 
-Weitergehende Informationen sind in den folgenden Themen verfügbar:
+Weitere ausführliche Informationen finden Sie in den folgenden Themen:
   
 - [Vorbereiten von Verzeichnisattributen für die Synchronisierung mit Office 365 mithilfe des IdFix-Tools](prepare-directory-attributes-for-synch-with-idfix.md) . Wenn Sie das Tool installiert haben, wechseln Sie zu diesem Thema, um detailliertere Anweisungen zum Ausführen des Tools, häufige Fehler, die auftreten werden, Empfohlene Korrekturen, Beispiele und bewährte Methoden für die Vorgehensweise bei einer hohen Anzahl von Fehlern. 
 - [Referenz: Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)  

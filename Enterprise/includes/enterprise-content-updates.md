@@ -3,18 +3,6 @@
 
 
 
-## <a name="week-of-march-18-2019"></a>Woche vom 18. März 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 3/18/2019 | [Allgemeine häufig gestellte Fragen zur Datenverschiebung](/Office365/Enterprise/data-move-faq) | Geändert |
-| 3/18/2019 | [Während und nach der Datenverschiebung](/Office365/Enterprise/during-and-after-your-data-move) | Geändert |
-| 3/18/2019 | [Capacity planning and load testing SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | Geändert |
-| 3/18/2019 | [Zusammenarbeit zwischen Mandanten in Office 365](/Office365/Enterprise/office-365-inter-tenant-collaboration) | Geändert |
-| 3/19/2019 | [Anzeigen von Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/view-user-accounts-with-office-365-powershell) | Geändert |
-
-
 ## <a name="week-of-march-25-2019"></a>Woche vom 25. März 2019
 
 
@@ -22,22 +10,22 @@
 |------|------------|--------|
 | 3/27/2019 | [Hinzufügen oder Entfernen eines Geo-Administrators](/Office365/Enterprise/add-a-sharepoint-geo-admin) | Geändert |
 | 3/27/2019 | [Verwalten einer Multi-Geo-Umgebung](/Office365/Enterprise/administering-a-multi-geo-environment) | Geändert |
-| 3/27/2019 | [Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung](/Office365/Enterprise/administering-exchange-online-multi-geo) | hinzugefügt |
+| 3/27/2019 | [Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung](/Office365/Enterprise/administering-exchange-online-multi-geo) | Hinzugefügt |
 | 3/27/2019 | [Konfigurieren der Suche für Office 365 Multi-Geo](/Office365/Enterprise/configure-search-for-multi-geo) | Geändert |
 | 3/27/2019 | [Löschen eines Satellitenstandorts](/Office365/Enterprise/delete-a-geo-location) | Geändert |
 | 3/27/2019 | [Verschieben einer OneDrive-Website an einen anderen geografischen Standort](/Office365/Enterprise/move-onedrive-between-geo-locations) | Geändert |
-| 3/27/2019 | [Verschieben einer SharePoint-Website an einen anderen geografischen Standort (Vorschau)](/Office365/Enterprise/move-sharepoint-between-geo-locations) | hinzugefügt |
-| 3/27/2019 | [Erstellen Sie eine Office 365-Gruppe mit einem bestimmten PLD](/Office365/Enterprise/multi-geo-add-group-with-pdl) | hinzugefügt |
+| 3/27/2019 | [Verschieben einer SharePoint-Website an einen anderen geografischen Standort (Vorschau)](/Office365/Enterprise/move-sharepoint-between-geo-locations) | Hinzugefügt |
+| 3/27/2019 | [Erstellen Sie eine Office 365-Gruppe mit einem bestimmten PLD](/Office365/Enterprise/multi-geo-add-group-with-pdl) | Hinzugefügt |
 | 3/27/2019 | [Exchange Multi-Geo](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | Geändert |
 | 3/27/2019 | [Multi-Geo-Funktionen in OneDrive und SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | Geändert |
-| 3/27/2019 | [Konfigurieren von Office 365 Multi-Geo eDiscovery](/Office365/Enterprise/multi-geo-ediscovery-configuration) | hinzugefügt |
+| 3/27/2019 | [Konfigurieren von Office 365 Multi-Geo eDiscovery](/Office365/Enterprise/multi-geo-ediscovery-configuration) | Hinzugefügt |
 | 3/27/2019 | [Office 365 Multi-Geo-Mandantenkonfiguration](/Office365/Enterprise/multi-geo-tenant-configuration) | Geändert |
 | 3/27/2019 | [Benutzererfahrung in einer Multi-Geo-Umgebung](/Office365/Enterprise/multi-geo-user-experience) | Geändert |
-| 3/27/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | hinzugefügt |
+| 3/27/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | Hinzugefügt |
 | 3/27/2019 | [Plan für Office 365 Multi-Geo](/Office365/Enterprise/plan-for-multi-geo) | Geändert |
 | 3/27/2019 | [Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell) | Geändert |
-| 3/27/2019 | [Inhalte für einen geografischen Standort einschränken](/Office365/Enterprise/restrict-content-to-geo-location) | hinzugefügt |
-| 3/27/2019 | [SharePoint-Speicherkontingente in Multi-Geo-Umgebungen](/Office365/Enterprise/sharepoint-multi-geo-storage-quota) | hinzugefügt |
+| 3/27/2019 | [Inhalte für einen geografischen Standort einschränken](/Office365/Enterprise/restrict-content-to-geo-location) | Hinzugefügt |
+| 3/27/2019 | [SharePoint-Speicherkontingente in Multi-Geo-Umgebungen](/Office365/Enterprise/sharepoint-multi-geo-storage-quota) | Hinzugefügt |
 | 3/27/2019 | [Verschieben einer SharePoint-Website in einen anderen geografischen Standort-Vorschau](/Office365/Enterprise/move-sharepoint-between-geo-locations) | Geändert |
 | 3/27/2019 | [Verschieben einer SharePoint-Website an einen anderen geografischen Standort (Vorschau)](/Office365/Enterprise/move-sharepoint-between-geo-locations) | Geändert |
 | 3/28/2019 | [Multi-Geo-Funktionen in OneDrive und SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | Geändert |
@@ -77,7 +65,7 @@
 
 | Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
 |------|------------|--------|
-| 4/1/2019 | [Aktivieren von SharePoint Multi-Geo am Satellitenstandort](/Office365/Enterprise/enabling-sp-multigeo-satellite-geolocation) | hinzugefügt |
+| 4/1/2019 | [Aktivieren von SharePoint Multi-Geo am Satellitenstandort](/Office365/Enterprise/enabling-sp-multigeo-satellite-geolocation) | Hinzugefügt |
 | 4/2/2019 | [Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | Geändert |
 | 4/2/2019 | [Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/advanced-threat-protection-for-your-office-365-dev-test-environment) | Geändert |
 | 4/2/2019 | [Architektur von Microsoft Hybrid Cloud-Szenarien](/Office365/Enterprise/architecture-of-microsoft-hybrid-cloud-scenarios) | Geändert |
@@ -137,7 +125,7 @@
 | 4/9/2019 | [Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote](/Office365/Enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings) | Geändert |
 | 4/9/2019 | Die One Microsoft Cloud-Entwicklungs-/Testumgebung | entfernt |
 | 4/9/2019 | [Optimieren der Leistung von Office 365](/Office365/Enterprise/tune-office-365-performance) | Geändert |
-| 10.04.2019 | [Capacity planning and load testing SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | Geändert |
+| 10.04.2019 | [Kapazitätsplanung und Auslastungstests für SharePoint Online](/Office365/Enterprise/capacity-planning-and-load-testing-sharepoint-online) | Geändert |
 | 10.04.2019 | [Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung](/Office365/Enterprise/administering-exchange-online-multi-geo) | Geändert |
 | 10.04.2019 | [Exchange Multi-Geo](/Office365/Enterprise/multi-geo-capabilities-in-exchange-online) | Geändert |
 | 4/12/2019 | [Ressourcen zur Cloud-IT-Architektur von Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Geändert |
@@ -155,3 +143,15 @@
 | 4/18/2019 | [Zuweisen von Rollen zu Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Geändert |
 | 4/18/2019 | [Routing mit ExpressRoute für Office 365](/Office365/Enterprise/routing-with-expressroute) | Geändert |
 | 4/18/2019 | [Verwenden der PowerShell-Cmdlets für zentrale Bereitstellung zum Verwalten von Add-Ins](/Office365/Enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins) | Geändert |
+
+
+## <a name="week-of-april-22-2019"></a>Woche vom 22. April 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 4/22/2019 | [Multi-Geo-Funktionen in OneDrive und SharePoint Online](/Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365) | Geändert |
+| 4/22/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | Geändert |
+| 4/22/2019 | Aggregieren von Kundenberichtsdaten über Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP) | entfernt |
+| 4/22/2019 | [Verwalten von Office 365 mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)](/Office365/Enterprise/powershell/manage-office-365-with-windows-powershell-for-delegated-access-permissions-dap-p) | Geändert |
+| 4/22/2019 | [Abrufen von Kundenberichtsdaten über Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)](/Office365/Enterprise/powershell/retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac) | Geändert |

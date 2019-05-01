@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Zusammenfassung: Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.'
 ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741431"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491156"
 ---
 # <a name="hybrid-cloud-overview"></a>Hybrid Cloud-Übersicht
 
@@ -37,7 +37,7 @@ Microsoft Hybrid Cloud besteht aus Geschäftsszenarien, in denen eine Microsoft-
     
 - Eine Intranet-IT-Arbeitslast, die auf virtuellen Azure-Computern ausgeführt wird
     
-**Abbildung 1: Komponenten der Microsoft Hybrid Cloud**
+**Abbildung 1: Komponenten der Microsoft Hybrid Cloud**
 
 ![Komponenten der Microsoft-Hybridcloud](media/Hybrid-Poster/MS-Hybrid-Cloud.png)
   

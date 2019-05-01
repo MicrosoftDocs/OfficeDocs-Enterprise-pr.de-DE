@@ -1,6 +1,6 @@
 ---
 title: Office 365 Enterprise
-description: Microsoft Office 365 bietet leistungsstarke online-Cloud-Dienste, die für die Zusammenarbeit, Sicherheit und Compliance, Mobilität, und Intellgence und Analytics zu ermöglichen. Diese Seite bietet Hilfestellung für Administratoren und IT-Experten, bereitstellen, konfigurieren und Verwalten von Office 365-Diensten in Unternehmen.
+description: Microsoft Office 365 bietet leistungsstarke Online Cloud-Dienste, die Zusammenarbeit, Sicherheit und Compliance, Mobilität sowie Intelligence und Analysen ermöglichen. Diese Seite enthält Anleitungen für Administratoren und IT-Experten, die Office 365-Dienste in Unternehmen bereitstellen, konfigurieren und verwalten.
 services: o365-solutions
 author: robmazz
 manager: laurawi
@@ -15,14 +15,14 @@ ms.topic: landing-page
 ms.date: 8/21/2018
 ms.author: robmazz
 ms.openlocfilehash: 9b1f6d86914e23ebd9ebf4e00a16018dc8f2bfd2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "27745319"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487131"
 ---
 <h1>Office 365 Enterprise</h1>
-<p>Microsoft Office&nbsp;365 bietet leistungsstarke online-Cloud-Dienste, die für die Zusammenarbeit, Sicherheit und Compliance, Mobilität, und Intellgence und Analytics zu ermöglichen. Diese Seite enthält Links zu Anleitungen für Administratoren und IT-Experten, die Bereitstellung, Konfiguration und Verwaltung von Office&nbsp;365-Dienste in Unternehmen.</p>
+<p>Microsoft Office&nbsp;365 bietet leistungsstarke Online Cloud-Dienste, die Zusammenarbeit, Sicherheit und Compliance, Mobilität sowie Intelligence und Analysen ermöglichen. Diese Seite enthält Links zu Anleitungen für Administratoren und IT-Experten, die Office&nbsp;365-Dienste in Unternehmen bereitstellen, konfigurieren und verwalten.</p>
 <ul class="cardsF panelContent">
     <li>
         <a href="https://www.microsoft.com/fasttrack/microsoft-365/office-365">
@@ -35,8 +35,8 @@ ms.locfileid: "27745319"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Geführter interaktiver Bereitstellung mit der schnelle</h3>
-                <p>Verwenden Sie die Vorteile der schnelle Center für Office&nbsp;geführte Hilfe bei der Planung, Bereitstellung und gesteuerter Annahme von Office 365&nbsp;365 Dienste für Ihre Organisation.</p>
+                        <h3>Geführte Bereitstellung mit "Schritt"</h3>
+                <p>Verwenden Sie die Vorteile des Centers&nbsp;für Office 365 für Hilfe bei der Planung, Bereitstellung und Steuerung der&nbsp;Einführung von Office 365-Diensten für Ihre Organisation.</p>
                     </div>
                 </div>
             </div>
@@ -54,8 +54,8 @@ ms.locfileid: "27745319"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Migrieren zu Office 365</h3>
-                <p>Migrieren Sie Ihre vorhandenen lokalen Infrastruktur zu Office&nbsp;365 und die Microsoft cloud.</p>
+                        <h3>Migrieren zu Office 365</h3>
+                <p>Migrieren Sie Ihre vorhandene lokale Infrastruktur zu Office&nbsp;365 und zur Microsoft-Cloud.</p>
                     </div>
                 </div>
             </div>
@@ -73,8 +73,8 @@ ms.locfileid: "27745319"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 ProPlus</h3>
-                <p>Planen, bereitstellen und Verwalten von Office&nbsp;365 ProPlus in Ihrer unternehmensumgebung.</p>
+                        <h3>Office 365 ProPlus</h3>
+                <p>Planen, bereitstellen und Verwalten von&nbsp;Office 365 ProPlus in ihrer Unternehmensumgebung.</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ ms.locfileid: "27745319"
                     </div>
                     <div class="cardText">
                         <h3>Bereitstellen von Office 365</h3>
-                <p>Bereitstellen von Office&nbsp;365, einschließlich Ihres Mandanten einrichten, Konfigurieren des Netzwerks und Bereitstellung Ihrer Benutzer.</p>
+                <p>Stellen Sie&nbsp;Office 365 bereit, einschließlich des Einrichtens Ihres Mandanten, der Konfiguration Ihres Netzwerks und der Benutzerbereitstellung.</p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ ms.locfileid: "27745319"
                     </div>
                     <div class="cardText">
                         <h3>Hybridbereitstellungen</h3>
-                <p>Konfigurieren und Verwalten einer hybridbereitstellung zwischen Ihrer vorhandenen Infrastruktur lokalen und Office&nbsp;365.</p>
+                <p>Konfigurieren und Verwalten einer hybridbereitstellung zwischen Ihrer vorhandenen lokalen Infrastruktur und Office&nbsp;365.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@ ms.locfileid: "27745319"
                     </div>
                     <div class="cardText">
                         <h3>Office 365-Schulung</h3>
-                <p>Verbessern Sie Ihre Office&nbsp;365 Administration Kenntnisse und mit Office-Kenntnisse&nbsp;365 Schulungskurse für IT-Experten.</p>
+                <p>Verbessern&nbsp;Sie ihre Office 365-Verwaltungskenntnisse&nbsp;und-Fähigkeiten mit Office 365-Schulungskursen für IT-Experten.</p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ ms.locfileid: "27745319"
     </li>
 </ul>
 
-<h2>Bereitstellen von Office 365-Arbeitslasten</h2>
+<h2>Bereitstellen von Office 365-ArbeitsausLastungen</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -169,7 +169,7 @@ ms.locfileid: "27745319"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3><a href="https://support.office.com/article/sharepoint-online-–-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a?ui=en-US&rs=en-US&ad=US">SharePoint Online</a></h3>
+                        <h3><a href="https://support.office.com/article/sharepoint-online-–-admin-help-79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a?ui=en-US&rs=en-US&ad=US">SharePoint Online</a></h3>
                     </div>
                 </div>
             </div>
@@ -256,8 +256,8 @@ ms.locfileid: "27745319"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 Tech-Community</h3>
-                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Informieren Sie sich über bewährte Methoden, News, und die neuesten Trends und Themen im Zusammenhang mit Office&nbsp;365.</a></p>
+                        <h3>Office 365 Tech Community</h3>
+                        <p><a href="https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365">Erfahren Sie mehr über bewährte Methoden, Neuigkeiten und die neuesten Trends und Themen im zusammen&nbsp;Hang mit Office 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ ms.locfileid: "27745319"
                     </div>
                     <div class="cardText">
                         <h3>Anfordern von Support</h3>
-                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Kontaktieren des Supports bei Hilfe zu Office&nbsp;365.</a></p>
+                        <p><a href="https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US">Wenden Sie sich an den Support&nbsp;für Hilfe zu Office 365.</a></p>
                     </div>
                 </div>
             </div>

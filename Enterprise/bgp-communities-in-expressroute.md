@@ -1,5 +1,5 @@
 ---
-title: Verwenden von BGP Communitys in ExpressRoute für Office 365-Szenarien
+title: Verwenden von BGP-Communities in Express Route für Office 365-Szenarien
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -15,116 +15,116 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
-description: 'Herstellen einer Verbindung mit Office 365 mit Azure ExpressRoute BGP Werbung von bestimmten IP-Subnetze basiert auf, die Netzwerke darstellen, in der Office 365-Endpunkten bereitgestellt werden. Aufgrund der globalen Eigenschaften von Office 365 und der Zahl der Dienste, die Office 365 bilden, haben Kunden häufig muss der Werbung verwalten, die sie in ihrem Netzwerk zu akzeptieren. Reduzieren der Anzahl der IP-Subnetze; als IP-Präfixe im weiteren Verlauf des Artikels BGP Network Management Terminologie ausgerichtet dient die folgenden End-Ziele für Kunden bezeichnet:'
+description: 'Das Herstellen einer Verbindung mit Office 365 mit Azure Express Route basiert auf BGP-Ankündigungen bestimmter IP-Subnetze, die Netzwerke darstellen, in denen Office 365-Endpunkte bereitgestellt werden. Aufgrund des globalen Charakters von Office 365 und der Anzahl von Diensten, die Office 365 darstellen, müssen Kunden häufig die in Ihrem Netzwerk akzeptierten Ankündigungen verwalten. Verringern der Anzahl von IP-Subnetzen; als IP-Präfixe im gesamten Rest dieses Artikels bezeichnet, dient zur Ausrichtung an der BGP-Netzwerk Verwaltungsterminologie folgende Endziele für Kunden:'
 ms.openlocfilehash: c6e40dc29df55aa87e8d40c6203100fa1e7ad38f
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540744"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490921"
 ---
-# <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Verwenden von BGP Communitys in ExpressRoute für Office 365-Szenarien
+# <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Verwenden von BGP-Communities in Express Route für Office 365-Szenarien
 
-Herstellen einer Verbindung mit Office 365 mit Azure ExpressRoute BGP Werbung von bestimmten IP-Subnetze basiert auf, die Netzwerke darstellen, in der Office 365-Endpunkten bereitgestellt werden. Aufgrund der globalen Eigenschaften von Office 365 und der Zahl der Dienste, die Office 365 bilden, haben Kunden häufig muss der Werbung verwalten, die sie in ihrem Netzwerk zu akzeptieren. Reduzieren der Anzahl der IP-Subnetze; als IP-Präfixe im weiteren Verlauf des Artikels BGP Network Management Terminologie ausgerichtet dient die folgenden End-Ziele für Kunden bezeichnet:
+Das Herstellen einer Verbindung mit Office 365 mit Azure Express Route basiert auf BGP-Ankündigungen bestimmter IP-Subnetze, die Netzwerke darstellen, in denen Office 365-Endpunkte bereitgestellt werden. Aufgrund des globalen Charakters von Office 365 und der Anzahl von Diensten, die Office 365 darstellen, müssen Kunden häufig die in Ihrem Netzwerk akzeptierten Ankündigungen verwalten. Verringern der Anzahl von IP-Subnetzen; als IP-Präfixe im gesamten Rest dieses Artikels bezeichnet, dient zur Ausrichtung an der BGP-Netzwerk Verwaltungsterminologie folgende Endziele für Kunden:
   
-- **Verwalten der Ankündigungen entsprechen IP Rufnummernpräfix akzeptiert** - Kunden mit einer internen Netzwerkinfrastruktur oder Netzbetreibers, die unterstützt nur eine begrenzte Anzahl von IP-Präfixen und Kunden, die ein Netzbetreibers, Gebühren für die Annahme von Präfixen haben über eine begrenzte Anzahl wird die Gesamtanzahl der bereits in ihrem Netzwerk angekündigt Präfixe evaluieren möchten und wählen Sie aus, welche Office 365-Anwendungen für ExpressRoute am besten geeignet sind.
+- **Verwalten der Anzahl** der anerkannten IP-Präfixe-Kunden, die über eine interne Netzwerkinfrastruktur oder einen Netzwerkbetreiber verfügen, der nur eine begrenzte Anzahl von IP-Präfixen und Kunden unterstützt, die über einen Netzbetreiber verfügen, der die Annahme von Präfixen anerkennt oberhalb einer begrenzten Anzahl soll die Gesamtzahl der bereits angekündigten Präfixe für Ihr Netzwerk ausgewertet werden, und wählen Sie aus, welche Office 365-Anwendungen am besten für Express Route geeignet sind.
 
-- **Verwalten der Bandbreite, die auf der Azure ExpressRoute Netzfrequenz erforderlich** - Kunden den Umschlag Bandbreite von Office 365-Diensten über den Pfad ExpressRoute im Vergleich zu Internet Pfad steuern möchten. Dies ermöglicht Kunden das Reservieren ExpressRoute Bandbreite für bestimmte Anwendungen wie Skype für Unternehmen und Weiterleiten von den verbleibenden Office 365-Anwendungen über das Internet Pfad.
+- **Verwalten der erforderlichen Bandbreite für die Azure-Express Route-Schaltung** -Kunden können den Bandbreiten Umschlag der Office 365-Dienste über den Express Route-Pfad vs. Internet-Pfad steuern. So können Kunden Express Route Bandbreite für bestimmte Anwendungen wie Skype for Business reservieren und die restlichen Office 365-Anwendungen über den Internet Pfad weiterleiten.
 
-Um Kunden mit dieser Ziele unterstützen, sind Präfixe für Office 365-IP, die über ExpressRoute bekannt gegeben werden mit Dienst spezifischen BGP Community Werte wie im folgenden Beispiel gezeigt markiert.
+Um Kunden bei diesen Zielen zu unterstützen, werden Office 365-IP-Präfixe, die über Express Route angekündigt werden, mit dienstspezifischen BGP-Community-Werten versehen, wie im folgenden Beispiel gezeigt.
   
 > [!NOTE]
-> Sie erwarten, dass einige des Netzwerkverkehrs in Verbindung mit einer anderen Anwendung, die in der Community Wert eingeschlossen werden. Dies ist die erwartete Verhalten für eine globale Software als Dienst, der mit gemeinsamen Diensten und Rechenzentren anbietet. Dies wurde mit der oben genannten zwei Ziele, Verwalten von Präfix Count und/oder Bandbreite, beachten Sie nach Möglichkeit minimiert.
+> Sie sollten davon ausgehen, dass im Zusammenhang mit anderen Anwendungen der Netzwerkdatenverkehr in den Community-Wert eingeschlossen wird. Dies ist das erwartete Verhalten für eine globale Software als Dienstangebot mit gemeinsamen Diensten und Datencentern. Dies wurde nach Möglichkeit mit den beiden oben genannten Zielen minimiert, wobei die Anzahl der Präfixe und/oder die Bandbreite berücksichtigt wird.
 
 |**Dienst**|**BGP Community-Wert**|**Hinweise**|
 |:-----|:-----|:-----|
-|Exchange\*  <br/> |12076:5010  <br/> |Enthält Exchange- und EOP-Dienste\*  <br/> |
-|SharePoint\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
-|Skype für Unternehmen\*  <br/> |12076:5030  <br/> |Skype for Business Online  <br/> |
-|andere Office 365-Dienste\*  <br/> |12076:5100  <br/> |Azure Active Directory (Authentifizierung und Verzeichnissynchronisierung Szenarien) umfasst sowie Dienste von Office 365-Portal  <br/> |
-|\*Der Umfang der Service-Szenarien in ExpressRoute ist im [Office 365-Endpunkten](https://aka.ms/o365endpoints) Artikel dokumentiert.  <br/> \*\*Zusätzliche Dienste und BGP Community-Werte möglicherweise in Zukunft hinzugefügt werden. [Finden Sie in der aktuellen Liste der BGP Communitys](https://azure.microsoft.com/documentation/articles/expressroute-routing/).<br/> |
+|Exchange\*  <br/> |12076:5010  <br/> |Umfasst Exchange-und EOP-Dienste\*  <br/> |
+|Share\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
+|Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online  <br/> |
+|Weitere Office 365-Dienste\*  <br/> |12076:5100  <br/> |Umfasst Azure Active Directory (Authentifizierungs-und Verzeichnis Synchronisierungsszenarien) sowie Office 365-Portal Dienste  <br/> |
+|\*Der Umfang der in Express Route enthaltenen Dienst Szenarien ist im [Office 365](https://aka.ms/o365endpoints) -Endpunkte-Artikel dokumentiert.  <br/> \*\*Weitere Dienste und BGP Community-Werte können in der Zukunft hinzugefügt werden. [Sehen Sie sich die aktuelle Liste der BGP-Communities an](https://azure.microsoft.com/documentation/articles/expressroute-routing/).  <br/> |
 
-## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>Was sind die häufigsten Szenarien für die Verwendung von BGP Communitys?
+## <a name="what-are-the-most-common-scenarios-for-using-bgp-communities"></a>Was sind die am häufigsten verwendeten Szenarien für die Verwendung von BGP-Communities?
 
-Kunden können BGP Communitys um Gruppen von IP-Präfixe zu Regeln, die von ihrem Netzwerk über Azure ExpressRoute, daher mit Einfluss auf die Gesamtzahl der IP-Präfix und erwartete Bandbreite Umschlag bestimmter Office 365-Dienste akzeptiert werden. Es ist wichtig zu verstehen, dass alle Office 365 erfordert, dass Internet Datenverkehr unabhängig von der Verwendung von Azure ExpressRoute oder BGP Communitys gebunden. Die folgenden drei Szenarien sind die am häufigsten verwendeten Verwendungsmöglichkeiten für diese Funktionalität.
+Kunden können BGP-Communities verwenden, um Gruppen von IP-Präfixen zu regulieren, die von Ihrem Netzwerk über Azure Express Route akzeptiert werden, wodurch die Gesamtzahl der IP-Präfixe und der erwartete Bandbreiten Umschlag bestimmter Office 365-Dienste beeinflusst wird. Es ist wichtig zu wissen, dass für alle Office 365 Internet gebundener Datenverkehr unabhängig von der Verwendung von Azure Express Route-oder BGP-Communities erforderlich ist. Die folgenden drei Szenarien sind die am häufigsten verwendeten Funktionen.
   
-### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>Szenario 1: Minimieren der Anzahl der Office 365 IP-Präfixe
+### <a name="scenario-1-minimizing-the-number-of-office-365-ip-prefixes"></a>Szenario 1: Minimieren der Anzahl von Office 365-IP-Präfixen
 
-Contoso Corporation ist ein 50.000 Person, die derzeit Office 365 für Exchange Online und SharePoint Online verwendet wird. Überprüfen von ExpressRoute können nicht Anforderungen, dass Contoso seine Netzwerkgeräte an vielen regionalen Standorten bestimmt routing Tabelle größer als 100 Einträge für zusätzliche Route behandeln. Contoso überprüft die Gesamtzahl der IP-Präfixe, die ExpressRoute würde ankündigen für den vollständigen Satz von Office 365-Diensten und dem Schluss, dass es 100 übersteigt. Um unter den 100 Einträge zusätzliche Route zu bleiben, Bereiche Contoso die Verwendung von ExpressRoute für Office 365 auf nur den SharePoint Online BGP Community Wert 12076:5020, über ExpressRoute Microsoft peering empfangen.
+Contoso Corporation ist ein Unternehmen mit 50.000 Personen, das Office 365 für Exchange Online und SharePoint Online verwendet. Bei der Überprüfung der Express Route-Anforderungen legt Contoso fest, dass seine Netzwerkgeräte an vielen regionalen Standorten keine Routingtabellen Größen über 100 zusätzliche Routen Einträge verarbeiten können. Contoso hat die Gesamtzahl der IP-Präfixe überprüft, die Express Route für den vollständigen Satz von Office 365-Diensten werben würde und Schlussfolge, dass er 100 überschreitet. Um unter den 100-zusätzlichen Routen Einträgen zu bleiben, stellt Contoso die Verwendung von Express Route für Office 365 auf den SharePoint Online-BGP-communitywert 12076:5020, der über Express Route Microsoft-Peering empfangen wird.
 
-|**BGP Community-Tag verwendet**|**Routingfähige über Azure ExpressRoute Funktionalität**|**Internet Routen erforderlich**|
+|**BGP-Community-Tag verwendet**|**Routing-Funktion über Azure Express Route**|**Erforderliche Internet Routen**|
 |:-----|:-----|:-----|
-|SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive für Unternehmen  <br/> | DNS, CRL, &amp; CDN-Anforderungen  <br/>  Alle anderen Office 365-Diensten über Azure ExpressRoute nicht explizit unterstützt.  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/>  Office 365-Portal, Office 365-Authentifizierung, &amp; Office Online  <br/>  Exchange Online, Exchange Online Protection und Skype für Unternehmen Online  <br/> |
+|SharePoint  <br/> (12076:5020)  <br/> |SharePoint &amp; Online-OneDrive for Business  <br/> | DNS, CRL, &amp; CDN-Anforderungen  <br/>  Alle anderen Office 365-Dienste, die nicht speziell über Azure Express Route unterstützt werden  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/>  Office 365-Portal, Office 365- &amp; Authentifizierung, Office Online  <br/>  Exchange Online, Exchange Online Protection und Skype for Business Online  <br/> |
 
 > [!NOTE]
-> Um niedrigere Präfix Anzahlen für jeden Dienst zu erreichen, werden die minimalen Überlappung zwischen Diensten beibehalten. Dieses ist Verhalten.
+> Um eine geringere Anzahl von Präfixen für jeden Dienst zu erreichen, bleibt eine minimale Überlappung zwischen den Diensten erhalten. Dies ist das erwartete Verhalten.
   
-### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>Szenario 2: Gültigkeitsbereichs ExpressRoute und interne Bandbreite verwenden, um einige Office 365-Dienste
+### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>Szenario 2: Festlegen von Express Route und interner Bandbreitenverwendung für einige Office 365-Dienste
 
-Fabrikam Inc, große multinationale Unternehmen mit einem verteilten heterogenen Netzwerk ist ein-Abonnent viele Office 365-Dienste einschließlich. Exchange Online, SharePoint Online und Skype für Unternehmen Online. Interne routing von Fabrikam-Infrastruktur kann Tausende von IP-Präfixe in den Routingtabellen behandeln. Fabrikam möchte jedoch nur ExpressRoute und interne Bandbreite für Office 365-Anwendungen, die am häufigsten Beachtung sind von Netzwerk-Leistung und verwenden Sie ihre vorhandenen Internetbandbreite für Office 365-Anwendungen, bereitstellen.
+Fabrikam Inc, ein umfangreiches multinationales Unternehmen mit einem verteilten heterogenen Netzwerk, ist Abonnent vieler Office 365-Dienste, einschließlich; Exchange Online, SharePoint Online und Skype for Business Online. Die interne Routinginfrastruktur von Fabrikam kann Tausende von IP-Präfixen in ihren Routingtabellen verarbeiten. Fabrikam möchte jedoch nur Express Route und interne Bandbreite für Office 365-Anwendungen bereitstellen, die am empfindlichsten für die Netzwerkleistung sind und Ihre vorhandene Internet Bandbreite für alle anderen Office 365-Anwendungen verwenden.
   
-Aus diesem Grund Bereiche Fabrikam seine Azure ExpressRoute Bandbreite für gerade Skype für Business Onlinecommunity BGP Wert 12076:5030, der über Microsoft ExpressRoute peering empfangen. Die verbleibenden des Netzwerkverkehrs in Verbindung mit Office 365 wird weiterhin die Internet Ausgang Punkte verwendet.
+Aus diesem Grund umfasst Fabrikam seine Azure Express Route-Bandbreite auf nur Skype for Business Online BGP Community Value, 12076:5030, empfangen über Express Route Microsoft-Peering. Der restliche Netzwerkdatenverkehr, der mit Office 365 verbunden ist, verwendet weiterhin die Internet-Ausstiegspunkte.
 
-|**BGP Community-Tag verwendet**|**Routingfähige über Azure ExpressRoute Funktionalität**|**Internet Routen erforderlich**|
+|**BGP-Community-Tag verwendet**|**Routing-Funktion über Azure Express Route**|**Erforderliche Internet Routen**|
 |:-----|:-----|:-----|
-|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP-Signale, Downloads, freigeben Sprach-, Video- und desktop  <br/> | DNS, CRL, &amp; CDN-Anforderungen  <br/>  Alle anderen Office 365-Diensten über Azure ExpressRoute nicht explizit unterstützt.  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/>  Office 365-Portal, Office 365-Authentifizierung, &amp; Office Online  <br/>  Skype für Business Telemetrie, Skype Client schnelle Tipps, öffentlichen Instant Messaging-Diensten  <br/>  Exchange Online, Exchange Online Protection und SharePoint Online  <br/> |
+|Skype for Business  <br/> (12076:5030)  <br/> |Skype SIP-Signalisierung, Downloads, sprach-, Video-und Desktopfreigabe  <br/> | DNS, CRL, &amp; CDN-Anforderungen  <br/>  Alle anderen Office 365-Dienste, die nicht speziell über Azure Express Route unterstützt werden  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/>  Office 365-Portal, Office 365- &amp; Authentifizierung, Office Online  <br/>  Skype for Business-Telemetrie, Skype-Client-schnell Tipps, öffentliche Chat-Konnektivität  <br/>  Exchange Online, Exchange Online Protection und SharePoint Online  <br/> |
 
-### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>Szenario 3: Bereichsdefinierung Azure ExpressRoute für Office 365-Dienste nur
+### <a name="scenario-3-scoping-azure-expressroute-for-office-365-services-only"></a>Szenario 3: Bereichsdefinition für Azure Express Route für Office 365-Dienste
 
-Woodgrove Bank ist ein Kunde von mehrere Microsoft Cloud-Dienste einschließlich Office 365. Nach der Auswertung von ihrem Netzwerks beschließt Kapazität und Auslastung Woodgrove Bank, Azure ExpressRoute als bevorzugter Pfad für die unterstützten Office 365-Dienste bereitstellen. Die Routingtabellen enthalten können die umfassende Auswahl an Office 365 IP-Präfixen und Azure ExpressRoute Stromkreise, den, die Sie mit der Bereitstellung, unterstützen alle voraussichtliche Bandbreite und Wartezeit-Anforderungen.
+Die Woodgrove Bank ist ein Kunde mehrerer Microsoft-Cloud-Dienste, einschließlich Office 365. Nach Bewertung der Netzwerkkapazität und-Auslastung beschließt die Woodgrove Bank, Azure Express Route als bevorzugten Pfad für die unterstützten Office 365-Dienste bereitzustellen. Die Routingtabellen können den vollständigen Satz von Office 365-IP-Präfixen unterstützen, und die Express Route-Schaltungen, die Sie eingerichtet haben, unterstützen alle erwarteten Anforderungen an die Bandbreite und Latenz.
   
-Um sicherzustellen, dass Microsoft Cloud Services zugeordnet, abgesehen von Office 365, Woodgrove Bank legt die Verwendung von ExpressRoute für Office 365 für alle IP-Präfixe Netzwerkdatenverkehr markierte mit Office 365-Community Werte für bestimmte BGP, 12076:5010, 12076:5020, 12076:5030, 12076:5100.
+Um den Netzwerkdatenverkehr zu gewährleisten, der mit anderen Microsoft-Cloud-Diensten als Office 365 verbunden ist, umfasst die Woodgrove Bank die Verwendung von Express Route für Office 365 für alle IP-Präfixe, die mit Office 365-spezifischen BGP-Community-Werten, 12076:5010, 12076:5020, 12076:5030, 12076:5100.
 
-|**BGP Community-Tag verwendet**|**Routingfähige über Azure ExpressRoute Funktionalität**|**Internet Routen erforderlich**|
+|**BGP-Community-Tag verwendet**|**Routing-Funktion über Azure Express Route**|**Erforderliche Internet Routen**|
 |:-----|:-----|:-----|
-|Exchange, Skype für Unternehmen, SharePoint, &amp; andere Dienste  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint Online &amp; OneDrive für Unternehmen  <br/> Skype SIP-Signale, Downloads, freigeben Sprach-, Video- und desktop  <br/> Office 365-Portal, Office 365-Authentifizierung, &amp; Office Online  <br/> | DNS, CRL, &amp; CDN-Anforderungen  <br/>  Alle anderen Office 365-Diensten über Azure ExpressRoute nicht explizit unterstützt.  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/> |
+|Exchange, Skype for Business, SharePoint &amp; , andere Dienste  <br/> (12076:5010, 12076:5020, 12076:5030, 12076:5100)  <br/> |Exchange Online &amp; Exchange Online Protection  <br/> SharePoint &amp; Online-OneDrive for Business  <br/> Skype SIP-Signalisierung, Downloads, sprach-, Video-und Desktopfreigabe  <br/> Office 365-Portal, Office 365- &amp; Authentifizierung, Office Online  <br/> | DNS, CRL, &amp; CDN-Anforderungen  <br/>  Alle anderen Office 365-Dienste, die nicht speziell über Azure Express Route unterstützt werden  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/> |
 
-## <a name="key-planning-considerations-to-using-bgp-communities"></a>Wichtige Überlegungen zur Verwendung von BGP Communitys Planung
+## <a name="key-planning-considerations-to-using-bgp-communities"></a>Wichtige Planungsüberlegungen für die Verwendung von BGP-Communities
 
-Kunden, nutzen Sie BGP Communitys zu beeinflussen, wie ExpressRoute angekündigt und über das Kundennetzwerk weitergegeben dauert die folgenden Aspekte berücksichtigen:
+Kunden, die BGP-Communities nutzen möchten, um zu beeinflussen, wie Express Route über das Kundennetzwerk beworben und propagiert wird, sollten die folgenden Aspekte berücksichtigen:
   
-- Bei Verwendung von BGP Communitys in Ihrem Netzwerkentwurf ist es wichtig, um sicherzustellen, dass verbleibt Route Symmetrie. In einigen Fällen kann das Hinzufügen oder Entfernen von BGP Communitys erstellen eine Situation, in dem symmetrischen routing wird unterbrochen, und Ihre Routingkonfiguration muss aktualisiert werden, um symmetrische routing wiederherzustellen.
+- Bei der Verwendung von BGP-Communities in Ihrem Netzwerkentwurf muss sichergestellt werden, dass die Routen Symmetrie weiterhin beibehalten wird. In einigen Fällen kann das Hinzufügen oder Entfernen von BGP-Communities zu einer Situation führen, in der das symmetrische Routing unterbrochen wird und ihre Routingkonfiguration aktualisiert werden muss, um das symmetrische Routing wiederherzustellen.
 
-- Festlegen des Gültigkeitsbereichs Azure ExpressRoute mit BGP Community Werte ist eine Kunden-Aktion. Microsoft wird die Beziehung Peers, unabhängig davon alle Bereiche durch den Kunden konfiguriert alle IP-Präfixe zugeordnet ankündigen.
+- Das Definieren von Azure Express Route mit BGP Community values ist eine Kunden Aktion. Microsoft wirbt für alle IP-Präfixe, die der Peering-Beziehung zugeordnet sind, unabhängig von dem vom Kunden konfigurierten Scoping.
 
-- Azure ExpressRoute unterstützt keine Aktionen auf Microsoft Netzwerk basierend auf Kunden BGP Communities zugewiesen.
+- Azure Express Route unterstützt keine Aktionen im Microsoft-Netzwerk basierend auf vom Kunden zugewiesenen BGP-Communities.
 
-- Die IP-Präfixe von Office 365are verwendete gekennzeichnet nur mit Dienst bestimmten BGP Community Werten Speicherort bestimmte BGP Communitys werden nicht unterstützt. Office 365-Diensten sind globale Natur, Filterung Präfixe basierend auf den Speicherort des Mandanten oder Daten innerhalb der Office 365-Cloud werden nicht unterstützt. Der empfohlene Ansatz besteht darin, Ihr Netzwerk zur Koordinierung der kürzeste oder die bevorzugte Netzwerkpfad von Speicherort im Netzwerk des Benutzers in der globalen Microsoft-Netzwerk, unabhängig von der physische Standort der IP-Adresse des Office 365-Dienst konfigurieren Sie anfordern.
+- Die von Office 365are verwendeten IP-Präfixe, die nur mit dienstspezifischen BGP-Community-Werten gekennzeichnet sind, werden nicht unterstützt. Office 365-Dienste sind global in der Natur, Filter Präfixe basierend auf dem Standort des Mandanten oder Daten in der Office 365-Cloud werden nicht unterstützt. Die empfohlene Vorgehensweise besteht darin, Ihr Netzwerk so zu konfigurieren, dass der kürzeste oder bevorzugte Netzwerkpfad vom Netzwerkstandort des Benutzers in das globale Microsoft-Netzwerk koordiniert wird, unabhängig vom physischen Speicherort der IP-Adresse des Office 365-Diensts. Sie fordern.
 
-- Die IP-Präfixe in jedem BGP Community-Wert enthalten darstellen ein Subnetzes, das IP-Adressen für die Office 365-Anwendung, die den Wert enthält. In einigen Fällen hat mehr als eine Office 365-Anwendung in einem resultierenden in vorhandenen im Wert von mehr als eine Community ein Präfix für den IP-Subnetz-IP-Adressen. Hierbei handelt es sich erwartet, obwohl nur selten, Verhalten Zuweisung fragmentiert und hat keinen Einfluss auf die Ziele Präfix Anzahl oder der Bandbreite Management. Benutzer werden aufgefordert, verwenden Sie die "ermöglichen, was benötigt wird" Ansatz, im Gegensatz zu "verweigern, was nicht erforderlich ist" beim Nutzen der Vorteile von BGP Communitys für Office 365, um den Effekt zu minimieren.
+- Die in den einzelnen BGP-Community-Werten enthaltenen IP-Präfixe stellen ein Subnetz dar, das IP-Adressen für die Office 365-Anwendung enthält, die dem Wert zugeordnet ist. In einigen Fällen verfügt mehr als eine Office 365-Anwendung über IP-Adressen innerhalb eines Subnetzes, wodurch ein IP-Präfix in mehr als einem Community-Wert vorhanden ist. Dies wird erwartet, obwohl das Verhalten aufgrund der Zuordnungs Fragmentierung selten ist und sich nicht auf die Ziele der Präfix Zählung oder der Bandbreitenverwaltung auswirkt. Kunden werden aufgefordert, den Ansatz "Allow What es needed" zu verwenden, im Gegensatz zu "verweigern, was nicht erforderlich ist", wenn Sie BGP-Communities für Office 365 nutzen, um die Auswirkungen zu minimieren.
 
-- BGP Communitys ändern nicht die zugrunde liegende Connectivity netzwerkanforderungen oder zum Verwenden von Office 365 erforderliche Konfiguration. Kunden, die auf Office 365 zugreifen möchten ist weiterhin erforderlich, um auf das Internet zugreifen zu können.
+- Durch die Verwendung von BGP-Communities werden die zugrunde liegenden Netzwerkverbindungsanforderungen oder die Konfiguration für die Verwendung von Office 365 nicht geändert. Kunden, die auf Office 365 zugreifen möchten, müssen weiterhin auf das Internet zugreifen können.
 
-- Festlegen des Gültigkeitsbereichs Azure ExpressRoute mit BGP Communitys wirkt sich nur auf die Routen, die das interne Netzwerk über die Microsoft Peers Beziehung sehen kann. Sie müssen möglicherweise zusätzliche Konfigurationen auf Systemebene wie die Verwendung einer PAC oder WPAD-Konfiguration in Verbindung mit dem bereichsbezogenen routing vorzunehmen.
+- Das Definieren von Azure Express Route mit BGP-Communities wirkt sich nur auf die Routen aus, die Ihr internes Netzwerk über die Microsoft-Peering-Beziehung sehen kann. Möglicherweise müssen Sie zusätzliche Konfigurationen auf Anwendungsebene vornehmen, wie zum Beispiel die Verwendung einer PAC-oder WPAD-Konfiguration in Verbindung mit dem Bereichs Routing.
 
-- Zusätzlich zur Verwendung der Microsoft BGP Communities zugewiesen, können Kunden ihren eigenen Communitys BGP Office 365 IP Präfixe über Azure ExpressRoute interne routing beeinflussen Erfahrungen zuweisen. Ein beliebte Anwendungsfall ist eine Stelle Grundlage BGP Community alle Routen, die über jeden angegebenen ExpressRoute peering Speicherort und mithilfe dieser Informationen downstream im Netzwerk Kunden der kürzeste koordinieren zuweisen oder am meisten bevorzugte Netzwerkpfad in Microsoft Netzwerk. Die Verwendung von Kunden BGP Communities mit ExpressRoute für Office 365-Szenarien zugewiesen ist außerhalb von Bereich der Microsoft-Steuerelement oder Sichtbarkeit.
+- Zusätzlich zur Verwendung der Microsoft-zugewiesenen BGP-Communities können Kunden ihre eigenen BGP-Communities zu Office 365-IP-Präfixen zuweisen, die über Azure Express Route gelernt wurden, um das interne Routing zu beeinflussen. Ein beliebter Anwendungsfall ist das Zuweisen einer standortbasierten BGP-Community zu allen Routen, die über jeden einzelnen Express Route-Peering-Standort erlernt werden, und anschließendes Verwenden dieser Informationen im Kundennetzwerk, um den kürzesten oder am meisten bevorzugten Netzwerkpfad zu koordinieren. Microsoft-Netzwerk. Die Verwendung von Kunden zugewiesenen BGP-Communities mit Express Route für Office 365-Szenarien liegt außerhalb des Bereichs des Microsoft-Steuerelements oder der Sichtbarkeit.
 
-Hier ist ein kurzer Link zurückkehren können: [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365).
+Hier ist ein kurzer Link, den Sie verwenden können, um [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365)zurückzukehren:.
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Netzwerkkonnektivität zu Office 365](network-connectivity.md)
+[Netzwerkkonnektivität mit Office 365](network-connectivity.md)
   
 [Azure ExpressRoute für Office 365](azure-expressroute.md)
   
-[Verwalten von ExpressRoute für Office 365-Diensten](managing-expressroute-for-connectivity.md)
+[Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
   
 [Routing mit ExpressRoute für Office 365](routing-with-expressroute.md)
   
 [Netzwerkplanung mit ExpressRoute für Office 365](network-planning-with-expressroute.md)
   
-[Medienqualität und Konnektivität Leistung des Netzwerks in Skype für Unternehmen Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
+[Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
-[ExpressRoute und QoS in Skype für Unternehmen Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Express Route und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Anruffluss mit Express Route](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
-[Implementieren von ExpressRoute für Office 365](implementing-expressroute.md)
+[Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
   
-[Unterstützung für BGP-Communitys](https://azure.microsoft.com/documentation/articles/expressroute-routing/)
+[Unterstützung für BGP-Communities](https://azure.microsoft.com/documentation/articles/expressroute-routing/)
   
-[Office 365 Performance tuning mit Baselines und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
+[Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
   
-[Leistungsbezogene Problembehandlung Plan für Office 365](performance-troubleshooting-plan.md)
+[Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
 [Schulung zu Azure ExpressRoute für Office 365](https://channel9.msdn.com/series/aer)

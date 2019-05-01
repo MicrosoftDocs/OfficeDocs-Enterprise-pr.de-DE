@@ -1,5 +1,5 @@
 ---
-title: Capacity planning and load testing SharePoint Online
+title: Kapazitätsplanung und Auslastungstests für SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,11 +14,11 @@ search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In diesem Artikel wird beschrieben, wie Sie in SharePoint Online bereitstellen können, ohne herkömmliche Auslastungstests durchzuführen, da dies nicht zulässig ist.
 ms.openlocfilehash: 615ad96f4fcf3ac939785e3aafb32956f5661e36
-ms.sourcegitcommit: 5e85536a6f53262136acfaac640f5d109a65f643
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31765057"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490216"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Kapazitätsplanung und Auslastungstests für SharePoint Online.
 

@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie, wie Sie die Dateisammlung von Benutzercomputern für eDiscovery automatisieren.'
 ms.openlocfilehash: bfbe3b9218ed81727f2cc6ad9fabcb02e76d486b
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001608"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490811"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatisieren der Dateisammlung für eDiscovery
 

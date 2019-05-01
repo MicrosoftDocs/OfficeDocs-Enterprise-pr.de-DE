@@ -13,17 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
-description: 'Zusammenfassung: Informationen Sie zum Entwerfen optimierte Netzwerke für Arbeitslasten in Microsoft Azure IaaS.'
-ms.openlocfilehash: d13c1d4b985c633b8336dc33253e1350a54b5a39
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+description: 'Zusammenfassung: Hier erfahren Sie, wie Sie das optimierte Netzwerk für Arbeitsauslastungen in Microsoft Azure IaaS entwerfen.'
+ms.openlocfilehash: c41e92445dd01a94b7d305b521bbd4330311fcb4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872336"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491046"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Entwerfen von Netzwerken für Microsoft Azure-IaaS
 
- **Zusammenfassung:** Weitere Informationen Sie zum Entwerfen optimierte Netzwerke für Arbeitslasten in Microsoft Azure IaaS.
+ **Zusammenfassung:** Hier erfahren Sie, wie Sie das optimierte Netzwerk für Arbeitsauslastungen in Microsoft Azure IaaS entwerfen.
   
 Um Netzwerke für IT-Workloads, die in Azure IaaS gehostet werden, optimieren zu können, benötigen Sie als Voraussetzung grundlegende Kenntnisse über Azure Virtual Networks (VNets), Adressräume, Routing, DNS und Lastenausgleich.
   
@@ -45,7 +45,7 @@ Eine reines Cloud-VNet hat keine Verbindung mit einem lokalen Netzwerk. Hier ein
   
 **Abbildung 1: Reines Cloud-VNet**
 
-![Abbildung 1: Ein virtuelles Netzwerk in Microsoft Azure mit reiner Cloudbereitstellung. ](media/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
+![Abbildung 1: ein virtuelles Cloud-Netzwerk in Azure](media/8be19104-02b3-4a7f-b0a0-30d6fcf8890b.png)
   
 Abbildung 1 zeigt eine Reihe von virtuellen Computern in einem reinen Cloud-VNet.
   
@@ -53,7 +53,7 @@ Ein standortübergreifendes VNet verfügt über ein Azure-Gateway über eine S2S
   
 **Abbildung 2: Ein standortübergreifendes VNet**
 
-![Abbildung 2: Standortübergreifendes virtuelles Netzwerk in Azure](media/caacf007-e0dc-45d3-9531-441109776d25.png)
+![Abbildung 2: ein standortübergreifendes virtuelles Netzwerk in Azure](media/caacf007-e0dc-45d3-9531-441109776d25.png)
   
 Abbildung 2 zeigt eine Reihe von virtuellen Computern in einem standortübergreifenden VNet, das mit einem lokalen Netzwerk verbunden ist.
   
@@ -65,8 +65,8 @@ In Tabelle 1 sind die Adressräume für die verschiedenen VNet-Typen aufgeführt
   
 |**Typ des VNet**|**Adressraum des virtuellen Netzwerks**|
 |:-----|:-----|
-|Reine Cloudbereitstellung  <br/> |Beliebiger privater Adressraum  <br/> |
-|Miteinander verbunden, reine Cloudbereitstellung  <br/> |Beliebige Private, aber nicht mit anderen überlappende verbunden VNets  <br/> |
+|Rein cloudbasiert  <br/> |Beliebiger privater Adressraum  <br/> |
+|Miteinander verbunden, reine Cloudbereitstellung  <br/> |Beliebiges privates, jedoch nicht überlappend mit anderen verbundenen VNets  <br/> |
 |Standortübergreifend  <br/> |Privater Adressraum, der jedoch nicht mit lokalen VNets überlappt  <br/> |
 |Miteinander verbunden, standortübergreifend  <br/> |Privater Adressraum, der jedoch nicht mit lokalen und anderen verbundenen VNets überlappt  <br/> |
    
@@ -92,11 +92,11 @@ Es gibt zwei Arten von Subnetzen in einem VNet: ein Gatewaysubnetz und ein Hosti
 
 ![Abbildung 3: Die zwei Arten von Subnetzen in Azure](media/2eaa512d-1293-4e9b-b927-6bfe0fc0acb4.png)
   
-Abbildung 3 zeigt eine VNet, enthält ein Gateway-Subnetz, die ein Azure-Gateway und einen Satz von virtuellen Computer-hosting Subnetze mit virtuellen Computern verfügt.
+Abbildung 3 zeigt eine VNet mit einem Gateway-Subnetz, das über ein Azure-Gateway und einen Satz virtueller Computer gehosteter Subnetze mit virtuellen Computern verfügt.
   
-Azure benötigt das Azure-Gatewaysubnetz zum Hosten der beiden virtuellen Computer Ihres Azure-Gateways. Angeben eines Adressraums mit einer Präfixlänge von mindestens 29 Bit (Beispiel: 192.168.15.248/29). Es wird ein Präfixlänge von 28 Bit oder weniger empfohlen, insbesondere dann, wenn Sie beabsichtigen, ExpressRoute zu verwenden.
+Azure benötigt das Azure-Gatewaysubnetz zum Hosten der beiden virtuellen Computer Ihres Azure-Gateways. Angeben eines Adressraums mit einer Präfixlänge von mindestens 29 Bit (Beispiel: 192.168.15.248/29). Eine 27-Bit-oder eine kleinere Präfixlänge wird empfohlen, insbesondere, wenn Sie Express Route verwenden möchten.
   
-Bewährte Methode für die Bestimmung des Adressraums des Subnetzes Azure Gateway ist:
+Eine bewährte Methode zum Bestimmen des Adressraums des Azure-Gateway-Subnetzes ist:
   
 1. Legen Sie die Größe des Gatewaysubnetzes fest.
     
@@ -108,32 +108,36 @@ Wenn Sie diese Methode verwenden, befindet sich der Adressraum für das Gateways
   
 Es folgt ein Beispiel für die Definition des Adresspräfixes für das Gatewaysubnetz: Der Adressraum des VNet ist 10.119.0.0/16. Die Organisation verwendet anfänglich eine Standort-zu-Standort-VPN-Verbindung, später jedoch ExpressRoute. In Tabelle 2 sind die Schritte sowie die Ergebnisse der Ermittlung des Adresspräfixes in der Netzwerkpräfixnotation für das Gatewaysubnetz aufgeführt (auch als CIDR bezeichnet).
 
-Es folgen die Schritte und Beispiel für das Gateway Subnetz Adresspräfix bestimmen:
+Nachfolgend finden Sie die Schritte und Beispiele zum Bestimmen des Gateway-Subnetz-Adress Präfixes:
 
-1. Legen Sie die Größe des Subnetzes Gateway. In unserem Beispiel haben wir uns /28 entschieden.
-2. Legen Sie die Bits in den Variablen Teil der VNet-Adressraum (b) auf 0 für das Gateway Subnetz Bits (G), andernfalls 1 (V). In unserem Beispiel verwenden wir den 10.119.0.0/16-Adressraum für die VNet.<br/>
-<br/>10.119. Bbbbbbbb. bbbbbbbb<br/>10.119. VVVVVVVV. VVVVGGGG<br/>10.119. 11111111. 11110000<br/><br/>
-3. Das Ergebnis aus Schritt 2 zu decimal und als Adressraum express zu konvertieren. In unserem Beispiel 10.119. 11111111. 11110000 ist 10.119.255.240, und mit dem Präfixlänge aus Schritt 1, (28 in unserem Beispiel), ist das resultierende Gateway Subnetz Adresspräfix 10.119.255.240/28.
+1. Legen Sie die Größe des Gatewaysubnetzes fest. Für unser Beispiel haben wir uns für/28 entschieden.
+2. Legen Sie die Bits im Variablen Teil des VNet-Adressraums (b) auf 0 für die Gateway-Subnetz-Bits (G) fest, andernfalls 1 (V). Für unser Beispiel verwenden wir den 10.119.0.0/16-Adressraum für die VNet.
+<br/>
+<br/>10,119. bbbbbbbb. bbbbbbbb
+<br/>10,119. VVVVVVVV. VVVVGGGG
+<br/>10,119. 11111111. 11110000
+<br/><br/>
+3. Konvertieren Sie das Ergebnis aus Schritt 2 in Dezimal und Express als Adressraum. Für unser Beispiel 10,119. 11111111. 11110000 ist 10.119.255.240, und mit der Präfixlänge aus Schritt 1 (28 in unserem Beispiel) lautet das resultierende Gateway-Subnetz-Adresspräfix 10.119.255.240/28.
   
-Weitere Informationen finden Sie unter [Adresse Speicherplatz Rechner für Azure Gateway Subnetze](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) .
+Weitere Informationen finden Sie unter [Adressraum Rechner für Azure-Gateway](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) -Subnetze.
   
 Sie platzieren virtuelle Azure-Computer in Hostingsubnetzen für virtuelle Computer, wobei Sie hier gemäß den typisch lokalen Richtlinien folgen können, wie z. B. einer allgemeinen Rolle oder Ebene einer Anwendung oder für die Subnetzisolierung.
   
-Azure verwendet die ersten 3 Adressen in jedem Subnetz. Aus diesem Grund ist die Anzahl der möglichen Adressen in einem Subnetz Azure 2<sup>n</sup> - 5, wobei n die Anzahl der Hostbits. Tabelle 3 zeigt der Bereich der virtuellen Computer erforderlich, die Anzahl der benötigten Bits gehostet wird, und die entsprechenden Subnetz-Größe.
+Azure verwendet die ersten drei Adressen in jedem Subnetz. Daher ist die Anzahl der möglichen Adressen in einem Azure-Subnetz 2<sup>n</sup> -5, wobei n die Anzahl der Host-Bits ist. In Tabelle 3 sind der Bereich der erforderlichen virtuellen Computer, die Anzahl der erforderlichen Hostbits und die entsprechende Subnetzgröße aufgeführt.
   
 |**Erforderliche virtuelle Computer**|**Hostbits**|**Subnetzgröße**|
 |:-----|:-----|:-----|
-|1-3  <br/> |3   <br/> |/29  <br/> |
-|4-11  <br/> |4   <br/> |/28  <br/> |
-|12-27  <br/> |5   <br/> |/27  <br/> |
-|28-59  <br/> |6   <br/> |/26  <br/> |
-|60-123  <br/> |7   <br/> |/25  <br/> |
+|1-3  <br/> |3  <br/> |/29  <br/> |
+|4-11  <br/> |4  <br/> |/28  <br/> |
+|12-27  <br/> |5  <br/> |/27  <br/> |
+|28-59  <br/> |6  <br/> |/26  <br/> |
+|60-123  <br/> |7  <br/> |/25  <br/> |
    
  **Tabelle 3: Anforderungen der virtuellen Computer und ihre Subnetzgrößen**
   
-Weitere Informationen zu den maximalen Zeitraum der virtuellen Computer auf einem Subnetz oder VNet finden Sie unter [Networking Grenzwerte](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).
+Weitere Informationen zur maximalen Anzahl von virtuellen Computern in einem Subnetz oder VNet finden Sie unter [Networking Limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).
   
-Weitere Informationen finden Sie unter [Planen und Entwerfen Azure-virtuelle Netzwerke](https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/).
+Weitere Informationen finden Sie unter [Planen und Entwerfen von virtuellen Azure-Netzwerken](https://azure.microsoft.com/documentation/articles/virtual-network-vnet-plan-design-arm/).
   
 ### <a name="step-6-determine-the-dns-server-configuration-and-the-addresses-of-the-dns-servers-to-assign-to-vms-in-the-vnet"></a>Schritt 6: Ermitteln Sie die DNS-Serverkonfiguration und die Adressen der DNS-Server, die den VMs im VNet zugewiesen werden sollen.
 
@@ -147,12 +151,12 @@ In Tabelle 4 sind die verschiedenen DNS-Serverkonfigurationen für jeden VNet-Ty
     
 |**Typ des VNet**|**DNS-Server**|
 |:-----|:-----|
-|Reine Cloudbereitstellung  <br/> |von Azure für die lokale und über das Internet durchgeführte Namensauflösung bereitgestellt  <br/> virtueller Azure-Computer für die lokale und über das Internet durchgeführte Namensauflösung (DNS-Weiterleitung)  <br/> |
+|Rein cloudbasiert  <br/> |von Azure für die lokale und über das Internet durchgeführte Namensauflösung bereitgestellt  <br/> virtueller Azure-Computer für die lokale und über das Internet durchgeführte Namensauflösung (DNS-Weiterleitung)  <br/> |
 |Standortübergreifend  <br/> |lokal für die lokale und über das Intranet durchgeführte Namensauflösung  <br/> virtueller Azure-Computer für die lokale und über das Intranet durchgeführte Namensauflösung (DNS-Replikation und -Weiterleitung)  <br/> |
    
  **Tabelle 4: DNS-Serveroptionen für die beiden verschiedenen VNet-Typen**
   
-Weitere Informationen finden Sie unter [Name Resolution für virtuelle Computer und Instanzen](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances).
+Weitere Informationen finden Sie unter [Namensauflösung für VMS und Rolleninstanzen](https://docs.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances).
   
 ### <a name="step-7-determine-the-load-balancing-configuration-internet-facing-or-internal"></a>Schritt 7: Ermitteln Sie die Lastenausgleichskonfiguration (Internet-bezogen oder intern).
 
@@ -164,7 +168,7 @@ Der dem Internet zugewandte Lastenausgleich von Azure verteilt den unangefordert
 
 ![Abbildung 4: Ein externer Lastenausgleich in Azure](media/eb5945e5-0c2b-40f1-b9ed-54bb2b0f9e59.png)
   
-Abbildung 4 zeigt einen externes System zum Lastenausgleich in Azure, die eingehenden Datenverkehr auf eine eingehende NAT-Regel oder einen Endpunkt einen Satz von virtuellen Computern in einem Satz mit Lastenausgleich verteilt.
+Abbildung 4 zeigt einen externen Lastenausgleich in Azure, der eingehenden Datenverkehr über eine eingehende NAT-Regel oder einen Endpunkt an eine Gruppe virtueller Computer in einem Satz mit Lastenausgleich verteilt.
   
 Der Azure-interne Lastenausgleich verteilt unangeforderten eingehenden Datenverkehr von andere Azure-VMs oder Intranetcomputern an die Mitglieder einer Lastenausgleichsgruppe.  
   
@@ -172,9 +176,9 @@ Der Azure-interne Lastenausgleich verteilt unangeforderten eingehenden Datenverk
 
 ![Abbildung 5: Ein interner Lastenausgleich in Azure](media/d1451b73-6465-449d-b3e6-22160ce51f35.png)
   
-Abbildung 5 zeigt eine interne System zum Lastenausgleich in Azure, die eingehenden Datenverkehr auf eine eingehende NAT-Regel oder einen Endpunkt einen Satz von virtuellen Computern in einem Satz mit Lastenausgleich verteilt.
+Abbildung 5 zeigt einen internen Lastenausgleich in Azure, der eingehenden Datenverkehr für eine eingehende NAT-Regel oder einen Endpunkt an eine Gruppe virtueller Computer in einem Satz mit Lastenausgleich verteilt.
   
-Weitere Informationen finden Sie unter [Azure System zum Lastenausgleich](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview).
+Weitere Informationen finden Sie unter [Azure-Lastenausgleichsmodul](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview).
   
 ### <a name="step-8-determine-the-use-of-virtual-appliances-and-user-defined-routes"></a>Schritt 8: Ermitteln Sie die Verwendung von virtuellen Geräten und benutzerdefinierten Routen.
 
@@ -196,10 +200,10 @@ In Tabelle 5 sind die Methoden zum Filtern oder Prüfen von unangefordert eingeh
   
 |**Methode**|**Bereitstellungsmodell**|
 |:-----|:-----|
-|1. Endpunkte und ACLs, für Clouddienste konfiguriert  <br/> |Klassisch  <br/> |
+|1. Endpunkte und ACLs, für Clouddienste konfiguriert  <br/> |Classic  <br/> |
 |2. Netzwerksicherheitsgruppen  <br/> |Ressourcenmanager und klassisch  <br/> |
 |3. Dem Internet zugewandter Lastenausgleich mit NAT-Eingangsregeln  <br/> |Ressourcenmanager  <br/> |
-|4. Sicherheit Netzwerkgeräte in Azure Marketplace (nicht dargestellt)  <br/> |Ressourcenmanager und klassisch  <br/> |
+|4. Netzwerksicherheits-Appliances im Azure Marketplace (nicht dargestellt)  <br/> |Ressourcenmanager und klassisch  <br/> |
    
  **Tabelle 5: Methoden zum Herstellen einer Verbindung mit virtuellen Computern und ihre entsprechenden Azure-Bereitstellungsmodelle**
   
@@ -219,7 +223,7 @@ Zusätzlicher Sicherheit bereitgestellt durch:
     
 - Azure DDOS-Schutz, der vor externe und interne Angriffen schützt
     
-Weitere Informationen finden Sie unter [Microsoft Cloud Sicherheitsupdates für Enterprise-konstruiert](https://aka.ms/cloudarchsecurity) und [Azure Netzwerk](https://azure.microsoft.com/blog/azure-network-security/).
+Weitere Informationen finden Sie unter [Microsoft Cloud Security for Enterprise Architects](https://aka.ms/cloudarchsecurity) und [Azure Network Security](https://azure.microsoft.com/blog/azure-network-security/).
   
 ### <a name="step-10-for-multiple-vnets-determine-the-vnet-to-vnet-connection-topology"></a>Schritt 10 Bestimmen Sie für mehrere VNets die Verbinungstopologie von VNet zu VNet.
 
@@ -229,15 +233,15 @@ Durch eine Verkettungskonfiguration (Daisychain) werden die VNets in einer Reihe
   
 **Abbildung 8: Eine Verkettungskonfiguration für VNets**
 
-![Abbildung 8: Verkettete Konfiguration für virtuelle Azure-Netzwerke](media/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
+![Abbildung 8: eine kaskadierte Konfiguration für virtuelle Azure-Netzwerke](media/264d5dd4-06c5-483f-9428-a18cc1f68ac1.png)
   
-Abbildung 8 zeigt fünf VNets in Datenreihe mit einer Konfiguration verkettete verbunden.
+Abbildung 8 zeigt fünf VNets, die in einer Reihe mit einer kaskadierten Konfiguration verbunden sind.
   
 Bei einer Hub-Spoke-Konfiguration werden mehrere VNets mit eine Reihe von zentralen VNets verbunden, die ihrerseits miteinander verbunden sind.
   
 **Abbildung 9: Eine Hub-Spoke-Konfiguration für VNets**
 
-![Abbildung 9: Spoke-and-Hub-Konfiguration für virtuelle Azure-Netzwerke](media/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
+![Abbildung 9: eine Spoke-und Hub-Konfiguration für virtuelle Azure-Netzwerke](media/dd442a38-5b76-4ac5-b743-8fc7711a91ba.png)
   
 Abbildung 9 zeigt sechs VNets, wobei zwei VNets „Hubs“ sind, die miteinander sowie mit anderen „Spoke“-VNets verbunden sind.
   
@@ -245,7 +249,7 @@ Bei einer Full-Mesh-Konfiguration ist jedes VNet mit jedem anderen verbunden.
   
 **Abbildung 10: Eine Full-Mesh-Konfiguration für VNets**
 
-![Abbildung 10: Maschenkonfiguration für virtuelle Azure-Netzwerke](media/9dda0738-10db-4a63-95b3-79851a399b71.png)
+![Abbildung 10: eine Netzkonfiguration für virtuelle Azure-Netzwerke](media/9dda0738-10db-4a63-95b3-79851a399b71.png)
   
 Abbildung 10 zeigt vier VNets, die alle miteinander verbunden sind, wobei insgesamt sechs VNet-zu-VNet-Verbindungen vorhanden sind.
   
@@ -263,24 +267,24 @@ In Tabelle 6 sind die verschiedenen Verbindungstypen aufgeführt.
   
 |**Verbindungstyp**|**Zweck**|
 |:-----|:-----|
-|Standort-zu-Standort-VPN (S2S)  <br/> |Verbinden Sie 1-10-Websites (einschließlich andere VNets) mit einer einzelnen VNet.  <br/> |
+|Standort-zu-Standort-VPN (S2S)  <br/> |Verbinden Sie 1-10-Websites (einschließlich anderer VNets) mit einem einzelnen VNet.  <br/> |
 |ExpressRoute  <br/> |Eine private, sichere Verbindung mit Azure über einen Internet-Exchange-Anbieter (IXP) oder ein Netzwerkdienstanbieter (NSP).  <br/> |
 |Punkt-zu-Standort-VPN (P2S)  <br/> |Verbindet einen einzelnen Computer mit einem VNet  <br/> |
 |VNet-Peering oder VNet-zu-VNet-VPN (V2V)   <br/> |Verbindet ein VNet mit einem anderen VNet  <br/> |
    
  **Tabelle 6: Die Verbindungstypen für standortübergreifende VNets**
   
-Weitere Informationen über die maximale Anzahl der Verbindungen finden Sie unter [Networking Grenzwerte](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).
+Weitere Informationen zur maximalen Anzahl von Verbindungen finden Sie unter [Networking Limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#networking-limits).
   
-Weitere Informationen zu VPN-Geräten finden Sie unter [VPN-Geräten für Verbindungen zwischen Standorten virtuelles Netzwerk](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Weitere Informationen zu VPN-Geräten finden Sie unter [VPN Devices for Site-to-Site Virtual Network Connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
-Weitere Informationen zu VNet peering finden Sie unter [VNet peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
+Weitere Informationen zu VNet-Peering finden Sie unter [VNet Peering](https://docs.microsoft.com/azure/virtual-network/virtual-network-peering-overview).
   
 **Abbildung 11: Die vier Verbindungsarten mit einem standortübergreifenden VNet**
 
-![Abbildung 11: Die drei Methoden zum Herstellen einer Verbindung zu einem standortübergreifenden virtuellen Azure-Netzwerk](media/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
+![Abbildung 11: die drei Möglichkeiten zum Herstellen einer Verbindung mit einem standortübergreifenden virtuellen Azure-Netzwerk](media/d5d4a625-cfbd-4a77-9159-eaca69d07e93.png)
   
-Abbildung 11 zeigt eine VNet mit vier Arten von Verbindungen: Verbindung mit einem P2S von einem Computer, eine S2S VPN-Verbindung von einem lokalen Netzwerk, einer ExpressRoute Verbindung über einen lokalen Netzwerk und Verbindung mit einem VNet-VNet-von einer anderen VNet. 
+Abbildung 11 zeigt eine VNet mit den vier Verbindungstypen: eine P2S-Verbindung von einem Computer, eine S2S-VPN-Verbindung von einem lokalen Netzwerk, eine Express Route-Verbindung von einem lokalen Netzwerk und eine VNet-zu-VNet-Verbindung von einem anderen VNet. 
   
 Sie können eine Verbindung mit VMs in einem VNet wie folgt herstellen:
   
@@ -298,7 +302,7 @@ Die Sicherheit der Verbindungen wird durch Folgendes sichergestellt:
     
 - ExpressRoute ist eine private WAN-Verbindung.
     
-Weitere Informationen finden Sie unter [Microsoft Cloud Sicherheitsupdates für Enterprise-konstruiert](https://aka.ms/cloudarchsecurity) und [Azure Netzwerk](https://azure.microsoft.com/blog/azure-network-security/).
+Weitere Informationen finden Sie unter [Microsoft Cloud Security for Enterprise Architects](https://aka.ms/cloudarchsecurity) und [Azure Network Security](https://azure.microsoft.com/blog/azure-network-security/).
   
 ### <a name="step-2-determine-the-on-premises-vpn-device-or-router"></a>Schritt 2: Ermitteln Sie das lokale VPN-Gerät oder den Router.
 
@@ -314,9 +318,9 @@ Ihr lokales VPN-Gerät oder der Router fungiert als:
   
 Abbildung 12 zeigt eine standortübergreifendes VNet, das mit einem lokalen VPN-Router oder einem Gerät verbunden ist.
   
-Weitere Informationen finden Sie unter [Informationen zu VPN-Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+Weitere Informationen finden Sie unter [Informationen zum VPN-Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).
   
-### <a name="step-3-add-routes-to-your-intranet-to-make-the-address-space-of-the-vnet-reachable"></a>Schritt 3: Fügen Sie Routen zu Ihrem Intranet zu den Adressraum der VNet erreichbar sind hinzu.
+### <a name="step-3-add-routes-to-your-intranet-to-make-the-address-space-of-the-vnet-reachable"></a>Schritt 3: Hinzufügen von Routen zu Ihrem Intranet, um den Adressraum des VNet erreichbar zu machen.
 
 Die Weiterleitung an VNets von lokal umfasst Folgendes:
   
@@ -326,7 +330,7 @@ Die Weiterleitung an VNets von lokal umfasst Folgendes:
     
 **Abbildung 13: Ein VNet muss durch lokale Routen erreichbar gemacht werden**
 
-![Abbildung 13: Die lokalen Routen, die erforderlich sind, damit ein Azure VNet erreichbar ist](media/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
+![Abbildung 13: die lokalen Routen, die erforderlich sind, um eine Azure-VNet erreichbar zu machen](media/7a1e20c1-fbc4-4cb9-9961-735da4e23307.png)
   
 Abbildung 13 zeigt die Routinginformationen, die von den lokalen Routern benötigt werden, sowie den VPN-Router oder das Gerät, das den Adressraum das VNets darstellt.
   
@@ -342,7 +346,7 @@ Sie haben drei verschiedene Möglichkeiten, um eine ExpressRoute-Verbindung mit 
     
 **Abbildung 14: Verwenden von ExpressRoute für Verbindungen zu einem standortübergreifenden VNet**
 
-![Abbildung 14: Verwenden von ExpressRoute zum Herstellen einer Verbindung mit einem lokalen virtuellen Azure-Netzwerk](media/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
+![Abbildung 14: Verwenden von Express Route zum Herstellen einer Verbindung mit einem standortübergreifenden virtuellen Azure-Netzwerk](media/7030bd39-69a6-4283-8567-3434e1ab6ba6.png)
   
 Abbildung 14 zeigt ein standortübergreifendes VNet und eine ExpressRoute-Verbindung von einem lokalen Router zu Microsoft Azure.
   
@@ -354,11 +358,11 @@ Beim Routing zu lokalen oder anderen VNets von einem VNet leitet Azure den Daten
   
 **Abbildung 15: Adressraum des lokalen Netzwerks für ein standortübergreifendes VNet**
 
-![Abbildung 15: Adressraum des lokalen Netzwerks für ein standortübergreifendes virtuelles Azure-Netzwerk](media/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
+![Abbildung 15: der lokale Netzwerk Adressraum für ein standortübergreifendes virtuelles Azure-Netzwerk](media/e3af2652-8b8e-4551-9a0b-b550e6e7e3c0.png)
   
 Abbildung 15 zeigt eine standortübergreifendes VNet und den Adressraum des lokalen Netzwerks auf dem Azure-Gateway, der den erreichbaren Adressraum im lokalen Netzwerk darstellt.  
   
-Sie können den lokalen Netzwerk-Adressraum auf diese Weise definieren:
+Sie können den Adressraum des lokalen Netzwerks auf folgende Weise definieren:
   
 - Option 1: Die Liste der Präfixe für den gerade benötigten oder verwendeten Adressraum (Aktualisierungen können erforderlich sein, wenn Sie neue Subnetzen hinzufügen).
     
@@ -368,11 +372,11 @@ Da das Azure-Gateway keine zusammengefassten Routen zulässt, müssen Sie den Ad
   
 **Abbildung 16: Die durch den VNet-Adressraum erzeugte Lücke im Adressraum**
 
-![Abbildung 16: Das vom Adressraum des virtuellen Netzwerks erstellte Adressraumloch](media/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
+![Abbildung 16: die vom Adressraum des virtuellen Netzwerks erstellte Adressraum Bohrung](media/e79c4840-f9e3-4741-9b72-59db6043aefa.png)
   
 Abbildung 16 zeigt eine Darstellung eines Adressraums mit dem Stammraum und dem VNet-Adressraum.
   
-Es folgt ein Beispiel der Präfixe für den lokalen Netzwerk-Adressraum, um den Adressraum "Hole" erstellt, durch die VNet definieren:
+NachFolgend finden Sie ein Beispiel für das Definieren der Präfixe für den Adressraum des lokalen Netzwerks um den Adressraum "Hole", der vom VNet erstellt wurde:
   
 - Eine Organisation verwendet Teile des privaten Adressraums (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) in ihrem lokalen Netzwerk. Die Organisation verwendet Option 2 und 10.100.100.0/24 als ihren VNet-Adressraum.
     
@@ -381,8 +385,8 @@ In Tabelle 7 sind die Schritte und die resultierenden Präfixe aufgeführt, die 
 |**Schritt**|**Ergebnisse**|
 |:-----|:-----|
 |1. Auflisten der Präfixe, die nicht der Stammraum für den VNet-Adressraum sind.  <br/> |172.16.0.0/12 und 192.168.0.0/16  <br/> |
-|2. die übereinander Präfixe für Variablen Bytes bis zum, aber nicht das letzte verwendete Oktett im Adressraum VNet einschließlich aufgelistet.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16 10.255.0.0/16 (255 Präfixe 10.100.0.0/16 überspringen)  <br/> |
-|3. das letzte verwendete Oktett des Adressraums VNet Präfixe übereinander aufgelistet.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24 10.100.0.255.0/24 (255 Präfixe 10.100.100.0/24 überspringen)  <br/> |
+|2. aufListen der nicht überlappenden Präfixe für Variable Oktette bis einschließlich des zuletzt verwendeten Oktetts im VNet-Adressraum.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 Präfixe, Überspringen von 10.100.0.0/16)  <br/> |
+|3. Listen Sie die nicht überlappenden Präfixe innerhalb des zuletzt verwendeten Oktetts des VNet-Adressraums auf.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 Präfixe, Überspringen von 10.100.100.0/24)  <br/> |
    
  **Tabelle 7: Beispiel für den Adressraum des lokalen Netzwerks**
   
@@ -396,35 +400,35 @@ Um sicherzustellen, dass lokale Computer die Namen von Servern in Azure und die 
     
 **Abbildung 17: DNS-Replikation und -Weiterleitung für einen DNS-Server in einem standortübergreifenden VNet**
 
-![Abbildung 17: DNS-Replikation und Weiterleitung für einen DNS-Server in einem standortübergreifenden virtuellen Azure-Netzwerk](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
+![Abbildung 17: DNS-Replikation und-Weiterleitung für einen DNS-Server in einem standortübergreifenden virtuellen Azure-Netzwerk](media/ab55e5ce-ccb0-49d4-a301-657a727f97b2.png)
   
 Abbildung 17 zeigt ein standortübergreifendes VNet mit DNS-Server im lokalen Netzwerk und in einem Subnetz im. DNS-Replikation und -Weiterleitung wurde zwischen den beiden DNS-Servern konfiguriert.
   
 ### <a name="step-7-determine-the-use-of-forced-tunneling"></a>Schritt 7: Ermitteln Sie die Nutzung von erzwungenem Tunneln.
 
-Die Standardroute System für Azure Subnetze verweist auf das Internet. Um sicherzustellen, dass der gesamte Datenverkehr von virtuellen Computern in der standortübergreifenden Verbindung übermittelt wird, erstellen Sie eine routing-Tabelle mit der Standardroute, die als die Adresse des nächsten Hop das Azure-Gateway verwendet wird. Ordnen Sie dann die Routentabelle das Subnetz. Dies wird als tunneling gezwungen bezeichnet. Weitere Informationen finden Sie unter [Configure gezwungen tunneling](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).
+Die standardmäßige System Route für Azure-Subnetze weist auf das Internet hin. Um sicherzustellen, dass der gesamte Datenverkehr von virtuellen Computern über die standortübergreifende Verbindung übertragen wird, erstellen Sie eine Routingtabelle mit der Standardroute, die das Azure-Gateway als Adresse des nächsten Hops verwendet. Anschließend ordnen Sie die Routentabelle dem Subnetz zu. Dies wird auch als Tunnelerzwingung bezeichnet. Weitere Informationen finden Sie unter [configure Forced Tunneling](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm).
   
 **Abbildung 18: Benutzerdefinierte Routen und erzwungenes Tunneln für ein standortübergreifendes VNet**
 
-![Abbildung 18: Benutzerdefinierte Routen und erzwungenes Tunneln für ein standortübergreifendes virtuelles Azure-Netzwerk ](media/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
+![Abbildung 18: benutzerdefinierte Routen und erzwungenes Tunneln für ein standortübergreifendes virtuelles Azure-Netzwerk](media/1e545ec6-c2d9-48d2-bb5e-e0a581fee004.png)
   
-Abbildung 18 zeigt eine standortübergreifende VNet mit einer benutzerdefinierten Route für ein Subnetz, dem Azure-Gateway verweisen.
+Abbildung 18 zeigt einen standortübergreifenden VNet mit einer benutzerdefinierten Route für ein Subnetz, das auf das Azure-Gateway verweist.
   
 ## <a name="sharepoint-server-2016-farm-in-azure"></a>SharePoint Server 2016-Farm in Azure
 <a name="cross_prem"> </a>
 
-Ein Beispiel eines Intranets IT-Arbeitslast in Azure IaaS gehostet ist eine hoch verfügbare und mit mehreren Ebenen 2016 für SharePoint Server-Farm.
+Ein Beispiel für eine Intranet-IT-Arbeitslast, die in Azure IaaS gehostet wird, ist eine hoch verfügbare, mehrstufige SharePoint Server-2016-Farm.
   
 **Abbildung 19: Hoch verfügbare SharePoint Server 2016-Intranetfarm in Azure IaaS**
 
-![Hoch verfügbare SharePoint Server 2016-Farm in Azure IaaS](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
+![Eine SharePoint Server 2016-Farm mit hoher Verfügbarkeit in Azure IaaS](media/3a922e21-df91-455f-ba90-78abdd48d98d.png)
   
-Abbildung 19 zeigt die neun Server einer 2016 für SharePoint Server-Farm bereitgestellt, die in einer standortübergreifenden VNet, die die internen Systeme zum Lastenausgleich für die Front-End- und Daten Ebenen verwendet. Weitere Informationen, einschließlich schrittweise Entwurf und Bereitstellung-Anweisungen finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
+Abbildung 19 zeigt die neun Server einer SharePoint Server 2016-Farm, die in einem standortübergreifenden VNet bereitgestellt wird und interne Lastenausgleichsmodule für die Front-End-und Datenebenen verwendet. Weitere Informationen, einschließlich Schritt-für-Schritt-Anleitungen zum Entwerfen und bereitstellen, finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
   
 > [!TIP]
-> Zum Erstellen einer 2016 für SharePoint Server-Farm in einer standortübergreifenden simulierten VNet finden Sie unter [Intranet SharePoint Server 2016 in Azure Test-/-Umgebung](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
+> Informationen zum Erstellen einer SharePoint Server 2016-Farm mit einem Server in einer simulierten standortübergreifenden VNet finden Sie unter [Intranet SharePoint server 2016 in Azure dev/Test Environment](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
   
-Weitere Beispiele für IT-Arbeitslasten auf virtuellen Computern in einer standortübergreifenden Azure virtual bereitgestellten Netzwerk, finden Sie unter [Hybrid-Cloud-Szenarien für Azure IaaS](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
+Weitere Beispiele für IT-Arbeitslasten, die auf virtuellen Computern in einem standortübergreifenden virtuellen Azure-Netzwerk bereitgestellt werden, finden Sie unter [Hybrid Cloud Scenarios for Azure IaaS](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Ent_O365
 ms.date: 2/14/2018
 ms.openlocfilehash: 52eb23707077151ae4876381a03db3e9a4bdb33b
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915710"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490051"
 ---
 <h1>Enterprise Cloudlösungen</h1>
 <p>Lösen von geschäftlichen Problemen mit der Microsoft Cloud. Erfahren Sie mehr über die neuesten Hybrid- und Cloudsicherheitslösungen, die Cloudakzeptanz und vieles mehr.</p>

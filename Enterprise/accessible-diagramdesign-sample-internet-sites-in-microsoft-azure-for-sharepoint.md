@@ -1,5 +1,5 @@
 ---
-title: "Zugänglich Diagramm - Design Sample Internetsites in Microsoft Azure für SharePoint 2013"
+title: Barrierefreies Diagramm – Entwurfsbeispiel für Internet Websites in Microsoft Azure für SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,18 +10,19 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b91124bc-c7ec-4929-b77c-d6293db9f15e
-description: "Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Entwurfsbeispiel“: Internetsites in Microsoft Azure für SharePoint 2013."
+description: 'Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Entwurfsbeispiel: Internet Websites in Microsoft Azure für SharePoint 2013.'
 ms.openlocfilehash: 0d42a96f80d47b360084557fea47c4155d106d30
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487831"
 ---
 # <a name="accessible-diagram---design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Zugängliches Diagramm – Entwurfsbeispiel: Internetwebsites in Microsoft Azure für SharePoint 2013
 
-**Zusammenfassung:** Dieser Artikel ist eine Version verfügbaren Text des Diagramms mit dem Namen Entwurfsbeispiel: Websites in Microsoft Azure für SharePoint 2013.
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Entwurfsbeispiel: Internet Websites in Microsoft Azure für SharePoint 2013.
   
-Verwenden Sie in diesem Beispiel Design wird als Ausgangspunkt für eine im Internet veröffentlichte Website in Azure mit SharePoint 2013.
+Verwenden Sie dieses Entwurfsbeispiel als Ausgangspunkt für eine mit dem Internet verbundene Website in Azure mit SharePoint 2013.
   
 Dieses Poster zeigt ein Beispiel dafür, wie Sie die folgenden Aspekte von SharePoint 2013 entwerfen:
   
@@ -47,116 +48,116 @@ Dieses Poster zeigt ein Beispiel dafür, wie Sie die folgenden Aspekte von Share
     
 ## <a name="users-zones-and-authentication"></a>Benutzer, Zonen und Authentifizierung
 
-In diesem Design gibt es vier Typen von Benutzerkonten. Jeder Kontotyp ist mit einer den Zugriff ermöglichenden Website verknüpft und mit einer Zone, die einen spezifischen Authentifizierungstyp nutzt.   
+In diesem Entwurf gibt es vier Arten von Benutzerkonten. Jeder Kontotyp ist einer Website für den Zugriff und mit einer Zone zugeordnet, die einen bestimmten Authentifizierungstyp verwendet. 
   
-- Anonyme Kunden – anonyme Kunden haben über eine Website wie http://www.contoso.com Zugriff. Ist die Zone, die sie verwenden die "Internetzone / anonyme", die anonyme Authentifizierung verwendet.
+- Anonyme Kunden – anonyme Kunden haben Zugriff über eine Website wie http://www.contoso.com. Die Zone, die Sie verwenden, ist die "Internet Zone/Anonymous", die anonyme Authentifizierung verwendet.
     
-- Authentifiziert Kunden – authentifiziert Kunden haben über eine Website wie https://secure.contoso.com Zugriff. Ist die Zone, die sie verwenden die "Extranetzone / SAML", die Azure Active Directory mit SAML-Authentifizierung verwendet.
+- Authentifizierte Kunden – authentifizierte Kunden haben Zugriff über eine Website https://secure.contoso.comwie. Die Zone, die Sie verwenden, ist die "Extranet-Zone/SAML", die Azure Active Directory mit SAML-Authentifizierung verwendet.
     
-- Website-Autoren und Entwickler – Websiteautoren und Entwickler haben Sie Zugriff auf Websites wie Http://authoring.contoso.com:8000 oder Http://www.contoso.com:8000. Ist die Zone, die sie verwenden der "Zone" Standard "/ Windows integriert", die Active Directory-Domänendienste (AD DS) verwendet.
+- Websiteautoren und-Entwickler – Websiteautoren und-Entwickler haben Zugriff über Websites http://authoring.contoso.com:8000 wie http://www.contoso.com:8000oder. Die verwendete Zone ist die "Standardzone/Windows Integrated", die Active Directory-Domänendienste (AD DS) verwendet.
     
-- Durchforstungskonto – Das Durchforstungskonto hat Zugriff auf Websites wie Http://authoring.contoso.com:8000 oder Http://www.contoso.com:8000. Ist die Zone verwendet die "Zone" Standard "/ Windows integriert", die AD DS mit Windows-NTLM-Authentifizierung verwendet.
+- Such DurchforstungsKonto – das Such Durchforstungskonto hat Zugriff über Websites http://authoring.contoso.com:8000 wie http://www.contoso.com:8000oder. Die verwendete Zone ist die "Standardzone/Windows Integrated", die AD DS mit Windows-NTLM-Authentifizierung verwendet.
     
 ## <a name="server-farm"></a>Serverfarm
 
-Die Benutzer greifen über Azure auf die Serverfarm zu. Die Serverfarm umfasst mindestens einen Webserver.
+Die Benutzer greifen über Azure auf die Serverfarm zu. Die Serverfarm enthält einen oder mehrere Webserver.
   
 ## <a name="administration-site"></a>Verwaltungswebsite
 
-Die Verwaltungswebsite umfasst mehrere Anwendungsserver, die mit einem Anwendungspool kommunizieren (Anwendungspool 1 im Beispiel), der die Zentraladministrationswebsite der Webanwendung nutzt. Die Zentraladministrationswebsite bietet Zugriff auf Websitesammlungen in der Organisation.
+Die Verwaltungswebsite enthält mehrere Anwendungsserver, die mit einem Anwendungspool (Anwendungspool 1 im Beispiel) kommunizieren, der die Website für die Zentraladministration der Webanwendung verwendet. Die Website für die zentral Administration ermöglicht den Zugriff auf Websitesammlungen innerhalb der Organisation.
   
-Die Verwaltungswebsite umfasst auch SQL-Datenbankserver. Dabei handelt es sich um Datenbankserver, auf denen SQL Server installiert ist und die für die Unterstützung von SQL-Clustering, -Spiegelung oder AlwaysOn (AlwaysOn gilt nur für SQL Server 2012) konfiguriert sind.
+Die Verwaltungswebsite enthält auch SQL-Datenbankserver, die Datenbankserver mit SQL Server sind, die zur Unterstützung von SQL-Clustering, Spiegelung oder AlwaysOn installiert und konfiguriert sind (AlwaysOn gilt nur für SQL Server 2012).
   
 ## <a name="services"></a>Dienste
 
-Das Designbeispiel zeigt eine Internetinformationsdienste(Internet Information Services, IIS)-Website, SharePoint-Webdienste. SharePoint-Webdienste umfasst einen Anwendungspool (Anwendungspool 2) mit drei Diensten, Benutzerprofil, Suche und Verwaltete Metadaten.
+Das Entwurfsbeispiel zeigt eine IIS-Website (Internet Informationsdienste), SharePoint-webDienste. SharePoint-webDienste enthalten einen Anwendungspool (Anwendungspool 2) mit drei Diensten, Benutzerprofil, Suche und verwalteten Metadaten.
   
-Hinweise zu Diensten für Internetsites:
+Hinweise zu Diensten für Internet Websites:
   
-> Verwaltete Metadaten – Müssen Sie **diese dienstanwendung ist der Standardspeicherort für bestimmte Ausdruckssätze Spalte**auswählen.
+> Verwaltete Metadaten – wählen Sie **Diese Dienstanwendung ist der Standardspeicherort für spaltenspezifische Ausdruckssätze**aus.
     
-> App-Management – Wir raten davon ab, Apps auf einer öffentlichen Internetsite in Azure zu verwenden.
+> App-Verwaltung – es wird nicht empfohlen, apps in einer öffentlich zugänglichen Internet Website in Azure zu verwenden.
     
 ## <a name="application-pools-and-web-applications"></a>Anwendungspools und Webanwendungen
 
-Die Standardgruppe in Azure zeigt Anwendungspool 3, der eine Webanwendung mit dem Namen „Contoso Sites“ enthält. Diese pfadbasierte Websitesammlung befindet sich unter http://internal:8000.
+Die Standardgruppe in Azure zeigt Anwendungs Pool 3, der eine Webanwendung mit dem Namen contoso Sites enthält. Diese pfadbasierte Websitesammlung befindet sich unter http://internal:8000.
   
 ## <a name="site-collections-and-sites"></a>Websitesammlungen und Websites
 
-Die im Anwendungspool enthaltenen Websitesammlungen umfassen Folgendes:
+Zu den im Anwendungspool enthaltenen Websitesammlungen gehört Folgendes:
   
-- Hostbenannte Websitesammlung 1 für die Durchforstung (Beispielort http://authoring.contoso.com:8000)
+- Websitesammlung 1 mit Hostnamen für das Crawlen (beispielspeicherorthttp://authoring.contoso.com:8000)
     
-- Hostbenannte Websitesammlung 2 für Abfragen (Beispielorte http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000)
+- Websitesammlung 2 mit Hostnamen für Abfragen (Beispiel Speicher http://www.contoso.comOrte https://secure.contoso.com,,http://www.contoso.com:8000)
     
-- Hostbenannte Websitesammlung 3 für Abfragen (Beispielorte http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000)
+- Websitesammlung 3 mit Hostnamen für Abfragen (Beispiel Speicher http://assets.contoso.comOrte https://secureassets.contoso.com,,http://assets.contoso.com:8000)
     
 ## <a name="content-databases"></a>Inhaltsdatenbanken
 
-Das Beispiel zeigt zwei Inhaltsdatenbanken. Eine ist für die zur Durchforstung verwendete Websitesammlung 1 bestimmt (http://authoring.contoso.com:8000). Die andere ist für die beiden für Abfragen verwendeten Websitesammlungen 2 und 3 bestimmt (http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000 oder http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000).
+Das Beispiel zeigt zwei Inhaltsdatenbanken. Eine ist für die Websitesammlung 1, die für das Crawlen verwendet wird (http://authoring.contoso.com:8000). Die andere ist für die beiden Websitesammlungen 2 und 3 für Abfragen verwendet (http://www.contoso.com, https://secure.contoso.com, http://www.contoso.com:8000, oder http://assets.contoso.com, https://secureassets.contoso.com, http://assets.contoso.com:8000).
   
 ## <a name="zones-and-urls"></a>Zonen und URLs
 
-Das Beispiel zeigt drei Zonen mit den zugehörigen Lastenausgleich-URLs, die von verschiedenen Benutzerkonten verwendet werden.  
+Das Beispiel zeigt drei Zonen mit den zugehörigen Lastenausgleich-URLs, die von verschiedenen Benutzerkonten verwendet werden. 
   
-Die erste Liste mit Zonen und URLs bezieht sich auf Websitesammlung 1 und enthält die folgenden Informationen:
+Die erste Liste der Zonen und URLs bezieht sich auf die Websitesammlung 1 und enthält die folgenden Informationen:
   
-- Benutzer - Websiteautoren
+- Benutzer – Websiteautoren
     
-- Zone - Standard
+- Zone – Standard
     
-- Lastenausgleich URL - http://authoring.contoso.com:8000
+- URL mit Lastenausgleich-http://authoring.contoso.com:8000
     
-Die zweite Liste mit Zonen und URLs umfasst drei unterschiedliche Benutzertypen in drei unterschiedlichen Zonen. Sie bezieht sich auf Websitesammlung 2 und enthält die folgenden Informationen:
-  
-Erste Zone:
-  
-- Benutzer - Websiteautoren
-    
-- Zone - Standard
-    
-- Lastenausgleich URL - http://www.contoso.com:8000
-    
-Zweite Zone:
-  
-- Benutzer - anonyme Kunden
-    
-- Zone - Internet
-    
-- Lastenausgleich-URL - http://www.contoso.com
-    
-Dritte Zone:
-  
-- Benutzer - authentifizierten Kunden
-    
-- Zone - Extranet
-    
-- Lastenausgleich-URL - https://secure.contoso.com
-    
-Die Dritte Liste mit Zonen und URLs umfasst drei unterschiedliche Benutzertypen in drei unterschiedlichen Zonen. Sie bezieht sich auf Websitesammlung 3 und enthält die folgenden Informationen:
+Die zweite Liste der Zonen und URLs hat drei verschiedene Arten von Benutzern in drei verschiedenen Zonen. Sie bezieht sich auf die Websitesammlung 2 und enthält die folgenden Informationen:
   
 Erste Zone:
   
-- Benutzer - Websiteautoren
+- Benutzer – Websiteautoren
     
-- Zone - Internet
+- Zone – Standard
     
-- Lastenausgleich URL - http://assets.contoso.com:8000
+- URL mit Lastenausgleich-http://www.contoso.com:8000
     
 Zweite Zone:
   
-- Benutzer - anonyme Kunden
+- Benutzer – anonyme Kunden
     
-- Zone - Internet
+- Zone-Internet
     
-- Lastenausgleich-URL - http://assets.contoso.com
+- URL mit Lastenausgleich-http://www.contoso.com
     
 Dritte Zone:
   
-- Benutzer - authentifizierten Kunden
+- Benutzer authentifizierte Kunden
     
-- Zone - Extranet
+- Zone-Extranet
     
-- Lastenausgleich-URL - http://secureassets.contoso.com
+- URL mit Lastenausgleich-https://secure.contoso.com
+    
+Die dritte Liste von Zonen und URLs hat drei verschiedene Arten von Benutzern in drei verschiedenen Zonen. Sie bezieht sich auf die Websitesammlung 3 und enthält die folgenden Informationen:
+  
+Erste Zone:
+  
+- Benutzer – Websiteautoren
+    
+- Zone-Internet
+    
+- URL mit Lastenausgleich-http://assets.contoso.com:8000
+    
+Zweite Zone:
+  
+- Benutzer – anonyme Kunden
+    
+- Zone-Internet
+    
+- URL mit Lastenausgleich-http://assets.contoso.com
+    
+Dritte Zone:
+  
+- Benutzer authentifizierte Kunden
+    
+- Zone-Extranet
+    
+- URL mit Lastenausgleich-http://secureassets.contoso.com
     
 

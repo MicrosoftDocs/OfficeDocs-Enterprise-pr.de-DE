@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Netzwerkplanung und-Tests sowie zur Migration zu Office 365.
 ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30574039"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487276"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
@@ -108,8 +108,8 @@ Diese Themen enthalten detaillierte Office 365-Netzwerk Referenzinformationen.
     
 - [Office 365 Video Networking-häufig gestellte Fragen (FAQ)](office-365-video-networking-faq.md)
     
-- [Planen von Netzwerkgeräten, die eine Verbindung mit Office 365-Diensten herstellen](plan-for-network-devices.md)
+- [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](plan-for-network-devices.md)
     
-- [Bereitstellungs Ratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
+- [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
     
 

@@ -16,11 +16,11 @@ search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Enterprise-Netzwerke schränken den Zugriff auf generische Internetstandorte oder umfangreiche Backhaul oder die Verarbeitung des Netzwerkdatenverkehrs ein. Um sicherzustellen, dass Computer in Netzwerken wie diesen auf Office 365 zugreifen können, müssen Netzwerk-und Proxy Administratoren die Liste der FQDNs, URLs und IP-Adressen verwalten, die die Liste der Office 365-Endpunkte bilden. Diese müssen zu Direct Route, Proxy Bypass und/oder Firewallregeln und PAC-Dateien hinzugefügt werden, um sicherzustellen, dass Netzwerkanforderungen in der Lage sind, Office 365 zu erreichen.
 ms.openlocfilehash: a094e647a0b228527e8702f24e57aa4276589f70
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458355"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487086"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -209,7 +209,7 @@ Denken Sie daran, dass das Blockieren des Zugriffs auf die Microsoft-Consumer-Di
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365-IP-Adress- und -URL-Webdienst](office-365-ip-web-service.md)
+[Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
 
 [IP-Bereiche von Microsoft Azure-Rechenzentren](https://www.microsoft.com/download/details.aspx?id=41653)
   
@@ -221,6 +221,6 @@ Denken Sie daran, dass das Blockieren des Zugriffs auf die Microsoft-Consumer-Di
   
 [URLs und IP-Adressbereiche von Office 365](urls-and-ip-address-ranges.md)
   
-[Verwalten der Express Route für Office 365-Konnektivität](managing-expressroute-for-connectivity.md)
+[Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
   
 [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)

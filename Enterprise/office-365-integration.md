@@ -1,5 +1,5 @@
 ---
-title: Verwenden der eigenen Domäne für die Integration in lokale E-Mail, z. B. mit Verzeichnisdiensten
+title: Office 365-Integration in lokale Umgebungen
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -20,13 +20,13 @@ search.appverid:
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Erfahren Sie, wie Sie Office 365 in Ihre vorhandenen Verzeichnisdienste integrieren.
 ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085334"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487401"
 ---
-# <a name="office-365-integration-with-on-premises-environments"></a>Verwenden der eigenen Domäne für die Integration in lokale E-Mail, z. B. mit Verzeichnisdiensten
+# <a name="office-365-integration-with-on-premises-environments"></a>Office 365-Integration in lokale Umgebungen
 
 Sie können Office 365 in Ihre vorhandenen Verzeichnisdienste und mit einer lokalen Installation von Exchange Server, Skype for Business Server 2015 oder SharePoint Server 2013 integrieren.
   

@@ -12,135 +12,135 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
-description: In diesem Artikel wird erläutert, welche bestimmter Aspekte, die Sie beim Entwerfen von Seiten für eine optimale Leistung in SharePoint Online berücksichtigen müssen.
+description: In diesem Artikel wird erläutert, welche Aspekte beim Entwerfen von Seiten für eine optimale Leistung in SharePoint Online berücksichtigt werden müssen.
 ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26219875"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487161"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Einführung in die Leistungsoptimierung für SharePoint Online
 
-In diesem Artikel wird erläutert, welche bestimmter Aspekte, die Sie beim Entwerfen von Seiten für eine optimale Leistung in SharePoint Online berücksichtigen müssen.
+In diesem Artikel wird erläutert, welche Aspekte beim Entwerfen von Seiten für eine optimale Leistung in SharePoint Online berücksichtigt werden müssen.
      
 ## <a name="sharepoint-online-metrics"></a>SharePoint Online-Metriken
 
-Die folgenden umfassenden Metriken für SharePoint Online liefern reale Leistungsdaten:
+Die folgenden allgemeinen Metriken für SharePoint Online bieten reale Daten zur Leistung:
   
-- Wie schnell Seiten geladen werden
+- Wie schnelle Seiten geladen werden
     
 - Wie viele Roundtrips pro Seite erforderlich sind
     
 - Probleme mit dem Dienst
     
-- Andere Aspekte, die zu Leistungseinbußen führen
+- Andere Aspekte, die zu Leistungsbeeinträchtigungen führen
     
 ### <a name="conclusions-reached-because-of-the-data"></a>Schlussfolgerungen aufgrund der Daten
 
-Den Daten können wir Folgendes entnehmen:
+Die Daten teilen uns Folgendes mit:
   
-- Die meisten Seiten zeigen auf SharePoint Online eine gute Leistung.
+- Die meisten Seiten werden in SharePoint Online gut ausgeführt.
     
 - Nicht angepasste Seiten werden sehr schnell geladen.
     
-- OneDrive for Business, Teamwebsites und Systemseiten, z. B. "_layouts" usw., lassen sich alle schnell laden.
+- OneDrive for Business, Teamwebsites und System Seiten wie _layouts usw. sind alle schnell zu laden.
     
-- Die langsamsten 1 % der SharePoint Online-Seiten brauchen mehr als 5.000 Millisekunden zum Laden.
+- Die langsamsten 1% der SharePoint Online-Seiten benötigen mehr als 5.000 Millisekunden.
     
-Ein einfacher Benchmarktest wäre, die Leistung durch Vergleichen der Ladezeit Ihres eigenen Portals mit der Ladezeit der OneDrive for Business-Homepage zu messen, da sie wenig benutzerdefinierte Funktionen verwendet. Dies ist oft der erste Schritt, um den Sie vom Support gebeten werden, wenn es um die Behandlung von Problemen mit der Netzwerkleistung geht.
+Ein einfacher Benchmark-Test, den Sie verwenden können, wäre das Messen der Leistung, indem die Ladezeit des eigenen Portals mit der Ladezeit der OneDrive for Business-Startseite verglichen wird, da nur wenige angepasste Features verwendet werden. Dies ist häufig der erste Schritt, den Sie beim Beheben von Problemen mit der Netzwerkleistung bei der Unterstützung durchführen müssen.
   
-## <a name="use-a-standard-user-account-when-checking-performance"></a>Verwenden Sie ein standard-Benutzerkonto, bei der Leistung
+## <a name="use-a-standard-user-account-when-checking-performance"></a>Verwenden eines Standardbenutzerkontos beim Überprüfen der Leistung
 
-Ein Websitesammlungsadministrator, Websitebesitzer, Editor oder Mitwirkender kann zusätzliche Sicherheitsgruppen angehören, sind zusätzliche Berechtigungen und aus diesem Grund haben weitere Elemente, die SharePoint auf einer Seite geladen wird.
+Ein Website Sammlungs Administrator, Websitebesitzer, Editor oder mitWirkender gehört zu zusätzlichen Sicherheitsgruppen, verfügt über zusätzliche Berechtigungen und verfügt daher über zusätzliche Elemente, die SharePoint auf einer Seite lädt.
   
-Dies gilt für die lokale SharePoint- und SharePoint Online, aber in einem Szenario: lokal die Unterschiede werden nicht so einfach bemerkt wie in SharePoint Online.
+Dies gilt für SharePoint on-premises und SharePoint Online, aber in einem lokalen Szenario sind die Unterschiede nicht so leicht zu erkennen wie in SharePoint Online.
   
-Um ordnungsgemäß bewerten, wie eine Seite für Benutzer ausgeführt wird, sollten Sie ein standard-Benutzerkonto verwenden, um zu vermeiden, laden das Schreiben von Steuerelementen und zusätzlichen Datenverkehr im Zusammenhang mit Sicherheitsgruppen.
+Um zu ermitteln, wie eine Seite für Benutzer ausgeführt wird, sollten Sie ein Standardbenutzerkonto verwenden, um die Erstellungs Steuerelemente und den zusätzlichen Datenverkehr im Zusammenhang mit Sicherheitsgruppen zu vermeiden.
   
 ## <a name="connection-categories-for-performance-tuning"></a>Verbindungskategorien für die Leistungsoptimierung
 
-Die Verbindungen zwischen Server und Benutzer lassen sich in drei Hauptkomponenten unterteilen. Berücksichtigen Sie diese beim Entwerfen von SharePoint Online-Seiten, um Einblicke in die Ladezeiten zu erhalten.
+Sie können die Verbindungen zwischen dem Server und dem Benutzer in drei Hauptkomponenten kategorisieren. Berücksichtigen Sie diese beim Entwerfen von SharePoint Online-Seiten für Einblicke in Ladezeiten.
   
-- **Server** Die Server, dass Microsoft in Rechenzentren hostet.
+- **Server** Die Server, die Microsoft in Rechenzentren hostet.
     
-- **Netzwerk** Microsoft Network, dem Internet und Ihrem lokalen Netzwerk zwischen dem Rechenzentrum und Ihre Benutzer.
+- **Netzwerk** Das Microsoft-Netzwerk, das Internet und Ihr lokales Netzwerk zwischen dem Rechenzentrum und ihren Benutzern.
     
-- **Browser** In dem die Seite geladen wird.
+- **Browser** Wo die Seite geladen wird.
     
-Im Zusammenhang mit diesen drei Verbindungen gibt es in der Regel fünf Gründe, die 95 % der langsamen Seiten verursachen. Jeder dieser Gründe wird in diesem Artikel erläutert:
+Innerhalb dieser drei Verbindungen gibt es normalerweise fünf Gründe, die 95% der langsamen Seiten verursachen. Jeder dieser Gründe wird in diesem Artikel behandelt:
   
-- Probleme bei der Navigation
+- Navigationsprobleme
     
-- Rollup von Inhalten
+- Inhalts Rollup
     
-- Große Dateien
+- Umfangreiche Dateien
     
 - Viele Anforderungen an den Server
     
-- Verarbeitung von Webparts
+- Webpart-Verarbeitung
     
-### <a name="server-connection"></a>Serververbindung
+### <a name="server-connection"></a>Server Verbindung
 
-Viele der Probleme, die die Leistung einer lokalen SharePoint-Implementierung beeinflussen, gelten auch für SharePoint Online.
+Viele der Probleme, die sich auf die Leistung mit SharePoint lokal auswirken, gelten auch für SharePoint Online.
   
-Erwartungsgemäß verfügen Sie bei einer lokalen SharePoint-Implementierung über weitaus mehr Kontrolle über die Leistung der Server. Bei SharePoint Online ist das ein wenig anders. Je mehr Arbeit Sie einen Server machen lassen, desto länger dauert das Rendern einer Seite. Bei Share Point liegt das zum größten Teil an komplexen Seiten mit mehreren Webparts.
+Wie Sie erwarten, haben Sie weitaus mehr Kontrolle darüber, wie Server mit lokalem SharePoint ausgeführt werden. Bei SharePoint Online sind die Dinge etwas anders. Je mehr Arbeit Sie an einem Server vornehmen, desto länger dauert das Rendern einer Seite. Bei SharePoint ist der größte Übeltäter in dieser Hinsicht komplexe Seiten mit mehreren Webparts.
   
 SharePoint Server lokal
   
-![Screenshot von Server lokal](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![Screenshot des lokalen Servers](media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![Screenshot von Server online](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![Screenshot von Server Online](media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-Bei SharePoint Online kann es vorkommen, dass bestimmte Seitenanforderungen am Ende mehrere Server aufrufen. So kann es zu einer Kombination aus Anforderungen zwischen Servern für nur eine Anforderung kommen. Diese Interaktionen können die Leistung beim Laden von Seiten stark beeinträchtigen.
+Bei SharePoint Online können bestimmte Seitenanforderungen tatsächlich mehrere Server anrufen. Sie können eine Matrix von Anforderungen zwischen Servern für eine einzelne Anforderung erhalten. Diese Interaktionen sind aus der Seiten Lade Perspektive teuer und machen die Dinge langsam.
   
 Beispiele für diese Server-zu-Server-Interaktionen sind:
   
-- Web- zu SQL-Servern
+- Web-zu-SQL-Server
     
-- Web- zu Anwendungsservern
+- Webserver für Anwendungsserver
     
-Ein weiterer Faktor, der die Serverinteraktionen verlangsamen kann, sind Cachefehler. Im Gegensatz zum lokalen SharePoint besteht die sehr geringe Möglichkeit, dass der gleiche Server für eine Seite verwendet wird, die Sie zuvor besucht haben. Dies führt dazu, dass eine Objektzwischenspeicherung veraltet.
+Das andere, was die Serverinteraktionen verlangsamen kann, sind Cachefehler. Im Gegensatz zu lokalen SharePoint, gibt es eine sehr geringe Wahrscheinlichkeit, dass Sie den gleichen Server für eine Seite getroffen haben, die Sie zuvor besucht haben; Dadurch ist das Objekt Zwischenspeichern veraltet.
   
-### <a name="network-connection"></a>Netzwerkverbindung
+### <a name="network-connection"></a>Netzwerkverbindung 
 
-Mit lokalen SharePoint nicht, die über ein WAN nutzen, können Sie eine schnelle Verbindung zwischen Datacenter und Endbenutzern verwenden. Im Allgemeinen Dinge einfach, aus der Sicht Netzwerk zu verwalten.
+Bei der lokalen SharePoint-Anwendung, die kein WAN verwendet, können Sie eine Hochgeschwindigkeitsverbindung zwischen Datencenter und Endbenutzern verwenden. Im Allgemeinen ist die Verwaltung über eine Netzwerk Perspektive einfach.
   
-Bei SharePoint Online gibt es einige weitere Faktoren, die berücksichtigt werden müssen, zum Beispiel:
+Bei SharePoint Online gibt es einige weitere Faktoren, die berücksichtigt werden müssen. Zum Beispiel:
   
 - Das Microsoft-Netzwerk
     
 - Das Internet
     
-- Der Internetdienstanbieter
+- Der ISP
     
-Unabhängig davon, welche Version von SharePoint (und welches Netzwerk) Sie verwenden, können folgende Faktoren dazu führen, dass das Netzwerk ausgelastet ist:
+Unabhängig davon, welche Version von SharePoint (und welches Netzwerk) Sie verwenden, können die folgenden Aspekte in der Regel dazu führen, dass das Netzwerk ausgelastet ist:
   
-- Große Nutzlast
+- Hohe Nutzlast
     
 - Viele Dateien
     
-- Große physische Entfernung zum Server
+- Grosser physischer Abstand zum Server
     
-Eine Funktion, die Sie in SharePoint Online nutzen können ist dem Microsoft CDN (Content Delivery Network). Ein CDN ist im Wesentlichen eine verteilte Sammlung von Servern, die in mehreren Rechenzentren bereitgestellt. Mit einem CDN kann Inhalte auf Seiten auf einem Server in der Nähe des Clients gehostet werden, selbst wenn der Client weit weg von der SharePoint-Ausgangsserver ist. Microsoft wird dieses Thema in der Zukunft verwenden, um lokale Instanzen von Seiten, die nicht angepasst werden können, beispielsweise der SharePoint Online Admin Homepage gespeichert. Weitere Informationen zu CDNs finden Sie unter [Inhaltsübermittlung](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
+Ein Feature, das Sie in SharePoint Online nutzen können, ist das Microsoft CDN (Content Delivery Network). Ein CDN ist im Grunde eine verteilte Sammlung von Servern, die über mehrere Rechenzentren bereitgestellt werden. Mit einem CDN können Inhalte auf Seiten auf einem Server in der Nähe des Clients gehostet werden, selbst wenn der Client weit entfernt vom ursprünglichen SharePoint-Server ist. Microsoft verwendet dies künftig mehr, um lokale Instanzen von Seiten zu speichern, die nicht angepasst werden können, beispielsweise die Homepage des SharePoint Online-Administrators. Weitere Informationen zu CDNs finden Sie unter [Content](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)Subnetze.
   
-Etwas, das Sie berücksichtigen müssen, aber möglicherweise nicht großartig beeinflussen können, ist die Verbindungsgeschwindigkeit des Internetdienstanbieters. Mit einem einfachen Tool zum Testen der Geschwindigkeit können Sie die Verbindungsgeschwindigkeit messen.
+Etwas, das Sie beachten müssen, aber möglicherweise nicht viel zu tun ist, ist die Verbindungsgeschwindigkeit Ihres ISP. Mit einem einfachen Geschwindigkeitstest Tool wird Ihnen die Verbindungsgeschwindigkeit mitgeteilt.
   
-### <a name="browser-connection"></a>Browserverbindung
+### <a name="browser-connection"></a>Browser Verbindung
 
-Es gibt einige Faktoren, die hinsichtlich der Leistung bei Webbrowsern zu berücksichtigen sind.
+Es gibt einige Faktoren, die von einer Leistungsperspektive aus mit Webbrowsern berücksichtigt werden sollten.
   
-Besuchen komplexe Seiten wird die Leistung beeinträchtigen. Den meisten Browsern haben nur einen kleinen Cache (etwa 90MB), während der Durchschnitt Webseite ist in der Regel rund um 1,6 MB. Nicht dauert aufgebraucht lange.
+Der Besuch komplexer Seiten wirkt sich auf die Leistung aus. Die meisten Browser haben nur einen kleinen Cache (um 90MB), während die durchschnittliche Webseite normalerweise ungefähr 1,6 MB beträgt. Es dauert nicht lange, bis Sie sich verbraucht haben.
   
-Bandbreite sein ein Problem auch. Beispielsweise wenn ein Benutzer in einer anderen Sitzung sich Videos ansehen ist, wirkt die Leistung Ihrer SharePoint-Seite sich dies. Während Sie streaming Media verhindert, dass Benutzer ist nicht möglich, können Sie die Möglichkeit für Benutzer eine Seite lädt steuern.
+Bandbreite kann auch ein Problem sein. Wenn ein Benutzer beispielsweise Videos in einer anderen Sitzung ansieht, wirkt sich dies auf die Leistung Ihrer SharePoint-Seite aus. Sie können zwar nicht verhindern, dass Benutzer Streaming-Medien, aber Sie steuern, wie eine Seite für Benutzer geladen wird.
   
-Checken Sie die folgenden Artikel für verschiedene SharePoint Online Seite Anpassungsmethoden und andere empfohlene Vorgehensweisen können Sie eine optimale Leistung zu erzielen.
+In den folgenden Artikeln finden Sie unterschiedliche Techniken für die SharePoint Online-Seite und andere bewährte Methoden, um eine optimale Leistung zu erzielen.
   
 - [Navigationsoptionen für SharePoint Online](navigation-options-for-sharepoint-online.md)
     
-- [Verwenden Sie das Seite-Diagnosetool für SharePoint Online](page-diagnostics-for-spo.md)
+- [Verwenden des Seiten Diagnosetools für SharePoint Online](page-diagnostics-for-spo.md)
     
 - [Bildoptimierung für SharePoint Online](image-optimization-for-sharepoint-online.md)
     
@@ -150,14 +150,14 @@ Checken Sie die folgenden Artikel für verschiedene SharePoint Online Seite Anpa
     
 - [Verwenden von Netzwerken für die Inhaltsübermittlung](using-content-delivery-networks-with-sharepoint-online.md)
     
-- [Über Inhaltssuche-Webpart anstatt Webpart für Inhaltsabfragen zum Verbessern der Leistung in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Verwenden des Webparts für die Inhaltssuche anstelle des Inhaltsabfrage-Webparts zur Verbesserung der Leistung in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- [Capacity planning und Auslastungstests SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+- [Kapazitätsplanung und Auslastungstests für SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
 - [Diagnose von Leistungsproblemen mit SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [Verwenden des Objektcaches mit SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Gewusst wie: Vermeiden von Drosselung und Sperren in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Gewusst wie: Vermeiden von Einschränkungen oder Sperren in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
     
 

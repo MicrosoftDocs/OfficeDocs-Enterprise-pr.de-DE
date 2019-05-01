@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
 ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741452"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491221"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
@@ -30,7 +30,7 @@ Mit Office 365 Advanced eDiscovery können Sie wichtige Informationen über die 
 Mit den Anweisungen in diesem Artikel erstellen Sie eine kleine Gruppe von Daten für eine fiktive Vertragsstreitigkeit und analysieren diese mit der Erweiterten eDiscovery.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) , um eine visuelle Darstellung aller Artikel im Office 365 Test Lab Guide-Stapel zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -53,7 +53,7 @@ In diesem Verfahren erstellen Sie E-Mail-Nachrichten, die Sie später in einem e
     
 2. Klicken Sie auf der Registerkarte **Outlook-Mail** auf **Neu**.
     
-3. Geben Sie in **an**die e-Mail-Adresse des User6-Kontos Ihres Testabonnements ein ( ** user6@.**<organization name> **. onmicrosoft.com**).
+3. Geben **Sie unter an**die e-Mail-Adresse des User6-Kontos Ihres Testabonnements ein ( **User6 @.**<organization name> **. onmicrosoft.com**).
     
 4. Geben Sie für den Betreff **Test-E-Mail 1** ein.
     

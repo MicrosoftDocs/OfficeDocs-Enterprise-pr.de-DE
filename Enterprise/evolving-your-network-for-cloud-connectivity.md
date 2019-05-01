@@ -1,5 +1,5 @@
 ---
-title: Weiterentwickeln Ihres Netzwerks für Cloudkonnektivität
+title: Weiterentwicklung Ihres Netzwerks für Cloudkonnektivität
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,11 +15,11 @@ ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: 'Zusammenfassung: Grundlegende Informationen darüber, warum für die Cloudakzeptanz ein neuer Ansatz für Investitionen in die Netzwerkinfrastruktur erforderlich ist.'
 ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 25a022f4ef4e56c5407e8e3a8a34265f8fc94264
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "26872256"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487241"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Weiterentwickeln Ihres Netzwerks für Cloudkonnektivität
 
@@ -45,7 +45,7 @@ Investitionen in die Netzwerkinfrastruktur beginnen mit der Konnektivität. Zus�
     
 - **Azure Infrastructure as a Service (IaaS)** Zusätzlich zu den Investitionen für Microsoft SaaS- und PaaS-Dienste müssen für das Ausführen von IT-Arbeitslasten in IaaS virtuelle Azure-Netzwerke entwickelt und konfiguriert werden, in denen virtuelle Computer gehostet werden und die Konnektivität mit Anwendungen sichergestellt ist, die darauf ausgeführt werden, sowie Routing, IP-Adressierung, DNS und Lastenausgleich. Laufende Investitionen umfassen eine Leistungs- und Sicherheitsüberwachung sowie Problembehandlung.
 
-[Microsoft 365](https://www.microsoft.com/microsoft-365) ist eine Kombination von Office 365, Enterprise Management + Sicherheit (zur Abstimmung) und Windows 10. Microsoft 365 kombiniert mehrere SaaS und Azure-Diensten für eine vollständige, intelligente Lösung, die jeder creative werden können und sichere Zusammenarbeit.
+[Microsoft 365](https://www.microsoft.com/microsoft-365) ist eine Kombination aus Office 365, Enterprise Management + Security (EMS) und Windows 10. Microsoft 365 kombiniert mehrere SaaS-und Azure-Dienste für eine vollständige, intelligente Lösung, die es jedem ermöglicht, kreativ zu sein und sicher zusammenzuarbeiten.
     
 ## <a name="areas-of-networking-investment-for-success-in-the-cloud"></a>Bereiche für Netzwerkinvestitionen für Erfolg in der Cloud
 
@@ -61,9 +61,9 @@ Da ein immer größerer Teil Ihres täglichen Produktivitätsverkehrs in die Clo
   
 ### <a name="for-a-high-sla-to-azure-office-365-and-dynamics-365-use-expressroute"></a>Verwenden Sie ExpressRoute für eine hohe SLA mit Azure, Office 365 und Dynamics 365
 
-Obwohl Sie Ihre aktuelle Internet-Verbindung von Ihrem edgenetzwerk verwenden können, muss Verkehr zum und vom Microsoft-Cloud-Diensten die Pipe mit anderen Intranetdatenverkehr mit dem Internet freigeben. Darüber hinaus unterliegt Ihrer Datenverkehr zu Microsoft Cloud Services Internet Überlastung.
+Obwohl Sie Ihre aktuelle Internet Verbindung von Ihrem Edge-Netzwerk aus verwenden können, müssen Datenverkehr zu und von Microsoft Cloud Services die Pipe mit anderem Intranet-Datenverkehr mit dem Internet teilen. Darüber hinaus unterliegt Ihr Datenverkehr an Microsoft-Clouddienste der Überlastung durch Internetdatenverkehr.
   
-Verwenden Sie für eine hohe SLA und optimale Leistung ExpressRoute, eine dedizierte WAN-Verbindung zwischen Ihrem Netzwerk und Azure, Office 365, Dynamics 365 oder alle drei Optionen. 
+Verwenden Sie für eine hohe SLA und optimale Leistung ExpressRoute, eine dedizierte WAN-Verbindung zwischen Ihrem Netzwerk und Azure, Office 365, Dynamics 365 oder alle drei Optionen.  
   
 Über ExpressRoute können Sie Ihren vorhandenen Netzwerkdienstanbieter für eine dedizierte Verbindung nutzen. Ressourcen, die über ExpressRoute verbunden werden, werden angezeigt, als wären Sie in Ihrem WAN, auch bei geografisch verteilten Organisationen.
   

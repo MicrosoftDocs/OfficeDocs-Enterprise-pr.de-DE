@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Die Bereitstellungs Berater für Office 365 bieten Ihnen eine selbstgesteuerte Unterstützung für das Einrichten von Office 365.
 ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741472"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490081"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Bereitstellungsratgeber für Office 365-Dienste
 
@@ -73,7 +73,7 @@ Der [SharePoint Online-Bereitstellungs Ratgeber](https://aka.ms/spoguidance) hil
 ### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>Azure Active Directory Connect (Azure AD Connect) Advisor
 Der [Azure AD Connect Advisor](https://aka.ms/aadconnectpwsync) ist eine schrittweise Anleitung, die zeigt, wie sie Office 365 Benutzerkontoinformationen hinzufügen, ohne die einzelnen Benutzer manuell zu erstellen. Außerdem wird gezeigt, wie Sie die Kennworthash Synchronisierung oder Pass-Through-Authentifizierung konfigurieren, sodass Benutzer sich mit demselben Kennwort bei Ihren e-Mails und Ihrer Domäne anmelden können. Wenn Sie die Verbundanmeldung mit AD FS einrichten möchten, finden Sie in diesem Leitfaden auch Schritte zum Bereitstellen von AD FS auf einem neuen Server oder in einer vorhandenen Windows Server 2012 R2-Farm. Azure AD Connect ersetzt ältere Versionen von Identitäts Integrationstools wie dirSync und Azure AD Sync und wird hauptsächlich zum Hinzufügen von Benutzern und anderen Daten zu Azure Active Directory für Office 365 verwendet.
   
-### <a name="azure"></a>Azur
+### <a name="azure"></a>Azure
 Das [Azure AD Basic-Setup Handbuch](https://aka.ms/azureadbasic) hilft Ihnen beim Einrichten von Features wie Gruppenbasierte Zugriffsverwaltung, Self-Service-Kennwortzurücksetzung für Cloud-Anwendungen und Azure Active Directory-Anwendungs Proxy für die Veröffentlichung von lokalen Webanwendungen.
   
 Das [Azure AD Premium-Setup Handbuch](https://aka.ms/aadpguidance) hilft Ihnen bei der Aktivierung der zahlreichen Features von Azure Active Directory Premium (Azure AD Premium), die Identitäts Verwaltungsfunktionen wie mehrstufige Authentifizierung, einmaliges Anmelden (Single Sign-on, SSO), Geräteregistrierung, Self-Service-Kenn Wort-und Gruppenverwaltung sowie Sicherheitsüberwachung.

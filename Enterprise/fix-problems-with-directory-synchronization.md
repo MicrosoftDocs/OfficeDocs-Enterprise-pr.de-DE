@@ -1,5 +1,5 @@
 ---
-title: Beheben von Problemen bei der Verzeichnissynchronisierung für Office 365
+title: Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -18,13 +18,13 @@ search.appverid:
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Beschreibt häufige Ursachen von Problemen mit der Verzeichnissynchronisierung in Office 365 und bietet einige Methoden zur Problembehandlung und-Lösung.
 ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001838"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487461"
 ---
-# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Beheben von Problemen bei der Verzeichnissynchronisierung für Office 365
+# <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365
 
 Mit der Verzeichnissynchronisierung können Sie weiterhin Benutzer und Gruppen lokal verwalten und Hinzufügungen, Löschungen und Änderungen an der Cloud synchronisieren. Das Setup ist jedoch etwas komplizierter, und es kann manchmal schwierig sein, die Ursache für Probleme zu identifizieren. Wir haben Ressourcen, die Ihnen helfen, potenzielle Probleme zu identifizieren und zu beheben.
   

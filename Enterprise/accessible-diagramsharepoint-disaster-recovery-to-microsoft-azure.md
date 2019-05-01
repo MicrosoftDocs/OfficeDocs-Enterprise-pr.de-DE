@@ -1,5 +1,5 @@
 ---
-title: "Zugängliches Diagramm – SharePoint-Notfallwiederherstellung in Microsoft Azure"
+title: Zugängliches Diagramm – SharePoint-Notfallwiederherstellung in Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
-description: "Dieser Artikel ist eine barrierefreie Textversion des Diagramms „SharePoint-Notfallwiederherstellung in Microsoft Azure“."
+description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „SharePoint-Notfallwiederherstellung in Microsoft Azure“.
 ms.openlocfilehash: 545aaae05e3becbde60fe01c0e50e5610ee69f98
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487721"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Zugängliches Diagramm – SharePoint-Notfallwiederherstellung in Microsoft Azure
 
-**Zusammenfassung:** Dieser Artikel ist eine Version verfügbaren Text des Diagramms mit dem Namen SharePoint Disaster Recovery in Microsoft Azure.
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms namens SharePoint Disaster Recovery to Microsoft Azure.
   
 Dieses Poster zeigt Beispiele von Architekturen zum Erstellen einer Wiederherstellungsumgebung in Azure.  
   
@@ -49,7 +50,7 @@ Diese Ebene enthält gibt drei Server. Jeder Server bietet die folgenden Dienste
     
 - Workflow-Manager 
     
-- Durchforstung 
+- Durchforstungsdatenbank 
     
 - Inhaltsverarbeitung 
     
@@ -75,7 +76,7 @@ Das zugehörige Diagramm zeigt die lokale Umgebung, die in der Azure-Wiederherst
   
 ### <a name="overview"></a>Übersicht
 
-Die notfallwiederherstellungsumgebung einer lokalen SharePoint 2013-Farm kann in Azure gehostet werden. 
+Die Notfallwiederherstellungsumgebung für eine lokale SharePoint 2013-Farm kann in Azure gehostet werden. 
   
 -   Azure-Infrastrukturdienste stellt ein sekundäres Datencenter zur Verfügung. 
     
@@ -185,7 +186,7 @@ Das virtuelle Azure-Netzwerk enthält drei Clouddienste: 
   
 - Der erste Clouddienst verfügt über zwei Active Directory- und DNS-Server mit einer Verfügbarkeitsgruppe.  
     
-- Der zweite Cloud-Dienst hat drei Gruppen von Servern: zwei verteilten Cache Server mit einer Verfügbarkeit. Zwei Front-End-Server mit einer Verfügbarkeit. Drei Back-End-Server mit einer Verfügbarkeit.
+- Der zweite clouddienst verfügt über drei Servergruppen: zwei verteilte Cacheserver mit einem Verfügbarkeits Satz. Zwei Front-End-Server mit einem Verfügbarkeits Satz. Drei Back-End-Server mit einem Verfügbarkeits Satz.
     
 - Der dritte Clouddienst verfügt über drei Datenbankserver mit einer Verfügbarkeitsgruppe. Einer dieser Datenbankserver ist eine Dateifreigabe für den Protokollversand und ein dritter Knoten einer Knotenmehrheit für SQL Server AlwaysOn.  
     
@@ -193,9 +194,9 @@ Das virtuelle Azure-Netzwerk enthält drei Clouddienste: 
 
 Die Konfiguration von AD DS für diese Lösung ist ein Hybridbereitstellungsszenario, in dem AD DS teilweise lokal und teilweise auf virtuellen Azure-Computern bereitgestellt wird.  
   
-Wichtig – Lesen Sie vor dem Bereitstellen von AD DS in Azure die Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure (http://msdn.microsoft.com/de-de/library/windowsazure/jj156090.aspx).  
+Wichtig: Lesen Sie vor dem Bereitstellen von AD DS in Azure die Richtlinien für die Bereitstellung von Windows Server Activehttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Directory auf virtuellen Microsoft Azure-Computern (. 
   
-Vollständige Anweisungen zum Entwerfen und Bereitstellen von Active Directory-Umgebungen finden Sie unter http://TechNet.Microsoft.com.  
+Ausführliche Anweisungen zum Entwerfen und Bereitstellen von Active Directory-Umgebungen http://TechNet.microsoft.comfinden Sie unter. 
   
 Diese Referenzarchitektur enthält zwei virtuelle Computer, die als Domänencontroller konfiguriert sind. Jeder ist wie folgt konfiguriert:  
   

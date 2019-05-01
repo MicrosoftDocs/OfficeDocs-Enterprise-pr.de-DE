@@ -18,25 +18,25 @@ search.appverid:
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Enthält ein Beispiel und beschreibt die Benennungskonvention und die Standardprotokoll Ebene des Office 365-IdFix-Transaktionsprotokolls.
 ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085064"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490941"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix-Transaktionsprotokoll
 
 Enthält ein Beispiel und beschreibt die Benennungskonvention und die Standardprotokoll Ebene des Office 365-IdFix-Transaktionsprotokolls.
   
-## <a name="idfix-transaction-log-location"></a>IdFix-Transaktionsprotokoll-Speicherort
+## <a name="idfix-transaction-log-location"></a>Speicherort des IdFix-Transaktionsprotokolls
 
 Das Office 365-IdFix-Tool erstellt jedes Mal, wenn Sie auf IdFix **anwenden** klicken und Änderungen an der Active Directory-Gesamtstruktur anwenden, ein neues Transaktionsprotokoll. Das Transaktionsprotokoll wird im gleichen Ordner gespeichert, in dem Sie IdFix installiert haben. Standardmäßig ist dieser Ordner C:\Deployment Tools\IDFix. Der Name der Transaktionsprotokolldatei verwendet ein Datums-und Zeitstempelformat, beispielsweise Verbose 6-1-2018 6-17-22 PM gibt eine Datei an, die am 1. Juni 2018 bei 6:17:22 PM generiert wurde. Verbose gibt den Protokolliergrad an. 
   
-## <a name="idfix-transaction-log-logging-level"></a>Protokollierungsstufe für das IdFix-Transaktionsprotokoll
+## <a name="idfix-transaction-log-logging-level"></a>IdFix-Transaktionsprotokoll-Protokolliergrad
 
-Das Wort "verbose" (ausführlich) im Namen der Transaktionsprotokolldatei gibt die Stufe der Protokollierung in der Datei an. "Verbose" bedeutet, dass die maximale Anzahl an Informationen im Protokoll erfasst wird. Dies ist der Standardprotokolliergrad. Derzeit kann die Protokollierungsstufe nicht geändert werden.
+Das Wort Verbose im Namen der Transaktionsprotokolldatei gibt die Protokollierungsebene in der Datei an. Verbose bedeutet, dass die maximale Menge an Informationen im Protokoll erfasst wird. Dies ist die Standard Protokollierungsstufe. Derzeit ist es nicht möglich, den Protokolliergrad zu ändern.
   
-## <a name="idfix-transaction-log-format"></a>IdFix-Transaktionsprotokoll-Format
+## <a name="idfix-transaction-log-format"></a>IdFix-Transaktionsprotokollformat
 
 IdFix schreibt die Ergebnisse der einzelnen **Update** -Aktionen in ein Transaktionsprotokoll, wie im folgenden Beispiel gezeigt:
   

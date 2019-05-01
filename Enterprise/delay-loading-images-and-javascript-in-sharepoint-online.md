@@ -12,33 +12,33 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: In diesem Artikel wird beschrieben, wie die Ladezeit für SharePoint Online-Seiten mithilfe von JavaScript verzögert Laden von Bildern und auch auf die nicht absolut JavaScript erst nach dem Laden der Seite geladen verringern.
+description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online-Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern, und außerdem darauf warten, nicht erforderliches JavaScript zu laden, bis die Seite geladen wurde.
 ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540957"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490291"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
-In diesem Artikel wird beschrieben, wie die Ladezeit für SharePoint Online-Seiten mithilfe von JavaScript verzögert Laden von Bildern und auch auf die nicht absolut JavaScript erst nach dem Laden der Seite geladen verringern. 
+In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online-Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern, und außerdem darauf warten, nicht erforderliches JavaScript zu laden, bis die Seite geladen wurde. 
   
-Bilder können das Laden von Seiten in SharePoint Online verlangsamen. Standardmäßig rufen die meisten modernen Internetbrowser Bilder beim Laden einer HTML-Seite vorab ab. Dies kann das Laden der Seite unnötig verlangsamen, wenn die Bilder nicht auf dem Bildschirm sichtbar sind, bis der Benutzer einen Bildlauf nach unten durchführt. Die Bilder können den Browser daran hindern, den sichtbaren Teil der Seite zu laden. Zur Umgehung dieses Problems können Sie JavaScript verwenden, um den Vorgang, dass die Bilder zuerst geladen werden, zu überspringen. Auch das Laden nicht unbedingt erforderlichen JavaScripts kann die Ladezeiten Ihrer SharePoint-Seiten erhöhen. In diesem Thema werden einige Methoden beschrieben, mit deren Hilfe Sie die Seitenladezeiten mit JavaScript in SharePoint Online verbessern können. 
+Bilder können sich negativ auf die Seiten ladegeschwindigkeiten bei SharePoint Online auswirken. Standardmäßig holen die meisten modernen Internet Browser Bilder beim Laden einer HTML-Seite vor. Dies kann dazu führen, dass die Seite unnötig langsam geladen wird, wenn die Bilder auf dem Bildschirm nicht sichtbar sind, bis der Benutzer einen Bildlauf nach unten durchgeführt hat. Die Bilder können verhindern, dass der Browser den sichtbaren Teil der Seite lädt. Um dieses Problem zu umgehen, können Sie JavaScript verwenden, um das Laden der Bilder zuerst zu überspringen. Außerdem kann das Laden nicht erforderlicher JavaScript-Dateien die Ladezeiten auf Ihren SharePoint-Seiten verlangsamen. In diesem Thema werden einige Methoden beschrieben, mit denen Sie Seitenladezeiten mit JavaScript in SharePoint Online verbessern können. 
   
-## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Verbessern der Seitenladezeiten durch ein verzögertes Laden von Bildern auf SharePoint Online-Seiten mithilfe von JavaScript
+## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Verbessern der Seitenladezeiten durch verzögertes Laden von Bildern in SharePoint Online-Seiten mithilfe von JavaScript
 
-JavaScript können Sie um einen Webbrowser aus vorab ausgewählt Bilder zu verhindern. Dies beschleunigt insgesamt rendern. Hierzu entfernen Sie den Wert der das Src-Attribut aus der \<Img\> tag, und Ersetzen Sie ihn durch den Pfad zu einer Datei in einem Datenattribut z. B.: Daten-Src. Zum Beispiel:
+Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Bilder vorab abruft. Dadurch wird das Gesamtdokument Rendering beschleunigt. Zu diesem Zweck entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen ihn durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Zum Beispiel:
   
 ```
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
-Mithilfe dieser Methode herunterladen nicht im Browser die Bilder sofort. Wenn das Bild bereits in der Ansicht ist, gibt JavaScript im Browser die URL aus der Datenattribut abgerufen, und fügen Sie sie als Wert für das Src-Attribut hat. Das Bild lädt nur als der Benutzer einen Bildlauf, und es geht in der Ansicht.
+Bei Verwendung dieser Methode werden die Bilder vom Browser nicht sofort heruntergeladen. Wenn sich das Bild bereits im Ansichtsfenster befindet, weist JavaScript den Browser an, die URL aus dem Data-Attribut abzurufen und als Wert für das src-Attribut einzufügen. Das Bild wird nur geladen, wenn der Benutzer einen Bildlauf durchführt und es angezeigt wird.
   
-So machen Sie all dies passiert, müssen Sie JavaScript verwenden.
+Um dies zu erreichen, müssen Sie JavaScript verwenden.
   
-Definieren Sie in einer Textdatei die Funktion **isElementInViewport()**, um zu überprüfen, ob sich ein Element in dem Teil des Browsers befindet, der für den Benutzer sichtbar ist. 
+Definieren Sie in einer Textdatei die **isElementInViewport ()** -Funktion, um zu überprüfen, ob sich ein Element in dem Teil des Browsers befindet, der für den Benutzer sichtbar ist. 
   
 ```
 function isElementInViewport(el) {
@@ -55,7 +55,7 @@ function isElementInViewport(el) {
 
 ```
 
-Verwenden Sie anschließend **isElementInViewport()** in der Funktion **loadItemsInView()**. Die Funktion **loadItemsInView()** lädt alle Bilder, die einen Wert für das Attribut "data-scr" haben, wenn sie sich in dem Teil des Browsers befinden, der für den Benutzer sichtbar ist. Fügen Sie die folgende Funktion zur Textdatei hinzu: 
+Als nächstes verwenden Sie **isElementInViewport ()** in der **loadItemsInView ()** -Funktion. Die **loadItemsInView ()** -Funktion lädt alle Bilder mit einem Wert für das Data-src-Attribut, wenn Sie sich im Browser Teil befinden, der für den Benutzer sichtbar ist. Fügen Sie die folgende Funktion zur Textdatei hinzu: 
   
 ```
 function loadItemsInView() {
@@ -71,7 +71,7 @@ function loadItemsInView() {
 }
 ```
 
-Rufen Sie abschließend **loadItemsInView()** innerhalb von **window.onscroll()** auf, wie im folgenden Beispiel gezeigt. Dadurch wird sichergestellt, dass alle Bilder, die sich im Viewport befinden, geladen werden, wenn der Benutzer sie benötigt, aber nicht davor. Fügen Sie Folgendes in der Textdatei hinzu: 
+Rufen Sie schließlich **loadItemsInView ()** innerhalb von **Window. OnScroll ()** auf, wie im folgenden Beispiel gezeigt. Dadurch wird sichergestellt, dass alle im Viewport enthaltenen Bilder geladen werden, wenn der Benutzer Sie benötigt, jedoch nicht zuvor. Fügen Sie Folgendes zur Textdatei hinzu: 
   
 ```
 //Example of calling loadItemsInView() from within window.onscroll()
@@ -81,7 +81,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Für SharePoint Online, müssen Sie die folgende Funktion an die Scroll-Ereignis auf #s4-Arbeitsbereichs anhängen \<Div\> Tag. Dies ist, da die Fensterereignisse überschrieben werden, um sicherzustellen, dass die Multifunktionsleiste an den Anfang der Seite angefügte bleiben.
+Für SharePoint Online müssen Sie die folgende Funktion an das Scroll-Ereignis im #s4-Workspace \<div\> -Tag anfügen. Der Grund dafür ist, dass die Window-Ereignisse überschrieben werden, um sicherzustellen, dass das Menüband am oberen Rand der Seite befestigt bleibt.
   
 ```
 //Keep the ribbon at the top of the page
@@ -90,35 +90,35 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Speichern Sie die Textdatei als JavaScript-Datei mit der Erweiterung ".js", z. B. "delayLoadImages.js".
+Speichern Sie die Textdatei als JavaScript-Datei mit der Erweiterung. js, beispielsweise "delayLoadImages. js".
   
-Nachdem Sie das Schreiben von delayLoadImages.js abgeschlossen haben, können Sie den Inhalt der Datei in eine Gestaltungsvorlage in SharePoint Online hinzufügen. Zu diesem Zweck der Kopfzeile in der Gestaltungsvorlage einen Skript Link hinzugefügt. Nachdem Sie sich in einer Gestaltungsvorlage befindet, wird der JavaScript-Code auf alle Seiten in SharePoint Online-Website angewendet werden, die das Layout der Masterseite verwenden. Alternativ, wenn Sie beabsichtigen, dies nur auf eine Seite der Website verwenden, verwenden Sie den Skript-Editor-Webpart der JavaScript-Code in der Seite einzubetten. Finden Sie weitere Informationen in diesen Themen:
+Nachdem Sie delayLoadImages. js geschrieben haben, können Sie den Inhalt der Datei einer Gestaltungsvorlage in SharePoint Online hinzufügen. Hierzu fügen Sie der Kopfzeile auf der Gestaltungsvorlage einen Skript Link hinzu. Sobald Sie sich in einer Gestaltungsvorlage befindet, wird das JavaScript auf alle Seiten Ihrer SharePoint Online-Website angewendet, die dieses Gestaltungsvorlagen Layout verwenden. Wenn Sie dies nur auf einer Seite Ihrer Website verwenden möchten, verwenden Sie alternativ das Skript-Editor-Webpart, um das JavaScript in die Seite einzubetten. Weitere Informationen finden Sie in den folgenden Themen:
   
-- [Vorgehensweise: anwenden eine Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
     
 - [Vorgehensweise: Erstellen eines Seitenlayouts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
     
- **Beispiel: Verweisen auf die JavaScript-Datei "delayLoadImages.js" von einer Masterseite in SharePoint Online**
+ **Beispiel: verweisen auf die JavaScript-Datei delayLoadImages. js von einer Gestaltungsvorlage in SharePoint Online**
   
-Damit dies funktioniert, müssen Sie auch auf die jQuery in der Masterseite verweisen. Im folgenden Beispiel sehen Sie beim ersten Laden der Seite, dass nur ein Bild geladen wird, es auf der Seite aber mehrere Bilder gibt.
+Damit dies funktioniert, müssen Sie auf der Gestaltungsvorlage auch auf jQuery verweisen. Im folgenden Beispiel sehen Sie in der anfänglichen Seite laden, dass nur ein Bild geladen ist, aber es gibt noch einige mehr auf der Seite.
   
-![Screenshot mit einem geladenen Bild auf der Seite](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
+![Screenshot mit einem auf der Seite geladenen Bild](media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
-Der folgende Screenshot zeigt die restlichen Bilder, die heruntergeladen werden, nachdem sie durch einen Bildlauf sichtbar werden.
+Im folgenden Screenshot werden die restlichen Bilder angezeigt, die nach dem Scrollen in der Ansicht heruntergeladen werden.
   
-![Screenshot mit mehreren geladenen Bildern auf der Seite](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
+![Screenshot mit mehreren auf der Seite geladenen Bildern](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Das Verzögern des Ladens von Bildern mithilfe von JavaScript kann sehr effektiv sein, um die Leistung zu erhöhen. Wenn diese Methode jedoch auf eine öffentliche Website angewendet wird, sind die Suchmaschinen nicht in der Lage, die Bilder genauso zu durchforsten wie ein regulär formatiertes Bild. Dies kann sich auf die Priorisierung in den Suchmaschinen auswirken, da die Metadaten für das Bild selbst erst dann wirklich vorhanden sind, wenn die Seite geladen wird. Suchcrawler lesen nur den HTML-Code und erfassen daher die Bilder nicht als Inhalt auf der Seite. Bilder gehören zu den Faktoren, anhand derer Seiten in den Suchergebnissen in einer bestimmten Rangfolge angeordnet werden. Eine Möglichkeit, dieses Problem zu umgehen, besteht darin, Einführungstext für die Bilder zu verwenden.
+Das verZögern des Ladens von Bildern mithilfe von JavaScript kann eine effektive Methode zur Steigerung der Leistung sein. Wenn die Technik jedoch auf einer öffentlichen Website angewendet wird, können Suchmaschinen die Bilder nicht auf die gleiche Weise Crawlen wie ein regelmäßig geformtes Bild. Dies kann sich auf Rankings in Suchmaschinen auswirken, da Metadaten im Bild selbst nicht wirklich vorhanden sind, bis die Seite geladen wird. Suchmaschinen-Crawler lesen nur den HTML-Code und sehen daher die Bilder nicht als Inhalt auf der Seite. Bilder sind einer der Faktoren, mit denen Seiten in Suchergebnissen bewertet werden. Eine Möglichkeit, um dies zu umgehen, ist die Verwendung von einführenden Text für Ihre Bilder.
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub-Codebeispiel: Einfügen von JavaScript zur Verbesserung der Leistung
 
-Verpassen Sie nicht im Artikel und Codebeispiele Beispiel auf [JavaScript Einfügung](https://go.microsoft.com/fwlink/p/?LinkId=524759) auf GitHub bereitgestellt. 
+Verpassen Sie nicht den Artikel und das Codebeispiel zur [JavaScript-Injektion](https://go.microsoft.com/fwlink/p/?LinkId=524759) auf GitHub. 
   
 ## <a name="see-also"></a>Siehe auch
 
-[Unterstützte Browser in Office 2013 und Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Unterstützte Browser in Office 2013 und Office 365 proPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[Vorgehensweise: anwenden eine Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
 [Vorgehensweise: Erstellen eines Seitenlayouts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 

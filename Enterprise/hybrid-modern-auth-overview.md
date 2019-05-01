@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und Autorisierung bietet. Es steht für hybridbereitstellungen von lokalen Skype for Business Server-und Exchange Server-lokalen sowie für geteilte Skype for Business-Hybriden zur Verfügung. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zum Einrichten/deaktivieren moderner Authentifizierung und zu einigen der zugehörigen Clients (ex. Outlook-und Skype-Clients).
-ms.openlocfilehash: 26efa77e3c98c0395188e6ca7a2f65cd3b8b939e
-ms.sourcegitcommit: 19f0deee26b6cf2eef316c742054572bb9d98b84
+ms.openlocfilehash: d8d06a3e2d178f68bcb130228ed1834f4eb878f8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30458345"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491401"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern
 
@@ -90,6 +90,18 @@ Da die moderne Authentifizierung den autorisierungsserver ändert, der verwendet
   - Ihre SIP-Domäne wird als Verbunddomäne in Office 365 hinzugefügt.
     
   - Alle SFB-Front-Ends müssen über ausgehende Verbindungen zum Internet, zu Office 365-Authentifizierungs-URLs (TCP 443) und bekannte Zertifikatstamm CRLs (TCP 80) verfügen, die in den Zeilen 56 und 125 des Abschnitts "Microsoft 365 Common and Office Online" von [office 365 URLs und IP aufgeführt sind. Adressbereiche](urls-and-ip-address-ranges.md).
+  
+- **Skype for Business lokal in einer hybriden Office 365-Umgebung**
+  - Eine Skype for Business Server 2019-Bereitstellung mit allen Servern mit Skype for Business Server 2019.
+  
+  - Eine Skype for Business Server 2015-Bereitstellung mit allen Servern mit Skype for Business Server 2015.
+  
+  - Eine Bereitstellung mit maximal zwei unterschiedlichen Server Versionen, wie unten aufgeführt:
+  
+     - Skype for Business Server 2015 und Skype for Business Server 2019
+     
+  - Für alle Skype for Business-Server müssen die neuesten kummulative-Updates installiert sein, weitere Informationen finden Sie unter [Skype for Business Server-Updates](https://docs.microsoft.com/skypeforbusiness/sfb-server-updates) , um alle verfügbaren Updates zu finden und zu verwalten.
+  - In der Hybridumgebung gibt es keinen lync Server 2010 oder 2013.
     
  **Hinweis** Wenn Ihre Skype for Business-Front-End-Server einen Proxy Server für den Internet Zugriff verwenden, muss die verwendete Proxy Server-IP und-Nummer im Konfigurationsabschnitt der Datei Web. config für jedes Front-End eingegeben werden. 
   
@@ -120,7 +132,17 @@ Da die moderne Authentifizierung den autorisierungsserver ändert, der verwendet
     
   - SSL-abLadung ist nicht konfiguriert. SSL-Terminierung und erneute Verschlüsselung wird unterstützt.
     
-  - Falls Ihre Umgebung eine Proxy Server-Infrastruktur verwendet, damit die Server eine Verbindung mit dem Internet herstellen können, stellen Sie sicher, dass auf allen Exchange-Servern der Proxy Server in der [para internetweb](https://technet.microsoft.com/en-us/library/bb123716%28v=exchg.160%29.aspx) -Eigenschaft definiert ist.
+  - Falls Ihre Umgebung eine Proxy Server-Infrastruktur verwendet, damit die Server eine Verbindung mit dem Internet herstellen können, stellen Sie sicher, dass auf allen Exchange-Servern der Proxy Server in der [para internetweb](https://technet.microsoft.com/library/bb123716%28v=exchg.160%29.aspx) -Eigenschaft definiert ist.
+  
+- **Lokale Exchange-Server in einer hybriden Office-365-Umgebung**
+
+  - Wenn Sie Exchange Server 2013 verwenden, müssen auf mindestens einem Server die Serverrollen Mailbox und Client Access installiert sein. Es ist zwar möglich, die Postfach-und Client Zugriffsrollen auf separaten Servern zu installieren, es wird jedoch dringend empfohlen, beide Rollen auf jedem Server zu installieren, um zusätzliche Zuverlässigkeit und verbesserte Leistung zu gewährleisten.
+  
+  - Wenn Sie Exchange Server 2016 oder höher verwenden, muss auf mindestens einem Server die Postfachserverrolle installiert sein.
+  
+  - In der Hybrid Umgebung gibt es weder Exchange Server 2007 noch 2010.
+  
+  - Auf allen Exchange-Servern müssen die neuesten kummulative-Updates installiert sein, unter [Aktualisieren von Exchange auf die neuesten kumulativEn Updates](https://docs.microsoft.com/en-us/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) , um alle verfügbaren Updates zu finden und zu verwalten.
     
 - **Exchange-Client-und-Protokollanforderungen**
   
@@ -129,7 +151,7 @@ Da die moderne Authentifizierung den autorisierungsserver ändert, der verwendet
   |**Clients**|**Primäres Protokoll**|**Hinweise**|
   |:-----|:-----|:-----|
   |Outlook 2013 und Outlook 2016  <br/> |MAPI über HTTP  <br/> |MAPI über HTTP muss in Exchange aktiviert sein, damit die moderne Authentifizierung mit diesen Clients (in der Regel für neue Installationen von Exchange 2013 Service Pack 1 und höher) aktiviert werden kann. Weitere Informationen finden Sie unter [Funktionsweise der modernen Authentifizierung für office 2013-und office 2016-Client-apps](https://docs.microsoft.com/en-us/office365/enterprise/modern-auth-for-office-2013-and-2016).  <br/> Stellen Sie sicher, dass Sie die erforderliche Mindestversion von Outlook erstellen. Lesen Sie [die neuesten Updates für Outlook-Versionen, die Windows Installer (MSI) verwenden](https://docs.microsoft.com/en-us/officeupdates/outlook-updates-msi).  <br/> |
-  |Outlook 2016 für Mac  <br/> |Exchange-Webdienste  <br/> |  <br/> |
+  |Outlook 2016 für Mac  <br/> |Exchange-Webdienste  <br/> |  <br/> |
   |Outlook für iOS und Android  <br/> |  <br/> |Weitere Informationen finden Sie unter [Verwenden der modernen Hybrid Authentifizierung mit Outlook für IOS und Android](https://docs.microsoft.com/en-us/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) .  <br/> |
   |Exchange ActiveSync-Clients (z. b. iOS11-Mail)  <br/> |Exchange ActiveSync  <br/> |Für Exchange ActiveSync-Clients, die die moderne Authentifizierung unterstützen, müssen Sie das Profil neu erstellen, um von der Standardauthentifizierung zur modernen Authentifizierung zu wechseln.  <br/> |
 
@@ -164,6 +186,6 @@ Da die moderne Authentifizierung den autorisierungsserver ändert, der verwendet
     
 - [Konfigurieren von Skype for Business lokal für die Verwendung der modernen Authentifizierung](configure-skype-for-business-for-hybrid-modern-authentication.md)
     
-- [Entfernen oder Deaktivieren der modernen Hybrid Authentifizierung von Skype for Business und Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+- [Entfernen oder Deaktivieren der modernen Hybridauthentifizierung aus Skype for Business und Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
     
 

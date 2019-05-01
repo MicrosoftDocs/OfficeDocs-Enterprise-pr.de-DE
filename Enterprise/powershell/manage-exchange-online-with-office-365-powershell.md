@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: b23dda88-f137-4051-9c2c-84035ad63f5e
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Microsoft Exchange Online, einschließlich Anzeigen der Postfachkonfiguration und erweiterter Berichte.'
 ms.openlocfilehash: 93eb2ca11544139f3904126c0ec04fc1ab02ec1b
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573929"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33491611"
 ---
 # <a name="manage-exchange-online-with-office-365-powershell"></a>Verwalten von Exchange Online mit Office 365 PowerShell
 
@@ -27,11 +27,11 @@ ms.locfileid: "30573929"
   
 Eine der Hauptaufgaben jedes Microsoft Exchange Online-Administrators ist die Verwaltung von Postfächern und Abrufen von Berichten für diese. Obwohl Sie einige dieser Aufgaben in Microsoft 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShell wesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie in den folgenden Themen:
   
-- [Anzeigen von Exchange Online-Postfachinformationen mit Office 365 PowerShell](https://technet.microsoft.com/de-DE/library/mt771881%28v=exchg.160%29.aspx)
+- [Anzeigen von Exchange Online-Postfachinformationen mit Office 365 PowerShell](https://technet.microsoft.com/en-us/library/mt771881%28v=exchg.160%29.aspx)
     
-- [Anzeigen von Exchange Online-Berichten mit Office 365 PowerShell](https://technet.microsoft.com/de-DE/library/mt771882%28v=exchg.160%29.aspx)
+- [Anzeigen von Exchange Online-Berichten mit Office 365 PowerShell](https://technet.microsoft.com/en-us/library/mt771882%28v=exchg.160%29.aspx)
     
-- [Bestimmen, welche Cmdlets Exchange Online-Administratoren mit Office 365 PowerShell zur Verfügung stehen](https://technet.microsoft.com/de-DE/library/mt771883%28v=exchg.160%29.aspx)
+- [Bestimmen, welche Cmdlets Exchange Online-Administratoren mit Office 365 PowerShell zur Verfügung stehen](https://technet.microsoft.com/en-us/library/mt771883%28v=exchg.160%29.aspx)
     
 ## <a name="see-also"></a>Siehe auch
 

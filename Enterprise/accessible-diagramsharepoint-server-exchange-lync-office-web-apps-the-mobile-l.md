@@ -1,5 +1,5 @@
 ---
-title: "Zugängliches Diagramm – SharePoint Server, Exchange, Lync, Office Web Apps – Die mobile Landschaft"
+title: Zugängliches Diagramm – SharePoint Server, Exchange, Lync, Office Web Apps – Die mobile Landschaft
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 12/15/2017
@@ -9,12 +9,13 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
-description: "Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens \"Microsoft Exchange 2013-Plattformoptionen, das unter „Technische Diagramme“ verfügbar ist."
+description: Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter „Technische Diagramme“ verfügbar ist.
 ms.openlocfilehash: c54e223645cebfa56347a273e61d70afaf33ce05
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
-ms.translationtype: HT
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487681"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Zugängliches Diagramm – SharePoint Server, Exchange, Lync, Office Web Apps – Die mobile Landschaft
 
@@ -212,7 +213,7 @@ Informationen zum Ablauf: ein externes mobiles Gerät sendet eine HTTPS GET-Anfo
   
 Auf dem Front-End-Server ruft der AutoErmittlungsdienst die Webdienst-URLs des Home-Pools des Benutzers ab und gibt diese Informationen über den Reverseproxyserver an das mobile Gerät zurück. Der AutoErmittlungsdienst ermöglicht mobilen Geräten das Auffinden von Lync Server-Webdiensten, ohne Benutzer zum manuellen Eingeben von URLs aufzufordern.
   
-Wenn sich ein Mobilgerät innerhalb der Firewall anmeldet, wird ein HTTPS GET-Befehl direkt an einen Lync-Front-End-Pool wie LyncDiscoverInternal.com gesendet. Die Anforderung wird an Port 443 empfangen, also dem Port, den der AutoErmittlungsdienst für die Kommunikation zurück an das Mobilgerät verwendet.
+Wenn sich ein Mobilgerät innerhalb der Firewall anmeldet, wird ein HTTPS Get-Befehl direkt an einen Lync-Front-End-Pool wie LyncDiscoverInternal.com gesendet. Die Anforderung wird an Port 443 empfangen, also dem Port, der den AutoErmittlungsdienst für die Kommunikation mit dem Mobilgerät verwendet.
   
 Zur Unterstützung der Mobilität müssen Sie zwei DNS-Datensätze konfigurieren: einen für LyncDiscover.contoso.com und einen für LyncDiscoverInternal.com. Der Zugriff auf den externen FDQN sollte nur von außerhalb der Firewall erfolgen, während der Zugriff auf den internen FDQN nur von innerhalb der Firewall erfolgen sollte.
   

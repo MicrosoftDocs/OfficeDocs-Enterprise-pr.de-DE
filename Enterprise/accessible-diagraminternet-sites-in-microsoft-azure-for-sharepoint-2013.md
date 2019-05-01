@@ -1,5 +1,5 @@
 ---
-title: "Zugängliches Diagramm – Internetwebsites in Microsoft Azure für SharePoint 2013"
+title: Zugängliches Diagramm – Internetwebsites in Microsoft Azure für SharePoint 2013
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -10,16 +10,17 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
-description: "Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Internetsites für SharePoint 2013 in Microsoft Azure“."
+description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Internetsites für SharePoint 2013 in Microsoft Azure“.
 ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: d1a1480982c773f2241cb17f85072be8724ea841
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487691"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Zugängliches Diagramm – Internetwebsites in Microsoft Azure für SharePoint 2013
 
-**Zusammenfassung:** Dieser Artikel ist eine Version verfügbaren Text des Diagramms mit dem Namen Internet-Websites in Microsoft Azure für SharePoint 2013.
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Internet Sites in Microsoft Azure für SharePoint 2013.
   
 In diesem Poster wird beschrieben und veranschaulicht, wie öffentlich zugängliche Websites im Internet von der Elastizität in der Cloud und Azure AD für Kundenkonten profitieren. Es gibt sechs verschiedene Szenarien, die beschreiben, wie Internetsites von Azure profitieren:  
   
@@ -37,15 +38,15 @@ In diesem Poster wird beschrieben und veranschaulicht, wie öffentlich zugängli
     
 ## <a name="design-and-size-the-farm-topology"></a>Entwurf und Dimensionierung der Farmtopologie
 
-Verwenden Sie die Topologie, Kapazität und Leistung Anleitung zum Entwerfen der Farmtopologie für SharePoint 2013 auf TechNet. 
+Verwenden Sie die Informationen zur Topologie, Kapazität und Leistung von SharePoint 2013 auf TechNet, um die Farmtopologie zu entwerfen. 
   
 Stellen Sie sicher, dass die von Ihnen entworfene Farm die Kapazitäts- und Leistungsziele erfüllt.  
   
 ### <a name="example-medium-internet-sites-farm-85-page-views-per-second"></a>Beispiel: Mittelgroße Internetsitefarm (ca. 85 Seitenaufrufe pro Sekunde)
 
-Diese Farm stellt eine fehlertolerante SharePoint 2013-Farm Suchtopologie, die für eine Korpus optimiert wird, die 3,400,000 Elemente enthält. 
+Diese Farm bietet eine fehlertolerante SharePoint 2013-Such Farmtopologie, die für einen Korpus optimiert ist, der 3,4 Millionen Elemente enthält. 
   
-Die beispielfarm verarbeitet Dokumente von 100 bis 200 pro Sekunde, abhängig von der Sprache, und in diesem Layout 85 Seitenansichten pro Sekunde und 100 Abfragen pro Sekunde. 
+In der Beispiel Farm werden 100-200-Dokumente pro Sekunde abhängig von der Sprache verarbeitet, und es werden 85-Seitenaufrufe pro Sekunde und 100 Abfragen pro Sekunde unterstützt. 
   
 Das zugehörige Diagramm zeigt eine mittelgroße Internetsitefarm mit drei Arten von Servern:  
   
@@ -95,7 +96,7 @@ Im oberen Bereich des Diagramms sehen Sie die SharePoint-Farm vor der Optimierun
     
 ### <a name="after"></a>Nach
 
-In diesem Teil des Diagramms gezeigt, dass die SharePoint-Farm nach für Verfügbarkeit gezielt in Azure festgelegt. Diese Architektur für Azure angepasst werden kann, werden wir die vier Komponenten auf allen drei Servern repliziert. Dadurch wird die Anzahl der Komponenten über das für Leistung und Kapazität erhöht. Der Nachteil ist, dass dieses Design sorgt für hohe Verfügbarkeit aller vier Komponenten in der Azure-Plattform, wenn diese drei virtuellen Maschinen, die eine Menge Verfügbarkeit zugewiesen sind. 
+In diesem Teil des Diagramms sehen Sie die SharePoint-Farm nach der Optimierung für Verfügbarkeitssätze in Azure. Für die Anpassung dieser Architektur an Azure werden die vier Komponenten auf alle drei Server repliziert. Dies erhöht die Anzahl der Komponenten über die Leistungs-und Kapazitätsvorgaben hinaus. Der Vorteil besteht darin, dass dieser Entwurf für Hochverfügbarkeit aller vier Komponenten auf der Azure-Plattform sorgt, wenn diese drei virtuellen Computer einem Verfügbarkeitssatz zugewiesen werden. 
   
 Für alle drei Server wurden Rollen zur Durchforstung, Verwaltung, Analyse und Inhaltsverarbeitung konfiguriert.  
   
@@ -103,9 +104,9 @@ Für alle drei Server wurden Rollen zur Durchforstung, Verwaltung, Analyse und I
 
 Alle SharePoint-Lösungen erfordern Windows Active Directory-Domänendienste (AD DS). Derzeit sind zwei Optionen für SharePoint-Lösungen in Azure verfügbar.   
   
-- Option 1: Dedizierten Domäne – Sie können eine dedizierte und isolierte Domäne in Azure zur Unterstützung von einer SharePoint-Farm bereitstellen. Dies ist eine gute Wahl für Öffentliche Internetwebsites beschrieben. 
+- Option 1: dedizierte Domäne – Sie können eine dedizierte und isolierte Domäne für Azure bereitstellen, um eine SharePoint-Farm zu unterstützen. Dies ist eine gute Wahl für öffentlich zugängliche Internetwebsites. 
     
-- Option 2: Erweitern der lokalen Domäne über eine Standort-zu-Standort-VPN-Verbindung. Beim Erweitern der lokalen Domäne über eine Standort-zu-Standort-VPN-Verbindung der Benutzerzugriff auf der SharePoint-Farm als wäre es gehosteten lokalen. Sie können Ihre vorhandenen Active Directory und DNS-Implementierungen nutzen. 
+- Option 2: Erweitern der lokalen Domäne über eine Standort-zu-Standort-VPN-Verbindung. Wenn Sie die lokale Domäne über eine Standort-zu-Standort-VPN-Verbindung erweitern, greifen Benutzer auf die SharePoint-Farm zu, als ob Sie lokal gehostet würde. Sie können Ihre vorhandenen Active Directory-und DNS-Implementierungen nutzen. 
     
 ## <a name="design-for-identity-management-zones-and-authentication"></a>Entwurf für die Identitätsverwaltung, Zonen und Authentifizierung
 
@@ -147,11 +148,11 @@ In diesem Beispiel:
     
 - Konfigurieren Sie die Internetzone für den anonymen Zugriff.   
     
-Verwenden Sie keine zwei-Zonen-Design in der alle authentifizierten Benutzer konfiguriert sind, um die Standardzone zu verwenden. 
+Verwenden Sie kein zwei Zonen Design, in dem alle authentifizierten Benutzer für die Verwendung der Standardzone konfiguriert sind. 
   
 Das zugehörige Diagramm zeigt einen Drei-Zonen-Entwurf mit Trennung von internen und Kundenkonten.   
   
-Kunden und Besucher Zugriff auf den Azure AD-Mandanten in SharePoint 2013-Farm über Webanwendungen in einer der beiden Zonen. Die zwei Zonen umfassen: 
+Besucher und Kunden greifen über Webanwendungen in einer der beiden Zonen auf den Azure AD-Mandanten in der SharePoint-2013-Farm zu. Die beiden Zonen sind: 
   
 - Zone: Internet für anonyme Benutzer  
     
@@ -165,7 +166,7 @@ Benutzer mit internen Konten greifen über AD DS auf den Azure Active Directory-
   
 Das zugehörige Diagramm zeigt das folgende Szenario:  
   
-Bei der Integration von SharePoint 2013 mit Azure Active Directory dient ein Azure Access Control Service (ACS) zwei Zwecken: 
+Bei der Integration von SharePoint 2013 mit Azure Active Directory dient ein Azure-Zugriffssteuerungsdienst (ACS) für zwei Zwecke: 
   
 -   Azure AD verwendet SAML 2.0 und SharePoint funktioniert nur mit SAML 1.1. ACS versteht beide Formate und fungiert als Vermittler zum Transformieren der Tokenformate zwischen SharePoint und Azure AD.   
     
@@ -197,23 +198,23 @@ Webanwendung und Stammwebsite-URLs 
     
 Das zugehörige Diagramm zeigt Anwendungspooldienste, z. B. Suchen in Websitesammlungen mithilfe von Webanwendungen. Die gezeigt Websitesammlung enthält:  
   
-- Pfadbasierte Websitesammlung, die unter http://internal:8000 (Stammwebsite) zu finden ist.  
+- Pfadbasierte Websitesammlung unter http://internal:8000 (Stammwebsite). 
     
-- Durchforstung: Hostbenannte Websitesammlungen, die unter einer Adresse wie z. B. https://authoring.contoso.com:8000 zu finden ist.  
+- Crawl: Websitesammlungen mit Hostnamen an einer Adresse wie https://authoring.contoso.com:8000. 
     
 - Abfragen: 2 separate hostbenannte Websitesammlungen, die unter Adresse wie etwa den folgenden zu finden sind:  
     
   - http://www.contoso.com 
     
-  - https://Secure.contoso.com 
+  - https://secure.contoso.com 
     
   - http://www.contoso.com:8000 
     
-  - http://Assets.contoso.com 
+  - http://assets.contoso.com 
     
   - https://secureassets.contoso.com 
     
-  - http://Assets.contoso.com:8000 
+  - http://assets.contoso.com:8000 
     
 ## <a name="design-the-azure-environment"></a>Entwurf der Azure-Umgebung
 

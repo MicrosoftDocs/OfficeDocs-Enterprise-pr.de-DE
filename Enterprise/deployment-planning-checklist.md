@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Diese Prüfliste unterstützt Ihre Organisation bei der Planung und Vorbereitung einer Migration zu Office 365. Die Phasen und Schritte in der Prüfliste werden mit den Anweisungen des Onboarding Centers ausgerichtet.
 ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 1b6ba4043497c27b3a89689766b975f2405e0ec8
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30085304"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490101"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Prüfliste für die Bereitstellungsplanung für Office 365
 
@@ -37,7 +37,7 @@ Möchten Sie Hilfe beim Einrichten von Office 365? Erwägen [](https://fasttrack
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**Aufgaben/Ereignisse bei der Bereitstellung** <br/> |**Start Datum** <br/> |**Endtermin** <br/> |**Ressourcen** <br/> |**Abhängigkeiten** <br/> |
+|**BereitstellungsAufgaben/Events** <br/> |**Startdatum** <br/> |**Endtermin** <br/> |**Ressourcen** <br/> |**Dependencies** <br/> |
 |**Bestimmen der Bereitstellungsziele** <br/> |||||
 | Mit ihren internen und externen Stakeholdern:<br>  -Übereinstimmung mit dem Bereich und der Zeitachse <br>  -Vereinbaren Sie einen Projekt Verfolgungsmechanismus  <br>  -entwickeln von erfolgskriterien und [](https://fasttrack.microsoft.com/office) / eine[erste einführung in Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventarisieren der aktuellen Umgebung und treffen wichtiger Bereitstellungsentscheidungen** |||||

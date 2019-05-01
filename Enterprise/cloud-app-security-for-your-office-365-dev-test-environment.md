@@ -17,11 +17,11 @@ ms.custom:
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
 ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741261"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490121"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -32,7 +32,7 @@ Office 365 Cloud App Security, bisher bekannt als Office 365 Advanced Security M
 Mit den Anweisungen in diesem Artikel aktivieren und testen Sie Cloud App Security in Ihrem Office 365-Testabonnement.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) , um eine visuelle Darstellung aller Artikel im Office 365 Test Lab Guide-Stapel zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
@@ -63,7 +63,7 @@ In diesem Verfahren demonstrieren Sie, dass das Ändern einer Benutzerrolle vor 
     
 5. Klicken Sie auf der Seite **Benutzer 4** auf **Bearbeiten** für die Zeile **Rollen**.
     
-6. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **globaler Administrator**, **user4@contoso.com** geben Sie die **Alternative e-Mail-Adresse**ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
+6. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **Globaler Administrator**, geben Sie **user4@contoso.com** unter **Alternative E-Mail-Adresse** ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
     
 7. Wählen Sie oben links das App-Startsymbol und dann **Admin** aus.
     
@@ -131,7 +131,7 @@ In diesem Verfahren demonstrieren Sie, wie Cloud App Security Warnungen erstellt
     
 11. Klicken Sie auf der Seite **Benutzer 5** auf **Bearbeiten** für die Zeile **Rollen**.
     
-12. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **angepasster Administrator**, klicken Sie auf **Kennwort-Administrator** und **user5@contoso.com** **Benutzer Verwaltungs Administrator**, geben Sie die **Alternative e-Mail-Adresse**ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
+12. Klicken Sie auf der Seite **Benutzerrollen bearbeiten** auf **Angepasster Administrator**, klicken Sie auf **Kennwortadministrator** und **Benutzerverwaltungsadministrator**, geben Sie **user5@contoso.com** unter **Alternative E-Mail-Adresse** ein, und klicken Sie dann auf **Speichern**. Klicken Sie zweimal auf **Schließen**.
     
 13. Klicken Sie oben rechts auf das Benutzersymbol, und klicken Sie dann auf **Abmelden**. 
     

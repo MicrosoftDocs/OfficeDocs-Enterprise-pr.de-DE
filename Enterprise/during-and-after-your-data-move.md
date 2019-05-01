@@ -13,11 +13,11 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen sind ein Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und zugehörige Daten für Ihren Mandanten in ein neues Datacenter Geo verschiebt. Die Datenübertragung und-Validierung erfolgt im Hintergrund im Vorfeld mit minimalen Auswirkungen für die Benutzer.
 ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647993"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487231"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -33,10 +33,10 @@ Sehen Sie sich das Office 365-Nachrichten Center an, um eine Bestätigung zu erh
 |:-----|:-----|
 |Australien, Neuseeland, Fidschi  <br/> |31. Oktober 2017  <br/> |
 |Japan  <br/> |31. Oktober 2018  <br/> |
-|Indien  <br/> |31. Oktober 2018  <br/> |
+|India  <br/> |31. Oktober 2018  <br/> |
 |Kanada  <br/> |30. Juni 2019  <br/> |
 |Südkorea  <br/> |31. Oktober 2018  <br/> |
-|United Kingdom  <br/> |15. September 2019  <br/> |
+|Vereinigtes Königreich  <br/> |15. September 2019  <br/> |
 |Frankreich  <br/> |15. September 2020  <br/> |
 |Vereinigte Arabische Emirate  <br/> |Angekündigt  <br/> |
 |Südafrika  <br/> |Angekündigt  <br/> |
@@ -131,7 +131,7 @@ Wir verschieben nur Kundendaten für Exchange Online, SharePoint Online und Skyp
  
 [Anfordern der Datenverschiebung](request-your-data-move.md)
     
-[Allgemeine häufig gestellte Fragen zu Datenverschiebung](data-move-faq.md)
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
 [Neues Datencenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

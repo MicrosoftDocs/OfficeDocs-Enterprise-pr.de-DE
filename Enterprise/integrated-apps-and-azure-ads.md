@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: cb2250e3-451e-416f-bf4e-363549652c2a
 description: Erfahren Sie, wie integrierte O365-apps in Azure AD registriert und verwaltet werden.
 ms.openlocfilehash: f4e2061c952a09c4e23aa50bd294b7391e1ca3e6
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001878"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487122"
 ---
 # <a name="integrated-apps-and-azure-ad-for-office-365-administrators"></a>Integrierte Apps und Azure AD für Office 365-Administratoren
 
