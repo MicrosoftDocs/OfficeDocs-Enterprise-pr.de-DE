@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365-Abonnement in Microsoft Azure.'
 ms.openlocfilehash: 9139019cf53b3a43bcc6d8ebcfbad5d4f7f5506f
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741271"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490161"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure
 

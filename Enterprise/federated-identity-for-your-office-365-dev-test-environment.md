@@ -19,11 +19,11 @@ ms.custom:
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung.'
 ms.openlocfilehash: f09aa66fb3183ffa924d6211fb7fa36e7de095eb
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741421"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33487961"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -193,8 +193,7 @@ Diese Befehle erstellen einen DNS-A-Eintrag für den FQDN des Verbunddiensts, de
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-**Abbildung 4: Hinzufügen des Webanwendungs-Proxyservers
-**
+**Abbildung 4: Hinzufügen des Webanwendungs-Proxyservers**
 
 ![Der Webanwendungs-Proxyserver, der der DirSync für die Office 365-Entwicklungs-/Testumgebung hinzugefügt wurde](media/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
   
