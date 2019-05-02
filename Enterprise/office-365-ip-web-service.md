@@ -3,7 +3,7 @@ title: Office 365-IP-Adress- und -URL-Webdienst
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/30/2019
+ms.date: 5/1/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Damit Sie Office 365-Netzwerkdatenverkehr besser erkennen und unterscheiden können, veröffentlicht ein neuer Webdienst Office 365-Endpunkte, sodass Sie Änderungen einfacher bewerten, konfigurieren und mit diesen auf dem Laufenden bleiben können. Dieser neue Webdienst ersetzt die herunterladbaren XML-Dateien, die derzeit verfügbar sind.
-ms.openlocfilehash: 8dedb88c830d51d9d2cf16df783be75fc9d66450
-ms.sourcegitcommit: 89eaafb5e21b80b8dfdc72a93f8588bf9c4512d9
+ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
+ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33497697"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33512681"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adresse- und -URL-Webdienst
 
@@ -180,7 +180,7 @@ Parameter für die Endpunktwebmethode sind:
 - **NoIPv6=<wahr | falsch>** - Stellen Sie dies auf wahr, um IPv6-Adressen von der Ausgabe auszuschließen, wenn Sie zum Beispiel IPv6 nicht in Ihrem Netzwerk verwenden möchten.
 - ** Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** Dieses erforderliche Parameter spezifiziert die Instanz, für die die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: Weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
 
-Wenn Sie die Endpunktwebmethode sehr häufig von derselben Client-ID-Adresse abrufen, erhalten Sie möglicherweise den HTTP-Antwortcode 429 (zu viele Anforderungen). Die meisten Benutzer werden dies nie sehen. Wenn Sie diesen Antwortcode erhalten, sollten Sie vor dem erneuten Aufrufen der Methode 1 Stunde warten. Sie sollten die Endpunktwebmethode nur dann aufrufen, wenn die Versionswebmethode anzeigt, dass eine neue Version verfügbar ist.
+Wenn Sie die Endpunktwebmethode sehr häufig von derselben Client-IP-Adresse abrufen, erhalten Sie möglicherweise den HTTP-Antwortcode 429 (zu viele Anforderungen). Die meisten Benutzer werden dies nie sehen. Wenn Sie diesen Antwortcode erhalten, warten Sie 1 Stunde, bevor Sie Ihre Anforderung wiederholen. Sie sollten die Endpunktwebmethode nur dann aufrufen, wenn die Versionswebmethode anzeigt, dass eine neue Version verfügbar ist.
 
 Das Ergebnis der Endpunktwebmethode ist ein Datensatz-Array, bei dem jeder Datensatz einen Endpunktsatz darstellt. Die Elemente für jeden Datensatz lauten:
 
@@ -227,7 +227,6 @@ Dieser URI ruft alle Endpunkte für die Instanz von Office 365 weltweit für all
    [
     "*.mail.protection.outlook.com"
    ],
-...
 ```
 
 Zusätzliche Endpunktsätze sind in diesem Beispiel nicht enthalten.
@@ -244,9 +243,9 @@ Die Änderungswebmethode gibt die neuesten Updates zurück, die veröffentlicht 
 
 Die Parameter für die Änderungswebmethode sind:
 
-- **Version=<YYYYMMDDNN>** Erforderlicher URL-Routenparameter. Dieser Wert sollte die Version sein, die Sie derzeit implementiert haben. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _YYYYMMDDNN_.
+- **Version=\<YYYYMMDDNN>** Erforderlicher URL-Routenparameter. Dieser Wert sollte die Version sein, die Sie derzeit implementiert haben. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _YYYYMMDDNN_, wobei _NN_ Nullen sind. Der Webdienst erfordert, dass dieser Parameter genau 10 Ziffern enthält.
 
-Die Änderungswebmethode ist auf die gleiche Weise beschränkt wie die Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, sollten Sie eine Stunde warten, bevor Sie die Methode erneut aufrufen.
+Für die Änderungswebmethode sind die Gebühren auf dieselbe Art und Weise beschränkt wie bei der Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, warten Sie 1 Stunde, bevor Sie Ihre Anforderung wiederholen.
 
 Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Datensatz eine Änderung in einer speziellen Version des Endpunkts darstellt. Die Elemente für jeden Datensatz lauten:
 
@@ -255,7 +254,7 @@ Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Dat
 - disposition - Das kann sowohl Ändern, Hinzufügen oder Entfernen sein und beschreibt, was die Veränderung im Endpunktgruppendatensatz bewirkt hat.
 - Impact – Nicht alle Änderungen sind für jede Umgebung gleich wichtig. Hier werden die erwarteten Auswirkungen auf eine Netzwerkumkreisumgebung in einem Unternehmen als Ergebnis dieser Änderung beschrieben. Dieses Attribut ist nur in Änderungsdatensätzen der Version 2018112800 und höher enthalten. Optionen für die Auswirkungen sind:
   - AddedIp – Zu Office 365 wurde eine IP-Adresse hinzugefügt, die in diesem Dienst in Kürze live gehen wird. Dies stellt eine Änderung dar, die Sie in einer Firewall oder in einem anderen Netzwerkumkreisgerät der Ebene 3 vornehmen müssen. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
-  - AddedUrl – Zu Office 365 wurde eine URL hinzugefügt, die in diesem Dienst in Kürze live gehen wird. Dies stellt eine Änderung dar, die Sie auf einem Proxyserver oder in einem Netzwerkumkreisgerät vornehmen müssen, das URLs analysiert. Wenn Sie diese URL nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
+  - AddedUrl - Ein URL wurde Office 365 hinzugefügt und wird in Kürze im Dienst live sein. Dies stellt eine Änderung zur Analyse von Netzwerkumkreisgeräten dar, die Sie auf einem Proxyserver oder URL vornehmen müssen. Wenn Sie dies nicht hinzufügen, bevor wir starten, werden Sie möglicherweise einen Ausfall erleben.
   - AddedIpAndUrl – Sowohl eine IP-Adresse als auch eine URL wurden hinzugefügt. Dies stellt eine Änderung, die Sie auf einem Firewallgerät der Ebene 3, auf einem Proxyserver oder auf einem Gerät vornehmen müssen, das URLs analysiert. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
   - RemovedIpOrUrl – Mindestens eine IP-Adresse oder URL wurde aus Office 365 entfernt. Sie sollten die Netzwerkendpunkte von Ihren Umkreisgeräten entfernen, hierfür gibt es jedoch keinen Stichtag.
   - ChangedIsExpressRoute – Das Attribut „ExpressRoute Support“ wurde geändert. Wenn Sie ExpressRoute verwenden, müssen Sie je nach Konfiguration möglicherweise entsprechende Maßnahmen ergreifen.
@@ -263,8 +262,8 @@ Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Dat
   - RemovedDuplicateIpOrUrl – Es wurde eine doppelte IP-Adresse oder URL entfernt, diese ist aber immer noch auf Office 365 veröffentlicht. Im Allgemeinen ist keine Aktion erforderlich.
   - OtherNonPriorityChanges – Es wurde etwas weniger wichtiges als all die anderen Optionen geändert, z. B. ein Notizfeld.
 - version – die Version des veröffentlichten Endpunktsatzes, in dem die Änderung eingeführt wurde. Versionsnummern werden im Format _JJJJMMTTNN_ angegeben, wobei NN eine natürliche Zahl ist, die erhöht wird, wenn mehrere Versionen an einem einzigen Tag veröffentlicht werden müssen.
-- previous – eine Unterstruktur, die vorherige Werte geänderter Elemente auf dem Endpunktsatz angibt. Diese ist nicht für neu hinzugefügte Endpunktsätze enthalten. Enthält tcpPorts, udpPorts, ExpressRoute, Kategorie, erforderlich, Notizen.
-- current - Eine Unterstruktur, welche aktualisierte Werte von Änderungselementen auf dem Endpunktsatz angibt. Enthält_tcpPorts_, _udpPorts_, _ExpressRoute_, _Kategorie_, _Erforderlich_ und _Notizen_.
+- previous - Eine Unterstruktur, welche vorherige Werte von Änderungselementen auf dem Endpunktsatz angibt. Dies ist bei neu hinzugefügten Endpunktsätzen nicht enthalten. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
+- current - Eine Unterstruktur, welche aktualisierte Werte von Änderungselementen auf dem Endpunktsatz angibt. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
 - add – eine Unterstruktur, die Elemente angibt, die zu Endpunktsatzsammlungen hinzugefügt werden sollen. Wird ausgelassen, wenn keine Ergänzungen vorhanden sind.
   - effectiveDate – definiert die Daten, wann die Ergänzungen live im Dienst sind.
   - ips - Elemente, die dem Array _ips_ hinzugefügt werden sollen.
@@ -311,7 +310,6 @@ Dies fordert alle vorherigen Änderungen an der Dienstinstanz von Office 365 wel
    {
     "ips":
      [
-...
 ```
 
 Anfrage-URI – Beispiel 2: [https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/changes/worldwide/2018062700?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
