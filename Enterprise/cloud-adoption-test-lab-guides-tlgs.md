@@ -18,11 +18,11 @@ ms.custom:
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365 einzurichten.'
 ms.openlocfilehash: 3531a3185cd52044ee59391d676fff1a7f4a5f64
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741171"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33490231"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testen von Office 365 mit Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
@@ -82,7 +82,7 @@ Verwenden Sie die folgenden Artikel für Ihre Office 365-Entwicklungs-/Testumgeb
     
     Veranschaulichen Sie, wie der Azure Information Protection-Client zum Klassifizieren von Dokumenten mit verschiedenen Sicherheitsstufen verwendet werden kann.
     
-- [Isolierte SharePoint Online-Teamwebsite in Ihrer Entwicklungs-/Testumgebung](isolated-sharepoint-online-team-site-dev-test-environment.md)
+- [Isolierte SharePoint Online-Teamwebsite in einer Entwicklungs-/Testumgebung](isolated-sharepoint-online-team-site-dev-test-environment.md)
     
     Veranschaulichen, wie eine SharePoint Online-Teamwebsite erstellt wird, die aufgrund von vertraulichen oder streng vertraulichen Ressourcen vom Rest der Organisation isoliert ist.
     
@@ -103,7 +103,7 @@ Unter Verwendung der folgenden Artikel können Sie eine standortübergreifende E
 
 In den folgenden Themen finden Sie SharePoint Server 2016-Entwicklungs-/Testumgebungen, die Sie in Azure-Infrastrukturdiensten erstellen können:
   
-- [Entwicklungs-/Testumgebung von SharePoint Server 2016 in Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
+- [SharePoint Server 2016-Entwicklungs-/Testumgebung in Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-dev-test-environment-in-azure)
     
     Erstellen einer SharePoint Server 2016-Farm mit einem einzigen Server in Azure-Infrastrukturdiensten.
 
