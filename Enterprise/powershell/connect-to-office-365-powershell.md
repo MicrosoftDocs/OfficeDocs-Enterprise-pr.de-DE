@@ -14,29 +14,29 @@ ms.custom:
 - O365ITProTrain
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
-description: 'Zusammenfassung: Verbinden Sie mit Office 365-Organisation mithilfe von PowerShell für Office 365 Admin Center Aufgaben über die Befehlszeile ausführen.'
-ms.openlocfilehash: ae0449611703759105d92a706cf78ba4a58ad4b2
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Zusammenfassung: Stellen Sie mithilfe von Office 365 PowerShell eine Verbindung mit Ihrer Office 365-Organisation her, um Aufgaben des Verwaltungs Centers über die Befehlszeile auszuführen.'
+ms.openlocfilehash: 4c70f067558773ce7e2a6e27bab78f5c64965872
+ms.sourcegitcommit: 0516a15c72f4bc8423a1d8112fd4d3e5f69896c8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897198"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33639776"
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
- **Zusammenfassung:** Verbinden Sie mit Office 365-Organisation mit Office 365 PowerShell Verwaltungsaufgaben über die Befehlszeile ausführen.
+ **Zusammenfassung:** Stellen Sie mithilfe von Office 365 PowerShell eine Verbindung mit Ihrer Office 365-Organisation her, um Verwaltungsaufgaben über die Befehlszeile auszuführen.
   
-Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehlszeile zu verwalten. Herstellen einer Verbindung mit Office 365 PowerShell ist ein einfacher Vorgang, in dem Sie die erforderliche Software installieren und dann verbinden mit Office 365-Organisation. 
+Mit Office 365 PowerShell können Sie Ihre Office 365-Einstellungen über die Befehlszeile verwalten. Das Herstellen einer Verbindung mit Office 365 PowerShell ist ein einfacher Vorgang, bei dem Sie die erforderliche Software installieren und dann eine Verbindung mit Ihrer Office 365-Organisation herstellen. 
 
-Es gibt zwei Versionen von PowerShell-Modul, mit denen Sie eine Verbindung mit Office 365 sowie zur Verwaltung von Benutzerkonten, Gruppen und Lizenzen:
+Es gibt zwei Versionen des PowerShell-Moduls, die Sie zum Herstellen einer Verbindung mit Office 365 und zum Verwalten von Benutzerkonten, Gruppen und Lizenzen verwenden:
 
-- Azure Active Directory-PowerShell für Diagramm (Cmdlets include **AzureAD** in ihrem Namen) 
-- Microsoft Azure Active Directory-Modul für Windows PowerShell (Cmdlets include **MSol** in ihrem Namen) 
+- Azure Active Directory PowerShell für Graph (Cmdlets schließen **AzureAD** in Ihrem Namen ein) 
+- Microsoft Azure Active Directory-Modul für Windows PowerShell (Cmdlets schließen **MSol** in Ihrem Namen ein) 
 
-Ab dem Datum des Artikels ersetzen Azure Active Directory PowerShell Graph-Modul nicht vollständig in die Microsoft Azure Active Directory-Modul für Windows PowerShell-Modul für Benutzer-, Gruppen- und Lizenz Verwaltung-Cmdlets die Funktionalität . In vielen Fällen müssen Sie beide Versionen verwenden. Sie können beide Versionen sicher auf demselben Computer installieren.
+Ab dem Datum dieses Artikels ersetzt das Modul Azure Active Directory PowerShell für Graph nicht vollständig die Funktionalität in den Cmdlets des Microsoft Azure Active Directory-Moduls für Windows PowerShell-Modul für Benutzer-, Gruppen-und Lizenzverwaltung. . In vielen Fällen müssen beide Versionen verwendet werden. Beide Versionen können problemlos auf demselben Computer installiert werden.
 
 > [!TIP]
-> **Neue PowerShell?** Finden Sie ein [video Overview of PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx), bereitgestellt von LinkedIn Learning. 
+> **Neu bei PowerShell?** Sehen Sie sich eine [Video Übersicht über PowerShell](https://support.office.com/en-us/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx)an, die Ihnen von LinkedIn Learning präsentiert wird. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -44,24 +44,24 @@ Ab dem Datum des Artikels ersetzen Azure Active Directory PowerShell Graph-Modul
     
 - Sie können folgende Versionen von Windows verwenden:
     
-  - 10 Windows, Windows 8.1, Windows 8 oder Windows 7 Servicepack 1 (SP1) 
+  - Windows 10, Windows 8,1, Windows 8 oder Windows 7 Service Pack 1 (SP1) 
     
-  - WindowsServer 2019, WindowsServer 2016, Windows Server 2012 R2, WindowsServer 2012 oder Windows Server 2008 R2 SP1
+  - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 oder Windows Server 2008 R2 SP1
     
     > [!NOTE]
-    >Verwenden Sie eine 64-Bit-Version von Windows. Unterstützung für 32-Bit-Version, die Microsoft Azure Active Directory-Modul für Windows PowerShell wurde im Oktober des 2014 eingestellt.
+    >Verwenden Sie eine 64-Bit-Version von Windows. Unterstützung für die 32-Bit-Version das Microsoft Azure Active Directory-Modul für Windows PowerShell wurde im Oktober 2014 eingestellt.
     
--  Diese Verfahren sind für Benutzer vorgesehen, die ein Office 365-Administratorrolle angehören. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+-  Diese Verfahren sind für Benutzer gedacht, die Mitglieder einer Office 365-Administratorrolle sind. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://go.microsoft.com/fwlink/p/?LinkId=532367).
 
 
-## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Kontaktaufnahme mit Azure Active Directory PowerShell Graph-Modul
+## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Herstellen einer Verbindung mit dem Azure Active Directory PowerShell für Graph-Modul
 
-Befehle im Modul [Azure Active Directory PowerShell für Diagramm](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) enthalten **AzureAD** in ihrem Cmdlet-Namen.
+Befehle im [Azure Active Directory PowerShell für Graph](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) -Modul haben **AzureAD** in Ihrem Cmdlet-Namen.
 
-Verwenden Sie für Prozeduren, die die neuen in Azure Active Directory PowerShell-Cmdlets für Diagramm Modul erforderlich ist diese Schritte zum Installieren des Moduls und Verbinden mit Office 365-Abonnements.
+Verfahren, für die die neuen Cmdlets im Azure Active Directory PowerShell für Graph-Modul erforderlich sind, finden Sie in den folgenden Schritten, um das Modul zu installieren und eine Verbindung mit Ihrem Office 365-Abonnement herzustellen.
 
 >[!Note]
->Finden Sie Informationen über die Unterstützung für verschiedene Versionen von Microsoft Windows [Azure Active Directory-PowerShell-Modul Diagramm](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
+>Informationen zur Unterstützung verschiedener Versionen von Microsoft Windows finden Sie unter [Azure Active Directory PowerShell für Graph-Modul](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory) .
 >
 
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
@@ -78,87 +78,87 @@ Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal,
 
 Falls Sie gefragt werden, ob Sie ein Modul aus einem nicht vertrauenswürdigen Repository installieren möchten: Geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
 
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Herstellen einer Verbindung mit Azure AD für Ihr Office 365-Abonnement
 
-Zum Verbinden von Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)* führen Sie einen der folgenden Befehle aus einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten).
+Wenn Sie eine Verbindung mit Azure AD für Ihr Office 365-Abonnement mit einem Kontonamen und Kennwort oder mit mehrstufiger *Authentifizierung (Multi-Factor Authentication, MFA)* herstellen möchten, führen Sie einen dieser Befehle an einer Windows PowerShell-Eingabeaufforderungen aus (er muss nicht erhöht werden).
 
 |||
 |:-------|:-----|
-| **Office 365-cloud** | **Befehl** |
-| Office 365 weltweit (+ GCC) | `Connect-AzureAD` |
-| Office 365, die vom Dienst 21 Vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
+| **Office 365 Cloud** | **Befehl** |
+| Office 365 Worldwide (+ gcc) | `Connect-AzureAD` |
+| Office 365, betrieben von 21 vianet | `Connect-AzureAD -AzureEnvironmentName AzureChinaCloud` |
 | Office 365 Deutschland | `Connect-AzureAD -AzureEnvironmentName AzureGermanyCloud` |
-| Office 365 US-Regierung Verteidigungsministeriums oder Office 365 US-Regierung GCC hoch | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
+| Office 365 u.s. Government DoD und Office 365 u.s. Government gcc High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-Klicken Sie im Dialogfeld **Anmeldung bei Ihrem Konto** Geben Sie Ihren Office 365 Arbeit oder Schule Benutzernamen und Ihr Kennwort ein, und klicken Sie dann auf **OK**.
+Geben Sie im Dialogfeld in **Ihr Konto anmelden** den Benutzernamen und das Kennwort Ihres Office 365-Kontos ein, und klicken Sie dann auf **OK**.
 
-Wenn Sie mit mehrstufiger Authentifizierung das nutzen, befolgen Sie die Anweisungen in den Dialogfeldern zusätzliche Weitere Authentifizierungsinformationen, beispielsweise einen Überprüfungscode bereitstellen.
+Wenn Sie MFA verwenden, befolgen Sie die Anweisungen in den zusätzlichen Dialogfeldern, um weitere Authentifizierungsinformationen wie einen Überprüfungscode bereitzustellen.
 
 
-Nach dem anschließen, können Sie die neuen Cmdlets für die [Azure Active Directory PowerShell Graph-Modul](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)verwenden.
+Nachdem Sie eine Verbindung hergestellt haben, können Sie die neuen Cmdlets für das [Azure Active Directory PowerShell für Graph-Modul](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)verwenden.
   
 
-## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Kontaktaufnahme mit dem Microsoft Azure Active Directory-Moduls für Windows PowerShell
+## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Herstellen einer Verbindung mit dem Microsoft Azure Active Directory-Modul für Windows PowerShell
 
-Befehle in der Microsoft Azure Active Directory-Modul für Windows PowerShell enthalten **Msol** in ihrem Cmdlet-Namen.
+Befehle im Microsoft Azure Active Directory-Modul für Windows PowerShell haben **MSOL** in Ihrem Cmdlet-Namen.
     
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
 
 Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal, wenn Sie eine Verbindung herstellen. Allerdings müssen Sie wahrscheinlich in regelmäßigen Abständen neuere Versionen der Software installieren.
   
-1.  Installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmeldeassistenten: [Microsoft Online Services - Anmeldeassistenten für IT-Experten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmelde-Assistenten: [Microsoft Online Services-Anmelde-Assistent für IT-Experten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
-2. Installieren Sie die Microsoft Azure Active Directory-Modul für Windows PowerShell mit der folgenden Schritte aus:
+2. Installieren Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell mit den folgenden Schritten:
     
   - Öffnen Sie eine Windows PowerShell-Eingabeaufforderung mit erhöhten Rechten (d. h., führen Sie Windows PowerShell als Administrator aus).
-  - Führen Sie den Befehl **MSOnline Modul installieren** .
-  - Wenn aufgefordert, den NuGet-Anbieter installieren, geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
-  - Wenn Sie aufgefordert werden, installieren Sie das Modul aus PSGallery, geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
+  - Führen Sie den **MSOnline-Befehl install-module** aus.
+  - Wenn Sie aufgefordert werden, den NuGet-Anbieter zu installieren, geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
+  - Wenn Sie aufgefordert werden, das Modul von PSGallery zu installieren, geben Sie **Y** ein, und drücken Sie die EINGABETASTE.
     
-### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Verbinden Sie mit Azure AD für Ihre Office 365-Abonnements
+### <a name="step-2-connect-to-azure-ad-for-your-office-365-subscription"></a>Schritt 2: Herstellen einer Verbindung mit Azure AD für Ihr Office 365-Abonnement
 
-Zum Verbinden von Azure AD für Ihr Office 365-Abonnement mit einen Kontonamen und ein Kennwort oder mit *Multi-Factor Authentication (mehrstufiger Authentifizierung das)* führen Sie einen der folgenden Befehle aus einer Windows PowerShell-Eingabeaufforderung (es ist nicht erforderlich, werden mit erhöhten Rechten).
+Wenn Sie eine Verbindung mit Azure AD für Ihr Office 365-Abonnement mit einem Kontonamen und Kennwort oder mit mehrstufiger *Authentifizierung (Multi-Factor Authentication, MFA)* herstellen möchten, führen Sie einen dieser Befehle an einer Windows PowerShell-Eingabeaufforderungen aus (er muss nicht erhöht werden).
 
 |||
 |:-------|:-----|
-| **Office 365-cloud** | **Befehl** |
-| Office 365 weltweit (+ GCC) | `Connect-MsolService` |
-| Office 365, die vom Dienst 21 Vianet | `Connect-MsolService -AzureEnvironmentName AzureChinaCloud` |
-| Office 365 Deutschland | `Connect-MsolService -AzureEnvironmentName AzureGermanyCloud` |
-| Office 365 US-Regierung Verteidigungsministeriums oder Office 365 US-Regierung GCC hoch | `Connect-MsolService -AzureEnvironmentName USGovernment` |
+| **Office 365 Cloud** | **Befehl** |
+| Office 365 Worldwide (+ gcc) | `Connect-MsolService` |
+| Office 365, betrieben von 21 vianet | `Connect-MsolService -AzureEnvironment AzureChinaCloud` |
+| Office 365 Deutschland | `Connect-MsolService -AzureEnvironment AzureGermanyCloud` |
+| Office 365 u.s. Government DoD und Office 365 u.s. Government gcc High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-Klicken Sie im Dialogfeld **Anmeldung bei Ihrem Konto** Geben Sie Ihren Office 365 Arbeit oder Schule Benutzernamen und Ihr Kennwort ein, und klicken Sie dann auf **OK**.
+Geben Sie im Dialogfeld in **Ihr Konto anmelden** den Benutzernamen und das Kennwort Ihres Office 365-Kontos ein, und klicken Sie dann auf **OK**.
 
-Wenn Sie mit mehrstufiger Authentifizierung das nutzen, befolgen Sie die Anweisungen in den Dialogfeldern zusätzliche Weitere Authentifizierungsinformationen, beispielsweise einen Überprüfungscode bereitstellen.
+Wenn Sie MFA verwenden, befolgen Sie die Anweisungen in den zusätzlichen Dialogfeldern, um weitere Authentifizierungsinformationen wie einen Überprüfungscode bereitzustellen.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
-Wenn Sie keine Fehler erhalten, verbunden Sie erfolgreich. Ein schneller Test ein Office 365-Cmdlet ausgeführt wird – beispielsweise **Get-MsolUser** – und die Ergebnisse anzuzeigen.
+Wenn Sie keine Fehlermeldungen erhalten, wurde die Verbindung erfolgreich hergestellt. Ein kurzer Test besteht darin, ein Office 365-Cmdlet auszuführen, beispielsweise **Get-MsolUser** , und die Ergebnisse anzuzeigen.
   
 Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
   
-- **Ein allgemeines Problem ist ein ungültiges Kennwort**. Führen Sie Schritt2 erneut aus. und achten Sie besonders auf den Benutzernamen und das Kennwort, die Sie eingeben.
+- **Ein häufiges Problem ist ein falsches Kennwort**. Führen Sie Schritt 2 erneut aus. und achten Sie auf den Benutzernamen und das Kennwort, die Sie eingeben.
     
-- * *Der Microsoft Azure Active Directory-Modul für Windows PowerShell erfordert, dass Microsoft .NET Framework 3.5.* X * Feature wird auf Ihrem Computer ** aktiviert. Ist es wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert ist (beispielsweise 4 oder 4.5.* X *), aber rückwärts Kompatibilität mit älteren Versionen von .NET Framework aktiviert oder deaktiviert werden kann. Weitere Informationen finden Sie unter den folgenden Themen:
+- * *Das Microsoft Azure Active Directory-Modul für Windows PowerShell erfordert, dass Microsoft .NET Framework 3,5.* x * Feature ist auf Ihrem Computer aktiviert * *. Es ist wahrscheinlich, dass auf Ihrem Computer eine neuere Version installiert ist (beispielsweise 4 oder 4,5.* x *), aber Abwärtskompatibilität mit älteren Versionen von .NET Framework kann aktiviert oder deaktiviert werden. Weitere Informationen hierzu finden Sie in den folgenden Themen:
     
-  - Windows Server 2012 oder Windows Server 2012 R2 finden Sie unter [.NET Framework 3.5 mithilfe der Rollen hinzufügen und den Assistenten Features aktivieren](https://go.microsoft.com/fwlink/p/?LinkId=532368)
+  - Informationen zu Windows Server 2012 oder Windows Server 2012 R2 finden Sie unter [Aktivieren von .NET Framework 3,5 mithilfe des Assistenten zum Hinzufügen von Rollen und Features](https://go.microsoft.com/fwlink/p/?LinkId=532368)
     
-  - Windows 7 oder Windows Server 2008 R2 finden Sie unter [der Azure Active Directory Modul für Windows PowerShell kann nicht geöffnet werden](https://go.microsoft.com/fwlink/p/?LinkId=532370)
+  - Unter Windows 7 oder Windows Server 2008 R2 finden Sie Informationen zum [Öffnen des Azure Active Directory-Moduls für Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370) .
 
-  - 10 für Windows, Windows 8.1 und Windows 8 finden Sie unter [Installieren von .NET Framework 3.5 auf 10 Windows, Windows 8.1-und Windows 8](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10)
+  - Informationen zu Windows 10, Windows 8,1 und Windows 8 finden Sie unter [Installieren von .NET Framework 3,5 unter Windows 10, Windows 8,1 und Windows 8](https://docs.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-10) .
 
   
-- **Ihrer Version von der Microsoft Azure Active Directory-Modul für Windows PowerShell möglicherweise nicht mehr aktuell.** Führen Sie den folgenden Befehl in Office 365 PowerShell oder der Microsoft Azure Active Directory-Modul für Windows PowerShell, um zu überprüfen:
+- **Möglicherweise ist Ihre Version des Microsoft Azure Active Directory-Moduls für Windows PowerShell veraltet.** Führen Sie den folgenden Befehl in Office 365 PowerShell oder das Microsoft Azure Active Directory-Modul für Windows PowerShell aus:
     
   ```
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Wenn die Versionsnummer zurückgegeben niedriger als der Wert 1.0.8070.2 ist, deinstallieren Sie die Microsoft Azure Active Directory-Modul für Windows PowerShell, und installieren Sie die neueste Version über den Link in Schritt 1.
+    Wenn die zurückgegebene Versionsnummer niedriger als der Wert 1.0.8070.2 ist, deinstallieren Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell, und installieren Sie die neueste Version über den Link in Schritt 1.
     
-- **Wenn Sie eine Verbindung Fehlermeldung angezeigt wird, finden Sie unter in diesem Thema:** ["Connect-MsolService: Ausnahme vom Typ ausgelöst wurde" Fehler](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Wenn ein Verbindungsfehler angezeigt wird, finden Sie weitere Informationen unter diesem Thema:** [Fehler "Connect-MsolService: Exception of type"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
 
 ## <a name="see-also"></a>Siehe auch
@@ -167,5 +167,5 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
 - [Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
 - [Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster](connect-to-all-office-365-services-in-a-single-windows-powershell-window.md)
 - [Get-Credential](https://go.microsoft.com/fwlink/p/?LinkId=389618)
-- [Verbinden-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
+- [Connect-MsolService](https://go.microsoft.com/fwlink/p/?LinkId=532375)
 
