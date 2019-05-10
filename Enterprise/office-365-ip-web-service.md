@@ -3,7 +3,7 @@ title: Office 365-IP-Adress- und -URL-Webdienst
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/1/2019
+ms.date: 5/7/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Damit Sie Office 365-Netzwerkdatenverkehr besser erkennen und unterscheiden können, veröffentlicht ein neuer Webdienst Office 365-Endpunkte, sodass Sie Änderungen einfacher bewerten, konfigurieren und mit diesen auf dem Laufenden bleiben können. Dieser neue Webdienst ersetzt die herunterladbaren XML-Dateien, die derzeit verfügbar sind.
-ms.openlocfilehash: af1ff6f222d4d9563116c4173ebeca9ca9f4470d
-ms.sourcegitcommit: 3b5597cab55bc67890fd6c760102efce513be87b
+ms.openlocfilehash: c87f297c6bc1fc4cf317db60d3fd2ef2e4b8443b
+ms.sourcegitcommit: a35d23929bfbfd956ee853b5e828b36e2978bf36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33512681"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "33655789"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adresse- und -URL-Webdienst
 
@@ -122,7 +122,6 @@ Dieser URI gibt die aktuelle Version der angegebenen Instanz des Office 365-Dien
  "instance": "Worldwide",
  "latest": "2018063000"
 }
-
 ```
 
 Anfrage-URI – Beispiel 3: [https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
@@ -166,7 +165,6 @@ Dieser URI zeigt einen RSS-Feed der veröffentlichten Versionen, die Links zu de
 <link>https://endpoints.office.com/changes/Worldwide/2018080200?singleVersion&clientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7</link> <description>Version 2018080200 includes 2 changes. IPs: 2 added and 0 removed.</description>
 <pubDate>Thu, 02 Aug 2018 00:00:00 Z</pubDate>
 </item>
-...
 ```
 
 ## <a name="endpoints-web-method"></a>Endpunktwebmethode
@@ -178,7 +176,7 @@ Parameter für die Endpunktwebmethode sind:
 - **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - Eine durch Trennzeichen getrennte Liste von Dienstbereichen. Gültige Elemente sind_Common_, _Exchange_, _SharePoint_ und _Skype_. Da Common-Dienstbereich-Elemente die Voraussetzung für alle anderen Dienstbereiche sind, wir der Webdienst sie mit einschließen. Wenn Sie diesen Parameter nicht miteinschließen, werden alle Dienstbereiche zurückgegeben.
 - **TenantName=<tenant_name>** - Ihr Office 365-Mandantenname. Der Webdienst übernimmt Ihren angegebenen Namen und fügt ihn in URL-Teile ein, die den Mandantennamen enthalten. Wenn Sie keinen Mandantennamen angeben, haben diese URL-Teile das Platzhalterzeichen (\*).
 - **NoIPv6=<wahr | falsch>** - Stellen Sie dies auf wahr, um IPv6-Adressen von der Ausgabe auszuschließen, wenn Sie zum Beispiel IPv6 nicht in Ihrem Netzwerk verwenden möchten.
-- ** Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** Dieses erforderliche Parameter spezifiziert die Instanz, für die die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: Weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
+- ** Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** Dieses erforderliche Parameter spezifiziert die Instanz, für die die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: _Weltweit_, _China_, _Deutschland_, _USGovDoD_ und _USGovGCCHigh_.
 
 Wenn Sie die Endpunktwebmethode sehr häufig von derselben Client-IP-Adresse abrufen, erhalten Sie möglicherweise den HTTP-Antwortcode 429 (zu viele Anforderungen). Die meisten Benutzer werden dies nie sehen. Wenn Sie diesen Antwortcode erhalten, warten Sie 1 Stunde, bevor Sie Ihre Anforderung wiederholen. Sie sollten die Endpunktwebmethode nur dann aufrufen, wenn die Versionswebmethode anzeigt, dass eine neue Version verfügbar ist.
 
@@ -243,7 +241,7 @@ Die Änderungswebmethode gibt die neuesten Updates zurück, die veröffentlicht 
 
 Die Parameter für die Änderungswebmethode sind:
 
-- **Version=\<YYYYMMDDNN>** Erforderlicher URL-Routenparameter. Dieser Wert sollte die Version sein, die Sie derzeit implementiert haben. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _YYYYMMDDNN_, wobei _NN_ Nullen sind. Der Webdienst erfordert, dass dieser Parameter genau 10 Ziffern enthält.
+- **Version=\<YYYYMMDDNN>** Erforderlicher URL-Routenparameter. Dieser Wert sollte die Version sein, die Sie derzeit implementiert haben. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden müssen. Dabei steht _00_ für das erste Update an einen bestimmten Tag. Der Webdienst erfordert, dass der _Versions_-Parameter genau 10 Ziffern enthält.
 
 Für die Änderungswebmethode sind die Gebühren auf dieselbe Art und Weise beschränkt wie bei der Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, warten Sie 1 Stunde, bevor Sie Ihre Anforderung wiederholen.
 
@@ -252,7 +250,7 @@ Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Dat
 - id – die unveränderliche ID des Änderungsdatensatzes.
 - endpointSetId - Die ID des Endpunktgruppendatensatzes, der geändert wird. 
 - disposition - Das kann sowohl Ändern, Hinzufügen oder Entfernen sein und beschreibt, was die Veränderung im Endpunktgruppendatensatz bewirkt hat.
-- Impact – Nicht alle Änderungen sind für jede Umgebung gleich wichtig. Hier werden die erwarteten Auswirkungen auf eine Netzwerkumkreisumgebung in einem Unternehmen als Ergebnis dieser Änderung beschrieben. Dieses Attribut ist nur in Änderungsdatensätzen der Version 2018112800 und höher enthalten. Optionen für die Auswirkungen sind:
+- Impact – Nicht alle Änderungen sind für jede Umgebung gleich wichtig. Hier werden die erwarteten Auswirkungen auf eine Netzwerkumkreisumgebung in einem Unternehmen als Ergebnis dieser Änderung beschrieben. Dieses Attribut ist nur in Änderungsdatensätzen der Version **2018112800** und höher enthalten. Optionen für die Auswirkungen sind:
   - AddedIp – Zu Office 365 wurde eine IP-Adresse hinzugefügt, die in diesem Dienst in Kürze live gehen wird. Dies stellt eine Änderung dar, die Sie in einer Firewall oder in einem anderen Netzwerkumkreisgerät der Ebene 3 vornehmen müssen. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
   - AddedUrl - Ein URL wurde Office 365 hinzugefügt und wird in Kürze im Dienst live sein. Dies stellt eine Änderung zur Analyse von Netzwerkumkreisgeräten dar, die Sie auf einem Proxyserver oder URL vornehmen müssen. Wenn Sie dies nicht hinzufügen, bevor wir starten, werden Sie möglicherweise einen Ausfall erleben.
   - AddedIpAndUrl – Sowohl eine IP-Adresse als auch eine URL wurden hinzugefügt. Dies stellt eine Änderung, die Sie auf einem Firewallgerät der Ebene 3, auf einem Proxyserver oder auf einem Gerät vornehmen müssen, das URLs analysiert. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
@@ -508,11 +506,8 @@ Um dieses Modul zu verwenden, kopieren Sie einfach die Moduldatei [O365EndpointF
 Nachdem Sie das Modul importiert haben, werden Sie den REST-Dienst aufrufen können. Dies wird die URL als Sammlung zurückgeben, die Sie jetzt direkt in PowerShell verarbeiten können. Sie müssen den Namen Ihres Office 365-Mandanten wie im nachfolgend beschriebenen Befehl eingeben:
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant]
+    Invoke-O365EndpointService -tenantName [Name of your tenant]
 ```
-
-> [!NOTE]
-> Das Cmdlet wird wie folgt geschrieben **Invoke-O365EnpointService**, ohne den Buchstaben _d_. Dies ist kein Tippfehler.
 
 #### <a name="parameters"></a>Parameter
 
@@ -525,13 +520,13 @@ Nachdem Sie das Modul importiert haben, werden Sie den REST-Dienst aufrufen kön
 Die vollständige Liste aller URLs einschließlich IPv6-Adressen zurückgeben.
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
 ```
 
 Nur die IP-Adressen für Exchange-Onlinedienst zurückgeben
 
 ```powershell
-    Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
+    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
 ```
 
 ### <a name="exporting-a-proxy-pac-file"></a>Eine Proxy-PAC-Datei exportieren
@@ -539,7 +534,7 @@ Nur die IP-Adressen für Exchange-Onlinedienst zurückgeben
 Dieses Modul können Sie verwenden, um eine Proxy-PAC-Datei zu erstellen. In diesem Beispiel erhalten Sie zuerst die Endpunkte und filtern das Ergebnis, um die URLs auszuwählen. Um exportiert werden zu können, werden diese URLs weitergeleitet.  
 
 ```powershell
- Invoke-O365EnpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
+ Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
