@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 06/22/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: 1ea4d4ec-af89-496f-9678-701867f5a6fc
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Erstellen von Berichten, die Sie im Office 365 Admin Center nicht erzeugen können.'
-ms.openlocfilehash: 381a07d48db777a335e24baa32a65e992a78dfa2
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: 541811c81da3085c1f90140e6f1e81b79f985b41
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "20017421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071111"
 ---
 # <a name="use-windows-powershell-to-create-reports-in-office-365"></a>Verwenden der Windows PowerShell zum Erstellen von Berichten in Office 365
 

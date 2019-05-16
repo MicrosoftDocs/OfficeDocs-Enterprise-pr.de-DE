@@ -3,17 +3,17 @@ title: Hinzufügen oder Entfernen eines Geo-Administrators
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 description: So fügen Sie eine Geo-Administrator in Office 365 Multi-Geo hinzu oder entfernen ihn.
-ms.openlocfilehash: 54850252d133e3e26b02cabe3ead0900287e832c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 767dcf5284e93b9a2e908d4ec837f034b29cb6db
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490911"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068471"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-office-365-multi-geo"></a>Fügen Sie einen Geo-Administrator in Office 365 Multi-Geo hinzu oder entfernen Sie ihn.
 
@@ -59,4 +59,5 @@ Führen Sie `Remove-SPOGeoAdministrator -ObjectID <ObjectID>` aus, um eine Grupp
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-[Legen Sie einen Alias ("MailNickName") für eine Sicherheitsgruppe fest](https://docs.microsoft.com/de-DE/powershell/module/azuread/set-azureadgroup)
+
+  [Legen Sie einen Alias ("MailNickName") für eine Sicherheitsgruppe fest](https://docs.microsoft.com/de-DE/powershell/module/azuread/set-azureadgroup)

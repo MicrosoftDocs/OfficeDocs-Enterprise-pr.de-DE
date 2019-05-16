@@ -3,19 +3,19 @@ title: Löschen eines Satellitenstandorts
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen zum Löschen eines Satellitenstandorts bei Multi-Geo in Office 365.
-ms.openlocfilehash: 2c9c69abeb0bc13c85ec05207336c246f350383d
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6e9de4fe90f94cafec92b6ff48277711f4146bfb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067951"
 ---
 # <a name="delete-a-satellite-location-in-office-365-multi-geo"></a>Löschen eines Satellitenstandorts bei Multi-Geo in Office 365
 

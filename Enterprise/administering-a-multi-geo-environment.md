@@ -3,19 +3,19 @@ title: Verwalten einer Multi-Geo-Umgebung
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 7a9865424a18a681dcdbf89b607ab2ae73f44098
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4f219b81882ce22faa5bec1b885d1a38629c18db
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068432"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 

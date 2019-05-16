@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Priority
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: c172275e43b4703172f58287c086562da352f5e9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bc1bb822bc0baf376c96c95ff637b93f131605e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487256"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067661"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "33487256"
   
 |||
 |:-----|:-----|
-|![Domäne](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Möchten Sie eine angepasste Liste der DNS-Einträge für Ihre Office 365-Organisation anzeigen?** Dann führen Sie eine [Suche nach den erforderlichen Informationen zum Erstellen von Office 365 DNS-Einträgen](https://support.office.microsoft.com/de-DE/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) für Ihre Domäne in Office 365 aus. <br/> **Benötigen Sie schrittweise Hilfe zum Hinzufügen dieser Einträge auf dem DNS-Host Ihrer Domäne, etwa auf GoDaddy oder eNom?** [Suchen von Links zu schrittweisen Anweisungen für viele beliebte DNS-Hosts](https://go.microsoft.com/fwlink/?LinkId=286745). <br/> **Zurück zu** [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune).  <br/> |
+|![Domäne](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Möchten Sie eine angepasste Liste der DNS-Einträge für Ihre Office 365-Organisation anzeigen?** Dann führen Sie eine [Suche nach den erforderlichen Informationen zum Erstellen von Office 365 DNS-Einträgen](https://support.office.microsoft.com/en-us/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) für Ihre Domäne in Office 365 aus. <br/> **Benötigen Sie schrittweise Hilfe zum Hinzufügen dieser Einträge auf dem DNS-Host Ihrer Domäne, etwa auf GoDaddy oder eNom?** [Suchen von Links zu schrittweisen Anweisungen für viele beliebte DNS-Hosts](https://go.microsoft.com/fwlink/?LinkId=286745). <br/> **Zurück zu** [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune).  <br/> |
 
  **Sie möchten die Referenzliste für Ihre eigene benutzerdefinierte Bereitstellung verwenden?** Die Liste unten sollte als Referenz für die benutzerdefinierte Office 365-Bereitstellung verwendet werden. Sie müssen auswählen, welche Einträge für Ihre Organisation gelten, und die entsprechenden Werte eintragen.
   
