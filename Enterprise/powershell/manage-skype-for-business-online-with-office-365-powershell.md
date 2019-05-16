@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/13/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,27 +12,27 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.'
-ms.openlocfilehash: a91803316972337aa31e2b979f841ac1cfbe8566
-ms.sourcegitcommit: 053db5479f93478a65d4c36ffe44c6a7bcb60e3c
+ms.openlocfilehash: 33c7247686cc8eb308b8db6d4900c89f693004fb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068731"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a><span data-ttu-id="037c1-103">Verwalten von Skype for Business Online mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="037c1-103">Manage Skype for Business Online with Office 365 PowerShell</span></span>
+# <a name="manage-skype-for-business-online-with-office-365-powershell"></a><span data-ttu-id="3f544-103">Verwalten von Skype for Business Online mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f544-103">Manage Skype for Business Online with Office 365 PowerShell</span></span>
 
- <span data-ttu-id="037c1-104">**Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.</span><span class="sxs-lookup"><span data-stu-id="037c1-104">**Summary:** Use Office 365 PowerShell to manage Skype for Business Online policies, per-user policies, and meeting settings.</span></span>
+ <span data-ttu-id="3f544-104">**Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.</span><span class="sxs-lookup"><span data-stu-id="3f544-104">**Summary:** Use Office 365 PowerShell to manage Skype for Business Online policies, per-user policies, and meeting settings.</span></span>
   
-<span data-ttu-id="037c1-p101">Eine der wichtigsten Aufgaben des Skype für Business Online-Administrator ist Richtlinien verwalten. Obwohl Sie einige dieser Aufgaben im Office 365 Admin Center ausführen können, sind andere Aufgaben viel schneller und einfacher in Office 365 PowerShell.</span><span class="sxs-lookup"><span data-stu-id="037c1-p101">One of the primary tasks of any Skype for Business Online administrator is managing policies. Although you can accomplish some of these tasks in the Office 365 Admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> 
+<span data-ttu-id="3f544-105">Eine der Hauptaufgaben des Skype for Business Online-Administrators ist die Richtlinienverwaltung.</span><span class="sxs-lookup"><span data-stu-id="3f544-105">One of the primary tasks of any Skype for Business Online administrator is managing policies.</span></span> <span data-ttu-id="3f544-106">Obwohl Sie einige dieser Aufgaben im Office 365 Admin Center ausführen können, sind andere Aufgaben in Office 365 PowerShell viel schneller und einfacher.</span><span class="sxs-lookup"><span data-stu-id="3f544-106">Although you can accomplish some of these tasks in the Office 365 Admin center, other tasks are much quicker and easier in Office 365 PowerShell.</span></span> 
 
-## <a name="before-you-start"></a><span data-ttu-id="037c1-107">Vor der Bereitstellung</span><span class="sxs-lookup"><span data-stu-id="037c1-107">Before you start</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="3f544-107">Vor der Bereitstellung</span><span class="sxs-lookup"><span data-stu-id="3f544-107">Before you start</span></span>
 
-<span data-ttu-id="037c1-108">Herunterladen und Installieren der [Skype Business Online Connector-Modul](https://www.microsoft.com/en-us/download/details.aspx?id=39366), und starten Sie den Computer neu, wenn Sie aufgefordert werden.</span><span class="sxs-lookup"><span data-stu-id="037c1-108">Download and install the [Skype for Business Online Connector module](https://www.microsoft.com/en-us/download/details.aspx?id=39366), and then restart your computer if prompted.</span></span>
+<span data-ttu-id="3f544-108">Laden Sie das [Skype for Business Online-Connector-Modul](https://www.microsoft.com/en-us/download/details.aspx?id=39366)herunter, installieren Sie es, und starten Sie den Computer neu, wenn Sie dazu aufgefordert werden.</span><span class="sxs-lookup"><span data-stu-id="3f544-108">Download and install the [Skype for Business Online Connector module](https://www.microsoft.com/en-us/download/details.aspx?id=39366), and then restart your computer if prompted.</span></span>
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a><span data-ttu-id="037c1-109">Eine Verbindung über einen Skype für Business Online-Administrator-Kontonamen und das Kennwort</span><span class="sxs-lookup"><span data-stu-id="037c1-109">Connect using a Skype for Business Online administrator account name and password</span></span>
+## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a><span data-ttu-id="3f544-109">Herstellen einer Verbindung mit einem Skype for Business Online-Administratorkontonamen und Kennwort</span><span class="sxs-lookup"><span data-stu-id="3f544-109">Connect using a Skype for Business Online administrator account name and password</span></span>
 
-1. <span data-ttu-id="037c1-110">Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="037c1-110">Open a Windows PowerShell command prompt and run the following commands:</span></span> 
+1. <span data-ttu-id="3f544-110">Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="3f544-110">Open a Windows PowerShell command prompt and run the following commands:</span></span> 
     
   ```
   Import-Module SkypeOnlineConnector
@@ -41,12 +41,12 @@ ms.locfileid: "23965192"
   Import-PSSession $sfbSession
   ```
 
-2. <span data-ttu-id="037c1-111">Klicken Sie im Dialogfeld **Windows PowerShell anmelden** Geben Sie Ihre Skype für Business Online-Administrator-Kontonamen und das Kennwort ein, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="037c1-111">In the **Windows PowerShell Credential Request** dialog box, type your Skype for Business Online administrator account name and password, and then click **OK**.</span></span>
+2. <span data-ttu-id="3f544-111">Geben Sie im Dialogfeld **Windows PowerShell-Anmelde Informationsanforderung** Ihren Skype for Business Online-Administratorkontonamen und das Kennwort ein, und klicken Sie dann auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="3f544-111">In the **Windows PowerShell Credential Request** dialog box, type your Skype for Business Online administrator account name and password, and then click **OK**.</span></span>
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a><span data-ttu-id="037c1-112">Eine Verbindung über einen Skype für Business Online Administratorkonto mit mehrstufige Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="037c1-112">Connect using a Skype for Business Online administrator account with multifactor authentication</span></span>
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a><span data-ttu-id="3f544-112">Herstellen einer Verbindung mit einem Skype for Business Online-Administratorkonto mit mehrstufiger Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="3f544-112">Connect using a Skype for Business Online administrator account with multifactor authentication</span></span>
 
-1. <span data-ttu-id="037c1-113">Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="037c1-113">Open a Windows PowerShell command prompt and run the following commands:</span></span>
+1. <span data-ttu-id="3f544-113">Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus:</span><span class="sxs-lookup"><span data-stu-id="3f544-113">Open a Windows PowerShell command prompt and run the following commands:</span></span>
 
   ```
   Import-Module SkypeOnlineConnector
@@ -54,23 +54,23 @@ ms.locfileid: "23965192"
   Import-PSSession $sfbSession
   ```
 
-2. <span data-ttu-id="037c1-114">Bei Aufforderung durch den Befehl **New-CsOnlineSession** Geben Sie Ihre Skype Business Online-Administrator Konto ein.</span><span class="sxs-lookup"><span data-stu-id="037c1-114">When prompted by the **New-CsOnlineSession** command, enter your Skype for Business Online administrator account name.</span></span>
+2. <span data-ttu-id="3f544-114">Wenn Sie vom Befehl **New-CsOnlineSession** dazu aufgefordert werden, geben Sie Ihren Skype for Business Online-Administratorkontonamen ein.</span><span class="sxs-lookup"><span data-stu-id="3f544-114">When prompted by the **New-CsOnlineSession** command, enter your Skype for Business Online administrator account name.</span></span>
 
-3. <span data-ttu-id="037c1-115">**Melden Sie sich bei Ihrem Konto** im Dialogfeld Geben Sie Ihre Skype Business Online Administratorkennwort ein, und klicken Sie dann auf **Anmelden**.</span><span class="sxs-lookup"><span data-stu-id="037c1-115">In the **Sign in to your account** dialog box, type your Skype for Business Online administrator password, and then click **Sign in**.</span></span>
+3. <span data-ttu-id="3f544-115">Geben Sie im Dialogfeld **Anmelden bei Ihrem Konto** Ihr Skype for Business Online-Administratorkennwort ein, und klicken Sie dann auf **Anmelden**.</span><span class="sxs-lookup"><span data-stu-id="3f544-115">In the **Sign in to your account** dialog box, type your Skype for Business Online administrator password, and then click **Sign in**.</span></span>
 
-4. <span data-ttu-id="037c1-116">Befolgen Sie die Anweisungen im Dialogfeld **Melden Sie sich bei Ihrem Konto** zusätzliche Authentifizierungsinformationen, beispielsweise einen Überprüfungscode bereitstellen, und klicken Sie dann auf **Verify**.</span><span class="sxs-lookup"><span data-stu-id="037c1-116">Follow the instructions in the **Sign in to your account** dialog box to provide additional authentication information, such as a verification code, and then click **Verify**.</span></span>
+4. <span data-ttu-id="3f544-116">Folgen Sie den Anweisungen im Dialogfeld **Anmelden bei Ihrem Konto** , um zusätzliche Authentifizierungsinformationen wie einen Überprüfungscode bereitzustellen, und klicken Sie dann auf **überprüfen**.</span><span class="sxs-lookup"><span data-stu-id="3f544-116">Follow the instructions in the **Sign in to your account** dialog box to provide additional authentication information, such as a verification code, and then click **Verify**.</span></span>
 
-<span data-ttu-id="037c1-117">Weitere Informationen hierzu finden Sie in den folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="037c1-117">For more information, see the following topics:</span></span>
+<span data-ttu-id="3f544-117">Weitere Informationen hierzu finden Sie unter den folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="3f544-117">For more information, see the following topics:</span></span>
   
-- [<span data-ttu-id="037c1-118">Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="037c1-118">Manage Skype for Business Online policies with Office 365 PowerShell</span></span>](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [<span data-ttu-id="3f544-118">Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f544-118">Manage Skype for Business Online policies with Office 365 PowerShell</span></span>](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [<span data-ttu-id="037c1-119">Zuweisen von benutzerspezifischen Skype for Business Online-Richtlinien mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="037c1-119">Assign per-user Skype for Business Online policies with Office 365 PowerShell</span></span>](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [<span data-ttu-id="3f544-119">Zuweisen von benutzerspezifischen Skype for Business Online-Richtlinien mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f544-119">Assign per-user Skype for Business Online policies with Office 365 PowerShell</span></span>](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
-## <a name="see-also"></a><span data-ttu-id="037c1-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="037c1-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3f544-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3f544-120">See also</span></span>
 
-[<span data-ttu-id="037c1-121">Verwalten von Office 365 mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="037c1-121">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
+[<span data-ttu-id="3f544-121">Verwalten von Office 365 mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f544-121">Manage Office 365 with Office 365 PowerShell</span></span>](manage-office-365-with-office-365-powershell.md)
   
-[<span data-ttu-id="037c1-122">Erste Schritte mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="037c1-122">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
+[<span data-ttu-id="3f544-122">Erste Schritte mit Office 365 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f544-122">Getting started with Office 365 PowerShell</span></span>](getting-started-with-office-365-powershell.md)
 
-[<span data-ttu-id="037c1-123">Skype für Business PowerShell-Cmdlet-Referenzen</span><span class="sxs-lookup"><span data-stu-id="037c1-123">Skype for Business PowerShell cmdlet references</span></span>](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[<span data-ttu-id="3f544-123">Verweise auf das Skype for Business PowerShell-Cmdlet</span><span class="sxs-lookup"><span data-stu-id="3f544-123">Skype for Business PowerShell cmdlet references</span></span>](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 
