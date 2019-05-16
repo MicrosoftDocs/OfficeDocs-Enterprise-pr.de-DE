@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 01/03/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
 description: Erläutert das Verwenden von Office 365 PowerShell zum Anzeigen von lizenzierten und nicht lizenzierten Benutzerkonten.
-ms.openlocfilehash: eb1ca1d9812b08a6ea932fde546351f664c93066
-ms.sourcegitcommit: c5ee713709d76f519cb77de0e12c435d8409f571
+ms.openlocfilehash: 8b0456b468f4e0f912491f4a138d5868feb5abbc
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327327"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071131"
 ---
 # <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Anzeigen lizenzierter und nicht lizenzierter Benutzer mit Office 365 PowerShell
 
@@ -33,13 +33,13 @@ Benutzerkonten in Ihrer Office 365-Organisation sind möglicherweise einige, all
 
 Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
-Um die Liste aller Benutzerkonten in Ihrer Organisation, die nicht keines der Lizenzierung Pläne (nicht lizenzierten Benutzer) zugewiesen wurden, führen Sie den folgenden Befehl aus:
+Führen Sie den folgenden Befehl aus, um die Liste aller Benutzerkonten in Ihrer Organisation anzuzeigen, denen keines ihrer Lizenzierungs Pläne zugewiesen wurde (nicht lizenzierte Benutzer):
   
 ```
 Get-AzureAdUser | ForEach{ $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $false) { Write-Host $_.UserPrincipalName} }
 ```
 
-Um die Liste aller Benutzerkonten in Ihrer Organisation, die wurden zugewiesen keines der Lizenzierung Pläne (lizenzierten Benutzern) den folgenden Befehl ausführen:
+Führen Sie den folgenden Befehl aus, um die Liste aller Benutzerkonten in Ihrer Organisation anzuzeigen, denen ein Lizenzplan (lizenzierte Benutzer) zugewiesen wurde:
   
 ```
 Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLicenses | Measure).Count ; $i++) { If( [string]::IsNullOrEmpty(  $_.AssignedLicenses[$i].disabledplans ) -ne $True) { $licensed=$true } } ; If( $licensed -eq $true) { Write-Host $_.UserPrincipalName} }

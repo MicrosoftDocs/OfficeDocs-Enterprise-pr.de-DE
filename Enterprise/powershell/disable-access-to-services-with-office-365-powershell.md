@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/28/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Verwenden Sie Office 365 PowerShell, um den Zugriff auf Office 365-Dienste für Benutzer zu deaktivieren.
-ms.openlocfilehash: 0f2c603edd624c9d53a28b37c1c9795bad05ec0f
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: bd6961f0de52d95026bae3a743613b33a4af918b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001818"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069031"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 
@@ -61,7 +61,7 @@ Führen Sie die folgenden Schritte aus, um einen bestimmten Satz von Office 365-
   $LO = New-MsolLicenseOptions -AccountSkuId <AccountSkuId> -DisabledPlans "<UndesirableService1>", "<UndesirableService2>"...
   ```
 
-  Im folgenden Beispiel wird ein **licenseoptions** -Objekt erstellt, das die Office Online-und SharePoint Online-Dienste im Lizenz `litwareinc:ENTERPRISEPACK` plan namens (Office 365 Enterprise E3) deaktiviert.
+  Im folgenden Beispiel wird ein **licenseoptions** -Objekt erstellt, das die Office Online-und SharePoint Online-Dienste im Lizenz `litwareinc:ENTERPRISEPACK` Plan namens (Office 365 Enterprise E3) deaktiviert.
     
   ```
   $LO = New-MsolLicenseOptions -AccountSkuId "litwareinc:ENTERPRISEPACK" -DisabledPlans "SHAREPOINTWAC", "SHAREPOINTENTERPRISE"
@@ -81,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um einen bestimmten Satz von Office 365-
   New-MsolUser -UserPrincipalName allieb@litwareinc.com -DisplayName "Allie Bellew" -FirstName Allie -LastName Bellew -LicenseAssignment litwareinc:ENTERPRISEPACK -LicenseOptions $LO -UsageLocation US
   ```
 
-  Weitere Informationen zum Erstellen von Benutzerkonten in Office 365 PowerShell finden Sie unter [Create User Accounts with office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
+  Weitere Informationen zum Erstellen von Benutzerkonten in Office 365 PowerShell finden Sie unter [Create User Accounts with Office 365 PowerShell](create-user-accounts-with-office-365-powershell.md).
     
   - Verwenden Sie die folgende Syntax, um die Dienste für einen vorhandenen lizenzierten Benutzer zu deaktivieren:
     

@@ -1,10 +1,9 @@
 ---
 title: Tools zum Verwalten von Office 365-Konten
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 5/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Erfahren Sie, welche Tools Sie zum Verwalten Ihrer Office 365-Benutzer verwenden müssen, und wie Sie die Benutzeridentitäten verwalten können. '
-ms.openlocfilehash: fb98c7103aaadb16ac6f7d459a2595022110bb94
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a9bd7cd75902d2b3b3ff17572849fb1a46053eb5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487071"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067191"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Tools zum Verwalten von Office 365-Konten
 

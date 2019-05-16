@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 3/14/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 2bed67a1-4052-49ff-a4ce-b7e6530eb98e
-description: Mit dem Office 365 Video-Repository und den Streaming Services lassen sich Videos in Ihrer Organisation einfach speichern und streamen. Es gibt eine Menge toller Informationen zu Office 365 Video; Diese häufig gestellten Fragen rund um die Bandbreitenplanung und-Verschlüsselung sowie die Art und Weise, wie der Dienst Content-zuStellungs Netzwerke (CDNs) nutzt.
-ms.openlocfilehash: f11bd8baff7c2527287f6e1249ad4dae1928bdd2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+description: Mit dem Office 365 Video-Repository und den Streaming Services lassen sich Videos in Ihrer Organisation einfach speichern und streamen. Es gibt eine Menge toller Informationen zu Office 365 Video; Diese häufig gestellten Fragen rund um die Bandbreitenplanung und-Verschlüsselung sowie die Art und Weise, wie der Dienst Content-Zustellungs Netzwerke (CDNs) nutzt.
+ms.openlocfilehash: 93f55e0c1e4d065e02a9cc41e5aaaab89b459a0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491926"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069471"
 ---
 # <a name="office-365-video-networking-frequently-asked-questions"></a>Häufig gestellte Fragen zu Office 365-Video Netzwerken
 
-Mit dem Office 365 Video-Repository und den Streaming Services lassen sich Videos in Ihrer Organisation einfach speichern und streamen. Es gibt eine Menge toller [Informationen zu Office 365 Video](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50); Diese häufig gestellten Fragen rund um die Bandbreitenplanung und-Verschlüsselung sowie die Art und Weise, wie der Dienst Content-zuStellungs [Netzwerke](content-delivery-networks.md) (CDNs) nutzt.
+Mit dem Office 365 Video-Repository und den Streaming Services lassen sich Videos in Ihrer Organisation einfach speichern und streamen. Es gibt eine Menge toller [Informationen zu Office 365 Video](https://support.office.com/article/Find-help-about-Office-365-Video-b435f99a-f47e-4ebd-a946-f5c965844f50); Diese häufig gestellten Fragen rund um die Bandbreitenplanung und-Verschlüsselung sowie die Art und Weise, wie der Dienst Content-Zustellungs [Netzwerke](content-delivery-networks.md) (CDNs) nutzt.
   
 Wenn Sie nicht bereits gründlich verstehen, was passiert, wenn ein Video hochgeladen oder wiedergegeben wird, werfen Sie einen Blick auf dieses Video, das wir zusammengestellt haben, [Was passiert, wenn eine Videodatei in Office 365 Video hochgeladen](https://www.youtube.com/watch?v=HXSZ0jYBKlM)wird.
   
@@ -66,7 +66,7 @@ Ja. Office 365 verhindert nicht, dass Sie ein lokales CDN oder einen Cacheproxy 
   
 ## <a name="how-videos-are-encrypted-and-secured"></a>Wie werden Videos verschlüsselt und gesichert?
 
-Office 365 Video weiß, wie wichtig es ist, Ihre Daten sicher und privat zu halten. [Microsoft Trust Center](https://products.office.com/business/office-365-trust-center-welcome) beschreibt unsere Verpflichtung gegenüber dem Datenschutz und der Sicherheit Ihrer Inhalte. Bei der Videowiedergabe ist die Geschwindigkeit wichtig für eine gute Erfahrung; Allerdings gefährden wir nicht Ihre Sicherheit oder Ihren Datenschutz im Gegenzug für die Geschwindigkeit. Hier erfahren Sie, wie wir Geschwindigkeit, Sicherheit und Datenschutz einHalten.
+Office 365 Video weiß, wie wichtig es ist, Ihre Daten sicher und privat zu halten. [Microsoft Trust Center](https://products.office.com/business/office-365-trust-center-welcome) beschreibt unsere Verpflichtung gegenüber dem Datenschutz und der Sicherheit Ihrer Inhalte. Bei der Videowiedergabe ist die Geschwindigkeit wichtig für eine gute Erfahrung; Allerdings gefährden wir nicht Ihre Sicherheit oder Ihren Datenschutz im Gegenzug für die Geschwindigkeit. Hier erfahren Sie, wie wir Geschwindigkeit, Sicherheit und Datenschutz einhalten.
   
 Wenn Sie oder eine Person in Ihrer Organisation ein neues Video hochladen, wird dieses Video transcodiert, mit der AES-128-Verschlüsselung verschlüsselt und in Azure Media Services gespeichert. Dies führt dazu, dass die Videos sowohl während der Übertragung als auch in Ruhe verschlüsselt werden.
   
@@ -88,7 +88,7 @@ Wenn jemand in Ihrer Organisation versucht, ein neues Video zu sehen, führen Si
   
 ## <a name="what-are-the-requirements-to-playback-office-365-video"></a>Was sind die Voraussetzungen für die Wiedergabe von Office 365 Video?
 
-Office 365 Video unterstützte Betriebssysteme und Webbrowser sind identisch mit den SharePoint Online-Anforderungen in [office 365-Systemanforderungen](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45). Je nachdem, welches Betriebssystem und welche Webbrowserkonfiguration Sie haben, werden die spezifischen Anforderungen des Videoplayers bestimmt. Hier finden Sie weitere Informationen zu Anforderungen an die [Videowiedergabe](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6).
+Office 365 Video unterstützte Betriebssysteme und Webbrowser sind identisch mit den SharePoint Online-Anforderungen in [Office 365-Systemanforderungen](https://support.office.com/article/Office-365-system-requirements-719254c0-2671-4648-9c84-c6a3d4f3be45). Je nachdem, welches Betriebssystem und welche Webbrowserkonfiguration Sie haben, werden die spezifischen Anforderungen des Videoplayers bestimmt. Hier finden Sie weitere Informationen zu Anforderungen an die [Videowiedergabe](https://support.office.com/article/ca1cc1a9-a615-46e1-b6a3-40dbd99939a6).
   
 ([Zurück zum Seitenanfang](office-365-video-networking-faq.md))
   

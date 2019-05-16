@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Das neue Datacenter GEOS fügt Kapazitäten hinzu und berechnet Ressourcen zur Unterstützung der laufenden Kundennachfrage und des Nutzungs Wachstums. Darüber hinaus bietet das neue Datencenter GEOS in-Geo Data Residency für Kernkunden Daten an. Die wichtigsten Kundendaten beziehen sich auf eine Teilmenge der Kundendaten, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online-Postfachinhalte (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online-Websiteinhalt und die Dateien innerhalb dieser Website gespeichert und Dateien in OneDrive for Business hochgeladen.'
-ms.openlocfilehash: d30ad64c96a3a2e790b911845141e1601758d384
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 8dd9295618c765bb9eeaffbcec82ff83af8b2e21
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647983"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069991"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Moving Core Data to New Office 365 Datacenter GEOS
 
@@ -36,7 +36,7 @@ Bestehende Kunden, deren Kernkunden Daten in einem bereits vorhandenen Datacente
 |Australien, Neuseeland, Fidschi * * * *| Asien/Pazifik | Australien | März 2015 |
 |Indien * * * *| Asien/Pazifik | Indien | Oktober 2015 |
 |Kanada * * * *| Nordamerika | Kanada | Mai 2016 |
-|Vereinigtes Königreich * * * *| Europa | United Kingdom | September 2016 |
+|Vereinigtes Königreich * * * *| Europa | Vereinigtes Königreich | September 2016 |
 |Südkorea * * * *| Asien/Pazifik | Südkorea | April 2017 |
 |Frankreich * * * *| Europa | Frankreich | März 2018 |
 |Vereinigte Arabische Emirate * * * *| Europa | Vereinigte Arabische Emirate | Angekündigt |
@@ -67,7 +67,7 @@ Kunden, die ihre Kern Daten mit einem festgelegten Stichtag von Microsoft Reques
  
 [Anfordern der Datenverschiebung](request-your-data-move.md)
     
-[Allgemeine häufig gestellte Fragen zu Datenverschiebung](data-move-faq.md)
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
 [Neues Datencenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

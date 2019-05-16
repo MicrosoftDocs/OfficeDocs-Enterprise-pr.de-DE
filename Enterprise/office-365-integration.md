@@ -1,10 +1,9 @@
 ---
 title: Office 365-Integration in lokale Umgebungen
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +18,12 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Erfahren Sie, wie Sie Office 365 in Ihre vorhandenen Verzeichnisdienste integrieren.
-ms.openlocfilehash: 112f543a9c647ea850d5e43bc14483308da0b2c7
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1fa044a0a9db0d8422239cf301fea21a2c3d47e9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487401"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069741"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Office 365-Integration in lokale Umgebungen
 
@@ -42,7 +41,7 @@ Sie können die Azure AD Advisors auch für benutzerdefinierte Setup Hinweise ve
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 Bevor Sie Office 365 und eine lokale Umgebung integrieren, müssen Sie auch an der [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md)teilnehmen. Sie sollten auch die verfügbaren [Identitäts Modelle](about-office-365-identity.md) in Office 365 verstehen. 
 
-Eine Liste der Tools, die Sie zum Verwalten von Office 365-Benutzern und-Konten verwenden können, finden Sie unter [wo office 365-Benutzerkonten verwaltet](manage-office-365-accounts.md) werden. 
+Eine Liste der Tools, die Sie zum Verwalten von Office 365-Benutzern und-Konten verwenden können, finden Sie unter [wo Office 365-Benutzerkonten verwaltet](manage-office-365-accounts.md) werden. 
   
 ## <a name="integrate-office-365-with-directory-services"></a>Integrieren von Office 365 in Verzeichnisdienste
 Wenn Sie über vorhandene Benutzerkonten in einem lokalen Verzeichnis verfügen, möchten Sie nicht alle diese Konten in Office 365 neu erstellen und Unterschiede oder Fehler zwischen den Umgebungen einführen. Mithilfe der Verzeichnissynchronisierung können Sie diese Konten zwischen Ihrer Online-und lokalen Umgebung spiegeln. Bei der Verzeichnissynchronisierung müssen sich die Benutzer keine neuen Informationen für jede Umgebung merken, und Sie müssen Konten nicht zweimal erstellen oder aktualisieren. Sie müssen [Ihr lokales Verzeichnis](prepare-for-directory-synchronization.md) für die Verzeichnissynchronisierung vorbereiten, dies können Sie manuell ausführen oder das [IdFix-Tool](install-and-run-idfix.md) verwenden (das IdFix-Tool funktioniert nur mit Active Directory). 
@@ -56,7 +55,7 @@ Wenn Sie möchten, dass sich Benutzer bei Office 365 mit Ihren lokalen Anmeldein
 Verschiedene Benutzerkonten Verwaltungstechniken bieten unterschiedliche Erfahrungen für Ihre Benutzer, wie in der folgenden Tabelle dargestellt.
  
 ### <a name="directory-synchronization-with-or-without-password-hash-synchronization-or-pass-through-authentication"></a>**Verzeichnissynchronisierung mit oder ohne Kennworthash Synchronisierung oder Pass-Through-Authentifizierung**
-Ein Benutzer meldet sich bei seiner lokalen Umgebung mit seinem Benutzerkonto an. Wenn Sie zu Office 365 wechseln, müssen Sie sich erneut mit Ihrem Arbeits-oder Schulkonto anmelden (user@domain.com). Der Benutzername ist in beiden Umgebungen identisch. Wenn Sie die Kennworthash Synchronisierung oder Pass-Through-Authentifizierung hinzufügen, hat der Benutzer dasselbe Kennwort für beide Umgebungen, muss diese Anmeldeinformationen jedoch bei der Anmeldung bei Office 365 erneut angeben. Die Verzeichnissynchronisierung mit Kennworthash Synchronisierung ist das am häufigsten verwendete Verzeichnis Synchronisierungsszenario.
+Ein Benutzer meldet sich bei seiner lokalen Umgebung mit seinem Benutzerkonto an. Wenn Sie zu Office 365 wechseln, müssen Sie sich erneut mit Ihrem Arbeits-oder Schulkonto anmelden (User@Domain.com). Der Benutzername ist in beiden Umgebungen identisch. Wenn Sie die Kennworthash Synchronisierung oder Pass-Through-Authentifizierung hinzufügen, hat der Benutzer dasselbe Kennwort für beide Umgebungen, muss diese Anmeldeinformationen jedoch bei der Anmeldung bei Office 365 erneut angeben. Die Verzeichnissynchronisierung mit Kennworthash Synchronisierung ist das am häufigsten verwendete Verzeichnis Synchronisierungsszenario.
 
 Verwenden Sie Azure Active Directory Connect, um die Verzeichnissynchronisierung einzurichten. Anweisungen hierzu finden Sie unter [Einrichten der Verzeichnissynchronisierung für Office 365](set-up-directory-synchronization.md)und [Verwenden von Azure AD Connect mit Express-Einstellungen](https://go.microsoft.com/fwlink/p/?LinkId=698537).
 
@@ -70,4 +69,4 @@ Zum Einrichten von SSO verwenden Sie auch Azure AD Connect. Weitere Informatione
 Weitere Informationen finden Sie [unter Anwendungszugriff und einmaliges Anmelden mit Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=698604).
 
 ## <a name="azure-ad-connect"></a>Azure AD Connect
-Azure AD Connect ersetzt ältere Versionen von Identitäts Integrationstools wie dirSync und Azure AD Sync. Weitere Informationen finden Sie unter [integrieren Ihrer lokalen Identitäten in Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=527969). Informationen zum Aktualisieren von Azure Active Directory-Synchronisierung mit Azure AD Connect finden Sie in [den Anweisungen zum Upgrade](https://go.microsoft.com/fwlink/p/?LinkId=733240). Sehen Sie sich eine Lösungsarchitektur an, die für die [Office 365-Verzeichnissynchronisierung (Dirsync) in Microsoft Azure](https://go.microsoft.com/fwlink/?LinkId=517887)erstellt wurde.
+Azure AD Connect ersetzt ältere Versionen von Identitäts Integrationstools wie Dirsync und Azure AD Sync. Weitere Informationen finden Sie unter [integrieren Ihrer lokalen Identitäten in Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=527969). Informationen zum Aktualisieren von Azure Active Directory-Synchronisierung mit Azure AD Connect finden Sie in [den Anweisungen zum Upgrade](https://go.microsoft.com/fwlink/p/?LinkId=733240). Sehen Sie sich eine Lösungsarchitektur an, die für die [Office 365-Verzeichnissynchronisierung (Dirsync) in Microsoft Azure](https://go.microsoft.com/fwlink/?LinkId=517887)erstellt wurde.

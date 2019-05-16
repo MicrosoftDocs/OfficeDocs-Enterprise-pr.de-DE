@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Netzwerkplanung und-Tests sowie zur Migration zu Office 365.
-ms.openlocfilehash: 02576933a1be615e65b695a7dd72c19eed311c91
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a32a8584f1aada7e2b82451d520f72bb7577bc4b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487276"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069921"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
@@ -62,20 +62,20 @@ Gehen Sie folgendermaßen vor, um die Bandbreite zu schätzen:
     
 - [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=517243): testet die Konnektivität in Ihrer Exchange Online-Umgebung.
     
-- Verwenden Sie den [Microsoft-Support-und Wiederherstellungs-Assistenten für office 365](https://diagnostics.office.com/#/Download?env=SOC) , um Outlook-und Office 365-Probleme zu beheben. 
+- Verwenden Sie den [Microsoft-Support-und Wiederherstellungs-Assistenten für Office 365](https://diagnostics.office.com/#/Download?env=SOC) , um Outlook-und Office 365-Probleme zu beheben. 
     
 ## <a name="best-practices-for-network-planning-and-improving-migration-performance-for-office-365"></a>Bewährte Methoden für die Netzwerkplanung und die Verbesserung der Migrationsleistung für Office 365
 <a name="BestPractices"> </a>
 
 In diesen bewährten Methoden erhalten Sie weitere Informationen zum Verbessern der Office 365-Umgebung.
   
-1. Sie möchten Ihren Benutzern sofort helfen? Tipps zur Verwendung von Office 365, einschließlich SharePoint Online, Exchange Online und lync Online, wenn Ihr Netzwerk einfach nicht kooperiert, finden Sie unter [bewährte Methoden für die Verwendung von office 365 in einem langsamen Netzwerk](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) . Dieser Artikel enthält Links zu vielen Inhalten auf TechNet und Support.office.com zur Optimierung Ihrer Office 365-Benutzeroberfläche sowie Informationen zu einfachen Methoden zum Anpassen Ihrer Webseiten und zum Festlegen der Internet Explorer-Einstellungen für die beste Office 365-Umgebung. 
+1. Sie möchten Ihren Benutzern sofort helfen? Tipps zur Verwendung von Office 365, einschließlich SharePoint Online, Exchange Online und lync Online, wenn Ihr Netzwerk einfach nicht kooperiert, finden Sie unter [bewährte Methoden für die Verwendung von Office 365 in einem langsamen Netzwerk](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) . Dieser Artikel enthält Links zu vielen Inhalten auf TechNet und Support.Office.com zur Optimierung Ihrer Office 365-Benutzeroberfläche sowie Informationen zu einfachen Methoden zum Anpassen Ihrer Webseiten und zum Festlegen der Internet Explorer-Einstellungen für die beste Office 365-Umgebung. 
     
-2. Lesen Sie die [Grundprinzipien der office 365-Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) , um die Verbindungs Prinzipien für die sichere Verwaltung von Office 365-Datenverkehr und die bestmögliche Leistung zu verstehen. Dieser Artikel hilft Ihnen, die neuesten Richtlinien für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen. 
+2. Lesen Sie die [Grundprinzipien der Office 365-Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) , um die Verbindungs Prinzipien für die sichere Verwaltung von Office 365-Datenverkehr und die bestmögliche Leistung zu verstehen. Dieser Artikel hilft Ihnen, die neuesten Richtlinien für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen. 
     
 3. Verbessern der e-Mail-Migrationsleistung durch sorgfältiges Verwalten des Zeitplans für Windows-Updates Sie können Ihre Clientcomputer in Batches aktualisieren und sicherstellen, dass alle Clientcomputer vor der Migration zu Office 365 aktualisiert werden, um die Verwendung der Netzwerkbandbreite zu regulieren. Weitere Informationen finden Sie unter [Manuelles Aktualisieren und Konfigurieren von Desktops für Office 365 für die neuesten Updates](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. Der Netzwerkdatenverkehr von Office 365 ist am besten geeignet, wenn er als vertrauenswürdiger Internetdienst behandelt wird und die herkömmliche Filterung und Überprüfung, die einige Organisationen für den Netzwerkdatenverkehr an nicht vertrauenswürdige Internetdienste durchführen, möglicherweise umgehen kann. Hierzu gehört in der Regel das Entfernen der ausgehenden Verarbeitung wie Proxybenutzer Authentifizierung und Paketprüfung sowie das Sicherstellen des lokalen Ausstiegs auf das Internet mit der richtigen Netzwerkadressübersetzung (Network Address Translation, NAT) und ausreichender Bandbreitenkapazität zur Verarbeitung der erhöhten Netzwerkanforderungen. Weitere Hinweise zum Konfigurieren Ihres Netzwerks zur Behandlung von Office 365 als vertrauenswürdigen Internet Dienst in Ihrem Netzwerk finden Sie unter [Managing office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)Endpoints.
+4. Der Netzwerkdatenverkehr von Office 365 ist am besten geeignet, wenn er als vertrauenswürdiger Internetdienst behandelt wird und die herkömmliche Filterung und Überprüfung, die einige Organisationen für den Netzwerkdatenverkehr an nicht vertrauenswürdige Internetdienste durchführen, möglicherweise umgehen kann. Hierzu gehört in der Regel das Entfernen der ausgehenden Verarbeitung wie Proxybenutzer Authentifizierung und Paketprüfung sowie das Sicherstellen des lokalen Ausstiegs auf das Internet mit der richtigen Netzwerkadressübersetzung (Network Address Translation, NAT) und ausreichender Bandbreitenkapazität zur Verarbeitung der erhöhten Netzwerkanforderungen. Weitere Hinweise zum Konfigurieren Ihres Netzwerks zur Behandlung von Office 365 als vertrauenswürdigen Internet Dienst in Ihrem Netzwerk finden Sie unter [Managing Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)Endpoints.
     
 1. Sicherstellen der [Verwaltung von Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)-Endpunkten Der zusätzliche Datenverkehr zu Office 365 führt zu einer Verbesserung der ausgehenden Proxyverbindungen sowie zu einer erhöhten Sicherheit des Datenverkehrs über TLS/SSL.
     

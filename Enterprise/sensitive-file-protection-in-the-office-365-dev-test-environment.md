@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Zusammenfassung: Konfigurieren und veranschaulichen, wie Office 365 Information Rights Management Ihre vertraulichen Dateien schützt, auch wenn Sie in der falschen SharePoint Online-Websitesammlung bereitgestellt werden.'
-ms.openlocfilehash: 4b65df7fe194d543acaf1c3ba6f104681a998dc6
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: a845742f7ec874d63269f5f380568b7bb59cfe0d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741301"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070891"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) in Office 365 umfasst eine Reihe von Funktio
 Mithilfe der Anleitungen in diesem Artikel können Sie IRM in Office 365 für Dateien aktivieren und testen, die in Ihrem Office 365-Testabonnement möglicherweise vertrauliche Informationen enthalten.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) , um eine visuelle Darstellung aller Artikel im Office 365 Test Lab Guide-Stapel zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -55,7 +55,7 @@ Verwenden Sie die Anweisungen unter [Connect to Office 365 PowerShell](https://t
     
 - Dem virtuellen Computer CLIENT1 aus (für die simulierte Office 365-Entwicklungs-/Testumgebung).
     
-Geben Sie im Dialogfeld **Windows PowerShell-Anmeldeinformationen anfordern** den globalen Office 365-Administratornamen ( jdoe@contosotoycompany.onmicrosoft.comBeispiel:) und das Kennwort Ihres Office 365-Testabonnements ein.
+Geben Sie im Dialogfeld **Bei Windows PowerShell anmelden** den Namen des globalen Office 365-Administrators (Beispiel: jdoe@contosotoycompany.onmicrosoft.com) und das Kennwort Ihres Office 365-Testabonnements ein.
   
 Geben Sie den Namen der Organisation (zum Beispiel „contosotoycompany“) und den zweistelligen Ländercode für Ihren Standort ein. Führen Sie dann über die „Windows Azure Active Directory-Modul für Windows PowerShell“-Eingabeaufforderung die folgenden Befehle aus:
   
@@ -92,7 +92,7 @@ Notieren Sie aus der **New-MsolUser**-Befehlsanzeige das Kennwort, das für das 
   
 Im nächsten Schritt erstellen Sie eine private Führungskräftegruppe und fügen dieser die neuen Führungskräftekonten hinzu.
   
-1. Wechseln Sie in Ihrem Browser zum Office-Portal unter [http://admin.microsoft.com](http://admin.microsoft.com) , und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie in Ihrem Browser zum Office-Portal unter [http://admin.microsoft.com](http://admin.microsoft.com) , und melden Sie sich bei Ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
   - Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung in Internet Explorer bzw. in dem von Ihnen bevorzugten Browser, und melden Sie sich von Ihrem lokalen Computer aus an.
     
@@ -148,7 +148,7 @@ Im nächsten Schritt erstellen Sie eine Websitesammlung für Führungskräfte un
     
 Im nächsten Schritt erlauben Sie allen Gruppenmitgliedern, auf die Websitesammlung „Vertrieb“ zuzugreifen.
   
-1. Kopieren Sie auf der Registerkarte **SharePoint Admin Center** die URL der websiteSammlung "Vertrieb", und fügen Sie Sie in eine neue Registerkarte Ihres Browsers ein.
+1. Kopieren Sie auf der Registerkarte **SharePoint Admin Center** die URL der Websitesammlung "Vertrieb", und fügen Sie Sie in eine neue Registerkarte Ihres Browsers ein.
     
 2. Klicken Sie in der oberen rechten Ecke auf das Einstellungssymbol, und klicken Sie dann auf **Freigegeben für**.
     
@@ -172,7 +172,7 @@ Als Nächstes melden Sie sich mit einem Führungskräftekonto an und erstellen e
     
 4. Geben Sie den Kontonamen **CEO** sowie das entsprechende Kennwort ein, und klicken Sie auf **Anmelden**.
     
-5. geben sie auf einer neuen registerkarte ihres browsers die URL zur websitesammlung "executives" ein ( **https://**\<organization name>**. sharepoint.com/sites/executives**).
+5. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL zur Websitesammlung "Executives" ein ( **https://**\<Organization name>**. SharePoint.com/Sites/Executives**).
     
 6. Klicken Sie auf **Dokumente**, dann auf **neu** und anschließend auf **Word-Dokument**.
     
@@ -190,7 +190,7 @@ Im nächsten Schritt laden Sie eine lokale Kopie des Dokuments „VertraulicheDa
     
 3. Speichern Sie das Dokument **VertraulicheDaten-VorIRM.docx** in dem Ordner, den Sie in Schritt 1 erstellt haben.
     
-4. geben sie auf einer neuen registerkarte ihres browsers die URL der websitesammlung "Sales" ( **https://**\<organization name>**. sharepoint.com/sites/sales**) ein.
+4. Geben Sie auf einer neuen Registerkarte Ihres Browsers die URL der Websitesammlung "Sales" ( **https://**\<Organization name>**. SharePoint.com/Sites/Sales**) ein.
     
 5. Klicken Sie auf den Ordner **Dokumente** der **Websitesammlung „Vertrieb“**.
     

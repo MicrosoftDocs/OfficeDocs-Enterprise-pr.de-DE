@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/01/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Benutzern, -Gruppen und -Websitegruppen.'
-ms.openlocfilehash: c033e006f61ce34ff1e8925e50552c2041c11884
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 2721639ca3ef83b39f85f6da70e47ba90f93f558
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573939"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068871"
 ---
 # <a name="manage-sharepoint-online-with-office-365-powershell"></a>Verwalten von SharePoint Online mit Office 365 PowerShell
 
  **Zusammenfassung:** Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Benutzern, -Gruppen und -Websitegruppen.
   
-Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung von Websites, Websitegruppen und Benutzern. Obwohl Sie einige dieser Aufgaben im Microsoft 365 Admin Center ausführen können, sind andere Aufgaben in Office 365 PowerShell viel schneller und einfacher. Weitere Informationen hierzu finden Sie in den folgenden Themen:
+Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung von Websites, Websitegruppen und Benutzern. Obwohl Sie einige dieser Aufgaben in Microsoft 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShell wesentlich schneller und einfacher durchgeführt werden. Weitere Informationen hierzu finden Sie in den folgenden Themen:
 
 - [Herstellen einer Verbindung mit SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/07/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Benutzern,-Gruppen und-Websites.'
-ms.openlocfilehash: 747371b6ea63431fedb60fa9165fe496acb5b7c7
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: 194486f539593215b8f8a17c04e3d4f499077c65
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573989"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068821"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 PowerShell
 
@@ -59,7 +59,7 @@ Rufen Sie mit diesem Befehl eine Liste der Benutzer in Ihrem Mandanten ab:
 Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 ```
 
-## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Hinzufügen eines Benutzers zur Gruppe der WebsitesammlungsAdministratoren
+## <a name="add-a-user-to-the-site-collection-administrators-group"></a>Hinzufügen eines Benutzers zur Gruppe der Websitesammlungsadministratoren
 
 Verwenden Sie den Befehl **Set-ehepartnerr** , um einen Benutzer zur Liste der Websitesammlungsadministratoren in einer Websitesammlung hinzuzufügen. So sieht die Syntax aus:
 
@@ -72,7 +72,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 Ersetzen Sie zum Verwenden dieser Befehle alle Elemente innerhalb der Anführungszeichen, einschließlich < und >, mit den richtigen Namen.
 
-Dieser Befehlssatz fügt beispielsweise Opal Castillo (Benutzername opalc) die Liste der WebsitesammlungsAdministratoren in der ContosoTest-Websitesammlung in der Contoso1-Mandantschaft hinzu:
+Dieser Befehlssatz fügt beispielsweise Opal Castillo (Benutzername opalc) die Liste der Websitesammlungsadministratoren in der ContosoTest-Websitesammlung in der Contoso1-Mandantschaft hinzu:
 
 ```
 $tenant = "contoso1"
@@ -81,9 +81,9 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.onmicrosoft.com -IsSiteCollectionAdmin $true
 ```
 
-Sie können diese Befehle Kopieren und in Editor einfügen, die Variablenwerte für $tenant, $site und $user auf tatsächliche Werte aus Ihrer Umgebung ändern und diese dann in Ihr SharePoint Online-Verwaltungsshell-Fenster einfügen, um Sie auszuführen.
+Sie können diese Befehle Kopieren und in Editor einfügen, die Variablenwerte für $Tenant, $Site und $User auf tatsächliche Werte aus Ihrer Umgebung ändern und diese dann in Ihr SharePoint Online-Verwaltungsshell-Fenster einfügen, um Sie auszuführen.
 
-## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Hinzufügen eines Benutzers zu anderen Gruppen von WebsitesammlungsAdministratoren
+## <a name="add-a-user-to-other-site-collection-administrators-groups"></a>Hinzufügen eines Benutzers zu anderen Gruppen von Websitesammlungsadministratoren
 
 In dieser Aufgabe verwenden wir den Befehl **Add-Ehegatten** , um einen Benutzer zu einer SharePoint-Gruppe in einer Websitesammlung hinzuzufügen.
 
@@ -96,7 +96,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.onmicrosoft.com -Site https:/
 
 ```
 
-Lassen Sie uns beispielsweise die Gruppe "reVisoren" (Benutzername "glenr") zur ContosoTest-Websitesammlung in der Contoso1-Mandantschaft hinzufügen:
+Lassen Sie uns beispielsweise die Gruppe "Revisoren" (Benutzername "glenr") zur ContosoTest-Websitesammlung in der Contoso1-Mandantschaft hinzufügen:
 
 ```
 $tenant = "contoso1"

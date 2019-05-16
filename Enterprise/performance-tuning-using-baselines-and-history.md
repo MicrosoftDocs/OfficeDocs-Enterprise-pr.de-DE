@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/31/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Es gibt einige einfache Methoden zum Überprüfen der Verbindungsleistung zwischen Office 365 und Ihrem Unternehmen, mit denen Sie eine grobe Basis ihrer Konnektivität einrichten können. Wenn Sie den Leistungsverlauf ihrer Clientcomputerverbindungen kennen, können Sie Probleme frühzeitig erkennen, erkennen und Vorhersagen.
-ms.openlocfilehash: 328b8f66b86f2fc1880b3a9d65f4b9fd63b51d40
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a399cb0057e9cc62e180fea8a6d7b9dbf1993a5f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491836"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069521"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365-Leistung optimieren mit Basisplänen und Leistungsverlauf 
 
@@ -65,7 +65,7 @@ Ein Leistungsproblem ist kein Dienst Vorfall, obwohl Vorfälle zu einer langsame
     
 - Sie können das Problem auch replizieren, oder zumindest wissen Sie, dass es geschieht, wenn Sie die richtigen Schritte ausführen.
     
--  Wenn das Problem intermittierend ist, gibt es immer noch ein Muster, beispielsweise wissen Sie, dass von 10:00 AM Sie Anrufe von Benutzern haben, die nicht zuverlässig auf Office 365 zugreifen können, und dass die Anrufe um 12.00 Uhr absterben. 
+-  Wenn das Problem intermittierend ist, gibt es immer noch ein Muster, beispielsweise wissen Sie, dass von 10:00 am Sie Anrufe von Benutzern haben, die nicht zuverlässig auf Office 365 zugreifen können, und dass die Anrufe um 12.00 Uhr absterben. 
     
 Das klingt wohl vertraut; vielleicht zu vertraut. Wenn Sie wissen, dass es sich um ein Leistungsproblem handelt, wird die Frage "Was tun Sie als nächstes?". Mit dem Rest dieses Artikels können Sie genau feststellen, ob.
   
@@ -135,7 +135,7 @@ Hier sind einige Grundlagen, die einfache Tests mit Tools für Sie berechnen kö
     
 - Zeit von Ihrem Ausstieg Punkt zu Office 365 in Millisekunden
     
-- Standort in der Welt des Servers, der die URLS für Office 365 beim Browsen auflöst
+- Standort in der Welt des Servers, der die URLs für Office 365 beim Browsen auflöst
     
 - Die Geschwindigkeit der DNS-Auflösung Ihres ISP in Millisekunden, Inkonsistenzen bei der Paket Ankunft (Netzwerk Jitter), Upload-und Downloadzeiten in Millisekunden
     
@@ -198,15 +198,15 @@ Ziel dieser einfachen Methoden ist es zu lernen, einfache Leistungsbasislinien i
 ![Grundlegendes Netzwerk mit Client-, Proxy-und Cloud-und Tools-Vorschlägen PSPing, TraceTCP und Netzwerkablaufverfolgungen.](media/627bfb77-abf7-4ef1-bbe8-7f8cbe48e1d2.png)
   
 > [!NOTE]
-> TraceTCP ist in diesem Screenshot enthalten, da es ein nützliches Tool ist, um in Millisekunden zu zeigen, wie lange eine Anforderung zur Verarbeitung benötigt wird, und wie viele Netzwerkhops oder Verbindungen von einem Computer zum nächsten ausgeführt werden, die von der Anforderung benötigt werden, um ein Ziel zu erreichen. TraceTCP kann auch die Namen der Server angeben, die während des Hops verwendet werden, was für eine Microsoft Office 365-Problembehandlung hilfreich sein kann. > TraceTCP-Befehle können sehr einfach sein, beispielsweise: `tracetcp.exe outlook.office365.com:443`_GT_ _GT_ denken Sie daran, die Nummer der Portierung in den Befehl einzuschließen! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) ist ein kostenloser Download, aber basiert auf Wincap. Wincap ist ein Tool, das auch von Netmon verwendet und installiert wird. Wir verwenden Netmon auch im Abschnitt Erweiterte Methoden. 
+> TraceTCP ist in diesem Screenshot enthalten, da es ein nützliches Tool ist, um in Millisekunden zu zeigen, wie lange eine Anforderung zur Verarbeitung benötigt wird, und wie viele Netzwerkhops oder Verbindungen von einem Computer zum nächsten ausgeführt werden, die von der Anforderung benötigt werden, um ein Ziel zu erreichen. TraceTCP kann auch die Namen der Server angeben, die während des Hops verwendet werden, was für eine Microsoft Office 365-Problembehandlung hilfreich sein kann. > TraceTCP-Befehle können sehr einfach sein, beispielsweise: `tracetcp.exe outlook.office365.com:443`> > denken Sie daran, die Nummer der Portierung in den Befehl einzuschließen! > [TraceTCP](http://simulatedsimian.github.io/tracetcp_download.html) ist ein kostenloser Download, aber basiert auf Wincap. Wincap ist ein Tool, das auch von Netmon verwendet und installiert wird. Wir verwenden Netmon auch im Abschnitt Erweiterte Methoden. 
   
  Wenn Sie über mehrere Büros verfügen, müssen Sie auch an jedem dieser Standorte eine Reihe von Daten von einem Client behalten. Dieser Test misst die Wartezeit, bei der es sich in diesem Fall um einen Zahlenwert handelt, der die Zeitspanne zwischen dem Senden einer Anforderung an Office 365 durch den Client und der Antwort von Office 365 auf die Anforderung beschreibt. Die Tests werden innerhalb Ihrer Domäne auf einem Clientcomputer durchgeführt, und es wird erwartet, dass Sie einen Roundtrip zwischen dem Netzwerk, über einen Ausstiegspunkt, über das Internet zu Office 365 und zurückführen. 
   
-Es gibt verschiedene Möglichkeiten, den Ausgangspunkt zu behandeln, in diesem Fall den Proxy Server. Sie können eine Ablaufverfolgung zwischen 1 und 2 und dann 2 bis 3 durchführen und dann die Zahlen in Millisekunden addieren, um eine endgültige Gesamtsumme an den Rand Ihres Netzwerks zu erhalten. Sie können auch die Verbindung so konfigurieren, dass der Proxy für Office 365-Adressen umgangen wird. In einem größeren Netzwerk mit einer Firewall, einem Reverseproxy oder einer Kombination dieser beiden müssen Sie möglicherweise Ausnahmen auf dem Proxy Server vornehmen, die den Datenverkehr für viele URLs zulassen. Eine Liste der von Office 365 verwendeten Endpunkte finden Sie unter [office 365-URLs und IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2). Wenn Sie einen Authentifizierungs Proxy haben, beginnen Sie mit dem Testen von Ausnahmen für Folgendes:
+Es gibt verschiedene Möglichkeiten, den Ausgangspunkt zu behandeln, in diesem Fall den Proxy Server. Sie können eine Ablaufverfolgung zwischen 1 und 2 und dann 2 bis 3 durchführen und dann die Zahlen in Millisekunden addieren, um eine endgültige Gesamtsumme an den Rand Ihres Netzwerks zu erhalten. Sie können auch die Verbindung so konfigurieren, dass der Proxy für Office 365-Adressen umgangen wird. In einem größeren Netzwerk mit einer Firewall, einem Reverseproxy oder einer Kombination dieser beiden müssen Sie möglicherweise Ausnahmen auf dem Proxy Server vornehmen, die den Datenverkehr für viele URLs zulassen. Eine Liste der von Office 365 verwendeten Endpunkte finden Sie unter [Office 365-URLs und IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2). Wenn Sie einen Authentifizierungs Proxy haben, beginnen Sie mit dem Testen von Ausnahmen für Folgendes:
   
 - Ports 80 und 443
     
-- TCP und HTTPs
+- TCP und HTTPS
     
 - Verbindungen, die für eine dieser URLs ausgehen:
     
@@ -230,7 +230,7 @@ Um diese zu ihrer Proxyumgehungsliste in Internet Explorer hinzuzufügen, wechse
   
 Nachdem Sie Ihren Proxy umgangen haben, sollten Sie in der Lage sein, Ping oder PsPing direkt an einer Office 365-URL zu verwenden. Der nächste Schritt besteht darin, ping- **Outlook.office365.com**zu testen. Oder wenn Sie PsPing oder ein anderes Tool verwenden, mit dem Sie dem Befehl eine Portierungs Nummer geben können, PsPing gegen **Portal.microsoftonline.com:443** , um die durchschnittliche Roundtrip-Zeit in Millisekunden anzuzeigen. 
   
-Die Roundtrip-Zeit oder RTT ist ein Zahlenwert, der misst, wie lange es dauert, bis eine HTTP-Anforderung an einen Server wie outlook.office365.com gesendet wird, und eine Antwort zurück erhält, die erkennt, dass der Server dies getan hat. Manchmal wird dies als RTT abgekürzt. Dies sollte eine relativ kurze Zeitspanne sein.
+Die Roundtrip-Zeit oder RTT ist ein Zahlenwert, der misst, wie lange es dauert, bis eine HTTP-Anforderung an einen Server wie Outlook.office365.com gesendet wird, und eine Antwort zurück erhält, die erkennt, dass der Server dies getan hat. Manchmal wird dies als RTT abgekürzt. Dies sollte eine relativ kurze Zeitspanne sein.
   
 Sie müssen [PSPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.aspx) oder ein anderes Tool verwenden, das keine ICMP-Pakete verwendet, die von Office 365 blockiert sind, um diesen Test durchzuführen. 
   
@@ -254,7 +254,7 @@ Sie müssen [PSPing](https://technet.microsoft.com/en-us/sysinternals/jj729731.a
     
   - psping www.Yammer.com:443
     
-    ![Der PSPing-Befehl wird an microsoft-my.sharepoint.com-Portierung 443.](media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
+    ![Der PSPing-Befehl wird an Microsoft-My.SharePoint.com-Portierung 443.](media/3258f620-4513-4e82-95c9-06b387fc3a82.PNG)
   
 Stellen Sie sicher, dass Sie die Nummer 443 angeben. Denken Sie daran, dass Office 365 auf einem verschlüsselten Kanal funktioniert. Wenn Sie ohne die PsPing, schlägt Ihre Anforderung fehl. Nachdem Sie Ihre kurze Liste gepingt haben, suchen Sie nach der durchschnittlichen Zeit in Millisekunden (MS). Das möchten Sie aufzeichnen!
   
@@ -308,13 +308,13 @@ Wenn Sie wirklich wissen möchten, was mit Ihren Internet Anfragen an Office 365
   
 Das Erstellen einer Leistungsbasislinie ist der einfache Teil dieser Methode, und viele der Schritte sind identisch mit der Behandlung eines Leistungsproblems. Die fortgeschritteneren Methoden zum Erstellen von Baselines für die Leistung erfordern, dass Sie Netzwerkablaufverfolgungen übernehmen und speichern. In den meisten der Beispiele in diesem Artikel wird SharePoint Online verwendet, Sie sollten jedoch eine Liste allgemeiner Aktionen für die Office 365-Dienste entwickeln, die Sie testen und aufzeichnen möchten. Hier ist ein Basis Beispiel:
   
-- Basisplan für SPO-* * Schritt 1: * * Durchsuchen der Homepage der SPO-Website und Ausführen einer Netzwerkablaufverfolgung. Speichern Sie die Ablaufverfolgung. 
+- Basisplan für SpO-* * Schritt 1: * * Durchsuchen der Homepage der SPO-Website und Ausführen einer Netzwerkablaufverfolgung. Speichern Sie die Ablaufverfolgung. 
     
-- Basisplan für SPO- **Schritt 2:** suchen Sie nach einem Begriff (beispielsweise Ihrem Firmennamen) über die Unternehmenssuche, und führen Sie eine Netzwerkablaufverfolgung aus. Speichern Sie die Ablaufverfolgung. 
+- Basisplan für SpO- **Schritt 2:** suchen Sie nach einem Begriff (beispielsweise Ihrem Firmennamen) über die Unternehmenssuche, und führen Sie eine Netzwerkablaufverfolgung aus. Speichern Sie die Ablaufverfolgung. 
     
-- Basisplan für SPO- **Schritt 3:** Hochladen einer umfangreichen Datei in eine SharePoint Online-Dokumentbibliothek und Ausführen einer Netzwerkablaufverfolgung. Speichern Sie die Ablaufverfolgung. 
+- Basisplan für SpO- **Schritt 3:** Hochladen einer umfangreichen Datei in eine SharePoint Online-Dokumentbibliothek und Ausführen einer Netzwerkablaufverfolgung. Speichern Sie die Ablaufverfolgung. 
     
-- Basisplan für SPO- **Schritt 4:** Durchsuchen der Homepage der OneDrive-Website und Ausführen einer Netzwerkablaufverfolgung. Speichern Sie die Ablaufverfolgung. 
+- Basisplan für SpO- **Schritt 4:** Durchsuchen der Homepage der OneDrive-Website und Ausführen einer Netzwerkablaufverfolgung. Speichern Sie die Ablaufverfolgung. 
     
 Diese Liste sollte die wichtigsten allgemeinen Aktionen einbeziehen, die Benutzer für SharePoint Online ausführen. Beachten Sie, dass der letzte Schritt zur Ablaufverfolgung von OneDrive for Business einen Vergleich zwischen der Last der SharePoint Online-Homepage (die häufig von Unternehmen angepasst wird) und der OneDrive for Business-Startseite erstellt wird, die selten angepasst wird. Dies ist ein sehr grundlegender Test bei einer langsamen ladenden SharePoint Online-Website. Sie können diese Unterschiede in Ihren Tests aufzeichnen.
   

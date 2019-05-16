@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: In diesem Artikel wird erläutert, welche Aspekte beim Entwerfen von Seiten für eine optimale Leistung in SharePoint Online berücksichtigt werden müssen.
-ms.openlocfilehash: 07938770d711477126f78fc583e8d2533ba5c1d1
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4743364f6e8a1e84800085d0875abad84491780b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067211"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Einführung in die Leistungsoptimierung für SharePoint Online
 
@@ -52,7 +52,7 @@ Ein einfacher Benchmark-Test, den Sie verwenden können, wäre das Messen der Le
   
 ## <a name="use-a-standard-user-account-when-checking-performance"></a>Verwenden eines Standardbenutzerkontos beim Überprüfen der Leistung
 
-Ein Website Sammlungs Administrator, Websitebesitzer, Editor oder mitWirkender gehört zu zusätzlichen Sicherheitsgruppen, verfügt über zusätzliche Berechtigungen und verfügt daher über zusätzliche Elemente, die SharePoint auf einer Seite lädt.
+Ein Website Sammlungs Administrator, Websitebesitzer, Editor oder Mitwirkender gehört zu zusätzlichen Sicherheitsgruppen, verfügt über zusätzliche Berechtigungen und verfügt daher über zusätzliche Elemente, die SharePoint auf einer Seite lädt.
   
 Dies gilt für SharePoint on-premises und SharePoint Online, aber in einem lokalen Szenario sind die Unterschiede nicht so leicht zu erkennen wie in SharePoint Online.
   

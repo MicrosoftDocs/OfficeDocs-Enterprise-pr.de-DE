@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 83e2859a-c673-47c4-880a-01cdfdadb93e
 description: 'Zusammenfassung: Grundlegende Informationen darüber, warum für die Cloudakzeptanz ein neuer Ansatz für Investitionen in die Netzwerkinfrastruktur erforderlich ist.'
-ms.openlocfilehash: c8fba120292b89894850312a84fd6067d925a07f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 47d24a4f545cfae8a6bd1c507a61f48b6d26cc7d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067631"
 ---
 # <a name="evolving-your-network-for-cloud-connectivity"></a>Weiterentwickeln Ihres Netzwerks für Cloudkonnektivität
 

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Zusammenfassung: Konfigurieren Sie die Domänencontroller und DirSync-Server für die Verbundauthentifzierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: bda22a1df0165724f660019e28a9f088280fea4f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f04488ad9a99111734d476725eb8e9d423c167cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067481"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern
 
@@ -38,11 +38,11 @@ Zunächst müssen Sie die Spalte **Name des virtuellen Computers** in Tabelle M 
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png) (erster Domänencontroller, Beispiel DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png) (zweiter Domänencontroller, Beispiel DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|3.  <br/> |![](./media/Common-Images/TableLine.png)(DirSync-Server, Beispiel DS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|3.  <br/> |![](./media/Common-Images/TableLine.png)(Dirsync-Server, Beispiel ds1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![](./media/Common-Images/TableLine.png)(erster AD FS-Server, Beispiel ADFS1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![](./media/Common-Images/TableLine.png)(zweiter AD FS-Server, Beispiel ADFS2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![](./media/Common-Images/TableLine.png)(erster Webanwendungs-Proxy Server, Beispiel WEB1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|7.  <br/> |![](./media/Common-Images/TableLine.png)(zweiter Webanwendungs-Proxy Server, Beispiel WEB2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|7.  <br/> |![](./media/Common-Images/TableLine.png)(zweiter Webanwendungs-Proxy Server, Beispiel web2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
  **Tabelle M – virtuelle Computer für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Azure**
   
@@ -232,7 +232,7 @@ New-ADReplicationSubnet -Name $vnetSpace -Site $vnet
 
 ## <a name="configure-the-dirsync-server"></a>Konfigurieren des DirSync-Servers
 
-Verwenden Sie den Remote Desktop Client Ihrer Wahl, und erstellen Sie eine Remotedesktopverbindung mit dem virtuellen Computer des dirSync-Servers. Verwenden Sie den Intranet-DNS-Namen oder den Computernamen des Servers und die Anmeldeinformationen des lokalen Administratorkontos.
+Verwenden Sie den Remote Desktop Client Ihrer Wahl, und erstellen Sie eine Remotedesktopverbindung mit dem virtuellen Computer des Dirsync-Servers. Verwenden Sie den Intranet-DNS-Namen oder den Computernamen des Servers und die Anmeldeinformationen des lokalen Administratorkontos.
   
 Als Nächstes fügen Sie diese an die entsprechende AD DS-Domäne an, indem Sie die folgenden Befehle an der Windows PowerShell-Ansage eingeben.
   

@@ -4,7 +4,7 @@ ms.author: jhendr
 author: JoanneHendrickson
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 48e16935-3429-456a-8fe6-50afa257924c
 description: 'Zusammenfassung: Erfahren Sie, wie Sie eine integrierte Testumgebung erstellen, in der ein Server mit Exchange Server 2013, ein Server mit Lync Server 2013 und ein Server mit SharePoint Server 2013 ausgeführt werden.'
-ms.openlocfilehash: b5d4527c063b0bfbac205007a9642b8edafd813b
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+ms.openlocfilehash: 58c7d5ad701471e87c5e6600af2f9a36ac374448
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070401"
 ---
 # <a name="test-lab-guide-configure-an-integrated-exchange-lync-and-sharepoint-test-lab"></a>Testumgebungsanleitung: Konfigurieren einer integrierten Exchange-, Lync- und SharePoint-Testumgebung
 
@@ -54,7 +54,7 @@ Weitere Informationen zum Konfigurieren dieser Testumgebung in Hyper-V finden Si
   
 ## <a name="download-the-test-lab-guide"></a>Die Testumgebungsanleitung herunterladen
 
-[Test Lab Guide: Konfigurieren einer integrierten Exchange, Lync und SharePoint-Testlabor](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
+[Testumgebungsanleitung: Konfigurieren einer integrierten Exchange-, Lync- und SharePoint-Testumgebung ](https://go.microsoft.com/fwlink/p/?LinkId=313670) (https://go.microsoft.com/fwlink/p/?LinkId=313670)
   
 ## <a name="see-also"></a>Siehe auch
 

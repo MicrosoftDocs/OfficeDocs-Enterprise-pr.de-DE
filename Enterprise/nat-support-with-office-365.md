@@ -1,10 +1,10 @@
 ---
-title: NAT-Unterstützung in Office 365
+title: NAT-Unterstützung mit Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,65 +14,65 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
-description: 'Zusammenfassung: Hier erhalten Sie ausführliche Informationen dazu, wie Sie die richtige Anzahl Clients einschätzen, die Sie pro IP-Adresse mit der Netzwerkadressübersetzung (Network Address Translation, NAT) in Ihrem Unternehmen verwenden können.'
-ms.openlocfilehash: 733d591bded599cfaece988a624baa7a3c0d4b06
-ms.sourcegitcommit: 69d60723e611f3c973a6d6779722aa9da77f647f
+description: 'Zusammenfassung: enthält Informationen dazu, wie Sie die korrekte Anzahl von Clients, die Sie pro IP-Adresse in Ihrer Organisation verwenden können, mithilfe von Netzwerkadressübersetzung (Network Address Translation, NAT) annähern.'
+ms.openlocfilehash: bdbf108163c7b22fd6d7583436af5f0ed655784c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22540704"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069881"
 ---
-# <a name="nat-support-with-office-365"></a>NAT-Unterstützung in Office 365
+# <a name="nat-support-with-office-365"></a>NAT-Unterstützung mit Office 365
 
- **Zusammenfassung:** Hier erhalten Sie ausführliche Informationen dazu, wie Sie die richtige Anzahl Clients einschätzen, die Sie pro IP-Adresse mit der Netzwerkadressübersetzung (Network Address Translation, NAT) in Ihrem Unternehmen verwenden können. 
+ **Zusammenfassung:** Enthält ausführliche Informationen dazu, wie Sie die richtige Anzahl von Clients, die Sie pro IP-Adresse in Ihrer Organisation verwenden können, mithilfe von Netzwerkadressübersetzung (Network Address Translation, NAT) annähern. 
   
-Bisher vorgeschlagene Hinweise, dass die maximale Anzahl von Exchange-Clients, die Sie pro IP-Adresse verwenden sollten, Verbindung mit Office 365 etwa 2.000 Clients pro Netzwerkports war.
+Bisher wurde empfohlen, dass die maximale Anzahl von Exchange-Clients, die Sie pro IP-Adresse zum Herstellen einer Verbindung mit Office 365 verwenden sollten, ungefähr 2.000 Clients pro Netzwerkport war.
   
 ## <a name="why-use-nat"></a>Gründe für die Verwendung von NAT
 
-Mithilfe von NAT können Tausende Benutzer in einem Unternehmensnetzwerk "wenige öffentlich routingfähige IP-Adressen gemeinsam nutzen".
+Durch die Verwendung von NAT können Tausende von Personen in einem Unternehmensnetzwerk einige öffentlich routingfähige IP-Adressen freigeben.
   
-Die meisten Unternehmensnetzwerke verwenden einen privaten (RFC1918) IP-Adressraum. Private Adressräume werden durch die IANA (Internet Assigned Numbers Authority) zugewiesen und sind ausschließlich für Netzwerke bestimmt, die nicht direkt vom und zum Internet routen.
+Die meisten Unternehmensnetzwerke verwenden einen privaten (RFC1918) IP-Adressraum. Privater Adressraum wird von der Internet Assigned Numbers Authority (IANA) zugewiesen und soll ausschließlich für Netzwerke bestimmt werden, die nicht direkt an das und aus dem globalen Internet weitergeleitet werden.
   
-Um Internetzugriff auf Geräte auf einem privaten IP-Adressraum zu ermöglichen, verwenden Sie Organisationen Gateway-Technologien wie Firewalls und Proxys, die Netzwerkadressübersetzung (NAT) oder Port Address Translation (PAT) Services bereitstellen. Diese Gateways stellen Datenverkehr von interne Geräte mit dem Internet (einschließlich Office 365) angezeigt werden, von einer oder mehreren öffentlich routingfähige IP-Adressen kommen. Jede ausgehende Verbindung von einem internen Gerät wird in einer anderen Quelle TCP-Port auf die öffentliche IP-Adresse übersetzt. 
+Um Internet Zugriff auf Geräte in einem privaten IP-Adressraum bereitzustellen, verwenden Organisationen Gateway-Technologien wie Firewalls und Proxys, die die Netzwerkadressübersetzung (NAT) oder Pat-Dienste (Port Address Translation) bereitstellen. Diese Gateways stellen den Datenverkehr von internen Geräten zum Internet (einschließlich Office 365) scheinbar aus einer oder mehreren öffentlich routingfähigen IP-Adressen her. Jede ausgehende Verbindung von einem internen Gerät wird in einen anderen TCP-Quellanschluss der öffentlichen IP-Adresse übersetzt. 
   
-## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Warum müssen Sie so viele Verbindungen zu Office 365 gleichzeitig geöffnet haben?
+## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Warum müssen Sie so viele Verbindungen zu Office 365 gleichzeitig öffnen?
 
-Outlook kann acht oder mehr Verbindungen öffnen (in Situationen, in denen Add-Ins, freigegebene Kalender, Postfächer etc. vorhanden sind). Auf einem Windows-basierten NAT-Gerät sind höchstens 64.000 Ports verfügbar. Daher beträgt die Höchstzahl 8.000 Benutzer pro IP-Adresse. Bitte beachten Sie, dass die Anzahl der verfügbaren Ports bei Kunden, die kein Windows-basiertes Betriebssystem für NAT verwenden, abhängig von NAT-Gerät oder -Software ist. In einem solchen Szenario liegt die Höchstzahl der Ports ggf. unter 64.000. Die Verfügbarkeit der Ports ist außerdem abhängig von weiteren Faktoren: So beansprucht Windows 4.000 Ports für sich, wodurch die Anzahl der verfügbaren Ports auf 60.000 reduziert wird. Zudem besteht die Möglichkeit, dass weitere Anwendungen, die zur gleichen Zeit eine Verbindung aufbauen – z. B. Internet Explorer – ebenfalls Ports in Anspruch nehmen.
+Outlook kann acht oder mehr Verbindungen öffnen (in Situationen, in denen Add-Ins, freigegebene Kalender, Postfächer usw. vorhanden sind). Da für ein Windows-basiertes NAT-Gerät maximal 64.000 Ports verfügbar sind, können maximal 8.000 Benutzer hinter einer IP-Adresse liegen, bevor die Ports erschöpft sind. Beachten Sie, dass die insgesamt verfügbaren Ports davon abhängen, welche NAT-Geräte oder-Software verwendet werden, wenn Kunden nicht-Windows-Betriebssystembasierte Geräte für NAT verwenden. In diesem Szenario kann die maximale Anzahl von Ports kleiner als 64.000 sein. Die Verfügbarkeit von Ports wird auch von anderen Faktoren beeinflusst, wie beispielsweise der Windows-Beschränkung von 4.000-Ports für die eigene Verwendung, wodurch die Gesamtzahl der verfügbaren Ports auf 60.000 reduziert wird. möglicherweise gibt es andere Anwendungen wie Internet Explorer, die gleichzeitig eine Verbindung herstellen können. , die zusätzliche Ports erfordern.
   
-## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Berechnung der Höchstzahl an unterstützten Geräten für eine einzelne öffentliche IP-Adresse mit Office 365
+## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Berechnen der maximal unterstützten Geräte hinter einer einzelnen öffentlichen IP-Adresse mit Office 365
 
-Um die maximale Anzahl der Geräte hinter einer einzelnen öffentlichen IP-Adresse zu ermitteln, sollten Sie den Netzwerkverkehr zum Bestimmen der Spitzenlast Port-Auslastung pro Client überwachen. Darüber hinaus sollte Spitzenlast-Faktor beträgt die Verwendung von Port (mindestens 4) verwendet werden. 
+Wenn Sie die maximale Anzahl von Geräten hinter einer einzelnen öffentlichen IP-Adresse ermitteln möchten, sollten Sie den Netzwerkdatenverkehr überwachen, um den maximalen Port Verbrauch pro Client zu bestimmen. Außerdem sollte ein Peak-Faktor für die Verwendung der Portierung verwendet werden (mindestens 4). 
   
- **Anhand der folgenden Formel berechnet die Anzahl der unterstützten Geräte pro IP-Adresse:**
+ **Verwenden Sie die folgende Formel, um die Anzahl unterstützter Geräte pro IP-Adresse zu berechnen:**
   
-Höchstanzahl unterstützter Geräte hinter einer einzelnen öffentlichen IP-Adresse = (64.000 – eingeschränkte Ports) / (Spitzenlast Port-Nutzung + Spitzenlast-Faktor)
+Maximal unterstützte Geräte hinter einer einzelnen öffentlichen IP-Adresse = (64.000-restricted Ports)/(Peak Port Verbrauch + Spitzen Faktor)
   
- **Wenn beispielsweise die folgenden true haben:**
+ **Wenn beispielsweise Folgendes zutrifft:**
   
 - **Eingeschränkte Ports:** 4.000 für das Betriebssystem 
     
-- **Spitzenlast Port-Nutzung:** 6 pro Gerät 
+- **Maximaler Stromverbrauch:** 6 pro Gerät 
     
-- **Spitzenfaktor:** 4 
+- **Höchstwert:** 4 
     
-Klicken Sie dann die Höchstzahl an unterstützten Geräten für eine einzelne öffentliche IP-Adresse = (64.000-4.000) / (6 + 4) = 6.000
+Dann werden die maximal unterstützten Geräte hinter einer einzelnen öffentlichen IP-Adresse = (64.000-4000)/(6 + 4) = 6.000
   
-Mit der Veröffentlichung von Office 365-hosting enthalten in den Updates von September 2011 für Microsoft Office Outlook 2007 oder vom November 2011 für Microsoft Outlook 2010 oder einem neueren Update, die Anzahl der Verbindungen von Outlook (sowohl Office Outlook 2007 mit Service pack 2 und Outlook 2010-Paket) zu Exchange kann so wenige als 2 sein. Sie müssen Faktor in den verschiedenen Betriebssystemen Benutzerverhaltensweisen, und so weiter, um die minimale und maximale Anzahl von Ports zu ermitteln, die Ihr Netzwerk bei Spitzenbelastungen erforderlich ist.
+Mit der Version von Office 365 Hosting Pack, die in den Updates vom September 2011 für Microsoft Office Outlook 2007 oder November 2011 für Microsoft Outlook 2010 oder einem späteren Update enthalten ist, ist die Anzahl der Verbindungen von Outlook (sowohl Office Outlook 2007 mit Dienst Pack 2 und Outlook 2010) an Exchange kann nur 2 sein. Sie müssen die unterschiedlichen Betriebssysteme, Benutzerverhalten usw. berücksichtigen, um die Mindest-und Höchstzahl der Ports zu ermitteln, die Ihr Netzwerk am höchsten ist.
   
-Wenn Sie mehrere Geräte hinter einer einzelnen öffentlichen IP-Adresse unterstützen möchten, führen Sie die folgenden Schritte durch, um die maximale Anzahl von Geräten bewerten, die unterstützt werden können:
+Wenn Sie mehr Geräte hinter einer einzelnen öffentlichen IP-Adresse unterstützen möchten, führen Sie die folgenden Schritte aus, um die maximale Anzahl von Geräten zu bewerten, die unterstützt werden können:
   
-Überwachen des Netzwerkverkehrs Spitzenlast Port-Auslastung pro Client bestimmen. Sie sollten diese Daten zu erfassen:
+Überwachen des Netzwerkdatenverkehrs zur Bestimmung des Spitzen Port Verbrauchs pro Client Sie sollten diese Daten erfassen:
   
-- Von mehreren geografischen Orten aus
+- Von mehreren Standorten
     
-- Für mehrere Geräte
+- Von mehreren Geräten
     
-- Zu mehreren Zeitpunkten
+- Mehrmals
     
-Verwenden Sie die oben angegebene Formel, um die Höchstzahl der Nutzer pro IP-Adresse in deren jeweiligen Umgebung zu errechnen.
+Verwenden Sie die vorhergehende Formel, um die maximalen Benutzer pro IP-Adresse zu berechnen, die in Ihrer Umgebung unterstützt werden können.
   
-Es gibt verschiedene Methoden zum Verteilen der Clientlast auf Weitere öffentliche IP-Adressen. Strategien zur Verfügung, abhängig von der Funktionen des Unternehmens-Gateway-Lösung. Die einfachste Lösung ist Ihre Benutzeradressraum segmentieren und "zuweisen" statisch eine Anzahl von IP-Adressen an jedes Gateway. Eine andere Möglichkeit, die viele Gateway-Geräte bieten ist die Möglichkeit, einen Pool von IP-Adressen verwenden. Die Vorteile der Adresspool ist, es ist sehr viel dynamischen und mit weitaus geringerer Wahrscheinlichkeit Anpassung erforderlich ist, wenn Ihre Benutzerbasis wächst.
+Es gibt verschiedene Methoden zum Verteilen der Clientauslastung über zusätzliche öffentliche IP-Adressen. Verfügbare Strategien hängen von den Funktionen der Unternehmens Gateway-Lösung ab. Die einfachste Lösung besteht darin, ihren Benutzeradressraum zu segmentieren und jedem Gateway statisch eine Reihe von IP-Adressen zuzuweisen. Eine weitere Alternative, die viele Gateway-Geräte bieten, ist die Möglichkeit, einen Pool von IP-Adressen zu verwenden. Der Vorteil des Adresspools besteht darin, dass er viel dynamischer ist und weniger wahrscheinlich ist, dass eine Anpassung erforderlich ist, wenn die Benutzerbasis wächst.
   
 ## <a name="see-also"></a>Siehe auch
 

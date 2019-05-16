@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: bf2295c4-d411-49cd-aaa5-116a4a456c5a
 description: 'Zusammenfassung: Verstehen Sie, wie Sie mit ExpressRoute schnellere und zuverlässigere Verbindungen zu Microsoft-Clouddiensten und -Plattformen erzielen können.'
-ms.openlocfilehash: a3b36e98c946bc3ae7281bd38cd4b98820ee8afb
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0bab6cf3d400293221692a595346445afd242e48
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33488131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067681"
 ---
 # <a name="expressroute-for-microsoft-cloud-connectivity"></a>ExpressRoute für Microsoft-Cloudkonnektivität
 
@@ -102,7 +102,7 @@ Eine einzelne Express Route-Verbindung unterstützt bis zu zwei verschiedene BGP
 
 ![Abbildung 3: die beiden verschiedenen BGP-Beziehungen in einer einzelnen Express Route-Verbindung](media/Network-Poster/ERPeering.png)
   
-Abbildung 3 zeigt eine ExpressRoute-Verbindung aus einem lokalen Netzwerk. Die Express Route-Verbindung hat zwei logische Peering-Beziehungen. Eine Microsoft-Peering-Beziehung geht an Microsoft-SaaS-Dienste, einschließlich Office 365, Dynamcs 365 und Azure PaaS-Dienste. Eine private Peeringbeziehung besteht zu Azure IaaS und zu einem virtuellen Netzwerkgateway, auf dem virtuelle Computer gehostet werden.
+Abbildung 3 zeigt eine ExpressRoute-Verbindung aus einem lokalen Netzwerk. Die Express Route-Verbindung hat zwei logische Peering-Beziehungen. Eine Microsoft-Peering-Beziehung geht an Microsoft-Saas-Dienste, einschließlich Office 365, Dynamcs 365 und Azure PaaS-Dienste. Eine private Peeringbeziehung besteht zu Azure IaaS und zu einem virtuellen Netzwerkgateway, auf dem virtuelle Computer gehostet werden.
   
 Die Microsoft-BGP-Peeringbeziehung:  
   
@@ -246,7 +246,7 @@ Sie können auch die folgenden Optionen in Ihre ExpressRoute-Bereitstellung inte
   
 - **Sicherheit an Ihrem Edge:** Um erweiterte Sicherheit für den Datenverkehr bereitzustellen, der über die ExpressRoute-Verbindung gesendet und empfangen wird, z. B. die Überprüfung von Datenverkehr oder Angriffserkennung/Schadsoftwareerkennung, platzieren Sie Ihre Sicherheitsgeräte im Datenverkehrpfad innerhalb Ihres Umkreisnetzwerks oder an der Grenze Ihres Intranets.
     
-- **Internet Datenverkehr für VMS:** Um zu verhindern, dass Azure-VMs Datenverkehr direkt mit Internet Standorten initiieren, werben Sie die Standardroute an Microsoft. Datenverkehr an das Internet wird über die ExpressRoute-Verbindung und über Ihre lokalen Proxyserver geleitet. Datenverkehr von virtuellen Azure-Computern an Azure PaaS-Dienste oder Office 365 wird zurück über die ExpressRoute-Verbindung geleitet.
+- **Internet Datenverkehr für VMS:** Um zu verhindern, dass Azure-VMS Datenverkehr direkt mit Internet Standorten initiieren, werben Sie die Standardroute an Microsoft. Datenverkehr an das Internet wird über die ExpressRoute-Verbindung und über Ihre lokalen Proxyserver geleitet. Datenverkehr von virtuellen Azure-Computern an Azure PaaS-Dienste oder Office 365 wird zurück über die ExpressRoute-Verbindung geleitet.
     
 - **WAN-Optimierungen:** Sie können WAN-Optimierungen auf beiden Seiten einer privaten Peeringverbindung für ein standortübergreifendes virtuelles Azure-Netzwerk (VNet) bereitstellen. Verwenden Sie innerhalb des Azure VNet ein Netzwerkgerät für die WAN-Optimierung aus dem Azure Marketplace sowie benutzerdefiniertes Routing, um den Verkehr über das Gerät zu leiten.
     

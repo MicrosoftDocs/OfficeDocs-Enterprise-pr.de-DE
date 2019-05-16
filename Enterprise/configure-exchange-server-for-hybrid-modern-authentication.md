@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 11/16/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: Hybrid modern Authentication (HMA) ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
-ms.openlocfilehash: 364f95bbbc06f477d258ed55a8711864e7a87e69
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 98a47f9527b3922767bfd8240790d7cfdeb14936
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490091"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068041"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
 
@@ -53,7 +53,7 @@ Turning HMA on Means:
     
 5. Aktivieren von HMA in der über Schaltung
     
- **Hinweis** Unterstützt Ihre Office-Version MA? Erfahren Sie [, wie die moderne Authentifizierung für office 2013-und office 2016-Client-apps funktioniert](modern-auth-for-office-2013-and-2016.md).
+ **Hinweis** Unterstützt Ihre Office-Version MA? Erfahren Sie [, wie die moderne Authentifizierung für Office 2013-und Office 2016-Client-apps funktioniert](modern-auth-for-office-2013-and-2016.md).
   
 ## <a name="make-sure-you-meet-all-the-pre-reqs"></a>Stellen Sie sicher, dass Sie alle Prä-reqs
 
@@ -61,9 +61,9 @@ Da viele der Voraussetzungen sowohl für Skype for Business als auch für Exchan
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Hinzufügen von lokalen Webdienst-URLs als SPNs in Azure AD
 
-Führen Sie die Befehle aus, die ihre lokalen Webdienst-URLs als Azure AD-SPNs zuweisen. SPNs werden von Clientcomputern und-Geräten während der Authentifizierung und Autorisierung verwendet. Alle URLs, die zum Herstellen einer Verbindung von lokal zu Azure Active Directory (AAD) verwendet werden können, müssen in AAD registriert werden (Dies umfasst sowohl interne als auch externe Namespaces).
+Führen Sie die Befehle aus, die ihre lokalen Webdienst-URLs als Azure AD-SPNs zuweisen. SPNs werden von Clientcomputern und-Geräten während der Authentifizierung und Autorisierung verwendet. Alle URLs, die zum Herstellen einer Verbindung von lokal zu Azure Active Directory (AAD) verwendet werden können, müssen in Aad registriert werden (Dies umfasst sowohl interne als auch externe Namespaces).
   
-Sammeln Sie zunächst alle URLs, die Sie in AAD hinzufügen müssen. Führen Sie die folgenden Befehle lokal aus:
+Sammeln Sie zunächst alle URLs, die Sie in Aad hinzufügen müssen. Führen Sie die folgenden Befehle lokal aus:
   
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
@@ -72,9 +72,9 @@ Get-ActiveSyncVirtualDirectory | FL server,*url*
 Get-OABVirtualDirectory | FL server,*url*
 ```
     
-Stellen Sie sicher, dass die URLs, mit denen eine Verbindung hergestellt werden kann, als HTTPS-Dienstprinzipalnamen in AAD aufgeführt werden.
+Stellen Sie sicher, dass die URLs, mit denen eine Verbindung hergestellt werden kann, als HTTPS-Dienstprinzipalnamen in Aad aufgeführt werden.
   
-1. Stellen Sie zunächst eine Verbindung mit AAD her, um [diese Anweisungen](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)zu erhalten. 
+1. Stellen Sie zunächst eine Verbindung mit Aad her, um [diese Anweisungen](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)zu erhalten. 
 
  **Hinweis** Sie müssen auf dieser Seite die Option Connect-MsolService verwenden, um den folgenden Befehl verwenden zu können. 
     
@@ -86,7 +86,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | 
 
 Notieren Sie sich (und Screenshot für den späteren Vergleich) die Ausgabe dieses Befehls, der eine https:// *autodiscover.yourdomain.com* -und https:// *Mail.yourdomain.com* -URL enthalten sollte, aber meistens aus SPNs besteht, die mit 00000002-0000-0ff1-ce00-000000000000/. Wenn Ihre lokalen https://-URLs fehlen, müssen wir diese Datensätze dieser Liste hinzufügen. 
   
-3. Wenn Ihre internen und externen MAPI/HTTP-, EWS-, ActiveSync-, OAB-und autoDiscover-Datensätze in dieser Liste nicht angezeigt werden, müssen Sie Sie mithilfe des folgenden Befehls`mail.corp.contoso.com`hinzufügen (`owa.contoso.com`die Beispiel-URLs sind ' ' und ' ', aber Sie würden **die Beispiel-URLs durch ihre eigenen ersetzen** ) : <br/>
+3. Wenn Ihre internen und externen MAPI/http-, EWS-, ActiveSync-, OAB-und autodiscover-Datensätze in dieser Liste nicht angezeigt werden, müssen Sie Sie mithilfe des folgenden Befehls`mail.corp.contoso.com`hinzufügen (`owa.contoso.com`die Beispiel-URLs sind ' ' und ' ', aber Sie würden **die Beispiel-URLs durch ihre eigenen ersetzen** ) : <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -97,7 +97,7 @@ Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -S
  
 4. Überprüfen Sie, ob Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal erneut aus Schritt 2 ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/den Screenshot von before mit der neuen Liste der SPNs (Sie können auch die neue Liste für Ihre Einträge Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In diesem Beispiel enthält die Liste der SPNs nun die spezifischen URLs `https://mail.corp.contoso.com` und. `https://owa.contoso.com` 
   
-## <a name="verify-virtual-directories-are-properly-configured"></a>Sicherstellen, dass virtuelle Verzeichnisse OrdnungsGemäß konfiguriert sind
+## <a name="verify-virtual-directories-are-properly-configured"></a>Sicherstellen, dass virtuelle Verzeichnisse ordnungsgemäß konfiguriert sind
 
 Vergewissern Sie sich nun, dass OAuth in Exchange in allen virtuellen Verzeichnissen, die Outlook möglicherweise verwendet, ordnungsgemäß aktiviert ist, indem Sie die folgenden Befehle ausführen:
 

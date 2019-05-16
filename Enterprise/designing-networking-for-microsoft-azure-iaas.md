@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 9cb70c9d-9ed9-47cc-af5a-6403d87d3372
 description: 'Zusammenfassung: Hier erfahren Sie, wie Sie das optimierte Netzwerk für Arbeitsauslastungen in Microsoft Azure IaaS entwerfen.'
-ms.openlocfilehash: c41e92445dd01a94b7d305b521bbd4330311fcb4
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b06564c8a86c59dac4ac9a5380cd88cf9d045974
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068131"
 ---
 # <a name="designing-networking-for-microsoft-azure-iaas"></a>Entwerfen von Netzwerken für Microsoft Azure-IaaS
 
@@ -114,7 +114,7 @@ Nachfolgend finden Sie die Schritte und Beispiele zum Bestimmen des Gateway-Subn
 2. Legen Sie die Bits im Variablen Teil des VNet-Adressraums (b) auf 0 für die Gateway-Subnetz-Bits (G) fest, andernfalls 1 (V). Für unser Beispiel verwenden wir den 10.119.0.0/16-Adressraum für die VNet.
 <br/>
 <br/>10,119. bbbbbbbb. bbbbbbbb
-<br/>10,119. VVVVVVVV. VVVVGGGG
+<br/>10,119. VVVVVVVV . VVVVGGGG
 <br/>10,119. 11111111. 11110000
 <br/><br/>
 3. Konvertieren Sie das Ergebnis aus Schritt 2 in Dezimal und Express als Adressraum. Für unser Beispiel 10,119. 11111111. 11110000 ist 10.119.255.240, und mit der Präfixlänge aus Schritt 1 (28 in unserem Beispiel) lautet das resultierende Gateway-Subnetz-Adresspräfix 10.119.255.240/28.
@@ -376,7 +376,7 @@ Da das Azure-Gateway keine zusammengefassten Routen zulässt, müssen Sie den Ad
   
 Abbildung 16 zeigt eine Darstellung eines Adressraums mit dem Stammraum und dem VNet-Adressraum.
   
-NachFolgend finden Sie ein Beispiel für das Definieren der Präfixe für den Adressraum des lokalen Netzwerks um den Adressraum "Hole", der vom VNet erstellt wurde:
+Nachfolgend finden Sie ein Beispiel für das Definieren der Präfixe für den Adressraum des lokalen Netzwerks um den Adressraum "Hole", der vom VNet erstellt wurde:
   
 - Eine Organisation verwendet Teile des privaten Adressraums (10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16) in ihrem lokalen Netzwerk. Die Organisation verwendet Option 2 und 10.100.100.0/24 als ihren VNet-Adressraum.
     
@@ -385,7 +385,7 @@ In Tabelle 7 sind die Schritte und die resultierenden Präfixe aufgeführt, die 
 |**Schritt**|**Ergebnisse**|
 |:-----|:-----|
 |1. Auflisten der Präfixe, die nicht der Stammraum für den VNet-Adressraum sind.  <br/> |172.16.0.0/12 und 192.168.0.0/16  <br/> |
-|2. aufListen der nicht überlappenden Präfixe für Variable Oktette bis einschließlich des zuletzt verwendeten Oktetts im VNet-Adressraum.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 Präfixe, Überspringen von 10.100.0.0/16)  <br/> |
+|2. Auflisten der nicht überlappenden Präfixe für Variable Oktette bis einschließlich des zuletzt verwendeten Oktetts im VNet-Adressraum.  <br/> |10.0.0.0/16, 10.1.0.0/16... 10.99.0.0/16, 10.101.0.0/16... 10.254.0.0/16, 10.255.0.0/16 (255 Präfixe, Überspringen von 10.100.0.0/16)  <br/> |
 |3. Listen Sie die nicht überlappenden Präfixe innerhalb des zuletzt verwendeten Oktetts des VNet-Adressraums auf.  <br/> |10.100.0.0/24, 10.100.1.0/24... 10.100.99.0/24, 10.100.101.0/24... 10.100.254.0/24, 10.100.0.255.0/24 (255 Präfixe, Überspringen von 10.100.100.0/24)  <br/> |
    
  **Tabelle 7: Beispiel für den Adressraum des lokalen Netzwerks**
@@ -426,7 +426,7 @@ Ein Beispiel für eine Intranet-IT-Arbeitslast, die in Azure IaaS gehostet wird,
 Abbildung 19 zeigt die neun Server einer SharePoint Server 2016-Farm, die in einem standortübergreifenden VNet bereitgestellt wird und interne Lastenausgleichsmodule für die Front-End-und Datenebenen verwendet. Weitere Informationen, einschließlich Schritt-für-Schritt-Anleitungen zum Entwerfen und bereitstellen, finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure).
   
 > [!TIP]
-> Informationen zum Erstellen einer SharePoint Server 2016-Farm mit einem Server in einer simulierten standortübergreifenden VNet finden Sie unter [Intranet SharePoint server 2016 in Azure dev/Test Environment](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
+> Informationen zum Erstellen einer SharePoint Server 2016-Farm mit einem Server in einer simulierten standortübergreifenden VNet finden Sie unter [Intranet SharePoint Server 2016 in Azure dev/Test Environment](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment). 
   
 Weitere Beispiele für IT-Arbeitslasten, die auf virtuellen Computern in einem standortübergreifenden virtuellen Azure-Netzwerk bereitgestellt werden, finden Sie unter [Hybrid Cloud Scenarios for Azure IaaS](https://docs.microsoft.com/office365/enterprise/hybrid-cloud-scenarios-for-azure-iaas).
   

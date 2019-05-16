@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/19/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c7edb02a-fdab-4f91-9a20-cba01dad28ef
 description: Erfahren Sie, wie Sie Darstellungen und Sprites verwenden, um die Bildleistung auf Ihren SharePoint Online-Websites zu verbessern.
-ms.openlocfilehash: 313046dec885a38062635254699301bcf556d698
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1210146aa3efb042937abeece4df0e62a579b94
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487361"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067371"
 ---
 # <a name="image-optimization-for-sharepoint-online"></a>Bildoptimierung für SharePoint Online
 
@@ -47,7 +47,7 @@ Bildwiedergaben sind ein Feature in SharePoint Online, mit dem Sie verschiedene 
   
 Die Größenänderung der Bildwiedergabe wird durch die kleinste von Ihnen definierte Dimension, entweder Breite oder Höhe, und durch anschließende Änderung der Größe des Bilds, sodass die andere Bemaßung automatisch auf Grundlage des gesperrten Seitenverhältnisses angepasst wird. Standardmäßig wird das Bild von der Mitte um die restlichen Bemaßungen zugeschnitten. Wenn Sie beispielsweise eine Darstellung von 100px Wide und 50px High definieren und Ihr Originalbild 1000px breit und 800px hoch ist, wird die Größe geändert, sodass die 800px-Dimension jetzt 50px ist und die 1000px-Dimension (jetzt 62,5 px) von der Mitte des Bilds abgeschnitten wird.
   
-Die Schritte sind relativ einfach, aber damit Bilder die Darstellungen verwenden können, müssen die Formatvarianten auf der SharePoint-Website sein, bevor Sie die Bilder hinzufügen. Außerdem müssen Sie die SharePoint Server-Veröffentlichungs Infrastruktur (WebsitesammlungsEbene) und die SharePoint Server-Veröffentlichungsfeatures (Websiteebene) aktiviert haben.
+Die Schritte sind relativ einfach, aber damit Bilder die Darstellungen verwenden können, müssen die Formatvarianten auf der SharePoint-Website sein, bevor Sie die Bilder hinzufügen. Außerdem müssen Sie die SharePoint Server-Veröffentlichungs Infrastruktur (Websitesammlungsebene) und die SharePoint Server-Veröffentlichungsfeatures (Websiteebene) aktiviert haben.
   
  **Hinzufügen einer Bildwiedergabe zur Beschleunigung des Seitenladevorgangs**
   
@@ -75,6 +75,6 @@ Die Schritte sind relativ einfach, aber damit Bilder die Darstellungen verwenden
   
 ## <a name="custom-cropping-with-image-renditions-in-sharepoint"></a>Benutzerdefiniertes Zuschneiden mit Bilddarstellungen in SharePoint
 
-Standardmäßig wird eine Bilddarstellung aus der Mitte des Bilds generiert. Sie können die Bilddarstellung für einzelne Bilder anpassen, indem Sie den Teil des Bilds zuschneiden, den Sie verwenden möchten. Sie können die Bilder pro Darstellung individuell zuschneiden. Das zuSchneiden der Bilder beschleunigt das Laden der Seite, indem der BLOB-Cache von SharePoint zum Erstellen einer Version des Bilds für jede Darstellung verwendet wird. Auf diese Weise wird die Serverlast reduziert, da das Bild nur einmal geändert wird und dann den Endbenutzern mehrmals zur Verfügung steht. Weitere Informationen zum Zuschneiden einer Bilddarstellung finden Sie unter [Zuschneiden einer Bilddarstellung](https://go.microsoft.com/fwlink/p/?LinkId=525626).
+Standardmäßig wird eine Bilddarstellung aus der Mitte des Bilds generiert. Sie können die Bilddarstellung für einzelne Bilder anpassen, indem Sie den Teil des Bilds zuschneiden, den Sie verwenden möchten. Sie können die Bilder pro Darstellung individuell zuschneiden. Das Zuschneiden der Bilder beschleunigt das Laden der Seite, indem der BLOB-Cache von SharePoint zum Erstellen einer Version des Bilds für jede Darstellung verwendet wird. Auf diese Weise wird die Serverlast reduziert, da das Bild nur einmal geändert wird und dann den Endbenutzern mehrmals zur Verfügung steht. Weitere Informationen zum Zuschneiden einer Bilddarstellung finden Sie unter [Zuschneiden einer Bilddarstellung](https://go.microsoft.com/fwlink/p/?LinkId=525626).
   
 

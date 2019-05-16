@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Lokaler eDiscovery-Datenfluss“.
-ms.openlocfilehash: e137a75fb80c9198a332144d82fe405c6884aa52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068531"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Zugängliches Diagramm – Lokaler eDiscovery-Datenfluss
 
@@ -38,19 +38,19 @@ Die Zahlen für die einzelnen in der Liste beschriebenen Schritte gehören zu ei
   
 1. eDiscovery-Fälle werden im eDiscovery Center (EDC) erstellt, verwaltet und verwendet. Die EDC ist eine SharePoint 2013-Websitesammlung. Hier werden Fälle definiert, nachzuverfolgende Quellen bestimmt, Abfragen gestartet, Abfrageergebnisse geprüft und Sperren für Inhalte aktiviert oder aufgehoben. 
     
-2. Die eDiscovery-Abfrage oder -Aktion, wie „Im Archiv platzieren“, „ReleaseHold“ oder „GetStatus“, wird vom EDC an den Proxy der Suchdienstanwendung (Search Service Application, SSA) in der App-Farm des Unternehmens weitergeleitet. Der Proxy der Suchdienstanwendung leitet anschließend den Datenverkehr an die SSA in der Dienst-App-Farm weiter. In diesem Beispiel ist die Anforderung, alle Elemente in der SharePoint-Inhalts Farm mit "CONTOSO" in den zu speichernden Dateinamen zu platzieren. 
+2. Die eDiscovery-Abfrage oder -Aktion, wie „Im Archiv platzieren“, „ReleaseHold“ oder „GetStatus“, wird vom EDC an den Proxy der Suchdienstanwendung (Search Service Application, SSA) in der App-Farm des Unternehmens weitergeleitet. Der Proxy der Suchdienstanwendung leitet anschließend den Datenverkehr an die SSA in der Dienst-App-Farm weiter. In diesem Beispiel ist die Anforderung, alle Elemente in der SharePoint-Inhalts Farm mit "Contoso" in den zu speichernden Dateinamen zu platzieren. 
     
 3. Wenn die Anforderung vorsieht, einen Fall abzufragen, konsultiert die Suchdienstanwendung den Suchindex. Dann wird das Resultset der eDiscovery-Abfrage über das EDC an den Benutzer zurückgegeben.  
     
-4. Wenn die Anforderung eine Aktion ist, z. B. „Im Archiv platzieren“ oder „ReleaseHold“, wird diese Aktion in die Tabelle „Actions“ in der Verwaltungsdatenbank der Suchdienstanwendung geschrieben. In diesem Beispiel wird eine Hold-Anforderung für irgendetwas in der SharePoint-Inhalts Farm mit "CONTOSO" in das Actions_Table geschrieben. 
+4. Wenn die Anforderung eine Aktion ist, z. B. „Im Archiv platzieren“ oder „ReleaseHold“, wird diese Aktion in die Tabelle „Actions“ in der Verwaltungsdatenbank der Suchdienstanwendung geschrieben. In diesem Beispiel wird eine Hold-Anforderung für irgendetwas in der SharePoint-Inhalts Farm mit "Contoso" in das Actions_Table geschrieben. 
     
 5. In regelmäßigen Abständen wird der Zeitgeberauftrag für den eDiscovery-In-Situ-Speicher der Inhaltsfarm aktiviert, der eine Anforderung ausstehender Aktionen generiert und Statusaktualisierungen über den SSA-Proxy an die SSA sendet. 
     
 6. Die Abfrage ausstehender Aktionen wird an die zentrale Suchdienstanwendung weitergeleitet, die die Tabelle „Actions“ auf ausstehende Aktionen für die Inhaltsfarm konsultiert. Der Zeitgeberauftrag für den In-Situ-Speicher der Inhaltsfarm sendet außerdem Statusaktualisierungen für empfangene Objekte und Aktionen, die in die Tabelle „Actions“ geschrieben werden. 
     
-7. Die Hold-Anforderung für alle Inhalte mit "CONTOSO" im Namen in der SharePoint 2013-Inhaltsfarm wird von der SSA an den in-situ-Speicher-Zeitgeberauftrag in der Inhaltsfarm gesendet. 
+7. Die Hold-Anforderung für alle Inhalte mit "Contoso" im Namen in der SharePoint 2013-Inhaltsfarm wird von der SSA an den in-situ-Speicher-Zeitgeberauftrag in der Inhaltsfarm gesendet. 
     
-8. Der Zeitgeberauftrag für den eDiscovery-in-Place-Speicher platziert die "CONTOSO-Website" und "CONTOSO-Inhalte" in der Warteschleife. 
+8. Der Zeitgeberauftrag für den eDiscovery-in-Place-Speicher platziert die "Contoso-Website" und "Contoso-Inhalte" in der Warteschleife. 
     
 9. Der Zeitgeberauftrag für den eDiscovery-In-Situ-Speicher wird in der Unternehmens-App-Farm regelmäßig ausgeführt, um den Status von Ermittlungsaktionen zu prüfen und zu aktualisieren.  
     

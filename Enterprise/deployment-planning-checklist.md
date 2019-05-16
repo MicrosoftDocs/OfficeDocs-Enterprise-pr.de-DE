@@ -1,10 +1,9 @@
 ---
 title: Prüfliste für die Bereitstellungsplanung für Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,27 +18,27 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Diese Prüfliste unterstützt Ihre Organisation bei der Planung und Vorbereitung einer Migration zu Office 365. Die Phasen und Schritte in der Prüfliste werden mit den Anweisungen des Onboarding Centers ausgerichtet.
-ms.openlocfilehash: 42c292f3fe5f8a3753a733e5b362521d95eab827
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 858ae9520db4cfb18696c817f041b879d66484e3
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490101"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067881"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Prüfliste für die Bereitstellungsplanung für Office 365
 
 Wenn Sie eine Unternehmensorganisation zu Office 365 verschieben, müssen Sie genau planen, welche Schritte Sie ausführen möchten, wann Sie ausgeführt werden sollen und wer diese ausführen soll. Diese Prüfliste unterstützt Ihre Organisation bei der Planung und Vorbereitung einer Migration zu Office 365. Die Phasen und Schritte in der Prüfliste werden mit den Anweisungen des Onboarding [Centers](https://go.microsoft.com/fwlink/?LinkId=517115)ausgerichtet. Sie können diese Prüfliste an die Anforderungen Ihrer Organisation anpassen.
 
 ## <a name="need-help-with-your-deployment"></a>Benötigen Sie Hilfe bei der Bereitstellung?
-Möchten Sie Hilfe beim Einrichten von Office 365? Erwägen [](https://fasttrack.microsoft.com/office) Sie die Verwendung von "oder" der [Bereitstellungs berater für Office 365-Dienste](deployment-advisors-for-office-365.md).
+Möchten Sie Hilfe beim Einrichten von Office 365? Erwägen [](https://fasttrack.microsoft.com/office) Sie die Verwendung von "oder" der [Bereitstellungs Berater für Office 365-Dienste](deployment-advisors-for-office-365.md).
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Beispiel Prüfliste für eine Office 365 Enterprise-Bereitstellung
 
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**BereitstellungsAufgaben/Events** <br/> |**Startdatum** <br/> |**Endtermin** <br/> |**Ressourcen** <br/> |**Dependencies** <br/> |
+|**Bereitstellungsaufgaben/Events** <br/> |**Startdatum** <br/> |**Endtermin** <br/> |**Ressourcen** <br/> |**Dependencies** <br/> |
 |**Bestimmen der Bereitstellungsziele** <br/> |||||
-| Mit ihren internen und externen Stakeholdern:<br>  -Übereinstimmung mit dem Bereich und der Zeitachse <br>  -Vereinbaren Sie einen Projekt Verfolgungsmechanismus  <br>  -entwickeln von erfolgskriterien und [](https://fasttrack.microsoft.com/office) / eine[erste einführung in Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Mit ihren internen und externen Stakeholdern:<br>  -Übereinstimmung mit dem Bereich und der Zeitachse <br>  -Vereinbaren Sie einen Projekt Verfolgungsmechanismus  <br>  -Entwickeln von Erfolgskriterien und [](https://fasttrack.microsoft.com/office) / eine[erste Einführung in Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventarisieren der aktuellen Umgebung und treffen wichtiger Bereitstellungsentscheidungen** |||||
 |Inventarisieren der aktuellen Umgebung |||||
 | Erfassen der Anzahl von Benutzerkonten (Anmeldenamen, e-Mail-Adressen) |||||
@@ -58,11 +57,11 @@ Möchten Sie Hilfe beim Einrichten von Office 365? Erwägen [](https://fasttrack
 | [Über welche Geräte können Benutzer eine Verbindung herstellen](https://go.microsoft.com/fwlink/?LinkId=534821) (Remote, von mobilen Geräten oder nur über Ihr Netzwerk)? |||||
 |**Beheben potenzieller Bereitstellungs Blockierungen** |||||
 |Mit Tools und Anweisungen von Microsoft: |||||
-| BeReinigen von Active Directory-Konten ( [Guidance](https://go.microsoft.com/fwlink/?LinkId=534825) und [Tool](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
+| Bereinigen von Active Directory-Konten ( [Guidance](https://go.microsoft.com/fwlink/?LinkId=534825) und [Tool](https://go.microsoft.com/fwlink/?LinkId=534826)) |||||
 | Vorbereiten der Daten für eine Migration ( [e-Mails](https://go.microsoft.com/fwlink/?LinkId=534823) und [Dateien](https://go.microsoft.com/fwlink/?LinkId=534824)) |||||
 | Bereitstellung Ihres Netzwerks ( [Guidance und Tools](https://aka.ms/tune)) |||||
 | Aktualisieren von Client Softwareversionen ( [Guidance](https://go.microsoft.com/fwlink/?LinkId=534827)) |||||
-| Wenn Sie über Active Directory-RechteverwaltungsDienste verfügen: Vorbereiten der Umgebung ( [Guidance](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
+| Wenn Sie über Active Directory-Rechteverwaltungsdienste verfügen: Vorbereiten der Umgebung ( [Guidance](https://go.microsoft.com/fwlink/?linkid=844967))  <br/> |||||
 |**Einrichten von Office 365-Diensten für Ihre Organisation** |||||
 |Konfigurieren Ihres Office 365-Abonnements |||||
 |[Überprüfen der Domänen, die Sie mit Ihrem Abonnement verwenden möchten](https://go.microsoft.com/fwlink/?LinkId=534828) |||||
@@ -77,7 +76,7 @@ Möchten Sie Hilfe beim Einrichten von Office 365? Erwägen [](https://fasttrack
 |Einrichten von Konten und Postfächern |||||
 | Hinzufügen von Benutzern und [Zuweisen von Lizenzen zu Benutzern in Office 365 for Business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) |||||
 | Optionales Migrieren von Daten ( [e-Mails](https://go.microsoft.com/fwlink/?LinkId=534823)und [Dateien](https://go.microsoft.com/fwlink/?LinkId=534824)usw.) |||||
-|ÜberPrüfen der Funktionalität und Abschließen der letzten Schritte |||||
+|Überprüfen der Funktionalität und Abschließen der letzten Schritte |||||
 | Migrieren [von DNS-Einstellungen, um auf Office 365 zu verweisen](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
 | Teilen Sie Ihren Benutzern mit, wann Sie [mit Office 365 beginnen](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) können. |||||
 | Konfigurieren der Clientsysteme für die Verbindung mit Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook für Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [Mobile Geräte](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

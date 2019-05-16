@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Netzwerkintegration von Microsoft Office-Serverprodukten“.
-ms.openlocfilehash: 3fa27b99bf0babf00c536057b9d21da784b6d94f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d63b3b581a03840676393657d6ed641e11046ef9
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068561"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Zugängliches Diagramm – Netzwerkintegration von Microsoft Office-Serverprodukten
 
@@ -78,7 +78,7 @@ Reverseproxy – Vorteile und Überlegungen: 
     
 - Für Lync durchläuft Webdatenverkehr (HTTPS) zur Kommunikation mit Clients den Reverseproxy (TCP 443). Der Reverseproxy dient als Proxy für die HTTPS-Verbindung zu Lync-Webdiensten, Exchange CAS und Office Web Apps. Lync Server 2013 unterstützt UAG nicht. 
     
-DirectAccess – eine RAS-Technologie, die IPsec (Internet Protocol Security) zur Authentifizierung und zum Verschlüsseln des Datenverkehrs zwischen dem DirectAccess-Client und-Server verwendet. DirectAccess bietet Roaming- und Remotebenutzern gleichzeitigen Zugriff auf Ressourcen im Internet und Intranet, ohne dass eine Verbindung initiiert werden muss. 
+DirectAccess – eine RAS-Technologie, die IPSec (Internet Protocol Security) zur Authentifizierung und zum Verschlüsseln des Datenverkehrs zwischen dem DirectAccess-Client und-Server verwendet. DirectAccess bietet Roaming- und Remotebenutzern gleichzeitigen Zugriff auf Ressourcen im Internet und Intranet, ohne dass eine Verbindung initiiert werden muss. 
   
 Überlegungen zu DirectAccess:  
   
@@ -86,7 +86,7 @@ DirectAccess – eine RAS-Technologie, die IPsec (Internet Protocol Security) zu
     
 - DirectAccess für Windows Server 2012 und Windows 8 erfordert keine Bereitstellung einer Public Key-Infrastruktur (PKI) für die Server- und Clientauthentifizierung.  
     
-- Es wird empfohlen, DirectAccess mit lync Server 2013 zu verwenden, da es Probleme mit der IPsec-Verschlüsselung und-Entschlüsselung gibt. 
+- Es wird empfohlen, DirectAccess mit lync Server 2013 zu verwenden, da es Probleme mit der IPSec-Verschlüsselung und-Entschlüsselung gibt. 
     
     VPN-Gateway-typische VPN-Gateways bieten eine RAS-Verbindung, in der ein RAS-Clientcomputer logisch über eine getunnelte und vom Benutzer initiierte Verbindung ins Intranet projiziert wird. Sie können Windows Server 2012 Unified Remote Access oder verschiedene Lösungen von Drittanbietern verwenden, um Roaming- oder Remotemitarbeitern sicheren Zugriff auf das Intranet zu bieten. VPN wird für Lync nicht empfohlen. Für Lync-Remotedatenverkehr sollten Edgeserver und getrenntes Tunneln verwendet werden. 
     

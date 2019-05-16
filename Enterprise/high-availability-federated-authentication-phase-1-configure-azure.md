@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: ec7aa71b9782dd568f85b78fb3e5110e32e2e23e
-ms.sourcegitcommit: 2f172a784d2f6b29c7cf80c0dbca271ab494d514
+ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33867710"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067501"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -39,7 +39,7 @@ Azure muss mit den folgenden grundlegenden Komponenten eingerichtet werden:
 
 Bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen, füllen Sie die folgenden Tabellen aus. Um Sie bei den Verfahren zum Konfigurieren von Azure zu unterstützen, Drucken Sie diesen Abschnitt, und notieren Sie sich die benötigten Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie es aus. Füllen Sie für die Einstellungen des VNet die Tabelle V aus.
   
-|**Element**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Item**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -61,7 +61,7 @@ Siehe [Adressraum Rechner für Azure-Gateway](https://gallery.technet.microsoft.
   
 Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des virtuellen Netzwerks.
   
-|**Element**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
+|**Item**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das Subnetz, das von den Domänencontrollern der Active Directory-Domänendienste (AD DS) und den virtuellen Computern des Dirsync-Servers (VMS) verwendet wird.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern von AD FS verwendete Subnetz.  <br/> |
@@ -72,7 +72,7 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
   
 Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Element**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Item**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -89,7 +89,7 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen C
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Item**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |

@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
 description: Enthält Links zu anderen Artikeln, in denen Sie erfahren, wie Sie die Leistung von Seiten Downloadzeiten für SharePoint Online verbessern können.
-ms.openlocfilehash: 8c4f3c0545408457b2c0b5150ea062b9666f7e44
-ms.sourcegitcommit: 7814d01db4d7618fc2f9381faef1a6a45ea063fe
+ms.openlocfilehash: 2359ab11ffd4d03874c410b4c6e0b0e692c5e9cb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492935"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070671"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimieren der Leistung von SharePoint Online
 
@@ -48,12 +48,12 @@ Verwenden Sie diese Artikel, um die Leistung von SharePoint Online zu optimieren
     
 - [Verwenden des Webparts für die Inhaltssuche anstelle des Inhaltsabfrage-Webparts zur Verbesserung der Leistung in SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
     
-- [Capacity planning and load testing SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
+- [Kapazitätsplanung und Auslastungstests für SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
     
-- [Diagnosing performance issues with SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
+- [Diagnose von Leistungsproblemen mit SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
     
 - [Verwenden des Objektcaches mit SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [VorGehensWeise: Vermeiden von Drosselung oder Blockierung in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Gewusst wie: Vermeiden von Einschränkungen oder Sperren in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
     
 

@@ -1,10 +1,10 @@
 ---
-title: Schützen der globalen Administratorkonten für Office 365
+title: Schützen Ihrer globalen Office 365-Administratorkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 4/10/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,14 +17,14 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Schützen Sie den globalen Administratorzugriff auf Ihr Office 365-Abonnement mit diesen drei Schritten.
-ms.openlocfilehash: 23d47ec1f5fc4126113dd69e1ac6400d003ca41f
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: bb1b19a7ac0ec8e32c23303e8acf2b7ee42f0532
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071021"
 ---
-# <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen der globalen Administratorkonten für Office 365
+# <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Ihrer globalen Office 365-Administratorkonten
 
  **Zusammenfassung:** Schützen Sie Ihr Office 365-Abonnement vor Angriffen, die auf der Gefährdung durch ein globales Administratorkonto basieren. 
   
@@ -61,7 +61,7 @@ Es gibt relativ wenige Verwaltungsaufgaben, wie das Zuweisen von Rollen zu Benut
     
 4. Weisen Sie die globale Administratorrolle jedem der neuen dedizierten Benutzerkonten für globale Administratoren zu.
     
-5. AbMelden von Office 365.
+5. Abmelden von Office 365.
     
 6. Melden Sie sich mit einem der neuen dedizierten globalen Administrator-Benutzerkonten an.
     
@@ -69,13 +69,13 @@ Es gibt relativ wenige Verwaltungsaufgaben, wie das Zuweisen von Rollen zu Benut
     
   - Entfernen Sie die Rolle globaler Administrator.
     
-  - Weisen Sie dem Konto Administratorrollen zu, die für die Aufgaben Funktion und Verantwortlichkeit dieses Benutzers geeignet sind. Weitere Informationen zu den verschiedenen Administratorrollen in Office 365 finden Sie unter Informationen [zu office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).
+  - Weisen Sie dem Konto Administratorrollen zu, die für die Aufgaben Funktion und Verantwortlichkeit dieses Benutzers geeignet sind. Weitere Informationen zu den verschiedenen Administratorrollen in Office 365 finden Sie unter Informationen [zu Office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d).
     
-8. AbMelden von Office 365.
+8. Abmelden von Office 365.
     
 Das Ergebnis sollte:
   
-- Die einzigen Benutzerkonten in Ihrem Abonnement, die über die globale Administratorrolle verfügen, sind die neuen globalen Administratorenkonten. Überprüfen Sie dies mit dem folgenden PowerShell-Befehl:
+- Die einzigen Benutzerkonten in Ihrem Abonnement, die über die Berechtigungen eines globalen Administrators verfügen, befinden sich im neuen Satz der dedizierten Konten für globale Administratoren. Überprüfen Sie dies mit dem folgenden PowerShell-Befehl:
     
   ```
   Get-MsolRoleMember -RoleObjectId (Get-MsolRole -RoleName "Company Administrator").ObjectId
@@ -150,9 +150,9 @@ Nach den Schritten 1-3, verwenden Sie diese zusätzlichen Methoden, um sicherzus
   
 ### <a name="privileged-access-workstation-paw"></a>Workstation mit privilegiertem Zugriff (PAW)
 
-Um sicherzustellen, dass die Ausführung hoch privilegierter Aufgaben so sicher wie möglich ist, verwenden Sie eine PAW. Eine PFOTE ist ein dedizierter Computer, der nur für vertrauliche Konfigurationsaufgaben wie Office 365-Konfiguration verwendet wird, die ein globales Administratorkonto erfordert. Da dieser Computer nicht täglich für das Surfen im Internet oder per e-Mail verwendet wird, ist er besser vor Internetangriffen und-Bedrohungen geschützt.
+Um sicherzustellen, dass die Ausführung hoch privilegierter Aufgaben so sicher wie möglich ist, verwenden Sie eine Paw. Eine Pfote ist ein dedizierter Computer, der nur für vertrauliche Konfigurationsaufgaben wie Office 365-Konfiguration verwendet wird, die ein globales Administratorkonto erfordert. Da dieser Computer nicht täglich für das Surfen im Internet oder per e-Mail verwendet wird, ist er besser vor Internetangriffen und-Bedrohungen geschützt.
   
-Anweisungen zum Einrichten einer PFOTE finden Sie unter [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
+Anweisungen zum Einrichten einer Pfote finden Sie unter [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
   
 ### <a name="azure-ad-privileged-identity-management-pim"></a>Azure AD Privileged Identity Management (PIM)
 
@@ -162,14 +162,14 @@ Statt der globalen Administratorkonten, die ein permanenter admin sind, werden S
   
 Durch die Verwendung von PIM und diesem Prozess wird der Zeitraum, in dem Ihre globalen Administratorkonten anfällig für Angriffe und die Verwendung durch böswillige Benutzer sind, deutlich reduziert.
   
-Weitere Informationen finden Sie unter [configure Azure AD privilegEd Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
+Weitere Informationen finden Sie unter [configure Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).
   
 > [!NOTE]
 > PIM ist mit Azure Active Directory Premium P2 verfügbar, das in Enterprise Mobility + Security (EMS) E5 enthalten ist, oder Sie können einzelne Lizenzen für Ihre globalen Administratorkonten erwerben. 
   
 ### <a name="security-information-and-event-management-siem-software-for-office-365-logging"></a>Security Information and Event Management (SIEM)-Software für Office 365-Protokollierung
 
-SIEM-Software, die auf einem Server ausgeführt wird, führt eine Echtzeitanalyse von Sicherheitswarnungen und Ereignissen aus, die von Anwendungen und Netzwerkhardware erstellt wurden. Damit Ihr SIEM-Server Office 365-Sicherheitswarnungen und-Ereignisse in seine Analyse-und Berichtfunktionen einbinden kann, integrieren Sie diese in Ihr SIEM-System:
+Siem-Software, die auf einem Server ausgeführt wird, führt eine Echtzeitanalyse von Sicherheitswarnungen und Ereignissen aus, die von Anwendungen und Netzwerkhardware erstellt wurden. Damit Ihr Siem-Server Office 365-Sicherheitswarnungen und-Ereignisse in seine Analyse-und Berichtfunktionen einbinden kann, integrieren Sie diese in Ihr Siem-System:
   
 - Azure AD
     

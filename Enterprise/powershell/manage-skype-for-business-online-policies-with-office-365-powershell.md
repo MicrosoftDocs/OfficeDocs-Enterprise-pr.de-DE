@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/01/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um die Eigenschaften von Skype for Business Online-Benutzerkonten mithilfe von Richtlinien zu verwalten.'
-ms.openlocfilehash: 6bbfd4451552cd3a281dbbcafde0b458bb71907c
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
-ms.translationtype: HT
+ms.openlocfilehash: 853d70a008a3e42c6fa1175a52cadab815a46dfe
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037899"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068841"
 ---
 # <a name="manage-skype-for-business-online-policies-with-office-365-powershell"></a>Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell
 
@@ -104,7 +104,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Hiermit wird eine Liste mit den für Sie verfügbaren VoIP-Richtlinien zurückgegeben. Beachten Sie aber, dass nicht alle Richtlinien auch allen Benutzern zugewiesen werden können, da zahlreiche Beschränkungen hinsichtlich Lizenzierung und Region bestehen. (Der so genannte „[Verwendungsstandort](https://msdn.microsoft.com/de-DE/library/azure/dn194136.aspx)".) Wenn Sie die externen Zugriffsrichtlinien und die Konferenzrichtlinien ermitteln möchten, die einem bestimmten Benutzer zugewiesen werden können, verwenden Sie Befehle ähnlich den folgenden: 
+> Hiermit wird eine Liste mit den für Sie verfügbaren VoIP-Richtlinien zurückgegeben. Beachten Sie aber, dass nicht alle Richtlinien auch allen Benutzern zugewiesen werden können, da zahlreiche Beschränkungen hinsichtlich Lizenzierung und Region bestehen. (Der so genannte „[Verwendungsstandort](https://msdn.microsoft.com/en-us/library/azure/dn194136.aspx)".) Wenn Sie die externen Zugriffsrichtlinien und die Konferenzrichtlinien ermitteln möchten, die einem bestimmten Benutzer zugewiesen werden können, verwenden Sie Befehle ähnlich den folgenden: 
 
 ```
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"

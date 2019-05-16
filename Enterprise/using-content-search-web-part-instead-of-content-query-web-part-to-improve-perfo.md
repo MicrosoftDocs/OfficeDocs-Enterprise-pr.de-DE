@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/20/2015
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,18 +15,18 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: In diesem Artikel wird beschrieben, wie Sie die Leistung steigern, indem Sie das Webpart für Inhaltsabfragen durch das Webpart für die Inhaltssuche in SharePoint Server 2013 und SharePoint Online ersetzen.
-ms.openlocfilehash: f86a4b75c4bf75ebaa99924411d017c7eb7b6760
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 590cd5f60dedf870d58d053b01e4e1b45469bfa4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070551"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>Verwenden des Webparts für die Inhaltssuche anstelle des Inhaltsabfrage-Webparts zur Verbesserung der Leistung in SharePoint Online
 
 In diesem Artikel wird beschrieben, wie Sie die Leistung steigern, indem Sie das Webpart für Inhaltsabfragen durch das Webpart für die Inhaltssuche in SharePoint Server 2013 und SharePoint Online ersetzen.
   
-Eine der leistungsfähigsten neuen Features von SharePoint Server 2013 und SharePoint Online ist das Inhaltssuche-Webpart (INHALTSSUCHE). Dieses Webpart verwendet den Suchindex, um schnell Ergebnisse abzurufen, die dem Benutzer angezeigt werden. Verwenden Sie das Inhaltssuche-Webpart anstelle des Inhaltsabfrage-Webparts (CQWP) auf Ihren Seiten, um die Leistung für Ihre Benutzer zu verbessern.
+Eine der leistungsfähigsten neuen Features von SharePoint Server 2013 und SharePoint Online ist das Inhaltssuche-Webpart (Inhaltssuche). Dieses Webpart verwendet den Suchindex, um schnell Ergebnisse abzurufen, die dem Benutzer angezeigt werden. Verwenden Sie das Inhaltssuche-Webpart anstelle des Inhaltsabfrage-Webparts (CQWP) auf Ihren Seiten, um die Leistung für Ihre Benutzer zu verbessern.
   
 Die Verwendung eines Inhaltssuche-Webparts über ein Inhaltsabfrage-Webpart führt fast immer zu einer deutlich besseren Seiten Ladeleistung in SharePoint Online. Es gibt eine kleine zusätzliche Konfiguration, um die richtige Abfrage zu erhalten, aber die Vorteile sind verbesserte Leistung und zufriedenere Benutzer.
   
@@ -52,9 +52,9 @@ Verwenden Sie in Internet Explorer auf der Registerkarte **Netzwerk** der F12-En
   
 ![Screenshot mit der Anforderungsdauer von 924](media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
- **SPRequestDuration** gibt an, wie viel Arbeit auf dem Server ausgeführt wird, um die Seite vorzubereiten. Das Wechseln von Inhalten durch Abfrage Webparts mit Inhalten durch Such-Webparts reduziert die Zeit, die zum Rendern der Seite erforderlich ist, drastisch. Dagegen hat eine Seite mit einem äquivalenten Inhaltssuche-Webpart, der die gleiche Anzahl von Ergebnissen zurückgibt, einen **SPRequestDuration** -wert von 106 Millisekunden, wie in diesem Screenshot gezeigt: 
+ **SPRequestDuration** gibt an, wie viel Arbeit auf dem Server ausgeführt wird, um die Seite vorzubereiten. Das Wechseln von Inhalten durch Abfrage Webparts mit Inhalten durch Such-Webparts reduziert die Zeit, die zum Rendern der Seite erforderlich ist, drastisch. Dagegen hat eine Seite mit einem äquivalenten Inhaltssuche-Webpart, der die gleiche Anzahl von Ergebnissen zurückgibt, einen **SPRequestDuration** -Wert von 106 Millisekunden, wie in diesem Screenshot gezeigt: 
   
-![Screenshot mit der AnforderungsDauer von 106](media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![Screenshot mit der Anforderungsdauer von 106](media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## <a name="adding-a-content-search-web-part-in-sharepoint-online"></a>Hinzufügen eines Inhaltssuche-Webparts in SharePoint Online
 

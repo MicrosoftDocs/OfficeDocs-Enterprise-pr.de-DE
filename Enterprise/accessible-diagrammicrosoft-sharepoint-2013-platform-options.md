@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b88200bf-ced0-4ae6-bbe5-5517377d1be1
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms namens Microsoft SharePoint 2013-Plattformoptionen.
-ms.openlocfilehash: 1f0d2bf4e74c7e1d28aaa27c6f88dac04f02b4a9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 4a0b068ffb8abbe11c2286f3daa70c5f62295425
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487821"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068601"
 ---
 # <a name="accessible-diagram---microsoft-sharepoint-2013-platform-options"></a>Zugängliches Diagramm – Microsoft SharePoint 2013-Plattformoptionen
 
@@ -156,7 +156,7 @@ Zusätzliche Features mit dedizierten Office 365-Abonnement Plänen:
     
 - Jede Kundenumgebung befindet sich in einem physisch getrennten Netzwerk. 
     
-- Client Kommunikation über eine IPSec-gesicherte VPN-oder kundeneigene private Verbindung. Die zweistufige Authentifizierung ist optional. 
+- Client Kommunikation über eine IPsec-gesicherte VPN-oder kundeneigene private Verbindung. Die zweistufige Authentifizierung ist optional. 
     
 - ITAR-Support Pläne. 
     
@@ -398,7 +398,7 @@ Nutzen Sie die Möglichkeit, die Anforderungen problemlos zu skalieren, indem Si
     
 #### <a name="azure-ad"></a>Azure AD
 
-Azure AD bietet Identitätsverwaltungs- und Zugriffssteuerungsfunktionen für Clouddienste. Zu den Funktionen zählen ein cloudbasierter Speicher für Verzeichnisdaten und eine Kerngruppe von Identitätsdiensten, einschließlich Anmeldungsprozessen, Authentifizierungsdiensten und AD FS. Die in Azure AD enthaltenen Identitätsdienste können problemlos in Ihre lokalen Active Directory-Bereitstellungen integriert und von Drittanbieter-Identitätsanbietern vollständig unterstützt werden. 
+Azure AD bietet Identitätsverwaltungs- und Zugriffssteuerungsfunktionen für Clouddienste. Zu den Funktionen zählen ein cloudbasierter Speicher für Verzeichnisdaten und eine Kerngruppe von Identitätsdiensten, einschließlich Anmeldungsprozessen, Authentifizierungsdiensten und AD FS. Die in Azure Ad enthaltenen Identitätsdienste können problemlos in Ihre lokalen Active Directory-Bereitstellungen integriert und von Drittanbieter-Identitätsanbietern vollständig unterstützt werden. 
   
 Das begleitende Diagramm zeigt die Konfiguration von Zonen und Authentifizierung, die für Websites mit Internet Zugriff wichtig ist. Das Diagramm zeigt den Azure Active Directory-Mandanten, der eine SharePoint-Farm in Azure mit zwei Zonen enthält: 
   
@@ -430,6 +430,6 @@ Wählen Sie eine Notfall Wiederherstellungsoption aus, die Ihren geschäftlichen
 
 Eine vollständige Farm wird bereitgestellt und im Standbymodus betrieben. 
   
-Das begleitende Diagramm zeigt eine lokale Farm, die mit der SharePoint-NotfallwiederHerstellungsUmgebung in Azure interagiert. Die lokalen Datenbanken verwenden den SQL Server-Protokollversand über den VPN-Tunnel für den Zugriff auf die SharePoint-NotfallwiederHerstellungsumgebung, die zwei SQL-Datenbankserver enthält, die die SharePoint-Datenbanken, zwei Web-Front-End-Server und zwei SharePoint Anwendungsserver. 
+Das begleitende Diagramm zeigt eine lokale Farm, die mit der SharePoint-Notfallwiederherstellungsumgebung in Azure interagiert. Die lokalen Datenbanken verwenden den SQL Server-Protokollversand über den VPN-Tunnel für den Zugriff auf die SharePoint-Notfallwiederherstellungsumgebung, die zwei SQL-Datenbankserver enthält, die die SharePoint-Datenbanken, zwei Web-Front-End-Server und zwei SharePoint Anwendungsserver. 
   
 

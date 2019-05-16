@@ -1,10 +1,9 @@
 ---
 title: Office 365 IdFix-Transaktionsprotokoll
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Enthält ein Beispiel und beschreibt die Benennungskonvention und die Standardprotokoll Ebene des Office 365-IdFix-Transaktionsprotokolls.
-ms.openlocfilehash: c652f8dcbc23a6f0165d894ce6317443db72ceee
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0c6f2dd64cb406681c0a98099b2a42887ee79c25
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490941"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067261"
 ---
 # <a name="office-365-idfix-transaction-log"></a>Office 365 IdFix-Transaktionsprotokoll
 
@@ -30,7 +29,7 @@ Enthält ein Beispiel und beschreibt die Benennungskonvention und die Standardpr
   
 ## <a name="idfix-transaction-log-location"></a>Speicherort des IdFix-Transaktionsprotokolls
 
-Das Office 365-IdFix-Tool erstellt jedes Mal, wenn Sie auf IdFix **anwenden** klicken und Änderungen an der Active Directory-Gesamtstruktur anwenden, ein neues Transaktionsprotokoll. Das Transaktionsprotokoll wird im gleichen Ordner gespeichert, in dem Sie IdFix installiert haben. Standardmäßig ist dieser Ordner C:\Deployment Tools\IDFix. Der Name der Transaktionsprotokolldatei verwendet ein Datums-und Zeitstempelformat, beispielsweise Verbose 6-1-2018 6-17-22 PM gibt eine Datei an, die am 1. Juni 2018 bei 6:17:22 PM generiert wurde. Verbose gibt den Protokolliergrad an. 
+Das Office 365-IdFix-Tool erstellt jedes Mal, wenn Sie auf IdFix **anwenden** klicken und Änderungen an der Active Directory-Gesamtstruktur anwenden, ein neues Transaktionsprotokoll. Das Transaktionsprotokoll wird im gleichen Ordner gespeichert, in dem Sie IdFix installiert haben. Standardmäßig ist dieser Ordner C:\Deployment Tools\IDFix. Der Name der Transaktionsprotokolldatei verwendet ein Datums-und Zeitstempelformat, beispielsweise Verbose 6-1-2018 6-17-22 pm gibt eine Datei an, die am 1. Juni 2018 bei 6:17:22 pm generiert wurde. Verbose gibt den Protokolliergrad an. 
   
 ## <a name="idfix-transaction-log-logging-level"></a>IdFix-Transaktionsprotokoll-Protokolliergrad
 

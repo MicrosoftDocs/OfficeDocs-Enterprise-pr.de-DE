@@ -1,9 +1,9 @@
 ---
 title: Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,12 +19,12 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Informationen zum Anzeigen von Verzeichnis Synchronisierungsfehlern in Microsoft 365 Admin Center.
-ms.openlocfilehash: 8450c2e26c9c9ae194be46d81018a20c91e35f29
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1cda68590131967ea2fe91506c8e71769f4c32b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491261"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067521"
 ---
 # <a name="view-directory-synchronization-errors-in-office-365"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
 
@@ -42,19 +42,19 @@ So zeigen Sie Fehler im Admin Center an:
     
 3. Auf der **Start** Seite sehen Sie die Dirsync- **Status** Kachel. 
     
-    ![Die dirSync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+    ![Die Dirsync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 4. Wählen Sie auf der Kachel **Dirsync Status** aus, um zur Seite **Verzeichnis Synchronisierungsstatus** zu wechseln. 
     
-    Am unteren Rand der Seite sehen Sie, ob es dirSync-Fehler gibt.
+    Am unteren Rand der Seite sehen Sie, ob es Dirsync-Fehler gibt.
     
-    ![Auf der Seite Verzeichnis Synchronisierungs Status wird angezeigt, ob dirSync-Objekt Fehler vorliegen.](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
+    ![Auf der Seite Verzeichnis Synchronisierungs Status wird angezeigt, ob Dirsync-Objekt Fehler vorliegen.](media/882094a3-80d3-4aae-b90b-78b27047974c.png)
   
-    Wählen Sie "dirSync- **Objekt Fehler** " aus, um zu einer detaillierten Ansicht der Verzeichnis Synchronisierungsfehler zu wechseln. 
+    Wählen Sie "Dirsync- **Objekt Fehler** " aus, um zu einer detaillierten Ansicht der Verzeichnis Synchronisierungsfehler zu wechseln. 
     
     > [!NOTE]
     > Sie können auch auf die Seite **Dirsync Errors** wechseln, wenn Sie sich für Dirsync- **Objekt Fehler** auf der Dirsync- **Status** Kachel entschieden haben. 
   
-![Seite "dirSync-Fehler"](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
+![Seite "Dirsync-Fehler"](media/a6e302d4-6be7-4e3a-b4b5-81c5a2c02952.png)
   
-5. Wählen Sie auf der Seite dirSync- **Fehler** einen der aufgeführten Fehler aus, um den Detailbereich mit Informationen zu dem Fehler anzuzeigen, und Tipps zur Problembehebung. 
+5. Wählen Sie auf der Seite Dirsync- **Fehler** einen der aufgeführten Fehler aus, um den Detailbereich mit Informationen zu dem Fehler anzuzeigen, und Tipps zur Problembehebung. 

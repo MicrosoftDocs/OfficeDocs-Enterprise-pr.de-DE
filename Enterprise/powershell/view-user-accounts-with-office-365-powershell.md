@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 'Zusammenfassung: anzeigen, auflisten oder Anzeigen Ihrer Benutzerkonten mit Office 365 PowerShell.'
-ms.openlocfilehash: 2858efef6220beed76894414ea99ed922353afc3
-ms.sourcegitcommit: 201d3338d8bbc6da9389e62e2add8a17384fab4d
+ms.openlocfilehash: e1a99aef4f2045dcba8d7f3894ef82f9e7c36a15
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31037919"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071101"
 ---
 # <a name="view-user-accounts-with-office-365-powershell"></a>Anzeigen von Benutzerkonten mit Office 365 PowerShell
 
@@ -107,7 +107,7 @@ Dieser Befehl weist Azure Active Directory PowerShell für Graph Folgendes zu:
   
 - Alle Informationen der Benutzerkonten abrufen (**Get-AzureADUser**) und an den nächsten Befehl senden (**|**).
     
-- Suchen aller Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **Where-Object {\_$. UsageLocation-EQ $Null}** ). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell an, nur die Konten zu finden, in denen die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_. UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
+- Suchen aller Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **Where-Object {\_$. UsageLocation-EQ $NULL}** ). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell an, nur die Konten zu finden, in denen die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_. UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
     
 Die **UsageLocation**-Eigenschaft ist nur eine von vielen Eigenschaften, die einem Benutzerkonto zugeordnet ist. Um alle Eigenschaften für Benutzerkonten anzuzeigen, verwenden Sie das Cmdlet **Select-Object** und das Platzhalterzeichen (*), um Sie für ein bestimmtes Benutzerkonto anzuzeigen. Hier ein Beispiel:
   
@@ -122,7 +122,7 @@ Get-AzureADUser | Where-Object {$_.City -eq "London"}
 ```
 
 > [!TIP]
->  Die Syntax für das **Where-Object-** Cmdlet, das in diesen Beispielen gezeigt wird **, ist\_Where-Object {$.** [Name der Benutzerkonten Eigenschaft] [Vergleichsoperator] Wert **}**. > [Vergleichsoperator] is **-EQ** für Equals, **-ne** für ungleich, **-lt** für kleiner als, **-gT** für größer als und andere.  [value] ist in der Regel eine Zeichenfolge (eine Folge von Buchstaben, Zahlen und anderen Zeichen), ein numerischer Wert oder **$null** für Unspecified> finden Sie unter [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) Weitere Informationen.
+>  Die Syntax für das **Where-Object-** Cmdlet, das in diesen Beispielen gezeigt wird **, ist\_Where-Object {$.** [Name der Benutzerkonten Eigenschaft] [Vergleichsoperator] Wert **}**. > [Vergleichsoperator] is **-EQ** für Equals, **-ne** für ungleich, **-lt** für kleiner als, **-gT** für größer als und andere.  [value] ist in der Regel eine Zeichenfolge (eine Folge von Buchstaben, Zahlen und anderen Zeichen), ein numerischer Wert oder **$null** für unspecified> finden Sie unter [Where-Object](https://docs.microsoft.com/powershell/module/Microsoft.PowerShell.Core/Where-Object?view=powershell-5.1) Weitere Informationen.
   
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
@@ -187,7 +187,7 @@ Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
   
 - Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
     
-- Suchen aller Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **Where-Object {\_$. UsageLocation-EQ $Null}** ). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell an, nur die Konten zu finden, in denen die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_. UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
+- Suchen aller Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **Where-Object {\_$. UsageLocation-EQ $NULL}** ). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell an, nur die Konten zu finden, in denen die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_. UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
     
 Es sollten Informationen ähnlich den folgenden angezeigt werden:
   
@@ -271,7 +271,7 @@ Dieser Befehl weist Office 365 PowerShell zu folgenden Aktionen an:
   
 - Alle Informationen der Benutzerkonten abrufen (**Get-MsolUser**) und an den nächsten Befehl senden (**|**).
     
-- Suchen aller Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **Where-Object {\_$. UsageLocation-EQ $Null}** ), und senden Sie die resultierenden Informationen an den **|** nächsten Befehl (). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell an, nur die Konten zu finden, in denen die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_. UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
+- Suchen aller Benutzerkonten mit einem nicht angegebenen Verwendungs Speicherort ( **Where-Object {\_$. UsageLocation-EQ $NULL}** ), und senden Sie die resultierenden Informationen an den **|** nächsten Befehl (). Innerhalb der geschweiften Klammern weist der Befehl Office 365 PowerShell an, nur die Konten zu finden, in denen die UsageLocation-Benutzerkonto Eigenschaft ( ** $ \_. UsageLocation** ) ist nicht angegeben ( **-EQ $NULL** ).
     
 - Zeigt nur den Namen des Benutzerkontos, die Abteilung und den Verwendungs Speicherort an ( **Select-Object DisplayName, Department, UsageLocation** ).
     

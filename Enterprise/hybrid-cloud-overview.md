@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 3ea3ee10-411e-4690-b9e5-f1b46f1f4d59
 description: 'Zusammenfassung: Grundlegendes zur Definition und Elementen der Microsoft Hybrid Cloud.'
-ms.openlocfilehash: c048cfeb840bbb03b1886c7053603cfdc84f37ab
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f44251c0a0da79475c1cc391dd409db6b2faba0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491156"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067444"
 ---
 # <a name="hybrid-cloud-overview"></a>Hybrid Cloud-Übersicht
 

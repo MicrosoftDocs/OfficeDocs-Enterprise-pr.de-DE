@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 2/14/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,175 +15,175 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: ExpressRoute für Office 365 bietet Layer 3-Konnektivität zwischen dem Netzwerk und Microsoft Rechenzentren. Stromkreise verwenden Border Gateway Protocol (BGP) Route Werbung der Office 365 Front-End-Server. Wenn sie den richtigen TCP/IP-Pfad zu Office 365, auswählen, wird aus der Sicht von Ihrer lokalen Geräten Azure ExpressRoute als Alternative zum Internet angezeigt.
-ms.openlocfilehash: 7a2c9cb8ee562c0527416aa83184de90cd204476
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: Express Route für Office 365 bietet Layer 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltungen verwenden BGP-Routenankündigungen (Border Gateway Protocol) der Front-End-Server von Office 365. Aus der Perspektive Ihrer lokalen Geräte, wenn Sie den richtigen TCP/IP-Pfad zu Office 365 auswählen müssen, wird Azure Express Route als Alternative zum Internet angesehen.
+ms.openlocfilehash: 459850a29e87650f1aecfc6a6977cd6e5b77ae07
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069701"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Netzwerkplanung mit ExpressRoute für Office 365
 
-ExpressRoute für Office 365 bietet Layer 3-Konnektivität zwischen dem Netzwerk und Microsoft Rechenzentren. Stromkreise verwenden Border Gateway Protocol (BGP) Route Werbung der Office 365 Front-End-Server. Wenn sie den richtigen TCP/IP-Pfad zu Office 365, auswählen, wird aus der Sicht von Ihrer lokalen Geräten Azure ExpressRoute als Alternative zum Internet angezeigt.
+Express Route für Office 365 bietet Layer 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltungen verwenden BGP-Routenankündigungen (Border Gateway Protocol) der Front-End-Server von Office 365. Aus der Perspektive Ihrer lokalen Geräte, wenn Sie den richtigen TCP/IP-Pfad zu Office 365 auswählen müssen, wird Azure Express Route als Alternative zum Internet angesehen.
   
-Azure ExpressRoute Fügt einen direkten Pfad zu einem bestimmten Satz von unterstützten Features und Dienste, die von Office 365-Servern in der Microsoft Rechenzentren angeboten werden. Azure ExpressRoute ersetzen keine Verbindung mit Microsoft-Rechenzentren oder grundlegende Internetdienste wie Auflösung des Domänennamens. Azure ExpressRoute und den Internet Stromkreisen sollte gesicherte und redundant sein.
+Azure Express Route fügt einen direkten Pfad zu einer bestimmten Gruppe unterstützter Features und Dienste hinzu, die von Office 365-Servern in Microsoft-Rechenzentren angeboten werden. Azure Express Route ersetzt nicht die Internetkonnektivität in Microsoft-Rechenzentren oder grundlegende Internetdienste wie Domänennamensauflösung. Azure Express Route und Ihre Internet Schaltkreise sollten gesichert und redundant sein.
   
-In der folgenden Tabelle werden einige Unterschiede zwischen dem Internet und Azure ExpressRoute Verbindungen im Kontext von Office 365 behandelt.
+In der folgenden Tabelle werden einige Unterschiede zwischen den Internet-und Azure Express Route-Verbindungen im Kontext von Office 365 hervorgehoben.
 
-|**Unterschiede bei der netzwerkplanung**|**Internet-Netzwerkverbindung**|**ExpressRoute-Verbindung**|
+|**Unterschiede bei der Netzwerkplanung**|**Internet Netzwerkverbindung**|**Express Route-Netzwerkverbindung**|
 |:-----|:-----|:-----|
-| Zugriff auf erforderliche Internetdienste, einschließlich;  <br/>  DNS-namensauflösung  <br/>  Certificate Revocation Überprüfung  <br/>  Netzwerke für die Inhaltsübermittlung  <br/> |Ja  <br/> |Anforderungen an Microsoft gehören, dass DNS und/oder CDN-Infrastruktur des Netzwerks ExpressRoute verwenden kann.  <br/> |
-| Zugriff auf Office 365-Dienste, einschließlich;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365-Portal und Authentifizierung  <br/> |Ja, alle Programme und Features  <br/> |Ja, [bestimmte Anwendungen und Features](https://aka.ms/o365endpoints) <br/> |
-|Lokale Sicherheit bei Umkreisnetzwerk.  <br/> |Ja  <br/> |Ja  <br/> |
-|Planen der hohen Verfügbarkeit.  <br/> |Failover auf eine alternative Netzwerk Internetverbindung  <br/> |Failover auf eine alternative ExpressRoute-Verbindung  <br/> |
-|Direkte Verbindung mit einem Netzwerkprofil vorhersehbare.  <br/> |Nein  <br/> |Ja  <br/> |
+| Zugriff auf erforderliche Internetdienste, einschließlich;  <br/>  DNS-Namensauflösung  <br/>  Zertifikatsperrüberprüfung  <br/>  Netzwerke für die Inhaltsübermittlung  <br/> |Ja  <br/> |Anforderungen an Microsoft owned DNS-und/oder CDN-Infrastrukturen können das Express Route-Netzwerk verwenden.  <br/> |
+| Zugriff auf Office 365-Dienste, einschließlich;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office Online  <br/>  Office 365-Portal und-Authentifizierung  <br/> |Ja, alle Anwendungen und Features  <br/> |Ja, [bestimmte Anwendungen und Features](https://aka.ms/o365endpoints) <br/> |
+|Lokale Sicherheit im Umkreis.  <br/> |Ja  <br/> |Ja  <br/> |
+|Planung der Hochverfügbarkeit.  <br/> |Failover zu einer alternativen Internetnetzwerkverbindung  <br/> |Failover zu einer alternativen Express Route-Verbindung  <br/> |
+|Direkte Verbindung mit einem vorhersagbaren Netzwerkprofil.  <br/> |Nein  <br/> |Ja  <br/> |
 |IPv6-Konnektivität.  <br/> |Ja  <br/> |Ja  <br/> |
 
-Erweitern Sie die Titel unten für weitere planungsanleitung Netzwerk. Wir haben auch eine 10-Teil [Azure ExpressRoute für Office 365-Schulung](https://channel9.msdn.com/series/aer) Reihe aufgezeichnet, die tiefer Mitte zu ziehen.
+Erweitern Sie die Titel unten, um weitere Informationen zur Netzwerkplanung zu finden. Außerdem haben wir eine 10-teilige [Azure Express Route für Office 365-Schulungs](https://channel9.msdn.com/series/aer) Reihe aufgenommen, die tiefer taucht.
 
-## <a name="existing-azure-expressroute-customers"></a>Bestehende Kunden von Azure ExpressRoute
+## <a name="existing-azure-expressroute-customers"></a>Vorhandene Azure Express Route-Kunden
 
-Wenn Sie eine vorhandene Azure ExpressRoute Netzfrequenz verwenden und die Office 365-Diensten über diese Verbindung hinzufügen möchten, sollten Sie sehen Sie sich die Anzahl der Circuits Ausgang Speicherorte und Größe der Stromkreise sicherzustellen, dass sie den Bedürfnissen der Nutzung von Office 365 werden. Die meisten Kunden erfordern zusätzliche Bandbreite und viele weitere Schaltkreise erfordern.
+Wenn Sie eine vorhandene Azure Express Route-Schaltung verwenden und Office 365-Verbindungen über diese Schaltung hinzufügen möchten, sollten Sie sich die Anzahl von Stromkreisen, Ausgangs Standorten und Größe der Schaltkreise ansehen, um sicherzustellen, dass Sie die Anforderungen Ihrer Office 365-Nutzung erfüllen. Die meisten Kunden benötigen zusätzliche Bandbreite, und viele erfordern zusätzliche Schaltungen.
   
-Zum Aktivieren des Zugriffs auf Office 365 über den vorhandenen Azure ExpressRoute Stromkreisen werden [Routefilter konfigurieren](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) , um sicherzustellen, dass die Office 365-Diensten zugegriffen.
+Um den Zugriff auf Office 365 über Ihre vorhandenen Azure Express Route-Schaltungen zu ermöglichen, [Konfigurieren Sie die Routenfilter](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) , um sicherzustellen, dass auf die Office 365-Dienste zugegriffen werden kann.
   
-Das ExpressRoute Azure-Abonnement ist Kunden centric, Bedeutung Abonnements an Kunden gebunden sind. Als Kunde können Sie mehrere Azure ExpressRoute Circuits und viele Microsoft Cloud auf Ressourcen zugreifen können über diese Schaltkreise. Sie können beispielsweise auswählen eine Azure Zugriff auf den virtuellen Computer, ein Office 365-Mandanten Test und ein Office 365-produktionsmandanten über ein Paar von redundante Azure ExpressRoute Stromkreise gehostet.
+Das Azure Express Route-Abonnement ist kundenzentriert, was bedeutet, dass Abonnements an Kunden gebunden sind. Als Kunde können Sie mehrere Azure Express Route-Schaltungen haben und über diese Schaltungen auf viele Microsoft Cloud-Ressourcen zugreifen. Sie können beispielsweise auswählen, dass Sie auf einen Azure Hosted Virtual Machine, einen Office 365-Testmandanten und einen Office 365-Produktions Mandanten über ein paar redundanter Azure Express Route-Schaltungen zugreifen möchten.
   
-Die folgende Tabelle erläutert die zwei Typen von Peers Beziehungen gewählte können zur Implementierung über den Stromkreisen.
+In dieser Tabelle werden die beiden Arten von Peering-Beziehungen erläutert, die Sie für Ihre Schaltungen implementieren können.
 
-|**Peers Beziehung**|**Azure Private**|**Microsoft**|
+|**Peering-Beziehung**|**Azure privat**|**Microsoft**|
 |:-----|:-----|:-----|
-|**Dienste** <br/> |IaaS: Azure-virtuelle Computer  <br/> |PaaS: Azure öffentliche Dienste  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
-|Verbindung Initiation *** <br/> |Kunden-Microsoft-  <br/> Microsoft-Kunden  <br/> |Kunden-Microsoft-  <br/> Microsoft-Kunden  <br/> |
-|**QoS-support** <br/> |Keine QoS  <br/> |QoS-<sup>1</sup> <br/> |
+|**Dienste** <br/> |IaaS: virtuelle Azure-Computer  <br/> |PaaS: Azure Public Services  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
+|Verbindungs Initiierung * * * * <br/> |Von Kunden zu Microsoft  <br/> Microsoft-zu-Kunde  <br/> |Von Kunden zu Microsoft  <br/> Microsoft-zu-Kunde  <br/> |
+|**QoS-Unterstützung** <br/> |Keine QoS  <br/> |QoS<sup>1</sup> <br/> |
 
-<sup>1</sup> QoS unterstützt Skype für Business nur zu diesem Zeitpunkt.
+<sup>1</sup> QoS unterstützt derzeit nur Skype for Business.
   
-## <a name="bandwidth-planning-for-azure-expressroute"></a>Planen von Azure ExpressRoute Bandbreite
+## <a name="bandwidth-planning-for-azure-expressroute"></a>Bandbreitenplanung für Azure Express Route
 
-Aller Office 365-Kunden hat eindeutige Bandbreite muss nach der Anzahl der Personen an jedem Standort, wie aktiv sie mit jeder Anwendung Office 365 und anderen Faktoren, wie die Verwendung von lokalen oder Hybrid-Geräte und Netzwerk Sicherheitskonfigurationen sind.
+Jeder Office 365-Kunde verfügt über eindeutige Bandbreitenanforderungen je nach Anzahl der Personen an den einzelnen Standorten, wie aktiv er mit jeder Office 365-Anwendung ist, und anderen Faktoren wie der Verwendung von lokalen oder hybriden Geräten und Konfigurationen der Netzwerksicherheit.
   
-Nicht genügend Bandbreite wird eine Überlastung, hohem von Daten und unvorhersehbares Verzögerungen führen. Mit zu hohem Bandbreite führt unnötige Kosten. Klicken Sie auf einem vorhandenen Netzwerk ist Bandbreite häufig im Hinblick auf die Größe des Reserve verfügbar auf der Netzfrequenz als Prozentsatz bezeichnet. 10 % Reserve wird wahrscheinlich Ergebnis in eine Überlastung und unnötige Kosten bedeutet 80 % Reserven im Allgemeinen müssen. Typische Reserven Ziel Zuweisungen werden 20 % bis 50 %.
+Eine zu geringe Bandbreite führt zu Staus, erneuten Datenübertragungen und unvorhersehbaren Verzögerungen. Eine zu große Bandbreite führt zu unnötigen Kosten. In einem vorhandenen Netzwerk wird die Bandbreite oft im Hinblick auf die verfügbare Kapazität auf dem Circuit als Prozentsatz bezeichnet. Eine Kapazität von 10% wird wahrscheinlich zu Staus führen und eine Kapazität von 80% bedeutet im allgemeinen unnötige Kosten. Die Standardzuweisungen für die Kopffreiheit sind 20% bis 50%.
   
-Damit die richtige Ebene der Bandbreite ermittelt wird, ist die beste Möglichkeit testen Sie Ihre vorhandenen Netzwerk Auslastung. Dies ist die einzige Möglichkeit zum Abrufen einer true Messung der Verwendung des und müssen als jeder Netzwerkkonfiguration und Anwendungen sind einige eindeutige Weise. Beim Messen Sie möchten die insgesamt Bandbreitenverbrauch, Wartezeit und TCP Überlastung zu verstehen, Ihr Netzwerk achten müssen.
+Um die richtige Bandbreite zu ermitteln, besteht der beste Mechanismus darin, Ihre vorhandene Netzwerkauslastung zu testen. Dies ist die einzige Möglichkeit, um die Verwendung und die Notwendigkeit zu wahren, da jede Netzwerkkonfiguration und-Anwendung in gewisser Weise eindeutig ist. Bei der Messung möchten Sie genau auf die gesamte Bandbreite, Latenz und TCP-Überlastung achten, um Ihre Netzwerkanforderungen zu verstehen.
   
-Einmal eine geschätzte Baseline, die alle Network Applications, pilot Office 365 mit eine kleine Gruppe enthält, die die verschiedenen Profile von Personen in Ihrer Organisation zum Bestimmen der tatsächlichen Verbrauch umfasst haben und die zwei Maße verwenden, um den Umfang der schätzen Bandbreite, benötigen Sie für jede Niederlassung benötigen. Wenn Wartezeit oder TCP Überlastung Probleme in der Tests gefunden vorhanden sind, müssen Sie die Ausgang näher an die Personen, die mit Office 365 verschieben oder Entfernen von intensiven Überprüfung wie SSL-Entschlüsselung/Überprüfung Netzwerk.
+Wenn Sie über eine geschätzte Baseline verfügen, die alle Netzwerkanwendungen umfasst, führen Sie Pilot Office 365 mit einer kleinen Gruppe aus, die die verschiedenen Profile der Personen in Ihrer Organisation umfasst, um die tatsächliche Nutzung zu ermitteln, und verwenden Sie die beiden Messungen, um die Anzahl der die Bandbreite, die Sie für jeden Office-Standort benötigen. Wenn bei den Tests Latenz-oder TCP-Überlastungsprobleme auftreten, müssen Sie den Ausstieg möglicherweise näher an die Personen mit Office 365 verschieben oder eine intensive NETZWERKÜBERPRÜFUNG wie die SSL-Entschlüsselung/-Überprüfung entfernen.
   
-Alle unsere empfohlenen auf welche Art von Netzwerk-Verarbeitung empfohlen wird auf ExpressRoute und Internet Circuits angewendet wird. Dies gilt auch für den Rest dieses Handbuchs auf unsere [Performance tuning-Website](https://aka.ms/tune).
+Alle unsere Empfehlungen für die Art der Netzwerkverarbeitung, die empfohlen wird, gelten sowohl für Express Route-als auch für Internet-Schaltungen. Das gleiche gilt für die restlichen Anweisungen auf unserer [Website zur Leistungsoptimierung](https://aka.ms/tune).
   
-## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Anwenden von Sicherheitssteuerelemente auf Azure ExpressRoute für Office 365-Szenarien
+## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Anwenden von Sicherheitskontrollen auf Azure Express Route für Office 365-Szenarien
 
-Sichern von Azure ExpressRoute Connectivity beginnt mit demselben Prinzip wie Internetkonnektivität sichern. Viele Kunden entscheiden sich zum Bereitstellen von Netzwerk- und Umkreis-Steuerelemente auf dem Herstellen einer Verbindung mit ihrem lokalen Netzwerk zu Office 365 und anderen Microsoft-Wolken ExpressRoute Pfad. Diese Steuerelemente möglicherweise Firewalls, Proxys, Daten verhindern von Informationsverlusten, unbefugten, Intrusion Prevention-Systeme und usw. umfassen. In vielen Fällen gelten Kunden verschiedene Ebenen von Steuerelementen für Datenverkehr aus lokalen und sollte an Microsoft, im Vergleich zu Datenverkehr von Microsoft Customer lokalen Netzwerk, im Vergleich zu Datenverkehr vom lokalen unterschiedlich sein und sollte eine allgemeine initiiert und sollte initiiert initiiert Internet-Ziel.
+Das Sichern der Azure Express Route-Konnektivität beginnt mit den gleichen Prinzipien wie die Sicherung der Internet Konnektivität. Viele Kunden wählen die Bereitstellung von Netzwerk-und Umkreis Steuerungen entlang des Express Route-Pfads, der Ihr lokales Netzwerk mit Office 365 und anderen Microsoft-Clouds verbindet. Diese Steuerelemente können Firewalls, Anwendungsproxys, Verhinderung von Datenverlust, Intrusionserkennung, Intrusion Prevention-Systeme usw. enthalten. In vielen Fällen wenden Kunden unterschiedliche Steuerstufen auf Datenverkehr an, der von einem lokalen Microsoft-System initiiert wird, im Vergleich zu Datenverkehr, der von Microsoft zum lokalen Kundennetzwerk gestartet wird, im Vergleich zu Datenverkehr, der von einem lokalen Standort zu einem allgemeinen Internet Ziel.
   
-Nachfolgend finden Sie einige Beispiele für die Integration von Sicherheit mit dem [ExpressRoute Connectivity-Modell](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) , das Sie bereitstellen möchten.
+Hier einige Beispiele für die Integration der Sicherheit in das [Express Route-Verbindungsmodell](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) , das Sie bereitstellen möchten.
 
-|**ExpressRoute Integration-option**|**Netzwerk-Umkreis-Sicherheitsmodell**|
+|**Express Route-Integrations Option**|**Umkreis Modell für Netzwerksicherheit**|
 |:-----|:-----|
-|Co-Location bei einem Cloud Exchange  <br/> |Neu installieren Sie oder nutzen Sie vorhandene Security/Umkreis-Infrastruktur Einrichtung gemeinsamer Speicherort, in dem die ExpressRoute-Verbindung hergestellt wird.  <br/> Nutzung gemeinsamer Speicherort Einrichtung ausschließlich für routing/interconnect Zwecke und Back Transport Verbindungen von Co-Location Facility in die lokale Security/Umkreis-Infrastruktur.  <br/> |
-|Point-Ethernet  <br/> |Trennen Sie in der vorhandenen lokalen Security/Umkreis-Infrastruktur Ort Point ExpressRoute Verbindung.  <br/> Installieren von neuen Security/Umkreis-Infrastruktur, die bestimmte auf den Pfad ExpressRoute und beendet die Verbindung vorhanden.  <br/> |
-|N: N-IPVPN  <br/> |Nutzen Sie eine vorhandene Infrastruktur mit lokalen Security/Umkreisnetzwerk an allen Standorten, die in der IPVPN für Office 365-Konnektivität für ExpressRoute verwendete egress.  <br/> Hairpin bestimmt die IPVPN für ExpressRoute für Office 365 verwendet, um bestimmte lokale Speicherorte als des Sicherheitsbereichs dienen soll.  <br/> |
+|Co-Location bei einem Cloud Exchange  <br/> |Installieren Sie neue oder nutzen Sie vorhandene Security/Perimeter-Infrastruktur in der Co-Location-Einrichtung, in der die Express Route-Verbindung hergestellt wird.  <br/> Nutzen Sie die Co-Location-Fazilität ausschließlich für Routing/Verbindungs Zwecke und für die Rücktransport Verbindung von der Co-Location-Einrichtung zur lokalen Security/Perimeter-Infrastruktur.  <br/> |
+|Punkt-zu-Punkt-Ethernet  <br/> |Beenden Sie die Punkt-zu-Punkt-Express Route-Verbindung im vorhandenen lokalen Speicherort der Sicherheit/Umkreis Infrastruktur.  <br/> Installieren Sie eine neue Sicherheits-/Umkreis Infrastruktur für den Express Route-Pfad, und beenden Sie die Punkt-zu-Punkt-Verbindung dort.  <br/> |
+|Any-to-any-IPVPN  <br/> |Nutzen Sie eine vorhandene lokale Sicherheit/Umkreis Infrastruktur an allen Standorten, die in den für Express Route für Office 365-Konnektivität verwendeten IPVPN.  <br/> Haarnadel das für Express Route für Office 365 verwendete IPVPN zu bestimmten lokalen Standorten, die als Sicherheit/Umkreis dienen.  <br/> |
 
-Einige Dienstanbieter bieten auch verwaltete Security/Umkreis-Funktionalität als Teil ihrer Lösungen Integration mit Azure ExpressRoute.
+Einige Dienstanbieter bieten außerdem verwaltete Sicherheit/Perimeter-Funktionalität als Teil ihrer Integrationslösungen mit Azure Express Route.
   
-Wenn Sie die Topologie Platzierung der Netzwerk-Sicherheit Umkreis-Optionen für ExpressRoute für Office 365-Verbindungen verwendet, sind folgende zusätzliche Überlegungen
+Bei der Topologie-Platzierung der Netzwerk-/Sicherheitsperimeter-Optionen, die für Express Route für Office 365-Verbindungen verwendet werden, sind folgende weitere Überlegungen zu beachten:
   
-- Die Netzwerk-Sicherheit Steuerelemente Tiefe und Typ möglicherweise Beeinträchtigung der Leistung und Skalierbarkeit des Benutzererlebnisses Office 365.
+- Die tiefen-und typsicherheits-Steuerelemente können sich auf die Leistung und Skalierbarkeit der Office 365-Benutzeroberfläche auswirken.
 
-- Ausgehend (auf-lokale -\>Microsoft) und eingehenden (Microsoft -\>lokale) [Wenn aktiviert] fließt möglicherweise unterschiedliche Anforderungen. Dies sind wahrscheinlich an allgemeine Internet Ziele ausgehend unterscheidet.
+- Ausgehende (lokale-\>Microsoft) und eingehende (Microsoft-\>lokale) [falls aktiviert]-Abläufe können unterschiedliche Anforderungen erfüllen. Diese sind wahrscheinlich unterschiedlich als ausgehend zu allgemeinen Internet Destinationen.
 
-- Office 365-Anforderungen für Ports-Protokolle und die erforderlichen IP-Subnetze sind gleich, ob Datenverkehr durch ExpressRoute für Office 365 oder über das Internet weitergeleitet wird.
+- Die Office 365-Anforderungen für Ports/Protokolle und erforderliche IP-Subnetze sind identisch, unabhängig davon, ob Datenverkehr über Express Route für Office 365 oder über das Internet weitergeleitet wird.
 
-- Topologie Platzierung der Steuerelemente Netzwerk/Sicherheit Kunden kann bestimmt das ultimative End-to-End-Netzwerk zwischen dem Benutzer und Office 365-Dienst und eine erhebliche Auswirkungen auf die Netzwerklatenz und Überlastung.
+- Die topologische Platzierung des Kunden Netzwerks/der Sicherheitskontrollen bestimmt das ultimative End-to-End-Netzwerk zwischen dem Benutzer und dem Office 365-Dienst und kann erhebliche Auswirkungen auf die Netzwerkwartezeit und die Überlastung haben.
 
-- Benutzer werden aufgefordert, ihre Security/Umkreis-Topologie für die Verwendung mit ExpressRoute für Office 365 gemäß den best Practices für Redundanz, hohe Verfügbarkeit und notfallwiederherstellung zu entwerfen.
+- Kunden werden aufgefordert, Ihre Sicherheits-/Umkreis Topologie für die Verwendung mit Express Route für Office 365 gemäß den bewährten Methoden für Redundanz, hohe Verfügbarkeit und Notfallwiederherstellung zu entwerfen.
 
-Es folgt ein Beispiel der Woodgrove Bank, die die verschiedenen Optionen der Azure-ExpressRoute-Konnektivität mit den oben beschriebenen Umkreisnetzwerk Security-Modellen vergleicht.
+Nachfolgend finden Sie ein Beispiel für die Woodgrove Bank, die die verschiedenen Azure Express Route-Konnektivitäts-Optionen mit den oben besprochenen Umkreis Sicherheitsmodellen vergleicht.
   
-### <a name="example-1-securing-azure-expressroute"></a>In Beispiel 1: Sichern von Azure ExpressRoute
+### <a name="example-1-securing-azure-expressroute"></a>Beispiel 1: Sichern von Azure Express Route
   
-Woodgrove Bank ist in Erwägung ziehen Azure ExpressRoute implementieren und nach dem Planen der optimalen Architektur für [Routing mit ExpressRoute für Office 365](routing-with-expressroute.md) und dem mit der obigen Anleitung um zu verstehen, erforderliche Bandbreite, sind sie bestimmen die bewährte Methode für ihre Umgebung sichern.
+Die Woodgrove Bank erwägt die Implementierung von Azure Express Route und nach der Planung der optimalen Architektur für das [Routing mit Express Route für Office 365](routing-with-expressroute.md) und nachdem Sie die obigen Leitlinien zum Verständnis der Bandbreitenanforderungen verwendet haben, bestimmen Sie die beste Methode zum Sichern des Umfangs.
   
-Sicherheit muss alle Perimeter erstrecken, für Woodgrove eine multinationale Organisation mit Standorten in mehreren Kontinenten. Die optimale Konnektivitätsoption für Woodgrove ist eine Verbindung mit mehreren Punkt mit mehreren Peers Standorten auf der ganzen Welt an die Bedürfnissen der Mitarbeiter in jeden Kontinent-service. Jeden Kontinent redundante Azure ExpressRoute Stromkreise innerhalb der Kontinent enthält, und Sicherheit muss alle diese umfassen.
+Für Woodgrove, eine multinationale Organisation mit Standorten auf mehreren Kontinenten, muss sich die Sicherheit über alle Umkreis Bereiche erstrecken. Die Option für optimale Konnektivität für Woodgrove ist eine Multi-Point-Verbindung mit mehreren Peering-Standorten rund um den Globus, um die Anforderungen Ihrer Mitarbeiter auf jedem Kontinent zu erfüllen. Jeder Kontinent umfasst redundante Azure-Express Route-Schaltungen innerhalb des Kontinents, und die Sicherheit muss alle diese Bereiche umfassen.
   
-Vorhandene Infrastruktur des Woodgrove zuverlässig und kann den zusätzlichen Aufwand verarbeiten, daher Woodgrove Bank kann die Infrastruktur für ihre Azure ExpressRoute und Internet Umkreis-Sicherheit verwenden. Wenn dies nicht der Fall waren, konnte Woodgrove verhindern, dass zusätzliche Geräte ihre vorhandenen Geräte ergänzen oder eine andere Art von Verbindung behandeln anschaffen.
+Die vorhandene Infrastruktur von Woodgrove ist zuverlässig und kann die zusätzliche Arbeit bewältigen, sodass die Woodgrove Bank in der Lage ist, die Infrastruktur für Ihre Azure-Express Route und die Internet Perimeter-Sicherheit zu nutzen. Wenn dies nicht der Fall wäre, könnte Woodgrove sich entscheiden, zusätzliche Geräte zu erwerben, um die vorhandenen Geräte zu ergänzen oder einen anderen Verbindungstyp zu behandeln.
   
-## <a name="high-availability-and-failover-with-azure-expressroute"></a>Hohe Verfügbarkeit und Failover mit Azure ExpressRoute
+## <a name="high-availability-and-failover-with-azure-expressroute"></a>Hohe Verfügbarkeit und Failover mit Azure Express Route
 <a name="BKMK_high-availability"> </a>
 
-Es wird empfohlen, mindestens zwei aktiven Circuits aus jeder Ausgang mit ExpressRoute an Ihren Anbieter ExpressRoute bereitstellen. Dies ist die am häufigsten wir finden Sie unter Fehler für Kunden und Sie können es auf einfache Weise vermeiden, indem Sie ein Paar von aktiv/aktiv ExpressRoute Circuits-Bereitstellung. Wir empfehlen auch mindestens zwei aktiv/aktiv-Internet-Schaltkreise, da viele Office 365-Dienste nur über das Internet zur Verfügung stehen.
+Es wird empfohlen, mindestens zwei aktive Stromkreise von jedem Ausstieg mit Express Route an Ihren Express Route-Anbieter zu über stellen. Dies ist die häufigste Stelle, an der Fehler für Kunden angezeigt werden, und Sie können Sie problemlos vermeiden, indem Sie ein paar aktiver/aktiver Express Route-Schaltungen aktivieren. Außerdem empfehlen wir mindestens zwei aktive/aktive Internet-Schaltungen, da viele Office 365-Dienste nur über das Internet verfügbar sind.
   
-Innerhalb des Netzwerks Austritt sind viele andere Geräte und Circuits, die wie Personen Verfügbarkeit Wahrnehmung eine wichtige Rolle spielen. Diese Teile der Konnektivität Szenarien nicht von ExpressRoute oder Office 365 SLAs abgedeckt werden, aber sie spielt eine wichtige Rolle in der Verfügbarkeit Ende zum als wahrgenommene von Personen in Ihrer Organisation.
+Innerhalb des Ausgangspunkts Ihres Netzwerks gibt es viele andere Geräte und Stromkreise, die eine entscheidende Rolle bei der Wahrnehmung von Verfügbarkeit spielen. Diese Teile ihrer Verbindungsszenarien werden nicht durch Express Route oder Office 365-SLAs abgedeckt, Sie spielen jedoch eine entscheidende Rolle bei der End-to-End-Dienstverfügbarkeit, wie Sie von Personen in Ihrer Organisation wahrgenommen werden.
   
-Konzentrieren Sie sich auf die Personen, die unter Verwendung der und erleben Sie die Verwendung des Diensts, suchen Sie nach Möglichkeiten zum Einschränken der Gesamtprozentsatz der betroffenen Personen Betrieb von Office 365, wenn es sich bei ein Fehler für jede Komponente ein Personen auswirken würde. Wenn ein Failovermodus den niedrigsten komplex ist, sollten Sie die Personen konferenzmöglichkeiten für einen längeren Zeitraum zur Wiederherstellung, und suchen Sie nach den niedrigsten einfache, automatische Failover Modi.
+Konzentrieren Sie sich auf die Personen, die Office 365 verwenden, und wenn ein Fehlschlagen einer Komponente die Benutzerfreundlichkeit des Diensts beeinträchtigen würde, suchen Sie nach Möglichkeiten, den Gesamtprozentsatz der betroffenen Personen einzuschränken. Wenn ein Failovermodus operativ Komplex ist, sollten Sie die Erfahrung der Völker für eine Wiederherstellung in Betracht ziehen und nach Betriebs einfachen und automatisierten Failover-Modi suchen.
   
-Außerhalb von Netzwerk, Office 365, ExpressRoute und Ihren ExpressRoute-Anbieter verfügen alle verschiedene Ebenen der Verfügbarkeit.
+Außerhalb Ihres Netzwerks verfügen Office 365, Express Route und Ihr Express Route-Anbieter über unterschiedliche Verfügbarkeitsstufen.
   
 ### <a name="service-availability"></a>Service Availability
   
-- Office 365-Dienste werden mit klar definierten [Vereinbarungen zum Servicelevel](https://technet.microsoft.com/library/office-365-service-level-agreement.aspx), behandelt, die ein Betriebszeit und Verfügbarkeit Metriken für einzelne Dienste enthalten. Ein Grund, die Office 365 solche hohe Verfügbarkeit Servicelevel ist die Möglichkeit für einzelne Komponenten an nahtlosen Failover zwischen der vielen Microsoft-Rechenzentren, über die globale Microsoft-Netzwerk verwalten können. Diese Failover aus dem Rechenzentrum und dem Netzwerk, die mehrere Internet Ausgang Punkte erweitert und ermöglicht das Failover nahtlos aus der Sicht der Personen, die Verwendung des Diensts.
+- Office 365-Dienste werden durch definierte Vereinbarungen zum [Service Level](https://technet.microsoft.com/library/office-365-service-level-agreement.aspx)abgedeckt, die verfüg barkeits-und Verfügbarkeits Metriken für einzelne Dienste enthalten. Ein Grund dafür, dass Office 365 so hohe Dienst Verfügbarkeitsstufen aufrecht erhalten kann, ist die Möglichkeit für einzelne Komponenten, mit dem globalen Microsoft-Netzwerk nahtlos zwischen den vielen Microsoft-Rechenzentren zu Failover. Dieses Failover erstreckt sich vom Datencenter und Netzwerk auf mehrere Internet-Ausstiegspunkte und ermöglicht ein nahtloses Failover aus der Perspektive der Benutzer, die den Dienst verwenden.
 
-- ExpressRoute [bietet eine Verfügbarkeit von 99,9 % SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) einzelne dedizierten Circuits zwischen dem Microsoft-Netzwerk und die ExpressRoute Anbieter oder Partner-Infrastruktur. Diese Service-Level gelten auf Ebene der ExpressRoute Verbindung besteht aus [zwei unabhängigen Verbindungen](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) zwischen der redundante Ausrüstung Microsoft und die Netzwerkgeräte Anbieter an jedem Standort Peers.
+- Express Route [bietet eine SLA zur Verfügbarkeit von 99,9%](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) für einzelne dedizierte Stromkreise zwischen dem Microsoft-netzwerkedgeserver und dem Express Route-Anbieter oder der Partner Infrastruktur. Diese Servicestufen werden auf der Express Route-Leitungsebene angewendet, die aus [zwei unabhängigen Verbindungen](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) zwischen den redundanten Microsoft-Geräten und den Netzwerkanbieter-Geräten an jedem Peering-Standort besteht.
 
-### <a name="provider-availability"></a>Provider-Verfügbarkeit
+### <a name="provider-availability"></a>Anbieter Verfügbarkeit
   
-- Microsoft Service Level Modalitäten Beenden des ExpressRoute Anbieter oder Partner. Dies ist auch die zentrale Position, die Sie eine Auswahl treffen können, die Ihre Verfügbarkeit beeinflussen wird. Sie sollten die Architektur, Verfügbarkeit und ausfallsicherheit Merkmale des Anbieters ExpressRoute bietet eng bewerten, zwischen Umkreisnetzwerk und die Verbindung Anbieter an jedem Microsoft Peers Standort. Achten Sie besonders auf die logische und physische Aspekte der Redundanz, Peers Ausrüstung, WAN Circuits Netzbetreiber bereitgestellt und alle zusätzlichen Wert Dienste wie NAT-Dienste oder verwalteten Firewalls hinzufügen.
+- Die Service Level-Arrangements von Microsoft halten bei Ihrem Express Route-Anbieter oder-Partner an. Dies ist auch der erste Ort, an dem Sie Entscheidungen treffen können, die sich auf Ihre Verfügbarkeitsstufe auswirken. Sie sollten die Architektur, die Verfügbarkeit und die Ausfallsicherheit von Ihrem Express Route-Anbieter zwischen Ihrem Umkreisnetzwerk und der Anbieterverbindung an jedem Microsoft-Peering-Standort genau bewerten. Achten Sie sowohl auf die logischen als auch auf die physikalischen Aspekte der Redundanz, die Peering-Ausrüstung, die bereitgestellten WAN-Schaltungen und alle zusätzlichen Dienste wie NAT-Dienste oder verwaltete Firewalls.
 
-### <a name="designing-your-availability-plan"></a>Entwerfen Ihrer Verfügbarkeitsplan
+### <a name="designing-your-availability-plan"></a>Entwerfen des Verfügbarkeits Plans
   
-Es wird dringend empfohlen, dass Sie planen und Entwerfen hohe Verfügbarkeit und ausfallsicherheit in Ihre End-to-End-Konnektivität Szenarien für Office 365. Ein Entwurf sollte enthalten;
+Es wird dringend empfohlen, hohe Verfügbarkeit und Ausfallsicherheit in ihren End-to-End-Konnektivitäts Szenarien für Office 365 zu planen und zu entwerfen. Ein Entwurf sollte;
   
-- keine einzelnen Fehlerquellen, einschließlich Internet- und ExpressRoute Circuits.
+- keine einzelnen Fehlerquellen, einschließlich Internet-und Express Route-Schaltungen.
 
-- Minimieren die Anzahl der betroffenen Personen und die Dauer der Auswirkungen, diese für die meisten erwarteten verschiedene Arten von Ausfällen.
+- minimieren Sie die Anzahl der betroffenen Personen und die Dauer dieser Auswirkungen für die meisten erwarteten Ausfälle.
 
-- Optimieren von am erwarteten verschiedene Arten von Ausfällen für die einfache, wiederholbare und automatische Wiederherstellung.
+- Optimierung für einfachen, wiederholbaren und automatischen Wiederherstellungsvorgang aus den meisten erwarteten Ausfalls Modi.
 
-- die vollständigen topologieoption den Netzwerkverkehr und Funktionen über redundante Pfade ohne Beeinträchtigung der wesentlichen unterstützen.
+- Unterstützung der vollständigen Anforderungen des Netzwerkdatenverkehrs und der Funktionalität über redundante Pfade ohne erhebliche Beeinträchtigung.
 
-Ihre Verbindung Szenarien sollte eine Netzwerktopologie enthalten, die für mehrere unabhängige und aktiv Netzwerkpfade zu Office 365 optimiert ist. Dies ergibt eine besser End-to-End-Verfügbarkeit als eine Topologie, die nur für Redundanz auf Ebene der einzelnen Gerät oder Geräte optimiert ist.
+Ihre Verbindungsszenarien sollten eine Netzwerktopologie aufweisen, die für mehrere unabhängige und aktive Netzwerkpfade zu Office 365 optimiert ist. Dadurch ergibt sich eine bessere End-to-End-Verfügbarkeit als eine Topologie, die nur für Redundanz auf der einzelnen Geräte-oder Geräteebene optimiert ist.
   
 > [!TIP]
-> Wenn Ihre Benutzer auf mehreren Kontinenten oder geografische Bereiche verteilt werden und die einzelnen Pfade stellt eine über redundante WAN Stromkreise an einen einfachen lokalen Speicherort Verbindung, in einer einzelnen ExpressRoute Netzfrequenz gespeichert ist, werden Ihre Benutzer kleiner bemerken End-to-End-Verfügbarkeit als ein Netzwerk Entwerfen der Topologie, die unabhängige ExpressRoute Circuits, mit denen die unterschiedlichen Regionen enthält auf die nächste peering zugänglich Speicherort.
+> Wenn Ihre Benutzer über mehrere Kontinente oder geographische Regionen verteilt sind und jeder dieser Standorte über redundante WAN-Leitungen mit einem einzigen lokalen Standort verbindet, auf dem sich eine einzelne Express Route-Schaltung befindet, werden Ihre Benutzer End-to-End-Dienstverfügbarkeit als ein Entwurf einer Netzwerktopologie, der unabhängige Express Route-Schaltungen umfasst, die die verschiedenen Regionen mit dem nächstgelegenen Peering-Standort verbinden.
   
-Es wird empfohlen, mindestens zwei ExpressRoute Circuits mit jeder Verbindung herstellen einer Verbindung mit mit einem unterschiedlichen geografischen Peers Ort bereitstellen. Sie sollten diese aktiv / aktiv-Paar Stromkreise für jede Region bereitstellen, in dem Personen ExpressRoute Konnektivität für Office 365-Dienste verwendet werden soll. Dadurch wird jeder Region verbundenen während eines Notfalls bleiben, die einen größeren Standort wie ein Datencenter oder Peers Speicherort betrifft. Konfigurieren sie in als aktiv/aktiv kann Endbenutzer-Datenverkehrs über mehrere Netzwerkpfade verteilt werden. Dies reduziert den Bereich der Personen, die bei Gerät oder Network Equipment Ausfällen betroffen.
+Es wird empfohlen, mindestens zwei Express Route-Schaltungen für jeden Stromkreis zu über stellen, der mit einem anderen geografischen Peering-Standort verbunden ist. Sie sollten diese aktiv-aktiven paar von Stromkreisen für jede Region, in der Benutzer Express Route-Konnektivität für Office 365-Dienste verwenden. Dadurch kann jede Region während eines Notfalls verbunden bleiben, der sich auf einen Hauptstandort wie ein Rechenzentrum oder einen Peering-Standort auswirkt. Wenn Sie Sie als aktiv/aktiv konfigurieren, können Endbenutzer Datenverkehr über mehrere Netzwerkpfade verteilt werden. Dies reduziert den Umfang der betroffenen Personen während der Geräte-oder Netzwerk Ausrüstungs Ausfälle.
   
-Es wird nicht empfohlen, eine einzelne ExpressRoute Verbindung mit dem Internet als Sicherungskopie verwenden.
+Es wird nicht empfohlen, eine einzelne Express Route-Schaltung mit dem Internet als Sicherung zu verwenden.
   
 ### <a name="example-2-failover-and-high-availability"></a>Beispiel 2: Failover und hohe Verfügbarkeit
   
-Woodgrove Bank mit mehreren geografischen Entwurf wurde unterzogen einen Überblick über routing, Bandbreite, Sicherheit und jetzt über eine hohe Verfügbarkeit Überprüfung wechseln muss. Woodgrove geht davon aus, Informationen zu hoher Verfügbarkeit umfassen drei Kategorien; Flexibilität, Zuverlässigkeit und Redundanz.
+Das Multi-geographische Design der Woodgrove Bank hat sich mit dem Routing, der Bandbreite und der Sicherheit befassen und muss jetzt eine hoch Verfügbarkeitsüberprüfung durchlaufen. Woodgrove denkt über die hohe Verfügbarkeit von drei Kategorien nach; Ausfallsicherheit, Zuverlässigkeit und Redundanz.
   
-Resiliency ermöglicht Woodgrove, Fehlern schnell wiederherzustellen. Zuverlässigkeit ermöglicht Woodgrove ein konsistentes Ergebnis innerhalb des Systems anbieten möchten. Redundanz ermöglicht Woodgrove zu einer Verschiebung zwischen mindestens einen gespiegelten Instanzen der Infrastruktur.
+Ausfallsicherheit ermöglicht Woodgrove die schnelle Wiederherstellung von Fehlern. Zuverlässigkeit ermöglicht es Woodgrove, ein konsistentes Ergebnis innerhalb des Systems anzubieten. Redundanz ermöglicht es Woodgrove, zwischen einer oder mehreren gespiegelten Infrastruktur Instanzen zu wechseln.
   
-In den einzelnen Konfigurationen Edge hat Woodgrove redundante Firewalls, Proxys und IDS. Nordamerika hat Woodgrove eine Konfiguration für Zugriffsedge im Rechenzentrum Dallas und eine andere Konfiguration für Zugriffsedge im Rechenzentrum Virginia. Die redundante Ausrüstung an jedem Standort bietet Flexibilität zu diesem Speicherort.
+Innerhalb jeder Edge-Konfiguration verfügt Woodgrove über redundante Firewalls, Proxys und IDs. Für Nordamerika verfügt Woodgrove über eine Edge-Konfiguration im Dallas-Datencenter und eine weitere Edge-Konfiguration im Virginia-Datencenter. Die redundante Ausrüstung an jedem Standort bietet Ausfallsicherheit für diesen Standort.
   
-Die Netzwerkkonfiguration Woodgrove Bank basiert auf einige wichtige Prinzipien basiert:
+Die Netzwerkkonfiguration der Woodgrove Bank basiert auf einigen Grundprinzipien:
   
-- Innerhalb jeder Region und gibt es mehrere Azure ExpressRoute Circuits.
+- Innerhalb jeder geografischen Region gibt es mehrere Azure Express Route-Schaltungen.
 
-- Jede Verbindung innerhalb eines Bereichs kann alle des Netzwerkdatenverkehrs innerhalb der jeweiligen Region unterstützen.
+- Jeder Stromkreis innerhalb eines Bereichs kann den gesamten Netzwerkdatenverkehr innerhalb dieser Region unterstützen.
 
-- Routing wird deutlich bevorzugen eine oder den anderen Pfad je nach Verfügbarkeit, Speicherort und so weiter.
+- Das Routing hat eindeutig einen oder anderen Pfad abhängig von Verfügbarkeit, Standort usw.
 
-- Failover zwischen Azure ExpressRoute Circuits erfolgt automatisch ohne zusätzliche Konfiguration oder eine Aktion Woodgrove durchführen.
+- Ein Failover zwischen Azure Express Route-Schaltungen erfolgt automatisch ohne zusätzliche Konfiguration oder Aktion, die von Woodgrove benötigt wird.
 
-- Failover zwischen Internet Circuits erfolgt automatisch ohne zusätzliche Konfiguration oder eine Aktion Woodgrove durchführen.
+- Ein Failover zwischen Internet Schaltkreisen erfolgt automatisch ohne zusätzliche Konfiguration oder Aktion, die von Woodgrove benötigt wird.
 
-Woodgrove Bank kann in dieser Konfiguration mit Redundanz auf Ebene der physischen und virtuellen lokalen Resiliency, regionalen Resiliency und globale Resiliency zuverlässige bieten. Woodgrove gewählt diese Konfiguration nach der Auswertung einer einzelnen Azure ExpressRoute Netzfrequenz pro Region als auch die Möglichkeit, Ausführen eines Failovers für mit dem Internet.
+In dieser Konfiguration mit Redundanz auf physischer und virtueller Ebene ist die Woodgrove Bank in der Lage, lokale Ausfallsicherheit, regionale Ausfallsicherheit und globale Ausfallsicherheit auf zuverlässige Weise bereitzustellen. Woodgrove hat diese Konfiguration gewählt, nachdem eine einzelne Azure Express Route-Schaltung pro Region ausgewertet wurde, und die Möglichkeit, ein Failover für das Internet durchführen zu können.
   
-Wenn Woodgrove haben mehrere Azure ExpressRoute Circuits pro Region konnte, würde routing Datenverkehr in Nordamerika zu der Netzfrequenz Azure ExpressRoute in Asien-Pazifik akzeptable der Wartezeit und der erforderlichen DNS-Weiterleitungskonfiguration hinzufügen. erhöht die Komplexität.
+Wenn Woodgrove nicht über mehrere Azure Express Route-Schaltungen pro Region verfügen konnte, würde das Routing von Datenverkehr von Nordamerika zur Azure Express Route-Schaltung in Asien-Pazifik zu einer inakzeptablen Latenzzeit und zur erforderlichen DNS-Weiterleitungskonfiguration führen. Fügt die Komplexität hinzu.
   
-Nutzen das Internet als eine Sicherung der Konfiguration wird nicht empfohlen. Dies Seitenumbrüche Woodgrove Zuverlässigkeit Prinzip resultierendes Inkonsistenzen mithilfe der Verbindung. Manueller Konfiguration wäre darüber hinaus erforderlich, damit das Failover Berücksichtigung der Werbung BGP, die konfiguriert wurden, NAT-Konfiguration, DNS-Konfiguration und der Proxy-Konfiguration. Dies hinzugefügt Failover Komplexität der Zeit bis zur Wiederherstellung erhöht und verringert die Fähigkeit zum Identifizieren und beheben die folgenden Schritte ausgeführt werden.
+Die Nutzung des Internets als Sicherungskonfiguration wird nicht empfohlen. Dies unterbricht das Zuverlässigkeits Prinzip von Woodgrove, was zu einer inkonsistenten Erfahrung mit der Verbindung führt. Darüber hinaus wäre eine manuelle Konfiguration erforderlich, um ein Failover in Anbetracht der konfigurierten BGP-Ankündigungen, der NAT-Konfiguration, der DNS-Konfiguration und der Proxykonfiguration durchführen zu können. Diese hinzugefügte Failover-Komplexität erhöht die Zeit für die Wiederherstellung und verringert die Diagnose und Problembehandlung der einzelnen Schritte.
   
-Noch Fragen zum Planen und Implementieren von Datenverkehr Management oder Azure ExpressRoute immer? Lesen Sie die restlichen [Anweisungen Netzwerk- und Leistung](https://aka.ms/tune) der oder die [Azure ExpressRoute – häufig gestellte Fragen](https://azure.microsoft.com/documentation/articles/expressroute-faqs/).
+Sie haben noch Fragen zur Planung und Implementierung von Traffic Management oder Azure Express Route? Lesen Sie den Rest unseres [Netzwerk-und Leistungs-Guidance](https://aka.ms/tune) oder die [Azure Express Route FAQ](https://azure.microsoft.com/documentation/articles/expressroute-faqs/).
   
-## <a name="working-with-azure-expressroute-providers"></a>Arbeiten mit Azure ExpressRoute-Anbieter
+## <a name="working-with-azure-expressroute-providers"></a>Arbeiten mit Azure Express Route-Anbietern
 <a name="BKMK_high-availability"> </a>
 
-Wählen Sie die Speicherorte der Stromkreise basierend auf Ihrer Bandbreite, Latenz, Sicherheit und hohe Verfügbarkeit zu planen. Wenn Sie die optimale Speicherorte wissen platzieren möchten auslöst, [Überprüfen Sie die aktuelle Liste der Anbieter nach Region](https://azure.microsoft.com/documentation/articles/expressroute-locations/).
+Wählen Sie die Standorte Ihrer Schaltungen basierend auf Ihrer Bandbreite, Latenz, Sicherheit und hoher Verfügbarkeit. Sobald Sie wissen, welche Standorte Sie platzieren möchten, [Überarbeiten Sie die aktuelle Liste der Anbieter nach Regionen](https://azure.microsoft.com/documentation/articles/expressroute-locations/).
   
-Arbeiten Sie mit Ihrer mindestens einen Authentifizierungsanbieter an die besten Konnektivitätsoptionen Point, Mehrpunkt oder gehostete auswählen. Beachten Sie, dass Sie kombinieren und die Konnektivitätsoptionen übereinstimmen, solange die Bandbreite und andere redundanten Komponenten Ihrer routing und hohe Verfügbarkeit entwerfen unterstützen können.
+Arbeiten Sie mit Ihrem Anbieter oder Anbieter zusammen, um die besten Verbindungsoptionen, Point-to-Point, Multi-Point oder gehostet auszuwählen. Denken Sie daran, dass Sie die Verbindungsoptionen so kombinieren und anpassen können, dass die Bandbreite und andere redundante Komponenten Ihr Routing und das Design der Hochverfügbarkeit unterstützen.
   
 Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
   
@@ -200,21 +200,21 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/plan
   
 [Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
   
-[Verwenden von BGP-Communitys in ExpressRoute für Office 365-Szenarien (Vorschau)](bgp-communities-in-expressroute.md)
+[Verwenden von BGP-Communities in Express Route für Office 365-Szenarien (Preview)](bgp-communities-in-expressroute.md)
   
 [Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
 [Optimieren Ihres Netzwerks für Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[ExpressRoute und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[Express Route und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Anruffluss mit Express Route](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
-[URLs und IP-Adressbereiche von Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
   

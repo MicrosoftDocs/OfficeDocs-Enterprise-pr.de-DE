@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/28/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 4194020a-3847-4259-9f2d-5c556a4510f9
 description: 'Zusammenfassung: Grundlegende Informationen darüber, wie Sie Ihr Netzwerk für Zugriff auf Microsoft SaaS-Dienste, einschließlich Office 365, Microsoft Intune und Dynamics 365, optimieren.'
-ms.openlocfilehash: 3d47c53de1bc1121ef72eb519c51c0ad9423fff9
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 695e3255bf1afcb5314985caccb15ead410d93f6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067771"
 ---
 # <a name="designing-networking-for-microsoft-saas"></a>Entwerfen von Netzwerken für Microsoft-SaaS
 
@@ -39,28 +39,28 @@ Befolgen Sie diese Schritte, um Ihr Netzwerk für Microsoft SaaS-Dienste zu opti
     
 4. Untersuchen Sie Ihre Netzwerk-Haarnadeln, Zwischenziele wie Cloud-basierte Sicherheitsdienste, und beseitigen Sie Sie nach Möglichkeit.
     
-5. Konfigurieren Sie Ihre edgegeräte, um die Verarbeitung für die Kategorien optimieren und zulassen von Microsoft SaaS-Datenverkehr zu umgehen.
+5. Konfigurieren Sie Ihre edgegeräte, um die Verarbeitung für die Kategorien optimieren und zulassen von Microsoft Saas-Datenverkehr zu umgehen.
 
-## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Optimieren des Datenverkehrs zu Microsoft SaaS-Diensten    
+## <a name="optimizing-traffic-to-microsofts-saas-services"></a>Optimieren des Datenverkehrs zu Microsoft Saas-Diensten    
 
-Es gibt drei Kategorien von Microsoft SaaS-Datenverkehr:
+Es gibt drei Kategorien von Microsoft Saas-Datenverkehr:
 
 - Optimieren
 
-  Erforderlich für die Anbindung an jeden Microsoft SaaS-Dienst und stellt mehr als 75% der Microsoft SaaS-Bandbreite, Verbindungen und Datenmenge dar.
+  Erforderlich für die Anbindung an jeden Microsoft Saas-Dienst und stellt mehr als 75% der Microsoft Saas-Bandbreite, Verbindungen und Datenmenge dar.
 
 - Zulassen
 
-  Für die Konnektivität mit bestimmten Microsoft SaaS-Diensten und-Features erforderlich, Sie sind jedoch nicht so sensibel für die Netzwerkleistung und Wartezeit wie die in der Kategorie optimieren.
+  Für die Konnektivität mit bestimmten Microsoft Saas-Diensten und-Features erforderlich, Sie sind jedoch nicht so sensibel für die Netzwerkleistung und Wartezeit wie die in der Kategorie optimieren.
 
 - Standard
 
-  Stellen Sie Microsoft SaaS-Dienste und Abhängigkeiten dar, die keine Optimierung erfordern. Sie können den standardmäßigen Kategorien Datenverkehr wie normale Internet Datenverkehr behandeln.
+  Stellen Sie Microsoft Saas-Dienste und Abhängigkeiten dar, die keine Optimierung erfordern. Sie können den standardmäßigen Kategorien Datenverkehr wie normale Internet Datenverkehr behandeln.
 
 
-**Abbildung 1: Empfohlene Konfiguration für Microsoft SaaS-Datenverkehr für alle Büros**
+**Abbildung 1: Empfohlene Konfiguration für Microsoft Saas-Datenverkehr für alle Büros**
 
-![Abbildung 1: Empfohlene Konfiguration für Microsoft SaaS-Datenverkehr für alle Büros](media/Network-Poster/SaaS1.png)
+![Abbildung 1: Empfohlene Konfiguration für Microsoft Saas-Datenverkehr für alle Büros](media/Network-Poster/SaaS1.png)
 
 Abbildung 1 zeigt die empfohlene Konfiguration aller Büros, einschließlich Zweigstellen und regionalen oder zentralen, in denen:
 

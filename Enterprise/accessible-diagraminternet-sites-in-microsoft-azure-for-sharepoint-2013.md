@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 71636974-fb99-487c-ac67-f15e9401acba
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Internetsites für SharePoint 2013 in Microsoft Azure“.
-ms.openlocfilehash: 59c84e34ab4d748a80ab0a597817ae4d3464a43c
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 1d18ad73502c7e21c1c0825e3e56e4faac2a4a09
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068641"
 ---
 # <a name="accessible-diagram---internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>Zugängliches Diagramm – Internetwebsites in Microsoft Azure für SharePoint 2013
 
@@ -166,7 +166,7 @@ Benutzer mit internen Konten greifen über AD DS auf den Azure Active Directory-
   
 Das zugehörige Diagramm zeigt das folgende Szenario:  
   
-Bei der Integration von SharePoint 2013 mit Azure Active Directory dient ein Azure-Zugriffssteuerungsdienst (ACS) für zwei Zwecke: 
+Bei der Integration von SharePoint 2013 mit Azure Active Directory dient ein Azure-zugriffssteuerungsdienst (ACS) für zwei Zwecke: 
   
 -   Azure AD verwendet SAML 2.0 und SharePoint funktioniert nur mit SAML 1.1. ACS versteht beide Formate und fungiert als Vermittler zum Transformieren der Tokenformate zwischen SharePoint und Azure AD.   
     

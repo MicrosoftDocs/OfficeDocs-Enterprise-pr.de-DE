@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: b1cf2714f79d38e5a3349b331cee0862cd6aac52
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: df506b6637d28387fae7587e081251fd81e1ce1a
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068341"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
@@ -91,7 +91,7 @@ In diesem Verfahren erstellen Sie zwei Word-Dokumente, die Sie später in einem 
   
 1. Klicken Sie auf der Seite **Office** auf **Anmelden**, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos an.
     
-2. greifen sie auf einer neuen registerkarte auf die URL ihrer produktions-sharepoint-website zu: **https://** <fictional organization name> **. sharepoint.com/sites/production**
+2. Greifen Sie auf einer neuen Registerkarte auf die URL Ihrer Produktions-SharePoint-Website zu: **https://** <fictional organization name> **. SharePoint.com/Sites/Production**
     
 3. Klicken Sie auf der Registerkarte **Produktions-Websitesammlung** unter **Dokumente** auf **Neu > Word-Dokument**.
     

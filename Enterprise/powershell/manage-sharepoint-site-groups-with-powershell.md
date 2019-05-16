@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/01/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von SharePoint Online-Websitegruppen.'
-ms.openlocfilehash: 04df780732913eaaf80d9bca64db5174089ed80b
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: a128823ba125342bd1d209ac8a2bf28334da866d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573909"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068861"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Verwalten von SharePoint Online-Websitegruppen mit Office 365 PowerShell
 
@@ -35,7 +35,7 @@ Bei den Verfahren in diesem Artikel müssen Sie eine Verbindung mit SharePoint O
 
 Das SharePoint Online Admin Center verfügt über einige benutzerfreundliche Methoden zum Verwalten von Websitegruppen. Angenommen, Sie möchten die Gruppen und die Gruppenmitglieder für die `https://litwareinc.sharepoint.com/sites/finance` Website ansehen. Gehen Sie dazu wie folgt vor:
 
-1. klicken sie im Microsoft 365 admin center auf **ressourcen** > **websites**, und klicken sie dann auf die URL der website.
+1. Klicken Sie im Microsoft 365 Admin Center auf **Ressourcen** > **Websites**, und klicken Sie dann auf die URL der Website.
 2. Klicken Sie im Dialogfeld -Websitesammlung auf **Zu dieser Website wechseln**.
 3. Klicken Sie auf dieser Seite auf das Symbol **Einstellungen** (oben rechts auf der Seite) und dann auf **Websiteeinstellungen**:<br/>
 ![SharePoint Online-Websiteeinstellungen](media/spo-site-settings.png)<br/>

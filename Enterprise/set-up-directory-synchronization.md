@@ -1,9 +1,9 @@
 ---
-title: Planen der Verzeichnissynchronisierung für Office 365
-ms.author: robmazz
-author: robmazz
+title: Einrichten der Verzeichnissynchronisierung für Office 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
@@ -19,52 +19,52 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Office 365 und Ihrem lokalen Active Directory einrichten.
-ms.openlocfilehash: 6d635dbcacb5a1c6c6c9c202f2ece4fac35558a4
-ms.sourcegitcommit: 29f937b7430c708c9dbec23bdc4089e86c37c225
+ms.openlocfilehash: d5c09b006c4e4b9ca9fbe3b0d673435a8ea6637e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001748"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070871"
 ---
-# <a name="set-up-directory-synchronization-for-office-365"></a>Planen der Verzeichnissynchronisierung für Office 365
+# <a name="set-up-directory-synchronization-for-office-365"></a>Einrichten der Verzeichnissynchronisierung für Office 365
 
 In Office 365 wird der Cloud-basierte Benutzer Identitäts Verwaltungsdienst Azure Active Directory zum Verwalten von Benutzern verwendet. Sie können Ihr lokales Active Directory auch mit Azure AD integrieren, indem Sie Ihre lokale Umgebung mit Office 365 synchronisieren. Nachdem Sie die Synchronisierung eingerichtet haben, können Sie entscheiden, ob die Benutzerauthentifizierung innerhalb von Azure AD oder in Ihrem lokalen Verzeichnis erfolgen soll.
   
 ## <a name="office-365-directory-synchronization"></a>Office 365-Verzeichnissynchronisierung
 
-Sie können entweder eine synchronisierte Identität oder eine Verbundidentität zwischen Ihrer lokalen Organisation und Office 365 verwenden. Mit synchronisierter Identität verwalten Sie Ihre Benutzer lokal und werden von Azure AD authentifiziert, wenn Sie das gleiche Kennwort in der Cloud als lokal verwenden. Dies ist das häufigste Szenario für die Verzeichnissynchronisierung. Mit der Passthrough-Authentifizierung oder der Verbundidentität können Sie Ihre Benutzer lokal verwalten und durch Ihr lokales Verzeichnis authentifizieren. Die Verbundidentität erfordert eine zusätzliche Konfiguration und ermöglicht es den Benutzern, sich nur einmal anzumelden. Weitere Informationen finden Sie unter [understandIng Office 365 Identity und Azure Active Directory](about-office-365-identity.md).
+Sie können entweder eine synchronisierte Identität oder eine Verbundidentität zwischen Ihrer lokalen Organisation und Office 365 verwenden. Mit synchronisierter Identität verwalten Sie Ihre Benutzer lokal und werden von Azure AD authentifiziert, wenn Sie das gleiche Kennwort in der Cloud als lokal verwenden. Dies ist das häufigste Szenario für die Verzeichnissynchronisierung. Mit der Passthrough-Authentifizierung oder der Verbundidentität können Sie Ihre Benutzer lokal verwalten und durch Ihr lokales Verzeichnis authentifizieren. Die Verbundidentität erfordert eine zusätzliche Konfiguration und ermöglicht es den Benutzern, sich nur einmal anzumelden. Weitere Informationen finden Sie unter [Understanding Office 365 Identity und Azure Active Directory](about-office-365-identity.md).
   
-## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>Möchten Sie ein Upgrade von Windows Azure Active Directory Sync (dirSync) auf Azure Active Directory Connect durchführen?
+## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>Möchten Sie ein Upgrade von Windows Azure Active Directory Sync (Dirsync) auf Azure Active Directory Connect durchführen?
 
-Wenn Sie derzeit dirSync verwenden und ein Upgrade durchführen möchten, wechseln Sie zu [Azure.com](https://azure.com) . [](https://go.microsoft.com/fwlink/p/?LinkId=733240)
+Wenn Sie derzeit Dirsync verwenden und ein Upgrade durchführen möchten, wechseln Sie zu [Azure.com](https://azure.com) . [](https://go.microsoft.com/fwlink/p/?LinkId=733240)
   
-## <a name="prerequisites-for-azure-ad-connect"></a>VoraussetZungen für Azure AD Connect
+## <a name="prerequisites-for-azure-ad-connect"></a>Voraussetzungen für Azure AD Connect
 
 Sie erhalten ein kostenloses Abonnement für Azure AD mit Ihrem Office 365-Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure Active Directory Connect auf einem Ihrer lokalen Server.
   
 Für Office 365 müssen Sie Folgendes tun:
   
-- ÜberPrüfen Sie Ihre lokale Domäne (das Verfahren führt Sie durch.)
-- [Weisen Sie Administratorrollen in office 365 for Business](https://support.office.com/article/EAC4D046-1AFD-4F1A-85FC-8219C79E1504) -Berechtigungen für ihren Office 365-Mandanten und ein lokales Active Directory zu.
+- Überprüfen Sie Ihre lokale Domäne (das Verfahren führt Sie durch.)
+- [Weisen Sie Administratorrollen in Office 365 for Business](https://support.office.com/article/EAC4D046-1AFD-4F1A-85FC-8219C79E1504) -Berechtigungen für Ihren Office 365-Mandanten und ein lokales Active Directory zu.
 
 Für den lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen Sie die folgende Software:
   
 |**Server Betriebssystem**|**Weitere Software**|
 |:-----|:-----|
 |**Windows Server 2012 R2** | -PowerShell wird standardmäßig installiert, es ist keine Aktion erforderlich.  <br> -NET 4.5.1 und späteren Versionen werden über Windows Update angeboten. Stellen Sie sicher, dass Sie die neuesten Updates für Windows Server in der Systemsteuerung installiert haben. |
-|**Windows server 2008 R2 mit Service Pack 1 (SP1)** oder **Windows Server 2012** | -Die neueste Version von PowerShell ist in Windows Management Framework 4,0 verfügbar. Suchen Sie im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)danach.  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
+|**Windows Server 2008 R2 mit Service Pack 1 (SP1)** oder **Windows Server 2012** | -Die neueste Version von PowerShell ist in Windows Management Framework 4,0 verfügbar. Suchen Sie im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)danach.  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
 |**Windows Server 2008** | -Die neueste unterstützte Version von PowerShell ist in Windows Management Framework 3,0 verfügbar, verfügbar im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
 
 > [!NOTE]
-> Wenn Sie Azure Active Directory dirSync verwenden, beträgt die maximale Anzahl von Verteilergruppenmitgliedern, die Sie von Ihrem lokalen Active Directory mit Azure Active Directory synchronisieren können, 15.000. Für Azure AD Connect ist diese Nummer 50.000.
+> Wenn Sie Azure Active Directory Dirsync verwenden, beträgt die maximale Anzahl von Verteilergruppenmitgliedern, die Sie von Ihrem lokalen Active Directory mit Azure Active Directory synchronisieren können, 15.000. Für Azure AD Connect ist diese Nummer 50.000.
   
-Lesen Sie die [vorausSetzungen für Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), um die Anforderungen an Hardware, Software, Konten und Berechtigungen, SSL-Zertifikatanforderungen und Objekt Grenzwerte für Azure AD Connect genauer zu prüfen.
+Lesen Sie die [Voraussetzungen für Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), um die Anforderungen an Hardware, Software, Konten und Berechtigungen, SSL-Zertifikatanforderungen und Objekt Grenzwerte für Azure AD Connect genauer zu prüfen.
   
 Sie können auch den [Versionsverlauf](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) der Azure AD Connect-Version überprüfen, um zu sehen, was in jeder Version enthalten und korrigiert wurde.
 
 ## <a name="to-set-up-directory-synchronization"></a>So richten Sie die Verzeichnissynchronisierung ein
 
-1. melden sie sich beim [Microsoft 365 admin center](https://admin.microsoft.com) an, und wählen sie im linken navigationsbereich **benutzer** \> **aktive benutzer** aus.
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an, und wählen Sie im linken Navigationsbereich **Benutzer** \> **aktive Benutzer** aus.
 2. Wählen Sie im Admin Center auf der Seite **aktive Benutzer** **mehr** \> **Verzeichnissynchronisierung**aus.
 
     ![Wählen Sie im Menü mehr die Option Verzeichnissynchronisierung aus.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)

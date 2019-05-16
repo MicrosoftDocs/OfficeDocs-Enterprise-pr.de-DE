@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/20/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: e2b354b9-7f18-4da0-9107-6245eae0f33f
 description: 'Zusammenfassung: Konfigurieren Sie Multi-Factor Authentication mithilfe von Textnachrichten, die an ein Smartphone in einer Office 365-Entwicklungs-/Testumgebung gesendet werden.'
-ms.openlocfilehash: 091b82132b407cfd25b18c3ba8e424e29df58910
-ms.sourcegitcommit: 682b180061dc63cd602bee567d5414eae6942572
+ms.openlocfilehash: 2c53d7fa9239395e28d68487dd0ccea8cc57efb7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31741221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069951"
 ---
 # <a name="multi-factor-authentication-for-your-office-365-devtest-environment"></a>Multi-Factor Authentication für die Office 365-Entwicklungs-/Testumgebung
 
@@ -38,7 +38,7 @@ Es gibt zwei Phasen bei der Einrichtung von Multi-Factor Authentication für Off
 2. Aktivieren und Testen von Multi-Factor Authentication für das Konto „Benutzer 2“
     
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack) , um eine visuelle Darstellung aller Artikel im Office 365 Test Lab Guide-Stapel zu erhalten.
+> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
@@ -53,7 +53,7 @@ Wenn Sie die mehrstufige Authentifizierung in einem simulierten Unternehmen test
 
 Aktivieren Sie Multi-Factor Authentication für das Konto „Benutzer 2“ mit den folgenden Schritten:
   
-1. Öffnen Sie eine separate Instanz Ihres Browsers, wechseln Sie zum Office 365-Portal[https://www.office.com](https://www.office.com)(), und melden Sie sich dann mit ihrem globalen Administratorkonto bei ihrem Office 365-Testabonnement an.
+1. Öffnen Sie eine separate Instanz Ihres Browsers, wechseln Sie zum Office 365-Portal[https://www.office.com](https://www.office.com)(), und melden Sie sich dann mit ihrem globalen Administratorkonto bei Ihrem Office 365-Testabonnement an.
     
 2. Klicken Sie auf der Hauptportalseite auf **Admin**.
     

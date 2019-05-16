@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 4/3/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,16 +15,16 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Beschreibt, wie das Office 365 Content Delivery Network (CDN) verwendet wird, um die Bereitstellen Ihrer SharePoint Online-Objekte für alle Ihre Benutzer zu beschleunigen, unabhängig davon, wo Sie sich befinden oder wie Sie auf Ihre Inhalte zugreifen.
-ms.openlocfilehash: ceb66b3e17baf25a292b4903c569b931f9448f71
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: de8c02b44405260aa7379ab0a881ba72f73c7a6b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492214"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070631"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
-Sie können statische Objekte im Office 365-Netzwerk für die Inhaltsübermittlung (CDN) hosten, um eine bessere Leistung für Ihre SharePoint Online-Seiten zu ermöglichen. Das Office 365-Netzwerk für die Inhaltsübermittlung verbessert die Leistung, indem statische Objekte näher an den Browsern zwischengespeichert werden, die diese anfordern, wodurch Downloads beschleunigt werden und die Latenz reduziert wird. Außerdem verwendet das Office 365 CDN das [http/2-Protokoll](https://en.wikipedia.org/wiki/HTTP/2) für eine verbesserte KOMPRIMIERUNG und HTTP-Pipelining. Das Office 365-Netzwerk für die Inhaltsübermittlung ist in Ihrem SharePoint Online-Abonnement enthalten.
+Sie können statische Objekte im Office 365-Netzwerk für die Inhaltsübermittlung (CDN) hosten, um eine bessere Leistung für Ihre SharePoint Online-Seiten zu ermöglichen. Das Office 365-Netzwerk für die Inhaltsübermittlung verbessert die Leistung, indem statische Objekte näher an den Browsern zwischengespeichert werden, die diese anfordern, wodurch Downloads beschleunigt werden und die Latenz reduziert wird. Außerdem verwendet das Office 365 CDN das [http/2-Protokoll](https://en.wikipedia.org/wiki/HTTP/2) für eine verbesserte Komprimierung und HTTP-Pipelining. Das Office 365-Netzwerk für die Inhaltsübermittlung ist in Ihrem SharePoint Online-Abonnement enthalten.
 
 Das Office 365-Netzwerk für die Inhaltsübermittlung besteht aus mehreren CDNs, über die Sie statische Objekte an mehreren Speicherorten hosten können, oder aus _Ursprüngen_, die aus globalen Hochgeschwindigkeitsnetzwerken bedient werden. In Abhängigkeit von der Art der Inhalte, die Sie im Office 365-Netzwerk für die Inhaltsübermittlung hosten möchten, können Sie **öffentliche** Ursprünge, **private** Ursprünge oder beides hinzufügen. Weitere Informationen zum Unterschied zwischen öffentlichen und privaten Ursprüngen finden Sie unter [Wählen Sie, ob jeder Ursprung öffentlich oder privat sein soll](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) .
 
@@ -55,7 +55,7 @@ Führen Sie die folgenden grundlegenden Schritte aus, um das Office 365 CDN für
   Wenn Sie diesen Schritt abgeschlossen haben, haben Sie folgende Möglichkeiten:
 
   - CDN für Ihre Organisation aktiviert.
-  - Ihre Ursprünge wurden HinzugeFügt, wobei jeder Ursprung als öffentlich oder privat identifiziert wurde.
+  - Ihre Ursprünge wurden hinzugefügt, wobei jeder Ursprung als öffentlich oder privat identifiziert wurde.
 
 Nachdem Sie das Setup abgeschlossen haben, können Sie [das Office 365 CDN](use-office-365-cdn-with-spo.md#CDNManage) im Laufe der Zeit verwalten:
   
@@ -145,11 +145,11 @@ Sofern Sie nichts anderes angeben, richtet Office 365 einige Standard Ursprünge
 Standardmäßige private CDN-Ursprünge:
   
 - \*/userphoto.aspx
-- \*/SiteAssets
+- \*/siteassets
 
 Standardmäßige öffentliche CDN-Ursprünge:
   
-- \*/MasterPage
+- \*/masterpage
 - \*/Style-Bibliothek
 - \*/clientsideassets
 
@@ -321,7 +321,7 @@ Nachdem Sie den Befehl ausgeführt haben, wird die Konfiguration im Datencenter 
 ### <a name="example-configure-a-public-origin-for-your-master-pages-and-for-your-style-library-for-sharepoint-online"></a>Beispiel: Konfigurieren eines öffentlichen Ursprungs für Ihre Gestaltungsvorlagen und für Ihre Stilbibliothek für SharePoint Online
 <a name="ExamplePublicOrigin"> </a>
 
-NormalerWeise werden diese Ursprünge standardmäßig für Sie eingerichtet, wenn Sie das Office 365 CDN aktivieren. Wenn Sie Sie jedoch manuell aktivieren möchten, führen Sie die folgenden Schritte aus.
+Normalerweise werden diese Ursprünge standardmäßig für Sie eingerichtet, wenn Sie das Office 365 CDN aktivieren. Wenn Sie Sie jedoch manuell aktivieren möchten, führen Sie die folgenden Schritte aus.
   
 - Verwenden Sie das Cmdlet **Add-SPOTenantCdnOrigin** , um die Formatbibliothek als öffentlichen Ursprung zu definieren.
 
@@ -367,7 +367,7 @@ Nachdem Sie den Befehl ausgeführt haben, wird die Konfiguration im Datencenter 
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Beispiel: Konfigurieren eines privaten Ursprungs für eine Websitesammlung für SharePoint Online
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 
-Verwenden Sie das Cmdlet **Add-SPOTenantCdnOrigin** , um eine Websitesammlung als privaten Ursprung zu definieren. Beispiel:
+Verwenden Sie das Cmdlet **Add-SPOTenantCdnOrigin** , um eine Websitesammlung als privaten Ursprung zu definieren. Zum Beispiel:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
@@ -480,7 +480,7 @@ spo cdn origin add --type [Public | Private] --origin <path>
 
 Dabei `path` ist der relative Pfad zu dem Ordner, der die Objekte enthält. Sie können Platzhalter zusätzlich zu relativen Pfaden verwenden.
 
-Um alle Objekte im **Gestaltungsvorlagenkatalog** aller Websites als öffentlichen Ursprung einzuschließen, führen Sie Folgendes aus:
+Um alle Objekte im **gestaltungsvorlagenkatalog** aller Websites als öffentlichen Ursprung einzuschließen, führen Sie Folgendes aus:
 
 ```sh
 spo cdn origin add --type Public --origin */masterpage
@@ -633,7 +633,7 @@ Das folgende Diagramm veranschaulicht den Workflow, wenn SharePoint eine Anforde
 
 Der Zugriff auf Objekte in privaten Quellen im Office 365 CDN wird von Token gewährt, die von SharePoint Online generiert werden. Benutzer, die bereits über die Berechtigung zum Zugriff auf den vom Ursprung angegebenen Ordner oder die Bibliothek verfügen, erhalten automatisch Token, die es dem Benutzer ermöglichen, auf die Datei basierend auf Ihrer Berechtigungsstufe zuzugreifen. Diese Zugriffstoken sind 30 bis 90 Minuten lang gültig, nachdem Sie generiert wurden, um Token Replay-Angriffe zu verhindern.
 
-Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter _Eat_ (Edge Authorization Token) und _OAT_ (Origin-Autorisierungstoken) enthält. Die Struktur der einzelnen Token ist _<'expiration Time in Epoch Time Format'>__<'secure signature'>_. Beispiel:
+Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter _Eat_ (Edge Authorization Token) und _OAT_ (Origin-Autorisierungstoken) enthält. Die Struktur der einzelnen Token ist _<'expiration Time in Epoch Time format'>__<'secure signature'>_. Zum Beispiel:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -678,7 +678,7 @@ Objekte in New Origins stehen nicht sofort zur Verfügung, da es Zeit braucht, b
 Wenn Sie das Office 365 CDN für öffentliche Ursprünge aktivieren, erstellt der CDN-Dienst automatisch diese Standard Ursprünge:
 
 - */MASTERPAGE
-- */STYLE-BIBLIOTHEK
+- */Style-Bibliothek
 - */CLIENTSIDEASSETS
 
 Wenn der */clientsideassets-Ursprung fehlt, treten bei SharePoint-Framework-Lösungen Fehler auf, und es werden keine Warnungen oder Fehlermeldungen generiert. Dieser Ursprung fehlt möglicherweise, weil das CDN aktiviert wurde, wobei der Parameter _-NoDefaultOrigins_ auf **$true**festgelegt ist, oder weil der Ursprung manuell gelöscht wurde.

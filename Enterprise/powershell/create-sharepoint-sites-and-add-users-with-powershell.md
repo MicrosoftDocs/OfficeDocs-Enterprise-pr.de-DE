@@ -3,7 +3,7 @@ title: Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern mi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,27 +12,27 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Zusammenfassung: Verwenden von Office 365 PowerShell, erstellen Sie neue SharePoint Online-Websites, und fügen Sie Benutzer und Gruppen auf diese Websites.'
-ms.openlocfilehash: 61b9338469ed8d01abc76edbf14ed448c3ca00d3
-ms.sourcegitcommit: bbbe304bb1878b04e719103be4287703fb3ef292
+description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um neue SharePoint Online-Websites zu erstellen, und fügen Sie dann Benutzer und Gruppen zu diesen Websites hinzu.'
+ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "25897168"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069101"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern mit Office 365 PowerShell
 
- **Zusammenfassung:** Verwenden von Office 365 PowerShell neue SharePoint Online-Websites erstellen, und fügen Sie Benutzer und Gruppen auf diese Websites.
+ **Zusammenfassung:** Verwenden Sie Office 365 PowerShell, um neue SharePoint Online-Websites zu erstellen, und fügen Sie dann Benutzer und Gruppen zu diesen Websites hinzu.
 
-Wenn Sie Office 365 PowerShell zum Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern verwenden, können Sie schnell und wiederholt Aufgaben ausführen viel schneller als Sie in der Office-356-Verwaltungskonsole können. Sie können auch Aufgaben ausführen, die nicht möglich, in der Verwaltungskonsole Office 356 auszuführen sind. 
+Wenn Sie Office 365 PowerShell zum Erstellen von SharePoint Online-Websites und zum Hinzufügen von Benutzern verwenden, können Sie schnell und wiederholt Aufgaben schneller ausführen als im Office 356 Admin Center. Sie können auch Aufgaben ausführen, die Sie nicht im Office 365 Admin Center ausführen können. 
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Die Verfahren in diesem Thema müssen Sie mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online-PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Bei den Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Weitere Informationen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Schritt 1: Erstellen neuer Websitesammlungen mithilfe von Office 365 PowerShell
 
-Erstellen Sie mehrere Websites mithilfe von Office 365 PowerShell und eine CSV-Datei, die Sie mit den bereitgestellten Beispielcode und im Editor erstellen. Für dieses Verfahren benötigen Sie die für Platzhalterinformationen in Klammern mit eigenen Website und Mandanten-spezifische Informationen ersetzen. Dieser Vorgang können Sie eine einzelne Datei zu erstellen, und führen Sie einen einzelnen Office 365 PowerShell-Befehl, der diese Datei verwendet. Dadurch wird die Aktionen wiederholbare und tragbaren und viele, wenn nicht alle Fehler, die lange Befehle in SharePoint Online-Verwaltungsshell eingeben stammen kann entfällt. Es gibt zwei Teile dieser Prozedur. Zuerst erstellen Sie eine CSV-Datei, und Sie werden von Office 365 PowerShell, der seinen Inhalt verwendet wird, um die Websites erstellen, CSV-Datei verweisen.
+Erstellen Sie mehrere Websites mithilfe von Office 365 PowerShell und einer CSV-Datei, die Sie mithilfe des gelieferten Beispielcodes und Notepad erstellen. Hierzu ersetzen Sie die in Klammern stehende Platzhalter-Information durch Ihre eigenen Website- und Mandant-spezifischen Informationen. Dieser Prozess ermöglicht Ihnen das Erstellen einer einzelnen Datei und das Ausführen eines einzelnen Office 365 PowerShell-Befehls, der diese Datei verwendet. Die durchgeführten Maßnahmen sind sowohl wiederholbar als auch tragbar und es werden viele, wenn nicht alle Fehler vermieden, die durch die Eingabe der Befehle in die SharePoint Online-Verwaltungsshell entstehen können. Dieses Verfahren lässt sich in zwei Teile aufteilen. Sie erstellen zuerst eine .csv-Datei, danach referenzieren Sie diese CSV-Datei mithilfe von Office 365 PowerShell, das mithilfe deren Inhalte die Websites erstellt.
 
 Das Office 365 PowerShell-Cmdlet importiert die CSV-Datei und leitet sie so, dass sie in die Schleife in den runden Klammern passt, die die erste Zeile der Datei als Spaltenkopf liest. Das Office 365 PowerShell-Cmdlet arbeitet sich dann durch die restlichen Datensätze, erstellt eine neue Websitesammlung für jeden Datensatz und weist Eigenschaften der Websitesammlung gemäß den Spaltenköpfen zu.
 
@@ -47,12 +47,12 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Wobei *Mandanten* ist der Name Ihres Mandanten und *Besitzer* ist der Benutzername des Benutzers bei Ihrem Mandanten, denen möchten Sie die Rolle des primären Websitesammlungsadministrators gewähren.<br/>(Sie können STRG + H drücken, wenn Sie zum Ersetzen schneller Massen-Editor verwenden.)<br/>
+<br/>Dabei ist *Mandant* der Name Ihres Mandanten, und *Owner* ist der Benutzername des Benutzers in Ihrem Mandanten, dem Sie die Rolle des primären Websitesammlungsadministrators erteilen möchten.<br/>(Sie können Strg + H drücken, wenn Sie Notepad verwenden, um die Massen Ersetzung zu beschleunigen.)<br/>
 
-2. Speichern Sie die Datei auf Ihrem Desktop als **SiteCollections.csv**.<br/>
+2. Speichern Sie die Datei auf Ihrem Desktop als **SiteCollections. CSV**.<br/>
 
 > [!TIP]
-> Bevor Sie diese oder andere CSV oder Windows PowerShell-Skriptdatei verwenden, ist es empfehlenswert, um sicherzustellen, dass keine zusätzlichen oder nicht druckbaren Zeichen vorhanden sind. Öffnen die Datei in Word, und klicken Sie im Menüband klicken Sie auf das Absatzsymbol nicht druckbare Zeichen angezeigt. Es sollten keine zusätzlichen nicht druckbaren Zeichen sein. Beispielsweise sollte keine Absatzmarken am Ende der Datei außer dem letzten vorhanden sein.
+> Bevor Sie diese oder jede andere .csv oder WindowsPowerShell Skriptdatei verwenden, sollten Sie üben, um sicherzustellen, dass keine irrelevanten oder nicht druckbaren Zeichen enthalten sind. Öffnen Sie die Datei in Word und klicken Sie auf dem Menüband auf das Symbol Absatz, um nicht druckbare Zeichen anzuzeigen. Es sollten keine überflüssigen, nicht druckbaren Zeichen vorhanden sein. Es sollten beispielsweise keine Absatzmarken nach dem letzten Absatz am Ende der Datei vorkommen.
 
 ### <a name="run-the-windows-powershell-command"></a>Ausführen des PowerShell-Befehls
 
@@ -60,7 +60,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Dabei entspricht *MyAlias* Ihrem Benutzeralias.<br/>
+<br/>Dabei ** ist myalias Ihr Benutzer Alias.<br/>
 
 2. Warten Sie, bis die Windows PowerShell-Eingabeaufforderung wieder erscheint. Dies kann einige Minuten dauern.<br/>
 
@@ -71,7 +71,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 ```
 <br/>
 
-4. Beachten Sie die neue Websitesammlungen in der Liste. Sie sollten die folgenden Websitesammlungen finden Sie unter: **Contosotest**, **TeamSite01**, **Blog01**und **Project01**
+4. Beachten Sie die neuen Websitesammlungen in der Liste. Die folgenden Websitesammlungen sollten angezeigt werden: **ContosoTest**, **TeamSite01**, **Blog01**und **Project01**
 
 Fertig! Sie haben mehrere Websitesammlungen mit der erstellten CSV-Datei und ein einziges Windows PowerShell-Cmdlet erstellt. Sie können jetzt Benutzer erstellen und diesen Websites zuweisen.
 
@@ -95,9 +95,9 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>*Mandanten* , in Ihrem Mandantennamen entspricht.<br/>
+<br/>Wobei der *Mandant* dem Mandantennamen entspricht.<br/>
 
-2. Speichern Sie die Datei auf Ihrem Desktop als **GroupsAndPermissions.csv**.<br/>
+2. Speichern Sie die Datei auf Ihrem Desktop als **GroupsAndPermissions. CSV**.<br/>
 
 3. Öffnen Sie eine neue Instanz von Notepad und fügen Sie den folgenden Textblock ein:<br/>
 
@@ -112,9 +112,9 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>*Mandanten* entspricht Ihrem Mandantennamen wobei *Username* entspricht dem Benutzernamen eines vorhandenen Benutzers.<br/>
+<br/>Dabei ** ist der Mandant der Name des Mandanten, und *username* entspricht dem Benutzernamen eines vorhandenen Benutzers.<br/>
 
-4. Speichern Sie die Datei auf Ihrem Desktop als **Users.csv**.<br/>
+4. Speichern Sie die Datei auf Ihrem Desktop als **users. CSV**.<br/>
 
 5. Öffnen Sie eine neue Instanz von Notepad und fügen Sie den folgenden Textblock ein:<br/>
 
@@ -122,9 +122,9 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
-<br/>MyAlias entspricht, in dem der Benutzername des Benutzers, der derzeit angemeldet ist.<br/>
+<br/>Dabei ist myalias der Benutzername des aktuell angemeldeten Benutzers.<br/>
 
-6. Speichern Sie die Datei auf Ihrem Desktop als **usersandgroups. ps1**. Dies ist eine einfache Windows PowerShell-Skripts.
+6. Speichern Sie die Datei auf Ihrem Desktop als **User Sand Groups. ps1**. Das ist ein einfaches Windows PowerShell-Skript.
 
 Sie können jetzt das Skript UsersAndGroup.ps1 durchlaufen lassen, um Benutzer und Gruppen zu mehreren Websitesammlungen hinzuzufügen.
 
@@ -137,14 +137,14 @@ Set-ExecutionPolicy Bypass
 ```
 <br/>
 
-3. Drücken Sie zur Bestätigung aufgefordert **Y**ein.<br/>
+3. Drücken Sie an der Bestätigungsaufforderung **Y**.<br/>
 
 4. Bei Aufforderung durch Windows PowerShell geben Sie Folgendes ein oder kopieren und fügen es ein, und drücken Sie die EINGABETASTE:<br/>
 
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>*MyAlias* entspricht, in dem Ihr Benutzername.<br/>
+<br/>Dabei ** ist myalias Ihr Benutzername.<br/>
 
 5. Warten Sie, bis die Eingabeaufforderung wieder erscheint, bevor Sie fortfahren. Zuerst werden Sie die Gruppen sehen, sobald diese erstellt sind. Sobald Benutzer hinzugefügt werden, sehen Sie wiederholt die Gruppenliste.
 

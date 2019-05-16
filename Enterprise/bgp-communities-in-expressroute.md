@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'Das Herstellen einer Verbindung mit Office 365 mit Azure Express Route basiert auf BGP-Ankündigungen bestimmter IP-Subnetze, die Netzwerke darstellen, in denen Office 365-Endpunkte bereitgestellt werden. Aufgrund des globalen Charakters von Office 365 und der Anzahl von Diensten, die Office 365 darstellen, müssen Kunden häufig die in Ihrem Netzwerk akzeptierten Ankündigungen verwalten. Verringern der Anzahl von IP-Subnetzen; als IP-Präfixe im gesamten Rest dieses Artikels bezeichnet, dient zur Ausrichtung an der BGP-Netzwerk Verwaltungsterminologie folgende Endziele für Kunden:'
-ms.openlocfilehash: c6e40dc29df55aa87e8d40c6203100fa1e7ad38f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 2cce550aa4c14eb0de9daa6eac85cde6d1754add
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490921"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068181"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Verwenden von BGP-Communities in Express Route für Office 365-Szenarien
 

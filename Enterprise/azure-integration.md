@@ -1,9 +1,9 @@
 ---
 title: Azure-Integration in Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Ihr Office 365-Abonnement enthält ein Abonnement für Azure AD. Integrieren Sie Office 365 mit Azure AD, wenn Sie eine Kennwortsynchronisierung oder einmaliges Anmelden mit Ihrer lokalen Umgebung wünschen.
-ms.openlocfilehash: 0ad1c064d2ffe29f0f06e1368cd728d8b3bd630b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 51ed71aa94bc5317d9b5ff76d0aa6af2762c429e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490141"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068221"
 ---
 # <a name="azure-integration-with-office-365"></a>Azure-Integration in Office 365
 
@@ -42,13 +42,13 @@ Sie können die Azure AD-Bereitstellungs Ratgeber für eine geführte Einrichtun
 Wenn Sie ein kostenpflichtiges Abonnement für Office 365 haben, haben Sie auch ein Gratis Abonnement für Azure AD. Sie können Azure AD zum Erstellen und Verwalten von Benutzer-und Gruppenkonten verwenden. Um dieses Abonnement zu aktivieren, müssen Sie eine einmalige Registrierung ausführen. Anschließend können Sie über Ihr Office 365-Verwaltungsportal auf Azure AD zugreifen. Weitere Informationen finden Sie unter [Registrieren Ihres kostenlosen Azure AD-Abonnements](https://go.microsoft.com/fwlink/p/?LinkId=617127). 
   
 > [!TIP]
-> BeFolgen Sie die obigen Anweisungen, um das ﻿kostenlose Azure AD-Abonnement zu registrieren, das mit Ihrem Abonnement für Office 365 geliefert wird. Gehen Sie nicht direkt zu azure.microsoft.com, um sich anzumelden, oder Sie erhalten ein Test-oder kostenpflichtiges Abonnement für Microsoft Azure, das von Ihrem kostenlosen für Office 365 getrennt ist. 
+> Befolgen Sie die obigen Anweisungen, um das ﻿kostenlose Azure AD-Abonnement zu registrieren, das mit Ihrem Abonnement für Office 365 geliefert wird. Gehen Sie nicht direkt zu Azure.Microsoft.com, um sich anzumelden, oder Sie erhalten ein Test-oder kostenpflichtiges Abonnement für Microsoft Azure, das von Ihrem kostenlosen für Office 365 getrennt ist. 
   
-Mit dem kostenlosen Abonnement können Sie mit lokalen Verzeichnissen synchronisieren, einmaliges Anmelden einrichten und mit vielen Software als Dienstanwendungen wie Salesforce, DropBox und vielem mehr synchronisieren.
+Mit dem kostenlosen Abonnement können Sie mit lokalen Verzeichnissen synchronisieren, einmaliges Anmelden einrichten und mit vielen Software als Dienstanwendungen wie Salesforce, Dropbox und vielem mehr synchronisieren.
   
 Wenn Sie eine erweiterte AD DS-Funktionalität, eine bidirektionale Synchronisierung und andere Verwaltungsfunktionen wünschen, können Sie Ihr kostenloses Abonnement auf ein bezahltes Premium-Abonnement upgraden. Weitere Informationen finden Sie unter [Azure Active Directory Editions](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis).
   
-Weitere Informationen zu Office 365 und Azure AD finden Sie unter [Grundlegendes zu office 365 Identity und Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
+Weitere Informationen zu Office 365 und Azure AD finden Sie unter [Grundlegendes zu Office 365 Identity und Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9).
   
 ## <a name="extend-the-capabilities-of-your-office-365-tenant"></a>Erweitern der Funktionen Ihres Office 365-Mandanten
 

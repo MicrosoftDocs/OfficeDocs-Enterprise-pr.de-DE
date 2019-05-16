@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 11/08/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 description: Erfahren Sie, wie Office 365 Collaboration über Mandanten und Organisationen hinweg funktioniert.
-ms.openlocfilehash: d77146d4b95260e16984a76225cf24e65fe03bcc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cedeab08cf6daf3817179bcf770eda6598361e67
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492091"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069671"
 ---
 # <a name="office-365-inter-tenant-collaboration"></a>Zusammenarbeit zwischen Office 365-Mandanten
 
@@ -33,7 +33,7 @@ Die Optionen für die intermandanten Zusammenarbeit von Office 365 umfassen die 
   
 ## <a name="exchange-online-collaboration-options"></a>Optionen für die Zusammenarbeit in Exchange Online
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Kalenderfreigabe für eine andere Office 365-Organisation  <br/> |Administratoren können unterschiedliche Ebenen des Kalenderzugriffs in Exchange Online einrichten, damit Unternehmen mit anderen Unternehmen zusammenarbeiten und Benutzer die Zeitpläne (Frei/Gebucht-Informationen) mit anderen Benutzern teilen dürfen.  <br/> |[Freigabe in Exchange Online](https://technet.microsoft.com/en-us/library/jj916670%28v=exchg.150%29.aspx) <br/> [Organisationsbeziehungen in Exchange Online](https://technet.microsoft.com/en-us/library/jj916658%28v=exchg.150%29.aspx) <br/> [Erstellen einer Organisationsbeziehung in Exchange Online](https://technet.microsoft.com/en-us/library/jj916671%28v=exchg.150%29.aspx) <br/> [Ändern und organisieren von Beziehungen in Exchange Online](https://technet.microsoft.com/en-us/library/jj916659%28v=exchg.150%29.aspx) <br/> [Entfernen einer Organisationsbeziehung in Exchange Online](https://technet.microsoft.com/en-us/library/jj916657%28v=exchg.150%29.aspx) <br/> [Freigeben von Kalendern für externe Benutzer](https://support.office.com/article/fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd) <br/> |
 |Steuern, wie Benutzer ihre Kalender für Personen außerhalb Ihrer Organisation freigeben  <br/> |Administratoren wenden Freigaberichtlinien auf Benutzerpostfächer an, um zu steuern, für wen Sie freigegeben werden können und welche Zugriffsebene gewährt wird.  <br/> |[Freigaberichtlinien in Exchange Online](https://technet.microsoft.com/en-us/library/jj916673%28v=exchg.150%29.aspx) <br/> [Erstellen einer Freigaberichtlinie in Exchange Online](https://technet.microsoft.com/en-us/library/jj916676%28v=exchg.150%29.aspx) <br/> [Anwenden einer Freigaberichtlinie auf Postfächer in Exchange Online](https://technet.microsoft.com/en-us/library/jj916672%28v=exchg.150%29.aspx) <br/> [Ändern, deaktivieren oder Entfernen einer Freigaberichtlinie in Exchange Online](https://technet.microsoft.com/en-us/library/jj916674%28v=exchg.150%29.aspx) <br/> |
@@ -41,39 +41,39 @@ Die Optionen für die intermandanten Zusammenarbeit von Office 365 umfassen die 
    
 ## <a name="sharepoint-online-and-onedrive-for-business-collaboration-options"></a>SharePoint Online-und OneDrive for Business-Zusammenarbeitsoptionen
 
-|**Freigabe Ziele**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabe Ziele**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Freigeben von Websites und Dokumenten für externe Benutzer  <br/> |Administratoren konfigurieren die Freigabe auf dem Mandanten oder auf Websitesammlungsebene für authentifizierte Microsoft-Konten, für Arbeits-oder Schul Konten oder Gastkonten.  <br/> |[Verwalten der externen Freigabe für Ihre SharePoint-Online-Umgebung](https://support.office.com/en-US/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> [Eingeschränkte Domänen Freigabe in Office 365 SharePoint Online und OneDrive for Business](https://support.office.com/en-US/article/Restricted-Domains-Sharing-in-Office-365-SharePoint-Online-and-OneDrive-for-Business-5d7589cd-0997-4a00-a2ba-2320ec49c4e9) <br/> [Verwenden von SharePoint Online als B2B-Extranetlösung (Business-to-Business)](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) <br/> |
 |Nachverfolgen und Steuern der externen Freigabe für Endbenutzer  <br/> |OneDrive for Business-Dateibesitzer und SharePoint Online-Endbenutzer konfigurieren die Website-und Dokumentfreigabe und richten Benachrichtigungen zum Nachverfolgen der Freigabe ein.  <br/> |[Konfigurieren von Benachrichtigungen für die externe Freigabe für OneDrive for Business](https://support.office.com/en-US/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) <br/> [Freigeben von SharePoint-Dateien oder-Ordnern in Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) <br/> |
    
 ## <a name="skype-for-business-collaboration-options"></a>Skype for Business-Zusammenarbeitsoptionen
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Skype for Business Online-Sofortnachrichten, Anrufe und Anwesenheitsinformationen mit anderen Skype for Business-Benutzern  <br/> |Administratoren können Ihre Skype for Business Online-Benutzer in aktivieren, Audio-und Videoanrufe tätigen und die Anwesenheitsinformationen mit Benutzern in einem anderen Office 365-Mandanten anzeigen.  <br/> |[Zulassen, dass Benutzer externe Skype for Business-Benutzer kontaktieren](https://support.office.com/article/b414873a-0059-4cd5-aea1-e5d0857dbc94) <br/> |
-|Skype for Business Online-Sofortnachrichten, Anrufe und Anwesenheitsinformationen für Skype-Benutzer (Consumer)  <br/> |Administratoren können Ihre Skype for Business Online-Benutzer IM Chat aktivieren, Anrufe tätigen und die Anwesenheitsinformationen mit Skype-Benutzern (Consumer) anzeigen.  <br/> |[Zulassen, dass Skype for Business-Benutzer Skype-Kontakte hinzufügen](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
+|Skype for Business Online-Sofortnachrichten, Anrufe und Anwesenheitsinformationen für Skype-Benutzer (Consumer)  <br/> |Administratoren können Ihre Skype for Business Online-Benutzer im Chat aktivieren, Anrufe tätigen und die Anwesenheitsinformationen mit Skype-Benutzern (Consumer) anzeigen.  <br/> |[Zulassen, dass Skype for Business-Benutzer Skype-Kontakte hinzufügen](https://support.office.com/article/08666236-1894-42ae-8846-e49232bbc460) <br/> |
    
-## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B-zusammenArbeitsoptionen
+## <a name="azure-ad-b2b-collaboration-options"></a>Azure AD B2B-Zusammenarbeitsoptionen
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Azure AD B2B-Zusammenarbeit – Inhaltsfreigabe durch Hinzufügen externer Benutzer zu einer Gruppe im Verzeichnis einer Organisation  <br/> |Ein globaler Administrator für einen Office 365-Mandanten kann Personen in einem anderen Office 365-Mandanten einladen, an seinem Verzeichnis teilzunehmen, diese externen Benutzer zu einer Gruppe hinzuzufügen und den Zugriff auf Inhalte wie SharePoint-Websites und-Bibliotheken für die Gruppe zu gewähren.  <br/> |[Was ist die Azure AD B2B-Zusammenarbeits Vorschau?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) <br/> [Azure AD B2B: neue Updates machen Cross-Business-collab einfach](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/01/azure-ad-b2b-new-updates-make-cross-business-collab-easy/) <br/> [Office 365-externe Freigabe und Azure Active Directory B2B-Zusammenarbeit](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-o365-external-user) <br/> [Azure Active Directory B2B-API für die Zusammenarbeit und Anpassung](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-api) <br/> [Azure AD und Identity Show: Azure AD B2B Collaboration (Business to Business](https://channel9.msdn.com/Series/Azure-AD-Identity/AzureADB2B) <br/> |
    
 ## <a name="office-365-collaboration-options"></a>Office 365-Zusammenarbeitsoptionen
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
-|Office 365-Gruppen – E-Mail, Kalender, OneNote und freigegebene Dateien an zentraler Stelle  <br/> |Gruppen werden in den Plänen Business Essentials, Business Premium, Education und Enterprise E1, E3 und E5 unterstützt. Personen in einem Office 365-Mandanten können eine Gruppe erstellen und Personen in einem anderen Office 365-Mandanten als Gastbenutzer einladen. Gilt auch für Dynamics CRM.  <br/> |[Informationen zu Office 365-Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) <br/> [Gastzugriff in Office 365-Gruppen](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) <br/> [Bereitstellen von Office 365-Gruppen](https://technet.microsoft.com/en-us/library/dn896591.aspx) <br/> |
+|Office 365-Gruppen – e-Mail, Kalender, OneNote und freigegebene Dateien an zentraler Stelle  <br/> |Gruppen werden in den Plänen Business Essentials, Business Premium, Education und Enterprise E1, E3 und E5 unterstützt. Personen in einem Office 365-Mandanten können eine Gruppe erstellen und Personen in einem anderen Office 365-Mandanten als Gastbenutzer einladen. Gilt auch für Dynamics CRM.  <br/> |[Informationen zu Office 365-Gruppen](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2) <br/> [Gastzugriff in Office 365-Gruppen](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6) <br/> [Bereitstellen von Office 365-Gruppen](https://technet.microsoft.com/en-us/library/dn896591.aspx) <br/> |
    
 ## <a name="yammer-collaboration-options"></a>Optionen für die Zusammenarbeit bei jammern
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Jammern – Zusammenarbeit über ein soziales Unternehmens Medium  <br/> |Wenn die Möglichkeit, externe Gruppen zu erstellen, nicht durch einen jammern-Administrator deaktiviert wird, können Benutzer externe Gruppen erstellen, um in jammern durch Unterhaltungen zusammenzuarbeiten, die Möglichkeit, Beiträge zu mögen und zu folgen, Dateien zu teilen und online zu chatten.  <br/> |[Erstellen und Verwalten von externen Gruppen in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a) <br/> |
    
 ## <a name="teams-collaboration-options"></a>Teams-Zusammenarbeitsoptionen
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Zusammenarbeit an Teams mit externen Benutzern  <br/> |Ein globaler Administrator für den einladenden Office 365-Mandanten muss externe Zusammenarbeit in Teams aktivieren. Globale Administratoren und Teambesitzer können nun alle Personen mit einer e-Mail-Adresse einladen, in Teams zusammenzuarbeiten.  <br/> Administratoren können auch bereits in Ihrem Mandanten vorhandene Gäste verwalten und bearbeiten.  <br/> |[Autorisieren des Gastzugriffs](https://docs.microsoft.com/en-us/microsoftteams/teams-dependencies) <br/> [Aktivieren oder Deaktivieren des Gastzugriffs in Teams](https://docs.microsoft.com/en-us/microsoftteams/set-up-guests) <br/> [Verwenden von PowerShell zum Steuern des Gastzugriffs](https://docs.microsoft.com/en-us/microsoftteams/guest-access-powershell) <br/> [Checkliste für den Gastzugriff](https://docs.microsoft.com/en-us/microsoftteams/guest-access-checklist) <br/> [Anzeigen von Gastbenutzern](https://docs.microsoft.com/en-us/microsoftteams/view-guests) <br/> [Bearbeiten von Gastbenutzer Informationen](https://docs.microsoft.com/en-us/microsoftteams/edit-guests-information) <br/> |
 |Team Besitzer können einladen und verwalten, wie Gäste in ihren Teams zusammenarbeiten.  <br/> |Team Besitzer haben zusätzliche Kontrolle darüber, was die Gäste in ihren Teams tun können.  <br/> |[Hinzufügen von Gästen](https://support.office.com/en-us/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) <br/> [Hinzufügen eines Gasts zu einem Team](https://docs.microsoft.com/en-us/microsoftteams/add-guests) <br/> [Verwalten des Gastzugriffs in Teams](https://docs.microsoft.com/en-us/microsoftteams/manage-guests) <br/> [Anzeigen der Personen in einem Team oder in einem Kanal](https://support.office.com/en-us/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) <br/> |
@@ -81,7 +81,7 @@ Die Optionen für die intermandanten Zusammenarbeit von Office 365 umfassen die 
 
 ## <a name="power-bi-collaboration-options"></a>Power BI-Zusammenarbeitsoptionen
 
-|**Freigabeziel**|**Verwaltungsaktion**|**VorGehensWeise**|
+|**Freigabeziel**|**Verwaltungsaktion**|**Vorgehensweise**|
 |:-----|:-----|:-----|
 |Power BI ermöglicht externen Gastbenutzern das Nutzen von Inhalten, die über Links freigegeben werden. Dadurch können Benutzer in der Organisation Inhalte auf sichere Weise in Organisationen verteilen.<br/> | Der Power BI-Administrator kann steuern, ob Benutzer externe Benutzer zum Anzeigen von Inhalten innerhalb der Organisation einladen können. <br/> |[Verteilen von Power BI-Inhalten an externe Gastbenutzer mit Azure AD B2B](https://docs.microsoft.com/en-us/power-bi/service-admin-azure-ad-b2b) <br/> |
  

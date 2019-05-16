@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/8/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Ressourcen zum Planen und Verwalten von Office 365 für Ihre Unternehmensorganisation.
-ms.openlocfilehash: 7d28f68b0f33e02c9101abcac479d75675f1d0bc
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 0754213aef2acaa935cf59a317b93188b5002d33
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33489711"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067691"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Enterprise-Organisationen und Office 365
 
@@ -50,7 +50,7 @@ Schützen Sie Ihre Daten und halten Sie sich an gesetzliche oder behördliche St
   
 ![Cloud-und Architektur Symbole](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
- **GrundLegendes zur Cloud-Architektur**
+ **Grundlegendes zur Cloud-Architektur**
   
 Erkunden Sie Architektur Poster über die Enterprise-Cloud.
   

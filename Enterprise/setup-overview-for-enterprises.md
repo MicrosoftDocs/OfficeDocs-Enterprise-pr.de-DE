@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen von Office 365 Enterprise für Ihre Organisation
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Diese allgemeinen Schritte haben den Zweck, Sie beim Bereitstellen von Office 365, dem Herstellen der Verbindung mit Ihrem Active Directory, dem Migrieren Ihrer Daten und dem Support für die Benutzer in Ihrer Organisation beim Einstieg in dies neueste Version von Office 2016 zu unterstützen.
-ms.openlocfilehash: a49d57978faabfac7131db3178cbff02b500667f
-ms.sourcegitcommit: 0c775dbd2325f95e3f006424d1446f76caadb588
-ms.translationtype: HT
+ms.openlocfilehash: 16e6c60404a9e1f2c49b2e8e23920540e1dd8e49
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070811"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Bereitstellen von Office 365 Enterprise für Ihre Organisation
 Sind Sie bereit, Office 365 Enterprise bereitzustellen und es in Ihre lokale Infrastruktur zu integrieren? Der Zweck dieser allgemeinen Schritte besteht darin, Sie beim Herstellen der Verbindung mit Ihrem Verzeichnis, dem Migrieren Ihrer Daten und dem Support für die Benutzer in Ihrer Organisation beim Einstieg in die neueste Version von Office 2016 zu unterstützen.
@@ -31,7 +31,7 @@ Diese Schritte sind für Unternehmen und [ehrenamtliche Organisationen](https://
 Sie verfügen nicht über Office 365 Enterprise? Anweisungen für kleine Unternehmen finden Sie unter [Einrichten von Office 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa). 
   
 ## <a name="guided-enterprise-office-365-setup-process-with-fasttrack"></a>Geführter Setupvorgang für Office 365 Enterprise mit FastTrack
-Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** ist das beste Verfahren zum Bereitstellen von Office 365. FastTrack führt Sie durch die häufigsten Bereitstellungskonfigurationen und kann auf dem Weg auftretende Fragen beantworten. Wenn Sie auf Selbsthilfe oder die Unterstützung durch einen Partner vertrauen möchten, verwenden Sie unser [Office 365-Installationshandbuch](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), die [Office 365-Setup-Assistenten](https://aka.ms/o365fasttrack) oder [suchen Sie einen qualifizierten Partner](https://partnercenter.microsoft.com/de-DE/pcv/search).
+Office 365 **[FastTrack](https://docs.microsoft.com/fasttrack)** ist das beste Verfahren zum Bereitstellen von Office 365. FastTrack führt Sie durch die häufigsten Bereitstellungskonfigurationen und kann auf dem Weg auftretende Fragen beantworten. Wenn Sie auf Selbsthilfe oder die Unterstützung durch einen Partner vertrauen möchten, verwenden Sie unser [Office 365-Installationshandbuch](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa), die [Office 365-Setup-Assistenten](https://aka.ms/o365fasttrack) oder [suchen Sie einen qualifizierten Partner](https://partnercenter.microsoft.com/en-us/pcv/search).
 
 ## <a name="self-deployment-of-office-365"></a>Bereitstellen von Office 365 in eigener Regie
 Wenn Sie Office 365 in eigener Regie bereitstellen möchten, stehen die folgenden Bereitstellungsschritte zu Ihrer Hilfe zur Verfügung.

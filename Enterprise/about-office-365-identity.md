@@ -1,9 +1,9 @@
 ---
 title: Grundlegendes zu Office 365-Identitäten und Azure Active Directory
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Erfahren Sie, wie die Benutzeridentität in Office 365 verwaltet wird.
-ms.openlocfilehash: c9dff7e17e4c0dcceb7cdeab86c1acdd40e01205
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 85cfce4b08236bfcee74b6fe6d9c29766e7211c6
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487762"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068761"
 ---
 # <a name="understanding-office-365-identity-and-azure-active-directory"></a>Grundlegendes zu Office 365-Identitäten und Azure Active Directory
 
@@ -71,7 +71,7 @@ Erfahren Sie mehr über die [Auswahl der Verbundidentität mit AD FS](https://do
   
 ### <a name="third-party-authentication-and-identity-providers"></a>Authentifizierungs-und Identitätsanbieter von Drittanbietern
 
-Lokale Verzeichnisobjekte können mit Office 365 synchronisiert werden, und der Zugriff auf Cloud-Ressourcen wird hauptsächlich von einem Drittanbieter-Identitätsanbieter (IdP) verwaltet. Wenn in Ihrer Organisation eine Drittanbieter-Verbundlösung verwendet wird, können Sie die Anmeldung mit dieser Lösung für Office 365 konfigurieren, vorausgesetzt, dass die Drittanbieter-Verbundlösung mit Azure AD kompatibel ist.
+Lokale Verzeichnisobjekte können mit Office 365 synchronisiert werden, und der Zugriff auf Cloud-Ressourcen wird hauptsächlich von einem Drittanbieter-Identitätsanbieter (IDP) verwaltet. Wenn in Ihrer Organisation eine Drittanbieter-Verbundlösung verwendet wird, können Sie die Anmeldung mit dieser Lösung für Office 365 konfigurieren, vorausgesetzt, dass die Drittanbieter-Verbundlösung mit Azure AD kompatibel ist.
   
 Erfahren Sie mehr über die [Kompatibilität mit Azure AD-Verbund](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility).
   
@@ -83,4 +83,4 @@ Sie können auch die Azure AD Advisors verwenden: den [Azure AD Connect Advisor]
   
 ## <a name="video-training"></a>Videoschulung
 
-Weitere Informationen finden Sie im Video Kurs [Office 365: Verwalten von identitätEn mithilfe von Azure AD Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), die Ihnen von LinkedIn Learning präsentiert werden.
+Weitere Informationen finden Sie im Video Kurs [Office 365: Verwalten von Identitäten mithilfe von Azure AD Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), die Ihnen von LinkedIn Learning präsentiert werden.

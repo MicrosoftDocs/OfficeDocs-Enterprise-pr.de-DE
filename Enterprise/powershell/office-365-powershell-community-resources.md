@@ -1,9 +1,9 @@
 ---
-title: Community-Ressourcen zu Office 365 PowerShell
+title: Community-Ressourcen für Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
@@ -11,22 +11,22 @@ ms.collection: Ent_O365
 ms.custom: Ent_Office_Other
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 'Zusammenfassung: Rufen Sie von diesen Communityressourcen Hilfe zu Office 365 PowerShell ab.'
-ms.openlocfilehash: 9b98345db6db9b5070d738170258de6d7fff10ea
-ms.sourcegitcommit: fe406eacd92dd5b3bd8c127b7bd8f2d0ef216404
+ms.openlocfilehash: c2b02ab5d764ef954b9615ed2320eab821e0cb3d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "20017391"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068781"
 ---
 # <a name="office-365-powershell-community-resources"></a>Community-Ressourcen zu Office 365 PowerShell
 
  **Zusammenfassung:** Rufen Sie von diesen Communityressourcen Hilfe zu Office 365 PowerShell ab.
   
-Verwenden Sie diese Communityforen und Wikis, rufen Sie mit Ihren Kollegen verbunden und Ihre Office 365 PowerShell Fragen schnell und korrekt. 
+Verwenden Sie diese Community-Foren und Wikis, um Sie mit ihren Kollegen zu verbinden und Ihre Office 365 PowerShell-Fragen schnell und ordnungsgemäß zu beantworten. 
   
-- [Besuchen Sie die Office 365 Tech-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Besuchen Sie die Office 365 Tech Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
-- [Technische Office 365-community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Office 365 Technical Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
     
 - [Exchange TechCenter - Communityforum](https://social.technet.microsoft.com/Forums/exchange/en-US/home?forum=exchangesvrgeneral)
     

@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: e5a4381b6795a1159c1398f4155b059998a30818
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a4c8a76a322824bfdb4df88600881d76cb3e378c
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487931"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067321"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365
 
@@ -57,7 +57,7 @@ Jetzt sollten Sie bereit sein, Azure AD Connect und die Verbundauthentifizierung
     
 - Ein privater DNS-A-Eintrag für den FQDN Ihres Verbunddiensts zeigt auf die private IP-Adresse des internen Azure-Lastenausgleichs für die AD FS-Server.
     
-- Ein digitales Zertifikat für die öffentliche Zertifizierungsstelle, das für SSL-Verbindungen mit dem SAN-ausgestelltes für Ihren Verbunddienst-FQDN geeignet ist, ist eine PFX-Datei, die auf dem Verzeichnissynchronisierungsserver gespeichert ist.
+- Ein digitales Zertifikat für die öffentliche Zertifizierungsstelle, das für SSL-Verbindungen mit dem San-ausgestelltes für Ihren Verbunddienst-FQDN geeignet ist, ist eine PFX-Datei, die auf dem Verzeichnissynchronisierungsserver gespeichert ist.
     
 - Das Stammzertifikat für die öffentliche Zertifizierungsstelle wird im Speicher der vertrauenswürdigen Stammzertifizierungsstellen auf Ihren Computern und Geräten installiert.
     

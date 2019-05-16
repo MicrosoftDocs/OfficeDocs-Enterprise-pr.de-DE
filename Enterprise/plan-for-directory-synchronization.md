@@ -1,10 +1,9 @@
 ---
 title: Planen der Verzeichnissynchronisierung für Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Office 365, Active Directory Cleanup und Azure Active Directory Connect.
-ms.openlocfilehash: 1a7c63f699c51c829aaab5b70cb6a1a203bca3be
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b1d48696195c572de3a87bc5acb0646fc4bd0f41
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069361"
 ---
 # <a name="plan-for-directory-synchronization-for-office-365"></a>Planen der Verzeichnissynchronisierung für Office 365
 

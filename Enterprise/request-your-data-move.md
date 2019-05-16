@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Vorhandene Office 365-Kunden müssen eine Anforderung vor dem Stichtag für Ihr Land einreichen, damit die Kundendaten ihrer teilnehmenden Office 365-Dienste auf Ihren neuen Geo verschoben werden können.
-ms.openlocfilehash: 2307cb7d197397044578f9af3037914c83a1e220
-ms.sourcegitcommit: b85d3db24385d7e0bdbfb0d4499174ccd7f573bd
+ms.openlocfilehash: 96556ae231f66dd4448f871a6154b527816933f4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "30650078"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34071011"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -36,7 +36,7 @@ Es ist nicht möglich, Anforderungen zu akzeptieren, die nach dem Stichtag in je
 |Australien, Neuseeland, Fidschi  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
 |Indien  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
 |Kanada  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
-|United Kingdom  <br/> |15. März 2017  <br/> |15. September 2017  <br/> |
+|Vereinigtes Königreich  <br/> |15. März 2017  <br/> |15. September 2017  <br/> |
 |Südkorea  <br/> |1. Mai 2017  <br/> |31. Oktober 2017  <br/> |
 |Frankreich  <br/> |14. März 2018  <br/> |15. September 2018  <br/> |
 |Vereinigte Arabische Emirate  <br/> |Geplant  <br/> |Geplant  <br/> |
@@ -113,7 +113,7 @@ Wenn Benutzer über ein mobiles Gerät verfügen, bei dem der Exchange-Server au
 
 [Moving Core Data to New Office 365 Datacenter GEOS](moving-data-to-new-datacenter-geos.md)
 
-[Allgemeine häufig gestellte Fragen zu Datenverschiebung](data-move-faq.md)
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
 
 [Neues Datencenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   

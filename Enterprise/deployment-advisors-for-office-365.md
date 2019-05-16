@@ -1,10 +1,10 @@
 ---
 title: Bereitstellungsratgeber für Office 365-Dienste
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 8/21/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Die Bereitstellungs Berater für Office 365 bieten Ihnen eine selbstgesteuerte Unterstützung für das Einrichten von Office 365.
-ms.openlocfilehash: cbb992b178f98f7149137c5c29569e36190db2e2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 7aec5d6b59500fb092ab8d0e8a7f952997ebd1bb
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067892"
 ---
 # <a name="deployment-advisors-for-office-365-services"></a>Bereitstellungsratgeber für Office 365-Dienste
 
@@ -44,7 +44,7 @@ Microsoft 365 ist eine vollständige, intelligente Lösung, die Office 365, Wind
 Der [Leitfaden Vorbereiten der Umgebung](https://go.microsoft.com/fwlink/?linkid=2005213) ist der richtige Ausgangspunkt. Teilen Sie uns ihre Bereitstellungsziele mit, um sicherzustellen, dass Sie Domänen hinzufügen, Benutzer erstellen und Lizenzen in der richtigen Reihenfolge zuweisen. Dies ist besonders wichtig, wenn Sie planen, e-Mails zu migrieren oder eine hybridbereitstellung zu konfigurieren. 
 
 ### <a name="exchange-migration-advisor"></a>Exchange-Migrationsratgeber
-Der [office 365-e-Mail-Migrations Ratgeber](https://aka.ms/office365setup) unterstützt Sie beim Verschieben von Postfächern aus Ihrem aktuellen e-Mail-System zu Exchange Online in Office 365 mit automatisierten Tools und Schritt-für-Schritt-Anleitung. Wir empfehlen den besten Migrationspfad für Ihre Organisation basierend auf Ihrem aktuellen e-Mail-System, der Anzahl der zu migrierenden Postfächer und der Planung der Verwaltung von Benutzern und des Benutzerzugriffs.
+Der [Office 365-e-Mail-Migrations Ratgeber](https://aka.ms/office365setup) unterstützt Sie beim Verschieben von Postfächern aus Ihrem aktuellen e-Mail-System zu Exchange Online in Office 365 mit automatisierten Tools und Schritt-für-Schritt-Anleitung. Wir empfehlen den besten Migrationspfad für Ihre Organisation basierend auf Ihrem aktuellen e-Mail-System, der Anzahl der zu migrierenden Postfächer und der Planung der Verwaltung von Benutzern und des Benutzerzugriffs.
   
 Der [Gmail-Kontakte und der Kalender-Assistent](https://aka.ms/gmailcontactscalendar) enthält schrittweise Anleitungen für die Migration Ihrer Gmail-Kontakte und Google Calendar-Elemente zu Office 365. Wenn Sie das Gmail-Postfach eines Benutzers zu Office 365 migrieren, werden e-Mail-Nachrichten migriert, Kontakte und Kalenderelemente jedoch nicht. Dieses Handbuch enthält die Schritte zum Importieren von gmail-Kontakten und Google Calendar-Elementen in Office 365.
   
@@ -54,7 +54,7 @@ Microsoft [Exchange Online Protection (EoP)](https://aka.ms/EOPguidance) ist ein
 
 ## <a name="file-creation-storage-and-sharing"></a>Erstellen, speichern und Freigeben von Dateien
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 Der [Schnellstart-Leitfaden für Office ProPlus führt](https://aka.ms/OPPquickstartguide) Sie durch die Schritte zum Installieren von Office auf einem PC oder einem Mac für Ihr Unternehmen und enthält Tipps für jeden Einstieg in Office.
 
 Mit dem [Office ProPlus-Bereitstellungs Ratgeber](https://aka.ms/o365proplusdeploy) können Sie Ihre Benutzer auf die neuesten Versionen von Office einlassen. Dieser Ratgeber führt Sie durch die Schritte zum unterstützen der Benutzer bei der Installation von Office direkt aus dem Office 365-Portal Online oder für die Bereitstellung von Office für Ihre Benutzer von einem lokalen Standort aus. Enthalten sind Anweisungen für die Verwendung von System Center Configuration Manager, eines Startskripts für eine Gruppenrichtlinie, eines Betriebs System Datenträgers oder einer freigegebenen Remote Desktop Dienste-Aktivierung.
@@ -71,7 +71,7 @@ Der [SharePoint Online-Bereitstellungs Ratgeber](https://aka.ms/spoguidance) hil
 ## <a name="security-and-identity"></a>Sicherheit und Identität
 
 ### <a name="azure-active-directory-connect-azure-ad-connect-advisor"></a>Azure Active Directory Connect (Azure AD Connect) Advisor
-Der [Azure AD Connect Advisor](https://aka.ms/aadconnectpwsync) ist eine schrittweise Anleitung, die zeigt, wie sie Office 365 Benutzerkontoinformationen hinzufügen, ohne die einzelnen Benutzer manuell zu erstellen. Außerdem wird gezeigt, wie Sie die Kennworthash Synchronisierung oder Pass-Through-Authentifizierung konfigurieren, sodass Benutzer sich mit demselben Kennwort bei Ihren e-Mails und Ihrer Domäne anmelden können. Wenn Sie die Verbundanmeldung mit AD FS einrichten möchten, finden Sie in diesem Leitfaden auch Schritte zum Bereitstellen von AD FS auf einem neuen Server oder in einer vorhandenen Windows Server 2012 R2-Farm. Azure AD Connect ersetzt ältere Versionen von Identitäts Integrationstools wie dirSync und Azure AD Sync und wird hauptsächlich zum Hinzufügen von Benutzern und anderen Daten zu Azure Active Directory für Office 365 verwendet.
+Der [Azure AD Connect Advisor](https://aka.ms/aadconnectpwsync) ist eine schrittweise Anleitung, die zeigt, wie Sie Office 365 Benutzerkontoinformationen hinzufügen, ohne die einzelnen Benutzer manuell zu erstellen. Außerdem wird gezeigt, wie Sie die Kennworthash Synchronisierung oder Pass-Through-Authentifizierung konfigurieren, sodass Benutzer sich mit demselben Kennwort bei Ihren e-Mails und Ihrer Domäne anmelden können. Wenn Sie die Verbundanmeldung mit AD FS einrichten möchten, finden Sie in diesem Leitfaden auch Schritte zum Bereitstellen von AD FS auf einem neuen Server oder in einer vorhandenen Windows Server 2012 R2-Farm. Azure AD Connect ersetzt ältere Versionen von Identitäts Integrationstools wie Dirsync und Azure AD Sync und wird hauptsächlich zum Hinzufügen von Benutzern und anderen Daten zu Azure Active Directory für Office 365 verwendet.
   
 ### <a name="azure"></a>Azure
 Das [Azure AD Basic-Setup Handbuch](https://aka.ms/azureadbasic) hilft Ihnen beim Einrichten von Features wie Gruppenbasierte Zugriffsverwaltung, Self-Service-Kennwortzurücksetzung für Cloud-Anwendungen und Azure Active Directory-Anwendungs Proxy für die Veröffentlichung von lokalen Webanwendungen.
@@ -79,7 +79,7 @@ Das [Azure AD Basic-Setup Handbuch](https://aka.ms/azureadbasic) hilft Ihnen bei
 Das [Azure AD Premium-Setup Handbuch](https://aka.ms/aadpguidance) hilft Ihnen bei der Aktivierung der zahlreichen Features von Azure Active Directory Premium (Azure AD Premium), die Identitäts Verwaltungsfunktionen wie mehrstufige Authentifizierung, einmaliges Anmelden (Single Sign-on, SSO), Geräteregistrierung, Self-Service-Kenn Wort-und Gruppenverwaltung sowie Sicherheitsüberwachung.
   
 ### <a name="verify-your-domain"></a>Verify your domain
-Das [verify your Domain in office 365](https://aka.ms/verifyyourdomaino365) Advisor hilft Ihnen bei der Anpassung von Office 365 durch Hinzufügen Ihres eigenen Domänennamens (auch bekannt als Name Ihrer Website).
+Das [verify your Domain in Office 365](https://aka.ms/verifyyourdomaino365) Advisor hilft Ihnen bei der Anpassung von Office 365 durch Hinzufügen Ihres eigenen Domänennamens (auch bekannt als Name Ihrer Website).
   
 ## <a name="communication-and-online-conferencing"></a>Kommunikation und Onlinekonferenz
 
@@ -142,11 +142,11 @@ Microsoft StaffHub ist eine Cloud-basierte Plattform, die auf allen ihren Gerät
 [Vorbereiten der Umgebung](https://go.microsoft.com/fwlink/?linkid=2043822)
 
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 [Office-Erfahrung als Abonnementdienst](https://aka.ms/qo45jf)
   
-[Übersicht über Office 365 proPlus](https://aka.ms/r359zr)
+[Übersicht über Office 365 ProPlus](https://aka.ms/r359zr)
   
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
@@ -158,7 +158,7 @@ Microsoft StaffHub ist eine Cloud-basierte Plattform, die auf allen ihren Gerät
 
 ### <a name="outlook"></a>Outlook
 
-[Outlook für iOS-Einführung und-Setup](https://aka.ms/mpuwwm)
+[Outlook für IOS-Einführung und-Setup](https://aka.ms/mpuwwm)
 
 [Outlook für Android-Einführung und-Setup](https://aka.ms/qrbfm3)
 
@@ -186,7 +186,7 @@ Microsoft StaffHub ist eine Cloud-basierte Plattform, die auf allen ihren Gerät
 [Erste Schritte mit Teams](https://youtu.be/ENEQzM2u_vA)
 
     
-## <a name="walkthroughs-for-users"></a>Exemplarische vorGehensWeisen für Benutzer
+## <a name="walkthroughs-for-users"></a>Exemplarische Vorgehensweisen für Benutzer
 
 [Office Mobile-Apps](https://aka.ms/officemobileappsetup)
 

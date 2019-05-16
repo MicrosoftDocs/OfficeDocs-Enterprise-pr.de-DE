@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: db117e59-389f-46f5-a5df-4eeac0040aa8
 description: 'Zusammenfassung: Grundlegendes zur Hybrid Architektur und Szenarien für die SaaS-basierten Cloud-Angebote von Microsoft (Office 365).'
-ms.openlocfilehash: 90b751e4bbea42d723961eb2ac339d23faf8c259
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 84092fe419ab31fca7763f434e328eb855d46835
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067221"
 ---
 # <a name="hybrid-cloud-scenarios-for-microsoft-saas-office-365"></a>Hybrid Cloud-Szenarien für Microsoft-SaaS (Office 365)
 
@@ -59,7 +59,7 @@ Für jede Schicht der Architektur:
     
     Kann aus vorhandenen Servern für Exchange, SharePoint und Skype for Business bestehen, die auf ihre neuesten Versionen aktualisiert sein sollten. Sie können diese dann für Hybridszenarien mit ihren Office 365-Gegenstücken kombinieren.
     
-Richten Sie Ihre eigene Office 365 dev/Test-Umgebung ein, siehe [office 365 Test Lab Guides](cloud-adoption-test-lab-guides-tlgs.md).
+Richten Sie Ihre eigene Office 365 dev/Test-Umgebung ein, siehe [Office 365 Test Lab Guides](cloud-adoption-test-lab-guides-tlgs.md).
   
 ## <a name="skype-for-business-hybrid"></a>Skype for Business Hybrid
 
@@ -75,13 +75,13 @@ Weitere Informationen finden Sie unter [Planen der Hybrid Konnektivität zwische
     
 ## <a name="cloud-pbx-with-skype-for-business-server"></a>Cloud-PBX mit Skype for Business Server
 
-Cloud PBX mit Skype for Business Server ermöglicht den Übergang einer vorhandenen Skype for Business Server-Bereitstellung in eine Topologie mit einer lokalen PSTN-Anbindung (Public Switched telePhone Network). 
+Cloud PBX mit Skype for Business Server ermöglicht den Übergang einer vorhandenen Skype for Business Server-Bereitstellung in eine Topologie mit einer lokalen PSTN-Anbindung (Public Switched Telephone Network). 
   
 **Abbildung 3: Cloud-PBX mit Skype for Business Server**
 
 ![Cloud-PBX mit Skype for Business Server](media/Hybrid-Poster/Hybrid-Cloud-Stack-SaaS-SfB-CloudPBX.png)
   
-Abbildung 3 zeigt die Cloud-nebenstellenANLAGE mit Skype for Business Server-Konfiguration, bestehend aus einer lokalen vorhandenen nebenstellenANLAGE oder einem Telco-Gateway, einem Skype for Business-Server und dem PSTN, das mit der Microsoft Cloud-nebenstellenANLAGE in Office 365 verbunden ist und Skype for Business umfasst. Online.
+Abbildung 3 zeigt die Cloud-Nebenstellenanlage mit Skype for Business Server-Konfiguration, bestehend aus einer lokalen vorhandenen Nebenstellenanlage oder einem Telco-Gateway, einem Skype for Business-Server und dem PSTN, das mit der Microsoft Cloud-Nebenstellenanlage in Office 365 verbunden ist und Skype for Business umfasst. Online.
   
 Benutzer im Unternehmen, die in der Cloud gehostet werden, können private PBX-Dienste (Private Branch Exchange, Nebenstellenanlage) aus der Microsoft-Cloud empfangen, wozu Signalisierung und Voicemail gehören, aber Festnetzanbindung (Freizeichen) wird über Enterprise-VoIP aus Ihrer lokalen Skype for Business Server-Bereitstellung bereitgestellt.
   

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/15/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 search.appverid:
@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen sind ein Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und zugehörige Daten für Ihren Mandanten in ein neues Datacenter Geo verschiebt. Die Datenübertragung und-Validierung erfolgt im Hintergrund im Vorfeld mit minimalen Auswirkungen für die Benutzer.
-ms.openlocfilehash: 7635de71e207ff01b24b8b8df8664e3f57f395cf
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: a0fb2e7ad31a2c5492260bd5f1d67d80632024c0
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067731"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -33,7 +33,7 @@ Sehen Sie sich das Office 365-Nachrichten Center an, um eine Bestätigung zu erh
 |:-----|:-----|
 |Australien, Neuseeland, Fidschi  <br/> |31. Oktober 2017  <br/> |
 |Japan  <br/> |31. Oktober 2018  <br/> |
-|India  <br/> |31. Oktober 2018  <br/> |
+|Indien  <br/> |31. Oktober 2018  <br/> |
 |Kanada  <br/> |30. Juni 2019  <br/> |
 |Südkorea  <br/> |31. Oktober 2018  <br/> |
 |Vereinigtes Königreich  <br/> |15. September 2019  <br/> |
@@ -47,12 +47,12 @@ Da es Zeit benötigt, um jeden Benutzer für einen einzelnen Mandanten in das ne
   
 ### <a name="open-shared-folder-in-outlook-web-access"></a>Öffnen des "freigegebenen Ordners" in Outlook Web Access
 
-Einige Benutzer öffnen einen freigegebenen e-Mail-Ordner aus einem anderen Postfach (für den der Benutzer Lese-oder Schreibberechtigungen hat) in Outlook Web Access unter Verwendung der Funktion "FreigeGebener Ordner". In der folgenden Tabelle wird beschrieben, wie der Zugriff auf freigegebene Ordner während einer Postfachverschiebung funktioniert. Beachten Sie, dass Benutzer mit vollständigen Berechtigungen für ein freigegebenes Postfach das Postfach während der Verschiebung mithilfe von Outlook Web Access öffnen können. 
+Einige Benutzer öffnen einen freigegebenen e-Mail-Ordner aus einem anderen Postfach (für den der Benutzer Lese-oder Schreibberechtigungen hat) in Outlook Web Access unter Verwendung der Funktion "freigegebener Ordner". In der folgenden Tabelle wird beschrieben, wie der Zugriff auf freigegebene Ordner während einer Postfachverschiebung funktioniert. Beachten Sie, dass Benutzer mit vollständigen Berechtigungen für ein freigegebenes Postfach das Postfach während der Verschiebung mithilfe von Outlook Web Access öffnen können. 
   
 |**Konfiguration**|**Beschreibung**|
 |:-----|:-----|
-|Benutzer verfügt über die Berechtigung für den Postfachordner für ein anderes Postfach  <br/> |MöglicherWeise begrenzt.  <br/> Wenn sich Benutzer A und Postfach B während der Mandanten Verschiebung nicht in der gleichen geografischen Umgebung befinden, kann Benutzer a den Ordner von Postfach B in Outlook Web Access nicht öffnen, wenn Benutzer A nur über die Berechtigung für einen bestimmten Ordner in Postfach B verfügt.  <br/> Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf den Benutzernamen, und wählen Sie **freigegebener Ordner hinzufügen**aus, um einen freigegebenen Ordner hinzuzufügen.  <br/> |
-|Benutzer mit vollständiger Post Fach Berechtigung für ein anderes Postfach  <br/> |Vollständig unterstützt.  <br/> Wenn Benutzer A über die Berechtigung "Vollzugriff" für Postfach B verfügt, kann Benutzer A auf den freigegebenen Ordner im linken Navigationsbereich in Outlook Web Access klicken, um ein Fenster mit dem Postfach B zu öffnen.  Ein Benutzer kann während der Verschiebung ein freigegebenes Postfach mit Outlook Web Access ohne nachteilige Auswirkungen öffnen. Die Einschränkung gilt nur für die Freigabe auf Ordnerebene in einem Postfach.           |
+|Benutzer verfügt über die Berechtigung für den Postfachordner für ein anderes Postfach  <br/> |Möglicherweise begrenzt.  <br/> Wenn sich Benutzer a und Postfach b während der Mandanten Verschiebung nicht in der gleichen geografischen Umgebung befinden, kann Benutzer a den Ordner von Postfach b in Outlook Web Access nicht öffnen, wenn Benutzer a nur über die Berechtigung für einen bestimmten Ordner in Postfach b verfügt.  <br/> Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf den Benutzernamen, und wählen Sie **freigegebener Ordner hinzufügen**aus, um einen freigegebenen Ordner hinzuzufügen.  <br/> |
+|Benutzer mit vollständiger Post Fach Berechtigung für ein anderes Postfach  <br/> |Vollständig unterstützt.  <br/> Wenn Benutzer a über die Berechtigung "Vollzugriff" für Postfach b verfügt, kann Benutzer a auf den freigegebenen Ordner im linken Navigationsbereich in Outlook Web Access klicken, um ein Fenster mit dem Postfach b zu öffnen.  Ein Benutzer kann während der Verschiebung ein freigegebenes Postfach mit Outlook Web Access ohne nachteilige Auswirkungen öffnen. Die Einschränkung gilt nur für die Freigabe auf Ordnerebene in einem Postfach.           |
    
 ### <a name="public-folders"></a>Öffentliche Ordner
 
@@ -98,9 +98,9 @@ Die folgenden Suchfeatures sind betroffen:
   
 - Suchergebnisse und Such-Webparts: Ergebnisse schließen keine Änderungen ein, die nach der Migration aufgetreten sind, bis Sie durchforstet werden. 
     
-- Untersuchen: verTiefen enthält keine Änderungen, die nach der Migration aufgetreten sind, bis Sie durchforstet werden.
+- Untersuchen: vertiefen enthält keine Änderungen, die nach der Migration aufgetreten sind, bis Sie durchforstet werden.
     
-- Popularitäts-und Suchberichte für die Website: Zählungen für Excel-Berichte am neuen Speicherort enthalten nur migrierte Anzahlen und Zählungen aus Nutzungsberichten, die nach Abschluss der Verschiebung Ihrer SharePoint Online-Daten ausgeführt wurden. Alle Zahlen aus dem zwischen Zeitraum gehen verloren und können nicht wiederhergestellt werden. Dieser Zeitraum ist in der Regel ein paar Tage. Einige Kunden haben möglicherweise kürzere oder längere Verluste.
+- Popularitäts-und suchberichte für die Website: Zählungen für Excel-Berichte am neuen Speicherort enthalten nur migrierte Anzahlen und Zählungen aus Nutzungsberichten, die nach Abschluss der Verschiebung Ihrer SharePoint Online-Daten ausgeführt wurden. Alle Zahlen aus dem zwischen Zeitraum gehen verloren und können nicht wiederhergestellt werden. Dieser Zeitraum ist in der Regel ein paar Tage. Einige Kunden haben möglicherweise kürzere oder längere Verluste.
     
 - Videoportal: die Anzeige Anzahl und die Statistiken für das Videoportal hängen von den Statistiken für Excel-Berichte ab, sodass die Anzeige Anzahl und die Statistiken für das Videoportal für den gleichen Zeitraum wie für die Excel-Berichte verloren gehen.
     
@@ -114,14 +114,14 @@ Alle Benutzer werden während der über Schaltung bei der Skype for Business-Cli
   
 |**Features, die während der gesamten Verschiebung funktionieren**|**Features, die während eines Teils der Verschiebung eingeschränkt werden können**|
 |:-----|:-----|
-| Sofortnachrichten und VoIP-Anrufe  <br/>  Benutzer können Kontakte hinzufügen, Kontaktgruppen hinzufügen, Besprechungen hinzufügen, Ihren Standort festlegen und "was heute geschieht" ändern.  <br/>  Die Einstellungen für audioKonferenz Anbieter (ACP) werden in den Geo des Ziel-Datencenters kopiert. Wenn der ACP-Anbieter im Zieldatencenter vorhanden ist, funktioniert er. Andernfalls ist dies nicht der Fall.  <br/> | MandantenAdministrator-TRPS (Mandanten-Remote-PowerShell) stehen Administratoren nicht zum Erstellen von Sitzungen zur Verfügung.  <br/>  Der Mandantenadministrator LAC steht Administratoren nicht zur Verfügung, um sich anzumelden und Benutzereinstellungen zu ändern.  <br/> |
+| Sofortnachrichten und VoIP-Anrufe  <br/>  Benutzer können Kontakte hinzufügen, Kontaktgruppen hinzufügen, Besprechungen hinzufügen, Ihren Standort festlegen und "was heute geschieht" ändern.  <br/>  Die Einstellungen für Audiokonferenz Anbieter (ACP) werden in den Geo des Ziel-Datencenters kopiert. Wenn der ACP-Anbieter im Zieldatencenter vorhanden ist, funktioniert er. Andernfalls ist dies nicht der Fall.  <br/> | Mandantenadministrator-TRPS (Mandanten-Remote-PowerShell) stehen Administratoren nicht zum Erstellen von Sitzungen zur Verfügung.  <br/>  Der mandantenadministrator Lac steht Administratoren nicht zur Verfügung, um sich anzumelden und Benutzereinstellungen zu ändern.  <br/> |
    
 |**Nach der Verschiebung**|
 |:-----|
 | Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht verschoben und müssen erneut hochgeladen werden.  <br/>  Ältere lync-Clients, wie beispielsweise der lync 2010-Client und lync für Mac 2011-Client, wissen, dass DNS-Informationen mit dem Dienst, der Anmeldeprobleme verursacht, zwischengespeichert werden. Das Löschen des DNS-Caches ist möglicherweise erforderlich, wenn der Benutzer nicht auf dem neuesten Windows-Client für Skype for Business ist. Fordern Sie die Benutzer auf, den Problembehandlungs- [Assistenten](https://support.microsoft.com/en-us/kb/2541980) auszuführen, und folgen Sie den Anweisungen zum Löschen des Clientcaches. Lync für Mac-Clientbenutzer sollten [diese Anweisungen](https://support.microsoft.com/en-us/kb/2629861)befolgen.  <br/> |
    
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype for Business-Moves, die einen Drittanbieter für audioKonferenzen einbeziehen
-Add-on-Dienste eines Drittanbieters für audioKonferenzen für Skype for Business stehen nicht für Benutzer zur Verfügung, die in neuen Geo-spezifischen Rechenzentren verwaltet werden.  Bestehende Kunden, die einen Drittanbieterdienst für audioKonferenzen verwenden, sollten keine Verschiebung zu einem neuen geografischen Rechenzentrum anfordern.  Neue Kunden, die in den neuen Geo-spezifischen Rechenzentren bereitgestellt werden, müssen eine Verschiebung zu einem regionalen Rechenzentrum anfordern, um einen Drittanbieter für audioKonferenzen zu verwenden.
+### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype for Business-Moves, die einen Drittanbieter für Audiokonferenzen einbeziehen
+Add-on-Dienste eines Drittanbieters für Audiokonferenzen für Skype for Business stehen nicht für Benutzer zur Verfügung, die in neuen Geo-spezifischen Rechenzentren verwaltet werden.  Bestehende Kunden, die einen Drittanbieterdienst für Audiokonferenzen verwenden, sollten keine Verschiebung zu einem neuen geografischen Rechenzentrum anfordern.  Neue Kunden, die in den neuen Geo-spezifischen Rechenzentren bereitgestellt werden, müssen eine Verschiebung zu einem regionalen Rechenzentrum anfordern, um einen Drittanbieter für Audiokonferenzen zu verwenden.
 
 ## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Daten für andere Dienste, einschließlich Teams, jammern und Power BI
 

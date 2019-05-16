@@ -4,7 +4,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365P_AddUsersCSV
@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'Informationen zum Hinzufügen mehrerer Benutzer zu Office 365 for Business aus einer Liste in einer Kalkulationstabelle oder einer anderen CSV-formatierten Datei. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Office 365 erläutert wird. Am Ende dieses Prozesses verfügen alle Benutzer mit einem Konto über ein Office 365-Postfach. '
-ms.openlocfilehash: 1f91821ee552b59201ca01bdbce7edc0406929d6
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491516"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068691"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 – Administratorhilfe
 
@@ -83,9 +83,9 @@ Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="bk_preview"> </a>
 
-- Nachdem diese Benutzer über Konten verfügen, müssen Sie [office 365 oder office 2016 auf einem PC oder Mac herunterladen und installieren oder neu installieren](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Jede Person in Ihrem Team kann Office 365 auf bis zu fünf PCs oder Macs installieren. 
+- Nachdem diese Benutzer über Konten verfügen, müssen Sie [Office 365 oder Office 2016 auf einem PC oder Mac herunterladen und installieren oder neu installieren](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Jede Person in Ihrem Team kann Office 365 auf bis zu fünf PCs oder Macs installieren. 
     
-- Jede Person kann auch [Office-Apps und e-Mail auf einem mobilen Gerät](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) auf bis zu 5 Tablets und 5 Handys, wie iPhones, IPads und Android-Telefone und tableTs, einrichten. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden. 
+- Jede Person kann auch [Office-Apps und e-Mail auf einem mobilen Gerät](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) auf bis zu 5 Tablets und 5 Handys, wie iPhones, iPads und Android-Telefone und Tablets, einrichten. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden. 
     
     Eine End-to-End-Liste der Setupschritte finden Sie unter [Einrichten von Office 365 für Unternehmen](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) . 
     

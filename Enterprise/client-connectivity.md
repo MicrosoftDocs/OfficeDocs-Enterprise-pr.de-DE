@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/6/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Zusammenfassung: erläutert, wie Clientcomputer eine Verbindung zu Office 365-Mandanten herstellen, je nach Standort des Clientcomputers und des Office 365-Mandantendaten Centers.'
-ms.openlocfilehash: 9455147e70a391619e1602f2e36d9162ff2c0928
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: d101af5a0fdd4e29e366b34ad1ab682489f6b3ca
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068201"
 ---
 # <a name="client-connectivity"></a>Client-Konnektivität
 
@@ -31,7 +31,7 @@ ms.locfileid: "33490571"
   
 Office 365 befindet sich in Microsoft-Rechenzentren auf der ganzen Welt, die den Dienst auch dann in Betrieb halten, wenn ein großes Problem in einer Region auftritt, beispielsweise ein Erdbeben oder ein Stromausfall. Wenn Sie eine Verbindung mit Ihrem Office 365-Mandanten herstellen, wird die Clientverbindung an das entsprechende Datencenter weitergeleitet, in dem Ihr Mandant gehostet wird. Die Regeln, die bestimmen, wo Ihr Mandant gehostet werden kann, werden in ihrer Vereinbarung mit Microsoft definiert. Die Regeln, mit denen bestimmt wird, wie der Client die Daten von diesem Datacenter-Speicherort erwirbt, hängt von der Architektur des Diensts ab, den Sie verwenden.
   
-Wenn Sie sich beispielsweise beim Office 365-Portal anmelden, sind Sie normalerweise mit dem nächstgelegenen Datencenter mit dem Client verbunden und dann abhängig von dem Dienst, den Sie als nächstes verwenden. Wenn Sie eine e-Mail-Nachricht starten, kann die anfängliche Verbindung zum Anzeigen der Benutzeroberfläche weiterhin vom nächsten Datencenter stammen, aber möglicherweise wird eine zweite Verbindung zwischen dem nächsten Datencenter und dem Datencenter geöffnet, in dem sich Ihr Mandant befindet, um zu zeigen, welche e-Mails Sie lesen. Microsoft betreibt eines der zehn Top-Netzwerke der Welt und führt zu unglaublich schnellen Datencenter-zu-Datacenter-Verbindungen.
+Wenn Sie sich beispielsweise beim Office 365-Portal anmelden, sind Sie normalerweise mit dem nächstgelegenen Datencenter mit dem Client verbunden und dann abhängig von dem Dienst, den Sie als nächstes verwenden. Wenn Sie eine e-Mail-Nachricht starten, kann die anfängliche Verbindung zum Anzeigen der Benutzeroberfläche weiterhin vom nächsten Datencenter stammen, aber möglicherweise wird eine zweite Verbindung zwischen dem nächsten Datencenter und dem Datencenter geöffnet, in dem sich Ihr Mandant befindet, um zu zeigen, welche e-Mails Sie lesen. Microsoft betreibt eines der zehn führenden Netzwerke der Welt, was zu unglaublich schnellen Datencenter-zu-Datacenter-Verbindungen führt.
   
 Nachdem Sie den Artikel gelesen haben, werden Sie wahrscheinlich verstehen, warum wir keine [Office 365-URLs und IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) pro Datencenter bereitstellen, Sie sind einfach zu miteinander verbunden und voneinander abhängig, um dies zu ermöglichen.
   
@@ -112,7 +112,7 @@ Dieser Verbindungstyp gilt nur, wenn ein VPN (virtuelles privates Netzwerk) von 
   
 ## <a name="how-does-this-work"></a>Wie funktioniert das?
 
-Wenn der Clientcomputer eine VPN-Verbindung mit einer unternehmensniederlassung in einer anderen Region herstellt, werden die DNS-Server in diesem Office anstelle der DNS-Server am Standort des Clientcomputers verwendet. In den meisten Fällen verschlechtert diese zusätzliche Verbindung über das VPN die Office 365-Umgebung. Die Office 365-Dienste sind optimiert, um Kundenverbindungen möglichst in der Endbenutzerumgebung zu bedienen. Viele Dienste nutzen das Azure Edge-Netzwerk, Content-zuStellungs Netzwerke und die zuverlässige Netzwerkkapazität des Microsoft-Netzwerks, um die bestmögliche Benutzerfreundlichkeit zu erreichen, wenn Netzwerkanforderungen für Office 365-Dienste in der Nähe des Clientcomputers ausgeführt werden. wie möglich.
+Wenn der Clientcomputer eine VPN-Verbindung mit einer unternehmensniederlassung in einer anderen Region herstellt, werden die DNS-Server in diesem Office anstelle der DNS-Server am Standort des Clientcomputers verwendet. In den meisten Fällen verschlechtert diese zusätzliche Verbindung über das VPN die Office 365-Umgebung. Die Office 365-Dienste sind optimiert, um Kundenverbindungen möglichst in der Endbenutzerumgebung zu bedienen. Viele Dienste nutzen das Azure Edge-Netzwerk, Content-Zustellungs Netzwerke und die zuverlässige Netzwerkkapazität des Microsoft-Netzwerks, um die bestmögliche Benutzerfreundlichkeit zu erreichen, wenn Netzwerkanforderungen für Office 365-Dienste in der Nähe des Clientcomputers ausgeführt werden. wie möglich.
   
 1. Der Clientcomputer fordert die VPN-DNS-Server für die IP-Adresse an, die Office 365 zugeordnet ist.
 

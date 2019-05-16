@@ -4,7 +4,7 @@ ms.author: krowley
 author: tracyp
 manager: laurawi
 ms.date: 12/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 ms.assetid: 026e83cb-a945-4543-97b0-a8af6e80ac61
 description: Dieser Artikel enthält allgemeine Tipps und Links zu anderen Ressourcen, die Ihnen mitteilen, wie Sie die Leistung von Exchange Online verbessern.
-ms.openlocfilehash: f75869ba6d83a92b1e19743c8b38c4bcbb6762cf
-ms.sourcegitcommit: 1d84e2289fc87717f8a9cd12c68ab27c84405348
+ms.openlocfilehash: d736568687da5ffe0ebed5a57a6afa6f93173c54
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30372852"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070351"
 ---
 # <a name="tune-exchange-online-performance"></a>Optimieren der Leistung von Exchange Online
 
@@ -31,7 +31,7 @@ Berücksichtigen Sie Folgendes, um die Migrations Geschwindigkeit zu verbessern 
   
 - **Verringern der Postfachgröße.** Geringere Postfachgröße verbessert die Migrations Geschwindigkeit. 
     
-- **Verwenden Sie die Post Fach Verschiebungsfunktionen in einer Exchange-hybridbereitstellung.** Bei einer Exchange-hybridbereitstellung werden offline-e-Mails (in der Form von. OST-Dateien) erfordert keinen erneuten Download bei der Migration zu Exchange Online. Dadurch werden die Anforderungen an die Download Bandbreite deutlich reduziert. 
+- **Verwenden Sie die Post Fach Verschiebungsfunktionen in einer Exchange-hybridbereitstellung.** Bei einer Exchange-hybridbereitstellung werden offline-e-Mails (in der Form von. Ost-Dateien) erfordert keinen erneuten Download bei der Migration zu Exchange Online. Dadurch werden die Anforderungen an die Download Bandbreite deutlich reduziert. 
     
 - **Planen Sie die Postfachverschiebungen in Zeiten mit niedrigem Internet Datenverkehr und einer niedrigen lokalen Exchange-Verwendung.** Bei der Planung von Verschiebungen werden Migrationsanforderungen an den Replikations Proxy übermittelt und werden möglicherweise nicht sofort ausgeführt. 
     
@@ -40,7 +40,7 @@ Berücksichtigen Sie Folgendes, um die Migrations Geschwindigkeit zu verbessern 
 
 ## <a name="general-advice"></a>Allgemeine Ratschläge
 
-- Stellen Sie sicher, dass die DNS-Suche für outlook.office.com in das MS-Datencenter an einem logischen Eingabespeicherort für Ihren Standort gelangt.
+- Stellen Sie sicher, dass die DNS-Suche für Outlook.Office.com in das MS-Datencenter an einem logischen Eingabespeicherort für Ihren Standort gelangt.
 
 - Recherchieren Sie das Zwischenspeichern von Postfächern, und wählen Sie die entsprechenden Optionen aus. zwischen Speicherungszeitraum, Zwischenspeicherung für freigegebene Postfächer usw.).
 

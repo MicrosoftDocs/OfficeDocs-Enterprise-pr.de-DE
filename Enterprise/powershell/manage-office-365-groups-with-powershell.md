@@ -3,7 +3,7 @@ title: Verwalten von Office 365-Gruppen mit PowerShell
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Erfahren Sie, wie Sie allgemeine Verwaltungsaufgaben für Office 365-Gruppen in Microsoft PowerShell ausführen.
-ms.openlocfilehash: 6d7841595315507b0b7f28f6b86f9349705f1d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33491756"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069021"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Verwalten von Office 365-Gruppen mit PowerShell
 
@@ -35,7 +35,7 @@ Dieser Artikel enthält die Schritte zum Ausführen allgemeiner Verwaltungsaufga
 
 Wenn Benutzer [eine Gruppe in Outlook erstellen oder bearbeiten](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), können Sie Ihnen einen Link zu den Nutzungsrichtlinien Ihrer Organisation anzeigen. Wenn Sie beispielsweise ein bestimmtes Präfix oder Suffix für einen Gruppennamen hinzufügen möchten.
   
-Verwenden Sie die Azure Active Directory PowerShell, um Ihre Benutzer auf die Nutzungsrichtlinien Ihrer Organisation für Office 365-Gruppen zu verweisen. Sehen Sie sich die [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?LinkID=827484) an, und führen Sie die Schritte in den **Einstellungen auf Verzeichnisebene erstellen** aus, um den Hyperlink Verwendungsrichtlinie zu definieren. Nachdem Sie das AAD-Cmdlet ausgeführt haben, werden dem Benutzer beim Erstellen oder Bearbeiten einer Gruppe in Outlook der Link zu ihren Richtlinien angezeigt. 
+Verwenden Sie die Azure Active Directory PowerShell, um Ihre Benutzer auf die Nutzungsrichtlinien Ihrer Organisation für Office 365-Gruppen zu verweisen. Sehen Sie sich die [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?LinkID=827484) an, und führen Sie die Schritte in den **Einstellungen auf Verzeichnisebene erstellen** aus, um den Hyperlink Verwendungsrichtlinie zu definieren. Nachdem Sie das Aad-Cmdlet ausgeführt haben, werden dem Benutzer beim Erstellen oder Bearbeiten einer Gruppe in Outlook der Link zu ihren Richtlinien angezeigt. 
   
 ![Erstellen einer neuen Gruppe mit dem Link "Verwendungsrichtlinien"](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
@@ -79,7 +79,7 @@ Um jeder Klassifizierung eine Beschreibung zuzuordnen, können Sie das Einstellu
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-wobei die Klassifizierung mit den Zeichenfolgen in der Classificationlist übereinstimmt.
+wobei die Klassifizierung mit den Zeichenfolgen in der classificationlist übereinstimmt.
 
 Beispiel:
   
@@ -114,7 +114,7 @@ Sie können angeben, ob eine Office 365-Gruppe in der globalen Adressliste (GAL)
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
 ```
 
-## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>Nur internen Benutzern das Senden von Nachrichten an die Office 365-Gruppe geStatten
+## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>Nur internen Benutzern das Senden von Nachrichten an die Office 365-Gruppe gestatten
 <a name="BKMK_CreateClassification"> </a>
 
 Wenn Sie nicht möchten, dass Benutzer aus der anderen Organisation e-Mails an eine Office 365-Gruppe senden, können Sie die Einstellungen für diese Gruppe ändern. Nur interne Benutzer können eine e-Mail an Ihre Gruppe senden. Wenn der externe Benutzer versucht, eine Nachricht an diese Gruppe zu senden, wird er abgelehnt.
@@ -175,7 +175,7 @@ Die folgenden Cmdlets können mit Office 365-Gruppen verwendet werden.
 |:-----|:-----|
 |[Get-Unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |Verwenden Sie dieses Cmdlet zum Nachschlagen vorhandener Office 365-Gruppen und zum Anzeigen der Eigenschaften des Group-Objekts.  <br/> |
 |[Set-Unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |Aktualisieren der Eigenschaften einer bestimmten Office 365-Gruppe  <br/> |
-|[New-Unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Erstellen Sie eine neue Office 365-Gruppe. Dieses Cmdlet bietet einen minimalen Satz von Parametern, um Werte für erweiterte Eigenschaften festZulegen, die Set-Unifiedgroup nach dem Erstellen der neuen Gruppe verwenden.  <br/> |
+|[New-Unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |Erstellen Sie eine neue Office 365-Gruppe. Dieses Cmdlet bietet einen minimalen Satz von Parametern, um Werte für erweiterte Eigenschaften festzulegen, die Set-Unifiedgroup nach dem Erstellen der neuen Gruppe verwenden.  <br/> |
 |[Remove-Unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |Löschen einer vorhandenen Office 365-Gruppe  <br/> |
 |[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Abrufen von Mitgliedschafts-und Besitzerinformationen für eine Office 365-Gruppe  <br/> |
 |[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |Hinzufügen von hundert oder Tausenden von Benutzern oder neuen Besitzern zu einer vorhandenen Office 365-Gruppe  <br/> |

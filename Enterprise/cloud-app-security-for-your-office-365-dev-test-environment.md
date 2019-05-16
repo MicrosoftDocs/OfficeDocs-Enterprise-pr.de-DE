@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: aa6fada78ada2f97242ffe8f60c9032d618f3b9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: af2a2657ede46818b9d705ca38f99d779f98fb11
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490121"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068101"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -49,7 +49,7 @@ In diesem Verfahren demonstrieren Sie, dass das Ändern einer Benutzerrolle vor 
   
 ### <a name="test-the-default-notification-behavior-of-office-365"></a>Testen des Standardbenachrichtigungsverhaltens von Office 365
 
-1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei Ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
   - Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, melden Sie sich von Ihrem lokalen Computer aus an.
     
@@ -79,9 +79,9 @@ In diesem Verfahren aktivieren Sie Cloud App Security und erstellen eine neue Ri
     
 ### <a name="enable-and-configure-cloud-app-security"></a>Aktivieren und Konfigurieren von Cloud App Security
 
-1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei Ihrem Office 365-Testabonnement mit ihrem globalen Administratorkonto an.
     
-2. Klicken Sie auf die Kachel **Admin**. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin Center _GT_ Security & Compliance**.
+2. Klicken Sie auf die Kachel **Admin**. Klicken Sie auf der Registerkarte **Office Admin Center** auf **Admin Center > Security & Compliance**.
     
 3. Klicken Sie im linken Navigationsbereich auf **Warnungen > Erweiterte Warnungen verwalten**.
     

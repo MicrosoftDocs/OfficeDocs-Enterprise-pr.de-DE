@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 9/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: beec23c2-c5d6-4e84-a8af-e82aefca7802
 description: Dieser Artikel enthält Links für Systemadministratoren, die die Anforderungen an die Netzwerkbandbreite planen oder die Leistung von Skype for Business Online verbessern müssen.
-ms.openlocfilehash: f2357491b61c6715491577925e8c952a7f2ea717
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 9475f94678836842b6e6cf3b49084b4a6de3c77d
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492001"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070391"
 ---
 # <a name="tune-skype-for-business-online-performance"></a>Optimieren von Skype for Business Online
 
@@ -44,7 +44,7 @@ Dieser Artikel enthält Links für Systemadministratoren, die die Anforderungen 
 
 - [Einrichten von Skype for Business Online](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Einrichten von audioKonferenzen für Skype for Business und Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+- [Einrichten von Audiokonferenzen für Skype for Business und Microsoft Teams](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
     
 - [Einrichten von Anrufplänen (Skype for Business)](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
     

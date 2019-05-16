@@ -4,23 +4,23 @@ ms.author: dstrome
 author: dstrome
 manager: laurawi
 ms.date: 1/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 nähert sich der Unterstützung. Verwenden Sie diese Planungs Roadmap als Leitfaden, um das Upgrade auf Exchange Online oder eine neuere Version von Exchange Server lokal vorzubereiten.
-ms.openlocfilehash: d9dcc2120f549c55fedc78483689dbded0a4464f
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: f0ff6551f9ef2c0ed57baabacc04293e83d25e13
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067571"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roadmap für Exchange 2010 Ende der Unterstützung
 
-Am **14. januar 2020**wird Exchange Server 2010 das Ende der Unterstützung erreichen. Wenn Sie die Migration von Exchange 2010 zu Office 365 oder Exchange 2016 noch nicht begonnen haben, können Sie mit der Planung beginnen.
+Am **14. Januar 2020**wird Exchange Server 2010 das Ende der Unterstützung erreichen. Wenn Sie die Migration von Exchange 2010 zu Office 365 oder Exchange 2016 noch nicht begonnen haben, können Sie mit der Planung beginnen.
 
 ## <a name="what-does-end-of-support-mean"></a>Was bedeutet End-of-Support?
 
@@ -34,7 +34,7 @@ Wenn Exchange 2010 am Ende der Unterstützung am 14. Januar 2020, stellt Microso
 
 Die Installation von Exchange 2010 wird nach diesem Datum fortgesetzt. Aufgrund der oben aufgeführten Änderungen wird jedoch dringend empfohlen, dass Sie so bald wie möglich eine Migration von Exchange 2010 durchführen.
 
-Weitere Informationen zu Office 2010-Servern, die sich am Ende des Supports befinden, finden Sie unter [Ressourcen zum Upgrade von office 2010-Servern und-Clients](https://docs.microsoft.com/en-us/office365/enterprise/upgrade-from-office-2010-servers-and-products).
+Weitere Informationen zu Office 2010-Servern, die sich am Ende des Supports befinden, finden Sie unter [Ressourcen zum Upgrade von Office 2010-Servern und-Clients](https://docs.microsoft.com/en-us/office365/enterprise/upgrade-from-office-2010-servers-and-products).
 
 ## <a name="what-are-my-options"></a>Was sind meine Optionen?
 
@@ -44,7 +44,7 @@ Da Exchange 2010 das Ende des Supports erreicht, ist dies eine gute Zeit, um Ihr
 - Migrieren Sie Ihre Exchange 2010-Server zu Exchange 2016 auf Ihren lokalen Servern.
 
 > [!IMPORTANT]
-> Wenn sich Ihre Organisation für die Migration von Postfächern zu Office 365 entschieden hat, aber dirSync oder Azure AD Connect beibehalten soll, um weiterhin Benutzerkonten aus dem lokalen Active Directory zu verwalten, müssen Sie mindestens einen lokalen Exchange-Server aufbewahren. Wenn der letzte Exchange-Server entfernt wurde, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Der Grund dafür ist, dass die Autoritäts Quelle in Ihrem lokalen Active Directory verbleibt und Änderungen vorgenommen werden müssen. In diesem Szenario haben Sie folgende Möglichkeiten:
+> Wenn sich Ihre Organisation für die Migration von Postfächern zu Office 365 entschieden hat, aber Dirsync oder Azure AD Connect beibehalten soll, um weiterhin Benutzerkonten aus dem lokalen Active Directory zu verwalten, müssen Sie mindestens einen lokalen Exchange-Server aufbewahren. Wenn der letzte Exchange-Server entfernt wurde, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Der Grund dafür ist, dass die Autoritäts Quelle in Ihrem lokalen Active Directory verbleibt und Änderungen vorgenommen werden müssen. In diesem Szenario haben Sie folgende Möglichkeiten:
 
 - (**Empfohlen**) Wenn Sie Ihre Postfächer zu Office 365 migrieren und Ihre Server bis zum 14. Januar 2020 aktualisieren können, verwenden Sie Exchange 2010 zum Herstellen einer Verbindung mit Office 365 und zum Migrieren von Postfächern. Migrieren Sie als nächstes Exchange 2010 zu Exchange 2016, und setzen Sie die restlichen Exchange 2010-Server außer Betrieb.
 - Wenn Sie die Postfachmigration und das lokale Server Upgrade bis zum 14. Januar 2020 nicht abschließen können, aktualisieren Sie zuerst Ihre lokalen Exchange 2010-Server auf Exchange 2016, und verwenden Sie dann Exchange 2016, um eine Verbindung mit Office 365 herzustellen und Postfächer zu migrieren.
@@ -58,7 +58,7 @@ In den folgenden Abschnitten werden die einzelnen Optionen detaillierter erläut
 
 Die Migration Ihrer e-Mails zu Office 365 ist die beste und einfachste Option, die Ihnen bei der Pensionierung Ihrer Exchange 2010-Bereitstellung hilft. Mit einer Migration zu Office 365 können Sie einen einzelnen Hop von der alten Technologie zu State-of-the-Art-Features wie:
 
-- Compliance-Funktionen wie AufbewahrungsRichtlinien, in-situ-und Gerichtsverfahren, in-situ-eDiscovery und vieles mehr;
+- Compliance-Funktionen wie Aufbewahrungsrichtlinien, in-situ-und Gerichtsverfahren, in-situ-eDiscovery und vieles mehr;
 - Microsoft Teams;
 - Power BI;
 - Fokussierter Posteingang;
@@ -82,7 +82,7 @@ Je nach Organisation haben Sie einige Optionen, die Ihnen bei der Verwaltung von
 | Minimale Hybrid Migration | Weniger als 150 Sitze  | Wenige Wochen oder weniger |
 | Vollständige Hybrid Migration    | Mehr als 150 Sitze   | Ein paar Wochen oder mehr |
 
-Die folgenden Abschnitte enthalten eine Übersicht über diese Methoden. AusChecken entscheiden Sie sich für [einen Migrationspfad](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) , um die Details der einzelnen Methoden zu erfahren.
+Die folgenden Abschnitte enthalten eine Übersicht über diese Methoden. Auschecken entscheiden Sie sich für [einen Migrationspfad](https://support.office.com/en-us/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) , um die Details der einzelnen Methoden zu erfahren.
 
 ### <a name="cutover-migration"></a>Übernahmemigration
 
@@ -144,7 +144,7 @@ Wenn Sie eine vollständige Hybrid Migration durchführen möchten, sollten Sie 
 - Benutzer müssen auf den meisten Geräten kein neues Outlook-Profil einrichten (einige ältere Android-Telefone benötigen möglicherweise ein neues Profil) und müssen Ihre e-Mails nicht erneut herunterladen.
 
 > [!IMPORTANT]
-> Wenn sich Ihre Organisation für die Migration von Postfächern zu Office 365 entschieden hat, aber dirSync oder Azure AD Connect beibehalten soll, um weiterhin Benutzerkonten aus dem lokalen Active Directory zu verwalten, müssen Sie mindestens einen lokalen Exchange-Server aufbewahren. Wenn der letzte Exchange-Server entfernt wurde, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Der Grund dafür ist, dass die Autoritäts Quelle in Ihrem lokalen Active Directory verbleibt und Änderungen vorgenommen werden müssen.
+> Wenn sich Ihre Organisation für die Migration von Postfächern zu Office 365 entschieden hat, aber Dirsync oder Azure AD Connect beibehalten soll, um weiterhin Benutzerkonten aus dem lokalen Active Directory zu verwalten, müssen Sie mindestens einen lokalen Exchange-Server aufbewahren. Wenn der letzte Exchange-Server entfernt wurde, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Der Grund dafür ist, dass die Autoritäts Quelle in Ihrem lokalen Active Directory verbleibt und Änderungen vorgenommen werden müssen.
 
 Wenn eine vollständige Hybrid Migration für Sie geeignet ist, sehen Sie sich die folgenden Ressourcen an, die Ihnen bei der Migration helfen:
 
@@ -189,7 +189,7 @@ Exchange 2016 enthält alle Features und Fortschritte, die in früheren Versione
 | Betriebssystemversion                 | Die mindestens unterstützten Betriebssystemversionen für jede Version sind:                                                                                                                                                                                |
 |                                          | **Exchange 2016** Windows Server 2012                                                                                                                                                                                                                |
 |                                          | **Exchange 2013** Windows Server 2008 R2 SP1                                                                                                                                                                                                         |
-|                                          | Weitere Informationen zur Betriebssystemunterstützung finden Sie unter [Exchange supportAble Matrix](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).                                                                        |
+|                                          | Weitere Informationen zur Betriebssystemunterstützung finden Sie unter [Exchange supportable Matrix](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).                                                                        |
 | Funktionsebene der Active Directory-Gesamtstruktur | Die mindestens unterstützten Active Directory-Gesamtstrukturfunktionsebenen für jede Version sind:                                                                                                                                                                |
 |                                          | **Exchange 2016** Windows Server 2008 R2 SP1                                                                                                                                                                                                         |
 |                                          | **Exchange 2013** Windows Server 2003                                                                                                                                                                                                                |
@@ -197,14 +197,14 @@ Exchange 2016 enthält alle Features und Fortschritte, die in früheren Versione
 | Office-Clientversionen                   | Die mindestens unterstützten Office-Clientversionen für jede Version sind:                                                                                                                                                                                   |
 |                                          | **Exchange 2016** Office 2010 (mit den neuesten Updates)                                                                                                                                                                                              |
 |                                          | **Exchange 2013** Office 2007 SP3                                                                                                                                                                                                                    |
-|                                          | Weitere Informationen zum Office-Client Support finden Sie unter [Exchange supportAble Matrix](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).                                                                           |
+|                                          | Weitere Informationen zum Office-Client Support finden Sie unter [Exchange supportable Matrix](https://technet.microsoft.com/en-us/library/ff728623%28v=exchg.150%29.aspx).                                                                           |
 
 Sie können die folgenden Ressourcen verwenden, um Sie bei der Migration zu unterstützen:
 
 - [Exchange-Bereitstellungs-Assistent](https://aka.ms/exdeploy)
 - Änderungen am Active Directory-Schema für Exchange [2016](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/EN-US/library/bb738144%28v=exchg.150%29.aspx)
 - System Anforderungen für Exchange [2016](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/aa996719%28v=exchg.150%29.aspx)
-- VoraussetZungen für Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx)
+- Voraussetzungen für Exchange [2016](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.160%29.aspx), [2013](https://technet.microsoft.com/en-us/library/bb691354%28v=exchg.150%29.aspx)
 
 ## <a name="what-if-i-need-help"></a>Was geschieht, wenn ich Hilfe benötige?
 

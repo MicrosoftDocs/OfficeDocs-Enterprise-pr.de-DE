@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
 ms.date: 7/13/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Express Route für Office 365 bietet einen alternativen Routingpfad, um viele Office 365-Dienste zu erreichen, ohne dass der gesamte Datenverkehr an das Internet weitergeleitet werden muss. Obwohl die Internetverbindung mit Office 365 weiterhin erforderlich ist, wird die direkte Express Route-Schaltung von den von Microsoft angekündigten Routen über BGP in Ihrem Netzwerk so konfiguriert, dass es keine anderen Konfigurationen in Ihrem Netzwerk gibt. Die drei allgemeinen Bereiche, die Sie für die Verwaltung dieses Routings konfigurieren möchten, sind Präfix Filterung, Sicherheit und Compliance.
-ms.openlocfilehash: 5345c4067f4ecf9b1b1bc1a0ad20d6e1f5273f65
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 08c991deaaf1b8fa1e17addbed8a23cbfcf37b87
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487731"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067131"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Verwalten von ExpressRoute für Office 365-Verbindungen
 
@@ -63,7 +63,7 @@ Microsoft empfiehlt, dass Sie Ihre eigenen Netzwerk-und Sicherheitsperimeter-Ste
   
 Wenn Computer eine Verbindung mit Office 365 herstellen, stellen Sie eine Verbindung mit denselben Endpunkten her, unabhängig davon, ob die Verbindung über eine Internet-oder Express Route-Schaltung hergestellt wird. Unabhängig von der verwendeten Schaltung empfiehlt Microsoft, dass Sie Office 365-Dienste als vertrauenswürdiger als generische Internet Destinationen behandeln. Ihre ausgehenden Sicherheitskontrollen sollten sich auf die Ports und Protokolle konzentrieren, um die Exposition zu verringern und die laufende Wartung zu minimieren. Die erforderlichen Portinformationen sind im Referenzartikel [Office 365](https://aka.ms/o365endpoints) -Endpunkte verfügbar.
   
-Für hinzugefügte Steuerelemente können Sie die Filterung auf FQDN-Ebene in ihrer Proxy Infrastruktur verwenden, um einige oder alle Netzwerkanforderungen für das Internet oder Office 365 zu beschränken oder zu überprüfen. Das Verwalten der Liste der FQDNs, während Features veröffentlicht werden und die Office 365-Angebote entwickeln, erfordert eine robustere Änderungsverwaltung und Nachverfolgung von Änderungen an den veröffentlichten [office 365](https://aka.ms/o365endpoints)-Endpunkten.
+Für hinzugefügte Steuerelemente können Sie die Filterung auf FQDN-Ebene in ihrer Proxy Infrastruktur verwenden, um einige oder alle Netzwerkanforderungen für das Internet oder Office 365 zu beschränken oder zu überprüfen. Das Verwalten der Liste der FQDNs, während Features veröffentlicht werden und die Office 365-Angebote entwickeln, erfordert eine robustere Änderungsverwaltung und Nachverfolgung von Änderungen an den veröffentlichten [Office 365](https://aka.ms/o365endpoints)-Endpunkten.
   
 > [!CAUTION]
 > Microsoft empfiehlt, dass Sie sich nicht ausschließlich auf IP-Präfixe verlassen, um die ausgehende Sicherheit in Office 365 zu verwalten.
@@ -106,7 +106,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/mana
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
   
-[URLs und IP-Adressbereiche von Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Verwalten von Office 365-Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

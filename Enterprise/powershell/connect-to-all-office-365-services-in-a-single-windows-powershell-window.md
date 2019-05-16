@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 02/28/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 'Zusammenfassung: Verbinden Sie Windows PowerShell mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster.'
-ms.openlocfilehash: 3f6153d5ea8b88d8c6853dbbe597f2cf7cc62fab
-ms.sourcegitcommit: 4ef8e113fa20b539de1087422455fc26ff123d55
+ms.openlocfilehash: ae9487f48439c6f8d98f927c610e5f2af4c1b361
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30573969"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069181"
 ---
 # <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster
 
@@ -34,7 +34,7 @@ Wenn Sie PowerShell zum Verwalten von Office 365 verwenden, können bis zu fünf
 Dies ist nicht optimal für die Verwaltung von Office 365, da Sie keine Daten zwischen diesen fünf Fenstern für die dienstübergreifende Verwaltung austauschen können. In diesem Thema wird beschrieben, wie Sie eine einzelne Instanz von Windows PowerShell verwenden, über die Sie Office 365, Skype for Business Online, Exchange Online, SharePoint Online und &amp; das Security Compliance Center verwalten können.
 
 >[!Note]
->Dieser Artikel enthält derzeit nur die Befehle zum Herstellen einer Verbindung mit der Office 365 Worldwide (+ GCC)-Cloud. Zusätzliche Hinweise enthalten Links zu Artikeln mit Informationen zum Herstellen einer Verbindung mit den anderen Office 365-Clouds.
+>Dieser Artikel enthält derzeit nur die Befehle zum Herstellen einer Verbindung mit der Office 365 Worldwide (+ gcc)-Cloud. Zusätzliche Hinweise enthalten Links zu Artikeln mit Informationen zum Herstellen einer Verbindung mit den anderen Office 365-Clouds.
 >
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
@@ -59,7 +59,7 @@ Bevor Sie den gesamten Office 365 von einer einzigen Instanz von Windows PowerSh
     
   - Windows Server 2008 R2 SP1*
     
-    \*Sie müssen Microsoft .NET Framework 4,5 installieren. *x* und dann entweder Windows management Framework 3,0 oder Windows management Framework 4,0. Weitere Informationen finden Sie unter [Installieren von .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) und [windows Management Framework 3,0](https://go.microsoft.com/fwlink/p/?LinkId=272757) oder [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
+    \*Sie müssen Microsoft .NET Framework 4,5 installieren. *x* und dann entweder Windows Management Framework 3,0 oder Windows Management Framework 4,0. Weitere Informationen finden Sie unter [Installieren von .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) und [Windows Management Framework 3,0](https://go.microsoft.com/fwlink/p/?LinkId=272757) oder [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
     Sie müssen eine 64-Bit-Version von Windows aufgrund der Anforderungen für das Skype for Business Online-Modul und eines der Office 365-Module verwenden.
     
@@ -99,7 +99,7 @@ Hier sind die Schritte zum Herstellen einer Verbindung mit allen Diensten in ein
   Connect-MsolService -Credential $credential
  ```
 
-4. Führen Sie diese Befehle aus, um eine Verbindung mit SharePoint Online herzustellen. Ersetzen _ \<Sie domainhost>_ durch den tatsächlichen Wert für Ihre Domäne. beispiel: bei "litwareinc.onmicrosoft.com" lautet der _ \<wert domainhost>_ "litwareinc".
+4. Führen Sie diese Befehle aus, um eine Verbindung mit SharePoint Online herzustellen. Ersetzen _ \<Sie domainhost>_ durch den tatsächlichen Wert für Ihre Domäne. Beispiel: bei "litwareinc.onmicrosoft.com" lautet der _ \<Wert domainhost>_ "litwareinc".
     
   ```
   Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
@@ -133,7 +133,7 @@ Hier sind die Schritte zum Herstellen einer Verbindung mit allen Diensten in ein
   ```
 
 >[!Note]
->Informationen zum Herstellen einer Verbindung &amp; mit dem Security Compliance Center für Office 365-Clouds außer weltweit finden Sie unter [connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+>Informationen zum Herstellen einer Verbindung &amp; mit dem Security Compliance Center für Office 365-Clouds außer weltweit finden Sie unter [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 >
 
 Im folgenden werden alle Befehle in einem einzelnen Block angezeigt, wenn das Azure Active Directory PowerShell für Graph-Modul verwendet wird. Geben Sie den Namen Ihres Domänenhosts an, und führen Sie alle Befehle gleichzeitig aus.

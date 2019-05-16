@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 04/12/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es an der Zeit, das Upgrade zu planen. Bleiben Sie nicht mit veralteten apps hängen. Verwenden Sie diese Ressourcen, um mit Ihrem Plan zu beginnen.
-ms.openlocfilehash: ee14250f6bb17a571ff2c2e7e4cbd68d91d13646
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3643463e950fdfdf4440a7060383b3e7f21a9037
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33492050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069331"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007-oder Office 2010-Servern und-Clients
 
@@ -60,7 +60,7 @@ Wenn Sie Hilfe bei der Planung des Upgrades wünschen, sollten Sie eine oder meh
 
 - Wenn Ihre Organisation eine bestimmte Anzahl von Microsoft-Cloud-Lizenzen kauft, kann Ihnen unser Team für die Zusammenarbeit bei der Installation helfen. Weitere Informationen finden Sie unter schneller **[für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)**.
 
-- Wenn Sie Teil einer kleineren Organisation sind, oder wenn Sie es vorziehen, das Office-Upgrade Ihrer Organisation selbst zu behandeln, finden Sie weitere Informationen unter **[Upgrade your office 365 for Business users to the latest Office Client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)**. 
+- Wenn Sie Teil einer kleineren Organisation sind, oder wenn Sie es vorziehen, das Office-Upgrade Ihrer Organisation selbst zu behandeln, finden Sie weitere Informationen unter **[Upgrade Your Office 365 for Business users to the latest Office Client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client)**. 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein Privatbenutzer. What do I do?
 
@@ -68,10 +68,10 @@ Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie die folgen
 
 - **Verwenden Sie Office Online kostenlos**. Erstellen, anzeigen und Bearbeiten von Office-Dateien in Ihrem Browser und haben Zugriff auf diese Dateien von fast jedem Gerät mit Internetzugriff. [Office Online](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) umfasst [Word Online](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel Online](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint Online](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote Online](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [Email](http://go.microsoft.com/fwlink/p/?linkid=746676), [Calendar](http://go.microsoft.com/fwlink/p/?linkid=746678)und [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Besuchen Sie [Office.com](https://office.com) , und melden Sie sich mit Ihrem [Microsoft-Konto](https://account.microsoft.com/account)an. (Wenn Sie nicht über ein Microsoft-Konto verfügen, können Sie eine unter [Office.com](https://office.com)erstellen.)
 
-- **Testen Sie Office 365 für die Verwendung zu Hause**. Überdenken Sie die [Anforderungen](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), und wählen Sie dann zwischen [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) oder [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Starten Sie eine Testversion, und sehen Sie, wie Office 365 für Sie funktioniert. Mit Office 365 genießen Sie cloudspeicher mit OneDrive, Sie erhalten monatlich 60 Minuten Skype-Anrufe an Mobil-und Festnetznummern, und Sie erhalten viele weitere großartige Funktionen. Weitere Informationen finden Sie unter [Get the most from Office with office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
+- **Testen Sie Office 365 für die Verwendung zu Hause**. Überdenken Sie die [Anforderungen](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), und wählen Sie dann zwischen [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) oder [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf). Starten Sie eine Testversion, und sehen Sie, wie Office 365 für Sie funktioniert. Mit Office 365 genießen Sie cloudspeicher mit OneDrive, Sie erhalten monatlich 60 Minuten Skype-Anrufe an Mobil-und Festnetznummern, und Sie erhalten viele weitere großartige Funktionen. Weitere Informationen finden Sie unter [Get the most from Office with Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
     
 - **Erwerben Sie Office &amp; Home Student**. Wenn Sie diese Option auswählen, stellen Sie einen einmaligen Kauf und installieren dann Office auf Ihrem Windows-PC oder-Mac. Dies ist kein Abonnement; Es handelt sich um eine einmalige, dauerhafte Nutzungslizenz für einen Computer. Zeigen Sie die [Anforderungen](http://office.com/systemrequirements)an, und wählen Sie dann die gewünschte Version aus.
-    - Wenn auf Ihrem Windows-PC Windows 10 läuft, erwägen Sie, [Office Home _AMP_ Student 2019 zu](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)erhalten.
+    - Wenn auf Ihrem Windows-PC Windows 10 läuft, erwägen Sie, [Office Home & Student 2019 zu](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)erhalten.
     - Wenn Ihr Windows-PC Windows 7, 8 oder 8,1 ausführt und Sie derzeit kein Upgrade auf Windows 10 ausführen, erwägen Sie, Office Home & Student 2016 (oder eine andere Edition von Microsoft Office) von einem autorisierten Händler zu erhalten.
 
 Sie können auch nicht zu diesem Zeitpunkt aktualisieren. Ihre Office-Apps werden weiterhin ausgeführt. (Zeitpläne für Office-Support Termine finden Sie [hier](https://go.microsoft.com/fwlink/p/?linkid=2085724).) Durch das Upgrade erhalten Sie jedoch Zugriff auf neue und verbesserte Features, einschließlich Sicherheitsupdates. 
@@ -80,7 +80,7 @@ Sie können auch nicht zu diesem Zeitpunkt aktualisieren. Ihre Office-Apps werde
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) ist die Kombination aus Office 365, Windows 10 und Enterprise Mobility + Security (EMS), die eine vollständige, intelligente Lösung bereitstellt, mit der alle Benutzer kreativ und sicher zusammenarbeiten können. 
   
-Obwohl Sie Ihre Office 2007-oder Office 2010-Server und-Clients zu Office 365 migrieren können, enthält Microsoft 365 die Lizenzen und Funktionen, um sicherzustellen, dass Ihre Organisation am neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte, einschließlich Windows, iOS und Android sind registriert und werden mit Richtlinien gesichert, die Authentifizierung und Datenschutz erfordern. Außerdem werden Windows 10 und Ihre Office 365-Client Software fortlaufend aktualisiert, um die neuesten Features und Sicherheitsupdates aufzunehmen.
+Obwohl Sie Ihre Office 2007-oder Office 2010-Server und-Clients zu Office 365 migrieren können, enthält Microsoft 365 die Lizenzen und Funktionen, um sicherzustellen, dass Ihre Organisation am neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte, einschließlich Windows, IOS und Android sind registriert und werden mit Richtlinien gesichert, die Authentifizierung und Datenschutz erfordern. Außerdem werden Windows 10 und Ihre Office 365-Client Software fortlaufend aktualisiert, um die neuesten Features und Sicherheitsupdates aufzunehmen.
   
 Microsoft 365 ist die Möglichkeit, Ihr Unternehmen Digital zu vermehren, indem Sie Geräte und Produktivitäts Erlebnisse ständig verbessern, die von der Microsoft-Cloud aktiviert und gesichert werden.
   

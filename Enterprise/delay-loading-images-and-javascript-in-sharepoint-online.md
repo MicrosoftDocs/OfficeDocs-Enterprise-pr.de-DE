@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/29/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online-Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern, und außerdem darauf warten, nicht erforderliches JavaScript zu laden, bis die Seite geladen wurde.
-ms.openlocfilehash: b8b052d85c99e51dff4b0fc747b3b52c17de8d8b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 6b2e91ca4b8642ac7129e353f2527db60a32d75b
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490291"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067981"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
@@ -81,7 +81,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Für SharePoint Online müssen Sie die folgende Funktion an das Scroll-Ereignis im #s4-Workspace \<div\> -Tag anfügen. Der Grund dafür ist, dass die Window-Ereignisse überschrieben werden, um sicherzustellen, dass das Menüband am oberen Rand der Seite befestigt bleibt.
+Für SharePoint Online müssen Sie die folgende Funktion an das Scroll-Ereignis im #S4-Workspace \<div\> -Tag anfügen. Der Grund dafür ist, dass die Window-Ereignisse überschrieben werden, um sicherzustellen, dass das Menüband am oberen Rand der Seite befestigt bleibt.
   
 ```
 //Keep the ribbon at the top of the page
@@ -108,7 +108,7 @@ Im folgenden Screenshot werden die restlichen Bilder angezeigt, die nach dem Scr
   
 ![Screenshot mit mehreren auf der Seite geladenen Bildern](media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-Das verZögern des Ladens von Bildern mithilfe von JavaScript kann eine effektive Methode zur Steigerung der Leistung sein. Wenn die Technik jedoch auf einer öffentlichen Website angewendet wird, können Suchmaschinen die Bilder nicht auf die gleiche Weise Crawlen wie ein regelmäßig geformtes Bild. Dies kann sich auf Rankings in Suchmaschinen auswirken, da Metadaten im Bild selbst nicht wirklich vorhanden sind, bis die Seite geladen wird. Suchmaschinen-Crawler lesen nur den HTML-Code und sehen daher die Bilder nicht als Inhalt auf der Seite. Bilder sind einer der Faktoren, mit denen Seiten in Suchergebnissen bewertet werden. Eine Möglichkeit, um dies zu umgehen, ist die Verwendung von einführenden Text für Ihre Bilder.
+Das Verzögern des Ladens von Bildern mithilfe von JavaScript kann eine effektive Methode zur Steigerung der Leistung sein. Wenn die Technik jedoch auf einer öffentlichen Website angewendet wird, können Suchmaschinen die Bilder nicht auf die gleiche Weise Crawlen wie ein regelmäßig geformtes Bild. Dies kann sich auf Rankings in Suchmaschinen auswirken, da Metadaten im Bild selbst nicht wirklich vorhanden sind, bis die Seite geladen wird. Suchmaschinen-Crawler lesen nur den HTML-Code und sehen daher die Bilder nicht als Inhalt auf der Seite. Bilder sind einer der Faktoren, mit denen Seiten in Suchergebnissen bewertet werden. Eine Möglichkeit, um dies zu umgehen, ist die Verwendung von einführenden Text für Ihre Bilder.
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub-Codebeispiel: Einfügen von JavaScript zur Verbesserung der Leistung
 
@@ -116,7 +116,7 @@ Verpassen Sie nicht den Artikel und das Codebeispiel zur [JavaScript-Injektion](
   
 ## <a name="see-also"></a>Siehe auch
 
-[Unterstützte Browser in Office 2013 und Office 365 proPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Unterstützte Browser in Office 2013 und Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

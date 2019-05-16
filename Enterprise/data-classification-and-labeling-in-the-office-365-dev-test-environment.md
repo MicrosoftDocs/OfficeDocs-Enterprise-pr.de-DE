@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Zusammenfassung: Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.'
-ms.openlocfilehash: 66bdbb74ae88e10d5aa4fce2173f9a2b88a15e9b
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067933"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen
 
@@ -126,7 +126,7 @@ Als Nächstes veranschaulichen Sie die Klassifizierung von Dokumenten.
     
 9. Klicken Sie in der Taskleiste auf **Datei-Explorer**, und öffnen Sie dann den **Dokumente**-Ordner.
     
-    Beachten Sie die verschiedenen Dateigrößen der Dokumente **VorAIP** und **NachAIP**. Das Nachaip-Dokument ist größer, da es über die Klassifizierungsinformationen verfügt.
+    Beachten Sie die verschiedenen Dateigrößen der Dokumente **VorAIP** und **NachAIP**. Das nachaip-Dokument ist größer, da es über die Klassifizierungsinformationen verfügt.
     
 Im nächsten Schritt erlauben Sie jedem, auf die Websitesammlung „Support“ zuzugreifen.
   

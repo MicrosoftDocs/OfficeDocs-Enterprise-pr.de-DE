@@ -1,10 +1,10 @@
 ---
-title: Netzwerk-Anforderungen in Office für Mac
+title: Netzwerkanforderungen in Office für Mac
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/9/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,238 +12,238 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office für Mac Applikationen bieten eine systemeigene app-Benutzeroberfläche auf der Mac OS-Plattform. Jede app ist darauf ausgelegt, funktioniert in einer Vielzahl von Szenarien, einschließlich Zustände, wenn kein Netzwerkzugriff verfügbar ist. Bei ein Computer mit einem Netzwerk verbunden ist, werden die Anwendungen automatisch zu einer Reihe von webbasierten Diensten eine erweiterte Funktionalität verbunden. In diesem Whitepaper wird beschrieben, welche Endpunkte und URLs, die Anwendungen versuchen, zu erreichen, und die bereitgestellten Dienste. Diese Informationen ist nützlich, wenn die Problembehandlung von Netzwerk-Konfigurationsprobleme und Festlegen einer Richtlinie für die Netzwerk-Proxy-Server. Der Konfigurationsdetails in diesem Artikel sind für die direkte Verwendung der Office 365-URL und die Adressbereiche Artikel zu unterstützen.
-ms.openlocfilehash: 929b93433f5d990952b540a1b28fe2ac74edfb5d
-ms.sourcegitcommit: ba91a1d2d785c1df425617b309fec2edc093793a
+description: Office für Mac-Anwendungen bieten eine native App-Erfahrung auf der macOS-Plattform. Jede APP ist für eine Vielzahl von Szenarien vorgesehen, einschließlich Status, wenn kein Netzwerkzugriff verfügbar ist. Wenn ein Computer mit einem Netzwerk verbunden ist, stellen die Anwendungen automatisch eine Verbindung zu einer Reihe von webbasierten Diensten her, um die Funktionalität zu erweitern. In diesem Whitepaper werden die Endpunkte und URLs beschrieben, die von den Anwendungen zu erreichen sind, und die bereitgestellten Dienste. Diese Informationen sind nützlich, wenn Sie Netzwerkkonfigurationsprobleme beheben und eine Richtlinie für Netzwerkproxy Server festlegen. Die Details in diesem Artikel sollen den Artikel Office 365 URL and address Ranges beglückwünschen.
+ms.openlocfilehash: 0493fcc0954456ed190791b089fe4e0a568e82d7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26219895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34069655"
 ---
-# <a name="network-requests-in-office-for-mac"></a>Netzwerk-Anforderungen in Office für Mac
+# <a name="network-requests-in-office-for-mac"></a>Netzwerkanforderungen in Office für Mac
 
-Office für Mac Applikationen bieten eine systemeigene app-Benutzeroberfläche auf der Mac OS-Plattform. Jede app ist darauf ausgelegt, funktioniert in einer Vielzahl von Szenarien, einschließlich Zustände, wenn kein Netzwerkzugriff verfügbar ist. Bei ein Computer mit einem Netzwerk verbunden ist, werden die Anwendungen automatisch zu einer Reihe von webbasierten Diensten eine erweiterte Funktionalität verbunden. Die folgende Informationen beschrieben, die bereitgestellten Dienste, welche Endpunkte und URLs, die Anwendungen versuchen, zu erreichen. Diese Informationen sind hilfreich, wenn Behandlung von Netzwerkproblemen Konfiguration und Festlegen von Richtlinien für die Netzwerk-Proxy-Server. Der Konfigurationsdetails in diesem Artikel sind für die direkte Verwendung im [Artikel zu Office 365-URL und Adresse Bereiche](urls-and-ip-address-ranges.md)ergänzen die Endpunkte für Computer mit Microsoft Windows enthält. Sofern nicht angegeben, beziehen sich die Informationen in diesem Artikel auch 2019 von Office für Mac und Office 2016 für Mac, die als Kauf anbieten im Einzelhandel oder über einen Volumenlizenzvertrag verfügbar sind. 
+Office für Mac-Anwendungen bieten eine native App-Erfahrung auf der macOS-Plattform. Jede APP ist für eine Vielzahl von Szenarien vorgesehen, einschließlich Status, wenn kein Netzwerkzugriff verfügbar ist. Wenn ein Computer mit einem Netzwerk verbunden ist, stellen die Anwendungen automatisch eine Verbindung zu einer Reihe von webbasierten Diensten her, um die Funktionalität zu erweitern. In den folgenden Informationen wird beschrieben, welche Endpunkte und URLs von den Anwendungen zu erreichen sind und welche Dienste bereitgestellt werden. Diese Informationen sind nützlich, wenn Sie Netzwerkkonfigurationsprobleme beheben und Richtlinien für Netzwerkproxy Server festlegen. Die Details in diesem Artikel sollen den [Artikel Office 365 URL and address Ranges](urls-and-ip-address-ranges.md)ergänzen, der Endpunkte für Computer mit Microsoft Windows enthält. Soweit nicht angegeben, gelten die Informationen in diesem Artikel auch für Office 2019 für Mac und Office 2016 für Mac, die als einmaliger Erwerb aus einem Einzelhandelsgeschäft oder über einen Volumenlizenzvertrag zur Verfügung stehen. 
 
   
-Die meisten der in diesem Artikel wird die Tabellen mit ausführlichen Informationen zu Netzwerk-URLs, Typ und Beschreibung des Dienstes oder Features, die von diesem Endpunkt bereitgestellt. Jedes von Office-apps kann im Dienst und Endpunkt Verwendungsmöglichkeit abweichen. In den folgenden Tabellen sind die folgenden apps definiert:
+Der größte Teil dieses Artikels besteht aus Tabellen, in denen die Netzwerk-URLs, der Typ und die Beschreibung des von diesem Endpunkt bereitgestellten Diensts oder Features beschrieben werden. Jede Office-App kann sich in ihrer Dienst-und Endpunkt Nutzung unterscheiden. Die folgenden apps sind in den nachfolgenden Tabellen definiert:
   
 - W: Word
 - P: PowerPoint
 - X: Excel
-- O: outlook
+- O: Outlook
 - N: OneNote
    
 Der URL-Typ ist wie folgt definiert:
   
-- ST: Static - ist die URL in der Clientanwendung codiert.
+- St: statisch-die URL ist in der Clientanwendung hart codiert.
     
-- SS: Semikolons statisch – der URL wird als Teil einer Webseite oder Redirector codiert.
+- SS: Semi-static-die URL wird als Teil einer Webseite oder eines Redirector codiert.
     
-- CS: Config Service - wird die URL als Teil der Office-Konfigurationsdienst zurückgegeben.
+- CS: config Service – die URL wird als Teil des Office-Konfigurations Diensts zurückgegeben.
 
     
-## <a name="office-for-mac-default-configuration"></a>Office für Mac Standardkonfiguration
+## <a name="office-for-mac-default-configuration"></a>Office für Mac-Standardkonfiguration
 
- **Installation und updates**
+ **Installation und Updates**
   
-Die folgenden Netzwerkendpunkte werden verwendet, um die Office für Mac-Installationsprogramm von Microsoft Content Delivery Network (CDN) herunterladen.
+Die folgenden Netzwerkendpunkte werden zum Herunterladen des Office für Mac-Installationsprogramms aus dem Microsoft Content Delivery Network (CDN) verwendet.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |ST  <br/> |Office 365-Portal Installation Forwardlink Dienst auf dem neuesten Installationspakete.  <br/> |
-|```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Speicherort der Installationspakete auf dem Content Delivery Network.  <br/> |
-|```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |Speicherort der Installationspakete auf dem Content Delivery Network.  <br/> |
-|```https://officeci-mauservice.azurewebsites.net/```  <br/> |ST  <br/> |Management Steuerelement Endpunkt für Microsoft AutoUpdate  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |St  <br/> |Office 365-Installations Portal-Weiterleitungs-Link-Dienst zu den neuesten Installationspaketen.  <br/> |
+|```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Speicherort der Installationspakete im Content-Zustellungs Netzwerk.  <br/> |
+|```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |Speicherort der Installationspakete im Content-Zustellungs Netzwerk.  <br/> |
+|```https://officeci-mauservice.azurewebsites.net/```  <br/> |St  <br/> |Verwaltungs Steuerungs Endpunkt für Microsoft AutoUpdate  <br/> |
    
- **Erste app-Start**
+ **Erster App-Start**
   
-Beim ersten Starten von Office-app werden die folgenden Netzwerkendpunkte kontaktiert. Diese Endpunkte erweiterten Office-Funktionalität für die Benutzer bereitstellen, und die URLs werden unabhängig davon Lizenztyp (einschließlich Volume License Installationen) kontaktiert.
+Die folgenden Netzwerkendpunkte werden beim ersten Start einer Office-App kontaktiert. Diese Endpunkte bieten erweiterte Office-Funktionen für Benutzer, und die URLs werden unabhängig vom Lizenztyp (einschließlich Volumenlizenz Installationen) kontaktiert.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting'-Konfiguration - ermöglicht Feature-hell nach oben und experimentieren.  <br/> |
-|```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting' Testen des Netzwerks Konfiguration  <br/> |
-|```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |ST  <br/> |'Flighting' Testen des Netzwerks Konfiguration  <br/> |
-|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office-Konfigurationsdienst - Liste der Endpunkte, die Master.  <br/> |
-|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office – Download der Regeln Telemetrie - informiert den Client über welche Daten und Ereignisse in den Telemetrie-Dienst hoch.  <br/> |
-|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |CS  <br/> |Telemetrie OneNote-Dienst  <br/> |
-|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office-Telemetrie Reporting - "Heartbeart" Hochladen und auf dem Client aufgetretene Fehlerereignisse werden mit dem Dienst Telemetrie hochgeladen.  <br/> |
-|```https://templateservice.office.com/```  <br/> |WINDOWS XP  <br/> |CS  <br/> |Office Online-Vorlage-Dienst – ermöglicht es Benutzern online Dokumentvorlagen.  <br/> |
-|```https://omextemplates.content.office.net/```  <br/> |WINDOWS XP  <br/> |CS  <br/> |Vorlagen in Office-Downloads – Speicherung von PNG-Bilder im Vorlage.  <br/> |
-|```https://store.office.com/```  <br/> |WINDOWS XP  <br/> |CS  <br/> |Konfiguration für Office-apps zu speichern.  <br/> |
-|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Office-Dokument Integration Services-Katalog (Liste der Dienste und Endpunkte) und Home Realm Discovery.  <br/> |
-|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |Ressourcen für Home Realm Discovery v2 (15.40 und höher)  <br/> |
-|```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft AutoUpdate Manifeste - Überprüfungen, um zu überprüfen, ob Updates verfügbar sind  <br/> |
-|```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SS  <br/> |Microsoft Ajax-JavaScript-Bibliothek  <br/> |
-|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-app für Office-Konfiguration und Ressourcen.  <br/> |
-|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Bing Map-app für Office-Konfiguration und Ressourcen.  <br/> |
-|```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Personen-Diagramm-app für Office-Konfiguration und Ressourcen.  <br/> |
-|```https://www.onenote.com/```  <br/> |N  <br/> |ST  <br/> |Was ist die neue Inhalte für OneNote.  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |ST  <br/> |Neue Inhalte für OneNote.  <br/> |
-|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |SS  <br/> |Was ist die neue Bilder für OneNote.  <br/> |
-|```https://acompli.helpshift.com/```  <br/> |O  <br/> |ST  <br/> |Dienst-app-Unterstützung.  <br/> |
-|```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |ST  <br/> |E-Mail-Konto Erkennungsdienst.  <br/> |
-|```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |ST  <br/> |Outlook-AutoErmittlung  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |ST  <br/> |Outlook-Endpunkts für Office 365-Dienst.  <br/> |
-|```https://r1.res.office365.com/```  <br/> |O  <br/> |ST  <br/> |Symbole für Outlook-add-ins.  <br/> |
+|```https://config.edge.skype.com/```  <br/> |WXPON  <br/> |St  <br/> |"Flighting"-Konfiguration – ermöglicht die Anzeige von Funktionen und experimentieren.  <br/> |
+|```https://ocos-office365-s2s.msedge.net/```  <br/> |WXPON  <br/> |St  <br/> |"Flighting"-Netzwerk Konfigurations Test  <br/> |
+|```https://client-office365-tas.msedge.net/```  <br/> |WXPON  <br/> |St  <br/> |"Flighting"-Netzwerk Konfigurations Test  <br/> |
+|```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |St  <br/> |Office-Konfigurationsdienst – Master Liste der Dienstendpunkte.  <br/> |
+|```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |St  <br/> |Office Rules Telemetry Download-informiert den Client darüber, welche Daten und Ereignisse an den Telemetrie-Dienst hochgeladen werden sollen.  <br/> |
+|```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |CS  <br/> |OneNote-Telemetrie-Dienst  <br/> |
+|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |St  <br/> |Office Telemetry Upload Reporting – "Heartbeart" und Fehlerereignisse, die auf dem Client auftreten, werden in den Telemetrie-Dienst hochgeladen.  <br/> |
+|```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Office Online-Vorlagen Dienst – stellt Benutzern Online-Dokumentvorlagen zur Verfügung.  <br/> |
+|```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |CS  <br/> |Office-Vorlagen-Downloads-Speichern von PNG-Vorlagen Bildern.  <br/> |
+|```https://store.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Speichern Sie die Konfiguration für Office-Apps.  <br/> |
+|```https://odc.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Office Document Integration Services-Katalog (Liste der Dienste und Endpunkte) und Home Realm Discovery.  <br/> |
+|```https://cdn.odc.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |Ressourcen für die Home-Realm-Discovery v2 (15,40 und höher)  <br/> |
+|```https://officecdn.microsoft.com/```  <br/> |WXPON  <br/> |St  <br/> |Microsoft AutoUpdate-Manifeste-überprüft, ob Updates verfügbar sind  <br/> |
+|```https://ajax.aspnetcdn.com/```  <br/> |WXPO  <br/> |SS  <br/> |Microsoft AJAX JavaScript-Bibliothek  <br/> |
+|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-APP für Office-Konfiguration und-Ressourcen.  <br/> |
+|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Bing Map-App für Office-Konfiguration und-Ressourcen.  <br/> |
+|```https://peoplegraph.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |People Graph-App für Office-Konfiguration und-Ressourcen.  <br/> |
+|```https://www.onenote.com/```  <br/> |N  <br/> |St  <br/> |Neuer Inhalt für OneNote.  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |St  <br/> |Neue Inhalte für OneNote.  <br/> |
+|```https://site-cdn.onenote.net/```  <br/> |N  <br/> |SS  <br/> |Neuigkeiten für OneNote.  <br/> |
+|```https://acompli.helpshift.com/```  <br/> |O  <br/> |St  <br/> |In-App-Support Dienst.  <br/> |
+|```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |St  <br/> |E-Mail-Konto Erkennungsdienst.  <br/> |
+|```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |St  <br/> |Outlook-AutoErmittlung  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |St  <br/> |Outlook-Endpunkt für Office 365-Dienst.  <br/> |
+|```https://r1.res.office365.com/```  <br/> |O  <br/> |St  <br/> |Symbole für Outlook-Add-Ins.  <br/> |
    
 > [!NOTE]
-> Office-Konfigurationsdienst fungiert als ein Auto-Discovery-Dienst für alle Microsoft Office-Clients und nicht nur für Mac Die Endpunkte in der Antwort zurückgegeben werden halb statische, Änderung sehr selten, aber dennoch möglich sind. 
+> Der Office-Konfigurationsdienst fungiert als automatischer Ermittlungsdienst für alle Microsoft Office-Clients, nicht nur für Mac. Die in der Antwort zurückgegebenen Endpunkte sind Semi-statisch in dieser Änderung ist sehr selten, aber immer noch möglich. 
   
  **Anmeldung**
   
-Bei der Anmeldung in einen cloudbasierten Speicher, werden die folgenden Netzwerkendpunkte kontaktiert. Abhängig vom Kontotyp können verschiedene Dienste kontaktiert werden. Zum Beispiel:
+Die folgenden Netzwerkendpunkte werden beim Anmelden bei Cloud-basierter Speicherung kontaktiert. Je nach Kontotyp werden möglicherweise verschiedene Dienste kontaktiert. Zum Beispiel:
   
-- **MSA: Microsoft Account** – in der Regel wird für Verbraucher und Verkaufsversion Szenarien verwendet 
+- **MSA: Microsoft-Konto** -normalerweise verwendet für Consumer-und Einzelhandels Szenarien 
     
-- **Organisations-ID: Organisation Konto** – in der Regel wird für kommerzielle Szenarien verwendet 
+- **OrgId: organisationskonto** -normalerweise für kommerzielle Szenarien 
     
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://login.windows.net/```  <br/> |WXPON  <br/> |ST  <br/> |Windows-Autorisierungsdienst  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office 365-Anmeldung-Dienst (OrgID)  <br/> |
-|```https://login.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Microsoft-Konto Anmeldedienst (MSA)  <br/> |
-|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |Microsoft-Konto anmelden-Dienst-Hilfsprogramm (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365-Anmeldung Branding (OrgID)  <br/> |
-|```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Dokument- und Orte Speicher Locator  <br/> |
-|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Die meisten zuletzt Verwendeter Dokument service  <br/> |
+|```https://login.windows.net/```  <br/> |WXPON  <br/> |St  <br/> |Windows-Autorisierungsdienst  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |St  <br/> |Office 365-Anmeldedienst (OrgId)  <br/> |
+|```https://login.live.com/```  <br/> |WXPON  <br/> |St  <br/> |Microsoft-Konto-Anmeldedienst (MSA)  <br/> |
+|```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |Microsoft-Konto-Anmeldedienst-Helfer (MSA)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365-Anmelde Branding (OrgId)  <br/> |
+|```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Speicher Locator für Dokumente und Orte  <br/> |
+|```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Zuletzt verwendeter Dokumentdienst (MRU)  <br/> |
    
 > [!NOTE]
-> Abonnementbasierte und Retail Lizenzen für beide Anmelden aktiviert das Produkt aus, und ermöglicht den Zugriff auf Cloudressourcen wie OneDrive. Für Volume License Installationen, Benutzer werden immer noch aufgefordert, anmelden (standardmäßig), aber das ist nur erforderlich für den Zugriff auf Cloudressourcen, wie das Produkt bereits aktiviert ist. 
+> Bei Abonnement basierten und Retail-Lizenzen aktiviert das Anmelden das Produkt und ermöglicht den Zugriff auf Cloud-Ressourcen wie OneDrive. Bei Volumenlizenz Installationen werden Benutzer weiterhin aufgefordert, sich anzumelden (standardmäßig), jedoch nur für den Zugriff auf Cloud-Ressourcen erforderlich, da das Produkt bereits aktiviert ist. 
   
- **Aktivierung von Produkten**
+ **Produktaktivierung**
   
-Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhandelslizenz Aktivierungen. Insbesondere gilt dies nicht für Volume License Installationen.
+Die folgenden Netzwerkendpunkte gelten für Office 365-Abonnement-und Einzelhandelslizenz Aktivierungen. Dies gilt insbesondere nicht für Volumenlizenz Installationen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |```https://ols.officeapps.live.com/```  <br/> |WXPON  <br/> |CS  <br/> |Office-Lizenzierungsdienst  <br/> |
    
- **Was ist die neue Inhalte**
+ **Neuer Inhalt**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnements.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Was ist die neue JSON Seiteninhalt.  <br/> |
+|```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Was ist der neue JSON-Seiteninhalt?  <br/> |
    
  **Recherche**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnements.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Interviewer-Webdienst  <br/> |
-|```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Interviewer statischer Inhalt  <br/> |
-|```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Interviewer Content-Anbieter  <br/> |
+|```https://entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Researcher-Webdienst  <br/> |
+|```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Statischer Inhalt des researchers  <br/> |
+|```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Researcher-Inhaltsanbieter  <br/> |
    
- **Intelligente Suche**
+ **Intelligentes Nachschlagen**
   
-Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Office 365-Abonnement-als auch für Retail/Volume-Lizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |```https://uci.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Insights-Webdienst  <br/> |
 |```https://ajax.googleapis.com/```  <br/> |WXPN  <br/> |CS  <br/> |JQuery-Bibliothek  <br/> |
-|```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |Unterstützung der JavaScript-Bibliothek  <br/> |
-|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Einblicke in die Content-Anbieter  <br/> |
-|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Einblicke in die Content-Anbieter  <br/> |
+|```https://cdnjs.cloudflare.com/```  <br/> |WXPN  <br/> |CS  <br/> |Unterstützende JavaScript-Bibliothek  <br/> |
+|```https://www.bing.com/```  <br/> |WXPN  <br/> |CS  <br/> |Einblicke-Inhaltsanbieter  <br/> |
+|```https://tse1.mm.bing.net/```  <br/> |WXPN  <br/> |CS  <br/> |Einblicke-Inhaltsanbieter  <br/> |
    
- **PowerPoint Designer**
+ **PowerPoint-Designer**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnements.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint-Designer-Webdienst  <br/> |
    
- **PowerPoint-Schnellstartanleitung**
+ **PowerPoint-Schnellstarter**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnements.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint QuickStarter-Webdienst  <br/> |
+|```https://pptcts.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint Quick Starter-Webdienst  <br/> |
    
- **Senden einer Smiley/Stirnrunzeln**
+ **Senden Sie ein Lächeln/Stirnrunzeln**
   
-Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Office 365-Abonnement-als auch für Retail/Volume-Lizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Senden Sie eine Smiley Service  <br/> |
+|```https://sas.office.microsoft.com/```  <br/> |WXPON  <br/> |CS  <br/> |Senden eines smile-Diensts  <br/> |
    
- **Kontaktieren des Supports**
+ **Support kontaktieren**
   
-Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Office 365-Abonnement-als auch für Retail/Volume-Lizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |CS  <br/> |Wenden Sie sich an Support-Service  <br/> |
-|```https://acompli.helpshift.com/```  <br/> |O  <br/> |CS  <br/> |Dienst-app-Unterstützung  <br/> |
+|```https://powerlift-frontdesk.acompli.net/```  <br/> |O  <br/> |CS  <br/> |Kontakt Support-Dienst  <br/> |
+|```https://acompli.helpshift.com/```  <br/> |O  <br/> |CS  <br/> |In-App-Support Dienst  <br/> |
    
- **Speichern als PDF-Datei**
+ **Als PDF speichern**
   
-Die folgenden Netzwerkendpunkte anwenden auf Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Office 365-Abonnement-als auch für Retail/Volume-Lizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |CS  <br/> |Word-Dokument-Konvertierungsdienst (PDF)  <br/> |
+|```https://wordcs.officeapps.live.com/```  <br/> |W  <br/> |CS  <br/> |Word-Dokumentkonvertierungsdienst (PDF)  <br/> |
    
- **Office-Apps (auch bekannt als-add-ins)**
+ **Office-Apps (aka-Add-Ins)**
   
-Die folgenden Netzwerkendpunkte gelten für Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen, wenn Office-App-add-ins vertrauenswürdig sind.
+Die folgenden Netzwerkendpunkte gelten sowohl für Office 365-Abonnement-als auch für Retail/Volume-Lizenz Aktivierungen, wenn Office-App-Add-ins vertrauenswürdig sind.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|```https://store.office.com/```  <br/> |WXPO  <br/> |CS  <br/> |Office-app Store-Konfiguration  <br/> |
-|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-app-Ressourcen  <br/> |
-|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Bing Map-app-Ressourcen  <br/> |
-|```https://peoplegraph.firstpartyapps.oaspapps.com```  <br/> |X  <br/> |SS  <br/> |Personen-Diagramm-app-Ressourcen  <br/> |
-|```https://o15.officeredir.microsoft.com/```  <br/> |WPX  <br/> |SS  <br/> |Office-Umleitung-Dienst  <br/> |
-|```https://appsforoffice.microsoft.com/```  <br/> |WINDOWS XP  <br/> |SS  <br/> |Office JavaScript-Bibliotheken  <br/> |
-|```https://telemetry.firstpartyapps.oaspapps.com/```  <br/> |WX  <br/> |SS  <br/> |Telemetrie und Reporting Services für Office-apps  <br/> |
-|```https://ajax.microsoft.com/```  <br/> |W  <br/> |SS  <br/> |Microsoft Ajax-JavaScript-Bibliothek  <br/> |
-|```https://ajax.aspnetcdn.com/```  <br/> |X  <br/> |SS  <br/> |Microsoft Ajax-JavaScript-Bibliothek  <br/> |
-|```https://c.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Office JavaScript-Bibliotheken  <br/> |
-|```https://c1.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Supportressourcen  <br/> |
-|```https://cs.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Supportressourcen  <br/> |
-|```https://c.bing.com/```  <br/> |WPXO  <br/> |SS  <br/> |Supportressourcen  <br/> |
+|```https://store.office.com/```  <br/> |WXPO  <br/> |CS  <br/> |Konfiguration des Office-APP-Speichers  <br/> |
+|```https://wikipedia.firstpartyapps.oaspapps.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-APP-Ressourcen  <br/> |
+|```https://excelbingmap.firstpartyapps.oaspapps.com/```  <br/> |X  <br/> |SS  <br/> |Bing Map App-Ressourcen  <br/> |
+|```https://peoplegraph.firstpartyapps.oaspapps.com```  <br/> |X  <br/> |SS  <br/> |Personen Graph-App-Ressourcen  <br/> |
+|```https://o15.officeredir.microsoft.com/```  <br/> |WPX  <br/> |SS  <br/> |Office-Umleitungsdienst  <br/> |
+|```https://appsforoffice.microsoft.com/```  <br/> |WXP  <br/> |SS  <br/> |Office-JavaScript-Bibliotheken  <br/> |
+|```https://telemetry.firstpartyapps.oaspapps.com/```  <br/> |WX  <br/> |SS  <br/> |Telemetrie und Reporting Service für Office-Apps  <br/> |
+|```https://ajax.microsoft.com/```  <br/> |W  <br/> |SS  <br/> |Microsoft AJAX JavaScript-Bibliothek  <br/> |
+|```https://ajax.aspnetcdn.com/```  <br/> |X  <br/> |SS  <br/> |Microsoft AJAX JavaScript-Bibliothek  <br/> |
+|```https://c.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Office-JavaScript-Bibliotheken  <br/> |
+|```https://c1.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Support Ressourcen  <br/> |
+|```https://cs.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Support Ressourcen  <br/> |
+|```https://c.bing.com/```  <br/> |WPXO  <br/> |SS  <br/> |Support Ressourcen  <br/> |
 |```https://*.cdn.optimizely.com/```  <br/> |WPXO  <br/> |SS  <br/> |JavaScript-Bibliothek  <br/> |
 |```https://errors.client.optimizely.com/```  <br/> |WPX  <br/> |SS  <br/> |Fehlerberichterstattung  <br/> |
-|```https://*-contentstorage.osi.office.net/```  <br/> |WPXO  <br/> |SS  <br/> |Schriftartressourcen  <br/> |
+|```https://*-contentstorage.osi.office.net/```  <br/> |WPXO  <br/> |SS  <br/> |Schriftarten Ressourcen  <br/> |
 |```https://nexus.ensighten.com/```  <br/> |WPXO  <br/> |SS  <br/> |Telemetrie-Dienst  <br/> |
-|```https://browser.pipe.aria.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Telemetrie Reporting  <br/> |
-|```https://*.vo.msecnd.net/```  <br/> |WPXO  <br/> |SS  <br/> |Objektbibliothek für Microsoft Store  <br/> |
-|```https://*.wikipedia.org/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-Seitenressourcen  <br/> |
-|```https://upload.wikimedia.org/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-Media-Ressourcen  <br/> |
-|```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia Sandkasten frame  <br/> |
-|```https://*.virtualearth.net/```  <br/> |X  <br/> |SS  <br/> |Zuordnen von Vorlagen  <br/> |
+|```https://browser.pipe.aria.microsoft.com/```  <br/> |WPXO  <br/> |SS  <br/> |Telemetrie-Berichterstellung  <br/> |
+|```https://*.vo.msecnd.net/```  <br/> |WPXO  <br/> |SS  <br/> |Microsoft Store-Objektbibliothek  <br/> |
+|```https://*.wikipedia.org/```  <br/> |W  <br/> |SS  <br/> |Ressourcen der Wikipedia-Seite  <br/> |
+|```https://upload.wikimedia.org/```  <br/> |W  <br/> |SS  <br/> |Wikipedia-Medienressourcen  <br/> |
+|```https://wikipedia.firstpartyappssandbox.oappseperate.com/```  <br/> |W  <br/> |SS  <br/> |Wikipedia Sandkasten Frame  <br/> |
+|```https://*.virtualearth.net/```  <br/> |X  <br/> |SS  <br/> |Kartenvorlagen  <br/> |
    
  **Sichere Links**
   
-Der folgenden Endpunkt gilt für alle Office-Anwendungen für Office 365-Abonnement nur.
+Der folgende Netzwerkendpunkt gilt nur für alle Office-Anwendungen für Office 365-Abonnement.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|```https://*.oscs.protection.outlook.com/```  <br/> |CS  <br/> |Microsoft Safe-Verbindungsdienst  <br/> |
+|```https://*.oscs.protection.outlook.com/```  <br/> |CS  <br/> |Microsoft Safe Link-Dienst  <br/> |
    
- **Reporting abstürzen**
+ **Absturzbericht**
   
-Der folgenden Endpunkt gilt für alle Office-Clientanwendungen für Office 365-Abonnement und Einzelhandel/Volume License Aktivierungen. Wenn ein Prozess unerwartet abstürzt, wird ein Bericht generiert und an die Watson-Dienst gesendet.
+Der folgende Netzwerkendpunkt gilt für alle Office-Anwendungen sowohl für Office 365-Abonnements als auch für Retail/Volume-Lizenz Aktivierungen. Wenn ein Prozess unerwartet abstürzt, wird ein Bericht generiert und an den Watson-Dienst gesendet.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|```https://watson.microsoft.com/```  <br/> |ST  <br/> |Microsoft-Fehlerberichterstattungsdienst  <br/> |
-|```https://officeci.azurewebsites.net/```  <br/> |ST  <br/> |Office Collaborative Insights-Dienst  <br/> |
+|```https://watson.microsoft.com/```  <br/> |St  <br/> |Microsoft Error Reporting-Dienst  <br/> |
+|```https://officeci.azurewebsites.net/```  <br/> |St  <br/> |Office Collaborative Insights-Dienst  <br/> |
    
-## <a name="options-for-reducing-network-requests-and-traffic"></a>Optionen zum Reduzieren der Netzwerk-Anfragen und Datenverkehr
+## <a name="options-for-reducing-network-requests-and-traffic"></a>Optionen zum Reduzieren von Netzwerkanforderungen und Datenverkehr
 
-Die Standardkonfiguration von Office für Mac bietet die beste benutzerumgebung, sowohl im Hinblick auf die Funktionalität und den Computer auf dem aktuellen Stand zu halten. In einigen Szenarien möchten Sie möglicherweise Applications Kontaktaufnahme Netzwerkendpunkte zu verhindern. In diesem Abschnitt werden die Optionen zur Folge.
+Die Standardkonfiguration von Office für Mac bietet eine optimale Benutzerfreundlichkeit sowohl im Hinblick auf die Funktionalität als auch auf dem neuesten Stand. In einigen Szenarien möchten Sie möglicherweise verhindern, dass Anwendungen Netzwerkendpunkte kontaktieren. In diesem Abschnitt werden die Optionen erläutert.
   
- ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Cloud-Anmeldung und Office-Add-Ins deaktivieren
+ ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Deaktivieren von Cloud-Anmeldungen und Office-Add-ins
   
-Volume License-Kunden müssen möglicherweise strenge Richtlinien zum Speichern von Dokumenten in einen cloudbasierten Speicher. Die folgende Einstellung pro Anwendung kann MSA/Organisations-ID anmelden deaktivieren und den Zugriff auf Office-Add-ins festgelegt werden.
+Volumenlizenzkunden haben möglicherweise strenge Richtlinien zum Speichern von Dokumenten in Cloud-basiertem Speicher. Die folgende Einstellung pro Anwendung kann festgelegt werden, um die MSA/OrgId-Anmeldung und den Zugriff auf Office-Add-Ins zu deaktivieren.
   
 - ```defaults write com.microsoft.Word UseOnlineContent -integer 0```
 
@@ -251,34 +251,34 @@ Volume License-Kunden müssen möglicherweise strenge Richtlinien zum Speichern 
 
 - ```defaults write com.microsoft.Powerpoint UseOnlineContent -integer 0```
 
-Wenn Benutzer versuchen, die Anmeldung-Funktion zugreifen, wird einen Fehler angezeigt, dass eine Netzwerkverbindung nicht vorhanden ist. Da diese Einstellung auch online produktaktivierung blockiert, sollte sie nur für Volume License-Installationen verwendet werden. Verwenden diese Einstellung wird insbesondere Office-Clientanwendungen den Zugriff auf die folgenden Endpunkte verhindern:
+Wenn Benutzer versuchen, auf die Anmeldefunktion zuzugreifen, wird ein Fehler angezeigt, dass keine Netzwerkverbindung vorhanden ist. Da diese Einstellung auch die Online Produktaktivierung blockiert, sollte Sie nur für Volumenlizenz Installationen verwendet werden. Insbesondere verhindert die Verwendung dieser Einstellung, dass Office-Anwendungen auf die folgenden Endpunkte zugreifen können:
   
 - ```https://odc.officeapps.live.com```
     
 - ```https://*.firstpartyapps.oaspapps.com```
     
-- Alle Endpunkte, die in dem Abschnitt 'Anmelden' oben aufgelistet.
+- Alle im Abschnitt "Anmelden" oben aufgeführten Endpunkte.
     
-- Alle Endpunkte, die im Abschnitt "Smart Lookup" aufgeführt.
+- Alle im Abschnitt "Smart Lookup" oben aufgeführten Endpunkte.
     
-- Alle Endpunkte, die im Abschnitt "Aktivierung" aufgeführt.
+- Alle im Abschnitt "Produktaktivierung" oben aufgeführten Endpunkte.
     
-- Alle Endpunkte, die im Abschnitt "Office-Apps (auch bekannt als-add-ins)" aufgeführt.
+- Alle Endpunkte, die im Abschnitt "Office-Apps (aka-Add-Ins)" oben aufgeführt sind.
     
-Um wieder mit vollem Funktionsumfang für den Benutzer arbeiten, legen Sie die Einstellung auf "2" oder zu entfernen.
+Wenn Sie die vollständige Funktionalität für den Benutzer wiederherstellen möchten, legen Sie die Einstellung auf "2" fest, oder entfernen Sie Sie.
   
 > [!NOTE]
-> Diese Einstellung erfordert Office für Mac Build 15.25 [160726] oder höher. 
+> Diese Einstellung erfordert Office für Mac Build 15,25 [160726] oder höher. 
   
-### <a name="telemetry"></a>Telemetrie
+### <a name="telemetry"></a>Telemetrie 
   
-Office für Mac sendet Telemetriedaten an Microsoft in regelmäßigen Abständen. Daten werden an den Endpunkt 'Nexus' hochgeladen. Die Telemetriedaten hilft bei der Bewertung der Integrität und unerwarteten Verhaltensweisen der einzelnen Office-app-Entwicklungsteam. Es gibt zwei Kategorien von Telemetrie:
+Office für Mac sendet in regelmäßigen Abständen Telemetrie-Informationen an Microsoft. Die Daten werden in den Endpunkt von Nexus hochgeladen. Die Telemetrie-Daten unterstützen das Entwicklungsteam bei der Bewertung der Integrität und der unerwarteten Verhaltensweisen jeder Office-App. Es gibt zwei Arten von Telemetrie:
   
-- **Heartbeat** enthält Angaben zu Version und der Lizenz. Diese Daten werden beim Start der app sofort gesendet. 
+- **Heartbeat** enthält Versions-und Lizenzinformationen. Diese Daten werden sofort beim Start der APP gesendet. 
     
-- **Verwendung** enthält Informationen zur Verwendungsweise apps und nicht schwerwiegenden Fehlern. Diese Daten werden alle 60 Minuten gesendet. 
+- Die **Verwendung** enthält Informationen zur Verwendung von apps und zu nicht schwerwiegenden Fehlern. Diese Daten werden alle 60 Minuten gesendet. 
     
-Microsoft nimmt Ihre Privatsphäre sehr stark. Informationen zu Microsoft Richtlinien zur Datensammlung [https://privacy.microsoft.com](https://privacy.microsoft.com). Um zu verhindern, dass die Anwendung senden 'Verwendung' Telemetrie kann die Vorgabe **SendAllTelemetryEnabled** angepasst werden. Die Einstellung pro Anwendung ist, und kann über den Mac OS Konfigurationsprofile oder manuell aus Terminal festgelegt werden: 
+Microsoft nimmt ihren Datenschutz sehr ernst. Informationen zur Datenerfassungs Richtlinie von Microsoft finden Sie [https://privacy.microsoft.com](https://privacy.microsoft.com)unter. Um zu verhindern, dass Anwendungen die Telemetrie "Usage" senden, kann die **SendAllTelemetryEnabled** -Einstellung angepasst werden. Die Präferenz ist pro Anwendung und kann über macOS-Konfigurationsprofile oder manuell von Terminal aus festgelegt werden: 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -294,30 +294,30 @@ Microsoft nimmt Ihre Privatsphäre sehr stark. Informationen zu Microsoft Richtl
 
 ```defaults write com.microsoft.Office365ServiceV2 SendAllTelemetryEnabled -bool FALSE```
 
-Heartbeat Telemetrie wird immer gesendet und kann nicht deaktiviert werden.
+Heartbeat-Telemetrie wird immer gesendet und kann nicht deaktiviert werden.
   
-### <a name="crash-reporting"></a>Reporting abstürzen
+### <a name="crash-reporting"></a>Absturzbericht
   
-Wenn ein schwerwiegender Anwendungsfehler auftritt, die Anwendung unerwartet beendet und Hochladen eines Absturz-Berichts mit dem Dienst "Watson". Der Absturzbericht besteht aus einer-Aufrufliste, die die Liste der Schritte ist die Anwendung zu Absturz verarbeitet wurde. Diese Schritte helfen dem Entwicklungsteam fehlgeschlagene Funktion identisch zu ermitteln und warum.
+Wenn ein schwerwiegender Anwendungsfehler auftritt, wird die Anwendung unerwartet beendet und einen Absturzbericht an den Watson-Dienst hochladen. Der Absturzbericht besteht aus einem Call-Stack, bei dem es sich um die Liste der Schritte handelt, die die Anwendung bis zum Absturz ausgeführt hat. Diese Schritte helfen dem Entwicklungsteam, die genaue Funktion zu identifizieren, die fehlgeschlagen ist und warum.
   
-In einigen Fällen werden der Inhalt eines Dokuments zum Absturz die Anwendung führen. Wenn die app das Dokument als Ursache identifiziert wird, wird der Benutzer gefragt, wenn das Dokument zusammen mit der Aufrufliste auch senden werden kann. Benutzer können auf diese Frage eine fundierte Auswahl treffen. IT-Administratoren können strikten Anforderungen über die Übermittlung von Dokumenten und stellen Sie die Entscheidung niemals Dokumente senden im Auftrag des Benutzers. Die folgende Einstellung kann zu verhindern, dass Dokumente gesendet werden und unterdrückt werden Sie aufgefordert werden, den Benutzer festgelegt werden:
+In einigen Fällen führt der Inhalt eines Dokuments zu einem Absturz der Anwendung. Wenn die APP das Dokument als Ursache identifiziert, wird der Benutzer gefragt, ob es in Ordnung ist, das Dokument auch zusammen mit dem Aufruf Stapel zu senden. Benutzer können eine fundierte Auswahl für diese Frage treffen. IT-Administratoren haben möglicherweise strenge Anforderungen an die Übermittlung von Dokumenten und treffen die Entscheidung im Namen des Benutzers, nie Dokumente zu senden. Die folgende Einstellung kann festgelegt werden, um zu verhindern, dass Dokumente gesendet werden, und um die Ansage an den Benutzer zu unterdrücken:
   
 ```defaults write com.microsoft.errorreporting IsAttachFilesEnabled -bool FALSE```
 
 > [!NOTE]
-> Wenn **SendAllTelemetryEnabled** auf **FALSE**festgelegt ist, alle stürzt ab, reporting, dass Prozess deaktiviert ist. Zum Aktivieren der Absturz Weitergabe ohne Verwendung Telemetrie senden, kann die folgenden Vorgabe festgelegt werden:```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
+> Wenn **SendAllTelemetryEnabled** auf **false**festgelegt ist, ist alle Absturz Berichterstattung für diesen Prozess deaktiviert. Die folgende Einstellung kann festgelegt werden, um die Absturz Berichterstattung zu aktivieren, ohne die Verwendungs Telemetrie zu senden:```defaults write com.microsoft.errorreporting IsMerpEnabled -bool TRUE``` 
   
 ### <a name="updates"></a>Updates
   
-Microsoft stellt Office für Mac-Updates in regelmäßigen Abständen (normalerweise einmal im Monat). Wir empfehlen dringend, Benutzern und Computern um sicherzustellen, dass die neuesten Sicherheitspatches Stand IT-Administratoren installiert sind. In Fällen, in der IT-Administratoren eng steuern und Verwalten von Updates Machine möchten, kann die folgenden Vorgabe zum Verhindern des AutoUpdate-Prozesses automatisch erkannt und bietet Produktupdates festgelegt werden:
+Microsoft veröffentlicht Office für Mac-Updates in regelmäßigen Abständen (in der Regel einmal im Monat). Wir empfehlen Benutzern und IT-Administratoren nachdrücklich, Computer auf dem neuesten Stand zu halten, um sicherzustellen, dass die neuesten Sicherheitsupdates installiert werden. In Fällen, in denen IT-Administratoren Computer Aktualisierungen genau steuern und verwalten möchten, kann die folgende Einstellung festgelegt werden, um zu verhindern, dass der AutoUpdate-Prozess Produktupdates automatisch ermittelt und anbietet:
   
 ```defaults write com.microsoft.autoupdate2 HowToCheck -string 'Manual'```
 
-### <a name="blocking-requests-with-a-firewallproxy"></a>Blockieren von Anfragen mit einer Firewall-Proxy
+### <a name="blocking-requests-with-a-firewallproxy"></a>Blockieren von Anforderungen mit einer Firewall/einem Proxy
   
-Wenn Ihre Organisation Blöcke fordert zu URLs über eine Firewall oder der Proxy-Server müssen Sie konfigurieren die in diesem Dokument als entweder zulässig aufgeführten URLs oder blockieren mit 40 X Antwort (403 oder 404) aufgeführt. 40 X Antwort ansetzt, kann die Office-Clientanwendungen, der Fehler beim Zugriff auf die Ressource ordnungsgemäß zu akzeptieren, und bietet eine schnellere Benutzer wünschen, als einfach löschen der Verbindungs, wodurch den Client wiederholt wird.
+Wenn Ihre Organisation Anforderungen an URLs über eine Firewall oder einen Proxy Server blockiert, stellen Sie sicher, dass Sie die in diesem Dokument aufgeführten URLs entweder als zulässig oder als blockiert mit einer 40-d-Antwort (z.b. 403 oder 404) konfigurieren. Eine 40-d-Antwort ermöglicht es den Office-Anwendungen, die Unmöglichkeit des Zugriffs auf die Ressource zu akzeptieren und eine schnellere Benutzererfahrung zu ermöglichen, als einfach die Verbindung zu löschen, was wiederum den Client wiederholen kann.
   
-Wenn der Proxyserver Authentifizierung erfordert, wird eine 407 Antwort an den Client zurückgegeben werden soll. Die beste wünschen stellen Sie sicher, dass Sie Office für Mac-Builds 15.27 oder höher, nutzen wie sie bestimmte Updates für die Arbeit mit NTLM und Kerberos-Servern enthalten.
+Wenn für Ihren Proxy Server eine Authentifizierung erforderlich ist, wird eine 407-Antwort an den Client zurückgegeben. Stellen Sie sicher, dass Sie Office für Mac Builds 15,27 oder höher verwenden, da Sie bestimmte Fixes für die Arbeit mit NTLM-und Kerberos-Servern aufweisen.
   
   
 ## <a name="see-also"></a>Siehe auch

@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Hier finden Sie Antworten auf allgemeine Fragen zum Bewegen von Kern Daten in ein neues Datacenter Geo.
-ms.openlocfilehash: 009602161585b229074e049f5506d118397f1d49
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 29706f49ee0faf8c535b50843f224b7b1b2a372e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33490066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067899"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -61,7 +61,7 @@ Ja. Sobald ein neues Datacenter Geo verfügbar ist, haben neue Office 365 for Bu
   
  ## <a name="where-is-my-core-customer-data-is-located"></a>Wo befinden sich meine wichtigsten Kundendaten?
 
-Mandantenadministratoren können die Daten Standort Karte im Admin Center jederzeit anzeigen, um die wichtigsten Kundendaten am Rest-Standort für jeden Dienst, insbesondere für Ihren Mandanten, zu bestätigen.Außerdem veröffentlichen wir den Standort von Datacenter GEOS, Rechenzentren und Speicherort von Office 365-Kundendaten im [ office 365 Interactive Datacenter Maps](https://office.com/datamaps) als Referenz für die aktuellen Standard Kundendaten an Rest-Standorten für neue Mandanten.  Sie können den Speicherort Ihrer Kundendaten im Rest über den Abschnitt Datenspeicherort unter Ihrem Organisationsprofil im Office 365 Admin Center überprüfen.  
+Mandantenadministratoren können die Daten Standort Karte im Admin Center jederzeit anzeigen, um die wichtigsten Kundendaten am Rest-Standort für jeden Dienst, insbesondere für Ihren Mandanten, zu bestätigen.Außerdem veröffentlichen wir den Standort von Datacenter GEOS, Rechenzentren und Speicherort von Office 365-Kundendaten im [ Office 365 Interactive Datacenter Maps](https://office.com/datamaps) als Referenz für die aktuellen Standard Kundendaten an Rest-Standorten für neue Mandanten.  Sie können den Speicherort Ihrer Kundendaten im Rest über den Abschnitt Datenspeicherort unter Ihrem Organisationsprofil im Office 365 Admin Center überprüfen.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Wann kann ich eine Verschiebung anfordern?
   
@@ -135,11 +135,11 @@ Ja.
   
 ## <a name="will-office-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Werden Office 365-Mandanten, die in den neuen Datencentern gehostet werden, Benutzern außerhalb des Landes zur Verfügung gestellt?
   
-A. Ja. Microsoft unterhält ein umfangreiches globales Netzwerk mit öffentlichen Internetverbindungen an mehr als 130 Standorten in 35 Ländern weltweit mit Peering-Vereinbarungen mit mehr als 2.700 InternetdienstAnbietern (ISPs). Benutzer können von überall im Internet auf die Datencenter zugreifen.
+A. Ja. Microsoft unterhält ein umfangreiches globales Netzwerk mit öffentlichen Internetverbindungen an mehr als 130 Standorten in 35 Ländern weltweit mit Peering-Vereinbarungen mit mehr als 2.700 Internetdienstanbietern (ISPs). Benutzer können von überall im Internet auf die Datencenter zugreifen.
 
 ## <a name="my-tenant-is-configured-for-office-365-multi-geohttpsakamsmulti-geo--can-i-still-enroll-in-my-tenant-in-the-office-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>Mein Mandant ist für [Office 365 Multi Geo](https://aka.ms/multi-geo)konfiguriert.  Kann ich mich noch in meinem Mandanten im Office 365 Move-Programm anmelden, um meine Standard-Geo zu ändern und einen beliebigen Benutzer, der sich nicht in einer Satelliten Region befindet, auf den neuen Standard Geo zu verschieben?
 
-Ja, Ihr Mandant ist berechtigt, sich anzumelden.  Wir werden alle EXO-Postfächer von Ihrer aktuellen Standard-Geo-Daten in Ihr neues lokales Datencenter Geo verschieben.  In Multi-Geo-Satelliten Regionen konfigurierte EXO-Postfächer werden nicht verschoben, um weiterhin die Satelliten Gebietsdaten-Residency zu respektieren, wie Sie es beabsichtigt haben.  SharePoint Online und OneDrive for Business können nicht als Teil des Move-Programms zur neuen Datencenter-geografischen Migration migriert werden, obwohl Sie OneDrive für Business-Freigaben so konfigurieren können, dass Sie über das Multi-Geo-Programm in eine beliebige Region wechseln.
+Ja, Ihr Mandant ist berechtigt, sich anzumelden.  Wir werden alle Exo-Postfächer von Ihrer aktuellen Standard-Geo-Daten in Ihr neues lokales Datencenter Geo verschieben.  In Multi-Geo-Satelliten Regionen konfigurierte Exo-Postfächer werden nicht verschoben, um weiterhin die Satelliten Gebietsdaten-Residency zu respektieren, wie Sie es beabsichtigt haben.  SharePoint Online und OneDrive for Business können nicht als Teil des Move-Programms zur neuen Datencenter-geografischen Migration migriert werden, obwohl Sie OneDrive für Business-Freigaben so konfigurieren können, dass Sie über das Multi-Geo-Programm in eine beliebige Region wechseln.
   
 ## <a name="related-topics"></a>Verwandte Themen
 

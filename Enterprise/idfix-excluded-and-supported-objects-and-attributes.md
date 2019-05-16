@@ -1,10 +1,9 @@
 ---
 title: Ausgeschlossene und unterstützte Objekte und Attribute für IdFix
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 8/21/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 ms.assetid: cc453ae5-fa9b-4836-b0ce-c7e824b1e36d
 description: Listet die Attribute auf, die vom IdFix-Tool ausgeschlossen und unterstützt werden.
-ms.openlocfilehash: d6b7aac023e9fe96b8308483322e718937ab1355
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: bf88fea3592860a89d69717177593b6553318ee4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067271"
 ---
 # <a name="idfix-excluded-and-supported-objects-and-attributes"></a>Ausgeschlossene und unterstützte Objekte und Attribute für IdFix
 Es gibt zwei Regelsätze, die von IdFix verwaltet werden. Multi-Tenant und Dedicated/ITAR. Zu diesem Zeitpunkt schließen die beiden Regelsätze dieselben Objekte, Attribute und Attributwerte aus der Suche aus. Dies kann sich in zukünftigen Versionen ändern.
@@ -35,11 +34,11 @@ In diesem Abschnitt werden die Objekte, Attribute und Werte aufgelistet, die von
 |**Ausschluss**|**Beispiel**|
 |:-----|:-----|
 |Administrator\* |Administrator |
-|CAS_ {\*  |CAS_ {fe35fc98e69e4d08} |
+|CAS_{\*  |CAS_{fe35fc98e69e4d08} |
 |DiscoverySearchMailbox\*  |DiscoverySearchMailbox  |
 |FederatedEmail\* |FederatedEmail. *GUID* |
 |Gast\* ||
-|HTTPConnector\*  |HTTPConnector |
+|HttpConnector\*  |HttpConnector |
 |krbtgt\* |ms-DS-KrbTgt-Link |
 |IUSR\* |IUSR_- *MachineName* |
 |IWAM\*  |IWAM_- *MachineName* |

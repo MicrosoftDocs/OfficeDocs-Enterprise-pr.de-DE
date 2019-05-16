@@ -1,9 +1,9 @@
 ---
 title: Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365
-ms.author: robmazz
-author: robmazz
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 - MBS150
 ms.assetid: 79c43023-5a47-45ae-8068-d8a26eee6bc2
 description: Beschreibt häufige Ursachen von Problemen mit der Verzeichnissynchronisierung in Office 365 und bietet einige Methoden zur Problembehandlung und-Lösung.
-ms.openlocfilehash: a5c4b58dd856158b00605f39d8a66b48488086b2
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 3a1cf63122be84dc3e1c60e84a9a3a488f81bc0f
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067671"
 ---
 # <a name="fixing-problems-with-directory-synchronization-for-office-365"></a>Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365
 
@@ -30,21 +30,21 @@ Mit der Verzeichnissynchronisierung können Sie weiterhin Benutzer und Gruppen l
   
 ## <a name="how-do-i-know-if-something-is-wrong"></a>Woran erkenne ich, ob etwas falsch ist?
 
-Der erste Hinweis darauf, dass etwas falsch ist, ist, wenn die dirSync-Status Kachel im Microsoft 365 Admin Center ein Problem angibt:
+Der erste Hinweis darauf, dass etwas falsch ist, ist, wenn die Dirsync-Status Kachel im Microsoft 365 Admin Center ein Problem angibt:
   
-![Die dirSync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
+![Die Dirsync-Status Kachel in der Admin Center-Vorschau](media/060006e9-de61-49d5-8979-e77cda198e71.png)
   
 Sie erhalten auch eine e-Mail (an die Alternative e-Mail und an Ihre Administrator-e-Mail) von Office 365, die angibt, dass Ihr Mandant Verzeichnis Synchronisierungsfehler festgestellt hat. Weitere Informationen finden Sie unter [Identifizieren von Verzeichnis Synchronisierungsfehlern in Office 365](identify-directory-synchronization-errors.md).
   
 ## <a name="how-do-i-get-azure-active-directory-connect-tool"></a>Wie erhalte ich das Azure Active Directory Connect-Tool?
 
-navigieren sie im [Microsoft 365 admin center](https://admin.microsoft.com)zu * * users * * \> **Active users**. Klicken Sie auf das Menü **Weitere** , und wählen Sie **Verzeichnissynchronisierung**aus. 
+Navigieren Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com)zu * * Users * * \> **Active Users**. Klicken Sie auf das Menü **Weitere** , und wählen Sie **Verzeichnissynchronisierung**aus. 
   
 ![Wählen Sie im Menü mehr die Option Verzeichnissynchronisierung aus.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
 Folgen Sie den [Anweisungen des Assistenten](set-up-directory-synchronization.md) , um Azure AD Connect herunterzuladen. 
   
-Wenn Sie weiterhin Azure Active Directory-Synchronisierung (dirSync) verwenden, sehen Sie sich die [Problembehandlung bei Azure Active Directory Sync Tool-Installations-und Konfigurations-Assistenten Fehlermeldungen in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) an, um Informationen zu den Systemanforderungen für die Installation zu erhalten. Dirsync, die erforderlichen Berechtigungen und die Behandlung häufig auftretender Fehler. 
+Wenn Sie weiterhin Azure Active Directory-Synchronisierung (Dirsync) verwenden, sehen Sie sich die [Problembehandlung bei Azure Active Directory Sync Tool-Installations-und Konfigurations-Assistenten Fehlermeldungen in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=396717) an, um Informationen zu den Systemanforderungen für die Installation zu erhalten. Dirsync, die erforderlichen Berechtigungen und die Behandlung häufig auftretender Fehler. 
   
 Informationen zum Aktualisieren von Azure Active Directory-Synchronisierung mit Azure AD Connect finden Sie in [den Anweisungen zum Upgrade](https://go.microsoft.com/fwlink/p/?LinkId=733240).
   
@@ -93,6 +93,6 @@ Informationen zum Aktualisieren von Azure Active Directory-Synchronisierung mit 
     
 ## <a name="diagnostic-tools"></a>Diagnosetools
 
-[IDFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md) dient zur Ermittlung und Behebung von Identitätsobjekten und deren Attributen in einer lokalen Active Directory-Umgebung zur Vorbereitung der Migration zu Office 365. IDFix ist für die für dirSync Verantwortlichen Active Directory-Administratoren mit dem Office 365-Dienst vorgesehen. 
+[IDFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md) dient zur Ermittlung und Behebung von Identitätsobjekten und deren Attributen in einer lokalen Active Directory-Umgebung zur Vorbereitung der Migration zu Office 365. IDFix ist für die für Dirsync Verantwortlichen Active Directory-Administratoren mit dem Office 365-Dienst vorgesehen. 
 
 [Laden Sie das IDFix-Tool](https://go.microsoft.com/fwlink/p/?LinkId=396718) aus dem Microsoft Download Center herunter.

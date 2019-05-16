@@ -1,10 +1,10 @@
 ---
-title: SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
+title: SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 04/17/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.'
-ms.openlocfilehash: 56d9fa039bfe533afbc5ac7c1e060d43c0801aef
-ms.sourcegitcommit: 9bb65bafec4dd6bc17c7c07ed55e5eb6b94584c4
+ms.openlocfilehash: a302f86e97cd7b61236a92f51a043258882991f7
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "22915800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070441"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 
@@ -138,7 +138,7 @@ Nachdem eine Wiederherstellung erfolgt ist, bietet Ihnen diese Lösung die in de
   
 **Tabelle: Wiederherstellungsziele der Lösung**
 
-|**Element**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |Websites und Inhalte  <br/> |Websites und Inhalte sind in der Wiederherstellungsumgebung verfügbar.  <br/> |
 |Eine neue Instanz der Suche  <br/> |Bei dieser betriebsbereiten Standby-Lösung wird die Suche aus Suchdatenbanken wiederhergestellt. Die Konfiguration von Suchkomponenten in der Wiederherstellungsfarm orientiert sich so weit wie möglich an der Produktionsfarm. Nachdem Websites und Inhalte wiederhergestellt wurden, wird eine vollständige Durchforstung gestartet, um den Suchindex neu zu erstellen. Sie müssen nicht warten, bis die Durchforstung abgeschlossen ist, um die Websites und Inhalte zur Verfügung zu stellen.  <br/> |
@@ -148,7 +148,7 @@ Sie können mit Microsoft Consulting Services (MCS) oder einem Partner zusammena
   
 **Tabelle: Andere Elemente, die von MCS oder einem Partner betreut werden können**
 
-|**Element**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |Synchronisieren benutzerdefinierter Farmlösungen  <br/> |Im Idealfall ist die Konfiguration der Wiederherstellungsfarm identisch mit der Produktionsfarm. Sie können mit einem Berater oder Partner zusammenarbeiten, um zu prüfen, ob benutzerdefinierte Farmlösungen repliziert werden und ob ein Prozess vorhanden ist, mit dessen Hilfe beide Umgebungen synchron bleiben.  <br/> |
 |Verbindungen mit lokalen Datenquellen  <br/> |Es ist möglicherweise unpraktisch, Verbindungen mit Back-End-Datensystemen zu replizieren, z. B. mit Sicherungsdomänencontrollern und Inhaltsquellen für die Suche.  <br/> |
@@ -256,7 +256,7 @@ Dieser Fahrplan setzt vorausgesetzt, dass Sie bereits eine SharePoint Server 201
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Phase 1: Entwerfen der Umgebung für die Notfallwiederherstellung
 
-Verwenden Sie die Anweisungen in [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) Disaster Recovery-Umgebung, einschließlich der SharePoint-Wiederherstellungsfarm entwerfen. Die Grafiken können in der [SharePoint-Notfallwiederherstellungslösung in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio-Datei Sie um den Entwurf zu starten. Es wird empfohlen, dass Sie die gesamte Umgebung entwerfen, bevor Sie mit der Arbeit in der Azure-Umgebung.
+Befolgen Sie die Anleitungen unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für den Entwurf der Umgebung für die Notfallwiederherstellung, einschließlich der SharePoint-Wiederherstellungsfarm. Sie können die Grafiken in der [SharePoint-Notfallwiederherstellungslösung in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio-Datei verwenden, um den Entwurfsprozess zu starten. Es wird empfohlen, dass Sie die gesamte Umgebung vor Beginn der Arbeit in der Azure-Umgebung entwerfen.
   
 Zusätzlich zur Anleitung unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für das Entwerfen des virtuellen Netzwerks, der VPN-Verbindung, von Active Directory und der SharePoint-Farm müssen Sie der Azure-Umgebung eine Dateifreigaberolle hinzufügen.
   
@@ -476,7 +476,7 @@ In den meisten Fällen, wenn Sie über mehrere Front-End-Webserver verfügen, is
   
 Beim Einrichten von Netzwerklastenausgleich wird dem Cluster in der Regel eine einzelne IP-Adresse zugewiesen. Anschließend erstellen Sie einen DNS-Hosteintrag im DNS-Anbieter für Ihr Netzwerk, der auf den Cluster zeigt. (Für dieses Projekt implementieren wir einen DNS-Server in Azure zum Zweck der Ausfallsicherheit für den Fall eines Ausfalls des lokalen Rechenzentrums.) Sie können z. B. einen DNS-Eintrag im DNS-Manager in Active Directory mit dem Namen  `http://sharepoint.contoso.com` erstellen, der auf die IP-Adresse Ihres Clusters mit Lastenausgleich zeigt.
   
-Sie können einen Hosteintrag für den externen Zugriff auf Ihre SharePoint-Farm, erstellen, auf einem externen DNS-Server mit der gleichen URL, den Clients in Ihrem Intranet verwenden (beispielsweise `http://sharepoint.contoso.com`), der auf eine externe IP-Adresse in der Firewall zeigt. (Empfiehlt sich, mithilfe der in diesem Beispiel wird um Split-DNS so einrichten, dass der interne DNS-Server für autorisierend ist `contoso.com` und leitet Anforderungen direkt an die SharePoint-Farm Cluster, anstatt routing DNS auf dem externen DNS-Server fordert.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse des lokalen Clusters zuordnen, damit Clients die Ressourcen zu finden, die sie suchen.
+Für den externen Zugriff auf Ihre SharePoint-Farm können Sie einen Hosteintrag auf einem externen DNS-Server mit derselben URL erstellen, die Clients in Ihrem Intranet verwenden ( `http://sharepoint.contoso.com`beispielsweise), die auf eine externe IP-Adresse in Ihrer Firewall verweist. (Eine bewährte Vorgehensweise in diesem Beispiel besteht darin, geteilten DNS einzurichten, sodass der interne `contoso.com` DNS-Server autorisierend ist und Anforderungen direkt an den SharePoint-Farm Cluster weiterleitet, statt DNS-Anforderungen an den externen DNS-Server weiterzuleiten.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse des lokalen Clusters zuordnen, sodass die Clients die Ressourcen suchen, nach denen Sie suchen.
   
 Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherstellung stoßen:
   
@@ -484,7 +484,7 @@ Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherste
   
  **Beispielszenario: Das lokale Rechenzentrum ist vollständig unbrauchbar.** Diesem Szenario kann aufgrund einer Naturkatastrophe wie Brand oder Überschwemmung auftreten. Für diesen Fall verfügt Ihr Unternehmen wahrscheinlich über ein sekundäres Rechenzentrum, das in einer anderen Region gehostet wird, und auch über ein Azure-Subnetz mit eigenen Verzeichnisdiensten und DNS. Wie im vorherigen Szenario der Notfallwiederherstellung können Ihre internen und externen DNS-Einträge so umgeleitet werden, dass sie auf die SharePoint-Farm in Azure zeigen. Beachten Sie auch hier, dass die Weitergabe von DNS-Einträgen einige Zeit dauern kann.
   
-Wenn Sie Hostnamen-Websitesammlungen entsprechend den Empfehlungen in [websitesammlungsarchitektur Hostnamen und Bereitstellung (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)verwenden, müssen Sie mehrere Websitesammlungen, die von der gleichen Webanwendung in der SharePoint-Farm mit eindeutigen gehostet DNS-Namen (beispielsweise `http://sales.contoso.com` und `http://marketing.contoso.com`). In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die in der Cluster-IP-Adresse verweisen. Nachdem eine Anforderung, die SharePoint-Web-Front-End-Server erreicht, behandeln sie das Weiterleiten von jeder Anforderung an die entsprechende Websitesammlung.
+Wenn Sie Websitesammlungen mit Hostnamen verwenden, wie in [Host-Named Site Collection Architecture and Deployment (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)empfohlen, haben Sie möglicherweise mehrere Websitesammlungen, die von der gleichen Webanwendung in Ihrer SharePoint-Farm gehostet werden, mit eindeutigen DNS-Namen (beispielsweise `http://sales.contoso.com` und `http://marketing.contoso.com`). In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die auf die IP-Adresse Ihres Clusters zeigen. Sobald eine Anforderung Ihre SharePoint-Web-Front-End-Server erreicht, übernehmen sie das Weiterleiten jeder Anforderung zur gewünschten Websitesammlung.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft-Umgebung für Machbarkeitsstudie
 
@@ -564,7 +564,7 @@ Wir haben die Farm erstellt und weitere Server in der folgenden Reihenfolge hinz
     
 - SP-WFE1 und SP-WFE2 zum Hosten des verteilten Caches bereitgestellt. 
     
-Wir verwendet den Parameter _SkipRegisterAsDistributedCachehost_ , wenn wir **psconfig.exe** an der Befehlszeile ausgeführt wurde. Weitere Informationen finden Sie unter [Planen für Feeds und den verteilten Cachedienst in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
+Wir haben den Parameter  _skipRegisterAsDistributedCachehost_ bei der Ausführung von **psconfig.exe** an der Befehlszeile angegeben. Weitere Informationen finden Sie unter [Planen von Feeds und des Diensts für den verteilten Cache in SharePoint Server 2013](https://docs.microsoft.com/sharepoint/administration/plan-for-feeds-and-the-distributed-cache-service). 
   
 Wir haben die folgenden Schritte in der Wiederherstellungsumgebung wiederholt:
   
@@ -654,7 +654,7 @@ Dies geschieht, weil die Standardsicherungseinstellung für eine Verfügbarkeits
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Verwalteter Metadatendienst (oder anderer SharePoint-Dienst) wird nach der Installation nicht automatisch gestartet
 
-Services können gestartet werden, je nach der Leistung und die aktuelle Auslastung des SharePoint-Servers einige Minuten dauern. Manuell für den Dienst auf **Start** , und geben Sie genügend Zeit zum Starten des während des Aktualisierens gelegentlich die Dienste auf dem Server Bildschirm, um den Status zu überwachen. Für den Fall, dass der Dienst beendet bleibt, aktivieren Sie SharePoint-diagnoseprotokollierung, und versuchen Sie, starten Sie den Dienst erneut, und überprüfen Sie das Ereignisprotokoll auf Fehler. Weitere Informationen finden Sie unter [Configure diagnostic logging in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
+Je nach Leistung und aktueller Last Ihrer SharePoint-Server kann das Starten von Diensten mehrere Minuten dauern. Klicken Sie für den Dienst manuell auf **Starten**, und räumen Sie genügend Zeit für den Start ein, während Sie gelegentlich den Bildschirm Dienste auf dem Server aktualisieren, um den Status zu überwachen. Für den Fall, dass der Dienst beendet bleibt, aktivieren Sie die SharePoint-Diagnoseprotokollierung, versuchen, den Dienst neu zu starten, und überprüfen dann das Protokoll auf Fehler. Weitere Informationen finden Sie unter [Konfigurieren der Diagnoseprotokollierung in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Nach dem Ändern von DNS auf die Azure-Failoverumgebung verwenden Clientbrowser weiterhin die alte IP-Adresse für die SharePoint-Website.
 

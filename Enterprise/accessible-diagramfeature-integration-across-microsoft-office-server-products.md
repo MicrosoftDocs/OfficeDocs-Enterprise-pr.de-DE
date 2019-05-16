@@ -4,19 +4,19 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen „Integration von Features in Microsoft Office-Serverprodukten – SharePoint Server, Exchange Server, Lync Server und Office Online“.
-ms.openlocfilehash: 809a9272d7088ac069aad6b64daedfe059188247
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34068771"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Zugängliches Diagramm – Integration von Features in Microsoft Office-Serverprodukten
 
@@ -569,7 +569,7 @@ Server-Produkte:
     
  **Funktionsweise** 
   
-Wenn ein Anruf nicht von dem angerufenen auf einem der aktiven Endpunkte des angerufenen beantwortet wird, leitet lync Server den Anruf an die Voicemail in Exchange UM (d. h. Exchange-Postfachserver). 
+Wenn ein Anruf nicht von dem angerufenen auf einem der aktiven Endpunkte des angerufenen beantwortet wird, leitet lync Server den Anruf an die Voicemail in Exchange um (d. h. Exchange-Postfachserver). 
   
 Das begleitende Diagramm zeigt das Weiterleiten von Anrufen für zwei Szenarien:  
   

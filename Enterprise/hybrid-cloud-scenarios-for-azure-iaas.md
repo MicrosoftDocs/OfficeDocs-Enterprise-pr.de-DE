@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 11/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Architecture
 ms.assetid: 978f2b76-5aba-4e11-9434-f0efda987be1
 description: 'Zusammenfassung: Grundlegendes zur Hybrid Architektur und den Szenarien für die Infrastruktur von Microsoft als Service-(IaaS) Cloud-Angebot in Azure.'
-ms.openlocfilehash: d3f4b4ccbc9dbfa54e6f1d0988624aeb71f27106
-ms.sourcegitcommit: 85974a1891ac45286efa13cc76eefa3cce28fc22
+ms.openlocfilehash: 429af408ca3f21fe667b36cdb9767d3916a6b1a4
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "33487636"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34067351"
 ---
 # <a name="hybrid-cloud-scenarios-for-azure-iaas"></a>Hybrid Cloud-Szenarien für Azure-IaaS
 
@@ -37,11 +37,11 @@ Für jede Schicht der Architektur:
   
 - Apps und Szenarien
     
-    Eine IT-Arbeitslast ist in der Regel eine mehrstufige, hoch verfügbare Anwendung, die aus virtuellen Azure-Computern (VMs) besteht.
+    Eine IT-Arbeitslast ist in der Regel eine mehrstufige, hoch verfügbare Anwendung, die aus virtuellen Azure-Computern (VMS) besteht.
     
 - Identität
     
-    Fügen Sie Identitäts Server, wie Active Directory-domänenDienste (AD DS), zu der Gruppe von Servern hinzu, die in Azure VNets für die lokale Authentifizierung verwendet werden.
+    Fügen Sie Identitäts Server, wie Active Directory-Domänendienste (AD DS), zu der Gruppe von Servern hinzu, die in Azure VNets für die lokale Authentifizierung verwendet werden.
     
 - Netzwerk
     
@@ -79,17 +79,17 @@ Abbildung 3 zeigt die Konfiguration einer Server basierten Branchenanwendung, di
   
 In Abbildung 3 hostet ein lokales Netzwerk eine Identitätsinfrastruktur und Benutzer. Sie ist mit einem Azure IaaS-Gateway mit einer Standort-zu-Standort-VPN-oder Express Route-Verbindung verbunden. Azure IaaS hostet ein virtuelles Netzwerk, das die Server der Branchenanwendung enthält.
   
-Sie können LOB-Anwendungen erstellen, die auf Azure-VMs, die sich in Subnetzen einer Azure-VNet in einem Azure-Datencenter (auch als Standort bezeichnet) befinden.
+Sie können LOB-Anwendungen erstellen, die auf Azure-VMS, die sich in Subnetzen einer Azure-VNet in einem Azure-Datencenter (auch als Standort bezeichnet) befinden.
   
 Da Sie Ihre lokale Infrastruktur im Wesentlichen auf Azure ausdehnen, müssen Sie Ihrem VNets eindeutige private Adressräume zuweisen und ihre lokalen Routingtabellen aktualisieren, um die Erreichbarkeit der einzelnen VNet sicherzustellen.
   
-Sobald die Verbindung hergestellt ist, können diese VMs mit Remotedesktopverbindungen oder mit ihrer Systemverwaltungssoftware, genau wie Ihre lokalen Server, verwaltet werden.
+Sobald die Verbindung hergestellt ist, können diese VMS mit Remotedesktopverbindungen oder mit ihrer Systemverwaltungssoftware, genau wie Ihre lokalen Server, verwaltet werden.
   
-Durch das Konfigurieren öffentlich zugänglicher Ports können diese VMs auch über das Internet von mobilen oder Remotebenutzern aus aufgerufen werden.
+Durch das Konfigurieren öffentlich zugänglicher Ports können diese VMS auch über das Internet von mobilen oder Remotebenutzern aus aufgerufen werden.
   
 Eine Machbarkeitsstudie finden Sie unter [simuliertes standortübergreifendes virtuelles Netzwerk in Azure](simulated-cross-premises-virtual-network-in-azure.md).
   
-Attribute von Branchenanwendungen, die auf Azure-VMs gehostet werden, sind folgende:
+Attribute von Branchenanwendungen, die auf Azure-VMS gehostet werden, sind folgende:
   
 - Mehrere Ebenen
     
@@ -129,7 +129,7 @@ Diese Konfiguration weist die folgenden Attribute von Branchenanwendungen in Azu
     
 - Lastenverteilung
     
-    Interne Azure-Lastenausgleichsmodule verteilen den eingehenden Client-Webdatenverkehr an die Front-End-Server (WEB1 und WEB2) und an die Listener-IP-Adresse des SQL Server-Clusters (SQL1, SQL2 und MN1).
+    Interne Azure-Lastenausgleichsmodule verteilen den eingehenden Client-Webdatenverkehr an die Front-End-Server (WEB1 und web2) und an die Listener-IP-Adresse des SQL Server-Clusters (SQL1, sql2 und MN1).
     
 - Sicherheit
     
@@ -137,9 +137,9 @@ Diese Konfiguration weist die folgenden Attribute von Branchenanwendungen in Azu
     
 Folgen Sie diesem Pfad für die erfolgreiche Einführung:
   
-1. AusWerten und testen
+1. Auswerten und testen
     
-    Informationen zu den Vorteilen der Verwendung von SharePoint Server 2016 in Azure finden Sie unter [SharePoint server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) .
+    Informationen zu den Vorteilen der Verwendung von SharePoint Server 2016 in Azure finden Sie unter [SharePoint Server 2016 in Microsoft Azure](https://docs.microsoft.com/SharePoint/administration/sharepoint-server-2016-in-microsoft-azure) .
     
     Weitere Informationen finden Sie unter [Intranet SharePoint Server 2016 in Azure dev/Test Environment](https://docs.microsoft.com/SharePoint/administration/intranet-sharepoint-server-2016-in-azure-dev-test-environment) to Build a simulationed dev/Test Environment
     
@@ -149,7 +149,7 @@ Folgen Sie diesem Pfad für die erfolgreiche Einführung:
     
 3. Bereitstellen
     
-    Weitere Informationen finden Sie unter [deployIng SharePoint Server 2016 with SQL Server AlwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) , um die End-to-End-Konfiguration der hoch Verfügbarkeits Farm in fünf Phasen schrittweise durchlaufen zu können.
+    Weitere Informationen finden Sie unter [Deploying SharePoint Server 2016 with SQL Server AlwaysOn Availability Groups in Azure](https://docs.microsoft.com/SharePoint/administration/deploying-sharepoint-server-2016-with-sql-server-alwayson-availability-groups-in) , um die End-to-End-Konfiguration der hoch Verfügbarkeits Farm in fünf Phasen schrittweise durchlaufen zu können.
     
 ## <a name="federated-identity-for-office-365-in-azure"></a>Verbundidentität für Office 365 in Azure
 
@@ -159,7 +159,7 @@ Ein weiteres Beispiel für eine mehrstufige Branchenanwendung mit hoher Verfügb
 
 ![Eine hoch verfügbare Office 365-Verbund Authentifizierungsinfrastruktur in Azure](media/Hybrid-Poster/Hybrid-Cloud-Stack-IaaS-ADFS.png)
   
-In Abbildung 5 hostet ein lokales Netzwerk eine Identitätsinfrastruktur und Benutzer. Sie ist mit einem Azure IaaS-Gateway mit einer Standort-zu-Standort-VPN-oder Express Route-Verbindung verbunden. Das Azure-VNet enthält WebProxy Server, Active Directory-Verbunddienste-Server und Active Directory-domänenDienste (AD DS)-Domänencontroller.
+In Abbildung 5 hostet ein lokales Netzwerk eine Identitätsinfrastruktur und Benutzer. Sie ist mit einem Azure IaaS-Gateway mit einer Standort-zu-Standort-VPN-oder Express Route-Verbindung verbunden. Das Azure-VNet enthält WebProxy Server, Active Directory-Verbunddienste-Server und Active Directory-Domänendienste (AD DS)-Domänencontroller.
   
 Diese Konfiguration weist die folgenden Attribute von Branchenanwendungen in Azure auf:
   
@@ -169,9 +169,9 @@ Diese Konfiguration weist die folgenden Attribute von Branchenanwendungen in Azu
     
 Folgen Sie diesem Pfad für die erfolgreiche Einführung:
   
-1. AusWerten und testen
+1. Auswerten und testen
     
-    Informationen zum Erstellen einer simulierten Entwicklungs-und Testumgebung für die Verbundauthentifizierung mit Office 365 finden Sie unter [Federated Identity for your office 365 dev/Test Environment](federated-identity-for-your-office-365-dev-test-environment.md) .
+    Informationen zum Erstellen einer simulierten Entwicklungs-und Testumgebung für die Verbundauthentifizierung mit Office 365 finden Sie unter [Federated Identity for Your Office 365 dev/Test Environment](federated-identity-for-your-office-365-dev-test-environment.md) .
     
 2. Bereitstellen
     

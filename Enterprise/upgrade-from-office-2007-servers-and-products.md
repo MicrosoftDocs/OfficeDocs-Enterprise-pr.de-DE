@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 11/01/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
 localization_priority: Normal
@@ -21,12 +21,12 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Der Support wird bald für Office 2007-Server und Clientanwendungen beendet, und benutzerdefinierte Support Vereinbarungen sind nicht verfügbar. Verwenden Sie diesen Artikel, um mit der Planung Ihres Upgrades zu beginnen.
-ms.openlocfilehash: d717688e5eb0baefd73cf70914aa378400820c0c
-ms.sourcegitcommit: 60578f9fd0bc7d102529274deb02d63822682c09
+ms.openlocfilehash: 7f07de4fcca57dd2ad744a7c8c594ca88ddd5f4e
+ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2019
-ms.locfileid: "31838207"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34070211"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
@@ -39,9 +39,8 @@ Die Unterstützung für Office 2007-Produkte und-Dienste wurde beendet. Die folg
 |**Planen von Inhalten**|**Datum der Unterstützung wurde beendet**|
 |:-----|:-----|
 |[Office 2007-Roadmap für Ende des Supports](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) <br/> |10. Oktober 2017  <br/> |
-|[Exchange 2007 end of support roadmap](exchange-2007-end-of-support.md) <br/> |11. April 2017  <br/> |
-|
-  [Ende der Unterstützung für SharePoint Server 2007 – Roadmap](sharepoint-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
+|[Ende der Unterstützung für Exchange 2007 – Roadmap](exchange-2007-end-of-support.md) <br/> |11. April 2017  <br/> |
+|[Ende der Unterstützung für SharePoint Server 2007 – Roadmap](sharepoint-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
 |[Ende der Unterstützung für Project Server 2007 – Roadmap](project-server-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
 |[Upgrade von Office Communications Server](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/upgrade) <br/> |8. Januar 2018  <br/> |
 |[Ende der Unterstützung für PerformancePoint Server 2007 – Roadmap](pps-2007-end-of-support.md) <br/> |09. Januar 2018  <br/> |
