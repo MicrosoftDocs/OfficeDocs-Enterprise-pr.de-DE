@@ -12,52 +12,69 @@
 ### [Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365)](hybrid-cloud-scenarios-for-microsoft-saas-office-365.md)
 ### [Hybrid Cloud-Szenarien für Azure PaaS](hybrid-cloud-scenarios-for-azure-paas.md)
 ### [Hybrid Cloud-Szenarien für Azure IaaS](hybrid-cloud-scenarios-for-azure-iaas.md)
-## [Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 ## [Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# [Plan für Office 365](get-your-organization-ready-for-office-365.md)
-## [Abonnements, Lizenzen und Benutzerkonten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
-### [Planen der Verzeichnissynchronisierung](plan-for-directory-synchronization.md)
-### [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](plan-for-network-devices.md)
+# Planen für Office 365
+## [Vorbereiten Ihrer Organisation](get-your-organization-ready-for-office-365.md)
+
+## Ihr Office 365-Mandant
+### [Abonnements, Lizenzen und Benutzerkonten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+
+### Planen Ihres Netzwerks
+#### [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
+#### [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](plan-for-network-devices.md)
+#### [Netzwerk- und Migrationsplanung für Office 365](network-and-migration-planning.md)
+
+### Planen Ihrer Identitäten
+#### [Office 365-Identitätsmodelle](about-office-365-identity.md)
+#### [Hybrididentitäten](plan-for-directory-synchronization.md)
+
 ### [Planen von Drittanbieter-SSL-Zertifikaten für Office 365](plan-for-third-party-ssl-certificates.md)
-### [Grundlegendes zur Office 365-Identität und zu Azure Active Directory](about-office-365-identity.md)
-### [Entscheidung zwischen MDM und Intune](https://docs.microsoft.com/de-DE/office365/securitycompliance/choose-between-mdm-and-intune)
-### [Netzwerk- und Migrationsplanung für Office 365](network-and-migration-planning.md)
-### [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
 ### [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
 ### [Integrierte Apps und Azure AD für Office 365-Administratoren](integrated-apps-and-azure-ads.md)
-## [Office 365-Integrationspunkte](office-365-integration.md)
-### [Azure-Integration in Office 365](azure-integration.md)
-### [Azure ExpressRoute für Office 365](azure-expressroute.md)
-### [So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps](modern-auth-for-office-2013-and-2016.md)
-### [Zusammenarbeit zwischen Mandanten in Office 365](office-365-inter-tenant-collaboration.md)
+
+### Office 365-Integration
+#### [Integration mit lokalen Umgebungen](office-365-integration.md)
+#### [Azure-Integration](azure-integration.md)
+#### [Azure ExpressRoute](azure-expressroute.md)
+#### [So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps](modern-auth-for-office-2013-and-2016.md)
+#### [Zusammenarbeit zwischen Mandanten](office-365-inter-tenant-collaboration.md)
+
 ## Office 365-Clientunterstützung
 ### [Zertifikatbasierte Authentifizierung](office-365-client-support-certificate-based-authentication.md)
 ### [Bedingter Zugriff](office-365-client-support-conditional-access.md)
+### 
+  [Entscheidung zwischen MDM und Intune](https://docs.microsoft.com/de-DE/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Mobile Anwendungsverwaltung (Mobile Application Management)](office-365-client-support-mobile-application-management.md)
 ### [Moderne Authentifizierung](office-365-client-support-modern-authentication.md)
 ### [Einmaliges Anmelden](office-365-client-support-single-sign-on.md)
-## Hybridoptionen
-### [Moderne Hybridauthentifizierung und erforderliche Komponenten für Skype for Business Server und Exchange Server](hybrid-modern-auth-overview.md)
-### [Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird](configure-exchange-server-for-hybrid-modern-authentication.md)
-### [Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
-### [Entfernen oder Deaktivieren der modernen Hybridauthentifizierung aus Skype for Business und Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
-## [Office upgraden](plan-upgrade-previous-versions-office.md)
-### [Office 2010](upgrade-from-office-2010-servers-and-products.md)
-#### [Office 2010-Desktop](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
-#### [Exchange 2010](exchange-2010-end-of-support.md)
-#### [SharePoint 2010](upgrade-from-sharepoint-2010.md)
-#### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
-#### [Project Server 2010](project-server-2010-end-of-support.md)
-### [Office 2007](upgrade-from-office-2007-servers-and-products.md)
+
+## Moderne Hybridauthentifizierung
+### [Voraussetzungen für Skype for Business Server und Exchange Server](hybrid-modern-auth-overview.md)
+### [Konfigurieren von Exchange Server](configure-exchange-server-for-hybrid-modern-authentication.md)
+### [Konfigurieren von Skype for Business](https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal)
+### [Entfernen oder Deaktivieren von Skype for Business und Exchange](remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md)
+
+## Office-Clients und -Server
+### [Planen des Upgrades](plan-upgrade-previous-versions-office.md)
+### Office 2007
+#### [Upgrade von Office 2007-Servern und -Clients](upgrade-from-office-2007-servers-and-products.md)
 #### [Office 2007-Desktop](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap)
 #### [Exchange 2007](exchange-2007-end-of-support.md)
 #### [SharePoint 2007](sharepoint-2007-end-of-support.md)
 #### [Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [PerformancePoint Server 2007](pps-2007-end-of-support.md)
 #### [Project Server 2007](project-server-2007-end-of-support.md)
+### Office 2010
+#### [Upgrade von Office 2010-Servern und -Clients](upgrade-from-office-2010-servers-and-products.md)
+#### [Office 2010-Desktop](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+#### [Exchange 2010](exchange-2010-end-of-support.md)
+#### [SharePoint 2010](upgrade-from-sharepoint-2010.md)
+#### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
+#### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# [Testen von Office 365](cloud-adoption-test-lab-guides-tlgs.md)
+# Testen von Office 365
+## [Testumgebungsanleitungen zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Basiskonfiguration der Entwicklungs-/Testumgebung](base-configuration-dev-test-environment.md)
 ## [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
 ### [Verzeichnissynchronisierung](dirsync-for-your-office-365-dev-test-environment.md)
@@ -71,17 +88,22 @@
 ## [Simuliertes standortübergreifendes virtuelles Netzwerk in Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
 # Bereitstellen von Office 365
-## [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
-## [Bereitstellen von Office 365 Enterprise für Ihre Organisation](setup-overview-for-enterprises.md)
-### [Prüfliste für die Bereitstellungsplanung für Office 365](deployment-planning-checklist.md)
-### [Bewährte Methoden für die Sicherheit in Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
-## [Einrichten Ihres Netzwerks](set-up-network-for-office-365.md)
+
+## Checklisten und bewährte Vorgehensweisen
+### [Bereitstellen von Office 365 Enterprise für Ihre Organisation](setup-overview-for-enterprises.md)
+### [Checkliste für die Bereitstellungsplanung](deployment-planning-checklist.md)
+### [Inhaltsübersicht für die Sicherheit von Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 1. Einrichten Ihres Netzwerks
+### [Einrichten Ihres Unternehmensnetzwerks](set-up-network-for-office-365.md)
+### [Domänen](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
 ### [Office 365 – Überblick über die Netzwerkkonnektivität](office-365-networking-overview.md)
 ### [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
 ### [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md)
 ### [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
 ### [Office 365-Netzwerkpartnerprogramm](office-365-networking-partner-program.md)
-### [Office 365 – IP-Adressen und URLs](office-365-endpoints.md)
+### Office 365 – IP-Adressen und URLs
+#### [Office 365-Endpunkte](office-365-endpoints.md)
 #### [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
 #### [Weltweite Endpunkte](urls-and-ip-address-ranges.md)
 #### [DoD-Endpunkte für US Government](office-365-u-s-government-dod-endpoints.md)
@@ -95,104 +117,127 @@
 ### [IPv6-Unterstützung in Office 365-Diensten](ipv6-support.md)
 ### [NAT-Unterstützung bei Office 365](nat-support-with-office-365.md)
 ### Arbeiten mit ExpressRoute für Office 365
-#### [Azure ExpressRoute für Office 365](azure-expressroute.md)
+#### [ExpressRoute für Office 365](azure-expressroute.md)
 #### [Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
 #### [Netzwerkplanung mit ExpressRoute für Office 365](network-planning-with-expressroute.md)
 #### [Routing mit ExpressRoute für Office 365](routing-with-expressroute.md)
-## Einrichten Ihres Abonnements
-### [Vorbereiten der Bereitstellung von Benutzern über die Verzeichnissynchronisierung in Office 365](prepare-for-directory-synchronization.md)
-### [Vorbereiten von Verzeichnisattributen für die Synchronisierung mit Office 365 mithilfe des IdFix-Tools](prepare-directory-attributes-for-synch-with-idfix.md)
-### [Installieren und Ausführen des IdFix-Tools](install-and-run-idfix.md)
-### [Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-### [IdFix-Transaktionsprotokoll](idfix-transaction-log.md)
-### [Planen der Verzeichnissynchronisierung für Office 365](set-up-directory-synchronization.md)
-### [Schützen Ihrer globalen Office 365-Administratorkonten](protect-your-global-administrator-accounts.md)
-### [Aktivieren der Rechteverwaltung im Office 365 Admin Center](activate-rms-in-office-365.md)
-### [Domänen](https://support.office.com/article/6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
-### [Konfigurieren von Veröffentlichungsoptionen in Office 365](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
-## [Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise](configure-services-and-applications.md)
+
+## 2. Einrichten Ihrer Identitäten
+### [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md)
+### Verwenden des IdFix-Tools
+#### [Vorbereiten von Verzeichnisattributen mit dem IdFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md)
+#### [Installieren und Ausführen des IdFix-Tools](install-and-run-idfix.md)
+#### [Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
+#### [IdFix-Transaktionsprotokoll](idfix-transaction-log.md)
+### [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md)
+### [Schützen Ihrer globalen Administratorkonten](protect-your-global-administrator-accounts.md)
+
+## 3. Bereitstellen von Clientsoftware
+### [Bereitstellen von Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Bereitstellen des Skype for Business-Clients](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
+### [Bereitstellen und Verwalten von mobilen Apps](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
+
+## [4. Konfigurieren der Geräteverwaltung mit Intune](https://docs.microsoft.com/intune/setup-steps)
+
+## 5. Konfigurieren von Diensten und Anwendungen
+### [Vorbereitungen](configure-services-and-applications.md)
 ### [Migrieren von Daten nach Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 ### [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
 ### [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
 ### [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
 ### [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-## [Konfigurieren der Geräteverwaltung mit Intune](https://docs.microsoft.com/intune/setup-steps)
-## Bereitstellen von Anwendungen
-### [Bereitstellen von Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-### [Bereitstellen des Skype for Business-Clients](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
-### [Bereitstellen und Verwalten von mobilen Apps](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
-## [Schulen der Benutzer](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+### [Aktivieren der Rechteverwaltung](activate-rms-in-office-365.md)
+### [Konfigurieren von Veröffentlichungsoptionen](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [Office 365 Multi-Geo](office-365-multi-geo.md)
-### [OneDrive und SharePoint Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
-### [Exchange Multi-Geo](multi-geo-capabilities-in-exchange-online.md)
-### [Plan für Multi-Geo](plan-for-multi-geo.md)
-#### [Verwaltungserfahrung](administering-a-multi-geo-environment.md)
-#### [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md)
-### [Multi-Geo konfigurieren](multi-geo-tenant-configuration.md)
-#### [Konfigurieren eines bevorzugten Datenspeicherorts](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [Konfigurieren der Suche](configure-search-for-multi-geo.md)
-### Verwalten einer Multi-Geo-Umgebung
-#### [SharePoint-Kontingente verwalten](sharepoint-multi-geo-storage-quota.md)
-#### [Verschieben einer OneDrive-Seite](move-onedrive-between-geo-locations.md)
-#### [Verschieben eine SharePoint-Seite](move-sharepoint-between-geo-locations.md)
-#### [Hinzufügen oder Entfernen eines Geo-Administrators](add-a-sharepoint-geo-admin.md)
-#### [Inhalte für einen geografischen Standort einschränken](restrict-content-to-geo-location.md)
-#### [Konfigurieren von Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md)
-#### [Erstellen einer Gruppe mit einem bestimmten PLD](multi-geo-add-group-with-pdl.md)
-#### [Löschen eines geografischen Standorts](delete-a-geo-location.md)
-#### [Aktivieren von SharePoint Multi-Geo am Satellitenstandort](enabling-SP-multigeo-satellite-geolocation.md)
-#### [Verwalten von Exchange Multi-Geo](administering-exchange-online-multi-geo.md)
+## [6. Schulen der Benutzer](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
 
-## [Wechseln zu einer neuen Office 365-Rechenzentrum-Geo](moving-data-to-new-datacenter-geos.md)
-### [Anfordern der Datenverschiebung](request-your-data-move.md)
-### [Während und nach der Datenverschiebung](during-and-after-your-data-move.md)
-### [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
-## Hybridlösungen
-### [Verwenden von Azure Active Directory für die SharePoint Server 2016-Authentifizierung](using-azure-ad-for-sharepoint-server-authentication.md)
-### [Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
-### [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
-### [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-#### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-#### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-#### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-#### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 4: Konfigurieren von Webanwendungsproxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-#### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+## Erweiterte Bereitstellung
+
+### [Office 365 Multi-Geo](office-365-multi-geo.md)
+#### [OneDrive und SharePoint Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
+#### [Exchange Multi-Geo](multi-geo-capabilities-in-exchange-online.md)
+#### [Plan für Multi-Geo](plan-for-multi-geo.md)
+##### [Verwaltungserfahrung](administering-a-multi-geo-environment.md)
+##### [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md)
+#### [Multi-Geo konfigurieren](multi-geo-tenant-configuration.md)
+##### [Konfigurieren eines bevorzugten Datenspeicherorts](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Konfigurieren der Suche](configure-search-for-multi-geo.md)
+#### Verwalten einer Multi-Geo-Umgebung
+##### [SharePoint-Kontingente verwalten](sharepoint-multi-geo-storage-quota.md)
+##### [Verschieben einer OneDrive-Seite](move-onedrive-between-geo-locations.md)
+##### [Verschieben eine SharePoint-Seite](move-sharepoint-between-geo-locations.md)
+##### [Hinzufügen oder Entfernen eines Geo-Administrators](add-a-sharepoint-geo-admin.md)
+##### [Inhalte für einen geografischen Standort einschränken](restrict-content-to-geo-location.md)
+##### [Konfigurieren von Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md)
+##### [Erstellen einer Gruppe mit einem bestimmten PLD](multi-geo-add-group-with-pdl.md)
+##### [Löschen eines geografischen Standorts](delete-a-geo-location.md)
+##### [Aktivieren von SharePoint Multi-Geo am Satellitenstandort](enabling-SP-multigeo-satellite-geolocation.md)
+##### [Verwalten von Exchange Multi-Geo](administering-exchange-online-multi-geo.md)
+
+#### [Wechseln zu einer neuen Office 365-Rechenzentrum-Geo](moving-data-to-new-datacenter-geos.md)
+##### [Anfordern der Datenverschiebung](request-your-data-move.md)
+##### [Während und nach der Datenverschiebung](during-and-after-your-data-move.md)
+##### [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
+
+### Hybridlösungen
+#### [Verwenden von Azure Active Directory für die SharePoint Server 2016-Authentifizierung](using-azure-ad-for-sharepoint-server-authentication.md)
+#### [Verbinden eines lokalen Netzwerks mit einem virtuellen Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
+#### [Bereitstellen eines Verzeichnissynchronisierungsservers in Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+#### [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 4: Konfigurieren von Webanwendungsproxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Verwalten von Office 365
-## [Dienstintegrität](view-service-health.md)
+
+## Netzwerk
+### [Clientkonnektivität](client-connectivity.md)
 ### [Überwachen der Konnektivität](monitor-connectivity.md)
-### [Optionen für den Support](https://support.office.com/de-DE/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-## [Verwaltungstools](https://support.office.com/de-DE/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
-### [Tools zum Verwalten von Office 365-Konten](manage-office-365-accounts.md)
-### [Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 – Hilfe für Administratoren](add-several-users-at-the-same-time.md)
-### [Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren](recover-deleted-items-in-a-mailbox.md)
-## Verwalten von Arbeitslasten
+
+## Verzeichnissynchronisierung
+### [Anzeigen des Status der Verzeichnissynchronisierung](view-directory-synchronization-status.md)
+### [Identifizieren von Fehler bei der Verzeichnissynchronisierung](identify-directory-synchronization-errors.md)
+### [Beheben von Problemen mit der Verzeichnissynchronisierung](fix-problems-with-directory-synchronization.md)
+### [Deaktivieren der Verzeichnissynchronisierung](turn-off-directory-synchronization.md)
+
+## Benutzer
+### 
+  [Office 365 Admin-Hilfecenter](https://support.office.com/de-DE/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Tools zum Verwalten von Benutzerkonten](manage-office-365-accounts.md)
+### [Gleichzeitiges Hinzufügen von mehreren Benutzern](add-several-users-at-the-same-time.md)
+### [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](recover-deleted-items-in-a-mailbox.md)
+
+## Geräte
+### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
+### [Verwalten von Gerätezugriffseinstellungen](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
+
+## Arbeitslasten
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
 ### [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
 ### [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
 ### [Microsoft Teams](https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide)
 ### [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-## [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
-### [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
+
+## Dienststatus
+### [Überprüfen](view-service-health.md)
+### 
+  [Optionen für den Support](https://support.office.com/de-DE/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+
+## Leistung
+### [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
+### [Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
 ### [Optimieren der Leistung von Exchange Online](tune-exchange-online-performance.md)
 ### [Optimieren der Leistung von SharePoint Online](tune-sharepoint-online-performance.md)
 #### [Einführung in die Leistungsoptimierung für SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 #### [Diagnose von Leistungsproblemen mit SharePoint Online](diagnosing-performance-issues-with-sharepoint-online.md)
 ### [Optimieren der Leistung von Skype for Business Online](tune-skype-for-business-online-performance.md)
 ### [Optimieren der Leistung von Project Online](https://docs.microsoft.com/ProjectOnline/tune-project-online-performance)
-### [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
-### [Verwalten von ExpressRoute für Office 365-Verbindungen](managing-expressroute-for-connectivity.md)
-## Verzeichnissynchronisierung
-### [Anzeigen des Status der Verzeichnissynchronisierung in Office 365](view-directory-synchronization-status.md)
-### [Identifizieren von Fehler bei der Verzeichnissynchronisierung in Office 365](identify-directory-synchronization-errors.md)
-### [Beheben von Problemen bei der Verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md)
-### [Deaktivieren der Verzeichnissynchronisierung für Office 365](turn-off-directory-synchronization.md)
-## Verwalten von Geräten
-### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
-### [Verwalten von Gerätezugriffseinstellungen](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
-### [Clientkonnektivität](client-connectivity.md)
+### [Plan zur Behebung von Leistungsproblemen](performance-troubleshooting-plan.md)
+### [Verwalten von Express Route](managing-expressroute-for-connectivity.md)
+
 # [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
 # [Sicherheit & Compliance](https://docs.microsoft.com/Office365/SecurityCompliance)
 # [Office 365 for Business](https://docs.microsoft.com/office365/admin/admin-home)
