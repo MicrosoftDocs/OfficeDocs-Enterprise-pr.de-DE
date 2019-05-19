@@ -18,63 +18,82 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
-description: Erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Office 365 und Ihrem lokalen Active Directory einrichten.
-ms.openlocfilehash: d5c09b006c4e4b9ca9fbe3b0d673435a8ea6637e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Hier erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Office 365 und Ihrem lokalen Active Directory einrichten.
+ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070871"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162478"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Einrichten der Verzeichnissynchronisierung für Office 365
 
-In Office 365 wird der Cloud-basierte Benutzer Identitäts Verwaltungsdienst Azure Active Directory zum Verwalten von Benutzern verwendet. Sie können Ihr lokales Active Directory auch mit Azure AD integrieren, indem Sie Ihre lokale Umgebung mit Office 365 synchronisieren. Nachdem Sie die Synchronisierung eingerichtet haben, können Sie entscheiden, ob die Benutzerauthentifizierung innerhalb von Azure AD oder in Ihrem lokalen Verzeichnis erfolgen soll.
-  
-## <a name="office-365-directory-synchronization"></a>Office 365-Verzeichnissynchronisierung
+Office 365 verwendet einen Azure Active Directory (Azure AD)-Mandanten, um Identitäten für die Authentifizierung und Berechtigungen für den Zugriff auf Cloud-basierte Ressourcen zu speichern und zu verwalten. 
 
-Sie können entweder eine synchronisierte Identität oder eine Verbundidentität zwischen Ihrer lokalen Organisation und Office 365 verwenden. Mit synchronisierter Identität verwalten Sie Ihre Benutzer lokal und werden von Azure AD authentifiziert, wenn Sie das gleiche Kennwort in der Cloud als lokal verwenden. Dies ist das häufigste Szenario für die Verzeichnissynchronisierung. Mit der Passthrough-Authentifizierung oder der Verbundidentität können Sie Ihre Benutzer lokal verwalten und durch Ihr lokales Verzeichnis authentifizieren. Die Verbundidentität erfordert eine zusätzliche Konfiguration und ermöglicht es den Benutzern, sich nur einmal anzumelden. Weitere Informationen finden Sie unter [Understanding Office 365 Identity und Azure Active Directory](about-office-365-identity.md).
-  
-## <a name="want-to-upgrade-from-windows-azure-active-directory-sync-dirsync-to-azure-active-directory-connect"></a>Möchten Sie ein Upgrade von Windows Azure Active Directory Sync (Dirsync) auf Azure Active Directory Connect durchführen?
+Wenn Sie über eine lokale Active Directory-Domänendienste (AD DS) verfügen, können Sie Ihre AD DS Benutzerkonten, Gruppen und Kontakte mit dem Azure AD-Mandanten Ihres Office 365 Abonnements synchronisieren. Dies ist eine hybride Identität für Office 365. Hier sind die Komponenten.
 
-Wenn Sie derzeit Dirsync verwenden und ein Upgrade durchführen möchten, wechseln Sie zu [Azure.com](https://azure.com) . [](https://go.microsoft.com/fwlink/p/?LinkId=733240)
-  
-## <a name="prerequisites-for-azure-ad-connect"></a>Voraussetzungen für Azure AD Connect
+![](./media/about-office-365-identity/hybrid-identity.png)
 
-Sie erhalten ein kostenloses Abonnement für Azure AD mit Ihrem Office 365-Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure Active Directory Connect auf einem Ihrer lokalen Server.
+Azure AD Connect wird auf einem lokalen Server ausgeführt und synchronisiert Ihre AD DS mit dem Azure AD Mandanten. Neben der Verzeichnissynchronisierung können Sie auch diese Authentifizierungsoptionen angeben:
+
+- Kennworthash Synchronisierung (PHS)
+
+  Azure AD führt die Authentifizierung selbst aus.
+
+- Passthrough-Authentifizierung (PTA)
+
+  Azure Ad die Authentifizierung AD DS durchführen.
+
+- Verbundauthentifizierung
+
+  Azure AD umleitet den Clientcomputer, der die Authentifizierung anfordert, um einen anderen Identitätsanbieter zu kontaktieren.
+
+Weitere [](plan-for-directory-synchronization.md) Informationen finden Sie unter hybride Identitäten.
+  
+## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Überprüfen der Voraussetzungen für Azure AD Connect
+
+Sie erhalten ein kostenloses Azure AD-Abonnement mit Ihrem Office 365-Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure AD Connect auf einem Ihrer lokalen Server.
   
 Für Office 365 müssen Sie Folgendes tun:
   
-- Überprüfen Sie Ihre lokale Domäne (das Verfahren führt Sie durch.)
-- [Weisen Sie Administratorrollen in Office 365 for Business](https://support.office.com/article/EAC4D046-1AFD-4F1A-85FC-8219C79E1504) -Berechtigungen für Ihren Office 365-Mandanten und ein lokales Active Directory zu.
+- Überprüfen Sie Ihre lokale Domäne. Der Assistent für Azure AD Connect führt Sie durch diesen Leitfaden.
+- Rufen Sie die Benutzernamen und Kennwörter für die Administratorkonten Ihres Office 365 Mandanten und AD DS ab.
 
-Für den lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen Sie die folgende Software:
+Für den lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen Sie Folgendes:
   
 |**Server Betriebssystem**|**Weitere Software**|
 |:-----|:-----|
-|**Windows Server 2012 R2** | -PowerShell wird standardmäßig installiert, es ist keine Aktion erforderlich.  <br> -NET 4.5.1 und späteren Versionen werden über Windows Update angeboten. Stellen Sie sicher, dass Sie die neuesten Updates für Windows Server in der Systemsteuerung installiert haben. |
-|**Windows Server 2008 R2 mit Service Pack 1 (SP1)** oder **Windows Server 2012** | -Die neueste Version von PowerShell ist in Windows Management Framework 4,0 verfügbar. Suchen Sie im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)danach.  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
-|**Windows Server 2008** | -Die neueste unterstützte Version von PowerShell ist in Windows Management Framework 3,0 verfügbar, verfügbar im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996).  <br> -.NET 4.5.1 und neuere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
+|Windows Server 2012 R2 und höher | -PowerShell wird standardmäßig installiert, es ist keine Aktion erforderlich.  <br> -NET 4.5.1 und höhere Versionen werden über Windows Update angeboten. Stellen Sie sicher, dass Sie die neuesten Updates für Windows Server in der Systemsteuerung installiert haben. |
+|Windows Server 2008 R2 mit Service Pack 1 (SP1) * * oder Windows Server 2012 | – Die neueste Version von PowerShell steht in Windows Management Framework 4,0 zur Verfügung. Suchen Sie im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)danach.  <br> -.NET 4.5.1 und höhere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
+|Windows Server 2008 | – Die neueste unterstützte Version von PowerShell steht in Windows Management Framework 3,0 zur Verfügung, das im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar ist.  <br> -.NET 4.5.1 und höhere Versionen sind im [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=717996)verfügbar. |
 
-> [!NOTE]
-> Wenn Sie Azure Active Directory Dirsync verwenden, beträgt die maximale Anzahl von Verteilergruppenmitgliedern, die Sie von Ihrem lokalen Active Directory mit Azure Active Directory synchronisieren können, 15.000. Für Azure AD Connect ist diese Nummer 50.000.
+Unter [Voraussetzungen für Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites) finden Sie Informationen zu Hardware-, Software-, Konto-und Berechtigungsanforderungen, SSL-Zertifikatanforderungen und Objekt Grenzwerten für Azure AD Connect.
   
-Lesen Sie die [Voraussetzungen für Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), um die Anforderungen an Hardware, Software, Konten und Berechtigungen, SSL-Zertifikatanforderungen und Objekt Grenzwerte für Azure AD Connect genauer zu prüfen.
+Sie können auch den [Versionsverlauf von](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) Azure AD Connect überprüfen, um zu sehen, was in jeder Version enthalten und behoben ist.
+
+## <a name="2-install-azure-ad-connect-and-configure-directory-synchronization"></a>2. installieren Azure AD verbinden und Konfigurieren der Verzeichnissynchronisierung
+
+Bevor Sie beginnen, sollten Sie Folgendes sicherstellen:
+
+- Der Benutzername und das Kennwort eines Office 365 globalen Administrators
+- Der Benutzername und das Kennwort eines AD DS Domänenadministrators
+- Welche Authentifizierungsmethode (PHS, PTA, Verbund)
+- Ob Sie [Azure AD nahtloses einmaliges Anmelden (Single Sign-on, SSO)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso) verwenden möchten
+
+Führen Sie die folgenden Schritte aus:
+
+1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) anhttps://admin.microsoft.com) (und wählen Sie in der linken Navigationsleiste **Benutzer** \> **aktive Benutzer** aus.
+2. Wählen Sie im Admin Center auf der Seite **aktive Benutzer** die Option **Weitere** \> **Verzeichnissynchronisierung**aus.
+
+    ![Wählen Sie im Menü weitere die Option Verzeichnissynchronisierung aus.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
   
-Sie können auch den [Versionsverlauf](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history) der Azure AD Connect-Version überprüfen, um zu sehen, was in jeder Version enthalten und korrigiert wurde.
+3. Klicken Sie auf der Seite **Active Directory Vorbereitung** auf den Link **Download Microsoft Azure Active Directory Connect Tool** , um erste Schritte zu erhalten. 
+4. Befolgen Sie die Schritte unter [Azure AD Roadmap Connect and Azure AD Connect Health Installation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
-## <a name="to-set-up-directory-synchronization"></a>So richten Sie die Verzeichnissynchronisierung ein
+## <a name="3-finish-setting-up-domains"></a>3. Abschließen der Einrichtung von Domänen
 
-1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an, und wählen Sie im linken Navigationsbereich **Benutzer** \> **aktive Benutzer** aus.
-2. Wählen Sie im Admin Center auf der Seite **aktive Benutzer** **mehr** \> **Verzeichnissynchronisierung**aus.
+Befolgen Sie die Schritte unter [Erstellen von DNS-Einträgen für Office 365 beim Verwalten Ihrer DNS-Einträge](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23) , um die Einrichtung ihrer Domänen abzuschließen.
 
-    ![Wählen Sie im Menü mehr die Option Verzeichnissynchronisierung aus.](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
-  
-3. Wählen Sie auf der Seite **Active Directory-Vorbereitung** den Link zum **herunterladen des Microsoft Azure Active Directory Connect-Tool** für erste Schritte aus. Weitere Informationen zum Installieren von Azure Active Directory Connect finden Sie unter [Azure AD Connect and Azure AD Connect Health Installation Roadmap](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
+## <a name="next-step"></a>Nächster Schritt
 
-## <a name="assign-licenses-to-synchronized-users"></a>Zuweisen von Lizenzen zu synchronisierten Benutzern
-
-Nachdem Sie Ihre Benutzer mit Office 365 synchronisiert haben, werden Sie erstellt, aber Sie müssen Ihnen Lizenzen zuweisen, damit Sie Office 365-Features wie e-Mail verwenden können. Anweisungen hierzu finden Sie unter [Zuweisen von Lizenzen zu Benutzern in Office 365 for Business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
-
-## <a name="finish-setting-up-domains"></a>Abschließen der Einrichtung von Domänen
-
-Führen Sie die Schritte unter [Create DNS Records for Office 365 aus, wenn Sie Ihre DNS-Einträge verwalten](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23) , um die Einrichtung ihrer Domänen abzuschließen.
+[Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md).

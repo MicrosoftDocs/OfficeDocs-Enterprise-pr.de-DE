@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 51019757-20ac-498c-b51e-cae6d41a8c08
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Advanced Threat Protection in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 7063b56762711fdb06c0c879d74b783c0137b550
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 274f8558d23714a73e0891500dac5d5e007b6be2
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068301"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162418"
 ---
 # <a name="advanced-threat-protection-for-your-office-365-devtest-environment"></a>Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung
 
@@ -38,7 +38,7 @@ Wenn Sie ATP nur auf einfache Weise mit den Mindestanforderungen testen möchten
 Wenn Sie ATP in einem simulierten Unternehmen testen möchten, führen Sie die Schritte in [DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md) aus.
   
 > [!NOTE]
-> Das Testen von ATP erfordert nicht die simulierte Enterprise-dev/Test-Umgebung, die ein simuliertes Intranet enthält, das mit dem Internet und der Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) verbunden ist. Dies wird hier als Option bereitgestellt, damit Sie ATP testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
+> Für das Testen von ATP ist die simulierte Enterprise-Entwicklungs-/Testumgebung nicht erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie ATP testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
   
 ## <a name="phase-2-demonstrate-the-default-email-delivery-behavior-of-office-365"></a>Phase 2: Demonstrieren des standardmäßigen E-Mail-Zustellungsverhaltens von Office 365
 
@@ -76,7 +76,7 @@ In dieser Phase führen Sie vor, dass vor dem Konfigurieren von ATP-Richtlinien 
     
 14. Geben Sie in **URL** den Text **http://www.spamlink.contoso.com/** ein, klicken Sie auf **OK** und dann auf **Senden**.
     
-15. Öffnen Sie im privaten Modus eine separate Instanz von Internet Explorer, wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich mit ihrem globalen Administratorkonto bei Ihrem Office 365-Testabonnement an.
+15. Öffnen Sie eine separate Instanz von Internet Explorer im privaten Browsermodus, wechseln Sie zum Microsoft 365 Admin Center[https://admin.microsoft.com](https://admin.microsoft.com)(), und melden Sie sich bei Ihrem Office 365 Testabonnement mit ihrem globalen Administratorkonto an.
     
 16. Klicken Sie auf der Hauptportalseite auf die Kachel „apps" und dann auf **E-Mail**.
     
@@ -167,8 +167,6 @@ Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und
 [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
   
 [DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md)
-  
-[Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung](cloud-app-security-for-your-office-365-dev-test-environment.md)
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md) 
 

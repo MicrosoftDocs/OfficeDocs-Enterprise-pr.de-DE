@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen zur Cloudakzeptanz, um Demo-, Wirksamkeitsnachweis- oder Entwicklungs-/Testumgebungen für Office 365 einzurichten.'
-ms.openlocfilehash: a61716ae34d8dbe3f710696570c46cefd0f4aa4c
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 37a99c313339f0894bf6fba0040bf2f7c2160fa6
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068141"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162378"
 ---
 # <a name="test-office-365-with-cloud-adoption-test-lab-guides-tlgs"></a>Testen von Office 365 mit Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz
 
@@ -61,10 +61,6 @@ Verwenden Sie die folgenden Artikel für Ihre Office 365-Entwicklungs-/Testumgeb
 - [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
     
     Konfigurieren und veranschaulichen Sie die Verbundauthentifizierung mit den Konten einer Active Directory Domain Services (AD DS)-Domäne.
-    
-- [Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung](cloud-app-security-for-your-office-365-dev-test-environment.md)
-    
-    Konfigurieren und Vorführen von Office 365 Cloud App Security, das Ihnen das Erstellen von Richtlinien ermöglicht, die verdächtige Aktivitäten in Ihrem Office 365-Abonnement überwachen und Sie ggf. informieren.
     
 - [Advanced Threat Protection für die Office 365-Entwicklungs-/Testumgebung](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
     

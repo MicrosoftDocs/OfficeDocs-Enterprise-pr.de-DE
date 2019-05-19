@@ -1,5 +1,5 @@
 ---
-title: Grundlegendes zu Office 365-Identitäten und Azure Active Directory
+title: Office 365 Identitäts Modelle und Azure Active Directory
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,69 +18,82 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Erfahren Sie, wie die Benutzeridentität in Office 365 verwaltet wird.
-ms.openlocfilehash: 85cfce4b08236bfcee74b6fe6d9c29766e7211c6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
+ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068761"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34162388"
 ---
-# <a name="understanding-office-365-identity-and-azure-active-directory"></a>Grundlegendes zu Office 365-Identitäten und Azure Active Directory
+# <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 Identitäts Modelle und Azure Active Directory
 
-Office 365 verwendet die Cloud-basierte Benutzeridentität und den Authentifizierungsdienst Azure Active Directory (Azure AD), um Benutzer zu verwalten. Die Auswahl, ob die Identitätsverwaltung zwischen Ihrer lokalen Organisation und Office 365 konfiguriert ist, ist eine frühe Entscheidung, die eine der Grundlagen ihrer Cloud-Infrastruktur darstellt. Da eine spätere Änderung dieser Konfiguration schwierig sein kann, sollten Sie die Optionen sorgfältig prüfen, um zu bestimmen, welche Anforderungen für Ihre Organisation am besten geeignet sind. Sie können zwischen zwei Haupt Authentifizierungsmodellen in Office 365 wählen, um Benutzerkonten einzurichten und zu verwalten. **Cloud-Authentifizierung** und **Verbundauthentifizierung**.
-  
-Es ist wichtig, sorgfältig zu überlegen, welche Authentifizierungs-und Identitäts Modelle für die Inbetriebnahme verwendet werden sollen. Denken Sie an die Zeit, die vorhandene Komplexität und die Kosten für die Implementierung und Verwaltung der einzelnen Authentifizierungs-und Identitäts Optionen. Diese Faktoren sind für jede Organisation unterschiedlich; Sie sollten die wichtigsten Konzepte für die Identitäts Optionen kennen, die Ihnen bei der Auswahl der Authentifizierungs-und Identitäts Modelle helfen sollen, die Sie für Ihre Bereitstellung verwenden möchten.
-  
-## <a name="cloud-authentication"></a>Cloud-Authentifizierung
+Office 365 verwendet Azure Active Directory (Azure AD), eine Cloud-basierte Benutzeridentität und einen Authentifizierungsdienst, der in Ihrem Office 365-Abonnement enthalten ist, um Identitäten und Authentifizierung für Office 365 zu verwalten. Die ordnungsgemäße Konfiguration Ihrer Identitätsinfrastruktur ist für die Verwaltung Office 365 Benutzerzugriffs und der Berechtigungen für Ihre Organisation unerlässlich.
 
-Je nachdem, ob Sie über eine lokale Active Directory-Umgebung verfügen oder nicht, haben Sie mehrere Möglichkeiten, Authentifizierungs-und Identitätsdienste für Ihre Benutzer mit Office 365 zu verwalten.
-  
-### <a name="cloud-only"></a>Rein cloudbasiert
+Bevor Sie beginnen, sehen Sie sich dieses Video an, um eine Übersicht über Identitäts Modelle und Authentifizierung für Office 365 und Microsoft 365 zu erhalten.
 
-Mit dem reinen Cloud-Modell verwalten Sie Ihre Benutzerkonten nur in Office 365. Es sind keine lokalen Server erforderlich; Es wird in der Cloud von Azure AD behandelt. Sie erstellen und verwalten Benutzer im [Microsoft 365 Admin Center](https://admin.microsoft.com) oder mithilfe von [PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) -Cmdlets von Windows PowerShell, und Identität und Authentifizierung werden vollständig in der Cloud von Azure AD behandelt. Das Cloud-Modell ist in der Regel eine gute Wahl, wenn: 
-  
-- Sie haben kein anderes lokales Benutzerverzeichnis.
-    
-- Sie verfügen über ein sehr komplexes lokales Verzeichnis und möchten lediglich die Arbeit vermeiden.
-    
-- Sie verfügen über ein vorhandenes lokales Verzeichnis, möchten aber eine Testversion oder einen Pilot von Office 365 ausführen. Später können Sie die Cloud-Benutzer lokalen Benutzern zuordnen, wenn Sie bereit sind, eine Verbindung mit Ihrem lokalen Verzeichnis herzustellen.
-    
-Informationen zu den ersten Schritten mit Cloud Identity finden Sie unter [Einrichten von Office 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa).
-  
-### <a name="password-hash-sync-with-seamless-single-sign-on"></a>Kennworthash Synchronisierung mit nahtlosem einmaligem Anmelden
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Die einfachste Möglichkeit zum Aktivieren der Authentifizierung für lokale Verzeichnisobjekte in Azure AD. Mit Password Hash Sync (PHS) synchronisieren Sie Ihre lokalen Active Directory-Benutzerkonto Objekte mit Office 365 und verwalten Ihre Benutzer lokal. Hashes von Benutzerkennwörtern werden aus Ihrem lokalen Active Directory mit Azure AD synchronisiert, sodass die Benutzer über das gleiche Kennwort lokal und in der Cloud verfügen. Wenn Kennwörter geändert oder lokal zurückgesetzt werden, werden die neuen Kenn Wort Hashes mit Azure AD synchronisiert, sodass Ihre Benutzer immer dasselbe Kennwort für Cloud-Ressourcen und lokale Ressourcen verwenden können. Die Kennwörter werden nie an Azure AD gesendet oder in Azure AD in Klartext gespeichert. Einige Premium Features von Azure AD, wie Identitätsschutz, erfordern PHS, unabhängig davon, welche Authentifizierungsmethode ausgewählt ist. Mit dem nahtlosen einmaligen Anmelden werden Benutzer automatisch bei Azure AD angemeldet, wenn Sie sich auf Ihren Unternehmensgeräten befinden und mit dem Unternehmensnetzwerk verbunden sind.
-  
-Hier finden Sie weitere Informationen zum [Auswählen der Kennworthash Synchronisierung](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) und [des nahtlosen einmaligen Anmeldens](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso).
-  
-### <a name="pass-through-authentication-with-seamless-single-sign-on"></a>Passthrough-Authentifizierung mit nahtlosem einmaligem Anmelden
+Ihre erste Planungs Wahl ist das Office 365 Identitätsmodell.
 
-Bietet eine einfache Kennwortüberprüfung für Azure AD-Authentifizierungsdienste mit einem Software-Agent, der auf einem oder mehreren lokalen Servern ausführt, um die Benutzer direkt mit Ihrem lokalen Active Directory zu überprüfen. Mit der Passthrough-Authentifizierung (PTA) synchronisieren Sie lokale Active Directory-Benutzerkonto Objekte mit Office 365 und verwalten Ihre Benutzer lokal. Ermöglicht Benutzern das Anmelden bei lokalen und Office 365-Ressourcen und-Anwendungen mithilfe des lokalen Kontos und des Kennworts. Diese Konfiguration validiert Benutzerkennwörter direkt für Ihr lokales Active Directory, ohne Kenn Wort Hashes an Office 365 zu senden. Unternehmen mit einer Sicherheitsanforderung zum sofortigen Erzwingen von lokalen Benutzerkontostatus, Kennwortrichtlinien und Anmeldezeiten würden diese Authentifizierungsmethode verwenden. Mit dem nahtlosen einmaligen Anmelden werden Benutzer automatisch bei Azure AD angemeldet, wenn Sie sich auf Ihren Unternehmensgeräten befinden und mit dem Unternehmensnetzwerk verbunden sind.
-  
-Erfahren Sie mehr über die [Auswahl der Passthrough-Authentifizierung](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) und [des nahtlosen einmaligen Anmeldens](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso).
-  
-## <a name="federated-authentication-options"></a>Optionen für die Verbundauthentifizierung
+## <a name="office-365-identity-models"></a>Office 365 Identitäts Modelle
 
-Wenn Sie über eine lokale Active Directory-Umgebung verfügen, können Sie Office 365 mithilfe der Verbundauthentifizierung in Ihr Verzeichnis integrieren, um Authentifizierungs-und Identitätsdienste für Ihre Benutzer in Office 365 zu verwalten.
-  
-### <a name="federated-identity-with-active-directory-federation-services-ad-fs"></a>Verbundidentität mit Active Directory-Verbunddiensten (AD FS)
+Um Benutzerkonten zu planen, müssen Sie zunächst die beiden Identitäts Modelle in Microsoft 365 verstehen. Sie können die Identitäten Ihrer Organisation nur in der Cloud verwalten, oder Sie können Ihre lokalen Active Directory-Domänendienste (AD DS)-Identitäten beibehalten und für die Authentifizierung verwenden, wenn Benutzer auf Microsoft 365 Cloud Services zugreifen.  
 
-In erster Linie für große Unternehmensorganisationen mit komplexeren Authentifizierungsanforderungen werden lokale Verzeichnisobjekte mit Office 365 synchronisiert, und Benutzerkonten werden lokal verwaltet. Bei AD FS haben Benutzer das gleiche Kennwort lokal und in der Cloud, und Sie müssen sich nicht erneut anmelden, um Office 365 zu verwenden. Dieses Verbund Authentifizierungsmodell kann zusätzliche Authentifizierungsanforderungen wie Smartcard-basierte Authentifizierung oder eine Drittanbieter-mehrstufige Authentifizierung bereitstellen und ist normalerweise erforderlich, wenn Organisationen über eine Authentifizierungsanforderung verfügen. von Azure AD nicht nativ unterstützt.
-  
-Erfahren Sie mehr über die [Auswahl der Verbundidentität mit AD FS](https://docs.microsoft.com/azure/security/azure-ad-choose-authn).
-  
-### <a name="third-party-authentication-and-identity-providers"></a>Authentifizierungs-und Identitätsanbieter von Drittanbietern
+Hier sind die beiden Arten von Identität und Ihre beste Anpassung und Vorteile.
 
-Lokale Verzeichnisobjekte können mit Office 365 synchronisiert werden, und der Zugriff auf Cloud-Ressourcen wird hauptsächlich von einem Drittanbieter-Identitätsanbieter (IDP) verwaltet. Wenn in Ihrer Organisation eine Drittanbieter-Verbundlösung verwendet wird, können Sie die Anmeldung mit dieser Lösung für Office 365 konfigurieren, vorausgesetzt, dass die Drittanbieter-Verbundlösung mit Azure AD kompatibel ist.
-  
-Erfahren Sie mehr über die [Kompatibilität mit Azure AD-Verbund](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility).
-  
-## <a name="configuring-identity-and-authentication-with-office-365"></a>Konfigurieren von Identität und Authentifizierung mit Office 365
+|||
+|:-------|:-----|:-----|
+|  | **Nur Cloud-Identität** | **Hybrid Identität** |
+| **Definition** | Das Benutzerkonto ist nur im Azure Active Directory (Azure AD)-Mandanten für Ihr Microsoft 365-Abonnement vorhanden. | Das Benutzerkonto ist in AD DS vorhanden, und eine Kopie befindet sich auch im Azure AD-Mandanten für Ihr Microsoft 365-Abonnement. Das Benutzerkonto in Azure AD kann auch eine gehashte Version des Benutzerkontokennworts enthalten. |
+| **So authentifiziert Microsoft 365 Benutzeranmeldeinformationen** | Der Azure AD Mandant für Ihr Microsoft 365-Abonnement führt die Authentifizierung mit dem Cloud-Identitätskonto aus. | Der Azure AD Mandant für Ihr Microsoft 365-Abonnement verarbeitet entweder den Authentifizierungsprozess oder leitet den Benutzer an einen anderen Identitätsanbieter um. |
+| **Am besten für** | Organisationen, die keine lokale AD DS haben oder benötigen. | Organisationen, die AD DS oder einen anderen Identitätsanbieter verwenden. |
+| **Größter Vorteil** | Einfach zu verwenden. Keine zusätzlichen Verzeichnis Tools oder Server erforderlich. | Benutzer können beim Zugriff auf lokale oder Cloud-basierte Ressourcen dieselben Anmeldeinformationen verwenden. |
+||||
 
-Die Integration Ihrer lokalen Verzeichnisse in Office 365 und Azure AD wurde mit [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)vereinfacht. Azure AD Connect ist die beste Möglichkeit zum Verbinden Ihrer Verzeichnisse und ist die Empfehlung von Microsoft für Organisationen, Ihre Benutzer mit der Cloud zu synchronisieren.
+## <a name="cloud-only-identity"></a>Nur Cloud-Identität
+
+Eine Cloud-only-Identität verwendet Benutzerkonten, die nur in Azure AD vorhanden sind. Die Cloud-Identität wird in der Regel von kleinen Organisationen verwendet, die nicht über lokale Server verfügen oder AD DS nicht zum Verwalten lokaler Identitäten verwenden. 
+
+Hier sind die grundlegenden Komponenten der reinen cloudbasierten Identität.
+ 
+![](./media/about-office-365-identity/cloud-only-identity.png)
+
+Sowohl lokale als auch Remotebenutzer verwenden Ihre Azure AD Benutzerkonten und Kennwörter für den Zugriff auf Office 365 Cloud-Dienste. Azure AD authentifiziert Benutzeranmeldeinformationen basierend auf den gespeicherten Benutzerkonten und Kennwörtern.
+
+### <a name="administration"></a>Verwaltung
+Da Benutzerkonten nur in Azure AD gespeichert werden, verwalten Sie Cloud-Identitäten mit Tools wie dem [Microsoft 365 Admin Center](https://admin.microsoft.com) und Windows PowerShell mit dem Azure Active Directory PowerShell für Graph-Modul. 
+
+## <a name="hybrid-identity"></a>Hybrid Identität
+
+Hybrid Identity verwendet Konten, die in einer lokalen AD DS stammen und über eine Kopie im Azure AD Mandanten eines Microsoft 365-Abonnements verfügen. Die meisten Änderungen fließen jedoch nur in eine Richtung. Änderungen, die Sie an AD DS Benutzerkonten vornehmen, werden mit Ihrer Kopie in Azure AD synchronisiert. Änderungen, die an cloudbasierten Konten in Azure AD vorgenommen werden, wie beispielsweise neue Benutzerkonten, werden jedoch nicht mit AD DS synchronisiert.
+
+Azure AD Connect stellt die laufende Konto Synchronisierung bereit. Er wird auf einem lokalen Server ausgeführt, überprüft auf Änderungen im AD DS und leitet diese Änderungen an Azure AD weiter. Azure AD Connect bietet die Möglichkeit, zu filtern, welche Konten synchronisiert werden, und ob eine gehashte Version von Benutzerkennwörtern synchronisiert werden soll, die als Password Hash Synchronization (PHS) bezeichnet wird.
+
+Wenn Sie die Hybrid Identität implementieren, ist Ihre lokale AD DS die autorisierende Quelle für Kontoinformationen. Dies bedeutet, dass Sie Verwaltungsaufgaben meist lokal ausführen, die dann mit Azure AD synchronisiert werden. 
+
+Hier sind die Komponenten der Hybrid Identität.
+
+![](./media/about-office-365-identity/hybrid-identity.png)
+
+Der Azure AD Mandant verfügt über eine Kopie der AD DS Konten. In dieser Konfiguration authentifizieren sich sowohl lokale als auch Remotebenutzer, die auf Microsoft 365 Cloud Services zugreifen, bei Azure AD.
+
+>[!Note]
+>Sie müssen immer Azure AD Connect verwenden, um Benutzerkonten für die Hybrid Identität zu synchronisieren. Sie benötigen die synchronisierten Benutzerkonten in Azure AD, um die Lizenzzuweisung und Gruppenverwaltung, Berechtigungen konfigurieren und andere administrative Aufgaben, die Benutzerkonten umfassen, auszuführen.
+>
+
+### <a name="administration"></a>Verwaltung
+
+Da die ursprünglichen und autorisierenden Benutzerkonten in der lokalen AD DS gespeichert werden, verwalten Sie Ihre Identitäten mit denselben Tools wie AD DS, beispielsweise das Tool Active Directory Benutzer und Computer. 
+
+Sie verwenden nicht das Microsoft 365 Admin Center oder Windows PowerShell zum Verwalten synchronisierter Benutzerkonten in Azure AD.
+
+## <a name="next-step"></a>Nächster Schritt
+
+Wenn Sie das Cloud-only-Identitätsmodell benötigen, lesen Sie [nur Cloud-Identitäten](cloud-only-identities.md).
+
+Wenn Sie das hybride Identitätsmodell benötigen, lesen Sie [Planung für Ihre synchronisierten Identitäten und Authentifizierungsmethoden](plan-for-directory-synchronization.md).
   
-Sie können auch die Azure AD Advisors verwenden: den [Azure AD Connect Advisor](https://aka.ms/aadconnectpwsync), den [AD FS-Bereitstellungs Ratgeber](https://aka.ms/adfsguidance)und das [Azure AD Premium-Setup Handbuch](https://aka.ms/aadpguidance).
-  
+
 ## <a name="video-training"></a>Videoschulung
 
-Weitere Informationen finden Sie im Video Kurs [Office 365: Verwalten von Identitäten mithilfe von Azure AD Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), die Ihnen von LinkedIn Learning präsentiert werden.
+Weitere Informationen finden Sie unter Video Kurs [Office 365: Verwalten von Identitäten mit Azure AD Connect](https://support.office.com/article/90991a1d-c0ab-479a-b413-35c9706f6fed.aspx), die Ihnen von LinkedIn Learning zur Verbringung bereitgestellt werden.
