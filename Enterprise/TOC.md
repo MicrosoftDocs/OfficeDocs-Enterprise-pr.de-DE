@@ -14,8 +14,7 @@
 ### [Hybrid Cloud-Szenarien für Azure IaaS](hybrid-cloud-scenarios-for-azure-iaas.md)
 ## [Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
-# Planen für Office 365
-## [Vorbereiten Ihrer Organisation](get-your-organization-ready-for-office-365.md)
+# [Plan für Office 365](get-your-organization-ready-for-office-365.md)
 
 ## Ihr Office 365-Mandant
 ### [Abonnements, Lizenzen und Benutzerkonten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
@@ -25,9 +24,9 @@
 #### [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](plan-for-network-devices.md)
 #### [Netzwerk- und Migrationsplanung für Office 365](network-and-migration-planning.md)
 
-### Planen Ihrer Identitäten
-#### [Office 365-Identitätsmodelle](about-office-365-identity.md)
-#### [Hybrididentitäten](plan-for-directory-synchronization.md)
+### Planen für Ihre Identitäten
+#### [Identitätsmodelle](about-office-365-identity.md)
+#### [Hybrididentität](plan-for-directory-synchronization.md)
 
 ### [Planen von Drittanbieter-SSL-Zertifikaten für Office 365](plan-for-third-party-ssl-certificates.md)
 ### [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
@@ -86,12 +85,7 @@
 ### [Datenklassifizierung und -bezeichnung](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Simuliertes standortübergreifendes virtuelles Netzwerk in Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
-# Bereitstellen von Office 365
-
-## Checklisten und bewährte Vorgehensweisen
-### [Bereitstellen von Office 365 Enterprise für Ihre Organisation](setup-overview-for-enterprises.md)
-### [Checkliste für die Bereitstellungsplanung](deployment-planning-checklist.md)
-### [Inhaltsübersicht für die Sicherheit von Office 365](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+# [Bereitstellen von Office 365 Enterprise](setup-overview-for-enterprises.md)
 
 ## 1. Einrichten Ihres Netzwerks
 ### [Einrichten Ihres Unternehmensnetzwerks](set-up-network-for-office-365.md)
@@ -132,16 +126,18 @@
 ##### [Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
 ##### [IdFix-Transaktionsprotokoll](idfix-transaction-log.md)
 #### [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md)
-### [Zuweisen von Lizenzen für Benutzerkonten](assign-licenses-to-user-accounts.md)
+### [Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)
 
-## 3. Bereitstellen von Clientsoftware
+## [3. Implementieren von Sicherheitsfunktionen](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+
+## 4. Bereitstellen von Clientsoftware
 ### [Bereitstellen von Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
 ### [Bereitstellen des Skype for Business-Clients](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Bereitstellen und Verwalten von mobilen Apps](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
-## [4. Konfigurieren der Verwaltung mobiler Geräte](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+## [5. Einrichten der Verwaltung mobiler Geräte](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-## 5. Konfigurieren von Diensten und Anwendungen
+## 6. Konfigurieren von Diensten und Anwendungen
 ### [Vorbereitungen](configure-services-and-applications.md)
 ### [Migrieren von Daten nach Office 365](migrate-data-to-office-365.md)
 ### [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
@@ -152,7 +148,7 @@
 ### [Aktivieren der Rechteverwaltung](activate-rms-in-office-365.md)
 ### [Konfigurieren von Veröffentlichungsoptionen](https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47)
 
-## [6. Schulen der Benutzer](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)
+## [7. Schulen der Benutzer](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
 ## Erweiterte Bereitstellung
 
