@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Erfahren Sie, wie die Benutzeridentität in Office 365 verwaltet wird.
-ms.openlocfilehash: 1d4a2f40ebae9fa87d59ee3f7c9b621b40b03640
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 421002825842201fa754b4c5579dc04fde37eeaf
+ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162388"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34249463"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365 Identitäts Modelle und Azure Active Directory
 
@@ -91,7 +91,7 @@ Sie verwenden nicht das Microsoft 365 Admin Center oder Windows PowerShell zum V
 
 Wenn Sie das Cloud-only-Identitätsmodell benötigen, lesen Sie [nur Cloud-Identitäten](cloud-only-identities.md).
 
-Wenn Sie das hybride Identitätsmodell benötigen, lesen Sie [Planung für Ihre synchronisierten Identitäten und Authentifizierungsmethoden](plan-for-directory-synchronization.md).
+Wenn Sie das hybride Identitätsmodell benötigen, lesen Sie die Informationen unter [Verzeichnissynchronisierung](plan-for-directory-synchronization.md).
   
 
 ## <a name="video-training"></a>Videoschulung
