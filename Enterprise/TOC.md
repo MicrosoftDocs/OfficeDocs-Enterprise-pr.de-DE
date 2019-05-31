@@ -121,7 +121,7 @@
 #### [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md)
 #### Verwenden des IdFix-Tools
 ##### [Vorbereiten von Verzeichnisattributen mit dem IdFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [Installieren und Ausführen des IdFix-Tools](install-and-run-idfix.md)
+##### [Herunterladen und Ausführen des IdFix-Tools](install-and-run-idfix.md)
 ##### [Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
 ##### [IdFix-Transaktionsprotokoll](idfix-transaction-log.md)
 #### [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md)
