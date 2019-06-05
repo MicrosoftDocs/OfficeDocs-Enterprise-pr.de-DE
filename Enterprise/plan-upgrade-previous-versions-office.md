@@ -3,7 +3,7 @@ title: Planen des Upgrades von Office 2007-oder 2010-Servern und-Clients
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/12/2019
+ms.date: 06/04/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es an der Zeit, das Upgrade zu planen. Lassen Sie sich nicht mit veralteten apps verkleben. Verwenden Sie diese Ressourcen, um mit Ihrem Plan zu beginnen.
-ms.openlocfilehash: 0ef77765b2f75bc0c8680c5fb93167ad1a32983a
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 1867661c158667a6da6108380841f8d9d692ba15
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539277"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704106"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007-oder Office 2010-Servern und-Clients
 
-Wenn Ihre Organisation ältere Versionen von Office-Produkten und-Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung des Upgrades zu beginnen. Office 2007 Produkte und Dienstleistungen haben ihren unter Stützungs Stand erreicht, und Office 2010 Produkte und Dienstleistungen werden am **13. Oktober 2020**ihr Ende der Unterstützung erreichen. Verwenden Sie die Ressourcen in diesem Abschnitt, um loszulegen.
+Wenn Ihre Organisation ältere Versionen von Office-Produkten und-Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung des Upgrades zu beginnen. Office 2007 Produkte und Dienste haben ihr Ende des Supports erreicht. Exchange 2010 wird am **14. Januar 2020**das Ende der Unterstützung erreichen. Weitere Office 2010 Produkte und Dienstleistungen werden am **13. Oktober 2020**ihren Ende der Unterstützung erreichen. Verwenden Sie die Ressourcen in diesem Abschnitt, um loszulegen.
 
 - [Upgrade von Office 2007-Servern und-Clients](upgrade-from-office-2007-servers-and-products.md)
 
@@ -71,8 +71,8 @@ Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie die folgen
 - **Versuchen Sie Office 365 für die Verwendung zu Hause**. Überprüfen Sie die [Anforderungen](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), und wählen Sie dann zwischen [Office 365 privat](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) oder [Office 365 persönlich](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf)aus. Starten Sie eine Testversion, und sehen Sie, wie Office 365 für Sie funktioniert. Mit Office 365 genießen Sie cloudspeicher mit OneDrive, Sie erhalten monatlich 60 Minuten Skype-Anrufe zu Mobiltelefonen und Festnetznummern, und Sie erhalten viele weitere großartige Features. Weitere Informationen finden Sie unter [holen Sie das meiste aus Office mit Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
     
 - **Erwerben von Office &amp; Home Student**. Wenn Sie diese Option auswählen, erstellen Sie einen einmaligen Kauf und installieren dann Office auf Ihrem Windows-PC oder Mac. Dies ist kein Abonnement; Es handelt sich um eine einmalige, dauerhafte Nutzungslizenz für einen Computer. Zeigen Sie die [Anforderungen](http://office.com/systemrequirements)an, und wählen Sie dann die Version aus, die Sie verwenden möchten.
-    - Wenn Ihr Windows-PC Windows 10 ausführt, erwägen Sie, [Office Home & Student 2019 zu](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)erhalten.
-    - Wenn Ihr Windows-PC Windows 7, 8 oder 8,1 ausführt und Sie derzeit kein Upgrade auf Windows 10 durchführen, sollten Sie erwägen, Office Home & Student 2016 (oder eine andere Edition von Microsoft Office) von einem autorisierten Wiederverkäufer zu erhalten.
+    - Wenn Ihr Windows-PC Windows 10 ausführt, erwägen Sie, [Office Home #a0 Student 2019 zu](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8)erhalten.
+    - Wenn Ihr Windows-PC Windows 7, 8 oder 8,1 ausführt und Sie derzeit kein Upgrade auf Windows 10 durchführen, sollten Sie erwägen, Office Home #a0 Student 2016 (oder eine andere Edition von Microsoft Office) von einem autorisierten Wiederverkäufer zu erhalten.
 
 Sie können auch auswählen, dass derzeit kein Upgrade ausgeführt wird. Ihre Office-Apps werden weiterhin ausgeführt. (Zeitpläne für Office-Support Termine stehen [hier](https://go.microsoft.com/fwlink/p/?linkid=2085724)zur Verfügung.) Durch ein Upgrade erhalten Sie jedoch Zugriff auf neue und verbesserte Features, einschließlich Sicherheitsupdates. 
    

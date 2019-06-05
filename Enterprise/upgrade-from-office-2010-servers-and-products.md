@@ -3,7 +3,7 @@ title: Ressourcen für das Upgrade von Office 2010-Servern und-Clients
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2019
+ms.date: 06/03/2019
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -21,16 +21,20 @@ search.appverid:
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Der Support endet in Kürze für Office 2010 Server und Clientanwendungen, und es sind keine benutzerdefinierten Support Vereinbarungen verfügbar. Verwenden Sie diesen Artikel, um mit der Planung des Upgrades jetzt zu beginnen.
-ms.openlocfilehash: 11bd2e7acf5c35a427b2acd04fd37605615b42ed
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: de5c3f8d3e8cc86a2b53d175725e21f764f20df7
+ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539211"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34704085"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2010-Servern und-Clients
 
-Wenn Sie Office 2010-Produkte und-Dienste verwenden, wissen Sie wahrscheinlich, dass Office 2010 Produkte und Dienste am **13. Oktober 2020**am Ende des Supports stehen. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in Office 365 zu ziehen. Office 365 verfügt über Cloud-basierte Dienste für Office 2010-Serverprodukte wie Exchange Server und SharePoint Server sowie neue Dienste wie Teams und OneDrive für Unternehmen. Office 365 ProPlus sind die Office 2010 Client-apps, die Sie auf Ihrem lokalen Gerät installieren und mit neuen Produktivitäts-und Sicherheitsfeatures auf ongoign Basis aus der Microsoft-Cloud aktualisiert werden. Office 365 ProPlus ist in Office 365 E3 und E5 enthalten.
+Exchange 2010 wird am **14. Januar 2020**das Ende der Unterstützung erreichen. Weitere Office 2010 Produkte und Dienstleistungen werden am **13. Oktober 2020**ihren Ende der Unterstützung erreichen. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in Office 365 zu ziehen. 
+
+Office 365 verfügt über Cloud-basierte Dienste für Office 2010-Serverprodukte wie Exchange Server und SharePoint Server sowie neue Dienste wie Teams und OneDrive für Unternehmen. 
+
+Office 365 ProPlus, das in Office 365 E3 und E5 enthalten ist, ist die Gruppe von Office-Client-apps, die Sie auf Ihrem lokalen Gerät installieren. Sie werden laufend mit neuen Produktivitäts-und Sicherheitsfeatures aus der Microsoft-Cloud aktualisiert.
 
 Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen.
       
