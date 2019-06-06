@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: dc783672f8f667e424ad738d8eb9091732537ebe
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
+ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162408"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34726231"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
@@ -95,11 +95,11 @@ In diesem Verfahren erstellen Sie zwei Word-Dokumente, die Sie später in einem 
     
 3. Klicken Sie auf der Registerkarte **Produktions-Websitesammlung** unter **Dokumente** auf **Neu > Word-Dokument**.
     
-4. Geben Sie auf der Seite **Word Online****Tailspin-Vertrangsentwurf** ein, warten Sie, bis **Gespeichert** im Titel angezeigt wird, und schließen Sie dann die Seite **Word Online**.
+4. Geben Sie auf der **Word** -Seite den Namen **Tailspin Draft Contract**ein, warten Sie, bis er im Titel **gespeichert** angezeigt wird, und schließen Sie dann die Registerkarte **Word** -Seite.
     
 5. Klicken Sie auf der Registerkarte **Produktions-Websitesammlung** unter **Dokumente** auf **Neu > Word-Dokument**.
     
-6. 	Geben Sie auf der Seite **Word Online****Tailspin-Vertrangsentwurf** ein, warten Sie, bis **Gespeichert** im Titel angezeigt wird, und schließen Sie dann die Seite **Word Online**.
+6. Geben Sie auf der Registerkarte **Word** die Informationen zu **Tailspin Contract Dispute**ein, warten Sie, bis Sie im Titel **gespeichert** angezeigt wird, und schließen Sie dann die Registerkarte **Word** .
     
 7. Auf der Registerkarte **Produktions-Websitesammlung** sollte nun **Dokument** und **Dokument1** in der Liste der Dokumente angezeigt werden.
     
@@ -139,7 +139,7 @@ In diesem Verfahren erstellen Sie eine Suche im Security &amp; Compliance Center
     
 11. Klicken Sie im Fenster **Rollengruppe** auf **Speichern**.
     
-12. Klicken Sie in der linken Navigationsleiste auf **Suche &amp; Untersuchung > Inhaltssuche**.
+12. Klicken Sie in der linken Navigationsleiste auf **Such &amp; Untersuchungs #a0 Inhaltssuche**.
     
 13. Klicken Sie auf das Pluszeichen, um eine Suche hinzuzufügen.
     
