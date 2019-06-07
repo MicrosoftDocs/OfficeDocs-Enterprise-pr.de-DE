@@ -20,7 +20,7 @@
 ### [Abonnements, Lizenzen und Benutzerkonten](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 
 ### Planen Ihres Netzwerks
-#### [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
+#### [Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
 #### [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](plan-for-network-devices.md)
 #### [Netzwerk- und Migrationsplanung für Office 365](network-and-migration-planning.md)
 
@@ -92,8 +92,8 @@
 ### [Office 365 – Überblick über die Netzwerkkonnektivität](office-365-networking-overview.md)
 ### [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
 ### [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md)
-### [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
-### [Office 365-Netzwerkpartnerprogramm](office-365-networking-partner-program.md)
+### [Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
+### [Office 365 Networking Partner Program](office-365-networking-partner-program.md)
 ### Office 365 – IP-Adressen und URLs
 #### [Office 365-Endpunkte](office-365-endpoints.md)
 #### [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
