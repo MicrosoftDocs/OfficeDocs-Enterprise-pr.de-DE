@@ -1,5 +1,5 @@
 ---
-title: Hochverfügbarkeit der Verbundauthentifizierung, Phase 4 Konfigurieren von Webanwendungs Proxys
+title: Hoch Verfügbarkeits Verbund Authentifizierungs Phase 4 Konfigurieren von Webanwendungs Proxys
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Zusammenfassung: Konfigurieren Sie die Webanwendungs-Proxy Server für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: fa8f5d278283f66bda0aa9efb0dddf40e52ee1a6
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: fe98657f1298021d9ed2c32a357051b5faeb4f21
+ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067331"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34102533"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 4: Konfigurieren von Webanwendungsproxys
 
@@ -96,7 +96,7 @@ Beachten Sie, dass die folgenden Azure PowerShell-Befehlssätze Werte aus den fo
     
 - Tabelle A (für die Verfügbarkeitsgruppen)
     
-Denken Sie daran, dass Sie in der [hoch Verfügbarkeits Verbund Authentifizierungsphase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) und Tabellen R, V, S, I und A in [Hochverfügbarkeit Verbund Authentifizierungsphase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Denken Sie daran, dass Sie Tabelle M in der [Verbundauthentifizierung mit hoher Verfügbarkeit definiert haben: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) und Tabellen R, V, S, I und A in der [Verbundauthentifizierung mit hoher Verfügbarkeit Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.
   
@@ -158,7 +158,7 @@ Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration w
   
 **Phase 4: Der Lastenausgleich mit Internetzugriff und die Webanwendungsproxy-Server für Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit in Azure**
 
-![Phase 4 der hoch Verfügbarkeits-Office 365-Verbund Authentifizierungsinfrastruktur in Azure mit den Webanwendungs Proxyservern](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Phase 4 der hoch Verfügbarkeits Office 365 Verbund Authentifizierungsinfrastruktur in Azure mit den Webanwendungs-Proxyservern](media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -171,7 +171,4 @@ Gehen Sie weiter zu [High availability federated authentication Phase 5: Configu
 [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
-
-[Optionen für die Verbundauthentifizierung](about-office-365-identity.md#federated-authentication-options)
-
 
