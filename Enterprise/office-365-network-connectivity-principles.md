@@ -3,7 +3,7 @@ title: Prinzipien von Office 365-Netzwerkverbindungen
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/14/2018
+ms.date: 6/5/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,18 +14,18 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Bevor Sie mit der Planung Ihres Netzwerks für Office 365 Netzwerkkonnektivität beginnen, müssen Sie sich mit den Grundlagen der Konnektivität vertraut machen, um Office 365 Datenverkehr sicher zu verwalten und die bestmögliche Leistung zu erzielen. Dieser Artikel hilft Ihnen, die neuesten Anleitungen für die sichere Optimierung Office 365 Netzwerkkonnektivität zu verstehen.
-ms.openlocfilehash: d242196c2136962bf11472b51c28889977c2fc21
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
+ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162498"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017295"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Prinzipien von Office 365-Netzwerkverbindungen
 
 Bevor Sie mit der Planung Ihres Netzwerks für Office 365 Netzwerkkonnektivität beginnen, müssen Sie sich mit den Grundlagen der Konnektivität vertraut machen, um Office 365 Datenverkehr sicher zu verwalten und die bestmögliche Leistung zu erzielen. Dieser Artikel hilft Ihnen, die neuesten Anleitungen für die sichere Optimierung Office 365 Netzwerkkonnektivität zu verstehen.
   
-Herkömmliche Unternehmensnetzwerke sind in erster Linie darauf ausgelegt, Benutzern den Zugriff auf Anwendungen und Daten zu ermöglichen, die in firmeneigenen Rechenzentren mit hoher Perimeter-Sicherheit gehostet werden. Bei dem herkömmlichen Modell wird davon ausgegangen, dass Benutzer auf Anwendungen und Daten aus dem Umkreis des Unternehmensnetzwerks, über WAN-Verbindungen von Zweigstellen oder Remote über VPN-Verbindungen zugreifen. 
+Herkömmliche Unternehmensnetzwerke sind in erster Linie darauf ausgelegt, Benutzern den Zugriff auf Anwendungen und Daten zu ermöglichen, die in firmeneigenen Rechenzentren mit hoher Perimeter-Sicherheit gehostet werden. Bei dem herkömmlichen Modell wird davon ausgegangen, dass Benutzer auf Anwendungen und Daten aus dem Umkreis des Unternehmensnetzwerks, über WAN-Verbindungen von Zweigstellen oder Remote über VPN-Verbindungen zugreifen.
   
 Durch die Einführung von SaaS-Anwendungen wie Office 365 wird eine Kombination von Diensten und Daten außerhalb des Netzwerkperimeters verschoben. Ohne Optimierung unterliegt der Datenverkehr zwischen Benutzern und SaaS-Anwendungen der Wartezeit, die durch die Paketüberprüfung, Netzwerk-Haarnadeln, versehentliche Verbindungen mit geografisch entfernten Endpunkten und anderen Faktoren verursacht wurde. Sie können die beste Office 365 Leistung und Zuverlässigkeit sicherstellen, indem Sie wichtige Optimierungsrichtlinien verstehen und implementieren.
   
@@ -37,6 +37,7 @@ In diesem Artikel erfahren Sie mehr über die folgenden Themen:
 - [Neue Office 365-Endpunkt Kategorien](office-365-network-connectivity-principles.md#BKMK_Categories) und Optimierungs Anleitungen
 - [Vergleichen der Netzwerkumkreis Sicherheit mit der Endpunktsicherheit](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - Optionen für die [inkrementelle Optimierung](office-365-network-connectivity-principles.md#BKMK_IncOpt) für Office 365 Datenverkehr
+- Das [Office 365-Netzwerk](https://aka.ms/netonboard)-Onboarding-Tool, ein neues Tool zum Testen der grundlegenden Konnektivität mit Office 365
 
 ## <a name="office-365-architecture"></a>Office 365 Architektur
 <a name="BKMK_Architecture"> </a>
@@ -61,7 +62,7 @@ Das primäre Ziel im Netzwerkentwurf sollte es sein, die Wartezeit zu minimieren
   
 Das identifizieren Office 365 Netzwerkdatenverkehrs ist der erste Schritt in der Lage, diesen Datenverkehr von dem allgemeinen Internet gebundenen Netzwerkdatenverkehr zu unterscheiden. Office 365 Konnektivität kann durch Implementierung einer Kombination von Ansätzen wie Netzwerkrouten Optimierung, Firewallregeln, Browser Proxyeinstellungen und Umgehung von Netzwerk Inspektionsgeräten für bestimmte Endpunkte optimiert werden.
   
-Frühere Office 365 Optimierungs Anleitungen unterteilen Office 365 Endpunkte in zwei Kategorien, **erforderlich** und **optional**. Da Endpunkte zur Unterstützung neuer Office 365-Dienste und-Features hinzugefügt wurden, haben wir Office 365 Endpunkte in drei Kategorien umstrukturiert: **optimize**, **Allow** und **default**. Richtlinien für jede Kategorie gelten für alle Endpunkte in der Kategorie, wodurch die Optimierung einfacher zu verstehen und zu implementieren ist. 
+Frühere Office 365 Optimierungs Anleitungen unterteilen Office 365 Endpunkte in zwei Kategorien, **erforderlich** und **optional**. Da Endpunkte zur Unterstützung neuer Office 365-Dienste und-Features hinzugefügt wurden, haben wir Office 365 Endpunkte in drei Kategorien umstrukturiert: **optimize**, **Allow** und **default**. Richtlinien für jede Kategorie gelten für alle Endpunkte in der Kategorie, wodurch die Optimierung einfacher zu verstehen und zu implementieren ist.
   
 Weitere Informationen zum Office 365 von Endpunkt Kategorien und Optimierungsmethoden finden Sie im Abschnitt [neue Office 365-Endpunkt Kategorien](office-365-network-connectivity-principles.md#BKMK_Categories) .
   
@@ -149,7 +150,7 @@ Office 365 Endpunkte stellen eine unterschiedliche Gruppe von Netzwerkadressen u
 > [!NOTE]
 > Die Speicherorte von Office 365 Endpunkten im Netzwerk beziehen sich nicht direkt auf den Speicherort der Office 365 Mandantendaten. Aus diesem Grund sollten Kunden Office 365 als einen verteilten und globalen Dienst betrachten und nicht versuchen, Netzwerkverbindungen zu Office 365 Endpunkten basierend auf geografischen Kriterien zu blockieren.
   
-In unserem vorherigen Leitfaden für die Verwaltung Office 365 Datenverkehrs wurden Endpunkte in zwei Kategorien unterteilt, **erforderlich** und **optional**. Endpunkte innerhalb jeder Kategorie erforderten unterschiedliche Optimierungen, je nach der Wichtigkeit des Diensts, und viele Kunden stellten sich vor Herausforderungen, um die Anwendung derselben Netzwerkoptimierungen auf die vollständige Liste der Office 365-URLs und IP-Adressen zu rechtfertigen. 
+In unserem vorherigen Leitfaden für die Verwaltung Office 365 Datenverkehrs wurden Endpunkte in zwei Kategorien unterteilt, **erforderlich** und **optional**. Endpunkte innerhalb jeder Kategorie erforderten unterschiedliche Optimierungen, je nach der Wichtigkeit des Diensts, und viele Kunden stellten sich vor Herausforderungen, um die Anwendung derselben Netzwerkoptimierungen auf die vollständige Liste der Office 365-URLs und IP-Adressen zu rechtfertigen.
   
 Im neuen Modell werden Endpunkte in drei Kategorien unterteilt: **optimize**, **Allow** und **default**, wobei ein prioritätsbasierter Drehpunkt bereitgestellt wird, in dem die Bemühungen zur Netzwerkoptimierung konzentriert werden, um die besten Leistungsverbesserungen zu erzielen und die Rückgabe auf Investitionen. Die Endpunkte werden in den oben aufgeführten Kategorien basierend auf der Sensibilität der effektiven Benutzeroberfläche für Netzwerkqualität, Volumen und Leistung von Szenarien und der einfachen Implementierung konsolidiert. Empfohlene Optimierungen können auf die gleiche Weise auf alle Endpunkte in einer bestimmten Kategorie angewendet werden.
   
@@ -240,3 +241,31 @@ Sie können die Optimierung als inkrementellen Prozess angehen, indem Sie jede M
 |Umgehen von Proxys und Inspektionsgeräten  <br/> |Konfigurieren Sie Browser mit PAC-Dateien, die Office 365 Anforderungen direkt an Ausgangspunkte senden.  <br/> Konfigurieren Sie Edge-Router und Firewalls, um Office 365 Datenverkehr ohne Inspektion zu ermöglichen.  <br/> | Minimieren der Wartezeit  <br/>  Verringern der Auslastung von Netzwerkgeräten  <br/> |
 |Aktivieren der direkten Verbindung für VPN-Benutzer  <br/> |Aktivieren Sie für VPN-Benutzer Office 365 Verbindungen, um eine direkte Verbindung mit dem Netzwerk des Benutzers und nicht über den VPN-Tunnel herzustellen, indem Sie geteilte Tunneling implementieren.  <br/> | Minimieren der Wartezeit  <br/>  Verbessern der zuverlässigen Konnektivität mit dem nächsten Office 365 Einstiegspfad  <br/> |
 |Migrieren von einem herkömmlichen WAN zu einem SD-WAN  <br/> |SD-WANs (Software Defined Wide Area Networks) vereinfachen die WAN-Verwaltung und verbessern die Leistung, indem herkömmliche WAN-Router durch virtuelle Appliances ersetzt werden, ähnlich der Virtualisierung von Compute-Ressourcen mithilfe virtueller Computer (VMS).  <br/> | Verbessern der Leistung und Verwaltbarkeit des WAN-Datenverkehrs  <br/>  Verringern der Auslastung von Netzwerkgeräten  <br/> |
+
+## <a name="related-topics"></a>Verwandte Themen
+
+[Office 365 Netzwerkkonnektivität (Übersicht)](office-365-networking-overview.md)
+
+[Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
+
+[URLs und IP-Adressbereiche für Office 365](urls-and-ip-address-ranges.md)
+
+[Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
+
+[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+
+[Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
+
+[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+
+[Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
+
+[Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
+
+[Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
+
+[Office 365 Netzwerk-Onboarding-Tool](https://aka.ms/netonboard)
+
+[So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+
+[Blog "Office 365 Networking"](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
