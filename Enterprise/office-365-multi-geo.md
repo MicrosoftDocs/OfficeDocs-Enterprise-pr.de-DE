@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Office 365 Multi-Geo.
-ms.openlocfilehash: 25621a0a8c833c4334fe6f70e7cb04d15690ba71
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
+ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069751"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "35078509"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -55,7 +55,7 @@ Office 365 Multi-Geo wird derzeit in diesen Regionen und Ländern angeboten:
 
 Gehen Sie folgendermaßen vor, um mit Multi-Geo loszulegen:
 
-1. Arbeiten Sie mit Ihrem Kontoteam, um den Serviceplan für _Multi-Geo-Funktionen in Office 365_ hinzuzufügen. Sie werden angeleitet, die benötigten Lizenzen hinzuzufügen. Multi-Geo ist für Kunden mit mindestens 2.500 Office 365-Abonnements verfügbar.
+1. Arbeiten Sie mit Ihrem Kontoteam, um den Serviceplan für _Multi-Geo-Funktionen in Office 365_ hinzuzufügen. Sie werden angeleitet, die benötigten Lizenzen hinzuzufügen. Multi-Geo ist für Kunden mit mindestens 500 Office 365-Abonnements verfügbar.
 
    Bevor Sie mit der Verwendung von Office 365 Muli-Geo beginnen können, muss Ihr Exchange Online-Mandant durch Microsoft für die Unterstützung von Multi-Geo konfiguriert werden. Dieser einmalige Konfigurationsprozess wird ausgelöst, nach dem Sie den Service-Plan für *Multi-Geo Capabilities in Office 365* bestellt haben und die Lizenzen in Ihrem Mandanten angezeigt werden. Sie erhalten im [Office 365-Nachrichtencenter](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) Benachrichtigungen, sobald Ihre Multi-Geo-Lizenzen angewendet werden und können dann mit dem Konfigurieren und Verwenden Ihrer Office 365 Multi-Geo-Funktionen beginnen.
 
