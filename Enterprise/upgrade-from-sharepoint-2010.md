@@ -15,16 +15,16 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Die Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 58e642a0a38dac1d140487716ab3e46b6fafd53f
-ms.sourcegitcommit: 346fde563ad598598a9832f8a0a6f7cc0a802306
+ms.openlocfilehash: d2114baf03d19c6be818139a08ed93ff3b64f664
+ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "34704156"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203614"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
-Microsoft SharePoint 2010 und SharePoint Server 2010 erreichen das Ende der Unterstützung am **13. Oktober 2020**. In diesem Artikel werden Ressourcen erläutert, mit denen Personen vorhandene SharePoint Server 2010 Daten in SharePoint Online migrieren oder Ihre lokale SharePoint Server 2010 Umgebung aktualisieren können.
+Microsoft SharePoint 2010 und SharePoint Server 2010 erreichen das Ende der Unterstützung am **13. Oktober 2020**. In diesem Artikel werden die Ressourcen erläutert, die Sie beim Migrieren vorhandener SharePoint Server 2010 Daten zu SharePoint Online in Office 365 oder beim Upgrade Ihrer lokalen SharePoint Server 2010 Umgebung unterstützen.
   
 ## <a name="what-is-end-of-support"></a>Was ist das Ende der Unterstützung?
 
@@ -74,7 +74,7 @@ SharePoint Server 2013 und SharePoint Foundation 2013 können lokal auf Ihren ei
     
 - Beides
     
-- Implementieren einer [SharePoint-Hybrid](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx) Lösung 
+- Implementieren einer [SharePoint-Hybrid](https://docs.microsoft.com/sharepoint/hybrid/hybrid) Lösung 
     
 Beachten Sie die versteckten Kosten, die im Zusammenhang mit der Wartung einer Serverfarm in Zukunft, beim warten oder Migrieren von Anpassungen und beim Upgraden der Hardware, von der SharePoint Server abhängt, abhängen. Wenn Sie alle diese Informationen kennen und berücksichtigt haben, ist es einfacher, das Upgrade lokal fortzusetzen. Andernfalls können Sie von einer geplanten Migration zu SharePoint Online profitieren, wenn Sie die Farm auf älteren SharePoint-Servern ohne starke Anpassung ausführen. Es ist auch möglich, dass Sie für Ihre lokale SharePoint Server Umgebung möglicherweise einige Daten in SharePoint Online einfügen, um die Hardwareverwaltung zu reduzieren, die alle lokalen Daten umfasst. Es ist möglicherweise sparsamer, einige Ihrer Daten in SharePoint Online zu verlagern.
   
