@@ -1,9 +1,9 @@
 ---
-title: Moving Core Data to New Office 365 Datacenter GEOS
+title: Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 06/28/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -11,26 +11,26 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
-description: 'Das neue Datacenter GEOS fügt Kapazitäten hinzu und berechnet Ressourcen zur Unterstützung der laufenden Kundennachfrage und des Nutzungs Wachstums. Darüber hinaus bietet das neue Datencenter GEOS in-Geo Data Residency für Kernkunden Daten an. Die wichtigsten Kundendaten beziehen sich auf eine Teilmenge der Kundendaten, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online-Postfachinhalte (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online-Websiteinhalt und die Dateien innerhalb dieser Website gespeichert und Dateien in OneDrive for Business hochgeladen.'
-ms.openlocfilehash: 8dd9295618c765bb9eeaffbcec82ff83af8b2e21
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'Neues Rechenzentrum GEOS Kapazität hinzufügen und Ressourcen berechnen, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online Websiteinhalt und die Dateien in dieser Website gespeichert und in OneDrive für Unternehmen hochgeladene Dateien.'
+ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
+ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069991"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "35392345"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Moving Core Data to New Office 365 Datacenter GEOS
+# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 
-Wir öffnen weiterhin das neue Datacenter GEOS für Office 365 für Business-Dienste. Mit diesem neuen Datencenter GEOS werden Kapazität und Ressourcen zur Unterstützung der laufenden Kundennachfrage und des Nutzungs Wachstums hinzugefügt. Darüber hinaus bietet das neue Datencenter GEOS in-Geo Data Residency für Kernkunden Daten an. 
+Wir öffnen weiterhin das neue Rechenzentrum GEOS für Office 365 für Unternehmen Dienste. In diesem neuen Datencenter-GEOS wird Kapazität hinzugefügt und Ressourcen berechnet, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. 
 
-Die wichtigsten Kundendaten beziehen sich auf eine Teilmenge der Kundendaten, die in den [Microsoft Online Services-Bedingungen](https://go.microsoft.com/fwlink/p/?LinkID=249048)definiert sind: 
-- Exchange Online-Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen)
-- SharePoint Online-Websiteinhalt und die auf dieser Website gespeicherten Dateien
-- Hochgeladene Dateien in OneDrive for Business 
+Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den [Microsoft Online Services-Bedingungen](https://go.microsoft.com/fwlink/p/?LinkID=249048)definiert sind: 
+- Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen)
+- SharePoint Online Websiteinhalt und die Dateien, die auf dieser Website gespeichert sind
+- In OneDrive für Unternehmen hochgeladene Dateien 
   
-Bestehende Kunden, deren Kernkunden Daten in einem bereits vorhandenen Datacenter Geo gespeichert sind, wirken sich nicht auf die Einführung eines neuen Rechenzentrums Geo aus. Wir stellen keine eindeutigen Funktionen, Features oder Konformitäts Zertifizierungen mit dem neuen Rechenzentrum Geo vor. Als Kunde in einem dieser beiden GEOSS erleben Sie die gleiche Qualität an Service-, Leistungs-und Sicherheitskontrollen wie zuvor. Wir bieten vorhandenen Kunden, die strenge Anforderungen an den Daten Wohnsitz haben und die in der folgenden Tabelle aufgeführt sind, eine Option, um Ihre Kernkunden Daten auf die neue Geo zu verschieben.
+Vorhandene Kunden, deren Kernkunden Daten in einer bereits vorhandenen Rechenzentrums-Geo-Datenbank gespeichert sind, werden durch den Start eines neuen Rechenzentrums Geo nicht beeinträchtigt. Mit dem neuen Rechenzentrum Geo stellen wir keine eindeutigen Funktionen, Features oder Konformitäts Zertifizierungen vor. Als Kunde in jedem dieser beiden GEOSS haben Sie die gleiche Dienstqualität, Leistung und Sicherheitskontrollen wie zuvor. Wir bieten vorhandenen Kunden, die in der Tabelle unten aufgeführt sind, eine Option zur Anforderung einer frühzeitigen Migration der wichtigsten Kundendaten Ihrer Organisation in Rest zu Ihrem neuen Rechenzentrum Geo an.
   
-|Kunden mit Rechnungsadresse in * * * *|Frühere Datencenter Geo * * * *|Neues Datencenter Geo * * * *|Geo verfügbar seit * * * *|
+|Kunden mit Rechnungsadresse in * * * *|Vorheriges Rechenzentrum Geo * * * *|Neues Rechenzentrum Geo * * * *|Geo verfügbar seit * * * *|
 |:-----|:-----|:-----|:-----|
 |Japan * * * *| Asien/Pazifik | Japan | Dezember 2014 |
 |Australien, Neuseeland, Fidschi * * * *| Asien/Pazifik | Australien | März 2015 |
@@ -41,27 +41,24 @@ Bestehende Kunden, deren Kernkunden Daten in einem bereits vorhandenen Datacente
 |Frankreich * * * *| Europa | Frankreich | März 2018 |
 |Vereinigte Arabische Emirate * * * *| Europa | Vereinigte Arabische Emirate | Angekündigt |
 |Südafrika * * * *| Europa | Südafrika | Angekündigt |
-   
-> [!NOTE]
-> Die Option Data Residency und die Verfügbarkeit, um Kundendaten in den neuen Geo zu verschieben, ist kein Standard für jeden neuen Geo, den wir starten. Wenn wir in Zukunft zu Neuerungen in GEOS expandieren, werden wir die Verfügbarkeit und die Bedingungen der Datenverschiebungen auf Geo-Geo-Basis bewerten. 
   
-Neue Kunden oder Office 365-Mandanten, die nach der Verfügbarkeit des neuen Rechenzentrums Geo erstellt wurden, werden automatisch Ihre Kernkunden Daten im neuen Datacenter Geo speichern.
+Für neue Kunden oder Office 365 Mandanten, die nach der Verfügbarkeit des neuen Rechenzentrums-Geo erstellt wurden, werden Ihre Kernkunden Daten automatisch in der neuen Rechenzentrums-Geo-Datenbank gespeichert.
   
-Eine vollständige Liste aller Datencenter-GEOSS,-Rechenzentren und des Standorts der in der Ruhe gestellten Kundendateien ist im Rahmen der [interaktiven Rechenzentrums Karten](https://office.com/datamaps)verfügbar. 
+Eine vollständige Liste aller GEOSS, Rechenzentren und des Speicherorts von Kundendaten im Rest steht als Teil der interaktiven Karten für das [Rechenzentrum](https://office.com/datamaps)zur Verfügung. 
   
-## <a name="data-residency-option"></a>Daten Wohnsitz Option
+## <a name="data-residency-option"></a>Data Residency-Option
 
-Wir stellen eine Daten Aufenthalts Option für bestehende Office 365-Kunden bereit, die vom Datacenter GEOS in der obigen Tabelle abgedeckt werden. Mit dieser Option können Kunden mit Daten Wohnsitz Anforderungen anfordern, ihre Kernkunden Daten in den neuen Geo zu verschieben. Wir empfehlen unseren Kunden, keine Maßnahmen zu ergreifen, es sei denn, Ihre Organisation benötigt Kernkunden Daten, die in ihrem jeweiligen neuen Datacenter Geo gespeichert werden sollen. Wenn Sie sich für die Datenverlagerung entscheiden, begrenzen Kunden die Möglichkeiten von Microsoft, den Standort der Kernkunden Daten im Ruhezustand entweder in der aktuellen oder in der neuen Rechenzentrum-Geo zu optimieren. Als Kunde in einem dieser beiden GEOSS erleben Sie die gleiche Qualität an Service-, Leistungs-und Sicherheitskontrollen wie zuvor.
-  
-Kunden, die ihre Kern Daten mit einem festgelegten Stichtag von Microsoft Request in den neuen Geo verschieben müssen, damit Ihre Daten innerhalb eines eingestellten Registrierungsfensters verschoben werden.  Lesen Sie die Seite [How to Request Your Data Move,](request-your-data-move.md) um weitere Details zum Registrierungsfenster für ihre Geo und die Schritte zur Registrierung beim Programm zu erhalten.  Datenverschiebungen können bis zu 24 Monate dauern, nachdem der Anforderungs Zeitraum abgeschlossen wurde.
+Wir stellen eine Data Residency-Option für vorhandene Office 365 Kunden bereit, die unter das in der obigen Tabelle aufgeführte Datencenter-GEOS fallen. Mit dieser Option können Kunden mit Daten Wohnsitz Anforderungen eine frühe Migration der wichtigsten Kundendaten Ihrer Organisation in Ruhe auf Ihr neues Rechenzentrum Geo anfordern.  Microsoft bietet allen berechtigten Kunden, die eine frühe Migration für das Registrierungsfenster anfordern, eine festgeschriebene Frist an.  Lesen Sie auf der Seite Vorgehens [Weise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) weitere Details zum Registrierungsfenster für Ihr Geo und zu den Schritten zum Registrieren im Programm.  Datenverschiebungen können bis zu 24 Monate nach Abschluss des anforderungszeitraums dauern.
 
-- Wenn Sie keine Aktion ausführen, können Microsoft Ihre Kernkunden Daten im Rahmen der Dienstverwaltung und-Optimierung im Laufe der Zeit auf Ihre neue Rechenzentrumsebene verschieben.Ihre wichtigsten csutomer-Daten können nur möglicherweise zu Ihrem neuen Datacenter Geo, nicht zu einem anderen Geo, verschoben werden.Wir benachrichtigen mandantenadministratoren über das Nachrichten Center, wenn eine solche Dienstverwaltung verschoben wurde.
+Wenn keine Aktion durchgeführt wird, kann Microsoft im Rahmen der Dienstverwaltung und-Optimierung im Laufe der Zeit ihre Kernkunden Daten in Ruhe auf Ihre neue Rechenzentrum-geografische Position umstellen.Ihre Kernkunden Daten können nur möglicherweise zu Ihrem neuen Geo-Rechenzentrum und nicht zu einem anderen Geo umsteigen.Wir werden mandantenadministratoren über das Nachrichten Center Benachrichtigen, wenn eine solche Dienst Verwaltungs Verschiebung abgeschlossen wurde, und den Datenspeicherort in Admin Center aktualisieren.
    
-- Wir stellen keine eindeutigen Funktionen, Features oder Konformitäts Zertifizierungen mit dem neuen Rechenzentrum Geo vor.
+Mit dem neuen Rechenzentrum Geo stellen wir keine eindeutigen Funktionen, Features oder Konformitäts Zertifizierungen vor.
     
-- Die Komplexität, Genauigkeit und Skalierung, mit der Datenverschiebungen in einer Global betriebenen und automatisierten Umgebung durchgeführt werden müssen, untersagen uns, wenn eine Datenverschiebung für Ihren Mandanten oder einen anderen einzelnen Mandanten abgeschlossen werden soll. Kunden erhalten eine Bestätigung im Nachrichten Center pro teilnehmenden Dienst, wenn die Datenverschiebung abgeschlossen ist. 
+Die Komplexität, Genauigkeit und Skalierung, bei der Datenverschiebungen in einer Global betriebenen und automatisierten Umgebung durchgeführt werden müssen, verbieten uns eine Freigabe, wenn eine Datenverschiebung für Ihren Mandanten oder einen anderen einzelnen Mandanten abgeschlossen werden soll. Kunden erhalten eine Bestätigung im Nachrichten Center pro teilnehmenden Dienst, wenn die Datenverlagerung abgeschlossen ist. 
     
-- Bei Datenverschiebungen handelt es sich um einen Back-End-Dienstvorgang mit minimalen Auswirkungen auf die Endbenutzer. Features, die beeinträchtigt werden können, werden auf der Seite [während und nach der Datenverschiebung](during-and-after-your-data-move.md) aufgeführt. Wir halten uns an die [Microsoft Online Services-Vereinbarung zum Service Level (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) für die Verfügbarkeit, sodass Kunden für die Vorbereitung oder Überwachung während des Umzugs nichts benötigen. Bei Bedarf wird die Benachrichtigung über eine Dienst Wartung ausgeführt. 
+Datenverschiebungen stellen einen Back-End-Dienstbetrieb mit minimalen Auswirkungen auf die Endbenutzer dar. Features, die betroffen sein können, werden auf der Seite [während und nach der Datenverlagerung](during-and-after-your-data-move.md) aufgeführt. Wir halten uns an die [Vereinbarung zum Service Level (SLA) von Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) für die Verfügbarkeit, sodass Kunden während des Wechsels keine Vorbereitung oder Überwachung benötigen. Bei Bedarf wird eine Benachrichtigung über eine Dienst Wartung vorgenommen. 
+
+Datenverschiebungen in das neue Rechenzentrum Geo werden ohne zusätzliche Kosten für den Kunden abgeschlossen.
     
 ## <a name="related-topics"></a>Verwandte Themen 
  
@@ -69,6 +66,6 @@ Kunden, die ihre Kern Daten mit einem festgelegten Stichtag von Microsoft Reques
     
 [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
-[Neues Datencenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Neues Datacenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/en-us/regions/)
