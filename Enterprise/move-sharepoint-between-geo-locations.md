@@ -1,5 +1,5 @@
 ---
-title: Verschieben einer SharePoint-Website an einen anderen geografischen Standort (Vorschau)
+title: Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -9,16 +9,16 @@ ms.service: o365-solutions
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort verschieben.
-ms.openlocfilehash: 74a1ccf7dcfa60d74135211d7b74a2e7096d09b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f1837942a72881578930f94ad8c4b57dbdb0c649
+ms.sourcegitcommit: 59c250b5f62e72fb51fd0b80d2be636ee8078f6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070111"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35422374"
 ---
-# <a name="move-a-sharepoint-site-to-a-different-geo-location-preview"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort (Vorschau)
+# <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
-Mit der geografischen Verschiebung von SharePoint-Websites können Sie SharePoint-Websites in einer Umgebung mit mehreren geografischen Standorten an andere geografische Standorte verschieben. Dieses Feature ist derzeit in der Vorschau.
+Mit der geografischen Verschiebung von SharePoint-Websites können Sie SharePoint-Websites in einer Umgebung mit mehreren geografischen Standorten an andere geografische Standorte verschieben.
 
 Die folgenden Website-Typen können zwischen geografischen Standorten verschoben werden:
 
@@ -95,11 +95,11 @@ Es wird *Erfolg* zurückgegeben, wenn die Website verschoben werden kann, oder *
 
 Standardmäßig ändert sich die anfängliche URL für die Website in die URL des geografischen Zielstandorts. Beispiel:
 
-https://Contoso.sharepoint.com/sites/projectx in https://Contoso.sharepointEUR.com/sites/projectx
+https://Contoso.sharepoint.com/sites/projectx in https://ContosoEUR.sharepoint.com/sites/projectx
 
 Bei Websites, denen keine Office 365-Gruppe zugeordnet ist, können Sie die Website mit dem `-DestinationUrl`-Parameter umbenennen. Beispiel:
 
-https://Contoso.sharepoint.com/sites/projectx in https://Contoso.sharepointEUR.com/sites/projecty
+https://Contoso.sharepoint.com/sites/projectx in https://ContosoEUR.sharepoint.com/sites/projecty
 
 Führe Sie Folgendes aus, um mit der Verschiebung der Website zu beginnen:
 
