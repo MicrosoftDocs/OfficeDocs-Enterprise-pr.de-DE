@@ -3,21 +3,6 @@
 
 
 
-## <a name="week-of-may-20-2019"></a>Woche vom 20. Mai 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 5/20/2019 | [Office 365 Identitäts Modelle und Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | Geändert |
-| 5/20/2019 | [Prüfliste für die Bereitstellungsplanung für Office 365](/Office365/Enterprise/deployment-planning-checklist) | Geändert |
-| 5/20/2019 | [Planen von Office 365 Enterprise](/Office365/Enterprise/get-your-organization-ready-for-office-365) | Geändert |
-| 5/20/2019 | [Bereitstellen von Office 365 Enterprise für Ihre Organisation](/Office365/Enterprise/setup-overview-for-enterprises) | Geändert |
-| 5/21/2019 | [Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird](/Office365/Enterprise/configure-exchange-server-for-hybrid-modern-authentication) | Geändert |
-| 5/21/2019 | Verwenden von Content Delivery Networks (Netzwerken für die Inhaltsübermittlung) mit SharePoint Online | entfernt |
-| 5/22/2019 | [Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern](/Office365/Enterprise/hybrid-modern-auth-overview) | Geändert |
-| 5/22/2019 | Verwenden von Azure AD für die SharePoint Server-Authentifizierung | entfernt |
-
-
 ## <a name="week-of-may-27-2019"></a>Woche vom 27. Mai 2019
 
 
@@ -92,3 +77,26 @@
 | 6/17/2019 | [Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online](/Office365/Enterprise/use-office-365-cdn-with-spo) | Geändert |
 | 6/19/2019 | [Office 365 Multi-Geo](/Office365/Enterprise/office-365-multi-geo) | Geändert |
 | 6/21/2019 | [Project Server 2010-Roadmap zum Ende des Supports](/Office365/Enterprise/project-server-2010-end-of-support) | Geändert |
+
+
+## <a name="week-of-june-24-2019"></a>Woche vom 24. Juni 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 6/24/2019 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
+| 6/24/2019 | [So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Geändert |
+| 6/24/2019 | [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | Geändert |
+| 6/24/2019 | [Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | Geändert |
+| 6/24/2019 | [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | Geändert |
+| 6/24/2019 | [Upgrade von SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Geändert |
+| 6/26/2019 | [Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | Geändert |
+| 6/26/2019 | [Vorbereiten der Verzeichnissynchronisierung auf Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Geändert |
+| 6/26/2019 | [Optimieren der Leistung von SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Geändert |
+| 6/28/2019 | [Endpunkte für Office 365 Deutschland](/Office365/Enterprise/office-365-germany-endpoints) | Geändert |
+| 6/28/2019 | [Office 365 US Government DoD-Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
+| 6/28/2019 | [Office 365 US-Regierung gcc High Endpoint](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
+| 6/28/2019 | [URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Geändert |
+| 6/28/2019 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
+| 6/28/2019 | [Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Geändert |
+| 6/28/2019 | [Anfordern der Datenverschiebung](/Office365/Enterprise/request-your-data-move) | Geändert |
