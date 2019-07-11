@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.'
-ms.openlocfilehash: dfb6df46faacf6623a90ac5a4cf95d9512c31289
-ms.sourcegitcommit: baf2ace701fa338b12222b6fb08658fd583c40d2
+ms.openlocfilehash: 7af74f254ffc73251188b23255a35f800b5503f6
+ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539326"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35616883"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -39,6 +39,7 @@ In diesen Architekturtools- und -postern finden Sie Informationen zu Microsoft-C
     - [Microsoft Hybrid Cloud für Enterprise-Architekten](microsoft-cloud-it-architecture-resources.md#hybrid)
     - [Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation](#common-attacks-and-microsoft-capabilities-that-protect-your-organization)
     - [Microsoft 365 Enterprise-Foundation-Infrastruktur](#m365foundationinfra)
+    - [Architekturansätze für die Microsoft-Cloudmigration von Mandanten zu Mandanten](#architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations)
     
 - **[Reihe: Microsoft 365 Enterprise-Lösungen](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
@@ -134,6 +135,12 @@ Sie erhalten einen Überblick über die [grundlegende Infrastruktur](https://doc
 |:-----|:-----|
 |[![Thumbnail-Bild des Microsoft 365 Enterprise-Foundation-Infrastruktur-Posters](media/Microsoft365EnterpriseFoundInfra-thumb.png)](http://aka.ms/m365efoundinfraposter) <br/> [Online anzeigen](http://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Dieses Poster fasst alle Phasen der Basisinfrastruktur hinsichtlich der Ziele, Features und Werkzeuge, Design-Entscheidungen, Konfigurationsergebnisse, Onboarding sowie laufende Überwachung und Updates zusammen. <br/>| 
 
+### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Architekturansätze für Microsoft-Cloudmigrationen von Mandant zu Mandant 
+Diese Themenreihe illustriert mehrere Architekturansätze für Fusionen, Übernahmen, Veräußerungen und andere Szenarien, die möglicherweise eine Migration zu einem neuen Cloudmandanten notwendig machen. Diese Themen dienen als Ausgangspunkt mit Leitlinien für die Planung.
+
+|**Item**|**Beschreibung**|
+|:-----|:-----|
+|[![Miniaturbild für Poster der logischen Architektur von Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Dieses Modell enthält Folgendes: <ul><li>Eine Zuordnung von Geschäftsszenarien zu Architekturansätzen</li><li>Überlegungen zum Entwurf</li><li>Ablauf einer Einzelereignismigration</li><li>Ablauf einer stufenweisen Migration</li><li>Ablauf einer Mandantenverschiebung oder -aufteilung</li></ul>|
 
 <!--<a name="santa"></a>
 ### The Santa cloud
