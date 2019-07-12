@@ -3,7 +3,7 @@ title: Project Server 2010-Roadmap zum Ende des Supports
 ms.author: efrene
 author: efrene
 manager: pamg
-ms.date: 06/03/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Support endet für Project Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf Project Online oder eine neuere Version von Project Server lokal.
-ms.openlocfilehash: 86ab1534058d49094327c326d8367a08c14d725b
-ms.sourcegitcommit: c763b0f28e1ce498aef5d5deb3b6324288da85ea
+ms.openlocfilehash: 8001a3e3c9cb40d23f60a6d38aceca55e4838831
+ms.sourcegitcommit: 19de9984f47a1490e277848f079088685ad22a63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35128702"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35630397"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Roadmap für Project Server 2010 Ende des Supports
 
@@ -56,6 +56,11 @@ Wenn Sie Project Server 2010 verwenden, müssen Sie die folgenden Migrationsopti
 - Migrieren zu Project Online
     
 - Migrieren Sie zu einer neueren lokalen Version von Project Server (vorzugsweise Project Server 2019).
+
+Hier sind die beiden Wege, die Sie ergreifen können, um das Ende der Unterstützung für Project Server 2010 zu vermeiden.
+
+![Project Server 2010 Aktualisierungspfade](./media/project-server-2010-end-of-support/project-server-2010-end-of-support-timeline.png)
+
     
 |**Warum sollte ich lieber zu Project Online migrieren?**|**Warum sollte ich lieber zu Project Server 2019 migrieren?**|
 |:-----|:-----|
