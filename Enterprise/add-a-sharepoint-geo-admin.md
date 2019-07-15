@@ -59,5 +59,4 @@ Führen Sie `Remove-SPOGeoAdministrator -ObjectID <ObjectID>` aus, um eine Grupp
 
 [Remove-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spogeoadministrator)
 
-
-  [Legen Sie einen Alias ("MailNickName") für eine Sicherheitsgruppe fest](https://docs.microsoft.com/de-DE/powershell/module/azuread/set-azureadgroup)
+[Legen Sie einen Alias ("MailNickName") für eine Sicherheitsgruppe fest](https://docs.microsoft.com/de-DE/powershell/module/azuread/set-azureadgroup)
