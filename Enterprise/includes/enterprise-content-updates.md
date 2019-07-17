@@ -3,57 +3,6 @@
 
 
 
-## <a name="week-of-may-27-2019"></a>Woche vom 27. Mai 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 5/28/2019 | [Office 365 Enterprise](/Office365/Enterprise/index) | Geändert |
-| 5/28/2019 | [Herunterladen und Ausführen des Office 365 IdFix-Tools](/Office365/Enterprise/install-and-run-idfix) | Geändert |
-| 5/28/2019 | [Tools zum Verwalten von Office 365-Konten](/Office365/Enterprise/manage-office-365-accounts) | Geändert |
-| 5/28/2019 | [Vorbereiten von Verzeichnisattributen für die Synchronisierung mit Office 365 mithilfe des IdFix-Tools](/Office365/Enterprise/prepare-directory-attributes-for-synch-with-idfix) | Geändert |
-| 5/28/2019 | [Vorbereiten der Verzeichnissynchronisierung auf Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Geändert |
-| 5/28/2019 | [Tools zum Verwalten von Office 365-Konten](/Office365/Enterprise/tools-to-manage-office-365-accounts) | Geändert |
-| 5/28/2019 | [Office 365 US Government DoD-Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
-| 5/28/2019 | [Office 365 US-Regierung gcc High Endpoint](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
-| 5/28/2019 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
-| 5/29/2019 | [Ressourcen zur Cloud-IT-Architektur von Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Geändert |
-| 5/29/2019 | [Planen des Upgrades von Office 2007-oder 2010-Servern und-Clients](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Geändert |
-| 5/29/2019 | [Ressourcen für das Upgrade von Office 2010-Servern und-Clients](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Geändert |
-| 5/30/2019 | [Zuweisen von Rollen zu Benutzerkonten mit Office 365 PowerShell](/Office365/Enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell) | Geändert |
-
-
-## <a name="week-of-june-03-2019"></a>Week of June 03, 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 6/4/2019 | [Office 365 Client-App-Unterstützung – moderne Authentifizierung](/Office365/Enterprise/office-365-client-support-modern-authentication) | Geändert |
-| 6/4/2019 | [Office 365 US Government DoD-Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
-| 6/4/2019 | [Office 365 US-Regierung gcc High Endpoint](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
-| 6/4/2019 | [Planen des Upgrades von Office 2007-oder 2010-Servern und-Clients](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Geändert |
-| 6/4/2019 | [Project Server 2010-Roadmap zum Ende des Supports](/Office365/Enterprise/project-server-2010-end-of-support) | Geändert |
-| 6/4/2019 | [Ressourcen für das Upgrade von Office 2010-Servern und-Clients](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Geändert |
-| 6/4/2019 | [Upgrade von SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Geändert |
-| 6/5/2019 | [Azure ExpressRoute für Office 365](/Office365/Enterprise/azure-expressroute) | Geändert |
-| 6/5/2019 | [Verwenden von BGP-Communities in Express Route für Office 365 Szenarien](/Office365/Enterprise/bgp-communities-in-expressroute) | Geändert |
-| 6/5/2019 | [Clientkonnektivität](/Office365/Enterprise/client-connectivity) | Geändert |
-| 6/5/2019 | [Netzwerke für die Inhaltsübermittlung](/Office365/Enterprise/content-delivery-networks) | Geändert |
-| 6/5/2019 | [Implementierung von ExpressRoute für Office 365](/Office365/Enterprise/implementing-expressroute) | Geändert |
-| 6/5/2019 | [Netzwerkplanung mit ExpressRoute für Office 365](/Office365/Enterprise/network-planning-with-expressroute) | Geändert |
-| 6/5/2019 | [Office 365 – IP-Adress- und URL-Webdienst](/Office365/Enterprise/office-365-ip-web-service) | Geändert |
-| 6/5/2019 | [Prinzipien von Office 365-Netzwerkverbindungen](/Office365/Enterprise/office-365-network-connectivity-principles) | Geändert |
-| 6/5/2019 | [Office 365 Netzwerkkonnektivität (Übersicht)](/Office365/Enterprise/office-365-networking-overview) | Geändert |
-| 6/5/2019 | [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](/Office365/Enterprise/plan-for-network-devices) | Geändert |
-| 6/5/2019 | [Routing mit ExpressRoute für Office 365](/Office365/Enterprise/routing-with-expressroute) | Geändert |
-| 6/5/2019 | [Einrichten Ihres Netzwerks für Office 365](/Office365/Enterprise/set-up-network-for-office-365) | Geändert |
-| 6/5/2019 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
-| 6/5/2019 | [Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung](/Office365/Enterprise/advanced-ediscovery-for-your-office-365-dev-test-environment) | Geändert |
-| 6/7/2019 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
-| 6/7/2019 | [Project Server 2010-Roadmap zum Ende des Supports](/Office365/Enterprise/project-server-2010-end-of-support) | Geändert |
-| 6/7/2019 | [Ressourcen für das Upgrade von Office 2010-Servern und-Clients](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Geändert |
-
-
 ## <a name="week-of-june-10-2019"></a>Week of June 10, 2019
 
 
@@ -100,3 +49,42 @@
 | 6/28/2019 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
 | 6/28/2019 | [Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Geändert |
 | 6/28/2019 | [Anfordern der Datenverschiebung](/Office365/Enterprise/request-your-data-move) | Geändert |
+
+
+## <a name="week-of-july-01-2019"></a>Week of July 01, 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 7/2/2019 | [Migrieren einer SharePoint-Website an einen anderen geografischen Standort](/Office365/Enterprise/move-sharepoint-between-geo-locations) | Geändert |
+
+
+## <a name="week-of-july-08-2019"></a>Woche vom Juli 08, 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 7/9/2019 | [Migrieren der Daten Ihrer Organisation zu Office 365 Enterprise](/Office365/Enterprise/migrate-data-to-office-365) | Geändert |
+| 7/9/2019 | [Diagnose von Leistungsproblemen mit SharePoint Online](/Office365/Enterprise/diagnosing-performance-issues-with-sharepoint-online) | Geändert |
+| 7/10/2019 | [Planen des Upgrades von Office 2007-oder 2010-Servern und-Clients](/Office365/Enterprise/plan-upgrade-previous-versions-office) | Geändert |
+| 7/10/2019 | [Ressourcen für das Upgrade von Office 2010-Servern und-Clients](/Office365/Enterprise/upgrade-from-office-2010-servers-and-products) | Geändert |
+| 7/10/2019 | [Ressourcen zur Cloud-IT-Architektur von Microsoft](/Office365/Enterprise/microsoft-cloud-it-architecture-resources) | Geändert |
+| 7/10/2019 | [Zeiger auf Informationen zur Rechteverwaltung im Office 365 Admin Center](/Office365/Enterprise/activate-rms-in-office-365) | Geändert |
+| 7/10/2019 | [Bewährte Methoden für die Verwendung von Office 365 in einem langsamen Netzwerk](/Office365/Enterprise/best-practices-for-using-office-365-on-a-slow-network) | Geändert |
+| 7/10/2019 | [Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online](/Office365/Enterprise/delay-loading-images-and-javascript-in-sharepoint-online) | Geändert |
+| 7/10/2019 | [Bildoptimierung für SharePoint Online](/Office365/Enterprise/image-optimization-for-sharepoint-online) | Geändert |
+| 7/10/2019 | [Einführung in die Leistungsoptimierung für SharePoint Online](/Office365/Enterprise/introduction-to-performance-tuning-for-sharepoint-online) | Geändert |
+| 7/10/2019 | [Minimierung und Bündelung in SharePoint Online](/Office365/Enterprise/minification-and-bundling-in-sharepoint-online) | Geändert |
+| 7/10/2019 | [NAT-Unterstützung bei Office 365](/Office365/Enterprise/nat-support-with-office-365) | Geändert |
+| 7/10/2019 | [Navigationsoptionen für SharePoint Online](/Office365/Enterprise/navigation-options-for-sharepoint-online) | Geändert |
+| 7/10/2019 | [Netzwerk- und Migrationsplanung für Office 365](/Office365/Enterprise/network-and-migration-planning) | Geändert |
+| 7/10/2019 | [Netzwerkplanung und Leistungsoptimierung für Office 365](/Office365/Enterprise/network-planning-and-performance) | Geändert |
+| 7/10/2019 | [Verwenden des Seiten Diagnosetools für SharePoint Online](/Office365/Enterprise/page-diagnostics-for-spo) | Geändert |
+| 7/10/2019 | [Optimieren der Leistung von Office 365](/Office365/Enterprise/tune-office-365-performance) | Geändert |
+| 7/10/2019 | [Optimieren der Leistung von SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Geändert |
+| 7/10/2019 | [Optimieren der Leistung von Skype for Business Online](/Office365/Enterprise/tune-skype-for-business-online-performance) | Geändert |
+| 7/10/2019 | [Verringern des beim Lesen von e-Mail-Nachrichten verwendeten Arbeitsspeichers mithilfe von Lean Popouts](/Office365/Enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages) | Geändert |
+| 7/10/2019 | [Verwenden des Inhaltssuche-Webparts anstelle des Webpart für Inhaltsabfragen zum Verbessern der Leistung in SharePoint Online](/Office365/Enterprise/using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo) | Geändert |
+| 7/10/2019 | [Verwenden des Objektcaches mit SharePoint Online](/Office365/Enterprise/using-the-object-cache-with-sharepoint-online) | Geändert |
+| 7/11/2019 | [Project Server 2010-Roadmap zum Ende des Supports](/Office365/Enterprise/project-server-2010-end-of-support) | Geändert |
+| 7/12/2019 | [Upgrade von SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Geändert |
