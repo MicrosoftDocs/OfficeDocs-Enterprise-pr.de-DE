@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Bevor Sie mit der Planung Ihres Netzwerks für Office 365 Netzwerkkonnektivität beginnen, müssen Sie sich mit den Grundlagen der Konnektivität vertraut machen, um Office 365 Datenverkehr sicher zu verwalten und die bestmögliche Leistung zu erzielen. Dieser Artikel hilft Ihnen, die neuesten Anleitungen für die sichere Optimierung Office 365 Netzwerkkonnektivität zu verstehen.
-ms.openlocfilehash: e8bb819fee5aa53fe3ea23f7b3b691be131ddf1f
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: 9444cef0a93d10953a726da40d24ab18e29d8f24
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017295"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782205"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Prinzipien von Office 365-Netzwerkverbindungen
 
@@ -42,7 +42,7 @@ In diesem Artikel erfahren Sie mehr über die folgenden Themen:
 ## <a name="office-365-architecture"></a>Office 365 Architektur
 <a name="BKMK_Architecture"> </a>
 
-Office 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe einer Vielzahl von Mikro Diensten und Anwendungen bereitstellt, wie Exchange Online, SharePoint Online, Skype for Business Online, Microsoft Teams, Exchange Online Schutz, Office Online und viele andere. Während bestimmte Office 365 Anwendungen möglicherweise Ihre einzigartigen Features für das Kundennetzwerk und die Konnektivität zur Cloud aufweisen, teilen Sie einige wichtige Prinzipale, Ziele und Architekturmuster. Diese Prinzipale und Architekturmuster für die Konnektivität sind für viele andere Saas-Clouds typisch und unterscheiden sich gleichzeitig von den typischen Bereitstellungsmodellen von Platt Form-as-a-Service-und Infrastruktur-as-a-Service-Clouds wie Microsoft Azure.
+Office 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe einer Vielzahl von Mikro Diensten und Anwendungen bereitstellt, wie Exchange Online, SharePoint Online, Skype for Business Online, Microsoft Teams, Exchange Online Schutz, Office in einem Browser und viele andere. Während bestimmte Office 365 Anwendungen möglicherweise Ihre einzigartigen Features für das Kundennetzwerk und die Konnektivität zur Cloud aufweisen, teilen Sie einige wichtige Prinzipale, Ziele und Architekturmuster. Diese Prinzipale und Architekturmuster für die Konnektivität sind für viele andere Saas-Clouds typisch und unterscheiden sich gleichzeitig von den typischen Bereitstellungsmodellen von Platt Form-as-a-Service-und Infrastruktur-as-a-Service-Clouds wie Microsoft Azure.
   
 Eines der bedeutendsten architektonischen Features von Office 365 (die von Netzwerk Planern häufig übersehen oder falsch interpretiert werden) besteht darin, dass es sich um einen wahrhaft globalen verteilten Dienst im Kontext der Verbindung von Benutzern handelt. Der Speicherort des Ziels Office 365 Mandanten ist wichtig, um die Lokalität zu verstehen, in der Kundendaten in der Cloud gespeichert sind, aber die Benutzererfahrung mit Office 365 beinhaltet keine direkte Verbindung mit Datenträgern, die die Daten enthalten. Die Benutzererfahrung mit Office 365 (einschließlich Leistung, Zuverlässigkeit und anderen wichtigen Qualitätsmerkmalen) umfasst die Konnektivität über eine hoch verteilte Service-Fronttüren, die über Hunderte von Microsoft-Standorten weltweit skaliert werden. In den meisten Fällen wird die beste Benutzererfahrung erzielt, indem das Kundennetzwerk Benutzeranforderungen an den nächstgelegenen Einstiegspunkt für Office 365 Dienst weiterleiten kann, statt eine Verbindung mit Office 365 über einen Ausgangspunkt an einem zentralen Standort oder einer Region herzustellen.
   

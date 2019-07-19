@@ -10,19 +10,19 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
-description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen „Integration von Features in Microsoft Office-Serverprodukten – SharePoint Server, Exchange Server, Lync Server und Office Online“.
-ms.openlocfilehash: c8bb7a26c6fbf0ed74be0b31fd58a65e7b1b5787
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Feature Integration Across Microsoft Office Server Products-SharePoint Server, Exchange Server, lync Server und Office Online Server.
+ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068771"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782245"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Zugängliches Diagramm – Integration von Features in Microsoft Office-Serverprodukten
 
-**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Feature-Integration in Microsoft Office-Serverprodukte – SharePoint Server, Exchange Server, lync Server und Office Online.
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Feature Integration Across Microsoft Office Server Products-SharePoint Server, Exchange Server, lync Server und Office Online Server.
   
-Das Diagramm besteht aus mehreren Registerkarten, wie in den Abschnittstiteln dieses Dokuments angegeben.
+Das Diagramm besteht aus mehreren Registerkarten, die durch die Abschnittstitel dieses Dokuments angezeigt werden.
   
 ## <a name="introduction-tab"></a>Registerkarte „Einleitung“
 
@@ -56,7 +56,7 @@ Senden Sie Feedback zu dieser Lösung oder Anfragen hinsichtlich weiterer Lösun
 
 Die einzelnen Registerkarten weisen das Seitenformat 22 x 17 Zoll auf (etwa ein Viertel der Größe eines ANSI-Konstruktionsdiagramms). Sie können diese Seite auf zwei Blätter im Tabloid-Format (17 x 11 Zoll) oder vier Blätter im Letter-Format (11 x 8,5 Zoll) drucken. Wenn Sie über einen Plotter verfügen, können Sie diese Poster in ihrer ursprünglichen Größe drucken. Ohne Plotter führen Sie die folgenden Schritte aus, um das Poster auf Papier mit kleinerem Format zu drucken.  
   
- **Drucken von Postern auf kleinerem Papier**
+ **Drucken von Postern auf kleineren Papieren**
   
 1. Öffnen Sie das Poster in Visio. 
     
@@ -86,7 +86,7 @@ Server-zu-Server-Authentifizierung. Dieses Feature gilt für: 
     
 - Lync
     
-- Office Online (ehemals Office Web Apps)  
+- Office Online Server (früher als Office-webapps bezeichnet) 
     
 Hochauflösende Benutzerfotos. Dieses Feature gilt für:  
   
@@ -132,7 +132,7 @@ Besprechungsaufzeichnungen. Dieses Feature gilt für: 
 
 Office Web Apps-Server ist ein Office-Serverprodukt, das für Office-Dateien browserbasierte Dienste zum Anzeigen und Bearbeiten bereitstellt. Office Web Apps-Server kann für Produkte und Dienste verwendet werden, die das Web Application Open Platform Interface-Protokoll (WOPI) unterstützen. Diese Produkte, die als Hosts bezeichnet werden, umfassen SharePoint 2013, Lync Server 2013 und Exchange Server 2013.   
   
-Wenn Sie mehr über Office Web Apps Server erfahren möchten, laden Sie das vereinfachte Office http://aka.ms/OfficeWebAppsPosterWeb Apps-Bereitstellungs Poster unter herunter. 
+Wenn Sie mehr über Office-webapps Server erfahren möchten, laden Sie das vereinfachte Office- http://aka.ms/OfficeWebAppsPosterwebapps-Bereitstellungs Poster unter herunter. 
   
 ## <a name="server-to-server-authentication-tab"></a>Registerkarte „Server-zu-Server-Authentifizierung“
 
@@ -162,11 +162,11 @@ Um eine vertrauenswürdige Server-zu-Server-Authentifizierung zu konfigurieren, 
   
 Die folgende Tabelle enthält den JSON-Metadatenendpunkt für jeden Server. Die Tabelle zeigt Folgendes:  
   
-- Ein Exchange-Server mit einem JSON-metadatenpunkt von https://<server name>/autodiscover/Metadata/JSON/1 
+- Ein Exchange-Server mit einem JSON-metadatenfilter-Endpunkt von https://<server name>/autodiscover/Metadata/JSON/1 
     
-- Ein lync-Server mit einem JSON-metadatenpunkt von https://<server name>/Metadata/JSON/1 
+- Ein lync-Server mit einem JSON-metadatenfilter-Endpunkt von https://<server name>/Metadata/JSON/1 
     
-- Ein SharePoint-Server mit einem JSON-metadatenpunkt von https://<web app name>/_layouts/15/Metadata/JSON/1 
+- Ein SharePoint-Server mit einem JSON-metadatenfilter-Endpunkt von https://<web app name>/_layouts/15/Metadata/JSON/1 
     
 ### <a name="example-how-server-to-server-authentication-works-for-ediscovery-between-sharepoint-and-exchange"></a>Beispiel: Funktionsweise der Server-zu-Server-Authentifizierung für eDiscovery zwischen SharePoint und Exchange
 
@@ -234,9 +234,9 @@ Benutzer können Bilder mit einem Pixelbereich zwischen 48 × 48 und 648 × 
     
 - 648 × 648 wird für Lync Web Access und Lync 2013 verwendet.  
     
-Beispiel Konfigurationsskripts finden Sie in den Blog Artikeln zu Jens Trier Rasmussen: 
+Beispiele für Konfigurationsskripts finden Sie in den Blog Artikeln von Jens Trier Rasmussen: 
   
-- Verwenden von Exchange 2013 Fotos mit hoher Auflösung von SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Verwenden Exchange 2013 hochauflösenden Fotos aus SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
     
 - Integrieren von Exchange 2013 und lync Server 2013 (http://aka.ms/Pn08dw) 
     
@@ -253,7 +253,7 @@ Das begleitende Diagramm zeigt, wie ein Benutzer ein Foto aktualisieren kann, da
     
   - Meine Website über HTTP oder HTTPS zu einem SharePoint-Server. SharePoint speichert den Benutzer in der MeineWebsite-Datenbank zwischen (Https:443). Der SharePoint-Server interagiert mit dem Exchange-Clientzugriffsserver über externe URLs, die in Exchange festgelegt sind.  
     
-  - Lync 2013-Client, der eine getConnection mit dem Exchange-Server verwaltet, um Foto Updates abzurufen (HTTPS GET-Anforderung-443). 
+  - Lync 2013-Client, der eine getConnection mit dem Exchange-Server aufrecht erhält, um Foto Aktualisierungen zu erhalten (HTTPS GET-Anforderung-443). 
     
 4. Der Exchange-Clientzugriffsserver stellt mithilfe der internen Exchange-Kommunikation eine Verbindung mit dem Exchange-Postfachserver her.   
     
@@ -281,7 +281,7 @@ Der einheitliche Kontaktspeicher (Unified Contact Store, UCS) ermöglicht ein ko
     
 - Aktivieren Sie in Lync 2013 die Richtlinie für den einheitlichen Kontaktspeicher (standardmäßig aktiviert).  
     
-Beispiel Konfigurationsskripts finden Sie im Blog Artikel zu Jens Trier Rasmussen: 
+Beispiel-Konfigurationsskripts finden Sie im Blog Artikel von Jens Trier Rasmussen: 
   
 - Integrieren von Exchange 2013 und lync Server 2013 (http://aka.ms/Oyg7fh) 
     
@@ -569,7 +569,7 @@ Server-Produkte:
     
  **Funktionsweise** 
   
-Wenn ein Anruf nicht von dem angerufenen auf einem der aktiven Endpunkte des angerufenen beantwortet wird, leitet lync Server den Anruf an die Voicemail in Exchange um (d. h. Exchange-Postfachserver). 
+Wenn ein Anruf nicht von dem angerufenen an einem der aktiven Endpunkte des angerufenen beantwortet wird, leitet lync Server den Anruf an die Voicemail auf Exchange um (d. h. Exchange-Post Fach Server) weiter. 
   
 Das begleitende Diagramm zeigt das Weiterleiten von Anrufen für zwei Szenarien:  
   
@@ -581,21 +581,21 @@ Der Anrufer initiiert einen Anruf über Lync 2013: 
   
 1. Anrufer A initiiert über Lync 2013 einen Anruf an den Angerufenen. Der Anruf wird initiiert und an den Lync Server gesendet.  
     
-2. Der Anruf wird an den lync-Home-Server des angerufenen weitergeleitet. 
+2. Der Anruf wird an den lync-Heimserver des angerufenen weitergeleitet. 
     
-3. Lync Server klingelt an den aktiven Endpunkten des angerufenen auf lync 2013. 
+3. Lync Server klingelt die aktiven Endpunkte des angerufenen auf lync 2013. 
     
 4. Wenn der Anruf nicht beantwortet wird, wird er an Voicemail (Exchange UM) auf dem Exchange-CAS (Anruf-Router) weitergeleitet.  
     
 Der Anrufer initiiert einen Anruf über Lync 2013:  
   
-1. Anrufer B wählt die Telefonnummer des angerufenen mithilfe von PSTN. 
+1. Anrufer B wählt die Telefonnummer des angerufenen unter Verwendung von PSTN aus. 
     
 2. Der PSTN-Anruf wird vom IP-Gateway zum Vermittlungsserver weitergeleitet, bei dem es sich um einen Lync-Server handelt.  
     
-3. Der Vermittlungsserver Ruft den Anruf an den lync-Home-Server des angerufenen zurück. 
+3. Der Vermittlungsserver umgeht den Anruf an den lync-Heimserver des angerufenen. 
     
-4. Lync Server klingelt an den aktiven Endpunkten des angerufenen auf lync 2013. 
+4. Lync Server klingelt die aktiven Endpunkte des angerufenen auf lync 2013. 
     
 5. Wenn der Anruf nicht beantwortet wird, wird er an Voicemail (Exchange UM) auf dem Exchange-CAS (Anruf-Router) weitergeleitet.  
     
@@ -667,7 +667,7 @@ Vorbereiten auf die Veröffentlichung von Besprechungsaufzeichnungen:
     
  **Digitale Objektbibliotheken**
   
-Digitale Objektbibliotheken sind Bibliotheken, die Videos enthalten, die bestimmte Auswirkungen auf Kapazität und Leistung haben. Weitere Informationen finden Sie unter Planen digitaler Objektbibliotheken in SharePoint Server 2013 unter http://aka.ms/O1vq5w. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
+Digitale Objektbibliotheken sind Bibliotheken, die Videos enthalten, die bestimmte Auswirkungen auf Kapazität und Leistung haben. Weitere Informationen finden Sie unter Plan Digital Asset Libraries in SharePoint Server 2013 befindet sich http://aka.ms/O1vq5wunter. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Aufzeichnen und Veröffentlichen einer Besprechung mit dem Lync-Client
 
@@ -679,14 +679,14 @@ Das Diagramm zeigt einen Benutzer, der mithilfe von Lync an einer Besprechung te
     
 2. Die Inhalte der Besprechung werden während der Besprechung in einer MP4-Datei aufgezeichnet.  
     
-3. Nach Abschluss der Besprechung wird die MP4-Aufzeichnung im Ordner Recording auf Ihrem Computer angezeigt (C:\\Benutzer\\<username>\\Videos\\lync-Aufzeichnungen). Optional können Sie die Besprechungsaufzeichnung mit der Lync-Aufzeichnungs-Manager-App, die mit dem Lync-Client installiert wird, anpassen. 
+3. Nachdem die Besprechung abgeschlossen ist, wird die MP4-Aufzeichnung im Ordner Recording auf Ihrem Computer (C\\:\\<username>\\Users\\Videos lync Recordings) angezeigt. Optional können Sie die Besprechungsaufzeichnung mit der Lync-Aufzeichnungs-Manager-App, die mit dem Lync-Client installiert wird, anpassen. 
     
 4. Ziehen Sie die Besprechungsaufzeichnung per Drag und Drop in Ihre SharePoint-Objektbibliothek. 
     
-5. Optional: Sobald sich die Aufzeichnung in der Objektbibliothek befindet, können Sie sie in eine beliebige SharePoint-Seite einfügen. Weitere Informationen zu diesem Schritt finden Sie im Office 365-Blogeintrag, erstellen und Veröffentlichen von Schulungs Videos mit SharePoint und lync online unter http://aka.ms/R61q35. 
+5. Optional: Sobald sich die Aufzeichnung in der Objektbibliothek befindet, können Sie sie in eine beliebige SharePoint-Seite einfügen. Weitere Informationen zu diesem Schritt finden Sie im Office 365 Blogeintrag, erstellen und Veröffentlichen von Schulungs Videos mit SharePoint und lync Online, befindet http://aka.ms/R61q35sich unter. 
     
  **Video-Miniaturansichten**
   
-Video-Miniaturansichten verbessern das Aussehen und Verhalten Ihrer Objektbibliothek. Weitere Informationen zum Erstellen von Miniaturansichten für Ihre Besprechungsaufzeichnungen finden Sie unter Capture or Change a Video Thumbnail, located http://aka.ms/Kupj85at. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
+Video-Miniaturansichten verbessern das Aussehen und Verhalten Ihrer Objektbibliothek. Weitere Informationen zum Erstellen von Miniaturansichten für Ihre Besprechungsaufzeichnungen finden Sie unter erfassen oder Ändern einer Videominiaturansicht, http://aka.ms/Kupj85die sich unter befindet. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
   
 

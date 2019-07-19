@@ -19,12 +19,12 @@ ms.assetid: 37a5c116-5b07-4f70-8333-5b86fd2c3c40
 ms.collection:
 - M365-security-compliance
 description: Sitzungstimeouts werden verwendet, um Sicherheit und Erleichterung des Zugriffs in Office 365-Client-apps auszugleichen.
-ms.openlocfilehash: 82ce98de440175f2190d5da6e4d1c02b8b678b89
-ms.sourcegitcommit: 237e1c485214c2ff75375988febfd7fb70faa5f3
+ms.openlocfilehash: 6c37f53086a840a05e879682c95d6a4f25463707
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35746693"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782015"
 ---
 # <a name="session-timeouts-for-office-365"></a>Sitzungstimeouts für Office 365
 
@@ -38,7 +38,7 @@ In der folgenden Tabelle sind die Sitzungslebensdauer für Office 365 Dienste au
   
 |**Office 365-Dienste**|**Sitzungstimeout**|
 |:-----|:-----|
-|Office 365 Admin Center  <br/> |Sie werden aufgefordert, die Anmeldeinformationen für das Admin Center alle 8 Stunden anzugeben.  <br/> |
+|Microsoft 365 Admin Center  <br/> |Sie werden aufgefordert, die Anmeldeinformationen für das Admin Center alle 8 Stunden anzugeben.  <br/> |
 |SharePoint Online  <br/> |5 Tage Inaktivität, solange die Benutzer sich für die Auswahl von **Keep Me angemeldet haben**. Wenn der Benutzer erneut auf SharePoint Online zugreift, nachdem 24 oder mehr Stunden von der vorherigen Anmeldung übergeben wurden, wird der Timeoutwert auf 5 Tage zurückgesetzt.  <br/> |
 |Outlook Web App  <br/> |6 Stunden.  <br/> Sie können diesen Wert mithilfe des _ActivityBasedAuthenticationTimeoutInterval_ -Parameters im Cmdlet " [OrganizationConfig](https://go.microsoft.com/fwlink/p/?LinkId=615378) " ändern.  <br/> |
 |Azure Active Directory  <br/> (Wird von Office 2013 Windows-Clients mit aktivierter moderner Authentifizierung verwendet)  <br/> | Bei der modernen Authentifizierung werden Zugriffstoken und Aktualisierungstoken verwendet, um Benutzer Zugriff auf Office 365 Ressourcen mithilfe von Azure Active Directory zu gewähren. Ein Zugriffstoken ist ein JSON-webtoken, das nach erfolgreicher Authentifizierung bereitgestellt wird und 1 Stunde gültig ist. Ein Aktualisierungstoken mit einer längeren Lebensdauer wird ebenfalls bereitgestellt. Wenn Zugriffstoken ablaufen, verwenden Office-Clients ein gültiges Aktualisierungstoken, um ein neues Zugriffstoken zu erhalten. Dieser Exchange-Nachfolger ist erfolgreich, wenn die anfängliche Authentifizierung des Benutzers weiterhin gültig ist.  <br/>  Aktualisierungstoken sind 90 Tage gültig und können mit der dauerhaften Verwendung bis zum Widerruf gültig sein.  <br/>  Aktualisierungstoken können von mehreren Ereignissen für ungültig erklärt werden, beispielsweise:  <br/>  Das Kennwort des Benutzers wurde geändert, seit das Aktualisierungstoken ausgestellt wurde.  <br/>  Ein Administrator kann Richtlinien für bedingten Zugriff anwenden, die den Zugriff auf die Ressource einschränken, auf die der Benutzer zuzugreifen versucht.  <br/> |

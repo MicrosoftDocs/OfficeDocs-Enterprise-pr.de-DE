@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: In diesem Artikel wird erläutert, wie Sie mithilfe von Office 365 PowerShell Informationen zu den Lizenzierungsplänen, Diensten und Lizenzen anzeigen können, die in Ihrer Office 365-Organisation verfügbar sind.
-ms.openlocfilehash: 9e84797de29337d9414d9a578a98f6799ee816cb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
-ms.translationtype: HT
+ms.openlocfilehash: 18444f76f312c75bc95645d17c48c996f1a3bfc7
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071091"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782035"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell
 
@@ -132,12 +132,12 @@ In der folgenden Tabelle sind die Office 365-Servicepläne und Anzeigenamen der 
 |**Dienstplan**|**Beschreibung**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Office Online  <br/> |
+| `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    

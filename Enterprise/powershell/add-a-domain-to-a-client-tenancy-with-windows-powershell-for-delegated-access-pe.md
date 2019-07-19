@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: 'Zusammenfassung: Verwenden Sie Windows PowerShell für Office 365 zum Hinzufügen eines alternativen Domänennamens zu einem vorhandenen Kundenmandanten.'
-ms.openlocfilehash: 9b65a5665ce8aa7205db733a2d0e0969e5cd401d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 1a1c1c06a2912f6624e6eb860ea6794f9474c09e
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069271"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781845"
 ---
 # <a name="add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-permission-dap-partners"></a>Hinzufügen einer Domäne zu einem Kundenmandanten mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
 
@@ -46,7 +46,7 @@ Sie benötigen außerdem die folgenden Informationen:
  Ihre Kunden werden Sie wahrscheinlich bitten, weitere Domänen für ihren Mandanten zu erstellen, da sie die Standarddomäne<Domäne>.onmicrosoft.comwahrscheinlich nicht als primären Domäne verwenden möchten, um ihr Unternehmen im Internet weltweit zu repräsentieren. Dieses Verfahren leitet Sie durch die Schritte zum Erstellen einer neuen Domäne, die Sie mit dem Kundenmandanten verknüpfen können.
   
 > [!NOTE]
-> Um einige dieser Verfahren ausführen zu können, muss in dem Partneradministratorkonto, mit dem Sie sich anmelden, die Einstellung **Administratorzugriff auf von Ihnen unterstützte Unternehmen zuweisen** auf **Vollständige Verwaltung** festgelegt sein. Diese Einstellung finden Sie in den Details des Administratorkontos in der Office 365 Admin Center. Weitere Informationen zum Verwalten von Partneradministratorrollen finden Sie unter[Partner: Anbieten von delegierter Administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
+> Um einige dieser Vorgänge ausführen zu können, muss das Partneradministrator Konto, mit dem Sie sich anmelden, auf **vollständige Verwaltung** für die Option **Administratorzugriff für Unternehmen zuweisen, die Sie unterstützen** in den Details des Administratorkontos in der festgelegten Microsoft 365 Admin Center. Weitere Informationen zum Verwalten von Partneradministrator Rollen finden Sie unter[Partners: Offer delegierte Administration](https://go.microsoft.com/fwlink/p/?LinkId=532435). 
   
 ### <a name="create-the-domain-in-azure-active-directory"></a>Erstellen Sie die Domäne in Azure Active Directory
 

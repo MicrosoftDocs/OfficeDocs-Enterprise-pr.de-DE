@@ -15,18 +15,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Zusammenfassung: Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und Office 365 Security & Compliance Center.'
-ms.openlocfilehash: 90903c33ebabc426ba95e0c69e71fea985cb464d
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 56c23aca44d09947e7469296c6ed85b2f3d2f3c5
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068901"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782105"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Verwalten von Office 365 mit Office 365 PowerShell
 
  **Zusammenfassung:** Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und Office 365 Security & Compliance Center.
   
-Office 365 PowerShell ist ein leistungsstarkes Verwaltungstool in Ergänzung zum Office 365 Admin Center. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. Erfahren Sie, wie Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und Office 365 Security & Compliance Center verwendet wird.
+Office 365 PowerShell ist ein leistungsfähiges Verwaltungstool, das das Microsoft 365 Admin Center ergänzt. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. In diesem Artikel erfahren Sie, wie Sie Office 365 PowerShell mit Office 365-Benutzern und-Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und dem Office 365 Security #a0 Compliance Center verwenden.
   
 Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
   

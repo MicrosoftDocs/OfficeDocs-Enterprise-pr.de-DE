@@ -13,18 +13,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: 'Zusammenfassung: Verwenden Sie Windows PowerShell für Office 365 zum Verwalten von Kundenmandanten.'
-ms.openlocfilehash: 0c7e4cd737a2e83a4d82c566ecd248501d780c54
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b38c1862a0cf2db4a751d1690686baeead8ae9ea
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068941"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35781855"
 ---
 # <a name="manage-office-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten von Office 365-Mandanten mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)
 
  **Zusammenfassung:** Verwenden Sie Windows PowerShell für Office 365 zum Verwalten von Kundenmandanten.
   
-Windows PowerShell ermöglicht Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP) die einfache Verwaltung von Kundenmandanteneinstellungen sowie die Berichterstellung dazu. Dies ist in der Office 365 Admin Center nicht verfügbar. Beachten Sie, dass die Berechtigungen „Verwalten im Namen von" (Administer On Behalf Of, AOBO) für das Administratorkonto des Partners notwendig sind, um eine Verbindung mit seinem Kundenmandanten herstellen zu können.
+Windows PowerShell ermöglicht es den Anbietern von Syndication-und Cloud Solution Providern (CSP), Kundenmandanten Einstellungen, die im Microsoft 365 Admin Center nicht verfügbar sind, einfach zu verwalten und zu melden. Beachten Sie, dass für das Partneradministrator Konto die Berechtigung verwalten im Namen von (AOBO) erforderlich ist, um eine Verbindung mit dem Mandanten des Kunden herzustellen.
   
 DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP). Häufig handelt es sich um Netzwerk- oder Telekom-Anbieter für andere Unternehmen. Sie bündeln Office 365-Abonnements in Serviceangeboten für ihre Kunden. Wenn sie ein Office 365-Abonnement verkaufen, erhalten sie automatisch AOBO-Berechtigungen (Administer On Behalf Of, Verwalten im Namen von) für die Kundenmandanten, damit sie diese verwalten und Berichte darüber erstellen können.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
