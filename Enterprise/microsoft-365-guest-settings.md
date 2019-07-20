@@ -9,12 +9,12 @@ ms.service: o365-solutions
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe.
-ms.openlocfilehash: b3944fc393b035a275ae71817415a0fb8ba250c1
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8c067374b960ff2cec7cdce87f67da0104697ff3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35606327"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782275"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
