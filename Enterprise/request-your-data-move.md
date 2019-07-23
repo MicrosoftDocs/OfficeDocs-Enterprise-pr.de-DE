@@ -3,7 +3,7 @@ title: Anfordern der Datenverschiebung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung übermitteln, damit die Kundendaten ihrer teilnehmenden Office 365 Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: 7558e65672afdb1fa91b8a958472eab00fb89d0c
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
+ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392355"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "35818025"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -37,20 +37,20 @@ Vorhandene Office 365 Kunden sind berechtigt, eine frühe Migration für die wic
 |Vereinigtes Königreich  <br/> |15. März 2017  <br/> |15. September 2017  <br/> |
 |Südkorea  <br/> |1. Mai 2017  <br/> |31. Oktober 2017  <br/> |
 |Frankreich  <br/> |14. März 2018  <br/> |15. September 2018  <br/> |
-|Vereinigte Arabische Emirate  <br/> |Geplante  <br/> |Geplante  <br/> |
+|Vereinigte Arabische Emirate  <br/> |15. Juli 2019  <br/> |31. Januar 2020  <br/> |
 |Südafrika  <br/> |Geplante  <br/> |Geplante  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Vorgehensweise Anfordern einer Verlagerung
 
-Für berechtigte Kunden wird eine Seite in Ihrem [Office 365 Admin Center](https://aka.ms/365admin)angezeigt, die es Ihnen ermöglicht, Ihre wichtigsten Kundendaten in ihren neuen rechenzentrumsbereich zu verschieben.  
+Für berechtigte Kunden wird eine Seite in Ihrem [Admin Center](https://aka.ms/365admin)angezeigt, die es Ihnen ermöglicht, Ihre wichtigsten Kundendaten in ihren neuen rechenzentrumsbereich zu verschieben.  
   
-Um auf die Seite im Office 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationsprofil**.
+Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationsprofil**.
   
-![Menü "Einstellungen" mit hervorgehobenem Organzational-Profil](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
+![Menü "Einstellungen" mit hervorgehobenem Organisationsprofil](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
   
 Scrollen Sie auf der Seite **Organisationsprofil** nach unten zum Abschnitt **Data Residency Option** . 
   
-![Daten Wohnsitz Karte](media/fdb02cd0-825d-4d9e-bb35-6f806282884f.png)
+![Daten Wohnsitz Karte](media/dataresidencyae.jpg)
   
 **Dieser Abschnitt wird möglicherweise nicht angezeigt, wenn einer der folgenden zutrifft**:
 - Ihr Mandant ist nicht für das Programm zum Verlegen berechtigt.  Die Berechtigung wird durch das Anmelde Land des Mandanten bestimmt.
@@ -58,7 +58,7 @@ Scrollen Sie auf der Seite **Organisationsprofil** nach unten zum Abschnitt **Da
   
 Wenn Ihre Organisation über Daten Wohnsitz Anforderungen verfügt und Sie eine frühe Migration anfordern müssen, klicken Sie oben rechts im Abschnitt auf **Bearbeiten** . Auf der rechten Seite des Bildschirms wird ein neuer Abschnitt angezeigt, in dem die Details des Verschiebe Programms erläutert werden. Wählen Sie die Umschaltfläche neben dem Text aus, der ja besagt, dass in **meiner Organisation Daten Wohnsitz Anforderungen erfüllt sind**. Klicken Sie auf **Speichern**.
   
-![Datencenter-Anmelde Aktions Bildschirm](media/f97ab8d2-b0e1-49bf-9d6b-bf75f3081233.png)
+![Datencenter-Anmelde Aktions Bildschirm](media/dataresidencyflyoutae.jpg)
   
 Der Text im Abschnitt **Data Residency Option** sollte angezeigt werden, um anzugeben, dass **Ihre Organisation aufgefordert wurde, ihre Hauptkunden Daten zu verlagern.** Sie haben auch eine Bestätigungsmeldung in Ihrem Nachrichtencenter. Dadurch wird bestätigt, dass Sie erfolgreich eine Migration angefordert haben. 
 
