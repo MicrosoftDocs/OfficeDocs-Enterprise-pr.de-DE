@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 description: Verwenden Sie die PowerShell-Cmdlets für zentralisierte Bereitstellung, um die Bereitstellung und Verwaltung von Office-Add-Ins für Ihre Office 365 Organisation zu erleichtern.
-ms.openlocfilehash: c63a48d212bba4eda25fb6b8843f6321892dc54b
-ms.sourcegitcommit: d53033c2d2d41d52047e3e2644d77373d4a5dd9a
+ms.openlocfilehash: 301e44da4c663fa54c4e2b753552b0b345e2a6e5
+ms.sourcegitcommit: 9cd3dcf1e90b21c7651d367dcd3306d6fe0bcbcb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35791250"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35834235"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Verwenden der PowerShell-Cmdlets für zentrale Bereitstellung zum Verwalten von Add-Ins
 
@@ -171,6 +171,8 @@ Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ## <a name="customize-microsoft-store-add-ins-for-your-organization"></a>Anpassen von Microsoft Store-Add-Ins für Ihre Organisation
 
 Sie müssen das Add-in anpassen, bevor Sie es in Ihrer Organisation bereitstellen. Add-Ins, die älter als Version 1,1 sind, werden von dieser Funktion nicht unterstützt. 
+
+Es wird empfohlen, dass Sie zuerst ein angepasstes Add-in für sich selbst bereitstellen, um sicherzustellen, dass es wie erwartet funktioniert, bevor Sie es in ihrer gesamten Organisation bereitstellen.
 
 Beachten Sie auch die folgenden Einschränkungen:
 - Alle URLs müssen absolut sein (Include http oder HTTPS) und gültig.
