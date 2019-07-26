@@ -3,7 +3,7 @@ title: Anfordern der Datenverschiebung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/22/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung übermitteln, damit die Kundendaten ihrer teilnehmenden Office 365 Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: b1fc5606549597eb91990f3675d4d867d0605f04
-ms.sourcegitcommit: 626ffb9907d5225acccf94095f54c8244df8dd49
+ms.openlocfilehash: 4df9c3481782f6d3f0b8431bd91677fb1262812c
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "35818025"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907648"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -38,7 +38,7 @@ Vorhandene Office 365 Kunden sind berechtigt, eine frühe Migration für die wic
 |Südkorea  <br/> |1. Mai 2017  <br/> |31. Oktober 2017  <br/> |
 |Frankreich  <br/> |14. März 2018  <br/> |15. September 2018  <br/> |
 |Vereinigte Arabische Emirate  <br/> |15. Juli 2019  <br/> |31. Januar 2020  <br/> |
-|Südafrika  <br/> |Geplante  <br/> |Geplante  <br/> |
+|Südafrika  <br/> |25. Juli 2019  <br/> |31. Januar 2020  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Vorgehensweise Anfordern einer Verlagerung
 
@@ -53,14 +53,14 @@ Scrollen Sie auf der Seite **Organisationsprofil** nach unten zum Abschnitt **Da
 ![Daten Wohnsitz Karte](media/dataresidencyae.jpg)
   
 **Dieser Abschnitt wird möglicherweise nicht angezeigt, wenn einer der folgenden zutrifft**:
-- Ihr Mandant ist nicht für das Programm zum Verlegen berechtigt.  Die Berechtigung wird durch das Anmelde Land des Mandanten bestimmt.
-- Alle Ihre Daten befinden sich bereits im neuen Geo (siehe Abschnitt "Datenspeicherort" auf der Seite). 
+- Ihr Mandant ist nicht für das Office 365-Verschiebe Programm berechtigt.  Die Berechtigung wird durch das Anmelde Land des Mandanten bestimmt.
+- Alle Ihre Kernkunden Daten im Rest befinden sich bereits im neuen Geo (siehe Abschnitt "Datenspeicherort" auf der Seite). 
   
-Wenn Ihre Organisation über Daten Wohnsitz Anforderungen verfügt und Sie eine frühe Migration anfordern müssen, klicken Sie oben rechts im Abschnitt auf **Bearbeiten** . Auf der rechten Seite des Bildschirms wird ein neuer Abschnitt angezeigt, in dem die Details des Verschiebe Programms erläutert werden. Wählen Sie die Umschaltfläche neben dem Text aus, der ja besagt, dass in **meiner Organisation Daten Wohnsitz Anforderungen erfüllt sind**. Klicken Sie auf **Speichern**.
+Wenn Ihre Organisation über Daten Wohnsitz Anforderungen verfügt und Sie eine frühe Migration anfordern müssen, klicken Sie oben rechts im Abschnitt auf **Anmelden** . Auf der rechten Seite des Bildschirms wird ein neuer Abschnitt angezeigt, in dem die Details des Office 365-Verschiebe Programms erläutert werden. Wählen Sie die Umschaltfläche neben dem Text aus, der besagt, dass die **wichtigsten Kundendaten meiner Organisation in Ruhe migriert werden sollen**. Klicken Sie auf **Speichern**.
   
 ![Datencenter-Anmelde Aktions Bildschirm](media/dataresidencyflyoutae.jpg)
   
-Der Text im Abschnitt **Data Residency Option** sollte angezeigt werden, um anzugeben, dass **Ihre Organisation aufgefordert wurde, ihre Hauptkunden Daten zu verlagern.** Sie haben auch eine Bestätigungsmeldung in Ihrem Nachrichtencenter. Dadurch wird bestätigt, dass Sie erfolgreich eine Migration angefordert haben. 
+Der Text im Abschnitt **Data Residency** section sollte angezeigt werden, um anzugeben, dass **Ihre Organisation aufgefordert wurde, Ihre Stammkunden Daten zu verlagern.** Sie haben auch eine Bestätigungsmeldung in Ihrem Nachrichtencenter. Dadurch wird bestätigt, dass Sie erfolgreich eine Migration angefordert haben. 
 
 
   

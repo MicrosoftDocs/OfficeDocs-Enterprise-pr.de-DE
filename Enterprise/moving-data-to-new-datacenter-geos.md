@@ -3,7 +3,7 @@ title: Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Neues Rechenzentrum GEOS Kapazität hinzufügen und Ressourcen berechnen, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online Websiteinhalt und die Dateien in dieser Website gespeichert und in OneDrive für Unternehmen hochgeladene Dateien.'
-ms.openlocfilehash: 63b094772fc5e199124251e204b116e74cedec0a
-ms.sourcegitcommit: aca382b615ce79c9f707f74cda6d90fbe87bb626
+ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
+ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35392345"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35907638"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 
@@ -39,8 +39,8 @@ Vorhandene Kunden, deren Kernkunden Daten in einer bereits vorhandenen Rechenzen
 |Vereinigtes Königreich * * * *| Europa | Vereinigtes Königreich | September 2016 |
 |Südkorea * * * *| Asien/Pazifik | Südkorea | April 2017 |
 |Frankreich * * * *| Europa | Frankreich | März 2018 |
-|Vereinigte Arabische Emirate * * * *| Europa | Vereinigte Arabische Emirate | Angekündigt |
-|Südafrika * * * *| Europa | Südafrika | Angekündigt |
+|Vereinigte Arabische Emirate * * * *| Europa | Vereinigte Arabische Emirate | Juni 2019 |
+|Südafrika * * * *| Europa | Südafrika | Juli 2019 |
   
 Für neue Kunden oder Office 365 Mandanten, die nach der Verfügbarkeit des neuen Rechenzentrums-Geo erstellt wurden, werden Ihre Kernkunden Daten automatisch in der neuen Rechenzentrums-Geo-Datenbank gespeichert.
   
