@@ -3,29 +3,6 @@
 
 
 
-## <a name="week-of-june-24-2019"></a>Woche vom 24. Juni 2019
-
-
-| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
-|------|------------|--------|
-| 6/24/2019 | [Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind](/Office365/Enterprise/additional-office365-ip-addresses-and-urls) | Geändert |
-| 6/24/2019 | [So funktioniert die moderne Authentifizierung für Office 2013- und Office 2016-Client-Apps](/Office365/Enterprise/modern-auth-for-office-2013-and-2016) | Geändert |
-| 6/24/2019 | [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](/Office365/Enterprise/prepare-a-non-routable-domain-for-directory-synchronization) | Geändert |
-| 6/24/2019 | [Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren](/Office365/Enterprise/recover-deleted-items-in-a-mailbox) | Geändert |
-| 6/24/2019 | [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](/Office365/Enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure) | Geändert |
-| 6/24/2019 | [Upgrade von SharePoint 2010](/Office365/Enterprise/upgrade-from-sharepoint-2010) | Geändert |
-| 6/26/2019 | [Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell](/Office365/Enterprise/powershell/manage-skype-for-business-online-policies-with-office-365-powershell) | Geändert |
-| 6/26/2019 | [Vorbereiten der Verzeichnissynchronisierung auf Office 365](/Office365/Enterprise/prepare-for-directory-synchronization) | Geändert |
-| 6/26/2019 | [Optimieren der Leistung von SharePoint Online](/Office365/Enterprise/tune-sharepoint-online-performance) | Geändert |
-| 6/28/2019 | [Endpunkte für Office 365 Deutschland](/Office365/Enterprise/office-365-germany-endpoints) | Geändert |
-| 6/28/2019 | [Office 365 US Government DoD-Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
-| 6/28/2019 | [Office 365 US-Regierung gcc High Endpoint](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
-| 6/28/2019 | [URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Geändert |
-| 6/28/2019 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |
-| 6/28/2019 | [Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Geändert |
-| 6/28/2019 | [Anfordern der Datenverschiebung](/Office365/Enterprise/request-your-data-move) | Geändert |
-
-
 ## <a name="week-of-july-01-2019"></a>Week of July 01, 2019
 
 
@@ -131,3 +108,15 @@
 | 7/24/2019 | [Hinzufügen einer Domäne zu einem Kundenmandanten mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)](/Office365/Enterprise/powershell/add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe) | Geändert |
 | 7/25/2019 | [Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS](/Office365/Enterprise/moving-data-to-new-datacenter-geos) | Geändert |
 | 7/25/2019 | [Anfordern der Datenverschiebung](/Office365/Enterprise/request-your-data-move) | Geändert |
+
+
+## <a name="week-of-july-29-2019"></a>Woche vom 29. Juli 2019
+
+
+| Zeitpunkt der Veröffentlichung |Titel des Themas | Änderung |
+|------|------------|--------|
+| 7/29/2019 | [Endpunkte für Office 365 Deutschland](/Office365/Enterprise/office-365-germany-endpoints) | Geändert |
+| 7/29/2019 | [Office 365 US Government DoD-Endpunkte](/Office365/Enterprise/office-365-u-s-government-dod-endpoints) | Geändert |
+| 7/29/2019 | [Office 365 US-Regierung gcc High Endpoint](/Office365/Enterprise/office-365-u-s-government-gcc-high-endpoints) | Geändert |
+| 7/29/2019 | [URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet](/Office365/Enterprise/urls-and-ip-address-ranges-21vianet) | Geändert |
+| 7/29/2019 | [URLs und IP-Adressbereiche für Office 365](/Office365/Enterprise/urls-and-ip-address-ranges) | Geändert |

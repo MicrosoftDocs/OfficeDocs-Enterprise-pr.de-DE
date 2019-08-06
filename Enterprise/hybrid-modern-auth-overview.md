@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet. Sie ist für hybridbereitstellungen von lokalen Skype for Business-Servern und lokalen Exchange-Servern sowie für geteilte Domänen Skype for Business Hybriden verfügbar. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zur Einrichtung/Deaktivierung moderner Authentifizierung und zu einigen der verwandten Clients (ex. Outlook-und Skype-Clients) Informationen.
-ms.openlocfilehash: 0448dfdc46598a6aa4df0108214ff0a4cf290382
-ms.sourcegitcommit: 54c07ffcfe0da286b1780fdc03ba2f2fd0dbc86d
+ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
+ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34404217"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35782455"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern
 
@@ -88,7 +88,7 @@ Da die moderne Authentifizierung den autorisierungsserver ändert, der verwendet
     
   - Ihre SIP-Domäne wird in Office 365 als Verbunddomäne hinzugefügt.
     
-  - Alle SFB-Front-Ends müssen über ausgehende Verbindungen mit dem Internet, zum Office 365 von Authentifizierungs-URLs (TCP 443) und bekannten Zertifikatstamm CRLs (TCP 80) verfügen, die in den Zeilen 56 und 125 des Abschnitts "Microsoft 365 Common and Office Online" [Office 365 URLs und IP aufgeführt sind. Adressbereiche](urls-and-ip-address-ranges.md).
+  - Alle SFB-Front-Ends müssen über ausgehende Verbindungen mit dem Internet, Office 365 Authentifizierungs-URLs (TCP 443) und bekannte Zertifikatstamm-CRLs (TCP 80) verfügen, die in den Zeilen 56 und 125 des Abschnitts "Microsoft 365 Common and Office" [Office 365-URLs und-IP-Adressen aufgeführt sind. Bereiche](urls-and-ip-address-ranges.md).
   
 - **Skype for Business lokal in einer hybriden Office 365 Umgebung**
   - Eine Skype for Business Server 2019-Bereitstellung mit allen Servern, auf denen Skype for Business Server 2019 läuft.

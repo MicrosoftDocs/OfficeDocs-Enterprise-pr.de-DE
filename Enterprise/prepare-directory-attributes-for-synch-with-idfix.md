@@ -16,17 +16,18 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Enthält Anweisungen zur Verwendung von IdFix zum Vorbereiten und Bereinigen des lokalen Verzeichnisses vor dem Synchronisieren mit Office 365.
-ms.openlocfilehash: ca00fe1ee8ad829a3b72e51b4e292c8ea3b81e48
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
+ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162368"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490788"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Vorbereiten von Verzeichnisattributen für die Synchronisierung mit Office 365 mithilfe des IdFix-Tools
 Dieses Thema enthält detaillierte Anweisungen zum Ausführen des IdFix-Tools, einige häufige Fehler, die auftreten können, vorgeschlagene Korrekturen, Beispiele und bewährte Methoden für Vorgehensweisen bei einer großen Anzahl von Fehlern.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Beheben von Fehlern in Ihrem Verzeichnis mithilfe der IdFix-GUI
+
 [Führen Sie das Office 365 IdFix-Tool](install-and-run-idfix.md) aus, um nach Problemen in Ihrem Verzeichnis zu suchen und dann die Fehler in der GUI zu beheben, wie in diesem Thema beschrieben. Wenn das Tool eine leere Tabelle zurückgibt, wurden keine Fehler ermittelt. Wenn es viele Probleme in Ihrem Verzeichnis gibt, kann es überwältigend sein, wenn das Tool die Fehler zurückgibt. Eine Möglichkeit, dies zu bewältigen, ist, alle Fehler eines Typs zuerst zu beheben und dann zum nächsten Typ zu übergehen. 
   
 1. Bevor Sie mit der Durchführung von Änderungen beginnen, sehen Sie sich die von IdFix vorgestellten Empfehlungen an.

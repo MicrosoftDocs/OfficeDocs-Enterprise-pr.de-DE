@@ -23,12 +23,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern für die Office 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: 2361f4484f00d61fda90fed407bf3c287bbc2bc1
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
+ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162468"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35249196"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Vorbereiten der Verzeichnissynchronisierung auf Office 365
 
@@ -113,7 +113,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Maximale Anzahl von Zeichen pro Wert: 256
   - Der Attributwert darf kein Leerzeichen enthalten.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: \< \> (); , [ ] "
+  - Ungültige Zeichen: \< \> (); , [ ] " '
     
     Beachten Sie, dass die ungültigen Zeichen auf die Zeichen nach dem typtrennzeichen und ":" angewendet werden, so dass SMTP:User@contso.com zulässig ist, aber SMTP:User:M@contoso.com nicht ist.
     
@@ -124,7 +124,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
     
   - Maximale Anzahl der Zeichen: 20
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-  - Ungültige Zeichen: [\ "|,/: \< \> + =;? \* ]
+  - Ungültige Zeichen: [\ "|,/: \< \> + =;? \* ']
   - Wenn ein Benutzer ein ungültiges **sAMAccountName** -Attribut aufweist, aber über ein gültiges **userPrincipalName** -Attribut verfügt, wird das Benutzerkonto in Office 365 erstellt. 
   - Wenn sowohl **sAMAccountName** als auch **userPrincipalName** ungültig sind, muss das AD DS **userPrincipalName** -Attribut aktualisiert werden. 
     
@@ -148,7 +148,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Die maximale Anzahl von Zeichen für das **userPrincipalName** -Attribut lautet 113. Eine bestimmte Anzahl von Zeichen ist vor und nach dem @-Zeichen wie folgt zulässig: 
   - Maximale Anzahl von Zeichen für den Benutzernamen vor dem @-Zeichen (@): 64
   - Maximale Anzahl von Zeichen für den Domänennamen nach dem @-Zeichen (@): 48
-  - Ungültige Zeichen: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] "
+  - Ungültige Zeichen: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
   - Ein Umlaut ist ebenfalls ein ungültiges Zeichen.
   - Das @-Zeichen ist in jedem **userPrincipalName** -Wert erforderlich. 
   - Das @-Zeichen darf nie das erste Zeichen in einem **userPrincipalName**-Wert sein. 
@@ -160,9 +160,9 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
 
 Informationen zum Identifizieren von Fehlern in den Attributen ihrer AD DS finden Sie unter [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) to use the IdFix Tool.
     
-## <a name="2-prepare-the-userprincipalname-attribute"></a>2. Vorbereiten des userPrincipalName-Attributs
+## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Vorbereiten des userPrincipalName-Attributs
 
-Active Directory wurde entwickelt, um es den Endbenutzern in Ihrer Organisation zu ermöglichen, sich mit **sAMAccountName** oder **userPrincipalName**bei Ihrem Verzeichnis anzumelden. Auf ähnliche Weise können sich Endbenutzer bei Office 365 anmelden, indem Sie den Benutzerprinzipalnamen (User Principal Name, UPN) Ihres Geschäfts-oder Schul Kontos verwenden. Die Verzeichnissynchronisierung versucht, neue Benutzer in Azure Active Directory mithilfe desselben UPN zu erstellen, der sich in Ihrer AD-SD befindet. Der UPN ist wie eine e-Mail-Adresse formatiert. 
+Active Directory wurde entwickelt, um es den Endbenutzern in Ihrer Organisation zu ermöglichen, sich mit **sAMAccountName** oder **userPrincipalName**bei Ihrem Verzeichnis anzumelden. Auf ähnliche Weise können sich Endbenutzer bei Office 365 anmelden, indem Sie den Benutzerprinzipalnamen (User Principal Name, UPN) Ihres Geschäfts-oder Schul Kontos verwenden. Die Verzeichnissynchronisierung versucht, neue Benutzer in Azure Active Directory mithilfe desselben UPN zu erstellen, der in Ihrem AD DS ist. Der UPN ist wie eine e-Mail-Adresse formatiert. 
 
 In Office 365 ist der UPN das Standardattribut, das zum Generieren der e-Mail-Adresse verwendet wird. Es ist ganz einfach, **userPrincipalName** (in AD DS und in Azure AD) und die primäre e-Mail-Adresse in **proxyAddresses** auf unterschiedliche Werte festgelegt zu erhalten. Wenn Sie auf unterschiedliche Werte festgelegt sind, kann es zu Verwirrung für Administratoren und Endbenutzer kommen. 
   

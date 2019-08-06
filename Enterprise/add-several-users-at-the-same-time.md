@@ -23,29 +23,28 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'Informationen zum Hinzufügen mehrerer Benutzer zu Office 365 for Business aus einer Liste in einer Kalkulationstabelle oder einer anderen CSV-formatierten Datei. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Office 365 erläutert wird. Am Ende dieses Prozesses verfügen alle Benutzer mit einem Konto über ein Office 365-Postfach. '
-ms.openlocfilehash: ef4093592d4f6fc8e38ee053b53c73193a821d36
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: 'In diesem Artikel erfahren Sie, wie Sie Office 365 für Unternehmen aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei mehrere Benutzer hinzufügen können. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Office 365 erläutert wird. Am Ende dieses Prozesses verfügt jeder Benutzer mit einem Konto über ein Office 365 Postfach. '
+ms.openlocfilehash: ece3cc6f207b5c0caaa03880da925eb3b6ac2c5b
+ms.sourcegitcommit: 6c3003380491fba6dacb299754716901c20ba629
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068691"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "36198657"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 – Administratorhilfe
 
 Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden und auf Office 365-Dienste wie E-Mail und Office zugreifen kann. Wenn das Team viele Personen umfasst, können Sie deren Konten aus einer Excel-Tabelle oder einer anderen, im CSV-Format gespeicherten, Datei gleichzeitig hinzufügen. [Was ist eine CSV-Datei?](add-several-users-at-the-same-time.md#__toc316652088)
   
-## <a name="add-multiple-users-to-office-365-in-the-office-365-admin-center"></a>Hinzufügen mehrerer Benutzer in Office 365 im Office 365 Admin Center
+## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Hinzufügen von mehreren Benutzern zu Office 365 im Microsoft 365 Admin Center
 
 1. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an. 
     
-2. In the Office 365 admin center, choose **Users** \> **Active users**.
+2. Wählen Sie im Admin Center **Benutzer** \> **Aktive Benutzer** aus.
     
-    ![In the Admin center choose Users and then Active users](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
+    ![Wählen Sie im Admin Center Benutzer und dann aktive Benutzer aus.](media/12086d98-a8b4-4c48-89cf-b78ad8058ff1.png)
   
-3. Wählen Sie im Dropdownmenü **Mehr** die Option **Mehrere Benutzer importieren** aus.
     
-4. Im Bereich **Mehrere Benutzer importieren** können Sie eine CSV-Beispieldatei mit oder ohne eingetragene Beispieldaten optional herunterladen. 
+3. Im Bereich **Mehrere Benutzer importieren** können Sie eine CSV-Beispieldatei mit oder ohne eingetragene Beispieldaten optional herunterladen. 
     
     ![In the More drop-down, choose Import multiple users](media/77df8a4a-fd00-4fbe-bf1c-d234fc1d5e93.png)
   
@@ -63,15 +62,15 @@ Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden
   
   ```
 
-5. Geben Sie in dem Feld einen Dateipfad ein, oder wählen Sie **Durchsuchen** aus, um zum Speicherort der CSV-Datei zu navigieren. Wählen Sie dann **Überprüfen** aus.
+4. Geben Sie in dem Feld einen Dateipfad ein, oder wählen Sie **Durchsuchen** aus, um zum Speicherort der CSV-Datei zu navigieren. Wählen Sie dann **Überprüfen** aus.
     
     ![Your CSV file is verified](media/a43d49db-b2ab-4200-8ddf-0bc846ac6fe5.png)
   
     Wenn es Probleme mit der Datei gibt, wird eine entsprechende Meldung angezeigt. Sie können auch eine Protokolldatei herunterladen.
     
-6. Im Dialogfeld **Benutzeroptionen festlegen** können Sie den Anmeldestatus festlegen und die Produktlizenz auswählen, die allen Benutzern zugewiesen werden soll. 
+5. Im Dialogfeld **Benutzeroptionen festlegen** können Sie den Anmeldestatus festlegen und die Produktlizenz auswählen, die allen Benutzern zugewiesen werden soll. 
     
-7. Im Dialogfeld **Ergebnisse anzeigen** können Sie auswählen, ob die Ergebnisse an Sie selbst oder an andere Benutzer (Kennwörter im Nur-Text-Format) gesendet werden sollen. Außerdem können Sie sehen, wie viele Benutzer erstellt wurden und ob Sie weitere Lizenzen erwerben müssen, um sie einigen der neuen Benutzer zuzuweisen. 
+6. Im Dialogfeld **Ergebnisse anzeigen** können Sie auswählen, ob die Ergebnisse an Sie selbst oder an andere Benutzer (Kennwörter im Nur-Text-Format) gesendet werden sollen. Außerdem können Sie sehen, wie viele Benutzer erstellt wurden und ob Sie weitere Lizenzen erwerben müssen, um sie einigen der neuen Benutzer zuzuweisen. 
     
 ## <a name="watch-the-video"></a>Video ansehen
 <a name="bk_preview"> </a>
@@ -83,11 +82,11 @@ Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="bk_preview"> </a>
 
-- Nachdem diese Benutzer über Konten verfügen, müssen Sie [Office 365 oder Office 2016 auf einem PC oder Mac herunterladen und installieren oder neu installieren](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Jede Person in Ihrem Team kann Office 365 auf bis zu fünf PCs oder Macs installieren. 
+- Da diese Personen nun über Konten verfügen, müssen Sie [Office 365 oder Office 2016 auf einem PC oder Mac herunterladen und installieren oder neu installieren](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Jede Person in Ihrem Team kann Office 365 auf bis zu fünf PCs oder Macs installieren. 
     
-- Jede Person kann auch [Office-Apps und e-Mail auf einem mobilen Gerät](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) auf bis zu 5 Tablets und 5 Handys, wie iPhones, iPads und Android-Telefone und Tablets, einrichten. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden. 
+- Jede Person kann auch [Office-Apps und e-Mail auf einem mobilen Gerät](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) auf bis zu 5 Tablets und 5 Telefonen wie iPhones, iPads und Android-Telefone und-Tablets einrichten. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden. 
     
-    Eine End-to-End-Liste der Setupschritte finden Sie unter [Einrichten von Office 365 für Unternehmen](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) . 
+    Weitere Informationen finden Sie unter [Set up Office 365 für Unternehmen](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) for a End-to-End List of the Setup Steps. 
     
 ## <a name="more-information-about-how-to-add-users-to-office-365"></a>Weitere Informationen dazu, wie Sie Benutzer zu Office 365 hinzufügen
 <a name="bk_preview"> </a>
@@ -146,7 +145,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
     
 - ** If you don't see the new users in Office 365 right away, wait a few minutes. ** It can take a little while for changes to go across all the services in Office 365. 
     
-## <a name="add-multiple-users-to-office-365-in-the-old-office-365-admin-center"></a>Hinzufügen weiterer Benutzer zu Office 365 im alten Office 365 Admin Center
+## <a name="add-multiple-users-to-office-365-in-the-old-admin-center"></a>Hinzufügen mehrerer Benutzer zu Office 365 im alten Admin Center
 
 1. Laden Sie [diese Beispieltabelle](https://www.microsoft.com/en-us/download/details.aspx?id=45485) herunter, und öffnen Sie sie in Excel. 
     
@@ -162,13 +161,13 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
     
 2. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an. 
     
-3. Navigieren Sie zum Office 365 Admin Center.
+3. Wechseln Sie zum Admin Center.
     
 4. For people to use Office 365 services, they need to be assigned a license. Before continuing, you might want to check that you have enough licenses for everyone listed in your spreadsheet. Choose **Billing** \> **Subscriptions** to see if you have enough. If you need to buy more licenses, choose ** Change license quantity **. Or, you can run the wizard and assign the licenses you have, then buy more licenses later and rerun the wizard. 
     
 5. Wechseln Sie nun zum Assistenten "Massenhinzufügung von Benutzern": Wählen Sie **Benutzer** \> **Aktive Benutzer** aus. Wählen Sie ![Das Symbol zum Massenhinzufügen von Benutzern in Office 365](media/3481ffea-d552-4a7f-9a3b-014504e69746.png), wie in der nachstehenden Abbildung gezeigt. 
     
-    ![Abbildung des Abschnitts "Benutzer" im Office 365 Admin Center](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
+    ![Ein Bild des Abschnitts "Benutzer" des Admin Centers](media/2cd5ff86-9c0b-438e-9bb9-13b12a2675de.png)
   
     Der Assistent "Massenhinzufügung von Benutzern" wird angezeigt und führt Sie schrittweise durch den Vorgang zum Hinzufügen einer Benutzergruppe zu Office 365. 
     
@@ -188,7 +187,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
     
     ![Schritt 4 des Assistenten zur Massenhinzufügung von Benutzern - Lizenzen](media/161ea34c-c67e-43be-962f-029f5426ff1b.png)
   
-    Sie können **Weitere Lizenzen erwerben** auswählen, verlassen dann allerdings automatisch den Assistenten "Massenhinzufügung von Benutzern" und wechseln im Office 365 Admin Center zu **Abrechnung**. Nachdem Sie weitere Lizenzen erworben haben, müssen Sie ein paar Minuten warten, bis der Auftrag verarbeitet wurde. Starten Sie dann den Assistenten "Massenhinzufügung von Benutzern" von Beginn an. 
+    Sie können die Option **Buy More licenses**wählen, aber Sie verlassen den Assistenten für Massen Benutzer hinzufügen und wechseln zur **Abrechnung** im Microsoft 365 Admin Center. Nachdem Sie weitere Lizenzen erworben haben, müssen Sie einige Minuten warten, bis die Reihenfolge verarbeitet wurde, und dann den Assistenten für Massen Benutzer hinzufügen von Anfang an starten. 
     
     Wenn Sie keine weiteren Lizenzen erwerben, wird nicht für jede in Ihrer Tabelle aufgelistete Person ein Konto erstellt. 
     
