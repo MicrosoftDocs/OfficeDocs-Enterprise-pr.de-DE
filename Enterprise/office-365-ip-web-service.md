@@ -3,7 +3,7 @@ title: Office 365-IP-Adress- und -URL-Webdienst
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/7/2019
+ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,23 +17,23 @@ search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Damit Sie Office 365-Netzwerkdatenverkehr besser erkennen und unterscheiden können, veröffentlicht ein neuer Webdienst Office 365-Endpunkte, sodass Sie Änderungen einfacher bewerten, konfigurieren und mit diesen auf dem Laufenden bleiben können. Dieser neue Webdienst ersetzt die herunterladbaren XML-Dateien, die derzeit verfügbar sind.
-ms.openlocfilehash: fcef7a6a175b043639275fedc77faaa689f0e7d5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Der Office 365-IP-Adress- und URL-Dienst unterstützt Sie beim besseren Erkennen und Differenzieren des Netzwerkdatenverkehrs in Office 365, was es Ihnen erleichtert, Änderungen auszuwerten, zu konfigurieren und auf dem neuesten Stand zu bleiben.
+ms.openlocfilehash: 90de20f28e271e3fb174a883eb9cda3fb1228fb4
+ms.sourcegitcommit: 6db61b95b1b5b4312dd6bc42bec6597e359b1bd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069731"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36212980"
 ---
-# <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adresse- und -URL-Webdienst
+# <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adress- und -URL-Webdienst
 
-Damit Sie Office 365-Netzwerkdatenverkehr besser erkennen und unterscheiden können, veröffentlicht ein neuer Webdienst Office 365-Endpunkte, sodass Sie Änderungen einfacher bewerten, konfigurieren und mit diesen auf dem Laufenden bleiben können. Dieser neue Webdienst ersetzt die herunterladbaren XML-Dateien, die derzeit verfügbar sind. Das XML-Format ist ab dem 2. Oktober 2018 nicht mehr verfügbar.
+Der Office 365-IP-Adress- und URL-Dienst unterstützt Sie beim besseren Erkennen und Differenzieren des Netzwerkdatenverkehrs in Office 365, was es Ihnen erleichtert, Änderungen auszuwerten, zu konfigurieren und auf dem neuesten Stand zu bleiben. Dieser REST-basierte Webdienst ersetzt die vorherigen herunterladbaren XML-Dateien, die am 2. Oktober 2018 ausliefen.
 
-Als Kunde oder Anbieter von Netzwerkperimetergeräten können Sie den neuen REST-basierten Webdienst für die Office 365-IP-Adress- und -FQDN-Einträge verwenden. Sie können auf die Daten direkt in einem Webbrowser über die folgenden URLs zugreifen.
+Als Kunde oder Hersteller von Netzwerkumkreisgeräten können Sie den Build für den Webdienst für die Office 365-IP-Adress- und -FQDN-Einträge erstellen. Sie können direkt in einem Webbrowser auf die Daten zugreifen, indem Sie diese URLs verwenden:
 
 - Verwenden Sie für die neueste Version der Office 365-URLs und -IP-Adressbereiche [https://endpoints.office.com/version](https://endpoints.office.com/version?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 - Verwenden Sie für die Daten auf der Seite für die Office 365-URLs und -IP-Adressbereiche für Firewalls und Proxyserver [https://endpoints.office.com/endpoints/worldwide](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
-- Um die neuesten Änderungen seit Ende Juli 2018 zu erhalten (Datum, zu dem der Webdienst erstmalig verfügbar war), verwenden Sie [https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
+- Um die neuesten Änderungen seit Juli 2018 zu erhalten (Datum, zu dem der Webdienst erstmalig verfügbar war), verwenden Sie [https://endpoints.office.com/changes/worldwide/0000000000](https://endpoints.office.com/changes/worldwide/0000000000?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 
 Als Kunde können Sie diesen Webdienst für Folgendes verwenden:
 
@@ -58,26 +58,28 @@ Weitere Informationen finden Sie unter:
 
 Diese Parameter gelten für sämtliche Webdienstmethoden:
 
-- **format=<JSON | CSV>** - Standardmäßig ist die zurückgegebene Datei als JSON formatiert. Verwenden Sie diesen optionalen Parameter, um die Daten in durch Trennzeichen getrennte Werte (CSV-Format) zurückzubekommen.
-- **ClientRequestId=\<guid>** - Eine erforderliche GUID, die Sie für die Clientzuordnung generieren. Sie sollten eine GUID für jeden Computer generieren, der den Webdienst aufruft. Verwenden Sie nicht die in den folgenden Beispielen angezeigten GUIDs, da sie in Zukunft durch den Webdienst blockiert werden könnten. GUID-Format ist _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, wobei x eine hexadezimale Zahl darstellt. Um eine GUID zu generieren, verwenden Sie den PowerShell-Befehl [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6).
+- **format=<JSON | CSV>** – standardmäßig ist die zurückgegebene Datei als JSON formatiert. Verwenden Sie diesen optionalen Parameter, um die Daten in durch Trennzeichen getrennten Werten (CSV-Format) zurückzuerhalten.
+- **ClientRequestId=\<guid>** – eine erforderliche GUID, die Sie für die Clientzuordnung generieren. Generieren Sie eine eindeutige GUID für jeden Computer, von dem der Webdienst aufgerufen wird (die auf dieser Seite enthaltenen Skripts generieren eine GUID für Sie). Nutzen Sie nicht die in den folgenden Beispielen dargestellten GUIDs, da sie künftig durch den Webdienst blockiert werden könnten. Das GUID-Format ist _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, wobei x eine hexadezimale Zahl darstellt.
+
+  Wenn Sie eine GUID generieren möchten, können Sie den PowerShell-Befehl [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) verwenden oder einen Onlinedienst wie den [Online GUID Generator](https://www.guidgenerator.com/) nutzen.
 
 ## <a name="version-web-method"></a>Versionswebmethode
 
-Microsoft aktualisiert die Office 365-IP-Adress- und -FQDN-Einträge am Ende jedes Monats und gelegentlich auch außerhalb dieses Zyklus aufgrund von betrieblichen oder Supportanforderungen. Den Daten für jede veröffentlichte Instanz wird eine Versionsnummer zugewiesen. Mit der Versionswebmethode können Sie die neueste Version für jede Instanz des Office 365-Diensts abrufen. Es wird empfohlen, dass Sie die Version tages- oder stundenweise überprüfen. Neue Versionen sollten zu Beginn jedes Monats zur Verfügung stehen. Manchmal sind aufgrund von Supportanfragen, Sicherheitsbelangen oder anderen betrieblichen Anforderungen neue Versionen während des Monats verfügbar.
+Microsoft aktualisiert die Office 365-IP-Adress- und -FQDN-Einträge am Ende jeden Monats. Out-of-Band-Updates werden manchmal aufgrund von Supportfällen, Sicherheitsupdates oder sonstigen betrieblichen Anforderungen veröffentlicht.
+
+Den Daten für jede veröffentlichte Instanz wird eine Versionsnummer zugewiesen, und mit der Versionswebmethode können Sie nach der neuesten Version jeder Office 365-Dienstinstanz suchen. Wir empfehlen, die Version nicht mehr als einmal pro Stunde zu überprüfen.
 
 Parameter für die Versionswebmethode sind:
 
-- **AllVersions=<true | false>** - Standardmäßig ist die zurückgegebene Version die neueste. Übernehmen Sie diesen optionalen Parameter, um alle veröffentlichten Versionen seit dem ersten Release des Webdiensts anzufordern.
-- **Format=<JSON | CSV | RSS>** - Zusätzlich zu den Formaten JSON und CSV unterstützt die Versionswebmethode auch RSS. Diesen optionalen Parameter können Sie zusammen mit dem Parameter _AllVersions=true_ verwenden, um einen RSS-Feed anzufordern, der mit Outlook oder anderen RSS-Diensten verwendet werden kann.
-- **Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** - Dieser optionale Parameter spezifiziert die Instanz, in die die Version zurückgegeben werden soll.  Wenn nicht angegeben, werden alle Instanzen zurückgegeben. Gültige Instanzen sind: Weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
+- **AllVersions=<true | false>** – standardmäßig ist die zurückgegebene Version die neueste. Nehmen Sie diesen optionalen Parameter mit auf, um alle veröffentlichten Versionen seit dem ersten Release des Webdiensts anzufordern.
+- **Format=<JSON | CSV | RSS>** – zusätzlich zu den Formaten JSON und CSV unterstützt die Versionswebmethode auch RSS. Diesen optionalen Parameter können Sie zusammen mit dem Parameter _AllVersions=true_ verwenden, um einen RSS-Feed anzufordern, der mit Outlook oder anderen RSS-Readern genutzt werden kann.
+- **Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** – dieser optionale Parameter gibt die Instanz an, für die die Version zurückgegeben werden soll. Wenn nicht angegeben, werden alle Instanzen zurückgegeben. Gültige Instanzen sind: Weltweit, China, Deutschland, USGovDoD, USGovGCCHigh.
 
-Die Versionswebmethode ist nicht beschränkt und gibt nie die HTTP-Antwortcodes 429 zurück. Das Ergebnis der Versionswebmethode umfasst keinen Cache-Control-Header, der empfiehlt, die Daten eine Stunde lang zwischenzuspeichern. Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Datensatzarray sein. Die Elemente der einzelnen Datensätze sind:
+Die Rate der Versionswebmethode ist nicht beschränkt, und sie gibt nie 429-HTTP-Antwortcodes zurück. Die Antwort auf die Versionswebmethode enthält einen Cache-Control-Header, der empfiehlt, die Daten für eine Stunde zwischenzuspeichern. Das Ergebnis der Versionswebmethode kann ein einzelner Datensatz oder ein Array aus Datensätzen sein. Die Elemente jedes Datensatzes sind:
 
-- instance – der kurze Name der Office 365-Serviceinstanz.
+- instance – die Kurzform der Office 365-Serviceinstanz.
 - latest – die neueste Version für Endpunkte der angegebenen Instanz.
-- versions – eine Liste aller vorherigen Versionen für die angegebene Instanz. Dieses Element ist nur enthalten, wenn der Parameter „AllVersions“ „true“ ist.
-
-Sie können Microsoft Flow verwenden, um E-Mail-Benachrichtigungen über Änderungen an den IP-Adressen und URLs zu erhalten. Weitere Informationen finden Sie unter [Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- versions – eine Liste aller vorherigen Versionen für die angegebene Instanz. Dieses Element wird nur einbezogen, wenn der Parameter _AllVersions_ wahr ist.
 
 ### <a name="examples"></a>Beispiele:
 
@@ -169,35 +171,35 @@ Dieser URI zeigt einen RSS-Feed der veröffentlichten Versionen, die Links zu de
 
 ## <a name="endpoints-web-method"></a>Endpunktwebmethode
 
-Die Endpunktwebmethode gibt alle Datensätze für IP-Adressbereiche und URLs zurück, die den Office 365-Dienst bilden. Während die neuesten Daten von der Endpunktwebmethode für die Netzwerkgerätekonfiguration verwendet werden sollten, können die Daten bis zu 30 Tage nach der Veröffentlichung aufgrund der für Ergänzungen im Vorfeld bereitgestellten Ankündigung zwischengespeichert werden. Wir empfehlen Ihnen, die Endpunktwebmethode nur dann aufzurufen, wenn die Versionswebmethode anzeigt, dass eine neue Version der Daten verfügbar ist.
+Die Endpunktwebmethode gibt alle Datensätze für IP-Adressbereiche und URLs zurück, die den Office 365-Dienst bilden. Die neuesten Daten aus der Endpunkt-Webmethode sollten immer für die Konfiguration von Netzwerkgeräten verwendet werden. Microsoft kündigt neue Ergänzungen 30 Tage vor der Veröffentlichung an, um Ihnen Zeit zum Aktualisieren von Zugriffssteuerungs- und Proxyserver-Umgehungslisten zu lassen. Wir empfehlen Ihnen, die Endpunktwebmethode erst wieder einzusetzen, wenn die Versionswebmethode besagt, dass eine neue Version der Daten verfügbar ist.
 
 Parameter für die Endpunktwebmethode sind:
 
-- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** - Eine durch Trennzeichen getrennte Liste von Dienstbereichen. Gültige Elemente sind_Common_, _Exchange_, _SharePoint_ und _Skype_. Da Common-Dienstbereich-Elemente die Voraussetzung für alle anderen Dienstbereiche sind, wir der Webdienst sie mit einschließen. Wenn Sie diesen Parameter nicht miteinschließen, werden alle Dienstbereiche zurückgegeben.
-- **TenantName=<tenant_name>** - Ihr Office 365-Mandantenname. Der Webdienst übernimmt Ihren angegebenen Namen und fügt ihn in URL-Teile ein, die den Mandantennamen enthalten. Wenn Sie keinen Mandantennamen angeben, haben diese URL-Teile das Platzhalterzeichen (\*).
-- **NoIPv6=<wahr | falsch>** - Stellen Sie dies auf wahr, um IPv6-Adressen von der Ausgabe auszuschließen, wenn Sie zum Beispiel IPv6 nicht in Ihrem Netzwerk verwenden möchten.
-- ** Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** Dieses erforderliche Parameter spezifiziert die Instanz, für die die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: _Weltweit_, _China_, _Deutschland_, _USGovDoD_ und _USGovGCCHigh_.
+- **ServiceAreas=<Common | Exchange | SharePoint | Skype>** – eine durch Trennzeichen getrennte Liste von Dienstbereichen. Gültige Elemente sind_Common_, _Exchange_, _SharePoint_ und _Skype_. Da _Common_-Dienstbereich-Elemente Voraussetzung für alle anderen Dienstbereiche sind, bezieht der Webdienst sie stets mit ein. Wenn Sie diesen Parameter nicht miteinschließen, werden alle Dienstbereiche zurückgegeben.
+- **TenantName=<tenant_name>** – Ihr Office 365-Mandantenname. Der Webdienst übernimmt Ihren angegebenen Namen und fügt ihn in URL-Teile ein, die den Mandantennamen enthalten. Wenn Sie keinen Mandantennamen angeben, haben diese URL-Teile das Platzhalterzeichen (\*).
+- **NoIPv6=<true | false>** – legen Sie für diesen Wert _true_ fest, um IPv6-Adressen von der Ausgabe auszuschließen, wenn Sie IPv6 nicht in Ihrem Netzwerk verwenden.
+- **Instance=<Weltweit | China | Deutschland | USGovDoD | USGovGCCHigh>** – dieser erforderliche Parameter gibt die Instanz an, von der die Endpunkte zurückgegeben werden sollen. Gültige Instanzen sind: _Weltweit_, _China_, _Deutschland_, _USGovDoD_ und _USGovGCCHigh_.
 
-Wenn Sie die Endpunktwebmethode sehr häufig von derselben Client-IP-Adresse abrufen, erhalten Sie möglicherweise den HTTP-Antwortcode 429 (zu viele Anforderungen). Die meisten Benutzer werden dies nie sehen. Wenn Sie diesen Antwortcode erhalten, warten Sie 1 Stunde, bevor Sie Ihre Anforderung wiederholen. Sie sollten die Endpunktwebmethode nur dann aufrufen, wenn die Versionswebmethode anzeigt, dass eine neue Version verfügbar ist.
+Wenn Sie die Endpunktwebmethode zu häufig von derselben Client-IP-Adresse abrufen, erhalten Sie möglicherweise den HTTP-Antwortcode _429 (zu viele Anforderungen)_. Wenn Sie diesen Antwortcode erhalten, warten Sie eine Stunde, bevor Sie Ihre Anforderung wiederholen, oder generieren Sie eine neue GUID für sie. Als allgemein bewährte Methode rufen Sie die Endpunktwebmethode nur auf, wenn die Versionswebmethode besagt, dass eine neue Version verfügbar ist.
 
-Das Ergebnis der Endpunktwebmethode ist ein Datensatz-Array, bei dem jeder Datensatz einen Endpunktsatz darstellt. Die Elemente für jeden Datensatz lauten:
+Das Ergebnis der Endpunktwebmethode ist ein Array aus Datensätzen, in dem jeder Datensatz einen bestimmten Endpunktsatz darstellt. Die Elemente für jeden Datensatz sind:
 
 - id – die unveränderliche ID-Nummer des Endpunktsatzes.
-- ServiceArea – der Servicebereich, zu dem dies gehört: Common, Exchange, SharePoint oder Skype.
-- urls – URLs für den Endpunktsatz. Ein JSON-Array von DNS-Datensätzen. Wird ausgelassen, falls leer.
-- tcpPorts – TCP-Ports für den Endpunktsatz. Alle Portelemente werden als eine kommagetrennte Liste von Ports oder Portbereichen formatiert, getrennt durch einen Bindestrich (-). Ports gelten für alle IP-Adressen und alle URLs in diesem Endpunktsatz für diese Kategorie. Wird ausgelassen, falls leer.
-- udpPorts – UDP-Ports für die IP-Adressbereiche in diesem Endpunktsatz. Wird ausgelassen, falls leer.
-- ips – der mit diesem Endpunktsatz verknüpfte IP-Adressbereich (verknüpft mit den aufgeführten TCP- oder UDP-Ports). Ein JSON-Array von IP-Adressbereichen. Wird ausgelassen, falls lehr.
-- category – Die Konnektivitätskategorie für den Endpunktsatz. Gültige Werte sind „Optimize“, „Allow“ und „Default“. Wenn Sie die Endpunktdaten verwenden, um nach der Kategorie einer IP-Adresse oder URL zu suchen, kann Ihre Abfrage möglicherweise mehrere Kategorien zurückgeben. Es gibt mehrere Gründe, warum dies passieren kann. In diesen Fällen sollten Sie die Empfehlungen für die Kategorie mit der höchsten Priorität befolgen. Wenn der Endpunkt beispielsweise sowohl unter „Optimize“ als auch unter „Allow“ angezeigt wird, sollten Sie den Anforderungen für „Optimize“ folgen. Erforderlich.
-- expressRoute – „true“ oder „false“, wenn dieser Endpunktsatz über ExpressRoute weitergeleitet wird.
-- required – „true“, wenn für diesen Endpunktsatz Konnektivität erforderlich ist, damit Office 365 unterstützt wird. „False“, wenn dieser Endpunktsatz optional ist.
-- notes – für optionale Endpunkte. Dieser Text beschreibt die Office 365-Funktionalität, die fehlt, wenn der Zugriff auf IP-Adressen oder URLs in diesem Endpunktsatz nicht auf Netzwerkebene möglich ist. Wird ausgelassen, falls leer.
+- serviceArea – der Servicebereich, zu dem Folgendes gehört: _Common_, _Exchange_, _SharePoint_ oder _Skype_.
+- urls – URLs für den Endpunktsatz. ein JSON-Array von DNS-Einträgen. Weggelassen, falls leer.
+- tcpPorts – TCP-Ports für den Endpunktsatz. Alle Ports-Elemente sind als eine durch Trennzeichen getrennte Liste von Ports oder Portbereichen formatiert, die durch einen Bindestrich (-) getrennt sind. Ports werden auf alle IP-Adressen und alle URLs im Endpunktsatz für eine bestimmte Kategorie angewendet. Weggelassen, falls leer.
+- udpPorts – UDP-Ports für die IP-Adressbereiche in diesem Endpunktsatz. Weggelassen, falls leer.
+- ips – die zu diesem Endpunktsatz gehörigen IP-Adressbereiche (den aufgeführten TCP- oder UDP-Ports zugeordnet). ein JSON-Array von IP-Adressbereichen. Weggelassen, falls leer.
+- category – die Kategorie „Konnektivität“ des Endpunktsatzes. Gültige Werte sind _Optimize_, _Allow_ und _Default_. Wenn Sie die Ausgabe der Endpunktwebmethode für die Kategorie einer bestimmten IP-Adresse oder URL durchsuchen, kann die Abfrage mehrere Kategorien zurückgeben. Folgen Sie in diesem Fall der Empfehlung für die Kategorie mit der höchsten Priorität. Wenn der Endpunkt beispielsweise sowohl in _Optimize_ als auch _Allow_ angezeigt wird, sollten Sie den Anforderungen für _Optimize_ entsprechen. Erforderlich.
+- expressRoute – _True_, wenn dieser Endpunktsatz über ExpressRoute weitergeleitet wird; _False_, wenn nicht.
+- required – _True_, wenn für diesen Endpunktsatz Konnektivität erforderlich ist, damit Office 365 unterstützt wird. _False_, wenn dieser Endpunktsatz optional ist.
+- notes – für optionale Endpunkte beschreibt dieser Text die Office 365-Funktionalität, die nicht verfügbar wäre, wenn der Zugriff auf IP-Adressen oder URLs in diesem Endpunktsatz nicht auf Netzwerkebene möglich ist. Weggelassen, falls leer.
 
 ### <a name="examples"></a>Beispiele:
 
 Anfrage-URI – Beispiel 1: [https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
-Dieser URI ruft alle Endpunkte für die Instanz von Office 365 weltweit für alle Workloads ab. Das Beispielergebnis zeigt einen Auszug der Ausgabe an:
+Dieser URI ruft alle Endpunkte für die Instanz von Office 365 weltweit für alle Workloads ab. Das Beispielergebnis zeigt einen Auszug der Ausgabe:
 
 ```json
 [
@@ -227,48 +229,49 @@ Dieser URI ruft alle Endpunkte für die Instanz von Office 365 weltweit für all
    ],
 ```
 
-Zusätzliche Endpunktsätze sind in diesem Beispiel nicht enthalten.
+Beachten Sie, dass die vollständige Ausgabe der Anforderung in diesem Beispiel weitere Endpunktsätze enthalten würde.
 
 Anfrage-URI – Beispiel 2: [https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7](https://endpoints.office.com/endpoints/Worldwide?ServiceAreas=Exchange&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 In diesem Beispiel werden nur Endpunkte für die Instanz von Office 365 weltweit für Exchange Online und Abhängigkeiten abgerufen.
 
-Die Ausgabe für Beispiel 2 ähnelt Beispiel 1 mit dem Unterschied, dass die Ergebnisse keine Endpunkte für SharePoint Online oder Skype for Business Online enthalten.
+Die Ausgabe für Beispiel 2 ähnelt Beispiel 1 mit dem Unterschied, dass die Ergebnisse keine Endpunkte für SharePoint Online oder Skype for Business Online enthalten würden.
 
 ## <a name="changes-web-method"></a>Änderungswebmethode
 
-Die Änderungswebmethode gibt die neuesten Updates zurück, die veröffentlicht wurden. Dies sind in der Regel die im vorherigen Monat vorgenommenen Änderungen an IP-Adressbereichen und URLs. Die wichtigsten zu verarbeitenden Änderungen sind solche, bei denen neue URLs oder IP-Adressen hinzugefügt wurden. Denn wenn eine IP-Adresse nicht einer Firewall Zugriffssteuerungsliste oder eine URL nicht einer Proxyserver-Umgehungsliste hinzugefügt wird, kann dies zu einem Ausfall für Office 365-Benutzer hinter diesem Netzwerkgerät führen. Ungeachtet der betrieblichen Anforderungen werden _Add_-Vorgänge mit einer Frist von 30 Tage hinzugefügt, bevor ein solcher Ausfall auftreten würde.
+Die Änderungswebmethode gibt die neuesten Updates zurück, die veröffentlicht wurden, typischerweise die Änderungen des vorherigen Monats an IP-Adressbereichen und URLs.
 
-Die Parameter für die Änderungswebmethode sind:
+Die wichtigsten Änderungen an Endpunktdaten sind neue URLs und IP-Adressen. Wenn eine IP-Adresse nicht zu einer Firewall-Zugriffssteuerungsliste oder eine URL nicht zu einer Proxyserver-Umgehungsliste hinzugefügt wird, kann dies zu einem Ausfall für Benutzer von Office 365 auf diesem Netzwerkgerät führen. Ungeachtet betrieblicher Anforderungen werden neue Endpunkte 30 Tage vor dem Datum, an dem die Endpunkte bereitgestellt werden, im Webdienst veröffentlicht, um Ihnen Zeit zum Aktualisieren von Zugriffssteuerungs- und Proxyserver-Umgehungslisten zu lassen.
 
-- **Version=\<YYYYMMDDNN>** Erforderlicher URL-Routenparameter. Dieser Wert sollte die Version sein, die Sie derzeit implementiert haben. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden müssen. Dabei steht _00_ für das erste Update an einen bestimmten Tag. Der Webdienst erfordert, dass der _Versions_-Parameter genau 10 Ziffern enthält.
+Die nötigen Parameter für die Änderungswebmethode sind:
 
-Für die Änderungswebmethode sind die Gebühren auf dieselbe Art und Weise beschränkt wie bei der Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, warten Sie 1 Stunde, bevor Sie Ihre Anforderung wiederholen.
+- **Version=\<YYYYMMDDNN>** – erforderlicher URL-Routenparameter. Dieser Wert steht für die Version, die derzeit implementiert ist. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden müssen. Dabei steht _00_ für das erste Update an einen bestimmten Tag. Der Webdienst erfordert, dass der _Versions_-Parameter genau 10 Ziffern enthält.
 
-Das Ergebnis der Änderungswebmethode ist ein Datensatz-Array, bei dem jeder Datensatz eine Änderung in einer speziellen Version des Endpunkts darstellt. Die Elemente für jeden Datensatz lauten:
+Für die Änderungswebmethode sind die Gebühren auf dieselbe Art und Weise beschränkt wie bei der Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, warten Sie eine Stunde, bevor Sie Ihre Anforderung wiederholen, oder generieren Sie eine neue GUID für sie.
+
+Das Ergebnis der Änderungswebmethode ist ein Array aus Datensätzen, in dem jeder Datensatz eine Änderung in einer bestimmten Version der Endpunkte darstellt. Die Elemente für jeden Datensatz sind:
 
 - id – die unveränderliche ID des Änderungsdatensatzes.
-- endpointSetId - Die ID des Endpunktgruppendatensatzes, der geändert wird. 
-- disposition - Das kann sowohl Ändern, Hinzufügen oder Entfernen sein und beschreibt, was die Veränderung im Endpunktgruppendatensatz bewirkt hat.
-- Impact – Nicht alle Änderungen sind für jede Umgebung gleich wichtig. Hier werden die erwarteten Auswirkungen auf eine Netzwerkumkreisumgebung in einem Unternehmen als Ergebnis dieser Änderung beschrieben. Dieses Attribut ist nur in Änderungsdatensätzen der Version **2018112800** und höher enthalten. Optionen für die Auswirkungen sind:
-  - AddedIp – Zu Office 365 wurde eine IP-Adresse hinzugefügt, die in diesem Dienst in Kürze live gehen wird. Dies stellt eine Änderung dar, die Sie in einer Firewall oder in einem anderen Netzwerkumkreisgerät der Ebene 3 vornehmen müssen. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
-  - AddedUrl - Ein URL wurde Office 365 hinzugefügt und wird in Kürze im Dienst live sein. Dies stellt eine Änderung zur Analyse von Netzwerkumkreisgeräten dar, die Sie auf einem Proxyserver oder URL vornehmen müssen. Wenn Sie dies nicht hinzufügen, bevor wir starten, werden Sie möglicherweise einen Ausfall erleben.
-  - AddedIpAndUrl – Sowohl eine IP-Adresse als auch eine URL wurden hinzugefügt. Dies stellt eine Änderung, die Sie auf einem Firewallgerät der Ebene 3, auf einem Proxyserver oder auf einem Gerät vornehmen müssen, das URLs analysiert. Wenn Sie diese IP-Adresse nicht hinzufügen, bevor wir mit der Verwendung beginnen, tritt möglicherweise ein Ausfall auf.
-  - RemovedIpOrUrl – Mindestens eine IP-Adresse oder URL wurde aus Office 365 entfernt. Sie sollten die Netzwerkendpunkte von Ihren Umkreisgeräten entfernen, hierfür gibt es jedoch keinen Stichtag.
-  - ChangedIsExpressRoute – Das Attribut „ExpressRoute Support“ wurde geändert. Wenn Sie ExpressRoute verwenden, müssen Sie je nach Konfiguration möglicherweise entsprechende Maßnahmen ergreifen.
-  - MovedIpOrUrl – Eine IP-Adresse oder URL wurde zwischen diesem Endpunktsatz und einem anderen verschoben. Im Allgemeinen ist keine Aktion erforderlich.
-  - RemovedDuplicateIpOrUrl – Es wurde eine doppelte IP-Adresse oder URL entfernt, diese ist aber immer noch auf Office 365 veröffentlicht. Im Allgemeinen ist keine Aktion erforderlich.
-  - OtherNonPriorityChanges – Es wurde etwas weniger wichtiges als all die anderen Optionen geändert, z. B. ein Notizfeld.
-- version – die Version des veröffentlichten Endpunktsatzes, in dem die Änderung eingeführt wurde. Versionsnummern werden im Format _JJJJMMTTNN_ angegeben, wobei NN eine natürliche Zahl ist, die erhöht wird, wenn mehrere Versionen an einem einzigen Tag veröffentlicht werden müssen.
-- previous - Eine Unterstruktur, welche vorherige Werte von Änderungselementen auf dem Endpunktsatz angibt. Dies ist bei neu hinzugefügten Endpunktsätzen nicht enthalten. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
-- current - Eine Unterstruktur, welche aktualisierte Werte von Änderungselementen auf dem Endpunktsatz angibt. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
-- add – eine Unterstruktur, die Elemente angibt, die zu Endpunktsatzsammlungen hinzugefügt werden sollen. Wird ausgelassen, wenn keine Ergänzungen vorhanden sind.
-  - effectiveDate – definiert die Daten, wann die Ergänzungen live im Dienst sind.
-  - ips - Elemente, die dem Array _ips_ hinzugefügt werden sollen.
-  - urls - Elemente, die zum Array_urls_ hinzugefügt werden sollen.
-- remove - eine Unterstruktur, die Elemente angibt, die aus dem Endpunktsatz entfernt werden sollen.  Wird ausgelassen, wenn keine Entfernungen vorhanden sind.
-  - ips - Elemente, die aus dem Array _ips_entfernt werden sollen.
-  - urls – Elemente, die aus dem Array _urls_ entfernt werden sollen.
+- endpointSetId – die ID des Endpunktsatz-Datensatzes, der geändert wird.
+- disposition – beschreibt, was die Änderung am Endpunktsatz bewirkt hat. Die Werte sind _change_, _add_ oder _remove_.
+- Auswirkung – nicht alle Änderungen sind für jede Umgebung gleichermaßen wichtig. Dieses Element beschreibt die erwartete Wirkung auf die Umgebung eines Unternehmensnetzwerkumkreises infolge dieser Änderung. Dieses Element wird nur in Änderungsdatensätze der Version **2018112800** und höher einbezogen. Die Optionen für die Wirkung sind: AddedIp – eine IP-Adresse wurde zu Office 365 hinzugefügt und ist in Kürze im Dienst online. Dies stellt eine Änderung dar, die Sie an einer Firewall oder einem anderem Netzwerkumkreisgerät der Schicht 3 vornehmen müssen. Wenn Sie dies nicht hinzufügen, bevor wir starten, erleben Sie möglicherweise einen Ausfall.
+  – AddedUrl – ein URL wurde Office 365 hinzugefügt und ist in Kürze im Dienst live. Dies stellt eine Änderung dar, die Sie auf einem Netzwerkumkreisgerät für die Proxyserver- oder URL-Analyse vornehmen müssen. Wenn Sie diesen URL nicht hinzufügen, bevor wir starten, erleben Sie möglicherweise einen Ausfall.
+  – AddedIpAndUrl: Sowohl eine IP-Adresse als auch ein URL wurden hinzugefügt. Dies stellt eine Änderung dar, die Sie entweder auf einem Firewall-Gerät der Schicht 3 oder einem Gerät zur Proxyserver- oder URL-Analyse vornehmen müssen. Wenn Sie diese IP bzw. URL nicht hinzufügen, bevor wir starten, erleben Sie möglicherweise einen Ausfall.
+  – RemovedIpOrUrl: Mindestens eine IP-Adresse oder URL wurde aus Office 365 entfernt. Sie entfernen die Netzwerkendpunkte von ihren Umkreisgeräten, aber dafür gibt es keinen Stichtag.
+  – ChangedIsExpressRoute: Das Supportattribut „Express Route“ wurde geändert. Wenn Sie ExpressRoute verwenden, müssen Sie möglicherweise je nach Konfiguration Maßnahmen ergreifen.
+  – MovedIpOrUrl: Eine IP-Adresse oder URL wurde zwischen diesem Endpunktsatz und einem anderen verschoben. Im Allgemeinen ist keine Aktion erforderlich.
+  – RemovedDuplicateIpOrUrl: Eine doppelte IP-Adresse oder URL wurde entfernt, diese ist aber immer noch für Office 365 veröffentlicht. Im Allgemeinen ist keine Aktion erforderlich.
+  – OtherNonPriorityChanges: Es wurde etwas weniger wichtiges als alle anderen Optionen geändert, z. B. die Inhalte eines Notizfelds.
+- version – die Version des veröffentlichten Endpunktsatzes, in dem die Änderung eingeführt wurde. Versionsnummern besitzen das Format _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden sollen.
+- previous – eine Unterstruktur, die vorherige Werte von Änderungselementen im Endpunktsatz angibt. Dies ist bei neu hinzugefügten Endpunktsätzen nicht enthalten. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
+- current – eine Unterstruktur, die aktualisierte Werte von Änderungselementen im Endpunktsatz angibt. Umfasst _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_ und _notes_.
+- add – eine Unterstruktur, die Elemente angibt, die zu Endpunktsatzsammlungen hinzugefügt werden sollen. Wird weggelassen, wenn es keine Ergänzungen gibt.
+  – effectiveDate: definiert die Daten, wann die Ergänzungen live im Dienst sind.
+  – ips: Elemente, die dem Array _ips_ hinzugefügt werden sollen.
+  – urls: Elemente, die zum Array _urls_ hinzugefügt werden sollen.
+- remove – eine Unterstruktur, die aus dem Endpunktsatz zu entfernende Elemente angibt. Wird weggelassen, wenn es keine Entfernungen gibt.
+  – ips: Elemente, die aus dem Array _ips_ entfernt werden sollen.
+  – urls: Elemente, die aus dem Array _urls_ entfernt werden sollen.
 
 ### <a name="examples"></a>Beispiele:
 
@@ -343,34 +346,93 @@ Dies fordert Änderungen seit der angegebenen Version der Instanz von Office 365
 
 ## <a name="example-powershell-script"></a>PowerShell-Skript
 
-Hier ist ein PowerShell-Skript, das Sie ausführen können um festzustellen, ob es Aktionen gibt, die Sie für aktualisierte Daten ausführen müssen. Dieses Skript überprüft die Versionsnummer für die Office 365 weltweit Instanz-Endpunkte. Wenn eine Änderung vorhanden ist, lädt es die Endpunkte und Filter für die Endpunkte der Kategorie „Zulassen“ und „Optimieren“ herunter. Es verwendet auch eine eindeutige _ClientRequestId_ für mehrere Aufrufe und speichert die neueste Version in einer temporären Datei. Sie sollten dieses Skript einmal pro Stunde aufrufen, um auf eine Versionsaktualisierung zu prüfen.
+Sie können dieses PowerShell-Skript ausführen, um festzustellen, ob es Aktionen gibt, die Sie für aktualisierte Daten setzen müssen. Sie können dieses Skript als geplante Aufgabe ausführen, um nach einer Versionsaktualisierung zu suchen. Um zu vermeiden, dass der Webdienst überlastet ist, versuchen Sie, das Skript nicht mehr als einmal pro Stunde auszuführen.
+
+Dieses Skript führt folgende Aktionen aus:
+
+- Überprüfen der Versionsnummer der aktuellen Office 365 weltweit-Instanzendpunkte durch Aufrufen der Webdienst-REST-API.
+- Suchen nach einer aktuellen Versionsdatei unter _$Env:TEMP\O365_endpoints_latestversion.txt_. Der Pfad der globalen Variablen **$Env:TEMP** ist in der Regel _C:\Users\\<username\>\AppData\Local\Temp_.
+- Wenn dies das erste Mal ist, dass das Skript ausgeführt wurde, gibt es die aktuelle Version sowie alle aktuellen IP-Adressen und URLs zurück, schreibt die Endpunkt-Version in die Datei _$Env:TEMP\O365_endpoints_latestversion.txt_ und die Endpunkt-Datenausgabe in die Datei _$Env:TEMP\O365_endpoints_data.txt_. Sie können den Pfad und/oder den Namen der Ausgabedatei ändern, indem Sie die folgenden Zeilen bearbeiten:
+
+    ``` powershell
+    $versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
+    $datapath = $Env:TEMP + "\O365_endpoints_data.txt"
+    ```
+
+- Wenn die neueste Webdienst-Version bei jeder nachfolgenden Ausführung des Skripts mit der Version in der Datei _O365_endpoints_latestversion.txt_ identisch ist, wird das Skript beendet, ohne Änderungen vorzunehmen.
+- Wenn die neueste Webdienst-Version neuer als die Version in der Datei _O365_endpoints_latestversion.txt_ ist, gibt das Skript die Endpunkte und Filter für die Endpunkte der Kategorien **Allow** und **Optimize** zurück, aktualisiert die Version in der Datei _O365_endpoints_latestversion.txt_ und schreibt die aktualisierten Daten in die Datei _O365_endpoints_data.txt_.
+
+Das Skript generiert eine eindeutige _ClientRequestId_ für den Computer, auf dem es ausgeführt wird, und verwendet diese ID über mehrere Aufrufe hinweg. Diese ID wird in der Datei _O365_endpoints_latestversion.txt_ gespeichert.
+
+### <a name="to-run-the-powershell-script"></a>Ausführen des PowerShell-Skripts
+
+1. Kopieren Sie das Skript, und speichern Sie es auf der Festplatte oder am Speicherort des Skripts als _Get-O365WebServiceUpdates.ps1_.
+1. Führen Sie das Skript in Ihrem bevorzugten Skript-Editor, z. B. PowerShell ISE oder VS Code, oder auf einer PowerShell-Konsole mithilfe des folgenden Befehls aus:
+
+    ``` powershell
+   powershell.exe -file <path>\Get-O365WebServiceUpdates.ps1
+    ```
+
+    Es gibt keine Parameter, die an das Skript weiterzugeben sind.
 
 ```powershell
-# webservice root URL
+<# Get-O365WebServiceUpdates.ps1
+From https://aka.ms/ipurlws
+v1.1 8/6/2019
+
+DESCRIPTION
+This script calls the REST API of the Office 365 IP and URL Web Service (Worldwide instance)
+and checks to see if there has been a new update since the version stored in an existing
+$Env:TEMP\O365_endpoints_latestversion.txt file in your user directory's temp folder
+(usually C:\Users\<username>\AppData\Local\Temp).
+If the file doesn't exist, or the latest version is newer than the current version in the
+file, the script returns IPs and/or URLs that have been changed, added or removed in the latest
+update and writes the new version and data to the output file $Env:TEMP\O365_endpoints_data.txt.
+
+USAGE
+Run as a scheduled task every 60 minutes.
+
+PARAMETERS
+n/a
+
+PREREQUISITES
+PS script execution policy: Bypass
+PowerShell 3.0 or later
+Does not require elevation
+#>
+
+#Requires -Version 3.0
+
+# web service root URL
 $ws = "https://endpoints.office.com"
-# path where client ID and latest version number will be stored
-$datapath = $Env:TEMP + "\endpoints_clientid_latestversion.txt"
-# fetch client ID and version if data file exists; otherwise create new file
-if (Test-Path $datapath) {
-    $content = Get-Content $datapath
+# path where output files will be stored
+$versionpath = $Env:TEMP + "\O365_endpoints_latestversion.txt"
+$datapath = $Env:TEMP + "\O365_endpoints_data.txt"
+
+# fetch client ID and version if version file exists; otherwise create new file and client ID
+if (Test-Path $versionpath) {
+    $content = Get-Content $versionpath
     $clientRequestId = $content[0]
     $lastVersion = $content[1]
+    Write-Output ("Version file exists! Current version: " + $lastVersion)
 }
 else {
+    Write-Output ("First run! Creating version file at " + $versionpath + ".")
     $clientRequestId = [GUID]::NewGuid().Guid
     $lastVersion = "0000000000"
-    @($clientRequestId, $lastVersion) | Out-File $datapath
+    @($clientRequestId, $lastVersion) | Out-File $versionpath
 }
+
 # call version method to check the latest version, and pull new data if version number is different
 $version = Invoke-RestMethod -Uri ($ws + "/version/Worldwide?clientRequestId=" + $clientRequestId)
 if ($version.latest -gt $lastVersion) {
     Write-Host "New version of Office 365 worldwide commercial service instance endpoints detected"
-
-    # write the new version number to the data file
-    @($clientRequestId, $version.latest) | Out-File $datapath
+    # write the new version number to the version file
+    @($clientRequestId, $version.latest) | Out-File $versionpath
     # invoke endpoints method to get the new data
     $endpointSets = Invoke-RestMethod -Uri ($ws + "/endpoints/Worldwide?clientRequestId=" + $clientRequestId)
     # filter results for Allow and Optimize endpoints, and transform these into custom objects with port and category
+    # URL results
     $flatUrls = $endpointSets | ForEach-Object {
         $endpointSet = $_
         $urls = $(if ($endpointSet.urls.Count -gt 0) { $endpointSet.urls } else { @() })
@@ -387,15 +449,15 @@ if ($version.latest -gt $lastVersion) {
         }
         $urlCustomObjects
     }
-    $flatIps = $endpointSets | ForEach-Object {
+    # IPv4 results
+    $flatIp4s = $endpointSets | ForEach-Object {
         $endpointSet = $_
         $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
-        # IPv4 strings have dots while IPv6 strings have colons
+        # IPv4 strings contain dots
         $ip4s = $ips | Where-Object { $_ -like '*.*' }
-
-        $ipCustomObjects = @()
+        $ip4CustomObjects = @()
         if ($endpointSet.category -in ("Allow", "Optimize")) {
-            $ipCustomObjects = $ip4s | ForEach-Object {
+            $ip4CustomObjects = $ip4s | ForEach-Object {
                 [PSCustomObject]@{
                     category = $endpointSet.category;
                     ip = $_;
@@ -404,36 +466,58 @@ if ($version.latest -gt $lastVersion) {
                 }
             }
         }
-        $ipCustomObjects
+        $ip4CustomObjects
     }
+    # IPv6 results
     $flatIp6s = $endpointSets | ForEach-Object {
-    $endpointSet = $_
-    $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
-    # IPv6 strings have colons while IPv6 strings have dots
-    $ip6s = $ips | Where-Object { $_ -like '*:*' }
-    $ipCustomObjects = @()
-    if ($endpointSet.category -in ("Optimize")) {
-        $ipCustomObjects = $ip6s | ForEach-Object {
-            [PSCustomObject]@{
-                category = $endpointSet.category;
-                ip = $_;
-                tcpPorts = $endpointSet.tcpPorts;
-                udpPorts = $endpointSet.udpPorts;
+        $endpointSet = $_
+        $ips = $(if ($endpointSet.ips.Count -gt 0) { $endpointSet.ips } else { @() })
+        # IPv6 strings contain colons
+        $ip6s = $ips | Where-Object { $_ -like '*:*' }
+        $ip6CustomObjects = @()
+        if ($endpointSet.category -in ("Optimize")) {
+            $ip6CustomObjects = $ip6s | ForEach-Object {
+                [PSCustomObject]@{
+                    category = $endpointSet.category;
+                    ip = $_;
+                    tcpPorts = $endpointSet.tcpPorts;
+                    udpPorts = $endpointSet.udpPorts;
+                }
             }
         }
+        $ip6CustomObjects
     }
-    $ipCustomObjects
-}
+
+    # write output to screen
+    Write-Output ("Client Request ID: " + $clientRequestId)
+    Write-Output ("Last Version: " + $lastVersion)
+    Write-Output ("New Version: " + $version.latest)
+    Write-Output ""
     Write-Output "IPv4 Firewall IP Address Ranges"
-    ($flatIps.ip | Sort-Object -Unique) -join "," | Out-String
+    ($flatIp4s.ip | Sort-Object -Unique) -join "," | Out-String
     Write-Output "IPv6 Firewall IP Address Ranges"
     ($flatIp6s.ip | Sort-Object -Unique) -join "," | Out-String
     Write-Output "URLs for Proxy Server"
     ($flatUrls.url | Sort-Object -Unique) -join "," | Out-String
-    # TODO Call Send-MailMessage with new endpoints data
+    Write-Output ("IP and URL data written to " + $datapath)
+
+    # write output to data file
+    Write-Output "Office 365 IP and UL Web Service data" | Out-File $datapath
+    Write-Output "Worldwide instance" | Out-File $datapath -Append
+    Write-Output "" | Out-File $datapath -Append
+    Write-Output ("Version: " + $version.latest) | Out-File $datapath -Append
+    Write-Output "" | Out-File $datapath -Append
+    Write-Output "IPv4 Firewall IP Address Ranges" | Out-File $datapath -Append
+    ($flatIp4s.ip | Sort-Object -Unique) -join "," | Out-File $datapath -Append
+    Write-Output "" | Out-File $datapath -Append
+    Write-Output "IPv6 Firewall IP Address Ranges" | Out-File $datapath -Append
+    ($flatIp6s.ip | Sort-Object -Unique) -join "," | Out-File $datapath -Append
+    Write-Output "" | Out-File $datapath -Append
+    Write-Output "URLs for Proxy Server" | Out-File $datapath -Append
+    ($flatUrls.url | Sort-Object -Unique) -join "," | Out-File $datapath -Append
 }
 else {
-    Write-Host "Office 365 worldwide commercial service instance endpoints are up-to-date"
+    Write-Host "Office 365 worldwide commercial service instance endpoints are up-to-date."
 }
 ```
 
@@ -505,61 +589,29 @@ else:
 
 ## <a name="web-service-interface-versioning"></a>Versionsverwaltung der Webdienstschnittstelle
 
-In der Zukunft sind möglicherweise Updates für die Parameter oder die Ergebnisse für diese Webdienstmethoden erforderlich. Nachdem die allgemein verfügbare Version dieser Webdienste veröffentlicht wurde, bemüht sich Microsoft in angemessener Weise, bedeutende Updates im Hinblick auf den Webdienst im Vorfeld anzukündigen. Wenn Microsoft davon ausgeht, dass für ein Update Änderungen an Clients erforderlich sind, die den Webdienst nutzen, behält Microsoft die vorherige Version (eine Version zurück) des verfügbaren Webdiensts für mindestens zwölf (12) Monate nach der Veröffentlichung der neuen Version bei. Kunden, die während dieses Zeitraums nicht aktualisieren, können möglicherweise nicht mehr auf den Webdienst und die zugehörigen Methoden zugreifen. Kunden müssen sicherstellen, dass Clients des Webdiensts weiterhin ohne Fehler funktionieren, wenn die folgenden Änderungen an der Webdienst-Schnittstellensignatur vorgenommen werden:
+Möglicherweise sind Updates für die Parameter oder Ergebnisse für diese Webdienstmethoden zukünftig erforderlich. Nach der Veröffentlichung der allgemein verfügbaren Version dieser Webdienste wird Microsoft angemessene Anstrengungen unternehmen, um die Aktualisierung des Webdiensts im Voraus anzukündigen. Wenn Microsoft der Auffassung ist, dass für ein Update Änderungen an Clients nötig sind, die den Webdienst verwenden, wird Microsoft die vorherige Version (um eine Version älter) des Webdienstes für mindestens 12 Monate nach der Veröffentlichung der neuen Version verfügbar halten. Kunden, die während dieses Zeitraums kein Upgrade durchführen, können möglicherweise nicht auf den Webdienst und seine Methoden zugreifen. Kunden müssen sicherstellen, dass die Clients des Webdiensts fehlerfrei weiterarbeiten, wenn die folgenden Änderungen an der Signatur der Webdienstschnittstelle vorgenommen werden:
 
 - Hinzufügen eines neuen optionalen Parameters zu einer vorhandenen Webmethode, die nicht notwendigerweise von älteren Clients bereitgestellt werden muss und das Ergebnis nicht beeinträchtigt, das ein älterer Client erhält.
 - Hinzufügen eines neuen benannten Attributs zu einem der REST-Antwortelemente oder zusätzlicher Spalten zur Antwort-CSV.
 - Hinzufügen einer neuen Webmethode unter einem neuen Namen, die nicht von älteren Clients aufgerufen wird.
 
-## <a name="office-365-endpoint-functions-module"></a>Office 365-Endpunkt-Funktionsmodul
+## <a name="update-notifications"></a>Updatebenachrichtigungen
 
-Microsoft hostet einen REST-Webdienst, um die neuesten und aktuellen URL für die Office 365-Dienste zu erhalten.  Um den URL als Sammlung verwenden, können Sie dieses Modul mit ein paar hilfreichen Cmdlets verwenden.
+Sie können einige unterschiedliche Methoden nutzen, um E-Mail-Benachrichtigungen zu erhalten, wenn Änderungen an den IP-Adressen und URLs im Webdienst veröffentlicht werden.
 
-### <a name="calling-the-rest-service"></a>REST-Dienst aufrufen
+- Wenn Sie eine Microsoft Flow-Lösung verwenden möchten, lesen Sie [Verwenden von Microsoft Flow, um eine E-Mail wegen Änderungen an Office 365-IP-Adressen und -URLs zu erhalten](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- Um eine Azure Logic App mithilfe einer ARM-Vorlage bereitzustellen, lesen Sie [Office 365-Updatebenachrichtigung (v1.1)](https://aka.ms/ipurlws-updates-template).
+- Wenn Sie Ihr eigenes Benachrichtigungsskript mithilfe von PowerShell schreiben möchten, lesen Sie [Send-MailMessage](https://docs.microsoft.com/de-DE/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
-Um dieses Modul zu verwenden, kopieren Sie einfach die Moduldatei [O365EndpointFunctions.psm1](https://github.com/samurai-ka/PS-Module-O365EndpointService/blob/master/O365EndpointFunctions.psm1) auf einen beliebigen Ort auf Ihrer Festplatte und importieren Sie es direkt mit dem folgenden Befehl:
+## <a name="exporting-a-proxy-pac-file"></a>Exportieren einer Proxy-PAC-Datei
 
-```powershell
-    Import-Module O365EndpointFunctions.psm1
-```
-
-Nachdem Sie das Modul importiert haben, werden Sie den REST-Dienst aufrufen können. Dies wird die URL als Sammlung zurückgeben, die Sie jetzt direkt in PowerShell verarbeiten können. Sie müssen den Namen Ihres Office 365-Mandanten wie im nachfolgend beschriebenen Befehl eingeben:
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant]
-```
-
-#### <a name="parameters"></a>Parameter
-
-- **tenantName** - Der Namen Ihres Office 365-Mandanten. Dieser Parameter ist obligatorisch.
-- **ForceLatest** - Dieser Wechsel wird die REST-API dazu zwingen, immer die gesamte Liste der neuesten URL zurückzugeben.
-- **IPv6** - Dieser Wechsel wird auch die IPv6-Adressen zurückgeben. Standardmäßig wird nur IPv4 zurückgegeben.
-
-### <a name="examples"></a>Beispiele
-
-Die vollständige Liste aller URLs einschließlich IPv6-Adressen zurückgeben.
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest -IPv6 | Format-Table -AutoSize
-```
-
-Nur die IP-Adressen für Exchange-Onlinedienst zurückgeben
-
-```powershell
-    Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.serviceArea -eq "Exchange") -and ($_.protocol -eq "ip")}| Format-Table -AutoSize
-```
-
-### <a name="exporting-a-proxy-pac-file"></a>Eine Proxy-PAC-Datei exportieren
-
-Dieses Modul können Sie verwenden, um eine Proxy-PAC-Datei zu erstellen. In diesem Beispiel erhalten Sie zuerst die Endpunkte und filtern das Ergebnis, um die URLs auszuwählen. Um exportiert werden zu können, werden diese URLs weitergeleitet.  
-
-```powershell
- Invoke-O365EndpointService -tenantName [Name of your tenant] -ForceLatest | where{($_.Protocol -eq "Url") -and (($_.Category -eq "Optimize") -or ($_.category -eq "Allow"))} | select uri -Unique | Export-O365ProxyPacFile
-```
+[Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) ist ein PowerShell-Skript, das die neuesten Netzwerkendpunkte aus dem IP-Adress- und URL-Webdienst von Office 365 liest und eine PAC-Beispieldatei erstellt. Informationen zur Verwendung von Get-PacFile finden Sie unter [Verwenden einer PAC-Datei für das direkte Routing von wichtigem Office 365-Datenverkehr](managing-office-365-endpoints.md#use-a-pac-file-for-direct-routing-of-vital-office-365-traffic).
 
 ## <a name="related-topics"></a>Verwandte Themen
   
 [URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+
+[Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
   
 [Häufig gestellte Fragen zu Office 365-Endpunkten](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)
 
@@ -567,7 +619,7 @@ Dieses Modul können Sie verwenden, um eine Proxy-PAC-Datei zu erstellen. In die
 
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
 
-[Netzwerkkonnektivität mit Office 365](network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
   
 [Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   

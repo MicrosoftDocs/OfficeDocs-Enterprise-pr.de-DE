@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Lesen Sie diese Artikel, um mehr über das Netzwerk von Office 365 zu erfahren.'
-ms.openlocfilehash: 6fb1d4d441719f61886b9263b30cdf27cbe7eaf4
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
+ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070821"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34722684"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Einrichten Ihres Netzwerks für Office 365
 
@@ -38,7 +38,7 @@ In den folgenden Artikeln erhalten Sie eine Übersicht über die Konnektivität 
 
 - [Office 365 – Überblick über die Netzwerkkonnektivität](office-365-networking-overview.md)
 - [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
-- [Netzwerkkonnektivität mit Office 365](network-connectivity.md)
+- [Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
 
 Hinweise zur Verbesserung der Leistung, finden Sie unter [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md).
 
