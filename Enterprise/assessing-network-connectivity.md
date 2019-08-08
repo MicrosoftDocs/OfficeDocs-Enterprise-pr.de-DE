@@ -3,7 +3,7 @@ title: Bewerten Office 365 Netzwerkkonnektivität
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/5/2019
+ms.date: 8/7/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
-ms.openlocfilehash: 3ea80ddccaf9fabbe158a10f0af1d35dbf3a9889
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 884c4c0d510de55da4125a3e3b80b4bd869ec697
+ms.sourcegitcommit: c207aafc126a495e700552796ed89da3de254910
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34724825"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36233425"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Bewerten Office 365 Netzwerkkonnektivität
 
@@ -31,10 +31,17 @@ Kunden, die Office 365 verwenden möchten, sollten Ihre vorhandenen und prognost
   
 Netzwerk Auswertungen können je nach Größe und Einstellungen von vielen verschiedenen Personen und Organisationen ausgeführt werden. Der Netzwerkbereich der Bewertung kann auch variieren, je nachdem, wo Sie sich im Bereitstellungsprozess befinden. Damit Sie besser verstehen, was zum Durchführen einer Netzwerkbewertung benötigt wird, haben wir einen Leitfaden zur Netzwerkbewertung erstellt, um Ihnen die verfügbaren Optionen näher zu bringen. Mit dieser Bewertung wird bestimmt, welche Schritte und Ressourcen dem Bereitstellungsprojekt hinzugefügt werden müssen, damit Sie Office 365 erfolgreich annehmen können.
   
-Eine umfassende Netzwerkbewertung, wie Sie im [Skype Operations Framework](https://www.skypeoperationsframework.com/) vorgeschrieben ist, bietet mögliche Lösungen für Herausforderungen im Zusammenhang mit dem Netzwerk Design und Implementierungsdetails. Die meisten Netzwerkbewertungen deuten darauf hin, dass die Netzwerkkonnektivität zu Office 365 mit [kleineren Konfigurations-oder Entwurfsänderungen](https://aka.ms/manageo365endpoints) an der vorhandenen Netzwerk-und Internet Ausgangs Infrastruktur untergebracht werden kann.
+Durch eine umfassende Netzwerkbewertung werden mögliche Lösungen für Herausforderungen im Zusammenspiel mit dem Netzwerk Design sowie Implementierungsdetails bereitgestellt. Einige Netzwerkbewertungen zeigen, dass eine optimale Netzwerkkonnektivität zu Office 365 mit kleineren Konfigurations-oder Entwurfsänderungen an der vorhandenen Netzwerk-und Internet Ausgangs Infrastruktur untergebracht werden kann.
 
-Bei einigen Bewertungen wird darauf hingewiesen, dass die Netzwerkkonnektivität für Office 365 zusätzliche Investitionen in Netzwerkkomponenten erfordert. Beispielsweise Investitionen in WAN-Bandbreite oder optimierte Routinginfrastruktur zur Unterstützung der Internetkonnektivität mit Office 365. Gelegentlich wird in einer Bewertung darauf hingewiesen, dass die Netzwerkverbindung mit Office 365 von den Vorschriften oder Leistungsanforderungen für Szenarien wie [Skype for Business Online Medienqualität](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)beeinflusst wird. Diese zusätzlichen Anforderungen können zu Investitionen in die Infrastruktur für die Internetkonnektivität, die Routing Optimierung und die spezielle direkte Konnektivität führen.
-  
+Bei einigen Bewertungen wird darauf hingewiesen, dass die Netzwerkkonnektivität für Office 365 zusätzliche Investitionen in Netzwerkkomponenten erfordert. Unternehmensnetzwerke, die Zweigniederlassungen und mehrere geografische Regionen umfassen, benötigen möglicherweise Investitionen in SD-WAN-Lösungen oder eine optimierte Routinginfrastruktur, um die Internetkonnektivität mit Office 365 zu unterstützen. Gelegentlich wird in einer Bewertung darauf hingewiesen, dass die Netzwerkverbindung mit Office 365 von den Vorschriften oder Leistungsanforderungen für Szenarien wie [Skype for Business Online Medienqualität](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917)beeinflusst wird. Diese zusätzlichen Anforderungen können zu Investitionen in die Infrastruktur für die Internetkonnektivität, die Routing Optimierung und die spezielle direkte Konnektivität führen.
+
+Einige Ressourcen, die Ihnen bei der Bewertung Ihres Netzwerks helfen:
+
+- Konzeptionelle Informationen zu Office 365 Netzwerke finden Sie unter [Office 365 Netzwerkkonnektivität (Übersicht)](office-365-networking-overview.md) .
+- Unter [Office 365 Grundsätzen der Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) erfahren Sie, wie Sie die Verbindungs Prinzipien für die sichere Verwaltung Office 365 Datenverkehrs und die bestmögliche Leistung kennen.
+- Registrieren Sie sich bei [Microsoft](https://www.microsoft.com/en-us/fasttrack) Kurztour, um Hilfe bei der Planung, Entwicklung und Bereitstellung von Office 365 zu erhalten. 
+- Im Abschnitt [Office 365 Netzwerk](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) -Onboarding-Tool können Sie grundlegende Verbindungstests ausführen, die spezifische Anleitungen zur Verbesserung der Netzwerkkonnektivität bieten, die zwischen einem bestimmten Benutzerstandort und Office 365 vorgenommen werden kann.
+
 > [!NOTE]
 > Microsoft Authorization ist für die Verwendung von Express Route für Office 365 erforderlich. Microsoft überprüft alle Kundenanforderungen und autorisiert Express Route nur für Office 365 Nutzung, wenn die regulatorische Anforderung eines Kunden eine direkte Konnektivität erfordert. Wenn Sie solche Anforderungen haben, stellen Sie bitte den Textauszug und den Weblink der von Ihnen interpretierten Richtlinie bereit, damit die direkte Konnektivität im [Express Route für Office 365 Anforderungsformular](https://aka.ms/O365ERReview) zum Starten einer Microsoft-Überprüfung erforderlich ist. Nicht autorisierte Abonnements, die versuchen, Routenfilter für Office 365 zu erstellen, erhalten eine [Fehlermeldung](https://support.microsoft.com/kb/3181709).
   
@@ -44,23 +51,24 @@ Wichtige Punkte, die bei der Planung Ihrer Netzwerkbewertung für Office 365 zu 
 
 - Wir optimieren die Kernaspekte Office 365 wie Verfügbarkeit, globale Reichweite und Leistung für internetbasierte Konnektivität kontinuierlich. Viele Office 365 Dienste nutzen beispielsweise eine wachsende Gruppe von Edge-Knoten mit Internetzugriff. Dieses Edge-Netzwerk bietet die beste Nähe und Leistung für Verbindungen, die über das Internet kommen.
 
-- Bei der Verwendung von Office 365 für alle enthaltenen Dienste wie Skype for Business online sprach-, Video-oder Besprechungsfunktionen müssen Kunden eine End-to-End-Netzwerkbewertung durchführen und die Anforderungen in unserem Skype Operations Framework erfüllen. Diese Kunden haben mehrere Optionen, um bestimmte Anforderungen für Cloud-Konnektivität zu erfüllen, einschließlich Express Route.
+- Bei der Verwendung von Office 365 für alle enthaltenen Dienste wie Teams oder Skype for Business online sprach-, Video-oder Besprechungsfunktionen sollten Kunden eine End-to-End-Netzwerkbewertung abschließen und die Verbindungsanforderungen mit Microsoft erfüllen. [ ](https://www.microsoft.com/en-us/fasttrack)Kurzwaren.
 
-Werfen Sie einen Blick auf die Microsoft-Fallstudie [zur Optimierung der Netzwerkleistung für Microsoft Office 365](https://msdn.microsoft.com/en-us/library/mt450488.aspx). Wenn Sie Office 365 bewerten und nicht sicher sind, wo Sie mit ihrer Netzwerkbewertung beginnen oder Herausforderungen im Zusammenfall mit dem Netzwerk Design gefunden haben, die Sie unterstützen müssen, wenden Sie sich an Ihr Microsoft-Konto Team.
-  
-Lesen Sie außerdem [Office 365 Grundsätze der Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) , um die Verbindungs Prinzipien für die sichere Verwaltung Office 365 Datenverkehrs und die bestmögliche Leistung zu verstehen. Dieser Artikel hilft Ihnen, die neuesten Anleitungen für die sichere Optimierung Office 365 Netzwerkkonnektivität zu verstehen.
+Wenn Sie Office 365 bewerten und nicht sicher sind, wo Sie mit ihrer Netzwerkbewertung beginnen oder Herausforderungen im Zusammenfall mit dem Netzwerk Design gefunden haben, die Sie unterstützen müssen, wenden Sie sich an Ihr Microsoft-Konto Team.
 
 ## <a name="the-office-365-network-onboarding-tool"></a>Das Onboarding-Tool für Office 365-Netzwerk
 
-Sie können das Onboarding- [Tool für Office 365-Netzwerk](https://aka.ms/netonboard)verwenden, ein neues Tool für Machbarkeitsstudie (Proof of Concept), um grundlegende Verbindungstests auszuführen, die spezifische Anleitungen für Verbesserungen bei der Netzwerkkonnektivität bieten, die zwischen einem bestimmten Benutzerstandort und Office 365 vorgenommen werden können.
+Das Onboarding- [Tool für Office 365-Netzwerk](https://aka.ms/netonboard) ist ein Machbarkeits-Netzwerk Bewertungstool (Proof of Concept), das grundlegende Verbindungstests für Ihren Office 365 Mandanten ausführt und spezifische Empfehlungen für das Netzwerk Design für eine optimale Office 365 Leistung stellt. Das Tool hebt allgemeine Entwurfsentscheidungen für umfangreiche Unternehmensnetzwerk-Perimeter hervor, die für das Surfen im Internet nützlich sind, wirkt sich jedoch auf die Leistung großer SaaS-Anwendungen wie Office 365 aus.
 
 Das Onboarding-Tool für das Netzwerk führt folgende Schritte aus:
 
 - Ermittelt ihren Standort oder Sie können einen Test Speicherort angeben
 - Überprüft den Speicherort Ihres Netzwerk Ausstiegs.
 - Testet den Netzwerkpfad auf den nächsten Office 365 Dienst Haustür
+- Bietet erweiterte Tests mit einer herunterladbaren Windows 10-Anwendung, die Empfehlungen zum Entwurf des Umkreisnetzwerks in Bezug auf Proxy Server, Firewalls und DNS macht. Das Tool führt auch Leistungstests für Skype for Business Online, Microsoft Teams, SharePoint Online und Exchange Online aus.
 
-Das Tool zeigt die folgenden Informationen an:
+Das Tool verfügt über zwei Komponenten: eine browserbasierte Benutzeroberfläche, die grundlegende Verbindungsinformationen sammelt, und eine herunterladbare Windows 10-Anwendung, die erweiterte Tests ausführt und zusätzliche Bewertungsdaten zurückgibt.
+
+Das browserbasierte Tool zeigt die folgenden Informationen an:
 
 - Registerkarte "Ergebnisse und Auswirkungen"
   - Der Ort auf der Karte der Haustür des in-use-Diensts
@@ -74,7 +82,24 @@ Das Tool zeigt die folgenden Informationen an:
   - Optimale Office 365 Exchange Online Dienst-Haustür (en) für den Benutzerstandort
   - Kunden in ihrer Metro-Region mit besserer Leistung
 
-Sie können Informationen zur Version des Office 365-Netzwerk-Onboarding-Tools lesen und Feedback zum Blogbeitrag [Office 365 Network Performance Tool POC](https://techcommunity.microsoft.com/t5/Office-365-Networking/Office-365-Network-Performance-tool-POC-release/m-p/319579#M102) geben. Informationen zu zukünftigen Updates für dieses Tool und andere Office 365 Netzwerk Updates werden im Blog [Office 365 Networking](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) veröffentlicht.
+Die herunterladbare Anwendung für erweiterte Tests bietet die folgenden zusätzlichen Informationen:
+
+- Registerkarte "Details und Lösungen" (angehängt)
+  - Standardgateway des Benutzers
+  - Client-DNS-Server
+  - Client-DNS-rekursive Auflösung
+  - Exchange Online DNS-Server
+  - SharePoint Online DNS-Server
+  - Proxy Serveridentifikation
+  - Überprüfung der Medien Konnektivität
+  - Paketverlust für Medienqualität
+  - Wartezeit für Medienqualität
+  - Jitter der Medienqualität
+  - Neuordnen von Medien Qualitäts Paketen
+- Verbindungstests zu mehreren funktionsspezifischen Endpunkten
+- Netzwerkpfad Diagnose, die tracert-und Latenz Daten für die Exchange Online, SharePoint Online und Microsoft Teams-Dienste enthält
+
+Sie können das Onboarding-Tool für Office 365-Netzwerk lesen und Feedback zum aktualisierten Office 365-Netzwerk-Onboarding-Tool POC mit dem Blogbeitrag " [neue Netzwerk Design Empfehlungen](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) " bereitstellen. Informationen zu zukünftigen Updates für dieses Tool und andere Office 365 Netzwerk Updates werden im Blog [Office 365 Networking](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) veröffentlicht.
   
 Hier ist ein kurzer Link, den Sie verwenden können, um zurückzukehren: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
