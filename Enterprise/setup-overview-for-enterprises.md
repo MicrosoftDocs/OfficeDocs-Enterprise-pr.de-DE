@@ -3,6 +3,7 @@ title: Bereitstellen von Office 365 Enterprise für Ihre Organisation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +17,12 @@ ms.collection:
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
 description: Diese Übersichts Schritte sollen Ihnen helfen, Ihr Netzwerk einzurichten, Ihre Identitäten zu erstellen, Office 365 ProPlus bereitzustellen, Ihre Daten zu migrieren und den Personen in Ihrer Organisation bei der Verwendung von Office 365 zu helfen.
-ms.openlocfilehash: 74f119b678e04bb9f541af83feb5396ba3bed8f2
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 20b970651d2ff432e0bf7b5d74bdc5f02e34f225
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249503"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302717"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Bereitstellen von Office 365 Enterprise für Ihre Organisation
 
@@ -77,3 +78,5 @@ Wenn Sie Office 365 Enterprise selbst bereitstellen möchten, finden Sie hier di
 >[!Note]
 >Diese Schritte gelten auch für Unternehmen [](https://go.microsoft.com/fwlink/?LinkId=627221) und gemeinnützige Organisationen, die mit einer benutzerdefinierten Bereitstellung von Office 365 Enterprise beginnen möchten. 
 >
+
+Wenn Sie ein Microsoft 365 Enterprise-Abonnement haben, starten Sie [hier](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise).

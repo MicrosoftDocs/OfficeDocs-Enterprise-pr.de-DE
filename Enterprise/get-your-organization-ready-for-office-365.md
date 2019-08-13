@@ -3,6 +3,7 @@ title: Planen von Office 365 Enterprise
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 08/12/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Erhalten Sie Zugriff auf die Ressourcen für die Planung Ihrer Office 365 Enterprise-Bereitstellung.
-ms.openlocfilehash: 29510c6e3df5dfd6064b6e7e96e236e4bd8c0c47
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
+ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249473"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302687"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Planen von Office 365 Enterprise
 
@@ -38,7 +39,7 @@ Der Kurztext [für Office 365](https://docs.microsoft.com/fasttrack/O365-fasttra
 
 ## <a name="do-it-yourself-planning-for-office-365"></a>Do-it-yourself-Planung für Office 365
 
-Um Office 365 selbst zu planen, müssen Sie die richtigen Entwurfsentscheidungen für diese Bereiche festlegen:
+Wenn Sie Office 365 selbst planen möchten, müssen Sie die Planungs-und Entwurfsentscheidungen für diese Bereiche Schritt für Schritt durchführen:
 
 - Ihr Office 365 Mandant
 
@@ -56,7 +57,12 @@ Um Office 365 selbst zu planen, müssen Sie die richtigen Entwurfsentscheidungen
 
   Enthält Migrationsinformationen für Office 2007 und Office 2010 Client-und Serverprodukte. Beginnen Sie [hier](plan-upgrade-previous-versions-office.md).
 
-Sie können sich auch bei Ihrem Abonnement anmelden und die [Bereitstellungs Ratgeber für Office 365 Dienste](deployment-advisors-for-office-365.md)verwenden.
+>[!Note]
+>Sie können diesen Prozess auch für Ihr [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) -Abonnement verwenden.
+>
+
+Sie können sich auch bei Ihrem Office 365 Abonnement anmelden und die [Bereitstellungs Ratgeber für Office 365 Dienste](deployment-advisors-for-office-365.md)verwenden.
+
 
 
 <!--
