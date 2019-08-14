@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Beschreibt, wie das Office 365-Inhalts Zustellungs Netzwerk (CDN) verwendet wird, um die Zustellung Ihrer SharePoint Online Ressourcen an alle Benutzer zu beschleunigen, unabhängig davon, wo Sie sich befinden oder wie Sie auf Ihre Inhalte zugreifen.
-ms.openlocfilehash: 7ca9283348bda666b2de8c0ae07896164f40d240
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: ffb464b31a5f5a87a09334e2c5f7ae3c3027af65
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017315"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385193"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
@@ -29,7 +29,7 @@ Sie können statische Objekte im Office 365-Netzwerk für die Inhaltsübermittlu
 > [!NOTE]
 > Einschränkungen für die Verwendung des Office 365 CDN:
 > + Das Office 365 CDN steht nur Mandanten in der **Produktionsumgebung** (weltweit) zur Verfügung. Die Mandanten in der US-Regierung, in China und in Deutschland unterstützen derzeit nicht die Office 365 CDN.
-> + Das Office 365 CDN unterstützt derzeit keine Mandanten, die mit benutzerdefinierten oder "Vanity"-Domänen konfiguriert sind. Wenn Sie Ihrem Mandanten mithilfe der Anweisungen im Thema [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)eine Domäne hinzugefügt haben, gibt das Office 365 CDN Fehler zurück, wenn Sie versuchen, auf Inhalte aus dem CDN zuzugreifen.
+> + Das Office 365 CDN unterstützt derzeit keine Mandanten, die mit benutzerdefinierten oder "Vanity"-Domänen konfiguriert sind. Wenn Sie eine Domäne zu einer beliebigen Komponente in Ihrem Office 365 Mandanten mithilfe der Anweisungen im Thema [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)hinzugefügt haben, gibt das Office 365 CDN Fehler zurück, wenn Sie versuchen, auf Inhalte aus dem CDN zuzugreifen.
 
 Das Office 365-Netzwerk für die Inhaltsübermittlung besteht aus mehreren CDNs, über die Sie statische Objekte an mehreren Speicherorten hosten können, oder aus _Ursprüngen_, die aus globalen Hochgeschwindigkeitsnetzwerken bedient werden. In Abhängigkeit von der Art der Inhalte, die Sie im Office 365-Netzwerk für die Inhaltsübermittlung hosten möchten, können Sie **öffentliche** Ursprünge, **private** Ursprünge oder beides hinzufügen. Weitere Informationen zum Unterschied zwischen öffentlichen und privaten Quellen finden Sie unter [Choose, ob jeder Ursprung öffentlich oder privat sein soll](use-office-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) .
 

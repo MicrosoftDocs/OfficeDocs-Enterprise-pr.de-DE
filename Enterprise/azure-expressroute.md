@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Erfahren Sie, wie Azure Express Route mit Office 365 verwendet wird und wie das Netzwerk Implementierungsprojekt geplant wird, das erforderlich ist, wenn Sie Azure Express Route für die Verwendung mit Office 365 bereitstellen.
-ms.openlocfilehash: d881dc4e65ca2533f511c7f613c38569811b95a7
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: b12310d9a82a1adafd82ce0c3b6554e7ceea9550
+ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782355"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36385183"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute für Office 365
 
@@ -58,7 +58,7 @@ In der folgenden Tabelle sind die Office 365 Dienste aufgeführt, die über Expr
 |**Eingeschlossene Anwendungen**|
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Schutz<sup>1</sup> <br/> Eintauchen<sup>1</sup> <br/> |
-|Skype for Business Online<sup>1</sup> <br/> |
+|Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive für Unternehmen<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
 |Portal und Shared<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> Aad Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
