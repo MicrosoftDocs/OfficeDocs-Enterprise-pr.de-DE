@@ -72,16 +72,13 @@
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
 # Testen von Office 365
-## [Testumgebungsanleitungen zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
+## [Testen von Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 ## [Basiskonfiguration der Entwicklungs-/Testumgebung](base-configuration-dev-test-environment.md)
 ## [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
 ### [Verzeichnissynchronisierung](dirsync-for-your-office-365-dev-test-environment.md)
 ### [Mehrstufige Authentifizierung](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
 ### [Verbundidentität](federated-identity-for-your-office-365-dev-test-environment.md)
 ### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-### [Erweiterte eDiscovery](advanced-ediscovery-for-your-office-365-dev-test-environment.md)
-### [Schutz sensibler Dateien](sensitive-file-protection-in-the-office-365-dev-test-environment.md)
-### [Datenklassifizierung und -bezeichnung](data-classification-and-labeling-in-the-office-365-dev-test-environment.md)
 ## [Simuliertes standortübergreifendes virtuelles Netzwerk in Azure](simulated-cross-premises-virtual-network-in-azure.md)
 
 # [Bereitstellen von Office 365 Enterprise](setup-overview-for-enterprises.md)
