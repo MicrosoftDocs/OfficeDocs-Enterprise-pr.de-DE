@@ -21,12 +21,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 moderne Authentifizierung für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: 25646c014fc9ff11926c0091209a3419fad811d6
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
+ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203624"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36491294"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
 
@@ -44,6 +44,9 @@ Für die Office 365 Dienste lautet der Standardzustand der modernen Authentifizi
 - Standard **** mäßig aktiviert für SharePoint Online. 
     
 - Standard **** mäßig aktiviert für Skype for Business Online. Weitere Informationen finden Sie unter [Aktivieren von Skype for Business Online für die moderne Authentifizierung ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx), um Sie zu deaktivieren.
+
+> [!NOTE]
+> Für Mandanten, die **vor dem** 1. August 2017 erstellt wurden, **** ist die moderne Authentifizierung für Exchange Online und Skype for Business Online standardmäßig deaktiviert.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Anmeldeverhalten von Office-Client-apps
 
