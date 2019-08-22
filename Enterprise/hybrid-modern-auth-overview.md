@@ -1,8 +1,8 @@
 ---
 title: Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern
-ms.author: tracyp
+ms.author: kvice
 ms.reviewer: smithre4
-author: MSFTTracyP
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet. Sie ist für hybridbereitstellungen von lokalen Skype for Business-Servern und lokalen Exchange-Servern sowie für geteilte Domänen Skype for Business Hybriden verfügbar. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zur Einrichtung/Deaktivierung moderner Authentifizierung und zu einigen der verwandten Clients (ex. Outlook-und Skype-Clients) Informationen.
-ms.openlocfilehash: a8395a4d1bc212f23309b4ea273588d44eef69a3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 6a724ae48166f8946e71cf3f2235e07ee399712a
+ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782455"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493302"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern
 
