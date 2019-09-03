@@ -186,11 +186,9 @@ Die folgenden Cmdlets können mit Office 365-Gruppen verwendet werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
+[Upgraden von Verteilerlisten zu Office 365-Gruppen](https://docs.microsoft.com/de-DE/office365/admin/manage/upgrade-distribution-lists)
 
-  [Upgraden von Verteilerlisten zu Office 365-Gruppen](https://docs.microsoft.com/de-DE/office365/admin/manage/upgrade-distribution-lists)
-
-
-  [Verwalten von Personen, die Office 365-Gruppen erstellen können](https://docs.microsoft.com/de-DE/office365/admin/create-groups/manage-creation-of-groups)
+[Verwalten von Personen, die Office 365-Gruppen erstellen können](https://docs.microsoft.com/de-DE/office365/admin/create-groups/manage-creation-of-groups)
 
 [Verwalten des Gastzugriffs auf Office 365-Gruppen](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
