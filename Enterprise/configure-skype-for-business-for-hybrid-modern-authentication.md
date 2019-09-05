@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server sowie für geteilte Domänen Skype for Business Hybriden verfügbar ist.
-ms.openlocfilehash: 5db33a39ff58ae2aa21968c2f092c8ac29af5681
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
+ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493332"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36759683"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird
 
@@ -49,7 +49,7 @@ In dieser Zusammenfassung wird der Prozess in Schritte unterteilt, die andernfal
   
 1. Stellen Sie zunächst sicher, dass alle Voraussetzungen erfüllt sind.
     
-1. Da zahlreiche **voraus** setzungen sowohl für Skype for Business als auch für Exchange gelten, [Lesen Sie den Übersichtsartikel über die Prüfliste für vorab](hybrid-modern-auth-overview.md)Anforderungen. Tun Sie dies, *bevor* Sie einen der Schritte in diesem Artikel beginnen. 
+1. Da zahlreiche **Voraussetzungen** sowohl für Skype for Business als auch für Exchange gelten, [Lesen Sie den Übersichtsartikel über die Prüfliste für vorab](hybrid-modern-auth-overview.md)Anforderungen. Tun Sie dies, *bevor* Sie einen der Schritte in diesem Artikel beginnen. 
     
 2. Sammeln Sie die HMA-spezifischen Informationen, die Sie in einer Datei oder in OneNote benötigen.
     
@@ -73,7 +73,7 @@ Weitere Informationen finden Sie im [Thema zur Unterstützung von Skype for Busi
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Sammeln Sie alle HMA-spezifischen Informationen, die Sie benötigen.
 
-Nachdem Sie die [voraus](hybrid-modern-auth-overview.md) setzungen für die Verwendung der modernen Authentifizierung überprüft haben (siehe Hinweis oben), sollten Sie eine Datei erstellen, in der die Informationen gespeichert sind, die Sie für die Konfiguration von HMA in den nächsten Schritten benötigen. In diesem Artikel verwendete Beispiele: 
+Nachdem Sie die [Voraussetzungen](hybrid-modern-auth-overview.md) für die Verwendung der modernen Authentifizierung überprüft haben (siehe Hinweis oben), sollten Sie eine Datei erstellen, in der die Informationen gespeichert sind, die Sie für die Konfiguration von HMA in den nächsten Schritten benötigen. In diesem Artikel verwendete Beispiele: 
   
 - **SIP/SMTP-Domäne**
     
@@ -140,7 +140,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs https://lyncweb01.contoso.com und. https://lyncwebext01.contoso.com/
+4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs https://lyncwebint01.contoso.com und. https://lyncwebext01.contoso.com/
     
 ### <a name="create-the-evosts-auth-server-object"></a>Erstellen des EvoSTS-Authentifizierungs Server Objekts
 
