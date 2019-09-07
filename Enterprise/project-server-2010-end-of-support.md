@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Support endet für Project Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf Project Online oder eine neuere Version von Project Server lokal.
-ms.openlocfilehash: 5133cfaba65349133246e4e3eee3dd2fc286289d
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491314"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782442"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Roadmap für Project Server 2010 Ende des Supports
 
@@ -200,14 +200,14 @@ Weitere Ressourcen:
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Zusammenfassung der Optionen für Office 2010 Client und Server und Windows 7
 
-Für eine visuelle Zusammenfassung der Upgrade-, Migrations-und Cloud-Optionen für Office 2010-Client und-Server und-Windows 7 laden Sie das [Ende des Dienst](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)-Posters herunter.
+Eine visuelle Zusammenfassung der Upgrade-, Migrations-und Cloud-Optionen für Office 2010-Clients und-Server und-Windows 7 finden Sie unter [Ende des Support-Posters](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Office 2010 Client-und Serverprodukte und Windows 7 das Ende des Diensts erreichen, wobei bevorzugte Pfade und Options Unterstützung in Microsoft 365 Enterprise hervorgehoben werden.
+Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Office 2010 Client-und Serverprodukte und Windows 7 das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Options Unterstützung in Microsoft 365 Enterprise hervorgehoben werden.
 
-Sie können dieses Poster im Format "Letter", "Legal" oder "Tabloid" (11 x 17) drucken.
-    
+Sie können dieses Poster auch [herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten Letter, legal oder Tabloid (11 x 17) ausdrucken.
+   
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Upgrade von SharePoint 2010](upgrade-from-sharepoint-2010.md)

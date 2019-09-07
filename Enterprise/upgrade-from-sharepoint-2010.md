@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Die Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 944dd4a2980097611de1fa9239acbfca46517960
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: c83d91b3ae8124312459033cb59524dec048fd03
+ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491324"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "36782432"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
@@ -107,7 +107,7 @@ Wenn Sie ein Upgrade auf SharePoint Server 2013 oder SharePoint Server 2016 durc
 |Microsoft wendet Patches, Fixes und Updates auf zugrunde liegende Hardware und Software an (einschließlich SQL-Servern, auf denen SharePoint Online ausgeführt wird).  <br/> |Da es keinen Zugriff auf das zugrunde liegende Dateisystem im Dienst gibt, sind einige Anpassungen begrenzt.  <br/> |
 |Microsoft veröffentlicht [Vereinbarungen zum Service Level](https://go.microsoft.com/fwlink/?linkid=843153) und wird schnell zur Lösung von Vorfällen auf Dienstebene verschoben.  <br/> |Sicherungs-und Wiederherstellungsoptionen und andere Wiederherstellungsoptionen werden vom Dienst in SharePoint Online automatisiert – Sicherungen werden überschrieben, wenn Sie nicht verwendet werden.  <br/> |
 |Sicherheitstests und die Optimierung der Serverleistung werden laufend im Dienst von Microsoft ausgeführt.  <br/> |Änderungen an der Benutzeroberfläche und anderen SharePoint-Features werden vom Dienst installiert und müssen möglicherweise aktiviert oder deaktiviert werden.  <br/> |
-|Office 365 erfüllt viele Industriestandards: [Office 365 Compliance](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |[](https://go.microsoft.com/fwlink/?linkid=518597) Die Pannen Unterstützung für die Migration ist limitiert.  <br/> Ein Großteil des Upgrades wird manuell durchführen oder über die SPO-Migrations-API, die in der [Roadmap für Migrations Inhalte für SharePoint Online und OneDrive](https://go.microsoft.com/fwlink/?linkid=843184)beschrieben wird.  <br/> |
+|Office 365 erfüllt viele Industriestandards: [Office 365 Compliance](https://go.microsoft.com/fwlink/?linkid=843165).  <br/> |Die [Pannen](https://go.microsoft.com/fwlink/?linkid=518597) Unterstützung für die Migration ist limitiert.  <br/> Ein Großteil des Upgrades wird manuell durchführen oder über die SPO-Migrations-API, die in der [Roadmap für Migrations Inhalte für SharePoint Online und OneDrive](https://go.microsoft.com/fwlink/?linkid=843184)beschrieben wird.  <br/> |
 |Weder Microsoft-Support Techniker noch Mitarbeiter im Rechenzentrum haben uneingeschränkten Administratorzugriff auf Ihr Abonnement.  <br/> |Es kann zusätzliche Kosten entstehen, wenn die Hardware Infrastruktur aktualisiert werden muss, um die neuere Version von SharePoint zu unterstützen, oder wenn eine sekundäre Farm für das Upgrade erforderlich ist.  <br/> |
 |Lösungsanbieter können die einmalige Aufgabe der Migration Ihrer Daten zu SharePoint Online unterstützen.  <br/> |Nicht alle Änderungen an SharePoint Online befinden sich in Ihrem Steuerelement. Nach der Migration können sich Design Unterschiede in Menüs, Bibliotheken und anderen Features vorübergehend auf die Benutzerfreundlichkeit auswirken.  <br/> |
 |Online Produkte werden automatisch über den Dienst aktualisiert, was bedeutet, dass Features zwar veraltet sein können, es jedoch keinen wirklichen Ende des Supportlebenszyklus gibt.  <br/> |Für SharePoint Server (oder SharePoint Foundation) und den zugrunde liegenden SQL-Servern wird ein Support-Lebenszyklus beendet.  <br/> |
@@ -181,14 +181,14 @@ Eine gute Möglichkeit, um zu sehen, wie eine hybride SharePoint-Farm funktionie
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Zusammenfassung der Optionen für Office 2010 Client und Server und Windows 7
 
-Für eine visuelle Zusammenfassung der Upgrade-, Migrations-und Cloud-Optionen für Office 2010-Client und-Server und-Windows 7 laden Sie das [Ende des Dienst](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfService.pdf)-Posters herunter.
+Eine visuelle Zusammenfassung der Upgrade-, Migrations-und Cloud-Optionen für Office 2010-Clients und-Server und-Windows 7 finden Sie unter [Ende des Support-Posters](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-service.png)
+![](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)
 
-Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Office 2010 Client-und Serverprodukte und Windows 7 das Ende des Diensts erreichen, wobei bevorzugte Pfade und Options Unterstützung in Microsoft 365 Enterprise hervorgehoben werden.
+Dieses einseitige Poster ist eine schnelle Möglichkeit, die verschiedenen Pfade zu verstehen, die Sie ergreifen können, um zu verhindern, dass Office 2010 Client-und Serverprodukte und Windows 7 das Ende der Unterstützung erreichen, wobei bevorzugte Pfade und Options Unterstützung in Microsoft 365 Enterprise hervorgehoben werden.
 
-Sie können dieses Poster im Format "Letter", "Legal" oder "Tabloid" (11 x 17) drucken.
-  
+Sie können dieses Poster auch [herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) und in den Formaten Letter, legal oder Tabloid (11 x 17) ausdrucken.
+        
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Ressourcen zum Upgraden von Office 2007-oder 2010-Servern und-Clients](upgrade-from-office-2010-servers-and-products.md)
