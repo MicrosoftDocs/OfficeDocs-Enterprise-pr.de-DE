@@ -13,12 +13,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Office 365 Client-App-Unterstützung für moderne Authentifizierung.
-ms.openlocfilehash: d5d17f3395b7eec736403c75b4e2b571c1123fe7
-ms.sourcegitcommit: 27614632a0ceccbd5a4083cefa822187417f02a6
+ms.openlocfilehash: 29abfdc5a9974b3e581e08556b675a725a6076dc
+ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36672935"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "36817261"
 ---
 # <a name="office-365-client-app-support---modern-authentication"></a>Office 365 Client-App-Unterstützung – moderne Authentifizierung
 
@@ -48,7 +48,7 @@ Die neuesten Versionen der folgenden Clients unterstützen die moderne Authentif
 | ![Office.com-Symbol](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Office 365 Administrator Symbol](media/o365-o365admin-64x64.png) <br> [Office 365 <br> Administrator](https://products.office.com/business/manage-office-365-admin-app) | ![Linsen Symbol](media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive für Unternehmen Symbol](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![OneNote-Symbol](media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) 
 | ![Outlook-Symbol](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Symbol für Planer](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps-Symbol](media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![PowerBI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![PowerPoint-Symbol](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Projektsymbol](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher-Symbol](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) | ![Skype for Business Symbol](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business<sup>1</sup>](https://www.skype.com/business/) | ![StaffHub-Symbol](media/o365-staffhub-64x64.png) <br> [StaffHub](https://products.office.com/microsoft-staffhub/staff-scheduling-software)
-| ![Symbol für Notizen](media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Datenstrom Symbol](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams-Symbol](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![Aufgaben Symbol](media/o365-todo-64x64.png) <br> [To-Do](https://todo.microsoft.com) 
+| ![Symbol für Notizen](media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Datenstrom Symbol](media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams-Symbol](media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) | ![To-do-Symbol](media/o365-todo-64x64.png) <br> [zu tun](https://todo.microsoft.com) 
 | ![Visio-Symbol](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Whiteboard-Symbol](media/o365-whiteboard-64x64.png) <br> [Whiteboard<sup>1</sup>,<sup>2</sup>](https://whiteboard.microsoft.com/) | ![Word-Symbol](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Jammer Symbol](media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview) | ![Jammer Symbol](media/o365-yammer-64x64.png) <br> [Jammer <br> Melder](https://products.office.com/yammer/yammer-overview) |  |
 
 ## <a name="supported-powershell-modules"></a>Unterstützte PowerShell-Module
