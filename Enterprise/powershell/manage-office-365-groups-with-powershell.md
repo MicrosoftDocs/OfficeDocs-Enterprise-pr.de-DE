@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Erfahren Sie, wie Sie allgemeine Verwaltungsaufgaben für Office 365-Gruppen in Microsoft PowerShell ausführen.
-ms.openlocfilehash: b2cd536630f80dec66344162669b0bbe1cf3b4cd
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
+ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069021"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "37017343"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Verwalten von Office 365-Gruppen mit PowerShell
 
@@ -73,13 +73,13 @@ Lesen Sie [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellu
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
 ```
 
-Mit dem settings-Attribut *ClassificationDescriptions* können Sie jeder Klassifizierung eine Beschreibung zuordnen,
+Mit dem settings-Attribut *ClassificationDescriptions* können Sie jeder Klassifizierung eine Beschreibung zuordnen.
   
 ```
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
-wobei "Classification" den Zeichenfolgen in der "ClassificationList" entspricht.
+wobei die Klassifizierung mit den Zeichenfolgen in der ClassificationList übereinstimmt.
 
 Beispiel:
   
@@ -122,7 +122,7 @@ Wenn Sie verhindern möchten, dass Benutzer aus anderen Organisation E-Mails an 
 Führen Sie das Cmdlet "Set-UnifiedGroup" wie folgt aus, um diese Einstellung zu aktualisieren:
 
 ```
-Set-UnifiedGroup -Identity "Internal senders only" - RequireSenderAuthenticationEnabled $true
+Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
 ## <a name="add-mailtips-to-the-office-365-groups"></a>Hinzufügen von E-Mail-Infos zu den Office 365-Gruppen
