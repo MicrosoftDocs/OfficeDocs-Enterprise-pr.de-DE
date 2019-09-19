@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie Office 365 für die Zusammenarbeit mit Gastbenutzern konfigurieren.
-ms.openlocfilehash: accf67a884d2659eb9fef8b8aff61537d0a4b73d
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: e9cae26881e1efcf1f958a436d095296fcf3c2be
+ms.sourcegitcommit: 1123ef65778a17b7d2cfc308435e96d4b9509df0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992374"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37026215"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
-Die Schritte zum Konfigurieren der Gast Freigabe in Microsoft 365 hängen von dem Szenario ab, das Sie aktivieren möchten. Wählen Sie eine der folgenden Varianten:
+Standardmäßig ist die Gast Freigabe in Microsoft 365 für SharePoint und OneDrive aktiviert, für Teams jedoch deaktiviert. Viele SharePoint-und OneDrive-Gast Freigabeszenarien funktionieren ohne weitere Konfiguration. Wählen Sie eine der folgenden Optionen aus, um die Einstellungen für ein von Ihnen verwendetes Szenario zu bestätigen oder ein neues zu aktivieren:
 
 - [Zusammenarbeit an Dokumenten](collaborate-on-documents.md) – erfahren Sie, wie Sie Microsoft 365 so konfigurieren, dass die Freigabe und Zusammenarbeit mit Gästen in Dateien und Ordnern möglich ist.
 - [Zusammenarbeiten an einer Website](collaborate-in-a-site.md) – erfahren Sie, wie Sie Microsoft 365 so konfigurieren, dass SharePoint-Websites für Gäste freigegeben werden.
