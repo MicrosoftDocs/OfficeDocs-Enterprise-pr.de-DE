@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 89d9feee-2285-419c-8c14-0f7f583536e0
 description: PerformancePoint Server 2007, ProClarity und SharePoint Server 2007 haben das Ende der Unterstützung erreicht. Lesen Sie diesen Artikel, um Ihr BI-lösungsupgrade zu planen.
-ms.openlocfilehash: 9fde75724bf82a37f98fd98ddda1017198b850dd
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 507e6c1707844fed3ecd7cf4d3a69174a10b3dc4
+ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782535"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37067090"
 ---
 # <a name="performancepoint-server-2007-end-of-support-roadmap"></a>Ende der Unterstützung für PerformancePoint Server 2007 – Roadmap
 
@@ -72,8 +72,8 @@ Nachdem Sie die Upgrade-Optionen untersucht haben, besteht der nächste Schritt 
   
 |**Option**|**In der Cloud oder lokal?**|
 |:-----|:-----|
-|[Excel](#use-excel-with-excel-online-in-the-cloud-or-on-premises) <br/> |In beide Richtungen  <br/> |
-|[Power BI](#use-power-bi-in-the-cloud-or-on-premises) <br/> |In beide Richtungen  <br/> |
+|[Excel](#excel-with-sharepoint-server-on-premises) <br/> |In beide Richtungen  <br/> |
+|[Power BI](#use-power-bi-in-the-cloud-or on-premises) <br/> |In beide Richtungen  <br/> |
 |[Reporting Services](#use-reporting-services-on-premises) <br/> |Nur lokal  <br/> |
 |[PerformancePoint Services](#use-performancepoint-services-on-premises) <br/> |Nur lokal  <br/> |
    
@@ -91,7 +91,7 @@ In der folgenden Tabelle werden die wichtigsten Vorteile der Verwendung von Exce
 
 Wenn Sie zu Office 365 navigieren, verfügen Sie über die aktuellsten Dienste und Anwendungen, einschließlich Excel 2016. PerformancePoint-Dienste ist in Office 365 nicht verfügbar, sodass Sie den PerformancePoint-Dashboard-Inhalt durch Excel-Arbeitsmappen oder andere Berichte ersetzen. Die gute Nachricht ist, Excel 2016 verfügt über viele neue Diagrammtypen und das Erstellen beeindruckender Dashboards in Excel ist einfacher als je zuvor. Und neue Features werden regelmäßig hinzugefügt. Weitere Informationen finden Sie unter [What es New in Excel 2016 für Windows](https://support.office.com/article/5fdb9208-ff33-45b6-9e08-1f5cdb3a6c73.aspx).
   
-Wenn Sie 50-Sitze oder mehr Office 365 erwerben, kann Ihnen das Microsoft schnell Team bei der Einrichtung behilflich sein. Weitere Informationen finden Sie unter [](https://www.microsoft.com/fasttrack/microsoft-365/office-365)schneller.
+Wenn Sie 50-Sitze oder mehr Office 365 erwerben, kann Ihnen das Microsoft schnell Team bei der Einrichtung behilflich sein. Weitere Informationen finden Sie unter [schneller.](https://www.microsoft.com/fasttrack/microsoft-365/office-365)
   
 #### <a name="excel-with-sharepoint-server-on-premises"></a>Excel mit SharePoint Server (lokal)
 
