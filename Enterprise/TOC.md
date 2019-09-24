@@ -209,6 +209,10 @@
 ##### [Zusammenarbeiten an Dokumenten](collaborate-on-documents.md)
 ##### [Zusammenarbeiten an einer Website](collaborate-in-a-site.md)
 ##### [Zusammenarbeiten als Team](collaborate-as-a-team.md)
+#### Gastfreigabesicherheit
+##### [Anonyme Freigabe](best-practices-anonymous-sharing.md)
+##### [Begrenzen der versehentlichen Exposition](sharing-limit-accidental-exposure.md)
+##### [Sichere Gastfreigabeumgebung](create-a-secure-guest-sharing-environment.md)
 
 ## Geräte
 ### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
