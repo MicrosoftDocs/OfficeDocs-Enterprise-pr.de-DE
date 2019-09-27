@@ -3,7 +3,7 @@ title: Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/05/2019
+ms.date: 09/26/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: Vorgehensweise verwenden Office 365 PowerShell, um nicht lizenzierten Benutzern eine Office 365 Lizenz zuzuweisen.
-ms.openlocfilehash: 4351feaa1dbe9d657ed8df54a74410991834ea5d
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 1f12c7b55e6766db5b2afc661ee5337448336ba1
+ms.sourcegitcommit: 71e6a99fb585b4eb1aea3f215c234688f28d2050
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108215"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37273680"
 ---
 # <a name="assign-licenses-to-user-accounts-with-office-365-powershell"></a>Zuweisen von Lizenzen zu Benutzerkonten mit Office 365 PowerShell
 
@@ -144,6 +144,58 @@ In diesem Beispiel werden die gleichen Lizenzen nicht lizenzierten Benutzern in 
 Get-MsolUser -All -Department "Sales" -UsageLocation "US" -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"
 ```
   
+## <a name="move-a-user-to-a-different-subscription-license-plan-with-the-azure-active-directory-powershell-for-graph-module"></a>Migrieren eines Benutzers in ein anderes Abonnement (Lizenzplan) mit dem Azure Active Directory PowerShell für Graph-Modul
+
+Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+  
+Rufen Sie als nächstes den Anmeldenamen des Benutzerkontos ab, für das Sie Switch-Abonnements verwenden möchten, auch bekannt als Benutzerprinzipalname (User Principal Name, UPN).
+
+Als nächstes Listen Sie die Abonnements (Lizenz Pläne) für Ihren Mandanten mit diesem Befehl auf.
+
+```
+Get-AzureADSubscribedSku | Select SkuPartNumber
+```
+
+Als nächstes Listen Sie die Abonnements auf, die das Benutzerkonto derzeit mit diesen Befehlen aufweist.
+
+```
+$userUPN=”<user account UPN>”
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+```
+
+Identifizieren Sie das Abonnement, das der Benutzer aktuell hat (das von-Abonnement) und das Abonnement, auf das der Benutzer umzieht (das Abonnement).
+
+Geben Sie schließlich die an-und von-Abonnement Namen (SKU-Teilenummern) an, und führen Sie diese Befehle aus.
+
+```
+$subscriptionFrom="<SKU part number of the current subscription>"
+$subscriptionTo="<SKU part number of the new subscription>"
+# Unassign
+$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
+$licenses.AddLicenses = $license
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+$licenses.AddLicenses = @()
+$licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+# Assign
+$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionTo -EQ).SkuID
+$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+$licenses.AddLicenses = $License
+Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+```
+
+Sie können die Änderung des Abonnements für das Benutzerkonto mit den folgenden Befehlen überprüfen.
+
+```
+$licensePlanList = Get-AzureADSubscribedSku
+$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID 
+$userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
+```
+
 ## <a name="new-to-office-365"></a>Neu bei Office 365?
 
 [!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
