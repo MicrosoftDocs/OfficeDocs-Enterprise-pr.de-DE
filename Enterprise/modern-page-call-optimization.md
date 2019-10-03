@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie moderne und klassische Veröffentlichungswebsiteseiten in SharePoint Online optimieren können, indem Sie die Anzahl der Aufrufe von SharePoint Online-Service-Endpunkten begrenzen.
-ms.openlocfilehash: d44cb2273d550cea3a9ec7bfb1ffaeb10bbdd333
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 1e355aee6d55e3e45238cdf09853ddebb922ae53
+ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028202"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37375503"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Das Optimieren von Seiten ruft moderne und klassische Veröffentlichungswebsiteseiten von SharePoint Online auf
 
@@ -71,7 +71,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/de-DE/sharepoint/modern-experience-performance.md)
+[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 
