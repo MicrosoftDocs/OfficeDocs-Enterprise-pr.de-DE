@@ -3,7 +3,7 @@ title: Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 Power
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 01/03/2019
+ms.date: 10/07/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Zusammenfassung: Informationen zum Verwenden von Office 365 PowerShell zum Konfigurieren der Eigenschaften für einzelne oder mehrere Benutzerkonten in Ihrem Office 365-Mandanten.'
-ms.openlocfilehash: 53a99c33dcebebc87e12a468d56e5460b8a0c111
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
+ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782605"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "37411514"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell
 
@@ -71,7 +71,11 @@ Sie identifizieren das Konto mit dem **-ObjectID**-Parameter und legen bestimmte
     Dies ist der zweistellige ISO 3166-1-Ländercode bzw. Regionscode (Alpha-2, A2).
     
 Informationen zu weiteren Parametern finden Sie unter [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).
-  
+
+>[!Note]
+> Sie legen die **Mail** -Eigenschaft mit dem **-OtherMails-** Parameter fest.
+>
+ 
 Führen Sie den folgenden Befehl aus, um den Benutzerprinzipalnamen für Ihre Benutzerkonten anzuzeigen.
   
 ```
@@ -186,7 +190,11 @@ Sie identifizieren das Konto mit dem **-UserPrincipalName**-Parameter und legen 
     Dies ist der zweistellige ISO 3166-1-Ländercode bzw. Regionscode (Alpha-2, A2).
     
 Informationen zu weiteren Parametern finden Sie unter [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
-  
+
+>[!Note]
+> Sie legen die **Mail** -Eigenschaft mit dem **-AlternateEmailAddresses-** Parameter fest.
+>
+ 
 Führen Sie den folgenden Befehl aus, um die Benutzerprinzipalnamen aller Benutzer anzuzeigen.
   
 ```
