@@ -21,14 +21,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 moderne Authentifizierung für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: 17a6713fe12e7cdb1fe0355dd38b44b4cb93be54
-ms.sourcegitcommit: 756f1713cab2e46be948f91f6dd87fd60197c4a1
+ms.openlocfilehash: 2518f60141f04c0474d849e6f597c062e23e06d7
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36491294"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435359"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*
 
 Lesen Sie diesen Artikel, um zu erfahren, wie Office 2013-und Office 2016-Client-apps moderne Authentifizierungsfeatures basierend auf der Authentifizierungskonfiguration des Office 365-Mandanten für Exchange Online, SharePoint Online und Skype for Business Online verwenden.
 
@@ -39,14 +41,14 @@ Lesen Sie diesen Artikel, um zu erfahren, wie Office 2013-und Office 2016-Client
 
 Für die Office 365 Dienste lautet der Standardzustand der modernen Authentifizierung wie folgt:
   
-- Standard **** mäßig aktiviert für Exchange Online. Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) , um Sie zu deaktivieren. 
+- Standardmäßig **aktiviert für Exchange Online** . Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) , um Sie zu deaktivieren. 
     
-- Standard **** mäßig aktiviert für SharePoint Online. 
+- Standardmäßig **aktiviert für SharePoint Online** . 
     
-- Standard **** mäßig aktiviert für Skype for Business Online. Weitere Informationen finden Sie unter [Aktivieren von Skype for Business Online für die moderne Authentifizierung ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx), um Sie zu deaktivieren.
+- Standardmäßig **aktiviert für Skype for Business Online** . Weitere Informationen finden Sie unter [Aktivieren von Skype for Business Online für die moderne Authentifizierung ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx), um Sie zu deaktivieren.
 
 > [!NOTE]
-> Für Mandanten, die **vor dem** 1. August 2017 erstellt wurden, **** ist die moderne Authentifizierung für Exchange Online und Skype for Business Online standardmäßig deaktiviert.
+> Für Mandanten, die **vor dem** 1. August 2017 erstellt wurden, **ist die moderne** Authentifizierung für Exchange Online und Skype for Business Online standardmäßig deaktiviert.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Anmeldeverhalten von Office-Client-apps
 
@@ -60,7 +62,7 @@ Klicken Sie auf die Links unten, um zu sehen, wie Office 2013-und Office 2016-Cl
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
-- [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
+- [SharePoint Online](modern-auth-for-office-2013-and-2016.md#BK_SharePointOnline)
     
 - [Skype for Business Online](modern-auth-for-office-2013-and-2016.md#BK_SFBO)
     
@@ -110,3 +112,5 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
 [Planen der mehrstufigen Authentifizierung für Office 365 Bereitstellungen (für Office 365 Administratoren)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
 
 [Anmelden bei Office 365 mit zweistufiger Überprüfung (für Endbenutzer)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+
+[Übersicht zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -17,14 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
-ms.openlocfilehash: 572910f2104ecd90e78bcfe37b2b022ddb3893fa
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616778"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428142"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
+
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
 
 Dieser Artikel enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
   
@@ -75,9 +77,9 @@ Lesen Sie die folgenden bewährten Methoden, um weitere Informationen zum Verbes
     
 3. Verbessern der e-Mail-Migrationsleistung durch sorgfältiges Verwalten des Zeitplans für Windows-Updates Sie können Ihre Clientcomputer in Batches aktualisieren und sicherstellen, dass alle Clientcomputer vor der Migration zu Office 365 aktualisiert werden, um die Verwendung der Netzwerkbandbreite zu regulieren. Weitere Informationen finden Sie unter [Manuelles Aktualisieren und Konfigurieren von Desktops für Office 365 für die neuesten Updates](https://support.microsoft.com/gp/office-2013-365-update).
     
-4. Office 365 Netzwerkdatenverkehr funktioniert am besten, wenn er als vertrauenswürdiger Internetdienst behandelt wird und den Großteil der herkömmlichen Filterung und Überprüfung umgehen kann, die einige Organisationen im Netzwerkdatenverkehr an nicht vertrauenswürdige Internetdienste platzieren. Dies umfasst normalerweise das Entfernen der ausgehenden Verarbeitung wie Proxybenutzer Authentifizierung und Paketüberprüfung sowie das Sicherstellen des lokalen Ausstiegs ins Internet mit der richtigen Netzwerkadressübersetzung (Network Address Translation, NAT) und genügend Bandbreitenkapazität zur Verarbeitung der erhöhten Netzwerkanforderungen. Weitere Anleitungen zum Konfigurieren Ihres Netzwerks für die Verarbeitung von Office 365 als vertrauenswürdigen Internet Dienst in Ihrem Netzwerk erhalten Sie unter [Managing Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)Endpunkte.
+4. Office 365 Netzwerkdatenverkehr funktioniert am besten, wenn er als vertrauenswürdiger Internetdienst behandelt wird und den Großteil der herkömmlichen Filterung und Überprüfung umgehen kann, die einige Organisationen im Netzwerkdatenverkehr an nicht vertrauenswürdige Internetdienste platzieren. Dies umfasst normalerweise das Entfernen der ausgehenden Verarbeitung wie Proxybenutzer Authentifizierung und Paketüberprüfung sowie das Sicherstellen des lokalen Ausstiegs ins Internet mit der richtigen Netzwerkadressübersetzung (Network Address Translation, NAT) und genügend Bandbreitenkapazität zur Verarbeitung der erhöhten Netzwerkanforderungen. Weitere Anleitungen zum Konfigurieren Ihres Netzwerks für die Verarbeitung von Office 365 als vertrauenswürdigen Internet Dienst in Ihrem Netzwerk erhalten Sie unter [Managing Office 365 Endpunkte](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a).
     
-1. Sicherstellen der [Verwaltung von Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)Endpunkten Der zusätzliche Datenverkehr, der Office 365 wird, führt zu einer erhöhten Zahl ausgehender Proxyverbindungen sowie zu einer erhöhten Sicherheit des Datenverkehrs über TLS/SSL.
+1. Sicherstellen der [Verwaltung von Office 365 Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a) Der zusätzliche Datenverkehr, der Office 365 wird, führt zu einer erhöhten Zahl ausgehender Proxyverbindungen sowie zu einer erhöhten Sicherheit des Datenverkehrs über TLS/SSL.
     
 2. Wenn Ihre ausgehenden Proxybenutzer Authentifizierung erfordern, treten möglicherweise eine langsame Konnektivität oder ein Funktionsverlust auf. Durch Umgehung der Authentifizierungsanforderung für die Office 365 Domänen kann dieser Aufwand reduziert werden.
     
@@ -112,3 +114,6 @@ Diese Themen enthalten ausführliche Office 365 Netzwerk Referenzinformationen.
     
 - [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
  
+## <a name="see-also"></a>Siehe auch
+
+[Übersicht zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

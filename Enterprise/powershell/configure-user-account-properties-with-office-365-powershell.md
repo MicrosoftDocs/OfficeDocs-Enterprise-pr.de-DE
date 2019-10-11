@@ -15,12 +15,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 'Zusammenfassung: Informationen zum Verwenden von Office 365 PowerShell zum Konfigurieren der Eigenschaften für einzelne oder mehrere Benutzerkonten in Ihrem Office 365-Mandanten.'
-ms.openlocfilehash: 3d81a7e5860b086fd411e8e6fcaab44568e890d5
-ms.sourcegitcommit: 4d29b00a57c22225f2cdd592064ee8b6e575fceb
+ms.openlocfilehash: 40d7e78b3fd6c011f6c53b2af433f258b888d5bb
+ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "37411514"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37435349"
 ---
 # <a name="configure-user-account-properties-with-office-365-powershell"></a>Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell
 
@@ -72,10 +72,7 @@ Sie identifizieren das Konto mit dem **-ObjectID**-Parameter und legen bestimmte
     
 Informationen zu weiteren Parametern finden Sie unter [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0).
 
->[!Note]
-> Sie legen die **Mail** -Eigenschaft mit dem **-OtherMails-** Parameter fest.
->
- 
+
 Führen Sie den folgenden Befehl aus, um den Benutzerprinzipalnamen für Ihre Benutzerkonten anzuzeigen.
   
 ```
@@ -191,10 +188,6 @@ Sie identifizieren das Konto mit dem **-UserPrincipalName**-Parameter und legen 
     
 Informationen zu weiteren Parametern finden Sie unter [Set-MsolUser](https://msdn.microsoft.com/library/azure/dn194136.aspx).
 
->[!Note]
-> Sie legen die **Mail** -Eigenschaft mit dem **-AlternateEmailAddresses-** Parameter fest.
->
- 
 Führen Sie den folgenden Befehl aus, um die Benutzerprinzipalnamen aller Benutzer anzuzeigen.
   
 ```

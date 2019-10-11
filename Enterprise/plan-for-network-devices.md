@@ -16,17 +16,19 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Zusammenfassung: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.'
-ms.openlocfilehash: b6804e7922178a3b653b3767a33e02e2a382ef93
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722624"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428102"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen
 
- **Zusammenfassung**: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
   
+**Zusammenfassung**: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.
+
 Einige Netzwerkhardware kann Einschränkungen hinsichtlich der Anzahl gleichzeitiger Sitzungen haben, die unterstützt werden. Für Organisationen mit mehr als 2.000 Benutzern wird empfohlen, dass Sie Ihre Netzwerkgeräte überwachen, um sicherzustellen, dass Sie den zusätzlichen Office 365 Dienst Datenverkehr verarbeiten können. Die SNMP-Überwachungssoftware (Simple Network Management Protocol) kann Ihnen dabei helfen.
 
 ||
@@ -66,8 +68,10 @@ Wir bieten eine softwarebasierte NLB-Lösung, die in Windows Server integriert i
   
 ## <a name="firewalls-and-proxies"></a>Firewalls und Proxys
 
-Weitere Informationen zum Konfigurieren von Firewalls und Proxys für die Verbindung mit Office 365 finden Sie unter [Managing Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)Endpoints, [Bewertung Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)und [Office 365](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) Endpunkten, um mehr über Geräte und Schaltkreise zu erfahren. Auswahl.
+Weitere Informationen zum Konfigurieren von Firewalls und Proxys für die Verbindung mit Office 365 finden Sie unter [Managing Office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Bewertung Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)und [Office 365 Endpunkten](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) , um mehr über Geräte und Schaltkreise zu erfahren. Auswahl.
   
 ## <a name="see-also"></a>Siehe auch
 
 [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
+
+[Übersicht zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

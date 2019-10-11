@@ -5,6 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
+ms.date: 05/20/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.custom: Adm_O365
@@ -16,17 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Office 365, Active Directory-Domänendienste Bereinigung und dem Azure Active Directory Connect-Tool.
-ms.openlocfilehash: 31fcd8baaccabf5d3f4f0cf47c7573c43f7cd40b
-ms.sourcegitcommit: 47c6156c0038745103b71f44b2a3b103c62e5d6e
+ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
+ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34102492"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37428114"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Office 365
 
-Je nach geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Office 365 übernehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Office 365 Abonnements synchronisiert.
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
 
+Je nach geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Office 365 übernehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Office 365 Abonnements synchronisiert.
 
 >[!Note]
 >Wenn AD DS Benutzerkonten zum ersten Mal synchronisiert werden, wird Ihnen nicht automatisch eine Office 365 Lizenz zugewiesen, und es kann nicht auf Office 365 Dienste wie e-Mail zugegriffen werden. Sie müssen diesen Benutzerkonten entweder einzeln oder dynamisch über eine Gruppenmitgliedschaft eine Lizenz zuweisen.
@@ -103,7 +105,7 @@ Die Verzeichnisbereinigung sollte sich auf die folgenden Aufgaben konzentrieren:
 
 - Entfernen Sie doppelte **proxyAddress** -und **userPrincipalName** -Attribute.
 - Aktualisieren Sie leere und ungültige **userPrincipalName** -Attribute mit gültigen **userPrincipalName** -Attributen.
-- Entfernen von ungültigen und fragwürdigen Zeichen im **angegebenen**Namen, Nachnamen ( **SN** ), **sAMAccountName**, **DisplayName**, **Mail**, **proxyAddresses**, mailNickname und **userPrincipalName** **** Attribute. Ausführliche Informationen zum Vorbereiten von Attributen finden Sie unter [Liste der Attribute, die mit dem Azure Active Directory Sync-Tool synchronisiert werden](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Entfernen von ungültigen und fragwürdigen Zeichen im **angegebenen**Namen, Nachnamen ( **SN** ), **sAMAccountName**, **DisplayName**, **Mail**, **proxyAddresses**, **mailNickname**und **userPrincipalName** Attribute. Ausführliche Informationen zum Vorbereiten von Attributen finden Sie unter [Liste der Attribute, die mit dem Azure Active Directory Sync-Tool synchronisiert werden](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Dabei handelt es sich um dieselben Attribute, die Azure AD Connect synchronisiert. 
@@ -143,4 +145,7 @@ Die Verzeichnissynchronisierung ist für die folgenden Features und Funktionen e
 
 Wenn Sie bereit sind, die Hybrid Identität bereitzustellen, lesen Sie [Vorbereiten der Bereitstellung von Benutzern](prepare-for-directory-synchronization.md).
   
+## <a name="see-also"></a>Siehe auch
+
+[Übersicht zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
 
