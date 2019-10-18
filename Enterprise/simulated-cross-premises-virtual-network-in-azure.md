@@ -79,7 +79,7 @@ In dieser Phase erstellen und konfigurieren Sie das neue virtuelle XPrem-Netzwer
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung auf dem lokalen Computer.
   
 > [!NOTE]
-> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/de-DE/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Melden Sie sich bei Ihrem Azure-Konto mit diesem Befehl an.
   

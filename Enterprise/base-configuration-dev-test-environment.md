@@ -113,7 +113,7 @@ In diesem Schritt, erstellen Sie das virtuelle Netzwerk „TestLab“ in Azure.
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung.
   
 > [!NOTE]
-> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/de-DE/powershell/azureps-cmdlets-docs/). 
+> In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Erste Schritte mit Azure PowerShell-Cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
   
 Melden Sie sich mit dem folgenden Befehl bei Ihrem Azure-Konto an.
   

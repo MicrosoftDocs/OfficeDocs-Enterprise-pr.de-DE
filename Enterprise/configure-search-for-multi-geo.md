@@ -85,7 +85,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Das dynamische Zuordnen von Buckets für numerische Einschränkungen wird von der Multi-Geo-Suche nicht unterstützt.</td>
-<td align="left">Verwenden Sie den <a href="https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/query-refinement-in-sharepoint">„Discretize“-Parameter</a> für numerische Einschränkungen.</td>
+<td align="left">Verwenden Sie den <a href="https://docs.microsoft.com/en-us/sharepoint/dev/general-development/query-refinement-in-sharepoint">„Discretize“-Parameter</a> für numerische Einschränkungen.</td>
 </tr>
 <tr class="even">
 <td align="left">Dokument-IDs</td>
@@ -172,7 +172,7 @@ Benutzerdefinierte Anwendungen rufen Ergebnisse von allen oder einigen geografis
 
 **Anforderung**
 
-Sie müssen für jeden geografischen Standort sicherstellen, dass allen Benutzer in der Organisation die Berechtigungsstufe **Lesen** für die Stammwebsite erteilt wurde (z. B. contoso**APAC**.sharepoint.com/ und contoso**EU**.sharepoint.com/). [Weitere Informationen zu Berechtigungen](https://support.office.com/de-DE/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Sie müssen für jeden geografischen Standort sicherstellen, dass allen Benutzer in der Organisation die Berechtigungsstufe **Lesen** für die Stammwebsite erteilt wurde (z. B. contoso**APAC**.sharepoint.com/ und contoso**EU**.sharepoint.com/). [Weitere Informationen zu Berechtigungen](https://support.office.com/en-us/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Abfrageparameter
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration – Dies ist eine optionale Liste mit geografischen 
 </tbody>
 </table>
 
-Wenn Sie DataLocation oder Endpunkt weglassen, oder wenn DataLocation doppelt vorhanden ist, tritt bei der Anforderung ein Fehler auf. [Informationen zu dem Endpunkt von geografischen Standorten eines Mandanten können Sie mithilfe von Microsoft Graph](https://docs.microsoft.com/de-DE/sharepoint/dev/solution-guidance/multigeo-discovery) abrufen.
+Wenn Sie DataLocation oder Endpunkt weglassen, oder wenn DataLocation doppelt vorhanden ist, tritt bei der Anforderung ein Fehler auf. [Informationen zu dem Endpunkt von geografischen Standorten eines Mandanten können Sie mithilfe von Microsoft Graph](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/multigeo-discovery) abrufen.
 
 ### <a name="response-data"></a>Antwortdaten
 
