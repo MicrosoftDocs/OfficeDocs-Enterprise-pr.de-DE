@@ -3,7 +3,7 @@ title: Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 09/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung für die Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: 9cee3ae308b5dc7e97b8711a9b021869478a47b4
-ms.sourcegitcommit: ed9d80a7b4acc42065c94155122f0cdb86dccde6
+ms.openlocfilehash: c2cb4bcd9085cd8dd91df5de2ad936076d11432c
+ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "37046990"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37207391"
 ---
 # <a name="federated-identity-for-your-office-365-devtest-environment"></a>Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -189,13 +189,10 @@ Im nächsten Schritt arbeiten Sie mit Ihrem öffentlichen DNS-Anbieter und erste
 Im nächsten Schritt stellen Sie über das [Azure-Portal](http://portal.azure.com) eine Verbindung mit dem virtuellen Computer DC1 unter Verwendung der Anmeldeinformationen „CORP\\User1“ her und führen dann die folgenden Befehle an einer Windows PowerShell-Eingabeaufforderung auf Administratorebene aus:
   
 ```
-$testZone="<the FQDN of your testlab domain from phase 1, example: testlab.contoso.com>"
-$testZoneFile= $testZone + ".dns"
-Add-DnsServerPrimaryZone -Name $testZone -ZoneFile $testZoneFile
-Add-DnsServerResourceRecordA -Name "fs" -ZoneName $testZone -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
+Add-DnsServerPrimaryZone -Name corp.contoso.com -ZoneFile corp.contoso.com.dns
+Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateAny -IPv4Address "10.0.0.100" -TimeToLive 01:00:00
 ```
-
-Diese Befehle erstellen einen DNS-A-Eintrag für den FQDN des Verbunddiensts, den virtuelle Computer im virtuellen Azure-Netzwerk in die private IP-Adresse von ADFS1 auflösen können.
+Diese Befehle erstellen einen internen DNS-A-Eintrag, sodass virtuelle Computer im virtuellen Azure-Netzwerk den internen FQDN des Verbunddiensts in die private IP-Adresse von ADFS1 auflösen können.
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
@@ -414,7 +411,7 @@ Gehen Sie folgendermaßen vor, um zu zeigen, dass die Verbundauthentifizierung f
     
 2. Geben Sie als Anmeldeinformationen **user1@**\<die in Phase 1 erstellte Domäne> ein.  
     
-    Wenn Ihre Testdomäne beispielsweise **testlab.contoso.com** ist, geben Sie **user1@testlab.contoso.com** ein. Drücken Sie die TAB-TASTE, oder lassen Sie sich von Office 365 automatisch weiterleiten.
+    Wenn Ihre Testdomäne beispielsweise **testlab.contoso.com** ist, geben Sie "user1@testlab.contoso.com" ein. Drücken Sie die TAB-TASTE, oder lassen Sie sich von Office 365 automatisch weiterleiten.
     
     Jetzt sollten Sie die Seite **Die Verbindung ist nicht privat** sehen. Dies wird angezeigt, weil Sie ein selbstsigniertes Zertifikat auf ADFS1 installiert haben, das der Desktopcomputer nicht überprüfen kann. In einer Produktionsbereitstellung der Verbundauthentifizierung würden Sie ein Zertifikat von einer vertrauenswürdigen Zertifizierungsstelle verwenden, und Ihre Benutzer würden diese Seite nicht sehen.
     
