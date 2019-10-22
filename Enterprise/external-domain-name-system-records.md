@@ -3,7 +3,7 @@ title: Externe DNS-Einträge für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 8/13/2019
+ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: 665e5aebee6546ceaa3275249da1bcaac6eb0ba2
-ms.sourcegitcommit: 74b6d9fc3ce0873e8564fc4de51fe3afeb122447
+ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
+ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37387052"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37616138"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -45,7 +45,7 @@ Jeder Office 365-Kunde muss zwei Einträge zu seinem externen DNS hinzufügen. D
 ||||
 |:-----|:-----|:-----|
 |**DNS-Eintrag** <br/> |**Zweck** <br/> |**Zu verwendender Wert** <br/> |
-|**CNAME** <br/> **(Suite)** <br/> |Von Office 365 zum Weiterleiten der Authentifizierung an die richtige Identitätsplattform verwendet. [Weitere Informationen](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Hinweis:** Dieser CNAME gilt nur für Office 365, betrieben von 21Vianet.   |**Alias:** msoID  <br/> **Target (Ziel):** clientconfig.microsoftonline-p.net  <br/> |
+|**CNAME** <br/> **(Suite)** <br/> |Von Office 365 zum Weiterleiten der Authentifizierung an die richtige Identitätsplattform verwendet. [Weitere Informationen](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Hinweis:** Dieser CNAME gilt nur für Office 365, betrieben von 21Vianet.   |**Alias:** msoID  <br/> **Ziel:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Domänenüberprüfung)** <br/> |Von Office 365 ausschließlich zur Überprüfung verwendet, ob Sie der Besitzer Ihrer Domäne sind. Dieser Wert hat keine weiteren Auswirkungen.  <br/> |**Host:** @ (oder, bei einigen DNS-Hostinganbietern, Ihr Domänenname)  <br/> **TXT Value (TXT-Wert):** _Eine von_ Office 365 bereitgestellte Textzeichenfolge  <br/> Der Office 365-Assistent zur **Domäneneinrichtung** stellt die Werte zur Verfügung, die Sie zum Erstellen dieses Eintrags verwenden.  <br/> |
 
 
