@@ -3,7 +3,7 @@ title: Netzwerke für die Inhaltsübermittlung
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2019
+ms.date: 10/22/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Anhand dieser Informationen erfahren Sie, wie Office 365 mithilfe von Inhalts Zustellungs Netzwerken (CDNs) die Leistung verbessern.
-ms.openlocfilehash: 080e4bac5f77defc9fd87f22c0f2cb1466dc8945
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: a65e83c6063dcd5102dabb6be5ba76029aff6c85
+ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722664"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37643288"
 ---
 # <a name="content-delivery-networks-cdns"></a>Inhalts Übermittlungs Netzwerke (CDNs)
 
@@ -37,7 +37,7 @@ CDNs werden von den meisten Enterprise-Cloud-Diensten verwendet. Cloud-Dienste w
 
 ## <a name="how-do-cdns-make-services-work-faster"></a>Wie können CDNs Dienste schneller arbeiten?
 
-Wenn Sie häufig verwendete Objekte wie Symbole immer wieder herunterladen, kann dies eine Netzwerkbandbreite sein, die für das Herunterladen wichtiger persönlicher Inhalte wie e-Mail oder Dokumente besser verwendet werden kann. Da Office 365 eine Architektur mit CDNs verwendet, können die Symbole, Skripts und anderen generischen Inhalte von Servern heruntergeladen werden, die den Clientcomputern näher sind, wodurch die Downloads schneller werden. Dies bedeutet einen schnelleren Zugriff auf Ihre persönlichen Inhalte, der sicher in Office 365-Rechenzentren gespeichert wird.
+Wenn Sie häufig verwendete Objekte wie Website Bilder und Symbole immer wieder herunterladen, kann dies eine Netzwerkbandbreite sein, die für das Herunterladen wichtiger persönlicher Inhalte wie e-Mail oder Dokumente besser verwendet werden kann. Da Office 365 eine Architektur mit CDNs verwendet, können die Symbole, Skripts und anderen generischen Inhalte von Servern heruntergeladen werden, die den Clientcomputern näher sind, wodurch die Downloads schneller werden. Dies bedeutet einen schnelleren Zugriff auf Ihre persönlichen Inhalte, der sicher in Office 365-Rechenzentren gespeichert wird.
 
 CDNs hilft, die Leistung des Cloud-Diensts auf verschiedene Arten zu verbessern:
 
@@ -50,21 +50,21 @@ CDNs hilft, die Leistung des Cloud-Diensts auf verschiedene Arten zu verbessern:
 Das integrierte Office 365 Inhalts Bereitstellungsnetzwerk (CDN) ermöglicht es Office 365 Administratoren, eine bessere Leistung für die SharePoint Online Seiten Ihrer Organisation bereitzustellen, indem statische Objekte näher an den Browsern, die Sie anfordern, zwischengespeichert werden, wodurch die Geschwindigkeit erhöht wird. herunterladen und verringern der Wartezeit Das Office 365 CDN verwendet das [http/2-Protokoll](https://en.wikipedia.org/wiki/HTTP/2) , um die Komprimierung und Downloadgeschwindigkeit zu verbessern.
 
 > [!NOTE]
-> Einschränkungen für die Verwendung des Office 365 CDN:
-> + Das Office 365 CDN steht nur Mandanten in der **Produktionsumgebung** (weltweit) zur Verfügung. Die Mandanten in der US-Regierung, in China und in Deutschland unterstützen derzeit nicht die Office 365 CDN.
-> + Das Office 365 CDN unterstützt derzeit keine Mandanten, die mit benutzerdefinierten oder "Vanity"-Domänen konfiguriert sind. Wenn Sie Ihrem Mandanten mithilfe der Anweisungen im Thema [Hinzufügen einer Domäne zu Office 365](https://docs.microsoft.com/en-us/office365/admin/setup/add-domain?view=o365-worldwide)eine Domäne hinzugefügt haben, gibt das Office 365 CDN Fehler zurück, wenn Sie versuchen, auf Inhalte aus dem CDN zuzugreifen.
+> Das Office 365 CDN steht nur Mandanten in der **Produktionsumgebung** (weltweit) zur Verfügung. Die Mandanten in der US-Regierung, in China und in Deutschland unterstützen derzeit nicht die Office 365 CDN.
 
 Das Office 365-Netzwerk für die Inhaltsübermittlung besteht aus mehreren CDNs, über die Sie statische Objekte an mehreren Speicherorten hosten können, oder aus _Ursprüngen_, die aus globalen Hochgeschwindigkeitsnetzwerken bedient werden. In Abhängigkeit von der Art der Inhalte, die Sie im Office 365-Netzwerk für die Inhaltsübermittlung hosten möchten, können Sie **öffentliche** Ursprünge, **private** Ursprünge oder beides hinzufügen.
 
-![Office 365 CDN-konzeptionelles Diagramm] (media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN-konzeptionelles Diagramm")
+![Office 365 CDN-konzeptionelles Diagramm](media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN-konzeptionelles Diagramm")
 
 Auf Inhalte in **öffentlichen** Ursprüngen im Office 365-Netzwerk für die Inhaltsübermittlung kann anonym zugegriffen werden und von jeder Person, die URLs zu gehosteten Objekten aufweist. Da der Zugriff auf Inhalte in öffentlichen Ursprüngen anonym ist, sollten Sie diese nur zum Zwischenspeichern von nicht vertraulichen generischen Inhalten verwenden, z. B. JavaScript-Dateien, Skripts, Symbole oder Bilder. Das Office 365-Netzwerk für die Inhaltsübermittlung wird standardmäßig zum Herunterladen von allgemeinen Ressourcenobjekten verwenden, z. B. die Office 365-Clientanwendungen von einem öffentlichen Ursprung.
 
-**Private** Ursprünge im Office 365-Netzwerk für die Inhaltsübermittlung bieten privaten Zugriff auf Benutzerinhalte, z. B. SharePoint Online-Dokumentbibliotheken, Websites und Medien wie Videos. Der Zugriff auf Inhalte in private Ursprüngen wird mit dynamisch generierten Token geschützt, auf diese Inhalte kann daher nur von Benutzern mit Berechtigungen für die ursprüngliche Dokumentbibliothek oder den ursprünglichen Speicherort zugegriffen werden. Private Ursprünge Office 365-Netzwerk für die Inhaltsübermittlung können nur für SharePoint Online-Inhalte verwendet werden, und Sie können auf Objekte nur über Umleitung von Ihrem SharePoint Online-Mandanten zugreifen.
+**Private** Ursprünge im Office 365 CDN bieten privaten Zugriff auf Benutzer Inhalte wie SharePoint Online Dokumentbibliotheken, Websites und proprietäre Bilder. Der Zugriff auf Inhalte in private Ursprüngen wird mit dynamisch generierten Token geschützt, auf diese Inhalte kann daher nur von Benutzern mit Berechtigungen für die ursprüngliche Dokumentbibliothek oder den ursprünglichen Speicherort zugegriffen werden. Private Ursprünge Office 365-Netzwerk für die Inhaltsübermittlung können nur für SharePoint Online-Inhalte verwendet werden, und Sie können auf Objekte nur über Umleitung von Ihrem SharePoint Online-Mandanten zugreifen.
 
 Das Office 365-Netzwerk für die Inhaltsübermittlung ist in Ihrem SharePoint Online-Abonnement enthalten.
 
 Weitere Informationen zur Verwendung des Office 365 CDN finden Sie unter [Verwenden des Office 365 Inhalts Zustellungs Netzwerks mit SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo).
+
+Wenn Sie eine Reihe von kurzen Videos sehen möchten, die konzeptionelle und howto-Informationen zur Verwendung des Office 365 CDN bereitstellen, besuchen Sie den [YouTube-Kanal SharePoint Developer Patterns and Practices](https://aka.ms/sppnp-videos).
 
 ## <a name="other-microsoft-cdns"></a>Andere Microsoft-CDNs
 
@@ -110,7 +110,7 @@ Das CDN stellt das nächstgelegene Rechenzentrum für den Browser des Benutzers 
 
 ## <a name="how-should-i-set-up-my-network-so-that-cdns-work-best-with-office-365"></a>Wie richte ich mein Netzwerk so ein, dass CDNs am besten mit Office 365 funktioniert?
 
-Das Minimieren der Wartezeit zwischen Clients in Ihrem Netzwerk und CDN-Endpunkten ist die zentrale Überlegung, um eine optimale Leistung sicherzustellen. Sie können die in [Managing Office 365](managing-office-365-endpoints.md) Endpoints beschriebenen bewährten Methoden verwenden, um sicherzustellen, dass die Netzwerkkonfiguration es Clientbrowsern ermöglicht, direkt auf das CDN zuzugreifen, statt den Datenverkehr über zentrale Proxys weiterzuleiten, um die Einführung von unnötige Wartezeit.
+Das Minimieren der Wartezeit zwischen Clients in Ihrem Netzwerk und CDN-Endpunkten ist die zentrale Überlegung, um eine optimale Leistung sicherzustellen. Sie können die in [Managing Office 365 Endpoints](managing-office-365-endpoints.md) beschriebenen bewährten Methoden verwenden, um sicherzustellen, dass die Netzwerkkonfiguration es Clientbrowsern ermöglicht, direkt auf das CDN zuzugreifen, statt den Datenverkehr über zentrale Proxys weiterzuleiten, um die Einführung von unnötige Wartezeit.
 
 Sie können auch Office 365 Grundlegendes zur [Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) lesen, um die Konzepte für die Optimierung Office 365 Netzwerkleistung zu verstehen.
 
@@ -118,7 +118,7 @@ Sie können auch Office 365 Grundlegendes zur [Netzwerkkonnektivität](https://a
 
 Die CDNs, die von Office 365 verwendet werden, können immer geändert werden, und in vielen Fällen sind mehrere CDN-Partner in dem Fall konfiguriert, dass eine nicht verfügbar ist. Der primäre CDNs, der von Office 365 verwendet wird, sind:
 
-|CDN  |Company  |Verwendung  |Link  |
+|CDN  |Company  |Verwendung  |Linkdatenbank  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |Generische Objekte im öffentlichen Ursprung, SharePoint-Benutzer Inhalte in privater Herkunft         |[Verwenden des Office 365 Content Delivery Network mit SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)         |
 |Azure CDN     |Microsoft         |Benutzerdefinierter Code, SharePoint-Framework-Lösungen         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
@@ -159,7 +159,7 @@ Ausführliche Informationen zu Datenschutz und Datenschutz für Office 365 CDN-A
 
 Durch die Nutzung einer umfassenden Gruppe von Partnerdiensten können Office 365 die Anforderungen an die Verfügbarkeit skalieren und erfüllen sowie die Benutzerfreundlichkeit bei der Verwendung von Office 365 verbessern. Zu den von Office 365 genutzten Drittanbieterdiensten gehören sowohl Zertifikatsperrlisten als auch wie CRL.Microsoft.com oder SA.symcb.com und CDNs; wie R3.res.Outlook.com. Jeder von Office 365 generierte CDN-FQDN ist ein benutzerdefinierter FQDN für Office 365. Wenn Sie auf Anforderung von Office 365 an einen FQDN gesendet werden, können Sie sicher sein, dass der CDN-Anbieter den FQDN und den zugrunde liegenden Inhalt an diesem Speicherort steuert.
   
-Für Kunden, die Anforderungen für ein Microsoft-oder Office 365-Rechenzentrum aus Anforderungen abtrennen möchten, die für einen Drittanbieter bestimmt sind, haben wir Anleitungen zum [Verwalten von Office 365](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)Endpunkten verfasst.
+Für Kunden, die Anforderungen für ein Microsoft-oder Office 365-Rechenzentrum aus Anforderungen abtrennen möchten, die für einen Drittanbieter bestimmt sind, haben wir Anleitungen zum [Verwalten von Office 365 Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)verfasst.
 
 ## <a name="is-there-a-list-of-all-the-fqdns-that-leverage-cdns"></a>Gibt es eine Liste aller FQDNs, die CDNs nutzen?
 
@@ -187,7 +187,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365
 
 [Prinzipien von Office 365-Netzwerkverbindungen](https://aka.ms/o365networkingprinciples)
 
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
 
 [Verwalten von Office 365-Endpunkten](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
 
@@ -196,3 +196,5 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365
 [Verwenden des Office 365 Content Delivery Network mit SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/use-office-365-cdn-with-spo)
 
 [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
+
+[Optimieren der Leistung von Office 365](tune-office-365-performance.md)
