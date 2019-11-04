@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie mit Gästen in Microsoft Teams zusammenarbeiten.
-ms.openlocfilehash: 9a169e33a9cbd8f079966443bd3d830aa79f4971
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 6a50331b5badcd2534052f04193300b427bafd57
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36992414"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920158"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -21,13 +21,19 @@ Wenn Sie mit Gästen in Dokumenten, Aufgaben und Unterhaltungen zusammenarbeiten
 
 In diesem Artikel werden die Microsoft 365-Konfigurationsschritte durchlaufen, die erforderlich sind, um ein Team für die Zusammenarbeit mit Gästen einzurichten.
 
+## <a name="video-demonstration"></a>Videodemonstration
+
+Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44NTr?autoplay=false]
+
 ## <a name="azure-organizational-relationships-settings"></a>Azure Organizational Relationships-Einstellungen
 
 Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die Einstellungen für organisatorische Beziehungen in Azure Active Directory gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, werden alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren, außer Kraft gesetzt.
 
 Überprüfen Sie die Einstellungen für Organisationsbeziehungen, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
 
-![Screenshot der Azure Active Directory-Seite "Organisationsbeziehungen – Einstellungen"](media/azure-ad-organizational-relationships-settings.png)
+![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](media/azure-ad-organizational-relationships-settings.png)
 
 So legen Sie Einstellungen für die Organisationsbeziehung fest
 
@@ -46,7 +52,7 @@ Teams verfügt über einen Master ein/aus-Schalter für Gastzugriff und eine Vie
 
 Stellen Sie sicher, dass der Gastzugriff in Microsoft Teams aktiviert ist, und nehmen Sie entsprechend Ihren geschäftlichen Anforderungen eine Anpassung an die Gast Einstellungen vor. Beachten Sie, dass sich diese Einstellungen auf alle Teams auswirken.
 
-![Screenshot der Microsoft Teams-Gastzugriffs-Umschaltfläche](media/teams-guest-access-toggle-on.png)
+![Screenshot der Teams-Umschaltfläche für den Gastzugriff](media/teams-guest-access-toggle-on.png)
 
 So legen Sie die Einstellungen für den Gastzugriff für Teams fest
 
@@ -64,7 +70,7 @@ So legen Sie die Einstellungen für den Gastzugriff für Teams fest
 
 Teams verwendet Office 365 Gruppen für die Teammitgliedschaft. Die Gast Einstellungen für die Office 365 Gruppen müssen aktiviert sein, damit der Gastzugriff in Microsoft Teams funktioniert.
 
-![Screenshot von Office 365-Gruppen-Gast Einstellungen im Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
+![Screenshot der Gasteinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
 
 So legen Sie die Gast Einstellungen für Office 365 Gruppen fest
 
@@ -77,7 +83,7 @@ So legen Sie die Gast Einstellungen für Office 365 Gruppen fest
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint-Freigabeeinstellungen auf Organisationsebene
 
-Damit die Gästezugriff auf Dateien in Microsoft Teams haben, müssen die SharePoint-Freigabeeinstellungen auf Organisationsebene für die Freigabe für Gäste zulässig sein.
+Microsoft Teams-Inhalte wie Dateien, Ordner und Listen werden in SharePoint gespeichert. Damit Gäste auf diese Elemente in Microsoft Teams zugreifen können, müssen die SharePoint-Freigabeeinstellungen auf Organisationsebene für die Freigabe für Gäste zulässig sein.
 
 Mit den Einstellungen auf Organisationsebene wird festgelegt, welche Einstellungen für einzelne Websites verfügbar sind, einschließlich der Websites, die Microsoft Teams zugeordnet sind. Websiteeinstellungen dürfen nicht so restriktiv wie die Einstellungen auf Organisationsebene sein.
 
@@ -89,7 +95,7 @@ Wenn Sie die Datei-und Ordnerfreigabe für anonyme Benutzer zulassen möchten, w
 So legen Sie Freigabeeinstellungen für SharePoint-Organisationsebene fest
 
 1. Klicken Sie im Microsoft 365 Admin Center in der linken Navigationsleiste unter **Admin Centers**auf **SharePoint**.
-2. Klicken Sie im SharePoint Admin Center im linken Navigationsbereich auf **Freigabe**.
+2. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
 3. Stellen Sie sicher, dass die externe Freigabe für SharePoint auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 4. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -106,7 +112,7 @@ Wählen Sie den Linktyp aus, der standardmäßig ausgewählt ist, wenn Benutzer 
 - **Nur Personen in Ihrer Organisation** – wählen Sie diese Option aus, wenn Sie davon ausgehen, dass die meisten Datei-und Ordner Freigaben für Personen in Ihrer Organisation gelten.
 - **Bestimmte Personen** – diese Option wird empfohlen, wenn Sie eine Vielzahl von Datei-und Ordner Freigaben für Gäste erwarten. Diese Art von Link funktioniert mit Gästen und erfordert die Authentifizierung.
  
-![Screenshot der SharePoint-Freigabeeinstellungen für Dateien und Ordner auf Organisationsebene](media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot der Freigabeeinstellungen auf Organisationsebene für Dateien und Ordner in SharePoint und OneDrive](media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 So legen Sie die Standard Link Einstellungen für die SharePoint-Organisationsebene fest
@@ -133,13 +139,13 @@ Wir laden Benutzer später ein. Als nächstes ist es wichtig, die Freigabeeinste
 
 Überprüfen Sie die Freigabeeinstellungen auf Standortebene, um sicherzustellen, dass die gewünschten Zugriffstypen für dieses Team zulässig sind. Wenn Sie beispielsweise die Einstellungen auf Organisationsebene auf " **jeder**" festlegen, aber alle Gäste sich für dieses Team authentifizieren möchten, stellen Sie sicher, dass die Freigabeeinstellungen auf Standortebene auf " **neu" und "vorhandene Gäste**" festgelegt sind.
 
-![Screenshot der externen Freigabeeinstellungen für SharePoint-Websites](media/sharepoint-site-external-sharing-settings.png)
+![Screenshot der externen SharePoint-Freigabeeinstellungen](media/sharepoint-site-external-sharing-settings.png)
 
 
 So legen Sie Freigabeeinstellungen auf Websiteebene fest
-1. Erweitern Sie im SharePoint Admin Center in der linken Navigationsleiste den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
-2. Wählen Sie die Website für das Team aus, das Sie gerade erstellt haben.
-3. Klicken Sie im Menüband auf **Freigabe**.
+1. Erweitern Sie im SharePoint Admin Center links in der Navigation **Sites** und klicken Sie auf **Aktive Sites**.
+2. Wählen Sie die Site des soeben erstellten Teams aus.
+3. Klicken Sie im Menüband auf **Freigabe**. 
 4. Stellen Sie sicher, dass die Freigabe auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -160,4 +166,11 @@ So laden Sie Gäste zu einem Team ein
 5. Klicken Sie auf **Hinzufügen** und dann auf **Schließen**.
 
 ## <a name="see-also"></a>Siehe auch
+
+[Bewährte Methoden zum Freigeben von Dateien und Ordnern für anonyme Benutzer](best-practices-anonymous-sharing.md)
+
+[Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
+
+[Erstellen einer sicheren Gast Freigabe Umgebung](create-a-secure-guest-sharing-environment.md))
+
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie mit Gästen in einer SharePoint-Website zusammenarbeiten.
-ms.openlocfilehash: 4b68b50fec4322f12c24969bdd71e7d9c0fda245
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
+ms.openlocfilehash: d0f4528db683795da0f3c949228f902d775f6b7e
+ms.sourcegitcommit: f4469fee3e3f9665298d3052f30a4c6ab12643f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017313"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "37920168"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
@@ -21,13 +21,19 @@ Wenn Sie mit Gästen in Dokumenten, Daten und Listen zusammenarbeiten müssen, k
 
 In diesem Artikel werden die Microsoft 365-Konfigurationsschritte durchlaufen, die erforderlich sind, um eine SharePoint-Website für die Zusammenarbeit mit Gästen einzurichten.
 
+## <a name="video-demonstration"></a>Videodemonstration
+
+Dieses Video zeigt die in diesem Dokument beschriebenen Konfigurationsschritte.</br>
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44Llg?autoplay=false]
+
 ## <a name="azure-organizational-relationships-settings"></a>Azure Organizational Relationships-Einstellungen
 
 Die Freigabe in Microsoft 365 wird auf der höchsten Ebene durch die Einstellungen für organisatorische Beziehungen in Azure Active Directory gesteuert. Wenn die Gast Freigabe in Azure AD deaktiviert oder eingeschränkt ist, werden alle Freigabeeinstellungen, die Sie in Microsoft 365 konfigurieren, außer Kraft gesetzt.
 
 Überprüfen Sie die Einstellungen für Organisationsbeziehungen, um sicherzustellen, dass die Freigabe für Gäste nicht blockiert wird.
 
-![Screenshot der Azure Active Directory-Seite "Organisationsbeziehungen – Einstellungen"](media/azure-ad-organizational-relationships-settings.png)
+![Screenshot der Seite mit den Einstellungen für die Azure Active Directory-Organisationsbeziehungen](media/azure-ad-organizational-relationships-settings.png)
 
 So legen Sie Einstellungen für die Organisationsbeziehung fest
 
@@ -44,7 +50,7 @@ Beachten Sie die Einstellungen im Abschnitt Einschränkungen für die **Zusammen
 
 Moderne SharePoint-Websites verwenden Office 365 Gruppen, um den Website Zugriff zu steuern. Die Gast Einstellungen für Office 365 Gruppen müssen aktiviert sein, damit der Gastzugriff auf SharePoint-Websites funktioniert.
 
-![Screenshot von Office 365-Gruppen-Gast Einstellungen im Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
+![Screenshot der Gasteinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
 
 So legen Sie die Gast Einstellungen für Office 365 Gruppen fest
 
@@ -69,7 +75,7 @@ Wenn Sie die Datei-und Ordnerfreigabe für anonyme Benutzer zulassen möchten, w
 So legen Sie Freigabeeinstellungen für SharePoint-Organisationsebene fest
 
 1. Klicken Sie im Microsoft 365 Admin Center in der linken Navigationsleiste unter **Admin Centers**auf **SharePoint**.
-2. Klicken Sie im SharePoint Admin Center im linken Navigationsbereich auf **Freigabe**.
+2. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
 3. Stellen Sie sicher, dass die externe Freigabe für SharePoint auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 4. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -94,12 +100,12 @@ Wir laden Benutzer später ein. Als nächstes ist es wichtig, die Freigabeeinste
 
 Beachten Sie, dass die Website nicht für anonyme Benutzer (**jede** Einstellung) freigegeben werden kann, aber einzelne Dateien und Ordner können.
 
-![Screenshot der externen Freigabeeinstellungen für SharePoint-Websites](media/sharepoint-site-external-sharing-settings.png)
+![Screenshot der externen SharePoint-Freigabeeinstellungen](media/sharepoint-site-external-sharing-settings.png)
 
 So legen Sie Freigabeeinstellungen auf Websiteebene fest
-1. Erweitern Sie im SharePoint Admin Center in der linken Navigationsleiste den Knoten **Websites** , und klicken Sie dann auf **aktive Standorte**.
+1. Erweitern Sie im SharePoint Admin Center links in der Navigation **Sites** und klicken Sie auf **Aktive Sites**.
 2. Wählen Sie die Website aus, die Sie soeben erstellt haben.
-3. Klicken Sie im Menüband auf **Freigabe**.
+3. Klicken Sie im Menüband auf **Freigabe**. 
 4. Stellen Sie sicher, dass die Freigabe auf " **jeder** " oder " **neue und vorhandene Gäste**" festgelegt ist.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Speichern**.
 
@@ -122,3 +128,10 @@ So laden Sie Gäste zu einer Website ein
 4. Klicken Sie auf **Schließen**.
 
 ## <a name="see-also"></a>Siehe auch
+
+[Bewährte Methoden zum Freigeben von Dateien und Ordnern für anonyme Benutzer](best-practices-anonymous-sharing.md)
+
+[Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
+
+[Erstellen einer sicheren Gast Freigabe Umgebung](create-a-secure-guest-sharing-environment.md))
+
