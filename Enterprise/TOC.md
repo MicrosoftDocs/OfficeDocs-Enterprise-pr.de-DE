@@ -124,7 +124,7 @@
 #### [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md)
 ### [Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)
 
-## [3. Implementieren von Sicherheitsfunktionen](https://docs.microsoft.com/office365/securitycompliance/security-best-practices)
+## [3. Implementieren von Sicherheitsfunktionen](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Bereitstellen von Clientsoftware
 ### [Bereitstellen von Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
