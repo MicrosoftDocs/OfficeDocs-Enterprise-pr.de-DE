@@ -16,12 +16,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Seitenstärke von modernen Websiteseiten in SharePoint Online optimieren können.
-ms.openlocfilehash: 5e2231468363f58faeac1d7b21e06cd4fa790cf8
-ms.sourcegitcommit: c7764503422922cb333b05d54e8ebbdb894df2f9
+ms.openlocfilehash: 3079298781116c2664217f87715303c99e4d26b6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37028212"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032250"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimieren Sie die Seitenstärke von modernen Websiteseiten in SharePoint Online
 
@@ -30,11 +30,11 @@ Die modernen Websiteseiten von SharePoint Online enthalten serialisierten Code, 
 Dieser Artikel wird Ihnen helfen zu verstehen, wie Sie die Seitenstärke in Ihren modernen Websiteseiten reduzieren können.
 
 >[!NOTE]
->Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](https://docs.microsoft.com/de-DE/sharepoint/modern-experience-performance).
+>Weitere Informationen zur Leistung in modernen SharePoint Online-Portalen finden Sie unter [Leistung in der modernen SharePoint-Umgebung](https://docs.microsoft.com/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-weight"></a>Verwenden Sie das Tool „Seitendiagnose für SharePoint“, um die Seitenstärke zu analysieren
 
-Das **Tool für die Seitendiagnose für SharePoint** ist eine Browser-Erweiterung für Chrome und [Microsoft Edge Version 77 oder höher](https://www.microsoftedgeinsider.com/en-us/download?form=MI13E8&OCID=MI13E8), mit denen Sie SharePoint sowohl moderne als auch klassische Veröffentlichungswebsiteseiten analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Um das Tool für die Seitendiagnose für SharePoint zu installieren und kennenzulernen, besuchen Sie das [Tool Seitendiagnose für SharePoint Online verwenden](page-diagnostics-for-spo.md).
+Das **Tool für die Seitendiagnose für SharePoint** ist eine Browser-Erweiterung für Chrome und [Microsoft Edge Version 77 oder höher](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), mit denen Sie SharePoint sowohl moderne als auch klassische Veröffentlichungswebsiteseiten analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Um das Tool für die Seitendiagnose für SharePoint zu installieren und kennenzulernen, besuchen Sie das [Tool Seitendiagnose für SharePoint Online verwenden](page-diagnostics-for-spo.md).
 
 Wenn Sie eine SharePoint-Websiteseite mit dem Tool für die Seitendiagnose für SharePoint analysieren, sehen Sie Informationen über die Seite im Ergebnis **Seitenstärke unter 500 KB** des Bereichs _Diagnosetests_. Das Ergebnis wird grün angezeigt, wenn die Seitenstärke unter dem Basiswert liegt, und rot, wenn die Seitenstärke den Basiswert überschreitet.
 
@@ -60,7 +60,7 @@ Allgemeine Anleitungen zum Reduzieren der Seitenstärke umfassen:
 
 Weitere Anleitungen zum Einschränken der Seitenstärke finden Sie im folgenden Artikel:
 
-- [Optimieren der Seitenleistung in SharePoint](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
+- [Optimieren der Seitenleistung in SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/optimize-page-performance-in-sharepoint)
 
 Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, notieren Sie sich die Ladezeit der Seite in den Analyseergebnissen. Führen Sie das Tool nach Ihrer Revision erneut aus, um zu sehen, ob das neue Ergebnis innerhalb des Grenzwertes liegt, und überprüfen Sie die Ladezeit der neuen Seite, um festzustellen, ob eine Verbesserung vorliegt.
 
@@ -75,7 +75,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/de-DE/sharepoint/modern-experience-performance.md)
+[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 

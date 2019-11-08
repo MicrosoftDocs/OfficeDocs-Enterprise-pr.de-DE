@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Der Office 365-IP-Adress- und URL-Dienst unterstützt Sie beim besseren Erkennen und Differenzieren des Netzwerkdatenverkehrs in Office 365, was es Ihnen erleichtert, Änderungen auszuwerten, zu konfigurieren und auf dem neuesten Stand zu bleiben.
-ms.openlocfilehash: 90de20f28e271e3fb174a883eb9cda3fb1228fb4
-ms.sourcegitcommit: 6db61b95b1b5b4312dd6bc42bec6597e359b1bd7
+ms.openlocfilehash: 2dd725c39446d7e9cdad6b7e870bf7353ff1f8e3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36212980"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031210"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adress- und -URL-Webdienst
 
@@ -156,9 +156,9 @@ Dieser URI zeigt einen RSS-Feed der veröffentlichten Versionen, die Links zu de
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<rss version="2.0" xmlns:a10="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:a10="https://www.w3.org/2005/Atom">
 <channel>
-<link>http://aka.ms/o365ip</link>
+<link>https://aka.ms/o365ip</link>
 <description/>
 <language>en-us</language>
 <lastBuildDate>Thu, 02 Aug 2018 00:00:00 Z</lastBuildDate>
@@ -601,7 +601,7 @@ Sie können einige unterschiedliche Methoden nutzen, um E-Mail-Benachrichtigunge
 
 - Wenn Sie eine Microsoft Flow-Lösung verwenden möchten, lesen Sie [Verwenden von Microsoft Flow, um eine E-Mail wegen Änderungen an Office 365-IP-Adressen und -URLs zu erhalten](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Um eine Azure Logic App mithilfe einer ARM-Vorlage bereitzustellen, lesen Sie [Office 365-Updatebenachrichtigung (v1.1)](https://aka.ms/ipurlws-updates-template).
-- Wenn Sie Ihr eigenes Benachrichtigungsskript mithilfe von PowerShell schreiben möchten, lesen Sie [Send-MailMessage](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Wenn Sie Ihr eigenes Benachrichtigungsskript mithilfe von PowerShell schreiben möchten, lesen Sie [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exportieren einer Proxy-PAC-Datei
 

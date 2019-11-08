@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 4f6035b8-2da3-4cf9-9657-5284d6364f7a
 description: 'Zusammenfassung: Verwenden Sie diese Testumgebungsanleitung, um ein Office 365-Testabonnement für Analysen oder Entwicklungs-/Testumgebungen zu erstellen.'
-ms.openlocfilehash: 06ffed9ab4b41c5e164cfadb951181a3406c67a3
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: b51e8c493294885c411ea3a4155b643ba6092313
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781935"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032040"
 ---
 # <a name="office-365-devtest-environment"></a>Office 365-Entwicklungs-/Testumgebung
 
@@ -44,7 +44,7 @@ Sie können ein Office 365-Testabonnement verwenden und eine Office 365-Entwickl
 ![Testumgebungsanleitungen in der Microsoft Cloud](media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
+> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-create-the-base-configuration-in-azure"></a>Phase 1: Erstellen der Basiskonfiguration in Azure
 

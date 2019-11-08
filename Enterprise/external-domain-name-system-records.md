@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: 75ada2f8632f880627b525112229ae09742029cd
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: ec05958eaf40fe988245eae808cc78bf60c06136
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616138"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028819"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "37616138"
   
 |||
 |:-----|:-----|
-|![Domäne](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Möchten Sie eine angepasste Liste der DNS-Einträge für Ihre Office 365-Organisation anzeigen?** Dann führen Sie eine [Suche nach den erforderlichen Informationen zum Erstellen von Office 365 DNS-Einträgen](https://support.office.microsoft.com/de-DE/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) für Ihre Domäne in Office 365 aus. <br/> **Benötigen Sie schrittweise Hilfe zum Hinzufügen dieser Einträge auf dem DNS-Host Ihrer Domäne, etwa auf GoDaddy oder eNom?** [Suchen von Links zu schrittweisen Anweisungen für viele beliebte DNS-Hosts](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Sie möchten die Referenzliste für Ihre eigene benutzerdefinierte Bereitstellung verwenden?** Die Liste unten sollte als Referenz für die benutzerdefinierte Office 365-Bereitstellung verwendet werden. Sie müssen auswählen, welche Einträge für Ihre Organisation gelten, und die entsprechenden Werte eintragen. <br/> **Zurück zu** [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune).  <br/> |
+|![Domäne](media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)|**Möchten Sie eine angepasste Liste der DNS-Einträge für Ihre Office 365-Organisation anzeigen?** Dann führen Sie eine [Suche nach den erforderlichen Informationen zum Erstellen von Office 365 DNS-Einträgen](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) für Ihre Domäne in Office 365 aus. <br/> **Benötigen Sie schrittweise Hilfe zum Hinzufügen dieser Einträge auf dem DNS-Host Ihrer Domäne, etwa auf GoDaddy oder eNom?** [Suchen von Links zu schrittweisen Anweisungen für viele beliebte DNS-Hosts](https://go.microsoft.com/fwlink/?LinkId=286745). <br/>  **Sie möchten die Referenzliste für Ihre eigene benutzerdefinierte Bereitstellung verwenden?** Die Liste unten sollte als Referenz für die benutzerdefinierte Office 365-Bereitstellung verwendet werden. Sie müssen auswählen, welche Einträge für Ihre Organisation gelten, und die entsprechenden Werte eintragen. <br/> **Zurück zu** [Netzwerkplanung und Leistungsoptimierung für Office 365](https://aka.ms/tune).  <br/> |
 
 Die SPF- und MX-Einträge sind oft am schwierigsten zu ermitteln. Wir haben unsere SPF-Eintragsanweisungen am Ende dieses Artikels aktualisiert. Beachten Sie, dass Sie _nur über einen einzigen SPF-Eintrag für Ihre Domäne verfügen können_. Mehrere MX-Einträge sind zwar möglich, dies kann jedoch zu Problemen bei der Nachrichtenübermittlung führen. Mit einem einzigen MX-Eintrag, der E-Mails an ein E-Mail-System weiterleitet, werden viele potenzielle Probleme ausgeschlossen.
   
@@ -103,7 +103,7 @@ SharePoint Online benötigt lediglich einen DNS-Eintrag, wenn Ihre Organisation 
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
-> Zwar soll SPF Spoofing verhindern, jedoch gibt es Spoofingtechniken, vor denen SPF keinen Schutz bietet. Zum Einrichten eines entsprechenden Schutzes sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Office 365 konfigurieren. Die ersten Schritte finden Sie unter [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/de-DE/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie anschließend [Use DMARC to validate email in Office 365](https://technet.microsoft.com/de-DE/library/mt734386%28v=exchg.150%29.aspx).
+> Zwar soll SPF Spoofing verhindern, jedoch gibt es Spoofingtechniken, vor denen SPF keinen Schutz bietet. Zum Einrichten eines entsprechenden Schutzes sollten Sie nach dem Einrichten von SPF auch DKIM und DMARC für Office 365 konfigurieren. Die ersten Schritte finden Sie unter [Use DKIM to validate outbound email sent from your domain in Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx). Lesen Sie anschließend [Use DMARC to validate email in Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
   
 SPF-Einträge und TXT-Einträge helfen zu verhindern, dass Dritte Ihre Domäne verwenden, um Spam oder andere schädliche E-Mails zu senden. SPF-Einträge (Sender Policy Framework) identifizieren die Server, die autorisiert sind, um E-Mails Ihrer Domäne zu senden.
   

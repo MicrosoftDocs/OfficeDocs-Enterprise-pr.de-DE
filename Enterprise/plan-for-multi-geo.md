@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Informationen zu Office 365 Multi-Geo, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: f3abcf5e2c5cf0b8250b219e2891181365ffa934
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 216ff8e80970630356c36d50beda25f93ec706da
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069421"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031760"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Plan für Office 365 Multi-Geo
 
@@ -25,7 +25,7 @@ In einer Multi-Geo-Konfiguration besteht Ihr Office 365-Mandant aus einem zentra
 
 Im Folgenden werden einige wichtige Begriffe in Bezug auf Multi-Geo erläutert, die beim Verständnis der grundlegenden Konzepte der Konfiguration hilfreich sind:
 
--   **Mandant** – Darstellung einer Organisation in der Office 365-Cloud, mit der in der Regel eine oder mehrere Domäne(n) verknüpft ist/sind (zum Beispiel http://contoso.sharepoint.com)). 
+-   **Mandant** – Darstellung einer Organisation in der Office 365-Cloud, mit der in der Regel eine oder mehrere Domäne(n) verknüpft ist/sind (zum Beispiel https://contoso.sharepoint.com)). 
 
 -   **Geografische Standorte** – Die geografischen Standorte, die zum Hosten von Daten in einem Office 365-Mandanten verfügbar sind.
 
@@ -64,7 +64,7 @@ Für jeden Benutzer muss ein *bevorzugter Datenspeicherort* festgelegt werden, d
 
 Erstellen Sie eine Liste Ihrer Benutzer mit den entsprechenden Benutzerprinzipalnamen und den Codes für die entsprechenden bevorzugten Datenspeicherorte. Fügen Sie Ihren Testbenutzer und die erste Pilotgruppe hinzu. Sie benötigen diese Liste für die Konfigurationsverfahren.
 
-Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Directory synchronisiert werden, müssen Sie den bevorzugten Datenspeicherort als Active Directory-Attribut festlegen und mithilfe von Azure Active Directory Connect eine Synchronisierung vornehmen. Sie können den bevorzugten Datenspeicherort für synchronisierte Benutzer nicht direkt mithilfe von Azure AD PowerShell konfigurieren. Informationen zu den Schritten für die Einrichtung eines PDL in Active Directory und die entspreche Synchronisierung finden Sie in [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Office 365-Ressourcen](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Directory synchronisiert werden, müssen Sie den bevorzugten Datenspeicherort als Active Directory-Attribut festlegen und mithilfe von Azure Active Directory Connect eine Synchronisierung vornehmen. Sie können den bevorzugten Datenspeicherort für synchronisierte Benutzer nicht direkt mithilfe von Azure AD PowerShell konfigurieren. Informationen zu den Schritten für die Einrichtung eines PDL in Active Directory und die entspreche Synchronisierung finden Sie in [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Office 365-Ressourcen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 Die Verwaltung eines Multi-Geo-Mandanten kann von der eines Nicht-Multi-Geo-Mandanten abweichen, da viele SharePoint- und OneDrive-Einstellungen und -Dienste über Multi-Geo-Funktionen verfügen. Es wird empfohlen, den Artikel [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) zu lesen, bevor Sie mit der Konfiguration fortfahren.
 

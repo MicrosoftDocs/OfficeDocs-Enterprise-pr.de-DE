@@ -15,12 +15,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 'Zusammenfassung: Stellen Sie mithilfe von Office 365 PowerShell eine Verbindung mit Ihrer Office 365-Organisation her, um Admin Center-Aufgaben über die Befehlszeile auszuführen.'
-ms.openlocfilehash: c5bf5204d8ca1c8db35635f080031838e9fbea03
-ms.sourcegitcommit: 86a740dccf273d679a8938e11e60d2a497c01689
+ms.openlocfilehash: 1bcf2438c4a07f3d025ef9cb664875214f1aa289
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "37328153"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031750"
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -36,7 +36,7 @@ Es gibt zwei Versionen des PowerShell-Moduls, mit denen Sie die Verbindung zu Of
 Zum Zeitpunkt des Erscheinens dieses Artikels ersetzt das Azure Active Directory PowerShell für Graph-Modul nicht vollständig die Funktionen in den Cmdlets des Microsoft Azure Active Directory-Moduls für Windows PowerShell für Benutzer-, Gruppen- und Lizenzverwaltung. In vielen Fällen müssen Sie beide Versionen verwenden. Sie können problemlos beide Versionen auf demselben Computer installieren.
 
 > [!TIP]
-> **Neu bei PowerShell?** Sehen Sie sich ein [Video mit einer Übersicht über PowerShell](https://support.office.com/de-DE/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) an, das Ihnen von LinkedIn Learning bereitgestellt wird. 
+> **Neu bei PowerShell?** Sehen Sie sich ein [Video mit einer Übersicht über PowerShell](https://support.office.com/article/7d0107d4-f672-4d0f-ad7d-417844b926c7.aspx) an, das Ihnen von LinkedIn Learning bereitgestellt wird. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -150,7 +150,7 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
     
   - Informationen zu Windows 7 oder Windows Server 2008 R2 finden Sie unter[Das Azure Active Directory-Modul für Windows PowerShell kann nicht geöffnet werden](https://go.microsoft.com/fwlink/p/?LinkId=532370)
 
-  - Informationen zu Windows 10, Windows 8.1 und Windows 8 finden Sie unter [Installieren von .NET Framework 3.5 unter Windows 10, Windows 8.1 und Windows 8](https://docs.microsoft.com/de-DE/dotnet/framework/install/dotnet-35-windows-10)
+  - Informationen zu Windows 10, Windows 8.1 und Windows 8 finden Sie unter [Installieren von .NET Framework 3.5 unter Windows 10, Windows 8.1 und Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
   
 - **Möglicherweise ist Ihre Version des Microsoft Azure Active Directory-Moduls für Windows PowerShell veraltet.** Um dies zu überprüfen, führen Sie den folgenden Befehl in Office 365 PowerShell oder im Microsoft Azure Active Directory-Modul für Windows PowerShell aus:

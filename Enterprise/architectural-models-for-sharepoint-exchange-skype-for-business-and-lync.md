@@ -11,18 +11,19 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom:
 - Ent_Architecture
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Rufen Sie IT-Poster ab, auf denen die Architekturmodelle, die Bereitstellung und Plattformoptionen für SharePoint, Exchange, Skype for Business und Lync beschrieben werden.'
-ms.openlocfilehash: ed4aca3728d12b1a7828b003f0da219d67da6de3
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce12d0a807c71e88d2f989f1b24ce033a63b8b70
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068411"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038264"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync
 
@@ -108,7 +109,7 @@ Diese neuen IT-Poster für SharePoint 2016 und Skype for Business 2015 bieten ei
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht des SharePoint Server 2016-Datenbankposters](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Dieses IT-Poster ist eine Kurzübersicht für SharePoint Server 2016-Datenbanken. Jede Datenbank weist die folgenden Details auf: <br/><br/> – Größe <br/> – Hilfestellung zur Skalierung <br/> – E/A-Muster <br/> – Anforderungen <br/><br/>  Die erste Seite enthält die SharePoint-Systemdatenbanken und die Dienstanwendungen, die mehrere Datenbanken aufweisen. Auf der zweiten Seite sind alle Dienstanwendungen verzeichnet, die über Einzeldatenbanken verfügen.<br/><br/>  Weitere Informationen zu den SharePoint Server 2016-Datenbanken finden Sie unter [Datenbanktypen und -beschreibungen in SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc678868%28v=office.16%29.aspx). <br/> |
+|[![Miniaturansicht des SharePoint Server 2016-Datenbankposters](media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | Dieses IT-Poster ist eine Kurzübersicht für SharePoint Server 2016-Datenbanken. Jede Datenbank weist die folgenden Details auf: <br/><br/> – Größe <br/> – Hilfestellung zur Skalierung <br/> – E/A-Muster <br/> – Anforderungen <br/><br/>  Die erste Seite enthält die SharePoint-Systemdatenbanken und die Dienstanwendungen, die mehrere Datenbanken aufweisen. Auf der zweiten Seite sind alle Dienstanwendungen verzeichnet, die über Einzeldatenbanken verfügen.<br/><br/>  Weitere Informationen zu den SharePoint Server 2016-Datenbanken finden Sie unter [Datenbanktypen und -beschreibungen in SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions). <br/> |
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Architekturmodelle für Microsoft Skype for Business 2015
@@ -138,7 +139,7 @@ Diese IT-Poster für SharePoint 2013, Exchange 2013 und Lync 2013 bieten eine M�
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht der SharePoint 2013-Plattformoptionen](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](http://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Dieses Modell veranschaulicht die Plattformoptionen für SharePoint 2013 für BDMs (Business Decision Makers, Entscheidungsträger im Unternehmen) und Architekten: SharePoint in Office 365-Bereitstellung, lokale Hybridbereitstellung mit Office 365, Azure und die rein lokale Bereitstellung. Es beinhaltet eine Übersicht über die jeweilige Architektur, Empfehlungen, Lizenzanforderungen sowie Listen von Aufgaben für Architekten und IT-Experten für die jeweilige Plattform. Mehrere SharePoint-Lösungen in Azure werden herausgestellt.<br/><br/>Eine barrierefreie Textversion dieses Posters finden Sie unter [Barrierefreies Diagramm – Microsoft SharePoint 2013-Plattformoptionen](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
+|[![Miniaturansicht der SharePoint 2013-Plattformoptionen](media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |Dieses Modell veranschaulicht die Plattformoptionen für SharePoint 2013 für BDMs (Business Decision Makers, Entscheidungsträger im Unternehmen) und Architekten: SharePoint in Office 365-Bereitstellung, lokale Hybridbereitstellung mit Office 365, Azure und die rein lokale Bereitstellung. Es beinhaltet eine Übersicht über die jeweilige Architektur, Empfehlungen, Lizenzanforderungen sowie Listen von Aufgaben für Architekten und IT-Experten für die jeweilige Plattform. Mehrere SharePoint-Lösungen in Azure werden herausgestellt.<br/><br/>Eine barrierefreie Textversion dieses Posters finden Sie unter [Barrierefreies Diagramm – Microsoft SharePoint 2013-Plattformoptionen](accessible-diagrammicrosoft-sharepoint-2013-platform-options.md).  <br/> |
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013-Plattformoptionen

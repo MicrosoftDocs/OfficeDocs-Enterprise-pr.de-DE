@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Office 365 Multi-Geo.
-ms.openlocfilehash: 7aa1933725617bcc1f84bbe6d0f31a6ddd91815d
-ms.sourcegitcommit: a7b2adf4b55df5fc35a617a145e8177caefce28b
+ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35078509"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031930"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -25,7 +25,7 @@ Mit Office 365 Multi-Geo können Sie ruhende Daten an den Datenresistenz-Anforde
 
 #### <a name="video-introducing-office-365-multi-geo"></a>Video: Einführung in Multi-Geo in Office 365
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1Yk6B?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
 
 In einer Multi-Geo-Umgebung verfügt Ihr Office 365-Mandant über einen zentralen Standort (an dem Ihr Office 365-Abonnement ursprünglich bereitgestellt wurde) und über einen oder mehrere Satellitenstandort(e). Die Informationen über geografische Standorte, Gruppen und Benutzer eines Multi-Geo-Mandanten werden in Azure Active Directory (AAD) verwaltet. Da Ihre Mandanteninformationen zentral verwaltet und an jedem geografischen Speicherort synchronisiert werden, wird das globale Bewusstsein durch das Teilen von Informationen und Erfahrungen im gesamten Unternehmen erhöht.
 
