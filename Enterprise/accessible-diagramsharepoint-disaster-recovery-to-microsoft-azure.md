@@ -11,16 +11,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 4b855224-8e67-4efa-a3a4-908ee0ca6412
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „SharePoint-Notfallwiederherstellung in Microsoft Azure“.
-ms.openlocfilehash: d7df0f44dd4e7f0cbb8580029991bc9280892afb
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: e711452f6e019ceb280d43c2e0167507a0b0ef20
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068521"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038234"
 ---
 # <a name="accessible-diagram---sharepoint-disaster-recovery-to-microsoft-azure"></a>Zugängliches Diagramm – SharePoint-Notfallwiederherstellung in Microsoft Azure
 
-**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms namens SharePoint Disaster Recovery to Microsoft Azure.
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen SharePoint Disaster Recovery to Microsoft Azure.
   
 Dieses Poster zeigt Beispiele von Architekturen zum Erstellen einer Wiederherstellungsumgebung in Azure.  
   
@@ -76,7 +76,7 @@ Das zugehörige Diagramm zeigt die lokale Umgebung, die in der Azure-Wiederherst
   
 ### <a name="overview"></a>Übersicht
 
-Die Notfallwiederherstellungsumgebung für eine lokale SharePoint 2013-Farm kann in Azure gehostet werden. 
+Die Notfallwiederherstellungsumgebung für eine lokale SharePoint 2013 Farm kann in Azure gehostet werden. 
   
 -   Azure-Infrastrukturdienste stellt ein sekundäres Datencenter zur Verfügung. 
     
@@ -186,7 +186,7 @@ Das virtuelle Azure-Netzwerk enthält drei Clouddienste: 
   
 - Der erste Clouddienst verfügt über zwei Active Directory- und DNS-Server mit einer Verfügbarkeitsgruppe.  
     
-- Der zweite clouddienst verfügt über drei Servergruppen: zwei verteilte Cacheserver mit einem Verfügbarkeits Satz. Zwei Front-End-Server mit einem Verfügbarkeits Satz. Drei Back-End-Server mit einem Verfügbarkeits Satz.
+- Der zweite clouddienst verfügt über drei Servergruppen: zwei verteilte Cacheserver mit einer verfügbarkeitsgruppe. Zwei Front-End-Server mit einer verfügbarkeitsgruppe. Drei Back-End-Server mit einer verfügbarkeitsgruppe.
     
 - Der dritte Clouddienst verfügt über drei Datenbankserver mit einer Verfügbarkeitsgruppe. Einer dieser Datenbankserver ist eine Dateifreigabe für den Protokollversand und ein dritter Knoten einer Knotenmehrheit für SQL Server AlwaysOn.  
     
@@ -194,10 +194,9 @@ Das virtuelle Azure-Netzwerk enthält drei Clouddienste: 
 
 Die Konfiguration von AD DS für diese Lösung ist ein Hybridbereitstellungsszenario, in dem AD DS teilweise lokal und teilweise auf virtuellen Azure-Computern bereitgestellt wird.  
   
-Wichtig: Lesen Sie vor dem Bereitstellen von AD DS in Azure die Richtlinien für die Bereitstellung von Windows Server Activehttp://msdn.microsoft.com/en-us/library/windowsazure/jj156090.aspx)Directory auf virtuellen Microsoft Azure-Computern (. 
+Wichtig – Lesen Sie vor dem Bereitstellen von AD DS in Azure Richtlinien für die Bereitstellung von Windows Serverhttps://docs.microsoft.com/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)Active Directory auf Microsoft Azure virtuellen Computern (. 
   
-Ausführliche Anweisungen zum Entwerfen und Bereitstellen von Active Directory-Umgebungen http://TechNet.microsoft.comfinden Sie unter. 
-  
+ 
 Diese Referenzarchitektur enthält zwei virtuelle Computer, die als Domänencontroller konfiguriert sind. Jeder ist wie folgt konfiguriert:  
   
 - Größe: klein  

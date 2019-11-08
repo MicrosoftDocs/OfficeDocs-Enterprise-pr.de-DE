@@ -13,24 +13,26 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Zusammenfassung darüber, wie Microsoft die Mandanten Isolierung für Office 365 erzwingt.
-ms.openlocfilehash: a5b8a3e42aa7acc5cebe8ed21a8599fc03b5060f
-ms.sourcegitcommit: 67dbbf1a5ec8cc4b10ca10f267f871f0bc045e63
+ms.openlocfilehash: 37d695635a5b7145b8384f1bf69fc357875ac38f
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37375523"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035625"
 ---
 # <a name="tenant-isolation-in-office-365"></a>Mandanten Isolierung in Office 365
 
 Einer der Hauptvorteile von Cloud Computing ist das Konzept einer gemeinsam genutzten gemeinsamen Infrastruktur für zahlreiche Kunden gleichzeitig, die zu Größenvorteilen führt. Dieses Konzept wird als *mehr Mandanten*Fähigkeit bezeichnet. Microsoft arbeitet kontinuierlich daran, sicherzustellen, dass die mehrmandantenfähigen Architekturen unserer Cloud-Dienste auf Unternehmensebene Sicherheits-, Vertraulichkeits-, Datenschutz-, Integritäts-und Verfügbarkeitsstandards unterstützen.
 
-Basierend auf den bedeutenden Investitionen und Erfahrungen, die von [Trustworthy Computing](https://www.microsoft.com/en-us/twc/default.aspx) und dem [Sicherheits Entwicklungslebenszyklus](http://www.microsoft.com/security/sdl/default.aspx)gesammelt wurden, wurden Microsoft Cloud-Dienste mit der Annahme entworfen, dass alle Mandanten potenziell feindlich für alle sind. andere Mandanten und wir haben Sicherheitsmaßnahmen implementiert, um zu verhindern, dass die Aktionen eines Mandanten die Sicherheit oder den Dienst eines anderen Mandanten beeinträchtigen oder auf den Inhalt eines anderen Mandanten zugreifen.
+Basierend auf den bedeutenden Investitionen und Erfahrungen, die von [Trustworthy Computing](https://www.microsoft.com/trust-center) und dem [Sicherheits Entwicklungslebenszyklus](https://www.microsoft.com/securityengineering/sdl/)gesammelt wurden, wurden Microsoft Cloud-Dienste so konzipiert, dass alle Mandanten potenziell feindlich gegenüber allen anderen Mandanten sind, und wir haben Sicherheitsmaßnahmen implementiert, um zu verhindern, dass die Aktionen eines Mandanten die Sicherheit oder den Dienst eines anderen Mandanten beeinträchtigen oder auf den Inhalt eines anderen Mandanten zugreifen.
 
 Die zwei Hauptziele der Verwaltung der mandantenisolation in einer Umgebung mit mehreren Mandanten sind:
+
 1.  Verhindern von Auslaufen oder nicht autorisiertem Zugriff auf Kunden Inhalte über Mandanten hinweg; und
 2.  Verhindern, dass die Aktionen eines Mandanten sich negativ auf den Dienst für einen anderen Mandanten auswirken
 
 Mehrere Arten von Schutz wurden in Office 365 implementiert, um zu verhindern, dass Kunden Office 365 Dienste oder Anwendungen kompromittieren oder nicht autorisierten Zugriff auf die Informationen anderer Mandanten oder des Office 365 Systems erhalten, einschließlich:
+
 - Die logische Isolierung von Kundeninhalten innerhalb der einzelnen Mandanten für Office 365 Dienste wird durch Azure Active Directory Autorisierung und rollenbasierte Zugriffssteuerung erreicht.
 - SharePoint Online bietet Daten Isolationsmechanismen auf Speicherebene.
 - Microsoft verwendet strenge physische Sicherheit, Hintergrundprüfung und eine mehrstufige Verschlüsselungsstrategie, um die Vertraulichkeit und Integrität von Kundeninhalten zu schützen. Alle Office 365 Rechenzentren verfügen über biometrische Zugriffssteuerungen, wobei die meisten Palm Prints benötigen, um physischen Zugriff zu erhalten. Darüber hinaus müssen alle in den USA ansässigen Microsoft-Mitarbeiter eine standardmäßige Hintergrundüberprüfung im Rahmen des Einstellungsprozesses erfolgreich abschließen. Weitere Informationen zu den Steuerelementen, die für den administrativen Zugriff in Office 365 verwendet werden, finden Sie unter [Office 365 administrative Zugriffssteuerung](office-365-administrative-access-controls-overview.md).
@@ -39,6 +41,7 @@ Mehrere Arten von Schutz wurden in Office 365 implementiert, um zu verhindern, d
 Zusammen bieten die oben aufgeführten Schutzmechanismen zuverlässige logische Isolierungs Steuerelemente, die den Schutz und die Minderung von Bedrohungen ermöglichen, gleichbedeutend mit der von der physischen Isolierung allein bereitgestellten.
 
 ## <a name="related-links"></a>Links zu verwandten Themen
+
 - [Isolierung und Zugriffssteuerung in Azure Active Directory](office-365-isolation-in-azure-active-directory.md)
 - [Mandantenisolation in Office Graph und Delve](office-365-isolation-in-graph-and-delve.md)
 - [Mandantenisolation in der Office 365-Suche](office-365-isolation-in-office-365-search.md)

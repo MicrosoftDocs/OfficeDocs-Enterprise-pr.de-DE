@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
 description: Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namensMicrosoft Exchange 2013-Plattformoptionen, das unter Technische Diagramme verfügbar ist.
-ms.openlocfilehash: ddf215544b811257e6d43f212784a3a1e5aac7b0
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068591"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027569"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Verfügbares Diagramm - Microsoft Exchange 2013-Plattformoptionen
 
-**Zusammenfassung:** Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter [Technische Diagramme](http://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409) verfügbar ist.
+**Zusammenfassung:** Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter [Technische Diagramme](https://go.microsoft.com/fwlink/?LinkID=519139&amp;clcid=0x409) verfügbar ist.
   
 Dieses Poster beschreibt, was Unternehmensentscheidungsträger (Business Decision Makers, BDMs) und -architekten über Exchange Online- und Exchange Server-Bereitstellungen wissen müssen. Es umfasst Folgendes: 
   

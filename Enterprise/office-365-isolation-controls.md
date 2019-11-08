@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Erläuterung der Isolierungs Steuerelemente in Office 365.'
-ms.openlocfilehash: 87317d753198b50ce360640c94f042adf27ed06e
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: a53826f7f11324986f3df59d9df806ea522cb7d6
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031200"
 ---
 # <a name="office-365-isolation-controls"></a>Isolierungssteuerungen in Office 365 
 
@@ -29,7 +29,7 @@ Office 365 besteht aus mehreren Diensten, die wichtige Geschäftsfunktionen bere
 Office 365 ist mit den folgenden Prinzipien konzipiert:
 
  - ** [Dienstorientierte Architektur](https://msdn.microsoft.com/library/aa480021.aspx):** entwerfen und entwickeln von Software in Form von interoperablen Diensten, die eine klar definierte Geschäftsfunktionalität bieten.
- - **[Operational Security Assurance](http://www.microsoft.com/download/details.aspx?id=40872):** ein Framework, in dem das Wissen über verschiedene Funktionen integriert ist, die für Microsoft gelten, einschließlich des Microsoft- [Sicherheits Entwicklungslebenszyklus](https://www.microsoft.com/sdl/default.aspx), der [Microsoft-Sicherheits Reaktions Center](https://technet.microsoft.com/library/dn440717.aspx)und tiefes Bewusstsein für die Cyber-Bedrohungslandschaft.
+ - **[Operational Security Assurance](https://www.microsoft.com/download/details.aspx?id=40872):** ein Framework, in dem das Wissen über die verschiedenen Funktionen von Microsoft integriert wird, einschließlich des Microsoft- [Sicherheits Entwicklungslebenszyklus](https://www.microsoft.com/sdl/default.aspx), des [Microsoft Security Response Centers](https://technet.microsoft.com/library/dn440717.aspx)und des tiefen Bewusstseins für die Cyber-Bedrohungslandschaft.
 
 Office 365 Dienste arbeiten untereinander zusammen, werden jedoch so konzipiert und implementiert, dass Sie unabhängig voneinander als autonome Dienste bereitgestellt und betrieben werden können. Microsoft trennt Aufgaben und Zuständigkeitsbereiche für Office 365 aus, um die Möglichkeiten für die unbefugte oder unbeabsichtigte Änderung oder den Missbrauch von Ressourcen der Organisation zu verringern. Office 365 Teams haben Rollen als Teil eines umfassenden rollenbasierten Zugriffssteuerungsmechanismus definiert.
 

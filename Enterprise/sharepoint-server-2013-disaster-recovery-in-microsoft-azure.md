@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.'
-ms.openlocfilehash: 907b2d56150ea6c8a540f1be88f325919917f6fe
-ms.sourcegitcommit: b4c82c0bf61f50386e534ad23479b5cf84f4e2ea
+ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "35203644"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031520"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 
@@ -110,7 +110,7 @@ Nachdem eine Wiederherstellung erfolgt ist, bietet Ihnen diese Lösung die in de
   
 **Tabelle: Wiederherstellungsziele der Lösung**
 
-|**Item**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |Websites und Inhalte  <br/> |Websites und Inhalte sind in der Wiederherstellungsumgebung verfügbar.  <br/> |
 |Eine neue Instanz der Suche  <br/> |Bei dieser betriebsbereiten Standby-Lösung wird die Suche aus Suchdatenbanken wiederhergestellt. Die Konfiguration von Suchkomponenten in der Wiederherstellungsfarm orientiert sich so weit wie möglich an der Produktionsfarm. Nachdem Websites und Inhalte wiederhergestellt wurden, wird eine vollständige Durchforstung gestartet, um den Suchindex neu zu erstellen. Sie müssen nicht warten, bis die Durchforstung abgeschlossen ist, um die Websites und Inhalte zur Verfügung zu stellen.  <br/> |
@@ -120,7 +120,7 @@ Sie können mit Microsoft Consulting Services (MCS) oder einem Partner zusammena
   
 **Tabelle: Andere Elemente, die von MCS oder einem Partner betreut werden können**
 
-|**Item**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |Synchronisieren benutzerdefinierter Farmlösungen  <br/> |Im Idealfall ist die Konfiguration der Wiederherstellungsfarm identisch mit der Produktionsfarm. Sie können mit einem Berater oder Partner zusammenarbeiten, um zu prüfen, ob benutzerdefinierte Farmlösungen repliziert werden und ob ein Prozess vorhanden ist, mit dessen Hilfe beide Umgebungen synchron bleiben.  <br/> |
 |Verbindungen mit lokalen Datenquellen  <br/> |Es ist möglicherweise unpraktisch, Verbindungen mit Back-End-Datensystemen zu replizieren, z. B. mit Sicherungsdomänencontrollern und Inhaltsquellen für die Suche.  <br/> |
@@ -446,9 +446,9 @@ Sie müssen DNS-Einträge manuell so erstellen, dass sie auf Ihre SharePoint-Far
   
 In den meisten Fällen, wenn Sie über mehrere Front-End-Webserver verfügen, ist es sinnvoll, das Feature des Netzwerklastenausgleichs in Windows Server 2012 oder ein Hardware-Lastenausgleichsmodul zum Verteilen von Anforderungen zwischen den Web-Front-End-Servern in Ihrer Farm zu nutzen. Mit dem Netzwerklastenausgleich können Sie auch das Risiko verringern, indem Sie Anforderungen an die anderen Server verteilen, sollte einer Ihrer Web-Front-End-Server ausfallen. 
   
-Beim Einrichten von Netzwerklastenausgleich wird dem Cluster in der Regel eine einzelne IP-Adresse zugewiesen. Anschließend erstellen Sie einen DNS-Hosteintrag im DNS-Anbieter für Ihr Netzwerk, der auf den Cluster zeigt. (Für dieses Projekt implementieren wir einen DNS-Server in Azure zum Zweck der Ausfallsicherheit für den Fall eines Ausfalls des lokalen Rechenzentrums.) Sie können z. B. einen DNS-Eintrag im DNS-Manager in Active Directory mit dem Namen  `http://sharepoint.contoso.com` erstellen, der auf die IP-Adresse Ihres Clusters mit Lastenausgleich zeigt.
+Beim Einrichten von Netzwerklastenausgleich wird dem Cluster in der Regel eine einzelne IP-Adresse zugewiesen. Anschließend erstellen Sie einen DNS-Hosteintrag im DNS-Anbieter für Ihr Netzwerk, der auf den Cluster zeigt. (Für dieses Projekt implementieren wir einen DNS-Server in Azure zum Zweck der Ausfallsicherheit für den Fall eines Ausfalls des lokalen Rechenzentrums.) Sie können z. B. einen DNS-Eintrag im DNS-Manager in Active Directory mit dem Namen  `https://sharepoint.contoso.com` erstellen, der auf die IP-Adresse Ihres Clusters mit Lastenausgleich zeigt.
   
-Für den externen Zugriff auf Ihre SharePoint-Farm können Sie einen Hosteintrag auf einem externen DNS-Server mit der gleichen URL erstellen, die Clients in Ihrem Intranet verwenden `http://sharepoint.contoso.com`(beispielsweise), die auf eine externe IP-Adresse in Ihrer Firewall verweist. (Eine bewährte Methode in diesem Beispiel ist das Einrichten von Split-DNS, sodass der interne DNS-Server für `contoso.com` autorisierend ist und Anforderungen direkt an den SharePoint-Farm Cluster weiterleitet, anstatt DNS-Anforderungen an Ihren externen DNS-Server weiterzuleiten.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse des lokalen Clusters zuordnen, damit die Clients die gesuchten Ressourcen finden.
+Für den externen Zugriff auf Ihre SharePoint-Farm können Sie einen Hosteintrag auf einem externen DNS-Server mit der gleichen URL erstellen, die Clients in Ihrem Intranet verwenden `https://sharepoint.contoso.com`(beispielsweise), die auf eine externe IP-Adresse in Ihrer Firewall verweist. (Eine bewährte Methode in diesem Beispiel ist das Einrichten von Split-DNS, sodass der interne DNS-Server für `contoso.com` autorisierend ist und Anforderungen direkt an den SharePoint-Farm Cluster weiterleitet, anstatt DNS-Anforderungen an Ihren externen DNS-Server weiterzuleiten.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse des lokalen Clusters zuordnen, damit die Clients die gesuchten Ressourcen finden.
   
 Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherstellung stoßen:
   
@@ -456,7 +456,7 @@ Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherste
   
  **Beispielszenario: Das lokale Rechenzentrum ist vollständig unbrauchbar.** Diesem Szenario kann aufgrund einer Naturkatastrophe wie Brand oder Überschwemmung auftreten. Für diesen Fall verfügt Ihr Unternehmen wahrscheinlich über ein sekundäres Rechenzentrum, das in einer anderen Region gehostet wird, und auch über ein Azure-Subnetz mit eigenen Verzeichnisdiensten und DNS. Wie im vorherigen Szenario der Notfallwiederherstellung können Ihre internen und externen DNS-Einträge so umgeleitet werden, dass sie auf die SharePoint-Farm in Azure zeigen. Beachten Sie auch hier, dass die Weitergabe von DNS-Einträgen einige Zeit dauern kann.
   
-Wenn Sie Websitesammlungen mit Hostnamen verwenden, wie in der [Website Sammlungs Architektur mit Hostnamen und in der Bereitstellung (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)empfohlen, haben Sie möglicherweise mehrere Websitesammlungen, die von der gleichen Webanwendung in Ihrer SharePoint-Farm gehostet werden, mit eindeutigen DNS-Namen (beispielsweise `http://sales.contoso.com` und `http://marketing.contoso.com`). In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die auf die IP-Adresse Ihres Clusters zeigen. Sobald eine Anforderung Ihre SharePoint-Web-Front-End-Server erreicht, übernehmen sie das Weiterleiten jeder Anforderung zur gewünschten Websitesammlung.
+Wenn Sie Websitesammlungen mit Hostnamen verwenden, wie in der [Website Sammlungs Architektur mit Hostnamen und der Bereitstellung (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)empfohlen, können mehrere Websitesammlungen von derselben Webanwendung in Ihrer SharePoint-Farm mit eindeutigen DNS-Namen (beispielsweise `https://sales.contoso.com` und `https://marketing.contoso.com`) gehostet werden. In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die auf die IP-Adresse Ihres Clusters zeigen. Sobald eine Anforderung Ihre SharePoint-Web-Front-End-Server erreicht, übernehmen sie das Weiterleiten jeder Anforderung zur gewünschten Websitesammlung.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft-Umgebung für Machbarkeitsstudie
 
@@ -612,7 +612,7 @@ Import-module activedirectory
 
 ```
 
-### <a name="availability-group-creation-fails-at-starting-the-alwaysonhealth-xevent-session-on-server-name"></a>Erstellen der Verfügbarkeitsgruppe missling beim Starten der "AlwaysOn_health"-XEvent-Sitzung auf <server name>
+### <a name="availability-group-creation-fails-at-starting-the-alwayson_health-xevent-session-on-server-name"></a>Erstellen der Verfügbarkeitsgruppe missling beim Starten der "AlwaysOn_health"-XEvent-Sitzung auf <server name>
 
 Stellen Sie sicher, dass beide Knoten Ihres Failoverclusters den Status "In Betrieb" und nicht "Angehalten" oder "Beendet" haben. 
   

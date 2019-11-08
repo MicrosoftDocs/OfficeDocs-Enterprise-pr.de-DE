@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Übersicht über die Technologie Steuerungsmethoden von Microsoft für Office 365.'
-ms.openlocfilehash: 1ddf4efdd8e2c2159f6d6c55cfeead1cfbd54395
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3063bcaca85d529885fbafddda88f61325b2b83c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067456"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031140"
 ---
 # <a name="office-365-technology-controls"></a>Technologiesteuerungen in Office 365 
 
@@ -39,7 +39,7 @@ Kunden-Lockbox für Office 365 hilft Ihnen bei der Erfüllung von Compliance-Ver
 
 In den seltenen Fällen, in denen ein Microsoft-Dienst Techniker auf Ihre Daten zugreifen muss, gewähren Sie nur Zugriff auf Daten, die zur Behebung des Problems und für einen begrenzten Zeitraum erforderlich sind. Wenn Sie eine Zugriffsanforderung ablehnen, haben Microsoft-Techniker keinen Zugriff auf Ihre Inhalte und können keine Dienstvorgänge ausführen. Wenn Sie die Anforderung genehmigen, haben Microsoft-Techniker einen begrenzten Just-in-Time-Zugriff auf Ihre Inhalte über überwachte und eingeschränkte Verwaltungsschnittstellen.
 
-Vom Supporttechniker ausgeführte Aktionen werden zu Überwachungszwecken protokolliert und sind über die [Office 365 Verwaltungs Aktivitäts-API](https://msdn.microsoft.com/library/office/dn707383.aspx) und das [Security and Compliance Center](http://protection.office.com/)zugänglich.
+Vom Supporttechniker ausgeführte Aktionen werden zu Überwachungszwecken protokolliert und sind über die [Office 365 Verwaltungs Aktivitäts-API](https://msdn.microsoft.com/library/office/dn707383.aspx) und das [Security and Compliance Center](https://protection.office.com/)zugänglich.
 
 >[!NOTE]
 > Kunden-Lockbox steht in [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) als Add-on-Kauf zur Verfügung. Weitere Informationen finden Sie unter [Office 365 Kunden-Lockbox-Anforderungen](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
@@ -60,7 +60,7 @@ Office 365 Server beschränken gleichzeitige Sitzungen auf eine Sitzung pro Dien
 
 Nutzungseinschränkungen sowie Verbindungs-und Konfigurationsanforderungen für Office 365 Personal werden durch Active Directory Gruppenrichtlinien festgelegt. Diese Richtlinien umfassen die folgenden Merkmale:
 
-- G.t.s. verwenden nur [FIPS](https://www.microsoft.com/en-us/TrustCenter/Compliance/FIPS) 140-2 validierte Verschlüsselung.
+- G.t.s. verwenden nur [FIPS](https://www.microsoft.com/TrustCenter/Compliance/FIPS) 140-2 validierte Verschlüsselung.
 - TSG-Sitzungen werden nach 30 Minuten Inaktivität getrennt.
 - TSG-Sitzungen werden nach 24 Stunden automatisch abgemeldet.
 

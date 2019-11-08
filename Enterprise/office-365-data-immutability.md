@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Definiert und erläutert die Daten Unveränderlichkeit in Office 365.
-ms.openlocfilehash: 7563b37af6c59d8d1d4273f70d86b2551addab89
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 027191e6bd8cb117bfec3fcd4e9b26ab0a6940b3
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067472"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035575"
 ---
 # <a name="immutability-in-office-365"></a>Unveränderbarkeit in Office 365
 
@@ -38,12 +38,12 @@ Durch Compliance-Archivierungs-und Aufbewahrungsrichtlinien Features der Archivi
 
 Darüber hinaus hat Microsoft Add-on-Funktionen entwickelt, um die [Archivierung von Daten](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) aus anderen Quellen durch Integration in Datenerfassung und Verwaltungslösungen von Drittanbietern zu ermöglichen. Nachdem Sie Daten von Drittanbietern importiert haben, können Sie Office 365 Kompatibilitätsfeatures auf die Daten anwenden, einschließlich:
 
-- [Aufbewahrung für eventuelle Rechtsstreitigkeiten](/microsoft365/compliance/create-a-litigation-hold.md)
-- [Compliance-eDiscovery und-Aufbewahrung](/microsoft365/compliance/manage-legal-investigations.md)
-- [Compliance-Suche](/microsoft365/compliance/search-for-content.md)
-- [In-Situ-Archivierung](/microsoft365/compliance/enable-archive-mailboxes.md)
-- [Postfachüberwachung](/microsoft365/compliance/enable-mailbox-auditing.md)
-- [Aufbewahrungsrichtlinien](/microsoft365/compliance/retention-policies.md)
+- [Aufbewahrung für eventuelle Rechtsstreitigkeiten](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
+- [Compliance-eDiscovery und-Aufbewahrung](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [Compliance-Suche](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
+- [In-Situ-Archivierung](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
+- [Postfachüberwachung](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)
+- [Aufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 Wenn beispielsweise ein Postfach in das Beweissicherungsverfahren gestellt wird, werden drittanbieterdaten beibehalten. Sie können drittanbieterdaten mithilfe der in-Place-eDiscovery-oder Compliance-Suche durchsuchen. Sie können auch Archivierungs-und Aufbewahrungsrichtlinien auf drittanbieterdaten anwenden, genau wie für Microsoft-Daten. Durch das Archivieren von drittanbieterdaten in Office 365 kann Ihre Organisation mit behördlichen und behördlichen Richtlinien kompatibel bleiben.
 

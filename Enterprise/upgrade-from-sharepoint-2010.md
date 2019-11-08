@@ -15,12 +15,12 @@ search.appverid:
 - OSU140
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 description: Die Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 1d3931970047a3c19a8e5bd3a03378855056a3ad
-ms.sourcegitcommit: 546080809d4f8ee4954943738906eec6c9bac1d8
+ms.openlocfilehash: a8ab4a79053badf4e07918e5e97c7d4821edd5f8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37616128"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030900"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
@@ -45,11 +45,11 @@ Das heißt, es werden keine weiteren Updates, Patches oder Fixes für das Produk
   
 ## <a name="what-are-my-options"></a>Was sind meine Optionen?
 
-Überprüfen Sie zunächst das Datum, an dem der Support auf der [Produktlebenszyklus-Website](https://support.microsoft.com/en-us/lifecycle/search?alpha=SharePoint%20Server%202010)endet. Stellen Sie als nächstes sicher, dass Sie Ihr Upgrade oder Ihre Migrationszeit mit Kenntnis dieses Datums planen. Denken Sie daran, dass Ihr Produkt am angegebenen Datum *nicht mehr funktioniert* und Sie die Verwendung fortsetzen können, aber da Ihre Installation nach diesem Datum nicht mehr gepatcht wird, wünschen Sie sich eine Strategie, die Ihnen einen reibungslosen Übergang zur nächsten Version erleichtert. des Produkts. 
+Überprüfen Sie zunächst das Datum, an dem der Support auf der [Produktlebenszyklus-Website](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)endet. Stellen Sie als nächstes sicher, dass Sie Ihr Upgrade oder Ihre Migrationszeit mit Kenntnis dieses Datums planen. Denken Sie daran, dass Ihr Produkt am angegebenen Datum *nicht mehr funktioniert* , und Sie können seine Verwendung fortsetzen, aber da Ihre Installation nach diesem Datum nicht mehr gepatcht wird, benötigen Sie eine Strategie, die Ihnen einen reibungslosen Übergang zur nächsten Version des Produkts erleichtern wird. 
   
 Diese Matrix hilft beim Plotten eines Kurses, wenn es um die Migration von Produktfeatures und Benutzerdaten geht:
   
-|**Ende des Support Produkts**|**gut**|**Optimal**|
+|**Ende des Support Produkts**|**Gut**|**Optimal**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 (lokal)  <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 Hybrid mit SharePoint Online  <br/> |SharePoint Server 2016 (lokal)  <br/> |
@@ -62,7 +62,7 @@ Hier sind die drei Pfade, die Sie ausführen können, um das Ende der Unterstüt
 ![SharePoint Server 2010 Aktualisierungspfade](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->Das Ende der Unterstützung für SharePoint Server 2010 und SharePoint Foundation 2010 sind für den 13. Oktober 2020 geplant, *Bitte* beachten Sie jedoch, dass Sie stets auf der [Produktlebenszyklus-Website](https://support.microsoft.com/en-us/lifecycle) nach den aktuellsten Terminen suchen sollten.
+>Das Ende der Unterstützung für SharePoint Server 2010 und SharePoint Foundation 2010 sind für den 13. Oktober 2020 geplant, *Bitte* beachten Sie jedoch, dass Sie stets auf der [Produktlebenszyklus-Website](https://support.microsoft.com/lifecycle) nach den aktuellsten Terminen suchen sollten.
 >
 
   
@@ -83,7 +83,7 @@ Beachten Sie die versteckten Kosten, die im Zusammenhang mit der Wartung einer S
 > [!NOTE]
 > SharePoint-Administratoren können [ein Office 365 Abonnement erstellen](https://go.microsoft.com/fwlink/?linkid=843152), eine brandneue SharePoint Online Website einrichten und dann sauber von SharePoint Server 2010 wegschneiden, wobei nur die wichtigsten Dokumente auf die neuen SharePoint Online Websites übermittelt werden. Von dort aus können alle verbleibenden Daten von der SharePoint Server 2010 Website in lokale Archive entwässert werden. 
   
-|**SharePoint Online**|**SharePoint Server lokal**|
+|**SharePoint Online**|**SharePoint Server lokal**|
 |:-----|:-----|
 |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |
 |Geringere Kosten in Fonds (keine hardwarekäufe)  <br/> |Höhere Kosten in Fonds (hardwarekäufe)  <br/> |
@@ -98,7 +98,7 @@ Stellen Sie sicher, dass SharePoint Online alle erforderlichen Funktionen bietet
   
 Es gibt derzeit kein Mittel, mit dem Sie direkt von SharePoint Server 2010 (oder SharePoint Foundation 2010) zu SharePoint Online migrieren können, sodass ein Großteil der Arbeit manuell erfolgt. Dadurch erhalten Sie die Möglichkeit, Daten und Websites, die nicht mehr benötigt werden, vor dem Wechsel zu archivieren und zu löschen. Sie können andere Daten in den Speicher archivieren. Denken Sie auch daran, dass weder SharePoint Server 2010 noch SharePoint Foundation 2010 am Ende der Unterstützung nicht mehr funktioniert, sodass Administratoren einen Zeitraum haben können, in dem SharePoint noch ausgeführt wird, wenn Ihre Kunden vergessen, einige Ihrer Daten zu verlegen.
   
-Wenn Sie ein Upgrade auf SharePoint Server 2013 oder SharePoint Server 2016 durchführen und sich dafür entscheiden, Daten in SharePoint Online zu übertragen, kann ihre Verlagerung auch die Verwendung der [SharePoint-Migrations-API](https://support.office.com/en-us/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (zum Migrieren von Informationen zu OneDrive für Unternehmen) umfassen. 
+Wenn Sie ein Upgrade auf SharePoint Server 2013 oder SharePoint Server 2016 durchführen und sich dafür entscheiden, Daten in SharePoint Online zu übertragen, kann ihre Verlagerung auch die Verwendung der [SharePoint-Migrations-API](https://support.office.com/article/Upload-on-premises-content-to-SharePoint-Online-using-PowerShell-cmdlets-555049c6-15ef-45a6-9a1f-a1ef673b867c?ui=en-US&amp;rs=en-US&amp;ad=US) (zum Migrieren von Informationen zu OneDrive für Unternehmen) umfassen. 
   
 |**SharePoint Online Vorteil**|**SharePoint Online Nachteil**|
 |:-----|:-----|
@@ -118,7 +118,7 @@ Wenn Sie sich entschieden haben, eine neue Office 365 Website zu erstellen und d
   
 ### <a name="upgrade-sharepoint-server-on-premises"></a>Upgrade SharePoint Server lokal
 
-Ab der neuesten Version des lokalen SharePoint-Produkts (SharePoint Server 2019) müssen SharePoint Server Upgrades *seriell*ausgeführt werden, das heißt, es gibt keine Möglichkeit, ein Upgrade von SharePoint Server 2010 auf SharePoint Server 2016 oder auf SharePoint 2019 durchführen zu lassen. direkt. 
+Ab der neuesten Version des lokalen SharePoint-Produkts (SharePoint Server 2019) müssen SharePoint Server Upgrades *seriell*ausgeführt werden, was bedeutet, dass es keine Möglichkeit gibt, direkt von SharePoint Server 2010 auf SharePoint Server 2016 oder auf SharePoint 2019 zu aktualisieren. 
   
 |||
 |:-----|:-----|
@@ -168,9 +168,9 @@ Vergleichen Sie zunächst die Hardware-und Softwareanforderungen. Wenn Sie die g
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Erstellen einer SharePoint-Hybridlösung zwischen SharePoint Online und SharePoint Server lokal
 
-Eine weitere Option (eine, die sowohl für lokale als auch für Online-Umgebungen am besten geeignet ist) ist eine hybride, Sie können SharePoint Server 2013-oder 2016-oder 2019-Farmen mit SharePoint Online verbinden, um eine SharePoint-Hybridlösung zu erstellen: [Informationen zu SharePoint-Hybridlösungen Lösungen](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
+Eine weitere Option (eine, die sowohl für lokale als auch für Online-Umgebungen am besten geeignet ist) ist eine hybride, Sie können SharePoint Server 2013-oder 2016-oder 2019-Farmen mit SharePoint Online verbinden, um eine SharePoint-Hybridlösung zu erstellen: [erfahren Sie mehr über SharePoint-Hybridlösungen](https://support.office.com/article/4c89a95a-a58c-4fc1-974a-389d4f195383.aspx).
   
-Wenn Sie sich für eine hybride SharePoint Server Farm als Migrationsziel entscheiden, müssen Sie unbedingt planen, welche Websites und Benutzer Sie Online umstellen sollten und welche lokal bleiben müssen. Bei dieser Entscheidung kann es hilfreich sein, die Inhalte Ihrer SharePoint Server Farm zu überprüfen und zu bewerten (feststellen, welche Daten hoch, Mittel oder niedrig für Ihr Unternehmen sind). Es kann sein, dass das einzige, was Sie für SharePoint Online freigeben müssen, (a) Benutzerkonten für die Anmeldung und (b) den SharePoint Server-Suchdienst Index sind – dies ist möglicherweise erst nach der Verwendung Ihrer Websites erkennbar. Wenn Ihr Unternehmen später entscheidet, alle Ihre Inhalte in SharePoint Online zu migrieren, können Sie alle verbleibenden Konten und Daten Online verschieben und Ihre lokale Farm außer Betrieb nehmen, und die Verwaltung/Verwaltung der SharePoint-Farm erfolgt über Office 365 Konsolen von diesem Moment an.
+Wenn Sie sich für eine hybride SharePoint Server Farm als Migrationsziel entscheiden, müssen Sie unbedingt planen, welche Websites und Benutzer Sie Online umstellen sollten und welche lokal bleiben müssen. Bei dieser Entscheidung kann es hilfreich sein, die Inhalte Ihrer SharePoint Server Farm zu überprüfen und zu bewerten (feststellen, welche Daten hoch, Mittel oder niedrig für Ihr Unternehmen sind). Es kann sein, dass das einzige, was Sie für SharePoint Online freigeben müssen, (a) Benutzerkonten für die Anmeldung und (b) den SharePoint Server-Suchdienst Index sind – dies ist möglicherweise erst nach der Verwendung Ihrer Websites erkennbar. Wenn Ihr Unternehmen später entscheidet, alle Ihre Inhalte in SharePoint Online zu migrieren, können Sie alle verbleibenden Konten und Daten Online verschieben und Ihre lokale Farm außer Betrieb nehmen, und die Verwaltung/Verwaltung der SharePoint-Farm erfolgt von diesem Zeitpunkt an über Office 365 Konsolen.
   
 Stellen Sie sicher, dass Sie sich mit den vorhandenen Hybrid Typen vertraut machen und die Verbindung zwischen Ihrer lokalen SharePoint-Farm und Ihrem Office 365 Abonnement konfigurieren.
   
@@ -193,16 +193,16 @@ Sie können dieses Poster auch [herunterladen](https://github.com/MicrosoftDocs/
 
 [Ressourcen zum Upgraden von Office 2007-oder 2010-Servern und-Clients](upgrade-from-office-2010-servers-and-products.md)
   
-[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493301%28v=office.16%29.aspx)
+[Overview of the upgrade process from SharePoint 2010 to SharePoint 2013](https://technet.microsoft.com/library/mt493301%28v=office.16%29.aspx)
   
-[Bewährte Methoden beim Upgrade von SharePoint 2010 auf SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493305%28v=office.16%29.aspx)
+[Bewährte Methoden beim Upgrade von SharePoint 2010 auf SharePoint 2013](https://technet.microsoft.com/library/mt493305%28v=office.16%29.aspx)
   
 [Behandeln von Problemen beim Datenbankupgrade in SharePoint 2013](https://go.microsoft.com/fwlink/?linkid=843195)
   
 [Suchen nach Microsoft Solution Providern zur Unterstützung des Upgrades](https://go.microsoft.com/fwlink/?linkid=841249)
   
-[Aktualisierte Produktwartungsrichtlinie für SharePoint 2013](https://technet.microsoft.com/en-us/library/mt493253%28v=office.16%29.aspx)
+[Aktualisierte Produktwartungsrichtlinie für SharePoint 2013](https://technet.microsoft.com/library/mt493253%28v=office.16%29.aspx)
   
-[Aktualisierte Produktwartungsrichtlinie für SharePoint Server 2016](https://technet.microsoft.com/en-us/library/mt782882%28v=office.16%29.aspx)
+[Aktualisierte Produktwartungsrichtlinie für SharePoint Server 2016](https://technet.microsoft.com/library/mt782882%28v=office.16%29.aspx)
   
 

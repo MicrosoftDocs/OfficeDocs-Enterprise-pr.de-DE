@@ -1,5 +1,5 @@
 ---
-title: Hochverfügbarkeit der Verbundauthentifizierung, Phase 1 Konfigurieren von Azure
+title: Hoch Verfügbarkeits Verbund Authentifizierungs Phase 1 Konfigurieren von Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,20 +12,20 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: 8b6511a3ce23a352b59a0e9a89f8f9901897391f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d3cb5006f9630b4fc20462252a570f4e575a1da1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067501"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030749"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
  **Zusammenfassung:** Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.
   
-In dieser Phase erstellen Sie die Ressourcengruppen, das virtuelle Netzwerk (VNet) und Verfügbarkeits Sätze in Azure, die die virtuellen Computer in den Phasen 2, 3 und 4 hosten werden. Sie müssen diese Phase abschließen, bevor Sie mit der [hoch Verfügbarkeits Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md), fortfahren. Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+In dieser Phase erstellen Sie die Ressourcengruppen, das virtuelle Netzwerk (VNet) und die Verfügbarkeits Sätze in Azure, die die virtuellen Computer in den Phasen 2, 3 und 4 hosten werden. Sie müssen diese Phase abschließen, bevor Sie mit der [hoch Verfügbarkeits Verbundauthentifizierung Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)fortfahren. Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
-Azure muss mit den folgenden grundlegenden Komponenten eingerichtet werden:
+Azure muss mit diesen grundlegenden Komponenten ausgestattet werden:
   
 - Ressourcengruppen
     
@@ -37,15 +37,15 @@ Azure muss mit den folgenden grundlegenden Komponenten eingerichtet werden:
     
 ## <a name="configure-azure-components"></a>Konfigurieren der Azure-Komponenten
 
-Bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen, füllen Sie die folgenden Tabellen aus. Um Sie bei den Verfahren zum Konfigurieren von Azure zu unterstützen, Drucken Sie diesen Abschnitt, und notieren Sie sich die benötigten Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie es aus. Füllen Sie für die Einstellungen des VNet die Tabelle V aus.
+Füllen Sie die folgenden Tabellen aus, bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen. Um Sie bei den Verfahren für die Konfiguration von Azure zu unterstützen, Drucken Sie diesen Abschnitt aus, notieren Sie die erforderlichen Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie ihn aus. Geben Sie in Tabelle V die Einstellungen für das VNet ein.
   
-|**Item**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Aspekt**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |4.  <br/> |VNet-Adressraum  <br/> |Der Adressraum für das virtuelle Netzwerk (Fragen Sie Ihre IT-Abteilung nach diesem Adressraum.)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird (Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert. Alternativ finden Sie weitere Informationen unter [Create a random string for an IPsec preshared key](http://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird (Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert. Alternativ finden Sie weitere Informationen unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle V: Konfiguration eines standortübergreifenden virtuellen Netzwerks**
   
@@ -57,13 +57,13 @@ Geben Sie für die ersten drei Subnetze einen Namen und einen einzigen IP-Adress
     
 2. Übertragen Sie den resultierenden Bitblock ins Dezimalsystem, und drücken Sie ihn als Adressraum aus, wobei Sie als Präfixlänge die Größe des Gatewaysubnetzes festlegen.
     
-Siehe [Adressraum Rechner für Azure-Gateway](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) -Subnetze für einen PowerShell-Befehlsblock und eine C#-oder python-Konsolenanwendung, die diese Berechnung für Sie durchführt.
+Weitere Informationen finden Sie unter [Adressraum Rechner für Azure-Gateway-Subnetze](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) für einen PowerShell-Befehlsblock und eine C#-oder python-Konsolenanwendung, die diese Berechnung ausführt.
   
 Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des virtuellen Netzwerks.
   
-|**Item**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
+|**Aspekt**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das Subnetz, das von den Domänencontrollern der Active Directory-Domänendienste (AD DS) und den virtuellen Computern des Dirsync-Servers (VMS) verwendet wird.  <br/> |
+|1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das vom Active Directory-Domänendienste (AD DS) Domänencontroller und den virtuellen Computern des Dirsync-Servers (VMS) verwendete Subnetz.  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern von AD FS verwendete Subnetz.  <br/> |
 |3.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern des Webanwendungsproxys verwendete Subnetz.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern des Azure-Gateways verwendete Subnetz.  <br/> |
@@ -72,7 +72,7 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
   
 Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Item**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Aspekt**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
@@ -89,14 +89,14 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen C
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Item**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Aspekt**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
 |1.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |![](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle D: Lokale DNS-Server**
   
-Zum Weiterleiten von Paketen aus dem standortübergreifenden Netzwerk zu Ihrem Organisationsnetzwerk über die Website-zu-Standort-VPN-Verbindung müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren, das über eine Liste der Adressräume (in CIDR-Notation) für alle erreichbaren Standorte im lokalen Netzwerk Ihrer Organisation. Die Liste der Adressräume, die Ihr lokales Netzwerk definieren, muss eindeutig sein und darf sich nicht mit dem Adressraum überschneiden, der für andere virtuelle Netzwerke oder andere lokale Netzwerke verwendet wird.
+Um Pakete aus dem standortübergreifenden Netzwerk an Ihr Organisationsnetzwerk über die Standort-zu-Standort-VPN-Verbindung weiterzuleiten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren, das eine Liste der Adressräume (in der CIDR-Notation) für alle erreichbaren Standorte im lokalen Netzwerk Ihrer Organisation. Die Liste der Adressräume, die Ihr lokales Netzwerk definieren, muss eindeutig sein und darf sich nicht mit dem Adressraum überschneiden, der für andere virtuelle Netzwerke oder andere lokale Netzwerke verwendet wird.
   
 Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle L aus. Auch wenn hierfür nur drei Einträge vorgesehen sind, können Sie noch weitere hinzufügen. Erarbeiten Sie diese Liste der Adressräume gemeinsam mit Ihrer IT-Abteilung.
   
@@ -111,7 +111,7 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
 Jetzt können Sie mit dem Erstellen der Azure-Infrastruktur beginnen, die die Verbundauthentifizierung für Office 365 hosten soll.
   
 > [!NOTE]
-> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung, und melden Sie sich bei Ihrem Konto an.
   
@@ -136,7 +136,7 @@ Verwenden Sie für ältere Versionen von Azure PowerShell stattdessen diesen Bef
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alle Elemente innerhalb der Anführungszeichen, einschließlich der \< und >, mit dem richtigen Namen.
+Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungs \< Zeichen, einschließlich der und #a0 Zeichen, mit dem korrekten Namen.
   
 ```
 $subscrName="<subscription name>"
@@ -257,7 +257,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> Für die Verbundauthentifizierung einzelner Benutzer ist kein Rückgriff auf lokale Ressourcen erforderlich. Wenn diese Standort-zu-Standort-VPN-Verbindung jedoch nicht mehr verfügbar ist, erhalten die Domänencontroller in der VNet keine Aktualisierungen an Benutzerkonten und Gruppen, die in den lokalen Active Directory-Domänendiensten vorgenommen wurden. Um sicherzustellen, dass dies nicht der Fall ist, können Sie hohe Verfügbarkeit für die Standort-zu-Standort-VPN-Verbindung konfigurieren. Weitere Informationen finden Sie unter [hoch verfügbare standortübergreifende und VNet-zu-VNet-Konnektivität](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> Für die Verbundauthentifizierung einzelner Benutzer ist kein Rückgriff auf lokale Ressourcen erforderlich. Wenn diese Standort-zu-Standort-VPN-Verbindung jedoch nicht mehr verfügbar ist, erhalten die Domänencontroller im VNet keine Updates für Benutzerkonten und Gruppen, die im lokalen Active Directory-Domänendienste ausgeführt werden. Um dies zu verhindern, können Sie die hohe Verfügbarkeit für Ihre Standort-zu-Standort-VPN-Verbindung konfigurieren. Weitere Informationen finden Sie unter [highly available Cross-premises and VNet-to-VNet Connectivity](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable) .
   
 Notieren Sie sich jetzt die öffentliche IPv4-Adresse des Azure-VPN-Gateways für Ihr virtuelles Netzwerk aus der Ausgabe des folgenden Befehls:
   
@@ -306,7 +306,7 @@ Haben Sie diese Phase erfolgreich abgeschlossen, sieht Ihre Konfiguration wie fo
   
 **Phase 1: Die Azure-Infrastruktur für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365**
 
-![Phase 1 der hoch Verfügbarkeits-Office 365-Verbundauthentifizierung in Azure mit der Azure-Infrastruktur](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 der hoch Verfügbarkeits Office 365 Verbundauthentifizierung in Azure mit der Azure-Infrastruktur](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 

@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Erhalten Sie Zugriff auf die Ressourcen für die Planung Ihrer Office 365 Enterprise-Bereitstellung.
-ms.openlocfilehash: de23b8f49968bad949cd01551fdb040882bc00f4
-ms.sourcegitcommit: d58cdc7b2296df12f7a05d14ba05ab224ffb3e0c
+ms.openlocfilehash: 66b1944b9e98ef60b753c5122655f99870a86ffe
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36302687"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028809"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Planen von Office 365 Enterprise
 
@@ -41,7 +41,7 @@ Der Kurztext [für Office 365](https://docs.microsoft.com/fasttrack/O365-fasttra
 
 Wenn Sie Office 365 selbst planen möchten, müssen Sie die Planungs-und Entwurfsentscheidungen für diese Bereiche Schritt für Schritt durchführen:
 
-- Ihr Office 365 Mandant
+- Ihr Office 365-Mandant
 
   Umfasst die Planung für Ihre Netzwerkverbindungen mit dem Internet, Ihre Office 365 Identitäten und die Integration in apps, lokale, Azure und andere Elemente. Beginnen Sie [hier](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
 
@@ -84,7 +84,7 @@ If you want help getting Office 365 set up, [FastTrack](https://fasttrack.micros
 |**Use** the [templates and resources in the Office 365 success center](https://www.microsoft.com/fasttrack/resources) to share your deployment and onboarding plans with the people in your organization.  <br> | - Communication with everyone before, during, and after the transition to Office 365 is critical.  <br> - Use our templates, guides, and handouts to improve your communications. |
 |**Read** the article [Office 365 Network Connectivity Principles](https://aka.ms/o365networkingprinciples) to understand the connectivity principles for securely managing Office 365 traffic and getting the best possible performance.  <br> | - This article will help you understand the most recent guidance for securely optimizing Office 365 network connectivity. |
    
-Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/en-us/office365/enterprise/microsoft-cloud-it-architecture-resources).
+Want more resources to help you integrate Office 365 with your broader cloud strategy? Here are the [Microsoft cloud IT architecture resources](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources).
   
 ## Want to talk with support?
 

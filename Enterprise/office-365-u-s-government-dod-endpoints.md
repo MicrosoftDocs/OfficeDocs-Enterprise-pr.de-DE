@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Zusammenfassung: Office 365 erfordert eine Verbindung mit dem Internet. Die folgenden Endpunkte sollten für Kunden erreichbar sein, die nur Office 365 US Government DoD-Pläne verwenden.'
 hideEdit: true
-ms.openlocfilehash: b58f85298e8bcac6f35ee0029948e6c7fa2a95e4
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: a883348d641ecc2ee22500c8fffc0f891986e7e9
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975853"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038294"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 US Government DoD-Endpunkte
 
@@ -53,7 +53,7 @@ Dies sind die dargestellten Datenspalten:
 
 - **Kategorie**: Zeigt, ob der Endpunktsatz als "Optimize" (Optimieren), "Allow" (Zulassen) oder "Default" (Standard) kategorisiert ist. Informationen zu diesen Kategorien und eine Anleitung zu ihrer Verwaltung finden Sie unter [https://aka.ms/pnc](https://aka.ms/pnc). In dieser Spalte sind außerdem die Endpunktsätze aufgelistet, die für Netzwerkkonnektivität erforderlich sind. Für Endpunktsätze, für die keine Netzwerkkonnektivität erforderlich ist, geben wir in diesem Feld Anmerkungen, aus denen hervorgeht, welche Funktionalität durch ein Blockieren des Endpunktsatzes entfallen würde. Wenn Sie einen gesamten Dienstbereich ausschließen, ist für dessen als erforderlich aufgeführte Endpunktsätze keine Konnektivität erforderlich.
 
-- **Er**: Dies ist **Ja** , wenn der Endpunkt Satz über Azure Express Route mit Office 365-Routen Präfixen unterstützt wird. Die BGP-Community, die die angegebenen Routen Präfixe enthält, wird mit dem angegebenen Dienstbereich ausgerichtet. Wenn er **Nein**ist, bedeutet dies, dass Express Route für diese endpunktgruppe nicht unterstützt wird. Es sollte jedoch nicht davon ausgegangen werden, dass keine Routen für einen Endpunkt festgelegt werden, in dem er **nicht ist.** Wenn Sie Azure AD Connect verwenden möchten, lesen Sie den [Abschnitt spezielle Überlegungen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-AADconnect-instances#microsoft-azure-government-cloud) , um sicherzustellen, dass Sie über die entsprechende Azure AD Connect-Konfiguration verfügen.
+- **Er**: Dies ist **Ja** , wenn der Endpunkt Satz über Azure Express Route mit Office 365-Routen Präfixen unterstützt wird. Die BGP-Community, die die angegebenen Routen Präfixe enthält, wird mit dem angegebenen Dienstbereich ausgerichtet. Wenn er **Nein**ist, bedeutet dies, dass Express Route für diese endpunktgruppe nicht unterstützt wird. Es sollte jedoch nicht davon ausgegangen werden, dass keine Routen für einen Endpunkt festgelegt werden, in dem er **nicht ist.** Wenn Sie Azure AD Connect verwenden möchten, lesen Sie den [Abschnitt spezielle Überlegungen](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) , um sicherzustellen, dass Sie über die entsprechende Azure AD Connect-Konfiguration verfügen.
 
 - **Adressen**: Listet die FQDNs oder Platzhalter-Domänennamen und IP-Adressbereiche für den Endpunktsatz auf. Beachten Sie, dass IP-Adressbereiche im CIDR-Format angegeben sind und viele Einzel-IP-Adressen im angegebenen Netzwerk einschließen können.
  

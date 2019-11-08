@@ -13,17 +13,18 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Informationen zur Überwachung und Selbstheilungsfunktionen von Office 365.
-ms.openlocfilehash: 75241463d300a6bd7110950934a0501d902040f8
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: bb82a82fffea4602ece258091b75580594ba435f
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067419"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035742"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Office 365 Überwachung und Selbstheilung
+
 Angesichts der Größenordnung von Office 365 wäre es nicht möglich, Kundendaten widerstandsfähig und sicher vor Schadsoftware zu halten, ohne dass die integrierte Überwachung umfassend ist, dass Intelligent ist und die Selbstheilung schnell und zuverlässig ist. Das Überwachen einer Reihe von Diensten auf Office 365 Ebene stellt eine große Herausforderung dar. Neue Denkweise und Methodologien müssen eingeführt werden, und es müssen ganz neue Technologiegruppen erstellt werden, um den Dienst in einer verbundenen globalen Umgebung zu betreiben und zu verwalten. Wir haben uns vom herkömmlichen Überwachungsansatz der Datensammlung und-Filterung abgewandt, um Warnungen für einen Ansatz zu erstellen, der auf der Datenanalyse basiert. Signale annehmen und Vertrauen in diese Daten setzen und dann Automatisierung verwenden, um das Problem wiederherzustellen oder zu beheben. Dieser Ansatz hilft, Menschen aus der Wiederherstellungs Gleichung herausauszufiltern, was wiederum den Betrieb weniger kostspielig, schneller und weniger fehleranfällig macht. 
 
-Grundlegend für Office 365 Überwachung ist eine Sammlung von Technologien, die aus unserem Data Insights-Modul besteht, das auf Azure-, SQL Azure-und [Open-Source-Streaming-Datenbanktechnologie](http://cassandra.apache.org/)basiert. Es dient zum Sammeln und Aggregieren von Daten sowie zum Erreichen von Schlussfolgerungen. Derzeit werden mehr als 500 Millionen Ereignisse pro Stunde von mehr als 100.000 Servern (~ 15 TB pro Tag) auf Dutzende von Rechenzentren in vielen Regionen verteilt, und diese Zahlen wachsen. 
+Grundlegend für Office 365 Überwachung ist eine Sammlung von Technologien, die aus unserem Data Insights-Modul besteht, das auf Azure-, SQL Azure-und [Open-Source-Streaming-Datenbanktechnologie](https://cassandra.apache.org/)basiert. Es dient zum Sammeln und Aggregieren von Daten sowie zum Erreichen von Schlussfolgerungen. Derzeit werden mehr als 500 Millionen Ereignisse pro Stunde von mehr als 100.000 Servern (~ 15 TB pro Tag) auf Dutzende von Rechenzentren in vielen Regionen verteilt, und diese Zahlen wachsen. 
 
 Office 365 verwendet *outside-in-Überwachung*, die das Erstellen synthetischer Transaktionen umfasst, um alles zu testen, was wichtig ist. Beispielsweise testet jedes Szenario in Exchange Online jeder Datenbank alle fünf Minuten auf eine verteilte Art und Weise und bietet nahezu eine kontinuierliche Abdeckung aller Elemente, die im System Leben. Von mehreren Standorten aus werden 250 Millionen Testtransaktionen pro Tag durchgeführt, um eine stabile Basislinie oder einen Takt für den Dienst zu erstellen. 
 
@@ -34,14 +35,17 @@ Basierend auf der Kombination aus der Fehlermeldung und den roten Warnungen gibt
 Zusätzlich zu den Selbstheilungsfunktionen wie der Wiederherstellung einzelner Seiten umfasst Exchange Online mehrere Features, die einen Ansatz zur Überwachung und Selbstheilung, die sich auf die Beibehaltung der Endbenutzeroberfläche konzentrieren. Diese Features umfassen die *verwaltete Verfügbarkeit*, die integrierte Überwachungs-und Wiederherstellungsaktionen bereitstellt, sowie AutoReseed, die die Datenbankredundanz nach einem Datenträgerausfall automatisch wieder herstellt. 
 
 ## <a name="managed-availability"></a>Verwaltete Verfügbarkeit 
-Die verwaltete Verfügbarkeit bietet eine systemeigene Integritätsprüfung und-Wiederherstellungslösung, die die Benutzererfahrung durch Wiederherstellungs orientierte Aktionen überwacht und schützt. Die verwaltete Verfügbarkeit ist die Integration integrierter Überwachungs-und Wiederherstellungsaktionen mit der Exchange-Plattform für hohe Verfügbarkeit. Sie ist dafür vorgesehen, vom System erkannte Probleme sofort zu ermitteln und zu beheben. Im Gegensatz zu früheren externen Überwachungslösungen und -techniken für Exchange versucht die verwaltete Verfügbarkeit nicht, die eigentliche Ursache eines Problems zu ermitteln oder zu kommunizieren. Stattdessen konzentrieren Sie sich auf Wiederherstellungs Aspekte, die drei wichtige Bereiche der Endbenutzererfahrung behandeln: 
+
+Die verwaltete Verfügbarkeit bietet eine systemeigene Integritätsprüfung und-Wiederherstellungslösung, die die Benutzererfahrung durch Wiederherstellungs orientierte Aktionen überwacht und schützt. Die verwaltete Verfügbarkeit ist die Integration integrierter Überwachungs-und Wiederherstellungsaktionen mit der Exchange-Plattform für hohe Verfügbarkeit. Sie ist dafür vorgesehen, vom System erkannte Probleme sofort zu ermitteln und zu beheben. Im Gegensatz zu früheren externen Überwachungslösungen und -techniken für Exchange versucht die verwaltete Verfügbarkeit nicht, die eigentliche Ursache eines Problems zu ermitteln oder zu kommunizieren. Stattdessen konzentrieren Sie sich auf Wiederherstellungs Aspekte, die drei wichtige Bereiche der Endbenutzererfahrung behandeln:
+
 - **Verfügbarkeit** – können Benutzer auf den Dienst zugreifen? 
 - **Latenz** – wie ist die Benutzeroberfläche für Benutzer? 
 - **Fehler** – können Benutzer erreichen, was Sie wünschen? 
 
-Die verwaltete Verfügbarkeit ist ein internes Feature, das auf allen Office 365-Servern ausgeführt wird, auf denen Exchange Online ausgeführt wird. Dabei werden in jeder Sekunde Hunderte von Integritätsmetriken abgerufen. Wenn ein Fehler festgestellt wird, wird die meiste Zeit automatisch behoben. Es gibt jedoch immer Probleme, dass die verwaltete Verfügbarkeit nicht eigenständig behoben werden kann. In diesen Fällen eskaliert die verwaltete Verfügbarkeit das Problem mithilfe der Ereignisprotokollierung an ein Office 365 Support Team. 
+Die verwaltete Verfügbarkeit ist ein internes Feature, das auf allen Office 365-Servern ausgeführt wird, auf denen Exchange Online ausgeführt wird. Dabei werden in jeder Sekunde Hunderte von Integritätsmetriken abgerufen. Wenn ein Fehler festgestellt wird, wird die meiste Zeit automatisch behoben. Es gibt jedoch immer Probleme, dass die verwaltete Verfügbarkeit nicht eigenständig behoben werden kann. In diesen Fällen eskaliert die verwaltete Verfügbarkeit das Problem mithilfe der Ereignisprotokollierung an ein Office 365 Support Team.
 
-## <a name="autoreseed"></a>AutoReseed 
+## <a name="autoreseed"></a>AutoReseed
+
 Exchange Online Server werden in einer Konfiguration bereitgestellt, in der mehrere Datenbanken und deren Protokolldatenströme auf demselben nicht-RAID-Datenträger gespeichert werden. Diese Konfiguration wird häufig *nur als ein Haufen von Datenträgern* (JBOD) bezeichnet, da keine Speicherredundanz Mechanismen wie RAID verwendet werden, um die Daten auf dem Datenträger zu duplizieren. Wenn ein Datenträger in einer JBOD-Umgebung fehlschlägt, gehen die Daten auf diesem Datenträger verloren. 
 
 In Anbetracht der Größe von Exchange Online und der Tatsache, dass darin bereitgestellt werden, sind Millionen von Laufwerken, Festplatten-Fehler sind ein reguläres Ereignis in Exchange Online. Tatsächlich Scheitern mehr als 100 täglich. Wenn ein Datenträger in einer lokalen Unternehmensbereitstellung fehlschlägt, muss ein Administrator den ausgefallenen Datenträger manuell ersetzen und die betroffenen Daten wiederherstellen. In einer Cloud-Bereitstellung ist die Größe von Office 365, wobei Operatoren (Cloud-Administratoren) die Datenträger manuell ersetzen, weder praktisch noch wirtschaftlich machbar sind. 

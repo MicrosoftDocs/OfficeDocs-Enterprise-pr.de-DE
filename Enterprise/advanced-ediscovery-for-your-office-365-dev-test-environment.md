@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d4c49a6f-abfd-4d68-b353-259b4eefb033
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren der Erweiterten eDiscovery in Office 365 mit Beispieldaten in der Office 365-Entwicklungs-/Testumgebung.'
-ms.openlocfilehash: 5f96f25f0ba953e45d6ab89d933f97c2c557a4e8
-ms.sourcegitcommit: 6eb8a32c6899a884cb1c760cbfc134f427c8b6c4
+ms.openlocfilehash: dbd03c1a75b63f4fdaff49db47c8d415f267aaf3
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34726231"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030669"
 ---
 # <a name="advanced-ediscovery-for-your-office-365-devtest-environment"></a>Advanced eDiscovery für die Office 365-Entwicklungs-/Testumgebung
 
@@ -30,7 +30,7 @@ Office 365 Advanced eDiscovery ermöglicht Ihnen das schnelle Auffinden und anal
 Mit den Anweisungen in diesem Artikel erstellen Sie eine kleine Gruppe von Daten für eine fiktive Vertragsstreitigkeit und analysieren diese mit der Erweiterten eDiscovery.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
+> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-create-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -39,7 +39,7 @@ Wenn Sie Advanced eDiscovery nur auf einfache Weise mit den Mindestanforderungen
 Wenn Sie die erweiterte eDiscovery in einem simulierten Unternehmen testen möchten, befolgen Sie die Anweisungen in [Dirsync für Ihre Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Für das Testen von Advanced eDiscovery ist keine simulierte Unternehmensumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Tests und Experimente in einer Umgebung durchführen können, die eine typische Organisation darstellt. 
+> Für das Testen von Advanced eDiscovery ist keine simulierte Unternehmensumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Sie wird hier als Option bereitgestellt, damit Sie Tests und Experimente in einer Umgebung durchführen können, die eine typische Organisation darstellt. 
   
 ## <a name="phase-2-create-example-data-for-advanced-ediscovery"></a>Phase 2: Erstellen von Beispieldaten für die Erweiterte eDiscovery
 
@@ -53,7 +53,7 @@ In diesem Verfahren erstellen Sie E-Mail-Nachrichten, die Sie später in einem e
     
 2. Klicken Sie auf der Registerkarte **Outlook-Mail** auf **Neu**.
     
-3. Geben **Sie in an**die e-Mail-Adresse des Benutzer6-Kontos Ihres Testabonnements ein ( **Benutzer6 @.**<organization name> **. onmicrosoft.com**).
+3. Geben **Sie in an**die e-Mail-Adresse des Benutzer6-Kontos Ihres Testabonnements ein ( **user6@.**<organization name> **. onmicrosoft.com**).
     
 4. Geben Sie für den Betreff **Test-E-Mail 1** ein.
     

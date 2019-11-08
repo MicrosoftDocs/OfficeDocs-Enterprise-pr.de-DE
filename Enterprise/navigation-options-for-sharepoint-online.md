@@ -12,12 +12,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint-Veröffentlichung in SharePoint Online beschrieben. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Dieser Artikel gilt nicht für klassische Teamwebsites.
-ms.openlocfilehash: 10b4e1cbad4fbb570affe43feb6773aa59c5f2f3
-ms.sourcegitcommit: 77a25920511c54d7d613f552bdff7ad14cdd8324
+ms.openlocfilehash: fa180e1904ef57f28e512c6d6ff163f2f4a483ad
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36385203"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031260"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
@@ -40,7 +40,7 @@ Diese Navigationsanbieter haben einige wichtige Vorteile:
 
 Ein Beispiel für einen Datenanbieter ist die Verwendung einer **Such gesteuerten Navigation**, die Flexibilität beim Aufzählen von Navigationsknoten und der effizienten Handhabung von Sicherheits Trimmungen ermöglicht. 
 
-Es gibt andere beliebte Optionen zum Erstellen **benutzerdefinierter Navigationsanbieter**. Weitere Anleitungen zum Erstellen eines benutzerdefinierten Navigations Anbieters finden Sie unter [Navigationslösungen für SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) -Portale.
+Es gibt andere beliebte Optionen zum Erstellen **benutzerdefinierter Navigationsanbieter**. Weitere Anleitungen zum Erstellen eines benutzerdefinierten Navigations Anbieters finden Sie unter [Navigationslösungen für SharePoint Online-Portale](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) .
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vorteile und Nachteile von SharePoint Online Navigationsoptionen
 
@@ -450,15 +450,15 @@ Die Objekte werden dann in ein Ergebnisarray eingefügt. Dieses Array wird mithi
 
 ### <a name="benefits-of-this-approach"></a>Vorteile dieses Ansatzes
 
-Ein wesentlicher Vorteil [dieses](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) Ansatzes ist, dass die Navigation bei Verwendung des lokalen HTML5-Speichers lokal für den Benutzer gespeichert wird, wenn Sie das nächste Mal die Seite laden. Bei der Verwendung der Such-API für die strukturelle Navigation erhalten wir deutliche Leistungsverbesserungen. Es erfordert jedoch einige technische Funktionen zum Ausführen und Anpassen dieser Funktionalität. 
+Ein wesentlicher Vorteil [dieses Ansatzes](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) ist, dass die Navigation bei Verwendung des lokalen HTML5-Speichers lokal für den Benutzer gespeichert wird, wenn Sie das nächste Mal die Seite laden. Bei der Verwendung der Such-API für die strukturelle Navigation erhalten wir deutliche Leistungsverbesserungen. Es erfordert jedoch einige technische Funktionen zum Ausführen und Anpassen dieser Funktionalität. 
 
 In der [Beispielimplementierung](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)werden die Websites auf die gleiche Weise wie die standardmäßige Struktur Navigation sortiert. alphabetische Reihenfolge. Wenn Sie von dieser Reihenfolge abweichen möchten, wäre es komplizierter zu entwickeln und zu warten. Bei dieser Vorgehensweise müssen Sie auch von den unterstützten Masterseiten abweichen. Wenn die benutzerdefinierte Gestaltungsvorlage nicht beibehalten wird, verpasst ihre Website Updates und Verbesserungen, die Microsoft an den Gestaltungsvorlagen vornimmt.
 
 Der [obige Code](#about-the-javascript-file) hat die folgenden Abhängigkeiten:
 
-- jQueryhttp://jquery.com/
-- KnockoutJS -http://knockoutjs.com/
-- LINQ. js- http://linqjs.codeplex.com/oder GitHub.com/neuecc/LINQ.js
+- jQueryhttps://jquery.com/
+- KnockoutJS -https://knockoutjs.com/
+- LINQ. js- https://linqjs.codeplex.com/oder GitHub.com/neuecc/LINQ.js
 
 Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode, die im obigen Code verwendet wird, und der Navigationscode wird unterbrochen. Um dies zu beheben, fügen Sie die folgende Methode zur Datei LINQ. js vor der `Flatten: function ()`-Verbindung hinzu.
 

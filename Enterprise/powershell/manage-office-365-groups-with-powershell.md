@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Erfahren Sie, wie Sie allgemeine Verwaltungsaufgaben für Office 365-Gruppen in Microsoft PowerShell ausführen.
-ms.openlocfilehash: 7e07041516acd3c2038dd92b464073279c49d1a6
-ms.sourcegitcommit: d388c76d25ca67f240db97f7bfc90f0991b0e7f8
-ms.translationtype: HT
+ms.openlocfilehash: 94aa95de79099b45ea05533e7c22959b9bdf7669
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "37017343"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031000"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Verwalten von Office 365-Gruppen mit PowerShell
 
@@ -46,7 +46,7 @@ Verwenden Sie Azure Active Directory PowerShell, um die Benutzer auf die Nutzung
   
 Wenn Sie den Office 365-Gruppen das "Senden als" gestatten möchten, verwenden Sie die Cmdlets [Add-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Add-RecipientPermission) und [Get-RecipientPermission](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient), um dies zu konfigurieren. Sobald Sie diese Einstellung aktiviert haben, können Office 365-Gruppenbenutzer Outlook oder Outlook im Web verwenden, um E-Mails als Office 365-Gruppe zu senden oder darauf zu antworten. Benutzer können zur Gruppe wechseln, eine neue E-Mail erstellen und das Feld "Senden als" in die E-Mail-Adresse der Gruppe ändern. 
 
-([Sie können diesen Schritt auch im Exchange Admin Center ausführen](https://docs.microsoft.com/de-DE/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)).
+([Sie können diesen Schritt auch im Exchange Admin Center ausführen](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)).
   
 Verwenden Sie das folgende Skript, wobei Sie *\<GroupAlias\>* durch den Alias der Gruppe ersetzen, die Sie aktualisieren möchten, und *\<UserAlias\>* durch den Alias des Benutzers, dem Sie Berechtigungen gewähren möchten. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell), um das Skript auszuführen.
 
@@ -186,9 +186,9 @@ Die folgenden Cmdlets können mit Office 365-Gruppen verwendet werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Upgraden von Verteilerlisten zu Office 365-Gruppen](https://docs.microsoft.com/de-DE/office365/admin/manage/upgrade-distribution-lists)
+[Upgraden von Verteilerlisten zu Office 365-Gruppen](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[Verwalten von Personen, die Office 365-Gruppen erstellen können](https://docs.microsoft.com/de-DE/office365/admin/create-groups/manage-creation-of-groups)
+[Verwalten von Personen, die Office 365-Gruppen erstellen können](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [Verwalten des Gastzugriffs auf Office 365-Gruppen](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

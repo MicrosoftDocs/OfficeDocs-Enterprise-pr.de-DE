@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Neues Rechenzentrum GEOS Kapazität hinzufügen und Ressourcen berechnen, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online Websiteinhalt und die Dateien in dieser Website gespeichert und in OneDrive für Unternehmen hochgeladene Dateien.'
-ms.openlocfilehash: df52b50f6e291a80aeb7b8d783937d225bfb6e29
-ms.sourcegitcommit: 842ac51577317dfc8d2adc46d09b4d735f29bc4f
+ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35907638"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032190"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 
@@ -48,7 +48,7 @@ Eine vollständige Liste aller GEOSS, Rechenzentren und des Speicherorts von Kun
   
 ## <a name="data-residency-option"></a>Data Residency-Option
 
-Wir stellen eine Data Residency-Option für vorhandene Office 365 Kunden bereit, die unter das in der obigen Tabelle aufgeführte Datencenter-GEOS fallen. Mit dieser Option können Kunden mit Daten Wohnsitz Anforderungen eine frühe Migration der wichtigsten Kundendaten Ihrer Organisation in Ruhe auf Ihr neues Rechenzentrum Geo anfordern.  Microsoft bietet allen berechtigten Kunden, die eine frühe Migration für das Registrierungsfenster anfordern, eine festgeschriebene Frist an.  Lesen Sie auf der Seite Vorgehens [Weise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) weitere Details zum Registrierungsfenster für Ihr Geo und zu den Schritten zum Registrieren im Programm.  Datenverschiebungen können bis zu 24 Monate nach Abschluss des anforderungszeitraums dauern.
+Wir stellen eine Data Residency-Option für vorhandene Office 365 Kunden bereit, die unter das in der obigen Tabelle aufgeführte Datencenter-GEOS fallen. Mit dieser Option können Kunden mit Daten Wohnsitz Anforderungen eine frühe Migration der wichtigsten Kundendaten Ihrer Organisation in Ruhe auf Ihr neues Rechenzentrum Geo anfordern.  Microsoft bietet allen berechtigten Kunden, die eine frühe Migration für das Registrierungsfenster anfordern, eine festgeschriebene Frist an.  Lesen Sie auf der Seite [Vorgehensweise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) weitere Details zum Registrierungsfenster für Ihr Geo und zu den Schritten zum Registrieren im Programm.  Datenverschiebungen können bis zu 24 Monate nach Abschluss des anforderungszeitraums dauern.
 
 Wenn keine Aktion durchgeführt wird, kann Microsoft im Rahmen der Dienstverwaltung und-Optimierung im Laufe der Zeit ihre Kernkunden Daten in Ruhe auf Ihre neue Rechenzentrum-geografische Position umstellen.Ihre Kernkunden Daten können nur möglicherweise zu Ihrem neuen Geo-Rechenzentrum und nicht zu einem anderen Geo umsteigen.Wir werden mandantenadministratoren über das Nachrichten Center Benachrichtigen, wenn eine solche Dienst Verwaltungs Verschiebung abgeschlossen wurde, und den Datenspeicherort in Admin Center aktualisieren.
    
@@ -68,4 +68,4 @@ Datenverschiebungen in das neue Rechenzentrum Geo werden ohne zusätzliche Koste
   
 [Neues Datacenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure-Dienste nach Region](https://azure.microsoft.com/en-us/regions/)
+[Azure-Dienste nach Region](https://azure.microsoft.com/regions/)

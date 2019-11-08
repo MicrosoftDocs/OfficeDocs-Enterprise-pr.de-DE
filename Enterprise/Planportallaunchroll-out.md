@@ -11,15 +11,15 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: In diesem Artikel wird beschrieben, wie Sie den Start Ihres Portals in SharePoint Online planen und welche Schritte Sie für einen erfolgreichen Start ausführen können.
-ms.openlocfilehash: 8985ffb4b477ee70f0bf35489ce48fd72f8e4c86
-ms.sourcegitcommit: 739024fe2862ab646b36e218b57c5cc16ebe7892
+ms.openlocfilehash: cbb2c58498f682d68ac464d224522361a085b062
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37422156"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027659"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planen des Rollout Plans für den Portal Start in SharePoint Online
-Ein Portal ist die standardmäßige SharePoint-Website für Ihr Unternehmen. in großen Organisationen kann es mehrere von diesen geben. Wenn Sie davon ausgehen, dass mehr als 20% Ihrer Benutzer in Ihrer Organisation auf die Seite zugreifen können, sollten Sie sich eine Portalseite ansehen. Dies sollte nicht mit einer Teamwebsite verwechselt werden, die Ihre Abteilung verwendet, um zusammenzuarbeiten und Dokumente in Ihrem Team freizugeben.
+Ein Portal ist die standardmäßige SharePoint-Website für Ihr Unternehmen. in großen Organisationen kann es mehrere von diesen geben. Wenn Sie davon ausgehen, dass mehr als 20 % der Benutzer in Ihrer Organisation auf die Seite zugreifen können, ist dies als Portalseite zu betrachten. Dies ist nicht mit einer Teamwebsite zu verwechseln. Eine Teamwebsite wird von Ihrer Abteilung für die Zusammenarbeit und zum Freigeben von Dokumenten innerhalb Ihres Teams verwendet.
 
 In diesem Artikel wird beschrieben, wie Sie die Bereitstellung und den Rolloutplan für SharePoint Online planen. Es bietet auch Ansätze, die befolgt werden, da herkömmliche Auslastungstests für SharePoint Online nicht zulässig sind. SharePoint Online ist ein clouddienst, und die Ladefunktionen, die Integrität und die Gesamtlastverteilung im Dienst werden von Microsoft verwaltet.
 
@@ -28,14 +28,14 @@ Um bei der Erstellung eines erfolgreichen Portals zu helfen, befolgten Sie die G
 Der Bereitstellungsansatz ist unten hervorgehoben.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Übersicht über die Kapazitätsplanung in SharePoint Online
-Um die Kapazität effizient zu nutzen und unerwartetes Wachstum zu bewältigen, gibt es in jeder Farm Automatisierung, die bestimmte Nutzungsszenarien verfolgt. Während das exakte Wachstum für einen beliebigen Mandanten in einer Farm unvorhersehbar ist, ist die aggregierte Summe von Anforderungen im Laufe der Zeit vorhersehbar. Durch die Ermittlung der Wachstumstrends in SharePoint Online können wir die zukünftige Expansion planen. Weitere Informationen zur [Kapazitätsplanung und zu Auslastungstests SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
+Um die Kapazität effizient zu nutzen und unerwartetes Wachstum zu bewältigen, gibt es in jeder Farm Automatisierung, die bestimmte Nutzungsszenarien verfolgt. Während das exakte Wachstum für einen beliebigen Mandanten in einer Farm unvorhersehbar ist, ist die aggregierte Summe von Anforderungen im Laufe der Zeit vorhersehbar. Durch die Ermittlung der Wachstumstrends in SharePoint Online können wir die zukünftige Expansion planen. Weitere Informationen zur [Kapazitätsplanung und zu Auslastungstests SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
 
 Ein wichtiger Bestandteileines erfolgreichen Starts ist der unten aufgeführte "Wave"-oder "Phased-Rollout"-Ansatz. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>Kann ich Test SharePoint Online Laden?
 SharePoint Online ist eine gemeinsam genutzte Umgebung mit mehreren Mandanten, die über mehrere Farmen hinweg ausgeglichen ist und die Skalierung laufend angepasst wird. Auslastungstests einer Umgebung wie SharePoint Online, deren Skalierungsänderungen nicht nur unerwartete Ergebnisse liefern, sondern auch nicht zulässig sind. 
 
-Weitere Informationen: [Kapazitätsplanung und Auslastungstests SharePoint Online](https://docs.microsoft.com/en-us/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+Weitere Informationen: [Kapazitätsplanung und Auslastungstests SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimieren von Seiten mit den empfohlenen Richtlinien
 Seiten aus einer lokalen Bereitstellung sollten nicht einfach so verschoben werden, wie Sie auf SharePoint Online sind, ohne Sie anhand der empfohlenen Richtlinien für SharePoint Online zu überprüfen. Der beste Ansatz besteht darin, jede Startseite für jede Website oder jedes Portal in SharePoint immer zu optimieren, da auf diese Weise die meisten Benutzer in Ihrer Organisation als Ausgangspunkt für Ihre Website (en) zugreifen können.

@@ -13,12 +13,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: In diesem Artikel wird beschrieben, wie Sie Minimierungs-und Kopplungstechniken mit WebEssentials verwenden, um die Anzahl der HTTP-Anforderungen zu reduzieren und die Zeit zu reduzieren, die zum Laden von Seiten in SharePoint Online benötigt wird.
-ms.openlocfilehash: 823011894019e9602d949f1301994d79dc209664
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3303ea49a1308e4ad7b3139547c20b4351fc84b5
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616848"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031310"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimierung und Bündelung in SharePoint Online
 
@@ -33,7 +33,7 @@ Bei JavaScript-und CSS-Dateien können Sie auch einen Ansatz namens "Minimierung
 Sie können Drittanbietersoftware wie WebEssentials verwenden, um CSS-und JavaScript-Dateien zu bündeln.
   
 > [!IMPORTANT]
-> WebEssentials ist ein Open-Source-Projekt von Drittanbietern, das auf communitybasis basiert. Die Software ist eine Erweiterung für Visual Studio 2012 und Visual Studio 2013 und wird von Microsoft nicht unterstützt. Um Web Essentials herunterzuladen, besuchen Sie die [http://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)Website unter. 
+> WebEssentials ist ein Open-Source-Projekt von Drittanbietern, das auf communitybasis basiert. Die Software ist eine Erweiterung für Visual Studio 2012 und Visual Studio 2013 und wird von Microsoft nicht unterstützt. Um Web Essentials herunterzuladen, besuchen Sie die [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)Website unter. 
   
 WebEssentials bietet zwei Formen der Bündelung:
   
@@ -49,7 +49,7 @@ Sie können WebEssentials verwenden, wenn Sie ein vorhandenes Feature mit einige
   
 1. Wählen Sie in Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle einschließen möchten.
     
-2. Klicken Sie mit der rechten Maustaste auf die ausgewählten **** \> Dateien, und wählen Sie dann im Kontextmenü die Option WebEssentials **Create JavaScript Bundle File** aus. Zum Beispiel: 
+2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create JavaScript Bundle File** aus. Zum Beispiel: 
     
     ![Screenshot mit WebEssentials-Menü Optionen](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -85,7 +85,7 @@ Nach dem bündeln wird die JavaScript-Bundle-Datei erheblich von 815KB auf 365KB
   
 1. Wählen Sie in Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle einschließen möchten.
     
-2. Klicken Sie mit der rechten Maustaste auf die ausgewählten **** \> Dateien, und wählen Sie dann im Kontextmenü die Option WebEssentials **Create Image Sprite** aus. Zum Beispiel: 
+2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create Image Sprite** aus. Zum Beispiel: 
     
     ![Screenshot, der zeigt, wie ein Bild Sprite erstellt wird](media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

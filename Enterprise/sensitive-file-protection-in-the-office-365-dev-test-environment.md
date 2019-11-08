@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 27ecff45-06a6-4629-bc45-9dab4eef3a21
 description: 'Zusammenfassung: Konfigurieren und veranschaulichen, wie Office 365 Verwaltung von Informationsrechten Ihre vertraulichen Dateien schützt, auch wenn Sie in die falsche SharePoint Online Websitesammlung geschrieben werden.'
-ms.openlocfilehash: 9608bf68ced2f286f788dd94dfc27755f5ff23c0
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 3fa771d63ca30fb53ac2c77466546cf3a2098deb
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782495"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031570"
 ---
 # <a name="sensitive-file-protection-in-the-office-365-devtest-environment"></a>Schutz vertraulicher Dateien in Office 365-Entwicklungs-/-Testumgebungen
 
@@ -32,7 +32,7 @@ Information Rights Management (IRM) in Office 365 umfasst eine Reihe von Funktio
 Mithilfe der Anleitungen in diesem Artikel können Sie IRM in Office 365 für Dateien aktivieren und testen, die in Ihrem Office 365-Testabonnement möglicherweise vertrauliche Informationen enthalten.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
+> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -41,7 +41,7 @@ Wenn Sie den Schutz vertraulicher Dateien auf einfache Weise mit Minimalanforder
 Wenn Sie den Schutz vertraulicher Dateien in einer simulierten Unternehmensumgebung testen möchten, folgen Sie den Anweisungen unter [DirSync for your Office 365 dev/test environment](dirsync-for-your-office-365-dev-test-environment.md).
   
 > [!NOTE]
-> Zum Testen des Schutzes vertraulicher Dateien ist keine simulierte Enterprise-Entwicklungs-/Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie den Schutz vertraulicher Dateien testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
+> Zum Testen des Schutzes vertraulicher Dateien ist keine simulierte Enterprise-Entwicklungs-/Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie den Schutz vertraulicher Dateien testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
   
 ## <a name="phase-2-demonstrate-how-documents-from-permissions-protected-sites-can-be-leaked"></a>Phase 2: Demonstriert, wie Dokumente von Websites, die durch Berechtigungen geschützt sind, anderweitig (und möglicherweise missbräuchlich) verwendet werden können.
 
@@ -92,7 +92,7 @@ Notieren Sie aus der **New-MsolUser**-Befehlsanzeige das Kennwort, das für das 
   
 Im nächsten Schritt erstellen Sie eine private Führungskräftegruppe und fügen dieser die neuen Führungskräftekonten hinzu.
   
-1. Wechseln Sie in Ihrem Browser zum Office-Portal unter [http://admin.microsoft.com](http://admin.microsoft.com) , und melden Sie sich bei Ihrem Office 365 Testabonnement mit ihrem globalen Administratorkonto an.
+1. Wechseln Sie in Ihrem Browser zum Office-Portal unter [https://admin.microsoft.com](https://admin.microsoft.com) , und melden Sie sich bei Ihrem Office 365 Testabonnement mit ihrem globalen Administratorkonto an.
     
   - Wenn Sie die einfache Office 365-Entwicklungs-/Testumgebung verwenden, öffnen Sie eine private Sitzung in Internet Explorer bzw. in dem von Ihnen bevorzugten Browser, und melden Sie sich von Ihrem lokalen Computer aus an.
     
@@ -166,7 +166,7 @@ Als Nächstes melden Sie sich mit einem Führungskräftekonto an und erstellen e
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Klicken Sie auf der **Office 365-Anmeldeseite** auf **Anderes Konto verwenden**.
     
@@ -204,7 +204,7 @@ Als Nächstes melden Sie sich als Benutzer5 an und versuchen, das Dokument „Ve
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Klicken Sie auf der **Office 365-Anmeldeseite** auf **Anderes Konto verwenden**.
     
@@ -224,7 +224,7 @@ Um Office 365 für die Phasen 3 und 4 vorzubereiten, aktivieren Sie IRM für Sh
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Klicken Sie auf der **Office 365-Anmeldeseite** auf den Namen des globalen Administratorkontos, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     
@@ -280,7 +280,7 @@ Im nächsten Schritt fungieren Sie als CEO und laden ein neues Dokument in den D
     
 5. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** in Ihrem Browser auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-6. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
+6. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
     
 7. Klicken Sie auf der **Office 365-Anmeldeseite** auf den Namen des CEO-Kontos, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     
@@ -306,7 +306,7 @@ Als Nächstes fungieren Sie als normaler Benutzer und versuchen, auf das Dokumen
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** in Ihrem Browser auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
     
 3. Klicken Sie auf der **Office 365 Anmelde** Seite auf den Kontonamen des Namen, geben Sie das Kennwort ein, und klicken Sie dann auf **Anmelden**.
     

@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 81c4be5f-327e-435d-a568-526d68cffef0
 description: In diesem Artikel wird erläutert, welche Aspekte beim Entwerfen von Seiten für eine optimale Leistung in SharePoint Online berücksichtigt werden müssen.
-ms.openlocfilehash: d0dc4d6eac1a8711d1c93b97eccbf5474092d3af
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3c2c6ccc58659aceaaf831b97eb8c4c05141afce
+ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616678"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38033401"
 ---
 # <a name="introduction-to-performance-tuning-for-sharepoint-online"></a>Einführung in die Leistungsoptimierung für SharePoint Online
 
@@ -124,7 +126,7 @@ Unabhängig davon, welche Version von SharePoint (und welches Netzwerk) Sie verw
     
 - Großer physikalischer Abstand zum Server
     
-Ein Feature, das Sie in SharePoint Online nutzen können, ist das Microsoft CDN (Content Delivery Network). Ein CDN ist im Grunde eine verteilte Sammlung von Servern, die in mehreren Rechenzentren bereitgestellt werden. Bei einem CDN können Inhalte auf Seiten auf einem Server in der Nähe des Clients gehostet werden, auch wenn der Client weit vom ursprünglichen SharePoint Server entfernt ist. Dies wird von Microsoft in Zukunft noch häufiger verwendet, um lokale Instanzen von Seiten zu speichern, die nicht angepasst werden können, beispielsweise die Startseite SharePoint Online Administrators. Weitere Informationen zu CDNs finden Sie unter [Content Delivery Networks](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks).
+Ein Feature, das Sie in SharePoint Online nutzen können, ist das Microsoft CDN (Content Delivery Network). Ein CDN ist im Grunde eine verteilte Sammlung von Servern, die in mehreren Rechenzentren bereitgestellt werden. Bei einem CDN können Inhalte auf Seiten auf einem Server in der Nähe des Clients gehostet werden, auch wenn der Client weit vom ursprünglichen SharePoint Server entfernt ist. Dies wird von Microsoft in Zukunft noch häufiger verwendet, um lokale Instanzen von Seiten zu speichern, die nicht angepasst werden können, beispielsweise die Startseite SharePoint Online Administrators. Weitere Informationen zu CDNs finden Sie unter [Content Delivery Networks](https://docs.microsoft.com/office365/enterprise/content-delivery-networks).
   
 Was Sie beachten müssen, aber möglicherweise nicht viel zu tun haben, ist die Verbindungsgeschwindigkeit Ihres ISP. Ein einfaches Test Tool für Geschwindigkeitstests informiert Sie über die Verbindungsgeschwindigkeit.
   
@@ -158,6 +160,6 @@ Lesen Sie die folgenden Artikel für verschiedene Techniken zur SharePoint Onlin
     
 - [Verwenden des Objektcaches mit SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
     
-- [Gewusst wie: Vermeiden von Einschränkungen oder Sperren in SharePoint Online](https://msdn.microsoft.com/en-us/library/office/dn889829.aspx)
+- [Gewusst wie: Vermeiden von Einschränkungen oder Sperren in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
     
 

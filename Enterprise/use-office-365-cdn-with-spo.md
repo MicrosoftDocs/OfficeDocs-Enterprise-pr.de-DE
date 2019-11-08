@@ -15,12 +15,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Beschreibt, wie das Office 365-Inhalts Zustellungs Netzwerk (CDN) verwendet wird, um die Zustellung Ihrer SharePoint Online Ressourcen an alle Benutzer zu beschleunigen, unabhängig davon, wo Sie sich befinden oder wie Sie auf Ihre Inhalte zugreifen.
-ms.openlocfilehash: dc08ae1cc54e17e5d7f1c3c717bfd254b6cf962d
-ms.sourcegitcommit: 7f82f6f0146aba0ef5553559ad4e7014ac591769
+ms.openlocfilehash: 60016fff28ca7c71555e141ef479d32fdd6d7856
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37643298"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031430"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
@@ -218,7 +218,7 @@ Geben Sie den folgenden Befehl ein, um Ihre Organisation für die Verwendung pri
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $true
 ```
 
-Weitere Informationen zu diesem Cmdlet finden Sie unter [Sets-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
+Weitere Informationen zu diesem Cmdlet finden Sie unter [Sets-SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
 
 <a name="Office365CDNforSPOFileType"> </a>
 ### <a name="change-the-list-of-file-types-to-include-in-the-office-365-cdn-optional"></a>Ändern der Liste der Dateitypen, die in das Office 365 CDN eingeschlossen werden sollen (optional)
@@ -246,7 +246,7 @@ Verwenden Sie das Cmdlet **Get-SPOTenantCdnPolicies** , um zu sehen, welche Date
 Get-SPOTenantCdnPolicies -CdnType <Public | Private>
 ```
 
-Weitere Informationen zu diesen Cmdlets finden Sie unter [Sets-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) und [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
+Weitere Informationen zu diesen Cmdlets finden Sie unter [Sets-SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) und [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
 
 <a name="Office365CDNforSPOSiteClassification"> </a>
 ### <a name="change-the-list-of-site-classifications-you-want-to-exclude-from-the-office-365-cdn-optional"></a>Ändern Sie die Liste der Website Klassifizierungen, die Sie aus dem Office 365 CDN ausschließen möchten (optional).
@@ -279,7 +279,7 @@ Die _ExcludeRestrictedSiteClassifications_ -Eigenschaft enthält die Website Kla
 
 Die _ExcludeIfNoScriptDisabled_ -Eigenschaft schließt Inhalte aus dem CDN basierend auf den _NoScript_ -Attributeinstellungen auf Websiteebene aus. Standardmäßig ist das _NoScript_ -Attribut auf für _moderne_ Websites **aktiviert** und für _klassische_ Websites **deaktiviert** festgelegt. Dies hängt von ihren Mandanten Einstellungen ab.
 
-Weitere Informationen zu diesen Cmdlets finden Sie unter [Sets-SPOTenantCdnPolicy](https://technet.microsoft.com/en-us/library/mt800839.aspx) und [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/en-us/library/mt800838.aspx).
+Weitere Informationen zu diesen Cmdlets finden Sie unter [Sets-SPOTenantCdnPolicy](https://technet.microsoft.com/library/mt800839.aspx) und [Get-SPOTenantCdnPolicies](https://technet.microsoft.com/library/mt800838.aspx).
 
 <a name="Office365CDNforSPOOrigin"> </a>
 ### <a name="add-an-origin-for-your-assets"></a>Hinzufügen eines Ursprungs für Ihre Objekte
@@ -326,7 +326,7 @@ Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/test/siteassets/folder%
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl "sites/test/siteassets/folder 1"
 ```
 
-Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 > [!NOTE]
 > In privaten Quellen muss für Objekte, die von einem Ursprung freigegeben werden, eine Hauptversion veröffentlicht werden, bevor auf Sie über das CDN zugegriffen werden kann.
@@ -350,7 +350,7 @@ Normalerweise werden diese Ursprünge standardmäßig für Sie eingerichtet, wen
   Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
   ```
 
-Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfiguration über das Datencenter hinweg. Dies kann bis zu 15 Minuten dauern.
 
@@ -375,20 +375,20 @@ Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfigur
   Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl */publishingimages
   ```
 
-Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
 
 Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfiguration über das Datencenter hinweg. Dies kann bis zu 15 Minuten dauern.
 
 <a name="ExamplePrivateOriginSiteCollection"> </a>
 ### <a name="example-configure-a-private-origin-for-a-site-collection-for-sharepoint-online"></a>Beispiel: Konfigurieren eines privaten Ursprungs für eine Websitesammlung für SharePoint Online
 
-Verwenden Sie das Cmdlet **Add-SPOTenantCdnOrigin** , um eine Websitesammlung als privaten Ursprung zu definieren. Beispiel:
+Verwenden Sie das Cmdlet **Add-SPOTenantCdnOrigin** , um eine Websitesammlung als privaten Ursprung zu definieren. Zum Beispiel:
 
 ``` powershell
 Add-SPOTenantCdnOrigin -CdnType Private -OriginUrl sites/site1/siteassets
 ```
 
-Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790772.aspx).
+Weitere Informationen zu diesem Befehl und seiner Syntax finden Sie unter [Add-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790772.aspx).
   
 Nachdem Sie den Befehl ausgeführt haben, synchronisiert das System die Konfiguration über das Datencenter hinweg. Möglicherweise wird eine _ausstehende Konfigurations_ Meldung angezeigt, die erwartet wird, wenn der SharePoint Online-Mandant eine Verbindung mit dem CDN-Dienst herstellt. Dies kann bis zu 15 Minuten dauern.
 
@@ -402,7 +402,7 @@ Nachdem Sie das CDN eingerichtet haben, können Sie, wie in diesem Abschnitt bes
 
 Nachdem Sie die Setupschritte abgeschlossen haben, können Sie neue Objekte hinzufügen und vorhandene Objekte aktualisieren oder entfernen, wann immer Sie möchten. Nehmen Sie einfach Ihre Änderungen an den Objekten im Ordner oder in der SharePoint-Bibliothek vor, die Sie als Ursprung identifiziert haben. Wenn Sie ein neues Objekt hinzufügen, steht es sofort über das CDN zur Verfügung. Wenn Sie das Objekt aktualisieren, dauert es jedoch bis zu 15 Minuten, bis die neue Kopie weitergegeben wird und im CDN verfügbar ist.
   
-Wenn Sie den Speicherort des Ursprungs abrufen möchten, können Sie das Cmdlet **Get-spotenantcdnorigins ausführen** verwenden. Informationen zur Verwendung dieses Cmdlets finden Sie unter [Get-spotenantcdnorigins ausführen](https://technet.microsoft.com/en-us/library/mt790770.aspx).
+Wenn Sie den Speicherort des Ursprungs abrufen möchten, können Sie das Cmdlet **Get-spotenantcdnorigins ausführen** verwenden. Informationen zur Verwendung dieses Cmdlets finden Sie unter [Get-spotenantcdnorigins ausführen](https://technet.microsoft.com/library/mt790770.aspx).
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="remove-an-origin-from-the-office-365-cdn"></a>Entfernen eines Ursprungs aus dem Office 365 CDN
@@ -413,7 +413,7 @@ Sie können den Zugriff auf einen Ordner oder eine SharePoint-Bibliothek, den Si
 Remove-SPOTenantCdnOrigin -OriginUrl <path> -CdnType <Public | Private | Both>
 ```
 
-Informationen zur Verwendung dieses Cmdlets finden Sie unter [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/en-us/library/mt790761.aspx).
+Informationen zur Verwendung dieses Cmdlets finden Sie unter [Remove-SPOTenantCdnOrigin](https://technet.microsoft.com/library/mt790761.aspx).
 
 <a name="Office365CDNforSPORemoveOrigin"> </a>
 #### <a name="modify-an-origin-in-the-office-365-cdn"></a>Ändern eines Ursprungs im Office 365 CDN
@@ -437,7 +437,7 @@ Geben Sie den folgenden Befehl ein, um die Verwendung der privaten Ursprünge im
 Set-SPOTenantCdnEnabled -CdnType Private -Enable $false
 ```
 
-Weitere Informationen zu diesem Cmdlet finden Sie unter [Sets-SPOTenantCdnEnabled](https://technet.microsoft.com/en-us/library/mt790765.aspx).
+Weitere Informationen zu diesem Cmdlet finden Sie unter [Sets-SPOTenantCdnEnabled](https://technet.microsoft.com/library/mt790765.aspx).
 
 </details>
 
@@ -578,7 +578,7 @@ In diesem Abschnitt erfahren Sie, wie Sie CDN-URLs in SharePoint-Seiten und-Inha
 + [Verwenden von Objekten im öffentlichen Ursprung](use-office-365-cdn-with-spo.md#using-assets-in-public-origins)
 + [Verwenden von Objekten im privaten Ursprung](use-office-365-cdn-with-spo.md#using-assets-in-private-origins)
 
-Informationen zum Verwenden des CDN zum Hosten clientseitiger Webparts finden Sie im Thema Hosten des [clientseitigen Webparts aus Office 365 CDN (Hello World Teil 4)](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
+Informationen zum Verwenden des CDN zum Hosten clientseitiger Webparts finden Sie im Thema Hosten des [clientseitigen Webparts aus Office 365 CDN (Hello World Teil 4)](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/hosting-webpart-from-office-365-cdn).
 
 ### <a name="updating-links-to-cdn-assets"></a>Aktualisieren von Links zu CDN-Objekten
 
@@ -588,7 +588,7 @@ Um Objekte zu verwenden, die Sie einem Ursprung hinzugefügt haben, aktualisiere
 + Ersetzen Sie für jeden Link zu einem Objekt in einem Ursprung den Pfad durch den Pfad zu der Datei im CDN-Ursprung. Sie können relative Pfade verwenden.
 + Speichern Sie die Seite oder den Inhalt.
 
-Sehen Sie sich beispielsweise das Bild _/Site/SiteAssets/Images/Image.png_an, das Sie in den Dokumentbibliotheksordner _/Site/CDN_origins/Public/_ kopiert haben. Um das CDN-Objekt zu verwenden, ersetzen Sie den ursprünglichen Pfad zum Speicherort der Image-Datei durch den Pfad zum Ursprung, um die neue URL _/Site/CDN_origins/Public/Image.png_zu machen.
+Sehen Sie sich beispielsweise das Bild _/Site/SiteAssets/Images/Image.png_an, das Sie in den Dokumentbibliotheksordner _/Site/CDN_origins/Public/_ kopiert haben. Um das CDN-Objekt zu verwenden, ersetzen Sie den ursprünglichen Pfad zum Speicherort der Bild Datei durch den Pfad zum Ursprung, um die neue URL _/Site/CDN_origins/Public/Image.png_zu erstellen.
 
 Wenn Sie die vollständige URL für das Objekt anstelle eines relativen Pfads verwenden möchten, erstellen Sie den Link wie folgt:
 
@@ -655,7 +655,7 @@ Das folgende Diagramm veranschaulicht den Workflow, wenn SharePoint eine Anforde
 
 Der Zugriff auf Objekte im privaten Ursprung im Office 365 CDN wird durch von SharePoint Online generierte Token gewährt. Benutzer, die bereits über Berechtigungen für den Zugriff auf den vom Ursprung benannten Ordner oder die Bibliothek verfügen, erhalten automatisch Token, die dem Benutzer den Zugriff auf die Datei basierend auf Ihrer Berechtigungsstufe ermöglichen. Diese Zugriffstoken sind gültig für 30 bis 90 Minuten, nachdem Sie generiert wurden, um die Wiedergabe von Token zu schützen.
 
-Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter " _Eat_ " (Edge Authorization Token) und _OAT_ (Origin Authorization Token) enthält. Die Struktur der einzelnen Token ist _< "Ablaufzeit im Epoch Time-Format" >__< "Secure Signature" >_. Beispiel:
+Nachdem das Zugriffstoken generiert wurde, gibt SharePoint Online einen benutzerdefinierten URI an den Client zurück, der zwei Autorisierungsparameter " _Eat_ " (Edge Authorization Token) und _OAT_ (Origin Authorization Token) enthält. Die Struktur der einzelnen Token ist _< "Ablaufzeit im Epoch Time-Format" >__< "Secure Signature" >_. Zum Beispiel:
 
 ``` html
 https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg?eat=1486154359_cc59042c5c55c90b26a2775323c7c8112718431228fe84d568a3795a63912840&oat=1486154359_7d73c2e3ba4b7b1f97242332900616db0d4ffb04312
@@ -690,7 +690,7 @@ Sie können auch die Entwicklertools Ihres Browsers verwenden, um die URL für j
 
 Sie können CDN-URLs nicht direkt in einem Webbrowser testen, da ein Referrer aus SharePoint Online stammen muss. Wenn Sie jedoch die CDN-Ressourcen-URL zu einer SharePoint-Seite hinzufügen und dann die Seite in einem Browser öffnen, wird das auf der Seite gerenderte CDN-Objekt angezeigt.
 
-Weitere Informationen zur Verwendung der Entwicklertools im Microsoft Edge-Browser finden Sie unter [Microsoft Edge Developer Tools](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide).
+Weitere Informationen zur Verwendung der Entwicklertools im Microsoft Edge-Browser finden Sie unter [Microsoft Edge Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide).
 
 Wenn Sie ein kurzes Video im [YouTube-Kanal für SharePoint-Entwickler Muster und-Methoden](https://aka.ms/sppnp-videos) sehen möchten, in dem gezeigt wird, wie Sie überprüfen können, ob Ihr CDN funktioniert, lesen Sie bitte [Überprüfen der CDN-Nutzung und sicherstellen einer optimalen Netzwerkkonnektivität](https://www.youtube.com/watch?v=ClCtBAtGjE8&list=PLR9nK3mnD-OWMfr1BA9mr5oCw2aJXw4WA&index=5).
 

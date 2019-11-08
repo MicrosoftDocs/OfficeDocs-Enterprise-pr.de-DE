@@ -1,5 +1,5 @@
 ---
-title: Zu berücksichtigende SharePoint 2007-Migrationsoptionen
+title: Zu verwendende SharePoint 2007-Migrationsoptionen
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -20,76 +20,76 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
-description: SharePoint Server 2007 hat das Ende der Unterstützung erreicht, und es ist an der Zeit, ein Upgrade durchführen. Verwenden Sie diesen Artikel, um Ihren Plan zu erstellen.
-ms.openlocfilehash: 98151ecd32f0066f583da1142d6010d46e120a43
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: SharePoint Server 2007 hat das Ende der Unterstützung erreicht und es ist an der Zeit, ein Upgrade durchführen. Verwenden Sie diesen Artikel, um Ihnen bei der Erstellung Ihres Plans behilflich zu sein.
+ms.openlocfilehash: acf1e0283f70763c0f0fbd458b7c79b23fc31235
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070701"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031550"
 ---
-# <a name="sharepoint-2007-migration-options-to-consider"></a>Zu berücksichtigende SharePoint 2007-Migrationsoptionen
+# <a name="sharepoint-2007-migration-options-to-consider"></a>Zu verwendende SharePoint 2007-Migrationsoptionen
 
-Microsoft SharePoint 2007 und SharePoint Server 2007 haben das Ende des Supports erreicht. Es ist Zeit für ein Upgrade! Dieser Artikel enthält Informationen zu den Migrationsoptionen.
+Microsoft SharePoint 2007 und SharePoint Server 2007 haben das Ende der Unterstützung erreicht. Es ist Zeit für ein Upgrade! Dieser Artikel enthält Informationen zu ihren Migrationsoptionen.
   
 ## <a name="common-upgrade-strategies-for-sharepoint"></a>Allgemeine Upgrade-Strategien für SharePoint
 
-Es gibt mehrere Methoden zum Aktualisieren einer SharePoint Server-Umgebung. Wenn Sie über eine Microsoft Office SharePoint Server 2007-Farm verfügen, finden Sie im folgenden einige Beispiele für die Upgrade-Methoden:
+Es gibt mehrere Methoden zum Aktualisieren einer SharePoint Server Umgebung. Wenn Sie über eine Microsoft Office SharePoint Server 2007 Farm verfügen, finden Sie hier einige Beispiele für die Upgrade-Methoden:
   
 - Update durch Datenbankanfügungen
     
-- Paralleles Upgrade
+- Side-by-Side-Upgrade
     
 - Direktes Upgrade
     
-- Hybrides Upgrade (direkt mit getrennten Datenbanken/separater Datenbankanfügung)
+- Hybrides Upgrade (in-Place mit getrennten Datenbanken/separater Datenbankanfügung)
     
-- SharePoint-Hybriden (Verbinden von Online mit lokalem SharePoint)
+- SharePoint-Hybriden (Connect Online to on-premises SharePoint)
     
-- Manuelles Verschieben von Daten zwischen Websitesammlungen oder Bibliotheken
+- Manuelles verlagern von Daten zwischen Websitesammlungen oder Bibliotheken
     
-- Upgrade auf Office 365 ([SharePoint Online Deployment Advisor](https://aka.ms/spoguidance))
+- Kurzaktualisierungs-Assistent – Upgrade auf Office 365 ([SharePoint Online Bereitstellungs Ratgeber](https://aka.ms/spoguidance))
     
 - Migrations-API zu SharePoint Online (SPO) in Office 365
     
-Was eignet sich am besten für Sie?
+Was funktioniert am besten für Sie?
   
-Ihre Kenntnisse darüber, was Ihre Farm macht und wofür Sie verwendet wird, ist eine taktische Stärke beim Upgrade. Die Art und Weise, wie Benutzer die SharePoint-Farm verwenden, unterstützen Sie bei der Auswahl Ihrer Optionen.
-  
-> [!TIP]
-> Microsoft Office SharePoint Server 2007 hat auch eine schrittweise Aktualisierung, die hier nicht behandelt wird. Eine Liste mit Schritt spezifischen Upgrade-Artikeln finden Sie unter [SharePoint Server 2007 End of Support Roadmap](sharepoint-2007-end-of-support.md). 
-  
-Denken Sie daran, den [Produktlebenszyklus](https://support.microsoft.com/en-us/lifecycle/search) und die System Anforderungen für die SharePoint-Version zu überprüfen, auf die Sie ein Upgrade durchführen. Dies ist so, dass Sie wissen, wann das nächste Upgrade erforderlich ist (wenn Sie beispielsweise bei einem Legacy Produkt wie SharePoint Server 2010 anhalten, um weitere Upgrades zu planen), und um sicherzustellen, dass Sie über Hardware verfügen, die ihren Plan unterstützt. 
-  
-Wenn Sie planen, einige oder alle Ihrer SharePoint-Websites in der Cloud in Office 365 zu überführen, ist dies eine Zeit, um einen Link zu den [Dienstbeschreibungen für Office 365](https://technet.microsoft.com/en-us/library/office-365-service-descriptions.aspx)zu markieren. Sie benötigen die Dienstbeschreibungen, um mehr über SharePoint Online-Features zu erfahren und wie diese von lokalen SharePoint-Servern abweichen können. Aktualisieren Sie funktionale Microsoft Office SharePoint Server 2007-Farmen. Wenn die Installation von Websites unterbrochen wurde, beheben Sie diese vor dem Upgrade.
-  
-## <a name="a-note-about-managing-risk"></a>Ein Hinweis zum Verwalten von Risiken
-
-Methoden wie "nebeneinander" sind im Schema der Aktualisierungslogik wichtig. Beim Upgrade von Side-by-Side führen Sie Ihre Microsoft Office SharePoint Server 2007-Farm aus, erstellen jedoch eine Farm mit der nächsten Version (SharePoint Server 2010) auf neuer Hardware. Dies hat drei Möglichkeiten:
-  
-1. Sie können mithilfe von Datenbankanfügung Sicherungen Ihrer Microsoft Office SharePoint Server 2007-Datenbanken ausführen, um Sie einzeln zu aktualisieren.
-    
-2. Wenn Sie herausfinden, dass nur eine kleine Anzahl von wichtigen Dokumentbibliotheken und anderen Informationen in Ihrer Microsoft Office SharePoint Server 2007-Farm verwendet wird, können Sie die Daten manuell aus Microsoft Office SharePoint Server 2007 in SharePoint Server 2010 verschieben. , oder nehmen Sie nur bestimmte Websites und Webs auf die nächste Version (was Ihre Arbeit erleichtern kann).
-    
-3. Je geringer die Microsoft Office SharePoint Server 2007-Serverfarm ist, desto sicherer sind die Daten, die in der Farm beim Upgrade enthalten sind.
-    
-Methoden wie in-Place-Upgrades fungieren direkt in Ihrer Microsoft Office SharePoint Server 2007-Farm, sodass Sie weniger einfache Optionen zum aufgeben eines Pfads und zur Wiederaufnahme der ursprünglichen Umgebung benötigen. Erstellen Sie so viel wie möglich einige Sicherheitsmaßnahmen (wie das übernehmen und Testen von Sicherungen der ursprünglichen Umgebung). Wenn Ihre Microsoft Office SharePoint Server 2007-Farm beispielsweise virtuell ist und zum Zwecke der Sicherung und Wiederherstellung dupliziert wird, sichern und Wiederherstellen Sie die aktuellsten Datenbanken vor dem Dienstfenster für das Upgrade. Wenn Sie wissen, dass Sie die Option zum Wiederherstellen von Datenbanksicherungen haben, erhalten Sie nicht nur ein ausfallsicheres, sondern Sie können sich auch beruhigen.
+Ihr Wissen darüber, was Ihre Farm macht und wofür Sie verwendet wird, ist eine taktische Stärke, wenn es darum geht, ein Upgrade durchführen zu können. Die Art und Weise, wie Benutzer die SharePoint-Farm verwenden, hilft Ihnen bei der Auswahl Ihrer Optionen.
   
 > [!TIP]
-> Bewährte Methoden für das Upgrade sind für [Microsoft Office SharePoint Server 2007](https://technet.microsoft.com/en-us/library/cc261992%28v=office.12%29.aspx), [SharePoint Server 2010](https://technet.microsoft.com/en-us/library/cc261992%28v=office.14%29.aspx), [SharePoint Server 2013](https://technet.microsoft.com/en-us/library/cc261992%28v=office.15%29.aspx)und [SharePoint Server 2016](https://technet.microsoft.com/en-us/library/cc261992%28v=office.16%29.aspx)vorhanden. Sie können auch nach [Microsoft-Partnern](https://partnercenter.microsoft.com/en-us/pcv/search) suchen, die über Erfahrung mit Upgrades oder Office 365-Migrationen verfügen. 
+> Microsoft Office SharePoint Server 2007 hat auch ein schrittweises Upgrade, das hier nicht behandelt wird. Eine Liste mit Schritt spezifischen Upgrade-Artikeln finden Sie in der [Roadmap für das Ende des Supports SharePoint Server 2007](sharepoint-2007-end-of-support.md). 
   
-## <a name="make-your-plan"></a>Planen
+Denken Sie daran, den [Produktlebenszyklus](https://support.microsoft.com/lifecycle/search) und die System Anforderungen für jede Version von SharePoint zu überprüfen, auf die Sie ein Upgrade durchführen. Dies ist so, dass Sie wissen, wann das nächste Upgrade erforderlich ist (wenn Sie beispielsweise bei einem Legacy Produkt wie SharePoint Server 2010 anhalten, weitere Upgrades zu planen, sicherzustellen, dass Sie das Ende des Support Datums kennen), und sicherzustellen, dass Sie über Hardware verfügen, die ihren Plan unterstützt. 
+  
+Wenn Sie planen, einige oder alle Ihrer SharePoint-Websites auf Office 365 in der Cloud umzustellen, ist dies eine Zeit, um einen Link zu den [Dienstbeschreibungen für Office 365](https://technet.microsoft.com/library/office-365-service-descriptions.aspx)zu bookmarken. Sie benötigen die Dienstbeschreibungen, um mehr über SharePoint Online Features und deren Unterschiede zwischen lokalen SharePoint Server zu erfahren. Aktualisieren von Funktions Microsoft Office SharePoint Server 2007 Farmen. Wenn Ihre Installation Websites enthält, die beschädigt sind, beheben Sie diese vor dem Upgrade.
+  
+## <a name="a-note-about-managing-risk"></a>Hinweis zur Risikoverwaltung
 
-Wenn Sie ein Upgrade durchführen müssen, benötigen Sie einen Plan, und eine Größe, die in diesen Fällen nicht alle passt. Ihr Plan ist möglicherweise so einfach wie "ein Office 365-Abonnement mit SharePoint Online erstellen, eine Domäne registrieren und Personen umleiten, um Ihre Dateien dort zu speichern". Möglicherweise nicht. Diese Entscheidung liegt bei Ihnen, und es liegt an dem, was Sie und Ihre Benutzer wirklich benötigen.
+Methoden wie "nebeneinander" sind im Schema der Upgrade-Logik wichtig. Wenn Sie das Upgrade nebeneinander durchführen, verwalten Sie Ihre Microsoft Office SharePoint Server 2007 Farm, erstellen jedoch eine Farm mit der nächsten Version (SharePoint Server 2010) auf neuer Hardware. Dies hilft auf drei Arten:
+  
+1. Sie haben einen Ort, um Sicherungen Ihrer Microsoft Office SharePoint Server 2007-Datenbanken zu erstellen, um Sie separat mithilfe von Datenbankanfügungen zu aktualisieren.
+    
+2. Wenn Sie feststellen, dass nur eine kleine Anzahl von wichtigen Dokumentbibliotheken und anderen Informationen in Ihrer Microsoft Office SharePoint Server 2007 Farm verwendet wird, können Sie auswählen, dass Daten manuell von Microsoft Office SharePoint Server 2007 in SharePoint Server 2010 , oder nehmen Sie nur bestimmte Websites und Webs zur nächsten Version (was Ihre Arbeit erleichtern kann).
+    
+3. Je niedriger die Microsoft Office SharePoint Server 2007 Server Farm ist, desto sicherer sind die Daten, die die Farm beim Upgrade enthält.
+    
+Methoden wie direkte Upgrades fungieren direkt in Ihrer Microsoft Office SharePoint Server 2007 Farm und geben Ihnen weniger einfache Optionen, um einen Pfad zu verlassen und erneut mit ihrer unberührten Umgebung zu beginnen. Erstellen Sie so weit wie möglich einige Sicherheitsmaßnahmen (wie das Aufzeichnen und Testen von Sicherungen der ursprünglichen Umgebung). Wenn Ihre Microsoft Office SharePoint Server 2007-Farm beispielsweise virtuell ist und für die Sicherung und Wiederherstellung dupliziert wurde, sichern Sie die neuesten Datenbanken vor dem Dienstfenster, und stellen Sie Sie für das Upgrade wieder her. Wenn Sie wissen, dass Sie die Möglichkeit haben, Datenbanksicherungen wiederherzustellen, erhalten Sie nicht nur eine ausfallsichere Lösung, sondern Sie können Ihnen Sicherheit geben.
+  
+> [!TIP]
+> Bewährte Methoden für das Upgrade sind für [Microsoft Office SharePoint Server 2007](https://technet.microsoft.com/library/cc261992%28v=office.12%29.aspx), [SharePoint Server 2010](https://technet.microsoft.com/library/cc261992%28v=office.14%29.aspx), [SharePoint Server 2013](https://technet.microsoft.com/library/cc261992%28v=office.15%29.aspx)und [SharePoint Server 2016](https://technet.microsoft.com/library/cc261992%28v=office.16%29.aspx)vorhanden. Sie können auch nach [Microsoft-Partnern](https://partnercenter.microsoft.com/pcv/search) suchen, die Erfahrung mit Upgrades oder Office 365 Migrationen haben. 
+  
+## <a name="make-your-plan"></a>Erstellen eines Plans
+
+Wenn Sie ein Upgrade durchführen müssen, benötigen Sie einen Plan, und in diesen Fällen passt eine Größe nicht alle. Ihr Plan ist möglicherweise so einfach wie: "Erstellen eines Office 365 Abonnements mit SharePoint Online, Registrieren einer Domäne und Umleiten von Personen zum Speichern der dort gespeicherten Dateien". Und es ist möglicherweise nicht. Diese Entscheidung gehört Ihnen, und es liegt an dem, was Sie und Ihre Benutzer wirklich benötigen.
   
 > [!NOTE]
-> Es ist riskant, auf Software auszuführen, deren Lebenszyklus beendet wurde. Produkte, die nicht unterstützt werden, werden nicht mehr gepatcht, wenn Probleme gefunden werden. Dies führt auch dazu, dass bei neuen Sicherheitsbedrohungen keine Sicherheitspatches oder-Fixes vorhanden sind, da die End-of-Lifecycle-Produkte nicht mehr unterstützt werden. Vermeiden Sie diese Situation! 
+> Es ist riskant, auf Software zu laufen, deren Lebenszyklus beendet ist. Produkte, die nicht mehr unterstützt werden, werden nicht mehr gepatcht, wenn Probleme gefunden werden. Dies bedeutet auch, dass beim Auftreten neuer Sicherheitsbedrohungen keine Sicherheitspatches oder Fixes vorhanden sein werden, da die End-of-Lifecycle-Produkte nicht mehr unterstützt werden. Vermeiden Sie diese Situation! 
   
-### <a name="first-know-your-farm"></a>Zuerst wissen Sie Ihre Farm
+### <a name="first-know-your-farm"></a>Kennen Sie zunächst Ihre Farm
 
-Bei der Aktualisierung sollte ihre Entscheidungsfindung davon abhängen, was Ihre Farm für Ihre Organisation tut. Welche Anforderungen genügt es? Welche Rolle spielt es? Jede Farm in Ihrem Unternehmen hat möglicherweise eine andere Rolle. Einige Ihrer SharePoint-Farmen sind möglicherweise *kritisch* , einige sind möglicherweise Dateiarchive--dort zur Aufbewahrung. Oder wenn Ihre Farm viele Rollen gleichzeitig ausfüllt, müssen Sie möglicherweise wissen, welche Websitesammlungen, Websites oder sogar Dokumentbibliotheken ausgeführt werden, Anpassungen vornehmen und wie wichtig diese sind. Die Analyse Ihrer Daten auf dieser Ebene mag viel Arbeit sein, aber es spart Zeit und Aufwand, Ihre Domäne zu meistern, bevor Sie ein Upgrade durchführen oder migrieren. Sobald Sie alle bewegten Teile und die wichtigsten Bits kennen, wissen Sie auch, was Sie herausgewachsen und hinterlassen können. Dieses Wissen profitiert nur von Ihnen. 
+Wenn Sie ein Upgrade durchführen, sollten Sie Ihre Entscheidung auf der Grundlage Ihrer Serverfarm für Ihre Organisation vornehmen. Welche Anforderungen werden erfüllt? Was ist seine Rolle? Jede Farm in Ihrem Unternehmen kann eine andere Rolle haben. Einige Ihrer SharePoint-Farmen sind möglicherweise *kritisch* , einige möglicherweise Dateiarchive-dort zur sicheren Aufbewahrung. Oder wenn Ihre Farm viele Rollen gleichzeitig füllt, müssen Sie möglicherweise wissen, welche Websitesammlungen, Webs oder sogar Dokumentbibliotheken ausführen, alle Anpassungen und wie wichtig Sie sind. Die Analyse Ihrer Daten auf dieser Ebene kann eine Menge Arbeit sein, aber es spart Zeit und Mühe, Ihre Domäne zu meistern, bevor Sie Sie upgraden oder migrieren. Sobald Sie alle beweglichen Teile und die wichtigsten Bits kennen, werden Sie auch wissen, was Sie herausgewachsen sind und zurücklassen können. Dieses Wissen wird Ihnen nur für die Zukunft zugute kommen. 
   
-Was sagen die Benutzer am wichtigsten über Ihre SharePoint Server-Farm?
+Was sagen Benutzer also am wichtigsten über Ihre SharePoint Server Farm?
   
 - Integrierte SharePoint-Features
     
@@ -97,39 +97,39 @@ Was sagen die Benutzer am wichtigsten über Ihre SharePoint Server-Farm?
     
 - Verfügbarkeit
     
-- Wichtige apps, Webparts oder Dokumente in der Farm (missionskritische Farm)
+- Wichtige apps, Webparts oder Dokumente in der Farm (geschäftskritische Farm)
     
-- Einhaltung der Compliance-Standards
+- Compliance-Standards erfüllt
     
 - Anpassungen
     
-Wenn Sie in Ihrer SharePoint-Farm etwas Wesentliches für Ihr Unternehmen ausführen, sagen Sie, dass es wie ein umfangreicher Katalog wichtiger Daten zu Clientdienstanforderungen fungiert, können Sie eine Zecke neben "kritische Apps" setzen, aber auch "Verfügbarkeit" – das heißt, Ihr Unternehmen wäre Auswirkungen, wenn SharePoint für eine Weile nicht verwendet werden konnte. Entsprechend können Sie "Anpassungen" auch überprüfen, da die von Ihrer Farm bereitgestellten wichtigen Dienste auf benutzerdefiniertem Code, Websitedefinitionen oder einer Reihe von Anpassungen basieren, die zusammenarbeiten.
+Wenn Sie etwas wichtiges für Ihr Unternehmen aus Ihrer SharePoint-Farm ausführen, sagen wir, dass es wie ein großer Katalog wichtiger Daten zu Clientdienstanforderungen wirkt, können Sie ein Häkchen neben "Critical Apps" setzen, aber auch "Verfügbarkeit"--das heißt, Ihr Unternehmen wäre Auswirkungen, wenn Sie SharePoint für eine Weile nicht verwenden konnten. Ebenso können Sie "Anpassungen" überprüfen, da die von Ihrer Farm angebotenen wichtigen Dienste auf benutzerdefiniertem Code, Websitedefinitionen oder einer Reihe von Anpassungen basieren, die zusammenarbeiten.
   
-Wenn SharePoint diese Anforderungen erfüllt hat, ohne dass Sie irgendetwas außerhalb der Verwendung der integrierten Funktionen der Software tun müssen, und Sie es in der Regel aktualisieren und normale Verwaltung und Wartung durchführen, haben Sie möglicherweise "Built-in SharePoint" gewählt--Dies kann auch Ihr Grund für die Sitzung auf einer älteren Version von SharePoint. Mit anderen Worten: es erledigt bereits das, was Sie benötigen, und Sie haben noch kein Upgrade auf Microsoft Office SharePoint Server 2007 End of Support erforderlich.
+Wenn SharePoint diese Anforderungen erfüllt, ohne dass Sie etwas außerhalb der Verwendung von What es Built-in zur Software vornehmen müssen, und Sie es in der Regel aktualisieren und die normale Verwaltung und Wartung durchführen, haben Sie möglicherweise "integriertes SharePoint" ausgewählt--Dies kann auch Ihr Grund für das sitzen in einer älteren Version von SharePoint. Mit anderen Worten: Sie macht bereits das, was Sie benötigen, und Sie haben bis jetzt noch kein Upgrade durch Microsoft Office SharePoint Server 2007 Ende des Supports durchführen müssen.
   
-Wenn Sie diese Aufzählungszeichen auflisten, erstellen Sie Kriterien für Ihr Upgrade. In anderen Worten: jedes Upgrade müsste in Betracht gezogen werden. Auf diese Weise können Sie Methoden ausschließen, die derzeit nicht Ihren Anforderungen entsprechen.
+Wenn Sie diese Elemente Aufzählungszeichen auflisten, erstellen Sie Kriterien für Ihr Upgrade. Mit anderen Worten: jedes Upgrade müsste diesen Balken erfüllen, um berücksichtigt zu werden. Auf diese Weise können Sie Methoden ausschließen, die derzeit nicht Ihren Anforderungen entsprechen.
   
 ### <a name="a-simple-sample-plan"></a>Ein einfacher Beispielplan
 
-Möglicherweise müssen Sie einen umfassenderen Konsens mit Führungskräften und anderen Administratoren auf dem Weg Ihres SharePoint-Upgrades erzielen. SharePoint Server-Administratoren kooperieren häufig mit Microsoft SQL Server-Admins, arbeiten mit Netzwerk-und Sicherheitsteams und vielem mehr. Wenn es viele Beteiligte gibt, müssen Sie möglicherweise einen Vertrag für den Upgrade-und Migrationsplan erstellen oder anpassen. Wenn Sie beispielsweise Daten migrieren, sodass ein Teil Ihres Unternehmens SharePoint Online in Office 365 verwendet, müssen Sie wahrscheinlich die Leistungsoptimierung oder Tests in Ihrem Netzwerk vornehmen. Betroffene Teams sollten vorab informiert werden.
+Möglicherweise muss ein breiter Konsens mit Führungskräften und anderen Administratoren auf dem Pfad erforderlich sein, den Ihr SharePoint-Upgrade durchführen wird. SharePoint Server Administratoren kooperieren häufig mit Microsoft SQL Server Administratoren, arbeiten mit Netzwerk-und Sicherheitsteams zusammen und vieles mehr. Wo viele Beteiligte vorhanden sind, müssen Sie möglicherweise einen Vertrag für den Upgrade-und Migrationsplan erstellen oder diesen anpassen. Wenn Sie beispielsweise Daten migrieren, sodass ein Teil Ihres Unternehmens SharePoint Online in Office 365 verwendet, muss es in Ihrem Netzwerk wahrscheinlich zu Leistungsoptimierungen oder Tests kommen. Betroffene Teams sollten frühzeitig informiert werden.
   
-In meinem einfachen Beispiel wird der Vorschlag eines SharePoint-Administrators angezeigt und dann der Plan aufgeführt, auf den alle Beteiligten abgestimmt haben. Um Klarheit zu schaffen, dokumentieren Sie Ihre Vereinbarungen und Entscheidungen.
+In meinem einfachen Beispiel zeige ich den Vorschlag eines SharePoint-Administrators und verzeichnen dann den Plan, den alle Beteiligten vereinbart haben. Zur besseren Übersichtlichkeit dokumentieren Sie Ihre Vereinbarungen und Entscheidungen.
   
-Der Plan beginnt nach einer eingehenden Analyse einer Farm und versucht, die Rolle der Farm, die Problempunkte und andere wichtige Informationen zu identifizieren, die dazu führen, dass einige Upgrade-Optionen eingeschränkt werden. Anschließend wird ein Upgrade-Vorschlag vom SharePoint-Administrator durchgeführt, und die beteiligten vereinbaren einen Aktionsplan.
+Der Plan beginnt nach einer eingehenden Analyse einer Farm und versucht, die Rolle der Farm, die Problempunkte und andere wichtige Informationen zu identifizieren, die dazu führen, dass einige Upgrade-Optionen eingeschränkt werden. Anschließend wird ein Upgrade-Vorschlag von SharePoint-Administrator vorgenommen, und die beteiligten vereinbaren einen Aktionsplan.
   
-Meine "wichtigste" Aufzählungszeichen Liste:
+Meine "wichtigste" Aufzählungsliste:
   
-- Verfügbarkeit, integrierte Funktionen in SharePoint und Compliance-Standards.
+- Verfügbarkeit, integrierte Features in SharePoint und Compliance-Standards.
     
-- Der größte Teil der Daten besteht aus drei Websitesammlungen, wobei ein von einem Entwicklungsteam verwendeter Besprechungsarbeitsbereich besonders wichtig ist und in mehreren Zeitzonen weltweit stark verwendet wird.
+- Die meisten Daten befinden sich in drei Websitesammlungen, wobei ein von einem Entwicklerteam verwendeter Besprechungsarbeitsbereich besonders wichtig und in starkem Maße in mehreren Zeitzonen weltweit verwendet wird.
     
-- Es gibt siebzehn weitere Websites, die häufig verwendet werden.
+- Es gibt siebzehn andere Websites, die häufig verwendet werden.
     
-- Zwei Dokumentbibliotheken (Besprechungsarbeitsbereich und Dokumente in der Stammwebsitesammlung) sind am größten (über 8000 docs). Es gibt eine Vielzahl von archivierten Dokumenten und Listen mit Arbeitsblatt Anlagen.
+- Zwei Dokumentbibliotheken (Besprechungsarbeitsbereich und Dokumente in der Stammwebsitesammlung) sind die größten (jeweils über 8000 Dokumentationen). Wir haben eine große Anzahl von archivierten Dokumenten und Listen mit Tabellen Kalkulations Anlagen.
     
-- Es gibt vierzehn Listen mit Bibliotheken mit vertraulichen Daten, die in Compliance bleiben müssen.
+- Es gibt vierzehn Listen mit Bibliotheken mit vertraulichen Daten, die in Übereinstimmung bleiben müssen.
     
-- Wir müssen in der Lage sein, halte-und e-Discovery-Aufgaben zu erledigen.
+- Wir müssen in der Lage sein, Holds und e-Discovery zu erledigen, wohin auch immer wir gehen.
     
 - Einige dieser Daten müssen aufgrund von INFOSEC-Regeln lokal bleiben.
     
@@ -139,45 +139,45 @@ Meine "wichtigste" Aufzählungszeichen Liste:
 |:-----|:-----|
 |**Ja** <br/> |**Nein** <br/> |
 |Aktualisieren von Datenbanken mit Datenbankanfügung  <br/> |Direktes Upgrade  <br/> |
-|Paralleles Upgrade mit Farmen  <br/> |Hybrid Upgrade  <br/> |
-|Migrations-API zu SPO in Office 365 (für persönliche Website-Daten)  <br/> |SharePoint-Hybrid (noch nicht erforderlich)  <br/> |
-|Einige manuelle Datenmigrationen zu SharePoint Online für wichtige Daten  <br/> |Update des Assistenten auf Office 365  <br/> |
+|Upgrade mit Farmen nebeneinander  <br/> |Hybrides Upgrade  <br/> |
+|Migrations-API zu SPO in Office 365 (für persönliche Website Daten)  <br/> |SharePoint-Hybrid (noch nicht erforderlich)  <br/> |
+|Einige manuelle Datenmigrationen zu SharePoint Online für wichtige Daten  <br/> |Upgrade des kurzerstellungs-Assistenten auf Office 365  <br/> |
    
  **Mein geplanter Plan:**
   
-Aktualisieren Sie lokal mit Versionen von SharePoint, die parallel ausgeführt werden, so dass wir die Datenbanken zuerst aktualisieren können. Wechseln Sie von SharePoint 2007 zu SharePoint 2010. Administratoren und Entwickler testen die resultierende Farm. Benutzer testen die resultierende Farm. Beheben Sie während dieser Zeit alle Probleme beim Anzeigen anhalten. Aktualisieren Sie erneut SharePoint 2010-Datenbanken auf SharePoint 2013. Test. Benutzer Test/Pilot. Beheben Sie während dieser Zeit alle Probleme beim Anzeigen anhalten.
+Lokales Upgrade mit SharePoint-Versionen nebeneinander, einige virtualisiert, sodass wir die Datenbanken zuerst aktualisieren können. Wechseln Sie von SharePoint 2007 zu SharePoint 2010. Administratoren und Entwickler testen die resultierende Farm. Benutzer testen die resultierende Farm. Beheben Sie während dieser Zeit alle Probleme mit dem anzeigen Stopp. Aktualisieren Sie SharePoint 2010 Datenbanken erneut nebeneinander auf SharePoint 2013. Test. Benutzer Test/Pilot. Beheben Sie während dieser Zeit alle Probleme mit dem anzeigen Stopp.
   
-- Überlegen Sie, ob eine Such Verbund-Hybrid Lösung mit SPO Ihren Anforderungen entspricht.
+- Prüfen Sie, ob eine Such-Verbund Hybride mit SPO Ihren Anforderungen entspricht.
     
-- Erwägen Sie die Hilfe bei der [Unterstützung](https://fasttrack.microsoft.com) , wenn Sie von hier aus ein Upgrade auf SharePoint Online durchführen möchten. 
+- Wenn Sie von hier aus ein Upgrade auf SharePoint Online durchführen möchten, sollten Sie sich die [Kurzhilfe](https://fasttrack.microsoft.com) ansehen. 
     
-- Bestimmen Sie, ob Websitesammlungen zu einem Office 365-Abonnement abgeladen werden können. (Office 365 erfüllt viele [Compliance-Standards](https://technet.microsoft.com/library/office-365-compliance.aspx). Office 365 verfügt über [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) und kann über das Compliance Center [verwaltet](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) werden.) 
+- Ermitteln Sie, ob Websitesammlungen an ein Office 365 Abonnement abgegeben werden können. (Office 365 erfüllt viele [Compliance-Standards](https://technet.microsoft.com/library/office-365-compliance.aspx). Office 365 verfügt über [eDiscovery](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) und kann über das Compliance Center [verwaltet](https://support.office.com/article/A18F8975-AA7F-43B4-A7D6-001D14744D8E) werden.) 
     
 Fahren Sie andernfalls mit einem parallelen Upgrade auf SharePoint Server 2016 fort.
   
 > [!NOTE]
-> Zwischen den Empfehlungen der Administratoren, die das Upgrade und den tatsächlichen Prozess planen, handelt es sich um die Unterhaltungen bei anderen Beteiligten, auf denen das Upgrade basiert. Beispielsweise zwingt Economics Administratoren manchmal, ihre Pläne zu ändern. Was auch immer die endgültige Entscheidung ist, sollten Sie dokumentieren, was der vereinbarte Plan ist, vorwärts gehen. Es könnte ungefähr wie folgt aussehen: 
+> Zwischen den Empfehlungen der Administratoren für die Planung des Upgrades und des tatsächlichen Prozesses sind die Unterhaltungen, die mit anderen Beteiligten ausgeführt werden, auf denen das Upgrade basiert. Beispielsweise zwingen Ökonomie Administratoren manchmal dazu, ihre Pläne zu ändern. Unabhängig von der endgültigen Entscheidung sollten Sie dokumentieren, was der vereinbarte Plan ist, und zwar weiter. Dies kann etwa so aussehen: 
   
  **Mein Aktionsplan:**
   
-Lokal verwenden wir eine virtuelle Umgebung zum Erstellen von SharePoint Server 2010 und 2013. SharePoint Server 2016 basiert auf neuer Hardware, die die Systemanforderungen für 2016 erfüllt. Wir führen Datenbankanfügungen zum Upgrade von Datenbanken von SharePoint 2007 über alle Versionen zwischen IT und SharePoint Server 2016 aus. Kern Anpassungen werden in der SharePoint Server 2016-Umgebung zu diesem Zeitpunkt neu erstellt und getestet, wenn systemeigene Features unsere Anforderungen nicht bereits erfüllen. Wenn wir erfolgreich sind, verfügen wir über eine lokale Farm auf neuer Hardware mit aktualisierten Datenbanken und weniger Anpassungen. Wir fügen die aktualisierten Inhaltsdatenbanken an neue Websitesammlungen in SharePoint Server 2013, Test, User Test/Pilot, und führen dann eine DNS-Überprüfung auf die neue SharePoint Server 2016-Umgebung für die Live-Nutzung aus.
+Lokal verwenden wir eine virtuelle Umgebung zum Erstellen von Standard SharePoint Server 2010 und 2013. SharePoint Server 2016 wird auf neuer Hardware aufbauen, die die Systemanforderungen für 2016 erfüllt. Wir werden Datenbankanfügungen an das Upgrade von Datenbanken aus SharePoint 2007 über alle Versionen zwischen diesem und SharePoint Server 2016 durchführen. Kern Anpassungen werden derzeit in der SharePoint Server 2016-Umgebung neu erstellt und getestet, wenn systemeigene Features nicht bereits unsere Anforderungen erfüllen. Wenn wir erfolgreich sind, haben wir eine lokale Farm auf neuer Hardware mit aktualisierten Datenbanken und weniger Anpassungen. Wir fügen die aktualisierten Inhaltsdatenbanken in SharePoint Server 2013, Test, User Test/Pilot an neue Websitesammlungen an und führen dann einen DNS-Schnitt für die neue SharePoint Server 2016-Umgebung für die Live Nutzung durch.
   
-- Wir werden den Verbund Hybrid zwischen SharePoint Server 2016 und SharePoint Online derzeit nicht berücksichtigen.
+- Wir werden keine Verbund Hybridität zwischen SharePoint Server 2016 und SharePoint Online im Moment in Frage stellen.
     
-- Schätzungsweise 35% unserer Websites können in neue SPO-Websites mit Vanity-Domänen umgewandelt werden oder schließlich zu OneDrive für Unternehmen werden. Suchen Sie nach anderen Möglichkeiten, Websites zu konvertieren oder neue Websites an SPO zu leiten.
+- Schätzungsweise 35% unserer Websites können in neue SPO-Websites mit Vanity-Domänen umgewandelt werden oder letztendlich OneDrive für Unternehmen Speicher werden. Suchen Sie nach anderen Möglichkeiten zum Konvertieren von Websites oder zum Weiterleiten neuer Websites an SPO.
     
-- Einige dieser Teile der Migration sind manuell, per Drag-and-Drop zu OneDrive for Business-persönlichen Websites und einige von der Migrations-API.
+- Ein Teil dieses Teils der Migration wird manuell, per Drag & Drop zu OneDrive für Unternehmen persönlichen Websites und einige durch die Migrations-API.
     
-Detailliertere Schritte oder eine Reihe von Links zu bestimmten Upgrade-Richtungen sollten einem Plan folgen. Der MOSS 2007-Computer sollte nicht außer Betrieb genommen werden, und virtuelle Umgebungen sollten im Interesse des Vergleichs beibehalten werden. das Upgrade ist jedoch abgeschlossen, wenn Benutzer zu SharePoint Server 2016 umgeleitet werden.
+Ausführlichere Schritte oder eine Reihe von Links zu bestimmten Upgrade-Anweisungen sollten einem Plan folgen. Der MOSS 2007-Computer sollte nicht außer Betrieb genommen werden, und virtuelle Umgebungen sollten aus Gründen des Vergleichs beibehalten werden. das Upgrade ist jedoch abgeschlossen, wenn Benutzer zu SharePoint Server 2016 umgeleitet werden.
   
-Häufig sind Hauptfaktoren bei der Auswahl einer Methode die Gesamtkosten des Upgrades und die Kosten in der Zeit (Weitere Informationen dazu finden Sie im SharePoint Migration Roadmap-Artikel). Allerdings wird die Planung im Voraus Ihnen große Vorteile bei der Festlegung der Erwartungen, wählen Sie mit Bedacht und Framing, was den Erfolg aussehen wird.
+Bei der Auswahl einer Methode sind häufig die Gesamtkosten des Upgrades und die Kosten in der Zeit (Weitere Informationen hierzu finden Sie im Artikel SharePoint-Migrationsplanung). Vorausschauendes Planen wird Ihnen jedoch eine große Bedeutung bei der Festlegung der Erwartungen, der klugen Auswahl und der Gestaltung der Erfolgsaussichten bieten.
   
 ## <a name="related-links"></a>Verwandte Links
 
 [Ressourcen für das Upgrade von Office 2007-Servern und-Clients](upgrade-from-office-2007-servers-and-products.md)
   
-[Microsoft Lifecycle Policy und Lebenszyklus Suche](https://support.microsoft.com/en-us/lifecycle)
+[Microsoft Lifecycle Policy and Lifecycle Search](https://support.microsoft.com/lifecycle)
   
-[Suchen nach Microsoft-Partnern, die beim Upgrade oder bei der Migration helfen können](https://partnercenter.microsoft.com/en-us/pcv/search)
+[Suchen nach Microsoft-Partnern, die bei einem Upgrade oder einer Migration helfen können](https://partnercenter.microsoft.com/pcv/search)
   
 

@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a6d6ba01-2562-4c3d-a8f1-78748dd506cf
 description: Dieser Artikel enthält Informationen zum Verbessern der Leistung von Nachrichten Downloads in Outlook im Internet.
-ms.openlocfilehash: a9070d9aefc8e4c223667848b4af5c06518de076
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: bb9a11a27af0b66f1dd557c459d1904c2e57ae92
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616808"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030870"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Verringern des beim Lesen von e-Mail-Nachrichten verwendeten Arbeitsspeichers mithilfe von Lean Popouts
 
@@ -36,7 +36,7 @@ Diese Features funktionieren weiterhin im Hauptfenster, stehen aber in Lean Popo
     
  **So konfigurieren Sie Lean Popouts für alle Benutzer in Ihrer Office 365 Organisation**
   
-1. Stellen [Sie mithilfe von Remote-PowerShell eine Verbindung zu Exchange Online her](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
+1. Stellen [Sie mithilfe von Remote-PowerShell eine Verbindung zu Exchange Online her](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx ).
     
 2. Führen Sie das Cmdlet " [OrganizationConfig](https://technet.microsoft.com/library/aa997443%28v=exchg.160%29.aspx) " mit dem Parameter "LeanPopoutEnabled" wie folgt aus: 
     

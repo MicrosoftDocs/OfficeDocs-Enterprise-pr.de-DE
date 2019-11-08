@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
-ms.openlocfilehash: b31d6150ee3eb11a93b485a5eece22eb3a82021e
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782235"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032120"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Netzwerkplanung mit ExpressRoute für Office 365
 
@@ -76,7 +76,7 @@ Alle unsere Empfehlungen für die Art der Netzwerkverarbeitung, die empfohlen wi
 
 Das Sichern der Azure Express Route-Konnektivität beginnt mit den gleichen Prinzipien wie das Sichern der Internet Konnektivität. Viele Kunden entscheiden sich für die Bereitstellung von Netzwerk-und Umkreis Steuerungen entlang des Express Route-Pfads, der Ihr lokales Netzwerk mit Office 365 und anderen Microsoft-Clouds verbindet. Diese Steuerelemente können Firewalls, Anwendungsproxys, Verhinderung von Datenverlust, Intrusionserkennung, Intrusion Prevention-Systeme usw. umfassen. In vielen Fällen wenden Kunden unterschiedliche Ebenen von Steuerelementen auf den Datenverkehr an, der von einem lokalen Microsoft-Datenverkehr initiiert wurde, im Gegensatz zum von Microsoft initiierten Datenverkehr, der vom lokalen lokalen Netzwerk des Kunden initiiert wird, im Gegensatz zum Datenverkehr, der von einem lokalen Standort initiiert wird Internet Ziel.
   
-Im folgenden finden Sie einige Beispiele für die Integration von Sicherheit mit dem [Express Route-Verbindungsmodell](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-connectivity-models) , das Sie bereitstellen möchten.
+Im folgenden finden Sie einige Beispiele für die Integration von Sicherheit mit dem [Express Route-Verbindungsmodell](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) , das Sie bereitstellen möchten.
 
 |**Express Route-Integrations Option**|**Netzwerk Sicherheitsumkreis Modell**|
 |:-----|:-----|
@@ -102,7 +102,7 @@ Hier ist ein Beispiel für die Woodgrove Bank, die die verschiedenen Azure Expre
   
 ### <a name="example-1-securing-azure-expressroute"></a>Beispiel 1: Sichern von Azure Express Route
   
-Die Woodgrove Bank erwägt die Implementierung von Azure Express Route und nach der Planung der optimalen Architektur für das [Routing mit Express Route für Office 365](routing-with-expressroute.md) und nach Verwendung der obigen Anleitungen zum Verständnis der Bandbreitenanforderungen bestimmen Sie die beste Methode für die Sicherung Ihres Perimeters.
+Die Woodgrove Bank erwägt die Implementierung von Azure Express Route und nach der Planung der optimalen Architektur für das [Routing mit Express Route für Office 365](routing-with-expressroute.md) und nach der Verwendung der obigen Anleitungen zum Verständnis der Bandbreitenanforderungen bestimmen Sie die beste Methode für die Sicherung Ihres Perimeters.
   
 Für Woodgrove, eine multinationale Organisation mit Standorten auf mehreren Kontinenten, muss sich die Sicherheit über alle Perimeter erstrecken. Die optimale Verbindungsoption für Woodgrove ist eine Mehrpunkt-Verbindung mit mehreren Peering-Standorten auf der ganzen Welt, um die Anforderungen Ihrer Mitarbeiter in jedem Kontinent zu bedienen. Jeder Kontinent umfasst redundante Azure Express Route-Schaltkreise innerhalb des Kontinents, und die Sicherheit muss alle diese umfassen.
   
@@ -190,7 +190,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/plan
 ## <a name="related-topics"></a>Verwandte Themen
 <a name="BKMK_high-availability"> </a>
 
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
   
 [Azure ExpressRoute für Office 365](azure-expressroute.md)
   

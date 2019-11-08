@@ -13,16 +13,17 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: wie Isolierung und Zugriffssteuerung in Azure Active Directory funktionieren.'
-ms.openlocfilehash: d1f3a10d44a949511236d5adce38693ad2ad5c04
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 0e6423c53bd0c2823708f59830d1ba628a0c71ca
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067447"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035782"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Isolierung und Zugriffssteuerung in Azure Active Directory
 
 Azure Active Directory wurde entwickelt, um mehrere Mandanten auf hochsichere Weise durch die logische Datenisolierung zu hosten. Der Zugriff auf Azure Active Directory ist von einer Autorisierungsebene abgegrenzt. Azure-Active Directory isolieren Kunden, die Mandanten Container als Sicherheitsgrenzen verwenden, um den Inhalt eines Kunden zu schützen, damit der Zugriff auf Inhalte nicht möglich ist oder von Kollegen beeinträchtigt wird. Von der Autorisierungs Schicht von Azure Active Directory werden drei Prüfungen durchgeführt:
+
 - Ist der Prinzipal für den Zugriff auf Azure Active Directory Mandanten aktiviert?
 - Ist der Prinzipal für den Zugriff auf Daten in diesem Mandanten aktiviert?
 - Ist die Rolle des Prinzipals in diesem Mandanten für den Typ des angeforderten Datenzugriffs autorisiert?

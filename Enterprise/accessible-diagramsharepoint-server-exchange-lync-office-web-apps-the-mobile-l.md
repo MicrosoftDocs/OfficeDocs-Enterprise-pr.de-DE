@@ -10,16 +10,16 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter „Technische Diagramme“ verfügbar ist.
-ms.openlocfilehash: 9d10b9475a2c3a316ad5d23876574a46469e462e
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068440"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030579"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Zugängliches Diagramm – SharePoint Server, Exchange, Lync, Office Web Apps – Die mobile Landschaft
 
-**Zusammenfassung:** Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter [Technische Diagramme](http://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409) verfügbar ist.
+**Zusammenfassung:** Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter [Technische Diagramme](https://go.microsoft.com/fwlink/?LinkID=519139&amp;amp;clcid=0x409) verfügbar ist.
   
 Dieses Poster zeigt ein detailliertes Layout der Anwendungen und mobilen browserbasierten Landschaft für SharePoint Server, Lync, Exchange Server und Office Web Apps. Es umfasst folgende Informationen:  
   

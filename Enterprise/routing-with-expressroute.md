@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten Express Route-Routing Anforderungen und die Express Route-Schaltkreise und Routingdomänen. Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
-ms.openlocfilehash: 01251880eba2051d8839f7c08e244398906c75ed
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722714"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031580"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing mit ExpressRoute für Office 365
 
@@ -63,7 +63,7 @@ Im folgenden werden Szenarien beschrieben, in denen die Kommunikation zwischen O
 
 - [SharePoint-Hybrid-BCS](https://technet.microsoft.com/library/dn197239.aspx ).
 
-- [Skype for Business Hybrid](https://technet.microsoft.com/en-us/library/jj205403.aspx) -und/oder [Skype for Business-Verbund](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
+- [Skype for Business Hybrid](https://technet.microsoft.com/library/jj205403.aspx) -und/oder [Skype for Business-Verbund](https://technet.microsoft.com/library/skype-for-business-online-federation-and-public-im-conectivity.aspx).
 
 - [Skype for Business Cloud Connector](https://technet.microsoft.com/library/mt605227.aspx ).
 
@@ -88,7 +88,7 @@ Andere Anwendungen wie Office 365 Video ist eine Office 365 Anwendung; Office 36
 |Office 365 Video Streaming-Dienst  <br/> |Azure Media Services  <br/> |Nein  <br/> |Streamingdienst, verwendet für den Fall, dass das Video aus dem CDN nicht verfügbar ist  <br/> |
 |Office 365 Video-Inhalts Übermittlungs Netzwerk  <br/> |Azure CDN  <br/> |Nein  <br/> |Primäre Quelle für Video Download/-Streaming. [Erfahren Sie mehr über Office 365 Video Netzwerke](https://support.office.com/article/Office-365-Video-networking-Frequently-Asked-Questions-FAQ-2bed67a1-4052-49ff-a4ce-b7e6530eb98e).  <br/> |
 
-Alle Office 365 Features, die mit Microsoft Peering verfügbar sind, werden im [Artikel Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) Endpunkte nach Anwendungstyp und FQDN aufgeführt. Der Grund für die Verwendung des FQDN in den Tabellen besteht darin, dass Kunden den Datenverkehr mithilfe von PAC-Dateien oder anderen Proxy Konfigurationen verwalten können, siehe unser Leitfaden zum [Verwalten von Office 365](https://aka.ms/manageo365endpoints) Endpunkten, beispielsweise PAC-Dateien.
+Alle Office 365 Features, die mit Microsoft Peering verfügbar sind, werden im [Artikel Office 365 Endpunkte](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) nach Anwendungstyp und FQDN aufgeführt. Der Grund für die Verwendung des FQDN in den Tabellen besteht darin, dass Kunden den Datenverkehr mithilfe von PAC-Dateien oder anderen Proxy Konfigurationen verwalten können, siehe unser Leitfaden zum [Verwalten von Office 365 Endpunkten](https://aka.ms/manageo365endpoints) , beispielsweise PAC-Dateien.
   
 In einigen Situationen haben wir eine Platzhalterdomäne verwendet, in der mindestens eine untergeordnete FQDNs anders als die Platzhalterdomäne der höheren Ebene beworben wird. Dies geschieht normalerweise, wenn der Platzhalter eine lange Liste von Servern darstellt, die alle für Express Route und das Internet beworben werden, während eine kleine Untergruppe von Zielen nur im Internet beworben wird, oder umgekehrt. Lesen Sie die folgenden Tabellen, um zu verstehen, wo die Unterschiede liegen.
   
@@ -96,12 +96,12 @@ In dieser Tabelle werden die Platzhalter-FQDNs angezeigt, die sowohl für das In
 
 |**Platzhalterdomäne für Express Route und Internet Schaltungen beworben**|**Untergeordneter FQDN nur für Internet Schaltungen beworben**|
 |:-----|:-----|
-|\*. microsoftonline.com  <br/> |Click.Email.microsoftonline.com  <br/> Portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
-|\*. officeapps.Live.com  <br/> |nexusRules.officeapps.Live.com  <br/> Nexus.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> ODC.officeapps.Live.com  <br/> CDN.ODC.officeapps.Live.com  <br/> OLS.officeapps.Live.com  <br/> ocsredir.officeapps.Live.com  <br/> OCWs.officeapps.Live.com  <br/> ocsa.officeapps.Live.com  <br/> |
+|\*. microsoftonline.com  <br/> |click.email.microsoftonline.com  <br/> portal.microsoftonline.com  <br/> provisioningapi.microsoftonline.com  <br/> adminwebservice.microsoftonline.com  <br/> |
+|\*. officeapps.Live.com  <br/> |nexusRules.officeapps.live.com  <br/> nexus.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> odc.officeapps.live.com  <br/> cdn.odc.officeapps.live.com  <br/> ols.officeapps.live.com  <br/> ocsredir.officeapps.live.com  <br/> ocws.officeapps.live.com  <br/> ocsa.officeapps.live.com  <br/> |
 
 In der Regel sollen PAC-Dateien Netzwerkanforderungen an Express Route-angekündigte Endpunkte direkt an den Circuit und alle anderen Netzwerkanforderungen an Ihren Proxy senden. Wenn Sie eine PAC-Datei wie die folgende konfigurieren, verfassen Sie die PAC-Datei in der folgenden Reihenfolge:
   
-1. Schließen Sie die untergeordneten FQDNs aus Spalte 2 in die obige Tabelle oben in ihrer PAC-Datei ein, und senden Sie den Datenverkehr an Ihren Proxy. Wir haben eine Beispiel-PAC-Datei erstellt, die Sie in unserem Artikel zum [Verwalten von Office 365](https://aka.ms/manageexpressroute365)Endpunkten verwenden können.
+1. Schließen Sie die untergeordneten FQDNs aus Spalte 2 in die obige Tabelle oben in ihrer PAC-Datei ein, und senden Sie den Datenverkehr an Ihren Proxy. Wir haben eine Beispiel-PAC-Datei erstellt, die Sie in unserem Artikel zum [Verwalten von Office 365 Endpunkten](https://aka.ms/manageexpressroute365)verwenden können.
 
 2. Schließen Sie alle in [diesem Artikel](https://aka.ms/o365endpoints) unter dem ersten Abschnitt beworbenen FQDNs mit der Bezeichnung Express Route ein, und senden Sie den Datenverkehr direkt an Ihre Express Route-Schaltung.
 
@@ -111,11 +111,11 @@ In dieser Tabelle werden die Platzhalterdomänen angezeigt, die für Internet Sc
 
 |**Platzhalterdomäne nur für Internet Schaltungen beworben**|**Untergeordneter FQDN für Express Route und Internet Schaltungen beworben**|
 |:-----|:-----|
-|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> Home.Office.com  <br/> Outlook.Office.com  <br/> Portal.Office.com  <br/> www.Office.com  <br/> |
-|\*. Office.net  <br/> |Agent.Office.net  <br/> |
-|\*. office365.com  <br/> |Outlook.office365.com  <br/> smtp.office365.com  <br/> |
+|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. Office.net  <br/> |agent.office.net  <br/> |
+|\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. Mail.Protection.Outlook.com  <br/> AutoErmittlung\<-\>Mandant. Outlook.com  <br/> |
-|\*. Windows.net  <br/> |Login.Windows.net  <br/> |
+|\*. Windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Weiterleiten Office 365 Datenverkehrs über das Internet und Express Route
 
@@ -157,7 +157,7 @@ Die höchsten FQDNs für Exchange Online, SharePoint Online und Skype for Busine
 
 - \*. Lync.com zusammen mit den IP-Bereichen für nicht-TCP-Datenverkehr
 
-- \*Broadcast.officeapps.Live.com, \*Excel.officeapps.Live.com, \*OneNote.officeapps.Live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*Broadcast.officeapps.Live.com, \*Excel.officeapps.Live.com, \*OneNote.officeapps.Live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
 
 Erfahren Sie mehr über das [bereitstellen und Verwalten von Proxyeinstellungen in Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) und stellen Sie sicher, dass [Office 365 nicht von Ihrem Proxy gedrosselt wird](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -212,7 +212,7 @@ In diesem Szenario würde der Datenverkehr vom Remotestandort die Office 365-Fro
   
 Wenn Humongous wichtige Niederlassungen in mehreren Kontinenten aufweist, werden mindestens zwei aktive/aktive Schaltkreise pro Region empfohlen, um die Wartezeit für vertrauliche Anwendungen wie Skype for Business Online zu verringern. Wenn sich alle Niederlassungen auf einem einzelnen Kontinent befinden oder keine Zusammenarbeit in Echtzeit verwendet wird, ist die Verwendung eines konsolidierten oder verteilten Ausgangs Points eine kundenspezifische Entscheidung. Wenn mehrere Schaltkreise verfügbar sind, wird durch das BGP-Routing ein Failover sichergestellt, wenn ein einzelner Schaltkreis nicht mehr verfügbar ist.
   
-Erfahren Sie mehr über Beispiel [Routingkonfigurationen](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) und [https://azure.microsoft.com/en-us/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/).
+Erfahren Sie mehr über Beispiel [Routingkonfigurationen](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) und [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/).
   
 ## <a name="selective-routing-with-expressroute"></a>Selektives Routing mit Express Route
 
@@ -230,7 +230,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/eror
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
   
 [Azure ExpressRoute für Office 365](azure-expressroute.md)
   

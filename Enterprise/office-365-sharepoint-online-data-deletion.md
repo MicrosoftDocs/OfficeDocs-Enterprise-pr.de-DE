@@ -13,21 +13,22 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Erklärung zum Löschen von Daten in SharePoint Online.
-ms.openlocfilehash: ff219654387a17598f1ada8c866a005d8d4f5449
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 44b05ce6c028e79e489a94157f264fcedd63ea1a
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067479"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035475"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>SharePoint Online von Datenlöschung in Office 365
 
-SharePoint Online speichert Objekte als abstrahierten Code in Anwendungsdatenbanken. Wenn ein Benutzer eine Datei in SharePoint Online hochlädt, wird diese Datei zerlegt und in Anwendungscode übersetzt und in mehreren Tabellen in mehreren Datenbanken gespeichert. In SharePoint Online werden alle Inhalte, die ein Kunde hoch lädt, in Segmente unterteilt, verschlüsselt (potenziell mit mehreren AES 256-Bit-Schlüsseln) und über das Rechenzentrum verteilt. Spezifische Details zum Segmentierungs-und Verschlüsselungsprozess finden Sie unter [Encryption in the Microsoft Cloud](/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview.md). 
+SharePoint Online speichert Objekte als abstrahierten Code in Anwendungsdatenbanken. Wenn ein Benutzer eine Datei in SharePoint Online hochlädt, wird diese Datei zerlegt und in Anwendungscode übersetzt und in mehreren Tabellen in mehreren Datenbanken gespeichert. In SharePoint Online werden alle Inhalte, die ein Kunde hoch lädt, in Segmente unterteilt, verschlüsselt (potenziell mit mehreren AES 256-Bit-Schlüsseln) und über das Rechenzentrum verteilt. Spezifische Details zum Segmentierungs-und Verschlüsselungsprozess finden Sie unter [Encryption in the Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
-In SharePoint Online werden Elemente für 93 Tage ab dem Zeitpunkt aufbewahrt, zu dem Sie Sie aus Ihrem ursprünglichen Speicherort löschen. Sie bleiben die gesamte Zeit im Papierkorb der Website, es sei denn, jemand löscht sie von dort oder entleert diesen Papierkorb. In diesem Fall wechseln die Elemente in den Papierkorb der Websitesammlung, wo Sie für die restlichen 93 Tage bleiben. Informationen zum Wiederherstellen gelöschter Elemente finden Sie unter [Wiederherstellen von Elementen im Papierkorb einer SharePoint-Website](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
+In SharePoint Online werden Elemente für 93 Tage ab dem Zeitpunkt aufbewahrt, zu dem Sie Sie aus Ihrem ursprünglichen Speicherort löschen. Sie bleiben die gesamte Zeit im Papierkorb der Website, es sei denn, jemand löscht sie von dort oder entleert diesen Papierkorb. In diesem Fall wechseln die Elemente in den Papierkorb der Websitesammlung, wo Sie für die restlichen 93 Tage bleiben. Informationen zum Wiederherstellen gelöschter Elemente finden Sie unter [Wiederherstellen von Elementen im Papierkorb einer SharePoint-Website](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 ) und [Wiederherstellen gelöschter Elemente aus dem Papierkorb der Websitesammlung](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). Die Aufbewahrungszeit für den Papierkorb kann nicht in SharePoint Online konfiguriert werden.
 
 Wenn Sie eine Websitesammlung löschen, löschen Sie auch die Hierarchie der Websites in der Auflistung und alle darin enthaltenen Inhalte:
+
 - Dokumente und Dokumentbibliotheken
 - Listen und Listendaten
 - Website Konfigurationseinstellungen

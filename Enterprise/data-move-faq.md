@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Kern Daten in ein neues Rechenzentrum Geo.
-ms.openlocfilehash: fe0392040f4a78d32e682e4f013db7a8ba49ebd5
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782325"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028889"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -25,7 +25,7 @@ Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Kern Daten i
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>Welche Kunden sind berechtigt, eine Verlagerung anzufordern?
   
-Vorhandene Office 365 Geschäftskunden, die ein Land ausgewählt haben, das für das neue Datencenter Geo berechtigt ist, können eine Verlagerung anfordern.  Das Programm besteht nur für Mandanten mit einem berechtigten Landescode, der dem Office 365 Mandanten zugewiesen ist, um die wichtigsten Kundendaten im Ruhezustand für berechtigte Arbeitsauslastungen an das entsprechende Office 365 Datacenter Geo zu migrieren.  Lesen Sie die Informationen unter Vorgehens [Weise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) , um die Berechtigung für das Land zu bestätigen.   
+Vorhandene Office 365 Geschäftskunden, die ein Land ausgewählt haben, das für das neue Datencenter Geo berechtigt ist, können eine Verlagerung anfordern.  Das Programm besteht nur für Mandanten mit einem berechtigten Landescode, der dem Office 365 Mandanten zugewiesen ist, um die wichtigsten Kundendaten im Ruhezustand für berechtigte Arbeitsauslastungen an das entsprechende Office 365 Datacenter Geo zu migrieren.  Lesen Sie die [Informationen unter Vorgehensweise zum Anfordern ihrer Datenverlagerung](request-your-data-move.md) , um die Berechtigung für das Land zu bestätigen.   
 
 ## <a name="how-do-we-define-core-customer-data"></a>Wie definieren wir die wichtigsten Kundendaten?
  
@@ -42,7 +42,7 @@ Aufgrund von gemeinsam genutzten Abhängigkeiten zwischen Exchange Online und Sh
  
 Es gibt zwei Aktionen, die Sie als mandantenadministrator ausführen können.
 
-- Opt-in.Registrieren Sie sich im Office 365 verschieben-Programm, und erhalten Sie eine festgelegte Frist für ihre Dienste zur Migration der Kernkunden Daten in Rest an das neue Rechenzentrum Geo.Auf der Seite Vorgehens [Weise anfordern ihrer Datenverlagerung](request-your-data-move.md) finden Sie Anweisungen zum Anmelden für das Programm.
+- Opt-in.Registrieren Sie sich im Office 365 verschieben-Programm, und erhalten Sie eine festgelegte Frist für ihre Dienste zur Migration der Kernkunden Daten in Rest an das neue Rechenzentrum Geo.Auf der Seite [Vorgehensweise anfordern ihrer Datenverlagerung](request-your-data-move.md) finden Sie Anweisungen zum Anmelden für das Programm.
 - Keine Aktion ausführen.Keine Aktion, was dazu führt, dass Microsoft im Rahmen der Dienstverwaltung und-Optimierung im Laufe der Zeit ihre Kernkunden Daten in Ruhe auf Ihre neue Rechenzentrum-geografische Position umstellen kann.Ihre Daten können nur möglicherweise zu Ihrem neuen Geo-Rechenzentrum und nicht zu einem anderen Geo umsteigen.Wir benachrichtigen über das Nachrichten Center, wenn eine solche Dienst Verwaltungs Verlagerung abgeschlossen wurde.
 
 ## <a name="how-do-you-make-sure-my-customer-data-is-safe-during-the-move-and-that-i-wont-experience-downtime"></a>Wie stellen Sie sicher, dass meine Kundendaten während des Wechsels sicher sind und dass ich keine Ausfallzeiten erlebe?
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie auf der Seite [Gewusst wie: anfordern ihrer Dat
   
 ## <a name="how-can-i-request-to-be-moved"></a>Wie kann ich eine Verschiebung anfordern?
   
-Für berechtigte Kunden wird eine Seite in Ihrem [Office 365 Administrator Portal](https://portal.office.com/)angezeigt. Weitere Informationen zum Anfordern einer Bewegung finden Sie unter Vorgehens [Weise anfordern der Datenverlagerung](request-your-data-move.md) . 
+Für berechtigte Kunden wird eine Seite in Ihrem [Office 365 Administrator Portal](https://portal.office.com/)angezeigt. Weitere Informationen zum Anfordern einer Bewegung finden Sie unter [Vorgehensweise anfordern der Datenverlagerung](request-your-data-move.md) . 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>Kann ich meine Auswahl ändern, nachdem ich eine Bewegung angefordert habe?
   
@@ -155,4 +155,4 @@ Ja, Ihr Mandant ist berechtigt, sich anzumelden.  Wir verschieben alle Exo-Postf
 
 [Neues Datacenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure-Dienste nach Region](https://azure.microsoft.com/en-us/regions/)
+[Azure-Dienste nach Region](https://azure.microsoft.com/regions/)

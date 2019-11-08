@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Schützen Sie den globalen Administratorzugriff auf Ihr Office 365 Abonnement.
-ms.openlocfilehash: 353787ccda7ab96583fe75bc423f70d339d3435b
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
+ms.openlocfilehash: a75cab61c5b59ebd1b085829cfa20365f20443c9
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162398"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031610"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Ihrer globalen Office 365-Administratorkonten
 
@@ -125,7 +125,7 @@ Verwenden Sie nach den Schritten 1 und 2 diese zusätzlichen Methoden, um sicher
 
 Um sicherzustellen, dass die Ausführung von äußerst privilegierten Aufgaben so sicher wie möglich ist, verwenden Sie eine privilegierte Zugriffs Arbeitsstation (PAW). Bei einer PAW handelt es sich um einen dedizierten Computer, der nur für vertrauliche Konfigurationsaufgaben wie Office 365 Konfiguration verwendet wird, die ein globales Administratorkonto erfordert. Da dieser Computer nicht täglich für das Internet-browsen oder e-Mail verwendet wird, ist er besser vor Internetangriffen und-Bedrohungen geschützt.
   
-Anweisungen zum Einrichten einer Pfote finden Sie unter [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw).
+Anweisungen zum Einrichten einer Pfote finden Sie unter [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 

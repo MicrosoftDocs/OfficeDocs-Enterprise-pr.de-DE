@@ -12,12 +12,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: 09d858f42b44ae6252872120597145b55c1d3552
-ms.sourcegitcommit: 0c8accb08121f8a70c59c437e05e8f74924e6efb
+ms.openlocfilehash: 67b337ee1ddf34a547ddafc80d886ff6075987ce
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786230"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030779"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -118,7 +118,7 @@ Alle Benutzer werden während des Umschaltens von der Skype for Business-Client 
    
 |**Nach dem Wechsel**|
 |:-----|
-| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht weiterentwickelt und müssen erneut hochgeladen werden.  <br/>  Ältere lync-Clients, wie der Client für lync 2010 Client und lync für Mac 2011, sind bekannt für die Zwischenspeicherung von DNS-Informationen mit dem Dienst, der Anmeldeprobleme verursacht. Das Löschen des DNS-Caches ist möglicherweise erforderlich, wenn sich der Benutzer nicht auf dem neuesten Skype for Business Windows-Client befindet. Bitten Sie die Benutzer, den Assistenten für die [Problembehandlung](https://support.microsoft.com/en-us/kb/2541980) auszuführen, und folgen Sie den Anweisungen zum Löschen des Clientcaches. Lync für Mac-Clientbenutzer sollten [diese Anweisungen](https://support.microsoft.com/en-us/kb/2629861)befolgen.  <br/> |
+| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht weiterentwickelt und müssen erneut hochgeladen werden.  <br/>  Ältere lync-Clients, wie der Client für lync 2010 Client und lync für Mac 2011, sind bekannt für die Zwischenspeicherung von DNS-Informationen mit dem Dienst, der Anmeldeprobleme verursacht. Das Löschen des DNS-Caches ist möglicherweise erforderlich, wenn sich der Benutzer nicht auf dem neuesten Skype for Business Windows-Client befindet. Bitten Sie die Benutzer, den Assistenten für die [Problembehandlung](https://support.microsoft.com/kb/2541980) auszuführen, und folgen Sie den Anweisungen zum Löschen des Clientcaches. Lync für Mac-Clientbenutzer sollten [diese Anweisungen](https://support.microsoft.com/kb/2629861)befolgen.  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype for Business-Moves, die einen Drittanbieter für Audiokonferenzen einbeziehen
 Add-on-Dienste von Drittanbieter-Audiokonferenz-Anbietern für Skype for Business stehen nicht für Benutzer zur Verfügung, die in neuen Geo-spezifischen Rechenzentren verwaltet werden.  Vorhandene Kunden, die einen Drittanbieterdienst für Audiokonferenzen verwenden, sollten keine Umstellung auf ein neues Geo-spezifisches Rechenzentrum anfordern.  Neue Kunden, die in den neuen Geo-spezifischen Rechenzentren bereitgestellt werden, müssen eine Verlagerung an ein regionales Rechenzentrum anfordern, um einen Drittanbieter für Audiokonferenzen verwenden zu können.
@@ -135,5 +135,5 @@ Kundendaten werden nur für Exchange Online, SharePoint Online und Skype for Bus
   
 [Neues Datacenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Azure-Dienste nach Region](https://azure.microsoft.com/en-us/regions/)
+[Azure-Dienste nach Region](https://azure.microsoft.com/regions/)
 

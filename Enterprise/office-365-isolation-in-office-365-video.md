@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Erläuterung der mandantenisolation in Office 365 Video.'
-ms.openlocfilehash: a9ecd4b2c2d7dc7bf69a43c608312e3893b5009d
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: c9be942e10debeb729cda87a88131c17d736d4a2
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067436"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035585"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Mandantenisolation in Office 365 Video
 
@@ -26,12 +26,15 @@ ms.locfileid: "37067436"
 > Office 365 Video wird durch Microsoft Stream ersetzt. Weitere Informationen zum neuen Enterprise-Videodienst, der Informationen zur Video Zusammenarbeit hinzufügt und Informationen zu den Übergangsplänen für aktuelle Office 365 Video Kunden enthält, finden Sie unter [migrate to Stream from Office 365 Video](https://docs.microsoft.com/stream/).
 
 ## <a name="introduction"></a>Einführung
+
 Azure Storage dient zum Speichern von Daten für mehrere Office 365 Dienste, einschließlich Office 365 Video und Sway. Azure Storage umfasst BLOB-Speicher, ein hoch skalierbarer, Rest-basierter Cloud-Objektspeicher, der zum Speichern unstrukturierter Daten verwendet wird. Azure Storage verwendet ein einfaches Zugriffssteuerungsmodell; jedes Azure-Abonnement kann mindestens ein Speicherkonto erstellen. Jedes Speicherkonto verfügt über einen einzelnen geheimen Schlüssel, der verwendet wird, um den Zugriff auf alle Daten in diesem Speicherkonto zu steuern. Dies unterstützt das typische Szenario, in dem Speicher mit Anwendungen verknüpft ist und diese Anwendungen Vollzugriff auf die zugeordneten Daten haben. beispielsweise Sway Speicherung von Inhalten im Azure-Speicher. Alle Kunden Inhalte für Sway werden in freigegebenen Azure-Speicherkonten gespeichert. Die Inhalte jedes Benutzers befinden sich in einer separaten Verzeichnisstruktur von BLOBs im Azure-Speicher.
 
 Die Systeme, die den Zugriff auf Kundenumgebungen (beispielsweise das Azure-Portal, smapi usw.) verwalten, sind in einer Azure-Anwendung isoliert, die von Microsoft betrieben wird. Dadurch wird die Kundenzugriffs Infrastruktur logisch von den Kundenanwendungen und der Speicherschicht getrennt.
 
 ## <a name="tenant-isolation-in-office-365-video"></a>Mandantenisolation in Office 365 Video
+
 [Office 365 Video](https://support.office.com/article/Meet-Office-365-Video-ca1cc1a9-a615-46e1-b6a3-40dbd99939a6) ist ein Unternehmensportal, das Organisationen mit einem hochgradig sicheren, organisationsweiten Ziel für das veröffentlichen, freigeben und ermitteln von Videoinhalten bereitstellt. In Office 365 Video werden die Videos jedes Mandanten isoliert und an allen Speicherorten verschlüsselt und stehen nur authentifizierten Benutzern zur Verfügung, die Zugriff und Berechtigungen für die Videos der Organisation besitzen. Office 365 Video verwendet eine Kombination aus Technologien, um dies zu erreichen:
+
 - SharePoint Online wird zum Speichern der Videodatei und der Metadaten (Videotitel, Beschreibung usw.) verwendet. Außerdem werden die Sicherheits-und Kompatibilitätsebene (einschließlich Authentifizierung) und Suchfeatures bereitgestellt.
 - Azure Media Services bietet Transcoding, adaptives Streaming, sichere Zustellung (mithilfe der AES-Verschlüsselung) und Miniaturansicht-Features.
 

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Erläutert, warum die Netzwerkoptimierung für SaaS-Dienste wichtig ist, das Ziel Office 365 Netzwerke und wie Saas unterschiedliche Netzwerke aus anderen Arbeitslasten benötigt.
-ms.openlocfilehash: e1ae446d7a69d0fab83e7dd4aa253bd1120e6c08
-ms.sourcegitcommit: 99bf8739dfe1842c71154ed9548ebdd013c7e59e
+ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017285"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031890"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 Netzwerkkonnektivität (Übersicht)
 
@@ -31,7 +31,7 @@ In diesem Artikel erfahren Sie mehr über die Ziele Office 365 Netzwerks und war
 
 Das Endziel von Office 365 Vernetzung besteht darin, die Endbenutzerfreundlichkeit zu optimieren, indem der am wenigsten beschränkende Zugriff zwischen Clients und den nächstgelegenen Office 365 Endpunkten ermöglicht wird. Die Qualität der Endbenutzererfahrung steht in direktem Zusammenhang mit der Leistung und Reaktionsfähigkeit der Anwendung, die der Benutzer verwendet. Beispielsweise stützt sich Microsoft Teams auf eine geringe Wartezeit, sodass Benutzer Anrufe, Konferenzen und gemeinsame Bildschirm zusammenarbeiten glitch-frei sind und Outlook eine große Netzwerkkonnektivität für sofort Suchfeatures verwendet, die serverseitige Indizierung und AI nutzen. Funktionen.
 
-Das primäre Ziel im Netzwerkentwurf sollte die Minimierung der Wartezeit sein, indem die Roundtripzeit (Round-Trip Time, RTT) von Clientcomputern auf das globale Microsoft-Netzwerk, das öffentliche Netzwerkbackbone von Microsoft, das alle Microsoft-Rechenzentren mit niedriger Latenz verbindet, verringert wird. , hoch verfügbare Cloud-Anwendungs Einstiegspunkte, die auf der ganzen Welt verteilt sind. Weitere Informationen zum globalen Netzwerk von Microsoft finden Sie unter [How Microsoft baut sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+Das primäre Ziel im Netzwerkentwurf sollte die Minimierung der Wartezeit sein, indem die Roundtripzeit (Round-Trip Time, RTT) von Clientcomputern auf das globale Microsoft-Netzwerk, das öffentliche Netzwerkbackbone von Microsoft, das alle Microsoft-Rechenzentren mit niedriger Latenz verbindet, verringert wird. , hoch verfügbare Cloud-Anwendungs Einstiegspunkte, die auf der ganzen Welt verteilt sind. Weitere Informationen zum globalen Netzwerk von Microsoft finden Sie unter [How Microsoft baut sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Die Optimierung Office 365 Netzwerkleistung muss nicht kompliziert sein. Sie können die bestmögliche Leistung erzielen, indem Sie ein paar wichtige Grundsätze befolgen:
 
@@ -53,13 +53,13 @@ Wir machen es einfacher, Office 365 Netzwerkdatenverkehr zu identifizieren und e
 
 - Neue Kategorien von Netzwerkendpunkten zur Unterscheidung von stark kritischem Netzwerkdatenverkehr vom Netzwerkdatenverkehr, der nicht von Internet Wartezeiten betroffen ist. Es gibt nur eine Handvoll URLs und unterstützende IP-Adressen in der kritischsten Kategorie "optimieren".
 - Webdienste zur Skriptnutzung oder direkten Gerätekonfiguration und Änderungsverwaltung Office 365 Netzwerkidentifikation. Änderungen sind über den Webdienst oder im RSS-Format oder per e-Mail mit einer Microsoft-Fluss Vorlage verfügbar.
-- [Office 365 Netzwerkpartnerprogramm](http://aka.ms/Office365NPP) mit Microsoft-Partnern, die Geräte oder Dienste bereitstellen, die Office 365 Netzwerk Verbindungs Prinzipien entsprechen und eine einfache Konfiguration aufweisen.
+- [Office 365 Netzwerkpartnerprogramm](https://aka.ms/Office365NPP) mit Microsoft-Partnern, die Geräte oder Dienste bereitstellen, die Office 365 Netzwerk Verbindungs Prinzipien entsprechen und eine einfache Konfiguration aufweisen.
 
 ## <a name="securing-office-365-connections"></a>Sichern von Office 365 Verbindungen
 
 Das Ziel der traditionellen Netzwerksicherheit besteht darin, den Umkreis des Unternehmensnetzwerks vor Eindringversuchen und böswilligen Ausnutzungen zu verhärten. Die meisten Unternehmensnetzwerke erzwingen die Netzwerksicherheit für den Internet Datenverkehr mithilfe von Technologien wie Proxyservern, Firewalls, SSL-Unterbrechung und-Prüfung, Deep Packet Inspection und Verhinderung von Datenverlust. Diese Technologien bieten eine wichtige Risikominderung für generische Internet Anforderungen, können jedoch die Leistung, die Skalierbarkeit und die Qualität der Endbenutzererfahrung drastisch reduzieren, wenn Sie auf Office 365 Endpunkte angewendet werden.
 
-Office 365 hilft, die Anforderungen Ihrer Organisation an Inhaltssicherheit und Daten Nutzungs Konformität mit integrierten Sicherheits-und Steuerungsfeatures zu erfüllen, die speziell für Office 365 Features und Arbeitslasten entwickelt wurden. Weitere Informationen zur Office 365 Sicherheit und Compliance finden Sie in der [Office 365 Security Roadmap](https://docs.microsoft.com/en-us/office365/securitycompliance/security-roadmap). Weitere Informationen zu den Empfehlungen und der Unterstützung von Microsoft für erweiterte Netzwerklösungen, mit denen die Verarbeitung auf Office 365 Datenverkehr auf Erweiterter Ebene ausgeführt wird, finden Sie unter [Verwenden von Drittanbieter-Netzwerkgeräten oder Lösungen für Office 365 Datenverkehr](https://support.microsoft.com/en-us/help/2690045).
+Office 365 hilft, die Anforderungen Ihrer Organisation an Inhaltssicherheit und Daten Nutzungs Konformität mit integrierten Sicherheits-und Steuerungsfeatures zu erfüllen, die speziell für Office 365 Features und Arbeitslasten entwickelt wurden. Weitere Informationen zur Office 365 Sicherheit und Compliance finden Sie in der [Office 365 Security Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Weitere Informationen zu den Empfehlungen und der Unterstützung von Microsoft für erweiterte Netzwerklösungen, mit denen die Verarbeitung auf Office 365 Datenverkehr auf Erweiterter Ebene ausgeführt wird, finden Sie unter [Verwenden von Drittanbieter-Netzwerkgeräten oder Lösungen für Office 365 Datenverkehr](https://support.microsoft.com/help/2690045).
 
 ## <a name="why-is-office-365-networking-different"></a>Warum ist Office 365 Vernetzung unterschiedlich?
 
@@ -77,12 +77,12 @@ Wenn Sie den Netzwerkpfad auf Office 365 Einstiegspunkte kürzen, indem Sie den 
 
 Die lokale Ausgangsarchitektur hat folgende Vorteile für Office 365 Netzwerkdatenverkehr über das herkömmliche Modell:
   
-- Bietet optimale Office 365 Leistung durch Optimierung der Routenlänge. Endbenutzer Verbindungen werden dynamisch an den nächsten Office 365 Einstiegspunkt der verteilten _Dienst-Front-Door_ -Infrastruktur des Microsoft Global-Netzwerks weitergeleitet, und der Datenverkehr wird dann intern an Daten-und Dienstendpunkte über Microsoft weitergeleitet. extrem niedrige Latenz Hochverfügbarkeit Dark Fiber.
+- Bietet optimale Office 365 Leistung durch Optimierung der Routenlänge. Endbenutzer Verbindungen werden dynamisch an den nächstgelegenen Office 365 Einstiegspunkt über die _Front-Door_ -Infrastruktur des Microsoft Global-Netzwerks weitergeleitet, und der Datenverkehr wird dann intern an Daten-und Dienstendpunkte über die hoch Verfügbarkeits-Dark-Fiber von Microsoft mit hoher Verfügbarkeit weitergeleitet.
 - Reduziert die Auslastung der Unternehmensnetzwerk Infrastruktur, indem lokale Ausgänge für Office 365 Datenverkehr zugelassen werden und Proxys und Datenverkehrs Kontrollgeräte umgangen werden.
 - Sichert Verbindungen an beiden Enden, indem Client-Endpunktsicherheit und Cloud-Sicherheitsfunktionen genutzt werden, wodurch die Anwendung redundanter Netzwerksicherheitstechnologien vermieden wird.
 
 > [!NOTE]
-> Die _verteilte Dienst-Front-Door_ -Infrastruktur ist die hoch verfügbare und skalierbare Netzwerk Kante des Microsoft Global Netzwerks mit geografisch verteilten Standorten. Sie beendet Endbenutzer Verbindungen und leitet Sie effizient innerhalb des globalen Netzwerks von Microsoft weiter. Weitere Informationen zum globalen Netzwerk von Microsoft finden Sie unter [How Microsoft baut sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> Die _verteilte Dienst-Front-Door_ -Infrastruktur ist die hoch verfügbare und skalierbare Netzwerk Kante des Microsoft Global Netzwerks mit geografisch verteilten Standorten. Sie beendet Endbenutzer Verbindungen und leitet Sie effizient innerhalb des globalen Netzwerks von Microsoft weiter. Weitere Informationen zum globalen Netzwerk von Microsoft finden Sie unter [How Microsoft baut sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Weitere Informationen zum Verständnis und zur Anwendung Office 365 Prinzipien der Netzwerkkonnektivität finden Sie unter [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
 
@@ -100,11 +100,11 @@ Die Optimierung Office 365 Netzwerkleistung ist wirklich auf das Entfernen unnö
 
 [Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
 
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
 
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
 
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
 
 [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
 
@@ -114,6 +114,6 @@ Die Optimierung Office 365 Netzwerkleistung ist wirklich auf das Entfernen unnö
 
 [Office 365 Netzwerk-Onboarding-Tool](https://aka.ms/netonboard)
 
-[So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Blog "Office 365 Networking"](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

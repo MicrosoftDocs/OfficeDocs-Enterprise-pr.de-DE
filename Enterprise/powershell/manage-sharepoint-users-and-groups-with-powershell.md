@@ -3,7 +3,7 @@ title: Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 Pow
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/05/2019
+ms.date: 11/05/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um SharePoint Online-Benutzer,-Gruppen und-Websites zu verwalten.'
-ms.openlocfilehash: f84e4cda797cd8f1bc4ddf573cb4f1c6f0165da7
-ms.sourcegitcommit: 8d1cc95b3641afe547c6d0e05f2dad5d013a0773
+ms.openlocfilehash: 8133af978e2a63bf18b825ca6b6bdb430e676b72
+ms.sourcegitcommit: b4514cd852093181dd4c27009a78aca3ca50d2e2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37975890"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38038224"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-office-365-powershell"></a>Verwalten von SharePoint Online-Benutzern und -Gruppen mit Office 365 PowerShell
 
@@ -29,7 +29,7 @@ Wenn Sie ein SharePoint Online Administrator sind, der mit umfangreichen Listen 
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) .
+Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) .
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Abrufen einer Liste von Websites, Gruppen und Benutzern
 

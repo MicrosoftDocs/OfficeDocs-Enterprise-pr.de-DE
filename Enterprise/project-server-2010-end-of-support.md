@@ -16,12 +16,12 @@ search.appverid:
 - PJU120
 - PJW120
 description: Support endet für Project Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf Project Online oder eine neuere Version von Project Server lokal.
-ms.openlocfilehash: f43bf5bfc6468d48708e02eec62fb3f822f5eb47
-ms.sourcegitcommit: af8175b2d7f84e5c835bbfba82c0b50fe555d9e9
+ms.openlocfilehash: b1505a89b10b3e18da99f66a203dde376f8db5c4
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36782442"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031620"
 ---
 # <a name="project-server-2010-end-of-support-roadmap"></a>Roadmap für Project Server 2010 Ende des Supports
 
@@ -91,7 +91,7 @@ Sie können die PWA-Konfiguration manuell in Project online erstellen (beispiels
   
 Wichtige Ressourcen:
   
-|**Resource**|**Beschreibung**|
+|**Ressource**|**Beschreibung**|
 |:-----|:-----|
 |[Erste Schritte mit Project Online](https://support.office.com/article/e3e5f64f-ada5-4f9d-a578-130b2d4e5f11) <br/> |Vorgehensweise zum Einrichten und Verwenden von Project online.  <br/> |
 |[Project Online-Dienstbeschreibung](https://go.microsoft.com/fwlink/p/?linkid=829088) <br/> |Informationen zu den verschiedenen Project Online Plänen, die Ihnen zur Verfügung stehen.  <br/> |
@@ -147,7 +147,7 @@ Wichtige Ressourcen:
   
 - [Übersicht über den Prozess zum Upgrade auf Project Server 2013](https://go.microsoft.com/fwlink/p/?linkid=841274)
     
-- [Upgraden der Datenbanken und Project Web App-Websitesammlungen (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
+- [Upgrade der Datenbanken und Project Web App-Websitesammlungen (Project Server 2013)](https://go.microsoft.com/fwlink/p/?linkid=841272)
     
 - [Microsoft Project Server-Aktualisierungsprozess (Diagramm)](https://go.microsoft.com/fwlink/p/?linkid=841270)
     
@@ -157,7 +157,7 @@ Wichtige Ressourcen:
 
 Nach der Migration zu Project Server 2013 und überprüfen, ob Ihre Daten erfolgreich migriert wurden, besteht der nächste Schritt darin, Ihre Daten zu Project Server 2016 zu migrieren.
   
-Ein umfassendes Verständnis der Schritte, die Sie für ein Upgrade von Project Server 2013 auf Project Server 2016 benötigen, finden Sie unter [Upgrade to Project Server 2016](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Ein umfassendes Verständnis der Schritte, die Sie für ein Upgrade von Project Server 2013 auf Project Server 2016 benötigen, finden Sie unter [Upgrade to Project Server 2016](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Wichtige Ressourcen:
   
@@ -176,7 +176,7 @@ Wichtige Ressourcen:
 
 Nach der Migration zu Project Server 2016 und überprüfen, ob Ihre Daten erfolgreich migriert wurden, besteht der nächste Schritt darin, Ihre Daten zu Project Server 2019 zu migrieren.
   
-Ein umfassendes Verständnis der Schritte, die Sie für ein Upgrade von Project Server 2016 auf Project Server 2019 benötigen, finden Sie unter [Upgrade to Project Server 2019](https://docs.microsoft.com/en-us/Project/upgrade-to-project-server-2016).
+Ein umfassendes Verständnis der Schritte, die Sie für ein Upgrade von Project Server 2016 auf Project Server 2019 benötigen, finden Sie unter [Upgrade to Project Server 2019](https://docs.microsoft.com/Project/upgrade-to-project-server-2016).
   
 Wichtige Ressourcen:
   
@@ -189,7 +189,7 @@ Wichtige Ressourcen:
   
 - Durch den Upgradeprozess werden Ihre Daten aus Ihrer Project Server 2016-Datenbank in die SharePoint Server 2019-Inhaltsdatenbank migriert.  Project Server 2019 erstellt keine eigene Project Server-Datenbank mehr in der SharePoint Server Farm.
 
-- Beachten Sie nach dem Upgrade mehrere Änderungen in Project Web App.  Eine Beschreibung dieser Informationen finden Sie unter [What es New in Project Server 2019](https://docs.microsoft.com/en-us/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
+- Beachten Sie nach dem Upgrade mehrere Änderungen in Project Web App.  Eine Beschreibung dieser Informationen finden Sie unter [What es New in Project Server 2019](https://docs.microsoft.com/project/what-s-new-for-it-pros-in-project-server-2019#PWAChanges).
 
   
 Weitere Ressourcen:
@@ -212,6 +212,6 @@ Sie können dieses Poster auch [herunterladen](https://github.com/MicrosoftDocs/
 
 [Upgrade von SharePoint 2010](upgrade-from-sharepoint-2010.md)
   
-[Upgrade von Office 2010-Servern und-Clients](upgrade-from-office-2010-servers-and-products.md)
+[Upgrade von Office 2010-Servern und -Clients](upgrade-from-office-2010-servers-and-products.md)
   
 

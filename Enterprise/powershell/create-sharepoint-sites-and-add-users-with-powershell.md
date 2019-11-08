@@ -13,26 +13,26 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um neue SharePoint Online-Websites zu erstellen, und fügen Sie dann Benutzer und Gruppen zu diesen Websites hinzu.'
-ms.openlocfilehash: c2ed2afd7915fa5fc3aa936b5aa09cf90679ff97
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 2262c69af7dce7472257512d215c1f0425f875f0
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069101"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031030"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-office-365-powershell"></a>Erstellen von SharePoint Online-Websites und Hinzufügen von Benutzern mit Office 365 PowerShell
 
- **Zusammenfassung:** Verwenden Sie Office 365 PowerShell, um neue SharePoint Online-Websites zu erstellen, und fügen Sie dann Benutzer und Gruppen zu diesen Websites hinzu.
+ **Zusammenfassung:** Verwenden Sie Office 365 PowerShell, um neue SharePoint Online Websites zu erstellen, und fügen Sie dann Benutzer und Gruppen zu diesen Websites hinzu.
 
-Wenn Sie Office 365 PowerShell zum Erstellen von SharePoint Online-Websites und zum Hinzufügen von Benutzern verwenden, können Sie schnell und wiederholt Aufgaben schneller ausführen als im Office 356 Admin Center. Sie können auch Aufgaben ausführen, die Sie nicht im Office 365 Admin Center ausführen können. 
+Wenn Sie Office 365 PowerShell zum Erstellen von SharePoint Online Websites und zum Hinzufügen von Benutzern verwenden, können Sie Aufgaben schnell und wiederholt wesentlich schneller ausführen als im Office 356 Admin Center. Sie können auch Aufgaben ausführen, die Sie nicht im Office 365 Admin Center ausführen können. 
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Bei den Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Weitere Informationen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/en-us/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps) .
 
 ## <a name="step-1-create-new-site-collections-using-office-365-powershell"></a>Schritt 1: Erstellen neuer Websitesammlungen mithilfe von Office 365 PowerShell
 
-Erstellen Sie mehrere Websites mithilfe von Office 365 PowerShell und einer CSV-Datei, die Sie mithilfe des gelieferten Beispielcodes und Notepad erstellen. Hierzu ersetzen Sie die in Klammern stehende Platzhalter-Information durch Ihre eigenen Website- und Mandant-spezifischen Informationen. Dieser Prozess ermöglicht Ihnen das Erstellen einer einzelnen Datei und das Ausführen eines einzelnen Office 365 PowerShell-Befehls, der diese Datei verwendet. Die durchgeführten Maßnahmen sind sowohl wiederholbar als auch tragbar und es werden viele, wenn nicht alle Fehler vermieden, die durch die Eingabe der Befehle in die SharePoint Online-Verwaltungsshell entstehen können. Dieses Verfahren lässt sich in zwei Teile aufteilen. Sie erstellen zuerst eine .csv-Datei, danach referenzieren Sie diese CSV-Datei mithilfe von Office 365 PowerShell, das mithilfe deren Inhalte die Websites erstellt.
+Erstellen Sie mehrere Websites mithilfe von Office 365 PowerShell und einer CSV-Datei, die Sie mithilfe des gelieferten Beispielcodes und Notepad erstellen. Hierzu ersetzen Sie die in Klammern stehende Platzhalter-Information durch Ihre eigenen Website- und Mandant-spezifischen Informationen. Bei diesem Verfahren können Sie eine einzelne Datei erstellen und einen einzelnen Office 365 PowerShell-Befehl ausführen, der diese Datei verwendet. Die durchgeführten Maßnahmen sind sowohl wiederholbar als auch tragbar und es werden viele, wenn nicht alle Fehler vermieden, die durch die Eingabe der Befehle in die SharePoint Online-Verwaltungsshell entstehen können. Dieses Verfahren lässt sich in zwei Teile aufteilen. Sie erstellen zuerst eine .csv-Datei, danach referenzieren Sie diese CSV-Datei mithilfe von Office 365 PowerShell, das mithilfe deren Inhalte die Websites erstellt.
 
 Das Office 365 PowerShell-Cmdlet importiert die CSV-Datei und leitet sie so, dass sie in die Schleife in den runden Klammern passt, die die erste Zeile der Datei als Spaltenkopf liest. Das Office 365 PowerShell-Cmdlet arbeitet sich dann durch die restlichen Datensätze, erstellt eine neue Websitesammlung für jeden Datensatz und weist Eigenschaften der Websitesammlung gemäß den Spaltenköpfen zu.
 
@@ -47,7 +47,7 @@ owner@tenant.onmicrosoft.com,100,https://tenant.sharepoint.com/sites/Blog01,25,B
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Project01,25,PROJECTSITE#0,10,Project Alpha
 owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01,25,COMMUNITY#0,10,Community Site
 ```
-<br/>Dabei ist *Mandant* der Name Ihres Mandanten, und *Owner* ist der Benutzername des Benutzers in Ihrem Mandanten, dem Sie die Rolle des primären Websitesammlungsadministrators erteilen möchten.<br/>(Sie können Strg + H drücken, wenn Sie Notepad verwenden, um die Massen Ersetzung zu beschleunigen.)<br/>
+<br/>Dabei ist *Mandanten* der Name Ihres Mandanten, und *Owner* ist der Benutzername des Benutzers in Ihrem Mandanten, dem Sie die Rolle des primären Websitesammlungsadministrators erteilen möchten.<br/>(Sie können Strg + H drücken, wenn Sie den Editor verwenden, um schneller Massen zu ersetzen.)<br/>
 
 2. Speichern Sie die Datei auf Ihrem Desktop als **SiteCollections. CSV**.<br/>
 
@@ -60,7 +60,7 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 ```
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
-<br/>Dabei ** ist myalias Ihr Benutzer Alias.<br/>
+<br/>Wobei *myalias* Ihrem Benutzer Alias entspricht.<br/>
 
 2. Warten Sie, bis die Windows PowerShell-Eingabeaufforderung wieder erscheint. Dies kann einige Minuten dauern.<br/>
 
@@ -95,7 +95,7 @@ https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Designers,Design
 https://tenant.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
-<br/>Wobei der *Mandant* dem Mandantennamen entspricht.<br/>
+<br/>Wobei *Mandanten* Ihrem Mandantennamen entspricht.<br/>
 
 2. Speichern Sie die Datei auf Ihrem Desktop als **GroupsAndPermissions. CSV**.<br/>
 
@@ -112,7 +112,7 @@ Contoso Blog Designers,username@tenant.onmicrosoft.com,https://tenant.sharepoint
 Contoso Blog Editors,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Blog01
 Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoint.com/sites/Project01
 ```
-<br/>Dabei ** ist der Mandant der Name des Mandanten, und *username* entspricht dem Benutzernamen eines vorhandenen Benutzers.<br/>
+<br/>Dabei ist *Mandant* gleich ihrem Mandantennamen, und *username* entspricht dem Benutzernamen eines vorhandenen Benutzers.<br/>
 
 4. Speichern Sie die Datei auf Ihrem Desktop als **users. CSV**.<br/>
 
@@ -122,7 +122,7 @@ Project Alpha Approvers,username@tenant.onmicrosoft.com,https://tenant.sharepoin
 Import-Csv C:\users\MyAlias\desktop\GroupsAndPermissions.csv | ForEach-Object {New-SPOSiteGroup -Group $_.Group -PermissionLevels $_.PermissionLevels -Site $_.Site}
 Import-Csv C:\users\MyAlias\desktop\Users.csv | where {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
-<br/>Dabei ist myalias der Benutzername des aktuell angemeldeten Benutzers.<br/>
+<br/>Dabei entspricht myalias dem Benutzernamen des derzeit angemeldeten Benutzers.<br/>
 
 6. Speichern Sie die Datei auf Ihrem Desktop als **User Sand Groups. ps1**. Das ist ein einfaches Windows PowerShell-Skript.
 
@@ -144,7 +144,7 @@ Set-ExecutionPolicy Bypass
 ```
 c:\users\MyAlias\desktop\UsersAndGroups.ps1
 ```
-<br/>Dabei ** ist myalias Ihr Benutzername.<br/>
+<br/>Wobei *myalias* Ihrem Benutzernamen entspricht.<br/>
 
 5. Warten Sie, bis die Eingabeaufforderung wieder erscheint, bevor Sie fortfahren. Zuerst werden Sie die Gruppen sehen, sobald diese erstellt sind. Sobald Benutzer hinzugefügt werden, sehen Sie wiederholt die Gruppenliste.
 
@@ -152,7 +152,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Herstellen einer Verbindung mit SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-[Verwalten von SharePoint Online-Websitegruppen Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+[Verwalten von SharePoint Online Websitegruppen Office 365 PowerShell](manage-sharepoint-site-groups-with-powershell.md)
 
 [Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   

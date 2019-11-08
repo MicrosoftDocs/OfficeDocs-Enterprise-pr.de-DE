@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-analytics
 description: Eine Erläuterung der Berichtsfeatures in Office 365.
-ms.openlocfilehash: 27dc1f8164e21040399ae9882c3fab78ab3d5eb2
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 5b2f06be0eba19b8c4d49f405e40dba9ff64bd25
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067421"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031860"
 ---
 # <a name="office-365-reporting-features"></a>Berichtsfeatures in Office 365 
 
@@ -78,7 +78,7 @@ MDM-Konformitätsberichte bieten eine Übersicht über Richtlinien, die von eine
 
 DLP-Richtlinien helfen bei der Verwaltung der Sicherheit und des Informationsflusses in einer Organisation. Sie können Richtlinien einrichten, um den Zugriff auf Inhalte zu blockieren, Daten zu verschlüsseln oder Benutzer über Richtlinien-und Richtlinienverstöße mithilfe von in der Anwendung verwendeten DLP-Richtlinien Tipps zu informieren. DLP-Berichte bieten Einblicke in die Anzahl von Richtlinien-und Regel Übereinstimmungen, Außerkraftsetzungen und falsch positiven Ergebnissen.
 
-Verwenden Sie das Microsoft 365 Admin Center, um Informationen über die Anzahl der Nachrichten anzuzeigen, die von ihren DLP-Richtlinien erkannt wurden. DLP-Berichte bieten Einblicke in Richtlinien-und Regel Übereinstimmungen für gesendete und empfangene e-Mails. Sie können die Anzahl der Übereinstimmungen, Außerkraftsetzungen und falsch positiver Ergebnisse für jede Richtlinie in den letzten 24 Stunden auch über das Exchange Admin Center anzeigen. Wenn Sie einen Excel-Bericht herunterladen, können Sie noch ausführlichere Details anzeigen, beispielsweise wer die Nachricht gesendet hat, an welchem Tag und welche Richtlinien Übereinstimmungen ausgelöst wurden. Weitere Informationen finden Sie unter [Anzeigen von Berichten zu DLP-Richtlinien Erkennungen](https://technet.microsoft.com/en-us/library/jj889415(v=exchg.150).aspx).
+Verwenden Sie das Microsoft 365 Admin Center, um Informationen über die Anzahl der Nachrichten anzuzeigen, die von ihren DLP-Richtlinien erkannt wurden. DLP-Berichte bieten Einblicke in Richtlinien-und Regel Übereinstimmungen für gesendete und empfangene e-Mails. Sie können die Anzahl der Übereinstimmungen, Außerkraftsetzungen und falsch positiver Ergebnisse für jede Richtlinie in den letzten 24 Stunden auch über das Exchange Admin Center anzeigen. Wenn Sie einen Excel-Bericht herunterladen, können Sie noch ausführlichere Details anzeigen, beispielsweise wer die Nachricht gesendet hat, an welchem Tag und welche Richtlinien Übereinstimmungen ausgelöst wurden. Weitere Informationen finden Sie unter [Anzeigen von Berichten zu DLP-Richtlinien Erkennungen](https://technet.microsoft.com/library/jj889415(v=exchg.150).aspx).
 
 ## <a name="auditing-in-yammer-enterprise"></a>Überwachung in jammern Enterprise
 

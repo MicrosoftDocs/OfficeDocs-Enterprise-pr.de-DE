@@ -18,19 +18,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Diese Prüfliste hilft Ihrer Organisation bei der Planung und Vorbereitung einer Migration zu Office 365.
-ms.openlocfilehash: 9cd2977a43f26e724d85c723aa6aad70937b1f1f
-ms.sourcegitcommit: 2a7177c666dce3c00462b97463a6855e9e3a81f0
+ms.openlocfilehash: 9248ed4a252990094e91579deb723aa32f04316a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34249493"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028869"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Prüfliste für die Bereitstellungsplanung für Office 365
 
-Wenn Sie eine Unternehmensorganisation in Office 365 migrieren, ist es wichtig, genau zu planen, welche Schritte Sie ausführen möchten, wann Sie ausgeführt werden sollen und wer diese ausführen soll. Diese Prüfliste hilft Ihrer Organisation bei der Planung und Vorbereitung einer Migration zu Office 365. Die Phasen und Schritte in der Prüfliste werden mit den Anweisungen des Onboarding [Centers](https://go.microsoft.com/fwlink/?LinkId=517115)abgeglichen. Fühlen Sie sich frei, diese Prüfliste an die Anforderungen Ihrer Organisation anzupassen.
+Wenn Sie eine Unternehmensorganisation in Office 365 migrieren, ist es wichtig, genau zu planen, welche Schritte Sie ausführen möchten, wann Sie ausgeführt werden sollen und wer diese ausführen soll. Diese Prüfliste hilft Ihrer Organisation bei der Planung und Vorbereitung einer Migration zu Office 365. Die Phasen und Schritte in der Prüfliste werden mit den Anweisungen des [Onboarding Centers](https://go.microsoft.com/fwlink/?LinkId=517115)abgeglichen. Fühlen Sie sich frei, diese Prüfliste an die Anforderungen Ihrer Organisation anzupassen.
 
 ## <a name="need-help-with-your-deployment"></a>Benötigen Sie Hilfe bei Ihrer Bereitstellung?
-Möchten Sie Hilfe bei der Einrichtung Office 365 einrichten? In diesem [](https://fasttrack.microsoft.com/office) Bereich sollten Sie den [Bereitstellungs Ratgeber für Office 365 Dienste](deployment-advisors-for-office-365.md)verwenden.
+Möchten Sie Hilfe bei der Einrichtung Office 365 einrichten? In diesem Bereich sollten Sie den [Bereitstellungs Ratgeber für Office 365 Dienste](deployment-advisors-for-office-365.md) [verwenden.](https://fasttrack.microsoft.com/office)
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Beispiel Prüfliste für eine Office 365 Enterprise-Bereitstellung
 
@@ -78,5 +78,5 @@ Möchten Sie Hilfe bei der Einrichtung Office 365 einrichten? In diesem [](https
 | Optionales Migrieren von Daten ( [e-Mail](https://go.microsoft.com/fwlink/?LinkId=534823)und [Dateien](https://go.microsoft.com/fwlink/?LinkId=534824)usw.) |||||
 |Überprüfen der Funktionalität und Abschließen der letzten Schritte |||||
 | Migrieren [von DNS-Einstellungen, um auf Office 365 zu deuten](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Teilen Sie Ihren Benutzern mit, wann Sie [mit der Verwendung von Office 365 beginnen](https://support.office.com/en-us/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) können. |||||
+| Teilen Sie Ihren Benutzern mit, wann Sie [mit der Verwendung von Office 365 beginnen](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) können. |||||
 | Neukonfigurieren von Clientsystemen für die Verbindung mit Office 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook für Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [Mobile Geräte](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

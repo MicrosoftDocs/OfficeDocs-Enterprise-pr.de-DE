@@ -14,12 +14,12 @@ search.appverid:
 - BCS160
 ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 description: Wenn Sie sich gegen die FastTrack-Bereitstellung entschieden haben und bereit sind, Daten zu Office 365 zu migrieren, ist dies der richtige Ort für den Einstieg.
-ms.openlocfilehash: cd9f113f7b8e66e22ad61c4f406ac693a8aa3695
-ms.sourcegitcommit: 1e6e91fbdcbb6d8ef21d30f32c1f8e704f4f31ba
+ms.openlocfilehash: 8fa0b26a1051c33a32fa9a583c76662e998b0692
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35597551"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031330"
 ---
 # <a name="migrate-your-organization-data-to-office-365-enterprise"></a>Migrieren der Daten Ihrer Organisation zu Office 365 Enterprise
 
@@ -40,7 +40,7 @@ Wenn Sie Hilfe bei der Installation von Office 365 wünschen, stellt [FastTrack]
 
 ## <a name="migrate-skype-for-business-users"></a>Migrieren von Skype for Business-Benutzern
 - [Migrieren zu Skype for Business Online](https://technet.microsoft.com/library/jj204969.aspx). (Administrator)
-- Laden Sie das [Skype for Business-Besprechungsaktualisierungs-Tool](https://www.microsoft.com/en-us/download/details.aspx?id=51659) herunter, und [führen Sie es auf jeder Arbeitsstation aus](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrator und/oder Endbenutzer)
+- Laden Sie das [Skype for Business-Besprechungsaktualisierungs-Tool](https://www.microsoft.com/download/details.aspx?id=51659) herunter, und [führen Sie es auf jeder Arbeitsstation aus](https://support.office.com/article/Meeting-Update-Tool-for-Skype-for-Business-and-Lync-2b525fe6-ed0f-4331-b533-c31546fcf4d4). (Administrator und/oder Endbenutzer)
   
 ## <a name="need-to-talk-to-support"></a>Müssen Sie sich an den Support wenden?
 [Kontakt mit dem Support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) für Geschäftsprodukte aufnehmen.

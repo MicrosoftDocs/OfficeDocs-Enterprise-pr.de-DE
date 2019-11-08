@@ -16,21 +16,21 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 919b8fc7-b0bc-46db-91f5-37342564e01b
 description: 'Zusammenfassung: Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.'
-ms.openlocfilehash: cf369894eb87381e3837a52946a0ba2b9705bf70
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: f16fd41aaa454a3f038fd23c890bbf48be2c3e66
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067933"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38028899"
 ---
 # <a name="data-classification-and-labeling-in-the-office-365-devtest-environment"></a>Datenklassifizierung und -kennzeichnung in Office 365-Entwicklungs-/-Testumgebungen
 
  **Zusammenfassung:** Informationen zum Konfigurieren und Demonstrieren der Datenklassifizierung und -kennzeichnung mit dem Azure Information Protection-Client (AIP) in Office 365-Entwicklungs-/-Testumgebungen.
   
-Mit dem Azure Information Protection-Client können Sie ein Dokument klassifizieren, bevor Sie es in einen SharePoint Online-Ordner in Office 365 hochladen. Mithilfe der Anleitungen in diesem Artikel können Sie den Azure Information Protection-Client installieren und die Datenklassifizierung veranschaulichen. Weitere Informationen finden Sie unter [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
+Mit dem Azure Information Protection-Client können Sie ein Dokument klassifizieren, bevor Sie es in einen SharePoint Online Ordner in Office 365 hochladen. Mithilfe der Anleitungen in diesem Artikel können Sie den Azure Information Protection-Client installieren und die Datenklassifizierung veranschaulichen. Weitere Informationen finden Sie unter [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection).
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
+> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-build-out-your-office-365-devtest-environment"></a>Phase 1: Erstellen Ihrer Office 365-Entwicklungs-/Testumgebung
 
@@ -38,13 +38,13 @@ Folgen Sie den Anweisungen unter [Office 365 dev/test environment](office-365-de
   
 ## <a name="phase-2-add-the-azure-information-protection-trial-subscription"></a>Phase 2: Hinzufügen des Azure Information Protection-Abonnements
 
-In dieser Phase fügen Sie Azure Information Protection zu Ihrer Office 365-Entwicklungs-/Testumgebung und aktivieren Sie ihn für Ihre Benutzerkonten. Wenn Sie die [Office 365 and EMS dev/test environment](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx) konfiguriert haben, überspringen Sie diese Phase. Das Enterprise Mobility Suit-Testabonnement umfasst Azure Information Protection-Lizenzen.
+In dieser Phase fügen Sie Azure Information Protection zu Ihrer Office 365-Entwicklungs-/Testumgebung und aktivieren Sie ihn für Ihre Benutzerkonten. Wenn Sie die [Office 365 and EMS dev/test environment](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx) konfiguriert haben, überspringen Sie diese Phase. Das Enterprise Mobility Suit-Testabonnement umfasst Azure Information Protection-Lizenzen.
   
 Melden Sie sich zunächst für ein Azure Information Protection-Testabonnement an.
   
 ### <a name="sign-up-for-an-azure-information-protection-trial-subscription"></a>Anmelden für ein Azure Information Protection-Testabonnement
 
-1. Wechseln Sie in Internet Explorer oder in Ihrem Browser [http://admin.microsoft.com](http://admin.microsoft.com) zu, und melden Sie sich mit ihrem globalen Office 365-Administratorkonto an.
+1. Wechseln Sie in Internet Explorer oder Ihrem Browser zu [https://admin.microsoft.com](https://admin.microsoft.com) , und melden Sie sich mit ihrem globalen Administratorkonto für Office 365 an.
     
 2. Klicken Sie auf die Registerkarte **Microsoft Office Home** auf **Admin**.
     
@@ -78,11 +78,11 @@ In dieser Phase veranschaulichen Sie die Datenklassifizierung mit dem Azure Info
   
 Wenn Sie die Unternehmenssimulation in der Office 365- Entwicklungs-/-Testumgebung verwenden, müssen Sie zuerst Office 2016 auf CLIENT1 installieren.
   
-1. Verwenden Sie Ihren Browser, und wechseln Sie zum [Azure-Portal](http://portal.azure.com).
+1. Verwenden Sie Ihren Browser, und wechseln Sie zum [Azure-Portal](https://portal.azure.com).
     
 2. 	Klicken Sie auf **Ressourcengruppen >** [Ihr Ressourcengruppenname] **> CLIENT1 > Verbinden**.
     
-3. Führen Sie in CLIENT1 Internet Explorer aus, wechseln Sie zum Office- [http://admin.microsoft.com](http://admin.microsoft.com)Portal unter, und melden Sie sich mit dem Namen-Kontonamen und-Kennwort an.
+3. Führen Sie auf CLIENT1 Internet Explorer aus, wechseln Sie zum Office- [https://admin.microsoft.com](https://admin.microsoft.com)Portal unter, und melden Sie sich dann mit dem Kontonamen und Kennwort des Namen an.
     
 4. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf **Office 2016 installieren**.
     
@@ -90,7 +90,7 @@ Wenn Sie die Unternehmenssimulation in der Office 365- Entwicklungs-/-Testumgebu
     
 Als Nächstes installieren Sie den Azure Information Protection-Client.
   
-1. Wechseln Sie in Ihrem Browser oder Internet Explorer zur [Microsoft Azure Information Protection-Download Seite](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Wechseln Sie in Ihrem Browser oder Internet Explorer zur [Download Seite Microsoft Azure Information Protection](https://www.microsoft.com/download/details.aspx?id=53018).
     
   - Wenn Sie die einfache Version der Office 365-Entwicklungs-/Testumgebung verwenden, nutzen Sie den Browser auf dem lokalen Computer.
     
@@ -136,13 +136,13 @@ Im nächsten Schritt erlauben Sie jedem, auf die Websitesammlung „Support“ z
     
 3. Klicken Sie in der oberen rechten Ecke auf das **Einstellungen**-Symbol, und klicken Sie dann auf **Freigegeben für**.
     
-4. Klicken Sie unter **Share ' Support Site Collection '** auf **erweitert**.
+4. Klicken Sie in **Share ' Support Site Collection '** auf **erweitert**.
     
 5. Klicken Sie in der Liste der SharePoint-Gruppen auf **Mitglieder der Websitesammlung „Support“**.
     
 6. Klicken Sie auf der Seite **Benutzer und Gruppen** auf **Neu**.
     
-7. Geben Sie unter **"Websitesammlung für Support freigeben"** die Einstellung **jeder**ein, klicken Sie auf **jeder außer externen Benutzern**, und klicken Sie dann auf **freigeben.**
+7. Geben Sie in **Share ' Support Site Collection '** **alle**ein, klicken Sie auf **jeder außer externen Benutzern**, und klicken Sie dann auf **freigeben.**
     
 8. Schließen Sie die Registerkarte **Benutzer und Gruppen**.
     
@@ -150,9 +150,9 @@ Im nächsten Schritt melden Sie sich mit dem Benutzerkonto von Benutzer 5 an un
   
 1. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf das Benutzersymbol in der oberen rechten Ecke, und klicken Sie dann auf **Abmelden**.
     
-2. Wechseln Sie zu [http://admin.microsoft.com](http://admin.microsoft.com).
+2. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
     
-3. Klicken Sie auf der **Office 365-Anmelde** Seite auf den Namen-Kontonamen, und melden Sie sich an.
+3. Klicken Sie auf der **Office 365 Anmelde** Seite auf den Kontonamen des Namen, und melden Sie sich an.
     
 4. Klicken Sie auf der Registerkarte der **Microsoft Office-Startseite** auf **SharePoint > Websitesammlung „Support“**.
     
@@ -164,7 +164,7 @@ Im nächsten Schritt melden Sie sich mit dem Benutzerkonto von Benutzer 5 an un
 
 [Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
 
-[Office 365- und EMS-Entwicklungs-/Testumgebung](http://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
+[Office 365- und EMS-Entwicklungs-/Testumgebung](https://technet.microsoft.com/library/c76eea86-d4b6-4d35-ad89-341696e89ef7.aspx)
   
 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection)
 

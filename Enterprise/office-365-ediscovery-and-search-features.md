@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Übersicht über das eDiscovery-Feature und andere Suchfeatures in Office 365 für die Verwendung und Transparenz der Überwachung.
-ms.openlocfilehash: e9a120f717c04d5e5570e341aa5d3d93f85f80cb
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e94c8e27c2ddf7bd50dca15eb849337de6f89c1a
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067481"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38032030"
 ---
 # <a name="ediscovery-and-search-features"></a>eDiscovery und Suchfunktionen 
 
@@ -28,7 +28,7 @@ Die eDiscovery-Funktion stellt Administratoren, Compliance-Verantwortlichen und 
 
 ## <a name="content-search"></a>Inhaltssuche
 
-Bei der [Inhaltssuche](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) handelt es sich um ein eDiscovery-Such Tool, das verbesserte Skalierungs-und Leistungsfunktionen gegenüber früheren eDiscovery-Such Tools bereitstellt. Sie verwenden die Inhaltssuche zum Durchsuchen von Postfächern, öffentlichen Ordnern, SharePoint Online Websites und OneDrive für Unternehmen Speicherorten. Die Inhaltssuche unterstützt große Suchvorgänge. Es gibt keine Beschränkungen für die Anzahl der Postfächer und Websites, die Sie durchsuchen können. Außerdem gibt es keine Beschränkungen für die Anzahl der gleichzeitig ausgeführten Suchvorgänge. Nachdem Sie eine Suche ausgeführt haben, wird die Anzahl der Inhaltsquellen und eine geschätzte Anzahl von Suchergebnissen im Detailbereich auf der Suchseite angezeigt. Sie können eine Vorschau der Ergebnisse anzeigen oder Sie auf einen lokalen Computer exportieren. Wenn Ihre Organisation über ein Office 365 Enterprise E5-Abonnement verfügt, können Sie [die Ergebnisse](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) zur Analyse mithilfe der leistungsstarken Analysefunktionen von [Office 365 Advanced eDiscovery](http://go.microsoft.com/fwlink/p/?LinkID=620116)vorbereiten.
+Bei der [Inhaltssuche](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) handelt es sich um ein eDiscovery-Such Tool, das verbesserte Skalierungs-und Leistungsfunktionen gegenüber früheren eDiscovery-Such Tools bereitstellt. Sie verwenden die Inhaltssuche zum Durchsuchen von Postfächern, öffentlichen Ordnern, SharePoint Online Websites und OneDrive für Unternehmen Speicherorten. Die Inhaltssuche unterstützt große Suchvorgänge. Es gibt keine Beschränkungen für die Anzahl der Postfächer und Websites, die Sie durchsuchen können. Außerdem gibt es keine Beschränkungen für die Anzahl der gleichzeitig ausgeführten Suchvorgänge. Nachdem Sie eine Suche ausgeführt haben, wird die Anzahl der Inhaltsquellen und eine geschätzte Anzahl von Suchergebnissen im Detailbereich auf der Suchseite angezeigt. Sie können eine Vorschau der Ergebnisse anzeigen oder Sie auf einen lokalen Computer exportieren. Wenn Ihre Organisation über ein Office 365 Enterprise E5-Abonnement verfügt, können Sie [die Ergebnisse](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a#prepare) zur Analyse mithilfe der leistungsstarken Analysefunktionen von [Office 365 Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?LinkID=620116)vorbereiten.
 
 ## <a name="audit-log-search"></a>Überwachungsprotokollsuche
 

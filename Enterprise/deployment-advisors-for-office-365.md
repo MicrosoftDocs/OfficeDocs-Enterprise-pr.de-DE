@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Office 365 oder Microsoft 365 mit Bereitstellungs Beratern.
-ms.openlocfilehash: 86605b1476916d8510a52009dc20a37eafd7c08f
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782305"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030799"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Bereitstellungs Ratgeber für Office 365-oder Microsoft 365-Dienste
 
@@ -216,7 +216,7 @@ Wenn Sie sich für die Verbundanmeldung mit Active Directory Verbunddienste (AD 
 
 |||
 |:-------|:-----|
-| **Ausführen** |  [Azure AD Connect Advisor](https://aka.ms/aadconnectpwsync) |
+| **Ausführen** |  [Azure AD Connect-Ratgeber](https://aka.ms/aadconnectpwsync) |
 |||
   
 
@@ -320,7 +320,7 @@ Microsoft StaffHub ist eine Cloud-basierte Plattform, die auf allen Geräten fun
 
 ### <a name="microsoft-365-admin-center"></a>Microsoft 365 Admin Center
 
-- [Ausrichtung des Admin Centers](https://www.microsoft.com/en-us/videoplayer/embed/RWfMut)
+- [Ausrichtung des Admin Centers](https://www.microsoft.com/videoplayer/embed/RWfMut)
 
 - [Erstellen von Benutzern im Admin Center](https://aka.ms/ac-createusers)
 

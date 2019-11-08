@@ -1,5 +1,5 @@
 ---
-title: Hochverfügbarkeit der Verbundauthentifizierung, Phase 3 Konfigurieren von AD FS-Servern
+title: Hohe Verfügbarkeit Verbund Authentifizierungs Phase 3 Konfigurieren von AD FS-Servern
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Zusammenfassung: Erstellen und konfigurieren Sie die Active Directory Federation Services-Server (AD FS) für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 83e6d024676ae608b9f6f856e2ce91c4b0b9a31f
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 68410111be6c4d12e27e32e9663592306d733970
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34067491"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030739"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern
 
@@ -43,12 +43,12 @@ Verwenden Sie den folgenden PowerShell-Befehlsblock, um die virtuellen Computer 
     
 - Tabelle A (für die Verfügbarkeitsgruppen)
     
-Denken Sie daran, dass Sie in der [hoch Verfügbarkeits Verbund Authentifizierungsphase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) und Tabellen R, V, S, I und A in [Hochverfügbarkeit Verbund Authentifizierungsphase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Denken Sie daran, dass Sie Tabelle M in der [Verbundauthentifizierung mit hoher Verfügbarkeit definiert haben: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) und Tabellen R, V, S, I und A in der [Verbundauthentifizierung mit hoher Verfügbarkeit Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azureps-cmdlets-docs/). 
+> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
-Zuerst erstellen Sie in Azure einen internen Lastenausgleich für die beiden AD FS-Server. Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und >. Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.
+Zuerst erstellen Sie in Azure einen internen Lastenausgleich für die beiden AD FS-Server. Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und #a0. Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.
   
 <!--
 > [!TIP]
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 Erstellen Sie mithilfe eines Remotedesktopclients Ihrer Wahl eine Remotedesktopverbindung für jeden virtuellen Computer. Verwenden Sie den Intranet-DNS-Namen oder den Computernamen des jeweiligen Servers und die Anmeldeinformationen des lokalen Administratorkontos.
   
-Fügen Sie für jeden virtuellen Computer mit diesen Befehlen an der Windows PowerShell-Ansage der entsprechenden Active Directory-Domänendienste (AD DS)-Domäne hinzu.
+Fügen Sie für jeden virtuellen Computer die entsprechenden Active Directory-Domänendienste (AD DS) Domäne mit den folgenden Befehlen an der Windows PowerShell-Eingabeaufforderung ein.
   
 ```
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,7 +148,7 @@ Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration w
   
 **Phase 3: Die AD FS-Server und der interne Lastenausgleich für die hohe Verfügbarkeit der Verbundauthentifizierungsinfrastruktur in Azure**
 
-![Phase 3 der hoch Verfügbarkeits-Office 365-Verbund Authentifizierungsinfrastruktur in Azure mit den AD FS-Servern](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 der hoch Verfügbarkeits Office 365 Verbund Authentifizierungsinfrastruktur in Azure mit den AD FS-Servern](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 

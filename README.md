@@ -8,13 +8,13 @@ In diesem Projekt wurden die [Microsoft Open Source-Verhaltensregeln](https://op
 
 # <a name="legal-notices"></a>Rechtliche Hinweise
 
-Microsoft und alle Mitwirkenden erteilen Ihnen eine Lizenz für die Microsoft-Dokumentation und andere Inhalte in diesem Repository unter der [Creative Commons Attribution 4,0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), siehe die [Lizenz](LICENSE) Datei und erteilen Ihnen eine Lizenz für alle Code im Repository unter der [mit-Lizenz](https://opensource.org/licenses/MIT)finden Sie in der [Lizenzcode](LICENSE-CODE) Datei.
+Microsoft und alle Mitwirkenden erteilen Ihnen eine Lizenz für die Microsoft-Dokumentation und andere Inhalte in diesem Repository unter der [Creative Commons Attribution 4,0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), siehe die [Lizenzdatei und](LICENSE) erteilen Ihnen eine Lizenz für Code im Repository unter der [mit-Lizenz](https://opensource.org/licenses/MIT), siehe die [Lizenzcode](LICENSE-CODE) Datei.
 
 Microsoft, Windows, Microsoft Azure und/oder andere Microsoft-Produkte und-Dienste, auf die in der Dokumentation verwiesen wird, können entweder Marken oder eingetragene Marken von Microsoft in den Vereinigten Staaten und/oder anderen Ländern sein.
 Die Lizenzen für dieses Projekt gewähren Ihnen keine Rechte zur Verwendung von Microsoft-Namen,-Logos oder-Marken.
-Die allgemeinen Markenrichtlinien von Microsoft finden Sie unter http://go.microsoft.com/fwlink/?LinkID=254653.
+Die allgemeinen Markenrichtlinien von Microsoft finden Sie unter https://go.microsoft.com/fwlink/?LinkID=254653.
 
-Datenschutzinformationen finden Sie unterhttps://privacy.microsoft.com/en-us/
+Datenschutzinformationen finden Sie unterhttps://privacy.microsoft.com/
 
 Microsoft und alle Mitwirkenden behalten sich alle anderen Rechte vor, sei es unter ihren jeweiligen Urheberrechten, Patenten oder Marken, sei es durch Implikation, Estoppel oder anderweitig.
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: 1b20f4dc98c23c2063d77703f157a31889c69e6c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: c4a36ea766bd42b432d531ffecdfb709056220d8
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782255"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030829"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
@@ -32,7 +32,7 @@ Mit Office 365 Cloud-App-Sicherheit, die bisher als Office 365 Advanced Security
 Mit den Anweisungen in diesem Artikel aktivieren und testen Sie Cloud App Security in Ihrem Office 365-Testabonnement.
   
 > [!TIP]
-> Klicken Sie [hier](http://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
+> Klicken Sie [hier](https://aka.ms/catlgstack), um eine visuelle Darstellung aller Artikel im Stapel der Testumgebungsanleitungen in Office 365 zu erhalten.
   
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-office-365-devtest-environment"></a>Phase 1: Erstellen einer einfachen oder simulierten Office 365-Unternehmensentwicklungs-/-testumgebung
 
@@ -41,7 +41,7 @@ Wenn Sie Cloud App Security nur auf einfache Weise mit den Mindestanforderungen 
 Wenn Sie Cloud App Security in einem simulierten Unternehmen testen möchten, führen Sie die Schritte in [DirSync für die Office 365-Entwicklungs-/Testumgebung](dirsync-for-your-office-365-dev-test-environment.md) aus.
   
 > [!NOTE]
-> Zum Testen der Cloud-App-Sicherheit ist keine simulierte Enterprise-Entwicklungs-/Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS)-Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie Cloud App Security testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
+> Zum Testen der Cloud-App-Sicherheit ist keine simulierte Enterprise-Entwicklungs-/Testumgebung erforderlich, die ein simuliertes, mit dem Internet verbundenes Intranet und eine Verzeichnissynchronisierung für eine Active Directory-Domänendienste (AD DS) Gesamtstruktur umfasst. Dies wird hier als Option bereitgestellt, damit Sie Cloud App Security testen und damit in einer Umgebung, die eine typische Organisation darstellt, experimentieren können. 
   
 ## <a name="phase-2-before-enabling-cloud-app-security-and-creating-a-policy"></a>Phase 2: Vor dem Aktivieren von Cloud App Security und Erstellen einer Richtlinie
 

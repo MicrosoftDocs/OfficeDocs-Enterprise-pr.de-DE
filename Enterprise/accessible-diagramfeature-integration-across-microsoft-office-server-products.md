@@ -11,12 +11,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: d78983fa-0951-49b8-b890-d76a44c70035
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen Feature Integration Across Microsoft Office Server Products-SharePoint Server, Exchange Server, lync Server und Office Online Server.
-ms.openlocfilehash: bbc50c397b85f355cc54103902a3b56258e915ea
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 9cc13853f839e86867caed8d8d689b9b3a894a96
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782245"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38027689"
 ---
 # <a name="accessible-diagram---feature-integration-across-microsoft-office-server-products"></a>Zugängliches Diagramm – Integration von Features in Microsoft Office-Serverprodukten
 
@@ -132,7 +132,7 @@ Besprechungsaufzeichnungen. Dieses Feature gilt für: 
 
 Office Web Apps-Server ist ein Office-Serverprodukt, das für Office-Dateien browserbasierte Dienste zum Anzeigen und Bearbeiten bereitstellt. Office Web Apps-Server kann für Produkte und Dienste verwendet werden, die das Web Application Open Platform Interface-Protokoll (WOPI) unterstützen. Diese Produkte, die als Hosts bezeichnet werden, umfassen SharePoint 2013, Lync Server 2013 und Exchange Server 2013.   
   
-Wenn Sie mehr über Office-webapps Server erfahren möchten, laden Sie das vereinfachte Office- http://aka.ms/OfficeWebAppsPosterwebapps-Bereitstellungs Poster unter herunter. 
+Wenn Sie mehr über Office-webapps Server erfahren möchten, laden Sie das vereinfachte Office- https://aka.ms/OfficeWebAppsPosterwebapps-Bereitstellungs Poster unter herunter. 
   
 ## <a name="server-to-server-authentication-tab"></a>Registerkarte „Server-zu-Server-Authentifizierung“
 
@@ -236,9 +236,9 @@ Benutzer können Bilder mit einem Pixelbereich zwischen 48 × 48 und 648 × 
     
 Beispiele für Konfigurationsskripts finden Sie in den Blog Artikeln von Jens Trier Rasmussen: 
   
-- Verwenden Exchange 2013 hochauflösenden Fotos aus SharePoint Server 2013 (http://aka.ms/Bhr4d2) 
+- Verwenden Exchange 2013 hochauflösenden Fotos aus SharePoint Server 2013 (https://aka.ms/Bhr4d2) 
     
-- Integrieren von Exchange 2013 und lync Server 2013 (http://aka.ms/Pn08dw) 
+- Integrieren von Exchange 2013 und lync Server 2013 (https://aka.ms/Pn08dw) 
     
 Das Poster enthält außerdem QR-Codes für diese beiden Blogartikel.  
   
@@ -283,7 +283,7 @@ Der einheitliche Kontaktspeicher (Unified Contact Store, UCS) ermöglicht ein ko
     
 Beispiel-Konfigurationsskripts finden Sie im Blog Artikel von Jens Trier Rasmussen: 
   
-- Integrieren von Exchange 2013 und lync Server 2013 (http://aka.ms/Oyg7fh) 
+- Integrieren von Exchange 2013 und lync Server 2013 (https://aka.ms/Oyg7fh) 
     
  **Funktionsweise** 
   
@@ -615,7 +615,7 @@ Server-Produkte: 
     
 - SharePoint 2013 
     
-Voraussetzungen 
+Voraussetzungen: 
   
 - Lync 2013 – Die Besprechungsaufzeichnung ist ein clientseitiges Feature in Lync 2013.   
     
@@ -667,7 +667,7 @@ Vorbereiten auf die Veröffentlichung von Besprechungsaufzeichnungen:
     
  **Digitale Objektbibliotheken**
   
-Digitale Objektbibliotheken sind Bibliotheken, die Videos enthalten, die bestimmte Auswirkungen auf Kapazität und Leistung haben. Weitere Informationen finden Sie unter Plan Digital Asset Libraries in SharePoint Server 2013 befindet sich http://aka.ms/O1vq5wunter. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
+Digitale Objektbibliotheken sind Bibliotheken, die Videos enthalten, die bestimmte Auswirkungen auf Kapazität und Leistung haben. Weitere Informationen finden Sie unter Plan Digital Asset Libraries in SharePoint Server 2013 befindet sich https://aka.ms/O1vq5wunter. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
   
 ### <a name="recording-and-publishing-a-meeting-using-the-lync-client"></a>Aufzeichnen und Veröffentlichen einer Besprechung mit dem Lync-Client
 
@@ -683,10 +683,10 @@ Das Diagramm zeigt einen Benutzer, der mithilfe von Lync an einer Besprechung te
     
 4. Ziehen Sie die Besprechungsaufzeichnung per Drag und Drop in Ihre SharePoint-Objektbibliothek. 
     
-5. Optional: Sobald sich die Aufzeichnung in der Objektbibliothek befindet, können Sie sie in eine beliebige SharePoint-Seite einfügen. Weitere Informationen zu diesem Schritt finden Sie im Office 365 Blogeintrag, erstellen und Veröffentlichen von Schulungs Videos mit SharePoint und lync Online, befindet http://aka.ms/R61q35sich unter. 
+5. Optional: Sobald sich die Aufzeichnung in der Objektbibliothek befindet, können Sie sie in eine beliebige SharePoint-Seite einfügen. Weitere Informationen zu diesem Schritt finden Sie im Office 365 Blogeintrag, erstellen und Veröffentlichen von Schulungs Videos mit SharePoint und lync Online, befindet https://aka.ms/R61q35sich unter. 
     
  **Video-Miniaturansichten**
   
-Video-Miniaturansichten verbessern das Aussehen und Verhalten Ihrer Objektbibliothek. Weitere Informationen zum Erstellen von Miniaturansichten für Ihre Besprechungsaufzeichnungen finden Sie unter erfassen oder Ändern einer Videominiaturansicht, http://aka.ms/Kupj85die sich unter befindet. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
+Video-Miniaturansichten verbessern das Aussehen und Verhalten Ihrer Objektbibliothek. Weitere Informationen zum Erstellen von Miniaturansichten für Ihre Besprechungsaufzeichnungen finden Sie unter erfassen oder Ändern einer Videominiaturansicht, https://aka.ms/Kupj85die sich unter befindet. Das Poster enthält auch einen QR-Code zum Zugreifen auf diese Informationen. 
   
 

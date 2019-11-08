@@ -13,17 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Erläuterung der Funktionsweise der internen Protokollierung für Office 365 Engineering-Teams.
-ms.openlocfilehash: 5fff245435d6b21a06bfe8544f991b919dbf15d9
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 3f0a65b618e34e5bba92a0f0b471c5c7c43bb329
+ms.sourcegitcommit: 9eb68633728cc78e9906dab222edbf9977b17e21
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067451"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38035525"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Interne Protokollierung für Office 365 Engineering
+
 Zusätzlich zu den für Kunden verfügbaren Ereignissen und Protokolldaten gibt es auch ein internes Protokoll Datenerfassungssystem, das Office 365 Ingenieuren zur Verfügung steht. Viele verschiedene Typen von Protokolldaten werden von Office 365 Servern in einen internen, großen Daten Datenverarbeitungsdienst mit dem Namen Cosmos hochgeladen. Jedes Service Team lädt Überwachungsprotokolle von den jeweiligen Servern in die Cosmos-Datenbank für Aggregation und Analyse hoch. Diese Datenübertragung erfolgt über eine FIPS 140-2-validierte TLS-Verbindung auf speziell genehmigten Ports und Protokollen mithilfe eines proprietären Automatisierungstools namens Office Data Loader (ODL). Die in Office 365 verwendeten Tools zum Erfassen und Verarbeiten von Überwachungsdatensätzen ermöglichen keine permanenten oder irreversiblen Änderungen am ursprünglichen Inhalt oder der Zeitreihenfolge des Überwachungseintrags.
 
 Service Teams verwenden Cosmos als zentrales Repository, um eine Analyse der Anwendungsnutzung, zur Messung der System-und Betriebsleistung und zur Ermittlung von Anomalien und Mustern zu suchen, die auf Probleme oder Sicherheitsprobleme hindeuten können. Jedes Dienst Team lädt eine Baseline von Protokollen in Cosmos, je nachdem, was Sie analysieren möchten, die häufig Folgendes umfassen:
+
 - Ereignisprotokolle
 - AppLocker-Protokolle
 - Leistungsdaten

@@ -14,12 +14,12 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server sowie für geteilte Domänen Skype for Business Hybriden verfügbar ist.
-ms.openlocfilehash: 4a49885fc6276f180872facb777bfe5a5adb61ee
-ms.sourcegitcommit: f9b5e029ed427b7c15cbfb6231a9259b34c9436f
+ms.openlocfilehash: 17079ab5e47e2e739780d3df4a9a523edccda14f
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36759683"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38029129"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird
 
@@ -67,7 +67,7 @@ Hinweis: diese Schritte aktivieren den MA für SFB, SFBO, Wechsel und Exo, also 
   
 Wie Sie sehen können, gibt es vier unterschiedliche Orte, an denen MA aktiviert werden kann. Für eine optimale Benutzererfahrung empfehlen wir Ihnen, MA an allen vier Standorten einzuschalten. Wenn Sie den MA nicht an allen diesen Speicherorten aktivieren können, passen Sie die Schritte so an, dass Sie den MA nur an den für Ihre Umgebung erforderlichen Speicherorten aktivieren.
   
-Weitere Informationen finden Sie im [Thema zur Unterstützung von Skype for Business mit MA](https://technet.microsoft.com/en-us/library/mt803262.aspx) für unterstützte Topologien. 
+Weitere Informationen finden Sie im [Thema zur Unterstützung von Skype for Business mit MA](https://technet.microsoft.com/library/mt803262.aspx) für unterstützte Topologien. 
   
  **Wichtiger Hinweis** Stellen Sie sicher, dass alle Voraussetzungen erfüllt sind, bevor Sie beginnen. Diese Informationen finden Sie [hier](hybrid-modern-auth-overview.md).
   
@@ -117,7 +117,7 @@ Jetzt müssen Sie Befehle ausführen, um die zuvor gesammelten URLs als Dienst P
   
  **Hinweis:** Dienstprinzipalnamen (Service Principal Names, SPNs) identifizieren Webdienste und ordnen Sie einem Sicherheitsprinzipal zu (beispielsweise einem Kontonamen oder einer Gruppe), damit der Dienst im Auftrag eines autorisierten Benutzers agieren kann. Für Clients, die sich bei einem Server authentifizieren, werden Informationen verwendet, die in SPNs enthalten sind. 
   
-1. Stellen Sie zuerst eine Verbindung mit Aad mit [diesen Anweisungen](https://docs.microsoft.com/en-us/powershell/azure/active-directory/overview?view=azureadps-1.0)her.
+1. Stellen Sie zuerst eine Verbindung mit Aad mit [diesen Anweisungen](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)her.
     
 2. Führen Sie diesen Befehl lokal aus, um eine Liste der SFB-Webdienst-URLs zu erhalten.
 
@@ -174,7 +174,7 @@ Sie sollten auch die STRG-Taste gleichzeitig gedrückt halten, indem Sie mit der
 
 [Link zurück zur modernen Authentifizierung (Übersicht](hybrid-modern-auth-overview.md) ). 
   
-Müssen Sie wissen, wie Sie die moderne Authentifizierung (Adal) für Ihre Skype for Business Clients verwenden können? Wir haben [hier](https://technet.microsoft.com/en-us/library/mt710548.aspx)Schritte.
+Müssen Sie wissen, wie Sie die moderne Authentifizierung (Adal) für Ihre Skype for Business Clients verwenden können? Wir haben [hier](https://technet.microsoft.com/library/mt710548.aspx)Schritte.
   
 Möchten Sie diese Schritte so lesen, dass Sie für Exchange Server lokal ohne SFB ausgeführt werden? Diese Schritte stehen hier zur Verfügung.
   

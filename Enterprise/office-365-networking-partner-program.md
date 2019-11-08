@@ -12,36 +12,36 @@ ms.collection: Ent_O365
 ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
-description: Mit dem Office 365-Netzwerk Partner Programm kann Ihr Gerät als mit Office 365 zertifiziert werden.
+description: Das Office 365-Netzwerk Partner Programm ermöglicht, dass Ihr Gerät zertifiziert wird, wenn Sie mit Office 365 arbeiten.
 hideEdit: true
-ms.openlocfilehash: ee18ac3f681702b18f4d9898875ee8b7ba499b27
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 7fc73a16006ac4f1b024a50cbd7cd352e1b658c7
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34069591"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38031880"
 ---
 # <a name="office-365-networking-partner-program"></a>Office 365-Netzwerkpartnerprogramm
 
-Modern, skalierbar, Software as a Service (SaaS) Cloud-Ready, Netzwerkkonnektivität ist der Schlüssel für eine erfolgreiche digitale Transformation mit Microsoft Office 365.  
+Moderne, skalierbare, Software as a Service (SaaS) Cloud-Ready, Netzwerkkonnektivität ist der Schlüssel für eine erfolgreiche digitale Transformation mit Microsoft Office 365.  
 
-Bei der Einführung von Office 365 für die Produktivität von Unternehmen hat Microsoft einen allgemeinen Trend festgestellt, dass die Netzwerkleistung und die daraus resultierende Zusammenarbeit der Endbenutzer in Office 365 direkt von Netzwerklösungen im Pfad zwischen dem Benutzer und Office 365.  
+Wenn Kunden Office 365 für Unternehmen Produktivität einnehmen, hat Microsoft einen allgemeinen Trend festgestellt, dass die Netzwerkleistung und die daraus resultierende Erfahrung der Endbenutzer Zusammenarbeit in Office 365 direkt von Netzwerklösungen im Pfad zwischen dem Benutzer und Office 365.  
 
-Kunden, die Ihre Reise in die Cloud beginnen, werden häufig mit dem Übergang von Legacy-, Hub-and-Spoke-Datencenter-fokussierten Enterprise-Netzwerk-und Sicherheitsarchitekturen in Frage gestellt. Und Kunden, die über Legacy Netzwerke eine Verbindung zu Office 365 herstellen, können bei der Verwendung der umfangreichen Features für die Zusammenarbeit in Office 365 Leistungsprobleme aufweisen. Das Endziel für Office 365-Kunden besteht darin, Ihre Unternehmensnetzwerke zu modernisieren und zu optimieren, um Ihren Mitarbeitern und Partnern eine erstklassige Zusammenarbeit zu ermöglichen, das IT-Management zu vereinfachen und die Kosten zu senken. 
+Kunden, die Ihre Reise in die Cloud beginnen, werden häufig mit dem Übergang von Legacy-, Hub-and-Spoke-, Rechenzentrums orientierten Unternehmensnetzwerken und Sicherheitsarchitekturen in Frage gestellt. Und Kunden, die über Legacy Netzwerke eine Verbindung mit Office 365 herstellen, können Leistungsprobleme bei der Verwendung der umfangreichen kollaborativen Features in Office 365 mit sich haben. Das Endziel für Office 365 Kunden besteht darin, Ihre Unternehmensnetzwerke zu modernisieren und zu optimieren, um eine erstklassige kollaborative Erfahrung für Ihre Mitarbeiter und Partner zu bieten, das IT-Management zu vereinfachen und Kosten zu reduzieren. 
 
-Um Unternehmensnetzwerke für eine großartige Konnektivität mit Office 365 zu modernisieren, benötigen Kunden häufig Netzwerk Lösungsanbieter, lokale oder Cloud-basierte Sicherheitsdienste und Systemintegratoren, um die Netzwerkkonnektivität für die Cloud zu planen, zu entwerfen und zu implementieren. Services. Kunden Fragen Microsoft häufig, ob Ihre Netzwerkarchitektur und-Lösungen mit Office 365 funktionieren und ob Sie mit den Microsoft- [Prinzipien für die Netzwerkkonnektivität für Office 365](http://aka.ms/PNC)übereinstimmen.  
+Zur Modernisierung von Unternehmensnetzwerken für eine große Konnektivität mit Office 365 benötigen Kunden häufig Netzwerk Lösungsanbieter, lokale oder Cloud-basierte Sicherheitsdienste und Systemintegratoren, um Netzwerkkonnektivität für Cloud zu planen, zu entwerfen und zu implementieren. Services. Kunden Fragen häufig Microsoft, ob Ihre Netzwerkarchitektur und Lösungen mit Office 365 zusammenarbeiten und ob Sie mit den [Grundsätzen für die Netzwerkkonnektivität von Microsoft für Office 365](https://aka.ms/PNC)in Einklang stehen.  
 
-Microsoft unterstützt unsere Kunden bei der Erstellung und Optimierung Ihrer Netzwerkarchitektur-Konnektivität für die beste Office 365-Umgebung. Das Office 365-Team arbeitet mit zahlreichen Partnern der Netzwerk Industrie zusammen, um sicherzustellen, dass die wichtigsten Prinzipien für eine optimale Konnektivität nativ in Ihr Netzwerkprodukt und ihre Lösungen integriert werden. 
+Microsoft unterstützt unsere Kunden bei der Erstellung und Optimierung Ihrer Netzwerkarchitektur Konnektivität für die beste Office 365 Erfahrung. Das Office 365 Team arbeitet mit vielen Partnern aus der Netzwerk Industrie zusammen, um sicherzustellen, dass die wichtigsten Grundsätze für die optimale Konnektivität nativ in Ihr Netzwerkprodukt und ihre Lösungen integriert sind. 
 
-Damit sind wir begeistert, das Office 365 Networking Partner-Programm bekannt zu geben, mit dem Ziel, die Zusammenarbeit mit Netzwerkpartnern zu vertiefen und die wichtigsten Produkte und Lösungen zu identifizieren, die den Microsoft Office 365-Netzwerkanforderungen und-Empfehlungen entsprechen. und bewährte Methoden. 
+Damit freuen wir uns, das Office 365 Networking-Partnerprogramm bekannt zu geben, mit dem Ziel, die Zusammenarbeit mit Netzwerkpartnern zu vertiefen und wichtige Produkte und Lösungen zu identifizieren, die den Anforderungen von Microsoft an das Office 365 Netzwerk entsprechen, Empfehlungen und bewährte Methoden. 
 
-Das Microsoft Office 365-Netzwerk Partner Programm kennzeichnet qualifizierte Netzwerklösungen als "Works with Office 365".  
+Das Microsoft Office 365-Netzwerk Partner Programm bezeichnet qualifizierte Netzwerklösungen als "funktioniert mit Office 365".  
 
-Nur Geräte oder Lösungen, die die strengen Testanforderungen von Microsoft erfüllen, über nahtlose Erfahrungen mit der Einrichtung verfügen und eine hochwertige Netzwerkumgebung in Verbindung mit Office 365 demonstrieren, erhalten die Bezeichnung "Works with Office 365".  
+Nur Geräte oder Lösungen, die die strengen Anforderungen von Microsoft erfüllen, haben nahtlose Erfahrungen mit dem Setup und veranschaulichen eine hochwertige Netzwerkerfahrung bei Verwendung mit Office 365 die Bezeichnung "Works with Office 365" erhalten.  
 
-Mehrere Netzwerk Lösungsanbieter arbeiten derzeit mit Microsoft zusammen, um die Anforderungen für den Empfang der "Works with Office 365"-Bezeichnung zu erfüllen. Details zum Einrichten dieser Lösungen für optimale Konnektivität und Leistung von Office 365 werden auf dieser Seite veröffentlicht.  
+Einige Anbieter von Netzwerklösungen arbeiten derzeit mit Microsoft zusammen, um die Anforderungen für den Erhalt der Bezeichnung "Works with Office 365" zu erfüllen. Details zum Einrichten dieser Lösungen für eine optimale Office 365 Konnektivität und Leistung werden auf dieser Seite veröffentlicht.  
 
-Wenn Sie ein Office 365-Kunde sind, können Sie über diesen Link [http://aka.ms/Office365NPP](http://aka.ms/Office365NPP)Ihren Netzwerk Lösungsanbieter über dieses Programm informieren.
+Wenn Sie ein Office 365 Kunde sind, können Sie Ihren Netzwerk Lösungsanbieter über diesen Link [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP)auf dieses Programm aufmerksam machen.
 
-Für Netzwerk Lösungsanbieter, die sich über das Office 365-Netzwerk Partner Programm erkundigen möchten, [füllen Sie dieses Formular aus](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u) , und wir melden uns. Vielen Dank für Ihr Interesse und wir freuen uns auf eine schöne Partnerschaft. 
+Für Netzwerk Lösungsanbieter, die sich über das Office 365 Netzwerk Partner Programm erkundigen möchten, [füllen Sie dieses Formular aus](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyOZxByRF1dLgv7k6ye5z8pUMTNCVTYyVk9GNEYzWjFOVkI1SzdJNUkyWi4u) und wir melden uns. Vielen Dank für Ihr Interesse und freuen uns auf eine schöne Partnerschaft. 
 

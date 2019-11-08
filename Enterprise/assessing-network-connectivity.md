@@ -1,5 +1,5 @@
 ---
-title: Bewerten Office 365 Netzwerkkonnektivität
+title: Bewerten der Office 365-Netzwerkkonnektivität
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
-ms.openlocfilehash: 2f58bf71c292f57ccef79f7f0f79e1cd474c681d
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
+ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428072"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38030499"
 ---
-# <a name="assessing-office-365-network-connectivity"></a>Bewerten Office 365 Netzwerkkonnektivität
+# <a name="assessing-office-365-network-connectivity"></a>Bewerten der Office 365-Netzwerkkonnektivität
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*
 
 Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
   
@@ -41,7 +41,7 @@ Einige Ressourcen, die Ihnen bei der Bewertung Ihres Netzwerks helfen:
 
 - Konzeptionelle Informationen zu Office 365 Netzwerke finden Sie unter [Office 365 Netzwerkkonnektivität (Übersicht)](office-365-networking-overview.md) .
 - Unter [Office 365 Grundsätzen der Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) erfahren Sie, wie Sie die Verbindungs Prinzipien für die sichere Verwaltung Office 365 Datenverkehrs und die bestmögliche Leistung kennen.
-- Registrieren Sie sich bei [Microsoft](https://www.microsoft.com/en-us/fasttrack) Kurztour, um Hilfe bei der Planung, Entwicklung und Bereitstellung von Office 365 zu erhalten. 
+- Registrieren Sie sich bei [Microsoft](https://www.microsoft.com/fasttrack) Kurztour, um Hilfe bei der Planung, Entwicklung und Bereitstellung von Office 365 zu erhalten. 
 - Im Abschnitt [Office 365 Netzwerk-Onboarding-Tool](assessing-network-connectivity.md#the-office-365-network-onboarding-tool) können Sie grundlegende Verbindungstests ausführen, die spezifische Anleitungen zur Verbesserung der Netzwerkkonnektivität bieten, die zwischen einem bestimmten Benutzerstandort und Office 365 vorgenommen werden kann.
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Wichtige Punkte, die bei der Planung Ihrer Netzwerkbewertung für Office 365 zu 
 
 - Wir optimieren die Kernaspekte Office 365 wie Verfügbarkeit, globale Reichweite und Leistung für internetbasierte Konnektivität kontinuierlich. Viele Office 365 Dienste nutzen beispielsweise eine wachsende Gruppe von Edge-Knoten mit Internetzugriff. Dieses Edge-Netzwerk bietet die beste Nähe und Leistung für Verbindungen, die über das Internet kommen.
 
-- Bei der Verwendung von Office 365 für alle enthaltenen Dienste wie Teams oder Skype for Business online sprach-, Video-oder Besprechungsfunktionen sollten Kunden eine End-to-End-Netzwerkbewertung abschließen und die Verbindungsanforderungen mit Microsoft erfüllen. [ Kurzwaren.](https://www.microsoft.com/en-us/fasttrack)
+- Bei der Verwendung von Office 365 für alle enthaltenen Dienste wie Teams oder Skype for Business online sprach-, Video-oder Besprechungsfunktionen sollten Kunden eine End-to-End-Netzwerkbewertung durchführen und die Verbindungsanforderungen mit [Microsoft](https://www.microsoft.com/fasttrack)Kurzfilm erfüllen.
 
 Wenn Sie Office 365 bewerten und nicht sicher sind, wo Sie mit ihrer Netzwerkbewertung beginnen oder Herausforderungen im Zusammenfall mit dem Netzwerk Design gefunden haben, die Sie unterstützen müssen, wenden Sie sich an Ihr Microsoft-Konto Team.
 
