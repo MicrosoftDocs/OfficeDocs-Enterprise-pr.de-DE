@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: In diesem Artikel wird beschrieben, wie Sie Minimierungs-und Kopplungstechniken mit WebEssentials verwenden, um die Anzahl der HTTP-Anforderungen zu reduzieren und die Zeit zu reduzieren, die zum Laden von Seiten in SharePoint Online benötigt wird.
-ms.openlocfilehash: 3303ea49a1308e4ad7b3139547c20b4351fc84b5
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 22114d8ab3b33c9a39b4d9291b4099501fcfb93f
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031310"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078444"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimierung und Bündelung in SharePoint Online
 
@@ -49,7 +51,7 @@ Sie können WebEssentials verwenden, wenn Sie ein vorhandenes Feature mit einige
   
 1. Wählen Sie in Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle einschließen möchten.
     
-2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create JavaScript Bundle File** aus. Zum Beispiel: 
+2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create JavaScript Bundle File** aus. Beispiel: 
     
     ![Screenshot mit WebEssentials-Menü Optionen](media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -85,7 +87,7 @@ Nach dem bündeln wird die JavaScript-Bundle-Datei erheblich von 815KB auf 365KB
   
 1. Wählen Sie in Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle einschließen möchten.
     
-2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create Image Sprite** aus. Zum Beispiel: 
+2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create Image Sprite** aus. Beispiel: 
     
     ![Screenshot, der zeigt, wie ein Bild Sprite erstellt wird](media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

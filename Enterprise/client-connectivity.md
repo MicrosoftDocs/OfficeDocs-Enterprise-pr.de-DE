@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Zusammenfassung: erläutert, wie Clientcomputer abhängig vom Standort des Clientcomputers und Office 365 Mandantendaten Center eine Verbindung mit Office 365 Mandanten herstellen.'
-ms.openlocfilehash: f7b41e1ff4fd8b30ed0f51641c479025b4e04ae5
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722694"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077678"
 ---
 # <a name="client-connectivity"></a>Client-Konnektivität
 
@@ -130,4 +131,4 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365
 
 [Verwalten von Office 365-Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)

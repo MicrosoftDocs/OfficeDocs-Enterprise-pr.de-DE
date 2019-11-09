@@ -8,17 +8,19 @@ audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- Ent_O365
+- SPO_Content
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern und außerdem darauf zu warten, dass unwesentliches JavaScript geladen wird, bevor die Seite geladen wird.
-ms.openlocfilehash: 9069fb395465cd9d087c018cc2ae782759ddcb0d
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
+ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616788"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38077668"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
@@ -28,7 +30,7 @@ Bilder können sich negativ auf die Seitenlast Geschwindigkeiten auf SharePoint 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Verbessern der Seitenladezeiten durch verzögertes Laden von Bildern in SharePoint Online Seiten mithilfe von JavaScript
 
-Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Zum Beispiel:
+Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Beispiel:
   
 ```txt
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />

@@ -11,6 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+- SPO_Content
 ms.custom: Adm_O365_Setup
 search.appverid:
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Office 365 oder Microsoft 365 mit Bereitstellungs Beratern.
-ms.openlocfilehash: eee8dfedd72ed0e2e1ac6660d32167490a13f504
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
+ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030799"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "38076149"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Bereitstellungs Ratgeber für Office 365-oder Microsoft 365-Dienste
 
@@ -261,7 +262,7 @@ Office 365 Gruppen sind ein freigegebener Arbeitsbereich für e-Mails, Unterhalt
 | **Ausführen** |[Setup Handbuch für Office 365 Gruppen](https://aka.ms/groupsguide) |
 |||
   
-### <a name="microsoft-teams"></a>Microsoft Teams
+### <a name="microsoft-teams"></a>Microsoft Teams
 
 Microsoft Teams ist der Chat basierte Zusammenarbeits Dienst in Office 365, der Team Arbeitsbereiche für Chats, Anrufe, Besprechungen und private Nachrichten bereitstellt. Der Bereitstellungs Ratgeber für Teams unterstützt Sie beim Einrichten und Konfigurieren der optimalen Teams-Erfahrung mit Exchange Online-, SharePoint Online-, OneDrive für Unternehmen-und Office 365 Gruppen. Sie enthält Informationen zum Konfigurieren von Mandanten Einstellungen, Teams und Kanälen für Ihre Projekte, Anrufe und Besprechungen, Messaging, Registerkarten für den schnellen Zugriff auf apps, Informations Bots und Connectors für Dienste von Drittanbietern.
 
