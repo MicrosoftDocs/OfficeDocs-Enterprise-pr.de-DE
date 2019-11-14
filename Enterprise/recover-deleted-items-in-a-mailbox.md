@@ -16,14 +16,13 @@ search.appverid:
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Dieser Artikel richtet sich an Administratoren. Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der Benutzer möchte, dass er zurückkehrt, kann ihn jedoch nicht wiederherstellen. Möglicherweise können Sie die bereinigten Elemente wiederherstellen, wenn Sie nicht dauerhaft aus dem Postfach des Benutzers entfernt wurden. '
-ms.openlocfilehash: 12e07a88136d0dee0f186857aa71c3de6736a798
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
+ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782615"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38308600"
 ---
-<a name="__top"></a>
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren
 
 **Dieser Artikel richtet sich an Administratoren. Versuchen Sie, gelöschte Elemente in Ihrem eigenen Postfach wiederherzustellen?** Führen Sie einen der folgenden Schritte durch: 
@@ -37,7 +36,7 @@ Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der 
 Im folgenden finden Sie die Schritte zum erneuten aufdecken gelöschter Elemente im Postfach eines Benutzers. Wie lange dauert das? Je nachdem, wie viele Elemente Sie wiederherstellen möchten, kann es zum ersten Mal 20 bis 30 Minuten dauern, bis alle Schritte ausgeführt wurden.
   
 > [!NOTE]
-> Sie müssen ein Exchange- **Administrator** oder **globaler Administrator** in Office 365 sein oder ein Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Sie müssen ein Exchange- **Administrator** oder **globaler Administrator** in Office 365 sein oder ein Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen für sich selbst
 <a name="step1"> </a>
@@ -74,7 +73,7 @@ Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Excha
 > [!CAUTION]
 > Mitglieder der Rollengruppe "Ermittlungsverwaltung" können auf vertrauliche Nachrichteninhalte zugreifen. Dies umfasst das Durchsuchen aller Postfächer in Ihrer Organisation, die Vorschau der Suchergebnisse (und anderer Postfachelemente), das Kopieren der Ergebnisse in ein Ermittlungspostfach und das Exportieren der Suchergebnisse in eine PST-Datei. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-2-search-the-users-mailbox-for-deleted-items"></a>Schritt 2: Durchsuchen des Postfachs des Benutzers nach gelöschten Elementen
 <a name="step2"> </a>
@@ -119,16 +118,16 @@ Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundabl
 |![Number 4 in a pink circle.](media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)           <br/> |Suchen nach Nachrichten, die von bestimmten Personen empfangen oder gesendet wurden.  <br/> |
 |![Zahl fünf in einem rosa Kreis.](media/878cc815-0165-49ba-a1ee-9236e5980403.png)           <br/> |Suchen Sie nach allen Nachrichtentypen, oder wählen Sie spezifische Objekte aus.  <br/> |
    
-    > [!TIP]
-    >  Here's a few tips about how to build a search query to find missing items. Try to get as much information from the user to help you create a search query so you can find what you're looking for. >  If you not sure how to find a missing message, consider using the **Include all content** option. The search results will include all items in the user's Recoverable Items folder, including the hidden folder (called the Purges folder) that contain items that have been purged by the user. Then you can go to Step 3, copy the results to a discovery mailbox, and look at the message in the hidden folder. >  If you know approximately when the missing message was originally sent or received by the user, use the **Specify start date** and **Specify end date** options to provide a date range. This will return all messages sent or received by the user within that date range. Specifying a date range is a really good way to narrow the search results. >  If you know who sent the missing email, use the **From** box to specify this sender. >  If you want to narrow the search results to different types of mailbox items, click **Select message types**, click **Select the message types to search**, and then choose a specific message type to search for. For example, you can search only for calendar items or contacts. Here's a screenshot of the different message types you can search for; the default is to search for all message types. 
+   > [!TIP]
+   >  Hier sind einige Tipps zum Erstellen einer Suchabfrage zum Auffinden fehlender Elemente. Versuchen Sie, so viele Informationen aus dem Benutzer zu erhalten, dass Sie eine Suchabfrage erstellen können, damit Sie finden, wonach Sie suchen. Wenn Sie nicht sicher sind, wie Sie eine fehlende Nachricht finden, sollten Sie die Option **alle Inhalte einbeziehen** verwenden. Die Suchergebnisse enthalten alle Elemente im Ordner "Wiederherstellbare Elemente" des Benutzers, einschließlich des ausgeblendeten Ordners (als Lösch Ordner bezeichnet), die Elemente enthalten, die vom Benutzer gelöscht wurden. Anschließend können Sie zu Schritt 3 wechseln, die Ergebnisse in ein Ermittlungspostfach kopieren und sich die Nachricht im verborgenen Ordner ansehen. Wenn Sie ungefähr wissen, wann die fehlende Nachricht ursprünglich vom Benutzer gesendet oder empfangen wurde, verwenden Sie die Optionen **Startdatum angeben** und **Enddatum angeben** , um einen Datumsbereich bereitzustellen. Dadurch werden alle Nachrichten zurückgegeben, die der Benutzer innerhalb dieses Zeitraums gesendet oder empfangen hat. Die Angabe eines Datumsbereichs ist eine wirklich gute Möglichkeit, die Suchergebnisse einzugrenzen. Wenn Sie wissen, wer die fehlenden e-Mails gesendet hat, verwenden Sie das Feld **von** , um diesen Absender anzugeben. Wenn Sie die Suchergebnisse auf verschiedene Arten von Postfachelementen einschränken möchten, klicken Sie auf **Nachrichtentypen auswählen**, klicken Sie auf **die zu durchsuchenden Nachrichtentypen auswählen**, und wählen Sie dann einen bestimmten Nachrichtentyp aus, nach dem gesucht werden soll. Beispielsweise können Sie nur nach Kalenderelementen oder Kontakten suchen. Hier ist ein Screenshot der verschiedenen Nachrichtentypen, nach denen Sie suchen können. Standardmäßig werden alle Nachrichtentypen gesucht. 
   
-    Click **Next** when you've completed the **Search query** page. 
+   Klicken Sie auf **weiter** , wenn Sie die Seite **Suchabfrage** abgeschlossen haben. 
     
 10. Klicken Sie auf der Seite **in-situ-Archiveinstellungen** auf **Fertig stellen** , um die Suche zu starten. Um gelöschte e-Mails wiederherzustellen, gibt es keinen Grund, das Postfach des Benutzers aufzubewahren. 
     
     Nachdem Sie die Suche gestartet haben, zeigt Exchange eine Schätzung der Gesamtgröße und der Anzahl der Elemente an, die von der Suche basierend auf den von Ihnen angegebenen Kriterien zurückgegeben werden.
     
-11. Wählen Sie die soeben erstellte Suche aus, ****![und klicken](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Sie auf Aktualisierung aktualisieren, um die im Detailbereich angezeigten Informationen zu aktualisieren. Der Status der **erfolgreichen Schätzung** zeigt an, dass die Suche abgeschlossen wurde. Exchange zeigt außerdem eine Schätzung der Gesamtanzahl der Elemente (und deren Größe) an, die bei der Suche basierend auf den in Schritt 9 angegebenen Suchkriterien gefunden wurden. 
+11. Wählen Sie die soeben erstellte Suche aus, **und klicken Sie auf**![Aktualisierung aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die im Detailbereich angezeigten Informationen zu aktualisieren. Der Status der **erfolgreichen Schätzung** zeigt an, dass die Suche abgeschlossen wurde. Exchange zeigt außerdem eine Schätzung der Gesamtanzahl der Elemente (und deren Größe) an, die bei der Suche basierend auf den in Schritt 9 angegebenen Suchkriterien gefunden wurden. 
     
 12. Klicken Sie im Detailbereich auf **Suchergebnisse** anzeigen, um die gefundenen Elemente anzuzeigen. Dies kann Ihnen helfen, die gesuchten Elemente zu identifizieren. Wenn Sie feststellen, welche Elemente Sie wiederherstellen möchten, fahren Sie mit Schritt 4 fort, um die Suchergebnisse in eine PST-Datei zu exportieren. 
     
@@ -136,7 +135,7 @@ Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundabl
   
 13. Wenn Sie nicht finden, wonach Sie suchen, können Sie Ihre Suchkriterien überarbeiten, indem Sie die Suche auswählen, ****![auf Bearbeitungssymbol](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)bearbeiten klicken und dann auf **Suchabfrage**klicken. Ändern Sie die Suchkriterien, und führen Sie dann die Suche erneut aus.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Optional Schritt 3: Kopieren der Suchergebnisse in ein Discovery-Postfach
 <a name="step3"> </a>
@@ -147,7 +146,7 @@ Wenn Sie keine Elemente finden können, indem Sie eine Vorschau der Suchergebnis
     
 2. Wählen Sie in der Liste der Suchvorgänge die Suche aus, die Sie in Schritt 2 erstellt haben.
     
-3. Klicken Sie auf](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png)Such Suche, und klicken Sie dann in der Dropdownliste auf **Suchergebnisse kopieren** . ****![ 
+3. ![Klicken **Sie auf Such Suche**](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png), und klicken Sie dann in der Dropdownliste auf **Suchergebnisse kopieren** . 
     
     ![Klicken Sie auf suchen, und klicken Sie dann auf Suchergebnisse kopieren](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -166,7 +165,7 @@ Wenn Sie keine Elemente finden können, indem Sie eine Vorschau der Suchergebnis
     
     ![Klicken Sie auf Kopieren, um die Suchergebnisse in das Ermittlungs Such Postfach zu kopieren.](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. Klicken Sie auf](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) Aktualisierung aktualisieren, um die Informationen zum Kopierstatus zu aktualisieren, die im Detailbereich angezeigt werden. ****![ 
+7. ![Klicken **Sie auf Aktualisierung aktualisieren**](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die Informationen zum Kopierstatus zu aktualisieren, die im Detailbereich angezeigt werden. 
     
 8. Wenn der Kopiervorgang abgeschlossen ist, klicken Sie auf **Öffnen** , um das Ermittlungs Such Postfach zu öffnen, um die Suchergebnisse anzuzeigen. 
     
@@ -181,7 +180,7 @@ Wenn Sie keine Elemente finden können, indem Sie eine Vorschau der Suchergebnis
     > [!TIP]
     > Wenn ein Benutzer ein gelöschtes Element nicht mithilfe des Tools "Wiederherstellbare Elemente" finden kann, dieses Element jedoch noch wiederherstellbar ist (d. h., dass es nicht dauerhaft aus dem Postfach entfernt wurde), befindet es sich wahrscheinlich im Ordner "Säuberungen". Achten Sie daher darauf, dass Sie im Ordner "Säuberungsaktionen" nach dem gelöschten Element suchen, das Sie für einen Benutzer wiederherstellen möchten. 
   
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-4-export-the-search-results-to-a-pst-file"></a>Schritt 4: Exportieren der Suchergebnisse in eine PST-Datei
 <a name="step4"> </a>
@@ -208,7 +207,7 @@ Nachdem Sie das Element gefunden haben, das Sie für einen Benutzer wiederherste
     
     Das **eDiscovery-PST-Export Tool** zeigt Statusinformationen zum Exportvorgang an. Wenn der Export abgeschlossen ist, können Sie auf die Datei an dem Speicherort zugreifen, an dem Sie heruntergeladen wurde. 
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="step-5-restore-the-recovered-items-to-the-users-mailbox"></a>Schritt 5: Wiederherstellen der wiederhergestellten Elemente im Postfach des Benutzers
 <a name="step5"> </a>
@@ -271,11 +270,12 @@ Sie müssen die Outlook-Desktop-App verwenden, um ein gelöschtes Element mithil
     
 ![Auswählen eines Ordners zum Migrieren anderer Elementtypen](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   
-    Note that calendar items, contacts, and tasks are located directly in the Purges folder, and not in a Calendar, Contacts, or Tasks subfolder. However, you can sort by **Type** to group similar types of items. 
+   > [!NOTE]
+   > Kalenderelemente, Kontakte und Aufgaben befinden sich direkt im Ordner "Säuberungen" und nicht in einem Unterordner "Kalender", "Kontakte" oder "Vorgänge". Sie können jedoch nach **Typ** sortieren, um ähnliche Elementtypen zu gruppieren. 
     
 8. Wenn Sie die erneute Herstellung gelöschter Elemente abgeschlossen haben, klicken Sie mit der rechten Maustaste auf die PST-Datei in der linken Navigationsleiste, und wählen Sie **Close "Name of PST file"** aus.
     
-[Return to top](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="more-information"></a>Weitere Informationen
 <a name="moreinfo"> </a>
@@ -296,6 +296,6 @@ Sie müssen die Outlook-Desktop-App verwenden, um ein gelöschtes Element mithil
     
   - [Wiederherstellen gelöschter e-Mail-Nachrichten in Outlook.com](https://go.microsoft.com/fwlink/p/?LinkID=623435)
     
-[Nach oben](recover-deleted-items-in-a-mailbox.md#__top)
+[Return to top](recover-deleted-items-in-a-mailbox.md)
   
 
