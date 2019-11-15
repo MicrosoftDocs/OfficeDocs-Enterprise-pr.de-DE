@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: In diesem Artikel finden Sie Informationen zum Verschieben einer OneDrive-Website an einen anderen geografischen Standort.
-ms.openlocfilehash: 49fec1359ed839b16c1872ab607d87515a27eaf5
-ms.sourcegitcommit: fa900775790eb369db1983cd3868b628b699f145
+ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38033451"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626165"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einen anderen geografischen Standort 
 
@@ -55,11 +55,11 @@ Um geografische Standorte in OneDrive zu verschieben, muss der Mandantenadminist
 
 Stellen Sie beim Verwenden von Cmdlets für das Verschieben von geografischen Standorten eine Verbindung mit dem SPO-Dienst an dem aktuellen geografischen OneDrive-Standort des Benutzers her, indem Sie die folgenden Syntax verwenden:
 
-`connect-sposervice -url https://<tenantName>-admin.sharepoint.com`
+`Connect-SPOService -url https://<tenantName>-admin.sharepoint.com`
 
 Beispiel: Um die OneDrive-Umgebung des Benutzers „Matt@contosoenergy.onmicrosoft.com“ zu verschieben, stellen Sie eine Verbindung mit dem EUR SharePoint Admin Center, da sich die OneDrive-Umgebung des Benutzers an dem geografischen Standort in EUR befindet:
 
-`connect-sposervice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Screenshot des PowerShell-Fensters mit Connect-SPOService-Cmdlet](media/move-onedrive-between-geo-locations-image1.png)
 
