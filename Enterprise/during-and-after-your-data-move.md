@@ -3,7 +3,7 @@ title: Während und nach der Datenverschiebung
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/18/2019
+ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: 86bdc1679b787952f7999f04a92c0a9e2ff6e347
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077598"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626135"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -34,13 +34,13 @@ Sehen Sie sich das Office 365 Nachrichten Center zur Bestätigung an, wenn die V
 |:-----|:-----|
 |Australien, Neuseeland, Fidschi  <br/> |31. Oktober 2017  <br/> |
 |Japan  <br/> |31. Oktober 2018  <br/> |
-|Indien  <br/> |31. Oktober 2018  <br/> |
+|India  <br/> |31. Oktober 2018  <br/> |
 |Kanada  <br/> |30. Juni 2019  <br/> |
 |Südkorea  <br/> |31. Oktober 2018  <br/> |
 |Vereinigtes Königreich  <br/> |15. September 2019  <br/> |
 |Frankreich  <br/> |15. September 2020  <br/> |
 |Vereinigte Arabische Emirate  <br/> |1. Februar 2022  <br/> |
-|Südafrika  <br/> |Angekündigt  <br/> |
+|Südafrika  <br/> |1. Februar 2022  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -119,7 +119,7 @@ Alle Benutzer werden während des Umschaltens von der Skype for Business-Client 
    
 |**Nach dem Wechsel**|
 |:-----|
-| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht weiterentwickelt und müssen erneut hochgeladen werden.  <br/>  Ältere lync-Clients, wie der Client für lync 2010 Client und lync für Mac 2011, sind bekannt für die Zwischenspeicherung von DNS-Informationen mit dem Dienst, der Anmeldeprobleme verursacht. Das Löschen des DNS-Caches ist möglicherweise erforderlich, wenn sich der Benutzer nicht auf dem neuesten Skype for Business Windows-Client befindet. Bitten Sie die Benutzer, den Assistenten für die [Problembehandlung](https://support.microsoft.com/kb/2541980) auszuführen, und folgen Sie den Anweisungen zum Löschen des Clientcaches. Lync für Mac-Clientbenutzer sollten [diese Anweisungen](https://support.microsoft.com/kb/2629861)befolgen.  <br/> |
+| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht weiterentwickelt und müssen erneut hochgeladen werden.  <br/>  Ältere lync-Clients, wie der Client für lync 2010 Client und lync für Mac 2011, sind bekannt für die Zwischenspeicherung von DNS-Informationen mit dem Dienst, der Anmeldeprobleme verursacht. Das Löschen des DNS-Caches ist möglicherweise erforderlich, wenn sich der Benutzer nicht auf dem neuesten Skype for Business Windows-Client befindet. Weitere Informationen finden Sie unter [Troubleshooting Skype for Business Online DNS Configuration Issues in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Lync für Mac-Clientbenutzer sollten [diese Anweisungen](https://support.microsoft.com/kb/2629861)befolgen.  <br/> |
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype for Business-Moves, die einen Drittanbieter für Audiokonferenzen einbeziehen
 Add-on-Dienste von Drittanbieter-Audiokonferenz-Anbietern für Skype for Business stehen nicht für Benutzer zur Verfügung, die in neuen Geo-spezifischen Rechenzentren verwaltet werden.  Vorhandene Kunden, die einen Drittanbieterdienst für Audiokonferenzen verwenden, sollten keine Umstellung auf ein neues Geo-spezifisches Rechenzentrum anfordern.  Neue Kunden, die in den neuen Geo-spezifischen Rechenzentren bereitgestellt werden, müssen eine Verlagerung an ein regionales Rechenzentrum anfordern, um einen Drittanbieter für Audiokonferenzen verwenden zu können.

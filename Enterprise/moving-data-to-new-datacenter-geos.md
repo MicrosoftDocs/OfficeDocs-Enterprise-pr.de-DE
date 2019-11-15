@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Neues Rechenzentrum GEOS Kapazität hinzufügen und Ressourcen berechnen, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online Websiteinhalt und die Dateien in dieser Website gespeichert und in OneDrive für Unternehmen hochgeladene Dateien.'
-ms.openlocfilehash: 780530873022426a8dc10c6a30573e303239a0d1
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e6bd86e7d3eebd0395d50e7668cf32dcabd0f20f
+ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032190"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "38626155"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 
 Wir öffnen weiterhin das neue Rechenzentrum GEOS für Office 365 für Unternehmen Dienste. In diesem neuen Datencenter-GEOS wird Kapazität hinzugefügt und Ressourcen berechnet, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. 
 
-Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den [Microsoft Online Services-Bedingungen](https://go.microsoft.com/fwlink/p/?LinkID=249048)definiert sind: 
+Kernkunden Daten sind ein Begriff, der auf eine Teilmenge von Kundendaten verweist, einschließlich: 
 - Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen)
 - SharePoint Online Websiteinhalt und die Dateien, die auf dieser Website gespeichert sind
 - In OneDrive für Unternehmen hochgeladene Dateien 
@@ -34,7 +34,7 @@ Vorhandene Kunden, deren Kernkunden Daten in einer bereits vorhandenen Rechenzen
 |:-----|:-----|:-----|:-----|
 |Japan * * * *| Asien/Pazifik | Japan | Dezember 2014 |
 |Australien, Neuseeland, Fidschi * * * *| Asien/Pazifik | Australien | März 2015 |
-|Indien * * * *| Asien/Pazifik | Indien | Oktober 2015 |
+|Indien * * * *| Asien/Pazifik | India | Oktober 2015 |
 |Kanada * * * *| Nordamerika | Kanada | Mai 2016 |
 |Vereinigtes Königreich * * * *| Europa | Vereinigtes Königreich | September 2016 |
 |Südkorea * * * *| Asien/Pazifik | Südkorea | April 2017 |
