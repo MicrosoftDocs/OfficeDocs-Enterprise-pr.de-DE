@@ -17,10 +17,10 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 description: 'Dieser Artikel richtet sich an Administratoren. Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der Benutzer möchte, dass er zurückkehrt, kann ihn jedoch nicht wiederherstellen. Möglicherweise können Sie die bereinigten Elemente wiederherstellen, wenn Sie nicht dauerhaft aus dem Postfach des Benutzers entfernt wurden. '
 ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38308600"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren
@@ -110,7 +110,7 @@ Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundabl
     
     ![Erstellen einer Suche basierend auf Kriterien wie Schlüsselwörtern, Datumsbereich, Empfänger und Nachrichtentypen](media/ee47b833-9122-46a0-85e6-fcbe25be0dd5.png)
   
-|**Feld**|**Verwenden Sie diese, um...**|
+|**Field**|**Verwenden Sie diese, um...**|
 |:-----|:-----|
 |![Number one in a pink circle](media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)           <br/> |Geben Sie Stichwörter, Datumsbereich, Empfänger und Nachrichtentypen an.  <br/> |
 |![Number two in a pink circle.](media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)           <br/> |Suchen Sie nach Nachrichten mit Schlüsselwörtern oder Ausdrücken, und verwenden Sie logische Operatoren wie **und** oder **oder**.  <br/> |

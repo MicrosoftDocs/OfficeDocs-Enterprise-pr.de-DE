@@ -12,10 +12,10 @@ ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 description: Exchange 2010 nähert sich dem Ende der Unterstützung. Verwenden Sie diese Planungs Roadmap als Leitfaden für die Vorbereitung des Upgrades auf Exchange Online oder eine neuere Version von Exchange Server lokal.
 ms.openlocfilehash: 28dcead19c1af1b5a641cae8f9d649b22fb36c95
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38028829"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Roadmap für Exchange 2010 Ende des Supports

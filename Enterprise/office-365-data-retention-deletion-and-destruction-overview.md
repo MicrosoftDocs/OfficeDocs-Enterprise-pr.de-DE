@@ -13,19 +13,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Eine Übersicht über die Microsoft-Richtlinien für Office 365 zur Aufbewahrung, Löschung und Vernichtung von Daten.
-ms.openlocfilehash: 08b04e4fec762249208acb626fa20562ffecb82f
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: e4632a3025f1dc0f22338c0a463f054a7b993524
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067471"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37975830"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Aufbewahren, Löschen und Zerstören von Daten in Office 365
 
 Microsoft verfügt über eine Standard Richtlinie für die Datenverarbeitung für Office 365, die angibt, wie lange Kundendaten nach dem Löschen aufbewahrt werden. Es gibt im Allgemeinen zwei Szenarien, in denen Kundendaten gelöscht werden:
 
-- **Aktives löschen:** Der Mandant verfügt über ein aktives Abonnement, und ein Benutzer löscht Daten, oder Administratoren löschen die von einem Benutzer bereitgestellten Daten.
-- **Passive Löschung:** Das Mandanten Abonnement wird beendet.
+- **Aktive Löschung**: der Mandant verfügt über ein aktives Abonnement, und ein Benutzer oder Administrator löscht Daten, oder Administratoren löschen einen Benutzer.
+- **Passive Löschung**: das Mandanten Abonnement wird beendet.
 
 ## <a name="data-retention"></a>Datenaufbewahrung
 
@@ -34,7 +34,7 @@ In der folgenden Tabelle sind die maximalen Daten Aufbewahrungs Intervalle nach 
 | Datenkategorie | Datenklassifikation | Beschreibung | Beispiele | Aufbewahrungszeitraum |
 |-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
 | Kundendaten | Kunden Inhalte| Inhalte, die von Administratoren und Benutzern direkt bereitgestellt/erstellt wurden <br><br> Enthält alle Text-, Sound-, Video-, Bilddateien und Software, die in Microsoft-Rechenzentren erstellt und gespeichert werden, wenn die Dienste in Office 365 verwendet werden. | Beispiele für die am häufigsten verwendeten Office 365 Anwendungen, die Benutzern das Erstellen von Daten ermöglichen, sind Word, Excel, PowerPoint, Outlook und OneNote. <br><br> Kunden Inhalte enthalten auch kundeneigene/bereitgestellte Geheimnisse (Kennwörter, Zertifikate, Verschlüsselungsschlüssel, Speicherschlüssel) | **Aktives Lösch Szenario:** höchstens 30 Tage <br><br> **Szenario für passive Löschung:** höchstens 180 Tage |
-| Kundendaten | Identifizierbare Informationen für Endbenutzer (EUII) | Daten, mit denen der Benutzer eines Microsoft-Diensts identifiziert oder verwendet werden kann. EUII enthält keine Kunden Inhalte. | Benutzername oder Anzeigename (Domäne \ Benutzername) <br><br> Benutzerprinzipalname (Name @ Domäne) <br><br>  Benutzerspezifische IP-Adressen | **Aktives Lösch Szenario:** höchstens 180 Tage (nur eine mandantenadministrator Aktion) <br><br> **Szenario für passive Löschung:** höchstens 180 Tage |
+| Kundendaten | Identifizierbare Informationen für Endbenutzer (EUII) | Daten, mit denen der Benutzer eines Microsoft-Diensts identifiziert oder verwendet werden kann. EUII enthält keine Kunden Inhalte. | Benutzername oder Anzeigename (Domäne \ Benutzername) <br><br> Benutzerprinzipalname (Name@Domain) <br><br>  Benutzerspezifische IP-Adressen | **Aktives Lösch Szenario:** höchstens 180 Tage (nur eine mandantenadministrator Aktion) <br><br> **Szenario für passive Löschung:** höchstens 180 Tage |
 | Persönliche Daten <br> (Daten sind nicht in Kundendaten enthalten) | Pseudonyme Bezeichner für Endbenutzer (EUPI) | Ein von Microsoft erstellter Bezeichner, der mit dem Benutzer eines Microsoft-Diensts verbunden ist. In Kombination mit anderen Informationen, beispielsweise einer Zuordnungstabelle, identifiziert EUPI den Endbenutzer <br><br> EUPI enthält keine vom Kunden hochgeladenen oder erstellten Informationen. | Benutzer-GUIDs, PUIDs oder SIDs <br><br> Sitzungs-IDs | **Aktives Lösch Szenario:** höchstens 30 Tage <br><br> **Szenario für passive Löschung:** höchstens 180 Tage |
 
 ## <a name="subscription-retention"></a>Abonnement Aufbewahrung
@@ -50,6 +50,7 @@ Für jedes Abonnement kann ein Abonnent den Microsoft-Support kontaktieren und e
 Weitere Informationen zur beschleunigten Deaktivierung finden Sie unter [Cancel Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Links zu verwandten Themen
+
 - [Zerstörung von Daten](office-365-data-destruction.md)
 - [Unveränderbarkeit in Office 365](office-365-data-immutability.md)
 - [Löschen von Exchange Online-Daten](office-365-exchange-online-data-deletion.md)

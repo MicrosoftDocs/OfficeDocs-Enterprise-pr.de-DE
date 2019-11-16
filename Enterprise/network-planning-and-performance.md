@@ -15,10 +15,10 @@ search.appverid:
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Unterstützt Sie bei der Planung der Anforderungen an die Netzwerkbandbreite für Microsoft Office 365. Sobald Sie bereitgestellt haben, kehren Sie hier zur Feinabstimmung zurück und beheben Sie Office 365 Leistung.
 ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 11/15/2019
 ms.locfileid: "38032140"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Netzwerkplanung und Leistungsoptimierung für Office 365
