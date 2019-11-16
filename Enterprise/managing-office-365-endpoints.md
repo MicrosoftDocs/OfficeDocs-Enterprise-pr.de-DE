@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Unternehmensnetzwerke schränken den Zugriff auf gewöhnliche Internetseiten ein, oder umfassen einen erheblichen Backhaul oder eine umfangreiche Verarbeitung des Netzwerkdatenverkehrs. Um sicherzustellen, dass die Computer in solchen Netzwerken auf Office 365 zugreifen können, müssen die Netzwerk- und Proxy-Administratoren die Liste der Office 365-Endpunkte, die aus vollqualifizierten Domänennamen (FQDNs), URLs und IP-Adressen bestehen, verwalten. Diese müssen den Direktverbindungs-, Proxy- und/oder Firewall-Regeln sowie den PAC-Dateien hinzugefügt werden, damit gewährleistet ist, dass Netzwerkanfragen Office 365 erreichen.
-ms.openlocfilehash: 21129387aeaf20f34e8528829dd942fddd381108
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 1a694d516a81fec7d6c619c17414e2245dd6b0ef
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35782475"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38030609"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -53,7 +53,7 @@ Die PAC-Datei wird für Webbrowser in Punkt 1 in Abbildung 1 bereitgestellt. Wen
 
 Wenn Sie gesondert festlegen, dass für die Endpunkte der Kategorie „Optimize“ nur direktes Routing ausgeführt werden soll, müssen alle erforderlichen Endpunkte der Kategorie „Allow“, die Sie an den Proxyserver senden, in diesem aufgelistet werden, um die Weiterverarbeitung zu umgehen. So sind beispielsweise die SSL-Unterbrechung und -Überprüfung und die Proxyauthentifizierung mit den Endpunkten der Kategorien „Optimize“ und „Allow“ nicht kompatibel. Der Proxy Server ist Punkt 2 in Abbildung 1.
 
-Die allgemeine Konfiguration erlaubt den Office 365-Netzwerkdatenverkehr, der auf den Proxy Server trifft, ohne dass der gesamte ausgehende Datenverkehr vom Proxyserver verarbeitet wird. Informationen zu Problemen mit SSL-Unterbrechung und -Prüfung finden Sie unter [Verwenden von Netzwerkgeräten oder-Lösungen von Drittanbietern im Office 365-Datenverkehr](https://support.microsoft.com/en-us/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
+Die allgemeine Konfiguration erlaubt den Office 365-Netzwerkdatenverkehr, der auf den Proxy Server trifft, ohne dass der gesamte ausgehende Datenverkehr vom Proxyserver verarbeitet wird. Informationen zu Problemen mit SSL-Unterbrechung und -Prüfung finden Sie unter [Verwenden von Netzwerkgeräten oder-Lösungen von Drittanbietern im Office 365-Datenverkehr](https://support.microsoft.com/help/2690045/using-third-party-network-devices-or-solutions-with-office-365).
 
 Es gibt zwei Arten von PAC-Dateien, die vom Get-PacFile-Skript erzeugt werden.
 
@@ -125,7 +125,7 @@ Klicken Sie auf den Link unten, um anzugeben, ob die Artikel hilfreich war, und 
   
 ### <a name="how-do-i-determine-the-location-of-my-tenant"></a>Wie kann ich den Standort meines Mandanten ermitteln?
 
- Der **Mandantenstandort** lässt sich am besten mit unserer [Karte der Rechenzentren](http://aka.ms/datamaps) ermitteln.
+ Der **Mandantenstandort** lässt sich am besten mit unserer [Karte der Rechenzentren](https://aka.ms/datamaps) ermitteln.
   
 ### <a name="am-i-peering-appropriately-with-microsoft"></a>Bin ich in geeigneter Weise über Peering mit Microsoft verbunden?
 
@@ -140,7 +140,7 @@ In der Liste werden nur IP-Adressen für die Office 365-Server angezeigt, zu den
   
 Sie sehen eine Office 365 zugeordnete IP-Adresse, über die Sie weitere Informationen erhalten möchten?
   
-1. Überprüfen Sie mithilfe eines [CIDR Rechners](http://jodies.de/ipcalc), ob die IP-Adresse in einem größeren veröffentlichten Bereich enthalten ist.
+1. Überprüfen Sie mithilfe eines [CIDR Rechners](https://jodies.de/ipcalc), ob die IP-Adresse in einem größeren veröffentlichten Bereich enthalten ist.
 2. Überprüfen Sie mithilfe einer [Whois-Abfrage](https://dnsquery.org/), ob die IP-Adresse einem Partner gehört. Wenn die IP-Adresse von Microsoft betrieben wird, kann es sich um einen internen Partner handeln.
 3. Überprüfen Sie das Zertifikat, stellen Sie in einem Browser unter Verwendung von *HTTPS://\<IP-ADRESSE\>* eine Verbindung mit der IP-Adresse her, und überprüfen Sie die auf dem Zertifikat aufgelisteten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine von Microsoft betriebene IP-Adresse handelt, die sich nicht in der Liste der Office 365-IP-Adressen befindet, ist die IP-Adresse wahrscheinlich einem Microsoft-CDN, z. B. *MSOCDN.NET*, oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
 
@@ -157,7 +157,7 @@ Diese CNAME-Umleitungen sind ein normaler Bestandteil des DNS, und für den Clie
 
 Ein Proxy Server überprüft die anfängliche URL, im obigen Beispiel ServiceA.Office.com, und diese URL wäre in der Office 365-Veröffentlichung enthalten. Der Proxy Server fordert die DNS-Auflösung dieser URL in eine IP-Adresse an und empfängt IP_1. Er überprüft dabei nicht die Einträge der zwischengeschalteten CNAME-Einträge.
 
-Hartcodiert Konfigurationen oder auf indirekten vollständig qualifizierten Office 365-Domänennamen basierendes Whitelisting wird nicht empfohlen und nicht von Microsoft unterstützt, da bekannt ist, dass dabei Probleme mit der Verbindung zu Kunden entstehen. DNS-Lösungen, die die CNAME-Umleitung blockieren oder die Office 365-DNS-Einträge andernfalls falsch auflösen, können bei aktivierter DNS-Rekursion über die DNS-bedingte Weiterleitung behoben werden (für direkt verwendete vollständig qualifizierte Office 365-Domänennamen). Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlenen Whitelists für Office 365-Endpunkte mithilfe des [Office 365-IP-Adress- und URL-Webdiensts](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service) direkt in ihre Konfiguration.
+Hartcodiert Konfigurationen oder auf indirekten vollständig qualifizierten Office 365-Domänennamen basierendes Whitelisting wird nicht empfohlen und nicht von Microsoft unterstützt, da bekannt ist, dass dabei Probleme mit der Verbindung zu Kunden entstehen. DNS-Lösungen, die die CNAME-Umleitung blockieren oder die Office 365-DNS-Einträge andernfalls falsch auflösen, können bei aktivierter DNS-Rekursion über die DNS-bedingte Weiterleitung behoben werden (für direkt verwendete vollständig qualifizierte Office 365-Domänennamen). Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlenen Whitelists für Office 365-Endpunkte mithilfe des [Office 365-IP-Adress- und URL-Webdiensts](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) direkt in ihre Konfiguration.
 
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Warum enthalten Microsoft-Domänennamen Namen wie "nsatc.net" oder "akadns.net"?
 <a name="bkmk_akamai"> </a>

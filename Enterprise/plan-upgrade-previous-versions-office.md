@@ -13,12 +13,12 @@ search.appverid:
 ms.collection: Ent_O365
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es an der Zeit, Ihr Upgrade zu planen. Halten Sie nicht an veralteten und nicht unterstützten Apps und Servern fest. Verwenden Sie diese Ressourcen für Ihre ersten Schritte bei der Planung.
-ms.openlocfilehash: 56efdc56824b3f280548a106450c565af4fb2694
-ms.sourcegitcommit: 3bba97053caf5f9cff0ef3205afb7869535f38bd
+ms.openlocfilehash: 39ae2a80f9f16d70e22f7654c8818155b0ffda91
+ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "36991896"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38031060"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007- oder Office 2010-Servern und -Clients
 
@@ -64,13 +64,13 @@ Wenn Sie Hilfe bei der Planung Ihres Upgrades benötigen, sollten Sie eine oder 
 
 Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie sich die folgenden Updateoptionen anschauen:
 
-- **Verwenden Sie Office kostenlos in einem Browser.** Sie können Office-Dateien im Browser erstellen, anzeigen und bearbeiten, und von fast jedem Gerät mit Internetzugang auf diese Dateien zugreifen. [Office für das Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) enthält [Word für das Web](http://go.microsoft.com/fwlink/p/?linkid=746664), [Excel für das Web](http://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint für das Web](http://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote für das Web](http://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](http://go.microsoft.com/fwlink/p/?linkid=746675), [E-Mail](http://go.microsoft.com/fwlink/p/?linkid=746676), [Kalender](http://go.microsoft.com/fwlink/p/?linkid=746678) und [OneDrive](http://go.microsoft.com/fwlink/p/?linkid=746679). Zum Einstieg besuchen Sie [office.com](https://office.com), und melden Sie sich mit Ihrem [Microsoft-Konto](https://account.microsoft.com/account) an. (Wenn Sie kein Microsoft-Konto besitzen, können Sie unter [office.com](https://office.com) ein Konto erstellen.)
+- **Verwenden Sie Office kostenlos in einem Browser.** Sie können Office-Dateien im Browser erstellen, anzeigen und bearbeiten, und von fast jedem Gerät mit Internetzugang auf diese Dateien zugreifen. [Office für das Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) enthält [Word für das Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel für das Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint für das Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote für das Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [E-Mail](https://go.microsoft.com/fwlink/p/?linkid=746676), [Kalender](https://go.microsoft.com/fwlink/p/?linkid=746678) und [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Zum Einstieg besuchen Sie [office.com](https://office.com), und melden Sie sich mit Ihrem [Microsoft-Konto](https://account.microsoft.com/account) an. (Wenn Sie kein Microsoft-Konto besitzen, können Sie unter [office.com](https://office.com) ein Konto erstellen.)
 
 - **Testen Sie Office 365 für die private Nutzung.** Überprüfen Sie die [Anforderungen](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), und wählen Sie dann zwischen [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) und [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) aus. Überzeugen Sie sich mithilfe einer Testversion selbst, wie Sie Office 365 gewinnbringend einsetzen können. Mit Office 365 können Sie OneDrive-Cloudspeicher nutzen, und Sie erhalten jeden Monat ein Guthaben von 60 Minuten für Skype-Anrufe an Handy- und Festnetznummern sowie viele weitere tolle Features. Weitere Informationen finden Sie unter [Optimale Nutzung von Office mit Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
 
    Mit dem [Ende des Supports für Windows 7 am 14. Januar 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support) werden für die Versionen von Word, Excel, PowerPoint, Outlook, Publisher und Access, die mit Office 365 Home oder Office 365 Personal auf Windows 7-Geräten bereitgestellt werden, zwar weiterhin Sicherheitsupdates aber keine Featureupdates mehr bereitgestellt. Wenn Sie weiterhin Featureupdates für diese Anwendungen erhalten möchten, [aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
-- **Kaufen Sie Office Home &amp; Student.** Wenn Sie diese Option wählen, erwerben Sie Office als Einmalkauf und installieren es dann auf Ihrem Windows-PC oder Mac. Hierbei handelt es sich nicht um ein Abonnement, sondern eine einmalige, dauerhafte Nutzungslizenz für einen Computer. Sehen Sie sich die [Anforderungen](http://office.com/systemrequirements) an, und wählen Sie dann die Version aus, die Sie verwenden möchten.
+- **Kaufen Sie Office Home &amp; Student.** Wenn Sie diese Option wählen, erwerben Sie Office als Einmalkauf und installieren es dann auf Ihrem Windows-PC oder Mac. Hierbei handelt es sich nicht um ein Abonnement, sondern eine einmalige, dauerhafte Nutzungslizenz für einen Computer. Sehen Sie sich die [Anforderungen](https://office.com/systemrequirements) an, und wählen Sie dann die Version aus, die Sie verwenden möchten.
 
     - Wird auf Ihrem Windows-PC Windows 10 ausgeführt, erwägen Sie den Erwerb von [Office Home & Student 2019](https://www.microsoft.com/p/office-home-student-2019/cfq7ttc0k7c8).
 
