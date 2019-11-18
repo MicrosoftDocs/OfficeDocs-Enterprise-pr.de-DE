@@ -71,15 +71,7 @@
 #### [Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)
 #### [Project Server 2010](project-server-2010-end-of-support.md)
 
-# Testen von Office 365
-## [Testen von Office 365](cloud-adoption-test-lab-guides-tlgs.md)
-## [Basiskonfiguration der Entwicklungs-/Testumgebung](base-configuration-dev-test-environment.md)
-## [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
-### [Verzeichnissynchronisierung](dirsync-for-your-office-365-dev-test-environment.md)
-### [Mehrstufige Authentifizierung](multi-factor-authentication-for-your-office-365-dev-test-environment.md)
-### [Verbundidentität](federated-identity-for-your-office-365-dev-test-environment.md)
-### [Advanced Threat Protection](advanced-threat-protection-for-your-office-365-dev-test-environment.md)
-## [Simuliertes standortübergreifendes virtuelles Netzwerk in Azure](simulated-cross-premises-virtual-network-in-azure.md)
+# [Testen von Office 365](cloud-adoption-test-lab-guides-tlgs.md)
 
 # [Bereitstellen von Office 365 Enterprise](setup-overview-for-enterprises.md)
 
@@ -198,7 +190,7 @@
 ### [Deaktivieren der Verzeichnissynchronisierung](turn-off-directory-synchronization.md)
 
 ## Benutzer
-### [Office 365 Admin-Hilfecenter](https://support.office.com/article/Management-tools-for-Office-365-8e715d2a-c20e-492b-a9cb-60f3708f9241)
+### [Office 365 Admin-Hilfecenter](https://docs.microsoft.com/office365/admin/admin-home)
 ### [Tools zum Verwalten von Benutzerkonten](manage-office-365-accounts.md)
 ### [Gleichzeitiges Hinzufügen von mehreren Benutzern](add-several-users-at-the-same-time.md)
 ### [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](recover-deleted-items-in-a-mailbox.md)
