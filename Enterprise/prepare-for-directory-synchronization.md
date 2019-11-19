@@ -3,6 +3,7 @@ title: Vorbereiten der Verzeichnissynchronisierung auf Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern für die Office 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: 67d22f9087aabd431f61e01f6669ef147db98516
-ms.sourcegitcommit: 3dc4cb3ed48429fcb84f8adeba3d9ba2fb38edf7
+ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35249196"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702236"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Vorbereiten der Verzeichnissynchronisierung auf Office 365
 
@@ -54,6 +55,9 @@ Bevor Sie Ihre AD DS mit Ihrem Azure AD-Mandanten synchronisieren, müssen Sie I
 Führen Sie in Ihrem AD DS die folgenden Bereinigungsaufgaben für jedes Benutzerkonto aus, dem eine Office 365 Lizenz zugewiesen wird:
   
 1. Stellen Sie eine gültige und eindeutige e-Mail-Adresse im **proxyAddresses** -Attribut sicher. 
+
+  >[!Note]
+  >Eine Tilde (~) in e-Mail-Adressen wird ignoriert. Dies kann zu falsch positiven Verzeichnis Synchronisierungsfehlern bei doppelten proxyAddresses führen.
     
 2. Entfernen Sie alle doppelten Werte im **proxyAddresses** -Attribut. 
     
@@ -102,7 +106,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
     > [!NOTE]
     > Wenn es doppelte Werte gibt, wird der erste Benutzer mit dem Wert synchronisiert. Nachfolgende Benutzer werden nicht in Office 365 angezeigt. Sie müssen entweder den Wert in Office 365 ändern oder beide Werte in AD DS ändern, damit beide Benutzer in Office 365 angezeigt werden. 
   
-- **** mailNickname (Exchange-Alias) 
+- **mailnick Name** (Exchange-Alias) 
     
   - Der Attributwert darf nicht mit einem Punkt (.) beginnen.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
@@ -128,7 +132,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Wenn ein Benutzer ein ungültiges **sAMAccountName** -Attribut aufweist, aber über ein gültiges **userPrincipalName** -Attribut verfügt, wird das Benutzerkonto in Office 365 erstellt. 
   - Wenn sowohl **sAMAccountName** als auch **userPrincipalName** ungültig sind, muss das AD DS **userPrincipalName** -Attribut aktualisiert werden. 
     
-- **SN** Nachname 
+- **SN** (Nachname) 
     
   - Wenn das Attribut im User-Objekt vorhanden ist, wird es mit Office 365 synchronisiert, aber Office 365 erfordert oder verwendet es nicht.
     
@@ -166,7 +170,7 @@ Active Directory wurde entwickelt, um es den Endbenutzern in Ihrer Organisation 
 
 In Office 365 ist der UPN das Standardattribut, das zum Generieren der e-Mail-Adresse verwendet wird. Es ist ganz einfach, **userPrincipalName** (in AD DS und in Azure AD) und die primäre e-Mail-Adresse in **proxyAddresses** auf unterschiedliche Werte festgelegt zu erhalten. Wenn Sie auf unterschiedliche Werte festgelegt sind, kann es zu Verwirrung für Administratoren und Endbenutzer kommen. 
   
-Es empfiehlt sich, diese Attribute auszurichten, um Verwirrung zu verringern. Um die Anforderungen des einmaligen Anmeldens mit Active Directory Verbunddiensten (AD FS) 2,0 zu erfüllen, müssen Sie sicherstellen, dass die UPNs in Azure Active Directory und Ihre AD DS übereinstimmen und einen gültigen Domänennamespace verwenden.
+Es empfiehlt sich, diese Attribute auszurichten, um Verwirrung zu verringern. Um die Anforderungen des einmaligen Anmeldens mit Active Directory-Verbunddienste (AD FS) 2.0 zu erfüllen, müssen Sie sicherstellen, dass die UPNs in Azure Active Directory und Ihre AD DS übereinstimmen und einen gültigen Domänennamespace verwenden.
   
 ## <a name="4-add-an-alternative-upn-suffix-to-ad-ds"></a>4. Hinzufügen eines alternativen UPN-Suffix zu AD DS
 
@@ -178,7 +182,7 @@ Weitere Informationen zum Hinzufügen eines alternativen UPN-Suffix zu Active Di
 
 Wenn Sie die Verzeichnissynchronisierung bereits eingerichtet haben, stimmt der UPN des Benutzers für Office 365 möglicherweise nicht mit dem AD DS UPN des Benutzers überein, der in Ihrem AD DS definiert ist. Das kann vorkommen, wenn einem Benutzer vor der Überprüfung der Domäne schon eine Lizenz zugewiesen wurde. Um dies zu beheben, verwenden Sie [PowerShell, um doppelten UPN zu beheben](https://go.microsoft.com/fwlink/p/?LinkId=396730) , um den UPN des Benutzers zu aktualisieren, um sicherzustellen, dass der Office 365 UPN mit dem Benutzernamen und der Domäne des Unternehmens übereinstimmt. Wenn Sie den UPN im AD DS aktualisieren und mit der Azure Active Directory-Identität synchronisieren möchten, müssen Sie die Lizenz des Benutzers in Office 365 entfernen, bevor Sie die Änderungen in AD DS vornehmen. 
   
-Weitere Informationen finden Sie unter Vorgehens [Weise Vorbereiten einer nicht routingfähigen Domäne (beispielsweise. Local Domain) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md).
+Weitere Informationen finden Sie unter [Vorgehensweise Vorbereiten einer nicht routingfähigen Domäne (beispielsweise. Local Domain) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
 
 ## <a name="next-steps"></a>Nächste Schritte
