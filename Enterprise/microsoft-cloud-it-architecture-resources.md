@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.'
-ms.openlocfilehash: f22c61ee1ed8dc205b5818d46e03300c21c5f22d
-ms.sourcegitcommit: 16a060c0732c6234bb2ebc037786a7c4872fe686
+ms.openlocfilehash: c8817e0a6f0eda0dafec56475a3fb3e6a5a8627f
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38308610"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702256"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -106,8 +106,7 @@ Was IT-Architekten über Netzwerke für Microsoft-Cloud-Dienste und -Plattformen
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für Microsoft-Cloud-Netzwerkmodell](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Artikel](https://technet.microsoft.com/library/mt733214.aspx) <br/>[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Dieses Modell enthält die folgenden Inhalte: <ul><li> **Weiterentwicklung Ihres Netzwerks für Cloud-Konnektivität** Cloudmigration ändert das Volumen und die Art des Datenverkehrs innerhalb und außerhalb eines Unternehmensnetzwerks. Sie hat ebenfalls Auswirkungen auf Ansätze zur Reduzierung von Sicherheitsrisiken.</li><li> **Gemeinsame Elemente der Microsoft Cloudkonnektivität** Die Integration Ihres Netzwerk in Microsoft-Cloud bietet optimalen Zugriff auf eine Vielzahl von Diensten. </li><li> **ExpressRoute für Microsoft Cloud-Konnektivität** ExpressRoute bietet eine private, dedizierte Netzwerkverbindung mit hohem Durchsatz mit der Microsoft Cloud. </li><li> **Entwerfen von Netzwerken für Microsoft SaaS (Office 365, Microsoft Intune und Dynamics CRM Online)** Für die Optimierung Ihres Netzwerks für Microsoft SaaS-Dienste ist eine sorgfältige Analyse von Internet-Edge, Ihrer Clientgeräte und IT-Standardvorgänge erforderlich. </li><li> **Entwerfen von Netzwerken für Azure PaaS** Für die Optimierung Ihrer Netzwerke für Azure PaaS-Apps ist eine ausreichende Internetbandbreite und möglicherweise die Verteilung des Netzwerkdatenverkehrs auf mehrere Websites oder Apps erforderlich. </li><li> **Entwerfen von Netzwerken für Azure IaaS** Durchlaufen Sie schrittweise den Entwurfsprozess zum Erstellen eines optimalen virtuellen Azure-Netzwerks (VNet) für das Hosting von serverbasierten IT-Arbeitslasten, einschließlich Subnetzen, Adressräumen, Routing, DNS, Lastenausgleich und der Verbindung zu Ihrem lokalen Netzwerk, anderen VNets und dem Internet. </li></ul><br/>  <br/>|
-   
+|[![Miniaturbild für Microsoft-Cloud-Netzwerkmodell](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)          ](https://www.microsoft.com/download/details.aspx?id=54425) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842073)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842074)           \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54425) <br/> | Dieses Modell enthält Folgendes: <ul><li> Weiterentwicklung Ihres Netzwerks für Cloudkonnektivität </li><li> Allgemeine Elemente der Microsoft-Cloudkonnektivität </li><li> ExpressRoute für Microsoft-Cloudkonnektivität </li><li> Entwerfen von Netzwerken für Microsoft SaaS, Azure PaaS und Azure IaaS </li></ul><br/>  <br/>|
    
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud für Enterprise-Architekten
@@ -116,7 +115,7 @@ Was IT-Architekten über Hybrid Cloud für Microsoft-Dienste und -Plattformen wi
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für das Microsoft-Cloud-Hybridmodell](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Artikel](https://technet.microsoft.com/library/mt750500.aspx) <br/>[Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Dieses Modell enthält die folgenden Inhalte: <ul><li> **Hybrid-Cloud-Übersicht** Cloud-Angebote von Microsoft (SaaS, Azure PaaS und Azure IaaS) und deren gemeinsame Elemente. </li><li> **Architektur von Microsoft Hybrid-Cloud-Szenarien** Architektonisches Diagramm der hybriden Cloud für die Cloud-Angebote von Microsoft, in dem die gemeinsamen Ebenen von lokaler Infrastruktur, Netzwerken und Identität gezeigt werden. </li><li> **Hybrid-Cloud-Szenarien für Microsoft SaaS (Office 365)** Architektur des SaaS-Hybrid-Szenarios und Beschreibungen der wichtigsten Hybridkonfigurationen für Skype for Business, SharePoint Server und Exchange Server. </li><li> **Szenarien für die hybride Cloud für Azure PaaS** Architektur des Azure PaaS Hybrid-Szenarios, Beschreibung einer Azure PaaS-Hybridanwendung anhand eines Beispiels und Beschreibung einer SQL Server 2016 Stretch-Datenbank </li><li> **Szenarien für die hybride Cloud für Azure IaaS** Architektur des Azure IaaS Hybrid-Szenarios und Beschreibung einer in Azure IaaS gehosteten Line of Business-(LOB-)Anwendung. </li></ul><br/>|
+|[![Miniaturbild für das Microsoft-Cloud-Hybridmodell](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)          ](https://www.microsoft.com/download/details.aspx?id=54424) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842082)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=842083)           \| [Weitere Sprachen](https://www.microsoft.com/download/details.aspx?id=54424) <br/> | Dieses Modell enthält Folgendes: <ul><li> Cloudangebote von Microsoft (SaaS, Azure PaaS und Azure IaaS) und deren gemeinsame Elemente </li><li> Hybrid Cloud-Architektur für Cloudangebote von Microsoft </li><li> Hybrid Cloud-Szenarien für Microsoft SaaS (Office 365), Azure PaaS und Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation
@@ -142,17 +141,8 @@ Diese Themenreihe illustriert mehrere Architekturansätze für Fusionen, Überna
 |:-----|:-----|
 |[![Miniaturbild für Poster der logischen Architektur von Teams](downloads/msft-tenant-to-tenant-migration-thumb.png)](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx)     |Dieses Modell enthält Folgendes: <ul><li>Eine Zuordnung von Geschäftsszenarien zu Architekturansätzen</li><li>Überlegungen zum Entwurf</li><li>Ablauf einer Einzelereignismigration</li><li>Ablauf einer stufenweisen Migration</li><li>Ablauf einer Mandantenverschiebung oder -aufteilung</li></ul>|
 
-<!--<a name="santa"></a>
-### The Santa cloud
-
-How Santa and his elves use Microsoft's cloud offerings to make their annual deliveries.
-  
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail image of The Santa Cloud poster](media/d47e1448-329b-41b7-9e51-cfc4ea5d0069.png)](https://www.microsoft.com/download/details.aspx?id=55039) <br/> [View online](https://onedrive.live.com/?authkey=%21ANT1PMgxEdniCyY&cid=8A8EC4F6612625E0&id=8A8EC4F6612625E0%21440&parId=8A8EC4F6612625E0%21218&o=OneUp) \| [PDF](https://go.microsoft.com/fwlink/p/?linkid=842088) <br/> |To determine who is naughty or nice and the presents to deliver on December 24, Santa Claus and his elfish IT department use Office 365, Azure, Dynamics 365, and Intune.  <br/>| -->
-   
 <a name="BKMK_o365solutions"></a>
-## Reihe: Microsoft 365 Enterprise-Lösungen
+## <a name="microsoft-365-enterprise-solution-series"></a>Reihe von Microsoft 365 Enterprise-Lösungen
 
 Die Reihe der Microsoft 365 Enterprise-Lösungen bietet Hilfestellung zum Implementieren von Microsoft 365-Funktionen, insbesondere bei technologieübergreifenden Funktionen.
 

@@ -3,7 +3,7 @@ title: Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/03/2019
+ms.date: 11/18/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: da69876f4b189d11e46ee6a01d87fecde03480ca
-ms.sourcegitcommit: 960ad339d16cd5112cf83460b123ae3993839310
+ms.openlocfilehash: 2dae3a5f37be071f38991c599ea1b0ba81fa6281
+ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "37388163"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702196"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
 
@@ -45,7 +45,7 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 |:-----|:-----|:-----|:-----|
 | **Zeile** | **Zweck** | **Ziel** | **Typ** |
 | 1  | [Importdienst](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) für PST- und Dateierfassung | Informationen zu weiteren Anforderungen finden Sie unter [Importdienst](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6). | Ungewöhnliches ausgehendes Szenario |
-| 2  | [Microsoft Support- und Wiederherstellungs-Assistent für Office 365](https://diagnostics.office.com/#/) – Überprüfen der Benutzeranmeldeinformationen für einmaliges Anmelden. Quelle: <br> ```o365diagnosticsbasic-eus.cloudapp.net (104.211.54.99)``` <br> ```o365diagnosticworker-eus.cloudapp.net (104.211.54.134)```  | Lokaler Sicherheitstokendienst | Eingehender Serverdatenverkehr |
+| 2  | [Microsoft Support- und Wiederherstellungs-Assistent für Office 365](https://diagnostics.office.com/#/) – Überprüfen der Benutzeranmeldeinformationen für einmaliges Anmelden.  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Ausgehender Serverdatenverkehr |
 | 3  | Azure AD Connect (mit SSO-Option) – WinRM und Remote PowerShell | STS-Kundenumgebung (AD FS Server und AD FS Proxy) \| TCP-Ports 80 und 443 | Eingehender Serverdatenverkehr |
 | 4  | STS wie AD FS-Proxyserver (nur Kunden mit Partnerverbund) | Kunden-STS (wie etwa AD FS Proxy) \| Ports TCP 443 oder TCP 49443 mit ClientTLS | Eingehender Serverdatenverkehr |
 | 5  | [Integration von Exchange Online Unified Messaging/SBC](https://technet.microsoft.com/library/jj673565.aspx) | Bidirektional zwischen lokalem Session Border Controller und *.um.outlook.com | Nur ausgehender Serverdatenverkehr |
