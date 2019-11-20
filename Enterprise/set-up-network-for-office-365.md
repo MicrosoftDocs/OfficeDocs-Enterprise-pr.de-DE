@@ -3,7 +3,7 @@ title: Einrichten Ihres Netzwerks für Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/01/2018
+ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,20 +17,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: Lesen Sie diese Artikel, um mehr über das Netzwerk von Office 365 zu erfahren.'
-ms.openlocfilehash: 958841733259bd01cd16a908cfac65998a3f3127
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 725c2470644206045a40816fad3643b83d6c8ea6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722684"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747414"
 ---
 # <a name="set-up-your-network-for-office-365"></a>Einrichten Ihres Netzwerks für Office 365
 
-**Zusammenfassung:** Lesen Sie diese Artikel, um mehr über das Netzwerk von Office 365 zu erfahren.
-  
-Ein wichtiger Bestandteil Ihres Office 365-Onboarding ist sicherzustellen, dass Ihr Netzwerk und Ihre Internetverbindungen für den optimalen Zugriff eingerichtet sind. Das Konfigurieren Ihres lokalen Netzwerks für den Zugriff auf eine global verbreitete Software-as-a-Service (SaaS) Cloud unterscheidet sich von einem herkömmlichen Netzwerk, das für den Datenverkehr in lokalen Datencentern optimiert ist. 
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
-Lesen Sie diese Artikel, um die wichtigsten Unterschiede zu verstehen und um Ihre Edge-Geräte, Clientcomputer und lokalen Netzwerk zu ändern, um die beste Benutzerleistung zu erreichen.
+Ein wichtiger Bestandteil Ihres Office 365-Onboarding ist sicherzustellen, dass Ihr Netzwerk und Ihre Internetverbindungen für den optimalen Zugriff eingerichtet sind. Das Konfigurieren Ihres lokalen Netzwerks für den Zugriff auf eine global verbreitete SaaS-Cloud (Software-as-a-Service) unterscheidet sich von einem herkömmlichen Netzwerk, das für den Datenverkehr in lokalen Rechenzentren optimiert ist, und einer zentralen Internetverbindung. 
+
+Lesen Sie diese Artikel, um die wichtigsten Unterschiede zu verstehen und um Ihre Edgegeräte, Clientcomputer und lokalen Netzwerk zu ändern, um die beste Leistung für Ihre lokalen Benutzer zu erreichen.
 
 ## <a name="how-office-365-networking-works"></a>Funktionsweise von Office 365-Netzwerk
 
@@ -50,7 +50,7 @@ Wenn Sie ein Lieferant von Netzwerkgeräten sind, treten Sie dem [Office 365-Net
 
 Endpunkte sind die Gruppe von Ziel-IP-Adressen, DNS-Domänennamen und URLs für Office 365-Datenverkehr über das Internet. 
 
-Zum Optimieren der Leistung von auf Office 365-Cloud basierten Diensten benötigen diese Endpunkte besondere Behandlung durch Ihre Clientbrowser und die Geräte in Ihrem Edge-Netzwerk. Diese Geräten umfassen Firewalls, SSL Unterbrechung und Überprüfung, Paketüberprüfungsgeräte und Datensysteme Schutz vor Datenverlust.
+Zum Optimieren der Leistung von auf Office 365-Cloud basierten Diensten benötigen einige Endpunkte besondere Behandlung durch Ihre Clientbrowser und die Geräte in Ihrem Umkreisnetzwerk. Diese Geräten umfassen Firewalls, SSL Unterbrechung und Überprüfung, Paketüberprüfungsgeräte und Datensysteme Schutz vor Datenverlust.
 
 Weitere Details finden Sie unter [ Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md).
 
