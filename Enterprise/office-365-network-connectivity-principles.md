@@ -14,14 +14,16 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 description: Bevor Sie mit der Planung Ihres Netzwerks für die Office 365-Netzwerkkonnektivität beginnen, ist es wichtig, dass Sie sich mit den Prinzipien von Verbindungen für die sichere Verwaltung von Office 365-Datenverkehr und optimaler Leistung vertraut machen. Dieser Artikel hilft Ihnen, die neuesten Hinweise für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen.
-ms.openlocfilehash: d403cd6245be21f8089e1234e7c769b93c2142cb
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
-ms.translationtype: HT
+ms.openlocfilehash: 5e590df37aa1660e4787ac86e556e2cb93feb1e4
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38031920"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747095"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Prinzipien der Office 365-Netzwerkkonnektivität
+
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Bevor Sie mit der Planung Ihres Netzwerks für die Office 365-Netzwerkkonnektivität beginnen, ist es wichtig, dass Sie sich mit den Prinzipien von Verbindungen für die sichere Verwaltung von Office 365-Datenverkehr und optimaler Leistung vertraut machen. Dieser Artikel hilft Ihnen, die neuesten Hinweise für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen.
   
@@ -237,7 +239,7 @@ Sie können die Optimierung als inkrementellen Vorgang angehen und die jeweilige
 |**Optimierungsmethode**|**Beschreibung**|**Auswirkung**|
 |:-----|:-----|:-----|
 |Lokale DNS-Auflösung und Internetausgang  <br/> |Stellen Sie lokale DNS-Server an jedem Standort bereit und stellen Sie sicher, dass Office 365-Verbindungen so nah wie möglich am Standort des Benutzers ins Internet geroutet werden.  <br/> | Minimieren von Latenzen  <br/>  Zuverlässige Konnektivität zum nächstgelegenen Office 365-Einstiegspunkt verbessern  <br/> |
-|Regionale Ausgangspunkte hinzufügen  <br/> |Wenn Ihr Unternehmensnetzwerk mehrere Standorte umfasst, aber nur einen Ausgangspunkt aufweist, fügen Sie regionale Ausgangspunkte hinzu, damit Benutzer eine Verbindung zum nächstgelegenen Office 365-Einstiegspunkt herstellen können.  <br/> | Latenzen minimieren  <br/>  Zuverlässige Konnektivität zum nächstgelegenen Office 365-Einstiegspunkt verbessern  <br/> |
+|Regionale Ausgangspunkte hinzufügen  <br/> |Wenn Ihr Unternehmensnetzwerk mehrere Standorte umfasst, aber nur einen Ausgangspunkt aufweist, fügen Sie regionale Ausgangspunkte hinzu, damit Benutzer eine Verbindung zum nächstgelegenen Office 365-Einstiegspunkt herstellen können.  <br/> | Minimieren von Latenzen  <br/>  Zuverlässige Konnektivität zum nächstgelegenen Office 365-Einstiegspunkt verbessern  <br/> |
 |Proxys und Überprüfungsgeräte umgehen  <br/> |Konfigurieren Sie Browser mit PAC-Dateien, die Office 365-Anforderungen direkt an Ausgangspunkte senden.  <br/> Konfigurieren Sie Edge-Router und Firewalls zum Zulassen von Office 365-Datenverkehr ohne Überprüfung.  <br/> | Latenzen minimieren  <br/>  Auslastung von Netzwerkgeräten reduzieren  <br/> |
 |Direkte Verbindung für VPN-Benutzer aktivieren  <br/> |Aktivieren Sie für VPN-Benutzer Office 365-Verbindungen, um eine direkte Verbindung vom Netzwerk des Benutzers aus anstatt über den VPN-Tunnel herzustellen, indem Sie getrennte Tunnel implementieren.  <br/> | Latenzen minimieren  <br/>  Zuverlässige Konnektivität zum nächstgelegenen Office 365-Einstiegspunkt verbessern  <br/> |
 |Migrieren vom herkömmlichen WAN zu SD-WAN  <br/> |SD-WANs (Software Defined Wide Area Networks) vereinfachen die WAN-Verwaltung und verbessern die Leistung, da herkömmliche WAN-Router durch virtuelle Geräte ersetzt werden, ähnlich wie bei der Virtualisierung von Computerressourcen mit virtuellen Maschinen (VMs).  <br/> | Verbessern der Leistung und Verwaltbarkeit von WAN-Datenverkehr  <br/>  Auslastung von Netzwerkgeräten reduzieren  <br/> |

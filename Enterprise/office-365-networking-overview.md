@@ -1,5 +1,5 @@
 ---
-title: Office 365 Netzwerkkonnektivität (Übersicht)
+title: Office 365 – Überblick über die Netzwerkkonnektivität
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,14 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Erläutert, warum die Netzwerkoptimierung für SaaS-Dienste wichtig ist, das Ziel Office 365 Netzwerke und wie Saas unterschiedliche Netzwerke aus anderen Arbeitslasten benötigt.
-ms.openlocfilehash: f26a7c245b0a6258717e8917628caeaef250e378
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031890"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747707"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 Netzwerkkonnektivität (Übersicht)
+
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Office 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe verschiedener Mikro Dienste und Anwendungen bereitstellt. Client Komponenten von Office 365 wie Outlook, Word und PowerPoint werden auf Benutzercomputern ausgeführt und stellen eine Verbindung mit anderen Komponenten von Office 365 her, die in Microsoft-Rechenzentren ausgeführt werden. Der wichtigste Faktor, der die Qualität der Office 365 Endbenutzererfahrung bestimmt, ist die Zuverlässigkeit von Netzwerken und die niedrige Latenz zwischen Office 365-Clients und Office 365-Dienst-Front-Doors.
 
@@ -31,7 +33,7 @@ In diesem Artikel erfahren Sie mehr über die Ziele Office 365 Netzwerks und war
 
 Das Endziel von Office 365 Vernetzung besteht darin, die Endbenutzerfreundlichkeit zu optimieren, indem der am wenigsten beschränkende Zugriff zwischen Clients und den nächstgelegenen Office 365 Endpunkten ermöglicht wird. Die Qualität der Endbenutzererfahrung steht in direktem Zusammenhang mit der Leistung und Reaktionsfähigkeit der Anwendung, die der Benutzer verwendet. Beispielsweise stützt sich Microsoft Teams auf eine geringe Wartezeit, sodass Benutzer Anrufe, Konferenzen und gemeinsame Bildschirm zusammenarbeiten glitch-frei sind und Outlook eine große Netzwerkkonnektivität für sofort Suchfeatures verwendet, die serverseitige Indizierung und AI nutzen. Funktionen.
 
-Das primäre Ziel im Netzwerkentwurf sollte die Minimierung der Wartezeit sein, indem die Roundtripzeit (Round-Trip Time, RTT) von Clientcomputern auf das globale Microsoft-Netzwerk, das öffentliche Netzwerkbackbone von Microsoft, das alle Microsoft-Rechenzentren mit niedriger Latenz verbindet, verringert wird. , hoch verfügbare Cloud-Anwendungs Einstiegspunkte, die auf der ganzen Welt verteilt sind. Weitere Informationen zum globalen Netzwerk von Microsoft finden Sie unter [How Microsoft baut sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+Das primäre Ziel im Netzwerkentwurf sollte die Minimierung der Wartezeit sein, indem die Roundtripzeit (Round-Trip Time, RTT) von Clientcomputern auf das globale Microsoft-Netzwerk, das öffentliche Netzwerkbackbone von Microsoft, das alle Microsoft-Rechenzentren mit niedriger Latenz verbindet, verringert wird. , hoch verfügbare Cloud-Anwendungs Einstiegspunkte, die auf der ganzen Welt verteilt sind. Erfahren Sie mehr über das globale Microsoft-Netzwerk unter [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Die Optimierung Office 365 Netzwerkleistung muss nicht kompliziert sein. Sie können die bestmögliche Leistung erzielen, indem Sie ein paar wichtige Grundsätze befolgen:
 
@@ -57,7 +59,7 @@ Wir machen es einfacher, Office 365 Netzwerkdatenverkehr zu identifizieren und e
 
 ## <a name="securing-office-365-connections"></a>Sichern von Office 365 Verbindungen
 
-Das Ziel der traditionellen Netzwerksicherheit besteht darin, den Umkreis des Unternehmensnetzwerks vor Eindringversuchen und böswilligen Ausnutzungen zu verhärten. Die meisten Unternehmensnetzwerke erzwingen die Netzwerksicherheit für den Internet Datenverkehr mithilfe von Technologien wie Proxyservern, Firewalls, SSL-Unterbrechung und-Prüfung, Deep Packet Inspection und Verhinderung von Datenverlust. Diese Technologien bieten eine wichtige Risikominderung für generische Internet Anforderungen, können jedoch die Leistung, die Skalierbarkeit und die Qualität der Endbenutzererfahrung drastisch reduzieren, wenn Sie auf Office 365 Endpunkte angewendet werden.
+Das Ziel der herkömmlichen Netzwerksicherheit ist die Absicherung des Unternehmensnetzwerkperimeters gegen Eindringversuche und böswillige Angriffe. Die meisten Unternehmensnetzwerke erzwingen die Netzwerksicherheit für den Internet Datenverkehr mithilfe von Technologien wie Proxyservern, Firewalls, SSL-Unterbrechung und-Prüfung, Deep Packet Inspection und Verhinderung von Datenverlust. Diese Technologien bieten eine wichtige Risikominderung für generische Internet Anforderungen, können jedoch die Leistung, die Skalierbarkeit und die Qualität der Endbenutzererfahrung drastisch reduzieren, wenn Sie auf Office 365 Endpunkte angewendet werden.
 
 Office 365 hilft, die Anforderungen Ihrer Organisation an Inhaltssicherheit und Daten Nutzungs Konformität mit integrierten Sicherheits-und Steuerungsfeatures zu erfüllen, die speziell für Office 365 Features und Arbeitslasten entwickelt wurden. Weitere Informationen zur Office 365 Sicherheit und Compliance finden Sie in der [Office 365 Security Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap). Weitere Informationen zu den Empfehlungen und der Unterstützung von Microsoft für erweiterte Netzwerklösungen, mit denen die Verarbeitung auf Office 365 Datenverkehr auf Erweiterter Ebene ausgeführt wird, finden Sie unter [Verwenden von Drittanbieter-Netzwerkgeräten oder Lösungen für Office 365 Datenverkehr](https://support.microsoft.com/help/2690045).
 
@@ -71,18 +73,18 @@ Bestimmte allgemeine Leistungsprobleme werden erstellt, wenn Office 365 Datenver
 - Egressing-Verbindungen von einem zentralen Standort aus besiegen die dynamischen Routingfunktionen des Office 365 globalen Netzwerks, indem Wartezeit und Roundtrip-Zeit hinzugefügt werden.
 - Das Entschlüsseln von SSL-gesichertem Office 365 Netzwerkdatenverkehr und erneutes Verschlüsseln kann zu Protokollfehlern führen und ein Sicherheitsrisiko aufweisen.
 
-Wenn Sie den Netzwerkpfad auf Office 365 Einstiegspunkte kürzen, indem Sie den Client Datenverkehr so nah wie möglich an ihren geografischen Standort abgeben lassen, kann dies die Konnektivitäts Leistung und die Endbenutzererfahrung in Office 365 verbessern. Sie kann auch dazu beitragen, die Auswirkungen künftiger Änderungen an der Netzwerkarchitektur auf Office 365 Leistung und Zuverlässigkeit zu reduzieren. Das optimale Verbindungsmodell besteht darin, den Netzwerk Ausstieg immer am Standort des Benutzers bereitzustellen, unabhängig davon, ob sich dies im Unternehmensnetzwerk oder an Remotestandorten wie Home, Hotels, Cafés und Flughäfen befindet. Allgemeiner Internet Datenverkehr und WAN-basierter Unternehmensnetzwerk Datenverkehr werden separat weitergeleitet und verwenden nicht das lokale Direct-Ausstieg-Modell. Dieses lokale direkt Ausstieg-Modell wird im Diagramm unten dargestellt.
+Wenn Sie den Netzwerkpfad auf Office 365 Einstiegspunkte kürzen, indem Sie den Client Datenverkehr so nah wie möglich an ihren geografischen Standort abgeben lassen, kann dies die Konnektivitäts Leistung und die Endbenutzererfahrung in Office 365 verbessern. Sie kann auch dazu beitragen, die Auswirkungen künftiger Änderungen an der Netzwerkarchitektur auf Office 365 Leistung und Zuverlässigkeit zu reduzieren. Das optimale Verbindungsmodell besteht darin, den Netzwerk Ausstieg immer am Standort des Benutzers bereitzustellen, unabhängig davon, ob sich dies im Unternehmensnetzwerk oder an Remotestandorten wie Home, Hotels, Cafés und Flughäfen befindet. Allgemeiner Internet Datenverkehr und WAN-basierter Unternehmensnetzwerk Datenverkehr werden separat weitergeleitet und verwenden nicht das lokale Direct-Ausstieg-Modell. Dieses Modell mit lokalem direkten Ausgang ist in der nachstehenden Abbildung dargestellt.
 
-![Lokale Ausstieg-Netzwerkarchitektur](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
+![Netzwerkarchitektur mit lokalem Ausgang](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
 
 Die lokale Ausgangsarchitektur hat folgende Vorteile für Office 365 Netzwerkdatenverkehr über das herkömmliche Modell:
   
-- Bietet optimale Office 365 Leistung durch Optimierung der Routenlänge. Endbenutzer Verbindungen werden dynamisch an den nächstgelegenen Office 365 Einstiegspunkt über die _Front-Door_ -Infrastruktur des Microsoft Global-Netzwerks weitergeleitet, und der Datenverkehr wird dann intern an Daten-und Dienstendpunkte über die hoch Verfügbarkeits-Dark-Fiber von Microsoft mit hoher Verfügbarkeit weitergeleitet.
+- Bietet optimale Office 365-Leistung durch optimale Routenlänge. Endbenutzer Verbindungen werden dynamisch an den nächstgelegenen Office 365 Einstiegspunkt über die _Front-Door_ -Infrastruktur des Microsoft Global-Netzwerks weitergeleitet, und der Datenverkehr wird dann intern an Daten-und Dienstendpunkte über die hoch Verfügbarkeits-Dark-Fiber von Microsoft mit hoher Verfügbarkeit weitergeleitet.
 - Reduziert die Auslastung der Unternehmensnetzwerk Infrastruktur, indem lokale Ausgänge für Office 365 Datenverkehr zugelassen werden und Proxys und Datenverkehrs Kontrollgeräte umgangen werden.
 - Sichert Verbindungen an beiden Enden, indem Client-Endpunktsicherheit und Cloud-Sicherheitsfunktionen genutzt werden, wodurch die Anwendung redundanter Netzwerksicherheitstechnologien vermieden wird.
 
 > [!NOTE]
-> Die _verteilte Dienst-Front-Door_ -Infrastruktur ist die hoch verfügbare und skalierbare Netzwerk Kante des Microsoft Global Netzwerks mit geografisch verteilten Standorten. Sie beendet Endbenutzer Verbindungen und leitet Sie effizient innerhalb des globalen Netzwerks von Microsoft weiter. Weitere Informationen zum globalen Netzwerk von Microsoft finden Sie unter [How Microsoft baut sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+> Die _verteilte Dienst-Front-Door_ -Infrastruktur ist die hoch verfügbare und skalierbare Netzwerk Kante des Microsoft Global Netzwerks mit geografisch verteilten Standorten. Sie beendet Endbenutzer Verbindungen und leitet Sie effizient innerhalb des globalen Netzwerks von Microsoft weiter. Erfahren Sie mehr über das globale Microsoft-Netzwerk unter [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Weitere Informationen zum Verständnis und zur Anwendung Office 365 Prinzipien der Netzwerkkonnektivität finden Sie unter [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
 
@@ -112,8 +114,8 @@ Die Optimierung Office 365 Netzwerkleistung ist wirklich auf das Entfernen unnö
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 
-[Office 365 Netzwerk-Onboarding-Tool](https://aka.ms/netonboard)
+[Office 365 Network Onboarding Tool](https://aka.ms/netonboard)
 
 [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
-[Blog "Office 365 Networking"](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
+[Office 365-Networking-Blog](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)

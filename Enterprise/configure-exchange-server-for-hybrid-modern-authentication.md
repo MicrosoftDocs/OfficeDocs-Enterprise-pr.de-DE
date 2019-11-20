@@ -14,14 +14,16 @@ ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
 ms.collection:
 - M365-security-compliance
 description: Die hybride moderne Authentifizierung (HMA) ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
-ms.openlocfilehash: 69a806fc1026832492f7bab96982509a83a82329
-ms.sourcegitcommit: c8acfa57a22d7d055500f2e8b84a9ef252c70e82
+ms.openlocfilehash: 44061a8b75a07283c36d02812488441d40f9c9c3
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "36493312"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746218"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
+
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Die hybride moderne Authentifizierung (HMA) ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
   
@@ -43,7 +45,7 @@ HMA aktivieren bedeutet:
   
 1. Sicherstellen, dass Sie die Voraussetzungen erfüllen, bevor Sie beginnen.
     
-1. Da viele **voraus** setzungen sowohl für Skype for Business als auch für Exchange, die [hybride moderne Authentifizierungs Übersicht und die Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern](hybrid-modern-auth-overview.md)gemeinsam sind. Tun Sie dies, bevor Sie einen der Schritte in diesem Artikel beginnen.
+1. Da viele **Voraussetzungen** sowohl für Skype for Business als auch für Exchange, die [hybride moderne Authentifizierungs Übersicht und die Voraussetzungen für die Verwendung mit lokalen Skype for Business-und Exchange-Servern](hybrid-modern-auth-overview.md)gemeinsam sind. Tun Sie dies, bevor Sie einen der Schritte in diesem Artikel beginnen.
     
 2. Hinzufügen von lokalen Webdienst-URLs als Dienstprinzipalnamen (Service Principal Names, SPNs) in Azure AD.
     
@@ -84,9 +86,9 @@ Stellen Sie sicher, dass die URLs, mit denen Clients eine Verbindung herstellen 
 Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
 ```
 
-Notieren Sie sich (und Screenshot für einen späteren Vergleich) die Ausgabe dieses Befehls, die eine https:// *autodiscover.yourdomain.com* -und https://- *Mail.yourdomain.com* -URL enthalten sollte, aber meistens aus SPNs besteht, die mit beginnen 00000002-0000-0ff1-ce00-000000000000/. Wenn es https://-URLs von Ihrem Lokal gibt, die fehlen, müssen Sie diese spezifischen Einträge zu dieser Liste hinzufügen. 
+Notieren Sie sich (und Screenshot für einen späteren Vergleich) die Ausgabe dieses Befehls, die eine https:// *autodiscover.yourdomain.com* -und https://- *Mail.yourdomain.com* -URL enthalten sollte, aber meistens aus SPNs besteht, die mit 00000002-0000-0ff1-ce00-000000000000/beginnen. Wenn es https://-URLs von Ihrem Lokal gibt, die fehlen, müssen Sie diese spezifischen Einträge zu dieser Liste hinzufügen. 
   
-3. Wenn Ihre internen und externen MAPI/http-, EWS-, ActiveSync-, OAB-und autodiscover-Datensätze in dieser Liste nicht angezeigt werden, müssen Sie Sie mithilfe des folgenden Befehls`mail.corp.contoso.com`hinzufügen (`owa.contoso.com`die Beispiel-URLs sind ' ' und ' ', aber Sie **ersetzen die Beispiel-URLs durch eigene** ) : <br/>
+3. Wenn Ihre internen und externen MAPI/http-, EWS-, ActiveSync-, OAB-und autodiscover-Datensätze in dieser Liste nicht angezeigt werden, müssen Sie Sie mithilfe des folgenden Befehls`mail.corp.contoso.com`hinzufügen (`owa.contoso.com`die Beispiel-URLs sind "und", aber Sie **ersetzen die Beispiel-URLs durch eigene** ): <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")

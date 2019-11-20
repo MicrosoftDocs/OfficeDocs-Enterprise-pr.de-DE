@@ -15,20 +15,18 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um SharePoint Online Websitegruppen zu verwalten.'
-ms.openlocfilehash: eedbfbecea0f488b96cfe7a87a2b4851352f4fac
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077984"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748535"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Verwalten von SharePoint Online-Websitegruppen mit Office 365 PowerShell
 
- **Zusammenfassung:** Verwenden Sie Office 365 PowerShell, um SharePoint Online Websitegruppen zu verwalten.
-  
 Obwohl Sie das Microsoft 365 Admin Center verwenden können, können Sie auch Office 365 PowerShell verwenden, um Ihre SharePoint Online Websitegruppen zu verwalten.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Für die Verfahren in diesem Artikel müssen Sie eine Verbindung mit SharePoint Online herstellen. Weitere Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
@@ -46,7 +44,7 @@ Wiederholen Sie dieses Verfahren für die nächste gewünschte Website.
 
 Verwenden Sie zum Abrufen einer Liste mit Gruppen mithilfe von Office 365 PowerShell den folgenden Befehlssatz:
 
-```
+```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
 $x = Get-SPOSiteGroup -Site $siteURL
 foreach ($y in $x)
@@ -62,7 +60,7 @@ Es gibt zwei Möglichkeiten zum Ausführen dieses Befehlssatzes in der Eingabeau
 - Kopieren Sie die Befehle in Notepad (oder einen anderen Text-Editor), ändern Sie den Wert der **$SiteUrl** -Variablen, wählen Sie die Befehle aus, und fügen Sie Sie dann in die Eingabeaufforderung der SharePoint Online Verwaltungsshell ein. Wenn Sie dies tun, wird PowerShell an einer **>>** Eingabeaufforderung angehalten. Drücken Sie die EINGABETASTE, um den **Foreach**-Befehl auszuführen.<br/>
 - Kopieren Sie die Befehle in Editor (oder einen anderen Text-Editor), ändern Sie den Wert der **$siteURL**Variable, und speichern Sie dann diese Textdatei mit einem Namen und der Erweiterung „.ps1“ in einem geeigneten Ordner. Führen Sie als nächstes das Skript über die Eingabeaufforderung der SharePoint Online Management Shell aus, indem Sie den Pfad und den Dateinamen angeben. Nachfolgend sehen Sie einen Beispielbefehl:
 
-```
+```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
 ```
 
@@ -74,7 +72,7 @@ Dies sind alle Gruppen, die für die Website `https://litwareinc.sharepoint.com/
 
 Ein weiteres Beispiel ist ein Befehlssatz, der die Gruppen und alle Gruppenmitgliedschaften für alle Ihre SharePoint Online Websites auflistet.
 
-```
+```powershell
 $x = Get-SPOSite
 foreach ($y in $x)
     {

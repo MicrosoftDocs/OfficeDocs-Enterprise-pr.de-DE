@@ -19,16 +19,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Erfahren Sie, wie Sie Office 365 in Ihre vorhandenen Verzeichnisdienste integrieren.
-ms.openlocfilehash: f6e29207dfb1175df8af480942484ece39e249b7
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
-ms.translationtype: HT
+ms.openlocfilehash: 36bbda95e96223c465d5bf5a2ec93e5514a38a17
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428119"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747161"
 ---
 # <a name="office-365-integration-with-on-premises-environments"></a>Office 365-Integration in lokale Umgebungen
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Sie können Office 365 in Ihre vorhandenen Verzeichnisdienste und eine lokale Installation für Exchange Server, Skype for Business Server 2015 oder SharePoint Server integrieren.
   

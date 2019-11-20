@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
-ms.openlocfilehash: 6f212e2a7531e1e635c8a5426338abbc2bc3712c
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030499"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745718"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Bewerten der Office 365-Netzwerkkonnektivität
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
   
@@ -107,7 +107,7 @@ Hier ist ein kurzer Link, den Sie verwenden können, um zurückzukehren: [ https
   
 ## <a name="see-also"></a>Siehe auch
 
-[Office 365 Netzwerkkonnektivität (Übersicht)](office-365-networking-overview.md)
+[Office 365 – Überblick über die Netzwerkkonnektivität](office-365-networking-overview.md)
 
 [Prinzipien von Office 365-Netzwerkverbindungen](https://aka.ms/o365networkingprinciples)
 

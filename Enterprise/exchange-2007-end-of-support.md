@@ -11,14 +11,16 @@ localization_priority: Normal
 ms.collection: Ent_O365
 ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 description: Am 11. April 2017 Exchange Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2007 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
-ms.openlocfilehash: df870d05c6f5139c4274c1654cd3b4304103a98e
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fbc2c4d0de03f27020cedf5458d7e94f880715dd
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028849"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38746228"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Ende der Unterstützung für Exchange 2007 – Roadmap
+
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Am **11. April 2017**Exchange Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2007 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen. 
   

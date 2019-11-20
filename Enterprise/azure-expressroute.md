@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Erfahren Sie, wie Azure Express Route mit Office 365 verwendet wird und wie das Netzwerk Implementierungsprojekt geplant wird, das erforderlich ist, wenn Sie Azure Express Route für die Verwendung mit Office 365 bereitstellen.
-ms.openlocfilehash: 360cae39010f35b5a921ec95f6e8ed1d02afb808
-ms.sourcegitcommit: ecfa362182f906befa885bf5f0094528ff570779
+ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37435409"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38745738"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Erfahren Sie, wie Azure Express Route mit Office 365 verwendet wird und wie das Netzwerk Implementierungsprojekt geplant wird, das erforderlich ist, wenn Sie Azure Express Route für die Verwendung mit Office 365 bereitstellen. Infrastruktur-und Plattformdienste, die in Azure betrieben werden, profitieren häufig von der Behebung von Netzwerkarchitektur und Leistungsüberlegungen. In diesen Fällen wird Express Route für Azure empfohlen. Software als Service Angebote wie Office 365 und Dynamics 365 wurden für den sicheren und zuverlässigen Zugriff über das Internet entwickelt. Sie können sich über Internet Leistung und Sicherheit informieren, und wann Sie Azure Express Route für Office 365 im Artikel [bewerten von Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)in Frage stellen sollten.
 
@@ -70,7 +70,7 @@ Die Dienste, die für Office 365 nicht in Express Route enthalten sind, sind Off
 
 ## <a name="implementing-expressroute-for-office-365"></a>Implementieren von ExpressRoute für Office 365
 
-Die Implementierung von Express Route erfordert die Einbindung von Netzwerk-und Anwendungsbesitzern und erfordert eine sorgfältige Planung zur Ermittlung der neuen [Netzwerk Weiterleitungs Architektur](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), Bandbreitenanforderungen, in denen die Sicherheit implementiert wird, hohe Verfügbarkeit, Und so weiter. Zur Implementierung von Express Route müssen Sie Folgendes tun:
+Die Implementierung von Express Route erfordert die Einbindung von Netzwerk-und Anwendungsbesitzern und erfordert eine sorgfältige Planung, um die neue [Netzwerk Weiterleitungs Architektur](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), die Bandbreitenanforderungen, die Implementierung der Sicherheit, die hohe Verfügbarkeit usw. zu ermitteln. Zur Implementierung von Express Route müssen Sie Folgendes tun:
 
 1. Vollständiges Verständnis der Anforderungen, die Express Route in ihrer Planung für Office 365 Konnektivität erfüllt. Erfahren Sie, welche Anwendungen das Internet oder Express Route verwenden, und planen Sie Ihre Netzwerkkapazität, Sicherheit und hohe Verfügbarkeit im Zusammenhang mit der Verwendung von Internet und Express Route für Office 365 Datenverkehr vollständig.
 

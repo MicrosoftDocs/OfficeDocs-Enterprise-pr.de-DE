@@ -16,16 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Zusammenfassung: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.'
-ms.openlocfilehash: 066d2b07c10009ced1935086ee8d80720bd397ca
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428102"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747068"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
   
 **Zusammenfassung**: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.
 
@@ -68,7 +68,7 @@ Wir bieten eine softwarebasierte NLB-Lösung, die in Windows Server integriert i
   
 ## <a name="firewalls-and-proxies"></a>Firewalls und Proxys
 
-Weitere Informationen zum Konfigurieren von Firewalls und Proxys für die Verbindung mit Office 365 finden Sie unter [Managing Office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Bewertung Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)und [Office 365 Endpunkten](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) , um mehr über Geräte und Schaltkreise zu erfahren. Auswahl.
+Weitere Informationen zum Konfigurieren von Firewalls und Proxys für die Verbindung mit Office 365 finden Sie unter [Managing Office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Bewertung Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)und [Office 365 Endpunkte](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) , um mehr über Geräte und schaltkreisauswahl zu erfahren.
   
 ## <a name="see-also"></a>Siehe auch
 

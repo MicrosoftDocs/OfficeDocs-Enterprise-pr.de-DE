@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Office 365, Active Directory-Domänendienste Bereinigung und dem Azure Active Directory Connect-Tool.
-ms.openlocfilehash: fda9750ae6038f062938f3c8ad92fe1859c2d7e1
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428114"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747085"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Je nach geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Office 365 übernehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Office 365 Abonnements synchronisiert.
 
@@ -44,19 +44,19 @@ Bei der Verwendung des Hybriden Identitätsmodells gibt es zwei Arten von Authen
 
 - Verbundauthentifizierung
 
-  Azure AD umleitet den Clientcomputer, der die Authentifizierung anfordert, um einen anderen Identitätsanbieter zu kontaktieren.
+  Azure AD leitet den Clientcomputer um, der die Authentifizierung anfordert, um einen anderen Identitätsanbieter zu kontaktieren.
 
 ### <a name="managed-authentication"></a>Verwaltete Authentifizierung
 
 Es gibt zwei Arten der verwalteten Authentifizierung:
 
-- Kennworthash Synchronisierung (PHS)
+- Kennworthashsynchronisierung (Password hash synchronization, PHS)
 
-  Azure AD führt die Authentifizierung selbst aus.
+  Azure AD führt die Authentifizierung selbst durch.
 
 - Passthrough-Authentifizierung (PTA)
 
-  Azure Ad die Authentifizierung AD DS durchführen.
+  Azure AD lässt AD DS die Authentifizierung durchführen.
 
 
 #### <a name="password-hash-synchronization"></a>Kennworthashsynchronisierung
@@ -105,7 +105,7 @@ Die Verzeichnisbereinigung sollte sich auf die folgenden Aufgaben konzentrieren:
 
 - Entfernen Sie doppelte **proxyAddress** -und **userPrincipalName** -Attribute.
 - Aktualisieren Sie leere und ungültige **userPrincipalName** -Attribute mit gültigen **userPrincipalName** -Attributen.
-- Entfernen von ungültigen und fragwürdigen Zeichen im **angegebenen**Namen, Nachnamen ( **SN** ), **sAMAccountName**, **DisplayName**, **Mail**, **proxyAddresses**, **mailNickname**und **userPrincipalName** Attribute. Ausführliche Informationen zum Vorbereiten von Attributen finden Sie unter [Liste der Attribute, die mit dem Azure Active Directory Sync-Tool synchronisiert werden](https://go.microsoft.com/fwlink/p/?LinkId=396719).
+- Entfernen Sie ungültige und fragwürdige Zeichen in den Attributen **givenName**, Name ( **SN** ), **sAMAccountName**, **DisplayName**, **Mail**, **proxyAddresses**, **mailNickname**und **userPrincipalName** . Ausführliche Informationen zum Vorbereiten von Attributen finden Sie unter [Liste der Attribute, die mit dem Azure Active Directory Sync-Tool synchronisiert werden](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
     > Dabei handelt es sich um dieselben Attribute, die Azure AD Connect synchronisiert. 

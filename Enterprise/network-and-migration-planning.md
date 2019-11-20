@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
-ms.openlocfilehash: b2f9cdd3514b8d272bc070108f0dbed94d350f94
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
+ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428142"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747785"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
+*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
 Dieser Artikel enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
   
@@ -73,7 +73,7 @@ Lesen Sie die folgenden bewährten Methoden, um weitere Informationen zum Verbes
   
 1. Möchten Sie sofort mit der Unterstützung Ihrer Benutzer beginnen? Tipps zur Verwendung von Office 365, einschließlich SharePoint Online, Exchange Online und lync Online, wenn Ihr Netzwerk einfach nicht zusammenarbeitet, finden Sie unter [bewährte Methoden für die Verwendung von Office 365 in einem langsamen Netzwerk](https://support.office.com/article/fd16c8d2-4799-4c39-8fd7-045f06640166) . Dieser Artikel enthält Links zu Lasten von Inhalten auf TechNet und Support.Office.com zur Optimierung Ihrer Office 365 Erfahrung und enthält Informationen zu einfachen Möglichkeiten zum Anpassen Ihrer Webseiten und zum Festlegen ihrer Internet Explorer Einstellungen für die beste Office 365 Erfahrung. 
     
-2. Lesen Sie [Office 365 Grundsätze der Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) , um die Verbindungs Prinzipien für die sichere Verwaltung Office 365 Datenverkehrs und die bestmögliche Leistung zu verstehen. Dieser Artikel hilft Ihnen, die neuesten Anleitungen für die sichere Optimierung Office 365 Netzwerkkonnektivität zu verstehen. 
+2. Lesen Sie [Office 365 Grundsätze der Netzwerkkonnektivität](https://aka.ms/o365networkingprinciples) , um die Verbindungs Prinzipien für die sichere Verwaltung Office 365 Datenverkehrs und die bestmögliche Leistung zu verstehen. Dieser Artikel hilft Ihnen, die neuesten Hinweise für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen. 
     
 3. Verbessern der e-Mail-Migrationsleistung durch sorgfältiges Verwalten des Zeitplans für Windows-Updates Sie können Ihre Clientcomputer in Batches aktualisieren und sicherstellen, dass alle Clientcomputer vor der Migration zu Office 365 aktualisiert werden, um die Verwendung der Netzwerkbandbreite zu regulieren. Weitere Informationen finden Sie unter [Manuelles Aktualisieren und Konfigurieren von Desktops für Office 365 für die neuesten Updates](https://support.microsoft.com/gp/office-2013-365-update).
     
