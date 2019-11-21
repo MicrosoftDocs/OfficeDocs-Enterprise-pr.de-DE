@@ -1,9 +1,9 @@
 ---
 title: Anfordern der Datenverschiebung
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/25/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung übermitteln, damit die Kundendaten ihrer teilnehmenden Office 365 Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: 9299f7f9f22f3036efcafd6b2a70bf3b25a3cc67
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031590"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756594"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -32,7 +32,7 @@ Vorhandene Office 365 Kunden sind berechtigt, eine frühe Migration für die wic
 |:-----|:-----|:-----|
 |Japan  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
 |Australien, Neuseeland, Fidschi  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
-|Indien  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
+|India  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
 |Kanada  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
 |Vereinigtes Königreich  <br/> |15. März 2017  <br/> |15. September 2017  <br/> |
 |Südkorea  <br/> |1. Mai 2017  <br/> |31. Oktober 2017  <br/> |
@@ -72,7 +72,7 @@ Es kann bis zu 24 Monate dauern, bis der Anforderungs Termin für Ihr Land abges
   
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft Teams unterstützt noch keine Migration von Kundeninhalten im Rest von in-Region-in-Länder-Rechenzentren, in denen Data Residency für Microsoft Teams verfügbar ist.  Daher werden nur neue Kunden alle Daten innerhalb des Landes in den neuen Regionen gespeichert, in denen Microsoft Teams den Daten Wohnsitz unterstützt.  Erfahren Sie mehr über Office 365 Daten Wohnsitz für Ihren Unternehmensstandort unter [wo befinden sich Ihre Daten?](https://products.office.com/where-is-your-data-located)   
+Migrationsunterstützung für Microsoft Teams Chat-und Kanal Nachrichtendaten werden dem Office 365 lokalen Migrationsprogramm hinzugefügt.  Wir planen, die Programm Registrierung im Januar 2020 für alle berechtigten Kunden zu öffnen, einschließlich Kunden, die sich zuvor für Exchange Online und SharePoint Online/OneDrive für Unternehmen Migration entschieden haben.  Das Opt-in-Steuerelement wird im Microsoft 365 Admin Center verfügbar gemacht und eine Benachrichtigung im Nachrichten Center an alle berechtigten Kunden gesendet.   
 
 ## <a name="optional-actions-before-you-request-a-move"></a>Optionale Aktionen vor dem Anfordern einer Migration
 

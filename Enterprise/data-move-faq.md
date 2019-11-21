@@ -1,9 +1,9 @@
 ---
 title: Allgemeine häufig gestellte Fragen zur Datenverschiebung
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Kern Daten in ein neues Rechenzentrum Geo.
-ms.openlocfilehash: 9e391a1b43ef1a11d9da72b7f78ecf35fd084c90
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028889"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756584"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -29,7 +29,7 @@ Vorhandene Office 365 Geschäftskunden, die ein Land ausgewählt haben, das für
 
 ## <a name="how-do-we-define-core-customer-data"></a>Wie definieren wir die wichtigsten Kundendaten?
  
-Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den [Microsoft Online Services-Bedingungen](https://go.microsoft.com/fwlink/p/?LinkID=249048)definiert sind: 
+Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den [Microsoft Online Services-Bedingungen](https://aka.ms/ost)definiert sind: 
 - Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen)
 - SharePoint Online Websiteinhalt und die Dateien, die auf dieser Website gespeichert sind
 - In OneDrive für Unternehmen hochgeladene Dateien 

@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Zusammenfassung: Beschreibung der SSL-Zertifikate, die für lokale und hybride Exchange-Dienste erforderlich sind, SSO mit AD FS, Exchange Online Diensten und Exchange Webdienste.'
-ms.openlocfilehash: 3120be6cf127b8615259f865f03db1dbe6f0ea73
-ms.sourcegitcommit: 2e6fadb5b2b16619ad141b6293d3466460720cb4
+ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37428092"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756614"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planen von Drittanbieter-SSL-Zertifikaten für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
- **Zusammenfassung:** Beschreibt die SSL-Zertifikate, die für lokale und hybride Exchange-Dienste erforderlich sind, SSO mit AD FS, Exchange Online Diensten und Exchange Webdienste. 
-  
 Zum Verschlüsseln der Kommunikation zwischen ihren Clients und der Office 365 Umgebung müssen SSL-Zertifikate (Secure Socket Layer) von Drittanbietern auf Ihren Infrastrukturservern installiert sein.
 
 ||
@@ -39,7 +37,7 @@ Zum Verschlüsseln der Kommunikation zwischen ihren Clients und der Office 365 U
    
 Zertifikate sind für die folgenden Office 365 Komponenten erforderlich:
   
-- Lokale Exchange-Umgebung
+- Exchange lokal
     
 - Einmaliges Anmelden (SSO) (sowohl für die Active Directory Verbunddienste (AD FS)-Verbundserver als auch für AD FS-Verbundserverproxys)
     

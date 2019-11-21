@@ -1,9 +1,9 @@
 ---
 title: Während und nach der Datenverschiebung
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/14/2019
+ms.date: 11/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: 2eaeb8dd5fc9b3e9b892cb412f8a5081d7b2bf78
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
+ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626135"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756574"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -123,10 +123,6 @@ Alle Benutzer werden während des Umschaltens von der Skype for Business-Client 
    
 ### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype for Business-Moves, die einen Drittanbieter für Audiokonferenzen einbeziehen
 Add-on-Dienste von Drittanbieter-Audiokonferenz-Anbietern für Skype for Business stehen nicht für Benutzer zur Verfügung, die in neuen Geo-spezifischen Rechenzentren verwaltet werden.  Vorhandene Kunden, die einen Drittanbieterdienst für Audiokonferenzen verwenden, sollten keine Umstellung auf ein neues Geo-spezifisches Rechenzentrum anfordern.  Neue Kunden, die in den neuen Geo-spezifischen Rechenzentren bereitgestellt werden, müssen eine Verlagerung an ein regionales Rechenzentrum anfordern, um einen Drittanbieter für Audiokonferenzen verwenden zu können.
-
-## <a name="data-for-other-services-including-teams-yammer-and-power-bi"></a>Daten für andere Dienste, einschließlich Teams, jammern und Power BI
-
-Kundendaten werden nur für Exchange Online, SharePoint Online und Skype for Business. Daten werden nicht für andere Dienste verlagert. Es gibt keine Änderungen oder Auswirkungen für Sie als Kunde oder Benutzer dieser anderen Dienste. Der Verschiebungsprozess hat keinen Einfluss darauf, und der Speicherort der Kundendaten bleibt unverändert.
   
 ## <a name="related-topics"></a>Verwandte Themen 
  
