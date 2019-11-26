@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten mit einer Standort-zu-Standort-VPN-Verbindung.'
-ms.openlocfilehash: 3506b1b4c6a88567bf216957f5e083c9e99156ba
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 34d7b7310fd0828732e288f090314b8689953b50
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793337"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254594"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
@@ -207,7 +207,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
 ### <a name="phase-2-create-the-cross-premises-virtual-network-in-azure"></a>Phase 2: Erstellen des standortübergreifenden virtuellen Netzwerks in Azure
 <a name="Phase2"></a>
 
-Öffnen Sie zunächst eine Azure PowerShell-Eingabeaufforderung. Informationen zum Vorgehen, wenn Sie Azure PowerShell nicht installiert haben, finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).
+Öffnen Sie zunächst eine Azure PowerShell-Eingabeaufforderung. Informationen zum Vorgehen, wenn Sie Azure PowerShell nicht installiert haben, finden Sie unter [Erste Schritte mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
 
  
 Melden Sie sich dann bei Ihrem Azure-Konto mit diesem Befehl an.

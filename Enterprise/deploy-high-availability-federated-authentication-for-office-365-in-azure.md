@@ -3,7 +3,7 @@ title: Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Of
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/06/2018
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,17 +17,15 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
 description: 'Zusammenfassung: Konfigurieren der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365-Abonnement in Microsoft Azure.'
-ms.openlocfilehash: ba8049271e4820cca8db2ce5d6cabf76dacfb36a
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: 0b622c895bcd6b11ee7e096ac1e39f1b6bd2dae2
+ms.sourcegitcommit: fbd2f3fb297c508212baed3ee9d1ce51765cc8bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793287"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39254514"
 ---
 # <a name="deploy-high-availability-federated-authentication-for-office-365-in-azure"></a>Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure
 
- **Zusammenfassung:** Konfigurieren der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365-Abonnement in Microsoft Azure.
-  
 Dieser Artikel enthält Links zu den schrittweisen Anleitungen für die Bereitstellung der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft Office 365 in Azure-Infrastrukturdiensten mit den folgenden virtuellen Computern:
   
 - Zwei Webanwendungsproxy-Server
@@ -36,7 +34,7 @@ Dieser Artikel enthält Links zu den schrittweisen Anleitungen für die Bereitst
     
 - Zwei replizierte Domänencontroller
     
-- Ein Verzeichnissynchronisierungsserver (DirSync), auf dem Azure AD Connect ausgeführt wird.
+- Ein Verzeichnissynchronisierungsserver, auf dem Azure AD Connect ausgeführt wird.
     
 Nachfolgend sehen Sie die Konfiguration mit Platzhalternamen für jeden Server.
   
@@ -54,7 +52,7 @@ Jedes Paar virtuelle Computer für eine bestimmte Rolle befindet sich in einem e
 > [!NOTE]
 > Da dieses VNet mit dem lokalen Netzwerk verbunden ist, umfasst diese Konfiguration keinen virtuellen Jumpbox- oder Überwachungscomputer in einem Verwaltungssubnetz. Weitere Informationen finden Sie unter [Ausführen von virtuellen Windows-Computern für eine Architektur mit N-Ebenen](https://docs.microsoft.com/azure/guidance/guidance-compute-n-tier-vm). 
   
-Das Ergebnis dieser Konfiguration ist eine Verbundauthentifizierung für alle Ihre Office 365-Benutzer. Diese können sich dann also mit ihren Active Directory Domain Services-Anmeldeinformationen statt mit ihrem Office 365-Konto anmelden. Die Verbundauthentifizierungsinfrastruktur nutzt einen redundanten Satz von Servern, die in den Azure-Infrastrukturdiensten bereitgestellt sind, nicht in Ihrem lokalen Umkreisnetzwerk. Das ist eine deutlich einfacher zu implementierende Konstellation.
+Das Ergebnis dieser Konfiguration ist eine Verbundauthentifizierung für alle Ihre Office 365-Benutzer. Diese können sich dann also mit ihren AD DS-Anmeldeinformationen statt mit ihrem Office 365-Konto anmelden. Die Verbundauthentifizierungsinfrastruktur nutzt einen redundanten Satz von Servern, die in den Azure-Infrastrukturdiensten bereitgestellt sind, nicht in Ihrem lokalen Umkreisnetzwerk. Das ist eine deutlich einfacher zu implementierende Konstellation.
   
 ## <a name="bill-of-materials"></a>Erforderliche Komponenten
 
@@ -94,7 +92,7 @@ Sie stellen diese Arbeitslast in den folgenden Phasen bereit:
   
 - [Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md). Erstellen von Ressourcengruppen, Speicherkonten, Verfügbarkeitsgruppen und einem standortübergreifenden virtuellen Netzwerk.
     
-- [Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Erstellen und Konfigurieren von replizierten AD DS-Domänencontrollern (Active Directory Domain Services) und des DirSync-Servers.
+- [Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Erstellen und Konfigurieren Sie AD DS-Replikatdomänencontroller und den Verzeichnissynchronisierungsserver.
     
 - [Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). Erstellen und Konfigurieren der beiden AD FS-Server.
     
@@ -112,5 +110,5 @@ Informationen zum Erstellen einer Entwicklungs-/Testumgebung oder einer Machbark
   
 ## <a name="next-step"></a>Nächster Schritt
 
-Starten Sie die Konfiguration dieser Arbeitslast mit [Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
+Starten Sie die Konfiguration dieser Arbeitslast mit [Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md). 
   
