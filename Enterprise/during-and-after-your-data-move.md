@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: 333c29d4087e18b477f124ca406de4936d1bd5e3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756574"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250501"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -54,14 +54,6 @@ Einige Benutzer öffnen einen freigegebenen e-Mail-Ordner aus einem anderen Post
 |:-----|:-----|
 |Benutzer verfügt über Postfachordner Berechtigung für ein anderes Postfach  <br/> |Möglicherweise limitiert.  <br/> Wenn sich Benutzer a und Postfach b während der Mandanten Verlagerung nicht in demselben Geo befinden, kann Benutzer a den Ordner "Postfach b" nicht in Outlook Web Access öffnen, wenn Benutzer a nur über die Berechtigung für einen bestimmten Ordner in Postfach b verfügt.  <br/> Klicken Sie zum Hinzufügen eines freigegebenen Ordners mit der rechten Maustaste auf den Benutzernamen im linken Navigationsbereich, und wählen Sie **freigegebener Ordner hinzufügen**aus.  <br/> |
 |Benutzer mit vollständiger Post Fach Berechtigung für ein anderes Postfach  <br/> |Vollständig unterstützt.  <br/> Wenn Benutzer a über die Berechtigung "Vollzugriff" für Postfach b verfügt, kann Benutzer a auf den freigegebenen Ordner im linken Navigationsbereich in Outlook Web Access klicken, um ein Fenster mit Postfach b zu öffnen.  Ein Benutzer kann ein freigegebenes Postfach mit Outlook Web Access während des Wechsels ohne unerwünschte Auswirkungen öffnen. Die Einschränkung gilt nur für die Freigabe auf Ordnerebene in einem Postfach.           |
-   
-### <a name="public-folders"></a>Öffentliche Ordner
-
-Wenn sich das Postfach für Öffentliche Ordner vorübergehend in einem anderen Rechenzentrum als der Benutzer befindet, der versucht, darauf zuzugreifen, kann der Benutzer möglicherweise nicht auf das Postfach für Öffentliche Ordner zugreifen. 
-  
-### <a name="online-archives"></a>Online Archive
-
-Während der Vorgang wird ausgeführt, können Benutzer, die über Outlook für Mac eine Verbindung herstellen, möglicherweise keine Verbindung mit Ihrem Onlinearchivpostfach herstellen. Der Zugriff auf das Archivpostfach für Benutzer, die eine Verbindung mit Outlook und Outlook Web Access herstellen, wird unterstützt.
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 

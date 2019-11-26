@@ -3,7 +3,7 @@ title: Vorbereiten der Verzeichnissynchronisierung auf Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 11/25/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern für die Office 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: 22db70d659d74e6d0f37f54a7743a562f220565d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
+ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702236"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250511"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Vorbereiten der Verzeichnissynchronisierung auf Office 365
 
@@ -99,7 +99,7 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Wenn das Attribut im User-Objekt vorhanden ist, wird es mit Office 365 synchronisiert, aber Office 365 erfordert oder verwendet es nicht.
   - Maximale Anzahl der Zeichen: 64
     
-- **Mail**
+- **mail**
     
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
     
@@ -110,7 +110,11 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
     
   - Der Attributwert darf nicht mit einem Punkt (.) beginnen.
   - Der Attributwert muss innerhalb des Verzeichnisses eindeutig sein.
-    
+  
+    > [!NOTE]
+    > Unterstriche ("_") im synchronisierten Namen gibt an, dass der ursprüngliche Wert dieses Attributs ungültige Zeichen enthält. Der ursprüngliche Wert kann Buchstaben, Zahlen und die Zeichen!, #, $,%, #a0, ', \*, +,-,/, =,?, ^, _, ', {, |,} und ~ enthalten. Weitere Informationen zu diesem Attribut finden Sie unter [Exchange-Alias Attribut](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps).
+    >
+      
 - **proxyAddresses**
     
   - Mehrwertiges Attribut
