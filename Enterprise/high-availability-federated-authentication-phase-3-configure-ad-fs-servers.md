@@ -3,7 +3,7 @@ title: Hohe Verfügbarkeit Verbund Authentifizierungs Phase 3 Konfigurieren von 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/15/2019
+ms.date: 11/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,44 +12,45 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: 'Zusammenfassung: Erstellen und konfigurieren Sie die Active Directory Federation Services-Server (AD FS) für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: a69738e5be639341963ac1e90aff08328a83257b
-ms.sourcegitcommit: 9c9982badeb95b8ecc083609a1a922cbfdfc9609
+ms.openlocfilehash: db9f976ebaf7524c6e13d4dabcc21dd4300102a7
+ms.sourcegitcommit: 4b057db053e93b0165f1ec6c4799cff4c2852566
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38793303"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39257570"
 ---
-# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a><span data-ttu-id="dd882-103">Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern</span><span class="sxs-lookup"><span data-stu-id="dd882-103">High availability federated authentication Phase 3: Configure AD FS servers</span></span>
+# <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a><span data-ttu-id="d917a-103">Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern</span><span class="sxs-lookup"><span data-stu-id="d917a-103">High availability federated authentication Phase 3: Configure AD FS servers</span></span>
 
- <span data-ttu-id="dd882-104">**Zusammenfassung:** Erstellen und konfigurieren Sie die Active Directory Federation Services-Server (AD FS) für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="dd882-104">**Summary:** Create and configure the Active Directory Federation Services (AD FS) servers for your high availability federated authentication for Office 365 in Microsoft Azure.</span></span>
+<span data-ttu-id="d917a-104">In dieser Phase der Bereitstellung der hohen Verfügbarkeit für Verbundauthentifzierung für Office 365 in Azure-Infrastrukturdiensten erstellen Sie einen internen Lastenausgleich und zwei AD FS-Server.</span><span class="sxs-lookup"><span data-stu-id="d917a-104">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
   
-<span data-ttu-id="dd882-105">In dieser Phase der Bereitstellung der hohen Verfügbarkeit für Verbundauthentifzierung für Office 365 in Azure-Infrastrukturdiensten erstellen Sie einen internen Lastenausgleich und zwei AD FS-Server.</span><span class="sxs-lookup"><span data-stu-id="dd882-105">In this phase of deploying high availability for Office 365 federated authentication in Azure infrastructure services, you create an internal load balancer and two AD FS servers.</span></span>
+<span data-ttu-id="d917a-105">Sie müssen diese Phase abschließen, bevor Sie mit [Phase 4: Konfigurieren von Webanwendungs Proxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)fortfahren.</span><span class="sxs-lookup"><span data-stu-id="d917a-105">You must complete this phase before moving on to [Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md).</span></span> <span data-ttu-id="d917a-106">Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="d917a-106">See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
   
-<span data-ttu-id="dd882-106">Sie müssen diese Phase abschließen, bevor Sie mit [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) fortfahren können.</span><span class="sxs-lookup"><span data-stu-id="dd882-106">You must complete this phase before moving on to [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md).</span></span> <span data-ttu-id="dd882-107">Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).</span><span class="sxs-lookup"><span data-stu-id="dd882-107">See [Deploy high availability federated authentication for Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) for all of the phases.</span></span>
-  
-## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a><span data-ttu-id="dd882-108">Erstellen der virtuellen Computer des AD FS-Servers in Azure</span><span class="sxs-lookup"><span data-stu-id="dd882-108">Create the AD FS server virtual machines in Azure</span></span>
+## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a><span data-ttu-id="d917a-107">Erstellen der virtuellen Computer des AD FS-Servers in Azure</span><span class="sxs-lookup"><span data-stu-id="d917a-107">Create the AD FS server virtual machines in Azure</span></span>
 
-<span data-ttu-id="dd882-p102">Verwenden Sie den folgenden PowerShell-Befehlsblock, um die virtuellen Computer für die beiden AD FS-Server zu erstellen. Dieser PowerShell-Befehlssatz verwendet Werte aus den folgenden Tabellen:</span><span class="sxs-lookup"><span data-stu-id="dd882-p102">Use the following block of PowerShell commands to create the virtual machines for the two AD FS servers. This PowerShell command set uses values from the following tables:</span></span>
+<span data-ttu-id="d917a-p102">Verwenden Sie den folgenden PowerShell-Befehlsblock, um die virtuellen Computer für die beiden AD FS-Server zu erstellen. Dieser PowerShell-Befehlssatz verwendet Werte aus den folgenden Tabellen:</span><span class="sxs-lookup"><span data-stu-id="d917a-p102">Use the following block of PowerShell commands to create the virtual machines for the two AD FS servers. This PowerShell command set uses values from the following tables:</span></span>
   
-- <span data-ttu-id="dd882-111">Tabelle M (für die virtuellen Computer)</span><span class="sxs-lookup"><span data-stu-id="dd882-111">Table M, for your virtual machines</span></span>
+- <span data-ttu-id="d917a-110">Tabelle M (für die virtuellen Computer)</span><span class="sxs-lookup"><span data-stu-id="d917a-110">Table M, for your virtual machines</span></span>
     
-- <span data-ttu-id="dd882-112">Tabelle R (für die Ressourcengruppen)</span><span class="sxs-lookup"><span data-stu-id="dd882-112">Table R, for your resource groups</span></span>
+- <span data-ttu-id="d917a-111">Tabelle R (für die Ressourcengruppen)</span><span class="sxs-lookup"><span data-stu-id="d917a-111">Table R, for your resource groups</span></span>
     
-- <span data-ttu-id="dd882-113">Tabelle V (für die Einstellungen des virtuellen Netzwerks)</span><span class="sxs-lookup"><span data-stu-id="dd882-113">Table V, for your virtual network settings</span></span>
+- <span data-ttu-id="d917a-112">Tabelle V (für die Einstellungen des virtuellen Netzwerks)</span><span class="sxs-lookup"><span data-stu-id="d917a-112">Table V, for your virtual network settings</span></span>
     
-- <span data-ttu-id="dd882-114">Tabelle S (für das Subnetz)</span><span class="sxs-lookup"><span data-stu-id="dd882-114">Table S, for your subnets</span></span>
+- <span data-ttu-id="d917a-113">Tabelle S (für das Subnetz)</span><span class="sxs-lookup"><span data-stu-id="d917a-113">Table S, for your subnets</span></span>
     
-- <span data-ttu-id="dd882-115">Tabelle I (für die statischen IP-Adressen)</span><span class="sxs-lookup"><span data-stu-id="dd882-115">Table I, for your static IP addresses</span></span>
+- <span data-ttu-id="d917a-114">Tabelle I (für die statischen IP-Adressen)</span><span class="sxs-lookup"><span data-stu-id="d917a-114">Table I, for your static IP addresses</span></span>
     
-- <span data-ttu-id="dd882-116">Tabelle A (für die Verfügbarkeitsgruppen)</span><span class="sxs-lookup"><span data-stu-id="dd882-116">Table A, for your availability sets</span></span>
+- <span data-ttu-id="d917a-115">Tabelle A (für die Verfügbarkeitsgruppen)</span><span class="sxs-lookup"><span data-stu-id="d917a-115">Table A, for your availability sets</span></span>
     
-<span data-ttu-id="dd882-117">Denken Sie daran, dass Sie Tabelle M in der [Verbundauthentifizierung mit hoher Verfügbarkeit definiert haben: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) und Tabellen R, V, S, I und A in der [Verbundauthentifizierung mit hoher Verfügbarkeit Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span><span class="sxs-lookup"><span data-stu-id="dd882-117">Recall that you defined Table M in [High availability federated authentication Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [High availability federated authentication Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
+<span data-ttu-id="d917a-116">Erinnern Sie sich, dass Sie Tabelle M in Phase [2: Configure Domain Controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I und A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md)definiert haben.</span><span class="sxs-lookup"><span data-stu-id="d917a-116">Recall that you defined Table M in [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) and Tables R, V, S, I, and A in [Phase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="dd882-118">[!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet.</span><span class="sxs-lookup"><span data-stu-id="dd882-118">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="dd882-119">Informationen dazu finden Sie unter [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).</span><span class="sxs-lookup"><span data-stu-id="dd882-119">See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/).</span></span> 
+> <span data-ttu-id="d917a-117">[!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet.</span><span class="sxs-lookup"><span data-stu-id="d917a-117">The following command sets use the latest version of Azure PowerShell.</span></span> <span data-ttu-id="d917a-118">Weitere Informationen finden Sie unter [Erste Schritte mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).</span><span class="sxs-lookup"><span data-stu-id="d917a-118">See [Get started with Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).</span></span> 
   
-<span data-ttu-id="dd882-120">Zuerst erstellen Sie in Azure einen internen Lastenausgleich für die beiden AD FS-Server.</span><span class="sxs-lookup"><span data-stu-id="dd882-120">First, you create an Azure internal load balancer for the two AD FS servers.</span></span> <span data-ttu-id="dd882-121">Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und #a0.</span><span class="sxs-lookup"><span data-stu-id="dd882-121">Specify the values for the variables, removing the \< and > characters.</span></span> <span data-ttu-id="dd882-122">Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.</span><span class="sxs-lookup"><span data-stu-id="dd882-122">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="d917a-119">Zuerst erstellen Sie in Azure einen internen Lastenausgleich für die beiden AD FS-Server.</span><span class="sxs-lookup"><span data-stu-id="d917a-119">First, you create an Azure internal load balancer for the two AD FS servers.</span></span> <span data-ttu-id="d917a-120">Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und #a0.</span><span class="sxs-lookup"><span data-stu-id="d917a-120">Specify the values for the variables, removing the \< and > characters.</span></span> <span data-ttu-id="d917a-121">Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.</span><span class="sxs-lookup"><span data-stu-id="d917a-121">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
+> [!TIP]
+> <span data-ttu-id="d917a-122">Verwenden Sie diese [Microsoft Excel Konfigurations Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx), um Ready-to-Run PowerShell-Befehlsblöcke basierend auf Ihren benutzerdefinierten Einstellungen zu generieren.</span><span class="sxs-lookup"><span data-stu-id="d917a-122">To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx).</span></span> 
+
 ```powershell
 # Set up key variables
 $locName="<your Azure location>"
@@ -69,9 +70,9 @@ $lbrule=New-AzLoadBalancerRuleConfig -Name "HTTPSTraffic" -FrontendIpConfigurati
 New-AzLoadBalancer -ResourceGroupName $rgName -Name "ADFSServers" -Location $locName -LoadBalancingRule $lbrule -BackendAddressPool $beAddressPool -Probe $healthProbe -FrontendIpConfiguration $frontendIP
 ```
 
-<span data-ttu-id="dd882-123">Erstellen Sie als Nächstes die virtuellen Computer des AD FS-Servers.</span><span class="sxs-lookup"><span data-stu-id="dd882-123">Next, create the AD FS server virtual machines.</span></span>
+<span data-ttu-id="d917a-123">Erstellen Sie als Nächstes die virtuellen Computer des AD FS-Servers.</span><span class="sxs-lookup"><span data-stu-id="d917a-123">Next, create the AD FS server virtual machines.</span></span>
   
-<span data-ttu-id="dd882-124">Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.</span><span class="sxs-lookup"><span data-stu-id="dd882-124">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
+<span data-ttu-id="d917a-124">Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.</span><span class="sxs-lookup"><span data-stu-id="d917a-124">When you have supplied all the proper values, run the resulting block at the Azure PowerShell command prompt or in the PowerShell ISE.</span></span>
   
 ```powershell
 # Set up variables common to both virtual machines
@@ -126,11 +127,11 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
 > [!NOTE]
-> <span data-ttu-id="dd882-p105">Da diese virtuellen Computer für eine Intranetanwendung gedacht sind, wird ihnen weder eine öffentliche IP-Adresse noch eine DNS-Domänennamenbezeichnung zugewiesen. Sie sind also nicht über das Internet erreichbar. Das bedeutet allerdings, dass Sie auch nicht über das Azure-Portal auf sie zugreifen können. Wenn Sie die Eigenschaften eines der virtuellen Computer aufrufen, ist die Option zum **Verbinden**nicht verfügbar. Verwenden Sie eine Remotedesktopverbindung oder ein anderes Remotedesktoptool, um eine Verbindung über die private IP-Adresse des betreffenden virtuellen Computers oder seinen Intranet-DNS-Namen herzustellen.</span><span class="sxs-lookup"><span data-stu-id="dd882-p105">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.</span></span>
+> <span data-ttu-id="d917a-p105">Da diese virtuellen Computer für eine Intranetanwendung gedacht sind, wird ihnen weder eine öffentliche IP-Adresse noch eine DNS-Domänennamenbezeichnung zugewiesen. Sie sind also nicht über das Internet erreichbar. Das bedeutet allerdings, dass Sie auch nicht über das Azure-Portal auf sie zugreifen können. Wenn Sie die Eigenschaften eines der virtuellen Computer aufrufen, ist die Option zum **Verbinden**nicht verfügbar. Verwenden Sie eine Remotedesktopverbindung oder ein anderes Remotedesktoptool, um eine Verbindung über die private IP-Adresse des betreffenden virtuellen Computers oder seinen Intranet-DNS-Namen herzustellen.</span><span class="sxs-lookup"><span data-stu-id="d917a-p105">Because these virtual machines are for an intranet application, they are not assigned a public IP address or a DNS domain name label and exposed to the Internet. However, this also means that you cannot connect to them from the Azure portal. The **Connect** option is unavailable when you view the properties of the virtual machine. Use the Remote Desktop Connection accessory or another Remote Desktop tool to connect to the virtual machine using its private IP address or intranet DNS name.</span></span>
   
-<span data-ttu-id="dd882-p106">Erstellen Sie mithilfe eines Remotedesktopclients Ihrer Wahl eine Remotedesktopverbindung für jeden virtuellen Computer. Verwenden Sie den Intranet-DNS-Namen oder den Computernamen des jeweiligen Servers und die Anmeldeinformationen des lokalen Administratorkontos.</span><span class="sxs-lookup"><span data-stu-id="dd882-p106">For each virtual machine, use the remote desktop client of your choice and create a remote desktop connection. Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
+<span data-ttu-id="d917a-p106">Erstellen Sie mithilfe eines Remotedesktopclients Ihrer Wahl eine Remotedesktopverbindung für jeden virtuellen Computer. Verwenden Sie den Intranet-DNS-Namen oder den Computernamen des jeweiligen Servers und die Anmeldeinformationen des lokalen Administratorkontos.</span><span class="sxs-lookup"><span data-stu-id="d917a-p106">For each virtual machine, use the remote desktop client of your choice and create a remote desktop connection. Use its intranet DNS or computer name and the credentials of the local administrator account.</span></span>
   
-<span data-ttu-id="dd882-131">Fügen Sie für jeden virtuellen Computer die entsprechenden Active Directory-Domänendienste (AD DS) Domäne mit den folgenden Befehlen an der Windows PowerShell-Eingabeaufforderung ein.</span><span class="sxs-lookup"><span data-stu-id="dd882-131">For each virtual machine, join them to the appropriate Active Directory Domain Services (AD DS) domain with these commands at the Windows PowerShell prompt.</span></span>
+<span data-ttu-id="d917a-131">Fügen Sie für jeden virtuellen Computer die entsprechenden Active Directory-Domänendienste (AD DS) Domäne mit den folgenden Befehlen an der Windows PowerShell-Eingabeaufforderung ein.</span><span class="sxs-lookup"><span data-stu-id="d917a-131">For each virtual machine, join them to the appropriate Active Directory Domain Services (AD DS) domain with these commands at the Windows PowerShell prompt.</span></span>
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -139,20 +140,20 @@ Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```
 
-<span data-ttu-id="dd882-132">Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration wie folgt aus. Für die Computernamen werden hier Platzhalter verwendet.</span><span class="sxs-lookup"><span data-stu-id="dd882-132">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
+<span data-ttu-id="d917a-132">Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration wie folgt aus. Für die Computernamen werden hier Platzhalter verwendet.</span><span class="sxs-lookup"><span data-stu-id="d917a-132">Here is the configuration resulting from the successful completion of this phase, with placeholder computer names.</span></span>
   
-<span data-ttu-id="dd882-133">**Phase 3: Die AD FS-Server und der interne Lastenausgleich für die hohe Verfügbarkeit der Verbundauthentifizierungsinfrastruktur in Azure**</span><span class="sxs-lookup"><span data-stu-id="dd882-133">**Phase 3: The AD FS servers and internal load balancer for your high availability federated authentication infrastructure in Azure**</span></span>
+<span data-ttu-id="d917a-133">**Phase 3: Die AD FS-Server und der interne Lastenausgleich für die hohe Verfügbarkeit der Verbundauthentifizierungsinfrastruktur in Azure**</span><span class="sxs-lookup"><span data-stu-id="d917a-133">**Phase 3: The AD FS servers and internal load balancer for your high availability federated authentication infrastructure in Azure**</span></span>
 
 ![Phase 3 der hoch Verfügbarkeits Office 365 Verbund Authentifizierungsinfrastruktur in Azure mit den AD FS-Servern](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
-## <a name="next-step"></a><span data-ttu-id="dd882-135">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="dd882-135">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="d917a-135">Nächster Schritt</span><span class="sxs-lookup"><span data-stu-id="d917a-135">Next step</span></span>
 
-<span data-ttu-id="dd882-136">Gehen Sie weiter zu [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md), um mit der Konfiguration dieser Arbeitslast fortzufahren.</span><span class="sxs-lookup"><span data-stu-id="dd882-136">Use [High availability federated authentication Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) to continue configuring this workload.</span></span>
+<span data-ttu-id="d917a-136">Verwenden Sie [Phase 4: Konfigurieren von Webanwendungs Proxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) , um mit der Konfiguration dieser Arbeitsauslastung fortzufahren.</span><span class="sxs-lookup"><span data-stu-id="d917a-136">Use [Phase 4: Configure web application proxies](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) to continue configuring this workload.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="dd882-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dd882-137">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d917a-137">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d917a-137">See Also</span></span>
 
-[<span data-ttu-id="dd882-138">Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure</span><span class="sxs-lookup"><span data-stu-id="dd882-138">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[<span data-ttu-id="d917a-138">Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure</span><span class="sxs-lookup"><span data-stu-id="d917a-138">Deploy high availability federated authentication for Office 365 in Azure</span></span>](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[<span data-ttu-id="dd882-139">Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="dd882-139">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
+[<span data-ttu-id="d917a-139">Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung</span><span class="sxs-lookup"><span data-stu-id="d917a-139">Federated identity for your Office 365 dev/test environment</span></span>](federated-identity-for-your-office-365-dev-test-environment.md)
 
 
