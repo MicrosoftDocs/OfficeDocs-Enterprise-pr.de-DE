@@ -158,11 +158,11 @@
 #### [Verbinden eines lokalen Netzwerks mit einem virtuellen Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Bereitstellen eines Verzeichnissynchronisierungsservers in Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
 #### [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
-##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
-##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
-##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
-##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 4: Konfigurieren von Webanwendungsproxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
-##### [Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
+##### [Phase 1: Konfigurieren von Azure](high-availability-federated-authentication-phase-1-configure-azure.md)
+##### [Phase 2: Konfigurieren von Domänencontrollern](high-availability-federated-authentication-phase-2-configure-domain-controllers.md)
+##### [Phase 3: Konfigurieren von AD FS-Servern](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)
+##### [Phase 4: Konfigurieren von Webanwendungsproxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)
+##### [Phase 5: Konfigurieren von Verbundauthentifizierung](high-availability-federated-authentication-phase-5-configure-federated-authentic.md)
 
 # Verwalten von Office 365
 
