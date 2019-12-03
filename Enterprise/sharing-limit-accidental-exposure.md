@@ -17,9 +17,9 @@ ms.locfileid: "37108317"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste
 
-Bei der Freigabe von Dateien und Ordnern für Gäste gibt es eine Vielzahl an Optionen, um das Risiko zu minimieren, dass vertrauliche Informationen versehentlich freigegeben werden. Sie können aus Optionen in diesem Artikel wählen, um die Anforderungen Ihrer Organisation optimal zu erfüllen.
+Bei der Freigabe von Dateien und Ordnern für Gäste gibt es eine Vielzahl an Optionen, um das Risiko zu minimieren, dass vertrauliche Informationen versehentlich freigegeben werden. Sie können aus den Optionen in diesem Artikel wählen, um die Anforderungen Ihrer Organisation optimal zu erfüllen.
 
-## <a name="use-best-practices-for-anyone-links"></a>Bewährte Methoden für Jeder-Links verwenden
+## <a name="use-best-practices-for-anyone-links"></a>Bewährte Methoden für „Jeder“-Links verwenden
 
 Wenn Personen in Ihrer Organisation eine anonyme Freigabe vornehmen müssen, Sie jedoch befürchten, dass nicht authentifizierte Gäste Inhalte ändern, lesen Sie [Bewährte Methoden für die anonyme Freigabe](best-practices-anonymous-sharing.md), um Anleitungen zum Arbeiten mit der anonymen Freigabe in Ihrer Organisation zu erhalten.
 
@@ -65,16 +65,16 @@ So richten Sie eine Zulassungs- oder Ablehnungsliste für die Gastfreigabe ein
    ![Screenshot der SharePoint-Einstellung „Einschränken der externen Freigabe mithilfe von Domänen“](media/sharepoint-sharing-block-domain.png)
 5. Klicken Sie auf **Speichern**.
 
-Wenn Sie die Freigabe mithilfe von Domänen auf einer höheren Ebene als SharePoint und OneDrive einschränken möchten, [lassen Sie Einladungen in  Azure Active Directory für B2B-Benutzer aus bestimmten Organisationen zu oder blockieren Sie sie](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list). (Sie müssen die [SharePoint- und OneDrive-Integration mit Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) konfigurieren, damit diese Einstellungen für SharePoint und OneDrive wirksam sind.)
+Wenn Sie die Freigabe mithilfe von Domänen auf einer höheren Ebene als SharePoint und OneDrive einschränken möchten, [lassen Sie Einladungen in Azure Active Directory für B2B-Benutzer aus bestimmten Organisationen zu oder blockieren Sie sie](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list). (Sie müssen die [SharePoint- und OneDrive-Integration mit Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) konfigurieren, damit diese Einstellungen für SharePoint und OneDrive wirksam sind.)
 
-## <a name="limit-guest-sharing-of-files-folders-and-sites-to-specified-security-groups"></a>Einschränken der Freigabe von Dateien, Ordnern und Sites auf die angegebenen Sicherheitsgruppen für Gäste
+## <a name="limit-guest-sharing-of-files-folders-and-sites-to-specified-security-groups"></a>Einschränken der Freigabe von Dateien, Ordnern und Sites für Gäste auf die angegebenen Sicherheitsgruppen
 
-Sie können die Freigabe von Dateien, Ordnern und Sites auf Mitglieder einer spezifischen Sicherheitsgruppe für Gäste einschränken. Dies ist nützlich, wenn Sie die Gastfreigabe aktivieren möchten, aber mit einem Genehmigungsworkflow oder einem Anforderungsprozess.
+Sie können die Freigabe von Dateien, Ordnern und Sites für Gäste auf Mitglieder einer spezifischen Sicherheitsgruppe einschränken. Dies ist nützlich, wenn Sie die Gastfreigabe aktivieren möchten, aber mit einem Genehmigungsworkflow oder einem Anforderungsprozess.
 
 So schränken Sie die Gastfreigabe auf Mitglieder einer Sicherheitsgruppe ein
 1. Klicken Sie im SharePoint Admin Center links in der Navigation auf **Freigabe**.
 2. Folgen Sie unter **Andere Einstellungen** dem Link **Externe Freigabe für bestimmte Sicherheitsgruppen einschränken**.
-3. Aktivieren Sie unter **Wer kann außerhalb Ihrer Organisation freigeben** ein oder beide Kontrollkästchen: a. **Erlauben Sie nur ausgewählten Sicherheitsgruppen die Freigabe für authentifizierte externe Benutzer**, um eine Sicherheitsgruppe anzugeben, die für authentifizierte Benutzer freigeben kann. b. **Erlauben Sie nur ausgewählten Sicherheitsgruppen die Freigabe für authentifizierte externe Benutzer und Verwendung anonymer Links**, um eine Sicherheitsgruppe anzugeben, die für authentifizierte Benutzer und über Jeder-Links freigeben kann. b.
+3. Aktivieren Sie unter **Wer kann außerhalb Ihrer Organisation freigeben** ein oder beide Kontrollkästchen: a. **Erlauben Sie nur ausgewählten Sicherheitsgruppen die Freigabe für authentifizierte externe Benutzer**, um eine Sicherheitsgruppe anzugeben, die für authentifizierte Benutzer freigeben kann. b. **Erlauben Sie nur ausgewählten Sicherheitsgruppen die Freigabe für authentifizierte externe Benutzer und Verwendung anonymer Links**, um eine Sicherheitsgruppe anzugeben, die für authentifizierte Benutzer und über „Jeder“-Links freigeben kann. b.
 4. Klicken Sie auf **OK**.
 
 Dies wirkt sich auf Dateien, Ordner und Sites, aber nicht auf Office 365-Gruppen oder -Teams aus. Wenn Mitglieder Gäste zu einer privaten Office 365-Gruppe oder einem privaten Team in Microsoft Teams einladen, wird die Einladung zur Genehmigung an den Gruppen- oder Teambesitzer gesendet.
