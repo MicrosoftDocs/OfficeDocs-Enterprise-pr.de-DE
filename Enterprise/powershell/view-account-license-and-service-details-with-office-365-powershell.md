@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: ace07d8a-15ca-4b89-87f0-abbce809b519
 description: Erläutert die Verwendung Office 365 PowerShell zum Bestimmen der Office 365 Dienste, die Benutzern zugewiesen wurden.
-ms.openlocfilehash: 53668a69d72cdcbe912d550be2b9e571b7f6c0e0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: f73acb5a107aa6ef970046a371b7a722a6abc8d9
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747474"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655867"
 ---
 # <a name="view-account-license-and-service-details-with-office-365-powershell"></a>Anzeigen von Lizenz- und Dienstdetails für Konten mit Office 365 PowerShell
 
@@ -70,6 +70,9 @@ Führen Sie als nächstes den folgenden Befehl aus, um die in Ihrer Organisation
 ```powershell
 Get-MsolAccountSku
 ```
+>[!Note]
+>PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
+>
 
 Führen Sie als nächstes den folgenden Befehl aus, um die Dienste aufzulisten, die in den einzelnen Lizenzierungs Plänen verfügbar sind, und die Reihenfolge, in der Sie aufgeführt sind (die Indexnummer).
 

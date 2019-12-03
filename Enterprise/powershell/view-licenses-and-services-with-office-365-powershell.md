@@ -16,12 +16,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: In diesem Artikel wird erläutert, wie Sie mithilfe von Office 365 PowerShell Informationen zu den Lizenzierungsplänen, Diensten und Lizenzen anzeigen können, die in Ihrer Office 365-Organisation verfügbar sind.
-ms.openlocfilehash: 8ee2c834063ea80388662c1f36f4524715f98a58
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: b8a0bb1845f3c0db5aa47cea0c2f6e5e580c804f
+ms.sourcegitcommit: 460c722d63e7e604ef0a57ec18fa7900fa6a4157
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747454"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "39655847"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell
 
@@ -109,6 +109,10 @@ Führen Sie den folgenden Befehl aus, um eine Übersicht über Ihre aktuellen Li
 Get-MsolAccountSku
 ```
 
+>[!Note]
+>PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
+>
+
 Die Ergebnisse enthalten die folgenden Informationen:
   
 - **AccountSkuId:**: Zeigt die verfügbaren Lizenzierungspläne in Ihrer Organisation im Syntaxformat `<CompanyName>:<LicensingPlan>` an. _<CompanyName>_ ist der Wert, den Sie bei der Registrierung für Office 365 angegeben haben, und ist für Ihre Organisation eindeutig. Der Wert _<LicensingPlan>_ ist für alle Kunden derselbe. Beispiel: Im Wert `litwareinc:ENTERPRISEPACK` steht  `litwareinc` für den Namen des Unternehmens. `ENTERPRISEPACK` ist der Name des Lizenzierungsplan und gleichzeitig der Systemname für  Office 365 Enterprise E3.
@@ -135,7 +139,7 @@ In der folgenden Tabelle sind die Office 365-Servicepläne und Anzeigenamen der 
 | `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Office Professional Plus  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
-| `SHAREPOINTWAC` <br/> |Büro  <br/> |
+| `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online Plan 2  <br/> |
    
