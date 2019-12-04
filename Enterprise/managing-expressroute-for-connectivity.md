@@ -15,12 +15,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Express Route für Office 365 bietet einen alternativen Routingpfad zum erreichen vieler Office 365 Dienste, ohne dass der gesamte Datenverkehr zum Ausstieg ins Internet erforderlich ist. Auch wenn die Internetverbindung mit Office 365 noch benötigt wird, wird die direkte Express Route-Schaltung durch die spezifischen Routen, die von Microsoft über BGP in Ihrem Netzwerk beworben werden, bevorzugt, es sei denn, es sind andere Konfigurationen in Ihrem Netzwerk vorhanden. Die drei allgemeinen Bereiche, die Sie für die Verwaltung dieses Routings konfigurieren können, sind Präfix Filterung, Sicherheit und Compliance.
-ms.openlocfilehash: 163b94bed1bf27b30a3ac8d3079d6fe70d7a1af0
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 589d8e60d2826170b7eddb84406d1d3d0effbb43
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027549"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814243"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Verwalten von ExpressRoute für Office 365-Verbindungen
 
@@ -43,7 +43,6 @@ Es gibt eine Reihe von Gründen, um die Verwendung der [Office 365-URLs und IP-A
 
 - Die Office 365-URLs und IP-Adressbereiche beziehen sich nicht auf andere Microsoft-Dienste, die möglicherweise im Bereich ihrer Express Route-Verbindungen liegen.
 
-| |
 |**Option**|**Komplexität**|**Änderungs Steuerelement**|
 |:-----|:-----|:-----|
 |Alle Microsoft-Routen akzeptieren  <br/> |**Niedrig:** Der Kunde verwendet Microsoft-Steuerelemente, um sicherzustellen, dass alle Routen ordnungsgemäß im Besitz sind.  <br/> |Keine  <br/> |

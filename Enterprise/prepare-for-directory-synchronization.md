@@ -24,14 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern für die Office 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: adae292f4dc8ef0402c3bd51391d020af0c28649
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: ab2908fac1dfb19c72d3321d6d2087bbf24fe6df
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250511"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814183"
 ---
 # <a name="prepare-for-directory-synchronization-to-office-365"></a>Vorbereiten der Verzeichnissynchronisierung auf Office 365
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Zu den Vorteilen der Hybriden Identitäts-und Verzeichnissynchronisierung in Ihrer Organisation gehören:
   
@@ -189,7 +191,7 @@ Wenn Sie die Verzeichnissynchronisierung bereits eingerichtet haben, stimmt der 
 Weitere Informationen finden Sie unter [Vorgehensweise Vorbereiten einer nicht routingfähigen Domäne (beispielsweise. Local Domain) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 Informationen zum Korrigieren von Fehlern in den Attributen ihrer AD DS vor der Verzeichnissynchronisierung finden Sie unter [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) .
 

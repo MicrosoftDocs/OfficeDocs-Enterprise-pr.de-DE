@@ -3,7 +3,7 @@ title: Routing mit ExpressRoute für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/14/2017
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,14 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten Express Route-Routing Anforderungen und die Express Route-Schaltkreise und Routingdomänen. Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
-ms.openlocfilehash: 6388180613e8abc3e83cfa0c40e84690cfae4543
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 2b3e3af68a538910d03586911674ec731a0a1960
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031580"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813895"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing mit ExpressRoute für Office 365
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten [Express Route-Routing Anforderungen](https://azure.microsoft.com/documentation/articles/expressroute-routing/) und die [Express Route-Schaltkreise und Routingdomänen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
   
@@ -73,15 +75,14 @@ Damit Microsoft für diese bidirektionalen Datenströme wieder zu Ihrem Netzwerk
 
 2) Verwenden Sie separate NAT-IP-Pools pro Express Route-Schaltung, und trennen Sie Sie von den Netz Stromkreisen.
 
-3) Beachten Sie, dass jede Route, die bei Microsoft beworben wird, Netzwerkdatenverkehr von einem beliebigen Server im Microsoft-Netzwerk anzieht, und nicht nur diejenigen, für die Routen für Ihr Netzwerk über Express Route beworben werden. Werben Sie nur Routen zu Servern, auf denen Routingszenarien definiert sind und von Ihrem Team gut verstanden werden. Werben Sie getrennte IP-Adress Routen Präfixe an jedem der mehreren Express Route-Schaltkreise von Ihrem Netzwerk aus. 
+3) Beachten Sie, dass jede Route, die bei Microsoft beworben wird, Netzwerkdatenverkehr von einem beliebigen Server im Microsoft-Netzwerk anzieht, und nicht nur diejenigen, für die Routen für Ihr Netzwerk über Express Route beworben werden. Werben Sie nur Routen zu Servern, auf denen Routingszenarien definiert sind und von Ihrem Team gut verstanden werden. Werben Sie getrennte IP-Adress Routen Präfixe an jedem der mehreren Express Route-Schaltkreise von Ihrem Netzwerk aus.
   
 ## <a name="deciding-which-applications-and-features-route-over-expressroute"></a>Bestimmen, welche Anwendungen und Features über Express Route weitergeleitet werden
 
 Wenn Sie eine Peering-Beziehung mithilfe der Microsoft Peering-Routingdomäne konfigurieren und für den entsprechenden Zugriff genehmigt wurden, können Sie alle PaaS-und Saas-Dienste anzeigen, die über Express Route verfügbar sind. Die Office 365 für Express Route entwickelten Dienste können mit BGP- [Communities](https://aka.ms/bgpexpressroute365) oder [Routenfiltern](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal)verwaltet werden.
   
 Andere Anwendungen wie Office 365 Video ist eine Office 365 Anwendung; Office 365 Video besteht jedoch aus drei verschiedenen Komponenten, dem Portal, dem Streamingdienst und dem Inhalts Zustellungs Netzwerk. Das Portal lebt in SharePoint Online, der Streamingdienst lebt in Azure Media Services, und das Inhalts Zustellungs Netzwerk lebt im Azure CDN. In der folgenden Tabelle sind diese Komponenten aufgeführt.
-  
-| |
+
 |**Komponente**|**Zugrunde liegende Anwendung**|**Enthalten in SharePoint Online BGP Community?**|**Verwendung**|
 |:-----|:-----|:-----|:-----|
 |Office 365 Video Portal  <br/> |SharePoint Online  <br/> |Ja  <br/> |Konfiguration, hochladen  <br/> |
@@ -111,7 +112,7 @@ In dieser Tabelle werden die Platzhalterdomänen angezeigt, die für Internet Sc
 
 |**Platzhalterdomäne nur für Internet Schaltungen beworben**|**Untergeordneter FQDN für Express Route und Internet Schaltungen beworben**|
 |:-----|:-----|
-|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
+|\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. Office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. Mail.Protection.Outlook.com  <br/> AutoErmittlung\<-\>Mandant. Outlook.com  <br/> |

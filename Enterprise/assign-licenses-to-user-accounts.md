@@ -3,6 +3,7 @@ title: Zuweisen von Office 365 Lizenzen zu Benutzerkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Benutzerkonten Office 365 Lizenzen entweder einzeln oder basierend auf der Gruppenmitgliedschaft zuweisen.
-ms.openlocfilehash: bc736236f9371ee1372fd36af4a707aca2ee1408
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745708"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813383"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>Zuweisen von Office 365 Lizenzen zu Benutzerkonten
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Für das nur-Cloud-Identitätsmodell können Sie den Benutzerkonten Office 365 Lizenzen zuweisen, je nachdem, wie Sie erstellt werden.
 
@@ -49,11 +50,11 @@ Um einzelnen Benutzerkonten Office 365 Lizenzen zuzuweisen, können Sie Folgende
 
 Informationen zur automatischen Zuweisung von Lizenzen finden Sie unter [Group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Weitere Schritte
 
 Mit dem vollständigen Benutzer kontensatz, dem Lizenzen zugewiesen wurden, können Sie nun folgende Aufgaben durchsetzen:
 
 - [Implementieren der Sicherheit](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Bereitstellen von Client Software wie Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
-- [Konfigurieren der Verwaltung mobiler Geräte](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Einrichten der Verwaltung mobiler Geräte in Office 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Konfigurieren von Diensten und Anwendungen](configure-services-and-applications.md)

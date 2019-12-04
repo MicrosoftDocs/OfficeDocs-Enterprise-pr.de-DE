@@ -3,6 +3,7 @@ title: Einrichten der Verzeichnissynchronisierung für Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
+ms.date: 12/03/2019
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,14 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Sie erfahren, wie Sie die Verzeichnissynchronisierung zwischen Office 365 und dem lokalen Active Directory einrichten.
-ms.openlocfilehash: 1798c54854bc5ecc82481aaabca3690e7212e135
-ms.sourcegitcommit: 36e760407a1f4b18bc108134628ed9a8d3e35a8a
-ms.translationtype: HT
+ms.openlocfilehash: 5cd56eb90e6421d530ff0c2b8739bd13be238eae
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34162478"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814593"
 ---
 # <a name="set-up-directory-synchronization-for-office-365"></a>Einrichten der Verzeichnissynchronisierung für Office 365
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Office 365 verwendet einen Azure Active Directory-Mandanten (Azure AD) zum Speichern und Verwalten von Identitäten für die Authentifizierung und Berechtigung zum Zugriff auf Cloud-basierte Ressourcen. 
 
@@ -83,17 +86,15 @@ Bevor Sie beginnen, sollten Sie sicherstellen, dass Sie über Folgendes verfüge
 Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an, (https://admin.microsoft.com) und wählen Sie im linken Navigationsbereich **Benutzer** \> ** Aktive Benutzer** aus.
-2. Wählen Sie im Admin Center auf der Seite **Aktive Benutzer** die Option **Weitere** \> **Verzeichnissynchronisierung** aus.
-
-    ![Wählen Sie im Menü "Mehr" die Option "Verzeichnissynchronisierung" aus](media/dc6669e5-c01b-471e-9cdf-04f5d44e1c4b.png)
+2. Wählen Sie auf der Seite **aktive Benutzer** die **Verzeichnissynchronisierung** **more** ( \> Three dots) aus.
   
-3. Wählen Sie auf der Seite **Active Directory-Vorbereitung** den Link **Microsoft Azure Active Directory Connect Tool herunterladen** aus, um mit den ersten Schritte zu beginnen. 
+3. Wählen Sie auf der Seite **Azure Active Directory Vorbereitung** die Option **zum Download Center wechseln** aus, um den Link zum Azure AD Connect-Tool zu erhalten. 
 4. Folgen Sie den Schritten in [Installationsübersicht: Azure AD Connect und Azure AD Connect Health](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. Abschließen der Einrichtung von Domänen
 
-Folgen Sie den Schritten unter [Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23), um die Einrichtung Ihrer Domäne abzuschließen.
+Folgen Sie den Schritten unter [Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), um die Einrichtung Ihrer Domäne abzuschließen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md).
+[Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)

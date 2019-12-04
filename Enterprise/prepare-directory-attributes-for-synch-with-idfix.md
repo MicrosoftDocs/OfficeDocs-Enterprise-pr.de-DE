@@ -16,14 +16,17 @@ search.appverid:
 - MOE150
 ms.assetid: 497593cf-24c6-491c-940b-7c86dcde9de0
 description: Enthält Anweisungen zur Verwendung von IdFix zum Vorbereiten und Bereinigen des lokalen Verzeichnisses vor dem Synchronisieren mit Office 365.
-ms.openlocfilehash: cba2889673d1ff50161cde77670f06ab40e233c0
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 623dc38290b44dd69644b24f7640b0d49bcd7722
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490788"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814613"
 ---
 # <a name="prepare-directory-attributes-for-synchronization-with-office-365-by-using-the-idfix-tool"></a>Vorbereiten von Verzeichnisattributen für die Synchronisierung mit Office 365 mithilfe des IdFix-Tools
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+
 Dieses Thema enthält detaillierte Anweisungen zum Ausführen des IdFix-Tools, einige häufige Fehler, die auftreten können, vorgeschlagene Korrekturen, Beispiele und bewährte Methoden für Vorgehensweisen bei einer großen Anzahl von Fehlern.
   
 ## <a name="fixing-errors-in-your-directory-by-using-the-idfix-gui"></a>Beheben von Fehlern in Ihrem Verzeichnis mithilfe der IdFix-GUI
@@ -32,7 +35,7 @@ Dieses Thema enthält detaillierte Anweisungen zum Ausführen des IdFix-Tools, e
   
 1. Bevor Sie mit der Durchführung von Änderungen beginnen, sehen Sie sich die von IdFix vorgestellten Empfehlungen an.
     
-2. Überblicken Sie die Liste der Fehler, die von IdFix zurückgegeben wurden. Sie können die Fehler nach Fehlertyp sortieren, indem Sie oben in der Spalte, in der die Fehlertypen aufgeführt werden, auf **Fehler** klicken. Wenn mehreren Fehlern ein einzelnes Attribut zugeordnet ist, werden die Fehler zu einer Zeile zusammengefasst. Wenn möglich, stellt IdFix eine Empfehlung für eine Korrektur in der Spalte **Aktualisieren** dar. Das Update basiert auf einer Überprüfung anderer Attribute, die einem Objekt zugeordnet sind. Diese sind zwar normalerweise besser als die, die sich bereits im Verzeichnis befinden, aber nur Sie können entscheiden, was wirklich richtig ist. 
+2. Überblicken Sie die Liste der Fehler, die von IdFix zurückgegeben wurden. Sie können die Fehler nach Fehlertyp sortieren, indem Sie oben in der Spalte, in der die Fehlertypen aufgelistet werden, auf **ERROR** klicken. Wenn mehreren Fehlern ein einzelnes Attribut zugeordnet ist, werden die Fehler zu einer Zeile zusammengefasst. Wenn möglich, stellt IdFix eine Empfehlung für eine Korrektur in der Spalte **Aktualisieren** dar. Das Update basiert auf einer Überprüfung anderer Attribute, die einem Objekt zugeordnet sind. Diese sind zwar normalerweise besser als die, die sich bereits im Verzeichnis befinden, aber nur Sie können entscheiden, was wirklich richtig ist. 
     
 3. Wenn IdFix einen Vorschlag für eine Korrektur für einen Duplizierungs Fehler enthält, wird der Fix durch eine von drei Flags am Anfang des Werts in der Spalte **Update** identifiziert, beispielsweise `[E]john.doe@contoso.com`. Wenn Sie den Vorschlag akzeptieren, wird das Flag beim Anwenden der Änderung nicht in das Verzeichnis eingefügt. Nur der Wert, der dem Suggestion-Flag folgt, wird angewendet, `john.doe@contoso.com`beispielsweise. Wenn Sie den Vorschlag akzeptieren möchten, wählen Sie die entsprechende Aktion in der Spalte **Aktion** aus. Die Flags zeigen Aktionen wie folgt an: 
     
@@ -42,7 +45,7 @@ Dieses Thema enthält detaillierte Anweisungen zum Ausführen des IdFix-Tools, e
     
  - **[R]** vorgeschlagene Aktion **Entfernen**. Der Wert ist ein SMTP-Proxy für ein Objekt, das nicht für e-Mail-aktiviert ist und möglicherweise problemlos entfernt werden kann.
     
-4. Nachdem Sie die Fehler gelesen und verstanden haben, aktualisieren Sie den Eintrag in der Spalte **Update** mit Ihren Änderungen, und wählen Sie dann in der Spalte **Aktion** aus, was Sie von IdFix ausführen möchten, um die Änderung zu implementieren. Beispielsweise kann es sein, dass zwei `proxyAddress` Benutzer als Duplikate identifiziert wurden. Nur ein Benutzer kann die `proxyAddress` for-e-Mail-Zustellung verwenden. Um dies zu beheben, markieren Sie die **** **Aktions** Spalte für den Benutzer mit dem korrekten Wert und markieren Sie die Spalte **Aktion** **Entfernen** für den anderen Benutzer. Dadurch wird das `proxyAddress` Attribut des Benutzers entfernt, dem dieser `proxyAddress` nicht angehört, und es nimmt keine Änderung an dem Benutzer vor `proxyAddress` , für den dies richtig ist.
+4. Nachdem Sie die Fehler gelesen und verstanden haben, aktualisieren Sie den Eintrag in der Spalte **Update** mit Ihren Änderungen, und wählen Sie dann in der Spalte **Aktion** aus, was Sie von IdFix ausführen möchten, um die Änderung zu implementieren. Beispielsweise kann es sein, dass zwei `proxyAddress` Benutzer als Duplikate identifiziert wurden. Nur ein Benutzer kann die `proxyAddress` for-e-Mail-Zustellung verwenden. Um dies zu beheben, markieren Sie die **Aktions** Spalte für den Benutzer mit dem korrekten Wert und markieren Sie **die Spalte** **Aktion** **Entfernen** für den anderen Benutzer. Dadurch wird das `proxyAddress` Attribut des Benutzers entfernt, dem dieser `proxyAddress` nicht angehört, und es nimmt keine Änderung an dem Benutzer vor `proxyAddress` , für den dies richtig ist.
     
 ## <a name="common-errors-and-fixes-detected-by-idfix"></a>Häufige Fehler und Korrekturen, die von IdFix erkannt wurden
 In der folgenden Tabelle werden die von IdFix erkannten Fehler beschrieben, die am häufigsten empfohlenen Korrekturen des Tools bereitgestellt und in einigen Fällen Beispiele für die Problembehebung bereitgestellt.
@@ -70,12 +73,12 @@ Um einen Fehler zu beheben, wählen Sie eine Option aus der Dropdownliste **Akti
 |**Rückgängig** | Diese Option ist nur verfügbar, wenn Sie aus einem Transaktionsprotokoll wiederhergestellt haben. Wenn Sie **Rückgängig**auswählen, wird der Attributwert auf den ursprünglichen Wert wiederhergestellt. ||
 |**FAIL** | Dieser Wert wird nur zurückgegeben, wenn ein **Aktualisierungs** Wert einen unbekannten Konflikt mit AD DS Regeln aufweist. In diesem Fall können Sie den Wert in der Spalte **Update** erneut bearbeiten, wenn Sie wissen, was der Fehler ist. Es kann erforderlich sein, die Werte im Objekt mithilfe der ADSI-Bearbeitung zu analysieren. Weitere Informationen finden Sie unter [ADSI-Editor (AdsiEdit. msc)](https://go.microsoft.com/fwlink/p/?LinkId=401170). ||
 
-Nachdem Sie eine **Aktion** für einen Fehler oder einen Batch von Fehlern ausgewählt haben, klicken Sie auf über **nehmen**. Wenn Sie auf über **nehmen**klicken, nimmt das Tool die Änderungen im Verzeichnis vor. Sie können Korrekturen für mehrere Fehler bereitstellen, bevor Sie auf über **nehmen** klicken, und IdFix wird Sie alle gleichzeitig ändern.
+Nachdem Sie eine **Aktion** für einen Fehler oder einen Batch von Fehlern ausgewählt haben, klicken Sie auf über **nehmen**. Wenn Sie auf **Apply** klicken, nimmt das Tool die Änderungen im Verzeichnis vor. Sie können Korrekturen für mehrere Fehler bereitstellen, bevor Sie auf über **nehmen** klicken, und IdFix wird Sie alle gleichzeitig ändern.
 
-Führen Sie IdFix erneut aus, um sicherzustellen, dass die von Ihnen vorgenommenen Korrekturen keine neuen Fehler verursachen. Sie können diese Schritte so oft wie nötig wiederholen. Es empfiehlt sich, den Prozess einige Male vor dem Synchronisieren durchzugehen.
+Führen Sie IdFix erneut aus, um sicherzustellen, dass die von Ihnen vorgenommenen Korrekturen keine neuen Fehler verursachen. Sie können diese Schritte beliebig oft wiederholen. Es ist eine gute Idee, den Vorgang ein paar Mal durchzugehen, bevor Sie die Synchronisierung vornehmen.
     
 ## <a name="changing-the-rule-set-used-by-idfix"></a>Ändern des von IdFix verwendeten Regelsatzes
-Standardmäßig verwendet IdFix den mehrmandantenfähigen Regelsatz, um die Einträge in Ihrem Verzeichnis zu testen. Dies ist der richtige Regelsatz für die meisten Office 365 = Customers. Wenn Sie jedoch ein Office 365 dedizierter oder ITAR (International Traffic in Arms Regulations)-Kunde sind, können Sie IdFix so konfigurieren, dass stattdessen der dedizierte Regelsatz verwendet wird. Wenn Sie nicht sicher sind, welche Art von Kunde Sie haben, können Sie diesen Schritt gefahrlos überspringen. Klicken Sie auf das Zahnradsymbol in der Menüleiste, und klicken Sie dann auf **dediziert**, um den Regelsatz auf dediziert festzulegen.
+IdFix verwendet standardmäßig den mehrinstanzenfähigen Regelsatz zum Testen der Einträge in Ihrem Verzeichnis. Dies ist der richtige Regelsatz für die meisten Office 365 = Customers. Wenn Sie jedoch ein Office 365 dedizierter oder ITAR (International Traffic in Arms Regulations)-Kunde sind, können Sie IdFix so konfigurieren, dass stattdessen der dedizierte Regelsatz verwendet wird. Wenn Sie nicht sicher sind, was für ein Kundentyp Sie sind, können Sie diesen Schritt einfach überspringen. Klicken Sie auf das Zahnradsymbol in der Menüleiste, und klicken Sie dann auf **dediziert**, um den Regelsatz auf dediziert festzulegen.
   
 ## <a name="changing-the-scope-of-the-search-used-by-idfix"></a>Ändern des Bereichs der Suche, die von IdFix verwendet wird
 Standardmäßig durchsucht IdFix das gesamte Verzeichnis. Wenn Sie möchten, können Sie das Tool so konfigurieren, dass stattdessen eine bestimmte Unterstruktur durchsucht wird. Klicken Sie dazu in der Menüleiste auf das Filter Symbol, und geben Sie eine gültige Unterstruktur ein.

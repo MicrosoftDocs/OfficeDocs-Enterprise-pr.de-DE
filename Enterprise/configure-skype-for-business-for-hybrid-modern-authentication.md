@@ -3,7 +3,7 @@ title: Lokale Konfiguration von Skype for Business derart, dass die moderne Hybr
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/4/2018
+ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -14,89 +14,89 @@ ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server sowie für geteilte Domänen Skype for Business Hybriden verfügbar ist.
-ms.openlocfilehash: ff5a4e4238fd659a00abc0f87c4a5c40da6aa61e
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: fbbf7c9188d7c0a1d9d4b936b066c0a1fa4e83e9
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38746208"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813433"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server sowie für geteilte Domänen Skype for Business Hybriden verfügbar ist.
   
- **Wichtiger Hinweis** Möchten Sie mehr über die moderne Authentifizierung (MA) erfahren und warum Sie Sie in Ihrem Unternehmen oder Ihrer Organisation verwenden möchten? In [diesem Dokument](hybrid-modern-auth-overview.md) finden Sie eine Übersicht. Wenn Sie wissen möchten, welche Skype for Business Topologien mit MA unterstützt werden, ist dies hier dokumentiert! 
+ **Wichtiger Hinweis** Möchten Sie mehr über die moderne Authentifizierung (MA) erfahren und warum Sie Sie in Ihrem Unternehmen oder Ihrer Organisation verwenden möchten? In [diesem Dokument](hybrid-modern-auth-overview.md) finden Sie eine Übersicht. Wenn Sie wissen möchten, welche Skype for Business Topologien mit MA unterstützt werden, ist dies hier dokumentiert!
   
- **Bevor wir beginnen**, rufe ich Folgendes auf: 
+ **Bevor wir beginnen**, rufe ich Folgendes auf:
   
 - Moderne Authentifizierung \> MA
-    
+
 - Hybride moderne \> Authentifizierung HMA
-    
+
 - Lokaler \> Exchange-Austausch
-    
+
 - Exchange Online \> Exo
-    
+
 - Skype for Business lokaler \> SFB
-    
+
 - und Skype for Business Online \> SFBO
-    
-* Wenn eine Grafik in diesem Artikel ein Objekt enthält, das "abgeblendet" oder "abgeblendet" ist, bedeutet das, dass das in Grau dargestellte Element nicht in der MA-spezifischen Konfiguration enthalten **ist** . * 
+
+Wenn eine Grafik in diesem Artikel ein abgeblendetes oder abgeblendetes Objekt enthält, bedeutet dies auch, dass das in Grau dargestellte Element nicht in der MA-spezifischen Konfiguration enthalten **ist** .
   
 ## <a name="read-the-summary"></a>Lesen Sie die Zusammenfassung
 
-In dieser Zusammenfassung wird der Prozess in Schritte unterteilt, die andernfalls möglicherweise während der Ausführung verloren gehen, und eignet sich gut für eine allgemeine Prüfliste, um die Position im Prozess nachzuverfolgen.
+In dieser Zusammenfassung wird der Prozess in Schritte unterteilt, die andernfalls während der Ausführung verloren gehen können, und eignet sich gut für eine allgemeine Prüfliste, um die Position im Prozess nachzuverfolgen.
   
 1. Stellen Sie zunächst sicher, dass alle Voraussetzungen erfüllt sind.
-    
-1. Da zahlreiche **Voraussetzungen** sowohl für Skype for Business als auch für Exchange gelten, [Lesen Sie den Übersichtsartikel über die Prüfliste für vorab](hybrid-modern-auth-overview.md)Anforderungen. Tun Sie dies, *bevor* Sie einen der Schritte in diesem Artikel beginnen. 
-    
-2. Sammeln Sie die HMA-spezifischen Informationen, die Sie in einer Datei oder in OneNote benötigen.
-    
-3. Aktivieren Sie die moderne Authentifizierung für Exo (sofern Sie noch nicht aktiviert ist).
-    
-4. Aktivieren Sie die moderne Authentifizierung für SFBO (sofern Sie noch nicht aktiviert ist).
-    
-5. Aktivieren Sie die hybride moderne Authentifizierung für Exchange lokal.
-    
-6. Aktivieren Sie die moderne Hybrid Authentifizierung für Skype for Business lokal.
-    
-Hinweis: diese Schritte aktivieren den MA für SFB, SFBO, Wechsel und Exo, also alle Produkte, die an einer HMA-Konfiguration von SFB und SFBO teilnehmen können (einschließlich Abhängigkeiten von Wechsel/Exo). In anderen Worten: Wenn Ihre Benutzer in einem beliebigen Teil des Hybrids (Exo + SFBO, Exo + SFB, interSFBO, oder mit dem SFB) erstellt wurden oder Postfächer besitzen, sieht Ihr fertiges Produkt wie folgt aus:
+
+1. Da zahlreiche **Voraussetzungen** sowohl für Skype for Business als auch für Exchange gelten, [Lesen Sie den Übersichtsartikel über die Prüfliste für vorab](hybrid-modern-auth-overview.md)Anforderungen. Tun Sie dies, *bevor* Sie einen der Schritte in diesem Artikel beginnen.
+
+1. Sammeln Sie die HMA-spezifischen Informationen, die Sie in einer Datei oder in OneNote benötigen.
+
+1. Aktivieren Sie die moderne Authentifizierung für Exo (sofern Sie noch nicht aktiviert ist).
+
+1. Aktivieren Sie die moderne Authentifizierung für SFBO (sofern Sie noch nicht aktiviert ist).
+
+1. Aktivieren Sie die hybride moderne Authentifizierung für Exchange lokal.
+
+1. Aktivieren Sie die moderne Hybrid Authentifizierung für Skype for Business lokal.
+
+Mit diesen Schritten wird MA für SFB, SFBO, Wechsel und Exo aktiviert, also alle Produkte, die an einer HMA-Konfiguration von SFB und SFBO teilnehmen können (einschließlich Abhängigkeiten von Wechsel/Exo). In anderen Worten: Wenn Ihre Benutzer in einem beliebigen Teil des Hybrids (Exo + SFBO, Exo + SFB, interSFBO, oder mit dem SFB) erstellt wurden oder Postfächer besitzen, sieht Ihr fertiges Produkt wie folgt aus:
   
 ![Eine gemischte 6 Skype for Business-HMA-Topologie hat MA an an allen vier möglichen Standorten.](media/ab89cdf2-160b-49ac-9b71-0160800acfc8.png)
   
 Wie Sie sehen können, gibt es vier unterschiedliche Orte, an denen MA aktiviert werden kann. Für eine optimale Benutzererfahrung empfehlen wir Ihnen, MA an allen vier Standorten einzuschalten. Wenn Sie den MA nicht an allen diesen Speicherorten aktivieren können, passen Sie die Schritte so an, dass Sie den MA nur an den für Ihre Umgebung erforderlichen Speicherorten aktivieren.
   
-Weitere Informationen finden Sie im [Thema zur Unterstützung von Skype for Business mit MA](https://technet.microsoft.com/library/mt803262.aspx) für unterstützte Topologien. 
+Weitere Informationen finden Sie im [Thema zur Unterstützung von Skype for Business mit MA](https://technet.microsoft.com/library/mt803262.aspx) für unterstützte Topologien.
   
  **Wichtiger Hinweis** Stellen Sie sicher, dass alle Voraussetzungen erfüllt sind, bevor Sie beginnen. Diese Informationen finden Sie [hier](hybrid-modern-auth-overview.md).
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Sammeln Sie alle HMA-spezifischen Informationen, die Sie benötigen.
 
-Nachdem Sie die [Voraussetzungen](hybrid-modern-auth-overview.md) für die Verwendung der modernen Authentifizierung überprüft haben (siehe Hinweis oben), sollten Sie eine Datei erstellen, in der die Informationen gespeichert sind, die Sie für die Konfiguration von HMA in den nächsten Schritten benötigen. In diesem Artikel verwendete Beispiele: 
+Nachdem Sie die [Voraussetzungen](hybrid-modern-auth-overview.md) für die Verwendung der modernen Authentifizierung überprüft haben (siehe Hinweis oben), sollten Sie eine Datei erstellen, in der die Informationen gespeichert sind, die Sie für die Konfiguration von HMA in den nächsten Schritten benötigen. In diesem Artikel verwendete Beispiele:
   
 - **SIP/SMTP-Domäne**
-    
+
   - Ex. contoso.com (ist Verbund mit Office 365)
-    
+
 - **Mandanten-ID**
-    
+
   - Die GUID, die den Office 365-Mandanten darstellt (beim Anmelden von contoso.onmicrosoft.com).
-    
+
 - **SFB 2015 CU5-Webdienst-URLs**
-    
+
 Sie benötigen interne und externe Webdienst-URLs für alle bereitgestellten SFB 2015-Pools. Um diese zu erhalten, führen Sie Folgendes aus Skype for Business-Verwaltungsshell aus:
   
-```
+```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
 ```
 
 - Ex. Internenhttps://lyncwebint01.contoso.com
-    
+
 - Ex. Externenhttps://lyncwebext01.contoso.com
-    
+
 Wenn Sie ein Standard Edition-Server verwenden, ist die interne URL leer. Verwenden Sie in diesem Fall den Pool-FQDN für die interne URL.
   
 ## <a name="turn-on-modern-authentication-for-exo"></a>Aktivieren der modernen Authentifizierung für Exo
@@ -117,56 +117,56 @@ Befolgen Sie die Anweisungen hier: [konfigurieren Exchange Server lokal für die
 
 Jetzt müssen Sie Befehle ausführen, um die zuvor gesammelten URLs als Dienst Prinzipale in SFBO hinzuzufügen.
   
- **Hinweis:** Dienstprinzipalnamen (Service Principal Names, SPNs) identifizieren Webdienste und ordnen Sie einem Sicherheitsprinzipal zu (beispielsweise einem Kontonamen oder einer Gruppe), damit der Dienst im Auftrag eines autorisierten Benutzers agieren kann. Für Clients, die sich bei einem Server authentifizieren, werden Informationen verwendet, die in SPNs enthalten sind. 
+ **Hinweis:** Dienstprinzipalnamen (Service Principal Names, SPNs) identifizieren Webdienste und ordnen Sie einem Sicherheitsprinzipal zu (beispielsweise einem Kontonamen oder einer Gruppe), damit der Dienst im Auftrag eines autorisierten Benutzers agieren kann. Für Clients, die sich bei einem Server authentifizieren, werden Informationen verwendet, die in SPNs enthalten sind.
   
 1. Stellen Sie zuerst eine Verbindung mit Aad mit [diesen Anweisungen](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)her.
-    
+
 2. Führen Sie diesen Befehl lokal aus, um eine Liste der SFB-Webdienst-URLs zu erhalten.
 
    Beachten Sie, dass die AppPrincipalId `00000004`mit beginnt. Dies entspricht Skype for Business Online.
-    
+
    Notieren Sie sich (und Screenshot für einen späteren Vergleich) die Ausgabe dieses Befehls, die eine SE-und WS-URL enthalten wird, aber meistens aus SPNs `00000004-0000-0ff1-ce00-000000000000/`besteht, die mit beginnen.
-    
-```
+
+```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
 ```
-    
-3. Wenn die internen **oder** externen SFB-URLs von lokal fehlen (beispielsweise, https://lyncwebint01.contoso.com und https://lyncwebext01.contoso.com) wir müssen diese spezifischen Einträge zu dieser Liste hinzufügen. 
-    
-    Stellen Sie sicher, dass Sie *die Beispiel-URLs* unten mit ihren tatsächlichen URLs in den Befehlen hinzufügen ersetzen! 
+
+3. Wenn die internen **oder** externen SFB-URLs von lokal fehlen (beispielsweise, https://lyncwebint01.contoso.com und https://lyncwebext01.contoso.com) wir müssen diese spezifischen Einträge zu dieser Liste hinzufügen.
+
+    Stellen Sie sicher, dass Sie *die Beispiel-URLs* unten mit ihren tatsächlichen URLs in den Befehlen hinzufügen ersetzen!
   
-```  
+```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
 $x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
 $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs https://lyncwebint01.contoso.com und. https://lyncwebext01.contoso.com/
-    
+4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl **Get-MsolServicePrincipal** aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs https://lyncwebint01.contoso.com und. https://lyncwebext01.contoso.com/
+
 ### <a name="create-the-evosts-auth-server-object"></a>Erstellen des EvoSTS-Authentifizierungs Server Objekts
 
 Führen Sie den folgenden Befehl in der Skype for Business-Verwaltungsshell aus.
   
-```
+```powershell
 New-CsOAuthServer -Identity evoSTS -MetadataURL https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml -AcceptSecurityIdentifierInformation $true -Type AzureAD
 ```
-    
+
 ### <a name="enable-hybrid-modern-authentication"></a>Aktivieren der modernen Hybrid Authentifizierung
 
-Dies ist der Schritt, bei dem MA tatsächlich aktiviert wird. Alle vorherigen Schritte können vorzeitig ausgeführt werden, ohne dass der Client Authentifizierungs Fluss geändert wird. Wenn Sie den Authentifizierungs Fluss ändern möchten, führen Sie diesen Befehl in der Skype for Business-Verwaltungsshell aus. 
-  
-```
+Dies ist der Schritt, bei dem MA tatsächlich aktiviert wird. Alle vorherigen Schritte können vorzeitig ausgeführt werden, ohne dass der Client Authentifizierungs Fluss geändert wird. Wenn Sie den Authentifizierungs Fluss ändern möchten, führen Sie diesen Befehl in der Skype for Business-Verwaltungsshell aus.
+
+```powershell
 Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 ```
-    
+
 ## <a name="verify"></a>Überprüfen
 
 Nachdem Sie HMA aktiviert haben, verwendet die nächste Anmeldung eines Clients den neuen auth-Fluss. Beachten Sie, dass durch das Aktivieren von HMA keine erneute Authentifizierung für einen beliebigen Client ausgelöst wird. Die Clients authentifizieren sich erneut basierend auf der Lebensdauer der Authentifizierungstoken und/oder certs, die Sie besitzen.
   
-Um zu testen, ob HMA funktioniert, nachdem Sie es aktiviert haben, melden Sie sich bei einem Windows-Client für die Test-SFB an, und klicken Sie auf "Meine Anmeldeinformationen löschen". Melden Sie sich erneut an. Der Client sollte jetzt den modernen auth-Fluss verwenden, und Ihre Anmeldung enthält nun eine **Office 365** Eingabeaufforderung für ein "Geschäfts-oder Schulkonto", das Sie direkt sehen, bevor der Client den Server kontaktiert und Sie angemeldet ist. 
+Um zu testen, ob HMA funktioniert, nachdem Sie es aktiviert haben, melden Sie sich bei einem Windows-Client für die Test-SFB an, und klicken Sie auf "Meine Anmeldeinformationen löschen". Melden Sie sich erneut an. Der Client sollte jetzt den modernen auth-Fluss verwenden, und Ihre Anmeldung enthält nun eine **Office 365** Eingabeaufforderung für ein "Geschäfts-oder Schulkonto", das Sie direkt sehen, bevor der Client den Server kontaktiert und Sie angemeldet ist.
   
-Sie sollten auch die "Konfigurationsinformationen" für Skype for Business Clients für eine "OAuth Authority" überprüfen. Um dies auf dem Clientcomputer zu tun, halten Sie die STRG-Taste gleichzeitig mit der rechten Maustaste auf das Symbol Skype for Business in der Windows-Benachrichtigungsleiste. Klicken Sie im angezeigten Menü auf Konfigurationsinformationen. Suchen Sie im Fenster "Skype for Business Konfigurationsinformationen", das auf dem Desktop angezeigt wird, nach folgendem:
+Sie sollten auch die "Konfigurationsinformationen" für Skype for Business Clients für eine "OAuth Authority" überprüfen. Um dies auf dem Clientcomputer zu tun, halten Sie die STRG-Taste gleichzeitig mit der rechten Maustaste auf das Symbol Skype for Business in der Windows-Benachrichtigungsleiste. Klicken Sie im angezeigten Menü auf **Konfigurationsinformationen** . Suchen Sie im Fenster "Skype for Business Konfigurationsinformationen", das auf dem Desktop angezeigt wird, nach folgendem:
   
 ![Die Konfigurationsinformationen eines Skype for Business Clients mit moderner Authentifizierung zeigen eine lync-und EWS-OAUTH-Autoritäts-URL von an https://login.windows.net/common/oauth2/authorize.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
@@ -174,10 +174,6 @@ Sie sollten auch die STRG-Taste gleichzeitig gedrückt halten, indem Sie mit der
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Link zurück zur modernen Authentifizierung (Übersicht](hybrid-modern-auth-overview.md) ). 
+[Link zurück zur modernen Authentifizierung (Übersicht](hybrid-modern-auth-overview.md)).
   
 Müssen Sie wissen, wie Sie die moderne Authentifizierung (Adal) für Ihre Skype for Business Clients verwenden können? Wir haben [hier](https://technet.microsoft.com/library/mt710548.aspx)Schritte.
-  
-Möchten Sie diese Schritte so lesen, dass Sie für Exchange Server lokal ohne SFB ausgeführt werden? Diese Schritte stehen hier zur Verfügung.
-  
-

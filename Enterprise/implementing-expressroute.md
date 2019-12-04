@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zugreifen können, um eine anschließende Weiterverteilung dieser IP-Präfixe in Ihrem Netzwerk. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
-ms.openlocfilehash: 3e3171c3058b485ef644af3f1d33a9f80c71345c
-ms.sourcegitcommit: 0449c6f854c682719cac1bd0d086f2e3b20078b9
+ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "34722724"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813483"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementieren von ExpressRoute für Office 365
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zugreifen können, um eine anschließende Weiterverteilung dieser IP-Präfixe in Ihrem Netzwerk. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
   
@@ -89,7 +91,7 @@ Ihr Netzwerkdaten Verkehrs Katalog sollte Auflistungen aller eingehenden und aus
 
 - Bei eingehenden Netzwerkdatenverkehr handelt es sich um Szenarien, in denen eine Verbindung von der Microsoft-Cloud zu einem lokalen Host initiiert wird. Diese Verbindungen müssen in der Regel durch die Firewall und andere Sicherheitsinfrastrukturen geleitet werden, die von der Kunden Sicherheitsrichtlinie für extern entstandene Datenflüsse benötigt werden.
 
-Lesen Sie den Abschnitt " **sicherstellen der Routen Symmetrie** " im Artikel [Routing mit Express Route für Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) , um festzustellen, welche Dienste eingehenden Datenverkehr senden, und suchen Sie nach der Spalte mit der Bezeichnung **Express Route für Office 365** im [Office 365 ](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)Endpunkte – Referenzartikel zum Ermitteln der restlichen Verbindungsinformationen.
+Lesen Sie den Abschnitt " **sicherstellen der Routen Symmetrie** " im Artikel [Routing mit Express Route für Office 365](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) , um zu ermitteln, welche Dienste eingehenden Datenverkehr senden werden, und suchen Sie nach der Spalte mit der Bezeichnung **Express Route für Office 365** im Referenzartikel [Office 365 Endpunkte](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) , um die restlichen Verbindungsinformationen zu ermitteln.
   
 Für jeden Dienst, der eine ausgehende Verbindung erfordert, sollten Sie die geplante Konnektivität für den Dienst einschließlich Netzwerkrouting, Proxykonfiguration, Paketüberprüfung und Bandbreitenbedarf beschreiben.
   
@@ -185,10 +187,10 @@ Oftmals gibt es mehrere Meet-Me-Standorte, die in einer Region mit relativer Nä
 
 |**Geplante Express Route Meet-Me-Standorte in Kalifornien und New York**||
 |:-----|:-----|
-|Standort  <br/> |Anzahl der Personen  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Internet Austritt  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Express Route  <br/> |
-|München  <br/> |10,000  <br/> |~ 15ms  <br/> |~ 10ms (via Silicon Valley)  <br/> |
+|Ort  <br/> |Anzahl der Personen  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Internet Austritt  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Express Route  <br/> |
+|München  <br/> |10.000  <br/> |~ 15ms  <br/> |~ 10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~ 20ms  <br/> |~ 10ms (über New York)  <br/> |
-|Dallas  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (über New York)  <br/> |
+|Dallas  <br/> |5 000  <br/> |~ 15ms  <br/> |~ 40ms (über New York)  <br/> |
 
 Nachdem die globale Netzwerkarchitektur mit der Office 365 Region, Express Route-Standort für den Netzwerkdienstanbieter und die Anzahl der Personen nach Standort entwickelt wurde, kann Sie verwendet werden, um zu ermitteln, ob Optimierungen vorgenommen werden können. Möglicherweise werden auch globale Haarnadel-Netzwerkverbindungen angezeigt, bei denen der Datenverkehr an einen entfernten Standort weitergeleitet wird, um den Standort "Meet-Me" zu erhalten. Wenn eine Haarnadel im globalen Netzwerk erkannt wird, sollte Sie korrigiert werden, bevor Sie fortfahren kann. Suchen Sie entweder einen anderen Meet-Me-Standort, oder verwenden Sie selektive Internet-Ausbruch Punkte, um die Haarnadel zu vermeiden.
   
@@ -397,7 +399,7 @@ Er hilft bei der Durchführung von Routen mit einer zweiten Person. Erklären Si
 
 ![Verwenden von PAC-Dateien mit Express Route](media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
-Wenn Sie einen Proxy Server für den internetgebundenen Datenverkehr verwenden, müssen Sie alle PAC-oder Client Konfigurationsdateien anpassen, um sicherzustellen, dass die Clientcomputer in Ihrem Netzwerk ordnungsgemäß konfiguriert sind, um den Express Route-Datenverkehr zu senden, den Sie ohne Übertragung Office 365 möchten. der Proxy Server und der verbleibende Datenverkehr, einschließlich einiger Office 365 Datenverkehrs, werden an den entsprechenden Proxy gesendet. Lesen Sie unser Leitfaden zum [Verwalten von Office 365](https://aka.ms/manageo365endpoints) Endpunkten, beispielsweise PAC-Dateien.
+Wenn Sie einen Proxy Server für den internetgebundenen Datenverkehr verwenden, müssen Sie alle PAC-oder Client Konfigurationsdateien anpassen, um sicherzustellen, dass die Clientcomputer in Ihrem Netzwerk ordnungsgemäß konfiguriert sind, um den Express Route-Datenverkehr zu senden, den Sie ohne Übertragung Office 365 möchten. der Proxy Server und der verbleibende Datenverkehr, einschließlich einiger Office 365 Datenverkehrs, werden an den entsprechenden Proxy gesendet. Lesen Sie unser Leitfaden zum [Verwalten von Office 365 Endpunkten](https://aka.ms/manageo365endpoints) , beispielsweise PAC-Dateien.
   
 > [!NOTE]
 > Die Endpunkte ändern sich häufig, so oft wie wöchentlich. Sie sollten Änderungen nur basierend auf den Diensten und Features vornehmen, die Ihre Organisation angenommen hat, um die Anzahl der Änderungen zu reduzieren, die Sie vornehmen müssen, um auf dem aktuellen Stand zu bleiben. Achten Sie genau auf das **effektive Datum** im RSS-Feed, in dem die Änderungen angekündigt und ein Datensatz allerletzten Änderungen aufbewahrt wird, IP-Adressen, die angekündigt werden, möglicherweise erst nach Erreichen des Gültigkeitsdatums beworben oder aus der Werbung entfernt werden.
@@ -568,7 +570,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/impl
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Bewerten Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)
+[Bewerten der Office 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
   
 [Azure ExpressRoute für Office 365](azure-expressroute.md)
   

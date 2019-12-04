@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'In diesem Artikel erfahren Sie, wie Sie Office 365 für Unternehmen aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei mehrere Benutzer hinzufügen können. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Office 365 erläutert wird. Am Ende dieses Prozesses verfügt jeder Benutzer mit einem Konto über ein Office 365 Postfach. '
-ms.openlocfilehash: 864bdf788b0beefce49a53382795d522114aad5d
-ms.sourcegitcommit: 23c8781d1a2b0472612c3a2cb6e5d13edb03e236
+ms.openlocfilehash: 16cea3b09da7d6450efd09bad0937bfcef9f70ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702216"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813493"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 – Administratorhilfe
 
@@ -142,3 +142,10 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
     
 - **Wenn die neuen Benutzer nicht sofort in Office 365 angezeigt werden, warten Sie einige Minuten.** Es kann eine Weile dauern, bis Änderungen alle Dienste in Office 365 durchlaufen. 
     
+## <a name="related-articles"></a>Verwandte Artikel
+
+[Hinzufügen von Benutzern einzeln oder in loser Schüttung zu Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+
+
+
+

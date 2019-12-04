@@ -14,12 +14,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint-Veröffentlichung in SharePoint Online beschrieben. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Dieser Artikel gilt nicht für klassische Teamwebsites.
-ms.openlocfilehash: d86b0462e8ddb93c39eab0d42a24f3a94f785ecd
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ce6bde50d35cdddf28fed4ad6c74a9a2da8193af
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078310"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814193"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
@@ -35,19 +35,19 @@ Die zweite Option, die [**strukturelle Navigation**](#using-structural-navigatio
 
 Neben den standardmäßigen Navigations Anbietern haben viele Kunden erfolgreich Alternative benutzerdefinierte Navigations Implementierungen implementiert. Eine allgemeine Klasse von Implementierungen für benutzerdefinierte Navigation umfasst Client gerenderte Entwurfsmuster, die einen lokalen Cache von Navigationsknoten speichern. (Weitere Informationen finden Sie in diesem Artikel unter **[Such gesteuerte clientseitige Skripts](#using-search-driven-client-side-scripting)** .)
 
-Diese Navigationsanbieter haben einige wichtige Vorteile: 
-- Sie funktionieren im Allgemeinen gut mit reaktionsschnellen Seitendesigns.
-- Sie sind extrem skalierbar und leistungsfähig, da Sie ohne Ressourcenkosten Rendern können (und nach einem Timeout im Hintergrund aktualisieren). 
-- Diese Navigationsanbieter können Navigationsdaten mithilfe verschiedener Strategien abrufen, von einfachen statischen Konfigurationen bis hin zu verschiedenen dynamischen Datenanbietern. 
+Diese Navigationsanbieter haben einige wichtige Vorteile:
 
-Ein Beispiel für einen Datenanbieter ist die Verwendung einer **Such gesteuerten Navigation**, die Flexibilität beim Aufzählen von Navigationsknoten und der effizienten Handhabung von Sicherheits Trimmungen ermöglicht. 
+- Sie funktionieren im Allgemeinen gut mit reaktionsschnellen Seitendesigns.
+- Sie sind extrem skalierbar und leistungsfähig, da Sie ohne Ressourcenkosten Rendern können (und nach einem Timeout im Hintergrund aktualisieren).
+- Diese Navigationsanbieter können Navigationsdaten mithilfe verschiedener Strategien abrufen, von einfachen statischen Konfigurationen bis hin zu verschiedenen dynamischen Datenanbietern.
+
+Ein Beispiel für einen Datenanbieter ist die Verwendung einer **Such gesteuerten Navigation**, die Flexibilität beim Aufzählen von Navigationsknoten und der effizienten Handhabung von Sicherheits Trimmungen ermöglicht.
 
 Es gibt andere beliebte Optionen zum Erstellen **benutzerdefinierter Navigationsanbieter**. Weitere Anleitungen zum Erstellen eines benutzerdefinierten Navigations Anbieters finden Sie unter [Navigationslösungen für SharePoint Online-Portale](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) .
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vorteile und Nachteile von SharePoint Online Navigationsoptionen
 
-In der folgenden Tabelle sind die vor-und Nachteile der einzelnen Optionen zusammengefasst. 
-
+In der folgenden Tabelle sind die vor-und Nachteile der einzelnen Optionen zusammengefasst.
 
 |Verwaltete Navigation  |Strukturelle Navigation  |Such gesteuerte Navigation  |Benutzerdefinierter Navigationsanbieter  |
 |---------|---------|---------|---------|
@@ -58,8 +58,7 @@ Die am besten geeignete Option für Ihre Website hängt von den Anforderungen Ih
 
 Die Option "verwaltete Navigation" kann über die Konfiguration verwaltet werden, umfasst keine Code Anpassungsdateien und ist wesentlich schneller als die strukturelle Navigation. Wenn Sie eine Sicherheits Kürzung benötigen und mit einer benutzerdefinierten Gestaltungsvorlage vertraut sind und die Möglichkeit haben, die Änderungen beizubehalten, die in der standardgestaltungsvorlage für SharePoint Online auftreten können, kann die Such gesteuerte Option eine bessere Benutzeroberfläche. Wenn Sie komplexere Anforderungen haben, ist möglicherweise ein benutzerdefinierter Navigationsanbieter die richtige Wahl. Die strukturelle Navigation wird nicht empfohlen.
 
-Schließlich ist es wichtig zu beachten, dass SharePoint zusätzliche Navigationsanbieter und Funktionen für moderne SharePoint-Website Architekturen hinzufügen, die eine vereinfachte Websitehierarchie und ein Hub-and-Spoke-Modell mit SharePoint-Hub-Websites nutzen. Auf diese Weise können viele Szenarien erreicht werden, für die die Verwendung des SharePoint-Veröffentlichungsfeatures nicht erforderlich ist, und diese Navigations Konfigurationen sind für die Skalierbarkeit und Latenz in SharePoint Online optimiert. Beachten Sie, dass die Anwendung des gleichen Prinzips-das Vereinfachen der Gesamtstruktur Ihrer SharePoint-Veröffentlichungswebsite auf eine flache Struktur-häufig auch die Gesamtleistung und die Skalierung unterstützt. Dies bedeutet, dass statt einer einzelnen Websitesammlung mit Hunderten von Websites (Unterwebs) ein besserer Ansatz darin besteht, viele Websitesammlungen mit sehr wenigen Unterwebsites (Unterwebs) zu haben.
-
+Schließlich ist es wichtig zu beachten, dass SharePoint zusätzliche Navigationsanbieter und Funktionen für moderne SharePoint-Website Architekturen hinzufügen, die eine vereinfachte Websitehierarchie und ein Hub-and-Spoke-Modell mit SharePoint-Hub-Websites nutzen. Auf diese Weise können viele Szenarien erreicht werden, für die die Verwendung des SharePoint-Veröffentlichungsfeatures nicht erforderlich ist, und diese Navigations Konfigurationen sind für die Skalierbarkeit und Latenz in SharePoint Online optimiert. Beachten Sie, dass die Anwendung des gleichen Prinzips zur Vereinfachung der Gesamtstruktur Ihrer SharePoint-Veröffentlichungswebsite auf eine flache Struktur häufig auch die Gesamtleistung und die Skalierung unterstützt. Dies bedeutet, dass statt einer einzelnen Websitesammlung mit Hunderten von Websites (Unterwebs) ein besserer Ansatz darin besteht, viele Websitesammlungen mit sehr wenigen Unterwebsites (Unterwebs) zu haben.
 
 ## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Verwenden der verwalteten Navigation und der Metadaten in SharePoint Online
 
@@ -71,7 +70,7 @@ Für viele Websites ist keine Sicherheits Kürzung erforderlich, da die Navigati
 
 Es gibt mehrere Artikel über docs.Microsoft.com zu den Details der verwalteten Navigation, beispielsweise unter [Übersicht über die verwaltete Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
 
-Um die verwaltete Navigation zu implementieren, richten Sie Begriffe mit URLs ein, die der Navigationsstruktur der Website entsprechen. Die verwaltete Navigation kann sogar manuell kuratiert werden, um die Struktur Navigation in vielen Fällen zu ersetzen. Beispiel:
+Um die verwaltete Navigation zu implementieren, richten Sie Begriffe mit URLs ein, die der Navigationsstruktur der Website entsprechen. Die verwaltete Navigation kann sogar manuell kuratiert werden, um die Struktur Navigation in vielen Fällen zu ersetzen. Zum Beispiel:
 
 ![SharePoint Online Websitestruktur](media/SPONavOptionsListOfSites.png)
 
@@ -95,7 +94,7 @@ Veranschaulichen Sie, wie die Leistung in einer Standard SharePoint Online Lösu
   
 ### <a name="analyzing-structural-navigation-performance-in-sharepoint-online"></a>Analysieren der Leistungsfähigkeit der Struktur Navigation in SharePoint Online
 
-Um die Leistung einer SharePoint-Seite zu analysieren, verwenden Sie die Registerkarte **Netzwerk** der F12-Entwicklertools in Internet Explorer. 
+Um die Leistung einer SharePoint-Seite zu analysieren, verwenden Sie die Registerkarte **Netzwerk** der F12-Entwicklertools in Internet Explorer.
   
 ![Screenshot mit der Registerkarte "F12-Entwicklungstools Netzwerk"](media/SPONavOptionsNetworks.png)
   
@@ -114,13 +113,13 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Beispiel: Ersetzen des Standard Navigations Codes in einer Gestaltungsvorlage
 
-1.  Navigieren Sie zur Seite Websiteeinstellungen.
-2.  Öffnen Sie den gestaltungsvorlagenkatalog, indem Sie auf **Masterseiten**klicken.
-3.  Von hier aus können Sie durch die Bibliothek navigieren und die Datei `seattle.master`herunterladen.
-4.  Bearbeiten Sie den Code mit einem Text-Editor, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen des angezeigten Codeblocks](media/SPONavOptionsDeleteCodeBlock.png)<br/>
+1. Navigieren Sie zur Seite Websiteeinstellungen.
+2. Öffnen Sie den gestaltungsvorlagenkatalog, indem Sie auf **Masterseiten**klicken.
+3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei `seattle.master`herunterladen.
+4. Bearbeiten Sie den Code mit einem Text-Editor, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen des angezeigten Codeblocks](media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Entfernen Sie den Code zwischen `<SharePoint:AjaxDelta id=”DeltaTopNavigation”>` den `<\SharePoint:AjaxDelta>` und-Tags, und ersetzen Sie ihn durch den folgenden Codeausschnitt:<br/>
 
-```
+```javascript
 <div id="loading">
   <!--Replace with path to loading image.-->
   <div style="background-image: url(''); height: 22px; width: 22px; ">
@@ -143,15 +142,15 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage
                         </span>
                     </span>
                 <!-- /ko -->
-                <!-- ko if: children.length == 0-->   
+                <!-- ko if: children.length == 0-->
                     <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
                         <span class="menu-item-text" data-bind="text: item.Title">
                         </span>
                     </span>
-                <!-- /ko -->   
+                <!-- /ko -->
                 </a>
                
-                <!-- ko if: children.length > 0-->                                                       
+                <!-- ko if: children.length > 0-->
                 <ul id="menu"  data-bind="foreach: children;" class="dynamic  level2" >
                     <li class="dynamic level2">
                         <a class="dynamic menu-item ms-core-listMenu-item ms-displayInline  ms-navedit-linkNode" data-bind="attr: { href: item.Url, title: item.Title }">
@@ -166,8 +165,8 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage
           <span aria-haspopup="true" class="ms-navedit-flyoutArrow dynamic-children">
            <span class="menu-item-text" data-bind="text: item.Title">
            </span>
-          </span>                 
-          <!-- /ko -->   
+          </span>
+          <!-- /ko -->
                         </a>
           <!-- ko if: children.length > 0-->
          <ul id="menu" data-bind="foreach: children;" class="dynamic level3" >
@@ -191,13 +190,13 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage
 6. Ersetzen Sie die URL im Tag Loading Image Anchor am Anfang durch einen Link zu einem Bild laden in Ihrer Websitesammlung. Nachdem Sie die Änderungen vorgenommen haben, benennen Sie die Datei um, und laden Sie Sie dann in den gestaltungsvorlagenkatalog hoch. Dadurch wird eine neue Masterdatei generiert.<br/>
 7. Dieser HTML-Code ist das grundlegende Markup, das von den Suchergebnissen aufgefüllt wird, die von JavaScript-Code zurückgegeben werden. Sie müssen den Code so bearbeiten, dass der Wert für var root = "Website Sammlungs-URL" geändert wird, wie im folgenden Codeausschnitt gezeigt:<br/>
 
-```
+```javascript
 var root = “https://spperformance.sharepoint.com/sites/NavigationBySearch”;
 ```
 <br/>
 8. Die Ergebnisse werden dem Self. Nodes-Array zugewiesen, und eine Hierarchie wird aus den Objekten mithilfe von LINQ. js erstellt, die die Ausgabe einem Array Self. Hierarchy zuordnet. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies erfolgt in der toggleView ()-Funktion, indem das Self-Objekt an die ko. applyBinding ()-Funktion übergeben wird.<br/>Dadurch wird das Hierarchie Array an den folgenden HTML-Code gebunden:<br/>
 
-```
+```javascript
 <div data-bind=”foreach: hierarchy” class=”noindex ms-core-listMenu-horizontalBox”>
 ```
 
@@ -209,7 +208,7 @@ In unserem komplexen Navigations Beispiel zeigt eine neue Seitenauslastung ohne 
 
 Die gesamte JavaScript-Datei lautet wie folgt:
 
-```
+```javascript
 //Models and Namespaces
 var SPOCustom = SPOCustom || {};
 SPOCustom.Models = SPOCustom.Models || {}
@@ -393,7 +392,7 @@ function NavigationViewModel() {
         }
     };
 
-    // ByHierarchy method breaks the sorting in chrome and firefix 
+    // ByHierarchy method breaks the sorting in chrome and firefox
     // we need to resort  as ascending
     self.sortObjectsInArray2 = function (a, b) {
         if (a.item.Title() > b.item.Title())
@@ -440,7 +439,7 @@ function addEventsToElements() {
     });
 } _spBodyOnLoadFunctionNames.push("InitCustomNav");
 
-``` 
+```
 
 Um den oben gezeigten Code in der `jQuery $(document).ready` Funktion zusammenzufassen, `viewModel object` gibt es eine erstellte `loadNavigationNodes()` und dann die-Funktion für dieses Objekt wird aufgerufen. Diese Funktion lädt entweder die zuvor erstellte Navigationshierarchie, die im lokalen HTML5-Speicher des Clientbrowsers gespeichert ist, oder Sie `queryRemoteInterface()`Ruft die Funktion auf.
 
@@ -464,7 +463,7 @@ Der [obige Code](#about-the-javascript-file) hat die folgenden Abhängigkeiten:
 
 Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode, die im obigen Code verwendet wird, und der Navigationscode wird unterbrochen. Um dies zu beheben, fügen Sie die folgende Methode zur Datei LINQ. js vor der `Flatten: function ()`-Verbindung hinzu.
 
-```
+```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
      ascending = ascending == undefined ? true : ascending;
      var orderMethod = ascending == true ? 'OrderBy' : 'OrderByDescending';
@@ -530,4 +529,3 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Übersicht über die verwaltete Navigation in SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
-

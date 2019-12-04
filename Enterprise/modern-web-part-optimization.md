@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Leistung von Webparts in modernen SharePoint Online-Websites optimieren können.
-ms.openlocfilehash: 859a9481ca29215edf27cc2cbd48510051932d50
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 00a21adbd7971e86d23e1e45ee850ab52f46004a
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078320"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814203"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung von Webparts in modernen SharePoint Online-Websites
 
@@ -97,7 +97,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 

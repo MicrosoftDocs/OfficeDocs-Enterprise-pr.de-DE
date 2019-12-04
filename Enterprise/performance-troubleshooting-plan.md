@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Müssen Sie die erforderlichen Schritte zum Identifizieren und Beheben von Verzögerungen, hängen und langsamer Leistung zwischen SharePoint Online, OneDrive für Unternehmen, Exchange Online oder Skype for Business Online und Ihrem Clientcomputer kennen? Vor dem Aufruf des Supports können Sie in diesem Artikel bei der Problembehandlung Office 365 Leistungsproblemen behilflich sein und sogar einige der am häufigsten auftretenden Probleme beheben.
-ms.openlocfilehash: e0117cebc80acbd2b29ce319002dbd3dccafb764
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031130"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814623"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Behandlung von Leistungsproblemen – Plan für Office 365
 
@@ -250,7 +250,7 @@ Bei der Wartezeit handelt es sich um eine Maßnahme, die abhängig von vielen Va
 
 Es gibt bandbreitenrechner für Office 365, die in dieser [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md) Seite verfügbar sind.  
 
-Sie müssen die Geschwindigkeit Ihrer Verbindung oder die Bandbreite ihrer ISP-Verbindung messen? Versuchen Sie diese Website (oder Websites wie Sie): [Speedtest Official Site](https://www.speedtest.net/)und [Pingtest](https://www.pingtest.net/).
+Sie müssen die Geschwindigkeit Ihrer Verbindung oder die Bandbreite ihrer ISP-Verbindung messen? Versuchen Sie diese Website (oder Websites wie Sie): [Speedtest Offizielle Website](https://www.speedtest.net/), oder Fragen Sie Ihre bevorzugten Suchmaschine für die Phrase **Speed Test**.
 
 #### <a name="tools"></a>Tools
 

@@ -3,7 +3,7 @@ title: Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/29/2016
+ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern und außerdem darauf zu warten, dass unwesentliches JavaScript geladen wird, bevor die Seite geladen wird.
-ms.openlocfilehash: a015c8ca26c402733eba3b26e641524f38acca21
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077668"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813473"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
@@ -30,9 +30,9 @@ Bilder können sich negativ auf die Seitenlast Geschwindigkeiten auf SharePoint 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Verbessern der Seitenladezeiten durch verzögertes Laden von Bildern in SharePoint Online Seiten mithilfe von JavaScript
 
-Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Beispiel:
+Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Zum Beispiel:
   
-```txt
+```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
 ```
 
@@ -40,9 +40,9 @@ Mithilfe dieser Methode lädt der Browser die Bilder nicht sofort herunter. Wenn
   
 Damit dies geschieht, müssen Sie JavaScript verwenden.
   
-Definieren Sie in einer Textdatei die **isElementInViewport ()** -Funktion, um zu überprüfen, ob sich ein Element in dem Teil des Browsers befindet, der für den Benutzer sichtbar ist. 
+Definieren Sie in einer Textdatei die **isElementInViewport ()** -Funktion, um zu überprüfen, ob sich ein Element in dem Teil des Browsers befindet, der für den Benutzer sichtbar ist.
   
-```txt
+```javascript
 function isElementInViewport(el) {
   if (!el)
     return false;
@@ -51,14 +51,14 @@ function isElementInViewport(el) {
     rect.top >= 0 &amp;&amp;
     rect.left >= 0 &amp;&amp;
     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &amp;&amp;
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
 ```
 
-Verwenden Sie als nächstes **isElementInViewport ()** in der **loadItemsInView ()** -Funktion. Die **loadItemsInView ()-** Funktion lädt alle Bilder mit einem Wert für das Data-src-Attribut, wenn Sie sich in dem Teil des Browsers befinden, der für den Benutzer sichtbar ist. Fügen Sie die folgende Funktion zur Textdatei hinzu: 
+Verwenden Sie als nächstes **isElementInViewport ()** in der **loadItemsInView ()** -Funktion. Die **loadItemsInView ()-** Funktion lädt alle Bilder mit einem Wert für das Data-src-Attribut, wenn Sie sich in dem Teil des Browsers befinden, der für den Benutzer sichtbar ist. Fügen Sie die folgende Funktion zur Textdatei hinzu:
   
-```
+```javascript
 function loadItemsInView() {
   //Select elements by the row id.
   $("#row [data-src]").each(function () {
@@ -72,9 +72,9 @@ function loadItemsInView() {
 }
 ```
 
-Schließlich rufen Sie **loadItemsInView ()** in **Window. OnScroll ()** auf, wie im folgenden Beispiel gezeigt. Dadurch wird sichergestellt, dass alle im Viewport enthaltenen Bilder geladen werden, wenn der Benutzer Sie benötigt, jedoch nicht zuvor. Fügen Sie Folgendes zur Textdatei hinzu: 
+Schließlich rufen Sie **loadItemsInView ()** in **Window. OnScroll ()** auf, wie im folgenden Beispiel gezeigt. Dadurch wird sichergestellt, dass alle im Viewport enthaltenen Bilder geladen werden, wenn der Benutzer Sie benötigt, jedoch nicht zuvor. Fügen Sie Folgendes zur Textdatei hinzu:
   
-```
+```javascript
 //Example of calling loadItemsInView() from within window.onscroll()
 $(window).on("scroll", function () {
     loadItemsInView();
@@ -84,7 +84,7 @@ $(window).on("scroll", function () {
 
 Für SharePoint Online müssen Sie die folgende Funktion an das Scroll-Ereignis im div \<\> -Tag #S4-Workspace anfügen. Dies liegt daran, dass die Fenster Ereignisse außer Kraft gesetzt werden, um sicherzustellen, dass das Menüband am oberen Rand der Seite angefügt bleibt.
   
-```
+```javascript
 //Keep the ribbon at the top of the page
 $('#s4-workspace').on("scroll", function () {
     loadItemsInView();
@@ -96,10 +96,10 @@ Speichern Sie die Textdatei als JavaScript-Datei mit der Erweiterung. js, zum Be
 Nachdem Sie das Schreiben von delayLoadImages. js abgeschlossen haben, können Sie den Inhalt der Datei einer Gestaltungsvorlage in SharePoint Online hinzufügen. Hierzu fügen Sie der Kopfzeile auf der Gestaltungsvorlage einen Skript Link hinzu. Sobald er auf einer Gestaltungsvorlage liegt, wird das JavaScript auf alle Seiten auf der SharePoint Online Website angewendet, die dieses Gestaltungsvorlagen Layout verwenden. Wenn Sie diese nur auf einer Seite Ihrer Website verwenden möchten, verwenden Sie alternativ das Skript-Editor-Webpart, um das JavaScript in die Seite einzubetten. Weitere Informationen finden Sie in den folgenden Themen:
   
 - [Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
-    
+
 - [Vorgehensweise: Erstellen eines Seitenlayouts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-    
- **Beispiel: verweisen auf die Datei "JavaScript delayLoadImages. js" von einer Gestaltungsvorlage in SharePoint Online**
+
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Beispiel: verweisen auf die Datei "JavaScript delayLoadImages. js" von einer Gestaltungsvorlage in SharePoint Online
   
 Damit dies funktioniert, müssen Sie auch auf der Gestaltungsvorlage auf jQuery verweisen. Im folgenden Beispiel sehen Sie auf der anfänglichen Seite laden, dass nur ein Bild geladen ist, aber es gibt mehrere weitere auf der Seite.
   
@@ -113,7 +113,7 @@ Das verzögerte Laden von Bildern mithilfe von JavaScript kann ein effektives Ve
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHub-Codebeispiel: Einfügen von JavaScript zur Verbesserung der Leistung
 
-Verpassen Sie nicht den Artikel und das Codebeispiel auf der auf GitHub bereitgestellten [JavaScript-Injektion](https://go.microsoft.com/fwlink/p/?LinkId=524759) . 
+Verpassen Sie nicht den Artikel und das Codebeispiel auf der auf GitHub bereitgestellten [JavaScript-Injektion](https://go.microsoft.com/fwlink/p/?LinkId=524759) .
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -122,4 +122,3 @@ Verpassen Sie nicht den Artikel und das Codebeispiel auf der auf GitHub bereitge
 [Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   
 [Vorgehensweise: Erstellen eines Seitenlayouts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
-

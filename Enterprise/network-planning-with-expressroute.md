@@ -16,14 +16,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
-ms.openlocfilehash: eb03ffbcb2ce61590c230e5bdfabb29df0b69c95
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 8e8c1e1790e38b4e0e858a4a72266de9fcdc8157
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38032120"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814633"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Netzwerkplanung mit ExpressRoute für Office 365
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
   

@@ -17,12 +17,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Seitenstärke von modernen Websiteseiten in SharePoint Online optimieren können.
-ms.openlocfilehash: 75bc6227cf77d355dcd6b3a4ce1afa9388b32c58
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 96341402cb6f1ca89e7a1602d77adf70e4a69607
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078004"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39814213"
 ---
 # <a name="optimize-page-weight-in-sharepoint-online-modern-site-pages"></a>Optimieren Sie die Seitenstärke von modernen Websiteseiten in SharePoint Online
 
@@ -76,7 +76,7 @@ Bevor Sie Seitenrevisionen zur Behebung von Leistungsproblemen durchführen, not
 
 [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
 
-[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance.md)
+[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 
