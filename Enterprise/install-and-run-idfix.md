@@ -18,15 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Hier erfahren Sie, wie Sie das Office 365 IdFix-Tool herunterladen und ausführen, um Ihr Active Directory Domain Services (AD DS) vor der Synchronisierung mit Office 365 zu bereinigen.
-ms.openlocfilehash: 4a402cf245ebd20fbc5846908d521469ebfb90c1
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
-ms.translationtype: HT
+ms.openlocfilehash: 03f26f877786057a4ebca2bad0ae85369fb712ac
+ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490752"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39813533"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Herunterladen und Ausführen des Office 365 IdFix-Tools
 
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 IdFix ermittelt Fehler wie Duplikate und Formatierungsprobleme in Ihrer Active Directory Domain Services (AD DS)-Domäne, bevor Sie die Synchronisierung mit Office 365 vornehmen. 
   
