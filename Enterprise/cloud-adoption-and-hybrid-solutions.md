@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 60f0636228942273a7e5ae45f174155abf64e491
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
+ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029179"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39857983"
 ---
 <h1>Enterprise Cloudlösungen</h1>
 <p>Lösen von geschäftlichen Problemen mit der Microsoft Cloud. Erfahren Sie mehr über die neuesten Hybrid- und Cloudsicherheitslösungen, die Cloudakzeptanz und vieles mehr.</p>
@@ -124,9 +124,5 @@ ms.locfileid: "38029179"
 
 ---
 
-<h2>Kontakt</h2>
-<ul>
-    <li><a href="mailto:cloudadopt@microsoft.com?Subject=[Cloud%20Adoption%20Content%20Feedback]:%20">Welche Lösungen benötigen Sie?</a><br>Wir entwickeln Inhalte für Lösungen auf Grundlage mehrerer Microsoft-Produkte und -Dienste. Lassen Sie uns wissen, was Sie von unseren serverübergreifenden Lösungen halten, oder fordern Sie spezifische Lösungen an, indem Sie eine E-Mail an MODAcontent@microsoft.com senden.</li><br>
-    <li><a href="https://aka.ms/caab">An der Diskussion über Lösungen teilnehmen</a><br>Wenn Sie sich für Cloud-basierte Lösungen interessieren, werden Sie Teil des Cloud Adoption Advisory Board (CAAB), um Zugriff auf eine größere, dynamische Community aus Microsoft-Inhaltsentwicklern, Branchenexperten und Kunden aus aller Welt zu haben. Um beizutreten, fügen Sie sich selbst als Mitglied des CAAB (Cloud Adoption Advisory Board)-Bereichs der Microsoft Tech Community hinzu, und senden Sie uns eine E-Mail an <a href="mailto:caab@microsoft.com?Subject=I%20just%20joined%20the%20Cloud%20Adoption%20Advisory%20Board!">CAAB@microsoft.com</a>. Communityinhalte stehen allen Personen im <a href="https://blogs.technet.com/b/solutions_advisory_board/">CAAB-Blog</a> zur Verfügung. CAAB-Mitglieder erhalten jedoch Einladungen zu privaten Webinaren, die neue Ressourcen und Lösungen für den Cloud-Einsatz beschreiben.</li><br>
-    <li><a href="mailto:cloudadopt@microsoft.com?subject=[Art%20Request]:%20">Die hier gezeigte Grafik abrufen</a><br>Wenn Sie eine bearbeitbare Kopie der Grafik wünschen, die Sie in diesem Artikel sehen, senden wir Sie Ihnen gerne zu. Senden Sie eine E-Mail mit der Anforderung einschließlich der URL und dem Titel der Grafik an „cloudadopt@microsoft.com“.  </li>
-</ul>
+
+
