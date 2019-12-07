@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie mit Gästen in einem Dokument in SharePoint und OneDrive zusammenarbeiten.
-ms.openlocfilehash: 1f5053a332c80fbb957cfcb3e11f35aa94cfe270
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 20b97ed6e232385500e74adcaa11378252167c26
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076169"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886494"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>Zusammenarbeit mit Gästen an einem Dokument
 
@@ -51,7 +51,7 @@ Damit Gästezugriff auf ein Dokument in SharePoint oder OneDrive haben, müssen 
 
 Die Einstellungen auf Organisationsebene für SharePoint bestimmen, welche Einstellungen für einzelne SharePoint-Websites verfügbar sind. Websiteeinstellungen dürfen nicht so restriktiv wie die Einstellungen auf Organisationsebene sein. Die Einstellung auf Organisationsebene für OneDrive legt fest, welche Freigabeebene in den OneDrive-Bibliotheken der Benutzer verfügbar ist.
 
-Wenn Sie für SharePoint und OneDrive die Datei-und Ordnerfreigabe für anonyme Benutzer zulassen möchten, wählen Sie **jeden**aus. Wenn Sie sicherstellen möchten, dass sich alle Gäste authentifizieren müssen, wählen Sie **neue und vorhandene Gäste**aus. *Jeder*-Links sind die einfachste Möglichkeit zur Freigabe: Gäste können den Link ohne Authentifizierung öffnen und ihn an andere Personen weiterleiten.
+Wenn Sie für SharePoint und OneDrive die nicht authentifizierte Datei-und Ordnerfreigabe zulassen möchten, wählen Sie **jeden**aus. Wenn Sie sicherstellen möchten, dass sich alle Gäste authentifizieren müssen, wählen Sie **neue und vorhandene Gäste**aus. *Jeder*-Links sind die einfachste Möglichkeit zur Freigabe: Gäste können den Link ohne Authentifizierung öffnen und ihn an andere Personen weiterleiten.
 
 Wählen Sie für SharePoint die frei zügigste Einstellung aus, die von einer beliebigen Website in Ihrer Organisation benötigt wird.
 
@@ -73,7 +73,7 @@ Beachten Sie, dass sich diese Einstellung auf SharePoint-Websites in Ihrer Organ
 
 Wählen Sie den Linktyp aus, der standardmäßig ausgewählt ist, wenn Benutzer Dateien und Ordner freigeben:
 
-- **Jeder, der über den Link verfügt** – wählen Sie diese Option aus, wenn Sie eine Vielzahl von Dateien und Ordnern für anonyme Benutzer freigeben möchten. Wenn Sie *jeder* Verknüpfung erlauben möchten, aber über die versehentliche anonyme Freigabe besorgt sind, sollten Sie eine der anderen Optionen als Standard verwenden. Dieser Linktyp ist nur verfügbar, wenn Sie die Freigabe von **Benutzern** aktiviert haben.
+- **Jeder, der über den Link verfügt** – wählen Sie diese Option aus, wenn Sie eine Vielzahl von nicht authentifizierten Datei-und Ordner Freigaben erwarten. Wenn Sie *alle* Links zulassen möchten, jedoch über versehentliche nicht authentifizierte Freigaben besorgt sind, sollten Sie eine der anderen Optionen als Standard verwenden. Dieser Linktyp ist nur verfügbar, wenn Sie die Freigabe von **Benutzern** aktiviert haben.
 - **Nur Personen in Ihrer Organisation** – wählen Sie diese Option aus, wenn Sie davon ausgehen, dass die meisten Datei-und Ordner Freigaben für Personen in Ihrer Organisation gelten.
 - **Bestimmte Personen** – diese Option wird empfohlen, wenn Sie eine Vielzahl von Datei-und Ordner Freigaben für Gäste erwarten. Diese Art von Link funktioniert mit Gästen und erfordert die Authentifizierung.
  
@@ -105,6 +105,6 @@ Die Einstellungen für die Gast Freigabe sind jetzt konfiguriert, sodass Benutze
 
 ## <a name="see-also"></a>Siehe auch
 
-[Bewährte Methoden zum Freigeben von Dateien und Ordnern für anonyme Benutzer](best-practices-anonymous-sharing.md)
+[Bewährte Methoden für die Freigabe von Dateien und Ordnern mit nicht authentifizierten Benutzern](best-practices-anonymous-sharing.md)
 
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)

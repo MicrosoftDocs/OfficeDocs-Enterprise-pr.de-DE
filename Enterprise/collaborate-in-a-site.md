@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie mit Gästen in einer SharePoint-Website zusammenarbeiten.
-ms.openlocfilehash: 25b0aea05c922385828e62512d3724da7324c719
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 746e592a027c05f489e9f5dfe819cfb107c6b1f5
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38029159"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886484"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
@@ -67,7 +67,7 @@ Damit Gästezugriff auf SharePoint-Websites haben, müssen die SharePoint-Freiga
 
 Die Einstellungen auf Organisationsebene bestimmen, welche Einstellungen für einzelne Websites verfügbar sind. Websiteeinstellungen dürfen nicht so restriktiv wie die Einstellungen auf Organisationsebene sein.
 
-Wenn Sie die Datei-und Ordnerfreigabe für anonyme Benutzer zulassen möchten, wählen Sie **jeden**aus. Wenn Sie sicherstellen möchten, dass sich alle Gäste authentifizieren müssen, wählen Sie **neue und vorhandene Gäste**aus. Wählen Sie die frei zügigste Einstellung aus, die von einer beliebigen Website in Ihrer Organisation benötigt wird.
+Wenn Sie die Freigabe nicht authentifizierter Dateien und Ordner zulassen möchten, wählen Sie **jeden**aus. Wenn Sie sicherstellen möchten, dass sich alle Gäste authentifizieren müssen, wählen Sie **neue und vorhandene Gäste**aus. Wählen Sie die frei zügigste Einstellung aus, die von einer beliebigen Website in Ihrer Organisation benötigt wird.
 
 ![Screenshot der SharePoint-Freigabeeinstellungen auf Organisationsebene](media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ Wir laden Benutzer später ein. Als nächstes ist es wichtig, die Freigabeeinste
 
 Überprüfen Sie die Freigabeeinstellungen auf Standortebene, um sicherzustellen, dass die gewünschten Zugriffstypen für diese Website zulässig sind. Wenn Sie beispielsweise die Einstellungen auf Organisationsebene auf " **jeder**" festlegen, aber alle Gäste für diese Website authentifizieren möchten, stellen Sie sicher, dass die Freigabeeinstellungen auf Standortebene auf " **neu" und "vorhandene Gäste**" festgelegt sind.
 
-Beachten Sie, dass die Website nicht für anonyme Benutzer (**jede** Einstellung) freigegeben werden kann, aber einzelne Dateien und Ordner können.
+Beachten Sie, dass die Website nicht für nicht authentifizierte Personen freigegeben werden kann (**jede** Einstellung), sondern einzelne Dateien und Ordner können.
 
 ![Screenshot der externen SharePoint-Freigabeeinstellungen](media/sharepoint-site-external-sharing-settings.png)
 
@@ -129,7 +129,7 @@ So laden Sie Gäste zu einer Website ein
 
 ## <a name="see-also"></a>Siehe auch
 
-[Bewährte Methoden zum Freigeben von Dateien und Ordnern für anonyme Benutzer](best-practices-anonymous-sharing.md)
+[Bewährte Methoden für die Freigabe von Dateien und Ordnern mit nicht authentifizierten Benutzern](best-practices-anonymous-sharing.md)
 
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
 

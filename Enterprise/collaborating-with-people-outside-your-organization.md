@@ -9,12 +9,12 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie Office 365 für die Zusammenarbeit mit Gastbenutzern konfigurieren.
-ms.openlocfilehash: b98792d365953b61f564f04765d4249605e24e43
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 1af8a1c810047e4f91b0bda31934742884f6645e
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076179"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886444"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
@@ -26,7 +26,7 @@ Standardmäßig ist die Gast Freigabe in Microsoft 365 für SharePoint und OneDr
 
 ## <a name="see-also"></a>Siehe auch
 
-[Bewährte Methoden zum Freigeben von Dateien und Ordnern für anonyme Benutzer](best-practices-anonymous-sharing.md)
+[Bewährte Methoden für die Freigabe von Dateien und Ordnern mit nicht authentifizierten Benutzern](best-practices-anonymous-sharing.md)
 
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
 
