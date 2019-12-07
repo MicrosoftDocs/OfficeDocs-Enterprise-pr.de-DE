@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Erfahren Sie, wie Sie die versehentliche Exposition von Informationen bei der Freigabe von Dateien für Gäste begrenzen.
-ms.openlocfilehash: d1a12579bdcce03ad74dbf753ddb1a8a6368c88c
-ms.sourcegitcommit: c16ab90d0b9902228ce4337f1c64900592936cce
+ms.openlocfilehash: 3a5a99e96207e407f15abb17d9e1903c8ba52339
+ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "37108317"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "39886474"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-guests"></a>Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste
 
@@ -21,13 +21,13 @@ Bei der Freigabe von Dateien und Ordnern für Gäste gibt es eine Vielzahl an Op
 
 ## <a name="use-best-practices-for-anyone-links"></a>Bewährte Methoden für „Jeder“-Links verwenden
 
-Wenn Personen in Ihrer Organisation eine anonyme Freigabe vornehmen müssen, Sie jedoch befürchten, dass nicht authentifizierte Gäste Inhalte ändern, lesen Sie [Bewährte Methoden für die anonyme Freigabe](best-practices-anonymous-sharing.md), um Anleitungen zum Arbeiten mit der anonymen Freigabe in Ihrer Organisation zu erhalten.
+Wenn Personen in Ihrer Organisation eine Freigabe ohne Authentifizierung vornehmen müssen, Sie jedoch befürchten, dass nicht authentifizierte Gäste Inhalte ändern, lesen Sie [Bewährte Methoden für die Freigabe ohne Authentifizierung](best-practices-anonymous-sharing.md), um Anleitungen zum Arbeiten mit der Freigabe ohne Authentifizierung in Ihrer Organisation zu erhalten.
 
 ## <a name="turn-off-anyone-links"></a>Deaktivieren von "Jeder"-Links
 
 Wir empfehlen, die *Jeder*-Links für den entsprechenden Inhalt aktiviert zu lassen, da dies die einfachste Freigabemöglichkeit ist und das Risiko reduziert, dass Benutzer andere Lösungen außerhalb der Kontrolle Ihrer IT-Abteilung suchen. *Jeder*-Links können an andere weitergeleitet werden, aber Dateizugriff ist nur für diejenigen möglich, die den Link haben.
 
-Wenn Gäste sich beim Zugreifen auf Inhalte in SharePoint, Gruppen oder Teams authentifizieren sollen, können Sie die *Jeder*-Freigabe deaktivieren. Dadurch wird verhindert, dass Benutzer Inhalte anonym freigeben.
+Wenn Gäste sich beim Zugreifen auf Inhalte in SharePoint, Gruppen oder Teams authentifizieren sollen, können Sie die *Jeder*-Freigabe deaktivieren. Das verhindert, dass Benutzer Inhalte ohne Authentifizierung freigeben.
 
 Wenn Sie die *Jeder*-Links deaktivieren, können Benutzer Elemente weiterhin mit *Bestimmte Personen*-Links für Gäste freigeben. In diesem Fall müssen alle Gäste sich authentifizieren, bevor sie auf die freigegebenen Inhalte zugreifen können.
 
