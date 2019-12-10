@@ -10,16 +10,16 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe.
-ms.openlocfilehash: 739a14460d4039281bde11eb1bec60bb3a5b8886
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076399"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919379"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
-Dieser Artikel bietet eine Referenz zu den verschiedenen Einstellungen, die sich auf die Gastfreigabe für Microsoft 365-Arbeitslasten auswirken können: Teams, Office 365-Gruppen, SharePoint und OneDrive. Diese Einstellungen befinden sich in Azure Active Directory, Microsoft 365, Teams und SharePoint Admin Center.
+Dieser Artikel bietet eine Referenz zu den verschiedenen Einstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation für Microsoft 365-Workloads auswirken können: Teams, Office 365-Gruppen, SharePoint und OneDrive. Diese Einstellungen befinden sich in Azure Active Directory, Microsoft 365, Teams und SharePoint Admin Center.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

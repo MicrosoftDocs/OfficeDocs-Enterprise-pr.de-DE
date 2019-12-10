@@ -8,16 +8,16 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
 description: Lernen Sie bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer kennen.
-ms.openlocfilehash: bf2ef1e7013f97739c72f125ea4c81e17beb161c
-ms.sourcegitcommit: 7e65640fb1a86858a95c9ef0edbb58d0f171c5ee
+ms.openlocfilehash: decdc068f238329516ae0ce3594e68a753780216
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39886504"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919137"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer
 
-Die Freigabe ohne Authentifizierung (über *Jeder*-Links) kann zweckmäßig sein und eignet sich in verschiedenen Szenarien. *Jeder*-Links sind die einfachste Möglichkeit zur Freigabe: Gäste können den Link ohne Authentifizierung öffnen und ihn an andere Personen weiterleiten.
+Die Freigabe ohne Authentifizierung (über *Jeder*-Links) kann zweckmäßig sein und eignet sich in verschiedenen Szenarien. *Jeder*-Links sind die einfachste Möglichkeit zur Freigabe: Personen können den Link ohne Authentifizierung öffnen und ihn an andere Personen weiterleiten.
 
 In der Regel eignet sich nicht der gesamte Inhalt einer Organisation für die Freigabe ohne Authentifizierung. In diesem Artikel werden die Möglichkeiten beschrieben, die Ihnen beim Erstellen einer Umgebung helfen, in der Ihre Benutzer die Freigabe von Dateien und Ordner ohne Authentifizierung verwenden können, in der aber Sicherheitsvorkehrungen vorhanden sind, um den Inhalt Ihrer Organisation zu schützen.
 
@@ -51,7 +51,7 @@ So legen Sie Berechtigungen für "Jeder"-Links fest
 3. Wählen Sie unter **Erweiterte Einstellungen für Jeder-Links** die Datei- und Ordnerberechtigungen aus, die Sie verwenden möchten.</br>
    ![Screenshot der SharePoint-Berechtigungseinstellungen auf Organisationsebene für Jeder-Links](media/sharepoint-organization-anyone-link-permissions.png)
 
-Wenn *Jeder*-Links auf **Anzeigen** festgelegt sind, können Benutzer Dateien und Ordner weiterhin mit *Bestimmte Personen*-Links für Gäste freigeben und diesen Berechtigungen zum Bearbeiten gewähren. Diese Links setzen voraus, dass Gäste sich authentifizieren, und Sie können Gastaktivitäten für Dateien und Ordner, die mit diesen Links geteilt wurden, nachverfolgen und überwachen.
+Wenn *Jeder*-Links auf **Anzeigen** festgelegt sind, können Benutzer Dateien und Ordner weiterhin mit *Bestimmte Personen*-Links für Gäste freigeben und diesen Berechtigungen zum Bearbeiten gewähren. Diese Links setzen voraus, dass sich Personen von außerhalb der Organisation als Gäste authentifizieren, und Sie können Gastaktivitäten für Dateien und Ordner, die mit diesen Links geteilt wurden, nachverfolgen und überwachen.
 
 ## <a name="set-default-link-type-to-only-work-for-people-in-your-organization"></a>Standardlinktyp so festlegen, dass er nur für Personen in Ihrer Organisation funktioniert
 
