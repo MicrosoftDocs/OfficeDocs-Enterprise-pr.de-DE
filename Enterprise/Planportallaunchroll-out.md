@@ -13,15 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: In diesem Artikel wird beschrieben, wie Sie den Start Ihres Portals in SharePoint Online planen und welche Schritte Sie für einen erfolgreichen Start ausführen können.
-ms.openlocfilehash: bba38bb188235ed38f3719cb4472ef156a4d76b3
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
+ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077568"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39919127"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planen des Rollout Plans für den Portal Start in SharePoint Online
-Ein Portal ist die standardmäßige SharePoint-Website für Ihr Unternehmen. in großen Organisationen kann es mehrere von diesen geben. Wenn Sie davon ausgehen, dass mehr als 20 % der Benutzer in Ihrer Organisation auf die Seite zugreifen können, ist dies als Portalseite zu betrachten. Dies ist nicht mit einer Teamwebsite zu verwechseln. Eine Teamwebsite wird von Ihrer Abteilung für die Zusammenarbeit und zum Freigeben von Dokumenten innerhalb Ihres Teams verwendet.
+Ein Portal ist eine SharePoint-Website in Ihrem Intranet mit einer großen Anzahl von Website Zuschauern, die Inhalte auf der Website nutzen. In großen Organisationen kann es mehrere von diesen geben; beispielsweise ein Unternehmensportal und ein HR-Portal. In der Regel haben Portale relativ wenige Personen, die die Website und deren Inhalte erstellen und autorisieren. Die meisten Besucher des Portals lesen und nutzen nur den Inhalt.
 
 In diesem Artikel wird beschrieben, wie Sie die Bereitstellung und den Rolloutplan für SharePoint Online planen. Es bietet auch Ansätze, die befolgt werden, da herkömmliche Auslastungstests für SharePoint Online nicht zulässig sind. SharePoint Online ist ein clouddienst, und die Ladefunktionen, die Integrität und die Gesamtlastverteilung im Dienst werden von Microsoft verwaltet.
 
