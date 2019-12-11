@@ -3,7 +3,7 @@ title: Anfordern der Datenverschiebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung übermitteln, damit die Kundendaten ihrer teilnehmenden Office 365 Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: 0d563400fefd0d2b9aabc0d9f3973558d54e60ab
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 97fc83db3ceac1a5c3aca65f8b780a3f7841528c
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756594"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39962462"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -28,7 +28,7 @@ Vorhandene Office 365 Kunden sind berechtigt, eine frühe Migration für die wic
   
 ## <a name="when-can-i-request-a-move"></a>Wann kann ich eine Bewegung anfordern?
 
-|**Kunden mit Rechnungsadresse in**|**Anforderungs Zeitraum beginnt**|**Anforderungs Frist**|
+|**Kunden mit Anmelde Land in**|**Anforderungs Zeitraum beginnt**|**Anforderungs Frist**|
 |:-----|:-----|:-----|
 |Japan  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
 |Australien, Neuseeland, Fidschi  <br/> |1. August 2016  <br/> |31. Oktober 2016  <br/> |
@@ -39,10 +39,12 @@ Vorhandene Office 365 Kunden sind berechtigt, eine frühe Migration für die wic
 |Frankreich  <br/> |14. März 2018  <br/> |15. September 2018  <br/> |
 |Vereinigte Arabische Emirate  <br/> |15. Juli 2019  <br/> |31. Januar 2020  <br/> |
 |Südafrika  <br/> |25. Juli 2019  <br/> |31. Januar 2020  <br/> |
+|Schweiz, Liechtenstein  <br/> |10. Dezember 2019  <br/> |30. Juni 2020  <br/> |
+|Deutschland  <br/> |Geplante  <br/> |Geplante  <br/> |
    
 ## <a name="how-to-request-a-move"></a>Vorgehensweise Anfordern einer Verlagerung
 
-Für berechtigte Kunden wird eine Seite in Ihrem [Admin Center](https://aka.ms/365admin)angezeigt, die es Ihnen ermöglicht, Ihre wichtigsten Kundendaten in ihren neuen rechenzentrumsbereich zu verschieben.  
+Für berechtigte Kunden wird eine Seite im [Microsoft 365 Admin Center](https://aka.ms/365admin)angezeigt, die es Ihnen ermöglicht, Ihre wichtigsten Kundendaten in ihren neuen rechenzentrumsbereich zu verschieben.  
   
 Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationsprofil**.
   
@@ -70,7 +72,7 @@ Nachdem Sie eine Bewegung angefordert haben, werden wir Sie so schnell wie mögl
   
 Es kann bis zu 24 Monate dauern, bis der Anforderungs Termin für Ihr Land abgeschlossen ist.
   
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
 Migrationsunterstützung für Microsoft Teams Chat-und Kanal Nachrichtendaten werden dem Office 365 lokalen Migrationsprogramm hinzugefügt.  Wir planen, die Programm Registrierung im Januar 2020 für alle berechtigten Kunden zu öffnen, einschließlich Kunden, die sich zuvor für Exchange Online und SharePoint Online/OneDrive für Unternehmen Migration entschieden haben.  Das Opt-in-Steuerelement wird im Microsoft 365 Admin Center verfügbar gemacht und eine Benachrichtigung im Nachrichten Center an alle berechtigten Kunden gesendet.   
 

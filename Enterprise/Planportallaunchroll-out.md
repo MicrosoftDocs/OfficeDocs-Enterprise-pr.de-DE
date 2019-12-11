@@ -13,14 +13,15 @@ ms.collection:
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: In diesem Artikel wird beschrieben, wie Sie den Start Ihres Portals in SharePoint Online planen und welche Schritte Sie für einen erfolgreichen Start ausführen können.
-ms.openlocfilehash: c66754cdcd682cb39c0ff235a07a464613d1d3e7
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919127"
+ms.locfileid: "39959119"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planen des Rollout Plans für den Portal Start in SharePoint Online
+
 Ein Portal ist eine SharePoint-Website in Ihrem Intranet mit einer großen Anzahl von Website Zuschauern, die Inhalte auf der Website nutzen. In großen Organisationen kann es mehrere von diesen geben; beispielsweise ein Unternehmensportal und ein HR-Portal. In der Regel haben Portale relativ wenige Personen, die die Website und deren Inhalte erstellen und autorisieren. Die meisten Besucher des Portals lesen und nutzen nur den Inhalt.
 
 In diesem Artikel wird beschrieben, wie Sie die Bereitstellung und den Rolloutplan für SharePoint Online planen. Es bietet auch Ansätze, die befolgt werden, da herkömmliche Auslastungstests für SharePoint Online nicht zulässig sind. SharePoint Online ist ein clouddienst, und die Ladefunktionen, die Integrität und die Gesamtlastverteilung im Dienst werden von Microsoft verwaltet.

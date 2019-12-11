@@ -3,7 +3,7 @@ title: Während und nach der Datenverschiebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: bfc21dccbf63dbf14f2e08d84f4312e6ed3dbcc7
-ms.sourcegitcommit: a73518764b97948219e378d7014ada5654146be4
+ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
+ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250501"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39959280"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -30,7 +30,7 @@ Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen au
 Sehen Sie sich das Office 365 Nachrichten Center zur Bestätigung an, wenn die Verschiebungen für die einzelnen Exchange Online, SharePoint Online und Skype for Business abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate dauern, nach Ablauf des Registrierungszeitraums alle erforderlichen Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Wenn Sie nach dem Wechsel Probleme mit Ihrem Mandanten feststellen, wenden Sie sich an [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) , um Hilfe zu erhalten. 
   
 
-|**Kunden mit Rechnungsadresse in**|**Alle abgeschlossenen Verschiebungen**|
+|**Kunden mit Anmelde Land in**|**Alle abgeschlossenen Verschiebungen**|
 |:-----|:-----|
 |Australien, Neuseeland, Fidschi  <br/> |31. Oktober 2017  <br/> |
 |Japan  <br/> |31. Oktober 2018  <br/> |
@@ -41,6 +41,8 @@ Sehen Sie sich das Office 365 Nachrichten Center zur Bestätigung an, wenn die V
 |Frankreich  <br/> |15. September 2020  <br/> |
 |Vereinigte Arabische Emirate  <br/> |1. Februar 2022  <br/> |
 |Südafrika  <br/> |1. Februar 2022  <br/> |
+|Schweiz, Liechtenstein  <br/> |1. Juli 2022  <br/> |
+|Deutschland  <br/> |Geplante  <br/> |
    
 ## <a name="exchange-online"></a>Exchange Online
 
