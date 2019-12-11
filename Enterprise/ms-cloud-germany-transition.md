@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 5b339ab36ad613078bbfcd705f42ceb3703585e9
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 95edbeeb79549957ff49afa8b8a96160945b0f20
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920257"
+ms.locfileid: "39962442"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -43,7 +43,7 @@ Die bestehenden Kunden von Microsoft Cloud Germany (Microsoft Cloud Deutschland)
 
 Die Migrationen für Organisationen, die sich für den von Microsoft geleiteten Ansatz anmelden, werden voraussichtlich in 2020 durchgeführt. Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben. 
 
-Beachten Sie, dass die Preise nach Abschluss der Abonnementmigration verringert werden, damit die Preise für die öffentliche Cloud berücksichtigt werden. Für direkte Kunden wird ein neues Abonnement auf einen neuen Zeitraum von 12-Monaten erweitert und die Migration wird zum neuen jährlichen Verlängerungsdatum abgeschlossen. Die folgenden Dienste werden als Teil des von Microsoft geleiteten Ansatzes migriert:
+Die folgenden Dienste werden als Teil des von Microsoft geleiteten Ansatzes migriert:
 
 - Azure Active Directory
 - Exchange Online
@@ -52,12 +52,12 @@ Beachten Sie, dass die Preise nach Abschluss der Abonnementmigration verringert 
 - OneDrive for Business
 - Skype for Business Online
 
-  Im Rahmen der Migration von Microsoft Cloud Deutschland in die deutsche Region werden bestehende Skype for Business Online Kunden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
+Während der Migration von Microsoft Cloud Deutschland in die deutschen Rechenzentrumsregionen werden bestehende Skype for Business Online Kunden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home).
 
 - Office 365-Gruppen
 - Dynamics 365 / Power Platform
 
-  Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
+Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Wie Sie sich auf die Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen vorbereiten können
 
@@ -65,13 +65,13 @@ Der erste Schritt besteht darin, Microsoft zu benachrichtigen, damit wir Ihre Be
 
 - Alle migrierenden Kunden müssen die Konnektivität zum weltweiten [Office 365-URLs und -IP-Adressen](urls-and-ip-address-ranges.md), die die neuen deutschen Rechenzentrumsregionen umfassen, überprüfen.
 - Überprüfen Sie die Beschreibung der Office 365-Plattformdienste, um zu verstehen, welche Funktionen und Dienste nach der Fertigstellung in der Region für Ihre Organisation verfügbar werden. 
-- Im Rahmen der Migration werden bezahlte Abonnements überführt.
+- Im Rahmen der Migration werden bezahlte Abonnements überführt.  Testabonnements können nicht migriert werden.
 
 Mandantenmigrationen werden als Back-End-Dienste ausgeführt, wobei nur minimale Kundeninteraktionen erforderlich sind.  Alle weiteren vom Kunden geleiteten Aufgaben und der allgemeine Stand der Migration werden während des Migrationsprozesses über das Message Center mitgeteilt.  Zu den Aufgaben zählen beispielsweise durch Kunden verwaltete DNS-Updates oder die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen.
 
 ## <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Die Kundenerfahrung während der Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen
 
-Mandantenmigrationen werden als Back-End-Dienste mit minimaler Auswirkung auf den Endkunden oder Aktionen seitens der Administratoren ausgeführt.  Allerdings gibt es Überlegungen für jede Workload.  
+Mandantenmigrationen sind so angelegt, dass sie nur minimale Auswirkungen auf Endkunden und Administratoren haben.  Allerdings gibt es Überlegungen für jede Workload.  
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -130,11 +130,9 @@ Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen bieten zusätzl
 - Sie bieten die vollständige Funktionalität, Sicherheit auf Unternehmensniveau und umfassende Funktionen, die Kunden bei der Einhaltung behördlicher Vorschriften unterstützen. 
 - Sie sind im Rahmen vorhandener Verträge für Onlinedienstleistungen verfügbar.
 
-#### <a name="what-is-the-service-availability"></a>Wie sieht es mit der Dienstverfügbarkeit aus?
+#### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>Wie hoch ist die Dienstverfügbarkeit der verschiedenen Office 365-Clouddienstangebote?
 
-Microsoft 365-Dienste sind ab nur einen Office 365-Mandanten als Abonnement verfügbar.
-
-Für Microsoft Cloud Deutschland bieten wir die folgenden Services. Diesem Cloud-Angebot werden wir keine neuen Services hinzufügen.
+Die folgenden 15 Dienste sind im Clouddienstangebot von Microsoft Cloud Germany (Microsoft Cloud Deutschland) verfügbar.  Microsoft Cloud Germany werden keine neuen Dienste hinzufügen.
 
 1. Exchange Online
 2. Kunden-Lockbox (Exchange Online)
@@ -152,7 +150,7 @@ Für Microsoft Cloud Deutschland bieten wir die folgenden Services. Diesem Cloud
 14. Office 365 ProPlus
 15. Outlook Mobile
 
-Für Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen bieten wir die folgenden Services. Diesem Cloud-Angebot werden wir stets neue Services hinzufügen.
+Derzeit sind 29 Dienste als Bestandteil von Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verfügbar.  In Übereinstimmung mit den globalen Office 365-Diensten werden fortlaufend neue Features und Dienste bereitgestellt.
 
 1. Exchange Online
 2. Kunden-Lockbox (Exchange Online)
@@ -170,14 +168,14 @@ Für Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen bieten wir
 14. Kunden-Lockbox (SharePoint Online)
 15. OneDrive for Business
 16. Microsoft Stream
-17. Skype for Business (wechselt zu Microsoft Teams)
+17. Skype for Business (während der Migration erfolgt ein Umstieg zu Microsoft Teams)
 18. Cloud PBX
 19. PSTN-Konferenzen
 20. PSTN-Anrufe
 21. Microsoft Teams
 22. Administrator-Berichte/ Verwendungsberichte
-23. Word Online, Excel Online, PowerPoint, OneNote, Visio Online
-24. 24. Planner
+23. Word Online, Excel Online, PowerPoint, OneNote und Visio Online
+24. Planner
 25. Sway
 26. Office 365 ProPlus
 27. Outlook Mobile
@@ -186,17 +184,17 @@ Für Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen bieten wir
 
 ### <a name="when-will-migration-happen"></a>Wann wird die Migration durchgeführt?
 
-- Azure 
+#### <a name="azure"></a>Azure 
 
- Sie können [die Migration von](https://docs.microsoft.com/azure/germany/germany-migration-main) Azure-Ressourcen zu einer anderen Region bereits starten. Wenn Sie über Azure mit Office 365, Dynamics 365 und/oder Power BI verfügen, führen Sie die folgenden Schritte aus.
+Sie können [die Migration von](https://docs.microsoft.com/azure/germany/germany-migration-main) Azure-Ressourcen zu einer anderen Region bereits starten. Wenn Sie über Azure mit Office 365, Dynamics 365 und/oder Power BI verfügen, führen Sie die folgenden Schritte aus.
 
-- Office 365
+#### <a name="office-365"></a>Office 365
 
-  [Melden Sie sich an](https://aka.ms/office365germanymoveoptin) für die von Microsoft geleiteten Migration noch heute. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
+[Melden Sie sich an](https://aka.ms/office365germanymoveoptin) für die von Microsoft geleiteten Migration noch heute. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
 
-- Dynamics 365 und Power BI
+#### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 und Power BI
 
-  Melden Sie sich für die von Microsoft geleiteten Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) noch heute an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
+Melden Sie sich für die von Microsoft geleiteten Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) noch heute an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>Werden die Preise für die von mir verwendeten Office-Dienste geändert?
 
@@ -212,9 +210,10 @@ Wenn Sie Fragen haben, können Sie uns wie folgt oder über Ihren Partner kontak
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Hilfe zur Microsoft Cloud Deutschland-Migration Assistance: [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist)
-- Wie Sie sich für die Migration bei [https://aka.ms/office365germanymoveoptin](https://aka.ms/office365germanymoveoptin) anmelden können
-- Migration von Dynamics 365 unter [https://aka.ms/D365ceOptIn](https://aka.ms/D365ceOptIn)
-- Migration von Power BI unter [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
-- URLs und IP-Adressbereiche für Office 365 unter [https://aka.ms/o365endpoints](https://aka.ms/o365endpoints)
-- Office 365 Hybrid-Konfigurationsassistent unter [https://aka.ms/HybridWizard](https://aka.ms/HybridWizard)
+- [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
+- [So können Sie sich für die Migration anmelden](https://aka.ms/office365germanymoveoptin)
+- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/D365ceOptIn)
+- [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
+- [URLs und IP-Adressbereiche für Office 365](https://aka.ms/o365endpoints)
+- [Office 365 Hybrid-Konfigurationsassistent](https://aka.ms/HybridWizard)
+- [Erste Schritte mit dem Upgrade von Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

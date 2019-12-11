@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: '
-ms.openlocfilehash: 6105b9a386a64c2f855433fcc60ebb41149afdab
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 97075a861a86f8285837b8528f8c387d45dbafab
+ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/10/2019
-ms.locfileid: "39920255"
+ms.locfileid: "39962432"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Anmelden für die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -56,8 +56,8 @@ Die Migrationen für Organisationen, die sich für den von Microsoft geleiteten 
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Hilfe zur Microsoft Cloud Deutschland-Migration Assistance: [https://aka.ms/germanymigrateassist](https://aka.ms/germanymigrateassist)
-- Migration von Office 365: [https://aka.ms/office365germanymove](https://aka.ms/office365germanymove)
-- Migration von Dynamics 365: [https://aka.ms/d365ceoptin](https://aka.ms/d365ceoptin)
-- Migration von Power BI: [https://aka.ms/pbioptin](https://aka.ms/pbioptin)
+- [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
+- [Office 365-Migrationsprogramm für Kunden von Microsoft Cloud Deutschland](https://aka.ms/office365germanymove)
+- [Dynamics 365-Migrationsprogramm für Kunden von Microsoft Cloud Deutschland](https://aka.ms/d365ceoptin)
+- [Power BI-Migrationsprogramm für Kunden von Microsoft Cloud Deutschland](https://aka.ms/pbioptin)
 - Übermitteln Sie uns Ihre Fragen über den Link "Benötigen Sie Hilfe?" im [Microsoft 365 Admin Center](https://portal.office.de/).
