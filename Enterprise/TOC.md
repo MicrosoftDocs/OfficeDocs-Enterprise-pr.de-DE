@@ -152,6 +152,8 @@
 #### [Anfordern der Datenverschiebung](request-your-data-move.md)
 #### [Während und nach der Datenverschiebung](during-and-after-your-data-move.md)
 #### [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
+#### [Microsoft Cloud Deutschland: Office 365-Migrationsprogramm](ms-cloud-germany-transition.md)
+#### [Microsoft Cloud Deutschland: Zustimmung zur Migration](ms-cloud-germany-migration-opt-in.md)
 
 ### Hybridlösungen
 #### [Verwenden von Azure Active Directory für die SharePoint Server 2016-Authentifizierung](using-azure-ad-for-sharepoint-server-authentication.md)
@@ -189,7 +191,7 @@
 ##### [Zusammenarbeiten an einer Website](collaborate-in-a-site.md)
 ##### [Zusammenarbeiten als Team](collaborate-as-a-team.md)
 #### Gastfreigabesicherheit
-##### [Anonyme Freigabe](best-practices-anonymous-sharing.md)
+##### [Nicht authentifizierte Freigabe](best-practices-anonymous-sharing.md)
 ##### [Begrenzen der versehentlichen Exposition](sharing-limit-accidental-exposure.md)
 ##### [Sichere Gastfreigabeumgebung](create-a-secure-guest-sharing-environment.md)
 
