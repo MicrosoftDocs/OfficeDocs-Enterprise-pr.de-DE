@@ -12,12 +12,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: In diesem Artikel finden Sie Informationen zum Verschieben einer OneDrive-Website an einen anderen geografischen Standort.
-ms.openlocfilehash: ab5540926d5685b4d3055b9aed623048c764044b
-ms.sourcegitcommit: 6d3420e41a52820729dd417511286bf98d3713ea
+ms.openlocfilehash: 9760d61a8a1db76e3abf061552e0a99d85b9092a
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "38626165"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072557"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einen anderen geografischen Standort 
 
@@ -47,7 +47,7 @@ Sie können die Verschiebung von OneDrive-Sites im Voraus planen (weiter unten i
 
 - Sie können bis zu 4.000 Verschiebungen zugleich planen.
 - Wenn mit dem Verschieben begonnen wird, können Sie weitere planen, bis zu maximal jeweils 4.000 ausstehenden Verschiebungen in der Warteschlange.
-- Es wird empfohlen, nicht mehr als 4.000 Verschiebungen pro Monat zu planen.
+- Die maximale Größe eines OneDrive, das verschoben werden kann, beträgt 1 TB (1 TB).
 
 ## <a name="moving-a-onedrive-site"></a>Verschieben einer OneDrive-Website
 
