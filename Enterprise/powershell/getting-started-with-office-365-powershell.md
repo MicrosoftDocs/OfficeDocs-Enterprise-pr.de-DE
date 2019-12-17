@@ -3,7 +3,7 @@ title: Erste Schritte mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/13/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -14,17 +14,15 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
 description: 'Zusammenfassung: Dieser Artikel erläutert die Bedeutung der Office 365 PowerShell, beschreibt die Anbindung an Office 365-Mandanten und nennt Hilferessourcen.'
-ms.openlocfilehash: aeabc0b4ab799f542a05e5279b8ff5cb7123abd8
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: d1066d914708bd267b5de38099b6cf6175268f9c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068951"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072177"
 ---
 # <a name="getting-started-with-office-365-powershell"></a>Erste Schritte mit Office 365 PowerShell
 
- **Zusammenfassung:** Dieser Artikel erläutert die Bedeutung der Office 365 PowerShell, beschreibt die Anbindung an Office 365-Mandanten und nennt Hilferessourcen.
-  
 Mit Office 365 PowerShell können Sie Office 365 mit Befehlen und Skripts verwalten, um Ihre tägliche Arbeit zu optimieren. Hier erfahren Sie, warum Office 365 PowerShell-Kenntnisse für die Verwaltung von Office 365 entscheidend sind, wie Sie eine Verbindung mit Ihrem Office 365-Abonnement herstellen und wie Sie Berichte erstellen. Des Weiteren finden Sie hier weitere Informationen und Hilfe von der Office 365-Community.
   
 Wählen Sie den Artikel basierend auf Ihren Anforderungen aus:
@@ -54,8 +52,6 @@ Wählen Sie den Artikel basierend auf Ihren Anforderungen aus:
     Unter diesem Link finden Sie die verschiedenen Foren der PowerShell-Community sowie Hilfestellung und aktuelle Informationen zur Verwendung der Office 365 PowerShell.
     
 ## <a name="see-also"></a>Siehe auch
-
-#### 
 
 [Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
 

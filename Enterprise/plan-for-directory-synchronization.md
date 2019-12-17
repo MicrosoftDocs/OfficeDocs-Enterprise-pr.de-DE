@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Office 365, Active Directory-Domänendienste Bereinigung und dem Azure Active Directory Connect-Tool.
-ms.openlocfilehash: 5b91ebfae2250d44c34aed45c00ac09e98b21909
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 7dfb5a34e7a5a1bf1368a059859ef32049a15473
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747085"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072537"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Je nach geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Office 365 übernehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Office 365 Abonnements synchronisiert.
 
@@ -63,7 +63,7 @@ Es gibt zwei Arten der verwalteten Authentifizierung:
 
 Mit der Kennworthash Synchronisierung (PHS) synchronisieren Sie Ihre AD DS Benutzerkonten mit Office 365 und verwalten Ihre Benutzer lokal. Hashwerte von Benutzerkennwörtern werden von Ihrem AD DS zu Azure AD synchronisiert, sodass die Benutzer das gleiche Kennwort lokal und in der Cloud haben. Dies ist die einfachste Möglichkeit zum Aktivieren der Authentifizierung für AD DS Identitäten in Azure AD. 
 
-![](./media/plan-for-directory-synchronization/phs-authentication.png)
+![Kennworthashsynchronisierung (Password hash synchronization, PHS)](./media/plan-for-directory-synchronization/phs-authentication.png)
 
 Wenn Kennwörter lokal geändert oder zurückgesetzt werden, werden die neuen Kennworthashs mit Azure AD synchronisiert, sodass Ihre Benutzer immer dasselbe Kennwort für Cloud-Ressourcen und lokale Ressourcen verwenden können. Die Benutzerkennwörter werden nie an Azure AD gesendet oder in Azure AD in Klartext gespeichert. Einige Premium Features von Azure AD, beispielsweise Identitätsschutz, erfordern PHS, unabhängig davon, welche Authentifizierungsmethode ausgewählt ist.
   
@@ -73,7 +73,7 @@ Weitere Informationen finden Sie unter [Auswählen von PHS](https://docs.microso
 
 Die Pass-Through-Authentifizierung (PTA) bietet eine einfache Kennwortüberprüfung für Azure AD Authentifizierungsdienste mit einem Software-Agent, der auf einem oder mehreren lokalen Servern läuft, um die Benutzer direkt mit Ihrem AD DS zu validieren. Mit Pass-Through-Authentifizierung (PTA) synchronisieren Sie AD DS Benutzerkonten mit Office 365 und verwalten Ihre Benutzer lokal. 
 
-![](./media/plan-for-directory-synchronization/pta-authentication.png)
+![Passthrough-Authentifizierung (PTA)](./media/plan-for-directory-synchronization/pta-authentication.png)
 
 PTA ermöglicht es Ihren Benutzern, sich bei lokalen und Office 365 Ressourcen und Anwendungen mit Ihrem lokalen Konto und Kennwort anzumelden. Mit dieser Konfiguration werden Benutzerkennwörter direkt für Ihr lokales AD DS überprüft, ohne dass Kennworthashs in Azure AD gespeichert werden. 
 

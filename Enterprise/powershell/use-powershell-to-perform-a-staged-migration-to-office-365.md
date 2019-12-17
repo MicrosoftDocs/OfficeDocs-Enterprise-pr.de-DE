@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: ''
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 'Zusammenfassung: Hier erfahren Sie, wie Sie Windows PowerShell verwenden, um eine mehrstufige Migration zu Office 365 auszuführen.'
-ms.openlocfilehash: d60145c7dd25fc7cf6be51a891b8fae8e67ccc2b
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 598824933af54d79030465c825186f89b193666c
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747531"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072307"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer mehrstufigen Migration zu Office 365
 
@@ -57,7 +57,7 @@ Vor der Migration von Postfächern zu Office 365, mithilfe einer mehrstufigen Mi
   
 - Verwenden Sie Outlook von außerhalb des Unternehmensnetzwerks zur Verbindung mit Ihrem lokalen Exchange-Postfach.
     
-- Verwenden Sie die [Microsoft Exchange-Remoteverbindungsuntersuchung](https://www.testexchangeconnectivity.com/) zum Testen der Verbindungseinstellungen. Verwenden Sie Outlook Anywhere (RPC über HTTP) oder Outlook AutoErmittlung-Tests.
+- Verwenden Sie die [Microsoft Remote Connectivity Analyzer](https://https://testconnectivity.microsoft.com/) , um die Verbindungseinstellungen zu testen. Verwenden Sie Outlook Anywhere (RPC über HTTP) oder Outlook AutoErmittlung-Tests.
     
 - Führen Sie die folgenden Befehle in Exchange Online PowerShell aus:
     
@@ -199,12 +199,6 @@ Nachdem Sie einen Batch Postfächer erfolgreich migriert haben, benötigen Sie e
 Da die Migration noch nicht abgeschlossen ist, können Sie noch nicht alle Benutzer für ihre E-Mails an Office 365 weiterleiten. Was also tun Sie für diese Personen, die beide haben? Sie können die lokalen Postfächer ändern, die Sie bereits zu E-Mail-aktivierte Benutzer migriert haben. Wenn Sie von einem Postfach zu einem E-Mail-aktivierten Benutzer wechseln, können Sie den Benutzer für seine E-Mails anstatt zu seinem lokalen Postfach an Office 365weiterleiten. 
   
 Ein weiterer wichtiger Grund für die Konvertierung der lokalen Postfächer in E-Mail-aktivierte Benutzer besteht darin, dass die Proxyadressen aus den Office 365-Postfächern durch Kopieren zu den E-Mail-aktivierten Benutzern behalten werden. So können Sie Cloud-basierte Benutzer mithilfe von Active Directory von der lokalen Organisation aus verwalten. Außerdem verbleiben die zu E-Mail-aktivierten Benutzern kopierten Proxyadressen, sollten Sie entscheiden, die lokale Exchange Server-Organisation nach der Migration aller Postfächer zu Office 365 außer Betrieb zu setzen, in Ihrem lokalen Active Directory.
-  
-Weitere Informationen und Skripts zum Konvertieren von Postfächern in E-Mail-aktivierte Benutzer finden Sie in folgenden Themen:
-  
-- [Konvertieren von Exchange 2007-Postfächern in E-Mail-aktivierte Benutzer](https://go.microsoft.com/fwlink/p/?LinkId=233648)
-    
-- [Konvertieren von Exchange 2003-Postfächern in E-Mail-aktivierte Benutzer](https://go.microsoft.com/fwlink/p/?LinkId=233647)
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Schritt 6: Löschen eines Batches für die mehrstufige Migration
 <a name="BK_Endpoint"> </a>

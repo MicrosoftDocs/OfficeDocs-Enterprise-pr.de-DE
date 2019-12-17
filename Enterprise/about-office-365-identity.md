@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Hier erfahren Sie, wie Benutzeridentitäten in Office 365 verwaltet werden.
-ms.openlocfilehash: f6e871f03fb99feea05293c425406b6be7dfedd5
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 0cc40323d978fe9ab13e3326dac183143a014406
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745668"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40071877"
 ---
 # <a name="office-365-identity-models-and-azure-active-directory"></a>Office 365-Identitätsmodelle und Azure Active Directory
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Office 365 verwendet Azure Active Directory (Azure AD), einen cloudbasierten Benutzeridentitäts- und Authentifizierungsdienst, der in Ihrem Office 365-Abonnement enthalten ist, um Identitäten und Authentifizierung für Office 365 zu verwalten. Die ordnungsgemäße Konfiguration Ihrer Identitätsinfrastruktur ist entscheidend für die Verwaltung des Office 365-Benutzerzugriffs und der Berechtigungen für Ihre Organisation.
 
@@ -59,7 +59,7 @@ Bei der reinen Cloudidentität werden Benutzerkonten verwendet, die nur in Azure
 
 Hier sind die grundlegenden Komponenten der reinen Cloudidentität.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![Grundlegende Komponenten der reinen Cloud-Identität](./media/about-office-365-identity/cloud-only-identity.png)
 
 Sowohl lokale als auch Remotebenutzer (Onlinebenutzer) verwenden Ihre Azure AD-Benutzerkonten und Kennwörter für den Zugriff auf Office 365-Clouddienste. Azure AD authentifiziert Benutzeranmeldeinformationen basierend auf den gespeicherten Benutzerkonten und Kennwörtern.
 
@@ -76,7 +76,7 @@ Wenn Sie die Hybrididentität implementieren, ist Ihr lokales AD DS die autorisi
 
 Nachfolgend finden Sie die Komponenten der Hybrididentität.
 
-![](./media/about-office-365-identity/hybrid-identity.png)
+![Komponenten der Hybrid Identität](./media/about-office-365-identity/hybrid-identity.png)
 
 Der Azure AD-Mandant hat eine Kopie der AD DS-Konten. In dieser Konfiguration authentifizieren sich sowohl lokale als auch Remotebenutzer beim Zugriff auf Microsoft 365-Clouddienste bei Azure AD.
 

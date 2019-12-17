@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Office 365 oder Microsoft 365 mit Bereitstellungs Beratern.
-ms.openlocfilehash: a698ea4cf4eec5640d836986ce45f71bf7dba0a8
-ms.sourcegitcommit: 5fe1c9be652222d6956c7dad5949ddcf0bd27041
+ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "38076149"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072367"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Bereitstellungs Ratgeber für Office 365-oder Microsoft 365-Dienste
 
@@ -37,13 +37,13 @@ Wenn Sie sich nicht als mandantenadministrator anmelden, wird Ihnen schließlich
 
 Jeder Ratgeber ist ein Assistent, der Sie durch ihre Auswahlmöglichkeiten für die Features und Optionen führt, die Sie bereitstellen möchten. In einigen Fällen können Sie den Assistenten verwenden, um etwas zu konfigurieren oder eine Einstellung zu aktivieren. Hier ein Beispiel:
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
+![Beispiel eines Bereitstellungs Ratgebers](./media/deployment-advisors-for-office-365/m365-deploy-advisor1.png)
 
 Der Ratgeber führt Sie schrittweise durch Entscheidungen zur Anpassung an Ihre Anforderungen. Unterwegs erhalten Sie Anweisungen, Skripts und andere Ressourcen, um die Konfigurationsänderungen vorzunehmen.
 
 Am Ende erhalten Sie Links zu Videos und Referenz Artikeln. Hier ein Beispiel:
 
-![](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
+![Beispiel für Links zu Videos und Referenz Artikeln](./media/deployment-advisors-for-office-365/m365-deploy-advisor2.png)
 
 Sie können diese Ratgeber jederzeit verwenden, um weitere Informationen zu Office 365 Features und Optionen zu erhalten. Dies umfasst während der Planung oder nachdem Sie die Dienste bereits eingerichtet haben.
   

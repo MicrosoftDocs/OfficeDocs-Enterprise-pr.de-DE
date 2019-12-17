@@ -24,12 +24,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Benutzer und Gruppen erstellt werden, wenn Ihr Office 365-Abonnement nur Cloud-Identitäten verwendet.
-ms.openlocfilehash: 6815c89821216416379a27eb525e66b90b828ea8
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 5991ec838321187b58f913e1707efb2ede9912fb
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813413"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072277"
 ---
 # <a name="office-365-cloud-only-identities"></a>Office 365 nur-Cloud-Identitäten
 
@@ -37,7 +37,7 @@ ms.locfileid: "39813413"
 
 Bei der reinen cloudbasierten Identität werden alle Ihre Benutzer, Gruppen und Kontakte im Azure Active Directory (Azure AD)-Mandanten Ihres Office 365 Abonnements gespeichert. Hier sind die grundlegenden Komponenten der reinen Cloudidentität.
  
-![](./media/about-office-365-identity/cloud-only-identity.png)
+![Die grundlegenden Komponenten von Cloud-only Identity](./media/about-office-365-identity/cloud-only-identity.png)
 
 Benutzer und ihre Benutzerkonten in Organisationen können auf verschiedene Arten kategorisiert werden. Einige sind beispielsweise Mitarbeiter und haben einen permanenten Status. Bei einigen handelt es sich um Kreditoren, Auftragnehmer oder Partner mit einem temporären Status. Einige sind externe Benutzer, die über keine Benutzerkonten verfügen, aber weiterhin Zugriff auf bestimmte Dienste und Ressourcen für die Unterstützung von Interaktion und Zusammenarbeit erhalten müssen. Zum Beispiel:
 

@@ -15,12 +15,12 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Verwenden Sie Office 365 PowerShell, um den Zugriff auf Office 365 Dienste für Benutzer zu deaktivieren.
-ms.openlocfilehash: 9668175010b2581bcdd40988f605f68eea30520d
-ms.sourcegitcommit: 572375d69c438bd1eae012e6e98039be0a126a6d
+ms.openlocfilehash: 83967e0b44099fb651edaa7f7cba9e811f9fdf81
+ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "39872243"
+ms.lasthandoff: 12/17/2019
+ms.locfileid: "40072197"
 ---
 # <a name="disable-access-to-services-with-office-365-powershell"></a>Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell
 
@@ -155,11 +155,6 @@ Wenn Sie den Zugriff auf Dienste für mehrere Lizenzierungs Pläne deaktivieren 
 Informationen zum Deaktivieren von Office 365 Diensten für Benutzer, während Sie Sie einem Lizenzierungs Plan zuweisen, finden Sie unter [Deaktivieren des Zugriffs auf Dienste beim Zuweisen von Benutzerlizenzen](disable-access-to-services-while-assigning-user-licenses.md).
 
 
-## <a name="new-to-office-365"></a>Neu bei Office 365?
-<a name="LinkedIn"> </a>
-
-[!INCLUDE [LinkedIn Learning Info](../common/office/linkedin-learning-info.md)]
-   
 ## <a name="see-also"></a>Siehe auch
 <a name="SeeAlso"> </a>
 
