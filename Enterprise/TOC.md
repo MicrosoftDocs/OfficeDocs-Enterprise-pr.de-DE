@@ -194,6 +194,7 @@
 ##### [Nicht authentifizierte Freigabe](best-practices-anonymous-sharing.md)
 ##### [Begrenzen der versehentlichen Exposition](sharing-limit-accidental-exposure.md)
 ##### [Sichere Gastfreigabeumgebung](create-a-secure-guest-sharing-environment.md)
+#### [Erstellen eines B2B-Extranets](b2b-extranet.md)
 
 ## Geräte
 ### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
