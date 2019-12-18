@@ -3,7 +3,7 @@ title: Verwalten von SharePoint Online-Websitegruppen mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2018
+ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um SharePoint Online Websitegruppen zu verwalten.'
-ms.openlocfilehash: 7eb8a472cb021fb2b78468a9100282b72c1b88cb
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e8cde8e65b009c1ae677df6b63f416ed227f824c
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748535"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261388"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-office-365-powershell"></a>Verwalten von SharePoint Online-Websitegruppen mit Office 365 PowerShell
 
@@ -34,15 +34,12 @@ Für die Verfahren in diesem Artikel müssen Sie eine Verbindung mit SharePoint 
 
 Das SharePoint Online Admin Center verfügt über einige einfach zu verwendende Methoden zum Verwalten von Websitegruppen. Nehmen wir beispielsweise an, Sie möchten die Gruppen und die Gruppenmitglieder für die `https://litwareinc.sharepoint.com/sites/finance` Website betrachten. Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie im Microsoft 365 Admin Center auf **Ressourcen** > **Websites**, und klicken Sie dann auf die URL der Website.
-2. Klicken Sie im Dialogfeld -Websitesammlung auf **Zu dieser Website wechseln**.
-3. Klicken Sie auf dieser Seite auf das Symbol **Einstellungen** (oben rechts auf der Seite) und dann auf **Websiteeinstellungen**:<br/>
-![SharePoint Online von Websiteeinstellungen](media/spo-site-settings.png)<br/>
-4. Klicken Sie auf der Seite Websiteeinstellungen**Benutzer und Berechtigungen** auf **Websiteberechtigungen**.
+1. Klicken Sie im SharePoint Admin Center auf **aktive Websites**, und klicken Sie dann auf die URL der Website.
+2. Klicken Sie auf der Seite Website auf das Symbol **Einstellungen** (befindet sich in der rechten oberen Ecke der Seite), und klicken Sie dann auf **Websiteberechtigungen**.
 
 Wiederholen Sie dieses Verfahren für die nächste gewünschte Website.
 
-Verwenden Sie zum Abrufen einer Liste mit Gruppen mithilfe von Office 365 PowerShell den folgenden Befehlssatz:
+Wenn Sie eine Liste der Gruppen mit Office 365 PowerShell abrufen möchten, können Sie die folgenden Befehle verwenden:
 
 ```powershell
 $siteURL = "https://litwareinc.sharepoint.com/sites/finance"
@@ -57,7 +54,7 @@ foreach ($y in $x)
 
 Es gibt zwei Möglichkeiten zum Ausführen dieses Befehlssatzes in der Eingabeaufforderung der SharePoint Online Verwaltungsshell:
 
-- Kopieren Sie die Befehle in Notepad (oder einen anderen Text-Editor), ändern Sie den Wert der **$SiteUrl** -Variablen, wählen Sie die Befehle aus, und fügen Sie Sie dann in die Eingabeaufforderung der SharePoint Online Verwaltungsshell ein. Wenn Sie dies tun, wird PowerShell an einer **>>** Eingabeaufforderung angehalten. Drücken Sie die EINGABETASTE, um den **Foreach**-Befehl auszuführen.<br/>
+- Kopieren Sie die Befehle in Notepad (oder einen anderen Text-Editor), ändern Sie den Wert der **$SiteUrl** -Variablen, wählen Sie die Befehle aus, und fügen Sie Sie dann in die Eingabeaufforderung der SharePoint Online Verwaltungsshell ein. Wenn Sie dies tun, wird PowerShell an einer **>>** Eingabeaufforderung angehalten. Drücken Sie die EINGABETASTE `foreach` , um den Befehl auszuführen.<br/>
 - Kopieren Sie die Befehle in Editor (oder einen anderen Text-Editor), ändern Sie den Wert der **$siteURL**Variable, und speichern Sie dann diese Textdatei mit einem Namen und der Erweiterung „.ps1“ in einem geeigneten Ordner. Führen Sie als nächstes das Skript über die Eingabeaufforderung der SharePoint Online Management Shell aus, indem Sie den Pfad und den Dateinamen angeben. Nachfolgend sehen Sie einen Beispielbefehl:
 
 ```powershell

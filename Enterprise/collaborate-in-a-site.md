@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie mit Gästen in einer SharePoint-Website zusammenarbeiten.
-ms.openlocfilehash: 21717ce0c8e9e51eaf090a449d35a281722f9600
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 31e1365467729753cec358b4fb33462894cdcbb8
+ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919258"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "40261358"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
@@ -121,7 +121,7 @@ So laden Sie interne Benutzer zu einer Gruppe ein
 
 Gastbenutzer können nicht von der Website hinzugefügt werden. Sie müssen Sie mit Outlook im Internet hinzufügen.
 
-So laden Sie Gäste zu einer Website ein
+So laden Sie Gäste zu einer Gruppe ein
 1. Klicken Sie in Outlook im Internet unter **Gruppen**auf die Gruppe, der Sie Mitglieder hinzufügen möchten.
 2. Öffnen Sie die Gruppen Visitenkarte, und klicken Sie dann unter **Weitere Optionen** (...) auf **Mitglieder hinzufügen**.
 3. Geben Sie die e-Mail-Adressen der Gäste ein, die Sie einladen möchten, und klicken Sie dann auf **Hinzufügen**.
@@ -133,5 +133,7 @@ So laden Sie Gäste zu einer Website ein
 
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
 
-[Erstellen einer sicheren Gast Freigabe Umgebung](create-a-secure-guest-sharing-environment.md))
+[Erstellen einer sicheren Gastfreigabeumgebung](create-a-secure-guest-sharing-environment.md)
+
+[Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md)
 
