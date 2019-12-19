@@ -1,7 +1,7 @@
 ---
 title: Office 365 US Government DoD-Endpunkte
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: laurawi
+author: LauraWi
 manager: laurawi
 ms.date: 12/04/2019
 audience: ITPro
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 5d7dce60-4892-4b58-b45e-ee42fe8a907f
 description: 'Zusammenfassung: Office 365 erfordert eine Verbindung mit dem Internet. Die folgenden Endpunkte sollten für Kunden erreichbar sein, die nur Office 365 US Government DoD-Pläne verwenden.'
 hideEdit: true
-ms.openlocfilehash: 53cf2be74a24225a142cfd805404aea9fddd7d7e
-ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
+ms.openlocfilehash: 651b4671a355ed73eed4c1e5c43705da2d6cf592
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39858038"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744331"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 US Government DoD-Endpunkte
 

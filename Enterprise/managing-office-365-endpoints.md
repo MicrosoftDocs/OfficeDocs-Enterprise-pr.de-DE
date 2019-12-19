@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Unternehmensnetzwerke schränken den Zugriff auf gewöhnliche Internetseiten ein, oder umfassen einen erheblichen Backhaul oder eine umfangreiche Verarbeitung des Netzwerkdatenverkehrs. Um sicherzustellen, dass die Computer in solchen Netzwerken auf Office 365 zugreifen können, müssen die Netzwerk- und Proxy-Administratoren die Liste der Office 365-Endpunkte, die aus vollqualifizierten Domänennamen (FQDNs), URLs und IP-Adressen bestehen, verwalten. Diese müssen den Direktverbindungs-, Proxy- und/oder Firewall-Regeln sowie den PAC-Dateien hinzugefügt werden, damit gewährleistet ist, dass Netzwerkanfragen Office 365 erreichen.
-ms.openlocfilehash: 99445e6feac84a6091888422039e8ba655d246c9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
+ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072487"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "40744509"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -133,14 +133,14 @@ Klicken Sie auf den Link unten, um anzugeben, ob die Artikel hilfreich war, und 
   
 Mit mehr als 2500 ISP-Peeringbeziehungen weltweit und 70 Präsenzpunkten sollte der Zugang aus Ihrem Netzwerk in unseres nahtlos möglich sein. Es lohnt sich, ein paar Minuten zu investieren, um sicherzustellen, dass die Peeringbeziehung Ihres ISPs optimal ist. [Hier finden Sie ein paar Beispiele](https://blogs.technet.microsoft.com/onthewire/2017/03/22/__guidance/) guter und weniger guter Peeringübergaben an Ihr Netzwerk.
   
-### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Ich sehe Netzwerkanforderungen an IP-Adressen, die nicht in der Liste "Veröffentlicht" angezeigt werden. Muss ich Zugriff auf diese Netzwerkanforderungen zulassen?
 <a name="bkmk_MissingIP"> </a>
+### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>Ich sehe Netzwerkanforderungen an IP-Adressen, die nicht in der Liste "Veröffentlicht" angezeigt werden. Muss ich Zugriff auf diese Netzwerkanforderungen zulassen?
 
 In der Liste werden nur IP-Adressen für die Office 365-Server angezeigt, zu denen Sie direkt routen sollten. Es handelt sich nicht um eine vollständige Liste aller IP-Adressen, für die Netzwerkanforderungen angezeigt werden. Es werden Netzwerkanforderungen Microsoft und unveröffentlichte IP-Adressen von Drittanbietern angezeigt. Diese IP-Adressen werden dynamisch generiert oder auf eine Weise verwaltet, die bei Änderungen eine rechtzeitige Benachrichtigung verhindert. Wenn Ihre Firewall den Zugriff für diese Netzwerkanforderungen nicht basierend auf den FQDNs zulassen kann, verwenden Sie zum Verwalten der Anforderungen eine PAC- oder WPAD-Datei.
   
 Sie sehen eine Office 365 zugeordnete IP-Adresse, über die Sie weitere Informationen erhalten möchten?
   
-1. Überprüfen Sie mithilfe eines [CIDR Rechners](https://www.ipaddressguide.com/cidr), ob die IP-Adresse in einem größeren veröffentlichten Bereich enthalten ist.
+1. Überprüfen Sie, ob die IP-Adresse in einem größeren veröffentlichten Bereich mithilfe eines CIDR-Rechners enthalten [](https://www.ipaddressguide.com/cidr) ist, wie diese fürhttps://www.ipaddressguide.com/ipv6-cidr)IPv4 oder [IPv6].
 2. Überprüfen Sie mithilfe einer [Whois-Abfrage](https://dnsquery.org/), ob die IP-Adresse einem Partner gehört. Wenn die IP-Adresse von Microsoft betrieben wird, kann es sich um einen internen Partner handeln.
 3. Überprüfen Sie das Zertifikat, stellen Sie in einem Browser unter Verwendung von *HTTPS://\<IP-ADRESSE\>* eine Verbindung mit der IP-Adresse her, und überprüfen Sie die auf dem Zertifikat aufgelisteten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine von Microsoft betriebene IP-Adresse handelt, die sich nicht in der Liste der Office 365-IP-Adressen befindet, ist die IP-Adresse wahrscheinlich einem Microsoft-CDN, z. B. *MSOCDN.NET*, oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
 
@@ -159,8 +159,8 @@ Ein Proxy Server überprüft die anfängliche URL, im obigen Beispiel ServiceA.O
 
 Hartcodiert Konfigurationen oder auf indirekten vollständig qualifizierten Office 365-Domänennamen basierendes Whitelisting wird nicht empfohlen und nicht von Microsoft unterstützt, da bekannt ist, dass dabei Probleme mit der Verbindung zu Kunden entstehen. DNS-Lösungen, die die CNAME-Umleitung blockieren oder die Office 365-DNS-Einträge andernfalls falsch auflösen, können bei aktivierter DNS-Rekursion über die DNS-bedingte Weiterleitung behoben werden (für direkt verwendete vollständig qualifizierte Office 365-Domänennamen). Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlenen Whitelists für Office 365-Endpunkte mithilfe des [Office 365-IP-Adress- und URL-Webdiensts](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) direkt in ihre Konfiguration.
 
-### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Warum enthalten Microsoft-Domänennamen Namen wie "nsatc.net" oder "akadns.net"?
 <a name="bkmk_akamai"> </a>
+### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Warum enthalten Microsoft-Domänennamen Namen wie "nsatc.net" oder "akadns.net"?
 
 Office 365 und andere Microsoft-Dienste nutzen verschiedene Drittanbieterdienste wie Akamai und MarkMonitor, um die Office 365-Benutzererfahrung zu optimieren. Um stets die besten Ergebnisse zu ermöglichen, können sich diese Dienste in Zukunft ändern. Drittanbieterdomänen können Inhalt, z. B. ein CDN, oder einen Dienst, z. B. einen geographische Datenverkehrsverwaltungsdienst, hosten. Zu den derzeit genutzten Dienste gehören unter anderem:
   
@@ -182,8 +182,8 @@ Office 365 und andere Microsoft-Dienste nutzen verschiedene Drittanbieterdienste
 *.edgesuite.net
 ```
 
-### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Ich benötige die geringstmögliche Konnektivität für Office 365
 <a name="bkmk_thirdparty"> </a>
+### <a name="i-have-to-have-the-minimum-connectivity-possible-for-office-365"></a>Ich benötige die geringstmögliche Konnektivität für Office 365
 
 Office 365 ist eine Suite von Diensten, die für die Verwendung über das Internet konzipiert sind. Die Versprechen hinsichtlich Zuverlässigkeit und Verfügbarkeit basieren auf der Verfügbarkeit zahlreicher Standardinternetdienste. Standardinternetdienste wie DNS, CRL und CDNs müssen beispielsweise erreichbar sein, um Office 365 zu verwenden, genau so, wie es für die meisten modernem Internetdienste der Fall ist.
 
@@ -200,8 +200,8 @@ Zusätzlich zu diesen grundlegenden Internetdiensten gibt es Drittanbieterservic
   
 Wenn Sie versuchen, Office 365 zu verwenden und feststellen, dass Sie auf Dienste von Drittanbietern nicht zugreifen können, sollten Sie [sicherstellen, dass für alle vollqualifizierten Domänennamen, die in diesem Artikel als erforderlich oder optional gekennzeichnet sind, der Zugriff durch Proxy und Firewall erlaubt ist](urls-and-ip-address-ranges.md).
   
-### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Wie blockiere ich den Zugriff auf Microsoft-Services für Endverbraucher?
 <a name="bkmk_consumer"> </a>
+### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Wie blockiere ich den Zugriff auf Microsoft-Services für Endverbraucher?
 
 Das Blockieren des Zugriffs auf unsere Services für Endverbraucher geschieht auf eigene Gefahr. Die einzige zuverlässige Methode zum Blockieren der Services für Endverbraucher ist das Einschränken des Zugriffs auf den vollqualifizierten Domänennamen*Login.Live.com*. Dieser vollqualifizierte Domänenname wird von einer großen Zahl von Diensten verwendet, einschließlich Nicht-Verbraucherdienste wie MSDN, TechNet und anderen. Dieser vollqualifizierte Domänenname wird auch vom Secure File Exchange-Programm des Microsoft-Supports und für die Übertragung von Dateien verwendet, die Problembehandlung bei Microsoft-Produkten erleichtern.  Das Einschränken des Zugriffs auf diesen vollqualifizierten Domänennamen kann dazu führen, dass außerdem Ausnahmen zur Regel für Netzwerkanforderungen im Zusammenhang mit diesen Diensten eingeschlossen werden müssen.
   
