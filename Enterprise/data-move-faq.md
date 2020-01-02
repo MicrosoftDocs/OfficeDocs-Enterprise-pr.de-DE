@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 description: Hier finden Sie Antworten auf allgemeine Fragen zum Verschieben von Kern Daten in ein neues Rechenzentrum Geo.
-ms.openlocfilehash: fd133dfb28ae99115198977e2e6d637a872078d8
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756584"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923847"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -50,6 +50,14 @@ Es gibt zwei Aktionen, die Sie als mandantenadministrator ausführen können.
 Datenverschiebungen stellen einen Back-End-Dienstbetrieb mit minimalen Auswirkungen auf die Endbenutzer dar. Features, die betroffen sein können, werden in [während und nach der Datenverlagerung](during-and-after-your-data-move.md)aufgeführt. Wir halten uns an die [Vereinbarung zum Service Level (SLA) von Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=523897) für die Verfügbarkeit, sodass Kunden während des Wechsels keine Vorbereitung oder Überwachung benötigen. 
   
 Alle Office 365 Dienste führen die gleichen Versionen in den Rechenzentren aus, sodass Sie eine konsistente Funktionalität sicherstellen können. Ihr Dienst wird während des gesamten Prozesses vollständig unterstützt.
+
+## <a name="what-is-in-scope-for-teams-migration"></a>Was ist der Bereich für die Migration von Teams?
+
+Zusätzlich zu Exchange Online, SharePoint Online und OneDrive für Unternehmen; Microsoft migriert Teams-Daten in das lokale Rechenzentrum.  
+- Chatnachrichten in Microsoft Teams, einschließlich privater Nachrichten und Kanal Nachrichten. 
+- In Chats verwendete Teams-Images. 
+
+Microsoft Teams-Dateien werden in SharePoint Online gespeichert, und Microsoft Teams-Chat Dateien werden in OneDrive für Unternehmen gespeichert.  Voicemail, Kalender, Chatverlauf und Kontakte werden in Exchange Online gespeichert.  In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive für Unternehmen bereits vom Kunden im lokalen Rechenzentrum Geo verwendet und sind ebenfalls Teil des Office 365 Migrationsprogramms für berechtigte Kunden Länder.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Wie wirkt sich die unterschiedlichen Dienste in verschiedenen GEOSS aus?
 

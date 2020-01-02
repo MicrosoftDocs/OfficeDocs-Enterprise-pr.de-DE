@@ -13,12 +13,12 @@ search.appverid:
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: b445397f6ce5b3c5178093ed971230e2a8640d1d
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959280"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923857"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -32,18 +32,21 @@ Sehen Sie sich das Office 365 Nachrichten Center zur Bestätigung an, wenn die V
 
 |**Kunden mit Anmelde Land in**|**Alle abgeschlossenen Verschiebungen**|
 |:-----|:-----|
-|Australien, Neuseeland, Fidschi  <br/> |31. Oktober 2017  <br/> |
-|Japan  <br/> |31. Oktober 2018  <br/> |
-|India  <br/> |31. Oktober 2018  <br/> |
-|Kanada  <br/> |30. Juni 2019  <br/> |
-|Südkorea  <br/> |31. Oktober 2018  <br/> |
-|Vereinigtes Königreich  <br/> |15. September 2019  <br/> |
-|Frankreich  <br/> |15. September 2020  <br/> |
-|Vereinigte Arabische Emirate  <br/> |1. Februar 2022  <br/> |
-|Südafrika  <br/> |1. Februar 2022  <br/> |
+|Australien, Neuseeland, Fidschi  <br/> |1. Juli 2022  <br/> |
+|Japan  <br/> |1. Juli 2022  <br/> |
+|India  <br/> |1. Juli 2022  <br/> |
+|Kanada  <br/> |1. Juli 2022  <br/> |
+|Südkorea  <br/> |1. Juli 2022  <br/> |
+|Vereinigtes Königreich  <br/> |1. Juli 2022  <br/> |
+|Frankreich  <br/> |1. Juli 2022  <br/> |
+|Vereinigte Arabische Emirate  <br/> |1. Juli 2022  <br/> |
+|Südafrika  <br/> |1. Juli 2022  <br/> |
 |Schweiz, Liechtenstein  <br/> |1. Juli 2022  <br/> |
 |Deutschland  <br/> |Geplante  <br/> |
-   
+
+> [!NOTE]
+> Kunden in berechtigten Office 365 Ländern können sich für die Datenmigration von Microsoft Teams Chatdienst vom 1. Januar 2020 bis zum 30. Juni 2020 anmelden, wodurch auch die Migration für andere berechtigte Arbeitsauslastungen signalisiert wird.  Kunden, die sich vor 2020 für eine Migration entschieden haben, können davon ausgehen, dass Exchange Online und SharePoint Online/OneDrive für Unternehmen verschoben werden, um den ursprünglichen Termin abzuschließen, während Teams bis zum 1. Juli 2022 für alle Kunden abgeschlossen werden. 
+
 ## <a name="exchange-online"></a>Exchange Online
 
 Da es Zeit braucht, um jeden Benutzer zu einem neuen Geo-Rechenzentrum für einen einzelnen Mandanten zu versetzen, befinden sich einige Benutzer während des Wechsels weiterhin im alten Rechenzentrum, während sich andere in der neuen Geo-Rechenzentrum befinden. Dies bedeutet, dass einige Features, die den Zugriff auf mehrere Postfächer beinhalten, möglicherweise während eines Zeitraums des Verschiebevorgangs nicht vollständig funktionieren, was letzten Wochen dauern kann. Diese Features werden in den folgenden Abschnitten beschrieben.
@@ -102,7 +105,11 @@ Die folgenden Suchfeatures sind betroffen:
 - eDiscovery: Elemente, die während der Migration geändert wurden, werden erst angezeigt, wenn die Durchforstung die Änderungen einnimmt.
     
 - Data Loss Protection (DLP): Richtlinien werden nicht für Elemente erzwungen, die sich ändern, bis durch das Crawlen die Änderungen einnimmt.
-    
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Kunden in berechtigten Office 365 Ländern können sich ab dem 1. Januar 2020 für den Microsoft Teams-Chatdienst Datenmigration anmelden.  
+
 ## <a name="skype-for-business"></a>Skype for Business
 
 Alle Benutzer werden während des Umschaltens von der Skype for Business-Client Software abgemeldet. Bei der automatischen Anmeldung werden die Benutzer innerhalb von zwei Minuten erneut verbunden.

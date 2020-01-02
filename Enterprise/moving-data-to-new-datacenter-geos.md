@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 description: 'Neues Rechenzentrum GEOS Kapazität hinzufügen und Ressourcen berechnen, um unsere kontinuierliche Kundennachfrage und das Nutzungs Wachstum zu unterstützen. Darüber hinaus bietet das neue Datacenter GEOS einen in-Geo-Daten Wohnsitz für zentrale Kundendaten. Kernkunden Daten ist ein Begriff, der auf eine Teilmenge von Kundendaten verweist, die in den Microsoft Online Services-Bedingungen definiert sind: Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen) und SharePoint Online Websiteinhalt und die Dateien in dieser Website gespeichert und in OneDrive für Unternehmen hochgeladene Dateien.'
-ms.openlocfilehash: 8dcbcd6bbbe1761c9d57c953ad176c87b5b3f221
-ms.sourcegitcommit: 77b8fd702d3a1010d3906d4024d272ad2097f54f
+ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
+ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39962452"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "40923867"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Office 365-Rechenzentrum GEOS
 
@@ -26,7 +26,8 @@ Wir öffnen weiterhin das neue Rechenzentrum GEOS für Office 365 für Unternehm
 Kernkunden Daten sind ein Begriff, der auf eine Teilmenge von Kundendaten verweist, einschließlich: 
 - Exchange Online Postfachinhalt (e-Mail-Text, Kalendereinträge und der Inhalt von e-Mail-Anlagen)
 - SharePoint Online Websiteinhalt und die Dateien, die auf dieser Website gespeichert sind
-- In OneDrive für Unternehmen hochgeladene Dateien 
+- In OneDrive für Unternehmen hochgeladene Dateien
+- Chatnachrichten in Microsoft Teams, einschließlich privater Nachrichten, Kanal Nachrichten und in Chats verwendete Bilder
   
 Vorhandene Kunden, deren Kernkunden Daten in einer bereits vorhandenen Rechenzentrums-Geo-Datenbank gespeichert sind, werden durch den Start eines neuen Rechenzentrums Geo nicht beeinträchtigt. Mit dem neuen Rechenzentrum Geo stellen wir keine eindeutigen Funktionen, Features oder Konformitäts Zertifizierungen vor. Als Kunde in jedem dieser beiden GEOSS haben Sie die gleiche Dienstqualität, Leistung und Sicherheitskontrollen wie zuvor. Wir bieten vorhandenen Kunden, die in der Tabelle unten aufgeführt sind, eine Option zur Anforderung einer frühzeitigen Migration der wichtigsten Kundendaten Ihrer Organisation in Rest zu Ihrem neuen Rechenzentrum Geo an.
   
