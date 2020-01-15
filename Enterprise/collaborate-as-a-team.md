@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
 description: Hier erfahren Sie, wie Sie mit Gästen in Microsoft Teams zusammenarbeiten.
-ms.openlocfilehash: 2743b1062aebf5e8fbc1db191fcf36f4091bc1f3
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 45a806694285006faa02ff4df413f4078016b9d9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085200"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122594"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Zusammenarbeit mit Gästen in einem Team
 
@@ -171,6 +171,6 @@ So laden Sie Gäste zu einem Team ein
 
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
 
-[Erstellen einer sicheren Gast Freigabe Umgebung](create-a-secure-guest-sharing-environment.md))
+[Erstellen einer sicheren Gastfreigabeumgebung](create-a-secure-guest-sharing-environment.md)
 
 [Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md)

@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Sehen Sie sich den Status von Office 365-Diensten an, bevor Sie den Support anrufen, um festzustellen, ob eine Unterbrechung eines aktiven Diensts vorliegt.
-ms.openlocfilehash: 5d9b4c65932f65b878518bd5e0f33a1c5336aaf9
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
-ms.translationtype: HT
+ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
+ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37931731"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "41122584"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Überprüfen des Office 365-Dienststatus
 
@@ -55,7 +55,7 @@ Wenn Sie sich nicht im Serviceportal anmelden können, können Sie auf der [Dien
 
 Auf der Registerkarte **Alle Dienste** (Standardansicht) werden alle Dienste und ihr aktueller Status angezeigt. Ein Symbol und die Spalte **Status** geben den Status jedes Diensts an. Wenn Sie die Ansicht nach Diensten filtern möchten, die aktuell einen Vorfall aufweisen, wählen Sie die Registerkarte **Vorfälle** oben auf der Seite aus. Bei Auswahl der Registerkarte **Empfehlungen** werden nur Dienste angezeigt, für die derzeit eine Empfehlung angegeben ist. Auf der Registerkarte **Verlauf** wird der Verlauf von Vorfällen und Empfehlungen angezeigt, die aufgelöst wurden.
 
-Wenn ein Problem auftritt, das nicht in der Liste angezeigt wird, wählen Sie **Problem melden** aus, füllen Sie das kurze Formular mit Informationen über das Problem aus, und klicken Sie dann auf **Senden**.
+Wenn ein Problem mit einem Office 365 Dienst auftritt und auf der Seite " **Dienststatus** " nicht aufgeführt ist, informieren Sie uns darüber, indem Sie **ein Problem melden**auswählen und das kurze Formular ausfüllen. Wir werden uns mit verwandten Daten und Berichten aus anderen Organisationen beschäftigen, um zu sehen, wie weit verbreitet das Problem ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir ihn als neuen Vorfall oder eine neue Empfehlung auf der Seite **Dienst Integrität** hinzu, auf der Sie die Lösung nachverfolgen können. Wenn es in der Liste nicht innerhalb von 30 Minuten angezeigt wird, sollten Sie sich an den Support wenden, um das Problem zu beheben.
 
 > [!TIP]
 > Sie können den Dienststatus auch mithilfe der [Office 365 Admin-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät anzeigen. Dies ist eine hervorragende Möglichkeit, mit Pushbenachrichtigungen auf dem Laufenden zu bleiben. 
