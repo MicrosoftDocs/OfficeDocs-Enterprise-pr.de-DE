@@ -12,29 +12,29 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
-description: Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
+description: Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf die Endbenutzer. Es sind keine Maßnahmen erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Geo-Rechenzentrum verschiebt. Der Datentransfer und die Validierung erfolgen im Hintergrund im Voraus mit minimalen Auswirkungen auf die Benutzer.
 ms.openlocfilehash: f98d3a9aaef1197b1f424ce8cbd23b3d18b7ef2b
 ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/01/2020
 ms.locfileid: "40923857"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
-Datenverschiebungen stellen einen Back-End-Vorgang mit minimalen Auswirkungen auf die Endbenutzer dar. Es ist keine Aktion erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Rechenzentrum Geo verschiebt. Die Datenübertragung und-Validierung erfolgt vorab im Hintergrund mit minimalen Auswirkungen auf die Benutzer.
+Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf die Endbenutzer. Es sind keine Maßnahmen erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Geo-Rechenzentrum verschiebt. Der Datentransfer und die Validierung erfolgen im Hintergrund im Voraus mit minimalen Auswirkungen auf die Benutzer.
   
 > [!NOTE]
-> Verschiebungen treten zu unterschiedlichen Zeiten für jeden Dienst auf. Dadurch werden die beschriebenen reduzierten Funktionen für jeden Dienst zu einem anderen Zeitpunkt angezeigt. 
+> Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Sehen Sie sich das Office 365 Nachrichten Center zur Bestätigung an, wenn die Verschiebungen für die einzelnen Exchange Online, SharePoint Online und Skype for Business abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate dauern, nach Ablauf des Registrierungszeitraums alle erforderlichen Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Wenn Sie nach dem Wechsel Probleme mit Ihrem Mandanten feststellen, wenden Sie sich an [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) , um Hilfe zu erhalten. 
+Beobachten Sie das Office 365-Nachrichtencenter zur Bestätigung, wenn die Verschiebungen für Exchange Online, SharePoint Online und Skype for Business abgeschlossen sind. Wie die folgende Tabelle zeigt, kann es bis zu 24 Monate nach dem Ende der Registrierungsperiode dauern, um alle angeforderten Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Wenn Sie nach der Verschiebung Probleme mit Ihrem Mandanten feststellen, wenden Sie sich an den [Office 365-Support](https://go.microsoft.com/fwlink/p/?LinkID=522459), um Hilfe zu erhalten. 
   
 
-|**Kunden mit Anmelde Land in**|**Alle abgeschlossenen Verschiebungen**|
+|**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|
 |:-----|:-----|
 |Australien, Neuseeland, Fidschi  <br/> |1. Juli 2022  <br/> |
 |Japan  <br/> |1. Juli 2022  <br/> |
-|India  <br/> |1. Juli 2022  <br/> |
+|Indien  <br/> |1. Juli 2022  <br/> |
 |Kanada  <br/> |1. Juli 2022  <br/> |
 |Südkorea  <br/> |1. Juli 2022  <br/> |
 |Vereinigtes Königreich  <br/> |1. Juli 2022  <br/> |
@@ -42,27 +42,27 @@ Sehen Sie sich das Office 365 Nachrichten Center zur Bestätigung an, wenn die V
 |Vereinigte Arabische Emirate  <br/> |1. Juli 2022  <br/> |
 |Südafrika  <br/> |1. Juli 2022  <br/> |
 |Schweiz, Liechtenstein  <br/> |1. Juli 2022  <br/> |
-|Deutschland  <br/> |Geplante  <br/> |
+|Deutschland  <br/> |Geplant  <br/> |
 
 > [!NOTE]
-> Kunden in berechtigten Office 365 Ländern können sich für die Datenmigration von Microsoft Teams Chatdienst vom 1. Januar 2020 bis zum 30. Juni 2020 anmelden, wodurch auch die Migration für andere berechtigte Arbeitsauslastungen signalisiert wird.  Kunden, die sich vor 2020 für eine Migration entschieden haben, können davon ausgehen, dass Exchange Online und SharePoint Online/OneDrive für Unternehmen verschoben werden, um den ursprünglichen Termin abzuschließen, während Teams bis zum 1. Juli 2022 für alle Kunden abgeschlossen werden. 
+> Kunden in berechtigten Office 365-Ländern können sich für die Datenmigration des Microsoft Teams-Chatdienstes vom 1. Januar 2020 bis zum 30. Juni 2020 anmelden, was auch die Migration für alle anderen berechtigten Workloads signalisiert.  Kunden, die sich für eine Migration vor 2020 entschieden haben, können damit rechnen, dass die Verschiebungen von Exchange Online und SharePoint Online/OneDrive for Business bis zum ursprünglichen Termin abgeschlossen sein werden, während die Teams bis zum 1. Juli 2022 für alle Kunden abgeschlossen sein werden. 
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Da es Zeit braucht, um jeden Benutzer zu einem neuen Geo-Rechenzentrum für einen einzelnen Mandanten zu versetzen, befinden sich einige Benutzer während des Wechsels weiterhin im alten Rechenzentrum, während sich andere in der neuen Geo-Rechenzentrum befinden. Dies bedeutet, dass einige Features, die den Zugriff auf mehrere Postfächer beinhalten, möglicherweise während eines Zeitraums des Verschiebevorgangs nicht vollständig funktionieren, was letzten Wochen dauern kann. Diese Features werden in den folgenden Abschnitten beschrieben.
+Da die Verschiebung der einzelnen Benutzer in das neue Geo-Rechenzentrum für einen einzelnen Mandanten einige Zeit in Anspruch nimmt, werden sich einige Benutzer während der Verschiebung noch im alten Geo-Rechenzentrum befinden, während sich andere im neuen Geo-Rechenzentrum befinden. Das bedeutet, dass einige Funktionen, die den Zugriff auf mehrere Postfächer beinhalten, während eines Zeitraums des Verschiebevorgangs, der Wochen dauern kann, möglicherweise nicht vollständig funktionieren. Diese Funktionen werden in den folgenden Abschnitten ausführlich behandelt.
   
-### <a name="open-shared-folder-in-outlook-web-access"></a>Öffnen Sie "freigegebener Ordner" in Outlook Web Access
+### <a name="open-shared-folder-in-outlook-web-access"></a>Öffnen von "Freigegebener Ordner" in Outlook Web Access
 
-Einige Benutzer öffnen einen freigegebenen e-Mail-Ordner aus einem anderen Postfach (für das der Benutzer über Lese-oder Schreibberechtigungen verfügt) in Outlook Web Access mit dem Feature "freigegebene Ordner". In der folgenden Tabelle wird beschrieben, wie der Zugriff auf freigegebene Ordner während einer Post Fach Verlagerung funktioniert. Beachten Sie, dass Benutzer mit vollständigen Berechtigungen für ein freigegebenes Postfach das Postfach mithilfe von Outlook Web Access während des Wechsels öffnen können. 
+Einige Benutzer öffnen einen freigegebenen E-Mail-Ordner aus einem anderen Postfach (für das der Benutzer Lese- oder Schreibberechtigung hat) in Outlook Web Access mithilfe der Funktion "Freigegebener Ordner". In der folgenden Tabelle wird beschrieben, wie der Zugriff auf freigegebene Ordner während einer Postfachverschiebung funktioniert. Bitte beachten Sie, dass Benutzer mit uneingeschränkten Berechtigungen für ein freigegebenes Postfach das Postfach während der Verschiebung mit Outlook Web Access öffnen können. 
   
 |**Konfiguration**|**Beschreibung**|
 |:-----|:-----|
-|Benutzer verfügt über Postfachordner Berechtigung für ein anderes Postfach  <br/> |Möglicherweise limitiert.  <br/> Wenn sich Benutzer a und Postfach b während der Mandanten Verlagerung nicht in demselben Geo befinden, kann Benutzer a den Ordner "Postfach b" nicht in Outlook Web Access öffnen, wenn Benutzer a nur über die Berechtigung für einen bestimmten Ordner in Postfach b verfügt.  <br/> Klicken Sie zum Hinzufügen eines freigegebenen Ordners mit der rechten Maustaste auf den Benutzernamen im linken Navigationsbereich, und wählen Sie **freigegebener Ordner hinzufügen**aus.  <br/> |
-|Benutzer mit vollständiger Post Fach Berechtigung für ein anderes Postfach  <br/> |Vollständig unterstützt.  <br/> Wenn Benutzer a über die Berechtigung "Vollzugriff" für Postfach b verfügt, kann Benutzer a auf den freigegebenen Ordner im linken Navigationsbereich in Outlook Web Access klicken, um ein Fenster mit Postfach b zu öffnen.  Ein Benutzer kann ein freigegebenes Postfach mit Outlook Web Access während des Wechsels ohne unerwünschte Auswirkungen öffnen. Die Einschränkung gilt nur für die Freigabe auf Ordnerebene in einem Postfach.           |
+|Der Benutzer hat die Berechtigung für den Postfachordner eines anderen Postfachs  <br/> |Potenziell eingeschränkt.  <br/> Wenn sich Benutzer A und Postfach B während der Mandantenverschiebung nicht im selben Geo befinden, kann Benutzer A den Ordner von Postfach B in Outlook Web Access nicht öffnen, wenn Benutzer A nur über die Berechtigung für einen bestimmten Ordner in Postfach B verfügt.  <br/> Um einen freigegebenen Ordner hinzuzufügen, klicken Sie mit der rechten Maustaste auf den Benutzernamen in der linken Navigationsleiste und wählen Sie **Freigegebenen Ordner hinzufügen** aus.  <br/> |
+|Der Benutzer hat uneingeschränkte Berechtigung für den Postfachordner eines anderen Postfachs  <br/> |Vollständig unterstützt.  <br/> Wenn Benutzer A über die Berechtigung "Vollzugriff" auf Postfach B verfügt, kann Benutzer A im linken Navigationsbereich in Outlook Web Access auf den freigegebenen Ordner klicken, um ein Fenster mit Postfach B zu öffnen.  Ein Benutzer kann ein freigegebenes Postfach mit Outlook Web Access während der Verschiebung ohne nachteilige Auswirkungen öffnen. Die Einschränkung gilt nur für die Freigabe auf Ordnerebene in einem Postfach.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Wenn SharePoint Online verschoben wird, werden auch die Daten für die folgenden Dienste verschoben:
+Wenn SharePoint Online verschoben wird, werden auch Daten für die folgenden Dienste verschoben:
   
 - One Drive for Business
     
@@ -70,60 +70,60 @@ Wenn SharePoint Online verschoben wird, werden auch die Daten für die folgenden
     
 - Project für Office 365
     
-- Office 365 Video Dienste
+- Office 365-Videodienste
     
-- Office im s-Browser
+- Office im S-Browser
     
 - Office 365 ProPlus
     
 - Visio Pro für Office 365
     
-Nachdem Sie die SharePoint Online Daten verschoben haben, werden möglicherweise einige der folgenden Effekte angezeigt.
+Nachdem wir die Verschiebung Ihrer SharePoint Online-Daten abgeschlossen haben, werden möglicherweise einige der folgenden Effekte angezeigt.
   
-### <a name="office-365-video-services"></a>Office 365 Video Dienste
+### <a name="office-365-video-services"></a>Office 365-Videodienste
 
-- Die Datenverschiebung für Video dauert länger als die Verschiebungen für den Rest ihres Inhalts in SharePoint Online.
+- Die Datenverschiebung für Video dauert länger als die Verschiebungen für den Rest Ihrer Inhalte in SharePoint Online.
     
-- Nachdem der SharePoint Online Inhalt verschoben wurde, wird ein Zeitrahmen vorhanden sein, wenn Videos nicht wiedergegeben werden können.
+- Nachdem der SharePoint Online-Inhalt verschoben wurde, gibt es einen Zeitrahmen, in dem Videos nicht wiedergegeben werden können.
     
-- Wir entfernen die transcodierten Kopien aus dem vorherigen Datencenter und Transkodieren Sie erneut im neuen Datencenter.
+- Wir entfernen die transcodierten Kopien aus dem vorherigen Rechenzentrum und transcodieren sie im neuen Rechenzentrum erneut.
     
 ### <a name="search"></a>Suche
 
-Bei der Verschiebung Ihrer SharePoint Online Daten migrieren wir den Such Index und die Sucheinstellungen an einen neuen Speicherort. Bis wir den Umzug Ihrer SharePoint Online Daten **abgeschlossen** haben, werden Ihre Benutzer weiterhin vom Index am ursprünglichen Speicherort bedient. Am neuen Speicherort beginnt die Suche automatisch mit dem Crawlen Ihrer Inhalte, nachdem die SharePoint Online Daten verschoben wurden. Ab diesem Moment werden Ihre Benutzer aus dem migrierten Index bedient. Änderungen an Ihren Inhalten, die nach der Migration aufgetreten sind, werden erst dann in den migrierten Index aufgenommen, wenn Sie Durchforstung abgeholt werden. Die meisten Kunden bemerken nicht, dass die Ergebnisse nach dem Verschieben Ihrer SharePoint Online Daten weniger frisch sind, einige Kunden jedoch in den ersten 24-48 Stunden möglicherweise eine geringere Aktualität erfahren. 
+Während der Verschiebung Ihrer SharePoint Online-Daten migrieren wir Ihren Suchindex und Ihre Sucheinstellungen an einen neuen Speicherort. Bis wir die Verschiebung Ihrer SharePoint Online-Daten **abgeschlossen** haben, werden Ihre Benutzer weiterhin über den Index am ursprünglichen Speicherort bedient. Am neuen Speicherort beginnt die Suche automatisch mit der Durchforstung Ihrer Inhalte, nachdem wir Ihre SharePoint Online-Daten verschoben haben. Ab diesem Zeitpunkt werden Ihre Benutzer aus dem migrierten Index bedient. Änderungen an Ihren Inhalten, die nach der Migration aufgetreten sind, werden erst dann in den migrierten Index aufgenommen, wenn sie durch die Durchforstung erfasst werden. Die meisten Kunden bemerken nicht, dass die Ergebnisse weniger aktuell sind, nachdem wir ihre SharePoint Online-Daten verschoben haben, aber einige Kunden könnten in den ersten 24‑48 Stunden eine geringere Aktualität feststellen. 
   
-Die folgenden Suchfeatures sind betroffen:
+Die folgenden Suchfunktionen sind betroffen:
   
-- Suchergebnisse und Such-Webparts: Ergebnisse enthalten keine Änderungen, die nach der Migration aufgetreten sind, bis das Crawlen Sie abnimmt. 
+- Suchergebnisse und Webparts durchsuchen: Die Ergebnisse enthalten keine Änderungen, die nach der Migration aufgetreten sind, bis sie von der Durchforstung erfasst werden. 
     
-- Vertiefen: vertiefen schließt keine Änderungen ein, die nach der Migration aufgetreten sind, bis durch das Crawlen diese abgeholt wird.
+- Delve: Delve enthält keine Änderungen, die nach der Migration aufgetreten sind, bis sie von der Durchforstung erfasst werden.
     
-- Beliebtheits-und suchberichte für die Website: Counts for Excel Reports im neuen Speicherort umfassen nur migrierte Zählungen und Zählungen aus Verwendungsberichten, die ausgeführt wurden, nachdem das Verschieben der SharePoint Online Daten abgeschlossen wurde. Alle Zählungen aus der Zwischenzeit gehen verloren und können nicht wiederhergestellt werden. Dieser Zeitraum ist normalerweise ein paar Tage. Einige Kunden können kürzere oder längere Verluste erfahren.
+- Popularität und Suchberichte für die Website: Die Zählungen für Excel-Berichte am neuen Speicherort enthalten nur migrierte Zählungen und Zählungen aus Nutzungsberichten, die nach Abschluss der Verschiebung Ihrer SharePoint Online-Daten ausgeführt wurden. Jegliche Zählungen aus der Übergangszeit gehen verloren und können nicht wiederhergestellt werden. Dieser Zeitraum beträgt in der Regel ein paar Tage. Bei einigen Kunden kann es zu kürzeren oder längeren Verlusten kommen.
     
-- Videoportal: anzeigen Anzahl und Statistik für das Videoportal hängen von der Statistik für Excel-Berichte ab, sodass die Anzahl und die Statistiken für das Videoportal für den gleichen Zeitraum wie für Excel-Berichte verloren gehen.
+- Videoportal: Die Anzahl der Ansichten und Statistiken für das Videoportal hängen von den Statistiken für die Excel-Berichte ab, so dass die Anzahl der Ansichten und Statistiken für das Videoportal für den gleichen Zeitraum wie für die Excel-Berichte verloren gehen.
     
-- eDiscovery: Elemente, die während der Migration geändert wurden, werden erst angezeigt, wenn die Durchforstung die Änderungen einnimmt.
+- eDiscovery: Elemente, die sich während der Migration geändert haben, werden erst angezeigt, wenn die Durchforstung die Änderungen erfasst hat.
     
-- Data Loss Protection (DLP): Richtlinien werden nicht für Elemente erzwungen, die sich ändern, bis durch das Crawlen die Änderungen einnimmt.
+- Schutz vor Datenverlust (DLP): Richtlinien werden nicht auf Elemente angewendet, die sich ändern, bis die Durchforstung die Änderungen erfasst hat.
 
-## <a name="microsoft-teams"></a>Microsoft Teams
+## <a name="microsoft-teams"></a>Microsoft Teams
 
-Kunden in berechtigten Office 365 Ländern können sich ab dem 1. Januar 2020 für den Microsoft Teams-Chatdienst Datenmigration anmelden.  
+Kunden in berechtigten Office 365-Ländern können sich ab dem 1. Januar 2020 für die Datenmigration des Microsoft Teams-Chatdienstes entscheiden.  
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Alle Benutzer werden während des Umschaltens von der Skype for Business-Client Software abgemeldet. Bei der automatischen Anmeldung werden die Benutzer innerhalb von zwei Minuten erneut verbunden.
+Alle Benutzer werden während des Cut-Over aus der Skype for Business-Clientsoftware abgemeldet. Durch die automatische Anmeldung wird die Verbindung innerhalb von zwei Minuten wiederhergestellt.
   
-|**Funktionen, die während des gesamten Wechsels funktionieren**|**Features, die während eines Teils des Wechsels möglicherweise eingegrenzt werden**|
+|**Funktionen, die während der gesamten Verschiebung ausgeführt werden können**|**Funktionen, die während eines Teils der Verschiebung eingeschränkt sein können**|
 |:-----|:-----|
-| Instant Messaging und Sprachanrufe  <br/>  Benutzer können Kontakte hinzufügen, Kontaktgruppen hinzufügen, Besprechungen hinzufügen, Ihren Standort festlegen und "What es Happening Today" ändern.  <br/>  ACP-Einstellungen (Audio Conferencing Provider) werden in das Ziel-Datencenter Geo kopiert. Wenn der ACP-Anbieter im Zieldatencenter vorhanden ist, kann er funktionieren. Andernfalls wird dies nicht der Fall sein.  <br/> | Mandantenadministrator-TRPS (Mandanten-Remote-PowerShell) steht Administratoren zum Erstellen von Sitzungen nicht zur Verfügung.  <br/>  Der mandantenadministrator Lac steht Administratoren nicht zur Verfügung, um sich anzumelden und Benutzereinstellungen zu ändern.  <br/> |
+| Chat und Sprachanrufe  <br/>  Benutzer können Kontakte hinzufügen, Kontaktgruppen hinzufügen, Besprechungen hinzufügen, ihren Standort festlegen und "Notiz eingeben" ändern.  <br/>  Die Einstellungen des Audiokonferenzanbieters (ACP) werden in das Ziel-Geo-Rechenzentrum kopiert. Wenn der ACP-Anbieter im Ziel-Rechenzentrum vorhanden ist, wird er funktionieren. Andernfalls wird er nicht funktionieren.  <br/> | Mandantenadministrator TRPS (Tenant Remote PowerShell) ist für Administratoren nicht verfügbar, um Sitzungen zu erstellen.  <br/>  Mandantenadministrator LAC steht Administratoren nicht zur Verfügung, um sich anzumelden und Benutzereinstellungen zu ändern.  <br/> |
    
-|**Nach dem Wechsel**|
+|**Nach der Verschiebung**|
 |:-----|
-| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht weiterentwickelt und müssen erneut hochgeladen werden.  <br/>  Ältere lync-Clients, wie der Client für lync 2010 Client und lync für Mac 2011, sind bekannt für die Zwischenspeicherung von DNS-Informationen mit dem Dienst, der Anmeldeprobleme verursacht. Das Löschen des DNS-Caches ist möglicherweise erforderlich, wenn sich der Benutzer nicht auf dem neuesten Skype for Business Windows-Client befindet. Weitere Informationen finden Sie unter [Troubleshooting Skype for Business Online DNS Configuration Issues in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Lync für Mac-Clientbenutzer sollten [diese Anweisungen](https://support.microsoft.com/kb/2629861)befolgen.  <br/> |
+| Besprechungsdaten (hochgeladene Präsentationen usw.) werden nicht verschoben und müssen neu hochgeladen werden.  <br/>  Ältere Lync-Clients, wie z. B. der Lync 2010-Client und der Lync for Mac 2011-Client, sind dafür bekannt, dass sie DNS-Informationen für den Dienst zwischenspeichern, was zu Problemen bei der Anmeldung führt. Das Löschen des DNS-Caches kann erforderlich sein, wenn der Benutzer nicht auf dem neuesten Skype for Business-Windows-Client befindet. Siehe [Behandeln von Skype for Business Online-DNS-Konfigurationsproblemen in Office 365](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue). Benutzer des Lync for Mac-Clients sollten [diese Anweisungen](https://support.microsoft.com/kb/2629861) befolgen.  <br/> |
    
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Skype for Business-Moves, die einen Drittanbieter für Audiokonferenzen einbeziehen
-Add-on-Dienste von Drittanbieter-Audiokonferenz-Anbietern für Skype for Business stehen nicht für Benutzer zur Verfügung, die in neuen Geo-spezifischen Rechenzentren verwaltet werden.  Vorhandene Kunden, die einen Drittanbieterdienst für Audiokonferenzen verwenden, sollten keine Umstellung auf ein neues Geo-spezifisches Rechenzentrum anfordern.  Neue Kunden, die in den neuen Geo-spezifischen Rechenzentren bereitgestellt werden, müssen eine Verlagerung an ein regionales Rechenzentrum anfordern, um einen Drittanbieter für Audiokonferenzen verwenden zu können.
+### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>Verschiebungen von Skype for Business, an denen ein Audiokonferenzanbieter eines Drittanbieters beteiligt ist
+Zusatzdienste von Audiokonferenzanbietern von Drittanbietern für Skype for Business sind nicht für Benutzer verfügbar, die in neuen geospezifischen Rechenzentren untergebracht sind.  Bestehende Kunden, die einen Audiokonferenzanbieter eines Drittanbieters nutzen, sollten nicht die Verschiebung in ein neues geospezifisches Rechenzentrum beantragen.  Neue Kunden, die in den neuen geospezifischen Rechenzentren eingesetzt werden, müssen die Verschiebung in ein regionales Rechenzentrum beantragen, um einen Audiokonferenzanbieter eines Drittanbieters nutzen zu können.
   
 ## <a name="related-topics"></a>Verwandte Themen 
  
@@ -131,7 +131,7 @@ Add-on-Dienste von Drittanbieter-Audiokonferenz-Anbietern für Skype for Busines
     
 [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
   
-[Neues Datacenter GEOS für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Neues Geo-Rechenzentrum für Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/regions/)
 
