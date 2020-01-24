@@ -28,7 +28,7 @@ Bestehende Office 365-Kunden sind berechtigt, frühzeitige Migrationen der die w
   
 ## <a name="when-can-i-request-a-move"></a>Wann kann ich eine Verschiebung anfordern?
 
-|**Kunden mit einbezogenem Anmeldeland**|**Der Anforderungszeitraum beginnt**|**Stichtag anfordern**|
+|**Kunden mit Anmeldeland in**|**Der Anforderungszeitraum beginnt**|**und endet**|
 |:-----|:-----|:-----|
 |Japan  <br/> |1. Januar 2020  <br/> |30. Juni 2020  <br/> |
 |Australien, Neuseeland, Fidschi  <br/> |1. Januar 2020  <br/> |30. Juni 2020  <br/> |
@@ -110,7 +110,7 @@ Wenn Benutzer ein Mobilgerät besitzen, auf dem der Exchange-Server **m.Outlook.
 
 [Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
 
-[Neue Rechenzentrumsgeografien für Microsoft Dynamics CRM Live](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
 [Azure-Dienste nach Region](https://azure.microsoft.com/regions/)
   
