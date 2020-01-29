@@ -33,13 +33,13 @@ ms.locfileid: "39962442"
 
 ## <a name="cloud-service-offerings-in-germany"></a>Cloud-Serviceangebote in Deutschland
 
-Im August 2018 haben wir unsere Absicht angekündigt, die gesamte Microsoft-Cloud – Azure, Office 365, Dynamics 365 und Power Platform – aus neuen Cloud-Regionen in Deutschland bereitzustellen, um die digitale Transformation unserer Kunden besser zu ermöglichen. Wir haben im August 2019 angekündigt, dass wir nun die neuen Cloud-Regionen in Deutschland öffnen. Wir haben die Verfügbarkeit von Azure im August angekündigt und Office 365 wurde im Dezember verfügbar.  Dynamics 365 und Power Platform werden voraussichtlich im ersten Quartal 2020 verfügbar sein.  
+Im August 2018 haben wir unsere Absicht angekündigt, die gesamte Microsoft-Cloud – Azure, Office 365, Dynamics 365 und Power Plattform – aus neuen Cloud-Regionen in Deutschland bereitzustellen, um die digitale Transformation unserer Kunden noch besser zu unterstützen. Wir haben im August 2019 angekündigt, dass wir die neuen Cloud-Regionen in Deutschland für erste Kunden eröffnen. Wir haben die Verfügbarkeit von Azure im August angekündigt und Office 365 wurde im Dezember verfügbar.  Dynamics 365 und Power Platform werden voraussichtlich im ersten Quartal 2020 verfügbar sein.  
 
-Die neuen Regionen sind so konzipiert, dass sie den sich ständig ändernden Anforderungen der deutschen Kunden mit ihrer erweiterter Flexibilität, den neuesten intelligenten Cloud-Diensten und der unbegrenzten Konnektivität zu unserem weltweiten Cloud-Netzwerk sowie der Datenhaltung in Deutschland gerecht werden.
+Die neuen Regionen sind so konzipiert, dass sie sich ständig an die veränderten Anforderungen deutscher Kunden anpassen. Dank der Verbindung zu unserem weltweiten Cloud-Netzwerk bieten wir, neben dem vollen Funktionsumfang, stetige Erweiterung mit neuen Funktionen zudem die Möglichkeit den Anforderung nach lokaler Datenhaltung in Deutschland gerecht zu werden.
 
 ## <a name="moving-to-the-new-german-regions"></a>Umstieg auf die neuen deutschen Regionen
 
-Die bestehenden Kunden von Microsoft Cloud Germany (Microsoft Cloud Deutschland) können nun mit der Migration ihrer Office 365, Dynamics 365 Customer Engagement und Power Platform BI beginnen.  Der erste Schritt besteht darin, [sich für die von Microsoft geleiteten Migration in unsere neuen deutschen Rechenzentrumsregionen anzumelden](https://aka.ms/office365germanymoveoptin).
+Bestehende Kunden der Microsoft Cloud Germany (Microsoft Cloud Deutschland) können nun mit der Migration ihrer Office 365, Dynamics 365 Customer Engagement und Power Platform BI beginnen.  Der erste Schritt besteht darin, [sich für die von Microsoft geleiteten Migration in unsere neuen deutschen Rechenzentrumsregionen anzumelden](https://aka.ms/office365germanymoveoptin).
 
 Die Migrationen für Organisationen, die sich für den von Microsoft geleiteten Ansatz anmelden, werden voraussichtlich in 2020 durchgeführt. Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Regionen verschoben. 
 
@@ -61,25 +61,25 @@ Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Ar
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Wie Sie sich auf die Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen vorbereiten können
 
-Der erste Schritt besteht darin, Microsoft zu benachrichtigen, damit wir Ihre Berechtigung zum Migrieren Ihres Abonnements und der Daten aus der Microsoft-Cloud Deutschland auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen haben.  Anweisungen hierzu finden Sie im [Abonnementsprozess](ms-cloud-germany-migration-opt-in.md).
+Der erste Schritt besteht darin, Microsoft zu benachrichtigen, dass Sie uns Ihr Einverständniszum Migrieren Ihres Abonnements und der Daten aus der Microsoft-Cloud Deutschland auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen geben.  Anweisungen hierzu finden Sie im [Abonnementsprozess](ms-cloud-germany-migration-opt-in.md).
 
-- Alle migrierenden Kunden müssen die Konnektivität zum weltweiten [Office 365-URLs und -IP-Adressen](urls-and-ip-address-ranges.md), die die neuen deutschen Rechenzentrumsregionen umfassen, überprüfen.
+- Alle Kunden mit MIgrationsbedarf müssen die Konnektivität zum weltweiten [Office 365-URLs und -IP-Adressen](urls-and-ip-address-ranges.md), die die neuen deutschen Rechenzentrumsregionen haben, überprüfen.
 - Überprüfen Sie die Beschreibung der Office 365-Plattformdienste, um zu verstehen, welche Funktionen und Dienste nach der Fertigstellung in der Region für Ihre Organisation verfügbar werden. 
 - Im Rahmen der Migration werden bezahlte Abonnements überführt.  Testabonnements können nicht migriert werden.
 
-Mandantenmigrationen werden als Back-End-Dienste ausgeführt, wobei nur minimale Kundeninteraktionen erforderlich sind.  Alle weiteren vom Kunden geleiteten Aufgaben und der allgemeine Stand der Migration werden während des Migrationsprozesses über das Message Center mitgeteilt.  Zu den Aufgaben zählen beispielsweise durch Kunden verwaltete DNS-Updates oder die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen.
+Mandantenmigrationen werden als Back-End-Dienste ausgeführt, wobei nur minimale Interaktionen von Kunden erforderlich sind.  Alle möglicherweise auf Kundenseite erforderlichen Aufgaben und der allgemeine Stand der Migration werden während des Migrationsprozesses über das Message Center mitgeteilt.  Zu den kundenseitig erforderlichen Maßnahmen zählen beispielsweise durch Kunden verwaltete DNS-Updates oder die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen.
 
 ## <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Die Kundenerfahrung während der Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen
 
-Mandantenmigrationen sind so angelegt, dass sie nur minimale Auswirkungen auf Endkunden und Administratoren haben.  Allerdings gibt es Überlegungen für jede Workload.  
+Mandantenmigrationen sind so angelegt, dass sie nur minimale Auswirkungen auf Nutzer und Administratoren haben.  Allerdings gibt es unterschiedliche Überlegungen für jede Workload.  
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
-Office-/ Dynamics-Abonnements von Microsoft Cloud Deutschland werden mit der Azure Active Directory-Verlagerung (Azure AD) in die Region Deutschland umgestellt. Die Organisation wird dann aktualisiert, um die neuen weltweiten Dienstabonnements zu widerspiegeln. Während des kurzen Übertragungsprozesses für das Abonnement werden Änderungen an Abonnements blockiert.
+Office-/ Dynamics-Abonnements von Microsoft Cloud Deutschland werden mit dem Azure Active Directory-Umzug (Azure AD) in die Region Deutschland umgestellt. Die Organisation wird dann aktualisiert, um die neuen weltweiten Dienste widerzuspiegeln. Während des kurzen Übertragungsprozesses für das Abonnement werden Änderungen an den jeweiligen Abonnements blockiert.
 
 ### <a name="exchange-online"></a>Exchange Online
 
-Exchange Online Hybrid-Kunden müssen den Hybrid-Konfigurationsassistenten erneut ausführen, um die Konfiguration vor Ort gegen Microsoft Cloud Germany vor der Umstellung zu aktualisieren und die HCW nach der Bereinigung gegen den weltweiten Service erneut auszuführen. Für Kunden mit benutzerdefinierten Domänen werden ggf. weitere DNS-Updates erforderlich sein.
+Exchange Online Hybrid-Kunden müssen den Hybrid-Konfigurationsassistenten erneut ausführen, um die Konfiguration vor Ort gegen Microsoft Cloud Deutschland vor der Umstellung zu aktualisieren und die HCW nach der Bereinigung gegen den weltweiten Service erneut auszuführen. Für Kunden mit benutzerdefinierten Domänen werden ggf. weitere DNS-Updates erforderlich sein.
 
 Postfächer werden als Back-End-Prozess migriert. Benutzer in Ihrer Organisation befinden sich während des Übergangs entweder in Microsoft Cloud Deutschland oder in der Region Deutschland und sind Teil derselben Exchange-Organisation (GAL).
 
@@ -124,10 +124,10 @@ Microsoft bietet eine Mandantenmigration für Office 365 von Microsoft Cloud Deu
 Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen bieten zusätzliche Vorteile:
 
 - Sie bieten marktgerechte Preise für [Azure](https://azure.microsoft.com/pricing/calculator/), [Office 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans), [Dynamics 365 Customer Engagement](https://dynamics.microsoft.com/pricing/)und [Power BI](https://powerbi.microsoft.com/pricing/). 
-- Sie sind mit einem globalen Microsoft-Netzwerk verbunden und bieten hunderte von Netzwerk-Edge-Websites, Peering-Standorten und Übergabepunkte, um überall auf der Welt eine sichere Benutzererfahrung zu bieten. 
-- Sie helfen Ihnen, die Anforderungen an die lokale Kundendatenverwaltung innerhalb Deutschlands zu erfüllen. 
-- Sie bieten unser umfassendes globales Cloud-Angebot, einschließlich der neuesten Version unserer Dienste und neuer Funktionen wie Microsoft Teams und Multi-Geo in Office 365. Sie vergleichen Produkte nach Region für [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://products.office.com/de-DE/where-is-your-data-located) und [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
-- Sie bieten die vollständige Funktionalität, Sicherheit auf Unternehmensniveau und umfassende Funktionen, die Kunden bei der Einhaltung behördlicher Vorschriften unterstützen. 
+- Sie sind mit einem globalen Microsoft-Netzwerk verbunden und bieten eine Vielzahl von Netzwerk-Edge-Websites, Peering-Standorten und Übergabepunkte, um überall auf der Welt eine sichere Benutzererfahrung zur ermöglichen. 
+- Sie helfen Ihnen, die Anforderungen an die lokale Datenhaltung innerhalb von Deutschland zu erfüllen. 
+- Sie bieten unser umfassendes globales Cloud-Angebot, einschließlich der neuesten Version unserer Dienste und neuer Funktionen wie Microsoft Teams und Multi-Geo in Office 365. Hier finden Sie die Vergleiche unserer Produkte nach Region für [Azure](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=germany-non-regional,germany-central,germany-north,germany-northeast,germany-west-central), [Office 365](https://products.office.com/de-DE/where-is-your-data-located) und [Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).
+- Sie bieten die vollständige Funktionalität, Sicherheit auf Unternehmensniveau und umfassende Funktionen, die Kunden bei der Einhaltung behördlicher oder eigener Vorschriften unterstützen. 
 - Sie sind im Rahmen vorhandener Verträge für Onlinedienstleistungen verfügbar.
 
 #### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>Wie hoch ist die Dienstverfügbarkeit der verschiedenen Office 365-Clouddienstangebote?
@@ -190,11 +190,11 @@ Sie können [die Migration von](https://docs.microsoft.com/azure/germany/germany
 
 #### <a name="office-365"></a>Office 365
 
-[Melden Sie sich an](https://aka.ms/office365germanymoveoptin) für die von Microsoft geleiteten Migration noch heute. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
+[Melden Sie sich an](https://aka.ms/office365germanymoveoptin) für noch heute für Migration durch Microsoft an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 und Power BI
 
-Melden Sie sich für die von Microsoft geleiteten Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) noch heute an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
+Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>Werden die Preise für die von mir verwendeten Office-Dienste geändert?
 
