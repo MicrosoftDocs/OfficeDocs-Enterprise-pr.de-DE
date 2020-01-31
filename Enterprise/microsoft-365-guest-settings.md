@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe.
-ms.openlocfilehash: 3181e1abc44ff62bf3973a87a626291b9e946c51
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 6fba4a8107962ef7ac7da5f83dd2d7f1d75dccb2
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919379"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627881"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -55,7 +55,7 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 ### <a name="sharing"></a>Freigabe
 
-**Navigation:** [Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Sicherheit und Datenschutz > Freigabe
+**Navigation:**[Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Einstellungen > Sicherheit und Datenschutz > Freigabe
 
 ![Screenshot der Gastfreigabeeinstellung "Sicherheit und Datenschutz" im Microsoft 365 Admin Center](media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -65,7 +65,7 @@ Das Microsoft 365 Admin Center bietet Einstellungen auf Organisationsebene für 
 
 ### <a name="office-365-groups"></a>Office 365-Gruppen
 
-**Navigation:** [Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Dienste und Add-Ins > Office 365-Gruppen
+**Navigation:**[Microsoft 365 Admin Center](https://admin.microsoft.com) > Einstellungen > Einstellungen > Office 365-Gruppen
 
 ![Screenshot der Gasteinstellungen für Office 365-Gruppen im Microsoft 365 Admin Center](media/office-365-groups-guest-settings.png)
 
@@ -196,11 +196,13 @@ Beide Einstellungen können gleichzeitig verwendet werden. Wenn ein Benutzer in 
 
 **Administratorrolle:** SharePoint-Administrator
 
+Da diese Einstellungen den organisationsweiten Einstellungen für SharePoint unterliegen, kann sich die effektive Freigabeeinstellung für die Website ändern, wenn sich die Einstellung auf Organisationsebene ändert. Wenn Sie hier eine Einstellung auswählen und auf Organisationsebene später ein restriktiverer Wert festgelegt wird, gilt für diese Website der restriktivere Wert. Wenn Sie beispielsweise **Jeder** auswählen und die Einstellung auf Organisationsebene später auf **Neue und vorhandene Gäste** festgelegt wird, lässt diese Website nur neue und vorhandene Gäste zu. Wird die Einstellung auf Organisationsebene dann wieder auf **Jeder** zurückgesetzt, lässt die Website wieder *Jeder*-Links zu.
+
 ### <a name="site-sharing"></a>Freigabeeinstellungen für Websites
 
 Sie können Gastfreigabeberechtigungen für jede Website in SharePoint festlegen. Diese Einstellung gilt sowohl für die Freigabe von Websites als auch die Freigabe von Dateien und Ordnern. (Die *Jeder*-Freigabe ist für die Websitefreigabe nicht verfügbar. Wenn Sie **Jeder** auswählen, können Benutzer Dateien und Ordner unter Verwendung von *Jeder*-Links freigeben, und die Website selbst kann mit neuen und vorhandenen Gästen geteilt werden.)
 
-**Navigation:** SharePoint Admin Center > Aktive Websites > Website auswählen > Freigabe
+**Navigation:** SharePoint Admin Center > Aktive Websites > Website auswählen > Registerkarte "Richtlinien" > Externe Freigabe bearbeiten
 
 ![Screenshot der externen SharePoint-Freigabeeinstellungen](media/sharepoint-site-external-sharing-settings.png)
 
@@ -208,7 +210,22 @@ Sie können Gastfreigabeberechtigungen für jede Website in SharePoint festlegen
 |:-----|:-----|:-----|
 |Websiteinhalt kann freigegeben werden für:|Variiert je nach Websitetyp (siehe Tabelle unten)|Gibt den Typ der für diese Website zulässigen externen Freigabe an. Die hier verfügbaren Optionen unterliegen den Freigabeeinstellungen auf Unternehmensebene für SharePoint.|
 
-Da diese Einstellungen den organisationsweiten Einstellungen für SharePoint unterliegen, kann sich die effektive Freigabeeinstellung für die Website ändern, wenn sich die Einstellung auf Organisationsebene ändert. Wenn Sie hier eine Einstellung auswählen und auf Organisationsebene später ein restriktiverer Wert festgelegt wird, gilt für diese Website der restriktivere Wert. Wenn Sie beispielsweise **Jeder** auswählen und die Einstellung auf Organisationsebene später auf **Neue und vorhandene Gäste** festgelegt wird, lässt diese Website nur neue und vorhandene Gäste zu. Wird die Einstellung auf Organisationsebene dann wieder auf **Jeder** zurückgesetzt, lässt die Website wieder *Jeder*-Links zu.
+### <a name="site-file-and-folder-link-settings"></a>Link-Einstellungen für Website-Dateien und -Ordner
+
+Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie für Ablaufeinstellungen für *Jeder*-Links für jede einzelne Website festlegen. Wenn die Einstellungen auf Websiteebene festgelegt sind, werden dadurch die Einstellungen auf Organisationsebene außer Kraft gesetzt. Beachten Sie: Wenn *Jeder*-Links auf Organisationsebene deaktiviert sind, ist der Linktyp *Jeder* auf Websiteebene nicht verfügbar.
+
+**Navigation:** SharePoint Admin Center > Aktive Websites > Website auswählen > Registerkarte "Richtlinien" > Externe Freigabe bearbeiten
+
+![Screenshot der SharePoint-Link-Freigabeeinstellungen auf Websiteebene](media/sharepoint-site-link-sharing-settings.png)
+
+|**Einstellung**|**Standard**|**Beschreibung**|
+|:-----|:-----|:-----|
+|Einschränken der Freigabe nach Domäne|Off|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung kann nicht dazu verwendet werden, die auf Organisations- oder Azure AD-Ebene festgelegten Domäneneinschränkungen außer Kraft zu setzen.|
+|Standardmäßiger Freigabe-Linktyp|Identisch mit der Einstellung auf Organisationsebene|Diese Einstellung ermöglicht es Ihnen, den standardmäßigen Freigabelink anzugeben, der Benutzern auf dieser Website angezeigt wird. Die Option *Identisch mit der Einstellung auf Organisationsebene* wird durch eine Kombination aus Organisations- und Website Freigabeeinstellungen definiert.|
+|Erweiterte Einstellungen für "Jeder"-Links|Identisch mit der Einstellung auf Organisationsebene|Gibt an, wie viele Tage nach dessen Erstellung ein *Jeder*-Link für eine Datei auf der betreffenden Seite abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
+|Standardlinkberechtigung|Identisch mit der Einstellung auf Organisationsebene|Über diese Einstellung können Sie die Standardberechtigung ("Anzeigen" oder "Bearbeiten") für Freigabelinks angeben, die für Dateien auf der betreffenden Website erstellt wurden.|
+
+### <a name="default-site-sharing-settings"></a>Standardeinstellungen für die Website-Freigabe
 
 Die folgende Tabelle zeigt die Standardfreigabeeinstellung für jeden Websitetyp.
 

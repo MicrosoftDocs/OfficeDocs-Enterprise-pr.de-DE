@@ -3,7 +3,7 @@ title: Verwalten von Office 365-Endpunkten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/21/2019
+ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Unternehmensnetzwerke schränken den Zugriff auf gewöhnliche Internetseiten ein, oder umfassen einen erheblichen Backhaul oder eine umfangreiche Verarbeitung des Netzwerkdatenverkehrs. Um sicherzustellen, dass die Computer in solchen Netzwerken auf Office 365 zugreifen können, müssen die Netzwerk- und Proxy-Administratoren die Liste der Office 365-Endpunkte, die aus vollqualifizierten Domänennamen (FQDNs), URLs und IP-Adressen bestehen, verwalten. Diese müssen den Direktverbindungs-, Proxy- und/oder Firewall-Regeln sowie den PAC-Dateien hinzugefügt werden, damit gewährleistet ist, dass Netzwerkanfragen Office 365 erreichen.
-ms.openlocfilehash: fb0f6640ee9de07bb92b9093a94bb7e4fd111a54
-ms.sourcegitcommit: e70808dccc1622d18b1cc5e1e4babd4238112838
+ms.openlocfilehash: 189a21c310b7fd2e62817504b8d6910a2b3e66ca
+ms.sourcegitcommit: 3ed7b1eacf009581a9897524c181afa3e555ad3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "40744509"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "41570882"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
@@ -140,9 +140,10 @@ In der Liste werden nur IP-Adressen für die Office 365-Server angezeigt, zu den
   
 Sie sehen eine Office 365 zugeordnete IP-Adresse, über die Sie weitere Informationen erhalten möchten?
   
-1. Überprüfen Sie, ob die IP-Adresse in einem größeren veröffentlichten Bereich mithilfe eines CIDR-Rechners enthalten [](https://www.ipaddressguide.com/cidr) ist, wie diese fürhttps://www.ipaddressguide.com/ipv6-cidr)IPv4 oder [IPv6].
-2. Überprüfen Sie mithilfe einer [Whois-Abfrage](https://dnsquery.org/), ob die IP-Adresse einem Partner gehört. Wenn die IP-Adresse von Microsoft betrieben wird, kann es sich um einen internen Partner handeln.
-3. Überprüfen Sie das Zertifikat, stellen Sie in einem Browser unter Verwendung von *HTTPS://\<IP-ADRESSE\>* eine Verbindung mit der IP-Adresse her, und überprüfen Sie die auf dem Zertifikat aufgelisteten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine von Microsoft betriebene IP-Adresse handelt, die sich nicht in der Liste der Office 365-IP-Adressen befindet, ist die IP-Adresse wahrscheinlich einem Microsoft-CDN, z. B. *MSOCDN.NET*, oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
+1. Überprüfen Sie, ob die IP-Adresse in einem größeren veröffentlichten Bereich mithilfe eines CIDR-Rechners enthalten ist, wie diese für [IPv4](https://www.ipaddressguide.com/cidr) oder [IPv6](https://www.ipaddressguide.com/ipv6-cidr). Beispielsweise enthält 40.96.0.0/13 die IP-Adresse 40.103.0.1, obwohl 40,96 nicht mit 40,103 übereinstimmt.
+2. Überprüfen Sie mithilfe einer [Whois-Abfrage](https://dnsquery.org/), ob die IP-Adresse einem Partner gehört. Wenn die IP-Adresse von Microsoft betrieben wird, kann es sich um einen internen Partner handeln. Viele Partner-Netzwerkendpunkte werden als Zugehörigkeit zur _Standard_ Kategorie aufgeführt, für die keine IP-Adressen veröffentlicht werden.
+3. Die IP-Adresse ist möglicherweise nicht Teil Office 365 oder einer Abhängigkeit. Office 365 die Veröffentlichung von Netzwerkendpunkten umfasst nicht alle Microsoft-Netzwerkendpunkte.
+4. Überprüfen Sie das Zertifikat, stellen Sie in einem Browser unter Verwendung von *HTTPS://\<IP-ADRESSE\>* eine Verbindung mit der IP-Adresse her, und überprüfen Sie die auf dem Zertifikat aufgelisteten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine von Microsoft betriebene IP-Adresse handelt, die sich nicht in der Liste der Office 365-IP-Adressen befindet, ist die IP-Adresse wahrscheinlich einem Microsoft-CDN, z. B. *MSOCDN.NET*, oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Einige Office 365-URLs verweisen auf CNAME-Einträge anstelle von A-Einträgen im DNS. Was muss ich mit den CNAME-Einträgen tun?
@@ -207,7 +208,12 @@ Das Blockieren des Zugriffs auf unsere Services für Endverbraucher geschieht au
   
 Beachten Sie, dass das Blockieren des Zugriffs auf die Microsoft-Verbraucherdienste allein nicht verhindert, dass andere Personen in Ihrem Netzwerk Informationen unter Verwendung eines Office 365-Mandanten oder eines anderen Diensts exfiltrieren können. 
 
-  
+
+<a name="bkmk_IPOnlyFirewall"> </a>
+### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Meine Firewall erfordert IP-Adressen und kann keine URLs verarbeiten. Wie konfiguriere ich es für Office 365?
+
+Office 365 stellt keine IP-Adressen aller erforderlichen Netzwerkendpunkte bereit. Einige werden nur als URLs bereitgestellt und als Standard kategorisiert. URLs in der Standardkategorie, die erforderlich sind, sollten über einen Proxy Server zulässig sein. Wenn Sie nicht über einen Proxy Server verfügen, schauen Sie sich an, wie Sie Webanforderungen für URLs konfiguriert haben, die Benutzer in die Adressleiste eines Webbrowsers eingeben. der Benutzer stellt auch keine IP-Adresse bereit. Die Office 365 standardmäßigen Category-URLs, die keine IP-Adressen bereitstellen, sollten auf die gleiche Weise konfiguriert werden.
+
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)

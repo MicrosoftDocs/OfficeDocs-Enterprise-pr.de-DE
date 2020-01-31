@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Office 365 oder Microsoft 365 mit Bereitstellungs Beratern.
-ms.openlocfilehash: c931da3d64aea976af99ca2b2220d4bd931344a9
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ac892a7d0551ede4d7bb4df7081ee0ae8dd5d618
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072367"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627861"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Bereitstellungs Ratgeber für Office 365-oder Microsoft 365-Dienste
 
@@ -157,7 +157,7 @@ Wenn Sie über Gmail verfügen, müssen Sie Ihre Gmail-Kontakte und Google Kalen
 
 ## <a name="file-creation-storage-and-sharing"></a>Erstellen, speichern und Freigeben von Dateien
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="office-365-proplus"></a>Office 365 ProPlus
 
 Mit Office 365 ProPlus werden die Benutzer auf den neuesten Versionen von Office installiert und aktualisiert.
 
@@ -168,7 +168,7 @@ In diesem Leitfaden finden Sie die Schritte zum Installieren von Office auf eine
 | **Ausführen** |  [Office 365 ProPlus-Schnellstarthandbuch](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Der Office 365 ProPlus-Bereitstellungs Ratgeber durchläuft die Schritte zur Unterstützung von Benutzern beim Installieren von Office 365 ProPlus direkt aus dem Office 365 Portal Online oder für die Bereitstellung von Office 365 ProPlus für Ihre Benutzer von einem lokalen Standort aus. Enthalten sind Anweisungen zur Verwendung von System Center Configuration Manager, ein Gruppenrichtlinien-Startskript, ein Betriebs System-Datenträgerabbild oder eine freigegebene Remote Desktop Dienste-Aktivierung (RDS).
+Der Office 365 ProPlus-Bereitstellungs Ratgeber durchläuft die Schritte zur Unterstützung von Benutzern beim Installieren von Office 365 ProPlus direkt aus dem Office 365 Portal Online oder für die Bereitstellung von Office 365 ProPlus für Ihre Benutzer von einem lokalen Standort aus. Enthalten sind Anweisungen zur Verwendung des Microsoft Endpoint Configuration Manager, eines Gruppenrichtlinien-Startskripts, einer Betriebssystem-Image-Datei oder einer freigegebenen RDS-Aktivierung (Remote Desktop Dienste).
 
 |||
 |:-------|:-----|

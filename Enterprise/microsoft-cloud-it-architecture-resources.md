@@ -16,12 +16,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.'
-ms.openlocfilehash: 85031a3062397c63326a3306d9a4a14d77c114f3
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: 30f3cb17f59c3a2352b4f0be9fec92d53126e63b
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756604"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627901"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -217,7 +217,7 @@ Informationen für IT-Architekten über das Bereitstellen und Verwalten von Upda
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10 und Office ProPlus mithilfe von System Center Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus mithilfe von System Center Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
+|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10 und Office ProPlus mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

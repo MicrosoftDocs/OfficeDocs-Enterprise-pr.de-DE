@@ -10,12 +10,12 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 2ab00633-0f6e-4e4f-b706-2342eb77e539
 description: Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namens "Microsoft Exchange 2013-Plattformoptionen, das unter „Technische Diagramme“ verfügbar ist.
-ms.openlocfilehash: b7ee083be0d38770ebe6d79b31f8f34f87fc2905
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 1440558a3c462ae71189fb42d492e0292c256c19
+ms.sourcegitcommit: cc84565301f5c5afc8b767f637135de96115fd6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38030579"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "41627851"
 ---
 # <a name="accessible-diagram---sharepoint-server-exchange-lync-office-web-apps---the-mobile-landscape"></a>Zugängliches Diagramm – SharePoint Server, Exchange, Lync, Office Web Apps – Die mobile Landschaft
 
@@ -155,7 +155,7 @@ Neben der Nutzung von Office Mobile können Benutzer Office-Dokumente in Browser
     
 ### <a name="device-management-and-software-distribution"></a>Geräteverwaltung und Softwareverteilung
 
-Microsoft hat für mehrere Gerätemarken neue Geräteverwaltungsfunktionen im Angebot. Windows Intune ist eine cloudbasierte Verwaltungsplattform für mobile Geräte. Sie kann entweder eigenständig zum Verwalten Ihrer Geräte genutzt oder mit System Center 2012 R2 Configuration Manager gekoppelt und in dessen Konsole verwaltet werden. Hier einige Vorteile dieses verknüpften Betriebs:
+Microsoft hat für mehrere Gerätemarken neue Geräteverwaltungsfunktionen im Angebot. Windows Intune ist eine cloudbasierte Verwaltungsplattform für mobile Geräte. Es kann entweder alleine verwendet werden, um Ihre Geräte zu verwalten oder mit dem Microsoft Endpoint Configuration Manager verbunden und in dieser Konsole verwaltet zu werden. Hier einige Vorteile dieses verknüpften Betriebs:
   
 - Durchsetzung und Verwaltung von Richtlinien auf zahlreichen Geräten, u. a. Windows RT-, Windows 8.1-, Windows Phone 8-, IOS- und Android-Geräten
     
@@ -169,15 +169,15 @@ Microsoft hat für mehrere Gerätemarken neue Geräteverwaltungsfunktionen im An
     
 - Verwaltung über eine vertraute Configuration Manager-Konsole
     
-In einem beiliegenden Diagramm wird gezeigt, wie Sie mit System Center 2012 R2 Configuration Manager und Windows Intune Geräte verwalten können.
+Ein begleitendes Diagramm zeigt, wie Sie Configuration Manager und Windows InTune für die Geräteverwaltung verwenden können.
   
- **Überlegungen zur Verwendung von System Center 2012 R2 Configuration Manager und Windows Intune:**
+ **Überlegungen zur Verwendung von Configuration Manager und Windows InTune:**
   
-- Mit System Center 2012 R2 Configuration Manager und Windows Intune können Sie alle Geräte in Ihrer Organisation über eine Konsole verwalten.
+- Bei Verwendung von Configuration Manager und Windows InTune können Sie alle Geräte in Ihrer Organisation unter einer Konsole verwalten und verwalten.
     
 - Zum Verbinden von Configuration Manager mit Windows Intune benötigen Sie ein Windows Intune-Abonnement, und die Standortsystemrolle "Windows Intune-Connector" muss in Ihrer Configuration Manager-Umgebung auf einem Server eingerichtet sein.
     
-- System Center 2012 R2 Configuration Manager ermöglicht die Verwaltung von und Softwareverteilung für Ihre lokalen PCs.
+- Microsoft Endpoint Configuration Manager bietet Verwaltungs-und Softwareverteilung für Ihre lokalen PCs.
     
 - Für die Durchsetzung von Richtlinien und Verteilung von Software auf verwalteten modernen Geräten ist Windows Intune zuständig. Folgende Gerätetypen werden unterstützt: Windows RT-, Windows 8.1-, Windows Phone 8-, iOS- und Android-Geräte.
     
