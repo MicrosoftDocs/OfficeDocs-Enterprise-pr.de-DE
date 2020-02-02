@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Eine Erklärung zum Löschen von Daten in SharePoint Online.
-ms.openlocfilehash: 94b70d34cb05f98dfa560761dec87a919720dca9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 3f00e88c8d0e2bc10f6468b843385753ef864297
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078154"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658322"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>SharePoint Online von Datenlöschung in Office 365
 
@@ -36,6 +36,8 @@ Wenn Sie eine Websitesammlung löschen, löschen Sie auch die Hierarchie der Web
 - Rollen-und Sicherheitsinformationen im Zusammenhang mit der Website oder ihren Unterwebsites
 - Unterwebsites der Website auf oberster Ebene, deren Inhalte und Benutzerinformationen
 
-Wenn Sie versehentlich eine Websitesammlung löschen, kann Sie von einem globalen oder SharePoint-Administrator mithilfe des SharePoint admin Centers wiederhergestellt werden. 
+Wenn Sie versehentlich eine Websitesammlung löschen, kann Sie von einem globalen oder SharePoint-Administrator mithilfe des SharePoint admin Centers wiederhergestellt werden.
+
+Gelöschte Websitesammlungen werden für 93 Tage aufbewahrt. Nach 93 Tagen werden Websites und alle Ihre Inhalte und Einstellungen endgültig gelöscht, einschließlich Listen, Bibliotheken, Seiten und Unterwebsites.
 
 Das Löschen von Festplatten erfolgt, wenn ein Benutzer gelöschte Elemente aus dem Papierkorb der Websitesammlung löscht, wenn die Aufbewahrungs-und Sicherungs Zeiträume ablaufen oder wenn ein Administrator eine Websitesammlung mit dem [Cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)dauerhaft löscht. Wenn ein Benutzer Inhalt aus SharePoint Online löscht (dauerhaft löscht oder löscht), werden auch alle Verschlüsselungsschlüssel für die gelöschten Chunks gelöscht. Die Blöcke auf den Datenträgern, die zuvor die gelöschten Segmente gespeichert haben, werden als nicht verwendet gekennzeichnet und können wieder verwendet werden.
