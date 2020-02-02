@@ -10,12 +10,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Erweitern Sie Ihre Office 365-Präsenz auf mehrere geografische Regionen mit Office 365 Multi-Geo.
-ms.openlocfilehash: 86234cb025d5e0398cbfa626b4867642412e7e0b
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: e1b8bd21790eee558fdb0754b0b0e61a1a02da6d
+ms.sourcegitcommit: 4f465f690c6563cfa9f6029d3e7e9e3cace96671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031930"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41658342"
 ---
 # <a name="office-365-multi-geo"></a>Office 365 Multi-Geo
 
@@ -74,3 +74,5 @@ Gehen Sie folgendermaßen vor, um mit Multi-Geo loszulegen:
 [Multi-Geo-Funktionen in OneDrive und SharePoint Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)
 
 [Multi-Geo-Funktionen in Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)
+
+[Teams in einer Multi-Geo-Umgebung](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
