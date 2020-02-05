@@ -17,16 +17,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
-ms.openlocfilehash: b40b940c99b7f0cf752dae069ca7eae7ac5516d0
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6091f5c222b523781c8af30200f96febb2baf7e4
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747785"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721956"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Dieser Artikel enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
   
@@ -59,8 +59,6 @@ Führen Sie die folgenden Schritte aus, um die Bandbreite zu schätzen:
 <a name="calculators"> </a>
 
  **Netzwerktools.** Testen und überprüfen Sie Ihre Internet Bandbreite, um Download-, Upload-und Latenz Einschränkungen zu ermitteln. Mithilfe dieser Tools können Sie die Funktionen Ihres Netzwerks für die Migration sowie nach der vollständigen Bereitstellung ermitteln. 
-  
-- [Microsoft Message Analyzer](https://technet.microsoft.com/library/jj649776.aspx): Message Analyzer ist ein effektives Tool zur Problembehandlung von Netzwerkproblemen. Der Nachrichten Analyzer erfasst, zeigt und analysiert protokollbasierten Nachrichten Datenverkehr und Systemnachrichten. Mit Message Analyzer können Sie auch Daten aus Protokoll-und Ablaufverfolgungsdateien importieren, Aggregieren und analysieren.
     
 - [Microsoft Remote Connectivity Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=517243): testet die Konnektivität in Ihrer Exchange Online Umgebung.
     

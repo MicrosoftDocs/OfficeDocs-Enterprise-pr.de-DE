@@ -13,12 +13,12 @@ ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:
 - M365-security-compliance
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet. Sie ist für hybridbereitstellungen von lokalen Skype for Business-Servern und lokalen Exchange-Servern sowie für geteilte Domänen Skype for Business Hybriden verfügbar. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zur Einrichtung/Deaktivierung moderner Authentifizierung und zu einigen der verwandten Clients (ex. Outlook-und Skype-Clients) Informationen.
-ms.openlocfilehash: 87a2cc49594b0b71d1288e27ab1323f1850fd7eb
-ms.sourcegitcommit: 9dfaeff7a1625a7325bb94f3eb322fc161ce066b
+ms.openlocfilehash: 5124e42f5dff33d59083cc23f0c57349e6136fb9
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "40261398"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721916"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern
 
@@ -115,7 +115,7 @@ Weitere Informationen zum Get-csoauthconfiguration "-Cmdlet finden Sie unter [Ge
 - C:\Program Files\Skype for Business Server 2015 \ Components\Web-ticket\ext\web.config
 
 ```xml
-<system.identityModel.services>
+<configuration>
   <system.net>
     <defaultProxy>
       <proxy
@@ -123,7 +123,7 @@ Weitere Informationen zum Get-csoauthconfiguration "-Cmdlet finden Sie unter [Ge
         bypassonlocal="true" />
     </defaultProxy>
   </system.net>
-</system.identityModel.services>
+</configuration>
 ```
 
 > [!IMPORTANT]

@@ -23,12 +23,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Sehen Sie sich den Status von Office 365-Diensten an, bevor Sie den Support anrufen, um festzustellen, ob eine Unterbrechung eines aktiven Diensts vorliegt.
-ms.openlocfilehash: 20584f2cb0ecc32da9f5403c36c6af3f0287bea9
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 4dace633b4f68f3f9361096a4bd99296b8b807b2
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122584"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721976"
 ---
 # <a name="how-to-check-office-365-service-health"></a>Überprüfen des Office 365-Dienststatus
 
@@ -114,6 +114,7 @@ Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen ang
 |**Erweiterte Wiederherstellung** | Dieser Status gibt an, dass eine Behebungsmaßnahme durchgeführt wird, um den Dienst für die Mehrzahl der Benutzer wiederherzustellen, es dauert jedoch einige Zeit, bis alle betroffenen Systeme erreicht sind. Dieser Status wird möglicherweise auch angezeigt, wenn wir eine temporäre Korrektur vorgenommen haben, um die Auswirkungen zu verringern, während wir an der Bereitstellung einer dauerhaften Lösung arbeiten. |
 |**Untersuchung angehalten** | Dieser Status wird angezeigt, wenn unsere detaillierte Untersuchung eines potenziellen Problems dazu führt, dass Kunden um Angabe zusätzlicher Informationen für eine weitere Untersuchung gebeten werden. Wenn Ihre Unterstützung erforderlich ist, informieren wir Sie, welche Daten oder Protokolle wir benötigen. |
 |**Dienst wiederhergestellt** | Wir haben bestätigt, dass durch die Behebungsmaßnahme das zugrunde liegende Problem gelöst und der Dienst wieder in einen fehlerfreien Zustand versetzt wurde. Informationen zur Fehlerursache finden Sie unter den Problemdetails. |
+|**Falsch positiv** | Nach einer detaillierten Untersuchung haben wir bestätigt, dass der Dienstfehler frei ausgeführt wurde und wie geplant funktioniert. Es wurden keine Auswirkungen auf den Dienst beobachtet, oder die Ursache des Vorfalls stammt außerhalb des Diensts. |
 |**Vorfallnachsorgebericht veröffentlicht** | Wir haben für ein bestimmtes Problem einen Beitrag veröffentlicht, der Informationen zu den Ursachen sowie nächste Schritte umfasst, um sicherzustellen, dass ein ähnliches Problem nicht wieder auftritt. |
 
 ### <a name="history"></a>Verlauf

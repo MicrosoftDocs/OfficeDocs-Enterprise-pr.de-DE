@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Unterstützt Sie bei der Planung der Anforderungen an die Netzwerkbandbreite für Microsoft Office 365. Sobald Sie bereitgestellt haben, kehren Sie hier zur Feinabstimmung zurück und beheben Sie Office 365 Leistung.
-ms.openlocfilehash: bedddefe893781fc2c51d0e282dc603e30c90b06
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38032140"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721946"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Netzwerkplanung und Leistungsoptimierung für Office 365
 Bevor Sie das erste Mal bereitstellen oder zu Office 365 migrieren, können Sie die Informationen in diesen Themen verwenden, um die benötigte Bandbreite zu schätzen und anschließend zu testen und zu überprüfen, ob genügend Bandbreite für die Bereitstellung oder Migration zu Office 365 verfügbar ist. Eine Übersicht finden Sie unter: [Netzwerk-und Migrationsplanung für Office 365](network-and-migration-planning.md).
@@ -35,7 +35,7 @@ Bevor Sie das erste Mal bereitstellen oder zu Office 365 migrieren, können Sie 
 
 Nachdem Sie Office 365 bereitgestellt haben, können Sie die Leistung mithilfe der Themen in diesem Abschnitt optimieren. Wenn Leistungseinbußen auftreten, können Sie diese Themen auch zur Behandlung von Problemen verwenden.
   
- **[Optimieren der Office 365 Leistung](tune-office-365-performance.md)**: Informationen zum Verwenden der Netzwerkadressübersetzung mit Office 365 finden Sie unter [NAT-Unterstützung mit Office 365](nat-support-with-office-365.md). Werfen Sie auch einen Blick auf die [Top 10 Tipps zur Optimierung und Problembehandlung Ihrer Office 365 Netzwerkkonnektivität](https://blogs.technet.com/b/onthewire/archive/2014/06/18/top-10-tips-for-optimising-amp-troubleshooting-your-office-365-network-connectivity.aspx) von Paul Collinge. 
+ **[Optimieren der Office 365 Leistung](tune-office-365-performance.md)**: Informationen zum Verwenden der Netzwerkadressübersetzung mit Office 365 finden Sie unter [NAT-Unterstützung mit Office 365](nat-support-with-office-365.md). Schauen Sie sich auch die [Top 10 Tipps zur Optimierung und Problembehandlung Ihrer Office 365 Netzwerkkonnektivität](https://docs.microsoft.com/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity)an. 
   
  **[Optimieren Sie Exchange Online Leistung](tune-exchange-online-performance.md)**: Verwenden Sie diese Artikel, um Exchange Online Leistung zu optimieren. 
   
