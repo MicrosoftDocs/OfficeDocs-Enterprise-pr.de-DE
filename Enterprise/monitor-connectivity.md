@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: Nachdem Sie Office 365 bereitgestellt haben, können Sie die Office 365-Konnektivität mithilfe einiger der unten dargestellten Tools und Techniken warten. Sie sollten die offiziellen Richtlinien für die Dienstintegrität und -kontinuität sowie unsere bewährten Methoden für die Verwendung von Office 365 in langsamen Netzwerken verstanden haben. Darüber hinaus ist es sinnvoll, sich die Office 365-Administrator-App zu beschaffen und eine Textmarke für die Office 365 for Business – Administratorhilfe zu setzen.
-ms.openlocfilehash: 385aef73173ea6bab421fae6d10622d7a8fe3c80
-ms.sourcegitcommit: 9c39ba0c21fbe86343f825bb589a108ec5f176bf
+ms.openlocfilehash: 93fbc9448ce25ef3d5d3f1d577c6d1c23ae4472a
+ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37931693"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41721966"
 ---
 # <a name="monitor-office-365-connectivity"></a>Überwachen der Office 365-Konnektivität
 
@@ -37,9 +37,9 @@ Nachdem Sie Office 365 bereitgestellt haben, können Sie die Office 365-Konnekti
 |**Verwenden von Azure AD Connect Health mit AD FS** <br/> |Wenn Sie AD FS für einmaliges Anmelden mit Office 365 verwenden, sollten Sie mit dem [Verwenden von Azure AD Connect Health zum Überwachen Ihrer AD FS-Infrastruktur](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-health-adfs/) beginnen.  <br/> |
 |**Programmgesteuerte Überwachung von Office 365** <br/> |Richten Sie sich nach unserem Leitfaden zur [Office 365-Verwaltungs-API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview).  <br/> |
 
-Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [hhttps://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
+Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/monitorconnectivity365](https://aka.ms/monitorconnectivity365)
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise](configure-services-and-applications.md)
   
