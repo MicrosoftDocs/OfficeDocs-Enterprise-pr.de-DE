@@ -16,13 +16,15 @@ search.appverid:
 - MEW150
 - BCS160
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
+f1.keywords:
+- NOCSH
 description: Wäre es nicht schön, wenn Ihre Internet Verbindung immer schnell und nie nach unten war? Vielleicht wird dieser Tag kommen. Aber in der Zwischenzeit gibt es praktische Dinge, die Sie tun können, um ein unruhiges Netzwerk zu umgehen und immer noch Ihre tägliche Arbeit erledigen zu lassen.
-ms.openlocfilehash: 69fde7ab60fecba4cc43d555d2988f75b7148dba
-ms.sourcegitcommit: 6b4c3a11ef7000480463d43a7a4bc2ced063efce
+ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "35616758"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844956"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Bewährte Methoden für die Verwendung von Office 365 in einem langsamen Netzwerk
 
@@ -176,9 +178,9 @@ Weitere Informationen finden Sie unter [Tune Project Online Performance](https:/
   
 ## <a name="whats-the-best-way-to-report-problems"></a>Was ist die beste Möglichkeit zum Melden von Problemen?
 
-Microsoft verbessert kontinuierlich die Gesamtleistung von Office 365, indem es das Netzwerk überwacht, die Bandbreite und Latenz misst, die Ladezeit verbessert, die Datenträger-e/a reduziert, die Seiten neu gestaltet, um die minimale Download Strategie zu verwenden, um Hardware zu Datencentern hinzuzufügen und Hinzufügen weiterer Rechenzentren. Weitere Informationen zum Überprüfen des aktuellen Status und zu Berichtsproblemen finden Sie unter [How to Check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
+Microsoft verbessert die Gesamtleistung von Office 365 kontinuierlich, indem es das Netzwerk überwacht, Bandbreite und Wartezeit misst, die Ladezeit verbessert, die Datenträger-e/a reduziert, die Seiten neu gestaltet, um eine minimale Download Strategie zu verwenden, Hardware zu Rechenzentren hinzufügt und weitere Rechenzentren hinzufügt. Weitere Informationen zum Überprüfen des aktuellen Status und zu Berichtsproblemen finden Sie unter [How to Check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md)
   

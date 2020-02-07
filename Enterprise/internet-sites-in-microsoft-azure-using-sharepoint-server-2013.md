@@ -9,15 +9,17 @@ ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Architecture
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: 'Zusammenfassung: Internetwebsites, die SharePoint Server 2013 nutzen, profitieren, wenn sie in Azure-Infrastrukturdiensten gehostet werden. Dieser Artikel bietet Ressourcen für den Entwurf und die Implementierung dieser Lösung.'
-ms.openlocfilehash: 762b09d9d4812056b445160d9519802ae56396f4
-ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
+ms.openlocfilehash: 7791da6954aea49b9292967fe32311c529bedc69
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39857996"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845096"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Internetwebsites in Microsoft Azure mit SharePoint Server 2013
 

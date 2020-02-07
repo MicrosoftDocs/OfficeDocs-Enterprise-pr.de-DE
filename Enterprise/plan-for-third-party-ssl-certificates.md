@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: b48cdf63-07e0-4cda-8c12-4871590f59ce
 description: 'Zusammenfassung: Beschreibung der SSL-Zertifikate, die für lokale und hybride Exchange-Dienste erforderlich sind, SSO mit AD FS, Exchange Online Diensten und Exchange Webdienste.'
-ms.openlocfilehash: 74540fb612bd515443912114ebec20cd8ed5e1aa
-ms.sourcegitcommit: 6639b0f0171f7552111267a64d6b199755bf34fc
+ms.openlocfilehash: a28acae142f97a52f7c6db8e5a7d93049b2876cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756614"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841730"
 ---
 # <a name="plan-for-third-party-ssl-certificates-for-office-365"></a>Planen von Drittanbieter-SSL-Zertifikaten für Office 365
 

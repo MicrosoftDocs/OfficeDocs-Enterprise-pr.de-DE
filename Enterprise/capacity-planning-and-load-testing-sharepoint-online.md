@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In diesem Artikel wird beschrieben, wie Sie für SharePoint Online bereitstellen können, ohne herkömmliche Auslastungstests durchführen zu müssen, da dies nicht zulässig ist.
-ms.openlocfilehash: 13e71343aa5ec823003791d99e227fc835117b62
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077878"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844706"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Kapazitätsplanung und Auslastungstests für SharePoint Online
 In diesem Artikel wird beschrieben, wie Sie für SharePoint Online ohne herkömmliche Auslastungstests bereitstellen können, da das Laden von Tests auf SharePoint Online nicht zulässig ist. SharePoint Online ist ein clouddienst, und die Ladefunktionen, die Integrität und der Gesamtsaldo der Last im Dienst werden von Microsoft verwaltet.

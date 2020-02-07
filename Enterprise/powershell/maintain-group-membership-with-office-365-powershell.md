@@ -9,18 +9,20 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom:
 - PowerShell
 - Ent_Office_Other
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: Hier erfahren Sie, wie Sie Office 365 PowerShell verwenden, um die Mitgliedschaft in Gruppen für Office 365 beizubehalten.
-ms.openlocfilehash: e7cd4cb76f28bfbe2e1bc538df6727ac403c29df
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: 397f8d93df5e9abef0779e4eb56df7bab9ef2344
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072497"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841482"
 ---
 # <a name="maintain-group-membership-with-office-365-powershell"></a>Verwalten der Gruppenmitgliedschaft mit Office 365 PowerShell
 
@@ -145,7 +147,7 @@ $groupName="<display name of the group contains the member group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID -GroupMemberType Group
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Verwalten von Benutzerkonten, Lizenzen und Gruppen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   

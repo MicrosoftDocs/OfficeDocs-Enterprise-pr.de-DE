@@ -13,17 +13,19 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- NOCSH
 description: Erläutert, warum die Netzwerkoptimierung für SaaS-Dienste wichtig ist, das Ziel Office 365 Netzwerke und wie Saas unterschiedliche Netzwerke aus anderen Arbeitslasten benötigt.
-ms.openlocfilehash: 086d810e8375e3d4c4b7425d99513193968c6415
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747707"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844356"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 Netzwerkkonnektivität (Übersicht)
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Office 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe verschiedener Mikro Dienste und Anwendungen bereitstellt. Client Komponenten von Office 365 wie Outlook, Word und PowerPoint werden auf Benutzercomputern ausgeführt und stellen eine Verbindung mit anderen Komponenten von Office 365 her, die in Microsoft-Rechenzentren ausgeführt werden. Der wichtigste Faktor, der die Qualität der Office 365 Endbenutzererfahrung bestimmt, ist die Zuverlässigkeit von Netzwerken und die niedrige Latenz zwischen Office 365-Clients und Office 365-Dienst-Front-Doors.
 

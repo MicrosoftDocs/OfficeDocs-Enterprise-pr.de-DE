@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099
 description: 'Das Herstellen einer Verbindung mit Office 365 mithilfe von Azure Express Route basiert auf BGP-Ankündigungen bestimmter IP-Subnetze, die Netzwerke darstellen, in denen Office 365 Endpunkte bereitgestellt werden. Aufgrund des globalen Charakters von Office 365 und der Anzahl von Diensten, die Office 365 darstellen, müssen Kunden häufig die Ankündigungen verwalten, die Sie in Ihrem Netzwerk annehmen. Verringern der Anzahl von IP-Subnetzen; bezeichnet als IP-Präfixe im restlichen Teil dieses Artikels, um Sie an die BGP-Netzwerk Verwaltungsterminologie anzupassen, werden die folgenden Endziele für Kunden bereitgestellt:'
-ms.openlocfilehash: 57e8e7a2fa3eb5ecd3268219e6f4a6bc00a08cb0
-ms.sourcegitcommit: f18f75dba4cbec557fa094bd1cebd8c5cc4752c1
+ms.openlocfilehash: 1e174aafa0dbbf57f95c45b0e218ebe1793194cc
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40085180"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844946"
 ---
 # <a name="using-bgp-communities-in-expressroute-for-office-365-scenarios"></a>Verwenden von BGP-Communities in Express Route für Office 365 Szenarien
 
@@ -59,7 +61,7 @@ Die Contoso Corporation ist ein Unternehmen mit 50.000 Personen, das derzeit Off
 |SharePoint  <br/> (12076:5020)  <br/> |SharePoint Online &amp; OneDrive für Unternehmen  <br/> | DNS-, CRL &amp; -, CDN-Anforderungen  <br/>  Alle anderen Office 365 Dienste, die nicht speziell über Azure Express Route unterstützt werden  <br/>  Alle anderen Microsoft Cloud-Dienste  <br/>  Office 365 Portal, Office 365 Authentifizierung, &amp; Office in einem Browser  <br/>  Exchange Online, Exchange Online Schutz und Skype for Business Online  <br/> |
 
 > [!NOTE]
-> Um niedrigere Präfix Anzahlen für jeden Dienst zu erzielen, wird eine minimale Menge an Überschneidungen zwischen Diensten fortgesetzt. Dies ist das erwartete Verhalten.
+> Um niedrigere Präfix Anzahlen für jeden Dienst zu erzielen, wird eine minimale Menge an Überschneidungen zwischen Diensten fortgesetzt. Dieses Verhalten ist zu erwarten.
   
 ### <a name="scenario-2-scoping-expressroute-and-internal-bandwidth-use-to-some-office-365-services"></a>Szenario 2: Bereichs Express Route und interne Bandbreitennutzung für einige Office 365 Dienste
 

@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
 description: Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
-ms.openlocfilehash: 8b784da9dcb8b5e821197e72ccc5ab49b976ba74
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: c96cb8aa7341c0749d198e1fa5459433c40e1062
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745718"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844696"
 ---
 # <a name="assessing-office-365-network-connectivity"></a>Bewerten der Office 365-Netzwerkkonnektivität
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Office 365 ist so konzipiert, dass Kunden auf der ganzen Welt eine Verbindung mit dem Dienst über eine Internetverbindung herstellen können. Während sich der Dienst entwickelt, werden Sicherheit, Leistung und Zuverlässigkeit von Office 365 basierend auf Kunden verbessert, die über das Internet eine Verbindung mit dem Dienst herstellen.
   
@@ -105,7 +107,7 @@ Sie können das Onboarding-Tool für Office 365-Netzwerk lesen und Feedback zum 
   
 Hier ist ein kurzer Link, den Sie verwenden können, um zurückzukehren: [ https://aka.ms/o365networkconnectivity.](https://aka.ms/o365networkconnectivity)
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Office 365 – Überblick über die Netzwerkkonnektivität](office-365-networking-overview.md)
 

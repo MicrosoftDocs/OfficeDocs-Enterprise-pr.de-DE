@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ ms.collection:
 - Ent_O365
 - SPO_Content
 description: Es gibt einige einfache Möglichkeiten, die Verbindungsleistung zwischen Office 365 und Ihrem Unternehmen zu überprüfen, sodass Sie eine grobe Basislinie ihrer Konnektivität einrichten können. Wenn Sie den Leistungsverlauf ihrer Clientcomputerverbindungen kennen, können Sie auftretende Probleme frühzeitig erkennen, Probleme identifizieren und Vorhersagen.
-ms.openlocfilehash: 03aa4f9092154e00201ca0a58f335b70d26f3b11
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 2eed0b20886552c207399ab4144b63364132f98c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078134"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844336"
 ---
 # <a name="office-365-performance-tuning-using-baselines-and-performance-history"></a>Office 365-Leistung optimieren mit Basisplänen und Leistungsverlauf 
 
@@ -323,7 +325,7 @@ Wenn Sie sich mitten in einem Leistungsproblem befinden, sind viele der Schritte
   
 Um ein Leistungsproblem zu beheben, müssen Sie *gerade jetzt* eine Ablaufverfolgung ausführen, wenn das Leistungsproblem auftritt. Sie müssen über die erforderlichen Tools zum Sammeln von Protokollen verfügen, und Sie benötigen einen Aktionsplan, also eine Liste der Problem Behandlungs Aktionen, die Sie ausführen müssen, um die besten Informationen zu sammeln, die Ihnen zur Verfügung stehen. Als erstes müssen Sie das Datum und die Uhrzeit des Tests aufzeichnen, damit die Dateien in einem Ordner gespeichert werden können, der das Timing widerspiegelt. Als nächstes beschränken Sie die Problemschritte selbst. Dies sind die genauen Schritte, die Sie für die Tests verwenden werden. Vergessen Sie nicht die Grundlagen: Wenn das Problem nur mit Outlook besteht, stellen Sie sicher, dass das Problemverhalten nur in einem Office 365 Dienst auftritt. Das Einschränken des Umfangs dieses Problems hilft Ihnen, sich auf etwas zu konzentrieren, das Sie lösen können. 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Verwalten von Office 365-Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
 

@@ -9,16 +9,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Zusammenfassung: eine Übersicht über die administrativen Zugriffssteuerungen von Office 365 und die Datenkategorisierung.'
-ms.openlocfilehash: e8cc470c617deea7435841f276b772b0a8ef17a3
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: f902b123b26f2c71cb6597f66fc47142e2f2b44c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067484"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844536"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Administrative Zugriffssteuerungen in Office 365 
 
@@ -29,7 +31,7 @@ Standardmäßig verfügen die Microsoft-Techniker über keine ständigen Adminis
 Microsoft stellt Onlinedienste bereit, die mehrere Formen der Cloud-Zustellung verwenden:
 
 - **Öffentliche Clouds:** Enthält mehr mandantenversionen von Office 365, Azure und anderen Diensten, die in Nordamerika, Südamerika, Europa, Asien, Australien usw. gehostet werden.
-- **Nationale Clouds:** Umfasst alle souveränen und von Drittanbietern betriebenen Clouds außerhalb der Vereinigten Staaten (mit Ausnahme der zuvor erwähnten), wie Office 365 in China (betrieben von 21Vianet) und Office 365 in Deutschland (betrieben von Microsoft, jedoch unter einem Modell, in dem ein deutscher Daten Treuhänder) Die Deutsche Telekom steuert und überwacht den Zugriff von Microsoft auf Kundendaten und-Systeme, die Kundendaten enthalten).
+- **Nationale Clouds:** Umfasst alle souveränen und von Drittanbietern betriebenen Clouds außerhalb der Vereinigten Staaten (mit Ausnahme der zuvor erwähnten), wie Office 365 in China (betrieben von 21Vianet) und Office 365 in Deutschland (betrieben von Microsoft, aber unter einem Modell, in dem ein deutscher Daten Treuhänder, die Deutsche Telekom) den Zugriff von Microsoft auf Kundendaten und-Systeme steuert und überwacht, die Kundendaten enthalten.
 - **Öffentliche Clouds:** Umfasst Office 365-und Azure-Dienste, die für US-amerikanische Regierungskunden verfügbar sind.
 
 Für die Zwecke dieses Artikels umfassen Office 365 Dienste Folgendes:

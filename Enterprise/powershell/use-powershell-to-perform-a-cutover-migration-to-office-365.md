@@ -8,15 +8,17 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: 'Zusammenfassung: Verwenden Sie Windows PowerShell zum Ausführen einer Übernahmemigration zu Office 365.'
-ms.openlocfilehash: 669aa3dc728b41bdc2ba8cc467943db5eb2005d9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: 6f82dc8501d5dfbca7c980b025e6da7a4deb00d5
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34071201"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844716"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Office 365
 
@@ -75,13 +77,13 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Zuweisen der erforderlichen Berechtigungen für das lokale Benutzerkonto für den Zugriff auf Postfächer in der Exchange-Organisation** Das lokale Benutzerkonto, mit dem Sie eine Verbindung mit Ihrer lokalen Exchange-Organisation herstellen (auch als Migrations Administrator bezeichnet), muss über die erforderlichen Berechtigungen für den Zugriff auf die lokalen Postfächer verfügen, die Sie zu Office 365 migrieren möchten. Dieses Benutzerkonto wird zur Erstellung eines Migrationsendpunkts zu Ihrer lokalen Organisation verwendet.
+- **Zuweisen der erforderlichen Berechtigungen für das lokale Benutzerkonto für den Zugriff auf Postfächer in der Exchange-Organisation** Das lokale Benutzerkonto, das Sie zum Herstellen einer Verbindung mit Ihrer lokalen Exchange-Organisation (auch als Migrations Administrator bezeichnet) verwenden, muss über die erforderlichen Berechtigungen für den Zugriff auf die lokalen Postfächer verfügen, die zu Office 365 migriert werden sollen. Dieses Benutzerkonto wird zur Erstellung eines Migrationsendpunkts zu Ihrer lokalen Organisation verwendet.
     
     Die folgende Liste zeigt die Administratorrechte an, die erforderlich sind, um Postfächer mithilfe einer Übernahmemigration zu migrieren. Es gibt drei mögliche Optionen.
     
   - Der Migrationsadministrator muss Mitglied der Gruppe **Domänen-Admins** in Active Directory in der lokalen Organisation sein.
     
-    Oder
+    Oder:
     
   - Dem Migrationsadministrator muss die Berechtigung **FullAccess** für jedes lokale Postfach zugewiesen werden.
     
@@ -195,7 +197,7 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Abschnitt 7: Zuweisen von Benutzerlizenzen
 <a name="BK_Step7"> </a>
 
- **Aktivieren Sie Office 365-Benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen.** Wenn Sie keine Lizenz zuweisen, wird das Postfach nach Ablauf der Kulanzzeit (30 Tage) deaktiviert. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter Zuweisen oder Aufheben der[Zuweisung von Lizenzen für Office 365 for Business](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Aktivieren Sie Office 365-Benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen.** Wenn Sie keine Lizenz zuweisen, wird das Postfach nach Ablauf der Kulanzzeit (30 Tage) deaktiviert. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter Zuweisen oder Aufheben der[Zuweisung von Lizenzen für Office 365 für Unternehmen](https://go.microsoft.com/fwlink/?LinkId=536681).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Schritt 8: Aufgaben nach der Migration abschließen
 <a name="BK_Step8"> </a>

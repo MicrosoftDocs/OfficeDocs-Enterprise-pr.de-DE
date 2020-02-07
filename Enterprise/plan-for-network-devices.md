@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Zusammenfassung: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.'
-ms.openlocfilehash: 2a38fd7dad23b41aa31dcf9ace7ebee6ed69c0f6
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: edc089abc58f19c0655f9a75da96366a0a09dcb7
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747068"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841724"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
   
 **Zusammenfassung**: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.
 
@@ -70,7 +72,7 @@ Wir bieten eine softwarebasierte NLB-Lösung, die in Windows Server integriert i
 
 Weitere Informationen zum Konfigurieren von Firewalls und Proxys für die Verbindung mit Office 365 finden Sie unter [Managing Office 365 Endpoints](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a), [Bewertung Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)und [Office 365 Endpunkte](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d) , um mehr über Geräte und schaltkreisauswahl zu erfahren.
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
 

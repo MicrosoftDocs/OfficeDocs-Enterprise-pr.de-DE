@@ -9,17 +9,19 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 ms.assetid: e5f1228c-da3c-4654-bf16-d163daee8848
 description: Unterstützt Sie bei der Planung der Anforderungen an die Netzwerkbandbreite für Microsoft Office 365. Sobald Sie bereitgestellt haben, kehren Sie hier zur Feinabstimmung zurück und beheben Sie Office 365 Leistung.
-ms.openlocfilehash: 0f60c925d01b4a4471d475b923389e3b59e5526c
-ms.sourcegitcommit: 226989f5a6a252e67debf7613bf13aa679a43f92
+ms.openlocfilehash: 91e8938d4a1b40d67d62635c545f2e0d8cb8c641
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41721946"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844746"
 ---
 # <a name="network-planning-and-performance-tuning-for-office-365"></a>Netzwerkplanung und Leistungsoptimierung für Office 365
 Bevor Sie das erste Mal bereitstellen oder zu Office 365 migrieren, können Sie die Informationen in diesen Themen verwenden, um die benötigte Bandbreite zu schätzen und anschließend zu testen und zu überprüfen, ob genügend Bandbreite für die Bereitstellung oder Migration zu Office 365 verfügbar ist. Eine Übersicht finden Sie unter: [Netzwerk-und Migrationsplanung für Office 365](network-and-migration-planning.md).

@@ -10,23 +10,25 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: b9dcd692-0485-4eec-870d-87ab6b89d97b
+f1.keywords:
+- NOCSH
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Lokaler eDiscovery-Datenfluss“.
-ms.openlocfilehash: bdaf46c552b346d0e6966cd3589f239146ddadc5
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: ec9ecf7d3663503f2da412364d919a6c70032e23
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068531"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843856"
 ---
 # <a name="accessible-diagram---on-premises-ediscovery-flow"></a>Zugängliches Diagramm – Lokaler eDiscovery-Datenfluss
 
-**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen "on-premises eDiscovery Flow".
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms mit dem Namen "lokaler eDiscovery-Fluss".
   
 Dieses Poster bietet Details zu Architektur und Datenfluss bei Serverprodukten. 
   
 ## <a name="across-sharepoint-exchange-lync-and-file-shares"></a>SharePoint, Exchange, Lync und Dateifreigaben
 
-Das Diagramm zeigt, wie ein Benutzer eine Abfrage sendet, die auf zwei Serverfarmen, eine SharePoint 2013 Enterprise-App-Farm und eine SharePoint 2013-Dienstfarm zugreift. Die SharePoint 2013 Services-Farm kommuniziert mit einer SharePoint 2013-Inhaltsfarm, Exchange Server 2013 (die mit lync 2013 kommuniziert) und Windows-Dateifreigaben. 
+Das Diagramm zeigt einen Benutzer, der eine Abfrage sendet, die auf zwei Serverfarmen, eine SharePoint 2013 Enterprise-App-Farm und eine SharePoint 2013-Dienstfarm zugreift. Die Farm mit SharePoint 2013 Diensten kommuniziert mit einer SharePoint 2013-Inhaltsfarm, Exchange Server 2013 (die mit lync 2013 kommuniziert) und Windows-Dateifreigaben. 
   
 In der eDiscovery-Ablaufliste werden der Datenfluss und die Reihenfolge beschrieben, in der Abfrageaktionen von eDiscovery in SharePoint, Exchange, Lync und Dateifreigaben erfolgen.  
   
@@ -36,21 +38,21 @@ Die eDiscovery-Ablaufliste wird zuerst detailliert beschrieben. Danach folgt ein
 
 Die Zahlen für die einzelnen in der Liste beschriebenen Schritte gehören zu einem im Diagramm abgebildeten Schritt. Das Diagramm wird weiter unten in diesem Dokument ausführlich beschrieben.  
   
-1. eDiscovery-Fälle werden im eDiscovery Center (EDC) erstellt, verwaltet und verwendet. Die EDC ist eine SharePoint 2013-Websitesammlung. Hier werden Fälle definiert, nachzuverfolgende Quellen bestimmt, Abfragen gestartet, Abfrageergebnisse geprüft und Sperren für Inhalte aktiviert oder aufgehoben. 
+1. eDiscovery-Fälle werden im eDiscovery Center (EDC) erstellt, verwaltet und verwendet. EDC ist eine SharePoint 2013 Websitesammlung. Hier werden Fälle definiert, nachzuverfolgende Quellen bestimmt, Abfragen gestartet, Abfrageergebnisse geprüft und Sperren für Inhalte aktiviert oder aufgehoben. 
     
-2. Die eDiscovery-Abfrage oder -Aktion, wie „Im Archiv platzieren“, „ReleaseHold“ oder „GetStatus“, wird vom EDC an den Proxy der Suchdienstanwendung (Search Service Application, SSA) in der App-Farm des Unternehmens weitergeleitet. Der Proxy der Suchdienstanwendung leitet anschließend den Datenverkehr an die SSA in der Dienst-App-Farm weiter. In diesem Beispiel ist die Anforderung, alle Elemente in der SharePoint-Inhalts Farm mit "Contoso" in den zu speichernden Dateinamen zu platzieren. 
+2. Die eDiscovery-Abfrage oder -Aktion, wie „Im Archiv platzieren“, „ReleaseHold“ oder „GetStatus“, wird vom EDC an den Proxy der Suchdienstanwendung (Search Service Application, SSA) in der App-Farm des Unternehmens weitergeleitet. Der Proxy der Suchdienstanwendung leitet anschließend den Datenverkehr an die SSA in der Dienst-App-Farm weiter. In diesem Beispiel wird die Anforderung in der SharePoint-Inhalts Farm mit "Contoso" im Dateinamen in der Warteschleife platziert. 
     
 3. Wenn die Anforderung vorsieht, einen Fall abzufragen, konsultiert die Suchdienstanwendung den Suchindex. Dann wird das Resultset der eDiscovery-Abfrage über das EDC an den Benutzer zurückgegeben.  
     
-4. Wenn die Anforderung eine Aktion ist, z. B. „Im Archiv platzieren“ oder „ReleaseHold“, wird diese Aktion in die Tabelle „Actions“ in der Verwaltungsdatenbank der Suchdienstanwendung geschrieben. In diesem Beispiel wird eine Hold-Anforderung für irgendetwas in der SharePoint-Inhalts Farm mit "Contoso" in das Actions_Table geschrieben. 
+4. Wenn die Anforderung eine Aktion ist, z. B. „Im Archiv platzieren“ oder „ReleaseHold“, wird diese Aktion in die Tabelle „Actions“ in der Verwaltungsdatenbank der Suchdienstanwendung geschrieben. In diesem Beispiel wird eine halte Anforderung für irgendetwas in der SharePoint-Inhalts Farm mit "Contoso" in die Actions_Table geschrieben. 
     
 5. In regelmäßigen Abständen wird der Zeitgeberauftrag für den eDiscovery-In-Situ-Speicher der Inhaltsfarm aktiviert, der eine Anforderung ausstehender Aktionen generiert und Statusaktualisierungen über den SSA-Proxy an die SSA sendet. 
     
 6. Die Abfrage ausstehender Aktionen wird an die zentrale Suchdienstanwendung weitergeleitet, die die Tabelle „Actions“ auf ausstehende Aktionen für die Inhaltsfarm konsultiert. Der Zeitgeberauftrag für den In-Situ-Speicher der Inhaltsfarm sendet außerdem Statusaktualisierungen für empfangene Objekte und Aktionen, die in die Tabelle „Actions“ geschrieben werden. 
     
-7. Die Hold-Anforderung für alle Inhalte mit "Contoso" im Namen in der SharePoint 2013-Inhaltsfarm wird von der SSA an den in-situ-Speicher-Zeitgeberauftrag in der Inhaltsfarm gesendet. 
+7. Die halte Anforderung für alle Inhalte mit "Contoso" im Namen in der SharePoint 2013 Inhaltsfarm wird von der SSA an den Zeitgeberauftrag eDiscovery in der Inhaltsfarm gesendet. 
     
-8. Der Zeitgeberauftrag für den eDiscovery-in-Place-Speicher platziert die "Contoso-Website" und "Contoso-Inhalte" in der Warteschleife. 
+8. Der Zeitgeberauftrag eDiscovery in-situ-Speicher platziert den "Contoso-Standort" und "Contoso-Inhalt" in der Warteschleife. 
     
 9. Der Zeitgeberauftrag für den eDiscovery-In-Situ-Speicher wird in der Unternehmens-App-Farm regelmäßig ausgeführt, um den Status von Ermittlungsaktionen zu prüfen und zu aktualisieren.  
     
@@ -70,7 +72,7 @@ Die Zahlen für die einzelnen in der Liste beschriebenen Schritte gehören zu ei
     
 ### <a name="description-of-components-in-the-diagram"></a>Beschreibung der im Diagramm dargestellten Komponenten
 
-Das Diagramm zeigt, wie ein Benutzer eine Abfrage sendet, die auf zwei Serverfarmen, eine SharePoint 2013 Enterprise-App-Farm und eine SharePoint 2013-Dienstfarm zugreift. Die SharePoint Services-Farm Schnittstellen mit einer SharePoint 2013-Inhalts Farm, Exchange Server 2013 (mit lync 2013) und Windows-Dateifreigaben. 
+Das Diagramm zeigt einen Benutzer, der eine Abfrage sendet, die auf zwei Serverfarmen, eine SharePoint 2013 Enterprise-App-Farm und eine SharePoint 2013-Dienstfarm zugreift. Die SharePoint Services-Farm Schnittstellen mit einer SharePoint 2013-Inhaltsfarm, Exchange Server 2013 (die Schnittstellen mit lync 2013) und Windows-Dateifreigaben. 
   
 #### <a name="sharepoint-2013-enterprise-app-farm"></a>SharePoint 2013 Enterprise-App-Farm
 
@@ -92,9 +94,9 @@ Eine Abfrage oder eine Aktion, die vom Benutzer gesendet wird, wird an das EDC i
     
 - Ergebnisse der Abfrage oder Aktion werden aus dem EDC an den Benutzer gesendet.  
     
-#### <a name="sharepoint-2013-services-farm"></a>SharePoint-2013-Dienst Farm
+#### <a name="sharepoint-2013-services-farm"></a>SharePoint 2013-Dienst Farm
 
-Die SharePoint 2013 Services-Farm enthält die folgenden Komponenten: 
+Die SharePoint 2013-Dienste-Farm enthält die folgenden Komponenten: 
   
 - SSA-Dienst  
     
@@ -110,7 +112,7 @@ Wenn der SSA-Proxy in der SharePoint-Unternehmens-App-Farm eine Statusabfrage an
     
 - Wenn die Anforderung eine Schreibaktion ist, sendet der SSA-Dienst die Schreibaktion an die Verwaltungsdatenbank der Suchdienstanwendung.  
     
-- Eine Anforderung zum Crawlen und Antworten der Ergebnisse wird von der SSA an die SharePoint 2013-Inhalts Farm gesendet, und eine Antwort wird an die SSA zurückgegeben. 
+- Eine Durchforstungs-und Antwortergebnis Anforderung wird von der SSA an die SharePoint 2013-Inhalts Farm gesendet, und eine Antwort wird an die SSA zurückgegeben. 
     
 - Eine Anforderung für Durchforstung und Antwortergebnisse wird von der SSA an die Windows-Dateifreigaben gesendet, und eine Antwort wird an die SSA zurückgegeben.  
     
@@ -122,9 +124,9 @@ Wenn der SSA-Proxy in der SharePoint-Unternehmens-App-Farm eine Statusabfrage an
     
 - Eine Abfrage/Antwort für eine ausstehende Aktion wird von der SSA an die Verwaltungsdatenbank der Suchdienstanwendung gesendet und an die SSA zurückgegeben.  
     
-#### <a name="sharepoint-2013-content-farm"></a>SharePoint 2013-Inhalts Farm
+#### <a name="sharepoint-2013-content-farm"></a>SharePoint 2013 Inhalts Farm
 
-Die SharePoint 2013-Inhalts Farm enthält die folgenden Komponenten: 
+Die SharePoint 2013 Inhalts Farm enthält die folgenden Komponenten: 
   
 - SSA-Proxy  
     
@@ -146,7 +148,7 @@ Wenn die SSA in der SharePoint Services-Farm eine Statusabfrage an den SSA-Prox
 
 Die Exchange 2013-Serverkomponente enthält den Exchange-Webdienst und bietet Folgendes:  
   
-- Server-zu-Server-Vertrauensstellung/OAuth wird zwischen der SharePoint 2013-Inhalts Farm und Exchange 2013 verarbeitet. 
+- Die Server-zu-Server-Vertrauensstellung/OAuth wird zwischen der SharePoint 2013-Inhalts Farm und Exchange 2013 behandelt. 
     
 - Server-zu-Server-Vertrauensstellung/OAuth erfolgt zwischen Exchange 2013 und Lync 2013.  
     
@@ -162,15 +164,15 @@ Die Windows-Dateifreigaben-Komponente stellt Durchforstungsergebnisse für die S
 
 Die Legende für dieses Diagramm enthält eine grafische Darstellung der verschiedenen zwischen den Komponenten gezeigten Datenverkehrstypen in Form verschiedenfarbiger Linien, wie nachfolgend beschrieben:  
   
-- Hellblaue Linien: Abfrage/Aktion – eDiscovery-Abfrage-oder Aktionsdaten 
+- Hellblaue Verbindung: Abfrage/Aktion – eDiscovery-Abfrage oder Aktionsdaten 
     
-- Orangefarbene Leitung: eDiscovery-Antwort – eDiscovery-Abfrageantwort Daten 
+- Orangefarbener Anschluss: eDiscovery-Antwort – Daten zur eDiscovery-Abfrageantwort 
     
-- Grüne Leitung: Statusabfrage/-Antwort – eDiscovery-Statusabfrage/Antwortdaten 
+- Grüne Reihe: Statusabfrage/-Antwort – eDiscovery-Statusabfrage/Antwortdaten 
     
-- Violette Leitung: Exchange-Aktion/Statusanforderung – eDiscovery-Anforderung für Aktionsstatus für Exchange-Datenverkehr. 
+- Purple-Reihe: Exchange-Aktion/Statusanforderung – eDiscovery-Anforderung für den Aktionsstatus für Exchange-Datenverkehr. 
     
-- Rote Leitung: Exchange-Daten/Statusantwort – eDiscovery-Abfrage oder Statusantwort von Exchange. 
+- Rote Schnur: Exchange-Daten/Statusantwort – eDiscovery-Abfrage oder Statusantwort von Exchange. 
     
 - Gepunktete schwarze Linie: Server-zu-Server-Vertrauensstellung/OAuth  
     

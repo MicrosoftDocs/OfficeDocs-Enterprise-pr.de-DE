@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Erfahren Sie, wie Azure Express Route mit Office 365 verwendet wird und wie das Netzwerk Implementierungsprojekt geplant wird, das erforderlich ist, wenn Sie Azure Express Route für die Verwendung mit Office 365 bereitstellen.
-ms.openlocfilehash: 63ac8c23a6b36ed6ed079a20f05ca5fdfdcfcb83
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 76d90e4c60e04302e8a14f3020ac0f968bf018ae
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745738"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844926"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Erfahren Sie, wie Azure Express Route mit Office 365 verwendet wird und wie das Netzwerk Implementierungsprojekt geplant wird, das erforderlich ist, wenn Sie Azure Express Route für die Verwendung mit Office 365 bereitstellen. Infrastruktur-und Plattformdienste, die in Azure betrieben werden, profitieren häufig von der Behebung von Netzwerkarchitektur und Leistungsüberlegungen. In diesen Fällen wird Express Route für Azure empfohlen. Software als Service Angebote wie Office 365 und Dynamics 365 wurden für den sicheren und zuverlässigen Zugriff über das Internet entwickelt. Sie können sich über Internet Leistung und Sicherheit informieren, und wann Sie Azure Express Route für Office 365 im Artikel [bewerten von Office 365 Netzwerkkonnektivität](assessing-network-connectivity.md)in Frage stellen sollten.
 

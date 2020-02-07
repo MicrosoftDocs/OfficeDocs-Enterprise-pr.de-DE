@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Zusammenfassung: Beschreibung der IPv6-Unterstützung in Microsoft Office 365-Komponenten und in Office 365 Government-angeboten.'
-ms.openlocfilehash: 17938a6bd3544889c4afa38f27b11ea7f02e0f43
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745728"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845116"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>IPv6-Unterstützung in Office 365-Diensten
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Office 365 unterstützt sowohl IPv6 als auch IPv4; Allerdings sind nicht alle Office 365 Funktionen mit IPv6 vollständig aktiviert. Dies bedeutet, dass Sie sowohl IPv4 als auch IPv6 verwenden müssen, um eine Verbindung mit Office 365 herzustellen. Wenn Sie den ausgehenden Datenverkehr auf Office 365 filtern, finden Sie die vollständige Liste der von Office 365 unterstützten IPv6-Adressen im Artikel [Office 365-URLs und IP-Adressbereiche](urls-and-ip-address-ranges.md). Nachdem Ihr Netzwerk konfiguriert wurde und die entsprechenden IPv6-Adressen zulässig sind, können Sie den [Office 365 IPv6-Testplan](https://go.microsoft.com/fwlink/?LinkId=293447) aus dem Microsoft Download Center herunterladen.
   
@@ -81,7 +83,7 @@ Diese Überlegungen gelten möglicherweise für Ihr Netzwerk:
 
 Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365ip6](https://aka.ms/o365ip6)
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [IPv6 Learning-Roadmap](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/gg250710(v%3dws.10))
   

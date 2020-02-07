@@ -10,17 +10,19 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: ''
 ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie, wie Sie die Dateisammlung von Benutzercomputern für eDiscovery automatisieren.'
-ms.openlocfilehash: ccea04f4573a16750f588295fca5621d5abd8498
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077718"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844736"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatisieren der Dateisammlung für eDiscovery
 
@@ -330,8 +332,8 @@ $AllFiles | ForEach-Object {
     
 |**Zeilennummer**|**Zu änderndes Element**|**Erforderlich/optional**|
 |:-----|:-----|:-----|
-|12  <br/> |**$FolderIdentifier** markiert die Postfachordner, in die PST-Dateien importiert werden. Ändern Sie dies bei Bedarf.<br/> |Optional  <br/> |
-|17  <br/> |**$ConnectionUri** muss auf Ihrem eigenen Server festgelegt sein. <br/> > [!IMPORTANT]> Stellen Sie sicher, dass Ihre **$ConnectionUri** auf einen Speicherort „http://" und nicht „https://" zeigt. Mit „https://" funktioniert es nicht.          |Erforderlich  <br/> |
+|12   <br/> |**$FolderIdentifier** markiert die Postfachordner, in die PST-Dateien importiert werden. Ändern Sie dies bei Bedarf.<br/> |Optional  <br/> |
+|17   <br/> |**$ConnectionUri** muss auf Ihrem eigenen Server festgelegt sein. <br/> > [!IMPORTANT]> Stellen Sie sicher, dass Ihre **$ConnectionUri** auf einen Speicherort „http://" und nicht „https://" zeigt. Mit „https://" funktioniert es nicht.          |Erforderlich  <br/> |
    
 4. Stellen Sie sicher, dass das Exchange-Konto „Vertrauenswürdiges Teilsystem" Lese-, Schreib- und Ausführberechtigungen für die Freigabe \\\\Staging\\Cases$ aufweist.
     

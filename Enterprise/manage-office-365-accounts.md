@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'In diesem Artikel erfahren Sie, welche Tools für die Verwaltung Ihrer Office 365 Benutzer und wie Sie verwenden können, hängt davon ab, wie Sie Benutzeridentitäten verwalten. '
-ms.openlocfilehash: 3e29af9e3d01184f9edc386148de60897fb03e27
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490738"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843716"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Tools zum Verwalten von Office 365-Konten
 

@@ -15,14 +15,16 @@ search.appverid:
 - MED150
 - MBS150
 - BCS160
+f1.keywords:
+- NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Schützen Sie den globalen Administratorzugriff auf Ihr Office 365 Abonnement.
-ms.openlocfilehash: 293044fc508c89b5e08234aa62633c6c4490ba6d
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: ee5acefbd5eab287a78b55f5d4ddfc525432b403
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072207"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841192"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Ihrer globalen Office 365-Administratorkonten
 
@@ -156,6 +158,6 @@ Informationen zum Einrichten der Identität für Ihr Office 365-Abonnement finde
 - [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md) bei Verwendung der Hybrid Identität
 
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Office 365 Security Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap).

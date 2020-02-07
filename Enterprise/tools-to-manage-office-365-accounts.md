@@ -7,6 +7,8 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'In diesem Artikel erfahren Sie, welche Tools für die Verwaltung Ihrer Office 365 Benutzer und wie Sie verwenden können, hängt davon ab, wie Sie Benutzeridentitäten verwalten. '
-ms.openlocfilehash: 27c447e19e9664fe190497cefcd5af4c3be408eb
-ms.sourcegitcommit: 10ae1163f8443c53f19dfad6b7c2b2bb952bf759
+ms.openlocfilehash: 669d71aafe0efdff575615dab835dd67cb7aebdf
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490768"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843946"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Tools zum Verwalten von Office 365-Konten
 
@@ -39,7 +41,7 @@ Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmode
 
 - [Office 365 Identitäts](about-office-365-identity.md) Erstellung und-Verwaltung von Benutzern im Admin Center können Sie auch Windows PowerShell oder Azure Active Directory verwenden, um Ihre Benutzer zu verwalten.
 - [Kennworthash Synchronisierung mit nahtlosem einmaligem Anmelden](about-office-365-identity.md) – die einfachste Möglichkeit zum Aktivieren der Authentifizierung für lokale Verzeichnisobjekte in Azure AD. Mit Password Hash Sync (PHS) synchronisieren Sie Ihre lokalen Active Directory Benutzerkontenobjekte mit Office 365 und verwalten Ihre Benutzer lokal. 
-- [Pass-Through-Authentifizierung mit nahtlosem einmaligem Anmelden](about-office-365-identity.md) – bietet eine einfache Kennwortüberprüfung für Azure AD Authentifizierungsdienste mit einem Software-Agent, der auf einem oder mehreren lokalen Servern läuft, um die Benutzer direkt mit Ihrem zu validieren. lokale Active Directory. 
+- [Pass-Through-Authentifizierung mit nahtlosem einmaligem Anmelden](about-office-365-identity.md) – bietet eine einfache Kennwortüberprüfung für Azure AD Authentifizierungsdienste mit einem Software-Agent, der auf einem oder mehreren lokalen Servern läuft, um die Benutzer direkt mit Ihrem lokalen Active Directory zu validieren. 
 
 ### <a name="federated-authentication"></a>Verbundauthentifizierung
 

@@ -10,19 +10,21 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 description: In diesem Artikel wird beschrieben, wie Sie den Start Ihres Portals in SharePoint Online planen und welche Schritte Sie für einen erfolgreichen Start ausführen können.
-ms.openlocfilehash: 8c7f427d0f8f89b11b144d045a03fa3138b8f019
-ms.sourcegitcommit: 09b3a302c0c9a0370dd86d111c7d5e63cc39a9a0
+ms.openlocfilehash: fca8b4f116510589b83748435f64ccbb3790d7c2
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39959119"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843766"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planen des Rollout Plans für den Portal Start in SharePoint Online
 
-Ein Portal ist eine SharePoint-Website in Ihrem Intranet mit einer großen Anzahl von Website Zuschauern, die Inhalte auf der Website nutzen. In großen Organisationen kann es mehrere von diesen geben; beispielsweise ein Unternehmensportal und ein HR-Portal. In der Regel haben Portale relativ wenige Personen, die die Website und deren Inhalte erstellen und autorisieren. Die meisten Besucher des Portals lesen und nutzen nur den Inhalt.
+Bei einem Portal handelt es sich um eine SharePoint-Website in Ihrem Intranet mit einer großen Anzahl von Websitebenutzern, die Inhalte auf der Website nutzen. In großen Organisationen könnten mehrere dieser Portale vorhanden sein, beispielsweise ein Firmenportal und ein Personalportal. In der Regel erstellen und bearbeiten nur relativ wenige Personen die Portalwebsite und deren Inhalte. Die meisten Besucher des Portals können den Inhalt nur lesen und nutzen.
 
 In diesem Artikel wird beschrieben, wie Sie die Bereitstellung und den Rolloutplan für SharePoint Online planen. Es bietet auch Ansätze, die befolgt werden, da herkömmliche Auslastungstests für SharePoint Online nicht zulässig sind. SharePoint Online ist ein clouddienst, und die Ladefunktionen, die Integrität und die Gesamtlastverteilung im Dienst werden von Microsoft verwaltet.
 

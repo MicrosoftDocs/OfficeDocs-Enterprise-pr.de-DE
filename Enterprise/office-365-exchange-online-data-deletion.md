@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Wie weiche und harte Datenlöschungen in Exchange Online verarbeitet werden.
-ms.openlocfilehash: f25f2416778f19f8b2e464e31e6116a81eb872cc
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067488"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843636"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Exchange Online von Datenlöschung in Office 365
 In Exchange Online gibt es zwei Arten von Löschungen: weiche Löschungen und harte Löschungen. Dies gilt sowohl für Postfächer als auch für Elemente in einem Postfach.
@@ -31,7 +33,7 @@ Ein vorläufig gelöschtes Benutzerpostfach ist ein Postfach, das mit dem Micros
 
 Ein hart gelöschtes Benutzerpostfach ist ein Postfach, das auf eine der folgenden Weisen gelöscht wurde:
 - Das Benutzerpostfach wurde für mehr als 30 Tage vorläufig gelöscht, und der zugehörige Azure Active Directory-Benutzer wurde endgültig gelöscht. Alle Postfachinhalte wie e-Mails, Kontakte und Dateien werden endgültig gelöscht.
-- Das Benutzerkonto, das dem Benutzerpostfach zugeordnet ist, wurde aus dem Azure-Active Directory hart gelöscht. Das Benutzerpostfach ist jetzt in Exchange Online vorläufig gelöscht und wird 30 Tage lang in einem Soft-Deleted-Zustand verbleibt. Wenn in einem Zeitraum von 30 Tagen ein neuer Azure Active Directory-Benutzer vom ursprünglichen Empfängerkonto mit demselben **ExchangeGuid** oder **ArchiveGuid**synchronisiert wird und dieses neue Konto für Exchange Online lizenziert wird, führt dies zu einem harten Löschen von das ursprüngliche Benutzerpostfach. Alle Postfachinhalte wie e-Mails, Kontakte und Dateien werden endgültig gelöscht.
+- Das Benutzerkonto, das dem Benutzerpostfach zugeordnet ist, wurde aus dem Azure-Active Directory hart gelöscht. Das Benutzerpostfach ist jetzt in Exchange Online vorläufig gelöscht und wird 30 Tage lang in einem Soft-Deleted-Zustand verbleibt. Wenn in einem Zeitraum von 30 Tagen ein neuer Azure Active Directory-Benutzer vom ursprünglichen Empfängerkonto mit demselben **ExchangeGuid** oder **ArchiveGuid**synchronisiert wird und dieses neue Konto für Exchange Online lizenziert wird, führt dies zu einem harten Löschen des ursprünglichen Benutzerpostfachs. Alle Postfachinhalte wie e-Mails, Kontakte und Dateien werden endgültig gelöscht.
 - Ein vorläufig gelöschtes Postfach wird mithilfe von **Remove-Mailbox-PermanentlyDelete**gelöscht.
 
 In den obigen Lösch Szenarien wird davon ausgegangen, dass das Benutzerpostfach nicht in einem der Haltestatus, wie Beweissicherungsverfahren oder eDiscovery halten. Wenn das Postfach einen beliebigen Aufbewahrungs aufweist, kann das Postfach nicht gelöscht werden. Für alle Empfängertypen von e-Mail-Benutzern werden alle [Aufbewahrungs](https://support.office.com/article/manage-legal-investigations-in-office-365-2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e?ui=en-US&rs=en-US&ad=US) Einstellungen ignoriert und haben keine Auswirkung auf hart Löschungen oder weiche Löschvorgänge.

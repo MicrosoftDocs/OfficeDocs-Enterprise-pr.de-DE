@@ -15,13 +15,15 @@ search.appverid:
 - MBS150
 - BCS160
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
+f1.keywords:
+- NOCSH
 description: 'Dieser Artikel richtet sich an Administratoren. Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der Benutzer möchte, dass er zurückkehrt, kann ihn jedoch nicht wiederherstellen. Möglicherweise können Sie die bereinigten Elemente wiederherstellen, wenn Sie nicht dauerhaft aus dem Postfach des Benutzers entfernt wurden. '
-ms.openlocfilehash: 85086288d6bb153f584aa0a527100eb2d7b7de96
-ms.sourcegitcommit: 8027254ab4b9ed44a5b0c336f714049859f93f3d
+ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38308600"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41845126"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren
 
@@ -36,12 +38,12 @@ Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der 
 Im folgenden finden Sie die Schritte zum erneuten aufdecken gelöschter Elemente im Postfach eines Benutzers. Wie lange dauert das? Je nachdem, wie viele Elemente Sie wiederherstellen möchten, kann es zum ersten Mal 20 bis 30 Minuten dauern, bis alle Schritte ausgeführt wurden.
   
 > [!NOTE]
-> Sie müssen ein Exchange- **Administrator** oder **globaler Administrator** in Office 365 sein oder ein Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Sie müssen ein Exchange- **Administrator** oder **globaler Administrator** in Office 365 sein oder ein Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen für sich selbst
 <a name="step1"> </a>
 
-Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Exchange Online zuzuweisen, sodass Sie das in-Place-eDiscovery-Tool zum Durchsuchen eines Benutzerpostfachs verwenden können. Sie müssen dies nur einmal tun. Wenn Sie in Zukunft ein anderes Postfach durchsuchen müssen, können Sie diesen Schritt überspringen.
+Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Exchange Online zuzuweisen, sodass Sie das in-Place-eDiscovery-Tool zum Durchsuchen eines Benutzerpostfachs verwenden können. Dieser Vorgang ist nur einmal erforderlich. Wenn Sie in Zukunft ein anderes Postfach durchsuchen müssen, können Sie diesen Schritt überspringen.
   
 1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Firmen- oder Schulkonto an. 
     
@@ -110,7 +112,7 @@ Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundabl
     
     ![Erstellen einer Suche basierend auf Kriterien wie Schlüsselwörtern, Datumsbereich, Empfänger und Nachrichtentypen](media/ee47b833-9122-46a0-85e6-fcbe25be0dd5.png)
   
-|**Field**|**Verwenden Sie diese, um...**|
+|**Feld**|**Verwenden Sie diese, um...**|
 |:-----|:-----|
 |![Number one in a pink circle](media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)           <br/> |Geben Sie Stichwörter, Datumsbereich, Empfänger und Nachrichtentypen an.  <br/> |
 |![Number two in a pink circle.](media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)           <br/> |Suchen Sie nach Nachrichten mit Schlüsselwörtern oder Ausdrücken, und verwenden Sie logische Operatoren wie **und** oder **oder**.  <br/> |

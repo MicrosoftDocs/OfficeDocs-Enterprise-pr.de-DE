@@ -22,17 +22,19 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
+f1.keywords:
+- NOCSH
 description: SharePoint Server 2007 hat das Ende der Unterstützung erreicht und es ist an der Zeit, ein Upgrade durchführen. Verwenden Sie diesen Artikel, um Ihnen bei der Erstellung Ihres Plans behilflich zu sein.
-ms.openlocfilehash: 6315c06f034464cf12224582c9dcd0257bf43961
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 607dfeaedb1a63634e08e28f8aef2c6fcce6ce9c
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748032"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841152"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Zu verwendende SharePoint 2007-Migrationsoptionen
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Microsoft SharePoint 2007 und SharePoint Server 2007 haben das Ende der Unterstützung erreicht. Es ist Zeit für ein Upgrade! Dieser Artikel enthält Informationen zu ihren Migrationsoptionen.
   

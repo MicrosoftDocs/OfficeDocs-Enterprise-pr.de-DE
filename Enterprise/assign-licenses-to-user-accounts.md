@@ -6,14 +6,16 @@ manager: laurawi
 ms.date: 12/03/2019
 audience: Admin
 ms.topic: article
-f1_keywords:
+ms.service: o365-administration
+localization_priority: Normal
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
 - O365p_AddUsersWithDirSync
 - O365M_AddUsersWithDirSync
 - O365E_HRCSetupAADConnectAboutLM617031
 - O365E_AddUsersWithDirSync
-ms.service: o365-administration
-localization_priority: Normal
-ms.custom: Adm_O365
 ms.collection:
 - Ent_O365
 - M365-identity-device-management
@@ -24,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Benutzerkonten Office 365 Lizenzen entweder einzeln oder basierend auf der Gruppenmitgliedschaft zuweisen.
-ms.openlocfilehash: 169f5a3c0bf75bf807c40338542e0ba15b79a1bc
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 3ffd51b6b3ab4add900746f14f013a307ca352ad
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813383"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843786"
 ---
 # <a name="assign-office-365-licenses-to-user-accounts"></a>Zuweisen von Office 365 Lizenzen zu Benutzerkonten
 
@@ -50,7 +52,7 @@ Um einzelnen Benutzerkonten Office 365 Lizenzen zuzuweisen, können Sie Folgende
 
 Informationen zur automatischen Zuweisung von Lizenzen finden Sie unter [Group-based licensing in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
-## <a name="next-steps"></a>Weitere Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Mit dem vollständigen Benutzer kontensatz, dem Lizenzen zugewiesen wurden, können Sie nun folgende Aufgaben durchsetzen:
 

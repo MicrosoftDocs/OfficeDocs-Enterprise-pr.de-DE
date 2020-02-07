@@ -6,7 +6,9 @@ manager: laurawi
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
+- CSH
+ms.custom:
 - vsemail
 - MS_WSS_DirectoryManagement
 - MS_WSS_ConfigEmail
@@ -34,16 +36,16 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: Am 10. Oktober 2017 wurde die Unterstützung für SharePoint Server 2007 beendet. Lesen Sie diesen Artikel, um Informationen zu den Upgrade-Optionen, zur Problembehandlung, zu bewährten Methoden, Systemanforderungen, Upgrade-Schritten und zur Unterstützung von Microsoft-Partnern zu erhalten.
-ms.openlocfilehash: 1b7b2ccf1bbda5210e563a4cd702ebd90b9f8f5d
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6f0bd60d1f1201750ae1f0e4cc1a001ab4ed2ef6
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747314"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844006"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Ende der Unterstützung für SharePoint Server 2007 – Roadmap
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Am **10. Oktober 2017**Microsoft Office SharePoint Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht von SharePoint Server 2007 auf Office 365 oder eine neuere Version von SharePoint Server vor Ort begonnen haben, können Sie jetzt mit der Planung beginnen. In diesem Artikel werden Ressourcen zum Migrieren von Daten zu SharePoint Online oder zum Upgraden Ihrer SharePoint Server lokal erläutert. 
   

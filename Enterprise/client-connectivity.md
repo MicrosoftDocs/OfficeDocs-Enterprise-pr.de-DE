@@ -12,6 +12,8 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -19,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 4232abcf-4ae5-43aa-bfa1-9a078a99c78b
 description: 'Zusammenfassung: erläutert, wie Clientcomputer abhängig vom Standort des Clientcomputers und Office 365 Mandantendaten Center eine Verbindung mit Office 365 Mandanten herstellen.'
-ms.openlocfilehash: 0eb62c2f23004d2d81a89395bdd99151a8daeed9
-ms.sourcegitcommit: 89ecf793443963b4c87cf1033bf0284cbfb83d9a
+ms.openlocfilehash: 0a5a7351b3d756763f05a8136e7ce6bc16f8f881
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38077678"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843826"
 ---
 # <a name="client-connectivity"></a>Client-Konnektivität
 
@@ -127,7 +129,7 @@ Wenn der Clientcomputer eine VPN-Verbindung mit einer unternehmensniederlassung 
   
 Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365clientconnectivity](https://aka.ms/o365clientconnectivity)
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Verwalten von Office 365-Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

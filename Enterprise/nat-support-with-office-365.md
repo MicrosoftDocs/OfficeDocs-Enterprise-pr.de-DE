@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Zusammenfassung: enthält Informationen zur Annäherung der richtigen Anzahl von Clients, die Sie pro IP-Adresse in Ihrer Organisation verwenden können, indem Sie die Netzwerkadressübersetzung (Network Address Translation, NAT) verwenden.'
-ms.openlocfilehash: 5d252b059661fdd3bad1f86bf552f44b8a747d24
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: 6140cf664a08701e9491c241d5754d51196e3922
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747899"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844566"
 ---
 # <a name="nat-support-with-office-365"></a>NAT-Unterstützung mit Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Früher wurde vorgeschlagen, dass die maximale Anzahl von Exchange-Clients, die Sie pro IP-Adresse verwenden sollten, zum Herstellen einer Verbindung mit Office 365 etwa 2.000 Clients pro Netzwerkport war.
   
@@ -74,7 +76,7 @@ Verwenden Sie die obige Formel, um die maximalen Benutzer pro IP-Adresse zu bere
   
 Es gibt verschiedene Methoden für die Verteilung der Clientlast auf zusätzliche öffentliche IP-Adressen. Verfügbare Strategien hängen von den Funktionen der Unternehmens Gateway-Lösung ab. Die einfachste Lösung besteht darin, den Benutzeradressraum zu segmentieren und jedem Gateway statisch eine Reihe von IP-Adressen zuzuweisen. Eine andere Alternative, die viele Gateway-Geräte bieten, ist die Möglichkeit, einen Pool von IP-Adressen zu verwenden. Der Vorteil des Adresspools liegt darin, dass er viel dynamischer ist und bei steigender Benutzerbasis weniger wahrscheinlich Anpassungen erfordert.
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Verwalten von Office 365-Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
   

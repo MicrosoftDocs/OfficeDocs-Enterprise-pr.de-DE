@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
+f1.keywords:
+- NOCSH
 description: 'Neue Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten gemäß der Definition in den Microsoft Online Services-Nutzungsbedingungen: Exchange Online-Postfachinhalte (E-Mail-Text, Kalendereinträge und der Inhalt von E-Mail-Anlagen), SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien sowie nach OneDrive for Business hochgeladene Dateien.'
-ms.openlocfilehash: dd8cb060980db16672225fa7543958441a5bebc9
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
-ms.translationtype: HT
+ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923867"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844766"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben von Kundenkerndaten in neue Office 365-Rechenzentrumsregionen (Geos)
 

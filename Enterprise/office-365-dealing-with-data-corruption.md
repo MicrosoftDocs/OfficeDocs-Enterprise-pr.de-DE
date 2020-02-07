@@ -12,13 +12,15 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+f1.keywords:
+- NOCSH
 description: Eine Erläuterung der Datenbeschädigung in Office 365 und der Bemühungen von Microsoft um Verhinderung und Wiederherstellung.
-ms.openlocfilehash: 9a1c0b2e1ebd0c9f1faa698fa12756d32783914c
-ms.sourcegitcommit: 55a046bdf49bf7c62ab74da73be1fd1cf6f0ad86
+ms.openlocfilehash: 1477ab4dca0f9126eb04b76b9f8f65ff0b5eefc8
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37067469"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844486"
 ---
 # <a name="dealing-with-data-corruption-in-office-365"></a>Umgang mit Datenbeschädigung in Office 365
 

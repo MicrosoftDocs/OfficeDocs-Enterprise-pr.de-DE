@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -21,12 +23,12 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 moderne Authentifizierung für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: aebc9957ed3eac5997bf8646dfc7284f24a2ed1b
-ms.sourcegitcommit: ef5447665d6ebbc79399b560c9725d74e1479f7d
+ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "41122574"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844856"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
 
@@ -48,7 +50,7 @@ Für die Office 365 Dienste lautet der Standardzustand der modernen Authentifizi
 - Standardmäßig **aktiviert für Skype for Business Online** . Weitere Informationen finden Sie unter [Aktivieren von Skype for Business Online für die moderne Authentifizierung ](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx), um Sie zu deaktivieren.
 
 > [!NOTE]
-> Für Mandanten, die **vor dem** 1. August 2017 erstellt wurden, **ist die moderne** Authentifizierung für Exchange Online und Skype for Business Online standardmäßig deaktiviert.
+> Für Mandanten, die **vor** dem 1. August 2017 erstellt wurden, ist die moderne Authentifizierung für Exchange Online und Skype for Business Online standardmäßig **deaktiviert**.
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Anmeldeverhalten von Office-Client-apps
 
@@ -106,7 +108,7 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
 |Office 2013  <br/> |Nein  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
 |Office 2013  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
    
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 

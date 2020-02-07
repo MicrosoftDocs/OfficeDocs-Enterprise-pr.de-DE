@@ -9,13 +9,15 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 129f4e45-647e-4cf1-92a6-4d86d8396e73
+f1.keywords:
+- NOCSH
 description: Dieser Artikel ist eine leicht zugängliche Textversion des Diagramms namensMicrosoft Exchange 2013-Plattformoptionen, das unter Technische Diagramme verfügbar ist.
-ms.openlocfilehash: ce1fe525b6a339c64d757b82a6f1c9ea4b82d23e
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 56f77f7689270b60296848d41992652bf2068695
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38027569"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844626"
 ---
 # <a name="accessible-diagram---microsoft-exchange-2013-platform-options"></a>Verfügbares Diagramm - Microsoft Exchange 2013-Plattformoptionen
 

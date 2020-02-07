@@ -6,11 +6,13 @@ manager: scotv
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: hub-page
-f1_keywords:
-- ms.lync.lac.ProviderManagedFeature
 ms.service: o365-administration
 localization_priority: Normal
-ms.custom: Adm_O365
+f1.keywords:
+- CSH
+ms.custom:
+- Adm_O365
+- ms.lync.lac.ProviderManagedFeature
 search.appverid:
 - MET150
 - MOE150
@@ -18,19 +20,19 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Get admin Help for Skype for Business-Einrichten von Skype for Business, Ihrem Netzwerk, Besprechungen und Sofortnachrichten sowie externem Zugriff für Benutzer. Konfigurieren von Einstellungen, Problembehandlung und Anzeigen von Verwendungsberichten
-ms.openlocfilehash: daf425625d6162ec3d480d290056ae2e3a8ff16a
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+description: Holen Sie sich Administratorhilfe für Skype for Business-richten Sie Skype for Business, Ihr Netzwerk, Besprechungen und Sofortnachrichten sowie den externen Zugriff für Benutzer ein. Konfigurieren von Einstellungen, Problembehandlung und Anzeigen von Verwendungsberichten
+ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34070374"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841112"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype for Business Online in Office 365 - Hilfe für Administratoren
 
 ## <a name="were-here-to-help"></a>Wir helfen Ihnen gerne!
 
-Als Administrator für Office 365 Business haben Sie kostenlosen Zugriff auf die Ressourcen unserer erfahrenen Supportmitarbeiter. Wenn Sie die benötigten Informationen auf dieser Website nicht finden, wenden Sie sich an den ** [Support für Business-Produkte – Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Als Administrator für Office 365 Business haben Sie kostenlosen Zugriff auf die Ressourcen unserer erfahrenen Supportmitarbeiter. Wenn Sie die benötigten Informationen auf dieser Website nicht finden, wenden Sie sich an den ** [Support für Business-Produkte – Administratorhilfe](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) .**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Wenn Sie die benötigten Informationen auf dieser Website nicht finden können, kontaktieren Sie uns.
 
@@ -66,9 +68,9 @@ Weitere Informationen hierzu finden Sie unter Optimieren der Leistung von Skype 
     
 - [Benötigen Sie Hilfe bei der Anmeldung bei Skype for Business?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Video: an-und Abmelden bei Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Video: anmelden und Abmelden bei Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [Festlegen von Audiogeräte-Optionen in Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [Festlegen von Optionen für Audiogeräte in Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Einrichten eines Audiogeräts für Skype for Business](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
@@ -86,6 +88,6 @@ Weitere Informationen hierzu finden Sie unter Optimieren der Leistung von Skype 
     
 - [Einrichten einer Skype for Business-Besprechung in Outlook](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Weitere Artikel für Benutzer finden Sie unter [Skype for Business-Hilfe](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
+ **Weitere Artikel für Benutzer finden Sie unter [Skype for Business Hilfe](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
   
 

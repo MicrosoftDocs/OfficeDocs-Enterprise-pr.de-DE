@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: Müssen Sie die erforderlichen Schritte zum Identifizieren und Beheben von Verzögerungen, hängen und langsamer Leistung zwischen SharePoint Online, OneDrive für Unternehmen, Exchange Online oder Skype for Business Online und Ihrem Clientcomputer kennen? Vor dem Aufruf des Supports können Sie in diesem Artikel bei der Problembehandlung Office 365 Leistungsproblemen behilflich sein und sogar einige der am häufigsten auftretenden Probleme beheben.
-ms.openlocfilehash: 1740e73c298578b4a13e254081ae62b795aed0ab
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39814623"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841812"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Behandlung von Leistungsproblemen – Plan für Office 365
 

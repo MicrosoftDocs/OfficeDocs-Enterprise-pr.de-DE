@@ -11,15 +11,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
 description: 'Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.'
-ms.openlocfilehash: cd350cca38b3cf11764e34bf5f0744f8a3c50190
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: d9d17ca3357e3297a0cfba2a764cb0468fd1a0ed
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38031520"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841182"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 
@@ -110,7 +112,7 @@ Nachdem eine Wiederherstellung erfolgt ist, bietet Ihnen diese Lösung die in de
   
 **Tabelle: Wiederherstellungsziele der Lösung**
 
-|**Aspekt**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |Websites und Inhalte  <br/> |Websites und Inhalte sind in der Wiederherstellungsumgebung verfügbar.  <br/> |
 |Eine neue Instanz der Suche  <br/> |Bei dieser betriebsbereiten Standby-Lösung wird die Suche aus Suchdatenbanken wiederhergestellt. Die Konfiguration von Suchkomponenten in der Wiederherstellungsfarm orientiert sich so weit wie möglich an der Produktionsfarm. Nachdem Websites und Inhalte wiederhergestellt wurden, wird eine vollständige Durchforstung gestartet, um den Suchindex neu zu erstellen. Sie müssen nicht warten, bis die Durchforstung abgeschlossen ist, um die Websites und Inhalte zur Verfügung zu stellen.  <br/> |
@@ -120,7 +122,7 @@ Sie können mit Microsoft Consulting Services (MCS) oder einem Partner zusammena
   
 **Tabelle: Andere Elemente, die von MCS oder einem Partner betreut werden können**
 
-|**Aspekt**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |Synchronisieren benutzerdefinierter Farmlösungen  <br/> |Im Idealfall ist die Konfiguration der Wiederherstellungsfarm identisch mit der Produktionsfarm. Sie können mit einem Berater oder Partner zusammenarbeiten, um zu prüfen, ob benutzerdefinierte Farmlösungen repliziert werden und ob ein Prozess vorhanden ist, mit dessen Hilfe beide Umgebungen synchron bleiben.  <br/> |
 |Verbindungen mit lokalen Datenquellen  <br/> |Es ist möglicherweise unpraktisch, Verbindungen mit Back-End-Datensystemen zu replizieren, z. B. mit Sicherungsdomänencontrollern und Inhaltsquellen für die Suche.  <br/> |

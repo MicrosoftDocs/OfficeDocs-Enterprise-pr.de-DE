@@ -10,19 +10,21 @@ ms.collection: Ent_O365
 ms.service: o365-solutions
 localization_priority: Normal
 ms.assetid: 89f564eb-95c3-4077-bb92-75bf71b51270
+f1.keywords:
+- NOCSH
 description: Dieser Artikel ist eine barrierefreie Textversion des Diagramms „Netzwerkintegration von Microsoft Office-Serverprodukten“.
-ms.openlocfilehash: d63b3b581a03840676393657d6ed641e11046ef9
-ms.sourcegitcommit: 08e1e1c09f64926394043291a77856620d6f72b5
+ms.openlocfilehash: def94a4523ad78676d6a9532a60dcba78032f23b
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34068561"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41843866"
 ---
 # <a name="accessible-diagram---network-integration-of-microsoft-office-server-products"></a>Zugängliches Diagramm – Netzwerkintegration von Microsoft Office-Serverprodukten
 
-**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms namens "Netzwerk Integration von Microsoft Office-Server Produkten".
+**Zusammenfassung:** Dieser Artikel ist eine barrierefreie Textversion des Diagramms namens "Network Integration of Microsoft Office Server Products".
   
-Dieses Poster bietet eine allgemeine Abbildung einer Netzwerkumgebung, die lync Server 2013, SharePoint 2013 und Exchange Server 2013 umfasst. Es zeigt außerdem die folgenden Netzwerkelemente, die für diese Produkte üblich sind: Remote- und interner Zugriff, Authentifizierung, Clientdatenverkehr und Routen von Datenverkehr über gemeinsam genutzte Geräte. 
+Dieses Poster bietet eine allgemeine Darstellung einer Netzwerkumgebung, die lync Server 2013, SharePoint 2013 und Exchange Server 2013 umfasst. Es zeigt außerdem die folgenden Netzwerkelemente, die für diese Produkte üblich sind: Remote- und interner Zugriff, Authentifizierung, Clientdatenverkehr und Routen von Datenverkehr über gemeinsam genutzte Geräte. 
   
 ## <a name="high-level-concepts-for-lync-exchange-sharepoint-server-and-office-web-apps"></a>Allgemeine Konzepte für Lync, Exchange, SharePoint Server und Office Web Apps
 
@@ -54,19 +56,19 @@ Bei dieser Topologie befindet sich der Gatewayrouter am Rand des Netzwerks und l
   
 #### <a name="load-balancer-and-reverse-proxy-devices"></a>Lastenausgleich und Reverseproxygeräte
 
-Sie können Hardware- oder Softwarelösungen für den Lastenausgleich verwenden, um Datenverkehr für Segmente umzuleiten, z. B. SharePoint-Front-End-Webserver und Exchange-Clientzugriffsserver (Client Access Server, CAS). In einigen Fällen ist es optimal, einen hardwarebasierten Lastenausgleich auf Layer 7 für Anforderungen an die Persistenz zu verwenden, da diese mithilfe von Informationen in der Anforderung wie Cookies oder Kopfzeilen besser ausgeführt werden können. Allerdings sind Faktoren wie Kosten und erhöhte Nutzung und Arbeitsauslastung, die durch eine derartige Lösung entstehen, für Ihre spezifischen Anforderungen möglicherweise nicht wünschenswert. Beachten Sie bei einem übergreifenden Lastenausgleich für SharePoint, Exchange und Lync die folgenden Punkte: 
+Sie können Hardware- oder Softwarelösungen für den Lastenausgleich verwenden, um Datenverkehr für Segmente umzuleiten, z. B. SharePoint-Front-End-Webserver und Exchange-Clientzugriffsserver (Client Access Server, CAS). In einigen Fällen ist es optimal, einen Layer 7-hardwarebasierten Lastenausgleich für Persistenz-Anforderungen zu verwenden, da er mithilfe von Informationen in der Anforderung wie Cookies oder Kopfzeilen besser durchführen kann. Allerdings sind Faktoren wie Kosten und erhöhte Nutzung und Arbeitsauslastung, die durch eine derartige Lösung entstehen, für Ihre spezifischen Anforderungen möglicherweise nicht wünschenswert. Beachten Sie bei einem übergreifenden Lastenausgleich für SharePoint, Exchange und Lync die folgenden Punkte: 
   
-- SharePoint-für SharePoint 2013 müssen Sie die Affinität für die Front-End-Webserver nicht aktivieren. Normalerweise wird Affinität verwendet, um flüchtige Sitzungen zu erstellen und mehrere Authentifizierungsanforderungen von Clients an jeden Front-End-Webserver zu vermeiden. Der neue verteilte Cache Dienst in SharePoint 2013 speichert und verteilt Anmeldetoken über die Webserver der SharePoint-Farm. 
+- SharePoint – für SharePoint 2013 müssen Sie die Affinität für die Front-End-Webserver nicht aktivieren. Normalerweise wird Affinität verwendet, um flüchtige Sitzungen zu erstellen und mehrere Authentifizierungsanforderungen von Clients an jeden Front-End-Webserver zu vermeiden. Der neue verteilte Cache Dienst in SharePoint 2013 speichert und verteilt Anmeldetoken auf den Webservern der SharePoint-Farm. 
     
-- Exchange-in Exchange 2013 ist die CAS-Rolle für den Lastenausgleich von Layer 4 ausgelegt und verteilt Anforderungen auf der Transportschicht. Dies kann die durch den Lastenausgleich entstehende Nutzung und Arbeitsauslastung erheblich reduzieren. 
+- Exchange-in Exchange 2013 ist die CAS-Rolle für die Verwendung von Layer 4-Lastenausgleich ausgelegt und verteilt Anforderungen auf der Transportschicht. Dies kann die durch den Lastenausgleich entstehende Nutzung und Arbeitsauslastung erheblich reduzieren. 
     
-- Der lync-DNS-Lastenausgleich (Domain Name System) wird für SIP-Datenverkehr (Session Initiation Protocol) für lync-Pools empfohlen. Ein Hardwaregerät zum Lastenausgleich (HLB) ist für den Lync-Webdatenverkehr (HTTPS) erforderlich. 
+- Der lync-Domain Name System (DNS)-Lastenausgleich wird für SIP-Datenverkehr (Session Initiation Protocol) für lync-Pools empfohlen. Ein Hardwaregerät zum Lastenausgleich (HLB) ist für den Lync-Webdatenverkehr (HTTPS) erforderlich. 
     
 ### <a name="remote-access-options"></a>Remotezugriffsoptionen
 
 Es gibt mehrere Möglichkeiten, um Intranetressourcen für Partner im Internet zu veröffentlichen oder sicheren Remotezugriff für Remote- oder Roamingmitarbeiter bereitzustellen. Beispiele hierfür sind Reverseproxys, DirectAccess und Drittanbieter-VPN-Gateways. Die weiter unten in diesem Abschnitt erläuterten Remotezugriffslösungen sind Möglichkeiten für SharePoint, Lync und Exchange oder eine beliebige Kombination dieser Server in einer lokalen Bereitstellung. Einige Remoteoptionen können jedoch möglicherweise mit einer bestimmten Lösung nicht verwendet werden.   
   
-Reverseproxy – ein Reverseproxy unterstützt die Datenverkehrs Verschlüsselung, wie SSL (Secure Sockets Layer), und damit können Sie Intranet-Anwendungen und Webressourcen für authentifizierte Benutzer und Partner im Internet veröffentlichen. Ein Beispiel ist Microsoft Forefront Unified Access Gateway (UAG). Viele Hardwaregeräte zum Lastenausgleich unterstützen auch Reverseproxyfunktionalität. Es gibt trotzdem Szenarien, in denen eine eigenständige, an Ihre Anforderungen angepasste Lösung empfehlenswert ist, z. B. Datenverkehrsisolation, Sicherheitskompartimentierung und Leistungsoptimierung. 
+Reverse Proxy – ein Reverseproxy unterstützt die Datenverkehrs Verschlüsselung, beispielsweise Secure Sockets Layer (SSL), und damit können Sie Intranet-Anwendungen und Webressourcen für authentifizierte Benutzer und Partner im Internet veröffentlichen. Ein Beispiel ist Microsoft Forefront Unified Access Gateway (UAG). Viele Hardwaregeräte zum Lastenausgleich unterstützen auch Reverseproxyfunktionalität. Es gibt trotzdem Szenarien, in denen eine eigenständige, an Ihre Anforderungen angepasste Lösung empfehlenswert ist, z. B. Datenverkehrsisolation, Sicherheitskompartimentierung und Leistungsoptimierung. 
   
 Reverseproxy – Vorteile und Überlegungen:  
   
@@ -76,7 +78,7 @@ Reverseproxy – Vorteile und Überlegungen: 
     
 - Für Exchange und SharePoint können Lösungen wie Forefront UAG SSL-Verbindungen beenden und die Auslastung des Intranetressourcenservers verringern, während gleichzeitig eine zentrale Verwaltung von Zertifikaten möglich ist.  
     
-- Für Lync durchläuft Webdatenverkehr (HTTPS) zur Kommunikation mit Clients den Reverseproxy (TCP 443). Der Reverseproxy dient als Proxy für die HTTPS-Verbindung zu Lync-Webdiensten, Exchange CAS und Office Web Apps. Lync Server 2013 unterstützt UAG nicht. 
+- Für Lync durchläuft Webdatenverkehr (HTTPS) zur Kommunikation mit Clients den Reverseproxy (TCP 443). Der Reverseproxy dient als Proxy für die HTTPS-Verbindung zu Lync-Webdiensten, Exchange CAS und Office Web Apps. UAG wird von lync Server 2013 nicht unterstützt. 
     
 DirectAccess – eine RAS-Technologie, die IPSec (Internet Protocol Security) zur Authentifizierung und zum Verschlüsseln des Datenverkehrs zwischen dem DirectAccess-Client und-Server verwendet. DirectAccess bietet Roaming- und Remotebenutzern gleichzeitigen Zugriff auf Ressourcen im Internet und Intranet, ohne dass eine Verbindung initiiert werden muss. 
   
@@ -86,9 +88,9 @@ DirectAccess – eine RAS-Technologie, die IPSec (Internet Protocol Security) zu
     
 - DirectAccess für Windows Server 2012 und Windows 8 erfordert keine Bereitstellung einer Public Key-Infrastruktur (PKI) für die Server- und Clientauthentifizierung.  
     
-- Es wird empfohlen, DirectAccess mit lync Server 2013 zu verwenden, da es Probleme mit der IPSec-Verschlüsselung und-Entschlüsselung gibt. 
+- Es wird empfohlen, DirectAccess mit lync Server 2013 aufgrund von Problemen mit der Audio-und Video Wartezeit im Zusammenhang mit der IPSec-Verschlüsselung und-Entschlüsselung zu verwenden. 
     
-    VPN-Gateway-typische VPN-Gateways bieten eine RAS-Verbindung, in der ein RAS-Clientcomputer logisch über eine getunnelte und vom Benutzer initiierte Verbindung ins Intranet projiziert wird. Sie können Windows Server 2012 Unified Remote Access oder verschiedene Lösungen von Drittanbietern verwenden, um Roaming- oder Remotemitarbeitern sicheren Zugriff auf das Intranet zu bieten. VPN wird für Lync nicht empfohlen. Für Lync-Remotedatenverkehr sollten Edgeserver und getrenntes Tunneln verwendet werden. 
+    VPN-Gateway-typische VPN-Gateways stellen eine RAS-Verbindung bereit, bei der ein RAS-Clientcomputer über eine getunnelte und vom Benutzer initiierte Verbindung logisch auf das Intranet projiziert wird. Sie können Windows Server 2012 Unified Remote Access oder verschiedene Lösungen von Drittanbietern verwenden, um Roaming- oder Remotemitarbeitern sicheren Zugriff auf das Intranet zu bieten. VPN wird für Lync nicht empfohlen. Für Lync-Remotedatenverkehr sollten Edgeserver und getrenntes Tunneln verwendet werden. 
     
 ### <a name="domain-name-system-dns-considerations"></a>Überlegungen zu DNS (Domain Name System)
 
@@ -152,7 +154,7 @@ Sie können Hardware- oder Softwarelösungen für den Lastenausgleich verwenden,
   
 #### <a name="servers"></a>Server
 
-Es gibt vier Server: lync, SharePoint, Exchange und Office Web Apps Server. Jeder Server kann drei Ebenen haben: eine Front-End-Clientzugriffsebene, eine Anwendungsebene und eine Datenbank-/Speicherebene.
+Es gibt vier Server: lync-, SharePoint-, Exchange-und Office-webapps-Server. Jeder Server kann drei Ebenen haben: eine Front-End-Clientzugriffsebene, eine Anwendungsebene und eine Datenbank-/Speicherebene.
   
 #### <a name="front-end-client-access-tier"></a>Front-End-Clientzugriffsebene
 
@@ -184,7 +186,7 @@ Diese Ebene verfügt über Komponenten auf dem Lync-, SharePoint- und Exchange-S
     
 - Exchange-Postfachserver. Das Diagramm zeigt zwei Exchange-Postfachserver.  
     
-Weitere Informationen zu den Komponenten, die auf den einzelnen SharePoint-Serverrollen installiert sind, finden Sie unter [streamlined Topologies for SharePoint 2013](https://aka.ms/Ma5cgk). 
+Weitere Informationen zu den auf den einzelnen SharePoint-Serverrollen installierten Komponenten finden Sie unter [optimierte Topologien für SharePoint 2013](https://aka.ms/Ma5cgk). 
   
 #### <a name="description-of-how-traffic-moves-through-the-components-to-the-different-server-tiers"></a>Beschreibung des Datenverkehrsflusses durch die Komponenten zu den verschiedenen Serverebenen
 
@@ -212,7 +214,7 @@ Der Authentifizierungs- und Routingprozess für die verschiedenen externen Benut
     
 - Der SMTP-Clientdatenverkehr durchläuft den Gatewayrouter und die Exchange-VIP (Lastenausgleich/Reverseproxyserver) zum Exchange-Server.  
     
-#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Einzelne Partner (SharePoint) und Anonym (lync)https://partnerweb.contoso.com (undhttps://meet.contoso.com)
+#### <a name="individual-partners-sharepoint-and-anonymous-lync-httpspartnerwebcontosocom-and-httpsmeetcontosocom"></a>Einzelne Partner (SharePoint) und Anonymous (lync)https://partnerweb.contoso.com (undhttps://meet.contoso.com)
 
 - Lync: Anonyme Benutzer können nur solchen Lync-Besprechungen beitreten, die von Mitarbeitern organisiert wurden. Der Lync-Verbunddatenverkehr durchläuft den Gatewayrouter zum Lync-Edgeserver, zur Lync-VIP (Lastenausgleich/Reverseproxyserver) und dann zum Lync-Server.   
     
@@ -286,7 +288,7 @@ Diese Komponenten leiten E-Mail-Datenverkehr mithilfe von SMTP durch das Netzwer
 
 Das Legendenfeld enthält eine grafische Darstellung der verschiedenen im Diagramm gezeigten Datenverkehrstypen in Form verschiedenfarbiger Linien, wie nachfolgend beschrieben:  
   
-- Grüne Leitung: lync-SIP-Datenverkehr 
+- Grüne Reihe: lync-SIP-Datenverkehr 
     
 - Blaue Linie: Lync-Webdatenverkehr  
     

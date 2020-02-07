@@ -9,16 +9,18 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Office für Mac Anwendungen bieten eine native App-Erfahrung auf der macOS-Plattform. Jede APP ist für die Verwendung in einer Vielzahl von Szenarien konzipiert, einschließlich der Status, wenn kein Netzwerkzugriff verfügbar ist. Wenn ein Computer mit einem Netzwerk verbunden ist, stellen die Anwendungen automatisch eine Verbindung mit einer Reihe von webbasierten Diensten her, um eine erweiterte Funktionalität bereitzustellen. In diesem Whitepaper werden die Endpunkte und URLs beschrieben, die von den Anwendungen erreicht werden sollen, und die bereitgestellten Dienste. Diese Informationen sind hilfreich bei der Behandlung von Problemen mit der Netzwerkkonfiguration und beim Festlegen einer Richtlinie für Netzwerkproxy Server. Die Details in diesem Artikel dienen als Kompliment an den Artikel Office 365 URL und Adressbereiche.
-ms.openlocfilehash: 44acbc83b2bb32e60a470dc5d3ba27f13cbd033c
-ms.sourcegitcommit: 1c97471f47e1869f6db684f280f9085b7c2ff59f
+ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35781955"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41844546"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Netzwerkanforderungen in Office für Mac
 
@@ -243,7 +245,7 @@ Die Standardkonfiguration von Office für Mac bietet eine optimale Benutzererfah
   
  ### <a name="disabling-cloud-sign-in-and-office-add-ins"></a>Deaktivieren der Cloud-Anmeldung und von Office-Add-ins
   
-Kunden mit Volumenlizenzen haben möglicherweise strenge Richtlinien zum Speichern von Dokumenten im Cloud-basierten Speicher. Die folgende anwendungsspezifische Einstellung kann festgelegt werden, um die MSA/OrgId-Anmeldung und den Zugriff auf Office-Add-Ins zu deaktivieren.
+Kunden mit Volumenlizenzen haben möglicherweise strenge Richtlinien zum Speichern von Dokumenten im Cloud-basierten Speicher. Die folgende Einstellung pro Anwendung kann so eingestellt werden, dass die MSA/OrgId-Anmeldung deaktiviert wird und der Zugriff auf Office-Add-Ins möglich ist.
   
 - ```defaults write com.microsoft.Word UseOnlineContent -integer 0```
 
@@ -320,7 +322,7 @@ Wenn Ihre Organisation Anforderungen an URLs über eine Firewall oder einen Prox
 Wenn Ihr Proxyserverauthentifizierung erfordert, wird eine 407-Antwort an den Client zurückgegeben. Um die beste Erfahrung zu erzielen, stellen Sie sicher, dass Sie Office für Mac Builds 15,27 oder höher verwenden, da Sie bestimmte Korrekturen für die Arbeit mit NTLM-und Kerberos-Servern beinhalten.
   
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [URLs und IP-Adressbereiche von Office 365](urls-and-ip-address-ranges.md)
 
