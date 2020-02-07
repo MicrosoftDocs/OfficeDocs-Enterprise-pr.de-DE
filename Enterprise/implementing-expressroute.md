@@ -9,6 +9,8 @@ ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -16,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zugreifen können, um eine anschließende Weiterverteilung dieser IP-Präfixe in Ihrem Netzwerk. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
-ms.openlocfilehash: 0b200c3a7a54d28aee20b03c850c908bfd1c868d
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813483"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840182"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementieren von ExpressRoute für Office 365
 
@@ -190,7 +192,7 @@ Oftmals gibt es mehrere Meet-Me-Standorte, die in einer Region mit relativer Nä
 |Ort  <br/> |Anzahl der Personen  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Internet Austritt  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Express Route  <br/> |
 |München  <br/> |10.000  <br/> |~ 15ms  <br/> |~ 10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~ 20ms  <br/> |~ 10ms (über New York)  <br/> |
-|Dallas  <br/> |5 000  <br/> |~ 15ms  <br/> |~ 40ms (über New York)  <br/> |
+|Dallas  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (über New York)  <br/> |
 
 Nachdem die globale Netzwerkarchitektur mit der Office 365 Region, Express Route-Standort für den Netzwerkdienstanbieter und die Anzahl der Personen nach Standort entwickelt wurde, kann Sie verwendet werden, um zu ermitteln, ob Optimierungen vorgenommen werden können. Möglicherweise werden auch globale Haarnadel-Netzwerkverbindungen angezeigt, bei denen der Datenverkehr an einen entfernten Standort weitergeleitet wird, um den Standort "Meet-Me" zu erhalten. Wenn eine Haarnadel im globalen Netzwerk erkannt wird, sollte Sie korrigiert werden, bevor Sie fortfahren kann. Suchen Sie entweder einen anderen Meet-Me-Standort, oder verwenden Sie selektive Internet-Ausbruch Punkte, um die Haarnadel zu vermeiden.
   

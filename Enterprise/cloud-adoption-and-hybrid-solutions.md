@@ -11,14 +11,16 @@ ms.topic: hub-page
 localization_priority: Normal
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 ms.collection: Ent_O365
 ms.date: 2/14/2018
-ms.openlocfilehash: 64f38ba0f0bbc4eba03e2b59f041bf19de620027
-ms.sourcegitcommit: d4c1ed4e4970683851d63ca980dcc5d1dd73fa78
+ms.openlocfilehash: 0d95952b71dbbfc84dac7c93a6525b3c3ef5eac1
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39857983"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840782"
 ---
 <h1>Enterprise Cloudlösungen</h1>
 <p>Lösen von geschäftlichen Problemen mit der Microsoft Cloud. Erfahren Sie mehr über die neuesten Hybrid- und Cloudsicherheitslösungen, die Cloudakzeptanz und vieles mehr.</p>

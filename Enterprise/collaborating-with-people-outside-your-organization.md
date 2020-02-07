@@ -8,13 +8,15 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
+f1.keywords:
+- NOCSH
 description: Hier erfahren Sie, wie Sie Office 365 für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation konfigurieren.
-ms.openlocfilehash: d343594319f40a3fa3ab2bb619c91f9a3a03ca62
-ms.sourcegitcommit: b5992f367ccae97a8ea538738fe36d3d703cd6e7
+ms.openlocfilehash: 747f2d40ade4396979450c3e2d27f387c7bd8aca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39919319"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840772"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Zusammenarbeit mit Personen außerhalb Ihrer Organisation
 
@@ -28,6 +30,6 @@ Standardmäßig ist in Microsoft 365 die Freigabe für Personen außerhalb Ihrer
 
 [Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer](best-practices-anonymous-sharing.md)
 
-[Beschränken der versehentlichen Gefährdung durch Dateien bei der Freigabe für Personen außerhalb Ihrer Organisation](sharing-limit-accidental-exposure.md)
+[Begrenzen der versehentlichen Exposition von Dateien bei deren Freigabe für Personen außerhalb der Organisation](sharing-limit-accidental-exposure.md)
 
 [Erstellen einer sicheren Gast Freigabe Umgebung](create-a-secure-guest-sharing-environment.md))

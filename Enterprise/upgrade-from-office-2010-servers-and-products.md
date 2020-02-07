@@ -20,13 +20,15 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Der Support endet in Kürze für Office 2010 Server und Clientanwendungen, und es sind keine benutzerdefinierten Support Vereinbarungen verfügbar. Verwenden Sie diesen Artikel, um mit der Planung des Upgrades jetzt zu beginnen.
-ms.openlocfilehash: 9df09e0f31358c9dd1bfe4a4adde99d41070060f
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: a71ac61b69d72f6386c3b9063ec0c1946a5b57ca
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072407"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841032"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2010-Servern und-Clients
 

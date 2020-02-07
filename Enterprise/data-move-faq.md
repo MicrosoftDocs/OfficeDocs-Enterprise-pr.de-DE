@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
+f1.keywords:
+- NOCSH
 description: Hier erhalten Sie Antworten auf allgemeine Fragen zum Verschieben von Kerndaten in eine neue geografische Datencenter-Region.
-ms.openlocfilehash: cea25e2e3a400c2bcf76c2dbe13c4f7ba1a7b884
-ms.sourcegitcommit: 761dd21a6b7a2650ef26fd8d6b303c04fa2546f2
-ms.translationtype: HT
+ms.openlocfilehash: 3dcdb17bff899caa8d72799c9b3c4bb7d74c9e96
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "40923847"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840602"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 

@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 0140f704-6614-49bb-aa6c-89b75dcd7f1f
 description: Anhand dieser Informationen erfahren Sie, wie Office 365 mithilfe von Inhalts Zustellungs Netzwerken (CDNs) die Leistung verbessern.
-ms.openlocfilehash: be93be8af81714c6e166246a4e68f74b9b803f46
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: a9840cd325d30febdbef62e7cddf22640bffac42
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38745838"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840632"
 ---
 # <a name="content-delivery-networks-cdns"></a>Inhalts Übermittlungs Netzwerke (CDNs)
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 CDNs helfen Office 365 schnell und zuverlässig für Endbenutzer zu halten. Cloud-Dienste wie Office 365 verwenden CDNs zum Zwischenspeichern von statischen Objekten näher an den Browsern, die Sie anfordern, um die Downloads zu beschleunigen und die erkannte Endbenutzer Wartezeit zu verringern. Die Informationen in diesem Thema helfen Ihnen, sich über Inhalts Übermittlungs Netzwerke (CDNs) und deren Verwendung durch Office 365 zu informieren.
 
@@ -122,7 +124,7 @@ Sie können auch Office 365 Grundlegendes zur [Netzwerkkonnektivität](https://a
 
 Die CDNs, die von Office 365 verwendet werden, können immer geändert werden, und in vielen Fällen sind mehrere CDN-Partner in dem Fall konfiguriert, dass eine nicht verfügbar ist. Der primäre CDNs, der von Office 365 verwendet wird, sind:
 
-|CDN  |Company  |Verwendung  |Link  |
+|CDN  |Unternehmen  |Verwendung  |Link  |
 |---------|---------|---------|---------|
 |Office 365 CDN     |Akamai         |Generische Objekte im öffentlichen Ursprung, SharePoint-Benutzer Inhalte in privater Herkunft         |[Verwenden des Office 365 Content Delivery Network mit SharePoint Online](https://docs.microsoft.com/office365/enterprise/use-office-365-cdn-with-spo)         |
 |Azure CDN     |Microsoft         |Benutzerdefinierter Code, SharePoint-Framework-Lösungen         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
@@ -187,7 +189,7 @@ Die Verwendung von CDNs ist nur in einem SharePoint Online Kontext sinnvoll und 
   
 Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Prinzipien von Office 365-Netzwerkverbindungen](https://aka.ms/o365networkingprinciples)
 

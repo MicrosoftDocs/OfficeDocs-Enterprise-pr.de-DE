@@ -11,6 +11,8 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - M365-subscription-management
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid:
 - MET150
@@ -18,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
 description: Erhalten Sie Zugriff auf die Ressourcen für die Planung Ihrer Office 365 Enterprise-Bereitstellung.
-ms.openlocfilehash: 66b1944b9e98ef60b753c5122655f99870a86ffe
-ms.sourcegitcommit: 35c04a3d76cbe851110553e5930557248e8d4d89
+ms.openlocfilehash: 31c0eb1e6867856abe59f57cb78ec828431d03fd
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38028809"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840322"
 ---
 # <a name="plan-for-office-365-enterprise"></a>Planen von Office 365 Enterprise
 

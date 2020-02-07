@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
+f1.keywords:
+- CSH
 ms.custom: Adm_O365
 search.appverid: SPO160
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern und außerdem darauf zu warten, dass unwesentliches JavaScript geladen wird, bevor die Seite geladen wird.
-ms.openlocfilehash: bf68dd29d1c92d37e8dfb5b99f043af160f96d1e
-ms.sourcegitcommit: a9804062071939b7b7e60da5b69f484ce1d34ff8
+ms.openlocfilehash: 86efb767e80927f7d3f5d8055676e6d99da4d667
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39813473"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840562"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
@@ -115,7 +117,7 @@ Das verzögerte Laden von Bildern mithilfe von JavaScript kann ein effektives Ve
 
 Verpassen Sie nicht den Artikel und das Codebeispiel auf der auf GitHub bereitgestellten [JavaScript-Injektion](https://go.microsoft.com/fwlink/p/?LinkId=524759) .
   
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Unterstützte Browser in Office 2013 und Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   

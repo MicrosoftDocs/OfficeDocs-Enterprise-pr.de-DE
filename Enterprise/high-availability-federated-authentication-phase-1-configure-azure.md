@@ -9,15 +9,17 @@ ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: Ent_O365
+f1.keywords:
+- CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: 262a7dcdb2dc48f7890b7ef188b1d8ce506f40dd
-ms.sourcegitcommit: 3539ec707f984de6f3b874744ff8b6832fbd665e
+ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2019
-ms.locfileid: "40072137"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840342"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -37,13 +39,13 @@ Azure muss mit diesen grundlegenden Komponenten ausgestattet werden:
 
 Füllen Sie die folgenden Tabellen aus, bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen. Um Sie bei den Verfahren für die Konfiguration von Azure zu unterstützen, Drucken Sie diesen Abschnitt aus, notieren Sie die erforderlichen Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie ihn aus. Geben Sie in Tabelle V die Einstellungen für das VNet ein.
   
-|**Element**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Item**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet-Adressraum  <br/> |Der Adressraum für das virtuelle Netzwerk (Fragen Sie Ihre IT-Abteilung nach diesem Adressraum.)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird (Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert. Alternativ finden Sie weitere Informationen unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet-Adressraum  <br/> |Der Adressraum für das virtuelle Netzwerk (Fragen Sie Ihre IT-Abteilung nach diesem Adressraum.)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird (Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert. Alternativ finden Sie weitere Informationen unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle V: Konfiguration eines standortübergreifenden virtuellen Netzwerks**
   
@@ -61,36 +63,36 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
   
 |**Element**|**Subnetzname**|**Subnetzadressraum**|**Zweck**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Das Subnetz, das von den virtuellen Computern (VMS) Active Directory-Domänendienste (AD DS) Domänencontroller und Verzeichnissynchronisierungsserver verwendet wird.  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern von AD FS verwendete Subnetz.  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern des Webanwendungsproxys verwendete Subnetz.  <br/> |
-|4.  <br/> |GatewaySubnet  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern des Azure-Gateways verwendete Subnetz.  <br/> |
+|1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Das Subnetz, das von den virtuellen Computern (VMS) Active Directory-Domänendienste (AD DS) Domänencontroller und Verzeichnissynchronisierungsserver verwendet wird.  <br/> |
+|2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern von AD FS verwendete Subnetz.  <br/> |
+|3.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern des Webanwendungsproxys verwendete Subnetz.  <br/> |
+|4.  <br/> |GatewaySubnet  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Das von den virtuellen Computern des Azure-Gateways verwendete Subnetz.  <br/> |
    
  **Tabelle S: Subnetze im virtuellen Netzwerk**
   
 Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Element**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Item**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Statische IP-Adresse des Verzeichnissynchronisierungsservers  <br/> |Die sechste mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |Statische IP-Adresse des internen Lastenausgleichs für die AD FS-Server  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Statische IP-Adresse des ersten AD FS-Servers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|6.  <br/> |Statische IP-Adresse des zweiten AD FS-Servers  <br/> |Die sechste mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Statische IP-Adresse des Verzeichnissynchronisierungsservers  <br/> |Die sechste mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |Statische IP-Adresse des internen Lastenausgleichs für die AD FS-Server  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Statische IP-Adresse des ersten AD FS-Servers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|6.  <br/> |Statische IP-Adresse des zweiten AD FS-Servers  <br/> |Die sechste mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 2 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |7.  <br/> |Statische IP-Adresse des ersten Webanwendungsproxy-Servers
-  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 3 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 3 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |8.  <br/> |Statische IP-Adresse des zweiten Webanwendungsproxy-Servers
-  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 3 definierten Subnetzes  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 3 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle I: Statische IP-Adressen im virtuellen Netzwerk**
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Item**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle D: Lokale DNS-Server**
   
@@ -100,9 +102,9 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
   
 |**Element**|**Adressraum des lokalen Netzwerks**|
 |:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle L: Adresspräfixe für das lokale Netzwerk**
   
@@ -149,10 +151,10 @@ Tragen Sie die eindeutigen Ressourcengruppennamen in die folgende Tabelle ein.
   
 |**Element**|**Ressourcengruppenname**|**Zweck**|
 |:-----|:-----|:-----|
-|1.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Domänencontroller  <br/> |
-|2.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |AD FS-Server  <br/> |
-|3.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Webanwendungsproxy-Server  <br/> |
-|4.  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |Infrastrukturelemente  <br/> |
+|1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Domänencontroller  <br/> |
+|2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |AD FS-Server  <br/> |
+|3.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Webanwendungsproxy-Server  <br/> |
+|4.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |Infrastrukturelemente  <br/> |
    
  **Tabelle R: Ressourcengruppen**
   
@@ -275,9 +277,9 @@ Definieren Sie nun die Namen von drei Verfügbarkeitsgruppen. Füllen Sie Tabell
   
 |**Element**|**Zweck**|**Name der Verfügbarkeitsgruppe**|
 |:-----|:-----|:-----|
-|1.  <br/> |Domänencontroller  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|2.  <br/> |AD FS-Server  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
-|3.  <br/> |Webanwendungsproxy-Server  <br/> |![line](./media/Common-Images/TableLine.png)  <br/> |
+|1.  <br/> |Domänencontroller  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|2.  <br/> |AD FS-Server  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|3.  <br/> |Webanwendungsproxy-Server  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle A: Verfügbarkeitsgruppen**
   

@@ -20,17 +20,19 @@ search.appverid:
 - PJU120
 - PSV120
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
+f1.keywords:
+- NOCSH
 description: Der Support endet in Kürze für Office 2007 Server und Clientanwendungen, und es sind keine benutzerdefinierten Support Vereinbarungen verfügbar. Verwenden Sie diesen Artikel, um mit der Planung des Upgrades jetzt zu beginnen.
-ms.openlocfilehash: 2fd2e8a0bd2435dbec8c846111a628ffe56fa10c
-ms.sourcegitcommit: f316aef1c122f8eb25c43a56bc894c4aa61c8e0c
+ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748022"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41841002"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
-*Dieser Artikel bezieht sich sowohl auf Office 365 Enterprise als auch auf Microsoft 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Wenn Sie Office 2007-Produkte und-Dienste verwenden, ist die Unterstützung für diese Anwendungen beendet. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in die Microsoft-Cloud zu wechseln, beginnend mit Office 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
       
