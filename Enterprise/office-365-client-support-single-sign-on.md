@@ -12,15 +12,19 @@ ms.collection:
 - M365-subscription-management
 search.appverid:
 - MET150
+f1.keywords:
+- NOCSH
 description: Office 365 Client-App-Unterstützung für einmaliges Anmelden.
-ms.openlocfilehash: e8f3aab27d898ebbc564a1815320bce72a151d35
-ms.sourcegitcommit: b1a32e8df403143fb34eaddf116aed3595228c8c
+ms.openlocfilehash: e64e260277ba1d3455e724b4f8944cfbe87eb864
+ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "36817251"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41849054"
 ---
 # <a name="office-365-client-app-support--single-sign-on"></a>Office 365 Client-App-Unterstützung – einmaliges Anmelden
+
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
 
 Einmaliges Anmelden (Single Sign-on, SSO) fügt Sicherheit und Bequemlichkeit hinzu, wenn sich Ihre Benutzer bei Anwendungen in Azure Active Directory (Azure AD) anmelden. Bei der einmaligen Anmeldung melden sich Benutzer mit einem Konto einmal an, um auf Domänen verbundene Geräte, Unternehmensressourcen, Software as a Service (SaaS)-Anwendungen und Webanwendungen zuzugreifen.
 
@@ -43,21 +47,25 @@ Die neuesten Versionen der folgenden Clients unterstützen einmaliges Anmelden:
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Zugriffs Symbol](media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Symbol des Unternehmensportals](media/o365-microsoft-64x64.png) <br> [Unternehmens <br> Portal<sup>3</sup>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Vertiefen (Symbol)](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Edge-Symbol](media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Excel-Symbol](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) 
-| ![Fluss Symbol](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Kaizala-Symbol](media/o365-kaizala-64x64.png) <br> [Kaizala<sup>1</sup>](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com-Symbol](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Linsen Symbol](media/o365-lens-64x64.png) <br> [Office-Objektiv<sup>4</sup>](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive für Unternehmen Symbol](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) 
-| ![OneNote-Symbol](media/o365-OneNote-64x64.png) <br> [OneNote<sup>2</sup>](https://products.office.com/onenote) | ![Outlook-Symbol](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Symbol für Planer](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerBI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI<sup>2</sup>](https://powerbi.microsoft.com)| ![PowerPoint-Symbol](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
-| ![Projektsymbol](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher-Symbol](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) | ![Skype for Business Symbol](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![Symbol für Notizen](media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
-| ![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams-Symbol](media/o365-teams-64x64.png) <br> [Teams<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![To-do-Symbol](media/o365-todo-64x64.png) <br> [zu tun](https://todo.microsoft.com) | ![Visio-Symbol](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Whiteboard-Symbol](media/o365-whiteboard-64x64.png) <br> [Whiteboard<sup>3</sup>](https://whiteboard.microsoft.com/) 
-| ![Word-Symbol](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Jammer Symbol](media/o365-yammer-64x64.png) <br> [Jammern<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
+| ![Access-Symbol](media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Symbol des Unternehmensportals](media/o365-microsoft-64x64.png) <br> [Unternehmens <br> Portal<sup>3</sup>](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Vertiefen (Symbol)](media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Edge-Symbol](media/o365-edge-64x64.png) <br> [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Excel-Symbol](media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) 
+| ![Flow-Symbol](media/o365-flow-64x64.png) <br> [Flow](https://flow.microsoft.com) | ![Kaizala-Symbol](media/o365-kaizala-64x64.png) <br> [Kaizala<sup>1</sup>](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com-Symbol](media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![Linsen Symbol](media/o365-lens-64x64.png) <br> [Office-Objektiv<sup>4</sup>](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive für Unternehmen Symbol](media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) 
+| ![OneNote-Symbol](media/o365-OneNote-64x64.png) <br> [OneNote<sup>2</sup>](https://products.office.com/onenote) | ![Outlook-Symbol](media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner-Symbol](media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerBI-Symbol](media/o365-powerbi-64x64.png) <br> [Power BI<sup>2</sup>](https://powerbi.microsoft.com)| ![PowerPoint-Symbol](media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
+| ![Project-Symbol](media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher-Symbol](media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [Share](https://products.office.com/sharepoint) | ![Skype for Business-Symbol](media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> Business](https://www.skype.com/business/) | ![Symbol für Notizen](media/o365-stickynotes-64x64.png) <br> [Kurznotizen](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
+| ![Sway-Symbol](media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams-Symbol](media/o365-teams-64x64.png) <br> [Teams<sup>2</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![To-do-Symbol](media/o365-todo-64x64.png) <br> [Aufgabe](https://todo.microsoft.com) | ![Visio-Symbol](media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Whiteboard-Symbol](media/o365-whiteboard-64x64.png) <br> [Whiteboard<sup>3</sup>](https://whiteboard.microsoft.com/) 
+| ![Word-Symbol](media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer-Symbol](media/o365-yammer-64x64.png) <br> [Jammern<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
 
 ## <a name="supported-powershell-modules"></a>Unterstützte PowerShell-Module
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Azure-Symbol](media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange-Symbol](media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)
+| ![Azure-Symbol](media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange-Symbol](media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![SharePoint-Symbol](media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> Unterstützung für Kaizala in ios in Kürze verfügbar. <br>
 > <sup>2</sup> Unterstützung für OneNote, PowerBI, Teams und jammern auf Windows 10-Desktop verfügbar in Kürze. <br>
 > <sup>3</sup> Unterstützung für Whiteboard auf Android in Kürze verfügbar. <br>
 > <sup>4</sup> Unterstützung für Office-Objektiv auf Windows 10 modernen apps in Kürze verfügbar. <br>
+
+## <a name="see-also"></a>Siehe auch
+
+[Übersicht zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)
