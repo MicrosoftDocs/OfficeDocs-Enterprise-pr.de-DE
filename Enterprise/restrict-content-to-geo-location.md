@@ -1,5 +1,6 @@
 ---
 title: Einschränken der SharePoint-Websiteinhalte auf einen geografischen Standort
+ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,12 +13,12 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Erfahren Sie, wie Sie SharePoint-Seiten für einen bestimmten geographischen Standort in einer Multi-Geo-Umgebung einschränken.
-ms.openlocfilehash: b8716eb0ad2d9292a0d52638f827dcc7665d027a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ca63f46ba45d1b3ddfdf4f676b678d62387b801f
+ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845016"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41973957"
 ---
 # <a name="restrict-sharepoint-site-content-to-a-geo-location"></a>Einschränken der SharePoint-Websiteinhalte auf einen geografischen Standort
 
