@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Bestehende Office 365-Kunden müssen die Verschiebung der Kundendaten der teilnehmenden Office 365-Dienste in den neuen geografischen Raum vor dem Stichtag für Ihr Land anfordern.
-ms.openlocfilehash: 886b852608b29f42aaa6f8051fd60b467830842a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 506943ce802adbd8d443cfb69212834b9c552f61
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844106"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106226"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -48,13 +48,8 @@ Bestehende Office 365-Kunden sind berechtigt, frühzeitige Migrationen der die w
 
 Berechtigten Kunden wird im [Microsoft 365 Admin Center](https://aka.ms/365admin) eine Seite angezeigt, auf der sie die Verschiebung ihrer wichtigsten Kundendaten in die neue Region des Datencenters anfordern können.  
   
-Erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Organisationsprofil**, um auf die Seite im Microsoft 365 Admin Center zuzugreifen.
-  
-![Menü „Einstellungen“ mit hervorgehobenem Organisationsprofil](media/22799fac-32b4-4f79-ae60-3f6ffb7cfbd7.png)
-  
-Scrollen Sie auf der Seite **Organisationsprofil** nach unten zum Abschnitt **Data Residency-Option**. 
-  
-![Data Residency-Karte](media/dataresidencyae.jpg)
+Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Einstellungen**.
+Wählen Sie die Registerkarte **Organisationsprofil**aus, und wählen Sie dann die Option **Data Residency**aus.
   
 **Möglicherweise wird dieser Abschnitt nicht angezeigt, wenn eines von Folgendem zutrifft**:
 - Ihr Mandant ist für das Office 365-Verschiebungsprogramm nicht berechtigt.  Die Berechtigung wird durch das Anmeldeland des Mandanten bestimmt.

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.'
-ms.openlocfilehash: 699f799e823df6192a65147210130ae6493f52eb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4444483776141a3aa1f6e53b2f9bdcd7a5d28e1d
+ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844226"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42106206"
 ---
 # <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Verwalten von Skype for Business Online mit Office 365 PowerShell
 
@@ -44,7 +44,7 @@ Laden Sie das [Skype for Business Online-Connector-Modul](https://www.microsoft.
 2. Geben Sie im Dialogfeld **Windows PowerShell Anmeldeinformationen** Ihren Skype for Business Online Administratorkontonamen und das Kennwort ein, und klicken Sie dann auf **OK**.
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multifactor-authentication"></a>Herstellen einer Verbindung mithilfe eines Skype for Business Online Administratorkontos mit mehrstufiger Authentifizierung
+## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>Herstellen einer Verbindung mithilfe eines Skype for Business Online Administratorkontos mit mehrstufiger Authentifizierung
 
 1. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus:
 
