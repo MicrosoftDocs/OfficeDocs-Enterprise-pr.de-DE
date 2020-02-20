@@ -8,15 +8,14 @@ ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie in Microsoft 365 eine sichere Gastfreigabeumgebung erstellen.
-ms.openlocfilehash: 9df369457770315d5d77894432761385edf3dbc4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840622"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155574"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -319,6 +318,14 @@ Wenn Sie die in diesem Artikel beschriebene Lösung testen möchten, erstellen S
 Sobald der Gast Zugriff auf das Dokument hat, geben Sie *Projekt Saturn* in das Dokument ein und speichern Sie es. Sobald Cloud App Security das Dokument überprüft hat, sollte die Bezeichnung *Streng vertraulich* angewendet werden, und der Gastbenutzer sollte nicht mehr darauf zugreifen können.
 
 Sie können die in diesem Artikel beschriebenen Tools in verschiedenen Kombinationen verwenden, um eine produktive und zugleich sichere Gastfreigabeumgebung für Ihre Organisation zu schaffen.
+
+## <a name="additional-options"></a>Weitere Optionen
+
+Es gibt einige zusätzliche Optionen in Microsoft 365 und Azure Active Directory, mit denen Sie Ihre Gastfreigabeumgebung sicherer machen können.
+
+- Sie können eine Liste der zulässigen bzw. blockierten Freigabedomänen erstellen, um zu begrenzen, an wen Benutzer Inhalte freigeben können. Weitere Informationen hierzu finden Sie unter [Einschränken der Freigabe von SharePoint- und OneDrive-Inhalten nach Domänen](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) und [Zulassen oder Blockieren von Einladungen an B2B-Benutzer aus bestimmten Organisationen](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
+- Sie können einschränken, mit welchen anderen Azure Active Directory-Mandanten sich Ihre Benutzer verbinden können. Weitere Informationen finden Sie unter [Verwenden von Mandanteneinschränkungen zur Verwaltung des Zugriffs auf SaaS-Anwendungen](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
+- Sie können eine verwaltete Umgebung erstellen, in der Partner beim Verwalten von Gastkonten helfen können. Informationen hierzu finden Sie unter [Erstellen eines B2B-Extranets mit verwalteten Gästen](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Siehe auch
 
