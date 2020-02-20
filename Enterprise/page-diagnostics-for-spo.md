@@ -3,7 +3,7 @@ title: Verwenden des Seiten Diagnosetools für SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/19/2019
+ms.date: 2/18/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,21 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Verwenden Sie das Seiten Diagnosetool für SharePoint, um SharePoint Online modernen Portal-und klassischen Veröffentlichungsseiten anhand einer vordefinierten Reihe von Leistungskriterien zu analysieren.
-ms.openlocfilehash: 57f8aa86b049701c152e8110f64b418d64250981
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
+ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841782"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155593"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Verwenden der Seite Diagnostics für SharePoint-Tool
 
 In diesem Artikel wird beschrieben, wie Sie mit dem **Tool Page Diagnostics for SharePoint** SharePoint Online modernen und klassischen Website Seiten anhand einer vordefinierten Reihe von Leistungskriterien analysieren.  
 
 >[!TIP]
->**Version 2.0.1 des Tools wurde veröffentlicht**. Version **2.0.0** und höher umfasst neben klassischen Website Seiten auch Unterstützung für moderne Seiten. Wenn Sie sich nicht sicher sind, welche Version des Tools Sie verwenden, können Sie den Link **Info** oder die Ellipsen (...) auswählen, um Ihre Version zu überprüfen.
+>**Version 2.0.2 des Tools wurde veröffentlicht**. Version **2.0.0** und höher umfasst neben klassischen Website Seiten auch Unterstützung für moderne Seiten. Wenn Sie sich nicht sicher sind, welche Version des Tools Sie verwenden, können Sie den Link **Info** oder die Ellipsen (...) auswählen, um Ihre Version zu überprüfen. Aktualisieren Sie immer auf die neueste Version, wenn Sie das Tool verwenden.
 
-Das Seiten Diagnosetool für SharePoint ist eine Browser Erweiterung für Chrome und [Microsoft Edge Version 77 und höher](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8) , die sowohl SharePoint Online moderne Portal-als auch klassische Veröffentlichungswebsite-Seiten analysiert. Dieses Tool funktioniert nur für SharePoint Online und schlägt mit einem Fehler fehl, wenn er auf einer SharePoint Server Site-Seite verwendet wird.
+Das Seiten Diagnosetool für SharePoint ist eine Browser Erweiterung für die neuen Microsoft Edgehttps://www.microsoft.com/edge) (und Chrome-Browser, die sowohl SharePoint Online moderne Portal-als auch klassische Veröffentlichungswebsite-Seiten analysieren. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-System Seite verwendet werden.
 
 Das Tool generiert einen Bericht für jede analysierte Seite, die zeigt, wie die Seite mit einem vordefinierten Satz von Regeln ausgeführt wird, und zeigt ausführliche Informationen an, wenn Ergebnisse für einen Test außerhalb des Basiswerts liegen. SharePoint Online Administratoren und Designer können das Tool verwenden, um Leistungsprobleme zu beheben und sicherzustellen, dass neue Seiten vor der Veröffentlichung optimiert werden.
 
@@ -52,9 +52,9 @@ Um Feedback zu dem Tool zu erhalten, wählen Sie die Auslassungspunkte in der ob
 Das Installationsverfahren in diesem Abschnitt ist sowohl für die Chrome-als auch für die Microsoft-Edge-Browser funktionsfähig.
 
 > [!IMPORTANT]
-> Microsoft liest keine Daten oder Seiteninhalte, die vom Seiten Diagnosetool für SharePoint analysiert werden, und wir erfassen keine persönlichen Informationen, Website-oder Download Informationen. Die einzigen vom Tool protokollierten Informationen sind der Mandantenname, die Regelanzahl und die Angabe, ob die Protokollierungsoption für die Unterstützung aktiviert wurde, wenn das Tool ausgeführt wird. Diese Informationen werden von Microsoft zum Verständnis moderner Portal-und Veröffentlichungs Nutzungstrends und allgemeiner Leistungsprobleme verwendet, um Produktverbesserungen zu informieren.
+> Microsoft liest keine Daten oder Seiteninhalte, die vom Seiten Diagnosetool für SharePoint analysiert werden, und wir erfassen keine persönlichen Informationen, Website-oder Download Informationen. Die einzigen identifizierbaren Informationen, die von dem Tool bei Microsoft protokolliert werden, sind der Name des Mandanten, die Anzahl der fehlerhaften Regeln und das Datum und die Uhrzeit, zu der das Tool ausgeführt wurde. Diese Informationen werden von Microsoft verwendet, um moderne Portal-und Veröffentlichungs Nutzungstrends und Allgemeine Leistungsprobleme besser zu verstehen.
 
-1. Öffnen Sie mit dem Browser _Chrome_ oder _Microsoft Edge Version 77 oder höher_ den [Link zum Tool](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi) direkt, oder öffnen Sie die Suche im [Chrome-Browser-Webstore](https://chrome.google.com/webstore/search/page%20diagnostics%20for%20sharepoint) , und installieren Sie die Browser Erweiterung. Lesen Sie die Datenschutzrichtlinie für Benutzer, die auf der Seite Beschreibung im Store bereitgestellt wird. Wenn Sie das Tool Ihrem Browser hinzufügen, wird der folgende Berechtigungshinweis angezeigt.
+1. Installieren Sie die Seite Diagnostics für SharePoint-Tool für **Microsoft Edge** [(Edge Extension)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji) oder **Chrome** [(Chrome Extension)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi). Lesen Sie die Datenschutzrichtlinie für Benutzer, die auf der Seite Beschreibung im Store bereitgestellt wird. Wenn Sie das Tool Ihrem Browser hinzufügen, wird der folgende Berechtigungshinweis angezeigt.
 
     ![Erweiterungs Berechtigungen](media/page-diagnostics-for-spo/pagediag-add-to-edge.png)
 
@@ -73,7 +73,10 @@ Wählen Sie **Start** aus, um mit dem Sammeln von Daten zur Analyse zu beginnen.
 
 ## <a name="what-youll-see-in-the-page-diagnostics-for-sharepoint-tool"></a>Was Sie im Seiten Diagnosetool für SharePoint sehen
 
-1. Der **Info** -Link, der den Ellipsen (...) in der oberen rechten Ecke ähnelt, enthält allgemeine Anleitungen und Details zum Tool, einschließlich eines Links zu diesem Artikel. Es enthält auch einen direkten Link zu SharePoint-Leistungsempfehlungen, eine Drittanbieter Benachrichtigung und eine Option, um Feedback zum Tool zu geben.  
+1. Klicken Sie in der oberen rechten Ecke des Tools auf die Ellipsen (...), um die folgenden Links zu finden:
+   1. Der Link **zusätzliche Ressourcen** enthält allgemeine Anleitungen und Details zum Tool, einschließlich eines Links zu diesem Artikel.
+   1. Der Link **Feedback geben** enthält einen Link zur _Benutzer sprach Website für SharePoint-Websites und-Zusammenarbeit_ .
+   1. Der **Info** -Link enthält die aktuell installierte Version des Tools und einen direkten Link zum Drittanbieter-Hinweis des Tools.  
 1. Die **Korrelations-ID, SPRequestDuration, SPIISLatency**, **Seitenladezeit**und **URL** -Details sind Informationszwecken und können für einige Zwecke verwendet werden.
 
     ![Details zur Seiten Diagnose](media/page-diagnostics-for-spo/pagediag-details.PNG)
@@ -116,12 +119,12 @@ Rote oder gelbe Ergebnisse geben möglicherweise auch Webparts an, die Daten zu 
 
 Die Registerkarte **Netzwerkablaufverfolgung** enthält detaillierte Informationen zu beiden Anforderungen zum Erstellen der Seite und den von SharePoint empfangenen Antworten.
 
-1. **Suchen Sie nach Element Ladezeiten, die als rot gekennzeichnet**sind. Die Leistung der einzelnen Anforderungen und Antworten wird basierend auf ihren Auswirkungen auf die Gesamtleistung der Seite wie folgt farblich codiert:
+1. **Suchen Sie nach Element Ladezeiten, die als rot gekennzeichnet**sind. Jede Anforderung und Antwort ist farblich codiert, um ihre Auswirkungen auf die Gesamtleistung der Seite mit den folgenden Latenz Metriken anzugeben:
     - Grün: \< 500M
     - Gelb: 500-1000ms
     - Rot: \> 1000ms
 
-    ![Netzwerkablaufverfolgung](media/page-diagnostics-for-spo/pagediag-networktrace.png)
+    ![Netzwerkablaufverfolgung](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
     Im oben gezeigten Bild bezieht sich das rote Element auf die Standardseite. Es wird immer rot angezeigt, es sei denn, \< die Seite wird in 1000ms (weniger als 1 Sekunde) geladen.
 
