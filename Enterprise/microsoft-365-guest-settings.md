@@ -7,17 +7,16 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Einstellungen für die Gastfreigabe.
-ms.openlocfilehash: 52f597357aed510e3bd3ff71e87e1056e19a3bad
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ed9165d4589dbdaa18c3b3a3c21aab7bce01ad8c
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844966"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316044"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -239,7 +238,10 @@ Die folgende Tabelle zeigt die Standardfreigabeeinstellung für jeden Websitetyp
 |Kommunikation|**Nur Personen in Ihrer Organisation**|
 |Moderne Websites ohne Gruppe (#STS3 TeamSite)|**Nur Personen in Ihrer Organisation**|
 
-## <a name="see-also"></a>Weitere Artikel
+> [!NOTE]
+> Die Stammkommunikationswebsite (tenant-name.sharepoint.com) verfügt über die Standardfreigabeeinstellung **Jeder**.
+
+## <a name="see-also"></a>Siehe auch
 
 [Übersicht über die externe Freigabe in SharePoint und OneDrive](https://docs.microsoft.com/sharepoint/external-sharing-overview)
 
