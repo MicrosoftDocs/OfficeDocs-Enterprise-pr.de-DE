@@ -10,12 +10,12 @@ ms.collection: SPO_Content
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie in Microsoft 365 eine sichere Gastfreigabeumgebung erstellen.
-ms.openlocfilehash: 4c77ae6905341ba7cde974b2fc3966009a38d512
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 978e7f0e2f81f8e7f97ee73b8e490922afcf1c0a
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155574"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316034"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -332,3 +332,5 @@ Es gibt einige zusätzliche Optionen in Microsoft 365 und Azure Active Directory
 [Einschränken des Risikos der versehentlichen Gefährdung von Dateien bei der Freigabe für Gäste](sharing-limit-accidental-exposure.md)
 
 [Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer](best-practices-anonymous-sharing.md)
+
+[Erstellen eines B2B-Extranets mit verwalteten Gästen](b2b-extranet.md)

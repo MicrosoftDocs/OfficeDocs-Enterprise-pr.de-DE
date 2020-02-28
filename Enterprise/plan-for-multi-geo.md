@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Informationen zu Office 365 Multi-Geo, zur Funktionsweise von Multi-Geo und zu für Datenspeicher verfügbaren geografischen Standorten.
-ms.openlocfilehash: f3bc2b43181bb4479c0f3b9c65ed4bcd5b1f9b38
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 2875f820b0ce1437a09289e3c5e660287b64dc40
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974227"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316004"
 ---
 # <a name="plan-for-office-365-multi-geo"></a>Plan für Office 365 Multi-Geo
 
@@ -74,6 +74,8 @@ Wenn Ihre Benutzer aus einem lokalen Active Directory-System mit Azure Active Di
 Die Verwaltung eines Multi-Geo-Mandanten kann von der eines Nicht-Multi-Geo-Mandanten abweichen, da viele SharePoint- und OneDrive-Einstellungen und -Dienste über Multi-Geo-Funktionen verfügen. Es wird empfohlen, den Artikel [Verwalten einer Multi-Geo-Umgebung](administering-a-multi-geo-environment.md) zu lesen, bevor Sie mit der Konfiguration fortfahren.
 
 Informationen zur Endbenutzererfahrung in einer Multi-Geo-Umgebung finden Sie unter [Benutzererfahrung in einer Multi-Geo-Umgebung](multi-geo-user-experience.md).
+
+Ausführliche Informationen zur Teams-Erfahrung in einer Multi-Geo-fähigen Office 365-Mandanteneinheit finden Sie unter [Teams-Umgebung in einer Office 365 OneDrive und SharePoint Online Multi-Geo-fähigen Mandanteneinheit](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Um mit der Konfigurierung von Office 365 Multi-Geo zu beginnen, lesen Sie bitte [Konfigurieren von Office 365-Multi-Geo](multi-geo-tenant-configuration.md).
 
