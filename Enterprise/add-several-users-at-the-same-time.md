@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'In diesem Artikel erfahren Sie, wie Sie Office 365 für Unternehmen aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei mehrere Benutzer hinzufügen können. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Office 365 erläutert wird. Am Ende dieses Prozesses verfügt jeder Benutzer mit einem Konto über ein Office 365 Postfach. '
-ms.openlocfilehash: 713d54759b32d498a58b88766ffbba9df64da51c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0d0416662bf4934d3373f1ab7ac23c8055ad3098
+ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844646"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42316014"
 ---
 # <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 – Administratorhilfe
 
@@ -115,7 +115,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
     
 |**Beschriftung für Benutzerdatenspalte**|**Maximale Zeichenanzahl**|
 |:-----|:-----|
-|Benutzername (erforderlich)  <br/> |79, einschließlich des at-Zeichens (@), im Format "Name@Domäne.\<#60;Erweiterung\>". Der Aliasname darf maximal 30 Zeichen umfassen und der Domänenname maximal 48 Zeichen.  <br/> |
+|Benutzername (erforderlich)  <br/> |79, einschließlich des at-Zeichens (@), im Format "Name@Domäne.\<#60;Erweiterung\>". Der Alias des Benutzers darf 50 Zeichen nicht überschreiten, und der Domänenname darf 48 Zeichen nicht überschreiten.  <br/> |
 |Vorname  <br/> |64  <br/> |
 |Nachname  <br/> |64  <br/> |
 |Anzeigename (erforderlich)  <br/> |256  <br/> |
