@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'Neue Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten gemäß der Definition in den Microsoft Online Services-Nutzungsbedingungen: Exchange Online-Postfachinhalte (E-Mail-Text, Kalendereinträge und der Inhalt von E-Mail-Anlagen), SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien sowie nach OneDrive for Business hochgeladene Dateien.'
-ms.openlocfilehash: f2f6706d69d79681833ebca70cbe32964b7f3b77
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844766"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417050"
 ---
 # <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben von Kundenkerndaten in neue Office 365-Rechenzentrumsregionen (Geos)
 
@@ -33,19 +33,19 @@ Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten, z
   
 Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzentrumsregion gespeichert haben, sind von der Einführung einer neuen Rechenzentrumsregion nicht betroffen. Mit der neuen Rechenzentrumsregion stellen wir keine eigenen Funktionen, Features oder Compliancezertifizierungen bereit. Kunden beider Geografien erhalten dieselbe Qualität von Diensten, Leistung und Sicherheitskontrollen wie zuvor. Wir bieten Bestandskunden, die in der nachstehenden Tabelle aufgeführt sind, eine Option zum Anfordern einer frühen Migration der ruhenden Kundenkerndaten ihrer Organisation zu ihrer neuen Rechenzentrumsregion.
   
-|****Kunden mit Mandantenanmeldeland in****|****Vorherige Rechenzentrumsregion****|****Neue Rechenzentrumsregion****|****Geografie verfügbar seit****|
+|**Kunden mit Mandanten-Anmelde Land in**|**Vorheriges Rechenzentrum Geo**|**Neues Rechenzentrum Geo**|**Geo verfügbar seit**|
 |:-----|:-----|:-----|:-----|
-|****Japan****| Asien/Pazifik | Japan | Dezember 2014 |
-|****Australien, Neuseeland, Fidschi****| Asien/Pazifik | Australien | März 2015 |
-|****Indien****| Asien/Pazifik | Indien | Oktober 2015 |
-|****Kanada****| Nordamerika | Kanada | Mai 2016 |
-|****Vereinigtes Königreich****| Europa | Vereinigtes Königreich | September 2016 |
-|****Südkorea****| Asien/Pazifik | Südkorea | April 2017 |
-|****Frankreich****| Europa | Frankreich | März 2018 |
-|****Vereinigte Arabische Emirate****| Europa | Vereinigte Arabische Emirate | Juni 2019 |
-|****Südafrika****| Europa | Südafrika | Juli 2019 |
-|****Schweiz, Liechtenstein****| Europa | Schweiz | Dezember 2019 |
-|****Deutschland****| Europa | Deutschland | Dezember 2019 |
+|**Japan**| Asien/Pazifik | Japan | Dezember 2014 |
+|**Australien, Neuseeland, Fidschi**| Asien/Pazifik | Australien | März 2015 |
+|**Indien**| Asien/Pazifik | Indien | Oktober 2015 |
+|**Kanada**| Nordamerika | Kanada | Mai 2016 |
+|**Vereinigtes Königreich**| Europa | Vereinigtes Königreich | September 2016 |
+|**Südkorea**| Asien/Pazifik | Südkorea | April 2017 |
+|**Frankreich**| Europa | Frankreich | März 2018 |
+|**Vereinigte Arabische Emirate**| Europa | Vereinigte Arabische Emirate | Juni 2019 |
+|**Südafrika**| Europa | Südafrika | Juli 2019 |
+|**Schweiz, Liechtenstein**| Europa | Schweiz | Dezember 2019 |
+|**Deutschland**| Europa | Deutschland | Dezember 2019 |
   
 Für Neukunden oder nach der Verfügbarkeit der neuen Rechenzentrumsregion erstellte Office 365-Mandanten werden die ruhenden Kundenkerndaten automatisch in der neuen Rechenzentrumsregion gespeichert.
 
