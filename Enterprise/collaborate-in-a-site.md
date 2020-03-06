@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Normal
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Hier erfahren Sie, wie Sie mit Gästen in einer SharePoint-Website zusammenarbeiten.
-ms.openlocfilehash: 39a9ee0925a384a80e8eae3a73336eb69950a554
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8c1c34fded910701275a80aa0740a746a2458156
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845066"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549114"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 
@@ -57,7 +56,7 @@ Moderne SharePoint-Websites verwenden Office 365 Gruppen, um den Website Zugriff
 So legen Sie die Gast Einstellungen für Office 365 Gruppen fest
 
 1. Erweitern Sie im Microsoft 365 Admin Center in der linken Navigationsleiste **Einstellungen**.
-2. Klicken Sie auf **Dienste #a0-Add-ins**.
+2. Klicken Sie auf **Dienste &-Add-ins**.
 3. Klicken Sie in der Liste auf **Office 365 Gruppen**.
 4. Stellen Sie sicher, dass die Gruppen **Mitglieder außerhalb Ihrer Organisation Zugriff auf Gruppeninhalte** haben und Gruppen **Besitzer Personen außerhalb Ihrer Organisation hinzufügen zulassen** Kontrollkästchen aktiviert sind.
 5. Wenn Sie Änderungen vorgenommen haben, klicken Sie auf **Änderungen speichern**.
