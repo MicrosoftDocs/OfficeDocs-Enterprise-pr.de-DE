@@ -3,7 +3,7 @@ title: URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet
 ms.author: laurawi
 author: LauraWi
 manager: laurawi
-ms.date: 01/28/2020
+ms.date: 03/04/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel bezieht sich auf Office 365, betrieben von 21Vianet in China. In diesem Artikel sind die URLs und IP-Adressbereiche aufgelistet, die von Office 365, betrieben von 21Vianet, verwendet werden.
 hideEdit: true
-ms.openlocfilehash: 5be41a4dd7e1bfc61641ef2403f0495a8ee60813
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c317d303ef9b096bc82c4b22dadc019c8e785589
+ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843956"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417025"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet
 
@@ -40,7 +40,7 @@ ms.locfileid: "41843956"
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 28.01.2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Letzte Aktualisierung:** 28.02.2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
 Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen für das Verwalten der Netzwerkkonnektivität unter Nutzung dieser Daten nachzuvollziehen. Die Endpunktdaten werden am Anfang jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor ihrem Inkrafttreten veröffentlicht werden. Dies gibt Kunden, die ihre Updates noch nicht automatisiert haben, die Möglichkeit, ihre Prozesse abzuschließen, bevor neue Verbindungsinformationen erforderlich sind. Endpunkte können darüber hinaus bei Bedarf auch innerhalb eines Monats aktualisiert werden, wenn dies erforderlich ist, um Supporteskalationen, Sicherheitsvorfällen oder sonstigen unmittelbaren Betriebserfordernissen Rechnung zu tragen. Die unten auf dieser Seite dargestellten Daten wurden alle von den REST-basierten Webdiensten generiert. Wenn Sie ein Skript oder ein Netzwerkgerät für den Zugriff auf diese Daten verwenden, sollten Sie direkt zum [Webdienst](office-365-ip-web-service.md) navigieren.
 
