@@ -7,15 +7,14 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Lernen Sie bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer kennen.
-ms.openlocfilehash: 3f26ca8ba4a4f6903439160c2e99c35cba32a44c
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 38afdcb2d59547144e57656971395c48506bcbbf
+ms.sourcegitcommit: 4e50f43857f93f42b71650354d1aec9ed4cc7fe2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844976"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42549124"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer
 
