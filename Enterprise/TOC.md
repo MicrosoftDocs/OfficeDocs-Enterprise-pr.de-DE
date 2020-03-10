@@ -187,7 +187,7 @@
 ### [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](recover-deleted-items-in-a-mailbox.md)
 ### Zusammenarbeit mit Gästen
 #### [Referenz zu Gastfreigabe](microsoft-365-guest-settings.md)
-#### Gastfreigabe-Lösungen
+#### Szenarien für Gastfreigabe
 ##### [Übersicht über die Zusammenarbeit mit Gastbenutzern](collaborating-with-people-outside-your-organization.md)
 ##### [Zusammenarbeiten an Dokumenten](collaborate-on-documents.md)
 ##### [Zusammenarbeiten an einer Website](collaborate-in-a-site.md)
