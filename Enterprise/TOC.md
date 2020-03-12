@@ -185,19 +185,20 @@
 ### [Tools zum Verwalten von Benutzerkonten](manage-office-365-accounts.md)
 ### [Gleichzeitiges Hinzufügen von mehreren Benutzern](add-several-users-at-the-same-time.md)
 ### [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](recover-deleted-items-in-a-mailbox.md)
+
 ### Zusammenarbeit mit Gästen
-#### [Referenz zu Gastfreigabe](microsoft-365-guest-settings.md)
+#### [Referenz zu Gastfreigabe](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### Szenarien für Gastfreigabe
-##### [Übersicht über die Zusammenarbeit mit Gastbenutzern](collaborating-with-people-outside-your-organization.md)
-##### [Zusammenarbeiten an Dokumenten](collaborate-on-documents.md)
-##### [Zusammenarbeiten an einer Website](collaborate-in-a-site.md)
-##### [Zusammenarbeiten als Team](collaborate-as-a-team.md)
+##### [Übersicht über die Zusammenarbeit mit Gastbenutzern](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Zusammenarbeiten an Dokumenten](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Zusammenarbeiten an einer Website](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Zusammenarbeiten als Team](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 #### Gastfreigabesicherheit
-##### [Nicht authentifizierte Freigabe](best-practices-anonymous-sharing.md)
-##### [Begrenzen der versehentlichen Exposition](sharing-limit-accidental-exposure.md)
-##### [Sichere Gastfreigabeumgebung](create-a-secure-guest-sharing-environment.md)
-#### [Erstellen eines B2B-Extranets](b2b-extranet.md)
-### [Grenzwert Freigabe](microsoft-365-limit-sharing.md)
+##### [Nicht authentifizierte Freigabe](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Begrenzen der versehentlichen Exposition](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+##### [Sichere Gastfreigabeumgebung](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+#### [Erstellen eines B2B-Extranets](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
+### [Grenzwert Freigabe](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## Geräte
 ### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
