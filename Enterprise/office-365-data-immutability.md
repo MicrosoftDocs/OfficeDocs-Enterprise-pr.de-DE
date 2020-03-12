@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Definiert und erläutert die Daten Unveränderlichkeit in Office 365.
-ms.openlocfilehash: 3decc070c480306354382f5d2f0c96d6192fa903
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+ms.openlocfilehash: fe6b2cf3d3ba2e0bb69f4275c77de0a452b3140f
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42315994"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605630"
 ---
 # <a name="immutability-in-office-365"></a>Unveränderbarkeit in Office 365
 
@@ -58,4 +58,4 @@ Insbesondere gilt:
 - Durch die Archivierung in Office 365 können Benutzer verschiedene Aufbewahrungsrichtlinien kombinieren und Aktionen durchführen, um granulare Aufbewahrungsrichtlinien zu erstellen. Diese Richtlinien definieren den Typ oder den Speicherort der aufbewahrten Elemente und die Dauer der Aufbewahrung.
 - Mit dem Feature für die Aufbewahrungs Sperre können Benutzer auswählen, ob die Richtlinie restriktiv sein soll. Eine restriktive Richtlinie verhindert, dass alle Benutzer die Aufbewahrungsrichtlinie entfernen, deaktivieren oder Änderungen daran vornehmen können. Dies bedeutet, dass wenn die Erhaltungs Sperre aktiviert ist, Sie nicht deaktiviert werden kann und kein Mechanismus vorhanden ist, unter dem alle von den Aufbewahrungsrichtlinien erfassten Daten von vorhandenen Depotbanken überschrieben, geändert, gelöscht oder gelöscht werden können, während die Aufbewahrungszeitraum. Außerdem darf der Aufbewahrungszeitraum, der durch die Erhaltungs Sperre festgelegt wurde, nicht verkürzt oder verringert werden. Sie kann jedoch im Fall einer gesetzlichen Anforderung zur Fortsetzung der Speicherung der gespeicherten Daten, wie oben erwähnt, verlängert werden. Durch die Aufbewahrungs Sperre wird sichergestellt, dass niemand, nicht einmal Administratoren oder Personen mit bestimmtem Steuerungszugriff, die Einstellungen ändern oder Daten, die gespeichert wurden, überschreiben oder löschen können, wodurch die Archivierung in Office 365 entsprechend den Anweisungen in der 2003-Version von SEC ausgeführt wird. Regel 17a-4.
 
-Um zu verstehen, wie Office 365 Ihnen bei der Erfüllung gesetzlicher Verpflichtungen hilft, insbesondere im Hinblick auf Regel 17a-4-Anforderungen, lesen Sie dieses [Whitepaper](https://go.microsoft.com/fwlink/?linkid=830440) , das Exchange Online Archivierung, SharePoint Online, OneDrive für Unternehmen und Skype for Business umfasst. Das Whitepaper enthält auch eine ausführliche Analyse der Office 365 Archivierungs Features und-Funktionen für die einzelnen Anforderungen unter sec-Regel 17a-4 und zeigt den regulierten Kunden, wie die Office 365 Archivierung Ihnen die Erfüllung dieser Anforderungen ermöglichen kann. Anforderungen.
+Um zu verstehen, wie Office 365 Ihnen bei der Erfüllung gesetzlicher Verpflichtungen hilft, insbesondere im Hinblick auf Regel 17a-4-Anforderungen, lesen Sie das [Whitepaper](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/2015/11/Microsoft-EOA-White-Paper.pdf) , das Exchange Online Archivierung, SharePoint Online, OneDrive für Unternehmen und Skype for Business behandelt. Das Whitepaper enthält auch eine ausführliche Analyse der Office 365 Archivierungs Features und-Funktionen für die einzelnen Anforderungen unter sec-Regel 17a-4 und zeigt den regulierten Kunden, wie die Office 365 Archivierung Ihnen die Erfüllung dieser Anforderungen ermöglichen kann. Anforderungen.

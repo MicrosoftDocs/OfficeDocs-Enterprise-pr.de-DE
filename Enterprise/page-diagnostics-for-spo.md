@@ -3,7 +3,7 @@ title: Verwenden des Seiten Diagnosetools für SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 2/18/2020
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,19 +19,19 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Verwenden Sie das Seiten Diagnosetool für SharePoint, um SharePoint Online modernen Portal-und klassischen Veröffentlichungsseiten anhand einer vordefinierten Reihe von Leistungskriterien zu analysieren.
-ms.openlocfilehash: 191db3db459f12a922c47844af72511cc9bf2544
-ms.sourcegitcommit: 27172140051c31f5cd3f28ffb4282669d561549a
+ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42155593"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603734"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Verwenden der Seite Diagnostics für SharePoint-Tool
 
 In diesem Artikel wird beschrieben, wie Sie mit dem **Tool Page Diagnostics for SharePoint** SharePoint Online modernen und klassischen Website Seiten anhand einer vordefinierten Reihe von Leistungskriterien analysieren.  
 
 >[!TIP]
->**Version 2.0.2 des Tools wurde veröffentlicht**. Version **2.0.0** und höher umfasst neben klassischen Website Seiten auch Unterstützung für moderne Seiten. Wenn Sie sich nicht sicher sind, welche Version des Tools Sie verwenden, können Sie den Link **Info** oder die Ellipsen (...) auswählen, um Ihre Version zu überprüfen. Aktualisieren Sie immer auf die neueste Version, wenn Sie das Tool verwenden.
+>Version **2.0.0** und höher umfasst neben klassischen Website Seiten auch Unterstützung für moderne Seiten. Wenn Sie sich nicht sicher sind, welche Version des Tools Sie verwenden, können Sie den Link **Info** oder die Ellipsen (...) auswählen, um Ihre Version zu überprüfen. **Aktualisieren Sie immer auf die neueste Version, wenn Sie** das Tool verwenden.
 
 Das Seiten Diagnosetool für SharePoint ist eine Browser Erweiterung für die neuen Microsoft Edgehttps://www.microsoft.com/edge) (und Chrome-Browser, die sowohl SharePoint Online moderne Portal-als auch klassische Veröffentlichungswebsite-Seiten analysieren. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-System Seite verwendet werden.
 
@@ -161,4 +161,8 @@ Es wird keine Änderung angezeigt, außer dass Sie benachrichtigt werden, dass S
 
 [Optimieren der Leistung von Office 365](tune-office-365-performance.md)
 
+[Leistung in der modernen SharePoint-Oberfläche](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
+
+[Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online](use-office-365-cdn-with-spo.md)

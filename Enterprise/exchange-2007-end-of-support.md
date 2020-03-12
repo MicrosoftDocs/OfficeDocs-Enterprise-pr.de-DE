@@ -13,16 +13,16 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: Am 11. April 2017 Exchange Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2007 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
-ms.openlocfilehash: 67e6a8f271fd8d553895ba086ed4b6ad11d9a877
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840352"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605650"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Ende der Unterstützung für Exchange 2007 – Roadmap
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Am **11. April 2017**Exchange Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2007 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen. 
   
@@ -219,7 +219,7 @@ Es wird empfohlen, dass Sie zunächst davon ausgehen, dass Sie zu Exchange 2016 
 |:-----|:-----|
 |Ende der Support Daten  <br/> | Wie Exchange 2007 verfügt jede Version von Exchange über ein eigenes Datum für die Unterstützung des Supports:  <br/> **Exchange 2010** -Januar 2020  <br/> **Exchange 2013** -April 2023  <br/> **Exchange 2016** -Oktober 2025  <br/>  Je früher das Ende des Support Datums ist, desto schneller müssen Sie eine weitere Migration durchführen. Januar 2020 ist viel näher als Sie denken!  <br/> |
 |Migrationspfad zu Exchange 2010 und 2013  <br/> |Im folgenden finden Sie die allgemeinen Phasen für die Migration zu Exchange 2010 oder Exchange 2013:  <br/> Installieren von Exchange 2010 oder 2013 in Ihrer vorhandenen Exchange 2007 Organisation verschieben von Diensten und anderen Infrastrukturen in Exchange 2010 oder 2013 Verschieben von Postfächern und öffentlichen Ordnern auf Exchange 2010 oder 2013 still gebliebenen Exchange 2007 Servern |
-|Migrationspfad zu Exchange 2016  <br/> |Im folgenden finden Sie die allgemeinen Phasen für die Migration zu Exchange 2016:  <br/> Installieren von Exchange 2013 in Ihrer vorhandenen Exchange 2007 Organisation verschieben von Diensten und anderen Infrastrukturen zum Exchange 2013 Verschieben von Postfächern und öffentlichen Ordnern in Exchange 2013 deprovision verbleibenden Exchange 2007 Server installieren Exchange 2016 in Ihren vorhandenen Exchange 2013 Organisation. Verschieben von Postfächern, öffentlichen Ordnern, Diensten und anderen Infrastrukturen nach Exchange 2016 (Reihenfolge spielt keine Rolle). Stilllegung der verbleibenden [!NOTE] Exchange 2013 Server #a0> die Migration von Exchange 2013 zu Exchange 2016 ist einfach. Beide Versionen haben fast die gleichen Hardwareanforderungen. Dies und die Tatsache, dass diese Versionen so kompatibel sind, bedeutet, dass Sie einen Server, den Sie für Exchange 2013 gekauft haben, neu erstellen und Exchange 2016 darauf installieren können. Und bei Online Postfachverschiebungen wird den meisten Benutzern nie aufgefallen, dass Ihr Postfach vom Server verschoben und dann wieder zurückgegeben wird, nachdem Sie es mit Exchange 2016 neu erstellt haben.           |
+|Migrationspfad zu Exchange 2016  <br/> |Im folgenden finden Sie die allgemeinen Phasen für die Migration zu Exchange 2016:  <br/> Installieren von Exchange 2013 in Ihrer vorhandenen Exchange 2007 Organisation verschieben von Diensten und anderen Infrastrukturen zum Exchange 2013 Verschieben von Postfächern und öffentlichen Ordnern in Exchange 2013 deprovision verbleibenden Exchange 2007 Server installieren Exchange 2016 in Ihren vorhandenen Exchange 2013 Organisation. Verschieben von Postfächern, öffentlichen Ordnern, Diensten und anderen Infrastrukturen nach Exchange 2016 (Reihenfolge spielt keine Rolle). Stilllegung der verbleibenden [!NOTE] Exchange 2013 Server >> die Migration von Exchange 2013 zu Exchange 2016 ist einfach. Beide Versionen haben fast die gleichen Hardwareanforderungen. Dies und die Tatsache, dass diese Versionen so kompatibel sind, bedeutet, dass Sie einen Server, den Sie für Exchange 2013 gekauft haben, neu erstellen und Exchange 2016 darauf installieren können. Und bei Online Postfachverschiebungen wird den meisten Benutzern nie aufgefallen, dass Ihr Postfach vom Server verschoben und dann wieder zurückgegeben wird, nachdem Sie es mit Exchange 2016 neu erstellt haben.           |
 |Versions Koexistenz  <br/> | Bei der Migration zu:  <br/> **Exchange 2016** Exchange 2016 kann nicht in einer Organisation installiert werden, die einen Exchange 2007 Server enthält. Zunächst müssen Sie zu Exchange 2010 oder 2013 migrieren (es wird dringend empfohlen, Exchange 2013), alle Exchange 2007 Server zu entfernen und dann zu Exchange 2016 zu migrieren.  <br/> **Exchange 2010 oder Exchange 2013** Sie können Exchange 2010 oder Exchange 2013 in einer vorhandenen Exchange 2007 Organisation installieren. Auf diese Weise können Sie einen oder mehrere Exchange 2010-oder 2013-Server installieren und die Migration durchführen.  <br/> |
 |Serverhardware  <br/> | Die Server Hardwareanforderungen wurden von Exchange 2007 geändert. Sie müssen sicherstellen, dass die Hardware, die Sie verwenden werden, kompatibel ist. Hier finden Sie weitere Informationen zu den Hardwareanforderungen für jede Version:  <br/> [Exchange 2016-System Anforderungen](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 System Anforderungen](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 System Anforderungen](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Sie werden feststellen, dass Sie mit den signifikanten Verbesserungen bei der Exchange-Leistung und der erhöhten Rechenleistung und Speicherkapazität in neueren Servern wahrscheinlich weniger Server zur Unterstützung der gleichen Anzahl von Postfächern benötigen.  <br/> |
 |Betriebssystemversion  <br/> | Für jede Version werden mindestens die folgenden Betriebssystemversionen unterstützt:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Weitere Informationen zur Betriebssystemunterstützung finden Sie unter [Unterstützungs Matrix für Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
@@ -251,7 +251,3 @@ Wenn bei der Migration zu Office 365 Probleme auftreten und Sie nicht den Kurzla
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Ressourcen für ein Upgrade Ihrer Office 2007-Server und-Clients](upgrade-from-office-2007-servers-and-products.md)
-  
-[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
-

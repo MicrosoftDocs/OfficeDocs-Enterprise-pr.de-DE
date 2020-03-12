@@ -22,17 +22,17 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Der Support endet in Kürze für Office 2007 Server und Clientanwendungen, und es sind keine benutzerdefinierten Support Vereinbarungen verfügbar. Verwenden Sie diesen Artikel, um mit der Planung des Upgrades jetzt zu beginnen.
-ms.openlocfilehash: e9e135d9f3f91247f4b94f081c1c48662adb1e15
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Der Support endet in Kürze für Office 2007 Server und Clientanwendungen, und es sind keine benutzerdefinierten Support Vereinbarungen verfügbar. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
+ms.openlocfilehash: 101db7891dd2d336c9b15b2e7070587fb61eb53a
+ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841002"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "42605640"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Wenn Sie Office 2007-Produkte und-Dienste verwenden, ist die Unterstützung für diese Anwendungen beendet. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in die Microsoft-Cloud zu wechseln, beginnend mit Office 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
       
@@ -57,12 +57,10 @@ Wenn Sie Office 2007 Produkte und Anwendungen zu Hause verwenden, lesen Sie [die
      
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office Retirement Group (Microsoft Tech Community)](https://go.microsoft.com/fwlink/?linkid=842065)
-  
 [Video: Was ist Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft-Lebenszyklusrichtlinie](https://go.microsoft.com/fwlink/?linkid=865200)
 
-[Planen des Upgrades von Office 2007- oder Office 2010-Servern und -Clients](plan-upgrade-previous-versions-office.md)
+[Planen Sie Ihr Upgrade von Office 2007- oder Office 2010-Servern und -Clients](plan-upgrade-previous-versions-office.md)
   
 
