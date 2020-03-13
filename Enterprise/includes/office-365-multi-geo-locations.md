@@ -11,5 +11,6 @@
 |Korea                        |KOR     |Rechenzentren in Südost- oder Ostasien|
 |Nordamerika                |NAM     |Rechenzentren in den USA                    |
 |Südafrika                 |ZAF     |(Bald verfügbar)                     |
+|Schweiz                  |SWE     |(Bald verfügbar)                     |
 |Vereinigte Arabische Emirate         |ARE     |(Bald verfügbar)                     |
 |Vereinigtes Königreich               |GBR     |Rechenzentren in Europa                |

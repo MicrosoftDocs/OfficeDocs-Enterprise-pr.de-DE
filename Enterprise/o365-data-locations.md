@@ -3,7 +3,7 @@ title: Office 365-Datenspeicherorte
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 02/13/2020
+ms.date: 03/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Office 365-Datenspeicherorte'
-ms.openlocfilehash: 60c5b9a76d32b973510a600b98b386583ae738c7
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 004d055c08769524907651a56b1a885d44a111d0
+ms.sourcegitcommit: a59b35b0b2667738998333d25e2a61cd8d7a3e26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106345"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42581604"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -115,7 +115,7 @@ Im Folgenden sind die Orte angegeben, an denen ruhende Kundendaten im Hinblick a
 | Japan | Osaka, Tokyo, Saitama |
 | Korea | Busan, Seoul |
 | Südafrika | Kapstadt, Johannesburg |
-| Schweiz | Genf, Zurick |
+| Schweiz | Genf, Zürich |
 | Vereinigte Arabische Emirate | Dubai, Abu Dhabi |
 | Vereinigtes Königreich | Durham, London, Cardiff |
 | Vereinigte Staaten |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
@@ -138,7 +138,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3581,7 +3581,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
