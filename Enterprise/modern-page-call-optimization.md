@@ -3,7 +3,7 @@ title: Das Optimieren von Seiten ruft moderne und klassische Veröffentlichungsw
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/18/2019
+ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie moderne und klassische Veröffentlichungswebsiteseiten in SharePoint Online optimieren können, indem Sie die Anzahl der Aufrufe von SharePoint Online-Service-Endpunkten begrenzen.
-ms.openlocfilehash: 13c403e03c0d2aa2cb73d626c92596d12a8b1ee4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: b339e6888e9434b6df26b0a29450bfcbbce84e66
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844831"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603724"
 ---
 # <a name="optimize-page-calls-in-sharepoint-online-modern-and-classic-publishing-site-pages"></a>Das Optimieren von Seiten ruft moderne und klassische Veröffentlichungswebsiteseiten von SharePoint Online auf
 
@@ -37,7 +37,10 @@ Dieser Artikel beschreibt, wie Sie die Anzahl und Auswirkung von Aufrufen auf ex
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-page-calls"></a>Verwenden Sie das Tool „Seitendiagnose für SharePoint“, um die Seitenaufrufe zu analysieren
 
-Das **Tool für die Seitendiagnose für SharePoint** ist eine Browser-Erweiterung für Chrome und [Microsoft Edge Version 77 oder höher](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), mit denen Sie SharePoint sowohl moderne als auch klassische Veröffentlichungswebsiteseiten analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Für Informationen und zur Installation der Seitendiagnose für SharePoint-Tools, besuchen Sie[Verwenden des Seitendiagnose-Tools für SharePoint Online](page-diagnostics-for-spo.md).
+Das Tool "Seitendiagnose für SharePoint" ist eine Browsererweiterung für den neuen Microsoft Edge- (https://www.microsoft.com/edge) und Chrome-Browser, mit der Sie SharePoint Online-Seiten sowohl in modernen Portal- als auch in klassischen Veröffentlichungs-Websites analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Wenn Sie das Tool "Seitendiagnose für SharePoint" installieren und mehr darüber erfahren möchten, besuchen Sie [Verwenden des Seitendiagnose-Tools für SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>Das Seitendiagnose-Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
 
 Wenn Sie eine SharePoint-Website Seite mit dem Tool „Seitendiagnose für SharePoint“ analysieren, finden Sie Informationen zu externen Aufrufen im **Anforderungen für SharePoint** Ergebnis im Bereich_Diagnosetests_. Die Zeile wird grün angezeigt, wenn die Standortseite weniger als die Grundwert-Nummer der Aufrufe enthält, und rot, wenn die Seite die Grundwert-Nummer überschreitet. Die Grundwert-Nummer ist für moderne und klassische Seiten unterschiedlich, da klassische Seiten HTTP1.1 und moderne Seiten HTTP2.0 verwenden:
 

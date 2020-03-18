@@ -3,7 +3,7 @@ title: Optimieren der Leistung von Webparts in modernen SharePoint Online-Websit
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/6/2019
+ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Leistung von Webparts in modernen SharePoint Online-Websites optimieren können.
-ms.openlocfilehash: 8ee8e932913ad8b75d6e68cecbd5d5da08bce76b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 48eba5f638d75cb12b7b4dcf516a9c3833cf8f4d
+ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844830"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42603744"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung von Webparts in modernen SharePoint Online-Websites
 
@@ -35,14 +35,17 @@ Die Seiten von modernen SharePoint Online-Website enthalten Webparts, die sich a
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Verwenden des Tools "Seitendiagnose für SharePoint" zum Analysieren von Webparts
 
-Das **Tool "Seitendiagnose für SharePoint"** ist eine Browsererweiterung für Chrome und [Microsoft Edge ab Version 77](https://www.microsoftedgeinsider.com/download?form=MI13E8&OCID=MI13E8), mit der Sie Seiten in modernen und klassischen SharePoint-Veröffentlichungswebsites analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Wenn Sie das Tool "Seitendiagnose für SharePoint" installieren und mehr darüber erfahren möchten, besuchen Sie [Verwenden des Seitendiagnose-Tools für SharePoint Online](page-diagnostics-for-spo.md).
+Das Tool "Seitendiagnose für SharePoint" ist eine Browsererweiterung für neue Microsoft Edge- (https://www.microsoft.com/edge) und Chrome-Browser, mit der Sie SharePoint Online-Seiten sowohl in modernen Portal- als auch in klassischen Veröffentlichungs-Websites analysieren können. Das Tool stellt für jede analysierte Seite einen Bericht bereit, in dem die Leistung der Seite anhand einer definierten Gruppe von Leistungskriterien dargestellt wird. Wenn Sie das Tool "Seitendiagnose für SharePoint" installieren und mehr darüber erfahren möchten, besuchen Sie [Verwenden des Seitendiagnose-Tools für SharePoint Online](page-diagnostics-for-spo.md).
+
+>[!NOTE]
+>Das Seitendiagnose-Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
 
 Wenn Sie eine Seite einer SharePoint-Website mit dem Tool "Seitendiagnose für SharePoint" analysieren, werden im Ergebnis **Webparts, die sich auf die Seitenladezeit auswirken** im Bereich _Diagnosetests_ Informationen über Webparts angezeigt, die die Baselinemetrik überschreiten.
 
 Mögliche Ergebnisse sind:
 
-- **Handlungsbedarf** (rot): Ein _benutzerdefiniertes_ Webpart, bei dem der Ladevorgang länger als **zwei** Sekunden dauert. Die in den Testergebnissen angezeigte Gesamtladezeit wird nach "Modul laden", "Lazy Load", "Initialisieren" und "Rendern" unterteilt.
-- **Verbesserung möglich** (gelb): Elemente, die sich möglicherweise auf die Seitenladezeit auswirken, werden in diesem Abschnitt angezeigt und sollten überprüft und überwacht werden. Dazu können Microsoft-"Out-of-Box"-Webparts (OOTB) gehören. Die Ergebnisse für alle in diesem Abschnitt angezeigten Microsoft-Webparts werden automatisch an Microsoft gemeldet, daher **sind keine Maßnahmen erforderlich**. Sie sollten nur dann ein Supportticket für die Untersuchung öffnen, wenn die Leistung auf der Seite sehr schlecht ist und **alle Microsoft-Webparts** auf der Seite in den Ergebnissen im Abschnitt **Verbesserung möglich** angezeigt werden. Beachten Sie, dass die Ergebnisse in einem künftigen Update des Seitendiagnosetools auf Grundlage der spezifischen Konfiguration des Microsoft-Webparts weiter aufgeschlüsselt werden.
+- **Handlungsbedarf** (rot): alle _benutzerdefinierten_-Webparts, die im Ansichtsfenster (dem sichtbaren Bereich des Bildschirms, der zuerst geladen wird) sichtbar sind und zum Laden länger als **zwei** Sekunden benötigen. Alle _benutzerdefinierten_ Webparts außerhalb des Ansichtsfensters, die zum Laden länger als **vier** Sekunden benötigen. Die Gesamtladezeit wird in den Testergebnissen angezeigt und nach "Modul laden", "Lazy Load", "Initialisieren" und "Rendern" unterteilt.
+- **Verbesserung möglich** (gelb): Elemente, die sich möglicherweise auf die Seitenladezeit auswirken, werden in diesem Abschnitt angezeigt und sollten überprüft und überwacht werden. Dazu können Microsoft-"Out-of-Box"-Webparts (OOTB) gehören. Die Ergebnisse für alle in diesem Abschnitt angezeigten Microsoft-Webparts werden automatisch an Microsoft gemeldet, daher **sind keine Maßnahmen erforderlich**. Sie sollten nur dann ein Supportticket für die Untersuchung öffnen, wenn die Leistung auf der Seite sehr schlecht ist und **alle Microsoft-Webparts** auf der Seite in den Ergebnissen im Abschnitt **Verbesserung möglich** angezeigt werden. Beachten Sie, dass die Ergebnisse in einem künftigen Update der Seitendiagnose für SharePoint auf Grundlage der spezifischen Konfiguration des Microsoft-Webparts weiter aufgeschlüsselt werden.
 - **Keine Aktion erforderlich** (grün): Kein Webpart braucht länger als **zwei** Sekunden, um Daten zurückzugeben.
 
 Wenn das Ergebnis **Webparts, die sich auf die Seitenladezeit auswirken** entweder im Abschnitt **Handlungsbedarf** oder im Abschnitt **Verbesserung möglich** angezeigt wird, klicken Sie auf das Ergebnis, um Details zu den Webparts anzuzeigen, die langsam geladen werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
