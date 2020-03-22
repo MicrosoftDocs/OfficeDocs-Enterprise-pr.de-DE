@@ -3,7 +3,7 @@ title: Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/20/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,64 +14,135 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Übersicht über Netzwerk Leistungsempfehlungen im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: d944814effc62956d5047bad1f3088d0919793ee
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: 16ef23810645bcd9719107b13d32909af25d4766
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106328"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890441"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)
 
-Die Seite Netzwerkleistung im Microsoft 365 Admin Center zeigt Netzwerk Einblicke und eine Netzwerkbewertung für Unternehmenskunden an. Network Insights sind spezifische empfohlene Änderungen an der Netzwerkarchitektur zur Verbesserung der Benutzerfreundlichkeit im Zusammenhang mit der Netzwerkkonnektivität mit Office 365 und die Netzwerkbewertung zeigt, wie sich die Netzwerkkonnektivität auf die Benutzeroberfläche auswirkt und den Vergleich von unterschiedliche Netzwerkverbindungen für Benutzer Standorte. Unternehmen, die Office 365 mit mehreren Office-Standorten und nicht-trivialen Netzwerkperimeter-Architekturen verwenden, können davon profitieren, entweder während des ersten onboardings in Office 365 oder um Netzwerkleistungsprobleme zu beheben, die mit der Verwendung ermittelt wurden. Wachstums. Dies ist normalerweise nicht erforderlich für kleine Unternehmen, die Office 365 verwenden, oder für Unternehmen, die bereits über eine einfache und direkte Netzwerkkonnektivität verfügen. Unternehmen mit mehr als 500 Benutzern und mehreren Office-Standorten werden davon ausgehen.
+Das Microsoft 365 Admin Center enthält jetzt Live-Leistungs Metriken, die von Ihrem Office 365-Mandanten gesammelt und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. **Netzwerk Einblicke und Leistungsempfehlungen** sowie **Netzwerkbewertungen** werden im Microsoft 365 Admin Center unter <https://portal.microsoft.com/adminportal/home#/networkperformance>angezeigt. Die Seite befindet sich im Navigationsbereich unter **Integrität | Netzwerkleistung**.
+
+![Seite "Netzwerkleistung"](Media/m365-mac-perf/m365-mac-perf-page-nav.png)
+
+Wenn Sie zum ersten Mal zur Seite Netzwerkleistung navigieren, sehen Sie einen Übersichtsbereich, der eine Übersicht über die globale Netzwerkleistung, eine Netzwerkbewertung für den gesamten Mandanten und eine Liste aktueller Probleme enthält. In der Übersicht können Sie einen Drilldown ausführen, um bestimmte Netzwerk Leistungs Metriken und-Probleme nach Standort anzuzeigen. Weitere Informationen finden Sie unter [Übersicht über die Netzwerkleistung im Microsoft 365 Admin Center](#network-performance-overview-in-the-microsoft-365-admin-center).
+
+## <a name="pre-requisites-for-connectivity-measurements-to-appear"></a>Voraussetzungen für die Anzeige von Verbindungs Messungen
+
+Damit die Verbindungs Messungen angezeigt werden, müssen mindestens zwei Computer an jedem Bürostandort ausgeführt werden, der die Voraussetzungen unterstützt. OneDrive für Unternehmen Synchronisierungs Client Version 19,232 oder höher muss auf jedem Computer installiert sein. Weitere Informationen finden Sie in den [Anmerkungen zur OneDrive-Version](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0).
+
+Windows-Standortdienst muss auf den Computern zugestimmt werden. Sie können dies testen, indem Sie die **Maps** -App durchführen und sich selbst Auffinden. Es kann auf einem einzelnen Computer mit **Einstellungen** -> für den**Datenschutz** -> **Speicherort** aktiviert werden, in dem die Einstellung "Apps für den Zugriff auf Ihren Standort zulassen" aktiviert sein muss. Die Zustimmung zum Windows-Standortdienst kann auf PCs mit MDM oder Gruppenrichtlinien mit der Einstellung _LetAppsAccessLocation_bereitgestellt werden.
+
+Die Computer sollten WLAN-Netzwerke anstelle eines Ethernet-Kabels aufweisen. Computer mit einem Ethernet-Kabel verfügen nicht über genaue Standortinformationen.
+
+Mess Muster und Office-Standorte sollten 24 Stunden nach der Erfüllung dieser Voraussetzungen angezeigt werden.
+
+## <a name="how-do-i-use-this-information"></a>Wie verwende ich diese Informationen?
+
+**Network Insights**, die dazugehörigen Leistungsempfehlungen und Netzwerkbewertungen sollen beim Entwerfen von Netzwerkperimetern für Ihre Office-Standorte helfen. Jede Insight enthält Live-Details zu den Leistungsmerkmalen eines bestimmten allgemeinen Problems für jeden geografischen Standort, auf den Benutzer auf ihren Mandanten zugreifen. **Leistungsempfehlungen** für die einzelnen Netzwerk Einblicke bieten spezifische Änderungen an der Netzwerkarchitektur, die Sie vornehmen können, um die Benutzerfreundlichkeit im Zusammenhang mit Office 365 Netzwerkkonnektivität zu verbessern. Die Netzwerkbewertung zeigt, wie sich die Netzwerkkonnektivität auf die Benutzerfreundlichkeit auswirkt und einen Vergleich verschiedener Netzwerkverbindungen für Benutzer Standorte ermöglicht.
+
+Mithilfe von **Netzwerkbewertungen** wird ein Aggregat zahlreicher Netzwerk Leistungs Metriken in eine Momentaufnahme ihrer Unternehmensnetzwerk Integrität unterrepräsentiert durch einen Points-Wert von 1-100. Netzwerkbewertungen sind sowohl für den gesamten Mandanten als auch für jeden geografischen Standort ausgelegt, von dem die Benutzer eine Verbindung mit Ihrem Mandanten herstellen, sodass Office 365 Administratoren eine einfache Möglichkeit haben, eine Gestalt der Netzwerkintegrität des Unternehmens zu erfassen und schnell zu bohren. unten in einen detaillierten Bericht für einen beliebigen globalen Bürostandort.
+
+Komplexe Unternehmen mit mehreren Office-Standorten und nicht-trivialen Netzwerkperimeter-Architekturen können von diesen Informationen profitieren, entweder während des ersten onboardings für Office 365 oder um Probleme bei der Netzwerkleistung zu beheben, die mit dem Nutzungs Wachstum ermittelt wurden. Dies ist normalerweise nicht erforderlich für kleine Unternehmen, die Office 365 verwenden, oder für Unternehmen, die bereits über eine einfache und direkte Netzwerkkonnektivität verfügen. Unternehmen mit mehr als 500 Benutzern und mehreren Office-Standorten werden davon ausgehen.
 
 >[!IMPORTANT]
->Empfehlungen zur Netzwerkleistung, Einblicke und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
+>Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
 
 ## <a name="enterprise-network-connectivity-challenges"></a>Herausforderungen bei der Unternehmensnetzwerk Konnektivität
 
 ![Kundennetzwerk in Cloud](Media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-Viele Unternehmen verfügen über Netzwerkumkreis Konfigurationen, die im Laufe der Zeit gewachsen sind und in erster Linie für den Zugriff von Internetwebsites für Mitarbeiter vorgesehen sind, bei denen die meisten Websites nicht vorab bekannt sind und nicht vertrauenswürdig sind. Der vorherrschende und notwendige Fokus besteht darin, Schadsoftware und Angel Angriffe aus diesen unbekannten Websites zu vermeiden. Diese Strategie für die Netzwerkkonfiguration, die aus Sicherheitsgründen hilfreich ist, kann zu Beeinträchtigungen Office 365 Benutzerleistung und Benutzerfreundlichkeit führen. Unternehmen können die Benutzerfreundlichkeit verbessern, aber auch weiterhin ihre Umgebung schützen, indem Sie [Office 365 Konnektivitäts Prinzipien](https://aka.ms/pnc) und in Kürze das neue Netzwerk Leistungsfeature von Microsoft 365 Admin Center verwenden. Dieses Feature unterstützt den Entwurf der Netzwerkarchitektur, der mit den Grundsätzen der Office 365 Konnektivität übereinstimmt und zu einer optimierten Netzwerkleistung für die Konnektivität mit Office 365 führen sollte.
+Viele Unternehmen verfügen über Netzwerkumkreis Konfigurationen, die im Laufe der Zeit gewachsen sind und in erster Linie für den Zugriff von Internetwebsites für Mitarbeiter vorgesehen sind, bei denen die meisten Websites nicht vorab bekannt sind und nicht vertrauenswürdig sind. Der vorherrschende und notwendige Fokus besteht darin, Schadsoftware und Angel Angriffe aus diesen unbekannten Websites zu vermeiden. Diese Strategie für die Netzwerkkonfiguration, die aus Sicherheitsgründen hilfreich ist, kann zu Beeinträchtigungen Office 365 Benutzerleistung und Benutzerfreundlichkeit führen.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Wie können wir diese Herausforderungen lösen?
 
-Microsoft wird manchmal aufgefordert, Netzwerkleistungsprobleme mit Office 365 für große Unternehmenskunden zu untersuchen, und diese weisen häufig eine Hauptursache im Zusammenhang mit der Netzwerk Ausgangs Infrastruktur des Kunden auf. Wenn eine allgemeine Ursache für ein Problem mit dem Umkreis eines Kunden Netzwerks gefunden wird, versuchen wir, einfache Testmessungen zu identifizieren, die diese identifizieren. Ein Test mit einem Schwellenwert für die Messung, mit dem ein bestimmtes Problem identifiziert wird, ist wertvoll, da wir dieselbe Messung an einem beliebigen Ort testen können, um zu ermitteln, ob diese Ursache dort vorhanden ist, und Sie als Netzwerk Einblicke mit dem Administrator freigeben. Einige Netzwerk Einblicke deuten lediglich auf ein Problem hin, das weiter untersucht werden muss. Ein Netzwerk Einblicke, in dem genügend Tests vorhanden sind, um eine bestimmte Korrekturaktion zur Behebung der Stamm Ursache anzuzeigen, wird als empfohlene Aktion aufgeführt. Diese Netzwerk Einblicke basierend auf Messungen über einen vorher festgelegten Schwellenwert sind weitaus wertvoller als allgemeine Ratschläge zur bewährten Vorgehensweise, da Sie nicht Fragen müssen, ob bestimmte bewährte Methoden zutreffen und eine erhebliche Verbesserung der Benutzerfreundlichkeit zur Folge haben oder nicht. .
+Unternehmen können die allgemeine Benutzerfreundlichkeit verbessern und Ihre Umgebung schützen, indem Sie die [Prinzipien von Office 365 Konnektivität](https://aka.ms/pnc) und das Microsoft 365 Admin Center-Netzwerk Leistungsfeature verwenden. In den meisten Fällen hat die Einhaltung dieser allgemeinen Grundsätze erhebliche positive Auswirkungen auf die Wartezeit von Endbenutzern, die Zuverlässigkeit der Dienste und die Gesamtleistung von Office 365.
+
+Microsoft wird manchmal aufgefordert, Netzwerkleistungsprobleme mit Office 365 für große Unternehmenskunden zu untersuchen, und diese weisen häufig eine Hauptursache im Zusammenhang mit der Netzwerk Ausgangs Infrastruktur des Kunden auf. Wenn eine allgemeine Ursache für ein Problem mit dem Umkreis eines Kunden Netzwerks gefunden wird, versuchen wir, einfache Testmessungen zu identifizieren, die diese identifizieren. Ein Test mit einem Schwellenwert für die Messung, mit dem ein bestimmtes Problem identifiziert wird, ist wertvoll, da wir dieselbe Messung an einem beliebigen Ort testen können, um zu ermitteln, ob diese Ursache dort vorhanden ist, und Sie als Netzwerk Einblicke mit dem Administrator freigeben.
+
+Einige Netzwerk Einblicke deuten lediglich auf ein Problem hin, das weiter untersucht werden muss. Ein Netzwerk Einblicke, in dem genügend Tests vorhanden sind, um eine bestimmte Korrekturaktion zur Behebung der Stamm Ursache anzuzeigen, wird als **Empfohlene Aktion**aufgeführt. Diese Empfehlungen, basierend auf Live Metriken, die Werte offen legen, die außerhalb eines vordefinierten Schwellenwerts liegen, sind viel wertvoller als allgemeine Ratschläge zur bewährten Vorgehensweise, da Sie für Ihre Umgebung spezifisch sind und die tatsächliche Verbesserung zeigen, sobald die Es wurden empfohlene Änderungen vorgenommen.
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Übersicht über die Netzwerkleistung im Microsoft 365 Admin Center
 
-Microsoft verfügt über vorhandene Netzwerk Messungen aus mehreren Office-Desktop-und Webclients, die den Betrieb von Office 365 unterstützen. Diese Messungen werden nun verwendet, um Einblicke in die Netzwerkarchitektur und eine Netzwerk Leistungsbewertung bereitzustellen, die auf der Seite "Netzwerkleistung" im Microsoft 365 Admin Center angezeigt werden.
+Microsoft verfügt über Netzwerk Messungen von mehreren Office-Desktop-und Webclients, die den Betrieb von Office 365 unterstützen. Diese Messungen werden nun verwendet, um Einblicke in die Netzwerkarchitektur und eine Netzwerk Leistungsbewertung bereitzustellen, die auf der Seite " **Netzwerkleistung** " im Microsoft 365 Admin Center angezeigt werden.
 
-Ungefähre Standortinformationen im Zusammenhang mit den Netzwerk Messungen können den Ort identifizieren, an dem sich die Clientgeräte befinden. Dies wird verwendet, um die Kundenbüro Standorte und Netzwerk Messungen sind gruppiert, um Netzwerk Einblicke für diesen Standort bieten. Die Netzwerkbewertung an jedem Standort wird mit Farbe angezeigt, und die relative Anzahl der Benutzer an jedem Standort wird durch die Größe des Kreises dargestellt. Auf der Übersichtsseite wird auch die Netzwerkbewertung für den Kunden als gewichteter Durchschnitt für alle Office-Standorte angezeigt.
+Standardmäßig wird der Ort, an dem sich die Clientgeräte befinden, in annähernden Standortinformationen, die den Netzwerk Messungen zugeordnet sind, feststehen. Die Netzwerkbewertung an jedem Standort wird mit Farbe angezeigt, und die relative Anzahl der Benutzer an jedem Standort wird durch die Größe des Kreises dargestellt.
+
+![Network Insights – Übersichtskarte](Media/m365-mac-perf/m365-mac-perf-overview-map.png)
+
+Auf der Übersichtsseite wird auch die Netzwerkbewertung für den Kunden als gewichteter Durchschnitt für alle Office-Standorte dargestellt.
+
+![Netzwerkbewertung](Media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Übersicht über die spezifische Netzwerkleistung für Office-Standorte und Einblicke
 
-Durch die Auswahl eines Office-Standorts wird eine standortspezifische Zusammenfassungsseite geöffnet. Wir zeigen Details des Netzwerk Ausstiegs an, die von Messungen an diesem Standort identifiziert wurden.
+Durch die Auswahl eines Office-Standorts wird eine standortspezifische Zusammenfassungsseite geöffnet, in der Details zum Netzwerk Ausstieg angezeigt werden, die von den Messungen an diesem Standort ermittelt wurden.
 
-Auf der Seite Zusammenfassung der Office-standortzusammenfassung werden außerdem die Netzwerkbewertung der Standorte, das Netzwerk Bewertungs Protokoll, ein Vergleich dieser Punkte mit anderen Kunden in der gleichen Stadt sowie eine Liste mit spezifischen Einblicken und Empfehlungen angezeigt, die der Kunde ausführen kann, um verbessern Sie die Netzwerkkonnektivität. Vergleiche zwischen Kunden in der gleichen Stadt basieren auf der Erwartung, dass alle Kunden gleichberechtigten Zugriff auf Netzwerkdienstanbieter, Telekommunikationsinfrastruktur und in der Nähe befindliche Microsoft-Netzwerk Points of Presence haben.
+![Details zum Netzwerk Einblicke nach Standort](Media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-Auf der Registerkarte "Details" auf der Seite "Office-Standort" werden die spezifischen Messergebnisse angezeigt, die verwendet wurden, um Einblicke, Empfehlungen und das Netzwerk Ergebnis einzuholen. Dies wird bereitgestellt, damit Netzwerkingenieure die Empfehlungen und den Faktor für Einschränkungen oder Besonderheiten in Ihrer Umgebung überprüfen können.
-Für Kunden, die die Genauigkeit von Office-Standorten und Empfehlungen verbessern möchten, können Sie spezifischere Informationen eingeben. Dies erfolgt durch Bearbeiten der Informationen über den ermittelten Standort und kann die Näherungswerte verringern, die in den Standortinformationen für Netzwerk Messungen vorhanden sind.
+Auf der Seite Zusammenfassung der Office-standortzusammenfassung werden außerdem die Netzwerkbewertung des Standorts, der Netzwerk Bewertungsverlauf, ein Vergleich der Bewertung dieses Standorts mit anderen Kunden in derselben Stadt sowie eine Liste mit spezifischen Einblicken und Empfehlungen angezeigt, die Sie möglicherweise verpflichten sich, die Netzwerkleistung und Zuverlässigkeit zu verbessern. Standorte mit spezifischen Empfehlungen können auch eine geschätzte potenzielle Verbesserung der Wartezeit umfassen.
+
+Vergleiche zwischen Kunden in der gleichen Stadt basieren auf der Erwartung, dass alle Kunden gleichberechtigten Zugriff auf Netzwerkdienstanbieter, Telekommunikationsinfrastruktur und in der Nähe befindliche Microsoft-Netzwerk Points of Presence haben.
+
+![Network Insights-Standorte](Media/m365-mac-perf/m365-mac-perf-locations.png)
+
+Auf der Registerkarte Details auf der Seite Office-Standort werden die spezifischen Messergebnisse angezeigt, die verwendet wurden, um Einblicke, Empfehlungen und die Netzwerkbewertung zu erzielen. Dies wird bereitgestellt, damit Netzwerkingenieure die Empfehlungen und den Faktor für Einschränkungen oder Besonderheiten in Ihrer Umgebung überprüfen können.
+
+![Ortsspezifische Details](Media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+Kunden, die die Genauigkeit von standortspezifischen Metriken und Empfehlungen verbessern möchten, ermöglichen es, spezifischere Informationen einzugeben. Dadurch können die Näherungswerte verringert werden, die den Standortinformationen für Netzwerk Messungen inhärent sind. So bearbeiten Sie die Adresse eines bestimmten Office- <functionality not there yet>Standorts.
+
+## <a name="import-undiscovered-office-locations"></a>Importieren unentdeckter Office-Standorte
+
+Auf der Registerkarte Netzwerk Leistungs **Speicherorte** wird eine Liste der Office-Standorte angezeigt, die automatisch aus der Netzwerk Telemetrie ermittelt werden. Diese Office-Standorte sind entdeckte Städte. Sie können weitere spezifische Orte in diesen Städten manuell hinzufügen, wenn Sie nicht automatisch in der Liste angezeigt werden, indem Sie Sie aus einer CSV-Datei importieren. Wenn keine Office-Standorte angezeigt werden, sollten Sie die Ursache für die Netzwerk Messungen nicht mehr anzeigen, sondern lediglich den Speicherort hinzufügen. Sie können auch den Adresswert vorhandener Office-Standorte aktualisieren.
+
+In der CSV-Datei wird der Standort "AA entdeckte Stadt" als " **Stadt**" bezeichnet, und eine manuell hinzugefügte Office-Position ist mit der Bezeichnung **Location**versehen.
+
+1. Klicken Sie im Fenster Haupt _Konnektivität mit Microsoft 365_ auf die Registerkarte **Speicherorte** .
+1. Klicken Sie auf die Schaltfläche **importieren** direkt oberhalb der Liste Orte. Das Flyout **Office-Speicherorte importieren** wird angezeigt.
+
+   ![CSV-Import-Fehlermeldung](Media/m365-mac-perf/m365-mac-perf-import.png)
+
+1. Klicken Sie auf den Link **aktuelle Office-Standorte herunterladen (CSV)** , um die Liste der aktuellen Speicherorte in eine CSV-Datei zu exportieren, und speichern Sie Sie auf Ihrer lokalen Festplatte. Auf diese Weise erhalten Sie eine ordnungsgemäß formatierte CSV-Datei, in der Sie Standorte hinzufügen können. Sie können die exportierten Speicherorte unverändert lassen. Sie werden nicht dupliziert, wenn Sie die aktualisierte CSV importieren. Wenn Sie die Adresse eines vorhandenen Speicherorts ändern möchten, wird diese beim Importieren der CSV-Datei aktualisiert. Sie können die Adresse eines entdeckten Orts nicht ändern.
+1. Öffnen Sie die CSV-Datei, und fügen Sie Ihre Standorte hinzu, indem Sie die folgenden Felder in einer neuen Position für jeden Ort ausfüllen, den Sie hinzufügen möchten. Lassen Sie alle anderen Felder leer; Werte, die Sie in andere Felder eingeben, werden ignoriert.
+   1. **Adresse** (erforderlich): die physische Adresse des Büros
+   1. **Latitude** (optional): von Bing Maps-Lookup aufgefüllt, wenn leer
+   1. **Längengrad** (optional): von Bing Maps-Lookup aufgefüllt, wenn leer
+   1. Ausgehende **IP-Adressbereiche 1-5** (optional): Geben Sie für jeden Bereich den Leitungsnamen gefolgt von einer durch Leerzeichen getrennten Liste gültiger IPv4-oder IPv6-CIDR-Adressen ein. Diese Werte werden nur verwendet, wenn Sie die SDWAN-Integration für einen bestimmten Office-Standort aktiviert haben.
+1. Wenn Sie Ihre Office-Standorte hinzugefügt und die Datei gespeichert haben, klicken Sie neben dem Feld **abgeschlossen hochladen** auf die Schaltfläche **Durchsuchen** , und wählen Sie die gespeicherte CSV-Datei aus.
+1. Die Datei wird automatisch überprüft. Wenn Validierungsfehler vorliegen, wird die Fehlermeldung angezeigt, _dass in der Importdatei einige Fehler aufgetreten sind. Überprüfen Sie die Fehler, korrigieren Sie die Importdatei, und versuchen Sie es dann erneut._ Klicken Sie auf den Link **Fehlerdetails öffnen** , um eine Liste der spezifischen Feld Überprüfungsfehler anzuzeigen.
+
+   ![CSV-Import-Fehlermeldung](Media/m365-mac-perf/m365-mac-perf-import-error.png)
+
+1. Wenn die Datei keine Fehler enthält, wird die Meldung angezeigt, dass _der Bericht verfügbar ist. Es wurden x-Speicherorte hinzugefügt und x-Standorte aktualisiert._ Klicken Sie auf die Schaltfläche **importieren** , um die CSV hochzuladen.
+
+   ![CSV-Import-Ready-Nachricht](Media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>Häufig gestellte Fragen
 
-### <a name="what-is-office-365-service-front-door"></a>Was ist Office 365-Service-Haustür?
+### <a name="what-is-an-office-365-service-front-door"></a>Was ist eine Office 365-Dienst-Haustür?
 
 Die Office 365-Dienst-Haustür ist ein Einstiegspunkt im globalen Microsoft-Netzwerk, in dem Office-Clients und-Dienste Ihre Netzwerkverbindung beenden. Für eine optimale Netzwerkverbindung mit Office 365 wird empfohlen, dass Ihre Netzwerkverbindung an der nächstgelegenen Office 365 Haustür in ihrer Stadt oder Metro endet.
-Hinweis: Office 365-Dienst-Haustür verfügt über keine direkte Beziehung zum "Azure Front Door Service"-Produkt, das im Azure Marketplace zur Verfügung steht.
+
+>[!NOTE]
+>Office 365 Dienst Haustür hat keine direkte Beziehung zum Azure-Front-Door-Dienst Produkt, das im Azure Marketplace verfügbar ist.
 
 ### <a name="what-is-an-optimal-office-365-service-front-door"></a>Was ist eine optimale Office 365-Dienst Haustür?
 
-Eine optimale Office 365 Dienst Haustür ist eine, die Ihrem Netzwerk Austritt am nächsten ist, in der Regel in ihrer Stadt oder Metro. Verwenden Sie das Office 365 Netzwerk-Leistungstool, um die Position der Haustür Ihres in-Use-Office 365 Diensts und der optimalen Service-Haustür zu bestimmen. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
+Eine optimale Office 365 Dienst Haustür ist eine, die Ihrem Netzwerk Austritt am nächsten ist, in der Regel in ihrer Stadt oder Metro. Verwenden Sie das [Onboarding-Tool für Office 365-Netzwerk](office-365-network-mac-perf-onboarding-tool.md) , um den Speicherort der Haustür Ihres in-Use-Office 365 Diensts und der optimalen Service-Haustür zu bestimmen. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Was ist ein Internet Ausstieg-Standort?
 
-Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr Unternehmensnetzwerk verlässt und eine Verbindung mit dem Internet herstellt. Dies wird auch als Standort bezeichnet, an dem Sie ein NAT-Gerät (Network Address Translation, Netzwerkadressübersetzung) haben und in der Regel eine Verbindung mit einem Internetdienstanbieter (Internet Service Provider, ISP) herstellen. Wenn Sie einen langen Abstand zwischen Ihrem Standort und Ihrem Internet Ausgangsstandort sehen, kann dies eine erhebliche WAN-Backhaul erkennen.
+Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr Unternehmensnetzwerk verlässt und eine Verbindung mit dem Internet herstellt. Dies wird auch als Standort bezeichnet, an dem Sie ein NAT-Gerät (Network Address Translation, Netzwerkadressübersetzung) haben und in der Regel eine Verbindung mit einem Internetdienstanbieter (Internet Service Provider, ISP) herstellen. Wenn Sie einen langen Abstand zwischen Ihrem Standort und Ihrem Internet Ausgangsstandort sehen, kann dies auf eine erhebliche WAN-Backhaul hindeuten.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Office 365 Einblicke in die Netzwerkleistung (Vorschau)](office-365-network-mac-perf-insights.md)
+[Office 365 Netzwerk Einblicke (Vorschau)](office-365-network-mac-perf-insights.md)
 
 [Office 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
 [Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Office 365 Network Insights Privacy and Terms of use (Preview)](office-365-network-mac-perf-privacy.md)

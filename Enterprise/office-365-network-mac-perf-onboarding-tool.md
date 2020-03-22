@@ -3,7 +3,7 @@ title: Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/04/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
-ms.openlocfilehash: 7ead201d78c1a6ce971c6ff09d4be9c0d2c76be6
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106329"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890398"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 
@@ -30,7 +30,7 @@ Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf produkt
 Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Netzwerkqualität für jeden Office-Standort im Microsoft 365 Admin Center beurteilt werden kann und nach der Bereitstellung von Tests basierend auf dem Office 365 Netzwerk-Onboarding-Tool weitere Details gefunden werden können.
 
 >[!IMPORTANT]
->Empfehlungen zur Netzwerkleistung, Einblicke und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
+>Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
 
 ## <a name="the-advanced-tests-client-application"></a>Die Clientanwendung für erweiterte Tests
 

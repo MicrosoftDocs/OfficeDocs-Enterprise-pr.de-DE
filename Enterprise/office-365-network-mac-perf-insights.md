@@ -1,9 +1,9 @@
 ---
-title: Office 365 Einblicke in die Netzwerkleistung (Vorschau)
+title: Office 365 Netzwerk Einblicke (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 02/04/2020
+ms.date: 03/20/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,72 +13,133 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 Einblicke in die Netzwerkleistung (Vorschau)
-ms.openlocfilehash: 2e57ffabec5b2172cb36f10135406ddda95bc1c5
-ms.sourcegitcommit: e2f7bb4ccd4c74902235f680104ca6b56c051587
+description: Office 365 Netzwerk Einblicke (Vorschau)
+ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42106334"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890611"
 ---
-# <a name="office-365-network-performance-insights-preview"></a>Office 365 Einblicke in die Netzwerkleistung (Vorschau)
+# <a name="office-365-network-insights-preview"></a>Office 365 Netzwerk Einblicke (Vorschau)
 
-Die Microsoft 365 Admin Center-Netzwerk Leistungs Seiten zeigen Office 365 Einblicke in das Netzwerk, die beim Entwerfen von Netzwerkperimetern für Ihre Office-Standorte hilfreich sein können. Es gibt fünf spezifische Einblicke in das Netzwerk, die für die einzelnen Office-Standorte möglicherweise angezeigt werden.
+**Network Insights** sind Live-Leistungs Metriken, die von Ihrem Office 365-Mandanten gesammelt und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. Einblicke werden im Microsoft 365 Admin Center unter <https://portal.microsoft.com/adminportal/home#/networkperformance>angezeigt.
+
+Mithilfe von Insights sollen Netzwerkperimeter für Ihre Office-Standorte entworfen werden. Jede Insight enthält Live-Details zu den Leistungsmerkmalen eines bestimmten allgemeinen Problems für jeden geografischen Standort, auf den Benutzer auf ihren Mandanten zugreifen.
+
+Es gibt fünf spezifische Netzwerk Einblicke, die für jeden Office-Standort angezeigt werden können:
+
+- [Ausstieg aus dem backhauld-Netzwerk](#backhauled-network-egress)
+- [Bessere Leistung für Kunden in Ihrer Nähe erkannt](#better-performance-detected-for-customers-near-you)
+- [Verwenden eines nicht optimalen Exchange Online-Dienst-Front-Door](#use-of-a-non-optimal-exchange-online-service-front-door)
+- [Verwenden eines nicht optimalen SharePoint Online-Dienst-Front-Door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Niedrige Downloadgeschwindigkeit von SharePoint-Haustür](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Empfehlungen zur Netzwerkleistung, Einblicke und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
+>Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
 
 ## <a name="backhauled-network-egress"></a>Ausstieg aus dem backhauld-Netzwerk
 
-Der Abstand zwischen dem Benutzerstandort und dem Ausstiegs Netzwerk beträgt mehr als 500 Meilen (800 Kilometer), was sich auf die Leistung auswirken dürfte. Lokaler Ausstieg näher am Benutzer wird empfohlen.
-
-Dadurch wird feststellen, dass der Abstand zwischen dem Bürostandort und dem Netzwerk Ausstieg mehr als 500 Meilen beträgt. Der Standort des Büros wird durch einen verborgenen Clientcomputer Speicherort identifiziert, und der Netzwerk Ausgangsspeicherort wird mithilfe von Reverse IP Address to Location Databases identifiziert. Der Office-Standort ist möglicherweise ungenau, wenn Windows-Ortungsdienste auf Computern deaktiviert sind. Der Netzwerk Ausgangsspeicherort ist möglicherweise ungenau, wenn die Datenbankinformationen der Reverse-IP-Adresse ungenau sind.
-
-Details für diese Einblicke sind der Office-Standort, der Netzwerk Ausgangsstandort und der Abstand dazwischen.
-
-Für diese Einblicke empfehlen wir einen Netzwerk Ausstieg näher am Bürostandort, damit die Konnektivität optimal an das Microsoft-Netzwerk im Internet und auf Office 365 Dienst-Fronttüren weitergeleitet werden kann. Das Schließen des Netzwerk Ausstiegs für Benutzer in Office-Standorten ermöglicht auch in Zukunft eine verbesserte Leistung, da Microsoft in Zukunft sowohl Netzwerk Points of Presence als auch Office 365-Service-Front-Doors erweitert.
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerk Ausgang größer als 500 Meilen (800 Kilometer) ist und angibt, dass Office 365 Datenverkehr zu einem gemeinsamen Internet-Edge zurückgezogen wird. Gerät oder Proxy.
 
 Diese Einblicke wird in einigen zusammenfassungsansichten als "Ausstieg" abgekürzt.
 
+![Ausstieg aus dem backhauld-Netzwerk](Media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+
+### <a name="what-does-this-mean"></a>Szenario
+
+Dadurch wird feststellen, dass der Abstand zwischen dem Bürostandort und dem Netzwerk Ausstieg mehr als 500 Meilen (800 Kilometer) beträgt. Der Standort des Büros wird durch einen verborgenen Clientcomputer Speicherort identifiziert, und der Netzwerk Ausgangsspeicherort wird mithilfe von Reverse IP Address to Location Databases identifiziert. Der Office-Standort ist möglicherweise ungenau, wenn Windows-Ortungsdienste auf Computern deaktiviert sind. Der Netzwerk Ausgangsspeicherort ist möglicherweise ungenau, wenn die Datenbankinformationen der Reverse-IP-Adresse ungenau sind.
+
+Details für diese Einblicke sind der Office-Standort, der geschätzte Prozentsatz des Gesamt Mandanten Benutzers am Standort, der aktuelle Netzwerk Ausgangsstandort, die Relevanz des Ausgangs Standorts, der Abstand zwischen dem Standort und dem aktuellen Ausgangspunkt, das Datum, an dem der Bedingung wurde zuerst erkannt, und das Datum, an dem die Bedingung aufgelöst wurde.
+
+### <a name="what-should-i-do"></a>Was soll ich machen?
+
+Für diese Einblicke empfehlen wir den Netzwerk Ausstieg näher am Office-Standort, damit die Konnektivität optimal zum globalen Netzwerk von Microsoft und zur nächsten Office 365 Dienst-Haustür weitergeleitet werden kann. Das Schließen des Netzwerk Ausstiegs für Benutzer in Office-Standorten ermöglicht auch in Zukunft eine verbesserte Leistung, da Microsoft in Zukunft sowohl Netzwerk Points of Presence als auch Office 365-Service-Front-Doors erweitert.
+
+Weitere Informationen zum Beheben dieses Problems finden Sie unter Ausgangs [Netzwerkverbindungen lokal](office-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Netzwerk Verbindungs Prinzipien](office-365-network-connectivity-principles.md).
+
 ## <a name="better-performance-detected-for-customers-near-you"></a>Bessere Leistung für Kunden in Ihrer Nähe erkannt
 
-Da eine beträchtliche Anzahl von Kunden in Ihrem Metro-Bereich eine bessere Leistung hat als Benutzer in Ihrer Organisation an diesem Standort.
-
-Dabei wird die Gesamtleistung der Office 365 Kunden in derselben Stadt wie dieser Bürostandort betrachtet.
-
-![Relative Netzwerkleistung](Media/m365-mac-perf/m365-mac-perf-relative-perf.png)
-
-Wir berechnen den Prozentsatz der Office 365 Kunden in der gleichen Stadt in besseren Leistungs Buckets. Wenn diese Zahl, wenn 10% von mehr dann zeigen wir die Netzwerk Einblicke.
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass eine beträchtliche Anzahl von Kunden in Ihrem Metro-Bereich eine bessere Leistung hat als Benutzer in Ihrer Organisation an diesem Standort.
 
 Diese Einblicke wird in einigen zusammenfassungsansichten als "Peers" abgekürzt.
 
+![Relative Netzwerkleistung](Media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+
+### <a name="what-does-this-mean"></a>Szenario
+
+In dieser Einblicke wird die Gesamtleistung von Office 365-Kunden in derselben Stadt wie dieser Bürostandort untersucht. Diese Einblicke wird angezeigt, wenn die durchschnittliche Wartezeit Ihrer Benutzer 10% über der durchschnittlichen Wartezeit von benachbarten Mandanten liegt.
+
+### <a name="what-should-i-do"></a>Was soll ich machen?
+
+Es kann viele Gründe für diese Bedingung geben, einschließlich Wartezeit in Ihrem Unternehmensnetzwerk oder ISP, Engpässe oder Architektur Designprobleme. Überprüfen Sie die Wartezeit zwischen den einzelnen Hops in der Route zwischen Ihrem Office-Netzwerk und der aktuellen Office 365 Haustür. Weitere Informationen finden Sie unter [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
+
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Verwenden eines nicht optimalen Exchange Online-Dienst-Front-Door
 
-Der Benutzer stellt keine Verbindung zu einem optimalen Office 365-Dienst vor der Haustür her, und dies wird voraussichtlich Auswirkungen auf die Leistung haben.
-
-Wir führen Exchange Online Service-Fronttüren auf, die für die Verwendung aus der Office-Standort Stadt mit guter Leistung geeignet sind. Wenn der aktuelle Test die Verwendung eines Exchange Online-Dienst-Front-Doors nicht in dieser Liste zeigt, wird diese Empfehlung aufgerufen.
-
-Die Verwendung eines nicht optimalen Exchange Online Dienst-Front-Door könnte durch Netzwerk Backhaul vor dem Ausstieg des Unternehmensnetzwerks verursacht werden, in diesem Fall empfehlen wir den Ausstieg aus dem lokalen und direkten Netzwerk. Es kann auch durch die Verwendung eines Remote-DNS-rekursive Auflösungs Servers verursacht werden, in dem der Fall empfohlen wird, den DNS-rekursive Auflösungs Server mit dem Netzwerk Ausstieg auszurichten.
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass Benutzer an einem bestimmten Standort keine Verbindung mit einer optimalen Exchange Online Dienst-Haustür herstellen.
 
 Diese Einblicke wird in einigen zusammenfassungsansichten als "Routing" abgekürzt.
 
-## <a name="use-of-non-optimal-sharepoint-online-service-front-door"></a>Verwendung von nicht optimaler SharePoint Online Dienst-Haustür
+![Nicht optimale Eingangstür](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
-Der Benutzer stellt keine Verbindung mit der nächstgelegenen SharePoint Online-Dienst-Haustür her. Dies wird voraussichtlich Auswirkungen auf die Leistung haben.
+### <a name="what-does-this-mean"></a>Szenario
 
-Wir identifizieren die SharePoint Online-Dienst-Haustür, mit der der Testclient eine Verbindung herstellt. Für die Office-Standort Stadt vergleichen wir dies mit der erwarteten SharePoint Online-Service-Haustür für diese Stadt. Wenn er nicht übereinstimmt, machen wir diese Empfehlung.
+Wir führen Exchange Online Service-Fronttüren auf, die für die Verwendung aus der Office-Standort Stadt mit guter Leistung geeignet sind. Wenn der aktuelle Test die Verwendung eines Exchange Online-Dienst-Front-Doors nicht in dieser Liste zeigt, wird diese Empfehlung aufgerufen.
+
+### <a name="what-should-i-do"></a>Was soll ich machen?
+
+Die Verwendung eines nicht optimalen Exchange Online Dienst-Front-Door könnte durch Netzwerk Backhaul vor dem Ausstieg des Unternehmensnetzwerks verursacht werden, in diesem Fall empfehlen wir den Ausstieg aus dem lokalen und direkten Netzwerk. Es kann auch durch die Verwendung eines Remote-DNS-rekursive Auflösungs Servers verursacht werden, in dem der Fall empfohlen wird, den DNS-rekursive Auflösungs Server mit dem Netzwerk Ausstieg auszurichten.
+
+## <a name="use-of-a-non-optimal-sharepoint-online-service-front-door"></a>Verwenden eines nicht optimalen SharePoint Online-Dienst-Front-Door
+
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass Benutzer an einem bestimmten Standort keine Verbindung mit der nächstgelegenen SharePoint Online Dienst-Haustür herstellen.
 
 Diese Einblicke wird in einigen zusammenfassungsansichten als "ausschließend" abgekürzt.
 
+![Nicht optimale Eingangstür](Media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+
+### <a name="what-does-this-mean"></a>Szenario
+
+Wir identifizieren die SharePoint Online-Dienst-Haustür, mit der der Testclient eine Verbindung herstellt. Für die Office-Standort Stadt vergleichen wir dies mit der erwarteten SharePoint Online-Service-Haustür für diese Stadt. Wenn er nicht übereinstimmt, machen wir diese Empfehlung.
+
+### <a name="what-should-i-do"></a>Was soll ich machen?
+
+Die Verwendung eines nicht optimalen SharePoint Online Dienst-Front-Door könnte durch Netzwerk Backhaul vor dem Ausstieg des Unternehmensnetzwerks verursacht werden, in diesem Fall empfehlen wir den Ausstieg aus dem lokalen und direkten Netzwerk. Es kann auch durch die Verwendung eines Remote-DNS-rekursive Auflösungs Servers verursacht werden, in dem der Fall empfohlen wird, den DNS-rekursive Auflösungs Server mit dem Netzwerk Ausstieg auszurichten.
+
 ## <a name="low-download-speed-from-sharepoint-front-door"></a>Niedrige Downloadgeschwindigkeit von SharePoint-Haustür
 
-Unter optimale Netzwerk Downloadgeschwindigkeit ermittelt, die Auswirkungen auf die Dauer hat, die zum Laden von Dokumenten aus OneDrive für Unternehmen benötigt wird.
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass die Bandbreite zwischen dem jeweiligen Office-Standort und SharePoint Online kleiner als 1 Mbit/s ist.
+
+Diese Einblicke wird in einigen zusammenfassungsansichten als "Durchsatz" abgekürzt.
+
+### <a name="what-does-this-mean"></a>Szenario
 
 Die Downloadgeschwindigkeit, die ein Benutzer von SharePoint Online-und OneDrive für Unternehmen-Dienst-Fronttüren erhalten kann, wird in Megabytes pro Sekunde (Mbps) gemessen. Wenn dieser Wert kleiner als 1 Mbit/s ist, stellen wir diese Einblicke bereit.
 
-Um die Downloadgeschwindigkeit zu verbessern, die ein Benutzer Bandbreite erhalten kann, müssen Sie möglicherweise erhöht werden. Alternativ kann es zu Netzwerküberlastung zwischen Benutzercomputern am Office-Standort und der Front-Door-SharePoint Online Dienst geben. Dies wird manchmal als Überlastungs Verlust bezeichnet und schränkt die Downloadgeschwindigkeit ein, die Benutzern zur Verfügung steht, auch wenn genügend Bandbreite zur Verfügung steht.
+### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Diese Einblicke wird in einigen zusammenfassungsansichten als "Durchsatz" abgekürzt.
+Um die Downloadgeschwindigkeit zu verbessern, muss die Bandbreite möglicherweise erhöht werden. Alternativ kann es zu Netzwerküberlastung zwischen Benutzercomputern am Office-Standort und der Front-Door-SharePoint Online Dienst geben. Dies wird manchmal als Überlastungs Verlust bezeichnet und schränkt die Downloadgeschwindigkeit ein, die Benutzern zur Verfügung steht, auch wenn genügend Bandbreite zur Verfügung steht.
+
+## <a name="china-user-optimal-network-egress"></a>China-Benutzer optimales Netzwerk Austritt
+
+Diese Einblicke werden angezeigt, wenn Ihre Organisation über Benutzer in China verfügt, die sich mit Ihrem Office 365-Mandanten an anderen geografischen Standorten verbinden. 
+
+### <a name="what-does-this-mean"></a>Szenario
+
+Wenn Ihre Organisation über private WAN-Konnektivität verfügt, wird empfohlen, eine Netzwerk-WAN-Schaltung von Ihren Office-Standorten in China aus zu konfigurieren, die über einen Netzwerk Austritt mit dem Internet an einem der folgenden Standorte verfügt:
+
+- Hongkong (SAR)
+- Japan
+- Taiwan
+- Südkorea
+- Singapur
+- Malaysia
+
+Internet Ausstieg weiter Weg von Benutzern als diese Standorte verringern die Leistung, und der Ausstieg in China kann aufgrund von grenzüberschreitender Überlastung zu hohen Latenz-und Verbindungsproblemen führen.
+
+### <a name="what-should-i-do"></a>Was soll ich machen?
+
+Weitere Informationen zum Minimieren von Leistungsproblemen im Zusammenhang mit dieser Einblicke finden Sie unter [Office 365 Global Tenant Performance Optimization for China users](https://docs.microsoft.com/office365/enterprise/office-365-networking-china).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
