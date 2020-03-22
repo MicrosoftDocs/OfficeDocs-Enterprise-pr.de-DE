@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: 00f4181b08a7af4435b06aa143d3741c220023d0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840362"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890344"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -79,6 +79,9 @@ E-Mail-Benutzer, die Exchange-Partnerverbund verwenden, benötigen außerdem ein
 <a name="BKMK_ReqdCore"> </a>
 
 Wenn Sie [Office 365-URLs und IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) verwenden, müssen bestimmte Schritte ausgeführt werden, um sicherzustellen, dass Ihr Netzwerk ordnungsgemäß konfiguriert ist.
+
+> [!NOTE]
+> Diese DNS-Einträge gelten auch für Teams – insbesondere in einem Hybridszenario mit Teams und Skype for Business Online, bei dem bestimmte Verbundprobleme auftreten könnten.
   
 ||||
 |:-----|:-----|:-----|

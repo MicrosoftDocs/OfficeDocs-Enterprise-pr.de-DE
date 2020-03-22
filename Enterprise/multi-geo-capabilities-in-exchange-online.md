@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Weitere Informationen zu Multi-Geo-Funktionen in Exchange Online.
-ms.openlocfilehash: 034631d10cc46fc24a7714dee13ddfc667272a49
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
+ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974837"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42890547"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -53,8 +53,10 @@ Exchange Online synchronisiert die Eigenschaft **PreferredDataLocation** von Azu
 
 - Outlook für Mac-Benutzer können einen vorübergehenden Verlust des Zugriffs auf ihren Online-Archivordner erleiden, während Sie ihr Postfach an einen neuen Geo-Speicherort verschieben. Diese Situation tritt auf, wenn sich die Primär- und Archivpostfächer des Benutzers an verschiedenen Geo-Speicherorten befinden, da Geo-übergreifende Postfachverschiebungen zu unterschiedlichen Zeiten durchgeführt werden können.
 
-- Benutzer können *Postfachordner* nicht über Geo-Speicherorte hinweg in Outlook im Web freigeben (früher bekannt als Outlook Web App oder OWA). Beispielsweise kann ein Benutzer in der Europäischen Union Outlook im Web nicht verwenden, um einen freigegebenen Ordner in einem Postfach zu öffnen, das sich in den Vereinigten Staaten befindet. Outlook im Web-Benutzer können jedoch *andere Postfächer* an verschiedenen Geo-Speicherorten öffnen, indem sie ein separates Browserfenster verwenden, wie unter [Postfach einer anderen Person in einem separaten Browserfenster in Outlook Web App öffnen](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362) beschrieben.
+- Benutzer können *Postfachordner* nicht über Geo-Speicherorte hinweg in Outlook im Web freigeben (früher bekannt als Outlook Web App oder OWA). Beispielsweise kann ein Benutzer in der Europäischen Union Outlook im Web nicht verwenden, um einen freigegebenen Ordner in einem Postfach zu öffnen, das sich in den Vereinigten Staaten befindet. Outlook im Web-Benutzer können jedoch *andere Postfächer* an verschiedenen Geo-Speicherorten über ein separates Browserfenster öffnen, wie unter [Öffnen des Postfachs einer anderen Person in einem separaten Browserfenster in Outlook Web App](https://support.office.com/article/A909AD30-E413-40B5-A487-0EA70B763081#__toc372210362) beschrieben wird.
 
   **Hinweis**: Die Geo-übergreifende Freigabe von Postfachordnern wird in Outlook on Windows unterstützt.
 
 - Öffentliche Ordner werden in Multi-Geo-Organisationen unterstützt. Die öffentlichen Ordner müssen jedoch in dem zentralen Geo-Speicherort verbleiben. Sie können öffentliche Ordner nicht an Satelliten-Geo-Speicherorten verschieben.
+
+- In einer Multi-Geo-Umgebung wird die Geo-übergreifende Postfachüberwachung nicht unterstützt. Wenn beispielsweise einem Benutzer Berechtigungen für den Zugriff auf ein freigegebenes Postfach an einem anderen Geo-Speicherort zugewiesen wurden, werden die von diesem Benutzer ausgeführten Postfachaktionen im Postfachüberwachungsprotokoll des freigegebenen Postfachs nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide).
