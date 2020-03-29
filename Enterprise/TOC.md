@@ -81,7 +81,10 @@
 #### [Netzwerkanforderungen in Office für Mac](network-requests-in-office-2016-for-mac.md)
 #### [Office 365 – IP-Adress- und URL-Webdienst](office-365-ip-web-service.md)
 #### [Zusätzliche, nicht in den Webdiensten enthaltene Endpunkte](additional-office365-ip-addresses-and-urls.md)
-### [Office 365-Leistungsoptimierung für Benutzer in China](office-365-networking-china.md)
+### Optimieren der Office 365-Konnektivität für Remotebenutzer
+#### [Übersicht: Geteilter VPN Tunnel](office-365-vpn-split-tunnel.md)
+#### [Implementierung: Geteilter VPN Tunnel](office-365-vpn-implement-split-tunnel.md)
+#### [Office 365-Optimierung für Benutzer in China](office-365-networking-china.md)
 ### [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 ### [IPv6-Unterstützung in Office 365-Diensten](ipv6-support.md)
 ### [NAT-Unterstützung bei Office 365](nat-support-with-office-365.md)
