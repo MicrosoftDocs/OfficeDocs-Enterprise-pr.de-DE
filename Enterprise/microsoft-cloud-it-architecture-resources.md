@@ -18,12 +18,12 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.'
-ms.openlocfilehash: 5cfed9ba3fd3dcc2c92d0226398cdf7658ee6cab
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
+ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979477"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43037802"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
@@ -46,6 +46,7 @@ In diesen Architekturtools- und -postern finden Sie Informationen zu Microsoft-C
 - **[Reihe: Microsoft 365 Enterprise-Lösungen](microsoft-cloud-it-architecture-resources.md#BKMK_o365solutions)**:
     - [Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten](#microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects)
     - [Gruppen in Microsoft 365 für IT-Architekten](#groups-in-microsoft-365-for-it-architects)
+    - [Sicherheit und Datenschutz für Organisationen, die in mehreren Regionen agieren](#security-and-information-protection-for-multi-region-organizations)
     - [Identität- und Geräteschutz für Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365IDP)
     - [Lösungen zum Schutz von Dateien in Office 365](microsoft-cloud-it-architecture-resources.md#BKMK_O365fileprotect)
     - [Schutz von Informationen in Office 365 für die DSGVO](#office-365-information-protection-for-gdpr)
@@ -162,6 +163,14 @@ Was IT-Architekten über Gruppen in Microsoft 365 wissen müssen
 |**Item**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild für Gruppen-Infografik](downloads/msft-m365-groups-architecture-thumb.png)](downloads/msft-m365-groups.pdf) <br/> [PDF](downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) |Diese Illustrationen erläutern die unterschiedlichen Arten von Gruppen, erklären, wie diese erstellt und verwaltet werden, und bieten einige Vorschläge für Governance.|
+
+### <a name="security-and-information-protection-for-multi-region-organizations"></a>Sicherheit und Datenschutz für Organisationen, die in mehreren Regionen agieren
+Sicherheit und Datenschutz für Organisationen mit einem einzelnen Microsoft 365-Mandanten, die in mehreren Regionen agieren
+
+|**Aspekt**|**Beschreibung**|
+|:-----|:-----|
+|[![Miniaturbild für die Infografik „mehrere Regionen“](media/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx) |Die Verwendung eines einzelnen Microsoft 365-Mandanten für Ihre globale Organisation ist aus vielen Gründen die beste Wahl. Jedoch fällt es vielen Architekten schwer, den Sicherheits- und Datenschutzzielen der verschiedenen Regionen gleichmäßig gerecht zu werden. Diese Themengruppe bietet Empfehlungen dazu. |
+
 
    
 <a name="BKMK_O365IDP"></a>
