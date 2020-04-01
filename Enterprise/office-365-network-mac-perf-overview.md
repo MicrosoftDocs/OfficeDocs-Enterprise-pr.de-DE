@@ -3,7 +3,7 @@ title: Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Übersicht über Netzwerk Leistungsempfehlungen im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 16ef23810645bcd9719107b13d32909af25d4766
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f2ff012d20c799925c571d8065e28859c4c81f71
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890441"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081717"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)
 
@@ -43,7 +43,7 @@ Mess Muster und Office-Standorte sollten 24 Stunden nach der Erfüllung dieser V
 
 **Network Insights**, die dazugehörigen Leistungsempfehlungen und Netzwerkbewertungen sollen beim Entwerfen von Netzwerkperimetern für Ihre Office-Standorte helfen. Jede Insight enthält Live-Details zu den Leistungsmerkmalen eines bestimmten allgemeinen Problems für jeden geografischen Standort, auf den Benutzer auf ihren Mandanten zugreifen. **Leistungsempfehlungen** für die einzelnen Netzwerk Einblicke bieten spezifische Änderungen an der Netzwerkarchitektur, die Sie vornehmen können, um die Benutzerfreundlichkeit im Zusammenhang mit Office 365 Netzwerkkonnektivität zu verbessern. Die Netzwerkbewertung zeigt, wie sich die Netzwerkkonnektivität auf die Benutzerfreundlichkeit auswirkt und einen Vergleich verschiedener Netzwerkverbindungen für Benutzer Standorte ermöglicht.
 
-Mithilfe von **Netzwerkbewertungen** wird ein Aggregat zahlreicher Netzwerk Leistungs Metriken in eine Momentaufnahme ihrer Unternehmensnetzwerk Integrität unterrepräsentiert durch einen Points-Wert von 1-100. Netzwerkbewertungen sind sowohl für den gesamten Mandanten als auch für jeden geografischen Standort ausgelegt, von dem die Benutzer eine Verbindung mit Ihrem Mandanten herstellen, sodass Office 365 Administratoren eine einfache Möglichkeit haben, eine Gestalt der Netzwerkintegrität des Unternehmens zu erfassen und schnell zu bohren. unten in einen detaillierten Bericht für einen beliebigen globalen Bürostandort.
+Mithilfe von **Netzwerkbewertungen** wird ein Aggregat zahlreicher Netzwerk Leistungs Metriken in eine Momentaufnahme ihrer Unternehmensnetzwerk Integrität unterrepräsentiert durch einen Points-Wert von 1-100. Netzwerkbewertungen sind sowohl für den gesamten Mandanten als auch für jeden geografischen Standort ausgelegt, von dem aus Benutzer eine Verbindung mit Ihrem Mandanten herstellen, sodass Office 365 Administratoren eine einfache Möglichkeit haben, eine Gestalt der Netzwerkintegrität des Unternehmens sofort zu erfassen und schnell einen detaillierten Bericht für einen globalen Office-Standort aufzurufen.
 
 Komplexe Unternehmen mit mehreren Office-Standorten und nicht-trivialen Netzwerkperimeter-Architekturen können von diesen Informationen profitieren, entweder während des ersten onboardings für Office 365 oder um Probleme bei der Netzwerkleistung zu beheben, die mit dem Nutzungs Wachstum ermittelt wurden. Dies ist normalerweise nicht erforderlich für kleine Unternehmen, die Office 365 verwenden, oder für Unternehmen, die bereits über eine einfache und direkte Netzwerkkonnektivität verfügen. Unternehmen mit mehr als 500 Benutzern und mehreren Office-Standorten werden davon ausgehen.
 
@@ -62,7 +62,7 @@ Unternehmen können die allgemeine Benutzerfreundlichkeit verbessern und Ihre Um
 
 Microsoft wird manchmal aufgefordert, Netzwerkleistungsprobleme mit Office 365 für große Unternehmenskunden zu untersuchen, und diese weisen häufig eine Hauptursache im Zusammenhang mit der Netzwerk Ausgangs Infrastruktur des Kunden auf. Wenn eine allgemeine Ursache für ein Problem mit dem Umkreis eines Kunden Netzwerks gefunden wird, versuchen wir, einfache Testmessungen zu identifizieren, die diese identifizieren. Ein Test mit einem Schwellenwert für die Messung, mit dem ein bestimmtes Problem identifiziert wird, ist wertvoll, da wir dieselbe Messung an einem beliebigen Ort testen können, um zu ermitteln, ob diese Ursache dort vorhanden ist, und Sie als Netzwerk Einblicke mit dem Administrator freigeben.
 
-Einige Netzwerk Einblicke deuten lediglich auf ein Problem hin, das weiter untersucht werden muss. Ein Netzwerk Einblicke, in dem genügend Tests vorhanden sind, um eine bestimmte Korrekturaktion zur Behebung der Stamm Ursache anzuzeigen, wird als **Empfohlene Aktion**aufgeführt. Diese Empfehlungen, basierend auf Live Metriken, die Werte offen legen, die außerhalb eines vordefinierten Schwellenwerts liegen, sind viel wertvoller als allgemeine Ratschläge zur bewährten Vorgehensweise, da Sie für Ihre Umgebung spezifisch sind und die tatsächliche Verbesserung zeigen, sobald die Es wurden empfohlene Änderungen vorgenommen.
+Einige Netzwerk Einblicke deuten lediglich auf ein Problem hin, das weiter untersucht werden muss. Ein Netzwerk Einblicke, in dem genügend Tests vorhanden sind, um eine bestimmte Korrekturaktion zur Behebung der Stamm Ursache anzuzeigen, wird als **Empfohlene Aktion**aufgeführt. Diese Empfehlungen, basierend auf Live Metriken, die Werte offen legen, die außerhalb eines vordefinierten Schwellenwerts liegen, sind viel wertvoller als allgemeine Ratschläge zur bewährten Vorgehensweise, da Sie für Ihre Umgebung spezifisch sind und die tatsächliche Verbesserung zeigen, nachdem die empfohlenen Änderungen vorgenommen wurden.
 
 ## <a name="network-performance-overview-in-the-microsoft-365-admin-center"></a>Übersicht über die Netzwerkleistung im Microsoft 365 Admin Center
 
@@ -82,7 +82,7 @@ Durch die Auswahl eines Office-Standorts wird eine standortspezifische Zusammenf
 
 ![Details zum Netzwerk Einblicke nach Standort](Media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
-Auf der Seite Zusammenfassung der Office-standortzusammenfassung werden außerdem die Netzwerkbewertung des Standorts, der Netzwerk Bewertungsverlauf, ein Vergleich der Bewertung dieses Standorts mit anderen Kunden in derselben Stadt sowie eine Liste mit spezifischen Einblicken und Empfehlungen angezeigt, die Sie möglicherweise verpflichten sich, die Netzwerkleistung und Zuverlässigkeit zu verbessern. Standorte mit spezifischen Empfehlungen können auch eine geschätzte potenzielle Verbesserung der Wartezeit umfassen.
+Auf der Seite Zusammenfassung der Office-standortzusammenfassung werden außerdem die Netzwerkbewertung des Standorts, der Netzwerk Bewertungsverlauf, ein Vergleich der Bewertung dieses Standorts mit anderen Kunden in derselben Stadt sowie eine Liste mit spezifischen Einblicken und Empfehlungen aufgeführt, die Sie zur Verbesserung der Netzwerkleistung und Zuverlässigkeit Unternehmen können. Standorte mit spezifischen Empfehlungen können auch eine geschätzte potenzielle Verbesserung der Wartezeit umfassen.
 
 Vergleiche zwischen Kunden in der gleichen Stadt basieren auf der Erwartung, dass alle Kunden gleichberechtigten Zugriff auf Netzwerkdienstanbieter, Telekommunikationsinfrastruktur und in der Nähe befindliche Microsoft-Netzwerk Points of Presence haben.
 
@@ -145,4 +145,4 @@ Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr U
 
 [Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 Network Insights Privacy and Terms of use (Preview)](office-365-network-mac-perf-privacy.md)
+[Office 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)

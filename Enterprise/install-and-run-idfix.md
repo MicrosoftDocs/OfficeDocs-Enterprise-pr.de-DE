@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Hier erfahren Sie, wie Sie das Office 365 IdFix-Tool herunterladen und ausführen, um Ihr Active Directory Domain Services (AD DS) vor der Synchronisierung mit Office 365 zu bereinigen.
-ms.openlocfilehash: 7bb1577e7fc1c96cc7edcf96e4aac17b310e3710
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d816abe8e93830832077c614e496576d42890d50
+ms.sourcegitcommit: 7f025939c9dad676602bcd7693a8e356821fd456
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844616"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43068777"
 ---
 # <a name="download-and-run-the-office-365-idfix-tool"></a>Herunterladen und Ausführen des Office 365 IdFix-Tools
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 IdFix ermittelt Fehler wie Duplikate und Formatierungsprobleme in Ihrer Active Directory Domain Services (AD DS)-Domäne, bevor Sie die Synchronisierung mit Office 365 vornehmen. 
   
@@ -74,15 +74,15 @@ Befolgen Sie diese Anweisungen.
   
 1. Melden Sie sich am Computer an, auf dem Sie das IdFix-Tool ausführen möchten.
     
-2. Wechseln Sie zur Microsoft-Downloadwebsite für das [IdFix DirSync Error Remediation Tool](https://go.microsoft.com/fwlink/?linkid=867219).
+2. Wechseln Sie zur Website des [IdFix Dirsync-Fehlerbehebungstools](https://github.com/microsoft/idfix) .
     
-3. Laden Sie die ZIP-Datei herunter, und öffnen Sie sie.
+3. Klicken Sie im Abschnitt **ClickOnce-Start** auf **starten** , um die ZIP-Datei herunterzuladen. Öffnen Sie die ZIP-Datei.
     
-3. Wählen Sie im Fenster **IdFix** die Option **Extrahieren** aus, und klicken Sie dann auf **Alle extrahieren**. Standardmäßig wird IdFix in `C:\Users\<your user name>\Documents\IdFix` extrahiert. 
+4. Wählen Sie im Fenster **IdFix** die Option **Extrahieren** aus, und klicken Sie dann auf **Alle extrahieren**. Standardmäßig wird IdFix in `C:\Users\<your user name>\Documents\IdFix` extrahiert. 
     
-6. Wählen Sie **Extrahieren** aus.
+5. Wählen Sie **Extrahieren** aus.
 
-Diese Anweisungen wurden mit Internet Explorer auf einem Server mit Windows Server 2016 ausgeführt. Wenn Sie eine andere Version von Windows oder einen anderen Browser verwenden, können Ihre Schritte abweichen.
+Ihre Schritte können je nach ihrer Version von Windows und Ihrem Internet Browser variieren.
     
 ## <a name="run-the-idfix-tool"></a>Ausführen des IdFix-Tools
 

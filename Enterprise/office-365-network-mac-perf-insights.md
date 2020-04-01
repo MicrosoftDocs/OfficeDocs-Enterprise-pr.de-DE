@@ -3,7 +3,7 @@ title: Office 365 Netzwerk Einblicke (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/20/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 Netzwerk Einblicke (Vorschau)
-ms.openlocfilehash: 9b9ef28fa22b68f7860864aa6ce706531c0d8e00
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890611"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081707"
 ---
 # <a name="office-365-network-insights-preview"></a>Office 365 Netzwerk Einblicke (Vorschau)
 
@@ -40,7 +40,7 @@ Es gibt fünf spezifische Netzwerk Einblicke, die für jeden Office-Standort ang
 
 ## <a name="backhauled-network-egress"></a>Ausstieg aus dem backhauld-Netzwerk
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerk Ausgang größer als 500 Meilen (800 Kilometer) ist und angibt, dass Office 365 Datenverkehr zu einem gemeinsamen Internet-Edge zurückgezogen wird. Gerät oder Proxy.
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerk Ausgang größer als 500 Meilen (800 Kilometer) ist und angibt, dass Office 365 Datenverkehr zu einem gemeinsamen Internet-Edge-Gerät oder-Proxy zurück geschleppt wird.
 
 Diese Einblicke wird in einigen zusammenfassungsansichten als "Ausstieg" abgekürzt.
 
@@ -50,7 +50,7 @@ Diese Einblicke wird in einigen zusammenfassungsansichten als "Ausstieg" abgekü
 
 Dadurch wird feststellen, dass der Abstand zwischen dem Bürostandort und dem Netzwerk Ausstieg mehr als 500 Meilen (800 Kilometer) beträgt. Der Standort des Büros wird durch einen verborgenen Clientcomputer Speicherort identifiziert, und der Netzwerk Ausgangsspeicherort wird mithilfe von Reverse IP Address to Location Databases identifiziert. Der Office-Standort ist möglicherweise ungenau, wenn Windows-Ortungsdienste auf Computern deaktiviert sind. Der Netzwerk Ausgangsspeicherort ist möglicherweise ungenau, wenn die Datenbankinformationen der Reverse-IP-Adresse ungenau sind.
 
-Details für diese Einblicke sind der Office-Standort, der geschätzte Prozentsatz des Gesamt Mandanten Benutzers am Standort, der aktuelle Netzwerk Ausgangsstandort, die Relevanz des Ausgangs Standorts, der Abstand zwischen dem Standort und dem aktuellen Ausgangspunkt, das Datum, an dem der Bedingung wurde zuerst erkannt, und das Datum, an dem die Bedingung aufgelöst wurde.
+Details für diese Einblicke sind der Office-Standort, der geschätzte Prozentsatz des Gesamt Mandanten Benutzers am Standort, der aktuelle Netzwerk Ausgangsstandort, die Relevanz des Ausgangs Standorts, der Abstand zwischen dem Standort und dem aktuellen Ausgangspunkt, das Datum, an dem die Bedingung erstmals erkannt wurde, und das Datum, an dem die Bedingung aufgelöst wurde.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
@@ -148,3 +148,5 @@ Weitere Informationen zum Minimieren von Leistungsproblemen im Zusammenhang mit 
 [Office 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
 [Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+
+[Office 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)

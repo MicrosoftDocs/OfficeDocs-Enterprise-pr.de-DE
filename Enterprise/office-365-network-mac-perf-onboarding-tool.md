@@ -3,7 +3,7 @@ title: Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 03/31/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
-ms.openlocfilehash: ae3a818100f8b84f89d502f9e076fc1fcf6559e8
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
+ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890398"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43081697"
 ---
 # <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 
@@ -127,3 +127,5 @@ In diesem Abschnitt werden die Ergebnisse eines ICMP-Traceroutes für die Exchan
 [Office 365 Einblicke in die Netzwerkleistung (Vorschau)](office-365-network-mac-perf-insights.md)
 
 [Office 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
+
+[Office 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
