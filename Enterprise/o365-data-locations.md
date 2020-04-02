@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Office 365-Datenspeicherorte'
-ms.openlocfilehash: 004d055c08769524907651a56b1a885d44a111d0
-ms.sourcegitcommit: a59b35b0b2667738998333d25e2a61cd8d7a3e26
+ms.openlocfilehash: ae11127cfaa592ae4a3db0a342e6d68c85fe7774
+ms.sourcegitcommit: 9483bc02cf410e80b56fe898298bd26eef486e17
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42581604"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43076128"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -39,6 +39,12 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 Informationen zu den vertraglichen Verpflichtungen in Bezug auf den Speicherort ruhender Kundendaten finden Sie in den [Nutzungsbedingungen für Microsoft-Onlinedienste](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Informationen zu Azure Active Directory-Datenspeicherorte finden Sie unter [AAD-Datenkarte](https://go.microsoft.com/fwlink/p/?linkid=2092972).
+
+
+Aufgrund der beispiellosen Umstände rund um COVID-19 und der Notwendigkeit, die Nachfrage nach Onlinediensten in Europa zu verwalten, können wir, wenn Ihre Organisation eine Bildungseinrichtung ist, Ihren Office 365-Mandanten in der Europäischen Union (EU), der Europäischen Freihandelsassoziation (EFTA), in Vereinigtes Königreich (UK), in den Vereinigten Staaten (USA) oder Kanada (CA) bereitstellen oder Ihre Daten an ein beliebiges Rechenzentren in EU, EFTA, UK, USA oder Kanada übertragen.  Dies bedeutet, dass Ihre ruhenden Daten in der EU, in der EFTA, im Vereinigten Königreich, in den USA oder in Kanada gespeichert werden können.  Unser Engagement für Compliance, Datenschutz und Sicherheit bleibt unverändert, während wir notwendige und umsichtige Maßnahmen zur Aufrechterhaltung der Dienstverfügbarkeit implementieren.  Wir werden alle anwendbaren Gesetzen hinsichtlich des Datentransfers einhalten.
+
+
+
 
 ## <a name="faq"></a>Häufig gestellte Fragen
 
@@ -3581,7 +3587,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
