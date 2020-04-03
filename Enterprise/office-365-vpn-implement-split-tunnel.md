@@ -3,7 +3,7 @@ title: Implementierung von VPN-Split-Tunneling für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/27/2020
+ms.date: 4/1/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: 060b62e51ed20274867bf4ac6b07f113c39a2805
-ms.sourcegitcommit: c081928170e2a56bc0627e5ec8174c1152fcc151
+ms.openlocfilehash: 028b2f35d1398f432c950c86330c2ee531cea02a
+ms.sourcegitcommit: fce45e7373e5722e1068696565975853126666e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034865"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43093449"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementierung von VPN-Split-Tunneling für Office 365
 
@@ -269,6 +269,7 @@ Wenn Sie weitere Daten zur Fehlerbehebung benötigen oder Hilfe vom Microsoft-Su
 Dieser Abschnitt enthält Links zu ausführlichen Leitfäden für die Implementierung von geteilten Tunneln für den Office 365-Datenverkehr von den gängigsten Partnern in diesem Raum. Wir werden zusätzliche Leitfäden hinzufügen, sobald sie verfügbar sind.
 
 - **Cisco AnyConnect**: [Optimieren des AnyConnect-Split-Tunnels für Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect**: [Optimieren des Office 365-Datenverkehrs über einen geteilten VPN-Tunnel mit Zugriffsausschlussroute](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 
 ## <a name="faq"></a>Häufig gestellte Fragen
 
@@ -328,9 +329,9 @@ Port 80 wird nur für Dinge wie die Umleitung auf eine Port 443-Sitzung verwende
 
 [Office 365-Leistungsoptimierung für Benutzer in China](office-365-networking-china.md)
 
-[Alternative Möglichkeiten für Sicherheitsexperten und IT-Mitarbeiter, moderne Sicherheitskontrollen in den heutigen einzigartigen Remote-Arbeitsszenarien zu erreichen (Blog des Microsoft-Sicherheitsteams)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+[Alternative Möglichkeiten für Sicherheitsexperten und IT-Mitarbeiter, moderne Sicherheitskontrollen in den heutigen einzigartigen Remotearbeitsszenarien zu erreichen (Blog des Microsoft Security Teams)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
-[Betrieb über VPN: Wie Microsoft die Verbindung zu seinen Remotemitarbeitern aufrechterhält](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+[Betrieb über VPN: Wie Microsoft seine Remotemitarbeitern in Verbindung hält](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
 [Prinzipien von Office 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
 
