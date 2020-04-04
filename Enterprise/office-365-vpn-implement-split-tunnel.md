@@ -3,7 +3,7 @@ title: Implementierung von VPN-Split-Tunneling für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/2/2020
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: a0abc94d32887867ae11a0e3c768538bc223b583
-ms.sourcegitcommit: 7eb8b3b55a348eac8f03c97533b5d89388ed0ada
+ms.openlocfilehash: 5cc8a4ecc124090c50e600a5edcec6d7362e6cf5
+ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117921"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131444"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementierung von VPN-Split-Tunneling für Office 365
 
@@ -331,6 +331,8 @@ Port 80 wird nur für Dinge wie die Umleitung auf eine Port 443-Sitzung verwende
 [Office 365-Leistungsoptimierung für Benutzer in China](office-365-networking-china.md)
 
 [Alternative Möglichkeiten für Sicherheitsexperten und IT-Mitarbeiter, moderne Sicherheitskontrollen in den heutigen einzigartigen Remotearbeitsszenarien zu erreichen (Blog des Microsoft Security Teams)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Verbessern der VPN-Leistung bei Microsoft: Verwenden von Windows 10-VPN-Profilen zur Aktivierung automatischer Verbindungen](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Betrieb über VPN: Wie Microsoft seine Remotemitarbeitern in Verbindung hält](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
