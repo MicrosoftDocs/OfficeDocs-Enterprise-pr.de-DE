@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell, um benutzerspezifische Kommunikationseinstellungen mit Skype for Business Online-Richtlinien zuzuweisen.'
-ms.openlocfilehash: b9bb38b4b93d9b18e46fc1891f52d89fd1ba9c9e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 615deca2790e206e6cf117283321307aa01eac74
+ms.sourcegitcommit: f2aefbc2dbbe969fea9db3a4c558651496532413
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844266"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "43146810"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-office-365-powershell"></a>Zuweisen von benutzerspezifischen Skype for Business Online-Richtlinien mit Office 365 PowerShell
 
@@ -107,6 +107,39 @@ Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
 Dieser Befehl legt den Namen der Alex zugewiesenen externen Zugriffsrichtlinie auf einen Nullwert ($Null) fest. Null bedeutet „nichts". Anders ausgedrückt, Alex wird keine externe Zugriffsrichtlinie zugewiesen. Wenn einem Benutzer keine externe Zugriffsrichtlinie zugewiesen ist, wird der Benutzer von der globalen Richtlinie verwaltet.
   
 Um ein Benutzerkonto mithilfe von Windows PowerShell zu deaktivieren, verwenden Sie die Azure Active Directory-Cmdlets zum Entfernen der Skype for Business-Lizenz von Alex. Weitere Informationen finden Sie unter [Deaktivieren des Zugriffs auf Dienste mit Office 365 PowerShell](assign-licenses-to-user-accounts-with-office-365-powershell.md).
+
+## <a name="managing-large-numbers-of-users"></a>Verwalten einer großen Anzahl von Benutzern
+
+Zum Verwalten einer großen Anzahl von Benutzern (1000 oder mehr) müssen Sie die Befehle mithilfe des Cmdlets [Invoke-Command](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) über einen Skriptblock stapeln.  In den vorherigen Beispielen muss jedes Mal, wenn ein Cmdlet ausgeführt wird, der Aufruf eingerichtet und dann auf das Ergebnis gewartet werden, bevor es zurückgesendet wird.  Wenn Sie einen Skriptblock verwenden, können die Cmdlets Remote ausgeführt werden und nach Abschluss der Daten zurückgesendet werden. 
+
+```powershell
+Import-Module LyncOnlineConnector
+$sfbSession = New-CsOnlineSession
+$users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
+
+$batch = 50
+$filter = ''
+$total = $users.Count
+$count = 0
+    $users | ForEach-Object {
+    $upn = $_.UserPrincipalName
+    $filter += "(UserPrincipalName -eq '$upn')"
+    $batch--
+    $count++
+    if (($batch -eq 0) -or ($count -eq $total)) {
+        $filterSB=[ScriptBlock]::Create($filter)
+        Invoke-Command -Session $s -ScriptBlock {param($f) Get-CsOnlineUser -filter $f | Grant-CsClientPolicy -PolicyName "ClientPolicyNoIMURL" -Passthru | Grant-CsExternalAccessPolicy -PolicyName "FederationAndPICDefault"} -ArgumentList $filterSB
+
+        # Reset
+        $batch = 50
+        $filter = ''
+    } else {
+        $filter += " -or "
+    }
+}
+```
+
+Dadurch werden 500 Benutzer gleichzeitig gefunden, die nicht über eine Clientrichtlinie verfügen. Sie erteilt Ihnen die Clientrichtlinie "ClientPolicyNoIMURL" und die Richtlinie für den externen Zugriff "FederationAndPicDefault". Die Ergebnisse werden in Gruppen von 50 Batched und jeder Batch von 50 wird dann an den Remotecomputer gesendet.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -115,4 +148,3 @@ Um ein Benutzerkonto mithilfe von Windows PowerShell zu deaktivieren, verwenden 
 [Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
-
