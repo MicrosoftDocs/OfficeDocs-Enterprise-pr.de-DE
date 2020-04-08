@@ -11,15 +11,14 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Priority
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort verschieben.
-ms.openlocfilehash: 8bcd76959cdddd5bb6fadf390e5b71df8decf0a0
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+ms.openlocfilehash: cf7d0bb73013c776b8cd67579aca334114820743
+ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417040"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175043"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
@@ -191,6 +190,17 @@ Der OneNote-win32-Client und die UWP (Universal) App erkennen Notizbücher autom
 ### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (gilt für Websites, die mit Office 365-Gruppen verbunden sind)
 
 Wenn die Verschiebung des geografischen SharePoint-Websitestandorts abgeschlossen ist, haben Benutzer in der Teams-App Zugriff auf die Websitedateien ihrer Office 365-Gruppe. Außerdem können Dateien, die vor dem Verschieben über den Teams-Chat geteilt wurden, nach Abschluss der Verschiebung weiterhin verwendet werden.
+
+Bekannte Probleme:
+
+|Problem|Problemumgehung|
+|:----|:---------|
+|Dateien, die vor der Verschiebung der Websitegeografie auf der Registerkarte "Dateien" vorhanden sind, können nicht aus Teams heraus geöffnet werden.|Öffnen Sie die Datei aus SharePoint.|
+|Dateien, die vor der Verschiebung der Websitegeografie in Unterhaltungen freigegeben wurden, werden in Teams auf dem Desktop nicht geöffnet.|Öffnen Sie die Datei über die Registerkarte "Dateien".|
+|Die Registerkarte "Kanaldateien" wird beim ersten Besuch nach der Verschiebung der Websitegeografie möglicherweise nicht geöffnet.|Navigieren Sie erneut zur Registerkarte "Dateien".|
+|Der Dateiupload in einer Kanalunterhaltung funktioniert nach der Websiteverschiebung möglicherweise nicht.|Laden Sie die Dateien über die Registerkarte "Dateien" hoch.|
+|Die Dateisuche in Teams zeigt nach der Verschiebung der Websitegeografie keine Ergebnisse an.|Suchen Sie die Dateien über die Registerkarte "Dateien".|
+|Die Microsoft Teams-Ansicht in der Dateien-App (linke Navigation) zeigt Dateien möglicherweise erst an, wenn die Registerkarte "Dateien" der verschobenen Websitegeografie aktualisiert wurde.|Navigieren Sie zur Registerkarte "Dateien" für die Website, die verschoben wurde.|
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Mobile SharePoint-App (iOS/Android)
 

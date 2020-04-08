@@ -3,7 +3,7 @@ title: URLs und IP-Adressbereiche für Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/25/2020
+ms.date: 03/30/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,17 +24,20 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: 403e431f8706b0e27a8a1079f2409ffcd677a28e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 48f838a54a5239c43c1001d92588a931ab20fac2
+ms.sourcegitcommit: cb942f32da99eda6455756ce0fd409cf8ee9de3e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979531"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43058978"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URLs und IP-Adressbereiche für Office 365
 
  **Zusammenfassung:** Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.
   
+> [!NOTE]
+> Im Rahmen der von Microsoft in Reaktion auf die COVID-19-Krise ergriffenen Maßnahmen hat Microsoft beschlossen, ein vorübergehendes Moratorium zu verhängen und die Einführung einiger geplanter Änderungen in Bezug auf URLs und IP-Adressen zu verschieben. Dieses Moratorium dient dazu, es den IT-Teams unserer Kunden zu ermöglichen, mit größtmöglicher Zuversicht und möglichst unkompliziert empfohlene Netzwerkoptimierungen für Office 365-Szenarios zu implementieren, die auf die Telearbeit ausgelegt sind. Vom 24. März 2020 bis zum 30. Juni 2020 werden im Rahmen dieses Moratoriums Änderungen an IP-Bereichen und URLs, die in der Kategorie „Optimieren“ enthalten sind, für wichtige Office 365-Dienste (Exchange Online, SharePoint Online und Microsoft Teams) ausgesetzt. Änderungen innerhalb anderer Endpunktkategorien erfolgen wie üblich. Während dieses Zeitraums können Kunden die Dienstendpunkt-Definitionen für die Office 365-Kategorie „Optimieren“auf statische Weise verwenden, um gezielte Netzwerkoptimierungen (wie Bandbreitenreservierungen oder das Konfigurieren von Split-Tunnel-VPNs) mit minimalem Risiko für die Office 365-Konnektivität aufgrund von Änderungen im Cloud-Netzwerk durchzuführen. Um sicherzustellen, dass keine Dienstunterbrechungen am Ende des Moratoriums auftreten, empfiehlt Microsoft dringend, dass Kunden Änderungsverwaltungs- und/oder Automatisierungsprozesse für Office 365-Dienstendpunkte implementieren, indem Sie die Anweisungen unter [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md) befolgen.
+
 > [!NOTE]
 > Microsoft hat einen REST-basierten Webdienst für die IP-Adress- und FQDN-Einträge auf dieser Seite veröffentlicht. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B. Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können heruntergeladen werden. Dieser Dienst ersetzt das mit dieser Seite verknüpfte XML-Dokument, dessen Unterstützung am 2. Oktober 2018 endete. Um diesem neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](office-365-ip-web-service.md).
   
