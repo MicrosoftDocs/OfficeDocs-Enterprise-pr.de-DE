@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Office 365-Datenspeicherorte'
-ms.openlocfilehash: 5e463b4c9fa20f5f5201c29063cbd1a22018ee37
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: 66d16cdc8733250448398b6246e2fda9226bc2cd
+ms.sourcegitcommit: 8578eb35b83a38fbf8ae7344e2128ddb6458fe16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131464"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43175033"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -102,7 +102,7 @@ In den folgenden globalen Regionen können ruhende Daten gespeichert werden. Die
 
 | Globale Regionen | Die Standorte, an denen Kundendaten gespeichert werden können. |
 | --- | --- |
-| Globale Region 1 – EMEA (Europa, Naher Osten und Afrika) | Österreich, Finnland, Frankreich, Deutschland, Irland, Niederlande, Vereinigtes Königreich |
+| Globale Region 1 – EMEA (Europa, Naher Osten und Afrika) | Österreich, Finnland, Frankreich, Irland, Niederlande |
 | Globale Region 2 – Asien-Pazifik | Hongkong, Japan, Malaysia, Singapur, Südkorea |
 | Globale Region 3 – Nord- und Südamerika | Brasilien, Chile, Vereinigte Staaten |
 
@@ -114,7 +114,7 @@ Im Folgenden sind die Orte angegeben, an denen ruhende Kundendaten im Hinblick a
 | --- | --- |
 | Australien | New South Wales, Victoria |
 | Kanada | Québec City, Toronto |
-| Europäische Union | Österreich, Finnland, Frankreich, Deutschland, Irland, Niederlande, Vereinigtes Königreich |
+| Europäische Union | Österreich, Finnland, Frankreich, Irland, Niederlande |
 | Frankreich | Paris, Marseille |
 | Deutschland | Frankfurt, Berlin |
 | Indien | Chennai, Mumbai, Pune |
