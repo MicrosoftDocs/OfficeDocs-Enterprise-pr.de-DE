@@ -1,5 +1,5 @@
 ---
-title: Office 365 Netzwerk Einblicke (Vorschau)
+title: Microsoft 365 Network Insights (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 Netzwerk Einblicke (Vorschau)
-ms.openlocfilehash: 5064c45ffa552381ccdb6042d5e9d6f072f564aa
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 Network Insights (Vorschau)
+ms.openlocfilehash: baab4716ace0b15df5878d21987c037372a2754e
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081707"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185756"
 ---
-# <a name="office-365-network-insights-preview"></a>Office 365 Netzwerk Einblicke (Vorschau)
+# <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (Vorschau)
 
-**Network Insights** sind Live-Leistungs Metriken, die von Ihrem Office 365-Mandanten gesammelt und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. Einblicke werden im Microsoft 365 Admin Center unter <https://portal.microsoft.com/adminportal/home#/networkperformance>angezeigt.
+**Network Insights** sind Live-Leistungs Metriken, die von Ihrem Microsoft 365-Mandanten gesammelt werden und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. Einblicke werden im Microsoft 365 Admin Center unter <https://portal.microsoft.com/adminportal/home#/networkperformance>angezeigt.
 
 Mithilfe von Insights sollen Netzwerkperimeter für Ihre Office-Standorte entworfen werden. Jede Insight enthält Live-Details zu den Leistungsmerkmalen eines bestimmten allgemeinen Problems für jeden geografischen Standort, auf den Benutzer auf ihren Mandanten zugreifen.
 
@@ -36,11 +36,11 @@ Es gibt fünf spezifische Netzwerk Einblicke, die für jeden Office-Standort ang
 - [Niedrige Downloadgeschwindigkeit von SharePoint-Haustür](#low-download-speed-from-sharepoint-front-door)
 
 >[!IMPORTANT]
->Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
+>Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und stehen nur für Microsoft 365-Mandanten zur Verfügung, die im Feature Preview-Programm registriert wurden.
 
 ## <a name="backhauled-network-egress"></a>Ausstieg aus dem backhauld-Netzwerk
 
-Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerk Ausgang größer als 500 Meilen (800 Kilometer) ist und angibt, dass Office 365 Datenverkehr zu einem gemeinsamen Internet-Edge-Gerät oder-Proxy zurück geschleppt wird.
+Diese Einblicke werden angezeigt, wenn der Network Insights-Dienst erkennt, dass der Abstand zwischen einem bestimmten Benutzerstandort und dem Netzwerk Ausgang größer als 500 Meilen (800 Kilometer) ist und angibt, dass der Microsoft 365-Datenverkehr zu einem gemeinsamen Internet-Edge-Gerät oder-Proxy zurückgezogen wird.
 
 Diese Einblicke wird in einigen zusammenfassungsansichten als "Ausstieg" abgekürzt.
 
@@ -54,7 +54,7 @@ Details für diese Einblicke sind der Office-Standort, der geschätzte Prozentsa
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Für diese Einblicke empfehlen wir den Netzwerk Ausstieg näher am Office-Standort, damit die Konnektivität optimal zum globalen Netzwerk von Microsoft und zur nächsten Office 365 Dienst-Haustür weitergeleitet werden kann. Das Schließen des Netzwerk Ausstiegs für Benutzer in Office-Standorten ermöglicht auch in Zukunft eine verbesserte Leistung, da Microsoft in Zukunft sowohl Netzwerk Points of Presence als auch Office 365-Service-Front-Doors erweitert.
+Für diese Einblicke empfehlen wir den Netzwerk Ausstieg näher am Office-Standort, damit die Konnektivität optimal zum globalen Microsoft-Netzwerk und zur nächsten Microsoft 365-Dienst Haustür weitergeleitet werden kann. Das Schließen des Netzwerk Ausstiegs für Benutzer in Office-Standorten ermöglicht auch in Zukunft eine verbesserte Leistung, da Microsoft in Zukunft sowohl Netzwerk Points of Presence als auch Microsoft 365 Service-Front-Doors erweitert.
 
 Weitere Informationen zum Beheben dieses Problems finden Sie unter Ausgangs [Netzwerkverbindungen lokal](office-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Netzwerk Verbindungs Prinzipien](office-365-network-connectivity-principles.md).
 
@@ -68,11 +68,11 @@ Diese Einblicke wird in einigen zusammenfassungsansichten als "Peers" abgekürzt
 
 ### <a name="what-does-this-mean"></a>Szenario
 
-In dieser Einblicke wird die Gesamtleistung von Office 365-Kunden in derselben Stadt wie dieser Bürostandort untersucht. Diese Einblicke wird angezeigt, wenn die durchschnittliche Wartezeit Ihrer Benutzer 10% über der durchschnittlichen Wartezeit von benachbarten Mandanten liegt.
+In dieser Einblicke wird die Gesamtleistung von Microsoft 365-Kunden in derselben Stadt wie dieser Standort untersucht. Diese Einblicke wird angezeigt, wenn die durchschnittliche Wartezeit Ihrer Benutzer 10% über der durchschnittlichen Wartezeit von benachbarten Mandanten liegt.
 
 ### <a name="what-should-i-do"></a>Was soll ich machen?
 
-Es kann viele Gründe für diese Bedingung geben, einschließlich Wartezeit in Ihrem Unternehmensnetzwerk oder ISP, Engpässe oder Architektur Designprobleme. Überprüfen Sie die Wartezeit zwischen den einzelnen Hops in der Route zwischen Ihrem Office-Netzwerk und der aktuellen Office 365 Haustür. Weitere Informationen finden Sie unter [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
+Es kann viele Gründe für diese Bedingung geben, einschließlich Wartezeit in Ihrem Unternehmensnetzwerk oder ISP, Engpässe oder Architektur Designprobleme. Überprüfen Sie die Wartezeit zwischen den einzelnen Hops in der Route zwischen Ihrem Office-Netzwerk und der aktuellen Microsoft 365-Haustür. Weitere Informationen finden Sie unter [Office 365 Network Connectivity Principles](office-365-network-connectivity-principles.md).
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Verwenden eines nicht optimalen Exchange Online-Dienst-Front-Door
 
@@ -122,7 +122,7 @@ Um die Downloadgeschwindigkeit zu verbessern, muss die Bandbreite möglicherweis
 
 ## <a name="china-user-optimal-network-egress"></a>China-Benutzer optimales Netzwerk Austritt
 
-Diese Einblicke werden angezeigt, wenn Ihre Organisation über Benutzer in China verfügt, die sich mit Ihrem Office 365-Mandanten an anderen geografischen Standorten verbinden. 
+Diese Einblicke werden angezeigt, wenn Ihre Organisation über Benutzer in China verfügt, die sich mit Ihrem Microsoft 365-Mandanten an anderen geografischen Standorten verbinden. 
 
 ### <a name="what-does-this-mean"></a>Szenario
 
@@ -145,8 +145,8 @@ Weitere Informationen zum Minimieren von Leistungsproblemen im Zusammenhang mit 
 
 [Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)](office-365-network-mac-perf-overview.md)
 
-[Office 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
+[Microsoft 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
-[Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Office 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
