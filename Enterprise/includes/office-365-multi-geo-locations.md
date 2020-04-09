@@ -10,7 +10,7 @@
 |Japan                        |JPN     |Rechenzentren in Südost- oder Ostasien|
 |Korea                        |KOR     |Rechenzentren in Südost- oder Ostasien|
 |Nordamerika                |NAM     |Rechenzentren in den USA                    |
-|Südafrika                 |ZAF     |(Bald verfügbar)                     |
-|Schweiz                  |SWE     |(Bald verfügbar)                     |
-|Vereinigte Arabische Emirate         |ARE     |(Bald verfügbar)                     |
+|Südafrika                 |ZAF     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
+|Schweiz                  |CHE     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
+|Vereinigte Arabische Emirate         |ARE     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
 |Vereinigtes Königreich               |GBR     |Rechenzentren in Europa                |
