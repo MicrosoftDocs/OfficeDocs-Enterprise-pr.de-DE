@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 'Zusammenfassung: Beschreibung der IPv6-Unterstützung in Microsoft Office 365-Komponenten und in Office 365 Government-angeboten.'
-ms.openlocfilehash: 32e90f0dda9b06d06b6e289b26f640c4ddc79cf3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 13fd1cfef26f5e69c87f650c46f71071b72f2d15
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845116"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206542"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>IPv6-Unterstützung in Office 365-Diensten
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Office 365 unterstützt sowohl IPv6 als auch IPv4; Allerdings sind nicht alle Office 365 Funktionen mit IPv6 vollständig aktiviert. Dies bedeutet, dass Sie sowohl IPv4 als auch IPv6 verwenden müssen, um eine Verbindung mit Office 365 herzustellen. Wenn Sie den ausgehenden Datenverkehr auf Office 365 filtern, finden Sie die vollständige Liste der von Office 365 unterstützten IPv6-Adressen im Artikel [Office 365-URLs und IP-Adressbereiche](urls-and-ip-address-ranges.md). Nachdem Ihr Netzwerk konfiguriert wurde und die entsprechenden IPv6-Adressen zulässig sind, können Sie den [Office 365 IPv6-Testplan](https://go.microsoft.com/fwlink/?LinkId=293447) aus dem Microsoft Download Center herunterladen.
   
@@ -57,11 +57,11 @@ Exchange Online Protection (EoP) unterstützt IPv6, wenn die Übertragung über 
   
 ### <a name="ipv6-support-for-office-365-government-offerings"></a>IPv6-Unterstützung für Office 365 staatliche Angebote
 
-Office 365 IPv6-Unterstützung für Regierungs Angebote entspricht dem Office of Management and Budget (OMB)-Memorandum für Chief Information Officers of Executive Departments and Agencies, sowie der Einführung von Internet Protocol Version 6 durch die Bundesregierung (IPv6 Memorandum. [Microsoft Office 365 für Government](https://go.microsoft.com/fwlink/p/?LinkId=325414) ist ein Multi-Mandanten Dienst, der US-Regierungsdaten in einer getrennten Community-Cloud speichert. Wie bei anderen Office 365 angeboten bietet es Produktivitäts-und Zusammenarbeitsdienste, einschließlich Exchange Online, Skype for Business, SharePoint Online und Office Professional Plus. 
+Office 365 IPv6-Unterstützung für Regierungs Angebote entspricht dem Office of Management and Budget (OMB)-Memorandum für Chief Information Officers of Executive Departments and Agencies, sowie der Einführung von Internet Protocol Version 6 (IPv6) Memorandum durch die Bundesregierung. [Microsoft Office 365 für Government](https://go.microsoft.com/fwlink/p/?LinkId=325414) ist ein Multi-Mandanten Dienst, der US-Regierungsdaten in einer getrennten Community-Cloud speichert. Wie bei anderen Office 365 angeboten bietet es Produktivitäts-und Zusammenarbeitsdienste, einschließlich Exchange Online, Skype for Business, SharePoint Online und Office 365 ProPlus. 
 
 Die Microsoft Office 365 Government-Angebote gelten nur für 2013 und höher. Weitere Informationen zu den Office 365 staatlichen Angeboten finden Sie unter [Bekanntgabe Office 365 for Government: A US Government Community Cloud](https://go.microsoft.com/fwlink/p/?LinkId=325414). International Traffic in Arms Regulations (ITAR) ist eine Reihe von US-Regierungsverordnungen, die den Export und Import von verteidigungsbezogenen Artikeln und Diensten auf der [US-Munitions Liste (USML)](https://go.microsoft.com/fwlink/p/?LinkId=325415)steuern. 
 
-Microsoft Office 365 für Unternehmen bietet dedizierte Hosting-Dienste für Microsoft-Produktivitätslösungen, die die Sicherheits-, Datenschutz-und behördlichen Compliance-Anforderungen für US-Bundesbehörden unterstützen, die Bundes Informationssicherheit erfordern Verwaltung (FISMA) Zertifizierung und kommerzielle Entitäten, die ITAR unterliegen.
+Microsoft Office 365 für Unternehmen stellt dedizierte Hosting-Dienste für Microsoft-Produktivitätslösungen bereit, die die Sicherheits-, Datenschutz-und behördlichen Compliance-Anforderungen für US-Bundesbehörden unterstützen, in denen die Federal Information Security Management (FISMA)-Zertifizierung und kommerzielle Entitäten ITAR unterliegen.
   
 ## <a name="things-to-consider-when-using-ipv6-and-office-365"></a>Zu berücksichtigende Aspekte bei der Verwendung von IPv6 und Office 365
 

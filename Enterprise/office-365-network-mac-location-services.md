@@ -1,5 +1,5 @@
 ---
-title: Office 365 Network Connectivity Location Services (Vorschau)
+title: Microsoft 365 Network Connectivity Location Services (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 Network Connectivity Location Services (Vorschau)
-ms.openlocfilehash: 6deb964955689416219c5b9350ea150ecd4f3b7a
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365 Network Connectivity Location Services (Vorschau)
+ms.openlocfilehash: 13ca35afe4bd375482a9fc924801e240c361bb6b
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081810"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185726"
 ---
-# <a name="office-365-network-connectivity-location-services-preview"></a>Office 365 Network Connectivity Location Services (Vorschau)
+# <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 Network Connectivity Location Services (Vorschau)
 
-Das Microsoft 365 Admin Center zeigt nun **Netzwerk Einblicke und Leistungsempfehlungen**an, bei denen es sich um Live-Leistungs Metriken handelt, die von Ihrem Office 365-Mandanten gesammelt und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. Die Netzwerkkonnektivität des Unternehmens wird pro Bürostandort über einen Netzwerk Ausstieg-Standort im Internet entwickelt. Office 365 Clientkonnektivität verwendet diese Route und dann über das Internet an Microsoft-Dienst-Front-Door-Server. Das Identifizieren von Office-Standorten ist der Schlüssel, um diese Netzwerk Einblicke anzeigen zu können.
+Das Microsoft 365 Admin Center zeigt nun **Netzwerk Einblicke und Leistungsempfehlungen**an, bei denen es sich um Live-Leistungs Metriken handelt, die von Ihrem Microsoft 365-Mandanten gesammelt und nur für administrative Benutzer in Ihrem Mandanten verfügbar sind. Die Netzwerkkonnektivität des Unternehmens wird pro Bürostandort über einen Netzwerk Ausstieg-Standort im Internet entwickelt. Die Microsoft 365-Clientkonnektivität verwendet diese Route und dann über das Internet an Microsoft-Dienst-Front-Door-Server. Das Identifizieren von Office-Standorten ist der Schlüssel, um diese Netzwerk Einblicke anzeigen zu können.
 
 ## <a name="location-in-network-measurements"></a>Speicherort in Netzwerk Messungen
 

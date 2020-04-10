@@ -1,9 +1,9 @@
 ---
-title: Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
+title: Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/08/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,28 +13,28 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
-ms.openlocfilehash: 299bace51b768add9ace29ce2f0680a2d8dd0250
-ms.sourcegitcommit: 44a0e9a134373eb0d1292761089a6557b01ac327
+description: Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
+ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
+ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43081697"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43185736"
 ---
-# <a name="office-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Office 365 Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
+# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 
-Das Onboarding-Tool für Office 365-Netzwerk <https://connectivity.office.com>befindet sich unter. Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
+Das Microsoft 365-Netzwerk-Onboarding-Tool <https://connectivity.office.com>befindet sich unter. Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
 
-Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf produktinternen Messungen für Ihren Office 365 Mandanten. Im Vergleich dazu werden die Einblicke des Netzwerks aus dem Onboarding-Tool des Office 365 Netzwerks lokal im Tool ausgeführt. Tests, die im Produkt ausgeführt werden können, sind limitiert, und durch das lokale Testen des Benutzers können weitere Daten gesammelt werden, was zu tieferen Einblicken führt. Betrachten Sie dann, dass das Netzwerk Einblicke in das Microsoft 365 Admin Center zeigt, dass es ein Netzwerkproblem für die Verwendung von Office 365 an einem bestimmten Standort gibt. Das Onboarding-Tool für Office 365-Netzwerk kann helfen, die Ursache dieses Problems zu ermitteln, das zu einer empfohlenen Aktion zur Verbesserung der Netzwerkleistung führt.
+Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf produktinternen Messungen für Ihren Microsoft 365-Mandanten. Im Vergleich dazu werden die Netzwerk Einblicke aus dem Microsoft 365-Netzwerk-Onboarding-Tool lokal im Tool ausgeführt. Tests, die im Produkt ausgeführt werden können, sind limitiert, und durch das lokale Testen des Benutzers können weitere Daten gesammelt werden, was zu tieferen Einblicken führt. Betrachten Sie dann, dass das Netzwerk Einblicke in das Microsoft 365 Admin Center zeigt, dass es ein Netzwerkproblem für die Verwendung von Microsoft 365 an einem bestimmten Standort gibt. Das Microsoft 365-Netzwerk-Onboarding-Tool kann helfen, die Ursache dieses Problems zu ermitteln, das zu einer empfohlenen Aktion zur Verbesserung der Netzwerkleistung führt.
 
-Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Netzwerkqualität für jeden Office-Standort im Microsoft 365 Admin Center beurteilt werden kann und nach der Bereitstellung von Tests basierend auf dem Office 365 Netzwerk-Onboarding-Tool weitere Details gefunden werden können.
+Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Netzwerkqualität für jeden Office-Standort im Microsoft 365 Admin Center beurteilt werden kann und nach der Bereitstellung von Tests basierend auf dem Microsoft 365-Netzwerk-Onboarding-Tool weitere Details gefunden werden können.
 
 >[!IMPORTANT]
->Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und sind nur für Office 365 Mandanten verfügbar, die im Feature Preview-Programm registriert wurden.
+>Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und stehen nur für Microsoft 365-Mandanten zur Verfügung, die im Feature Preview-Programm registriert wurden.
 
 ## <a name="the-advanced-tests-client-application"></a>Die Clientanwendung für erweiterte Tests
 
-Das Onboarding-Tool für Office 365 Netzwerk umfasst zwei Teile. Es gibt die Website <https://connectivity.office.com> , und es gibt eine herunterladbare Windows-Clientanwendung. Der herunterladbare Client führt erweiterte Netzwerkverbindungstests aus, und die meisten Tests bedürfen dieser Ausführung.
+Das Onboarding-Tool für das Microsoft 365-Netzwerk besteht aus zwei Teilen. Es gibt die Website <https://connectivity.office.com> , und es gibt eine herunterladbare Windows-Clientanwendung. Der herunterladbare Client führt erweiterte Netzwerkverbindungstests aus, und die meisten Tests bedürfen dieser Ausführung.
 
 Sie können den Advanced Client-Test auf der Website ausführen, und die Ergebnisse werden während der Ausführung wieder in die Webseite aufgefüllt.
 
@@ -54,7 +54,7 @@ Der Netzwerk Ausgangsstandort wird in der Kartenansicht angezeigt und mit dem Be
 
 Der Standort, der von der IP-Adresse des Netzwerks ausgehoben nachgeschlagen wurde, ist möglicherweise nicht genau, was zu einem falschen Ergebnis dieses Tests führen würde. Um zu überprüfen, ob dieser Fehler für eine bestimmte IP-Adresse auftritt, können Sie Websites mit öffentlich zugänglichen Netzwerk-IP-Adress Standorten verwenden.
 
-Für Office 365 Netzwerkkonnektivität wird das Implementieren des Ausstiegs von lokalen und direkten Netzwerken von Benutzer Bürostandorten zum Internet empfohlen. Verbesserungen an lokalem und direktem Ausstieg sind die beste Möglichkeit, diese Netzwerk Einblicke zu beheben.
+Für die Microsoft 365-Netzwerkkonnektivität wird das Implementieren des Ausstiegs von lokalen und direkten Netzwerken von Benutzer Bürostandorten ins Internet empfohlen. Verbesserungen an lokalem und direktem Ausstieg sind die beste Möglichkeit, diese Netzwerk Einblicke zu beheben.
 
 ## <a name="exchange-online-service-front-door"></a>Exchange Online Dienst Haustür
 
@@ -66,7 +66,7 @@ Wir berechnen eine mögliche Verbesserung der TCP-Wartezeit für die Haustür de
 
 ## <a name="comparison-of-performance-of-customers-in-the-area"></a>Vergleich der Leistung von Kunden in der Region
 
-Die TCP-Netzwerkwartezeit des Benutzer Office-Standorts für die Haustür des Exchange Online Diensts wird mit anderen Office 365-Kunden im gleichen Metro-Bereich verglichen. Ein Netzwerk Einblicke wird angezeigt, wenn 10% oder mehr Kunden in derselben Metro-Region eine bessere Leistung aufweisen.
+Die TCP-Netzwerkwartezeit des Benutzer Office-Standorts für die Exchange Online-Dienst-Haustür wird mit anderen Microsoft 365-Kunden im gleichen Metro-Bereich verglichen. Ein Netzwerk Einblicke wird angezeigt, wenn 10% oder mehr Kunden in derselben Metro-Region eine bessere Leistung aufweisen.
 
 Diese Netzwerk Einblicke werden auf der Grundlage generiert, dass alle Benutzer in einer Stadt Zugriff auf die gleiche Telekommunikationsinfrastruktur und die gleiche Nähe zu Internet Stromkreisen und dem Netzwerk von Microsoft haben.
 
@@ -92,11 +92,11 @@ Diese Netzwerk Einblicke wirkt sich insbesondere auf die Auswahl der Frontklappe
 
 ## <a name="dns-lookup-of-exchange-online-front-end-server-and-sharepoint-online-front-end-server"></a>DNS-Lookup von Exchange Online Front-End-Server und SharePoint Online-Front-End-Server
 
-Diese zeigen den DNS-Eintrag für die Dienst-Haustür für diese beiden Office 365 Arbeitsauslastungen an. Sie werden nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
+Diese zeigen den DNS-Eintrag für den Dienst "Haustür" für diese beiden Microsoft 365-Arbeitslasten an. Sie werden nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
 ## <a name="proxy-server-identification"></a>Proxy Serveridentifikation
 
-Wir identifizieren auf dem lokalen Computer konfigurierte Proxy Server (s). Wir ermitteln, ob eine dieser Einstellungen im Netzwerkpfad für Optimize Category Office 365 Netzwerkdatenverkehr konfiguriert ist. Wir identifizieren den Abstand zwischen dem Benutzer Bürostandort und den Proxyservern. Der Abstand wird zuerst durch ICMP-Ping getestet, und wenn dies nicht der Fall ist, testen wir mit TCP-Ping und schließlich, wenn dies fehlschlägt, wird die IP-Adresse des Proxyservers in einer IP-Adress Standortdatenbank gesucht. Wir zeigen ein Netzwerk Einblicke, wenn der Proxy Server mehr als 500 Meilen (800 Kilometer) vom Benutzer Bürostandort entfernt ist.
+Wir identifizieren auf dem lokalen Computer konfigurierte Proxy Server (s). Wir ermitteln, ob eine dieser Einstellungen im Netzwerkpfad für die Kategorie Optimieren von Microsoft 365-Netzwerkdatenverkehr konfiguriert ist. Wir identifizieren den Abstand zwischen dem Benutzer Bürostandort und den Proxyservern. Der Abstand wird zuerst durch ICMP-Ping getestet, und wenn dies nicht der Fall ist, testen wir mit TCP-Ping und schließlich, wenn dies fehlschlägt, wird die IP-Adresse des Proxyservers in einer IP-Adress Standortdatenbank gesucht. Wir zeigen ein Netzwerk Einblicke, wenn der Proxy Server mehr als 500 Meilen (800 Kilometer) vom Benutzer Bürostandort entfernt ist.
 
 ## <a name="media-quality-checks"></a>Überprüfungen der Medienqualität
 
@@ -106,13 +106,13 @@ Hierbei handelt es sich um UDP-Protokolltests, die von Microsoft Teams-Funktione
 
 ## <a name="tcp-connectivity-tests"></a>TCP-Verbindungstests
 
-Wir testen die http-Konnektivität vom Benutzer Bürostandort bis hin zu allen erforderlichen Office 365 Netzwerkendpunkten. Diese werden unter [https://aka.ms/o365ip](https://aka.ms/o365ip)veröffentlicht. Für alle erforderlichen Netzwerkendpunkte, mit denen keine Verbindung hergestellt werden kann, wird ein Netzwerk Einblicke angezeigt.
+Wir testen die http-Konnektivität vom Benutzer Bürostandort bis hin zu allen erforderlichen Microsoft 365-Netzwerkendpunkten. Diese werden unter [https://aka.ms/o365ip](https://aka.ms/o365ip)veröffentlicht. Für alle erforderlichen Netzwerkendpunkte, mit denen keine Verbindung hergestellt werden kann, wird ein Netzwerk Einblicke angezeigt.
 
 Die Konnektivität ay wird durch einen Proxy Server, eine Firewall oder ein anderes Netzwerksicherheitsgerät im Umkreis des Unternehmensnetzwerks blockiert oder als Cloud-Proxy verwendet.
 
 ## <a name="ssl-interception-tests"></a>SSL-Abfang Tests
 
-Das SSL-Zertifikat wird bei jedem erforderlichen Office 365 Netzwerkendpunkt getestet, der sich in der Kategorie Optimize oder Allow gemäß [https://aka.ms/o365ip](https://aka.ms/o365ip)der Definition unter befindet. Wenn Tests kein Microsoft SSL-Zertifikat finden, muss das verschlüsselte Netzwerk, das verbunden ist, von einem zwischengeschalteten Netzwerkgerät abgefangen worden sein. Ein Netzwerk Einblicke wird auf allen abgefangenen verschlüsselten Netzwerkendpunkten angezeigt.
+Wir testen das SSL-Zertifikat an jedem erforderlichen Microsoft 365-Netzwerkendpunkt, der sich in der Kategorie Optimize oder Allow [https://aka.ms/o365ip](https://aka.ms/o365ip)gemäß der Definition unter befindet. Wenn Tests kein Microsoft SSL-Zertifikat finden, muss das verschlüsselte Netzwerk, das verbunden ist, von einem zwischengeschalteten Netzwerkgerät abgefangen worden sein. Ein Netzwerk Einblicke wird auf allen abgefangenen verschlüsselten Netzwerkendpunkten angezeigt.
 
 Wenn ein SSL-Zertifikat gefunden wird, das nicht von Microsoft bereitgestellt wird, wird der FQDN für den Test und der in-Use-SSL-Zertifikatbesitzer angezeigt. Bei diesem SSL-Zertifikatbesitzer kann es sich um einen Proxy Server Anbieter oder um ein selbstsigniertes Enterprise-Zertifikat handeln.
 
@@ -120,12 +120,34 @@ Wenn ein SSL-Zertifikat gefunden wird, das nicht von Microsoft bereitgestellt wi
 
 In diesem Abschnitt werden die Ergebnisse eines ICMP-Traceroutes für die Exchange Online-Dienst-Haustür, die Haustür des SharePoint Online-Diensts und die Haustür des Microsoft Teams-Diensts dargestellt. Er wird nur für Informationen bereitgestellt, und es gibt keine zugeordnete Netzwerk Einblicke.
 
+## <a name="faq"></a>Häufig gestellte Fragen
+
+Hier finden Sie Antworten auf einige unserer häufig gestellten Fragen.
+
+### <a name="is-this-tool-released-and-supported-by-microsoft"></a>Wird dieses Tool von Microsoft veröffentlicht und unterstützt?
+
+Es ist derzeit ein Machbarkeitsnachweis, und wir planen, regelmäßig Updates bereitzustellen, bis der allgemeine Verfügbarkeitsstatus mit Unterstützung von Microsoft erreicht wird. Bitte geben Sie uns Feedback, damit wir Sie verbessern können. Wir planen, eine detailliertere Office 365 Netzwerk-Onboarding Guide als Teil dieses Tools zu veröffentlichen, das für die Organisation durch die Testergebnisse angepasst wird.
+
+### <a name="what-is-microsoft-365-service-front-door"></a>Was ist Microsoft 365-Dienst-Haustür?
+
+Die Microsoft 365-Dienst-Haustür ist ein Einstiegspunkt im globalen Microsoft-Netzwerk, in dem Office-Clients und-Dienste Ihre Netzwerkverbindung beenden. Für eine optimale Netzwerkverbindung mit Microsoft 365 wird empfohlen, dass Ihre Netzwerkverbindung mit der nächstgelegenen Microsoft 365-Haustür in ihrer Stadt oder ihrer Metro beendet wird.
+
+Hinweis: Microsoft 365-Dienst Haustür verfügt über keine direkte Beziehung zum "Azure Front Door Service"-Produkt, das im Azure Marketplace zur Verfügung steht.
+
+### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Was ist eine optimale Haustür für den Microsoft 365-Dienst?
+
+Eine optimale Microsoft 365-Dienst-Haustür ist eine, die Ihrem Netzwerk Ausgang am nächsten ist, in der Regel in ihrer Stadt oder in ihrer Metro-Region. Verwenden Sie das Microsoft 365 Network Performance Tool, um den Standort Ihrer Haustür für den in-use-Microsoft 365-Dienst und die optimale Dienst-Haustür zu ermitteln. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
+
+### <a name="what-is-an-internet-egress-location"></a>Was ist ein Internet Ausstieg-Standort?
+
+Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr Unternehmensnetzwerk verlässt und eine Verbindung mit dem Internet herstellt. Dies wird auch als Standort bezeichnet, an dem Sie ein NAT-Gerät (Network Address Translation, Netzwerkadressübersetzung) haben und in der Regel eine Verbindung mit einem Internetdienstanbieter (Internet Service Provider, ISP) herstellen. Wenn Sie einen langen Abstand zwischen Ihrem Standort und Ihrem Internet Ausgangsstandort sehen, kann dies eine erhebliche WAN-Backhaul erkennen.
+
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)](office-365-network-mac-perf-overview.md)
 
-[Office 365 Einblicke in die Netzwerkleistung (Vorschau)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 Network Performance Insights (Vorschau)](office-365-network-mac-perf-insights.md)
 
-[Office 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
+[Microsoft 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
-[Office 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)
