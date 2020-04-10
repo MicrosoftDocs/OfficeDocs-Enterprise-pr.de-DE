@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Eine Erläuterung der Berichtsfeatures in Office 365.
-ms.openlocfilehash: 51ae09471b748b6e40af5a5b02b23f755908efff
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
+ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842032"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43206552"
 ---
 # <a name="office-365-reporting-features"></a>Berichtsfeatures in Office 365 
 
@@ -30,7 +30,7 @@ Das Feature Berichte in Office 365 bietet verschiedene Überwachungsberichte fü
 
 ## <a name="office-365-reports-dashboard"></a>Dashboard für Office 365 Berichte
 
-Im Dashboard Berichte der Microsoft 365 Admin Center-Vorschau werden Nutzungsaktivitäten in Office 365 angezeigt. Office 365 globale Administratoren oder ein Exchange Online, SharePoint Online oder Skype for Business Administrator können einen detaillierten Einblick in die Verwendung dieses Diensts erhalten. Beispielsweise die Anzahl der Benutzer in einem bestimmten Office 365 Dienst, die Anzahl der Benutzer, die Office Professional Plus aktiviert haben, und wie viele e-Mails über die Organisation fließen. Berichte stehen für die letzten 7, 30, 90 und 180 Tage zur Verfügung.
+Im Dashboard Berichte der Microsoft 365 Admin Center-Vorschau werden Nutzungsaktivitäten in Office 365 angezeigt. Office 365 globale Administratoren oder ein Exchange Online, SharePoint Online oder Skype for Business Administrator können einen detaillierten Einblick in die Verwendung dieses Diensts erhalten. Beispielsweise die Anzahl der Benutzer in einem bestimmten Office 365 Dienst, die Anzahl der Benutzer, die Office 365 ProPlus aktiviert haben, und wie viele e-Mails durch die Organisation fließen. Berichte stehen für die letzten 7, 30, 90 und 180 Tage zur Verfügung.
 
 Die folgenden Berichte stehen zur Verfügung:
 
