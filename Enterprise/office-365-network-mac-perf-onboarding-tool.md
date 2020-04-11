@@ -3,7 +3,7 @@ title: Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/08/2020
+ms.date: 04/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
-ms.openlocfilehash: 502ee24c458d4681b555f65f28d4928cae2c9498
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
+ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185736"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43225698"
 ---
 # <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
 
 Das Microsoft 365-Netzwerk-Onboarding-Tool <https://connectivity.office.com>befindet sich unter. Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
+
+>[!NOTE]
+>Das Onboarding-Tool unterstützt Mandanten in WW Commercial und gcc moderat, aber nicht gcc High, DoD, Deutschland oder China.
 
 Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf produktinternen Messungen für Ihren Microsoft 365-Mandanten. Im Vergleich dazu werden die Netzwerk Einblicke aus dem Microsoft 365-Netzwerk-Onboarding-Tool lokal im Tool ausgeführt. Tests, die im Produkt ausgeführt werden können, sind limitiert, und durch das lokale Testen des Benutzers können weitere Daten gesammelt werden, was zu tieferen Einblicken führt. Betrachten Sie dann, dass das Netzwerk Einblicke in das Microsoft 365 Admin Center zeigt, dass es ein Netzwerkproblem für die Verwendung von Microsoft 365 an einem bestimmten Standort gibt. Das Microsoft 365-Netzwerk-Onboarding-Tool kann helfen, die Ursache dieses Problems zu ermitteln, das zu einer empfohlenen Aktion zur Verbesserung der Netzwerkleistung führt.
 
