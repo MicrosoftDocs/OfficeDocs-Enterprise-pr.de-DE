@@ -3,7 +3,7 @@ title: Planen des Upgrades von Office 2007- oder 2010 -Servern und -Clients
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es an der Zeit, Ihr Upgrade zu planen. Halten Sie nicht an veralteten und nicht unterstützten Apps und Servern fest. Verwenden Sie diese Ressourcen für Ihre ersten Schritte bei der Planung.
-ms.openlocfilehash: e970546790f290cd2d075adba7628188d60ef19a
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605615"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503803"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007- oder Office 2010-Servern und -Clients
 
 *Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
-Wenn Ihre Organisation ältere Versionen von Office-Produkten und -Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung Ihres Upgrades zu beginnen. Office 2007-Produkte und -Dienste haben das [Ende des Supports](upgrade-from-office-2007-servers-and-products.md) erreicht. Die Office 2010-Produkte und-Dienste (einschließlich Office 2010, Exchange 2010, SharePoint 2010 und Project Server 2010) werden ihr Ende des Supports am **13. Oktober 2020** erreichen. Verwenden Sie die Ressourcen in diesem Abschnitt für Ihre ersten Schritte.
+Wenn Ihre Organisation ältere Versionen von Office-Produkten und -Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung Ihres Upgrades zu beginnen. Office 2007-Produkte und -Dienste haben das [Ende des Supports](upgrade-from-office-2007-servers-and-products.md) erreicht. Office 2010 und Exchange 2010 werden am **13. Oktober 2020**ihr Ende der Unterstützung erreichen. SharePoint 2010 und Project Server 2010 werden am **13. April 2021**ihr Ende der Unterstützung erreichen. Verwenden Sie die Ressourcen in diesem Abschnitt für Ihre ersten Schritte.
 
 Weitere Informationen finden Sie unter [Upgrade von Office 2010-Servern und -Clients](upgrade-from-office-2010-servers-and-products.md).
 

@@ -3,7 +3,7 @@ title: Ressourcen, die Ihnen beim Upgrade von Office 2010-Servern und -Clients h
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/16/2019
+ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -23,18 +23,20 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Der Support für Office 2010-Server und -Clientanwendungen wird bald eingestellt, und es stehen keine benutzerdefinierten Supportvereinbarungen zur Verfügung. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
-ms.openlocfilehash: 8f5ba4ced815cddf3fbbb357b71157c3ad54347e
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979447"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503822"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen, die Ihnen beim Upgrade von Office 2010-Servern und -Clients helfen
 
 *Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
-Der Support für Office 2010, Exchange Server 2010, SharePoint 2010 und Project Server 2010 endet am **13. Oktober 2020**. 
+Office 2010 und Exchange 2010 werden am **13. Oktober 2020**ihr Ende der Unterstützung erreichen. 
+
+SharePoint 2010 und Project Server 2010 werden am **13. April 2021**ihr Ende der Unterstützung erreichen.
 
 Während der Planung Ihres Upgrades ist somit ein guter Zeitpunkt, um einen Wechsel zu Office 365 oder Microsoft 365 zu erwägen. 
 
@@ -44,7 +46,7 @@ Während der Planung Ihres Upgrades ist somit ein guter Zeitpunkt, um einen Wech
 
 Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und die Cloud für Office 2010-Clients und -Server sowie für Windows 7 finden Sie auf unter dem [Poster zum Supportende](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-[![Abbildung des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Dieses einseitige Poster veranschaulicht auf einfache Weise, welche verschiedenen Pfade Sie wählen können, um zu verhindern, dass Office 2010-Clients und -Serverprodukte sowie Windows 7 das Ende des Supports erreichen. Bevorzugte Pfade und unterstützte Optionen in Microsoft 365 Enterprise sind hervorgehoben.
 
@@ -56,8 +58,8 @@ Sie können dieses Poster in den Formaten „Brief“, „Legal“ oder „Tablo
 |:-----|:-----|:-----|
 |Office 2010 (einschließlich Word 2010, Excel 2010, PowerPoint 2010 und Outlook 2010)  <br/> | 13. Oktober 2020 |[Office 2010 – Roadmap zum Supportende](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
 |Exchange Server 2010  <br/> | 13. Oktober 2020  |[Exchange 2010 – Roadmap zum Supportende](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 oder SharePoint Server 2010  <br/> | 13. Oktober 2020 |[Upgrade von SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | 13. Oktober 2020 | [Project Server 2010 – Roadmap zum Supportende](project-server-2010-end-of-support.md) <br/> |
+|SharePoint 2010 oder SharePoint Server 2010  <br/> | 13. April 2021 |[Upgrade von SharePoint 2010](upgrade-from-sharepoint-2010.md) <br/> |
+|Project Server 2010 <br/> | 13. April 2021 | [Project Server 2010 – Roadmap zum Supportende](project-server-2010-end-of-support.md) <br/> |
 |Lync Server 2010 <br/> | 13. April 2021 | [Planung des Upgrades auf Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
     
 ## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein privater Benutzer. Wie gehe ich jetzt vor?

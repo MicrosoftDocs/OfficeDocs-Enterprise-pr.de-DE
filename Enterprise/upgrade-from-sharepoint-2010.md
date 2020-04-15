@@ -3,7 +3,7 @@ title: Upgrade von SharePoint 2010
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 08/21/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: conceptual
 ms.prod: office-online-server
@@ -18,23 +18,23 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Die Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 endet am 13. Oktober 2020. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 81aeebc584f1ba9d6e0bd22a1a83362db4dc669a
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+description: Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 am 13. April 2021. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
+ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
+ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979487"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43503843"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
 *Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
-Microsoft SharePoint 2010 und SharePoint Server 2010 erreichen das Ende der Unterstützung am **13. Oktober 2020**. In diesem Artikel werden die Ressourcen erläutert, die Sie beim Migrieren vorhandener SharePoint Server 2010 Daten zu SharePoint Online in Office 365 oder beim Upgrade Ihrer lokalen SharePoint Server 2010 Umgebung unterstützen.
+Microsoft SharePoint 2010 und SharePoint Server 2010 werden am **13. April 2021**am Ende der Unterstützung erreichen. In diesem Artikel werden die Ressourcen erläutert, die Sie beim Migrieren vorhandener SharePoint Server 2010 Daten zu SharePoint Online in Office 365 oder beim Upgrade Ihrer lokalen SharePoint Server 2010 Umgebung unterstützen.
   
 ## <a name="what-is-end-of-support"></a>Was ist das Ende der Unterstützung?
 
-Wenn Ihr SharePoint Server 2010 und SharePoint Foundation 2010 Software das Ende Ihres Support-Lebenszyklus erreicht (die Zeit, in der Microsoft neue Funktionen, Bugfixes, Sicherheitsfixes usw. bereitstellt), wird dies als Software "Ende der Unterstützung" bezeichnet oder Manchmal, seine "Pensionierung". Nach Abschluss der Unterstützung (oder EOS) eines Produkts wird nichts tatsächlich beendet oder funktioniert nicht mehr. am Ende der Softwareunterstützung stellt Microsoft jedoch nicht mehr Folgendes bereit:
+Wenn Ihre SharePoint Server 2010 und SharePoint Foundation 2010 Software das Ende Ihres Support-Lebenszyklus erreicht (die Zeit, in der Microsoft neue Funktionen, Bugfixes, Sicherheitsfixes usw. bereitstellt), wird dies als "Ende der Unterstützung" der Software oder manchmal als "Ruhestand" bezeichnet. Nach Abschluss der Unterstützung (oder EOS) eines Produkts wird nichts tatsächlich beendet oder funktioniert nicht mehr. am Ende der Softwareunterstützung stellt Microsoft jedoch nicht mehr Folgendes bereit:
   
 - Technischer Support für Probleme, die auftreten können;
     
@@ -109,7 +109,7 @@ Wenn Sie ein Upgrade auf SharePoint Server 2013 oder SharePoint Server 2016 durc
 |**SharePoint Online Vorteil**|**SharePoint Online Nachteil**|
 |:-----|:-----|
 |Microsoft liefert SPO-Hardware und die gesamte Hardwareverwaltung.  <br/> |Die verfügbaren Features können zwischen SharePoint Server lokal und SPO unterschiedlich sein.  <br/> |
-|Sie sind der globale Administrator Ihres Abonnements und können Administratoren den SPO-Websites zuweisen.  <br/> |Einige Aktionen, die einem Farm Administrator in SharePoint Server lokal zur Verfügung stehen, sind in der SharePoint-Administratorrolle in Office 365 nicht vorhanden (oder sind nicht erforderlich), SharePoint-Verwaltung, Websitesammlungsverwaltung und Website Besitz sind jedoch lokal Ihre org.  <br/> |
+|Sie sind der globale Administrator Ihres Abonnements und können Administratoren den SPO-Websites zuweisen.  <br/> |Einige Aktionen, die einem Farm Administrator in SharePoint Server lokal zur Verfügung stehen, sind in der SharePoint-Administratorrolle in Office 365 nicht vorhanden (oder sind nicht erforderlich), SharePoint-Verwaltung, Websitesammlungsverwaltung und Website Besitz sind jedoch lokal in Ihrer Organisation.  <br/> |
 |Microsoft wendet Patches, Fixes und Updates auf zugrunde liegende Hardware und Software an (einschließlich SQL-Servern, auf denen SharePoint Online ausgeführt wird).  <br/> |Da es keinen Zugriff auf das zugrunde liegende Dateisystem im Dienst gibt, sind einige Anpassungen begrenzt.  <br/> |
 |Microsoft veröffentlicht [Vereinbarungen zum Service Level](https://go.microsoft.com/fwlink/?linkid=843153) und wird schnell zur Lösung von Vorfällen auf Dienstebene verschoben.  <br/> |Sicherungs-und Wiederherstellungsoptionen und andere Wiederherstellungsoptionen werden vom Dienst in SharePoint Online automatisiert – Sicherungen werden überschrieben, wenn Sie nicht verwendet werden.  <br/> |
 |Sicherheitstests und die Optimierung der Serverleistung werden laufend im Dienst von Microsoft ausgeführt.  <br/> |Änderungen an der Benutzeroberfläche und anderen SharePoint-Features werden vom Dienst installiert und müssen möglicherweise aktiviert oder deaktiviert werden.  <br/> |
@@ -133,7 +133,7 @@ Ab der neuesten Version des lokalen SharePoint-Produkts (SharePoint Server 2019)
 Wenn Sie den vollständigen Pfad von SharePoint 2010 zu SharePoint Server 2016 ausführen möchten, dauert dies Zeit und wird geplant. Upgrades beinhalten Kosten in Bezug auf eine aktualisierte Hardware (Beachten Sie, dass auch SQL-Server aktualisiert werden müssen), Software und Verwaltung. Außerdem müssen Anpassungen möglicherweise aktualisiert oder sogar aufgegeben werden. Stellen Sie sicher, dass Sie vor dem Upgrade Ihrer SharePoint Server Farm Notizen zu allen wichtigen Anpassungen sammeln.
   
 > [!NOTE]
-> Es ist möglich, das Ende der Unterstützung SharePoint 2010 Farm beizubehalten, eine SharePoint Server 2016-Farm auf neuer Hardware zu installieren (damit die separaten Farmen nebeneinander ausgeführt werden) und dann eine manuelle Inhaltsmigration zu planen und auszuführen (zum herunterladen und erneuten Hochladen von Inhalten für Beispiel). Es gibt potenzielle Gefahren für diese manuellen Verschiebungen (beispielsweise Dokumente, die von 2010 mit einem aktuellen zuletzt geänderten Konto mit dem Alias des Kontos ausgeführt werden, das die manuelle Verschiebung ausführt), und einige arbeiten müssen im Voraus erfolgen (Neuerstellen von Websites, Unterwebsites, Berechtigungen und List-Strukturen). Es ist eine gute Zeit, um zu prüfen, welche Daten Sie in den Speicher umlegen können oder nicht mehr benötigen. Dadurch können die Auswirkungen der Migration reduziert werden. Reinigen Sie in beiden Fällen Ihre Umgebung vor dem Upgrade. Stellen Sie sicher, dass Ihre vorhandene Farm funktionsfähig ist, bevor Sie ein Upgrade durchführen, und (sicher) bevor Sie außer Betrieb nehmen! 
+> Es ist möglich, das Ende der Unterstützung SharePoint 2010 Farm beizubehalten, eine SharePoint Server 2016-Farm auf neuer Hardware zu installieren (damit die separaten Farmen nebeneinander ausgeführt werden) und dann eine manuelle Inhaltsmigration zu planen und auszuführen (beispielsweise zum herunterladen und erneuten Hochladen von Inhalten). Es gibt potenzielle Gefahren für diese manuellen Verschiebungen (beispielsweise Dokumente, die von 2010 mit einem aktuellen zuletzt geänderten Konto mit dem Alias des Kontos ausgeführt werden, das die manuelle Verschiebung ausführt), und einige arbeiten müssen im Voraus erfolgen (Neuerstellen von Websites, Unterwebsites, Berechtigungen und Listenstrukturen). Es ist eine gute Zeit, um zu prüfen, welche Daten Sie in den Speicher umlegen können oder nicht mehr benötigen. Dadurch können die Auswirkungen der Migration reduziert werden. Reinigen Sie in beiden Fällen Ihre Umgebung vor dem Upgrade. Stellen Sie sicher, dass Ihre vorhandene Farm funktionsfähig ist, bevor Sie ein Upgrade durchführen, und (sicher) bevor Sie außer Betrieb nehmen! 
   
 Denken Sie daran, die **unterstützten und nicht unterstützten Upgrade-Pfade**zu überprüfen: 
   
@@ -180,7 +180,7 @@ Wenn Sie sich für eine hybride SharePoint Server Farm als Migrationsziel entsch
   
 Stellen Sie sicher, dass Sie sich mit den vorhandenen Hybrid Typen vertraut machen und die Verbindung zwischen Ihrer lokalen SharePoint-Farm und Ihrem Office 365 Abonnement konfigurieren.
   
-Eine gute Möglichkeit, um zu sehen, wie eine hybride SharePoint-Farm funktioniert, ist das Erstellen einer [Office 365-Entwicklungs/Test-Umgebung](https://go.microsoft.com/fwlink/?linkid=843152). Nachdem Sie eine Testversion oder ein Office 365-Abonnement erworben haben, sind Sie auf dem Weg zum Erstellen der Websitesammlungen, Webs und Dokumentbibliotheken in SharePoint Online, in die Sie Daten migrieren können (entweder manuell, mithilfe der Migrations-API oder – wenn Sie "meine" migrieren möchten. Websiteinhalte für OneDrive für Unternehmen – über den Hybrid-Assistenten).
+Eine gute Möglichkeit, um zu sehen, wie eine hybride SharePoint-Farm funktioniert, ist das Erstellen einer [Office 365-Entwicklungs/Test-Umgebung](https://go.microsoft.com/fwlink/?linkid=843152). Nachdem Sie eine Testversion oder ein Office 365-Abonnement erworben haben, sind Sie auf dem Weg zum Erstellen der Websitesammlungen, Webs und Dokumentbibliotheken in SharePoint Online, in die Sie Daten migrieren können (entweder manuell, mithilfe der Migrations-API oder – wenn Sie meine Website Inhalte zu OneDrive für Unternehmen migrieren möchten – über den Hybrid-Assistenten).
   
 > [!NOTE]
 > Denken Sie daran, dass Ihre SharePoint Server 2010 Farm zunächst lokal aktualisiert werden muss, um entweder SharePoint Server 2013 oder SharePoint Server 2016, um die Hybrid Option zu verwenden. SharePoint Foundation 2010 und SharePoint Foundation 2013 können keine Hybrid Verbindungen mit SharePoint Online erstellen. 
@@ -189,7 +189,7 @@ Eine gute Möglichkeit, um zu sehen, wie eine hybride SharePoint-Farm funktionie
 
 Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und die Cloud für Office 2010-Clients und -Server sowie für Windows 7 finden Sie auf unter dem [Poster zum Supportende](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-[![Abbildung des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Dieses einseitige Poster veranschaulicht auf einfache Weise, welche verschiedenen Pfade Sie wählen können, um zu verhindern, dass Office 2010-Clients und -Serverprodukte sowie Windows 7 das Ende des Supports erreichen. Bevorzugte Pfade und unterstützte Optionen in Microsoft 365 Enterprise sind hervorgehoben.
 
