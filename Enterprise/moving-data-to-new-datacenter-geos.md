@@ -1,5 +1,5 @@
 ---
-title: Verschieben von Kundenkerndaten in neue Office 365-Rechenzentrumsregionen (Geos)
+title: Verschieben der Kern Daten in das neue Microsoft 365 Datacenter GEOS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,16 +14,16 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'Neue Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten gemäß der Definition in den Microsoft Online Services-Nutzungsbedingungen: Exchange Online-Postfachinhalte (E-Mail-Text, Kalendereinträge und der Inhalt von E-Mail-Anlagen), SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien sowie nach OneDrive for Business hochgeladene Dateien.'
-ms.openlocfilehash: 0efe43b61351d89452abb9a114b37f8df9d79ec2
-ms.sourcegitcommit: 160a2564c90a4d64d19f072e0de9fe1b3cd0c917
+ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
+ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417050"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43516546"
 ---
-# <a name="moving-core-data-to-new-office-365-datacenter-geos"></a>Verschieben von Kundenkerndaten in neue Office 365-Rechenzentrumsregionen (Geos)
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Microsoft 365 Datacenter GEOS
 
-Wir eröffnen weitere neue Rechenzentrumsregionen für Office 365 for Business-Dienste. Diese neuen Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. 
+Wir öffnen weiterhin das neue Rechenzentrum GEOS für Microsoft 365-Dienste. Diese neuen Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. 
 
 Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten, z. B.: 
 - Exchange Online-Postfachinhalte (E-Mail-Texte, Kalendereinträge und der Inhalt von E-Mail-Anlagen)
@@ -46,22 +46,21 @@ Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzent
 |**Südafrika**| Europa | Südafrika | Juli 2019 |
 |**Schweiz, Liechtenstein**| Europa | Schweiz | Dezember 2019 |
 |**Deutschland**| Europa | Deutschland | Dezember 2019 |
+|**Norwegen**| Europa | Norwegen | April 2020 |
   
 Für Neukunden oder nach der Verfügbarkeit der neuen Rechenzentrumsregion erstellte Office 365-Mandanten werden die ruhenden Kundenkerndaten automatisch in der neuen Rechenzentrumsregion gespeichert.
 
 
 >[!Note]
->Die Rechenzentrumsregion Deutschland wurde im Dezember 2019 gestartet. Für neue Office 365-Kunden, deren Mandanten eine deutsche Anmeldeadresse zugeordnet ist, werden die ruhenden Kundenkerndaten in Deutschland gespeichert. Wir planen, in Zukunft für deutsche Kunden die Migration von Europa nach Deutschland anzubieten. Derzeit können Kunden von Microsoft Cloud Germany/Deutschland die Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen anfordern. Weitere Informationen finden Sie unter [Anmelden für die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](https://aka.ms/office365germanymoveoptin).
+>Die Rechenzentrumsregion Deutschland wurde im Dezember 2019 gestartet. Für neue Microsoft 365-Kunden mit einer deutschen Anmeldeadresse, die Ihrem Mandanten zugeordnet ist, werden Ihre wichtigsten Kundendaten in Rest in Deutschland gespeichert. Wir planen, in Zukunft für deutsche Kunden die Migration von Europa nach Deutschland anzubieten. Derzeit können Kunden von Microsoft Cloud Germany/Deutschland die Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen anfordern. Weitere Informationen finden Sie unter [Anmelden für die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](https://aka.ms/office365germanymoveoptin).
 >
   
 Eine vollständige Liste aller Rechenzentrumsregionen, Rechenzentren und Standorte ruhender Kundendaten ist als Teil der [interaktiven Rechenzentrumskarten](https://office.com/datamaps) verfügbar. 
   
 ## <a name="data-residency-option"></a>Datenaufbewahrungsoption
 
-Wir bieten eine Datenaufbewahrungsoption für bestehende Office 365-Kunden der in der obigen Tabelle aufgeführten Rechenzentrumsregionen. Mit dieser Option können Kunden mit Datenaufbewahrungsanforderungen eine frühe Migration der ruhenden Kundenkerndaten ihrer Organisation zu ihrer neuen Rechenzentrumsregion anfordern.  Microsoft bietet allen berechtigten Kunden, die eine frühe Migration anfordern, einen zugesicherten Stichtag während des Registrierungsfensters.  Auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) finden Sie weitere Details zum Registrierungsfenster für Ihre Geografie und den Registrierungsschritten des Programms.  Bis zum Abschluss der Datenverschiebungen können bis zu 24 Monate ab dem Anforderungszeitraum vergehen.
+Wir stellen eine Data Residency-Option für vorhandene Microsoft 365-Kunden bereit, die unter das in der obigen Tabelle aufgeführte Datencenter-GEOS fallen. Mit dieser Option können Kunden mit Datenaufbewahrungsanforderungen eine frühe Migration der ruhenden Kundenkerndaten ihrer Organisation zu ihrer neuen Rechenzentrumsregion anfordern.  Microsoft bietet allen berechtigten Kunden, die eine frühe Migration anfordern, einen zugesicherten Stichtag während des Registrierungsfensters.  Auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) finden Sie weitere Details zum Registrierungsfenster für Ihre Geografie und den Registrierungsschritten des Programms.  Bis zum Abschluss der Datenverschiebungen können bis zu 24 Monate ab dem Anforderungszeitraum vergehen.
 
-Wenn Sie keine Maßnahmen ergreifen, kann Microsoft Ihre Kundenkerndaten im Rahmen der Dienstverwaltung und Optimierung im Laufe der Zeit an den neuen geografischen Datacenter-Standort verschieben. Ihre Kundenkerndaten können potenziell nur an Ihre neue Rechenzentrumsregion verschoben werden und nicht an beliebige andere geografische Standorte. Die Mandantenadministratoren werden über das Nachrichtencenter, wenn eine solche Dienstverwaltungsverschiebung abgeschlossen ist, und der Datenspeicherort im Admin Center wird aktualisiert.
-   
 Mit der neuen Rechenzentrumsregion stellen wir keine eigenen Funktionen, Features oder Compliancezertifizierungen bereit.
     
 Aufgrund der Komplexität, Präzision und Skalierbarkeit, mit der Datenverschiebungen in einer global betriebenen und automatisierten Umgebung ausgeführt werden müssen, ist es uns unmöglich anzugeben, wann eine Datenverschiebung für Ihren oder einen anderen Mandanten voraussichtlich abgeschlossen sein wird. Kunden erhalten über das Nachrichtencenter eine Bestätigung pro teilnehmendem Dienst, sobald die Verschiebung ihrer Daten abgeschlossen ist. 
