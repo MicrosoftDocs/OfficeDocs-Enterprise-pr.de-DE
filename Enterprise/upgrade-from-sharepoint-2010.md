@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 am 13. April 2021. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: e4e4b874d5ea73fa37c3d1e338890a1391516273
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
+ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503843"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "43532300"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
@@ -68,7 +68,7 @@ Hier sind die drei Pfade, die Sie ausführen können, um das Ende der Unterstüt
 ![SharePoint Server 2010 Aktualisierungspfade](./media/upgrade-from-sharepoint-2010/upgrade-from-sharepoint-2010-paths.png)
 
 >[!Note]
->Das Ende der Unterstützung für SharePoint Server 2010 und SharePoint Foundation 2010 sind für den 13. Oktober 2020 geplant, *Bitte* beachten Sie jedoch, dass Sie stets auf der [Produktlebenszyklus-Website](https://support.microsoft.com/lifecycle) nach den aktuellsten Terminen suchen sollten.
+>Das Ende der Unterstützung für SharePoint Server 2010 und SharePoint Foundation 2010 sind für den 13. April 2021 geplant, *Bitte* beachten Sie jedoch, dass Sie immer auf der [Produktlebenszyklus-Website](https://support.microsoft.com/lifecycle) nach den aktuellsten Terminen suchen sollten.
 >
 
   
