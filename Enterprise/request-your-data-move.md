@@ -1,7 +1,7 @@
 ---
 title: Anfordern der Datenverschiebung
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung einreichen, damit die Kundendaten ihrer teilnehmenden Microsoft 365-Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: 2b91f471fb6a1c82f37cf89aaec29de040a73fcf
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516566"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547743"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 

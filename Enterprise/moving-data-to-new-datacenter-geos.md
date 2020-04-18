@@ -1,7 +1,7 @@
 ---
 title: Verschieben der Kern Daten in das neue Microsoft 365 Datacenter GEOS
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: andyber
+author: andybergen
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
 description: 'Neue Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten gemäß der Definition in den Microsoft Online Services-Nutzungsbedingungen: Exchange Online-Postfachinhalte (E-Mail-Text, Kalendereinträge und der Inhalt von E-Mail-Anlagen), SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien sowie nach OneDrive for Business hochgeladene Dateien.'
-ms.openlocfilehash: 3559fb78310667243160b000d4b4098eba6fdbcc
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516546"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547723"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Microsoft 365 Datacenter GEOS
 
