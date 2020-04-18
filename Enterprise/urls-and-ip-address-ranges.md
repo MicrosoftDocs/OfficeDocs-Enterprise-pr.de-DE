@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: ac69ea79c86cf9ae7ca110ef644ed30bcf639235
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: acccd4dbb1d9d7107542b711c5a7dd34d2f33c71
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516466"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547763"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>URLs und IP-Adressbereiche für Office 365
 
@@ -70,7 +70,6 @@ Dies sind die dargestellten Datenspalten:
 >[!Note]
 >Empfehlungen zu Yammer-IP-Adressen und -URLs finden Sie [in diesem Blogbeitrag](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592).
 >
-
 
 ## <a name="related-topics"></a>Verwandte Themen
 

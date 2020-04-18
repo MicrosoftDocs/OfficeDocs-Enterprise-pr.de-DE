@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Office 365-Datenspeicherorte'
-ms.openlocfilehash: 4503d624fb9b7b0cea8715352518bfe678ea0bfa
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 71c286b3dc7fbbaa842183dcaa23c863e46f809a
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516536"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547733"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Informationen zu den vertraglichen Verpflichtungen in Bezug auf den Speicherort 
 Informationen zu Azure Active Directory-Datenspeicherorte finden Sie unter [AAD-Datenkarte](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Aufgrund der beispiellosen Umstände rund um COVID-19 und der Notwendigkeit, die Nachfrage nach Onlinediensten in Europa zu verwalten, können wir, wenn Ihre Organisation eine Bildungseinrichtung ist, Ihren Office 365-Mandanten in der Europäischen Union (EU), der Europäischen Freihandelsassoziation (EFTA), in Vereinigtes Königreich (UK), in den Vereinigten Staaten (USA) oder Kanada (CA) bereitstellen oder Ihre Daten an ein beliebiges Rechenzentren in EU, EFTA, UK, USA oder Kanada übertragen.  Dies bedeutet, dass Ihre ruhenden Daten in der EU, in der EFTA, im Vereinigten Königreich, in den USA oder in Kanada gespeichert werden können.  Unser Engagement für Compliance, Datenschutz und Sicherheit bleibt unverändert, während wir notwendige und umsichtige Maßnahmen zur Aufrechterhaltung der Dienstverfügbarkeit implementieren.  Wir werden alle anwendbaren Gesetzen hinsichtlich des Datentransfers einhalten.
+Aufgrund der beispiellosen Umstände rund um die COVID-19-Krise und der Notwendigkeit, die Nachfrage nach Onlinediensten in Europa zu verwalten, können wir, wenn Ihre Organisation eine Bildungseinrichtung ist, Ihren Office 365-Mandanten in der Europäischen Union (EU), der Europäischen Freihandelsassoziation (EFTA), in Vereinigtes Königreich (UK), in den Vereinigten Staaten (USA) oder Kanada (CA) bereitstellen oder Ihre Daten an ein beliebiges Rechenzentren in EU, EFTA, UK, USA oder Kanada übertragen.  Dies bedeutet, dass Ihre ruhenden Daten in der EU, in der EFTA, im Vereinigten Königreich, in den USA oder in Kanada gespeichert werden können.  Unser Engagement für Compliance, Datenschutz und Sicherheit bleibt unverändert, während wir notwendige und umsichtige Maßnahmen zur Aufrechterhaltung der Dienstverfügbarkeit implementieren.  Wir werden alle anwendbaren Gesetzen hinsichtlich des Datentransfers einhalten.
 
 
 
