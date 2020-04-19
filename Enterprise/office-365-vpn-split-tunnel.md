@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Anleitung zum Verwenden des geteilten VPN-Tunnels mit Office 365 zur Optimierung der Office 365-Konnektivität für Remotebenutzer.
-ms.openlocfilehash: dc30f20b59321eeaf726485dbe39fef3ac4bba54
-ms.sourcegitcommit: 7c2c8e2e1303fc81362a4447b0a7be8609766a7b
+ms.openlocfilehash: d8f8d4364804395cd10eceb1aa55422f01cbe079
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131434"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547653"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe des geteilten VPN-Tunnels
 <!---
@@ -32,9 +32,9 @@ ms.locfileid: "43131434"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
-Für Kunden, die Ihre Remotearbeitsgeräte mit dem Unternehmensnetzwerk oder der Cloudinfrastruktur über VPN verbinden, empfiehlt Microsoft, dass die wichtigsten Office 365-Szenarios **Microsoft Teams**, **SharePoint Online** und **Exchange Online** über eine _geteilte VPN-Tunnel_-Konfiguration umgeleitet werden. Dies ist besonders wichtig, da die Strategie der ersten Wahl die Fortsetzung der Mitarbeiterproduktivität während der großmaßstäbigen Arbeiten von zu Hause aus erleichtert, z. B. während der COVID-19-Pandemie.
+Für Kunden, die Ihre Remotearbeitsgeräte mit dem Unternehmensnetzwerk oder der Cloudinfrastruktur über VPN verbinden, empfiehlt Microsoft, dass die wichtigsten Office 365-Szenarios **Microsoft Teams**, **SharePoint Online** und **Exchange Online** über eine _geteilte VPN-Tunnel_-Konfiguration umgeleitet werden. Dies wird besonders wichtig als Strategie zur Erleichterung der fortgesetzten Mitarbeiterproduktivität in Service und Produktion bei großmaßstäbiger Heimarbeit wie z. B. während der COVID-19-Krise.
 
-![Konfiguration eines geteilten VPN-Tunnels](media/vpn-split-tunnelling/vpn-model-2.png)
+![Split-Tunnel-VPN – Konfiguration](media/vpn-split-tunnelling/vpn-model-2.png)
 
 _Abbildung 1: eine geteilte VPN-Tunnellösung mit definierten Office 365-Ausnahmen, die direkt an den Dienst gesendet werden. Aller anderer Datenverkehr durchläuft den VPN-Tunnel unabhängig vom Ziel._
 

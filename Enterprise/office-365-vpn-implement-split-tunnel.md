@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: 81412e5f64f143949ef1cbca7b030f643cbace03
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
+ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516486"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "43547663"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementierung von VPN-Split-Tunneling für Office 365
 
@@ -41,7 +41,7 @@ Für die Verbindung zu verteilten und leistungsempfindlichen Cloud-Anwendungen i
 
 Dieses Problem nimmt seit einigen Jahren zu, und viele Kunden berichten von einer signifikanten Verschiebung der Netzwerkverkehrsmuster. Datenverkehr, der früher lokal stattfand, wird nun mit externen Cloud-Endpunkten verbunden. Zahlreiche Microsoft-Kunden berichten, dass früher etwa 80 % ihres Netzwerkverkehrs auf eine interne Quelle entfielen (in der obigen Abbildung durch die gepunktete Linie dargestellt). Im Jahr 2020 liegt diese Zahl nun bei etwa 20 % oder weniger, da sie große Workloads in die Cloud verlagert haben, diese Trends sind bei anderen Unternehmen nicht ungewöhnlich. Im Laufe der Zeit wird das oben beschriebene Modell mit fortschreitender Cloud-Journey immer umständlicher und nicht mehr tragfähig, was ein Unternehmen daran hindert, auf dem Weg in eine „Cloud First World“ agil zu sein.
 
-Die weltweite COVID-19-Pandemie hat dieses Problem so eskaliert, dass sofortige Abhilfe geschaffen werden muss. Die Notwendigkeit, die Sicherheit der Mitarbeiter zu gewährleisten, hat zu beispiellosen Anforderungen an die Unternehmens-IT geführt, um die Produktivität der Arbeit von zu Hause aus massiv zu unterstützen. Microsoft Office 365 ist gut positioniert, um Kunden bei der Erfüllung dieser Anforderung zu unterstützen, aber die hohe Gleichzeitigkeit von Benutzern, die von zu Hause aus arbeiten, erzeugt ein großes Volumen an Office 365-Datenverkehr, der, wenn er durch eine VPV-Tunnelerzwingung und die lokalen Netzwerkperimeter geleitet wird, eine schnelle Sättigung verursacht und die VPN-Infrastruktur auslastet. In dieser neuen Realität ist die Verwendung von VPN für den Zugriff auf Office 365 nicht mehr nur ein Leistungshindernis, sondern eine harte Mauer, die sich nicht nur auf Office 365, sondern auch auf kritische Geschäftsvorgänge auswirkt, die nach wie vor auf das VPN angewiesen sind, um zu funktionieren.
+Durch die weltweite COVID-19-Krise hat sich dieses Problem so ausgeweitet, dass sofortige Abhilfe geschaffen werden muss. Die Notwendigkeit, die Sicherheit der Mitarbeiter zu gewährleisten, hat zu beispiellosen Anforderungen an die Unternehmens-IT geführt, um die Produktivität der Arbeit von zu Hause aus massiv zu unterstützen. Microsoft Office 365 ist gut positioniert, um Kunden bei der Erfüllung dieser Anforderung zu unterstützen, aber die hohe Gleichzeitigkeit von Benutzern, die von zu Hause aus arbeiten, erzeugt ein großes Volumen an Office 365-Datenverkehr, der, wenn er durch eine VPV-Tunnelerzwingung und die lokalen Netzwerkperimeter geleitet wird, eine schnelle Sättigung verursacht und die VPN-Infrastruktur auslastet. In dieser neuen Realität ist die Verwendung von VPN für den Zugriff auf Office 365 nicht mehr nur ein Leistungshindernis, sondern eine harte Mauer, die sich nicht nur auf Office 365, sondern auch auf kritische Geschäftsvorgänge auswirkt, die nach wie vor auf das VPN angewiesen sind, um zu funktionieren.
 
 Microsoft arbeitet seit vielen Jahren eng mit Kunden und der gesamten Branche zusammen, um effektive, moderne Lösungen für diese Probleme aus unseren eigenen Diensten heraus anzubieten und sich an den besten Praktiken der Branche auszurichten. [Die Grundsätze der Konnektivität](https://aka.ms/pnc) für den Office 365-Dienst wurden so konzipiert, dass sie für Remotebenutzer effizient funktionieren und es einer Organisation dennoch ermöglichen, die Sicherheit und Kontrolle über ihre Konnektivität aufrechtzuerhalten. Diese Lösungen können auch sehr schnell mit begrenzter Arbeit umgesetzt werden, aber dennoch eine bedeutende positive Auswirkung auf die oben beschriebenen Probleme erzielen.
 
