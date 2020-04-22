@@ -15,18 +15,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Zusammenfassung: Informationen zu den Ressourcen Grenzwerten für die verschiedenen Anwendungen in Office 365.'
-ms.openlocfilehash: 112d910ae724ad01629aaef5a8e2e1756ceb8ecf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 55fa8d90c6f83c84a1e43f32cf7cd0eeafbf1274
+ms.sourcegitcommit: ed4482ad35274b79d44d0f9a17be3e52d5ad0492
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844316"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43666326"
 ---
 # <a name="resource-limits"></a>Ressourcenbeschränkungen
 
 Ressourcengrenzwerte werden mithilfe von Kontingenten (Limits) und Drosselung erzwungen. Azure Active Directory und die einzelnen Office 365 Dienste verwenden beides. Grenzen sind Dienst spezifisch und ändern sich im Laufe der Zeit, wenn neue Funktionen hinzugefügt werden. Ausführliche Informationen zu den aktuellen Grenzwerten für die verschiedenen Dienste finden Sie in den folgenden Themen:
 
-- [Grenzwerte und Einschränkungen für Azure Active Directory Service](https://msdn.microsoft.com/library/azure/dn764971.aspx)
+- [Grenzwerte und Einschränkungen für Azure Active Directory Service](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 - [Exchange Online-Begrenzungen](https://technet.microsoft.com/library/exchange-online-limits.aspx)
 - [Beschränkungen von Exchange Online Protection](https://technet.microsoft.com/library/exchange-online-protection-limits.aspx)
 - [Grenzen und Grenzwerte für SharePoint Online Software](https://support.office.com/article/SharePoint-Online-software-boundaries-and-limits-8F34FF47-B749-408B-ABC0-B605E1F6D498)
