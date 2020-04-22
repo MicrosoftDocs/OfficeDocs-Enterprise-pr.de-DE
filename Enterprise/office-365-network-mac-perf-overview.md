@@ -3,7 +3,7 @@ title: Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Übersicht über Netzwerk Leistungsempfehlungen im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 9bd1470b80d0c65c11748bee3e8a6a73a218f55f
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: 077202f5ba1ffa95324131e6c283f2c3845aa07f
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185776"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612935"
 ---
 # <a name="network-performance-recommendations-in-the-microsoft-365-admin-center-preview"></a>Empfehlungen zur Netzwerkleistung im Microsoft 365 Admin Center (Vorschau)
 
@@ -131,7 +131,7 @@ Die Microsoft 365-Dienst-Haustür ist ein Einstiegspunkt im globalen Microsoft-N
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>Was ist eine optimale Haustür für den Microsoft 365-Dienst?
 
-Eine optimale Microsoft 365-Dienst-Haustür ist eine, die Ihrem Netzwerk Ausgang am nächsten ist, in der Regel in ihrer Stadt oder in ihrer Metro-Region. Verwenden Sie das [Microsoft 365-Netzwerk-Onboarding-Tool](office-365-network-mac-perf-onboarding-tool.md) , um den Standort Ihres Microsoft 365-Dienst-Front-Door und der optimalen Service-Haustür zu ermitteln. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
+Eine optimale Microsoft 365-Dienst-Haustür ist eine, die Ihrem Netzwerk Ausgang am nächsten ist, in der Regel in ihrer Stadt oder in ihrer Metro-Region. Verwenden Sie den [Microsoft 365 Connectivity Test](office-365-network-mac-perf-onboarding-tool.md) , um den Speicherort Ihrer Haustür für den in-use-Microsoft 365-Dienst und die optimale Dienst-Haustür zu ermitteln. Wenn das Tool feststellt, dass Ihre in-use-Haustür optimal ist, verbinden Sie sich optimal mit dem globalen Netzwerk von Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>Was ist ein Internet Ausstieg-Standort?
 
@@ -143,6 +143,6 @@ Der Internet Ausgangsstandort ist der Ort, an dem Ihr Netzwerkdatenverkehr Ihr U
 
 [Microsoft 365 Netzwerkbewertung (Vorschau)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (Vorschau)](office-365-network-mac-location-services.md)

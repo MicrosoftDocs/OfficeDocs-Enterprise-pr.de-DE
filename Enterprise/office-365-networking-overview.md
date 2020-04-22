@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Erläutert, warum die Netzwerkoptimierung für SaaS-Dienste wichtig ist, das Ziel Office 365 Netzwerke und wie Saas unterschiedliche Netzwerke aus anderen Arbeitslasten benötigt.
-ms.openlocfilehash: 3662ca913b78ef10b562defc2fefe62b89fd2ac0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88072e8c85f9ca1e53201b58f0333d84ef543184
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844356"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612885"
 ---
 # <a name="office-365-network-connectivity-overview"></a>Office 365 Netzwerkkonnektivität (Übersicht)
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Office 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe verschiedener Mikro Dienste und Anwendungen bereitstellt. Client Komponenten von Office 365 wie Outlook, Word und PowerPoint werden auf Benutzercomputern ausgeführt und stellen eine Verbindung mit anderen Komponenten von Office 365 her, die in Microsoft-Rechenzentren ausgeführt werden. Der wichtigste Faktor, der die Qualität der Office 365 Endbenutzererfahrung bestimmt, ist die Zuverlässigkeit von Netzwerken und die niedrige Latenz zwischen Office 365-Clients und Office 365-Dienst-Front-Doors.
 
@@ -33,9 +33,9 @@ In diesem Artikel erfahren Sie mehr über die Ziele Office 365 Netzwerks und war
 
 ## <a name="office-365-networking-goals"></a>Office 365 von Netzwerkzielen
 
-Das Endziel von Office 365 Vernetzung besteht darin, die Endbenutzerfreundlichkeit zu optimieren, indem der am wenigsten beschränkende Zugriff zwischen Clients und den nächstgelegenen Office 365 Endpunkten ermöglicht wird. Die Qualität der Endbenutzererfahrung steht in direktem Zusammenhang mit der Leistung und Reaktionsfähigkeit der Anwendung, die der Benutzer verwendet. Beispielsweise stützt sich Microsoft Teams auf eine geringe Wartezeit, sodass Benutzer Anrufe, Konferenzen und gemeinsame Bildschirm zusammenarbeiten glitch-frei sind und Outlook eine große Netzwerkkonnektivität für sofort Suchfeatures verwendet, die serverseitige Indizierung und AI nutzen. Funktionen.
+Das Endziel von Office 365 Vernetzung besteht darin, die Endbenutzerfreundlichkeit zu optimieren, indem der am wenigsten beschränkende Zugriff zwischen Clients und den nächstgelegenen Office 365 Endpunkten ermöglicht wird. Die Qualität der Endbenutzererfahrung steht in direktem Zusammenhang mit der Leistung und Reaktionsfähigkeit der Anwendung, die der Benutzer verwendet. Beispielsweise stützt sich Microsoft Teams auf eine geringe Wartezeit, sodass Benutzer Anrufe, Konferenzen und gemeinsame Bildschirm zusammenarbeiten glitch-frei sind, und Outlook basiert auf einer großen Netzwerkkonnektivität für sofort Suchfunktionen, die serverseitige Indizierungs-und AI-Funktionen nutzen.
 
-Das primäre Ziel im Netzwerkentwurf sollte die Minimierung der Wartezeit sein, indem die Roundtripzeit (Round-Trip Time, RTT) von Clientcomputern auf das globale Microsoft-Netzwerk, das öffentliche Netzwerkbackbone von Microsoft, das alle Microsoft-Rechenzentren mit niedriger Latenz verbindet, verringert wird. , hoch verfügbare Cloud-Anwendungs Einstiegspunkte, die auf der ganzen Welt verteilt sind. Erfahren Sie mehr über das globale Microsoft-Netzwerk unter [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
+Das primäre Ziel im Netzwerkentwurf sollte die Minimierung der Wartezeit sein, indem die Roundtripzeit (Round-Trip Time, RTT) von Clientcomputern auf das globale Microsoft-Netzwerk, das Microsoft-Backbone für öffentliche Netzwerke, die alle Microsoft-Rechenzentren mit niedrigen Latenzzeiten und hoch Verfügbarkeits-Cloud-Anwendungseinstiegspunkten in der ganzen Welt vernetzen, reduziert wird. Erfahren Sie mehr über das globale Microsoft-Netzwerk unter [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/).
 
 Die Optimierung Office 365 Netzwerkleistung muss nicht kompliziert sein. Sie können die bestmögliche Leistung erzielen, indem Sie ein paar wichtige Grundsätze befolgen:
 
@@ -49,7 +49,7 @@ Weitere Informationen zu Office 365 Prinzipien der Netzwerkkonnektivität finden
 
 Die herkömmlichen Prinzipien der Netzwerkarchitektur für Client/Server-Arbeitsauslastungen sind auf die Annahme hin ausgelegt, dass sich der Datenverkehr zwischen Clients und Endpunkten nicht außerhalb des Umkreis Unternehmensnetzwerks erstreckt. Außerdem durchlaufen alle ausgehenden Internet Verbindungen in vielen Unternehmensnetzwerken das Unternehmensnetzwerk und gehen von einem zentralen Standort aus.
 
-In herkömmlichen Netzwerkarchitekturen ist eine höhere Wartezeit für generischen Internetdatenverkehr ein notwendiger Kompromiss, um die Sicherheit des Netzwerkperimeters aufrechtzuerhalten, und die Leistungsoptimierung für den Internetdatenverkehr umfasst normalerweise ein Upgrade oder eine horizontale Skalierung des Geräte an Netzwerk Ausgangspunkten. Bei dieser Vorgehensweise werden jedoch nicht die Anforderungen für eine optimale Netzwerkleistung von Saas-Diensten wie Office 365 behandelt.
+In herkömmlichen Netzwerkarchitekturen ist eine höhere Wartezeit für generischen Internetdatenverkehr ein notwendiger Kompromiss, um die Sicherheit des Netzwerkperimeters aufrechtzuerhalten, und die Leistungsoptimierung für den Internetdatenverkehr umfasst normalerweise ein Upgrade oder eine horizontale Skalierung der Geräte an Netzwerk Ausgangspunkten. Bei dieser Vorgehensweise werden jedoch nicht die Anforderungen für eine optimale Netzwerkleistung von Saas-Diensten wie Office 365 behandelt.
 
 ## <a name="identifying-office-365-network-traffic"></a>Identifizieren Office 365 Netzwerkdatenverkehrs
 
@@ -116,7 +116,7 @@ Die Optimierung Office 365 Netzwerkleistung ist wirklich auf das Entfernen unnö
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 
-[Office 365 Network Onboarding Tool](https://aka.ms/netonboard)
+[Microsoft 365 Connectivity-Test](https://aka.ms/netonboard)
 
 [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
+title: Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/10/2020
+ms.date: 04/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,31 +13,31 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
-ms.openlocfilehash: f59158f2c4365aa1d2a8bd34c0d465f1c5460449
-ms.sourcegitcommit: 6bcd8731f089feb91a58a946e89dbdc7f5e7d17b
+description: Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)
+ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43225698"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612875"
 ---
-# <a name="microsoft-365-network-onboarding-tool-in-the-m365-admin-center-preview"></a>Microsoft 365-Netzwerk-Onboarding-Tool im M365 Admin Center (Vorschau)
+# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)
 
-Das Microsoft 365-Netzwerk-Onboarding-Tool <https://connectivity.office.com>befindet sich unter. Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
+Der Microsoft 365 Connectivity Test befindet sich unter <https://connectivity.office.com>. Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
 
 >[!NOTE]
 >Das Onboarding-Tool unterstützt Mandanten in WW Commercial und gcc moderat, aber nicht gcc High, DoD, Deutschland oder China.
 
-Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf produktinternen Messungen für Ihren Microsoft 365-Mandanten. Im Vergleich dazu werden die Netzwerk Einblicke aus dem Microsoft 365-Netzwerk-Onboarding-Tool lokal im Tool ausgeführt. Tests, die im Produkt ausgeführt werden können, sind limitiert, und durch das lokale Testen des Benutzers können weitere Daten gesammelt werden, was zu tieferen Einblicken führt. Betrachten Sie dann, dass das Netzwerk Einblicke in das Microsoft 365 Admin Center zeigt, dass es ein Netzwerkproblem für die Verwendung von Microsoft 365 an einem bestimmten Standort gibt. Das Microsoft 365-Netzwerk-Onboarding-Tool kann helfen, die Ursache dieses Problems zu ermitteln, das zu einer empfohlenen Aktion zur Verbesserung der Netzwerkleistung führt.
+Die Einblicke in das Netzwerk im Microsoft 365 Admin Center basieren auf produktinternen Messungen für Ihren Microsoft 365-Mandanten. Im Vergleich dazu werden die Netzwerk Einblicke aus dem Microsoft 365-Verbindungstest lokal im Tool ausgeführt. Tests, die im Produkt ausgeführt werden können, sind limitiert, und durch das lokale Testen des Benutzers können weitere Daten gesammelt werden, was zu tieferen Einblicken führt. Betrachten Sie dann, dass das Netzwerk Einblicke in das Microsoft 365 Admin Center zeigt, dass es ein Netzwerkproblem für die Verwendung von Microsoft 365 an einem bestimmten Standort gibt. Der Microsoft 365-Verbindungstest kann helfen, die Ursache dieses Problems zu ermitteln, das zu einer empfohlenen Aktion zur Verbesserung der Netzwerkleistung führt.
 
-Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Netzwerkqualität für jeden Office-Standort im Microsoft 365 Admin Center beurteilt werden kann und nach der Bereitstellung von Tests basierend auf dem Microsoft 365-Netzwerk-Onboarding-Tool weitere Details gefunden werden können.
+Es wird empfohlen, dass diese zusammen verwendet werden, wenn der Status der Netzwerkqualität für jeden Office-Standort im Microsoft 365 Admin Center beurteilt werden kann und nach der Bereitstellung von Tests basierend auf dem Microsoft 365-Verbindungstest weitere Einzelheiten gefunden werden können.
 
 >[!IMPORTANT]
 >Netzwerk Einblicke, Leistungsempfehlungen und Bewertungen im Microsoft 365 Admin Center befinden sich derzeit im Vorschaustatus und stehen nur für Microsoft 365-Mandanten zur Verfügung, die im Feature Preview-Programm registriert wurden.
 
 ## <a name="the-advanced-tests-client-application"></a>Die Clientanwendung für erweiterte Tests
 
-Das Onboarding-Tool für das Microsoft 365-Netzwerk besteht aus zwei Teilen. Es gibt die Website <https://connectivity.office.com> , und es gibt eine herunterladbare Windows-Clientanwendung. Der herunterladbare Client führt erweiterte Netzwerkverbindungstests aus, und die meisten Tests bedürfen dieser Ausführung.
+Der Microsoft 365-Verbindungstest besteht aus zwei Teilen. Es gibt die Website <https://connectivity.office.com> , und es gibt eine herunterladbare Windows-Clientanwendung. Der herunterladbare Client führt erweiterte Netzwerkverbindungstests aus, und die meisten Tests bedürfen dieser Ausführung.
 
 Sie können den Advanced Client-Test auf der Website ausführen, und die Ergebnisse werden während der Ausführung wieder in die Webseite aufgefüllt.
 

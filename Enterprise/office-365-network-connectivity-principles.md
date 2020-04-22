@@ -16,16 +16,16 @@ ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
 description: Bevor Sie mit der Planung Ihres Netzwerks für die Office 365-Netzwerkkonnektivität beginnen, ist es wichtig, dass Sie sich mit den Prinzipien von Verbindungen für die sichere Verwaltung von Office 365-Datenverkehr und optimaler Leistung vertraut machen. Dieser Artikel hilft Ihnen, die neuesten Hinweise für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen.
-ms.openlocfilehash: 63ae147174cd40ae86a060832468097e5533b837
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 7abfc401531799cb9ff890261c89c6104a0c356a
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842642"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612915"
 ---
 # <a name="office-365-network-connectivity-principles"></a>Prinzipien der Office 365-Netzwerkkonnektivität
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Bevor Sie mit der Planung Ihres Netzwerks für die Office 365-Netzwerkkonnektivität beginnen, ist es wichtig, dass Sie sich mit den Prinzipien von Verbindungen für die sichere Verwaltung von Office 365-Datenverkehr und optimaler Leistung vertraut machen. Dieser Artikel hilft Ihnen, die neuesten Hinweise für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen.
   
@@ -41,7 +41,7 @@ In diesem Artikel werden die folgenden Themen behandelt:
 - [Neue Office 365-Endpunktkategorien](office-365-network-connectivity-principles.md#BKMK_Categories) und Optimierungshinweise
 - [Vergleichen der Sicherheit des Netzwerkperimeters mit der Endpunktsicherheit](office-365-network-connectivity-principles.md#BKMK_SecurityComparison)
 - [Inkrementelle Optimierungsoptionen](office-365-network-connectivity-principles.md#BKMK_IncOpt) für Office 365-Datenverkehr
-- Das [Office 365 Network Onboarding Tool](https://aka.ms/netonboard), ein neues Tool zum Testen der grundlegenden Konnektivität zu Office 365
+- Der [Microsoft 365 Connectivity Test](https://aka.ms/netonboard), ein neues Tool zum Testen der grundlegenden Konnektivität mit Office 365
 
 ## <a name="office-365-architecture"></a>Architektur von Office 365
 <a name="BKMK_Architecture"> </a>
@@ -268,7 +268,7 @@ Sie können die Optimierung als inkrementellen Vorgang angehen und die jeweilige
 
 [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 
-[Office 365 Network Onboarding Tool](https://aka.ms/netonboard)
+[Microsoft 365 Connectivity-Test](https://aka.ms/netonboard)
 
 [So erstellt Microsoft sein schnelles und zuverlässiges globales Netzwerk](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 

@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 04/20/2010
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Office 365, Active Directory-Domänendienste Bereinigung und dem Azure Active Directory Connect-Tool.
-ms.openlocfilehash: 5368fc00aafe66ed51af80c50aaf72ee5f939041
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 44894cdbc65c243ce0c4a66ceba1d123ece49c62
+ms.sourcegitcommit: f2e640ffdbef95c6d98845f85fd9bea21a7388aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841762"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43580932"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-office-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Je nach geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Office 365 übernehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Office 365 Abonnements synchronisiert.
 
@@ -69,7 +69,7 @@ Mit der Kennworthash Synchronisierung (PHS) synchronisieren Sie Ihre AD DS Benut
 
 Wenn Kennwörter lokal geändert oder zurückgesetzt werden, werden die neuen Kennworthashs mit Azure AD synchronisiert, sodass Ihre Benutzer immer dasselbe Kennwort für Cloud-Ressourcen und lokale Ressourcen verwenden können. Die Benutzerkennwörter werden nie an Azure AD gesendet oder in Azure AD in Klartext gespeichert. Einige Premium Features von Azure AD, beispielsweise Identitätsschutz, erfordern PHS, unabhängig davon, welche Authentifizierungsmethode ausgewählt ist.
   
-Weitere Informationen finden Sie unter [Auswählen von PHS](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Weitere Informationen finden Sie unter [Auswählen von PHS](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="pass-through-authentication"></a>Pass-Through-Authentifizierung
 
@@ -81,15 +81,15 @@ PTA ermöglicht es Ihren Benutzern, sich bei lokalen und Office 365 Ressourcen u
 
 PTA richtet sich auch an Organisationen mit einer Sicherheitsanforderung, um lokale Benutzerkonto Zustände, Kennwortrichtlinien und Anmeldezeiten sofort zu erzwingen. 
   
-Weitere Informationen finden Sie unter [Auswählen von PTA](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Weitere Informationen finden Sie unter [Auswählen von PTA](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 ### <a name="federated-authentication"></a>Verbundauthentifizierung
 
 Die Verbundauthentifizierung ist in erster Linie für große Unternehmensorganisationen mit komplexeren Authentifizierungsanforderungen geeignet. AD DS Identitäten werden mit Office 365 synchronisiert, und Benutzerkonten werden lokal verwaltet. Bei der Verbundauthentifizierung haben Benutzer das gleiche Kennwort lokal und in der Cloud, und Sie müssen sich nicht erneut anmelden, um Office 365 verwenden zu können. 
 
-Die Verbundauthentifizierung kann zusätzliche Authentifizierungsanforderungen wie Smartcard-basierte Authentifizierung oder mehrstufige Authentifizierung eines Drittanbieters unterstützen und ist in der Regel erforderlich, wenn Organisationen eine Authentifizierungsanforderung nicht nativ von Azure Ad unterstützt.
+Die Verbundauthentifizierung kann zusätzliche Authentifizierungsanforderungen wie Smartcard-basierte Authentifizierung oder mehrstufige Authentifizierung eines Drittanbieters unterstützen und ist in der Regel erforderlich, wenn Organisationen über eine Authentifizierungsanforderung verfügen, die nicht von Azure AD nativ unterstützt wird.
  
-Weitere Informationen finden Sie unter [Choosing Federated Authentication](https://docs.microsoft.com/azure/security/azure-ad-choose-authn) .
+Weitere Informationen finden Sie unter [Choosing Federated Authentication](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn) .
   
 #### <a name="third-party-authentication-and-identity-providers"></a>Authentifizierungs-und Identitätsanbieter von Drittanbietern
 
