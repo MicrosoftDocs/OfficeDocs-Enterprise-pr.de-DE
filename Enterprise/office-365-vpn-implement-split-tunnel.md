@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: 84b59351e07ca151000aa58727ce779e8f522722
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
+ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547663"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43612925"
 ---
 # <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementierung von VPN-Split-Tunneling für Office 365
 
@@ -248,7 +248,7 @@ Sie können auch über moderne Sicherheitskontrollen in entfernten Arbeitsszenar
 
 Sobald die Richtlinie in Kraft ist, sollten Sie bestätigen, dass sie wie erwartet funktioniert. Es gibt mehrere Möglichkeiten, um zu testen, ob der Pfad korrekt für die Nutzung der lokalen Internetverbindung eingestellt ist:
 
-- Führen Sie das [Office 365 Network Onboarding-Tool](https://aka.ms/netonboard) aus, das Konnektivitätstests für Sie durchführt, einschließlich der oben genannten Routenverfolgung. Wir fügen auch VPN-Tests in dieses Tool ein, die ebenfalls einige zusätzliche Erkenntnisse liefern sollten.
+- Führen Sie den [Microsoft 365-Konnektivitätstest](https://aka.ms/netonboard) aus, der Verbindungstests für Sie durchführt, einschließlich der oben genannten Routenverfolgung. Wir fügen auch VPN-Tests in dieses Tool ein, die ebenfalls einige zusätzliche Erkenntnisse liefern sollten.
 
 - Ein einfacher Tracert zu einem Endpunkt im Bereich des geteilten Tunnels sollte z. B. den eingeschlagenen Weg zeigen:
 
