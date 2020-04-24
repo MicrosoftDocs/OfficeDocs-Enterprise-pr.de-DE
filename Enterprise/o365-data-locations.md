@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Office 365-Datenspeicherorte'
-ms.openlocfilehash: 7f7804c74eaf6122b59385abd79934157ae47062
-ms.sourcegitcommit: b2d1dbc42ceafad1b583df59c1b4be55e35beb44
+ms.openlocfilehash: 6b7647456415df6a2ac8d1f22bb697164e756207
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772476"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798816"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 In den nachstehenden Tabellen ist angegeben, an welchen globalen Microsoft-Cloud-Speicherorten ruhende Kundendaten für Office 365-Dienste gespeichert werden. Erweitern Sie den Speicherort Ihres Rechnungsadresse-Landes, um zu ermitteln, wo Kundendaten für die einzelnen Dienste gespeichert werden.
 
-Kunden können Standortinformationen zu mandantenspezifischen Daten in ihrem Office 365 Admin Center unter **Einstellungen | Organisationsprofil | Datenspeicherort-Karte** einsehen.
+Kunden sollten Standortinformationen zu mandantenspezifischen Daten in ihrem Office 365 Admin Center unter **Einstellungen | Organisationsprofil | Datenspeicherort-Karte** einsehen.
 
 Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem Land der Transaktion festgelegt, die dem ersten Abonnement dieses Mandanten zugeordnet ist.
 
@@ -230,7 +230,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
@@ -391,7 +391,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -874,7 +874,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
@@ -1771,7 +1771,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
 | SharePoint Online | Globale Region 3 – Nord- und Südamerika |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 3 – Nord- und Südamerika |
 | EOP | Globale Region 3 – Nord- und Südamerika |
 | MyAnalytics | Globale Region 3 – Nord- und Südamerika |
@@ -1828,29 +1828,6 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
-| Workplace Analytics | Vereinigte Staaten |
-</p></details>
-
-## <a name="federated-states-of-micronesia"></a>Föderierte Staaten von Mikronesien
-<details><summary>Zum Erweitern klicken</summary><p>
-
-| Dienst | Standort |
-| --- | --- |
-| Exchange Online | Globale Region 1 – EMEA |
-| OneDrive for Business | Globale Region 1 – EMEA |
-| SharePoint Online | Globale Region 1 – EMEA |
-| Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
-| Office Online &amp; Mobile | Globale Region 1 – EMEA |
-| EOP | Globale Region 1 – EMEA |
-| MyAnalytics | Globale Region 1 – EMEA |
-| Planner | Globale Region 1 – EMEA |
-| Sway | Vereinigte Staaten |
-| Yammer | Globale Region 1 – EMEA |
-| OneNote Services | Globale Region 1 – EMEA |
-| Stream | Globale Region 1 – EMEA |
-| Whiteboard | Vereinigte Staaten |
-| Formulare | Globale Region 1 – EMEA |
 | Workplace Analytics | Vereinigte Staaten |
 </p></details>
 
@@ -2047,7 +2024,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -2162,7 +2139,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | MyAnalytics | Vereinigte Staaten |
@@ -2806,7 +2783,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -2944,7 +2921,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -3979,7 +3956,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -4025,7 +4002,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | MyAnalytics | Globale Region 2 – Asien-Pazifik |
@@ -4278,7 +4255,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -4462,7 +4439,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | MyAnalytics | Vereinigte Staaten |
@@ -4485,7 +4462,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | MyAnalytics | Vereinigte Staaten |
@@ -4761,7 +4738,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | MyAnalytics | Vereinigte Staaten |
@@ -4899,7 +4876,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | MyAnalytics | Vereinigte Staaten |
@@ -5106,7 +5083,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -5336,7 +5313,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
@@ -5589,7 +5566,7 @@ Die Region für neue Office 365-Mandanten wird standardmäßig basierend auf dem
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | MyAnalytics | Globale Region 1 – EMEA |
