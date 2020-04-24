@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verwenden Sie die folgenden Testumgebungsanleitungen (TLGs), um Demos, Machbarkeitsstudien oder Entwicklungs-/Testumgebungen für Office 365 einzurichten.'
-ms.openlocfilehash: 133f31dd46555ac7d80c2fcc5f3756da967cb331
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 6a4b6087a66607906e2de7407fd23e4d2f7aba3d
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845026"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793688"
 ---
 # <a name="test-office-365-with-test-lab-guides-tlgs"></a>Testen von Office 365 mit Testumgebungsanleitungen (TLGs)
 
@@ -52,6 +52,6 @@ Weitere Testumgebungsanleitungen für Office 365 und Microsoft 365 finden Sie [h
     
 ## <a name="see-also"></a>Siehe auch
 
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
   
 [Hybridlösungen](hybrid-solutions.md)
