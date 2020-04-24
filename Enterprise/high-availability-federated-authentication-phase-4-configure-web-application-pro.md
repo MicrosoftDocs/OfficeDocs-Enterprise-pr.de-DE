@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: 'Zusammenfassung: Konfigurieren Sie die Webanwendungs-Proxy Server für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 9dedf8197cc24f82d516b75ecf29caca6d1f09b4
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac7b43daea832d4283404605fbb8ccb46e6cc76c
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840162"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793808"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 4: Konfigurieren von Webanwendungsproxys
 
@@ -168,5 +168,5 @@ Verwenden Sie [Phase 5: Konfigurieren der Verbundauthentifizierung für Office 3
   
 [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
 

@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
 description: Express Route für Office 365 bietet einen alternativen Routingpfad zum erreichen vieler Office 365 Dienste, ohne dass der gesamte Datenverkehr zum Ausstieg ins Internet erforderlich ist. Auch wenn die Internetverbindung mit Office 365 noch benötigt wird, wird die direkte Express Route-Schaltung durch die spezifischen Routen, die von Microsoft über BGP in Ihrem Netzwerk beworben werden, bevorzugt, es sei denn, es sind andere Konfigurationen in Ihrem Netzwerk vorhanden. Die drei allgemeinen Bereiche, die Sie für die Verwaltung dieses Routings konfigurieren können, sind Präfix Filterung, Sicherheit und Compliance.
-ms.openlocfilehash: 54edc348e3c91e1b34555d5d4743ccdc7748191f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
+ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844986"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43798796"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Verwalten von ExpressRoute für Office 365-Verbindungen
 
@@ -35,7 +35,7 @@ Express Route für Office 365 bietet einen alternativen Routingpfad zum erreiche
 
 Microsoft empfiehlt, dass Kunden alle BGP-Routen wie von Microsoft ausgeschrieben akzeptieren, die bereitgestellten Routen unterliegeneiner rigorosen Überprüfung und einem Validierungsprozess, wodurch jegliche Vorteile für die hinzugefügte Prüfung entfernt werden. Express Route bietet nativ die empfohlenen Steuerelemente wie IP-Präfix-Besitz, Integrität und Skalierung-ohne eingehende Routen Filterung auf Kundenseite.
   
-Wenn Sie eine zusätzliche Überprüfung des Routen Besitzes in Express Route Public Peering benötigen, können Sie die angekündigten Routen anhand der Liste aller IPv4-und IPv6-IP-Präfixe überprüfen, die die [öffentlichen IP-Bereiche von Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)darstellen. Diese Bereiche decken den vollständigen Microsoft-Adressraum ab und ändern sich selten, sodass ein zuverlässiger Bereich von Bereichen zum Filtern bereitgestellt wird, der auch zusätzlichen Schutz für Kunden mit sich bringt, die sich über nicht von Microsoft besessene Routen in ihren Umgebung. Für den Fall, dass eine Änderung vorliegt, wird Sie am 1. des Monats vorgenommen, und die Versionsnummer im Abschnitt **Details** der Seite ändert sich jedes Mal, wenn die Datei aktualisiert wird.
+Wenn Sie eine zusätzliche Überprüfung des Routen Besitzes in Express Route Public Peering benötigen, können Sie die angekündigten Routen anhand der Liste aller IPv4-und IPv6-IP-Präfixe überprüfen, die die [öffentlichen IP-Bereiche von Microsoft](https://www.microsoft.com/download/details.aspx?id=53602)darstellen. Diese Bereiche decken den vollständigen Microsoft-Adressraum ab und ändern sich selten, sodass ein zuverlässiger Bereich von Bereichen zum Filtern bereitgestellt wird, der auch zusätzlichen Schutz für Kunden mit sich bringt, die sich um nicht von Microsoft befasste Routen in Ihrer Umgebung kümmern. Für den Fall, dass eine Änderung vorliegt, wird Sie am 1. des Monats vorgenommen, und die Versionsnummer im Abschnitt **Details** der Seite ändert sich jedes Mal, wenn die Datei aktualisiert wird.
   
 Es gibt eine Reihe von Gründen, um die Verwendung der [Office 365-URLs und IP-Adressbereiche](https://aka.ms/o365endpoints) zum Generieren von Präfixfilter Listen zu vermeiden. Einschließlich der folgenden:
   
@@ -47,10 +47,9 @@ Es gibt eine Reihe von Gründen, um die Verwendung der [Office 365-URLs und IP-A
 
 |**Option**|**Komplexität**|**Änderungs Steuerelement**|
 |:-----|:-----|:-----|
-|Alle Microsoft-Routen akzeptieren  <br/> |**Niedrig:** Der Kunde verwendet Microsoft-Steuerelemente, um sicherzustellen, dass alle Routen ordnungsgemäß im Besitz sind.  <br/> |Keine  <br/> |
+|Alle Microsoft-Routen akzeptieren  <br/> |**Niedrig:** Der Kunde verwendet Microsoft-Steuerelemente, um sicherzustellen, dass alle Routen ordnungsgemäß im Besitz sind.  <br/> |Keines  <br/> |
 |Microsoft-besessene supernets Filtern  <br/> |**Mittel:** Kunden implementiert zusammengefasste Präfixfilter Listen, um nur Microsoft-eigene Routen zuzulassen.  <br/> |Kunden müssen sicherstellen, dass die seltenen Aktualisierungen in Routenfiltern wiedergegeben werden.  <br/> |
-|Filtern Office 365 IP-Bereichen  <br/> [!CAUTION] Nicht empfohlen
-|**Hoch:** Kunden filtert Routen basierend auf definierten Office 365 IP-Präfixen.  <br/> |Kunden müssen einen robusten Änderungsverwaltungsprozess für die monatlichen Updates implementieren.  <br/> [!CAUTION] Diese Lösung erfordert wichtige fortlaufende Änderungen. Änderungen, die nicht rechtzeitig implementiert werden, führen wahrscheinlich zu einem Dienstausfall.   |
+|Filtern Office 365 IP-Bereichen  <br/> [!CAUTION] Nicht empfohlen |**Hoch:** Kunden filtert Routen basierend auf definierten Office 365 IP-Präfixen.  <br/> |Kunden müssen einen robusten Änderungsverwaltungsprozess für die monatlichen Updates implementieren.  <br/> [!CAUTION] Diese Lösung erfordert wichtige fortlaufende Änderungen. Änderungen, die nicht rechtzeitig implementiert werden, führen wahrscheinlich zu einem Dienstausfall.   |
 
 Das Herstellen einer Verbindung mit Office 365 mithilfe von Azure Express Route basiert auf BGP-Ankündigungen bestimmter IP-Subnetze, die Netzwerke darstellen, in denen Office 365 Endpunkte bereitgestellt werden. Aufgrund des globalen Charakters von Office 365 und der Anzahl von Diensten, aus denen Office 365 besteht, müssen Kunden häufig die Ankündigungen verwalten, die Sie in Ihrem Netzwerk annehmen. Wenn Sie sich mit der Anzahl der in Ihrer Umgebung beworbenen Präfixe befassen, können Sie mit dem [BGP-Community](https://support.office.com/article/Using-BGP-communities-in-ExpressRoute-for-Office-365-scenarios-preview-9ac4d7d4-d9f8-40a8-8c78-2a6d7fe96099) -Feature die Ankündigungen auf eine bestimmte Gruppe von Office 365 Diensten filtern. Dieses Feature befindet sich jetzt in der Vorschau.
   
@@ -71,7 +70,7 @@ Für hinzugefügte Steuerelemente können Sie die Filterung auf FQDN-Ebene in ih
 
 |**Option**|**Komplexität**|**Änderungs Steuerelement**|
 |:-----|:-----|:-----|
-|Keine Einschränkungen  <br/> |**Niedrig:** Der Kunde ermöglicht den uneingeschränkten ausgehenden Zugriff auf Microsoft.  <br/> |Keine  <br/> |
+|Keine Einschränkungen  <br/> |**Niedrig:** Der Kunde ermöglicht den uneingeschränkten ausgehenden Zugriff auf Microsoft.  <br/> |Keines  <br/> |
 |Port Einschränkungen  <br/> |**Niedrig:** Der Kunde schränkt den ausgehenden Zugriff auf Microsoft durch die erwarteten Ports ein.  <br/> |Selten.  <br/> |
 |FQDN-Einschränkungen  <br/> |**Hoch:** Der Kunde schränkt den ausgehenden Zugriff auf Office 365 basierend auf den veröffentlichten FQDNs ein.  <br/> |Monatliche Änderungen.  <br/> |
 

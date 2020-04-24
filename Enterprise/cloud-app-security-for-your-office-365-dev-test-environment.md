@@ -18,18 +18,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 22248f2f-b370-435e-b6ac-0ae0cae36b96
 description: 'Zusammenfassung: Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung'
-ms.openlocfilehash: a4f0f9e8912a5455ec5253e9992873136e71d694
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f76aaa5b13e409f08a4b96714e1f4bdfcc84ecac
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840802"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793718"
 ---
 # <a name="cloud-app-security-for-your-office-365-devtest-environment"></a>Cloud App Security für Ihre Office 365-Entwicklungs-/Testumgebung
 
  **Zusammenfassung:** Konfigurieren und Demonstrieren von Office 365 Cloud App Security in der Office 365-Entwicklungs-/Testumgebung
   
-Mit Office 365 Cloud-App-Sicherheit, die bisher als Office 365 Advanced Security Management bekannt ist, können Sie Richtlinien erstellen, mit denen verdächtige Aktivitäten in Ihrem Office 365 Abonnement überwacht und informiert werden, sodass Sie mögliche Korrekturen untersuchen und ausführen können. Aktion. Weitere Informationen finden Sie unter [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
+Office 365 Cloud-App-Sicherheit, die bisher als Office 365 Advanced Security Management bekannt ist, können Sie Richtlinien erstellen, die verdächtige Aktivitäten in Ihrem Office 365-Abonnement überwachen und Sie darüber informieren, damit Sie untersuchen und mögliche Korrekturaktionen durchführen können. Weitere Informationen finden Sie unter [Overview of Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475).
   
 Mit den Anweisungen in diesem Artikel aktivieren und testen Sie Cloud App Security in Ihrem Office 365-Testabonnement.
   
@@ -83,7 +83,7 @@ In diesem Verfahren aktivieren Sie Cloud App Security und erstellen eine neue Ri
 
 1. Wechseln Sie zum Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com)), und melden Sie sich bei Ihrem Office 365 Testabonnement mit ihrem globalen Administratorkonto an.
     
-2. Klicken Sie auf die Kachel **Admin**. Klicken Sie auf der Registerkarte **Office Admin Center** auf admin Centers **#a0 Security #a1 Compliance**.
+2. Klicken Sie auf die Kachel **Admin**. Klicken Sie auf der Registerkarte **Office Admin Center** auf admin Centers **> Security & Compliance**.
     
 3. Klicken Sie im linken Navigationsbereich auf **Warnungen > Erweiterte Warnungen verwalten**.
     
@@ -165,7 +165,7 @@ Sie können diese Umgebung jetzt verwenden, um neue Richtlinien zu erstellen und
   
 [Office 365-Entwicklungs-/Testumgebung](office-365-dev-test-environment.md)
   
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
 
 [Übersicht über Cloud App Security in Office 365](https://support.office.com/article/Overview-of-Advanced-Security-Management-in-Office-365-81f0ee9a-9645-45ab-ba56-de9cbccab475)
 

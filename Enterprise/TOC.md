@@ -1,4 +1,5 @@
 # [Modelle einer Cloudarchitektur](microsoft-cloud-it-architecture-resources.md)
+# [Enterprise Cloudlösungen](cloud-adoption-and-hybrid-solutions.yml)
 ## [Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
 
 # [Plan für Office 365](get-your-organization-ready-for-office-365.md)

@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: 'Zusammenfassung: Konfigurieren Sie Azure AD Connect für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 8a65ee9af994d46cdc53266a92851e0684e06121
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ac5536ac66412825b245851a7f225acad5e9895a
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840242"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793798"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-office-365"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 5: Konfigurieren der Verbundauthentifizierung für Office 365
 
-In dieser letzten Phase der Bereitstellung der Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Azure-Infrastrukturdiensten erhalten und installieren Sie ein von einer öffentlichen Zertifizierungsstelle ausgestelltes Zertifikat, überprüfen Ihre Konfiguration und installieren und ausführen dann Azure AD Stellen Sie eine Verbindung auf dem Verzeichnissynchronisierungsserver her. Azure AD Connect konfiguriert Ihr Office 365-Abonnement und Ihre Active Directory Verbunddienste (AD FS) und Webanwendungs-Proxy Server für die Verbundauthentifizierung.
+In dieser letzten Phase der Bereitstellung der Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Azure-Infrastrukturdiensten erhalten und installieren Sie ein von einer öffentlichen Zertifizierungsstelle ausgestelltes Zertifikat, überprüfen Ihre Konfiguration und installieren und führen dann Azure AD Connect auf dem Verzeichnissynchronisierungsserver aus. Azure AD Connect konfiguriert Ihr Office 365-Abonnement und Ihre Active Directory Verbunddienste (AD FS) und Webanwendungs-Proxy Server für die Verbundauthentifizierung.
   
 Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
   
@@ -145,7 +145,7 @@ Die Verbundauthentifizierungsinfrastruktur mit hoher Verfügbarkeit für Office 
   
 [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
 
 [Verbundidentität für Office 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
 

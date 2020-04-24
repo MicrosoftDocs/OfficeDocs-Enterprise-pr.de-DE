@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
 description: 'Zusammenfassung: Konfigurieren Sie die Domänencontroller und den Verzeichnissynchronisierungsserver für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: e43787817287779330e28236700f1a710c37dceb
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 80b413f8a6d415378e384b1625fc756f96dd00db
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840312"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793818"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 2: Konfigurieren von Domänencontrollern
 
@@ -48,7 +48,7 @@ Zunächst müssen Sie die Spalte **Name des virtuellen Computers** in Tabelle M 
   
 Eine vollständige Liste der Größen der virtuellen Computer finden Sie unter [Größen für virtuelle Computer](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-sizes).
   
-Verwenden Sie den folgenden Azure PowerShell-Befehlsblock, um die virtuellen Computer für die beiden Domänencontroller zu erstellen. Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und #a0. Beachten Sie, dass dieser Azure PowerShell-Befehlsblock Werte aus den folgenden Tabellen verwendet:
+Verwenden Sie den folgenden Azure PowerShell-Befehlsblock, um die virtuellen Computer für die beiden Domänencontroller zu erstellen. Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und >. Beachten Sie, dass dieser Azure PowerShell-Befehlsblock Werte aus den folgenden Tabellen verwendet:
   
 - Tabelle M (für die virtuellen Computer)
     
@@ -257,6 +257,6 @@ Verwenden Sie [Phase 3: Konfigurieren von AD FS-Servern](high-availability-feder
   
 [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
 
 

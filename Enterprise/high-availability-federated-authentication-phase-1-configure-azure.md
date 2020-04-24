@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: c669df7e719d8ff8516ad556817921e1440558d3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
+ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840342"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "43793828"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -39,7 +39,7 @@ Azure muss mit diesen grundlegenden Komponenten ausgestattet werden:
 
 Füllen Sie die folgenden Tabellen aus, bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen. Um Sie bei den Verfahren für die Konfiguration von Azure zu unterstützen, Drucken Sie diesen Abschnitt aus, notieren Sie die erforderlichen Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie ihn aus. Geben Sie in Tabelle V die Einstellungen für das VNet ein.
   
-|**Item**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Aspekt**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -72,7 +72,7 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
   
 Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Item**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Aspekt**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -89,14 +89,14 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen C
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Item**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Aspekt**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
 |1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle D: Lokale DNS-Server**
   
-Um Pakete aus dem standortübergreifenden Netzwerk an Ihr Organisationsnetzwerk über die Standort-zu-Standort-VPN-Verbindung weiterzuleiten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren, das eine Liste der Adressräume (in der CIDR-Notation) für alle erreichbaren Standorte im lokalen Netzwerk Ihrer Organisation. Die Liste der Adressräume, die Ihr lokales Netzwerk definieren, muss eindeutig sein und darf sich nicht mit dem Adressraum überschneiden, der für andere virtuelle Netzwerke oder andere lokale Netzwerke verwendet wird.
+Um Pakete aus dem standortübergreifenden Netzwerk an Ihr Organisationsnetzwerk über die Standort-zu-Standort-VPN-Verbindung weiterzuleiten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren, das über eine Liste der Adressräume (in der CIDR-Notation) für alle erreichbaren Standorte im lokalen Netzwerk Ihrer Organisation verfügt. Die Liste der Adressräume, die Ihr lokales Netzwerk definieren, muss eindeutig sein und darf sich nicht mit dem Adressraum überschneiden, der für andere virtuelle Netzwerke oder andere lokale Netzwerke verwendet wird.
   
 Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle L aus. Auch wenn hierfür nur drei Einträge vorgesehen sind, können Sie noch weitere hinzufügen. Erarbeiten Sie diese Liste der Adressräume gemeinsam mit Ihrer IT-Abteilung.
   
@@ -134,7 +134,7 @@ Verwenden Sie für ältere Versionen von Azure PowerShell stattdessen diesen Bef
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungs \< Zeichen, einschließlich der und #a0 Zeichen, mit dem korrekten Namen.
+Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungs \< Zeichen, einschließlich der und > Zeichen, mit dem korrekten Namen.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -316,7 +316,7 @@ Verwenden Sie [Phase 2: Konfigurieren von Domänencontrollern](high-availability
   
 [Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
   
-[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.md)
+[Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
 
 [Grundlegendes zur Office 365-Identität und zu Azure Active Directory](about-office-365-identity.md)
 
