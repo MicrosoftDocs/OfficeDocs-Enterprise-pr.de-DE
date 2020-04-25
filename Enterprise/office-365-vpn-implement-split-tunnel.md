@@ -1,9 +1,9 @@
 ---
-title: Implementierung von VPN-Split-Tunneling für Office 365
+title: Implementieren eines geteilten VPN-Tunnels für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/14/2020
+ms.date: 4/24/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,14 +17,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: edc19af175aaa3d0366a8ec1c3af55a0aeb041fd
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0594be194bda222fafa0d00a93e0ee43814cd334
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612925"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43804054"
 ---
-# <a name="implementing-vpn-split-tunnelling-for-office-365"></a>Implementierung von VPN-Split-Tunneling für Office 365
+# <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementieren eines geteilten VPN-Tunnels für Office 365
 
 >[!NOTE]
 >Dieses Thema ist Teil einer Reihe von Themen, die sich mit der Optimierung von Office 365 für Remotebenutzer befassen.
@@ -37,7 +37,7 @@ Eine Zeit lang waren VPN-Modelle, bei denen alle Verbindungen vom Gerät des Rem
 
 Für die Verbindung zu verteilten und leistungsempfindlichen Cloud-Anwendungen ist die Verwendung von Tunnelerzwingung in VPNs äußerst suboptimal, aber die negativen Auswirkungen davon mögen von einigen Unternehmen akzeptiert worden sein, um den Ist-Zustand aus Sicherheitssicht zu erhalten. Ein Beispieldiagramm für dieses Szenario ist unten zu sehen:
 
-![Split-Tunnel-VPN – Konfiguration](media/vpn-split-tunnelling/vpn-ent-challenge.png)
+![Split-Tunnel-VPN – Konfiguration](media/vpn-split-tunneling/vpn-ent-challenge.png)
 
 Dieses Problem nimmt seit einigen Jahren zu, und viele Kunden berichten von einer signifikanten Verschiebung der Netzwerkverkehrsmuster. Datenverkehr, der früher lokal stattfand, wird nun mit externen Cloud-Endpunkten verbunden. Zahlreiche Microsoft-Kunden berichten, dass früher etwa 80 % ihres Netzwerkverkehrs auf eine interne Quelle entfielen (in der obigen Abbildung durch die gepunktete Linie dargestellt). Im Jahr 2020 liegt diese Zahl nun bei etwa 20 % oder weniger, da sie große Workloads in die Cloud verlagert haben, diese Trends sind bei anderen Unternehmen nicht ungewöhnlich. Im Laufe der Zeit wird das oben beschriebene Modell mit fortschreitender Cloud-Journey immer umständlicher und nicht mehr tragfähig, was ein Unternehmen daran hindert, auf dem Weg in eine „Cloud First World“ agil zu sein.
 
@@ -63,39 +63,39 @@ In der Liste unten sehen Sie die häufigsten VPN-Szenarien, die in Unternehmensu
 
 Dies ist das häufigste Startszenario für die meisten Unternehmenskunden. Es wird eine VPN-Erzwingung verwendet, was bedeutet, dass 100 % des Datenverkehrs in das Unternehmensnetzwerk geleitet werden, unabhängig davon, ob sich der Endpunkt innerhalb des Unternehmensnetzwerks befindet oder nicht. Jeglicher externe (internetgebundene) Datenverkehr wie z. B. Office 365 oder das Surfen im Internet wird dann aus der Sicherheitsausrüstung vor Ort, wie z. B. Proxies, wieder herausgeschnitten. In der derzeitigen Situation, in der fast 100 % der Benutzer aus der Ferne arbeiten, stellt dieses Modell daher eine extrem hohe Belastung für die VPN-Infrastruktur dar und wird wahrscheinlich die Leistung des gesamten Unternehmensverkehrs und damit die Effizienz des Unternehmens in einer Krisenzeit erheblich beeinträchtigen.
 
-![VPN-Tunnelerzwingung – Modell 1](media/vpn-split-tunnelling/vpn-model-1.png)
+![VPN-Tunnelerzwingung – Modell 1](media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. VPN-Tunnelerzwingung mit einer kleinen Anzahl von vertrauenswürdigen Ausnahmen
 
 Dieses Modell ist für ein Unternehmen wesentlich effizienter, da es einer kleinen Anzahl kontrollierter und definierter Endpunkte, die sehr belastungs- und latenzempfindlich sind, ermöglicht, den VPN-Tunnel zu umgehen und in diesem Beispiel direkt zum Office 365-Dienst zu wechseln. Dadurch wird die Leistung für die ausgelagerten Dienste erheblich verbessert und auch die Belastung der VPN-Infrastruktur verringert, so dass Elemente, die diese noch benötigen, mit geringerer Ressourcenauslastung betrieben werden können. Auf dieses Modell konzentriert sich dieser Artikel, um den Übergang zu unterstützen, da es einfache, festgelegte Maßnahmen ermöglicht, die sehr schnell durchgeführt werden können und zahlreiche positive Auswirkungen haben.
 
-![Split-Tunnel-VPN – Modell 2](media/vpn-split-tunnelling/vpn-model-2.png)
+![Split-Tunnel-VPN – Modell 2](media/vpn-split-tunneling/vpn-model-2.png)
 
 ### <a name="3-vpn-forced-tunnel-with-broad-exceptions"></a>3. VPN-Tunnelerzwingung mit breiten Ausnahmen
 
 Das dritte Modell erweitert den Anwendungsbereich von Modell zwei, da es nicht nur eine kleine Gruppe von definierten Endpunkten direkt sendet, sondern den gesamten Datenverkehr direkt an vertrauenswürdige Dienste wie Office 365, SalesForce usw. sendet. Dadurch wird die Belastung der VPN-Infrastruktur des Unternehmens weiter reduziert und die Leistung der definierten Dienste verbessert. Da dieses Modell wahrscheinlich mehr Zeit in Anspruch nehmen wird, um die Durchführbarkeit zu bewerten und umzusetzen, ist es wahrscheinlich ein Schritt, der zu einem späteren Zeitpunkt iterativ unternommen werden kann, sobald Modell zwei erfolgreich eingeführt ist.
 
-![Split-Tunnel-VPN – Modell 3](media/vpn-split-tunnelling/vpn-model-3.png)
+![Split-Tunnel-VPN – Modell 3](media/vpn-split-tunneling/vpn-model-3.png)
 
 ### <a name="4-vpn-selective-tunnel"></a>4. Selektiver VPN-Tunnel
 
 Dieses Modell kehrt das dritte Modell insofern um, als nur der Datenverkehr, der als mit einer Unternehmens-IP-Adresse identifiziert wurde, durch den VPN-Tunnel geleitet wird und somit der Internet-Pfad die Standardroute für alles andere ist. Dieses Modell setzt voraus, dass sich eine Organisation auf dem Weg zu [Zero Trust](https://www.microsoft.com/security/zero-trust?rtc=1) befindet, um dieses Modell sicher umsetzen zu können. Es ist zu beachten, dass dieses Modell oder eine Variation davon im Laufe der Zeit wahrscheinlich zum notwendigen Standard werden wird, da sich immer mehr Dienste vom Unternehmensnetzwerk weg und in die Cloud verlagern. Microsoft verwendet dieses Modell intern; weitere Informationen über die Implementierung von VPN Split-Tunneling durch Microsoft finden Sie unter [Ausführen auf VPN: Wie Microsoft die Verbindung zu seinen Remote-Mitarbeitern aufrechterhält](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv).
 
-![Split-Tunnel-VPN – Modell 4](media/vpn-split-tunnelling/vpn-model-4.png)
+![Split-Tunnel-VPN – Modell 4](media/vpn-split-tunneling/vpn-model-4.png)
 
 ### <a name="5-no-vpn"></a>5. Kein VPN
 
 Eine fortgeschrittenere Version des Modells Nummer zwei, bei der alle internen Dienste über einen modernen Sicherheitsansatz oder eine SDWAN-Lösung wie Azure AD Proxy, MCAS, Zscaler ZPA usw. veröffentlicht werden.
 
-![Split-Tunnel-VPN – Modell 5](media/vpn-split-tunnelling/vpn-model-5.png)
+![Split-Tunnel-VPN – Modell 5](media/vpn-split-tunneling/vpn-model-5.png)
 
-## <a name="implement-vpn-split-tunnelling"></a>Implementierung von VPN-Split-Tunneling
+## <a name="implement-vpn-split-tunneling"></a>Implementierung von VPN-Split-Tunneling
 
 In diesem Abschnitt finden Sie die einfachen Schritte, die erforderlich sind, um Ihre VPN-Client-Architektur von einer _VPN-Tunnelerzwingung_ zu einer _VPN-Tunnelerzwingung mit einer kleinen Anzahl von vertrauenswürdigen Ausnahmen_ zu migrieren, [VPN-Split-Tunnel-Modell 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) im Abschnitt [Allgemeine VPN-Szenarien](#common-vpn-scenarios).
 
 Das folgende Diagramm veranschaulicht, wie die empfohlene VPN-Split-Tunnellösung funktioniert:
 
-![Split-Tunnel-VPN – Lösungsdetails](media/vpn-split-tunnelling/vpn-split-detail.png)
+![Split-Tunnel-VPN – Lösungsdetails](media/vpn-split-tunneling/vpn-split-detail.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Ermitteln der zu optimierenden Endpunkte
 
@@ -176,7 +176,7 @@ Im obigen Skript ist _$intIndex_ der Index der Schnittstelle, die mit dem Intern
 
 Nachdem Sie die Routen hinzugefügt haben, können Sie bestätigen, dass die Routentabelle korrekt ist, indem Sie den **Route Print** in einer Eingabeaufforderung oder in PowerShell ausführen. Die Ausgabe sollte die von Ihnen hinzugefügten Routen enthalten und den Schnittstellenindex (_22_ in diesem Beispiel) und das Gateway für diese Schnittstelle (_ 192.168.1.1_ in diesem Beispiel) anzeigen:
 
-![Route Print-Ausgabe](media/vpn-split-tunnelling/vpn-route-print.png)
+![Route Print-Ausgabe](media/vpn-split-tunneling/vpn-route-print.png)
 
 Um Routen für **alle** aktuellen IP-Adressbereiche in der Kategorie Optimieren hinzuzufügen, können Sie die folgende Skriptvariante verwenden, um den [Office 365 IP- und URL-Webdienst](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service) für den aktuellen Satz von IP-Subnetzen der Kategorie Optimieren abzufragen und sie der Routingtabelle hinzuzufügen.
 
@@ -226,7 +226,8 @@ Einige VPN-Client-Software ermöglicht die Routing-Manipulation auf der Basis vo
 
 In bestimmten Szenarien, die häufig nichts mit der Client-Konfiguration des Teams zu tun haben, durchläuft der Medienverkehr den VPN-Tunnel auch dann noch, wenn die richtigen Routen vorhanden sind. Wenn Sie auf dieses Szenario stoßen, sollte die Verwendung einer Firewall-Regel zur Blockierung der IP-Subnetze oder Ports des Teams für die Verwendung des VPN ausreichen.
 
-Damit dies in 100 % der Szenarien funktioniert, ist es derzeit erforderlich, auch den IP-Bereich **13.107.60.1/32** hinzuzufügen. Dies sollte aufgrund eines Updates im neuesten Team-Client, der gegen Anfang **April 2020** veröffentlicht werden soll, sehr bald nicht mehr erforderlich sein. Wir werden diesen Artikel hinsichtlich der Build-Details aktualisieren, sobald diese Informationen verfügbar sind.
+>[!IMPORTANT]
+>Um sicherzustellen, dass der Mediendatenverkehr von Teams in allen VPN-Szenarios über die gewünschte Methode geroutet wird, vergewissern Sie sich, dass mindestens die folgende Clientversionsnummer ausgeführt wird, da diese und höhere Versionen Verbesserungen in der Art und Weise aufweisen, wie der Client verfügbare Netzwerkpfade erkennt.<br>Windows-Versionsnummer: **1.3.00.9267**<br>Mac-Versionsnummer: **1.3.00.9221**
 
 Der Signalisierungsverkehr erfolgt über HTTPS und ist nicht so latenzempfindlich wie der Medienverkehr und wird in den URL/IP-Daten als **Zulassen** markiert und kann daher auf Wunsch sicher über den VPN-Client geleitet werden.
 

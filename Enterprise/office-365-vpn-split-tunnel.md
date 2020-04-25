@@ -17,24 +17,24 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Anleitung zum Verwenden des geteilten VPN-Tunnels mit Office 365 zur Optimierung der Office 365-Konnektivität für Remotebenutzer.
-ms.openlocfilehash: ac3964146b23ac03bc5bd104c7cd359e94a1a06b
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
+ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612855"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "43803987"
 ---
-# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunnelling"></a>Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe des geteilten VPN-Tunnels
+# <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe eines geteilten VPN-Tunnels
 <!---
 >[!NOTE]
 >This topic is part of a set of topics that address Office 365 optimization for remote users.
->- For VPN split tunnel implementation guidance, see [Implementing VPN split tunnelling for Office 365](office-365-vpn-implement-split-tunnel.md).
+>- For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](office-365-vpn-implement-split-tunnel.md).
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](office-365-networking-china.md).
 -->
 
 Für Kunden, die Ihre Remotearbeitsgeräte mit dem Unternehmensnetzwerk oder der Cloudinfrastruktur über VPN verbinden, empfiehlt Microsoft, dass die wichtigsten Office 365-Szenarios **Microsoft Teams**, **SharePoint Online** und **Exchange Online** über eine _geteilte VPN-Tunnel_-Konfiguration umgeleitet werden. Dies wird besonders wichtig als Strategie zur Erleichterung der fortgesetzten Mitarbeiterproduktivität in Service und Produktion bei großmaßstäbiger Heimarbeit wie z. B. während der COVID-19-Krise.
 
-![Split-Tunnel-VPN – Konfiguration](media/vpn-split-tunnelling/vpn-model-2.png)
+![Split-Tunnel-VPN – Konfiguration](media/vpn-split-tunneling/vpn-model-2.png)
 
 _Abbildung 1: eine geteilte VPN-Tunnellösung mit definierten Office 365-Ausnahmen, die direkt an den Dienst gesendet werden. Aller anderer Datenverkehr durchläuft den VPN-Tunnel unabhängig vom Ziel._
 
@@ -46,7 +46,7 @@ Der Kern dieses Ansatzes besteht darin, Unternehmen eine einfache Methode bereit
 
 - Kann von Kunden schnell konfiguriert, getestet und implementiert werden, ohne dass zusätzliche Infrastruktur- oder Anwendungsanforderungen erforderlich sind
 
-  Je nach VPN-Plattform und Netzwerkarchitektur dauert die Implementierung nur wenige Stunden. Weitere Informationen finden Sie unter [Implementieren eines geteilten VPN Tunnels](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunnelling).
+  Je nach VPN-Plattform und Netzwerkarchitektur dauert die Implementierung nur wenige Stunden. Weitere Informationen finden Sie unter [Implementieren eines geteilten VPN Tunnels](office-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
 - Bewahrt die Sicherheitsposition von Kunden-VPN-Implementierungen, indem nicht geändert wird, wie andere Verbindungen umgeleitet werden, einschließlich Datenverkehr zum Internet
 
@@ -65,7 +65,7 @@ Vollständige Implementierungsanleitungen finden Sie unter [Implementierung eine
 
 Herkömmliche Unternehmensnetzwerke sind häufig so konzipiert, dass sie sicher für eine Pre-Cloudwelt arbeiten, in der die wichtigsten Daten, Dienste und Anwendungen lokal gehostet werden und direkt mit dem internen Unternehmensnetzwerk verbunden sind, ebenso wie die Mehrzahl der Benutzer. Die Netzwerkinfrastruktur basiert also auf diesen Elementen, in denen Zweigniederlassungen über _Multiprotocol Label Switching(MPLS)_-Netzwerke mit dem Hauptsitz verbunden sind und Remotebenutzer über ein VPN eine Verbindung mit dem Unternehmensnetzwerk herstellen müssen, um auf lokale Endpunkte und das Internet zugreifen zu können. Bei diesem Modell wird der gesamte Datenverkehr von Remotebenutzern durch das Unternehmensnetzwerk geleitet und über einen gemeinsamen Ausgangspunkt an den Clouddienst geleitet.
 
-![Erzwungene VPN-Konfiguration](media/vpn-split-tunnelling/vpn-model-1.png)
+![Erzwungene VPN-Konfiguration](media/vpn-split-tunneling/vpn-model-1.png)
 
 _Abbildung 2: eine gemeinsame VPN-Lösung für Remotebenutzer, bei welcher der gesamte Datenverkehr unabhängig vom Bestimmungsort wieder in das Unternehmensnetzwerk gezwungen wird_
 
@@ -88,7 +88,7 @@ Die festgelegten Endpunkte können auf den erzwungenen VPN-Tunnel aufgeteilt wer
 
 Sicherheitselemente, wie z. B. DLP, AV-Schutz, Authentifizierung und Zugriffssteuerung, können für diese Endpunkte auf verschiedenen Ebenen innerhalb des Diensts wesentlich effizienter bereitgestellt werden. Da auch der Großteil des Datenverkehrvolumens von der VPN-Lösung weggeleitet wird, setzt dies VPN-Kapazität für kritischen geschäftlichen Datenverkehr frei, der immer noch darauf angewiesen ist. Außerdem dürfte es in vielen Fällen nicht mehr notwendig sein, ein langwieriges und kostspieliges Aktualisierungsprogramm zu durchlaufen, um diese neue Arbeitsweise handhaben zu können.
 
-![Konfiguration eines geteilten VPN-Tunnels](media/vpn-split-tunnelling/vpn-model-2.png)
+![Konfiguration eines geteilten VPN-Tunnels](media/vpn-split-tunneling/vpn-model-2.png)
 
 _Abbildung 3: eine geteilte VPN-Tunnellösung mit definierten Office 365-Ausnahmen, die direkt an den Dienst gesendet werden. Aller anderer Datenverkehr wird unabhängig vom Ziel zurück in das Unternehmensnetzwerk gezwungen._
 
@@ -101,7 +101,7 @@ In vielen Fällen kann diese Umsetzung innerhalb weniger Stunden erreicht werden
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Implementierung des geteilten VPN-Tunnels für Office 365](office-365-vpn-implement-split-tunnel.md)
+[Implementieren eines geteilten VPN-Tunnels für Office 365](office-365-vpn-implement-split-tunnel.md)
 
 [Office 365-Leistungsoptimierung für Benutzer in China](office-365-networking-china.md)
 
