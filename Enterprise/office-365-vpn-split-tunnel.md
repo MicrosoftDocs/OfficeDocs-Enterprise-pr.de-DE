@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Anleitung zum Verwenden des geteilten VPN-Tunnels mit Office 365 zur Optimierung der Office 365-Konnektivität für Remotebenutzer.
-ms.openlocfilehash: 38eda4fb34ddd907e43a3a82976ffe64aa1f8c34
-ms.sourcegitcommit: 2c4092128fb12bda0c98b0c5e380d2cd920e7c9b
+ms.openlocfilehash: d40a5c3f81baae24253bc8a24d5916c6729e393b
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43803987"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901218"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimieren der Office 365-Konnektivität für Remotebenutzer mithilfe eines geteilten VPN-Tunnels
 <!---
@@ -77,9 +77,10 @@ Für den Office 365-Dienst hat Microsoft die Konnektivitätsanforderungen für d
 
 In Office 365 werden die erforderlichen Endpunkte für Office 365 in drei Kategorien kategorisiert: **Optimize**, **Allow** und **Default**. Die **Optimize**-Endpunkte stehen hier im Mittelpunkt und weisen die folgenden Merkmale auf:
 
-- sind Endpunkte im Besitz und verwaltet von Microsoft, die in der Microsoft-Infrastruktur gehostet werden
-- besitzen bereitgestellte IPs
-- haben eine geringe Änderungsrate und ihre Anzahl bleibt voraussichtlich klein (zurzeit 20 IP-Subnetze).
+- Sind Endgeräte im Besitz Microsoft und Verwalteten Endpunkten, auf der Microsoft-Infrastruktur gehostet?
+- Sind für die Kernworkloads von Office 365 wie Exchange Online, SharePoint Online, Skype for Business Online und Microsoft Teams vorgesehen
+- Lassen Sie IPs bereitstellen
+- Geringe Änderungsrate, und es wird erwartet, dass die Zahl klein ist (zurzeit 20 IP-Subnetze)
 - sind empfindlich gegen hohe Volumen und/oder Latenz
 - können die erforderlichen Sicherheitselemente im Dienst anstatt inline im Netzwerk bereitstellen
 - machen ungefähr 70–80 % der Datenmenge des Office 365-Diensts aus

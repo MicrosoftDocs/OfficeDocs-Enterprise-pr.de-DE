@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: 294bf256df48f4c9c846346d7b303ba452b689ec
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: f7a4363f0b93a0b8735d3eae21e6e70e6b0ac3ba
+ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890344"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901228"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -68,11 +68,11 @@ E-Mail-Benutzer, die Exchange-Partnerverbund verwenden, benötigen außerdem ein
 ||||
 |:-----|:-----|:-----|
 |**DNS-Eintrag** <br/> |**Zweck** <br/> |**Zu verwendender Wert** <br/> |
-|**CNAME** <br/> **(Exchange Online)** <br/> |Unterstützt Outlook-Clients bei der einfachen Verbindung mit dem Exchange-Online-Dienst mithilfe des AutoErmittlungs-Diensts. Die AutoErmittlung sucht automatisch den korrekten Exchange Server-Host und konfiguriert Outlook für Benutzer.  <br/> |**Alias:** Autodiscover  <br/> **Target (Zielwert):** autodiscover.outlook.com  <br/> |
+|**CNAME** <br/> **(Exchange Online)** <br/> |Unterstützt Outlook-Clients bei der einfachen Verbindung mit dem Exchange-Online-Dienst mithilfe des AutoErmittlungs-Diensts. Die AutoErmittlung sucht automatisch den korrekten Exchange Server-Host und konfiguriert Outlook für Benutzer.  <br/> |**Alias:** Autodiscover  <br/> **Target (Ziel):** autodiscover.outlook.com  <br/> |
 |**MX** <br/> **(Exchange Online)** <br/> |Sendet eingehende Mails für Ihre Domäne an den Exchange Online-Dienst in Office 365.  <br/> [!NOTE] Sobald E-Mails an Exchange Online übertragen werden, sollten Sie die MX-Einträge entfernen, die auf Ihr altes System verweisen.   |**Domain (Domäne):** Beispielsweise contoso.com  <br/> **Target email server (E-Mail-Zielserver):**\<MX-Token\>.mail.protection.outlook.com  <br/> **Preference/Priority (Präferenz/Priorität):** Niedriger als alle anderen MX-Einträge (dies stellt sicher, dass E-Mail an Exchange Online übermittelt wird) – z. B. 1 oder "low" (niedrig)  <br/>  Ermitteln Sie Ihr \<MX-Token\> wie folgt:  <br/>  Melden Sie sich bei Office 365 an, und wechseln Sie zu "Office 365-Administrator" \> "Domänen".  <br/>  Wählen Sie in der Spalte "Aktion" für Ihre Domäne "Probleme beheben" aus.  <br/>  Wählen Sie im Abschnitt für MX-Einträge die Option "Was korrigiere ich?" aus.  <br/>  Folgen Sie den Anweisungen auf dieser Seite, um den MX-Eintrag zu aktualisieren.  <br/> [Was ist MX-Priorität?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Dadurch kann verhindert werden, dass Dritte Ihre Domäne verwenden, um Spam oder andere schädliche E-Mails zu senden. SPF-Einträge (Sender Policy Framework) identifizieren die Server, die autorisiert sind, um E-Mails Ihrer Domäne zu senden.  <br/> |[Für SPF erforderliche externe DNS-Einträge](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Exchange-Partnerverbund)** <br/> |Für Exchange-Partnerverbund für Hybridbereitstellungen verwendet.  <br/> |**TXT-Eintrag 1:** Beispiel: contoso.com und zugeordneter, benutzergenerierter Hash-Text zum Nachweis für die Domäne (Beispiel: Y96nu89138789315669824)  <br/> **TXT-Eintrag 2:** Beispiel: exchangedelegation.contoso.com und zugeordneter, kundengenerierter Hash-Text zum Nachweis für die Domäne (Beispiel: Y3259071352452626169)  <br/> |
-|**CNAME** <br/> **(Exchange-Partnerverbund)** <br/> |Unterstützt Outlook-Clients bei der einfachen Verbindung mit dem Exchange Online-Dienst mithilfe des AutoErmittlungs-Diensts für den Fall, dass Ihr Unternehmen Exchange-Partnerverbund einsetzt. Die AutoErmittlung sucht automatisch den korrekten Exchange Server-Host und konfiguriert Outlook für Ihre Benutzer.  <br/> |**Alias:** Beispiel: Autodiscover.service.contoso.com  <br/> **Target (Zielwert):** autodiscover.outlook.com  <br/> |
+|**CNAME** <br/> **(Exchange-Partnerverbund)** <br/> |Unterstützt Outlook-Clients bei der einfachen Verbindung mit dem Exchange Online-Dienst mithilfe des AutoErmittlungs-Diensts für den Fall, dass Ihr Unternehmen Exchange-Partnerverbund einsetzt. Die AutoErmittlung sucht automatisch den korrekten Exchange Server-Host und konfiguriert Outlook für Ihre Benutzer.  <br/> |**Alias:** Beispiel: Autodiscover.service.contoso.com  <br/> **Target (Ziel):** autodiscover.outlook.com  <br/> |
 
 
 ## <a name="external-dns-records-required-for-skype-for-business-online"></a>Für Skype for Business Online erforderliche externe DNS-Einträge
@@ -137,10 +137,9 @@ In Szenarien, in denen Sie nicht nur Exchange Online-E-Mail für Office 365 verw
 ||Wenn Sie Folgendes verwenden...  <br/> |Zweck  <br/> |Diese Einschlüsse hinzufügen  <br/> |
 |1  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> |Alle SPF-Einträge beginnen mit dem folgenden Wert  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (verbreitet)  <br/> |Bei ausschließlicher Nutzung von Exchange Online verwenden  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |SharePoint Online und Exchange Online (verbreitet)  <br/> |Verwendung mit Exchange Online und SharePoint Online  <br/> |include:sharepointonline.com  <br/> |
-|4  <br/> |Drittanbieter-E-Mail-Systeme (weniger verbreitet)  <br/> ||einschließen:\<E-Mail-System wie mail.contoso.com\>  <br/> |
-|5  <br/> |Lokales E-Mail-System (weniger verbreitet)  <br/> |Verwenden Sie dies, wenn Sie Exchange Online Protection oder Exchange Online zusammen mit einem anderen Mailsystem verwenden.  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> einschließen:\<mail.contoso.com\>  <br/> Die Werte in spitzen Klammern (\<\>) sollten andere E-Mail-Systeme sein, die E-Mails für Ihre Domäne senden.  <br/> |
-|6  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> ||-all  <br/> |
+|3  <br/> |Drittanbieter-E-Mail-Systeme (weniger verbreitet)  <br/> ||einschließen:\<E-Mail-System wie mail.contoso.com\>  <br/> |
+|4  <br/> |Lokales E-Mail-System (weniger verbreitet)  <br/> |Verwenden Sie dies, wenn Sie Exchange Online Protection oder Exchange Online zusammen mit einem anderen Mailsystem verwenden.  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> einschließen:\<mail.contoso.com\>  <br/> Die Werte in spitzen Klammern (\<\>) sollten andere E-Mail-Systeme sein, die E-Mails für Ihre Domäne senden.  <br/> |
+|5  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Beispiel: Hinzufügen zu einem vorhandenen SPF-Eintrag
 <a name="bkmk_addtospf"> </a>
