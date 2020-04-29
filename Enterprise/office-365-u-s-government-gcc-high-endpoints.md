@@ -3,7 +3,7 @@ title: Office 365 US-Regierung gcc High Endpoint
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/04/2020
+ms.date: 04/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,14 +16,14 @@ f1.keywords:
 ms.custom: Adm_O365
 search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
-description: Wenn Ihre Organisation Office 365 verwendet und Computer in Ihrem Netzwerk von der Verbindung mit dem Internet einschränkt, finden Sie unten die Endpunkte (FQDNs, Ports, URLs, IPv4 und IPv6-Adressbereiche), die Sie in Ihre ausgehenden Zulassungslisten aufnehmen sollten, um sicherzustellen, dass Ihre Computer können Office 365 erfolgreich verwenden.
+description: Wenn Ihre Organisation Office 365 verwendet und Computer in Ihrem Netzwerk von der Verbindung mit dem Internet einschränkt, finden Sie unten die Endpunkte (FQDNs, Ports, URLs, IPv4 und IPv6-Adressbereiche), die Sie in Ihre ausgehenden Zulassungslisten aufnehmen sollten, um sicherzustellen, dass Ihre Computer Office 365 erfolgreich verwenden können.
 hideEdit: true
-ms.openlocfilehash: 1612ddda0dc264d893d54314ed2c6416d9c17ca3
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 2bae9db94baf517eb6d7551beb06a343804319ff
+ms.sourcegitcommit: 5fb126747182108e31594b22e4677f05b1fb9313
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979467"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43928179"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 US-Regierung gcc High Endpoint
 
@@ -38,8 +38,8 @@ ms.locfileid: "42979467"
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 28.01.2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
-   
+|**Letzte Aktualisierung:** 04/28/2020- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) - [Änderungsprotokoll Abonnement](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+
  Beginnen Sie mit der [Verwaltung Office 365 Endpunkte](managing-office-365-endpoints.md) , um unsere Empfehlungen für die Verwaltung der Netzwerkkonnektivität mithilfe dieser Daten zu verstehen. Endpunkte-Daten werden zu Beginn jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor der aktiven Veröffentlichung veröffentlicht wurden. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor neue Verbindungen erforderlich sind. Endpunkte können auch während des Monats bei Bedarf aktualisiert werden, um Support Eskalationen, Sicherheitsvorfälle oder andere unmittelbare betriebliche Anforderungen zu beheben. Die auf dieser Seite unten gezeigten Daten werden aus den Rest-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](office-365-ip-web-service.md) wechseln.
 
 In den Endpunktdaten unten sind Anforderungen für Netzwerkkonnektivität zwischen dem Computer eines Benutzers und Office 365 aufgelistet. Sie umfassen keine Netzwerkverbindungen von Microsoft mit einem Kundennetzwerk, manchmal auch als hybride oder eingehende Netzwerkverbindungen bezeichnet.
