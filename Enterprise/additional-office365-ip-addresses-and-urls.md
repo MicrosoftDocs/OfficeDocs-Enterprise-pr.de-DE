@@ -3,7 +3,7 @@ title: Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdi
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/28/2020
+ms.date: 04/29/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Zusammenfassung: In den neuen Endpunkt-Webdiensten ist eine kleine Anzahl von Endpunkten für bestimmte Szenarien nicht enthalten.'
 hideEdit: true
-ms.openlocfilehash: 303b3bb57ab3b29a9ad825a525793af6f476e784
-ms.sourcegitcommit: eca49563fd99f08b7ee0bba01d122b0b96de07cb
+ms.openlocfilehash: 4d67d67c3f1c0eb6aa8079dbbdc0d964274af48b
+ms.sourcegitcommit: 93d0cc401c9d910e115072c0229232765fbad75e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43930216"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43939600"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Zusätzliche Endpunkte, die nicht im Office 365-IP-Adress- und -URL-Webdienst enthalten sind
 
@@ -64,7 +64,7 @@ Abgesehen von DNS sind alle diese Punkte für die meisten Benutzer optional, es 
 | 16  |  **FQDNs für SharePoint Online und OneDrive for Business** <br> Für eine ordnungsgemäße Funktion müssen sich alle FQDNs von ".sharepoint.com" mit "\<tenant>" im FQDN in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. Sie müssen diese Endpunkte über die in Zeile 14 aufgelisteten, für die gesamte Suite gültigen FQDNs, CDNs und Telemetriewerte hinaus hinzufügen. |  | Vertrauenswürdige Sites |
 | 17  | **Yammer**  <br> Yammer steht nur im Browser zur Verfügung und erfordert die Übergabe des authentifizierten Benutzers durch einen Proxy. Alle Yammer-FQDNs müssen sich für eine ordnungsgemäße Funktion in der Zone "Vertrauenswürdige Sites" des IE oder Edge Ihres Clients befinden. |  | Vertrauenswürdige Sites |
 | 18  | Verwenden Sie [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) zum Synchronisieren von lokalen Benutzerkonten mit Azure AD. | Siehe [erforderliche Ports und Protokolle zur Hybrid-Identität](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports), [Problembehandlung bei Azure AD-Konnektivitätsproblemen](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) und [Azure AD Connect Health Agent-Installation](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints). | Nur ausgehender Serverdatenverkehr |
-| 19  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) mit 21 ViaNet in China, um Benutzerkonten lokal mit Azure AD zu synchronisieren. | \*.digicert.com:80 <BR> \*.verisign.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>Siehe auch [Fehlerbehebung bei Problemen des Eingangs mit Azure AD-Verbindung](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Nur ausgehender Serverdatenverkehr |
+| 19  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) mit 21 ViaNet in China, um Benutzerkonten lokal mit Azure AD zu synchronisieren. | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>Siehe auch [Fehlerbehebung bei Problemen des Eingangs mit Azure AD-Verbindung](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity). | Nur ausgehender Serverdatenverkehr |
 | 20  | Microsoft Stream (benötigt das Benutzertoken Azure AD). <BR> Office 365 weltweit (einschließlich GCC) | \**.cloudapp.net <BR> \**.api.microsoftstream.com <BR> \**.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP-Port 443  | Eingehender Serverdatenverkehr |
 | 21  | Verwenden Sie den MFA-Server für die mehrstufige Authentifizierung, sowohl für neue Installationen des Servers als auch für die Einrichtung von Active Directory Domain Services (AD DS). | Siehe [Erste Schritte mit Azure Multi-Factor Authentication-Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment).  | Nur ausgehender Serverdatenverkehr |
 | 22  | Microsoft Graph-Änderungsbenachrichtigungen | Entwickler können [Änderungsbenachrichtigungen](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) nutzen, um Ereignisse in Microsoft Graph zu abonnieren. | *.cloudapp.net<BR> 104.43.130.21, 137.116.169.230, 13.79.38.63, 104.214.39.228, Öffentliche Cloud: 168.63.250.205, 52.161.9.202, 40.68.103.62, 13.89.60.223, 23.100.95.104, 40.113.95.219, 104.214.32.10, 168.63.237.145, 52.161.110.176, 52.174.177.183 <BR> Microsoft Cloud for US Government: 52.244.231.173, 52.238.76.151, 52.244.250.211, 52.238.78.108 <BR> Microsoft Cloud Deutschland: 51.4.231.136, 51.5.243.223, 51.4.226.154, 51.5.244.215 <BR> Microsoft Cloud China betrieben von 21Vianet: 139.219.15.33, 42.159.154.223, 42.159.88.79, 42.159.155.77<BR> TCP-Port 443 <BR> Hinweis: Entwickler können beim Erstellen der Abonnements andere Ports angeben.  | Eingehender Serverdatenverkehr |
