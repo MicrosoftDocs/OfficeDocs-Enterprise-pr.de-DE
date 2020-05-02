@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,18 +19,18 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 'Zusammenfassung: Informationen zur Verwendung von Office 365 PowerShell mit Office 365-Benutzern und -Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und Office 365 Security & Compliance Center.'
-ms.openlocfilehash: 5608d955dc408a600b398c9f0fb061d436f0ba56
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fbc10833d3ee1e7377e6ed68adb7d2299fce72fa
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841432"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004568"
 ---
 # <a name="manage-office-365-with-office-365-powershell"></a>Verwalten von Office 365 mit Office 365 PowerShell
 
 *Dieser Artikel bezieht sich sowohl auf Office 365 als auch auf Microsoft 365.*
 
-Office 365 PowerShell ist ein leistungsfähiges Verwaltungstool, das das Microsoft 365 Admin Center ergänzt. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. In diesem Artikel erfahren Sie, wie Sie Office 365 PowerShell mit Office 365-Benutzern und-Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und dem Office 365 Security #a0 Compliance Center verwenden.
+Office 365 PowerShell ist ein leistungsfähiges Verwaltungstool, das das Microsoft 365 Admin Center ergänzt. Sie können beispielsweise die Office 365 PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. In diesem Artikel erfahren Sie, wie Sie Office 365 PowerShell mit Office 365-Benutzern und-Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und dem Office 365 Security & Compliance Center verwenden.
   
 Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
   
@@ -52,7 +54,7 @@ Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
 
     Beginnen Sie hier, wenn Sie die Office 365 PowerShell-Module installiert haben und Ihre E-Mails von vorhandenen Systemen migrieren möchten.
 
-- [Security #a0 Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [Security & Compliance Center](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
 
     Beginnen Sie hier, wenn Sie die Automatisierungsbefehle zum Verwalten des Security & Compliance Center verwenden möchten.
 

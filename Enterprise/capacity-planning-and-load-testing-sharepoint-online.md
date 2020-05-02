@@ -14,15 +14,17 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
-search.appverid: SPO160
+search.appverid:
+- SPO160
+- MET150
 ms.assetid: c932bd9b-fb9a-47ab-a330-6979d03688c0
 description: In diesem Artikel wird beschrieben, wie Sie für SharePoint Online bereitstellen können, ohne herkömmliche Auslastungstests durchführen zu müssen, da dies nicht zulässig ist.
-ms.openlocfilehash: ca0ae008778cfd5d347d8b4f78b7db927b4e8f82
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d082dbd93f9724080118f5e387713dc374e50643
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844706"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004608"
 ---
 # <a name="capacity-planning-and-load-testing-sharepoint-online"></a>Kapazitätsplanung und Auslastungstests für SharePoint Online
 In diesem Artikel wird beschrieben, wie Sie für SharePoint Online ohne herkömmliche Auslastungstests bereitstellen können, da das Laden von Tests auf SharePoint Online nicht zulässig ist. SharePoint Online ist ein clouddienst, und die Ladefunktionen, die Integrität und der Gesamtsaldo der Last im Dienst werden von Microsoft verwaltet.
@@ -41,6 +43,6 @@ Kapazität ist mehr als nur das Hinzufügen von mehr Hardware kontinuierlich, ab
 ## <a name="why-you-cannot-load-test-sharepoint-online"></a>Gründe für das Laden von Test SharePoint Online
 Bei lokalen Umgebungen werden Auslastungstests verwendet, um die Skalierungs Annahme zu validieren und letztendlich den Unterbrechungs Pfad einer Farm zu finden. durch Sättigung mit Last. 
 
-Mit SharePoint Online müssen wir die Dinge unterschiedlich ausführen, da die Skalierung relativ flüssig ist und die Last basierend auf bestimmten Heuristiken anpasst, drosselt und steuert. Da es sich um eine derart große Multi-Mandanten Umgebung handelt, müssen wir alle Mandanten in der gleichen Farm schützen, sodass alle Auslastungstests automatisch gedrosselt werden. Wenn Sie jedoch versuchen, den Test zu laden, werden Sie nicht nur eingeschränkt, sondern auch enttäuschende und potenziell irreführende Ergebnisse erhalten, da die Farm, die Sie heute getestet haben, wahrscheinlich im Testfenster oder innerhalb von Stunden nach dem Testen eine Änderung der Skalierung vorgenommen hat, da Skalierungs-und Farm Ausgleichs Aktionen werden kontinuierlich ausgeführt.
+Mit SharePoint Online müssen wir die Dinge unterschiedlich ausführen, da die Skalierung relativ flüssig ist und die Last basierend auf bestimmten Heuristiken anpasst, drosselt und steuert. Da es sich um eine derart große Multi-Mandanten Umgebung handelt, müssen wir alle Mandanten in der gleichen Farm schützen, sodass alle Auslastungstests automatisch gedrosselt werden. Wenn Sie jedoch versuchen, den Test zu laden, werden Sie nicht nur eingeschränkt, sondern auch enttäuschende und potenziell irreführende Ergebnisse erhalten, da die Farm, die Sie heute getestet haben, wahrscheinlich im Testfenster oder innerhalb von Stunden nach dem Testen Skalierungs-und Farm Ausgleichs Aktionen ausgeführt wird.
 
 Anstatt zu versuchen, SharePoint-Test als Dienst zu laden, konzentrieren Sie sich lieber auf die empfohlenen Vorgehensweisen und folgen Sie den Anleitungen zum [erstellen, starten und Verwalten eines gesunden Portals](https://go.microsoft.com/fwlink/?linkid=2105838) .
