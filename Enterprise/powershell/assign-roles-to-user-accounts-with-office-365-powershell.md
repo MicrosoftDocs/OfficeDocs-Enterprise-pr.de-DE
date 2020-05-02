@@ -8,6 +8,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -17,12 +19,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 'Zusammenfassung: Verwenden von Office 365 PowerShell zum Zuweisen von Rollen zu Benutzerkonten.'
-ms.openlocfilehash: 3b57862d78d8699da033ed016338a449650e7140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 8cd3bd27f95c9d4191c24c7febc85c8fb2fb0118
+ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841672"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44004738"
 ---
 # <a name="assign-roles-to-user-accounts-with-office-365-powershell"></a>Zuweisen von Rollen zu Benutzerkonten mit Office 365 PowerShell
 
@@ -169,7 +171,7 @@ $roleName="<The role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress $upnName -RoleName $roleName
 ```
 
-Kopieren Sie die Befehle, und fügen Sie sie in Editor ein. Ersetzen Sie für die Variablen **$upnName** und **$roleName** den Beschreibungstext durch ihre Werte, entfernen \< Sie die Zeichenfolge und #a0, und lassen Sie die Anführungszeichen. Kopieren Sie die geänderten Zeilen, und fügen Sie sie in das Fenster „Windows Azure Active Directory-Modul für Windows PowerShell", um sie auszuführen. Alternativ können Sie die Windows PowerShell ISE verwenden.
+Kopieren Sie die Befehle, und fügen Sie sie in Editor ein. Ersetzen Sie für die Variablen **$upnName** und **$roleName** den Beschreibungstext durch ihre Werte, entfernen \< Sie die Zeichenfolge und >, und lassen Sie die Anführungszeichen. Kopieren Sie die geänderten Zeilen, und fügen Sie sie in das Fenster „Windows Azure Active Directory-Modul für Windows PowerShell", um sie auszuführen. Alternativ können Sie die Windows PowerShell ISE verwenden.
   
 Hier ein Beispiel für einen abgeschlossenen Befehlssatz:
   
