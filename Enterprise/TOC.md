@@ -111,7 +111,7 @@
 ## [3. Implementieren der Sicherheit](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
 ## 4. Bereitstellen von Clientsoftware
-### [Bereitstellen von Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+### [Bereitstellung von Microsoft 365 Apps for Enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 ### [Bereitstellen des Skype for Business-Clients](https://docs.microsoft.com/skypeforbusiness/set-up-skype-for-business-online/deploy-the-skype-for-business-client-in-office-365)
 ### [Bereitstellen und Verwalten von mobilen Apps](https://support.office.com/article/d35db652-629d-4087-8dc0-1e0ed922307c)
 
