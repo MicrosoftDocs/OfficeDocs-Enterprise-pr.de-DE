@@ -17,17 +17,17 @@ ms.custom:
 ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
-description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.'
-ms.openlocfilehash: ebbf2f2eb15523b455c7fab1c306eea6e0d192b1
-ms.sourcegitcommit: 9416fbf8f136baeaf7d45eb243921c70ae67438d
+description: 'Zusammenfassung: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Microsoft 365 Apps for Enterprise bereitgestellt wird.'
+ms.openlocfilehash: 065776de182ab960f6f9ccf5cfbc58449954e220
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43037802"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009370"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
- **Zusammenfassung:** Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützen von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Office ProPlus bereitgestellt wird.
+ **Zusammenfassung**: Erfahren Sie mehr über die Hauptkonzepte der Cloudarchitektur für Microsoft-Identitäts-, -Sicherheits-, -Netzwerk- und Hybridlösungen. Sehen Sie sich Empfehlungen zum Schützten von Dateien, Identitäten und Geräten bei Verwendung der Microsoft-Cloud an. Erfahren Sie, wie ein moderner und sicherer Desktop mit Windows 10 und Microsoft 365 Apps for Enterprise bereitgestellt wird.
   
 In diesen Architekturtools- und -postern finden Sie Informationen zu Microsoft-Cloud-Diensten und -Plattformen wie Office 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 sowie hybride lokale und Cloud-Lösungen. IT-Entscheidungsträger und Architekten können diese Ressourcen verwenden, um die optimalen Lösungen für ihre Arbeitsauslastungen zu bestimmen und Entscheidungen zu Kerninfrastrukturkomponenten wie Identität und Sicherheit zu treffen. 
   
@@ -224,11 +224,11 @@ Weitere Informationen finden Sie im Artikel zu diesem Poster: [Microsoft-Telefon
 <a name="msd"></a>
 ### <a name="deploy-a-modern-and-secure-desktop-with-microsoft"></a>Bereitstellen eines modernen und sicheren Desktops mit Microsoft
 
-Informationen für IT-Architekten über das Bereitstellen und Verwalten von Updates für Office 365 ProPlus unter Windows 10
+Informationen für IT-Architekten über das Bereitstellen und Verwalten von Updates Microsoft 365 Apps for Enterprise (vormals Office 365 ProPlus genannt) unter Windows 10.
   
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10 und Office ProPlus mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Office ProPlus mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
+|[![Miniaturansicht für das Bereitstellen eines modernen und sicheren Desktops mit Microsoft-Modell](media/321dd59c-d992-4c7a-a7b6-c23a783858bd.png)          ](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/> | Dieses Modell enthält Folgendes: <ul><li>  Bereitstellen von Windows 10 und Microsoft 365 Apps for Enterprise aus der Microsoft-Cloud </li><li>  Bereitstellen von Windows 10 und Microsoft 365 Apps for Enterprise mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Verwalten von Updates für Windows 10 und Microsoft 365 Apps for Enterprise aus der Microsoft-Cloud </li><li>  Verwalten von Updates für Windows 10 und Microsoft 365 Apps for Enterprise mithilfe von Microsoft Endpoint Configuration Manager </li><li>  Out-of-Box- und zusätzliche Schutzfunktionen von Windows 10 </li></ul><br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
