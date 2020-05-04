@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 description: In diesem Artikel wird erläutert, wie Sie mithilfe von Office 365 PowerShell Informationen zu den Lizenzierungsplänen, Diensten und Lizenzen anzeigen können, die in Ihrer Office 365-Organisation verfügbar sind.
-ms.openlocfilehash: a130faef640e875bde864ff26e46863e82f6df7a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: e76a11d0ac174ef2de05c7e670537304dad9462f
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004138"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009530"
 ---
 # <a name="view-licenses-and-services-with-office-365-powershell"></a>Anzeigen von Lizenzen und Diensten mit Office 365 PowerShell
 
@@ -33,7 +33,7 @@ Jedes Office 365-Abonnement besteht aus den folgenden Komponenten:
 
 - **Lizenzierungspläne**: Diese werden auch als Lizenzpläne oder Office 365-Pläne bezeichnet. Lizenzierungspläne definieren die Office 365-Dienste, die für Benutzer verfügbar sind. Ihr Office 365-Abonnement kann mehrere Lizenzierungspläne enthalten. Ein Beispiel für einen Lizenzierungsplan ist Office 365 Enterprise E3.
     
-- **Dienste** Diese werden auch als Dienstpläne bezeichnet. Dienste sind die Office 365 Produkte, Features und Funktionen, die in den einzelnen Lizenzierungs Plänen zur Verfügung stehen, beispielsweise Exchange Online und Office 365 ProPlus. Benutzern können mehrere verschiedene Lizenzen aus unterschiedlichen Lizenzierungsplänen zugewiesen sein, über die sie Zugriff auf unterschiedliche Dienste haben.
+- **Dienste** Diese werden auch als Dienstpläne bezeichnet. Dienste sind die Office 365 Produkte, Features und Funktionen, die in jedem Lizenzierungs Plan zur Verfügung stehen, beispielsweise Exchange Online und Microsoft 365 apps for Enterprise (zuvor mit dem Namen Office 365 ProPlus). Benutzern können mehrere verschiedene Lizenzen aus unterschiedlichen Lizenzierungsplänen zugewiesen sein, über die sie Zugriff auf unterschiedliche Dienste haben.
     
 - **Lizenzen**: Ein Lizenzierungsplan enthält die Anzahl von Lizenzen, die Sie erworben haben. Die Lizenzen weisen Sie Benutzern zu, damit sie die im Lizenzierungsplan definierten Office 365-Dienste nutzen können. Einem Benutzerkonto muss mindestens eine (1) Lizenz aus einem Lizenzierungsplan zugewiesen sein, damit der Benutzer sich mit dem Konto bei Office 365 anmelden und die Dienste nutzen kann.
     
@@ -138,10 +138,10 @@ In der folgenden Tabelle sind die Office 365-Servicepläne und Anzeigenamen der 
 |**Dienstplan**|**Beschreibung**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365-Apps für Unternehmen *(zuvor mit dem Namen Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office  <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |

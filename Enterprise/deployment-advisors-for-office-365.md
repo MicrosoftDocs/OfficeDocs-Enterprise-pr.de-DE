@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Office 365 oder Microsoft 365 mit Bereitstellungs Beratern.
-ms.openlocfilehash: cb721b2bc115a9419feb4becaef4bcbb9c5c436e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 535bf1a0bcc47f3e311eeb714f957c36dde67fdd
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840532"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009391"
 ---
 # <a name="deployment-advisors-for-office-365-or-microsoft-365-services"></a>Bereitstellungs Ratgeber für Office 365-oder Microsoft 365-Dienste
 
@@ -159,23 +159,23 @@ Wenn Sie über Gmail verfügen, müssen Sie Ihre Gmail-Kontakte und Google Kalen
 
 ## <a name="file-creation-storage-and-sharing"></a>Erstellen, speichern und Freigeben von Dateien
 
-### <a name="office-365-proplus"></a>Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for Enterprise
 
-Mit Office 365 ProPlus werden die Benutzer auf den neuesten Versionen von Office installiert und aktualisiert.
+Microsoft 365 apps for Enterprise (zuvor mit dem Namen "Office 365 ProPlus" bezeichnet) ruft Ihre Benutzer in den neuesten Versionen von Office auf und hält Sie auf dem laufenden.
 
 In diesem Leitfaden finden Sie die Schritte zum Installieren von Office auf einem PC oder Mac für Ihr Unternehmen, einschließlich Tipps für die Einführung aller Benutzer in Office.
 
 |||
 |:-------|:-----|
-| **Ausführen** |  [Office 365 ProPlus-Schnellstarthandbuch](https://aka.ms/OPPquickstartguide) <BR> |
+| **Ausführen** |  [Microsoft 365-Schnellstarthandbuch für Apps für Unternehmen](https://aka.ms/OPPquickstartguide) <BR> |
 |||
 
-Der Office 365 ProPlus-Bereitstellungs Ratgeber durchläuft die Schritte zur Unterstützung von Benutzern beim Installieren von Office 365 ProPlus direkt aus dem Office 365 Portal Online oder für die Bereitstellung von Office 365 ProPlus für Ihre Benutzer von einem lokalen Standort aus. Enthalten sind Anweisungen zur Verwendung des Microsoft Endpoint Configuration Manager, eines Gruppenrichtlinien-Startskripts, einer Betriebssystem-Image-Datei oder einer freigegebenen RDS-Aktivierung (Remote Desktop Dienste).
+Der Office-Bereitstellungs Ratgeber erläutert die Schritte zur Unterstützung von Benutzern beim Installieren von Microsoft 365-Apps für Unternehmen direkt aus dem Office 365 Portal Online oder für die Bereitstellung von Microsoft 365-Apps für Enterprise für Ihre Benutzer von einem lokalen Standort aus. Enthalten sind Anweisungen zur Verwendung des Microsoft Endpoint Configuration Manager, eines Gruppenrichtlinien-Startskripts, einer Betriebssystem-Image-Datei oder einer freigegebenen RDS-Aktivierung (Remote Desktop Dienste).
 
 |||
 |:-------|:-----|
-| **Ausführen** | [Office 365 ProPlus-Bereitstellungs Ratgeber](https://aka.ms/o365proplusdeploy) | 
-| **Überwachungs** | [Office Experience als Abonnementdienst](https://aka.ms/qo45jf) <BR> [Übersicht über Office 365 ProPlus](https://aka.ms/r359zr) | 
+| **Ausführen** | [Office-Bereitstellungs Ratgeber](https://aka.ms/o365proplusdeploy) | 
+| **Überwachungs** | [Office Experience als Abonnementdienst](https://aka.ms/qo45jf) <BR> [Übersicht über Microsoft 365-Apps für Unternehmen](https://aka.ms/r359zr) | 
 |||
 
 
@@ -187,7 +187,7 @@ Um schnell mit OneDrive für Unternehmen für Dateispeicherung, Freigabe und Syn
 
 |||
 |:-------|:-----|
-| **Ausführen** | [Office 365 ProPlus-Bereitstellungs Ratgeber](https://aka.ms/o365proplusdeploy) | 
+| **Ausführen** | [Office-Bereitstellungs Ratgeber](https://aka.ms/o365proplusdeploy) | 
 | **Überwachungs** | [OneDrive für Unternehmen integrierter Vorteil](https://aka.ms/f66hqa) <BR> [Willkommen bei OneDrive: von einem anderen Cloud-Speicheranbieter kommend](https://videoplayercdn.osi.office.net/embed/6b11f30b-725a-4145-8b72-45a41793a432) | 
 |||
 
@@ -236,7 +236,7 @@ Verwenden Sie diese Setup Anleitung, um Funktionen wie Gruppenbasierte Zugriffsv
 | **Ausführen** |  [Azure AD Basic Setup Guide](https://aka.ms/azureadbasic) |
 |||
 
-Um die zahlreichen Features von Azure AD Premium zu aktivieren, die Identitäts Verwaltungsfunktionen wie mehrstufige Authentifizierung, einmaliges Anmelden (Single Sign-on, SSO), Geräteregistrierung, Self-Service-Kennwort und Gruppenverwaltung sowie Sicherheitsüberwachung bereitstellen, verwenden Sie dieses Handbuch .
+Verwenden Sie dieses Handbuch, um die zahlreichen Features von Azure AD Premium zu aktivieren, die Identitäts Verwaltungsfunktionen wie mehrstufige Authentifizierung, einmaliges Anmelden (SSO), Geräteregistrierung, Self-Service-Kennwort und Gruppenverwaltung sowie Sicherheitsüberwachung bereitstellen.
   
 |||
 |:-------|:-----|

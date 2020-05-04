@@ -18,12 +18,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: Wenn Ihre Organisation Office 365 verwendet und Computer in Ihrem Netzwerk von der Verbindung mit dem Internet einschränkt, finden Sie unten die Endpunkte (FQDNs, Ports, URLs, IPv4 und IPv6-Adressbereiche), die Sie in Ihre ausgehenden Zulassungslisten aufnehmen sollten, um sicherzustellen, dass Ihre Computer Office 365 erfolgreich verwenden können.
 hideEdit: true
-ms.openlocfilehash: 2bae9db94baf517eb6d7551beb06a343804319ff
-ms.sourcegitcommit: 5fb126747182108e31594b22e4677f05b1fb9313
+ms.openlocfilehash: 4372770ebc0e1005d460aa2fe802f9968ff5c7cb
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43928179"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009490"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 US-Regierung gcc High Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "43928179"
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 04/28/2020- ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) - [Änderungsprotokoll Abonnement](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Letzte Aktualisierung:** 28.04.2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Beginnen Sie mit der [Verwaltung Office 365 Endpunkte](managing-office-365-endpoints.md) , um unsere Empfehlungen für die Verwaltung der Netzwerkkonnektivität mithilfe dieser Daten zu verstehen. Endpunkte-Daten werden zu Beginn jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor der aktiven Veröffentlichung veröffentlicht wurden. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor neue Verbindungen erforderlich sind. Endpunkte können auch während des Monats bei Bedarf aktualisiert werden, um Support Eskalationen, Sicherheitsvorfälle oder andere unmittelbare betriebliche Anforderungen zu beheben. Die auf dieser Seite unten gezeigten Daten werden aus den Rest-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](office-365-ip-web-service.md) wechseln.
 
@@ -64,5 +64,5 @@ Hinweise zu dieser Tabelle:
 
 - Das Security and Compliance Center (SCC) bietet Unterstützung für Azure Express Route für Office 365. Gleiches gilt für viele Features, die über den SCC verfügbar gemacht werden, wie Berichterstellung, Überwachung, erweiterte eDiscovery, Unified DLP und Datensteuerung. Zwei spezifische Features, PST-Import und eDiscovery-Export, unterstützen derzeit keine Azure-Express Route mit nur Office 365 Routenfiltern aufgrund ihrer Abhängigkeit von Azure-BLOB-Speicher. Um diese Funktionen nutzen zu können, benötigen Sie eine separate Konnektivität mit Azure-BLOB-Speicher mithilfe aller unterstützenden Azure-Verbindungsoptionen, einschließlich Internet Konnektivität oder Azure Express Route mit Azure Public Route Filters. Sie müssen die Einrichtung einer solchen Konnektivität für diese beiden Features auswerten. Das Team für Office 365 Information Protection kennt diese Einschränkung und arbeitet aktiv an der Unterstützung von Azure Express Route für Office 365, die auf Office 365 Routenfilter für beide Features beschränkt sind.
 
-- Es gibt zusätzliche optionale Endpunkte für Office 365 ProPlus, die nicht aufgeführt sind und für Benutzer nicht erforderlich sind, um Office 365 ProPlus-Anwendungen zu starten und Dokumente zu bearbeiten. Optionale Endpunkte werden in Microsoft-Rechenzentren gehostet und verarbeiten, übertragen oder speichern keine Kundendaten. Es wird empfohlen, dass Benutzer Verbindungen mit diesen Endpunkten an den standardmäßigen Internet Ausgangs Perimeter weitergeleitet werden.
+- Es gibt zusätzliche optionale Endpunkte für Microsoft 365-Apps für Unternehmen, die nicht aufgeführt sind und für Benutzer nicht erforderlich sind, um Microsoft 365-Apps für Enterprise-Anwendungen zu starten und Dokumente zu bearbeiten. Optionale Endpunkte werden in Microsoft-Rechenzentren gehostet und verarbeiten, übertragen oder speichern keine Kundendaten. Es wird empfohlen, dass Benutzer Verbindungen mit diesen Endpunkten an den standardmäßigen Internet Ausgangs Perimeter weitergeleitet werden.
 

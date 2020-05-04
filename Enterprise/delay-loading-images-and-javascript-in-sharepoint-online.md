@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern und außerdem darauf zu warten, dass unwesentliches JavaScript geladen wird, bevor die Seite geladen wird.
-ms.openlocfilehash: 14220839c196ea3dd987be5dc924c2f41965fc0a
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004598"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009350"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
 In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern und außerdem darauf zu warten, dass unwesentliches JavaScript geladen wird, bevor die Seite geladen wird.
   
-Bilder können sich negativ auf die Seitenlast Geschwindigkeiten auf SharePoint Online auswirken. Standardmäßig werden von den meisten modernen Internet Browsern vor dem Laden einer HTML-Seite Bilder abgerufen. Dies kann dazu führen, dass die Seite unnötig langsam belastet wird, wenn die Bilder auf dem Bildschirm nicht sichtbar sind, bis der Benutzer einen Bildlauf nach unten durchführt. Die Bilder können verhindern, dass der Browser den sichtbaren Teil der Seite lädt. Um dieses Problem zu umgehen, können Sie JavaScript verwenden, um das Laden der Bilder zuerst zu überspringen. Außerdem kann das Laden nicht erforderlicher JavaScript-Vorgänge zu Lasten auf Ihren SharePoint-Seiten verlangsamen. In diesem Thema werden einige Methoden beschrieben, die Sie zum Verbessern der Seitenladezeiten mit JavaScript in SharePoint Online verwenden können.
+Bilder können sich negativ auf die Seitenlast Geschwindigkeiten auf SharePoint Online auswirken. Standardmäßig werden von den meisten modernen Internet Browsern vor dem Laden einer HTML-Seite Bilder abgerufen. Dies kann dazu führen, dass die Seite unnötig langsam belastet wird, wenn die Bilder auf dem Bildschirm nicht sichtbar sind, bis der Benutzer einen Bildlauf nach unten durchführt. Die Bilder können verhindern, dass der Browser den sichtbaren Teil der Seite lädt. Um dieses Problem zu umgehen, können Sie JavaScript verwenden, um das Laden der Bilder zuerst zu überspringen. Außerdem kann das Laden nicht wesentlicher JavaScript-Downloadzeiten auch auf Ihren SharePoint-Seiten verlangsamen. In diesem Thema werden einige Methoden beschrieben, die Sie zum Verbessern der Seitenladezeiten mit JavaScript in SharePoint Online verwenden können.
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Verbessern der Seitenladezeiten durch verzögertes Laden von Bildern in SharePoint Online Seiten mithilfe von JavaScript
 
-Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Zum Beispiel:
+Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Beispiel:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -121,7 +121,7 @@ Verpassen Sie nicht den Artikel und das Codebeispiel auf der auf GitHub bereitge
   
 ## <a name="see-also"></a>Siehe auch
 
-[Unterstützte Browser in Office 2013 und Office 365 ProPlus](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
+[Unterstützte Browser in Office 2013 und Microsoft 365-Apps für Unternehmen](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
 [Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
   

@@ -18,13 +18,13 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Diese Übersichts Schritte sollen Ihnen helfen, Ihr Netzwerk einzurichten, Ihre Identitäten zu erstellen, Office 365 ProPlus bereitzustellen, Ihre Daten zu migrieren und den Personen in Ihrer Organisation bei der Verwendung von Office 365 zu helfen.
-ms.openlocfilehash: 979b7f1153451b072c5ab25ad8aced50ae69576a
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Diese Übersichts Schritte sollen Ihnen helfen, Ihr Netzwerk einzurichten, Ihre Identitäten zu erstellen, Microsoft 365-Apps für Unternehmen bereitzustellen, Ihre Daten zu migrieren und den Personen in Ihrer Organisation bei der Verwendung von Office 365 zu helfen.
+ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844016"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009280"
 ---
 # <a name="deploy-office-365-enterprise-for-your-organization"></a>Bereitstellen von Office 365 Enterprise für Ihre Organisation
 
@@ -34,7 +34,7 @@ In diesem Artikel werden zwei Bereitstellungsoptionen beschrieben, unabhängig d
 
 ## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>Assistent für Office 365 Enterprise-Setup mit dem kurzschritt
 
-Der **[kurzOffice 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** ist die beste Methode für die Bereitstellung von Office 365. Der Kurzlauf führt Sie durch die gängigsten Bereitstellungskonfigurationen und kann auf diese Weise Fragen beantworten. 
+Der **[kurzOffice 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** ist die beste Methode für die Bereitstellung von Office 365. FastTrack führt Sie durch die am häufigsten verwendeten Bereitstellungskonfigurationen und ist in der Lage, im Verlauf dieses Prozesses auftauchende Fragen beantworten. 
 
 Um auf eine Reihe von Installationsanleitungen zuzugreifen, melden Sie sich bei Ihrem Office 365 Abonnement an, und wechseln Sie dann zu [Einrichten Office 365](https://aka.ms/o365fasttrack).
 
@@ -60,9 +60,9 @@ Wenn Sie Office 365 Enterprise nach Abschluss der Planung selbst bereitstellen m
 
    Umfasst das Konfigurieren und Bereitstellen grundlegender und erweiterter Sicherheits-, Bedrohungs-und Informationsschutzfunktionen für Ihren Mandanten und ihre Identitäten in den ersten 30 Tagen, 90 Tagen und darüber hinaus.
  
-4. [Bereitstellen der Client Software](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+4. [Bereitstellen der Client Software](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Umfasst die Bereitstellung Office 365 ProPlus, der Cloud-aktualisierten und immer aktuellen Version der Office-Suite (Word, Excel, PowerPoint und andere) auf Ihren Geräten. Jede Office 365-Clientlizenz enthält eine Lizenz für Office 365 ProPlus.
+   Umfasst die Bereitstellung von Microsoft 365-Apps für Unternehmen (zuvor mit dem Namen Office 365 ProPlus), die in der Cloud aktualisierte und immer aktuelle Version der Office-Suite (Word, Excel, PowerPoint und andere) auf Ihren Geräten. Jede Office 365-Clientlizenz enthält eine Lizenz für Microsoft 365 apps for Enterprise.
  
 5. [Einrichten der Verwaltung mobiler Geräte](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 

@@ -23,12 +23,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Der Support für Office 2010-Server und -Clientanwendungen wird bald eingestellt, und es stehen keine benutzerdefinierten Supportvereinbarungen zur Verfügung. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
-ms.openlocfilehash: 3504f7d7042616f94cc359ef849ca3afd86ebc04
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 76f61942a4b3f832b75f4a098452748898d2e8c5
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503822"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009520"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen, die Ihnen beim Upgrade von Office 2010-Servern und -Clients helfen
 
@@ -42,7 +42,7 @@ Während der Planung Ihres Upgrades ist somit ein guter Zeitpunkt, um einen Wech
 
 - Office 365 bietet cloudbasierte Dienste für Office 2010-Serverprodukte wie Exchange Server und SharePoint Server sowie Dienste wie Teams und OneDrive for Business. 
 
-- Office 365 ProPlus (im Lieferumfang von Office 365 E3 und E5 sowie Microsoft 365 Enterprise enthalten) ist die Gruppe der Office-Client-Apps, die Sie auf Ihrem lokalen Gerät installieren. Diese werden laufend mittels neuer Produktivitäts- und Sicherheitsfeatures aus der Microsoft-Cloud aktualisiert.
+- Microsoft 365 Apps für Unternehmen (zuvor mit dem Namen Office 365 ProPlus), die in Office 365 E3 und E5 und Microsoft 365 Enterprise enthalten sind, ist die Gruppe von Office-Client-apps, die Sie auf Ihrem lokalen Gerät installieren. Diese werden laufend mittels neuer Produktivitäts- und Sicherheitsfeatures aus der Microsoft-Cloud aktualisiert.
 
 Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und die Cloud für Office 2010-Clients und -Server sowie für Windows 7 finden Sie auf unter dem [Poster zum Supportende](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 

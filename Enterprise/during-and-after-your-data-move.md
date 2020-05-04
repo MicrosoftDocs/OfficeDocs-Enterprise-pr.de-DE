@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf die Endbenutzer. Es sind keine Maßnahmen erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Geo-Rechenzentrum verschiebt. Der Datentransfer und die Validierung erfolgen im Hintergrund im Voraus mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: ee2a63ed11e83a16ec6c894a3eaf34cf36ebbc4f
-ms.sourcegitcommit: cf92870078d971ae8e36b75bd35f4b8f36ec7a50
+ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772106"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009300"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -74,7 +74,7 @@ Wenn SharePoint Online verschoben wird, werden auch Daten für die folgenden Die
     
 - Office im S-Browser
     
-- Office 365 ProPlus
+- Microsoft 365 Apps for Enterprise
     
 - Visio Pro für Office 365
     

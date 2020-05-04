@@ -15,12 +15,12 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es an der Zeit, Ihr Upgrade zu planen. Halten Sie nicht an veralteten und nicht unterstützten Apps und Servern fest. Verwenden Sie diese Ressourcen für Ihre ersten Schritte bei der Planung.
-ms.openlocfilehash: 1b32af6e09b3a8a5830fa59dc6ec6de1060297e0
-ms.sourcegitcommit: 37674c1414175b49d59000b56fa685c05faabf35
+ms.openlocfilehash: 407f3d9570916ab4373dbb4e34f4cb6e57ebc7f7
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503803"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009480"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007- oder Office 2010-Servern und -Clients
 
@@ -88,7 +88,7 @@ Sie müssen nicht unbedingt zum jetzigen Zeitpunkt ein Upgrade durchführen. Ihr
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) ist eine Kombination aus Office 365, Windows 10 und Enterprise Mobility + Security (EMS), für sichere Kreativität und Zusammenarbeit, und bietet eine komplette, intelligente Lösung für sichere Kreativität und Zusammenarbeit. 
   
-Sie können Ihre Office 2007- oder Office 2010-Server und -Clients zwar zu Office 365 migrieren, Microsoft 365 umfasst aber die erforderlichen Lizenzen und Funktionen, um sicherzustellen, dass Ihre Organisation mit dem neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte – einschließlich Windows, IOS und Android – registriert und mit Richtlinien gesichert sind, die Authentifizierung und Datenschutz erfordern. Darüber hinaus werden Windows 10 und Ihre Office 365 ProPlus-Clientsoftware fortlaufend mit den neuesten Features und Sicherheitsupdates aktualisiert.
+Sie können Ihre Office 2007- oder Office 2010-Server und -Clients zwar zu Office 365 migrieren, Microsoft 365 umfasst aber die erforderlichen Lizenzen und Funktionen, um sicherzustellen, dass Ihre Organisation mit dem neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte – einschließlich Windows, IOS und Android – registriert und mit Richtlinien gesichert sind, die Authentifizierung und Datenschutz erfordern. Darüber hinaus wird Windows 10 und Ihre Microsoft 365 apps for Enterprise (zuvor Office 365 ProPlus bezeichnet)-Client Software fortlaufend aktualisiert, um die neuesten Features und Sicherheitsupdates einzuschließen.
   
 Microsoft 365 bietet die Möglichkeit für den digitalen Wandel Ihres Unternehmens – mit ständig verbesserten Geräten und Produktivitätsumgebungen, die von der Microsoft Cloud bereitgestellt und gesichert werden.
   

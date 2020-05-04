@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Eine Erläuterung der Berichtsfeatures in Office 365.
-ms.openlocfilehash: 7816ed231a3e38f618fb3f63f77dc24c9eed37c3
-ms.sourcegitcommit: 3aa6c61242c5691e3180a474ad059bd84c86dc9e
+ms.openlocfilehash: 19ffd501627426b08599b29c3125a52c839df5e2
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43206552"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009510"
 ---
 # <a name="office-365-reporting-features"></a>Berichtsfeatures in Office 365 
 
@@ -30,7 +30,7 @@ Das Feature Berichte in Office 365 bietet verschiedene Überwachungsberichte fü
 
 ## <a name="office-365-reports-dashboard"></a>Dashboard für Office 365 Berichte
 
-Im Dashboard Berichte der Microsoft 365 Admin Center-Vorschau werden Nutzungsaktivitäten in Office 365 angezeigt. Office 365 globale Administratoren oder ein Exchange Online, SharePoint Online oder Skype for Business Administrator können einen detaillierten Einblick in die Verwendung dieses Diensts erhalten. Beispielsweise die Anzahl der Benutzer in einem bestimmten Office 365 Dienst, die Anzahl der Benutzer, die Office 365 ProPlus aktiviert haben, und wie viele e-Mails durch die Organisation fließen. Berichte stehen für die letzten 7, 30, 90 und 180 Tage zur Verfügung.
+Im Dashboard Berichte der Microsoft 365 Admin Center-Vorschau werden Nutzungsaktivitäten in Office 365 angezeigt. Office 365 globale Administratoren oder ein Exchange Online, SharePoint Online oder Skype for Business Administrator können einen detaillierten Einblick in die Verwendung dieses Diensts erhalten. Beispielsweise die Anzahl der Benutzer in einem bestimmten Office 365 Dienst, die Anzahl der Benutzer, die Microsoft 365-Apps für Enterprise aktiviert haben (zuvor mit dem Namen Office 365 ProPlus) und wie viele e-Mails über die Organisation fließen. Berichte stehen für die letzten 7, 30, 90 und 180 Tage zur Verfügung.
 
 Die folgenden Berichte stehen zur Verfügung:
 
@@ -59,7 +59,7 @@ Exchange Online Überwachungsberichte enthalten Details zum Postfachzugriff und 
 > [!NOTE]
 > Sie müssen die postfachüberwachungsprotokollierung für jedes Postfach aktivieren, damit überwachte Ereignisse im Überwachungsprotokoll für dieses Postfach gespeichert werden. Wenn die postfachüberwachungsprotokollierung für ein Postfach nicht aktiviert ist, werden Ereignisse für dieses Postfach nicht im Überwachungsprotokoll gespeichert und nicht in Post Fach Überwachungsberichten angezeigt. Weitere Informationen finden Sie unter [Aktivieren der postfachüberwachung](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918).
 
-| Aufgabe | Beschreibung |
+| Vorgang | Beschreibung |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Ausführen eines Berichts zum Postfachzugriff durch Nicht-Besitzer](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | Zeigt die Liste der Postfächer an, auf die ein anderer Benutzer als der Besitzer des Postfachs zugreift. Der Bericht enthält Informationen darüber, wer auf das Postfach zugegriffen hat, welche Aktionen er im Postfach durchgeführt hat und ob die Aktionen erfolgreich waren. |
 | [Exportieren von Postfachüberwachungsprotokollen](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | Postfachüberwachungsprotokolle enthalten Informationen zu Zugriff und Aktionen in einem Postfach, das von einem anderen Benutzer als dem Postfachbesitzer übernommen wurde. Administratoren können Postfächer zusammen mit einem Datumsbereich angeben, um Berichte zu generieren. Die Protokolle werden in XML exportiert, an eine Nachricht angefügt und an bestimmte Benutzer gesendet, wie vom Administrator festgelegt. |

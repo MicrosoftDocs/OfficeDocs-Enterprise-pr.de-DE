@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: In diesem Artikel erfahren Sie, wie Sie Benutzerkonten Lizenzen zuweisen und gleichzeitig bestimmte Servicepläne mit Office 365 PowerShell deaktivieren.
-ms.openlocfilehash: a00a1af02aeb69f7d69f9f9fc998202ac7c53291
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: b1fcd8afd9f9fee5b249752821385cd888519a37
+ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004668"
+ms.lasthandoff: 05/03/2020
+ms.locfileid: "44009470"
 ---
 # <a name="disable-access-to-services-while-assigning-user-licenses"></a>Deaktivieren des Zugriffs auf Dienste während des Zuweisens von Benutzerlizenzen
 
@@ -104,10 +104,10 @@ In der folgenden Tabelle sind die Office 365-Servicepläne und Anzeigenamen der 
 |**Dienstplan**|**Beschreibung**|
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
-| `TEAMS1` <br/> |Microsoft Teams  <br/> |
+| `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure-Rechteverwaltung (Rights Management, RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Office 365 ProPlus  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365-Apps für Unternehmen *(zuvor mit dem Namen Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Office   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
