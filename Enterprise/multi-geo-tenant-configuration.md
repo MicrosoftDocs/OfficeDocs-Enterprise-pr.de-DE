@@ -1,5 +1,5 @@
 ---
-title: Office 365 Multi-Geo-Mandantenkonfiguration
+title: Microsoft 365 Multi-Geo-Mandantenkonfiguration
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -12,31 +12,31 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 localization_priority: Priority
-description: Erfahren Sie, wie Sie Office 365 Multi-Geo konfigurieren.
-ms.openlocfilehash: bba1260283b4e610b88c00c7d531e44c79acd58d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+description: Erfahren Sie, wie Sie Microsoft 365 Multi-Geo konfigurieren.
+ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41973977"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057721"
 ---
-# <a name="office-365-multi-geo-tenant-configuration"></a>Office 365 Multi-Geo-Mandantenkonfiguration
+# <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo-Mandantenkonfiguration
 
-Bevor Sie Ihren Mandanten für Office 365 Multi-Geo konfigurieren, stellen Sie sicher, dass Sie [Plan für Office 365 Multi-Geo](plan-for-multi-geo.md) gelesen haben. Um die Schritte in diesem Artikel auszuführen, benötigen Sie eine Liste der geografischen Standorte, die Sie als Satellitenstandorte aktivieren möchten, und der Testbenutzer, die Sie für diese Standorte bereitstellen möchten.
+Bevor Sie Ihren Mandanten für Microsoft 365 Multi-Geo konfigurieren, stellen Sie sicher, dass Sie [Plan für Microsoft 365 Multi-Geo](plan-for-multi-geo.md) gelesen haben. Um die Schritte in diesem Artikel auszuführen, benötigen Sie eine Liste der geografischen Standorte, die Sie als Satellitenstandorte aktivieren möchten, und der Testbenutzer, die Sie für diese Standorte bereitstellen möchten.
 
-## <a name="add-the-multi-geo-capabilities-in-office-365-plan-to-your-tenant"></a>Hinzufügen des Plans für Multi-Geo-Funktionen in Office 365 zu Ihrem Mandanten
+## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>Hinzufügen des Plans für Multi-Geo-Funktionen in Microsoft 365 zu Ihrem Mandanten
 
-Wenn Sie Office 365 Multi-Geo verwenden möchten, benötigen Sie den Plan _Multi-Geo Capabilities in Office 365_. Arbeiten Sie mit Ihrem Kontoteam, um diesen Plan zu Ihrem Mandanten hinzuzufügen. Ihr Kontoteam setzt Sie mit dem entsprechenden Lizenzierungsexperten in Verbindung und konfiguriert Ihren Mandanten für Sie.
+Wenn Sie Microsoft 365 Multi-Geo verwenden möchten, benötigen Sie den Plan _Multi-Geo-Funktionen in Microsoft 365_. Arbeiten Sie mit Ihrem Kontoteam, um diesen Plan zu Ihrem Mandanten hinzuzufügen. Ihr Kontoteam setzt Sie mit dem entsprechenden Lizenzierungsexperten in Verbindung und konfiguriert Ihren Mandanten für Sie.
 
-Beachten Sie, dass der Plan für _Multi-Geo-Funktionen in Office 365_ ein Serviceplan auf Benutzerebene ist. Sie benötigen eine Lizenz für jeden Benutzer, der an einem Satellitenstandort gehostet werden soll. Sie können mit der Zeit weitere Lizenzen hinzufügen, wenn Sie Benutzer in Ihrem Satellitenstandort hinzufügen.
+Beachten Sie, dass der Plan für _Multi-Geo-Funktionen in Microsoft 365_ ein Serviceplan auf Benutzerebene ist. Sie benötigen eine Lizenz für jeden Benutzer, der an einem Satellitenstandort gehostet werden soll. Sie können mit der Zeit weitere Lizenzen hinzufügen, wenn Sie Benutzer in Ihrem Satellitenstandort hinzufügen.
 
-Nachdem der Plan _Multi-Geo Capabilities in Office 365_ Ihrem Mandanten bereitgestellt wurde, steht die Registerkarte **Geografische Standorte** im Admin Center von OneDrive sowie SharePoint zur Verfügung.
+Nachdem der Plan _Multi-Geo-Funktionen in Microsoft 365_ Ihrem Mandanten bereitgestellt wurde, steht die Registerkarte **Geografische Standorte** im Admin Center von OneDrive sowie SharePoint zur Verfügung.
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>Hinzufügen von Satellitenstandorten zu Ihrem Mandanten
 
 Sie müssen für jeden geografischen Standort, an dem Sie Daten speichern möchten, einen Satellitenstandort hinzufügen. In der folgenden Tabelle werden verfügbare geografische Standorte angezeigt:
 
-[!INCLUDE [Office 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
+[!INCLUDE [Microsoft 365 Multi-Geo locations](includes/office-365-multi-geo-locations.md)]
 
 ![Screenshot der Seite mit geografischen Orten im SharePoint-Admin Center](media/sharepoint-multi-geo-admin-center.png)
 
@@ -74,7 +74,7 @@ In Azure Active Directory gibt es zwei Arten von Benutzerobjekten: Nur-Cloud-Ben
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Synchronisieren des bevorzugten Datenspeicherorts von Benutzen mit Azure Active Directory Connect 
 
-Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory-System und Azure Active Directory durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenspeicherorts für Office 365-Ressourcen](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem Active Directory und Azure Active Directory zu konfigurieren.
+Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory-System und Azure Active Directory durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenspeicherorts für Microsoft 365-Ressourcen](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem Active Directory und Azure Active Directory zu konfigurieren.
 
 Wir empfehlen, die Einstellung des bevorzugten Datenspeicherorts des Benutzers im Rahmen des Standardworkflows für das Erstellen von Benutzern hinzuzufügen.
 
@@ -83,7 +83,7 @@ Wir empfehlen, die Einstellung des bevorzugten Datenspeicherorts des Benutzers i
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Festlegen des bevorzugten Datenspeicherorts für Nur-Cloud-Benutzer 
 
-Wenn die Benutzer Ihres Unternehmens über ein lokales Active Directory-System mit Azure Active Directory synchronisiert werden (d. h. wenn sie in Office 365 oder Azure Active Directory erstellt werden), muss der PDL über Azure Active Directory PowerShell festgelegt verwenden.
+Wenn die Benutzer Ihres Unternehmens über ein lokales Active Directory-System mit Azure Active Directory synchronisiert werden (d. h. wenn sie in Microsoft 365 oder Azure Active Directory erstellt werden), muss der PDL über Azure Active Directory PowerShell festgelegt verwenden.
 
 Für die Vorgehensweisen in diesem Abschnitt ist das [Microsoft Azure Active Directory-Modul für Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0) erforderlich. Wenn Azure Active Directory PowerShell bereits installiert ist, stellen Sie sicher, dass Sie ein Update auf die neueste Version durchführen.
 
@@ -130,13 +130,13 @@ Darüber hinaus können Multi-Geo-Suchfunktionen für Ihre benutzerdefinierte Su
 
 Anweisungen, einschließlich Einschränkungen und Unterschiede, finden Sie unter [Konfigurieren der Suche für Multi-Geo in OneDrive for Business](configure-search-for-multi-geo.md).
 
-## <a name="validating-the-office-365-multi-geo-configuration"></a>Überprüfen der Office 365 Multi-Geo-Konfiguration
+## <a name="validating-the-microsoft-365-multi-geo-configuration"></a>Überprüfen der Microsoft 365 Multi-Geo-Konfiguration
 
-Im Folgenden finden Sie einige grundlegende Anwendungsfälle, in denen eine Überprüfung vor dem Rollout von Office 365 Multi-Geo im Unternehmen möglicherweise sinnvoll ist. Nach Abschluss dieser Tests und zusätzlicher Anwendungsfälle, die für Ihr Unternehmen relevant sind, können Sie der ursprünglichen Pilotgruppe bei Bedarf weitere Benutzer hinzufügen.
+Im Folgenden finden Sie einige grundlegende Anwendungsfälle, in denen eine Überprüfung vor dem Rollout von Microsoft 365 Multi-Geo im Unternehmen möglicherweise sinnvoll ist. Nach Abschluss dieser Tests und zusätzlicher Anwendungsfälle, die für Ihr Unternehmen relevant sind, können Sie der ursprünglichen Pilotgruppe bei Bedarf weitere Benutzer hinzufügen.
 
 **OneDrive for Business**
 
-Wählen Sie OneDrive im Office 365-Startprogramm aus und bestätigen Sie, dass Sie automatisch an den entsprechenden geografischen Standort des Benutzers (gemäß dessen PDL) weitergeleitet werden. OneDrive for Business sollte jetzt an diesem Standort bereitgestellt werden. Versuchen Sie nach der Bereitstellung, einige Dokumente hoch- und herunterzuladen.
+Wählen Sie OneDrive im Microsoft 365-Startprogramm aus und bestätigen Sie, dass Sie automatisch an den entsprechenden geografischen Standort des Benutzers (gemäß dessen PDL) weitergeleitet werden. OneDrive for Business sollte jetzt an diesem Standort bereitgestellt werden. Versuchen Sie nach der Bereitstellung, einige Dokumente hoch- und herunterzuladen.
 
 **Mobile OneDrive-App**
 

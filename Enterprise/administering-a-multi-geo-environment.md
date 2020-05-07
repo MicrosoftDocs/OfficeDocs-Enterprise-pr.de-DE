@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 483250f8956ba1220c29bb769abef187ac9ec53d
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 979ca202ac4d21dc3eff5a933538eee5af050167
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974027"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057661"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
-Hier sehen Sie, wie Office 365-Dienste in einer Umgebung mit mehreren geografischen Standorten funktionieren.
+Hier sehen Sie, wie Microsoft 365-Dienste in einer Umgebung mit mehreren geografischen Standorten funktionieren.
 
-## <a name="audit-log-search"></a>Überwachungsprotokollsuche
+## <a name="audit-log-search"></a>Durchsuchen von Überwachungsprotokollen
 
-Ein einheitliches [Überwachungsprotokoll](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) für alle Nebenstandorte steht auf der Suchseite des Office 365-Überwachungsprotokolls zur Verfügung. Sie können alle Überwachungsprotokolleinträge für alle geografischen Standorte anzeigen. Beispiel: Sie können Benutzeraktivitäten für die geografischen Standorte NAM und EUR in einer Organisationsansicht anzeigen und dann vorhandene Filter anwenden, um bestimmte Benutzeraktivitäten anzuzeigen.
+Ein einheitliches [Überwachungsprotokoll](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) für alle Nebenstandorte steht auf der Suchseite des Microsoft 365-Überwachungsprotokolls zur Verfügung. Sie können alle Überwachungsprotokolleinträge für alle geografischen Standorte anzeigen. Beispiel: Sie können Benutzeraktivitäten für die geografischen Standorte NAM und EUR in einer Organisationsansicht anzeigen und dann vorhandene Filter anwenden, um bestimmte Benutzeraktivitäten anzuzeigen.
 
 ## <a name="bcs-secure-store-apps"></a>BCS, Secure Store, Apps
 
@@ -36,7 +36,7 @@ BCS, Secure Store und Apps verfügen über separate Instanzen. Daher sollte der 
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Standardmäßig kann ein eDiscovery-Manager oder ein Administrator eines Mandanten mit mehreren geografischen Standorten eDiscovery nur am zentralen Standort des Mandanten durchführen. Der globale Office 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen „Region“-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden. Informationen zum Konfigurieren des Compliancesicherheitsfilters für eine Region finden Sie unter [Konfigurieren von Office 365-Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
+Standardmäßig kann ein eDiscovery-Manager oder ein Administrator eines Mandanten mit mehreren geografischen Standorten eDiscovery nur am zentralen Standort des Mandanten durchführen. Der globale Microsoft 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen "Region"-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden. Informationen zum Konfigurieren des Compliancesicherheitsfilters für eine Region finden Sie unter [Konfigurieren von Microsoft 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Exchange-Postfächer
 
@@ -64,7 +64,7 @@ Das [OneDrive Admin Center](https://admin.onedrive.com) verfügt im linken Navig
 
 ## <a name="security-and-compliance-admin-center"></a>Security & Compliance Center
 
-Es gibt ein zentrales Compliance Center für den Multi-Geo-Mandanten: [Office 365 Security & Compliance Center](https://protection.office.com/?rfr=AdminCenter\#/homepage).
+Es gibt ein zentrales Compliance Center für den Multi-Geo-Mandanten: [Microsoft 365 Security & Compliance Center](https://protection.office.com/?rfr=AdminCenter\#/homepage).
 
 ## <a name="sharepoint-storage-quota"></a>SharePoint-Speicherkontingent
 
@@ -98,7 +98,7 @@ Stream steht derzeit in den folgenden Regionen zur Verfügung:
 - Europa
 - Asiatisch-pazifischer Raum
 
-Stream ist jedoch noch nicht in den folgenden Regionen verfügbar, die derzeit für Office 365 Video unterstützt werden. Daher verwenden wir für diese lokalen Instanzen den RMS der nächstgelegenen unterstützten Region.
+Stream ist jedoch noch nicht in den folgenden Regionen verfügbar, die derzeit für Microsoft 365 Video unterstützt werden. Daher verwenden wir für diese lokalen Instanzen den RMS der nächstgelegenen unterstützten Region.
 
 - Australien
 - Kanada

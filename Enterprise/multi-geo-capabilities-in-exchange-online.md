@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Weitere Informationen zu Multi-Geo-Funktionen in Exchange Online.
-ms.openlocfilehash: 27b636e1fb7f209a425a070f8024a1cdd461f59b
-ms.sourcegitcommit: 1c3aa0654336acec14098241f785ea1d8c6caf50
+ms.openlocfilehash: e6273c49e185c59cad6b56cf7d8399cdd6f25d22
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42890547"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057975"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -45,11 +45,11 @@ Exchange Online synchronisiert die Eigenschaft **PreferredDataLocation** von Azu
 
 - Wenn der **PreferredDataLocation**-Code falsch ist (z. B. ein Typ von NAN anstelle von NAM), wird das Postfach in den zentralen Geo-Speicherort bereitgestellt.
 
-**Hinweis**: Multi-Geo-Funktionen und regional gehostete Besprechungen von Skype for Business Online verwenden beide die Eigenschaft **PreferredDataLocation** auf Benutzerobjekten, um Dienste zu finden. Wenn Sie die **PreferredDataLocation**-Werte für Benutzerobjekte für regional gehostete Besprechungen konfigurieren, wird das Postfach für diese Benutzer automatisch an den angegebenen Geo-Speicherort verschoben, nachdem Multi-Geo auf dem Office 365-Mandanten aktiviert wurde.
+**Hinweis**: Multi-Geo-Funktionen und regional gehostete Besprechungen von Skype for Business Online verwenden beide die Eigenschaft **PreferredDataLocation** auf Benutzerobjekten, um Dienste zu finden. Wenn Sie die **PreferredDataLocation**-Werte für Benutzerobjekte für regional gehostete Besprechungen konfigurieren, wird das Postfach für diese Benutzer automatisch an den angegebenen Geo-Speicherort verschoben, nachdem Multi-Geo auf dem Microsoft 365-Mandanten aktiviert wurde.
 
 ## <a name="feature-limitations-for-multi-geo-in-exchange-online"></a>Funktionseinschränkungen für Multi-Geo in Exchange Online
 
-- Sicherheits- und Compliance-Funktionen (z. B. Auditing und eDiscovery), die im Exchange Admin Center (EAC) verfügbar sind, sind in Multi-Geo-Organisationen nicht verfügbar. Stattdessen müssen Sie das [Office 365 Security & Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) verwenden, um Sicherheits- und Compliance-Funktionen zu konfigurieren.
+- Sicherheits- und Compliance-Funktionen (z. B. Auditing und eDiscovery), die im Exchange Admin Center (EAC) verfügbar sind, sind in Multi-Geo-Organisationen nicht verfügbar. Stattdessen müssen Sie das [Microsoft 365 Security & Compliance Center](https://support.office.com/article/7e696a40-b86b-4a20-afcc-559218b7b1b8) verwenden, um Sicherheits- und Compliance-Funktionen zu konfigurieren.
 
 - Outlook für Mac-Benutzer können einen vorübergehenden Verlust des Zugriffs auf ihren Online-Archivordner erleiden, während Sie ihr Postfach an einen neuen Geo-Speicherort verschieben. Diese Situation tritt auf, wenn sich die Primär- und Archivpostfächer des Benutzers an verschiedenen Geo-Speicherorten befinden, da Geo-übergreifende Postfachverschiebungen zu unterschiedlichen Zeiten durchgeführt werden können.
 

@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort verschieben.
-ms.openlocfilehash: 8a842f32091f84d64522526ad5407af8cfd780a9
-ms.sourcegitcommit: 6508db0a839427e1a21b1cde883d828e3c8886c6
+ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43185716"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057995"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
@@ -26,8 +26,8 @@ Mit der geografischen Verschiebung von SharePoint-Websites können Sie SharePoin
 
 Die folgenden Website-Typen können zwischen geografischen Standorten verschoben werden:
 
-- Websites, die mit Office 365-Gruppen verbunden sind
-- Moderne Websites ohne eine Verbindung mit einer Office 365-Gruppe
+- Mit einer Microsoft 365-Gruppe verbundene Websites
+- Moderne Websites ohne eine Verbindung mit einer Microsoft 365-Gruppe
 - Klassische SharePoint-Websites
 - Kommunikationswebsites
 
@@ -96,13 +96,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 Es wird *Erfolg* zurückgegeben, wenn die Website verschoben werden kann, oder *Fehler*, wenn Bedingungen vorhanden sind, die eine Verschiebung blockieren.
 
-### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-office-365-group"></a>Starten einer Verschiebung des geografischen Standorts einer SharePoint-Website ohne zugehöriger Office 365-Gruppe
+### <a name="start-a-sharepoint-site-geo-move-for-a-site-with-no-associated-microsoft-365-group"></a>Starten einer Verschiebung des geografischen Standorts einer SharePoint-Website ohne zugehöriger Microsoft 365-Gruppe
 
 Standardmäßig ändert sich die anfängliche URL für die Website in die URL des geografischen Zielstandorts. Beispiel:
 
 https://Contoso.sharepoint.com/sites/projectx in https://ContosoEUR.sharepoint.com/sites/projectx
 
-Bei Websites, denen keine Office 365-Gruppe zugeordnet ist, können Sie die Website mit dem `-DestinationUrl`-Parameter umbenennen. Beispiel:
+Bei Websites, denen keine Microsoft 365-Gruppe zugeordnet ist, können Sie die Website mit dem `-DestinationUrl`-Parameter umbenennen. Zum Beispiel:
 
 https://Contoso.sharepoint.com/sites/projectx in https://ContosoEUR.sharepoint.com/sites/projecty
 
@@ -112,11 +112,11 @@ Führe Sie Folgendes aus, um mit der Verschiebung der Website zu beginnen:
 
 ![Screenshot des PowerShell-Fensters mit dem Cmdlet „Start-SPOSiteContentMove“](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-office-365-group-connected-site"></a>Starten einer Verschiebung des geografischen Standorts einer SharePoint-Website mit zugehöriger Office 365-Gruppe
+### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Starten einer Verschiebung des geografischen Standorts einer SharePoint-Website mit zugehöriger Microsoft 365-Gruppe
 
-Um eine Website zu verschieben, die mit einer Office 365-Gruppe verbundene ist, muss der globale Administrator zuerst das PDL-Attribut (Preferred Data Location, bevorzugter Datenspeicherort) der Office 365-Gruppe ändern.
+Um eine Website zu verschieben, die mit einer Microsoft 365-Gruppe verbundene ist, muss der globale Administrator zuerst das PDL-Attribut (Preferred Data Location, bevorzugter Datenspeicherort) der Microsoft 365-Gruppe ändern.
 
-So Legen Sie den PDL einer Office 365-Gruppe fest:
+So Legen Sie den PDL einer Microsoft 365-Gruppe fest:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -187,9 +187,9 @@ Der OneNote-win32-Client und die UWP (Universal) App erkennen Notizbücher autom
 - OneNote UWP – Version 16.0.8431.1006 (und höher)
 - Mobile OneNote-App – Version 16.0.8431.1011 (und höher)
 
-### <a name="teams-applicable-to-office-365-group-connected-sites"></a>Teams (gilt für Websites, die mit Office 365-Gruppen verbunden sind)
+### <a name="teams-applicable-to-microsoft-365-group-connected-sites"></a>Teams (gilt für Websites, die mit Microsoft 365-Gruppen verbunden sind)
 
-Wenn die Verschiebung des geografischen SharePoint-Websitestandorts abgeschlossen ist, haben Benutzer in der Teams-App Zugriff auf die Websitedateien ihrer Office 365-Gruppe. Außerdem können Dateien, die vor dem Verschieben über den Teams-Chat geteilt wurden, nach Abschluss der Verschiebung weiterhin verwendet werden.
+Wenn die Verschiebung des geografischen SharePoint-Websitestandorts abgeschlossen ist, haben Benutzer in der Teams-App Zugriff auf die Websitedateien ihrer Microsoft 365-Gruppe. Außerdem können Dateien, die vor dem Verschieben über den Teams-Chat geteilt wurden, nach Abschluss der Verschiebung weiterhin verwendet werden.
 
 ### <a name="sharepoint-mobile-app-iosandroid"></a>Mobile SharePoint-App (iOS/Android)
 

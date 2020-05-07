@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der Suche für Office 365 Multi-Geo
+title: Konfigurieren der Suche für Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: tlarsen
 author: tklarsen
@@ -13,14 +13,14 @@ ms.custom: ''
 ms.collection: Strat_SP_gtc
 localization_priority: Priority
 description: Dieser Artikel enthält Informationen zum Konfigurieren der Suche in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 9f4861a2a093ac8497a86022f44c168a1c5982ab
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974007"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44057671"
 ---
-# <a name="configure-search-for-office-365-multi-geo"></a>Konfigurieren der Suche für Office 365 Multi-Geo
+# <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurieren der Suche für Microsoft 365 Multi-Geo
 
 In einer Multi-Geo-Umgebung besitzt jeder geografische Standort einen eigenen Suchindex und ein Suchcenter. Wenn ein Benutzer eine Suche durchführt, wird die Abfrage in alle Indizes aufgefächert, und die zurückgegebenen Ergebnisse werden zusammengeführt.
 
@@ -102,7 +102,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 </tr>
 <tr class="even">
 <td align="left">Hybridsuche</td>
-<td align="left">In einer SharePoint-Hybridumgebung mit <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Cloudhybridsuche</a> werden lokale Inhalte dem Office 365-Index des zentralen Standorts hinzugefügt.</td>
+<td align="left">In einer SharePoint-Hybridumgebung mit <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Cloudhybridsuche</a> werden lokale Inhalte dem Microsoft 365-Index des zentralen Standorts hinzugefügt.</td>
 <td align="left"></td>
 </tr>
 </tbody>

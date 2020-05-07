@@ -15,20 +15,20 @@ ms.collection:
 - SPO_Content
 localization_priority: Priority
 description: In diesem Artikel finden Sie Informationen zum Verschieben einer OneDrive-Website an einen anderen geografischen Standort.
-ms.openlocfilehash: e093eab04a5ef19fcd6759d66cb65e9ee264c388
-ms.sourcegitcommit: 265cc03b600e9015a44c60c3f8bb9075b1c20888
+ms.openlocfilehash: ce631cc8f922fd9f64586bb41e6dd1ec64ac1141
+ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41974017"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44058005"
 ---
 # <a name="move-a-onedrive-site-to-a-different-geo-location"></a>Verschieben einer OneDrive-Website an einen anderen geografischen Standort 
 
-Mit der Verschiebung von geografischen Standorten in OneDrive können Sie die OneDrive-Umgebung eines Benutzern an einen anderen geografischen Standort verschieben. Die Verschiebung von geografischen Standorten in OneDrive kann von einem SharePoint Online-Administrator oder dem globalen Office 365-Administrator durchgeführt werden. Bevor Sie einen geografischen Standort in OneDrive verschieben, vergewissern Sie sich, dass der Benutzer, dessen OneDrive-Umgebung verschoben wird, darüber informiert wird, und es wird empfohlen, dass Benutzer alle Dateien für die Dauer der Verschiebung schließen. (Wenn der Benutzer während der Verschiebung ein Dokument unter Verwendung des Office-Clients geöffnet hat, muss das Dokument nach Abschluss der Verschiebung an dem neuen Ort gespeichert werden.) Die Verschiebung kann bei Bedarf für einen künftigen Zeitpunkt geplant werden.
+Mit der Verschiebung von geografischen Standorten in OneDrive können Sie die OneDrive-Umgebung eines Benutzern an einen anderen geografischen Standort verschieben. Die Verschiebung von geografischen Standorten in OneDrive kann von einem SharePoint Online-Administrator oder dem globalen Microsoft 365-Administrator durchgeführt werden. Bevor Sie einen geografischen Standort in OneDrive verschieben, vergewissern Sie sich, dass der Benutzer, dessen OneDrive-Umgebung verschoben wird, darüber informiert wird, und es wird empfohlen, dass Benutzer alle Dateien für die Dauer der Verschiebung schließen. (Wenn der Benutzer während der Verschiebung ein Dokument unter Verwendung des Office-Clients geöffnet hat, muss das Dokument nach Abschluss der Verschiebung an dem neuen Ort gespeichert werden.) Die Verschiebung kann bei Bedarf für einen künftigen Zeitpunkt geplant werden.
 
 Der OneDrive-Dienst verwendet Azure Blob Storage zum Speichern von Inhalten. Der Storage Blob, der der OneDrive-Umgebung des Benutzers zugewiesen ist, wird von dem geografischen Quellstandort an den Zielstandort innerhalb von 40 Tagen verschoben, nachdem die OneDrive-Zielumgebung dem Benutzer zur Verfügung gestellt wurde. Der Benutzerzugriff auf OneDrive wird wiederhergestellt, sobald die OneDrive-Zielumgebung verfügbar ist.
 
-In dem Zeitfenster, in dem geografische Standorte in OneDrive verschoben werden (ca. 2 bis 6 Stunden), ist die OneDrive-Umgebung des Benutzers schreibgeschützt. Der Benutzer kann weiterhin auf seine Dateien über den OneDrive-Synchronisierungsclient oder die OneDrive-Website in SharePoint Online zugreifen. Nach Abschluss des Verschiebevorgangs des geografischen Standorts in OneDrive wird der Benutzer automatisch mit OneDrive an seinem geografischen Zielstandort verbunden, wenn er in dem Office 365-App-Startfeld zu OneDrive navigiert. Der Synchronisierungsclient startet automatisch die Synchronisierung an dem neuen Ort.
+In dem Zeitfenster, in dem geografische Standorte in OneDrive verschoben werden (ca. 2 bis 6 Stunden), ist die OneDrive-Umgebung des Benutzers schreibgeschützt. Der Benutzer kann weiterhin auf seine Dateien über den OneDrive-Synchronisierungsclient oder die OneDrive-Website in SharePoint Online zugreifen. Nach Abschluss des Verschiebevorgangs des geografischen Standorts in OneDrive wird der Benutzer automatisch mit OneDrive an seinem geografischen Zielstandort verbunden, wenn er in dem Microsoft 365-App-Startfeld zu OneDrive navigiert. Der Synchronisierungsclient startet automatisch die Synchronisierung an dem neuen Ort.
 
 Für die Vorgehensweisen in diesem Artikel ist das [Microsoft SharePoint Online PowerShell-Modul](https://www.microsoft.com/download/details.aspx?id=35588) erforderlich.
 
@@ -163,7 +163,7 @@ OneDrive-Benutzer sollten minimale Unterbrechungen feststellen, wenn ihre OneDri
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
-Während die Verschiebung ausgeführt wird, wird der Schreibschutz für die OneDrive-Umgebung des Benutzers aktiviert. Sobald die Verschiebung abgeschlossen ist, wird der Benutzer zu seiner OneDrive-Umgebung an dem neuen geografischen Standort weitergeleitet, wenn er im Office 365-App-Startfeld oder einem Webbrowser zu OneDrive navigiert.
+Während die Verschiebung ausgeführt wird, wird der Schreibschutz für die OneDrive-Umgebung des Benutzers aktiviert. Sobald die Verschiebung abgeschlossen ist, wird der Benutzer zu seiner OneDrive-Umgebung an dem neuen geografischen Standort weitergeleitet, wenn er im Microsoft 365-App-Startfeld oder einem Webbrowser zu OneDrive navigiert.
 
 ### <a name="permissions-on-onedrive-content"></a>Berechtigungen für OneDrive-Inhalte
 
