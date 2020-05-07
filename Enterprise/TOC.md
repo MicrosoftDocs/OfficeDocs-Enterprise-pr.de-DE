@@ -132,7 +132,7 @@
 
 ## Erweiterte Bereitstellung
 
-### [Office 365 Multi-Geo](office-365-multi-geo.md)
+### [Microsoft 365 Multi-Geo](office-365-multi-geo.md)
 #### [OneDrive und SharePoint Multi-Geo](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365.md)
 #### [Exchange Multi-Geo](multi-geo-capabilities-in-exchange-online.md)
 #### [Plan für Multi-Geo](plan-for-multi-geo.md)
@@ -147,7 +147,7 @@
 ##### [Verschieben eine SharePoint-Seite](move-sharepoint-between-geo-locations.md)
 ##### [Hinzufügen oder Entfernen eines Geo-Administrators](add-a-sharepoint-geo-admin.md)
 ##### [Inhalte für einen geografischen Standort einschränken](restrict-content-to-geo-location.md)
-##### [Konfigurieren von Office 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md)
+##### [Konfigurieren von Microsoft 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md)
 ##### [Erstellen einer Gruppe mit einem bestimmten PLD](multi-geo-add-group-with-pdl.md)
 ##### [Löschen eines geografischen Standorts](delete-a-geo-location.md)
 ##### [Aktivieren von SharePoint Multi-Geo am Satellitenstandort](enabling-SP-multigeo-satellite-geolocation.md)
@@ -189,20 +189,6 @@
 ### [Tools zum Verwalten von Benutzerkonten](manage-office-365-accounts.md)
 ### [Gleichzeitiges Hinzufügen von mehreren Benutzern](add-several-users-at-the-same-time.md)
 ### [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](recover-deleted-items-in-a-mailbox.md)
-
-### Zusammenarbeit mit Gästen
-#### [Referenz zu Gastfreigabe](/microsoft-365/solutions/microsoft-365-guest-settings?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### Szenarien für Gastfreigabe
-##### [Übersicht über die Zusammenarbeit mit Gastbenutzern](/microsoft-365/solutions/collaborate-with-people-outside-your-organization?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Zusammenarbeiten an Dokumenten](/microsoft-365/solutions/collaborate-on-documents?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Zusammenarbeiten an einer Website](/microsoft-365/solutions/collaborate-in-site?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Zusammenarbeiten als Team](/microsoft-365/solutions/collaborate-as-team?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### Gastfreigabesicherheit
-##### [Nicht authentifizierte Freigabe](/microsoft-365/solutions/best-practices-anonymous-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Begrenzen der versehentlichen Exposition](/microsoft-365/solutions/share-limit-accidental-exposure?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-##### [Sichere Gastfreigabeumgebung](/microsoft-365/solutions/create-secure-guest-sharing-environment?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-#### [Erstellen eines B2B-Extranets](/microsoft-365/solutions/b2b-extranet?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
-### [Grenzwert Freigabe](/microsoft-365/solutions/microsoft-365-limit-sharing?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json)
 
 ## Geräte
 ### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
