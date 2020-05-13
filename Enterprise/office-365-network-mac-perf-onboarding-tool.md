@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)
+title: Microsoft 365 Connectivity Test (Preview) im Microsoft 365 Admin Center
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)
-ms.openlocfilehash: 265d90cf412da7e45afcbb962018f7e4311e7edc
-ms.sourcegitcommit: 07ab7d300c8df8b1665cfe569efc506b00915d23
+ms.openlocfilehash: 0c6f16c39c5a2db99ed636cb3a1b52818383ea5a
+ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43612875"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208796"
 ---
-# <a name="microsoft-365-connectivity-test-in-the-m365-admin-center-preview"></a>Microsoft 365 Connectivity Test im M365 Admin Center (Vorschau)
+# <a name="microsoft-365-connectivity-test-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 Connectivity Test im Microsoft 365 Admin Center (Vorschau)
 
-Der Microsoft 365 Connectivity Test befindet sich unter <https://connectivity.office.com>. Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
+Der Microsoft 365 Connectivity Test befindet sich unter <https://connectivity.office.com> . Es handelt sich um ein außerordentliches Tool für die Netzwerk Einblicke und Informationen zur Netzwerkbewertung, die im Microsoft 365 Admin Center unter **Health | Menü Netzwerkleistung** .
 
 >[!NOTE]
 >Das Onboarding-Tool unterstützt Mandanten in WW Commercial und gcc moderat, aber nicht gcc High, DoD, Deutschland oder China.
@@ -103,19 +103,19 @@ Wir identifizieren auf dem lokalen Computer konfigurierte Proxy Server (s). Wir 
 
 ## <a name="media-quality-checks"></a>Überprüfungen der Medienqualität
 
-Mit diesem Test wird das Tool für die Skype for Business Netzwerkbewertung installiert und ausgeführt, und die Ergebnisse werden interpretiert. Das Tool finden Sie unter [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885).
+Mit diesem Test wird das Tool für die Skype for Business Netzwerkbewertung installiert und ausgeführt, und die Ergebnisse werden interpretiert. Das Tool finden Sie unter [https://www.microsoft.com/download/details.aspx?id=53885](https://www.microsoft.com/download/details.aspx?id=53885) .
 
 Hierbei handelt es sich um UDP-Protokolltests, die von Microsoft Teams-Funktionen für Audio-und Videoanrufe und Konferenzen verwendet werden. Wir testen UDP-Paketverlust, UDP-Netzwerkwartezeit, UDP-Jitter und UDP-Paket Reihenfolge. Eine Netzwerk einblickung wird angezeigt, wenn sich einer dieser Bereiche über dem zulässigen Bereich befindet.
 
 ## <a name="tcp-connectivity-tests"></a>TCP-Verbindungstests
 
-Wir testen die http-Konnektivität vom Benutzer Bürostandort bis hin zu allen erforderlichen Microsoft 365-Netzwerkendpunkten. Diese werden unter [https://aka.ms/o365ip](https://aka.ms/o365ip)veröffentlicht. Für alle erforderlichen Netzwerkendpunkte, mit denen keine Verbindung hergestellt werden kann, wird ein Netzwerk Einblicke angezeigt.
+Wir testen die http-Konnektivität vom Benutzer Bürostandort bis hin zu allen erforderlichen Microsoft 365-Netzwerkendpunkten. Diese werden unter veröffentlicht [https://aka.ms/o365ip](https://aka.ms/o365ip) . Für alle erforderlichen Netzwerkendpunkte, mit denen keine Verbindung hergestellt werden kann, wird ein Netzwerk Einblicke angezeigt.
 
 Die Konnektivität ay wird durch einen Proxy Server, eine Firewall oder ein anderes Netzwerksicherheitsgerät im Umkreis des Unternehmensnetzwerks blockiert oder als Cloud-Proxy verwendet.
 
 ## <a name="ssl-interception-tests"></a>SSL-Abfang Tests
 
-Wir testen das SSL-Zertifikat an jedem erforderlichen Microsoft 365-Netzwerkendpunkt, der sich in der Kategorie Optimize oder Allow [https://aka.ms/o365ip](https://aka.ms/o365ip)gemäß der Definition unter befindet. Wenn Tests kein Microsoft SSL-Zertifikat finden, muss das verschlüsselte Netzwerk, das verbunden ist, von einem zwischengeschalteten Netzwerkgerät abgefangen worden sein. Ein Netzwerk Einblicke wird auf allen abgefangenen verschlüsselten Netzwerkendpunkten angezeigt.
+Wir testen das SSL-Zertifikat an jedem erforderlichen Microsoft 365-Netzwerkendpunkt, der sich in der Kategorie Optimize oder Allow gemäß der Definition unter befindet [https://aka.ms/o365ip](https://aka.ms/o365ip) . Wenn Tests kein Microsoft SSL-Zertifikat finden, muss das verschlüsselte Netzwerk, das verbunden ist, von einem zwischengeschalteten Netzwerkgerät abgefangen worden sein. Ein Netzwerk Einblicke wird auf allen abgefangenen verschlüsselten Netzwerkendpunkten angezeigt.
 
 Wenn ein SSL-Zertifikat gefunden wird, das nicht von Microsoft bereitgestellt wird, wird der FQDN für den Test und der in-Use-SSL-Zertifikatbesitzer angezeigt. Bei diesem SSL-Zertifikatbesitzer kann es sich um einen Proxy Server Anbieter oder um ein selbstsigniertes Enterprise-Zertifikat handeln.
 
