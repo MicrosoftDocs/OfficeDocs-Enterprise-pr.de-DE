@@ -46,7 +46,7 @@
 ### [Hinzufügen einer Domäne zu einem Kundenmandanten mit Windows PowerShell für Partner mit delegiertem Zugriff](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 ### [Verbinden mit Exchange Online über eine Remotesitzung von Windows PowerShell für Partner mit delegiertem Zugriff](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
 ### [Abrufen von Kundenberichtsdaten über Windows PowerShell für Partner mit delegiertem Zugriff](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
+## [Verwalten von Microsoft Teams](manage-microsoft-teams-with-office-365-powershell.md)
 ## [Verwalten von Skype for Business Online](manage-skype-for-business-online-with-office-365-powershell.md)
 ### [Verwalten von Skype for Business Online-Richtlinien](manage-skype-for-business-online-policies-with-office-365-powershell.md)
 ### [Zuweisen von benutzerspezifischen Skype for Business Online-Richtlinien](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
-
