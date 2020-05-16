@@ -3,7 +3,7 @@ title: Schützen Ihrer globalen Office 365-Administratorkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/04/2020
+ms.date: 05/15/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: Schützen Sie den globalen Administratorzugriff auf Ihr Office 365 Abonnement.
-ms.openlocfilehash: 1ddd910a1515e11b6f57ac7581682d15eed31e5e
-ms.sourcegitcommit: 7ed2eceb61615b4703ea817331e3ac6c64b27fc0
+ms.openlocfilehash: 4f3e7dcb23f467768d647b7a5e8db9c41af2d076
+ms.sourcegitcommit: fa25333a28ad300a7be990c1491d95f09a214a12
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44013408"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44253292"
 ---
 # <a name="protect-your-office-365-global-administrator-accounts"></a>Schützen Ihrer globalen Office 365-Administratorkonten
 
@@ -101,6 +101,10 @@ Mehrstufige Authentifizierung (MFA) erfordert zusätzliche Informationen über d
     
 - Ein biometrisches Gerät
     
+>[!Note]
+>Für Organisationen, die die Standards des National Institute of Standards and Technology (NIST) einhalten müssen, ist die Verwendung eines Telefonanrufs oder von Textnachrichten basierten zusätzlichen Überprüfungsmethoden eingeschränkt. Klicken Sie [hier](https://pages.nist.gov/800-63-FAQ/#q-b01) , um Details anzuzeigen.
+>
+
 Wenn Sie ein kleines Unternehmen sind, das Benutzerkonten verwendet, die nur in der Cloud (dem reinen Cloud-Identitätsmodell) gespeichert sind, verwenden Sie die folgenden Schritte, um MFA mithilfe eines Telefonanrufs oder eines an ein Smartphone gesendeten Textnachrichten-Bestätigungscodes zu konfigurieren:
   
 1. [Einrichten von MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
@@ -132,7 +136,7 @@ Verwenden Sie nach den Schritten 1 und 2 diese zusätzlichen Methoden, um sicher
 
 Um sicherzustellen, dass die Ausführung von äußerst privilegierten Aufgaben so sicher wie möglich ist, verwenden Sie eine privilegierte Zugriffs Arbeitsstation (PAW). Bei einer PAW handelt es sich um einen dedizierten Computer, der nur für vertrauliche Konfigurationsaufgaben wie Office 365 Konfiguration verwendet wird, die ein globales Administratorkonto erfordert. Da dieser Computer nicht täglich für das Internet-browsen oder e-Mail verwendet wird, ist er besser vor Internetangriffen und-Bedrohungen geschützt.
   
-Anweisungen zum Einrichten einer Pfote finden Sie unter [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw).
+Anweisungen zum Einrichten einer Pfote finden Sie unter [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
   
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
