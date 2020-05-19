@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Wie Microsoft die Kernprinzipien der Absorption, Erkennung und Minderung bei der Abwehr von DOS-Angriffen (Denial of Service) verwendet.
-ms.openlocfilehash: 82957dd1b863e14c13e86b63888e2b1374beb73b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 78d1392adb35bead5d41f9655bea3c2680975561
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844526"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278078"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Wichtige Grundsätze zum Schutz vor Denial-of-Service-Angriffen
 
@@ -28,7 +28,7 @@ Die drei Hauptprinzipien bei der Verteidigung gegen netzwerkbasierte DOS-Angriff
 
 Für die meisten Organisationen ist es nicht wirtschaftlich möglich, überschüssige Kapazitäten für die Aufnahme von DOS-Angriffen zu erwerben, da dies erhebliche Investitionen in Technologie und technische Fertigkeiten erfordert. Dies zeigt einen der Sicherheitsvorteile der Verwendung von Microsoft Cloud Services. Die schiere Skalierung von Microsoft-Diensten bietet Cloud-Kunden einen starken Netzwerkschutz auf kosteneffektive Weise. Aber selbst im großen Maßstab muss es ein Gleichgewichtzwischen Absorption, Erkennung und Minderung geben. Um dieses Gleichgewicht zu finden, untersucht Microsoft die Angriffs Raten, um abzuschätzen, wie viel Microsoft absorbieren muss.
 
-Die Erkennung ist ein Katz-und-Maus-Spiel. Sie müssen ständig nach neuen Wegen suchen, die Menschen angreifen und versuchen, ihre Systeme zu besiegen. "Detect-#a0 mindern-#a1 Detect-#a2 mindern usw. ist ein dauerhafter, persistenter Status, der unbegrenzt fortgesetzt wird.
+Die Erkennung ist ein Katz-und-Maus-Spiel. Sie müssen ständig nach neuen Wegen suchen, die Menschen angreifen und versuchen, ihre Systeme zu besiegen. "Detect-> mindern-> Detect-> mindern usw. ist ein dauerhafter, persistenter Status, der unbegrenzt fortgesetzt wird.
 
 ## <a name="defending-against-dos-attacks"></a>Abwehr von DOS-Angriffen
 
@@ -36,7 +36,7 @@ Um eine erfolgreiche Abwehr von DOS-Angriffen zu erhalten, ist eine frühzeitige
 
 Die folgende Formel hilft, die Zeit bis zur Auswirkung eines DoS-Angriffs näher zu befolgen:
 
-   **Maximale Kapazität (in Bytes/Sek.)/Zuwachs Rate (in Bytes/s) = Zeit bis zur Auswirkung (in Bytes/s)**
+   **Maximale Kapazität (in Bytes/Sek.)/Zuwachs Rate (in Bytes/s) = Zeit bis Auswirkung (in Sekunden)**
 
 Wenn die Zeit-zu-Erkennung nach einer Zeit-zu-Wirkung auftritt, ist es wahrscheinlich, dass der DOS-Angriff erfolgreich sein wird. Wenn die Zeit-zu-Erkennung vor Zeit-zu-Wirkung auftritt, sollten die angegriffenen Dienste Online und zugänglich bleiben, wenn Minderungsstrategien verwendet werden. Daher gibt es nur zwei Dinge, die zur Abwehr von DOS-Angriffen ausgeführt werden können:
 

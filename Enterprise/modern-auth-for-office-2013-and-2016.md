@@ -23,16 +23,16 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Office 365 moderne Authentifizierung für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: 8c371a1b4b94a497e5ad9278a24fd769381e63ee
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
+ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844856"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280214"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Lesen Sie diesen Artikel, um zu erfahren, wie Office 2013-und Office 2016-Client-apps moderne Authentifizierungsfeatures basierend auf der Authentifizierungskonfiguration des Office 365-Mandanten für Exchange Online, SharePoint Online und Skype for Business Online verwenden.
 
@@ -54,7 +54,14 @@ Für die Office 365 Dienste lautet der Standardzustand der modernen Authentifizi
     
 ## <a name="sign-in-behavior-of-office-client-apps"></a>Anmeldeverhalten von Office-Client-apps
 
-Office 2013-Client-apps unterstützen standardmäßig die Legacy Authentifizierung. Legacy bedeutet, dass Sie entweder den Microsoft Online-Anmelde Assistenten oder die Standardauthentifizierung unterstützen. Damit diese Clients moderne Authentifizierungsfeatures verwenden können, sind auf dem Windows-Client Registrierungsschlüssel festgelegt. Anweisungen finden Sie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+Office 2013-Client-apps unterstützen standardmäßig die Legacy Authentifizierung. Legacy bedeutet, dass Sie entweder den Microsoft Online-Anmelde Assistenten oder die Standardauthentifizierung unterstützen. Damit diese Clients moderne Authentifizierungsfeatures verwenden können, muss der Windows-Client Registrierungsschlüssel festgelegt haben. Anweisungen finden Sie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
+
+Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Laptops und Tablets) zu aktivieren, auf denen Microsoft Office 2013 installiert ist, müssen Sie die nachstehenden Registrierungsschlüssel festlegen. Die Schlüssel müssen auf jedem Gerät festgelegt werden, das Sie für moderne Authentifizierung aktivieren möchten:
+  
+|**Registrierungsschlüssel**|**Type**|**Wert** |
+|:-------|:------:|--------:|
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
   
 Erfahren Sie, wie Sie die [moderne Authentifizierung (Adal) mit Skype for Business verwenden](https://go.microsoft.com/fwlink/p/?LinkId=785431) , um sich mit der Funktionsweise von Skype for Business vertraut zu machen. 
   
@@ -108,7 +115,7 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
 |Office 2013  <br/> |Nein  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
 |Office 2013  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
    
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
 

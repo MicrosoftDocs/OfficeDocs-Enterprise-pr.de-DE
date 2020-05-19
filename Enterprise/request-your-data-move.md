@@ -14,12 +14,12 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung einreichen, damit die Kundendaten ihrer teilnehmenden Microsoft 365-Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: 9c78492584f49cf263916726b2272d3b9405446e
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+ms.openlocfilehash: dae2c7e4f2fc529a32af6127b4f054f9c3d01344
+ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547743"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278068"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
@@ -49,18 +49,18 @@ Vorhandene Microsoft 365-Kunden sind berechtigt, die Migration für die wichtigs
 
 Berechtigten Kunden wird im [Microsoft 365 Admin Center](https://aka.ms/365admin) eine Seite angezeigt, auf der sie die Verschiebung ihrer wichtigsten Kundendaten in die neue Region des Datencenters anfordern können.  
   
-Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **Einstellungen**.
+Um auf die Seite im Microsoft 365 Admin Center zuzugreifen, erweitern Sie im Navigationsbereich auf der linken Seite **Einstellungen**, und klicken Sie dann auf **org-Einstellungen**.
 Wählen Sie die Registerkarte **Organisationsprofil**aus, und wählen Sie dann die Option **Data Residency**aus.
   
 **Möglicherweise wird dieser Abschnitt nicht angezeigt, wenn eines von Folgendem zutrifft**:
 - Ihr Mandant ist für das Office 365-Verschiebungsprogramm nicht berechtigt.  Die Berechtigung wird durch das Anmeldeland des Mandanten bestimmt.
 - Alle Ihre wichtigsten ruhenden Kundendaten befinden sich bereits im neuen geografischen Raum (siehe den Abschnitt „Datenspeicherort“ der Seite). 
   
-Wenn Ihre Organisation über Daten Wohnsitz Anforderungen verfügt und Sie eine Migration anfordern müssen, klicken Sie oben rechts im Abschnitt auf **Anmelden** . Auf der rechten Seite des Bildschirms wird ein neuer Abschnitt angezeigt, in dem die Details des Microsoft 365-Verschiebe Programms erläutert werden. Klicken Sie auf die Umschaltfläche neben dem Text: **Ich möchte die wichtigsten ruhenden Kundendaten meiner Organisation migrieren**. Klicken Sie dann auf **Speichern**.
+Wenn Ihre Organisation über Daten Wohnsitz Anforderungen verfügt und Sie eine Migration anfordern müssen, markieren Sie das Kontrollkästchen, und **Speichern**Sie dann.
   
 ![Bildschirm für die Datencenter-Anmeldung](media/dataresidencyflyoutae.jpg)
   
-Im Abschnitt **Data Residency** sollte ein geänderter Text angezeigt werden, der darauf hinweist, dass **Ihre Organisation die Verschiebung ihrer wichtigsten Kundendaten angefordert hat**. Außerdem erhalten Sie im Nachrichtencenter eine Bestätigungsmeldung. Damit wird bestätigt, dass Sie die Verschiebung erfolgreich angefordert haben. 
+Der Text im Abschnitt **Data Residency** section sollte angezeigt werden, um anzugeben, dass **Ihre Organisation aufgefordert wurde, Ihre Daten** in das entsprechende Land und Datum zu verlagern. Außerdem erhalten Sie im Nachrichtencenter eine Bestätigungsmeldung. Damit wird bestätigt, dass Sie die Verschiebung erfolgreich angefordert haben. 
 
 
   
