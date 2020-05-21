@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Die hybride moderne Authentifizierung (HMA) ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
-ms.openlocfilehash: 6c4b57454b415b3af799d82e1c3655daa1fd5ef8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c52eecbe57567276de94aac913b7b82db8c5e404
+ms.sourcegitcommit: 72a4938f1372e7f3693b53bcabac0c5d18305a1d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840742"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326442"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Die hybride moderne Authentifizierung (HMA) ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
   
@@ -33,9 +33,9 @@ Die hybride moderne Authentifizierung (HMA) ist eine Methode zur Identitätsverw
 
 Bevor wir beginnen, rufe ich Folgendes auf:
   
-- Hybride moderne \> Authentifizierung HMA
+- Hybride moderne Authentifizierung \> HMA
     
-- Lokaler \> Exchange-Austausch
+- Lokaler Exchange-Austausch \>
     
 - Exchange Online \> Exo
     
@@ -90,7 +90,7 @@ Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | 
 
 Notieren Sie sich (und Screenshot für einen späteren Vergleich) die Ausgabe dieses Befehls, die eine https:// *autodiscover.yourdomain.com* -und https://- *Mail.yourdomain.com* -URL enthalten sollte, aber meistens aus SPNs besteht, die mit 00000002-0000-0ff1-ce00-000000000000/beginnen. Wenn es https://-URLs von Ihrem Lokal gibt, die fehlen, müssen Sie diese spezifischen Einträge zu dieser Liste hinzufügen. 
   
-3. Wenn Ihre internen und externen MAPI/http-, EWS-, ActiveSync-, OAB-und autodiscover-Datensätze in dieser Liste nicht angezeigt werden, müssen Sie Sie mithilfe des folgenden Befehls`mail.corp.contoso.com`hinzufügen (`owa.contoso.com`die Beispiel-URLs sind "und", aber Sie **ersetzen die Beispiel-URLs durch eigene** ): <br/>
+3. Wenn Ihre internen und externen MAPI/http-, EWS-, ActiveSync-, OAB-und autodiscover-Datensätze in dieser Liste nicht angezeigt werden, müssen Sie Sie mithilfe des folgenden Befehls hinzufügen (die Beispiel-URLs sind " `mail.corp.contoso.com` und" `owa.contoso.com` , aber Sie **ersetzen die Beispiel-URLs durch eigene** ): <br/>
 ```powershell
 $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000   
 $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
@@ -98,7 +98,7 @@ $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
  
-4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs `https://mail.corp.contoso.com` und. `https://owa.contoso.com` 
+4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl Get-MsolServicePrincipal aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs `https://mail.corp.contoso.com` und `https://owa.contoso.com` . 
   
 ## <a name="verify-virtual-directories-are-properly-configured"></a>Überprüfen der ordnungsgemäßen Konfiguration virtueller Verzeichnisse
 
@@ -126,7 +126,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
   
-Wenn OAuth auf einem beliebigen Server und einem der vier virtuellen Verzeichnisse fehlt, müssen Sie es mithilfe der entsprechenden Befehle hinzufügen, bevor Sie fortfahren.
+Wenn OAuth auf einem beliebigen Server und einem der vier virtuellen Verzeichnisse fehlt, müssen Sie es mithilfe der entsprechenden Befehle hinzufügen, bevor Sie fortfahren ([festlegen-MapiVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-mapivirtualdirectory?view=exchange-ps), [festlegen-WebServicesVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-webservicesvirtualdirectory?view=exchange-ps), [setOABVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/set-oabvirtualdirectory?view=exchange-ps)und [AutodiscoverVirtualDirectory](https://docs.microsoft.com/powershell/module/exchange/client-access-servers/set-autodiscovervirtualdirectory?view=exchange-ps)).
   
 ## <a name="confirm-the-evosts-auth-server-object-is-present"></a>Bestätigen, dass das EvoSTS-Authentifizierungs Server Objekt vorhanden ist
 
@@ -153,7 +153,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 Nachdem Sie HMA aktiviert haben, verwendet die nächste Anmeldung eines Clients den neuen auth-Fluss. Beachten Sie, dass durch das Aktivieren von HMA keine erneute Authentifizierung für einen beliebigen Client ausgelöst wird. Die Clients authentifizieren sich erneut basierend auf der Lebensdauer der Authentifizierungstoken und/oder certs, die Sie besitzen.
   
-Sie sollten auch die STRG-Taste gleichzeitig gedrückt halten, indem Sie mit der rechten Maustaste auf das Symbol für den Outlook-Client (auch im Windows-Benachrichtigungs Fach) klicken und auf "Verbindungs Status" klicken. Suchen Sie die SMTP-Adresse des Clients anhand eines "authn"-Typs von "\*Bearer", der das in OAuth verwendete Bearer-Token darstellt.
+Sie sollten auch die STRG-Taste gleichzeitig gedrückt halten, indem Sie mit der rechten Maustaste auf das Symbol für den Outlook-Client (auch im Windows-Benachrichtigungs Fach) klicken und auf "Verbindungs Status" klicken. Suchen Sie die SMTP-Adresse des Clients anhand eines "authn"-Typs von "Bearer \* ", der das in OAuth verwendete Bearer-Token darstellt.
   
  **Hinweis:** Sie müssen Skype for Business mit HMA konfigurieren? Sie benötigen zwei Artikel: eine, die [Unterstützte Topologien](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported)auflistet, und eine, die zeigt, [wie Sie die Konfiguration durchführen](configure-skype-for-business-for-hybrid-modern-authentication.md).
  
