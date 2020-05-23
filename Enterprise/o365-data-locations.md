@@ -1,7 +1,7 @@
 ---
 title: Office 365-Datenspeicherorte
-ms.author: andyber
-author: andybergen
+ms.author: deanw
+author: dmwmsft
 manager: laurawi
 ms.date: 03/09/2020
 audience: ITPro
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Office 365-Datenspeicherorte'
-ms.openlocfilehash: 8fd863034439f22c1c030ff8af6dba97f678f537
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: dbf38ef682ba9a7fcbb98139a9923406d1249264
+ms.sourcegitcommit: ecfa4e6538f9a30cd8c53e3bc446e057aa5097f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44058015"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256380"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -54,7 +54,7 @@ Details hierzu finden Sie unter [Definitionen für verschiedene Arten von Daten]
 
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>Wo finde ich die genauen Adressen der Rechenzentren?
 
-Die genauen Adressen der Rechenzentren werden von Microsoft nicht offengelegt. Dieser Grundsatz dient der Sicherheit unserer Rechenzentren.
+Die genauen Adressen der Rechenzentren werden von Microsoft nicht offengelegt. Dieser Grundsatz dient der Sicherheit unserer Rechenzentren.  Die Städte, in denen sich die Rechenzentren befinden, werden jedoch aufgelistet. Weitere Informationen hierzu finden Sie unter [Standorte von Rechenzentren](https://docs.microsoft.com/office365/enterprise/o365-data-locations#data-center-locations).
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Wirkt sich der Standort Ihrer Kundendaten unmittelbar auf die Benutzererfahrung von Endbenutzern aus?
 
