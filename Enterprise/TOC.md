@@ -30,7 +30,6 @@
 ## Office 365-Clientunterstützung
 ### [Zertifikatbasierte Authentifizierung](office-365-client-support-certificate-based-authentication.md)
 ### [Bedingter Zugriff](office-365-client-support-conditional-access.md)
-### [Entscheidung zwischen MDM und Intune](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)
 ### [Mobile Anwendungsverwaltung (Mobile Application Management)](office-365-client-support-mobile-application-management.md)
 ### [Moderne Authentifizierung](office-365-client-support-modern-authentication.md)
 ### [Einmaliges Anmelden](office-365-client-support-single-sign-on.md)
@@ -198,7 +197,6 @@
 ### [Wiederherstellen gelöschter Elemente im Postfach eines Benutzers](recover-deleted-items-in-a-mailbox.md)
 
 ## Geräte
-### [Entscheidung zwischen MDM und Intune](https://support.office.com/article/c93d9ab9-efb2-4349-9b93-30c30562ee22)
 ### [Verwalten von Gerätezugriffseinstellungen](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
 ## Arbeitslasten
