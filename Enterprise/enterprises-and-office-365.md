@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6e18d402-f35e-415a-83b1-56620d4074ff
 description: Ressourcen zum Planen und Verwalten von Office 365 für Ihre Unternehmensorganisation.
-ms.openlocfilehash: 714308f597b3338abb167f765cc4d1f9b08b582b
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 51687e07abfafa7959166cfcd1a59b3a1af7bc20
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979547"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419393"
 ---
 # <a name="enterprise-organizations-and-office-365"></a>Unternehmensorganisationen und Office 365
 
@@ -48,7 +48,7 @@ Planen, einrichten und Migrieren von Daten zu Office 365 mit Hilfe von Kurztext.
   
 Schützen Sie Ihre Daten, und befolgen Sie die gesetzlichen oder behördlichen Vorgaben.
   
-[Übersicht über die &amp; Sicherheitskonformität in Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
+[Übersicht über die Sicherheits &amp; Konformität in Office 365](https://support.office.com/article/dcb83b2c-ac66-4ced-925d-50eb9698a0b2)
   
 ![Symbole für Wolke und Architektur](media/2850ac8d-4c99-4825-869e-83724c4ef54e.png)
   
@@ -110,7 +110,7 @@ Selbstlern Erfahrung für Office 365 IT-Experten.
   
 [Upgrade von Office 2010-Servern und -Clients](upgrade-from-office-2010-servers-and-products.md)
   
-[Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
+[Installationshandbücher für Office 365 Dienste](setup-guides-for-office-365.md)
   
  **Schulung für Endbenutzer**
   

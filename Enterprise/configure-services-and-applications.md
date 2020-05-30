@@ -18,12 +18,12 @@ ms.assetid: 7cec08a5-97fd-4761-b23b-ef3d66519e30
 f1.keywords:
 - NOCSH
 description: Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise
-ms.openlocfilehash: 45fb283894e68e40d38bc42667f5ac9e5d45b579
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: e0b0be9b4b99f5a652145e9f2991181769a9df19
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009320"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419323"
 ---
 # <a name="configure-office-365-enterprise-services-and-applications"></a>Konfigurieren von Diensten und Anwendungen in Office 365 Enterprise
 
@@ -31,7 +31,7 @@ ms.locfileid: "44009320"
 
 Mit unseren [grundlegenden Anweisungen zur Einrichtung](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa) können Sie allen Benutzern helfen, in kürzester Zeit unsere Office 365-Dienste und Anwendungen zu verwenden. Manchmal ist es sinnvoll, Dienste und Anwendungen zu konfigurieren, bevor alle mit ihrer Verwendung beginnen. Beispielsweise bei der Konfiguration von Richtlinien zum E-Mail-Routing, zur Dateispeicherung und zum Teilen. 
   
-Hilfe bei der Einrichtung von Office 365 finden Sie in **[FastTrack](https://fasttrack.microsoft.com/office)** oder in den [Bereitstellungsratgebern für Office 365-Dienste](deployment-advisors-for-office-365.md).
+Wenn Sie Hilfe bei der Einrichtung von Office 365 wünschen, **[verwenden Sie](https://fasttrack.microsoft.com/office)** die Schritte oder die [Setup Handbücher für Office 365 Dienste](setup-guides-for-office-365.md).
   
 |**Dienste und Anwendungen**|**Ressourcen**|
 |:-----|:-----|

@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Diese Prüfliste hilft Ihrer Organisation bei der Planung und Vorbereitung einer Migration zu Office 365.
-ms.openlocfilehash: dbd996a21cb98fcf7831ef22b855cc8fcb1af39f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: fdbc56b3d3a907ef5ca66f9d184525f8aae13246
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840512"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419363"
 ---
 # <a name="deployment-planning-checklist-for-office-365"></a>Prüfliste für die Bereitstellungsplanung für Office 365
 
 Wenn Sie eine Unternehmensorganisation in Office 365 migrieren, ist es wichtig, genau zu planen, welche Schritte Sie ausführen möchten, wann Sie ausgeführt werden sollen und wer diese ausführen soll. Diese Prüfliste hilft Ihrer Organisation bei der Planung und Vorbereitung einer Migration zu Office 365. Die Phasen und Schritte in der Prüfliste werden mit den Anweisungen des [Onboarding Centers](https://go.microsoft.com/fwlink/?LinkId=517115)abgeglichen. Fühlen Sie sich frei, diese Prüfliste an die Anforderungen Ihrer Organisation anzupassen.
 
 ## <a name="need-help-with-your-deployment"></a>Benötigen Sie Hilfe bei Ihrer Bereitstellung?
-Möchten Sie Hilfe bei der Einrichtung Office 365 einrichten? In diesem Bereich sollten Sie den [Bereitstellungs Ratgeber für Office 365 Dienste](deployment-advisors-for-office-365.md) [verwenden.](https://fasttrack.microsoft.com/office)
+Möchten Sie Hilfe bei der Einrichtung Office 365 einrichten? [Verwenden Sie](https://fasttrack.microsoft.com/office) [für Office 365 Dienste](setup-guides-for-office-365.md)die Kurzhilfe oder die Installationshandbücher.
 
 ## <a name="sample-checklist-for-an-office-365-enterprise-deployment"></a>Beispiel Prüfliste für eine Office 365 Enterprise-Bereitstellung
 
@@ -40,7 +40,7 @@ Möchten Sie Hilfe bei der Einrichtung Office 365 einrichten? In diesem Bereich 
 |:-----|:-----|:-----|:-----|:-----|
 |**Bereitstellungsaufgaben/Events** <br/> |**Startdatum** <br/> |**Abschlusstermin** <br/> |**Ressourcen** <br/> |**Dependencies** <br/> |
 |**Bestimmen der Bereitstellungsziele** <br/> |||||
-| Mit ihren internen und externen Beteiligten:<br>  -Übereinstimmung mit Umfang und Zeitplan <br>  -Projekt Verfolgungsmechanismus vereinbaren  <br>  -Entwickeln von Erfolgskriterien und einer [Kommunikation](https://fasttrack.microsoft.com/office) / [Erste Schritte mit Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
+| Mit ihren internen und externen Beteiligten:<br>  -Übereinstimmung mit Umfang und Zeitplan <br>  -Projekt Verfolgungsmechanismus vereinbaren  <br>  -Entwickeln von Erfolgskriterien und einer [Kommunikation](https://fasttrack.microsoft.com/office)  /  [Erste Schritte mit Office 365](https://support.office.com/article/396b8d9e-e118-42d0-8a0d-87d1f2f055fb)|||||
 |**Inventarisieren Ihrer aktuellen Umgebung und treffen wichtiger Bereitstellungsentscheidungen** |||||
 |Inventarisieren der aktuellen Umgebung |||||
 | Sammeln der Anzahl von Benutzerkonten (Anmeldenamen, e-Mail-Adressen) |||||

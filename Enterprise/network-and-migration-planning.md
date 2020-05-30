@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
-ms.openlocfilehash: 0601775beb3f7e42d3e18de7b85406c02df2f4e8
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
+ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844576"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419383"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
 Dieser Artikel enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
   
@@ -98,8 +98,6 @@ Diese Themen enthalten ausführliche Office 365 Netzwerk Referenzinformationen.
   
 - [Verwalten von Office 365-Endpunkten](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
     
-- [Clientkonnektivität](client-connectivity.md)
-    
 - [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
     
 - [Externe DNS-Einträge für Office 365](external-domain-name-system-records.md)
@@ -112,7 +110,7 @@ Diese Themen enthalten ausführliche Office 365 Netzwerk Referenzinformationen.
     
 - [Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen](plan-for-network-devices.md)
     
-- [Bereitstellungsratgeber für Office 365-Dienste](deployment-advisors-for-office-365.md)
+- [Installationshandbücher für Office 365 Dienste](setup-guides-for-office-365.md)
  
 ## <a name="see-also"></a>Siehe auch
 
