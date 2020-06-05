@@ -3,7 +3,7 @@ title: Verwenden des Seiten Diagnosetools für SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/11/2020
+ms.date: 06/03/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +19,26 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Verwenden Sie das Seiten Diagnosetool für SharePoint, um SharePoint Online modernen Portal-und klassischen Veröffentlichungsseiten anhand einer vordefinierten Reihe von Leistungskriterien zu analysieren.
-ms.openlocfilehash: 8295a39429ffc57cef6f9ca05c72704388b39c12
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: 08bfa6abf0aab4abafaf5fad3a0e43afb9000370
+ms.sourcegitcommit: ea2f92f147dbf8183124476302ca33c4cf4265a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603734"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44561815"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Verwenden der Seite Diagnostics für SharePoint-Tool
 
-In diesem Artikel wird beschrieben, wie Sie mit dem **Tool Page Diagnostics for SharePoint** SharePoint Online modernen und klassischen Website Seiten anhand einer vordefinierten Reihe von Leistungskriterien analysieren.  
+In diesem Artikel wird beschrieben, wie Sie mit dem **Tool Page Diagnostics for SharePoint** SharePoint Online modernen und klassischen Website Seiten anhand einer vordefinierten Reihe von Leistungskriterien analysieren.
+
+Das Page Diagnostics für SharePoint-Tool kann installiert werden für:
+
+- **Microsoft Edge** [(Edge-Erweiterung)](https://microsoftedge.microsoft.com/addons/detail/ocemkolpnamjcacndljdfmhlpcaoipji)
+- **Chrome** [(Chrome-Erweiterung)](https://chrome.google.com/webstore/detail/inahogkhlkbkjkkaleonemeijihmfagi)
 
 >[!TIP]
 >Version **2.0.0** und höher umfasst neben klassischen Website Seiten auch Unterstützung für moderne Seiten. Wenn Sie sich nicht sicher sind, welche Version des Tools Sie verwenden, können Sie den Link **Info** oder die Ellipsen (...) auswählen, um Ihre Version zu überprüfen. **Aktualisieren Sie immer auf die neueste Version, wenn Sie** das Tool verwenden.
 
-Das Seiten Diagnosetool für SharePoint ist eine Browser Erweiterung für die neuen Microsoft Edgehttps://www.microsoft.com/edge) (und Chrome-Browser, die sowohl SharePoint Online moderne Portal-als auch klassische Veröffentlichungswebsite-Seiten analysieren. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-System Seite verwendet werden.
+Das Tool "Seitendiagnose für SharePoint" ist eine Browsererweiterung für neue Microsoft Edge- (https://www.microsoft.com/edge) und Chrome-Browser, mit der Sie SharePoint Online-Seiten sowohl in modernen Portal- als auch in klassischen Veröffentlichungs-Websites analysieren können. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-System Seite verwendet werden.
 
 Das Tool generiert einen Bericht für jede analysierte Seite, die zeigt, wie die Seite mit einem vordefinierten Satz von Regeln ausgeführt wird, und zeigt ausführliche Informationen an, wenn Ergebnisse für einen Test außerhalb des Basiswerts liegen. SharePoint Online Administratoren und Designer können das Tool verwenden, um Leistungsprobleme zu beheben und sicherzustellen, dass neue Seiten vor der Veröffentlichung optimiert werden.
 
@@ -126,7 +131,7 @@ Die Registerkarte **Netzwerkablaufverfolgung** enthält detaillierte Information
 
     ![Netzwerkablaufverfolgung](media/page-diagnostics-for-spo/pagediag-networktrace-red.png)
 
-    Im oben gezeigten Bild bezieht sich das rote Element auf die Standardseite. Es wird immer rot angezeigt, es sei denn, \< die Seite wird in 1000ms (weniger als 1 Sekunde) geladen.
+    Im oben gezeigten Bild bezieht sich das rote Element auf die Standardseite. Es wird immer rot angezeigt, es sei denn, die Seite wird in \< 1000ms (weniger als 1 Sekunde) geladen.
 
 2. **Laden der Test Element Zeiten**. In einigen Fällen wird kein Zeit-oder Farbindikator angezeigt, da die Elemente bereits vom Browser zwischengespeichert wurden. Um dies ordnungsgemäß zu testen, öffnen Sie die Seite, leeren Sie den Browsercache, und klicken Sie dann auf **starten** , um eine "kalte" Seitenlast zu erzwingen und eine echte Reflektion der anfänglichen Seitenlast zu sein. Dies sollte dann mit der "warmen" Seiten Lade verglichen werden, da dies auch dazu beiträgt, zu ermitteln, welche Elemente auf der Seite zwischengespeichert werden.
 
