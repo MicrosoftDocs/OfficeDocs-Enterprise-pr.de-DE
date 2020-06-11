@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Office 365 Lizenzen zu Benutzerkonten
+title: Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,27 +25,27 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Beschreibt, wie Benutzerkonten Office 365 Lizenzen entweder einzeln oder basierend auf der Gruppenmitgliedschaft zuweisen.
-ms.openlocfilehash: 77e6f6c20e9eeff11487a31cb2d616abbed42601
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Beschreibt, wie Sie Benutzerkonten Microsoft 365-Lizenzen einzeln oder basierend auf einer Gruppenmitgliedschaft zuweisen.
+ms.openlocfilehash: bd9587f81d2267e1d6fd28f60e8ac2e85171457b
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009380"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699222"
 ---
-# <a name="assign-office-365-licenses-to-user-accounts"></a>Zuweisen von Office 365 Lizenzen zu Benutzerkonten
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten
 
 *Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
 
-Für das nur-Cloud-Identitätsmodell können Sie den Benutzerkonten Office 365 Lizenzen zuweisen, je nachdem, wie Sie erstellt werden.
+Für das nur-Cloud-Identitätsmodell können Sie Microsoft 365-Lizenzen den Benutzerkonten zuweisen, je nachdem, wie Sie erstellt wurden.
 
-Wenn Active Directory-Domänendienste (AD DS) Benutzerkonten zum ersten Mal synchronisiert werden, wird für das hybride Identitätsmodell nicht automatisch eine Office 365 Lizenz zugewiesen.
+Wenn Active Directory-Domänendienste (AD DS) Benutzerkonten zum ersten Mal synchronisiert werden, wird für das hybride Identitätsmodell nicht automatisch eine Microsoft 365-Lizenz zugewiesen. Sie müssen zunächst jedes Benutzerkonto mit einem Benutzer Speicherort konfigurieren.
 
-In beiden Fällen müssen Sie Benutzerkonten eine Lizenz zuweisen, damit Ihre Benutzer auf Office 365 Dienste wie e-Mail und Microsoft Teams zugreifen können.
+In beiden Fällen müssen Sie Benutzerkonten eine Lizenz zuweisen, damit Ihre Benutzer auf Microsoft 365-Dienste wie e-Mail und Microsoft Teams zugreifen können.
 
 Sie können Benutzerkonten entweder einzeln oder automatisch über die Gruppenmitgliedschaft Lizenzen zuweisen.
 
-Um einzelnen Benutzerkonten Office 365 Lizenzen zuzuweisen, können Sie Folgendes verwenden:
+Wenn Sie Microsoft 365-Lizenzen einzelnen Benutzerkonten zuweisen möchten, können Sie Folgendes verwenden:
 
 - [Das Microsoft 365 Admin Center](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users)
 - [Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
@@ -58,5 +58,5 @@ Mit dem vollständigen Benutzer kontensatz, dem Lizenzen zugewiesen wurden, kön
 
 - [Implementieren der Sicherheit](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [Bereitstellen von Client Software wie Microsoft 365-apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [Einrichten der Verwaltung mobiler Geräte in Office 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [Einrichten der Verwaltung mobiler Geräte in Microsoft 365](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [Konfigurieren von Diensten und Anwendungen](configure-services-and-applications.md)

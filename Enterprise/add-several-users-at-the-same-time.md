@@ -1,5 +1,5 @@
 ---
-title: Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 - Administratorhilfe
+title: Gleichzeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365-Administratorhilfe
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -24,24 +24,24 @@ search.appverid:
 - GEA150
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
-description: 'In diesem Artikel erfahren Sie, wie Sie Office 365 für Unternehmen aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei mehrere Benutzer hinzufügen können. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Office 365 erläutert wird. Am Ende dieses Prozesses verfügt jeder Benutzer mit einem Konto über ein Office 365 Postfach. '
-ms.openlocfilehash: 9c24c52e280fcb316d9e77ea613a1812a235c2d2
-ms.sourcegitcommit: c2f90c022ca323736d9c43929b5681c3f8db0e6f
+description: 'In diesem Artikel erfahren Sie, wie Sie Microsoft 365 for Business mehrere Benutzer aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei hinzufügen. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Microsoft 365 erläutert wird. Am Ende dieses Prozesses verfügt jeder Benutzer mit einem Konto über ein Microsoft 365-Postfach. '
+ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
+ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901208"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44699242"
 ---
-# <a name="add-several-users-at-the-same-time-to-office-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Office 365 – Administratorhilfe
+# <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365-Administratorhilfe
 
-Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden und auf Office 365-Dienste wie E-Mail und Office zugreifen kann. Wenn das Team viele Personen umfasst, können Sie deren Konten aus einer Excel-Tabelle oder einer anderen, im CSV-Format gespeicherten, Datei gleichzeitig hinzufügen. [Was ist eine CSV-Datei?](add-several-users-at-the-same-time.md#__toc316652088)
+Jede Person in Ihrem Team benötigt ein Benutzerkonto, bevor Sie sich anmelden und auf Microsoft 365-Dienste wie e-Mail und Office zugreifen kann. Wenn das Team viele Personen umfasst, können Sie deren Konten aus einer Excel-Tabelle oder einer anderen, im CSV-Format gespeicherten, Datei gleichzeitig hinzufügen. [Was ist eine CSV-Datei?](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
 
-## <a name="add-multiple-users-to-office-365-in-the-microsoft-365-admin-center"></a>Hinzufügen von mehreren Benutzern zu Office 365 im Microsoft 365 Admin Center
+## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>Hinzufügen mehrerer Benutzer im Microsoft 365 Admin Center
 
-1. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an. 
+1. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Microsoft 365 an. 
     
 2. Wählen Sie im Admin Center **Benutzer** \> **Aktive Benutzer** aus.
 
@@ -74,13 +74,13 @@ Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="bk_preview"> </a>
 
-- Da diese Personen nun über Konten verfügen, müssen Sie [Office 365 oder Office 2016 auf einem PC oder Mac herunterladen und installieren oder neu installieren](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Jede Person in Ihrem Team kann Office 365 auf bis zu fünf PCs oder Macs installieren. 
+- Da diese Personen nun über Konten verfügen, müssen Sie [Microsoft 365 oder Office 2016 auf einem PC oder Mac herunterladen und installieren oder neu installieren](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658). Jede Person in Ihrem Team kann Microsoft 365 auf bis zu fünf PCs oder Macs installieren. 
     
 - Jede Person kann auch [Office-Apps und e-Mail auf einem mobilen Gerät](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) auf bis zu 5 Tablets und 5 Telefonen wie iPhones, iPads und Android-Telefone und-Tablets einrichten. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden. 
     
-    Weitere Informationen finden Sie unter [Set up Office 365 für Unternehmen](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) for a End-to-End List of the Setup Steps. 
+    Eine End-to-End-Liste der Setupschritte finden Sie unter [Einrichten von Microsoft 365 for Business](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) . 
     
-## <a name="more-information-about-how-to-add-users-to-office-365"></a>Weitere Informationen dazu, wie Sie Benutzer zu Office 365 hinzufügen
+## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Weitere Informationen zum Hinzufügen von Benutzern zu Microsoft 365
 <a name="bk_preview"> </a>
 
 ### <a name="not-sure-what-csv-format-is"></a>Was ist eine CSV-Datei?
@@ -88,7 +88,7 @@ Jedes Mitglied in Ihrem Team benötigt ein Benutzerkonto, bevor es sich anmelden
 
 Eine CSV-Datei ist eine Datei mit durch Kommas getrennten Werten. Sie können eine Datei wie diese mit einem beliebigen Text-Editor oder Tabellenkalkulationsprogramm wie beispielsweise Excel erstellen oder bearbeiten.
   
-Sie können [diese Beispieltabelle](https://www.microsoft.com/download/details.aspx?id=45485) als Ausgangspunkt herunterladen. Denken Sie daran, dass bei Office 365 in der ersten Zeile Spaltenüberschriften stehen müssen. Ersetzen Sie die Überschriften deshalb nicht durch ein anderes Element. 
+Sie können [diese Beispieltabelle](https://www.microsoft.com/download/details.aspx?id=45485) als Ausgangspunkt herunterladen. Beachten Sie, dass Microsoft 365 Spaltenüberschriften in der ersten Zeile erfordert, damit Sie nicht durch eine andere ersetzen. 
   
 Speichern Sie die Datei unter einem neuen Namen, und geben Sie das Format "CSV" an.
   
@@ -101,7 +101,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Tipps zum Formatieren Ihrer Tabelle
 <a name="__toc314595848"> </a>
 
-- **Benötige ich dieselben Spaltenüberschriften wie in der Beispieltabelle?** Ja. Die erste Zeile der Beispieltabelle enthält die Spaltenüberschriften. Diese Überschriften sind erforderlich. Erstellen Sie für jeden Benutzer, den Sie Office 365 hinzufügen möchten, eine Zeile unter der Überschrift. Wenn Sie eine der Spaltenüberschriften hinzufügen, ändern oder löschen, kann Office 365 Benutzer anhand der Informationen in der Datei möglicherweise nicht erstellen. 
+- **Benötige ich dieselben Spaltenüberschriften wie in der Beispieltabelle?** Ja. Die erste Zeile der Beispieltabelle enthält die Spaltenüberschriften. Diese Überschriften sind erforderlich. Erstellen Sie für jeden Benutzer, den Sie Microsoft 365 hinzufügen möchten, eine Zeile unter der Überschrift. Wenn Sie Spaltenüberschriften hinzufügen, ändern oder löschen, kann Microsoft 365 möglicherweise keine Benutzer anhand der Informationen in der Datei erstellen. 
     
 - **Was kann ich tun, wenn ich nicht über alle Informationen verfüge, die bei jedem Benutzer erforderlich sind?** Der Benutzername und der Anzeigename sind unbedingt erforderlich; Sie können keinen neuen Benutzer ohne diese Angaben hinzufügen. Falls Ihnen einige der anderen Informationen fehlen, wie beispielsweise das Fax, können Sie ein Leerzeichen plus das von Ihnen verwendete Trennzeichen eingeben und so festlegen, dass das Feld leer bleiben soll. 
     
@@ -115,7 +115,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
     
 |**Beschriftung für Benutzerdatenspalte**|**Maximale Zeichenanzahl**|
 |:-----|:-----|
-|Benutzername (erforderlich)  <br/> |79, einschließlich des at-Zeichens (@), im Format "Name@Domäne.\<#60;Erweiterung\>". Der Alias des Benutzers darf 50 Zeichen nicht überschreiten, und der Domänenname darf 48 Zeichen nicht überschreiten.  <br/> |
+|Benutzername (erforderlich)  <br/> |79 einschließlich des @-Zeichens im Format Name@Domain. \<extension\> . Der Alias des Benutzers darf 50 Zeichen nicht überschreiten, und der Domänenname darf 48 Zeichen nicht überschreiten.  <br/> |
 |Vorname  <br/> |64  <br/> |
 |Nachname  <br/> |64  <br/> |
 |Anzeigename (erforderlich)  <br/> |256  <br/> |
@@ -131,15 +131,15 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
 |PLZ  <br/> |40  <br/> |
 |Land oder Region  <br/> |128  <br/> |
    
-### <a name="still-having-problems-when-adding-users-to-office-365"></a>Gibt es weiterhin Probleme beim Hinzufügen von Benutzern zu Office 365?
+### <a name="still-having-problems-when-adding-users-to-microsoft-365"></a>Gibt es weiterhin Probleme beim Hinzufügen von Benutzern zu Microsoft 365?
 
 - **Überprüfen Sie sorgfältig, ob die Tabelle richtig formatiert wurde.** Überprüfen Sie, ob die Spaltenüberschriften mit den Überschriften in der Beispieldatei übereinstimmen. Vergewissern Sie sich, dass Sie die Regeln für die maximale Zeichenanzahl eingehalten haben und dass jedes Feld durch ein Trennzeichen getrennt ist. 
     
-- **Wenn die neuen Benutzer nicht sofort in Office 365 angezeigt werden, warten Sie einige Minuten.** Es kann eine Weile dauern, bis Änderungen alle Dienste in Office 365 durchlaufen. 
+- **Wenn die neuen Benutzer in Microsoft 365 nicht sofort angezeigt werden, warten Sie einige Minuten.** Es kann eine Weile dauern, bis Änderungen in allen Diensten in Microsoft 365 durchlaufen werden. 
     
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Hinzufügen von Benutzern einzeln oder in Massen zu Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
 
 
 
