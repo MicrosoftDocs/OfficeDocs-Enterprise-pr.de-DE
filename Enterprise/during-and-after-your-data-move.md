@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf die Endbenutzer. Es sind keine Maßnahmen erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Geo-Rechenzentrum verschiebt. Der Datentransfer und die Validierung erfolgen im Hintergrund im Voraus mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: 24239f4e6cb8207fe53043dce80ae77035d8e834
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009300"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711918"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -29,7 +29,7 @@ Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf 
 > [!NOTE]
 > Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Sehen Sie sich das Microsoft 365-Nachrichten Center an, um zu bestätigen, dass Moves für jede Exchange Online, SharePoint Online, Teams und Skype for Business abgeschlossen sind. Wie die folgende Tabelle zeigt, kann es bis zu 24 Monate nach dem Ende der Registrierungsperiode dauern, um alle angeforderten Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Wenn Sie nach der Verschiebung Probleme mit Ihrem Mandanten feststellen, wenden Sie sich an den [Office 365-Support](https://go.microsoft.com/fwlink/p/?LinkID=522459), um Hilfe zu erhalten. 
+Sehen Sie sich das Microsoft 365-Nachrichten Center an, um zu bestätigen, dass Moves für jede Exchange Online, SharePoint Online, Teams und Skype for Business abgeschlossen sind. Wie die folgende Tabelle zeigt, kann es bis zu 24 Monate nach dem Ende der Registrierungsperiode dauern, um alle angeforderten Datenverschiebungen für alle Kunden in einem bestimmten Geo abzuschließen. Wenn Sie nach dem Wechsel Probleme mit Ihrem Mandanten feststellen, wenden Sie sich an den [Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) , um Hilfe zu erhalten. 
   
 
 |**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|

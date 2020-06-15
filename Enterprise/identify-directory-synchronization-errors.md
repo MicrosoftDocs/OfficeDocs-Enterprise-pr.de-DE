@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
+title: Anzeigen von Verzeichnis Synchronisierungsfehlern in Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,24 +21,24 @@ search.appverid:
 - GPA150
 ms.assetid: b4fc07a5-97ea-4ca6-9692-108acab74067
 description: Informationen zum Anzeigen von Verzeichnis Synchronisierungsfehlern im Microsoft 365 Admin Center.
-ms.openlocfilehash: e270b7f1bc29d952cd07a7b3430a1a9a50b67783
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d10abc29a08da4352d4c0779698e2062175008b4
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840172"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711645"
 ---
-# <a name="view-directory-synchronization-errors-in-office-365"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern in Office 365
+# <a name="view-directory-synchronization-errors-in-microsoft-365"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern in Microsoft 365
 
 Sie können Verzeichnis Synchronisierungsfehler im [Microsoft 365 Admin Center](https://admin.microsoft.com)anzeigen. Es werden nur die Fehler des Benutzerobjekts angezeigt. Informationen zum Anzeigen von Fehlern mithilfe von PowerShell finden Sie unter [Identifizieren von Objekten mit DirSyncProvisioningErrors](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency).
 
-Nach der Anzeige finden Sie unter [Beheben von Problemen mit der Verzeichnissynchronisierung für Office 365](fix-problems-with-directory-synchronization.md) , um identifizierte Probleme zu beheben.
+Nach der Anzeige finden Sie unter [Beheben von Problemen mit der Verzeichnissynchronisierung für Microsoft 365](fix-problems-with-directory-synchronization.md) , um identifizierte Probleme zu beheben.
   
 ## <a name="view-directory-synchronization-errors-in-the-admin-center"></a>Anzeigen von Verzeichnis Synchronisierungsfehlern im Admin Center
 
 So zeigen Sie Fehler im Admin Center an:
   
-1. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Office 365 an. 
+1. Melden Sie sich mit Ihrem Geschäfts- oder Schulkonto bei Microsoft 365 an. 
     
 2. Wechseln Sie zum [Admin Center](https://support.office.com/article/758befc4-0888-4009-9f14-0d147402fd23).
     

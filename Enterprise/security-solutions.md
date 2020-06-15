@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 'Zusammenfassung: Verwenden Sie die folgenden Artikel, um Sicherheitslösungen mit Microsoft-Cloudangeboten bereitzustellen.'
-ms.openlocfilehash: d006fe0ebb1b4bb4c963ffec8dbdece590c81032
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793678"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711828"
 ---
 # <a name="security-solutions"></a>Sicherheitslösungen
 
@@ -44,7 +44,7 @@ Hier finden Sie Lösungen für sicheren Zugriff, Zusammenarbeit und Daten mit Mi
   
 [Ressourcen zur Cloud-IT-Architektur von Microsoft](microsoft-cloud-it-architecture-resources.md)
   
-[Testumgebungsanleitungen (TLGs) zur Cloudakzeptanz](cloud-adoption-test-lab-guides-tlgs.md)
+[Testumgebungsanleitungen für Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/m365-enterprise-test-lab-guides)
   
 [Architekturmodelle für SharePoint, Exchange, Skype for Business und Lync](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)
   

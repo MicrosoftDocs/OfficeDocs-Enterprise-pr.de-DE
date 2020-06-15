@@ -13,19 +13,19 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
-description: 'Zusammenfassung: Erstellen und konfigurieren Sie die Active Directory Federation Services-Server (AD FS) für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365 in Microsoft Azure.'
-ms.openlocfilehash: 5ac87b0d19c43e8711e188d1a0f6a7f33a37871f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Zusammenfassung: Erstellen und Konfigurieren der Active Directory Verbunddienste-Server (AD FS) für die Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Microsoft Azure.'
+ms.openlocfilehash: 7b32c39ada30059df78ccb5429dba11c1576dff7
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840152"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711928"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 3: Konfigurieren von AD FS-Servern
 
-In dieser Phase der Bereitstellung der hohen Verfügbarkeit für Verbundauthentifzierung für Office 365 in Azure-Infrastrukturdiensten erstellen Sie einen internen Lastenausgleich und zwei AD FS-Server.
+In dieser Phase der Bereitstellung von hoher Verfügbarkeit für die Verbundauthentifizierung von Microsoft 365 in Azure-Infrastrukturdiensten erstellen Sie einen internen Lastenausgleich und zwei AD FS-Server.
   
-Sie müssen diese Phase abschließen, bevor Sie mit [Phase 4: Konfigurieren von Webanwendungs Proxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)fortfahren. Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+Sie müssen diese Phase abschließen, bevor Sie mit [Phase 4: Konfigurieren von Webanwendungs Proxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md)fortfahren. Unter [Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) für alle Phasen.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Erstellen der virtuellen Computer des AD FS-Servers in Azure
 
@@ -48,7 +48,7 @@ Erinnern Sie sich, dass Sie Tabelle M in Phase [2: Configure Domain Controllers]
 > [!NOTE]
 > [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Weitere Informationen finden Sie unter [Erste Schritte mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
   
-Zuerst erstellen Sie in Azure einen internen Lastenausgleich für die beiden AD FS-Server. Geben Sie die Werte für die Variablen an, \< und entfernen Sie die Zeichen und #a0. Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.
+Zuerst erstellen Sie in Azure einen internen Lastenausgleich für die beiden AD FS-Server. Geben Sie die Werte für die Variablen an, und entfernen Sie die \< and > Zeichen. Sobald Sie alle Werte korrekt festgelegt haben, führen Sie den resultierenden Block über die Azure PowerShell-Eingabeaufforderung oder in PowerShell ISE aus.
   
 > [!TIP]
 > Verwenden Sie diese [Microsoft Excel Konfigurations Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx), um Ready-to-Run PowerShell-Befehlsblöcke basierend auf Ihren benutzerdefinierten Einstellungen zu generieren. 
@@ -146,7 +146,7 @@ Wenn Sie diese Phase erfolgreich abgeschlossen haben, sieht Ihre Konfiguration w
   
 **Phase 3: Die AD FS-Server und der interne Lastenausgleich für die hohe Verfügbarkeit der Verbundauthentifizierungsinfrastruktur in Azure**
 
-![Phase 3 der hoch Verfügbarkeits Office 365 Verbund Authentifizierungsinfrastruktur in Azure mit den AD FS-Servern](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Phase 3 der hoch verfügbaren Microsoft 365-Verbund Authentifizierungsinfrastruktur in Azure mit den AD FS-Servern](media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -154,8 +154,8 @@ Verwenden Sie [Phase 4: Konfigurieren von Webanwendungs Proxys](high-availabilit
   
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
+[Verbundidentität für Ihre Microsoft 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
 
 

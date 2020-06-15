@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Hier erfahren Sie, wie Sie allgemeine Verwaltungsaufgaben für Office 365 Gruppen in Microsoft PowerShell ausführen.
-ms.openlocfilehash: 7ebb3cfdfc6375cbc340c1fc3be37d59bcd9d4c8
-ms.sourcegitcommit: c758588cf2b68de9291a362fd73ec9dc721d04d3
+ms.openlocfilehash: 5868c875645685b10197ab05fd233940b73b0e88
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411062"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711838"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Verwalten von Office 365-Gruppen mit PowerShell
  
@@ -112,7 +112,7 @@ Sobald diese Einstellungen aktiviert sind, kann der Gruppenbesitzer eine Klassif
 ## <a name="hide-office-365-groups-from-gal"></a>Ausblenden von Office 365-Gruppen aus der globalen Adressliste
 <a name="BKMK_CreateClassification"> </a>
 
-Sie können angeben, ob eine Office 365-Gruppe in der globalen Adressliste (GAL) und anderen Listen in Ihrer Organisation angezeigt wird. Wenn beispielsweise eine Gruppe der Rechtsabteilung nicht in der Adressliste angezeigt werden soll, können Sie diese Gruppe aus der globalen Adressliste ausblenden. Führen Sie das Cmdlet "Set-UnifiedGroup" wie folgt aus, um die Gruppe in der Adressliste auszublenden:
+Sie können angeben, ob eine Office 365 Gruppe in der globalen Adressliste (GAL) und anderen Listen in Ihrer Organisation angezeigt wird. Wenn beispielsweise eine Gruppe der Rechtsabteilung nicht in der Adressliste angezeigt werden soll, können Sie diese Gruppe aus der globalen Adressliste ausblenden. Führen Sie das Cmdlet "Set-UnifiedGroup" wie folgt aus, um die Gruppe in der Adressliste auszublenden:
   
 ```
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -121,7 +121,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 ## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>Nur internen Benutzern erlauben, Nachrichten an die Office 365-Gruppe zu senden
 <a name="BKMK_CreateClassification"> </a>
 
-Wenn Sie verhindern möchten, dass Benutzer aus anderen Organisation E-Mails an eine bestimmte Office 365-Gruppe senden können, ändern Sie die Einstellungen für diese Gruppe. So können nur interne Benutzer E-Mail-Nachrichten an Ihre Gruppe senden. Wenn externe Benutzer versuchen, eine Nachricht an diese Gruppe zu senden, wird diese zurückgewiesen.
+Wenn Sie nicht möchten, dass Benutzer aus anderen Organisationen e-Mails an eine Office 365 Gruppe senden, können Sie die Einstellungen für diese Gruppe ändern. So können nur interne Benutzer E-Mail-Nachrichten an Ihre Gruppe senden. Wenn externe Benutzer versuchen, eine Nachricht an diese Gruppe zu senden, wird diese zurückgewiesen.
   
 Führen Sie das Cmdlet "Set-UnifiedGroup" wie folgt aus, um diese Einstellung zu aktualisieren:
 

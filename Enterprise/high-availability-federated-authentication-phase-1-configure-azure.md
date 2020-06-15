@@ -13,17 +13,17 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Ihr Office 365.'
-ms.openlocfilehash: 9f2991ef495093f2aed01e57f47dab3371b97de3
-ms.sourcegitcommit: a578baeb0d8b85941c13afa268447d2592f89fae
+description: 'Zusammenfassung: Konfigurieren der Microsoft Azure Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365.'
+ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43793828"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711948"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
-In dieser Phase erstellen Sie die Ressourcengruppen, das virtuelle Netzwerk (VNet) und die Verfügbarkeits Sätze in Azure, die die virtuellen Computer in den Phasen 2, 3 und 4 hosten werden. Sie müssen diese Phase abschließen, bevor Sie mit [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) fortfahren können. Eine Übersicht über alle Phasen finden Sie unter [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md).
+In dieser Phase erstellen Sie die Ressourcengruppen, das virtuelle Netzwerk (VNet) und die Verfügbarkeits Sätze in Azure, die die virtuellen Computer in den Phasen 2, 3 und 4 hosten werden. Sie müssen diese Phase abschließen, bevor Sie mit [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) fortfahren können. Unter [Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md) für alle Phasen.
   
 Azure muss mit diesen grundlegenden Komponenten ausgestattet werden:
   
@@ -39,7 +39,7 @@ Azure muss mit diesen grundlegenden Komponenten ausgestattet werden:
 
 Füllen Sie die folgenden Tabellen aus, bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen. Um Sie bei den Verfahren für die Konfiguration von Azure zu unterstützen, Drucken Sie diesen Abschnitt aus, notieren Sie die erforderlichen Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie ihn aus. Geben Sie in Tabelle V die Einstellungen für das VNet ein.
   
-|**Aspekt**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Element**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -72,7 +72,7 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
   
 Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Aspekt**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Element**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -89,7 +89,7 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen C
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Aspekt**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
 |1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -108,7 +108,7 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
    
  **Tabelle L: Adresspräfixe für das lokale Netzwerk**
   
-Jetzt können Sie mit dem Erstellen der Azure-Infrastruktur beginnen, die die Verbundauthentifizierung für Office 365 hosten soll.
+Lassen Sie uns nun mit dem Erstellen der Azure-Infrastruktur beginnen, um Ihre Verbundauthentifizierung für Microsoft 365 zu hosten.
   
 > [!NOTE]
 > [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Weitere Informationen finden Sie unter [Erste Schritte mit Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
@@ -134,7 +134,7 @@ Verwenden Sie für ältere Versionen von Azure PowerShell stattdessen diesen Bef
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungs \< Zeichen, einschließlich der und > Zeichen, mit dem korrekten Namen.
+Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der \< and > Zeichen, durch den korrekten Namen.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -302,9 +302,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Haben Sie diese Phase erfolgreich abgeschlossen, sieht Ihre Konfiguration wie folgt aus.
   
-**Phase 1: Die Azure-Infrastruktur für die Verbundauthentifizierung mit hoher Verfügbarkeit für Office 365**
+**Phase 1: die Azure-Infrastruktur für die Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365**
 
-![Phase 1 der hoch Verfügbarkeits Office 365 Verbundauthentifizierung in Azure mit der Azure-Infrastruktur](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 der Microsoft 365-Verbundauthentifizierung mit hoher Verfügbarkeit in Azure mit der Azure-Infrastruktur](media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -312,12 +312,12 @@ Verwenden Sie [Phase 2: Konfigurieren von Domänencontrollern](high-availability
   
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Office 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
-[Verbundidentität für Ihre Office 365-Entwicklungs-/Testumgebung](federated-identity-for-your-office-365-dev-test-environment.md)
+[Verbundidentität für Ihre Microsoft 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
 [Cloudakzeptanz und Hybridlösungen](cloud-adoption-and-hybrid-solutions.yml)
 
-[Grundlegendes zur Office 365-Identität und zu Azure Active Directory](about-office-365-identity.md)
+[Grundlegendes zu Microsoft 365 Identity und Azure Active Directory](about-office-365-identity.md)
 
 

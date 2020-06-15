@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: 'In diesem Artikel erfahren Sie, wie Sie Microsoft 365 for Business mehrere Benutzer aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei hinzufügen. Sehen Sie sich ein Video auf YouTube an, in dem das Hinzufügen von Konten zu Microsoft 365 erläutert wird. Am Ende dieses Prozesses verfügt jeder Benutzer mit einem Konto über ein Microsoft 365-Postfach. '
-ms.openlocfilehash: 88c83b7163bfa6d389995704595d80458ddc8198
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 5f328185b56d1c5436f763d811d85dd55f912919
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44699242"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711808"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Gleichzeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365-Administratorhilfe
 

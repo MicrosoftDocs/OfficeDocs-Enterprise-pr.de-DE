@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Microsoft 365, Active Directory-Domänendienste Bereinigung und das Azure Active Directory Connect-Tool.
-ms.openlocfilehash: ef7af68a65e4799e7bffbe6edba4f2b237a4d8b4
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
+ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698962"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44711868"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Microsoft 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "44698962"
 Je nach Ihren geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Microsoft 365 annehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Microsoft 365-Abonnements synchronisiert.
 
 >[!Note]
->Wenn AD DS Benutzerkonten zum ersten Mal synchronisiert werden, wird Ihnen nicht automatisch eine Microsoft 365-Lizenz zugewiesen, und es kann nicht auf Microsoft 365-Dienste wie e-Mail zugegriffen werden. Sie müssen Ihnen zunächst einen Verwendungs Speicherort zuweisen. Weisen Sie dann diesen Benutzerkonten entweder einzeln oder dynamisch über die Gruppenmitgliedschaft eine Lizenz zu.
+>Wenn AD DS Benutzerkonten zum ersten Mal synchronisiert werden, werden Sie nicht automatisch eine Microsoft 365-Lizenz zugewiesen und können nicht auf Microsoft 365-Dienste wie e-Mail zugreifen. Sie müssen Ihnen zunächst einen Verwendungs Speicherort zuweisen. Weisen Sie dann diesen Benutzerkonten entweder einzeln oder dynamisch über die Gruppenmitgliedschaft eine Lizenz zu.
 >
 
 ## <a name="authentication-for-hybrid-identity"></a>Authentifizierung für Hybrid Identität
