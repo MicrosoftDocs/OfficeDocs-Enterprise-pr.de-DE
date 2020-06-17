@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: Hier erhalten Sie Antworten auf allgemeine Fragen zum Verschieben von Kerndaten in eine neue geografische Datencenter-Region.
-ms.openlocfilehash: 09c2e9acd482f10c6883ce0134793a9656675631
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516556"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735843"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -64,7 +64,7 @@ Ja. Sobald ein neues Rechenzentrums-Geo verfügbar ist, werden neue Microsoft 36
   
  ## <a name="where-is-my-core-customer-data-located"></a>Wo befinden sich meine Hauptkunden Daten?
 
-Mandantenadministratoren können die Datenspeicherort-Karte jederzeit im Admin Center einsehen, um den Standort der ruhenden Kundenkerndaten für jeden Dienst zu überprüfen, insbesondere für den jeweiligen Mandanten.  Außerdem veröffentlichen wir den geografischen Standort von Datencentern und den Speicherort von Office 365-Kundendaten auf den  [interaktiven Office 365-Datencenterkarten](https://office.com/datamaps) als Referenz für die aktuellen standardmäßigen Speicherorte ruhender Kundenkerndaten für neue Mandanten.  Im Microsoft 365 Admin Center können Sie den Speicherort Ihrer Kundendaten über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
+Mandantenadministratoren können die Datenspeicherort-Karte jederzeit im Admin Center einsehen, um den Standort der ruhenden Kundenkerndaten für jeden Dienst zu überprüfen, insbesondere für den jeweiligen Mandanten.Wir veröffentlichen auch den Speicherort von Datacenter GEOS, Rechenzentren und Speicherort Office 365 Kundendaten auf den [Office 365 interaktiven Datencenter-Karten](https://office.com/datamaps) als Referenz für die aktuellen Standard-Stammkunden Daten an Rest-Standorten für neue Mandanten.  Im Microsoft 365 Admin Center können Sie den Speicherort Ihrer Kundendaten über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>Wann kann ich eine Verschiebung beantragen?
   
@@ -72,7 +72,7 @@ Auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md) erfah
   
 ## <a name="how-can-i-request-to-be-moved"></a>Wie kann ich eine Verschiebung beantragen?
   
-Dazu berechtigten Kunden wird in ihrem [Office 365-Verwaltungsportal](https://portal.office.com/) eine entsprechende Seite angezeigt. Anweisungen dazu, wie Sie eine Verschiebung beantragen können, finden Sie auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md). 
+Für berechtigte Kunden wird eine Seite in Ihrem [Microsoft 365 Admin Center](https://admin.microsoft.com/)angezeigt. Anweisungen dazu, wie Sie eine Verschiebung beantragen können, finden Sie auf der Seite [Anfordern der Datenverschiebung](request-your-data-move.md). 
   
 ## <a name="can-i-change-my-selection-after-requesting-a-move"></a>Kann ich meine Auswahl nach der Beantragung einer Verschiebung ändern?
   

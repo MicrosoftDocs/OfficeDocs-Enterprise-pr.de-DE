@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'In diesem Artikel erfahren Sie, welche Tools für die Verwaltung Ihrer Office 365 Benutzer und wie Sie verwenden können, hängt davon ab, wie Sie Benutzeridentitäten verwalten. '
-ms.openlocfilehash: 0cfb1496dd97eb932afc4e90a6d9469289332c2d
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 90e79eaf9cd90a539cf1c454509bff7d659b8b35
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843716"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735783"
 ---
 # <a name="tools-to-manage-office-365-accounts"></a>Tools zum Verwalten von Office 365-Konten
 
-Je nach Konfiguration können Sie Office 365 Benutzer auf verschiedene Arten verwalten. Sie können Benutzer im [Microsoft 365 Admin Center](https://admin.microsoft.com), Windows PowerShell, im lokalen Verzeichnis oder im Azure Active Directory-Verwaltungsportal verwalten. Sobald Sie Office 365 erworben haben, können Admin Center und Windows PowerShell zum Verwalten von Konten verwendet werden. Bei der Verwaltung von Cloud-Identitäten verfügt jede Person in Ihrer Organisation über eine separate Benutzer-ID und ein Kennwort für Office 365. Wenn Sie in Ihre lokale Infrastruktur integrieren möchten und Benutzerkonten mit Office 365 synchronisiert werden sollen, können Sie Azure Active Directory Connect verwenden, um die Synchronisierung von Identitäten bereitzustellen und optional eine Kennwortsynchronisierung oder eine vollständige Funktionalität für einmaliges Anmelden
+Je nach Konfiguration können Sie Office 365 Benutzer auf verschiedene Arten verwalten. Sie können Benutzer im [Microsoft 365 Admin Center](https://admin.microsoft.com), Windows PowerShell, im lokalen Verzeichnis oder im Azure Active Directory-Verwaltungsportal verwalten. Sobald Sie Office 365 erworben haben, können Admin Center und Windows PowerShell zum Verwalten von Konten verwendet werden. Bei der Verwaltung von Cloud-Identitäten verfügt jede Person in Ihrer Organisation über eine separate Benutzer-ID und ein Kennwort für Office 365. Wenn Sie in Ihre lokale Infrastruktur integrieren und Benutzerkonten mit Office 365 synchronisieren möchten, können Sie Azure Active Directory Connect verwenden, um die Synchronisierung von Identitäten zu ermöglichen und optional eine Kennwortsynchronisierung oder eine vollständige einmalige Anmeldungs Funktionalität bereitzustellen.
   
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planen, wo und wie Sie Ihre Benutzerkonten verwalten können
 
@@ -41,7 +41,7 @@ Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmode
     
 - Kennworthash Synchronisierung mit nahtlosem einmaligem Anmelden – die einfachste Möglichkeit zum Aktivieren der Authentifizierung für lokale Verzeichnisobjekte in Azure AD. Mit Password Hash Sync (PHS) synchronisieren Sie Ihre lokalen Active Directory Benutzerkontenobjekte mit Office 365 und verwalten Ihre Benutzer lokal. 
     
-- Pass-Through-Authentifizierung mit nahtlosem einmaligem Anmelden – bietet eine einfache Kennwortüberprüfung für Azure AD Authentifizierungsdienste mit einem Software-Agent, der auf einem oder mehreren lokalen Servern läuft, um die Benutzer direkt mit Ihrem lokalen Active zu validieren. Directory. 
+- Pass-Through-Authentifizierung mit nahtlosem einmaligem Anmelden – bietet eine einfache Kennwortüberprüfung für Azure AD Authentifizierungsdienste mit einem Software-Agent, der auf einem oder mehreren lokalen Servern läuft, um die Benutzer direkt mit Ihrem lokalen Active Directory zu validieren. 
     
 ### <a name="federated-authentication"></a>Verbundauthentifizierung
 
@@ -74,7 +74,7 @@ Bei der Entscheidung, wie Ihre Organisation Konten erstellen und verwalten soll,
     Wenn Sie alle Benutzer über das Admin Center hinzufügen und verwalten möchten, geben Sie den Standort an, und weisen Sie gleichzeitig mit dem Erstellen des Office 365 Kontos Lizenzen zu. Daher ist nicht viel Planung erforderlich.
     
     > [!IMPORTANT]
-    > Das Erstellen von Konten in Office 365 ohne Zuweisen einer Lizenz (beispielsweise zu SharePoint Online) bedeutet, dass der Kontobesitzer das Office 365 Portal anzeigen kann, aber nicht auf alle Dienste im Abonnement des Unternehmens zugreifen kann. Nachdem Sie einen Standort und die Lizenz zugewiesen haben, wird das Konto auf den Dienst oder die Dienste repliziert, die Sie zugewiesen haben. Der Benutzer kann sich bei seinem Konto anmelden und die Ihnen zugewiesenen Dienste verwenden. 
+    > Das Erstellen von Konten in Office 365 ohne Zuweisen einer Lizenz (beispielsweise zu SharePoint Online) bedeutet, dass der Kontobesitzer das Microsoft 365 Admin Center anzeigen kann, aber keinen der Dienste im Abonnement Ihres Unternehmens zugreifen kann. Nachdem Sie einen Standort und die Lizenz zugewiesen haben, wird das Konto auf den Dienst oder die Dienste repliziert, die Sie zugewiesen haben. Der Benutzer kann sich bei seinem Konto anmelden und die Ihnen zugewiesenen Dienste verwenden. 
   
 ## <a name="next-steps"></a>Nächste Schritte
 

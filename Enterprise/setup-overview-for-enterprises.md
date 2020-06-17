@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von Office 365 Enterprise für Ihre Organisation
+title: Bereitstellen von Microsoft 365 Enterprise für Ihre Organisation
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,35 +18,35 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: ee73dafb-be54-492e-bcfd-0fbfb5f65e94
-description: Diese Übersichts Schritte sollen Ihnen helfen, Ihr Netzwerk einzurichten, Ihre Identitäten zu erstellen, Microsoft 365-Apps für Unternehmen bereitzustellen, Ihre Daten zu migrieren und den Personen in Ihrer Organisation bei der Verwendung von Office 365 zu helfen.
-ms.openlocfilehash: 456b080d166578a50b345a047e5a37c839b69e20
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: Diese Übersichts Schritte sollen Ihnen helfen, Ihr Netzwerk einzurichten, Ihre Identitäten zu erstellen, Microsoft 365-Apps für Unternehmen bereitzustellen, Ihre Daten zu migrieren und die Personen in Ihrer Organisation bei der Verwendung von Microsoft 365 zu unterstützen.
+ms.openlocfilehash: 274cd4ae285ae97825b4d46a125cd9eeecf83312
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009280"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735943"
 ---
-# <a name="deploy-office-365-enterprise-for-your-organization"></a>Bereitstellen von Office 365 Enterprise für Ihre Organisation
+# <a name="deploy-microsoft-365-enterprise-for-your-organization"></a>Bereitstellen von Microsoft 365 Enterprise für Ihre Organisation
 
-Sind Sie bereit, Office 365 Enterprise bereitzustellen, in Ihre lokale Infrastruktur zu integrieren und Ihre Mitarbeiter in die Lage zu versetzen, Cloud-basierte Produktivität und Zusammenarbeit zu nutzen?
+Sind Sie bereit, Microsoft 365 Enterprise bereitzustellen, es in Ihre lokale Infrastruktur zu integrieren und Ihre Mitarbeiter in die Lage zu versetzen, die Cloud-basierte Produktivität und Zusammenarbeit zu nutzen?
 
 In diesem Artikel werden zwei Bereitstellungsoptionen beschrieben, unabhängig davon, ob Sie Hilfe benötigen oder diese auf eigene Faust ausführen. In jedem Fall stellt Microsoft einen geführten Pfad für die erfolgreiche Bereitstellung zur Verfügung.
 
-## <a name="guided-office-365-enterprise-setup-process-with-fasttrack"></a>Assistent für Office 365 Enterprise-Setup mit dem kurzschritt
+## <a name="guided-microsoft-365-enterprise-setup-process-with-fasttrack"></a>Assistent für Microsoft 365 Enterprise-Setup mit "kurzschritt"
 
-Der **[kurzOffice 365](https://docs.microsoft.com/fasttrack/O365-fasttrack-benefit-for-office-365)** ist die beste Methode für die Bereitstellung von Office 365. FastTrack führt Sie durch die am häufigsten verwendeten Bereitstellungskonfigurationen und ist in der Lage, im Verlauf dieses Prozesses auftauchende Fragen beantworten. 
+Der Kurzwert **[für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365)** ist die beste Methode für die Bereitstellung von Microsoft 365. FastTrack führt Sie durch die am häufigsten verwendeten Bereitstellungskonfigurationen und ist in der Lage, im Verlauf dieses Prozesses auftauchende Fragen beantworten. 
 
-Um auf eine Reihe von Installationsanleitungen zuzugreifen, melden Sie sich bei Ihrem Office 365 Abonnement an, und wechseln Sie dann zu [Einrichten Office 365](https://aka.ms/o365fasttrack).
+Um auf eine Reihe von Installationsanleitungen zuzugreifen, melden Sie sich bei Ihrem Microsoft 365-Abonnement an, und wechseln Sie dann zu [Setup Anleitung](https://aka.ms/o365fasttrack).
 
 >[!Note]
 >Sie können auch Hilfe von einem [Microsoft-Partner](https://www.microsoft.com/solution-providers/home)erhalten.
 >
 
-## <a name="do-it-yourself-guided-deployment-of-office-365-enterprise"></a>Selbstgesteuerte Bereitstellung von Office 365 Enterprise durch do-it-yourself
+## <a name="do-it-yourself-guided-deployment-of-microsoft-365-enterprise"></a>Selbstgesteuerte Bereitstellung von "Do-it-yourself" von Microsoft 365 Enterprise
 
-Wenn Sie Office 365 Enterprise selbst bereitstellen, müssen Sie detaillierte Untersuchungen durchführen, um die Entwurfsentscheidungen zu treffen, die die Konfiguration von Office 365 Diensten und die Benutzerakzeptanz rationalisieren. Beginnen Sie mit der Planung [hier](get-your-organization-ready-for-office-365.md).
+Wenn Sie Microsoft 365 Enterprise selbst bereitstellen, müssen Sie detaillierte Untersuchungen durchführen, um die Entwurfsentscheidungen zu treffen, die die Konfiguration von Microsoft 365-Diensten und die Einführung von Benutzern rationalisieren. Beginnen Sie mit der Planung [hier](get-your-organization-ready-for-office-365.md).
 
-Wenn Sie Office 365 Enterprise nach Abschluss der Planung selbst bereitstellen möchten, sind dies die empfohlenen Schritte.
+Um Microsoft 365 Enterprise auf eigene Faust nach Abschluss ihrer Planung bereitzustellen, sind dies die empfohlenen Schritte.
 
 1. [Einrichten Ihres Netzwerks](set-up-network-for-office-365.md)
 
@@ -54,7 +54,7 @@ Wenn Sie Office 365 Enterprise nach Abschluss der Planung selbst bereitstellen m
  
 2. [Einrichten Ihrer Identitäten](protect-your-global-administrator-accounts.md)
 
-   Umfasst die Bestimmung eines Identitätsmodells (nur in der Cloud oder Hybrid) sowie die Einrichtung einer Verzeichnissynchronisierung zwischen dem lokalen Active Directory-Domänendienste (AD DS) und dem Office 365 Abonnement für die Hybrid Identität.
+   Umfasst die Bestimmung eines Identitätsmodells (nur in der Cloud oder Hybrid) sowie die Einrichtung einer Verzeichnissynchronisierung zwischen Ihrer lokalen Active Directory-Domänendienste (AD DS) und Ihrem Microsoft 365-Abonnement für die Hybrid Identität.
 
 3. [Implementieren der Sicherheit](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
 
@@ -62,23 +62,21 @@ Wenn Sie Office 365 Enterprise nach Abschluss der Planung selbst bereitstellen m
  
 4. [Bereitstellen der Client Software](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
-   Umfasst die Bereitstellung von Microsoft 365-Apps für Unternehmen (zuvor mit dem Namen Office 365 ProPlus), die in der Cloud aktualisierte und immer aktuelle Version der Office-Suite (Word, Excel, PowerPoint und andere) auf Ihren Geräten. Jede Office 365-Clientlizenz enthält eine Lizenz für Microsoft 365 apps for Enterprise.
+   Umfasst die Bereitstellung von Microsoft 365-Apps für Unternehmen (zuvor mit dem Namen Office 365 ProPlus), die in der Cloud aktualisierte und immer aktuelle Version der Office-Suite (Word, Excel, PowerPoint und andere) auf Ihren Geräten. Jede Microsoft 365-Clientlizenz enthält eine Lizenz für Microsoft 365 apps for Enterprise.
  
 5. [Einrichten der Verwaltung mobiler Geräte](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
 
-   Office 365 Enterprise umfasst Funktionen zur Verwaltung mobiler Geräte, mit denen Sie die mobilen Geräte ihrer Benutzer sichern und verwalten können.
+   Microsoft 365 Enterprise umfasst Funktionen zur Verwaltung mobiler Geräte, mit denen Sie die mobilen Geräte ihrer Benutzer sichern und verwalten können.
  
 6. [Konfigurieren von Diensten und Anwendungen](configure-services-and-applications.md)
 
-   Enthält Informationen zur Migration Ihrer Daten und Links zu Artikeln, die Ihnen den Einstieg in wichtige Office 365 Dienste wie Exchange Online, SharePoint Online und Microsoft Teams erleichtern.
+   Enthält Informationen zur Migration Ihrer Daten und Links zu Artikeln, die Ihnen die ersten Schritte mit wichtigen Microsoft 365-Produktivitäts-apps wie Exchange Online, SharePoint Online und Teams erhalten.
  
 7. [Schulen der Benutzer](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-   Enthält kurze Videos, mit denen Benutzer Office 365 schnell optimal nutzen können.
+   Enthält kurze Videos, mit denen Ihre Benutzer Microsoft 365 schnell optimal nutzen können.
  
 
 >[!Note]
->Diese Schritte gelten auch für Unternehmen und [gemeinnützige](https://go.microsoft.com/fwlink/?LinkId=627221) Organisationen, die mit einer benutzerdefinierten Bereitstellung von Office 365 Enterprise beginnen möchten. 
+>Diese Schritte gelten auch für Unternehmen und [gemeinnützige](https://go.microsoft.com/fwlink/?LinkId=627221) Organisationen, die mit einer benutzerdefinierten Bereitstellung von Microsoft 365 Enterprise beginnen möchten. 
 >
-
-Wenn Sie ein Microsoft 365 Enterprise-Abonnement haben, starten Sie [hier](https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise).

@@ -3,7 +3,7 @@ title: Planen des Upgrades von Office 2007- oder 2010 -Servern und -Clients
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/14/2020
+ms.date: 06/15/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -15,24 +15,44 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Wenn Sie Office 2007 oder Office 2010 verwenden, ist es an der Zeit, Ihr Upgrade zu planen. Halten Sie nicht an veralteten und nicht unterstützten Apps und Servern fest. Verwenden Sie diese Ressourcen für Ihre ersten Schritte bei der Planung.
-ms.openlocfilehash: 407f3d9570916ab4373dbb4e34f4cb6e57ebc7f7
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 83881977bdd3e42be47f7a9f08fdaff84742cf55
+ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009480"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735733"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Planen des Upgrades von Office 2007- oder Office 2010-Servern und -Clients
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
-Wenn Ihre Organisation ältere Versionen von Office-Produkten und -Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung Ihres Upgrades zu beginnen. Office 2007-Produkte und -Dienste haben das [Ende des Supports](upgrade-from-office-2007-servers-and-products.md) erreicht. Office 2010 und Exchange 2010 werden am **13. Oktober 2020**ihr Ende der Unterstützung erreichen. SharePoint 2010 und Project Server 2010 werden am **13. April 2021**ihr Ende der Unterstützung erreichen. Verwenden Sie die Ressourcen in diesem Abschnitt für Ihre ersten Schritte.
+Wenn Ihre Organisation ältere Versionen von Office-Produkten und -Servern verwendet, ist dies ein guter Zeitpunkt, um mit der Planung Ihres Upgrades zu beginnen. Office 2007-Produkte und -Dienste haben das [Ende des Supports](upgrade-from-office-2007-servers-and-products.md) erreicht. 
+
+- Office 2010 und Exchange 2010 werden am **13. Oktober 2020**ihr Ende der Unterstützung erreichen. 
+- SharePoint 2010 und Project Server 2010 werden am **13. April 2021**ihr Ende der Unterstützung erreichen. 
+
+Verwenden Sie die Ressourcen in diesem Artikel, um loszulegen.
 
 Weitere Informationen finden Sie unter [Upgrade von Office 2010-Servern und -Clients](upgrade-from-office-2010-servers-and-products.md).
 
+## <a name="what-is-microsoft-365"></a>Was ist Microsoft 365?
+
+[Microsoft 365](https://www.microsoft.com/microsoft-365) ist die Kombination aus innovativen Office-Apps, intelligenten Cloud-Diensten und Sicherheitseinstellungen von Weltklasse, die Ihnen dabei helfen sollen, mehr zu erreichen.
+
+Microsoft 365 umfasst die Lizenzen und Funktionen, mit denen Sie sicherstellen können, dass Ihre Organisation mit dem neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte – einschließlich Windows, IOS und Android – registriert und mit Richtlinien gesichert werden, die Authentifizierung und Datenschutz erfordern. Darüber hinaus wird Windows 10 und Ihre Microsoft 365 apps for Enterprise (zuvor Office 365 ProPlus bezeichnet)-Client Software fortlaufend aktualisiert, um die neuesten Features und Sicherheitsupdates einzuschließen.
+  
+Microsoft 365 bietet die Möglichkeit für den digitalen Wandel Ihres Unternehmens – mit ständig verbesserten Geräten und Produktivitätsumgebungen, die von der Microsoft Cloud bereitgestellt und gesichert werden.
+  
+|**Ressource**|**Beschreibung**|
+|:-----|:-----|
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Hier finden Sie Informieren zu den unterschiedlichen Versionen von Microsoft 365.  <br/> |
+|[Microsoft 365 Business-Dokumentation](https://docs.microsoft.com/microsoft-365/business/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für kleine und mittelständische Unternehmen.  <br/> |
+|[Microsoft 365 Education-Dokumentation](https://docs.microsoft.com/microsoft-365/education/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Bildungseinrichtungen.  <br/> |
+|[Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Unternehmen.  <br/> |
+
 ## <a name="what-happens-if-i-dont-upgrade"></a>Was geschieht, wenn ich kein Upgrade durchführe?
 
-Sie müssen nicht unbedingt zum jetzigen Zeitpunkt ein Upgrade durchführen. Ihre lokalen Server und Anwendungen können auch weiterhin ausgeführt werden. Wenn Sie jedoch keine Sicherheitsupdates oder Supportoptionen mehr erhalten, sind Sie oder Ihre Organisation möglicherweise anfällig für Sicherheitsrisiken. Es wird dringend empfohlen, das Upgrade so bald wie möglich zu planen – ganz gleich, ob Sie auf sich Office 365 oder neuere Versionen Ihrer lokalen Server und Anwendungen aktualisieren.
+Sie müssen nicht unbedingt zum jetzigen Zeitpunkt ein Upgrade durchführen. Ihre lokalen Server und Anwendungen können auch weiterhin ausgeführt werden. Wenn Sie jedoch keine Sicherheitsupdates oder Supportoptionen mehr erhalten, sind Sie oder Ihre Organisation möglicherweise anfällig für Sicherheitsrisiken. Es wird dringend empfohlen, das Upgrade so schnell wie möglich zu planen, sei es für Microsoft 365 oder für neuere Versionen Ihrer lokalen Server und Anwendungen.
 
 ## <a name="what-upgrade-options-are-available"></a>Welche Upgradeoptionen sind verfügbar?      
 
@@ -50,19 +70,19 @@ Organisationen müssen mehrere Optionen berücksichtigen:
     |[Project Server 2007](project-server-2007-end-of-support.md) |[Project Server 2010](project-server-2010-end-of-support.md) |
     |[PerformancePoint Server 2007](pps-2007-end-of-support.md) | |
  
-- **Implementieren Sie eine Hybridlösung mit Office 365 oder Microsoft 365.** Bei Hybridlösungen werden sowohl Ihre lokalen Server und Anwendungen als auch deren Cloudentsprechungen verwendet. Wenn Sie phasenweise zur Cloud wechseln oder einige Server und Anwendungen lokal belassen müssen, ist eine Hybridlösung möglicherweise für Ihre Organisation geeignet. Weitere Informationen finden Sie unter [Hybridlösungen für eine Office 365-Cloud – Übersicht](hybrid-cloud-overview.md). 
+- **Implementieren Sie eine Hybridlösung mit Microsoft 365 oder Office 365.** Bei Hybridlösungen werden sowohl Ihre lokalen Server und Anwendungen als auch deren Cloudentsprechungen verwendet. Wenn Sie phasenweise zur Cloud wechseln oder einige Server und Anwendungen lokal belassen müssen, ist eine Hybridlösung möglicherweise für Ihre Organisation geeignet. Details finden Sie unter Übersicht über die [Microsoft 365 Hybrid Cloud Solutions](hybrid-cloud-overview.md) . 
     
-- **Wechseln Sie in die Cloud mit Office 365 oder Microsoft 365.** Für viele Kunden ist der Wechsel in die Cloud eine effiziente und kostengünstige Lösung. Indem Sie vollständig in die Cloud umsteigen, werden Konfiguration und Verwaltung einfacher, und Sie erhalten nahtlos alle neuesten Features und Sicherheitsupdates. Weitere Informationen hierzu finden Sie unter [Was ist Microsoft 365?](#what-is-microsoft-365) in diesem Artikel.
+- **Navigieren Sie mit Microsoft 365 oder Office 365 in die Cloud.** Für viele Kunden ist der Wechsel in die Cloud eine effiziente und kostengünstige Lösung. Indem Sie vollständig in die Cloud umsteigen, werden Konfiguration und Verwaltung einfacher, und Sie erhalten nahtlos alle neuesten Features und Sicherheitsupdates. Weitere Informationen hierzu finden Sie unter [Was ist Microsoft 365?](#what-is-microsoft-365) in diesem Artikel.
     
 ### <a name="help-is-available-for-your-organization"></a>Verfügbare Hilfe für Ihre Organisation
 
 Wenn Sie Hilfe bei der Planung Ihres Upgrades benötigen, sollten Sie eine oder mehrere der folgenden Optionen in Betracht ziehen:
 
-- Arbeiten Sie mit einem Partner oder Spezialisten für Volumenlizenzen zusammen. [Suchen nach Ihrem Office 365-Partner oder -Händler](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx). 
+- Arbeiten Sie mit einem Partner oder Spezialisten für Volumenlizenzen zusammen. [Suchen Sie Ihren Microsoft 365-Partner oder-Händler](https://support.office.com/article/b6c18a9b-2aed-4c84-9d75-af709160258c.aspx). 
 
-- Wenn Ihre Organisation eine bestimmte Anzahl von Office 365-Lizenzen erwirbt, kann Ihnen unser FastTrack-Team beim Setupprozess helfen. Weitere Informationen hierzu finden Sie unter [FastTrack für Office 365](https://www.microsoft.com/fasttrack/microsoft-365/office-365).
+- Wenn Ihre Organisation eine bestimmte Anzahl von Microsoft 365-Lizenzen kauft, kann Ihnen unser Team für die Zusammenarbeit beim Setup behilflich sein. Weitere Informationen finden Sie unter schneller [für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
 
-- Wenn Sie Teil einer kleineren Organisation sind, oder wenn Sie es vorziehen, das Office-Upgrade Ihrer Organisation selbst durchzuführen, lesen Sie [Upgrade Ihrer Office 365 for Business-Benutzer auf den neuesten Office-Client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
+- Wenn Sie Teil einer kleineren Organisation sind oder lieber das Office-Upgrade Ihrer Organisation selbst durchführen möchten, lesen Sie [Upgrade Ihrer Microsoft 365 for Business-Benutzer auf den neuesten Office-Client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
 ## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein privater Benutzer. Wie gehe ich jetzt vor?
 
@@ -70,7 +90,7 @@ Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie sich die f
 
 - **Verwenden Sie Office kostenlos in einem Browser.** Sie können Office-Dateien im Browser erstellen, anzeigen und bearbeiten, und von fast jedem Gerät mit Internetzugang auf diese Dateien zugreifen. [Office für das Web](https://products.office.com/office-online/documents-spreadsheets-presentations-office-online) enthält [Word für das Web](https://go.microsoft.com/fwlink/p/?linkid=746664), [Excel für das Web](https://go.microsoft.com/fwlink/p/?linkid=746665), [PowerPoint für das Web](https://go.microsoft.com/fwlink/p/?linkid=746666), [OneNote für das Web](https://go.microsoft.com/fwlink/p/?linkid=746674), [Sway](https://go.microsoft.com/fwlink/p/?linkid=746675), [E-Mail](https://go.microsoft.com/fwlink/p/?linkid=746676), [Kalender](https://go.microsoft.com/fwlink/p/?linkid=746678) und [OneDrive](https://go.microsoft.com/fwlink/p/?linkid=746679). Zum Einstieg besuchen Sie [office.com](https://office.com), und melden Sie sich mit Ihrem [Microsoft-Konto](https://account.microsoft.com/account) an. (Wenn Sie kein Microsoft-Konto besitzen, können Sie unter [office.com](https://office.com) ein Konto erstellen.)
 
-- **Testen Sie Office 365 für die private Nutzung.** Überprüfen Sie die [Anforderungen](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm?rtc=1&activetab=pivot:techspecstab), und wählen Sie dann zwischen [Office 365 Home](https://www.microsoft.com/p/office-365-home/cfq7ttc0k5dm) und [Office 365 Personal](https://www.microsoft.com/p/office-365-personal/cfq7ttc0k5bf) aus. Überzeugen Sie sich mithilfe einer Testversion selbst, wie Sie Office 365 gewinnbringend einsetzen können. Mit Office 365 können Sie OneDrive-Cloudspeicher nutzen, und Sie erhalten jeden Monat ein Guthaben von 60 Minuten für Skype-Anrufe an Handy- und Festnetznummern sowie viele weitere tolle Features. Weitere Informationen finden Sie unter [Optimale Nutzung von Office mit Office 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab%3aprimaryr1).
+- **Testen Sie Microsoft 365 für die Verwendung zu Hause.** Verwenden Sie die [Microsoft 365-Familie](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) für private Haushalte. Starten Sie eine Testversion, und sehen Sie, wie die Microsoft 365-Produktfamilie funktioniert. Mit der Microsoft 365-Familie genießen Sie Cloud-Speicher mit OneDrive.
 
    Mit dem [Ende des Supports für Windows 7 am 14. Januar 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support) werden für die Versionen von Word, Excel, PowerPoint, Outlook, Publisher und Access, die mit Office 365 Home oder Office 365 Personal auf Windows 7-Geräten bereitgestellt werden, zwar weiterhin Sicherheitsupdates aber keine Featureupdates mehr bereitgestellt. Wenn Sie weiterhin Featureupdates für diese Anwendungen erhalten möchten, [aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq).
     
@@ -80,25 +100,10 @@ Wenn Sie Office 2007 oder Office 2010 zu Hause verwenden, sollten Sie sich die f
 
     - Wird auf Ihrem Windows-PC Windows 7, 8 oder 8.1 ausgeführt, und planen Sie derzeit kein Upgrade auf Windows 10, erwägen Sie, Office Home & Student 2016 (oder eine andere Edition von Microsoft Office) von einem autorisierten Händler zu erwerben.
      
-     - Der Support für Windows 7 [endet am 14. Januar 2020](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support). Danach stellt Microsoft keine Sicherheitsupdates und keinen Support mehr bereit. Aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10, um weiter Sicherheits- und Featureupdates sowie durchgängigen Support zu erhalten.
+     - Die Unterstützung für Windows 7 wird [am 14. Januar 2020 beendet](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support), nachdem Microsoft keine Sicherheitsupdates oder-Unterstützung bereitstellen wird. Aktualisieren Sie Ihre Windows 7-Geräte auf Windows 10, um weiter Sicherheits- und Featureupdates sowie durchgängigen Support zu erhalten.
 
 Sie müssen nicht unbedingt zum jetzigen Zeitpunkt ein Upgrade durchführen. Ihre Office-Apps können weiterhin ausgeführt werden. Zeitpläne für die Office-Supporttermine finden Sie [hier](https://go.microsoft.com/fwlink/p/?linkid=2085724). Bei einem Upgrade erhalten Sie jedoch Sicherheitsupdates oder neue und verbesserte Features.
    
-## <a name="what-is-microsoft-365"></a>Was ist Microsoft 365?
-
-[Microsoft 365](https://www.microsoft.com/microsoft-365) ist eine Kombination aus Office 365, Windows 10 und Enterprise Mobility + Security (EMS), für sichere Kreativität und Zusammenarbeit, und bietet eine komplette, intelligente Lösung für sichere Kreativität und Zusammenarbeit. 
-  
-Sie können Ihre Office 2007- oder Office 2010-Server und -Clients zwar zu Office 365 migrieren, Microsoft 365 umfasst aber die erforderlichen Lizenzen und Funktionen, um sicherzustellen, dass Ihre Organisation mit dem neuesten Windows-Betriebssystem arbeitet und dass Ihre Geräte – einschließlich Windows, IOS und Android – registriert und mit Richtlinien gesichert sind, die Authentifizierung und Datenschutz erfordern. Darüber hinaus wird Windows 10 und Ihre Microsoft 365 apps for Enterprise (zuvor Office 365 ProPlus bezeichnet)-Client Software fortlaufend aktualisiert, um die neuesten Features und Sicherheitsupdates einzuschließen.
-  
-Microsoft 365 bietet die Möglichkeit für den digitalen Wandel Ihres Unternehmens – mit ständig verbesserten Geräten und Produktivitätsumgebungen, die von der Microsoft Cloud bereitgestellt und gesichert werden.
-  
-|**Ressource**|**Beschreibung**|
-|:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Hier finden Sie Informieren zu den unterschiedlichen Versionen von Microsoft 365.  <br/> |
-|[Microsoft 365 Business-Dokumentation](https://docs.microsoft.com/microsoft-365/business/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für kleine und mittelständische Unternehmen.  <br/> |
-|[Microsoft 365 Education-Dokumentation](https://docs.microsoft.com/microsoft-365/education/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Bildungseinrichtungen.  <br/> |
-|[Dokumentation zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Unternehmen.  <br/> |
-
 ## <a name="next-step"></a>Nächster Schritt
 
 [Upgrade von Office 2007-Servern und -Clients](upgrade-from-office-2007-servers-and-products.md)
