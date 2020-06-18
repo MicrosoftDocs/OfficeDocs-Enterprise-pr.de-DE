@@ -30,7 +30,7 @@
 ## Microsoft 365-Clientunterstützung
 ### [Zertifikatbasierte Authentifizierung](office-365-client-support-certificate-based-authentication.md)
 ### [Bedingter Zugriff](office-365-client-support-conditional-access.md)
-### [Mobile Anwendungsverwaltung (Mobile Application Management)](https://support.microsoft.com/en-us/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a?ui=en-US&rs=en-US&ad=US)
+### [Mobile Anwendungsverwaltung (Mobile Application Management)](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)
 ### [Moderne Authentifizierung](office-365-client-support-modern-authentication.md)
 ### [Einmaliges Anmelden](office-365-client-support-single-sign-on.md)
 
