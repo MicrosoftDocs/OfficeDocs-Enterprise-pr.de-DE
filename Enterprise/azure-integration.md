@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: a5efce5d-9c9c-4190-b61b-fd273c1d425f
 description: Ihr Microsoft 365-Abonnement enthält ein Abonnement für Azure AD. Integrieren Sie Microsoft 365 mit Azure AD, wenn Sie die Kennwortsynchronisierung oder das einmalige Anmelden mit Ihrer lokalen Umgebung wünschen.
-ms.openlocfilehash: ca38a7a8d5878c6efad228595cf2929650a5c869
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: 40426c20f12cf17955457c38d809926550efa188
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698892"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774840"
 ---
 # <a name="azure-integration-with-microsoft-365"></a>Azure-Integration mit Microsoft 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Microsoft 365 verwendet Azure Active Directory (Azure AD), um Benutzeridentitäten hinter den Kulissen zu verwalten. Ihr Microsoft 365-Abonnement enthält ein kostenloses Abonnement für Azure AD, damit Sie Microsoft 365 mit Azure AD integrieren können, wenn Sie Kennwörter synchronisieren oder einmaliges Anmelden mit Ihrer lokalen Umgebung einrichten möchten. Sie können auch erweiterte Funktionen erwerben, um Ihre Konten besser zu verwalten.
   

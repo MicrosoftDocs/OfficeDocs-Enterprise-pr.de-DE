@@ -19,16 +19,16 @@ search.appverid:
 - PJW120
 ms.assetid: d379018f-72b7-4284-b40a-6c23c8ae38fe
 description: Am 10. Oktober 2017 wurde die Unterstützung für Project Server 2007, Project Portfolio Server und Project 2007 beendet. Verwenden Sie diesen Artikel, um Ihr Upgrade jetzt zu planen.
-ms.openlocfilehash: 4eb8d734f74e2c146da419a55d78d0c8fcce5aab
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 4a2b046ca68de3571cd5be15bce48a6c30b8bf51
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844076"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775074"
 ---
 # <a name="project-server-2007-end-of-support-roadmap"></a>Ende der Unterstützung für Project Server 2007 – Roadmap
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Die Unterstützung für Office 2007 Server und Anwendungen in 2017 wurde beendet, und Sie müssen Pläne für die Migration in Frage stellen. Wenn Sie Project Server 2007 derzeit verwenden, beachten Sie, dass es und diese anderen verwandten Produkte die folgenden End-of-Support-Daten hatten:
   

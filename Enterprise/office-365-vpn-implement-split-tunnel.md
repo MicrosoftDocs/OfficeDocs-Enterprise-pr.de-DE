@@ -3,7 +3,7 @@ title: Implementieren eines geteilten VPN-Tunnels für Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 5/11/2020
+ms.date: 6/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Implementierung von VPN-Split-Tunneling für Office 365
-ms.openlocfilehash: 87d7e86f59a97bf11c053a57aa9acc6d33c03e63
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
-ms.translationtype: HT
+ms.openlocfilehash: c2b0b94a80cadc47f5236cc38e29c12d2a152062
+ms.sourcegitcommit: 5345785dd0c85b28b68752faa7e37a71c270b9b0
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208776"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44742237"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementieren eines geteilten VPN-Tunnels für Office 365
 
@@ -123,8 +123,8 @@ Die aktuellen Optimieren-URLs finden Sie in der folgenden Tabelle. In den meiste
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | Dies ist eine der primären URLs, die Outlook für die Verbindung mit seinem Exchange Online-Server verwendet, und hat ein hohes Volumen an Bandbreitennutzung und Verbindungsanzahl. Für Online-Funktionen wie Sofortsuche, andere Postfachkalender, freies/besetztes Nachschlagen, Verwaltung von Regeln und Warnungen, Exchange-Online-Archiv, E-Mails, die den Postausgang verlassen, ist eine geringe Netzwerklatenzzeit erforderlich. |
 | <https://outlook.office.com> | TCP 443 | Diese URL wird für Outlook Online Web Access verwendet, um eine Verbindung mit dem Exchange Online-Server herzustellen, und ist empfindlich für die Netzwerklatenz. Konnektivität ist insbesondere für das Hoch- und Herunterladen großer Dateien mit SharePoint Online erforderlich. |
-| https://\<tenant\>.sharepoint.com | TCP 443 | Dies ist die primäre URL für SharePoint Online und hat eine hohe Bandbreitennutzung. |
-| https://\<tenant\>-my.sharepoint.com | TCP 443 | Dies ist die primäre URL für OneDrive for Business und hat eine hohe Bandbreitennutzung und möglicherweise eine hohe Anzahl an Verbindungen vom OneDrive for Business Sync-Tool. |
+| https:// \<tenant\> . SharePoint.com | TCP 443 | Dies ist die primäre URL für SharePoint Online und hat eine hohe Bandbreitennutzung. |
+| https:// \<tenant\> -My.SharePoint.com | TCP 443 | Dies ist die primäre URL für OneDrive for Business und hat eine hohe Bandbreitennutzung und möglicherweise eine hohe Anzahl an Verbindungen vom OneDrive for Business Sync-Tool. |
 | Teams Media IPs (keine URL) | UDP 3478, 3479, 3480 und 3481 | Relay Discovery-Zuweisung und Datenverkehr in Echtzeit (3478), Audio (3479), Video (3480) und Video-Bildschirmübertragung (3481). Dies sind die Endpunkte, die für den Medienverkehr (Anrufe, Besprechungen usw.) von Skype for Business und Microsoft Teams verwendet werden. Die meisten Endpunkte werden bereitgestellt, wenn der Microsoft Teams-Client einen Anruf einleitet (und sind in den für den Dienst aufgelisteten erforderlichen IPs enthalten). Für eine optimale Medienqualität ist die Verwendung des UDP-Protokolls erforderlich.   |
 
 In den obigen Beispielen sollte der **Mandant** durch den Namen Ihres Office 365-Mandanten ersetzt werden. Beispielsweise würde **contoso.onmicrosoft.com** _contoso.sharepoint.com_ und _constoso-my.sharepoint.com_ verwenden.
@@ -226,13 +226,8 @@ Einige VPN-Client-Software ermöglicht die Routing-Manipulation auf der Basis vo
 
 In bestimmten Szenarien, die häufig nichts mit der Client-Konfiguration des Teams zu tun haben, durchläuft der Medienverkehr den VPN-Tunnel auch dann noch, wenn die richtigen Routen vorhanden sind. Wenn Sie auf dieses Szenario stoßen, sollte die Verwendung einer Firewall-Regel zur Blockierung der IP-Subnetze oder Ports des Teams für die Verwendung des VPN ausreichen.
 
->[!NOTE]
->Damit dies in 100 % der Szenarien funktioniert, ist es derzeit erforderlich, auch den IP-Bereich **13.107.60.1/32** hinzuzufügen. Dies sollte aufgrund eines Updates im Team-Client, das bis **Juni 2020** veröffentlicht werden soll, nicht sehr bald erforderlich sein. Wir werden diesen Artikel hinsichtlich der Build-Details aktualisieren, sobald diese Informationen verfügbar sind.
-
-<!--
 >[!IMPORTANT]
->To ensure Teams media traffic is routed via the desired method in all VPN scenarios please ensure you are running at least the following client version number or greater, as these versions have improvements in how the client detects available network paths.<br>Windows version number:  **1.3.00.9267**<br>Mac version number: **1.3.00.9221**
--->
+>Stellen Sie sicher, dass die Benutzer Microsoft Teams-Client Version **1.3.00.13565** oder höher ausgeführt werden, um sicherzustellen, dass der Mediendatenverkehr von Teams über die gewünschte Methode in allen VPN-Szenarien weitergeleitet wird. Diese Version enthält Verbesserungen in der Art und Weise, wie der Client verfügbare Netzwerkpfade erkennt.
 
 Der Signalisierungsverkehr erfolgt über HTTPS und ist nicht so latenzempfindlich wie der Medienverkehr und wird in den URL/IP-Daten als **Zulassen** markiert und kann daher auf Wunsch sicher über den VPN-Client geleitet werden.
 
@@ -278,8 +273,9 @@ Dieser Abschnitt enthält Links zu ausführlichen Leitfäden für die Implementi
 - **Cisco AnyConnect**: [Optimieren des AnyConnect-Split-Tunnels für Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
 - **Palo Alto GlobalProtect**: [Optimieren des Office 365-Datenverkehrs über einen geteilten VPN-Tunnel mit Zugriffsausschlussroute](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
 - **F5 Networks BIG-IP APM**: [Optimieren des Office 365-Datenverkehrs beim Remotezugriff über VPNs bei Verwendung von BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix Gateway**: [Optimiere Citrix Gateway VPN Split-Tunnel für Office365](https://docs.citrix.com/de-DE/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Citrix Gateway**: [Optimiere Citrix Gateway VPN Split-Tunnel für Office365](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure**: [VPN-Tunneling: Konfigurieren von geteilten Tunneln zum Ausschließen von Office365-Anwendungen](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Check Points VPN**: [Konfigurieren des geteilten Tunnels für Office 365 und andere SaaS-Anwendungen](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>Häufig gestellte Fragen
 

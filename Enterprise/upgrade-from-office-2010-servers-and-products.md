@@ -23,16 +23,16 @@ ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
 description: Der Support für Office 2010-Server und -Clientanwendungen wird bald eingestellt, und es stehen keine benutzerdefinierten Supportvereinbarungen zur Verfügung. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
-ms.openlocfilehash: 76f61942a4b3f832b75f4a098452748898d2e8c5
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+ms.openlocfilehash: 0bfb3f60583f944971823f4653255cd2531e703a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009520"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44775104"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Ressourcen, die Ihnen beim Upgrade von Office 2010-Servern und -Clients helfen
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Office 2010 und Exchange 2010 werden am **13. Oktober 2020**ihr Ende der Unterstützung erreichen. 
 

@@ -15,12 +15,12 @@ ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
 description: Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf die Endbenutzer. Es sind keine Maßnahmen erforderlich, während Microsoft jeden Dienst und die zugehörigen Daten für Ihren Mandanten in ein neues Geo-Rechenzentrum verschiebt. Der Datentransfer und die Validierung erfolgen im Hintergrund im Voraus mit minimalen Auswirkungen auf die Benutzer.
-ms.openlocfilehash: dc028cb34bca73a08e8c62668c22edfacc7829f6
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: d07c9c62a778ce23d2e088ddeb8b34346911a19a
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711918"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774490"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -68,19 +68,19 @@ Wenn SharePoint Online verschoben wird, werden auch Daten für die folgenden Die
     
 - Project Online
     
-- Project für Office 365
+- Project für Microsoft 365
     
-- Office 365-Videodienste
+- Microsoft 365-Video Dienste
     
 - Office im S-Browser
     
 - Microsoft 365 Apps for Enterprise
     
-- Visio Pro für Office 365
+- Visio pro für Microsoft 365
     
 Nachdem wir die Verschiebung Ihrer SharePoint Online-Daten abgeschlossen haben, werden möglicherweise einige der folgenden Effekte angezeigt.
   
-### <a name="office-365-video-services"></a>Office 365-Videodienste
+### <a name="microsoft-365-video-services"></a>Microsoft 365-Video Dienste
 
 - Die Datenverschiebung für Video dauert länger als die Verschiebungen für den Rest Ihrer Inhalte in SharePoint Online.
     

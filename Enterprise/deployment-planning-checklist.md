@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 5fa4f6ef-35ad-4840-91c1-4834df3df5a0
 description: Diese Prüfliste hilft Ihrer Organisation bei der Planung und Vorbereitung einer Migration zu Microsoft 365.
-ms.openlocfilehash: f958a48b01c3e027804c75bf469276bcfeed1d83
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 3eaca9cdc248dd4c72691fec37eb6e54add52218
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711899"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774820"
 ---
 # <a name="deployment-planning-checklist-for-microsoft-365"></a>Prüfliste für die Bereitstellungsplanung für Microsoft 365
 
@@ -80,5 +80,5 @@ Möchten Sie Hilfe beim Einrichten von Microsoft 365? Sie sollten [die Verwendun
 | Optionales Migrieren von Daten ( [e-Mail](https://go.microsoft.com/fwlink/?LinkId=534823)und [Dateien](https://go.microsoft.com/fwlink/?LinkId=534824)usw.) |||||
 |Überprüfen der Funktionalität und Abschließen der letzten Schritte |||||
 | Migrieren [von DNS-Einstellungen, um auf Microsoft 365 zu deuten](https://go.microsoft.com/fwlink/?LinkId=534835) |||||
-| Teilen Sie Ihren Benutzern mit, wann Sie [mit der Verwendung von Microsoft 365 beginnen](https://support.office.com/article/office-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb?ui=en-US&amp;rs=en-US&amp;ad=US) können. |||||
+| Teilen Sie Ihren Benutzern mit, wann Sie [mit der Verwendung von Microsoft 365 beginnen](https://support.microsoft.com/office/microsoft-365-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) können. |||||
 | Neukonfigurieren von Clientsystemen für die Verbindung mit Microsoft 365 ( [Office](https://go.microsoft.com/fwlink/?LinkId=534836), [Outlook](https://go.microsoft.com/fwlink/?LinkId=534837), [Outlook für Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac), [Mobile Geräte](https://go.microsoft.com/fwlink/?LinkId=534840))  |||||

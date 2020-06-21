@@ -26,22 +26,22 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Benutzer und Gruppen erstellt werden, wenn Ihr Microsoft 365-Abonnement nur eine Cloud-Identität verwendet.
-ms.openlocfilehash: 257634db4ba8cd001ea52004be05f8a8a7d35e87
-ms.sourcegitcommit: ff1d21fe5eb8eba7a65d250aa37aadc8f503a10a
+ms.openlocfilehash: f510d82186e9a44c20bd20f1c7b5a7a44c8b765b
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698922"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774830"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 Cloud-only Identity
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Bei der reinen cloudbasierten Identität werden alle Ihre Benutzer, Gruppen und Kontakte im Azure Active Directory (Azure AD)-Mandanten Ihres Microsoft 365-Abonnements gespeichert. Hier sind die grundlegenden Komponenten der reinen Cloudidentität.
  
 ![Die grundlegenden Komponenten von Cloud-only Identity](./media/about-office-365-identity/cloud-only-identity.png)
 
-Benutzer und ihre Benutzerkonten in Organisationen können auf verschiedene Arten kategorisiert werden. Einige sind beispielsweise Mitarbeiter und haben einen permanenten Status. Bei einigen handelt es sich um Kreditoren, Auftragnehmer oder Partner mit einem temporären Status. Einige sind externe Benutzer, die über keine Benutzerkonten verfügen, aber weiterhin Zugriff auf bestimmte Dienste und Ressourcen für die Unterstützung von Interaktion und Zusammenarbeit erhalten müssen. Zum Beispiel:
+Benutzer und ihre Benutzerkonten in Organisationen können auf verschiedene Arten kategorisiert werden. Einige sind beispielsweise Mitarbeiter und haben einen permanenten Status. Bei einigen handelt es sich um Kreditoren, Auftragnehmer oder Partner mit einem temporären Status. Einige sind externe Benutzer, die über keine Benutzerkonten verfügen, aber weiterhin Zugriff auf bestimmte Dienste und Ressourcen für die Unterstützung von Interaktion und Zusammenarbeit erhalten müssen. Beispiel:
 
 - Mandantenkonten stellen Benutzer in Ihrem Unternehmen dar, die Sie für Clouddienste lizenzieren.
 
@@ -49,7 +49,7 @@ Benutzer und ihre Benutzerkonten in Organisationen können auf verschiedene Arte
 
 Übernehmen Sie eine Bestandsaufnahme der Benutzertypen in Ihrer Organisation. Was sind die Gruppierungen? Beispielsweise können Sie Benutzer nach allgemeinen Funktionen oder Zweck in Ihrer Organisation gruppieren.
 
-Darüber hinaus können einige Clouddienste für Benutzer außerhalb Ihres Unternehmens ohne Benutzerkonten freigegeben werden. Sie müssen diese Benutzergruppen ebenfalls identifizieren.
+Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
 Sie können Gruppen in Azure AD für verschiedene Zwecke verwenden, die die Verwaltung Ihrer Cloud-Umgebung vereinfachen. Beispielsweise können Sie mit Azure Ad Gruppen Folgendes tun:
 

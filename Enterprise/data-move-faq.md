@@ -3,7 +3,7 @@ title: Allgemeine häufig gestellte Fragen zur Datenverschiebung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14
 f1.keywords:
 - NOCSH
 description: Hier erhalten Sie Antworten auf allgemeine Fragen zum Verschieben von Kerndaten in eine neue geografische Datencenter-Region.
-ms.openlocfilehash: 291f5068cc66ae761571992b462995fb6437b872
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 2954d85b0094a8d0f74980fa4e0ee9cac504abbe
+ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735843"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44781040"
 ---
 # <a name="data-move-general-faq"></a>Allgemeine häufig gestellte Fragen zur Datenverschiebung
 
@@ -52,7 +52,7 @@ Neben Exchange Online, SharePoint Online und OneDrive for Business wird Microsof
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen. 
 - Bilder, die in Teams-Chats verwendet wurden. 
 
-Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien werden in OneDrive for Business gespeichert.  Voicemail, Kalender, Chatverlauf und Kontakte werden in Exchange Online gesichert.  In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive for Business bereits vom Kunden in der lokalen geografischen Datencenter-Region verwendet und sind auch Teil des Office 365-Migrationsprogramms für berechtigte Kundenländer.
+Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien werden in OneDrive for Business gespeichert.  Voicemail, Kalender, Chatverlauf und Kontakte werden in Exchange Online gesichert.  In vielen Fällen werden Exchange Online, SharePoint Online und OneDrive für Unternehmen bereits vom Kunden im lokalen Rechenzentrum Geo verwendet und sind ebenfalls Teil des Microsoft 365-Migrationsprogramms für berechtigte Kunden Länder.
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>Welche Auswirkungen hat es, wenn sich Dienste an unterschiedlichen geografischen Standorten befinden?
 
@@ -80,11 +80,11 @@ Es ist uns nicht möglich, Sie aus dem Prozess zu entfernen, nachdem Sie Ihre An
   
 ## <a name="what-happens-if-i-do-not-request-a-move-before-the-deadline"></a>Was geschieht, wenn ich nicht vor Ablauf der Frist eine Verschiebung beantrage?
   
-Möglicherweise können wir Anfragen ausnahmsweise annehmen, um Ihrem Mandanten einen festgelegten Termin für die Durchführung der Migration zu erteilen.     Kontaktieren Sie den [Office 365 Support](https://go.microsoft.com/fwlink/p/?LinkID=522459), um die Anfrage zu stellen.
+Möglicherweise können wir Anfragen ausnahmsweise annehmen, um Ihrem Mandanten einen festgelegten Termin für die Durchführung der Migration zu erteilen. Wenden Sie sich   an den [Microsoft 365-Support](https://go.microsoft.com/fwlink/p/?LinkID=522459) , um die Anforderung zu stellen.
 
 ## <a name="what-if-i-want-to-move-my-data-in-order-to-get-better-network-performance"></a>Wie gehe ich vor, wenn ich meine Daten verschieben möchte, um die Netzwerkleistung zu verbessern?
   
-Die physische Nähe zu einem Microsoft 365-Rechenzentrum stellt keine Garantie für eine bessere Netzwerkleistung dar. Es gibt viele Faktoren und Komponenten, die sich auf die Netzwerkleistung zwischen dem Endbenutzer und dem Microsoft 365-Dienst auswirken. Weitere Informationen hierzu und zur Leistungsverbesserung finden Sie unter [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md).
+Die physische Nähe zu einem Microsoft 365-Rechenzentrum stellt keine Garantie für eine bessere Netzwerkleistung dar. Es gibt viele Faktoren und Komponenten, die sich auf die Netzwerkleistung zwischen dem Endbenutzer und dem Microsoft 365-Dienst auswirken. Weitere Informationen zu diesem Thema und zur Leistungsoptimierung finden Sie unter [Netzwerkplanung und Leistungsoptimierung für Microsoft 365](network-planning-and-performance.md).
   
  ## <a name="do-all-the-services-move-their-data-on-the-same-day"></a>Werden die Daten aller Dienste am selben Tag verschoben?
  
@@ -104,11 +104,11 @@ Eine umfassende Liste der Funktionen, die während des Verschiebens von Daten f�
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>Wie kann ich feststellen, ob die Verschiebung abgeschlossen ist?
   
-Sie können im Office 365-Nachrichten Center überprüfen, ob das Verschieben der Daten der einzelnen Dienste abgeschlossen ist. Nachdem die Daten eines jeden Diensts verschoben wurden, wird hier eine Abschlussbenachrichtigung veröffentlicht. Sie werden also drei Benachrichtigungen erhalten: jeweils eine für Exchange Online, SharePoint Online und Skype for Business Online.  Sie können den Speicherort Ihrer ruhenden Kundendaten außerdem im Microsoft 365 Admin Center über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
+Sehen Sie sich das Microsoft 365-Nachrichten Center an, um zu bestätigen, dass die Daten jedes Diensts abgeschlossen sind. Nachdem die Daten eines jeden Diensts verschoben wurden, wird hier eine Abschlussbenachrichtigung veröffentlicht. Sie werden also drei Benachrichtigungen erhalten: jeweils eine für Exchange Online, SharePoint Online und Skype for Business Online.  Sie können den Speicherort Ihrer ruhenden Kundendaten außerdem im Microsoft 365 Admin Center über den Abschnitt „Datenspeicherort“ unter Ihrem Organisationsprofil überprüfen.  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>Ich bin ein Microsoft 365-Kunde in einem der neuen Datencenter-GEOSS, aber als ich mich angemeldet habe, habe ich ein anderes Land ausgewählt. Wie kann ich in die neue geografische Datencenter-Region wechseln?
 
-Es ist nicht möglich, das Ihrem Mandanten zugeordnete Registrierungsland zu ändern. Stattdessen müssen Sie einen neuen Office 365-Mandanten mit einem neuen Abonnement erstellen, und Ihre Benutzer und Daten manuell in den neuen Mandanten übertragen.
+Es ist nicht möglich, das Ihrem Mandanten zugeordnete Registrierungsland zu ändern. Stattdessen müssen Sie einen neuen Microsoft 365-Mandanten mit einem neuen Abonnement erstellen und die Benutzer und Daten manuell an den neuen Mandanten verlagern.
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>Was geschieht, wenn wir während des Exchange Online Umzugs eine e-Mail-Datenmigration zu Microsoft 365 durchführen?
 
@@ -126,7 +126,7 @@ Wenn Sie nach dem Bereitstellen der neuen geografischen Datencenter-Region einen
   
 ## <a name="my-customer-data-has-already-been-moved-to-a-new-datacenter-geo-can-i-move-back"></a>Meine Kundendaten wurden bereits in eine neue Datencenter-Region verschoben. Kann ich sie zurückverschieben?
  
-Nein, dies ist nicht möglich. Kundendaten, die an neue geografische Datacenter-Standorte verschoben wurden, können nicht zurückverschoben werden. Kunden jeder geografischen Region erwartet dieselbe Qualität in puncto Service, Leistung und Sicherheitskontrollen wie zuvor.  [Office 365 Multi Geo](https://aka.ms/multi-geo) ist für einige Kunden als Add-on verfügbar und ermöglicht es einem einzelnen Mandanten, mehrere geografische Satelliten-Räume zu erstellen und Benutzerdaten in diese Räume zu übertragen.
+Nein, dies ist nicht möglich. Kundendaten, die an neue geografische Datacenter-Standorte verschoben wurden, können nicht zurückverschoben werden. Kunden jeder geografischen Region erwartet dieselbe Qualität in puncto Service, Leistung und Sicherheitskontrollen wie zuvor.  [Microsoft 365 Multi Geo](https://aka.ms/multi-geo) steht einigen Kunden als Add-on zur Verfügung und ermöglicht einem einzelnen Mandanten das Erstellen von mehreren Satelliten-GEOSS und das Verlegen von Benutzerdaten zu diesen GEOSS mit Daten Wohnsitz Verpflichtungen.
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>Stehen Microsoft 365-Mandanten, die in den neuen Rechenzentren gehostet werden, für Benutzer außerhalb des Landes zur Verfügung?
   
@@ -137,14 +137,14 @@ Ja. Microsoft unterhält ein großes weltweites Netzwerk mit öffentlichen Inter
 Ja, Ihr Mandant ist zur Registrierung berechtigt. Wir werden alle EXO-Postfächer von Ihrer aktuellen geografischen Standardregion in die neue lokale Datencenter-Region verschieben.  In Multi-Geo-Satellitenregionen konfigurierte EXO-Postfächer werden nicht verschoben, um die gewünschte Datenaufbewahrung in Satellitenregionen weiterhin zu respektieren.  
 
 SharePoint Online und OneDrive for Business können nicht im Rahmen des Verschiebungsprogramms in die neue geografische Datencenter-Region migriert werden. Sie können aber OneDrive for Business-Freigaben so konfigurieren, dass sie über das Multi Geo-Programm in eine gewünschte Region übertragen werden.
-  
+
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Verschieben der Kern Daten in das neue Microsoft 365 Datacenter GEOS](moving-data-to-new-datacenter-geos.md)
 
 [Anfordern der Datenverschiebung](request-your-data-move.md)
 
-[Office 365 Multi Geo](https://aka.ms/multi-geo)
+[Microsoft 365 Multi-Geo](https://aka.ms/multi-geo)
 
 [Microsoft 365 Interactive Datacenter-Zuordnung](https://office.com/datamaps)
 

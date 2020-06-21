@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
 description: Hier erfahren Sie, wie Sie das Microsoft 365 IdFix-Tool herunterladen und ausführen, um Ihre Active Directory-Domänendienste (AD DS) vor dem Synchronisieren mit Microsoft 365 zu bereinigen.
-ms.openlocfilehash: dde12d7e16aad8488fe067888eacdf1c80e1a037
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711595"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774860"
 ---
 # <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Herunterladen und Ausführen des Microsoft 365-IdFix-Tools
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 IdFix identifiziert Fehler wie Duplikate und Formatierungsprobleme in Ihrer Active Directory-Domänendienste (AD DS) Domäne vor der Synchronisierung mit Microsoft 365. 
   
@@ -125,8 +125,3 @@ Nachdem Sie IdFix heruntergeladen und extrahiert haben, führen Sie es aus, um n
 - [Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)  
 - [Microsoft 365 IdFix-Transaktionsprotokoll](idfix-transaction-log.md)
     
-## <a name="video-training"></a>Videoschulung
-
-Weitere Informationen finden Sie in der Lektion [Installieren und Verwenden des IdFix-Tools](https://support.office.com/article/install-and-use-the-idfix-tool-4d81d73c-f172-4fd5-8542-f601c0c96aa9?ui=en-US&rs=en-US&ad=US), bereitgestellt von LinkedIn Learning.
-  
-

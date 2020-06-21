@@ -1,7 +1,7 @@
 ---
-title: Office 365-Postfachmigrationen
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365-Postfachmigrationen
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Eine kurze Zusammenfassung der Cmdlets, die für Office 365 Postfachmigrationen verwendet werden.
-ms.openlocfilehash: b3af6d4b392e45a5200917bf5cebf22c601620a2
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Eine kurze Zusammenfassung der Cmdlets, die für Microsoft 365-Postfachmigrationen verwendet werden.
+ms.openlocfilehash: 4c53737f4047df0751c4216b57d772bd6fe8acad
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843606"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774900"
 ---
-# <a name="office-365-mailbox-migrations"></a>Office 365-Postfachmigrationen
+# <a name="microsoft-365-mailbox-migrations"></a>Microsoft 365-Postfachmigrationen
 
 Bei einer Exchange-basierten hybridbereitstellung können Kunden wahlweise lokale Exchange-Postfächer in eine [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) Organisation verschieben oder Exchange Online Postfächer in eine [lokale Exchange-](https://docs.microsoft.com/Exchange/exchange-server) Organisation verschieben. Migrationsbatches werden beim Verschieben von Postfächern zwischen lokalen und Exchange Online Organisationen verwendet.
 

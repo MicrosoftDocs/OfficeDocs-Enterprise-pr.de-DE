@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 ms.assetid: d58b7d45-7947-4193-9456-82ba76f42d89
 description: Enthält ein Beispiel und beschreibt die Benennungskonvention und die Standardprotokoll Ebene des Transaktionsprotokolls von Microsoft 365 IdFix.
-ms.openlocfilehash: a2b887907dd1ad622a9d237cf7200aa6db8a2a8e
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 199d765d640a30fa163f74e6b6029b228b41a63d
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711555"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774510"
 ---
 # <a name="microsoft-365-idfix-transaction-log"></a>Microsoft 365 IdFix-Transaktionsprotokoll
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Enthält ein Beispiel und beschreibt die Benennungskonvention und die Standardprotokoll Ebene des Transaktionsprotokolls von Microsoft 365 IdFix.
   

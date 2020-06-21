@@ -15,12 +15,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
 description: Office für Mac Anwendungen bieten eine native App-Erfahrung auf der macOS-Plattform. Jede APP ist für die Verwendung in einer Vielzahl von Szenarien konzipiert, einschließlich der Status, wenn kein Netzwerkzugriff verfügbar ist. Wenn ein Computer mit einem Netzwerk verbunden ist, stellen die Anwendungen automatisch eine Verbindung mit einer Reihe von webbasierten Diensten her, um eine erweiterte Funktionalität bereitzustellen. In diesem Whitepaper werden die Endpunkte und URLs beschrieben, die von den Anwendungen erreicht werden sollen, und die bereitgestellten Dienste. Diese Informationen sind hilfreich bei der Behandlung von Problemen mit der Netzwerkkonfiguration und beim Festlegen einer Richtlinie für Netzwerkproxy Server. Die Details in diesem Artikel dienen als Kompliment an den Artikel Office 365 URL und Adressbereiche.
-ms.openlocfilehash: 09795ab15ba4a387dc53afea60c2d048d6ca9022
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844546"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774950"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Netzwerkanforderungen in Office für Mac
 
@@ -52,7 +52,7 @@ Die folgenden Netzwerkendpunkte werden verwendet, um das Office für Mac Install
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|```https://go.microsoft.com/fwlink/```  <br/> |St  <br/> |Office 365 Installations Portal Link-Dienst an die neuesten Installationspakete weiterleiten.  <br/> |
+|```https://go.microsoft.com/fwlink/```  <br/> |St  <br/> |Microsoft 365-Installations Portal: Link-Dienst wird an die neuesten Installationspakete weitergeleitet.  <br/> |
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Speicherort der Installationspakete im Inhalts Zustellungs Netzwerk.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |Speicherort der Installationspakete im Inhalts Zustellungs Netzwerk.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |St  <br/> |Endpunkt der Verwaltungssteuerung für Microsoft AutoUpdate  <br/> |
@@ -86,7 +86,7 @@ Die folgenden Netzwerkendpunkte werden beim ersten Start einer Office-App kontak
 |```https://acompli.helpshift.com/```  <br/> |O  <br/> |St  <br/> |In-App-Support Dienst.  <br/> |
 |```https://prod-global-autodetect.acompli.net/```  <br/> |O  <br/> |St  <br/> |E-Mail-Konto Erkennungsdienst.  <br/> |
 |```https://autodiscover-s.outlook.com/```  <br/> |WXPO  <br/> |St  <br/> |Outlook-AutoErmittlung  <br/> |
-|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |St  <br/> |Outlook-Endpunkt für Office 365 Dienst.  <br/> |
+|```https://outlook.office365.com/```  <br/> |WXPO  <br/> |St  <br/> |Outlook-Endpunkt für Microsoft 365-Dienst.  <br/> |
 |```https://r1.res.office365.com/```  <br/> |O  <br/> |St  <br/> |Symbole für Outlook-Add-Ins.  <br/> |
    
 > [!NOTE]
@@ -94,7 +94,7 @@ Die folgenden Netzwerkendpunkte werden beim ersten Start einer Office-App kontak
   
  **Anmeldung**
   
-Die folgenden Netzwerkendpunkte werden kontaktiert, wenn Sie sich bei Cloud-basiertem Speicher anmelden. Abhängig vom Kontotyp werden möglicherweise verschiedene Dienste kontaktiert. Zum Beispiel:
+Die folgenden Netzwerkendpunkte werden kontaktiert, wenn Sie sich bei Cloud-basiertem Speicher anmelden. Abhängig vom Kontotyp werden möglicherweise verschiedene Dienste kontaktiert. Beispiel:
   
 - **MSA: Microsoft-Konto** -wird in der Regel für Consumer-und Einzelhandels Szenarien verwendet 
     
@@ -103,10 +103,10 @@ Die folgenden Netzwerkendpunkte werden kontaktiert, wenn Sie sich bei Cloud-basi
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |```https://login.windows.net/```  <br/> |WXPON  <br/> |St  <br/> |Windows-Autorisierungsdienst  <br/> |
-|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |St  <br/> |Office 365-Anmeldedienst (OrgId)  <br/> |
+|```https://login.microsoftonline.com/```  <br/> |WXPON  <br/> |St  <br/> |Microsoft 365-Anmeldedienst (OrgId)  <br/> |
 |```https://login.live.com/```  <br/> |WXPON  <br/> |St  <br/> |Microsoft-Konto Anmeldedienst (MSA)  <br/> |
 |```https://auth.gfx.ms/```  <br/> |WXPON  <br/> |CS  <br/> |Microsoft Account Login Service Helper (MSA)  <br/> |
-|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Office 365 Anmelde Branding (OrgId)  <br/> |
+|```https://secure.aadcdn.microsoftonline-p.com/```  <br/> |WXPON  <br/> |SS  <br/> |Microsoft 365-Anmelde Branding (OrgId)  <br/> |
 |```https://ocws.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Speicherverzeichnis für Dokumente und Orte  <br/> |
 |```https://roaming.officeapps.live.com/```  <br/> |WXPN  <br/> |CS  <br/> |Zuletzt verwendeter Dokumentdienst (MRU)  <br/> |
    
@@ -115,7 +115,7 @@ Die folgenden Netzwerkendpunkte werden kontaktiert, wenn Sie sich bei Cloud-basi
   
  **Produktaktivierung**
   
-Die folgenden Netzwerkendpunkte gelten für Office 365 Abonnement-und Einzelhandelslizenz Aktivierungen. Dies gilt insbesondere nicht für Volumenlizenz Installationen.
+Die folgenden Netzwerkendpunkte gelten für die Aktivierung von Microsoft 365-Abonnements und Einzelhandelslizenzen. Dies gilt insbesondere nicht für Volumenlizenz Installationen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -123,15 +123,15 @@ Die folgenden Netzwerkendpunkte gelten für Office 365 Abonnement-und Einzelhand
    
  **Neuer Inhalt**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Neuer JSON-Seiteninhalt.  <br/> |
    
- **Recherche**
+ **Forscher**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -139,9 +139,9 @@ Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Statischer Inhalt der Forscher  <br/> |
 |```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Researcher-Inhaltsanbieter  <br/> |
    
- **Intelligentes Nachschlagen**
+ **Intelligente Suche**
   
-Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -153,15 +153,15 @@ Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auc
    
  **PowerPoint-Designer**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint-Designer-Webdienst  <br/> |
    
- **PowerPoint-Schnellstarter**
+ **PowerPoint-Schnellstart**
   
-Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
+Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -169,7 +169,7 @@ Die folgenden Netzwerkendpunkte gelten nur für Office 365-Abonnement.
    
  **Senden eines Lächelns/Stirnrunzeln**
   
-Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -177,7 +177,7 @@ Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auc
    
  **Kontakt Support**
   
-Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +186,7 @@ Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auc
    
  **Als PDF speichern**
   
-Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
+Die folgenden Netzwerkendpunkte gelten sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -194,7 +194,7 @@ Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auc
    
  **Office-Apps (aka-Add-Ins)**
   
-Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen, wenn Office-App-Add-ins vertrauenswürdig sind.
+Die folgenden Netzwerkendpunkte gelten sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen, wenn Office-App-Add-ins vertrauenswürdig sind.
   
 |**URL**|**Apps**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
@@ -224,7 +224,7 @@ Die folgenden Netzwerkendpunkte gelten sowohl für Office 365 Abonnement-als auc
    
  **Sichere Links**
   
-Der folgende Netzwerkendpunkt gilt für alle Office-Anwendungen nur für Office 365 Abonnement.
+Der folgende Netzwerkendpunkt gilt nur für alle Office-Anwendungen für Microsoft 365-Abonnements.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -232,7 +232,7 @@ Der folgende Netzwerkendpunkt gilt für alle Office-Anwendungen nur für Office 
    
  **Absturzbericht Erstellung**
   
-Der folgende Netzwerkendpunkt gilt für alle Office-Anwendungen sowohl für Office 365 Abonnement-als auch für die Retail/Volume-Lizenz Aktivierungen. Wenn ein Prozess unerwartet abstürzt, wird ein Bericht generiert und an den Watson-Dienst gesendet.
+Der folgende Netzwerkendpunkt gilt für alle Office-Anwendungen sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen. Wenn ein Prozess unerwartet abstürzt, wird ein Bericht generiert und an den Watson-Dienst gesendet.
   
 |**URL**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -280,7 +280,7 @@ In regelmäßigen Abständen sendet Office für Mac Telemetrie-Informationen zur
     
 - Die **Verwendung** enthält Informationen zur Verwendung von apps und zu nicht schwerwiegenden Fehlern. Diese Daten werden alle 60 Minuten gesendet. 
     
-Microsoft nimmt Ihre Privatsphäre sehr ernst. Weitere Informationen zur Datensammlungsrichtlinie von Microsoft finden [https://privacy.microsoft.com](https://privacy.microsoft.com)Sie unter. Um zu verhindern, dass Anwendungen "Usage"-Telemetrie senden, kann die **SendAllTelemetryEnabled** -Einstellung angepasst werden. Die Einstellung ist pro Anwendung und kann über macOS-Konfigurationsprofile oder manuell vom Terminal aus festgelegt werden: 
+Microsoft nimmt Ihre Privatsphäre sehr ernst. Weitere Informationen zur Datensammlungsrichtlinie von Microsoft finden Sie unter [https://privacy.microsoft.com](https://privacy.microsoft.com) . Um zu verhindern, dass Anwendungen "Usage"-Telemetrie senden, kann die **SendAllTelemetryEnabled** -Einstellung angepasst werden. Die Einstellung ist pro Anwendung und kann über macOS-Konfigurationsprofile oder manuell vom Terminal aus festgelegt werden: 
   
 ```defaults write com.microsoft.Word SendAllTelemetryEnabled -bool FALSE```
 
@@ -322,7 +322,7 @@ Wenn Ihre Organisation Anforderungen an URLs über eine Firewall oder einen Prox
 Wenn Ihr Proxyserverauthentifizierung erfordert, wird eine 407-Antwort an den Client zurückgegeben. Um die beste Erfahrung zu erzielen, stellen Sie sicher, dass Sie Office für Mac Builds 15,27 oder höher verwenden, da Sie bestimmte Korrekturen für die Arbeit mit NTLM-und Kerberos-Servern beinhalten.
   
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
-[URLs und IP-Adressbereiche von Office 365](urls-and-ip-address-ranges.md)
+[URLs und IP-Adressbereiche für Office 365](urls-and-ip-address-ranges.md)
 

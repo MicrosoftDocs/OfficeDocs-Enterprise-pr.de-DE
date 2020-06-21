@@ -19,16 +19,16 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 am 13. April 2021. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 8f55b55b84b2bd4d967822dea137a8cea4f40906
-ms.sourcegitcommit: 27a04304475f9c33accd4c0498726f074eef7c48
+ms.openlocfilehash: 906fd4a5189bba29e90f342c1c9199c927210bb2
+ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43532300"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44774450"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Microsoft SharePoint 2010 und SharePoint Server 2010 werden am **13. April 2021**am Ende der Unterstützung erreichen. In diesem Artikel werden die Ressourcen erläutert, die Sie beim Migrieren vorhandener SharePoint Server 2010 Daten zu SharePoint Online in Office 365 oder beim Upgrade Ihrer lokalen SharePoint Server 2010 Umgebung unterstützen.
   
@@ -89,7 +89,7 @@ Beachten Sie die versteckten Kosten, die im Zusammenhang mit der Wartung einer S
 > [!NOTE]
 > SharePoint-Administratoren können [ein Office 365 Abonnement erstellen](https://go.microsoft.com/fwlink/?linkid=843152), eine brandneue SharePoint Online Website einrichten und dann sauber von SharePoint Server 2010 wegschneiden, wobei nur die wichtigsten Dokumente auf die neuen SharePoint Online Websites übermittelt werden. Von dort aus können alle verbleibenden Daten von der SharePoint Server 2010 Website in lokale Archive entwässert werden. 
   
-|**SharePoint Online**|**SharePoint Server lokal**|
+|**SharePoint Online**|**SharePoint Server lokal**|
 |:-----|:-----|
 |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |
 |Geringere Kosten in Fonds (keine hardwarekäufe)  <br/> |Höhere Kosten in Fonds (hardwarekäufe)  <br/> |
@@ -128,7 +128,7 @@ Ab der neuesten Version des lokalen SharePoint-Produkts (SharePoint Server 2019)
   
 |||
 |:-----|:-----|
-||Pfad für serielles Upgrade * * * * **\>** : **\>** SharePoint Server 2010 SharePoint Server 2013 SharePoint Server 2016 |
+||Pfad für serielles Upgrade * * * *: SharePoint Server 2010 **\>** SharePoint Server 2013 **\>** SharePoint Server 2016 |
    
 Wenn Sie den vollständigen Pfad von SharePoint 2010 zu SharePoint Server 2016 ausführen möchten, dauert dies Zeit und wird geplant. Upgrades beinhalten Kosten in Bezug auf eine aktualisierte Hardware (Beachten Sie, dass auch SQL-Server aktualisiert werden müssen), Software und Verwaltung. Außerdem müssen Anpassungen möglicherweise aktualisiert oder sogar aufgegeben werden. Stellen Sie sicher, dass Sie vor dem Upgrade Ihrer SharePoint Server Farm Notizen zu allen wichtigen Anpassungen sammeln.
   
@@ -162,15 +162,15 @@ Vergleichen Sie zunächst die Hardware-und Softwareanforderungen. Wenn Sie die g
   
 - **Hardware-/Softwareanforderungen für**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)SharePoint Server 2013 | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843204)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843206)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843207)
     
 - **Software Beschränkungen und-Grenzen für**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)SharePoint Server 2013 | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843247)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843248)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843249)
     
 - **Die Übersicht über den Updateprozess für**: 
     
-    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251) | [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)SharePoint Server 2013 | [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
+    [SharePoint Server 2010](https://go.microsoft.com/fwlink/?linkid=843251)  |  [SharePoint Server 2013](https://go.microsoft.com/fwlink/?linkid=843252)  |  [SharePoint Server 2016](https://go.microsoft.com/fwlink/?linkid=843359)
     
 ### <a name="create-a-sharepoint-hybrid-solution-between-sharepoint-online-and-sharepoint-server-on-premises"></a>Erstellen einer SharePoint-Hybridlösung zwischen SharePoint Online und SharePoint Server lokal
 
