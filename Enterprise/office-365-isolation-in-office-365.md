@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Zusammenfassung: eine Erläuterung der Isolierung und Zugriffssteuerung in den verschiedenen Anwendungen von Office 365.'
-ms.openlocfilehash: 2cf98480a2a3f5d202198c9056ecb46d281e1a3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
+ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844406"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892124"
 ---
 # <a name="isolation-and-access-control-in-office-365"></a>Isolierung und Zugriffskontrolle in Office 365
 
@@ -43,7 +43,7 @@ Der Inhalt des Benutzerpostfachs umfasst Folgendes:
 - Kalender-und Frei/Gebucht-Informationen
 - Kontakte
 - Aufgaben
-- Notes
+- Anmerkungen
 - Gruppen
 - Rückschluss Daten
 
@@ -70,3 +70,33 @@ Für jeden Mandanten wird eine eindeutige *Abonnement* -Nr verwendet. Alle Kunde
 SharePoint Online verwendet SQL Server und Azure-Speicher für die Speicherung von Inhaltsmetadaten. Der Partitionsschlüssel für den Inhaltsspeicher lautet *Site* -Nr in SQL. Bei der Ausführung einer SQL-Abfrage verwendet SharePoint Online eine *Website* -Überprüfung, die als Teil einer *Abonnement* -Bestätigung auf Mandantenebene überprüft wurde.
 
 SharePoint Online speichert verschlüsselte Dateiinhalte in Microsoft Azure BLOBs. Jede SharePoint Online Farm verfügt über ein eigenes Microsoft Azure Konto, und alle in Azure gespeicherten BLOBs werden einzeln mit einem Schlüssel verschlüsselt, der im SQL-Inhaltsspeicher gespeichert ist. Der Verschlüsselungsschlüssel, der in Code von der Autorisierungs Schicht geschützt wird und nicht direkt für den Endbenutzer verfügbar gemacht wird. SharePoint Online verfügt über eine Echtzeitüberwachung, um zu erkennen, wann eine HTTP-Anforderung Daten für mehr als einen Mandanten liest oder schreibt. Die Anforderungs-ID- *Abonnement* -ID wird anhand der *Abonnement* -ID der aufgerufenen Ressource nachverfolgt. Anforderungen für den Zugriff auf Ressourcen von mehr als einem Mandanten sollten niemals durch Endbenutzer geschehen. Dienstanforderungen in einer Umgebung mit mehreren Mandanten sind die einzige Ausnahme. Der Suchcrawler zieht beispielsweise Inhaltsänderungen für eine gesamte Datenbank gleichzeitig durch. Dies umfasst normalerweise das Abfragen von Websites von mehr als einem Mandanten in einer einzelnen Dienstanforderung, was aus Effizienzgründen geschieht.
+
+## <a name="teams"></a>Teams
+
+Ihre Teams-Daten werden je nach Inhaltstyp unterschiedlich gespeichert. 
+
+Eine ausführliche Erläuterung finden Sie unter [Ignite Breakout Session on Microsoft Teams Architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) .
+
+### <a name="core-teams-customer-data"></a>Kern Teams Kundendaten
+
+Wenn Ihr Mandant in Australien, Kanada, der Europäischen Union, Frankreich, Deutschland, Indien, Japan, Südafrika, Südkorea, der Schweiz (einschließlich Liechtenstein), den Vereinigten Arabischen Emiraten, dem Vereinigten Königreich oder den Vereinigten Staaten bereitgestellt wird, speichert Microsoft die folgenden Kundendaten in Ruhe nur an diesem Speicherort:
+
+- Teams Chats, Team-und Kanal Unterhaltungen, Bilder, Voicemail-Nachrichten und Kontakte.
+- SharePoint Online-Websiteinhalt und die auf der Website gespeicherten Dateien.
+- Dateien, die in OneDrive für Arbeit oder Schule hochgeladen wurden.
+
+#### <a name="chat-channel-messages-team-structure"></a>Chat, Kanal Nachrichten, Teamstruktur
+
+Jedes Team in Teams wird von einer Microsoft 365-Gruppe und Ihrer SharePoint-Website und Ihrem Exchange-Postfach unterstützt. Private Chats (einschließlich Gruppenchats), Nachrichten, die im Rahmen einer Unterhaltung in einem Kanal gesendet werden, und die Struktur von Teams und Kanälen werden in einem in Azure ausgeführten Chatdienst gespeichert. Die Daten werden auch in einem verborgenen Ordner in den Benutzer-und Gruppen Postfächern gespeichert, um Funktionen zum Schutz von Informationen zu aktivieren.
+
+#### <a name="voicemail-and-contacts"></a>Voicemail und Kontakte
+
+Voicemails werden in Exchange gespeichert. Kontakte werden im Exchange-basierten Cloud-Datenspeicher gespeichert. Exchange und der Exchange-basierte Cloud Store bieten bereits Daten in jedem der weltweiten Rechenzentren GEOSS. Für alle Teams werden Voicemail und Kontakte in-Country für Australien, Kanada, Frankreich, Deutschland, Indien, Japan, die Vereinigten Arabischen Emirate, das Vereinigte Königreich, Südafrika, Südkorea, die Schweiz (einschließlich Liechtenstein) und die Vereinigten Staaten gespeichert. Für alle anderen Länder werden Dateien basierend auf der Mandanten Affinität im Standort USA, Europa oder im asiatisch-pazifischen Raum gespeichert.
+
+#### <a name="images-and-media"></a>Bilder und Medien
+
+In Chats verwendete Medien (mit Ausnahme von Giphy-GIFs, bei denen es sich nicht um einen Verweis Link zur ursprünglichen Giphy-Dienst-URL handelt, Giphy ist ein nicht von Microsoft stammender Dienst), wird in einem Azure-basierten Mediendienst gespeichert, der an denselben Stellen wie der Chatdienst bereitgestellt wird.
+
+#### <a name="files"></a>Dateien
+
+Dateien (einschließlich OneNote und wiki), die jemand in einem Kanal freigibt, werden auf der SharePoint-Website des Teams gespeichert. In einem privaten Chat oder einem Chat während einer Besprechung oder eines Anrufs freigegebene Dateien werden hochgeladen und im OneDrive for Work-oder School-Konto des Benutzers gespeichert, der die Datei freigibt. Exchange, SharePoint und OneDrive bieten bereits Daten in jedem der weltweiten Rechenzentren in GEOS. Für vorhandene Kunden sind also alle Dateien, OneNote-Notizbücher, wiki-Inhalte von Microsoft Teams und Postfächer, die Teil der Teams-Erfahrung sind, bereits basierend auf Ihrer Mandanten Affinität am Speicherort gespeichert. Dateien werden in-Country für Australien, Kanada, Frankreich, Deutschland, Indien, Japan, die Vereinigten Arabischen Emirate, das Vereinigte Königreich, Südafrika, Südkorea und die Schweiz (einschließlich Liechtenstein) gespeichert. Für alle anderen Länder werden Dateien basierend auf der Mandanten Affinität im Standort USA, Europa oder im asiatisch-pazifischen Raum gespeichert.
