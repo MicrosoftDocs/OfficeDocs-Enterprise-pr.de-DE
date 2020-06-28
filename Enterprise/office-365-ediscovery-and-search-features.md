@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Eine Übersicht über die eDiscovery-Funktion und andere Suchfeatures in Microsoft 365 zur Überwachung der Verwendung und Transparenz.
-ms.openlocfilehash: d628bc9aa3964ffed671035a1f78f61d9632b87e
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: f4c401bf81767eb9111e6e8ca508cc3ee87152db
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774940"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906188"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery-und Suchfeatures (Übersicht) 
 
@@ -35,7 +35,7 @@ Bei der [Inhaltssuche](https://support.office.com/article/Run-a-Content-Search-i
 
 ## <a name="audit-log-search"></a>Überwachungsprotokoll Suche
 
-Zusätzlich zur Nachverfolgung von Änderungen in Ihrer Microsoft 365-Organisation können Sie Überwachungsberichte anzeigen und Überwachungsprotokolle exportieren. Nachdem die Überwachung für einen Microsoft 365-Mandanten aktiviert wurde, werden Benutzer-und Verwaltungsaktivitäten in Ereignisprotokollen aufgezeichnet und durchsuchbar gemacht. Beispielsweise können Sie die postfachüberwachungsprotokollierung zum Nachverfolgen von Aktionen verwenden, die für ein Postfach von anderen Benutzern als dem Postfachbesitzer ausgeführt werden. Compliance Officer können die Such-und Filterfunktionen für bestimmte Benutzeraktivitäten verwenden. Beispielsweise zum Identifizieren von Benutzern, die ein bestimmtes Dokument angezeigt oder heruntergeladen haben, wenn Administratoren Benutzer Verwaltungsaktivitäten ausgeführt haben, oder um Änderungen in der Mandanten Konfiguration in den letzten 90 Tagen anzuzeigen. Suchergebnisse enthalten wertvolle forensische Informationen zu bestimmten Aktivitäten, die von einem Benutzer oder Administrator durchgeführt werden. Eine Beschreibung der in Microsoft 365 angemeldeten Benutzer-und Verwaltungsaktivitäten finden Sie unter [Durchsuchen des Überwachungsprotokolls](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) .
+Zusätzlich zur Nachverfolgung von Änderungen in Ihrer Microsoft 365-Organisation können Sie Überwachungsberichte anzeigen und Überwachungsprotokolle exportieren. Sobald die Überwachung für den Microsoft 365-Mandanten aktiviert ist, werden Benutzer-und Verwaltungsaktivitäten in Ereignisprotokollen aufgezeichnet und durchsuchbar gemacht. Beispielsweise können Sie die postfachüberwachungsprotokollierung zum Nachverfolgen von Aktionen verwenden, die für ein Postfach von anderen Benutzern als dem Postfachbesitzer ausgeführt werden. Compliance Officer können die Such-und Filterfunktionen für bestimmte Benutzeraktivitäten verwenden. Beispielsweise zum Identifizieren von Benutzern, die ein bestimmtes Dokument angezeigt oder heruntergeladen haben, wenn Administratoren Benutzer Verwaltungsaktivitäten ausgeführt haben, oder um Änderungen in der Mandanten Konfiguration in den letzten 90 Tagen anzuzeigen. Suchergebnisse enthalten wertvolle forensische Informationen zu bestimmten Aktivitäten, die von einem Benutzer oder Administrator durchgeführt werden. Eine Beschreibung der in Microsoft 365 angemeldeten Benutzer-und Verwaltungsaktivitäten finden Sie unter [Durchsuchen des Überwachungsprotokolls](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) .
 
 Ereignisse aus SharePoint Online und OneDrive für Unternehmen werden innerhalb von 30 Minuten nach dem Auftreten im Protokoll angezeigt. Ereignisse aus Exchange Online werden innerhalb von 24 Stunden nach dem Auftreten in den Überwachungsprotokollen angezeigt. Anmeldeereignisse aus Azure AD sind innerhalb von Minuten nach dem Auftreten verfügbar, und andere Verzeichnis Ereignisse aus Azure AD sind innerhalb von 24 Stunden nach dem Auftreten verfügbar. Sie können Abzüge in Überwachungsprotokoll-Suchergebnissen zur weiteren Analyse exportieren. Es werden maximal 50.000 Einträge aus der einzelnen Überwachungsprotokoll Suche exportiert. Um weitere Einträge zu exportieren, die diesen Grenzwert haben, reduzieren Sie den Datumsbereich, oder führen Sie mehrere Überwachungsprotokoll Suchvorgänge aus.
 

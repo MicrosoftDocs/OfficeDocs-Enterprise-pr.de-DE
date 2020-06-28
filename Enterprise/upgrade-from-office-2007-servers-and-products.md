@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Der Support endet in Kürze für Office 2007 Server und Clientanwendungen, und es sind keine benutzerdefinierten Support Vereinbarungen verfügbar. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
-ms.openlocfilehash: 8da5cd95b683be40c4efa3137ecfca4d31e11aae
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Die Unterstützung wurde für Office 2007 Server und Clientanwendungen und benutzerdefinierte Support Vereinbarungen nicht verfügbar sind beendet. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
+ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
+ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774560"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44906228"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
 *Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
-Wenn Sie Office 2007-Produkte und-Dienste verwenden, ist die Unterstützung für diese Anwendungen beendet. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in die Microsoft-Cloud zu wechseln, beginnend mit Office 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
+Wenn Sie Office 2007-Produkte und-Dienste verwenden, ist die Unterstützung für diese Anwendungen beendet. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in die Microsoft-Cloud zu wechseln, beginnend mit Microsoft 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
       
 ## <a name="office-2007-planning-roadmaps"></a>Office 2007 Planungs Pläne
   
@@ -57,7 +57,7 @@ Wenn Sie Office 2007 Produkte und Anwendungen zu Hause verwenden, lesen Sie [die
      
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Video: Was ist Office 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Video: Was ist Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft-Lebenszyklusrichtlinie](https://go.microsoft.com/fwlink/?linkid=865200)
 
