@@ -1,7 +1,7 @@
 ---
-title: Office 365 SharePoint Online Datenlöschung
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 SharePoint Online Datenlöschung
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Eine Erklärung zum Löschen von Daten in SharePoint Online.
-ms.openlocfilehash: fbb81d4f2440dc34ec261e943436c656f8266e8f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: f67fcedcb4454b06e47df12338445d07af2aa3e3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41842042"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997815"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>SharePoint Online von Datenlöschung in Office 365
+# <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>SharePoint Online Löschen von Daten in Microsoft 365
 
 SharePoint Online speichert Objekte als abstrahierten Code in Anwendungsdatenbanken. Wenn ein Benutzer eine Datei in SharePoint Online hochlädt, wird diese Datei zerlegt und in Anwendungscode übersetzt und in mehreren Tabellen in mehreren Datenbanken gespeichert. In SharePoint Online werden alle Inhalte, die ein Kunde hoch lädt, in Segmente unterteilt, verschlüsselt (potenziell mit mehreren AES 256-Bit-Schlüsseln) und über das Rechenzentrum verteilt. Spezifische Details zum Segmentierungs-und Verschlüsselungsprozess finden Sie unter [Encryption in the Microsoft Cloud](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview). 
 
@@ -40,6 +40,6 @@ Wenn Sie eine Websitesammlung löschen, löschen Sie auch die Hierarchie der Web
 
 Wenn Sie versehentlich eine Websitesammlung löschen, kann Sie von einem globalen oder SharePoint-Administrator mithilfe des SharePoint admin Centers wiederhergestellt werden.
 
-Gelöschte Websitesammlungen werden für 93 Tage aufbewahrt. Nach 93 Tagen werden Websites und alle Ihre Inhalte und Einstellungen endgültig gelöscht, einschließlich Listen, Bibliotheken, Seiten und Unterwebsites.
+Gelöschte Websitesammlungen werden für 93 Tage aufbewahrt. Nach 93 Tagen werden Websites sowie alle Inhalte und Einstellungen, einschließlich Listen, Bibliotheken, Seiten und Unterwebsites, dauerhaft gelöscht.
 
 Das Löschen von Festplatten erfolgt, wenn ein Benutzer gelöschte Elemente aus dem Papierkorb der Websitesammlung löscht, wenn die Aufbewahrungs-und Sicherungs Zeiträume ablaufen oder wenn ein Administrator eine Websitesammlung mit dem [Cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps)dauerhaft löscht. Wenn ein Benutzer Inhalt aus SharePoint Online löscht (dauerhaft löscht oder löscht), werden auch alle Verschlüsselungsschlüssel für die gelöschten Chunks gelöscht. Die Blöcke auf den Datenträgern, die zuvor die gelöschten Segmente gespeichert haben, werden als nicht verwendet gekennzeichnet und können wieder verwendet werden.

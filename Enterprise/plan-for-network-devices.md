@@ -18,19 +18,17 @@ search.appverid:
 - BCS160
 ms.assetid: 073433ca-3511-4db9-b173-7a2edca57691
 description: 'Zusammenfassung: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.'
-ms.openlocfilehash: 9776611aa64f8783a22252a2c4182e63bda1093a
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: 5015a146f92a32bd0200088517b6673ae00f8f64
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419373"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998634"
 ---
 # <a name="plan-for-network-devices-that-connect-to-office-365-services"></a>Planen von Netzwerkgeräten, die eine Verbindung zu Office 365-Diensten herstellen
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
   
-**Zusammenfassung**: Beschreibung von Überlegungen zu Netzwerkkapazität, WAN-Beschleunigern und Lastenausgleichsgeräten, die zum Herstellen einer Verbindung mit Office 365 verwendet werden.
-
 Einige Netzwerkhardware kann Einschränkungen hinsichtlich der Anzahl gleichzeitiger Sitzungen haben, die unterstützt werden. Für Organisationen mit mehr als 2.000 Benutzern wird empfohlen, dass Sie Ihre Netzwerkgeräte überwachen, um sicherzustellen, dass Sie den zusätzlichen Office 365 Dienst Datenverkehr verarbeiten können. Die SNMP-Überwachungssoftware (Simple Network Management Protocol) kann Ihnen dabei helfen.
 
 ||

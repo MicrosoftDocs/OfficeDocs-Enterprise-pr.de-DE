@@ -19,16 +19,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: Enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
-ms.openlocfilehash: 88dd3e4fca66855e8204b452aea6cfb4c659d201
-ms.sourcegitcommit: bb5b7bd241f58491198de2d74dbdce76f7bb8f62
+ms.openlocfilehash: fbf8046fb5f386dfceb3a59dbc384e578fe3a519
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419383"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998550"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Netzwerk- und Migrationsplanung für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Dieser Artikel enthält Links zu Informationen zur Planung und zum Testen von Netzwerken sowie zur Migration zu Office 365.
   

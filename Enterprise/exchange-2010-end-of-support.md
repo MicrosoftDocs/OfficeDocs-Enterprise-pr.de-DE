@@ -13,16 +13,16 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 nähert sich dem Ende der Unterstützung. Verwenden Sie diese Planungs Roadmap als Leitfaden für die Vorbereitung des Upgrades auf Exchange Online oder eine neuere Version von Exchange Server lokal.
-ms.openlocfilehash: ddf2a099688e55e5e0650a030eb2a33293b21eb2
-ms.sourcegitcommit: cc05697650e0a49d7901d6c9a14753e2f8e79362
+ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42979342"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998043"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 – Roadmap zum Supportende
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Am **13. Oktober 2020**werden Exchange Server 2010 das Ende der Unterstützung erreichen. Wenn Sie die Migration nicht bereits von Exchange 2010 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
 
@@ -82,13 +82,13 @@ Office 365 erhält auch zuerst neue Funktionen und Erfahrungen, und Sie und Ihre
 
 ### <a name="how-should-i-migrate-to-office-365"></a>Wie sollte ich zu Office 365 migrieren?
 
-Je nach Organisation stehen Ihnen einige Optionen zur Verfügung, mit denen Sie Office 365 erreichen können. Bei der Auswahl einer Migrationsoption müssen Sie sich einige Dinge ansehen, beispielsweise die Anzahl der zu verschiebenden Arbeitsplätze oder Postfächer, die Dauer der Migration und ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und der Office 365 während des Betriebs benötigen. die Migration. In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die bestimmen, welche Methode Sie verwenden werden.
+Je nach Organisation stehen Ihnen einige Optionen zur Verfügung, mit denen Sie Office 365 erreichen können. Bei der Auswahl einer Migrationsoption müssen Sie einige Dinge berücksichtigen, beispielsweise die Anzahl der zu verschiebenden Sitze oder Postfächer, die Dauer der Migration und ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und Office 365 während der Migration benötigen. In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die bestimmen, welche Methode Sie verwenden werden.
 
 | **Migrationsoption**     | **Organisationsgröße** | **Duration**        |
 |--------------------------|-----------------------|---------------------|
 | Übernahmemigration        | Weniger als 150 Sitze  | Mindestens eine Woche      |
 | Minimale Hybrid Migration | Weniger als 150 Sitze  | Ein paar Wochen oder weniger |
-| Vollständige Hybrid Migration    | Mehr als 150 Sitze   | Ein paar Wochen oder mehr |
+| Vollständige Hybridmigration    | Mehr als 150 Sitze   | Ein paar Wochen oder mehr |
 
 In den folgenden Abschnitten erhalten Sie einen Überblick über diese Methoden. Auschecken entscheiden Sie sich für [einen Migrationspfad](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) , um die Details der einzelnen Methoden zu erfahren.
 
@@ -146,8 +146,8 @@ Vollständige Hybrid Migrationen eignen sich am besten für Organisationen, die 
 Wenn Sie über eine vollständige Hybrid Migration nachdenken, sollten Sie Folgendes beachten:
 
 - Vollständige Hybrid Migrationen sind nicht für alle Arten von Organisationen geeignet. Aufgrund der Komplexität von vollständigen Hybrid Migrationen sehen Organisationen mit weniger als ein paar hundert Postfächern normalerweise keine Vorteile, die den Aufwand und die Kosten rechtfertigen, die für die Einrichtung eines eingerichtet werden müssen. Wenn dies wie Ihre Organisation klingt, wird dringend empfohlen, stattdessen Cutover oder minimale Hybrid Migrationen zu verwenden.
-- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure Active Directory Connect (AADConnect) zwischen Ihren lokalen Active Directory Servern und Office 365 einrichten;
-- Benutzer können sich bei Ihrem Office 365 Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie bei der Anmeldung beim lokalen Netzwerk verwenden (erfordert Azure Active Directory Connect with Password Synchronization und/oder Active Directory Federation Services);
+- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure einrichten Active Directory (Azure AD) zwischen Ihren lokalen Active Directory Servern und Office 365 herstellen.
+- Benutzer können sich bei Ihrem Office 365 Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie bei der Anmeldung beim lokalen Netzwerk verwenden (erfordert Azure AD Verbindung mit der Kennwortsynchronisierung und/oder Active Directory Verbunddiensten);
 - Sie benötigen eine Office 365 Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
 - Benutzer müssen kein neues Outlook-Profil auf den meisten Ihrer Geräte einrichten (einige ältere Android-Telefone benötigen möglicherweise ein neues Profil) und müssen Ihre e-Mails nicht erneut herunterladen.
 
@@ -164,7 +164,7 @@ Wenn eine vollständige Hybrid Migration für Sie richtig klingt, sehen Sie sich
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Upgrade auf eine neuere Version von Exchange Server lokal
 
-Wir sind zwar der festen Überzeugung, dass Sie durch vollständige Migration auf Office 365 den besten nutzen und die optimale Benutzererfahrung erzielen können, aber wir verstehen auch, dass einige Organisationen Exchange-Server lokal halten müssen. Dies kann an regulatorische Anforderungen liegen, um sicherzustellen, dass Daten nicht in einem Rechenzentrum in einem anderen Land gespeichert werden, oder dass es sich möglicherweise um eindeutige Einstellungen oder Anforderungen handelt, die in der Cloud nicht erfüllt werden können, oder dass Sie einfach Exchange benötigen, um Verwalten von Cloud-Postfächern, da Sie weiterhin Active Directory lokal verwenden. In jedem Fall, für den Sie Exchange lokal auswählen oder halten müssen, sollten Sie sicherstellen, dass Ihre Exchange 2010 Umgebung auf mindestens Exchange 2013 oder Exchange 2016 aktualisiert wird und Exchange 2010 vor dem Ende des Support Datums entfernt wird.
+Wir sind zwar der festen Überzeugung, dass Sie durch vollständige Migration auf Office 365 den besten nutzen und die optimale Benutzererfahrung erzielen können, aber wir verstehen auch, dass einige Organisationen Exchange-Server lokal halten müssen. Dies kann an regulatorische Anforderungen liegen, um sicherzustellen, dass Daten nicht in einem Rechenzentrum in einem anderen Land gespeichert werden, oder dass es sich möglicherweise um eindeutige Einstellungen oder Anforderungen handelt, die in der Cloud nicht erfüllt werden können, oder dass Exchange zum Verwalten von Cloud-Postfächern benötigt wird, da Sie weiterhin Active Directory lokal verwenden. In jedem Fall, für den Sie Exchange lokal auswählen oder halten müssen, sollten Sie sicherstellen, dass Ihre Exchange 2010 Umgebung auf mindestens Exchange 2013 oder Exchange 2016 aktualisiert wird und Exchange 2010 vor dem Ende des Support Datums entfernt wird.
 
 Für eine optimale Benutzerfreundlichkeit wird empfohlen, dass Sie die verbleibende lokale Umgebung auf Exchange 2016 aktualisieren. Sie müssen Exchange Server 2013 nicht installieren, wenn Sie direkt von Exchange Server 2010 zu Exchange Server 2016 gehen möchten.
 
@@ -218,7 +218,7 @@ Sie können die folgenden Ressourcen verwenden, um Sie bei der Migration zu unte
 
 Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und die Cloud für Office 2010-Clients und -Server sowie für Windows 7 finden Sie auf unter dem [Poster zum Supportende](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
 
-[![Abbildung des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
 
 Dieses einseitige Poster veranschaulicht auf einfache Weise, welche verschiedenen Pfade Sie wählen können, um zu verhindern, dass Office 2010-Clients und -Serverprodukte sowie Windows 7 das Ende des Supports erreichen. Bevorzugte Pfade und unterstützte Optionen in Microsoft 365 Enterprise sind hervorgehoben.
 

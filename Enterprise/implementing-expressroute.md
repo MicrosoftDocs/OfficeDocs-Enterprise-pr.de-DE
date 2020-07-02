@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
-description: Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zugreifen können, um eine anschließende Weiterverteilung dieser IP-Präfixe in Ihrem Netzwerk. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
-ms.openlocfilehash: 63d7c887f9900250a81fe1428d8b5b5cd3df9b81
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zur späteren Weiterverteilung dieser IP-Präfixe in Ihr Netzwerk zugegriffen werden können. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
+ms.openlocfilehash: ab40a346ca1b19fcd100f17b934b766b21741010
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840182"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998127"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementieren von ExpressRoute für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
-Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zugreifen können, um eine anschließende Weiterverteilung dieser IP-Präfixe in Ihrem Netzwerk. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
+Express Route für Office 365 stellt einen alternativen Routingpfad zu vielen Office 365 Diensten für Internet zur Verfügung. Die Architektur von Express Route für Office 365 basiert auf der Werbung für öffentliche IP-Präfixe von Office 365 Diensten, die bereits über das Internet auf Ihre bereitgestellten Express Route-Schaltkreise zur späteren Weiterverteilung dieser IP-Präfixe in Ihr Netzwerk zugegriffen werden können. Mit Express Route können Sie mehrere verschiedene Routingpfade über das Internet und über Express Route effektiv für viele Office 365 Dienste aktivieren. Dieser Status des Routings in Ihrem Netzwerk stellt möglicherweise eine wesentliche Änderung der Planung Ihrer internen Netzwerktopologie dar.
   
  **Status:** Complete Guide v2
   
@@ -37,7 +37,7 @@ Sie müssen Ihre Express Route sorgfältig planen, damit Office 365 Implementier
   
 Um eine erfolgreiche Implementierung zu erhalten, müssen Sie Ihre Infrastrukturanforderungen analysieren, detailliertes Netzwerk Assessment und-Entwurf durchgehen, das Rollout sorgfältig planen und Steuern und einen detaillierten Validierungs-und Testplan erstellen. Für eine große verteilte Umgebung ist es nicht ungewöhnlich, dass sich Implementierungen über mehrere Monate erstrecken. Dieses Handbuch soll Ihnen helfen, die Vorausplanung zu planen.
   
-Große erfolgreiche Bereitstellungen benötigen möglicherweise sechs Monate Planungszeit und umfassen häufig Teammitglieder aus vielen Bereichen in der Organisation einschließlich Netzwerk-, Firewall-und Proxy Serveradministratoren, Office 365 Administratoren, Sicherheit, Endbenutzer Unterstützung, Projekt Verwaltungs-und Führungskräfte Sponsoring. Ihre Investition in den Planungsprozess verringert die Wahrscheinlichkeit, dass Sie Bereitstellungsfehler auftreten, was zu Ausfallzeiten oder komplexer und kostspieliger Problembehandlung führt.
+Große erfolgreiche Bereitstellungen können sechs Monate in Planung sein und umfassen häufig Teammitglieder aus vielen Bereichen in der Organisation einschließlich Netzwerk-, Firewall-und Proxy Serveradministratoren, Office 365 Administratoren, Sicherheit, Endbenutzer Unterstützung, Projektmanagement und Sponsoring von Führungskräften für Unternehmen. Ihre Investition in den Planungsprozess verringert die Wahrscheinlichkeit, dass Sie Bereitstellungsfehler auftreten, was zu Ausfallzeiten oder komplexer und kostspieliger Problembehandlung führt.
   
 Es wird erwartet, dass die folgenden Voraussetzungen erfüllt sind, bevor dieser Einführungsleitfaden gestartet wird.
   
@@ -47,7 +47,7 @@ Es wird erwartet, dass die folgenden Voraussetzungen erfüllt sind, bevor dieser
 
 3. Sie haben die [Express Route-Dokumentation](https://azure.microsoft.com/documentation/services/expressroute/) bereits gelesen und verstanden, und Ihr internes Netzwerk kann die Express Route-Voraussetzungen bis Ende erfüllen.
 
-4. Ihr Team hat alle öffentlichen Anleitungen und Dokumentationen unter [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365) [https://aka.ms/ert](https://aka.ms/ert)gelesen und die [Azure Express Route für Office 365-Schulungs](https://channel9.msdn.com/series/aer) Reihe auf Kanal 9 untersucht, um wichtige technische Details zu verstehen, einschließlich:
+4. Ihr Team hat alle öffentlichen Anleitungen und Dokumentationen unter gelesen [https://aka.ms/expressrouteoffice365](https://aka.ms/expressrouteoffice365) [https://aka.ms/ert](https://aka.ms/ert) und die [Azure Express Route für Office 365-Schulungs](https://channel9.msdn.com/series/aer) Reihe auf Kanal 9 untersucht, um wichtige technische Details zu verstehen, einschließlich:
 
       - Die Internet Abhängigkeiten von Saas-Diensten.
 
@@ -85,7 +85,7 @@ So erfassen Sie die Anforderungen Ihrer Organisation:
 ### <a name="catalog-your-outbound-and-inbound-network-traffic"></a>Katalogisieren des ausgehenden und eingehenden Netzwerkdatenverkehrs
 <a name="trafficCatalog"> </a>
 
-Um das Routing und andere Netzwerk Komplexitäten zu minimieren, wird empfohlen, dass Sie Express Route nur für Office 365 für die Netzwerkdatenverkehr verwenden, die aufgrund behördlicher Anforderungen oder als Ergebnis der Netzwerkbewertung über eine dedizierte Verbindung geleitet werden müssen. Darüber hinaus wird empfohlen, den Umfang des Express Route-Routings zu inszenieren und an ausgehenden und eingehenden Netzwerkdatenverkehr als unterschiedliche Phasen des Implementierungsprojekts heranzukommen. Bereitstellen von Express Route für Office 365 nur von Benutzern initiierten ausgehenden Netzwerkdatenverkehr und überlassen von eingehenden Netzwerkdatenverkehr über das Internet kann dazu beitragen, die zunehmende topologische Komplexität und Risiken bei der Einführung zusätzlicher asymmetrischer Elemente zu steuern. Routing Möglichkeiten.
+Um das Routing und andere Netzwerk Komplexitäten zu minimieren, wird empfohlen, dass Sie Express Route nur für Office 365 für die Netzwerkdatenverkehr verwenden, die aufgrund behördlicher Anforderungen oder als Ergebnis der Netzwerkbewertung über eine dedizierte Verbindung geleitet werden müssen. Darüber hinaus wird empfohlen, den Umfang des Express Route-Routings zu inszenieren und an ausgehenden und eingehenden Netzwerkdatenverkehr als unterschiedliche Phasen des Implementierungsprojekts heranzukommen. Bereitstellen von Express Route für Office 365 nur von Benutzern initiierten ausgehenden Netzwerkdatenverkehr und überlassen eingehender Netzwerkdatenverkehr über das Internet kann dazu beitragen, die zunehmende topologische Komplexität und die Risiken bei der Einführung zusätzlicher asymmetrischer Routing Möglichkeiten zu steuern.
   
 Ihr Netzwerkdaten Verkehrs Katalog sollte Auflistungen aller eingehenden und ausgehenden Netzwerkverbindungen enthalten, die Sie zwischen Ihrem lokalen Netzwerk und Microsoft haben.
   
@@ -115,7 +115,7 @@ Im folgenden finden Sie ein Beispiel der erforderlichen Detailebene. In diesem F
 |**Über öffentliche Endpunkte veröffentlichte interne Systeme** <br/> |Exchange Server clientzugriffsrolle (lokal) 192.168.101, 192.168.102, 192.168.103  <br/> |
 |**IP-Werbung des öffentlichen Endpunkts** <br/> |**An Internet**: 5.5.0.0/16  <br/> **An Express Route**: 5.5.5.0/24  <br/> |
 |**Sicherheit/Umkreis Steuerung** <br/> |**Internet Pfad**: DeviceID_002  <br/> **Express Route-Pfad**: DeviceID_003  <br/> |
-|**Hohe Verfügbarkeit** <br/> |Aktiv/aktiv in 2 Geo-redundant  <br/> Express Route Circuits-Chicago und Dallas  <br/> |
+|**Hochverfügbarkeit** <br/> |Aktiv/aktiv in 2 Geo-redundant  <br/> Express Route Circuits-Chicago und Dallas  <br/> |
 |**Pfad Symmetrie-Steuerelement** <br/> |**Methode**: Source NAT  <br/> **Internet Pfad**: Quell-NAT-eingehende Verbindungen zu 192.168.5.5  <br/> |**Express Route Path**: Source NAT Connections to 192.168.1.0 (Chicago) and 192.168.2.0 (Dallas)  <br/> |
 
 Im folgenden finden Sie ein Beispiel für einen Dienst, der nur ausgehenden ist:
@@ -131,7 +131,7 @@ Im folgenden finden Sie ein Beispiel für einen Dienst, der nur ausgehenden ist:
 |**IP-Werbung und verwendete NAT** <br/> |**Internet Pfad/Quell-NAT**: 1.1.1.0/24  <br/> **Express Route Path/Source NAT**: 1.1.2.0/24 (Chicago) und 1.1.3.0/24 (Dallas)  <br/> |
 |**Connectivity-Methode** <br/> |**Internet**: über Layer 7-Proxy (PAC-Datei)  <br/> **Express Route**: Direktes Routing (kein Proxy)  <br/> |
 |**Sicherheit/Umkreis Steuerung** <br/> |**Internet Pfad**: DeviceID_002  <br/> **Express Route-Pfad**: DeviceID_003  <br/> |
-|**Hohe Verfügbarkeit** <br/> |**Internetpfad**: redundantes Internet-Ausstieg  <br/> **Express Route Path**: Active/Active "Hot Potato" Routing Across 2 Geo-redundant Express Route Circuits-Chicago and Dallas  <br/> |
+|**Hochverfügbarkeit** <br/> |**Internetpfad**: redundantes Internet-Ausstieg  <br/> **Express Route Path**: Active/Active "Hot Potato" Routing Across 2 Geo-redundant Express Route Circuits-Chicago and Dallas  <br/> |
 |**Pfad Symmetrie-Steuerelement** <br/> |**Methode**: Quell-NAT für alle Verbindungen  <br/> |
 
 ### <a name="your-network-topology-design-with-regional-connectivity"></a>Ihr Netzwerktopologie-Design mit regionaler Konnektivität
@@ -189,7 +189,7 @@ Oftmals gibt es mehrere Meet-Me-Standorte, die in einer Region mit relativer Nä
 
 |**Geplante Express Route Meet-Me-Standorte in Kalifornien und New York**||
 |:-----|:-----|
-|Ort  <br/> |Anzahl der Personen  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Internet Austritt  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Express Route  <br/> |
+|Speicherort  <br/> |Anzahl der Personen  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Internet Austritt  <br/> |Erwartete Wartezeit für Microsoft-Netzwerk über Express Route  <br/> |
 |München  <br/> |10.000  <br/> |~ 15ms  <br/> |~ 10ms (via Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~ 20ms  <br/> |~ 10ms (über New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~ 15ms  <br/> |~ 40ms (über New York)  <br/> |
@@ -206,7 +206,7 @@ Das erste Diagramm zeigt ein Beispiel für einen Kunden mit zwei physischen Stan
   
 Um dieses Konzept etwas weiter auszubauen, zeigt das zweite Diagramm ein Beispiel für einen multinationalen Kunden mit ähnlichen Informationen und Entscheidungsfindung. Dieser Kunde hat ein kleines Büro in Bangladesch mit nur einem kleinen Team von zehn Personen, das sich auf den Ausbau seiner Präsenz in der Region konzentriert. Es gibt einen Meet-Me-Standort in Chennai und ein Microsoft-Rechenzentrum mit Office 365, die in Chennai gehostet werden, sodass ein Meet-Me-Standort sinnvoll wäre. für zehn Personen sind die Kosten des zusätzlichen Stromkreises jedoch aufwändig. Wenn Sie sich Ihr Netzwerk ansehen, müssen Sie feststellen, ob die Wartezeit beim Senden des Netzwerkdatenverkehrs in Ihrem Netzwerk effektiver ist als die Verwendung des Haupt Kapitals, um einen anderen Express Route-Circuit zu erwerben.
   
-Alternativ können die zehn Personen in Bangladesch eine bessere Leistung erzielen, wenn Ihr Netzwerkdatenverkehr über das Internet an das Microsoft-Netzwerk gesendet wird, als Sie es in Ihrem internen Netzwerk weiterleiteten, wie wir es in den Einführungs Diagrammen gezeigt und wiedergegeben haben. unten.
+Alternativ können die zehn Personen in Bangladesch eine bessere Leistung erzielen, wenn Ihr Netzwerkdatenverkehr über das Internet an das Microsoft-Netzwerk gesendet wird, als Sie es in Ihrem internen Netzwerk weiterleiteten, wie in den einleitenden Diagrammen gezeigt und nachfolgend wiedergegeben.
   
 ![Ausgehende Verbindungen für Regional Diagramm](media/8319943d-08f0-4781-9ef3-d23de2ad4671.png)
   
@@ -241,7 +241,7 @@ Der Implementierungsplan sollte sowohl die technischen Details des Konfigurieren
 
 Erstellen Sie einen Plan für die Bandbreite, die für jede Haupt Office 365 Arbeitsauslastung erforderlich ist. Ermitteln Sie separat Exchange Online-, SharePoint Online-und Skype for Business Online-Bandbreitenanforderungen. Sie können die schätzungs Rechner verwenden, die wir für Exchange Online und Skype for Business als Ausgangspunkt bereitgestellt haben. Es ist jedoch ein Pilot Test mit einem repräsentativen Beispiel für die Benutzerprofile und Speicherorte erforderlich, um die Bandbreitenanforderungen Ihrer Organisation vollständig zu verstehen.
   
-Fügen Sie hinzu, wie Sicherheit bei jedem Internet-und Express Route-Ausgangsstandort zu Ihrem Plan verarbeitet wird, denken Sie daran, dass alle Express Route-Verbindungen zu Office 365 Public Peering verwenden und weiterhin gemäß den Sicherheitsrichtlinien des Unternehmens für die Verbindung mit externen Benutzern gesichert werden müssen. Netzwerke.
+Fügen Sie hinzu, wie Sicherheit bei jedem Internet-und Express Route-Ausgangsstandort zu Ihrem Plan verarbeitet wird, denken Sie daran, dass alle Express Route-Verbindungen zu Office 365 Public Peering verwenden und weiterhin gemäß den Sicherheitsrichtlinien des Unternehmens für die Verbindung mit externen Netzwerken gesichert werden müssen.
   
 Fügen Sie Ihrem Plan Details hinzu, welche Personen von welchen Ausfalltypen betroffen sind und wie diese Personen Ihre Arbeit auf einfachste Weise mit voller Kapazität durchführen können.
   
@@ -285,9 +285,9 @@ Fügen Sie die Änderungen für die ausgehende Konnektivität zum Netzwerktopolo
 ### <a name="design-inbound-service-connectivity"></a>Entwerfen der Konnektivität für eingehende Dienste
 <a name="inbound"> </a>
 
-Die Mehrzahl der Enterprise Office 365-Bereitstellungen übernehmen eine gewisse Form der eingehenden Konnektivität von Office 365 zu lokalen Diensten, beispielsweise für Exchange-, SharePoint-und Skype for Business-Hybrid Szenarien, Postfachmigrationen und Authentifizierung mithilfe von ADFS. Infrastruktur. Wenn Sie einen zusätzlichen Routingpfad zwischen Ihrem lokalen Netzwerk und Microsoft für ausgehende Verbindungen aktivieren, werden diese eingehenden Verbindungen möglicherweise versehentlich durch asymmetrisches Routing beeinträchtigt, auch wenn Sie beabsichtigen, diese Express Route weiterhin zu Verwenden Sie das Internet. Einige Vorsichtsmaßnahmen, die nachfolgend beschrieben werden, werden empfohlen, um sicherzustellen, dass keine Auswirkungen auf Internet basierte eingehende Flüsse von Office 365 auf lokale Systeme haben.
+Die Mehrzahl der Enterprise Office 365-Bereitstellungen übernehmen eine gewisse Form der eingehenden Konnektivität von Office 365 zu lokalen Diensten, beispielsweise für Exchange-, SharePoint-und Skype for Business-Hybrid Szenarien, Postfachmigrationen und Authentifizierung mithilfe der ADFS-Infrastruktur. Wenn Sie einen zusätzlichen Express Route zwischen Ihrem lokalen Netzwerk und Microsoft für ausgehende Verbindungen aktivieren, werden diese eingehenden Verbindungen möglicherweise versehentlich durch asymmetrisches Routing beeinträchtigt, selbst wenn Sie beabsichtigen, dass diese Flüsse weiterhin das Internet nutzen. Einige Vorsichtsmaßnahmen, die nachfolgend beschrieben werden, werden empfohlen, um sicherzustellen, dass keine Auswirkungen auf Internet basierte eingehende Flüsse von Office 365 auf lokale Systeme haben.
   
-Um die Risiken eines asymmetrischen Routings für eingehende Netzwerkdatenverkehr zu minimieren, sollten alle eingehenden Verbindungen die Quell-NAT verwenden, bevor Sie in Segmente Ihres Netzwerks weitergeleitet werden, die über Routing Sichtbarkeit in Express Route verfügen. Wenn die eingehenden Verbindungen in ein Netzwerksegment mit Routing Sichtbarkeit in Express Route ohne Quell-NAT zulässig sind, werden Anforderungen aus Office 365 aus dem Internet eingegeben, aber die Antwort, die auf Office 365 zurückgeht, wird die Express Route bevorzugen. Netzwerkpfad zurück zum Microsoft-Netzwerk, wodurch asymmetrisches Routing verursacht wird.
+Um die Risiken eines asymmetrischen Routings für eingehende Netzwerkdatenverkehr zu minimieren, sollten alle eingehenden Verbindungen die Quell-NAT verwenden, bevor Sie in Segmente Ihres Netzwerks weitergeleitet werden, die über Routing Sichtbarkeit in Express Route verfügen. Wenn die eingehenden Verbindungen in ein Netzwerksegment mit Routing Sichtbarkeit in Express Route ohne Quell-NAT zulässig sind, werden Anforderungen aus Office 365 aus dem Internet eingegeben, aber die Antwort auf Office 365 bevorzugt den Express Route-Netzwerkpfad zurück zum Microsoft-Netzwerk, wodurch ein asymmetrisches Routing entsteht.
   
 Sie können eine der folgenden Implementierungsmuster in Frage stellen, um diese Anforderung zu erfüllen:
   
@@ -401,7 +401,7 @@ Er hilft bei der Durchführung von Routen mit einer zweiten Person. Erklären Si
 
 ![Verwenden von PAC-Dateien mit Express Route](media/7cfa6482-dbae-416a-ae6f-a45e5f4de23b.png)
   
-Wenn Sie einen Proxy Server für den internetgebundenen Datenverkehr verwenden, müssen Sie alle PAC-oder Client Konfigurationsdateien anpassen, um sicherzustellen, dass die Clientcomputer in Ihrem Netzwerk ordnungsgemäß konfiguriert sind, um den Express Route-Datenverkehr zu senden, den Sie ohne Übertragung Office 365 möchten. der Proxy Server und der verbleibende Datenverkehr, einschließlich einiger Office 365 Datenverkehrs, werden an den entsprechenden Proxy gesendet. Lesen Sie unser Leitfaden zum [Verwalten von Office 365 Endpunkten](https://aka.ms/manageo365endpoints) , beispielsweise PAC-Dateien.
+Wenn Sie einen Proxy Server für den internetgebundenen Datenverkehr verwenden, müssen Sie alle PAC-oder Client Konfigurationsdateien anpassen, um sicherzustellen, dass die Clientcomputer in Ihrem Netzwerk ordnungsgemäß konfiguriert sind, um den Express Route-Datenverkehr zu senden, den Sie Office 365 möchten, ohne den Proxy Server zu übertragen, und der verbleibende Datenverkehr, einschließlich Office 365 Datenverkehr, wird an den Lesen Sie unser Leitfaden zum [Verwalten von Office 365 Endpunkten](https://aka.ms/manageo365endpoints) , beispielsweise PAC-Dateien.
   
 > [!NOTE]
 > Die Endpunkte ändern sich häufig, so oft wie wöchentlich. Sie sollten Änderungen nur basierend auf den Diensten und Features vornehmen, die Ihre Organisation angenommen hat, um die Anzahl der Änderungen zu reduzieren, die Sie vornehmen müssen, um auf dem aktuellen Stand zu bleiben. Achten Sie genau auf das **effektive Datum** im RSS-Feed, in dem die Änderungen angekündigt und ein Datensatz allerletzten Änderungen aufbewahrt wird, IP-Adressen, die angekündigt werden, möglicherweise erst nach Erreichen des Gültigkeitsdatums beworben oder aus der Werbung entfernt werden.
@@ -588,14 +588,14 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/impl
   
 [Optimieren Ihres Netzwerks für Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[Express Route und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Anruffluss mit Express Route](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
-[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)

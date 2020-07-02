@@ -1,7 +1,7 @@
 ---
-title: Office 365 Mandanten Isolierung in Office 365 Suche
-ms.author: robmazz
-author: robmazz
+title: Mandantenisolation in der Microsoft 365-Suche
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Zusammenfassung: eine Erläuterung der mandantenisolation in Office 365 Suche.'
-ms.openlocfilehash: 9583b923abdb87140863fad8cfc7ad606df6e979
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Zusammenfassung: eine Erläuterung der mandantenisolation in der Microsoft 365-Suche.'
+ms.openlocfilehash: 2c57b5610fd1a59f2cff2001981e77e354226452
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844416"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998255"
 ---
-# <a name="tenant-isolation-in-office-365-search"></a>Mandantenisolation in der Office 365-Suche
+# <a name="tenant-isolation-in-microsoft-365-search"></a>Mandantenisolation in der Microsoft 365-Suche
 
 Bei der Suche in SharePoint Online wird ein Mandanten Trennungsmodell verwendet, das die Effizienz freigegebener Datenstrukturen mit dem Schutz vor Informationen abgleicht, die zwischen Mandanten auslaufen. Mit diesem Modell verhindern wir, dass die Suchfeatures von:
 
@@ -56,7 +56,7 @@ Das Ausdruckspräfix für Mandanten-ID tritt nur im Volltextindex auf. Feldsuche
 
 Search steuert den Zugriff auf Dokumente über ACLs, die im Suchindex gespeichert sind. Jedes Element wird mit einer Reihe von Ausdrücken in einem speziellen ACL-Feld indiziert. Das ACL-Feld enthält einen Ausdruck pro Gruppe oder Benutzer, der das Dokument anzeigen kann. Jede Abfrage wird mit einer Liste von ACE-Begriffen (Access Control Entry, Zugriffssteuerungseintrag) erweitert, eine für jede Gruppe, zu der der authentifizierte Benutzer gehört.
 
-Beispiel: eine Abfrage wie "<*GUID*>. *foo und Mandanten-* ID: <*GUID*> "wird:" <*GUID*>. *foo und Mandanten-* ID: <*GUID*> *und* (*docACL:*<*ace1*> *oder docACL*: <*ace2*> *oder docACL*: <*ace3*> *...*) "
+Beispiel: eine Abfrage wie "<*GUID*>. *foo und Mandanten-* ID: <*GUID*> "wird:" <*GUID*>. *foo und Mandanten-* ID: <*GUID* >  *und* (*docACL:* < *ace1* >  *oder docACL*: <*ace2* >  *oder docACL*: <*ace3* >  *...*) "
 
 Da Benutzer-und Gruppen-IDs und damit ACEs eindeutig sind, bietet dies ein zusätzliches Sicherheitsniveau zwischen Mandanten für Dokumente, die nur für einige Benutzer sichtbar sind. Das gleiche gilt für den speziellen Ace "jeder außer externen Benutzern", der regulären Benutzern im Mandanten Zugriff gewährt. Da ACEs für "Everyone" jedoch für alle Mandanten gleich sind, hängt die mandantentrennung für öffentliche Dokumente von der Mandanten-ID-Filterung ab. Deny-ACEs werden ebenfalls unterstützt. Die Abfrageerweiterung fügt eine Klausel hinzu, die ein Dokument aus dem Ergebnis entfernt, wenn eine Übereinstimmung mit einem Deny-ACE vorliegt.
 

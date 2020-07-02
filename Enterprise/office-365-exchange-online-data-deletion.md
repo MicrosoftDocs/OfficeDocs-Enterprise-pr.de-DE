@@ -1,7 +1,7 @@
 ---
-title: Office 365 Exchange Online Datenlöschung
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365 Exchange Online Datenlöschung
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Wie weiche und harte Datenlöschungen in Exchange Online verarbeitet werden.
-ms.openlocfilehash: 72db9dbc0559c165296433fca244d660c1a0f692
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843636"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998319"
 ---
-# <a name="exchange-online-data-deletion-in-office-365"></a>Exchange Online von Datenlöschung in Office 365
+# <a name="exchange-online-data-deletion-in-microsoft-365"></a>Exchange Online Löschen von Daten in Microsoft 365
+
 In Exchange Online gibt es zwei Arten von Löschungen: weiche Löschungen und harte Löschungen. Dies gilt sowohl für Postfächer als auch für Elemente in einem Postfach.
 
 ## <a name="soft-deleted-and-hard-deleted-mailboxes"></a>Vorläufig gelöschte und hart gelöschte Postfächer

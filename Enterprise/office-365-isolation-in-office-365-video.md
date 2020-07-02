@@ -1,7 +1,7 @@
 ---
-title: Office 365 Mandanten Isolierung in Office 365 Video
-ms.author: robmazz
-author: robmazz
+title: Mandantenisolation in Office 365 Video
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Zusammenfassung: eine Erläuterung der mandantenisolation in Office 365 Video.'
-ms.openlocfilehash: c7fb97180fbe6c96d2849be7725958a788309558
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d3d7f71260d74d598a8cc72962c2ab1ea1f2e6c3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843656"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998698"
 ---
 # <a name="tenant-isolation-in-office-365-video"></a>Mandantenisolation in Office 365 Video
 
 > [!NOTE]
-> Office 365 Video wird durch Microsoft Stream ersetzt. Weitere Informationen zum neuen Enterprise-Videodienst, der Informationen zur Video Zusammenarbeit hinzufügt und Informationen zu den Übergangsplänen für aktuelle Office 365 Video Kunden enthält, finden Sie unter [migrate to Stream from Office 365 Video](https://docs.microsoft.com/stream/).
+> Office 365 Video wird durch Microsoft Stream ersetzt. Weitere Informationen zum neuen Enterprise-Videodienst, der Informationen zur Video Zusammenarbeit hinzufügt und Informationen zu den Übergangsplänen für aktuelle Microsoft 365-Video Kunden enthält, finden Sie unter [Office 365 Video Transition to Microsoft Stream Overview](https://docs.microsoft.com/stream/migrate-from-office-365).
 
 ## <a name="introduction"></a>Einführung
 

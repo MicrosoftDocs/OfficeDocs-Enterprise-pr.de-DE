@@ -1,7 +1,7 @@
 ---
-title: Datenresilienz in Office 365
-ms.author: robmazz
-author: robmazz
+title: Datenresilienz in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Office 365.
-ms.openlocfilehash: 43eae5db254a0b352f44d60c81767dfa4caa33f3
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Microsoft 365.
+ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843676"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998469"
 ---
-# <a name="data-resiliency-in-office-365"></a>Datenresilienz in Office 365
+# <a name="data-resiliency-in-microsoft-365"></a>Datenresilienz in Microsoft 365
 
 ## <a name="introduction"></a>Einführung
 
@@ -39,9 +39,9 @@ Das Erstellen von Ausfallsicherheit und Wiederherstellung beginnt mit der Annahm
 
 Kunden erwarten heute kontinuierliche Innovationen von Microsoft ohne Kompromisse bei der Qualität, und dies ist einer der Gründe, warum die Dienste und Software von Microsoft mit Flexibilität und Wiederherstellbarkeit entwickelt werden. 
 
-## <a name="office-365-data-resiliency-principles"></a>Office 365 Grundsätze der Datenausfall Sicherheit
+## <a name="microsoft-365-data-resiliency-principles"></a>Microsoft 365-Prinzipien für Datensicherheit
 
-Ausfallsicherheit bezieht sich auf die Möglichkeit, dass ein Cloud-basierter Dienst bestimmten Arten von Fehlern Stand halten kann und dennoch aus Sicht der Kunden voll funktionsfähig bleibt. Datenausfall Sicherheit bedeutet, dass wichtige Kundendaten unabhängig von den auftretenden Fehlern in Office 365 intakt und unberührt bleiben. Zu diesem Zweck wurden Office 365 Dienste um fünf spezifische Ausfall Sicherheitsprinzipien entwickelt:
+Ausfallsicherheit bezieht sich auf die Möglichkeit, dass ein Cloud-basierter Dienst bestimmten Arten von Fehlern Stand halten kann und dennoch aus Sicht der Kunden voll funktionsfähig bleibt. Datenausfall Sicherheit bedeutet, dass wichtige Kundendaten unabhängig von den auftretenden Fehlern in Microsoft 365 intakt bleiben und nicht betroffen sind. Zu diesem Zweck wurden Microsoft 365-Dienste um fünf spezifische Ausfall Sicherheitsprinzipien entwickelt:
 
 - Es gibt wichtige und nicht kritische Daten. Nicht kritische Daten (beispielsweise, ob eine Nachricht gelesen wurde) können in Szenarien mit seltenen Fehlern gelöscht werden. Wichtige Daten (beispielsweise Kundendaten wie e-Mail-Nachrichten) sollten unter extremen Kosten geschützt werden. Als Entwurfsziel sind zugestellte e-Mail-Nachrichten immer kritisch und Dinge wie, ob eine Nachricht gelesen wurde, sind nicht kritisch. 
 - Kopien von Kundendaten müssen in unterschiedliche Fehler Zonen oder so viele fehlerdomänen wie möglich aufgeteilt werden (beispielsweise Rechenzentren, zugänglich für einzelne Anmeldeinformationen (Prozess, Server oder Operator)), um die Ausfall Isolierung bereitzustellen. 
@@ -49,7 +49,7 @@ Ausfallsicherheit bezieht sich auf die Möglichkeit, dass ein Cloud-basierter Di
 - Kundendaten müssen vor Beschädigung geschützt sein. Es muss aktiv gescannt oder überwacht, repariert und wiederhergestellt werden. 
 - Die meisten Datenverluste resultieren aus Kundenaktionen, sodass Kunden sich selbst über eine GUI erholen können, mit der Sie versehentlich gelöschte Elemente wiederherstellen können. 
  
-Durch den Aufbau unserer Cloud-Dienste für diese Prinzipien, gepaart mit robustem testen und Validierung, ist Office 365 in der Lage, die Anforderungen von Kunden zu erfüllen und zu übertreffen und gleichzeitig eine Plattform für kontinuierliche Innovationen und Verbesserungen sicherzustellen. 
+Durch den Aufbau unserer Cloud-Dienste für diese Prinzipien, gepaart mit robustem testen und Validierung, kann Microsoft 365 die Anforderungen von Kunden erfüllen und übertreffen und gleichzeitig eine Plattform für kontinuierliche Innovationen und Verbesserungen sicherstellen. 
 
 ## <a name="related-links"></a>Links zu verwandten Themen
 

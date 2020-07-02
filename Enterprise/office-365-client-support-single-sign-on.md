@@ -1,7 +1,7 @@
 ---
-title: Office 365 Client-App-Unterstützung – einmaliges Anmelden
-ms.author: robmazz
-author: robmazz
+title: Microsoft 365-Client-App-Unterstützung – einmaliges Anmelden
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Office 365 Client-App-Unterstützung für einmaliges Anmelden.
-ms.openlocfilehash: 8d6ba1701d9981bb5833bd6cf6ace641d5a27181
-ms.sourcegitcommit: 576c3dbdef535f952a861197dea5348908da9504
+description: Microsoft 365-Client-App-Unterstützung für einmaliges Anmelden.
+ms.openlocfilehash: beb0ae405b9c365da0faa64e31a36f7b571ce1aa
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44619331"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998513"
 ---
-# <a name="office-365-client-app-support--single-sign-on"></a>Office 365 Client-App-Unterstützung – einmaliges Anmelden
+# <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365-Client-App-Unterstützung – einmaliges Anmelden
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Einmaliges Anmelden (Single Sign-on, SSO) fügt Sicherheit und Bequemlichkeit hinzu, wenn sich Ihre Benutzer bei Anwendungen in Azure Active Directory (Azure AD) anmelden. Bei der einmaligen Anmeldung melden sich Benutzer mit einem Konto einmal an, um auf Domänen verbundene Geräte, Unternehmensressourcen, Software as a Service (SaaS)-Anwendungen und Webanwendungen zuzugreifen.
 
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie [unter Single Sign-on](https://docs.microsoft.c
  - IOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Weitere Informationen zur Plattformunterstützung in Office 365 finden Sie unter [System Requirements for Office 365](https://products.office.com/office-system-requirements).
+Weitere Informationen zur Plattformunterstützung in Microsoft 365 finden Sie unter [System Requirements for Microsoft 365](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-clients"></a>Unterstützte Clients
 

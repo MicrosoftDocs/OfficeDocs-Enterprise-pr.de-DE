@@ -1,7 +1,7 @@
 ---
-title: Office 365 Ausfallsicherheit für Exchange-Daten
-ms.author: robmazz
-author: robmazz
+title: Exchange Online Datenausfall Sicherheit in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Eine Erläuterung der verschiedenen Aspekte der Datenausfall Sicherheit in Exchange Online und Office 365.
-ms.openlocfilehash: 73b217f7b85722bca10cdf1abbe10c3a32922e9f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Eine Erläuterung der verschiedenen Aspekte der Datenausfall Sicherheit in Exchange Online und Microsoft 365.
+ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844476"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998736"
 ---
-# <a name="exchange-online-data-resiliency-in-office-365"></a>Exchange Online von Datenausfall Sicherheit in Office 365
+# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Exchange Online Datenausfall Sicherheit in Microsoft 365
 
 ## <a name="introduction"></a>Einführung
 Es gibt zwei Arten von Beschädigungen, die sich auf eine Exchange-Datenbank auswirken können: physikalische Beschädigungen, die in der Regel durch Hardware (insbesondere Speicherhardware) und logische Beschädigungen verursacht werden, die aufgrund anderer Faktoren auftreten. Im Allgemeinen gibt es zwei Arten von logischen Beschädigungen, die in einer Exchange-Datenbank auftreten können: 
@@ -31,7 +31,7 @@ Es gibt zwei Arten von Beschädigungen, die sich auf eine Exchange-Datenbank aus
 
 Exchange Online führt während der Protokoll Überprüfung und der Protokollwiedergabe mehrere Konsistenzprüfungen für replizierte Protokolldateien durch. Durch diese Konsistenzprüfungen wird verhindert, dass physische Beschädigungen vom System repliziert werden. Beispielsweise gibt es bei der Protokoll Überprüfung eine physische Integritätsprüfung, die die Protokolldatei überprüft und überprüft, ob die in der Protokolldatei aufgezeichnete Prüfsumme mit der im Arbeitsspeicher generierten Prüfsumme übereinstimmt. Darüber hinaus wird der Protokolldateiheader überprüft, um sicherzustellen, dass die im Protokollheader aufgezeichnete Protokolldateisignatur mit der der Protokolldatei übereinstimmt. Während der Protokollwiedergabe wird die Protokolldatei weiter überprüft. Die Datenbankkopfzeile enthält beispielsweise auch die Protokollsignatur, die mit der Signatur der Protokolldatei verglichen wird, um sicherzustellen, dass Sie übereinstimmen. 
 
-Der Schutz vor Beschädigung von Postfachdaten in Exchange Online wird mithilfe von Exchange Native Data Protection erreicht, einer Ausfall Sicherheitsstrategie, die die Replikation auf Anwendungsebene auf mehreren Servern und mehreren Rechenzentren zusammen mit anderen Features, mit denen Daten aufgrund von Beschädigungen oder aus anderen Gründen vor dem Verlust geschützt werden. Diese Features umfassen systemeigene Features, die von Microsoft oder der Exchange Online Anwendung selbst verwaltet werden, beispielsweise:
+Der Schutz vor Beschädigung von Postfachdaten in Exchange Online erfolgt mithilfe von Exchange Native Data Protection, einer Ausfall Sicherheitsstrategie, die die Replikation auf Anwendungsebene auf mehreren Servern und mehreren Rechenzentren zusammen mit anderen Features unterstützt, mit denen Daten aufgrund von Beschädigungen oder aus anderen Gründen vor dem Verlust geschützt werden. Diese Features umfassen systemeigene Features, die von Microsoft oder der Exchange Online Anwendung selbst verwaltet werden, beispielsweise:
 
 - [Daten Verfügbarkeitsgruppen](https://docs.microsoft.com/exchange/back-up-email)
 - Einzel Bit-Korrektur 
@@ -48,11 +48,11 @@ Um weitere Informationen zu den oben aufgeführten systemeigenen Features zu erh
 - [Aufbewahrungszeit für gelöschte Elemente und vorläufig gelöschte Postfächer (beide standardmäßig aktiviert)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
 
 ## <a name="database-availability-groups"></a>Datenbankverfügbarkeitsgruppen 
-Jede Postfachdatenbank in Office 365 wird in einer [Database Availability Group (DAG)](https://docs.microsoft.com/exchange/back-up-email) gehostet und in geografisch getrennte Rechenzentren innerhalb derselben Region repliziert. Die häufigste Konfiguration besteht aus vier Datenbankkopien in vier Rechenzentren; Einige Regionen weisen jedoch weniger Rechenzentren auf (Datenbankenwerden in drei Rechenzentren in Indien und zwei Rechenzentren in Australien und Japan repliziert). In allen Fällen verfügt jede Postfachdatenbank über vier Kopien, die über mehrere Rechenzentren verteilt sind, wodurch sichergestellt ist, dass die Postfachdaten vor Software-, Hardware-und sogar Rechenzentrums Fehlern geschützt sind. 
+Jede Postfachdatenbank in Microsoft 365 wird in einer [Database Availability Group (DAG)](https://docs.microsoft.com/exchange/back-up-email) gehostet und in geografisch getrennte Rechenzentren innerhalb derselben Region repliziert. Die häufigste Konfiguration besteht aus vier Datenbankkopien in vier Rechenzentren; Einige Regionen weisen jedoch weniger Rechenzentren auf (Datenbankenwerden in drei Rechenzentren in Indien und zwei Rechenzentren in Australien und Japan repliziert). In allen Fällen verfügt jede Postfachdatenbank über vier Kopien, die über mehrere Rechenzentren verteilt sind, wodurch sichergestellt ist, dass die Postfachdaten vor Software-, Hardware-und sogar Rechenzentrums Fehlern geschützt sind. 
 
 Aus diesen vier Kopien werden drei als hoch verfügbar konfiguriert. Die vierte Kopie ist als [verzögerte Datenbankkopie](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies)konfiguriert. Die verzögerte Datenbankkopie ist nicht für die Wiederherstellung einzelner Postfächer oder Postfachelemente vorgesehen. Ihr Zweck besteht darin, einen Wiederherstellungsmechanismus für das seltene Ereignis von systemweiten, katastrophalen logischen Beschädigungen bereitzustellen. 
 
-Verzögerte Datenbankkopien in Exchange Online werden mit einem siebentägigen Wiedergabe Verzögerungszeitraum von Protokolldateien konfiguriert. Darüber hinaus ist der Exchange-Wiedergabe Verzögerungs-Manager aktiviert, um die dynamische Protokolldateiwiedergabe für verzögerte Kopien bereitzustellen, damit verzögerte Datenbankkopien die Protokolldatei Vergrößerung selbst reparieren und verwalten können. Obgleich verzögerte Datenbankkopien in Exchange Online verwendet werden, ist es wichtig zu verstehen, dass es sich dabei nicht um eine garantierte Sicherung des Zeitpunktes handelt. Verzögerte Datenbankkopien in Exchange Online weisen einen Verfügbarkeits Schwellenwert auf, der in der Regel um 90% liegt, da der Datenträger mit einer verzögerten Kopie aufgrund eines Datenträgerfehlers verloren geht, wobei die verzögerte Kopie zu einer hoch verfügbaren Kopie (aufgrund der automatischen Abspielung) wird und als die Zeiten, in denen die verzögerte Datenbankkopie die Protokollwiedergabe Warteschlange neu aufbaut. 
+Verzögerte Datenbankkopien in Exchange Online werden mit einem siebentägigen Wiedergabe Verzögerungszeitraum von Protokolldateien konfiguriert. Darüber hinaus ist der Exchange-Wiedergabe Verzögerungs-Manager aktiviert, um die dynamische Protokolldateiwiedergabe für verzögerte Kopien bereitzustellen, damit verzögerte Datenbankkopien die Protokolldatei Vergrößerung selbst reparieren und verwalten können. Obgleich verzögerte Datenbankkopien in Exchange Online verwendet werden, ist es wichtig zu verstehen, dass es sich dabei nicht um eine garantierte Sicherung des Zeitpunktes handelt. Verzögerte Datenbankkopien in Exchange Online weisen einen Verfügbarkeits Schwellenwert auf, der in der Regel um 90% liegt, da der Datenträger mit einer verzögerten Kopie aufgrund eines Datenträgerfehlers verloren geht, die verzögerte Kopie zu einer hoch verfügbaren Kopie wird (aufgrund der automatischen Wiedergabe), sowie die Zeiträume, in denen die verzögerte Datenbankkopie die Protokollwiedergabe Warteschlange neu erstellt. 
 
 ## <a name="transport-resilience"></a>Transport Ausfallsicherheit 
 Exchange Online umfasst zwei Features für die primäre Transport Flexibilität: Shadow-Redundanz und Sicherheitsnetz. Shadow-Redundanz hält eine redundante Kopie einer Nachricht während der Übertragung. Das Sicherheitsnetz speichert eine redundante Kopie einer Nachricht, nachdem die Nachricht erfolgreich zugestellt wurde. 
@@ -78,7 +78,7 @@ Die Wiederherstellung einzelner Seiten, aka *Page Patching*, ist ein automatisch
 Bei Beschädigungen in einer passiven Datenbankkopie, einschließlich einer verzögerten Datenbankkopie, da diese Kopien immer hinter ihrer aktiven Kopie stehen, ist es immer sicher, eine Seite aus der aktiven Kopie in eine passive Kopie zu kopieren. Eine passive Datenbankkopie ist von Natur aus hoch verfügbar, daher wird beim Patchen von Seiten die Protokollwiedergabe angehalten, aber der Protokollkopiervorgang wird fortgesetzt. Die passive Datenbankkopie Ruft eine Kopie der beschädigten Seite aus der aktiven Kopie ab und wartet, bis die Protokolldatei, die die maximal erforderliche Protokoll Generierungs Anforderung erfüllt, kopiert und überprüft wird, und dann die beschädigte Seite Patches. Nachdem die Seite gepatcht wurde, wird die Protokollwiedergabe fortgesetzt. Der Prozess ist für die verzögerte Datenbankkopie identisch, mit dem Unterschied, dass die verzögerte Datenbank zunächst alle Protokolldateien wiedergibt, die zum Erreichen eines patchable-Status erforderlich sind. 
 
 ## <a name="mailbox-replication-service"></a>Postfachreplikationsdienst 
-Das Verschieben von Postfächern ist ein wichtiger Bestandteil der Verwaltung eines umfangreichen e-Mail-Diensts. Es gibt immer aktualisierte Technologien und Hardware-und Versionsupgrades, die sich mit einem robusten, gedrosselten System befassen, mit dem unsere Techniker diese Aufgaben durchführen können, während die Postfachbenutzer transparent bleiben (indem Sie sicherstellen, dass Sie online bleiben). während des gesamten Prozesses) ist der Schlüssel und stellt sicher, dass der Prozess ordnungsgemäß skaliert wird, wenn die Postfächer größer und größer werden. 
+Das Verschieben von Postfächern ist ein wichtiger Bestandteil der Verwaltung eines umfangreichen e-Mail-Diensts. Es gibt immer aktualisierte Technologien und Hardware-und Versionsupgrades, mit einem robusten, gedrosselten System, mit dem unsere Techniker diese Aufgaben durchführen können, während die Postfachverschiebungen für Benutzer transparent sind (indem Sie sicherstellen, dass Sie während des gesamten Prozesses online bleiben) und sicherstellen, dass der Prozess ordnungsgemäß skaliert wird, wenn die Postfächer immer größer werden. 
 
 Der Exchange-Postfachreplikationsdienst (Mrs) ist für das Verschieben von Postfächern zwischen Datenbanken zuständig. Während des Wechsels führt Mrs eine Konsistenzprüfung für alle Elemente im Postfach aus. Wenn ein Konsistenzproblem gefunden wird, korrigiert Mrs das Problem entweder oder überspringt die beschädigten Elemente, wodurch die Beschädigung aus dem Postfach entfernt wird. 
 
@@ -97,5 +97,5 @@ Exchange Online nutzt mehrere ReFS-Vorteile:
 - Unterstützung für andere von Exchange Online verwendete Features, wie die BitLocker-Verschlüsselung. 
 
 Exchange Online profitiert auch von anderen ReFS-Features: 
-- **Integrity (Integrity Streams)** -ReFS speichert Daten so, dass Sie vor vielen gängigen Fehlern geschützt werden, die normalerweise zu Datenverlusten führen können. Office 365 Suche verwendet Integritätsdaten Ströme, um die Erkennung von Datenträgerfehlern und Prüfsummen von Dateiinhalten zu unterstützen. Das Feature reduziert außerdem Beschädigungs Ereignisse, die durch "gerissene Schreibvorgänge" verursacht werden (wenn ein Schreibvorgang aufgrund von Stromausfällen nicht abgeschlossen wird usw.). 
+- **Integrity (Integrity Streams)** -ReFS speichert Daten so, dass Sie vor vielen gängigen Fehlern geschützt werden, die normalerweise zu Datenverlusten führen können. Die Microsoft 365-Suche verwendet Integritätsdaten Ströme zur Unterstützung der frühzeitigen Festplatten-Beschädigungserkennung und der Prüfsummen von Dateiinhalten. Das Feature reduziert außerdem Beschädigungs Ereignisse, die durch "gerissene Schreibvorgänge" verursacht werden (wenn ein Schreibvorgang aufgrund von Stromausfällen nicht abgeschlossen wird usw.). 
 - **Verfügbarkeit (Restwert)** -ReFS priorisiert die Verfügbarkeit von Daten. In der Vergangenheit waren Dateisysteme häufig anfällig für Datenbeschädigungen, die erfordern, dass das System zur Reparatur offline geschaltet würde. Obwohl selten, wenn eine Beschädigung auftritt, ReFS implementiert Bergung, ein Feature, das die beschädigten Daten aus dem Namespace auf einem Live-Volume entfernt und sichergestellt, dass gute Daten nicht durch nicht reparierbar beschädigte Daten beeinträchtigt wird. Durch die Anwendung des Bergungs Features und das Isolieren von Datenbeschädigungen auf Exchange Online Daten Bank Volumes können wir nicht betroffene Datenbanken auf einem beschädigten Volume zwischen dem Zeitpunkt der Beschädigung und der Reparaturaktion aufbewahren. Dadurch wird die Verfügbarkeit von Datenbanken erhöht, die normalerweise von solchen Datenträgerbeschädigungen betroffen wären. 

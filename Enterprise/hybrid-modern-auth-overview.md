@@ -15,16 +15,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet. Sie ist für hybridbereitstellungen von lokalen Skype for Business-Servern und lokalen Exchange-Servern sowie für geteilte Domänen Skype for Business Hybriden verfügbar. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zur Einrichtung/Deaktivierung moderner Authentifizierung und zu einigen der verwandten Clients (ex. Outlook-und Skype-Clients) Informationen.
-ms.openlocfilehash: 325c34ec636ce9661b25f7b8be83ce8cbf61a291
-ms.sourcegitcommit: d4814245d57313f2e94cd819b85ac1550fdeaf3a
+ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516456"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998023"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Die _moderne Authentifizierung_ ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet. Sie ist für Office 365 hybridbereitstellungen von lokalen Skype for Business-Servern und lokalen Exchange-Servern sowie von Skype for Business Hybriden mit geteilten Domänen verfügbar. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zur Einrichtung/Deaktivierung moderner Authentifizierung und zu einigen der verwandten Clients (ex. Outlook-und Skype-Clients) Informationen.
   
@@ -41,7 +41,7 @@ Die moderne Authentifizierung ist ein Oberbegriff für eine Kombination von Auth
   
 - **Authentifizierungsmethoden**: mehrstufige Authentifizierung (MFA); Smartcard-Authentifizierung; Clientzertifikat basierte Authentifizierung
 - **Autorisierungsmethoden**: Microsoft-Implementierung der Open Authorization (OAuth)
-- **Richtlinien für den bedingten Zugriff**: MAM (Mobile Application Management) und Azure Active Directory bedingter Zugriff
+- **Richtlinien für den bedingten Zugriff**: MAM (Mobile Application Management) und Azure Active Directory (Azure AD) bedingten Zugriff
 
 Durch die Verwaltung von Benutzeridentitäten mit moderner Authentifizierung können Administratoren viele verschiedene Tools verwenden, wenn es um die Sicherung von Ressourcen geht und um sicherere Methoden der Identitätsverwaltung für lokale (Exchange-und Skype for Business), Exchange-Hybrid-und Skype for Business-Hybrid-/Split-Domain-Szenarien zu bieten.
   
@@ -59,9 +59,9 @@ Wenn Sie die moderne Authentifizierung mit lokalem Skype for Business oder Excha
   
 Durch die Änderung an evoSTS können Ihre lokalen Server die Vorteile von OAuth (Token Emission) zum Autorisieren ihrer Clients nutzen und ihre lokalen Sicherheitsmethoden in der Cloud (wie die mehrstufige Authentifizierung) auch gemeinsam nutzen. Darüber hinaus gibt das evoSTS Token aus, mit denen Benutzer Zugriff auf Ressourcen anfordern können, ohne Ihr Kennwort als Teil der Anforderung anzugeben. Unabhängig davon, wo Ihre Benutzer verwaltet werden (Online oder lokal), und unabhängig davon, an welchem Standort die erforderliche Ressource gehostet wird, wird EvoSTS zum Kern der Autorisierung von Benutzern und Clients werden, sobald die moderne Authentifizierung konfiguriert ist.
   
-Wenn beispielsweise ein Skype for Business-Client auf Exchange Server zugreifen muss, um Kalenderinformationen im Namen eines Benutzers abzurufen, wird hierfür die Active Directory-Authentifizierungsbibliothek (Adal) verwendet. Adal ist eine Codebibliothek, mit der gesicherte Ressourcen in Ihrem Verzeichnis für Clientanwendungen mithilfe von OAuth-Sicherheitstoken verfügbar gemacht werden können. Adal arbeitet mit OAuth zusammen, um Ansprüche zu überprüfen und Token zu tauschen (statt Kennwörter), um einem Benutzer Zugriff auf eine Ressource zu gewähren. In der Vergangenheit war die Autorität in einer Transaktion wie diese – der Server, der weiß, wie benutzeransprüche überprüft werden und die erforderlichen Token ausgeben müssen – möglicherweise ein Sicherheitstokendienst lokal oder sogar Active Directory Verbunddienste. Die moderne Authentifizierung zentralisiert diese Autorität jedoch mithilfe von Azure Active Directory (AAD).
+Wenn beispielsweise ein Skype for Business-Client auf Exchange Server zugreifen muss, um Kalenderinformationen im Namen eines Benutzers abzurufen, wird hierfür die Active Directory-Authentifizierungsbibliothek (Adal) verwendet. Adal ist eine Codebibliothek, mit der gesicherte Ressourcen in Ihrem Verzeichnis für Clientanwendungen mithilfe von OAuth-Sicherheitstoken verfügbar gemacht werden können. Adal arbeitet mit OAuth zusammen, um Ansprüche zu überprüfen und Token zu tauschen (statt Kennwörter), um einem Benutzer Zugriff auf eine Ressource zu gewähren. In der Vergangenheit war die Autorität in einer Transaktion wie diese – der Server, der weiß, wie benutzeransprüche überprüft werden und die erforderlichen Token ausgeben müssen – möglicherweise ein Sicherheitstokendienst lokal oder sogar Active Directory Verbunddienste. Die moderne Authentifizierung zentralisiert diese Autorität jedoch mithilfe von Azure AD.
   
-Dies bedeutet auch, dass auch wenn Ihre Exchange-Server-und Skype for Business-Umgebungen möglicherweise vollständig lokal sind, der autorisierungsserver Online ist und Ihre lokale Umgebung eine Verbindung mit Ihrem Office 365-Abonnement in der Cloud erstellen und verwalten muss (und die Azure Active Directory-Instanz, die Ihr Abonnement als Verzeichnis verwendet).
+Dies bedeutet auch, dass, obwohl ihre Exchange Server-und Skype for Business-Umgebungen möglicherweise vollständig lokal sind, der autorisierungsserver Online ist und Ihre lokale Umgebung die Möglichkeit haben muss, eine Verbindung mit Ihrem Office 365-Abonnement in der Cloud zu erstellen und zu verwalten (und die Azure AD Instanz, die Ihr Abonnement als Verzeichnis verwendet).
   
 Was ändert sich nicht? Unabhängig davon, ob Sie sich in einer Hybrid Domäne mit geteilten Domänen befinden oder Skype for Business und Exchange Server lokal verwenden, müssen sich alle Benutzer zunächst *lokal*authentifizieren. In einer Hybrid Implementierung der modernen Authentifizierung deuten _Lyncdiscovery_ und _AutoDiscovery_ auf Ihren lokalen Server hin.
   
@@ -111,10 +111,10 @@ Weitere Informationen zum Get-csoauthconfiguration "-Cmdlet finden Sie unter [Ge
   - In der Hybridumgebung gibt es keine lync Server 2010 oder 2013.
 
 >[!NOTE]
->Wenn Ihre Skype for Business-Front-End-Server einen Proxy Server für den Internet Zugriff verwenden, muss die IP-Adresse des Proxyservers und die verwendete Port Nummer im Abschnitt "Configuration" der Datei "Web. config" für jedes Front-End eingegeben werden.
+>Wenn Ihre Skype for Business-Front-End-Server einen Proxy Server für den Internet Zugriff verwenden, muss die IP-Adresse des Proxyservers und die verwendete Port Nummer im Abschnitt "Configuration" der web.config Datei für jedes Front-End eingegeben werden.
   
-- C:\Program Files\Skype for Business Server 2015 \ Components\Web-ticket\int\web.config
-- C:\Program Files\Skype for Business Server 2015 \ Components\Web-ticket\ext\web.config
+- C:\Program Files\Skype for Business Server 2015 \ Components\Web ticket\int\web.config
+- C:\Program Files\Skype for Business Server 2015 \ Components\Web ticket\ext\web.config
 
 ```xml
 <configuration>
@@ -168,7 +168,7 @@ Weitere Informationen zum Get-csoauthconfiguration "-Cmdlet finden Sie unter [Ge
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Was muss ich noch wissen, bevor ich beginne?
 <a name="BKMK_Whatelse"> </a>
 
-- Alle Szenarien für lokale Server beinhalten die Einrichtung einer modernen Authentifizierung vor Ort (tatsächlich für Skype for Business gibt es eine Liste unterstützter Topologien), damit der Server für die Authentifizierung und Autorisierung in der Microsoft-Cloud (AAD es Security Token Service, "evoSTS" genannt) und dem Aktualisieren von Azure Active Directory (AAD) über die URLs oder Namespaces, die von Ihrer lokalen Installation von Skype for Business oder Exchange verwendet werden, verwendet wird. Daher nehmen lokale Server eine Microsoft-Cloud-Abhängigkeit an. Die Durchführung dieser Aktion könnte als Konfigurieren von "hybrider Authentifizierung" betrachtet werden.
+- Alle Szenarien für lokale Server beinhalten die Einrichtung einer modernen Authentifizierung vor Ort (tatsächlich für Skype for Business gibt es eine Liste unterstützter Topologien), damit der Server, der für die Authentifizierung und Autorisierung zuständig ist, in der Microsoft-Cloud (AAD es Security Token Service, "evoSTS" genannt) und Azure AD zu den von Ihrer lokalen Installation von Skype for Business oder Exchange verwendeten URLs oder Namespaces aktualisiert wird. Daher nehmen lokale Server eine Microsoft-Cloud-Abhängigkeit an. Die Durchführung dieser Aktion könnte als Konfigurieren von "hybrider Authentifizierung" betrachtet werden.
 - Dieser Artikel enthält Links zu anderen Themen, die Sie bei der Auswahl unterstützter moderner Authentifizierungs Topologien (nur für Skype for Business erforderlich) und in den Vorgehensweisen erläutern, die die Installationsschritte oder die Schritte zum Deaktivieren der modernen Authentifizierung für lokale Exchange-und Skype for Business lokal bereitstellen. Favorite diese Seite in Ihrem Browser, wenn Sie eine Home-Base für die Verwendung der modernen Authentifizierung in Ihrer Server Umgebung benötigen.
 
 ## <a name="related-topics"></a>Verwandte Themen

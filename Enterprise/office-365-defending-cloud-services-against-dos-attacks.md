@@ -1,7 +1,7 @@
 ---
-title: Office 365 schützen von Cloud-Diensten vor Denial-of-Service-Angriffen
-ms.author: robmazz
-author: robmazz
+title: Schützen von Microsoft 365 Cloud-Diensten vor Denial-of-Service-Angriffen
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,21 +15,21 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Wie Microsoft seine Cloud-Dienste vor Denial-of-Service-Angriffen (DOS) verteidigt.
-ms.openlocfilehash: 042748927ddfa4d81fa3c62b98ab8f1114a8ada0
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843616"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998329"
 ---
-# <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Schützen von Microsoft Cloud Services vor Denial-of-Service-Angriffen
+# <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Schützen von Microsoft 365 Cloud-Diensten vor Denial-of-Service-Angriffen
 
 ## <a name="introduction"></a>Einführung
 Microsoft-Rechenzentren werden durch umfassende Sicherheitsvorkehrungen geschützt, einschließlich Umkreis Fechten, Videokameras, Sicherheitspersonal und sicheren Eingängen, die Biometrie, Smartcard und mehrstufige Authentifizierung verwenden. Die tiefen Verteidigungs Sicherheit wird durch jeden Bereich der Einrichtung und für jede physische SERVEREINHEIT fortgesetzt. Die [Microsoft Cloud Infrastructure and Operations Group](https://www.microsoft.com/cloud-platform/global-datacenters) bietet die Kerninfrastruktur und grundlegende Technologien für unsere Cloud-Dienste. Unsere Rechenzentren entsprechen Branchenstandards für physische Sicherheit und Zuverlässigkeit und werden von Microsoft Operationspersonal verwaltet, überwacht und verwaltet.
 
 Um unsere Cloud-Dienste weiter zu schützen, bietet Microsoft ein DDoS-Abwehrsystem an, das Teil der Microsoft Azure kontinuierlichen Überwachungs-und Penetrationstest Prozesse ist. Das Azure DDoS-Abwehrsystem ist nicht nur für Angriffe von außen, sondern auch von anderen Azure-Mandanten ausgelegt. Azure verwendet standardmäßige Erkennungs-und Minderungs Methoden wie SYN-Cookies, raten Begrenzungen und Verbindungs Grenzwerte zum Schutz vor DDoS-Angriffen.
 
-Die Cloud-Dienste von Microsoft unterliegen der Bedrohung durch Angriffe aus mehreren Quellen. Zur Minderung und zum Schutz vor den verschiedenen DOS-Bedrohungen wurde ein hoch skalierbares und dynamisches Azure-basiertes System zur Erkennung und Abwehr von Bedrohungen entwickelt und implementiert, mit dem Hauptziel, die zugrunde liegende Infrastruktur vor DOS zu schützen. Angriffe und Unterstützung bei der Vermeidung von Dienstunterbrechungen für Cloud Services-Kunden. Das Azure DOS-Minderungs System schützt eingehende, ausgehende und Region-zu-Region-Datenverkehr.
+Die Cloud-Dienste von Microsoft unterliegen der Bedrohung durch Angriffe aus mehreren Quellen. Zur Minderung und zum Schutz vor den verschiedenen DOS-Bedrohungen wurde ein hoch skalierbares und dynamisches Azure-basiertes System zur Erkennung und Abwehr von Bedrohungen entwickelt und implementiert, mit dem Hauptziel, die zugrunde liegende Infrastruktur vor DoS-Angriffen zu schützen und Dienstunterbrechungen für Cloud Services-Kunden zu verhindern. Das Azure DOS-Minderungs System schützt eingehende, ausgehende und Region-zu-Region-Datenverkehr.
 
 Die meisten DOS-Angriffe werden für Ziele auf den Netzwerk-(L3) und Transport Ebenen (L4) des OSI-Modells ( [Open Systems Interconnection](https://docs.microsoft.com/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model) ) gestartet. Angriffe auf die L3-und L4-Layer wurden entwickelt, um eine Netzwerkschnittstelle oder einen Dienst mit Angriffs Datenverkehr hoch zufluten, um Ressourcen zu überlasten und die Fähigkeit zu verweigern, auf legitimen Datenverkehr zu reagieren. Insbesondere L3-und L4-Angriffe versuchen, entweder die Kapazität von Netzwerkverbindungen, Geräten oder Diensten zu sättigen oder die CPUs von Servern oder virtuellen Computern zu überlasten, die eine Anwendung unterstützen.
 

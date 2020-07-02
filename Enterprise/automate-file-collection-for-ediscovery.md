@@ -1,7 +1,7 @@
 ---
 title: Automatisieren der Dateisammlung für eDiscovery
-ms.author: chrfox
-author: chrfox
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -17,29 +17,27 @@ ms.assetid: 8d751419-d81b-4eb7-a2e5-8b03ccbf670c
 search.appverid:
 - MET150
 description: 'Zusammenfassung: Erfahren Sie, wie Sie die Dateisammlung von Benutzercomputern für eDiscovery automatisieren.'
-ms.openlocfilehash: cc6018f65174e142710c71c7f820fc728cd1dc3e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 83bd55ff786803cfcb3eec9430d72de30179d000
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844736"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997976"
 ---
 # <a name="automate-file-collection-for-ediscovery"></a>Automatisieren der Dateisammlung für eDiscovery
 
- **Zusammenfassung:** Erfahren Sie, wie Sie die Dateisammlung von Benutzercomputern für eDiscovery automatisieren.
+All companies face the potential of lawsuits or other types of legal action. While legal departments work to reduce that exposure, litigation is a fact of business life. When a company faces legal action, they are required, through the process of legal discovery, to provide all relevant documentary materials to the court and to opposing counsel. 
   
-Alle Unternehmen können sich Rechtsstreitigkeiten oder anderen Arten von Rechtsverfahren gegenübersehen. Zwar bemühen sich Rechtsabteilungen darum, dieses Risiko zu senken, jedoch sind Rechtsstreitigkeiten ein Bestandteil des Geschäftslebens. Wenn sich ein Unternehmen einem Rechtsverfahren gegenübersieht, muss es dem Gericht und dem gegnerischen Anwalt durch Legal Discovery alle relevanten Dokumente zur Verfügung stellen. 
+eDiscovery is the process by which companies inventory, search, identify, preserve, filter, and make available the relevant documentary materials that exist in electronic form. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online, and Exchange Online can hold large amounts of documentary content. Depending on the version, these products may support eDiscovery and in place holds (Lync via Exchange Server), making it easier for the legal teams to index, identify, hold, and filter the most relevant content for a given case.
   
-eDiscovery ist der Prozess, durch den Unternehmen die relevanten Dokumente, die im elektronischen Format vorliegen, erfassen, durchsuchen, identifizieren, aufbewahren, filtern und zur Verfügung stellen. SharePoint 2013, Exchange Server 2013, Lync Server 2013, SharePoint Online und Exchange Online können große Mengen an Inhalten aufweisen. Je nach Version können diese Produkte eDiscovery und In-Situ-Speicher unterstützen (Lync über Exchange Server), was Rechtsabteilungen dabei hilft, die für einen bestimmten Fall wichtigsten Inhalte zu indizieren, zu identifizieren, zu archivieren und zu filtern.
-  
-Viele Dokumente werden auf den lokalen Computern der Benutzer (Verwalter) gespeichert und nicht an einem zentralen Ort. Dadurch wird es SharePoint 2013 im Prinzip unmöglich gemacht, zu suchen, und was nicht durchsucht werden kann, kann auch nicht in eDiscovery einbezogen werden. Diese Lösung zeigt Ihnen, wie Anmeldeskripts, System Center Orchestrator 2012 R2 und Windows PowerShell für Exchange Server verwendet werden, um die Identifizierung und Sammlung von Dokumenten von Benutzercomputern zu automatisieren.
+Many documents are stored on users' (Custodians) local computers, not in a centralized location. This makes it essentially impossible for SharePoint 2013 to search, and if it can't be searched, it can't be included in eDiscovery. This solution shows you how to use logon scripts, System Center Orchestrator 2012 R2 and Windows PowerShell for Exchange Server to automate the identification and collection of documentary materials from users' computers.
   
 ## <a name="what-this-solution-does"></a>Funktionsweise dieser Lösung
 
-Diese Lösung verwendet eine globale Sicherheitsgruppe, eine Gruppenrichtlinie und ein Windows PowerShell-Skript zum Auffinden, Inventarisieren und Erfassen von Inhalten und persönlichen Speicherdateien (Personal Storage Files, PST) von Outlook von lokalen Computern von Benutzern in einer verborgenen Dateifreigabe. Von dort können die PST-Dateien entweder in Exchange Server 2013 oder Exchange Online importiert werden. Alle Dateien werden dann anhand eines System Center Orchestrator 2012 R2-Runbooks zwecks langfristiger Speicherung und Indizierung durch SharePoint 2013 zu einer anderen Dateifreigabe in Microsoft Azure verschoben. Sie verwenden dann eDiscovery-Zentren in der lokalen SharePoint Online-Bereitstellung oder in SharePoint Online, wie Sie es regelmäßig zur Durchführung von eDiscovery tun. 
+This solution uses a global security group, Group Policy, and a Windows PowerShell script to locate, inventory, and collect content and Outlook personal store (PST) files from users local computers to a hidden file share. From there, the PST files can be imported into either Exchange Server 2013 or Exchange Online. All files are then moved using a System Center Orchestrator 2012 R2 runbook to another file share in Microsoft Azure for long-term storage and indexing by SharePoint 2013. You then use eDiscovery centers in your on-premises SharePoint 2013 deployment or in SharePoint Online as you regularly would to perform eDiscovery. 
   
 > [!IMPORTANT]
-> Diese Lösung verwendet Robocopy, um Dateien auf den Computern von Verwaltern auf eine zentrale Dateifreigabe zu kopieren. Da Robocopy keine geöffneten oder gesperrten Dateien kopiert, werden alle Dateien, einschließlich PST-Dateien, die der Verwalter geöffnet hat, nicht erfasst. Diese müssen manuell erfasst werden. Diese Lösung stellt eine Liste bereit, in der explizit die Dateien, die nicht kopiert werden können, sowie der vollständige Pfad zu den einzelnen Dateien identifiziert werden. 
+> This solution uses robocopy to copy files from custodian's computers to a centralized file share. Because robocopy does not copy files that are open or locked, any files, including PST files, that the custodian has open will not be collected. You will have to collect them manually. This solution does provide you with a list that explicitly identifies the files it cannot copy and the full path to each file. 
   
 Das folgende Diagramm führt Sie durch alle Schritte und Elemente der Lösung.
   
@@ -53,15 +51,15 @@ Das folgende Diagramm führt Sie durch alle Schritte und Elemente der Lösung.
 |![Magenta-Beschriftung 4](media/6f269d84-2559-49e3-b18e-af6ac94d0419.png)|Das Sammlungsanmeldeskript inventarisiert alle lokal verbundenen Laufwerke auf dem Computer des Verwalters, indem es nach den gewünschten Dateien sucht und ihren Speicherort aufzeichnet.  <br/> |
 |![Magenta-Beschriftung 5](media/4bf8898c-44ad-4524-b983-70175804eb85.png)|Das Sammlungsanmeldeskript kopiert die inventarisierten Dateien in eine verborgene Dateifreigabe auf dem Staging Server.  <br/> |
 |![Magenta-Beschriftung 6](media/99589726-0c7e-406b-a276-44301a135768.png)| (Option A) Führen Sie das PST-Importskript manuell aus, um die gesammelten PST-Dateien in Exchange Server 2013 zu importieren. <br/> |
-|![Magenta-Beschriftung 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Option B) Importieren Sie die gesammelten PST-Dateien mithilfe des Office 365-Importtools und -prozesses in Exchange Online ein.  <br/> |
+|![Magenta-Beschriftung 7](media/ff15e89c-d2fd-4614-9838-5e18287d578b.png)|(Option B) Importieren Sie die gesammelten PST-Dateien mithilfe des Microsoft 365-Importtools und-Prozesses in Exchange Online.  <br/> |
 |![Magenta-Beschriftung 8](media/aaf3bd3d-9508-4aaf-a3af-44ba501da63a.png)|Verschieben Sie alle gesammelten Dateien zur langfristigen Speicherung mit dem MoveToColdStorageSystem Center Orchestrator 2012 R2-Runbook in eine Azure-Dateifreigabe. <br/> |
 |![Magenta-Beschriftung 9](media/b354642e-445e-4723-a84a-b41f7ac6e774.png)|Indexieren Sie die Dateien in der Cold Storage-Dateifreigabe mit SharePoint 2013.  <br/> |
 |![Magenta-Beschriftung 10](media/cebf7de5-7525-413b-9e52-638a4f8b2f74.png)|Führen Sie eDiscovery für Inhalte in Cold Storage und im lokalen Exchange Server 2013 durch.  <br/> |
-|![Magenta-Beschriftung 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Führen Sie eDiscovery für Inhalte in Office 365 durch.  <br/> |
+|![Magenta-Beschriftung 11](media/e59ab403-2f19-497a-92a5-549846dded66.png)|Ausführen von eDiscovery für Inhalte in Microsoft 365.  <br/> |
    
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Die Konfiguration dieser Lösung erfordert viele Elemente, von denen die meisten wahrscheinlich für eDiscovery vorhanden und konfiguriert sind. Für Elemente, die Sie nicht besitzen oder für die eine spezifische Konfiguration erforderlich ist, stellen wir Ihnen Links zur Verfügung, anhand derer Sie die Standardkonfiguration vornehmen können. Vor der Konfiguration der Lösung selbst, muss die Standardkonfiguration stehen.
+The configuration of this solution requires many elements, most of which you likely have in place and configured if you're thinking about eDiscovery. For the elements that you may not have or ones that require a specific configuration, we'll provide you with the links you need build out your base configuration. You must have the base configuration in place before you configure the solution itself.
   
 ### <a name="base-configuration"></a>Standardkonfiguration
 
@@ -74,11 +72,11 @@ Die Konfiguration dieser Lösung erfordert viele Elemente, von denen die meisten
 |Lokaler Dateifreigabenserver für Staging  <br/> ||
 |Lokaler Exchange Server 2013 für PST-Import aus Option A  <br/> |CU5 (15.913.22) ist verfügbar unter [CU5](https://go.microsoft.com/fwlink/p/?LinkId=613426).  <br/> |
 |System Center Orchestrator 2012 R2  <br/> |[Bereitstellen von System Center 2012 - Orchestrator](https://go.microsoft.com/fwlink/p/?LinkId=613503) <br/> |
-|Office 365 (E3-Plan) mit Exchange Online und SharePoint Online (für Option B erforderlich)  <br/> |Informationen zur Anmeldung für ein Office 365-E3-Abonnement finden Sie unter [Abonnement für Office 365 E3](https://go.microsoft.com/fwlink/p/?LinkId=613504).  <br/> |
+|Microsoft 365 E3 mit Exchange Online und SharePoint Online (für Option B erforderlich)  <br/> |Informationen zum Registrieren eines Microsoft 365 E3-Abonnements finden Sie unter [Microsoft 365 E3-Abonnement](https://www.microsoft.com/microsoft-365/enterprise-e3-business-software?activetab=pivot%3aoverviewtab).  <br/> |
 |Azure-Abonnement mit einem virtuellen Computer  <br/> |Informationen zum Registrieren für ein Azure-Abonnement finden Sie unter [Anmelden bei Windows Azure](https://go.microsoft.com/fwlink/p/?LinkId=512010). <br/> |
 |Eine VPN-Verbindung zwischen Ihrem lokalen Netzwerk und Ihrem Azure-Abonnement  <br/> |Informationen zum Einrichten eines VPN-Tunnels zwischen Ihrem Azure-Abonnement und Ihrem lokalen Netzwerk finden Sie unter [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](https://go.microsoft.com/fwlink/p/?LinkId=613507).  <br/> |
 |SharePoint 2013eDiscovery ist zum Durchsuchen von SharePoint und Exchange Server 2013 sowie optional Lync Server 2013 konfiguriert  <br/> |Informationen zum Konfigurieren von eDiscovery auf diese Weise finden Sie unter [Konfigurieren von eDiscovery in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=613508) und[Testumgebungsanleitung: Konfigurieren von eDiscovery für eine Testumgebung mit Exchange-, Lync-, SharePoint- und Windows-Dateifreigaben](https://go.microsoft.com/fwlink/p/?LinkId=393130).  <br/> |
-|eDiscovery in Office 365 für SharePoint Online und Exchange Online  <br/> |Informationen zum Konfigurieren von eDiscovery in Office 365 finden Sie unter [Einrichten eines eDiscovery Center in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628).  <br/> |
+|eDiscovery in Microsoft 365 für SharePoint Online und Exchange Online  <br/> |Informationen zum Konfigurieren von eDiscovery in Microsoft 365 finden Sie unter [Einrichten eines eDiscovery Centers in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkId=613628).  <br/> |
    
 ## <a name="configure-the-environment"></a>Konfigurieren der Umgebung
 
@@ -88,7 +86,7 @@ Nachdem nun die Basiskonfiguration steht, können Sie mit der Konfiguration der 
 
 1. Erstellen Sie in der lokalen Domäne eine globale Sicherheitsgruppe mit dem Namen Custodians.
     
-2. Erstellen Sie eine verborgene Dateifreigabe für die Dateien, die auf den Computern von Verwaltern erfasst werden. Dabei sollte es sich um einen lokalen Server handeln. Erstellen Sie beispielsweise auf einem Server namens Staging eine Dateifreigabe mit dem Namen Cases$. Das **$** ist erforderlich, um eine verborgene Freigabe zu erstellen.
+2. Create a hidden file share for the files that are collected from Custodians computers. This should be on an on-premises server. For example, on a server called Staging, create a file share called Cases$. The **$** is required to make this a hidden share.
     
 3. Legen Sie die folgenden Freigabeberechtigungen fest:
     
@@ -98,7 +96,7 @@ Nachdem nun die Basiskonfiguration steht, können Sie mit der Konfiguration der 
     
   - Vertrauenswürdiges Exchange-Teilsystem: Lesen, Ändern
     
-4. Öffnen Sie die Registerkarte **Sicherheit**, fügen Sie die Gruppe der Verwalter hinzu, und klicken Sie auf **Erweitert**. Legen Sie die folgenden Berechtigungen für die Gruppe der Verwalter fest:
+4. Open the **Security** tab, add the Custodians group, and click **Advanced**. Set the following permissions for the Custodians group:
     
   - **Typ: Verweigern**
     
@@ -118,11 +116,11 @@ Nachdem nun die Basiskonfiguration steht, können Sie mit der Konfiguration der 
     
 2. Platzieren Sie eine Datei im Ordner „Cases$“.
     
-3. Navigieren Sie als Benutzer zu dem Stagingserver, beispielsweise zur Freigabe \\\\Staging, um zu sehen, welche Freigaben verfügbar sind. Die Freigabe **Cases$** sollte nicht aufgeführt sein.
+3. As the user, browse to the staging server, for example browse to the \\\\Staging share to see what shares are available. You shouldn't see the **Cases$** share listed.
     
-4. Geben Sie manuell den vollständigen Pfad zu der Freigabe „Cases$“ in Explorer ein. Dadurch sollte die Freigabe „Cases$“ geöffnet werden.
+4. Manually type the full path to the Cases$ share into Explorer. This should open the Cases$ share.
     
-5. Versuchen Sie, die Datei zu öffnen, die Sie zuvor in der Freigabe platziert haben. Dies sollte fehlschlagen.
+5. Try to open the file you previously placed in the share. This should fail.
     
 ### <a name="logon-script"></a>Anmeldeskript
 
@@ -270,12 +268,12 @@ Write-Host -ForegroundColor Cyan "Finished."
 
 2. Speichern Sie das Skript unter CollectionScript.ps1 an einem für Sie leicht auffindbaren Speicherort, z. B. C:\\AFCScripts.
     
-3. Verwenden Sie die Funktion „Gehe zu...“ in Editor, und nehmen Sie bei Bedarf die folgenden Änderungen vor:
+3. Use the Go To feature in Notepad. Make the following changes, as needed:
     
 |**Zeilennummer**|**Zu änderndes Element**|**Erforderlich/optional**|
 |:-----|:-----|:-----|
-|71  <br/> |**$FileTypes** -Variable. Beziehen Sie alle Dateityperweiterungen ein, die das Skript inventarisieren und in der Matrixvariable sammeln soll.<br/> |Optional  <br/> |
-|76 und 77  <br/> |Ändern Sie die Auslegung der **$CaseNo** -Variable entsprechend Ihren Anforderungen. Das Skript erfasst das aktuelle Datum und die aktuelle Uhrzeit und fügt den Benutzernamen an.<br/> |Optional  <br/> |
+|71  <br/> |**$FileTypes** variable. Include all the file type extensions that you want the script to inventory and collect in the array variable. <br/> |Optional  <br/> |
+|76 und 77  <br/> |Change the way the **$CaseNo** variable is built to suit your needs. The script captures the current date and time and appends the user name to it. <br/> |Optional  <br/> |
 |80  <br/> |Die **$CaseRootLocation** -Variable muss auf die Sammlungsdateifreigabe Ihrer Stagingserver festgelegt werden. Beispielsweise **\\\\Staging\\Cases$**.  <br/> |Erforderlich  <br/> |
    
 4. Platzieren Sie die Datei „CollectionScript.ps1“ in die Netlogon-Dateifreigabe auf einem Domänencontroller. 
@@ -326,14 +324,14 @@ $AllFiles | ForEach-Object {
 }
   ```
 
-2. Speichern Sie das Skript unter PSTImportScript.ps1 an einem für Sie leicht auffindbaren Speicherort. Erstellen Sie beispielsweise der Einfachheit halber einen Ordner auf Ihrem Stagingserver mit dem Namen\\\\Staging\\AFCScripts, und speichern Sie es dort.
+2. Save the script as PSTImportScript.ps1 in a location that's easy for you to find. For example and ease of use, create a folder on your staging server called \\\\Staging\\AFCScripts, and save it there.
     
 3. Verwenden Sie die Funktion „Gehe zu...“ in Editor, und nehmen Sie bei Bedarf die folgenden Änderungen vor:
     
 |**Zeilennummer**|**Zu änderndes Element**|**Erforderlich/optional**|
 |:-----|:-----|:-----|
-|12   <br/> |**$FolderIdentifier** markiert die Postfachordner, in die PST-Dateien importiert werden. Ändern Sie dies bei Bedarf.<br/> |Optional  <br/> |
-|17   <br/> |**$ConnectionUri** muss auf Ihrem eigenen Server festgelegt sein. <br/> > [!IMPORTANT]> Stellen Sie sicher, dass Ihre **$ConnectionUri** auf einen Speicherort „http://" und nicht „https://" zeigt. Mit „https://" funktioniert es nicht.          |Erforderlich  <br/> |
+|12   <br/> |**$FolderIdentifier** tags the mailbox folders that PSTs are imported into. Change this if necessary. <br/> |Optional  <br/> |
+|17   <br/> |**$ConnectionUri** muss auf Ihrem eigenen Server festgelegt sein. <br/> > [!IMPORTANT]> Make sure your **$ConnectionUri** points to a http location, not https. It won't work with https:.          |Erforderlich  <br/> |
    
 4. Stellen Sie sicher, dass das Exchange-Konto „Vertrauenswürdiges Teilsystem" Lese-, Schreib- und Ausführberechtigungen für die Freigabe \\\\Staging\\Cases$ aufweist.
     
@@ -347,13 +345,13 @@ $AllFiles | ForEach-Object {
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST-Import, Option B, für Exchange Online
 
--  Erstellen Sie die Postfachstruktur, in der die importierten PST-Dateien platziert werden sollen. Weitere Informationen zum Erstellen eines Benutzerpostfachs in Exchange Online finden Sie unter[Erstellen von Benutzerpostfächern in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
+-  Create the mailbox structure to place the imported PST files into. For more information on how to create a user mailbox in Exchange Online, see[Create User Mailboxes in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=615118).
     
 ### <a name="cold-storage"></a>Cold Storage
 
 1. Erstellen Sie eine Dateifreigabe auf dem Virtueller Azure-Computer, in der alle gesammelten Dateien platziert werden sollen, z. B. \\\\AZFile1\\ContentColdStorage.
     
-2. Gewähren Sie dem Standardkonto für den Inhaltszugriff mindestens Leseberechtigungen für die Freigabe und alle Unterordner und Dateien. Weitere Informationen zum Konfigurieren der SharePoint 2013-Suche finden Sie unter [Erstellen und Konfigurieren einer Suchdienstanwendung in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
+2. Grant the default content access account at least Read permissions to the share and all subfolders and files. For more information about configuring SharePoint 2013 Search, see [Create and configure a Search service application in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=614940).
     
 3. Wenn Sie beabsichtigen, PST-Dateien aus \\\\AZFile1\\ContentColdStorage zu importieren, gewähren Sie dem vertrauenswürdigen Teilsystem von Exchange Lese-, Schreib- und Ausführberechtigungen für die Freigabe.
     
@@ -361,17 +359,17 @@ $AllFiles | ForEach-Object {
 
 1. Laden Sie das [ MoveToColdStorage-Runbook](https://go.microsoft.com/fwlink/?LinkId=616095) aus dem Microsoft Download Center herunter.
     
-2. Öffnen Sie den **Runbook Designer**, und klicken Sie im Bereich **Verbindungen** auf den Ordner, in den Sie das Runbook importieren möchten. Klicken Sie auf das Menü **Aktionen** und dann auf **Importieren**. Das Dialogfeld **Importieren** wird angezeigt.
+2. Open the **Runbook Designer**, in the **Connections** pane, click the folder that you want to import the runbook into. Click the **Actions** menu, and the click **Import**. The **Import** dialog box appears.
     
 3. Geben Sie im Feld **Dateispeicherort** den Pfad und Dateinamen des zu importierenden Runbooks ein, oder klicken Sie auf die drei Punkte ( **...**), um die zu importierende Datei zu suchen. 
     
-4. Wählen Sie **Runbooks importieren** und **Verschlüsselte Orchestrator-Daten importieren**. Deaktivieren Sie **Zähler**, **Zeitpläne**, **Variablen**, **Computergruppen**, **Globale Konfigurationen importieren** und **Vorhandene globale Konfigurationen überschreiben**.
+4. Select **Import runbooks** and **Import Orchestrator encrypted data**. Clear **Counters**, **Schedules**, **Variables**, **Computer Groups**, **Import global configurations**, and **Overwrite existing global configurations**.
     
 5. Klicken Sie auf **Fertig stellen**.
     
 6. Bearbeiten Sie das Runbook **MoveFilesToColdStorage** wie folgt:
     
-1. Aktivität **Datei verschieben** - Legen Sie den **Quelldatei**-Pfad auf die Sammlungsdateifreigabe fest, z. B. \\\\Staging\\cases$. Legen Sie den **Zielordner** auf die Cold Storage-Dateifreigabe in Azure fest, z. B. \\\\AZFile1\\ContentColdStorage. Wählen Sie **Datei mit eindeutigem Namen erstellen** aus.
+1. **Move File** activity - set the **Source File** path to the collection file share, for example \\\\Staging\\cases$. Set the **Destination Folder** to the cold storage file share in Azure, for example \\\\AZFile1\\ContentColdStorage. Select **Create a file with a unique name**.
     
 2. Aktivität **Ordner löschen** - Legen Sie **Pfad:** auf die Sammlungsdateifreigabe fest, z. B. \\\\Staging\\cases$\\*, und wählen Sie **Alle Dateien und Unterordner löschen**. 
     
@@ -379,23 +377,23 @@ $AllFiles | ForEach-Object {
     
 ### <a name="sharepoint-on-premises-search-for-cold-storage"></a>Lokale SharePoint-Suche für Cold Storage
 
-1. Erstellen Sie eine neue Inhaltsquelle in Ihrer SharePoint 2013-Farm für die Cold Storage-Freigabe in Azure, z. B. \\\\AZFile1\\ContentColdStorage. Weitere Informationen zum Verwalten von Inhaltsquellen finden Sie unter [Hinzufügen, Bearbeiten oder Löschen einer Inhaltsquelle in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004).
+1. Create an new content source in your SharePoint 2013 farm for the cold storage share in Azure, for example \\\\AZFile1\\ContentColdStorage. For more information about managing content sources, see [Add, edit, or delete a content source in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615004)
     
-2. Starten Sie eine vollständige Durchforstung. Weitere Informationen finden Sie unter [Starten, Unterbrechen, Fortsetzen oder Anhalten von Durchforstungen in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+2. Start a full crawl. For more information see, [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
 ## <a name="using-the-solution"></a>Verwenden der Lösung
 
-Es gibt fünf wichtige Schritte bei der Verwendung dieser Lösung, vorausgesetzt, Sie möchten die PST-Dateien nicht sowohl in Exchange Server 2013 als auch Exchange Online importieren. Dieser Abschnitt enthält Informationen zu sämtlichen Verfahren. Die primäre Interaktion mit der Lösung besteht in Folgendem:
+There are five major steps in using this solution, assuming you don't want to import the PST files into both Exchange Server 2013 and Exchange Online. This section provides you with the procedures for all of them. Your primary interaction with the solution will be in doing the following:
   
 1. Verwalten Sie die Benutzermitgliedschaft in der Gruppe der Verwalter.
     
-2. Fehler
+2. Review the log files generated by the logon script. The FileCopyErrors.log lists all the files that were not successfully copied. You need to decide what you want to do with them
     
 3. Verwalten des PST-Importvorgangs.
     
 4. Verschieben der Sammlungsdateien in Cold Storage.
     
-Alle anderen Schritte sind nicht spezifisch für diese Lösung. Sie sind standardmäßige administrative Aufgaben, die Sie für SharePoint 2013, Office 365 und Azure ausführen. Es gibt Elemente, für die diese Lösung keine Anleitung bietet und die Sie basierend auf den Anforderungen Ihres Unternehmens ausarbeiten müssen. Dazu gehören Folgende:
+Alle anderen Schritte sind nicht spezifisch für diese Lösung. Es handelt sich um Standard Verwaltungsaufgaben, die Sie in SharePoint 2013, Microsoft 365 und Azure ausführen. Es gibt Elemente, für die diese Lösung keine Anleitungen bereitstellt, die Sie basierend auf den Anforderungen Ihres Unternehmens ausarbeiten müssen, beispielsweise:
   
 1. Überwachen Ihrer eDiscovery-Fälle und welche Verwalter welchen Fällen zugeordnet sind.
     
@@ -411,46 +409,46 @@ Alle anderen Schritte sind nicht spezifisch für diese Lösung. Sie sind standar
     
 ### <a name="custodian-management"></a>Verwaltung von Verwaltern
 
-- Um die automatische Dateisammlung für einen einzelnen Benutzer zu starten, fügen sie diese der Verwaltergruppe hinzu. Bei der nächsten Anmeldung des Benutzers wird das Anmeldeskript ausgeführt, dass der Verwaltergruppe über eine Gruppenrichtlinie zugewiesen wurde. 
+- To start the automated file collection process for an individual user, add them to the Custodians group. The next time that the user logs on, the logon script assigned to the Custodians group through Group Policy will run. 
     
 ### <a name="monitor-collected-files-and-review-log-files"></a>Überwachen der Dateiauflistung und Prüfen der Protokolldateien
 
-1. Schauen Sie sich die Sammlungsdateifreigabe an, z. B.\\\\Staging\\cases$\\*, für den Sammlungsordner des Benutzers. Der Name des Ordners wird folgendermaßen formatiert:  *yyyyMMddHHmm_UserName*  .
+1. Watch the collection file share, for example \\\\Staging\\cases$\\*, for the collection folder from the user. The name of the folder will be formatted like this:  *yyyyMMddHHmm_UserName*  .
     
-2. Wenn die Sammlung abgeschlossen ist, öffnen Sie den Sammlungsordner, und navigieren Sie zum Ordner _Log. Im Ordner _Log finden Sie Folgendes:
+2. When the collection is completed, open the collection folder, and browse to the _Log folder. In the _Log folder, you will see the following:
     
-  - Eine XML-Datei für jedes lokale Laufwerk auf dem Computer des Benutzers, z. B. **A.xml**, **C.xml**. Diese Dateien enthalten die Bestandslaufwerke, nach denen sie benannt sind, und sie werden für den robocopy-Vorgang verwendet.
+  - One XML file for every local drive on the user's computer, for example **A.xml**, **C.xml**. These files contain the inventory drives that they are named after, and they are used for the robocopy operation.
     
     > [!NOTE]
-    > Das Sammlungsskript erstellt nur für die Dateitypen einen Eintrag in der Bestandsdatei, die Sie im Skript selbst definiert haben. Es erstellt nicht für jede Datei auf dem Computer des Benutzers einen Bestandseintrag. 
+    > The collection script will only create an entry in the inventory file for the file types that you defined in the script itself. It will not create an inventory entry for every file on the user's computer. 
   
-  - Eine Protokolldatei mit dem Namen FileCopyErrors.log für jede Sammlungsausführung. Diese Datei enthält eine Auflistung der Dateien, die robocopy nicht in die Sammlungsdateifreigabe kopieren konnte, z. B. \\\\Staging\\cases$\\*. Sie müssen dies überprüfen und entscheiden, welche Aktionen für diese ausgelassenen Dateien ausgeführt werden sollen. In der Regel müssen Sie sie entweder manuell sammeln, wenn Sie sie benötigen, oder Sie entscheiden, dass sie nicht erforderlich sind und daher aus der Sammlung weggelassen werden können.
+  - One log file named FileCopyErrors.log for each collection run. This file contains a listing of the files that robocopy could not copy to the file collection share, for example, \\\\Staging\\cases$\\*. You will need to review this and decide what actions to take for these missed files. Usually, you either need to collect them manually if you want them, or you may decide that they are not required and can therefore be omitted from the collection.
     
 ### <a name="pst-import-option-a-for-exchange-server-2013"></a>PST-Import, Option A, für Exchange Server 2013
 
-1. Melden Sie sich am Server an, der die Sammlungsdateifreigabe hostet, z. B. **Staging**, und öffnen Sie Windows PowerShell. Weitere Informationen zum Starten von Windows PowerShell finden Sie unter[Starting Windows PowerShell on Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
+1. Log on to the server that hosts the collection file share, for example **Staging**, and open Windows PowerShell. For more information about starting Windows PowerShell, see[Starting Windows PowerShell on Windows Server](https://go.microsoft.com/fwlink/p/?LinkId=615115).
     
-2. Legen Sie die Ausführungsrichtlinie auf uneingeschränkt fest. Geben Sie  `Set-ExecutionPolicy Unrestricted -Scope Process` in Windows PowerShell ein, und drücken Sie die EINGABETASTE.
+2. Set the Execution policy to Unrestricted . Type  `Set-ExecutionPolicy Unrestricted -Scope Process` into Windows PowerShell, and press Enter.
     
-3. Führen Sie die Datei „PSTImportScript.ps1" aus, und geben Sie die Parameter **$SourcePath** und **$MailboxAlias** an. Weitere Informationen zum Ausführen von Windows PowerShell-Skripts finden Sie unter[Ausführen von Skripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
+3. Run the PSTImportScript.ps1 file, and provide the **$SourcePath** and **$MailboxAlias** parameters. For more information about running Windows PowerShell scripts, see[Running Scripts](https://go.microsoft.com/fwlink/p/?LinkID=615117).
     
 4. Überprüfen Sie die Ausgabe auf Fehler.
     
-5. Bevor Sie versuchen, eine gleichnamige PST-Datei in dasselbe Postfach zu importieren, müssen Sie die Anforderung für den Postfachimport entfernen. Führen Sie dazu den folgenden Befehl aus:  `Get-MailboxImportRequest | Remove-MailboxImportRequest`. Sie werden aufgefordert, jede einzelne Anforderung aus der Warteschlange zu entfernen. Reagieren Sie je nach Bedarf.
+5. Before you attempt to import an identically named PST file into the same mailbox, you have to remove the mailbox import request. Run the following command to do that:  `Get-MailboxImportRequest | Remove-MailboxImportRequest`. You will be prompted to remove each individual request from the queue. Respond as needed.
     
 ### <a name="pst-import-option-b-for-exchange-online"></a>PST-Import, Option B, für Exchange Online
 
-- Um die gesammelten PST-Dateien in Exchange Online zu platzieren, befolgen Sie die Verfahren im Abschnitt „Importieren von Dateien in Office 365 über den Netzwerkupload" unter [Office 365-Importdienst](https://go.microsoft.com/fwlink/p/?LinkId=614938).
+- Wenn Sie die gesammelten PST-Dateien in Exchange Online platzieren möchten, führen Sie die Verfahren im Ordner "Importieren von Dateien in Microsoft 365 über [Netzwerk Upload](https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files)" aus.
     
 ### <a name="move-to-cold-storage"></a>Verschieben in Cold Storage
 
-1. Führen Sie das Runbook **MoveToColdStorage** anhand der Verfahren unter[Bereitstellen von Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615123) aus.
+1. Führen Sie die **das movetocoldstorage** -Runbook mithilfe der Verfahren in [Ausführen von Runbooks](https://go.microsoft.com/fwlink/p/?LinkId=615123)aus.
     
-2. Schauen Sie sich die Azure-Dateifreigabe an, die Sie für die langfristige Speicherung verwenden, z. B. \\\\AZFile1\\ContentColdStorage, und die lokale Sammlungsdateifreigabe, z. B. \\\\Staging\\cases$. Die Dateien und Ordner sollten in der Cold Storage-Dateifreigabe eingeblendet und in der Sammlungsdateifreigabe ausgeblendet werden.
+2. Watch the Azure file share you are using for long term storage, for example \\\\AZFile1\\ContentColdStorage and the on-premises collection file share, for example \\\\Staging\\cases$. You should see the files and folders appear in the cold storage file share and disappear from the collection file share.
     
 ### <a name="ediscovery"></a>eDiscovery
 
-1. Lassen Sie entweder zu, dass die vollständige Durchforstung der Cold Storage-Dateifreigabe wie geplant ausgeführt wird, oder initiieren Sie eine Durchforstung. Weitere Informationen zum Starten vollständiger oder inkrementeller Durchforstungen finden Sie unter [Starten, Unterbrechen, Fortsetzen oder Anhalten von Durchforstungen in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
+1. Either allow the full crawl of the cold storage file share to run as schedules, or initiate a crawl. For more information on starting full or incremental crawls, see [Start, pause, resume, or stop a crawl in SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=615005).
     
 2. Erstellen Sie einen eDiscovery-Fall in SharePoint 2013, wenn Sie Option A für den PST-Dateiimport verwendet haben, oder erstellen Sie einen eDiscovery-Fall in SharePoint Online, wenn Sie Option B verwendet haben.
     

@@ -1,7 +1,7 @@
 ---
 title: Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren
-ms.author: markjjo
-author: markjjo
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -18,12 +18,12 @@ ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
 description: 'Dieser Artikel richtet sich an Administratoren. Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der Benutzer möchte, dass er zurückkehrt, kann ihn jedoch nicht wiederherstellen. Möglicherweise können Sie die bereinigten Elemente wiederherstellen, wenn Sie nicht dauerhaft aus dem Postfach des Benutzers entfernt wurden. '
-ms.openlocfilehash: 869bef4b801b92d0e48daaec266cb3a705cb577f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845126"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998309"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren
 
@@ -38,16 +38,16 @@ Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der 
 Im folgenden finden Sie die Schritte zum erneuten aufdecken gelöschter Elemente im Postfach eines Benutzers. Wie lange dauert das? Je nachdem, wie viele Elemente Sie wiederherstellen möchten, kann es zum ersten Mal 20 bis 30 Minuten dauern, bis alle Schritte ausgeführt wurden.
   
 > [!NOTE]
-> Sie müssen ein Exchange- **Administrator** oder **globaler Administrator** in Office 365 sein oder ein Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Office 365-Administratorrollen](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+> Sie müssen ein Exchange- **Administrator** oder **globaler Administrator** in Microsoft 365 sein oder ein Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein, um die Schritte in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
   
 ## <a name="step-1-assign-yourself-ediscovery-permissions"></a>Schritt 1: Zuweisen von eDiscovery-Berechtigungen für sich selbst
 <a name="step1"> </a>
 
 Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Exchange Online zuzuweisen, sodass Sie das in-Place-eDiscovery-Tool zum Durchsuchen eines Benutzerpostfachs verwenden können. Dieser Vorgang ist nur einmal erforderlich. Wenn Sie in Zukunft ein anderes Postfach durchsuchen müssen, können Sie diesen Schritt überspringen.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Firmen- oder Schulkonto an. 
+1. [Wo können Sie sich bei Microsoft 365 for Business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Geschäfts-oder Schulkonto anmelden? 
     
-2. Wählen Sie das App ![-Startfeld-Symbol im Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) oben links das App-Start Symbol aus, und klicken Sie dann auf **Admin**.
+2. Klicken Sie oben links auf das App-Startfeld ![ -Symbol des App-Startprogramms in Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und klicken Sie dann auf **Admin**.
     
 3. Erweitern Sie im linken Navigationsbereich des Microsoft 365 Admin Center den Knoten **Admin**Center, und klicken Sie dann auf **Exchange**.
     
@@ -55,11 +55,11 @@ Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Excha
   
 4. Klicken Sie im Exchange Admin Center auf **Berechtigungen**, und klicken Sie dann auf **Administratorrollen**.
     
-5. Wählen Sie in der Listenansicht die Option **Discovery Management**aus, und klicken Sie](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)dann auf Bearbeitungssymbol **Bearbeiten**![.
+5. Wählen Sie in der Listenansicht die Option **Discovery Management**aus, und klicken Sie dann auf Bearbeitungssymbol **Bearbeiten** ![ ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) .
     
     ![Fügen Sie sich selbst der Rollengruppe "Discoveryverwaltung" in der Exchange-Verwaltungskonsole hinzu.](media/e5c98e93-d6a0-40c5-a143-bac956eedaa7.png)
   
-6. Klicken Sie in der **Rollengruppe**unter **Mitglieder**auf Add-](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)Symbol **Hinzufügen**![.
+6. Klicken Sie in der **Rollengruppe**unter **Mitglieder**auf Add-Symbol **Hinzufügen** ![ ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
 7. Wählen Sie in **Mitglieder auswählen**aus der Liste der Namen aus, klicken Sie auf **Hinzufügen**, und klicken Sie dann auf **OK**.
     
@@ -68,7 +68,7 @@ Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Excha
   
 8. Klicken Sie unter **Rollengruppe**auf **Speichern**.
     
-9. Abmelden bei Office 365.
+9. Melden Sie sich bei Microsoft 365 an.
     
     Sie müssen sich abmelden, bevor Sie mit dem nächsten Schritt beginnen, damit die neuen Berechtigungen wirksam werden.
     
@@ -82,19 +82,19 @@ Der erste Schritt besteht darin, sich die erforderlichen Berechtigungen in Excha
 
 Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundable Items" in dem von Ihnen gesuchten Postfach automatisch in die Suche einbezogen. Im Ordner "Wiederherstellbare Elemente" werden endgültig gelöschte Elemente gespeichert, bis Sie aus dem Postfach gelöscht (endgültig entfernt) werden. Wenn ein Element nicht bereinigt wurde, sollte es mithilfe des in-Place-eDiscovery-Tools gefunden werden können.
   
-1. [Where to sign in to Office 365 for business](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Firmen- oder Schulkonto an. 
+1. [Wo können Sie sich bei Microsoft 365 for Business](https://support.microsoft.com/office/where-to-sign-into-microsoft-365-for-business-e9eb7d51-5430-4929-91ab-6157c5a050b4) mit Ihrem Geschäfts-oder Schulkonto anmelden? 
     
-2. Wählen Sie das App ![-Startfeld-Symbol im Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) oben links das App-Start Symbol aus, und klicken Sie dann auf **Admin**.
+2. Klicken Sie oben links auf das App-Startfeld ![ -Symbol des App-Startprogramms in Microsoft 365 ](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) , und klicken Sie dann auf **Admin**.
     
 3. Erweitern Sie im linken Navigationsbereich im Microsoft 365 Admin Center den Knoten **Admin**, und klicken Sie dann auf **Exchange**.
     
-4. Klicken Sie in der Exchange-Verwaltungskonsole auf **Richtlinientreue Verwaltung**, klicken Sie auf **in-situ-eDiscovery &amp; **-Speicher, und klicken Sie dann auf **Neues**![Symbol](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)hinzufügen.
+4. Klicken Sie in der Exchange-Verwaltungskonsole auf **Richtlinientreue Verwaltung**, klicken Sie auf **in-situ-eDiscovery &amp; -** Speicher, und klicken Sie dann auf **Neues** ![ Symbol hinzufügen ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![Klicken Sie in der Exchange-Verwaltungskonsole auf der Seite Compliance-Verwaltung auf in-situ-eDiscovery und halten Sie](media/9d9ff0f5-b9be-45b8-8b5e-6037a856b0a8.png)
   
 5. Geben Sie auf der Seite **Name und Beschreibung** einen Namen für die Suche ein (beispielsweise den Namen des Benutzers, für den Sie eine e-Mail-Nachricht wiederhergestellt haben), eine optionale Beschreibung, und klicken Sie dann auf **weiter**.
     
-6. Klicken Sie auf der Seite **Post** Fächer auf **zu durchsuchende Postfächer angeben**, und klicken](media/8ee52980-254b-440b-99a2-18d068de62d3.gif)Sie dann auf Add-Symbol **Hinzufügen**![.
+6. Klicken Sie auf der Seite **Post** Fächer auf **zu durchsuchende Postfächer angeben**, und klicken Sie dann auf Add-Symbol **Hinzufügen** ![ ](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) .
     
     ![Klicken Sie auf Postfächer für die Suche angeben, um ein spezifische-Postfach zu durchsuchen](media/83879a40-5e5c-49a8-be3b-c0023d197588.png)
   
@@ -129,26 +129,26 @@ Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundabl
     
     Nachdem Sie die Suche gestartet haben, zeigt Exchange eine Schätzung der Gesamtgröße und der Anzahl der Elemente an, die von der Suche basierend auf den von Ihnen angegebenen Kriterien zurückgegeben werden.
     
-11. Wählen Sie die soeben erstellte Suche aus, **und klicken Sie auf**![Aktualisierung aktualisieren](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die im Detailbereich angezeigten Informationen zu aktualisieren. Der Status der **erfolgreichen Schätzung** zeigt an, dass die Suche abgeschlossen wurde. Exchange zeigt außerdem eine Schätzung der Gesamtanzahl der Elemente (und deren Größe) an, die bei der Suche basierend auf den in Schritt 9 angegebenen Suchkriterien gefunden wurden. 
+11. Wählen Sie die soeben erstellte Suche aus, **und klicken Sie auf Aktualisierung aktualisieren** ![ ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die im Detailbereich angezeigten Informationen zu aktualisieren. Der Status der **erfolgreichen Schätzung** zeigt an, dass die Suche abgeschlossen wurde. Exchange zeigt außerdem eine Schätzung der Gesamtanzahl der Elemente (und deren Größe) an, die bei der Suche basierend auf den in Schritt 9 angegebenen Suchkriterien gefunden wurden. 
     
 12. Klicken Sie im Detailbereich auf **Suchergebnisse** anzeigen, um die gefundenen Elemente anzuzeigen. Dies kann Ihnen helfen, die gesuchten Elemente zu identifizieren. Wenn Sie feststellen, welche Elemente Sie wiederherstellen möchten, fahren Sie mit Schritt 4 fort, um die Suchergebnisse in eine PST-Datei zu exportieren. 
     
     ![Klicken Sie auf Suchergebnisse anzeigen, um das Element anzuzeigen, das Sie wiederherstellen möchten.](media/a2cea921-dafa-45d6-97d4-ae45a226b8d3.png)
   
-13. Wenn Sie nicht finden, wonach Sie suchen, können Sie Ihre Suchkriterien überarbeiten, indem Sie die Suche auswählen, ****![auf Bearbeitungssymbol](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)bearbeiten klicken und dann auf **Suchabfrage**klicken. Ändern Sie die Suchkriterien, und führen Sie dann die Suche erneut aus.
+13. Wenn Sie nicht finden, wonach Sie suchen, können Sie Ihre Suchkriterien überarbeiten, indem Sie die Suche auswählen, auf Bearbeitungssymbol **Bearbeiten**klicken ![ ](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) und dann auf **Suchabfrage**klicken. Ändern Sie die Suchkriterien, und führen Sie dann die Suche erneut aus.
     
 [Return to top](recover-deleted-items-in-a-mailbox.md)
   
 ## <a name="optional-step-3-copy-the-search-results-to-a-discovery-mailbox"></a>Optional Schritt 3: Kopieren der Suchergebnisse in ein Discovery-Postfach
 <a name="step3"> </a>
 
-Wenn Sie keine Elemente finden können, indem Sie eine Vorschau der Suchergebnisse anzeigen oder die Elemente im Ordner "Wiederherstellbare Elemente" des Benutzers anzeigen möchten, können Sie die Suchergebnisse in ein spezielles Postfach (als Discovery-Postfach bezeichnet) kopieren und dann dieses Postfach in Outlook im Internet öffnen t o zeigen Sie die tatsächlichen Elemente an. Der beste Grund zum Kopieren der Suchergebnisse ist, dass Sie die Elemente im Ordner "refundable Items" des Benutzers anzeigen können. Mehr als wahrscheinlich befindet sich das Element, das Sie wiederherstellen möchten, im Unterordner purges. 
+Wenn Sie keine Elemente finden können, indem Sie eine Vorschau der Suchergebnisse anzeigen oder die Elemente im Ordner "Wiederherstellbare Elemente" des Benutzers anzeigen möchten, können Sie die Suchergebnisse in ein spezielles Postfach (als Discovery-Postfach bezeichnet) kopieren und dann dieses Postfach in Outlook im Internet öffnen, um die tatsächlichen Elemente anzuzeigen. Der beste Grund zum Kopieren der Suchergebnisse ist, dass Sie die Elemente im Ordner "refundable Items" des Benutzers anzeigen können. Mehr als wahrscheinlich befindet sich das Element, das Sie wiederherstellen möchten, im Unterordner purges. 
   
 1. Wechseln Sie im Exchange Admin Center zu **Compliance Management** \> **in-situ-eDiscovery &amp; Hold**.
     
 2. Wählen Sie in der Liste der Suchvorgänge die Suche aus, die Sie in Schritt 2 erstellt haben.
     
-3. ![Klicken **Sie auf Such Suche**](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png), und klicken Sie dann in der Dropdownliste auf **Suchergebnisse kopieren** . 
+3. Klicken **Sie auf Such Suche** ![ ](media/c94e8591-7044-4650-a0d1-c57c0633ab4f.png) , und klicken Sie dann in der Dropdownliste auf **Suchergebnisse kopieren** . 
     
     ![Klicken Sie auf suchen, und klicken Sie dann auf Suchergebnisse kopieren](media/7888df82-94b4-4e44-8a53-f66854dc7c86.png)
   
@@ -161,13 +161,13 @@ Wenn Sie keine Elemente finden können, indem Sie eine Vorschau der Suchergebnis
     ![Kopieren der Suchergebnisse in das standardmäßige Ermittlungs Such Postfach](media/36e8ef47-0035-4982-9ed6-426719c5f9ec.png)
   
     > [!NOTE]
-    > Das Ermittlungs Such Postfach ist ein Standard Ermittlungspostfach, das automatisch in Ihrer Office 365 Organisation erstellt wird. 
+    > Das Ermittlungs Such Postfach ist ein Standard Ermittlungspostfach, das automatisch in Ihrer Microsoft 365-Organisation erstellt wird. 
   
 6. Klicken Sie auf der Seite **Suchergebnisse kopieren** auf **Kopieren** , um den Prozess zum Kopieren der Suchergebnisse in das Ermittlungs Such Postfach zu starten. 
     
     ![Klicken Sie auf Kopieren, um die Suchergebnisse in das Ermittlungs Such Postfach zu kopieren.](media/71307a9d-f7a1-4e01-ae37-1d49040cc3fd.png)
   
-7. ![Klicken **Sie auf Aktualisierung aktualisieren**](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die Informationen zum Kopierstatus zu aktualisieren, die im Detailbereich angezeigt werden. 
+7. Klicken **Sie auf Aktualisierung aktualisieren** ![ ](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) , um die Informationen zum Kopierstatus zu aktualisieren, die im Detailbereich angezeigt werden. 
     
 8. Wenn der Kopiervorgang abgeschlossen ist, klicken Sie auf **Öffnen** , um das Ermittlungs Such Postfach zu öffnen, um die Suchergebnisse anzuzeigen. 
     
@@ -239,7 +239,7 @@ Sie müssen die Outlook-Desktop-App verwenden, um ein gelöschtes Element mithil
   
 1. Klicken Sie in Outlook 2013 oder Outlook 2016 auf die Registerkarte **Datei** . 
     
-2. Klicken Sie auf **Export öffnen &amp; **, und klicken Sie dann auf **Outlook-Datendatei öffnen**.
+2. Klicken Sie auf ** &amp; Export öffnen**, und klicken Sie dann auf **Outlook-Datendatei öffnen**.
     
 3. Wechseln Sie zu dem Speicherort, an dem Sie die PST-Datei gespeichert haben, die Ihr Administrator gesendet hat.
     
@@ -256,7 +256,7 @@ Sie müssen die Outlook-Desktop-App verwenden, um ein gelöschtes Element mithil
     > [!TIP]
     > Suchen Sie im Ordner Löschvorgänge nach dem Element, das Sie wiederherstellen möchten. Dies ist ein ausgeblendeter Ordner, in den bereinigte Elemente verschoben werden. Wahrscheinlich ist das Element, das der Administrator wiederhergestellt hat, in diesem Ordner. 
   
-6. Klicken Sie mit der rechten Maustaste auf das Element, das Sie wiederherstellen möchten, und klicken Sie dann auf **anderen Ordner** **verschoben** \> .
+6. Klicken Sie mit der rechten Maustaste auf das Element, das Sie **Move** wiederherstellen möchten, und klicken Sie dann auf \> **anderen Ordner**verschoben.
     
     ![Klicken Sie auf "weiter" und dann auf "anderer Ordner"](media/090063df-2aa0-444a-8e47-abd6fe6cf7a8.png)
   
@@ -264,11 +264,11 @@ Sie müssen die Outlook-Desktop-App verwenden, um ein gelöschtes Element mithil
     
     **Tipp:** Führen Sie einen der folgenden Schritte aus, um andere Elementtypen wiederherzustellen: 
     
-  - Um ein Kalenderelement wiederherzustellen, klicken Sie mit der rechten Maustaste darauf, und klicken Sie dann auf **anderen Ordner** \> **Kalender** **verschoben** \> .
+  - Um ein Kalenderelement wiederherzustellen, klicken Sie mit der rechten Maustaste darauf **Move** , und klicken Sie dann auf \> **anderen Ordner** \> **Kalender**verschoben.
     
-  - Klicken Sie zum Wiederherstellen eines Kontakts mit der rechten Maustaste darauf, und klicken Sie dann auf **andere Ordner** \> **Kontakte** **weiter** \> leiten.
+  - Klicken Sie zum Wiederherstellen eines Kontakts mit der rechten Maustaste darauf **Move** , und klicken Sie dann auf \> **andere Ordner** \> **Kontakte**weiterleiten.
     
-  - Klicken Sie zum Wiederherstellen einer Aufgabe mit der rechten Maustaste darauf, und klicken Sie dann auf **andere Ordner** \> **Aufgaben** **weiter** \> leiten.
+  - Klicken Sie zum Wiederherstellen einer Aufgabe mit der rechten Maustaste darauf, **Move** und klicken Sie dann auf \> **andere Ordner** \> **Aufgaben**weiterleiten.
     
 ![Auswählen eines Ordners zum Migrieren anderer Elementtypen](media/f8290131-43f2-46f1-bc07-228c2d83b96c.png)
   

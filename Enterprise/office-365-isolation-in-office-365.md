@@ -1,7 +1,7 @@
 ---
-title: Office 365 Isolierung und Zugriffssteuerung in Office 365
-ms.author: robmazz
-author: robmazz
+title: Isolierung und Zugriffskontrolle in Microsoft 365
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,23 +15,23 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: 'Zusammenfassung: eine Erläuterung der Isolierung und Zugriffssteuerung in den verschiedenen Anwendungen von Office 365.'
-ms.openlocfilehash: bdb06db7cae81e4f7356c6be01fee994b60fea75
-ms.sourcegitcommit: 1697b188c050559eba9dade75630bd189f5247a9
+description: 'Zusammenfassung: eine Erläuterung der Isolierung und Zugriffssteuerung in den verschiedenen Anwendungen von Microsoft 365.'
+ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892124"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998789"
 ---
-# <a name="isolation-and-access-control-in-office-365"></a>Isolierung und Zugriffskontrolle in Office 365
+# <a name="isolation-and-access-control-in-microsoft-365"></a>Isolierung und Zugriffskontrolle in Microsoft 365
 
-Azure Active Directory und Office 365 verwenden ein hoch komplexes Datenmodell, das Dutzende von Diensten, Hunderte von Entitäten, Tausende von Beziehungen und Zehntausende von Attributen umfasst. Auf hoher Ebene sind Azure Active Directory und die Dienst Verzeichnisse die Container von Mandanten und Empfängern, die mithilfe von statusbasierten Replikationsprotokollen synchron gehalten werden. Zusätzlich zu den Verzeichnisinformationen, die in Azure Active Directory aufbewahrt werden, verfügen alle Dienst Arbeitslasten über eine eigene Verzeichnisdienst-Infrastruktur.
+Azure Active Directo ry (Azure AD) und Microsoft 365 verwenden ein hoch komplexes Datenmodell, das Dutzende von Diensten, Hunderte von Entitäten, Tausende von Beziehungen und Zehntausende von Attributen umfasst. Auf einer hohen Ebene sind Azure AD und die Dienst Verzeichnisse die Container von Mandanten und Empfängern, die mithilfe von statusbasierten Replikationsprotokollen synchron gehalten werden. Zusätzlich zu den Verzeichnisinformationen, die in Azure AD aufbewahrt werden, verfügen alle Dienst Arbeitslasten über eine eigene Verzeichnisdienst-Infrastruktur.
  
-![Office 365 Mandantendaten Synchronisierung](media/office-365-isolation-tenant-data-sync.png)
+![Microsoft 365 Mandantendaten Synchronisierung](media/office-365-isolation-tenant-data-sync.png)
 
-In diesem Modell gibt es keine einzelne Quelle für Verzeichnisdaten. Bestimmte Systeme besitzen einzelne Daten, aber kein einzelnes System besitzt alle Daten. Office 365 Dienste kooperieren mit Azure Active Directory in diesem Datenmodell. Azure Active Directory ist das "System der Wahrheit" für freigegebene Daten, bei dem es sich typischerweise um kleine und statische Daten handelt, die von jedem Dienst verwendet werden. Das in Office 365 und Azure Active Directory verwendete Verbundmodell stellt die freigegebene Ansicht der Daten bereit.
+In diesem Modell gibt es keine einzelne Quelle für Verzeichnisdaten. Bestimmte Systeme besitzen einzelne Daten, aber kein einzelnes System besitzt alle Daten. Microsoft 365-Dienste kooperieren mit Azure AD in diesem Datenmodell. Azure AD ist das "System der Wahrheit" für freigegebene Daten, bei dem es sich typischerweise um kleine und statische Daten handelt, die von jedem Dienst verwendet werden. Das Verbundmodell, das in Microsoft 365 und Azure AD verwendet wird, stellt die freigegebene Ansicht der Daten bereit.
 
-Office 365 verwendet sowohl physischen Speicher als auch Azure-Cloud-Speicher. Exchange Online (einschließlich Exchange Online Schutz) und Skype for Business ihren eigenen Speicher für Kundendaten verwenden. SharePoint Online verwendet sowohl SQL Server Speicher als auch Azure-Speicher, daher ist die zusätzliche Isolierung von Kundendaten auf Speicherebene erforderlich.
+Microsoft 365 verwendet sowohl physischen Speicher als auch Azure-Cloud-Speicher. Exchange Online (einschließlich Exchange Online Schutz) und Skype for Business ihren eigenen Speicher für Kundendaten verwenden. SharePoint Online verwendet sowohl SQL Server Speicher als auch Azure-Speicher, daher ist die zusätzliche Isolierung von Kundendaten auf Speicherebene erforderlich.
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -43,11 +43,11 @@ Der Inhalt des Benutzerpostfachs umfasst Folgendes:
 - Kalender-und Frei/Gebucht-Informationen
 - Kontakte
 - Aufgaben
-- Anmerkungen
+- Notes
 - Gruppen
 - Rückschluss Daten
 
-Jede Postfachdatenbank in Exchange Online enthält Postfächer von mehreren Mandanten. Ein Autorisierungscode sichert jedes Postfach, auch innerhalb eines Mandanten. Standardmäßig hat nur der zugewiesene Benutzer Zugriff auf ein Postfach. Die Zugriffssteuerungsliste (Access Control List, ACL), die ein Postfach sichert, enthält eine von Azure Active Directory auf Mandantenebene authentifizierte Identität. Die Postfächer für jeden Mandanten sind auf Identitäten beschränkt, die für den Authentifizierungsanbieter des Mandanten authentifiziert wurden, der nur Benutzer von diesem Mandanten enthält. Inhalte in Mandant a können von Benutzern in Mandant B nicht in irgendeiner Weise abgerufen werden, es sei denn, Sie werden von Mandanten a ausdrücklich genehmigt.
+Jede Postfachdatenbank in Exchange Online enthält Postfächer von mehreren Mandanten. Ein Autorisierungscode sichert jedes Postfach, auch innerhalb eines Mandanten. Standardmäßig hat nur der zugewiesene Benutzer Zugriff auf ein Postfach. Die Zugriffssteuerungsliste (Access Control List, ACL), die ein Postfach sichert, enthält eine Identität, die von Azure AD auf Mandantenebene authentifiziert wurde. Die Postfächer für jeden Mandanten sind auf Identitäten beschränkt, die für den Authentifizierungsanbieter des Mandanten authentifiziert wurden, der nur Benutzer von diesem Mandanten enthält. Inhalte in Mandant a können von Benutzern in Mandant B nicht in irgendeiner Weise abgerufen werden, es sei denn, Sie werden von Mandanten a ausdrücklich genehmigt.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
@@ -63,7 +63,7 @@ SharePoint Online verfügt über mehrere unabhängige Mechanismen zur Datenisoli
 
 Wenn ein Benutzer direkten Zugriff auf den Speicher erhält, der die Daten enthält, kann der Inhalt nicht für einen Menschen oder ein anderes System als SharePoint Online interpretiert werden. Diese Mechanismen umfassen Sicherheitszugriffssteuerung und Eigenschaften. Alle SharePoint Online Ressourcen werden durch den Autorisierungscode und die RBAC-Richtlinie gesichert, einschließlich innerhalb eines Mandanten. Die Zugriffssteuerungsliste (Access Control List, ACL), die eine Ressource sichert, enthält eine auf Mandantenebene authentifizierte Identität. SharePoint Online Daten für einen Mandanten sind auf vom Authentifizierungsanbieter für den Mandanten authentifizierte Identitäten limitiert.
 
-Zusätzlich zu den ACLs wird eine Eigenschaft auf Mandantenebene, die den Authentifizierungsanbieter angibt (Dies ist die mandantenspezifische Azure-Active Directory), einmal geschrieben und kann nicht mehr geändert werden, nachdem Sie festgelegt wurde. Nachdem die Mandanten Eigenschaft des Authentifizierungsanbieters für einen Mandanten festgelegt wurde, kann Sie nicht mithilfe aller für einen Mandanten verfügbar gemachten APIs geändert werden.
+Zusätzlich zu den ACLs wird eine Eigenschaft auf Mandantenebene, die den Authentifizierungsanbieter angibt (die mandantenspezifische Azure AD), einmal geschrieben und kann nicht mehr geändert werden, nachdem Sie festgelegt wurde. Nachdem die Mandanten Eigenschaft des Authentifizierungsanbieters für einen Mandanten festgelegt wurde, kann Sie nicht mithilfe aller für einen Mandanten verfügbar gemachten APIs geändert werden.
 
 Für jeden Mandanten wird eine eindeutige *Abonnement* -Nr verwendet. Alle Kunden Standorte befinden sich im Besitz eines Mandanten und weisen dem Mandanten eine eindeutige *Abonnement* -Nummer zu. Die *Subscription* -Eigenschaft für eine Website wird einmal geschrieben und ist dauerhaft. Nachdem eine Website einem Mandanten zugewiesen wurde, kann Sie nicht zu einem anderen Mandanten verschoben werden. Die *Abonnement* -Nr ist der Schlüssel, der zum Erstellen des Sicherheitsbereichs für den Authentifizierungsanbieter verwendet wird und an den Mandanten gebunden ist.
 
@@ -71,7 +71,7 @@ SharePoint Online verwendet SQL Server und Azure-Speicher für die Speicherung v
 
 SharePoint Online speichert verschlüsselte Dateiinhalte in Microsoft Azure BLOBs. Jede SharePoint Online Farm verfügt über ein eigenes Microsoft Azure Konto, und alle in Azure gespeicherten BLOBs werden einzeln mit einem Schlüssel verschlüsselt, der im SQL-Inhaltsspeicher gespeichert ist. Der Verschlüsselungsschlüssel, der in Code von der Autorisierungs Schicht geschützt wird und nicht direkt für den Endbenutzer verfügbar gemacht wird. SharePoint Online verfügt über eine Echtzeitüberwachung, um zu erkennen, wann eine HTTP-Anforderung Daten für mehr als einen Mandanten liest oder schreibt. Die Anforderungs-ID- *Abonnement* -ID wird anhand der *Abonnement* -ID der aufgerufenen Ressource nachverfolgt. Anforderungen für den Zugriff auf Ressourcen von mehr als einem Mandanten sollten niemals durch Endbenutzer geschehen. Dienstanforderungen in einer Umgebung mit mehreren Mandanten sind die einzige Ausnahme. Der Suchcrawler zieht beispielsweise Inhaltsänderungen für eine gesamte Datenbank gleichzeitig durch. Dies umfasst normalerweise das Abfragen von Websites von mehr als einem Mandanten in einer einzelnen Dienstanforderung, was aus Effizienzgründen geschieht.
 
-## <a name="teams"></a>Teams
+## <a name="teams"></a>Microsoft Teams
 
 Ihre Teams-Daten werden je nach Inhaltstyp unterschiedlich gespeichert. 
 

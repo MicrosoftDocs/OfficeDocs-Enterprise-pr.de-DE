@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 75fa293a-b51c-42d0-ad90-5b3d9c9b0cd4
 description: 'Zusammenfassung: Verwenden Sie die folgenden Artikel, um Sicherheitslösungen mit Microsoft-Cloudangeboten bereitzustellen.'
-ms.openlocfilehash: aecb9f8d23b04cbc5c4d8065708ba8171f1ea555
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: cc32383a2a8e9d0849e68bf7305b19edb067cb11
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711828"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998177"
 ---
 # <a name="security-solutions"></a>Sicherheitslösungen
 
- **Zusammenfassung:** Verwenden Sie die folgenden Artikel, um Sicherheitslösungen mit Microsoft-Cloudangeboten bereitzustellen.
-  
 Hier finden Sie Lösungen für sicheren Zugriff, Zusammenarbeit und Daten mit Microsoft Office 365, Microsoft Azure, Microsoft Dynamics 365 und der Microsoft Enterprise Mobility + Security-Suite (EMS):
 
 - [Schutz von Informationen in Office 365 für die DSGVO](office-365-information-protection-for-gdpr.md)

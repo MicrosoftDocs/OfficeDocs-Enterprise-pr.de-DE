@@ -16,17 +16,15 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Zusammenfassung: Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.'
-ms.openlocfilehash: 558b3eb612d67b3135a762326382218ae4f286c1
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711565"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998013"
 ---
 # <a name="hybrid-solutions"></a>Hybridlösungen
 
- **Zusammenfassung:** Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.
-  
 Mit Microsoft Azure können Sie nun einige Office Server-Arbeitslasten bereitstellen, die in der Regel lokal auf Azure-Infrastrukturdiensten bereitgestellt wurden.
   
 Für die Microsoft 365-Identitätsinfrastruktur in Azure:
@@ -37,7 +35,7 @@ Für die Microsoft 365-Identitätsinfrastruktur in Azure:
   
 - [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
     
-- [Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+- [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
     
 Für SharePoint Server 2013-Arbeitslasten in Azure:
   

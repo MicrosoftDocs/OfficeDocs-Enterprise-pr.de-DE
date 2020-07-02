@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Die hybride moderne Authentifizierung (HMA) ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
-ms.openlocfilehash: d73b7c28ea5b64be46a3e3a40d8160ccdfcea18c
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.openlocfilehash: 74c7ba7f050c4ac6f6c9b0e6eee7a399a15b196a
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774520"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997381"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Bei der Hybriden modernen Authentifizierung (HMA) handelt es sich um eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für lokale Exchange Server-hybridbereitstellungen verfügbar ist.
   
@@ -65,7 +65,7 @@ Da viele Voraussetzungen sowohl für Skype for Business als auch für Exchange g
   
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Hinzufügen von lokalen Webdienst-URLs als SPNs in Azure AD
 
-Führen Sie die Befehle aus, die ihre lokalen Webdienst-URLs als Azure AD SPNs zuweisen. SPNs werden von Clientcomputern und-Geräten während der Authentifizierung und Autorisierung verwendet. Alle URLs, die zum Herstellen einer Verbindung zwischen lokalen und Azure-Active Directory (AAD) verwendet werden können, müssen in Aad registriert sein (Dies umfasst sowohl interne als auch externe Namespaces).
+Führen Sie die Befehle aus, die ihre lokalen Webdienst-URLs als Azure AD SPNs zuweisen. SPNs werden von Clientcomputern und-Geräten während der Authentifizierung und Autorisierung verwendet. Alle URLs, die möglicherweise zum Herstellen einer Verbindung zwischen lokalen und Azure-Active Directory (Azure AD) verwendet werden, müssen in Azure AD registriert sein (Dies umfasst sowohl interne als auch externe Namespaces).
   
 Sammeln Sie zunächst alle URLs, die Sie in Aad hinzufügen müssen. Führen Sie diese Befehle lokal aus:
   

@@ -18,16 +18,16 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
-ms.openlocfilehash: 2f38b88b5d940d1a8aa171c777e82a4a308be0cf
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844556"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998530"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Netzwerkplanung mit ExpressRoute für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
   
@@ -72,13 +72,13 @@ Eine zu geringe Bandbreite führt zu Überlastung, Datenübertragungen und unvor
   
 Um die richtige Bandbreite zu finden, ist es am besten, den vorhandenen Netzwerk Verbrauch zu testen. Dies ist die einzige Möglichkeit, ein echtes Maß an Nutzung und Bedarf zu erhalten, da jede Netzwerkkonfiguration und Anwendungen in gewisser Hinsicht eindeutig sind. Wenn Sie messen möchten, müssen Sie genau auf die gesamte Bandbreitenauslastung, Wartezeit und TCP-Überlastung achten, um Ihre Netzwerkanforderungen zu verstehen.
   
-Sobald Sie einen geschätzten Basisplan mit allen Netzwerkanwendungen haben, wird Pilot Office 365 mit einer kleinen Gruppe, die die verschiedenen Profile von Personen in Ihrer Organisation umfasst, um die tatsächliche Nutzung zu ermitteln, und die beiden Messungen verwenden, um die Anzahl der die Bandbreite, die Sie für die einzelnen Office-Standorte benötigen. Wenn bei Ihren Tests Latenz-oder TCP-Überlastungsprobleme auftreten, müssen Sie den Ausstieg möglicherweise näher an die Personen mit Office 365 oder intensiven Netzwerkscans wie SSL-Entschlüsselung/-Inspektion ziehen.
+Sobald Sie einen geschätzten Basisplan mit allen Netzwerkanwendungen haben, wird Pilot Office 365 mit einer kleinen Gruppe, die die verschiedenen Profile von Personen in Ihrer Organisation umfasst, um die tatsächliche Nutzung zu ermitteln, und die beiden Messungen verwenden, um die Bandbreite zu schätzen, die Sie für die einzelnen Office-Standorte benötigen. Wenn bei Ihren Tests Latenz-oder TCP-Überlastungsprobleme auftreten, müssen Sie den Ausstieg möglicherweise näher an die Personen mit Office 365 oder intensiven Netzwerkscans wie SSL-Entschlüsselung/-Inspektion ziehen.
   
 Alle unsere Empfehlungen für die Art der Netzwerkverarbeitung, die empfohlen wird, gelten sowohl für Express Route als auch für Internet-Schaltkreise. Dies gilt auch für die restlichen Anleitungen auf unserer [Leistungs Optimierungs Website](https://aka.ms/tune).
   
 ## <a name="applying-security-controls-to-azure-expressroute-for-office-365-scenarios"></a>Anwenden von Sicherheitssteuerelementen auf Azure Express Route für Office 365 Szenarien
 
-Das Sichern der Azure Express Route-Konnektivität beginnt mit den gleichen Prinzipien wie das Sichern der Internet Konnektivität. Viele Kunden entscheiden sich für die Bereitstellung von Netzwerk-und Umkreis Steuerungen entlang des Express Route-Pfads, der Ihr lokales Netzwerk mit Office 365 und anderen Microsoft-Clouds verbindet. Diese Steuerelemente können Firewalls, Anwendungsproxys, Verhinderung von Datenverlust, Intrusionserkennung, Intrusion Prevention-Systeme usw. umfassen. In vielen Fällen wenden Kunden unterschiedliche Ebenen von Steuerelementen auf den Datenverkehr an, der von einem lokalen Microsoft-Datenverkehr initiiert wurde, im Gegensatz zum von Microsoft initiierten Datenverkehr, der vom lokalen lokalen Netzwerk des Kunden initiiert wird, im Gegensatz zum Datenverkehr, der von einem lokalen Standort initiiert wird Internet Ziel.
+Das Sichern der Azure Express Route-Konnektivität beginnt mit den gleichen Prinzipien wie das Sichern der Internet Konnektivität. Viele Kunden entscheiden sich für die Bereitstellung von Netzwerk-und Umkreis Steuerungen entlang des Express Route-Pfads, der Ihr lokales Netzwerk mit Office 365 und anderen Microsoft-Clouds verbindet. Diese Steuerelemente können Firewalls, Anwendungsproxys, Verhinderung von Datenverlust, Intrusionserkennung, Intrusion Prevention-Systeme usw. umfassen. In vielen Fällen wenden Kunden unterschiedliche Ebenen von Steuerelementen auf den Datenverkehr an, der von lokalen Microsoft-Datenverkehr initiiert wird, im Gegensatz zum von Microsoft initiierten Datenverkehr, der von einem lokalen Kundendienst initiiert wird, im Gegensatz zum Datenverkehr, der von lokalen Benutzern zu einem allgemeinen Internet Ziel gestartet wird.
   
 Im folgenden finden Sie einige Beispiele für die Integration von Sicherheit mit dem [Express Route-Verbindungsmodell](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) , das Sie bereitstellen möchten.
 
@@ -94,7 +94,7 @@ Wenn Sie die Topologie der Netzwerk/Sicherheitsperimeter-Optionen für die Expre
   
 - Die Steuerelemente Depth und Type Network/Security haben möglicherweise Auswirkungen auf die Leistung und Skalierbarkeit der Office 365 Benutzeroberfläche.
 
-- Ausgehende (lokal-\>Microsoft) und eingehende (Microsoft-\>lokale) [Wenn aktiviert] fließt möglicherweise andere Anforderungen. Diese sind wahrscheinlich unterschiedlich als ausgehende zu allgemeinen Internet-Destinationen.
+- Ausgehende (lokal- \> Microsoft) und eingehende (Microsoft- \> lokale) [Wenn aktiviert] fließt möglicherweise andere Anforderungen. Diese sind wahrscheinlich unterschiedlich als ausgehende zu allgemeinen Internet-Destinationen.
 
 - Office 365 Anforderungen für Ports/Protokolle und erforderliche IP-Subnetze sind identisch, unabhängig davon, ob der Datenverkehr über Express Route für Office 365 oder über das Internet weitergeleitet wird.
 
@@ -148,7 +148,7 @@ Es wird dringend empfohlen, hohe Verfügbarkeit und Ausfallsicherheit in ihren E
 Ihre Verbindungsszenarien sollten eine Netzwerktopologie enthalten, die für mehrere unabhängige und aktive Netzwerkpfade zu Office 365 optimiert ist. Dadurch ergibt sich eine bessere End-to-End-Verfügbarkeit als eine Topologie, die nur für die Redundanz auf der Ebene der einzelnen Geräte oder Geräte optimiert ist.
   
 > [!TIP]
-> Wenn Ihre Benutzer über mehrere Kontinente oder geografische Regionen verteilt sind und jeder dieser Standorte über redundante WAN-Leitungen mit einem einzigen lokalen Standort verbunden ist, an dem sich eine einzelne Express Route-Schaltung befindet, wird Ihren Benutzern eine geringere End-to-End-Dienstverfügbarkeit als ein Netzwerktopologie-Design, das unabhängige Express Route-Schaltkreise enthält, die die verschiedenen Regionen mit dem nächstgelegenen Peering-Standort verbinden.
+> Wenn Ihre Benutzer über mehrere Kontinente oder geografische Regionen verteilt sind und jeder dieser Standorte über redundante WAN-Schaltkreise mit einem einzigen lokalen Standort verbunden ist, auf dem sich eine einzelne Express Route-Schaltung befindet, wird Ihren Benutzern eine geringere End-to-End-Dienstverfügbarkeit als ein Netzwerktopologie-Design mit unabhängigen Express Route-Schaltkreisen zur Verfügung gestellt, die die verschiedenen Regionen mit dem
   
 Es wird empfohlen, mindestens zwei Express Route-Schaltkreise für jede Verbindung mit einem anderen geografischen Peering-Standort zu bieten. Sie sollten dieses aktive-aktive Paar von Schaltkreisen für jede Region, in der Benutzer die Express Route-Konnektivität für Office 365 Dienste verwenden, vorsehen. Dadurch kann jede Region während eines Notfalls verbunden bleiben, der sich auf einen Hauptstandort wie ein Rechenzentrum oder einen Peering-Standort auswirkt. Wenn Sie Sie als aktiv/aktiv konfigurieren, können Endbenutzer Datenverkehr über mehrere Netzwerkpfade verteilt werden. Dies reduziert den Umfang der Personen, die bei Geräten oder Netzwerkausfällen betroffen sind.
   
@@ -176,7 +176,7 @@ Die Netzwerkkonfiguration bei der Woodgrove Bank wird basierend auf einigen wich
 
 In dieser Konfiguration mit Redundanz auf physischer und virtueller Ebene ist die Woodgrove Bank in der Lage, die lokale Ausfallsicherheit, regionale Ausfallsicherheit und globale Ausfallsicherheit auf zuverlässige Weise anzubieten. Woodgrove hat diese Konfiguration gewählt, nachdem eine einzelne Azure Express Route-Schaltung pro Region ausgewertet wurde und die Möglichkeit eines Failovers auf das Internet vorliegt.
   
-Wenn Woodgrove keine mehrere Azure Express Route-Schaltkreise pro Region haben konnte, würde Routing Datenverkehr mit Ursprung in Nordamerika an die Azure Express Route-Schaltung in Asia Pacific eine inakzeptable Wartezeit und die erforderliche DNS-Weiterleitungskonfiguration hinzufügen. Fügt Komplexität hinzu.
+Wenn Woodgrove keine mehrere Azure Express Route-Schaltkreise pro Region haben konnte, würde das Routing von Datenverkehr mit Ursprung in Nordamerika an die Azure Express Route-Schaltung in Asia Pacific ein unannehmbares Maß an Latenz und die erforderliche DNS-Weiterleitungskonfiguration zu Komplexität hinzufügen.
   
 Die Nutzung des Internets als Sicherungskonfiguration wird nicht empfohlen. Dadurch wird das Woodgrove-Zuverlässigkeits Prinzip gebrochen, was zu einer inkonsistenten Erfahrung mit der Verbindung führt. Darüber hinaus wäre eine manuelle Konfiguration für ein Failover erforderlich, in dem die konfigurierten BGP-Ankündigungen, die NAT-Konfiguration, die DNS-Konfiguration und die Proxykonfiguration berücksichtigt wurden. Diese zusätzliche Failover-Komplexität erhöht die Wiederherstellungszeit und verringert die Diagnose-und Problembehandlungsschritte.
   
@@ -210,15 +210,15 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/plan
   
 [Optimieren Ihres Netzwerks für Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[Express Route und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Anruffluss mit Express Route](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Office 365-Leistungsoptimierung mit Basisplänen und Leistungsverlauf](performance-tuning-using-baselines-and-history.md)
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
-[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
   

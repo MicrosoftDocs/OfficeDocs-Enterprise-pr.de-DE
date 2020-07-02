@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten Express Route-Routing Anforderungen und die Express Route-Schaltkreise und Routingdomänen. Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
-ms.openlocfilehash: 0a83499c6724fd4e843a7bf6788ebf4df945f145
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844056"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44998194"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing mit ExpressRoute für Office 365
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten [Express Route-Routing Anforderungen](https://azure.microsoft.com/documentation/articles/expressroute-routing/) und die [Express Route-Schaltkreise und Routingdomänen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
   
@@ -117,7 +117,7 @@ In dieser Tabelle werden die Platzhalterdomänen angezeigt, die für Internet Sc
 |\*. Office.com  <br/> |\*. Outlook.Office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
 |\*. Office.net  <br/> |agent.office.net  <br/> |
 |\*. office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
-|\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. Mail.Protection.Outlook.com  <br/> AutoErmittlung\<-\>Mandant. Outlook.com  <br/> |
+|\*. Outlook.com  <br/> |\*. Protection.Outlook.com  <br/> \*. Mail.Protection.Outlook.com  <br/> AutoErmittlung- \<tenant\> . Outlook.com  <br/> |
 |\*. Windows.net  <br/> |login.windows.net  <br/> |
 
 ## <a name="routing-office-365-traffic-over-the-internet-and-expressroute"></a>Weiterleiten Office 365 Datenverkehrs über das Internet und Express Route
@@ -156,11 +156,11 @@ Die höchsten FQDNs für Exchange Online, SharePoint Online und Skype for Busine
   
 - Outlook.office365.com, Outlook.Office.com
 
-- \<Mandantenname\>. SharePoint.com, \<Mandantenname\>-My.SharePoint.com, \<Mandantenname\>-\<APP\>. SharePoint.com
+- \<tenant-name\>. SharePoint.com, \<tenant-name\> -My.SharePoint.com, \<tenant-name\> - \<app\> . SharePoint.com
 
 - \*. Lync.com zusammen mit den IP-Bereichen für nicht-TCP-Datenverkehr
 
-- \*Broadcast.officeapps.Live.com, \*Excel.officeapps.Live.com, \*OneNote.officeapps.Live.com, \*PowerPoint.officeapps.Live.com, \*View.officeapps.Live.com, \*Visio.officeapps.Live.com, \*Word-Edit.officeapps.Live.com, \*Word-View.officeapps.Live.com, Office.Live.com
+- \*Broadcast.officeapps.Live.com, \* Excel.officeapps.Live.com, \* OneNote.officeapps.Live.com, \* PowerPoint.officeapps.Live.com, \* View.officeapps.Live.com, \* Visio.officeapps.Live.com, \* Word-Edit.officeapps.Live.com, \* Word-View.officeapps.Live.com, Office.Live.com
 
 Erfahren Sie mehr über das [bereitstellen und Verwalten von Proxyeinstellungen in Windows 8](https://blogs.technet.com/b/deploymentguys/archive/2013/05/08/windows-8-supporting-proxy-services-with-static-configurations-web-hosted-pac-files-and-domain-policy-configured-proxy.aspx) und stellen Sie sicher, dass [Office 365 nicht von Ihrem Proxy gedrosselt wird](https://blogs.technet.com/b/onthewire/archive/2014/03/28/ensuring-your-office-365-network-connection-isn-t-throttled-by-your-proxy.aspx).
   
@@ -197,25 +197,25 @@ Dieses Beispiel ist ein Szenario für ein fiktives Unternehmen namens Humongous 
   
 Humongous Insurance ist geografisch mit Niederlassungen auf der ganzen Welt verstreut. Sie möchten Azure Express Route für Office 365 implementieren, um den Großteil des Office 365 Datenverkehrs in direkten Netzwerkverbindungen beizubehalten. Humongous Insurance verfügt auch über Niederlassungen auf zwei weiteren Kontinenten. Die Mitarbeiter in der Remoteniederlassung, in der Express Route nicht durchführbar ist, müssen an eine oder beide der primären Einrichtungen zurückgeleitet werden, um eine Express Route-Verbindung zu verwenden.
   
-Das Leitprinzip besteht darin, so schnell wie möglich Office 365 bestimmten Datenverkehr an ein Microsoft-Rechenzentrum zu erhalten. In diesem Beispiel muss Humongous Insurance entscheiden, ob Ihre Remoteniederlassungen über das Internet weitergeleitet werden sollen, um ein Microsoft-Rechenzentrum über eine beliebige Verbindung so schnell wie möglich zu erreichen, oder ob Ihre Remoteniederlassungen über ein internes Netzwerk weitergeleitet werden sollen, um zu einem Microsoft zu gelangen. Rechenzentrum über eine Express Route-Verbindung so schnell wie möglich.
+Das Leitprinzip besteht darin, so schnell wie möglich Office 365 bestimmten Datenverkehr an ein Microsoft-Rechenzentrum zu erhalten. In diesem Beispiel muss Humongous Insurance entscheiden, ob Ihre Remoteniederlassungen so schnell wie möglich über eine Verbindung über das Internet an ein Microsoft-Rechenzentrum weitergeleitet werden sollen oder ob Ihre Remoteniederlassungen über ein internes Netzwerk weitergeleitet werden sollen, um so schnell wie möglich über eine Express Route-Verbindung an ein Microsoft-Rechenzentrum zu gelangen.
   
 Die Rechenzentren, Netzwerke und Anwendungsarchitektur von Microsoft sind so konzipiert, dass Sie eine global verteilte Kommunikation durchführen und Sie so effizient wie möglich bedienen. Dies ist eines der größten Netzwerke der Welt. Anforderungen für Office 365, die länger als erforderlich in Kundennetzwerken verbleiben, können diese Architektur nicht nutzen.
   
-In der Situation von Humongous Insurance sollten diese abhängig von den Anwendungen, die Sie über Express Route verwenden möchten, fortgesetzt werden. Wenn es sich beispielsweise um einen Skype for Business Online Kunden handelt oder die Nutzung von Express Route-Konnektivität beim Herstellen einer Verbindung mit externen Skype for Business Online Besprechungen beabsichtigt, wird der Entwurf in der Skype for Business Online Medienqualität und im Netzwerk empfohlen. Connectivity Guide stellt einen zusätzlichen Express Route-Schaltkreis für den dritten Speicherort zur Verfügung. Dies kann aus Sicht des Netzwerks teurer sein; das Weiterleiten von Anforderungen von einem Kontinent an einen anderen, bevor es an ein Microsoft-Rechenzentrum weitergeleitet wird, kann bei Skype for Business Online Besprechungen und Kommunikationen jedoch zu einer schlechten oder unbrauchbaren Erfahrung führen.
+In der Situation von Humongous Insurance sollten diese abhängig von den Anwendungen, die Sie über Express Route verwenden möchten, fortgesetzt werden. Wenn es sich beispielsweise um einen Skype for Business Online Kunden handelt oder wenn Sie die Express Route-Konnektivität beim Herstellen einer Verbindung mit externen Skype for Business Online Besprechungen verwenden möchten, empfiehlt es sich, im Skype for Business Online Media Quality and Network Connectivity Guide eine zusätzliche Express Route-Schaltung für den dritten Standort zu erstellen. Dies kann aus Sicht des Netzwerks teurer sein; das Weiterleiten von Anforderungen von einem Kontinent an einen anderen, bevor es an ein Microsoft-Rechenzentrum weitergeleitet wird, kann bei Skype for Business Online Besprechungen und Kommunikationen jedoch zu einer schlechten oder unbrauchbaren Erfahrung führen.
   
-Wenn Humongous Insurance keine Skype for Business Online in irgendeiner Weise nutzt oder plant, kann das Weiterleiten Office 365 bestimmtem Netzwerkdatenverkehr zurück an einen Kontinent mit einer Express Route-Verbindung möglicherweise jedoch zu unnötiger Wartezeit oder TCP führen. Überlastung. In beiden Fällen wird empfohlen, das Internet, das an den lokalen Standort gesendet wird, an das Internet weiterzuleiten, um die Netzwerke für die Inhaltsübermittlung zu nutzen, auf denen Office 365 basiert.
+Wenn Humongous Insurance keine Skype for Business Online in irgendeiner Weise nutzt oder plant, kann das Weiterleiten Office 365 bestimmtem Netzwerkdatenverkehr zurück an einen Kontinent mit einer Express Route-Verbindung möglicherweise jedoch zu unnötiger Wartezeit oder TCP-Überlastung führen. In beiden Fällen wird empfohlen, das Internet, das an den lokalen Standort gesendet wird, an das Internet weiterzuleiten, um die Netzwerke für die Inhaltsübermittlung zu nutzen, auf denen Office 365 basiert.
   
 ![Express Route Multi-geography](media/98fdd883-2c5a-4df7-844b-bd28cd0b9f50.png)
   
 Wenn Humongous Insurance die Multi-geography-Strategie plant, müssen Sie eine Reihe von Aspekten berücksichtigen, die sich auf die Größe der Schaltung, die Anzahl der Schaltkreise, das Failover und so weiter ausgehen.
   
-Mit Express Route an einem zentralen Standort, in dem mehrere Regionen versuchen, die Schaltung zu verwenden, möchte Humongous Insurance sicherstellen, dass Verbindungen mit Office 365 von der Remoteniederlassung an das nächstgelegene Office 365-Rechenzentrum gesendet und von der zentrale Position. Dazu implementiert Humongous Insurance die DNS-Weiterleitung, um die Anzahl von Roundtrips und DNS-Lookups zu reduzieren, die erforderlich sind, um die entsprechende Verbindung mit der Office 365 Umgebung herzustellen, die am nächsten am Hauptsitz des Internet Ausgangs Points liegt. Dadurch wird verhindert, dass der Client einen lokalen Front-End-Server auflöst und stellt sicher, dass der Front-End-Server, mit dem die Person eine Verbindung herstellt, sich in der Nähe des Hauptquartiers befindet, in dem Humongous Insurance Microsoft Sie können auch erfahren, [wie Sie eine bedingte Weiterleitung für einen Domänennamen zuweisen](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
+Mit Express Route an einem zentralen Standort mit mehreren Regionen, die versuchen, die Schaltung zu verwenden, möchte Humongous Insurance sicherstellen, dass Verbindungen mit Office 365 aus dem Remote-Office an das nächstgelegene Office 365-Rechenzentrum gesendet werden und am Hauptsitz des Standorts empfangen werden. Dazu implementiert Humongous Insurance die DNS-Weiterleitung, um die Anzahl von Roundtrips und DNS-Lookups zu reduzieren, die erforderlich sind, um die entsprechende Verbindung mit der Office 365 Umgebung herzustellen, die am nächsten am Hauptsitz des Internet Ausgangs Points liegt. Dadurch wird verhindert, dass der Client einen lokalen Front-End-Server auflöst und stellt sicher, dass der Front-End-Server, mit dem die Person eine Verbindung herstellt, sich in der Nähe des Hauptquartiers befindet, in dem Humongous Insurance Microsoft Sie können auch erfahren, [wie Sie eine bedingte Weiterleitung für einen Domänennamen zuweisen](https://technet.microsoft.com/library/Cc794735%28v=WS.10%29.aspx).
   
 In diesem Szenario würde der Datenverkehr vom Remotestandort die Office 365-Front-End-Infrastruktur in Nordamerika auflösen und Office 365 nutzen, um gemäß der Architektur der Office 365 Anwendung eine Verbindung mit den Back-End-Servern herzustellen. Beispielsweise würde Exchange Online die Verbindung in Nordamerika beenden, und diese Front-End-Server würden eine Verbindung mit dem Back-End-Postfachserver herstellen, wo auch immer der Mandant gewohnt hat. Alle Dienste verfügen über einen weit verteilten Front-Door-Dienst, der aus Unicast-und Anycast-Destinationen besteht.
   
 Wenn Humongous wichtige Niederlassungen in mehreren Kontinenten aufweist, werden mindestens zwei aktive/aktive Schaltkreise pro Region empfohlen, um die Wartezeit für vertrauliche Anwendungen wie Skype for Business Online zu verringern. Wenn sich alle Niederlassungen auf einem einzelnen Kontinent befinden oder keine Zusammenarbeit in Echtzeit verwendet wird, ist die Verwendung eines konsolidierten oder verteilten Ausgangs Points eine kundenspezifische Entscheidung. Wenn mehrere Schaltkreise verfügbar sind, wird durch das BGP-Routing ein Failover sichergestellt, wenn ein einzelner Schaltkreis nicht mehr verfügbar ist.
   
-Erfahren Sie mehr über Beispiel [Routingkonfigurationen](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) und [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/).
+Erfahren Sie mehr über Beispiel [Routingkonfigurationen](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-routing/) und [https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/](https://azure.microsoft.com/documentation/articles/expressroute-config-samples-nat/) .
   
 ## <a name="selective-routing-with-expressroute"></a>Selektives Routing mit Express Route
 
@@ -225,7 +225,7 @@ Das selektive Routing mit Express Route ist möglicherweise aus einer Vielzahl v
 
 2. **PAC-Dateien/URLs** – Directing Office 365 bestimmten Netzwerkdatenverkehr für bestimmte FQDNs an einen bestimmten Pfad weiterleiten. Diese selektive Routen von Clientcomputer, wie durch [PAC-Datei Bereitstellung](https://aka.ms/manageo365endpoints#ID0EACAAA=2._Proxies)identifiziert.
 
-3. **Routen Filterung** - Routen[Filter](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) sind eine Möglichkeit, eine Teilmenge unterstützter Dienste über Microsoft Peering zu nutzen.
+3. **Routen Filterung**  -  [Routenfilter](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) sind eine Möglichkeit, eine Teilmenge unterstützter Dienste über Microsoft Peering zu nutzen.
 
 4. **BGP Communities** – Filterung basierend auf [BGP-Community-Tags](https://aka.ms/bgpexpressroute365) ermöglicht es einem Kunden, festzustellen, welche Office 365 Anwendungen Express Route durchlaufen und welche durch das Internet übertragen werden.
 
@@ -247,9 +247,9 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/eror
   
 [Optimieren Ihres Netzwerks für Skype for Business Online](https://support.office.com/article/b363bdca-b00d-4150-96c3-ec7eab5a8a43)
   
-[Express Route und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
+[ExpressRoute und QoS in Skype for Business Online](https://support.office.com/article/20c654da-30ee-4e4f-a764-8b7d8844431d)
   
-[Anruffluss mit Express Route](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
+[Anruffluss mit ExpressRoute](https://support.office.com/article/413acb29-ad83-4393-9402-51d88e7561ab)
   
 [Verwenden von BGP-Communities in Express Route für Office 365 Szenarien](bgp-communities-in-expressroute.md)
   
@@ -257,6 +257,6 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/eror
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
-[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)

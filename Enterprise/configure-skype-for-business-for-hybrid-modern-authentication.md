@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server sowie für geteilte Domänen Skype for Business Hybriden verfügbar ist.
-ms.openlocfilehash: de5063da9eed03e2cd455b79b3a2d1c2f671ad1e
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.openlocfilehash: bd287bc768aa43c95bc073892b79b7f5aed969df
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840722"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997431"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch Microsoft 365 Enterprise*.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server sowie für geteilte Domänen Skype for Business Hybriden verfügbar ist.
   
@@ -35,9 +35,9 @@ Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die ei
   
 - Moderne Authentifizierung \> MA
 
-- Hybride moderne \> Authentifizierung HMA
+- Hybride moderne Authentifizierung \> HMA
 
-- Lokaler \> Exchange-Austausch
+- Lokaler Exchange-Austausch \>
 
 - Exchange Online \> Exo
 
@@ -125,9 +125,9 @@ Jetzt müssen Sie Befehle ausführen, um die zuvor gesammelten URLs als Dienst P
 
 2. Führen Sie diesen Befehl lokal aus, um eine Liste der SFB-Webdienst-URLs zu erhalten.
 
-   Beachten Sie, dass die AppPrincipalId `00000004`mit beginnt. Dies entspricht Skype for Business Online.
+   Beachten Sie, dass die AppPrincipalId mit beginnt `00000004` . Dies entspricht Skype for Business Online.
 
-   Notieren Sie sich (und Screenshot für einen späteren Vergleich) die Ausgabe dieses Befehls, die eine SE-und WS-URL enthalten wird, aber meistens aus SPNs `00000004-0000-0ff1-ce00-000000000000/`besteht, die mit beginnen.
+   Notieren Sie sich (und Screenshot für einen späteren Vergleich) die Ausgabe dieses Befehls, die eine SE-und WS-URL enthalten wird, aber meistens aus SPNs besteht, die mit beginnen `00000004-0000-0ff1-ce00-000000000000/` .
 
 ```powershell
 Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
@@ -144,7 +144,7 @@ $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
 Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
 ```
   
-4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl **Get-MsolServicePrincipal** aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs https://lyncwebint01.contoso.com und. https://lyncwebext01.contoso.com/
+4. Stellen Sie sicher, dass Ihre neuen Datensätze hinzugefügt wurden, indem Sie den Befehl **Get-MsolServicePrincipal** aus Schritt 2 erneut ausführen und die Ausgabe durchsuchen. Vergleichen Sie die Liste/Screenshot von vor mit der neuen Liste von SPNs (Sie können auch die neue Liste für Ihre Datensätze Screenshot). Wenn Sie erfolgreich waren, werden die beiden neuen URLs in der Liste angezeigt. In unserem Beispiel enthält die Liste der SPNs nun die spezifischen URLs https://lyncwebint01.contoso.com und https://lyncwebext01.contoso.com/ .
 
 ### <a name="create-the-evosts-auth-server-object"></a>Erstellen des EvoSTS-Authentifizierungs Server Objekts
 
@@ -170,9 +170,9 @@ Um zu testen, ob HMA funktioniert, nachdem Sie es aktiviert haben, melden Sie si
   
 Sie sollten auch die "Konfigurationsinformationen" für Skype for Business Clients für eine "OAuth Authority" überprüfen. Um dies auf dem Clientcomputer zu tun, halten Sie die STRG-Taste gleichzeitig mit der rechten Maustaste auf das Symbol Skype for Business in der Windows-Benachrichtigungsleiste. Klicken Sie im angezeigten Menü auf **Konfigurationsinformationen** . Suchen Sie im Fenster "Skype for Business Konfigurationsinformationen", das auf dem Desktop angezeigt wird, nach folgendem:
   
-![Die Konfigurationsinformationen eines Skype for Business Clients mit moderner Authentifizierung zeigen eine lync-und EWS-OAUTH-Autoritäts-URL von an https://login.windows.net/common/oauth2/authorize.](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+![Die Konfigurationsinformationen eines Skype for Business Clients mit moderner Authentifizierung zeigen eine lync-und EWS-OAUTH-Autoritäts-URL von an https://login.windows.net/common/oauth2/authorize .](media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
   
-Sie sollten auch die STRG-Taste gleichzeitig gedrückt halten, indem Sie mit der rechten Maustaste auf das Symbol für den Outlook-Client (auch im Windows-Benachrichtigungs Fach) klicken und auf "Verbindungs Status" klicken. Suchen Sie die SMTP-Adresse des Clients anhand eines authn-Typs von "\*Bearer", der das in OAuth verwendete Bearer-Token darstellt.
+Sie sollten auch die STRG-Taste gleichzeitig gedrückt halten, indem Sie mit der rechten Maustaste auf das Symbol für den Outlook-Client (auch im Windows-Benachrichtigungs Fach) klicken und auf "Verbindungs Status" klicken. Suchen Sie die SMTP-Adresse des Clients anhand eines authn-Typs von "Bearer \* ", der das in OAuth verwendete Bearer-Token darstellt.
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

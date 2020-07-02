@@ -22,26 +22,26 @@ search.appverid:
 ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Office 365 moderne Authentifizierung für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: 081d8e70e84f816e925ba421d7f740e6063ca371
-ms.sourcegitcommit: c5ea5b8d16201551f82b88738d92c58a7a92c74f
+description: Erfahren Sie, wie die moderne Authentifizierung von Microsoft 365 für Office 2013-und 2016-Client-apps anders funktioniert.
+ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280214"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997842"
 ---
 # <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
-Lesen Sie diesen Artikel, um zu erfahren, wie Office 2013-und Office 2016-Client-apps moderne Authentifizierungsfeatures basierend auf der Authentifizierungskonfiguration des Office 365-Mandanten für Exchange Online, SharePoint Online und Skype for Business Online verwenden.
+Lesen Sie diesen Artikel, um zu erfahren, wie Office 2013-und Office 2016-Client-apps moderne Authentifizierungsfeatures basierend auf der Authentifizierungskonfiguration des Microsoft 365-Mandanten für Exchange Online, SharePoint Online und Skype for Business Online verwenden.
 
 > [!NOTE]
 > Ältere Client-apps wie Office 2010 und Office für Mac 2011 unterstützen keine moderne Authentifizierung und können nur mit der Standardauthentifizierung verwendet werden.
 
-## <a name="availability-of-modern-authentication-for-office-365-services"></a>Verfügbarkeit moderner Authentifizierung für Office 365 Dienste
+## <a name="availability-of-modern-authentication-for-microsoft-365-services"></a>Verfügbarkeit moderner Authentifizierung für Microsoft 365-Dienste
 
-Für die Office 365 Dienste lautet der Standardzustand der modernen Authentifizierung wie folgt:
+Für die Microsoft 365-Dienste lautet der Standardstatus der modernen Authentifizierung wie folgt:
   
 - Standardmäßig **aktiviert für Exchange Online** . Weitere Informationen finden Sie unter [Aktivieren oder Deaktivieren der modernen Authentifizierung in Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) , um Sie zu deaktivieren. 
     
@@ -56,9 +56,9 @@ Für die Office 365 Dienste lautet der Standardzustand der modernen Authentifizi
 
 Office 2013-Client-apps unterstützen standardmäßig die Legacy Authentifizierung. Legacy bedeutet, dass Sie entweder den Microsoft Online-Anmelde Assistenten oder die Standardauthentifizierung unterstützen. Damit diese Clients moderne Authentifizierungsfeatures verwenden können, muss der Windows-Client Registrierungsschlüssel festgelegt haben. Anweisungen finden Sie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Laptops und Tablets) zu aktivieren, auf denen Microsoft Office 2013 installiert ist, müssen Sie die nachstehenden Registrierungsschlüssel festlegen. Die Schlüssel müssen auf jedem Gerät festgelegt werden, das Sie für moderne Authentifizierung aktivieren möchten:
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
-|**Registrierungsschlüssel**|**Type**|**Wert** |
+|**Registrierungsschlüssel**|**Typ**|**Wert** |
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
@@ -67,7 +67,7 @@ Erfahren Sie, wie Sie die [moderne Authentifizierung (Adal) mit Skype for Busine
   
 Office 2016 Clients unterstützen standardmäßig die moderne Authentifizierung, und es ist keine Aktion erforderlich, damit der Client diese neuen Flows verwenden kann. Für die Verwendung der Legacy Authentifizierung ist jedoch eine explizite Aktion erforderlich.
   
-Klicken Sie auf die Links unten, um zu sehen, wie Office 2013-und Office 2016-Clientauthentifizierung mit den Office 365 Diensten funktioniert, je nachdem, ob die moderne Authentifizierung aktiviert ist oder nicht.
+Klicken Sie auf die Links unten, um zu sehen, wie Office 2013-und Office 2016-Clientauthentifizierung mit Microsoft 365-Diensten funktioniert, je nachdem, ob die moderne Authentifizierung aktiviert ist oder nicht.
   
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
     
@@ -117,10 +117,10 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
    
 ## <a name="see-also"></a>Siehe auch
 
-[Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/enable-modern-authentication-for-office-2013-on-windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)
+[Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 
-[Planen der mehrstufigen Authentifizierung für Office 365 Bereitstellungen (für Office 365 Administratoren)](https://support.office.com/article/plan-for-multi-factor-authentication-for-office-365-deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+[Mehrstufige Authentifizierung für Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 
-[Anmelden bei Office 365 mit zweistufiger Überprüfung (für Endbenutzer)](https://support.office.com/article/sign-in-to-office-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)
+[Anmelden bei Microsoft 365 mit mehrstufiger Authentifizierung](https://support.microsoft.com/office/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
 
 [Übersicht zu Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)

@@ -13,16 +13,16 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 description: Am 11. April 2017 Exchange Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2007 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
-ms.openlocfilehash: 75bafe48b3b384430312ad0c0942c98732985073
-ms.sourcegitcommit: 1c646afb10db9d3d1e6a346089b7845268b0c9d7
+ms.openlocfilehash: a0dd549c4a9be5721dae66111e8cdd5a569b2b9c
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42605650"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44996549"
 ---
 # <a name="exchange-2007-end-of-support-roadmap"></a>Ende der Unterstützung für Exchange 2007 – Roadmap
 
-*Dieser Artikel gilt sowohl für Office 365 Enterprise als auch für Microsoft 365 Enterprise.*
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Am **11. April 2017**Exchange Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht bereits von Exchange 2007 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen. 
   
@@ -80,14 +80,14 @@ Office 365 erhält auch zuerst neue Funktionen und Erfahrungen, und Sie und Ihre
     
 #### <a name="how-should-i-migrate-to-office-365"></a>Wie sollte ich zu Office 365 migrieren?
 
-Je nach Organisation stehen Ihnen einige Optionen zur Verfügung, mit denen Sie Office 365 erreichen können. Bei der Auswahl einer Migrationsoption müssen Sie sich einige Dinge ansehen, beispielsweise die Anzahl der zu verschiebenden Arbeitsplätze oder Postfächer, die Dauer der Migration und ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und der Office 365 während des Betriebs benötigen. die Migration. In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die bestimmen, welche Methode Sie verwenden werden.
+Je nach Organisation stehen Ihnen einige Optionen zur Verfügung, mit denen Sie Office 365 erreichen können. Bei der Auswahl einer Migrationsoption müssen Sie einige Dinge berücksichtigen, beispielsweise die Anzahl der zu verschiebenden Sitze oder Postfächer, die Dauer der Migration und ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und Office 365 während der Migration benötigen. In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die bestimmen, welche Methode Sie verwenden werden.
   
 | |
 |**Migrationsoption**|**Organisationsgröße**|**Duration**|
 |:-----|:-----|:-----|
 |Übernahmemigration  <br/> |Weniger als 150 Sitze  <br/> |Mindestens eine Woche  <br/> |
 |Mehrstufige Migration  <br/> |Mehr als 150 Sitze  <br/> |Ein paar Wochen  <br/> |
-|Vollständige Hybrid Migration  <br/> |Mehrere hundert bis Tausende von sitzen  <br/> |Einige Monate oder mehr  <br/> |
+|Vollständige Hybridmigration  <br/> |Mehrere hundert bis Tausende von sitzen  <br/> |Einige Monate oder mehr  <br/> |
    
 In den folgenden Abschnitten erhalten Sie einen Überblick über diese Methoden. Auschecken entscheiden Sie sich für [einen Migrationspfad](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27) , um die Details der einzelnen Methoden zu erfahren. 
   
@@ -179,9 +179,9 @@ Wenn Sie über eine vollständige Hybrid Migration nachdenken, sollten Sie Folge
     
 - Office 365 müssen mit Outlook Anywhere über TCP-Port 443 eine Verbindung mit dem "hybridserver" herstellen;
     
-- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure Active Directory Connect (AADConnect) zwischen Ihren lokalen Active Directory Servern und Office 365 einrichten;
+- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure einrichten Active Directory (Azure AD) zwischen Ihren lokalen Active Directory Servern und Office 365 herstellen.
     
-- Benutzer können sich bei Ihrem Office 365 Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie bei der Anmeldung beim lokalen Netzwerk verwenden (erfordert Azure Active Directory Connect with Password Synchronization und/oder Active Directory Federation Services);
+- Benutzer können sich bei Ihrem Office 365 Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie bei der Anmeldung beim lokalen Netzwerk verwenden (erfordert Azure AD Verbindung mit der Kennwortsynchronisierung und/oder Active Directory Verbunddiensten);
     
 - Sie benötigen eine Office 365 Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
     
@@ -219,7 +219,7 @@ Es wird empfohlen, dass Sie zunächst davon ausgehen, dass Sie zu Exchange 2016 
 |:-----|:-----|
 |Ende der Support Daten  <br/> | Wie Exchange 2007 verfügt jede Version von Exchange über ein eigenes Datum für die Unterstützung des Supports:  <br/> **Exchange 2010** -Januar 2020  <br/> **Exchange 2013** -April 2023  <br/> **Exchange 2016** -Oktober 2025  <br/>  Je früher das Ende des Support Datums ist, desto schneller müssen Sie eine weitere Migration durchführen. Januar 2020 ist viel näher als Sie denken!  <br/> |
 |Migrationspfad zu Exchange 2010 und 2013  <br/> |Im folgenden finden Sie die allgemeinen Phasen für die Migration zu Exchange 2010 oder Exchange 2013:  <br/> Installieren von Exchange 2010 oder 2013 in Ihrer vorhandenen Exchange 2007 Organisation verschieben von Diensten und anderen Infrastrukturen in Exchange 2010 oder 2013 Verschieben von Postfächern und öffentlichen Ordnern auf Exchange 2010 oder 2013 still gebliebenen Exchange 2007 Servern |
-|Migrationspfad zu Exchange 2016  <br/> |Im folgenden finden Sie die allgemeinen Phasen für die Migration zu Exchange 2016:  <br/> Installieren von Exchange 2013 in Ihrer vorhandenen Exchange 2007 Organisation verschieben von Diensten und anderen Infrastrukturen zum Exchange 2013 Verschieben von Postfächern und öffentlichen Ordnern in Exchange 2013 deprovision verbleibenden Exchange 2007 Server installieren Exchange 2016 in Ihren vorhandenen Exchange 2013 Organisation. Verschieben von Postfächern, öffentlichen Ordnern, Diensten und anderen Infrastrukturen nach Exchange 2016 (Reihenfolge spielt keine Rolle). Stilllegung der verbleibenden [!NOTE] Exchange 2013 Server >> die Migration von Exchange 2013 zu Exchange 2016 ist einfach. Beide Versionen haben fast die gleichen Hardwareanforderungen. Dies und die Tatsache, dass diese Versionen so kompatibel sind, bedeutet, dass Sie einen Server, den Sie für Exchange 2013 gekauft haben, neu erstellen und Exchange 2016 darauf installieren können. Und bei Online Postfachverschiebungen wird den meisten Benutzern nie aufgefallen, dass Ihr Postfach vom Server verschoben und dann wieder zurückgegeben wird, nachdem Sie es mit Exchange 2016 neu erstellt haben.           |
+|Migrationspfad zu Exchange 2016  <br/> |Im folgenden finden Sie die allgemeinen Phasen für die Migration zu Exchange 2016:  <br/> Installieren Sie Exchange 2013 in Ihrer vorhandenen Exchange 2007 Organisation verschieben von Diensten und anderen Infrastrukturen, um Exchange 2013 Verschieben von Postfächern und öffentlichen Ordnern Exchange 2013 Stilllegung von Dienst Resten Exchange 2007 Server installieren Exchange 2016 in Ihrer vorhandenen Exchange 2013 Organisation. Verschieben von Postfächern, öffentlichen Ordnern, Diensten und anderen Infrastrukturen nach Exchange 2016 (Reihenfolge spielt keine Rolle). Stilllegung der verbleibenden Exchange 2013 Server > [!NOTE]> die Migration von Exchange 2013 zu Exchange 2016 ist einfach. Beide Versionen haben fast die gleichen Hardwareanforderungen. Dies und die Tatsache, dass diese Versionen so kompatibel sind, bedeutet, dass Sie einen Server, den Sie für Exchange 2013 gekauft haben, neu erstellen und Exchange 2016 darauf installieren können. Und bei Online Postfachverschiebungen wird den meisten Benutzern nie aufgefallen, dass Ihr Postfach vom Server verschoben und dann wieder zurückgegeben wird, nachdem Sie es mit Exchange 2016 neu erstellt haben.           |
 |Versions Koexistenz  <br/> | Bei der Migration zu:  <br/> **Exchange 2016** Exchange 2016 kann nicht in einer Organisation installiert werden, die einen Exchange 2007 Server enthält. Zunächst müssen Sie zu Exchange 2010 oder 2013 migrieren (es wird dringend empfohlen, Exchange 2013), alle Exchange 2007 Server zu entfernen und dann zu Exchange 2016 zu migrieren.  <br/> **Exchange 2010 oder Exchange 2013** Sie können Exchange 2010 oder Exchange 2013 in einer vorhandenen Exchange 2007 Organisation installieren. Auf diese Weise können Sie einen oder mehrere Exchange 2010-oder 2013-Server installieren und die Migration durchführen.  <br/> |
 |Serverhardware  <br/> | Die Server Hardwareanforderungen wurden von Exchange 2007 geändert. Sie müssen sicherstellen, dass die Hardware, die Sie verwenden werden, kompatibel ist. Hier finden Sie weitere Informationen zu den Hardwareanforderungen für jede Version:  <br/> [Exchange 2016-System Anforderungen](https://technet.microsoft.com/library/aa996719%28v=exchg.160%29.aspx) <br/> [Exchange 2013 System Anforderungen](https://technet.microsoft.com/library/aa996719%28v=exchg.150%29.aspx) <br/> [Exchange 2010 System Anforderungen](https://technet.microsoft.com/library/aa996719%28v=exchg.141%29.aspx) <br/>  Sie werden feststellen, dass Sie mit den signifikanten Verbesserungen bei der Exchange-Leistung und der erhöhten Rechenleistung und Speicherkapazität in neueren Servern wahrscheinlich weniger Server zur Unterstützung der gleichen Anzahl von Postfächern benötigen.  <br/> |
 |Betriebssystemversion  <br/> | Für jede Version werden mindestens die folgenden Betriebssystemversionen unterstützt:  <br/> **Exchange 2016** Windows Server 2012  <br/> **Exchange 2013** Windows Server 2008 R2 SP1  <br/> **Exchange 2010** Windows Server 2008 SP2  <br/>  Weitere Informationen zur Betriebssystemunterstützung finden Sie unter [Unterstützungs Matrix für Exchange](https://technet.microsoft.com/library/ff728623%28v=exchg.150%29.aspx).  <br/> |
