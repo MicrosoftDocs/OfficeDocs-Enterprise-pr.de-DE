@@ -3,7 +3,7 @@ title: Verbinden mit Office 365 PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 06/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Stellen Sie mithilfe von Office 365 PowerShell eine Verbindung mit Ihrer Office 365-Organisation her, um Admin Center-Aufgaben über die Befehlszeile auszuführen.
-ms.openlocfilehash: 00c4e303faa7a182a9bd5c859a09ad150fc0b8d4
-ms.sourcegitcommit: b1042fa2d02f1bc74586751c542776325d3a170f
-ms.translationtype: HT
+ms.openlocfilehash: 0906da2b8773973236bc8cb6ef273d1a14528bfd
+ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170613"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44997421"
 ---
 # <a name="connect-to-office-365-powershell"></a>Verbinden mit Office 365 PowerShell
 
@@ -64,7 +64,7 @@ Verwenden Sie für Verfahren, welche die neuen Cmdlets im Azure Active Directory
 
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
 
-Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal, wenn Sie eine Verbindung herstellen. Allerdings müssen Sie wahrscheinlich in regelmäßigen Abständen neuere Versionen der Software installieren.
+These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
   
 1. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung mit erhöhten Rechten (d. h., führen Sie Windows PowerShell als Administrator aus).
     
@@ -106,9 +106,9 @@ PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul f�
     
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
 
-Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal, wenn Sie eine Verbindung herstellen. Allerdings müssen Sie wahrscheinlich in regelmäßigen Abständen neuere Versionen der Software installieren.
+These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
   
-1.  Installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmeldeassistenten: [Microsoft Online Services-Anmeldeassistent für IT-Experten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Wenn Sie nicht mit Windows 10 starten, installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmelde-Assistenten: [Microsoft Online Services-Anmelde Assistent für IT-Spezialisten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     
 2. Installieren Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell mit den folgenden Schritten:
     
@@ -157,7 +157,7 @@ Wenn Sie Fehlermeldungen erhalten, überprüfen Sie die folgenden Anforderungen:
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    Wenn die zurückgegebene Versionsnummer niedriger als der Wert 1.0.8070.2 ist, deinstallieren Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell, und installieren Sie die neueste Version über den Link in Schritt 1.
+    Wenn die zurückgegebene Versionsnummer niedriger ist als der Wert 1.0.8070.2, deinstallieren Sie das Microsoft Azure Active Directory Modul für Windows PowerShell und installieren Sie aus Schritt 1.
 
 - **Wenn Sie einen Verbindungsfehler erhalten, finden Sie in diesem Thema weitere Informationen:** [Fehler "Connect-MsolService: Ausnahme vom Typ ausgelöst"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
     
