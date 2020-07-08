@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet. Sie ist für hybridbereitstellungen von lokalen Skype for Business-Servern und lokalen Exchange-Servern sowie für geteilte Domänen Skype for Business Hybriden verfügbar. Dieser Artikel enthält Links zu verwandten Dokumenten zu Voraussetzungen, zur Einrichtung/Deaktivierung moderner Authentifizierung und zu einigen der verwandten Clients (ex. Outlook-und Skype-Clients) Informationen.
-ms.openlocfilehash: 6b535133af7a1a6666a6a06e2c86aa675f95e042
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 056262ade67b8ffd452f68cc0c5e3882326b2e44
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998023"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052418"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange-Servern
 
@@ -157,8 +157,8 @@ Weitere Informationen zum Get-csoauthconfiguration "-Cmdlet finden Sie unter [Ge
 
 - **Allgemeine Voraussetzungen**
   - Bei Verwendung von ADFS sollten Windows 2012 R2 ADFS 3,0 und höher für den Verbund vorhanden sein.
-  - Ihre Identitäts Konfigurationen sind alle Typen, die von Aad Connect unterstützt werden (wie Kennworthash Synchronisierung, Pass-Through-Authentifizierung, von Office 365 unterstützte lokale STS).)
-  - Sie haben Aad Connect konfiguriert und funktioniert für die Benutzerreplikation und-Synchronisierung.
+  - Bei ihren Identitäts Konfigurationen handelt es sich um einen der von Azure AD Connect unterstützten Typen (wie Kennworthash Synchronisierung, Pass-Through-Authentifizierung, von Office 365 unterstützte lokale STS-Daten und cetera).
+  - Sie haben Azure AD Verbindung konfiguriert und funktioniert für die Benutzerreplikation und-Synchronisierung.
   - Sie haben sichergestellt, dass die Hybrid Konfiguration mit dem Exchange Classic Hybrid Topology Mode zwischen Ihrer lokalen und Office 365 Umgebung konfiguriert ist. Offizielle Support-Anweisung für Exchange Hybrid Says: Sie müssen entweder aktuelle Cu oder aktuelle Cu-1 haben.
     > [!NOTE]
     > Die moderne Hybrid Authentifizierung wird mit dem [Hybrid-Agent](https://docs.microsoft.com/exchange/hybrid-deployment/hybrid-agent)nicht unterstützt.
@@ -168,7 +168,7 @@ Weitere Informationen zum Get-csoauthconfiguration "-Cmdlet finden Sie unter [Ge
 ## <a name="what-else-do-i-need-to-know-before-i-begin"></a>Was muss ich noch wissen, bevor ich beginne?
 <a name="BKMK_Whatelse"> </a>
 
-- Alle Szenarien für lokale Server beinhalten die Einrichtung einer modernen Authentifizierung vor Ort (tatsächlich für Skype for Business gibt es eine Liste unterstützter Topologien), damit der Server, der für die Authentifizierung und Autorisierung zuständig ist, in der Microsoft-Cloud (AAD es Security Token Service, "evoSTS" genannt) und Azure AD zu den von Ihrer lokalen Installation von Skype for Business oder Exchange verwendeten URLs oder Namespaces aktualisiert wird. Daher nehmen lokale Server eine Microsoft-Cloud-Abhängigkeit an. Die Durchführung dieser Aktion könnte als Konfigurieren von "hybrider Authentifizierung" betrachtet werden.
+- Alle Szenarien für lokale Server beinhalten die Einrichtung einer modernen Authentifizierung vor Ort (tatsächlich für Skype for Business gibt es eine Liste unterstützter Topologien), damit der Server, der für die Authentifizierung und Autorisierung zuständig ist, in der Microsoft-Cloud (der Sicherheitstokendienst von Azure AD "evoSTS") liegt und Azure AD zu den URLs oder Namespaces aktualisiert, die von der lokalen Installation von Skype for Business oder Exchange verwendet werden. Daher nehmen lokale Server eine Microsoft-Cloud-Abhängigkeit an. Die Durchführung dieser Aktion könnte als Konfigurieren von "hybrider Authentifizierung" betrachtet werden.
 - Dieser Artikel enthält Links zu anderen Themen, die Sie bei der Auswahl unterstützter moderner Authentifizierungs Topologien (nur für Skype for Business erforderlich) und in den Vorgehensweisen erläutern, die die Installationsschritte oder die Schritte zum Deaktivieren der modernen Authentifizierung für lokale Exchange-und Skype for Business lokal bereitstellen. Favorite diese Seite in Ihrem Browser, wenn Sie eine Home-Base für die Verwendung der modernen Authentifizierung in Ihrer Server Umgebung benötigen.
 
 ## <a name="related-topics"></a>Verwandte Themen

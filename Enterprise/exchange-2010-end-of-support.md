@@ -13,18 +13,18 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 nähert sich dem Ende der Unterstützung. Verwenden Sie diese Planungs Roadmap als Leitfaden für die Vorbereitung des Upgrades auf Exchange Online oder eine neuere Version von Exchange Server lokal.
-ms.openlocfilehash: 84adfa0216f3e4e8157dfe0717c178a0ece3cc4f
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 2d7ab96d065ffd2d85427f320ce01e3b9023891f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998043"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052468"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 – Roadmap zum Supportende
 
 *Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
-Am **13. Oktober 2020**werden Exchange Server 2010 das Ende der Unterstützung erreichen. Wenn Sie die Migration nicht bereits von Exchange 2010 zu Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
+Am **13. Oktober 2020**werden Exchange Server 2010 das Ende der Unterstützung erreichen. Wenn Sie die Migration nicht bereits von Exchange 2010 zu Microsoft 365, Office 365 oder Exchange 2016 begonnen haben, ist es an der Zeit, mit der Planung zu beginnen.
 
 ## <a name="what-does-end-of-support-mean"></a>Was bedeutet das Ende der Unterstützung?
 
@@ -44,17 +44,17 @@ Weitere Informationen zu Office 2010 Servern, die sich am Ende des Supports befi
 
 Wenn Exchange 2010 das Ende der Unterstützung erreicht hat, ist dies eine gute Zeit, um Ihre Optionen zu erkunden und einen Migrationsplan vorzubereiten. Sie können:
 
-- Migrieren Sie vollständig zu Office 365. Migrieren von Postfächern mithilfe von Cutover, minimaler Hybrid-oder vollständiger Hybrid Migration und Entfernen von lokalen Exchange-Servern und Active Directory.
+- Migrieren Sie vollständig zu Microsoft 365. Migrieren von Postfächern mithilfe von Cutover, minimaler Hybrid-oder vollständiger Hybrid Migration und Entfernen von lokalen Exchange-Servern und Active Directory.
 - Migrieren Sie Ihre Exchange 2010 Server zu Exchange 2016 auf Ihren lokalen Servern.
 
 > [!IMPORTANT]
-> Wenn sich Ihre Organisation für die Migration von Postfächern zu Office 365 entscheidet, aber Dirsync oder Azure AD eine Verbindung herstellen möchte, um die Verwaltung von Benutzerkonten aus lokalen Active Directory fortzusetzen, müssen Sie mindestens einen lokalen Exchange-Server beibehalten. Wenn der letzte Exchange-Server entfernt wird, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Dies liegt daran, dass die Autoritäts Quelle in Ihrem lokalen Active Directory bleibt und dass dort Änderungen vorgenommen werden müssen. In diesem Szenario stehen Ihnen die folgenden Optionen zur Ver:
+> Wenn sich Ihre Organisation für die Migration von Postfächern zu Microsoft 365 entscheidet, aber Dirsync oder Azure AD eine Verbindung herstellen möchten, um die Verwaltung von Benutzerkonten aus lokalen Active Directory fortzusetzen, müssen Sie mindestens einen lokalen Exchange-Server beibehalten. Wenn der letzte Exchange-Server entfernt wird, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Dies liegt daran, dass die Autoritäts Quelle in Ihrem lokalen Active Directory bleibt und dass dort Änderungen vorgenommen werden müssen. In diesem Szenario stehen Ihnen die folgenden Optionen zur Ver:
 
-- (**Empfohlen**) Wenn Sie Ihre Postfächer zu Office 365 migrieren und Ihre Server bis zum 13. Oktober 2020 aktualisieren können, verwenden Sie Exchange 2010 zum Herstellen einer Verbindung mit Office 365 und Migrieren von Postfächern. Migrieren Sie als nächstes Exchange 2010 zu Exchange 2016, und setzen Sie alle verbleibenden Exchange 2010-Server außer Betrieb.
-- Wenn Sie die Postfachmigration und das lokale Server Upgrade bis zum 13. Oktober 2020 nicht abschließen können, führen Sie zuerst ein Upgrade Ihrer lokalen Exchange 2010 Server auf Exchange 2016 durch, und verwenden Sie dann Exchange 2016 zum Herstellen einer Verbindung mit Office 365 und Migrieren von Postfächern.
+- (**Empfohlen**) Wenn Sie Ihre Postfächer zu Microsoft 365 migrieren und Ihre Server bis zum 13. Oktober 2020 aktualisieren können, verwenden Sie Exchange 2010, um eine Verbindung mit Microsoft 365 herzustellen und Postfächer zu migrieren. Migrieren Sie als nächstes Exchange 2010 zu Exchange 2016, und setzen Sie alle verbleibenden Exchange 2010-Server außer Betrieb.
+- Wenn Sie die Postfachmigration und das lokale Server Upgrade bis zum 13. Oktober 2020 nicht abschließen können, führen Sie zuerst ein Upgrade Ihrer lokalen Exchange 2010 Server auf Exchange 2016 durch, und verwenden Sie dann Exchange 2016, um eine Verbindung mit Microsoft 365 herzustellen und Postfächer zu migrieren.
 
 > [!NOTE]
-> Während Sie ein wenig komplizierter sind, können Sie auch Postfächer zu Office 365 migrieren, während Sie Ihre lokalen Exchange 2010 Server zu Exchange 2016 migrieren.
+> Während Sie ein wenig komplizierter sind, können Sie auch Postfächer zu Microsoft 365 migrieren, während Sie Ihre lokalen Exchange 2010 Server zu Exchange 2016 migrieren.
 
 Hier sind die drei Pfade, die Sie ausführen können, um das Ende der Unterstützung für Exchange Server 2010 zu vermeiden.
 
@@ -62,27 +62,27 @@ Hier sind die drei Pfade, die Sie ausführen können, um das Ende der Unterstüt
 
 In den folgenden Abschnitten werden die einzelnen Optionen näher erläutert.
 
-## <a name="migrate-to-office-365"></a>Migrieren zu Office 365
+## <a name="migrate-to-microsoft-365"></a>Migrieren zu Microsoft 365
 
-Die Migration Ihrer e-Mail an Office 365 ist die beste und einfachste Option, um Ihre Exchange 2010-Bereitstellung zu unterstützen. Mit einer Migration zu Office 365 können Sie einen einzelnen Hop von der alten Technologie zu modernen Features machen, wie:
+Die Migration Ihrer e-Mail-Adresse zu Microsoft 365 ist die beste und einfachste Option, die Sie beim Ruhestand Ihrer Exchange 2010-Bereitstellung unterstützt. Mit einer Migration zu Microsoft 365 können Sie einen einzelnen Hop von der alten Technologie zu modernen Funktionen machen, wie beispielsweise:
 
 - Compliance-Funktionen wie Aufbewahrungsrichtlinien, in-situ-und Beweissicherungsverfahren, in-situ-eDiscovery und mehr
 - Microsoft Teams;
 - Power BI;
 - Fokussierter Posteingang;
-- Analyse durchforschen;
+- MyAnalytics
 
-Office 365 erhält auch zuerst neue Funktionen und Erfahrungen, und Sie und Ihre Benutzer können diese in der Regel sofort verwenden. Zusätzlich zu den neuen Features müssen Sie sich keine Gedanken machen:
+Microsoft 365 erhält auch neue Funktionen und Erfahrungen, die Sie und Ihre Benutzer in der Regel sofort verwenden können. Zusätzlich zu den neuen Features müssen Sie sich keine Gedanken machen:
 
 - Einkauf und Wartung von Hardware;
 - Bezahlen für das Heizen und kühlen Ihrer Server;
 - Halten Sie sich auf dem Laufenden über Sicherheits-, Produkt-und Zeit Zonen Korrekturen;
 - Wartung von Speicher und Software zur Unterstützung von Compliance-Anforderungen;
-- Upgrade auf eine neue Version von Exchange – Sie haben immer die neueste Version von Exchange in Office 365.
+- Upgrade auf eine neue Version von Exchange – Sie haben immer die neueste Version von Exchange in Microsoft 365.
 
-### <a name="how-should-i-migrate-to-office-365"></a>Wie sollte ich zu Office 365 migrieren?
+### <a name="how-should-i-migrate-to-microsoft-365"></a>Wie sollte ich zu Microsoft 365 migrieren?
 
-Je nach Organisation stehen Ihnen einige Optionen zur Verfügung, mit denen Sie Office 365 erreichen können. Bei der Auswahl einer Migrationsoption müssen Sie einige Dinge berücksichtigen, beispielsweise die Anzahl der zu verschiebenden Sitze oder Postfächer, die Dauer der Migration und ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und Office 365 während der Migration benötigen. In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die bestimmen, welche Methode Sie verwenden werden.
+Je nach Ihrer Organisation stehen Ihnen einige Optionen zur Verfügung, die Sie bei der Bereitstellung von Microsoft 365 unterstützen. Bei der Auswahl einer Migrationsoption müssen Sie einige Dinge berücksichtigen, beispielsweise die Anzahl der zu verschiebenden Sitze oder Postfächer, die Dauer der Migration und ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und Microsoft 365 während der Migration benötigen. In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die die zu verwendende Methode bestimmen.
 
 | **Migrationsoption**     | **Organisationsgröße** | **Duration**        |
 |--------------------------|-----------------------|---------------------|
@@ -94,19 +94,19 @@ In den folgenden Abschnitten erhalten Sie einen Überblick über diese Methoden.
 
 ### <a name="cutover-migration"></a>Übernahmemigration
 
-Bei einer Cutover Migration werden alle Postfächer, Verteilergruppen, Kontakte usw. zu einem vorab ausgewählten Datum und einer bestimmten Uhrzeit in Office 365 migriert. Wenn Sie fertig sind, schließen Sie Ihre lokalen Exchange-Server ab und verwenden ausschließlich Office 365.
+Bei einer Cutover Migration werden alle Postfächer, Verteilergruppen, Kontakte usw. zu einem vorab ausgewählten Datum und einer bestimmten Uhrzeit in Office 365 migriert. Wenn Sie fertig sind, schließen Sie Ihre lokalen Exchange-Server ab und verwenden ausschließlich Microsoft 365.
 
-Die Cutover-Migrationsmethode eignet sich hervorragend für kleine Organisationen, die nicht sehr viele Postfächer haben, schnell Office 365 erhalten möchten und nicht mit einigen der Komplexitäten der anderen Methoden umgehen möchten. Es ist jedoch auch etwas limitiert, da es in einer Woche oder weniger ausgeführt werden sollte und weil Benutzer Ihre Outlook-Profile neu konfigurieren müssen. Während die Cutover-Migration bis zu 2.000 Postfächer verarbeiten kann, wird dringend empfohlen, dass Sie mit dieser Methode maximal 150 Postfächer migrieren. Wenn Sie versuchen, mehr als 150 Postfächer zu migrieren, können Sie keine Zeit mehr für die Übertragung aller Postfächer vor dem Stichtag haben, und Ihr IT-Supportmitarbeiter kann die Unterstützung von Benutzern bei der Neukonfiguration von Outlook überfordern.
+Die Cutover-Migrationsmethode eignet sich hervorragend für kleine Organisationen, die nicht über sehr viele Postfächer verfügen, Microsoft 365 schnell erhalten möchten und nicht mit einigen der Komplexitäten der anderen Methoden umgehen möchten. Es ist jedoch auch etwas limitiert, da es in einer Woche oder weniger ausgeführt werden sollte und weil Benutzer Ihre Outlook-Profile neu konfigurieren müssen. Während die Cutover-Migration bis zu 2.000 Postfächer verarbeiten kann, wird dringend empfohlen, dass Sie mit dieser Methode maximal 150 Postfächer migrieren. Wenn Sie versuchen, mehr als 150 Postfächer zu migrieren, können Sie keine Zeit mehr für die Übertragung aller Postfächer vor dem Stichtag haben, und Ihr IT-Supportmitarbeiter kann die Unterstützung von Benutzern bei der Neukonfiguration von Outlook überfordern.
 
-Wenn Sie über eine Cutover-Migration nachdenken, sollten Sie Folgendes berücksichtigen:
+Wenn Sie über eine Cutover-Migration nachdenken, sollten Sie Folgendes beachten:
 
-- Office 365 müssen mit Outlook Anywhere über TCP-Port 443 eine Verbindung zu Ihren Exchange 2010 Servern herstellen;
-- Alle lokalen Postfächer werden in Office 365 verschoben;
+- Microsoft 365 muss eine Verbindung mit Ihren Exchange 2010 Servern mit Outlook Anywhere über TCP-Port 443 herstellen;
+- Alle lokalen Postfächer werden nach Microsoft 365 verschoben;
 - Sie benötigen ein lokales Administratorkonto, das Zugriff hat, um den Inhalt der Postfächer Ihrer Benutzer zu lesen;
-- Die Exchange 2010 akzeptierten Domänen, die Sie in Office 365 verwenden möchten, müssen als verifizierte Domänen im Dienst hinzugefügt werden.
-- Zwischen dem Beginn der Migration und dem Zeitpunkt, zu dem die Abschlussphase beginnt, werden die Office 365 und lokalen Postfächer von Office 365 regelmäßig synchronisiert. Auf diese Weise können Sie die Migration abschließen, ohne sich Gedanken darüber machen zu müssen, dass e-Mails in Ihren lokalen Postfächern hinterlassen werden.
-- Benutzer erhalten neue temporäre Kennwörter für Ihr Office 365 Konto, das Sie ändern müssen, wenn Sie sich zum ersten Mal bei ihren Postfächern anmelden;
-- Sie benötigen eine Office 365 Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
+- Die Exchange 2010 akzeptierten Domänen, die Sie in Microsoft 365 verwenden möchten, müssen im Dienst als verifizierte Domänen hinzugefügt werden.
+- Zwischen dem Zeitpunkt, zu dem Sie die Migration starten, und nach Beginn der Abschlussphase synchronisiert Microsoft 365 in regelmäßigen Abständen die Microsoft 365-und lokalen Postfächer. Auf diese Weise können Sie die Migration abschließen, ohne sich Gedanken darüber machen zu müssen, dass e-Mails in Ihren lokalen Postfächern hinterlassen werden.
+- Benutzer erhalten neue temporäre Kennwörter für Ihr Microsoft 365-Konto, die Sie ändern müssen, wenn Sie sich zum ersten Mal bei ihren Postfächern anmelden;
+- Sie benötigen eine Microsoft 365-Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
 - Benutzer müssen auf jedem Ihrer Geräte ein neues Outlook-Profil einrichten und Ihre e-Mails erneut herunterladen. Die Menge an e-Mails, die von Outlook heruntergeladen werden können, kann variieren. Weitere Informationen finden Sie unter [Ändern der Nachrichtenmenge, die Offline aufbewahrt werden soll](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&rs=en-US&ad=US&fromAR=1).
 
 Weitere Informationen zur Migration von Cutover finden Sie unter:
@@ -116,43 +116,43 @@ Weitere Informationen zur Migration von Cutover finden Sie unter:
 
 ### <a name="minimal-hybrid-migration"></a>Minimale Hybrid Migration
 
-Eine minimale Hybrid-oder Express-Migration ist eine, bei der Sie ein paar hundert Postfächer haben, die Sie zu Office 365 migrieren möchten, die Migration innerhalb weniger Wochen abschließen können und keine der erweiterten Hybrid Migrations Features wie freigegebene Frei/Gebucht-Kalenderinformationen benötigen.
+Eine minimale Hybrid-oder Express-Migration ist eine, bei der Sie ein paar hundert Postfächer haben, die Sie zu Microsoft 365 migrieren möchten, die Migration innerhalb weniger Wochen abschließen können und keine der erweiterten Hybrid Migrations Features wie freigegebene Frei/Gebucht-Kalenderinformationen benötigen.
 
-Die minimale Hybrid Migration eignet sich hervorragend für Unternehmen, die mehr Zeit benötigen, um ihre Postfächer zu Office 365 zu migrieren, aber die Migration dennoch innerhalb weniger Wochen abschließen möchten. Sie erhalten einige Vorteile der fortgeschritteneren vollständigen Hybrid Migration ohne viele der Komplexitäten. Sie können steuern, wie viele und welche Postfächer zu einem bestimmten Zeitpunkt migriert werden; Office 365 Postfächer werden mit dem Benutzernamen und den Kennwörtern Ihrer lokalen Konten erstellt; und im Gegensatz zu Cutover-Migrationen müssen Ihre Benutzer Ihre Outlook-Profile nicht neu erstellen.
+Die minimale Hybrid Migration eignet sich hervorragend für Unternehmen, die mehr Zeit benötigen, um ihre Postfächer zu Microsoft 365 zu migrieren, aber dennoch die Migration innerhalb weniger Wochen abschließen möchten. Sie erhalten einige Vorteile der fortgeschritteneren vollständigen Hybrid Migration ohne viele der Komplexitäten. Sie können steuern, wie viele und welche Postfächer zu einem bestimmten Zeitpunkt migriert werden; Microsoft 365-Postfächer werden mit dem Benutzernamen und den Kennwörtern Ihrer lokalen Konten erstellt. und im Gegensatz zu Cutover-Migrationen müssen Ihre Benutzer Ihre Outlook-Profile nicht neu erstellen.
 
 Wenn Sie über eine minimale Hybrid Migration nachdenken, sollten Sie folgende Punkte beachten:
 
-- Sie müssen eine einmalige Verzeichnissynchronisierung zwischen Ihren lokalen Active Directory Servern und Office 365 durchführen.
-- Benutzer können sich bei Ihrem Office 365 Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie beim Migrieren Ihres Postfachs verwendet haben.
-- Sie benötigen eine Office 365 Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
+- Sie müssen eine einmalige Verzeichnissynchronisierung zwischen Ihren lokalen Active Directory Servern und Microsoft 365 durchführen.
+- Benutzer können sich bei Ihrem Microsoft 365-Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie beim Migrieren Ihres Postfachs verwendet haben.
+- Sie benötigen eine Microsoft 365-Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
 - Benutzer müssen kein neues Outlook-Profil auf den meisten Ihrer Geräte einrichten (einige ältere Android-Telefone benötigen möglicherweise ein neues Profil) und müssen Ihre e-Mails nicht erneut herunterladen.
 
 Weitere Informationen zur minimalen Hybrid Migration finden Sie unter [use minimal Hybrid to Quick migrate Exchange mailboxes to Office 365](https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-fdecceed-0702-4af3-85be-f2a0013937ef)
 
 ### <a name="full-hybrid"></a>Vollständige hybridbereitstellung
 
-Eine vollständige Hybrid Migration ist eine, in der Ihre Organisation viele Hunderte, bis zu Zehntausende von Postfächern hat und Sie einige oder alle von Ihnen in Office 365 verschieben möchten. Da diese Migrationen normalerweise längerfristig sind, ermöglichen Hybrid Migrationen Folgendes:
+Eine vollständige Hybrid Migration ist eine, in der Ihre Organisation viele Hunderte, bis zu Zehntausende von Postfächern hat und Sie einige oder alle von Ihnen zu Microsoft 365 verschieben möchten. Da diese Migrationen normalerweise längerfristig sind, ermöglichen Hybrid Migrationen Folgendes:
 
-- Lokalen Benutzern die Frei/Gebucht-Kalenderinformationen für Benutzer in Office 365 anzeigen und umgekehrt;
-- Siehe eine einheitliche globale Adressliste, die Empfänger sowohl lokal als auch Office 365 enthält.
-- Anzeigen vollständiger Outlook-empfängerkarten für alle Benutzer, unabhängig davon, ob Sie lokal oder Office 365 sind;
+- Zeigen Sie lokalen Benutzern die Frei/Gebucht-Kalenderinformationen für Benutzer in Microsoft 365 und umgekehrt;
+- Siehe eine einheitliche globale Adressliste, die Empfänger sowohl in lokalen als auch in Microsoft 365 enthält;
+- Anzeigen der vollständigen Outlook-Empfänger Empfänger Eigenschaften für alle Benutzer, unabhängig davon, ob Sie lokal oder in Microsoft 365 sind;
 - Sichere e-Mail-Kommunikation zwischen lokalen Exchange-Servern und Office 365 mithilfe von TLS und Zertifikaten
-- Behandeln von Nachrichten, die zwischen lokalen Exchange-Servern und Office 365 als intern gesendet werden, sodass Sie folgende Möglichkeiten haben:
+- Behandeln Sie Nachrichten, die zwischen lokalen Exchange-Servern und Microsoft 365 gesendet werden, als intern, sodass Sie folgende Möglichkeiten haben:
 - Durch Transport-und Compliance-Agents, die auf interne Nachrichten Zielen, ordnungsgemäß ausgewertet und verarbeitet werden;
 - Umgehen von Anti-Spam-Filtern.
 
-Vollständige Hybrid Migrationen eignen sich am besten für Organisationen, die für mehrere Monate oder mehr in einer Hybrid Konfiguration bleiben möchten. Sie erhalten die weiter oben in diesem Abschnitt aufgeführten Features sowie die Verzeichnissynchronisierung, bessere integrierte Compliance-Features und die Möglichkeit, Postfächer mithilfe von Online Postfachverschiebungen zu und von Office 365 zu verschieben. Office 365 wird zu einer Erweiterung Ihrer lokalen Organisation.
+Vollständige Hybrid Migrationen eignen sich am besten für Organisationen, die für mehrere Monate oder mehr in einer Hybrid Konfiguration bleiben möchten. Sie erhalten die weiter oben in diesem Abschnitt aufgeführten Features sowie die Verzeichnissynchronisierung, bessere integrierte Compliance-Features und die Möglichkeit, Postfächer mithilfe von Online Postfachverschiebungen von und nach Microsoft 365 zu verschieben. Microsoft 365 wird zu einer Erweiterung Ihrer lokalen Organisation.
 
 Wenn Sie über eine vollständige Hybrid Migration nachdenken, sollten Sie Folgendes beachten:
 
 - Vollständige Hybrid Migrationen sind nicht für alle Arten von Organisationen geeignet. Aufgrund der Komplexität von vollständigen Hybrid Migrationen sehen Organisationen mit weniger als ein paar hundert Postfächern normalerweise keine Vorteile, die den Aufwand und die Kosten rechtfertigen, die für die Einrichtung eines eingerichtet werden müssen. Wenn dies wie Ihre Organisation klingt, wird dringend empfohlen, stattdessen Cutover oder minimale Hybrid Migrationen zu verwenden.
-- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure einrichten Active Directory (Azure AD) zwischen Ihren lokalen Active Directory Servern und Office 365 herstellen.
-- Benutzer können sich bei Ihrem Office 365 Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie bei der Anmeldung beim lokalen Netzwerk verwenden (erfordert Azure AD Verbindung mit der Kennwortsynchronisierung und/oder Active Directory Verbunddiensten);
-- Sie benötigen eine Office 365 Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
+- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure Active Directory (Azure AD) zwischen Ihren lokalen Active Directory Servern und Microsoft 365 herstellen.
+- Benutzer können sich bei Ihrem Microsoft 365-Postfach mit dem gleichen Benutzernamen und Kennwort anmelden, die Sie bei der Anmeldung beim lokalen Netzwerk verwenden (erfordert Azure AD Verbindung mit der Kennwortsynchronisierung und/oder Active Directory Verbunddiensten);
+- Sie benötigen eine Microsoft 365-Lizenz, die Exchange Online für jedes Benutzerpostfach enthält, das Sie migrieren;
 - Benutzer müssen kein neues Outlook-Profil auf den meisten Ihrer Geräte einrichten (einige ältere Android-Telefone benötigen möglicherweise ein neues Profil) und müssen Ihre e-Mails nicht erneut herunterladen.
 
 > [!IMPORTANT]
-> Wenn sich Ihre Organisation für die Migration von Postfächern zu Office 365 entscheidet, aber Dirsync oder Azure AD eine Verbindung herstellen möchte, um die Verwaltung von Benutzerkonten aus lokalen Active Directory fortzusetzen, müssen Sie mindestens einen lokalen Exchange-Server beibehalten. Wenn der letzte Exchange-Server entfernt wird, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Dies liegt daran, dass die Autoritäts Quelle in Ihrem lokalen Active Directory bleibt und dass dort Änderungen vorgenommen werden müssen.
+> Wenn sich Ihre Organisation für die Migration von Postfächern zu Microsoft 365 entscheidet, aber Dirsync oder Azure AD eine Verbindung herstellen möchten, um die Verwaltung von Benutzerkonten aus lokalen Active Directory fortzusetzen, müssen Sie mindestens einen lokalen Exchange-Server beibehalten. Wenn der letzte Exchange-Server entfernt wird, können Sie in Exchange Online keine Änderungen an Exchange-Empfängern vornehmen. Dies liegt daran, dass die Autoritäts Quelle in Ihrem lokalen Active Directory bleibt und dass dort Änderungen vorgenommen werden müssen.
 
 Wenn eine vollständige Hybrid Migration für Sie richtig klingt, sehen Sie sich die folgenden Ressourcen an, um Sie bei der Migration zu unterstützen:
 
@@ -164,11 +164,11 @@ Wenn eine vollständige Hybrid Migration für Sie richtig klingt, sehen Sie sich
 
 ## <a name="upgrade-to-a-newer-version-of-exchange-server-on-premises"></a>Upgrade auf eine neuere Version von Exchange Server lokal
 
-Wir sind zwar der festen Überzeugung, dass Sie durch vollständige Migration auf Office 365 den besten nutzen und die optimale Benutzererfahrung erzielen können, aber wir verstehen auch, dass einige Organisationen Exchange-Server lokal halten müssen. Dies kann an regulatorische Anforderungen liegen, um sicherzustellen, dass Daten nicht in einem Rechenzentrum in einem anderen Land gespeichert werden, oder dass es sich möglicherweise um eindeutige Einstellungen oder Anforderungen handelt, die in der Cloud nicht erfüllt werden können, oder dass Exchange zum Verwalten von Cloud-Postfächern benötigt wird, da Sie weiterhin Active Directory lokal verwenden. In jedem Fall, für den Sie Exchange lokal auswählen oder halten müssen, sollten Sie sicherstellen, dass Ihre Exchange 2010 Umgebung auf mindestens Exchange 2013 oder Exchange 2016 aktualisiert wird und Exchange 2010 vor dem Ende des Support Datums entfernt wird.
+Wir sind zwar der festen Überzeugung, dass Sie durch eine vollständige Migration auf Microsoft 365 den besten nutzen und die optimale Benutzererfahrung erzielen können, aber wir verstehen auch, dass einige Organisationen Exchange-Server lokal halten müssen. Dies kann an regulatorische Anforderungen liegen, um sicherzustellen, dass Daten nicht in einem Rechenzentrum in einem anderen Land gespeichert werden, oder dass es sich möglicherweise um eindeutige Einstellungen oder Anforderungen handelt, die in der Cloud nicht erfüllt werden können, oder dass Exchange zum Verwalten von Cloud-Postfächern benötigt wird, da Sie weiterhin Active Directory lokal verwenden. In jedem Fall, für den Sie Exchange lokal auswählen oder halten müssen, sollten Sie sicherstellen, dass Ihre Exchange 2010 Umgebung auf mindestens Exchange 2013 oder Exchange 2016 aktualisiert wird und Exchange 2010 vor dem Ende des Support Datums entfernt wird.
 
 Für eine optimale Benutzerfreundlichkeit wird empfohlen, dass Sie die verbleibende lokale Umgebung auf Exchange 2016 aktualisieren. Sie müssen Exchange Server 2013 nicht installieren, wenn Sie direkt von Exchange Server 2010 zu Exchange Server 2016 gehen möchten.
 
-Exchange 2016 umfasst alle Features und Fortschritte, die in früheren Versionen von Exchange enthalten sind, und es entspricht am ehesten der mit Office 365 verfügbaren Funktionalität (einige Features sind jedoch nur in Office 365 verfügbar). Sehen Sie sich nur einige der Dinge an, auf die Sie sich vermisst haben:
+Exchange 2016 umfasst alle Features und Fortschritte, die in früheren Versionen von Exchange enthalten sind, und es entspricht am ehesten der verfügbaren Benutzeroberfläche von Microsoft 365 (obwohl einige Funktionen nur in Microsoft 365 verfügbar sind). Sehen Sie sich nur einige der Dinge an, die Ihnen fehlen:
 
 | **Exchange-Version**                     | **Features**                                                                                                                                                                                                                                         |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -226,9 +226,9 @@ Sie können dieses Poster in den Formaten „Brief“, „Legal“ oder „Tablo
       
 ## <a name="what-if-i-need-help"></a>Was kann ich tun, wenn ich Hilfe brauche?
 
-Wenn Sie zu Office 365 migrieren, sind Sie möglicherweise berechtigt, unseren Microsoft-kurzleistungs Dienst zu verwenden. In diesem Artikel werden bewährte Methoden, Tools und Ressourcen bereitgestellt, damit die Migration so nahtlos wie möglich Office 365. Das beste daran ist, dass Sie einen echten Supporttechniker haben, der Sie durch die Migration führt – von der Planung und dem Entwurf bis hin zur Migration Ihres letzten Postfachs. Wenn Sie mehr über die Kurzzeit erfahren möchten, sehen Sie sich [Microsoft](https://fasttrack.microsoft.com/)kurzfall an.
+Wenn Sie eine Migration zu Microsoft 365 durchführen, können Sie möglicherweise den Microsoft-kurzleistungs Dienst verwenden. In diesem Artikel werden bewährte Methoden, Tools und Ressourcen bereitgestellt, um die Migration zu Microsoft 365 so nahtlos wie möglich zu gestalten. Das beste daran ist, dass Sie einen echten Supporttechniker haben, der Sie durch die Migration führt – von der Planung und dem Entwurf bis hin zur Migration Ihres letzten Postfachs. Wenn Sie mehr über die Kurzzeit erfahren möchten, sehen Sie sich [Microsoft](https://fasttrack.microsoft.com/)kurzfall an.
 
-Wenn bei der Migration zu Office 365 Probleme auftreten und Sie nicht den Kurzlauf oder die Migration zu einer neueren Version von Exchange Server verwenden, helfen wir Ihnen gerne weiter. Hier sind einige Ressourcen, die Sie verwenden können:
+Wenn bei der Migration zu Microsoft 365 Probleme auftreten und Sie nicht den Kurzlauf oder die Migration zu einer neueren Version von Exchange Server verwenden, helfen wir Ihnen gerne weiter. Hier sind einige Ressourcen, die Sie verwenden können:
 
 - [Technische Community](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Support für Kunden](https://support.microsoft.com/gp/support-options-for-business)

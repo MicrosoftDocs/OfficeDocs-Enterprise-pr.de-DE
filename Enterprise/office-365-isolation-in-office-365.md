@@ -16,16 +16,16 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 'Zusammenfassung: eine Erläuterung der Isolierung und Zugriffssteuerung in den verschiedenen Anwendungen von Microsoft 365.'
-ms.openlocfilehash: 9c1043305f00a7009a89072036bb6bcc54e6119c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: fc0aa37025936a1a60cfbb8914b079eba5ba2e7f
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998789"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052588"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Isolierung und Zugriffskontrolle in Microsoft 365
 
-Azure Active Directo ry (Azure AD) und Microsoft 365 verwenden ein hoch komplexes Datenmodell, das Dutzende von Diensten, Hunderte von Entitäten, Tausende von Beziehungen und Zehntausende von Attributen umfasst. Auf einer hohen Ebene sind Azure AD und die Dienst Verzeichnisse die Container von Mandanten und Empfängern, die mithilfe von statusbasierten Replikationsprotokollen synchron gehalten werden. Zusätzlich zu den Verzeichnisinformationen, die in Azure AD aufbewahrt werden, verfügen alle Dienst Arbeitslasten über eine eigene Verzeichnisdienst-Infrastruktur.
+Azure Active Directory (Azure AD) und Microsoft 365 verwenden ein hoch komplexes Datenmodell, das Dutzende von Diensten, Hunderte von Entitäten, Tausende von Beziehungen und Zehntausende von Attributen umfasst. Auf einer hohen Ebene sind Azure AD und die Dienst Verzeichnisse die Container von Mandanten und Empfängern, die mithilfe von statusbasierten Replikationsprotokollen synchron gehalten werden. Zusätzlich zu den Verzeichnisinformationen, die in Azure AD aufbewahrt werden, verfügen alle Dienst Arbeitslasten über eine eigene Verzeichnisdienst-Infrastruktur.
  
 ![Microsoft 365 Mandantendaten Synchronisierung](media/office-365-isolation-tenant-data-sync.png)
 
@@ -71,7 +71,7 @@ SharePoint Online verwendet SQL Server und Azure-Speicher für die Speicherung v
 
 SharePoint Online speichert verschlüsselte Dateiinhalte in Microsoft Azure BLOBs. Jede SharePoint Online Farm verfügt über ein eigenes Microsoft Azure Konto, und alle in Azure gespeicherten BLOBs werden einzeln mit einem Schlüssel verschlüsselt, der im SQL-Inhaltsspeicher gespeichert ist. Der Verschlüsselungsschlüssel, der in Code von der Autorisierungs Schicht geschützt wird und nicht direkt für den Endbenutzer verfügbar gemacht wird. SharePoint Online verfügt über eine Echtzeitüberwachung, um zu erkennen, wann eine HTTP-Anforderung Daten für mehr als einen Mandanten liest oder schreibt. Die Anforderungs-ID- *Abonnement* -ID wird anhand der *Abonnement* -ID der aufgerufenen Ressource nachverfolgt. Anforderungen für den Zugriff auf Ressourcen von mehr als einem Mandanten sollten niemals durch Endbenutzer geschehen. Dienstanforderungen in einer Umgebung mit mehreren Mandanten sind die einzige Ausnahme. Der Suchcrawler zieht beispielsweise Inhaltsänderungen für eine gesamte Datenbank gleichzeitig durch. Dies umfasst normalerweise das Abfragen von Websites von mehr als einem Mandanten in einer einzelnen Dienstanforderung, was aus Effizienzgründen geschieht.
 
-## <a name="teams"></a>Microsoft Teams
+## <a name="teams"></a>Teams
 
 Ihre Teams-Daten werden je nach Inhaltstyp unterschiedlich gespeichert. 
 

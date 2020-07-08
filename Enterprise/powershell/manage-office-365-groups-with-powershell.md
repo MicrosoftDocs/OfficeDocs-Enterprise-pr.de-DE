@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: Hier erfahren Sie, wie Sie allgemeine Verwaltungsaufgaben für Office 365 Gruppen in Microsoft PowerShell ausführen.
-ms.openlocfilehash: 71d48b133ce716995ec6059a60a0fed487fde208
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: c946b570b0d434886dbd76ba61f53771aa6bca80
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736023"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052478"
 ---
 # <a name="manage-office-365-groups-with-powershell"></a>Verwalten von Office 365-Gruppen mit PowerShell
  
@@ -34,7 +34,7 @@ In diesem Artikel werden die Schritte zum Ausführen häufiger Verwaltungsaufgab
 
 Wenn Benutzer [eine Gruppe in Outlook erstellen oder bearbeiten](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), können Sie über einen Link auf die Nutzungsrichtlinien Ihrer Organisation verweisen. Angenommen, einem Gruppennamen muss ein spezielles Präfix oder Suffix hinzugefügt werden.
   
-Verwenden Sie Azure Active Directory PowerShell, um die Benutzer auf die Nutzungsrichtlinien Ihrer Organisation für Office 365-Gruppen zu verweisen. Lesen Sie [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?LinkID=827484), und führen Sie die Schritte unter **Erstellen von Einstellungen auf Verzeichnisebene** aus, um den Link zu den Nutzungsrichtlinien zu definieren. Nachdem Sie das AAD-Cmdlet ausgeführt haben, wird den Benutzern beim Erstellen oder Bearbeiten einer Gruppe in Outlook der Link zu Ihren Richtlinien angezeigt. 
+Verwenden Sie die Azure Active Directory (Azure AD) PowerShell, um Ihre Benutzer auf die Verwendungsrichtlinien Ihrer Organisation für Office 365 Gruppen zu richten. Lesen Sie [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellungen](https://go.microsoft.com/fwlink/?LinkID=827484), und führen Sie die Schritte unter **Erstellen von Einstellungen auf Verzeichnisebene** aus, um den Link zu den Nutzungsrichtlinien zu definieren. Nachdem Sie das Azure AD-Cmdlet ausgeführt haben, wird dem Benutzer beim Erstellen oder Bearbeiten einer Gruppe in Outlook der Link zu den Richtlinien angezeigt. 
   
 ![Eine neue Gruppe mit Link zu Nutzungsrichtlinien erstellen](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
   
