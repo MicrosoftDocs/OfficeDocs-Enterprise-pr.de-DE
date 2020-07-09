@@ -13,22 +13,22 @@ f1.keywords:
 ms.custom: ''
 localization_priority: Priority
 description: Erfahren Sie, wie Sie Microsoft 365 Multi-Geo konfigurieren.
-ms.openlocfilehash: ffacd18a95288cfcce0794afceaf7ff22bfa2c76
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 928033dcbec0ad0b52f24bd0bec4dd6b9f9331bc
+ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057721"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052568"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo-Mandantenkonfiguration
 
 Bevor Sie Ihren Mandanten für Microsoft 365 Multi-Geo konfigurieren, stellen Sie sicher, dass Sie [Plan für Microsoft 365 Multi-Geo](plan-for-multi-geo.md) gelesen haben. Um die Schritte in diesem Artikel auszuführen, benötigen Sie eine Liste der geografischen Standorte, die Sie als Satellitenstandorte aktivieren möchten, und der Testbenutzer, die Sie für diese Standorte bereitstellen möchten.
 
-## <a name="add-the-multi-geo-capabilities-in-microsoft-365-plan-to-your-tenant"></a>Hinzufügen des Plans für Multi-Geo-Funktionen in Microsoft 365 zu Ihrem Mandanten
+## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>Hinzufügen der Multi-Geo-Funktionen in Ihrem Microsoft 365-Plan zu Ihrem Mandanten
 
 Wenn Sie Microsoft 365 Multi-Geo verwenden möchten, benötigen Sie den Plan _Multi-Geo-Funktionen in Microsoft 365_. Arbeiten Sie mit Ihrem Kontoteam, um diesen Plan zu Ihrem Mandanten hinzuzufügen. Ihr Kontoteam setzt Sie mit dem entsprechenden Lizenzierungsexperten in Verbindung und konfiguriert Ihren Mandanten für Sie.
 
-Beachten Sie, dass der Plan für _Multi-Geo-Funktionen in Microsoft 365_ ein Serviceplan auf Benutzerebene ist. Sie benötigen eine Lizenz für jeden Benutzer, der an einem Satellitenstandort gehostet werden soll. Sie können mit der Zeit weitere Lizenzen hinzufügen, wenn Sie Benutzer in Ihrem Satellitenstandort hinzufügen.
+Note that the _Multi-Geo Capabilities in Microsoft 365_ plan are a user-level service plan. You need a license for each user that you want to host in a satellite location. You can add more licenses over time as you add users in satellite locations.
 
 Nachdem der Plan _Multi-Geo-Funktionen in Microsoft 365_ Ihrem Mandanten bereitgestellt wurde, steht die Registerkarte **Geografische Standorte** im Admin Center von OneDrive sowie SharePoint zur Verfügung.
 
@@ -54,15 +54,15 @@ So fügen Sie einen Satellitenstandort hinzu
 
 6. Klicken Sie auf **Schließen**.
 
-Die Bereitstellung kann je nach Größe des Mandanten bis zu 72 Stunden dauern. Sobald die Bereitstellung für einen Satellitenstandort abgeschlossen ist, erhalten Sie eine E-Mail-Bestätigung. Wenn der neue geografische Standort blau auf der Karte auf der Registerkarte **Geografische Standorte** im OneDrive Admin Center angezeigt wird, können Sie mit dem Festlegen der bevorzugten Datenspeicherorte für die Benutzer für diesen geografischen Standort fortfahren. 
+Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
 
 > [!IMPORTANT]
-> Ihr neuer Satellitenstandort wird mit Standardeinstellungen eingerichtet. Sie können diesen Satellitenstandort entsprechend den lokalen Complianceanforderungen konfigurieren.
+> Your new satellite location will be set up with default settings. This will allow you to configure that satellite location as appropriate for your local compliance needs.
 
 ## <a name="setting-users-preferred-data-location"></a>Festlegen des bevorzugten Datenspeicherorts für Benutzer
 <span id="_Setting_a_User's" class="anchor"><span id="_Toc508109326" class="anchor"></span></span> 
 
-Nachdem Sie die erforderlichen Satellitenstandorte aktiviert haben, können Sie Ihre Benutzerkonten für die Verwendung des bevorzugten Datenspeicherorts aktualisieren. Es wird empfohlen, auch dann einen bevorzugten Datenspeicherort für jeden Benutzer festzulegen, wenn dieser Benutzer am zentralen Datenspeicherort verbleibt.
+Once you enable the needed satellite locations, you can update your user accounts to use the appropriate preferred data location. We recommend that you set a preferred data location for every user, even if that user is staying in the central location.
 
 > [!IMPORTANT]
 > Wenn ein Standort, der noch nicht als Satellitenspeicherort oder zentraler Standort konfiguriert wurde, als bevorzugter Datenspeicherort eines Benutzers festgelegt wird, verwendet das System bei der Bereitstellung von OneDrive- und SharePoint-Websites sowie Gruppenpostfächern standardmäßig den zentralen Standort.
@@ -70,32 +70,32 @@ Nachdem Sie die erforderlichen Satellitenstandorte aktiviert haben, können Sie 
 > [!TIP]
 > Es wird empfohlen, die Prüfungen mit einem Testbenutzer oder einer kleinen Gruppe von Benutzern durchzuführen, bevor die Multi-Geo-Funktionen für Ihre Organisation bereitgestellt werden.
 
-In Azure Active Directory gibt es zwei Arten von Benutzerobjekten: Nur-Cloud-Benutzer und synchronisierte Benutzer. Bitte befolgen Sie die Anweisungen für die entsprechende Benutzerart.
+In Azure Active Directory (Azure AD) gibt es zwei Arten von Benutzerobjekten: Nur-Cloud-Benutzer und synchronisierte Benutzer. Bitte befolgen Sie die Anweisungen für die entsprechende Benutzerart.
 
-### <a name="synchronize-users-preferred-data-location-using-azure-active-directory-connect"></a>Synchronisieren des bevorzugten Datenspeicherorts von Benutzen mit Azure Active Directory Connect 
+### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Synchronisieren der bevorzugten Datenspeicherorte für Benutzer mithilfe von Azure AD Connect 
 
-Wenn für Benutzer in Ihrem Unternehmen eine Synchronisierung zwischen dem lokalen Active Directory-System und Azure Active Directory durchgeführt wird, muss PreferredDataLocation in AD aufgefüllt werden und mit AAD synchronisiert werden. Befolgen Sie den Prozess unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenspeicherorts für Microsoft 365-Ressourcen](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), um die Synchronisierung der bevorzugten Datenspeicherorte zwischen lokalem Active Directory und Azure Active Directory zu konfigurieren.
+Wenn die Benutzer in Ihrem Unternehmen von einem lokalen Active Directory-System mit Azure AD synchronisiert werden, muss ihre "PreferredDataLocation" in AD aufgefüllt und mit Azure AD synchronisiert werden.
 
-Wir empfehlen, die Einstellung des bevorzugten Datenspeicherorts des Benutzers im Rahmen des Standardworkflows für das Erstellen von Benutzern hinzuzufügen.
+Folgen Sie dem Prozess in [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenstandorts für Microsoft 365-Ressourcen](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), um die Synchronisierung des bevorzugten Datenstandorts von Ihren lokalen Active Directory Domain Services (AD DS) mit Azure AD zu konfigurieren.
+
+Wir empfehlen, die Einstellung des bevorzugten Datenspeicherorts von Benutzern im Rahmen des Standardworkflows für das Erstellen von Benutzern vorzunehmen.
 
 > [!IMPORTANT]
-> Im Falle von Benutzern ohne bereitgestellte OneDrive-Umgebung sollten Sie nach der Synchronisierung des bevorzugten Datenspeicherortes mit Azure Active Directory mindestens 24 Stunden warten, damit die Änderungen in Kraft treten, bevor sich die Benutzer bei OneDrive for Business anmelden. (Durch Festlegen des bevorzugten Datenspeicherorts vor der Anmeldung des Benutzers für die Bereitstellung von OneDrive for Business wird sichergestellt, dass die neue OneDrive-Umgebung an dem richtigen Ort bereitgestellt wird.)
+> Im Falle von Benutzern ohne bereitgestellte OneDrive-Umgebung sollten Sie nach der Synchronisierung des bevorzugten Datenspeicherortes mit Azure AD mindestens 24 Stunden warten, damit die Änderungen in Kraft treten, bevor sich die Benutzer bei OneDrive for Business anmelden. (Durch Festlegen des bevorzugten Datenspeicherorts vor der Anmeldung des Benutzers für die Bereitstellung von OneDrive for Business wird sichergestellt, dass die neue OneDrive-Umgebung an dem richtigen Ort bereitgestellt wird.)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>Festlegen des bevorzugten Datenspeicherorts für Nur-Cloud-Benutzer 
 
-Wenn die Benutzer Ihres Unternehmens über ein lokales Active Directory-System mit Azure Active Directory synchronisiert werden (d. h. wenn sie in Microsoft 365 oder Azure Active Directory erstellt werden), muss der PDL über Azure Active Directory PowerShell festgelegt verwenden.
+Wenn die Benutzer Ihres Unternehmens nicht über ein lokales Active Directory-System mit Azure AD synchronisiert werden (d. h. wenn sie in Microsoft 365 oder Azure AD erstellt werden), muss der PDL über das Microsoft Azure Active Directory-Modul für Windows PowerShell festgelegt verwenden.
 
-Für die Vorgehensweisen in diesem Abschnitt ist das [Microsoft Azure Active Directory-Modul für Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0) erforderlich. Wenn Azure Active Directory PowerShell bereits installiert ist, stellen Sie sicher, dass Sie ein Update auf die neueste Version durchführen.
+Die Verfahren in diesem Abschnitt setzen das [Microsoft Azure Active Directory-Modul für Windows PowerShell](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0) voraus. Wenn dieses Modul bereits installiert ist, stellen Sie sicher, dass Sie die neueste Version verwenden.
 
-1.  Öffnen Sie das Microsoft Azure Active Directory-Modul für Windows PowerShell.
+1.  [Stellen Sie eine Verbindung her, und melden Sie sich mit den Anmeldeinformationen eines globaler Administrators für Ihren Mandanten an](/powershell/connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-2.  Führen Sie `Connect-MsolService` aus, und geben Sie die Anmeldeinformationen des globalen Administrators für Ihren Mandanten ein.
-
-3.  Verwenden Sie das [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser)-Cmdlet zum Festlegen des bevorzugten Datenspeicherorts für jeden Benutzer. Zum Beispiel:
+2.  Use the [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
-    Sie können mithilfe des Get-MsolUser-Cmdlets prüfen, ob der bevorzugte Datenspeicherort korrekt festgelegt wurde. Zum Beispiel:
+    You can check to confirm that the preferred data location was updated properly by using the Get-MsolUser cmdlet. For example:
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
@@ -144,12 +144,12 @@ Melden Sie sich bei Ihrer mobilen OneDrive-App mit den Anmeldeinformationen Ihre
 
 **OneDrive-Synchronisierungsclient**
 
-Vergewissern Sie sich, dass der OneDrive-Synchronisierungsclient den geografischen Standort für OneDrive for Business nach Anmeldung automatisch erkennt. Wenn Sie den Synchronisierungsclient herunterladen müssen, klicken Sie in der OneDrive-Bibliothek auf **Synchronisieren**.
+Confirm that the OneDrive sync client automatically detects your OneDrive for Business geo location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 **Office-Anwendungen**
 
-Vergewissern Sie sich, dass Sie auf OneDrive for Business zugreifen können, indem Sie sich von einer Office-Anwendung wie Word aus anmelden. Öffnen Sie die Office-Anwendung, und wählen Sie „OneDrive – <TenantName>„. Office erkennt Ihren OneDrive-Ort und zeigt die Dateien, die Sie öffnen können.
+Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select "OneDrive – <TenantName>". Office will detect your OneDrive location and show you the files that you can open.
 
 **Freigabe**
 
-Testen Sie die Freigabe von OneDrive-Dateien. Vergewissern Sie sich, dass die Personenauswahl alle SharePoint-Onlinebenutzer unabhängig vom geografischen Standort anzeigt.
+Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their geo location.
