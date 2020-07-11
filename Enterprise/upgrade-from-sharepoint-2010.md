@@ -19,12 +19,12 @@ ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
 description: Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 am 13. April 2021. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 9bf9e71fe38c4033d7ada41253ba033644792846
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 91083cbf64bde3e083ba87e2867e7e1a9e22628c
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997491"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102583"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
@@ -89,7 +89,7 @@ Beachten Sie die versteckten Kosten, die im Zusammenhang mit der Wartung einer S
 > [!NOTE]
 > SharePoint-Administratoren erstellen möglicherweise ein Microsoft 365-Abonnement, richten eine brandneue SharePoint Online Website ein und schneiden dann sauber von SharePoint Server 2010 ab, wobei nur die wichtigsten Dokumente auf die neuen SharePoint Online Websites übermittelt werden. Von dort aus können alle verbleibenden Daten von der SharePoint Server 2010 Website in lokale Archive entwässert werden. 
   
-|**SharePoint Online**|**SharePoint Server lokal**|
+|**SharePoint Online**|**SharePoint Server lokal**|
 |:-----|:-----|
 |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |
 |Geringere Kosten in Fonds (keine hardwarekäufe)  <br/> |Höhere Kosten in Fonds (hardwarekäufe)  <br/> |
@@ -253,9 +253,9 @@ Eine gute Möglichkeit, um zu sehen, wie dies funktioniert, ist das Erstellen ei
 
 ## <a name="summary-of-options-for-office-2010-client-and-servers-and-windows-7"></a>Zusammenfassung der Optionen für Office 2010 Client und Server und Windows 7
 
-Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und die Cloud für Office 2010-Clients und -Server sowie für Windows 7 finden Sie auf unter dem [Poster zum Supportende](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf).
+Eine visuelle Zusammenfassung der Optionen für Upgrades, Migration und die Cloud für Office 2010-Clients und -Server sowie für Windows 7 finden Sie auf unter dem [Poster zum Supportende](./downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./media/upgrade-from-office-2010-servers-and-products/Office2010Windows7EndOfSupport.pdf)
+[![Bild des Posters zum Ende des Supports für Office 2010-Clients und -Server sowie Windows 7](./media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](./downloads/Office2010Windows7EndOfSupport.pdf)
 
 Dieses einseitige Poster veranschaulicht auf einfache Weise, welche verschiedenen Pfade Sie wählen können, um zu verhindern, dass Office 2010-Clients und -Serverprodukte sowie Windows 7 das Ende des Supports erreichen. Bevorzugte Pfade und unterstützte Optionen in Microsoft 365 Enterprise sind hervorgehoben.
 

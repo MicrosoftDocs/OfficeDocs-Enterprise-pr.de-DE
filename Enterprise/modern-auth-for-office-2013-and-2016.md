@@ -23,14 +23,14 @@ ms.assetid: e4c45989-4b1a-462e-a81b-2a13191cf517
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie die moderne Authentifizierung von Microsoft 365 für Office 2013-und 2016-Client-apps anders funktioniert.
-ms.openlocfilehash: a7c3a9a8aaa4705ff81607718813060be3455ccd
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 22f9bf521fc5da367cb8f8d6f02a004baf42a866
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997842"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102603"
 ---
-# <a name="how-modern-authentication-works-for-office-2013-and-office-2016-client-apps"></a>Funktionsweise der modernen Authentifizierung in Office 2013- und Office 2016-Client-Apps
+# <a name="how-modern-authentication-works-for-office-2013-office-2016-and-office-2019-client-apps"></a>Funktionsweise der modernen Authentifizierung für Office 2013-, Office 2016-und Office 2019-Client-apps
 
 *Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
@@ -65,7 +65,7 @@ To enable modern authentication for any devices running Windows (for example on 
   
 Erfahren Sie, wie Sie die [moderne Authentifizierung (Adal) mit Skype for Business verwenden](https://go.microsoft.com/fwlink/p/?LinkId=785431) , um sich mit der Funktionsweise von Skype for Business vertraut zu machen. 
   
-Office 2016 Clients unterstützen standardmäßig die moderne Authentifizierung, und es ist keine Aktion erforderlich, damit der Client diese neuen Flows verwenden kann. Für die Verwendung der Legacy Authentifizierung ist jedoch eine explizite Aktion erforderlich.
+Office 2016-und Office 2019-Clients unterstützen standardmäßig die moderne Authentifizierung, und es ist keine Aktion erforderlich, damit der Client diese neuen Flows verwendet. Für die Verwendung der Legacy Authentifizierung ist jedoch eine explizite Aktion erforderlich.
   
 Klicken Sie auf die Links unten, um zu sehen, wie Office 2013-und Office 2016-Clientauthentifizierung mit Microsoft 365-Diensten funktioniert, je nachdem, ob die moderne Authentifizierung aktiviert ist oder nicht.
   
@@ -82,6 +82,10 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
   
 |Version des Office-Client-App * * * *|Registrierungsschlüssel vorhanden? * * * *|Moderne Authentifizierung auf? * * * *|Authentifizierungsverhalten bei aktivierter moderner Authentifizierung für den Mandanten (Standard) * * * *|Authentifizierungsverhalten bei deaktivierter moderner Authentifizierung für den Mandanten * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2019  <br/> |Nein <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Ja  <br/> |Erzwingt moderne Authentifizierung für Outlook 2010, 2013 oder 2019 <br/> [Weitere Informationen](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Erzwingt moderne Authentifizierung innerhalb des Outlook-Clients.<br/> |
+|Office 2019  <br/> |Nein oder EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |
+|Office 2019  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |
+|Office 2019  <br/> |Ja, EnableADAL = 0  <br/> |Nein  <br/> |Standardauthentifizierung  <br/> |Standardauthentifizierung  <br/> |
 |Office 2016  <br/> |Nein <br> AlwaysUseMSOAuthForAutoDiscover = 1 <br/> |Ja  <br/> |Erzwingt moderne Authentifizierung für Outlook 2010, 2013 oder 2016 <br/> [Weitere Informationen](https://support.microsoft.com/help/3126599/outlook-prompts-for-password-when-modern-authentication-is-enabled)|Erzwingt moderne Authentifizierung innerhalb des Outlook-Clients.<br/> |
 |Office 2016  <br/> |Nein oder EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |
 |Office 2016  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird die Standardauthentifizierung verwendet. Server lehnt moderne Authentifizierung ab, wenn der Mandant nicht aktiviert ist.  <br/> |
@@ -96,6 +100,9 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
   
 |Version des Office-Client-App * * * *|Registrierungsschlüssel vorhanden? * * * *|Moderne Authentifizierung auf? * * * *|Authentifizierungsverhalten bei aktivierter moderner Authentifizierung für den Mandanten (Standard) * * * *|Authentifizierungsverhalten bei deaktivierter moderner Authentifizierung für den Mandanten * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2019  <br/> |Nein oder EnableADAL = 1  <br/> |Ja  <br/> |Nur moderne Authentifizierung.  <br/> |Fehler beim Herstellen einer Verbindung.  <br/> |
+|Office 2019  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Nur moderne Authentifizierung.  <br/> |Fehler beim Herstellen einer Verbindung.  <br/> |
+|Office 2019  <br/> |Ja, EnableADAL = 0  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
 |Office 2016  <br/> |Nein oder EnableADAL = 1  <br/> |Ja  <br/> |Nur moderne Authentifizierung.  <br/> |Fehler beim Herstellen einer Verbindung.  <br/> |
 |Office 2016  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Nur moderne Authentifizierung.  <br/> |Fehler beim Herstellen einer Verbindung.  <br/> |
 |Office 2016  <br/> |Ja, EnableADAL = 0  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
@@ -109,13 +116,16 @@ In der folgenden Tabelle wird das Authentifizierungsverhalten für Office 2013-o
   
 |Version des Office-Client-App * * * *|Registrierungsschlüssel vorhanden? * * * *|Moderne Authentifizierung auf? * * * *|Authentifizierungsverhalten bei aktivierter moderner Authentifizierung für den Mandanten * * * *|Authentifizierungsverhalten bei deaktivierter moderner Authentifizierung für den Mandanten (Standardeinstellung) * * * *|
 |:-----|:-----|:-----|:-----|:-----|
+|Office 2019  <br/> |Nein oder EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |
+|Office 2019  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |
+|Office 2019  <br/> |Ja, EnableADAL = 0  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
 |Office 2016  <br/> |Nein oder EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |
 |Office 2016  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |
 |Office 2016  <br/> |Ja, EnableADAL = 0  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
 |Office 2013  <br/> |Nein  <br/> |Nein  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
 |Office 2013  <br/> |Ja, EnableADAL = 1  <br/> |Ja  <br/> |Die moderne Authentifizierung wird zuerst versucht. Wenn der Server eine moderne Authentifizierungs Verbindung ablehnt, wird der Microsoft Online-Anmelde-Assistent verwendet. Server lehnt moderne Authentifizierung ab, wenn Skype for Business Online Mandanten nicht aktiviert sind.  <br/> |Nur Microsoft Online-Anmelde-Assistent.  <br/> |
    
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)
 

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Zusammenfassung: Konfigurieren der Microsoft Azure Infrastruktur zum Hosten der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365.'
-ms.openlocfilehash: 10bf8165b36571b5cd68107fa32e26db970d1d58
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 5b0eed42076a79af52566868c8e6134c48fd847f
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711948"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102543"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
@@ -39,19 +39,19 @@ Azure muss mit diesen grundlegenden Komponenten ausgestattet werden:
 
 Füllen Sie die folgenden Tabellen aus, bevor Sie mit dem Konfigurieren von Azure-Komponenten beginnen. Um Sie bei den Verfahren für die Konfiguration von Azure zu unterstützen, Drucken Sie diesen Abschnitt aus, notieren Sie die erforderlichen Informationen, oder kopieren Sie diesen Abschnitt in ein Dokument, und füllen Sie ihn aus. Geben Sie in Tabelle V die Einstellungen für das VNet ein.
   
-|**Element**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
+|**Item**|**Konfigurationseinstellung**|**Beschreibung**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |VNet-Name  <br/> |Ein Name, der dem VNet zugewiesen wird (z. B. FedAuthNet).  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |VNet-Standort  <br/> |Das regionale Azure-Rechenzentrum, in dem sich das virtuelle Netzwerk befinden soll  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |3.  <br/> |IP-Adresse des VPN-Geräts  <br/> |Die öffentliche IPv4-Adresse der Schnittstelle des VPN-Geräts im Internet  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
-|4.  <br/> |VNet-Adressraum  <br/> |Der Adressraum für das virtuelle Netzwerk (Fragen Sie Ihre IT-Abteilung nach diesem Adressraum.)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
-|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |Eine aus 32 zufällig ausgewählten alphanumerischen Zeichen bestehende Zeichenfolge, die zur Authentifizierung beider Seiten der Standort-zu-Standort-VPN-Verbindung verwendet wird (Fragen Sie Ihre IT- oder Sicherheitsabteilung nach diesem Schlüsselwert. Alternativ finden Sie weitere Informationen unter [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|4.  <br/> |VNet-Adressraum  <br/> |The address space for the virtual network. Work with your IT department to determine this address space.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
+|5.  <br/> |Gemeinsam verwendeter IPsec-Schlüssel  <br/> |A 32-character random, alphanumeric string that will be used to authenticate both sides of the site-to-site VPN connection. Work with your IT or security department to determine this key value. Alternately, see [Create a random string for an IPsec preshared key](https://social.technet.microsoft.com/wiki/contents/articles/32330.create-a-random-string-for-an-ipsec-preshared-key.aspx).  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
    
  **Tabelle V: Konfiguration eines standortübergreifenden virtuellen Netzwerks**
   
-Füllen Sie nun Tabelle S für die Subnetze dieser Lösung aus. Alle Adressräume sollten im CIDR (Classless Inter-Domain Routing)-Format angegeben werden, auch Netzwerkpräfixformat genannt. Beispiel: 10.24.64.0/20.
+Next, fill in Table S for the subnets of this solution. All address spaces should be in Classless Interdomain Routing (CIDR) format, also known as network prefix format. An example is 10.24.64.0/20.
   
-Geben Sie für die ersten drei Subnetze einen Namen und einen einzigen IP-Adressraum aus dem Adressraum des virtuellen Netzwerks an. Gehen Sie wie folgt vor, um den 27-Bit-Adressraum (mit Präfixlänge „/27“) für das Azure-Gatewaysubnetz zu ermitteln:
+For the first three subnets, specify a name and a single IP address space based on the virtual network address space. For the gateway subnet, determine the 27-bit address space (with a /27 prefix length) for the Azure gateway subnet with the following:
   
 1. Setzen Sie die variablen Bits im Adressraum des VNet auf 1, bis zu den für das Gatewaysubnetz verwendeten Bits. Setzen Sie die verbleibenden Bits auf 0.
     
@@ -72,7 +72,7 @@ Fragen Sie Ihre IT-Abteilung nach diesen Adressräumen aus dem Adressraum des vi
   
 Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen Computern und den Load Balancer-Instanzen zugewiesen werden.
   
-|**Element**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
+|**Item**|**Zweck**|**IP-Adresse im Subnetz**|**Wert**|
 |:-----|:-----|:-----|:-----|
 |1.  <br/> |Statische IP-Adresse des ersten Domänencontrollers  <br/> |Die vierte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |Statische IP-Adresse des zweiten Domänencontrollers  <br/> |Die fünfte mögliche IP-Adresse für den Adressraum des in Tabelle S, Element 1 definierten Subnetzes  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -89,7 +89,7 @@ Tragen Sie in Tabelle I nun die statischen IP-Adressen ein, die den virtuellen C
   
 Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus, die Sie bei der Ersteinrichtung der Domänencontroller in Ihrem virtuellen Netzwerk verwenden möchten. Stellen Sie diese Liste gemeinsam mit Ihrer IT-Abteilung zusammen.
   
-|**Element**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
+|**Item**|**Anzeigename des DNS-Servers**|**IP-Adresse des DNS-Servers**|
 |:-----|:-----|:-----|
 |1.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
 |2.  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |![Zeile](./media/Common-Images/TableLine.png)  <br/> |
@@ -98,7 +98,7 @@ Füllen Sie Tabelle D für die beiden DNS-Server in Ihrem lokalen Netzwerk aus,
   
 Um Pakete aus dem standortübergreifenden Netzwerk an Ihr Organisationsnetzwerk über die Standort-zu-Standort-VPN-Verbindung weiterzuleiten, müssen Sie das virtuelle Netzwerk mit einem lokalen Netzwerk konfigurieren, das über eine Liste der Adressräume (in der CIDR-Notation) für alle erreichbaren Standorte im lokalen Netzwerk Ihrer Organisation verfügt. Die Liste der Adressräume, die Ihr lokales Netzwerk definieren, muss eindeutig sein und darf sich nicht mit dem Adressraum überschneiden, der für andere virtuelle Netzwerke oder andere lokale Netzwerke verwendet wird.
   
-Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle L aus. Auch wenn hierfür nur drei Einträge vorgesehen sind, können Sie noch weitere hinzufügen. Erarbeiten Sie diese Liste der Adressräume gemeinsam mit Ihrer IT-Abteilung.
+For the set of local network address spaces, fill in Table L. Note that three blank entries are listed but you will typically need more. Work with your IT department to determine this list of address spaces.
   
 |**Element**|**Adressraum des lokalen Netzwerks**|
 |:-----|:-----|
@@ -120,7 +120,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Verwenden Sie diese [Microsoft Excel Konfigurations Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/deploy-high-availability-federated-authentication-for-office-365-in-azure/O365FedAuthInAzure_Config.xlsx), um Ready-to-Run PowerShell-Befehlsblöcke basierend auf Ihren benutzerdefinierten Einstellungen zu generieren. 
+> Verwenden Sie diese [Microsoft Excel Konfigurations Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx), um Ready-to-Run PowerShell-Befehlsblöcke basierend auf Ihren benutzerdefinierten Einstellungen zu generieren. 
 
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
@@ -141,7 +141,7 @@ $subscrName="<subscription name>"
 Select-AzSubscription -SubscriptionName $subscrName
 ```
 
-Erstellen Sie im nächsten Schritt die neuen Ressourcengruppen. Listen Sie mit dem folgenden Befehl alle bereits vorhandenen Ressourcengruppen auf, um eine eindeutige Gruppe von Ressourcengruppennamen zu ermitteln.
+Next, create the new resource groups. To determine a unique set of resource group names, use this command to list your existing resource groups.
   
 ```powershell
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
@@ -263,7 +263,7 @@ Notieren Sie sich jetzt die öffentliche IPv4-Adresse des Azure-VPN-Gateways fü
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Konfigurieren Sie im nächsten Schritt die Verbindung zwischen dem lokalen VPN-Gerät und dem Azure-VPN-Gateway. Weitere Informationen finden Sie im Artikel zum Thema [Konfigurieren von VPN-Geräten](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Next, configure your on-premises VPN device to connect to the Azure VPN gateway. For more information, see [Configure your VPN device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Sie benötigen folgende Informationen zum Konfigurieren Ihres lokalen VPN-Geräts:
   
@@ -271,9 +271,9 @@ Sie benötigen folgende Informationen zum Konfigurieren Ihres lokalen VPN-Gerät
     
 - Den vorinstallierten IPsec-Schlüssel für die Standort-zu-Standort-VPN-Verbindung (Tabelle V, Element 5, Spalte „Wert")
     
-Vergewissern Sie sich im nächsten Schritt, dass der Adressraum des virtuellen Netzwerks aus Ihrem lokalen Netzwerk erreichbar ist. In der Regel fügen Sie dazu Ihrem VPN-Gerät eine dem Adressraum des virtuellen Netzwerks entsprechende Route hinzu und senden diese Route anschließend an die restliche Weiterleitungsinfrastruktur Ihres Organisationsnetzwerks. Erkundigen Sie sich bei Ihrer IT-Abteilung, wie Sie vorgehen sollen.
+Next, ensure that the address space of the virtual network is reachable from your on-premises network. This is usually done by adding a route corresponding to the virtual network address space to your VPN device and then advertising that route to the rest of the routing infrastructure of your organization network. Work with your IT department to determine how to do this.
   
-Definieren Sie nun die Namen von drei Verfügbarkeitsgruppen. Füllen Sie Tabelle A aus.  
+Next, define the names of three availability sets. Fill out Table A. 
   
 |**Element**|**Zweck**|**Name der Verfügbarkeitsgruppe**|
 |:-----|:-----|:-----|
@@ -312,7 +312,7 @@ Verwenden Sie [Phase 2: Konfigurieren von Domänencontrollern](high-availability
   
 ## <a name="see-also"></a>Siehe auch
 
-[Bereitstellen der Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
+[Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-office-365-in-azure.md)
   
 [Verbundidentität für Ihre Microsoft 365-Entwicklungs-/Testumgebung](https://docs.microsoft.com/microsoft-365/enterprise/federated-identity-for-your-office-365-dev-test-environment)
   
