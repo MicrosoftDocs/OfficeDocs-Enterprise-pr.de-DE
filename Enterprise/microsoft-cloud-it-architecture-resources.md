@@ -18,16 +18,16 @@ ms.assetid: 28986107-e2fb-4116-bfdd-f66d751a7c16
 search.appverid:
 - MET150
 description: "Summary: Learn core cloud architecture concepts for Microsoft identity, security, networking, and hybrid. Review prescriptive recommendations for protecting files, identities, and devices when using Microsoft's cloud."
-ms.openlocfilehash: c1d41fa4ca098a913c7fea039765f916614c7f9c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: 1798e56139262e2328487b6a998d860bc095b6fc
+ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997897"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102613"
 ---
 # <a name="microsoft-cloud-it-architecture-resources"></a>Ressourcen zur Cloud-IT-Architektur von Microsoft
 
-Diese Architekturtools und Poster bieten Ihnen Informationen zu Microsoft-Cloud-Diensten, einschließlich Microsoft 365, Windows 10, Azure Active Directory, Microsoft InTune, Microsoft Dynamics 365 und Hybriden lokalen und Cloud-Lösungen. IT-Entscheidungsträger und Architekten können diese Ressourcen verwenden, um die optimalen Lösungen für ihre Arbeitsauslastungen zu bestimmen und Entscheidungen zu Kerninfrastrukturkomponenten wie Identität und Sicherheit zu treffen. 
+Diese Architekturtools und -poster enthalten Informationen über Microsoft-Clouddienste, einschließlich Microsoft 365, Windows 10, Azure Active Directory, Microsoft Intune, Microsoft Dynamics 365 sowie Hybridlösungen (lokal und Cloud). IT-Entscheidungsträger und Architekten können diese Ressourcen nutzen, um die idealen Lösungen für ihre Workloads zu ermitteln und Entscheidungen hinsichtlich der wichtigsten Infrastrukturkomponenten wie Identität und Sicherheit zu treffen. 
   
 <!--**[Microsoft's Enterprise Cloud Roadmap](microsoft-cloud-it-architecture-resources.md#roadmap)** (Sway) -->
     
@@ -67,7 +67,7 @@ See the posters, icon sets, community venues, and other resources that describe 
 <a name="cloudarch"></a>
 ## Reihe: Microsoft Cloud für Enterprise-Architekten
 
-Diese Cloud-Architektur-Poster bieten Ihnen Informationen zu Microsoft-Cloud-Diensten, einschließlich Microsoft 365, Azure Active Directory, Microsoft InTune, Microsoft Dynamics CRM Online und Hybriden lokalen und Cloud-Lösungen. IT-Entscheidungsträger und Architekten können diese Ressourcen verwenden, um die optimalen Lösungen für ihre Arbeitsauslastungen zu bestimmen und Entscheidungen zu Kerninfrastrukturkomponenten wie Identität und Sicherheit zu treffen.
+Diese Cloudarchitekturposter enthalten Informationen über Microsoft-Clouddienste, einschließlich Microsoft 365, Azure Active Directory, Microsoft Intune, Microsoft Dynamics CRM Online sowie Hybridlösungen (lokal und Cloud). IT-Entscheidungsträger und Architekten können diese Ressourcen nutzen, um die idealen Lösungen für ihre Workloads zu ermitteln und Entscheidungen hinsichtlich der wichtigsten Infrastrukturkomponenten wie Identität und Sicherheit zu treffen.
 
 <!--  
 <a name="platformoptions"></a>
@@ -106,7 +106,7 @@ Was IT-Architekten über Netzwerke für Microsoft-Cloud-Dienste und -Plattformen
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für Microsoft-Cloud-Netzwerkmodell](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](media/Network-Poster/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](media/Network-Poster/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/> | Dieses Modell enthält Folgendes: <ul><li> Weiterentwicklung Ihres Netzwerks für Cloudkonnektivität </li><li> Allgemeine Elemente der Microsoft-Cloudkonnektivität </li><li> ExpressRoute für Microsoft-Cloudkonnektivität </li><li> Entwerfen von Netzwerken für Microsoft SaaS, Azure PaaS und Azure IaaS </li></ul><br/>  <br/>|
+|[![Miniaturbild für Microsoft-Cloud-Netzwerkmodell](media/95e8ab6a-b4d0-4836-acc1-b0b77ebf46e6.png)](downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_networking.vsdx) <br/> | Dieses Modell enthält Folgendes: <ul><li> Weiterentwicklung Ihres Netzwerks für Cloudkonnektivität </li><li> Allgemeine Elemente der Microsoft-Cloudkonnektivität </li><li> ExpressRoute für Microsoft-Cloudkonnektivität </li><li> Entwerfen von Netzwerken für Microsoft SaaS, Azure PaaS und Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft Hybrid Cloud für Enterprise-Architekten
@@ -115,7 +115,7 @@ Was IT-Architekten über Hybrid Cloud für Microsoft-Dienste und -Plattformen wi
   
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für das Microsoft-Cloud-Hybridmodell](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx)  | Dieses Modell enthält Folgendes: <ul><li> Cloudangebote von Microsoft (SaaS, Azure PaaS und Azure IaaS) und deren gemeinsame Elemente </li><li> Hybrid Cloud-Architektur für Cloudangebote von Microsoft </li><li> Hybrid Cloud-Szenarien für Microsoft SaaS (Microsoft 365), Azure PaaS und Azure IaaS </li></ul><br/>|
+|[![Miniaturbild für das Microsoft-Cloud-Hybridmodell](media/9989c71e-f6a0-4dbe-906c-43e67b3ce537.png)](downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/MSFT_cloud_architecture_hybrid.vsdx)  | Dieses Modell enthält Folgendes: <ul><li> Cloudangebote von Microsoft (SaaS, Azure PaaS und Azure IaaS) und deren gemeinsame Elemente </li><li> Hybrid Cloud-Architektur für Cloudangebote von Microsoft </li><li> Hybrid Cloud-Szenarien für Microsoft SaaS (Microsoft 365), Azure PaaS und Azure IaaS </li></ul><br/>|
    
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation
@@ -130,7 +130,7 @@ Erfahren Sie mehr über die häufigsten Cyberangriffe und wie Microsoft Ihrer Or
 
 Sie erhalten einen Überblick über die [grundlegende Infrastruktur](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure) für Microsoft 365 Enterprise, um mit der Bereitstellung zu beginnen.
   
-|**Element**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |[![Thumbnail-Bild des Microsoft 365 Enterprise-Foundation-Infrastruktur-Posters](media/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [Online anzeigen](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf) <br/> | Dieses Poster fasst alle Phasen der Basisinfrastruktur hinsichtlich der Ziele, Features und Werkzeuge, Design-Entscheidungen, Konfigurationsergebnisse, Onboarding sowie laufende Überwachung und Updates zusammen. <br/>| 
 
@@ -149,7 +149,7 @@ Die Reihe der Microsoft 365 Enterprise-Lösungen bietet Hilfestellung zum Implem
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams und verwandte Produktivitätsdienste in Microsoft 365 für IT-Architekten
 Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend mit Microsoft Teams.
 
-|**Element**|**Beschreibung**|
+|**Item**|**Beschreibung**|
 |:-----|:-----|
 |[![Miniaturbild für Poster der logischen Architektur von Teams](downloads/msft-teams-logical-architecture-thumb.png)](downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)     |Microsoft bietet eine Reihe von Produktivitätsdiensten für die Zusammenarbeit in den Bereichen Datengovernance, Sicherheit und Compliancefunktionen. <br/> <br/>Diese Illustrationen geben einen Einblick in die logische Architektur der Produktivitätsdienste für Enterprise Architekten, beginnend mit Microsoft Teams.|
 
@@ -193,7 +193,7 @@ Empfohlene Funktionen zum Schutz von Dateien in Office 365 basierend auf drei un
 
 Prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |![Miniaturansicht für Office 365 Information Protection für die DSGVO](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |Um diesen Inhalt im Artikelformat anzuzeigen, siehe [Office 365 Information Protection für die DSGVO](https://docs.microsoft.com/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
 
@@ -202,7 +202,7 @@ Prescriptive recommendations for discovering, classifying, protecting, and monit
 This guidance describes how to implement a secure cloud environment. The solution guidance can be used by any organization. It includes extra help for agile organizations with BYOD access and guest accounts. You can use this guidance as a starting-point for designing your own environment.
 
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |**Microsoft-Sicherheitsanleitungen von Microsoft für politische Kampagnen** <br/> [![Miniaturansicht für Miniposter festgelegt.](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |This guidance uses a political campaign organization as an example. Use this guidance as a starting point for any environment.  <br/> |
 |**Sicherheitsanleitungen von Microsoft für gemeinnützige Organisationen** <br/> [![Miniaturbild für eine herunterladbare Datei](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |This guide is slightly revised for nonprofit organizations. For example, it references Office 365 Nonprofit plans. The technical guidance is the same as the political campaign solution guide.  <br/> |
