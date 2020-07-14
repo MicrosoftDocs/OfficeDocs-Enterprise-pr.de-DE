@@ -69,7 +69,7 @@
 ### [Prinzipien von Microsoft 365-Netzwerkverbindungen](office-365-network-connectivity-principles.md)
 ### [Netzwerkplanung und Leistungsoptimierung für Microsoft 365](network-planning-and-performance.md)
 ### [Bewerten der Microsoft 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
-### [Office 365 Networking Partner Program](office-365-networking-partner-program.md)
+### [Office 365 Networking-Partnerprogram](office-365-networking-partner-program.md)
 ### Office 365 – IP-Adressen und URLs
 #### [Office 365-Endpunkte](office-365-endpoints.md)
 #### [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md)
@@ -97,13 +97,13 @@
 #### [DoD-Endpunkte für US Government](office-365-u-s-government-dod-endpoints.md)
 #### [GCC High-Endpunkte für US Government](office-365-u-s-government-gcc-high-endpoints.md)
 #### [Office 365 Verschlüsselungsketten Chains – DOD und GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
-### [IPv6-Unterstützung in Microsoft 365-Diensten](ipv6-support.md)
-### [NAT-Unterstützung mit Microsoft 365](nat-support-with-office-365.md)
+### [IPv6-Unterstützung in Office 365-Diensten](ipv6-support.md)
+### [NAT-Unterstützung bei Office 365](nat-support-with-office-365.md)
 ### Arbeiten mit ExpressRoute für Microsoft 365
-#### [ExpressRoute für Microsoft 365](azure-expressroute.md)
-#### [Implementierung von ExpressRoute für Microsoft 365](implementing-expressroute.md)
-#### [Netzwerkplanung mit ExpressRoute für Microsoft 365](network-planning-with-expressroute.md)
-#### [Routing mit ExpressRoute für Microsoft 365](routing-with-expressroute.md)
+#### [ExpressRoute für Office 365](azure-expressroute.md)
+#### [Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
+#### [Netzwerkplanung mit ExpressRoute für Office 365](network-planning-with-expressroute.md)
+#### [Routing mit ExpressRoute für Office 365](routing-with-expressroute.md)
 
 ## 2. Einrichten Ihrer Identitäten
 ### [Schützen Ihrer globalen Administratorkonten](protect-your-global-administrator-accounts.md)
@@ -274,4 +274,4 @@
 # [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 für Unternehmen](https://www.microsoft.com/microsoft-365/business)
-# [Microsoft 365](https://docs.microsoft.com/microsoft-365)
+# [Microsoft 365-Hilfecenter](https://docs.microsoft.com/microsoft-365)
