@@ -3,7 +3,7 @@ title: Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Of
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 0a90c1b7f74ce9bc14ccae9965c4ce07f74e1b73
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
+ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998560"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092884"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -60,6 +60,8 @@ Während der Migration von Microsoft Cloud Deutschland in die deutschen Rechenze
 - Dynamics 365 / Power Platform
 
 Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
+
+Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Mandanten in die Regionen der neuen deutschen Rechenzentren migrieren, wird Office 365 Video nach Abschluss der SharePoint Online-Migration nicht unterstützt. [Weitere Informationen](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Wie Sie sich auf die Migration auf Office 365-Dienste in den neuen deutschen Rechenzentrumsregionen vorbereiten können
 
@@ -102,6 +104,11 @@ Nach Abschluss der OneDrive for Business-Migration in die Region Deutschland wer
 ### <a name="skype-for-business-online"></a>Skype for Business Online
 
 Bestehende Skype für Business Online Kunden werden auf Microsoft Teams umgestellt. Weitere Informationen finden Sie unter [https://aka.ms/SkypeToTeams-Home](https://aka.ms/SkypeToTeams-Home).
+
+### <a name="office-365-video"></a>Office 365 Video
+Inhalte aus Office 365 Video werden im Rahmen der SharePoint Online-Migration migriert. Office 365 Video wird jedoch eingestellt. Office 365 Video wird nach Abschluss der SharePoint Online-Migration in die neuen deutschen Rechenzentren nicht mehr unterstützt. Videos in Office 365 Video werden nach der SharePoint-Migration nicht mehr in der Office 365 Video-Benutzeroberfläche wiedergegeben.
+
+Microsoft Stream wird nicht für Microsoft Deutschland bereitgestellt, und es gibt derzeit keine Zeitachse für die Bereitstellung von Microsoft Stream in den neuen deutschen Rechenzentren. Daher gibt es in dieser Region keine Migrationstools für Office 365 Video in Microsoft Stream. Wenn Sie Ihre Inhalte beibehalten möchten, müssen Sie Inhalte vor dem 1. März 2021 manuell herunterladen oder verlegen. [Weitere Informationen](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
 
 ## <a name="key-differences-between-microsoft-cloud-germany-microsoft-cloud-deutschland-and-office-365-services-in-the-new-german-datacenter-regions"></a>Wichtigste Unterschiede zwischen Microsoft Cloud Germany (Microsoft Cloud Deutschland) und Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
