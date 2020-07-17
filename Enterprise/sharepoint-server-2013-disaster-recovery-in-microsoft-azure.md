@@ -15,7 +15,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Deployment
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: 'Summary: Using Azure, you can create a disaster-recovery environment for your on-premises SharePoint farm. This article describes how to design and implement this solution.'
+description: 'Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.'
 ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
 ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
@@ -30,7 +30,7 @@ ms.locfileid: "44998167"
  **Schauen Sie sich das Video zur Übersicht über die Notfallwiederherstellung in SharePoint Server 2013 an**.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1b73ec8f-29bd-44eb-aa3a-f7932784bfd9?autoplay=false]
   
- When disaster strikes your SharePoint on-premises environment, your top priority is to get the system running again quickly. Disaster recovery with SharePoint is quicker and easier when you have a backup environment already running in Microsoft Azure. This video explains the main concepts of a SharePoint warm failover environment and complements the full details available in this article.
+ Bei einem Notfall in Ihrer lokalen SharePoint-Umgebung hat die Wiederinbetriebnahme des Systems höchste Priorität. Eine Notfallwiederherstellung mit SharePoint erfolgt schneller und einfacher, wenn Sie bereits über eine in Microsoft Azure ausgeführte Sicherungsumgebung verfügen. In diesem Video werden wichtigsten Konzepte von einer betriebsbereiten SharePoint-Failoverumgebung erläutert. Außerdem werden die umfassenden Details in diesem Artikel weiter ergänzt.
   
 Verwenden Sie diesen Artikel mit dem folgenden Lösungsmodell: **SharePoint-Notfallwiederherstellung in Microsoft Azure**.
   
@@ -40,17 +40,17 @@ Verwenden Sie diesen Artikel mit dem folgenden Lösungsmodell: **SharePoint-Notf
   
 ## <a name="use-azure-infrastructure-services-for-disaster-recovery"></a>Verwenden von Azure Infrastructure Services für Notfallwiederherstellung
 
-Many organizations do not have a disaster recovery environment for SharePoint, which can be expensive to build and maintain on-premises. Azure Infrastructure Services provides compelling options for disaster recovery environments that are more flexible and less expensive than the on-premises alternatives.
+Viele Organisationen verfügen über keine Umgebung für die Notfallwiederherstellung für SharePoint, deren lokale Einrichtung und Verwaltung kostspielig sein kann. Azure-Infrastrukturdienste bietet überzeugende Optionen für Notfallwiederherstellungsumgebungen, die flexibler und wirtschaftlicher als die lokalen Alternativen sind.
   
 Die Verwendung von Azure-Infrastrukturdienste bietet folgende Vorteile:
   
-- **Fewer costly resources** Maintain and pay for fewer resources than on-premises disaster recovery environments. The number of resources depends on which disaster-recovery environment you choose: cold standby, warm standby, or hot standby.
+- **Weniger kostspielige Ressourcen** Im Vergleich zu einer lokalen Umgebung für die Notfallwiederherstellung müssen Sie weniger Ressourcen vorhalten und bezahlen. Die Anzahl der Ressourcen hängt von der gewählten Umgebung für die Notfallwiederherstellung ab: verzögert betriebsbereit, betriebsbereit und unmittelbar betriebsbereit.
     
-- **Better resource flexibility** In the event of a disaster, easily scale out your recovery SharePoint farm to meet load requirements. Scale in when you no longer need the resources.
+- **Flexiblere Ressourcen** Bei einem Notfall können Sie Ihre SharePoint-Wiederherstellungsfarm problemlos horizontal hoch skalieren, um die Lastanforderungen zu erfüllen. Skalieren Sie sie horizontal herunter, wenn Sie die Ressourcen nicht mehr benötigen.
     
 - **Niedrigere Rechenzentrumsanforderungen** Verwenden Sie Azure-Infrastrukturdienste, statt in ein sekundäres Rechenzentrum in einer anderen Region zu investieren.
     
-There are less-complex options for organizations just getting started with disaster recovery and advanced options for organizations with high-resilience requirements. The definitions for cold, warm, and hot standby environments are a little different when the environment is hosted on a cloud platform. The following table describes these environments for building a SharePoint recovery farm in Azure.
+Es gibt weniger komplexe Möglichkeiten für Organisationen, die gerade erst in die Notfallwiederherstellung einsteigen, und erweiterte Optionen für Organisationen mit hohen Anforderungen an Ausfallsicherheit. Die Definitionen für verzögert betriebsbereite, betriebsbereite oder unmittelbar betriebsbereite Standby-Umgebungen sind ein wenig anders, wenn die Umgebung auf einer Cloudplattform gehostet wird. Die folgende Tabelle beschreibt diese Umgebungen für die Erstellung einer SharePoint-Wiederherstellungsfarm in Azure.
   
 **Tabelle: Wiederherstellungsumgebungen**
 
@@ -60,9 +60,9 @@ There are less-complex options for organizations just getting started with disas
 |Bedingt betriebsbereit  <br/> |Die Farm ist bereitgestellt, und virtuelle Computer werden ausgeführt und aktualisiert.  <br/> Zur Wiederherstellung gehören das Anfügen von Inhaltsdatenbanken, Bereitstellen von Dienstanwendungen und Durchforsten von Inhalten.  <br/> Die Farm kann eine kleinere Version der Produktionsfarm sein und anschließend für den gesamten Benutzerstamm horizontal hochskaliert werden.  <br/> |
 |Verzögert betriebsbereit  <br/> |Die Farm ist vollständig erstellt, aber die virtuellen Computer sind nicht in Betrieb.  <br/> Zur Verwaltung der Umgebung zählen das Starten der virtuellen Computer in regelmäßigen Abständen, das Einspielen von Patches und Updates sowie das Überprüfen der Umgebung.  <br/> Starten Sie die vollständige Umgebung bei einem Notfall.  <br/> |
    
-It's important to evaluate your organization's Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs). These requirements determine which environment is the most appropriate investment for your organization.
+Es ist wichtig, die Recovery Time Objectives (RTO) und Recovery Point Objectives (RPO) Ihrer Organisation zu bewerten. Diese Anforderungen bestimmen, welche Umgebung für Ihre Organisation am besten geeignet ist.
   
-The guidance in this article describes how to implement a warm standby environment. You can also adapt it to a cold standby environment, although you need to follow additional procedures to support this kind of environment. This article does not describe how to implement a hot standby environment.
+In den Anleitungen in diesem Artikel wird beschrieben, wie eine betriebsbereite Standby-Umgebung implementiert wird. Sie können sie auch an eine verzögert betriebsbereite Standby-Umgebung anpassen, obwohl Sie zusätzliche Verfahren zur Unterstützung dieser Art von Umgebung befolgen müssen. In diesem Artikel wird nicht die Implementierung einer unmittelbar betriebsbereiten Standby-Umgebung beschrieben.
   
 Weitere Informationen zur Notfallwiederherstellung finden Sie unter [High availability and disaster recovery concepts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkID=393114) und [Choose a disaster recovery strategy for SharePoint 2013](https://go.microsoft.com/fwlink/p/?linkid=203228).
   
@@ -84,7 +84,7 @@ Die folgende Abbildung zeigt diese drei Elemente.
   
 Der SQL Server-Protokollversand mit DFS-Replikation (Distributed File System Replication) dient zum Kopieren von Datenbanksicherungen und Transaktionsprotokollen in die Wiederherstellungsfarm in Azure: 
   
-- DFSR transfers logs from the production environment to the recovery environment. In a WAN scenario, DFSR is more efficient than shipping the logs directly to the secondary server in Azure.
+- DFSR überträgt Protokolle aus der Produktionsumgebung in die Wiederherstellungsumgebung. In einem WAN-Szenario ist DFSR effizienter als das Versenden der Protokolle direkt an den sekundären Server in Azure.
     
 - Protokolle werden in SQL Server in der Wiederherstellungsumgebung in Azure wiedergegeben.
     
@@ -106,7 +106,7 @@ Führen Sie die folgenden Schritte aus, um die Farm wiederherzustellen:
     
 7. Starten Sie eine vollständige Durchforstung.
     
-We recommend that you rehearse these steps regularly and document them to help ensure that your live recovery runs smoothly. Attaching content databases and restoring service applications can take some time and typically involves some manual configuration.
+Wir empfehlen, diese Schritte regelmäßig zu testen und zu dokumentieren, um sicherzustellen, dass Ihre Wiederherstellung bei laufendem System problemlos ausgeführt werden kann. Das Anfügen von Inhaltsdatenbanken und Wiederherstellen von Dienstanwendungen kann einige Zeit in Anspruch nehmen und umfasst in der Regel einige manuelle Konfigurationsschritte.
   
 Nachdem eine Wiederherstellung erfolgt ist, bietet Ihnen diese Lösung die in der folgenden Tabelle aufgeführten Elemente.
   
@@ -115,18 +115,18 @@ Nachdem eine Wiederherstellung erfolgt ist, bietet Ihnen diese Lösung die in de
 |**Element**|**Beschreibung**|
 |:-----|:-----|
 |Websites und Inhalte  <br/> |Websites und Inhalte sind in der Wiederherstellungsumgebung verfügbar.  <br/> |
-|Eine neue Instanz der Suche  <br/> |In this warm standby solution, search is not restored from search databases. Search components in the recovery farm are configured as similarly as possible to the production farm. After the sites and content are restored, a full crawl is started to rebuild the search index. You do not need to wait for the crawl to complete to make the sites and content available.  <br/> |
-|Dienste  <br/> | Services that store data in databases are restored from the log-shipped databases. Services that do not store data in databases are simply started. <br/>  Not all services with databases need to be restored. The following services do not need to be restored from databases and can simply be started after failover: <br/>  Sammlung von Verwendungs- und Integritätsdaten <br/>  Statusdienst <br/>  Word-Automatisierung <br/>  Alle anderen Dienste, die keine Datenbank verwenden <br/> |
+|Eine neue Instanz der Suche  <br/> |Bei dieser betriebsbereiten Standby-Lösung wird die Suche aus Suchdatenbanken wiederhergestellt. Die Konfiguration von Suchkomponenten in der Wiederherstellungsfarm orientiert sich so weit wie möglich an der Produktionsfarm. Nachdem Websites und Inhalte wiederhergestellt wurden, wird eine vollständige Durchforstung gestartet, um den Suchindex neu zu erstellen. Sie müssen nicht warten, bis die Durchforstung abgeschlossen ist, um die Websites und Inhalte zur Verfügung zu stellen.  <br/> |
+|Dienste  <br/> | Dienste, die Daten in Datenbanken speichern, werden von Datenbanken mit Protokollversand wiederhergestellt. Dienste, die keine Daten in Datenbanken speichern, werden einfach gestartet. <br/>  Nicht alle Dienste mit Datenbanken müssen wiederhergestellt werden. Die folgenden Dienste müssen nicht aus Datenbanken wiederhergestellt werden und können nach einem Failover einfach gestartet werden: <br/>  Sammlung von Verwendungs- und Integritätsdaten <br/>  Statusdienst <br/>  Word-Automatisierung <br/>  Alle anderen Dienste, die keine Datenbank verwenden <br/> |
    
-You can work with Microsoft Consulting Services (MCS) or a partner to address more-complex recovery objectives. These are summarized in the following table.
+Sie können mit Microsoft Consulting Services (MCS) oder einem Partner zusammenarbeiten, um komplexere Wiederherstellungsziele zu erfüllen, die in der folgenden Tabelle zusammengefasst sind.
   
 **Tabelle: Andere Elemente, die von MCS oder einem Partner betreut werden können**
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|Synchronisieren benutzerdefinierter Farmlösungen  <br/> |Ideally, the recovery farm configuration is identical to the production farm. You can work with a consultant or partner to evaluate whether custom farm solutions are replicated and whether the process is in place for keeping the two environments synchronized.  <br/> |
+|Synchronisieren benutzerdefinierter Farmlösungen  <br/> |Im Idealfall ist die Konfiguration der Wiederherstellungsfarm identisch mit der Produktionsfarm. Sie können mit einem Berater oder Partner zusammenarbeiten, um zu prüfen, ob benutzerdefinierte Farmlösungen repliziert werden und ob ein Prozess vorhanden ist, mit dessen Hilfe beide Umgebungen synchron bleiben.  <br/> |
 |Verbindungen mit lokalen Datenquellen  <br/> |Es ist möglicherweise unpraktisch, Verbindungen mit Back-End-Datensystemen zu replizieren, z. B. mit Sicherungsdomänencontrollern und Inhaltsquellen für die Suche.  <br/> |
-|Wiederherstellungsszenarien für die Suchfunktion  <br/> |Because enterprise search deployments tend to be fairly unique and complex, restoring search from databases requires a greater investment. You can work with a consultant or partner to identify and implement search restore scenarios that your organization might require.  <br/> |
+|Wiederherstellungsszenarien für die Suchfunktion  <br/> |Da Bereitstellungen der Unternehmenssuche in der Regel relativ individuell und komplex sind, erfordert das Wiederherstellen von Suchen aus Datenbanken mehr Aufwand. Sie können mit einem Berater oder Partner zusammenarbeiten, um Wiederherstellungsszenarien für die Suchfunktion zu bestimmen und zu implementieren, die Ihre Organisation ggf. benötigt.  <br/> |
    
 Bei den Anleitungen in diesem Artikel wird davon ausgegangen, dass die lokale Farm bereits entworfen wurde und bereitgestellt ist.
   
@@ -140,15 +140,15 @@ Im Idealfall ist die Konfiguration der Wiederherstellungsfarm in Azure identisch
     
 - Dieselbe Konfiguration der Suchkomponenten
     
-The environment in Azure can be a smaller version of the production farm. If you plan to scale out the recovery farm after failover, it's important that each type of server role be initially represented.
+Die Umgebung in Azure kann eine kleinere Version der Produktionsfarm sein. Wenn Sie nach einem Failover die Wiederherstellungsfarm horizontal hochskalieren möchten, ist es wichtig, dass jede Art von Serverrolle anfangs zugeordnet ist.
   
-Some configurations might not be practical to replicate in the failover environment. Be sure to test the failover procedures and environment to help ensure that the failover farm provides the expected service level.
+Einige Konfigurationen eignen sich möglicherweise nicht für die Replikation in die Failoverumgebung. Stellen Sie sich, dass die Failoververfahren und -umgebung getestet werden, um dafür zu sorgen, dass die Failoverfarm die erwarteten Servicelevel bietet.
   
-This solution doesn't prescribe a specific topology for a SharePoint farm. The focus of this solution is to use Azure for the failover farm and to implement log shipping and DFSR between the two environments.
+Diese Lösung schreibt keine bestimmte Topologie für eine SharePoint-Farm vor. Schwerpunkt dieser Lösung ist die Verwendung von Azure für die Failoverfarm und Implementierung von Protokollversand und DFSR zwischen den beiden Umgebungen.
   
 ### <a name="warm-standby-environments"></a>Betriebsbereite Standby-Umgebungen
 
-In a warm standby environment, all virtual machines in the Azure environment are running. The environment is ready for a failover exercise or event.
+In einer betriebsbereiten Standby-Umgebung werden alle virtuellen Computer in der Azure-Umgebung ausgeführt. Die Umgebung ist bereit für eine Failoverübung oder ein tatsächliches Failover.
   
 Die folgende Abbildung zeigt eine Notfallwiederherstellungslösung aus einer lokalen SharePoint-Farm in eine Azure-basierten SharePoint-Farm, die als betriebsbereite Standby-Umgebung konfiguriert ist.
   
@@ -162,9 +162,9 @@ Inhalt dieses Diagramms:
     
 - Jede Umgebung umfasst eine Dateifreigabe.
     
-- Each farm includes four tiers. To achieve high availability, each tier includes two servers or virtual machines that are configured identically for a specific role, such as front-end services, distributed cache, back-end services, and databases. It isn't important in this illustration to call out specific components. The two farms are configured identically.
+- Jede Farm hat vier Ebenen. Um Hochverfügbarkeit zu erreichen, enthält jede Ebene zwei Server oder virtuelle Computer, die für eine bestimmte Rolle, z. B. Front-End-Dienste, verteilter Cache, Back-End-Dienste und Datenbanken, identisch konfiguriert sind. Es ist nicht wichtig, in dieser Abbildung bestimmte Komponenten hervorzuheben. Die beiden Farmen sind identisch konfiguriert.
     
-- The fourth tier is the database tier. Log shipping is used to copy logs from the secondary database server in the on-premises environment to the file share in the same environment.
+- Die vierte Ebene ist die Datenbankebene. Der Protokollversand dient zum Kopieren von Protokollen vom sekundären Datenbankserver, der sich in der lokale Umgebung befindet, in die Dateifreigabe in derselben Umgebung.
     
 - DFSR kopiert Dateien aus der Dateifreigabe in der lokalen Umgebung in die Dateifreigabe in der Azure-Umgebung.
     
@@ -172,7 +172,7 @@ Inhalt dieses Diagramms:
     
 ### <a name="cold-standby-environments"></a>Verzögert betriebsbereite Standby-Umgebungen
 
-In a cold standby environment, most of the SharePoint farm virtual machines can be shut down. (We recommend occasionally starting the virtual machines, such as every two weeks or once a month, so that each virtual machine can sync with the domain.) The following virtual machines in the Azure recovery environment must remain running to help ensure continuous operations of log shipping and DFSR:
+In einer verzögert betriebsbereiten Standby-Umgebung können die meisten virtuellen Computer der SharePoint-Farm heruntergefahren werden. (Es wird empfohlen, die virtuellen Computer gelegentlich, z. B. alle zwei Wochen oder einmal im Monat, zu starten, damit sich jeder virtuelle Computer mit der Domäne synchronisieren kann.) Die folgenden virtuellen Computer in der Azure-Wiederherstellungsumgebung müssen stets ausgeführt werden, um sicherzustellen, dass der Protokollversand und DFSR unterbrechungsfrei in Betrieb bleiben:
   
 - Die Dateifreigabe
     
@@ -180,7 +180,7 @@ In a cold standby environment, most of the SharePoint farm virtual machines can 
     
 - Mindestens ein virtueller Computer mit Windows Server Active Directory-Domänendienste und DNS
     
-The following figure shows an Azure failover environment in which the file share virtual machine and the primary SharePoint database virtual machine are running. All other SharePoint virtual machines are stopped. The virtual machine that is running Windows Server Active Directory and DNS is not shown.
+Die folgende Abbildung zeigt eine Azure-Failoverumgebung, in der die virtuellen Computer der Dateifreigabe und die virtuellen Computer der primären SharePoint-Datenbank ausgeführt werden. Alle anderen virtuellen Computer mit SharePoint wurden heruntergefahren. Der virtuelle Computer, auf dem Windows Server Active Directory und DNS ausgeführt werden, wird nicht gezeigt.
   
 **Abbildung: Verzögert betriebsbereite Standby-Wiederherstellungsfarm mit ausgeführten virtuellen Computern**
 
@@ -192,7 +192,7 @@ Wenn mehrere Speichergruppen implementiert sind (Datenbanken sind auf mehrere SQ
   
 ### <a name="skills-and-experience"></a>Kompetenz und Erfahrung
 
-Multiple technologies are used in this disaster recovery solution. To help ensure that these technologies interact as expected, each component in the on-premises and Azure environment must be installed and configured correctly. We recommend that the person or team who sets up this solution have a strong working knowledge of and hands-on skills with the technologies described in the following articles:
+Mehrere Technologien werden bei dieser Notfallwiederherstellungslösung verwendet. Um sicherzustellen, dass diese Technologien wie erwartet interagieren, muss jede Komponente in der lokalen und Azure-Umgebung installiert und ordnungsgemäß konfiguriert werden. Wir empfehlen, dass Personen oder Teams, die diese Lösung einrichten, über fundierte Kenntnisse und praktische Fertigkeiten mit Technologien verfügen, die in den folgenden Artikeln beschrieben werden:
   
 - [Übersicht über DFS-Namespaces und DFS-Replikation](https://go.microsoft.com/fwlink/p/?LinkId=392698)
     
@@ -206,9 +206,9 @@ Multiple technologies are used in this disaster recovery solution. To help ensur
     
 - [Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=392729)
     
-Finally, we recommend scripting skills that you can use to automate tasks associated with these technologies. It's possible to use the available user interfaces to complete all the tasks described in this solution. However, a manual approach can be time consuming and error prone and delivers inconsistent results.
+Schließlich werden Skripterstellungsfähigkeiten zum Automatisieren von Aufgaben im Zusammenhang mit diesen Technologien empfohlen. Es ist möglich, die verfügbaren Benutzeroberflächen zum Ausführen aller Aufgaben zu verwenden, die in dieser Lösung beschrieben werden. Allerdings kann ein manuelles Verfahren zeitaufwändig und fehleranfällig sein und inkonsistente Ergebnisse liefern.
   
-In addition to Windows PowerShell, there are also Windows PowerShell libraries for SQL Server, SharePoint Server, and Azure. Don't forget T-SQL, which can also help reduce the time to configure and maintain your disaster-recovery environment.
+Zusätzlich zu Windows PowerShell gibt es auch Windows PowerShell-Bibliotheken für SQL Server, SharePoint Server und Azure. Vergessen Sie nicht T-SQL, eine Sprache, die die Dauer der Konfiguration und Verwaltung Ihrer Umgebung für Notfallwiederherstellung verkürzen kann.
   
 ## <a name="disaster-recovery-roadmap"></a>Fahrplan für die Notfallwiederherstellung
 
@@ -226,7 +226,7 @@ Dieser Fahrplan setzt vorausgesetzt, dass Sie bereits eine SharePoint Server 201
 |Phase 4  <br/> |Bereitstellen der SharePoint-Wiederherstellungsfarm in Azure  <br/> |
 |Phase 5  <br/> |Einrichten der DFS-Replikation zwischen den Farmen  <br/> |
 |Phase 6  <br/> |Einrichten des Protokollversands zur Wiederherstellungsfarm  <br/> |
-|Phase 7  <br/> | Validate failover and recovery solutions. This includes the following procedures and technologies: <br/>  Beenden des Protokollversands <br/>  Wiederherstellen der Sicherungen <br/>  Durchforsten von Inhalten <br/>  Wiederherstellen von Diensten <br/>  Verwalten von DNS-Einträgen <br/> |
+|Phase 7  <br/> | Überprüfen der Lösungen für Failover und Wiederherstellung. Dies umfasst die folgenden Verfahren und Technologien: <br/>  Beenden des Protokollversands <br/>  Wiederherstellen der Sicherungen <br/>  Durchforsten von Inhalten <br/>  Wiederherstellen von Diensten <br/>  Verwalten von DNS-Einträgen <br/> |
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Phase 1: Entwerfen der Umgebung für die Notfallwiederherstellung
 
@@ -234,26 +234,26 @@ Befolgen Sie die Anleitungen unter [Microsoft Azure-Architekturen für SharePoin
   
 Zusätzlich zur Anleitung unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für das Entwerfen des virtuellen Netzwerks, der VPN-Verbindung, von Active Directory und der SharePoint-Farm müssen Sie der Azure-Umgebung eine Dateifreigaberolle hinzufügen.
   
-To support log shipping in a disaster-recovery solution, a file share virtual machine is added to the subnet where the database roles reside. The file share also serves as the third node of a Node Majority for the SQL Server AlwaysOn availability group. This is the recommended configuration for a standard SharePoint farm that uses SQL Server AlwaysOn availability groups. 
+Zur Unterstützung des Protokollversands in eine Lösung für die Notfallwiederherstellung wird ein virtueller Computer mit einer Dateifreigabe dem Subnetz hinzugefügt, in dem sich die Datenbankrollen befinden. Die Dateifreigabe dient auch als dritter Knoten einer Knotenmehrheit für die SQL Server AlwaysOn-Verfügbarkeitsgruppe. Dies ist die empfohlene Konfiguration für eine SharePoint-Standardfarm, die SQL Server AlwaysOn-Verfügbarkeitsgruppen verwendet. 
   
 > [!NOTE]
-> It is important to review the prerequisites for a database to participate in a SQL Server AlwaysOn availability group. For more information, see [Prerequisites, Restrictions, and Recommendations for AlwaysOn Availability Groups](https://go.microsoft.com/fwlink/p/?LinkId=510870). 
+> Es ist wichtig, die Voraussetzungen für eine Datenbank zur Teilnahme an einer SQL Server AlwaysOn-Verfügbarkeitsgruppe zu überprüfen. Weitere Informationen finden Sie unter [Voraussetzungen, Einschränkungen und Empfehlungen für AlwaysOn-Verfügbarkeitsgruppen](https://go.microsoft.com/fwlink/p/?LinkId=510870). 
   
 **Abbildung: Platzierung eines Dateiservers, der für eine Notfallwiederherstellungslösung verwendet wird**
 
 ![Zeigt eine Dateifreigabe-VM, die demselben Clouddienst hinzugefügt wurde, der die SharePoint-Datenbankserverrollen enthält.](media/AZenv-FSforDFSRandWSFC.png)
   
-In this diagram, a file share virtual machine is added to the same subnet in Azure that contains the database server roles. Do not add the file share virtual machine to an availability set with other server roles, such as the SQL Server roles.
+In diesem Diagramm wird ein virtueller Computer mit einer Dateifreigabe demselben Subnetz in Azure hinzugefügt, das die Datenbankserverrollen enthält. Fügen Sie den virtuellen Computer mit der Dateifreigabe keinem Verfügbarkeitssatz mit anderen Serverrollen hinzu, z. B. den SQL Server-Rollen.
   
-If you are concerned about the high availability of the logs, consider taking a different approach by using [SQL Server backup and restore with Azure Blob Storage Service](https://go.microsoft.com/fwlink/p/?LinkId=393113). This is a new feature in Azure that saves logs directly to a blob storage URL. This solution does not include guidance about using this feature.
+Wenn Sie um die Hochverfügbarkeit der Protokolle besorgt sind, erwägen Sie eine andere Herangehensweise mit [SQL Server-Sicherung und -Wiederherstellung mit dem Azure-BLOB-Speicherdienst](https://go.microsoft.com/fwlink/p/?LinkId=393113). Dies ist ein neues Feature in Azure, das Protokolle direkt in der BLOB-Speicher-URL speichert. Diese Lösung bietet keine Anleitungen zur Verwendung dieses Features.
   
-When you design the recovery farm, keep in mind that a successful disaster recovery environment accurately reflects the production farm that you want to recover. The size of the recovery farm is not the most important thing in the recovery farm's design, deployment, and testing. Farm scale varies from organization to organization based on business requirements. It might be possible to use a scaled-down farm for a short outage or until performance and capacity demands require you to scale the farm.
+Wenn Sie die Wiederherstellungsfarm entwerfen, bedenken Sie, dass eine erfolgreiche Notfallwiederherstellungsumgebung präzise die Produktionsfarm wiedergibt, die Sie wiederherstellen möchten. Die Größe der Wiederherstellungsfarm ist der wichtigste Aspekt bei Entwurf, Bereitstellung und Tests der Wiederherstellungsfarm. Die Skalierung der Farm ist von Organisation zu Organisation je nach Geschäftsanforderungen unterschiedlich. Möglicherweise kann eine abgespeckte Farm bei einem kurzen Ausfall zum Einsatz kommen, die Sie erst dann hochskalieren, wenn es Leistungs- und Kapazitätsanforderungen erforderlich machen.
   
-Configure the recovery farm as identically as possible to the production farm so that it meets your service level agreement (SLA) requirements and provides the functionality that you need to support your business. When you design the disaster recovery environment, also look at your change management process for your production environment. We recommend that you extend the change management process to the recovery environment by updating the recovery environment at the same interval as the production environment. As part of the change management process, we recommend maintaining a detailed inventory of your farm configuration, applications, and users. 
+Richten Sie die Konfiguration der Wiederherstellungsfarm so weit wie möglich an der Produktionsfarm aus, damit sie Ihre Vereinbarung zum Servicelevel (SLA) erfüllt und die Funktionen bietet, die Sie benötigen, um Ihr Unternehmen zu unterstützen. Beim Entwerfen der Umgebung für die Notfallwiederherstellung sollten Sie auch den Änderungsmanagementprozess für Ihre Produktionsumgebung berücksichtigen. Es wird empfohlen, diesen Prozess auf die Wiederherstellungsumgebung auszudehnen, indem Sie die Wiederherstellungsumgebung im gleichen Intervall wie die Produktionsumgebung aktualisieren. Es wird weiter empfohlen, im Rahmen des Änderungsmanagementprozesses eine detaillierte Bestandsliste Ihrer Farmkonfiguration, Anwendungen und Benutzer zu führen. 
   
 ## <a name="phase-2-create-the-azure-virtual-network-and-vpn-connection"></a>Phase 2: Erstellen des virtuellen Azure-Netzwerks und der VPN-Verbindung
 
-[Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) shows you how to plan and deploy the virtual network in Azure and how to create the VPN connection. Follow the guidance in the topic to complete the following procedures:
+Unter [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md) wird das Planen und Bereitstellen des virtuellen Azure-Netzwerks und der VPN-Verbindung erläutert. Befolgen Sie die Anweisungen im Thema zum Ausführen der folgenden Verfahren:
   
 - Planen des privaten IP-Adressbereichs des Virtual Networks
     
@@ -273,27 +273,27 @@ Diese Phase umfasst die Bereitstellung von Windows Server Active Directory und D
 
 ![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk und im SharePoint-Farm Subnetz bereitgestellt werden, sind Replikatdomänencontroller und DNS-Server](media/AZarch-HyADdomainConfig.png)
   
-In the illustration, two virtual machines are deployed to the same subnet. These virtual machines are each hosting two roles: Active Directory and DNS.
+In der Abbildung werden zwei virtuelle Computer im selben Subnetz bereitgestellt. Diese virtuellen Computer hosten je zwei Rollen: Active Directory und DNS.
   
-Before deploying Active Directory in Azure, read [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?linkid=392681). These guidelines help you determine whether you need a different architecture or different configuration settings for your solution.
+Lesen Sie vor der Bereitstellung von Active Directory in Azure die [Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Diese Anleitungen helfen Ihnen zu bestimmen, ob eine andere Architektur oder andere Konfigurationseinstellungen für Ihre Lösung erforderlich sind.
   
 Ausführliche Anleitungen zum Einrichten eines Domänencontrollers in Azure finden Sie unter [Installieren eines Active Directory-Replikatdomänencontrollers in Azure Virtual Networks](https://go.microsoft.com/fwlink/p/?LinkId=392687).
   
-Before this phase, you didn't deploy virtual machines to the Virtual Network. The virtual machines for hosting Active Directory and DNS are likely not the largest virtual machines you need for the solution. Before you deploy these virtual machines, first create the largest virtual machine that you plan to use in your Virtual Network. This helps ensure that your solution lands on a tag in Azure that allows the largest size you need. You do not need to configure this virtual machine at this time. Simply create it, and set it aside. If you do not do this, you might run into a limitation when you try to create larger virtual machines later, which was an issue at the time this article was written. 
+Vor dieser Phase haben Sie keine virtuellen Computer im Virtual Network bereitgestellt. Die virtuellen Computer zum Hosten von Active Directory und DNS sind wahrscheinlich nicht die größten virtuellen Computer, die Sie für die Lösung brauchen. Bevor Sie diese virtuellen Computer bereitstellen, erstellen Sie zuerst den größten virtuellen Computer, die Sie in Ihrem Virtual Network verwenden möchten. Dadurch wird sichergestellt, dass Ihre Lösung auf eine Kategorie in Azure festgelegt wird, die die höchste Größe zulässt, die Sie benötigen. Sie müssen diesen virtuellen Computer jetzt nicht konfigurieren. Erstellen Sie ihn einfach, und halten Sie ihn bei Bedarf bereit. Wenn Sie dies nicht tun, können Sie auf eine Einschränkung stoßen, wenn Sie später versuchen, größere virtuelle Computer zu erstellen, was ein bekanntes Problem war, als dieser Artikel verfasst wurde. 
   
 ## <a name="phase-4-deploy-the-sharepoint-recovery-farm-in-azure"></a>Phase 4: Bereitstellen der SharePoint-Wiederherstellungsfarm in Azure
 
-Deploy the SharePoint farm in your Virtual Network according to your design plans. It might be helpful to review [Planning for SharePoint 2013 on Azure Infrastructure Services](https://go.microsoft.com/fwlink/p/?LinkId=400984) before you deploy SharePoint roles in Azure.
+Stellen Sie die SharePoint-Farm in Virtual Network gemäß Ihren Entwurfsplänen bereit. Es kann nützlich sein, den Artikel [Planen von SharePoint 2013 für Azure-Infrastrukturdienste](https://go.microsoft.com/fwlink/p/?LinkId=400984) vor der Bereitstellung von SharePoint-Rollen in Windows Azure zu lesen.
   
 Befolgen Sie die folgenden Methoden, die wir beim Erstellen unserer Umgebung für eine Machbarkeitsstudie entwickelt haben:
   
 - Erstellen virtueller Computer mithilfe des Azure-Portals oder mithilfe von PowerShell.
     
-- Azure and Hyper-V do not support dynamic memory. Be sure this is factored into your performance and capacity plans.
+- Azure und Hyper-V unterstützen keinen dynamischen Arbeitsspeicher. Achten Sie darauf, dass dies in Ihren Leistungs- und Kapazitätsplänen berücksichtigt wird.
     
-- Restart virtual machines through the Azure interface, not from the virtual machine logon itself. Using the Azure interface works better and is more predictable.
+- Starten Sie virtuelle Computer auf der Azure-Benutzeroberfläche und nicht im Anmeldefenster des virtuellen Computers selbst neu. Die Azure-Benutzeroberfläche funktioniert besser und ist berechenbarer.
     
-- If you want to shut down a virtual machine to save costs, use the Azure interface. If you shut down from the virtual machine logon, charges continue to accrue.
+- Wenn Sie einen virtuellen Computer herunterfahren möchten, um Kosten zu sparen, verwenden Sie die Azure-Benutzeroberfläche. Wenn Sie den virtuellen Computer im Anmeldefenster herunterfahren, fallen weiter Gebühren an.
     
 - Verwenden Sie eine Benennungskonvention für die virtuellen Computer.
     
@@ -305,7 +305,7 @@ Befolgen Sie die folgenden Methoden, die wir beim Erstellen unserer Umgebung fü
     
 ## <a name="phase-5-set-up-dfsr-between-the-farms"></a>Phase 5: Einrichten der DFS-Replikation zwischen den Farmen
 
-To set up file replication by using DFSR, use the DNS Management snap-in. However, before the DFSR setup, log on to your on-premises file server and Azure file server and enable the service in Windows.
+Um die Replikation mithilfe von DFSR einzurichten, verwenden Sie das Snap-in DNS-Verwaltung. Melden Sie sich jedoch vor der DFSR-Einrichtung an Ihren lokalen Dateiserver und Azure-Dateiserver an, und aktivieren Sie den Dienst in Windows.
   
 Führen Sie im Dashboard Server-Manager die folgenden Schritte aus:
   
@@ -333,20 +333,20 @@ Die folgende Tabelle enthält Links zu DFSR-Referenzartikeln und -Blogbeiträgen
    
 ## <a name="phase-6-set-up-log-shipping-to-the-recovery-farm"></a>Phase 6: Einrichten des Protokollversands zur Wiederherstellungsfarm
 
-Log shipping is the critical component for setting up disaster recovery in this environment. You can use log shipping to automatically send transaction log files for databases from a primary database server instance to a secondary database server instance. To set up log shipping, see [Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
+Der Protokollversand ist eine wichtige Komponente für die Einrichtung der Notfallwiederherstellung in dieser Umgebung. Sie können mithilfe des Protokollversands Transaktionsprotokolldateien für Datenbanken aus einer primären Datenbankserverinstanz automatisch an eine sekundäre Datenbankserverinstanz senden. Informationen zum Einrichten des Protokollversands finden Sie unter [Configure log shipping in SharePoint 2013](https://docs.microsoft.com/sharepoint/administration/configure-log-shipping). 
   
 > [!IMPORTANT]
-> Log shipping support in SharePoint Server is limited to certain databases. For more information, see [Supported high availability and disaster recovery options for SharePoint databases (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
+> Die Unterstützung des Protokollversands in SharePoint Server ist auf bestimmte Datenbanken beschränkt. Weitere Informationen finden Sie unter [Unterstützte Hochverfügbarkeits- und Notfallwiederherstellungsoptionen für SharePoint-Datenbanken (SharePoint 2013)](https://go.microsoft.com/fwlink/p/?LinkId=393121). 
   
 ## <a name="phase-7-validate-failover-and-recovery"></a>Phase 7: Überprüfen von Failover und Wiederherstellung
 
-The goal of this final phase is to verify that the disaster recovery solution works as planned. To do this, create a failover event that shuts down the production farm and starts up the recovery farm as a replacement. You can start a failover scenario manually or by using scripts.
+Das Ziel dieser letzten Phase ist das Überprüfen, ob die Notfallwiederherstellungslösung wie geplant funktioniert. Zu diesem Zweck erstellen Sie ein Failoverereignis, durch das die Produktionsfarm beendet und die Wiederherstellungsfarm als Ersatz gestartet wird. Sie können ein Failoverszenario manuell oder mithilfe von Skripts starten.
   
-The first step is to stop incoming user requests for farm services or content. You can do this by disabling DNS entries or by shutting down the front-end web servers. After the farm is "down," you can fail over to the recovery farm.
+Als erster Schritt werden eingehende Anforderungen für Farmdienste oder Inhalte beendet. Dies ist durch das Deaktivieren der DNS-Einträge oder Herunterfahren der Front-End-Webserver möglich. Nachdem die Farm "ausgefallen" ist, können Sie ein Failover in die Wiederherstellungsfarm ausführen.
   
 ### <a name="stop-log-shipping"></a>Beenden des Protokollversands
 
-You must stop log shipping before farm recovery. Stop log shipping on the secondary server in Azure first, and then stop it on the primary server on-premises. Use the following script to stop log shipping on the secondary server first and then on the primary server. The database names in the script might be different, depending on your environment.
+Sie müssen vor der Farmwiederherstellung den Protokollversand beenden. Beenden Sie den Protokollversand zuerst auf dem sekundären Server in Azure und danach lokal auf dem primären Server. Verwenden Sie das folgende Skript, um den Protokollversand zuerst auf dem sekundären Server und dann auf dem primären Server zu beenden. Die Datenbanknamen im Skript können abhängig von Ihrer Umgebung anders lauten.
   
 ```
 -- This script removes log shipping from the server.
@@ -385,13 +385,13 @@ where prm.primary_database in ( ' + @PriDB + ' )')
 
 ### <a name="restore-the-backups"></a>Wiederherstellen der Sicherungen
 
-Backups must be restored in the order in which they were created. Before you can restore a particular transaction log backup, you must first restore the following previous backups without rolling back uncommitted transactions (that is, by using  `WITH NORECOVERY`):
+Sicherungen müssen in der Reihenfolge wiederhergestellt werden, in der sie erstellt wurden. Bevor Sie eine Sicherung eines bestimmten Transaktionsprotokolls wiederherstellen können, müssen Sie zunächst die folgenden vorherigen Sicherungen wiederherstellen, ohne ein Rollback für Transaktionen auszuführen, für die ein Commit erfolgt ist (d. h. mithilfe von  `WITH NORECOVERY`):
   
-- The full database backup and the last differential backup - Restore these backups, if any exist, taken before the particular transaction log backup. Before the most recent full or differential database backup was created, the database was using the full recovery model or bulk-logged recovery model.
+- Die vollständige Datenbanksicherung und die letzte differenzielle Sicherung - Stellen Sie diese Sicherungen wieder her, sofern vorhanden, die vor der Sicherung eines bestimmten Transaktionsprotokolls erstellt wurden. Bevor die letzte vollständige oder differenzielle Sicherung erstellt wurde, verwendete die Datenbank das vollständige Wiederherstellungsmodell oder das massenprotokollierte Wiederherstellungsmodell.
     
-- All transaction log backups - Restore any transaction log backups taken after the full database backup or the differential backup (if you restore one) and before the particular transaction log backup. Log backups must be applied in the sequence in which they were created, without any gaps in the log chain.
+- Alle Transaktionsprotokollsicherungen - Stellen Sie Transaktionsprotokollsicherungen wieder her, die nach der vollständigen Datenbanksicherung oder der differenziellen Sicherung (falls Sie eine wiederherstellen) und vor der bestimmten Transaktionsprotokollsicherung erstellt wurden. Protokollsicherungen müssen in der Reihenfolge eingespielt werden, in der sie erstellt wurden, und zwar ohne Lücken in der Protokollkette.
     
-To recover the content database on the secondary server so that the sites render, remove all database connections before recovery. To restore the database, run the following SQL statement.
+Entfernen Sie zum Wiederherstellen der Inhaltsdatenbank auf dem sekundären Server vor der Wiederherstellung alle Datenbankverbindungen. Um die Datenbank wiederherzustellen, führen Sie die folgende SQL-Anweisung aus.
   
 ```
 restore database WSS_Content with recovery
@@ -399,13 +399,13 @@ restore database WSS_Content with recovery
 ```
 
 > [!IMPORTANT]
-> When you use T-SQL explicitly, specify either **WITH NORECOVERY** or **WITH RECOVERY** in every RESTORE statement to eliminate ambiguity—this is very important when writing scripts. After the full and differential backups are restored, the transaction logs can be restored in SQL Server Management Studio. Also, because log shipping is already stopped, the content database is in a standby state, so you must change the state to full access.
+> Wenn Sie explizit T-SQL verwenden, geben Sie entweder **WITH NORECOVERY** oder **WITH RECOVERY** in jede RESTORE-Anweisung ein, um Mehrdeutigkeit zu vermeiden. Dies ist besonders wichtig, wenn Sie Skripts schreiben. Nachdem die vollständigen und differenziellen Sicherungen wiederhergestellt wurden, können die Transaktionsprotokolle in SQL Server Management Studio wiederhergestellt werden. Da zudem der Protokollversand bereits angehalten wurde, ist die Inhaltsdatenbank im Standby-Status, sodass Sie den Status in Vollzugriff ändern müssen.
   
-In SQL Server Management Studio, right-click the **WSS_Content** database, point to **Tasks** > **Restore**, and then click **Transaction Log** (if you have not restored the full backup, this is not available). For more information, see[Restore a Transaction Log Backup (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
+Klicken Sie in SQL Server Management Studio mit der rechten Maustaste auf die Datenbank **WSS_Content**, zeigen Sie auf **Aufgaben** > **Wiederherstellen**, und klicken Sie dann auf **Transaktionsprotokoll** (wenn Sie nicht die vollständige Sicherung wiederhergestellt haben, ist diese Option nicht verfügbar). Weitere Informationen finden Sie unter[Wiederherstellen einer Transaktionsprotokollsicherung (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=392778).
   
 ### <a name="crawl-the-content-source"></a>Durchforsten der Inhaltsquelle
 
-You must start a full crawl for each content source to restore the Search Service. Note that you lose some analytics information from the on-premises farm, such as search recommendations. Before you start the full crawls, use the Windows PowerShell cmdlet **Restore-SPEnterpriseSearchServiceApplication** and specify the log-shipped and replicated Search Administration database, **Search_Service__DB_<GUID>**. This cmdlet gives the search configuration, schema, managed properties, rules, and sources and creates a default set of the other components.
+Sie müssen eine vollständige Durchforstung für jede Inhaltsquelle starten, um den Suchdienst wiederherzustellen. Beachten Sie, dass einige Analyseinformationen aus der lokalen Farm, z. B. Suchempfehlungen, verloren gehen. Bevor Sie die vollständigen Durchforstungen starten, geben Sie mithilfe des Windows PowerShell-Cmdlets **Restore-SPEnterpriseSearchServiceApplication** und mit Protokollversand ausgeführte und replizierte Suchverwaltungsdatenbank **Search_Service__DB_ <GUID>** an. Dieses Cmdlet gibt Suchkonfiguration, Schema, verwaltete Eigenschaften, Regeln und Quellen an und erstellt eine Reihe anderer Standardkomponenten.
   
 Um eine vollständige Durchforstung zu starten, führen Sie die folgenden Schritte aus:
   
@@ -424,11 +424,11 @@ Die folgende Tabelle zeigt die Vorgehensweise beim Wiederherstellen von Diensten
 
 |**Stellen Sie diese Dienste aus Datenbanken mit Protokollversand wieder her**|**Diese Dienste haben Datenbanken, aber es wird empfohlen, diese Dienste zu starten, ohne ihre Datenbanken wiederherzustellen**|**Diese Dienste speichern keine Daten in Datenbanken. Starten Sie diese Dienste nach dem Failover**|
 |:-----|:-----|:-----|
-| Maschineller Übersetzungsdienst <br/>  Verwalteter Metadatendienst <br/>  Secure Store Service <br/>  User Profile. (Only the Profile and Social Tagging databases are supported. The Synchronization database is not supported.) <br/>  Microsoft SharePoint Foundation-Abonnementeinstellungendienst <br/> | Sammlung von Verwendungs- und Integritätsdaten <br/>  Statusdienst <br/>  Word-Automatisierung <br/> | Excel Services <br/>  PerformancePoint-Dienste <br/>  PowerPoint-Konvertierung <br/>  Visio-Grafikdienst <br/>  Arbeitsverwaltung <br/> |
+| Maschineller Übersetzungsdienst <br/>  Verwalteter Metadatendienst <br/>  Secure Store Service <br/>  Benutzerprofil. (Nur die Datenbanken Profil und Communitytags werden unterstützt. Die Datenbank Synchronisierung wird nicht unterstützt.) <br/>  Microsoft SharePoint Foundation-Abonnementeinstellungendienst <br/> | Sammlung von Verwendungs- und Integritätsdaten <br/>  Statusdienst <br/>  Word-Automatisierung <br/> | Excel Services <br/>  PerformancePoint-Dienste <br/>  PowerPoint-Konvertierung <br/>  Visio-Grafikdienst <br/>  Arbeitsverwaltung <br/> |
    
 Das folgende Beispiel zeigt, wie der verwaltete Metadatendienst aus einer Datenbank wiederhergestellt wird.
   
-This uses the existing Managed_Metadata_DB database. This database is log shipped, but there is no active service application on the secondary farm, so it needs to be connected after the service application is in place.
+Verwendet wird die vorhandene DatenbankManaged_Metadata_DB.Diese Datenbank arbeitet mit Protokollversand, doch in der sekundären Farm gibt es keine aktive Dienstanwendung, weshalb eine Verbindung damit hergestellt werden muss, nachdem die Dienstanwendung eingerichtet wurde.
   
 Verwenden Sie zuerst  `New-SPMetadataServiceApplication`, und geben Sie dann den Parameter  `DatabaseName` mit dem Namen der wiederhergestellten Datenbank an.
   
@@ -446,23 +446,23 @@ Konfigurieren Sie als Nächstes die neue verwaltete Metadatendienstanwendung auf
 
 Sie müssen DNS-Einträge manuell so erstellen, dass sie auf Ihre SharePoint-Farm zeigen.
   
-In most cases where you have multiple front-end web servers, it makes sense to take advantage of the Network Load Balancing feature in Windows Server 2012 or a hardware load balancer to distribute requests among the web-front-end servers in your farm. Network load balancing can also help reduce risk by distributing requests to the other servers if one of your web-front-end servers fails. 
+In den meisten Fällen, wenn Sie über mehrere Front-End-Webserver verfügen, ist es sinnvoll, das Feature des Netzwerklastenausgleichs in Windows Server 2012 oder ein Hardware-Lastenausgleichsmodul zum Verteilen von Anforderungen zwischen den Web-Front-End-Servern in Ihrer Farm zu nutzen. Mit dem Netzwerklastenausgleich können Sie auch das Risiko verringern, indem Sie Anforderungen an die anderen Server verteilen, sollte einer Ihrer Web-Front-End-Server ausfallen. 
   
-Typically, when you set up network load balancing, your cluster is assigned a single IP address. You then create a DNS host record in the DNS provider for your network that points to the cluster. (For this project, we put a DNS server in Azure for resiliency in case of an on-premises datacenter failure.) For instance, you can create a DNS record, in DNS Manager in Active Directory, for example, called  `https://sharepoint.contoso.com`, that points to the IP address for your load-balanced cluster.
+Beim Einrichten von Netzwerklastenausgleich wird dem Cluster in der Regel eine einzelne IP-Adresse zugewiesen. Anschließend erstellen Sie einen DNS-Hosteintrag im DNS-Anbieter für Ihr Netzwerk, der auf den Cluster zeigt. (Für dieses Projekt implementieren wir einen DNS-Server in Azure zum Zweck der Ausfallsicherheit für den Fall eines Ausfalls des lokalen Rechenzentrums.) Sie können z. B. einen DNS-Eintrag im DNS-Manager in Active Directory mit dem Namen  `https://sharepoint.contoso.com` erstellen, der auf die IP-Adresse Ihres Clusters mit Lastenausgleich zeigt.
   
 Für den externen Zugriff auf Ihre SharePoint-Farm können Sie einen Hosteintrag auf einem externen DNS-Server mit der gleichen URL erstellen, die Clients in Ihrem Intranet verwenden (beispielsweise `https://sharepoint.contoso.com` ), die auf eine externe IP-Adresse in Ihrer Firewall verweist. (Eine bewährte Methode in diesem Beispiel ist das Einrichten von Split-DNS, sodass der interne DNS-Server für autorisierend ist `contoso.com` und Anforderungen direkt an den SharePoint-Farm Cluster weiterleitet, anstatt DNS-Anforderungen an Ihren externen DNS-Server weiterzuleiten.) Anschließend können Sie die externe IP-Adresse der internen IP-Adresse des lokalen Clusters zuordnen, damit die Clients die gesuchten Ressourcen finden.
   
 Von hier aus können Sie auf verschiedene Szenarien für die Notfallwiederherstellung stoßen:
   
- **Example scenario: The on-premises SharePoint farm is unavailable because of hardware failure in the on-premises SharePoint farm.** In this case, after you have completed the steps for failover to the Azure SharePoint farm, you can configure network load balancing on the recovery SharePoint farm's web-front-end servers, the same way you did with the on-premises farm. You can then redirect the host record in your internal DNS provider to point to the recovery farm's cluster IP address. Note that it can take some time before cached DNS records on clients are refreshed and point to the recovery farm.
+ **Beispielszenario: die lokale SharePoint-Farm ist aufgrund eines Hardwareausfalls in der lokalen SharePoint-Farm nicht verfügbar.** In diesem Fall können Sie nach Durchführung der Schritte für ein Failover auf die SharePoint-Farm in Azure den Netzwerklastenausgleich für die Web-Front-End-Server der SharePoint-Wiederherstellungsfarm so konfigurieren, wie dies in der lokalen Farm erfolgt ist. Sie können dann den Hosteintrag in Ihrem internen DNS-Anbieter so umleiten, dass auf die Cluster-IP-Adresse der Wiederherstellungsfarm gezeigt wird. Es kann einige Zeit dauern, bis auf Clients zwischengespeicherte DNS-Einträge aktualisiert werden und auf die Wiederherstellungsfarm zeigen.
   
- **Example scenario: The on-premises datacenter is lost completely.** This scenario might occur due to a natural disaster, such as a fire or flood. In this case, for an enterprise, you would likely have a secondary datacenter hosted in another region as well as your Azure subnet that has its own directory services and DNS. As in the previous disaster scenario, you can redirect your internal and external DNS records to point to the Azure SharePoint farm. Again, take note that DNS-record propagation can take some time.
+ **Beispielszenario: Das lokale Rechenzentrum ist vollständig unbrauchbar.** Diesem Szenario kann aufgrund einer Naturkatastrophe wie Brand oder Überschwemmung auftreten. Für diesen Fall verfügt Ihr Unternehmen wahrscheinlich über ein sekundäres Rechenzentrum, das in einer anderen Region gehostet wird, und auch über ein Azure-Subnetz mit eigenen Verzeichnisdiensten und DNS. Wie im vorherigen Szenario der Notfallwiederherstellung können Ihre internen und externen DNS-Einträge so umgeleitet werden, dass sie auf die SharePoint-Farm in Azure zeigen. Beachten Sie auch hier, dass die Weitergabe von DNS-Einträgen einige Zeit dauern kann.
   
 Wenn Sie Websitesammlungen mit Hostnamen verwenden, wie in der [Website Sammlungs Architektur mit Hostnamen und der Bereitstellung (SharePoint 2013)](https://docs.microsoft.com/SharePoint/administration/host-named-site-collection-architecture-and-deployment)empfohlen, können mehrere Websitesammlungen von derselben Webanwendung in Ihrer SharePoint-Farm mit eindeutigen DNS-Namen (beispielsweise `https://sales.contoso.com` und `https://marketing.contoso.com` ) gehostet werden. In diesem Fall können Sie DNS-Einträge für jede Websitesammlung erstellen, die auf die IP-Adresse Ihres Clusters zeigen. Sobald eine Anforderung Ihre SharePoint-Web-Front-End-Server erreicht, übernehmen sie das Weiterleiten jeder Anforderung zur gewünschten Websitesammlung.
   
 ## <a name="microsoft-proof-of-concept-environment"></a>Microsoft-Umgebung für Machbarkeitsstudie
 
-We designed and tested a proof-of-concept environment for this solution. The design goal for our test environment was to deploy and recover a SharePoint farm that we might find in a customer environment. We made several assumptions, but we knew that the farm needed to provide all of the out-of-the-box functionality without any customizations. The topology was designed for high availability by using best practice guidance from the field and product group.
+Wir haben für diese Lösung eine Umgebung zum Machbarkeitsnachweis entwickelt und getestet. Das Ziel unserer Testumgebung war das Bereitstellen und Wiederherstellen einer SharePoint-Farm, wie sie in einer Kundenumgebung vorkommen kann. Wir haben einige Annahmen getroffen, wussten aber, dass die Farm alle standardmäßigen Funktionen ohne jegliche Anpassungen bereitstellen sollte. Die Topologie wurde auf Hochverfügbarkeit ausgelegt, indem auf bewährten Methoden aus dem Außendienst und der Produktgruppe basierende Anleitungen befolgt wurden.
   
 Die folgende Tabelle beschreibt die virtuellen Hyper-V-Computer, die wir für die lokale Testumgebung erstellt und konfiguriert haben.
   
@@ -475,7 +475,7 @@ Die folgende Tabelle beschreibt die virtuellen Hyper-V-Computer, die wir für di
 |FS1  <br/> |Dateiserver mit Freigaben für Sicherungen und einem Endpunkt für DFSR  <br/> |Vier Prozessoren  <br/> 2-12 GB RAM  <br/> 1 x 127-GB-Festplatte  <br/> 1 x 1-TB-Festplatte (SAN)  <br/> 1 x 750-GB-Festplatte  <br/> |
 |SP-WFE1, SP-WFE2  <br/> |Front-End-Webserver  <br/> |Vier Prozessoren  <br/> 16 GB RAM  <br/> |
 |SP-APP1, SP-APP2, SP-APP3  <br/> |Anwendungsserver  <br/> |Vier Prozessoren  <br/> 2-16 GB RAM  <br/> |
-|SP-SQL-HA1, SP-SQL-HA2  <br/> |Database servers, configured with SQL Server 2012 AlwaysOn availability groups to provide high availability. This configuration uses SP-SQL-HA1 and SP-SQL-HA2 as the primary and secondary replicas.  <br/> |Vier Prozessoren  <br/> 2-16 GB RAM  <br/> |
+|SP-SQL-HA1, SP-SQL-HA2  <br/> |Mit SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen konfigurierte Datenbankserver für hohe Verfügbarkeit. Diese Konfiguration arbeitet mit SP-SQL-HA1 und SP-SQL-HA2 als primärem und sekundärem Replikat.  <br/> |Vier Prozessoren  <br/> 2-16 GB RAM  <br/> |
    
 Die folgende Tabelle beschreibt die Laufwerkskonfigurationen der virtuellen Hyper-V-Computer, die wir für die Front-End-Webserver und Anwendungsserver für die lokale Testumgebung erstellt und konfiguriert haben.
   
@@ -487,7 +487,7 @@ Die folgende Tabelle beschreibt die Laufwerkskonfigurationen der virtuellen Hype
 |E  <br/> |80  <br/> |Protokolllaufwerk (40 GB)  <br/> |<DriveLetter>:\\Program Files\\Microsoft SQL Server\\MSSQL10_50.MSSQLSERVER\\MSSQL\\DATA  <br/> |
 |F  <br/> |80  <br/> |Seite (36 GB)  <br/> |<DriveLetter>:\\Program Files\\Microsoft SQL Server\\MSSQL\\DATA  <br/> |
    
-The following table describes drive configurations for the Hyper-V virtual machines created and configured to serve as the on-premises database servers. On the **Database Engine Configuration** page, access the **Data Directories** tab to set and confirm the settings shown in the following table.
+Die folgende Tabelle beschreibt die Laufwerkskonfigurationen für die virtuellen Hyper-V-Computer, die wir als lokale Datenbankserver erstellt und konfiguriert haben. Greifen Sie auf der Seite **Datenbankmodulkonfiguration** auf die Registerkarte **Datenverzeichnisse** zu, um die Einstellungen in der folgenden Tabelle festzulegen und zu bestätigen.
   
 **Tabelle: Laufwerksanforderungen an die virtuellen Computer für die Datenbankserver in der lokalen Testumgebung**
 
@@ -501,7 +501,7 @@ The following table describes drive configurations for the Hyper-V virtual machi
    
 ### <a name="setting-up-the-test-environment"></a>Einrichten der Testumgebung
 
-During the different deployment phases, the test team typically worked on the on-premises architecture first and then on the corresponding Azure environment. This reflects the general real-world cases where in-house production farms are already running. What is even more important is that you should know the current production workload, capacity, and typical performance. In addition to building a disaster recovery model that can meet business requirements, you should size the recovery farm servers to deliver a minimum level of service. In a cold or warm standby environment, a recovery farm is typically smaller than a production farm. After the recovery farm is stable and in production, the farm can be scaled up and out to meet workload requirements.
+Während der verschiedenen Phasen hat das Testteam in der Regel zunächst in der lokalen Architektur und anschließend in der entsprechenden Azure-Umgebung gearbeitet. Dies entspricht der allgemeinen Praxis, wenn interne Produktionsfarmen bereits ausgeführt werden. Noch wichtiger ist, dass Sie die aktuelle Produktionslast, Kapazität und normale Leistung kennen. Zum Erstellen eines Notfallwiederherstellungsmodells, das geschäftlichen Anforderungen erfüllen kann, sollten Sie zudem die Größe der Wiederherstellungsfarmserver bestimmen, um ein Mindestmaß an Service leisten zu können. In einer verzögert betriebsbereit bzw. betriebsbereiten Standby-Umgebung ist eine Wiederherstellungsfarm normalerweise kleiner als eine Produktionsfarm. Nachdem die Wiederherstellungsfarm stabil die Produktion aufgenommen hat, kann die Farm entsprechend den zu erfüllenden Arbeitslastvorgaben hochskaliert werden.
   
 Wir haben unsere Testumgebung in den folgenden drei Phasen bereitgestellt:
   
@@ -513,20 +513,20 @@ Wir haben unsere Testumgebung in den folgenden drei Phasen bereitgestellt:
     
 #### <a name="set-up-the-hybrid-infrastructure"></a>Einrichten der Infrastruktur der Hybridumgebung
 
-This phase involved setting up a domain environment for the on-premises farm and for the recovery farm in Azure. In addition to the normal tasks associated with configuring Active Directory, the test team implemented a routing solution and a VPN connection between the two environments.
+In dieser Phase erfolgte das Einrichten einer Domänenumgebung für die lokale Farm und Wiederherstellungsfarm in Azure. Zusätzlich zu den normalen Aufgaben im Zusammenhang mit der Konfiguration von Active Directory implementierte das Testteam eine Routinglösung und eine VPN-Verbindung zwischen den beiden Umgebungen.
   
 #### <a name="provision-the-servers"></a>Bereitstellen der Server
 
-In addition to the farm servers, it was necessary to provision servers for the domain controllers and configure a server to handle RRAS as well as the site-to-site VPN. Two file servers were provisioned for the DFSR service, and several client computers were provisioned for testers.
+Zusätzlich zu den Farmservern mussten Server für die Domänencontroller bereitgestellt sowie ein Server für RRAS und die Standort-zu-Standort-VPN-Verbindung konfiguriert werden. Für den DFSR-Dienst wurden zwei Dateiserver und für Tester mehrere Clientcomputer bereitgestellt.
   
 #### <a name="deploy-the-sharepoint-farms"></a>Bereitstellen der SharePoint-Farmen
 
-The SharePoint farms were deployed in two stages in order to simplify environment stabilization and troubleshooting, if required. During the first stage, each farm was deployed on the minimum number of servers for each tier of the topology to support the required functionality.
+Die SharePoint-Farmen wurden in zwei Phasen bereitgestellt, um bei Bedarf die Stabilisierung der Umgebung und die Problembehandlung zu vereinfachen. In der ersten Phase wurde jede Farm zur Unterstützung der erforderlichen Funktionen auf der Mindestanzahl von Servern für die einzelnen Ebenen der Topologie bereitgestellt.
   
-We created the database servers with SQL Server installed before creating the SharePoint 2013 servers. Because this was a new deployment, we created the availability groups before deploying SharePoint. We created three groups based on MCS best practice guidance. 
+Die Datenbankserver mit SQL Server wurden installiert, bevor die Server mit SharePoint 2013 erstellt wurden. Da es sich um eine neue Bereitstellung handelt, haben wir die Verfügbarkeitsgruppen vor der Bereitstellung von SharePoint erstellt. Wir haben basierend auf bewährten MCS-Methoden drei Gruppen erstellt. 
   
 > [!NOTE]
-> Create placeholder databases so that you can create availability groups before the SharePoint installation. For more information, see [Configure SQL Server 2012 AlwaysOn Availability Groups for SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=517626)
+> Erstellen Sie Platzhalterdatenbanken, damit Sie Verfügbarkeitsgruppen vor der Installation von SharePoint erstellen können. Weitere Informationen finden Sie unter [Konfigurieren von SQL Server 2012 AlwaysOn-Verfügbarkeitsgruppen für SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=517626)
   
 Wir haben die Farm erstellt und weitere Server in der folgenden Reihenfolge hinzugefügt:
   
@@ -550,7 +550,7 @@ Wir haben die folgenden Schritte in der Wiederherstellungsumgebung wiederholt:
     
 - AZ-WFE1 und AZ-WFE2 zum Hosten des verteilten Caches bereitgestellt.
     
-After we configured the distributed cache and added test users and test content, we started stage two of the deployment. This required scaling out the tiers and configuring the farm servers to support the high-availability topology described in the farm architecture.
+Nachdem wir den verteilten Cache konfiguriert sowie Testbenutzer und Testinhalte hinzugefügt hatten, begannen wir mit Stufe 2 der Bereitstellung. Diese erforderte die horizontale Hochskalierung der Ebenen und die Konfiguration der Farmserver zur Unterstützung der in der Farmarchitektur beschriebenen Hochverfügbarkeitstopologie.
   
 Die folgende Tabelle beschreibt die virtuellen Computer, Subnetze und Verfügbarkeitsätze, die wir für unsere Wiederherstellungsfarm eingerichtet haben.
   
@@ -574,7 +574,7 @@ Nachdem das Testteam die Farmumgebungen stabilisiert und Funktionstests abgeschl
     
 - Konfigurieren des Protokollversands auf dem primären Datenbankserver
     
-- Stabilize, validate, and troubleshoot log shipping, as required. This included identifying and documenting any behavior that might cause issues, such as network latency, which would cause log shipping or DFSR file synchronization failures.
+- Stabilisieren, Überprüfen und Problembehandlung des Protokollversands den Anforderungen entsprechend. Dies umfasste das Bestimmen und Dokumentieren aller Verhalten, die möglicherweise Probleme verursachen, z. B. Netzwerklatenz, die zu Protokollversand- oder DFSR-Dateisynchronisierungsfehlern führen können.
     
 ### <a name="databases"></a>Datenbanken
 
@@ -602,11 +602,11 @@ Stellen Sie sicher, dass das von der Webanwendung verwendete Anwendungspoolkonto
   
 ### <a name="custom-term-sets-are-not-available-in-the-site-collection"></a>Benutzerdefinierte Ausdruckssätze stehen in der Websitesammlung nicht zur Verfügung
 
-Check for a missing service application association between your content site collection and your content type hub. In addition, under the **Managed Metadata - <site collection name> Connection** properties screen, make sure this option is enabled: **This service application is the default storage location for column specific term sets.**
+Suchen Sie nach einer fehlenden Dienstanwendungszuordnung zwischen Ihrer Inhaltswebsitesammlung und Ihrem Inhaltstyphub. Vergewissern Sie sich außerdem, dass auf dem Bildschirm **Verwaltete Metadaten- <site collection name> Verbindung** diese Option aktiviert ist: **Diese Dienstanwendung ist der Standardspeicherort für spaltenspezifische Ausdruckssätze**.
   
 ### <a name="the-get-adforest-windows-powershell-command-generates-the-error-the-term-get-adforest-is-not-recognized-as-the-name-of-a-cmdlet-function-script-file-or-operable-program"></a>Der Windows PowerShell-Befehl Get-ADForest erzeugt den folgenden Fehler: "Die Benennung Get-ADForest wurde nicht als Name eines Cmdlets, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt."
 
-When setting up user profiles, you need the Active Directory forest name. In the Add Roles and Features Wizard, ensure that you have enabled the Active Directory Module for Windows PowerShell (under the **Remote Server Administration Tools>Role Administration Tools>AD DS and AD LDS Tools** section). In addition, run the following commands before using **Get-ADForest** to help ensure that your software dependencies are loaded.
+Beim Einrichten von Benutzerprofilen benötigen Sie den Active Directory-Gesamtstrukturnamen. Stellen Sie im Assistenten zum Hinzufügen von Rollen und Features sicher, dass das Active Directory-Modul für Windows PowerShell (unter **Remoteserver-Verwaltungstools > Rollenverwaltungstools > AD DS- und AD LDS-Tools**) aktiviert ist. Führen Sie außerdem die folgenden Befehle aus, bevor Sie **Get-ADForest** verwenden, um sicherzustellen, dass Ihre Softwareabhängigkeiten geladen werden.
   
 ```
 Import-module servermanager
@@ -624,7 +624,7 @@ Stellen Sie sicher, dass der SQL Server-Agent mit Netzwerkanmeldeinformationen u
   
 ### <a name="sql-server-log-shipping-job-indicates-success-but-no-files-are-copied"></a>Der SQL Server-Protokollversandauftrag war erfolgreich, es wurden aber keine Dateien kopiert.
 
-This happens because the default backup preference for an availability group is **Prefer Secondary**. Ensure that you run the log shipping job from the secondary server for the availability group instead of the primary; otherwise, the job will fail silently. 
+Dies geschieht, weil die Standardsicherungseinstellung für eine Verfügbarkeitsgruppe **Sekundäres Replikat bevorzugen** ist. Stellen Sie sicher, dass Sie den Protokollversandauftrag auf dem sekundären Server für die Verfügbarkeitsgruppe und nicht auf dem primären Server ausgeführt haben. Andernfalls misslingt der Auftrag. 
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Verwalteter Metadatendienst (oder anderer SharePoint-Dienst) wird nach der Installation nicht automatisch gestartet
 
@@ -632,7 +632,7 @@ Je nach Leistung und aktueller Last Ihrer SharePoint-Server kann das Starten von
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Nach dem Ändern von DNS auf die Azure-Failoverumgebung verwenden Clientbrowser weiterhin die alte IP-Adresse für die SharePoint-Website.
 
-Your DNS change might not be visible to all clients immediately. On a test client, perform the following command from an elevated command prompt and attempt to access the site again.
+Die DNS-Änderung wird möglicherweise nicht für alle Clients sofort sichtbar. Führen Sie auf einem Testclient den folgenden Befehl an einer Eingabeaufforderung mit erhöhten Rechten aus, und versuchen Sie erneut, auf die Website zuzugreifen.
   
 ```
 Ipconfig /flushdns

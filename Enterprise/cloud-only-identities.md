@@ -49,7 +49,7 @@ Benutzer und ihre Benutzerkonten in Organisationen können auf verschiedene Arte
 
 Übernehmen Sie eine Bestandsaufnahme der Benutzertypen in Ihrer Organisation. Was sind die Gruppierungen? Beispielsweise können Sie Benutzer nach allgemeinen Funktionen oder Zweck in Ihrer Organisation gruppieren.
 
-Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
+Darüber hinaus können einige Clouddienste für Benutzer außerhalb Ihres Unternehmens ohne Benutzerkonten freigegeben werden. Sie müssen diese Benutzergruppen ebenfalls identifizieren.
 
 Sie können Gruppen in Azure AD für verschiedene Zwecke verwenden, die die Verwaltung Ihrer Cloud-Umgebung vereinfachen. Beispielsweise können Sie mit Azure Ad Gruppen Folgendes tun:
 

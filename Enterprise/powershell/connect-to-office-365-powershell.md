@@ -64,7 +64,7 @@ Verwenden Sie für Verfahren, welche die neuen Cmdlets im Azure Active Directory
 
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal, wenn Sie eine Verbindung herstellen. Allerdings müssen Sie wahrscheinlich in regelmäßigen Abständen neuere Versionen der Software installieren.
   
 1. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung mit erhöhten Rechten (d. h., führen Sie Windows PowerShell als Administrator aus).
     
@@ -106,7 +106,7 @@ PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul f�
     
 ### <a name="step-1-install-required-software"></a>Schritt 1: Installieren der erforderlichen Software
 
-These steps are required once on your computer, not every time you connect. However, you'll likely need to install newer versions of the software periodically.
+Diese Schritte sind auf Ihrem Computer nur einmal erforderlich, nicht jedes Mal, wenn Sie eine Verbindung herstellen. Allerdings müssen Sie wahrscheinlich in regelmäßigen Abständen neuere Versionen der Software installieren.
   
 1.  Wenn Sie nicht mit Windows 10 starten, installieren Sie die 64-Bit-Version des Microsoft Online Services-Anmelde-Assistenten: [Microsoft Online Services-Anmelde Assistent für IT-Spezialisten RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
     

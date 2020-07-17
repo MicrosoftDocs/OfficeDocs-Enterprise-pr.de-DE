@@ -56,7 +56,7 @@ Für die Microsoft 365-Dienste lautet der Standardstatus der modernen Authentifi
 
 Office 2013-Client-apps unterstützen standardmäßig die Legacy Authentifizierung. Legacy bedeutet, dass Sie entweder den Microsoft Online-Anmelde Assistenten oder die Standardauthentifizierung unterstützen. Damit diese Clients moderne Authentifizierungsfeatures verwenden können, muss der Windows-Client Registrierungsschlüssel festgelegt haben. Anweisungen finden Sie unter [Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten](https://support.office.com/article/7dc1c01a-090f-4971-9677-f1b192d6c910).
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Laptops und Tablets) zu aktivieren, auf denen Microsoft Office 2013 installiert ist, müssen Sie die nachstehenden Registrierungsschlüssel festlegen. Die Schlüssel müssen auf jedem Gerät festgelegt werden, das Sie für moderne Authentifizierung aktivieren möchten:
   
 |**Registrierungsschlüssel**|**Typ**|**Wert** |
 |:-------|:------:|--------:|

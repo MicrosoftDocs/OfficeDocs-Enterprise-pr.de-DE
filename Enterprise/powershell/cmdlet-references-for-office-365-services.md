@@ -43,7 +43,7 @@ Exchange Online Cmdlet Reference topics finden Sie im Abschnitt **Reference** de
 Verbindungsanweisungen für Exchange Online PowerShell finden Sie [unter Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
   
 > [!NOTE]
-> Reporting cmdlets for other services, for example, SharePoint Online, Skype for Business Online, and Office 365 user activity are available in Exchange Online PowerShell. For more information, see [Reporting cmdlets in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
+> Berichterstellungs-Cmdlets für andere Dienste, z. B. SharePoint Online, Skype for Business Online und Office 365-Benutzeraktivität, stehen in Exchange Online PowerShell zur Verfügung. Weitere Informationen finden Sie unter [Cmdlets für die Berichterstellung in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=691595). 
   
 ## <a name="sharepoint-online-powershell-cmdlets"></a>SharePoint Online-PowerShell-Cmdlets
 

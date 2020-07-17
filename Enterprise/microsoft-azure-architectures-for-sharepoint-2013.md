@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Architecture
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: 'Summary: SharePoint 2013 solutions can be hosted in Microsoft Azure virtual machines. Learn which type of solutions are a good fit and how to set up Microsoft Azure to host one.'
+description: 'Zusammenfassung: SharePoint 2013-Lösungen können auf virtuellen Microsoft Azure-Computern gehostet werden. Erfahren Sie, welche Art von Lösungen hierfür geeignet sind und wie Microsoft Azure zum Hosten einer Lösung konfiguriert wird.'
 ms.openlocfilehash: fee388f56faf2b30534d9a56926d9d62a176df19
 ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
 ms.translationtype: MT
@@ -31,13 +31,13 @@ Azure ist eine gut geeignete Umgebung für das Hosten einer SharePoint 2013-Lös
     
 ## <a name="recommended-sharepoint-solutions-for-azure-infrastructure-services"></a>Empfohlene SharePoint-Lösungen für Azure-Infrastrukturdienste
 
-Azure infrastructure services is a compelling option for hosting SharePoint solutions. Some solutions are a better fit for this platform than others. The following table shows recommended solutions.
+Azure-Infrastrukturdienste sind eine überzeugende Option für das Hosting von SharePoint-Lösungen. Einige Lösungen sind für diese Plattform besser geeignet als andere. Die folgende Tabelle zeigt die empfohlene Lösungen.
   
 |**Lösung**|**Warum diese Lösung für Azure empfohlen wird**|
 |:-----|:-----|
 |Entwicklungs- und Testumgebungen  <br/> |Es ist einfach, diese Umgebungen zu erstellen und zu verwalten.  <br/> |
-|Notfallwiederherstellung lokaler SharePoint-Farmen in Azure  <br/> |**Gehostetes sekundäres Rechenzentrum** Verwenden Sie Azure, statt in ein sekundäres Rechenzentrum in einer anderen Region zu investieren. <br/> **Lower-cost disaster-recovery environments** Maintain and pay for fewer resources than an on-premises disaster recovery environment. The number of resources depends on the disaster recovery environment you choose: cold standby, warm standby, or hot standby. <br/> **More elastic platform** In the event of a disaster, easily scale-out your recovery SharePoint farm to meet load requirements. Scale in when you no longer need the resources. <br/> Siehe [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Mit dem Internet verbundene Websites mit Features und Skalierung, die in Microsoft 365 nicht verfügbar sind  <br/> |**Konzentrieren Ihrer Bemühungen** Konzentrieren Sie sich auf das Erstellen einer großartigen Website anstatt auf das Erstellen einer Infrastruktur. <br/> **Take advantage of elasticity in Azure** Size the farm for the demand by adding new servers, and pay only for resources you need. Dynamic machine allocation is not supported (auto scale). <br/> **Verwendung von Azure Active Directory (AD)** Nutzen Sie Azure AD für Kundenkonten. <br/> **Hinzufügen von SharePoint-Funktionen in Microsoft 365 nicht verfügbar** Fügen Sie Deep Reporting und Webanalyse hinzu. <br/> Siehe [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Notfallwiederherstellung lokaler SharePoint-Farmen in Azure  <br/> |**Gehostetes sekundäres Rechenzentrum** Verwenden Sie Azure, statt in ein sekundäres Rechenzentrum in einer anderen Region zu investieren. <br/> **Kostengünstige Umgebungen für die Notfallwiederherstellung** Im Vergleich zu einer lokalen Umgebung für die Notfallwiederherstellung müssen Sie weniger Ressourcen vorhalten und bezahlen. Die Anzahl der Ressourcen hängt von der gewählten Umgebung für die Notfallwiederherstellung ab: verzögert betriebsbereit, betriebsbereit und unmittelbar betriebsbereit.<br/> **Flexiblere Plattform** Bei einem Notfall können Sie Ihre SharePoint-Wiederherstellungsfarm problemlos horizontal skalieren, um die Lastanforderungen zu erfüllen. Skalieren Sie sie horizontal herunter, wenn Sie die Ressourcen nicht mehr benötigen.<br/> Siehe [SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
+|Mit dem Internet verbundene Websites mit Features und Skalierung, die in Microsoft 365 nicht verfügbar sind  <br/> |**Konzentrieren Ihrer Bemühungen** Konzentrieren Sie sich auf das Erstellen einer großartigen Website anstatt auf das Erstellen einer Infrastruktur. <br/> **Ausnutzen der Flexibilität in Azure** Wählen Sie die Größe der Farm den Anforderungen entsprechend durch Hinzufügen neuer Server aus, und zahlen Sie nur für Ressourcen, die Sie benötigen. Eine dynamische Zuordnung von Computern (automatische Skalierung) wird nicht unterstützt.<br/> **Verwendung von Azure Active Directory (AD)** Nutzen Sie Azure AD für Kundenkonten. <br/> **Hinzufügen von SharePoint-Funktionen in Microsoft 365 nicht verfügbar** Fügen Sie Deep Reporting und Webanalyse hinzu. <br/> Siehe [Internetwebsites in Microsoft Azure mit SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
 |App-Farmen zur Unterstützung von Microsoft 365 oder lokalen Umgebungen  <br/> |**Erstellen, Testen und Hosten von Apps** in Azure zum Unterstützen von sowohl lokalen als auch von Cloud-Umgebungen. <br/> **Hosten dieser Rolle** in Azure anstelle der Anschaffung neuer Hardware für lokale Umgebungen. <br/> |
    
 Berücksichtigen Sie für Intranet- und Zusammenarbeitslösungen und Arbeitslasten die folgenden Optionen:
@@ -48,11 +48,11 @@ Berücksichtigen Sie für Intranet- und Zusammenarbeitslösungen und Arbeitslast
     
 - Wenn eine Standardimplementierung Ihre geschäftlichen Anforderungen nicht erfüllt, erwägen Sie eine angepasste lokale Lösung.
     
-- If using a cloud platform is important for your business requirements, consider a standard or customized implementation of SharePoint 2013 hosted in Azure infrastructure services. SharePoint solutions are much easier to support in Azure than other non-native Microsoft public cloud platforms.
+- Wenn eine Cloudplattform für Ihre geschäftlichen Anforderungen wichtig ist, verwenden Sie eine standardmäßige oder benutzerdefinierte Implementierung von SharePoint 2013 (gehostet in Azure-Infrastrukturdiensten). SharePoint-Lösungen sind in Azure viel einfacher zu unterstützen als auf anderen nicht von Microsoft stammenden öffentlichen Cloudplattformen.
     
 ## <a name="before-you-design-the-azure-environment"></a>Vor dem Entwerfen der Azure-Umgebung
 
-While this article uses example SharePoint topologies, you can use these design concepts with any SharePoint farm topology. Before you design the Azure environment, use the following topology, architecture, capacity, and performance guidance to design the SharePoint farm:
+Auch wenn in diesem Artikels Beispieltopologien für SharePoint verwendet werden, können Sie diese Entwurfskonzepte auf alle anderen SharePoint-Farmtopologien übertragen. Befolgen Sie vor dem Entwurf der Azure-Umgebung die folgenden Anleitungen zu Topologie, Architektur, Kapazität und Leistung, um die SharePoint-Farm zu entwerfen.
   
 - [Technische Diagramme für SharePoint 2013](https://technet.microsoft.com/sharepoint/fp123594.aspx)
     
@@ -60,34 +60,34 @@ While this article uses example SharePoint topologies, you can use these design 
     
 ## <a name="determine-the-active-directory-domain-type"></a>Bestimmen des Active Directory-Domänentyps
 
-Each SharePoint Server farm relies on Active Directory to provide administrative accounts for farm setup. At this time, there are two options for SharePoint solutions in Azure. These are described in the following table.
+Jede SharePoint-Serverfarm verwendet Active Directory zum Bereitstellen von Administratorkonten für die Einrichtung einer Farm. Derzeit gibt zwei Optionen für SharePoint-Lösungen in Azure, die in der folgenden Tabelle beschrieben sind.
   
 |**Option**|**Beschreibung**|
 |:-----|:-----|
-|Dedizierte Domäne  <br/> |You can deploy a dedicated and isolated Active Directory domain to Azure to support your SharePoint farm. This is a good choice for public-facing Internet sites.  <br/> |
-|Erweitern der lokalen Domäne über eine standortübergreifende Verbindung  <br/> |When you extend the on-premises domain through a cross-premises connection, users access the SharePoint farm via your intranet as if it were hosted on-premises. You can take advantage of your on-premises Active Directory and DNS implementation.  <br/> Eine standortübergreifende Verbindung ist für die Erstellung einer Umgebung für die Notfallwiederherstellung in Azure erforderlich, in die ein Failover aus der lokalen Farm erfolgt.  <br/> |
+|Dedizierte Domäne  <br/> |Sie können eine dedizierte und isolierte Active Directory-Domäne in Azure zur Unterstützung der SharePoint-Farm bereitstellen. Dies ist eine gute Wahl für öffentlich zugängliche Internetwebsites.  <br/> |
+|Erweitern der lokalen Domäne über eine standortübergreifende Verbindung  <br/> |Wenn Sie die lokale Domäne über eine standortübergreifende Verbindung erweitern, greifen Benutzer auf die SharePoint-Farm über Ihr Intranet genauso zu, als ob sie lokal gehostet würde. Sie können Ihre lokale Active Directory- und DNS-Implementierung nutzen.  <br/> Eine standortübergreifende Verbindung ist für die Erstellung einer Umgebung für die Notfallwiederherstellung in Azure erforderlich, in die ein Failover aus der lokalen Farm erfolgt.  <br/> |
    
-This article includes design concepts for extending the on-premises domain through a cross-premises connection. If your solution uses a dedicated domain, you don't need a cross-premises connection.
+Dieser Artikel enthält Entwurfskonzepte zum Erweitern der lokalen Domäne über eine standortübergreifende Verbindung. Wenn Ihre Lösung eine dedizierte Domäne verwendet, benötigen Sie keine standortübergreifende Verbindung.
   
 ## <a name="design-the-virtual-network"></a>Entwerfen des virtuellen Netzwerks
 
-First you need a virtual network in Azure, which includes subnets on which you will place your virtual machines. The virtual network needs a private IP address space, portions of which you assign to the subnets.
+Zunächst benötigen Sie ein virtuelles Netzwerk in Azure mit Subnetzen, in denen Sie Ihre virtuellen Computer platzieren. Das virtuelle Netzwerk benötigt einen privaten IP-Adressraum, von dem Sie Teile den Subnetzen zuweisen.
   
 Wenn Sie Ihr lokales Netzwerk auf Azure über eine standortübergreifende Verbindung (für eine Notfallwiederherstellungsumgebung erforderlich) erweitern, müssen Sie einen privaten Adressraum auswählen, der nicht bereits an anderer Stelle im Netzwerk Ihrer Organisation verwendet wird, was die lokale Umgebung und andere virtuelle Azure-Netzwerke umfassen kann. 
   
 **Abbildung 1: Lokale Umgebung mit einem virtuellen Netzwerk in Azure**
 
-![Microsoft Azure virtual network design for a SharePoint solution. One subnet for the Azure gateway. One subnet for the virtual machines.](media/OPrrasconWA-AZarch.png)
+![Design eines virtuellen Microsoft Azure-Netzwerks für eine SharePoint-Lösung. Ein Subnetz für das Azure-Gateway. Ein Subnetz für die virtuellen Computer.](media/OPrrasconWA-AZarch.png)
   
 Inhalt dieses Diagramms:
   
-- A virtual network in Azure is illustrated side-by-side to the on-premises environment. The two environments are not yet connected by a cross-premises connection, which can be a site-to-site VPN connection or ExpressRoute.
+- Ein virtuelles Netzwerk in Azure und die lokale Umgebung werden nebeneinander dargestellt. Die beiden Umgebungen sind noch nicht über eine standortübergreifende Verbindung verbunden. Dabei kann es sich um eine VPN-Verbindung oder ExpressRoute von Standort zu Standort handeln.
     
-- At this point, the virtual network just includes the subnets and no other architectural elements. One subnet will host the Azure gateway and other subnets host the tiers of the SharePoint farm, with an additional one for Active Directory and DNS.
+- An diesem Punkt umfasst das virtuelle Netzwerk nur die Subnetze und keine anderen Elemente der Architektur. Ein Subnetz hostet das Azure-Gateway, und andere Subnetze hosten die Ebenen der SharePoint-Farm, wobei ein weiteres für Active Directory und DNS verwendet wird.
     
 ## <a name="add-cross-premises-connectivity"></a>Hinzufügen von standortübergreifender Konnektivität
 
-The next deployment step is to create the cross-premises connection (if this applies to your solution). For cross-premises connections, a Azure gateway resides in a separate gateway subnet, which you must create and assign an address space. 
+Der nächste Bereitstellungsschritt ist das Erstellen der standortübergreifenden Verbindung (falls dies für Ihre Lösung gilt). Bei standortübergreifende Verbindungen befindet sich ein Azure-Gateway in einem separaten Gatewaysubnetz, das Sie erstellen und dem Sie einen Adressraum zuweisen müssen. 
   
 Bei der Planung für eine standortübergreifende Verbindung definieren und erstellen Sie ein Azure-Gateway und eine Verbindung mit einem lokalen Gatewaygerät.
   
@@ -113,21 +113,21 @@ Für die Notfallwiederherstellung in Azure stellen Sie Windows Server AD und DNS
 
 ![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk bereitgestellt sind, und das SharePoint-Farm-Subnetz sind replizierte Domänencontroller und DNS-Server](media/AZarch-HyADdomainConfig.png)
   
-This diagram builds on the previous diagrams by adding two virtual machines to a Windows Server AD and DNS subnet. These virtual machines are replica domain controllers and DNS servers. They are an extension of the on-premises Windows Server AD environment. 
+Dieses Diagramm basiert auf den vorherigen Diagrammen und enthält zwei weitere virtuelle Computer für ein Windows Server AD- und DNS-Subnetz. Diese virtuellen Computer sind Replikat-Domänencontroller und DNS-Server. Sie dienen als Erweiterung der lokalen Windows Server AD-Umgebung. 
   
-The following table provides configuration recommendations for these virtual machines in Azure. Use these as a starting point for designing your own environment—even for a dedicated domain where your Azure environment doesn't communicate with your on-premises environment.
+Die folgende Tabelle enthält Empfehlungen für diese virtuellen Computer in Azure. Befolgen Sie diese Empfehlungen als Ausgangspunkt für den Entwurf Ihrer eigenen Umgebung, auch für eine dedizierte Domäne, in der Ihre Azure-Umgebung nicht mit Ihrer lokalen Umgebung kommuniziert.
   
 |**Element**|**Konfiguration**|
 |:-----|:-----|
 |Größe des virtuellen Computers in Azure  <br/> |A1- oder A2-Größe in der Standardebene  <br/> |
 |Betriebssystem  <br/> |Windows Server 2012 R2  <br/> |
-|Active Directory-Rolle  <br/> |AD DS domain controller designated as a global catalog server. This configuration reduces egress traffic across the cross-premises connection.  <br/> Konfigurieren Sie in einer Umgebung mit mehreren Domänen mit hohen Änderungsraten (die es nicht häufig gibt) die lokalen Domänencontroller nicht für die Synchronisierung mit den globalen Katalogservern in Azure, um den Replikationsdatenverkehr zu reduzieren.  <br/> |
+|Active Directory-Rolle  <br/> |Als globaler Katalogserver fungierender AD DS-Domänencontroller. Diese Konfiguration verringert den ausgehenden Datenverkehr über die standortübergreifende Verbindung.  <br/> Konfigurieren Sie in einer Umgebung mit mehreren Domänen mit hohen Änderungsraten (die es nicht häufig gibt) die lokalen Domänencontroller nicht für die Synchronisierung mit den globalen Katalogservern in Azure, um den Replikationsdatenverkehr zu reduzieren.  <br/> |
 |DNS-Rolle  <br/> |Installieren und konfigurieren Sie den DNS-Serverdienst auf den Domänencontrollern.  <br/> |
-|Datenträger  <br/> |Place the Active Directory database, logs, and SYSVOL on additional Azure data disks. Do not place these on the operating system disk or the temporary disks provided by Azure.  <br/> |
+|Datenträger  <br/> |Platzieren Sie die Active Directory-Datenbank, Protokolle und SYSVOL auf zusätzlichen Azure-Datenträgern. Platzieren Sie sie nicht auf dem Datenträger mit dem Betriebssystem oder den temporären Datenträgern, die von Azure bereitgestellt werden.  <br/> |
 |IP-Adressen  <br/> |Verwenden Sie statische IP-Adressen und konfigurieren Sie das virtuelle Netzwerk, um diese Adressen den virtuellen Computern im virtuellen Netzwerk zuzuweisen, nachdem die Domänencontroller konfiguriert wurden.  <br/> |
    
 > [!IMPORTANT]
-> Before you deploy Active Directory in Azure, read [Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?linkid=392681). These help you determine if a different architecture or different configuration settings are needed for your solution. 
+> Lesen Sie vor der Bereitstellung von Active Directory in Azure die [Richtlinien für die Bereitstellung von Windows Server Active Directory auf virtuellen Computern in Azure](https://go.microsoft.com/fwlink/p/?linkid=392681). Diese Hilfedateien helfen Ihnen zu bestimmen, ob eine andere Architektur oder andere Konfigurationseinstellungen für Ihre Lösung erforderlich sind. 
   
 ## <a name="add-the-sharepoint-farm"></a>Hinzufügen der SharePoint-Farm
 
@@ -145,15 +145,15 @@ Dieses Diagramm basiert auf den vorherigen Abbildungen und enthält die beiden S
     
 ## <a name="design-and-fine-tune-server-roles-for-availability-sets-and-fault-domains"></a>Entwerfen und Optimieren von Serverrollen für Verfügbarkeitssätze und Fehlerdomänen
 
-A fault domain is a grouping of hardware in which role instances run. Virtual machines within the same fault domain can be updated by the Azure infrastructure at the same time. Or, they can fail at the same time because they share the same rack. To avoid the risk of having two virtual machines on the same fault domain, you can configure your virtual machines as an availability set, which ensures that each virtual machine is in a different fault domain. If three virtual machines are configured as an availability set, Azure guarantees that no more than two of the virtual machines are located in the same fault domain.
+Eine Fehlerdomäne ist eine Gruppierung von Hardware, in der Rolleninstanzen ausgeführt werden. Virtuelle Computer in der gleichen Fehlerdomäne können von der Azure-Infrastruktur gleichzeitig aktualisiert werden. Oder sie können zur gleichen Zeit ausfallen, da sie ein Rack gemeinsam verwenden. Um das Risiko zu vermeiden, dass zwei virtuelle Computer zur selben Fehlerdomäne gehören, können Sie Ihre virtuellen Computer als Verfügbarkeitssatz konfigurieren, was sichergestellt, dass jeder virtuelle Computer in einer anderen Fehlerdomäne enthalten ist. Wenn drei virtuelle Computer als Verfügbarkeitssatz konfiguriert sind stellt Azure sicher, dass sich nicht mehr als zwei virtuelle Computer in derselben Fehlerdomäne befinden.
   
-When you design the Azure architecture for a SharePoint farm, configure identical server roles to be part of an availability set. This ensures that your virtual machines are spread across multiple fault domains.
+Konfigurieren Sie beim Entwerfen der Azure-Architektur einer SharePoint-Farm im Rahmen eines Verfügbarkeitssatzes identische Serverrollen. Dadurch wird sichergestellt, dass die virtuellen Computer auf mehrere Fehlerdomänen verteilt sind.
   
 **Abbildung 5: Verwenden von Azure-Verfügbarkeitssätzen zum Bereitstellen hoher Verfügbarkeit für die SharePoint-Farmebenen**
 
 ![Konfiguration von Verfügbarkeitssätzen in der Azure-Infrastruktur für eine SharePoint 2013-Lösung.](media/AZenv-WinAzureAvailSetsHA.png)
   
-This diagram calls out the configuration of availability sets within the Azure infrastructure. Each of the following roles share a separate availability set:
+Dieses Diagramm zeigt die Konfiguration der Verfügbarkeitssätze innerhalb der Azure-Infrastruktur. Jede der folgenden Rollen teilt sich einen eigenen Verfügbarkeitssatz:
   
 - Active Directory und DNS
     
@@ -165,9 +165,9 @@ This diagram calls out the configuration of availability sets within the Azure i
     
 - Front-End
     
-The SharePoint farm might need to be fine tuned in the Azure platform. To ensure high availability of all components, ensure that the server roles are all configured identically.
+Die SharePoint-Farm muss möglicherweise auf der Azure-Plattform optimiert werden. Um eine hohe Verfügbarkeit aller Komponenten sicherzustellen, vergewissern Sie sich, dass alle Serverrollen identisch konfiguriert sind.
   
-Here is an example that shows a standard Internet Sites architecture that meets specific capacity and performance goals. This example is featured in the following architecture model: [Internet Sites Search Architectures for SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
+Es folgt ein Beispiel einer Standardarchitektur von Internetwebsites, die bestimmte Kapazitäts- und Leistungsvorgaben erfüllt. Dieses Beispiel ist im folgenden Architekturmodell enthalten: [Architekturen für Internetwebsitesuche für SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=261519).
   
 **Abbildung 6: Beispiel der Planung der Kapazitäts- und Leistungsziele in einer Farm mit drei Ebenen**
 
@@ -181,7 +181,7 @@ Inhalt dieses Diagramms:
     
 - Die beiden Datenbankserver sind identisch konfiguriert.
     
-- The three application servers are not configured identically. These server roles require fine tuning for availability sets in Azure.
+- Die drei Anwendungsserver sind nicht identisch konfiguriert. Diese Serverrollen benötigen in Azure eine Optimierung für Verfügbarkeitsätze.
     
 Die Ebene der Anwendungsserver wollen wir uns genauer ansehen.
   
@@ -199,7 +199,7 @@ Inhalt dieses Diagramms:
     
 - Der dritte Server umfasst zwei Komponenten.
     
-You determine the number of components by the performance and capacity targets for the farm. To adapt this architecture for Azure, we'll replicate the four components across all three servers. This increases the number of components beyond what is necessary for performance and capacity. The tradeoff is that this design ensures high availability of all four components in the Azure platform when these three virtual machines are assigned to an availability set.
+Sie bestimmen die Anzahl der Komponenten anhand der Leistungs- und Kapazitätsvorgaben für die Farm. Für die Anpassung dieser Architektur an Azure werden die vier Komponenten auf alle drei Server repliziert. Dies erhöht die Anzahl der Komponenten über die Leistungs-und Kapazitätsvorgaben hinaus. Der Vorteil besteht darin, dass dieser Entwurf für Hochverfügbarkeit aller vier Komponenten auf der Azure-Plattform sorgt, wenn diese drei virtuelle Computer einem Verfügbarkeitssatz zugewiesen werden.
   
 **Abbildung 8: Anwendungsserverebene nach der Optimierung**
 
