@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Beschleunigen Sie die Planung und Konfiguration von Microsoft 365 oder Office 365 mit den Installationsanleitungen.
-ms.openlocfilehash: 92c792b3d82a6a0f1405059ae50db581823704dc
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: a3523b78c33b51d00da24bd9b43d39e5e5fb67e7
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735973"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201629"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste
 
@@ -103,6 +103,15 @@ Das **Remote work Setup Guide** bietet Organisationen die Tipps und Ressourcen, 
 | **Ausführen** | [Handbuch zur Remote-Arbeitseinrichtung](https://aka.ms/remoteworksetup) |
 |||
 
+### <a name="windows-virtual-desktop-setup-guide"></a>Windows Virtual Desktop-Installationshandbuch
+
+Windows Virtual Desktop ist ein umfassender Desktop-und App-Virtualisierungs-Dienst, der in der Cloud läuft. Es handelt sich um die einzige virtuelle Desktopinfrastruktur (VDI), die vereinfachte Verwaltung, mehrstufige Windows 10, Optimierungen für Microsoft 365-apps und Unterstützung für Remote Desktop Dienste-Umgebungen (RDS) bietet. Bereitstellen und Skalieren von Windows-Desktops und-apps in wenigen Minuten in Azure, um integrierte Sicherheits-und Compliance-Funktionen zu erhalten. Das **Windows Virtual Desktop Setup Guide** bietet Administratoren Planungsressourcen und die Voraussetzungen für die Bereitstellung, Setup Anleitungen und zusätzliche Ressourcen. 
+
+|||
+|:-------|:-----|
+| **Ausführen** | [Windows Virtual Desktop-Installationshandbuch](https://aka.ms/wvdsetupguide) |
+|||
+
 ## <a name="guides-for-security"></a>Leitfäden für die Sicherheit
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD-Installationshandbuch
@@ -112,6 +121,15 @@ Das **Azure AD-Setup Handbuch** enthält Informationen, um sicherzustellen, dass
 |||
 |:-------|:-----|
 | **Ausführen** | [Azure AD-Installationshandbuch](https://aka.ms/aadpguidance) |
+|||
+
+### <a name="plan-your-passwordless-deployment"></a>Planen der Bereitstellung von Kennwörtern
+
+Upgrade auf eine Alternative Anmeldemethode, mit der Benutzer sicher mit einer der folgenden Methoden für die Kenn Wort lose Authentifizierung auf Ihre Geräte zugreifen können: Windows Hello for Business, Microsoft Authenticator-APP oder Sicherheitsschlüssel. Verwenden Sie diesen Assistenten, um die besten Authentifizierungsmethoden für Kennwörter zu ermitteln, die Sie verwenden sollten, und erhalten Sie Anleitungen für deren Bereitstellung.
+
+|||
+|:-------|:-----|
+| **Ausführen** | [Planen der Bereitstellung von Kennwörtern](https://aka.ms/passwordlesssetup) |
 |||
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender Advanced Threat Protection (ATP) Advisor

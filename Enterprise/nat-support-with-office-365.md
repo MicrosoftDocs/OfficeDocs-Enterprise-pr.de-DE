@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: 170e96ea-d65d-4e51-acac-1de56abe39b9
 description: 'Zusammenfassung: enthält Informationen zur Annäherung der richtigen Anzahl von Clients, die Sie pro IP-Adresse in Ihrer Organisation verwenden können, indem Sie die Netzwerkadressübersetzung (Network Address Translation, NAT) verwenden.'
-ms.openlocfilehash: 04aec45b7d6c68b3e32d4ee384c9927896849bab
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: d1f6762fcb21e6c310c790f6b235e5a51db4b1f2
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998540"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201609"
 ---
 # <a name="nat-support-with-office-365"></a>NAT-Unterstützung mit Office 365
 
@@ -40,7 +40,7 @@ Um Internet Zugriff auf Geräte in einem privaten IP-Adressraum bereitzustellen,
   
 ## <a name="why-do-you-need-to-have-so-many-connections-open-to-office-365-at-the-same-time"></a>Warum müssen so viele Verbindungen für Office 365 gleichzeitig geöffnet sein?
 
-Outlook kann acht oder mehr Verbindungen öffnen (in Situationen, in denen Add-Ins, freigegebene Kalender, Postfächer usw. vorhanden sind). Da auf einem Windows-basierten NAT-Gerät maximal 64.000 Ports verfügbar sind, können maximal 8.000 Benutzer hinter einer IP-Adresse stehen, bevor die Ports erschöpft sind. Beachten Sie, dass die verfügbaren Ports je nachdem, welche NAT-Geräte oder-Software verwendet wird, wenn Kunden nicht-Windows-Betriebssystembasierte Geräte für NAT verwenden. In diesem Szenario kann die maximale Anzahl von Ports kleiner als 64.000 sein. Die Verfügbarkeit von Ports ist auch von anderen Faktoren betroffen, beispielsweise von Windows, die 4.000-Ports für die eigene Verwendung einschränken, wodurch die Gesamtzahl der verfügbaren Ports auf 60.000 000 reduziert wird. möglicherweise gibt es andere Anwendungen, beispielsweise Internet Explorer, die gleichzeitig eine Verbindung herstellen können und zusätzliche Ports erfordern.
+Outlook kann acht oder mehr Verbindungen öffnen (in Situationen, in denen Add-Ins, freigegebene Kalender, Postfächer usw. vorhanden sind). Da auf einem Windows-basierten NAT-Gerät maximal 64.000 Ports verfügbar sind, können maximal 8.000 Benutzer hinter einer IP-Adresse stehen, bevor die Ports erschöpft sind. Beachten Sie, dass die verfügbaren Ports je nachdem, welche NAT-Geräte oder-Software verwendet wird, wenn Kunden nicht-Windows-Betriebssystembasierte Geräte für NAT verwenden. In diesem Szenario kann die maximale Anzahl von Ports kleiner als 64.000 sein. Die Verfügbarkeit von Ports ist auch von anderen Faktoren betroffen, beispielsweise von Windows, die 4.000-Ports für die eigene Verwendung einschränken, wodurch die Gesamtzahl der verfügbaren Ports auf 60.000 reduziert wird. Es gibt möglicherweise andere Anwendungen wie Internet Explorer, die gleichzeitig eine Verbindung herstellen können und zusätzliche Ports erfordern.
   
 ## <a name="calculating-maximum-supported-devices-behind-a-single-public-ip-address-with-office-365"></a>Berechnen der maximal unterstützten Geräte hinter einer einzelnen öffentlichen IP-Adresse mit Office 365
 
