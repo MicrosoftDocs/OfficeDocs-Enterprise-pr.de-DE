@@ -13,12 +13,12 @@ ms.collection:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie, wie Sie eine SharePoint-Website an einen anderen geografischen Standort verschieben.
-ms.openlocfilehash: ab6651802c4add7569978c42f6920b0d21a61faa
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
+ms.openlocfilehash: 3b8028f1dc4b33201a19a8da1cad6c9a559cf4c0
+ms.sourcegitcommit: 35655e2b098e46822c14d98583cc47b87516a629
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057995"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201619"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Verschieben einer SharePoint-Website an einen anderen geografischen Standort
 
@@ -112,9 +112,9 @@ Führe Sie Folgendes aus, um mit der Verschiebung der Website zu beginnen:
 
 ![Screenshot des PowerShell-Fensters mit dem Cmdlet „Start-SPOSiteContentMove“](media/multi-geo-sharepoint-site-move-powershell.png)
 
-### <a name="start-a-sharepoint-site-geo-move-for-an-microsoft-365-group-connected-site"></a>Starten einer Verschiebung des geografischen Standorts einer SharePoint-Website mit zugehöriger Microsoft 365-Gruppe
+### <a name="start-a-sharepoint-site-geo-move-for-a-microsoft-365-group-connected-site"></a>Starten einer Verschiebung des geografischen Standorts einer SharePoint-Website mit zugehöriger Microsoft 365-Gruppe
 
-Um eine Website zu verschieben, die mit einer Microsoft 365-Gruppe verbundene ist, muss der globale Administrator zuerst das PDL-Attribut (Preferred Data Location, bevorzugter Datenspeicherort) der Microsoft 365-Gruppe ändern.
+Um eine Website zu verschieben, die mit einer Office 365-Gruppe verbundene ist, muss der globale Administrator oder SharePoint-Administrator zuerst das PDL-Attribut (Preferred Data Location, bevorzugter Datenspeicherort) der Office 365-Gruppe ändern.
 
 So Legen Sie den PDL einer Microsoft 365-Gruppe fest:
 
