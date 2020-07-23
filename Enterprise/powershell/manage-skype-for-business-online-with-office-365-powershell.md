@@ -1,9 +1,9 @@
 ---
-title: Verwalten von Skype for Business Online mit Office 365 PowerShell
+title: Verwalten von Skype for Business Online mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/28/2018
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,17 +13,19 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: 'Zusammenfassung: Verwenden Sie Office 365 PowerShell zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.'
-ms.openlocfilehash: f1a5df3802d43755e81465743b81c5fbb9fff7e0
-ms.sourcegitcommit: 6c7cc6aca8713e280ae6ff51226dde9db4497401
+description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365 zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.'
+ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44415937"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230441"
 ---
-# <a name="manage-skype-for-business-online-with-office-365-powershell"></a>Verwalten von Skype for Business Online mit Office 365 PowerShell
+# <a name="manage-skype-for-business-online-with-powershell"></a>Verwalten von Skype for Business Online mit PowerShell
 
-Eine der Hauptaufgaben des Skype for Business Online-Administrators ist die Richtlinienverwaltung. Obwohl Sie einige dieser Aufgaben in Microsoft 365 Admin Center durchführen können, können andere Aufgaben in Office 365 PowerShell wesentlich schneller und einfacher durchgeführt werden. 
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+
+Eine der Hauptaufgaben des Skype for Business Online-Administrators ist die Richtlinienverwaltung. Obwohl Sie einige dieser Aufgaben im Microsoft 365 Admin Center erledigen können, sind andere Aufgaben in PowerShell viel schneller und einfacher. 
 
 ## <a name="before-you-start"></a>Vor der Bereitstellung
 
@@ -60,17 +62,17 @@ Laden Sie das [Skype for Business Online-Connector-Modul](https://www.microsoft.
 
 4. Befolgen Sie die Anweisungen im Dialogfeld **Anmelden bei Ihrem Konto** , um zusätzliche Authentifizierungsinformationen bereitzustellen, beispielsweise einen Überprüfungscode, und klicken Sie dann auf **überprüfen**.
 
-Weitere Informationen hierzu finden Sie unter den folgenden Themen:
+Weitere Informationen hierzu finden Sie in den folgenden Themen:
   
-- [Verwalten von Skype for Business Online-Richtlinien mit Office 365 PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Verwalten von Skype for Business Online-Richtlinien mit PowerShell](manage-skype-for-business-online-policies-with-office-365-powershell.md)
     
-- [Zuweisen von benutzerspezifischen Skype for Business Online-Richtlinien mit Office 365 PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
+- [Zuweisen von Benutzer Skype for Business Online Richtlinien mit PowerShell](assign-per-user-skype-for-business-online-policies-with-office-365-powershell.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
 
 [Verweise auf Skype for Business PowerShell-Cmdlets](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 

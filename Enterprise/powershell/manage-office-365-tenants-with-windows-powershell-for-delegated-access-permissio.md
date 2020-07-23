@@ -16,22 +16,24 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: 'Zusammenfassung: Verwenden Sie Windows PowerShell für Microsoft 365, um Ihre Kundenmandanten zu verwalten.'
-ms.openlocfilehash: a57f66ec02f5ba69006c17a9cf734e622017b8fb
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um Ihre Kundenmandanten zu verwalten.'
+ms.openlocfilehash: 31ce5b9a7bdfa50234c76be65eaeb99d6d199136
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998231"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230591"
 ---
 # <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten von Microsoft 365-Mandanten mit Windows PowerShell für Partner mit Delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
+
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
 Windows PowerShell ermöglicht es den Anbietern von Syndication-und Cloud Solution Providern (CSP), Kundenmandanten Einstellungen, die im Microsoft 365 Admin Center nicht verfügbar sind, einfach zu verwalten und zu melden. Beachten Sie, dass für das Partneradministrator Konto die Berechtigung verwalten im Namen von (AOBO) erforderlich ist, um eine Verbindung mit dem Mandanten des Kunden herzustellen.
   
 DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP). Häufig handelt es sich um Netzwerk- oder Telekom-Anbieter für andere Unternehmen. Sie bündeln Microsoft 365-Abonnements für Ihre Kunden in ihren Dienst angeboten. Wenn Sie ein Microsoft 365-Abonnement verkaufen, werden Ihnen automatisch Administratoren im Namen von (AOBO) Berechtigungen für den Kundenmandanten erteilt, damit Sie den Kundenmandanten verwalten und melden können.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Windows PowerShell für Office 365 herstellen. Weitere Anweisungen finden Sie unter [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md).
+Für die Verfahren in diesem Thema müssen Sie eine Verbindung herstellen, um [eine Verbindung mit Microsoft 365 mit PowerShell](connect-to-office-365-powershell.md)herzustellen.
   
 Sie benötigen auch die Administratoranmeldeinformationen Ihres Partnermandanten.
   
@@ -74,7 +76,7 @@ Wenn Sie zusätzliche Domänen registriert haben, werden alle Domänen zurückge
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Abrufen einer Zuordnung aller Mandanten und registrierten Domänen
 
-Die vorherigen Befehle von Windows PowerShell für Office 365 haben Ihnen gezeigt, wie Sie entweder die Mandanten-IDs oder die Domänen, jedoch nicht beides gleichzeitg abrufen können. Außerdem geben sie die Zuordnung von Mandanten-ID und Domäne nicht an. Dieser Befehl generiert eine Liste aller Kundenmandanten-IDs und ihrer Domänen.
+In der vorherigen PowerShell für Microsoft 365-Befehle wurde gezeigt, wie Sie entweder Mandanten-IDs oder Domänen abrufen, jedoch nicht beides gleichzeitig und ohne eine eindeutige Zuordnung zwischen allen. Mit diesem Befehl wird eine Auflistung aller ihrer Kundenmandanten-IDs und ihrer Domänen generiert.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -98,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Hinzufügen von Benutzern, Festlegen von Optionen und Zuweisen von Lizenzen
 
-Die Massenerstellung, Konfiguration und Lizenzierung von Microsoft 365-Benutzern ist besonders effizient, indem Windows PowerShell für Office 365 verwendet wird. Bei diesem Verfahren, das nur zwei Schritte umfasst, erstellen Sie zuerst Einträge für alle hinzuzufügenden Benutzer in einer CSV-Datei und importieren diese Datei dann mithilfe von Windows PowerShell für Office 365. 
+Die Massenerstellung,-Konfiguration und-Lizenzierung von Microsoft 365-Benutzern ist besonders effizient durch die Verwendung von PowerShell für Microsoft 365. In diesem zweistufigen Prozess erstellen Sie zuerst Einträge für alle Benutzer, die Sie in einer CSV-Datei (Comma-Separated Value) hinzufügen möchten, und importieren diese Datei dann mithilfe von PowerShell für Microsoft 365. 
   
 #### <a name="create-a-csv-file"></a>Erstellen einer CSV-Datei
 

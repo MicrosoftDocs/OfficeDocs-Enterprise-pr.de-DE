@@ -1,5 +1,5 @@
 ---
-title: Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Office 365
+title: Verwenden von PowerShell zum Ausführen einer Cutover Migration zu Microsoft 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -14,26 +14,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Zusammenfassung: Verwenden Sie Windows PowerShell zum Ausführen einer Übernahmemigration zu Office 365.'
-ms.openlocfilehash: b40c6ac53a173f700c6b931781d98d7965a2be7c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: 'Zusammenfassung: Hier erfahren Sie, wie Sie mit Windows PowerShell eine Cutover-Migration zu Microsoft 365 durchführen.'
+ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998570"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229851"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-office-365"></a>Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Office 365
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Verwenden von PowerShell zum Ausführen einer Cutover Migration zu Microsoft 365
 
-Sie können den Inhalt von Benutzerpostfächern aus einem Quell-E-Mail-System mithilfe einer gleichzeitigen Übernahmemigration zu Office 365 migrieren. Dieser Artikel führt Sie durch die Aufgaben für eine E-Mail-Übernahmemigration mithilfe von Exchange Online PowerShell. 
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+
+Sie können die Inhalte von Benutzerpostfächern aus einem Quell-e-Mail-System auf einmal mithilfe einer Cutover-Migration zu Microsoft 365 migrieren. Dieser Artikel führt Sie durch die Aufgaben für eine E-Mail-Übernahmemigration mithilfe von Exchange Online PowerShell. 
   
-Im Thema [Wichtige Informationen zur E-Mail-Übernahmemigration zu Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536688) erhalten Sie eine Übersicht über den Migrationsvorgang. Wenn Sie mit dem Inhalt dieses Artikels vertraut sind, verwenden Sie die Informationen, um Postfächer von einem E-Mail-System zu einem anderen zu migrieren.
+Durch die Überprüfung des Themas, [was Sie über eine Cutover-e-Mail-Migration zu Microsoft 365 wissen müssen](https://go.microsoft.com/fwlink/p/?LinkId=536688), erhalten Sie einen Überblick über den Migrationsprozess. Wenn Sie mit dem Inhalt dieses Artikels vertraut sind, verwenden Sie die Informationen, um Postfächer von einem E-Mail-System zu einem anderen zu migrieren.
   
 > [!NOTE]
-> Sie können auch die Exchange-Verwaltungskonsole zum Durchführen einer Übernahmemigration verwenden. Siehe [Durchführen einer Übernahmemigration von E-Mails zu Office 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
+> Sie können auch die Exchange-Verwaltungskonsole zum Durchführen einer Übernahmemigration verwenden. Weitere Informationen finden Sie unter [Durchführen einer Cutover Migration von e-Mails zu Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536689). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 2 bis 5 Minuten, um einen Migrationsbatch zu erstellen. Nach dem Start der Migration variiert die Dauer der Migration abhängig von der Anzahl von Postfächern in dem Batch, der Größe der einzelnen Postfächer und Ihrer verfügbaren Netzkapazität. Informationen zu weiteren Faktoren, die sich auf die Dauer der Migration von Postfächern zu Office 365, auswirken, finden Sie unter [Migrationsleistung](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 2 bis 5 Minuten, um einen Migrationsbatch zu erstellen. Nach dem Start der Migration variiert die Dauer der Migration abhängig von der Anzahl von Postfächern in dem Batch, der Größe der einzelnen Postfächer und Ihrer verfügbaren Netzkapazität. Informationen zu anderen Faktoren, die sich auf die Dauer der Migration von Postfächern zu Microsoft 365 auswirken, finden Sie unter [Migrationsleistung](https://go.microsoft.com/fwlink/p/?LinkId=275079).
   
 Bevor Sie dieses Verfahren bzw. diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Berechtigungen, die Sie benötigen, finden Sie unter dem Eintrag „Migration" in einer Tabelle im Thema [Empfängerberechtigungen](https://go.microsoft.com/fwlink/p/?LinkId=534105).
   
@@ -46,7 +48,7 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>Schritt 1: Übernahmemigration vorbereiten
 <a name="BK_Step1"> </a>
 
-- **Hinzufügen der lokalen Exchange-Organisation als akzeptierte Domäne Ihrer Office 365-Organisation** Der Migrationsdienst verwendet die SMTP-Adresse Ihrer lokalen Postfächer, um die Microsoft Online Services-Benutzer-ID und -E-Mail-Adresse für die neuen Office 365-Postfächer zu erstellen. Die Migration scheitert, wenn es sich bei der Exchange-Domäne nicht um eine akzeptierte Domäne oder die primäre Domäne der Office 365-Organisation handelt. Weitere Informationen finden Sie unter[Überprüfen Ihrer Domäne in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Fügen Sie Ihre lokale Exchange-Organisation als akzeptierte Domäne Ihrer Microsoft 365-Organisation hinzu.** Der Migrationsdienst verwendet die SMTP-Adresse Ihrer lokalen Postfächer, um die Microsoft Online Services-Benutzer-ID und die e-Mail-Adresse für die neuen Microsoft 365-Postfächer zu erstellen. Die Migration schlägt fehl, wenn es sich bei Ihrer Exchange-Domäne nicht um eine akzeptierte Domäne oder die primäre Domäne Ihrer Microsoft 365-Organisation handelt. Weitere Informationen finden Sie unter [Überprüfen Ihrer Domäne](https://go.microsoft.com/fwlink/p/?LinkId=534110).
     
 - **Konfigurieren von Outlook Anywhere auf dem lokalen Exchange-Server** Der E-Mail-Migrationsdienst verwendet RPC über HTTP oder Outlook Anywhere, um eine Verbindung mit dem lokalen Exchange-Server herzustellen. Informationen zum Einrichten von Outlook Anywhere für Exchange 2010, Exchange 2007 und Exchange 2003 finden Sie unter den folgenden Themen:
     
@@ -77,7 +79,7 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Zuweisen der erforderlichen Berechtigungen für das lokale Benutzerkonto für den Zugriff auf Postfächer in der Exchange-Organisation** Das lokale Benutzerkonto, das Sie zum Herstellen einer Verbindung mit Ihrer lokalen Exchange-Organisation (auch als Migrations Administrator bezeichnet) verwenden, muss über die erforderlichen Berechtigungen für den Zugriff auf die lokalen Postfächer verfügen, die zu Office 365 migriert werden sollen. Dieses Benutzerkonto wird zur Erstellung eines Migrationsendpunkts zu Ihrer lokalen Organisation verwendet.
+- **Zuweisen der erforderlichen Berechtigungen für das lokale Benutzerkonto für den Zugriff auf Postfächer in der Exchange-Organisation** Das lokale Benutzerkonto, das Sie zum Herstellen einer Verbindung mit Ihrer lokalen Exchange-Organisation (auch als Migrations Administrator bezeichnet) verwenden, muss über die erforderlichen Berechtigungen für den Zugriff auf die lokalen Postfächer verfügen, die Sie zu Microsoft 365 migrieren möchten. Dieses Benutzerkonto wird zur Erstellung eines Migrationsendpunkts zu Ihrer lokalen Organisation verwendet.
     
     Die folgende Liste zeigt die Administratorrechte an, die erforderlich sind, um Postfächer mithilfe einer Übernahmemigration zu migrieren. Es gibt drei mögliche Optionen.
     
@@ -93,12 +95,12 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
     
 - **Deaktivieren von Unified Messaging** Wenn die zu migrierenden lokalen Postfächer für Unified Messaging (UM) aktiviert sind, müssen Sie vor der Migration UM in den Postfächern deaktivieren. Nach Abschluss der Migration können Sie UM dann für die Postfächer wieder aktivieren.
     
-- **Sicherheitsgruppen und Stellvertretungen** Da der E-Mail-Migrationsdienst nicht erkennen kann, ob lokale Active Directory-Gruppen Sicherheitsgruppen sind, kann er keine migrierten Gruppen als Sicherheitsgruppen in Office 365 bereitstellen. Wenn Sie im Office 365-Mandanten Sicherheitsgruppen verwenden möchten, müssen Sie zunächst eine leere E-Mail-aktivierte Sicherheitsgruppe im Office 365-Mandanten bereitstellen, bevor Sie die Übernahmemigration beginnen. Zudem werden bei dieser Migrationsmethode nur Postfächer, E-Mail-Benutzer, E-Mail-Kontakte und E-Mail-aktivierte Gruppen verschoben. Wenn irgendein anderes Active Directory-Objekt, z. B. ein nicht zu Office 365 migrierter Benutzer, als Manager oder Stellverteter einem zu migrierenden Objekt zugewiesen ist, muss es vor der Migration aus diesem Objekt entfernt werden.
+- **Sicherheitsgruppen und Stellvertretungen** Der e-Mail-Migrationsdienst kann nicht erkennen, ob lokale Active Directory Gruppen Sicherheitsgruppen sind oder nicht, sodass migrierte Gruppen nicht als Sicherheitsgruppen in Microsoft 365 bereitgestellt werden können. Wenn Sie Sicherheitsgruppen in Ihrem Microsoft 365-Mandanten haben möchten, müssen Sie zuerst eine leere e-Mail-aktivierte Sicherheitsgruppe in Ihrem Microsoft 365-Mandanten vorsehen, bevor Sie die Cutover-Migration starten. Zudem werden bei dieser Migrationsmethode nur Postfächer, E-Mail-Benutzer, E-Mail-Kontakte und E-Mail-aktivierte Gruppen verschoben. Wenn ein anderes Active Directory-Objekt, wie beispielsweise ein Benutzer, der nicht zu Microsoft 365 migriert wird, als Manager oder Stellvertreter für ein migriertes Objekt zugewiesen wird, müssen Sie vor der Migration aus dem Objekt entfernt werden.
     
 ### <a name="step-2-create-a-migration-endpoint"></a>Schritt 2: Migrationsendpunkt erstellen
 <a name="BK_Step2"> </a>
 
-Um E-Mails erfolgreich zu migrieren, muss Office 365 eine Verbindung zum Quell-E-Mail-System herstellen und mit ihm kommunizieren. Zu diesem Zweck verwendet Office 365 einen Migrationsendpunkt. Um einen Outlook Anywhere-Migrationsendpunkt für die Übernahmemigration zu erstellen, [stellen Sie zunächst eine Verbindung mit Exchange Online her](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
+Um e-Mails erfolgreich zu migrieren, muss Microsoft 365 eine Verbindung herstellen und mit dem Quell-e-Mail-System kommunizieren. Zu diesem Zwecke verwendet Microsoft 365 einen Migrations Endpunkt. Um einen Outlook Anywhere-Migrationsendpunkt für die Übernahmemigration zu erstellen, [stellen Sie zunächst eine Verbindung mit Exchange Online her](https://go.microsoft.com/fwlink/p/?LinkId=534121). 
   
 Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- und Migrations-Cmdlets](https://go.microsoft.com/fwlink/p/?LinkId=534750).
   
@@ -170,10 +172,10 @@ Wenn ein Migrationsbatch erfolgreich gestartet wurde, lautet sein Status im Migr
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-office-365"></a>Schritt 5: Weiterleiten Ihrer E-Mails zu Office 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Schritt 5: weiterleiten Ihrer e-Mail an Microsoft 365
 <a name="BK_Step5"> </a>
 
-E-Mail-Systeme verwenden einen DNS-Eintrag namens MX-Eintrag, um zu bestimmen, wohin E-Mail-Nachrichten übermittelt werden sollen. Während der Migration von E-Mails hat der MX-Eintrag auf Ihr E-Mail-Quellsystem verwiesen. Da die E-Mail-Migration zu Office 365 jetzt abgeschlossen ist, sollte der MX-Eintrag nun auf Office 365 verweisen. Dadurch wird sichergestellt, dass E-Mails an Ihre Office 365-Postfächer übermittelt werden. Durch Verschieben des MX-Eintrags können Sie Ihr altes E-Mail-System ggf. auch deaktivieren. 
+E-Mail-Systeme verwenden einen als MX-Eintrag bezeichneten DNS-Eintrag, um zu ermitteln, wohin E-Mails gesendet werden sollen. Während der E-Mail-Migration hat Ihr MX-Eintrag auf Ihr Quell-E-Mail-System verwiesen. Nachdem die e-Mail-Migration zu Microsoft 365 abgeschlossen ist, ist es an der Zeit, Ihren MX-Eintrag auf Microsoft 365 zu richten. Dadurch kann sichergestellt werden, dass e-Mails an Ihre Microsoft 365-Postfächer gesendet werden. Wenn Sie den MX-Eintrag verschieben, können Sie auch Ihr altes e-Mail-System ausschalten, wenn Sie fertig sind. 
   
 Für viele DNS-Anbieter gibt es bestimmte Anweisungen zum [Ändern des MX-Eintrags](https://go.microsoft.com/fwlink/p/?LinkId=279163). Wenn Ihr DNS-Anbieter nicht enthalten ist oder wenn Sie allgemeine Anweisungen erhalten möchten, finden Sie entsprechende Informationen unter [Erstellen und Konfigurieren eines DNS-Eintrags für Office 365](https://go.microsoft.com/fwlink/?LinkId=397449).
   
@@ -182,11 +184,11 @@ Es kann bis zu 72 Stunden dauern, bis die E-Mail-Systeme der Kunden und Partnern
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Schritt 6: Übernahmemigrationsbatch löschen
 <a name="Bk_step6"> </a>
 
-Nachdem Sie den MX-Eintrag geändert und sichergestellt haben, dass alle E-Mails an die Office 365-Postfächer weitergeleitet werden, benachrichtigen Sie die Benutzer, dass ihre E-Mails zu Office 365 geleitet werden. Danach können Sie den Übernahmemigrationsbatch löschen. Überprüfen Sie Folgendes, bevor Sie den Migrationsbatch löschen.
+Nachdem Sie den MX-Eintrag geändert und sichergestellt haben, dass alle e-Mails an Microsoft 365-Postfächer weitergeleitet werden, Benachrichtigen Sie die Benutzer, dass Ihre e-Mail-Nachrichten an Microsoft 365 gesendet werden. Danach können Sie den Übernahmemigrationsbatch löschen. Überprüfen Sie Folgendes, bevor Sie den Migrationsbatch löschen.
   
-- Alle Benutzer verwenden Office 365-Postfächer. Nachdem der Batch gelöscht wurde, werden E-Mails, die an Postfächer auf dem lokalen Exchange-Server gesendet werden, nicht mehr in die entsprechenden Office 365-Postfächer kopiert.
+- Alle Benutzer verwenden Microsoft 365-Postfächer. Nach dem Löschen des Batches werden e-Mails, die an Postfächer im lokalen Exchange Server gesendet werden, nicht in die entsprechenden Microsoft 365-Postfächer kopiert.
     
-- Office 365-Postfächer wurden mindestens einmal nach dem Start des direkten E-Mail-Versands synchronisiert. Stellen Sie hierzu sicher, dass der Wert im Feld „Zeit der letzten Synchronisierung" für den Migrationsbatch jünger als das Datum und die Uhrzeit ist, zu denen das direkte Weiterleiten von E-Mails an Office 365-Postfächer begonnen hat.
+- Microsoft 365-Postfächer wurden mindestens einmal synchronisiert, nachdem e-Mails direkt an Sie gesendet wurden. Stellen Sie dazu sicher, dass der Wert im Feld zuletzt synchronisierte Zeit für den Migrationsbatch aktueller ist als die Weiterleitung von e-Mails direkt an Microsoft 365-Postfächer.
     
 Führen Sie den folgenden Befehl aus, um den Migrationsbatch „CutoverBatch“ in Exchange Online PowerShell zu löschen:
   
@@ -197,27 +199,27 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Abschnitt 7: Zuweisen von Benutzerlizenzen
 <a name="BK_Step7"> </a>
 
- **Aktivieren Sie Office 365-Benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen.** Wenn Sie keine Lizenz zuweisen, wird das Postfach nach Ablauf der Kulanzzeit (30 Tage) deaktiviert. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter Zuweisen oder Aufheben der[Zuweisung von Lizenzen für Office 365 für Unternehmen](https://go.microsoft.com/fwlink/?LinkId=536681).
+ **Aktivieren Sie Microsoft 365-Benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen.** Wenn Sie keine Lizenz zuweisen, wird das Postfach nach Ablauf der Kulanzzeit (30 Tage) deaktiviert. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter [zuweisen oder](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)Aufheben der Zuweisung von Lizenzen.
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Schritt 8: Aufgaben nach der Migration abschließen
 <a name="BK_Step8"> </a>
 
-- **Erstellen Sie einen AutoErmittlung-DNS-Eintrag, damit Benutzer problemlos auf ihre Postfächer zugreifen können.** Nachdem alle lokalen Postfächer zu Office 365 migriert wurden, können Sie einen AutoErmittlung-DNS-Eintrag für Ihre Office 365-Organisation konfigurieren, damit Benutzer mit Outlook und mobilen Clients problemlos eine Verbindung mit ihren neuen Office 365-Postfächern herstellen können. Dieser neue DNS-Datensatz für die AutoErmittlung muss denselben Namespace verwenden, den Sie für die Office 365-Organisation verwenden. Wenn der Namespace für die Cloud-basierte Organisation beispielsweise "cloud.contoso.com" lautet, müssen Sie den DNS-Datensatz "autodiscover.cloud.contoso.com" für die AutoErmittlung erstellen.
+- **Erstellen Sie einen AutoErmittlung-DNS-Eintrag, damit Benutzer problemlos auf ihre Postfächer zugreifen können.** Nachdem alle lokalen Postfächer zu Microsoft 365 migriert wurden, können Sie einen Auto Ermittlungs-DNS-Eintrag für Ihre Microsoft 365-Organisation konfigurieren, um Benutzern die einfache Verbindung mit ihren neuen Microsoft 365-Postfächern mit Outlook und mobilen Clients zu ermöglichen. In diesem neuen DNS-Eintrag für die AutoErmittlung muss derselbe Namespace verwendet werden, den Sie für Ihre Microsoft 365-Organisation verwenden. Wenn der Namespace für die Cloud-basierte Organisation beispielsweise "cloud.contoso.com" lautet, müssen Sie den DNS-Datensatz "autodiscover.cloud.contoso.com" für die AutoErmittlung erstellen.
     
-    Wenn Sie Exchange Server weiterhin verwenden, müssen Sie sicherstellen, dass der DNS CNAME-Eintrag für die AutoErmittlung im internen und externen DNS nach der Migration auf Office 365 verweist, damit der Outlook-Client eine Verbindung mit dem richtigen Postfach herstellen kann.
+    Wenn Sie Ihre Exchange Server beibehalten, sollten Sie auch sicherstellen, dass der AutoErmittlungs-DNS-CNAME-Eintrag sowohl im internen als auch im externen DNS nach der Migration auf Microsoft 365 verweist, damit der Outlook-Client eine Verbindung mit dem richtigen Postfach herstellen kann.
     
     > [!NOTE]
     >  In Exchange 2007, Exchange 2010 und Exchange 2013 sollten Sie auch  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` auf `Null` festlegen. 
   
-    Office 365 wird ein CNAME-Eintrag für die Implementierung des AutoErmittlungsdiensts für Outlook und mobile Clients verwendet. Der CNAME-Eintrag für die AutoErmittlung muss folgende Informationen enthalten:
+    Microsoft 365 verwendet einen CNAME-Eintrag, um den AutoErmittlungsdienst für Outlook und Mobile Clients zu implementieren. Der CNAME-Eintrag für die AutoErmittlung muss folgende Informationen enthalten:
     
   - **Alias:** autodiscover
     
   - **Ziel:** autodiscover.outlook.com
     
-    Weitere Informationen finden Sie unter [Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten](https://go.microsoft.com/fwlink/p/?LinkId=535028).
+    Weitere Informationen finden Sie unter [Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](https://go.microsoft.com/fwlink/p/?LinkId=535028).
     
-- **Außerbetriebsetzung der lokalen Exchange Server.** Nachdem Sie sichergestellt haben, dass alle E-Mails direkt an die Office 365-Postfächer weitergeleitet werden, und Sie nicht mehr Ihre lokale E-Mail-Organisation verwalten müssen bzw. keine Implementierung einer Lösung für einmaliges Anmelden (SSO) planen, können Sie Exchange von Ihren Servern deinstallieren und Ihre lokale Exchange-Organisation entfernen.
+- **Nehmen Sie lokale Exchange-Server außer Betrieb.** Nachdem Sie sichergestellt haben, dass alle e-Mails direkt an die Microsoft 365-Postfächer weitergeleitet werden und Sie Ihre lokale e-Mail-Organisation nicht mehr warten müssen oder nicht die Implementierung einer Lösung für einmaliges Anmelden (Single Sign-on, SSO) planen möchten, können Sie Exchange von ihren Servern deinstallieren und Ihre lokale Exchange-Organisation entfernen.
     
     Weitere Informationen erhalten Sie unter den folgenden Themen:
     

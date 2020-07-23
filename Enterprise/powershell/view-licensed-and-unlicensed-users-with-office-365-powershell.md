@@ -1,9 +1,9 @@
 ---
-title: Anzeigen lizenzierter und nicht lizenzierter Benutzer mit Office 365 PowerShell
+title: Anzeigen von lizenzierten und nicht lizenzierten Microsoft 365-Benutzern mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/18/2019
+ms.date: 07/21/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,21 +18,23 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: e4ee53ed-ed36-4993-89f4-5bec11031435
-description: Erläutert das Verwenden von Office 365 PowerShell zum Anzeigen von lizenzierten und nicht lizenzierten Benutzerkonten.
-ms.openlocfilehash: f8a00ad11ba7bbd93c809dc130cf588420c2d81c
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Erläutert die Verwendung von PowerShell zum Anzeigen von lizenzierten und nicht lizenzierten Microsoft 365-Benutzerkonten.
+ms.openlocfilehash: 02b1f76bab0e64e4e7e72f5e5556f5047d956d11
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004178"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230251"
 ---
-# <a name="view-licensed-and-unlicensed-users-with-office-365-powershell"></a>Anzeigen lizenzierter und nicht lizenzierter Benutzer mit Office 365 PowerShell
+# <a name="view-licensed-and-unlicensed-microsoft-365-users-with-powershell"></a>Anzeigen von lizenzierten und nicht lizenzierten Microsoft 365-Benutzern mit PowerShell
 
-Benutzerkonten in Ihrer Office 365-Organisation sind möglicherweise einige, alle oder keine der verfügbaren Lizenzen aus den Lizenzierungsplänen zugewiesen, die in Ihrer Organisation verfügbar sind. Mit Office 365 PowerShell können Sie lizenzierte und nicht lizenzierte Benutzer in Ihrer Organisation schnell finden.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+
+Benutzerkonten in Ihrer Microsoft 365-Organisation haben möglicherweise einige, alle oder keine der verfügbaren Lizenzen, die Ihnen aus den in Ihrer Organisation verfügbaren Lizenzierungs Plänen zugewiesen sind. Sie können PowerShell für Microsoft 365 verwenden, um die lizenzierten und nicht lizenzierten Benutzer in Ihrer Organisation schnell zu finden.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
 Führen Sie den folgenden Befehl aus, um die Liste aller Benutzerkonten in Ihrer Organisation anzuzeigen, denen keine Ihrer Lizenzierungs Pläne zugewiesen wurden (nicht lizenzierte Benutzer):
   
@@ -47,14 +49,14 @@ Get-AzureAdUser | ForEach { $licensed=$False ; For ($i=0; $i -le ($_.AssignedLic
 ```
 
 >[!Note]
->Wenn Sie alle Benutzer in Ihrem Abonnement auflisten möchten, `Get-AzureAdUser -All $true` verwenden Sie den Befehl.
+>Wenn Sie alle Benutzer in Ihrem Abonnement auflisten möchten, verwenden Sie den `Get-AzureAdUser -All $true` Befehl.
 >
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
-Führen Sie den folgenden Befehl in Office 365 PowerShell aus, um die Liste aller Benutzerkonten mit ihrem Lizenzierungsstatus in Ihrer Organisation anzuzeigen:
+Um die Liste aller Benutzerkonten und deren Lizenzierungsstatus in Ihrer Organisation anzuzeigen, führen Sie den folgenden Befehl in PowerShell aus:
   
 ```powershell
 Get-MsolUser -All
@@ -78,8 +80,8 @@ Get-MsolUser -All | where {$_.isLicensed -eq $true}
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Benutzerkonten, Lizenzen und Gruppen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)

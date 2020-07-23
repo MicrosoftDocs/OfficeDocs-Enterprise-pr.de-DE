@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie den Start Ihres Portals in SharePoint Online planen und welche Schritte Sie für einen erfolgreichen Start ausführen können.
-ms.openlocfilehash: c6f1ef0817534fe2e643492e882fe8f61c3a01dc
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+ms.openlocfilehash: 4edd1bc9c2001912a8ebb77e467f9663474ecb66
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004108"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230171"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>Planen des Rollout Plans für den Portal Start in SharePoint Online
 
@@ -35,14 +35,14 @@ Um bei der Erstellung eines erfolgreichen Portals zu helfen, befolgten Sie die G
 Der Bereitstellungsansatz ist unten hervorgehoben.
 
 ## <a name="overview-of-capacity-planning-in-sharepoint-online"></a>Übersicht über die Kapazitätsplanung in SharePoint Online
-Um die Kapazität effizient zu nutzen und unerwartetes Wachstum zu bewältigen, gibt es in jeder Farm Automatisierung, die bestimmte Nutzungsszenarien verfolgt. Während das exakte Wachstum für einen beliebigen Mandanten in einer Farm unvorhersehbar ist, ist die aggregierte Summe von Anforderungen im Laufe der Zeit vorhersehbar. Durch die Ermittlung der Wachstumstrends in SharePoint Online können wir die zukünftige Expansion planen. Weitere Informationen zur [Kapazitätsplanung und zu Auslastungstests SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online).
+Um die Kapazität effizient zu nutzen und unerwartetes Wachstum zu bewältigen, gibt es in jeder Farm Automatisierung, die bestimmte Nutzungsszenarien verfolgt. Während das exakte Wachstum für einen beliebigen Mandanten in einer Farm unvorhersehbar ist, ist die aggregierte Summe von Anforderungen im Laufe der Zeit vorhersehbar. Durch die Ermittlung der Wachstumstrends in SharePoint Online können wir die zukünftige Expansion planen. Weitere Informationen zur [Kapazitätsplanung und zu Auslastungstests SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md).
 
 Ein wichtiger Bestandteileines erfolgreichen Starts ist der unten aufgeführte "Wave"-oder "Phased-Rollout"-Ansatz. 
 
 ## <a name="can-i-load-test-sharepoint-online"></a>Kann ich Test SharePoint Online Laden?
 SharePoint Online ist eine gemeinsam genutzte Umgebung mit mehreren Mandanten, die über mehrere Farmen hinweg ausgeglichen ist und die Skalierung laufend angepasst wird. Auslastungstests einer Umgebung wie SharePoint Online, deren Skalierungsänderungen nicht nur unerwartete Ergebnisse liefern, sondern auch nicht zulässig sind. 
 
-Weitere Informationen: [Kapazitätsplanung und Auslastungstests SharePoint Online](https://docs.microsoft.com/office365/enterprise/capacity-planning-and-load-testing-sharepoint-online)
+Weitere Informationen: [Kapazitätsplanung und Auslastungstests SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
 ## <a name="optimize-pages-by-following-recommended-guidelines"></a>Optimieren von Seiten mit den empfohlenen Richtlinien
 Seiten aus einer lokalen Bereitstellung sollten nicht einfach so verschoben werden, wie Sie auf SharePoint Online sind, ohne Sie anhand der empfohlenen Richtlinien für SharePoint Online zu überprüfen. Der beste Ansatz besteht darin, jede Startseite für jede Website oder jedes Portal in SharePoint immer zu optimieren, da auf diese Weise die meisten Benutzer in Ihrer Organisation als Ausgangspunkt für Ihre Website (en) zugreifen können.

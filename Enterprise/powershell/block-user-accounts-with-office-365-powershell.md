@@ -1,9 +1,9 @@
 ---
-title: Blockieren von Benutzerkonten mit Office 365 PowerShell
+title: Blockieren von Microsoft 365-Benutzerkonten mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/16/2019
+ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,21 +17,23 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
-description: Erläutert die Verwendung Office 365 PowerShell zum Blockieren und Aufheben der Blockierung des Zugriffs auf Office 365 Konten.
-ms.openlocfilehash: 5633c35feee67ede65c4fffa8bc55276c3b979b8
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: Erläutert die Verwendung von PowerShell zum Blockieren und Aufheben der Blockierung des Zugriffs auf Microsoft 365-Konten.
+ms.openlocfilehash: c18c0248c51096ab089b16b2e9e31eb0929de443
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004728"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230891"
 ---
-# <a name="block-user-accounts-with-office-365-powershell"></a>Blockieren von Benutzerkonten mit Office 365 PowerShell
+# <a name="block-microsoft-365-user-accounts-with-powershell"></a>Blockieren von Microsoft 365-Benutzerkonten mit PowerShell
 
-Wenn Sie den Zugriff auf ein Office 365 Konto sperren, wird verhindert, dass sich jemand mit dem Konto anmeldet und auf die Dienste und Daten in Ihrer Office 365 Organisation zugreift. Sie können Office 365 PowerShell verwenden, um den Zugriff auf einzelne und mehrere Benutzerkonten zu blockieren.
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+
+Durch das Blockieren des Zugriffs auf ein Microsoft 365-Konto wird verhindert, dass sich Benutzer mit dem Konto anmelden und auf die Dienste und Daten in Ihrer Microsoft 365-Organisation zugreifen. Sie können PowerShell verwenden, um den Zugriff auf einzelne und mehrere Benutzerkonten zu blockieren.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-office-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
  
 ### <a name="block-access-to-individual-user-accounts"></a>Blockieren des Zugriffs auf einzelne Benutzerkonten
 
@@ -95,7 +97,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-In den folgenden Befehlen lautet die Beispieltextdatei C:\My documents\accounts.txt Ersetzen Sie dies durch den Pfad und den Dateinamen Ihrer Textdatei.
+In den folgenden Befehlen lautet die Beispieltextdatei C:\My Documents\Accounts.txt. Ersetzen Sie dies durch den Pfad und den Dateinamen Ihrer Textdatei.
   
 Um den Zugriff auf die in der Textdatei aufgelisteten Konten zu blockieren, führen Sie den folgenden Befehl aus:
     
@@ -111,7 +113,7 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Verbinden Sie sich zuerst [mit Ihrem Office 365-Mandanten](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Stellen Sie zunächst [eine Verbindung mit Ihrem Microsoft 365-Mandanten her](connect-to-office-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 ### <a name="block-access-to-individual-user-accounts"></a>Blockieren des Zugriffs auf einzelne Benutzerkonten
 
@@ -153,7 +155,7 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-In den folgenden Befehlen lautet die Beispieltextdatei C:\My documents\accounts.txt Ersetzen Sie dies durch den Pfad und den Dateinamen Ihrer Textdatei.
+In den folgenden Befehlen lautet die Beispieltextdatei C:\My Documents\Accounts.txt. Ersetzen Sie dies durch den Pfad und den Dateinamen Ihrer Textdatei.
     
 Um den Zugriff auf die in der Textdatei aufgelisteten Konten zu blockieren, führen Sie den folgenden Befehl aus:
     
@@ -168,8 +170,8 @@ Um den Zugriff auf die in der Textdatei aufgelisteten Konten wieder freizugeben,
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Benutzerkonten, Lizenzen und Gruppen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+[Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
   
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)

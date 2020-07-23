@@ -7,7 +7,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,18 +19,18 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 81190961-5454-4a5c-8b0e-6ae75b9fb035
 description: 'Zusammenfassung: Informationen zum Konfigurieren eines standortübergreifenden virtuellen Azure-Netzwerks für Office-Serverarbeitslasten mit einer Standort-zu-Standort-VPN-Verbindung.'
-ms.openlocfilehash: 4ff34795c4141c686523a9ae79b2052d8eb27140
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+ms.openlocfilehash: 9601d746a542c452db2abfee82d9bb98121858fd
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840652"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230071"
 ---
 # <a name="connect-an-on-premises-network-to-a-microsoft-azure-virtual-network"></a>Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk
 
 Ein standortübergreifendes virtuelles Azure-Netzwerk ist mit Ihrem lokalen Netzwerk verbunden, sodass Ihr Netzwerk durch Subnetze und virtuelle Computer, die in Azure-Infrastrukturdiensten gehostet werden, erweitert wird. Mit dieser Verbindung können Computer in Ihrem lokalen Netzwerk direkt auf virtuelle Computer zugreifen, und umgekehrt. 
 
-Beispiel: Ein Verzeichnissynchronisierungsserver auf einem virtuellen Azure-Computer muss Ihre lokalen Domänencontroller auf Änderungen an Konten abfragen und diese Änderungen mit Ihrem Office 365-Abonnement synchronisieren. In diesem Artikel wird gezeigt, wie Sie ein standortübergreifendes virtuelles Azure-Netzwerk mit einer Standort-zu-Standort-VPN-Verbindung einrichten, in dem virtuelle Azure-Computer gehostet werden können.
+Beispielsweise muss ein Verzeichnissynchronisierungsserver, der auf einem virtuellen Azure-Computer läuft, ihre lokalen Domänencontroller für Änderungen an Konten Abfragen und diese Änderungen mit Ihrem Microsoft 365-Abonnement synchronisieren. In diesem Artikel erfahren Sie, wie Sie ein standortübergreifendes virtuelles Azure-Netzwerk mithilfe einer VPN-Verbindung (Site-to-Site Virtual Private Network) einrichten, die zum Hosten von virtuellen Azure-Computern bereit ist.
 
 ## <a name="overview"></a>Übersicht
 
@@ -335,4 +335,4 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
 ## <a name="next-step"></a>Nächster Schritt
   
-[Bereitstellen der Office 365-Verzeichnissynchronisierung in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Bereitstellen der Microsoft 365-Verzeichnissynchronisierung in Microsoft Azure](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)

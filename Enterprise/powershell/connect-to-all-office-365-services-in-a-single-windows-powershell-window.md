@@ -1,9 +1,9 @@
 ---
-title: Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster
+title: Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen Windows PowerShell Fenster
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/17/2020
+ms.date: 07/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,31 +17,31 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: 'Zusammenfassung: Verbinden Sie Windows PowerShell mit allen Office 365 Diensten in einem einzelnen Windows PowerShell Fenster.'
-ms.openlocfilehash: 47fd2be814b446cf12b136e359cdadc9374a7ab6
-ms.sourcegitcommit: dce58576a61f2c8efba98657b3f6e277a12a3a7a
+description: 'Zusammenfassung: Verbinden Sie Windows PowerShell mit allen Microsoft 365-Diensten in einem einzelnen Windows PowerShell Fenster.'
+ms.openlocfilehash: a037de53dcbf8fed95b9b4d5f05677997135dfb3
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208806"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230841"
 ---
-# <a name="connect-to-all-office-365-services-in-a-single-windows-powershell-window"></a>Verbinden mit allen Office 365-Diensten in einem einzigen Windows PowerShell-Fenster
+# <a name="connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window"></a>Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen Windows PowerShell Fenster
 
-Wenn Sie Office 365 mithilfe von PowerShell verwalten, können bis zu fünf verschiedene Windows PowerShell Sitzungen gleichzeitig geöffnet sein, die dem Microsoft 365 Admin Center, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams und dem Security &amp; Compliance Center entsprechen. Mit fünf verschiedenen Verbindungsmethoden in separaten Windows PowerShell Sitzungen könnte Ihr Desktop wie folgt aussehen:
+Wenn Sie Microsoft 365 mithilfe von PowerShell verwalten, können bis zu fünf verschiedene Windows PowerShell Sitzungen gleichzeitig geöffnet sein, die dem Microsoft 365 Admin Center, SharePoint Online, Exchange Online, Skype for Business Online, Microsoft Teams und dem Security &amp; Compliance Center entsprechen. Mit fünf verschiedenen Verbindungsmethoden in separaten Windows PowerShell Sitzungen könnte Ihr Desktop wie folgt aussehen:
   
 ![Fünf Windows PowerShell Konsolen, die gleichzeitig gestartet werden](media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
   
-Dies ist für die Verwaltung von Office 365 nicht optimal, da Sie keine Daten zwischen diesen fünf Fenstern für die dienstübergreifende Verwaltung austauschen können. In diesem Thema wird beschrieben, wie Sie eine einzelne Instanz von Windows PowerShell verwenden, aus der Sie Office 365, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams und dem Security &amp; Compliance Center verwalten können.
+Dies ist nicht optimal für die Verwaltung von Microsoft 365, da Sie keine Daten zwischen diesen fünf Fenstern für die dienstübergreifende Verwaltung austauschen können. In diesem Thema wird beschrieben, wie Sie eine einzelne Instanz von Windows PowerShell verwenden, aus der Sie Microsoft 365-Konten, Skype for Business Online, Exchange Online, SharePoint Online, Microsoft Teams und dem Security &amp; Compliance Center verwalten können.
 
 >[!Note]
->Dieser Artikel enthält derzeit nur die Befehle zum Herstellen einer Verbindung mit der Office 365 Worldwide (+ gcc)-Cloud. Zusätzliche Hinweise bieten Links zu Artikeln mit Informationen zum Herstellen einer Verbindung mit anderen Office 365 Clouds.
+>Dieser Artikel enthält derzeit nur die Befehle zum Herstellen einer Verbindung mit der weltweiten (+ gcc) Cloud. Zusätzliche Hinweise bieten Links zu Artikeln mit Informationen zum Herstellen einer Verbindung mit den anderen Microsoft 365-Clouds.
 >
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
-Bevor Sie alle Office 365 aus einer einzigen Instanz von Windows PowerShell verwalten können, sollten Sie die folgenden Voraussetzungen erfüllen:
+Bevor Sie alle Microsoft 365 von einer einzigen Instanz von Windows PowerShell aus verwalten können, sollten Sie die folgenden Voraussetzungen erfüllen:
   
-- Das Office 365 Arbeits-oder Schulkonto, das Sie für diese Verfahren verwenden, muss Mitglied einer Office 365 Administratorrolle sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532367). Dies ist eine Voraussetzung für Office 365 PowerShell, nicht notwendigerweise für alle anderen Office 365 Dienste.
+- Das Microsoft 365-Arbeits-oder Schulkonto, das Sie für diese Verfahren verwenden, muss Mitglied einer Microsoft 365-Administratorrolle sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide). Dies ist eine Voraussetzung für PowerShell für Microsoft 365, nicht unbedingt für alle anderen Microsoft 365-Dienste.
     
 - Sie können folgende 64-Bit-Versionen von Windows verwenden:
     
@@ -61,13 +61,13 @@ Bevor Sie alle Office 365 aus einer einzigen Instanz von Windows PowerShell verw
     
     \*Sie müssen die Microsoft .NET Framework 4.5 installieren. *x* und dann entweder Windows Management Framework 3,0 oder Windows Management Framework 4,0. Weitere Informationen finden Sie unter [Installing the .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) and [Windows Management Framework 3,0](https://go.microsoft.com/fwlink/p/?LinkId=272757) oder [Windows Management Framework 4,0](https://go.microsoft.com/fwlink/p/?LinkId=391344).
     
-    Sie müssen eine 64-Bit-Version von Windows aufgrund der Anforderungen für das Skype for Business Online Modul und eines der Office 365 Module verwenden.
+    Sie müssen eine 64-Bit-Version von Windows aufgrund der Anforderungen für das Skype for Business Online Modul und eines der Microsoft 365-Module verwenden.
     
 - Sie müssen die Module installieren, die für Azure Active Directory (Azure AD), Exchange Online, SharePoint Online, Skype for Business Online und Microsoft Teams erforderlich sind:
     
    - [Azure Active Directory v2](connect-to-office-365-powershell.md##connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management-Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [Skype for Business Online, Windows PowerShell Modul](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [Skype for Business Online, Windows PowerShell-Modul](https://go.microsoft.com/fwlink/p/?LinkId=532439)
    - [Exchange Online PowerShell v2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Übersicht über Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
@@ -77,13 +77,13 @@ Bevor Sie alle Office 365 aus einer einzigen Instanz von Windows PowerShell verw
   Set-ExecutionPolicy RemoteSigned
   ```
 
-## <a name="connection-steps-when-using-a-password"></a>Verbindungs Schritte bei Verwendung eines Kennworts
+## <a name="connection-steps-when-using-just-a-password"></a>Verbindungs Schritte bei Verwendung von nur einem Kennwort
 
-Hier finden Sie die Schritte zum Herstellen einer Verbindung mit allen Diensten in einem einzigen PowerShell-Fenster.
+Hier finden Sie die Schritte zum Herstellen einer Verbindung mit allen Diensten in einem einzigen PowerShell-Fenster, wenn Sie nur ein Kennwort für die Anmeldung verwenden.
   
 1. Öffnen Sie Windows PowerShell.
     
-2. Führen Sie diesen Befehl aus, und geben Sie die Anmeldeinformationen für Office 365 work oder School Account ein.
+2. Führen Sie diesen Befehl aus, und geben Sie Ihre Microsoft 365-Kontoanmeldeinformationen ein.
     
   ```powershell
   $credential = Get-Credential
@@ -105,11 +105,11 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit allen Diensten 
 >PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
 >
 
-4. Führen Sie diese Befehle aus, um eine Verbindung mit SharePoint Online herzustellen. Ersetzen Sie _ \< domainhost>_ durch den tatsächlichen Wert für Ihre Domäne. Für "litwareinc.onmicrosoft.com" ist beispielsweise der _ \< domainhost->_ Wert "litwareinc".
+4. Führen Sie diese Befehle aus, um eine Verbindung mit SharePoint Online herzustellen. Geben Sie den Namen der Organisation für Ihre Domäne an. Für "litwareinc.onmicrosoft.com" lautet der Wert der Organisationsbezeichnung beispielsweise "litwareinc".
     
   ```powershell
-  Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
-  Connect-SPOService -Url https://<domainhost>-admin.sharepoint.com -credential $credential
+  $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+  Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
   ```
 
 5. Führen Sie diese Befehle aus, um eine Verbindung mit Skype for Business Online herzustellen. Eine Warnung zur Erhöhung des `WSMan NetworkDelayms` Werts wird erwartet, wenn Sie das erste Mal eine Verbindung herstellen und ignoriert werden.
@@ -127,7 +127,7 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit allen Diensten 
   ```
 
 >[!Note]
->Verwenden Sie den **-ExchangeEnvironmentName-** Parameter, um eine Verbindung mit Exchange Online für Office 365 andere Clouds als weltweit herzustellen. Weitere Informationen finden Sie unter [Connect-ExchangeOnline](https://docs.microsoft.com/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps) .
+>Verwenden Sie den **-ExchangeEnvironmentName-** Parameter, um eine Verbindung mit Exchange Online für Microsoft 365-Clouds mit Ausnahme von weltweit herzustellen. Weitere Informationen finden Sie unter [Connect-ExchangeOnline](https://docs.microsoft.com/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps) .
 >
 
 7. Führen Sie diese Befehle aus, um eine Verbindung mit PowerShell-Teams herzustellen.
@@ -149,7 +149,7 @@ Hier finden Sie die Schritte zum Herstellen einer Verbindung mit allen Diensten 
   ```
 
 >[!Note]
->Informationen zum Herstellen einer Verbindung mit dem Security &amp; Compliance Center für Office 365 andere Clouds als weltweit finden Sie unter [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+>Informationen zum Herstellen einer Verbindung mit dem Security &amp; Compliance Center für Microsoft 365-Clouds, die nicht auf der ganzen Welt liegen, finden Sie unter [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 >
 
 Im folgenden finden Sie alle Befehle in einem einzigen Block, wenn Sie das Modul Azure Active Directory PowerShell for Graph verwenden. Geben Sie den Namen Ihres Domänenhosts an, und führen Sie alle Befehle gleichzeitig aus.
@@ -234,11 +234,11 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-Informationen zum Security &amp; Compliance Center finden Sie unter [Verbinden mit Office 365 Security & Compliance Center PowerShell mithilfe der mehr](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) stufigen Authentifizierung zum Herstellen einer Verbindung mit mehrstufiger Authentifizierung:
+Informationen zum Security &amp; Compliance Center finden Sie unter [Connect to Security & Compliance Center PowerShell mit mehr](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) stufiger Authentifizierung zum Herstellen einer Verbindung mit mehrstufiger Authentifizierung:
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
-- [Verbinden mit Office 365 PowerShell](connect-to-office-365-powershell.md)
-- [Verwalten von SharePoint Online mit Office 365 PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
-- [Verwalten von Benutzerkonten, Lizenzen und Gruppen mit Office 365 PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Verwenden der Windows PowerShell zum Erstellen von Berichten in Office 365](use-windows-powershell-to-create-reports-in-office-365.md)
+- [Herstellen einer Verbindung mit Microsoft 365 mit PowerShell](connect-to-office-365-powershell.md)
+- [Verwalten von SharePoint Online mit PowerShell](manage-sharepoint-online-with-office-365-powershell.md)
+- [Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Verwenden Windows PowerShell zum Erstellen von Berichten in Microsoft 365](use-windows-powershell-to-create-reports-in-office-365.md)

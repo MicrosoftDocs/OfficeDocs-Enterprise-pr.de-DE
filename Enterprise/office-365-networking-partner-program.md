@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Netzwerk Partner Programm
+title: Office 365 Networking-Partnerprogram
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Das Microsoft 365-Netzwerk Partner Programm ermöglicht, dass Ihr Gerät zertifiziert wird, wenn Sie mit Microsoft 365 arbeiten.
 hideEdit: true
-ms.openlocfilehash: 64e04bb1f9e4ebb5d39c34c128b544f65ef5147e
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+ms.openlocfilehash: c43f110883cfb5ca150a702253a41e84f9e1ab0f
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052498"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230191"
 ---
-# <a name="microsoft-365-networking-partner-program"></a>Microsoft 365-Netzwerk Partner Programm
+# <a name="microsoft-365-networking-partner-program"></a>Office 365 Networking-Partnerprogram
 
 Die Netzwerkkonnektivität hat direkten Einfluss auf die Fähigkeit Ihrer Benutzer, schnell zu arbeiten, effektiv zusammenzuarbeiten und Geschäftsprozesse mit Microsoft 365 zu rationalisieren. Für Kunden in jeder Phase ihrer digitalen Transformation ist Netzwerkentwurf ein wichtiger Aspekt, der proaktiv behandelt werden sollte, bevor Probleme sich negativ auf die Benutzeroberfläche auswirken.
 

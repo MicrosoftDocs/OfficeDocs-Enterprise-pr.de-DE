@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
-description: Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
-ms.openlocfilehash: 56115e366d8f9b0bf7b4b893801ebca5d216c570
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Express Route für Office 365 bietet Layer 3-Konnektivität zwischen Ihrem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
+ms.openlocfilehash: f147003491b2186a05edbaf73acc86e60dbe3110
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998530"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230881"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Netzwerkplanung mit ExpressRoute für Office 365
 
 *Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
 
-Express Route für Office 365 bietet eine Schicht 3-Konnektivität zwischen dem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
+Express Route für Office 365 bietet Layer 3-Konnektivität zwischen Ihrem Netzwerk und den Rechenzentren von Microsoft. Die Schaltkreise verwenden BGP (Border Gateway Protocol)-Routenankündigungen von Office 365-Front-End-Servern. Wenn Sie den richtigen TCP/IP-Pfad für Office 365 auswählen müssen, wird Azure Express Route aus Sicht Ihrer lokalen Geräte als Alternative zum Internet betrachtet.
   
 Azure Express Route fügt einen direkten Pfad zu einer bestimmten Gruppe unterstützter Features und Dienste hinzu, die von Office 365 Servern in den Microsoft-Rechenzentren angeboten werden. Azure Express Route ersetzt keine Internetkonnektivität mit Microsoft-Rechenzentren oder grundlegenden Internetdiensten wie der Auflösung von Domänennamen. Azure Express Route und Ihre Internet Schaltungen sollten gesichert und redundant sein.
   
@@ -37,7 +37,7 @@ In der folgenden Tabelle werden einige Unterschiede zwischen den Internet-und Az
 
 |**Unterschiede bei der Netzwerkplanung**|**Internet Netzwerkverbindung**|**Express Route-Netzwerkverbindung**|
 |:-----|:-----|:-----|
-| Zugriff auf erforderliche Internetdienste, einschließlich;  <br/>  DNS-Namensauflösung  <br/>  Überprüfung der Zertifikatsperrung  <br/>  Netzwerke für die Inhaltsübermittlung  <br/> |Ja  <br/> |Anforderungen an die in Microsoft Besitz befindliche DNS-und/oder CDN-Infrastruktur verwenden möglicherweise das Express Route-Netzwerk.  <br/> |
+| Zugriff auf erforderliche Internetdienste, einschließlich;  <br/>  DNS-Namensauflösung  <br/>  Überprüfung der Zertifikatsperrung  <br/>  Netzwerke für die Inhaltsübermittlung (CDNs)  <br/> |Ja  <br/> |Anforderungen an die in Microsoft Besitz befindliche DNS-und/oder CDN-Infrastruktur verwenden möglicherweise das Express Route-Netzwerk.  <br/> |
 | Zugriff auf Office 365 Dienste, einschließlich;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office in einem Browser  <br/>  Office 365 Portal und Authentifizierung  <br/> |Ja, alle Anwendungen und Funktionen  <br/> |Ja, [bestimmte Anwendungen und Features](https://aka.ms/o365endpoints) <br/> |
 |Lokale Sicherheit im Umkreis.  <br/> |Ja  <br/> |Ja  <br/> |
 |Planung für hohe Verfügbarkeit.  <br/> |Failover auf eine Alternative Internetnetzwerkverbindung  <br/> |Failover auf eine Alternative Express Route-Verbindung  <br/> |
@@ -204,7 +204,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/plan
   
 [Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
   
-[Verwenden von BGP-Communities in Express Route für Office 365 Szenarien (Vorschau)](bgp-communities-in-expressroute.md)
+[Verwenden von BGP-Communities in Express Route für Office 365 Szenarien](bgp-communities-in-expressroute.md)
   
 [Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
   
@@ -218,7 +218,7 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/plan
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
-[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
   

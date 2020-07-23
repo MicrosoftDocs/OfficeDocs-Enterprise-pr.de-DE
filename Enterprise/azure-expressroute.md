@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Erfahren Sie, wie Azure Express Route mit Office 365 verwendet wird und wie das Netzwerk Implementierungsprojekt geplant wird, das erforderlich ist, wenn Sie Azure Express Route für die Verwendung mit Office 365 bereitstellen.
-ms.openlocfilehash: 80b42fc43f395d9dd94384d456d40eb536541746
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 698b8a3ed73bdd96870e017d02f3ac106ae72081
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997949"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230031"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute für Office 365
 
@@ -64,9 +64,9 @@ In der folgenden Tabelle sind die Office 365 Dienste aufgeführt, die über Expr
 |Exchange Online<sup>1</sup> <br/> Exchange Online Schutz<sup>1</sup> <br/> Eintauchen<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive für Unternehmen<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Portal und Shared<sup>1</sup> <br/> Azure Active Directory<sup>1</sup> <br/> Aad Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|Portal und Shared<sup>1</sup> <br/> Azure-Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Für jede dieser Anwendungen sind die Anforderungen an die Internetkonnektivität nicht über Express Route unterstützt, weitere Informationen finden Sie im [Artikel Office 365 Endpunkte](https://aka.ms/o365endpoints) .
+<sup>1</sup> für jede dieser Anwendungen sind Internet Verbindungsanforderungen nicht unterstützt über Express Route, weitere Informationen finden Sie im [Artikel Office 365 Endpunkte](https://aka.ms/o365endpoints) .
 
 Die Dienste, die für Office 365 nicht in Express Route enthalten sind, sind Microsoft 365-Apps für Enterprise-Clientdownloads, die lokale Identitätsanbieter Anmeldung und Office 365 (betrieben von 21 vianet) in China.
 
@@ -90,7 +90,7 @@ Die Implementierung von Express Route erfordert die Einbindung von Netzwerk-und 
 
 8. Implementieren Sie optional [QoS](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) , und bewerten Sie die regionale Expansion.
 
-<sup>1</sup> Wichtige Überlegungen zur Leistung. Die hier getroffenen Entscheidungen können die Wartezeit erheblich beeinträchtigen, was für Anwendungen wie Skype for Business von entscheidender Bedeutung ist.
+<sup>1</sup> wichtige Überlegungen zur Leistung. Die hier getroffenen Entscheidungen können die Wartezeit erheblich beeinträchtigen, was für Anwendungen wie Skype for Business von entscheidender Bedeutung ist.
 
 Weitere Verweise finden Sie in unserem [Routing Leit Faden](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408) zusätzlich zur [Express Route-Dokumentation](https://azure.microsoft.com/documentation/articles/expressroute-introduction/).
 
@@ -112,7 +112,7 @@ Möchten Sie sich für [Express Route für Office 365](https://aka.ms/ert)anmeld
 
 [Implementierung von ExpressRoute für Office 365](implementing-expressroute.md)
 
-[Verwenden von BGP-Communities in Express Route für Office 365 Szenarien (Vorschau)](bgp-communities-in-expressroute.md)
+[Verwenden von BGP-Communities in Express Route für Office 365 Szenarien](bgp-communities-in-expressroute.md)
 
 [Medienqualität und Netzwerkverbindungsleistung in Skype for Business Online](https://support.office.com/article/5fe3e01b-34cf-44e0-b897-b0b2a83f0917)
 
@@ -120,7 +120,7 @@ Möchten Sie sich für [Express Route für Office 365](https://aka.ms/ert)anmeld
 
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
 
-[URLs und IP-Adressbereiche für Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+[URLs und IP-Adressbereiche für Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)
 

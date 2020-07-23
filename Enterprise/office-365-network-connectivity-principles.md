@@ -16,12 +16,12 @@ ms.assetid: 76e7f232-917a-4b13-8fe2-4f8dbccfe041
 f1.keywords:
 - NOCSH
 description: Bevor Sie mit der Planung Ihres Netzwerks für die Office 365-Netzwerkkonnektivität beginnen, ist es wichtig, dass Sie sich mit den Prinzipien von Verbindungen für die sichere Verwaltung von Office 365-Datenverkehr und optimaler Leistung vertraut machen. Dieser Artikel hilft Ihnen, die neuesten Hinweise für die sichere Optimierung der Office 365-Netzwerkkonnektivität zu verstehen.
-ms.openlocfilehash: 29cfd5725d4c80f30146abcd921c37305c30b17d
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 83743bfcb7a2bd3ba137947b7eb65d159d039b25
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998664"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230291"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Prinzipien von Microsoft 365-Netzwerkverbindungen
 
@@ -46,9 +46,9 @@ In diesem Artikel werden die folgenden Themen behandelt:
 ## <a name="microsoft-365-architecture"></a>Microsoft 365-Architektur
 <a name="BKMK_Architecture"> </a>
 
-Microsoft 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe einer Vielzahl von Mikro Diensten und Anwendungen bereitstellt, wie Exchange Online, SharePoint Online, Skype for Business Online, Microsoft Teams, Exchange Online Schutz, Office in einem Browser und viele andere. Während bestimmte Microsoft 365-Anwendungen möglicherweise Ihre einzigartigen Features für das Kundennetzwerk und die Konnektivität zur Cloud aufweisen, teilen Sie einige wichtige Prinzipale, Ziele und Architekturmuster. Diese Prinzipien und Architekturmuster für die Konnektivität sind typisch für viele andere SaaS-Clouds und unterscheiden sich gleichzeitig von den typischen Bereitstellungsmodellen von Platform-as-a-Service- und Infrastructure-as-a-Service-Clouds wie Microsoft Azure.
+Microsoft 365 ist eine verteilte Software-as-a-Service-Cloud (SaaS), die Produktivitäts-und Zusammenarbeitsszenarien mithilfe einer Vielzahl von Mikro Diensten und Anwendungen bereitstellt, wie Exchange Online, SharePoint Online, Skype for Business Online, Microsoft Teams, Exchange Online Schutz, Office in einem Browser und viele andere. Während bestimmte Microsoft 365-Anwendungen möglicherweise Ihre einzigartigen Features für das Kundennetzwerk und die Konnektivität zur Cloud aufweisen, teilen Sie einige wichtige Prinzipale, Ziele und Architekturmuster. Diese Grundsätze und Architekturmuster für die Konnektivität sind für viele andere Saas-Clouds typisch und unterscheiden sich gleichzeitig von den typischen Bereitstellungsmodellen von Platt Form-as-a-Service-und Infrastruktur-as-a-Service-Clouds wie Microsoft Azure.
   
-Eines der bedeutendsten architektonischen Features von Microsoft 365 (das häufig von Netzwerk Planern vermisst oder falsch interpretiert wird) besteht darin, dass es sich um einen wahrhaft globalen verteilten Dienst im Kontext der Verbindung von Benutzern handelt. Der Speicherort des Ziel-Microsoft 365-Mandanten ist wichtig, um die Lokalität zu verstehen, in der Kundendaten in der Cloud gespeichert sind, aber die Benutzererfahrung mit Microsoft 365 erfordert keine direkte Verbindung mit Datenträgern, die die Daten enthalten. Die Benutzererfahrung mit Microsoft 365 (einschließlich Leistung, Zuverlässigkeit und anderen wichtigen Qualitätsmerkmalen) umfasst die Konnektivität über eine hoch verteilte Dienst Front, die über Hunderte von Microsoft-Standorten weltweit skaliert wird. In den meisten Fällen wird die beste Benutzererfahrung erzielt, indem das Kundennetzwerk Benutzeranforderungen an den nächstgelegenen Microsoft 365-Dienst Einstiegspunkt weiterleiten kann, anstatt eine Verbindung mit Microsoft 365 über einen Ausgangspunkt an einem zentralen Standort oder einer Region herzustellen.
+Eines der bedeutendsten architektonischen Features von Microsoft 365 (das häufig von Netzwerkarchitekten vermisst oder falsch interpretiert wird) besteht darin, dass es sich um einen wahrhaft globalen verteilten Dienst im Kontext der Verbindung von Benutzern handelt. Der Speicherort des Ziel-Microsoft 365-Mandanten ist wichtig, um die Lokalität zu verstehen, in der Kundendaten in der Cloud gespeichert sind, aber die Benutzererfahrung mit Microsoft 365 erfordert keine direkte Verbindung mit Datenträgern, die die Daten enthalten. Die Benutzererfahrung mit Microsoft 365 (einschließlich Leistung, Zuverlässigkeit und anderen wichtigen Qualitätsmerkmalen) umfasst die Konnektivität über hoch verteilte Dienst-Fronttüren, die über Hunderte von Microsoft-Standorten weltweit skaliert werden. In den meisten Fällen wird die beste Benutzererfahrung erzielt, indem das Kundennetzwerk Benutzeranforderungen an den nächstgelegenen Microsoft 365-Dienst Einstiegspunkt weiterleiten kann, anstatt eine Verbindung mit Microsoft 365 über einen Ausgangspunkt an einem zentralen Standort oder einer Region herzustellen.
   
 Für die meisten Kunden werden Microsoft 365-Benutzer über viele Standorte verteilt. Um die besten Ergebnisse zu erzielen, sollten die in diesem Dokument dargelegten Prinzipien in der Ansicht horizontal skalieren (nicht horizontal) untersucht werden, wobei der Schwerpunkt auf der Optimierung der Konnektivität mit dem nächstgelegenen Punkt der Anwesenheit im globalen Microsoft-Netzwerk liegt, und nicht auf dem geographischen Standort des Microsoft 365-Mandanten. Im Wesentlichen bedeutet dies, dass, obwohl Microsoft 365-Mandantendaten möglicherweise an einem bestimmten geografischen Standort gespeichert werden, die Microsoft 365-Erfahrung für diesen Mandanten verbreitet bleibt und in sehr enger (Netzwerk-) Nähe zu jedem Endbenutzer Standort vorhanden sein kann, der vom Mandanten verwendet wird.
   
@@ -66,7 +66,7 @@ Das Hauptziel des Netzwerkdesigns sollte sein, die Latenz zu minimieren, indem d
   
 Das Identifizieren von Microsoft 365-Netzwerkdatenverkehr ist der erste Schritt in der Lage, diesen Datenverkehr von einem generischen, vom Internet gebundenen Netzwerkdatenverkehr zu unterscheiden. Die Microsoft 365-Konnektivität kann durch Implementierung einer Kombination von Ansätzen wie Netzwerkrouten Optimierung, Firewallregeln, Browser Proxyeinstellungen und Umgehung von Netzwerk Inspektionsgeräten für bestimmte Endpunkte optimiert werden.
   
-Frühere Microsoft 365-Optimierungs Anleitungen haben Microsoft 365-Endpunkte in zwei Kategorien unterteilt, **erforderlich** und **optional**. Da Endpunkte zur Unterstützung neuer Microsoft 365-Dienste und-Features hinzugefügt wurden, haben wir Microsoft 365-Endpunkte in drei Kategorien umstrukturiert: **optimize**, **Allow** und **default**. Richtlinien für jede Kategorie gelten für alle Endpunkte in der Kategorie, wodurch Optimierungen einfacher zu verstehen und zu implementieren sind.
+Frühere Microsoft 365-Optimierungs Anleitungen haben Microsoft 365-Endpunkte in zwei Kategorien unterteilt, **erforderlich** und **optional**. Da Endpunkte zur Unterstützung neuer Microsoft 365-Dienste und-Features hinzugefügt wurden, haben wir Microsoft 365-Endpunkte in drei Kategorien umstrukturiert: **optimize**, **Allow**und **default**. Richtlinien für jede Kategorie gelten für alle Endpunkte in der Kategorie, wodurch Optimierungen einfacher zu verstehen und zu implementieren sind.
   
 Weitere Informationen zu den Microsoft 365-Endpunkt Kategorien und Optimierungsmethoden finden Sie im Abschnitt [neue Office 365-Endpunkt Kategorien](office-365-network-connectivity-principles.md#BKMK_Categories) .
   
@@ -79,7 +79,7 @@ Microsoft veröffentlicht jetzt alle Microsoft 365-Endpunkte als Webdienst und b
   
 Lokale DNS-und Internet Ausstiege sind von entscheidender Bedeutung, um die Verbindungswartezeit zu verringern und sicherzustellen, dass Benutzer Verbindungen an den nächsten Einstiegspunkt für Microsoft 365-Dienste erfolgen. In einer komplexen Netzwerktopologie ist es wichtig, dass sowohl lokaler DNS- als auch lokaler Internetausgang zusammen implementiert werden. Weitere Informationen dazu, wie Microsoft 365 Clientverbindungen an den nächstgelegenen Einstiegs Ort weiterleitet, finden Sie im Artikel [Client Connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b).
   
-Vor dem Aufkommen von Cloud-Diensten wie Microsoft 365 war die Internet Anbindung von Endbenutzern als Entwurfs Faktor in der Netzwerkarchitektur relativ einfach. Wenn Internetdienste und Websites rund um den Globus verteilt sind, wird die Latenz zwischen den Ausgangspunkten des Unternehmens und einem bestimmten Zielendpunkt weitestgehend durch die geografische Entfernung bestimmt.
+Vor dem Aufkommen von Cloud-Diensten wie Microsoft 365 war die Endbenutzer-Internet Konnektivität als Entwurfs Faktor in der Netzwerkarchitektur relativ einfach. Wenn Internetdienste und Websites rund um den Globus verteilt sind, wird die Latenz zwischen den Ausgangspunkten des Unternehmens und einem bestimmten Zielendpunkt weitestgehend durch die geografische Entfernung bestimmt.
   
 Bei einer herkömmlichen Netzwerkarchitektur durchlaufen alle ausgehenden Internetverbindungen das Unternehmensnetzwerk und gehen von einem zentralen Standort aus. Angesichts ausgereifterer Cloudprodukte von Microsoft ist eine verteilte, mit dem Internet verbundene Netzwerkarchitektur für die Unterstützung latenzsensibler Clouddienste wichtig geworden. Das globale Microsoft-Netzwerk wurde so entwickelt, dass Latenzanforderungen mit der Infrastruktur verteilter Dienst-Front-Doors erfüllt werden. Dabei handelt es sich um eine dynamische Fabric globaler Einstiegspunkte, die eingehende Clouddienst-Verbindungen zum nächstgelegenen Einstiegspunkt weiterleitet. Damit soll die Länge der "letzten Meile" für Microsoft Cloud-Kunden reduziert werden, indem der Weg zwischen dem Kunden und der Cloud effektiv verkürzt wird.
   
@@ -91,11 +91,11 @@ Da Microsoft 365 im globalen Microsoft-Netzwerk ausgeführt wird, das Front-End-
   
 ![WAN-Netzwerkmodell mit regionalen Ausgangspunkten](media/4d4c07cc-a928-42b8-9a54-6c3741380a33.png)
   
-Durch die Verkürzung des Netzwerkpfads zu Microsoft 365-Einstiegspunkten auf diese Weise können die Konnektivitäts Leistung und die Endbenutzererfahrung in Microsoft 365 verbessert werden, und Sie können auch dazu beitragen, die Auswirkungen künftiger Änderungen an der Netzwerkarchitektur auf die Leistung und Zuverlässigkeit von Microsoft 365 zu verringern.
+Durch die Verkürzung des Netzwerkpfads zu Microsoft 365-Einstiegspunkten auf diese Weise können die Verbindungsleistung und die Endbenutzererfahrung in Microsoft 365 verbessert werden, und Sie können auch dazu beitragen, die Auswirkungen künftiger Änderungen an der Netzwerkarchitektur auf die Leistung und Zuverlässigkeit von Microsoft 365 zu verringern.
   
 Außerdem können DNS-Anforderungen zu Wartezeiten führen, wenn sich der antwortende DNS-Server in weiter Entfernung befindet oder ausgelastet ist. Sie können die Wartezeit bei Namensauflösungen minimieren, indem Sie lokale DNS-Server an Zweigstellen bereitstellen und sicherstellen, dass Sie so konfiguriert sind, dass DNS-Einträge entsprechend zwischengespeichert werden.
   
-Auch wenn der regionale Ausstieg für Microsoft 365 gut funktioniert, besteht das optimale Verbindungsmodell darin, dass immer ein Netzwerk Austritt am Standort des Benutzers bereitgestellt wird, unabhängig davon, ob sich dies im Unternehmensnetzwerk oder an Remotestandorten wie Home, Hotels, Cafés und Flughäfen befindet. Dieses Modell mit lokalem direkten Ausgang ist in der nachstehenden Abbildung dargestellt.
+Während regionale Ausgangspunkte für Microsoft 365 gut geeignet sind, besteht das optimale Verbindungsmodell darin, dass immer ein Netzwerk Austritt am Standort des Benutzers bereitgestellt wird, unabhängig davon, ob sich dies im Unternehmensnetzwerk oder an Remotestandorten wie Immobilien, Hotels, Cafés und Flughäfen befinden kann. Dieses Modell mit lokalem direkten Ausgang ist in der nachstehenden Abbildung dargestellt.
   
 ![Netzwerkarchitektur mit lokalem Ausgang](media/6bc636b0-1234-4ceb-a45a-aadd1044b39c.png)
   
@@ -112,22 +112,22 @@ Die Architektur mit lokalem Ausgang bietet gegenüber dem herkömmlichen Modell 
 
 ![Vermeiden von Spitzkehren](media/ee53e8af-f57b-4292-a256-4f36733b263a.png)
   
-Als allgemeine Faustregel bietet die kürzeste, direkteste Route zwischen dem Benutzer und dem nächsten Microsoft 365-Endpunkt die beste Leistung. Eine Netzwerk-Spitzkehre tritt auf, wenn WAN- oder VPN-Datenverkehr, der für ein bestimmtes Ziel bestimmt ist, zuerst zu einem anderen Zwischenstandort geleitet wird (z. B. Sicherheitsstack, Cloudzugriffs-Broker oder cloudbasiertes Web-Gateway), was zu Latenzen und einer möglichen Weiterleitung zu einem geografisch entfernten Endpunkt führt. Netzwerk-Spitzkehren können auch durch Ineffizienzen beim Routing/Peering oder durch nicht optimale (Remote-)DNS-Suchen verursacht werden.
+Als allgemeine Faustregel bietet die kürzeste, direkteste Route zwischen dem Benutzer und dem nächsten Microsoft 365-Endpunkt die beste Leistung. Eine Netzwerk-Haarnadel tritt auf, wenn der WAN-oder VPN-Datenverkehr, der für ein bestimmtes Ziel gebunden ist, zuerst an einen anderen Zwischenspeicher (beispielsweise Sicherheits Stapel, Cloud-Zugriffs Broker, Cloud-basiertes WebGateway) weitergeleitet wird und die Wartezeit und mögliche Umleitung an einen geografisch entfernten Endpunkt eingeführt wird. Netzwerk-Spitzkehren können auch durch Ineffizienzen beim Routing/Peering oder durch nicht optimale (Remote-)DNS-Suchen verursacht werden.
   
 Um sicherzustellen, dass die Microsoft 365-Konnektivität auch im lokalen Ausgangsfall keine Haarnadeln unterliegt, überprüfen Sie, ob der ISP, der zum Bereitstellen des Internets für den Benutzerstandort verwendet wird, über eine direkte Peering-Beziehung mit dem globalen Microsoft-Netzwerk in unmittelbarer Nähe zu diesem Standort verfügt. Möglicherweise möchten Sie auch das Ausgangsrouting so konfigurieren, dass ein vertrauenswürdiger Microsoft 365-Datenverkehr direkt gesendet wird, im Gegensatz zur Proxyfunktion oder zum Tunneln über einen Drittanbieter-Cloud-oder Cloud-basierten Netzwerk Sicherheitsanbieter, der Ihren Internet gebundenen Datenverkehr verarbeitet. Die lokale DNS-Namensauflösung von Microsoft 365-Endpunkten trägt dazu bei, dass neben dem direkten Routing die nächsten Einstiegspunkte von Microsoft 365 für Benutzer Verbindungen verwendet werden.
   
-Wenn Sie Cloud-basierte Netzwerk-oder Sicherheitsdienste für Ihren Microsoft 365-Datenverkehr verwenden, stellen Sie sicher, dass der hairpinning-Effekt ausgewertet wird und seine Auswirkung auf die Leistung von Microsoft 365 verstanden wird. Dazu müssen Sie die Anzahl und die Standorte von Dienstanbietern, über die der Datenverkehr weitergeleitet wird, im Verhältnis zur Anzahl Ihrer Zweigniederlassungen und den Peering-Punkten des globalen Microsoft-Netzwerks, die Qualität der Netzwerk-Peering-Beziehung des Dienstanbieters mit Ihrem Internetdienstanbieter und Microsoft sowie die Auswirkungen von Backhauling in der Infrastruktur des Dienstanbieters auf die Leistung überprüfen.
+Wenn Sie Cloud-basierte Netzwerk-oder Sicherheitsdienste für Ihren Microsoft 365-Datenverkehr verwenden, müssen Sie sicherstellen, dass das Ergebnis der Haarnadel ausgewertet wird und ihre Auswirkungen auf die Leistung von Microsoft 365 verstanden werden. Dazu müssen Sie die Anzahl und die Standorte von Dienstanbietern, über die der Datenverkehr weitergeleitet wird, im Verhältnis zur Anzahl Ihrer Zweigniederlassungen und den Peering-Punkten des globalen Microsoft-Netzwerks, die Qualität der Netzwerk-Peering-Beziehung des Dienstanbieters mit Ihrem Internetdienstanbieter und Microsoft sowie die Auswirkungen von Backhauling in der Infrastruktur des Dienstanbieters auf die Leistung überprüfen.
   
 Aufgrund der großen Anzahl verteilter Standorte mit Microsoft 365 Einstiegspunkten und ihrer Nähe zu Endbenutzern kann das Routing von Microsoft 365-Datenverkehr an ein beliebiges Drittanbieternetzwerk oder einen Sicherheitsanbieter negative Auswirkungen auf Microsoft 365-Verbindungen haben, wenn das Anbieter Netzwerk nicht für ein optimales Microsoft 365-Peering konfiguriert ist.
   
 <a name="BKMK_P4"> </a>
-### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Bewerten der Umgehung von Proxys, Geräten zur Datenverkehrsüberprüfung und doppelten Sicherheitstechnologien
+### <a name="assess-bypassing-proxies-traffic-inspection-devices-and-duplicate-security-technologies"></a>Bewerten von Umgehungs Proxys, Datenverkehrs Inspektionsgeräten und doppelten Sicherheitstechnologien
 
-![Umgehen von Proxys, Geräten zur Datenverkehrsüberprüfung und doppelten Sicherheitstechnologien](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
+![Umgehen von Proxys, Datenverkehrs Inspektionsgeräten und doppelten Sicherheitstechnologien](media/0131930d-c6cb-4ae1-bbff-fe4cf6939a23.png)
   
 Unternehmenskunden sollten ihre Methoden zur Netzwerksicherheit und zur Risikominderung speziell für den Microsoft 365-gebundenen Datenverkehr überprüfen und Microsoft 365-Sicherheitsfeatures verwenden, um die Abhängigkeit von intrusivem, Leistungseinbußen und teuren Netzwerksicherheitstechnologien für den Microsoft 365-Netzwerkdatenverkehr zu verringern.
   
-Die meisten Unternehmensnetzwerke erzwingen Netzwerksicherheit für Internetdatenverkehr mithilfe von Technologien wie Proxys, SSL-Prüfung, Paketüberprüfung und Systemen zur Verhinderung von Datenverlust. Diese Technologien bieten eine wichtige Risikominderung für generische Internet Anforderungen, aber Sie können die Leistung, die Skalierbarkeit und die Qualität der Endbenutzererfahrung drastisch reduzieren, wenn Sie auf Microsoft 365-Endpunkte angewendet werden.
+Die meisten Unternehmensnetzwerke erzwingen Netzwerksicherheit für Internetdatenverkehr mithilfe von Technologien wie Proxys, SSL-Prüfung, Paketüberprüfung und Systemen zur Verhinderung von Datenverlust. Diese Technologien bieten eine wichtige Risikominderung für generische Internet Anforderungen, können jedoch die Leistung, die Skalierbarkeit und die Qualität der Endbenutzererfahrung drastisch reduzieren, wenn Sie auf Microsoft 365-Endpunkte angewendet werden.
   
 <a name="BKMK_WebSvc"> </a>
 #### <a name="office-365-endpoints-web-service"></a>Office 365-Endpunkte-Webdienst
@@ -149,32 +149,32 @@ Weitere Informationen zur Sicherheit der Rechenzentren und des globalen Netzwerk
 ## <a name="new-office-365-endpoint-categories"></a>Neue Office 365-Endpunktkategorien
 <a name="BKMK_Categories"> </a>
 
-Office 365-Endpunkte stellen einen vielfältigen Satz von Netzwerkadressen und Subnetzen dar. Endpunkte sind URLs, IP-Adressen oder IP-Bereiche und einige Endpunkte werden mit bestimmten TCP/UDP-Ports aufgelistet. URLs können entweder ein FQDN wie *account.office.net* oder eine Platzhalter-URL wie *\*office365.com* sein.
+Office 365-Endpunkte stellen einen vielfältigen Satz von Netzwerkadressen und Subnetzen dar. Endpunkte sind URLs, IP-Adressen oder IP-Bereiche und einige Endpunkte werden mit bestimmten TCP/UDP-Ports aufgelistet. URLs können entweder ein FQDN wie *Account.Office.net*oder eine Platzhalter-URL wie * \* . office365.com*sein.
   
 > [!NOTE]
 > Die Speicherorte von Office 365 Endpunkten im Netzwerk beziehen sich nicht direkt auf den Speicherort der Microsoft 365-Mandantendaten. Aus diesem Grund sollten Kunden Microsoft 365 als einen verteilten und globalen Dienst betrachten und nicht versuchen, Netzwerkverbindungen zu Office 365 Endpunkten basierend auf geografischen Kriterien zu blockieren.
   
 In unserem vorherigen Leitfaden für die Verwaltung von Microsoft 365-Datenverkehr wurden Endpunkte in zwei Kategorien unterteilt: **erforderlich** und **optional**. Endpunkte innerhalb jeder Kategorie erforderten je nach Kritikalität des Dienstes unterschiedliche Optimierungen und viele Kunden hatten Schwierigkeiten, die Anwendung derselben Netzwerkoptimierungen auf die gesamte Liste der Office 365-URLs und -IP-Adressen zu rechtfertigen.
   
-Im neuen Modell werden die Endpunkte in drei Kategorien unterteilt **Optimieren**, **Zulassen** und **Standard**. So können Anstrengungen zur Netzwerkoptimierung prioritätsbasiert fokussiert werden, um Leistung und Rentabilität optimal zu verbessern. Die Endpunkte werden in die oben aufgeführten Kategorien konsolidiert, basierend auf der Sensibilität der effektiven Benutzererfahrung hinsichtlich Netzwerkqualität, Volumen und Leistung von Szenarien und einfacher Implementierung. Auf die gleiche Weise können empfohlene Optimierungen auf alle Endpunkte in der jeweiligen Kategorie angewendet werden.
+Im neuen Modell werden Endpunkte in drei Kategorien unterteilt: **optimize**, **Allow**und **default**, wobei ein prioritätsbasierter Drehpunkt bereitgestellt wird, in dem die Bemühungen zur Netzwerkoptimierung konzentriert werden, um die besten Leistungsverbesserungen und den Return on Investment zu erzielen. Die Endpunkte werden in den oben aufgeführten Kategorien basierend auf der Sensibilität der effektiven Benutzeroberfläche für Netzwerkqualität, Volumen und Leistungsumfang von Szenarien und der einfachen Implementierung konsolidiert. Auf die gleiche Weise können empfohlene Optimierungen auf alle Endpunkte in der jeweiligen Kategorie angewendet werden.
   
-- **Optimieren**: Endpunkte sind für Konnektivität zu jedem Office 365-Dienst erforderlich und machen über 75 % der Bandbreite, Verbindungen und Datenmenge von Microsoft 365 aus. Diese Endpunkte bilden Microsoft 365-Szenarien ab, bei denen Netzwerkleistung, Latenz und Verfügbarkeit die höchste Priorität haben. Alle Endpunkte werden in Microsoft-Rechenzentren gehostet. Die Anzahl der Änderungen an den Endpunkten in dieser Kategorie wird voraussichtlich erheblich geringer sein als bei den Endpunkten in den anderen beiden Kategorien. Diese Kategorie enthält eine sehr kleine Gruppe (in einer Größenordnung von ~ 10) von Schlüssel-URLs und eine definierte Gruppe von IP-Subnetzen, die den wichtigsten Office 365-Workloads wie Exchange Online, SharePoint Online, Skype for Business Online und Microsoft Teams zugeordnet sind.
+- Endpunkte **optimieren** sind für die Konnektivität mit jedem Office 365 Dienst erforderlich und stellen über 75% der Office 365 Bandbreite, der Verbindungen und des Datenvolumens dar. Diese Endpunkte stellen Office 365 Szenarien dar, die für die Netzwerkleistung, die Wartezeit und die Verfügbarkeit am sensibelsten sind. Alle Endpunkte werden in Microsoft-Rechenzentren gehostet. Die Anzahl der Änderungen an den Endpunkten in dieser Kategorie wird voraussichtlich erheblich geringer sein als bei den Endpunkten in den anderen beiden Kategorien. Diese Kategorie enthält eine kleine (in der Reihenfolge von ~ 10) Gruppe von wichtigen URLs und eine definierte Gruppe von IP-Subnetzen, die für Kern Office 365 Arbeitslasten wie Exchange Online, SharePoint Online, Skype for Business Online und Microsoft Teams dediziert sind.
 
-    Eine komprimierte Liste mit gut definierten kritischen Endpunkten soll Ihnen helfen, hochwertige Netzwerkoptimierungen für diese Ziele schneller und einfacher zu planen und zu implementieren.
+    Eine verkürzte Liste mit gut definierten kritischen Endpunkten sollte Ihnen helfen, hochwertige Netzwerkoptimierungen für diese Ziele schneller und einfacher zu planen und zu implementieren.
 
-    Beispiele für die *Optimierung* von Endpunkten sind *https://outlook.office365.com* *https:// \<tenant\> . SharePoint.com* und *https:// \<tenant\> -My.SharePoint.com* .
+    Beispiele für die *Optimierung* von Endpunkten sind *https://outlook.office365.com* *https:// \<tenant\> . SharePoint.com*und *https:// \<tenant\> -My.SharePoint.com*.
 
     Zu Optimierungsmethoden zählen folgende:
 
-  - Umgehung von *Optimieren*-Endpunkten oder Hinzufügen dieser Endpunkte zu Positivlisten auf Netzwerkgeräten und Diensten, die Abfangen von Datenverkehr, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung ausführen.
+  - Umgehen Sie die *Optimierung* von Endpunkten für Netzwerkgeräte und-Dienste, die Datenverkehrsüberwachung, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung durchführen.
   - Umgehung von lokalen Proxy-Geräten und cloudbasierten Proxy-Diensten, die häufig für allgemeines Browsen im Internet verwendet werden.
   - Priorisieren Sie die Auswertung dieser Endpunkte als vollständig vertrauenswürdig durch Ihre Netzwerkinfrastruktur und Perimetersysteme.
-  - Priorisieren Sie die Reduktion oder Eliminierung von WAN-Backhauling und unterstützen Sie den direkten verteilten internetbasierten Ausgang für diese Endpunkte so nahe wie möglich zu Benutzern/Zweigstellen.
+  - Priorisieren Sie die Reduzierung oder Eliminierung von WAN-Rück Transporten, und vereinfachen Sie den direkt verteilten Internet basierten Ausstieg für diese Endpunkte so nah wie möglich an Benutzern/Zweigstellen.
   - Unterstützen Sie die direkte Konnektivität zu diesen Cloud-Endpunkten für VPN-Benutzer durch Implementierung getrennter Tunnel.
   - Stellen Sie sicher, dass die durch die DNS-Namensauflösung zurückgegebenen IP-Adressen dem Routing-Ausgangspfad für diese Endpunkte entsprechen.
   - Priorisieren Sie diese Endpunkte für die SD-WAN-Integration für direktes Routing mit minimaler Latenz in den nächstgelegenen Internet-Peering-Punkt des globalen Microsoft-Netzwerks.
 
-- **Zulassen**: Endpunkte sind für die Konnektivität zu speziellen Microsoft 365-Diensten und -Funktionen erforderlich, sind jedoch in Bezug auf Leistung und Latenz im Netzwerk nicht so sensibel sind wie diejenigen in der Kategorie *Optimieren*. Die gesamten Netzwerkanforderungen dieser Endpunkte im Hinblick auf Bandbreite und Verbindungsanzahl sind ebenfalls erheblich geringer. Diese Endpunkte sind Office 365 zugeordnet und werden in Microsoft-Rechenzentren gehostet. Sie stellen eine breite Palette von Office 365-Mikrodiensten und deren Abhängigkeiten (von ~ 100-URLs) dar und es ist davon auszugehen, dass sie eine höhere Änderungsrate als diejenigen in der Kategorie *Optimieren* aufweisen. Nicht alle Endpunkte in dieser Kategorie sind definierten dedizierten IP-Subnetzen zugeordnet.
+- Endpunkte **zulassen** sind für die Konnektivität mit bestimmten Office 365 Diensten und-Features erforderlich, sind jedoch nicht so anfällig für Netzwerkleistung und Latenz wie in der Kategorie *optimieren* . Die gesamte Netzwerkpräsenz dieser Endpunkte aus der Sicht der Bandbreite und der Anzahl der Verbindungen ist ebenfalls kleiner. Diese Endpunkte sind Office 365 zugeordnet und werden in Microsoft-Rechenzentren gehostet. Sie stellen eine breite Palette von Office 365-Mikrodiensten und deren Abhängigkeiten (von ~ 100-URLs) dar und es ist davon auszugehen, dass sie eine höhere Änderungsrate als diejenigen in der Kategorie *Optimieren* aufweisen. Nicht alle Endpunkte in dieser Kategorie sind definierten dedizierten IP-Subnetzen zugeordnet.
 
     Netzwerkoptimierungen für *Zulassen*-Endpunkte können das Office 365-Benutzererlebnis verbessern, aber einige Kunden entscheiden sich möglicherweise dazu, diese Optimierungen enger einzugrenzen, um Änderungen am Netzwerk möglichst gering zu halten.
 
@@ -182,36 +182,36 @@ Im neuen Modell werden die Endpunkte in drei Kategorien unterteilt **Optimieren*
 
     Zu Optimierungsmethoden zählen folgende:
 
-  - Umgehung von *Zulassen*-Endpunkten oder Hinzufügen dieser Endpunkte zu Positivlisten auf Netzwerkgeräten und Diensten, die Abfangen von Datenverkehr, SSL-Entschlüsselung, umfassende Paketüberprüfung und Inhaltsfilterung ausführen.
+  - Bypass *Allow* endpoints on Network Devices and Services, die Datenverkehr abhören, SSL-Entschlüsselung, Deep Packet Inspection und Inhaltsfilterung durchführen.
   - Priorisieren Sie die Auswertung dieser Endpunkte als vollständig vertrauenswürdig durch Ihre Netzwerkinfrastruktur und Perimetersysteme.
-  - Priorisieren Sie die Reduktion oder Eliminierung von WAN-Backhauling und unterstützen Sie den direkten verteilten internetbasierten Ausgang für diese Endpunkte so nahe wie möglich zu Benutzern/Zweigstellen.
+  - Priorisieren Sie die Reduzierung oder Eliminierung von WAN-Rück Transporten, und vereinfachen Sie den direkt verteilten Internet basierten Ausstieg für diese Endpunkte so nah wie möglich an Benutzern/Zweigstellen.
   - Stellen Sie sicher, dass die durch die DNS-Namensauflösung zurückgegebenen IP-Adressen dem Routing-Ausgangspfad für diese Endpunkte entsprechen.
   - Priorisieren Sie diese Endpunkte für die SD-WAN-Integration für direktes Routing mit minimaler Latenz in den nächstgelegenen Internet-Peering-Punkt des globalen Microsoft-Netzwerks.
 
-- **Standard**-Endpunkte stellen Office 365-Dienste und Abhängigkeiten dar, die keine Optimierung erfordern und von Kundennetzwerken als normaler Internetdatenverkehr behandelt werden können. Beachten Sie, dass einige der Endpunkte in dieser Kategorie möglicherweise nicht in Microsoft-Rechenzentren gehostet werden. Beispiele sind *https://odc.officeapps.live.com* und *https://appexsin.stb.s-msn.com*.
+- **Standard**-Endpunkte stellen Office 365-Dienste und Abhängigkeiten dar, die keine Optimierung erfordern und von Kundennetzwerken als normaler Internetdatenverkehr behandelt werden können. Einige Endpunkte in dieser Kategorie werden möglicherweise nicht in Microsoft-Datencentern gehostet. Beispiele sind *https://odc.officeapps.live.com* und *https://appexsin.stb.s-msn.com*.
 
-Weitere Informationen zu den Verfahren zur Office 365-Netzwerkoptimierung finden Sie im Artikel [Verwalten von Office 365-Endpunkten](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EAEAAA=0._Overview).
+Weitere Informationen zu den Verfahren zur Office 365-Netzwerkoptimierung finden Sie im Artikel [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md).
   
 ## <a name="comparing-network-perimeter-security-with-endpoint-security"></a>Vergleichen der Sicherheit des Netzwerkperimeters mit der Endpunktsicherheit
 <a name="BKMK_SecurityComparison"> </a>
 
-Das Ziel der herkömmlichen Netzwerksicherheit ist die Absicherung des Unternehmensnetzwerkperimeters gegen Eindringversuche und böswillige Angriffe. Wenn Organisationen Microsoft 365 annehmen, werden einige Netzwerkdienste und-Daten teilweise oder vollständig in die Cloud migriert. Wie bei allen grundlegenden Änderungen an der Netzwerkarchitektur erfordert dieser Vorgang eine Neubewertung der Netzwerksicherheit, die neue Faktoren berücksichtigt:
+Das Ziel der herkömmlichen Netzwerksicherheit ist die Absicherung des Unternehmensnetzwerkperimeters gegen Eindringversuche und böswillige Angriffe. Wenn Organisationen Microsoft 365 annehmen, werden einige Netzwerkdienste und-Daten teilweise oder vollständig in die Cloud migriert. Bei allen grundlegenden Änderungen an der Netzwerkarchitektur ist für diesen Prozess eine Neubewertung der Netzwerksicherheit erforderlich, bei der die folgenden Faktoren berücksichtigt werden:
   
 - Wenn Clouddienste eingeführt werden, werden Netzwerkdienste und -daten zwischen lokalen Rechenzentren und der Cloud verteilt und der Perimeterschutz allein ist nicht mehr ausreichend.
-- Remotebenutzer stellen zu Unternehmensressourcen sowohl in lokalen Rechenzentren als auch in der Cloud von unkontrollierten Standorten wie Home-Offices, Hotels und Cafés aus eine Verbindung her.
+- Remote Benutzer verbinden sich mit Unternehmensressourcen sowohl in lokalen Rechenzentren als auch in der Cloud von unkontrollierten Standorten wie Heimen, Hotels und Cafés aus.
 - Speziell entwickelte Sicherheitsfeatures werden zunehmend in Clouddienste integriert und können vorhandene Sicherheitssysteme ergänzen oder ersetzen.
 
 Microsoft bietet eine breite Palette von Microsoft 365-Sicherheitsfeatures und enthält normative Anleitungen für die Verwendung bewährter Sicherheitsmethoden, mit denen Sie die Daten-und Netzwerksicherheit für Microsoft 365 sicherstellen können. Empfohlene bewährte Methoden umfassen die folgenden:
   
 - **Verwenden Sie mehrstufige Authentifizierung (MFA)** MFA fügt eine zusätzliche Schutzebene zu einer Strategie mit sicherem Kennwort hinzu, indem Benutzer nach der korrekten Eingabe des Kennworts einen Telefonanruf, eine Textnachricht oder eine App-Benachrichtigung auf ihrem Smartphone bestätigen müssen.
 
-- **Verwenden Sie Microsoft Cloud App Security** Richten Sie Richtlinien zum Nachverfolgen anomaler Aktivitäten und zum Umgang mit diesen ein. Richten Sie Benachrichtigungen mit Microsoft Cloud App Security ein, damit Administratoren ungewöhnliche oder riskante Benutzeraktivitäten, z. B. das Herunterladen großer Datenmengen, mehrere gescheiterte Anmeldeversuche oder Verbindungen von unbekannten oder gefährlichen IP-Adressen aus, überprüfen können.
+- **Verwenden der Microsoft Cloud-App-Sicherheit** Konfigurieren Sie Richtlinien, um anomale Aktivitäten nachzuverfolgen und darauf zu reagieren. Richten Sie Benachrichtigungen mit Microsoft Cloud App Security ein, damit Administratoren ungewöhnliche oder riskante Benutzeraktivitäten, z. B. das Herunterladen großer Datenmengen, mehrere gescheiterte Anmeldeversuche oder Verbindungen von unbekannten oder gefährlichen IP-Adressen aus, überprüfen können.
 
 - **Konfigurieren Sie die Verhinderung von Datenverlust (DLP)** DLP ermöglicht es Ihnen, vertrauliche Daten zu erkennen und Richtlinien zu erstellen, durch die verhindert wird, dass Ihre Benutzer die Daten versehentlich oder absichtlich freigeben. DLP funktioniert in Microsoft 365, einschließlich Exchange Online, SharePoint Online und OneDrive, damit Ihre Benutzer kompatibel bleiben können, ohne den Workflow zu unterbrechen.
 
 - **Kunden-Lockbox verwenden** Als Microsoft 365-Administrator können Sie die Kunden-Lockbox verwenden, um zu steuern, wie ein Microsoft-Supporttechniker während einer Hilfesitzung auf Ihre Daten zugreift. In Fällen, in denen der Techniker zur Erkennung und Behebung eines Problems Zugriff auf Ihre Daten benötigt, ermöglicht Ihnen Kunden Lockbox, die Zugriffsanfrage zu genehmigen oder abzulehnen.
 
-- **Verwenden Sie Office 365 Secure Score** Secure Score ist ein Sicherheitsanalysetool, das Empfehlungen zur weiteren Risikoreduzierung gibt. Secure Score untersucht Ihre Microsoft 365-Einstellungen und-Aktivitäten und vergleicht diese mit einem von Microsoft festgelegten Basisplan. Anschließend erhalten Sie eine Bewertung basierend auf Ihrer Anwendung der bewährten Methoden für die Wahrung der Sicherheit.
+- **Office 365 sicheres Ergebnis verwenden** Ein Tool zur Sicherheitsanalyse, mit dem Sie die Möglichkeiten zur weiteren Verringerung des Risikos empfehlen. Secure Score untersucht Ihre Microsoft 365-Einstellungen und-Aktivitäten und vergleicht diese mit einem von Microsoft festgelegten Basisplan. Anschließend erhalten Sie eine Bewertung basierend auf Ihrer Anwendung der bewährten Methoden für die Wahrung der Sicherheit.
 
 Ein ganzheitlicher Ansatz zur Verbesserung der Sicherheit sollte folgende Aspekte berücksichtigen:
   
@@ -221,13 +221,13 @@ Ein ganzheitlicher Ansatz zur Verbesserung der Sicherheit sollte folgende Aspekt
   - Legen Sie den Fokus auf die Absicherung des Datenspeicherorts und des Benutzerstandorts
   - Verwaltete Benutzercomputer haben eine höhere Vertrauensstellung
 - Ganzheitliche Verwaltung aller Informationssicherheitsdaten, keine reine Fokussierung auf den Perimeter
-  - Definieren Sie das WAN neu und bauen Sie Perimeternetzwerksicherheit auf, indem Sie vertrauenswürdigem Datenverkehr erlauben, Sicherheitsgeräte zu umgehen, und für nicht verwaltete Geräte WLAN-Gastnetzwerke schaffen.
-  - Reduzierung der Netzwerksicherheitsanforderungen des WAN-Unternehmensrands
+  - Neudefinieren der WAN-und Building Perimeter-Netzwerksicherheit durchzulassen, dass vertrauenswürdiger Datenverkehr Sicherheitsgeräte umgeht und nicht verwaltete Geräte an Gast-Wi-Fi-Netzwerke trennt
+  - Verringern der Netzwerksicherheitsanforderungen des unternehmensweiten WAN-Edges
   - Einige Geräte für den Netzwerkperimeterschutz wie Firewalls sind weiterhin erforderlich, aber die Auslastung wird reduziert.
   - Gewährleistet lokalen Ausstieg für Microsoft 365-Datenverkehr
 - Verbesserungen können inkrementell umgesetzt werden, wie im Abschnitt [Inkrementelle Optimierung](office-365-network-connectivity-principles.md#BKMK_IncOpt) beschrieben. Einige Optimierungstechniken bieten je nach Netzwerkarchitektur möglicherweise ein besseres Preis-Leistungs-Verhältnis und Sie sollten die Optimierungen auswählen, die für Ihre Organisation am besten geeignet sind.
 
-Weitere Informationen zur Sicherheit und Compliance von Microsoft 365 finden Sie im Artikel [Übersicht über Sicherheit und Compliance in Office 365](https://support.office.com/article/overview-of-security-and-compliance-in-office-365-dcb83b2c-ac66-4ced-925d-50eb9698a0b2?ui=en-US&amp;rs=en-US&amp;ad=US).
+Weitere Informationen zur Sicherheit und Compliance von Microsoft 365 finden Sie im Artikel [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security) und [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/compliance).
   
 ## <a name="incremental-optimization"></a>Inkrementelle Optimierung
 <a name="BKMK_IncOpt"> </a>

@@ -1,9 +1,9 @@
 ---
-title: Verwalten von Benutzerkonten und Lizenzen mit Office 365 PowerShell
+title: Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/06/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -15,17 +15,19 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 'Zusammenfassung: Hier erfahren Sie, wie Sie Benutzerkonten, Lizenzen und Gruppen mit Office 365 PowerShell verwalten.'
-ms.openlocfilehash: e43272196556bcfb09fb7a41a5b2cd40e2056928
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Zusammenfassung: Hier erfahren Sie, wie Sie Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell verwalten.'
+ms.openlocfilehash: 26da0d13ecc9c14be4abe059943bd91d88126f1e
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841312"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230411"
 ---
-# <a name="manage-user-accounts-licenses-and-groups-with-office-365-powershell"></a>Verwalten von Benutzerkonten, Lizenzen und Gruppen mit Office 365 PowerShell
+# <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell
 
-Eine der Hauptaufgaben eines Office 365 Administrators besteht darin, Benutzerkonten, Lizenzen und Gruppen zu verwalten. Obwohl Sie die meisten Aspekte dieser Aufgaben im Microsoft 365 Admin Center erledigen können, sind andere Aufgaben mit Office 365 PowerShell viel schneller und einfacher. 
+*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+
+Eine der Hauptaufgaben eines beliebigen Microsoft 365-Administrators besteht darin, Benutzerkonten, Lizenzen und Gruppen zu verwalten. Obwohl Sie die meisten Aspekte dieser Aufgaben im Microsoft 365 Admin Center erledigen können, sind andere Aufgaben mit PowerShell viel schneller und einfacher. 
 
 Weitere Informationen finden Sie in den folgenden Themen.
 
@@ -50,5 +52,5 @@ Weitere Informationen finden Sie in den folgenden Themen.
 
 ## <a name="groups"></a>Gruppen
 - [Verwalten von Gruppenmitgliedschaften](maintain-group-membership-with-office-365-powershell.md)
-- [Verwalten von Office 365-Gruppen](manage-office-365-groups-with-powershell.md)
+- [Verwalten von Microsoft 365-Gruppen](manage-office-365-groups-with-powershell.md)
 

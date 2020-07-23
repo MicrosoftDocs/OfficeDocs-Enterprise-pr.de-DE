@@ -3,7 +3,7 @@ title: Hybridlösungen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/30/2018
+ms.date: 07/20/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 'Zusammenfassung: Verwenden Sie die folgenden Artikel, um Office Server-Arbeitslasten in Microsoft Azure bereitzustellen.'
-ms.openlocfilehash: 5a3d31e93820302bf5ae900d54c9891cfccdaec9
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: 64d74e1d518cde824289a8c3ab9cee15b6b34ad5
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998013"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229951"
 ---
 # <a name="hybrid-solutions"></a>Hybridlösungen
 
-Mit Microsoft Azure können Sie nun einige Office Server-Arbeitslasten bereitstellen, die in der Regel lokal auf Azure-Infrastrukturdiensten bereitgestellt wurden.
+Mit Microsoft Azure können Sie einige Office Server-Arbeitslasten bereitstellen, die in der Regel lokal in Azure-Infrastrukturdiensten bereitgestellt wurden.
   
 Für die Microsoft 365-Identitätsinfrastruktur in Azure:
 

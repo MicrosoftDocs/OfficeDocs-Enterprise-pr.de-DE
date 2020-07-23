@@ -1,9 +1,9 @@
 ---
-title: Community-Ressourcen zu Office 365 PowerShell
+title: Microsoft 365 Community-Ressourcen für PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/06/2019
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -11,27 +11,27 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Office_Other
+ms.custom: ''
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: 'Zusammenfassung: Rufen Sie von diesen Communityressourcen Hilfe zu Office 365 PowerShell ab.'
-ms.openlocfilehash: fdf35bfb98f027090a79bac97bbd69e0b7c9bb96
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: 'Zusammenfassung: Hier erhalten Sie Hilfe zu PowerShell für Microsoft 365 aus diesen Community-Orten.'
+ms.openlocfilehash: 8f07fa685f6abe4edb5d7a54a0f9584eecd0f3f7
+ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844196"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45230401"
 ---
-# <a name="office-365-powershell-community-resources"></a>Community-Ressourcen zu Office 365 PowerShell
+# <a name="microsoft-365-community-resources-for-powershell"></a>Microsoft 365 Community-Ressourcen für PowerShell
 
-Verwenden Sie diese Communities, um Ihnen eine Verbindung mit ihren Kollegen zu verschaffen und Ihre Office 365 PowerShell-Fragen schnell und korrekt zu beantworten. 
+Verwenden Sie diese Communities, um Ihnen eine Verbindung mit ihren Kollegen zu verschaffen und ihre PowerShell für Microsoft 365-Fragen schnell und korrekt zu beantworten. 
   
-- [Microsoft Tech Community für Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+- [Microsoft 365 Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
 - [Exchange Server TechNet-Community-Forum](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Office 365 mit Office 365 PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit Office 365 PowerShell](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
 
