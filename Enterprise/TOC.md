@@ -15,6 +15,7 @@
 ### Planen für Ihre Identitäten
 #### [Identitätsmodelle](about-office-365-identity.md)
 #### [Hybrididentität](plan-for-directory-synchronization.md)
+#### [Tools für die Verwaltung von Microsoft 365-Konten](tools-to-manage-office-365-accounts.md)
 
 ### [Planen von Drittanbieter-SSL-Zertifikaten für Microsoft 365](plan-for-third-party-ssl-certificates.md)
 ### [Einrichtungsanleitung für Microsoft 365- und Office 365-Dienste](setup-guides-for-office-365.md)
@@ -110,6 +111,7 @@
 ### [Reine Cloudidentität](cloud-only-identities.md)
 ### Hybrididentitäten
 #### [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md)
+#### [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md)
 #### Verwenden des IdFix-Tools
 ##### [Vorbereiten von Verzeichnisattributen mit dem IdFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md)
 ##### [Herunterladen und Ausführen des IdFix-Tools](install-and-run-idfix.md)
@@ -172,6 +174,7 @@
 #### [Ihre Kundendaten in Office 365-Rechenzentren](o365-data-locations.md)
 
 ### Hybridlösungen
+#### [Übersicht](hybrid-solutions.md)
 #### [Verwenden von Azure Active Directory für die SharePoint Server 2016-Authentifizierung](using-azure-ad-for-sharepoint-server-authentication.md)
 #### [Verbinden eines lokalen Netzwerks mit einem virtuellen Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 #### [Bereitstellen eines Verzeichnissynchronisierungsservers in Azure IaaS](deploy-office-365-directory-synchronization-dirsync-in-microsoft-azure.md)
@@ -270,7 +273,7 @@
 ### [Mandantenisolation in Microsoft 365-Video](office-365-isolation-in-office-365-video.md)
 ### [Mandantenisolation in Microsoft Graph und Delve](office-365-isolation-in-graph-and-delve.md)
 
-# [Office 365 PowerShell](powershell/manage-office-365-with-office-365-powershell.md)
+# [PowerShell für Microsoft 365](powershell/manage-office-365-with-office-365-powershell.md)
 # [Microsoft 365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
 # [Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
 # [Microsoft 365 für Unternehmen](https://www.microsoft.com/microsoft-365/business)
