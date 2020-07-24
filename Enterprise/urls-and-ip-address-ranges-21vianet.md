@@ -20,21 +20,18 @@ f1.keywords:
 - NOCSH
 description: Dieser Artikel bezieht sich auf Office 365, betrieben von 21Vianet in China. In diesem Artikel sind die URLs und IP-Adressbereiche aufgelistet, die von Office 365, betrieben von 21Vianet, verwendet werden.
 hideEdit: true
-ms.openlocfilehash: 157f80b6d3bb12f0e3c3aa7f6d2d82a1d24965e1
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: fe0015bcda70cace8247fdbcfb6a2d4424b28349
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091162"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387718"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URLs und IP-Adressbereiche für Office 365, betrieben von 21Vianet
 
  *Betrifft: Office 365, betrieben von 21Vianet – Small Business-Administrator, Office 365, betrieben von 21Vianet – Administrator*
 
 **Zusammenfassung**: Die folgenden Endpunkte (FQDNs, Ports, URLs, IPv4- und IPv6-Präfixe) gelten für Office 365, betrieben von 21Vianet, und sind für die Bereitstellung von Produktivitätsdiensten nur im Rahmen der genannten Pläne ausgelegt.
-  
-> [!NOTE]
-> Microsoft hat einen REST-basierten Webdienst für die IP-Adress- und FQDN-Einträge auf dieser Seite veröffentlicht. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B. Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können heruntergeladen werden. Dieser Dienst ersetzt das mit dieser Seite verknüpfte XML-Dokument, dessen Unterstützung am 2. Oktober 2018 endete. Um diesem neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](office-365-ip-web-service.md).
   
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md)  | *Office 365, betrieben von 21Vianet* | [Office 365 Deutschland](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   

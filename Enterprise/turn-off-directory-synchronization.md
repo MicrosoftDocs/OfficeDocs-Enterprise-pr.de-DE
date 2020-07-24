@@ -19,12 +19,12 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: Informationen zum Deaktivieren der Verzeichnissynchronisierung für Microsoft 365 mithilfe von PowerShell
-ms.openlocfilehash: 935d7e26c7b99aba876500e6b9d428557aed5b9c
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+ms.openlocfilehash: 1e3e26a262c112c05fe22cda2dbe3f14efb61f87
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906208"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387708"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Deaktivieren der Verzeichnissynchronisierung für Microsoft 365
 Sie können die Verzeichnissynchronisierung mithilfe von PowerShell deaktivieren. Es wird jedoch nicht empfohlen, die Verzeichnissynchronisierung als Schritt zur Problembehandlung zu deaktivieren. Wenn Sie Unterstützung bei der Problembehandlung bei der Verzeichnissynchronisierung benötigen, lesen Sie den Artikel [Beheben von Problemen mit der Verzeichnissynchronisierung für Microsoft 365](fix-problems-with-directory-synchronization.md) . 
@@ -41,3 +41,8 @@ So deaktivieren Sie die Verzeichnissynchronisierung:
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
+
+>[!Note]
+>Wenn Sie diesen Befehl verwenden, müssen Sie 72 Stunden warten, bevor Sie die Verzeichnissynchronisierung wieder aktivieren können.
+>
+ 

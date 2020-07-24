@@ -24,25 +24,19 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 'Zusammenfassung: Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.'
 hideEdit: true
-ms.openlocfilehash: 175359f998c4dd695c301540f94e7d7527377ffc
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: 1df2420812cd6ba0fbec619a4a280874c3d9fc9b
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091206"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387698"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365-URLs und -IP-Adressbereiche
 
 Office 365 erfordert eine Internetverbindung. Die unten aufgeführten Endpunkte sollten für Kunden, die Office 365-Pläne verwenden, einschließlich Government Community Cloud (GCC), erreichbar sein.
   
-> [!NOTE]
-> Im Rahmen der von Microsoft in Reaktion auf die COVID-19-Krise ergriffenen Maßnahmen hat Microsoft beschlossen, ein vorübergehendes Moratorium zu verhängen und die Einführung einiger geplanter Änderungen in Bezug auf URLs und IP-Adressen zu verschieben. Dieses Moratorium dient dazu, es den IT-Teams unserer Kunden zu ermöglichen, mit größtmöglicher Zuversicht und möglichst unkompliziert empfohlene Netzwerkoptimierungen für Office 365-Szenarios zu implementieren, die auf die Telearbeit ausgelegt sind. Vom 24. März 2020 bis zum 30. Juni 2020 werden im Rahmen dieses Moratoriums Änderungen an IP-Bereichen und URLs, die in der Kategorie „Optimieren“ enthalten sind, für wichtige Office 365-Dienste (Exchange Online, SharePoint Online und Microsoft Teams) ausgesetzt. Änderungen innerhalb anderer Endpunktkategorien erfolgen wie üblich. Während dieses Zeitraums können Kunden die Dienstendpunkt-Definitionen für die Office 365-Kategorie „Optimieren“auf statische Weise verwenden, um gezielte Netzwerkoptimierungen (wie Bandbreitenreservierungen oder das Konfigurieren von Split-Tunnel-VPNs) mit minimalem Risiko für die Office 365-Konnektivität aufgrund von Änderungen im Cloud-Netzwerk durchzuführen. Um sicherzustellen, dass keine Dienstunterbrechungen am Ende des Moratoriums auftreten, empfiehlt Microsoft dringend, dass Kunden Änderungsverwaltungs- und/oder Automatisierungsprozesse für Office 365-Dienstendpunkte implementieren, indem Sie die Anweisungen unter [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md) befolgen.
-
-> [!NOTE]
-> Microsoft hat einen REST-basierten Webdienst für die IP-Adress- und FQDN-Einträge auf dieser Seite veröffentlicht. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B. Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können heruntergeladen werden. Dieser Dienst ersetzt das mit dieser Seite verknüpfte XML-Dokument, dessen Unterstützung am 2. Oktober 2018 endete. Um diesem neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](office-365-ip-web-service.md).
-  
 *Office 365 Weltweit (+GCC)* | [Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md) | [Office 365 Deutschland](office-365-germany-endpoints.md) | [Office 365 U.S. Government DoD](office-365-u-s-government-dod-endpoints.md)  | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
-  
+
 ||||
 |:-----|:-----|:-----|
 |**Letzte Aktualisierung:** 09.07.2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/worldwide?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> | **Verwendung:** unsere Proxy-[PAC-Dateien](managing-office-365-endpoints.md#pacfiles) <br/> |

@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: 'Zusammenfassung: Office 365 erfordert eine Verbindung mit dem Internet. Die folgenden Endpunkte sollten für Kunden erreichbar sein, die nur Office 365 US Government DoD-Pläne verwenden.'
 hideEdit: true
-ms.openlocfilehash: 824998ea1bcb89a151e9d249d9155bf5e9d785dc
-ms.sourcegitcommit: 338e3bcf0a62842fbbb17145b67a4a93f3b90aac
+ms.openlocfilehash: ec82929a5c92b74eb5ac394cab2a0d6613b9c605
+ms.sourcegitcommit: c1a1b028195342affe0f3367db4e79c42429582a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091192"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387744"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 US Government DoD-Endpunkte
 
@@ -34,14 +34,11 @@ ms.locfileid: "45091192"
 
  Für Office 365 ist eine Verbindung mit dem Internet erforderlich. Die folgenden Endpunkte sollten für Kunden erreichbar sein, die nur Office 365 US Government DoD-Pläne verwenden.
   
-> [!NOTE]
-> Microsoft hat einen REST-basierten Webdienst für die IP-Adress- und FQDN-Einträge auf dieser Seite veröffentlicht. Mithilfe dieses neuen Diensts können Sie Geräte im Netzwerkumkreis konfigurieren und aktualisieren, z. B. Firewalls und Proxyserver. Die Liste mit Endpunkten, die aktuelle Version der Liste oder spezifische Änderungen können heruntergeladen werden. Dieser Dienst ersetzt das mit dieser Seite verknüpfte XML-Dokument, dessen Unterstützung am 2. Oktober 2018 endete. Um diesem neuen Dienst auszuprobieren, wechseln Sie zu [Webdienst](office-365-ip-web-service.md).
-  
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md) | [Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | [Office 365 Deutschland](office-365-germany-endpoints.md) | *Office 365 U.S. Government DoD* | [Office 365 U.S. Government GCC High](office-365-u-s-government-gcc-high-endpoints.md) |
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 07/09/2020- ![ RSS- ](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Änderungsprotokoll Abonnement](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Letzte Aktualisierung:** 09.07.2020 – ![RSS](media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Beginnen Sie mit der [Verwaltung Office 365 Endpunkte](managing-office-365-endpoints.md) , um unsere Empfehlungen für die Verwaltung der Netzwerkkonnektivität mithilfe dieser Daten zu verstehen. Endpunkte-Daten werden zu Beginn jedes Monats mit neuen IP-Adressen und URLs aktualisiert, die 30 Tage vor der aktiven Veröffentlichung veröffentlicht wurden. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor neue Verbindungen erforderlich sind. Endpunkte können auch während des Monats bei Bedarf aktualisiert werden, um Support Eskalationen, Sicherheitsvorfälle oder andere unmittelbare betriebliche Anforderungen zu beheben. Die auf dieser Seite unten gezeigten Daten werden aus den Rest-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](office-365-ip-web-service.md) wechseln.
 
