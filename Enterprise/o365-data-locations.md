@@ -1,11 +1,11 @@
 ---
-title: Microsoft 365-Datenspeicherorte
+title: Microsoft 365-Datenspeicherorte
 ms.author: deanw
 author: dmwmsft
 manager: laurawi
-ms.date: 06/17/2020
+ms.date: 07/22/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-solutions
 localization_priority: Priority
 search.appverid:
@@ -16,32 +16,32 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Zusammenfassung: Microsoft 365-Datenspeicherorte'
-ms.openlocfilehash: a0f62fa7955224c07c8e5af35fb53229e3aeb6c4
-ms.sourcegitcommit: e0603d9259e9be1aeb110fc3dd8b9abc6138c55d
-ms.translationtype: MT
+description: 'Zusammenfassung: Microsoft 365-Datenspeicherorte'
+ms.openlocfilehash: 4fdac5fca89eebd8d1c44ffdf571cee2630b6e8c
+ms.sourcegitcommit: 20c8c98c0b32d8cf56d50cbc70f82fd5c4ce649c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44781060"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45263694"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Wo Ihre Microsoft 365-Kundendaten gespeichert werden
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Informationen dazu, wo Ihre Microsoft 365-Kundendaten gespeichert werden
 
-Die folgenden Tabellen zeigen, wo Kundendaten bei-Rest für Microsoft 365-Dienste in allen globalen Cloud-Standorten von Microsoft gespeichert werden. Erweitern Sie den Speicherort Ihres Rechnungsadresse-Landes, um zu ermitteln, wo Kundendaten für die einzelnen Dienste gespeichert werden.
+In den nachstehenden Tabellen ist angegeben, an welchen globalen Microsoft-Cloud-Speicherorten ruhende Kundendaten für Microsoft 365-Dienste gespeichert werden. Erweitern Sie den Speicherort Ihres Rechnungsadresse-Landes, um zu ermitteln, wo Kundendaten für die einzelnen Dienste gespeichert werden.
 
 Kunden sollten Standortinformationen zu mandantenspezifischen Daten in ihrem Office 365 Admin Center unter **Einstellungen | Organisationsprofil | Datenspeicherort-Karte** einsehen.
 
-Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Land der Transaktion verwendet, das dem ersten Abonnement dieses Mandanten zugeordnet ist.
+Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf dem Land der Transaktion festgelegt, die dem ersten Abonnement dieses Mandanten zugeordnet ist.
 
 Informationen zu den vertraglichen Verpflichtungen in Bezug auf den Speicherort ruhender Kundendaten finden Sie in den [Nutzungsbedingungen für Microsoft-Onlinedienste](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 Informationen zu Azure Active Directory-Datenspeicherorte finden Sie unter [AAD-Datenkarte](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
 
-Aufgrund der beispiellosen Umstände rund um die COVID-19-Krise und der Notwendigkeit, die Nachfrage nach Onlinediensten in Europa zu managen, wenn Ihre Organisation eine Bildungseinrichtung ist, können wir Ihren Microsoft 365-Mandanten in der Europäischen Union (EU), in der Europäischen Freihandelszone (EFTA), im Vereinigten Königreich (UK), in den Vereinigten Staaten (USA) oder Kanada (ca) bereitstellen oder Ihre Daten an Rechenzentren in der EU übertragen. , EFTA, UK, US oder ca.  Dies bedeutet, dass Ihre ruhenden Daten in der EU, in der EFTA, im Vereinigten Königreich, in den USA oder in Kanada gespeichert werden können.  Unser Engagement für Compliance, Datenschutz und Sicherheit bleibt unverändert, während wir notwendige und umsichtige Maßnahmen zur Aufrechterhaltung der Dienstverfügbarkeit implementieren.  Wir werden alle anwendbaren Gesetzen hinsichtlich des Datentransfers einhalten.
+Aufgrund der beispiellosen Umstände rund um die COVID-19-Krise und der Notwendigkeit, die Nachfrage nach Onlinediensten in Europa zu verwalten, können wir, wenn Ihre Organisation eine Bildungseinrichtung ist, Ihren Microsoft 365-Mandanten in der Europäischen Union (EU), der Europäischen Freihandelsassoziation (EFTA), in Vereinigtes Königreich (UK), in den Vereinigten Staaten (USA) oder Kanada (CA) bereitstellen oder Ihre Daten an ein beliebiges Rechenzentren in EU, EFTA, UK, USA oder Kanada übertragen.  Dies bedeutet, dass Ihre ruhenden Daten in der EU, in der EFTA, im Vereinigten Königreich, in den USA oder in Kanada gespeichert werden können.  Unser Engagement für Compliance, Datenschutz und Sicherheit bleibt unverändert, während wir notwendige und umsichtige Maßnahmen zur Aufrechterhaltung der Dienstverfügbarkeit implementieren.  Wir werden alle anwendbaren Gesetzen hinsichtlich des Datentransfers einhalten.
 
 
 
@@ -58,11 +58,11 @@ Die genauen Adressen der Rechenzentren werden von Microsoft nicht offengelegt. D
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>Wirkt sich der Standort Ihrer Kundendaten unmittelbar auf die Benutzererfahrung von Endbenutzern aus?
 
-Die Leistung von Microsoft 365 ist nicht einfach proportional zum Abstand eines Benutzers zu den Rechenzentrumsstandorten. Die andauernden Investitionen von Microsoft in das globale Cloud-Netzwerk, die globale Cloud-Infrastruktur und die Architektur der Microsoft 365-Dienste bieten Benutzern eine einzigartige, konsistente Erfahrung, unabhängig davon, wo Kundendaten im Ruhezustand gespeichert werden. Wenn bei Ihren Benutzern Leistungsprobleme auftreten, sollten diese gründlich behandelt werden. Microsoft hat Anleitungen für Microsoft 365-Kunden veröffentlicht, um die Leistung der Endbenutzer auf der [Office-Support](https://go.microsoft.com/fwlink/p/?linkid=862645)Website zu planen und zu optimieren.
+Die Leistung von Microsoft 365 ist nicht einfach proportional zur Entfernung eines Benutzers gegenüber den Standorten der Rechenzentren. Die fortgesetzten Investitionen von Microsoft in das globale Cloud-Netzwerk, die globale Cloud-Infrastruktur und die Struktur von Microsoft 365-Diensten sorgen dafür, dass den Benutzern eine einzigartige, konsistente Benutzererfahrung geboten werden kann, die unabhängig vom Speicherort ruhender Kundendaten ist. Wenn bei Ihren Benutzern Leistungsprobleme auftreten, sollten diese gründlich behandelt werden. Microsoft hat auf der [Office Support-Website](https://go.microsoft.com/fwlink/p/?linkid=862645) Anleitungen für Microsoft 365-Kunden zur Planung und Optimierung der Leistung auf Endbenutzerseite veröffentlicht.
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Wie unterstützt mich Microsoft bei der Einhaltung nationaler, regionaler und branchenspezifischer Bestimmungen?
 
-Um Ihnen dabei zu helfen, die nationalen, regionalen und branchenspezifischen Anforderungen für die Erfassung und Verwendung von Personendaten einzuhalten, bietet Microsoft 365 die umfassendste Reihe von Compliance-angeboten für jeden globalen Anbieter von Cloud-Produktivität. Lesen Sie bitte [unsere Compliance-Angebote](https://go.microsoft.com/fwlink/p/?linkid=864391) und weitere Details im Abschnitt [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) im Microsoft Trust Center. Außerdem bieten bestimmte Pläne von Microsoft 365 weitere Compliance-Lösungen, die Ihnen helfen, Ihre Daten zu verwalten, gesetzliche und behördliche Anforderungen einzuhalten und die auf Ihren Daten ausgeführten Aktionen zu überwachen.
+Um Ihnen dabei zu helfen, nationalen, regionalen und branchenspezifischen Bestimmungen hinsichtlich der Sammlung und Verwendung von Personendaten gerecht zu werden, bietet Microsoft 365 die umfassendste Palette an Complianceangeboten aller globaler Cloudproduktivitäts-Anbieter. Sehen Sie sich diesbezüglich [unsere Complianceangebote](https://go.microsoft.com/fwlink/p/?linkid=864391) an. Weitere Informationen finden Sie im Abschnitt [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) im Microsoft Trust Center. Einige Microsoft 365-Pläne umfassen darüber hinaus weitere Compliance-Lösungen, die Ihnen dabei helfen, Ihre Daten zu verwalten, gesetzliche und behördliche Bestimmungen einzuhalten sowie Aktionen zu überwachen, die mit Ihren Daten ausgeführt werden.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Wer kann auf Ihre Daten zugreifen und nach welchen Regeln?
 
@@ -70,15 +70,15 @@ Um Ihnen dabei zu helfen, die nationalen, regionalen und branchenspezifischen An
 
 ### <a name="does-microsoft-access-your-data"></a>Greift Microsoft auf Ihre Daten zu?
 
-Microsoft automatisiert die meisten Microsoft 365-Vorgänge, wobei der eigene Zugriff auf Kundendaten absichtlich eingeschränkt wird. Auf diese Weise können wir Microsoft 365 bei der Skalierung verwalten und die Risiken interner Bedrohungen für Kundendaten beheben. Standardmäßig verfügen Microsoft-Techniker über keine ständigen Administratorrechte und keinen ständigen Zugriff auf Kundendaten in Microsoft 365. Ein Microsoft-Techniker verfügt u. U. über begrenzten und protokollierten Zugriff auf Kundendaten für einen begrenzten Zeitraum, aber nur dann, wenn dies für normale Servicevorgänge erforderlich ist, und nur, wenn dies von einem Mitglied der Geschäftsleitung bei Microsoft (und im Falle von Kunden, die über eine Lizenz für das Kunden-Lockbox-Feature verfügen, durch den Kunden) genehmigt wurde.
+Microsoft automatisiert die meisten Microsoft 365-Vorgänge und reduziert zugleich den eigenen Zugriff auf Kundendaten. Auf diese Weise können wir Microsoft 365 im erforderlichen Umfang verwalten und die Risiken interner Bedrohungen für Kundendaten leichter reduzieren. Standardmäßig verfügen Microsoft-Techniker über keine ständigen Administratorrechte und keinen ständigen Zugriff auf Kundendaten in Microsoft 365. Ein Microsoft-Techniker verfügt u. U. über begrenzten und protokollierten Zugriff auf Kundendaten für einen begrenzten Zeitraum, aber nur dann, wenn dies für normale Servicevorgänge erforderlich ist, und nur, wenn dies von einem Mitglied der Geschäftsleitung bei Microsoft (und im Falle von Kunden, die über eine Lizenz für das Kunden-Lockbox-Feature verfügen, durch den Kunden) genehmigt wurde.
 
 ### <a name="how-does-microsoft-secure-your-data"></a>Wie werden Ihre Daten durch Microsoft geschützt?
 
-Microsoft verfügt über robuste Richtlinien, Steuerelemente und Systeme, die in Microsoft 365 integriert sind, um Ihre Informationen zu schützen. Lesen Sie den [Abschnitt Microsoft 365 Security](https://go.microsoft.com/fwlink/p/?linkid=864393) im Microsoft Trust Center, um weitere Informationen zu erhalten.
+Microsoft hat solide Richtlinien, Steuerelemente und Systeme in Microsoft 365 integriert, die zum Schutz Ihrer Daten beitragen. Weitere Informationen finden Sie im Abschnitt [Sicherheit in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=864393) im Microsoft Trust Center.
 
-### <a name="does-microsoft-365-encrypt-your-data"></a>Verschlüsseln Microsoft 365 Ihre Daten?
+### <a name="does-microsoft-365-encrypt-your-data"></a>Verschlüsselt Microsoft 365 Ihre Daten?
 
-Microsoft 365 verwendet dienstseitige Technologien zum Verschlüsseln von Kundendaten im Rest und in der Übertragung. Für Kundendaten im Ruhezustand verwendet Microsoft 365 die Verschlüsselung auf Volumen-und Dateiebene. Für Kundendaten während der Übertragung verwendet Microsoft 365 mehrere Verschlüsselungstechnologien für die Kommunikation zwischen Rechenzentren und zwischen Clients und Servern, wie TLS (Transport Layer Security) und IPSec (Internet Protocol Security). Microsoft 365 umfasst auch von Kunden verwaltete Verschlüsselungsfeatures.
+Microsoft 365 verwendet dienstseitige Technologien, mit denen Kundendaten im Ruhezustand und während der Übertragung verschlüsselt werden. Bei ruhenden Kundendaten verwendet Microsoft 365 Verschlüsselung auf Volumen- und auf Dateiebene. Bei in Übertragung begriffenen Kundendaten verwendet Microsoft 365 mehrere Verschlüsselungstechnologien für die Kommunikation zwischen Rechenzentren sowie zwischen Clients und Servern, z. B. TLS (Transport Layer Security) und IPSec (Internet Protocol Security). Microsoft 365 umfasst außerdem vom Kunden verwaltete Verschlüsselungsfunktionen.
 
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Wo finde ich Informationen zur Datenaufbewahrung für Microsoft Azure?
 
@@ -86,26 +86,26 @@ Informationen zur Datenaufbewahrung im Zusammenhang mit Microsoft Azure finden S
 
 ### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Was sind die Multi-Geo-Funktionen in Microsoft 365?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) bietet Kunden die Möglichkeit, zentrale Kundendaten in Ruhe an unseren verfügbaren Standorten in der Microsoft 365 Cloud zu verteilen.   
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) bietet Kunden die Möglichkeit, die in der Microsoft 365-Cloud verfügbaren zentralen ruhenden Kundendaten zur Verfügung zu stellen.   
 
 ### <a name="what-services-support-multi-geo"></a>Welche Dienste unterstützen die Multi-Geo-Funktion?
 
-Die [Multi-Geo-Funktionen](https://go.microsoft.com/fwlink/p/?linkid=872033) stehen für Exchange Online, OneDrive und SharePoint Online zur Verfügung. Microsoft untersucht Multi-Geo für andere Microsoft 365-Dienste.
+Die [Multi-Geo-Funktionen](https://go.microsoft.com/fwlink/p/?linkid=872033) stehen für Exchange Online, OneDrive und SharePoint Online zur Verfügung. Microsoft sucht derzeit nach einer Möglichkeit, Multi-Geo-Funktionen auch für andere Microsoft 365-Dienste bereitzustellen.
 
-### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Was sind die Ausnahmen für InTune-Datenspeicherorte?
+### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Was sind die Ausnahmen für Intune-Datenspeicherorte?
 
-Microsoft speichert keine InTune-Kundendaten im Rest außerhalb des angegebenen Geo. außer wenn:
+Microsoft speichert keine ruhenden Intune-Kundendaten, die sich außerhalb der angegebenen Geo-Daten befinden. Außer wenn Folgendes zutrifft:
 
-- Es ist erforderlich, dass Microsoft Kundensupport bereitstellt, die Problembehandlung für den Dienst durchführen oder gesetzliche Anforderungen erfüllt.
-- Der Kunde konfiguriert ein Konto, um eine solche Speicherung von Kundendaten zu ermöglichen, einschließlich der folgenden Verwendung:
+- Microsoft muss Kundensupport bereitstellen, Probleme beim Dienst beheben oder gesetzliche Bestimmungen einhalten.
+- Der Kunde konfiguriert ein Konto so, dass eine solche Speicherung von Kundendaten ermöglicht wird, einschließlich der Verwendung von Folgendem:
 
-  - Funktionen, die Global ausgeführt werden sollen, beispielsweise Content Delivery Network (CDN), das einen globalen Zwischenspeicherdienst bereitstellt und Kundendaten an Edge-Standorten auf der ganzen Welt speichert.
+  - Features, die für den globalen Betrieb konzipiert sind, z. B. das Netzwerk für die Inhaltsübermittlung (Content Delivery Network, CDN), das einen globalen Cachingdienst bietet und Kundendaten an Edge-Standorten weltweit speichert.
 
-  - Azure Active Directory (Azure AD), die Verzeichnisdaten Global speichern kann. Dies gilt nicht für Azure AD-Bereitstellungen in den Vereinigten Staaten (in denen Azure AD Daten ausschließlich in den USA gespeichert werden) oder in Europa (wobei Azure AD Daten in Europa oder in den USA gespeichert werden).
+  - Azure Active Directory (Azure AD), das Verzeichnisdaten möglicherweise weltweit speichert. Dies gilt nicht für Azure AD-Bereitstellungen in den Vereinigten Staaten (in denen Azure AD-Daten nur in den Vereinigten Staaten gespeichert werden) oder in Europa (in denen Azure AD-Daten in Europa oder den Vereinigten Staaten gespeichert werden).
    
-  - Vorschau, Beta oder andere Vorabversionen, in denen Kundendaten in der Regel in den USA gespeichert werden, aber möglicherweise Global gespeichert werden.
+  - Preview-, Beta- oder andere Vorabversionen von Diensten, die Kundendaten in der Regel in den Vereinigten Staaten speichern, aber sie möglicherweise global speichern.
 
-Unabhängig davon kontrolliert oder beschränkt Microsoft nicht die Geo-Daten, aus denen Kunden oder deren Endbenutzer auf Kundendaten zugreifen können. 
+Unabhängig davon steuert oder begrenzt Microsoft nicht die Geo-Funktion, mit der Kunden oder deren Endbenutzer auf Kundendaten zugreifen können. 
 
 ## <a name="data-center-locations"></a>Standorte von Rechenzentren
 
@@ -142,7 +142,7 @@ Im Folgenden sind die Orte angegeben, an denen ruhende Kundendaten im Hinblick a
 | Vereinigtes Königreich | Durham, London, Cardiff |
 | Vereinigte Staaten |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Land der Rechnungsadresse verwendet, die dem ersten Abonnement dieses Mandanten zugeordnet ist. Wenn Sie wissen möchten, wo Kundendaten für bestehende Office 365-Dienste gespeichert werden, überprüfen Sie die mandantenspezifischen Informationen zu Datenspeicherorten in ihrem Office 365 Admin Center unter Einstellungen | Organisationsprofil | Datenspeicherort-Karte. Erweitern Sie alternativ das Land, in dem Ihr Unternehmen basiert, in der Liste unten, um herauszufinden, wo Kundendaten gespeichert würden, wenn Sie einen Microsoft 365-Dienst noch heute verwenden möchten.
+Die Region für neue Microsoft 365-Mandanten wird standardmäßig basierend auf dem Land der Rechnungsadresse festgelegt, die dem ersten Abonnement dieses Mandanten zugeordnet ist. Wenn Sie wissen möchten, wo Kundendaten für bestehende Office 365-Dienste gespeichert werden, überprüfen Sie die mandantenspezifischen Informationen zu Datenspeicherorten in ihrem Office 365 Admin Center unter Einstellungen | Organisationsprofil | Datenspeicherort-Karte. Oder erweitern Sie auf der nachstehenden Liste das Land, in dem Ihr Unternehmen seinen Sitz hat, um zu ermitteln, wo Kundendaten gespeichert würden, wenn Sie heute mit der Nutzung eines Microsoft 365-Dienstes beginnen würden.
 
 ## <a name="afghanistan"></a>Afghanistan
 <details><summary>Zum Erweitern klicken</summary><p>
@@ -441,7 +441,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -473,7 +473,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Australien |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Australien |
+| OneNote Services | Australien |
 | Stream | Australien |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -513,7 +513,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -593,7 +593,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -609,7 +609,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -689,7 +689,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Vereinigte Staaten |
+| OneNote Services | Vereinigte Staaten |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -761,7 +761,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -921,7 +921,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -929,7 +929,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -977,7 +977,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1017,7 +1017,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -1065,7 +1065,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -1101,7 +1101,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Stream | Globale Region 1 – EMEA |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
-| Workplace Analytics | USA |
+| Workplace Analytics | Vereinigte Staaten |
 </p></details>
 
 ## <a name="canada"></a>Kanada
@@ -1161,7 +1161,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -1265,7 +1265,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1289,7 +1289,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1313,7 +1313,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1433,7 +1433,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1521,7 +1521,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
 | SharePoint Online | Globale Region 3 – Nord- und Südamerika |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Globale Region 3 – Nord- und Südamerika |
 | EOP | Globale Region 3 – Nord- und Südamerika |
 | Intune | Vereinigte Staaten |
@@ -1529,7 +1529,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 3 – Nord- und Südamerika |
+| OneNote Services | Globale Region 3 – Nord- und Südamerika |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1833,7 +1833,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -1905,7 +1905,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -1913,7 +1913,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -1937,7 +1937,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Australien |
+| OneNote Services | Australien |
 | Stream | Australien |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2033,7 +2033,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2121,7 +2121,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2169,7 +2169,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2193,7 +2193,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2241,7 +2241,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -2321,7 +2321,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2561,7 +2561,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Vereinigte Staaten |
+| OneNote Services | Vereinigte Staaten |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2577,7 +2577,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -2585,7 +2585,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2625,7 +2625,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2673,7 +2673,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -2681,7 +2681,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -2697,7 +2697,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2745,7 +2745,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2769,7 +2769,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -2817,7 +2817,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -2961,7 +2961,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -3081,7 +3081,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -3089,7 +3089,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3201,7 +3201,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -3297,7 +3297,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -3345,7 +3345,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -3369,7 +3369,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -3377,7 +3377,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3393,7 +3393,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -3449,7 +3449,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3641,7 +3641,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3753,7 +3753,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -3801,7 +3801,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -3833,7 +3833,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3873,7 +3873,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -3905,7 +3905,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -3945,7 +3945,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -4073,7 +4073,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -4113,7 +4113,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -4161,7 +4161,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -4241,7 +4241,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -4313,7 +4313,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -4329,7 +4329,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -4337,7 +4337,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -4473,7 +4473,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -4641,7 +4641,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -4665,7 +4665,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -4745,7 +4745,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -4953,7 +4953,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -4961,7 +4961,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Vereinigte Staaten |
+| OneNote Services | Vereinigte Staaten |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5025,7 +5025,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -5105,7 +5105,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Vereinigte Staaten |
+| OneNote Services | Vereinigte Staaten |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5153,7 +5153,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5217,7 +5217,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -5297,7 +5297,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5361,7 +5361,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -5385,7 +5385,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -5433,7 +5433,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -5457,7 +5457,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
@@ -5465,7 +5465,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5609,7 +5609,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5673,7 +5673,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 1 – EMEA |
 | SharePoint Online | Globale Region 1 – EMEA |
 | Skype for Business | Globale Region 1 – EMEA |
-| Microsoft Teams | Globale Region 1 – EMEA |
+| Microsoft Teams | Globale Region 1 – EMEA |
 | Office Online &amp; Mobile | Globale Region 1 – EMEA |
 | EOP | Globale Region 1 – EMEA |
 | Intune | Globale Region 1 – EMEA |
@@ -5745,7 +5745,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Vereinigte Staaten |
 | SharePoint Online | Vereinigte Staaten |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Vereinigte Staaten |
 | EOP | Vereinigte Staaten |
 | Intune | Vereinigte Staaten |
@@ -5753,7 +5753,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Vereinigte Staaten |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Vereinigte Staaten |
+| OneNote Services | Vereinigte Staaten |
 | Stream | Vereinigte Staaten |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5769,7 +5769,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 3 – Nord- und Südamerika |
 | SharePoint Online | Globale Region 3 – Nord- und Südamerika |
 | Skype for Business | Vereinigte Staaten |
-| Microsoft Teams | Vereinigte Staaten |
+| Microsoft Teams | Vereinigte Staaten |
 | Office Online &amp; Mobile | Globale Region 3 – Nord- und Südamerika |
 | EOP | Globale Region 3 – Nord- und Südamerika |
 | Intune | Vereinigte Staaten |
@@ -5801,7 +5801,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5849,7 +5849,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5897,7 +5897,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | Planner | Globale Region 2 – Asien-Pazifik |
 | Sway | Vereinigte Staaten |
 | Yammer | Vereinigte Staaten |
-| OneNote-Dienste | Globale Region 2 – Asien-Pazifik |
+| OneNote Services | Globale Region 2 – Asien-Pazifik |
 | Stream | Globale Region 2 – Asien-Pazifik |
 | Whiteboard | Vereinigte Staaten |
 | Formulare | Vereinigte Staaten |
@@ -5913,7 +5913,7 @@ Neue Microsoft 365-Mandanten werden standardmäßig in Geo basierend auf dem Lan
 | OneDrive for Business | Globale Region 2 – Asien-Pazifik |
 | SharePoint Online | Globale Region 2 – Asien-Pazifik |
 | Skype for Business | Globale Region 2 – Asien-Pazifik |
-| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
+| Microsoft Teams | Globale Region 2 – Asien-Pazifik |
 | Office Online &amp; Mobile | Globale Region 2 – Asien-Pazifik |
 | EOP | Globale Region 2 – Asien-Pazifik |
 | Intune | Globale Region 2 – Asien-Pazifik |
