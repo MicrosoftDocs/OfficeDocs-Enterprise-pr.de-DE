@@ -14,17 +14,17 @@ ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
 description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung einreichen, damit die Kundendaten ihrer teilnehmenden Microsoft 365-Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: dae2c7e4f2fc529a32af6127b4f054f9c3d01344
-ms.sourcegitcommit: 3cf463d28b7ba65957049dd3ed7cfbdf5f14fb82
+ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278068"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433756"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 
 > [!NOTE]
-> Die Informationen auf dieser Seite gelten nur für Kunden, die bereits über vorhandene Microsoft 365-Mandanten verfügten, bevor die neuen Rechenzentren in Ihrem Geo gestartet wurden. 
+> Die Informationen auf dieser Seite gelten nur für Kunden, die bereits über vorhandene Microsoft 365-Mandanten verfügten, bevor die neuen Rechenzentren in Ihrem Geo gestartet wurden. Die Berechtigung für die Migration hängt auch vom Bereitstellungsdatum der jeweiligen Arbeitsauslastung ab, sodass das Erstellungsdatum des Mandanten möglicherweise nicht immer das einzelne Datum ist, auf das es ankommt.
   
 Vorhandene Microsoft 365-Kunden sind berechtigt, die Migration für die wichtigsten Kundendaten Ihrer Organisation in Ruhe anzufordern.  
   

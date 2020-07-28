@@ -1,5 +1,5 @@
 ---
-title: Erstellen Sie eine Microsoft 365-Gruppe mit einem bestimmten PLD
+title: Erstellen einer Microsoft 365-Gruppe mit einer bestimmten PDL
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
-description: Erfahren Sie, wie Die eine Microsoft 365-Gruppe mit einem bestimmten bevorzugten Datenspeicherort in einer Multi-Geo-Umgebung erstellen.
-ms.openlocfilehash: 5b2294ff8821e84cb0158fa989b97134353969b2
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+localization_priority: Normal
+description: In diesem Artikel erfahren Sie, wie Sie eine Microsoft 365-Gruppe mit einem angegebenen bevorzugten Datenspeicherort in einer Multi-Geo-Umgebung erstellen.
+ms.openlocfilehash: bcababe39035550be445f2eee4d8121a2983132f
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057985"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433856"
 ---
-# <a name="create-an-microsoft-365-group-with-a-specific-pdl"></a>Erstellen Sie eine Microsoft 365-Gruppe mit einem bestimmten PLD
+# <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>Erstellen einer Microsoft 365-Gruppe mit einer bestimmten PDL
 
-Wenn ein Benutzer in einer Multi-Geo-Umgebung eine Microsoft 365-Gruppe erstellt, wird als bevorzugter Datenspeicherort der Gruppe automatisch der dieses Benutzers festgelegt. Globale, SharePoint- und Exchange-Administratoren können Gruppen in jeder ausgewählten Region erstellen. 
+Wenn Benutzer in einer Multi-Geo-Umgebung eine Microsoft 365-Gruppe erstellen, wird der bevorzugte Datenspeicherort der Gruppe automatisch auf den des Benutzers festgelegt. Globale, SharePoint- und Exchange-Administratoren können Gruppen in jeder ausgewählten Region erstellen. 
 
 Wenn Sie eine Gruppe mit einem bestimmten PLD erstellen möchten, können Sie dies über das SharePoint Admin Center oder unter Verwendung des Exchange Online New-UnifiedGroup Microsoft PowerShell-Cmdlets vornehmen. Wenn Sie dies tun, werden das zugewiesene Gruppenpostfach und die SharePoint-Website für die Gruppe der angegebenen Verteilerliste an diesem bestimmten PLD bereitgestellt.
 
-Um eine Microsoft 365-Gruppe mit dem von Ihnen angegebenen PDL zu erstellen, wechseln Sie zum SharePoint Admin Center an dem geografischen Standort, an dem Sie die Gruppenwebsite erstellen möchten.
+Um eine Microsoft 365-Gruppe mit der von Ihnen angegebenen PDL zu erstellen, wechseln Sie zum SharePoint Admin Center am geografischen Speicherort, an dem Sie die Gruppen Website erstellen möchten.
 
 Zum Beispiel:
 

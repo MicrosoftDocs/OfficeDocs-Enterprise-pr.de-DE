@@ -10,14 +10,14 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: ''
-localization_priority: Priority
+localization_priority: Normal
 description: Erfahren Sie, wie Sie Exchange Online Multi-Geo-Einstellungen mit Microsoft PowerShell verwalten.
-ms.openlocfilehash: d2498178193f71c1ffaea6141a09cc76e826e99e
-ms.sourcegitcommit: ee6fcb8c78de748fa203deacf799f66ad99f18e1
-ms.translationtype: HT
+ms.openlocfilehash: 7c05699b411a3f36fc1bb8b47e643283d1ec2d65
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352945"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433506"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung
 
@@ -103,7 +103,8 @@ MailboxRegion               : EUR
 MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
-> **Hinweis:** Wenn der geografische Standortcode im Datenbanknamen nicht mit dem Wert **MailboxRegion** übereinstimmt, wird das Postfach automatisch in eine Verschiebungswarteschlange eingefügt und an den geografischen Standort verschoben, der im Wert ** MailboxRegion** angegeben ist (Exchange Online sucht nach einem Konflikt zwischen diesen Eigenschaftswerten).
+> [!NOTE]
+> Wenn der Geo-Standortcode im Datenbanknamen nicht mit dem **MailboxRegion** -Wert übereinstimmt, wird das Postfach automatisch in eine Verschiebungs Warteschlange verschoben und an den durch den **MailboxRegion** -Wert angegebenen geografischen Speicherort verschoben (Exchange Online sucht nach einem Missverhältnis zwischen diesen Eigenschaftswerten).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Verschieben eines bereits vorhandenen Nur-Cloud-Postfachs an einen bestimmten geografischen Standort
 
@@ -133,17 +134,16 @@ Um z. B. den **PreferredDataLocation**-Wert auf die Geodaten der  Europäischen 
 Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataLocation EUR
 ```
 
-**Hinweise**:
-
-- Wie bereits erwähnt, können sie diese Vorgehensweise nicht für synchronisierte Benutzerobjekte aus dem lokalen Active Directory verwenden. Sie müssen den **PreferredDataLocation**-Wert in Active Directory ändern und mithilfe von AAD Connect synchronisieren. Weitere Informationen finden Sie unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Microsoft 365-Ressourcen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
-
-- Wie lange es dauert, ein Postfach an einen neuen geografischen Standort zu verschieben, hängt von mehreren Faktoren ab:
-
-  - Der Größe und Art des Postfachs.
-
-  - Der Anzahl der zu verschiebenden Postfächern.
-
-  - Der Verfügbarkeit von Umzugsressourcen.
+> [!NOTE]
+> - Wie bereits erwähnt, können Sie dieses Verfahren nicht für synchronisierte Benutzerobjekte aus lokalen Active Directory verwenden. Sie müssen den **PreferredDataLocation**-Wert in Active Directory ändern und mithilfe von AAD Connect synchronisieren. Weitere Informationen finden Sie unter [Azure Active Directory Connect-Synchronisierung: Konfigurieren von bevorzugten Datenspeicherorten für Microsoft 365-Ressourcen](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> 
+> - Wie lange es dauert, ein Postfach an einen neuen geografischen Standort zu verschieben, hängt von mehreren Faktoren ab:
+> 
+>   - Der Größe und Art des Postfachs.
+> 
+>   - Der Anzahl der zu verschiebenden Postfächern.
+> 
+>   - Der Verfügbarkeit von Umzugsressourcen.
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>Dem Verschieben deaktivierter Postfächer, die einem Beweissicherungsverfahren unterliegen
 

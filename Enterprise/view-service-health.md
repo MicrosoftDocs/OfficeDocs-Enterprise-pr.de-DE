@@ -25,12 +25,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support aufrufen, um zu sehen, ob eine aktive Dienstunterbrechung vorliegt.
-ms.openlocfilehash: d937310faeaf5af63a6c36841d7a609006fc4ab5
-ms.sourcegitcommit: 057f0fce08b41a00581fc4736cad89270129c703
+ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44266693"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433886"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienststatus
 
@@ -68,6 +68,9 @@ Wenn Sie sich für e-Mail-Benachrichtigungen über neue Vorfälle, die sich auf 
 - Bis zu zwei e-Mail-Adressen.
 - Ob Benachrichtigungen für Vorfälle oder Warnungen gewünscht werden
 - Die Dienste, für die eine Benachrichtigung gewünscht wird
+
+> [!NOTE]
+> Jeder Administrator kann seine Einstellungen festlegen, und der obige Grenzwert von zwei e-Mail-Adressen ist pro Administratorkonto.
 
 > [!TIP]
 > Sie können auch die [Microsoft 365-Administrator-App](https://go.microsoft.com/fwlink/p/?linkid=627216) auf Ihrem mobilen Gerät verwenden, um die Dienst Integrität anzuzeigen, was eine hervorragende Möglichkeit ist, mit Push-Benachrichtigungen auf dem neuesten Stand zu bleiben. 
@@ -145,4 +148,5 @@ Weitere Informationen zu unserer Verpflichtung zur Verfügbarkeit finden Sie unt
 
 ## <a name="see-also"></a>Siehe auch
 
-[Teams-Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+[Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+ [Nachrichtencenter-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

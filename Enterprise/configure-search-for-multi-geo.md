@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.collection: Strat_SP_gtc
-localization_priority: Priority
+localization_priority: Normal
 description: Dieser Artikel enthält Informationen zum Konfigurieren der Suche in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: 0b84dc2eea246643e277936cfa8eeb2b9f87b614
-ms.sourcegitcommit: 012bf4d8ad132435f9baeffd6f7e5ed264a8bfe0
-ms.translationtype: HT
+ms.openlocfilehash: 06dcfd179b37ae98a4e28b05f55b9f684fb1bc89
+ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44057671"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45433566"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurieren der Suche für Microsoft 365 Multi-Geo
 
@@ -258,11 +258,11 @@ Mit einer GET-Anforderung geben Sie die Abfrageparameter in der URL an. Mit eine
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Beispiel für eine GET-Anforderung, die für **alle** geografischen Standorte aufgefächert wird
 
-https:// \<tenant\>/\_api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my\_client\_id'
+https:// \<tenant\> / \_ -API/Search/Query? querytext = ' SharePoint ' &Properties = ' EnableMultiGeoSearch: true ' &Clienttype = ' My \_ Client \_ ID '
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Beispiel für eine GET-Anforderung, die für **einige** geografischen Standorte aufgefächert wird
 
-https:// \<Mandant\>/\_api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation\\:"NAM"\\,Endpoint\\:"https\\://contosoNAM.sharepoint.com"\\,SourceId\\:"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"}\\,{DataLocation\\:"CAN"\\,Endpoint\\:"https\\://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\> / \_ -API/Search/Query? querytext = ' Website ' &Clienttype = ' my_client_id ' &Properties = ' EnableMultiGeoSearch: true, MultiGeoSearchConfiguration: [{DataLocation \\ : "Nam" \\ , EndPoint \\ : "HTTPS \\ ://contosoNAM.SharePoint.com", Source-Eigenschaft \\ \\ : "B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {DataLocation \\ : "Can" \\ , EndPoint \\ : "HTTPS \\ ://contosoCAN.SharePoint-DF.com"}] "
 
 > [!NOTE]
 > Kommas und Doppelpunkten in der Liste der geografischen Standorte für die Eigenschaft MultiGeoSearchConfiguration wird ein **umgekehrtes Schrägstrichzeichen** vorangestellt. Dies hat den Grund, dass in GET-Anforderungen Doppelpunkte zum Trennen von Eigenschaften und Kommas zum Trennen von Argumenten von Eigenschaften verwendet werden. Ohne den umgekehrten Schrägstrich als Escapezeichen würde die MultiGeoSearchConfiguration-Eigenschaft falsch interpretiert.
