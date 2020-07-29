@@ -3,7 +3,7 @@ title: Deaktivieren des Zugriffs auf Microsoft 365-Dienste mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 07/27/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,16 +19,16 @@ ms.custom:
 - LIL_Placement
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: Verwenden Sie PowerShell, um den Zugriff auf Microsoft 365-Dienste für Benutzer zu deaktivieren.
-ms.openlocfilehash: 4e7c59447dae027dffa7fd5ea24d1818d5d64a9a
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 7820bc44837af07975b2eeaeddf2cf20a9230fae
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230681"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502640"
 ---
 # <a name="disable-access-to-microsoft-365-services-with-powershell"></a>Deaktivieren des Zugriffs auf Microsoft 365-Dienste mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Wenn einem Microsoft 365-Konto eine Lizenz aus einem Lizenzierungs Plan zugewiesen wird, werden dem Benutzer die Microsoft 365-Dienste von dieser Lizenz zur Verfügung gestellt. Sie können jedoch die Microsoft 365-Dienste steuern, auf die der Benutzer zugreifen kann. Beispielsweise können Sie den Zugriff darauf deaktivieren, auch wenn die Lizenz den Zugriff auf den SharePoint Online Dienst zulässt. Sie können PowerShell verwenden, um den Zugriff auf eine beliebige Anzahl von Diensten für einen bestimmten Lizenzierungs Plan für zu deaktivieren:
 
@@ -139,19 +139,19 @@ Gehen Sie dazu folgendermaßen vor:
     
 1. Erstellen Sie eine Textdatei wie die folgende, die in jeder Zeile ein Konto enthält:
     
-  ```powershell
-  akol@contoso.com
-  tjohnston@contoso.com
-  kakers@contoso.com
-  ```
+   ```powershell
+   akol@contoso.com
+   tjohnston@contoso.com
+   kakers@contoso.com
+   ```
 
-  In diesem Beispiel lautet die Textdatei C: \\ My Documents \\Accounts.txt.
+   In diesem Beispiel lautet die Textdatei C: \\ My Documents \\Accounts.txt.
     
 2. Führen Sie den folgenden Befehl aus:
     
-  ```powershell
-  Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
-  ```
+   ```powershell
+   Get-Content "C:\My Documents\Accounts.txt" | foreach {Set-MsolUserLicense -UserPrincipalName $_ -LicenseOptions $LO}
+   ```
 
 Wenn Sie den Zugriff auf Dienste für mehrere Lizenzierungs Pläne deaktivieren möchten, wiederholen Sie die obigen Anweisungen für jeden Lizenzierungs Plan, um Folgendes sicherzustellen:
 
@@ -160,6 +160,16 @@ Wenn Sie den Zugriff auf Dienste für mehrere Lizenzierungs Pläne deaktivieren 
 
 Informationen zum Deaktivieren von Microsoft 365-Diensten für Benutzer, während Sie Sie einem Lizenzierungs Plan zuweisen, finden Sie unter [Deaktivieren des Zugriffs auf Dienste beim Zuweisen von Benutzerlizenzen](disable-access-to-services-while-assigning-user-licenses.md).
 
+### <a name="assign-all-services-in-a-licensing-plan-to-a-user-account"></a>Zuweisen aller Dienste in einem Lizenzierungs Plan zu einem Benutzerkonto
+
+Für Benutzerkonten, für die Dienste deaktiviert wurden, können Sie mit den folgenden Befehlen alle Dienste für einen bestimmten Lizenzierungs Plan aktivieren:
+
+```powershell
+$userUPN="<user account UPN>"
+$acctSKU="<AccountSkuId>"
+$LO = New-MsolLicenseOptions -AccountSkuId $acctSKU
+Set-MsolUserLicense -UserPrincipalName $userUPN -LicenseOptions $LO
+```
 
 ## <a name="see-also"></a>Siehe auch
 

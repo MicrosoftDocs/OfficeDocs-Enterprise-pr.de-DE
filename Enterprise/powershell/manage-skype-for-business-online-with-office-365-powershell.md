@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 07/17/2020
 audience: ITPro
-ms.topic: hub-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Ent_O365
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365 zum Verwalten von Skype for Business Online-Richtlinien, benutzerspezifischen Richtlinien und Besprechungseinstellungen.'
-ms.openlocfilehash: f66b3186a5b29bbf0756a629b85c626caf2c1e36
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: 0701fdb8a0a1f588e1c113ad7050ed516638aebc
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230441"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502610"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Verwalten von Skype for Business Online mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Eine der Hauptaufgaben des Skype for Business Online-Administrators ist die Richtlinienverwaltung. Obwohl Sie einige dieser Aufgaben im Microsoft 365 Admin Center erledigen können, sind andere Aufgaben in PowerShell viel schneller und einfacher. 
 
@@ -36,12 +36,12 @@ Laden Sie das [Skype for Business Online-Connector-Modul](https://www.microsoft.
 
 1. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus: 
     
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $userCredential = Get-Credential
-  $sfbSession = New-CsOnlineSession -Credential $userCredential
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
 
 2. Geben Sie im Dialogfeld **Windows PowerShell Anmeldeinformationen** Ihren Skype for Business Online Administratorkontonamen und das Kennwort ein, und klicken Sie dann auf **OK**.
 
@@ -50,11 +50,11 @@ Laden Sie das [Skype for Business Online-Connector-Modul](https://www.microsoft.
 
 1. Öffnen Sie eine Windows PowerShell-Eingabeaufforderung, und führen Sie die folgenden Befehle aus:
 
-  ```powershell
-  Import-Module SkypeOnlineConnector
-  $sfbSession = New-CsOnlineSession
-  Import-PSSession $sfbSession
-  ```
+   ```powershell
+   Import-Module SkypeOnlineConnector
+   $sfbSession = New-CsOnlineSession
+   Import-PSSession $sfbSession
+   ```
 
 2. Wenn Sie mit dem Befehl **New-CsOnlineSession** dazu aufgefordert werden, geben Sie den Namen Ihres Skype for Business Online Administratorkontos ein.
 
@@ -70,7 +70,7 @@ Weitere Informationen hierzu finden Sie in den folgenden Themen:
     
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
 
