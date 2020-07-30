@@ -1,12 +1,12 @@
 ---
-title: Herunterladen und Ausführen des Microsoft 365-IdFix-Tools
+title: Herunterladen und Ausführen des Microsoft 365 IdFix-Tools
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f4bd2439-3e41-4169-99f6-3fabdfa326ac
-description: Hier erfahren Sie, wie Sie das Microsoft 365 IdFix-Tool herunterladen und ausführen, um Ihre Active Directory-Domänendienste (AD DS) vor dem Synchronisieren mit Microsoft 365 zu bereinigen.
-ms.openlocfilehash: c4df63e6162b1d53cb7a45f046542443177b25ff
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
-ms.translationtype: MT
+description: Hier erfahren Sie, wie Sie das Microsoft 365 IdFix-Tool herunterladen und ausführen, um Ihr Active Directory Domain Services (AD DS) vor der Synchronisierung mit Microsoft 365 zu bereinigen.
+ms.openlocfilehash: beef13857ad00806cc3e62aedd7a1b3c48bfe4c0
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774860"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502660"
 ---
-# <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Herunterladen und Ausführen des Microsoft 365-IdFix-Tools
+# <a name="download-and-run-the-microsoft-365-idfix-tool"></a>Herunterladen und Ausführen des Microsoft 365 IdFix-Tools
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-IdFix identifiziert Fehler wie Duplikate und Formatierungsprobleme in Ihrer Active Directory-Domänendienste (AD DS) Domäne vor der Synchronisierung mit Microsoft 365. 
+IdFix ermittelt Fehler wie Duplikate und Formatierungsprobleme in Ihrer Active Directory Domain Services (AD DS)-Domäne, bevor Sie die Synchronisierung mit Microsoft 365 vornehmen. 
   
 Um diese Aufgabe erfolgreich abschließen zu können, sollten Sie mit der Arbeit mit Benutzern, Gruppen und Kontaktobjekten in Ad DS vertraut sein.
   
@@ -58,7 +58,7 @@ Der Computer, auf den Sie IdFix herunterladen, muss diese Mindesthardwareanforde
    
 ### <a name="idfix-software-requirements"></a>IdFix-Softwareanforderungen
 
-Der Computer, auf dem Sie IdFix herunterladen, muss derselben AD DS Domäne hinzugefügt werden, aus der Sie Benutzer mit Microsoft 365 synchronisieren möchten. 
+Der Computer, auf den Sie IdFix herunterladen, muss mit derselben AD DS-Domäne verbunden sein, von der aus Sie Benutzer mit Microsoft 365 synchronisieren möchten. 
 
 Auf dem Computer muss zudem .NET Framework 4.0 installiert sein. Wenn Sie Windows Server 2008 oder höher ausführen, ist .NET Framework möglicherweise bereits installiert. Ist das nicht der Fall, [laden Sie .NET 4.0 aus dem Download Center herunter](https://go.microsoft.com/fwlink/p/?LinkId=400475) oder unter Verwendung von Windows Update. 
   
@@ -74,15 +74,15 @@ Befolgen Sie diese Anweisungen.
   
 1. Melden Sie sich am Computer an, auf dem Sie das IdFix-Tool ausführen möchten.
     
-2. Wechseln Sie zur Website des [IdFix Dirsync-Fehlerbehebungstools](https://github.com/microsoft/idfix) .
+2. Wechseln Sie zur Website [IdFix DirSync Error Remediation Tool](https://github.com/microsoft/idfix) (IdFix DirSync-Fehlerbehebungstool).
     
-3. Klicken Sie im Abschnitt **ClickOnce-Start** auf **starten** , um die ZIP-Datei herunterzuladen. Öffnen Sie die ZIP-Datei.
+3. Klicken Sie im Abschnitt **ClickOnce Launch** (ClickOnce-Start) auf **launch** (Starten), um die ZIP-Datei herunterzuladen. Öffnen Sie die ZIP-Datei.
     
 4. Wählen Sie im Fenster **IdFix** die Option **Extrahieren** aus, und klicken Sie dann auf **Alle extrahieren**. Standardmäßig wird IdFix in `C:\Users\<your user name>\Documents\IdFix` extrahiert. 
     
 5. Wählen Sie **Extrahieren** aus.
 
-Ihre Schritte können je nach ihrer Version von Windows und Ihrem Internet Browser variieren.
+Ihre Schritte können je nach ihrer Version von Windows und dem verwendeten Internetbrowser variieren.
     
 ## <a name="run-the-idfix-tool"></a>Ausführen des IdFix-Tools
 
@@ -94,7 +94,7 @@ Nachdem Sie IdFix heruntergeladen und extrahiert haben, führen Sie es aus, um n
     
 3. Doppelklicken Sie auf **IdFix.exe**. 
   
-4. IdFix verwendet standardmäßig den mehrinstanzenfähigen Regelsatz zum Testen der Einträge in Ihrem Verzeichnis. Dies ist der richtige Regelsatz für die meisten Microsoft 365-Kunden. Wenn Sie jedoch ein Microsoft 365-dedizierter oder internationaler ITAR-Kunde sind, können Sie IdFix so konfigurieren, dass stattdessen der dedizierte Regelsatz verwendet wird. Wenn Sie nicht sicher sind, was für ein Kundentyp Sie sind, können Sie diesen Schritt einfach überspringen. Um den Regelsatz auf "Dediziert" einzustellen, klicken Sie in der Menüleiste auf das Zahnradsymbol, und wählen Sie dann **Dediziert** aus.
+4. IdFix verwendet standardmäßig den mehrinstanzenfähigen Regelsatz zum Testen der Einträge in Ihrem Verzeichnis. Dies ist der richtige Regelsatz für die meisten Microsoft 365-Kunden. Wenn Sie jedoch ein Kunde vom Typ "Microsoft 365 dediziert" oder "ITAR (International Traffic in Arms Regulations)" sind, können Sie IdFix so konfigurieren, dass stattdessen die "Dediziert"-Regel verwendet wird. Wenn Sie nicht sicher sind, was für ein Kundentyp Sie sind, können Sie diesen Schritt einfach überspringen. Um den Regelsatz auf "Dediziert" einzustellen, klicken Sie in der Menüleiste auf das Zahnradsymbol, und wählen Sie dann **Dediziert** aus.
     
 5. Wählen Sie **Abfrage** aus.
     
@@ -104,7 +104,7 @@ Nachdem Sie IdFix heruntergeladen und extrahiert haben, führen Sie es aus, um n
     
     Je nach der Größe Ihres Verzeichnisses kann das Ausführen der Abfrage eine Weile dauern. Sie können den Fortschritt unten im Hauptfenster des Tools anzeigen. Wenn Sie auf **Abbrechen** klicken, müssen Sie erneut von vorn beginnen.
   
-7. Wenn IdFix die Abfrage abgeschlossen und keine Fehler gefunden hat, können Ihr Verzeichnis synchronisieren. Wenn in Ihrem Verzeichnis Fehler vorhanden sind, sollten Sie sie beheben, bevor Sie die Synchronisierung vornehmen. Weitere Informationen finden Sie unter [Prepare Directory attributes for Synchronization with Microsoft 365](prepare-directory-attributes-for-synch-with-idfix.md) .
+7. Wenn IdFix die Abfrage abgeschlossen und keine Fehler gefunden hat, können Ihr Verzeichnis synchronisieren. Wenn in Ihrem Verzeichnis Fehler vorhanden sind, sollten Sie sie beheben, bevor Sie die Synchronisierung vornehmen. Weitere Informationen finden Sie unter [Vorbereiten von Verzeichnisattributen für die Synchronisierung mit Microsoft 365](prepare-directory-attributes-for-synch-with-idfix.md).
     
     Obwohl es nicht obligatorisch ist, die Fehler vor der Synchronisierung zu beheben, empfehlen wir ausdrücklich, dass Sie wenigstens alle durch IdFix zurückgegebenen Fehler überprüfen.
     
@@ -114,7 +114,7 @@ Nachdem Sie IdFix heruntergeladen und extrahiert haben, führen Sie es aus, um n
     
     Sie müssen nicht nach jeder Aktualisierung auf **Übernehmen** klicken. Sie können auch zuerst mehrere Fehler beheben und dann auf **Übernehmen** klicken. IdFix führt dann alle Änderungen gleichzeitig aus. Sie können die Fehler nach Fehlertyp sortieren, indem Sie oben in der Spalte, in der die Fehlertypen aufgelistet werden, auf **ERROR** klicken. 
     
-    Eine Strategie besteht darin, alle Fehler desselben Typs zu beheben. Ändern Sie beispielsweise zunächst alle Duplikate, und übernehmen Sie sie. Beheben Sie als Nächstes Zeichenformatierungsfehler usw. Bei jeder Übernahme der Änderungen erstellt das IdFix-Tool eine separate Protokolldatei, die Sie zum Rückgängigmachen Ihrer Änderungen verwenden können, falls Sie einen Fehler begehen. Das [Transaktionsprotokoll](idfix-transaction-log.md) wird in dem Ordner gespeichert, in dem Sie IdFix extrahiert haben, was standardmäßig _C:\Users \<your user name> \Documents\IdFix_ ist. 
+    Eine Strategie besteht darin, alle Fehler desselben Typs zu beheben. Ändern Sie beispielsweise zunächst alle Duplikate, und übernehmen Sie sie. Beheben Sie als Nächstes Zeichenformatierungsfehler usw. Bei jeder Übernahme der Änderungen erstellt das IdFix-Tool eine separate Protokolldatei, die Sie zum Rückgängigmachen Ihrer Änderungen verwenden können, falls Sie einen Fehler begehen. Das [Transaktionsprotokoll](idfix-transaction-log.md) wird in dem Ordner gespeichert, in den Sie IdFix extrahiert haben. Standardmäßig ist dies _C:\Users\<your user name>\Documents\IdFix_. 
     
     ![Beseitigen von Fehlern in IdFix.](media/5f051070-652c-4be7-98bf-312295e32371.png)
   

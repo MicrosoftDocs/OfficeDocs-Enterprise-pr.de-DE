@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: d0804cec4ce2c15345a9c4ddc83525d1961f8db4
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
-ms.translationtype: MT
+ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
+ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996539"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502670"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -45,7 +45,7 @@ Jeder Office 365-Kunde muss zwei Einträge zu seinem externen DNS hinzufügen. D
 ||||
 |:-----|:-----|:-----|
 |**DNS-Eintrag** <br/> |**Zweck** <br/> |**Zu verwendender Wert** <br/> |
-|**CNAME** <br/> **(Suite)** <br/> |Von Office 365 zum Weiterleiten der Authentifizierung an die richtige Identitätsplattform verwendet. [Weitere Informationen](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Hinweis:** Dieser CNAME gilt nur für Office 365, betrieben von 21Vianet.   |**Alias:** msoID  <br/> **Ziel:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
+|**CNAME** <br/> **(Suite)** <br/> |Von Office 365 zum Weiterleiten der Authentifizierung an die richtige Identitätsplattform verwendet. [Weitere Informationen](https://go.microsoft.com/fwlink/p/?LinkId=322005) <br/> **Hinweis:** Dieser CNAME gilt nur für Office 365, betrieben von 21Vianet. [Weitere Informationen](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)  |**Alias:** msoID  <br/> **Ziel:** clientconfig.partner.microsoftonline-p.net.cn  <br/> |
 |**TXT** <br/> **(Domänenüberprüfung)** <br/> |Von Office 365 ausschließlich zur Überprüfung verwendet, ob Sie der Besitzer Ihrer Domäne sind. Dieser Wert hat keine weiteren Auswirkungen.  <br/> |**Host:** @ (oder, bei einigen DNS-Hostinganbietern, Ihr Domänenname)  <br/> **TXT Value (TXT-Wert):** _Eine von_ Office 365 bereitgestellte Textzeichenfolge  <br/> Der Office 365-Assistent zur **Domäneneinrichtung** stellt die Werte zur Verfügung, die Sie zum Erstellen dieses Eintrags verwenden.  <br/> |
 
 
@@ -67,7 +67,7 @@ E-Mail-Benutzer, die Exchange-Partnerverbund verwenden, benötigen außerdem ein
 |:-----|:-----|:-----|
 |**DNS-Eintrag** <br/> |**Zweck** <br/> |**Zu verwendender Wert** <br/> |
 |**CNAME** <br/> **(Exchange Online)** <br/> |Unterstützt Outlook-Clients bei der einfachen Verbindung mit dem Exchange-Online-Dienst mithilfe des AutoErmittlungs-Diensts. Die AutoErmittlung sucht automatisch den korrekten Exchange Server-Host und konfiguriert Outlook für Benutzer.  <br/> |**Alias:** Autodiscover  <br/> **Target (Ziel):** autodiscover.outlook.com  <br/> |
-|**MX** <br/> **(Exchange Online)** <br/> |Sendet eingehende Mails für Ihre Domäne an den Exchange Online-Dienst in Office 365.  <br/> [!NOTE] Sobald E-Mails an Exchange Online übertragen werden, sollten Sie die MX-Einträge entfernen, die auf Ihr altes System verweisen.   |**Domain (Domäne):** Beispielsweise contoso.com  <br/> **Ziel-e-Mail-Server:** \<MX token\> . mail.protection.outlook.com  <br/> **Preference/Priority (Präferenz/Priorität):** Niedriger als alle anderen MX-Einträge (dies stellt sicher, dass E-Mail an Exchange Online übermittelt wird) – z. B. 1 oder "low" (niedrig)  <br/>  Führen Sie die \<MX token\> folgenden Schritte aus, um das zu finden:  <br/>  Melden Sie sich bei Office 365 an, und wechseln Sie zu "Office 365-Administrator" \> "Domänen".  <br/>  Wählen Sie in der Spalte "Aktion" für Ihre Domäne "Probleme beheben" aus.  <br/>  Wählen Sie im Abschnitt für MX-Einträge die Option "Was korrigiere ich?" aus.  <br/>  Folgen Sie den Anweisungen auf dieser Seite, um den MX-Eintrag zu aktualisieren.  <br/> [Was ist MX-Priorität?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
+|**MX** <br/> **(Exchange Online)** <br/> |Sendet eingehende Mails für Ihre Domäne an den Exchange Online-Dienst in Office 365.  <br/> [!NOTE] Sobald E-Mails an Exchange Online übertragen werden, sollten Sie die MX-Einträge entfernen, die auf Ihr altes System verweisen.   |**Domain (Domäne):** Beispielsweise contoso.com  <br/> **Target email server (E-Mail-Zielserver):**\<MX token\>.mail.protection.outlook.com  <br/> **Preference/Priority (Präferenz/Priorität):** Niedriger als alle anderen MX-Einträge (dies stellt sicher, dass E-Mail an Exchange Online übermittelt wird) – z. B. 1 oder "low" (niedrig)  <br/>  Suchen Sie den \<MX token\>, indem Sie diesen Schritten folgen:  <br/>  Melden Sie sich bei Office 365 an, und wechseln Sie zu "Office 365-Administrator" \> "Domänen".  <br/>  Wählen Sie in der Spalte "Aktion" für Ihre Domäne "Probleme beheben" aus.  <br/>  Wählen Sie im Abschnitt für MX-Einträge die Option "Was korrigiere ich?" aus.  <br/>  Folgen Sie den Anweisungen auf dieser Seite, um den MX-Eintrag zu aktualisieren.  <br/> [Was ist MX-Priorität?](https://go.microsoft.com/fwlink/p/?LinkId=396471) <br/> |
 |**SPF (TXT)** <br/> **(Exchange Online)**  <br/> |Dadurch kann verhindert werden, dass Dritte Ihre Domäne verwenden, um Spam oder andere schädliche E-Mails zu senden. SPF-Einträge (Sender Policy Framework) identifizieren die Server, die autorisiert sind, um E-Mails Ihrer Domäne zu senden.  <br/> |[Für SPF erforderliche externe DNS-Einträge](external-domain-name-system-records.md#BKMK_SPFrecords) <br/> |
 |**TXT** <br/> **(Exchange-Partnerverbund)** <br/> |Für Exchange-Partnerverbund für Hybridbereitstellungen verwendet.  <br/> |**TXT-Eintrag 1:** Beispiel: contoso.com und zugeordneter, benutzergenerierter Hash-Text zum Nachweis für die Domäne (Beispiel: Y96nu89138789315669824)  <br/> **TXT-Eintrag 2:** Beispiel: exchangedelegation.contoso.com und zugeordneter, kundengenerierter Hash-Text zum Nachweis für die Domäne (Beispiel: Y3259071352452626169)  <br/> |
 |**CNAME** <br/> **(Exchange-Partnerverbund)** <br/> |Unterstützt Outlook-Clients bei der einfachen Verbindung mit dem Exchange Online-Dienst mithilfe des AutoErmittlungs-Diensts für den Fall, dass Ihr Unternehmen Exchange-Partnerverbund einsetzt. Die AutoErmittlung sucht automatisch den korrekten Exchange Server-Host und konfiguriert Outlook für Ihre Benutzer.  <br/> |**Alias:** Beispiel: Autodiscover.service.contoso.com  <br/> **Target (Ziel):** autodiscover.outlook.com  <br/> |
@@ -79,7 +79,7 @@ E-Mail-Benutzer, die Exchange-Partnerverbund verwenden, benötigen außerdem ein
 Wenn Sie [Office 365-URLs und IP-Adressbereiche](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_LYO) verwenden, müssen bestimmte Schritte ausgeführt werden, um sicherzustellen, dass Ihr Netzwerk ordnungsgemäß konfiguriert ist.
 
 > [!NOTE]
-> Diese DNS-Einträge gelten auch für Teams – insbesondere in einem Hybridszenario mit Teams und Skype for Business Online, bei dem bestimmte Verbundprobleme auftreten könnten.
+> Diese DNS-Einträge gelten auch für Teams – insbesondere in einem Hybridszenario mit Teams und Skype for Business, bei dem bestimmte Verbundprobleme auftreten könnten.
   
 ||||
 |:-----|:-----|:-----|
@@ -128,11 +128,11 @@ In Szenarien, in denen Sie nicht nur Exchange Online-E-Mail für Office 365 verw
 |||||
 |:-----|:-----|:-----|:-----|
 ||Wenn Sie Folgendes verwenden...  <br/> |Zweck  <br/> |Diese Einschlüsse hinzufügen  <br/> |
-|1   <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> |Alle SPF-Einträge beginnen mit dem folgenden Wert  <br/> |v=spf1  <br/> |
-|2   <br/> |Exchange Online (verbreitet)  <br/> |Bei ausschließlicher Nutzung von Exchange Online verwenden  <br/> |include:spf.protection.outlook.com  <br/> |
-|3   <br/> |Drittanbieter-E-Mail-Systeme (weniger verbreitet)  <br/> ||enthalten:\<email system like mail.contoso.com\>  <br/> |
-|4   <br/> |Lokales E-Mail-System (weniger verbreitet)  <br/> |Verwenden Sie dies, wenn Sie Exchange Online Protection oder Exchange Online zusammen mit einem anderen Mailsystem verwenden.  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> enthalten:\<mail.contoso.com\>  <br/> Die Werte in spitzen Klammern (\<\>) sollten andere E-Mail-Systeme sein, die E-Mails für Ihre Domäne senden.  <br/> |
-|5   <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> ||-all  <br/> |
+|1  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> |Alle SPF-Einträge beginnen mit dem folgenden Wert  <br/> |v=spf1  <br/> |
+|2  <br/> |Exchange Online (verbreitet)  <br/> |Bei ausschließlicher Nutzung von Exchange Online verwenden  <br/> |include:spf.protection.outlook.com  <br/> |
+|3  <br/> |Drittanbieter-E-Mail-Systeme (weniger verbreitet)  <br/> ||include:\<email system like mail.contoso.com\>  <br/> |
+|4  <br/> |Lokales E-Mail-System (weniger verbreitet)  <br/> |Verwenden Sie dies, wenn Sie Exchange Online Protection oder Exchange Online zusammen mit einem anderen Mailsystem verwenden.  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> enthalten:\<mail.contoso.com\>  <br/> Die Werte in spitzen Klammern (\<\>) sollten andere E-Mail-Systeme sein, die E-Mails für Ihre Domäne senden.  <br/> |
+|5  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Beispiel: Hinzufügen zu einem vorhandenen SPF-Eintrag
 <a name="bkmk_addtospf"> </a>
@@ -144,7 +144,7 @@ TXT Name @
 Values: v=spf1 ip4:60.200.100.30 include:smtp.adatum.com -all
 ```
 
-Jetzt aktualisieren Sie den SPF-Eintrag für Office 365. Sie bearbeiten den aktuellen Datensatz so, dass Sie einen SPF-Eintrag haben, der die benötigten Werte enthält. Für Office 365, "SPF.Protection.Outlook.com".
+Nun aktualisieren Sie den SPF-Eintrag für Office 365. Sie bearbeiten Ihren aktuellen Eintrag so, dass Sie über einen SPF-Eintrag verfügen, der die benötigten Werte enthält. Für Office 365: "spf.protection.outlook.com".
   
 Richtig:
   
@@ -166,7 +166,7 @@ Values: v=spf1 include:spf.protection.outlook.com -all
 ### <a name="more-examples-of-common-spf-values"></a>Weitere Beispiele für häufig verwendete SPF-Werte
 <a name="bkmk_addtospf"> </a>
 
-Wenn Sie die vollständige Office 365 Suite verwenden und mailschimpanse verwenden, um Marketing-e-Mails in Ihrem Auftrag zu senden, könnte Ihr SPF-Eintrag bei Contoso.com wie folgt aussehen, wobei die Zeilen 1, 3 und 5 aus der obigen Tabelle verwendet werden. Beachten Sie, dass die Zeilen 1 und 5 erforderlich sind.
+Wenn Sie die gesamte Office 365-Suite verwenden und "MailChimp" zum Versenden von Marketing-E-Mails in Ihrem Auftrag nutzen, kann Ihr SPF-Eintrag bei "contoso.com" dem folgenden ähneln, bei dem die Zeilen 1, 3 und 5 aus der Tabelle oben verwendet werden. Denken Sie daran, dass die Zeilen 1 und 5 erforderlich sind.
   
 ``` dns
 TXT Name @
