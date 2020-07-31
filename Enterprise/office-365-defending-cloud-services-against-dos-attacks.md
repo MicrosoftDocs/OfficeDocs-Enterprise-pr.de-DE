@@ -15,16 +15,15 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Wie Microsoft seine Cloud-Dienste vor Denial-of-Service-Angriffen (DOS) verteidigt.
-ms.openlocfilehash: 58d2d3611c65ba098049fab71282253f7c054ea3
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.openlocfilehash: a8374e46c9b561afce77545293b9bae3dd42ed64
+ms.sourcegitcommit: 72217e86b0da7ba13407aefe270200449c352548
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998329"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529088"
 ---
 # <a name="defending-microsoft-365-cloud-services-against-denial-of-service-attacks"></a>Schützen von Microsoft 365 Cloud-Diensten vor Denial-of-Service-Angriffen
 
-## <a name="introduction"></a>Einführung
 Microsoft-Rechenzentren werden durch umfassende Sicherheitsvorkehrungen geschützt, einschließlich Umkreis Fechten, Videokameras, Sicherheitspersonal und sicheren Eingängen, die Biometrie, Smartcard und mehrstufige Authentifizierung verwenden. Die tiefen Verteidigungs Sicherheit wird durch jeden Bereich der Einrichtung und für jede physische SERVEREINHEIT fortgesetzt. Die [Microsoft Cloud Infrastructure and Operations Group](https://www.microsoft.com/cloud-platform/global-datacenters) bietet die Kerninfrastruktur und grundlegende Technologien für unsere Cloud-Dienste. Unsere Rechenzentren entsprechen Branchenstandards für physische Sicherheit und Zuverlässigkeit und werden von Microsoft Operationspersonal verwaltet, überwacht und verwaltet.
 
 Um unsere Cloud-Dienste weiter zu schützen, bietet Microsoft ein DDoS-Abwehrsystem an, das Teil der Microsoft Azure kontinuierlichen Überwachungs-und Penetrationstest Prozesse ist. Das Azure DDoS-Abwehrsystem ist nicht nur für Angriffe von außen, sondern auch von anderen Azure-Mandanten ausgelegt. Azure verwendet standardmäßige Erkennungs-und Minderungs Methoden wie SYN-Cookies, raten Begrenzungen und Verbindungs Grenzwerte zum Schutz vor DDoS-Angriffen.
