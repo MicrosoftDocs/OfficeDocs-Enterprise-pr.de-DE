@@ -19,16 +19,16 @@ ms.custom:
 - SPO_Content
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365 zum Verwalten von SharePoint Online Benutzern, Gruppen und Websites.'
-ms.openlocfilehash: ffdaa2d4810e2e89878ea3eacde99babb046fce2
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ae232766031dade061e79a574efa14e8432ae08c
+ms.sourcegitcommit: 7bf52d4277b97d6f1c585da2c83979fbcf061c1e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230471"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "46542816"
 ---
 # <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Verwalten von SharePoint Online-Benutzern und-Gruppen mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Wenn Sie ein SharePoint Online Administrator sind, der mit umfangreichen Listen mit Benutzerkonten oder Gruppen arbeitet und eine einfachere Verwaltung wünscht, können Sie PowerShell für Microsoft 365 verwenden. 
 
@@ -67,9 +67,9 @@ $user = "<user account name, such as opalc>"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
  ```
 
-Um diese Befehle zu verwenden, ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der < und > Zeichen, durch die richtigen Namen ersetzen.
+Um diese Befehle zu verwenden, ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der < und > Zeichen, mit den richtigen Namen.
 
-Beispielsweise fügt dieser Befehlssatz Opal Castillo (User Name opalc) die Liste der Websitesammlungsadministratoren für die ContosoTest-Websitesammlung in der Contoso-Mandantschaft hinzu:
+Beispielsweise fügt dieser Befehlssatz der Liste der Websitesammlungsadministratoren in der ContosoTest-Websitesammlung im Contoso-Mandanten Opal Castillo (Benutzername opalc) hinzu:
 
 ```powershell
 $tenant = "contoso"
@@ -284,4 +284,3 @@ Dieser Bericht ist ziemlich einfach, und Sie können weitere Code hinzufügen, u
 [Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
-
