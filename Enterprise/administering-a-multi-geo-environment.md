@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: a4e467edebbcfbb0288b698f3e7d5bcf589cdd69
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433526"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548897"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
@@ -104,3 +104,7 @@ Stream ist jedoch noch nicht in den folgenden Regionen verfügbar, die derzeit f
 - Kanada
 - India
 - Vereinigtes Königreich
+
+## <a name="yammer"></a>Yammer
+
+Jammern ist keine Multi-Geo-Arbeitsauslastung. In "jammern" gespeicherte Threads zum jammern werden am zentralen Standort des Mandanten abgelegt. Bei jammern wird eine Dateispeicher Änderung eingeführt, in der die Jammer Dateien in SharePoint gespeichert werden. In SharePoint gespeicherte Jammer Dateien werden in die SharePoint-Website aufgenommen, die der Gruppe jammern zugeordnet ist. SharePoint-Gruppen Websites basieren auf der PDL-Logik, wie in [SharePoint-Websites und-Gruppen](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365#sharepoint-sites-and-groups)beschrieben.
