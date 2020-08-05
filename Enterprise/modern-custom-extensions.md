@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie die Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten optimieren können.
-ms.openlocfilehash: bdc05c4e786d07a18c49766bf37aca7f4fde56da
-ms.sourcegitcommit: c024b48115cebfdaadfbc724acc2d065394156e9
+ms.openlocfilehash: dbf0c3cba009a102bf37dd65f14e8cb882303cfe
+ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42603819"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46548857"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimieren der Leistung benutzerdefinierter Erweiterungen in modernen SharePoint Online-Webseiten
 
@@ -37,14 +37,15 @@ Das Tool "Seitendiagnose für SharePoint" ist eine Browsererweiterung für den n
 >[!NOTE]
 >Das Seitendiagnose-Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
 
-Wenn Sie eine Seite einer SharePoint-Website mit dem Tool "Seitendiagnose für SharePoint" analysieren, werden im Ergebnis **Erweiterungen, die sich auf die Ladezeit auswirken** im Bereich _Diagnosetests_ Informationen über benutzerdefinierte Erweiterungen angezeigt, die die Baselinemetrik überschreiten.
+Wenn Sie eine Seite einer SharePoint-Website mit dem Tool "Seitendiagnose für SharePoint" analysieren, werden im Ergebnis **Erweiterungen, die sich auf die Ladezeit auswirken** und/oder **Zu viele Erweiterungen verwendet** im Bereich _Diagnosetests_ Informationen über benutzerdefinierte Erweiterungen angezeigt, die die Baselinemetrik überschreiten. 
 
 Mögliche Ergebnisse sind:
 
-- **Handlungsbedarf** (rot): eine _benutzerdefinierte_ Erweiterung, bei der der Ladevorgang länger als **eine** Sekunde dauert. Die in den Testergebnissen angezeigte Gesamtladezeit wird nach "Modul laden" und "Initialisieren" unterteilt.
+- **Handlungsbedarf** (rot): eine _benutzerdefinierte_ Erweiterung, bei der der Ladevorgang länger als **eine** Sekunde dauert. Die in den Testergebnissen angezeigte Gesamtladezeit wird nach "Modul laden" und "Initialisieren" unterteilt. Außerdem können sich zu viele Erweiterungen auf einer Seite auf die Ladezeit der Seite auswirken. Dies wird hervorgehoben, wenn **Sieben** oder mehr Erweiterungen auf der Seite verwendet werden.
+- **Verbesserungsmöglichkeiten** (gelb) Werden **fünf** oder mehr Erweiterungen verwendet, werden sie in diesem Abschnitt als Warnung hervorgehoben. Sobald sieben oder mehr verwendet werden, werden diese dann unter "Aktion erforderlich" hervorgehoben.
 - **Keine Aktion erforderlich** (grün): Keine Erweiterung benötigt länger als eine Sekunde zum Laden.
 
-Wirkt sich eine Erweiterung auf die Ladezeit von Seiten aus, wird das Ergebnis im Abschnitt **Aktion erforderlich** der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten zu sehen, welche Erweiterung langsam geladen wird. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
+Wirkt sich eine Erweiterung auf die Ladezeit von Seiten aus oder liegen zu viele Erweiterungen auf der Seite vor, wird das Ergebnis im Abschnitt **Aktion erforderlich** der Ergebnisse angezeigt. Klicken Sie auf das Ergebnis, um Einzelheiten anzuzeigen, wenn Erweiterungen langsam geladen oder zu viele Erweiterungen hervorgehoben werden. Zukünftige Updates des Tools "Seitendiagnose für SharePoint" können Aktualisierungen der Analyseregeln enthalten. Stellen Sie daher sicher, dass Sie immer über die neueste Version des Tools verfügen.
 
 ![Ergebnisse der Seitenladezeiten](media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
