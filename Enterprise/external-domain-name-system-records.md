@@ -7,7 +7,7 @@ ms.date: 10/21/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: ef324adf098d72dca589d60587fd3d5e5c461555
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: b17d97102498cbaabc87b89bb7cd1f32134cfbcd
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502670"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570978"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
@@ -125,14 +125,13 @@ In Szenarien, in denen Sie nicht nur Exchange Online-E-Mail für Office 365 verw
 > [!NOTE]
 > In komplizierten Szenarien, die beispielsweise Edge-E-Mail-Server zum Verwalten des E-Mail-Verkehrs über Ihre Firewall hinweg umfassen, muss ein mit mehr Details versehener SPF-Eintrag eingerichtet werden. Hier erfahren Sie mehr: [Einrichten von SPF-Einträgen in Office 365 zur Unterstützung der Vermeidung von Spoofing](https://go.microsoft.com/fwlink/?LinkId=787656). Darüber hinaus können Sie viel mehr über die Funktionsweise von SPF im Zusammenspiel mit Office 365 aus [Verwenden des Sender Policy Framework (SPF) durch Office 365 zum Verhindern von Spoofing](https://go.microsoft.com/fwlink/?LinkId=787065) erfahren.
   
-|||||
+| Zahlen|Wenn Sie Folgendes verwenden...  <br/> |Zweck  <br/> |Diese Einschlüsse hinzufügen  <br/> |
 |:-----|:-----|:-----|:-----|
-||Wenn Sie Folgendes verwenden...  <br/> |Zweck  <br/> |Diese Einschlüsse hinzufügen  <br/> |
 |1  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> |Alle SPF-Einträge beginnen mit dem folgenden Wert  <br/> |v=spf1  <br/> |
 |2  <br/> |Exchange Online (verbreitet)  <br/> |Bei ausschließlicher Nutzung von Exchange Online verwenden  <br/> |include:spf.protection.outlook.com  <br/> |
 |3  <br/> |Drittanbieter-E-Mail-Systeme (weniger verbreitet)  <br/> ||include:\<email system like mail.contoso.com\>  <br/> |
-|4  <br/> |Lokales E-Mail-System (weniger verbreitet)  <br/> |Verwenden Sie dies, wenn Sie Exchange Online Protection oder Exchange Online zusammen mit einem anderen Mailsystem verwenden.  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> enthalten:\<mail.contoso.com\>  <br/> Die Werte in spitzen Klammern (\<\>) sollten andere E-Mail-Systeme sein, die E-Mails für Ihre Domäne senden.  <br/> |
-|5  <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> ||-all  <br/> |
+|4   <br/> |Lokales E-Mail-System (weniger verbreitet)  <br/> |Verwenden Sie dies, wenn Sie Exchange Online Protection oder Exchange Online zusammen mit einem anderen Mailsystem verwenden.  <br/> |ip4:\<0.0.0.0\>  <br/> ip6:\< : : \>  <br/> enthalten:\<mail.contoso.com\>  <br/> Die Werte in spitzen Klammern (\<\>) sollten andere E-Mail-Systeme sein, die E-Mails für Ihre Domäne senden.  <br/> |
+|5   <br/> |Alle E-Mail-Systeme (erforderlich)  <br/> ||-all  <br/> |
 
 ### <a name="example-adding-to-an-existing-spf-record"></a>Beispiel: Hinzufügen zu einem vorhandenen SPF-Eintrag
 <a name="bkmk_addtospf"> </a>

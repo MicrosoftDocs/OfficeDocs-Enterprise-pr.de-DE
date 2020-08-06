@@ -1,5 +1,5 @@
 ---
-title: Vorbereiten der Verzeichnissynchronisierung auf Microsoft 365
+title: Vorbereiten der Verzeichnissynchronisierung mit Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -26,14 +26,14 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Beschreibt, wie Sie die Bereitstellung von Benutzern auf Microsoft 365 mithilfe der Verzeichnissynchronisierung und die langfristigen Vorteile der Verwendung dieser Methode vorbereiten.
-ms.openlocfilehash: 2a4b5f54d7b5aafd5e5eb7a43859e49caa57a519
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 30e735d086f1c31219fc9d6d52ff0b2545f5c08d
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735693"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46570998"
 ---
-# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Vorbereiten der Verzeichnissynchronisierung auf Microsoft 365
+# <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Vorbereiten der Verzeichnissynchronisierung mit Microsoft 365
 
 *Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Microsoft 365 Enterprise.*
 
@@ -76,7 +76,7 @@ Führen Sie in Ihrem AD DS die folgenden Bereinigungsaufgaben für jedes Benutze
   - Mobiltelefon
   - Faxnummer
   - Straße
-  - Stadt
+  - Stadt/Ort
   - Bundesland/Kanton
   - PLZ
   - Land oder Region
@@ -166,8 +166,6 @@ Die Attribute, die Sie vorbereiten müssen, sind hier aufgelistet:
   - Routingfähige Domänen müssen verwendet werden; Beispielsweise können keine lokalen oder internen Domänen verwendet werden.
   - Unicode-Zeichen werden in Unterstriche umgewandelt.
   - **userPrincipalName** darf keine doppelten Werte im Verzeichnis enthalten. 
-
-Informationen zum Identifizieren von Fehlern in den Attributen ihrer AD DS finden Sie unter [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) to use the IdFix Tool.
     
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. Vorbereiten des userPrincipalName-Attributs
 
@@ -189,9 +187,6 @@ Wenn Sie die Verzeichnissynchronisierung bereits eingerichtet haben, stimmt der 
   
 Weitere Informationen finden Sie unter [Vorgehensweise Vorbereiten einer nicht routingfähigen Domäne (beispielsweise. Local Domain) für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
-
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum Korrigieren von Fehlern in den Attributen ihrer AD DS vor der Verzeichnissynchronisierung finden Sie unter [Prepare Directory Attributes with the IdFix Tool](prepare-directory-attributes-for-synch-with-idfix.md) .
-
-Wenn Sie alle mit dem IdFix-Tool identifizierten Attribut Fehler korrigiert haben und die Schritte 1 bis 5 oben ausgeführt haben, finden Sie weitere Informationen unter [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md).
+Wenn Sie die Schritte 1 bis 5 oben ausgeführt haben, finden Sie weitere Informationen unter [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md).

@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Beschreibt die Verzeichnissynchronisierung mit Microsoft 365, Active Directory-Domänendienste Bereinigung und das Azure Active Directory Connect-Tool.
-ms.openlocfilehash: b22533e66d18541b8eb72900514543367633e462
-ms.sourcegitcommit: d2a3d6eeeaa07510ee94c2bc675284d893221a95
+ms.openlocfilehash: 8bfb9a7d65bf76fdadafe1bb49da91115ee9d07c
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44711868"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571158"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Hybride Identitäts-und Verzeichnissynchronisierung für Microsoft 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Je nach Ihren geschäftlichen Anforderungen und technischen Anforderungen ist das hybride Identitätsmodell und die Verzeichnissynchronisierung die häufigste Wahl für Unternehmenskunden, die Microsoft 365 annehmen. Mit der Verzeichnissynchronisierung können Sie Identitäten in Ihrer Active Directory-Domänendienste (AD DS) verwalten, und alle Aktualisierungen an Benutzerkonten, Gruppen und Kontakten werden mit dem Azure Active Directory (Azure AD)-Mandanten Ihres Microsoft 365-Abonnements synchronisiert.
 
@@ -97,13 +97,11 @@ Lokale Verzeichnisobjekte können mit Microsoft 365 synchronisiert werden, und d
   
 Weitere Informationen finden Sie in der [Liste Azure AD Verbund Kompatibilität](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) .
   
-## <a name="ad-ds-cleanup"></a>AD DS Bereinigung
+## <a name="ad-ds-preparation"></a>AD DS Vorbereitung
 
 Um einen nahtlosen Übergang zu Microsoft 365 mithilfe der Synchronisierung sicherzustellen, müssen Sie Ihre AD DS Gesamtstruktur vorbereiten, bevor Sie mit der Bereitstellung von Microsoft 365 für die Verzeichnissynchronisierung beginnen.
   
-Wenn Sie die [Verzeichnissynchronisierung einrichten](set-up-directory-synchronization.md), besteht einer der Schritte darin, [das IdFix-Tool herunterzuladen und auszuführen](install-and-run-idfix.md). Sie können das IdFix-Tool verwenden, um die [Verzeichnisbereinigung](prepare-directory-attributes-for-synch-with-idfix.md)zu unterstützen.
-  
-Die Verzeichnisbereinigung sollte sich auf die folgenden Aufgaben konzentrieren:
+Die Verzeichnis Vorbereitung sollte sich auf die folgenden Aufgaben konzentrieren:
 
 - Entfernen Sie doppelte **proxyAddress** -und **userPrincipalName** -Attribute.
 - Aktualisieren Sie leere und ungültige **userPrincipalName** -Attribute mit gültigen **userPrincipalName** -Attributen.

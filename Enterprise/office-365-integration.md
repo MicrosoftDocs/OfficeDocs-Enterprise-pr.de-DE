@@ -21,16 +21,16 @@ search.appverid:
 - MED150
 ms.assetid: 263faf8d-aa21-428b-aed3-2021837a4b65
 description: Erfahren Sie, wie Sie Microsoft 365 mit Ihren vorhandenen Verzeichnisdiensten integrieren.
-ms.openlocfilehash: 456e3e73451a07750d707e2fca52df9214c2dfaa
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: 1207c7549a0c81a45211581be2b068ca8067a35b
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44736033"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571058"
 ---
 # <a name="microsoft-365-integration-with-on-premises-environments"></a>Microsoft 365-Integration in lokale Umgebungen
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Sie können Microsoft 365 mit Ihren vorhandenen Verzeichnisdiensten und mit einer lokalen Installation von Exchange Server, Skype for Business Server 2015 oder SharePoint Server integrieren.
   
@@ -50,7 +50,7 @@ Bevor Sie Microsoft 365 und eine lokale Umgebung integrieren, müssen Sie auch a
 Eine Liste der Tools, die Sie zum Verwalten von Microsoft 365-Benutzern und-Konten verwenden können, finden Sie unter [Verwalten von Microsoft 365-Konten](manage-office-365-accounts.md) . 
   
 ## <a name="integrate-microsoft-365-with-directory-services"></a>Integrieren von Microsoft 365 mit Verzeichnisdiensten
-Wenn Sie über vorhandene Benutzerkonten in einem lokalen Verzeichnis verfügen, möchten Sie nicht alle diese Konten in Microsoft 365 neu erstellen und möglicherweise Unterschiede oder Fehler zwischen den Umgebungen einführen. Mithilfe der Verzeichnissynchronisierung können Sie diese Konten zwischen der Onlineumgebung und der lokalen Umgebung spiegeln. Bei der Verzeichnissynchronisierung müssen sich die Benutzer nicht neue Informationen zu jeder Umgebung merken, und Sie brauchen die Konten nicht zweimal zu erstellen oder zu aktualisieren. Sie müssen [Ihr lokales Verzeichnis für die Verzeichnissynchronisierung vorbereiten](prepare-for-directory-synchronization.md). Sie können dies manuell tun oder das [IdFix-Tool](install-and-run-idfix.md) verwenden (das IdFix-Tool funktioniert nur mit Active Directory Domain Services [AD DS]). 
+Wenn Sie über vorhandene Benutzerkonten in einem lokalen Verzeichnis verfügen, möchten Sie nicht alle diese Konten in Microsoft 365 neu erstellen und möglicherweise Unterschiede oder Fehler zwischen den Umgebungen einführen. Mithilfe der Verzeichnissynchronisierung können Sie diese Konten zwischen der Onlineumgebung und der lokalen Umgebung spiegeln. Bei der Verzeichnissynchronisierung müssen sich die Benutzer nicht neue Informationen zu jeder Umgebung merken, und Sie brauchen die Konten nicht zweimal zu erstellen oder zu aktualisieren. Sie müssen [Ihr lokales Verzeichnis für die](prepare-for-directory-synchronization.md) Verzeichnissynchronisierung vorbereiten.
   
 ![Mit Verzeichnissynchronisierung sorgen Sie dafür, dass die Informationen für lokale und Online-Benutzerkonten synchronisiert bleiben.](media/a64af0d0-9be6-46b1-8727-277e683abf5e.png)
   

@@ -1,5 +1,5 @@
 ---
-title: Tools zum Verwalten von Microsoft 365-Konten
+title: Tools für die Verwaltung von Microsoft 365-Konten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,14 +20,14 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 'Erfahren Sie, welche Tools für die Verwaltung Ihrer Microsoft 365-Benutzer verwendet werden sollten. '
-ms.openlocfilehash: 324a95e111812180cefffe98f2d7ec3c64e956b1
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: ba73d899dee002fa08f373faaed4d772da546b13
+ms.sourcegitcommit: a9021ba0800ffc0da21cf2c4da67ab1da2d97099
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230231"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46571028"
 ---
-# <a name="tools-to-manage-microsoft-365-accounts"></a>Tools zum Verwalten von Microsoft 365-Konten
+# <a name="tools-to-manage-microsoft-365-accounts"></a>Tools für die Verwaltung von Microsoft 365-Konten
 
 Je nach Konfiguration können Sie Microsoft 365-Benutzer auf verschiedene Arten verwalten. Sie können Benutzer im [Microsoft 365 Admin Center](https://admin.microsoft.com), Windows PowerShell, in Active Directory-Domänendienste (AD DS) oder im Azure Active Directory (Azure AD)-Verwaltungsportal verwalten. 
 
@@ -57,7 +57,7 @@ Berücksichtigen Sie bei der Entscheidung, wie Ihre Organisation Konten erstelle
   
 - Die Verzeichnis Synchronisierungssoftware muss auf Servern in Ihrer lokalen Umgebung installiert sein, um die Identitäten zwischen Microsoft 365 und Ihrem AD DS zu verbinden.
     
-- Für eine beliebige Verzeichnissynchronisierungsoption, einschließlich SSO-Optionen, müssen Ihre AD DS Attribute den Standards entsprechen. Die Besonderheiten der Attribute, die in Ihrem Verzeichnis verwendet werden und welche Bereinigung (falls vorhanden) erforderlich ist, finden Sie unter [Prepare to Provision users Through Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). Informationen zum Verwenden der ID-Korrektur zum Automatisieren der Verzeichnisbereinigung finden Sie unter [herunterladen und Ausführen des Microsoft 365 ID Fix-Tools](install-and-run-idfix.md) . 
+- Für eine beliebige Verzeichnissynchronisierungsoption, einschließlich SSO-Optionen, müssen Ihre AD DS Attribute den Standards entsprechen. Die Besonderheiten der Attribute, die in Ihrem Verzeichnis verwendet werden und welche Bereinigung (falls vorhanden) erforderlich ist, finden Sie unter [Prepare to Provision users Through Directory Synchronization to Microsoft 365](prepare-for-directory-synchronization.md). 
     
 - Planen Sie, wie Sie Microsoft 365-Konten erstellen.
     
@@ -76,7 +76,7 @@ Berücksichtigen Sie bei der Entscheidung, wie Ihre Organisation Konten erstelle
     Wenn Sie alle Benutzer über das Admin Center hinzufügen und verwalten möchten, geben Sie den Standort an, und weisen Sie gleichzeitig mit dem Erstellen des Microsoft 365-Kontos Lizenzen zu. Daher ist nicht viel Planung erforderlich.
     
     > [!IMPORTANT]
-    > Das Erstellen von Konten in Microsoft 365 ohne Zuweisen einer Lizenz (beispielsweise zu SharePoint Online) bedeutet, dass der Kontobesitzer das Microsoft 365 Admin Center anzeigen kann, aber keinen der Dienste im Abonnement Ihres Unternehmens zugreifen kann. Nachdem Sie einen Standort und die Lizenz zugewiesen haben, wird das Konto auf den Dienst oder die Dienste repliziert, die Sie zugewiesen haben. Der Benutzer kann sich bei seinem Konto anmelden und die Ihnen zugewiesenen Dienste verwenden. 
+    > Das Erstellen von Konten in Microsoft 365 ohne Zuweisen einer Lizenz (beispielsweise zu SharePoint Online) bedeutet, dass der Kontobesitzer das Microsoft 365 Center anzeigen kann, aber keinen der Dienste im Abonnement Ihres Unternehmens zugreifen kann. Nachdem Sie einen Standort und die Lizenz zugewiesen haben, wird das Konto auf den Dienst oder die Dienste repliziert, die Sie zugewiesen haben. Der Benutzer kann sich bei seinem Konto anmelden und die Ihnen zugewiesenen Dienste verwenden. 
   
 ## <a name="next-steps"></a>Nächste Schritte
 
