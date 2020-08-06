@@ -112,11 +112,6 @@
 ### Hybrididentitäten
 #### [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md)
 #### [Vorbereiten einer nicht routingfähigen Domäne für die Verzeichnissynchronisierung](prepare-a-non-routable-domain-for-directory-synchronization.md)
-#### Verwenden des IdFix-Tools
-##### [Vorbereiten von Verzeichnisattributen mit dem IdFix-Tool](prepare-directory-attributes-for-synch-with-idfix.md)
-##### [Herunterladen und Ausführen des IdFix-Tools](install-and-run-idfix.md)
-##### [Ausgeschlossene und unterstützte Objekte und Attribute für IdFix](idfix-excluded-and-supported-objects-and-attributes.md)
-##### [IdFix-Transaktionsprotokoll](idfix-transaction-log.md)
 #### [Einrichten der Verzeichnissynchronisierung](set-up-directory-synchronization.md)
 ### [Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)
 
