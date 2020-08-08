@@ -1,5 +1,5 @@
 ---
-title: Office 365-Endpunkte
+title: Microsoft 365-Endpunkte
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date: 11/07/2018
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -18,40 +18,40 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: ''
-description: 'Zusammenfassung: In folgenden Artikeln finden Sie die Internet-Endpunkte für die verschiedenen Office 365-Clouds.'
-ms.openlocfilehash: 29fb2dab9873aad5f54c678de482941d25d6161f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
-ms.translationtype: HT
+description: 'Zusammenfassung: in diesen Artikeln finden Sie die Internet-Endpunkte der verschiedenen Microsoft 365-Clouds.'
+ms.openlocfilehash: 8fe95915f687b38a86fd13fb823a0db39637c47d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843576"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592199"
 ---
-# <a name="office-365-endpoints"></a>Office 365-Endpunkte
+# <a name="microsoft-365-endpoints"></a>Microsoft 365-Endpunkte
 
-**Zusammenfassung:** In folgenden Artikeln finden Sie die Internet-Endpunkte für die verschiedenen Office 365-Clouds.
-  
-Endpunkte sind die Gruppe von Ziel-IP-Adressen, DNS-Domänennamen und URLs für Office 365-Datenverkehr über das Internet. 
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Zum Optimieren der Leistung von auf Office 365-Cloud basierten Diensten benötigen diese Endpunkte besondere Behandlung durch Ihre Clientbrowser und die Geräte in Ihrem Edge-Netzwerk. Diese Geräten umfassen Firewalls, SSL Unterbrechung und Überprüfung, Paketüberprüfungsgeräte und Datensysteme Schutz vor Datenverlust.
+Endpunkte sind der Reihe von Ziel-IP-Adressen, DNS-Domänennamen und URLs für Microsoft 365-Datenverkehr im Internet. 
 
-Weitere Details finden Sie unter [ Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md).
+Um die Leistung auf Cloud-basierten Microsoft 365-Diensten zu optimieren, benötigen diese Endpunkte eine spezielle Behandlung durch ihre Clientbrowser und die Geräte in Ihrem Edge-Netzwerk. Zu diesen Geräten gehören Firewalls, SSL-Unterbrechung und-Inspektion sowie Paket Inspektionsgeräte sowie Systeme zur Verhinderung von Datenverlust.
 
-Es gibt derzeit fünf verschiedene Office 365-Clouds. Über diese Tabelle gelangen Sie zur Liste der jeweiligen Endpunkte.
+Details finden Sie unter [Managing Microsoft 365 Endpoints](managing-office-365-endpoints.md) .
+
+Derzeit gibt es fünf verschiedene Microsoft 365 Clouds. In dieser Tabelle werden Sie zur Liste der Endpunkte der einzelnen Endpunkte gelangen.
 
 |||
 |:-------|:-----|
-| [Weltweite Endpunkte](urls-and-ip-address-ranges.md) | Die Endpunkte für weltweite Office 365-Abonnements, welche die United States Government Community Cloud (GCC) umfassen. |
+| [Weltweite Endpunkte](urls-and-ip-address-ranges.md) | Die Endpunkte für weltweite Microsoft 365-Abonnements, einschließlich der US Government Community Cloud (gcc). |
 | [DoD-Endpunkte für US Government](office-365-u-s-government-dod-endpoints.md) | Die Endpunkte für United States Department of Defense (DoD)-Abonnements. |
 | [GCC High-Endpunkte für US Government](office-365-u-s-government-gcc-high-endpoints.md) | Die Endpunkte für United States Government Community Cloud High (GCC High)-Abonnements. |
-| [Endpunkte von Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Die Endpunkte für Office 365 betrieben von 21Vianet, das darauf ausgelegt ist, den Anforderungen für Office 365 in China zu erfüllen. |
-| [Endpunkte für Office 365 Deutschland](office-365-germany-endpoints.md) | Die Endpunkte für eine separate Cloud in Europa für die meisten regulierten Kunden in Deutschland, der Europäischen Union (EU) und der Europäischen Freihandelszone (EFTA). |
+| [Microsoft 365, betrieben von 21Vianet-Endpunkten](urls-and-ip-address-ranges-21vianet.md) | Die Endpunkte für Microsoft 365, betrieben von 21Vianet, die auf die Anforderungen von Microsoft 365 in China zugeschnitten sind. |
+| [Microsoft 365 Deutschland-Endpunkte](office-365-germany-endpoints.md) | Die Endpunkte für eine separate Cloud in Europa für die meisten regulierten Kunden in Deutschland, der Europäischen Union (EU) und der Europäischen Freihandelszone (EFTA). |
 |||
 
-Informationen über das automatische Abrufen der neuesten Liste der Endpunkte für Ihre Office 365-Cloud finden Sie unter [Office 365-IP-Adresse und URL-Web-Dienst](office-365-ip-web-service.md).
+Informationen zum Automatisieren der aktuellen Liste der Endpunkte für Ihre Microsoft 365-Cloud finden Sie unter [Office 365 IP-Adresse und URL-Webdienst](office-365-ip-web-service.md).
 
 Weitere Informationen über zusätzliche Endpunkte finden Sie in folgenden Artikeln:
 
 - [Zusätzliche, nicht in den Webdiensten enthaltene Endpunkte](additional-office365-ip-addresses-and-urls.md)
 - [Netzwerkanforderungen in Office 2016 für Mac](network-requests-in-office-2016-for-mac.md)
 
-Wenn Sie ein Lieferant von Netzwerkgeräten sind, treten Sie dem [Office 365-Netzwerk-Partnerprogramm](office-365-networking-partner-program.md) bei. Registrieren Sie sich für das Programm, um Kennektivitätsprinzipien von Office 365-Netzwerken in Ihre Produkte und Lösungen zu integrieren. 
+Wenn Sie ein Netzwerkgeräte Anbieter sind, nehmen Sie am [Office 365 Netzwerk Partner Programm](office-365-networking-partner-program.md)Teil. Registrieren Sie sich für das Programm, um Microsoft 365-Netzwerk Verbindungs Prinzipien in Ihre Produkte und Lösungen zu integrieren. 
