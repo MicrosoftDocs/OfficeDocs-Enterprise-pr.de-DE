@@ -7,7 +7,7 @@ ms.date: 1/24/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,12 +17,12 @@ ms.custom: Adm_O365_Setup
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: Einige Unternehmensnetzwerke schränken den Zugriff auf gewöhnliche Internetseiten ein, oder umfassen einen erheblichen Backhaul oder eine umfangreiche Verarbeitung des Netzwerkdatenverkehrs. Um sicherzustellen, dass die Computer in solchen Netzwerken auf Office 365 zugreifen können, müssen die Netzwerk- und Proxy-Administratoren die Liste der Office 365-Endpunkte, die aus vollqualifizierten Domänennamen (FQDNs), URLs und IP-Adressen bestehen, verwalten. Diese müssen den Direktverbindungs-, Proxy- und/oder Firewall-Regeln sowie den PAC-Dateien hinzugefügt werden, damit gewährleistet ist, dass Netzwerkanfragen Office 365 erreichen.
-ms.openlocfilehash: f1d5d0f858e021bdeeae6d3045a64a9d97df4ffb
-ms.sourcegitcommit: d9abb99b336170f07b8f3f6d00fac19ad2159d3a
-ms.translationtype: HT
+ms.openlocfilehash: 35f07538bd55386dc245286822eab9e14e70a3cf
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502630"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592159"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 

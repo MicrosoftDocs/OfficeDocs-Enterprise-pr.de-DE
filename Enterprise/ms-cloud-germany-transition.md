@@ -7,7 +7,7 @@ ms.date: 07/09/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 3270cb9cf51bc35e7eb7549a109b34c42dda16ff
-ms.sourcegitcommit: d34edff71d0b3c8088ec27049f0fc3b6ce57f7e7
-ms.translationtype: HT
+ms.openlocfilehash: f63a9228b8669ce0b7a1d49c7b0045a2065f9ec4
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092884"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592139"
 ---
 # <a name="migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -59,7 +59,7 @@ Während der Migration von Microsoft Cloud Deutschland in die deutschen Rechenze
 - Office 365-Gruppen
 - Dynamics 365 / Power Platform
 
-Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) beschrieben.
+Die Voraussetzungen und Auswirkungen der Migration für diese Dienste sind im Artikel [Dynamics 365 Customer Engagement](https://aka.ms/d365ceoptin) beschrieben.
 
 Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Mandanten in die Regionen der neuen deutschen Rechenzentren migrieren, wird Office 365 Video nach Abschluss der SharePoint Online-Migration nicht unterstützt. [Weitere Informationen](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)
 
@@ -203,7 +203,7 @@ Sie können [die Migration von](https://docs.microsoft.com/azure/germany/germany
 
 #### <a name="dynamics-365-and-power-bi"></a>Dynamics 365 und Power BI
 
-Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/pbioptin) an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
+Melden Sie sich noch heute für die von Microsoft gesteuerte Migration für [Dynamics 365 Customer Engagement](https://aka.ms/D365ceOptIn) und [Power BI](https://aka.ms/PBIOptIn) an. Wenn wir bereit sind, Ihre Migration zu starten, werden wir Sie über das [Message Center](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) im Microsoft 365 Admin Center informieren.
 
 ### <a name="will-the-price-change-for-the-office-services-that-i-use"></a>Werden die Preise für die von mir verwendeten Office-Dienste geändert?
 
@@ -221,7 +221,7 @@ Wenn Sie Fragen haben, können Sie uns wie folgt oder über Ihren Partner kontak
 
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](https://aka.ms/office365germanymoveoptin)
-- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/D365ceOptIn)
+- [Informationen zum Dynamics 365-Migrationsprogramm](https://aka.ms/d365ceoptin)
 - [Informationen zum Power BI-Migrationsprogramm](https://aka.ms/pbioptin)
 - [URLs und IP-Adressbereiche für Office 365](https://aka.ms/o365endpoints)
 - [Office 365 Hybrid-Konfigurationsassistent](https://aka.ms/HybridWizard)

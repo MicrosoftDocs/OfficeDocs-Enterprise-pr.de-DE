@@ -7,7 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -19,16 +19,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 'Zusammenfassung: in diesen Artikeln erfahren Sie, wie Sie Netzwerke für Microsoft 365 verstehen.'
-ms.openlocfilehash: 4c414d8cbf597af9165e991a71e5d6a6a330e33a
-ms.sourcegitcommit: c112869b3ecc0f574b7054ee1edc8c57132f8237
+ms.openlocfilehash: b1497c214777e34ce4a85701ce6596f50e59910d
+ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735657"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592149"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Einrichten Ihres Netzwerks für Microsoft 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Ein wichtiger Bestandteilihres Microsoft 365-onboardings besteht darin, sicherzustellen, dass Ihre Netzwerk-und Internet Verbindungen für einen optimierten Zugriff eingerichtet sind. Das Konfigurieren Ihres lokalen Netzwerks für den Zugriff auf eine global verteilte Software-as-a-Service (SaaS)-Cloud unterscheidet sich von einem herkömmlichen Netzwerk, das für den Datenverkehr zu lokalen Rechenzentren und einer zentralen Internet Verbindung optimiert ist. 
 
