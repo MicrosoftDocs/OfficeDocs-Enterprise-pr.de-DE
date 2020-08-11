@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Wie weiche und harte Datenlöschungen in Exchange Online verarbeitet werden.
-ms.openlocfilehash: 96d8676ad35bf3cc7ec2b21bdd24650ef90bb1a0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel erfahren Sie, wie Sie das Löschen von Daten für Postfächer und Elemente in Postfächern in Exchange Online umgehen können.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d7e96bb6bdb46cc81be6a684cb0f3cc1db354d9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998319"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606581"
 ---
 # <a name="exchange-online-data-deletion-in-microsoft-365"></a>Exchange Online Löschen von Daten in Microsoft 365
 

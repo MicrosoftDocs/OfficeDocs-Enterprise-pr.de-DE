@@ -13,6 +13,7 @@ f1.keywords:
 ms.custom:
 - Adm_O365
 - ms.lync.lac.ProviderManagedFeature
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -20,13 +21,13 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Holen Sie sich Administratorhilfe für Skype for Business-richten Sie Skype for Business, Ihr Netzwerk, Besprechungen und Sofortnachrichten sowie den externen Zugriff für Benutzer ein. Konfigurieren von Einstellungen, Problembehandlung und Anzeigen von Verwendungsberichten
-ms.openlocfilehash: f30073310c9b24e9b8242261e97e04c23f413967
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Als Administrator finden Sie Hilfe zum Einrichten von Teilen der Skype for Business Online, einschließlich Ihres Netzwerks, Besprechungen und Chats sowie des externen Zugriffs für Benutzer.
+ms.openlocfilehash: 2e0a3b47c89f1573b50681445e150755e0a78985
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841112"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603657"
 ---
 # <a name="skype-for-business-online-in-office-365---admin-help"></a>Skype for Business Online in Office 365 - Hilfe für Administratoren
 
@@ -52,7 +53,7 @@ Weitere Informationen hierzu finden Sie unter Optimieren der Leistung von Skype 
     
 - [Beheben von Verbindungsproblemen in Skype for Business](https://support.office.com/article/62777bc6-c52b-47ae-84ba-a8905c3b71dc)
     
-## <a name="set-up-skype-for-business-online"></a>Einrichten von Skype for Business Online
+## <a name="set-up-skype-for-business-online"></a>Einrichten von Skype for Business Online.
 
 - Einrichten von Skype for Business Online
     

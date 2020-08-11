@@ -11,15 +11,17 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: 'Zusammenfassung: Hier erhalten Sie Hilfe zu PowerShell für Microsoft 365 aus diesen Community-Orten.'
-ms.openlocfilehash: 8f07fa685f6abe4edb5d7a54a0f9584eecd0f3f7
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In diesem Artikel finden Sie Community-Ressourcen zum Herstellen einer Verbindung mit ihren Kollegen und erhalten von Hilfe zu PowerShell für Microsoft 365.
+ms.openlocfilehash: 4166e47bc974f9109d23bbe3732f0c5da3d41960
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230401"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606451"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>Microsoft 365 Community-Ressourcen für PowerShell
 
@@ -31,7 +33,7 @@ Verwenden Sie diese Communities, um Ihnen eine Verbindung mit ihren Kollegen zu 
     
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
 

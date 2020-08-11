@@ -1,5 +1,5 @@
 ---
-title: Verwenden von PowerShell zum Ausführen einer Cutover Migration zu Microsoft 365
+title: Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Microsoft 365
 ms.author: sirkkuw
 author: sirkkuw
 manager: laurawi
@@ -12,19 +12,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: 'Zusammenfassung: Hier erfahren Sie, wie Sie mit Windows PowerShell eine Cutover-Migration zu Microsoft 365 durchführen.'
-ms.openlocfilehash: 203c041e0bd5fe58d697d074e94b749726bb22bf
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In diesem Artikel erfahren Sie, wie Sie mithilfe von PowerShell die Inhalte aus einem Quell-e-Mail-System auf einmal durch Ausführen einer Cutover-Migration zu Microsoft 365 migrieren.
+ms.openlocfilehash: fde0795b767f908fb0d1dcc5ce17a0bb50235d8e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229851"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606221"
 ---
-# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Verwenden von PowerShell zum Ausführen einer Cutover Migration zu Microsoft 365
+# <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Microsoft 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Sie können die Inhalte von Benutzerpostfächern aus einem Quell-e-Mail-System auf einmal mithilfe einer Cutover-Migration zu Microsoft 365 migrieren. Dieser Artikel führt Sie durch die Aufgaben für eine E-Mail-Übernahmemigration mithilfe von Exchange Online PowerShell. 
   
@@ -85,7 +85,7 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
     
   - Der Migrationsadministrator muss Mitglied der Gruppe **Domänen-Admins** in Active Directory in der lokalen Organisation sein.
     
-    Oder
+    oder -
     
   - Dem Migrationsadministrator muss die Berechtigung **FullAccess** für jedes lokale Postfach zugewiesen werden.
     

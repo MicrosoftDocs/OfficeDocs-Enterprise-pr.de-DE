@@ -15,6 +15,7 @@ ms.custom:
 - globalemailconfig
 - configssc
 - AppDefToBDC
+- seo-marvel-apr2020
 ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
@@ -35,17 +36,17 @@ search.appverid:
 - BSA160
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
-description: Am 10. Oktober 2017 wurde die Unterstützung für SharePoint Server 2007 beendet. Lesen Sie diesen Artikel, um Informationen zu den Upgrade-Optionen, zur Problembehandlung, zu bewährten Methoden, Systemanforderungen, Upgrade-Schritten und zur Unterstützung von Microsoft-Partnern zu erhalten.
-ms.openlocfilehash: 561619559fd43131518a0032d3b28dc556f2d8b0
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Am 10. Oktober 2017 wurde die Unterstützung für SharePoint Server 2007 beendet. In diesem Artikel erfahren Sie mehr über die Upgrade-, Migrations-und Supportoptionen.
+ms.openlocfilehash: f1473e101d33b0e58ffd300d61ed92cc19c0a9f4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44996529"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603717"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>Ende der Unterstützung für SharePoint Server 2007 – Roadmap
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Am **10. Oktober 2017**Microsoft Office SharePoint Server 2007 das Ende der Unterstützung erreicht. Wenn Sie die Migration nicht von SharePoint Server 2007 auf Microsoft 365 oder eine neuere Version von SharePoint Server lokal begonnen haben, können Sie mit der Planung beginnen. In diesem Artikel werden Ressourcen zum Migrieren von Daten zu SharePoint Online oder zum Upgraden Ihrer SharePoint Server lokal erläutert. 
   
@@ -72,7 +73,7 @@ Weitere Informationen zu Office 2007 Servern, die das Ende der Unterstützung er
 
 Der erste Stopp sollte die [Produktlebenszyklus-Website](https://go.microsoft.com/fwlink/?linkid=843148)sein. Wenn Sie ein lokales Microsoft-Produkt haben, das Alterungsprozess ist, sollten Sie überprüfen, ob das Datum für das Ende des Supports ein Jahr oder so ausgeht, oder solange ihre Migrationen normalerweise erforderlich sind, können Sie ein Upgrade oder Migrationen planen. Bei der Auswahl des nächsten Schritts kann es hilfreich sein, zu überlegen, was gut genug, besser und am besten in Bezug auf Produktfeatures ist. Hier ein Beispiel:
   
-|**gut**|**Besser**|**Optimal**|
+|**Gut**|**Besser**|**Optimal**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013  <br/> |SharePoint Online  <br/> |
 ||SharePoint-Hybridlösung  <br/> |SharePoint Server 2016  <br/> |

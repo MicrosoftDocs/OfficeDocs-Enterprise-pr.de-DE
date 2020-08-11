@@ -11,16 +11,18 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid: MOM160
 ms.assetid: afdae969-4046-44b9-9adb-f1bab216414b
-description: Office für Mac Anwendungen bieten eine native App-Erfahrung auf der macOS-Plattform. Jede APP ist für die Verwendung in einer Vielzahl von Szenarien konzipiert, einschließlich der Status, wenn kein Netzwerkzugriff verfügbar ist. Wenn ein Computer mit einem Netzwerk verbunden ist, stellen die Anwendungen automatisch eine Verbindung mit einer Reihe von webbasierten Diensten her, um eine erweiterte Funktionalität bereitzustellen. In diesem Whitepaper werden die Endpunkte und URLs beschrieben, die von den Anwendungen erreicht werden sollen, und die bereitgestellten Dienste. Diese Informationen sind hilfreich bei der Behandlung von Problemen mit der Netzwerkkonfiguration und beim Festlegen einer Richtlinie für Netzwerkproxy Server. Die Details in diesem Artikel dienen als Kompliment an den Artikel Office 365 URL und Adressbereiche.
-ms.openlocfilehash: ee854aef417c674073b947940b26cddeafb16d00
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In diesem Artikel wird beschrieben, welche Endpunkte und URLs Office für Mac Anwendungen zu erreichen versuchen und welche Dienste bereitgestellt werden.
+ms.openlocfilehash: 70b2da671b590dbe0c7572eebd6d96e0970532e9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774950"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606721"
 ---
 # <a name="network-requests-in-office-for-mac"></a>Netzwerkanforderungen in Office für Mac
 
@@ -94,7 +96,7 @@ Die folgenden Netzwerkendpunkte werden beim ersten Start einer Office-App kontak
   
  **Anmeldung**
   
-Die folgenden Netzwerkendpunkte werden kontaktiert, wenn Sie sich bei Cloud-basiertem Speicher anmelden. Abhängig vom Kontotyp werden möglicherweise verschiedene Dienste kontaktiert. Beispiel:
+Die folgenden Netzwerkendpunkte werden kontaktiert, wenn Sie sich bei Cloud-basiertem Speicher anmelden. Abhängig vom Kontotyp werden möglicherweise verschiedene Dienste kontaktiert. Zum Beispiel:
   
 - **MSA: Microsoft-Konto** -wird in der Regel für Consumer-und Einzelhandels Szenarien verwendet 
     
@@ -129,7 +131,7 @@ Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
 |:-----|:-----|:-----|:-----|
 |```https://contentstorage.osi.office.net/```  <br/> |WXPO  <br/> |SS  <br/> |Neuer JSON-Seiteninhalt.  <br/> |
    
- **Forscher**
+ **Recherche**
   
 Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
   
@@ -139,7 +141,7 @@ Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
 |```https://cdn.entity.osi.office.net/```  <br/> |W  <br/> |CS  <br/> |Statischer Inhalt der Forscher  <br/> |
 |```https://www.bing.com/```  <br/> |W  <br/> |CS  <br/> |Researcher-Inhaltsanbieter  <br/> |
    
- **Intelligente Suche**
+ **Intelligentes Nachschlagen**
   
 Die folgenden Netzwerkendpunkte gelten sowohl für Microsoft 365-Abonnement-als auch für Einzelhandels-/Volumenlizenz Aktivierungen.
   
@@ -159,7 +161,7 @@ Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
 |:-----|:-----|:-----|:-----|
 |```https://pptsgs.officeapps.live.com/```  <br/> |P  <br/> |CS  <br/> |PowerPoint-Designer-Webdienst  <br/> |
    
- **PowerPoint-Schnellstart**
+ **PowerPoint-Schnellstarter**
   
 Die folgenden Netzwerkendpunkte gelten nur für das Microsoft 365-Abonnement.
   

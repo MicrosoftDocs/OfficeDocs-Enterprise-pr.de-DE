@@ -17,28 +17,29 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Zusammenfassung: Verwenden Sie PowerShell zum Verwalten von SharePoint Online Websitegruppen.'
-ms.openlocfilehash: bee1f01ae78ec35d34a6aba0119bba3fbf7eeada
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In diesem Artikel finden Sie Verfahren für die Verwendung von PowerShell für Microsoft 365 zum Verwalten von SharePoint Online Websitegruppen.
+ms.openlocfilehash: 5df2b57db4ac57aaf7905346d090ccde2d96a11c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230491"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605901"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Verwalten von SharePoint Online-Websitegruppen mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Obwohl Sie das Microsoft 365 Admin Center verwenden können, können Sie auch PowerShell für Microsoft 365 verwenden, um Ihre SharePoint Online Websitegruppen zu verwalten.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Für die Verfahren in diesem Artikel müssen Sie eine Verbindung mit SharePoint Online herstellen. Weitere Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Anzeigen SharePoint Online mit PowerShell für Microsoft 365
 
-Das SharePoint Online Admin Center verfügt über einige einfach zu verwendende Methoden zum Verwalten von Websitegruppen. Nehmen wir beispielsweise an, Sie möchten die Gruppen und die Gruppenmitglieder für die `https://litwareinc.sharepoint.com/sites/finance` Website betrachten. Gehen Sie dazu wie folgt vor:
+Das SharePoint Online Admin Center verfügt über einige einfach zu verwendende Methoden zum Verwalten von Websitegruppen. Nehmen wir beispielsweise an, Sie möchten die Gruppen und die Gruppenmitglieder für die `https://litwareinc.sharepoint.com/sites/finance` Website betrachten. Hier erfahren Sie, wie Sie vorgehen müssen:
 
 1. Klicken Sie im SharePoint Admin Center auf **aktive Websites**, und klicken Sie dann auf die URL der Website.
 2. Klicken Sie auf der Seite Website auf das Symbol **Einstellungen** (befindet sich in der rechten oberen Ecke der Seite), und klicken Sie dann auf **Websiteberechtigungen**.
@@ -99,7 +100,7 @@ foreach ($y in $x)
 
 [Verwalten von SharePoint Online-Benutzern und-Gruppen mit PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
 
-[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
 

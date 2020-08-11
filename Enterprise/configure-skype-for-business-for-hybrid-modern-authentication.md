@@ -15,17 +15,18 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server-und Split-Domain-Skype for Business Hybriden verfügbar ist.
-ms.openlocfilehash: 6415fe374f63093b44ebacc125dc40c9ea70e898
-ms.sourcegitcommit: c6a2256f746f55d1cfb739649ffeee1f2f2152aa
+description: In diesem Artikel erfahren Sie, wie Sie Skype for Business lokal für die Verwendung der Hybriden modernen Authentifizierung (HMA) konfigurieren und Ihnen eine sicherere Benutzerauthentifizierung und-Autorisierung bieten.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e82325281341d35454161f03873acc30898ad536
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052508"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605761"
 ---
 # <a name="how-to-configure-skype-for-business-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Skype for Business derart, dass die moderne Hybridauthentifizierung verwendet wird
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Die moderne Authentifizierung ist eine Methode zur Identitätsverwaltung, die eine sicherere Benutzerauthentifizierung und-Autorisierung bietet und für Skype for Business lokalen Server und lokale Exchange-Server-und Split-Domain-Skype for Business Hybriden verfügbar ist.
   
@@ -73,7 +74,7 @@ Wie Sie sehen können, gibt es vier unterschiedliche Orte, an denen MA aktiviert
   
 Weitere Informationen finden Sie im [Thema zur Unterstützung von Skype for Business mit MA](https://technet.microsoft.com/library/mt803262.aspx) für unterstützte Topologien.
   
- **Wichtiger Hinweis** Stellen Sie sicher, dass alle Voraussetzungen erfüllt sind, bevor Sie beginnen. Diese Informationen finden Sie [hier](hybrid-modern-auth-overview.md).
+ **Wichtiger Hinweis** Stellen Sie sicher, dass alle Voraussetzungen erfüllt sind, bevor Sie beginnen. Diese Informationen finden Sie unter [Übersicht über die moderne Hybrid Authentifizierung und Voraussetzungen](hybrid-modern-auth-overview.md).
   
 ## <a name="collect-all-hma-specific-info-youll-need"></a>Sammeln Sie alle HMA-spezifischen Informationen, die Sie benötigen.
 

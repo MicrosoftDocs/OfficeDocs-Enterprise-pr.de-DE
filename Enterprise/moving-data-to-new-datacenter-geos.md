@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: 'Neue Rechenzentrumsregionen erweitern Kapazitäten und Rechenleistung zur Unterstützung unserer laufenden Kundennachfrage und des Nutzungswachstums. Darüber hinaus bieten die neuen Rechenzentrumsregionen die Aufbewahrung von Kundenkerndaten innerhalb der Geografie. Der Begriff "Kundenkerndaten" bezieht sich auf eine Teilmenge von Kundendaten gemäß der Definition in den Microsoft Online Services-Nutzungsbedingungen: Exchange Online-Postfachinhalte (E-Mail-Text, Kalendereinträge und der Inhalt von E-Mail-Anlagen), SharePoint Online-Websiteinhalte und die auf der Website gespeicherten Dateien sowie nach OneDrive for Business hochgeladene Dateien.'
-ms.openlocfilehash: 3cd30e46f9339fafb3a14f26d6995cd4cb953871
-ms.sourcegitcommit: 58aa8b2e89685490f849e0392d566b7bfb7b933e
+description: Erfahren Sie mehr über das neue Office 365 Datacenter GEOS und wie Sie die Option Data Residency verwenden, um eine Verlagerung ihrer Kern Daten in ein neues Geo anzufordern.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d612c77eec4cb14e9522f3003c557e7e5bffd900
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547723"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606821"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Verschieben der Kern Daten in das neue Microsoft 365 Datacenter GEOS
 
@@ -46,7 +47,7 @@ Bestandskunden, die ihre Kundenkerndaten in einer bereits vorhandenen Rechenzent
 |**Südafrika**| Europa | Südafrika | Juli 2019 |
 |**Schweiz, Liechtenstein**| Europa | Schweiz | Dezember 2019 |
 |**Deutschland**| Europa | Deutschland | Dezember 2019 |
-|**Norwegen**| Europa | Norwegen | April 2020 |
+|**Norwegen**| Europa | Norwegen | April 2020 |
   
 Für Neukunden oder nach der Verfügbarkeit der neuen Rechenzentrumsregion erstellte Office 365-Mandanten werden die ruhenden Kundenkerndaten automatisch in der neuen Rechenzentrumsregion gespeichert.
 

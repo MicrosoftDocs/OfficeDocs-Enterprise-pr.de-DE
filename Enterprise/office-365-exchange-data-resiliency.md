@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Datenausfall Sicherheit in Microsoft 365
+title: Exchange Online-Datenresilienz in Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Eine Erläuterung der verschiedenen Aspekte der Datenausfall Sicherheit in Exchange Online und Microsoft 365.
-ms.openlocfilehash: 1af8acc10f9d45055d6575e2dfcc45451b6eaf6a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel finden Sie eine Erläuterung der verschiedenen Aspekte der Datenausfall Sicherheit in Exchange Online und Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 18d8179f37cb97316b71a43cccfc631a5cc550da
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998736"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606611"
 ---
-# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Exchange Online Datenausfall Sicherheit in Microsoft 365
+# <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Exchange Online-Datenresilienz in Microsoft 365
 
-## <a name="introduction"></a>Einführung
 Es gibt zwei Arten von Beschädigungen, die sich auf eine Exchange-Datenbank auswirken können: physikalische Beschädigungen, die in der Regel durch Hardware (insbesondere Speicherhardware) und logische Beschädigungen verursacht werden, die aufgrund anderer Faktoren auftreten. Im Allgemeinen gibt es zwei Arten von logischen Beschädigungen, die in einer Exchange-Datenbank auftreten können: 
 - **Logische Beschädigung der Datenbank** – die Prüfsumme der Datenbankseite entspricht, aber die Daten auf der Seite sind logisch falsch. Dies kann vorkommen, wenn das Datenbankmodul (ESE) versucht, eine Datenbankseite zu schreiben, und obwohl das Betriebssystem eine Erfolgsmeldung zurückgibt, werden die Daten entweder nie auf den Datenträger geschrieben oder an die falsche Stelle geschrieben. Dies wird als *verlorene Leerung* bezeichnet. ESE enthält zahlreiche Features und Schutzvorkehrungen, mit denen die physische Beschädigung einer Datenbank und anderer datenverlustszenarien verhindert werden soll. Um zu verhindern, dass verloren gegangene Daten gelöscht werden, enthält ESE einen Mechanismus zur Erkennung verlorener Leerungen in der Datenbank sowie ein Feature (Einzelseiten Wiederherstellung), um es zu korrigieren. 
 - **Logische Beschädigung des Speichers** – Daten werden auf eine Weise hinzugefügt, gelöscht oder manipuliert, die der Benutzer nicht erwartet. Diese Fälle werden im Allgemeinen durch Anwendungen von Drittanbietern verursacht. Es handelt sich im Allgemeinen nur insofern um eine Beschädigung, als der Benutzer sie als Beschädigung betrachtet. Der Exchange-Speicher betrachtet die Transaktion, die zur logischen Beschädigung geführt hat, als eine Folge gültiger MAPI-Operationen. Die [in-situ-Speicherungs](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) Funktionen in Exchange Online bieten Schutz vor logischen Beschädigungen des Speichers (da dadurch verhindert wird, dass Inhalte dauerhaft von einem Benutzer oder einer Anwendung gelöscht werden). 

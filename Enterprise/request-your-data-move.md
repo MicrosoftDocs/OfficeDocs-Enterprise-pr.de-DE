@@ -13,13 +13,14 @@ search.appverid:
 ms.assetid: 5bb64310-36fc-473d-b791-a0176f21707f
 f1.keywords:
 - NOCSH
-description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung einreichen, damit die Kundendaten ihrer teilnehmenden Microsoft 365-Dienste in ihren neuen Geo verschoben werden.
-ms.openlocfilehash: 06deead188f985f7cd8e410937ae612f3d509b7c
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Vorhandene Office 365 Kunden müssen vor Ablauf der Frist für Ihr Land eine Anforderung einreichen, damit Ihre Microsoft 365-Dienst Daten in ihren neuen Geo verschoben werden.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 72b7c7d1f6b6b19ff5749787fd8ea6e789c3372a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433756"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606161"
 ---
 # <a name="how-to-request-your-data-move"></a>Anfordern der Datenverschiebung
 

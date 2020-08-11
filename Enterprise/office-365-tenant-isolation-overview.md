@@ -14,24 +14,25 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Eine Zusammenfassung darüber, wie Microsoft die Mandanten Isolierung für Microsoft 365 erzwingt.
-ms.openlocfilehash: 891fdb9bebb500c40a9658d170942ca396facfd1
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Dieser Artikel enthält eine Zusammenfassung darüber, wie Microsoft die Mandanten Isolierung in Cloud-Diensten wie Microsoft 365 erzwingt.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 531b5023af49c776cccfef06dee5bff4b303beff
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998644"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606541"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Mandanten Isolierung in Microsoft 365
 
-Einer der Hauptvorteile von Cloud Computing ist das Konzept einer gemeinsam genutzten gemeinsamen Infrastruktur für zahlreiche Kunden gleichzeitig, die zu Größenvorteilen führt. Dieses Konzept wird als *mehr Mandanten*Fähigkeit bezeichnet. Microsoft arbeitet kontinuierlich daran, sicherzustellen, dass die mehrmandantenfähigen Architekturen unserer Cloud-Dienste auf Unternehmensebene Sicherheits-, Vertraulichkeits-, Datenschutz-, Integritäts-und Verfügbarkeitsstandards unterstützen.
+Einer der Hauptvorteile von Cloud Computing ist das Konzept einer gemeinsam genutzten gemeinsamen Infrastruktur für zahlreiche Kunden gleichzeitig, die zu Größenvorteilen führt. Dieses Konzept wird als *mehr Mandanten*Fähigkeit bezeichnet. Microsoft arbeitet kontinuierlich daran, sicherzustellen, dass die mehrmandantenfähigen Architekturen unserer Clouddienste Sicherheits-, Vertraulichkeits-, Datenschutz-, Integritäts- und Verfügbarkeitsstandards auf Unternehmensebene unterstützen.
 
 Basierend auf den bedeutenden Investitionen und Erfahrungen, die von [Trustworthy Computing](https://www.microsoft.com/trust-center) und dem [Sicherheits Entwicklungslebenszyklus](https://www.microsoft.com/securityengineering/sdl/)gesammelt wurden, wurden Microsoft Cloud-Dienste so konzipiert, dass alle Mandanten potenziell feindlich gegenüber allen anderen Mandanten sind, und wir haben Sicherheitsmaßnahmen implementiert, um zu verhindern, dass die Aktionen eines Mandanten die Sicherheit oder den Dienst eines anderen Mandanten beeinträchtigen oder auf den Inhalt eines anderen Mandanten zugreifen.
 
 Die zwei Hauptziele der Verwaltung der mandantenisolation in einer Umgebung mit mehreren Mandanten sind:
 
-1.  Verhindern von Auslaufen oder nicht autorisiertem Zugriff auf Kunden Inhalte über Mandanten hinweg; und
-2.  Verhindern, dass die Aktionen eines Mandanten sich negativ auf den Dienst für einen anderen Mandanten auswirken
+1.    Verhindern von Auslaufen oder nicht autorisiertem Zugriff auf Kunden Inhalte über Mandanten hinweg; und
+2.    Verhindern, dass die Aktionen eines Mandanten sich negativ auf den Dienst für einen anderen Mandanten auswirken
 
 In Microsoft 365 wurden mehrere Schutzformen implementiert, um zu verhindern, dass Kunden Microsoft 365-Dienste oder-Anwendungen kompromittieren oder nicht autorisierten Zugriff auf die Informationen anderer Mandanten oder des Microsoft 365-Systems erhalten, einschließlich:
 

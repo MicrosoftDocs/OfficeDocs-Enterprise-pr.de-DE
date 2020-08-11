@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: o365-solutions
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Dieser Artikel enthält Informationen über die Verwaltung von SharePoint- und OneDrive-Diensten in einer Multi-Geo-Umgebung.
-ms.openlocfilehash: d66f33152d4960b4a837a1dd401199f3bb56e5b3
-ms.sourcegitcommit: bb122479c3a2757c0a5adde6c9f0c77c75ab3951
+description: Administratoren können sich mit der Verwaltung von SharePoint-und OneDrive-Diensten in einer Multi-Geo-Umgebung vertraut machen.
+ms.openlocfilehash: 166aa61b6ef3158c8ff479fd1a93252ef1bc50d7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46548897"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606111"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Verwalten einer Multi-Geo-Umgebung
 
@@ -36,7 +36,7 @@ BCS, Secure Store und Apps verfügen über separate Instanzen. Daher sollte der 
 
 ## <a name="ediscovery"></a>eDiscovery 
 
-Standardmäßig kann ein eDiscovery-Manager oder ein Administrator eines Mandanten mit mehreren geografischen Standorten eDiscovery nur am zentralen Standort des Mandanten durchführen. Der globale Microsoft 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen "Region"-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden. Informationen zum Konfigurieren des Compliancesicherheitsfilters für eine Region finden Sie unter [Konfigurieren von Microsoft 365 Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
+Standardmäßig kann ein eDiscovery-Manager oder ein Administrator eines Mandanten mit mehreren geografischen Standorten eDiscovery nur am zentralen Standort des Mandanten durchführen. Der globale Office 365-Administrator muss eDiscovery-Managerberechtigungen zuweisen, damit andere Personen eDiscovery durchführen können, und einen "Region"-Parameter im entsprechenden Compliancesicherheitsfilter zuweisen, um die Region zum Durchführen von eDiscovery als Satellitenstandort festzulegen. Andernfalls wird eDiscovery nicht für den Satellitenstandort durchgeführt werden. Informationen zum Konfigurieren des Compliancesicherheitsfilters für eine Region finden Sie unter [Konfigurieren von Office 365-Multi-Geo eDiscovery](multi-geo-ediscovery-configuration.md).
 
 ## <a name="exchange-mailboxes"></a>Exchange-Postfächer
 

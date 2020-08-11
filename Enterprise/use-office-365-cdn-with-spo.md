@@ -1,5 +1,5 @@
 ---
-title: Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
+title: Verwenden Sie Office 365 Inhalts Zustellungs Netzwerk (CDN) mit SharePoint Online
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
-description: Beschreibt, wie das Office 365-Inhalts Zustellungs Netzwerk (CDN) verwendet wird, um die Zustellung Ihrer SharePoint Online Ressourcen an alle Benutzer zu beschleunigen, unabhängig davon, wo Sie sich befinden oder wie Sie auf Ihre Inhalte zugreifen.
-ms.openlocfilehash: 25e7e6aae0d4dc6dd72278763c8fc5cc3bc454ce
-ms.sourcegitcommit: 6ad59ab24a5dc8d27f448ca7fe4f6bdf7ab28066
+description: In diesem Artikel erfahren Sie, wie Sie das Office 365 Content Delivery Network (CDN) verwenden, um die Zustellung Ihrer SharePoint Online Ressourcen zu beschleunigen.
+ms.openlocfilehash: 2f0cc396de6d950c9487024145e346007b18d3b9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42316024"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606121"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Verwenden des Office 365 Content Delivery Network (CDN) mit SharePoint Online
 
@@ -304,7 +306,7 @@ Der Wert von _path_ ist der relative Pfad zu der Bibliothek oder dem Ordner, der
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Der Platzhalter-**/** Modifizierer * kann nur am Anfang des Pfads verwendet werden und wird allen URL-Segmenten unter der angegebenen URL zugeordnet.
++ Der Platzhalter-Modifizierer * **/** kann nur am Anfang des Pfads verwendet werden und wird allen URL-Segmenten unter der angegebenen URL zugeordnet.
 + Der Pfad kann auf eine Dokumentbibliothek, einen Ordner oder eine Website deuten. Beispielsweise wird der Pfad _*/site1_ alle Dokumentbibliotheken unter der Website entsprechen.
 
 Sie können einen Ursprung mit einem bestimmten relativen Pfad hinzufügen. Sie können keinen Ursprung mithilfe des vollständigen Pfads hinzufügen.
@@ -587,7 +589,7 @@ Der Wert von _path_ ist der relative Pfad zu der Bibliothek oder dem Ordner, der
 Add-PnPTenantCdnOrigin -CdnType Public -OriginUrl */masterpage
 ```
 
-+ Der Platzhalter-**/** Modifizierer * kann nur am Anfang des Pfads verwendet werden und wird allen URL-Segmenten unter der angegebenen URL zugeordnet.
++ Der Platzhalter-Modifizierer * **/** kann nur am Anfang des Pfads verwendet werden und wird allen URL-Segmenten unter der angegebenen URL zugeordnet.
 + Der Pfad kann auf eine Dokumentbibliothek, einen Ordner oder eine Website deuten. Beispielsweise wird der Pfad _*/site1_ alle Dokumentbibliotheken unter der Website entsprechen.
 
 Sie können einen Ursprung mit einem bestimmten relativen Pfad hinzufügen. Sie können keinen Ursprung mithilfe des vollständigen Pfads hinzufügen.
@@ -879,7 +881,7 @@ Um Objekte zu verwenden, die Sie einem Ursprung hinzugefügt haben, aktualisiere
 + Ersetzen Sie für jeden Link zu einem Objekt in einem Ursprung den Pfad durch den Pfad zu der Datei im CDN-Ursprung. Sie können relative Pfade verwenden.
 + Speichern Sie die Seite oder den Inhalt.
 
-Sehen Sie sich beispielsweise das Bild _/Site/SiteAssets/Images/Image.png_an, das Sie in den Dokumentbibliotheksordner _/Site/CDN_origins/Public/_ kopiert haben. Um das CDN-Objekt zu verwenden, ersetzen Sie den ursprünglichen Pfad zum Speicherort der Bild Datei durch den Pfad zum Ursprung, um die neue URL _/Site/CDN_origins/Public/Image.png_zu erstellen.
+Sehen Sie sich beispielsweise das Bild _/Site/SiteAssets/Images/image.png_an, das Sie in den Dokumentbibliotheksordner _/Site/CDN_origins/Public/_ kopiert haben. Um das CDN-Objekt zu verwenden, ersetzen Sie den ursprünglichen Pfad zum Speicherort der Bild Datei durch den Pfad zum Ursprung, um die neue URL _/Site/CDN_origins/Public/image.png_zu machen.
 
 Wenn Sie die vollständige URL für das Objekt anstelle eines relativen Pfads verwenden möchten, erstellen Sie den Link wie folgt:
 
@@ -894,7 +896,7 @@ Informationen dazu, wie Sie überprüfen können, ob Objekte aus dem CDN bedient
 
 Das **Veröffentlichungsfeature** in SharePoint Online schreibt automatisch URLs von Objekten, die im öffentlichen Ursprung gespeichert sind, in Ihre CDN-äquivalente um, sodass Objekte vom CDN-Dienst anstelle von SharePoint bereitgestellt werden.
 
-Wenn sich Ihr Ursprung in einer Website befindet, in der das Veröffentlichungsfeature aktiviert ist, und die Objekte, die Sie an das CDN Abladen möchten, in einer der folgenden Kategorien enthalten sind, werden von SharePoint automatisch URLs für Objekte im Ursprung umgeschrieben, vorausgesetzt, das Objekt wurde nicht von einem CDN ausgeschlossen.  Richtlinie.
+Wenn sich Ihr Ursprung in einer Website befindet, in der das Veröffentlichungsfeature aktiviert ist, und die Objekte, die Sie an das CDN Abladen möchten, sich in einer der folgenden Kategorien befinden, werden von SharePoint automatisch URLs für Objekte im Ursprung umgeschrieben, vorausgesetzt, das Objekt wurde nicht durch eine CDN-Richtlinie ausgeschlossen.
 
 Es folgt eine Übersicht über die Links, die automatisch vom SharePoint-Veröffentlichungsfeature umgeschrieben werden:
 
@@ -957,14 +959,14 @@ https://privatecdn.sharepointonline.com/contoso.sharepoint.com/sites/site1/libra
 
 #### <a name="item-level-permissions-are-not-supported-for-assets-in-private-origins"></a>Berechtigungen auf Elementebene werden für Objekte im privaten Ursprung nicht unterstützt.
 
-Es ist wichtig zu beachten, dass SharePoint Online keine Berechtigungen auf Elementebene für Objekte in privater Herkunft unterstützt. Beispielsweise haben Benutzer bei einer Datei, `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg`die sich unter den folgenden Bedingungen befindet, effektiven Zugriff auf die Datei:
+Es ist wichtig zu beachten, dass SharePoint Online keine Berechtigungen auf Elementebene für Objekte in privater Herkunft unterstützt. Beispielsweise haben Benutzer bei einer Datei `https://contoso.sharepoint.com/sites/site1/library1/folder1/image1.jpg` , die sich unter den folgenden Bedingungen befindet, effektiven Zugriff auf die Datei:
 
-|Benutzer  |Berechtigungen  |Effektiver Zugriff  |
+|User  |Berechtigungen  |Effektiver Zugriff  |
 |---------|---------|---------|
-|Benutzer 1     |Zugriff auf Folder1         |Zugriff auf image1. jpg aus dem CDN möglich         |
-|Benutzer 2     |Kein Zugriff auf Folder1         |Zugriff auf image1. jpg aus dem CDN nicht möglich         |
-|Benutzer 3     |Verfügt nicht über Zugriff auf Folder1, es wird jedoch explizite Berechtigung für den Zugriff auf image1. jpg in SharePoint Online gewährt.         |Kann direkt aus SharePoint Online auf das Objekt image1. jpg zugreifen, jedoch nicht aus dem CDN         |
-|Benutzer 4     |Hat Zugriff auf Folder1, jedoch wurde explizit der Zugriff auf image1. jpg in SharePoint Online verweigert.         |Der Zugriff auf das Objekt ist nicht von SharePoint Online möglich, kann jedoch aus dem CDN auf das Objekt zugreifen, obwohl der Zugriff auf die Datei in SharePoint Online verweigert wurde.         |
+|Benutzer 1     |Zugriff auf Folder1         |Zugriff auf image1.jpg aus dem CDN möglich         |
+|Benutzer 2     |Kein Zugriff auf Folder1         |Zugriff auf image1.jpg aus dem CDN nicht möglich         |
+|Benutzer 3     |Verfügt nicht über Zugriff auf Folder1, erhält jedoch explizite Berechtigungen für den Zugriff auf image1.jpg in SharePoint Online         |Kann direkt von SharePoint Online auf das Objekt image1.jpg zugreifen, jedoch nicht aus dem CDN         |
+|Benutzer 4     |Hat Zugriff auf Folder1, wurde jedoch explizit den Zugriff auf image1.jpg in SharePoint Online verweigert.         |Der Zugriff auf das Objekt ist nicht von SharePoint Online möglich, kann jedoch aus dem CDN auf das Objekt zugreifen, obwohl der Zugriff auf die Datei in SharePoint Online verweigert wurde.         |
 
 <a name="CDNTroubleshooting"> </a>
 ## <a name="troubleshooting-the-office-365-cdn"></a>Problembehandlung beim Office 365 CDN
@@ -977,7 +979,7 @@ Nachdem Sie einer Seite Links zu CDN-Objekten hinzugefügt haben, können Sie ü
 Sie können auch die Entwicklertools Ihres Browsers verwenden, um die URL für jedes Objekt auf einer Seite anzuzeigen, oder verwenden Sie ein Netzwerk Ablaufverfolgungstool eines Drittanbieters.
 
 > [!NOTE]
-> Wenn Sie ein Netzwerktool wie Fiddler verwenden, um Ihre Objekte außerhalb des Renderings des Objekts von einer SharePoint-Seite zu testen, müssen Sie den Referer-Header " `https://yourdomain.sharepoint.com`Referer:" manuell zur Get-Anforderung hinzufügen, wobei die URL die Stamm-URL des SharePoint Online Mandanten ist.
+> Wenn Sie ein Netzwerktool wie Fiddler verwenden, um Ihre Objekte außerhalb des Renderings des Objekts von einer SharePoint-Seite zu testen, müssen Sie den Referer-Header "Referer: `https://yourdomain.sharepoint.com` " manuell zur Get-Anforderung hinzufügen, wobei die URL die Stamm-URL des SharePoint Online Mandanten ist.
 
 Sie können CDN-URLs nicht direkt in einem Webbrowser testen, da ein Referer aus SharePoint Online stammen muss. Wenn Sie jedoch die CDN-Ressourcen-URL zu einer SharePoint-Seite hinzufügen und dann die Seite in einem Browser öffnen, wird das auf der Seite gerenderte CDN-Objekt angezeigt.
 

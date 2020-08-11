@@ -1,5 +1,5 @@
 ---
-title: SharePoint Server 2013 - Notfallwiederherstellung in Microsoft Azure
+title: SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -13,15 +13,17 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Ent_Deployment
+ms.custom:
+- Ent_Deployment
+- seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: 'Zusammenfassung: Mithilfe von Azure können Sie eine Umgebung für die Notfallwiederherstellung für Ihre lokale SharePoint-Farm erstellen. Dieser Artikel beschreibt das Entwerfen und Implementieren dieser Lösung.'
-ms.openlocfilehash: 101d87b1a25d2b3ac8a7ae29832e52c805ecdc4c
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel wird beschrieben, wie Sie mithilfe von Azure eine Notfallwiederherstellungsumgebung für Ihre lokale SharePoint-Farm erstellen.
+ms.openlocfilehash: b4ba92136139d723b26fe89b13f4e43c67f5c2fe
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998167"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606131"
 ---
 # <a name="sharepoint-server-2013-disaster-recovery-in-microsoft-azure"></a>SharePoint Server 2013 – Notfallwiederherstellung in Microsoft Azure
 
@@ -112,7 +114,7 @@ Nachdem eine Wiederherstellung erfolgt ist, bietet Ihnen diese Lösung die in de
   
 **Tabelle: Wiederherstellungsziele der Lösung**
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |Websites und Inhalte  <br/> |Websites und Inhalte sind in der Wiederherstellungsumgebung verfügbar.  <br/> |
 |Eine neue Instanz der Suche  <br/> |Bei dieser betriebsbereiten Standby-Lösung wird die Suche aus Suchdatenbanken wiederhergestellt. Die Konfiguration von Suchkomponenten in der Wiederherstellungsfarm orientiert sich so weit wie möglich an der Produktionsfarm. Nachdem Websites und Inhalte wiederhergestellt wurden, wird eine vollständige Durchforstung gestartet, um den Suchindex neu zu erstellen. Sie müssen nicht warten, bis die Durchforstung abgeschlossen ist, um die Websites und Inhalte zur Verfügung zu stellen.  <br/> |
@@ -122,7 +124,7 @@ Sie können mit Microsoft Consulting Services (MCS) oder einem Partner zusammena
   
 **Tabelle: Andere Elemente, die von MCS oder einem Partner betreut werden können**
 
-|**Element**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |Synchronisieren benutzerdefinierter Farmlösungen  <br/> |Im Idealfall ist die Konfiguration der Wiederherstellungsfarm identisch mit der Produktionsfarm. Sie können mit einem Berater oder Partner zusammenarbeiten, um zu prüfen, ob benutzerdefinierte Farmlösungen repliziert werden und ob ein Prozess vorhanden ist, mit dessen Hilfe beide Umgebungen synchron bleiben.  <br/> |
 |Verbindungen mit lokalen Datenquellen  <br/> |Es ist möglicherweise unpraktisch, Verbindungen mit Back-End-Datensystemen zu replizieren, z. B. mit Sicherungsdomänencontrollern und Inhaltsquellen für die Suche.  <br/> |

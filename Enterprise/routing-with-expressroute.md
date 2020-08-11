@@ -13,23 +13,25 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
-description: Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten Express Route-Routing Anforderungen und die Express Route-Schaltkreise und Routingdomänen. Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
-ms.openlocfilehash: c9d81e0823b63750a456f559855bb130a2e87b07
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel erfahren Sie mehr über Azure Express Route-Routing Anforderungen, Schaltkreise und Routingdomänen für die Verwendung mit Office 365.
+ms.openlocfilehash: c8063d570744b3a5fd42328ed3940fe7477c25c9
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998194"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605227"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Routing mit ExpressRoute für Office 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Um den Routing Datenverkehr zu Office 365 mithilfe von Azure Express Route richtig zu verstehen, benötigen Sie einen festen Überblick über die wichtigsten [Express Route-Routing Anforderungen](https://azure.microsoft.com/documentation/articles/expressroute-routing/) und die [Express Route-Schaltkreise und Routingdomänen](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/). Diese legen die Grundlagen für die Verwendung von Express Route fest, auf die sich Office 365 Kunden verlassen.
   
@@ -257,6 +259,6 @@ Mit diesem kurzen Link gelangen Sie wieder hierher zurück: [https://aka.ms/eror
   
 [Plan zur Problembehandlung für Office 365](performance-troubleshooting-plan.md)
   
-[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[URLs und IP-Adressbereiche für Office 365](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2)
   
 [Office 365-Netzwerk- und Leistungsoptimierung](network-planning-and-performance.md)

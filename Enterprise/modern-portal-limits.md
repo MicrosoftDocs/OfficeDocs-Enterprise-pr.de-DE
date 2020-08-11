@@ -13,16 +13,18 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Erfahren Sie mehr über Leistungsempfehlungen für moderne Websites in SharePoint Online.
-ms.openlocfilehash: 227eadd780acbe35456ca48204762411bed6c10f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Hier finden Sie Informationen zu Leistungsempfehlungen für moderne Websites in SharePoint Online, beispielsweise zum Begrenzen von Aufrufen von SharePoint und externen Endpunkten.
+ms.openlocfilehash: 1ec6dfb4b32a8915528adce168badf3645c26e48
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844786"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606881"
 ---
 # <a name="sharepoint-online-modern-portal-site-limits"></a>SharePoint Online Grenzwerte für moderne Portal Standorte
 
@@ -46,7 +48,7 @@ Viele der Richtlinien in diesem Artikel konzentrieren sich auf die Minimierung u
 
 ## <a name="modern-portal-site-limits-and-recommendations"></a>Grenzwerte und Empfehlungen für moderne Portal Standorte
 
-|**Grenze**|**Maximal empfohlener Wert**|**Hinweise**|
+|**Grenze**|**Maximal empfohlener Wert**|**Notizen**|
 |:-----|:-----|:-----|:-----|
 |Seiten und Newselemente  <br/> |5.000 pro Website  <br/> |Es wird empfohlen, die Anzahl der Seiten und Newselemente auf einer modernen Portalwebsite auf unter 5.000 zu begrenzen.  <br/> |
 |Webparts auf einer Seite  <br/> |20 pro Seite  <br/> |Es wird empfohlen, 20 oder weniger Gesamt Webparts pro Seite zu verwenden, einschließlich der vordefinierten Microsoft-Webparts und benutzerdefinierter Webparts. <br/> Weitere Informationen finden Sie unter [Optimieren der Leistung von Webparts in SharePoint Online modernen Website Seiten](modern-web-part-optimization.md).  <br/> |

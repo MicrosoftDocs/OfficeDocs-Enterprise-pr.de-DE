@@ -17,18 +17,19 @@ ms.custom:
 - O365ITProTrain
 - PowerShell
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 'Zusammenfassung: Verwenden von PowerShell für Microsoft 365 zum Zuweisen von Rollen zu Benutzerkonten.'
-ms.openlocfilehash: 2be491692c23b1f528612cc5c56e041553f80c48
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In diesem Artikel erfahren Sie, wie Sie PowerShell für Microsoft 365 schnell und einfach verwenden können, um Benutzerkontenrollen zuzuweisen.
+ms.openlocfilehash: a3e1936dfa685c78f88e4f4333192f9a07de3cec
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230871"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606441"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>Zuweisen von Rollen zu Microsoft 365-Benutzerkonten mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Sie können Benutzerkonten schnell und einfach Rollen zuweisen, indem Sie PowerShell für Microsoft 365 verwenden.
 
@@ -237,6 +238,6 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Microsoft 365-Benutzerkonten,-Lizenzen und-Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
-- [Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
-- [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
+- [Verwalten von Microsoft 365-Benutzerkonten, -Lizenzen und -Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-office-365-powershell.md)
+- [Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)

@@ -18,13 +18,14 @@ search.appverid:
 ms.assetid: fd16c8d2-4799-4c39-8fd7-045f06640166
 f1.keywords:
 - NOCSH
-description: Wäre es nicht schön, wenn Ihre Internet Verbindung immer schnell und nie nach unten war? Vielleicht wird dieser Tag kommen. Aber in der Zwischenzeit gibt es praktische Dinge, die Sie tun können, um ein unruhiges Netzwerk zu umgehen und immer noch Ihre tägliche Arbeit erledigen zu lassen.
-ms.openlocfilehash: 3e9a3e91c5e1cc775d28742b39ea9c0ed507d2c9
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+ms.custom: seo-marvel-apr2020
+description: Dieser Artikel führt Sie durch die bewährten Methoden, die Sie für die Verwendung von Office 365 in einem langsamen Netzwerk übernehmen können.
+ms.openlocfilehash: b4b81826dfca4c5962cc6aef026c3878e3b52304
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41844956"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605781"
 ---
 # <a name="best-practices-for-using-office-365-on-a-slow-network"></a>Bewährte Methoden für die Verwendung von Office 365 in einem langsamen Netzwerk
 
@@ -180,7 +181,7 @@ Weitere Informationen finden Sie unter [Tune Project Online Performance](https:/
 
 Microsoft verbessert die Gesamtleistung von Office 365 kontinuierlich, indem es das Netzwerk überwacht, Bandbreite und Wartezeit misst, die Ladezeit verbessert, die Datenträger-e/a reduziert, die Seiten neu gestaltet, um eine minimale Download Strategie zu verwenden, Hardware zu Rechenzentren hinzufügt und weitere Rechenzentren hinzufügt. Weitere Informationen zum Überprüfen des aktuellen Status und zu Berichtsproblemen finden Sie unter [How to Check Office 365 Service Health](https://docs.microsoft.com/office365/enterprise/view-service-health).
   
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Netzwerkplanung und Leistungsoptimierung für Office 365](network-planning-and-performance.md)
   

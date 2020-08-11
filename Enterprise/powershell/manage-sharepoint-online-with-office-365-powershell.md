@@ -17,20 +17,21 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - SPO_Content
+- seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um SharePoint Online Benutzer, Gruppen und Websitegruppen zu verwalten.'
-ms.openlocfilehash: a12150d3e427b0d4e574ca6bf7eec96e9baea4de
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: In diesem Artikel erfahren Sie, wie Sie mit PowerShell für Microsoft 365 SharePoint Online-Benutzer,-Gruppen und-Websitegruppen verwalten können.
+ms.openlocfilehash: 270c31ebbdeb5c29ce0e67a89dbee25101e467df
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230461"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605911"
 ---
 # <a name="manage-sharepoint-online-with-powershell"></a>Verwalten von SharePoint Online mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung von Websites, Websitegruppen und Benutzern. Obwohl Sie einige dieser Aufgaben im Microsoft 365 Admin Center erledigen können, sind andere Aufgaben in PowerShell viel schneller und einfacher. Weitere Informationen finden Sie unter den folgenden Themen:
+Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung von Websites, Websitegruppen und Benutzern. Obwohl Sie einige dieser Aufgaben in Microsoft 365 Admin Center durchführen können, können andere Aufgaben in PowerShell wesentlich schneller und einfacher durchgeführt werden. Weitere Informationen finden Sie unter den folgenden Themen:
 
 - [Herstellen einer Verbindung mit SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
@@ -42,6 +43,6 @@ Eine der Hauptaufgaben jedes SharePoint Online-Administrators ist die Verwaltung
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+- [Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
 
-- [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
+- [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)

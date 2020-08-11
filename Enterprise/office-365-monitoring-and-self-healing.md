@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Überwachung und Selbstheilung
+title: Microsoft 365 – Überwachung und Selbstreparatur
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,15 +14,17 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Informationen zur Überwachung und Selbstheilungsfunktionen von Microsoft 365.
-ms.openlocfilehash: 88338f722e8563c3db6573ac6ab64252cb98c450
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: In diesem Artikel erfahren Sie mehr über die Überwachung und die Selbstheilungsfunktionen von Microsoft 365.
+ms.openlocfilehash: 1fa42e5e4ac20462b0d32db28f59c1c51b8a1f35
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998762"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605527"
 ---
-# <a name="microsoft-365-monitoring-and-self-healing"></a>Microsoft 365-Überwachung und Selbstheilung
+# <a name="microsoft-365-monitoring-and-self-healing"></a>Microsoft 365 – Überwachung und Selbstreparatur
 
 Angesichts der Größenordnung von Microsoft 365 wäre es nicht möglich, Kundendaten widerstandsfähig und sicher vor Schadsoftware zu halten, ohne integrierte Überwachung, die intelligent ist und die Selbstheilung schnell und zuverlässig ist. Das Überwachen einer Reihe von Diensten in der Größenordnung von Microsoft 365 ist eine große Herausforderung. Neue Denkweise und Methodologien müssen eingeführt werden, und es müssen ganz neue Technologiegruppen erstellt werden, um den Dienst in einer verbundenen globalen Umgebung zu betreiben und zu verwalten. Wir haben uns vom herkömmlichen Überwachungsansatz der Datensammlung und-Filterung abgewandt, um Warnungen für einen Ansatz zu erstellen, der auf der Datenanalyse basiert. Signale annehmen und Vertrauen in diese Daten setzen und dann Automatisierung verwenden, um das Problem wiederherzustellen oder zu beheben. Dieser Ansatz hilft, Menschen aus der Wiederherstellungs Gleichung herausauszufiltern, was wiederum den Betrieb weniger kostspielig, schneller und weniger fehleranfällig macht. 
 

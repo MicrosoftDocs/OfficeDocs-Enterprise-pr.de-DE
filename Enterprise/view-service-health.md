@@ -15,6 +15,7 @@ ms.custom:
 - O365M_ServiceHealthModern
 - O365E_ViewStatusServices
 - O365E_ServiceHealthModern
+- seo-marvel-apr2020
 ms.collection:
 - Ent_O365
 - M365-subscription-management
@@ -25,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support aufrufen, um zu sehen, ob eine aktive Dienstunterbrechung vorliegt.
-ms.openlocfilehash: 17d0df388d3632f0b27b3ca59c57a995ce7dfb8e
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+ms.openlocfilehash: c6995d96df46b4f83014a7ccf6d549dea421a97a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433886"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605841"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienststatus
 
@@ -146,7 +147,7 @@ Erweitern Sie eine beliebige Zeile, um weitere Details zum Problem anzuzeigen.
   
 Weitere Informationen zu unserer Verpflichtung zur Verfügbarkeit finden Sie unter [transparente Vorgänge von Microsoft 365](https://go.microsoft.com/fwlink/?linkid=848695).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
  [Nachrichtencenter-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)

@@ -16,13 +16,14 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - NOCSH
-description: Eine Übersicht über die Überwachungs-und Berichterstellungsfeatures in Microsoft 365 und Service Assurance.
-ms.openlocfilehash: 10bbf660ee0e0868abdb6b41c1cc318f6d64bb61
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Eine Übersicht über die Überwachungs-und Berichtsfunktionen in Office 365, Microsoft 365 und Service Assurance.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 40e68954cb0128ad323305bf8347a8e13afda9d5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774960"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606681"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Überwachung und Berichterstellung in Microsoft Cloud Services
 
@@ -57,7 +58,7 @@ Zu den wichtigsten Features gehört ein Compliance-Bereich, der Administratoren 
 ## <a name="related-links"></a>Links zu verwandten Themen
 
 - [eDiscovery und Suchfunktionen](office-365-ediscovery-and-search-features.md)
-- [Microsoft 365-Bericht Erstellungs Features](office-365-reporting-features.md)
-- [Microsoft 365-Verwaltungs Aktivitäts-API](office-365-management-activity-api.md)
-- [Microsoft 365-Postfachmigrationen](office-365-mailbox-migrations.md)
+- [Berichtsfeatures in Microsoft 365](office-365-reporting-features.md)
+- [Microsoft 365-Verwaltungsaktivitäts-API](office-365-management-activity-api.md)
+- [Postfachmigrationen in Microsoft 365](office-365-mailbox-migrations.md)
 - [Interne Protokollierung für Microsoft 365 Engineering](office-365-internal-logging.md)

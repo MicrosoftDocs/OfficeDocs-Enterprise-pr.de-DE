@@ -14,13 +14,14 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Eine kurze Zusammenfassung zur Office 365-Verwaltungs Aktivitäts-API.
-ms.openlocfilehash: 8c7e4723ffb1792847c4b4eca0ec8285b8848c98
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel finden Sie eine kurze Zusammenfassung der API für die Office 365-Verwaltungsaktivität und der Informationen, die Sie in Aktivitätsprotokollen bereitstellt.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 05b47be60816b09a24df3dd0076a4d0cbcdabe84
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998674"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605547"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365-Verwaltungsaktivitäts-API
 

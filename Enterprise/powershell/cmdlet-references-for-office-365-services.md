@@ -1,5 +1,5 @@
 ---
-title: Cmdlet-Verweise für Microsoft 365-Dienste
+title: Cmdlet-Referenzen für Microsoft 365-Dienste
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -11,19 +11,21 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: ''
+ms.custom:
+- Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: 'Zusammenfassung: Hier finden Sie Referenzthemen zu Microsoft 365 für PowerShell-Cmdlets für Azure Active Directory, Exchange Online, SharePoint Online, Skype for Business Online und Sicherheit & Compliance.'
-ms.openlocfilehash: 71259e49fd70c4f3f7d7ebb7332fe75955797335
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Finden Sie Microsoft 365 PowerShell-Cmdlet-Referenzthemen für Azure AD, Exchange Online, SharePoint Online, Skype for Business Online und Sicherheit & Compliance.
+ms.openlocfilehash: 92423c9bd1f6a977c41d9077ab30122589ae374f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230861"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606021"
 ---
-# <a name="cmdlet-references-for-microsoft-365-services"></a>Cmdlet-Verweise für Microsoft 365-Dienste
+# <a name="cmdlet-references-for-microsoft-365-services"></a>Cmdlet-Referenzen für Microsoft 365-Dienste
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Cmdlet-Referenzthemen für die verschiedenen Microsoft 365-Dienste bieten ausführliche Informationen und Anweisungen zur Verwendung der einzelnen Cmdlets. Darüber hinaus erfordert jeder Microsoft 365-Dienst mit PowerShell-Unterstützung unterschiedliche Verbindungsanweisungen.
   
@@ -69,7 +71,7 @@ Verbindungsanweisungen für Security &amp; Compliance Center PowerShell finden S
   
 ## <a name="see-also"></a>Siehe auch
 
-[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
 

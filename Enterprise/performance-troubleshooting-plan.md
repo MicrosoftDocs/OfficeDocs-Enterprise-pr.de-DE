@@ -10,7 +10,9 @@ ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -19,13 +21,13 @@ ms.assetid: e241e5d9-b1d8-4f1d-a5c8-4106b7325f8c
 ms.collection:
 - M365-security-compliance
 - Ent_O365
-description: Müssen Sie die erforderlichen Schritte zum Identifizieren und Beheben von Verzögerungen, hängen und langsamer Leistung zwischen SharePoint Online, OneDrive für Unternehmen, Exchange Online oder Skype for Business Online und Ihrem Clientcomputer kennen? Vor dem Aufruf des Supports können Sie in diesem Artikel bei der Problembehandlung Office 365 Leistungsproblemen behilflich sein und sogar einige der am häufigsten auftretenden Probleme beheben.
-ms.openlocfilehash: 7bb8ce4884ad7419cfc7e9c895ea7e1783042b1b
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Dieser Artikel hilft Ihnen bei der Behebung von Office 365 Leistungsproblemen und bei der Behebung einiger der häufigsten Probleme.
+ms.openlocfilehash: cfb99aa9184f61a924a9dbf46d7761482b828be0
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41841812"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606261"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Behandlung von Leistungsproblemen – Plan für Office 365
 
@@ -46,7 +48,7 @@ Dieser Aktionsplan enthält zwei Teile; eine Vorbereitungsphase und eine Protoko
 - Installieren von Tools zum Sammeln und Aufzeichnen von Informationen:
   - Installieren Sie [Netmon 3,4](https://www.microsoft.com/download/details.aspx?id=4865) (oder verwenden Sie ein entsprechendes Netzwerk Ablaufverfolgungstool).
   - Installieren Sie die ﻿kostenlose Basic Edition von [HTTPWatch](https://www.httpwatch.com/download/) (oder verwenden Sie ein äquivalentes Netzwerk Ablaufverfolgungstool).
-  - Verwenden Sie eine Bildschirmaufzeichnung, oder führen Sie die mit Windows Vista und höher bereitgestellten Schritte Recorders (PSR. exe) aus, um eine Aufzeichnung der Schritte zu erhalten, die Sie während der Tests durchführen.
+  - Verwenden Sie eine Bildschirmaufzeichnung, oder führen Sie die mit Windows Vista und höher bereitgestellten Schritte Recorder (PSR.exe) aus, um die Schritte zu protokollieren, die Sie während der Tests durchführen.
 
 ### <a name="log-the-performance-issue"></a>Protokollieren des Leistungsproblems
   
@@ -75,7 +77,7 @@ Warum? Durch das Leeren des DNS-Caches starten Sie Ihre Tests mit einem sauberen
   
 #### <a name="flush-your-dns-resolver-cache"></a>Leeren des DNS-Auflösungs Caches
   
-1. Öffnen Sie die Eingabeaufforderung, ( **starten** \> **** \> Sie entweder **cmd** oder **Windows Key** \> **cmd**).
+1. Öffnen Sie die Eingabeaufforderung, ( **starten** Sie entweder \> **Run** \> **cmd** oder **Windows Key** \> **cmd**).
 2. Geben Sie den folgenden Befehl ein, und drücken Sie die EINGABETASTE:
 
     ``` cmd
@@ -84,7 +86,7 @@ Warum? Durch das Leeren des DNS-Caches starten Sie Ihre Tests mit einem sauberen
 
 ## <a name="netmon"></a>NetMon
 
-Das netzwerküberwachungstool ([netmon](https://www.microsoft.com/download/details.aspx?id=4865)) von Microsoft analysiert Pakete, also Datenverkehr, der zwischen Computern in Netzwerken verläuft. Durch die Verwendung von Netmon zum Verfolgen des Datenverkehrs mit Office 365 können Sie Paket Kopfzeilen erfassen, anzeigen und lesen, eingreifende Geräte identifizieren, wichtige Einstellungen auf der Netzwerkhardware überprüfen, nach verworfenen Paketen suchen und den Datenverkehr zwischen Computern in Ihrem Unternehmen verfolgen. Netzwerk-und Office 365. Da der tatsächliche Text des Datenverkehrs verschlüsselt ist, d. (er reist an Port 443 über SSL/TLS, können die gesendeten Dateien nicht gelesen werden. Stattdessen erhalten Sie eine ungefilterte Ablaufverfolgung des Pfads, den das Paket ausführt, was Ihnen helfen kann, das Problemverhalten nachzuverfolgen.
+Das netzwerküberwachungstool ([netmon](https://www.microsoft.com/download/details.aspx?id=4865)) von Microsoft analysiert Pakete, also Datenverkehr, der zwischen Computern in Netzwerken verläuft. Durch die Verwendung von Netmon zum Verfolgen des Datenverkehrs mit Office 365 können Sie Paket Kopfzeilen erfassen, anzeigen und lesen, eingreifende Geräte identifizieren, wichtige Einstellungen für die Netzwerkhardware überprüfen, nach verworfenen Paketen suchen und den Datenverkehr zwischen Computern in Ihrem Unternehmensnetzwerk und Office 365 verfolgen. Da der tatsächliche Text des Datenverkehrs verschlüsselt ist, d. (er reist an Port 443 über SSL/TLS, können die gesendeten Dateien nicht gelesen werden. Stattdessen erhalten Sie eine ungefilterte Ablaufverfolgung des Pfads, den das Paket ausführt, was Ihnen helfen kann, das Problemverhalten nachzuverfolgen.
   
 Stellen Sie sicher, dass Sie zu diesem Zeitpunkt keinen Filter anwenden. Führen Sie stattdessen die Schritte aus, und demonstrieren Sie das Problem, bevor Sie die Ablaufverfolgung beenden und speichern.
   
@@ -102,7 +104,7 @@ Auf der **Start** Seite gibt es drei Bereiche: **zuletzt erfasste**Elemente, **N
 
 4. Reproduzieren Sie die Schritte, die ein Leistungsproblem darstellen.
 
-5. Klicken Sie auf **Datei** \> **Speichern**unter **Beenden** \> . Denken Sie daran, das Datum und die Uhrzeit mit der Zeitzone zu versehen und anzugeben, ob eine schlechte oder eine gute Leistung gezeigt wird.
+5. Klicken **Stop** Sie auf \> **Datei** \> **Speichern**unter beenden. Denken Sie daran, das Datum und die Uhrzeit mit der Zeitzone zu versehen und anzugeben, ob eine schlechte oder eine gute Leistung gezeigt wird.
 
 ## <a name="httpwatch"></a>HTTPWatch
 
@@ -131,19 +133,19 @@ Dieser Screenshot stammt aus der professionellen Version von HTTPWatch. Sie kön
 
 ## <a name="problem-steps-recorder"></a>Problem Aufzeichnung für Schritte
 
-Mit der Schritte Aufzeichnung oder PSR. exe können Sie Probleme aufzeichnen, während Sie auftreten. Es handelt sich um ein sehr nützliches Tool, das sehr einfach ausgeführt werden kann.
+Mit den Schritten Recorder oder PSR.exe können Sie Probleme aufzeichnen, während Sie auftreten. Es handelt sich um ein sehr nützliches Tool, das sehr einfach ausgeführt werden kann.
   
-### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>Ausführen des Problems Steps Recorder (PSR. exe) zum Aufzeichnen Ihrer Arbeit
+### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>Ausführen des Problems "Recording Steps Recorder" (PSR.exe) zum Aufzeichnen Ihrer Arbeit
   
-1. Verwenden Sie **entweder Start** \> **Run** \> Type **PSR. exe** \> **OK**, oder klicken Sie auf den **Windows-Schlüsseltyp** \> **PSR. exe** \> , und drücken Sie dann die EINGABETASTE.
+1. Verwenden Sie entweder **Start** \> **Lauftyp** \> **PSR.exe** \> **OK**, oder klicken Sie auf den **Windows-Schlüsseltyp** \> **PSR.exe** , \> und drücken Sie dann die EINGABETASTE.
 
-2. Wenn das kleine Fenster PSR. exe angezeigt wird, klicken Sie auf **Datensatz starten** , und reproduzieren Sie die Schritte, die das Leistungsproblem reproduzieren. Sie können bei Bedarf Kommentare hinzufügen, indem Sie auf **Kommentare hinzufügen**klicken.
+2. Wenn das Fenster kleines PSR.exe angezeigt wird, klicken Sie auf **Datensatz starten** , und reproduzieren Sie die Schritte, die das Leistungsproblem reproduzieren. Sie können bei Bedarf Kommentare hinzufügen, indem Sie auf **Kommentare hinzufügen**klicken.
 
 3. Klicken Sie auf **Record beenden** , wenn Sie die Schritte abgeschlossen haben. Wenn es sich bei dem Leistungsproblem um ein Seitenrendering handelt, warten Sie, bis die Seite gerendert wird, bevor Sie die Aufzeichnung beenden.
 
 4. Klicken Sie auf **Speichern**.
 
-![Ein Screenshot der Schritte Aufzeichnung oder PSR. exe.](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
+![Ein Screenshot der Schritte Recorder oder PSR.exe.](media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
   
 Das Datum und die Uhrzeit werden für Sie aufgezeichnet. Dadurch wird Ihr PSR mit ihrer Netmon-Ablaufverfolgung und HTTPWatch in der Zeit verknüpft und hilft bei der präzisen Problembehandlung. Das Datum und die Uhrzeit im PSR-Eintrag können zeigen, dass eine Minute zwischen der Anmeldung und dem Browsen der URL und dem partiellen Rendern der Administratorwebsite verging, beispielsweise.
   
@@ -153,7 +155,7 @@ Es ist nicht möglich, alles über die Netzwerk-und Leistungsfehler Behebung zu 
   
 Wenn Sie wissen möchten, wie Sie Netzwerkablaufverfolgungen für Ihre Office 365-Websites lesen können, gibt es keinen besseren Lehrer als die regelmäßige Erstellung von Spuren von Seitenlasten und die Erfahrung beim Lesen. Wenn Sie beispielsweise eine Chance haben, laden Sie einen Office 365 Dienst, und verfolgen Sie den Prozess. Filtern Sie die Ablaufverfolgung für DNS-Datenverkehr, oder Durchsuchen Sie den FrameData nach dem Namen des Diensts, den Sie durchsucht haben. Überprüfen Sie die Ablaufverfolgung, um eine Vorstellung der Schritte zu erhalten, die beim Laden des Diensts auftreten. Auf diese Weise erfahren Sie, wie die normale Seitenauslastung aussehen sollte, und im Fall der Problembehandlung, insbesondere im Hinblick auf die Leistung, kann das Vergleichen von guten und schlechten Ablaufverfolgungen eine Menge Lehren.
   
-NetMon verwendet Microsoft IntelliSense im Feld Anzeigefilter. IntelliSense oder die intelligente Codevervollständigung ist dieser Trick, bei dem Sie einen Punkt eingeben und alle verfügbaren Optionen in einem Dropdown-Auswahlfeld angezeigt werden. Wenn Sie beispielsweise über die TCP-Fensterskalierung besorgt sind, können Sie mit dieser Methode zu einem Filter (beispielsweise `.protocol.tcp.window < 100`) gelangen.
+NetMon verwendet Microsoft IntelliSense im Feld Anzeigefilter. IntelliSense oder die intelligente Codevervollständigung ist dieser Trick, bei dem Sie einen Punkt eingeben und alle verfügbaren Optionen in einem Dropdown-Auswahlfeld angezeigt werden. Wenn Sie beispielsweise über die TCP-Fensterskalierung besorgt sind, können Sie mit dieser Methode zu einem Filter (beispielsweise `.protocol.tcp.window < 100` ) gelangen.
   
 ![Screenshot von Netmon, der zeigt, dass das Feld "Anzeige Filter" IntelliSense verwendet.](media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
   
@@ -167,9 +169,9 @@ Der Datenverkehr zwischen dem Client und Office 365 erfolgt über TLS, was bedeu
 
 - Leeren Sie den DNS-Auflösungscache, und schließen Sie, wenn möglich, alle Browser ab, mit Ausnahme derjenigen, in der Sie die Tests durchführen. Wenn Sie dies nicht tun können, beispielsweise wenn die Unterstützung ein browserbasiertes Tool zum Anzeigen des Desktops des Clientcomputers verwendet, müssen Sie Ihre Ablaufverfolgung filtern.
 
-- Suchen Sie in einer aktiven Ablaufverfolgung nach dem Office 365 Dienst, den Sie verwenden. Wenn Sie den Datenverkehr noch nie oder selten gesehen haben, ist dies ein hilfreicher Schritt, um das Leistungsproblem von anderen Netzwerk Rauschen zu trennen. Es gibt einige Möglichkeiten, dies zu tun. Direkt vor dem Test können Sie _Ping_ oder _PsPing_ für die URL des jeweiligen Diensts verwenden (`ping outlook.office365.com` oder `psping -4 microsoft-my.sharepoint.com:443`beispielsweise). Sie können diesen Ping-oder PsPing auch ganz einfach in einer Netmon-Ablaufverfolgung (anhand des Prozess namens) finden. Das gibt Ihnen einen Platz, um mit der Suche zu beginnen.
+- Suchen Sie in einer aktiven Ablaufverfolgung nach dem Office 365 Dienst, den Sie verwenden. Wenn Sie den Datenverkehr noch nie oder selten gesehen haben, ist dies ein hilfreicher Schritt, um das Leistungsproblem von anderen Netzwerk Rauschen zu trennen. Es gibt einige Möglichkeiten, dies zu tun. Direkt vor dem Test können Sie _Ping_ oder _PsPing_ für die URL des jeweiligen Diensts verwenden (oder Beispiels `ping outlook.office365.com` `psping -4 microsoft-my.sharepoint.com:443` Weise). Sie können diesen Ping-oder PsPing auch ganz einfach in einer Netmon-Ablaufverfolgung (anhand des Prozess namens) finden. Das gibt Ihnen einen Platz, um mit der Suche zu beginnen.
 
-Wenn Sie zum Zeitpunkt des Problems nur Netmon Tracing verwenden, ist das auch okay. Um sich selbst zu orientieren, verwenden Sie `ContainsBin(FrameData, ASCII, "office")` einen `ContainsBin(FrameData, ASCII, "outlook")`Filter wie oder. Sie können Ihre Framenummer aus der Ablaufverfolgungsdatei aufzeichnen. Möglicherweise möchten Sie auch den _Frame Zusammenfassungs_ Bereich ganz nach rechts scrollen und nach der Spalte Unterhaltungs-ID suchen. Es gibt eine Nummer, die für die ID dieser spezifischen Unterhaltung angezeigt wird, die Sie später auch isoliert aufzeichnen und sehen können. Denken Sie daran, diesen Filter zu entfernen, bevor Sie andere Filter anwenden.
+Wenn Sie zum Zeitpunkt des Problems nur Netmon Tracing verwenden, ist das auch okay. Um sich selbst zu orientieren, verwenden Sie einen Filter wie `ContainsBin(FrameData, ASCII, "office")` oder `ContainsBin(FrameData, ASCII, "outlook")` . Sie können Ihre Framenummer aus der Ablaufverfolgungsdatei aufzeichnen. Möglicherweise möchten Sie auch den _Frame Zusammenfassungs_ Bereich ganz nach rechts scrollen und nach der Spalte Unterhaltungs-ID suchen. Es gibt eine Nummer, die für die ID dieser spezifischen Unterhaltung angezeigt wird, die Sie später auch isoliert aufzeichnen und sehen können. Denken Sie daran, diesen Filter zu entfernen, bevor Sie andere Filter anwenden.
 
 > [!TIP]
 > NetMon verfügt über viele hilfreiche integrierte Filter. Testen Sie die Schaltfläche " **Filter laden** " oben im Bereich " _Anzeige_ Filter".
@@ -214,7 +216,7 @@ In der SYN-SYN/ACK gefunden. Legacy-oder Alterungs Hardware nutzt möglicherweis
 
 #### <a name="what-to-look-for"></a>Worauf Sie achten sollten
 
-Suchen Sie in der Netzwerkablaufverfolgung nach dem SYN-SYN/ACK-Datenverkehr.  Verwenden Sie in Netmon einen Filter wie `tcp.flags.syn == 1`. Dieser Filter ist in Wireshark identisch.  
+Suchen Sie in der Netzwerkablaufverfolgung nach dem SYN-SYN/ACK-Datenverkehr.  Verwenden Sie in Netmon einen Filter wie `tcp.flags.syn == 1` . Dieser Filter ist in Wireshark identisch.  
 
 ![Filtern Sie in Netmon oder wireshark für SYN-Pakete für beide Tools: TCP. Flags. SYN = = 1.](media/4b9a12a1-c915-43c8-ac2f-a679d0435a29.PNG)
 
@@ -237,14 +239,14 @@ Wenn Verbindungen von Proxy-oder Firewall-Geräten beendet werden, wird der Clie
 
 #### <a name="what-to-look-for"></a>Worauf Sie achten sollten
 
-Sehen Sie sich in Netmon das Feld Zeitabstand für einen Roundtrip an. Bei einem Roundtrip handelt es sich um die Zeit zwischen dem Client, der eine Anforderung an den Server sendet und eine Antwort zurück erhält. Überprüfen Sie zwischen dem Client und dem Ausgangswert (ex. Client--\> Proxy) oder der Client Office 365 (Client--\> Office 365). Sie können dies in vielen Arten von Paketen sehen.
+Sehen Sie sich in Netmon das Feld Zeitabstand für einen Roundtrip an. Bei einem Roundtrip handelt es sich um die Zeit zwischen dem Client, der eine Anforderung an den Server sendet und eine Antwort zurück erhält. Überprüfen Sie zwischen dem Client und dem Ausgangswert (ex. Client-- \> Proxy) oder der Client Office 365 (Client-- \> Office 365). Sie können dies in vielen Arten von Paketen sehen.
 
-Beispielsweise kann der Filter in Netmon wie `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12`, oder, in Wireshark, `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12`aussehen.  
+Beispielsweise kann der Filter in Netmon wie `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12` , oder, in Wireshark, Aussehen `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12` .  
 
 > [!TIP]
-> Sie wissen nicht, ob die IP-Adresse in Ihrer Ablaufverfolgung zu Ihrem DNS-Server gehört? Versuchen Sie es nach oben an der Befehlszeile. Klicken Sie auf **Start** \> **Ausführen** \> , geben Sie **cmd**ein, oder drücken Sie die **Windows-Taste** \> , und geben Sie **cmd**ein. Geben `nslookup <the IP address from the network trace>`Sie an der Eingabeaufforderung ein. Verwenden Sie zum Testen nslookup für die IP-Adresse Ihres Computers. > eine Liste der IP-Bereiche von Microsoft finden Sie unter [Office 365-URLs und IP-Adressbereiche](https://technet.microsoft.com/library/hh373144.aspx).
+> Sie wissen nicht, ob die IP-Adresse in Ihrer Ablaufverfolgung zu Ihrem DNS-Server gehört? Versuchen Sie es nach oben an der Befehlszeile. Klicken Sie auf **Start** \> **Ausführen** \> , geben Sie **cmd**ein, oder drücken Sie die **Windows** \> -Taste, und geben Sie **cmd**ein. Geben Sie an der Eingabeaufforderung ein `nslookup <the IP address from the network trace>` . Verwenden Sie zum Testen nslookup für die IP-Adresse Ihres Computers. > eine Liste der IP-Bereiche von Microsoft finden Sie unter [Office 365-URLs und IP-Adressbereiche](https://technet.microsoft.com/library/hh373144.aspx).
 
-Wenn ein Problem vorliegt, erwarten Sie, dass lange Zeitoffsets angezeigt werden, in diesem Fall (Outlook Online), insbesondere in TLS: TLS-Paketen, die den Durchgang von Anwendungsdaten anzeigen (beispielsweise können Sie in Netmon über `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"`Anwendungsdaten Pakete suchen). Sie sollten einen reibungslosen Verlauf in der Zeit in der Sitzung sehen. Wenn beim Aktualisieren von Outlook Online lange Verzögerungen angezeigt werden, kann dies darauf zurückzuführen sein, dass ein hoher Grad an Zurücksetzen gesendet wird.
+Wenn ein Problem vorliegt, erwarten Sie, dass lange Zeitoffsets angezeigt werden, in diesem Fall (Outlook Online), insbesondere in TLS: TLS-Paketen, die den Durchgang von Anwendungsdaten anzeigen (beispielsweise können Sie in Netmon über Anwendungsdaten Pakete suchen `.Protocol.TLS AND Description == "TLS:TLS Rec Layer-1 SSL Application Data"` ). Sie sollten einen reibungslosen Verlauf in der Zeit in der Sitzung sehen. Wenn beim Aktualisieren von Outlook Online lange Verzögerungen angezeigt werden, kann dies darauf zurückzuführen sein, dass ein hoher Grad an Zurücksetzen gesendet wird.
 
 ### <a name="latencyround-trip-time"></a>Wartezeit/Roundtrip-Zeit
 
@@ -265,30 +267,30 @@ Sie müssen die Geschwindigkeit Ihrer Verbindung oder die Bandbreite ihrer ISP-V
 
 Um die Wartezeit in einer Ablaufverfolgung nachzuverfolgen, werden Sie davon profitieren, die IP-Adresse des Clientcomputers und die IP-Adresse des DNS-Servers in Office 365 aufgezeichnet zu haben. Dies dient dem Zweck der einfacheren Ablauf Verfolgungs Filterung. Wenn Sie über einen Proxy eine Verbindung herstellen, benötigen Sie die IP-Adresse Ihres Clientcomputers, die Proxy/Ausstieg-IP-Adresse und die Office 365 DNS-IP-Adresse, um die Arbeit zu vereinfachen.  
 
-Bei einer an Outlook.office365.com gesendeten Ping-Anforderung wird Ihnen der Name des Datencenters mitgeteilt, das die Anforderung empfängt, auch wenn ping *möglicherweise* keine Verbindung herstellen kann, um die Marken aufeinander folgenden ICMP-Pakete zu senden. Wenn Sie PsPing (ein kostenloses Tool zum herunterladen) und den Port (443) und möglicherweise für die Verwendung von IPv4 (-4) verwenden, erhalten Sie eine durchschnittliche Roundtrip-Zeit für gesendete Pakete. Dies funktioniert für andere URLs in den Office 365 Diensten wie `psping -4 yourSite.sharepoint.com:443`. In der Tat können Sie eine Reihe von Pings angeben, um eine größere Stichprobe für Ihren Durchschnitt zu erhalten `psping -4 -n 20 yourSite-my.sharepoint.com:443`, versuchen Sie so etwas wie.  
+Bei einer an Outlook.office365.com gesendeten Ping-Anforderung wird Ihnen der Name des Datencenters mitgeteilt, das die Anforderung empfängt, auch wenn ping *möglicherweise* keine Verbindung herstellen kann, um die Marken aufeinander folgenden ICMP-Pakete zu senden. Wenn Sie PsPing (ein kostenloses Tool zum herunterladen) und den Port (443) und möglicherweise für die Verwendung von IPv4 (-4) verwenden, erhalten Sie eine durchschnittliche Roundtrip-Zeit für gesendete Pakete. Dies funktioniert für andere URLs in den Office 365 Diensten wie `psping -4 yourSite.sharepoint.com:443` . In der Tat können Sie eine Reihe von Pings angeben, um eine größere Stichprobe für Ihren Durchschnitt zu erhalten, versuchen Sie so etwas wie `psping -4 -n 20 yourSite-my.sharepoint.com:443` .  
 
 > [!NOTE]
 > PsPing sendet keine ICMP-Pakete. Es pingt mit TCP-Paketen über einen bestimmten Port, sodass Sie eine beliebige, die Sie kennen, verwenden können, um Sie zu öffnen. Versuchen Sie in Office 365, die SSL/TLS verwendet, Port: 443 an Ihren PsPing anzufügen.
 
 ![Screenshot, der ein Ping-Auflösen von Outlook.office365.com zeigt, und ein PSPing mit dem 443, das dasselbe tut, aber auch eine 6.5 ms average RTT meldet.](media/c64339f2-2c96-45b8-b168-c2a060430266.PNG)
 
-Wenn Sie beim Ausführen einer Netzwerkablaufverfolgung die Seite langsam ausgeführte Office 365 geladen haben, sollten Sie eine Netmon-oder `DNS`wireshark-Ablaufverfolgung für filtern. Dies ist eines der IPS, nach dem wir suchen.  
+Wenn Sie beim Ausführen einer Netzwerkablaufverfolgung die Seite langsam ausgeführte Office 365 geladen haben, sollten Sie eine Netmon-oder wireshark-Ablaufverfolgung für Filtern `DNS` . Dies ist eines der IPS, nach dem wir suchen.  
 
 Hier sind die Schritte, die Sie zum Filtern Ihrer Netmon ausführen müssen, um die IP-Adresse zu erhalten (und einen Blick auf die DNS-Wartezeit werfen). In diesem Beispiel wird Outlook.office365.com verwendet, es kann aber auch die URL eines SharePoint Online-Mandanten verwendet werden (beispielsweise HiThere.SharePoint.com).  
 
-1. Pingen Sie `ping outlook.office365.com` die URL an, und notieren Sie in den Ergebnissen den Namen und die IP-Adresse des DNS-Servers, an den die Ping-Anforderung gesendet wurde.
+1. Pingen Sie die URL an, `ping outlook.office365.com` und notieren Sie in den Ergebnissen den Namen und die IP-Adresse des DNS-Servers, an den die Ping-Anforderung gesendet wurde.
 2. Netzwerkablaufverfolgung zum Öffnen der Seite oder Ausführen der Aktion, die Ihnen das Leistungsproblem gibt, oder, wenn Sie eine hohe Wartezeit auf dem Ping-Wert selbst sehen, Netzwerkablaufverfolgung.
-3. Öffnen Sie die Ablaufverfolgung in Netmon, und Filtern Sie nach DNS (dieser Filter funktioniert auch in Wireshark, ist `-- dns`jedoch für den Fall anfällig). Da Sie den Namen des DNS-Servers aus Ihrem Ping-Signal kennen, können Sie auch in Netmon so schnell wie folgt `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")`filtern:, das in Wireshark DNS aussieht, und Frame enthält "namnorthwest".<br/>Öffnen Sie das Antwortpaket, und klicken Sie im Fenster Netmon- **Frame Details** auf zu erweiternde **DNS** , um weitere Informationen zu erhalten. In den DNS-Informationen finden Sie die IP-Adresse des DNS-Servers, an den die Anforderung ging, in Office 365. Sie benötigen diese IP-Adresse für den nächsten Schritt (das PsPing-Tool). Entfernen Sie den Filter, klicken Sie mit der rechten Maustaste auf die DNS-Antwort in Netmon (**Frame Summary** \> **Find Conversations** \> **DNS**), um die DNS-Abfrage und-Antwort nebeneinander anzuzeigen.
+3. Öffnen Sie die Ablaufverfolgung in Netmon, und Filtern Sie nach DNS (dieser Filter funktioniert auch in Wireshark, ist jedoch für den Fall anfällig `-- dns` ). Da Sie den Namen des DNS-Servers aus Ihrem Ping-Signal kennen, können Sie auch in Netmon so schnell wie folgt filtern: `DNS AND ContainsBin(FrameData, ASCII, "namnorthwest")` , das in Wireshark DNS aussieht, und Frame enthält "namnorthwest".<br/>Öffnen Sie das Antwortpaket, und klicken Sie im Fenster Netmon- **Frame Details** auf zu erweiternde **DNS** , um weitere Informationen zu erhalten. In den DNS-Informationen finden Sie die IP-Adresse des DNS-Servers, an den die Anforderung ging, in Office 365. Sie benötigen diese IP-Adresse für den nächsten Schritt (das PsPing-Tool). Entfernen Sie den Filter, klicken Sie mit der rechten Maustaste auf die DNS-Antwort in Netmon (**Frame Summary** \> **Find Conversations** \> **DNS**), um die DNS-Abfrage und-Antwort nebeneinander anzuzeigen.
 4. Beachten Sie in Netmon auch die Zeit Offset Spalte zwischen der DNS-Anforderung und der Antwort. Im nächsten Schritt ist das einfache installieren und Verwenden des [PsPing](https://technet.microsoft.com/sysinternals/jj729731.aspx) -Tools sehr praktisch, da ICMP häufig in Firewalls blockiert wird und PsPing die Wartezeit in Millisekunden elegant verfolgt. PsPing schließt eine TCP-Verbindung mit einer Adresse und einem Port ab (in unserem Fall Open Port 443).
 5. Installieren Sie PsPing.
-6. Öffnen Sie eine Eingabeaufforderung ( \> starten \> Sie den Typ cmd oder den \> Windows-Schlüsseltyp cmd), und wechseln Sie in das Verzeichnis, in dem Sie PsPing installiert haben, um den PsPing-Befehl auszuführen. In meinen Beispielen können Sie sehen, dass ich einen "Perf"-Ordner im Stamm von C erstellt habe. Sie können das gleiche für den Schnellzugriff ausführen.
-7. Geben Sie den Befehl ein, damit Sie Ihre PsPing gegen die IP-Adresse des Office 365 DNS-Servers aus ihrer früheren Netmon-Ablaufverfolgung, einschließlich der Port `psping -n 20 132.245.24.82:445`Nummer, wie. Auf diese Weise erhalten Sie eine Stichprobe von 20 Pings und die durchschnittliche Wartezeit beim Beenden von PsPing.
+6. Öffnen Sie eine Eingabeaufforderung (starten Sie \> \> den Typ cmd oder den Windows-Schlüsseltyp \> cmd), und wechseln Sie in das Verzeichnis, in dem Sie PsPing installiert haben, um den PsPing-Befehl auszuführen. In meinen Beispielen können Sie sehen, dass ich einen "Perf"-Ordner im Stamm von C erstellt habe. Sie können das gleiche für den Schnellzugriff ausführen.
+7. Geben Sie den Befehl ein, damit Sie Ihre PsPing gegen die IP-Adresse des Office 365 DNS-Servers aus ihrer früheren Netmon-Ablaufverfolgung, einschließlich der Portnummer, wie `psping -n 20 132.245.24.82:445` . Auf diese Weise erhalten Sie eine Stichprobe von 20 Pings und die durchschnittliche Wartezeit beim Beenden von PsPing.
 
 Wenn Sie über einen Proxy Server Office 365 werden, sind die Schritte etwas anders. Sie möchten zunächst Ihren Proxy Server PsPing, um einen durchschnittlichen Latenzwert in Millisekunden an Proxy/Ausstieg und zurück zu erhalten, und dann entweder PsPing auf dem Proxy oder auf einem Computer mit direkter Internet Verbindung ausführen, um den fehlenden Wert abzurufen (der an Office 365 und zurück).  
 
 Wenn Sie PsPing über den Proxy ausführen möchten, haben Sie zwei Millisekunden: Client Computer mit Proxy Server oder Ausgangspunkte und Proxy Server für Office 365. Und Sie sind fertig! Nun, sowieso Aufzeichnungs Werte.  
 
-Wenn Sie PsPing auf einem anderen Clientcomputer ausführen, der über eine direkte Verbindung mit dem Internet verfügt, also ohne Proxy, haben Sie zwei Millisekunden: Clientcomputer mit Proxy Server oder Ausgangsstelle und Clientcomputer für Office 365. Ziehen Sie in diesem Fall den Wert des Clientcomputers zu Proxy Server oder Ausgangsnummer vom Wert des Clientcomputers zu Office 365, und Sie haben die RTT-Nummern von Ihrem Clientcomputer zum Proxy Server oder Ausgangsnummer und von Proxy Server oder Ausgangsstelle zu offi CE 365.
+Wenn Sie PsPing auf einem anderen Clientcomputer ausführen, der über eine direkte Verbindung mit dem Internet verfügt, also ohne Proxy, haben Sie zwei Millisekunden: Clientcomputer mit Proxy Server oder Ausgangsstelle und Clientcomputer für Office 365. In diesem Fall subtrahieren Sie den Wert des Clientcomputers mit dem Proxy Server oder dem Ausgangspunkte vom Wert des Clientcomputers zu Office 365, und Sie haben die RTT-Nummern von Ihrem Clientcomputer zum Proxy Server oder Ausgangsnummer und von Proxy Server oder Ausgangsstelle auf Office 365.
 
 Wenn Sie jedoch einen Clientcomputer in dem betroffenen Standort finden können, der direkt verbunden ist, oder den Proxy umgeht, können Sie sich entscheiden, ob das Problem dort zunächst wiedergegeben wird, und anschließend mit diesem testen.
 
@@ -318,7 +320,7 @@ Die Proxyauthentifizierung ist eine Einstellung auf Ihrem Ausstiegs Proxy Server
 
 #### <a name="what-to-look-for"></a>Worauf Sie achten sollten
 
-Die Proxy Authentifizierung findet immer dann statt, wenn eine neue TCP-Sitzung gesponnen werden muss, um Dateien oder Informationen vom Server anzufordern oder um Informationen zu liefern. Beispielsweise kann Proxyauthentifizierung bei HTTP GET-oder HTTP POST-Anforderungen angezeigt werden. Wenn Sie die Frames sehen möchten, in denen Sie Anforderungen in Ihrer Ablaufverfolgung authentifizieren, fügen Sie die Spalte "NTLMSSP Summary" zu Netmon und Filter `.property.NTLMSSPSummary`for hinzu. Um zu sehen, wie lange die Authentifizierung dauert, fügen Sie die Zeit Delta-Spalte hinzu.
+Die Proxy Authentifizierung findet immer dann statt, wenn eine neue TCP-Sitzung gesponnen werden muss, um Dateien oder Informationen vom Server anzufordern oder um Informationen zu liefern. Beispielsweise kann Proxyauthentifizierung bei HTTP GET-oder HTTP POST-Anforderungen angezeigt werden. Wenn Sie die Frames sehen möchten, in denen Sie Anforderungen in Ihrer Ablaufverfolgung authentifizieren, fügen Sie die Spalte "NTLMSSP Summary" zu Netmon und Filter for hinzu `.property.NTLMSSPSummary` . Um zu sehen, wie lange die Authentifizierung dauert, fügen Sie die Zeit Delta-Spalte hinzu.
 
 So fügen Sie Netmon eine Spalte hinzu:
 
@@ -330,7 +332,7 @@ So fügen Sie Netmon eine Spalte hinzu:
 
 Auch wenn Sie die Spalte nicht hinzufügen, kann der Netmon-Filter verwendet werden. Die Problembehandlung wird jedoch viel einfacher, wenn Sie sehen können, in welcher Phase der Authentifizierung Sie sich befinden.
 
-Achten Sie bei der Suche nach Instanzen der Proxy Authentifizierung darauf, dass Sie alle Frames untersuchen, bei denen eine NTLM-Herausforderung vorliegt, oder ob eine Authentifizierungsmeldung vorhanden ist. Klicken Sie bei Bedarf mit der rechten Maustaste auf den bestimmten Datenverkehr, \> und suchen Sie Unterhaltungen TCP. Beachten Sie die Time Delta-Werte in diesen Unterhaltungen.
+Achten Sie bei der Suche nach Instanzen der Proxy Authentifizierung darauf, dass Sie alle Frames untersuchen, bei denen eine NTLM-Herausforderung vorliegt, oder ob eine Authentifizierungsmeldung vorhanden ist. Klicken Sie bei Bedarf mit der rechten Maustaste auf den bestimmten Datenverkehr, und suchen Sie Unterhaltungen \> TCP. Beachten Sie die Time Delta-Werte in diesen Unterhaltungen.
 
 ![NetMon-Ablaufverfolgung mit Proxyauthentifizierung, gefiltert nach Unterhaltung.](media/b640f176-0a52-4bbb-972e-60fb3d6aece2.PNG)
 
@@ -357,7 +359,7 @@ Die Analyse der DNS-Leistung ist in der Regel ein weiterer Auftrag für eine Net
 
 DNS-Datenverkehr basiert auf TCP-und UDP-Anforderungen und Antworten sind eindeutig mit einer ID gekennzeichnet, mit der eine bestimmte Anforderung mit der spezifischen Antwort abgeglichen werden kann. Wenn SharePoint Online beispielsweise einen Netzwerknamen oder eine URL auf einer Webseite verwendet, wird DNS-Datenverkehr angezeigt. Als Faustregel wird der Großteil dieses Datenverkehrs, außer beim Übertragen von Zonen, über UDP ausgeführt.
 
-Sowohl in Netmon als auch in Wireshark ist der grundlegendste Filter, mit dem Sie den DNS-Daten `dns`Verkehr betrachten können, einfach. Achten Sie darauf, bei der Angabe des Filters Kleinbuchstaben zu verwenden. Denken Sie daran, den DNS-Auflösungscache zu leeren, bevor Sie mit dem reproduzieren des Problems auf dem Clientcomputer beginnen. Wenn Sie beispielsweise eine langsame SharePoint Online Seitenlast für die Startseite haben, sollten Sie alle Browser schließen, einen neuen Browser öffnen, die Ablaufverfolgung starten, den DNS-Auflösungscache leeren und zu Ihrer SharePoint Online Website wechseln. Sobald die gesamte Seite aufgelöst wird, sollten Sie die Ablaufverfolgung beenden und speichern.
+Sowohl in Netmon als auch in Wireshark ist der grundlegendste Filter, mit dem Sie den DNS-Datenverkehr betrachten können, einfach `dns` . Achten Sie darauf, bei der Angabe des Filters Kleinbuchstaben zu verwenden. Denken Sie daran, den DNS-Auflösungscache zu leeren, bevor Sie mit dem reproduzieren des Problems auf dem Clientcomputer beginnen. Wenn Sie beispielsweise eine langsame SharePoint Online Seitenlast für die Startseite haben, sollten Sie alle Browser schließen, einen neuen Browser öffnen, die Ablaufverfolgung starten, den DNS-Auflösungscache leeren und zu Ihrer SharePoint Online Website wechseln. Sobald die gesamte Seite aufgelöst wird, sollten Sie die Ablaufverfolgung beenden und speichern.
 
 ![Ein grundlegender Filter für DNS in Netmon ist DNS.](media/1bebc118-ca13-45f3-803f-ab73e7af401d.png)
 
@@ -373,11 +375,11 @@ Wenn Sie eine Abfrage von Interesse finden, können Sie sie isolieren, indem Sie
 
 ![Eine Netmon-Ablaufverfolgung von Outlook Online-Laden, gefiltert nach DNS, und Verwenden von "Unterhaltungen suchen" und "DNS" zum Einschränken der Ergebnisse.](media/763cf20e-7b48-4a37-9449-c9978cfe118b.PNG)
 
-In Wireshark können Sie eine Spalte für die DNS-Zeit erstellen. Nehmen Sie Ihre Ablaufverfolgung (oder öffnen Sie eine Ablaufverfolgung) in `dns`Wireshark, und Filtern Sie nach, `dns.time`oder, hilfreicher,. Klicken Sie auf eine beliebige DNS-Abfrage, und erweitern Sie im Bereich Details anzeigen `Domain Name System (response)` die Details. Sie sehen ein Feld für die Zeit (beispielsweise `[Time: 0.001111100 seconds]`. Klicken Sie mit der rechten Maustaste auf dieses Mal, und wählen Sie **als Spalte anwenden**aus. Dadurch erhalten Sie eine **Zeit** Spalte für eine schnellere Sortierung Ihrer Ablaufverfolgung. Klicken Sie auf die neue Spalte, um nach absteigenden Werten zu sortieren, um zu sehen, welcher DNS-Anruf am längsten Auflösungsvorgang dauerte.
+In Wireshark können Sie eine Spalte für die DNS-Zeit erstellen. Nehmen Sie Ihre Ablaufverfolgung (oder öffnen Sie eine Ablaufverfolgung) in Wireshark, und Filtern Sie nach `dns` , oder, hilfreicher, `dns.time` . Klicken Sie auf eine beliebige DNS-Abfrage, und erweitern Sie im Bereich Details anzeigen die `Domain Name System (response)` Details. Sie sehen ein Feld für die Zeit (beispielsweise `[Time: 0.001111100 seconds]` . Klicken Sie mit der rechten Maustaste auf dieses Mal, und wählen Sie **als Spalte anwenden**aus. Dadurch erhalten Sie eine **Zeit** Spalte für eine schnellere Sortierung Ihrer Ablaufverfolgung. Klicken Sie auf die neue Spalte, um nach absteigenden Werten zu sortieren, um zu sehen, welcher DNS-Anruf am längsten Auflösungsvorgang dauerte.
 
 [Eine Durchsuchen von SharePoint Online gefiltert in Wireshark von (klein geschrieben) DNS. Time, wobei die Zeit aus den Details in eine Spalte und aufsteigend sortiert wird.](media/1439dcc2-12ff-4ee2-9ef3-1484cf79c384.PNG)
 
-Wenn Sie weitere Untersuchungen zur DNS-Auflösungszeit durchführen möchten, versuchen Sie es mit einem PsPing gegen den von TCP verwendeten `psping <IP address of DNS server>:53`DNS-Port (beispielsweise). Wird weiterhin ein Leistungsproblem angezeigt? Wenn Sie dies tun, ist das Problem eher ein größeres Netzwerkproblem als ein Problem mit der spezifischen DNS-Anwendung, auf die Sie die Lösung durchführen. Es ist auch erwähnenswert, dass ein Ping zu Outlook.office365.com Ihnen mitteilt, wo DNS-Namensauflösung für Outlook Online stattfindet (beispielsweise Outlook-namnorthwest.office365.com).
+Wenn Sie weitere Untersuchungen zur DNS-Auflösungszeit durchführen möchten, versuchen Sie es mit einem PsPing gegen den von TCP verwendeten DNS-Port (beispielsweise `psping <IP address of DNS server>:53` ). Wird weiterhin ein Leistungsproblem angezeigt? Wenn Sie dies tun, ist das Problem eher ein größeres Netzwerkproblem als ein Problem mit der spezifischen DNS-Anwendung, auf die Sie die Lösung durchführen. Es ist auch erwähnenswert, dass ein Ping zu Outlook.office365.com Ihnen mitteilt, wo DNS-Namensauflösung für Outlook Online stattfindet (beispielsweise Outlook-namnorthwest.office365.com).
 
 Wenn das Problem DNS-spezifisch aussieht, kann es erforderlich sein, sich an Ihre IT-Abteilung zu wenden, um DNS-Konfigurationen und DNS-Weiterleitungen zu prüfen, um dieses Problem weiter zu untersuchen.
 
@@ -412,13 +414,13 @@ TCP max Segment Size (MSS) ist ein weiterer Parameter des drei-Wege-Handshakes i
 > [!NOTE]
 > Wenn Sie eine Ablaufverfolgung suchen und den für Ihre Unterhaltung relevanten Datenverkehr ermitteln möchten, Filtern Sie die IP-Adresse des Clients oder die IP-Adresse des Proxyservers oder Ausgangs Points oder beides. Wenn Sie direkt wechseln, müssen Sie die URL, die Sie testen, auf die IP-Adresse von Office 365 in der Ablaufverfolgung pingen und nach ihr filtern.
 
-Sehen Sie sich die Trace Second-Hand an? Verwenden Sie Filter, um sich selbst zu orientieren. Führen Sie in Netmon eine Suche basierend auf der URL aus, Beispiels `Containsbin(framedata, ascii, "sphybridExample")`Weise beachten Sie die Framenummer.
+Sehen Sie sich die Trace Second-Hand an? Verwenden Sie Filter, um sich selbst zu orientieren. Führen Sie in Netmon eine Suche basierend auf der URL aus, beispielsweise `Containsbin(framedata, ascii, "sphybridExample")` beachten Sie die Framenummer.
 
-Verwenden Sie in Wireshark so `frame contains "sphybridExample"`etwas wie. Wenn Sie feststellen, dass Sie den Remote-WinSock (RWS)-Datenverkehr gefunden haben (er kann als [PSH, ACK] in Wireshark angezeigt werden), denken Sie daran, dass die RWs-Verbindung kurz vor relevanten SYN-SYN/ACKs zu sehen ist, wie weiter oben beschrieben.
+Verwenden Sie in Wireshark so etwas wie `frame contains "sphybridExample"` . Wenn Sie feststellen, dass Sie den Remote-WinSock (RWS)-Datenverkehr gefunden haben (er kann als [PSH, ACK] in Wireshark angezeigt werden), denken Sie daran, dass die RWs-Verbindung kurz vor relevanten SYN-SYN/ACKs zu sehen ist, wie weiter oben beschrieben.
 
 An dieser Stelle können Sie die Framenummer aufzeichnen, den Filter löschen und im Fenster Netzwerk Unterhaltungen in Netmon auf **gesamter Datenverkehr** klicken, um die nächste SYN-Ansicht anzuzeigen.
 
-Wenn Sie zum Zeitpunkt der Ablaufverfolgung keine IP-Adressinformationen erhalten haben, erhalten Sie von der Suche nach Ihrer URL in der Ablaufverfolgung ( `sphybridExample-my.sharepoint.com`beispielsweise zum Beispiel) IP-Adressen, nach denen Sie filtern können.
+Wenn Sie zum Zeitpunkt der Ablaufverfolgung keine IP-Adressinformationen erhalten haben, erhalten Sie von der Suche nach Ihrer URL in der Ablaufverfolgung ( `sphybridExample-my.sharepoint.com` beispielsweise zum Beispiel) IP-Adressen, nach denen Sie filtern können.
 
 Suchen Sie die Verbindung in der Ablaufverfolgung, die Sie sehen möchten. Dies ist möglich, indem Sie entweder die Ablaufverfolgung überprüfen, durch IP-Adressen filtern oder bestimmte Unterhaltungs-IDs mithilfe des Fensters Netzwerk Unterhaltungen in Netmon auswählen. Wenn Sie das SYN-Paket gefunden haben, erweitern Sie TCP (in NetMon) oder Transmission Control Protocol (in Wireshark) im Bereich Frame Details. Erweitern Sie TCP-Optionen und MaxSegmentSize. Suchen Sie den zugehörigen SYN-ACK-Frame, und erweitern Sie TCP-Optionen und MaxSegmentSize. Der kleinere der beiden Werte ist die maximale Segment Größe. In diesem Bild verwende ich die integrierte Spalte in Netmon, die als TCP-Problembehandlung bezeichnet wird.  
 
@@ -428,7 +430,7 @@ Die integrierte Spalte befindet sich oben im Bereich " **Frame Details** ". (Um 
 
 ![Hier finden Sie die Dropdownliste Spalten für die Option TCP-Problembehandlung (oberhalb der Rahmen Zusammenfassung).](media/64fd4baa-a872-4f07-b959-752d7d37fd62.PNG)
 
-Hier ist eine gefilterte Ablaufverfolgung in Wireshark. Es gibt einen spezifischen Filter für den MSS-Wert `tcp.options.mss`(). Die Frames eines SYN-, SYN/ACK-Handshakes werden am unteren Rand des Wireshark-Äquivalents mit Frame-Details verknüpft (also Frame 47 ACK, Links zu 46 SYN/ACK, Links zu 43 SYN), um diese Art von Arbeit zu vereinfachen.
+Hier ist eine gefilterte Ablaufverfolgung in Wireshark. Es gibt einen spezifischen Filter für den MSS-Wert ( `tcp.options.mss` ). Die Frames eines SYN-, SYN/ACK-Handshakes werden am unteren Rand des Wireshark-Äquivalents mit Frame-Details verknüpft (also Frame 47 ACK, Links zu 46 SYN/ACK, Links zu 43 SYN), um diese Art von Arbeit zu vereinfachen.
 
 ![Trace gefiltert in Wireshark durch TCP. Options. MSS für maximale Segment Größe (MSS).](media/51e278db-801b-48bc-9b68-87cf92f03fd6.PNG)
 
@@ -480,7 +482,7 @@ DNS funktioniert am schnellsten, wenn die Namensauflösung so nah wie möglich a
 
 Führen Sie das Ping-Tool gegen Outlook.office365.com aus, um zu bestimmen, an welcher Stelle in der Welt Ihre DNS-Anforderung weitergeleitet wird. Wenn Sie sich in Europa befinden, sollten Sie eine Antwort von so etwas wie Outlook-emeawest.office365.com sehen. In Nord-und Südamerika erwarten Sie so etwas wie Outlook-namnorthwest.office365.com.
 
-Öffnen Sie die Eingabeaufforderung auf dem Clientcomputer (über \> Start \> Ausführen cmd oder Windows \> -Schlüsseltyp cmd). Geben Sie Ping Outlook.office365.com ein, und drücken Sie die EINGABETASTE. Denken Sie daran, um-4 anzugeben, wenn Sie den Ping über IPv4 angeben möchten. Es kann sein, dass Sie nicht über die ICMP-Pakete eine Antwort erhalten, aber Sie sollten den Namen des DNS sehen, an das die Anforderung weitergeleitet wurde. Wenn Sie die Latenz Nummern für diese Verbindung anzeigen möchten, versuchen Sie PsPing mit der IP-Adresse des Servers, der von Ping zurückgegeben wird.  
+Öffnen Sie die Eingabeaufforderung auf dem Clientcomputer (über Start \> Ausführen \> cmd oder Windows \> -Schlüsseltyp cmd). Geben Sie Ping Outlook.office365.com ein, und drücken Sie die EINGABETASTE. Denken Sie daran, um-4 anzugeben, wenn Sie den Ping über IPv4 angeben möchten. Es kann sein, dass Sie nicht über die ICMP-Pakete eine Antwort erhalten, aber Sie sollten den Namen des DNS sehen, an das die Anforderung weitergeleitet wurde. Wenn Sie die Latenz Nummern für diese Verbindung anzeigen möchten, versuchen Sie PsPing mit der IP-Adresse des Servers, der von Ping zurückgegeben wird.  
 
 ![Ping von Outlook.office365.com mit Auflösung in Outlook-namnorthwest.](media/06c944d5-6159-43ec-aa31-757770695e8b.PNG)
 

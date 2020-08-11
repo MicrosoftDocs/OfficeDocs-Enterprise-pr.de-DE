@@ -18,17 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: Unterstützung endet für SharePoint 2010 und SharePoint Server 2010 am 13. April 2021. Verwenden Sie diesen Artikel als Leitfaden für ein Upgrade auf SharePoint Online oder eine neuere Version von SharePoint Server lokal.
-ms.openlocfilehash: 91083cbf64bde3e083ba87e2867e7e1a9e22628c
-ms.sourcegitcommit: d8ca7017b25d5ddc2771e662e02b62ff2058383b
+description: Hier finden Sie Informationen und Ressourcen für ein Upgrade von SharePoint 2010 und SharePoint Server 2010 als Unterstützung für beide Enden am 13. Oktober 2020.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6382c375439acaf8b978f6ef5c2813eaebc0701d
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102583"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603617"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>Upgrade von SharePoint 2010
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Microsoft SharePoint 2010 und SharePoint Server 2010 werden am **13. April 2021**am Ende der Unterstützung erreichen. In diesem Artikel werden die Ressourcen erläutert, die Sie beim Migrieren Ihrer vorhandenen SharePoint Server 2010 Daten zu SharePoint Online in Microsoft 365 oder beim Upgrade Ihrer lokalen SharePoint Server 2010 Umgebung unterstützen.
   
@@ -55,7 +56,7 @@ Das heißt, es werden keine weiteren Updates, Patches oder Fixes für das Produk
   
 Diese Matrix hilft beim Plotten eines Kurses, wenn es um die Migration von Produktfeatures und Benutzerdaten geht:
   
-|**Ende des Support Produkts**|**gut**|**Optimal**|
+|**Ende des Support Produkts**|**Gut**|**Optimal**|
 |:-----|:-----|:-----|
 |SharePoint Server 2010  <br/> |SharePoint Server 2013 (lokal)  <br/> |SharePoint Online  <br/> |
 ||SharePoint Server 2013 Hybrid mit SharePoint Online  <br/> |SharePoint Server 2016 (lokal)  <br/> |
@@ -89,7 +90,7 @@ Beachten Sie die versteckten Kosten, die im Zusammenhang mit der Wartung einer S
 > [!NOTE]
 > SharePoint-Administratoren erstellen möglicherweise ein Microsoft 365-Abonnement, richten eine brandneue SharePoint Online Website ein und schneiden dann sauber von SharePoint Server 2010 ab, wobei nur die wichtigsten Dokumente auf die neuen SharePoint Online Websites übermittelt werden. Von dort aus können alle verbleibenden Daten von der SharePoint Server 2010 Website in lokale Archive entwässert werden. 
   
-|**SharePoint Online**|**SharePoint Server lokal**|
+|**SharePoint Online**|**SharePoint Server lokal**|
 |:-----|:-----|
 |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |Hohe Kosten in der Zeit (Planung/Ausführung/Überprüfung)  <br/> |
 |Geringere Kosten in Fonds (keine hardwarekäufe)  <br/> |Höhere Kosten in Fonds (hardwarekäufe)  <br/> |

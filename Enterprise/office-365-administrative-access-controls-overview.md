@@ -14,13 +14,14 @@ f1.keywords:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 'Zusammenfassung: eine Übersicht über die administrativen Zugriffssteuerungen von Microsoft 365 und die Datenkategorisierung.'
-ms.openlocfilehash: 93b62acbda2508d5b41578eb807293c34fdda4dd
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom: seo-marvel-apr2020
+description: Dieser Artikel bietet eine Übersicht über die administrativen Zugriffssteuerungen und die Datenkategorisierung in Microsoft 365.
+ms.openlocfilehash: 58cbc7ebea3edb66f5d48d282a3e6995b247a044
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774970"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606711"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Administrative Zugriffssteuerung in Microsoft 365 
 
@@ -54,7 +55,7 @@ Kundendaten sind alle Daten, die von oder im Auftrag eines Kunden bei der Verwen
 
 - E-Mails
 - SharePoint Online Inhalt
-- Sofortnachrichten
+- Chatnachrichten
 - Kalenderelemente
 - Dokumente
 - Kontakte
@@ -72,9 +73,9 @@ Microsoft hat Zugriffssteuerungsmechanismen eingerichtet, um sicherzustellen, da
 
 Microsoft verwendet drei Kategorien von Zugriffssteuerungen für den Betrieb von Microsoft 365:
 
-- Isolierungs Steuerelemente
-- Personalsteuer Elemente
-- Technologie Steuerelemente
+- Isolierungssteuerungen
+- Personalsteuerungen
+- Technologiesteuerungen
 
 Wenn diese Steuerelemente kombiniert werden, können Sie böswillige Aktionen in Microsoft 365 verhindern und erkennen. Zusätzlich zu den von Microsoft verwendeten Isolierungs-, Personal-und Technologie Steuerelementen gibt es eine vierte Kategorie von Steuerelementen: die von Kunden implementierten.
 

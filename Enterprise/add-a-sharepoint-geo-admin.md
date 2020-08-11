@@ -11,13 +11,14 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: So fügen Sie eine Geo-Administrator in Microsoft 365 Multi-Geo hinzu oder entfernen ihn.
-ms.openlocfilehash: 13b730de6b318ddb3a4cf3a084d4b59e56a82dbf
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
+description: Müssen separate Administratoren für jeden geografischen Standort konfiguriert werden? So fügen Sie eine Geo-Administrator in Microsoft 365 Multi-Geo hinzu oder entfernen ihn.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b69ff352ae0e5ceb55200e0ed034e278808cdc9f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433606"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605821"
 ---
 # <a name="add-or-remove-a-geo-administrator-in-microsoft-365-multi-geo"></a>Hinzufügen oder Entfernen eines Geo-Administrators in Microsoft 365 Multi-Geo.
 
@@ -55,7 +56,7 @@ Beachten Sie, dass nicht alle Sicherheitsgruppen einen Gruppenalias besitzen. We
 
 Führen Sie `Remove-SPOGeoAdministrator -ObjectID <ObjectID>` aus, um eine Gruppe anhand der ObjectID zu entfernen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-topics"></a>Verwandte Themen
 
 [Add-SPOGeoAdministrator](https://docs.microsoft.com/powershell/module/sharepoint-online/add-spogeoadministrator)
 

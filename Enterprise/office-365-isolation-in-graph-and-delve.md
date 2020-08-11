@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Zusammenfassung: eine Erläuterung der Microsoft 365-Mandanten Isolierung in Microsoft Graph und in "vertiefen".'
-ms.openlocfilehash: 70888d084792cfb819c0ee54f34d2a8869fb198b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel finden Sie eine Erläuterung der Funktionsweise der Microsoft 365-Mandanten Isolierung in Office Graph und in "vertiefen".
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 285f910362628f52c379fcf535da7d0b1365383a
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998265"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605597"
 ---
 # <a name="microsoft-365-tenant-isolation-in-the-microsoft-graph-and-delve"></a>Microsoft 365-Mandanten Isolierung in Microsoft Graph und Tauchen
 

@@ -14,15 +14,16 @@ ms.collection:
 - M365-analytics
 f1.keywords:
 - NOCSH
-description: Eine Erläuterung der Berichtsfeatures in Microsoft 365.
-ms.openlocfilehash: 3e92427aaeec0a8472d6efd7a977bb4f74434555
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: Hier finden Sie Informationen zu verschiedenen Berichtsfeatures in Microsoft 365, einschließlich Azure Active Directory und Exchange Online.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 1e0039f354516f85362a8936d10d9fca2a7e3f6f
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44997785"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606311"
 ---
-# <a name="microsoft-365-reporting-features"></a>Microsoft 365-Berichterstellungsfeatures 
+# <a name="microsoft-365-reporting-features"></a>Microsoft 365-Berichterstellungsfeatures
 
 Die Berichtsfeatures in Microsoft 365 bieten verschiedene Überwachungsberichte für Azure Active Directory (Azure AD), Exchange Online, Geräteverwaltung, aufsichtsüberprüfung und Verhinderung von Datenverlust (DLP). Diese Berichte sind unterschiedlich und von den Microsoft 365-Aktivitätsberichten getrennt.
 

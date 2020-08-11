@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Microsoft 365 mit Windows PowerShell für Partner mit Delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
+title: Verwalten von Microsoft 365 mit Windows PowerShell für DAP-Partner
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
 description: 'Zusammenfassung: Partner für Syndication und Cloud Solution Provider (CSP) können Windows PowerShell zum Verwalten von Microsoft 365-Kundenmandanten verwenden.'
-ms.openlocfilehash: 22fd26fb89d15cc036d52ed49ec61319c7e13a52
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a2b05a5f24984d4113c856920d217f47d55f606b
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230481"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605921"
 ---
 # <a name="manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten von Microsoft 365 mit Windows PowerShell für Partner mit Delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP). Häufig handelt es sich um Netzwerk- oder Telekom-Anbieter für andere Unternehmen. Sie bündeln Microsoft 365-Abonnements für Ihre Kunden in ihren Dienst angeboten. Wenn Sie ein Microsoft 365-Abonnement verkaufen, werden Ihnen automatisch Administratoren im Namen von (AOBO) Berechtigungen für den Kundenmandanten erteilt, damit Sie den Kundenmandanten verwalten und melden können. Im besten Fällen ist dies im Microsoft 365 Admin Center schwierig und zeitaufwendig. Es ist viel einfacher, administrative Aufgaben auszuführen, wie das Auflisten aller Kunden- **TenantIds** und deren Domänen oder das Identifizieren aller Benutzer in einer Mandantschaft und welche Lizenzen Ihnen mithilfe von PowerShell für Microsoft 365 zugewiesen werden. In einigen Fällen ist es möglich, diese administrativen Aufgaben nur in PowerShell für Microsoft 365 auszuführen. Nachfolgend finden Sie einige Beispiele für Szenarien, die Syndication- und CSP-Partner am häufigsten verwenden, um ihre Kundenmandanten zu verwalten:
   

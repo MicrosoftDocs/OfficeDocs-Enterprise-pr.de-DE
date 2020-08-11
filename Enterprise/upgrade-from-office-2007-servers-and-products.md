@@ -22,17 +22,18 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Die Unterstützung wurde für Office 2007 Server und Clientanwendungen und benutzerdefinierte Support Vereinbarungen nicht verfügbar sind beendet. In diesem Artikel erfahren Sie, wie Sie jetzt mit der Planung Ihres Upgrades beginnen.
-ms.openlocfilehash: 79d017c92461b6c53e8d014ba9071957d70157fd
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
+description: Dieser Artikel enthält Ressourcen, die Ihnen beim Upgrade von Office 2007-Servern und-Clients helfen, da die Unterstützung für Office 2007 beendet wurde.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 21147ccd027ba0492ced6078f91932acc3bb958c
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906228"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605871"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2007-servers-and-clients"></a>Ressourcen für das Upgrade von Office 2007-Servern und-Clients
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Wenn Sie Office 2007-Produkte und-Dienste verwenden, ist die Unterstützung für diese Anwendungen beendet. Während Sie Ihr Upgrade planen, ist es eine gute Zeit, in die Microsoft-Cloud zu wechseln, beginnend mit Microsoft 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Ihr Upgrade zu planen.
       
@@ -57,7 +58,7 @@ Wenn Sie Office 2007 Produkte und Anwendungen zu Hause verwenden, lesen Sie [die
      
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Video: Was ist Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
+[Was ist Microsoft 365?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
   
 [Microsoft-Lebenszyklusrichtlinie](https://go.microsoft.com/fwlink/?linkid=865200)
 

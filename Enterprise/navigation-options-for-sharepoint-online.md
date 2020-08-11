@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint-Veröffentlichung in SharePoint Online beschrieben. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Dieser Artikel gilt nicht für klassische Teamwebsites.
-ms.openlocfilehash: c651530284889d2808c8fa415b72836eb6d14aea
-ms.sourcegitcommit: d1022143bdefdd5583d8eff08046808657b49c94
+description: In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint-Veröffentlichung in SharePoint Online beschrieben.
+ms.openlocfilehash: dd11775c35f9eb7d2b6bccc38023b6f8bce8efc4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44004760"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606761"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
@@ -33,7 +35,7 @@ In diesem Artikel werden Navigations Options Websites mit aktivierter SharePoint
 >[!NOTE]
 >Wenn Sie moderne SharePoint-Navigationsoptionen wie Mega-Menü, kaskadierende Navigation oder Hub-Navigation verwenden, gilt dieser Artikel nicht für Ihre Website. Moderne SharePoint-Website Architekturen nutzen eine vereinfachte Websitehierarchie und ein Hub-and-Spoke-Modell. Auf diese Weise können viele Szenarien erreicht werden, für die die Verwendung des SharePoint-Veröffentlichungsfeatures nicht erforderlich ist.
 
-## <a name="overview"></a>Übersicht
+## <a name="overview-of-navigation-options"></a>Übersicht über Navigationsoptionen
 
 Die Konfiguration des Navigations Anbieters kann die Leistung für den gesamten Standort erheblich beeinträchtigen, und es ist sorgfältig darauf zu achten, dass Sie einen Navigationsanbieter und eine Konfiguration auswählen, die für die Anforderungen einer SharePoint-Website effektiv skaliert wird. Es gibt zwei out-of-the-Box-Navigationsanbieter sowie benutzerdefinierte Navigations Implementierungen.
 
@@ -71,15 +73,15 @@ Dies ist die standardmäßig verwendete Navigation, die die einfachste Lösung i
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Vorgehensweise implementieren der Zwischenspeicherung der Struktur Navigation
 
-Unter **Websiteeinstellungen** > **sehen und fühlen** > **Navigation**können Sie überprüfen, ob die strukturelle Navigation für die globale Navigation oder aktuelle Navigation ausgewählt ist. Das Auswählen von **Seiten anzeigen** wirkt sich negativ auf die Leistung aus.
+Unter **Websiteeinstellungen**  >  **sehen und fühlen**  >  **Navigation**können Sie überprüfen, ob die strukturelle Navigation für die globale Navigation oder aktuelle Navigation ausgewählt ist. Das Auswählen von **Seiten anzeigen** wirkt sich negativ auf die Leistung aus.
 
 ![Struktur Navigation mit ausgewählten Unterwebsites anzeigen](media/SPONavOptionsStructuredShowSubsites.png)
 
-Die Zwischenspeicherung kann auf Websitesammlungsebene und auf Websiteebene aktiviert oder deaktiviert werden und ist standardmäßig für beide aktiviert. Aktivieren Sie das Kontrollkästchen zum **Aktivieren der Zwischenspeicherung**auf Website Sammlungs **Ebene unter** > Website Sammlungs**Verwaltung** > Website Sammlungs**Navigation**.
+Die Zwischenspeicherung kann auf Websitesammlungsebene und auf Websiteebene aktiviert oder deaktiviert werden und ist standardmäßig für beide aktiviert. Aktivieren **Site Settings**  >  **Site Collection Administration**  >  Sie das Kontrollkästchen zum **Aktivieren der Zwischenspeicherung**auf Websitesammlungsebene Unterwebsite Sammlungsverwaltung Website Sammlungs**Navigation**.
 
 ![Aktivieren der Zwischenspeicherung auf Websiteebene](media/structural-nav/structural-nav-caching-site-coll.png)
 
-Aktivieren Sie das Kontrollkästchen **Zwischenspeicherung aktivieren**, um auf Websiteebene unter **Websiteeinstellungen** > zu**Navigieren**.
+Aktivieren **Site Settings**  >  Sie das Kontrollkästchen **Zwischenspeicherung aktivieren**, um auf Websiteebene Unterwebsite Einstellungen zu**Navigieren**.
 
 ![Aktivieren der Zwischenspeicherung auf Websiteebene](media/structural-nav/structural-nav-caching-site.png)
 
@@ -119,15 +121,15 @@ Es gibt andere beliebte Optionen zum Erstellen **benutzerdefinierter Navigations
 
 Mithilfe der Suche können Sie die Indizes nutzen, die im Hintergrund mithilfe der kontinuierlichen Durchforstung aufgebaut werden. Die Suchergebnisse werden aus dem Suchindex abgerufen, und die Ergebnisse werden Sicherheits getrimmt. Dies ist im Allgemeinen schneller als bei der vordefinierten Navigation, wenn Sicherheits Kürzung erforderlich ist. Die Verwendung der Suche für die strukturelle Navigation, insbesondere wenn Sie über eine komplexe Websitestruktur verfügen, beschleunigt die Ladezeit der Seite erheblich. Der Hauptvorteil dieser über die verwaltete Navigation ist, dass Sie von Sicherheit Trimmen profitieren.
 
-Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage und das Ersetzen des vordefinierten Navigations Codes durch benutzerdefinierten HTML-Code. Gehen Sie wie im folgenden Beispiel beschrieben vor, um den Navigationscode in der Datei `seattle.html`zu ersetzen. In diesem Beispiel werden Sie die `seattle.html` Datei öffnen und das gesamte-Element `id="DeltaTopNavigation"` durch benutzerdefinierten HTML-Code ersetzen.
+Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsvorlage und das Ersetzen des vordefinierten Navigations Codes durch benutzerdefinierten HTML-Code. Gehen Sie wie im folgenden Beispiel beschrieben vor, um den Navigationscode in der Datei zu ersetzen `seattle.html` . In diesem Beispiel werden Sie die Datei öffnen `seattle.html` und das gesamte `id="DeltaTopNavigation"` -Element durch benutzerdefinierten HTML-Code ersetzen.
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Beispiel: Ersetzen des Standard Navigations Codes in einer Gestaltungsvorlage
 
 1. Navigieren Sie zur Seite Websiteeinstellungen.
 2. Öffnen Sie den gestaltungsvorlagenkatalog, indem Sie auf **Masterseiten**klicken.
-3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei `seattle.master`herunterladen.
+3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei herunterladen `seattle.master` .
 4. Bearbeiten Sie den Code mit einem Text-Editor, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen des angezeigten Codeblocks](media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Entfernen Sie den Code zwischen `<SharePoint:AjaxDelta id="DeltaTopNavigation">` den `<\SharePoint:AjaxDelta>` und-Tags, und ersetzen Sie ihn durch den folgenden Codeausschnitt:<br/>
+5. Entfernen Sie den Code zwischen den `<SharePoint:AjaxDelta id="DeltaTopNavigation">` und- `<\SharePoint:AjaxDelta>` Tags, und ersetzen Sie ihn durch den folgenden Codeausschnitt:<br/>
 
 ```javascript
 <div id="loading">
@@ -206,13 +208,13 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. Die Ergebnisse werden dem Self. Nodes-Array zugewiesen, und eine Hierarchie wird aus den Objekten mithilfe von LINQ. js erstellt, die die Ausgabe einem Array Self. Hierarchy zuordnet. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies erfolgt in der toggleView ()-Funktion, indem das Self-Objekt an die ko. applyBinding ()-Funktion übergeben wird.<br/>Dadurch wird das Hierarchie Array an den folgenden HTML-Code gebunden:<br/>
+8. Die Ergebnisse werden dem Self. Nodes-Array zugewiesen, und eine Hierarchie wird aus den Objekten mit linq.js zuweisen der Ausgabe zu einem Array Self. Hierarchy erstellt. Dieses Array ist das Objekt, das an den HTML-Code gebunden ist. Dies erfolgt in der toggleView ()-Funktion, indem das Self-Objekt an die ko. applyBinding ()-Funktion übergeben wird.<br/>Dadurch wird das Hierarchie Array an den folgenden HTML-Code gebunden:<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-Die Ereignishandler für `mouseenter` und `mouseexit` werden zur Navigation auf oberster Ebene hinzugefügt, um die Unterwebsite-Dropdownmenüs zu verarbeiten, die in `addEventsToElements()` der-Funktion ausgeführt werden.
+Die Ereignishandler für `mouseenter` und `mouseexit` werden zur Navigation auf oberster Ebene hinzugefügt, um die Unterwebsite-Dropdownmenüs zu verarbeiten, die in der-Funktion ausgeführt werden `addEventsToElements()` .
 
 In unserem komplexen Navigations Beispiel zeigt eine neue Seitenauslastung ohne lokale Zwischenspeicherung, dass die Zeit, die auf dem Server aufgewendet wurde, aus der Benchmark-Struktur Navigation reduziert wurde, um ein ähnliches Ergebnis wie beim verwalteten Navigations Ansatz zu erhalten.
 
@@ -456,11 +458,11 @@ function addEventsToElements() {
 
 ```
 
-Um den oben gezeigten Code in der `jQuery $(document).ready` Funktion zusammenzufassen, `viewModel object` gibt es eine erstellte `loadNavigationNodes()` und dann die-Funktion für dieses Objekt wird aufgerufen. Diese Funktion lädt entweder die zuvor erstellte Navigationshierarchie, die im lokalen HTML5-Speicher des Clientbrowsers gespeichert ist, oder Sie `queryRemoteInterface()`Ruft die Funktion auf.
+Um den oben gezeigten Code in der Funktion zusammenzufassen, `jQuery $(document).ready` gibt es eine `viewModel object` erstellte und dann die- `loadNavigationNodes()` Funktion für dieses Objekt wird aufgerufen. Diese Funktion lädt entweder die zuvor erstellte Navigationshierarchie, die im lokalen HTML5-Speicher des Clientbrowsers gespeichert ist, oder Sie ruft die Funktion auf `queryRemoteInterface()` .
 
 `QueryRemoteInterface()`erstellt eine Anforderung mithilfe der `getRequest()` Funktion mit dem zuvor im Skript definierten Abfrageparameter und gibt dann Daten vom Server zurück. Diese Daten sind im Wesentlichen ein Array aller Websites in der Websitesammlung, die als Daten Übertragungsobjekte mit verschiedenen Eigenschaften dargestellt werden.
 
-Diese Daten werden dann in die zuvor definierten `SPO.Models.NavigationNode` Objekte analysiert, die `Knockout.js` zum Erstellen beobachtbarer Eigenschaften für die Verwendung durch Datenbindung der Werte in den HTML-Code verwenden, den wir zuvor definiert haben.
+Diese Daten werden dann in die zuvor definierten Objekte analysiert, `SPO.Models.NavigationNode` die `Knockout.js` zum Erstellen beobachtbarer Eigenschaften für die Verwendung durch Datenbindung der Werte in den HTML-Code verwenden, den wir zuvor definiert haben.
 
 Die Objekte werden dann in ein Ergebnisarray eingefügt. Dieses Array wird mithilfe von Knockout in JSON analysiert und im lokalen Browser Speicher gespeichert, um die Leistung bei zukünftigen Seitenlasten zu verbessern.
 
@@ -474,9 +476,9 @@ Der [obige Code](#about-the-javascript-file) hat die folgenden Abhängigkeiten:
 
 - jQueryhttps://jquery.com/
 - KnockoutJS -https://knockoutjs.com/
-- LINQ. js- https://linqjs.codeplex.com/oder GitHub.com/neuecc/LINQ.js
+- Linq.js- https://linqjs.codeplex.com/ oder GitHub.com/neuecc/-linq.js
 
-Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode, die im obigen Code verwendet wird, und der Navigationscode wird unterbrochen. Um dies zu beheben, fügen Sie die folgende Methode zur Datei LINQ. js vor der `Flatten: function ()`-Verbindung hinzu.
+Die aktuelle Version von LinqJS enthält nicht die ByHierarchy-Methode, die im obigen Code verwendet wird, und der Navigationscode wird unterbrochen. Um dies zu beheben, fügen Sie die folgende Methode zur Linq.js Datei vor der-Verbindung hinzu `Flatten: function ()` .
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {

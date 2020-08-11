@@ -17,13 +17,15 @@ search.appverid:
 ms.assetid: eb15194b-63ec-41b0-8d90-1823d3f558e4
 f1.keywords:
 - NOCSH
-description: 'Dieser Artikel richtet sich an Administratoren. Hat ein Benutzer Elemente endgültig aus seinem Outlook-Postfach gelöscht? Der Benutzer möchte, dass er zurückkehrt, kann ihn jedoch nicht wiederherstellen. Möglicherweise können Sie die bereinigten Elemente wiederherstellen, wenn Sie nicht dauerhaft aus dem Postfach des Benutzers entfernt wurden. '
-ms.openlocfilehash: d5911167289d448a68fbe65fa6ba3c5cb9c9609b
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+ms.custom:
+- seo-marvel-apr2020
+description: Dieser Artikel enthält Informationen für Administratoren, die Sie beim Wiederherstellen der gelöschten Elemente unterstützen, wenn Sie nicht dauerhaft aus dem Benutzerpostfach entfernt wurden.
+ms.openlocfilehash: 04249494ca777ba09df7bf6495b8ac931e83bab7
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998309"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606181"
 ---
 # <a name="recover-deleted-items-in-a-user-mailbox---admin-help"></a>Wiederherstellen gelöschter Elemente in einem Benutzerpostfach – Hilfe für Administratoren
 
@@ -112,7 +114,7 @@ Wenn Sie eine Compliance-eDiscovery-Suche ausführen, wird der Ordner "refundabl
     
     ![Erstellen einer Suche basierend auf Kriterien wie Schlüsselwörtern, Datumsbereich, Empfänger und Nachrichtentypen](media/ee47b833-9122-46a0-85e6-fcbe25be0dd5.png)
   
-|**Feld**|**Verwenden Sie diese, um...**|
+|**Field**|**Verwenden Sie diese, um...**|
 |:-----|:-----|
 |![Number one in a pink circle](media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)           <br/> |Geben Sie Stichwörter, Datumsbereich, Empfänger und Nachrichtentypen an.  <br/> |
 |![Number two in a pink circle.](media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)           <br/> |Suchen Sie nach Nachrichten mit Schlüsselwörtern oder Ausdrücken, und verwenden Sie logische Operatoren wie **und** oder **oder**.  <br/> |

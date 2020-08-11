@@ -24,17 +24,19 @@ search.appverid:
 ms.assetid: 66325a43-5816-4f8e-81ba-c11b71345b7c
 f1.keywords:
 - NOCSH
-description: SharePoint Server 2007 hat das Ende der Unterstützung erreicht und es ist an der Zeit, ein Upgrade durchführen. Verwenden Sie diesen Artikel, um Ihnen bei der Erstellung Ihres Plans behilflich zu sein.
-ms.openlocfilehash: e319438e2d760c391414f699de5967738d8c6b81
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+ms.custom:
+- seo-marvel-apr2020
+description: Dieser Artikel enthält Informationen für Benutzer, die SharePoint Server 2007 verwenden, um Sie bei der Planung Ihres Upgrades zu unterstützen.
+ms.openlocfilehash: 9dd659936bd15e0052ce9f6ba6830238aa2c5180
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774990"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603687"
 ---
 # <a name="sharepoint-2007-migration-options-to-consider"></a>Zu verwendende SharePoint 2007-Migrationsoptionen
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Microsoft SharePoint 2007 und SharePoint Server 2007 haben das Ende der Unterstützung erreicht. Es ist Zeit für ein Upgrade! Dieser Artikel enthält Informationen zu ihren Migrationsoptionen.
   
@@ -151,7 +153,7 @@ Meine "wichtigste" Aufzählungsliste:
    
  **Mein geplanter Plan:**
   
-Lokales Upgrade mit SharePoint-Versionen nebeneinander, einige virtualisiert, sodass wir die Datenbanken zuerst aktualisieren können. Wechseln Sie von SharePoint 2007 zu SharePoint 2010. Administratoren und Entwickler testen die resultierende Farm. Benutzer testen die resultierende Farm. Beheben Sie während dieser Zeit alle Probleme mit dem anzeigen Stopp. Aktualisieren Sie SharePoint 2010 Datenbanken erneut nebeneinander auf SharePoint 2013. Test. Benutzer Test/Pilot. Beheben Sie während dieser Zeit alle Probleme mit dem anzeigen Stopp.
+Lokales Upgrade mit SharePoint-Versionen nebeneinander, einige virtualisiert, sodass wir die Datenbanken zuerst aktualisieren können. Wechseln Sie von SharePoint 2007 zu SharePoint 2010. Administratoren und Entwickler testen die resultierende Farm. Benutzer testen die resultierende Farm. Beheben Sie während dieser Zeit alle Probleme mit dem anzeigen Stopp. Aktualisieren Sie SharePoint 2010 Datenbanken erneut nebeneinander auf SharePoint 2013. Testen. Benutzer Test/Pilot. Beheben Sie während dieser Zeit alle Probleme mit dem anzeigen Stopp.
   
 - Prüfen Sie, ob eine Such-Verbund Hybride mit SPO Ihren Anforderungen entspricht.
     

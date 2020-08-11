@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Definiert und erläutert die Daten Unveränderlichkeit in Microsoft 365.
-ms.openlocfilehash: 8648060f3036d2f3c81704cf53a817910607263a
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel erfahren Sie, wie Microsoft 365 Daten in auffindbarem Format aufrecht erhält, um behördliche Bestimmungen, interne Steuerungsanforderungen und Prozessrisiken zu beheben.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dcc997cf157df08441bf1f6e825d0a5a468edbd1
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998459"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605637"
 ---
 # <a name="immutability-in-microsoft-365"></a>Unveränderbarkeit in Microsoft 365
 
@@ -30,18 +31,18 @@ Herkömmliche Methoden für die Unveränderlichkeit bewirkten in der Regel, dass
 
 Durch Compliance-Archivierungs-und Aufbewahrungsrichtlinien Features der Archivierung in Microsoft 365 und seinen Diensten können Sie viele Klassen von eingehenden, internen und ausgehenden Daten beibehalten und beibehalten. Dies umfasst Folgendes:
 
-- Eingehende und ausgehende e-Mail-Kommunikation
-- Bücher und Datensätze, die in e-Mail-Formularen oder in freigegebenen Onlinedokumenten enthalten sind
+- Ein- und ausgehende E-Mail-Kommunikation
+- Bücher und Datensätze, die in E-Mail-Form oder in freigegebenen Online-Dokumenten enthalten sind
 - Besprechungsanfragen
-- Faxnachrichten
-- Sofortnachrichten
-- In Onlinebesprechungen freigegebene Dokumente
+- Faxe
+- Chatnachrichten
+- Während Onlinebesprechungen freigegebene Dokumente
 - Voicemails
 
 Darüber hinaus hat Microsoft Add-on-Funktionen entwickelt, um die [Archivierung von Daten](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) aus anderen Quellen durch Integration in Datenerfassung und Verwaltungslösungen von Drittanbietern zu ermöglichen. Nachdem Sie Daten von Drittanbietern importiert haben, können Sie die Microsoft 365-Kompatibilitätsfeatures auf die Daten anwenden, einschließlich:
 
 - [Aufbewahrung für eventuelle Rechtsstreitigkeiten](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)
-- [Compliance-eDiscovery und-Aufbewahrung](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
+- [In-Situ-eDiscovery und -Speicher](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)
 - [Compliance-Suche](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)
 - [In-Situ-Archivierung](https://docs.microsoft.com/microsoft-365/compliance/enable-archive-mailboxes)
 - [Postfachüberwachung](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)

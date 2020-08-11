@@ -1,5 +1,5 @@
 ---
-title: Verwenden von PowerShell zum Durchführen einer mehrstufigen Migration zu Microsoft 365
+title: Verwenden von PowerShell zum Ausführen einer mehrstufigen Migration zu Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: 'Zusammenfassung: Hier erfahren Sie, wie Sie mit Windows PowerShell eine mehrstufige Migration zu Microsoft 365 durchführen.'
-ms.openlocfilehash: bc21ec403b0c6daa3fe2411f8f4fea790dd5e71c
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Erfahren Sie, wie Sie mithilfe von PowerShell Inhalte aus einem Quell-e-Mail-System mit einer mehrstufigen Migration zu Microsoft 365 im Laufe der Zeit migrieren.
+ms.openlocfilehash: a50966f65bbec5e4b453c4caf02e4b89fa7d04b5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229791"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606211"
 ---
-# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Verwenden von PowerShell zum Durchführen einer mehrstufigen Migration zu Microsoft 365
+# <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Verwenden von PowerShell zum Ausführen einer mehrstufigen Migration zu Microsoft 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Sie können die Inhalte von Benutzerpostfächern aus einem Quell-e-Mail-System mithilfe einer mehrstufigen Migration zu Microsoft 365 migrieren.
   

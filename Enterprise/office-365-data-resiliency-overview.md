@@ -14,17 +14,16 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Grundlegendes zur Ausfallsicherheit von Daten in Microsoft Microsoft 365.
-ms.openlocfilehash: 368f1d56ef2b4f4c9677b53122e58453ff627335
-ms.sourcegitcommit: 6e608d957082244d1b4ffb47942e5847ec18c0b9
+description: In diesem Artikel erfahren Sie mehr über den Entwurf und die Grundsätze der Datenausfall Sicherheit und-Wiederherstellung in Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 7f70b464cf6fe9bd6cb9a236320878fd6adb9db4
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44998469"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606651"
 ---
 # <a name="data-resiliency-in-microsoft-365"></a>Datenresilienz in Microsoft 365
-
-## <a name="introduction"></a>Einführung
 
 In Anbetracht des komplexen Charakters von Cloud-Computing ist Microsoft sich bewusst, dass es sich nicht um einen Fall handelt, in dem die Dinge schief gehen, sondern eher wenn. Wir entwerfen unsere Cloud-Dienste, um die Zuverlässigkeit zu maximieren und die negativen Auswirkungen auf die Kunden zu minimieren, wenn es schief geht. Wir haben uns über die herkömmliche Strategie hinweggesetzt, sich auf komplexe physische Infrastrukturen zu verlassen, und wir haben Redundanz direkt in unsere Cloud-Dienste integriert. Wir verwenden eine Kombination aus weniger komplexer physischer Infrastruktur und intelligenter Software, die Datensicherheit in unseren Diensten aufbaut und hohe Verfügbarkeit für unsere Kunden bietet. 
 

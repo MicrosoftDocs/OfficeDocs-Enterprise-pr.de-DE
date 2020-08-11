@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Zusammenfassung: eine Übersicht über Microsoft-Personal Screening-Methoden für Microsoft 365.'
-ms.openlocfilehash: 337e9c1d92310d430c273683570a622a9fc3c9a5
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: In diesem Artikel finden Sie eine Übersicht über Microsoft Personal Screening Practices for Microsoft 365.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52b872d9b8b49b0ed72cdfb0d879712a6e129a33
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44775094"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605487"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Microsoft 365-Mitarbeitersteuer Elemente
 
@@ -49,7 +50,7 @@ In dem durch das lokale Recht zulässigen Umfang sind die Prüfungen wie folgt:
 
 - SSN-Ablaufverfolgung in den Vereinigten Staaten oder Identitätsbestätigung aus einem von der Regierung ausgestellten Dokument in Europa, dem Nahen Osten und Asien.
 - Criminal History überprüfen Sie bis zu sieben Jahre für Verbrechen und Vergehens Delikte auf bundesstaatlicher, Landkreis-und lokaler Ebene sowie auf föderaler Ebene, falls zutreffend, in den Vereinigten Staaten. Eine internationale Straf Verfolgungs Überprüfung (abhängig vom lokalen Recht) gilt für Gebiete außerhalb der Vereinigten Staaten.
-- Bestätigung der höchsten Stufe der akademischen Leistung
+- Bestätigung des höchsten akademischen Abschlusses
 - 5 Jahre berufsgeschichte
 - Globale Sanktionen und Durchsetzungs Überprüfung, einschließlich Office of Foreign Assets Control (OFAC) List, Bureau of Industry and Security (bis) List, and Office of Defense Trade Controls Debarred persons (DDTC) List Checks.
 
@@ -65,8 +66,8 @@ Im durch das lokale Recht zulässigen Umfang werden im Rahmen des Lieferanten Sc
 
 - SSN-Ablaufverfolgung in den Vereinigten Staaten oder Identitätsbestätigung aus einem von der Regierung ausgestellten Dokument in Europa, dem Nahen Osten und Asien.
 - Criminal History überprüfen Sie bis zu sieben Jahre für Verbrechen und Vergehens Delikte auf bundesstaatlicher, Landkreis-und lokaler Ebene sowie auf föderaler Ebene, falls zutreffend, in den Vereinigten Staaten. Eine internationale Straf Verfolgungs Überprüfung (abhängig vom lokalen Recht) gilt für Gebiete außerhalb der Vereinigten Staaten.
-- Bestätigung der höchsten Stufe der akademischen Leistung
-- Globale Sanktionen und Durchsetzungs Überprüfung
+- Bestätigung des höchsten akademischen Abschlusses
+- Globale Sanktions- und Vollstreckungsüberprüfung
 
 In den Vereinigten Staaten vor jeder Platzierung jedes Zustellungs Personals, das für Microsoft ausgeführt werden soll, wird der Lieferant in dem gesetzlich zulässigen Umfang eine vorab Platzierung durchführen und für bestimmte Placements, die regelmäßige Hintergrundüberprüfung den bevorzugten Screening-Dienstanbieter für die Hintergrundüberprüfung von Microsoft verwenden, der Microsoft mitteilt, dass das Screening dem Microsoft-Standard entspricht. 
 

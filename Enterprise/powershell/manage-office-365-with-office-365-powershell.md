@@ -17,18 +17,19 @@ ms.custom:
 - PowerShell
 - O365ITProTrain
 - Ent_Office_Other
+- seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
-description: 'Zusammenfassung: Informationen zur Verwendung von PowerShell zum Verwalten von Microsoft 365-Benutzern und-Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und dem Security & Compliance Center.'
-ms.openlocfilehash: 741ec15a78db9393e11ba6d06720457e20741581
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+description: Informationen zum Verwalten von Microsoft 365-Benutzern und-Lizenzen sowie von Microsoft 365-apps mit PowerShell.
+ms.openlocfilehash: ed20ec5bbe05ab0be382b87c04ba2dbc9428b4cc
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45230511"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605931"
 ---
-# <a name="manage-microsoft-365-with-powershell"></a>Verwalten von Microsoft 365 mit PowerShell
+# <a name="manage-microsoft-365-with-powershell"></a>Verwalten von Microsoft 365 mit PowerShell
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 PowerShell für Microsoft 365 ist ein leistungsfähiges Verwaltungstool, das das Microsoft 365 Admin Center ergänzt. Sie können beispielsweise PowerShell-Automatisierung verwenden, um mehrere Benutzerkonten und Lizenzen schneller zu verwalten und Berichte zu erstellen. In diesem Artikel erfahren Sie, wie Sie PowerShell für Microsoft 365-Benutzer und-Lizenzen, Skype for Business Online, SharePoint Online, Exchange Online und das Security & Compliance Center verwenden.
   
@@ -42,7 +43,7 @@ Wählen Sie das Thema basierend auf Ihren Anforderungen aus:
 
     Beginnen Sie hier, wenn Sie die Microsoft 365-Module installiert haben und mehr über die Verwendung von Automatisierungs Befehlen zum Verwalten von Benutzerkonten, Lizenzen und Gruppen erfahren möchten.
 
-- [SharePoint Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell)
+- [SharePoint Online](https://docs.microsoft.com/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell)
 
     Beginnen Sie hier, wenn Sie die Microsoft 365-Module installiert haben und Automatisierungs Befehle verwenden möchten, um die Verwaltung von SharePoint Online durchzuführen.
 

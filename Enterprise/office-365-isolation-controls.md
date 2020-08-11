@@ -14,13 +14,14 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: 'Zusammenfassung: eine Erläuterung der Isolierungs Steuerelemente in Microsoft 365.'
-ms.openlocfilehash: da26bb6a41c97a16865bfdd5bdf6aada2069f7fe
-ms.sourcegitcommit: 4c519f054216c05c42acba5ac460fb9a821d6436
+description: Erfahren Sie, wie Isolierungs Steuerelemente in Microsoft 365 funktionieren, sodass Dienste bei Bedarf zusammenarbeiten oder autonom bleiben können.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: da49d19371c0b7f704bf7cb1c4c83205b9cc9cb0
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44774910"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605617"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365-Isolations Steuerelemente 
 
@@ -37,6 +38,6 @@ Microsoft 365-Dienste arbeiten miteinander zusammen, werden jedoch so konzipiert
 
 ## <a name="customer-content-isolation"></a>Isolierung von Kundeninhalten
 
-Alle Kunden Inhalte in einem Mandanten sind von anderen Mandanten und von Betriebs-und Systemdaten isoliert, die in der Verwaltung von Microsoft 365 verwendet werden. In Microsoft 365 werden mehrere Arten von Schutz implementiert, um das Risiko einer Gefährdung durch einen Microsoft 365-Dienst oder eine Anwendung zu minimieren. Mehrere Schutzformen verhindern auch den unbefugten Zugriff auf die Informationen von Mandanten oder das Microsoft 365-System selbst.
+Alle Kunden Inhalte in einem Mandanten sind von anderen Mandanten und von Betriebs-und Systemdaten isoliert, die in der Verwaltung von Microsoft 365 verwendet werden. In Microsoft 365 werden mehrere Schutzformen implementiert, die das Risiko einer Gefährdung eines Microsoft 365-Diensts oder einer zugehörigen Anwendung minimieren. Mehrere Schutzformen verhindern auch den unbefugten Zugriff auf die Informationen von Mandanten oder das Microsoft 365-System selbst.
 
 Informationen dazu, wie Microsoft die logische Isolierung von Mandantendaten in Microsoft 365 implementiert, finden Sie unter [Mandanten Isolierung in Microsoft 365](office-365-tenant-isolation-overview.md).

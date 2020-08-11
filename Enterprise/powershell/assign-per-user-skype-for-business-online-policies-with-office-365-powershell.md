@@ -11,23 +11,23 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um benutzerspezifische Kommunikationseinstellungen mit Skype for Business Online Richtlinien zuzuweisen.'
-ms.openlocfilehash: 4522cfd877355794c32d9b9bdf14fb11cd0e71b4
-ms.sourcegitcommit: 0d1ebcea8c73a644cca3de127a93385c58f9a302
+ms.openlocfilehash: a5850c24f991161ec1de817d5b3f5037e9526767
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229842"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606461"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Benutzer Skype for Business Online Richtlinien mit PowerShell für Microsoft 365
 
-*Dieser Artikel bezieht sich sowohl auf Microsoft 365 Enterprise als auch auf Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Methode, um benutzerspezifische Kommunikationseinstellungen mit Skype for Business Online Richtlinien zuzuweisen.
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="prepare-to-run-the-powershell-commands"></a>Vorbereiten der Ausführung der PowerShell-Befehle
 
 Bereiten Sie sich mithilfe dieser Anweisungen auf die Ausführung der Befehle vor (überspringen Sie die Schritte, die Sie bereits ausgeführt haben):
   
@@ -58,7 +58,7 @@ Wie bestimmen Sie, welche Richtlinie für den externen Zugriff Alex zuweist? Der
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Sofern Sie keine benutzerdefinierten Instanzen von externalaccesspolicy "erstellt haben, gibt dieser Befehl eine Richtlinie zurück, die unsere Kriterien erfüllt (FederationOnly). Es folgt ein Beispiel:
+Sofern Sie keine benutzerdefinierten Instanzen von externalaccesspolicy "erstellt haben, gibt dieser Befehl eine Richtlinie zurück, die unsere Kriterien erfüllt (FederationOnly). Hier ein Beispiel:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -140,6 +140,6 @@ Dadurch werden 500 Benutzer gleichzeitig gefunden, die nicht über eine Clientri
 
 [Verwalten von Skype for Business Online mit PowerShell](manage-skype-for-business-online-with-office-365-powershell.md)
   
-[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
+[Verwalten von Microsoft 365 mit PowerShell](manage-office-365-with-office-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-office-365-powershell.md)

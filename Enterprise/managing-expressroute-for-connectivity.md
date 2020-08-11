@@ -11,18 +11,20 @@ localization_priority: Normal
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom: Adm_O365_Setup
+ms.custom:
+- Adm_O365_Setup
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: Express Route für Office 365 bietet einen alternativen Routingpfad zum erreichen vieler Office 365 Dienste, ohne dass der gesamte Datenverkehr zum Ausstieg ins Internet erforderlich ist. Auch wenn die Internetverbindung mit Office 365 noch benötigt wird, wird die direkte Express Route-Schaltung durch die spezifischen Routen, die von Microsoft über BGP in Ihrem Netzwerk beworben werden, bevorzugt, es sei denn, es sind andere Konfigurationen in Ihrem Netzwerk vorhanden. Die drei allgemeinen Bereiche, die Sie für die Verwaltung dieses Routings konfigurieren können, sind Präfix Filterung, Sicherheit und Compliance.
-ms.openlocfilehash: 4793cd5c70407e7dc58a5a8f6f0eda30b3f23474
-ms.sourcegitcommit: 88a110ede50e210aaff3469307d85d354fdaef49
+description: Erfahren Sie, wie Sie Express Route für Office 365 verwalten, einschließlich allgemeiner Bereiche für die Konfiguration wie Präfix Filterung, Sicherheit und Compliance.
+ms.openlocfilehash: f62731b9f2fcfcb47504d2f73e9b8874980c4c7e
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43798796"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606331"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Verwalten von ExpressRoute für Office 365-Verbindungen
 
@@ -47,7 +49,7 @@ Es gibt eine Reihe von Gründen, um die Verwendung der [Office 365-URLs und IP-A
 
 |**Option**|**Komplexität**|**Änderungs Steuerelement**|
 |:-----|:-----|:-----|
-|Alle Microsoft-Routen akzeptieren  <br/> |**Niedrig:** Der Kunde verwendet Microsoft-Steuerelemente, um sicherzustellen, dass alle Routen ordnungsgemäß im Besitz sind.  <br/> |Keines  <br/> |
+|Alle Microsoft-Routen akzeptieren  <br/> |**Niedrig:** Der Kunde verwendet Microsoft-Steuerelemente, um sicherzustellen, dass alle Routen ordnungsgemäß im Besitz sind.  <br/> |Keine  <br/> |
 |Microsoft-besessene supernets Filtern  <br/> |**Mittel:** Kunden implementiert zusammengefasste Präfixfilter Listen, um nur Microsoft-eigene Routen zuzulassen.  <br/> |Kunden müssen sicherstellen, dass die seltenen Aktualisierungen in Routenfiltern wiedergegeben werden.  <br/> |
 |Filtern Office 365 IP-Bereichen  <br/> [!CAUTION] Nicht empfohlen |**Hoch:** Kunden filtert Routen basierend auf definierten Office 365 IP-Präfixen.  <br/> |Kunden müssen einen robusten Änderungsverwaltungsprozess für die monatlichen Updates implementieren.  <br/> [!CAUTION] Diese Lösung erfordert wichtige fortlaufende Änderungen. Änderungen, die nicht rechtzeitig implementiert werden, führen wahrscheinlich zu einem Dienstausfall.   |
 
@@ -70,7 +72,7 @@ Für hinzugefügte Steuerelemente können Sie die Filterung auf FQDN-Ebene in ih
 
 |**Option**|**Komplexität**|**Änderungs Steuerelement**|
 |:-----|:-----|:-----|
-|Keine Einschränkungen  <br/> |**Niedrig:** Der Kunde ermöglicht den uneingeschränkten ausgehenden Zugriff auf Microsoft.  <br/> |Keines  <br/> |
+|Keine Einschränkungen  <br/> |**Niedrig:** Der Kunde ermöglicht den uneingeschränkten ausgehenden Zugriff auf Microsoft.  <br/> |Keine  <br/> |
 |Port Einschränkungen  <br/> |**Niedrig:** Der Kunde schränkt den ausgehenden Zugriff auf Microsoft durch die erwarteten Ports ein.  <br/> |Selten.  <br/> |
 |FQDN-Einschränkungen  <br/> |**Hoch:** Der Kunde schränkt den ausgehenden Zugriff auf Office 365 basierend auf den veröffentlichten FQDNs ein.  <br/> |Monatliche Änderungen.  <br/> |
 

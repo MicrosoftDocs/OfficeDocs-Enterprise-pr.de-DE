@@ -13,18 +13,20 @@ ms.collection:
 - SPO_Content
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: In diesem Artikel wird beschrieben, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript verwenden, um das Laden von Bildern zu verzögern und außerdem darauf zu warten, dass unwesentliches JavaScript geladen wird, bevor die Seite geladen wird.
-ms.openlocfilehash: 09feb74b92d6fec99ba28f432ea19858cb3e094b
-ms.sourcegitcommit: 11751463c952f57f397b886eebfbd37790d461af
+description: In diesem Artikel erfahren Sie, wie Sie die Ladezeit für SharePoint Online Seiten reduzieren können, indem Sie JavaScript zum verzögern des Ladens von Bildern und nicht-essentiellen JavaScript verwenden.
+ms.openlocfilehash: 72eabed2dd940bb07ece44bbc0dbc9d72e426a67
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2020
-ms.locfileid: "44009350"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605751"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>Verzögerung beim Laden von Bildern und JavaScript in SharePoint Online
 
@@ -34,7 +36,7 @@ Bilder können sich negativ auf die Seitenlast Geschwindigkeiten auf SharePoint 
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>Verbessern der Seitenladezeiten durch verzögertes Laden von Bildern in SharePoint Online Seiten mithilfe von JavaScript
 
-Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<IMG\> -Tag und ersetzen es durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Beispiel:
+Sie können JavaScript verwenden, um zu verhindern, dass ein Webbrowser Vorabbilder abruft. Dadurch wird das gesamte Dokument Rendering beschleunigt. Dazu entfernen Sie den Wert des src-Attributs aus dem \<img\> -Tag und ersetzen ihn durch den Pfad zu einer Datei in einem Data-Attribut wie: Data-src. Zum Beispiel:
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -86,7 +88,7 @@ $(window).on("scroll", function () {
 
 ```
 
-Für SharePoint Online müssen Sie die folgende Funktion an das Scroll-Ereignis im div \<\> -Tag #S4-Workspace anfügen. Dies liegt daran, dass die Fenster Ereignisse außer Kraft gesetzt werden, um sicherzustellen, dass das Menüband am oberen Rand der Seite angefügt bleibt.
+Für SharePoint Online müssen Sie die folgende Funktion an das Scroll-Ereignis im #S4-Workspace-Tag anfügen \<div\> . Dies liegt daran, dass die Fenster Ereignisse außer Kraft gesetzt werden, um sicherzustellen, dass das Menüband am oberen Rand der Seite angefügt bleibt.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,15 +97,15 @@ $('#s4-workspace').on("scroll", function () {
 });
 ```
 
-Speichern Sie die Textdatei als JavaScript-Datei mit der Erweiterung. js, zum Beispiel delayLoadImages. js.
+Speichern Sie die Textdatei als JavaScript-Datei mit der Erweiterung. js, beispielsweise delayLoadImages.js.
   
-Nachdem Sie das Schreiben von delayLoadImages. js abgeschlossen haben, können Sie den Inhalt der Datei einer Gestaltungsvorlage in SharePoint Online hinzufügen. Hierzu fügen Sie der Kopfzeile auf der Gestaltungsvorlage einen Skript Link hinzu. Sobald er auf einer Gestaltungsvorlage liegt, wird das JavaScript auf alle Seiten auf der SharePoint Online Website angewendet, die dieses Gestaltungsvorlagen Layout verwenden. Wenn Sie diese nur auf einer Seite Ihrer Website verwenden möchten, verwenden Sie alternativ das Skript-Editor-Webpart, um das JavaScript in die Seite einzubetten. Weitere Informationen finden Sie in den folgenden Themen:
+Nachdem Sie das Schreiben von delayLoadImages.js abgeschlossen haben, können Sie den Inhalt der Datei einer Gestaltungsvorlage in SharePoint Online hinzufügen. Hierzu fügen Sie der Kopfzeile auf der Gestaltungsvorlage einen Skript Link hinzu. Sobald er auf einer Gestaltungsvorlage liegt, wird das JavaScript auf alle Seiten auf der SharePoint Online Website angewendet, die dieses Gestaltungsvorlagen Layout verwenden. Wenn Sie diese nur auf einer Seite Ihrer Website verwenden möchten, verwenden Sie alternativ das Skript-Editor-Webpart, um das JavaScript in die Seite einzubetten. Weitere Informationen finden Sie in den folgenden Themen:
   
 - [Vorgehensweise: Anwenden einer Gestaltungsvorlage auf eine Website in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
 
 - [Vorgehensweise: Erstellen eines Seitenlayouts in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
 
-### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Beispiel: verweisen auf die Datei "JavaScript delayLoadImages. js" von einer Gestaltungsvorlage in SharePoint Online
+### <a name="example-referencing-the-javascript-delayloadimagesjs-file-from-a-master-page-in-sharepoint-online"></a>Beispiel: verweisen auf die JavaScript-delayLoadImages.js Datei von einer Gestaltungsvorlage in SharePoint Online
   
 Damit dies funktioniert, müssen Sie auch auf der Gestaltungsvorlage auf jQuery verweisen. Im folgenden Beispiel sehen Sie auf der anfänglichen Seite laden, dass nur ein Bild geladen ist, aber es gibt mehrere weitere auf der Seite.
   
