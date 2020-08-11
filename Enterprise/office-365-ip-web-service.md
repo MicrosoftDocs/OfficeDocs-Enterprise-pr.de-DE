@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.reviewer: pandrew
 search.appverid:
 - MET150
 - MOE150
 - BCS160
-description: Der Office 365-IP-Adress- und URL-Dienst unterstützt Sie beim besseren Erkennen und Differenzieren des Netzwerkdatenverkehrs in Office 365, was es Ihnen erleichtert, Änderungen auszuwerten, zu konfigurieren und auf dem neuesten Stand zu bleiben.
-ms.openlocfilehash: 7a1d882b6bc5e34e3d59cf4bade30a58a1c76d6f
-ms.sourcegitcommit: 99411927abdb40c2e82d2279489ba60545989bb1
+description: Erfahren Sie, wie Sie den Office 365-IP-Adress- und URL-Webdienst nutzen können, um den Netzwerkverkehr von Office 365 besser zu identifizieren und zu differenzieren.
+ms.openlocfilehash: a51ee69c5d1364e92b2f8a1f4c06059023084ef5
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41843598"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46605627"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365-IP-Adress- und -URL-Webdienst
 
@@ -247,7 +249,7 @@ Die wichtigsten Änderungen an Endpunktdaten sind neue URLs und IP-Adressen. Wen
 
 Die nötigen Parameter für die Änderungswebmethode sind:
 
-- **Version=\<YYYYMMDDNN>** – erforderlicher URL-Routenparameter. Dieser Wert steht für die Version, die derzeit implementiert ist. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden müssen. Dabei steht _00_ für das erste Update an einen bestimmten Tag. Der Webdienst erfordert, dass der _Versions_-Parameter genau 10 Ziffern enthält.
+- **Version=\<YYYYMMDDNN>** – Erforderlicher URL-Routenparameter. Dieser Wert steht für die Version, die derzeit implementiert ist. Der Webdienst wird die Änderungen seit dieser Version zurückgeben. Das Format ist _JJJJMMTTNN_, wobei _NN_ eine natürliche Zahl ist, die erhöht wird, falls mehrere Versionen am gleichen Tag herausgegeben werden müssen. Dabei steht _00_ für das erste Update an einen bestimmten Tag. Der Webdienst erfordert, dass der _Versions_-Parameter genau 10 Ziffern enthält.
 
 Für die Änderungswebmethode sind die Gebühren auf dieselbe Art und Weise beschränkt wie bei der Endpunktwebmethode. Wenn Sie einen 429-HTTP-Antwortcode erhalten, warten Sie eine Stunde, bevor Sie Ihre Anforderung wiederholen, oder generieren Sie eine neue GUID für sie.
 

@@ -15,20 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom:
-- Ent_Architecture
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
-description: 'Zusammenfassung: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.'
-ms.openlocfilehash: 52857196f53a44196c96f60bd70564f5e3221b80
-ms.sourcegitcommit: 0f7607b5e88b78ae250900ce7ce1b019cd245aa1
-ms.translationtype: MT
+ms.custom:
+- seo-marvel-apr2020
+- Ent_Architecture
+description: Lernen Sie die Beziehungen von Organisationen, Abonnements, Lizenzen, Benutzerkonten und Mandanten über die Microsoft-Cloudangebote hinweg kennen.
+ms.openlocfilehash: 7546d4b24c66946e287aa51deb2d1f1896045322
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44906268"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46603667"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Abonnements, Lizenzen, Konten und Mandanten für Microsoft-Cloud-Angebote
 
-Microsoft stellt eine Hierarchie von Organisationen, Abonnements, Lizenzen und Benutzerkonten für die konsistente Verwendung von Identitäten und die Abrechnung über seine Cloudangebote hinweg bereit.
+Microsoft stellt eine Hierarchie von Organisationen, Abonnements, Lizenzen und Benutzerkonten für die konsistente Verwendung von Identitäten und die Abrechnung über seine Cloudangebote hinweg bereit:
   
 - Microsoft 365 und Microsoft Office 365
 - Microsoft Azure
@@ -46,7 +47,7 @@ Eine Organisation stellt eine Wirtschaftseinheit dar, die Microsoft-Cloudangebot
 
 Ein Abonnement ist eine Vereinbarung mit Microsoft zur Verwendung einer oder mehrerer Cloudplattformen oder -dienste, für die basierend auf einer Lizenzgebühr pro Benutzer oder einem cloudbasierten Ressourcenverbrauch Kosten anfallen. 
 
-- Microsoft-basierte Cloud-Angebote für Software as a Service (SaaS) (Microsoft 365 und Dynamics 365) Kosten pro Benutzer-Lizenzgebühren. 
+- Bei den SaaS-basierten (Software-as-a-Service) Cloudangeboten von Microsoft (Microsoft 365 und Dynamics 365) werden Lizenzgebühren pro Benutzer abgerechnet. 
 - Bei den PaaS- und IaaS-Cloudangeboten (Platform-as-a-Service; Infrastructure-as-a-Service) von Microsoft (Azure) wird basierend auf dem Ressourcenverbrauch in der Cloud abgerechnet.
  
 Sie können auch ein Testabonnement verwenden, das Abonnement läuft jedoch nach einem bestimmten Zeitraum oder einem bestimmten Betrag von Verbrauchsgebühren ab. Sie können ein Testabonnement in ein kostenpflichtiges Abonnement umwandeln.
@@ -59,7 +60,7 @@ Organisationen können mehrere Abonnements für die Cloudangebote von Microsoft 
   
 ### <a name="licenses"></a>Lizenzen
 
-Bei den SaaS-Cloudangeboten von Microsoft ermöglicht eine Lizenz einem bestimmten Benutzerkonto, die Dienste des Cloudangebots zu nutzen. Ihnen wird eine feste monatliche Gebühr als Teils Ihres Abonnements in Rechnung gestellt. Administratoren weisen Lizenzen einzelnen Benutzerkonten in dem Abonnement zu. Für das Beispiel in Abbildung 2 verfügt die Contoso Corporation über ein Microsoft 365 E5-Abonnement mit 100-Lizenzen, mit dem bis zu 100 einzelne Benutzerkonten für die Verwendung von Microsoft 365 E5-Features und-Diensten verwendet werden können.
+Bei den SaaS-Cloudangeboten von Microsoft ermöglicht eine Lizenz einem bestimmten Benutzerkonto, die Dienste des Cloudangebots zu nutzen. Ihnen wird eine feste monatliche Gebühr als Teils Ihres Abonnements in Rechnung gestellt. Administratoren weisen Lizenzen einzelnen Benutzerkonten in dem Abonnement zu. Für das Beispiel in Abbildung 2 verfügt die Contoso Corporation über ein Microsoft 365 E5-Abonnement mit 100 Lizenzen, mit dem bis zu 100 einzelne Benutzerkonten die Features und Dienste von Microsoft 365 E5 nutzen können.
   
 **Abbildung 2: Lizenzen innerhalb der SaaS-basierten Abonnements für eine Organisation**
 
@@ -83,11 +84,11 @@ Abbildung 3 zeigt ein Beispiel für mehrere Abonnements einer Organisation, die 
   
 ### <a name="tenants"></a>Mandanten
 
-Bei SaaS-Cloudangeboten ist der Mandant die regionale Stelle, an der sich die Server befinden, die Clouddienste bereitstellen. Beispielsweise wählte die Contoso Corporation die Europäische Region aus, um Ihre Microsoft 365-, EMS-und Dynamics 365-Mandanten für die 15.000 Mitarbeiter in Ihrem Pariser Hauptsitz zu hosten.
+Bei SaaS-Cloudangeboten ist der Mandant die regionale Stelle, an der sich die Server befinden, die Clouddienste bereitstellen. Die Contoso Corporation hat beispielsweise Europa als Region zum Hosten ihrer Microsoft 365-, EMS- und Dynamics 365-Mandanten für die 15.000 Mitarbeiter in der Pariser Zentrale festgelegt.
   
 Azure PaaS-Dienste und in Azure IaaS gehostete VM-basierte Arbeitslasten können Mandanten in einem beliebigen Azure-Rechenzentrum auf der ganzen Welt haben. Sie geben das Azure-Rechenzentrum an, das als Standort bezeichnet wird, wenn Sie die Azure PaaS-App oder den Dienst bzw. das Element einer IaaS-IT-Arbeitslast erstellen.
   
-Bei einem Azure AD-Mandanten handelt es sich um eine bestimmte Instanz von Azure AD, die Konten und Gruppen enthält. Kostenpflichtige oder Testabonnements von Microsoft 365 oder Dynamics 365 umfassen einen kostenlosen Azure AD Mandanten. Dieser Azure AD-Mandant enthält keine anderen Azure-Dienste und ist nicht das gleiche wie ein Azure-Testabonnement oder ein kostenpflichtiges Azure-Abonnement.
+Bei einem Azure AD-Mandanten handelt es sich um eine bestimmte Instanz von Azure AD, die Konten und Gruppen enthält. Kostenpflichtige oder Testabonnements von Microsoft 365 oder Dynamics 365 enthalten einen kostenlosen Azure AD-Mandanten. Dieser Azure AD-Mandant enthält keine anderen Azure-Dienste und ist nicht das gleiche wie ein Azure-Testabonnement oder ein kostenpflichtiges Azure-Abonnement.
   
 ### <a name="summary-of-the-hierarchy"></a>Zusammenfassung der Hierarchie
 
@@ -129,9 +130,9 @@ Die folgende Tabelle beschreibt, wie Sie mehrere Microsoft-Cloudangebote basiere
   
 ||**Microsoft 365**|**Azure**|**Dynamics 365**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Microsoft 365** <br/> |–  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |
-|**Azure** <br/> |Sie fügen Ihrem Unternehmen ein Microsoft 365-Abonnement hinzu.  <br/> |–  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |
-|**Dynamics 365** <br/> |Sie fügen Ihrem Unternehmen ein Microsoft 365-Abonnement hinzu.  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |–  <br/> |
+|**Microsoft 365** <br/> |NA  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation aus dem Microsoft 365 Admin Center hinzu.  <br/> |
+|**Azure** <br/> |Sie fügen ein Microsoft 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |NA  <br/> |Sie fügen ein Dynamics 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |
+|**Dynamics 365** <br/> |Sie fügen ein Microsoft 365-Abonnement zu Ihrer Organisation hinzu.  <br/> |Sie fügen ein Azure-Abonnement zu Ihrer Organisation aus dem Azure-Portal hinzu.  <br/> |NA  <br/> |
    
 Eine einfache Möglichkeit zum Hinzufügen von Abonnements zu Ihrer Organisation für Microsoft SaaS-basierte Dienste erfolgt über das Admin Center:
   
@@ -141,17 +142,17 @@ Eine einfache Möglichkeit zum Hinzufügen von Abonnements zu Ihrer Organisation
     
 3. Erwerben Sie auf der Seite **Dienste kaufen** Ihre neuen Abonnements.
     
-Das Admin Center weist die Organisation und Azure AD Mandanten Ihres Microsoft 365-Abonnements den neuen Abonnements für SaaS-basierte Cloud-Angebote zu.
+Das Admin Center ordnet die Organisation und den Azure AD-Mandanten Ihres Microsoft 365-Abonnements den neuen Abonnements für SaaS-basierte Cloudangebote zu.
   
-So fügen Sie ein Azure-Abonnement mit derselben Organisation und Azure AD Mandanten wie Ihr Microsoft 365-Abonnement hinzu:
+So fügen Sie ein Azure-Abonnement mit derselben Organisation und demselben Azure AD-Mandanten wie das Microsoft 365-Abonnement hinzu:
   
-1. Melden Sie sich beim Azure-Portal ( [https://portal.azure.com](https://portal.azure.com) ) mit ihrem globalen Administratorkonto von Microsoft 365 an.
+1. Melden Sie sich mit Ihrem globalen Microsoft 365-Administratorkonto beim Azure-Portal ([https://portal.azure.com](https://portal.azure.com)) an.
     
 2. Klicken Sie im linken Navigationsbereich auf **Abonnements** und dann auf **Hinzufügen**.
     
 3. Wählen Sie auf der Seite **Abonnement hinzufügen** ein Angebot aus, und schließen Sie die Bezahlung und die Vereinbarung ab.
     
-Wenn Sie Azure-und Microsoft 365-Abonnements separat erworben haben und von Ihrem Azure-Abonnement auf den Microsoft 365 Azure AD-Mandanten zugreifen möchten, lesen Sie die Anweisungen unter [Hinzufügen eines vorhandenen Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Wenn Sie die Abonnements für Azure und Microsoft 365 einzeln erworben haben und den Microsoft 365 Azure AD-Mandanten von Ihrem Azure-Abonnement aus aufrufen möchten, finden Sie entsprechende Anweisungen unter [Hinzufügen eines vorhandenen Azure-Abonnements zu Ihrem Azure Active Directory-Mandanten](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Siehe auch
 
