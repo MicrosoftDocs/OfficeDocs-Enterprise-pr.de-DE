@@ -7,18 +7,20 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.collection: Strat_SP_gtc
+ms.collection:
+- SPO_Content
+- Strat_SP_gtc
 f1.keywords:
 - NOCSH
-ms.custom: ''
-localization_priority: Normal
-description: Erfahren Sie, wie Sie Microsoft 365 Multi-Geo konfigurieren.
-ms.openlocfilehash: 518bc6dc5bf72e5196a46df8ee7b2e80b7b1838a
-ms.sourcegitcommit: aac21bb1a7c1dfc3ba76a2db883e0457037c5667
-ms.translationtype: MT
+ms.custom: seo-marvel-apr2020
+localization_priority: Priority
+description: In diesem Artikel erfahren Sie, wie Sie Satellitenstandorte hinzufügen und Ihren Mandanten für Microsoft 365 Multi-Geo konfigurieren.
+ms.openlocfilehash: 53a339c9bc709920adb55992d44be2f6280fffcd
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45433816"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606791"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo-Mandantenkonfiguration
 
@@ -74,7 +76,7 @@ In Azure Active Directory (Azure AD) gibt es zwei Arten von Benutzerobjekten: Nu
 
 ### <a name="synchronize-users-preferred-data-location-using-azure-ad-connect"></a>Synchronisieren der bevorzugten Datenspeicherorte für Benutzer mithilfe von Azure AD Connect 
 
-Wenn die Benutzer in Ihrem Unternehmen von einem lokalen Active Directory-System mit Azure AD synchronisiert werden, muss ihre "PreferredDataLocation" in AD aufgefüllt und mit Azure AD synchronisiert werden.
+Wenn Benutzende Ihres Unternehmens von einem firmeninternen Active Directory-System mit Azure AD synchronisiert werden, muss ihre PreferredDataLocation in AD aufgefüllt und mit Azure AD synchronisiert werden.
 
 Folgen Sie dem Prozess in [Azure Active Directory Connect-Synchronisierung: Konfigurieren des bevorzugten Datenstandorts für Microsoft 365-Ressourcen](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation), um die Synchronisierung des bevorzugten Datenstandorts von Ihren lokalen Active Directory Domain Services (AD DS) mit Azure AD zu konfigurieren.
 

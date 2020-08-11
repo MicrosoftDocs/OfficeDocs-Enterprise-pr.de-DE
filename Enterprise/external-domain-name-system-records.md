@@ -13,19 +13,21 @@ ms.collection:
 - Strat_O365_Enterprise
 f1.keywords:
 - CSH
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
-description: 'Zusammenfassung: Referenzliste von DNS-Einträgen zur Verwendung bei der Planung einer komplexen Office 365-Bereitstellung.'
-ms.openlocfilehash: d9bd097538e0aaab19e8b2a6eeb989c3a16492db
-ms.sourcegitcommit: 839236443410eb804372c4aae969ac9a82ba683b
+description: Eine Referenzliste für externe DNS-Einträge, die bei der Planung einer Office 365-Bereitstellung zu verwenden sind.
+ms.openlocfilehash: 127507d1703a4c20a36d3358ff5d266ad9836611
+ms.sourcegitcommit: 8634215e257ba2d49832a8f5947700fd00f18ece
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592189"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606381"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Externe DNS-Einträge für Office 365
 
